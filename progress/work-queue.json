@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T15:16:34Z",
-  "base_commit": "b0f45a454a70f33bd92fc206e4cba3bb96b7896d",
+  "updated_at": "2026-10-23T15:43:30Z",
+  "base_commit": "1fb625112ac7031b88f8f3e0c30ffacb3ead7342",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -3337,7 +3337,7 @@
       "stage": "profile_research",
       "status": "partial",
       "scope": {
-        "description": "当前选中名录累计15条，部分职业档案与待完善分层；非完整院系或全校名录。",
+        "description": "当前选中名录累计20条，部分职业档案与待完善分层；非完整院系或全校名录。",
         "claim": "listed_public_scope_only",
         "university_complete": false
       },
@@ -3349,13 +3349,14 @@
         "data/atlas.json",
         "data/rosters.json",
         "progress/multischool-first-coverage.json",
-        "progress/multischool-second-coverage.json"
+        "progress/multischool-second-coverage.json",
+        "progress/multischool-third-coverage.json"
       ],
       "review_status": "approved",
       "next_action": "继续官方名录下一批，补来源、履历和未知字段；先独立审核再接入。",
-      "next_cursor": "selected_15_reviewed",
-      "attempted_at": "2026-10-23T15:16:34Z",
-      "last_verified_commit": "b0f45a454a70f33bd92fc206e4cba3bb96b7896d"
+      "next_cursor": "selected_20_reviewed",
+      "attempted_at": "2026-10-23T15:43:30Z",
+      "last_verified_commit": "1fb625112ac7031b88f8f3e0c30ffacb3ead7342"
     },
     {
       "task_id": "thu:first-selected-profiles",
@@ -3365,7 +3366,7 @@
       "stage": "profile_research",
       "status": "partial",
       "scope": {
-        "description": "当前选中名录累计10条，部分职业档案与待完善分层；非完整院系或全校名录。",
+        "description": "当前选中名录累计16条，部分职业档案与待完善分层；非完整院系或全校名录。清华仅通信所教授栏目，非全职级。",
         "claim": "listed_public_scope_only",
         "university_complete": false
       },
@@ -3377,13 +3378,14 @@
         "data/atlas.json",
         "data/rosters.json",
         "progress/multischool-first-coverage.json",
-        "progress/multischool-second-coverage.json"
+        "progress/multischool-second-coverage.json",
+        "progress/multischool-third-coverage.json"
       ],
       "review_status": "approved",
       "next_action": "继续官方名录下一批，补来源、履历和未知字段；先独立审核再接入。",
-      "next_cursor": "selected_10_reviewed",
-      "attempted_at": "2026-10-23T15:16:34Z",
-      "last_verified_commit": "b0f45a454a70f33bd92fc206e4cba3bb96b7896d"
+      "next_cursor": "selected_16_reviewed",
+      "attempted_at": "2026-10-23T15:43:30Z",
+      "last_verified_commit": "1fb625112ac7031b88f8f3e0c30ffacb3ead7342"
     },
     {
       "task_id": "pku:first-selected-profiles",
@@ -3393,7 +3395,7 @@
       "stage": "profile_research",
       "status": "partial",
       "scope": {
-        "description": "当前选中名录累计10条，部分职业档案与待完善分层；非完整院系或全校名录。",
+        "description": "当前选中名录累计20条，部分职业档案与待完善分层；非完整院系或全校名录。",
         "claim": "listed_public_scope_only",
         "university_complete": false
       },
@@ -3405,13 +3407,14 @@
         "data/atlas.json",
         "data/rosters.json",
         "progress/multischool-first-coverage.json",
-        "progress/multischool-second-coverage.json"
+        "progress/multischool-second-coverage.json",
+        "progress/multischool-third-coverage.json"
       ],
       "review_status": "approved",
       "next_action": "继续官方名录下一批，补来源、履历和未知字段；先独立审核再接入。",
-      "next_cursor": "selected_10_reviewed",
-      "attempted_at": "2026-10-23T15:16:34Z",
-      "last_verified_commit": "b0f45a454a70f33bd92fc206e4cba3bb96b7896d"
+      "next_cursor": "selected_20_reviewed",
+      "attempted_at": "2026-10-23T15:43:30Z",
+      "last_verified_commit": "1fb625112ac7031b88f8f3e0c30ffacb3ead7342"
     },
     {
       "task_id": "sjtu:first-selected-profiles",
@@ -3421,7 +3424,7 @@
       "stage": "profile_research",
       "status": "partial",
       "scope": {
-        "description": "当前选中名录累计10条，部分职业档案与待完善分层；非完整院系或全校名录。",
+        "description": "当前选中名录累计20条，部分职业档案与待完善分层；非完整院系或全校名录。",
         "claim": "listed_public_scope_only",
         "university_complete": false
       },
@@ -3433,13 +3436,14 @@
         "data/atlas.json",
         "data/rosters.json",
         "progress/multischool-first-coverage.json",
-        "progress/multischool-second-coverage.json"
+        "progress/multischool-second-coverage.json",
+        "progress/multischool-third-coverage.json"
       ],
       "review_status": "approved",
       "next_action": "继续官方名录下一批，补来源、履历和未知字段；先独立审核再接入。",
-      "next_cursor": "selected_10_reviewed",
-      "attempted_at": "2026-10-23T15:16:34Z",
-      "last_verified_commit": "b0f45a454a70f33bd92fc206e4cba3bb96b7896d"
+      "next_cursor": "selected_20_reviewed",
+      "attempted_at": "2026-10-23T15:43:30Z",
+      "last_verified_commit": "1fb625112ac7031b88f8f3e0c30ffacb3ead7342"
     }
   ]
 }

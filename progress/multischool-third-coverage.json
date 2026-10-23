@@ -1,0 +1,156 @@
+{
+  "updated_at": "2026-10-23",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "baseline_commit": "1fb625112ac7031b88f8f3e0c30ffacb3ead7342",
+  "counts": {
+    "new_people": 31,
+    "new_professional_profiles": 28,
+    "new_pending_profiles": 3,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 82,
+      "appointments": 101,
+      "mentors": 9,
+      "committee_members": 0,
+      "publications": 31,
+      "sources": 101,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 5,
+      "pending_mentors": 0,
+      "project_guidance": 0
+    },
+    "effective_global_collection_delta": {
+      "education": 81,
+      "appointments": 97,
+      "mentors": 8,
+      "committee_members": 0,
+      "publications": 31,
+      "sources": 95,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 5,
+      "pending_mentors": 0,
+      "project_guidance": 1
+    },
+    "new_pending_main_collections": {
+      "education": 0,
+      "appointments": 4,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 6,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0
+    },
+    "new_pending_preserved_evidence": {
+      "education": 1,
+      "mentors": 0,
+      "publications": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 45,
+      "degree_awarded_false": 14,
+      "degree_awarded_null": 23,
+      "confirmed_degree_events": 45
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 44,
+      "degree_awarded_false": 14,
+      "degree_awarded_null": 23,
+      "confirmed_degree_events": 44
+    },
+    "main_guidance_types": {
+      "doctoral_advisor": 5,
+      "postdoctoral_advisor": 3
+    },
+    "independent_project_guidance": 1,
+    "pending_mentor_candidates_excluded_from_graph": 5,
+    "new_roster_records": 31,
+    "new_source_observations": 31,
+    "new_coverage_rows": 7,
+    "projection": {
+      "professional_records": 324,
+      "pending_records": 51,
+      "collections": {
+        "education": 981,
+        "appointments": 1194,
+        "mentors": 131,
+        "committee_members": 9,
+        "publications": 653,
+        "sources": 1250,
+        "research_collaborators": 4,
+        "pending_mentor_candidates": 12,
+        "pending_mentors": 7,
+        "project_guidance": 1
+      },
+      "degree_counts": {
+        "degree_awarded_true": 524,
+        "degree_awarded_false": 178,
+        "degree_awarded_null": 279,
+        "confirmed_degree_events": 524
+      },
+      "roster_totals": {
+        "organization_count": 20,
+        "category_count": 83,
+        "entries_with_profile_link": 1294,
+        "entries_without_profile_link": 163,
+        "dedup_candidate_groups": 60,
+        "placeholder_profile_link_observations": 18,
+        "current_employment_count_verified": false,
+        "not_unique_people_count": true,
+        "record_count": 1457,
+        "raw_observation_count": 1495,
+        "roster_records": 1457,
+        "raw_source_observations": 1495,
+        "coverage_unit_count": 101,
+        "count_unit": "integrated_roster_records",
+        "source_record_grouping_reduction": 38,
+        "category_count_basis": "unique_organization_category_pairs",
+        "unique_organization_category_pairs": 83,
+        "batch_category_count": 94,
+        "category_count_source": "coverage_rows_preserved_without_deduplication"
+      }
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-tsinghua-ee-003.json",
+      "sha256": "66f78d53e12ca574d907d25dc165d79b27a62da8f3dde4f609fb3d59a1d9d9ad",
+      "independent_review_file": "faculty-batch-tsinghua-ee-003-independent-review.json",
+      "independent_review_sha256": "5aba78837d275b02b755aac58d28da09353fa6dd1d5cfc97bea6471dff3418d4"
+    },
+    {
+      "file": "faculty-batch-sjtu-ic-003.json",
+      "sha256": "6741c909ec141c5041959c2d229432b61bfe2ac4a71e22accfb92b475b8a49cc",
+      "independent_review_file": "faculty-batch-sjtu-ic-003-independent-review.json",
+      "independent_review_sha256": "f1990080336652cf54f8c1d963b03390658e82642460a232328b437ce11a6586"
+    },
+    {
+      "file": "faculty-batch-pku-ic-003.json",
+      "sha256": "2455556896789759390c11ac7f70f3dcca8059428e8d761c21ee0ee1237df4ae",
+      "independent_review_file": "faculty-batch-pku-ic-003-independent-review.json",
+      "independent_review_sha256": "253795715fdbe5439f2b8f9ef4b69d06cbbd12661073560eb974ff8af04f696b"
+    },
+    {
+      "file": "faculty-batch-pku-ic-004.json",
+      "sha256": "b7b152b77387ef33321add9ea44e08f8c88d5b5480b92cd64fb23d3a7f38bb98",
+      "independent_review_file": "faculty-batch-pku-ic-004-independent-review.json",
+      "independent_review_sha256": "5a0b4a7c375c00252669a581ef0bea8c81f5c5c194d8c2ee18c6103dc4708199"
+    },
+    {
+      "file": "faculty-batch-zju-ic-004.json",
+      "sha256": "e8483887653d17a99688e118d6f124f417aabcea731108cb41ddf9af63318d3d",
+      "independent_review_file": "faculty-batch-zju-ic-004-independent-review.json",
+      "independent_review_sha256": "afcdcb7fcd2f4dbcccc320a37c2c22298f3dd8a84ae8503a51cd4795d4fa1eb0"
+    },
+    {
+      "file": "faculty-batch-sjtu-ic-004.json",
+      "sha256": "6ec048b191cefb1a60966735209962d5ffa888f4dab4bc4688b4f6cd283b1e08",
+      "independent_review_file": "faculty-batch-sjtu-ic-004-independent-review.json",
+      "independent_review_sha256": "5e3325bad9dce91189c035af50c3a89757bda937908f0b6be20334d95fcf0171"
+    }
+  ],
+  "scope": "新增31条选中名录，28份部分职业档案与3份待完善；清华16条仅通信所教授栏目，非全所所有职级。项目竞赛指导独立，不计主师承。"
+}

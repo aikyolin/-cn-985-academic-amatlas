@@ -91,7 +91,17 @@ def validate(d):
    assert not(c.get('education_event_id') and c.get('appointment_event_id')),'Collaborator cannot bind two event kinds'
    assert valid_url(c.get('source_url')),'Collaborator requires evidence'
 
+  for c in p.get('project_guidance',[]):
+   assert c.get('include_in_mentorship_graph') is False,'Project guidance must stay outside the mentorship graph'
+   assert c.get('include_in_verified_mentor_count') is False,'Project guidance must stay outside mentor counts'
+   assert c.get('education_event_id') is None,'Project guidance must not imply a degree-event binding'
+   assert c.get('name') and valid_url(c.get('source_url')),'Project guidance requires a name and direct evidence URL'
+   source_ids={row.get('id') for row in p['sources']}
+   for key in ['source_id','profile_source_id']:
+    assert not c.get(key) or c[key] in source_ids,'Project guidance references unknown source'
+
   for m in p['mentors']:
+   assert m.get('type')!='research_project_advisor' and m.get('relationship_kind')!='research_project_advisor','Project guidance must stay separate from mentors'
    assert not m.get('education_event_id') or m['education_event_id'] in event_ids,'Mentor references unknown education event'
    if m['employment_status']=='active_officially_listed':
     assert valid_url(m.get('profile_source_url')),'Active mentor needs public employment evidence'
@@ -118,6 +128,11 @@ def sheet(wb,name,rows):
    if valid_url(cell.value):cell.hyperlink=cell.value;cell.font=Font(color='078B92',underline='single')
  for col in ws.columns:ws.column_dimensions[col[0].column_letter].width=min(65,max(16,max(len(str(c.value or '')) for c in col)*1.4))
  return ws
+def source_evidence_text(source):
+ label=source.get('evidence_label') or source.get('evidence_status_label')
+ status=source.get('evidence_status')
+ return '；'.join(str(v) for v in [label,status] if v) if label and label!=status else status or label
+
 def department_tables(people,updated_at,institutions=None):
  schools={p.get("school_id") for p in people}
  assert len(schools)<=1 and None not in schools, "Department export cannot mix schools or omit school IDs"
@@ -136,6 +151,10 @@ def department_tables(people,updated_at,institutions=None):
    e=next((e for e in events if event_id and e.get('event_id')==event_id), {})
    row=dict(event_kind=c.get('relationship_kind','research_collaborator'),degree=c.get('type'),institution=c.get('institution'),start=e.get('start'),end=e.get('end'),source_url=c.get('source_url'),note='；'.join(str(v) for v in [c.get('name'),c.get('description'),c.get('employment_status_note'),c.get('note') or c.get('evidence_note'),'非导师认定，不计师承',c.get('profile_source_url')] if v))
    rows.append([p['name'],*[row.get(k) for k in fields]])
+  for c in p.get('project_guidance',[]):
+   # Project context is not a degree event. Never join null/missing education IDs.
+   row=dict(event_kind='project_guidance',degree='项目指导（非学位师承）',institution=c.get('institution'),start=c.get('start'),end=c.get('end'),degree_awarded=False,source_url=c.get('source_url'),note='；'.join(str(v) for v in [c.get('name'),c.get('type_label') or c.get('type'),c.get('project_name'),c.get('education_stage'),c.get('relationship_scope'),c.get('description'),c.get('employment_status_note'),c.get('note'),c.get('scope_label'),'非学位师承，不计入导师统计或师承关系图',c.get('profile_source_url')] if v))
+   rows.append([p['name'],*[row.get(k) for k in fields]])
  tables.append(('经历',rows))
  mentor_fields=['name','type','education_stage','description','employment_status','employment_status_note','official_url','source_url','profile_source_url']
  rows=[['姓名','导师姓名','关系类型','阶段','简介','在职状态','状态说明','已核在职主页','关系来源','任职来源']]
@@ -144,7 +163,7 @@ def department_tables(people,updated_at,institutions=None):
   rows.extend([[p['name'],*[m.get(k) for k in mentor_fields]] for m in mentors])
  tables.append(('导师',rows))
  for label,key,fields,headers in [('论文','publications',['title','year','doi','url','type','source_url','identity_evidence','link_status','note'],['标题','年份','DOI','链接','类型','收录来源','作者归属依据','链接核验范围','备注']),('来源','sources',['id','url','evidence_status','retrieved_at'],['来源ID','链接','核验方式','查阅日期'])]:
-  rows=[['姓名',*headers],*[[p['name'],*[r.get(k) for k in fields]] for p in people for r in p[key]]]
+  rows=[['姓名',*headers],*[[p['name'],*[source_evidence_text(r) if k=='evidence_status' else r.get(k) for k in fields]] for p in people for r in p[key]]]
   if key=='sources':
    for p in people:
     seen={row.get('url') for row in p['sources']}

@@ -16,6 +16,18 @@ const BATCHES=new Map([
   ['pku-ic-002',['pku',5,0,'pku-selected-roster-pku-ic-002']]
 ]);
 const UPDATE='faculty-update-zju-chengran-001';
+// Freeze the second-release scope explicitly; later non-HIT batches must not
+// change the audited historical totals below, even when their IDs share a prefix.
+const FIRST_PROFILE_BATCHES=new Set(['pku-ic-001','tsinghua-ee-001','faculty-batch-zju-ic-001','faculty-batch-sjtu-ic-001']);
+const FIRST_ROSTER_BATCHES=new Set(['pku-selected-roster-pku-ic-001','thu-selected-roster-tsinghua-ee-001','zju-selected-roster-ic-001','sjtu-selected-roster-ic-001']);
+const SECOND_RELEASE_PROFILE_BATCHES=new Set([...FIRST_PROFILE_BATCHES,...BATCHES.keys(),UPDATE]);
+const SECOND_RELEASE_ROSTER_BATCHES=new Set([...FIRST_ROSTER_BATCHES,...[...BATCHES.values()].map(v=>v[3])]);
+function secondReleaseView(current,currentRosters){
+  const profile=p=>p.school_id==='hit'||SECOND_RELEASE_PROFILE_BATCHES.has(p.data_batch_id);
+  const roster=r=>r.school_id==='hit'||SECOND_RELEASE_ROSTER_BATCHES.has(r.batch_id);
+  return {...current,people:current.people.filter(profile),pending_people:current.pending_people.filter(profile),rosters:{...currentRosters,entries:currentRosters.entries.filter(roster),source_observations:currentRosters.source_observations.filter(roster)}};
+}
+const historical=secondReleaseView(db,rosters);
 const fresh=db.people.filter(p=>BATCHES.has(p.data_batch_id)),pending=db.pending_people.filter(p=>BATCHES.has(p.data_batch_id));
 const person=id=>{const row=db.people.find(p=>p.person_id===id);assert(row,`Missing established person ${id}`);return row};
 const waiting=id=>{const row=db.pending_people.find(p=>p.person_id===id);assert(row,`Missing pending person ${id}`);return row};
@@ -46,16 +58,66 @@ test('second release retains all six exact audited source and independent-review
   }
 });
 
-test('second release is 296 established plus48 pending and1426 roster records plus1464 observations',()=>{
-  assert.deepEqual([db.people.length,db.pending_people.length,rosters.entries.length,rosters.source_observations.length],[296,48,1426,1464]);
-  assert.equal(new Set([...db.people,...db.pending_people].map(p=>p.person_id)).size,344);
-  assert.deepEqual(counts(db.people),[900,1097,123,622,1155]);
+test('explicit second-release historical view is 296 established plus48 pending and1426 roster records plus1464 observations',()=>{
+  assert.deepEqual([historical.people.length,historical.pending_people.length,historical.rosters.entries.length,historical.rosters.source_observations.length],[296,48,1426,1464]);
+  assert.equal(new Set([...historical.people,...historical.pending_people].map(p=>p.person_id)).size,344);
+  assert.deepEqual(counts(historical.people),[900,1097,123,622,1155]);
   assert.deepEqual([progress.counts.new_people,progress.counts.new_professional_profiles,progress.counts.new_pending_profiles,progress.counts.promoted_existing_pending_profiles,progress.counts.net_professional_profiles_delta,progress.counts.net_pending_profiles_delta,progress.counts.complete_profiles],[25,20,5,1,21,4,0]);
   for(const [sid,ps,qs,rs] of [['hit',257,42,1381],['zju',9,6,15],['thu',10,0,10],['pku',10,0,10],['sjtu',10,0,10]]){
-    const stats=schoolStats(db,sid);assert.deepEqual([stats.people,stats.pending,stats.rosters],[ps,qs,rs]);assert.equal(stats.status,'部分收录');
+    const stats=schoolStats(historical,sid);assert.deepEqual([stats.people,stats.pending,stats.rosters],[ps,qs,rs]);assert.equal(stats.status,'部分收录');
+  }
+});
+
+test('current full library has unique identities, actual school statistics and actual roster totals',()=>{
+  const people=[...db.people,...db.pending_people],ids=people.map(p=>p.person_id);
+  assert(ids.every(id=>typeof id==='string'&&id.length>0));
+  assert.equal(new Set(ids).size,people.length);
+  const schoolIds=new Set([...db.institutions.map(s=>s.id),...[...people,...db.org_units,...rosters.entries].map(r=>r.school_id)]);
+  for(const sid of schoolIds){
+    const stats=schoolStats(db,sid),sameSchool=rows=>rows.filter(r=>r.school_id===sid).length;
+    assert.equal(stats.people,sameSchool(db.people),`${sid}: established people`);
+    assert.equal(stats.pending,sameSchool(db.pending_people),`${sid}: pending people`);
+    assert.equal(stats.units,sameSchool(db.org_units),`${sid}: organizational units`);
+    assert.equal(stats.rosters,sameSchool(rosters.entries),`${sid}: roster records`);
+    assert.equal(stats.published,stats.people>0);
+    assert.equal(stats.hasData,Boolean(stats.people||stats.pending||stats.units||stats.rosters));
+    assert.equal(stats.status,stats.people?'部分收录':stats.hasData?'仅目录／资料待核':'待收录');
   }
   assert.equal(rosters.totals.record_count,rosters.entries.length);
   assert.equal(rosters.totals.raw_observation_count,rosters.source_observations.length);
+  assert.equal(rosters.totals.roster_records,rosters.entries.length);
+  assert.equal(rosters.totals.raw_source_observations,rosters.source_observations.length);
+  assert.equal(rosters.totals.source_record_grouping_reduction,rosters.source_observations.length-rosters.entries.length);
+});
+
+test('current site snapshot matches canonical collection identities and raw-observation totals',()=>{
+  const siteDb=read('../site/atlas.json'),siteRosters=read('../site/rosters.json');
+  for(const [name,canonicalRows,siteRows,key] of [
+    ['people',db.people,siteDb.people,'person_id'],
+    ['pending people',db.pending_people,siteDb.pending_people,'person_id'],
+    ['roster records',rosters.entries,siteRosters.entries,'id']
+  ]){
+    assert.equal(siteRows.length,canonicalRows.length,`${name}: current collection count`);
+    assert.deepEqual(siteRows.map(r=>r[key]).sort(),canonicalRows.map(r=>r[key]).sort(),`${name}: current collection identities`);
+  }
+  // The compact site snapshot intentionally omits raw observation payloads.
+  assert.equal(siteRosters.totals.record_count,rosters.entries.length);
+  assert.equal(siteRosters.totals.roster_records,rosters.entries.length);
+  assert.equal(siteRosters.totals.raw_observation_count,rosters.source_observations.length);
+  assert.equal(siteRosters.totals.raw_source_observations,rosters.source_observations.length);
+});
+
+test('later non-HIT batches do not leak into the explicit second-release historical view',()=>{
+  const laterBatch='faculty-batch-zju-ic-002-later',laterRoster='zju-selected-roster-ic-002-later';
+  const laterPerson={...fresh[0],person_id:'test-later-person',school_id:'zju',data_batch_id:laterBatch};
+  const laterPending={...pending[0],person_id:'test-later-pending',school_id:'zju',data_batch_id:laterBatch};
+  const laterEntry={...rosters.entries.find(r=>r.school_id==='zju'),id:'test-later-roster',school_id:'zju',batch_id:laterRoster};
+  const laterObservation={...rosters.source_observations.find(r=>r.school_id==='zju'),observation_id:'test-later-observation',record_id:laterEntry.id,school_id:'zju',batch_id:laterRoster};
+  const expandedDb={...db,people:[...db.people,laterPerson],pending_people:[...db.pending_people,laterPending]};
+  const expandedRosters={...rosters,entries:[...rosters.entries,laterEntry],source_observations:[...rosters.source_observations,laterObservation]};
+  assert.equal(expandedDb.people.length,db.people.length+1);assert.equal(expandedDb.pending_people.length,db.pending_people.length+1);
+  assert.equal(expandedRosters.entries.length,rosters.entries.length+1);assert.equal(expandedRosters.source_observations.length,rosters.source_observations.length+1);
+  assert.deepEqual(secondReleaseView(expandedDb,expandedRosters),historical);
 });
 
 test('25 new people remain20 partial professional records and5 pending, separate from the existing-person update',()=>{
@@ -87,7 +149,7 @@ test('main degree filters use45 new confirmed awards, not47 source-level flags o
   const es=fresh.flatMap(p=>p.education);
   assert.deepEqual([true,false,null].map(v=>es.filter(e=>e.degree_awarded===v).length),[45,10,6]);
   assert(es.filter(e=>e.degree_awarded===true).every(e=>e.event_kind==='degree'));
-  const all=db.people.flatMap(p=>p.education);
+  const all=historical.people.flatMap(p=>p.education);
   assert.deepEqual([true,false,null].map(v=>all.filter(e=>e.degree_awarded===v).length),[480,164,256]);
   assert.deepEqual(progress.counts.new_batch_source_award_counts,{degree_awarded_true:47,degree_awarded_false:10,degree_awarded_null:7,confirmed_degree_events:33});
   assert.deepEqual(progress.counts.new_pending_preserved_evidence,{education:3,mentors:0,publications:1});

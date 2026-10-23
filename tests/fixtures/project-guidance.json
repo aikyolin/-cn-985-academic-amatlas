@@ -1,0 +1,36 @@
+{
+  "fixture_notice": "SYNTHETIC TEST DATA ONLY. All names, projects and URLs below are fictional, never public profile data.",
+  "project_guidance": [
+    {
+      "name": "测试项目指导者（虚构）",
+      "type": "research_project_advisor",
+      "type_label": "竞赛项目指导（非学位师承）",
+      "project_name": "测试集成电路竞赛项目（虚构）",
+      "education_stage": "学习期间项目指导，不认定学位导师",
+      "relationship_scope": "Synthetic competition Advisor, not dissertation supervisor",
+      "description": "测试指导者的公开专业简介。",
+      "employment_status": "active_officially_listed",
+      "employment_status_note": "测试公开职业来源，不作为学位指导证明。",
+      "official_url": "https://b.example.test/project-advisor",
+      "source_url": "https://b.example.test/competition",
+      "source_id": "test-project-source",
+      "profile_source_url": "https://b.example.test/project-advisor",
+      "profile_source_id": "test-advisor-source",
+      "person_id": null,
+      "education_event_id": null,
+      "start": null,
+      "end": null,
+      "include_in_mentorship_graph": false,
+      "include_in_verified_mentor_count": false,
+      "quick_link_eligible": false,
+      "navigation_verified": true,
+      "note": "项目指导事实独立保留，不进主师承图。",
+      "scope_label": "非学位师承，不计导师。"
+    }
+  ],
+  "sources": [
+    {"id":"test-project-source","url":"https://b.example.test/competition","evidence_status":"public_competition_program_read","retrieved_at":"2026-10-23"},
+    {"id":"test-advisor-source","url":"https://b.example.test/project-advisor","evidence_status":"public_professional_profile_read","retrieved_at":"2026-10-23"},
+    {"id":"test-private-source","url":"https://professional.example.test/cv","evidence_status":"self_reported_professional_website_identity_cross_checked","evidence_status_label":"本人自述职业网站（已有官方身份交叉核验，非学校域名官网）","retrieved_at":"2026-10-23"}
+  ]
+}
