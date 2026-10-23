@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T10:29:00Z",
-  "base_commit": "5488b239c344f2401aa8763b3f0dcb99736accad",
+  "updated_at": "2026-10-23T10:43:00Z",
+  "base_commit": "bf1c9048b82bfbd0479aeef341c39619ea1ffb36",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -104,9 +104,9 @@
         "hit-harbin"
       ],
       "stage": "profile_research",
-      "status": "pending",
+      "status": "partial",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "165条名录记录中10条已独立身份核验并建立详档，导师证据仍待补，不宣称全院完成。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
@@ -129,12 +129,13 @@
         "https://seie.hit.edu.cn/19285/list.htm"
       ],
       "artifact_paths": [
+        "data/atlas.json",
         "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按名录稳定记录ID逐人核对身份；优先处理同链接异名，未核实不可自动合并。",
+      "review_status": "approved",
+      "next_action": "继续165条已采名录其余记录；补现有10档案未知硕士/学位/导师及候选论文证据。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
+      "attempted_at": "2026-10-23T10:43:00Z",
       "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
     },
     {
