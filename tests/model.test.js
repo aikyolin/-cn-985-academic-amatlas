@@ -3,14 +3,14 @@ import {collaboratorEvent} from '../site/model.js';
 import {rosterIdentityMatched,rosterStatusLabel} from '../site/rosters.js';
 import {test} from 'node:test';import assert from 'node:assert/strict';import {matches,degreeType,stages,mentorEvent,navigableProfileUrl,safeUrl,escapeHtml} from '../site/model.js';
 import fs from 'node:fs';const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));const list=f=>db.people.filter(p=>matches(p,f));
-test('two hundred twenty eight detailed profiles keep pending identity separate',()=>{assert.equal(db.people.length,228);assert.equal(list({campus:'harbin'}).length,159);assert.equal(list({campus:'weihai'}).length,33);assert.equal(list({campus:'shenzhen'}).length,36)});
+test('two hundred fifty seven detailed profiles keep pending identity separate',()=>{assert.equal(db.people.length,257);assert.equal(list({campus:'harbin'}).length,159);assert.equal(list({campus:'weihai'}).length,62);assert.equal(list({campus:'shenzhen'}).length,36)});
 test('bachelor 985 and geography combine',()=>{assert(list({ug:'no',doctor:'hmt'}).some(p=>p.name==='堵宏伟'));assert(list({ug:'yes',doctor:'overseas',continent:'north_america'}).some(p=>p.name==='高庆彬'))});
 test('joint cultivation not PhD granting institution',()=>{assert.equal(degreeType('联合培养（非单独学位）'),'other');assert(!list({doctor:'overseas'}).some(p=>p.name==='李焕'))});
 test('missing stage is not unknown or non985',()=>{const p={name:'测试',campus_ids:[],education:[]};assert.equal(matches(p,{ug:'no'}),false);assert.equal(matches(p,{ug:'unknown'}),false);assert.equal(matches(p,{ug:'not_recorded'}),true)});
 test('safe content links',()=>{assert.equal(safeUrl('javascript:alert(1)'),'');assert.equal(escapeHtml('<script>'),'&lt;script&gt;')});
 test('conflicted mentors not active',()=>{const p=db.people.find(p=>p.name==='高庆彬');assert(p.mentors.some(m=>m.employment_status==='unknown_conflicting'))});
 test('hierarchical parent unit includes descendant faculty',()=>{const p=db.people.find(p=>p.name==='堵宏伟');assert.equal(matches(p,{org:'hit-shenzhen-information'},db.org_units),true)});
-test('committee is not a mentorship edge',()=>{assert.equal(db.people.reduce((n,p)=>n+p.mentors.length,0),104);assert.equal(db.people.reduce((n,p)=>n+(p.committee_members||[]).length,0),9)});
+test('committee is not a mentorship edge',()=>{assert.equal(db.people.reduce((n,p)=>n+p.mentors.length,0),109);assert.equal(db.people.reduce((n,p)=>n+(p.committee_members||[]).length,0),9)});
 
 test('unawarded doctoral study and visits never count as foreign PhD awards',()=>{const p=db.people.find(p=>p.name==='马星');assert.equal(matches(p,{doctor:'overseas',continent:'north_america'}),false);assert.equal(matches(p,{doctor:'overseas',continent:'asia'}),true);assert.equal(stages(p,'doctor').length,1);assert.equal(stages(db.people.find(p=>p.name==='肖君军'),'doctor')[0].region,'hmt')});
 test('joint masters-doctorate counts only evidenced doctoral award',()=>{const p=db.people.find(p=>p.name==='曲歌扬');assert.equal(stages(p,'doctor').length,1);assert.equal(stages(p,'master').length,0);assert.equal(stages(p,'doctor')[0].degree_awarded_date,'2022-06');assert.equal(stages(p,'doctor')[0].end,'2022-07')});

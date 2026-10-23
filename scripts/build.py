@@ -38,7 +38,9 @@ def validate(d):
   for m in p['mentors']:
    assert not m.get('education_event_id') or m['education_event_id'] in event_ids,'Mentor references unknown education event'
    if m['employment_status']=='active_officially_listed':
-    assert valid_url(m.get('official_url')) and valid_url(m.get('profile_source_url')),'Active mentor needs homepage evidence'
+    assert valid_url(m.get('profile_source_url')),'Active mentor needs public employment evidence'
+    unavailable = (m.get('official_url') is None and m.get('quick_link_eligible') is False and m.get('navigation_verified') is False and isinstance(m.get('profile_navigation_unavailable_reason'), str) and bool(m['profile_navigation_unavailable_reason'].strip()))
+    assert valid_url(m.get('official_url')) or unavailable,'Active mentor needs homepage or explicit verified navigation limitation'
  for u in d['org_units']:
   seen=set();cur=u
   while cur['parent_id'] in ids:

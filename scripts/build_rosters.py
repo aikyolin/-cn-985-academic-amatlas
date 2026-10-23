@@ -86,6 +86,36 @@ def _verified_profile_match(entry, person):
         return _official_news_identity_match(entry, person)
     if _matches_profile(entry, person):
         return True
+    # A missing directory link is not a missing identity: accept only an explicit,
+    # independently reviewed name/organization/person match with closed evidence.
+    if entry.get('official_profile_url') is None:
+        evidence = entry.get('profile_identity_evidence') or {}
+        independent = evidence.get('independent_profile_verification') or {}
+        sources = {s.get('id'): s.get('url') for s in person.get('sources', [])}
+        source_ids = independent.get('source_ids') or []
+        return bool(
+            entry.get('profile_identity_verified') is True
+            and entry.get('verified_person_id') == person['person_id']
+            and person.get('detail_count_eligible') is True
+            and evidence.get('status') == 'independent_current_official_profile_name_department_match'
+            and independent.get('status') == 'official_name_and_department_matched'
+            and independent.get('identity_verified') is True
+            and independent.get('person_id') == person['person_id']
+            and independent.get('name') == person['name']
+            and independent.get('organization_id') == person['department_id']
+            and 'roster_url' in independent and independent['roster_url'] is None
+            and 'roster_link_url' in evidence and evidence['roster_link_url'] is None
+            and valid_url(person.get('official_url'))
+            and independent.get('official_url') == person['official_url']
+            and evidence.get('official_url') == person['official_url']
+            and evidence.get('roster_source_url') == entry['roster_source_url']
+            and evidence.get('checked_on')
+            and isinstance(source_ids, list) and source_ids
+            and set(source_ids) <= set(sources)
+            and set(source_ids) <= set(evidence.get('source_ids') or [])
+            and entry['roster_source_url'] in {sources.get(i) for i in source_ids}
+            and person['official_url'] in {sources.get(i) for i in source_ids}
+        )
     if not valid_url(entry.get('official_profile_url')) or not valid_url(person.get('official_url')):
         return False
     evidence = entry.get('profile_identity_evidence') or {}

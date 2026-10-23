@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T14:11:00Z",
-  "base_commit": "69469d6d80e5f686dbc9867c67d176ce8f1efce6",
+  "updated_at": "2026-10-23T14:22:00Z",
+  "base_commit": "d7719f6916c2e3ac06906dcc403181f3bdc374a8",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -1538,7 +1538,7 @@
       "stage": "profile_research",
       "status": "partial",
       "scope": {
-        "description": "94条可见名录=81学术岗位+13实验技术岗位；已首查34条，包括31本人职业正文、1校方报道、2名录待核。32职业档案+2待核，不是完整履历或全学院完成。",
+        "description": "可见94条=81学术岗位+13工程技术岗位均已首查；61职业档案与33待完善项分层，60本人正文、1校方报道、2空头部、31无核准个人履历。首查范围完成不等全院或字段完整。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
@@ -1565,13 +1565,15 @@
         "progress/weihai-information-progress.json",
         "progress/weihai-roster-corrections.json",
         "progress/weihai-information-professor-coverage.json",
-        "progress/weihai-information-associate-progress.json"
+        "progress/weihai-information-associate-progress.json",
+        "progress/weihai-information-lecturer-progress.json",
+        "progress/weihai-information-college-coverage.json"
       ],
       "review_status": "approved",
-      "next_action": "教授/研究员24条和副教授/副研究员前10条已首查，共34条：31本人职业正文、1校方报道补充、2名录待核；下一位为副教授/副研究员第11位孙烽豪。剩余60条未首查，未审或未获合入授权的批次不混入。",
-      "next_cursor": "weihai-information:associate-professor-researcher:position:11",
-      "attempted_at": "2026-10-23T14:11:00Z",
-      "last_verified_commit": "69469d6d80e5f686dbc9867c67d176ce8f1efce6"
+      "next_action": "可见94条已全部首查：60本人职业正文、1校方报道形成61份职业档案；2空头部与31无核准个人履历形成33待完善项。按身份、稀疏正文、未知授位与4导师候选继续补证，不以首查完成宣称全院或字段完整。",
+      "next_cursor": "weihai-information:first-pass-complete:uncertainty-review",
+      "attempted_at": "2026-10-23T14:22:00Z",
+      "last_verified_commit": "d7719f6916c2e3ac06906dcc403181f3bdc374a8"
     },
     {
       "task_id": "hit-weihai-computer:roster",

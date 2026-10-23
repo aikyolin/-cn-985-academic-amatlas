@@ -143,3 +143,22 @@ test('external mentor navigation still requires active status and a safe officia
   assert(!html.includes('查看导师个人主页'));
   assert(html.includes('导师主页待核实'));
 });
+
+test('Wu Ligang retains active evidence but renders the authentication limitation instead of a homepage link',()=>{
+  const x=person('林欣魄'),m=x.mentors[0],html=renderCards(x);
+  assert.equal(m.employment_status,'active_officially_listed');
+  assert.equal(m.official_url,null);
+  assert.equal(m.quick_link_eligible,false);
+  assert(html.includes(escapeHtml(m.profile_navigation_unavailable_reason)));
+  assert(html.includes('简介与任职依据'));
+  assert(!html.includes('查看导师个人主页'));
+  assert(!html.includes('查看本库个人档案'));
+  assert(!html.includes('导师主页待核实'));
+});
+
+test('explicit unavailable-navigation message is escaped, never rendered as raw HTML',()=>{
+  const m={...relation('林欣魄','吴立刚'),profile_navigation_unavailable_reason:'认证 <script>unsafe()</script>'};
+  const html=renderCards({mentors:[m]});
+  assert(html.includes('认证 &lt;script&gt;unsafe()&lt;/script&gt;'));
+  assert(!html.includes('<script>unsafe()</script>'));
+});

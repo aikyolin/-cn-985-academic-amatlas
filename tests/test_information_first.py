@@ -12,7 +12,7 @@ class InformationFirstTests(unittest.TestCase):
  def test_exact_collection_counts(self):
   self.assertEqual(len(self.batch),10);self.assertEqual([sum(len(p[k]) for p in self.batch) for k in ['education','appointments','mentors','publications','sources']],[38,43,0,25,51])
  def test_roster_identity_evidence_and_counts(self):
-  self.assertTrue(validate_rosters(self.rosters,self.data));self.assertEqual(sum(e['profile_identity_verified'] for e in self.rosters['entries']),223)
+  self.assertTrue(validate_rosters(self.rosters,self.data));self.assertEqual(sum(e['profile_identity_verified'] for e in self.rosters['entries']),252)
   for p in self.batch:
    e=next(e for e in self.rosters['entries'] if e['id']==p['roster_entry_id']);self.assertEqual(e['verified_person_id'],p['person_id']);self.assertEqual(e['profile_identity_evidence']['source_ids'],p['identity_evidence']['source_ids']);self.assertEqual(e['profile_identity_evidence']['roster_source_url'],e['roster_source_url'])
  def test_profile_and_event_source_closure(self):
@@ -33,4 +33,4 @@ class InformationFirstTests(unittest.TestCase):
   z=next(r for r in t['经历'] if r[0]=='张钧萍' and r[2]=='学士');self.assertEqual(z[3],'哈尔滨工程大学/哈尔滨医科大学');self.assertEqual(z[10],'unknown');self.assertIs(z[11],True)
   h=next(r for r in t['经历'] if r[0]=='侯成宇' and r[2]=='博士');self.assertIsNone(h[11]);self.assertIn('历史在读',h[14])
  def test_queue_baseline_and_partial_scope(self):
-  q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(q['base_commit'],'69469d6d80e5f686dbc9867c67d176ce8f1efce6');t=next(t for t in q['tasks'] if t['task_id']=='hit-seie:profiles');self.assertEqual(t['status'],'partial');self.assertFalse(t['scope']['university_complete']);self.assertIn('progress/harbin-information-progress.json',t['artifact_paths'])
+  q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(q['base_commit'],'d7719f6916c2e3ac06906dcc403181f3bdc374a8');t=next(t for t in q['tasks'] if t['task_id']=='hit-seie:profiles');self.assertEqual(t['status'],'partial');self.assertFalse(t['scope']['university_complete']);self.assertIn('progress/harbin-information-progress.json',t['artifact_paths'])

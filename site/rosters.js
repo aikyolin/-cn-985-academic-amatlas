@@ -1,4 +1,4 @@
-import {escapeHtml as esc,safeUrl,navigableProfileUrl,officialProfileUrl,versionedPath,CAMPUS_LABELS as CL} from './model.js?v=weihai-20261023-b1';
+import {escapeHtml as esc,safeUrl,navigableProfileUrl,officialProfileUrl,versionedPath,CAMPUS_LABELS as CL} from './model.js?v=weihai-20261023-b2';
 const ext=(url,label)=>safeUrl(url)?`<a href="${esc(safeUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`:'未提供';
 export const rosterIdentityMatched=(db,e)=>Boolean(e.verified_person_id||db.pending_people?.some(p=>p.roster_entry_id===e.id&&p.profile_status==='profile_details_pending'));
 export const rosterStatusLabel=(db,e)=>e.verified_person_id?'身份已关联详细档案（任职状态另核）':rosterIdentityMatched(db,e)?'身份已匹配，资料待完善':'档案待建，身份待核对';

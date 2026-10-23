@@ -8377,11 +8377,38 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-mayiming",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "mayiming-official"
+        ],
+        "status": "official_name_profile_campus_and_department_match",
+        "roster_link_observation": {
+          "name": "马一鸣",
+          "official_profile_url": "https://homepage.hit.edu.cn/MaYiming?lang=zh",
+          "link_status": "current_roster_link_present",
+          "source_id": "weihai-information-roster"
+        },
+        "redirect_observation": {
+          "name": "马一鸣",
+          "requested_url": "https://homepage.hit.edu.cn/MaYiming?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/MaYiming?lang=zh",
+          "http_status": 200,
+          "title": "马一鸣 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true,
+          "roster_original_url": "https://homepage.hit.edu.cn/MaYiming?lang=zh"
+        },
+        "official_url": "https://homepage.hit.edu.cn/MaYiming",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "https://homepage.hit.edu.cn/MaYiming?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-5a52159efd24fb03",
@@ -8394,11 +8421,38 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-kuangjiyuan",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "kuangjiyuan-official"
+        ],
+        "status": "official_name_profile_campus_and_department_match",
+        "roster_link_observation": {
+          "name": "匡冀源",
+          "official_profile_url": "https://homepage.hit.edu.cn/kuangjiyuan?lang=zh",
+          "link_status": "current_roster_link_present",
+          "source_id": "weihai-information-roster"
+        },
+        "redirect_observation": {
+          "name": "匡冀源",
+          "requested_url": "https://homepage.hit.edu.cn/kuangjiyuan?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/kuangjiyuan?lang=zh",
+          "http_status": 200,
+          "title": "匡冀源 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true,
+          "roster_original_url": "https://homepage.hit.edu.cn/kuangjiyuan?lang=zh"
+        },
+        "official_url": "https://homepage.hit.edu.cn/kuangjiyuan",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "https://homepage.hit.edu.cn/kuangjiyuan?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-5ba2b3d628a30587",
@@ -8430,11 +8484,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-linxinpo",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "linxinpo-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_profile_name_campus_department_matched",
+        "original_roster_url": "https://homepage.hit.edu.cn/linxinpo?lang=zh",
+        "redirect_observation": {
+          "name": "林欣魄",
+          "requested_url": "https://homepage.hit.edu.cn/linxinpo?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/linxinpo?lang=zh",
+          "http_status": 200,
+          "title": "林欣魄 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/linxinpo",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "https://homepage.hit.edu.cn/linxinpo?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-f492cfa704ffc489",
@@ -8796,7 +8871,7 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [
         "早期本地姓名与链接映射错位，非源站错链；只修名录链接，不认定个人身份、学历或现任。"
       ],
@@ -8813,9 +8888,36 @@
         "error_origin": "early_local_pilot_mapping",
         "note": "早期本地姓名与链接映射错位，非源站错链；只修名录链接，不认定个人身份、学历或现任。"
       },
+      "verified_person_id": "hit-sunfenghao",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "sunfenghao-official"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "redirect_observation": {
+          "name": "孙烽豪",
+          "requested_url": "https://homepage.hit.edu.cn/sunfenghao?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/sunfenghao?lang=zh",
+          "http_status": 200,
+          "title": "孙烽豪 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true,
+          "roster_original_url": "http://homepage.hit.edu.cn/sunfenghao?lang=zh",
+          "transport_note": "请求前将名录HTTP链接规范为HTTPS；未声称观测到HTTP服务器跳转。"
+        },
+        "roster_link_correction": {
+          "pilot_wrong_url": "http://homepage.hit.edu.cn/kangwenjing?lang=zh",
+          "current_official_url": "http://homepage.hit.edu.cn/sunfenghao?lang=zh",
+          "reason": "先前本地解析错位，不是学校官网链接变更；姓名、主页标题和正文均为孙烽豪。"
+        },
+        "official_url": "https://homepage.hit.edu.cn/sunfenghao",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/sunfenghao?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-7b46887c6d2a6929",
@@ -8847,13 +8949,49 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [
         "名录提供姓名但未提供个人主页链接；不猜测主页。"
       ],
+      "verified_person_id": "hit-jiaguangle",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "jiaguangle-official",
+          "weihai-information-roster"
+        ],
+        "status": "independent_current_official_profile_name_department_match",
+        "original_roster_url": null,
+        "note": "名录无链接，官方教师平台检索到真实页面，姓名+威海学院+讲师任职吻合；未猜URL。",
+        "redirect_observation": {
+          "name": "贾广乐",
+          "requested_url": "https://homepage.hit.edu.cn/jiaguangle?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/jiaguangle?lang=zh",
+          "http_status": 200,
+          "title": "贾广乐 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/jiaguangle",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": null,
+        "source_identity_status": "official_profile_name_campus_department_matched",
+        "independent_profile_verification": {
+          "status": "official_name_and_department_matched",
+          "identity_verified": true,
+          "person_id": "hit-jiaguangle",
+          "name": "贾广乐",
+          "organization_id": "hit-weihai-information",
+          "official_url": "https://homepage.hit.edu.cn/jiaguangle",
+          "roster_url": null,
+          "source_ids": [
+            "jiaguangle-official",
+            "weihai-information-roster"
+          ]
+        }
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-9fe2d0cbbc2df88f",
@@ -9090,11 +9228,33 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-wanghaoxian",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "wanghaoxian-official"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "redirect_observation": {
+          "name": "王好贤",
+          "requested_url": "https://homepage.hit.edu.cn/wanghaoxian?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/wanghaoxian?lang=zh",
+          "http_status": 200,
+          "title": "王好贤 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true,
+          "roster_original_url": "http://homepage.hit.edu.cn/wanghaoxian?lang=zh",
+          "transport_note": "请求前将名录HTTP链接规范为HTTPS；未声称观测到HTTP服务器跳转。"
+        },
+        "official_url": "https://homepage.hit.edu.cn/wanghaoxian",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/wanghaoxian?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-8b9660217e73de77",
@@ -9107,11 +9267,33 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-liuzhiyong",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "liuzhiyong-official"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "redirect_observation": {
+          "name": "刘志勇",
+          "requested_url": "https://homepage.hit.edu.cn/liuzhiyong?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/liuzhiyong?lang=zh",
+          "http_status": 200,
+          "title": "刘志勇 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true,
+          "roster_original_url": "http://homepage.hit.edu.cn/liuzhiyong?lang=zh",
+          "transport_note": "请求前将名录HTTP链接规范为HTTPS；未声称观测到HTTP服务器跳转。"
+        },
+        "official_url": "https://homepage.hit.edu.cn/liuzhiyong",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/liuzhiyong?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-9d98e275ecca18e6",
@@ -9124,11 +9306,41 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-jiangxu",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "jiangxu-official"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "redirect_observation": {
+          "name": "蒋旭",
+          "requested_url": "https://homepage.hit.edu.cn/jiangxu?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/jiangxu?lang=zh",
+          "http_status": 200,
+          "title": "蒋旭 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true,
+          "roster_original_url": "http://homepage.hit.edu.cn/jiangxu?lang=zh",
+          "transport_note": "请求前将名录HTTP链接规范为HTTPS；未声称观测到HTTP服务器跳转。"
+        },
+        "excluded_homonym": {
+          "name": "蒋旭",
+          "institution": "上海交通大学",
+          "field": "船舶与海洋工程",
+          "source_url": "https://naoce.sjtu.edu.cn/dabiangonggao/14040.html",
+          "reason": "2024年博士答辩，学校、学科、时间与本记录哈工大2020年信息与通信工程博士不同，不合并。",
+          "source_id": "jiangxu-excluded-homonym"
+        },
+        "official_url": "https://homepage.hit.edu.cn/jiangxu",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/jiangxu?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-765ae35948b12aca",
@@ -9141,11 +9353,33 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-yanghongjuan",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "yanghongjuan-official"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "redirect_observation": {
+          "name": "杨洪娟",
+          "requested_url": "https://homepage.hit.edu.cn/yanghongjuan?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/yanghongjuan?lang=zh",
+          "http_status": 200,
+          "title": "杨洪娟 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true,
+          "roster_original_url": "http://homepage.hit.edu.cn/yanghongjuan?lang=zh",
+          "transport_note": "请求前将名录HTTP链接规范为HTTPS；未声称观测到HTTP服务器跳转。"
+        },
+        "official_url": "https://homepage.hit.edu.cn/yanghongjuan",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/yanghongjuan?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-7a1cf5987f65be17",
@@ -9158,11 +9392,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-maruofeihit",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "maruofeihit-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "original_roster_url": "http://homepage.hit.edu.cn/maruofeihit?lang=zh",
+        "redirect_observation": {
+          "name": "马若飞",
+          "requested_url": "http://homepage.hit.edu.cn/maruofeihit?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/maruofeihit?lang=zh",
+          "http_status": 200,
+          "title": "马若飞 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/maruofeihit",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/maruofeihit?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-79447440e649ce0e",
@@ -9175,11 +9430,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-wangxiuhong",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "wangxiuhong-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "original_roster_url": "http://homepage.hit.edu.cn/wangxiuhong?lang=zh",
+        "redirect_observation": {
+          "name": "王秀红",
+          "requested_url": "http://homepage.hit.edu.cn/wangxiuhong?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/wangxiuhong?lang=zh",
+          "http_status": 200,
+          "title": "王秀红 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/wangxiuhong",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/wangxiuhong?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-c4c815ed22f8b60d",
@@ -9192,11 +9468,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-yanxiaozhen",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "yanxiaozhen-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "original_roster_url": "http://homepage.hit.edu.cn/yanxiaozhen?lang=zh",
+        "redirect_observation": {
+          "name": "焉晓贞",
+          "requested_url": "http://homepage.hit.edu.cn/yanxiaozhen?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/yanxiaozhen?lang=zh",
+          "http_status": 200,
+          "title": "焉晓贞 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/yanxiaozhen",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/yanxiaozhen?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-fd594ab903699347",
@@ -9209,11 +9506,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-zhaowanlong",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "zhaowanlong-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "original_roster_url": "http://homepage.hit.edu.cn/zhaowanlong?lang=zh",
+        "redirect_observation": {
+          "name": "赵万龙",
+          "requested_url": "http://homepage.hit.edu.cn/zhaowanlong?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/zhaowanlong?lang=zh",
+          "http_status": 200,
+          "title": "赵万龙 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/zhaowanlong",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/zhaowanlong?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-34b9ab85417d57dc",
@@ -9226,11 +9544,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-WangJinlong",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "WangJinlong-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "original_roster_url": "http://homepage.hit.edu.cn/WangJinlong?lang=zh",
+        "redirect_observation": {
+          "name": "王金龙",
+          "requested_url": "http://homepage.hit.edu.cn/WangJinlong?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/WangJinlong?lang=zh",
+          "http_status": 200,
+          "title": "王金龙 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/WangJinlong",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/WangJinlong?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-aaab76988918677e",
@@ -9243,13 +9582,49 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [
         "名录提供姓名但未提供个人主页链接；不猜测主页。"
       ],
+      "verified_person_id": "hit-shaoshuai",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "shaoshuai-official",
+          "weihai-information-roster"
+        ],
+        "status": "independent_current_official_profile_name_department_match",
+        "original_roster_url": null,
+        "note": "名录无链接；官方教师平台检索命中本人主页，姓名、威海学院课程及岗位相合。",
+        "redirect_observation": {
+          "name": "邵帅",
+          "requested_url": "https://homepage.hit.edu.cn/shaoshuai",
+          "final_url": "https://homepage.hit.edu.cn/shaoshuai",
+          "http_status": 200,
+          "title": "邵帅 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/shaoshuai",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": null,
+        "source_identity_status": "official_profile_name_campus_department_matched",
+        "independent_profile_verification": {
+          "status": "official_name_and_department_matched",
+          "identity_verified": true,
+          "person_id": "hit-shaoshuai",
+          "name": "邵帅",
+          "organization_id": "hit-weihai-information",
+          "official_url": "https://homepage.hit.edu.cn/shaoshuai",
+          "roster_url": null,
+          "source_ids": [
+            "shaoshuai-official",
+            "weihai-information-roster"
+          ]
+        }
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-3cb898b2aa6e548a",
@@ -9628,11 +10003,27 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-xuejinghong",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "xuejinghong-official"
+        ],
+        "status": "official_roster_and_profile_body_matched",
+        "profile_title": "薛敬宏 - 哈尔滨工业大学教师个人主页",
+        "requested_url": "https://homepage.hit.edu.cn/xuejinghong?lang=zh",
+        "final_url": "https://homepage.hit.edu.cn/xuejinghong?lang=zh",
+        "name_matches_title": true,
+        "official_url": "https://homepage.hit.edu.cn/xuejinghong",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "https://homepage.hit.edu.cn/xuejinghong?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-b719cf3ef904acaf",
@@ -9645,11 +10036,27 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-yuhaiyan",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "yuhaiyan-official"
+        ],
+        "status": "official_roster_and_profile_body_matched",
+        "profile_title": "于海雁 - 哈尔滨工业大学教师个人主页",
+        "requested_url": "https://homepage.hit.edu.cn/yuhaiyan?lang=zh",
+        "final_url": "https://homepage.hit.edu.cn/yuhaiyan?lang=zh",
+        "name_matches_title": true,
+        "official_url": "https://homepage.hit.edu.cn/yuhaiyan",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "https://homepage.hit.edu.cn/yuhaiyan?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-64edae834b319802",
@@ -9662,11 +10069,27 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-louyi",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "louyi-official"
+        ],
+        "status": "official_roster_and_profile_body_matched",
+        "profile_title": "娄毅 - 哈尔滨工业大学教师个人主页",
+        "requested_url": "http://homepage.hit.edu.cn/louyi?lang=zh",
+        "final_url": "https://homepage.hit.edu.cn/louyi?lang=zh",
+        "name_matches_title": true,
+        "official_url": "https://homepage.hit.edu.cn/louyi",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/louyi?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-3439d65d93854026",
@@ -9679,11 +10102,27 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-fengxiang",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "fengxiang-official"
+        ],
+        "status": "official_roster_and_profile_body_matched",
+        "profile_title": "冯翔 - 哈尔滨工业大学教师个人主页",
+        "requested_url": "http://homepage.hit.edu.cn/fengxiang?lang=zh",
+        "final_url": "https://homepage.hit.edu.cn/fengxiang?lang=zh",
+        "name_matches_title": true,
+        "official_url": "https://homepage.hit.edu.cn/fengxiang",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/fengxiang?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-e195a9e11145976e",
@@ -9696,11 +10135,40 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-tangshuai",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "tangshuai-official"
+        ],
+        "status": "official_roster_and_profile_body_matched",
+        "profile_title": "唐帅 - 哈尔滨工业大学教师个人主页",
+        "requested_url": "https://homepage.hit.edu.cn/tangshuai?lang=zh",
+        "final_url": "https://homepage.hit.edu.cn/tangshuai?lang=zh",
+        "name_matches_title": true,
+        "additional_source_ids": [
+          "tangshuai-aip-2023",
+          "tangshuai-aip-2025",
+          "jiangyongyuan-official"
+        ],
+        "cross_publication_identity_bridge": {
+          "orcid": "0000-0003-1843-6593",
+          "source_ids": [
+            "tangshuai-aip-2023",
+            "tangshuai-aip-2025"
+          ],
+          "note": "AIP 2023哈工大物理学院和2025威海信息学院论文的Shuai Tang使用相同ORCID；博士毕业月份与本人官方教育一致，避免套用中山大学或东北大学同名资料。"
+        },
+        "official_url": "https://homepage.hit.edu.cn/tangshuai",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "https://homepage.hit.edu.cn/tangshuai?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-12bb5f8e97b4c190",
@@ -9732,11 +10200,37 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-sunyongjin",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "sunyongjin-official"
+        ],
+        "status": "official_name_profile_campus_and_department_match",
+        "roster_link_observation": {
+          "name": "孙永进",
+          "official_profile_url": "http://homepage.hit.edu.cn/sunyongjin?lang=zh",
+          "link_status": "current_roster_link_present",
+          "source_id": "weihai-information-roster"
+        },
+        "redirect_observation": {
+          "name": "孙永进",
+          "requested_url": "http://homepage.hit.edu.cn/sunyongjin?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/sunyongjin?lang=zh",
+          "http_status": 200,
+          "title": "孙永进 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/sunyongjin",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/sunyongjin?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-5d4b7ff2153b9629",
@@ -9749,11 +10243,37 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-mengxiangtian",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "mengxiangtian-official"
+        ],
+        "status": "official_name_profile_campus_and_department_match",
+        "roster_link_observation": {
+          "name": "孟祥天",
+          "official_profile_url": "http://homepage.hit.edu.cn/mengxiangtian?lang=zh",
+          "link_status": "current_roster_link_present",
+          "source_id": "weihai-information-roster"
+        },
+        "redirect_observation": {
+          "name": "孟祥天",
+          "requested_url": "http://homepage.hit.edu.cn/mengxiangtian?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/mengxiangtian?lang=zh",
+          "http_status": 200,
+          "title": "孟祥天 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/mengxiangtian",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/mengxiangtian?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-15413b6ee5deea27",
@@ -9880,11 +10400,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-hanliang",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "hanliang-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "original_roster_url": "http://homepage.hit.edu.cn/hanliang?lang=zh",
+        "redirect_observation": {
+          "name": "韩良",
+          "requested_url": "http://homepage.hit.edu.cn/hanliang?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/hanliang?lang=zh",
+          "http_status": 200,
+          "title": "韩良 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/hanliang",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/hanliang?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-0498074b0f6de6a1",
@@ -9897,11 +10438,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-weihai-liyang",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "LIYANG13836167631-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "original_roster_url": "http://homepage.hit.edu.cn/LIYANG13836167631?lang=zh",
+        "redirect_observation": {
+          "name": "李洋",
+          "requested_url": "http://homepage.hit.edu.cn/LIYANG13836167631?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/LIYANG13836167631?lang=zh",
+          "http_status": 200,
+          "title": "李洋 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/LIYANG13836167631",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/LIYANG13836167631?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-db1664236bd26045",
@@ -9933,11 +10495,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-liuxiaoning",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "liuxiaoning-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_profile_name_campus_department_matched",
+        "original_roster_url": "http://homepage.hit.edu.cn/liuxiaoning?lang=zh",
+        "redirect_observation": {
+          "name": "刘晓宁",
+          "requested_url": "http://homepage.hit.edu.cn/liuxiaoning?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/liuxiaoning?lang=zh",
+          "http_status": 200,
+          "title": "刘晓宁 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/liuxiaoning",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/liuxiaoning?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-cd3d88033e23c09a",
@@ -10064,11 +10647,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-zhouhongjuan",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "zhouhongjuan-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "original_roster_url": "http://homepage.hit.edu.cn/zhouhongjuan?lang=zh",
+        "redirect_observation": {
+          "name": "周洪娟",
+          "requested_url": "http://homepage.hit.edu.cn/zhouhongjuan?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/zhouhongjuan?lang=zh",
+          "http_status": 200,
+          "title": "周洪娟 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/zhouhongjuan",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/zhouhongjuan?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-219f092502c347e2",
@@ -10081,11 +10685,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-liyingchun",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "liyingchun-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "original_roster_url": "http://homepage.hit.edu.cn/liyingchun?lang=zh",
+        "redirect_observation": {
+          "name": "李迎春",
+          "requested_url": "http://homepage.hit.edu.cn/liyingchun?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/liyingchun?lang=zh",
+          "http_status": 200,
+          "title": "李迎春 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/liyingchun",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/liyingchun?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-2bfd1056ca5d818b",
@@ -10098,11 +10723,32 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-caobingxia",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "caobingxia-official",
+          "weihai-information-roster"
+        ],
+        "status": "official_name_profile_and_roster_match",
+        "original_roster_url": "http://homepage.hit.edu.cn/caobingxia?lang=zh",
+        "redirect_observation": {
+          "name": "曹丙霞",
+          "requested_url": "http://homepage.hit.edu.cn/caobingxia?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/caobingxia?lang=zh",
+          "http_status": 200,
+          "title": "曹丙霞 - 哈尔滨工业大学教师个人主页",
+          "name_matches_title": true
+        },
+        "official_url": "https://homepage.hit.edu.cn/caobingxia",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/caobingxia?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-30f3622c1c98bdde",
@@ -10115,11 +10761,38 @@
       "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
       "accessed_on": "2026-10-23",
       "verification_status": "roster_name_and_link_only",
-      "profile_identity_verified": false,
+      "profile_identity_verified": true,
       "notes": [],
+      "verified_person_id": "hit-hanyong",
+      "profile_identity_evidence": {
+        "source_ids": [
+          "weihai-information-roster",
+          "hanyong-official"
+        ],
+        "status": "official_name_profile_campus_and_department_match",
+        "roster_link_observation": {
+          "name": "韩勇",
+          "official_profile_url": "http://homepage.hit.edu.cn/HanYong?lang=zh",
+          "link_status": "current_roster_link_present",
+          "source_id": "weihai-information-roster"
+        },
+        "redirect_observation": {
+          "requested_url": "https://homepage.hit.edu.cn/HanYong?lang=zh",
+          "final_url": "https://homepage.hit.edu.cn/HanYong?lang=zh",
+          "http_status": 200,
+          "title": "韩勇 - 哈尔滨工业大学教师个人主页",
+          "name": "韩勇",
+          "name_matches_title": true,
+          "roster_original_url": "http://homepage.hit.edu.cn/HanYong?lang=zh"
+        },
+        "official_url": "https://homepage.hit.edu.cn/HanYong?lang=zh",
+        "roster_source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+        "checked_on": "2026-10-23",
+        "roster_link_url": "http://homepage.hit.edu.cn/HanYong?lang=zh"
+      },
       "automatic_merge": false,
       "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_match_status": "verified_separate_profile"
     },
     {
       "id": "roster-62a2ce487365e781",
@@ -46170,5 +46843,5 @@
     }
   ],
   "raw_data_location": "完整原始来源观察保存在仓库 data/rosters.json，以及导出 Excel 的“原始来源观察”工作表；网站快照不重复加载这些原始内容。",
-  "build_id": "935ff44ee419e5f9"
+  "build_id": "2ec7d0516bf46c71"
 }
