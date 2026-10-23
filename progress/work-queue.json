@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T16:30:00Z",
-  "base_commit": "484fd39b303c182aab1fbf407992d4e3d62d3c9c",
+  "updated_at": "2026-10-23T16:50:00Z",
+  "base_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
     "registry_complete": false,
-    "known_organization_nodes": 109,
+    "known_organization_nodes": 140,
     "write_model": "single_controller_expected_sha",
     "active_institutions": [
       "hit",
@@ -28,7 +28,26 @@
       "jlu",
       "tongji",
       "ruc",
-      "neu"
+      "neu",
+      "ecnu",
+      "seu",
+      "xmu",
+      "sdu",
+      "ouc",
+      "whu",
+      "hust",
+      "hnu",
+      "csu",
+      "nudt",
+      "sysu",
+      "scut",
+      "scu",
+      "uestc",
+      "cqu",
+      "xjtu",
+      "nwpu",
+      "nwsuaf",
+      "lzu"
     ],
     "active_institution_note": "历史首校兼容字段；并行范围见active_institutions。"
   },
@@ -4080,6 +4099,843 @@
       "next_cursor": "selected_3_reviewed",
       "attempted_at": "2026-10-23T16:30:00Z",
       "last_verified_commit": "484fd39b303c182aab1fbf407992d4e3d62d3c9c"
+    },
+    {
+      "task_id": "ecnu:ecnu-sei:first-selected-profiles",
+      "institution_id": "ecnu",
+      "organization_id": "ecnu-sei",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "软件工程学院现行名录原始顺序首3，不是全院覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://sei.ecnu.edu.cn/33189/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "seu:seu-computing-joint-roster:first-selected-profiles",
+      "institution_id": "seu",
+      "organization_id": "seu-computing-joint-roster",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机科学与工程学院、软件学院、人工智能学院官网联合师资总名录原序首3，非全院或全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cse.seu.edu.cn/49427/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "seu:seu-cs:first-selected-profiles",
+      "institution_id": "seu",
+      "organization_id": "seu-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机科学与工程学院、软件学院、人工智能学院官网联合师资总名录原序首3，非全院或全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cse.seu.edu.cn/49427/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "xmu:xmu-informatics:first-selected-profiles",
+      "institution_id": "xmu",
+      "organization_id": "xmu-informatics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "信息学院计算机科学与技术系名录原序首3，含1位主页稀疏教师，不称完整履历。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://informatics.xmu.edu.cn/list_teacher.jsp?checkaggregatequeryid=1123&collegeid=1532&language=zh_CN&postdutyid=1123&urltype=tp.TpCollegeZWTeachers&wbtreeid=2171"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "xmu:xmu-informatics-cs:first-selected-profiles",
+      "institution_id": "xmu",
+      "organization_id": "xmu-informatics-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "信息学院计算机科学与技术系名录原序首3，含1位主页稀疏教师，不称完整履历。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://informatics.xmu.edu.cn/list_teacher.jsp?checkaggregatequeryid=1123&collegeid=1532&language=zh_CN&postdutyid=1123&urltype=tp.TpCollegeZWTeachers&wbtreeid=2171"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "sdu:sdu-cs:first-selected-profiles",
+      "institution_id": "sdu",
+      "organization_id": "sdu-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机科学与技术学院教授名录首3，不是全院覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.cs.sdu.edu.cn/szdw1/js.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "ouc:ouc-ise:first-selected-profiles",
+      "institution_id": "ouc",
+      "organization_id": "ouc-ise",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "信息科学与工程学部计算机学院筛选原序首3，非全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://it.ouc.edu.cn/21691/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "ouc:ouc-ise-cs:first-selected-profiles",
+      "institution_id": "ouc",
+      "organization_id": "ouc-ise-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "信息科学与工程学部计算机学院筛选原序首3，非全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://it.ouc.edu.cn/21691/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "whu:whu-eis:first-selected-profiles",
+      "institution_id": "whu",
+      "organization_id": "whu-eis",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "中央教师门户电子信息学院名录第一页原序首3，不是全院覆盖，也不是院系官网全部师资清单。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://jszy.whu.edu.cn/xyjslb.jsp?PAGENUM=1&id=2013&lang=zh_CN&st=0&totalpage=4&urltype=tsites.CollegeTeacherList&wbtreeid=1006"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "hust:hust-cs:first-selected-profiles",
+      "institution_id": "hust",
+      "organization_id": "hust-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机科学与技术学院按研究所名录首类存储所首3；包含博士后，不全部称教授。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "hust:hust-cs-storage:first-selected-profiles",
+      "institution_id": "hust",
+      "organization_id": "hust-cs-storage",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机科学与技术学院按研究所名录首类存储所首3；包含博士后，不全部称教授。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "hnu:hnu-cs:first-selected-profiles",
+      "institution_id": "hnu",
+      "organization_id": "hnu-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机学院学院教师名录教授分组原序首3，不是全院或全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://csee.hnu.edu.cn/xygk/xyjj.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "hnu:hnu-cs-computer-engineering:first-selected-profiles",
+      "institution_id": "hnu",
+      "organization_id": "hnu-cs-computer-engineering",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机学院学院教师名录教授分组原序首3，不是全院或全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://csee.hnu.edu.cn/people/anjiyao"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "hnu:hnu-cs-communication-engineering:first-selected-profiles",
+      "institution_id": "hnu",
+      "organization_id": "hnu-cs-communication-engineering",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机学院学院教师名录教授分组原序首3，不是全院或全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://csee.hnu.edu.cn/people/baiyanfeng"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "hnu:hnu-cs-software-engineering:first-selected-profiles",
+      "institution_id": "hnu",
+      "organization_id": "hnu-cs-software-engineering",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机学院学院教师名录教授分组原序首3，不是全院或全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://csee.hnu.edu.cn/people/cailijun"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "csu:csu-cse:first-selected-profiles",
+      "institution_id": "csu",
+      "organization_id": "csu-cse",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机学院教师名录原序首3，仅小样本非学院全覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cse.csu.edu.cn/szdw/jsml.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "nudt:nudt-science:first-selected-profiles",
+      "institution_id": "nudt",
+      "organization_id": "nudt-science",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "2027年博士研究生招生简章理学院目录数学（070100）指导教师栏原序首3：钱旭、唐玲艳、林爱津；仅招生名录样本，不是全校或全院师资覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.nudt.edu.cn/yssz/lxy/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "nudt:nudt-intelligence:first-selected-profiles",
+      "institution_id": "nudt",
+      "organization_id": "nudt-intelligence",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "2027年博士研究生招生简章理学院目录数学（070100）指导教师栏原序首3：钱旭、唐玲艳、林爱津；仅招生名录样本，不是全校或全院师资覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.nudt.edu.cn/jyjx/jxdt/7f04b540ecfd4ec3bd0ef81b591d9399.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "sysu:sysu-cse:first-selected-profiles",
+      "institution_id": "sysu",
+      "organization_id": "sysu-cse",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机学院名录官方搜索索引首3，原页403未核，仅待核小批，不称详档或全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cse.sysu.edu.cn/teacher"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "sysu:sysu-mathzh:first-selected-profiles",
+      "institution_id": "sysu",
+      "organization_id": "sysu-mathzh",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机学院名录官方搜索索引首3，原页403未核，仅待核小批，不称详档或全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://mathzh.sysu.edu.cn/zh-hans/faculty"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "scut:scut-cs:first-selected-profiles",
+      "institution_id": "scut",
+      "organization_id": "scut-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机科学与工程学院教授目录原序首3，非全院全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www2.scut.edu.cn/cs/22284/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "scu:scu-cs:first-selected-profiles",
+      "institution_id": "scu",
+      "organization_id": "scu-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "教师门户计算机学院分类原序首3含退休工程技术人员，不称现任专任教师全覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://faculty.scu.edu.cn/xyjs.jsp?id=1035&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1012"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "uestc:uestc-aihss:first-selected-profiles",
+      "institution_id": "uestc",
+      "organization_id": "uestc-aihss",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "人文社科高等研究院教师名录“全部”页现行正文原序首3，仅小样本非全校或研究院覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.uestc.edu.cn/xybm/jxkydw_yjjg.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "cqu:cqu-cs:first-selected-profiles",
+      "institution_id": "cqu",
+      "organization_id": "cqu-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机学院教师门户原序首3，非全院全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://faculty.cqu.edu.cn/xyjslb.jsp?PAGENUM=1&id=1135&totalpage=10&wbtreeid=1002"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "xjtu:xjtu-se:first-selected-profiles",
+      "institution_id": "xjtu",
+      "organization_id": "xjtu-se",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "软件学院教授名录原序首3，非全院全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://se.xjtu.edu.cn/jsdw.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "nwpu:nwpu-cs:first-selected-profiles",
+      "institution_id": "nwpu",
+      "organization_id": "nwpu-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机学院计算机科学与软件系官方名录原序首3；非全院、全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://jsj.nwpu.edu.cn/snew/szdwlist.jsp?urltype=tree.TreeTempUrl&wbtreeid=1519"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "nwpu:nwpu-cs-computer-science-software:first-selected-profiles",
+      "institution_id": "nwpu",
+      "organization_id": "nwpu-cs-computer-science-software",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "计算机学院计算机科学与软件系官方名录原序首3；非全院、全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://jsj.nwpu.edu.cn/snew/szdwlist.jsp?urltype=tree.TreeTempUrl&wbtreeid=1519"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "nwsuaf:nwsuaf-cie:first-selected-profiles",
+      "institution_id": "nwsuaf",
+      "organization_id": "nwsuaf-cie",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "信息工程学院教授名录原序首3，仅样本。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cie.nwsuaf.edu.cn/szdw/js/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "nwsuaf:nwsuaf-cie-data:first-selected-profiles",
+      "institution_id": "nwsuaf",
+      "organization_id": "nwsuaf-cie-data",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "信息工程学院教授名录原序首3，仅样本。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cie.nwsuaf.edu.cn/szdw/js/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "nwsuaf:nwsuaf-cie-cs:first-selected-profiles",
+      "institution_id": "nwsuaf",
+      "organization_id": "nwsuaf-cie-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "信息工程学院教授名录原序首3，仅样本。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cie.nwsuaf.edu.cn/szdw/js/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "lzu:lzu-law:first-selected-profiles",
+      "institution_id": "lzu",
+      "organization_id": "lzu-law",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "法学院教授名录原序首3，非全校或学院覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://laws.lzu.edu.cn/shiziduiwu/index.html"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:50:00Z",
+      "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
     }
   ]
 }

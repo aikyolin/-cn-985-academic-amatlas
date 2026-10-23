@@ -168,7 +168,9 @@ def publication_value(publication,key):
  return '；'.join(str(v) for v in [label,raw] if v) if label and label!=raw else raw if raw is not None else label
 
 def profile_availability_label(person):
- return person.get('official_profile_availability_label') or ('个人主页当前不可用' if person.get('official_profile_availability')=='unavailable' or person.get('official_profile_navigation_eligible') is False else '公开个人页（时效以核对日为准）')
+ if person.get('official_profile_availability_label'):return person['official_profile_availability_label']
+ status='个人主页当前不可用' if person.get('official_profile_availability')=='unavailable' or person.get('official_profile_navigation_eligible') is False else '公开个人页（时效以核对日为准）'
+ return '；'.join(v for v in [person.get('official_profile_link_label'),status] if v)
 
 def department_tables(people,updated_at,institutions=None):
  schools={p.get("school_id") for p in people}
@@ -179,6 +181,10 @@ def department_tables(people,updated_at,institutions=None):
  names={s["id"]:s["official_name"] for s in (institutions or [])}
  school_name=names.get(school_id,school_id)
  tables=[('总览',[['姓名','校区','院系','官方主页','核对日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p.get('campus') or '校区未标注',p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],updated_at,'；'.join(p['unknowns']),'分批核实资料，不是完整名录',profile_availability_label(p),'；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]
+ # Explicit source labels, not URL hosts, opt this table into neutral headings. Positions stay fixed.
+ if any(p.get('official_profile_link_label') or p.get('official_profile_availability_label') for p in people):
+  tables[0][1][0][3]='个人主页／职业网站（来源类型见说明）'
+  tables[0][1][0][8]='替代职业资料来源（非已核个人主页）'
  fields=['event_kind','degree','institution','start','end','field','country','source_region','continent','institution_985','degree_awarded','degree_awarded_date','degree_award_source_url','note','geography_basis','source_url']
  rows=[['姓名','事件类型','阶段/职位','机构','开始','结束','专业','国家','地区','洲','历史985分类','确证授位','授位日期','授位来源','备注及冲突','地域口径','来源']]
  for p in people:
