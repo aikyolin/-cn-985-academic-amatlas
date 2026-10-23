@@ -1,4 +1,4 @@
-import {escapeHtml as esc,safeUrl,navigableProfileUrl,officialProfileUrl,versionedPath,institutions,schoolName,campusId,campusLabel,rosterMatches} from './model.js?v=rotation-20261023-w3';
+import {escapeHtml as esc,safeUrl,navigableProfileUrl,officialProfileUrl,versionedPath,institutions,schoolName,campusId,campusLabel,rosterMatches} from './model.js?v=rotation002-20261023-w1';
 const ext=(url,label)=>safeUrl(url)?`<a href="${esc(safeUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`:'未提供';
 export const rosterIdentityMatched=(db,e)=>Boolean(e.verified_person_id||db.pending_people?.some(p=>p.roster_entry_id===e.id&&p.school_id===e.school_id&&p.profile_status==='profile_details_pending'));
 export const rosterStatusLabel=(db,e)=>e.verified_person_id?'身份已关联人物档案（任职状态另核）':rosterIdentityMatched(db,e)?'身份已匹配，资料待完善':'档案待建，身份待核对';

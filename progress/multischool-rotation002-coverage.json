@@ -1,0 +1,232 @@
+{
+  "updated_at": "2026-10-23",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "baseline_commit": "9f310e8b7e573268560c53762d2bd0ac7245fff5",
+  "scope": "第二轮当前4校各取明确分类原序3条，共12条所选记录、11份部分职业资料与1份待完善；不是全院或全校枚举，不升级旧待核身份。东北大学研究所名录原序与归属仍为官方索引层。",
+  "counts": {
+    "source_batch_count": 4,
+    "source_people": 12,
+    "new_professional_profiles": 11,
+    "new_pending_profiles": 1,
+    "new_organization_nodes": 7,
+    "new_campuses": 0,
+    "source_collections": {
+      "education": 42,
+      "appointments": 34,
+      "mentors": 1,
+      "committee_members": 0,
+      "publications": 17,
+      "sources": 38,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 2,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 11,
+      "pending_appointment_candidates": 9,
+      "pending_professional_fact_candidates": 1
+    },
+    "effective_global_collection_delta": {
+      "education": 42,
+      "appointments": 34,
+      "mentors": 1,
+      "committee_members": 0,
+      "publications": 17,
+      "sources": 36,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 2,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 9,
+      "pending_appointment_candidates": 4,
+      "pending_professional_fact_candidates": 1
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 2,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 2,
+      "pending_appointment_candidates": 5,
+      "pending_professional_fact_candidates": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 4,
+      "degree_awarded_false": 16,
+      "degree_awarded_null": 22,
+      "confirmed_degree_events": 4
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 4,
+      "degree_awarded_false": 16,
+      "degree_awarded_null": 22,
+      "confirmed_degree_events": 4
+    },
+    "projection": {
+      "schools_with_any_records": 39,
+      "professional_records": 535,
+      "pending_records": 83,
+      "organization_nodes": 218,
+      "campus_nodes": 4,
+      "collections": {
+        "education": 1649,
+        "appointments": 1772,
+        "mentors": 208,
+        "committee_members": 10,
+        "publications": 859,
+        "sources": 1973,
+        "research_collaborators": 6,
+        "pending_mentor_candidates": 24,
+        "pending_mentors": 7,
+        "project_guidance": 1,
+        "professional_research_advisors": 2,
+        "pending_publications": 2,
+        "teaching": 9,
+        "pending_education_candidates": 9,
+        "pending_appointment_candidates": 4,
+        "pending_professional_fact_candidates": 1
+      },
+      "degree_counts": {
+        "degree_awarded_true": 676,
+        "degree_awarded_false": 391,
+        "degree_awarded_null": 582,
+        "confirmed_degree_events": 676
+      },
+      "roster_totals": {
+        "organization_count": 117,
+        "category_count": 181,
+        "entries_with_profile_link": 1496,
+        "entries_without_profile_link": 204,
+        "dedup_candidate_groups": 60,
+        "placeholder_profile_link_observations": 18,
+        "current_employment_count_verified": false,
+        "not_unique_people_count": true,
+        "record_count": 1700,
+        "raw_observation_count": 1738,
+        "roster_records": 1700,
+        "raw_source_observations": 1738,
+        "coverage_unit_count": 208,
+        "count_unit": "integrated_roster_records",
+        "source_record_grouping_reduction": 38,
+        "category_count_basis": "unique_organization_category_pairs",
+        "unique_organization_category_pairs": 181,
+        "batch_category_count": 200,
+        "category_count_source": "coverage_rows_preserved_without_deduplication"
+      }
+    },
+    "new_schools": 0,
+    "complete_profiles": 0
+  },
+  "schools": [
+    {
+      "school_id": "cau",
+      "school_name": "中国农业大学",
+      "batch_id": "faculty-batch-cau-rotation-002",
+      "coverage_path": "progress/cau-rotation002-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "neu",
+      "school_name": "东北大学",
+      "batch_id": "faculty-batch-neu-rotation-002",
+      "coverage_path": "progress/neu-rotation002-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 2,
+      "pending_profiles": 1,
+      "status": "partial"
+    },
+    {
+      "school_id": "tongji",
+      "school_name": "同济大学",
+      "batch_id": "faculty-batch-tongji-rotation-002",
+      "coverage_path": "progress/tongji-rotation002-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "ecnu",
+      "school_name": "华东师范大学",
+      "batch_id": "faculty-batch-ecnu-rotation-002",
+      "coverage_path": "progress/ecnu-rotation002-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    }
+  ],
+  "source_references": [
+    {
+      "file": "faculty-batch-cau-rotation-002.json",
+      "sha256": "c246a2efd4599d8a044fb790b20389b8e5a56eec36749546d48c8caedd323e01",
+      "scope_file": "faculty-batch-cau-rotation-002-scope.json",
+      "scope_sha256": "ac8f16dbe0c72920739b4a6e8d9ae834955346c2e530fd0a2f1434eae32fb28b",
+      "qa_file": "faculty-batch-cau-rotation-002-qa.json",
+      "qa_sha256": "195ac7c0cd28d3edff91c91addb183b669c1a4619a82741ef2731e565d1abee8",
+      "independent_review_file": "faculty-batch-cau-rotation-002-independent-review.json",
+      "independent_review_sha256": "513f84d2eaafbbf8a511e184df656ee160609776229952227c8a58bb2aca7321"
+    },
+    {
+      "file": "faculty-batch-neu-rotation-002.json",
+      "sha256": "226bf8cf058ed295a9211e13be19e044ba36e7b866f7c08a5026ad2292e210e1",
+      "scope_file": "faculty-batch-neu-rotation-002-scope.json",
+      "scope_sha256": "af676f375dd327902e8aed515282c0382a2ca0fbfdb770260fcba6c62d5f4e52",
+      "qa_file": "faculty-batch-neu-rotation-002-qa.json",
+      "qa_sha256": "a83d017c5d2867193894defb4fc0f714c482f7b5726906fc7a8bdfb76225c09f",
+      "independent_review_file": "faculty-batch-neu-rotation-002-independent-review.json",
+      "independent_review_sha256": "a1814ac4f33f88ba1c8f96e5622631b9eb36c224f59f68874d5797fd511a1b5f"
+    },
+    {
+      "file": "faculty-batch-tongji-rotation-002.json",
+      "sha256": "9f9ba91abf8715a43fe265cf0340b5657b7d58318bddfc6d43078de65bdef7e0",
+      "scope_file": "faculty-batch-tongji-rotation-002-scope.json",
+      "scope_sha256": "5ce7bc6895771a19915b9d2d92a9d106aff3a6c2978dcd07017437512c4a364a",
+      "qa_file": "faculty-batch-tongji-rotation-002-qa.json",
+      "qa_sha256": "e452bea945a94fae54adb38dd2e8cd47e86faadd418cbe06f6d4e8a2e5ed4119",
+      "independent_review_file": "faculty-batch-tongji-rotation-002-independent-review.json",
+      "independent_review_sha256": "7f134c26bbf123cfa263f8e1a5f2c114a8937a8736f0ecdfbe9626c872233bcb"
+    },
+    {
+      "file": "faculty-batch-ecnu-rotation-002.json",
+      "sha256": "c14da5f35e262af10821f328114fcf497cb348c8c17dcd03254407e3b8fb02c0",
+      "scope_file": "faculty-batch-ecnu-rotation-002-scope.json",
+      "scope_sha256": "550bfb04ceb2ae4a225a8d54fcd2ebc562b283f54b0956fc04a97dda0ec4fadb",
+      "qa_file": "faculty-batch-ecnu-rotation-002-qa.json",
+      "qa_sha256": "a0afd495156ad85567d0dbb5a9955478004bf9c7fcc147159fe58258e2918bd8",
+      "independent_review_file": "faculty-batch-ecnu-rotation-002-independent-review.json",
+      "independent_review_sha256": "f970f4170264f778aaa70bb0194f4cd7dc27448d29269f3329ffa7eabfee1ea6"
+    }
+  ],
+  "consumer_boundaries": [
+    "NEU郭立新仅索引pending；另两人正文职业事实与研究所名录索引归属分层，不声称名录个人直链已核。",
+    "CAU武维华/陈丽梅学历及历史岗位、Markou外校索引博士/导师候选不进主教育、任职、师承图或确证筛选。",
+    "访问、博士后为非学位；学位标签、毕业、导师及获奖不代替明确授位，未知保持null。",
+    "CAU原个人页最近403不提供个人主页快捷入口，已成功读取的职业证据及复核限制完整保留。",
+    "陈隽本科1993-09/1993-07冲突、Markou研究关联身份不作南非全职、未知校区与人事在岗均不猜补。",
+    "候选教育与导师事件绑定单独闭合；主师承只能引用主教育。精选书目不称论文全集或出版社全文核验。",
+    "全部旧数据、39学校注册表、先前冻结研究工件保持；仅本地准备，不发布。"
+  ],
+  "source_review_scope": "逐校独立核验通过并保留限制。本地接入复核来源关联、语义边界与导出；本次不重新访问外部网站。",
+  "release_status": "local_integrated_not_published",
+  "local_patch_artifact": "rotation002-integration-ready.json",
+  "local_patch_sha256": "cd305d1ef8c468798b51f91ba8c5fd7c74006959e6e700705117c728cbc34783"
+}

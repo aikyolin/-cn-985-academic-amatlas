@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "39校公开名录样本，1688条整合记录、1726条原始来源观察。原1661条记录与1699条观察保持；新增9校27条选中观察，不是全院或唯一现任人数；195条旧coverage保持。",
+  "scope": "39校公开名录样本，1700条整合记录、1738条原始来源观察；原1688记录与1726观察不变。新增4校12条选中观察不表示全系全院或唯一现任人数。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -1219,6 +1219,34 @@
     {
       "school_id": "xjtu",
       "organization_id": "xjtu-math-department",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "cau",
+      "organization_id": "cau-biology-plant-science",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "neu",
+      "organization_id": "neu-mechanical-vehicle-engineering",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "tongji",
+      "organization_id": "tongji-civil-building-engineering",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "ecnu",
+      "organization_id": "ecnu-geography",
       "visible_roster_entries": 3,
       "count_scope": "selected_subset_only",
       "coverage_complete": false
@@ -4766,6 +4794,78 @@
       "pagination": "not_established_for_this_selected_subset",
       "accessed_on": "2026-10-23",
       "batch_id": "xjtu-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "cau",
+      "organization_id": "cau-biology-plant-science",
+      "url": "https://cbs.cau.edu.cn/col/col31826/index.html",
+      "category": "植物科学系教授",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。",
+      "selection_basis": "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "cau-selected-roster-rotation-002"
+    },
+    {
+      "school_id": "neu",
+      "organization_id": "neu-mechanical-vehicle-engineering",
+      "url": "https://www.me.neu.edu.cn/3209/",
+      "category": "车辆工程研究所教授（仅官方名录索引）",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。",
+      "selection_basis": "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。",
+      "source_evidence_status": "official_search_index_professional_excerpt_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "neu-selected-roster-rotation-002"
+    },
+    {
+      "school_id": "tongji",
+      "organization_id": "tongji-civil-building-engineering",
+      "url": "https://structure.tongji.edu.cn/szdw/js.htm",
+      "category": "建筑工程系教授",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。",
+      "selection_basis": "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "tongji-selected-roster-rotation-002"
+    },
+    {
+      "school_id": "ecnu",
+      "organization_id": "ecnu-geography",
+      "url": "https://geo.ecnu.edu.cn/zcjb/list.htm",
+      "category": "地理科学学院正高级",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "地理科学学院教学科研名录“正高级”栏目正文61人，按原序选前3白开旭、毕春娟、崔璨，不按学历、海外经历或资料丰富度筛人。正高级是名录类别，不当作组织节点；仅3人的部分职业资料，非全院或全校完成，名录现列不等人事在岗证明。",
+      "selection_basis": "地理科学学院教学科研名录“正高级”栏目正文61人，按原序选前3白开旭、毕春娟、崔璨，不按学历、海外经历或资料丰富度筛人。正高级是名录类别，不当作组织节点；仅3人的部分职业资料，非全院或全校完成，名录现列不等人事在岗证明。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "ecnu-selected-roster-rotation-002"
     }
   ],
   "entries": [
@@ -59992,6 +60092,631 @@
         "xjtu-zhangzhengce"
       ],
       "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-cau-biology-plant-science-wuweihua",
+      "name": "武维华",
+      "school_id": "cau",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "cau-biology-plant-science",
+      "department_id": "cau-biology-plant-science",
+      "category": "植物科学系教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://cbs.cau.edu.cn/art/2020/4/21/art_31826_676401.html",
+      "roster_source_url": "https://cbs.cau.edu.cn/col/col31826/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "cau-wuweihua",
+      "batch_id": "cau-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-cau-rotation-002",
+      "source_ids": [
+        "cau-bio-plant-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cbs.cau.edu.cn/col/col31826/index.html",
+        "profile_url": "https://cbs.cau.edu.cn/art/2020/4/21/art_31826_676401.html",
+        "source_ids": [
+          "cau-bio-plant-professor-roster"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。"
+      ],
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "原学院个人页最近访问403；保留已读职业证据，不称个人主页当前可达。",
+      "alternative_professional_sources": [
+        {
+          "title": "已读官方实验室职业资料（非原学院个人主页）",
+          "url": "https://sklper.cau.edu.cn/article/1687380835962478592",
+          "source_id": "cau-wuweihua-lab"
+        }
+      ],
+      "source_observation_ids": [
+        "cau-selected-roster-rotation-002:roster-cau-biology-plant-science-wuweihua:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "cau-wuweihua"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-cau-biology-plant-science-chenliqun",
+      "name": "陈立群",
+      "school_id": "cau",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "cau-biology-plant-science",
+      "department_id": "cau-biology-plant-science",
+      "category": "植物科学系教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://cbs.cau.edu.cn/art/2018/9/14/art_31826_585906.html",
+      "roster_source_url": "https://cbs.cau.edu.cn/col/col31826/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "cau-chenliqun",
+      "batch_id": "cau-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-cau-rotation-002",
+      "source_ids": [
+        "cau-bio-plant-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cbs.cau.edu.cn/col/col31826/index.html",
+        "profile_url": "https://cbs.cau.edu.cn/art/2018/9/14/art_31826_585906.html",
+        "source_ids": [
+          "cau-bio-plant-professor-roster"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。"
+      ],
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "原学院个人页最近访问403；保留已读职业证据，不称个人主页当前可达。",
+      "source_observation_ids": [
+        "cau-selected-roster-rotation-002:roster-cau-biology-plant-science-chenliqun:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "cau-chenliqun"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-cau-biology-plant-science-chenlimei",
+      "name": "陈丽梅",
+      "school_id": "cau",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "cau-biology-plant-science",
+      "department_id": "cau-biology-plant-science",
+      "category": "植物科学系教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://cbs.cau.edu.cn/art/2021/3/24/art_31826_735960.html",
+      "roster_source_url": "https://cbs.cau.edu.cn/col/col31826/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "cau-chenlimei",
+      "batch_id": "cau-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-cau-rotation-002",
+      "source_ids": [
+        "cau-bio-plant-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cbs.cau.edu.cn/col/col31826/index.html",
+        "profile_url": "https://cbs.cau.edu.cn/art/2021/3/24/art_31826_735960.html",
+        "source_ids": [
+          "cau-bio-plant-professor-roster"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。"
+      ],
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "原学院个人页最近访问403；保留已读职业证据，不称个人主页当前可达。",
+      "alternative_professional_sources": [
+        {
+          "title": "已读官方实验室职业资料（非原学院个人主页）",
+          "url": "https://sklper.cau.edu.cn/article/1687376591972753408",
+          "source_id": "cau-chenlimei-lab"
+        }
+      ],
+      "source_observation_ids": [
+        "cau-selected-roster-rotation-002:roster-cau-biology-plant-science-chenlimei:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "cau-chenlimei"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-neu-me-vehicle-chenzeyu",
+      "name": "陈泽宇",
+      "school_id": "neu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "neu-mechanical-vehicle-engineering",
+      "department_id": "neu-mechanical-vehicle-engineering",
+      "category": "车辆工程研究所教授（仅官方名录索引）",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category_index_only",
+      "official_profile_url": null,
+      "roster_source_url": "https://www.me.neu.edu.cn/3209/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_index_only_no_direct_profile_link_verified",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "neu-chenzeyu",
+      "batch_id": "neu-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-neu-rotation-002",
+      "source_ids": [
+        "neu-me-vehicle-professor-roster"
+      ],
+      "source_evidence_status": "official_search_index_professional_excerpt_read",
+      "source_evidence_status_label": "仅官方搜索索引职业摘录可读；未核该页正文或名录直链。",
+      "selection_status": "selected_subset",
+      "selection_basis": "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。",
+      "source_identity_evidence": {
+        "status": "official_index_roster_and_profile_affiliation_crosscheck",
+        "source_url": "https://www.me.neu.edu.cn/3209/",
+        "supporting_source_urls": [
+          "https://faculty.neu.edu.cn/chenzy/zh_CN/index.htm"
+        ],
+        "note": "同名、同学院职业背景交叉对应；索引名录未取得正文或个人直链结构。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。"
+      ],
+      "profile_candidate_url": "https://faculty.neu.edu.cn/chenzy/zh_CN/index.htm",
+      "professional_evidence_url": "https://www.me.neu.edu.cn/3209/",
+      "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
+      "employment_status": "official_profile_lists_employed",
+      "organization_assignment_basis": "official_index_only_institute_roster",
+      "roster_affiliation_status": "official_index_only",
+      "source_observation_ids": [
+        "neu-selected-roster-rotation-002:roster-neu-me-vehicle-chenzeyu:1"
+      ],
+      "profile_link_from_roster_verified": false,
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-neu-me-vehicle-guolixin",
+      "name": "郭立新",
+      "school_id": "neu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "neu-mechanical-vehicle-engineering",
+      "department_id": "neu-mechanical-vehicle-engineering",
+      "category": "车辆工程研究所教授（仅官方名录索引）",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category_index_only",
+      "official_profile_url": null,
+      "roster_source_url": "https://www.me.neu.edu.cn/3209/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_index_only_no_direct_profile_link_verified",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "neu-guolixin",
+      "batch_id": "neu-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-neu-rotation-002",
+      "source_ids": [
+        "neu-me-vehicle-professor-roster"
+      ],
+      "source_evidence_status": "official_search_index_professional_excerpt_read",
+      "source_evidence_status_label": "仅官方搜索索引职业摘录可读；未核该页正文或名录直链。",
+      "selection_status": "selected_subset",
+      "selection_basis": "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。",
+      "source_identity_evidence": {
+        "status": "official_index_roster_and_profile_candidate",
+        "source_url": "https://www.me.neu.edu.cn/3209/",
+        "supporting_source_urls": [
+          "https://www.me.neu.edu.cn/2015/1105/c3345a55988/pagem.htm"
+        ],
+        "note": "同名、同学院职业背景交叉对应；索引名录未取得正文或个人直链结构。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。"
+      ],
+      "profile_candidate_url": "https://www.me.neu.edu.cn/2015/1105/c3345a55988/pagem.htm",
+      "professional_evidence_url": "https://www.me.neu.edu.cn/3209/",
+      "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页正文未核，不启用个人主页导航。",
+      "employment_status": "unknown",
+      "organization_assignment_basis": "official_index_only_institute_roster",
+      "roster_affiliation_status": "official_index_only",
+      "source_observation_ids": [
+        "neu-selected-roster-rotation-002:roster-neu-me-vehicle-guolixin:1"
+      ],
+      "profile_link_from_roster_verified": false,
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-neu-me-vehicle-liangzhongchao",
+      "name": "梁忠超",
+      "school_id": "neu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "neu-mechanical-vehicle-engineering",
+      "department_id": "neu-mechanical-vehicle-engineering",
+      "category": "车辆工程研究所教授（仅官方名录索引）",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category_index_only",
+      "official_profile_url": null,
+      "roster_source_url": "https://www.me.neu.edu.cn/3209/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_index_only_no_direct_profile_link_verified",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "neu-liangzhongchao",
+      "batch_id": "neu-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-neu-rotation-002",
+      "source_ids": [
+        "neu-me-vehicle-professor-roster"
+      ],
+      "source_evidence_status": "official_search_index_professional_excerpt_read",
+      "source_evidence_status_label": "仅官方搜索索引职业摘录可读；未核该页正文或名录直链。",
+      "selection_status": "selected_subset",
+      "selection_basis": "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。",
+      "source_identity_evidence": {
+        "status": "official_index_roster_and_profile_affiliation_crosscheck",
+        "source_url": "https://www.me.neu.edu.cn/3209/",
+        "supporting_source_urls": [
+          "https://faculty.neu.edu.cn/liangzc/zh_CN/index.htm"
+        ],
+        "note": "同名、同学院职业背景交叉对应；索引名录未取得正文或个人直链结构。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。"
+      ],
+      "profile_candidate_url": "https://faculty.neu.edu.cn/liangzc/zh_CN/index.htm",
+      "professional_evidence_url": "https://www.me.neu.edu.cn/3209/",
+      "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
+      "employment_status": "official_profile_lists_employed",
+      "organization_assignment_basis": "official_index_only_institute_roster",
+      "roster_affiliation_status": "official_index_only",
+      "source_observation_ids": [
+        "neu-selected-roster-rotation-002:roster-neu-me-vehicle-liangzhongchao:1"
+      ],
+      "profile_link_from_roster_verified": false,
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-tongji-civil-building-engineering-george-markou",
+      "name": "George Markou",
+      "school_id": "tongji",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "tongji-civil-building-engineering",
+      "department_id": "tongji-civil-building-engineering",
+      "category": "建筑工程系教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://structure.tongji.edu.cn/info/1012/7603.htm",
+      "roster_source_url": "https://structure.tongji.edu.cn/szdw/js.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "tongji-george-markou",
+      "batch_id": "tongji-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-tongji-rotation-002",
+      "source_ids": [
+        "tongji-structure-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://structure.tongji.edu.cn/szdw/js.htm",
+        "profile_url": "https://structure.tongji.edu.cn/info/1012/7603.htm",
+        "source_ids": [
+          "tongji-structure-professor-roster"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。"
+      ],
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation-002:roster-tongji-civil-building-engineering-george-markou:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "tongji-george-markou"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-tongji-civil-building-engineering-chenjianbing",
+      "name": "陈建兵",
+      "school_id": "tongji",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "tongji-civil-building-engineering",
+      "department_id": "tongji-civil-building-engineering",
+      "category": "建筑工程系教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://structure.tongji.edu.cn/info/1012/2308.htm",
+      "roster_source_url": "https://structure.tongji.edu.cn/szdw/js.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "tongji-chenjianbing",
+      "batch_id": "tongji-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-tongji-rotation-002",
+      "source_ids": [
+        "tongji-structure-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://structure.tongji.edu.cn/szdw/js.htm",
+        "profile_url": "https://structure.tongji.edu.cn/info/1012/2308.htm",
+        "source_ids": [
+          "tongji-structure-professor-roster"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。"
+      ],
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation-002:roster-tongji-civil-building-engineering-chenjianbing:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "tongji-chenjianbing"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-tongji-civil-building-engineering-chenjun",
+      "name": "陈隽",
+      "school_id": "tongji",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "tongji-civil-building-engineering",
+      "department_id": "tongji-civil-building-engineering",
+      "category": "建筑工程系教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://structure.tongji.edu.cn/info/1012/2307.htm",
+      "roster_source_url": "https://structure.tongji.edu.cn/szdw/js.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "tongji-chenjun",
+      "batch_id": "tongji-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-tongji-rotation-002",
+      "source_ids": [
+        "tongji-structure-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://structure.tongji.edu.cn/szdw/js.htm",
+        "profile_url": "https://structure.tongji.edu.cn/info/1012/2307.htm",
+        "source_ids": [
+          "tongji-structure-professor-roster"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。"
+      ],
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation-002:roster-tongji-civil-building-engineering-chenjun:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "tongji-chenjun"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-ecnu-geography-baikaixu",
+      "name": "白开旭",
+      "school_id": "ecnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ecnu-geography",
+      "department_id": "ecnu-geography",
+      "category": "地理科学学院正高级",
+      "listed_role": "正高级",
+      "listed_role_basis": "explicit_official_full_senior_rank_category",
+      "official_profile_url": "https://faculty.ecnu.edu.cn/_s33/bkx/main.psp",
+      "roster_source_url": "https://geo.ecnu.edu.cn/zcjb/list.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ecnu-baikaixu",
+      "batch_id": "ecnu-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-ecnu-rotation-002",
+      "source_ids": [
+        "ecnu-geography-senior-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "地理科学学院教学科研名录“正高级”栏目正文61人，按原序选前3白开旭、毕春娟、崔璨，不按学历、海外经历或资料丰富度筛人。正高级是名录类别，不当作组织节点；仅3人的部分职业资料，非全院或全校完成，名录现列不等人事在岗证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://geo.ecnu.edu.cn/zcjb/list.htm",
+        "profile_url": "https://faculty.ecnu.edu.cn/_s33/bkx/main.psp",
+        "source_ids": [
+          "ecnu-geography-senior-roster",
+          "ecnu-baikaixu-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "地理科学学院教学科研名录“正高级”栏目正文61人，按原序选前3白开旭、毕春娟、崔璨，不按学历、海外经历或资料丰富度筛人。正高级是名录类别，不当作组织节点；仅3人的部分职业资料，非全院或全校完成，名录现列不等人事在岗证明。"
+      ],
+      "source_observation_ids": [
+        "ecnu-selected-roster-rotation-002:roster-ecnu-geography-baikaixu:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "ecnu-baikaixu"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-ecnu-geography-bichunjuan",
+      "name": "毕春娟",
+      "school_id": "ecnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ecnu-geography",
+      "department_id": "ecnu-geography",
+      "category": "地理科学学院正高级",
+      "listed_role": "正高级",
+      "listed_role_basis": "explicit_official_full_senior_rank_category",
+      "official_profile_url": "https://faculty.ecnu.edu.cn/_s33/bcj/main.psp",
+      "roster_source_url": "https://geo.ecnu.edu.cn/zcjb/list.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ecnu-bichunjuan",
+      "batch_id": "ecnu-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-ecnu-rotation-002",
+      "source_ids": [
+        "ecnu-geography-senior-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "地理科学学院教学科研名录“正高级”栏目正文61人，按原序选前3白开旭、毕春娟、崔璨，不按学历、海外经历或资料丰富度筛人。正高级是名录类别，不当作组织节点；仅3人的部分职业资料，非全院或全校完成，名录现列不等人事在岗证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://geo.ecnu.edu.cn/zcjb/list.htm",
+        "profile_url": "https://faculty.ecnu.edu.cn/_s33/bcj/main.psp",
+        "source_ids": [
+          "ecnu-geography-senior-roster",
+          "ecnu-bichunjuan-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "地理科学学院教学科研名录“正高级”栏目正文61人，按原序选前3白开旭、毕春娟、崔璨，不按学历、海外经历或资料丰富度筛人。正高级是名录类别，不当作组织节点；仅3人的部分职业资料，非全院或全校完成，名录现列不等人事在岗证明。"
+      ],
+      "source_observation_ids": [
+        "ecnu-selected-roster-rotation-002:roster-ecnu-geography-bichunjuan:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "ecnu-bichunjuan"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-ecnu-geography-cuican",
+      "name": "崔璨",
+      "school_id": "ecnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ecnu-geography",
+      "department_id": "ecnu-geography",
+      "category": "地理科学学院正高级",
+      "listed_role": "正高级",
+      "listed_role_basis": "explicit_official_full_senior_rank_category",
+      "official_profile_url": "https://faculty.ecnu.edu.cn/_s33/cc2/main.psp",
+      "roster_source_url": "https://geo.ecnu.edu.cn/zcjb/list.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ecnu-cuican",
+      "batch_id": "ecnu-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-ecnu-rotation-002",
+      "source_ids": [
+        "ecnu-geography-senior-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "地理科学学院教学科研名录“正高级”栏目正文61人，按原序选前3白开旭、毕春娟、崔璨，不按学历、海外经历或资料丰富度筛人。正高级是名录类别，不当作组织节点；仅3人的部分职业资料，非全院或全校完成，名录现列不等人事在岗证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://geo.ecnu.edu.cn/zcjb/list.htm",
+        "profile_url": "https://faculty.ecnu.edu.cn/_s33/cc2/main.psp",
+        "source_ids": [
+          "ecnu-geography-senior-roster",
+          "ecnu-cuican-profile"
+        ],
+        "supporting_source_ids": [
+          "acsp-cuican-2015-cv",
+          "iacp-cuican-2021-member-update"
+        ],
+        "note": "2015英文CV与现官方本人页同为Utrecht博士、Harvard Pollman博士后、同一住房/迁移研究及同题论文；IACP同时列Can Cui/崔璨及ECNU职业身份，不合并其他同名人物。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "地理科学学院教学科研名录“正高级”栏目正文61人，按原序选前3白开旭、毕春娟、崔璨，不按学历、海外经历或资料丰富度筛人。正高级是名录类别，不当作组织节点；仅3人的部分职业资料，非全院或全校完成，名录现列不等人事在岗证明。"
+      ],
+      "source_observation_ids": [
+        "ecnu-selected-roster-rotation-002:roster-ecnu-geography-cuican:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "ecnu-cuican"
+      ],
+      "candidate_match_status": "pending_identity_review"
     }
   ],
   "conflicts": [
@@ -67588,27 +68313,155 @@
         }
       ],
       "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "cau-selected-roster-rotation-002",
+      "school_id": "cau",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-cau-biology-plant-science-wuweihua",
+        "roster-cau-biology-plant-science-chenliqun",
+        "roster-cau-biology-plant-science-chenlimei"
+      ],
+      "source_observation_ids": [
+        "cau-selected-roster-rotation-002:roster-cau-biology-plant-science-wuweihua:1",
+        "cau-selected-roster-rotation-002:roster-cau-biology-plant-science-chenliqun:1",
+        "cau-selected-roster-rotation-002:roster-cau-biology-plant-science-chenlimei:1"
+      ],
+      "selection": "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。",
+      "selection_basis": "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-cau-rotation-002.json",
+          "sha256": "c246a2efd4599d8a044fb790b20389b8e5a56eec36749546d48c8caedd323e01"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "neu-selected-roster-rotation-002",
+      "school_id": "neu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-neu-me-vehicle-chenzeyu",
+        "roster-neu-me-vehicle-guolixin",
+        "roster-neu-me-vehicle-liangzhongchao"
+      ],
+      "source_observation_ids": [
+        "neu-selected-roster-rotation-002:roster-neu-me-vehicle-chenzeyu:1",
+        "neu-selected-roster-rotation-002:roster-neu-me-vehicle-guolixin:1",
+        "neu-selected-roster-rotation-002:roster-neu-me-vehicle-liangzhongchao:1"
+      ],
+      "selection": "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。",
+      "selection_basis": "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-neu-rotation-002.json",
+          "sha256": "226bf8cf058ed295a9211e13be19e044ba36e7b866f7c08a5026ad2292e210e1"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "tongji-selected-roster-rotation-002",
+      "school_id": "tongji",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-tongji-civil-building-engineering-george-markou",
+        "roster-tongji-civil-building-engineering-chenjianbing",
+        "roster-tongji-civil-building-engineering-chenjun"
+      ],
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation-002:roster-tongji-civil-building-engineering-george-markou:1",
+        "tongji-selected-roster-rotation-002:roster-tongji-civil-building-engineering-chenjianbing:1",
+        "tongji-selected-roster-rotation-002:roster-tongji-civil-building-engineering-chenjun:1"
+      ],
+      "selection": "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。",
+      "selection_basis": "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-tongji-rotation-002.json",
+          "sha256": "9f9ba91abf8715a43fe265cf0340b5657b7d58318bddfc6d43078de65bdef7e0"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "ecnu-selected-roster-rotation-002",
+      "school_id": "ecnu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-ecnu-geography-baikaixu",
+        "roster-ecnu-geography-bichunjuan",
+        "roster-ecnu-geography-cuican"
+      ],
+      "source_observation_ids": [
+        "ecnu-selected-roster-rotation-002:roster-ecnu-geography-baikaixu:1",
+        "ecnu-selected-roster-rotation-002:roster-ecnu-geography-bichunjuan:1",
+        "ecnu-selected-roster-rotation-002:roster-ecnu-geography-cuican:1"
+      ],
+      "selection": "地理科学学院教学科研名录“正高级”栏目正文61人，按原序选前3白开旭、毕春娟、崔璨，不按学历、海外经历或资料丰富度筛人。正高级是名录类别，不当作组织节点；仅3人的部分职业资料，非全院或全校完成，名录现列不等人事在岗证明。",
+      "selection_basis": "地理科学学院教学科研名录“正高级”栏目正文61人，按原序选前3白开旭、毕春娟、崔璨，不按学历、海外经历或资料丰富度筛人。正高级是名录类别，不当作组织节点；仅3人的部分职业资料，非全院或全校完成，名录现列不等人事在岗证明。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-ecnu-rotation-002.json",
+          "sha256": "c14da5f35e262af10821f328114fcf497cb348c8c17dcd03254407e3b8fb02c0"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
     }
   ],
   "totals": {
-    "organization_count": 113,
-    "category_count": 177,
-    "entries_with_profile_link": 1487,
-    "entries_without_profile_link": 201,
+    "organization_count": 117,
+    "category_count": 181,
+    "entries_with_profile_link": 1496,
+    "entries_without_profile_link": 204,
     "dedup_candidate_groups": 60,
     "placeholder_profile_link_observations": 18,
     "current_employment_count_verified": false,
     "not_unique_people_count": true,
-    "record_count": 1688,
-    "raw_observation_count": 1726,
-    "roster_records": 1688,
-    "raw_source_observations": 1726,
-    "coverage_unit_count": 204,
+    "record_count": 1700,
+    "raw_observation_count": 1738,
+    "roster_records": 1700,
+    "raw_source_observations": 1738,
+    "coverage_unit_count": 208,
     "count_unit": "integrated_roster_records",
     "source_record_grouping_reduction": 38,
     "category_count_basis": "unique_organization_category_pairs",
-    "unique_organization_category_pairs": 177,
-    "batch_category_count": 196,
+    "unique_organization_category_pairs": 181,
+    "batch_category_count": 200,
     "category_count_source": "coverage_rows_preserved_without_deduplication"
   },
   "role_interpretation": {
@@ -67753,5 +68606,5 @@
     }
   ],
   "raw_data_location": "完整原始来源观察保存在仓库 data/rosters.json，以及导出 Excel 的“原始来源观察”工作表；网站快照不重复加载这些原始内容。",
-  "build_id": "a202e3b5b234812b"
+  "build_id": "329bda744ae05aee"
 }

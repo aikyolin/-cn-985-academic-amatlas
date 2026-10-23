@@ -1,6 +1,6 @@
-import {UNIVERSITIES,UNIVERSITY_SOURCE,UNIVERSITY_CROSSCHECK,findUniversities} from './universities.js?v=rotation-20261023-w3';
-import {renderRosters} from './rosters.js?v=rotation-20261023-w3';
-import {CAMPUS_LABELS as CL,REGION_LABELS as RL,CONTINENT_LABELS as CO,stages,educationStageLabel,provisionalDegree,mentorEvent,professionalGuidanceEvent,mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,officialProfileUrl,versionedPath,sameBuild,collaboratorEvent,institutions,schoolName as storedSchoolName,schoolCampuses,schoolUnits,campusLabel,schoolStats,normalizeSchoolFilters,routeSchool,matches,safeUrl,escapeHtml as esc} from './model.js?v=rotation-20261023-w3';
+import {UNIVERSITIES,UNIVERSITY_SOURCE,UNIVERSITY_CROSSCHECK,findUniversities} from './universities.js?v=rotation002-20261023-w1';
+import {renderRosters} from './rosters.js?v=rotation002-20261023-w1';
+import {CAMPUS_LABELS as CL,REGION_LABELS as RL,CONTINENT_LABELS as CO,stages,educationStageLabel,provisionalDegree,mentorEvent,professionalGuidanceEvent,mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,officialProfileUrl,versionedPath,sameBuild,collaboratorEvent,institutions,schoolName as storedSchoolName,schoolCampuses,schoolUnits,campusLabel,schoolStats,normalizeSchoolFilters,routeSchool,matches,safeUrl,escapeHtml as esc} from './model.js?v=rotation002-20261023-w1';
 const $=s=>document.querySelector(s), main=$('#main');
 let schoolContext='';
 let db, filter={school:'',q:'',campus:'',org:'',ug:'',master:'',doctor:'',continent:'',master_continent:''}, zoom=1;
@@ -8,7 +8,7 @@ const link=(url,label,cls='')=>safeUrl(url)?`<a class="${cls}" href="${esc(safeU
 const src=(url,label='查看来源')=>url?link(url,label,'source-link'):'';
 const publicationTypeLabel=p=>p.type_label||p.type||'成果类型未标注';
 const publicationLinkLabel=p=>p.link_status_label||(p.link_status==='official_publication_list_only'?'仅官网成果列表，未核独立论文页/DOI':p.link_status?'链接核验状态：'+p.link_status+'（不代表全文已核）':'');
-const statusLabel=s=>({active_officially_listed:'官方仍列在职（截至核对日）',active_institutional_report:'机构报道列职（非实时人事核验）',official_page_currently_listed:'官网现列职务；实际人事状态未独立核验',official_profile_indexed_current_role:'官方索引列现职，正文未直接核验',official_page_currently_listed_retirement_not_disclosed:'官网现列教授；退休及实际全职状态未披露',unknown:'未核实',unknown_conflicting:'来源冲突，待核实',emeritus_officially_listed:'官方列荣休教授',retired_officially_listed:'官方列已退休',retired:'已退休',deceased:'已故'}[s]||'未核实');
+const statusLabel=s=>({active_officially_listed:'官方仍列在职（截至核对日）',active_institutional_report:'机构报道列职（非实时人事核验）',official_page_currently_listed:'官网现列职务；实际人事状态未独立核验',official_profile_indexed_current_role:'官方索引列现职，正文未直接核验',official_page_currently_listed_retirement_not_disclosed:'官网现列教授；退休及实际全职状态未披露',unknown:'未核实',unknown_conflicting:'来源冲突，待核实',emeritus_officially_listed:'官方列荣休教授',retired_officially_listed:'官方列已退休',retired_or_emeritus_officially_listed:'官方离退休／荣休名录（非在职）',retired:'已退休',deceased:'已故'}[s]||'未核实');
 const period=e=>[e.start||'起始时间未披露',e.end||'结束时间未披露'].join(' — ');
 const schoolName=(data,id)=>institutions(data).some(s=>s.id===id)?storedSchoolName(data,id):UNIVERSITIES.find(s=>s.id===id)?.name||storedSchoolName(data,id);
 const orgName=id=>db.org_units.find(o=>o.id===id)?.name||'院系待核实';

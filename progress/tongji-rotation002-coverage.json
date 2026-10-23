@@ -1,0 +1,186 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "9f310e8b7e573268560c53762d2bd0ac7245fff5",
+  "school_id": "tongji",
+  "school_name": "同济大学",
+  "batch_id": "faculty-batch-tongji-rotation-002",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。",
+  "selection_basis": "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。",
+  "source_urls": [
+    "https://structure.tongji.edu.cn/szdw/js.htm",
+    "https://civileng.tongji.edu.cn/18058/list.htm"
+  ],
+  "organization_ids": [
+    "tongji-civil-building-engineering"
+  ],
+  "selected_roster_observations": 3,
+  "counts": {
+    "selected_records": 3,
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 17,
+      "appointments": 8,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 4,
+      "sources": 12,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 1,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 1,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0
+    },
+    "effective_professional_collections": {
+      "education": 17,
+      "appointments": 8,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 4,
+      "sources": 12,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 1,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 1,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 0,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 8,
+      "degree_awarded_null": 8,
+      "confirmed_degree_events": 1
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 8,
+      "degree_awarded_null": 8,
+      "confirmed_degree_events": 1
+    }
+  },
+  "records": [
+    {
+      "person_id": "tongji-george-markou",
+      "name": "George Markou",
+      "department_id": "tongji-civil-building-engineering",
+      "roster_entry_id": "roster-tongji-civil-building-engineering-george-markou",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://structure.tongji.edu.cn/info/1012/7603.htm",
+      "unknowns": [
+        "全职、编制和人事在岗未核；公开同济教授身份与南非研究关联身份分列。",
+        "教育表仅学位标签；外校索引明确博士获授与导师但正文403，保留待核，不进入确证筛选或师承图。",
+        "五年制学位层级与全部教育起始时间未从同济正文核得；访问时间未知。",
+        "同济个人主页平台工具未能访问，未反复尝试；未取得可直接核验的本人论文正文书目，publications为空。",
+        "校区未知，不从页脚地址推断；不采国籍、出生、联系方式或学生名单。"
+      ]
+    },
+    {
+      "person_id": "tongji-chenjianbing",
+      "name": "陈建兵",
+      "department_id": "tongji-civil-building-engineering",
+      "roster_entry_id": "roster-tongji-civil-building-engineering-chenjianbing",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://structure.tongji.edu.cn/info/1012/2308.htm",
+      "unknowns": [
+        "本科、硕士未见明确获授文字；博士授位只明确到年。",
+        "访问起讫未明；本人导师未见直接说明，不从合著或博士生导师资格推断。",
+        "教授起始时间、校区及全职在岗未知；论文仅2项官方书目元数据。"
+      ]
+    },
+    {
+      "person_id": "tongji-chenjun",
+      "name": "陈隽",
+      "department_id": "tongji-civil-building-engineering",
+      "roster_entry_id": "roster-tongji-civil-building-engineering-chenjun",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://structure.tongji.edu.cn/info/1012/2307.htm",
+      "unknowns": [
+        "本科结束月份官方系页1993-09与中心页1993-07冲突，保留原值并显式标注，不静默修正。",
+        "教育标签及博士毕业均不作为明确授位；各阶段本人导师未披露。",
+        "教授起始时间、校区、全职与人事在岗未知；留校任教起点不等晋升教授起点。",
+        "论文仅2项官方书目，不宣称最新或全著作集。"
+      ]
+    }
+  ],
+  "independent_source_review": {
+    "status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T18:48:28.854440+00:00",
+    "reviewed_data_sha256": "9f9ba91abf8715a43fe265cf0340b5657b7d58318bddfc6d43078de65bdef7e0",
+    "checks": {
+      "source_reference_and_mentor_event_closure": "passed",
+      "counts_recomputed": true,
+      "source_package_modified": false
+    },
+    "integration_limits": [
+      "仅建筑工程系教授栏目首3，非全院或全校覆盖；研究室字段存在但当前导航叶节点为已证实建筑工程系，不夸大覆盖。",
+      "教授现列与Research Associate不等全职人事核实；索引候选不进入确证授位或主师承图，未知导师不猜。",
+      "陈隽三次短访只给发生年，不解读为整年；学校称谓及年代按来源保留，陈建兵授位只明确年精度。",
+      "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+      "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+    ],
+    "blockers": [],
+    "review_scope": "来源批次的既有独立核验；本次本地接入仅复核数据、来源闭合与导出，不声称重新访问网页。"
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-tongji-rotation-002.json",
+      "sha256": "9f9ba91abf8715a43fe265cf0340b5657b7d58318bddfc6d43078de65bdef7e0",
+      "scope_file": "faculty-batch-tongji-rotation-002-scope.json",
+      "scope_sha256": "5ce7bc6895771a19915b9d2d92a9d106aff3a6c2978dcd07017437512c4a364a",
+      "qa_file": "faculty-batch-tongji-rotation-002-qa.json",
+      "qa_sha256": "e452bea945a94fae54adb38dd2e8cd47e86faadd418cbe06f6d4e8a2e5ed4119",
+      "independent_review_file": "faculty-batch-tongji-rotation-002-independent-review.json",
+      "independent_review_sha256": "7f134c26bbf123cfa263f8e1a5f2c114a8937a8736f0ecdfbe9626c872233bcb"
+    }
+  ],
+  "limitations": [
+    "新增土木工程学院建筑工程系官方“教授”栏目，按33人页面原序取前3人：George Markou、陈建兵、陈隽。不按教育、师承或履历丰富度筛人。本包不表示全系、全院或全校完成；教授名录不等于全职在岗的人事证明。",
+    "仅公开职业教育、任职、明确导师线索与每人最多2条论文元数据；不含联系方式、出生资料、政治背景、私生活或学生名单。",
+    "明确获授才degree_awarded=true且event_kind=degree；标签/毕业未明获授为null；访问为false。",
+    "比勒陀利亚大学George Markou页面仅索引可读、正文403；相关博士和导师线索单列待核，排除确证筛选与师承图，导师navigation_verified=false。",
+    "名录当前列示不等全职在岗；Markou校外Research Associate身份分型，不采用旧校索引currently描述确定2026现职。",
+    "访问限制不绕过、不反复尝试；未核事实保持未知，不因资料短缺换人。",
+    "仅建筑工程系教授栏目首3，非全院或全校覆盖；研究室字段存在但当前导航叶节点为已证实建筑工程系，不夸大覆盖。",
+    "教授现列与Research Associate不等全职人事核实；索引候选不进入确证授位或主师承图，未知导师不猜。",
+    "陈隽三次短访只给发生年，不解读为整年；学校称谓及年代按来源保留，陈建兵授位只明确年精度。",
+    "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+    "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+  ],
+  "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。",
+  "release_status": "local_integrated_not_published"
+}

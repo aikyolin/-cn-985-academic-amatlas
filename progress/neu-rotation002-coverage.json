@@ -1,0 +1,187 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "9f310e8b7e573268560c53762d2bd0ac7245fff5",
+  "school_id": "neu",
+  "school_name": "东北大学",
+  "batch_id": "faculty-batch-neu-rotation-002",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。",
+  "selection_basis": "机械工程与自动化学院教师名录中车辆工程研究所教授分类按拼音排列，原序5人陈泽宇、郭立新、梁忠超、王永富、赵晶，选前3人。选样不依据学历、师承或履历丰富度；名录正文超时/503，原序仅官方索引可见，需后续正文补核。仅3人，非全研究所、全院或全校完成。",
+  "source_urls": [
+    "https://www.me.neu.edu.cn/3209/",
+    "https://faculty.neu.edu.cn/chenzy/zh_CN/index.htm",
+    "https://faculty.neu.edu.cn/liangzc/zh_CN/index.htm"
+  ],
+  "organization_ids": [
+    "neu-mechanical-vehicle-engineering"
+  ],
+  "selected_roster_observations": 3,
+  "counts": {
+    "selected_records": 3,
+    "professional_profiles": 2,
+    "pending_profiles": 1,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 8,
+      "appointments": 6,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 4,
+      "sources": 6,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 2,
+      "pending_appointment_candidates": 5,
+      "pending_professional_fact_candidates": 0
+    },
+    "effective_professional_collections": {
+      "education": 8,
+      "appointments": 6,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 4,
+      "sources": 4,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 2,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 2,
+      "pending_appointment_candidates": 5,
+      "pending_professional_fact_candidates": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 2,
+      "degree_awarded_null": 5,
+      "confirmed_degree_events": 1
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 2,
+      "degree_awarded_null": 5,
+      "confirmed_degree_events": 1
+    }
+  },
+  "records": [
+    {
+      "person_id": "neu-chenzeyu",
+      "name": "陈泽宇",
+      "department_id": "neu-mechanical-vehicle-engineering",
+      "roster_entry_id": "roster-neu-me-vehicle-chenzeyu",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://faculty.neu.edu.cn/chenzy/zh_CN/index.htm",
+      "unknowns": [
+        "名录教授分类与研究所归属仅官方索引可读，名录直链未取得，不标记explicit_profile_link。",
+        "未见明确本人导师；不从合著、访问目的地、项目或所指导学生反推。",
+        "校区未核，保持空；精选书目不是全集。"
+      ]
+    },
+    {
+      "person_id": "neu-guolixin",
+      "name": "郭立新",
+      "department_id": "neu-mechanical-vehicle-engineering",
+      "roster_entry_id": "roster-neu-me-vehicle-guolixin",
+      "profile_status": "roster_identity_pending",
+      "record_layer": "pending",
+      "official_url": "https://www.me.neu.edu.cn/2015/1105/c3345a55988/pagem.htm",
+      "unknowns": [
+        "名录教授分类与研究所归属仅官方索引可读，名录直链未取得，不标记explicit_profile_link。",
+        "未见明确本人导师；不从合著、访问目的地、项目或所指导学生反推。",
+        "校区未核，保持空；精选书目不是全集。",
+        "个人页仅官方索引可读；教育与历史任职全留候选，不进入确证过滤。",
+        "当前在职/退休未知，关闭导航；未取得可采用的本人论文书目，不以同名学者补齐。"
+      ]
+    },
+    {
+      "person_id": "neu-liangzhongchao",
+      "name": "梁忠超",
+      "department_id": "neu-mechanical-vehicle-engineering",
+      "roster_entry_id": "roster-neu-me-vehicle-liangzhongchao",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://faculty.neu.edu.cn/liangzc/zh_CN/index.htm",
+      "unknowns": [
+        "名录教授分类与研究所归属仅官方索引可读，名录直链未取得，不标记explicit_profile_link。",
+        "未见明确本人导师；不从合著、访问目的地、项目或所指导学生反推。",
+        "校区未核，保持空；精选书目不是全集。",
+        "博士后基金项目不等于已核博士后履历，未从项目反推出博士后事件。",
+        "web读取版本与普通HTTP当前正文简介存在更新差异；博士授位以本次HTTP 200正文明确获授语句补核。"
+      ]
+    }
+  ],
+  "independent_source_review": {
+    "status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T18:47:05.138507+00:00",
+    "reviewed_data_sha256": "226bf8cf058ed295a9211e13be19e044ba36e7b866f7c08a5026ad2292e210e1",
+    "checks": {
+      "source_reference_and_mentor_event_closure": "passed",
+      "counts_recomputed": true,
+      "source_package_modified": false
+    },
+    "integration_limits": [
+      "2部分职业档案+1郭立新pending，不称3详档；车辆工程研究所名录/叶节点归属证据仅官方索引，应保留证据等级。",
+      "郭的2教育及5任职候选不进入主过滤和主计数；在职仅本人官方当前标签不替代独立人事审计。",
+      "梁博士授位的独立复核范围为研究者已读HTTP响应最小摘录与官网教育表交叉，非重新获取原始HTTP全文。",
+      "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+      "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+    ],
+    "blockers": [],
+    "review_scope": "来源批次的既有独立核验；本次本地接入仅复核数据、来源闭合与导出，不声称重新访问网页。"
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-neu-rotation-002.json",
+      "sha256": "226bf8cf058ed295a9211e13be19e044ba36e7b866f7c08a5026ad2292e210e1",
+      "scope_file": "faculty-batch-neu-rotation-002-scope.json",
+      "scope_sha256": "af676f375dd327902e8aed515282c0382a2ca0fbfdb770260fcba6c62d5f4e52",
+      "qa_file": "faculty-batch-neu-rotation-002-qa.json",
+      "qa_sha256": "a83d017c5d2867193894defb4fc0f714c482f7b5726906fc7a8bdfb76225c09f",
+      "independent_review_file": "faculty-batch-neu-rotation-002-independent-review.json",
+      "independent_review_sha256": "a1814ac4f33f88ba1c8f96e5622631b9eb36c224f59f68874d5797fd511a1b5f"
+    }
+  ],
+  "limitations": [
+    "名录原序与研究所归属仍为官方索引层，需后续正文核验；未假称explicit_profile_link。",
+    "郭立新全部教育和任职为候选，当前状态未知，关闭现职导航。",
+    "学位标签及毕业不等于明确获授；访问与博士后均非授位。",
+    "导师没有直接证据则留空；合著不构成师承。",
+    "不收联系方式、生日、政治信息、学生名单或私生活；不公开原始网页缓存。",
+    "2部分职业档案+1郭立新pending，不称3详档；车辆工程研究所名录/叶节点归属证据仅官方索引，应保留证据等级。",
+    "郭的2教育及5任职候选不进入主过滤和主计数；在职仅本人官方当前标签不替代独立人事审计。",
+    "梁博士授位的独立复核范围为研究者已读HTTP响应最小摘录与官网教育表交叉，非重新获取原始HTTP全文。",
+    "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+    "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+  ],
+  "next_action": "先补核车辆工程研究所教授名录正文和研究所归属；郭立新维持待完善层，教育、任职候选与当前状态另行补证。扩充范围另开任务，不把原序首3当完整名录。",
+  "release_status": "local_integrated_not_published"
+}

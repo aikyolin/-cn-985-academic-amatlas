@@ -1,0 +1,188 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "9f310e8b7e573268560c53762d2bd0ac7245fff5",
+  "school_id": "cau",
+  "school_name": "中国农业大学",
+  "batch_id": "faculty-batch-cau-rotation-002",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。",
+  "selection_basis": "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。",
+  "source_urls": [
+    "https://cbs.cau.edu.cn/col/col31826/index.html"
+  ],
+  "organization_ids": [
+    "cau-biology-plant-science"
+  ],
+  "selected_roster_observations": 3,
+  "counts": {
+    "selected_records": 3,
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 5,
+      "appointments": 6,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 6,
+      "sources": 10,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 1,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 8,
+      "pending_appointment_candidates": 4,
+      "pending_professional_fact_candidates": 1
+    },
+    "effective_professional_collections": {
+      "education": 5,
+      "appointments": 6,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 6,
+      "sources": 10,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 1,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 8,
+      "pending_appointment_candidates": 4,
+      "pending_professional_fact_candidates": 1
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 0,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 2,
+      "degree_awarded_null": 2,
+      "confirmed_degree_events": 1
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 2,
+      "degree_awarded_null": 2,
+      "confirmed_degree_events": 1
+    }
+  },
+  "records": [
+    {
+      "person_id": "cau-wuweihua",
+      "name": "武维华",
+      "department_id": "cau-biology-plant-science",
+      "roster_entry_id": "roster-cau-biology-plant-science-wuweihua",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://cbs.cau.edu.cn/art/2020/4/21/art_31826_676401.html",
+      "unknowns": [
+        "原学院个人页web超时，随后普通HTTP 403后停止，未读取其正文。",
+        "教育与晋升细节仅官方校友搜索索引可见，不标作正文已核；访美月份两官方来源有差异。",
+        "博士导师、博士后导师未见可采用的直接说明；不得从合著作者推断。",
+        "娄成后关系保留候选、不进师承图；未核具体监督起讫。",
+        "校区、全职/在岗状态未知；精选2篇书目非全集。"
+      ]
+    },
+    {
+      "person_id": "cau-chenliqun",
+      "name": "陈立群",
+      "department_id": "cau-biology-plant-science",
+      "roster_entry_id": "roster-cau-biology-plant-science-chenliqun",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://cbs.cau.edu.cn/art/2018/9/14/art_31826_585906.html",
+      "unknowns": [
+        "本科、硕士的授位未见明确文字；各学位具体专业未披露，不从院系名补推。",
+        "个人页表头教授，履历尾有无日期副教授标签，保留冲突说明，不把后者当当前任职。",
+        "本人各阶段导师未披露；不从合著、共同研究或博士生导师资格倒推师承。",
+        "校区、人事在岗和全职状态未核；仅精选2篇论文。"
+      ]
+    },
+    {
+      "person_id": "cau-chenlimei",
+      "name": "陈丽梅",
+      "department_id": "cau-biology-plant-science",
+      "roster_entry_id": "roster-cau-biology-plant-science-chenlimei",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://cbs.cau.edu.cn/art/2021/3/24/art_31826_735960.html",
+      "unknowns": [
+        "教育、任职起讫仅官方个人页搜索索引完整表段可见；直接页面访问403后未再请求。",
+        "各学位具体专业与明确授位语义未核，degree_awarded均为null。",
+        "本人导师未见直接说明，不从论文共同作者推断；校区和人事在岗未知。",
+        "官方页面发布日期为2021但正文索引包含2024后更新内容，发布日期不视作全部事实的截止日期。",
+        "精选2篇论文仅书目元数据，不宣称已查到全文或全著作。"
+      ]
+    }
+  ],
+  "independent_source_review": {
+    "status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T18:36:55.040130+00:00",
+    "reviewed_data_sha256": "c246a2efd4599d8a044fb790b20389b8e5a56eec36749546d48c8caedd323e01",
+    "checks": {
+      "source_reference_and_mentor_event_closure": "passed",
+      "counts_recomputed": true,
+      "source_package_modified": false
+    },
+    "integration_limits": [
+      "候选教育、候选任职、候选职业事实与候选师承不进入已核主字段、学历地域/985确证过滤、主关系图或主事件计数。保留证据层级，不将索引表述作正文核验。",
+      "武维华/陈丽梅可按直接职业与书目建立部分职业档案，但其教育待核；陈立群审查采用既有成功工具响应摘录，不声称独立重新访问被拒页面。",
+      "页面现列教授不是人事在岗/全职/退休独立确认；不可据旧页发布日期或无结束日期推现职。",
+      "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+      "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+    ],
+    "blockers": [],
+    "review_scope": "来源批次的既有独立核验；本次本地接入仅复核数据、来源闭合与导出，不声称重新访问网页。"
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-cau-rotation-002.json",
+      "sha256": "c246a2efd4599d8a044fb790b20389b8e5a56eec36749546d48c8caedd323e01",
+      "scope_file": "faculty-batch-cau-rotation-002-scope.json",
+      "scope_sha256": "ac8f16dbe0c72920739b4a6e8d9ae834955346c2e530fd0a2f1434eae32fb28b",
+      "qa_file": "faculty-batch-cau-rotation-002-qa.json",
+      "qa_sha256": "195ac7c0cd28d3edff91c91addb183b669c1a4619a82741ef2731e565d1abee8",
+      "independent_review_file": "faculty-batch-cau-rotation-002-independent-review.json",
+      "independent_review_sha256": "513f84d2eaafbbf8a511e184df656ee160609776229952227c8a58bb2aca7321"
+    }
+  ],
+  "limitations": [
+    "新增生物学院植物科学系官方教授独立栏目，保留页面原序27人中的前3人：武维华、陈立群、陈丽梅；按明确职称分类抽取，不按教育、师承、履历丰富度筛人。本包仅3人，不表示全系、全院或全校完成。",
+    "仅公开职业事实，不含联系方式、私人信息、出生资料、政治背景或学生名单；导师候选只含关系验证所需信息。",
+    "明确获学位才true；标签、毕业等未明授位为null；访问和博士后为false。",
+    "武维华与陈丽梅教育、历史任职只读到官方公开搜索索引，全部单列待核候选，不进入主教育/任职过滤、确证统计。索引明确获授语句保留为线索，不设degree_awarded=true。",
+    "有明确关系文字但正文未读的娄成后硕士导师保留待核，不入师承图；历史已故导师不做当前任职导航。",
+    "不从合著、实验室关系、博士生导师资格推断师承；委员会与师承分离，本包不采委员会名单。",
+    "403页面不重试、不绕过；各人最多2篇官方书目，非全集，不虚构DOI或全文入口。",
+    "候选教育、候选任职、候选职业事实与候选师承不进入已核主字段、学历地域/985确证过滤、主关系图或主事件计数。保留证据层级，不将索引表述作正文核验。",
+    "武维华/陈丽梅可按直接职业与书目建立部分职业档案，但其教育待核；陈立群审查采用既有成功工具响应摘录，不声称独立重新访问被拒页面。",
+    "页面现列教授不是人事在岗/全职/退休独立确认；不可据旧页发布日期或无结束日期推现职。",
+    "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+    "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+  ],
+  "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。",
+  "release_status": "local_integrated_not_published"
+}

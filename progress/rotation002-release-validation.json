@@ -1,0 +1,91 @@
+{
+  "status": "passed_local_not_published",
+  "baseline_commit": "9f310e8b7e573268560c53762d2bd0ac7245fff5",
+  "build_id": "329bda744ae05aee",
+  "repository_tests": {
+    "node": 488,
+    "python": 321,
+    "total": 809,
+    "preexisting_tests": 771,
+    "new_source_consumer_regressions": 33,
+    "new_asset_version_regressions": 5
+  },
+  "research_tests": {
+    "new_normalization_and_adversarial_gates": 22,
+    "prior_immutable_boundaries": 28
+  },
+  "exact_baseline_files_unchanged": 233,
+  "sanitized_source_person_leaf_values_preserved": 3653,
+  "canonical_counts": {
+    "professional_records": 535,
+    "pending_records": 83,
+    "schools": 39,
+    "organization_nodes": 218,
+    "department_exports": 103,
+    "roster_records": 1700,
+    "raw_source_observations": 1738,
+    "category_count": 181,
+    "batch_category_count": 200,
+    "coverage_rows": 208,
+    "queue_tasks": 215
+  },
+  "workbook_verification": {
+    "xlsx_files": 104,
+    "sheets": 524,
+    "cells": 185976,
+    "hyperlinks": 15520,
+    "csv_records": 1700,
+    "deterministic_generated_files": 107
+  },
+  "all_generated_files_deterministic": true,
+  "old_queue_tasks_unchanged": 211,
+  "application_code_change": "One display label for the unchanged retired_or_emeritus_officially_listed source enum plus synchronized cache-busting asset version rotation002-20261023-w1 in HTML/styles/app/module imports; no model, exporter, schema or navigation logic change.",
+  "asset_cache_bust_validation": {
+    "status": "passed",
+    "version": "rotation002-20261023-w1",
+    "reason": "One UI label changed but prior release asset query remained; update HTML and every local module import consistently.",
+    "generated_files": 107,
+    "generated_files_unchanged": true,
+    "build_id": "329bda744ae05aee",
+    "asset_files": {
+      "site/index.html": "42966eb1409ce029b90d64e77e2c02977971477bade4e2a79414b4a2aef1c571",
+      "site/app.js": "0e420fef54c0dae966d883bb0aeb0fb7af05f79e8803e366ea8ece7e95ed2cd6",
+      "site/rosters.js": "114e47a44f0c4b5cd100eb786604818cacc36ff073f0ccf8e3a20a71cf6e9940"
+    },
+    "runs": [
+      {
+        "iteration": 1,
+        "command": "python scripts/build.py",
+        "exit_code": 0,
+        "stdout": "Built 1700 roster records with 1738 raw source observations: JSON, CSV and XLSX\nValidated 535 detailed profiles; prepared 103 department exports and website snapshot",
+        "seconds": 8.284,
+        "generated_hashes_match_pre_asset_bump": true
+      },
+      {
+        "iteration": 2,
+        "command": "python scripts/build.py",
+        "exit_code": 0,
+        "stdout": "Built 1700 roster records with 1738 raw source observations: JSON, CSV and XLSX\nValidated 535 detailed profiles; prepared 103 department exports and website snapshot",
+        "seconds": 8.274,
+        "generated_hashes_match_pre_asset_bump": true
+      }
+    ],
+    "baseline233_unchanged": true
+  },
+  "evidence_boundaries": [
+    "华东师大崔璨2021教授机构仅华东师范大学，不用当前地理学院倒推历史；博士2015获授年与CV学习结束2015-03分开。",
+    "毕春娟2009讲师/副教授区间重叠、论文表2005非授位与教育结束年份均保留；许世远仅一条历史博士关系，退休/荣休源状态不细化，不启用现职导航。",
+    "NEU郭立新仅索引pending；另两人正文职业事实与研究所名录索引归属分层，不声称名录个人直链已核。",
+    "CAU武维华/陈丽梅学历及历史岗位、Markou外校索引博士/导师候选不进主教育、任职、师承图或确证筛选。",
+    "访问、博士后为非学位；学位标签、毕业、导师及获奖不代替明确授位，未知保持null。",
+    "CAU原个人页最近403不提供个人主页快捷入口，已成功读取的职业证据及复核限制完整保留。",
+    "陈隽本科1993-09/1993-07冲突、Markou研究关联身份不作南非全职、未知校区与人事在岗均不猜补。",
+    "候选教育与导师事件绑定单独闭合；主师承只能引用主教育。精选书目不称论文全集或出版社全文核验。",
+    "全部旧数据、39学校注册表、先前冻结研究工件保持；仅本地准备，不发布。"
+  ],
+  "limitations": [
+    "Local semantic and export-content validation only; no browser or visual spreadsheet rendering.",
+    "No source re-fetch, remote write, publication, deployment or live-site verification performed.",
+    "Candidate evidence arrays remain in structured data and outside verified-event worksheets; no dedicated candidate-view UI is added."
+  ]
+}
