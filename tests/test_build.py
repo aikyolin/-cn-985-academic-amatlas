@@ -26,16 +26,16 @@ class DataTests(unittest.TestCase):
   self.assertEqual(sum('委员会' in (r[2] or '') for r in rows),4)
  def test_roster_is_separate(self):
   r=json.loads((ROOT/'site/rosters.json').read_text())
-  self.assertEqual(len(r['entries']),1381);self.assertEqual(len(self.d['people']),197)
+  self.assertEqual(len(r['entries']),1381);self.assertEqual(len(self.d['people']),228)
   self.assertTrue(all(e['profile_identity_verified'] is False for e in r['entries'] if e.get('batch_id')=='harbin-002'))
   self.assertEqual(sum(not e['official_profile_url'] for e in r['entries']),163)
  def test_roster_conflicts_preserved(self):
   r=json.loads((ROOT/'site/rosters.json').read_text())
-  cs=[c for c in r['conflicts'] if c['type']=='same_url_different_names'];self.assertEqual(len(cs),2)
+  cs=[c for c in r['conflicts'] if c['type']=='same_url_different_names'];self.assertEqual(len(cs),1)
   for c in cs:self.assertEqual(len([e for e in r['entries'] if e['id'] in c['entry_ids']]),2)
  def test_roster_candidates_not_merged(self):
   r=json.loads((ROOT/'site/rosters.json').read_text());e=next(e for e in r['entries'] if e['name']=='金涛')
-  self.assertEqual(e['candidate_person_ids'],['hit-jintao']);self.assertEqual(e['candidate_match_status'],'pending_identity_review')
+  self.assertEqual(e['candidate_person_ids'],[]);self.assertEqual(e['candidate_match_status'],'verified_separate_profile');self.assertEqual(e['verified_person_id'],'hit-jintao');self.assertTrue(e['profile_identity_verified'])
  def test_roster_exports(self):
   import csv
   w=load_workbook(ROOT/'site/exports/待核对名录.xlsx');self.assertEqual(w.sheetnames,['待核对名录','覆盖说明','分类覆盖','冲突记录','消歧候选','批次来源','排除与待查','原始来源观察','整合依据']);self.assertEqual(w['待核对名录'].max_row,1382)

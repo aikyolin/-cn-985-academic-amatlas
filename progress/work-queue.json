@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T13:25:00Z",
-  "base_commit": "293677be17c182cfb7c7c42fc777a28a5f53dab6",
+  "updated_at": "2026-10-23T14:11:00Z",
+  "base_commit": "69469d6d80e5f686dbc9867c67d176ce8f1efce6",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -1536,9 +1536,9 @@
         "hit-weihai"
       ],
       "stage": "profile_research",
-      "status": "pending",
+      "status": "partial",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "94条可见名录=81学术岗位+13实验技术岗位；已首查34条，包括31本人职业正文、1校方报道、2名录待核。32职业档案+2待核，不是完整履历或全学院完成。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
@@ -1560,13 +1560,18 @@
         "https://siee.hitwh.edu.cn/jslb/list.htm"
       ],
       "artifact_paths": [
-        "data/rosters.json"
+        "data/rosters.json",
+        "data/atlas.json",
+        "progress/weihai-information-progress.json",
+        "progress/weihai-roster-corrections.json",
+        "progress/weihai-information-professor-coverage.json",
+        "progress/weihai-information-associate-progress.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按名录稳定记录ID逐人核对身份；优先处理同链接异名，未核实不可自动合并。",
-      "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "review_status": "approved",
+      "next_action": "教授/研究员24条和副教授/副研究员前10条已首查，共34条：31本人职业正文、1校方报道补充、2名录待核；下一位为副教授/副研究员第11位孙烽豪。剩余60条未首查，未审或未获合入授权的批次不混入。",
+      "next_cursor": "weihai-information:associate-professor-researcher:position:11",
+      "attempted_at": "2026-10-23T14:11:00Z",
+      "last_verified_commit": "69469d6d80e5f686dbc9867c67d176ce8f1efce6"
     },
     {
       "task_id": "hit-weihai-computer:roster",

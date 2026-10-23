@@ -39,14 +39,16 @@ class RosterBatchTwoTests(unittest.TestCase):
         self.assertTrue(roster_builder.validate_rosters(r, self.atlas))
 
     def test_original_observation_fields_and_ids_are_stable(self):
-        # An independently verified identity may be added, but the observation
-        # itself (including its original links, spelling and organization) stays.
+        # Original local extraction payloads remain immutable. Corrected current
+        # record links are distinct from these explicitly annotated old values.
         fields = ['id', 'name', 'official_profile_url', 'campus_id', 'organization_id', 'category', 'listed_role', 'roster_source_url', 'accessed_on', 'notes']
-        original = [{key: entry[key] for key in fields} for entry in self.rosters['entries'][:294]]
+        original = [{key: observation['source_payload'][key] for key in fields} for observation in self.rosters['source_observations'] if observation['batch_id'] == 'pilot-001']
         self.assertEqual(digest(original), '9277524246155c7c32565c6bb972191a4ec71e10a9e29e12c748ed9b2d3d1c57')
         self.assertEqual(digest(self.rosters['summary'][:3]), '699032a23911b49a231ab7cd23dc5276701f640effcc9013bfcd3845363a221d')
         self.assertEqual(digest(self.rosters['coverage'][:16]), 'e40b00f67dd5f5b21b52b49ba9248c0c1edd3bc78ade53c845fc34570f28fa9d')
-        self.assertEqual(digest(self.rosters['conflicts'][:8]), '361771393b78be54b5501c59c84b331862e11201e0f02052e7e903c0ec926632')
+        historical_conflicts = copy.deepcopy(self.rosters['conflicts'][:7])
+        historical_conflicts.insert(6, self.rosters['withdrawn_local_conflicts'][0]['original_conflict'])
+        self.assertEqual(digest(historical_conflicts), '361771393b78be54b5501c59c84b331862e11201e0f02052e7e903c0ec926632')
 
     def test_new_source_fields_are_preserved_exactly(self):
         original = [{key: value for key, value in entry.items() if key not in ('batch_id', 'automatic_merge')} for entry in self.new_entries]
@@ -86,11 +88,11 @@ class RosterBatchTwoTests(unittest.TestCase):
         entry_ids = {entry['id'] for entry in self.rosters['entries']}
         for item in candidates:
             self.assertTrue(set(item['entry_ids']) <= entry_ids)
-        original = [{key: value for key, value in item.items() if key not in ('batch_id', 'type')} for item in self.rosters['conflicts'][8:18]]
+        original = [{key: value for key, value in item.items() if key not in ('batch_id', 'type')} for item in self.rosters['conflicts'] if item.get('batch_id') == 'harbin-002']
         self.assertEqual(digest(original), '19d14cc14564ee7593de83bd6d0277e7d76d354d5ff96235b6d15dd244bf99a6')
         historical = next(item for item in self.rosters['conflicts'] if item['type'] == 'historical_name_discrepancy')
         self.assertEqual((historical['current_listing'], historical['historical_listing']), ('刘峻峰', '刘俊峰'))
-        self.assertEqual(sum(item['type'] == 'same_url_different_names' for item in self.rosters['conflicts']), 2)
+        self.assertEqual(sum(item['type'] == 'same_url_different_names' for item in self.rosters['conflicts']), 1)
 
     def test_batch_manifest_covers_each_observation_once(self):
         batches = self.rosters['batches']
@@ -388,7 +390,7 @@ class RosterBatchTwoTests(unittest.TestCase):
         self.assertEqual(list(tables), ['待核对名录', '覆盖说明', '分类覆盖', '冲突记录', '消歧候选', '批次来源', '排除与待查', '原始来源观察', '整合依据'])
         self.assertEqual(len(tables['待核对名录']), 1382)
         self.assertEqual(len(tables['分类覆盖']), 86)
-        self.assertEqual(len(tables['冲突记录']), 32)
+        self.assertEqual(len(tables['冲突记录']), 31)
         self.assertEqual(len(tables['消歧候选']), 61)
         self.assertEqual(len(tables['排除与待查']), 12)
         self.assertIn('原始链接（含占位，仅证据）', tables['待核对名录'][0])

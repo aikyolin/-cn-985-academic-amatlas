@@ -1,0 +1,36 @@
+"""Approved professor/researcher category boundaries and evidence-preserving update."""
+import copy,json,pathlib,sys,unittest
+ROOT=pathlib.Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
+from build import validate,department_tables
+from build_rosters import validate_rosters
+from validate_queue import validate_queue
+class WeihaiProfessorsTests(unittest.TestCase):
+ @classmethod
+ def setUpClass(cls):
+  cls.data=json.loads((ROOT/'data/atlas.json').read_text());cls.rosters=json.loads((ROOT/'data/rosters.json').read_text());cls.people={p['person_id']:p for p in cls.data['people']};cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text());cls.group=[p for p in cls.data['people']if p.get('data_batch_id')in ['faculty-batch-weihai-info-001','faculty-batch-weihai-info-002','faculty-batch-weihai-info-003']]
+ def test_global_checkpoint_and_school_counts(self):
+  d=self.data;self.assertTrue(validate(d));self.assertEqual([len(d['people']),len(d['pending_people'])],[228,11]);self.assertEqual([sum(c in p['campus_ids']for p in d['people'])for c in ['harbin','weihai','shenzhen']],[159,33,36]);self.assertEqual([sum(len(p.get(k,[]))for p in d['people'])for k in ['education','appointments','mentors','committee_members','publications','sources']],[711,882,104,9,472,872]);self.assertEqual(sum(e['profile_identity_verified']for e in self.rosters['entries']),223)
+ def test_category_24_is_not_full94_or_all_professors(self):
+  c=json.loads((ROOT/'progress/weihai-information-professor-coverage.json').read_text());self.assertEqual(c['roster_entries'],24);self.assertEqual(c['remaining_visible_entries'],70);self.assertEqual(c['new_person_records'],23);self.assertEqual(c['updated_existing_person_records'],1);self.assertEqual(c['individual_profile_bodies_read'],23);self.assertEqual(c['official_profile_unavailable_supplemented_by_institution_news'],1);self.assertFalse(c['all_visible_entries_first_pass_complete']);self.assertFalse(c['fields_complete']);self.assertEqual(len(self.group),24);self.assertTrue(all(not e['fields_complete']for e in c['entries']))
+ def test_category_totals_and_both_pending_keys(self):
+  self.assertEqual([sum(len(p.get(k,[]))for p in self.group)for k in ['education','appointments','mentors','committee_members','publications','sources']],[79,97,9,0,68,85]);self.assertEqual(sum(len(p.get('pending_mentors',[]))+len(p.get('pending_mentor_candidates',[]))for p in self.group),3);self.assertEqual(sum(m.get('relationship_kind')=='professional_research_advisor'for p in self.group for m in p['mentors']),2)
+ def test_normalized_batches_match_frozen_reviewed_hashes(self):
+  self.assertEqual([b['normalized_package_sha256']for b in self.pg['batches'][:3]],['de8998249f31c4fac59da104418371842afdd8528e213268dce10181b1356982','5858b1ac3bfa9fc6b73ef8de78dfbd0413dce9b5121c996df245d1030f8bc811','90789d91fc8afbcbb6db741c5b531a044e7af6706cb57b80f493402d124c2869']);self.assertTrue(all(b['independent_review_status']=='passed_with_documented_limits'for b in self.pg['batches']));self.assertTrue(all(b['source_embedded_review_status']=='pending_independent_review'for b in self.pg['batches']))
+ def test_14_new_roster_associations_include_existing_jintao_once(self):
+  self.assertTrue(validate_rosters(self.rosters,self.data));ps=[p for p in self.group if p.get('data_batch_id')in ['faculty-batch-weihai-info-002','faculty-batch-weihai-info-003']];self.assertEqual(len(ps),14)
+  for p in ps:
+   e=next(e for e in self.rosters['entries']if e['id']==p['roster_entry_id']);self.assertEqual(e['verified_person_id'],p['person_id']);self.assertTrue(e['profile_identity_verified']);self.assertEqual(e['name'],p['name'])
+  self.assertEqual(sum(p['person_id']=='hit-jintao'for p in self.data['people']),1)
+ def test_jintao_preserved_article_and_sources_with_no_new_person_claim(self):
+  p=self.people['hit-jintao'];self.assertEqual(p['record_action'],'update_existing');self.assertFalse(p['update_contract']['new_unique_person']);self.assertEqual(p['update_contract']['preserve_prior_source_ids'],['jintao-official','hit-jintao-publication-1']);q=p['publications'][0];self.assertEqual(q['doi'],'10.1016/j.jksuci.2024.102192');self.assertEqual(q['source_id'],'hit-jintao-publication-1');self.assertEqual(q['link_status'],'previously_verified_institutional_metadata_preserved');self.assertEqual(len(p['sources']),3);self.assertEqual([e['start']for e in p['education']],[None,None,None]);self.assertEqual([e['end']for e in p['education']],['2002','2005','2010'])
+ def test_professional_research_guidance_exports_are_neither_degrees_nor_postdocs(self):
+  p=self.people['hit-WeiZheng'];rows=dict(department_tables([p],self.data['updated_at']));ms=rows['导师'];self.assertEqual(len(ms),4);self.assertEqual([r[2]for r in ms[2:]],['职业科研合作导师','职业科研合作导师']);self.assertTrue(all('非学历、非博士后'in r[3]for r in ms[2:]));self.assertFalse(any('徐培亮'in str(r)for r in ms));events=[r for r in rows['经历']if r[1]=='professional_research'];self.assertEqual(len(events),2);self.assertTrue(all(r[11]is False for r in events))
+ def test_ma_985_source_exports_without_award_promotion(self):
+  p=self.people['hit-maxiujuan'];e=p['education'][0];self.assertEqual(e['institution_985'],'yes');self.assertIsNone(e['degree_awarded']);self.assertEqual(e['historical_institution_name'],'北京工业学院');rows=dict(department_tables([p],self.data['updated_at']))['来源'];url='https://www.bit.edu.cn/gbxxgk/xxzc_sjb/index.htm';self.assertEqual(sum(r[2]==url for r in rows[1:]),1);self.assertEqual(p['education'][3]['institution'],'哈尔滨工程大学')
+ def test_new_exact_school_classification_source_is_visible_and_not_repeated(self):
+  p=self.people['hit-lius'];url='https://www.csust.edu.cn/fzgh/info/1016/1662.htm';self.assertTrue(all(e['institution_985']=='yes'for e in p['education'][:2]));rows=dict(department_tables([p],self.data['updated_at']))['来源'];self.assertEqual(sum(r[2]==url for r in rows[1:]),1);self.assertTrue(all(e['degree_awarded']is None for e in self.people['hit-xinmingrui']['education']));self.assertEqual(self.people['hit-WeiZheng']['education'][0]['institution_985'],'unknown')
+ def test_original_local_mapping_corrections_and_observation_count_survive(self):
+  self.assertEqual(len(self.rosters['entries']),1381);self.assertEqual(len(self.rosters['source_observations']),1419);self.assertEqual(len(self.rosters['local_mapping_corrections']),4);self.assertEqual(len(self.rosters['withdrawn_local_conflicts']),1);self.assertEqual(len([c for c in self.rosters['conflicts']if c['type']=='same_url_different_names']),1)
+ def test_queue_baseline_national_readme_and_next_category(self):
+  q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(q['base_commit'],'69469d6d80e5f686dbc9867c67d176ce8f1efce6');self.assertEqual(validate_queue(q,ROOT,True),[]);t=next(t for t in q['tasks']if t['task_id']=='hit-weihai-information:profiles');self.assertEqual(t['status'],'partial');self.assertEqual(t['next_cursor'],'weihai-information:associate-professor-researcher:position:11');self.assertEqual(self.pg['next_roster_name'],'孙烽豪');self.assertTrue(self.pg['professor_researcher_category_first_pass_complete']);self.assertFalse(self.pg['first_pass_complete']);self.assertNotIn('220',(ROOT/'README.md').read_text())
+if __name__=='__main__':unittest.main()

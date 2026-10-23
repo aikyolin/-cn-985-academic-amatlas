@@ -1,5 +1,5 @@
 """Validate canonical data and derive static data + departmental Excel workbooks."""
-import json,pathlib,sys
+import json,pathlib,sys,hashlib
 from urllib.parse import urlparse
 from openpyxl import Workbook
 from openpyxl.styles import Font,PatternFill,Alignment
@@ -61,7 +61,7 @@ def sheet(wb,name,rows):
  for col in ws.columns:ws.column_dimensions[col[0].column_letter].width=min(65,max(16,max(len(str(c.value or '')) for c in col)*1.4))
  return ws
 def department_tables(people,updated_at):
- tables=[('总览',[['姓名','校区','院系','官方主页','核对日期','缺项与冲突','范围'],*[[p['name'],p['campus'],p['department'],p['official_url'],updated_at,'；'.join(p['unknowns']),'分批核实资料，不是完整名录'] for p in people]])]
+ tables=[('总览',[['姓名','校区','院系','官方主页','核对日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p['campus'],p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],updated_at,'；'.join(p['unknowns']),'分批核实资料，不是完整名录','个人主页当前不可用' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else '公开个人页（时效以核对日为准）','；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]
  fields=['event_kind','degree','institution','start','end','field','country','source_region','continent','institution_985','degree_awarded','degree_awarded_date','degree_award_source_url','note','geography_basis','source_url']
  rows=[['姓名','事件类型','阶段/职位','机构','开始','结束','专业','国家','地区','洲','历史985分类','确证授位','授位日期','授位来源','备注及冲突','地域口径','来源']]
  for p in people:
@@ -94,6 +94,7 @@ def department_tables(people,updated_at):
 
 def build(generate_excel=True):
  d=json.loads((ROOT/'data/atlas.json').read_text());validate(d);exports=[]
+ d['build_id']=hashlib.sha256((ROOT/'data/atlas.json').read_bytes()+(ROOT/'data/rosters.json').read_bytes()+pathlib.Path(__file__).read_bytes()).hexdigest()[:16]
  out=ROOT/'site/exports';out.mkdir(exist_ok=True)
  for dept in sorted({p['department_id'] for p in d['people']}):
   people=[p for p in d['people'] if p['department_id']==dept];path=out/(dept+'.xlsx')
@@ -104,6 +105,7 @@ def build(generate_excel=True):
   exports.append({'department_id':dept,'path':'exports/'+path.name,'people_count':len(people)})
  from build_rosters import build_rosters
  build_rosters(d,generate_excel=generate_excel)
+ roster_path=ROOT/'site/rosters.json';roster_snapshot=json.loads(roster_path.read_text());roster_snapshot['build_id']=d['build_id'];roster_path.write_text(json.dumps(roster_snapshot,ensure_ascii=False,indent=2)+'\n')
  d['exports']=exports;(ROOT/'site/atlas.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n');print(f'Validated {len(d["people"])} detailed profiles; prepared {len(exports)} department exports and website snapshot')
 if __name__=='__main__':
  import argparse

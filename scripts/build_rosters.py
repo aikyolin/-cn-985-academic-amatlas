@@ -34,6 +34,44 @@ def _matches_profile(entry, person):
     )
 
 
+def _official_news_identity_match(entry, person):
+    """Verify a career-report identity, never an unavailable personal homepage."""
+    evidence = entry.get('profile_identity_evidence') or {}
+    news = evidence.get('official_news_identity_verification') or {}
+    sources = {s.get('id'): s.get('url') for s in person.get('sources', [])}
+    reports = person.get('alternative_professional_sources') or []
+    report_ids = {r.get('source_id') for r in reports}
+    source_ids = news.get('source_ids') or []
+    news_ids = news.get('news_source_ids') or []
+    return bool(
+        entry.get('professional_identity_verified') is True
+        and entry.get('official_profile_identity_verified') is False
+        and entry.get('official_profile_availability') == 'unavailable'
+        and entry.get('official_profile_navigation_eligible') is False
+        and person.get('official_profile_availability') == 'unavailable'
+        and person.get('official_profile_navigation_eligible') is False
+        and person.get('own_profile_academic_body_read') is False
+        and person.get('professional_evidence_body_read') is True
+        and evidence.get('status') == 'official_roster_name_and_campus_news_verified_profile_unavailable'
+        and news.get('status') == 'official_roster_name_and_campus_news_matched'
+        and news.get('name') == person['name']
+        and news.get('organization_id') == person['department_id']
+        and news.get('roster_url') == entry['official_profile_url']
+        and news.get('checked_on') and evidence.get('checked_on')
+        and evidence.get('roster_source_url') == entry['roster_source_url']
+        and source_ids and set(source_ids) <= set(sources)
+        and set(source_ids) <= set(evidence.get('source_ids') or [])
+        and entry['roster_source_url'] in {sources.get(i) for i in source_ids}
+        and news_ids and set(news_ids) == report_ids
+        and set(news_ids) <= set(source_ids)
+        and entry.get('alternative_professional_sources') == reports
+        and evidence.get('alternative_professional_sources') == reports
+        and all(valid_url(r.get('url')) and sources.get(r.get('source_id')) == r['url']
+                and urlparse(r['url']).hostname in {'news.hit.edu.cn', 'news.hitwh.edu.cn'}
+                for r in reports)
+    )
+
+
 def _verified_profile_match(entry, person):
     """Accept cross-domain aliases only from explicit, source-backed identity evidence.
 
@@ -43,6 +81,9 @@ def _verified_profile_match(entry, person):
     """
     if entry['name'] != person['name'] or entry['organization_id'] != person['department_id']:
         return False
+    if entry.get('official_profile_availability') == 'unavailable' or person.get('official_profile_availability') == 'unavailable':
+        # Must precede same-URL matching: a dead URL cannot prove profile identity.
+        return _official_news_identity_match(entry, person)
     if _matches_profile(entry, person):
         return True
     if not valid_url(entry.get('official_profile_url')) or not valid_url(person.get('official_url')):
@@ -224,7 +265,7 @@ def roster_tables(rosters, atlas):
     headers = [
         '记录ID', '姓名', '校区', '组织ID', '原始分类', '官网列示职务',
         '原名录主页链接（身份以核验列为准）', '名录来源', '查阅日期',
-        '核验状态', '主页身份已核实', '独立档案候选（未合并）', '备注',
+        '核验状态', '职业身份关联已核（不代表个人主页可用）', '独立档案候选（未合并）', '备注',
         '名录原始姓名', '原始链接（含占位，仅证据）', '来源批次', '自动合并',
         '经独立核验的档案ID', '独立身份核验证据', '档案关联状态',
         '名录原始资格或身份附注（不是师承关系）', '名录声明更新日期（非本轮核验日期）',
@@ -265,8 +306,8 @@ def roster_tables(rosters, atlas):
         *[['原附注与角色解释（不推断师承）', {'name_or_group': name, 'detail': detail}] for name, detail in rosters.get('role_interpretation', {}).items()],
     ]
     tables['原始来源观察'] = [
-        ['原始观察ID', '对应整合记录ID', '批次', '组织', '来源URL', '查阅日期', '原始观察内容'],
-        *[[item['observation_id'], item['record_id'], item['batch_id'], item['organization_id'], item['source_url'], item['accessed_on'], item['source_payload']] for item in rosters.get('source_observations', [])],
+        ['原始观察ID', '对应整合记录ID', '批次', '组织', '来源URL', '查阅日期', '原始观察内容', '历史本地观察解释', '本地映射订正（原值不改写）', '已撤回的本地附注'],
+        *[[item['observation_id'], item['record_id'], item['batch_id'], item['organization_id'], item['source_url'], item['accessed_on'], item['source_payload'], item.get('source_payload_interpretation'), item.get('local_mapping_correction'), item.get('withdrawn_local_annotation')] for item in rosters.get('source_observations', [])],
     ]
     tables['整合依据'] = [
         ['批次', '原始观察数', '整合记录数', '源记录分组减少数（非人数减少）', '已执行身份合并数', '说明'],

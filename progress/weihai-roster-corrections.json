@@ -1,0 +1,84 @@
+{
+  "organization_id": "hit-weihai-information",
+  "source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+  "checked_on": "2026-10-23",
+  "entries_checked": 94,
+  "corrected_local_mapping_count": 4,
+  "source_link_changes": 0,
+  "conclusion": "94条完整姓名锚文本与href核对：原始与当前源站对应一致，四处本地映射错误已订正；不是学校错链或近期链接更新。",
+  "corrections": [
+    {
+      "roster_entry_id": "roster-a536f2ea74f19323",
+      "name": "李剑锋",
+      "category": "仪器科学与技术系",
+      "previous_local_profile_url": "http://homepage.hit.edu.cn/sunzhengnai?lang=zh",
+      "corrected_source_profile_url": "http://homepage.hit.edu.cn/lijianfeng?lang=zh",
+      "source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+      "checked_on": "2026-10-23",
+      "basis": "exact_full_anchor_name_and_href_alignment_original_and_current_source_agree",
+      "source_changed": false,
+      "error_origin": "early_local_pilot_mapping",
+      "note": "早期本地姓名与链接映射错位，非源站错链；只修名录链接，不认定个人身份、学历或现任。"
+    },
+    {
+      "roster_entry_id": "roster-3b8d1cda9026fd1b",
+      "name": "康文静",
+      "category": "仪器科学与技术系",
+      "previous_local_profile_url": "http://homepage.hit.edu.cn/renxiuyun?lang=zh",
+      "corrected_source_profile_url": "http://homepage.hit.edu.cn/kangwenjing?lang=zh",
+      "source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+      "checked_on": "2026-10-23",
+      "basis": "exact_full_anchor_name_and_href_alignment_original_and_current_source_agree",
+      "source_changed": false,
+      "error_origin": "early_local_pilot_mapping",
+      "note": "早期本地姓名与链接映射错位，非源站错链；只修名录链接，不认定个人身份、学历或现任。"
+    },
+    {
+      "roster_entry_id": "roster-26e200666f5745b7",
+      "name": "梅英杰",
+      "category": "仪器科学与技术系",
+      "previous_local_profile_url": "http://homepage.hit.edu.cn/lijianfeng?lang=zh",
+      "corrected_source_profile_url": "http://homepage.hit.edu.cn/meiyingjie?lang=zh",
+      "source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+      "checked_on": "2026-10-23",
+      "basis": "exact_full_anchor_name_and_href_alignment_original_and_current_source_agree",
+      "source_changed": false,
+      "error_origin": "early_local_pilot_mapping",
+      "note": "早期本地姓名与链接映射错位，非源站错链；只修名录链接，不认定个人身份、学历或现任。"
+    },
+    {
+      "roster_entry_id": "roster-b7a90d44c5bc9ffa",
+      "name": "孙烽豪",
+      "category": "仪器科学与技术系",
+      "previous_local_profile_url": "http://homepage.hit.edu.cn/kangwenjing?lang=zh",
+      "corrected_source_profile_url": "http://homepage.hit.edu.cn/sunfenghao?lang=zh",
+      "source_url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+      "checked_on": "2026-10-23",
+      "basis": "exact_full_anchor_name_and_href_alignment_original_and_current_source_agree",
+      "source_changed": false,
+      "error_origin": "early_local_pilot_mapping",
+      "note": "早期本地姓名与链接映射错位，非源站错链；只修名录链接，不认定个人身份、学历或现任。"
+    }
+  ],
+  "withdrawn_conflict": {
+    "type": "same_url_different_names",
+    "names": [
+      "任秀云",
+      "康文静"
+    ],
+    "entry_ids": [
+      "roster-3b8d1cda9026fd1b",
+      "roster-be0ee25c269c0c65"
+    ],
+    "reason": "local_mapping_error_not_source_conflict"
+  },
+  "removed_alias_candidate_count": 0,
+  "retained_source_conflict": {
+    "names": [
+      "刘爱军",
+      "李博"
+    ],
+    "profile_url": "http://homepage.hit.edu.cn/libo?lang=zh"
+  },
+  "history_policy": "原始source_payload值保留，添加独立订正说明，不静默重写历史观察；人物实体不变。"
+}

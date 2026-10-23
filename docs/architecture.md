@@ -14,8 +14,14 @@
 
 ## 人物与名录状态
 
-people 只含有独立官方个人页及身份来源的详细资料，仍允许经历缺项，不表示资料完整或实时在职。pending_people 保存仅名录身份待核的记录，不参与学历检索、确证师承和论文总数；对应姓名仍进入名录待建页。candidate_publications、pending_mentors、research_collaborators 不进入正式论文或导师集合。
+people 保存已核身份并有可结构化职业资料的记录；依据可以是官方个人页，或明确标注的其他官方职业报道。失效个人页必须关闭主页跳转，替代报道不可伪装为个人主页。详细资料仍允许经历缺项，不表示资料完整或实时在职。pending_people 保存仅名录身份待核的记录，不参与学历检索、确证师承和论文总数；对应姓名仍进入名录待建页。candidate_publications、pending_mentors、research_collaborators 不进入正式论文或导师集合。
 
 学历筛选同时要求 event_kind=degree 与 degree_awarded=true。明确的历史校名争议 institution_985=unknown 优先于学校分类字典。同阶段地区和洲必须在同一确证学位记录匹配。
 
 名录 roster_records 是整合记录数量；raw_source_observations 是整合前各公开来源的观察数量。同一稳定记录跨来源整合必须保留 source_observations 与依据，不代表人物身份去重。工作台账的完成范围只限明确的公开来源边界。
+
+## 发布版本一致性
+
+构建为网站数据快照生成同一 build_id。页面请求名录及下载文件时携带版本参数，人物与名录版本不一致时暂停显示并提示稍后刷新。GitHub Pages 与浏览器存在缓存更新窗口；这不承诺所有客户端瞬时原子切换。部署后仍验证页面、名录与 Excel 的实际版本。
+
+变更后的入口脚本、样式和静态模块依赖使用同一发布版本参数，减少旧模块与新接口混用。部署检查仍需真实浏览器加载；版本参数不是 CDN 全节点瞬时更新保证。
