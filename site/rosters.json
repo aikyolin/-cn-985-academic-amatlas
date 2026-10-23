@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "5所高校公开名录，1401条整合记录、1439条原始来源观察。哈工大原1381条保持，清华、北大、浙大、上海交大各新增5条选中观察；不是各校完整名录或唯一现任人数。",
+  "scope": "5所高校公开名录，1426条整合记录、1464条原始来源观察。哈工大原1381条保持；浙大累计15条，清华、北大、上海交大各累计10条选中观察。不是各校完整名录、唯一人数或已核实在职人数；程然补证不新增名录观察。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -428,6 +428,41 @@
     {
       "school_id": "sjtu",
       "organization_id": "sjtu-ic-chipdesign",
+      "visible_roster_entries": 5,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "zju",
+      "organization_id": "zju-ic-manufacturing",
+      "visible_roster_entries": 5,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "zju",
+      "organization_id": "zju-ic-manufacturing",
+      "visible_roster_entries": 5,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "sjtu",
+      "organization_id": "sjtu-ic-chipdesign",
+      "visible_roster_entries": 5,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "thu",
+      "organization_id": "thu-ee-communications",
+      "visible_roster_entries": 5,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "pku",
+      "organization_id": "pku-ic-microelectronics",
       "visible_roster_entries": 5,
       "count_scope": "selected_subset_only",
       "coverage_complete": false
@@ -1933,6 +1968,86 @@
       "pagination": "not_established_for_this_selected_subset",
       "accessed_on": "2026-10-23",
       "batch_id": "sjtu-selected-roster-ic-001"
+    },
+    {
+      "school_id": "zju",
+      "organization_id": "zju-ic-manufacturing",
+      "url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/",
+      "category": "先进集成电路制造技术研究所",
+      "visible_name_count": 5,
+      "selected_observation_count": 5,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "先进集成电路制造技术研究所官方现序第6–10；所名录40，不等学院全体。",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "zju-selected-roster-ic-002"
+    },
+    {
+      "school_id": "zju",
+      "organization_id": "zju-ic-manufacturing",
+      "url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/list2.htm",
+      "category": "先进集成电路制造技术研究所",
+      "visible_name_count": 5,
+      "selected_observation_count": 5,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "先进集成电路制造技术研究所官方第2页顺序第11–15；40为该所名录条目，不等学院全体。",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "zju-selected-roster-ic-003"
+    },
+    {
+      "school_id": "sjtu",
+      "organization_id": "sjtu-ic-chipdesign",
+      "url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
+      "category": "芯片设计与EDA研究所",
+      "visible_name_count": 5,
+      "selected_observation_count": 5,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "芯片设计与EDA研究所已核33人官方现序第6–10，共5人；不代表全学院或全校覆盖。",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "sjtu-selected-roster-ic-002"
+    },
+    {
+      "school_id": "thu",
+      "organization_id": "thu-ee-communications",
+      "url": "https://www.ee.tsinghua.edu.cn/ryqk/teacher/txyjs/js2.htm",
+      "category": "通信研究所",
+      "visible_name_count": 5,
+      "selected_observation_count": 5,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "清华大学电子工程系通信研究所教授栏目官方显示顺序第6–10条，非全所/全院覆盖",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "thu-selected-roster-faculty-batch-tsinghua-ee-002"
+    },
+    {
+      "school_id": "pku",
+      "organization_id": "pku-ic-microelectronics",
+      "url": "https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/index.htm",
+      "category": "集成微纳电子系",
+      "visible_name_count": 5,
+      "selected_observation_count": 5,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "北京大学集成电路学院·集成微纳电子系当前专职教师名录第6–10条",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "pku-selected-roster-pku-ic-002"
     }
   ],
   "entries": [
@@ -43985,8 +44100,10 @@
         "zju-selected-roster-ic-001:zju-ic-manufacturing-roster-1efe9c4577a6:1"
       ],
       "automatic_merge": false,
-      "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_person_ids": [
+        "zju-chengran"
+      ],
+      "candidate_match_status": "pending_identity_review"
     },
     {
       "id": "zju-ic-manufacturing-roster-d06d099fd7e4",
@@ -44545,6 +44662,871 @@
       "automatic_merge": false,
       "candidate_person_ids": [
         "sjtu-guoyuekang"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "zju-ic-manufacturing-roster-7671c80ef5b2",
+      "name": "程志渊",
+      "school_id": "zju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "zju-ic-manufacturing",
+      "department_id": "zju-ic-manufacturing",
+      "category": "先进集成电路制造技术研究所",
+      "listed_role": "教授",
+      "official_profile_url": "http://mypage.zju.edu.cn/zcheng",
+      "roster_source_url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "zju-chengzhiyuan",
+      "batch_id": "zju-selected-roster-ic-002",
+      "source_batch_id": "faculty-batch-zju-ic-002",
+      "source_ids": [
+        "chengzhiyuan-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-002:zju-ic-manufacturing-roster-7671c80ef5b2:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "zju-chengzhiyuan"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "zju-ic-manufacturing-roster-720214ea44c5",
+      "name": "卓成",
+      "school_id": "zju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "zju-ic-manufacturing",
+      "department_id": "zju-ic-manufacturing",
+      "category": "先进集成电路制造技术研究所",
+      "listed_role": "百人计划研究员",
+      "official_profile_url": "https://person.zju.edu.cn/chengzhuo",
+      "roster_source_url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "zju-zhuocheng",
+      "batch_id": "zju-selected-roster-ic-002",
+      "source_batch_id": "faculty-batch-zju-ic-002",
+      "source_ids": [
+        "zhuocheng-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-002:zju-ic-manufacturing-roster-720214ea44c5:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "zju-zhuocheng"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "zju-ic-manufacturing-roster-15c7489b73c8",
+      "name": "李云龙",
+      "school_id": "zju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "zju-ic-manufacturing",
+      "department_id": "zju-ic-manufacturing",
+      "category": "先进集成电路制造技术研究所",
+      "listed_role": "教授",
+      "official_profile_url": "https://person.zju.edu.cn/0022217",
+      "roster_source_url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "zju-liyunlong",
+      "batch_id": "zju-selected-roster-ic-002",
+      "source_batch_id": "faculty-batch-zju-ic-002",
+      "source_ids": [
+        "liyunlong-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-002:zju-ic-manufacturing-roster-15c7489b73c8:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "zju-ic-manufacturing-roster-e43ec823f197",
+      "name": "曹子峥",
+      "school_id": "zju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "zju-ic-manufacturing",
+      "department_id": "zju-ic-manufacturing",
+      "category": "先进集成电路制造技术研究所",
+      "listed_role": "师资名录成员（原表未列职称）",
+      "official_profile_url": "https://person.zju.edu.cn/zzcao",
+      "roster_source_url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "zju-caozizheng",
+      "batch_id": "zju-selected-roster-ic-002",
+      "source_batch_id": "faculty-batch-zju-ic-002",
+      "source_ids": [
+        "caozizheng-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-002:zju-ic-manufacturing-roster-e43ec823f197:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "zju-caozizheng"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "zju-ic-manufacturing-roster-f666f1ee4533",
+      "name": "张达",
+      "school_id": "zju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "zju-ic-manufacturing",
+      "department_id": "zju-ic-manufacturing",
+      "category": "先进集成电路制造技术研究所",
+      "listed_role": "教学科研并重岗",
+      "official_profile_url": "https://person.zju.edu.cn/person/0026155#994993",
+      "roster_source_url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "zju-zhangda",
+      "batch_id": "zju-selected-roster-ic-002",
+      "source_batch_id": "faculty-batch-zju-ic-002",
+      "source_ids": [
+        "zhangda-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-002:zju-ic-manufacturing-roster-f666f1ee4533:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "zju-ic-manufacturing-roster-3519439e3736",
+      "name": "SONG YI",
+      "school_id": "zju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "zju-ic-manufacturing",
+      "department_id": "zju-ic-manufacturing",
+      "category": "先进集成电路制造技术研究所",
+      "listed_role": "教学科研并重岗",
+      "official_profile_url": "https://person.zju.edu.cn/person/0026124",
+      "roster_source_url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/list2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "zju-songyi",
+      "batch_id": "zju-selected-roster-ic-003",
+      "source_batch_id": "faculty-batch-zju-ic-003",
+      "source_ids": [
+        "songyi-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-003:zju-ic-manufacturing-roster-3519439e3736:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "zju-ic-manufacturing-roster-e57103d0c618",
+      "name": "韩雁",
+      "school_id": "zju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "zju-ic-manufacturing",
+      "department_id": "zju-ic-manufacturing",
+      "category": "先进集成电路制造技术研究所",
+      "listed_role": "教授、博士生导师",
+      "official_profile_url": "https://ic.zju.edu.cn/2025/0115/c81879a3012574/page.htm",
+      "roster_source_url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/list2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "zju-hanyan",
+      "batch_id": "zju-selected-roster-ic-003",
+      "source_batch_id": "faculty-batch-zju-ic-003",
+      "source_ids": [
+        "hanyan-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-003:zju-ic-manufacturing-roster-e57103d0c618:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "zju-hanyan"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "zju-ic-manufacturing-roster-ff1c072ea7c5",
+      "name": "张睿",
+      "school_id": "zju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "zju-ic-manufacturing",
+      "department_id": "zju-ic-manufacturing",
+      "category": "先进集成电路制造技术研究所",
+      "listed_role": "教授",
+      "official_profile_url": "https://person.zju.edu.cn/0012183",
+      "roster_source_url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/list2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "zju-zhangrui",
+      "batch_id": "zju-selected-roster-ic-003",
+      "source_batch_id": "faculty-batch-zju-ic-003",
+      "source_ids": [
+        "zhangrui-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-003:zju-ic-manufacturing-roster-ff1c072ea7c5:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "zju-zhangrui"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "zju-ic-manufacturing-roster-31758c2419d5",
+      "name": "汪涛",
+      "school_id": "zju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "zju-ic-manufacturing",
+      "department_id": "zju-ic-manufacturing",
+      "category": "先进集成电路制造技术研究所",
+      "listed_role": "教授",
+      "official_profile_url": "https://person.zju.edu.cn/wangtao",
+      "roster_source_url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/list2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "zju-wangtao",
+      "batch_id": "zju-selected-roster-ic-003",
+      "source_batch_id": "faculty-batch-zju-ic-003",
+      "source_ids": [
+        "wangtao-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-003:zju-ic-manufacturing-roster-31758c2419d5:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "zju-ic-manufacturing-roster-cd912b44baa9",
+      "name": "倪东",
+      "school_id": "zju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "zju-ic-manufacturing",
+      "department_id": "zju-ic-manufacturing",
+      "category": "先进集成电路制造技术研究所",
+      "listed_role": "教授、博士生导师",
+      "official_profile_url": "https://person.zju.edu.cn/nidong",
+      "roster_source_url": "https://ic.zju.edu.cn/jcdlxjzzjsyjs/list2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "zju-nidong",
+      "batch_id": "zju-selected-roster-ic-003",
+      "source_batch_id": "faculty-batch-zju-ic-003",
+      "source_ids": [
+        "nidong-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-003:zju-ic-manufacturing-roster-cd912b44baa9:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "sjtu-ic-chipdesign-roster-359e968f1ef9",
+      "name": "何卫锋",
+      "school_id": "sjtu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "sjtu-ic-chipdesign",
+      "department_id": "sjtu-ic-chipdesign",
+      "category": "芯片设计与EDA研究所",
+      "listed_role": "教授",
+      "official_profile_url": "https://icisee.sjtu.edu.cn/jiaoshiml/heweifeng.html",
+      "roster_source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "sjtu-heweifeng",
+      "batch_id": "sjtu-selected-roster-ic-002",
+      "source_batch_id": "faculty-batch-sjtu-ic-002",
+      "source_ids": [
+        "heweifeng-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "sjtu-selected-roster-ic-002:sjtu-ic-chipdesign-roster-359e968f1ef9:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "sjtu-heweifeng"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "sjtu-ic-chipdesign-roster-ed6582387963",
+      "name": "贺光辉",
+      "school_id": "sjtu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "sjtu-ic-chipdesign",
+      "department_id": "sjtu-ic-chipdesign",
+      "category": "芯片设计与EDA研究所",
+      "listed_role": "教授",
+      "official_profile_url": "https://icisee.sjtu.edu.cn/jiaoshiml/heguanghui.html",
+      "roster_source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "sjtu-heguanghui",
+      "batch_id": "sjtu-selected-roster-ic-002",
+      "source_batch_id": "faculty-batch-sjtu-ic-002",
+      "source_ids": [
+        "heguanghui-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "sjtu-selected-roster-ic-002:sjtu-ic-chipdesign-roster-ed6582387963:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "sjtu-heguanghui"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "sjtu-ic-chipdesign-roster-74513e017df2",
+      "name": "纪志罡",
+      "school_id": "sjtu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "sjtu-ic-chipdesign",
+      "department_id": "sjtu-ic-chipdesign",
+      "category": "芯片设计与EDA研究所",
+      "listed_role": "教授",
+      "official_profile_url": "https://icisee.sjtu.edu.cn/jiaoshiml/jizhigang.html",
+      "roster_source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "sjtu-jizhigang",
+      "batch_id": "sjtu-selected-roster-ic-002",
+      "source_batch_id": "faculty-batch-sjtu-ic-002",
+      "source_ids": [
+        "jizhigang-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "sjtu-selected-roster-ic-002:sjtu-ic-chipdesign-roster-74513e017df2:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "sjtu-jizhigang"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "sjtu-ic-chipdesign-roster-04422eb62ecf",
+      "name": "姜红兰",
+      "school_id": "sjtu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "sjtu-ic-chipdesign",
+      "department_id": "sjtu-ic-chipdesign",
+      "category": "芯片设计与EDA研究所",
+      "listed_role": "长聘教轨副教授",
+      "official_profile_url": "https://icisee.sjtu.edu.cn/jiaoshiml/jianghonglan.html",
+      "roster_source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "sjtu-jianghonglan",
+      "batch_id": "sjtu-selected-roster-ic-002",
+      "source_batch_id": "faculty-batch-sjtu-ic-002",
+      "source_ids": [
+        "jianghonglan-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "sjtu-selected-roster-ic-002:sjtu-ic-chipdesign-roster-04422eb62ecf:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "sjtu-jianghonglan"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "sjtu-ic-chipdesign-roster-18b291621f07",
+      "name": "蒋剑飞",
+      "school_id": "sjtu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "sjtu-ic-chipdesign",
+      "department_id": "sjtu-ic-chipdesign",
+      "category": "芯片设计与EDA研究所",
+      "listed_role": "副研究员",
+      "official_profile_url": "https://icisee.sjtu.edu.cn/jiaoshiml/jiangjianfei.html",
+      "roster_source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "sjtu-jiangjianfei",
+      "batch_id": "sjtu-selected-roster-ic-002",
+      "source_batch_id": "faculty-batch-sjtu-ic-002",
+      "source_ids": [
+        "jiangjianfei-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "sjtu-selected-roster-ic-002:sjtu-ic-chipdesign-roster-18b291621f07:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "sjtu-jiangjianfei"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-thu-ee-communications-guyuantao",
+      "name": "谷源涛",
+      "school_id": "thu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "thu-ee-communications",
+      "department_id": "thu-ee-communications",
+      "category": "通信研究所",
+      "listed_role": "教授",
+      "official_profile_url": "https://web.ee.tsinghua.edu.cn/guyuantao/zh_CN/index.htm",
+      "roster_source_url": "https://www.ee.tsinghua.edu.cn/ryqk/teacher/txyjs/js2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "thu-guyuantao",
+      "batch_id": "thu-selected-roster-faculty-batch-tsinghua-ee-002",
+      "source_batch_id": "faculty-batch-tsinghua-ee-002",
+      "source_ids": [
+        "guyuantao-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "thu-selected-roster-faculty-batch-tsinghua-ee-002:roster-thu-ee-communications-guyuantao:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "thu-guyuantao"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-thu-ee-communications-liyong",
+      "name": "李勇",
+      "school_id": "thu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "thu-ee-communications",
+      "department_id": "thu-ee-communications",
+      "category": "通信研究所",
+      "listed_role": "教授",
+      "official_profile_url": "https://web.ee.tsinghua.edu.cn/liyong/zh_CN/index.htm",
+      "roster_source_url": "https://www.ee.tsinghua.edu.cn/ryqk/teacher/txyjs/js2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "thu-liyong",
+      "batch_id": "thu-selected-roster-faculty-batch-tsinghua-ee-002",
+      "source_batch_id": "faculty-batch-tsinghua-ee-002",
+      "source_ids": [
+        "liyong-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "thu-selected-roster-faculty-batch-tsinghua-ee-002:roster-thu-ee-communications-liyong:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "thu-liyong"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-thu-ee-communications-lujianhua",
+      "name": "陆建华",
+      "school_id": "thu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "thu-ee-communications",
+      "department_id": "thu-ee-communications",
+      "category": "通信研究所",
+      "listed_role": "教授",
+      "official_profile_url": "https://web.ee.tsinghua.edu.cn/lujianhua/zh_CN/index.htm",
+      "roster_source_url": "https://www.ee.tsinghua.edu.cn/ryqk/teacher/txyjs/js2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "thu-lujianhua",
+      "batch_id": "thu-selected-roster-faculty-batch-tsinghua-ee-002",
+      "source_batch_id": "faculty-batch-tsinghua-ee-002",
+      "source_ids": [
+        "lujianhua-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "thu-selected-roster-faculty-batch-tsinghua-ee-002:roster-thu-ee-communications-lujianhua:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "thu-lujianhua"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-thu-ee-communications-suxin",
+      "name": "粟欣",
+      "school_id": "thu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "thu-ee-communications",
+      "department_id": "thu-ee-communications",
+      "category": "通信研究所",
+      "listed_role": "教授栏目收录（主页未列职称）",
+      "official_profile_url": "https://web.ee.tsinghua.edu.cn/suxin/zh_CN/index.htm",
+      "roster_source_url": "https://www.ee.tsinghua.edu.cn/ryqk/teacher/txyjs/js2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "thu-suxin",
+      "batch_id": "thu-selected-roster-faculty-batch-tsinghua-ee-002",
+      "source_batch_id": "faculty-batch-tsinghua-ee-002",
+      "source_ids": [
+        "suxin-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "thu-selected-roster-faculty-batch-tsinghua-ee-002:roster-thu-ee-communications-suxin:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "thu-suxin"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-thu-ee-communications-niuzhisheng",
+      "name": "牛志升",
+      "school_id": "thu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "thu-ee-communications",
+      "department_id": "thu-ee-communications",
+      "category": "通信研究所",
+      "listed_role": "教授",
+      "official_profile_url": "https://web.ee.tsinghua.edu.cn/niuzhisheng/zh_CN/index.htm",
+      "roster_source_url": "https://www.ee.tsinghua.edu.cn/ryqk/teacher/txyjs/js2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "thu-niuzhisheng",
+      "batch_id": "thu-selected-roster-faculty-batch-tsinghua-ee-002",
+      "source_batch_id": "faculty-batch-tsinghua-ee-002",
+      "source_ids": [
+        "niuzhisheng-source-1"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "thu-selected-roster-faculty-batch-tsinghua-ee-002:roster-thu-ee-communications-niuzhisheng:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "thu-niuzhisheng"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "pku-ic-microelectronics-roster-006",
+      "name": "贺明",
+      "school_id": "pku",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "pku-ic-microelectronics",
+      "department_id": "pku-ic-microelectronics",
+      "category": "集成微纳电子系",
+      "listed_role": "长聘副教授，博导",
+      "official_profile_url": "https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/hm/index.htm",
+      "roster_source_url": "https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "pku-he-ming",
+      "batch_id": "pku-selected-roster-pku-ic-002",
+      "source_batch_id": "pku-ic-002",
+      "source_ids": [
+        "pku-ic-roster"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "pku-selected-roster-pku-ic-002:pku-ic-microelectronics-roster-006:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "pku-he-ming"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "pku-ic-microelectronics-roster-007",
+      "name": "黄芊芊",
+      "school_id": "pku",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "pku-ic-microelectronics",
+      "department_id": "pku-ic-microelectronics",
+      "category": "集成微纳电子系",
+      "listed_role": "长聘教授，博导",
+      "official_profile_url": "https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/hqq/index.htm",
+      "roster_source_url": "https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "pku-huang-qianqian",
+      "batch_id": "pku-selected-roster-pku-ic-002",
+      "source_batch_id": "pku-ic-002",
+      "source_ids": [
+        "pku-ic-roster"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "pku-selected-roster-pku-ic-002:pku-ic-microelectronics-roster-007:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "pku-huang-qianqian"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "pku-ic-microelectronics-roster-008",
+      "name": "黄晓熙",
+      "school_id": "pku",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "pku-ic-microelectronics",
+      "department_id": "pku-ic-microelectronics",
+      "category": "集成微纳电子系",
+      "listed_role": "助理教授，研究员，博导",
+      "official_profile_url": "https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/hxx/index.htm",
+      "roster_source_url": "https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "pku-huang-xiaoxi",
+      "batch_id": "pku-selected-roster-pku-ic-002",
+      "source_batch_id": "pku-ic-002",
+      "source_ids": [
+        "pku-ic-roster"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "pku-selected-roster-pku-ic-002:pku-ic-microelectronics-roster-008:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "pku-huang-xiaoxi"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "pku-ic-microelectronics-roster-009",
+      "name": "贾润东",
+      "school_id": "pku",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "pku-ic-microelectronics",
+      "department_id": "pku-ic-microelectronics",
+      "category": "集成微纳电子系",
+      "listed_role": "工程师",
+      "official_profile_url": "https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/jrd/index.htm",
+      "roster_source_url": "https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "pku-jia-rundong",
+      "batch_id": "pku-selected-roster-pku-ic-002",
+      "source_batch_id": "pku-ic-002",
+      "source_ids": [
+        "pku-ic-roster"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "pku-selected-roster-pku-ic-002:pku-ic-microelectronics-roster-009:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "pku-jia-rundong"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "pku-ic-microelectronics-roster-010",
+      "name": "康晋锋",
+      "school_id": "pku",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "pku-ic-microelectronics",
+      "department_id": "pku-ic-microelectronics",
+      "category": "集成微纳电子系",
+      "listed_role": "教授，博导",
+      "official_profile_url": "https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/kjf/index.htm",
+      "roster_source_url": "https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "pku-kang-jinfeng",
+      "batch_id": "pku-selected-roster-pku-ic-002",
+      "source_batch_id": "pku-ic-002",
+      "source_ids": [
+        "pku-ic-roster"
+      ],
+      "selection_status": "selected_subset",
+      "notes": [
+        "本批选中的官方名录观察，不代表研究所、学院或全校全部人数；名录链接不等于本人页面正文完整核验。"
+      ],
+      "source_observation_ids": [
+        "pku-selected-roster-pku-ic-002:pku-ic-microelectronics-roster-010:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "pku-kang-jinfeng"
       ],
       "candidate_match_status": "pending_identity_review"
     }
@@ -49240,26 +50222,202 @@
       ],
       "validation": "已审核公开名录选中5条；非完整枚举。",
       "coverage_unit_count": 1
+    },
+    {
+      "batch_id": "zju-selected-roster-ic-002",
+      "school_id": "zju",
+      "accessed_on": "2026-10-23",
+      "observation_count": 5,
+      "record_count": 5,
+      "raw_observation_count": 5,
+      "raw_count": 5,
+      "category_count": 1,
+      "entry_ids": [
+        "zju-ic-manufacturing-roster-7671c80ef5b2",
+        "zju-ic-manufacturing-roster-720214ea44c5",
+        "zju-ic-manufacturing-roster-15c7489b73c8",
+        "zju-ic-manufacturing-roster-e43ec823f197",
+        "zju-ic-manufacturing-roster-f666f1ee4533"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-002:zju-ic-manufacturing-roster-7671c80ef5b2:1",
+        "zju-selected-roster-ic-002:zju-ic-manufacturing-roster-720214ea44c5:1",
+        "zju-selected-roster-ic-002:zju-ic-manufacturing-roster-15c7489b73c8:1",
+        "zju-selected-roster-ic-002:zju-ic-manufacturing-roster-e43ec823f197:1",
+        "zju-selected-roster-ic-002:zju-ic-manufacturing-roster-f666f1ee4533:1"
+      ],
+      "selection": "先进集成电路制造技术研究所官方现序第6–10；所名录40，不等学院全体。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-zju-ic-002.json",
+          "sha256": "1301a2cad0a85d7eee64fb0494b433edb461f774cc94229e9a3c9e8d47ea3ba4"
+        }
+      ],
+      "validation": "independently_reviewed_selected_person_observations_only",
+      "coverage_unit_count": 1
+    },
+    {
+      "batch_id": "zju-selected-roster-ic-003",
+      "school_id": "zju",
+      "accessed_on": "2026-10-23",
+      "observation_count": 5,
+      "record_count": 5,
+      "raw_observation_count": 5,
+      "raw_count": 5,
+      "category_count": 1,
+      "entry_ids": [
+        "zju-ic-manufacturing-roster-3519439e3736",
+        "zju-ic-manufacturing-roster-e57103d0c618",
+        "zju-ic-manufacturing-roster-ff1c072ea7c5",
+        "zju-ic-manufacturing-roster-31758c2419d5",
+        "zju-ic-manufacturing-roster-cd912b44baa9"
+      ],
+      "source_observation_ids": [
+        "zju-selected-roster-ic-003:zju-ic-manufacturing-roster-3519439e3736:1",
+        "zju-selected-roster-ic-003:zju-ic-manufacturing-roster-e57103d0c618:1",
+        "zju-selected-roster-ic-003:zju-ic-manufacturing-roster-ff1c072ea7c5:1",
+        "zju-selected-roster-ic-003:zju-ic-manufacturing-roster-31758c2419d5:1",
+        "zju-selected-roster-ic-003:zju-ic-manufacturing-roster-cd912b44baa9:1"
+      ],
+      "selection": "先进集成电路制造技术研究所官方第2页顺序第11–15；40为该所名录条目，不等学院全体。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-zju-ic-003.json",
+          "sha256": "23f7334f8960f1e9f44f8e7d44fa96f4558fb3ec1edcf3285cd50284e5b1edbc"
+        }
+      ],
+      "validation": "independently_reviewed_selected_person_observations_only",
+      "coverage_unit_count": 1
+    },
+    {
+      "batch_id": "sjtu-selected-roster-ic-002",
+      "school_id": "sjtu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 5,
+      "record_count": 5,
+      "raw_observation_count": 5,
+      "raw_count": 5,
+      "category_count": 1,
+      "entry_ids": [
+        "sjtu-ic-chipdesign-roster-359e968f1ef9",
+        "sjtu-ic-chipdesign-roster-ed6582387963",
+        "sjtu-ic-chipdesign-roster-74513e017df2",
+        "sjtu-ic-chipdesign-roster-04422eb62ecf",
+        "sjtu-ic-chipdesign-roster-18b291621f07"
+      ],
+      "source_observation_ids": [
+        "sjtu-selected-roster-ic-002:sjtu-ic-chipdesign-roster-359e968f1ef9:1",
+        "sjtu-selected-roster-ic-002:sjtu-ic-chipdesign-roster-ed6582387963:1",
+        "sjtu-selected-roster-ic-002:sjtu-ic-chipdesign-roster-74513e017df2:1",
+        "sjtu-selected-roster-ic-002:sjtu-ic-chipdesign-roster-04422eb62ecf:1",
+        "sjtu-selected-roster-ic-002:sjtu-ic-chipdesign-roster-18b291621f07:1"
+      ],
+      "selection": "芯片设计与EDA研究所已核33人官方现序第6–10，共5人；不代表全学院或全校覆盖。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-sjtu-ic-002.json",
+          "sha256": "013edd8ad089169921bd7ccec195e8adc94f7f29420c74885d1ae4a652f848e0"
+        }
+      ],
+      "validation": "independently_reviewed_selected_person_observations_only",
+      "coverage_unit_count": 1
+    },
+    {
+      "batch_id": "thu-selected-roster-faculty-batch-tsinghua-ee-002",
+      "school_id": "thu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 5,
+      "record_count": 5,
+      "raw_observation_count": 5,
+      "raw_count": 5,
+      "category_count": 1,
+      "entry_ids": [
+        "roster-thu-ee-communications-guyuantao",
+        "roster-thu-ee-communications-liyong",
+        "roster-thu-ee-communications-lujianhua",
+        "roster-thu-ee-communications-suxin",
+        "roster-thu-ee-communications-niuzhisheng"
+      ],
+      "source_observation_ids": [
+        "thu-selected-roster-faculty-batch-tsinghua-ee-002:roster-thu-ee-communications-guyuantao:1",
+        "thu-selected-roster-faculty-batch-tsinghua-ee-002:roster-thu-ee-communications-liyong:1",
+        "thu-selected-roster-faculty-batch-tsinghua-ee-002:roster-thu-ee-communications-lujianhua:1",
+        "thu-selected-roster-faculty-batch-tsinghua-ee-002:roster-thu-ee-communications-suxin:1",
+        "thu-selected-roster-faculty-batch-tsinghua-ee-002:roster-thu-ee-communications-niuzhisheng:1"
+      ],
+      "selection": "清华大学电子工程系通信研究所教授栏目官方显示顺序第6–10条，非全所/全院覆盖",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-tsinghua-ee-002.json",
+          "sha256": "1af9dec6300ba4490c6a20d527360c97998418bbb2837eb422a1a1405071fe1f"
+        }
+      ],
+      "validation": "independently_reviewed_selected_person_observations_only",
+      "coverage_unit_count": 1
+    },
+    {
+      "batch_id": "pku-selected-roster-pku-ic-002",
+      "school_id": "pku",
+      "accessed_on": "2026-10-23",
+      "observation_count": 5,
+      "record_count": 5,
+      "raw_observation_count": 5,
+      "raw_count": 5,
+      "category_count": 1,
+      "entry_ids": [
+        "pku-ic-microelectronics-roster-006",
+        "pku-ic-microelectronics-roster-007",
+        "pku-ic-microelectronics-roster-008",
+        "pku-ic-microelectronics-roster-009",
+        "pku-ic-microelectronics-roster-010"
+      ],
+      "source_observation_ids": [
+        "pku-selected-roster-pku-ic-002:pku-ic-microelectronics-roster-006:1",
+        "pku-selected-roster-pku-ic-002:pku-ic-microelectronics-roster-007:1",
+        "pku-selected-roster-pku-ic-002:pku-ic-microelectronics-roster-008:1",
+        "pku-selected-roster-pku-ic-002:pku-ic-microelectronics-roster-009:1",
+        "pku-selected-roster-pku-ic-002:pku-ic-microelectronics-roster-010:1"
+      ],
+      "selection": "北京大学集成电路学院·集成微纳电子系当前专职教师名录第6–10条",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-pku-ic-002.json",
+          "sha256": "c13d0057441893604ea10717651c356af6ac469950b3ebc9197a3d3e0d1b10ea"
+        }
+      ],
+      "validation": "independently_reviewed_selected_person_observations_only",
+      "coverage_unit_count": 1
     }
   ],
   "totals": {
     "organization_count": 20,
     "category_count": 83,
-    "entries_with_profile_link": 1238,
+    "entries_with_profile_link": 1263,
     "entries_without_profile_link": 163,
     "dedup_candidate_groups": 60,
     "placeholder_profile_link_observations": 18,
     "current_employment_count_verified": false,
     "not_unique_people_count": true,
-    "record_count": 1401,
-    "raw_observation_count": 1439,
-    "roster_records": 1401,
-    "raw_source_observations": 1439,
-    "coverage_unit_count": 89,
+    "record_count": 1426,
+    "raw_observation_count": 1464,
+    "roster_records": 1426,
+    "raw_source_observations": 1464,
+    "coverage_unit_count": 94,
     "count_unit": "integrated_roster_records",
     "source_record_grouping_reduction": 38,
-    "category_count_basis": "sum_of_batch_source_categories_not_unique_organization_category_pairs",
-    "unique_organization_category_pairs": 81
+    "category_count_basis": "unique_organization_category_pairs",
+    "unique_organization_category_pairs": 83,
+    "batch_category_count": 88
   },
   "role_interpretation": {
     "孔珂": "网页列在讲师栏，但姓名附注博士后/特聘副研究员，保留二者，不强制解释为讲师职称。",
@@ -49403,5 +50561,5 @@
     }
   ],
   "raw_data_location": "完整原始来源观察保存在仓库 data/rosters.json，以及导出 Excel 的“原始来源观察”工作表；网站快照不重复加载这些原始内容。",
-  "build_id": "42b26f0eb810bfc1"
+  "build_id": "08d770d5f708f0d5"
 }

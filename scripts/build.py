@@ -5,6 +5,22 @@ from openpyxl import Workbook
 from openpyxl.styles import Font,PatternFill,Alignment
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def valid_url(v):return isinstance(v,str) and urlparse(v).scheme in ('http','https') and bool(urlparse(v).netloc)
+def mentor_official_url(mentor):
+ # Explicit false flags veto shortcuts without weakening verified employment evidence.
+ if not mentor or mentor.get('employment_status')!='active_officially_listed' or mentor.get('quick_link_eligible') is False or mentor.get('navigation_verified') is False:return ''
+ url=mentor.get('official_url')
+ try:
+  if not valid_url(url):return ''
+  parsed=urlparse(url)
+  if not parsed.hostname or any(c.isspace() for c in parsed.hostname):return ''
+  parsed.port  # Access validates the numeric port and range, like the browser URL parser.
+  return url
+ except ValueError:return ''
+def mentor_navigation_notice(mentor):
+ if not mentor or mentor.get('employment_status')!='active_officially_listed' or mentor_official_url(mentor):return ''
+ reason=mentor.get('profile_navigation_unavailable_reason')
+ return '任职已核实；'+((reason.strip() if isinstance(reason,str) else '') or '导师主页访问未核实，暂不提供快捷链接。')
+
 def safe_id(value):return isinstance(value,str) and bool(re.fullmatch(r'[A-Za-z0-9_-]+',value))
 def school_index(d):
  schools={row['id']:row for row in d['institutions']}
@@ -124,7 +140,7 @@ def department_tables(people,updated_at,institutions=None):
  mentor_fields=['name','type','education_stage','description','employment_status','employment_status_note','official_url','source_url','profile_source_url']
  rows=[['姓名','导师姓名','关系类型','阶段','简介','在职状态','状态说明','已核在职主页','关系来源','任职来源']]
  for p in people:
-  mentors=[dict(m,type=m.get('type_label') or m.get('type'),official_url=m.get('official_url') if m.get('employment_status')=='active_officially_listed' else '') for m in p['mentors']]+[dict(c,type=c.get('label','博士指导委员会成员（非师承）'),official_url='') for c in p.get('committee_members',[])]
+  mentors=[dict(m,type=m.get('type_label') or m.get('type'),official_url=mentor_official_url(m),employment_status_note='；'.join(v for v in [m.get('employment_status_note'),mentor_navigation_notice(m)] if v) if mentor_navigation_notice(m) else m.get('employment_status_note')) for m in p['mentors']]+[dict(c,type=c.get('label','博士指导委员会成员（非师承）'),official_url='') for c in p.get('committee_members',[])]
   rows.extend([[p['name'],*[m.get(k) for k in mentor_fields]] for m in mentors])
  tables.append(('导师',rows))
  for label,key,fields,headers in [('论文','publications',['title','year','doi','url','type','source_url','identity_evidence','link_status','note'],['标题','年份','DOI','链接','类型','收录来源','作者归属依据','链接核验范围','备注']),('来源','sources',['id','url','evidence_status','retrieved_at'],['来源ID','链接','核验方式','查阅日期'])]:

@@ -330,7 +330,7 @@ def roster_tables(rosters, atlas):
     tables = {'待核对名录': rows}
     tables['覆盖说明'] = [
         ['范围与限制'], [rosters['scope']],
-        ['以下为全库各来源批次保留说明，含历史数量与旧枚举范围，不表示当前各校完整收录。当前总数见首行范围和末尾统计；新增四校各5条仅为选中样本。'],
+        ['以下为全库各来源批次保留说明，含历史数量与旧枚举范围，不表示当前各校完整收录。当前总数见首行范围和末尾统计；四校首次接入各5条仅为选中样本。'],
         *[[limitation] for limitation in rosters['limitations']],
         [f"{len(entries)}条整合名录记录，另保存{len(rosters.get('source_observations', entries))}条原始来源观察；不是唯一人数或已核实在职人数，{len(atlas['people'])}份独立人物档案不自动合并。"],
         ['统计', rosters.get('totals', {})],

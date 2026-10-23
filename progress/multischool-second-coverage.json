@@ -1,0 +1,155 @@
+{
+  "updated_at": "2026-10-23",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "baseline_commit": "b0f45a454a70f33bd92fc206e4cba3bb96b7896d",
+  "counts": {
+    "new_people": 25,
+    "new_professional_profiles": 20,
+    "new_pending_profiles": 5,
+    "promoted_existing_pending_profiles": 1,
+    "net_professional_profiles_delta": 21,
+    "net_pending_profiles_delta": 4,
+    "complete_profiles": 0,
+    "new_batch_source_collections": {
+      "education": 64,
+      "appointments": 87,
+      "mentors": 8,
+      "committee_members": 0,
+      "publications": 38,
+      "sources": 114,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0
+    },
+    "new_batch_source_award_counts": {
+      "degree_awarded_true": 47,
+      "degree_awarded_false": 10,
+      "degree_awarded_null": 7,
+      "confirmed_degree_events": 33
+    },
+    "new_professional_collections": {
+      "education": 61,
+      "appointments": 81,
+      "mentors": 8,
+      "committee_members": 0,
+      "publications": 37,
+      "sources": 104,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0
+    },
+    "new_pending_main_collections": {
+      "education": 0,
+      "appointments": 6,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 10,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0
+    },
+    "new_pending_preserved_evidence": {
+      "education": 3,
+      "mentors": 0,
+      "publications": 1
+    },
+    "update_effective_collections": {
+      "education": 2,
+      "appointments": 2,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 1,
+      "sources": 3,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0
+    },
+    "effective_global_collection_delta": {
+      "education": 63,
+      "appointments": 83,
+      "mentors": 8,
+      "committee_members": 0,
+      "publications": 38,
+      "sources": 107,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0
+    },
+    "new_roster_records": 25,
+    "new_source_observations": 25,
+    "direct_guidance_types": {
+      "doctoral_advisor": 3,
+      "postdoctoral_advisor": 5
+    },
+    "projection": {
+      "professional_records": 296,
+      "pending_records": 48,
+      "collections": {
+        "education": 900,
+        "appointments": 1097,
+        "mentors": 123,
+        "committee_members": 9,
+        "publications": 622,
+        "sources": 1155,
+        "research_collaborators": 4,
+        "pending_mentor_candidates": 7,
+        "pending_mentors": 7
+      },
+      "confirmed_degree_counts": {
+        "degree_awarded_true": 480,
+        "degree_awarded_false": 164,
+        "degree_awarded_null": 256,
+        "confirmed_degree_events": 480
+      },
+      "roster_records": 1426,
+      "raw_source_observations": 1464
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-zju-ic-002.json",
+      "sha256": "1301a2cad0a85d7eee64fb0494b433edb461f774cc94229e9a3c9e8d47ea3ba4",
+      "independent_review_file": "faculty-batch-zju-ic-002-independent-review.json",
+      "independent_review_sha256": "cd04dd4c290230e1022ad0f162a4ad9b6902c103ff29a7fbb70ba2f49a9fd558"
+    },
+    {
+      "file": "faculty-batch-zju-ic-003.json",
+      "sha256": "23f7334f8960f1e9f44f8e7d44fa96f4558fb3ec1edcf3285cd50284e5b1edbc",
+      "independent_review_file": "faculty-batch-zju-ic-003-independent-review.json",
+      "independent_review_sha256": "0da4da3715ccdabd9bffc324bcc5fcb782b053fb3497acb4babeba132c7357a2"
+    },
+    {
+      "file": "faculty-batch-sjtu-ic-002.json",
+      "sha256": "013edd8ad089169921bd7ccec195e8adc94f7f29420c74885d1ae4a652f848e0",
+      "independent_review_file": "faculty-batch-sjtu-ic-002-independent-review.json",
+      "independent_review_sha256": "e3d9fe283c37be7a9cc87740013fe7e15d218b509c62857d22ab72255fd91ef9"
+    },
+    {
+      "file": "faculty-batch-tsinghua-ee-002.json",
+      "sha256": "1af9dec6300ba4490c6a20d527360c97998418bbb2837eb422a1a1405071fe1f",
+      "independent_review_file": "faculty-batch-tsinghua-ee-002-independent-review.json",
+      "independent_review_sha256": "779dcf18971d701d515abfc01bb1741727bb8b346b682d8c0a579d434ac3d08c"
+    },
+    {
+      "file": "faculty-batch-pku-ic-002.json",
+      "sha256": "c13d0057441893604ea10717651c356af6ac469950b3ebc9197a3d3e0d1b10ea",
+      "independent_review_file": "faculty-batch-pku-ic-002-independent-review.json",
+      "independent_review_sha256": "e91917e533da5912e39f0a4205efb5764661a18fd62c2771ac8c601490cd453b"
+    },
+    {
+      "file": "faculty-update-zju-chengran-001.json",
+      "sha256": "408cd959c8cde6b3ef88f89c56a5eb5c269bb71061b7efab15ae887e6ca0ec10",
+      "independent_review_file": "faculty-update-zju-chengran-001-independent-review.json",
+      "independent_review_sha256": "baf2ac64880e711a139f25b58f76a5235bbab0118f1bf877fd661290f9a3c25c"
+    }
+  ],
+  "scope": "新增25条选中名录，20份部分职业档案、5份待完善；程然同ID补证由待完善转部分职业档案，不新增人物或名录。",
+  "roster_category_count_correction": {
+    "unique_organization_category_pairs": 83,
+    "batch_source_category_count": 88,
+    "coverage_evidence_rows": 94,
+    "note": "保留每批来源分类证据，跨批同组织同分类不重复计为唯一分类。"
+  }
+}

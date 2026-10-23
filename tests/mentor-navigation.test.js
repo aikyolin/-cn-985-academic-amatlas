@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {test} from 'node:test';
-import {mentorProfileRoute,escapeHtml,safeUrl} from '../site/model.js';
+import {mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,escapeHtml,safeUrl} from '../site/model.js';
 
 const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));
 const app=fs.readFileSync(new URL('../site/app.js',import.meta.url),'utf8');
@@ -18,8 +18,8 @@ function renderCards(p,people=db.people){
   };
   const link=(url,label,cls='')=>safeUrl(url)?`<a class="${cls}" href="${escapeHtml(safeUrl(url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`:`<span>${escapeHtml(label)}</span>`;
   const src=(url,label)=>url?link(url,label,'source-link'):'';
-  const render=new Function('db','$','esc','statusLabel','src','mentorProfileRoute','safeUrl','link','makeMind',`let zoom=1;return (${lineageSource});`)(
-    {people},$,escapeHtml,value=>value,src,mentorProfileRoute,safeUrl,link,()=>'<svg></svg>'
+  const render=new Function('db','$','esc','statusLabel','src','mentorProfileRoute','mentorOfficialUrl','mentorNavigationNotice','safeUrl','link','makeMind',`let zoom=1;return (${lineageSource});`)(
+    {people},$,escapeHtml,value=>value,src,mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,safeUrl,link,()=>'<svg></svg>'
   );
   render(p);
   return $('#profile-content').innerHTML;
@@ -92,20 +92,26 @@ test('nonexistent or pending-only entity IDs never create a detailed-profile rou
   assert.equal(mentorProfileRoute(relation('曲歌扬','宋清海'),null),'');
 });
 
-test('explicit false vetoes internal navigation without changing the existing external-link rule',()=>{
+test('explicit false eligibility vetoes both internal and external shortcuts',()=>{
   const m={...relation('曲歌扬','宋清海'),quick_link_eligible:false};
   assert.equal(mentorProfileRoute(m,db.people),'');
   const html=renderCards({mentors:[m]});
   assert(!html.includes('查看本库个人档案'));
-  assert(html.includes('查看导师个人主页'));
-  assert(html.includes(`href="${escapeHtml(safeUrl(m.official_url))}"`));
+  assert(!html.includes('查看导师个人主页'));
+  assert.equal(mentorOfficialUrl(m),'');
+  assert(html.includes('任职已核实；导师主页访问未核实，暂不提供快捷链接。'));
+  assert(html.includes('简介与任职依据'));
 });
 
 test('missing eligibility remains compatible with already reviewed active legacy mentors',()=>{
   const m={...relation('曲歌扬','宋清海')};
   delete m.quick_link_eligible;
+  delete m.navigation_verified;
   assert.equal(mentorProfileRoute(m,db.people),'#/person/hit-songqinghai');
   assert.equal(mentorProfileRoute({...m,quick_link_eligible:true},db.people),'#/person/hit-songqinghai');
+  assert.equal(mentorOfficialUrl(m),safeUrl(m.official_url));
+  assert(renderCards({mentors:[m]}).includes('查看导师个人主页'));
+  assert.equal(mentorNavigationNotice(m),'');
 });
 
 test('matched profile IDs are encoded rather than interpolated as raw routes or attributes',()=>{
@@ -121,7 +127,7 @@ test('matched profile IDs are encoded rather than interpolated as raw routes or 
 test('helper and card rendering leave all stored employment and eligibility evidence unchanged',()=>{
   const before=JSON.stringify(db);
   for(const p of db.people){
-    for(const m of p.mentors)mentorProfileRoute(m,db.people);
+    for(const m of p.mentors){mentorProfileRoute(m,db.people);mentorOfficialUrl(m);mentorNavigationNotice(m);}
     if(p.mentors.length)renderCards(p);
   }
   assert.equal(JSON.stringify(db),before);
@@ -136,12 +142,12 @@ test('malformed UTF-16 identifiers fail closed without breaking the mentor card'
 });
 
 test('external mentor navigation still requires active status and a safe official URL',()=>{
-  assert(app.includes("a.employment_status==='active_officially_listed'&&safeUrl(a.official_url)"));
+  assert(app.includes("mentorOfficialUrl(a)"));
   const m={...relation('曲歌扬','宋清海'),official_url:'javascript:alert(1)'};
   const html=renderCards({mentors:[m]});
   assert(html.includes('查看本库个人档案'));
   assert(!html.includes('查看导师个人主页'));
-  assert(html.includes('导师主页待核实'));
+  assert(html.includes('任职已核实；导师主页访问未核实，暂不提供快捷链接。'));
 });
 
 test('Wu Ligang retains active evidence but renders the authentication limitation instead of a homepage link',()=>{
@@ -161,4 +167,61 @@ test('explicit unavailable-navigation message is escaped, never rendered as raw 
   const html=renderCards({mentors:[m]});
   assert(html.includes('认证 &lt;script&gt;unsafe()&lt;/script&gt;'));
   assert(!html.includes('<script>unsafe()</script>'));
+});
+
+
+test('each explicit false navigation flag vetoes the external URL independently',()=>{
+  for(const flags of [{navigation_verified:false},{quick_link_eligible:false},{navigation_verified:false,quick_link_eligible:true},{navigation_verified:true,quick_link_eligible:false},{navigation_verified:false,quick_link_eligible:false}]){
+    const m={...relation('曲歌扬','宋清海'),navigation_verified:true,quick_link_eligible:true,...flags};
+    assert.equal(mentorOfficialUrl(m),'');
+    const html=renderCards({mentors:[m]});
+    assert(!html.includes('查看导师个人主页'));
+    assert(html.includes('任职状态：active_officially_listed'));
+    assert(html.includes('关系证据'));
+    assert(html.includes('简介与任职依据'));
+    // Only the existing eligibility condition controls internal identity navigation.
+    assert.equal(mentorProfileRoute(m,db.people),m.quick_link_eligible===false?'':'#/person/hit-songqinghai');
+  }
+});
+
+test('active 403-blocked synthetic mentor preserves evidence and the precise navigation reason',()=>{
+  const m={name:'测试导师',person_id:null,employment_status:'active_officially_listed',official_url:'https://example.edu.test/profile',source_url:'https://example.edu.test/relationship',profile_source_url:'https://example.edu.test/employment',navigation_verified:false,quick_link_eligible:false,profile_navigation_unavailable_reason:'个人主页访问返回 403，未核实公开导航可用性。'};
+  const html=renderCards({mentors:[m]});
+  assert.equal(mentorOfficialUrl(m),'');
+  assert(!html.includes('查看导师个人主页'));
+  assert(!html.includes('查看本库个人档案'));
+  assert(html.includes('任职状态：active_officially_listed'));
+  assert(html.includes('任职已核实；'+m.profile_navigation_unavailable_reason));
+  assert(html.includes('href="'+m.source_url+'"'));
+  assert(html.includes('href="'+m.profile_source_url+'"'));
+});
+
+test('safe URL and active status remain mandatory even when both flags are true',()=>{
+  const active={employment_status:'active_officially_listed',official_url:'https://example.edu.test/profile',navigation_verified:true,quick_link_eligible:true};
+  assert.equal(mentorOfficialUrl(active),active.official_url);
+  for(const url of [null,'','javascript:alert(1)','data:text/html,test','file:///etc/passwd','https://[invalid','https://exa mple.edu/p','https://example.edu:bad/p','https://user@:443/p'])assert.equal(mentorOfficialUrl({...active,official_url:url}),'');
+  for(const status of ['retired','retired_officially_listed','emeritus_officially_listed','unknown','deceased']){
+    const m={...active,employment_status:status};
+    assert.equal(mentorOfficialUrl(m),'');
+    assert.equal(mentorNavigationNotice(m),'');
+    assert(!renderCards({mentors:[m]}).includes('查看导师个人主页'));
+  }
+  assert.equal(mentorOfficialUrl(null),'');
+  assert.equal(mentorOfficialUrl(undefined),'');
+});
+
+
+test('blank navigation reasons use the verified-employment fallback without hiding evidence links',()=>{
+  const base={...relation('曲歌扬','宋清海'),navigation_verified:false};
+  for(const reason of [undefined,null,'','   ']){
+    const m={...base,profile_navigation_unavailable_reason:reason};
+    assert.equal(mentorNavigationNotice(m),'任职已核实；导师主页访问未核实，暂不提供快捷链接。');
+    const html=renderCards({mentors:[m]});
+    assert(html.includes(mentorNavigationNotice(m)));
+    assert(html.includes('简介与任职依据'));
+    assert(!html.includes('查看导师个人主页'));
+  }
+  // Blocking a shortcut must not erase its independently cited evidence URL.
+  const m={...base,profile_source_url:base.official_url};
+  assert(renderCards({mentors:[m]}).includes(`href="${escapeHtml(safeUrl(m.official_url))}"`));
 });

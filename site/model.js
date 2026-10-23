@@ -22,6 +22,10 @@ export function collaboratorEvent(p,c){if(c.education_event_id)return (p.educati
 // Profile navigation needs a verified active relation and a real stored person.
 export function mentorProfileRoute(mentor,people=[]){const id=mentor?.person_id;if(mentor?.employment_status!=='active_officially_listed'||mentor.quick_link_eligible===false||typeof id!=='string'||!id.trim()||/^(unknown|null|undefined)$/i.test(id.trim())||!Array.isArray(people)||!people.some(p=>p?.person_id===id))return '';try{return '#/person/'+encodeURIComponent(id)}catch{return ''}}
 
+// An explicit navigation veto overrides active employment; absent flags preserve reviewed legacy links.
+export function mentorOfficialUrl(mentor){return mentor?.employment_status==='active_officially_listed'&&mentor.quick_link_eligible!==false&&mentor.navigation_verified!==false?safeUrl(mentor.official_url):''}
+export function mentorNavigationNotice(mentor){if(mentor?.employment_status!=='active_officially_listed'||mentorOfficialUrl(mentor))return '';const reason=mentor.profile_navigation_unavailable_reason;return '任职已核实；'+((typeof reason==='string'?reason.trim():'')||'导师主页访问未核实，暂不提供快捷链接。')}
+
 export function officialProfileUrl(p){return p?.official_profile_availability==='unavailable'||p?.official_profile_navigation_eligible===false?'':navigableProfileUrl(p?.official_url)}
 
 export function versionedPath(path,buildId){return String(path)+(buildId?(String(path).includes('?')?'&':'?')+'v='+encodeURIComponent(buildId):'')}
