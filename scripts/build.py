@@ -100,7 +100,11 @@ def validate(d):
    assert c.get('include_in_mentorship_graph') is False and c.get('include_in_verified_mentor_count') is False,'Independent professional guidance must stay outside main mentor counts and graph'
    assert c.get('include_in_degree_mentorship_graph') is False,'Professional guidance must stay outside degree mentorship'
    assert c.get('include_in_verified_professional_guidance_count') is True,'Verified professional guidance count must be explicit'
-   assert 'education_event_id' in c and c['education_event_id'] is None,'Professional guidance must explicitly have no degree binding'
+   assert 'education_event_id' in c,'Professional guidance must explicitly have no degree binding or a verified non-award research-event binding'
+   assert not c.get('education_event_ids'),'Professional guidance cannot use an ambiguous plural event binding'
+   if c['education_event_id'] is not None:
+    assert professional_guidance_event(p,c),'Professional guidance may bind only a known explicit non-award professional research event'
+    assert not c.get('appointment_event_id'),'Professional guidance cannot bind two event kinds'
    assert isinstance(c.get('name'),str) and c['name'].strip() and valid_url(c.get('source_url')),'Professional guidance requires direct source URL and name'
    if c.get('appointment_event_id') is not None:
     assert isinstance(c['appointment_event_id'],str) and c['appointment_event_id'].strip(),'Professional guidance appointment ID cannot be empty'
@@ -129,6 +133,14 @@ def validate(d):
   for m in p['mentors']:
    assert m.get('type')!='research_project_advisor' and m.get('relationship_kind')!='research_project_advisor','Project guidance must stay separate from mentors'
    assert not m.get('education_event_id') or m['education_event_id'] in event_ids,'Mentor references unknown education event'
+   if 'education_event_ids' in m:
+    refs=m['education_event_ids']
+    assert isinstance(refs,list) and refs and all(isinstance(v,str) and v.strip() for v in refs),'Mentor event IDs must be a nonempty array of nonempty strings'
+    assert len(refs)==len(set(refs)),'Duplicate mentor education event ID'
+    assert all(v in event_ids for v in refs),'Mentor references unknown education events'
+    assert not m.get('education_event_id') or refs==[m['education_event_id']],'Mentor singular and plural event bindings conflict'
+    if len(refs)>1:
+     assert all(isinstance(m.get(k),str) and m[k].strip() for k in ['stage_scope','education_stage']),'Combined mentorship must preserve its explicit stage scope'
    if m.get('relationship_kind')=='professional_research_advisor':
     # Preserve reviewed legacy non-award event bindings, never invent one for the new independent collection.
     event=next((e for e in p['education'] if m.get('education_event_id') and e.get('event_id')==m['education_event_id']),None)
@@ -172,6 +184,28 @@ def profile_availability_label(person):
  status='个人主页当前不可用' if person.get('official_profile_availability')=='unavailable' or person.get('official_profile_navigation_eligible') is False else '公开个人页（时效以核对日为准）'
  return '；'.join(v for v in [person.get('official_profile_link_label'),status] if v)
 
+def professional_guidance_event(person,guidance):
+ event_id=guidance.get('education_event_id')
+ if not isinstance(event_id,str) or not event_id.strip():return {}
+ events=[e for e in person.get('education',[]) if e.get('event_id')==event_id]
+ return events[0] if len(events)==1 and events[0].get('event_kind')=='professional_research' and events[0].get('degree_awarded') is False else {}
+
+def combined_mentor_note(mentor):
+ if not isinstance(mentor.get('education_event_ids'),list):return ''
+ return '；'.join(str(v) for v in [
+  '合述仅计一条关系，不拆分阶段导师认定' if len(mentor['education_event_ids'])>1 else '明确事件绑定',
+  mentor.get('stage_scope'),mentor.get('relationship_scope'),mentor.get('scope_label'),
+  '关联经历ID：'+json.dumps(mentor['education_event_ids'],ensure_ascii=False),
+  ('关系明确机构：'+str(mentor['institution'])) if mentor.get('institution') else '合述机构未单独披露',
+  '指导起止：'+str(mentor.get('start') or '起始时间未披露')+' 至 '+str(mentor.get('end') or '结束时间未披露'),
+  mentor.get('note'),mentor.get('evidence_note')
+ ] if v)
+
+def professional_event_note(person,guidance):
+ event=professional_guidance_event(person,guidance)
+ if not event:return ''
+ return '对应非学位科研经历：'+str(event['event_id'])+'；'+str(event.get('institution') or '机构未披露')+'；'+str(event.get('start') or '起始时间未披露')+' 至 '+str(event.get('end') or '结束时间未披露')+'（经历区间，不等于指导起止；非博士后认定）'
+
 def department_tables(people,updated_at,institutions=None):
  schools={p.get("school_id") for p in people}
  assert len(schools)<=1 and None not in schools, "Department export cannot mix schools or omit school IDs"
@@ -204,9 +238,9 @@ def department_tables(people,updated_at,institutions=None):
  mentor_fields=['name','type','education_stage','description','employment_status','employment_status_note','official_url','source_url','profile_source_url']
  rows=[['姓名','导师姓名','关系类型','阶段','简介','在职状态','状态说明','已核在职主页','关系来源','任职来源']]
  for p in people:
-  mentors=[dict(m,type=m.get('type_label') or m.get('type'),official_url=mentor_official_url(m),employment_status_note='；'.join(v for v in [m.get('employment_status_note'),mentor_navigation_notice(m)] if v) if mentor_navigation_notice(m) else m.get('employment_status_note')) for m in p['mentors']]+[dict(c,type=c.get('label','博士指导委员会成员（非师承）'),official_url='') for c in p.get('committee_members',[])]
+  mentors=[dict(m,type=m.get('type_label') or m.get('type'),official_url=mentor_official_url(m),employment_status_note='；'.join(v for v in [m.get('employment_status_note'),mentor_navigation_notice(m),combined_mentor_note(m)] if v) if mentor_navigation_notice(m) or combined_mentor_note(m) else m.get('employment_status_note')) for m in p['mentors']]+[dict(c,type=c.get('label','博士指导委员会成员（非师承）'),official_url='') for c in p.get('committee_members',[])]
   # Independent occupational guidance is preserved, not silently converted to a degree mentor.
-  mentors += [dict(c,type='职业科研指导（非学位）',education_stage=c.get('education_stage') or '职业科研阶段（非学历绑定）',official_url=mentor_official_url(c),employment_status_note='；'.join(str(v) for v in [c.get('type_label'),c.get('type'),c.get('relationship_kind'),('机构：'+str(c['institution'])) if c.get('institution') else None,('指导起止：'+str(c.get('start') or '未披露')+' 至 '+str(c.get('end') or '未披露')) if c.get('start') or c.get('end') else None,c.get('employment_status_note'),c.get('relationship_scope'),c.get('note'),c.get('evidence_note'),c.get('scope_label'),mentor_navigation_notice(c),'独立职业指导，不计入学位师承图；已核职业指导计数：'+('1' if c.get('include_in_verified_professional_guidance_count') is True else '0')] if v)) for c in p.get('professional_research_advisors',[])]
+  mentors += [dict(c,type='职业科研指导（非学位）',education_stage=c.get('education_stage') or '职业科研阶段（非学历绑定）',official_url=mentor_official_url(c),employment_status_note='；'.join(str(v) for v in [c.get('type_label'),c.get('type'),c.get('relationship_kind'),('机构：'+str(c['institution'])) if c.get('institution') else None,('指导起止：'+str(c.get('start') or '起始时间未披露')+' 至 '+str(c.get('end') or '结束时间未披露')) if c.get('start') or c.get('end') or professional_guidance_event(p,c) else None,professional_event_note(p,c),c.get('employment_status_note'),c.get('relationship_scope'),c.get('note'),c.get('evidence_note'),c.get('scope_label'),mentor_navigation_notice(c),'独立职业指导，不计入学位师承图；已核职业指导计数：'+('1' if c.get('include_in_verified_professional_guidance_count') is True else '0')] if v)) for c in p.get('professional_research_advisors',[])]
   rows.extend([[p['name'],*[m.get(k) for k in mentor_fields]] for m in mentors])
  tables.append(('导师',rows))
  for label,key,fields,headers in [('论文','publications',['title','year','doi','url','type','source_url','identity_evidence','link_status','note'],['标题','年份','DOI','链接','类型','收录来源','作者归属依据','链接核验范围','备注']),('来源','sources',['id','url','evidence_status','retrieved_at'],['来源ID','链接','核验方式','查阅日期'])]:

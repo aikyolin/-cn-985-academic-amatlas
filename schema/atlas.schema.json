@@ -124,7 +124,82 @@
             }
           },
           "mentors": {
-            "type": "array"
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "education_event_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "education_event_ids": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "description": "一条来源关系可关联多个明确事件，不拆成独立阶段导师关系。"
+                },
+                "stage_scope": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "education_stage": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "start": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "end": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "required": [
+                      "education_event_ids"
+                    ],
+                    "properties": {
+                      "education_event_ids": {
+                        "type": "array",
+                        "minItems": 2
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "stage_scope",
+                      "education_stage"
+                    ],
+                    "properties": {
+                      "education_stage": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
           },
           "committee_members": {
             "type": "array"
@@ -149,7 +224,7 @@
           },
           "professional_research_advisors": {
             "type": "array",
-            "description": "已直接核实的职业科研指导，独立于普通合作及学位师承，不借用空教育事件。",
+            "description": "已直接核实的职业科研指导，独立于普通合作及学位师承；允许无事件绑定，或明确绑定非授位职业科研事件。",
             "items": {
               "type": "object",
               "required": [
@@ -176,7 +251,13 @@
                   "const": "verified_direct_statement"
                 },
                 "education_event_id": {
-                  "type": "null"
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1,
+                  "pattern": "\\S",
+                  "description": "null不关联任何经历；非空ID必须闭合至本人的professional_research且degree_awarded严格为false，不推断博士后。"
                 },
                 "appointment_event_id": {
                   "type": [

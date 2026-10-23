@@ -6,7 +6,28 @@ export const provisionalDegree=e=>String(e.field_status?.degree||'').startsWith(
 const EVENT_LABELS={visiting_postdoctoral_research:'访问博士后研究',professional_research:'职业科研（非学历、非博士后）',postdoctoral_exchange:'博士后交流',study_level_unconfirmed:'学习经历（层次未核实）',visiting_doctoral_student:'博士阶段访问',training:'培训经历',language_study:'语言学习',doctoral_study:'博士阶段学习（授位未核实）',visiting_doctoral_research:'博士阶段访问研究',visiting_research:'访问研究',academic_exchange_or_training:'学术交流或进修',postdoctoral:'博士后研究',postdoctoral_research:'博士后研究',visiting_fellow:'访问研究员',visiting_researcher:'访问研究员',visiting_scholar:'访问学者',visiting_student:'访问学生',visiting_phd_student:'博士阶段访问',visiting_professor:'访问教授',joint_training:'联合培养',visiting_study:'访问学习',overseas_study:'海外学习',professional_training:'专业培训',non_degree_training:'非学位培训',degree_study:'学习经历（学位层次未披露）',study_level_not_disclosed:'学习经历（层次未披露）',study_stage_unspecified:'学习经历（阶段未披露）'};
 export const educationStageLabel=e=>String(e.degree||EVENT_LABELS[e.event_kind]||'研究经历')+(provisionalDegree(e)?'（层次暂对应，未核实）':'');
 export function stages(p,type){return (p.education||[]).filter(e=>e.event_kind==='degree'&&e.degree_awarded===true&&!provisionalDegree(e)&&degreeType(e.degree)===type)}
-export function mentorEvent(p,m){if(m.education_event_id)return (p.education||[]).find(e=>e.event_id===m.education_event_id)||{};const stage=String(m.education_stage||'');if(!stage||/未细分/.test(stage))return {};const events=/博士后/.test(stage)?(p.appointments||[]).filter(e=>/博士后/.test(e.title||'')):(p.education||[]).filter(e=>e.degree&&(String(e.degree).includes(stage)||stage.includes(String(e.degree))));return events.length===1?events[0]:{}}
+// A combined source statement remains one relationship, never one edge per event.
+export function mentorEvents(p,m){
+ if(Object.hasOwn(m,'education_event_ids')){
+  const ids=m.education_event_ids;
+  if(!Array.isArray(ids)||!ids.length||ids.some(id=>typeof id!=='string'||!id.trim())||new Set(ids).size!==ids.length)return [];
+  if(m.education_event_id&&(ids.length!==1||ids[0]!==m.education_event_id))return [];
+  const matches=ids.map(id=>(p.education||[]).filter(e=>e.event_id===id));
+  return matches.every(rows=>rows.length===1)?matches.map(rows=>rows[0]):[];
+ }
+ if(m.education_event_id){const e=(p.education||[]).find(e=>e.event_id===m.education_event_id);return e?[e]:[]}
+ const stage=String(m.education_stage||'');if(!stage||/未细分/.test(stage))return [];
+ const events=/博士后/.test(stage)?(p.appointments||[]).filter(e=>/博士后/.test(e.title||'')):(p.education||[]).filter(e=>e.degree&&(String(e.degree).includes(stage)||stage.includes(String(e.degree))));
+ return events.length===1?events:[];
+}
+// Legacy single-event callers must not silently select the first combined stage.
+// The optional all flag lets the graph retain its existing injected helper contract.
+export function mentorEvent(p,m,all=false){const events=mentorEvents(p,m);return all?events:events.length===1?events[0]:{}}
+export function professionalGuidanceEvent(p,c){
+ if(typeof c.education_event_id!=='string'||!c.education_event_id.trim())return {};
+ const events=(p.education||[]).filter(e=>e.event_id===c.education_event_id);
+ return events.length===1&&events[0].event_kind==='professional_research'&&events[0].degree_awarded===false?events[0]:{};
+}
 export function matchEducation(p,type,key,value){if(!value)return true;const rows=stages(p,type);if(value==='not_recorded')return rows.length===0;return rows.some(e=>(e[key]||'unknown')===value)}
 export function orgContains(units,ancestor,leaf){const seen=new Set();let id=leaf;while(id&&!seen.has(id)){if(id===ancestor)return true;seen.add(id);const current=units.find(u=>u.id===id),parent=units.find(u=>u.id===current?.parent_id);if(current?.school_id&&parent?.school_id&&current.school_id!==parent.school_id)return false;id=current?.parent_id}return false}
 export function matches(p,f,orgUnits=[]){if(f.school&&p.school_id!==f.school)return false;if(f.campus&&!(p.campus_ids||[]).includes(f.campus))return false;if(f.org){const org=orgUnits.find(o=>o.id===f.org);if(!org||(org.school_id&&org.school_id!==p.school_id)||!orgContains(orgUnits,f.org,p.department_id))return false;}if(f.q){const hay=[p.name,p.department,p.research_interests,...(p.education||[]).map(e=>e.institution)].join(' ').toLowerCase();if(!hay.includes(f.q.toLowerCase().trim()))return false}return matchEducation(p,'bachelor','institution_985',f.ug)&&matchStageFilters(p,'master',f.master,f.master_continent)&&matchStageFilters(p,'doctor',f.doctor,f.continent)}

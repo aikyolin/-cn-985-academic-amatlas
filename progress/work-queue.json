@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T16:50:00Z",
-  "base_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4",
+  "updated_at": "2026-10-23T17:20:00Z",
+  "base_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
     "registry_complete": false,
-    "known_organization_nodes": 140,
+    "known_organization_nodes": 145,
     "write_model": "single_controller_expected_sha",
     "active_institutions": [
       "hit",
@@ -4936,6 +4936,330 @@
       "next_cursor": "selected_3_reviewed",
       "attempted_at": "2026-10-23T16:50:00Z",
       "last_verified_commit": "28cb033687fe25b3aa36517e205fd8e03bf2f4a4"
+    },
+    {
+      "task_id": "hust:hust-cs-storage:followup-wave1",
+      "institution_id": "hust",
+      "organization_id": "hust-cs-storage",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "nudt:nudt-aerospace:followup-wave1",
+      "institution_id": "nudt",
+      "organization_id": "nudt-aerospace",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.nudt.edu.cn/yssz/ktkxxy/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "nudt:nudt-electronics:followup-wave1",
+      "institution_id": "nudt",
+      "organization_id": "nudt-electronics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://yjszs.nudt.edu.cn/attached/file/20251113/20251113124208_690.pdf"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "nwpu:nwpu-cs-computer-science-software:followup-wave1",
+      "institution_id": "nwpu",
+      "organization_id": "nwpu-cs-computer-science-software",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://jsj.nwpu.edu.cn/snew/szdwlist.jsp?urltype=tree.TreeTempUrl&wbtreeid=1519"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "ouc:ouc-ise-cs:followup-wave1",
+      "institution_id": "ouc",
+      "organization_id": "ouc-ise-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://it.ouc.edu.cn/21691/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "ruc:ruc-gsai:followup-wave1",
+      "institution_id": "ruc",
+      "organization_id": "ruc-gsai",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://ai.ruc.edu.cn/szdw/zrjs/"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "scu:scu-cs:followup-wave1",
+      "institution_id": "scu",
+      "organization_id": "scu-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://faculty.scu.edu.cn/xyjs.jsp?id=1035&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1012"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "seu:seu-computing-joint-roster:followup-wave1",
+      "institution_id": "seu",
+      "organization_id": "seu-computing-joint-roster",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cse.seu.edu.cn/49427/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "seu:seu-cs:followup-wave1",
+      "institution_id": "seu",
+      "organization_id": "seu-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cse.seu.edu.cn/49427/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "sysu:sysu-math:followup-wave1",
+      "institution_id": "sysu",
+      "organization_id": "sysu-math",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.sysu.edu.cn/info/2011/33732.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "sysu:sysu-math-department:followup-wave1",
+      "institution_id": "sysu",
+      "organization_id": "sysu-math-department",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.sysu.edu.cn/node/440"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "whu:whu-eis:followup-wave1",
+      "institution_id": "whu",
+      "organization_id": "whu-eis",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "九校补强与轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://jszy.whu.edu.cn/xyjslb.jsp?PAGENUM=1&id=2013&lang=zh_CN&st=0&totalpage=4&urltype=tsites.CollegeTeacherList&wbtreeid=1006"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-followup-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "followup_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:20:00Z",
+      "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "39校公开名录样本，1562条整合记录、1600条原始来源观察。原20校1502条记录与1540条观察完整保留，本轮19校各新增原序首3及国防科大、四川、中山各1补强选中观察。非全校/全院完成、唯一人数或实时在岗人数。中山与华科部分资料仅索引；国防科技大学原3为2027招生指导名录、四川原3为稀疏头部；这两校及中山各1补强另列且不升级原pending；东南联合目录不是三学院同时隶属证据。类别按唯一组织分类计算，来源读取等级、查询排序与限制按批次保留。",
+  "scope": "39校公开名录样本，1589条整合记录、1627条原始来源观察。原1562条记录与1600条观察保持，本轮9已审延续/轮转批次27条选中观察；非全校/全院完成、唯一人数或实时在岗人数。分类按唯一组织类别而非批次累加，旧144条coverage全部保留。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -807,6 +807,90 @@
       "school_id": "sysu",
       "organization_id": "sysu-mathzh",
       "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "scu",
+      "organization_id": "scu-cs",
+      "visible_roster_entries": 4,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "nudt",
+      "organization_id": "nudt-aerospace",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "nudt",
+      "organization_id": "nudt-electronics",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "seu",
+      "organization_id": "seu-computing-joint-roster",
+      "visible_roster_entries": 2,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "seu",
+      "organization_id": "seu-cs",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "sysu",
+      "organization_id": "sysu-math",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "sysu",
+      "organization_id": "sysu-math-department",
+      "visible_roster_entries": 2,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "hust",
+      "organization_id": "hust-cs-storage",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "ouc",
+      "organization_id": "ouc-ise-cs",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "nwpu",
+      "organization_id": "nwpu-cs-computer-science-software",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "ruc",
+      "organization_id": "ruc-gsai",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "whu",
+      "organization_id": "whu-eis",
+      "visible_roster_entries": 3,
       "count_scope": "selected_subset_only",
       "coverage_complete": false
     }
@@ -3273,6 +3357,222 @@
       "pagination": "not_established_for_this_selected_subset",
       "accessed_on": "2026-10-23",
       "batch_id": "sysu-selected-roster-supplement-001"
+    },
+    {
+      "school_id": "scu",
+      "organization_id": "scu-cs",
+      "url": "https://faculty.scu.edu.cn/xyjs.jsp?id=1035&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1012",
+      "category": "计算机学院教师门户（含退休工程技术人员）",
+      "visible_name_count": 4,
+      "selected_observation_count": 4,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。",
+      "selection_basis": "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "scu-selected-roster-supplement-002"
+    },
+    {
+      "school_id": "nudt",
+      "organization_id": "nudt-electronics",
+      "url": "https://www.nudt.edu.cn/szdw/",
+      "category": "中国科学院院士",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "承接校级师资页科学院院士类首位胡德文，原序第2黎湘、第3李东旭（2019行左侧先于王怀民）。仅公开职业教育事实；非全院、非全校、非全部论文。",
+      "selection_basis": "承接校级师资页科学院院士类首位胡德文，原序第2黎湘、第3李东旭（2019行左侧先于王怀民）。仅公开职业教育事实；非全院、非全校、非全部论文。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "nudt-selected-roster-supplement-002"
+    },
+    {
+      "school_id": "nudt",
+      "organization_id": "nudt-aerospace",
+      "url": "https://www.nudt.edu.cn/szdw/",
+      "category": "中国科学院院士",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "承接校级师资页科学院院士类首位胡德文，原序第2黎湘、第3李东旭（2019行左侧先于王怀民）。仅公开职业教育事实；非全院、非全校、非全部论文。",
+      "selection_basis": "承接校级师资页科学院院士类首位胡德文，原序第2黎湘、第3李东旭（2019行左侧先于王怀民）。仅公开职业教育事实；非全院、非全校、非全部论文。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "nudt-selected-roster-supplement-002"
+    },
+    {
+      "school_id": "seu",
+      "organization_id": "seu-cs",
+      "url": "https://cse.seu.edu.cn/szdw_48203/list.htm",
+      "category": "三学院联合师资目录（非共同隶属认定）",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。",
+      "selection_basis": "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "seu-selected-roster-supplement-001"
+    },
+    {
+      "school_id": "seu",
+      "organization_id": "seu-computing-joint-roster",
+      "url": "https://cse.seu.edu.cn/szdw_48203/list.htm",
+      "category": "三学院联合师资目录（非共同隶属认定）",
+      "visible_name_count": 2,
+      "selected_observation_count": 2,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。",
+      "selection_basis": "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "seu-selected-roster-supplement-001"
+    },
+    {
+      "school_id": "sysu",
+      "organization_id": "sysu-math",
+      "url": "https://math.sysu.edu.cn/professors",
+      "category": "数学学院教授（官方搜索索引）",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。",
+      "selection_basis": "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。",
+      "source_evidence_status": "official_search_index_only_direct_403",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "sysu-selected-roster-supplement-002"
+    },
+    {
+      "school_id": "sysu",
+      "organization_id": "sysu-math-department",
+      "url": "https://math.sysu.edu.cn/professors",
+      "category": "数学学院教授（官方搜索索引）",
+      "visible_name_count": 2,
+      "selected_observation_count": 2,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。",
+      "selection_basis": "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。",
+      "source_evidence_status": "official_search_index_only_direct_403",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "sysu-selected-roster-supplement-002"
+    },
+    {
+      "school_id": "hust",
+      "organization_id": "hust-cs-storage",
+      "url": "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm",
+      "category": "存储所",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "存储研究所名录第4–6陈加忠、周游、刘渝；前两官方英文正文，刘渝本人页及同一官方主页链接身份互证。",
+      "selection_basis": "存储研究所名录第4–6陈加忠、周游、刘渝；前两官方英文正文，刘渝本人页及同一官方主页链接身份互证。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "hust-selected-roster-supplement-001"
+    },
+    {
+      "school_id": "ouc",
+      "organization_id": "ouc-ise-cs",
+      "url": "https://it.ouc.edu.cn/21691/list.htm",
+      "category": "计算机科学与技术学院（公开查询原序）",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "同一公开目录查询原序第4–6陈欣、曹景超、陈姝祯，3份部分正文档案。",
+      "selection_basis": "同一公开目录查询原序第4–6陈欣、曹景超、陈姝祯，3份部分正文档案。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "ouc-selected-roster-supplement-001"
+    },
+    {
+      "school_id": "nwpu",
+      "organization_id": "nwpu-cs-computer-science-software",
+      "url": "https://jsj.nwpu.edu.cn/snew/szdwlist.jsp?urltype=tree.TreeTempUrl&wbtreeid=1519",
+      "category": "计算机科学与软件系",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "名录第4–6刘曌雯、彭佳杰、尚学群，3份部分职业资料；不称学历与师承完整。",
+      "selection_basis": "名录第4–6刘曌雯、彭佳杰、尚学群，3份部分职业资料；不称学历与师承完整。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "nwpu-selected-roster-supplement-001"
+    },
+    {
+      "school_id": "ruc",
+      "organization_id": "ruc-gsai",
+      "url": "https://ai.ruc.edu.cn/szdw/zrjs/",
+      "category": "专任教师（按来校时间排序）",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "高瓴人工智能学院专任教师官方明示按来校时间排序首3文继荣、卢志武、赵鑫。",
+      "selection_basis": "高瓴人工智能学院专任教师官方明示按来校时间排序首3文继荣、卢志武、赵鑫。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "ruc-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "whu",
+      "organization_id": "whu-eis",
+      "url": "https://jszy.whu.edu.cn/xyjslb.jsp?PAGENUM=1&id=2013&lang=zh_CN&st=0&totalpage=4&urltype=tsites.CollegeTeacherList&wbtreeid=1006",
+      "category": "电子信息学院教师",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "中央教师门户电子信息学院教师名录第一页原序第4–6位：陈淑珍、代永红、何平安。",
+      "selection_basis": "中央教师门户电子信息学院教师名录第一页原序第4–6位：陈淑珍、代永红、何平安。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "whu-selected-roster-supplement-001"
     }
   ],
   "entries": [
@@ -52595,6 +52895,1354 @@
       "automatic_merge": false,
       "candidate_person_ids": [],
       "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-scu-cs-chenjie",
+      "name": "陈杰",
+      "school_id": "scu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "scu-cs",
+      "department_id": "scu-cs",
+      "category": "计算机学院教师门户（含退休工程技术人员）",
+      "listed_role": "副教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://faculty.scu.edu.cn/chenjie/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.scu.edu.cn/xyjs.jsp?id=1035&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1012",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "scu-chenjie",
+      "batch_id": "scu-selected-roster-supplement-002",
+      "source_batch_id": "faculty-batch-scu-supplement-002",
+      "source_ids": [
+        "chenjie-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://faculty.scu.edu.cn/xyjs.jsp?id=1035&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1012"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。"
+      ],
+      "source_observation_ids": [
+        "scu-selected-roster-supplement-002:roster-scu-cs-chenjie:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-scu-cs-chenkaimin",
+      "name": "陈楷民",
+      "school_id": "scu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "scu-cs",
+      "department_id": "scu-cs",
+      "category": "计算机学院教师门户（含退休工程技术人员）",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://faculty.scu.edu.cn/chenkaimin/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.scu.edu.cn/xyjs.jsp?id=1035&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1012",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "scu-chenkaimin",
+      "batch_id": "scu-selected-roster-supplement-002",
+      "source_batch_id": "faculty-batch-scu-supplement-002",
+      "source_ids": [
+        "chenkaimin-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://faculty.scu.edu.cn/xyjs.jsp?id=1035&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1012"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。"
+      ],
+      "source_observation_ids": [
+        "scu-selected-roster-supplement-002:roster-scu-cs-chenkaimin:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-scu-cs-chenli12",
+      "name": "陈黎",
+      "school_id": "scu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "scu-cs",
+      "department_id": "scu-cs",
+      "category": "计算机学院教师门户（含退休工程技术人员）",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://faculty.scu.edu.cn/chenli12/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.scu.edu.cn/xyjs.jsp?id=1035&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1012",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "scu-chenli12",
+      "batch_id": "scu-selected-roster-supplement-002",
+      "source_batch_id": "faculty-batch-scu-supplement-002",
+      "source_ids": [
+        "chenli12-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://faculty.scu.edu.cn/xyjs.jsp?id=1035&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1012"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。"
+      ],
+      "source_observation_ids": [
+        "scu-selected-roster-supplement-002:roster-scu-cs-chenli12:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "scu-chenli12"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-scu-cs-chenliangyin",
+      "name": "陈良银",
+      "school_id": "scu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "scu-cs",
+      "department_id": "scu-cs",
+      "category": "计算机学院教师门户（含退休工程技术人员）",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://faculty.scu.edu.cn/chenliangyin/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.scu.edu.cn/xyjs.jsp?id=1035&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1012",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "scu-chenliangyin",
+      "batch_id": "scu-selected-roster-supplement-002",
+      "source_batch_id": "faculty-batch-scu-supplement-002",
+      "source_ids": [
+        "chenliangyin-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://faculty.scu.edu.cn/xyjs.jsp?id=1035&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1012"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。"
+      ],
+      "source_observation_ids": [
+        "scu-selected-roster-supplement-002:roster-scu-cs-chenliangyin:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "scu-chenliangyin"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-nudt-academicians-lixiang",
+      "name": "黎湘",
+      "school_id": "nudt",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nudt-electronics",
+      "department_id": "nudt-electronics",
+      "category": "中国科学院院士",
+      "listed_role": "中国科学院院士",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": null,
+      "roster_source_url": "https://www.nudt.edu.cn/szdw/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_selected_roster_and_independent_identity_evidence_no_direct_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "nudt-lixiang",
+      "batch_id": "nudt-selected-roster-supplement-002",
+      "source_batch_id": "faculty-batch-nudt-supplement-002",
+      "source_ids": [
+        "lixiang-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "承接校级师资页科学院院士类首位胡德文，原序第2黎湘、第3李东旭（2019行左侧先于王怀民）。仅公开职业教育事实；非全院、非全校、非全部论文。",
+      "source_identity_evidence": {
+        "status": "university_faculty_roster_and_official_academy_biography_cross_reference",
+        "source_url": "https://www.nudt.edu.cn/szdw/",
+        "profile_source_url": "https://casad.cas.cn/ysxx2022/ysmd/xxjs/202201/t20220111_4821786.html"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "承接校级师资页科学院院士类首位胡德文，原序第2黎湘、第3李东旭（2019行左侧先于王怀民）。仅公开职业教育事实；非全院、非全校、非全部论文。"
+      ],
+      "profile_candidate_url": null,
+      "professional_evidence_url": "https://www.nudt.edu.cn/szdw/",
+      "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
+      "official_profile_availability_label": "中国科学院官方院士简介（非学校个人主页）",
+      "official_profile_link_label": "中国科学院官方院士简介",
+      "official_url_kind": "official_academy_biography_not_home_university_personal_page",
+      "source_observation_ids": [
+        "nudt-selected-roster-supplement-002:roster-nudt-academicians-lixiang:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-nudt-academicians-lidongxu",
+      "name": "李东旭",
+      "school_id": "nudt",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nudt-aerospace",
+      "department_id": "nudt-aerospace",
+      "category": "中国科学院院士",
+      "listed_role": "中国科学院院士",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": null,
+      "roster_source_url": "https://www.nudt.edu.cn/szdw/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_selected_roster_and_independent_identity_evidence_no_direct_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "nudt-lidongxu",
+      "batch_id": "nudt-selected-roster-supplement-002",
+      "source_batch_id": "faculty-batch-nudt-supplement-002",
+      "source_ids": [
+        "lidongxu-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "承接校级师资页科学院院士类首位胡德文，原序第2黎湘、第3李东旭（2019行左侧先于王怀民）。仅公开职业教育事实；非全院、非全校、非全部论文。",
+      "source_identity_evidence": {
+        "status": "university_faculty_roster_and_official_academy_biography_cross_reference",
+        "source_url": "https://www.nudt.edu.cn/szdw/",
+        "profile_source_url": "https://casad.cas.cn/ysxx2022/ysmd/jskx/201911/t20191121_4724704.html"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "承接校级师资页科学院院士类首位胡德文，原序第2黎湘、第3李东旭（2019行左侧先于王怀民）。仅公开职业教育事实；非全院、非全校、非全部论文。"
+      ],
+      "profile_candidate_url": null,
+      "professional_evidence_url": "https://www.nudt.edu.cn/szdw/",
+      "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
+      "official_profile_availability_label": "中国科学院官方院士简介（非学校个人主页）",
+      "official_profile_link_label": "中国科学院官方院士简介",
+      "official_url_kind": "official_academy_biography_not_home_university_personal_page",
+      "source_observation_ids": [
+        "nudt-selected-roster-supplement-002:roster-nudt-academicians-lidongxu:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-seu-computing-bairufan",
+      "name": "白如帆",
+      "school_id": "seu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "seu-cs",
+      "department_id": "seu-cs",
+      "category": "三学院联合师资目录（非共同隶属认定）",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://cse.seu.edu.cn/2024/0117/c48203a479350/page.htm",
+      "roster_source_url": "https://cse.seu.edu.cn/szdw_48203/list.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "seu-bairufan",
+      "batch_id": "seu-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-seu-supplement-001",
+      "source_ids": [
+        "bairufan-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cse.seu.edu.cn/szdw_48203/list.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。"
+      ],
+      "source_observation_ids": [
+        "seu-selected-roster-supplement-001:roster-seu-computing-bairufan:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "seu-bairufan"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-seu-computing-chau-vincent",
+      "name": "Chau Vincent",
+      "school_id": "seu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "seu-computing-joint-roster",
+      "department_id": "seu-computing-joint-roster",
+      "category": "三学院联合师资目录（非共同隶属认定）",
+      "listed_role": "师资名录成员",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://cse.seu.edu.cn/2024/0117/c48203a479215/page.htm",
+      "roster_source_url": "https://cse.seu.edu.cn/szdw_48203/list.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "seu-chau-vincent",
+      "batch_id": "seu-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-seu-supplement-001",
+      "source_ids": [
+        "chau-vincent-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cse.seu.edu.cn/szdw_48203/list.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。"
+      ],
+      "academic_department_id": null,
+      "academic_department": null,
+      "academic_department_assignment_status": "unknown",
+      "navigation_organization_kind": "joint_school_directory",
+      "navigation_scope_label": "联合师资目录，仅作导航；具体学院归属未知，不代表三个学院共同隶属。",
+      "source_observation_ids": [
+        "seu-selected-roster-supplement-001:roster-seu-computing-chau-vincent:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-seu-computing-chongzhihong",
+      "name": "崇志宏",
+      "school_id": "seu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "seu-computing-joint-roster",
+      "department_id": "seu-computing-joint-roster",
+      "category": "三学院联合师资目录（非共同隶属认定）",
+      "listed_role": "副教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://cse.seu.edu.cn/2024/0117/c48203a479431/page.htm",
+      "roster_source_url": "https://cse.seu.edu.cn/szdw_48203/list.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "seu-chongzhihong",
+      "batch_id": "seu-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-seu-supplement-001",
+      "source_ids": [
+        "chongzhihong-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cse.seu.edu.cn/szdw_48203/list.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。"
+      ],
+      "academic_department_id": null,
+      "academic_department": null,
+      "academic_department_assignment_status": "unknown",
+      "navigation_organization_kind": "joint_school_directory",
+      "navigation_scope_label": "联合师资目录，仅作导航；具体学院归属未知，不代表三个学院共同隶属。",
+      "source_observation_ids": [
+        "seu-selected-roster-supplement-001:roster-seu-computing-chongzhihong:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "seu-chongzhihong"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-sysu-math-chailihui",
+      "name": "柴利慧",
+      "school_id": "sysu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "sysu-math",
+      "department_id": "sysu-math",
+      "category": "数学学院教授（官方搜索索引）",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": null,
+      "roster_source_url": "https://math.sysu.edu.cn/professors",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_index_only_no_direct_profile_link_verified",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "sysu-chailihui",
+      "batch_id": "sysu-selected-roster-supplement-002",
+      "source_batch_id": "faculty-batch-sysu-supplement-002",
+      "source_ids": [
+        "chailihui-roster"
+      ],
+      "source_evidence_status": "official_search_index_only_direct_403",
+      "source_evidence_status_label": "仅官方搜索索引，原页403未绕过，正文未核。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_index_plus_university_news_and_external_official_biography_crossmatched",
+        "source_url": "https://math.sysu.edu.cn/professors",
+        "profile_url": "https://math.sysu.edu.cn/teacher/2769",
+        "direct_sources": [
+          "https://www.sysu.edu.cn/info/2011/33732.htm",
+          "https://web.math.ucsb.edu/~chailh/cv_LihuiChai.pdf",
+          "https://rcm.uic.edu.cn/virtual_attach_file.vsb?afc=LL4NMYLmL4oz6fnoN-PM7rfU8L8U47u4U8-aLm6RLm-8ozv0gihFp2hmCIa0MkhVMYh2UYyYL7L8MNM2UzLPoRN8Uz6RLR6kLmQkL8n2olnFLllsoz74LNrFMmCsMNUJv2nto4OeosWmpShXptQ0g47aLzl0Lzl8L1bw62U8c&e=.pdf&nid=1542&tid=1015"
+        ],
+        "note": "姓名、清华数学学位年、UCSB经历与中大数学学院归属相互对应。未合并空间物理领域同名Lihui Chai（柴立晖）。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。"
+      ],
+      "profile_candidate_url": "https://math.sysu.edu.cn/teacher/2769",
+      "professional_evidence_url": "https://math.sysu.edu.cn/professors",
+      "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "alternative_professional_sources": [
+        {
+          "source_id": "chailihui-news",
+          "url": "https://www.sysu.edu.cn/info/2011/33732.htm",
+          "title": "学校官方历史团队报道（非本轮在岗证明）"
+        },
+        {
+          "source_id": "chailihui-uic",
+          "url": "https://rcm.uic.edu.cn/virtual_attach_file.vsb?afc=LL4NMYLmL4oz6fnoN-PM7rfU8L8U47u4U8-aLm6RLm-8ozv0gihFp2hmCIa0MkhVMYh2UYyYL7L8MNM2UzLPoRN8Uz6RLR6kLmQkL8n2olnFLllsoz74LNrFMmCsMNUJv2nto4OeosWmpShXptQ0g47aLzl0Lzl8L1bw62U8c&e=.pdf&nid=1542&tid=1015",
+          "title": "外校官方历史会议简介（非本轮在岗证明）"
+        }
+      ],
+      "source_observation_ids": [
+        "sysu-selected-roster-supplement-002:roster-sysu-math-chailihui:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-sysu-math-chenpeng",
+      "name": "陈鹏",
+      "school_id": "sysu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "sysu-math-department",
+      "department_id": "sysu-math-department",
+      "category": "数学学院教授（官方搜索索引）",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": null,
+      "roster_source_url": "https://math.sysu.edu.cn/professors",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_index_only_no_direct_profile_link_verified",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "sysu-chenpeng",
+      "batch_id": "sysu-selected-roster-supplement-002",
+      "source_batch_id": "faculty-batch-sysu-supplement-002",
+      "source_ids": [
+        "chenpeng-roster"
+      ],
+      "source_evidence_status": "official_search_index_only_direct_403",
+      "source_evidence_status_label": "仅官方搜索索引，原页403未绕过，正文未核。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_index_plus_home_university_news_and_external_official_biography_crossmatched",
+        "source_url": "https://math.sysu.edu.cn/professors",
+        "profile_url": "https://math.sysu.edu.cn/node/440",
+        "direct_sources": [
+          "https://www.sysu.edu.cn/info/2011/33732.htm",
+          "https://math.bnu.edu.cn/xzbg/ztbg/3f4227ac637a4296a44aacade7e75e6a.htm"
+        ],
+        "note": "中大数学学院、教授、调和分析与官方索引一致；新闻正文图片说明明确陈鹏教授。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。"
+      ],
+      "profile_candidate_url": "https://math.sysu.edu.cn/node/440",
+      "professional_evidence_url": "https://math.sysu.edu.cn/professors",
+      "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "alternative_professional_sources": [
+        {
+          "source_id": "chenpeng-news",
+          "url": "https://www.sysu.edu.cn/info/2011/33732.htm",
+          "title": "学校官方历史团队报道（非本轮在岗证明）"
+        },
+        {
+          "source_id": "chenpeng-bnu",
+          "url": "https://math.bnu.edu.cn/xzbg/ztbg/3f4227ac637a4296a44aacade7e75e6a.htm",
+          "title": "北京师范大学官方讲者简介（非本轮在岗证明）"
+        }
+      ],
+      "source_observation_ids": [
+        "sysu-selected-roster-supplement-002:roster-sysu-math-chenpeng:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-sysu-math-chenbinglong",
+      "name": "陈兵龙",
+      "school_id": "sysu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "sysu-math-department",
+      "department_id": "sysu-math-department",
+      "category": "数学学院教授（官方搜索索引）",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": null,
+      "roster_source_url": "https://math.sysu.edu.cn/professors",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_index_only_no_direct_profile_link_verified",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "sysu-chenbinglong",
+      "batch_id": "sysu-selected-roster-supplement-002",
+      "source_batch_id": "faculty-batch-sysu-supplement-002",
+      "source_ids": [
+        "chenbinglong-roster"
+      ],
+      "source_evidence_status": "official_search_index_only_direct_403",
+      "source_evidence_status_label": "仅官方搜索索引，原页403未绕过，正文未核。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_index_plus_home_university_news_and_external_official_biography_crossmatched",
+        "source_url": "https://math.sysu.edu.cn/professors",
+        "profile_url": "https://math.sysu.edu.cn/node/133",
+        "direct_sources": [
+          "https://www.sysu.edu.cn/info/2011/33732.htm",
+          "https://yysx.sxufe.edu.cn/info/1042/4435.htm"
+        ],
+        "note": "姓名、中大数学学院教授/院长、几何分析均与院系索引吻合。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。"
+      ],
+      "profile_candidate_url": "https://math.sysu.edu.cn/node/133",
+      "professional_evidence_url": "https://math.sysu.edu.cn/professors",
+      "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "alternative_professional_sources": [
+        {
+          "source_id": "chenbinglong-news",
+          "url": "https://www.sysu.edu.cn/info/2011/33732.htm",
+          "title": "学校官方历史团队报道（非本轮在岗证明）"
+        },
+        {
+          "source_id": "chenbinglong-sxufe",
+          "url": "https://yysx.sxufe.edu.cn/info/1042/4435.htm",
+          "title": "山西财经大学2024年官方职业报道（非本轮在岗证明）"
+        }
+      ],
+      "source_observation_ids": [
+        "sysu-selected-roster-supplement-002:roster-sysu-math-chenbinglong:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-hust-cs-storage-chenjiazhong",
+      "name": "陈加忠",
+      "school_id": "hust",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "hust-cs-storage",
+      "department_id": "hust-cs-storage",
+      "category": "存储所",
+      "listed_role": "副教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://en-cs.hust.edu.cn/info/1565/1186.htm",
+      "roster_source_url": "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "hust-chenjiazhong",
+      "batch_id": "hust-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-hust-supplement-001",
+      "source_ids": [
+        "chenjiazhong-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "存储研究所名录第4–6陈加忠、周游、刘渝；前两官方英文正文，刘渝本人页及同一官方主页链接身份互证。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm",
+        "alternate_profile_url": "https://en-cs.hust.edu.cn/info/1565/1186.htm",
+        "note": "同名同研究所；陈、周为官方英文名录，刘本人页明确刘渝并链接官方名录同一liuyu123主页。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "存储研究所名录第4–6陈加忠、周游、刘渝；前两官方英文正文，刘渝本人页及同一官方主页链接身份互证。"
+      ],
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "alternative_professional_sources": [
+        {
+          "source_id": "chenjiazhong-source-3",
+          "url": "https://en-cs.hust.edu.cn/info/1565/1186.htm",
+          "title": "学校官方英文职业简介（独立可读来源）"
+        }
+      ],
+      "source_observation_ids": [
+        "hust-selected-roster-supplement-001:roster-hust-cs-storage-chenjiazhong:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "hust-chenjiazhong"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-hust-cs-storage-zhouyou",
+      "name": "周游",
+      "school_id": "hust",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "hust-cs-storage",
+      "department_id": "hust-cs-storage",
+      "category": "存储所",
+      "listed_role": "副研究员/副教授（官网栏目不一致）",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": null,
+      "roster_source_url": "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_selected_roster_and_independent_identity_evidence_no_direct_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "hust-zhouyou",
+      "batch_id": "hust-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-hust-supplement-001",
+      "source_ids": [
+        "zhouyou-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "存储研究所名录第4–6陈加忠、周游、刘渝；前两官方英文正文，刘渝本人页及同一官方主页链接身份互证。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm",
+        "alternate_profile_url": "https://en-cs.hust.edu.cn/info/1638/1547.htm",
+        "note": "同名同研究所；陈、周为官方英文名录，刘本人页明确刘渝并链接官方名录同一liuyu123主页。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "存储研究所名录第4–6陈加忠、周游、刘渝；前两官方英文正文，刘渝本人页及同一官方主页链接身份互证。"
+      ],
+      "profile_candidate_url": "https://en-cs.hust.edu.cn/info/1638/1547.htm",
+      "professional_evidence_url": "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm",
+      "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
+      "source_observation_ids": [
+        "hust-selected-roster-supplement-001:roster-hust-cs-storage-zhouyou:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-hust-cs-storage-liuyu",
+      "name": "刘渝",
+      "school_id": "hust",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "hust-cs-storage",
+      "department_id": "hust-cs-storage",
+      "category": "存储所",
+      "listed_role": "副研究员",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": null,
+      "roster_source_url": "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_selected_roster_and_independent_identity_evidence_no_direct_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "hust-liuyu",
+      "batch_id": "hust-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-hust-supplement-001",
+      "source_ids": [
+        "liuyu-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "存储研究所名录第4–6陈加忠、周游、刘渝；前两官方英文正文，刘渝本人页及同一官方主页链接身份互证。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm",
+        "alternate_profile_url": "https://lightyear416.github.io/liuyu/",
+        "note": "同名同研究所；陈、周为官方英文名录，刘本人页明确刘渝并链接官方名录同一liuyu123主页。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "存储研究所名录第4–6陈加忠、周游、刘渝；前两官方英文正文，刘渝本人页及同一官方主页链接身份互证。"
+      ],
+      "profile_candidate_url": "https://lightyear416.github.io/liuyu/",
+      "professional_evidence_url": "https://cs.hust.edu.cn/szdw/jsml/ayjslb.htm",
+      "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
+      "official_profile_availability_label": "本人公开职业网站；学校门户超时，非校内正文实读",
+      "official_profile_link_label": "本人公开职业网站（校内门户未读）",
+      "official_url_kind": "self_authored_professional_profile_crosslinked_with_official_identity",
+      "source_observation_ids": [
+        "hust-selected-roster-supplement-001:roster-hust-cs-storage-liuyu:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-ouc-cs-chenxin",
+      "name": "陈欣",
+      "school_id": "ouc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ouc-ise-cs",
+      "department_id": "ouc-ise-cs",
+      "category": "计算机科学与技术学院（公开查询原序）",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://it.ouc.edu.cn/cx/list.htm",
+      "roster_source_url": "https://it.ouc.edu.cn/21691/list.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ouc-chenxin",
+      "batch_id": "ouc-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-ouc-supplement-001",
+      "source_ids": [
+        "chenxin-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "同一公开目录查询原序第4–6陈欣、曹景超、陈姝祯，3份部分正文档案。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://it.ouc.edu.cn/21691/list.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "同一公开目录查询原序第4–6陈欣、曹景超、陈姝祯，3份部分正文档案。"
+      ],
+      "source_observation_ids": [
+        "ouc-selected-roster-supplement-001:roster-ouc-cs-chenxin:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "ouc-chenxin"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-ouc-cs-caojingchao",
+      "name": "曹景超",
+      "school_id": "ouc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ouc-ise-cs",
+      "department_id": "ouc-ise-cs",
+      "category": "计算机科学与技术学院（公开查询原序）",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://it.ouc.edu.cn/cjc/list.htm",
+      "roster_source_url": "https://it.ouc.edu.cn/21691/list.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ouc-caojingchao",
+      "batch_id": "ouc-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-ouc-supplement-001",
+      "source_ids": [
+        "caojingchao-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "同一公开目录查询原序第4–6陈欣、曹景超、陈姝祯，3份部分正文档案。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://it.ouc.edu.cn/21691/list.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "同一公开目录查询原序第4–6陈欣、曹景超、陈姝祯，3份部分正文档案。"
+      ],
+      "source_observation_ids": [
+        "ouc-selected-roster-supplement-001:roster-ouc-cs-caojingchao:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "ouc-caojingchao"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-ouc-cs-chenshuzhen",
+      "name": "陈姝祯",
+      "school_id": "ouc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ouc-ise-cs",
+      "department_id": "ouc-ise-cs",
+      "category": "计算机科学与技术学院（公开查询原序）",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://it.ouc.edu.cn/zcs/list.htm",
+      "roster_source_url": "https://it.ouc.edu.cn/21691/list.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ouc-chenshuzhen",
+      "batch_id": "ouc-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-ouc-supplement-001",
+      "source_ids": [
+        "chenshuzhen-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "同一公开目录查询原序第4–6陈欣、曹景超、陈姝祯，3份部分正文档案。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://it.ouc.edu.cn/21691/list.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "同一公开目录查询原序第4–6陈欣、曹景超、陈姝祯，3份部分正文档案。"
+      ],
+      "source_observation_ids": [
+        "ouc-selected-roster-supplement-001:roster-ouc-cs-chenshuzhen:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "ouc-chenshuzhen"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-nwpu-cs-liuzhaowen",
+      "name": "刘曌雯",
+      "school_id": "nwpu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nwpu-cs-computer-science-software",
+      "department_id": "nwpu-cs-computer-science-software",
+      "category": "计算机科学与软件系",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://teacher.nwpu.edu.cn/zhaowenliu",
+      "roster_source_url": "https://jsj.nwpu.edu.cn/snew/szdwlist.jsp?urltype=tree.TreeTempUrl&wbtreeid=1519",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "nwpu-liuzhaowen",
+      "batch_id": "nwpu-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-nwpu-supplement-001",
+      "source_ids": [
+        "liuzhaowen-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "名录第4–6刘曌雯、彭佳杰、尚学群，3份部分职业资料；不称学历与师承完整。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://jsj.nwpu.edu.cn/snew/szdwlist.jsp?urltype=tree.TreeTempUrl&wbtreeid=1519"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "名录第4–6刘曌雯、彭佳杰、尚学群，3份部分职业资料；不称学历与师承完整。"
+      ],
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "alternative_professional_sources": [
+        {
+          "source_id": "liuzhaowen-source-4",
+          "url": "https://news.nwpu.edu.cn/info/1003/120159.htm",
+          "title": "学校官方教学报道（非个人主页）"
+        },
+        {
+          "source_id": "liuzhaowen-source-3",
+          "url": "https://faculty.fudan.edu.cn/zhangjie1234/zh_CN/zdylm/849314/list/index.htm",
+          "title": "复旦大学托管团队职业记录（非本人授位学校证明）"
+        }
+      ],
+      "source_observation_ids": [
+        "nwpu-selected-roster-supplement-001:roster-nwpu-cs-liuzhaowen:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "nwpu-liuzhaowen"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-nwpu-cs-pengjiajie",
+      "name": "彭佳杰",
+      "school_id": "nwpu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nwpu-cs-computer-science-software",
+      "department_id": "nwpu-cs-computer-science-software",
+      "category": "计算机科学与软件系",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://teacher.nwpu.edu.cn/peng.html",
+      "roster_source_url": "https://jsj.nwpu.edu.cn/snew/szdwlist.jsp?urltype=tree.TreeTempUrl&wbtreeid=1519",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "nwpu-pengjiajie",
+      "batch_id": "nwpu-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-nwpu-supplement-001",
+      "source_ids": [
+        "pengjiajie-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "名录第4–6刘曌雯、彭佳杰、尚学群，3份部分职业资料；不称学历与师承完整。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://jsj.nwpu.edu.cn/snew/szdwlist.jsp?urltype=tree.TreeTempUrl&wbtreeid=1519"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "名录第4–6刘曌雯、彭佳杰、尚学群，3份部分职业资料；不称学历与师承完整。"
+      ],
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "alternative_professional_sources": [
+        {
+          "source_id": "pengjiajie-source-3",
+          "url": "https://renshi.nwpu.edu.cn/info/1437/15955.htm",
+          "title": "学校官方历史职业报道（非个人主页）"
+        }
+      ],
+      "source_observation_ids": [
+        "nwpu-selected-roster-supplement-001:roster-nwpu-cs-pengjiajie:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "nwpu-pengjiajie"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-nwpu-cs-shangxuequn",
+      "name": "尚学群",
+      "school_id": "nwpu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nwpu-cs-computer-science-software",
+      "department_id": "nwpu-cs-computer-science-software",
+      "category": "计算机科学与软件系",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://teacher.nwpu.edu.cn/Shang.html",
+      "roster_source_url": "https://jsj.nwpu.edu.cn/snew/szdwlist.jsp?urltype=tree.TreeTempUrl&wbtreeid=1519",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "nwpu-shangxuequn",
+      "batch_id": "nwpu-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-nwpu-supplement-001",
+      "source_ids": [
+        "shangxuequn-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "名录第4–6刘曌雯、彭佳杰、尚学群，3份部分职业资料；不称学历与师承完整。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://jsj.nwpu.edu.cn/snew/szdwlist.jsp?urltype=tree.TreeTempUrl&wbtreeid=1519"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "名录第4–6刘曌雯、彭佳杰、尚学群，3份部分职业资料；不称学历与师承完整。"
+      ],
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "alternative_professional_sources": [
+        {
+          "source_id": "shangxuequn-source-3",
+          "url": "https://jsj.nwpu.edu.cn/info/1598/10672.htm",
+          "title": "学校官方历史职业报道（非个人主页）"
+        },
+        {
+          "source_id": "shangxuequn-source-4",
+          "url": "https://link.springer.com/article/10.1007/s11704-026-52221-6",
+          "title": "出版者作者职业简介（非学校个人主页）"
+        }
+      ],
+      "source_observation_ids": [
+        "nwpu-selected-roster-supplement-001:roster-nwpu-cs-shangxuequn:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "nwpu-shangxuequn"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-ruc-gsai-wenjirong",
+      "name": "文继荣",
+      "school_id": "ruc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ruc-gsai",
+      "department_id": "ruc-gsai",
+      "category": "专任教师（按来校时间排序）",
+      "listed_role": "长聘教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://ai.ruc.edu.cn/szdw/zrjs/wjr/index.htm",
+      "roster_source_url": "https://ai.ruc.edu.cn/szdw/zrjs/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ruc-wenjirong",
+      "batch_id": "ruc-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-ruc-rotation-001",
+      "source_ids": [
+        "wenjirong-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "高瓴人工智能学院专任教师官方明示按来校时间排序首3文继荣、卢志武、赵鑫。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://ai.ruc.edu.cn/szdw/zrjs/"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "高瓴人工智能学院专任教师官方明示按来校时间排序首3文继荣、卢志武、赵鑫。"
+      ],
+      "source_observation_ids": [
+        "ruc-selected-roster-rotation-001:roster-ruc-gsai-wenjirong:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "ruc-wenjirong"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-ruc-gsai-luzhiwu",
+      "name": "卢志武",
+      "school_id": "ruc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ruc-gsai",
+      "department_id": "ruc-gsai",
+      "category": "专任教师（按来校时间排序）",
+      "listed_role": "长聘教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://ai.ruc.edu.cn/szdw/zrjs/lzw/index.htm",
+      "roster_source_url": "https://ai.ruc.edu.cn/szdw/zrjs/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ruc-luzhiwu",
+      "batch_id": "ruc-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-ruc-rotation-001",
+      "source_ids": [
+        "luzhiwu-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "高瓴人工智能学院专任教师官方明示按来校时间排序首3文继荣、卢志武、赵鑫。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://ai.ruc.edu.cn/szdw/zrjs/"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "高瓴人工智能学院专任教师官方明示按来校时间排序首3文继荣、卢志武、赵鑫。"
+      ],
+      "source_observation_ids": [
+        "ruc-selected-roster-rotation-001:roster-ruc-gsai-luzhiwu:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "ruc-luzhiwu"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-ruc-gsai-zhaoxin",
+      "name": "赵鑫",
+      "school_id": "ruc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ruc-gsai",
+      "department_id": "ruc-gsai",
+      "category": "专任教师（按来校时间排序）",
+      "listed_role": "长聘教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://ai.ruc.edu.cn/szdw/zrjs/zx/index.htm",
+      "roster_source_url": "https://ai.ruc.edu.cn/szdw/zrjs/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ruc-zhaoxin",
+      "batch_id": "ruc-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-ruc-rotation-001",
+      "source_ids": [
+        "zhaoxin-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "高瓴人工智能学院专任教师官方明示按来校时间排序首3文继荣、卢志武、赵鑫。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://ai.ruc.edu.cn/szdw/zrjs/"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "高瓴人工智能学院专任教师官方明示按来校时间排序首3文继荣、卢志武、赵鑫。"
+      ],
+      "source_observation_ids": [
+        "ruc-selected-roster-rotation-001:roster-ruc-gsai-zhaoxin:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "ruc-zhaoxin"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-whu-eis-chenshuzhen",
+      "name": "陈淑珍",
+      "school_id": "whu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "whu-eis",
+      "department_id": "whu-eis",
+      "category": "电子信息学院教师",
+      "listed_role": "教师（名录未分职称）",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://jszy.whu.edu.cn/chenshuzhen/zh_CN/index.htm",
+      "roster_source_url": "https://jszy.whu.edu.cn/xyjslb.jsp?PAGENUM=1&id=2013&lang=zh_CN&st=0&totalpage=4&urltype=tsites.CollegeTeacherList&wbtreeid=1006",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "whu-chenshuzhen",
+      "batch_id": "whu-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-whu-supplement-001",
+      "source_ids": [
+        "chenshuzhen-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "中央教师门户电子信息学院教师名录第一页原序第4–6位：陈淑珍、代永红、何平安。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://jszy.whu.edu.cn/xyjslb.jsp?PAGENUM=1&id=2013&lang=zh_CN&st=0&totalpage=4&urltype=tsites.CollegeTeacherList&wbtreeid=1006"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "中央教师门户电子信息学院教师名录第一页原序第4–6位：陈淑珍、代永红、何平安。"
+      ],
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "employment_status": "retired",
+      "employment_status_note": "本人官网明确在职信息为离退休，具体退休日期及退休后是否返聘未披露。",
+      "role_category": "faculty_retired",
+      "source_observation_ids": [
+        "whu-selected-roster-supplement-001:roster-whu-eis-chenshuzhen:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "whu-chenshuzhen"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-whu-eis-daiyonghong",
+      "name": "代永红",
+      "school_id": "whu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "whu-eis",
+      "department_id": "whu-eis",
+      "category": "电子信息学院教师",
+      "listed_role": "教师（名录未分职称）",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://jszy.whu.edu.cn/daiyonghong/zh_CN/index.htm",
+      "roster_source_url": "https://jszy.whu.edu.cn/xyjslb.jsp?PAGENUM=1&id=2013&lang=zh_CN&st=0&totalpage=4&urltype=tsites.CollegeTeacherList&wbtreeid=1006",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "whu-daiyonghong",
+      "batch_id": "whu-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-whu-supplement-001",
+      "source_ids": [
+        "daiyonghong-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "中央教师门户电子信息学院教师名录第一页原序第4–6位：陈淑珍、代永红、何平安。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://jszy.whu.edu.cn/xyjslb.jsp?PAGENUM=1&id=2013&lang=zh_CN&st=0&totalpage=4&urltype=tsites.CollegeTeacherList&wbtreeid=1006"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "中央教师门户电子信息学院教师名录第一页原序第4–6位：陈淑珍、代永红、何平安。"
+      ],
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "employment_status": "employed",
+      "employment_status_note": "本人官方个人信息明确在职；仅当前页面陈述，未独立人事核验。",
+      "role_category": "faculty",
+      "source_observation_ids": [
+        "whu-selected-roster-supplement-001:roster-whu-eis-daiyonghong:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "whu-daiyonghong"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-whu-eis-hepingan",
+      "name": "何平安",
+      "school_id": "whu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "whu-eis",
+      "department_id": "whu-eis",
+      "category": "电子信息学院教师",
+      "listed_role": "教师（名录未分职称）",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://jszy.whu.edu.cn/hepingan/zh_CN/index.htm",
+      "roster_source_url": "https://jszy.whu.edu.cn/xyjslb.jsp?PAGENUM=1&id=2013&lang=zh_CN&st=0&totalpage=4&urltype=tsites.CollegeTeacherList&wbtreeid=1006",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "whu-hepingan",
+      "batch_id": "whu-selected-roster-supplement-001",
+      "source_batch_id": "faculty-batch-whu-supplement-001",
+      "source_ids": [
+        "hepingan-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "中央教师门户电子信息学院教师名录第一页原序第4–6位：陈淑珍、代永红、何平安。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://jszy.whu.edu.cn/xyjslb.jsp?PAGENUM=1&id=2013&lang=zh_CN&st=0&totalpage=4&urltype=tsites.CollegeTeacherList&wbtreeid=1006"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "中央教师门户电子信息学院教师名录第一页原序第4–6位：陈淑珍、代永红、何平安。"
+      ],
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "employment_status": "retired",
+      "employment_status_note": "本人官网明确在职信息为离退休，具体退休日期及退休后是否返聘未披露。",
+      "role_category": "faculty_retired",
+      "source_observation_ids": [
+        "whu-selected-roster-supplement-001:roster-whu-eis-hepingan:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "whu-hepingan"
+      ],
+      "candidate_match_status": "pending_identity_review"
     }
   ],
   "conflicts": [
@@ -58847,27 +60495,315 @@
         }
       ],
       "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "scu-selected-roster-supplement-002",
+      "school_id": "scu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 4,
+      "record_count": 4,
+      "raw_observation_count": 4,
+      "raw_count": 4,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-scu-cs-chenjie",
+        "roster-scu-cs-chenkaimin",
+        "roster-scu-cs-chenli12",
+        "roster-scu-cs-chenliangyin"
+      ],
+      "source_observation_ids": [
+        "scu-selected-roster-supplement-002:roster-scu-cs-chenjie:1",
+        "scu-selected-roster-supplement-002:roster-scu-cs-chenkaimin:1",
+        "scu-selected-roster-supplement-002:roster-scu-cs-chenli12:1",
+        "scu-selected-roster-supplement-002:roster-scu-cs-chenliangyin:1"
+      ],
+      "selection": "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。",
+      "selection_basis": "承接原名录前4，按第5–8陈杰、陈楷民、陈黎、陈良银，不按资料丰满度跳人。2部分职业2头部稀疏；全校非完整。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-scu-supplement-002.json",
+          "sha256": "c72d61d3943af579e97265c4de0a97050d64c45cf1d4930f4b23f7f66ec2d5c2"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "nudt-selected-roster-supplement-002",
+      "school_id": "nudt",
+      "accessed_on": "2026-10-23",
+      "observation_count": 2,
+      "record_count": 2,
+      "raw_observation_count": 2,
+      "raw_count": 2,
+      "category_count": 2,
+      "coverage_unit_count": 2,
+      "entry_ids": [
+        "roster-nudt-academicians-lixiang",
+        "roster-nudt-academicians-lidongxu"
+      ],
+      "source_observation_ids": [
+        "nudt-selected-roster-supplement-002:roster-nudt-academicians-lixiang:1",
+        "nudt-selected-roster-supplement-002:roster-nudt-academicians-lidongxu:1"
+      ],
+      "selection": "承接校级师资页科学院院士类首位胡德文，原序第2黎湘、第3李东旭（2019行左侧先于王怀民）。仅公开职业教育事实；非全院、非全校、非全部论文。",
+      "selection_basis": "承接校级师资页科学院院士类首位胡德文，原序第2黎湘、第3李东旭（2019行左侧先于王怀民）。仅公开职业教育事实；非全院、非全校、非全部论文。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-nudt-supplement-002.json",
+          "sha256": "ebd208c30de74d1aa4bb2e7aa15d2e0f8858acdf5fb50d37b6bb6cff798e1f8a"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "seu-selected-roster-supplement-001",
+      "school_id": "seu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 2,
+      "coverage_unit_count": 2,
+      "entry_ids": [
+        "roster-seu-computing-bairufan",
+        "roster-seu-computing-chau-vincent",
+        "roster-seu-computing-chongzhihong"
+      ],
+      "source_observation_ids": [
+        "seu-selected-roster-supplement-001:roster-seu-computing-bairufan:1",
+        "seu-selected-roster-supplement-001:roster-seu-computing-chau-vincent:1",
+        "seu-selected-roster-supplement-001:roster-seu-computing-chongzhihong:1"
+      ],
+      "selection": "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。",
+      "selection_basis": "计算机相关三学院联合师资名录第4–6白如帆、Chau Vincent、崇志宏；不同归属按正文，空页保持pending。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-seu-supplement-001.json",
+          "sha256": "f554588a9fc67da1373b92d1744620478cab344216d480d24730c2d2bd444172"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "sysu-selected-roster-supplement-002",
+      "school_id": "sysu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 2,
+      "coverage_unit_count": 2,
+      "entry_ids": [
+        "roster-sysu-math-chailihui",
+        "roster-sysu-math-chenpeng",
+        "roster-sysu-math-chenbinglong"
+      ],
+      "source_observation_ids": [
+        "sysu-selected-roster-supplement-002:roster-sysu-math-chailihui:1",
+        "sysu-selected-roster-supplement-002:roster-sysu-math-chenpeng:1",
+        "sysu-selected-roster-supplement-002:roster-sysu-math-chenbinglong:1"
+      ],
+      "selection": "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。",
+      "selection_basis": "数学学院教授名录公开搜索索引原序第1—3位柴利慧、陈鹏、陈兵龙；3份部分直接公开职业档案，校内教师团队新闻和外校官方历史简介补强。当前校内个人页均403；现职归属仍按索引加历史正文分级，非全院或全校覆盖。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-sysu-supplement-002.json",
+          "sha256": "d2f087c95a4f4f1b1cdd134f3ae1840d2213d02736fea7888cfb54f28b96020a"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "hust-selected-roster-supplement-001",
+      "school_id": "hust",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-hust-cs-storage-chenjiazhong",
+        "roster-hust-cs-storage-zhouyou",
+        "roster-hust-cs-storage-liuyu"
+      ],
+      "source_observation_ids": [
+        "hust-selected-roster-supplement-001:roster-hust-cs-storage-chenjiazhong:1",
+        "hust-selected-roster-supplement-001:roster-hust-cs-storage-zhouyou:1",
+        "hust-selected-roster-supplement-001:roster-hust-cs-storage-liuyu:1"
+      ],
+      "selection": "存储研究所名录第4–6陈加忠、周游、刘渝；前两官方英文正文，刘渝本人页及同一官方主页链接身份互证。",
+      "selection_basis": "存储研究所名录第4–6陈加忠、周游、刘渝；前两官方英文正文，刘渝本人页及同一官方主页链接身份互证。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-hust-supplement-001.json",
+          "sha256": "29ef7a280ce0b04b5b04905e8f867676b3f082034ce059eee386460aac396c29"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "ouc-selected-roster-supplement-001",
+      "school_id": "ouc",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-ouc-cs-chenxin",
+        "roster-ouc-cs-caojingchao",
+        "roster-ouc-cs-chenshuzhen"
+      ],
+      "source_observation_ids": [
+        "ouc-selected-roster-supplement-001:roster-ouc-cs-chenxin:1",
+        "ouc-selected-roster-supplement-001:roster-ouc-cs-caojingchao:1",
+        "ouc-selected-roster-supplement-001:roster-ouc-cs-chenshuzhen:1"
+      ],
+      "selection": "同一公开目录查询原序第4–6陈欣、曹景超、陈姝祯，3份部分正文档案。",
+      "selection_basis": "同一公开目录查询原序第4–6陈欣、曹景超、陈姝祯，3份部分正文档案。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-ouc-supplement-001.json",
+          "sha256": "7ac3b53f31b1ab6ce1989c2fc30ed1778623362999f7e56eb70bb26229afc498"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "nwpu-selected-roster-supplement-001",
+      "school_id": "nwpu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-nwpu-cs-liuzhaowen",
+        "roster-nwpu-cs-pengjiajie",
+        "roster-nwpu-cs-shangxuequn"
+      ],
+      "source_observation_ids": [
+        "nwpu-selected-roster-supplement-001:roster-nwpu-cs-liuzhaowen:1",
+        "nwpu-selected-roster-supplement-001:roster-nwpu-cs-pengjiajie:1",
+        "nwpu-selected-roster-supplement-001:roster-nwpu-cs-shangxuequn:1"
+      ],
+      "selection": "名录第4–6刘曌雯、彭佳杰、尚学群，3份部分职业资料；不称学历与师承完整。",
+      "selection_basis": "名录第4–6刘曌雯、彭佳杰、尚学群，3份部分职业资料；不称学历与师承完整。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-nwpu-supplement-001.json",
+          "sha256": "aa164dd3c76429d2ec1e67396807ca71a6cd0013fefb574ffa4366aef966cac0"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "ruc-selected-roster-rotation-001",
+      "school_id": "ruc",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-ruc-gsai-wenjirong",
+        "roster-ruc-gsai-luzhiwu",
+        "roster-ruc-gsai-zhaoxin"
+      ],
+      "source_observation_ids": [
+        "ruc-selected-roster-rotation-001:roster-ruc-gsai-wenjirong:1",
+        "ruc-selected-roster-rotation-001:roster-ruc-gsai-luzhiwu:1",
+        "ruc-selected-roster-rotation-001:roster-ruc-gsai-zhaoxin:1"
+      ],
+      "selection": "高瓴人工智能学院专任教师官方明示按来校时间排序首3文继荣、卢志武、赵鑫。",
+      "selection_basis": "高瓴人工智能学院专任教师官方明示按来校时间排序首3文继荣、卢志武、赵鑫。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-ruc-rotation-001.json",
+          "sha256": "70f733d4ce8e201fb8c76a1ff814c11fa6c1638d5b58c3cf9fe50dc43649fdfe"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "whu-selected-roster-supplement-001",
+      "school_id": "whu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-whu-eis-chenshuzhen",
+        "roster-whu-eis-daiyonghong",
+        "roster-whu-eis-hepingan"
+      ],
+      "source_observation_ids": [
+        "whu-selected-roster-supplement-001:roster-whu-eis-chenshuzhen:1",
+        "whu-selected-roster-supplement-001:roster-whu-eis-daiyonghong:1",
+        "whu-selected-roster-supplement-001:roster-whu-eis-hepingan:1"
+      ],
+      "selection": "中央教师门户电子信息学院教师名录第一页原序第4–6位：陈淑珍、代永红、何平安。",
+      "selection_basis": "中央教师门户电子信息学院教师名录第一页原序第4–6位：陈淑珍、代永红、何平安。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-whu-supplement-001.json",
+          "sha256": "31970f1f7969510ca9b8d29065401b1cba11e282b42e9651eca6d87705ed2c4c"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
     }
   ],
   "totals": {
-    "organization_count": 62,
-    "category_count": 125,
-    "entries_with_profile_link": 1379,
-    "entries_without_profile_link": 183,
+    "organization_count": 67,
+    "category_count": 130,
+    "entries_with_profile_link": 1399,
+    "entries_without_profile_link": 190,
     "dedup_candidate_groups": 60,
     "placeholder_profile_link_observations": 18,
     "current_employment_count_verified": false,
     "not_unique_people_count": true,
-    "record_count": 1562,
-    "raw_observation_count": 1600,
-    "roster_records": 1562,
-    "raw_source_observations": 1600,
-    "coverage_unit_count": 144,
+    "record_count": 1589,
+    "raw_observation_count": 1627,
+    "roster_records": 1589,
+    "raw_source_observations": 1627,
+    "coverage_unit_count": 156,
     "count_unit": "integrated_roster_records",
     "source_record_grouping_reduction": 38,
     "category_count_basis": "unique_organization_category_pairs",
-    "unique_organization_category_pairs": 125,
-    "batch_category_count": 137,
+    "unique_organization_category_pairs": 130,
+    "batch_category_count": 149,
     "category_count_source": "coverage_rows_preserved_without_deduplication"
   },
   "role_interpretation": {
@@ -59012,5 +60948,5 @@
     }
   ],
   "raw_data_location": "完整原始来源观察保存在仓库 data/rosters.json，以及导出 Excel 的“原始来源观察”工作表；网站快照不重复加载这些原始内容。",
-  "build_id": "498704d3b38fefe7"
+  "build_id": "d8d3b4c2c65cd49b"
 }

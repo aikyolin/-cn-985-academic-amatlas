@@ -24,3 +24,13 @@ test('mobile overflow is fixed at grid items, not hidden on the body or local sc
   assert.match(css,/\.mind-stage\{overflow:auto/);
   assert.match(css,/\.person-link\{display:inline-block;white-space:nowrap;min-width:3em/);
 });
+
+test('mentor-card scope markers and event identifiers wrap without widening narrow lineage pages',()=>{
+  const card=css.match(/\.mentor-card\{([^}]*)\}/)?.[1];assert(card);
+  assert.match(card,/(?:^|;)min-width:0(?:;|$)/);
+  assert.match(card,/(?:^|;)overflow-wrap:anywhere(?:;|$)/);
+  assert(!/white-space:nowrap|overflow(?:-x)?:(?:hidden|clip)/.test(card));
+  // Wrapping is scoped to mentor cards; the graph remains an explicitly scrollable widget.
+  assert.match(css,/\.mentor-list\{[^}]*minmax\(0,1fr\)/);
+  assert.match(css,/\.mind-stage\{overflow:auto/);
+});
