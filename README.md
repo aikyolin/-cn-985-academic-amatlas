@@ -4,6 +4,12 @@
 
 [浏览网站](https://aikyolin.github.io/-cn-985-academic-amatlas/) · [当前覆盖与核验进度](progress/current-coverage.md) · [数据政策](docs/data-policy.md) · [资料补充与纠错讨论](https://github.com/aikyolin/-cn-985-academic-amatlas/discussions)
 
+## 一起贡献
+
+欢迎使用自己的 AI 辅助核验、补充资料、纠错或改进代码。先查看已有任务，按一个小范围提交 Draft PR；证据、测试和风险审核通过后再合并。
+
+[贡献指南](CONTRIBUTING.md) · [复制给 AI 的中文提示词](docs/ai-contributor-prompt.md) · [贡献者](CONTRIBUTORS.md) · [开放 PR](https://github.com/aikyolin/-cn-985-academic-amatlas/pulls) · [Issues](https://github.com/aikyolin/-cn-985-academic-amatlas/issues)
+
 ## 项目范围
 
 以公开、可追溯的学术资料为依据，按学校和院系逐批整理。全国范围是项目目标，不代表39所高校已全部收录；目前的实际覆盖、资料缺项与来源冲突均在进度说明中列示。项目不是教师评价或能力排行榜。
@@ -48,7 +54,7 @@ python -m unittest discover -s tests -v
 
 ## 尚未完成
 
-全国高校教师收录、完整教育史和成果清单、所有院系校区归属核实、自动资料更新及纠错提交流程尚未完成。当前不含定时爬虫，不会绕过登录、验证码或访问限制。经核验的仓库更新通过 GitHub Pages 同步展示；在线版本以成功部署为准。
+全国高校教师收录、完整教育史和成果清单、所有院系校区归属核实、自动资料更新尚未完成；资料补充与纠错通过 Issues 和 PR 提交。当前不含定时爬虫，不会绕过登录、验证码或访问限制。经核验的仓库更新通过 GitHub Pages 同步展示；在线版本以成功部署为准。
 
 ## 权利说明
 
