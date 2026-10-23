@@ -33,6 +33,7 @@ python -m http.server 8000 --directory site
 
 ```sh
 npm test
+python -m pip install -r requirements-dev.txt
 python -m unittest discover -s tests -v
 ```
 
@@ -60,3 +61,7 @@ python -m unittest discover -s tests -v
 ## 权利说明
 
 许可证待仓库所有者确认，本次不新增开源许可声明。公开来源页面、论文、姓名及数据所涉及的第三方权利不因本仓库改变；不对第三方原文重新授权。事实摘要与链接供研究导航；请独立核实最新来源，不用于自动作出人事或招生决定。
+
+## 可恢复进度
+
+组织入口研究与81项任务已保存于research/和progress/。28个组织节点有哈尔滨归属证据，27深圳、13威海、10仍未知；52个入口可读不等于教师已采完。本批没有新增个人档案或名录。接续规则见docs/continuation.md，当前未启用远端CI或部署。

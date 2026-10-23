@@ -1,0 +1,2598 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-10-23T09:53:00Z",
+  "base_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+  "scope": {
+    "active_institution": "hit",
+    "target_university_count": 39,
+    "registry_complete": false,
+    "known_organization_nodes": 78,
+    "write_model": "single_controller_expected_sha"
+  },
+  "tasks": [
+    {
+      "task_id": "hit-aerospace:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-aerospace",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://sa.hit.edu.cn/szdw_21460/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-seie:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-seie",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "done",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "通信工程系",
+          "电子工程系",
+          "测控工程系",
+          "信息工程系",
+          "微波工程系"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://seie.hit.edu.cn/19281/list.htm",
+        "https://seie.hit.edu.cn/19282/list.htm",
+        "https://seie.hit.edu.cn/19283/list.htm",
+        "https://seie.hit.edu.cn/19284/list.htm",
+        "https://seie.hit.edu.cn/19285/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json",
+        "data/rosters.json"
+      ],
+      "review_status": "approved",
+      "next_action": "补履历前核验主页身份及冲突链接",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T09:53:00Z",
+        "evidence_urls": [
+          "https://www.hit.edu.cn/11589/list.htm",
+          "https://seie.hit.edu.cn/19281/list.htm",
+          "https://seie.hit.edu.cn/19282/list.htm",
+          "https://seie.hit.edu.cn/19283/list.htm",
+          "https://seie.hit.edu.cn/19284/list.htm",
+          "https://seie.hit.edu.cn/19285/list.htm"
+        ],
+        "unresolved_items": [
+          "逐人身份、在职状态、履历及可能的未公开人员尚未核实。"
+        ],
+        "scope_closed": true
+      }
+    },
+    {
+      "task_id": "hit-seie:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-seie",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "通信工程系",
+          "电子工程系",
+          "测控工程系",
+          "信息工程系",
+          "微波工程系"
+        ]
+      },
+      "depends_on": [
+        "hit-seie:roster"
+      ],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://seie.hit.edu.cn/19281/list.htm",
+        "https://seie.hit.edu.cn/19282/list.htm",
+        "https://seie.hit.edu.cn/19283/list.htm",
+        "https://seie.hit.edu.cn/19284/list.htm",
+        "https://seie.hit.edu.cn/19285/list.htm"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按名录稳定记录ID逐人核对身份；优先处理同链接异名，未核实不可自动合并。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-mechanical:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-mechanical",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "http://sme.hit.edu.cn/17971/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-materials:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-materials",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "http://mse.hit.edu.cn/16898/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-energy:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-energy",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "教师名录",
+          "师资队伍",
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://power.hit.edu.cn/5705/list.htm",
+        "https://power.hit.edu.cn/5735/list.htm",
+        "https://power.hit.edu.cn/19202/list.htm",
+        "http://power.hit.edu.cn/19202/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-electrical:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-electrical",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "专任教师队伍",
+          "实验教师队伍",
+          "兼职教师队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "http://hitee.hit.edu.cn/17036/list.htm",
+        "https://hitee.hit.edu.cn/17037/list.htm",
+        "https://hitee.hit.edu.cn/17038/list.htm",
+        "https://hitee.hit.edu.cn/17039/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-instrument:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-instrument",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "专任教师队伍",
+          "实验教师队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "http://ise.hit.edu.cn/16179/list.htm",
+        "https://ise.hit.edu.cn/16180/list.htm",
+        "https://ise.hit.edu.cn/16181/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-math:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-math",
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://math.hit.edu.cn/10223/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-physics:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-physics",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "导师队伍",
+          "专任教师队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "http://physics.hit.edu.cn/ysfc/list.htm",
+        "http://physics.hit.edu.cn/sssds/list.htm",
+        "https://physics.hit.edu.cn/zrjsdw/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-management:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-management",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://som.hit.edu.cn/szdw/jcrc1.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-business:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-business",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://hbs.hit.edu.cn/szdw/kcsz1.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-humanities:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-humanities",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://rwskxb.hit.edu.cn/szdw/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-marxism:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-marxism",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://marx.hit.edu.cn/szdw/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-civil:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-civil",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://civil.hit.edu.cn/8431/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-environment:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-environment",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://env.hit.edu.cn/szdw/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-architecture:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-architecture",
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-transport:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-transport",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "导师队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://jtxy.hit.edu.cn/szdw/list.htm",
+        "https://jtxy.hit.edu.cn/dsdw/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-computing:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-computing",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "教师名录"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://computing.hit.edu.cn/11261/list.htm",
+        "https://computing.hit.edu.cn/jsml/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-chemical:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-chemical",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://chemeng.hit.edu.cn/2483/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-future:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-future",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-engineers:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-engineers",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-physical-education:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-physical-education",
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://tyb.hit.edu.cn/10386/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-lyon:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-lyon",
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-foreign-languages:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-foreign-languages",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "学部师资（按学院分区）"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://rwskxb.hit.edu.cn/xbsz/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按师资表学院分区解析，不把整个学部名单分配给每个学院。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-social-sciences:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-social-sciences",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "学部师资（按学院分区）"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://rwskxb.hit.edu.cn/xbsz/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按师资表学院分区解析，不把整个学部名单分配给每个学院。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-computer-science:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-computer-science",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "教师名录"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://computing.hit.edu.cn/11261/list.htm",
+        "https://computing.hit.edu.cn/jsml/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-ai:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-ai",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "专任教师"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://sai.hit.edu.cn/19648/list.htm",
+        "https://sai.hit.edu.cn/zrjs/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-software:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-software",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资力量"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "http://software.hit.edu.cn/12762/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-cybersecurity:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-cybersecurity",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://cys.hit.edu.cn/szdw1/bssds.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-medicine:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-medicine",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "https://med.hit.edu.cn/12987/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-life:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-life",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "教师名录"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "http://life.hit.edu.cn/21034/list.htm",
+        "https://life.hit.edu.cn/21034/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-sino-russian-engineers:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-sino-russian-engineers",
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-life-medicine:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-life-medicine",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "分别遍历 hit-medicine 和 hit-life；学部只作聚合，教师按人ID去重。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-entrepreneurship:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-entrepreneurship",
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-space:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-space",
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-agricultural-ai:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-agricultural-ai",
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-saint-petersburg:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-saint-petersburg",
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-design:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-design",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm",
+        "http://sisd.hit.edu.cn/14945/list.htm",
+        "https://sisd.hit.edu.cn/14946/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-polyu-shenzhen-design:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-polyu-shenzhen-design",
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hit.edu.cn/11589/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-marine-engineering:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-marine-engineering",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "https://snaoe.hitwh.edu.cn/32/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-marine-science:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-marine-science",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "专任教师",
+          "导师队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "http://marine.hitwh.edu.cn/hjgcx/list.htm",
+        "https://marine.hitwh.edu.cn/1479/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-automotive:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-automotive",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "导师队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "https://auto.hitwh.edu.cn/152/list.htm",
+        "https://auto.hitwh.edu.cn/dsdw/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-information:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-information",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "done",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "控制科学与工程系",
+          "仪器科学与技术系",
+          "通信工程系",
+          "电子信息工程系",
+          "电子科学与技术系",
+          "电磁场与无线技术系",
+          "电工电子教研室系",
+          "实验中心"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "https://siee.hitwh.edu.cn/jslb/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json",
+        "data/rosters.json"
+      ],
+      "review_status": "approved",
+      "next_action": "补履历前核验主页身份及冲突链接",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T09:53:00Z",
+        "evidence_urls": [
+          "https://www.hitwh.edu.cn/yxsz/list.htm",
+          "https://siee.hitwh.edu.cn/jslb/list.htm"
+        ],
+        "unresolved_items": [
+          "逐人身份、在职状态、履历及可能的未公开人员尚未核实。"
+        ],
+        "scope_closed": true
+      }
+    },
+    {
+      "task_id": "hit-weihai-information:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-information",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "控制科学与工程系",
+          "仪器科学与技术系",
+          "通信工程系",
+          "电子信息工程系",
+          "电子科学与技术系",
+          "电磁场与无线技术系",
+          "电工电子教研室系",
+          "实验中心"
+        ]
+      },
+      "depends_on": [
+        "hit-weihai-information:roster"
+      ],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "https://siee.hitwh.edu.cn/jslb/list.htm"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按名录稳定记录ID逐人核对身份；优先处理同链接异名，未核实不可自动合并。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-computer:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-computer",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "导师队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "https://cst.hitwh.edu.cn/jsdw/list.htm",
+        "https://cst.hitwh.edu.cn/dsdw/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-materials:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-materials",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "教师名录"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "https://mse.hitwh.edu.cn/szdw/list.htm",
+        "https://mse.hitwh.edu.cn/jsml/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-new-energy:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-new-energy",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "教师名录"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "https://newenergy.hitwh.edu.cn/szdw/list.htm",
+        "https://newenergy.hitwh.edu.cn/jsml/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-science:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-science",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "http://ss.hitwh.edu.cn/sxx/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-management:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-management",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "导师队伍",
+          "教师队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "https://sem.hitwh.edu.cn/513/list.htm",
+        "https://sem.hitwh.edu.cn/dsdw/list.htm",
+        "http://sem.hitwh.edu.cn/gsglx/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-marxism:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-marxism",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "专任教师"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "http://dipt.hitwh.edu.cn/zrjs/list.htm",
+        "https://dipt.hitwh.edu.cn/zrjs/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-foundation:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-foundation",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "沿官方目录展示分组遍历语言文学学院与体育教学部，核查行政关系并避免父子重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-languages:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-languages",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "https://sll.hitwh.edu.cn/841/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-physical-education:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-physical-education",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资力量",
+          "师资力量"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitwh.edu.cn/yxsz/list.htm",
+        "http://ped.hitwh.edu.cn/664/list.htm",
+        "https://ped.hitwh.edu.cn/664/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-information:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-information",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://faculty.hitsz.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-computer:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-computer",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资力量"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://homepage.hit.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS&deptName=600001"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-information-science:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-information-science",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资力量"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "http://faculty.hitsz.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS&deptName=600001"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-ic:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-ic",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "done",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "教授",
+          "副教授",
+          "研究员"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://ic.hitsz.edu.cn/szll/qzjs/js.htm",
+        "https://ic.hitsz.edu.cn/szll/qzjs/fjs.htm",
+        "https://ic.hitsz.edu.cn/szll/yjy.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json",
+        "data/rosters.json"
+      ],
+      "review_status": "approved",
+      "next_action": "补履历前核验主页身份及冲突链接",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T09:53:00Z",
+        "evidence_urls": [
+          "https://www.hitsz.edu.cn/21/list.htm",
+          "https://ic.hitsz.edu.cn/szll/qzjs/js.htm",
+          "https://ic.hitsz.edu.cn/szll/qzjs/fjs.htm",
+          "https://ic.hitsz.edu.cn/szll/yjy.htm"
+        ],
+        "unresolved_items": [
+          "逐人身份、在职状态、履历及可能的未公开人员尚未核实。"
+        ],
+        "scope_closed": true
+      }
+    },
+    {
+      "task_id": "hit-shenzhen-ic:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-ic",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "教授",
+          "副教授",
+          "研究员"
+        ]
+      },
+      "depends_on": [
+        "hit-shenzhen-ic:roster"
+      ],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://ic.hitsz.edu.cn/szll/qzjs/js.htm",
+        "https://ic.hitsz.edu.cn/szll/qzjs/fjs.htm",
+        "https://ic.hitsz.edu.cn/szll/yjy.htm"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按名录稳定记录ID逐人核对身份；优先处理同链接异名，未核实不可自动合并。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-international-ai:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-international-ai",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资力量",
+          "全职教师"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://ai.hitsz.edu.cn/szll.htm",
+        "https://ai.hitsz.edu.cn/szll/qzjs.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-cybersecurity:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-cybersecurity",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-intelligence:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-intelligence",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://intelligence.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1241"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-intelligent-science:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-intelligent-science",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1084"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-robotics:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-robotics",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "全职教师"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://sram.hitsz.edu.cn/szdw/qzjs.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-civil-ocean:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-civil-ocean",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资力量",
+          "师资力量",
+          "教师队伍",
+          "全职教师"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://sicoe.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm",
+        "https://sicoe.hitsz.edu.cn/sjdha/szll.htm",
+        "https://sicoe.hitsz.edu.cn/",
+        "https://sicoe.hitsz.edu.cn/sjdha/szll/jsdw/qzjs.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-ecology:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-ecology",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资力量",
+          "教师队伍",
+          "全职教师"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://see.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm",
+        "https://see.hitsz.edu.cn/szll/jsdw/qzjs.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-intelligent-ocean:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-intelligent-ocean",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-frontier:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-frontier",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://fs.hitsz.edu.cn/szll/ztjs.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-materials:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-materials",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://mse.hitsz.edu.cn/szll/szdw.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-science:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-science",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍",
+          "全职教师",
+          "非全职教师"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://ssc.hitsz.edu.cn/szdw.htm",
+        "https://ssc.hitsz.edu.cn/szdw/qzjs/yz.htm",
+        "https://ssc.hitsz.edu.cn/szdw/fqzjs/jzjs.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-aerospace:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-aerospace",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-biomedical:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-biomedical",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-special-environments:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-special-environments",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-future:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-future",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://future.hitsz.edu.cn/szdw/wlsjxy.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-future-design:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-future-design",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://future.hitsz.edu.cn/szdw/wlsjxy.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "遍历未来学部官方的未来设计学院师资分区，勿与联合设计学院无证据合并。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-architecture:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-architecture",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资力量"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://sau.hitsz.edu.cn/szll.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-management:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-management",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://sem.hitsz.edu.cn/qzszdw.jsp?urltype=tree.TreeTempUrl&wbtreeid=1021"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-high-quality-development:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-high-quality-development",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-marxism:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-marxism",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "partial",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "师资队伍"
+        ]
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/21/list.htm",
+        "https://mks.hitsz.edu.cn/szdw.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-humanities-arts:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-humanities-arts",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/42/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-foreign-languages:roster",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-foreign-languages",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "roster_enumeration",
+      "status": "pending",
+      "scope": {
+        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": []
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.hitsz.edu.cn/42/list.htm"
+      ],
+      "artifact_paths": [
+        "research/coverage-work-queue.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    }
+  ]
+}

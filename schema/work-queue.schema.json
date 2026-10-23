@@ -1,0 +1,329 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public evidence work queue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "updated_at",
+    "base_commit",
+    "scope",
+    "tasks"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "base_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "active_institution",
+        "target_university_count",
+        "registry_complete"
+      ],
+      "properties": {
+        "active_institution": {
+          "const": "hit"
+        },
+        "target_university_count": {
+          "const": 39
+        },
+        "registry_complete": {
+          "const": false
+        },
+        "known_organization_nodes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "write_model": {
+          "const": "single_controller_expected_sha"
+        }
+      }
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "task_id",
+          "institution_id",
+          "organization_id",
+          "campus_ids",
+          "stage",
+          "status",
+          "scope",
+          "depends_on",
+          "source_urls",
+          "artifact_paths",
+          "review_status",
+          "next_action"
+        ],
+        "properties": {
+          "task_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9:_-]+$"
+          },
+          "institution_id": {
+            "type": "string"
+          },
+          "organization_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "campus_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "stage": {
+            "enum": [
+              "organization_validation",
+              "roster_enumeration",
+              "profile_research",
+              "source_review",
+              "export"
+            ]
+          },
+          "status": {
+            "enum": [
+              "pending",
+              "in_progress",
+              "partial",
+              "blocked",
+              "done"
+            ]
+          },
+          "scope": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "description",
+              "claim",
+              "university_complete"
+            ],
+            "properties": {
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "claim": {
+                "const": "listed_public_scope_only"
+              },
+              "university_complete": {
+                "const": false
+              },
+              "source_categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "depends_on": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_urls": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^https?://[^\\s]+$"
+            }
+          },
+          "artifact_paths": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+            }
+          },
+          "review_status": {
+            "enum": [
+              "pending_review",
+              "approved",
+              "changes_requested"
+            ]
+          },
+          "next_action": {
+            "type": "string"
+          },
+          "next_cursor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "attempted_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "last_verified_commit": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{40}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "blocker": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "category",
+              "description"
+            ],
+            "properties": {
+              "category": {
+                "enum": [
+                  "access_denied",
+                  "source_unavailable",
+                  "identity_conflict",
+                  "missing_public_evidence",
+                  "needs_owner_decision",
+                  "other"
+                ]
+              },
+              "description": {
+                "type": "string"
+              },
+              "retry_condition": {
+                "type": "string"
+              }
+            }
+          },
+          "completion": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "checked_at",
+              "evidence_urls",
+              "unresolved_items",
+              "scope_closed"
+            ],
+            "properties": {
+              "checked_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "evidence_urls": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^https?://[^\\s]+$"
+                }
+              },
+              "unresolved_items": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "scope_closed": {
+                "const": true
+              }
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "done"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "completion"
+              ],
+              "properties": {
+                "completion": {
+                  "type": "object"
+                },
+                "review_status": {
+                  "const": "approved"
+                },
+                "artifact_paths": {
+                  "minItems": 1
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "blocked"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "blocker"
+              ],
+              "properties": {
+                "blocker": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "in_progress"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "attempted_at"
+              ],
+              "properties": {
+                "attempted_at": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

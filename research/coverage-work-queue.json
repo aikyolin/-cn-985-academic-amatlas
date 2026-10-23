@@ -1,0 +1,4647 @@
+{
+  "schema_version": "0.1",
+  "accessed_on": "2026-10-23",
+  "institution_id": "hit",
+  "scope": "一校三区组织遍历队列，按组织区分研究院/学院/学部/系，不能把父子组织教师人数相加。",
+  "queue": [
+    {
+      "organization_id": "hit-aerospace",
+      "official_name": "航天学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://sa.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://sa.hit.edu.cn/szdw_21460/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://sa.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://sa.hit.edu.cn/szdw_21460/list.htm",
+          "page_title": "总体介绍",
+          "followup_links": [
+            {
+              "label": "教授委员会",
+              "url": "https://sa.hit.edu.cn/21455/list.htm"
+            },
+            {
+              "label": "师资队伍",
+              "url": "https://sa.hit.edu.cn/szdw_21460/list.htm"
+            },
+            {
+              "label": "博士生导师",
+              "url": "https://sa.hit.edu.cn/21463/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 3,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://sa.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://sa.hit.edu.cn/szdw_21460/list.htm",
+          "evidence_summary": "地址：哈尔滨市南岗区西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://sa.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-seie",
+      "official_name": "电子与信息工程学院",
+      "organization_type": "school",
+      "parent_id": "hit-harbin",
+      "campus_id": "hit-harbin",
+      "campus_candidate": null,
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://seie.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "pilot_roster_captured",
+      "roster_entries": [
+        {
+          "url": "https://seie.hit.edu.cn/19281/list.htm",
+          "label": "通信工程系",
+          "status": "captured",
+          "visible_entries": 42
+        },
+        {
+          "url": "https://seie.hit.edu.cn/19282/list.htm",
+          "label": "电子工程系",
+          "status": "captured",
+          "visible_entries": 27
+        },
+        {
+          "url": "https://seie.hit.edu.cn/19283/list.htm",
+          "label": "测控工程系",
+          "status": "captured",
+          "visible_entries": 41
+        },
+        {
+          "url": "https://seie.hit.edu.cn/19284/list.htm",
+          "label": "信息工程系",
+          "status": "captured",
+          "visible_entries": 33
+        },
+        {
+          "url": "https://seie.hit.edu.cn/19285/list.htm",
+          "label": "微波工程系",
+          "status": "captured",
+          "visible_entries": 22
+        }
+      ],
+      "known_visible_entries": 165,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "逐人身份、任职状态及教育履历核验"
+      ],
+      "next_action": "补履历前核验主页身份及冲突链接"
+    },
+    {
+      "organization_id": "hit-mechanical",
+      "official_name": "机电工程学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://sme.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://sme.hit.edu.cn/17971/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://sme.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://sme.hit.edu.cn/17971/list.htm",
+          "page_title": "总体介绍",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "http://sme.hit.edu.cn/17971/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://sme.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://sme.hit.edu.cn/17971/list.htm",
+          "evidence_summary": "地址：哈尔滨市南岗区西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://sme.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-materials",
+      "official_name": "材料科学与工程学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://mse.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://mse.hit.edu.cn/16898/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://mse.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://mse.hit.edu.cn/16898/list.htm",
+          "page_title": "总体介绍",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "http://mse.hit.edu.cn/16898/list.htm"
+            },
+            {
+              "label": "导师风采",
+              "url": "http://mse.hit.edu.cn/16935/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://mse.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://mse.hit.edu.cn/16898/list.htm",
+          "evidence_summary": "地址：哈尔滨市南岗区西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://mse.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-energy",
+      "official_name": "能源科学与工程学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://power.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://power.hit.edu.cn/5705/list.htm",
+          "label": "师资队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://power.hit.edu.cn/"
+        },
+        {
+          "url": "https://power.hit.edu.cn/5735/list.htm",
+          "label": "教师名录",
+          "status": "readable",
+          "discovery_source": "https://power.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://power.hit.edu.cn/5735/list.htm",
+          "page_title": "教师名录",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://power.hit.edu.cn/5705/list.htm"
+            },
+            {
+              "label": "教师名录",
+              "url": "https://power.hit.edu.cn/5735/list.htm"
+            },
+            {
+              "label": "研究生导师",
+              "url": "https://power.hit.edu.cn/5737/list.htm"
+            },
+            {
+              "label": "校友名录",
+              "url": "https://power.hit.edu.cn/5771/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 125,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://power.hit.edu.cn/19202/list.htm",
+          "label": "师资队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://power.hit.edu.cn/"
+        },
+        {
+          "url": "http://power.hit.edu.cn/19202/list.htm",
+          "label": "师资队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://power.hit.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "homepage_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://power.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://power.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-electrical",
+      "official_name": "电气工程及自动化学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://hitee.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://hitee.hit.edu.cn/17036/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://hitee.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://hitee.hit.edu.cn/17036/list.htm",
+          "page_title": "人才计划",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "http://hitee.hit.edu.cn/17036/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://hitee.hit.edu.cn/17037/list.htm",
+          "label": "专任教师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://hitee.hit.edu.cn/"
+        },
+        {
+          "url": "https://hitee.hit.edu.cn/17038/list.htm",
+          "label": "实验教师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://hitee.hit.edu.cn/"
+        },
+        {
+          "url": "https://hitee.hit.edu.cn/17039/list.htm",
+          "label": "兼职教师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://hitee.hit.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://hitee.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://hitee.hit.edu.cn/17036/list.htm",
+          "evidence_summary": "哈尔滨市南岗区西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://hitee.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-instrument",
+      "official_name": "仪器科学与工程学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://ise.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://ise.hit.edu.cn/16179/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://ise.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://ise.hit.edu.cn/16179/list.htm",
+          "page_title": "人才计划",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "http://ise.hit.edu.cn/16179/list.htm"
+            },
+            {
+              "label": "龙江学者特聘教授",
+              "url": "https://ise.hit.edu.cn/16865/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 63,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://ise.hit.edu.cn/16180/list.htm",
+          "label": "专任教师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://ise.hit.edu.cn/"
+        },
+        {
+          "url": "https://ise.hit.edu.cn/16181/list.htm",
+          "label": "实验教师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://ise.hit.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://ise.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://ise.hit.edu.cn/16179/list.htm",
+          "evidence_summary": "哈尔滨市南岗区西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://ise.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-math",
+      "official_name": "数学学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": null,
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://math.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://math.hit.edu.cn/10223/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://math.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://math.hit.edu.cn/10223/list.htm",
+          "page_title": "教师名单",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://math.hit.edu.cn/10223/list.htm"
+            },
+            {
+              "label": "博士生导师",
+              "url": "https://math.hit.edu.cn/bssds/list.htm"
+            },
+            {
+              "label": "教授",
+              "url": "https://math.hit.edu.cn/js/list.htm"
+            },
+            {
+              "label": "副教授",
+              "url": "https://math.hit.edu.cn/fjs/list.htm"
+            },
+            {
+              "label": "讲师",
+              "url": "https://math.hit.edu.cn/js_10510/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "pending",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://math.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-physics",
+      "official_name": "物理学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://physics.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://physics.hit.edu.cn/ysfc/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://physics.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://physics.hit.edu.cn/ysfc/list.htm",
+          "page_title": "院士风采",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "http://physics.hit.edu.cn/ysfc/list.htm"
+            },
+            {
+              "label": "导师队伍",
+              "url": "http://physics.hit.edu.cn/sssds/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "http://physics.hit.edu.cn/sssds/list.htm",
+          "label": "导师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://physics.hit.edu.cn/"
+        },
+        {
+          "url": "https://physics.hit.edu.cn/zrjsdw/list.htm",
+          "label": "专任教师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://physics.hit.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://physics.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://physics.hit.edu.cn/ysfc/list.htm",
+          "evidence_summary": "地址：哈尔滨市南岗区西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://physics.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-management",
+      "official_name": "经济与管理学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://som.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://som.hit.edu.cn/szdw/jcrc1.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://som.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://som.hit.edu.cn/szdw/jcrc1.htm",
+          "page_title": "杰出人才-哈尔滨工业大学经济与管理学院",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://som.hit.edu.cn/szdw/jcrc1.htm"
+            },
+            {
+              "label": "博士生导师",
+              "url": "https://som.hit.edu.cn/szdw/bssds.htm"
+            },
+            {
+              "label": "硕士生导师",
+              "url": "https://som.hit.edu.cn/szdw/sssds1.htm"
+            },
+            {
+              "label": "教授",
+              "url": "https://som.hit.edu.cn/szdw/js1.htm"
+            },
+            {
+              "label": "副教授",
+              "url": "https://som.hit.edu.cn/szdw/fjs1.htm"
+            },
+            {
+              "label": "助理教授与讲师",
+              "url": "https://som.hit.edu.cn/szdw/zljsyjs.htm"
+            },
+            {
+              "label": "叶强 管理科学与工程系 教授 国家级高层次人才 博士生导师 金融科技",
+              "url": "http://homepage.hit.edu.cn/yeqiang"
+            }
+          ],
+          "personal_profile_link_labels_count": 1,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://som.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://som.hit.edu.cn/szdw/jcrc1.htm",
+          "evidence_summary": "地址：哈尔滨市南岗区法院街13号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://som.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-business",
+      "official_name": "商学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://hbs.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://hbs.hit.edu.cn/szdw/kcsz1.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://hbs.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://hbs.hit.edu.cn/szdw/kcsz1.htm",
+          "page_title": "课程设置-商学院",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://hbs.hit.edu.cn/szdw/kcsz1.htm"
+            },
+            {
+              "label": "博士生/硕士生导师",
+              "url": "https://hbs.hit.edu.cn/szdw/bss_sssds.htm"
+            },
+            {
+              "label": "教授/研究员",
+              "url": "https://hbs.hit.edu.cn/szdw/js_yjy.htm"
+            },
+            {
+              "label": "副教授/副研究员",
+              "url": "https://hbs.hit.edu.cn/szdw/fjs_fyjy.htm"
+            },
+            {
+              "label": "讲师/助理研究员",
+              "url": "https://hbs.hit.edu.cn/szdw/js_zlyjy.htm"
+            },
+            {
+              "label": "论文导师",
+              "url": "https://hbs.hit.edu.cn/szdw/lwds.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://hbs.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://hbs.hit.edu.cn/szdw/kcsz1.htm",
+          "evidence_summary": "地址：哈尔滨市南岗区西大直街66号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://hbs.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-humanities",
+      "official_name": "人文社科学部",
+      "organization_type": "faculty",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://rwskxb.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://rwskxb.hit.edu.cn/szdw/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://rwskxb.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://rwskxb.hit.edu.cn/szdw/list.htm",
+          "page_title": "师资队伍",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://rwskxb.hit.edu.cn/szdw/list.htm"
+            },
+            {
+              "label": "学部师资",
+              "url": "https://rwskxb.hit.edu.cn/xbsz/list.htm"
+            },
+            {
+              "label": "兼职教授",
+              "url": "https://rwskxb.hit.edu.cn/jzjs/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 29,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "homepage_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://rwskxb.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://rwskxb.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-marxism",
+      "official_name": "马克思主义学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://marx.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://marx.hit.edu.cn/szdw/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://marx.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://marx.hit.edu.cn/szdw/list.htm",
+          "page_title": "师资队伍",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://marx.hit.edu.cn/szdw/list.htm"
+            },
+            {
+              "label": "马克思主义理论学科博士生导师队伍 2025-11-24",
+              "url": "https://marx.hit.edu.cn/2025/1124/c9991a382755/page.htm"
+            },
+            {
+              "label": "马克思主义理论学科硕士生导师队伍 2025-11-18",
+              "url": "https://marx.hit.edu.cn/2025/1118/c9991a382263/page.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://marx.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://marx.hit.edu.cn/szdw/list.htm",
+          "evidence_summary": "地址：哈尔滨市南岗区西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://marx.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-civil",
+      "official_name": "土木工程学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://civil.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://civil.hit.edu.cn/8431/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://civil.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://civil.hit.edu.cn/8431/list.htm",
+          "page_title": "师资队伍",
+          "followup_links": [
+            {
+              "label": "教授会",
+              "url": "https://civil.hit.edu.cn/8448/list.htm"
+            },
+            {
+              "label": "师资队伍",
+              "url": "https://civil.hit.edu.cn/8431/list.htm"
+            },
+            {
+              "label": "师资现状",
+              "url": "https://civil.hit.edu.cn/8456/list.htm"
+            },
+            {
+              "label": "博士生导师",
+              "url": "https://civil.hit.edu.cn/8458/list.htm"
+            },
+            {
+              "label": "硕士生导师",
+              "url": "https://civil.hit.edu.cn/8459/list.htm"
+            },
+            {
+              "label": "行业导师",
+              "url": "https://civil.hit.edu.cn/xyds/list.htm"
+            },
+            {
+              "label": "MEM导师",
+              "url": "https://civil.hit.edu.cn/MEMds/list.htm"
+            },
+            {
+              "label": "校友名录",
+              "url": "https://civil.hit.edu.cn/8508/list.htm"
+            },
+            {
+              "label": "捐赠名录",
+              "url": "https://civil.hit.edu.cn/8511/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "official_source_cross_checked",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://civil.hit.edu.cn/2026/0321/c8439a388638/page.htm",
+          "evidence_summary": "官方招生方案明确区分校本部土木工程学院、深圳校区、威海校区；学院活动地点标为校本部二校区。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://civil.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-environment",
+      "official_name": "环境学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://env.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://env.hit.edu.cn/szdw/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://env.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://env.hit.edu.cn/szdw/list.htm",
+          "page_title": "师资概况",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://env.hit.edu.cn/szdw/list.htm"
+            },
+            {
+              "label": "师资概况",
+              "url": "https://env.hit.edu.cn/19883/list.htm"
+            },
+            {
+              "label": "博士生导师",
+              "url": "https://env.hit.edu.cn/19885/list.htm"
+            },
+            {
+              "label": "助理教授和博士后",
+              "url": "https://env.hit.edu.cn/19893/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 115,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://env.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://env.hit.edu.cn/szdw/list.htm",
+          "evidence_summary": "地址：哈尔滨市南岗区黄河路73号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://env.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-architecture",
+      "official_name": "建筑与设计学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": null,
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://arch.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "homepage_readable_roster_link_not_found",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "pending",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://arch.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-transport",
+      "official_name": "交通科学与工程学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://jtxy.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://jtxy.hit.edu.cn/szdw/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://jtxy.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://jtxy.hit.edu.cn/szdw/list.htm",
+          "page_title": "未来交通设施系",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://jtxy.hit.edu.cn/szdw/list.htm"
+            },
+            {
+              "label": "导师队伍",
+              "url": "https://jtxy.hit.edu.cn/dsdw/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 33,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://jtxy.hit.edu.cn/dsdw/list.htm",
+          "label": "导师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://jtxy.hit.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://jtxy.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://jtxy.hit.edu.cn/szdw/list.htm",
+          "evidence_summary": "地址：黑龙江省哈尔滨市南岗区黄河路73号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://jtxy.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-computing",
+      "official_name": "计算学部",
+      "organization_type": "faculty",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://computing.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://computing.hit.edu.cn/11261/list.htm",
+          "label": "师资队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://computing.hit.edu.cn/"
+        },
+        {
+          "url": "https://computing.hit.edu.cn/jsml/list.htm",
+          "label": "教师名录",
+          "status": "readable",
+          "discovery_source": "https://computing.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://computing.hit.edu.cn/jsml/list.htm",
+          "page_title": "教师名录",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://computing.hit.edu.cn/11261/list.htm"
+            },
+            {
+              "label": "研究生导师",
+              "url": "https://computing.hit.edu.cn/yjsds/list.htm"
+            },
+            {
+              "label": "博士生导师",
+              "url": "https://computing.hit.edu.cn/22195/list.htm"
+            },
+            {
+              "label": "硕士生导师",
+              "url": "https://computing.hit.edu.cn/22196/list.htm"
+            },
+            {
+              "label": "教师名录",
+              "url": "https://computing.hit.edu.cn/jsml/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://computing.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://computing.hit.edu.cn/jsml/list.htm",
+          "evidence_summary": "地址：中国.哈尔滨市西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://computing.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-chemical",
+      "official_name": "化工与化学学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://chemeng.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://chemeng.hit.edu.cn/2483/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://chemeng.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://chemeng.hit.edu.cn/2483/list.htm",
+          "page_title": "院士",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://chemeng.hit.edu.cn/2483/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://chemeng.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://chemeng.hit.edu.cn/2483/list.htm",
+          "evidence_summary": "地址：哈尔滨市南岗区西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://chemeng.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-future",
+      "official_name": "未来技术学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://future.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "homepage_readable_roster_link_not_found",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "homepage_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://future.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://future.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-engineers",
+      "official_name": "国家卓越工程师学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://nsee.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "homepage_readable_roster_link_not_found",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "homepage_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://nsee.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://nsee.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-physical-education",
+      "official_name": "体育部",
+      "organization_type": "teaching_division",
+      "parent_id": "hit",
+      "campus_id": null,
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://tyb.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://tyb.hit.edu.cn/10386/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://tyb.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://tyb.hit.edu.cn/10386/list.htm",
+          "page_title": "师资队伍",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://tyb.hit.edu.cn/10386/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "pending",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://tyb.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-lyon",
+      "official_name": "里昂数据科学学院",
+      "organization_type": "school",
+      "parent_id": "hit-management",
+      "campus_id": null,
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "https://www.hit.edu.cn/11589/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_pending",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "pending",
+      "evidence": [
+        {
+          "source_url": "https://som.hit.edu.cn/info/1011/24683.htm",
+          "evidence_summary": "已确认2027合作办学招生章程；包含双方教师授课，仍需独立教师清单及校区明确证据。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性",
+        "联合办学教师双聘/授课与正式任职区别"
+      ],
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区"
+    },
+    {
+      "organization_id": "hit-foreign-languages",
+      "official_name": "外国语学院",
+      "organization_type": "school",
+      "parent_id": "hit-humanities",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "https://www.hit.edu.cn/11589/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://rwskxb.hit.edu.cn/xbsz/list.htm",
+          "label": "学部师资（按学院分区）",
+          "status": "readable",
+          "checked_on": "2026-10-23",
+          "must_select_organization_section": true
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "official_source_cross_checked",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://rwskxb.hit.edu.cn/xbsz/list.htm",
+          "evidence_summary": "官方人文社科学部师资表明确列出该学院；同一学部校址在哈尔滨。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按师资表学院分区解析，不把整个学部名单分配给每个学院。"
+    },
+    {
+      "organization_id": "hit-social-sciences",
+      "official_name": "社会科学学院",
+      "organization_type": "school",
+      "parent_id": "hit-humanities",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "https://www.hit.edu.cn/11589/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://rwskxb.hit.edu.cn/xbsz/list.htm",
+          "label": "学部师资（按学院分区）",
+          "status": "readable",
+          "checked_on": "2026-10-23",
+          "must_select_organization_section": true
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "official_source_cross_checked",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://rwskxb.hit.edu.cn/xbsz/list.htm",
+          "evidence_summary": "官方人文社科学部师资表明确列出该学院；同一学部校址在哈尔滨。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按师资表学院分区解析，不把整个学部名单分配给每个学院。"
+    },
+    {
+      "organization_id": "hit-computer-science",
+      "official_name": "计算机科学与技术学院",
+      "organization_type": "school",
+      "parent_id": "hit-computing",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://computing.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://computing.hit.edu.cn/11261/list.htm",
+          "label": "师资队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://computing.hit.edu.cn/"
+        },
+        {
+          "url": "https://computing.hit.edu.cn/jsml/list.htm",
+          "label": "教师名录",
+          "status": "readable",
+          "discovery_source": "https://computing.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://computing.hit.edu.cn/jsml/list.htm",
+          "page_title": "教师名录",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://computing.hit.edu.cn/11261/list.htm"
+            },
+            {
+              "label": "研究生导师",
+              "url": "https://computing.hit.edu.cn/yjsds/list.htm"
+            },
+            {
+              "label": "博士生导师",
+              "url": "https://computing.hit.edu.cn/22195/list.htm"
+            },
+            {
+              "label": "硕士生导师",
+              "url": "https://computing.hit.edu.cn/22196/list.htm"
+            },
+            {
+              "label": "教师名录",
+              "url": "https://computing.hit.edu.cn/jsml/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://computing.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://computing.hit.edu.cn/jsml/list.htm",
+          "evidence_summary": "地址：中国.哈尔滨市西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://computing.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-ai",
+      "official_name": "人工智能学院",
+      "organization_type": "school",
+      "parent_id": "hit-computing",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://sai.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://sai.hit.edu.cn/19648/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://sai.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://sai.hit.edu.cn/19648/list.htm",
+          "page_title": "高层次人才",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://sai.hit.edu.cn/19648/list.htm"
+            },
+            {
+              "label": "跨学科研究生导师",
+              "url": "https://sai.hit.edu.cn/kxkyjsds/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 9,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://sai.hit.edu.cn/zrjs/list.htm",
+          "label": "专任教师",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://sai.hit.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://sai.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://sai.hit.edu.cn/19648/list.htm",
+          "evidence_summary": "地址：哈尔滨市南岗区西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://sai.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-software",
+      "official_name": "国家示范性软件学院",
+      "organization_type": "school",
+      "parent_id": "hit-computing",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://software.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://software.hit.edu.cn/12762/list.htm",
+          "label": "师资力量",
+          "status": "readable",
+          "discovery_source": "https://software.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://software.hit.edu.cn/12762/list.htm",
+          "page_title": "教授",
+          "followup_links": [
+            {
+              "label": "师资力量",
+              "url": "http://software.hit.edu.cn/12762/list.htm"
+            },
+            {
+              "label": "教授",
+              "url": "https://software.hit.edu.cn/12762/list.htm"
+            },
+            {
+              "label": "副教授",
+              "url": "https://software.hit.edu.cn/12763/list.htm"
+            },
+            {
+              "label": "海外兼职师资",
+              "url": "https://software.hit.edu.cn/12765/list.htm"
+            },
+            {
+              "label": "工业界兼职师资",
+              "url": "https://software.hit.edu.cn/12766/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://software.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://software.hit.edu.cn/12762/list.htm",
+          "evidence_summary": "地址：哈尔滨市西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://software.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-cybersecurity",
+      "official_name": "网络空间安全学院",
+      "organization_type": "school",
+      "parent_id": "hit-computing",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://cys.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://cys.hit.edu.cn/szdw1/bssds.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://cys.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://cys.hit.edu.cn/szdw1/bssds.htm",
+          "page_title": "博士生导师-网络空间安全学院 ",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://cys.hit.edu.cn/szdw1/bssds.htm"
+            },
+            {
+              "label": "博士生导师",
+              "url": "https://cys.hit.edu.cn/szdw1/bssds.htm"
+            },
+            {
+              "label": "硕士生导师",
+              "url": "https://cys.hit.edu.cn/szdw1/sssds.htm"
+            },
+            {
+              "label": "下页",
+              "url": "https://cys.hit.edu.cn/szdw1/bssds/1.htm"
+            },
+            {
+              "label": "尾页",
+              "url": "https://cys.hit.edu.cn/szdw1/bssds/1.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://cys.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://cys.hit.edu.cn/szdw1/bssds.htm",
+          "evidence_summary": "哈尔滨市南岗区西大直街92号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://cys.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-medicine",
+      "official_name": "医学与健康学院",
+      "organization_type": "school",
+      "parent_id": "hit-life-medicine",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://med.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://med.hit.edu.cn/12987/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://med.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://med.hit.edu.cn/12987/list.htm",
+          "page_title": "博士生导师",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://med.hit.edu.cn/12987/list.htm"
+            },
+            {
+              "label": "博士生导师",
+              "url": "https://med.hit.edu.cn/bssds/list.htm"
+            },
+            {
+              "label": "硕士生导师",
+              "url": "https://med.hit.edu.cn/sssds/list.htm"
+            },
+            {
+              "label": "教授",
+              "url": "https://med.hit.edu.cn/js/list.htm"
+            },
+            {
+              "label": "副教授",
+              "url": "https://med.hit.edu.cn/fjs/list.htm"
+            },
+            {
+              "label": "助理教授与讲师",
+              "url": "https://med.hit.edu.cn/zljsyjs/list.htm"
+            },
+            {
+              "label": "兼职教授",
+              "url": "https://med.hit.edu.cn/jzjs/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 22,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://med.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://med.hit.edu.cn/12987/list.htm",
+          "evidence_summary": "地址：哈尔滨市南岗区一匡街2号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://med.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-life",
+      "official_name": "生命科学与技术学院",
+      "organization_type": "school",
+      "parent_id": "hit-life-medicine",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://life.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://life.hit.edu.cn/21034/list.htm",
+          "label": "师资队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://life.hit.edu.cn/"
+        },
+        {
+          "url": "https://life.hit.edu.cn/21034/list.htm",
+          "label": "教师名录",
+          "status": "readable",
+          "discovery_source": "https://life.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://life.hit.edu.cn/21034/list.htm",
+          "page_title": "教师名录",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "http://life.hit.edu.cn/21034/list.htm"
+            },
+            {
+              "label": "教师名录",
+              "url": "https://life.hit.edu.cn/21034/list.htm"
+            },
+            {
+              "label": "下一页>>",
+              "url": "https://life.hit.edu.cn/21034/list2.htm"
+            },
+            {
+              "label": "尾页",
+              "url": "https://life.hit.edu.cn/21034/list6.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "roster_page_address_evidence",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://life.hit.edu.cn/",
+          "evidence_summary": "该官方单位首页地址包含哈尔滨市/哈尔滨南岗区及街路地址。",
+          "accessed_on": "2026-10-23"
+        },
+        {
+          "field": "campus_id",
+          "source_url": "https://life.hit.edu.cn/21034/list.htm",
+          "evidence_summary": "哈尔滨市南岗区一匡街2号",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://life.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-sino-russian-engineers",
+      "official_name": "中俄卓越工程师学院",
+      "organization_type": "school",
+      "parent_id": "hit-saint-petersburg",
+      "campus_id": null,
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "https://www.hit.edu.cn/11589/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_pending",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "pending",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区"
+    },
+    {
+      "organization_id": "hit-life-medicine",
+      "official_name": "生命科学和医学学部",
+      "organization_type": "faculty",
+      "parent_id": "hit",
+      "campus_id": "hit-harbin",
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "https://www.hit.edu.cn/11589/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "aggregate_parent_traverse_children",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "official_source_cross_checked",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://med.hit.edu.cn/2024/1210/c12995a360975/page.htm",
+          "evidence_summary": "学部教师公共事务公告位于医学与健康学院站；该站明确哈尔滨市学院地址。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "分别遍历 hit-medicine 和 hit-life；学部只作聚合，教师按人ID去重。"
+    },
+    {
+      "organization_id": "hit-entrepreneurship",
+      "official_name": "创新创业学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": null,
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "https://www.hit.edu.cn/11589/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_pending",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "pending",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区"
+    },
+    {
+      "organization_id": "hit-space",
+      "official_name": "空天学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": null,
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "https://www.hit.edu.cn/11589/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_pending",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "pending",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区"
+    },
+    {
+      "organization_id": "hit-agricultural-ai",
+      "official_name": "农业人工智能学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": null,
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "https://www.hit.edu.cn/11589/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_pending",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "pending",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区"
+    },
+    {
+      "organization_id": "hit-saint-petersburg",
+      "official_name": "圣大联合学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": null,
+      "campus_candidate": "hit-harbin",
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "https://www.hit.edu.cn/11589/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_pending",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "pending",
+      "evidence": [
+        {
+          "source_url": "https://math.hit.edu.cn/2026/0930/c10380a402252/page.htm",
+          "evidence_summary": "已确认中外合作办学学院，并由相关理科专业支撑；不能把合作院校全体教师作为本校任职教师。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性",
+        "联合办学教师双聘/授课与正式任职区别"
+      ],
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区",
+      "blockers": [
+        {
+          "url": "https://www.crs.jsj.edu.cn/aproval/detail/3974",
+          "status": "anti_bot_validator_no_content",
+          "action": "只读打开官方备案",
+          "outcome": "redirect_to_validator",
+          "resolution": "未绕过验证；保留学校官方招生章程作为可用公开来源。"
+        }
+      ]
+    },
+    {
+      "organization_id": "hit-shenzhen-design",
+      "official_name": "深圳国际设计学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "http://sisd.hit.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://sisd.hit.edu.cn/14945/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://sisd.hit.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://sisd.hit.edu.cn/14945/list.htm",
+          "page_title": "概览",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "http://sisd.hit.edu.cn/14945/list.htm"
+            },
+            {
+              "label": "师资队伍",
+              "url": "https://sisd.hit.edu.cn/14946/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://sisd.hit.edu.cn/14946/list.htm",
+          "label": "师资队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://sisd.hit.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "official_source_cross_checked",
+      "evidence": [
+        {
+          "field": "campus_id",
+          "source_url": "https://sisd.hit.edu.cn/",
+          "evidence_summary": "学院地址明确位于广东省深圳市南山区深圳大学城哈工大校区。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://sisd.hit.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-polyu-shenzhen-design",
+      "official_name": "香港理工大学深圳国际设计学院",
+      "organization_type": "school",
+      "parent_id": "hit",
+      "campus_id": null,
+      "campus_candidate": null,
+      "organization_source": "https://www.hit.edu.cn/11589/list.htm",
+      "official_homepage": "https://www.hit.edu.cn/11589/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_pending",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "pending",
+      "evidence": [
+        {
+          "source_url": "https://news.hit.edu.cn/2026/0929/c11508a243617/page.htm",
+          "evidence_summary": "2026年9月官方揭牌新闻确认独立合作办学机构，并关联深圳未来设计学院；机构不能直接合并。",
+          "accessed_on": "2026-10-23"
+        }
+      ],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性",
+        "联合办学教师双聘/授课与正式任职区别"
+      ],
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区"
+    },
+    {
+      "organization_id": "hit-weihai-marine-engineering",
+      "official_name": "海洋工程学院",
+      "organization_type": "school",
+      "parent_id": "hit-weihai",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://snaoe.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://snaoe.hitwh.edu.cn/32/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://snaoe.hitwh.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://snaoe.hitwh.edu.cn/32/list.htm",
+          "page_title": "机械工程系",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://snaoe.hitwh.edu.cn/32/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 22,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://snaoe.hitwh.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-weihai-marine-science",
+      "official_name": "海洋科学与技术学院",
+      "organization_type": "school",
+      "parent_id": "hit-weihai",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://marine.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://marine.hitwh.edu.cn/hjgcx/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://marine.hitwh.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://marine.hitwh.edu.cn/hjgcx/list.htm",
+          "page_title": "环境工程系",
+          "followup_links": [
+            {
+              "label": "教授委员会",
+              "url": "https://marine.hitwh.edu.cn/1469/list.htm"
+            },
+            {
+              "label": "师资队伍",
+              "url": "http://marine.hitwh.edu.cn/hjgcx/list.htm"
+            },
+            {
+              "label": "兼职教授",
+              "url": "https://marine.hitwh.edu.cn/1472/list.htm"
+            },
+            {
+              "label": "导师队伍",
+              "url": "https://marine.hitwh.edu.cn/1479/list.htm"
+            },
+            {
+              "label": "校友导师",
+              "url": "https://marine.hitwh.edu.cn/xyds/list.htm"
+            },
+            {
+              "label": "校友名录",
+              "url": "https://marine.hitwh.edu.cn/1496/list.htm"
+            },
+            {
+              "label": "博士/教授/博导",
+              "url": "http://homepage.hit.edu.cn/Jiangjie?lang=zh"
+            },
+            {
+              "label": "博士/教授/硕导",
+              "url": "http://homepage.hit.edu.cn/sunxiuhua?lang=zh"
+            },
+            {
+              "label": "博士/副教授/硕导/系主任",
+              "url": "http://homepage.hit.edu.cn/wangkaihit?lang=zh"
+            },
+            {
+              "label": "博士/副教授/硕导/系副主任",
+              "url": "http://homepage.hit.edu.cn/chizhenxing?lang=zh"
+            },
+            {
+              "label": "博士/副教授/硕导",
+              "url": "http://homepage.hit.edu.cn/daijicui?lang=zh"
+            },
+            {
+              "label": "硕士/副教授",
+              "url": "http://homepage.hit.edu.cn/chenggang?lang=zh"
+            },
+            {
+              "label": "博士/副教授/博导",
+              "url": "http://homepage.hit.edu.cn/lizhipeng?lang=zh"
+            },
+            {
+              "label": "博士/副教授/博导",
+              "url": "http://homepage.hit.edu.cn/chengxiquan?lang=zh"
+            },
+            {
+              "label": "博士/副教授/硕导",
+              "url": "http://homepage.hit.edu.cn/Kyu?lang=zh"
+            },
+            {
+              "label": "博士/副教授/博导",
+              "url": "http://homepage.hit.edu.cn/hongzh?lang=zh"
+            },
+            {
+              "label": "博士/副教授/博导",
+              "url": "http://homepage.hit.edu.cn/suixiao?lang=zh"
+            },
+            {
+              "label": "博士/副教授/博导",
+              "url": "http://homepage.hit.edu.cn/xiebinghan?lang=zh"
+            },
+            {
+              "label": "博士/副研究员/硕导",
+              "url": "http://homepage.hit.edu.cn/zhangguoyu?lang=zh"
+            },
+            {
+              "label": "博士/副教授/硕导",
+              "url": "http://homepage.hit.edu.cn/juyun?lang=zh"
+            },
+            {
+              "label": "博士/副教授/硕导",
+              "url": "http://homepage.hit.edu.cn/zhaoyinghitwh"
+            },
+            {
+              "label": "博士/副教授",
+              "url": "https://marine.hitwh.edu.cn/2025/0930/c5085a205243/page.htm"
+            },
+            {
+              "label": "硕士/讲师",
+              "url": "http://homepage.hit.edu.cn/liufeng?lang=zh"
+            },
+            {
+              "label": "硕士/讲师",
+              "url": "https://marine.hitwh.edu.cn/2022/0707/c5085a157844/page.htm"
+            },
+            {
+              "label": "博士/讲师",
+              "url": "https://marine.hitwh.edu.cn/2022/0707/c5085a157843/page.htm"
+            },
+            {
+              "label": "博士/讲师",
+              "url": "https://marine.hitwh.edu.cn/2022/0707/c5085a157841/page.htm"
+            },
+            {
+              "label": "博士/讲师",
+              "url": "http://homepage.hit.edu.cn/Jiayuhong?lang=zh"
+            },
+            {
+              "label": "博士/副教授/硕导",
+              "url": "http://homepage.hit.edu.cn/jiangyanxiao?lang=zh"
+            },
+            {
+              "label": "博士/副教授/硕导",
+              "url": "http://homepage.hit.edu.cn/songdan"
+            },
+            {
+              "label": "博士/讲师",
+              "url": "https://marine.hitwh.edu.cn/2024/0408/c5085a181284/page.htm"
+            },
+            {
+              "label": "博士/讲师",
+              "url": "https://marine.hitwh.edu.cn/2024/0408/c5085a181285/page.htm"
+            },
+            {
+              "label": "博士/讲师/硕导",
+              "url": "https://marine.hitwh.edu.cn/2024/0408/c5085a181287/page.htm"
+            },
+            {
+              "label": "博士/特聘副研究员/硕导",
+              "url": "https://marine.hitwh.edu.cn/2025/0331/c5085a193801/page.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 38,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "http://marine.hitwh.edu.cn/hjgcx/list.htm",
+          "label": "专任教师",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://marine.hitwh.edu.cn/"
+        },
+        {
+          "url": "https://marine.hitwh.edu.cn/1479/list.htm",
+          "label": "导师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://marine.hitwh.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://marine.hitwh.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-weihai-automotive",
+      "official_name": "汽车工程学院",
+      "organization_type": "school",
+      "parent_id": "hit-weihai",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://auto.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://auto.hitwh.edu.cn/152/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://auto.hitwh.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://auto.hitwh.edu.cn/152/list.htm",
+          "page_title": "车辆工程系",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://auto.hitwh.edu.cn/152/list.htm"
+            },
+            {
+              "label": "导师队伍",
+              "url": "https://auto.hitwh.edu.cn/dsdw/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 12,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://auto.hitwh.edu.cn/dsdw/list.htm",
+          "label": "导师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://auto.hitwh.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://auto.hitwh.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-weihai-information",
+      "official_name": "信息科学与工程学院",
+      "organization_type": "school",
+      "parent_id": "hit-weihai",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://siee.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "pilot_roster_captured",
+      "roster_entries": [
+        {
+          "url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+          "label": "控制科学与工程系",
+          "status": "captured",
+          "visible_entries": 16
+        },
+        {
+          "url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+          "label": "仪器科学与技术系",
+          "status": "captured",
+          "visible_entries": 10
+        },
+        {
+          "url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+          "label": "通信工程系",
+          "status": "captured",
+          "visible_entries": 15
+        },
+        {
+          "url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+          "label": "电子信息工程系",
+          "status": "captured",
+          "visible_entries": 19
+        },
+        {
+          "url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+          "label": "电子科学与技术系",
+          "status": "captured",
+          "visible_entries": 8
+        },
+        {
+          "url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+          "label": "电磁场与无线技术系",
+          "status": "captured",
+          "visible_entries": 6
+        },
+        {
+          "url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+          "label": "电工电子教研室系",
+          "status": "captured",
+          "visible_entries": 7
+        },
+        {
+          "url": "https://siee.hitwh.edu.cn/jslb/list.htm",
+          "label": "实验中心",
+          "status": "captured",
+          "visible_entries": 13
+        }
+      ],
+      "known_visible_entries": 94,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "逐人身份、任职状态及教育履历核验"
+      ],
+      "next_action": "补履历前核验主页身份及冲突链接"
+    },
+    {
+      "organization_id": "hit-weihai-computer",
+      "official_name": "计算机科学与技术学院（软件学院）",
+      "organization_type": "school",
+      "parent_id": "hit-weihai",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://cst.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://cst.hitwh.edu.cn/jsdw/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://cst.hitwh.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://cst.hitwh.edu.cn/jsdw/list.htm",
+          "page_title": "师资队伍",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://cst.hitwh.edu.cn/jsdw/list.htm"
+            },
+            {
+              "label": "导师队伍",
+              "url": "https://cst.hitwh.edu.cn/dsdw/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://cst.hitwh.edu.cn/dsdw/list.htm",
+          "label": "导师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://cst.hitwh.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://cst.hitwh.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-weihai-materials",
+      "official_name": "材料科学与工程学院",
+      "organization_type": "school",
+      "parent_id": "hit-weihai",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://mse.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://mse.hitwh.edu.cn/szdw/list.htm",
+          "label": "师资队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://mse.hitwh.edu.cn/"
+        },
+        {
+          "url": "https://mse.hitwh.edu.cn/jsml/list.htm",
+          "label": "教师名录",
+          "status": "readable",
+          "discovery_source": "https://mse.hitwh.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://mse.hitwh.edu.cn/jsml/list.htm",
+          "page_title": "教师名录",
+          "followup_links": [
+            {
+              "label": "院教授会",
+              "url": "https://mse.hitwh.edu.cn/yjsh/list.htm"
+            },
+            {
+              "label": "师资队伍",
+              "url": "https://mse.hitwh.edu.cn/szdw/list.htm"
+            },
+            {
+              "label": "师资概况",
+              "url": "https://mse.hitwh.edu.cn/szgk/list.htm"
+            },
+            {
+              "label": "教师名录",
+              "url": "https://mse.hitwh.edu.cn/jsml/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 84,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://mse.hitwh.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-weihai-new-energy",
+      "official_name": "新能源学院",
+      "organization_type": "school",
+      "parent_id": "hit-weihai",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://newenergy.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://newenergy.hitwh.edu.cn/szdw/list.htm",
+          "label": "师资队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://newenergy.hitwh.edu.cn/"
+        },
+        {
+          "url": "https://newenergy.hitwh.edu.cn/jsml/list.htm",
+          "label": "教师名录",
+          "status": "readable",
+          "discovery_source": "https://newenergy.hitwh.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://newenergy.hitwh.edu.cn/jsml/list.htm",
+          "page_title": "教师名录",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://newenergy.hitwh.edu.cn/szdw/list.htm"
+            },
+            {
+              "label": "兼职教授",
+              "url": "https://newenergy.hitwh.edu.cn/jzjs/list.htm"
+            },
+            {
+              "label": "教师名录",
+              "url": "https://newenergy.hitwh.edu.cn/jsml/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 26,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://newenergy.hitwh.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-weihai-science",
+      "official_name": "理学院",
+      "organization_type": "school",
+      "parent_id": "hit-weihai",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://ss.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://ss.hitwh.edu.cn/sxx/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://ss.hitwh.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://ss.hitwh.edu.cn/sxx/list.htm",
+          "page_title": "数学系",
+          "followup_links": [
+            {
+              "label": "教授会",
+              "url": "https://ss.hitwh.edu.cn/jsh/list.htm"
+            },
+            {
+              "label": "师资队伍",
+              "url": "http://ss.hitwh.edu.cn/sxx/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 20,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://ss.hitwh.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-weihai-management",
+      "official_name": "经济管理学院",
+      "organization_type": "school",
+      "parent_id": "hit-weihai",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://sem.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://sem.hitwh.edu.cn/513/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://sem.hitwh.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://sem.hitwh.edu.cn/513/list.htm",
+          "page_title": "工商管理系",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://sem.hitwh.edu.cn/513/list.htm"
+            },
+            {
+              "label": "导师队伍",
+              "url": "https://sem.hitwh.edu.cn/dsdw/list.htm"
+            },
+            {
+              "label": "校友名录",
+              "url": "https://sem.hitwh.edu.cn/xyml/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 4,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://sem.hitwh.edu.cn/dsdw/list.htm",
+          "label": "导师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://sem.hitwh.edu.cn/"
+        },
+        {
+          "url": "http://sem.hitwh.edu.cn/gsglx/list.htm",
+          "label": "教师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://sem.hitwh.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://sem.hitwh.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-weihai-marxism",
+      "official_name": "马克思主义学院",
+      "organization_type": "school",
+      "parent_id": "hit-weihai",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://dipt.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://dipt.hitwh.edu.cn/zrjs/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://dipt.hitwh.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://dipt.hitwh.edu.cn/zrjs/list.htm",
+          "page_title": "专任教师",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "http://dipt.hitwh.edu.cn/zrjs/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 36,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://dipt.hitwh.edu.cn/zrjs/list.htm",
+          "label": "专任教师",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://dipt.hitwh.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://dipt.hitwh.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-weihai-foundation",
+      "official_name": "基础教学部",
+      "organization_type": "teaching_division",
+      "parent_id": "hit-weihai",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "aggregate_parent_traverse_children",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "沿官方目录展示分组遍历语言文学学院与体育教学部，核查行政关系并避免父子重复。"
+    },
+    {
+      "organization_id": "hit-weihai-languages",
+      "official_name": "语言文学学院",
+      "organization_type": "school",
+      "parent_id": "hit-weihai-foundation",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://sll.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://sll.hitwh.edu.cn/841/list.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://sll.hitwh.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://sll.hitwh.edu.cn/841/list.htm",
+          "page_title": "师资队伍",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://sll.hitwh.edu.cn/841/list.htm"
+            },
+            {
+              "label": "下一页>>",
+              "url": "https://sll.hitwh.edu.cn/841/list2.htm"
+            },
+            {
+              "label": "尾页",
+              "url": "https://sll.hitwh.edu.cn/841/list4.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://sll.hitwh.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-weihai-physical-education",
+      "official_name": "体育教学部",
+      "organization_type": "teaching_division",
+      "parent_id": "hit-weihai-foundation",
+      "campus_id": "hit-weihai",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitwh.edu.cn/yxsz/list.htm",
+      "official_homepage": "http://ped.hitwh.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "http://ped.hitwh.edu.cn/664/list.htm",
+          "label": "师资力量",
+          "status": "readable",
+          "discovery_source": "https://ped.hitwh.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://ped.hitwh.edu.cn/664/list.htm",
+          "page_title": "师资力量",
+          "followup_links": [
+            {
+              "label": "师资力量",
+              "url": "http://ped.hitwh.edu.cn/664/list.htm"
+            },
+            {
+              "label": "师资力量",
+              "url": "https://ped.hitwh.edu.cn/664/list.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://ped.hitwh.edu.cn/664/list.htm",
+          "label": "师资力量",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://ped.hitwh.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://ped.hitwh.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-information",
+      "official_name": "信息学部",
+      "organization_type": "faculty",
+      "parent_id": "hit-shenzhen",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://cist.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "interactive_directory_filter_required",
+      "roster_entries": [
+        {
+          "url": "https://faculty.hitsz.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS",
+          "label": "师资队伍",
+          "status": "interactive_directory_filter_required",
+          "discovery_source": "https://cist.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://homepage.hit.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS",
+          "page_title": "哈尔滨工业大学教师个人主页",
+          "followup_links": [],
+          "personal_profile_link_labels_count": 1,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性",
+        "统一教师名录需核验院系筛选与动态结果，静态HTML不是完整名单。"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://cist.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-computer",
+      "official_name": "计算机科学与技术学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-information",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://cs.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "interactive_directory_filter_required",
+      "roster_entries": [
+        {
+          "url": "https://homepage.hit.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS&deptName=600001",
+          "label": "师资力量",
+          "status": "interactive_directory_filter_required",
+          "discovery_source": "https://cs.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://homepage.hit.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS&deptName=600001",
+          "page_title": "哈尔滨工业大学教师个人主页",
+          "followup_links": [],
+          "personal_profile_link_labels_count": 1,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性",
+        "统一教师名录需核验院系筛选与动态结果，静态HTML不是完整名单。"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://cs.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-information-science",
+      "official_name": "信息科学与技术学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-information",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://eie.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "interactive_directory_filter_required",
+      "roster_entries": [
+        {
+          "url": "http://faculty.hitsz.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS&deptName=600001",
+          "label": "师资力量",
+          "status": "interactive_directory_filter_required",
+          "discovery_source": "https://eie.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://homepage.hit.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS&deptName=600001",
+          "page_title": "哈尔滨工业大学教师个人主页",
+          "followup_links": [],
+          "personal_profile_link_labels_count": 1,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性",
+        "统一教师名录需核验院系筛选与动态结果，静态HTML不是完整名单。"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://eie.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-ic",
+      "official_name": "集成电路学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-information",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://ic.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "pilot_roster_captured",
+      "roster_entries": [
+        {
+          "url": "https://ic.hitsz.edu.cn/szll/qzjs/js.htm",
+          "label": "教授",
+          "status": "captured",
+          "visible_entries": 24
+        },
+        {
+          "url": "https://ic.hitsz.edu.cn/szll/qzjs/fjs.htm",
+          "label": "副教授",
+          "status": "captured",
+          "visible_entries": 7
+        },
+        {
+          "url": "https://ic.hitsz.edu.cn/szll/yjy.htm",
+          "label": "研究员",
+          "status": "captured",
+          "visible_entries": 4
+        }
+      ],
+      "known_visible_entries": 35,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "逐人身份、任职状态及教育履历核验"
+      ],
+      "next_action": "补履历前核验主页身份及冲突链接"
+    },
+    {
+      "organization_id": "hit-shenzhen-international-ai",
+      "official_name": "国际人工智能研究院",
+      "organization_type": "research_institute",
+      "parent_id": "hit-shenzhen-information",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://ai.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://ai.hitsz.edu.cn/szll.htm",
+          "label": "师资力量",
+          "status": "readable",
+          "discovery_source": "https://ai.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://ai.hitsz.edu.cn/szll.htm",
+          "page_title": "师资力量-哈尔滨工业大学-人工智能研究院",
+          "followup_links": [
+            {
+              "label": "师资力量",
+              "url": "https://ai.hitsz.edu.cn/szll.htm"
+            },
+            {
+              "label": "访问教授",
+              "url": "https://ai.hitsz.edu.cn/szll/fwjs.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://ai.hitsz.edu.cn/szll/qzjs.htm",
+          "label": "全职教师",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://ai.hitsz.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://ai.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-cybersecurity",
+      "official_name": "网络空间安全研究院",
+      "organization_type": "research_institute",
+      "parent_id": "hit-shenzhen-information",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://cybersecurity.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "homepage_readable_roster_link_not_found",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://cybersecurity.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-intelligence",
+      "official_name": "智能学部",
+      "organization_type": "faculty",
+      "parent_id": "hit-shenzhen",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://intelligence.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://intelligence.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1241",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://intelligence.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://intelligence.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1241",
+          "page_title": "智能科学与工程学院-哈尔滨工业大学（深圳） 智能学部",
+          "followup_links": [
+            {
+              "label": "教授会",
+              "url": "https://intelligence.hitsz.edu.cn/details.jsp?urltype=tree.TreeTempUrl&wbtreeid=1202"
+            },
+            {
+              "label": "师资队伍",
+              "url": "https://intelligence.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1241"
+            },
+            {
+              "label": "师资队伍",
+              "url": "https://intelligence.hitsz.edu.cn/details.jsp?urltype=tree.TreeTempUrl&wbtreeid=1082"
+            },
+            {
+              "label": "黄捷 教授 中国工程院外籍院士 学科：控制科学与工程",
+              "url": "https://intelligence.hitsz.edu.cn/1"
+            },
+            {
+              "label": "下页",
+              "url": "https://intelligence.hitsz.edu.cn/team.jsp?totalpage=4&PAGENUM=2&urltype=tree.TreeTempUrl&wbtreeid=1241"
+            },
+            {
+              "label": "尾页",
+              "url": "https://intelligence.hitsz.edu.cn/team.jsp?totalpage=4&PAGENUM=4&urltype=tree.TreeTempUrl&wbtreeid=1241"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://intelligence.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-intelligent-science",
+      "official_name": "智能科学与工程学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-intelligence",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://sise.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1084",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://sise.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1084",
+          "page_title": "教研系列-智能科学与工程学院",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1084"
+            },
+            {
+              "label": "教授",
+              "url": "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1208"
+            },
+            {
+              "label": "副教授",
+              "url": "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1209"
+            },
+            {
+              "label": "助理教授",
+              "url": "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1210"
+            },
+            {
+              "label": "师资队伍",
+              "url": "https://sise.hitsz.edu.cn/details.jsp?urltype=tree.TreeTempUrl&wbtreeid=1082"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://sise.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-robotics",
+      "official_name": "机器人与先进制造学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-intelligence",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://sram.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://sram.hitsz.edu.cn/szdw/qzjs.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://sram.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://sram.hitsz.edu.cn/szdw/qzjs.htm",
+          "page_title": "全职教师-哈工大（深圳）机器人与先进制造学院",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://sram.hitsz.edu.cn/szdw/qzjs.htm"
+            },
+            {
+              "label": "博士生导师",
+              "url": "https://sram.hitsz.edu.cn/szdw/bssds.htm"
+            },
+            {
+              "label": "李兵 教授",
+              "url": "http://faculty.hitsz.edu.cn/libing"
+            },
+            {
+              "label": "彭福军 教授",
+              "url": "http://faculty.hitsz.edu.cn/Pengfujun"
+            },
+            {
+              "label": "何晓舟 教授",
+              "url": "http://faculty.hitsz.edu.cn/hexiaozhou"
+            },
+            {
+              "label": "张东来 教授",
+              "url": "http://faculty.hitsz.edu.cn/zhangdonglai"
+            },
+            {
+              "label": "徐文福 教授",
+              "url": "http://faculty.hitsz.edu.cn/xuwenfu"
+            },
+            {
+              "label": "王毅 教授",
+              "url": "http://faculty.hitsz.edu.cn/wangyi"
+            },
+            {
+              "label": "杜建军 教授",
+              "url": "http://faculty.hitsz.edu.cn/dujianjun"
+            },
+            {
+              "label": "胡泓 教授",
+              "url": "http://faculty.hitsz.edu.cn/huhong"
+            },
+            {
+              "label": "王立欣 教授",
+              "url": "http://faculty.hitsz.edu.cn/wanglixin"
+            },
+            {
+              "label": "王昕 教授",
+              "url": "http://faculty.hitsz.edu.cn/wangxin"
+            },
+            {
+              "label": "朱荣伍 教授",
+              "url": "http://faculty.hitsz.edu.cn/rzh"
+            },
+            {
+              "label": "梁高琪 研究员",
+              "url": "http://faculty.hitsz.edu.cn/lianggaoqi"
+            },
+            {
+              "label": "邓大祥 教授",
+              "url": "http://faculty.hitsz.edu.cn/dengdaxiang"
+            },
+            {
+              "label": "张明明 教授",
+              "url": "http://faculty.hitsz.edu.cn/ZhangMingMing"
+            },
+            {
+              "label": "Alam Md. Mahbub 教授",
+              "url": "http://faculty.hitsz.edu.cn/Alam_Md_Mahbub"
+            },
+            {
+              "label": "朱永刚 教授",
+              "url": "http://faculty.hitsz.edu.cn/zhuyonggang"
+            },
+            {
+              "label": "董悦 教授",
+              "url": "https://homepage.hit.edu.cn/dongyuehit?lang=zh"
+            },
+            {
+              "label": "王宏 副教授",
+              "url": "http://faculty.hitsz.edu.cn/wanghong"
+            },
+            {
+              "label": "唐顺林 教授",
+              "url": "http://faculty.hitsz.edu.cn/tangshunlin"
+            },
+            {
+              "label": "黄海林 教授",
+              "url": "http://faculty.hitsz.edu.cn/huanghailin"
+            },
+            {
+              "label": "徐心海 教授",
+              "url": "http://faculty.hitsz.edu.cn/xuxinhai"
+            },
+            {
+              "label": "袁晗 教授",
+              "url": "http://faculty.hitsz.edu.cn/yuanhan"
+            },
+            {
+              "label": "下页",
+              "url": "https://sram.hitsz.edu.cn/szdw/qzjs/3.htm"
+            },
+            {
+              "label": "尾页",
+              "url": "https://sram.hitsz.edu.cn/szdw/qzjs/1.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 22,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://sram.hitsz.edu.cn/szdw/qzjs.htm",
+          "label": "全职教师",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://sram.hitsz.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://sram.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-civil-ocean",
+      "official_name": "智能土木与海洋工程学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-intelligence",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://sicoe.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://sicoe.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm",
+          "label": "师资力量",
+          "status": "readable",
+          "discovery_source": "https://sicoe.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://sicoe.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm",
+          "page_title": "教授-智能学部智能土木与海洋工程学院",
+          "followup_links": [
+            {
+              "label": "师资力量",
+              "url": "https://sicoe.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm"
+            },
+            {
+              "label": "学院教授委员会",
+              "url": "https://sicoe.hitsz.edu.cn/sjdha/xygk/xyjswyh.htm"
+            },
+            {
+              "label": "师资力量",
+              "url": "https://sicoe.hitsz.edu.cn/sjdha/szll.htm"
+            },
+            {
+              "label": "教授",
+              "url": "https://sicoe.hitsz.edu.cn/sjdha/szll/jsdw/qzjs/js.htm"
+            },
+            {
+              "label": "副教授",
+              "url": "https://sicoe.hitsz.edu.cn/sjdha/szll/jsdw/qzjs/fjs.htm"
+            },
+            {
+              "label": "助理教授",
+              "url": "https://sicoe.hitsz.edu.cn/sjdha/szll/jsdw/qzjs/zljs.htm"
+            },
+            {
+              "label": "研究员",
+              "url": "https://sicoe.hitsz.edu.cn/sjdha/szll/jsdw/qzjs/yjy.htm"
+            },
+            {
+              "label": "特聘教授",
+              "url": "https://sicoe.hitsz.edu.cn/sjdha/szll/jsdw/tpjs.htm"
+            },
+            {
+              "label": "访问教授",
+              "url": "https://sicoe.hitsz.edu.cn/sjdha/szll/jsdw/fwjs.htm"
+            },
+            {
+              "label": "双基地教授",
+              "url": "https://sicoe.hitsz.edu.cn/sjdha/szll/jsdw/sjdjs1.htm"
+            },
+            {
+              "label": "教授",
+              "url": "https://sicoe.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm"
+            },
+            {
+              "label": "副教授",
+              "url": "https://sicoe.hitsz.edu.cn/szll/jsdw/qzjs/fjs1.htm"
+            },
+            {
+              "label": "助理教授",
+              "url": "https://sicoe.hitsz.edu.cn/szll/jsdw/qzjs/zljs1.htm"
+            },
+            {
+              "label": "研究员",
+              "url": "https://sicoe.hitsz.edu.cn/szll/jsdw/qzjs/yjy1.htm"
+            },
+            {
+              "label": "特聘教授",
+              "url": "https://sicoe.hitsz.edu.cn/szll/jsdw/tpjs.htm"
+            },
+            {
+              "label": "访问教授",
+              "url": "https://sicoe.hitsz.edu.cn/szll/jsdw/fwjs.htm"
+            },
+            {
+              "label": "双基地教授",
+              "url": "https://sicoe.hitsz.edu.cn/szll/jsdw/sjdjs1.htm"
+            },
+            {
+              "label": "刘铁军 教授",
+              "url": "http://faculty.hitsz.edu.cn/liutiejun"
+            },
+            {
+              "label": "陈锐 教授",
+              "url": "http://faculty.hitsz.edu.cn/chenrui"
+            },
+            {
+              "label": "张凤亮 教授",
+              "url": "http://faculty.hitsz.edu.cn/zhangfengliang"
+            },
+            {
+              "label": "张素梅 教授",
+              "url": "http://faculty.hitsz.edu.cn/zhangsumei"
+            },
+            {
+              "label": "滕军 教授",
+              "url": "http://faculty.hitsz.edu.cn/tengjun"
+            },
+            {
+              "label": "刘红军 教授",
+              "url": "http://faculty.hitsz.edu.cn/liuhongjun"
+            },
+            {
+              "label": "查晓雄 教授",
+              "url": "http://faculty.hitsz.edu.cn/chaxiaoxiong"
+            },
+            {
+              "label": "段忠东 教授",
+              "url": "http://faculty.hitsz.edu.cn/duanzhongdong"
+            },
+            {
+              "label": "李锦辉 教授",
+              "url": "http://faculty.hitsz.edu.cn/lijinhui"
+            },
+            {
+              "label": "王迎 教授",
+              "url": "http://faculty.hitsz.edu.cn/wangying1"
+            },
+            {
+              "label": "胡钢 教授",
+              "url": "http://faculty.hitsz.edu.cn/hugang"
+            },
+            {
+              "label": "李祚华 教授",
+              "url": "http://faculty.hitsz.edu.cn/lizuohua"
+            },
+            {
+              "label": "卢伟 教授",
+              "url": "http://faculty.hitsz.edu.cn/luwei"
+            },
+            {
+              "label": "柳成荫 教授",
+              "url": "http://faculty.hitsz.edu.cn/liuchengyin"
+            },
+            {
+              "label": "徐枫 教授",
+              "url": "http://faculty.hitsz.edu.cn/xufeng"
+            },
+            {
+              "label": "邹笃建 教授",
+              "url": "http://faculty.hitsz.edu.cn/zoudujian"
+            },
+            {
+              "label": "李朝 教授",
+              "url": "http://faculty.hitsz.edu.cn/lichao"
+            },
+            {
+              "label": "胡卫华 教授",
+              "url": "http://faculty.hitsz.edu.cn/huweihua"
+            },
+            {
+              "label": "林坤 教授",
+              "url": "http://faculty.hitsz.edu.cn/linkun"
+            },
+            {
+              "label": "周傲 教授",
+              "url": "http://faculty.hitsz.edu.cn/zhouao"
+            },
+            {
+              "label": "卢雯珺 教授",
+              "url": "https://faculty.hitsz.edu.cn/luwenjun"
+            },
+            {
+              "label": "李镇明 教授",
+              "url": "http://faculty.hitsz.edu.cn/lizhenming"
+            },
+            {
+              "label": "王文韬 教授",
+              "url": "https://faculty.hitsz.edu.cn/wangwentao"
+            },
+            {
+              "label": "张冰 教授",
+              "url": "http://faculty.hitsz.edu.cn/zhangbing"
+            }
+          ],
+          "personal_profile_link_labels_count": 26,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://sicoe.hitsz.edu.cn/sjdha/szll.htm",
+          "label": "师资力量",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://sicoe.hitsz.edu.cn/"
+        },
+        {
+          "url": "https://sicoe.hitsz.edu.cn/",
+          "label": "教师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://sicoe.hitsz.edu.cn/"
+        },
+        {
+          "url": "https://sicoe.hitsz.edu.cn/sjdha/szll/jsdw/qzjs.htm",
+          "label": "全职教师",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://sicoe.hitsz.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://sicoe.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-ecology",
+      "official_name": "生态环境学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-intelligence",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://see.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://see.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm",
+          "label": "师资力量",
+          "status": "readable",
+          "discovery_source": "https://see.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://see.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm",
+          "page_title": "教授-智能学部生态环境学院",
+          "followup_links": [
+            {
+              "label": "师资力量",
+              "url": "https://see.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm"
+            },
+            {
+              "label": "教授",
+              "url": "https://see.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm"
+            },
+            {
+              "label": "副教授",
+              "url": "https://see.hitsz.edu.cn/szll/jsdw/qzjs/fjs1.htm"
+            },
+            {
+              "label": "助理教授",
+              "url": "https://see.hitsz.edu.cn/szll/jsdw/qzjs/zljs1.htm"
+            },
+            {
+              "label": "研究员",
+              "url": "https://see.hitsz.edu.cn/szll/jsdw/qzjs/yjy1.htm"
+            },
+            {
+              "label": "特聘教授",
+              "url": "https://see.hitsz.edu.cn/szll/jsdw/tpjs.htm"
+            },
+            {
+              "label": "访问教授",
+              "url": "https://see.hitsz.edu.cn/szll/jsdw/fwjs.htm"
+            },
+            {
+              "label": "双基地教授",
+              "url": "https://see.hitsz.edu.cn/szll/jsdw/sjdjs1.htm"
+            },
+            {
+              "label": "金文标 教授",
+              "url": "http://faculty.hitsz.edu.cn/jinwenbiao?lang=zh"
+            },
+            {
+              "label": "路璐 教授",
+              "url": "http://faculty.hitsz.edu.cn/lulu"
+            },
+            {
+              "label": "刘文宗 教授",
+              "url": "http://faculty.hitsz.edu.cn/liuwenzong"
+            },
+            {
+              "label": "李朝林 教授",
+              "url": "http://faculty.hitsz.edu.cn/lichaolin"
+            },
+            {
+              "label": "董文艺 教授",
+              "url": "http://faculty.hitsz.edu.cn/dongwenyi"
+            },
+            {
+              "label": "李继 教授",
+              "url": "https://homepage.hit.edu.cn/lijihit?lang=zh"
+            },
+            {
+              "label": "陈白杨 教授",
+              "url": "http://faculty.hitsz.edu.cn/chenbaiyang"
+            },
+            {
+              "label": "朱荣淑 教授",
+              "url": "http://faculty.hitsz.edu.cn/zhurongshu"
+            },
+            {
+              "label": "孙飞云 教授",
+              "url": "http://faculty.hitsz.edu.cn/sunfeiyun"
+            },
+            {
+              "label": "张冠 教授",
+              "url": "https://faculty.hitsz.edu.cn/zhangguan"
+            },
+            {
+              "label": "冯骁驰 教授",
+              "url": "http://faculty.hitsz.edu.cn/fengxiaochi"
+            },
+            {
+              "label": "陈以頔 教授",
+              "url": "https://faculty.hitsz.edu.cn/chenyidi"
+            },
+            {
+              "label": "王旭 教授",
+              "url": "http://faculty.hitsz.edu.cn/wangxu"
+            },
+            {
+              "label": "梁斌 教授",
+              "url": "http://faculty.hitsz.edu.cn/liangbin"
+            },
+            {
+              "label": "韩京龙 教授",
+              "url": "http://faculty.hitsz.edu.cn/hanjinglong"
+            },
+            {
+              "label": "程浩毅 教授",
+              "url": "http://faculty.hitsz.edu.cn/chenghaoyi"
+            },
+            {
+              "label": "张芳 教授",
+              "url": "http://faculty.hitsz.edu.cn/zhangfang"
+            }
+          ],
+          "personal_profile_link_labels_count": 18,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://see.hitsz.edu.cn/szll/jsdw/qzjs.htm",
+          "label": "教师队伍",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://see.hitsz.edu.cn/"
+        },
+        {
+          "url": "https://see.hitsz.edu.cn/szll/jsdw/qzjs.htm",
+          "label": "全职教师",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://see.hitsz.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://see.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-intelligent-ocean",
+      "official_name": "智能海洋工程研究院",
+      "organization_type": "research_institute",
+      "parent_id": "hit-shenzhen-intelligence",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://riioe.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "homepage_readable_roster_link_not_found",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://riioe.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-frontier",
+      "official_name": "前沿学部",
+      "organization_type": "faculty",
+      "parent_id": "hit-shenzhen",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://fs.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://fs.hitsz.edu.cn/szll/ztjs.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://fs.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://fs.hitsz.edu.cn/szll/ztjs.htm",
+          "page_title": "总体介绍-前沿学部",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://fs.hitsz.edu.cn/szll/ztjs.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://fs.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-materials",
+      "official_name": "材料科学与工程学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-frontier",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://mse.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://mse.hitsz.edu.cn/szll/szdw.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://mse.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://mse.hitsz.edu.cn/szll/szdw.htm",
+          "page_title": "师资队伍-材料科学与工程学院新网站",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://mse.hitsz.edu.cn/szll/szdw.htm"
+            },
+            {
+              "label": "双基地教授",
+              "url": "https://mse.hitsz.edu.cn/szll/sjdjs.htm"
+            },
+            {
+              "label": "研究员序列教师",
+              "url": "https://mse.hitsz.edu.cn/szll/yjyxljs.htm"
+            },
+            {
+              "label": "教授",
+              "url": "https://mse.hitsz.edu.cn/szll/szdw/js.htm"
+            },
+            {
+              "label": "副教授",
+              "url": "https://mse.hitsz.edu.cn/szll/szdw/fjs.htm"
+            },
+            {
+              "label": "助理教授",
+              "url": "https://mse.hitsz.edu.cn/szll/szdw/zljs.htm"
+            },
+            {
+              "label": "下页",
+              "url": "https://mse.hitsz.edu.cn/szll/szdw/6.htm"
+            },
+            {
+              "label": "尾页",
+              "url": "https://mse.hitsz.edu.cn/szll/szdw/1.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://mse.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-science",
+      "official_name": "理学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-frontier",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://ssc.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://ssc.hitsz.edu.cn/szdw.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://ssc.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://ssc.hitsz.edu.cn/szdw.htm",
+          "page_title": "师资队伍-哈尔滨工业大学（深圳）",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://ssc.hitsz.edu.cn/szdw.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        },
+        {
+          "url": "https://ssc.hitsz.edu.cn/szdw/qzjs/yz.htm",
+          "label": "全职教师",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://ssc.hitsz.edu.cn/"
+        },
+        {
+          "url": "https://ssc.hitsz.edu.cn/szdw/fqzjs/jzjs.htm",
+          "label": "非全职教师",
+          "status": "official_homepage_link_not_yet_traversed",
+          "discovery_source": "https://ssc.hitsz.edu.cn/"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://ssc.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-aerospace",
+      "official_name": "空天科技学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-frontier",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://issat.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "homepage_readable_roster_link_not_found",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://issat.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-biomedical",
+      "official_name": "医工学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-frontier",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://bme.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "homepage_readable_roster_link_not_found",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://bme.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-special-environments",
+      "official_name": "特殊环境物质科学研究院",
+      "organization_type": "research_institute",
+      "parent_id": "hit-shenzhen-frontier",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://iseps.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "homepage_readable_roster_link_not_found",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://iseps.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-future",
+      "official_name": "未来学部",
+      "organization_type": "faculty",
+      "parent_id": "hit-shenzhen",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://future.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://future.hitsz.edu.cn/szdw/wlsjxy.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://future.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://future.hitsz.edu.cn/szdw/wlsjxy.htm",
+          "page_title": "未来设计学院-哈尔滨工业大学（深圳）未来学部",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://future.hitsz.edu.cn/szdw/wlsjxy.htm"
+            },
+            {
+              "label": "下页",
+              "url": "https://future.hitsz.edu.cn/szdw/wlsjxy/1.htm"
+            },
+            {
+              "label": "尾页",
+              "url": "https://future.hitsz.edu.cn/szdw/wlsjxy/1.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://future.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-future-design",
+      "official_name": "未来设计学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-future",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "https://www.hitsz.edu.cn/21/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://future.hitsz.edu.cn/szdw/wlsjxy.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://future.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://future.hitsz.edu.cn/szdw/wlsjxy.htm",
+          "page_title": "未来设计学院-哈尔滨工业大学（深圳）未来学部",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://future.hitsz.edu.cn/szdw/wlsjxy.htm"
+            },
+            {
+              "label": "下页",
+              "url": "https://future.hitsz.edu.cn/szdw/wlsjxy/1.htm"
+            },
+            {
+              "label": "尾页",
+              "url": "https://future.hitsz.edu.cn/szdw/wlsjxy/1.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "遍历未来学部官方的未来设计学院师资分区，勿与联合设计学院无证据合并。"
+    },
+    {
+      "organization_id": "hit-shenzhen-architecture",
+      "official_name": "建筑学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-future",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://sau.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://sau.hitsz.edu.cn/szll.htm",
+          "label": "师资力量",
+          "status": "readable",
+          "discovery_source": "https://sau.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://sau.hitsz.edu.cn/szll.htm",
+          "page_title": "师资力量-建筑学院",
+          "followup_links": [
+            {
+              "label": "师资力量",
+              "url": "https://sau.hitsz.edu.cn/szll.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 38,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://sau.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-management",
+      "official_name": "经济管理学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen-future",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://sem.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://sem.hitsz.edu.cn/qzszdw.jsp?urltype=tree.TreeTempUrl&wbtreeid=1021",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://sem.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://sem.hitsz.edu.cn/qzszdw.jsp?urltype=tree.TreeTempUrl&wbtreeid=1021",
+          "page_title": "全职教师-经济管理学院",
+          "followup_links": [
+            {
+              "label": "师资科研",
+              "url": "https://sem.hitsz.edu.cn/szky.htm"
+            },
+            {
+              "label": "师资队伍",
+              "url": "https://sem.hitsz.edu.cn/qzszdw.jsp?urltype=tree.TreeTempUrl&wbtreeid=1021"
+            },
+            {
+              "label": "下页",
+              "url": "https://sem.hitsz.edu.cn/qzszdw.jsp?totalpage=5&PAGENUM=2&urltype=tree.TreeTempUrl&wbtreeid=1021"
+            },
+            {
+              "label": "尾页",
+              "url": "https://sem.hitsz.edu.cn/qzszdw.jsp?totalpage=5&PAGENUM=5&urltype=tree.TreeTempUrl&wbtreeid=1021"
+            }
+          ],
+          "personal_profile_link_labels_count": 3,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://sem.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-high-quality-development",
+      "official_name": "深圳高质量发展与新结构研究院",
+      "organization_type": "research_institute",
+      "parent_id": "hit-shenzhen-future",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://srhn.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "homepage_readable_roster_link_not_found",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "检查学院概况/师资栏目或官方统一教师主页的院系筛选；不得猜测名单。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://srhn.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-marxism",
+      "official_name": "马克思主义学院",
+      "organization_type": "school",
+      "parent_id": "hit-shenzhen",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/21/list.htm",
+      "official_homepage": "http://mks.hitsz.edu.cn/",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_readable",
+      "roster_entries": [
+        {
+          "url": "https://mks.hitsz.edu.cn/szdw.htm",
+          "label": "师资队伍",
+          "status": "readable",
+          "discovery_source": "https://mks.hitsz.edu.cn/",
+          "checked_on": "2026-10-23",
+          "resolved_url": "https://mks.hitsz.edu.cn/szdw.htm",
+          "page_title": "师资队伍-哈工大（深圳）马克思主义学院",
+          "followup_links": [
+            {
+              "label": "师资队伍",
+              "url": "https://mks.hitsz.edu.cn/szdw.htm"
+            },
+            {
+              "label": "教授",
+              "url": "https://mks.hitsz.edu.cn/szdw/js.htm"
+            },
+            {
+              "label": "副教授",
+              "url": "https://mks.hitsz.edu.cn/szdw/fjs.htm"
+            },
+            {
+              "label": "助理教授",
+              "url": "https://mks.hitsz.edu.cn/szdw/zljs.htm"
+            },
+            {
+              "label": "讲师",
+              "url": "https://mks.hitsz.edu.cn/szdw/js1.htm"
+            },
+            {
+              "label": "研究生导师",
+              "url": "https://mks.hitsz.edu.cn/rcpy/yjsds1.htm"
+            },
+            {
+              "label": "助理教授简介",
+              "url": "https://mks.hitsz.edu.cn/info/1023/1147.htm"
+            },
+            {
+              "label": "教授简介",
+              "url": "https://mks.hitsz.edu.cn/info/1021/1157.htm"
+            },
+            {
+              "label": "讲师简介",
+              "url": "https://mks.hitsz.edu.cn/info/1024/1148.htm"
+            },
+            {
+              "label": "副教授简介",
+              "url": "https://mks.hitsz.edu.cn/info/1022/1145.htm"
+            },
+            {
+              "label": "下页",
+              "url": "https://mks.hitsz.edu.cn/szdw/1.htm"
+            },
+            {
+              "label": "尾页",
+              "url": "https://mks.hitsz.edu.cn/szdw/1.htm"
+            }
+          ],
+          "personal_profile_link_labels_count": 0,
+          "count_warning": "主页链接标签数仅用于解析排程，不是教师人数。"
+        }
+      ],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "homepage_check": {
+        "status": "readable",
+        "url": "https://mks.hitsz.edu.cn/",
+        "checked_on": "2026-10-23"
+      }
+    },
+    {
+      "organization_id": "hit-shenzhen-humanities-arts",
+      "official_name": "人文艺术学系",
+      "organization_type": "department",
+      "parent_id": "hit-shenzhen-future",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/42/list.htm",
+      "official_homepage": "https://www.hitsz.edu.cn/42/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_pending",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区"
+    },
+    {
+      "organization_id": "hit-shenzhen-foreign-languages",
+      "official_name": "外语系",
+      "organization_type": "department",
+      "parent_id": "hit-shenzhen-future",
+      "campus_id": "hit-shenzhen",
+      "campus_candidate": null,
+      "organization_source": "https://www.hitsz.edu.cn/42/list.htm",
+      "official_homepage": "https://www.hitsz.edu.cn/42/list.htm",
+      "accessed_on": "2026-10-23",
+      "state": "roster_entry_pending",
+      "roster_entries": [],
+      "known_visible_entries": null,
+      "campus_verification": "verified",
+      "evidence": [],
+      "coverage_scope": "公开名录可见条目，不代表完整在职人事名册。",
+      "pending_checks": [
+        "教师名录入口",
+        "分页/系所/职称分类完整性"
+      ],
+      "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区"
+    }
+  ],
+  "limits": [
+    "未知不是0。",
+    "抓取失败不等于没有教师。",
+    "未逐人确认在职身份。",
+    "三个试点已完成的页面不重抓。"
+  ],
+  "shared_roster_entries": [
+    {
+      "url": "https://computing.hit.edu.cn/11261/list.htm",
+      "organization_ids": [
+        "hit-computer-science",
+        "hit-computing"
+      ],
+      "required_action": "核对每个人组织归属；父子组织及共用门户不得复制人数。"
+    },
+    {
+      "url": "https://computing.hit.edu.cn/jsml/list.htm",
+      "organization_ids": [
+        "hit-computer-science",
+        "hit-computing"
+      ],
+      "required_action": "核对每个人组织归属；父子组织及共用门户不得复制人数。"
+    },
+    {
+      "url": "https://rwskxb.hit.edu.cn/xbsz/list.htm",
+      "organization_ids": [
+        "hit-foreign-languages",
+        "hit-social-sciences"
+      ],
+      "required_action": "核对每个人组织归属；父子组织及共用门户不得复制人数。"
+    },
+    {
+      "url": "https://homepage.hit.edu.cn/discipline-direction?browseEnName=TEACHERS&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&deptName=600001&id=2",
+      "organization_ids": [
+        "hit-shenzhen-computer",
+        "hit-shenzhen-information-science"
+      ],
+      "required_action": "核对每个人组织归属；父子组织及共用门户不得复制人数。"
+    },
+    {
+      "url": "https://future.hitsz.edu.cn/szdw/wlsjxy.htm",
+      "organization_ids": [
+        "hit-shenzhen-future",
+        "hit-shenzhen-future-design"
+      ],
+      "required_action": "核对每个人组织归属；父子组织及共用门户不得复制人数。"
+    }
+  ],
+  "summary": {
+    "organization_queue_entries": 78,
+    "states": {
+      "roster_entry_readable": 52,
+      "pilot_roster_captured": 3,
+      "homepage_readable_roster_link_not_found": 9,
+      "roster_entry_pending": 9,
+      "aggregate_parent_traverse_children": 2,
+      "interactive_directory_filter_required": 3
+    },
+    "campus_assignment_counts": {
+      "hit-harbin": 28,
+      "unresolved": 10,
+      "hit-shenzhen": 27,
+      "hit-weihai": 13
+    },
+    "pilot_visible_roster_entries": 294,
+    "new_person_records_in_this_queue": 0,
+    "scope_warning": "组织数含父子层级及研究院，不是互斥院系总数；入口发现不等于教师采集完成。"
+  },
+  "next_batch_priority": [
+    "优先解析名录直接可见的能源、环境、仪器专任与实验教师等，必须含无链接姓名。",
+    "随后威海材料、新能源、海洋、汽车等按分类和分页抓取。",
+    "深圳统一教师门户需交互式院系筛选；优先独立学院静态名录。",
+    "未明确校区和新设联合办学机构须继续单独核验。"
+  ]
+}

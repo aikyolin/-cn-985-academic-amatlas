@@ -1,0 +1,41 @@
+"""Synthetic fixtures only; these are not real progress claims."""
+import unittest,sys,pathlib,copy
+sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/'scripts'))
+from validate_queue import validate_queue
+from jsonschema.exceptions import ValidationError
+class QueueTests(unittest.TestCase):
+ def setUp(self):
+  self.d={'schema_version':'1.0','updated_at':'2026-10-23T09:00:00Z','base_commit':'a'*40,'scope':{'active_institution':'hit','target_university_count':39,'registry_complete':False},'tasks':[{'task_id':'hit:test:roster','institution_id':'hit','organization_id':'test-unit','campus_ids':[],'stage':'roster_enumeration','status':'pending','scope':{'description':'Synthetic test scope','claim':'listed_public_scope_only','university_complete':False},'depends_on':[],'source_urls':['https://example.test/roster'],'artifact_paths':[],'review_status':'pending_review','next_action':'Review test fixture'}]}
+ def test_valid_pending(self):self.assertEqual(validate_queue(self.d),[])
+ def test_unreviewed_done_rejected(self):
+  self.d['tasks'][0]['status']='done'
+  with self.assertRaises(ValidationError):validate_queue(self.d)
+ def test_duplicate_rejected(self):
+  self.d['tasks'].append(copy.deepcopy(self.d['tasks'][0]))
+  with self.assertRaises(ValueError):validate_queue(self.d)
+ def test_unknown_dependency_rejected(self):
+  self.d['tasks'][0]['depends_on']=['missing']
+  with self.assertRaises(ValueError):validate_queue(self.d)
+ def test_cycle_rejected(self):
+  self.d['tasks'][0]['depends_on']=[self.d['tasks'][0]['task_id']]
+  with self.assertRaises(ValueError):validate_queue(self.d)
+ def test_absolute_artifact_rejected(self):
+  self.d['tasks'][0]['artifact_paths']=['/private/file']
+  with self.assertRaises(ValidationError):validate_queue(self.d)
+ def test_whole_university_claim_rejected(self):
+  self.d['tasks'][0]['scope']['university_complete']=True
+  with self.assertRaises(ValidationError):validate_queue(self.d)
+ def test_blocked_requires_reason(self):
+  self.d['tasks'][0]['status']='blocked'
+  with self.assertRaises(ValidationError):validate_queue(self.d)
+ def test_real_checkpoint(self):
+  import json
+  root=pathlib.Path(__file__).resolve().parents[1]
+  d=json.loads((root/'progress/work-queue.json').read_text());self.assertEqual(validate_queue(d,root,True),[])
+  self.assertEqual(len(d['tasks']),81);self.assertEqual(sum(t['status']=='done' for t in d['tasks']),3)
+ def test_campus_evidence_scope(self):
+  import json,collections
+  root=pathlib.Path(__file__).resolve().parents[1];d=json.loads((root/'data/atlas.json').read_text())
+  self.assertEqual(collections.Counter(o['campus_id'] for o in d['org_units']),{'hit-harbin':28,'hit-shenzhen':27,'hit-weihai':13,None:10})
+  self.assertTrue(all(o['is_complete'] is False for o in d['org_units']))
+if __name__=='__main__':unittest.main()
