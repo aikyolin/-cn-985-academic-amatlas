@@ -66,7 +66,7 @@ def department_tables(people,updated_at):
  rows=[['姓名','事件类型','阶段/职位','机构','开始','结束','专业','国家','地区','洲','历史985分类','确证授位','授位日期','授位来源','备注及冲突','地域口径','来源']]
  for p in people:
   events=p['education']+[dict(a,event_kind='employment',degree=a.get('title')) for a in p['appointments']]
-  rows.extend([[p['name'],*[e.get(k) for k in fields]] for e in events])
+  rows.extend([[p['name'],*[str(e.get(k) or '')+'（层次暂对应，未核实）' if k=='degree' and str(e.get('field_status',{}).get('degree','')).startswith('provisional_') else e.get(k) for k in fields]] for e in events])
   for c in p.get('research_collaborators',[]):
    event_id=c.get('education_event_id') or c.get('appointment_event_id')
    events=p['education'] if c.get('education_event_id') else p['appointments']
