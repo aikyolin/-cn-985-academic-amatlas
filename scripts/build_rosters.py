@@ -1,4 +1,4 @@
-"""Keep roster observations separate from independently researched personal profiles.
+"""Keep consolidated roster records, raw observations and personal profiles distinct.
 
 Importing this module, validation, preparation and table generation have no file
 side effects. Only build_rosters writes exports; generate_excel=False avoids XLSX.
@@ -16,7 +16,7 @@ ENTRY_FIELDS = (
     'official_profile_url', 'roster_source_url', 'accessed_on', 'notes',
     'verification_status', 'profile_identity_verified',
 )
-UNVERIFIED_BATCHES = {'harbin-002', 'weihai-003'}
+UNVERIFIED_BATCHES = {'harbin-002', 'weihai-003', 'shenzhen-004', 'shenzhen-005'}
 
 
 def homepage_key(url):
@@ -50,6 +50,21 @@ def _verified_profile_match(entry, person):
     evidence = entry.get('profile_identity_evidence') or {}
     if not isinstance(evidence, dict):
         return False
+    independent = evidence.get('independent_profile_verification')
+    if (
+        evidence.get('status') == 'independent_current_official_profile_name_department_match'
+        and isinstance(independent, dict)
+        and independent.get('status') == 'official_name_and_department_matched'
+        and valid_url(independent.get('official_url'))
+        and homepage_key(independent['official_url']) == homepage_key(person['official_url'])
+        and independent.get('roster_url') == entry['official_profile_url']
+        and isinstance(independent.get('source_ids'), list)
+        and independent['source_ids']
+        and all(isinstance(value, str) and value.strip() for value in independent['source_ids'])
+    ):
+        # A fresh official page checked for name and department is not a redirect
+        # or an assertion that the obsolete directory-linked URL is an alias.
+        return True
     start, end = homepage_key(entry['official_profile_url']), homepage_key(person['official_url'])
     aliases = evidence.get('verified_alias_urls', [])
     if isinstance(aliases, list) and aliases and all(valid_url(url) for url in aliases):
@@ -65,7 +80,7 @@ def _verified_profile_match(entry, person):
 
 
 def validate_rosters(rosters, atlas):
-    """Validate references, evidence and observation counts without merging people."""
+    """Validate records and their raw-source counts without merging people."""
     entries = rosters['entries']
     entry_ids = {entry['id'] for entry in entries}
     assert len(entry_ids) == len(entries), 'Duplicate roster record ID'
@@ -74,11 +89,19 @@ def validate_rosters(rosters, atlas):
     batch_ids = set()
     batch_entry_ids = set()
     unverified_batch_ids = set()
+    entries_by_id = {entry['id']: entry for entry in entries}
+    if 'source_observations' in rosters:
+        raw_count = len(rosters['source_observations'])
+    else:
+        raw_count = rosters.get('totals', {}).get('raw_observation_count', len(entries))
+        if raw_count != len(entries):
+            assert rosters.get('raw_data_location'), 'Raw source observations missing without a disclosure'
     for batch in rosters.get('batches', []):
         assert batch['batch_id'] not in batch_ids, 'Duplicate roster batch ID'
         batch_ids.add(batch['batch_id'])
         ids = batch['entry_ids']
-        assert len(ids) == len(set(ids)) == batch['observation_count'], 'Batch observation count mismatch'
+        record_count = batch.get('record_count', batch.get('observation_count'))
+        assert len(ids) == len(set(ids)) == record_count, 'Batch record count mismatch'
         assert set(ids) <= entry_ids, 'Unknown batch observation ID'
         assert not batch_entry_ids.intersection(ids), 'Observation belongs to multiple batches'
         batch_entry_ids.update(ids)
@@ -86,6 +109,24 @@ def validate_rosters(rosters, atlas):
             unverified_batch_ids.update(ids)
     if rosters.get('batches'):
         assert batch_entry_ids == entry_ids, 'Missing observation batch provenance'
+    if 'source_observations' in rosters:
+        observations = rosters['source_observations']
+        observation_ids = {item['observation_id'] for item in observations}
+        assert len(observation_ids) == len(observations), 'Duplicate source observation ID'
+        for item in observations:
+            assert item['record_id'] in entries_by_id, 'Unknown source observation record'
+            assert item['organization_id'] == entries_by_id[item['record_id']]['organization_id'], 'Source observation organization mismatch'
+            assert valid_url(item['source_url']), 'Unsafe source observation URL'
+            assert isinstance(item['source_payload'], dict), 'Original source observation payload missing'
+        for batch in rosters.get('batches', []):
+            observed_ids = {item['observation_id'] for item in observations if item['batch_id'] == batch['batch_id']}
+            assert observed_ids == set(batch['source_observation_ids']), 'Batch source observation references mismatch'
+            assert len(observed_ids) == batch['raw_observation_count'] == batch['raw_count'], 'Batch raw observation count mismatch'
+            assert all(item['record_id'] in batch['entry_ids'] for item in observations if item['batch_id'] == batch['batch_id']), 'Source observation belongs to a different batch'
+        for entry in entries:
+            if 'source_observation_ids' in entry:
+                assert set(entry['source_observation_ids']) == {item['observation_id'] for item in observations if item['record_id'] == entry['id']}, 'Record source observation references mismatch'
+        assert {item['record_id'] for item in observations} == entry_ids, 'Record is missing source observations'
 
     for entry in entries:
         assert all(key in entry for key in ENTRY_FIELDS), 'Missing roster field'
@@ -125,11 +166,15 @@ def validate_rosters(rosters, atlas):
             assert coverage['url'] == coverage['source_url'], 'Coverage URL alias mismatch'
         if 'visible_entries' in coverage:
             assert coverage['visible_name_count'] == coverage['visible_entries'], 'Coverage count alias mismatch'
-    assert sum(item['visible_name_count'] for item in rosters['coverage']) == len(entries), 'Coverage observation count mismatch'
+    assert sum(item['visible_name_count'] for item in rosters['coverage']) == raw_count, 'Coverage raw observation count mismatch'
     assert sum(item['visible_roster_entries'] for item in rosters['summary']) == len(entries), 'Summary observation count mismatch'
     if rosters.get('totals'):
         totals = rosters['totals']
-        assert totals['roster_observations'] == len(entries), 'Total observation count mismatch'
+        assert totals.get('record_count', totals.get('roster_observations')) == len(entries), 'Total record count mismatch'
+        if 'raw_observation_count' in totals:
+            assert totals['raw_observation_count'] == raw_count, 'Total raw observation count mismatch'
+        if 'count_unit' in totals:
+            assert totals['count_unit'] == 'integrated_roster_records', 'Record count must not be labeled as raw observations'
         assert totals['entries_without_profile_link'] == sum(not entry['official_profile_url'] for entry in entries), 'Missing-link count mismatch'
         assert totals['entries_with_profile_link'] == sum(bool(entry['official_profile_url']) for entry in entries), 'Candidate-link count mismatch'
         assert totals['not_unique_people_count'] is True, 'Observations are not unique people'
@@ -171,6 +216,10 @@ def roster_tables(rosters, atlas):
         'notes', 'name_as_listed', 'source_link_raw', 'batch_id', 'automatic_merge',
         'verified_person_id', 'profile_identity_evidence', 'candidate_match_status',
         'listed_qualifiers', 'source_declared_update',
+        'source_observation_ids', 'additional_roster_sources', 'consolidation_basis',
+        'listed_department', 'roster_data_source_url', 'roster_request_parameters',
+        'profile_display_update_time', 'profile_update_time_status',
+        'source_profile_identity_verified', 'profile_verification',
     ]
     headers = [
         '记录ID', '姓名', '校区', '组织ID', '原始分类', '官网列示职务',
@@ -179,6 +228,10 @@ def roster_tables(rosters, atlas):
         '名录原始姓名', '原始链接（含占位，仅证据）', '来源批次', '自动合并',
         '经独立核验的档案ID', '独立身份核验证据', '档案关联状态',
         '名录原始资格或身份附注（不是师承关系）', '名录声明更新日期（非本轮核验日期）',
+        '原始来源观察ID', '多来源名录证据', '源记录整合依据（不代表人口去重）',
+        '门户原列单位', '门户公开数据来源', '公开组织筛选参数',
+        '门户个人资料显示更新时间（非在职核验）', '源时间状态及占位说明',
+        '源批次原始主页核验值（不代表本项目档案关联）', '源批次主页归属证据',
     ]
     rows = [headers]
     for entry in entries:
@@ -188,21 +241,21 @@ def roster_tables(rosters, atlas):
     tables['覆盖说明'] = [
         ['范围与限制'], [rosters['scope']],
         *[[limitation] for limitation in rosters['limitations']],
-        [f"{len(entries)}条为名录观察，不是唯一人数或已核实在职人数；{len(atlas['people'])}份独立详细档案不与观察自动合并。"],
+        [f"{len(entries)}条整合名录记录，另保存{len(rosters.get('source_observations', entries))}条原始来源观察；不是唯一人数或已核实在职人数，{len(atlas['people'])}份独立详细档案不自动合并。"],
         ['统计', rosters.get('totals', {})],
     ]
     tables['分类覆盖'] = [
-        ['组织', '分类', '可见观察条目数', '来源', '查阅日期', '原角色分类', '有效候选主页数', '批次', '来源声明更新日期（非现任核验）', '原角色分组计数'],
+        ['组织', '来源分类或分页', '原始来源观察条目数（非整合记录数）', '来源', '查阅日期', '原角色分类', '有效候选主页数', '批次', '来源声明更新日期（非现任核验）', '原角色分组计数'],
         *[[item['organization_id'], item['category'], item['visible_name_count'], item['url'], item['accessed_on'], item.get('role'), item.get('entries_with_valid_candidate_link'), item.get('batch_id', 'pilot-001'), item.get('source_declared_update'), item.get('role_counts')] for item in rosters['coverage']],
     ]
     tables['冲突记录'] = [['类型', '详情'], *[[item['type'], item] for item in rosters['conflicts']]]
     tables['消歧候选'] = [
-        ['候选类型', '姓名或链接', '观察记录ID', '自动合并', '批次', '原始详情'],
+        ['候选类型', '姓名或链接', '名录记录ID', '自动合并', '批次', '原始详情'],
         *[[item['kind'], item.get('name') or item.get('url'), item['entry_ids'], item['automatic_merge'], item.get('batch_id'), item] for item in rosters.get('dedup_candidates', [])],
     ]
     tables['批次来源'] = [
-        ['批次', '观察条目数', '分类数', '查阅日期', '来源文件及SHA256', '批次核对', '原始观察ID'],
-        *[[batch['batch_id'], batch['observation_count'], batch['category_count'], batch['accessed_on'], batch['source_files'], batch.get('validation'), batch['entry_ids']] for batch in rosters.get('batches', [])],
+        ['批次', '整合名录记录数', '原始来源观察数', '类别数', '来源覆盖行数', '查阅日期', '来源文件及SHA256', '批次核对', '名录记录ID'],
+        *[[batch['batch_id'], batch.get('record_count', batch.get('observation_count')), batch.get('raw_observation_count', batch.get('observation_count')), batch['category_count'], batch.get('coverage_unit_count', batch['category_count']), batch['accessed_on'], batch['source_files'], batch.get('validation'), batch['entry_ids']] for batch in rosters.get('batches', [])],
         ['源页面快照（文件名及SHA256）', rosters.get('source_snapshots', [])],
     ]
     tables['排除与待查'] = [
@@ -210,6 +263,14 @@ def roster_tables(rosters, atlas):
         *[['未并入当前主名录', item] for item in rosters.get('exclusions', [])],
         *[['待交叉核验', item] for item in rosters.get('pending_checks', [])],
         *[['原附注与角色解释（不推断师承）', {'name_or_group': name, 'detail': detail}] for name, detail in rosters.get('role_interpretation', {}).items()],
+    ]
+    tables['原始来源观察'] = [
+        ['原始观察ID', '对应整合记录ID', '批次', '组织', '来源URL', '查阅日期', '原始观察内容'],
+        *[[item['observation_id'], item['record_id'], item['batch_id'], item['organization_id'], item['source_url'], item['accessed_on'], item['source_payload']] for item in rosters.get('source_observations', [])],
+    ]
+    tables['整合依据'] = [
+        ['批次', '原始观察数', '整合记录数', '源记录分组减少数（非人数减少）', '已执行身份合并数', '说明'],
+        *[[item['batch_id'], item['raw_count'], item['record_count'], item['source_record_grouping_reduction'], item['identity_merges_performed'], item] for item in rosters.get('consolidations', [])],
     ]
     return tables
 
@@ -228,7 +289,14 @@ def build_rosters(atlas, generate_excel=True):
         for name, rows in tables.items():
             sheet(workbook, name, rows)
         workbook.save(output / '待核对名录.xlsx')
-    (ROOT / 'site/rosters.json').write_text(json.dumps(rosters, ensure_ascii=False, indent=2) + '\n')
+    # The canonical dataset and XLSX matrices retain every raw observation.
+    # Browser pages use the integrated records; avoid downloading the duplicate
+    # source payloads on every page load and disclose where the evidence remains.
+    snapshot = dict(rosters)
+    if 'source_observations' in snapshot:
+        snapshot.pop('source_observations')
+        snapshot['raw_data_location'] = '完整原始来源观察保存在仓库 data/rosters.json，以及导出 Excel 的“原始来源观察”工作表；网站快照不重复加载这些原始内容。'
+    (ROOT / 'site/rosters.json').write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + '\n')
     formats = 'JSON, CSV and XLSX' if generate_excel else 'JSON and CSV (XLSX not generated)'
-    print(f'Built {len(rosters["entries"])} separate roster observations: {formats}')
+    print(f'Built {len(rosters["entries"])} roster records with {len(rosters.get("source_observations", rosters["entries"]))} raw source observations: {formats}')
     return tables

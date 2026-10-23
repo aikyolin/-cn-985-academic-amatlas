@@ -131,6 +131,36 @@
           }
         }
       }
+    },
+    "pending_people": {
+      "type": "array",
+      "description": "仅名录身份待核记录，禁止计入详细档案/学历筛选/确证成果",
+      "items": {
+        "type": "object",
+        "required": [
+          "person_id",
+          "name",
+          "profile_status",
+          "roster_entry_id"
+        ],
+        "properties": {
+          "profile_status": {
+            "const": "roster_identity_pending"
+          },
+          "education": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "mentors": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "publications": {
+            "type": "array",
+            "maxItems": 0
+          }
+        }
+      }
     }
   }
 }

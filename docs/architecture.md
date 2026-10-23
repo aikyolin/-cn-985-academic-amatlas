@@ -11,3 +11,11 @@
 首期数据以2026-10-23为查阅快照，不承诺实时有效。在职关系证据应定期人工复核。新增人必须先核官方来源，能确认字段才录入，未知留空并写 unknowns，不自动猜导师、国家、学位或旧学校身份。
 
 第二批独立目录索引保存在 data/rosters.json，构建产生名录专用快照与Excel/CSV，不进入详细人物 people 数组。名录有自己的稳定记录ID和待建页。姓名、组织、标准化主页路径同时一致仅生成消歧候选，仍需人工确认，绝不按URL或姓名静默去重。名录计数与详细样板覆盖分开显示，技术岗位按原类别保留。
+
+## 人物与名录状态
+
+people 只含有独立官方个人页及身份来源的详细资料，仍允许经历缺项，不表示资料完整或实时在职。pending_people 保存仅名录身份待核的记录，不参与学历检索、确证师承和论文总数；对应姓名仍进入名录待建页。candidate_publications、pending_mentors、research_collaborators 不进入正式论文或导师集合。
+
+学历筛选同时要求 event_kind=degree 与 degree_awarded=true。明确的历史校名争议 institution_985=unknown 优先于学校分类字典。同阶段地区和洲必须在同一确证学位记录匹配。
+
+名录 roster_records 是整合记录数量；raw_source_observations 是整合前各公开来源的观察数量。同一稳定记录跨来源整合必须保留 source_observations 与依据，不代表人物身份去重。工作台账的完成范围只限明确的公开来源边界。

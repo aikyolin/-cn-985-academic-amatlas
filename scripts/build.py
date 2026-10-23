@@ -6,6 +6,9 @@ from openpyxl.styles import Font,PatternFill,Alignment
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def valid_url(v):return isinstance(v,str) and urlparse(v).scheme in ('http','https') and bool(urlparse(v).netloc)
 def validate(d):
+ pending=d.get('pending_people',[])
+ assert all(p.get('profile_status')=='roster_identity_pending' and not p.get('education') and not p.get('mentors') and not p.get('publications') for p in pending),'Pending identities must stay outside confirmed collections'
+ assert not ({p['person_id'] for p in pending}&{p['person_id'] for p in d['people']}),'Pending identity duplicated as detailed profile'
  ids=[u['id'] for u in d['org_units']]; assert len(ids)==len(set(ids)), 'Duplicate organization ID'
  people=d['people']; assert len({p['person_id'] for p in people})==len(people),'Duplicate person ID'
  for p in people:

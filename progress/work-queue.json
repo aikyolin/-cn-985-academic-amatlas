@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T10:10:00Z",
-  "base_commit": "0ed4488a7dded0b4f54c6aca17eeb01ed07740bf",
+  "updated_at": "2026-10-23T10:29:00Z",
+  "base_commit": "5488b239c344f2401aa8763b3f0dcb99736accad",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -1910,28 +1910,39 @@
         "hit-shenzhen"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批已核组织筛选的公开门户/分类可见记录枚举完成，岗位分类缺失保留，不保证所有教职工已覆盖。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资力量"
+          "全院公开教师门户名录，岗位未分类"
         ]
       },
       "depends_on": [],
       "source_urls": [
         "https://www.hitsz.edu.cn/21/list.htm",
-        "https://homepage.hit.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS&deptName=600001"
+        "https://homepage.hit.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS&deptName=600001",
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600000"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "继续核验名录身份与履历；门户用户列表不等于现任人事名册。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:29:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:29:00Z",
+        "evidence_urls": [
+          "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600000"
+        ],
+        "unresolved_items": [
+          "逐人身份、岗位分类、当前任职与履历待核。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-shenzhen-information-science:roster",
@@ -1941,28 +1952,39 @@
         "hit-shenzhen"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批已核组织筛选的公开门户/分类可见记录枚举完成，岗位分类缺失保留，不保证所有教职工已覆盖。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资力量"
+          "全院公开教师门户名录，岗位未分类"
         ]
       },
       "depends_on": [],
       "source_urls": [
         "https://www.hitsz.edu.cn/21/list.htm",
-        "http://faculty.hitsz.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS&deptName=600001"
+        "http://faculty.hitsz.edu.cn/discipline-direction?id=2&browseName=%E6%95%99%E5%B8%88%E5%90%8D%E5%BD%95&browseEnName=TEACHERS&deptName=600001",
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600001"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "继续核验名录身份与履历；门户用户列表不等于现任人事名册。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:29:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:29:00Z",
+        "evidence_urls": [
+          "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600001"
+        ],
+        "unresolved_items": [
+          "逐人身份、岗位分类、当前任职与履历待核。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-shenzhen-ic:roster",
@@ -2023,7 +2045,7 @@
       "stage": "profile_research",
       "status": "partial",
       "scope": {
-        "description": "35条集成电路名录中的20条已独立核验并建立详细档案；全院资料仍不完整。",
+        "description": "35条名录已研究，34份独立详细档案，1条Hamdi身份待核；已建档仍有学历/导师缺项。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
@@ -2046,7 +2068,7 @@
         "data/rosters.json"
       ],
       "review_status": "approved",
-      "next_action": "已补20份独立档案；继续其余15条名录身份及履历核验，未补阶段不表示无学历。",
+      "next_action": "寻找Hamdi独立官方身份与履历来源，处理已有档案授位、历史校名与师承缺项。",
       "next_cursor": null,
       "attempted_at": "2026-10-23T10:10:00Z",
       "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
@@ -2151,28 +2173,71 @@
         "hit-shenzhen"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批已核组织筛选的公开门户/分类可见记录枚举完成，岗位分类缺失保留，不保证所有教职工已覆盖。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资队伍"
+          "教研系列总览",
+          "教授",
+          "教授",
+          "教授",
+          "副教授",
+          "副教授",
+          "助理教授",
+          "博士后",
+          "智能科学与工程学院",
+          "智能科学与工程学院",
+          "智能科学与工程学院",
+          "智能科学与工程学院"
         ]
       },
       "depends_on": [],
       "source_urls": [
         "https://www.hitsz.edu.cn/21/list.htm",
-        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1084"
+        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1084",
+        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1208",
+        "https://sise.hitsz.edu.cn/team.jsp?PAGENUM=2&totalpage=3&urltype=tree.TreeTempUrl&wbtreeid=1208",
+        "https://sise.hitsz.edu.cn/team.jsp?PAGENUM=3&totalpage=3&urltype=tree.TreeTempUrl&wbtreeid=1208",
+        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1209",
+        "https://sise.hitsz.edu.cn/team.jsp?PAGENUM=2&totalpage=2&urltype=tree.TreeTempUrl&wbtreeid=1209",
+        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1210",
+        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1207",
+        "https://intelligence.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1241",
+        "https://intelligence.hitsz.edu.cn/team.jsp?PAGENUM=2&totalpage=4&urltype=tree.TreeTempUrl&wbtreeid=1241",
+        "https://intelligence.hitsz.edu.cn/team.jsp?PAGENUM=3&totalpage=4&urltype=tree.TreeTempUrl&wbtreeid=1241",
+        "https://intelligence.hitsz.edu.cn/team.jsp?PAGENUM=4&totalpage=4&urltype=tree.TreeTempUrl&wbtreeid=1241"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "继续核验名录身份与履历；门户用户列表不等于现任人事名册。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:29:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:29:00Z",
+        "evidence_urls": [
+          "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1084",
+          "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1208",
+          "https://sise.hitsz.edu.cn/team.jsp?PAGENUM=2&totalpage=3&urltype=tree.TreeTempUrl&wbtreeid=1208",
+          "https://sise.hitsz.edu.cn/team.jsp?PAGENUM=3&totalpage=3&urltype=tree.TreeTempUrl&wbtreeid=1208",
+          "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1209",
+          "https://sise.hitsz.edu.cn/team.jsp?PAGENUM=2&totalpage=2&urltype=tree.TreeTempUrl&wbtreeid=1209",
+          "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1210",
+          "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1207",
+          "https://intelligence.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1241",
+          "https://intelligence.hitsz.edu.cn/team.jsp?PAGENUM=2&totalpage=4&urltype=tree.TreeTempUrl&wbtreeid=1241",
+          "https://intelligence.hitsz.edu.cn/team.jsp?PAGENUM=3&totalpage=4&urltype=tree.TreeTempUrl&wbtreeid=1241",
+          "https://intelligence.hitsz.edu.cn/team.jsp?PAGENUM=4&totalpage=4&urltype=tree.TreeTempUrl&wbtreeid=1241"
+        ],
+        "unresolved_items": [
+          "逐人身份、岗位分类、当前任职与履历待核。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-shenzhen-robotics:roster",
@@ -2182,29 +2247,39 @@
         "hit-shenzhen"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批已核组织筛选的公开门户/分类可见记录枚举完成，岗位分类缺失保留，不保证所有教职工已覆盖。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资队伍",
-          "全职教师"
+          "全院公开教师门户名录（岗位未分类）"
         ]
       },
       "depends_on": [],
       "source_urls": [
         "https://www.hitsz.edu.cn/21/list.htm",
-        "https://sram.hitsz.edu.cn/szdw/qzjs.htm"
+        "https://sram.hitsz.edu.cn/szdw/qzjs.htm",
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600002"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "继续核验名录身份与履历；门户用户列表不等于现任人事名册。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:29:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:29:00Z",
+        "evidence_urls": [
+          "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600002"
+        ],
+        "unresolved_items": [
+          "逐人身份、岗位分类、当前任职与履历待核。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-shenzhen-civil-ocean:roster",
@@ -2214,16 +2289,13 @@
         "hit-shenzhen"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批已核组织筛选的公开门户/分类可见记录枚举完成，岗位分类缺失保留，不保证所有教职工已覆盖。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资力量",
-          "师资力量",
-          "教师队伍",
-          "全职教师"
+          "全院公开教师门户名录（岗位未分类）"
         ]
       },
       "depends_on": [],
@@ -2232,16 +2304,27 @@
         "https://sicoe.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm",
         "https://sicoe.hitsz.edu.cn/sjdha/szll.htm",
         "https://sicoe.hitsz.edu.cn/",
-        "https://sicoe.hitsz.edu.cn/sjdha/szll/jsdw/qzjs.htm"
+        "https://sicoe.hitsz.edu.cn/sjdha/szll/jsdw/qzjs.htm",
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600052"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "继续核验名录身份与履历；门户用户列表不等于现任人事名册。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:29:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:29:00Z",
+        "evidence_urls": [
+          "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600052"
+        ],
+        "unresolved_items": [
+          "逐人身份、岗位分类、当前任职与履历待核。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-shenzhen-ecology:roster",
@@ -2251,31 +2334,40 @@
         "hit-shenzhen"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批已核组织筛选的公开门户/分类可见记录枚举完成，岗位分类缺失保留，不保证所有教职工已覆盖。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资力量",
-          "教师队伍",
-          "全职教师"
+          "全院公开教师门户名录（岗位未分类）"
         ]
       },
       "depends_on": [],
       "source_urls": [
         "https://www.hitsz.edu.cn/21/list.htm",
         "https://see.hitsz.edu.cn/szll/jsdw/qzjs/js1.htm",
-        "https://see.hitsz.edu.cn/szll/jsdw/qzjs.htm"
+        "https://see.hitsz.edu.cn/szll/jsdw/qzjs.htm",
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600053"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "继续核验名录身份与履历；门户用户列表不等于现任人事名册。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:29:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:29:00Z",
+        "evidence_urls": [
+          "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600053"
+        ],
+        "unresolved_items": [
+          "逐人身份、岗位分类、当前任职与履历待核。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-shenzhen-intelligent-ocean:roster",
@@ -2344,28 +2436,39 @@
         "hit-shenzhen"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批已核组织筛选的公开门户/分类可见记录枚举完成，岗位分类缺失保留，不保证所有教职工已覆盖。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资队伍"
+          "全院公开教师门户名录（岗位未分类）"
         ]
       },
       "depends_on": [],
       "source_urls": [
         "https://www.hitsz.edu.cn/21/list.htm",
-        "https://mse.hitsz.edu.cn/szll/szdw.htm"
+        "https://mse.hitsz.edu.cn/szll/szdw.htm",
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600004"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "继续核验名录身份与履历；门户用户列表不等于现任人事名册。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:29:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:29:00Z",
+        "evidence_urls": [
+          "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600004"
+        ],
+        "unresolved_items": [
+          "逐人身份、岗位分类、当前任职与履历待核。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-shenzhen-science:roster",
@@ -2952,6 +3055,252 @@
       ],
       "review_status": "pending_review",
       "next_action": "由可见名录逐人核验身份、履历、导师与论文。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-computer:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-computer",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "独立核验已采门户和名录记录中的人物资料。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "全院公开教师门户名录，岗位未分类"
+        ]
+      },
+      "depends_on": [
+        "hit-shenzhen-computer:roster"
+      ],
+      "source_urls": [
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600000"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "逐条核验身份、学位与导师，不能由门户存在推断在职。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-information-science:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-information-science",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "独立核验已采门户和名录记录中的人物资料。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "全院公开教师门户名录，岗位未分类"
+        ]
+      },
+      "depends_on": [
+        "hit-shenzhen-information-science:roster"
+      ],
+      "source_urls": [
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600001"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "逐条核验身份、学位与导师，不能由门户存在推断在职。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-intelligent-science:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-intelligent-science",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "独立核验已采门户和名录记录中的人物资料。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "教研系列总览",
+          "教授",
+          "教授",
+          "教授",
+          "副教授",
+          "副教授",
+          "助理教授",
+          "博士后",
+          "智能科学与工程学院",
+          "智能科学与工程学院",
+          "智能科学与工程学院",
+          "智能科学与工程学院"
+        ]
+      },
+      "depends_on": [
+        "hit-shenzhen-intelligent-science:roster"
+      ],
+      "source_urls": [
+        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1084",
+        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1208",
+        "https://sise.hitsz.edu.cn/team.jsp?PAGENUM=2&totalpage=3&urltype=tree.TreeTempUrl&wbtreeid=1208",
+        "https://sise.hitsz.edu.cn/team.jsp?PAGENUM=3&totalpage=3&urltype=tree.TreeTempUrl&wbtreeid=1208",
+        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1209",
+        "https://sise.hitsz.edu.cn/team.jsp?PAGENUM=2&totalpage=2&urltype=tree.TreeTempUrl&wbtreeid=1209",
+        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1210",
+        "https://sise.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1207",
+        "https://intelligence.hitsz.edu.cn/team.jsp?urltype=tree.TreeTempUrl&wbtreeid=1241",
+        "https://intelligence.hitsz.edu.cn/team.jsp?PAGENUM=2&totalpage=4&urltype=tree.TreeTempUrl&wbtreeid=1241",
+        "https://intelligence.hitsz.edu.cn/team.jsp?PAGENUM=3&totalpage=4&urltype=tree.TreeTempUrl&wbtreeid=1241",
+        "https://intelligence.hitsz.edu.cn/team.jsp?PAGENUM=4&totalpage=4&urltype=tree.TreeTempUrl&wbtreeid=1241"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "逐条核验身份、学位与导师，不能由门户存在推断在职。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-civil-ocean:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-civil-ocean",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "独立核验已采门户和名录记录中的人物资料。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "全院公开教师门户名录（岗位未分类）"
+        ]
+      },
+      "depends_on": [
+        "hit-shenzhen-civil-ocean:roster"
+      ],
+      "source_urls": [
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600052"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "逐条核验身份、学位与导师，不能由门户存在推断在职。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-ecology:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-ecology",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "独立核验已采门户和名录记录中的人物资料。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "全院公开教师门户名录（岗位未分类）"
+        ]
+      },
+      "depends_on": [
+        "hit-shenzhen-ecology:roster"
+      ],
+      "source_urls": [
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600053"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "逐条核验身份、学位与导师，不能由门户存在推断在职。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-materials:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-materials",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "独立核验已采门户和名录记录中的人物资料。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "全院公开教师门户名录（岗位未分类）"
+        ]
+      },
+      "depends_on": [
+        "hit-shenzhen-materials:roster"
+      ],
+      "source_urls": [
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600004"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "逐条核验身份、学位与导师，不能由门户存在推断在职。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-shenzhen-robotics:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-shenzhen-robotics",
+      "campus_ids": [
+        "hit-shenzhen"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "独立核验已采门户和名录记录中的人物资料。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "全院公开教师门户名录（岗位未分类）"
+        ]
+      },
+      "depends_on": [
+        "hit-shenzhen-robotics:roster"
+      ],
+      "source_urls": [
+        "https://homepage.hit.edu.cn/school-dept?id=1&campusId=999960&deptName=999903600002"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "逐条核验身份、学位与导师，不能由门户存在推断在职。",
       "next_cursor": null,
       "attempted_at": "2026-10-23T09:53:00Z",
       "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
