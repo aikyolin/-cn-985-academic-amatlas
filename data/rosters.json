@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "39校公开名录样本，1700条整合记录、1738条原始来源观察；原1688记录与1726观察不变。新增4校12条选中观察不表示全系全院或唯一现任人数。",
+  "scope": "39校公开名录样本，1706条整合记录、1744条原始来源观察；原1700记录与1738观察不变。新增2校6条选中观察不表示全系全院或唯一现任人数。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -1247,6 +1247,20 @@
     {
       "school_id": "ecnu",
       "organization_id": "ecnu-geography",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "nju",
+      "organization_id": "nju-astronomy-space-science",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "hnu",
+      "organization_id": "hnu-chemistry-department",
       "visible_roster_entries": 3,
       "count_scope": "selected_subset_only",
       "coverage_complete": false
@@ -4866,6 +4880,42 @@
       "pagination": "not_established_for_this_selected_subset",
       "accessed_on": "2026-10-23",
       "batch_id": "ecnu-selected-roster-rotation-002"
+    },
+    {
+      "school_id": "nju",
+      "organization_id": "nju-astronomy-space-science",
+      "url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+      "category": "天文与空间科学学院教授",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。",
+      "selection_basis": "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "nju-selected-roster-rotation-002"
+    },
+    {
+      "school_id": "hnu",
+      "organization_id": "hnu-chemistry-department",
+      "url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+      "category": "化学系分析化学学科教授",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。",
+      "selection_basis": "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "hnu-selected-roster-rotation-002"
     }
   ],
   "entries": [
@@ -56206,6 +56256,351 @@
       "source_observation_ids": [
         "ecnu-selected-roster-rotation-002:roster-ecnu-geography-cuican:1"
       ]
+    },
+    {
+      "id": "roster-nju-chengxin",
+      "name": "程鑫",
+      "school_id": "nju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nju-astronomy-space-science",
+      "department_id": "nju-astronomy-space-science",
+      "category": "天文与空间科学学院教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://astronomy.nju.edu.cn/people/cx.html",
+      "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "nju-chengxin",
+      "source_person_id": "nju-chengxin",
+      "batch_id": "nju-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-nju-rotation-002",
+      "source_ids": [
+        "nju-astronomy-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+        "profile_url": "https://astronomy.nju.edu.cn/people/cx.html",
+        "source_ids": [
+          "nju-astronomy-professor-roster",
+          "nju-cx-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。"
+      ],
+      "source_observation_ids": [
+        "nju-selected-roster-rotation-002:roster-nju-chengxin:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "nju-astronomy-professor-roster",
+          "nju-cx-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+        "official_url": "https://astronomy.nju.edu.cn/people/cx.html",
+        "reviewed_source_sha256": "141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471",
+        "independent_review_sha256": "1b7966ee9adeeb3db35592723f5db4c1d3ca12bfde62655ccd4612d4122e4147",
+        "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+      }
+    },
+    {
+      "id": "roster-nju-chenpengfei",
+      "name": "陈鹏飞",
+      "school_id": "nju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nju-astronomy-space-science",
+      "department_id": "nju-astronomy-space-science",
+      "category": "天文与空间科学学院教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://astronomy.nju.edu.cn/people/cpf.html",
+      "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "nju-chenpengfei",
+      "source_person_id": "nju-chenpengfei",
+      "batch_id": "nju-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-nju-rotation-002",
+      "source_ids": [
+        "nju-astronomy-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+        "profile_url": "https://astronomy.nju.edu.cn/people/cpf.html",
+        "source_ids": [
+          "nju-astronomy-professor-roster",
+          "nju-cpf-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。"
+      ],
+      "source_observation_ids": [
+        "nju-selected-roster-rotation-002:roster-nju-chenpengfei:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "nju-astronomy-professor-roster",
+          "nju-cpf-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+        "official_url": "https://astronomy.nju.edu.cn/people/cpf.html",
+        "reviewed_source_sha256": "141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471",
+        "independent_review_sha256": "1b7966ee9adeeb3db35592723f5db4c1d3ca12bfde62655ccd4612d4122e4147",
+        "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+      }
+    },
+    {
+      "id": "roster-nju-chenyang",
+      "name": "陈阳",
+      "school_id": "nju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nju-astronomy-space-science",
+      "department_id": "nju-astronomy-space-science",
+      "category": "天文与空间科学学院教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://astronomy.nju.edu.cn/people/cy.html",
+      "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "nju-chenyang",
+      "source_person_id": "nju-chenyang",
+      "batch_id": "nju-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-nju-rotation-002",
+      "source_ids": [
+        "nju-astronomy-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+        "profile_url": "https://astronomy.nju.edu.cn/people/cy.html",
+        "source_ids": [
+          "nju-astronomy-professor-roster",
+          "nju-cy-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。"
+      ],
+      "source_observation_ids": [
+        "nju-selected-roster-rotation-002:roster-nju-chenyang:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "nju-astronomy-professor-roster",
+          "nju-cy-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+        "official_url": "https://astronomy.nju.edu.cn/people/cy.html",
+        "reviewed_source_sha256": "141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471",
+        "independent_review_sha256": "1b7966ee9adeeb3db35592723f5db4c1d3ca12bfde62655ccd4612d4122e4147",
+        "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+      }
+    },
+    {
+      "id": "roster-hnu-chemistry-analytical-chenzengping",
+      "name": "陈增萍",
+      "school_id": "hnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "hnu-chemistry-department",
+      "department_id": "hnu-chemistry-department",
+      "category": "化学系分析化学学科教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://grzy.hnu.edu.cn/site/index/chenzengping",
+      "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "hnu-chenzengping",
+      "source_person_id": "hnu-chenzengping",
+      "batch_id": "hnu-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-hnu-rotation-002",
+      "source_ids": [
+        "hnu-chemistry-analytical-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+        "profile_url": "https://grzy.hnu.edu.cn/site/index/chenzengping",
+        "source_ids": [
+          "hnu-chemistry-analytical-professor-roster",
+          "hnu-chenzengping-profile"
+        ],
+        "note": "同源公开个人页接口直接返回与名录相同姓名和化学化工学院；未从同名结果猜测身份。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。"
+      ],
+      "source_observation_ids": [
+        "hnu-selected-roster-rotation-002:roster-hnu-chemistry-analytical-chenzengping:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "hnu-chemistry-analytical-professor-roster",
+          "hnu-chenzengping-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+        "official_url": "https://grzy.hnu.edu.cn/site/index/chenzengping",
+        "reviewed_source_sha256": "7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54",
+        "independent_review_sha256": "746275376c7b6df96457535630128e0923246417a9ff43a0841ae5d3093a83b7",
+        "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+      }
+    },
+    {
+      "id": "roster-hnu-chemistry-analytical-chuxia",
+      "name": "楚霞",
+      "school_id": "hnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "hnu-chemistry-department",
+      "department_id": "hnu-chemistry-department",
+      "category": "化学系分析化学学科教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://grzy.hnu.edu.cn/site/index/chuxia",
+      "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "hnu-chuxia",
+      "source_person_id": "hnu-chuxia",
+      "batch_id": "hnu-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-hnu-rotation-002",
+      "source_ids": [
+        "hnu-chemistry-analytical-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+        "profile_url": "https://grzy.hnu.edu.cn/site/index/chuxia",
+        "source_ids": [
+          "hnu-chemistry-analytical-professor-roster",
+          "hnu-chuxia-profile"
+        ],
+        "note": "同源公开个人页接口直接返回与名录相同姓名和化学化工学院；未从同名结果猜测身份。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。"
+      ],
+      "source_observation_ids": [
+        "hnu-selected-roster-rotation-002:roster-hnu-chemistry-analytical-chuxia:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "hnu-chemistry-analytical-professor-roster",
+          "hnu-chuxia-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+        "official_url": "https://grzy.hnu.edu.cn/site/index/chuxia",
+        "reviewed_source_sha256": "7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54",
+        "independent_review_sha256": "746275376c7b6df96457535630128e0923246417a9ff43a0841ae5d3093a83b7",
+        "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+      }
+    },
+    {
+      "id": "roster-hnu-chemistry-analytical-huanshuangyan",
+      "name": "宦双燕",
+      "school_id": "hnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "hnu-chemistry-department",
+      "department_id": "hnu-chemistry-department",
+      "category": "化学系分析化学学科教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_official_professor_category",
+      "official_profile_url": "https://grzy.hnu.edu.cn/site/index/huanshuangyan",
+      "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "hnu-huanshuangyan",
+      "source_person_id": "hnu-huanshuangyan",
+      "batch_id": "hnu-selected-roster-rotation-002",
+      "source_batch_id": "faculty-batch-hnu-rotation-002",
+      "source_ids": [
+        "hnu-chemistry-analytical-professor-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+        "profile_url": "https://grzy.hnu.edu.cn/site/index/huanshuangyan",
+        "source_ids": [
+          "hnu-chemistry-analytical-professor-roster",
+          "hnu-huanshuangyan-profile"
+        ],
+        "note": "同源公开个人页接口直接返回与名录相同姓名和化学化工学院；未从同名结果猜测身份。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。"
+      ],
+      "source_observation_ids": [
+        "hnu-selected-roster-rotation-002:roster-hnu-chemistry-analytical-huanshuangyan:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "hnu-chemistry-analytical-professor-roster",
+          "hnu-huanshuangyan-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+        "official_url": "https://grzy.hnu.edu.cn/site/index/huanshuangyan",
+        "reviewed_source_sha256": "7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54",
+        "independent_review_sha256": "746275376c7b6df96457535630128e0923246417a9ff43a0841ae5d3093a83b7",
+        "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+      }
     }
   ],
   "conflicts": [
@@ -63930,27 +64325,91 @@
         }
       ],
       "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "nju-selected-roster-rotation-002",
+      "school_id": "nju",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-nju-chengxin",
+        "roster-nju-chenpengfei",
+        "roster-nju-chenyang"
+      ],
+      "source_observation_ids": [
+        "nju-selected-roster-rotation-002:roster-nju-chengxin:1",
+        "nju-selected-roster-rotation-002:roster-nju-chenpengfei:1",
+        "nju-selected-roster-rotation-002:roster-nju-chenyang:1"
+      ],
+      "selection": "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。",
+      "selection_basis": "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-nju-rotation-002.json",
+          "sha256": "141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "hnu-selected-roster-rotation-002",
+      "school_id": "hnu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-hnu-chemistry-analytical-chenzengping",
+        "roster-hnu-chemistry-analytical-chuxia",
+        "roster-hnu-chemistry-analytical-huanshuangyan"
+      ],
+      "source_observation_ids": [
+        "hnu-selected-roster-rotation-002:roster-hnu-chemistry-analytical-chenzengping:1",
+        "hnu-selected-roster-rotation-002:roster-hnu-chemistry-analytical-chuxia:1",
+        "hnu-selected-roster-rotation-002:roster-hnu-chemistry-analytical-huanshuangyan:1"
+      ],
+      "selection": "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。",
+      "selection_basis": "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-hnu-rotation-002.json",
+          "sha256": "7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
     }
   ],
   "totals": {
-    "organization_count": 117,
-    "category_count": 181,
-    "entries_with_profile_link": 1496,
+    "organization_count": 119,
+    "category_count": 183,
+    "entries_with_profile_link": 1502,
     "entries_without_profile_link": 204,
     "dedup_candidate_groups": 60,
     "placeholder_profile_link_observations": 18,
     "current_employment_count_verified": false,
     "not_unique_people_count": true,
-    "record_count": 1700,
-    "raw_observation_count": 1738,
-    "roster_records": 1700,
-    "raw_source_observations": 1738,
-    "coverage_unit_count": 208,
+    "record_count": 1706,
+    "raw_observation_count": 1744,
+    "roster_records": 1706,
+    "raw_source_observations": 1744,
+    "coverage_unit_count": 210,
     "count_unit": "integrated_roster_records",
     "source_record_grouping_reduction": 38,
     "category_count_basis": "unique_organization_category_pairs",
-    "unique_organization_category_pairs": 181,
-    "batch_category_count": 200,
+    "unique_organization_category_pairs": 183,
+    "batch_category_count": 202,
     "category_count_source": "coverage_rows_preserved_without_deduplication"
   },
   "role_interpretation": {
@@ -116405,6 +116864,387 @@
           "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
           "地理科学学院教学科研名录“正高级”栏目正文61人，按原序选前3白开旭、毕春娟、崔璨，不按学历、海外经历或资料丰富度筛人。正高级是名录类别，不当作组织节点；仅3人的部分职业资料，非全院或全校完成，名录现列不等人事在岗证明。"
         ]
+      }
+    },
+    {
+      "observation_id": "nju-selected-roster-rotation-002:roster-nju-chengxin:1",
+      "record_id": "roster-nju-chengxin",
+      "batch_id": "nju-selected-roster-rotation-002",
+      "school_id": "nju",
+      "organization_id": "nju-astronomy-space-science",
+      "source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-nju-chengxin",
+        "name": "程鑫",
+        "school_id": "nju",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "nju-astronomy-space-science",
+        "department_id": "nju-astronomy-space-science",
+        "category": "天文与空间科学学院教授",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_official_professor_category",
+        "official_profile_url": "https://astronomy.nju.edu.cn/people/cx.html",
+        "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "nju-chengxin",
+        "source_person_id": "nju-chengxin",
+        "batch_id": "nju-selected-roster-rotation-002",
+        "source_batch_id": "faculty-batch-nju-rotation-002",
+        "source_ids": [
+          "nju-astronomy-professor-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+          "profile_url": "https://astronomy.nju.edu.cn/people/cx.html",
+          "source_ids": [
+            "nju-astronomy-professor-roster",
+            "nju-cx-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "nju-astronomy-professor-roster",
+            "nju-cx-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+          "official_url": "https://astronomy.nju.edu.cn/people/cx.html",
+          "reviewed_source_sha256": "141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471",
+          "independent_review_sha256": "1b7966ee9adeeb3db35592723f5db4c1d3ca12bfde62655ccd4612d4122e4147",
+          "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+        }
+      }
+    },
+    {
+      "observation_id": "nju-selected-roster-rotation-002:roster-nju-chenpengfei:1",
+      "record_id": "roster-nju-chenpengfei",
+      "batch_id": "nju-selected-roster-rotation-002",
+      "school_id": "nju",
+      "organization_id": "nju-astronomy-space-science",
+      "source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-nju-chenpengfei",
+        "name": "陈鹏飞",
+        "school_id": "nju",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "nju-astronomy-space-science",
+        "department_id": "nju-astronomy-space-science",
+        "category": "天文与空间科学学院教授",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_official_professor_category",
+        "official_profile_url": "https://astronomy.nju.edu.cn/people/cpf.html",
+        "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "nju-chenpengfei",
+        "source_person_id": "nju-chenpengfei",
+        "batch_id": "nju-selected-roster-rotation-002",
+        "source_batch_id": "faculty-batch-nju-rotation-002",
+        "source_ids": [
+          "nju-astronomy-professor-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+          "profile_url": "https://astronomy.nju.edu.cn/people/cpf.html",
+          "source_ids": [
+            "nju-astronomy-professor-roster",
+            "nju-cpf-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "nju-astronomy-professor-roster",
+            "nju-cpf-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+          "official_url": "https://astronomy.nju.edu.cn/people/cpf.html",
+          "reviewed_source_sha256": "141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471",
+          "independent_review_sha256": "1b7966ee9adeeb3db35592723f5db4c1d3ca12bfde62655ccd4612d4122e4147",
+          "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+        }
+      }
+    },
+    {
+      "observation_id": "nju-selected-roster-rotation-002:roster-nju-chenyang:1",
+      "record_id": "roster-nju-chenyang",
+      "batch_id": "nju-selected-roster-rotation-002",
+      "school_id": "nju",
+      "organization_id": "nju-astronomy-space-science",
+      "source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-nju-chenyang",
+        "name": "陈阳",
+        "school_id": "nju",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "nju-astronomy-space-science",
+        "department_id": "nju-astronomy-space-science",
+        "category": "天文与空间科学学院教授",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_official_professor_category",
+        "official_profile_url": "https://astronomy.nju.edu.cn/people/cy.html",
+        "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "nju-chenyang",
+        "source_person_id": "nju-chenyang",
+        "batch_id": "nju-selected-roster-rotation-002",
+        "source_batch_id": "faculty-batch-nju-rotation-002",
+        "source_ids": [
+          "nju-astronomy-professor-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+          "profile_url": "https://astronomy.nju.edu.cn/people/cy.html",
+          "source_ids": [
+            "nju-astronomy-professor-roster",
+            "nju-cy-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "nju-astronomy-professor-roster",
+            "nju-cy-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html",
+          "official_url": "https://astronomy.nju.edu.cn/people/cy.html",
+          "reviewed_source_sha256": "141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471",
+          "independent_review_sha256": "1b7966ee9adeeb3db35592723f5db4c1d3ca12bfde62655ccd4612d4122e4147",
+          "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+        }
+      }
+    },
+    {
+      "observation_id": "hnu-selected-roster-rotation-002:roster-hnu-chemistry-analytical-chenzengping:1",
+      "record_id": "roster-hnu-chemistry-analytical-chenzengping",
+      "batch_id": "hnu-selected-roster-rotation-002",
+      "school_id": "hnu",
+      "organization_id": "hnu-chemistry-department",
+      "source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-hnu-chemistry-analytical-chenzengping",
+        "name": "陈增萍",
+        "school_id": "hnu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "hnu-chemistry-department",
+        "department_id": "hnu-chemistry-department",
+        "category": "化学系分析化学学科教授",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_official_professor_category",
+        "official_profile_url": "https://grzy.hnu.edu.cn/site/index/chenzengping",
+        "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "hnu-chenzengping",
+        "source_person_id": "hnu-chenzengping",
+        "batch_id": "hnu-selected-roster-rotation-002",
+        "source_batch_id": "faculty-batch-hnu-rotation-002",
+        "source_ids": [
+          "hnu-chemistry-analytical-professor-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+          "profile_url": "https://grzy.hnu.edu.cn/site/index/chenzengping",
+          "source_ids": [
+            "hnu-chemistry-analytical-professor-roster",
+            "hnu-chenzengping-profile"
+          ],
+          "note": "同源公开个人页接口直接返回与名录相同姓名和化学化工学院；未从同名结果猜测身份。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "hnu-chemistry-analytical-professor-roster",
+            "hnu-chenzengping-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+          "official_url": "https://grzy.hnu.edu.cn/site/index/chenzengping",
+          "reviewed_source_sha256": "7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54",
+          "independent_review_sha256": "746275376c7b6df96457535630128e0923246417a9ff43a0841ae5d3093a83b7",
+          "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+        }
+      }
+    },
+    {
+      "observation_id": "hnu-selected-roster-rotation-002:roster-hnu-chemistry-analytical-chuxia:1",
+      "record_id": "roster-hnu-chemistry-analytical-chuxia",
+      "batch_id": "hnu-selected-roster-rotation-002",
+      "school_id": "hnu",
+      "organization_id": "hnu-chemistry-department",
+      "source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-hnu-chemistry-analytical-chuxia",
+        "name": "楚霞",
+        "school_id": "hnu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "hnu-chemistry-department",
+        "department_id": "hnu-chemistry-department",
+        "category": "化学系分析化学学科教授",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_official_professor_category",
+        "official_profile_url": "https://grzy.hnu.edu.cn/site/index/chuxia",
+        "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "hnu-chuxia",
+        "source_person_id": "hnu-chuxia",
+        "batch_id": "hnu-selected-roster-rotation-002",
+        "source_batch_id": "faculty-batch-hnu-rotation-002",
+        "source_ids": [
+          "hnu-chemistry-analytical-professor-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+          "profile_url": "https://grzy.hnu.edu.cn/site/index/chuxia",
+          "source_ids": [
+            "hnu-chemistry-analytical-professor-roster",
+            "hnu-chuxia-profile"
+          ],
+          "note": "同源公开个人页接口直接返回与名录相同姓名和化学化工学院；未从同名结果猜测身份。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "hnu-chemistry-analytical-professor-roster",
+            "hnu-chuxia-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+          "official_url": "https://grzy.hnu.edu.cn/site/index/chuxia",
+          "reviewed_source_sha256": "7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54",
+          "independent_review_sha256": "746275376c7b6df96457535630128e0923246417a9ff43a0841ae5d3093a83b7",
+          "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+        }
+      }
+    },
+    {
+      "observation_id": "hnu-selected-roster-rotation-002:roster-hnu-chemistry-analytical-huanshuangyan:1",
+      "record_id": "roster-hnu-chemistry-analytical-huanshuangyan",
+      "batch_id": "hnu-selected-roster-rotation-002",
+      "school_id": "hnu",
+      "organization_id": "hnu-chemistry-department",
+      "source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-hnu-chemistry-analytical-huanshuangyan",
+        "name": "宦双燕",
+        "school_id": "hnu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "hnu-chemistry-department",
+        "department_id": "hnu-chemistry-department",
+        "category": "化学系分析化学学科教授",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_official_professor_category",
+        "official_profile_url": "https://grzy.hnu.edu.cn/site/index/huanshuangyan",
+        "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "hnu-huanshuangyan",
+        "source_person_id": "hnu-huanshuangyan",
+        "batch_id": "hnu-selected-roster-rotation-002",
+        "source_batch_id": "faculty-batch-hnu-rotation-002",
+        "source_ids": [
+          "hnu-chemistry-analytical-professor-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+          "profile_url": "https://grzy.hnu.edu.cn/site/index/huanshuangyan",
+          "source_ids": [
+            "hnu-chemistry-analytical-professor-roster",
+            "hnu-huanshuangyan-profile"
+          ],
+          "note": "同源公开个人页接口直接返回与名录相同姓名和化学化工学院；未从同名结果猜测身份。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "hnu-chemistry-analytical-professor-roster",
+            "hnu-huanshuangyan-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
+          "official_url": "https://grzy.hnu.edu.cn/site/index/huanshuangyan",
+          "reviewed_source_sha256": "7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54",
+          "independent_review_sha256": "746275376c7b6df96457535630128e0923246417a9ff43a0841ae5d3093a83b7",
+          "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
+        }
       }
     }
   ],

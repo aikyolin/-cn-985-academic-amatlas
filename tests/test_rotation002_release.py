@@ -814,19 +814,27 @@ class Rotation002ReleaseTests(unittest.TestCase):
             self.assertEqual(object_sha(self.r[key]), expected, key)
 
     def test_04_exact_reviewed_additions_not_unknown_optional_batches(self):
-        self.assertEqual(len(self.d['people']), 535)
+        # Release23 permits only the separately source-pinned two-school append.
+        self.assertEqual(len(self.d['people']), 541)
+        self.assertEqual([p['person_id'] for p in self.d['people'][535:]],
+                         ['nju-chengxin','nju-chenpengfei','nju-chenyang','hnu-chenzengping','hnu-chuxia','hnu-huanshuangyan'])
+        self.assertEqual([(b['batch_id'], b['source_files']) for b in self.d['profile_batches'][130:]], [
+            ('faculty-batch-nju-rotation-002', [{'file':'faculty-batch-nju-rotation-002.json','sha256':'141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471'}]),
+            ('faculty-batch-hnu-rotation-002', [{'file':'faculty-batch-hnu-rotation-002.json','sha256':'7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54'}]),
+        ])
         self.assertEqual(len(self.d['pending_people']), 83)
         self.assertEqual(len(self.d['institutions']), 39)
-        self.assertEqual(len(self.d['org_units']), 218)
+        self.assertEqual(len(self.d['org_units']), 221)
+        self.assertEqual([u['id'] for u in self.d['org_units'][218:]], ['nju-astronomy-space-science','hnu-chemistry','hnu-chemistry-department'])
         self.assertEqual(len(self.d['campuses']), 4)
-        self.assertEqual({p['person_id'] for p in self.d['people'][524:]}, set(SOURCE_FINGERPRINTS) - set(PENDING_IDS))
+        self.assertEqual({p['person_id'] for p in self.d['people'][524:535]}, set(SOURCE_FINGERPRINTS) - set(PENDING_IDS))
         self.assertEqual([p['person_id'] for p in self.d['pending_people'][82:]], list(PENDING_IDS))
         self.assertEqual(len(self.new), 12)
         self.assertEqual(len(self.pro), 11)
         self.assertEqual(Counter(p['school_id'] for p in self.new), Counter({school: 3 for school in SCHOOLS}))
-        self.assertEqual(len(self.r['entries']), 1700)
-        self.assertEqual(len(self.r['source_observations']), 1738)
-        self.assertEqual(len(self.r['coverage']), 208)
+        self.assertEqual(len(self.r['entries']), 1706)
+        self.assertEqual(len(self.r['source_observations']), 1744)
+        self.assertEqual(len(self.r['coverage']), 210)
         self.assertEqual(set(self.entries), set(SOURCE_FINGERPRINTS))
         for person in self.pro:
             self.assertIs(person['detail_count_eligible'], True)
@@ -1027,7 +1035,7 @@ class Rotation002ReleaseTests(unittest.TestCase):
         units = {u['id']:u for u in self.d['org_units']}
         for oid,(shape,expected) in ORG_FINGERPRINTS.items():
             self.assertEqual(object_sha(project_source_shape(units[oid],shape)), expected, oid)
-        self.assertEqual({u['id'] for u in self.d['org_units'][211:]}, set(ORG_FINGERPRINTS))
+        self.assertEqual({u['id'] for u in self.d['org_units'][211:218]}, set(ORG_FINGERPRINTS))
         for person in self.new:
             self.assertEqual(person['campus_ids'], [])
             self.assertIsNone(person['campus'])

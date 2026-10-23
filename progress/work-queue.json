@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-10-23",
-  "base_commit": "9f310e8b7e573268560c53762d2bd0ac7245fff5",
+  "base_commit": "878da4f80f12e29a6e4bedf5e3e420e058bc9eb3",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -6656,6 +6656,62 @@
       "next_cursor": "rotation002_selected_three_reviewed_fields_incomplete",
       "attempted_at": "2026-10-23",
       "last_verified_commit": "9f310e8b7e573268560c53762d2bd0ac7245fff5"
+    },
+    {
+      "task_id": "nju:nju-astronomy-space-science:rotation002-wave2",
+      "institution_id": "nju",
+      "organization_id": "nju-astronomy-space-science",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "天文与空间科学学院新版官方教学科研人员“教授”栏目29人，按原生页面infolist渲染原序选首3：程鑫、陈鹏飞、陈阳。未按履历、海外经历或师承丰富度筛人，未按内部listorder字段自行重排。仅3人的部分公开职业资料，非全院或全校完成；名录现列不等于全职人事证明。旧版教授页顺序及总数不同，本次统一使用新版栏目。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://astronomy.nju.edu.cn/gbsy/szdw/zrjs/js/index.html"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/nju-rotation002-wave2-coverage.json",
+        "progress/multischool-rotation002-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续补核所选人物未知授位、具名导师与当前状态；扩充名录须另立明确原序、分类和分页范围，不将本批当完整院系。",
+      "next_cursor": "rotation002_wave2_selected_three_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "878da4f80f12e29a6e4bedf5e3e420e058bc9eb3"
+    },
+    {
+      "task_id": "hnu:hnu-chemistry-department:rotation002-wave2",
+      "institution_id": "hnu",
+      "organization_id": "hnu-chemistry-department",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "化学化工学院教师名册中“化学系分析化学学科—教授”栏目正文20人，原序前3陈增萍、楚霞、宦双燕；不按学历、海外经历或资料丰富度筛人。教授是栏目类别，不是组织节点。仅3人的部分职业资料，非全学科、全院或全校完成；名录现列不等人事在岗证明。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cc.hnu.edu.cn/szdw/jsmc.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/hnu-rotation002-wave2-coverage.json",
+        "progress/multischool-rotation002-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续补核所选人物未知授位、具名导师与当前状态；扩充名录须另立明确原序、分类和分页范围，不将本批当完整院系。",
+      "next_cursor": "rotation002_wave2_selected_three_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "878da4f80f12e29a6e4bedf5e3e420e058bc9eb3"
     }
   ]
 }
