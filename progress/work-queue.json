@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T13:06:30Z",
-  "base_commit": "652284e5caab14a09abc8384670fe13266df2fdc",
+  "updated_at": "2026-10-23T13:25:00Z",
+  "base_commit": "293677be17c182cfb7c7c42fc777a28a5f53dab6",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -106,7 +106,7 @@
       "stage": "profile_research",
       "status": "partial",
       "scope": {
-        "description": "165条名录中通信42、电子27、测控41、信息33均已完成当前名录首查，共143条；微波工程系22人尚待首查。姓名待核、正文稀疏与缺项分层保留，非143份完整履历或全院完成。",
+        "description": "165条五系官方名录均已完成首轮逐条查阅：143实质职业史、17稀疏、5仅姓名或扩展身份待核；不等同165身份唯一已证或完整学历。当前可结构化详档157、待完善8，后者含3稀疏与5身份待核。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
@@ -135,13 +135,16 @@
         "progress/harbin-electronic-engineering-coverage.json",
         "progress/harbin-measurement-coverage.json",
         "progress/harbin-information-progress.json",
-        "progress/harbin-information-coverage.json"
+        "progress/harbin-information-coverage.json",
+        "progress/harbin-microwave-progress.json",
+        "progress/harbin-microwave-coverage.json",
+        "progress/harbin-seie-coverage.json"
       ],
       "review_status": "approved",
-      "next_action": "继续微波工程系22条名录，从第1位李红梅开始逐人核验公开职业正文；此前四系143条已首查，身份与资料缺项不等同完整。发布前须另行完成新版全部院系XLSX与浏览器验收。",
-      "next_cursor": "microwave-engineering:roster-position:1",
-      "attempted_at": "2026-10-23T13:06:30Z",
-      "last_verified_commit": "652284e5caab14a09abc8384670fe13266df2fdc"
+      "next_action": "全院165条名录首查已完成，继续5身份待核、17稀疏履历及8待核导师关系的定向补证（旧pending_mentors5+新pending_mentor_candidates3），不可提升为已核导师；发布前另行完成导出及浏览器验收。",
+      "next_cursor": "seie:first-pass-complete:uncertainty-review",
+      "attempted_at": "2026-10-23T13:25:00Z",
+      "last_verified_commit": "293677be17c182cfb7c7c42fc777a28a5f53dab6"
     },
     {
       "task_id": "hit-mechanical:roster",

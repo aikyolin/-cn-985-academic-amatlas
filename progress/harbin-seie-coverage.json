@@ -1,0 +1,1725 @@
+{
+  "organization_id": "hit-seie",
+  "campus": "哈尔滨",
+  "organization": "电子与信息工程学院",
+  "checked_on": "2026-10-23",
+  "official_roster_entry_count": 165,
+  "first_pass_attempted_entry_count": 165,
+  "provisional_distinct_person_id_count": 165,
+  "verified_unique_individual_count": null,
+  "identity_count_note": "165为五系名录条目；当前姓名、规范主页URL和person_id未发现跨系重复候选，不等于已独立证明所有身份唯一。稀疏/姓名档案仍可能需后续身份核实。",
+  "department_reports": [
+    {
+      "department": "通信工程系",
+      "official_roster_url": "https://seie.hit.edu.cn/19281/list.htm",
+      "roster_entries": 42,
+      "first_pass_attempted": 42,
+      "substantive_professional_history": 37,
+      "sparse_professional_history": 2,
+      "name_only_or_extended_identity_unresolved": 3,
+      "coverage_report": "harbin-communication-first-pass-coverage.json",
+      "coverage_report_sha256": "81bbb4feff35ddeff51cf8292e371d1a8cef37b74ded2ee5cff92cf854a333cf",
+      "review_status": "all_four_batches_independently_reviewed_passed",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "official_roster_url": "https://seie.hit.edu.cn/19282/list.htm",
+      "roster_entries": 27,
+      "first_pass_attempted": 27,
+      "substantive_professional_history": 26,
+      "sparse_professional_history": 1,
+      "name_only_or_extended_identity_unresolved": 0,
+      "coverage_report": "harbin-electronic-engineering-first-pass-coverage.json",
+      "coverage_report_sha256": "240b4574989a90d5ec1ec1d8a7d8b93e7325228930db5dd0889397bf90ca85ea",
+      "review_status": "all_three_batches_independently_reviewed_passed",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "official_roster_url": "https://seie.hit.edu.cn/19283/list.htm",
+      "roster_entries": 41,
+      "first_pass_attempted": 41,
+      "substantive_professional_history": 36,
+      "sparse_professional_history": 4,
+      "name_only_or_extended_identity_unresolved": 1,
+      "coverage_report": "harbin-measurement-engineering-first-pass-coverage.json",
+      "coverage_report_sha256": "391d9403c6fbb47babd532fd0d31261794af6e009adde601eab0adb5697351e0",
+      "review_status": "all_four_batches_passed_with_documented_limits",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "official_roster_url": "https://seie.hit.edu.cn/19284/list.htm",
+      "roster_entries": 33,
+      "first_pass_attempted": 33,
+      "substantive_professional_history": 27,
+      "sparse_professional_history": 5,
+      "name_only_or_extended_identity_unresolved": 1,
+      "coverage_report": "harbin-information-engineering-first-pass-coverage.json",
+      "coverage_report_sha256": "8e3fee8f2e9017209dde8e98dcfad384012bf2178ca6628ad096c8c90f52893f",
+      "review_status": "all_three_batches_passed",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "official_roster_url": "https://seie.hit.edu.cn/19285/list.htm",
+      "roster_entries": 22,
+      "first_pass_attempted": 22,
+      "substantive_professional_history": 17,
+      "sparse_professional_history": 5,
+      "name_only_or_extended_identity_unresolved": 0,
+      "coverage_report": "harbin-microwave-engineering-first-pass-coverage.json",
+      "coverage_report_sha256": "670bfed6ebbd0a86a57b18726e10e1a6688c1f03b355d3af1f7017ef66161821",
+      "review_status": "all_two_batches_passed",
+      "fields_complete": false
+    }
+  ],
+  "coverage_totals": {
+    "substantive_professional_history": 143,
+    "sparse_professional_history": 17,
+    "name_only_or_extended_identity_unresolved": 5
+  },
+  "cross_department_identity_candidates": {
+    "same_name_cross_department": [],
+    "same_normalized_profile_url": [],
+    "same_person_id": []
+  },
+  "initial_six_sample_overlap": {
+    "sample_count": 6,
+    "candidates": [],
+    "checks": [
+      "exact_name",
+      "normalized_official_url",
+      "person_id"
+    ],
+    "note": "样本属于三校区其它系/院；当前三种键无重叠，不作跨姓名别名的全量排除保证。"
+  },
+  "counts": {
+    "education": 505,
+    "appointments": 622,
+    "mentors": 55,
+    "committee_members": 5,
+    "pending_mentor_candidates": 3,
+    "research_collaborators": 3,
+    "publications": 334,
+    "sources": 625,
+    "pending_mentors_legacy_key": 5,
+    "pending_mentor_records_normalized_total": 8
+  },
+  "degree_awarded_counts": {
+    "true": 250,
+    "none": 147,
+    "false": 108
+  },
+  "review_status": "all_16_batches_passed",
+  "batches": [
+    {
+      "file": "faculty-batch-harbin-eie-001.json",
+      "sha256": "0a543a9402c6ccecc433645d657b0950399265d626e4bb40ee2da2c681a0c64b",
+      "review_status": "approved_for_integration_with_preserved_uncertainty",
+      "review_file": "faculty-batch-harbin-eie-001-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-002.json",
+      "sha256": "bcd98a8906fe61006b5894de4dd88ca6cb97522b35f3562969169d1083c87915",
+      "review_status": "approved_for_integration_with_preserved_uncertainty",
+      "review_file": "faculty-batch-harbin-eie-002-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-003.json",
+      "sha256": "9b0bca9b16bd8f30fc54185aa15334a43b924cdc18b8bd281e3237d3ba9af622",
+      "review_status": "approved_for_integration_with_preserved_uncertainty",
+      "review_file": "faculty-batch-harbin-eie-003-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-004.json",
+      "sha256": "c0ee6f823ea5c76575074ab65066a560cb78655119547389db46db9673221079",
+      "review_status": "approved_for_integration_with_preserved_uncertainty",
+      "review_file": "faculty-batch-harbin-eie-004-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-second-001.json",
+      "sha256": "847deaefde2c85e743d8a10e46becbd05063b35e0b5a4e6b1b762b89727eea3d",
+      "review_status": "approved_for_integration_with_preserved_uncertainty",
+      "review_file": "faculty-batch-harbin-eie-second-001-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-second-002.json",
+      "sha256": "c3b1a2c4cf4666557d6885f5c1ec81c5346647f345b7cbdc08c3eb393661af7e",
+      "review_status": "approved_for_integration_with_preserved_uncertainty",
+      "review_file": "faculty-batch-harbin-eie-second-002-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-second-003.json",
+      "sha256": "72fc88a8d20eb736a64e304bcf19df69cf07edc0ad4e2fce3d2e82382efe6fce",
+      "review_status": "approved_for_integration_with_preserved_uncertainty",
+      "review_file": "faculty-batch-harbin-eie-second-003-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-third-001.json",
+      "sha256": "5515f27983c92a1ad121ad8bbb6bb7cbf3dc78937d097db2213397c1f2df4b1e",
+      "review_status": "approved_for_integration_with_preserved_uncertainty",
+      "review_file": "faculty-batch-harbin-eie-third-001-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-third-002.json",
+      "sha256": "380716607e9d57388f900c8938094eaff50f246771f4bbf0a6b8a92c553275cb",
+      "review_status": "approved_for_integration_with_preserved_uncertainty",
+      "review_file": "faculty-batch-harbin-eie-third-002-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-third-003.json",
+      "sha256": "eeb3f5ed79e495db30f1865ebfd2ed2ac82bd698c9b0a9583cdf85ca1d0a3bd2",
+      "review_status": "passed_with_documented_limits",
+      "review_file": "faculty-batch-harbin-eie-third-003-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-third-004.json",
+      "sha256": "ec6643a492408579daa5360cdff711901ef8237ab7702b4f064a3d01af7876b5",
+      "review_status": "passed_with_documented_limits",
+      "review_file": "faculty-batch-harbin-eie-third-004-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-fourth-001.json",
+      "sha256": "ae299d159dccc8d28e9f8ee674cd849010316c9af286b38b001a4c54df4690db",
+      "review_status": "passed_with_documented_limits",
+      "review_file": "faculty-batch-harbin-eie-fourth-001-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-fourth-002.json",
+      "sha256": "40341c5238fc0110c58dee0451c042ddefb5fffd39ffb865bc92be75c3c8d1b4",
+      "review_status": "passed_with_documented_limits",
+      "review_file": "faculty-batch-harbin-eie-fourth-002-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-fourth-003.json",
+      "sha256": "1da8945cd17162e94c35e1786ae5a4eef34a8ff5b02595d2d87826073ddf2368",
+      "review_status": "passed_with_documented_limits",
+      "review_file": "faculty-batch-harbin-eie-fourth-003-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-fifth-001.json",
+      "sha256": "30dc235bbd5652d7b92c241f941948c351a5b1f9bc69e48b40f35a7187085bd0",
+      "review_status": "passed_with_documented_limits",
+      "review_file": "faculty-batch-harbin-eie-fifth-001-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    },
+    {
+      "file": "faculty-batch-harbin-eie-fifth-002.json",
+      "sha256": "3f6d2a733ab74e85d9ada5d13a1e89707f4da3bac0ad49fcb7e414bce4284c4e",
+      "review_status": "passed_with_documented_limits",
+      "review_file": "faculty-batch-harbin-eie-fifth-002-independent-review.json",
+      "normalized_review_status": "passed_with_documented_limits"
+    }
+  ],
+  "entries": [
+    {
+      "department": "通信工程系",
+      "name": "郭庆",
+      "roster_entry_id": "roster-8c3949515d90615a",
+      "person_id": "hit-guoqing",
+      "official_url": "https://homepage.hit.edu.cn/guoqing?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "沙学军",
+      "roster_entry_id": "roster-5d85e7691347d776",
+      "person_id": "hit-shaxuejun",
+      "official_url": "https://homepage.hit.edu.cn/shaxuejun?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "孟维晓",
+      "roster_entry_id": "roster-c0fd3cc8722768d8",
+      "person_id": "hit-mengweixiao",
+      "official_url": "https://homepage.hit.edu.cn/mengweixiao?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "赵洪林",
+      "roster_entry_id": "roster-99a6b6ae88652898",
+      "person_id": "hit-hlzhao",
+      "official_url": "https://homepage.hit.edu.cn/hlzhao?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "马永奎",
+      "roster_entry_id": "roster-afdae79c49f04b0a",
+      "person_id": "hit-mayongkui",
+      "official_url": "https://homepage.hit.edu.cn/mayongkui?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "杨明川",
+      "roster_entry_id": "roster-8cf91af4094355ca",
+      "person_id": "hit-MingchuanYang",
+      "official_url": "https://homepage.hit.edu.cn/MingchuanYang",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "王振永",
+      "roster_entry_id": "roster-9c9d9961e6167f5a",
+      "person_id": "hit-wangzhenyong",
+      "official_url": "https://homepage.hit.edu.cn/wangzhenyong",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "李卓明",
+      "roster_entry_id": "roster-a6e3a9a09bd1cdd1",
+      "person_id": "hit-zhuoming",
+      "official_url": "https://homepage.hit.edu.cn/zhuoming",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "吴少川",
+      "roster_entry_id": "roster-bd5d081e30f67816",
+      "person_id": "hit-wushaochuan",
+      "official_url": "https://homepage.hit.edu.cn/wushaochuan",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "高玉龙",
+      "roster_entry_id": "roster-a8bf2d6d3cc8adfb",
+      "person_id": "hit-gaoyulong",
+      "official_url": "https://homepage.hit.edu.cn/gaoyulong",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "石硕",
+      "roster_entry_id": "roster-29b96c2b1e3a5742",
+      "person_id": "hit-crcss",
+      "official_url": "https://homepage.hit.edu.cn/crcss?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "吴宣利",
+      "roster_entry_id": "roster-feee934e501befa6",
+      "person_id": "hit-wuxuanli",
+      "official_url": "https://homepage.hit.edu.cn/wuxuanli?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "马琳",
+      "roster_entry_id": "roster-5464814e9c798076",
+      "person_id": "hit-malin",
+      "official_url": "https://homepage.hit.edu.cn/malin?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "韩帅",
+      "roster_entry_id": "roster-8c536cf8d70834c5",
+      "person_id": "hit-hanshuai",
+      "official_url": "https://homepage.hit.edu.cn/hanshuai?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "何晨光",
+      "roster_entry_id": "roster-f6e8dbd4b929329d",
+      "person_id": "hit-hechenguang",
+      "official_url": "https://homepage.hit.edu.cn/hechenguang?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "于启月",
+      "roster_entry_id": "roster-450a4b753250a574",
+      "person_id": "hit-yuqiyue",
+      "official_url": "https://homepage.hit.edu.cn/yuqiyue",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "贾敏",
+      "roster_entry_id": "roster-20c6331c226d0c83",
+      "person_id": "hit-jiamin",
+      "official_url": "https://homepage.hit.edu.cn/jiamin",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "史军",
+      "roster_entry_id": "roster-d579a8711519d6c4",
+      "person_id": "hit-junshi",
+      "official_url": "https://homepage.hit.edu.cn/junshi",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "房宵杰",
+      "roster_entry_id": "roster-187eb343d3bdf4f1",
+      "person_id": "hit-fangxiaojie",
+      "official_url": "https://homepage.hit.edu.cn/fangxiaojie",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "王彬",
+      "roster_entry_id": "roster-426e627afaa82191",
+      "person_id": "hit-harbin-eie-wangbin",
+      "official_url": "https://seie.hit.edu.cn/2024/0628/c19281a347931/page.htm",
+      "coverage_level": "name_only_or_extended_identity_unresolved",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "魏守明",
+      "roster_entry_id": "roster-cc73d694ccac7a82",
+      "person_id": "hit-weishouming",
+      "official_url": "https://homepage.hit.edu.cn/weishouming?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "孙鹏飞",
+      "roster_entry_id": "roster-ccbf55cddf23b171",
+      "person_id": "hit-sunpengfei",
+      "official_url": "https://homepage.hit.edu.cn/sunpengfei?lang=zh",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "苏雁泳",
+      "roster_entry_id": "roster-16a8c29b19ea5ffb",
+      "person_id": "hit-suyanyong",
+      "official_url": "https://homepage.hit.edu.cn/suyanyong?lang=zh",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "迟永钢",
+      "roster_entry_id": "roster-5397100fc645d841",
+      "person_id": "hit-chiyg",
+      "official_url": "https://homepage.hit.edu.cn/chiyg?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "张成文",
+      "roster_entry_id": "roster-7461042b157fb746",
+      "person_id": "hit-zcw",
+      "official_url": "https://homepage.hit.edu.cn/zcw?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "张文彬",
+      "roster_entry_id": "roster-d9d6466f1c6e3410",
+      "person_id": "hit-zhangwenbin",
+      "official_url": "https://homepage.hit.edu.cn/zhangwenbin",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "张佳岩",
+      "roster_entry_id": "roster-8bfd6eaa7288301b",
+      "person_id": "hit-zhangjiayan",
+      "official_url": "https://homepage.hit.edu.cn/zhangjiayan",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "白旭",
+      "roster_entry_id": "roster-70a09ced72cd22c9",
+      "person_id": "hit-baixu",
+      "official_url": "https://homepage.hit.edu.cn/baixu",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "杨文超",
+      "roster_entry_id": "roster-3be8867bb5c79daa",
+      "person_id": "hit-yangwenchao",
+      "official_url": "https://homepage.hit.edu.cn/yangwenchao",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "叶亮",
+      "roster_entry_id": "roster-da8246058924eb11",
+      "person_id": "hit-yeliang",
+      "official_url": "https://homepage.hit.edu.cn/yeliang",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "吴玮",
+      "roster_entry_id": "roster-a8b771c4406b01a7",
+      "person_id": "hit-wuwei",
+      "official_url": "https://homepage.hit.edu.cn/wuwei?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "梅林",
+      "roster_entry_id": "roster-f13122014d73c35d",
+      "person_id": "hit-meilin",
+      "official_url": "https://homepage.hit.edu.cn/meilin?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "陈舒怡",
+      "roster_entry_id": "roster-314042bb575f815e",
+      "person_id": "hit-chenshuyi",
+      "official_url": "https://homepage.hit.edu.cn/chenshuyi?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "吴尘雨",
+      "roster_entry_id": "roster-5c66edecd4c8d1b0",
+      "person_id": "hit-wuchenyu",
+      "official_url": "https://homepage.hit.edu.cn/wuchenyu?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "王欣玉",
+      "roster_entry_id": "roster-625e8e8797a3e1da",
+      "person_id": "hit-wangxy",
+      "official_url": "https://homepage.hit.edu.cn/wangxy?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "单成兆",
+      "roster_entry_id": "roster-d58382493b21f464",
+      "person_id": "hit-shanchengzhao",
+      "official_url": "https://homepage.hit.edu.cn/ShanChengzhao?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "董衡",
+      "roster_entry_id": "roster-89c334b69d39c458",
+      "person_id": "hit-dongheng",
+      "official_url": "https://homepage.hit.edu.cn/dongheng",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "李志强",
+      "roster_entry_id": "roster-754096914620ccdb",
+      "person_id": "hit-lizhiqiang",
+      "official_url": "https://homepage.hit.edu.cn/lizhiqiang",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "强蔚",
+      "roster_entry_id": "roster-5e0b37046a0ad4ba",
+      "person_id": "hit-qiangwei",
+      "official_url": "https://seie.hit.edu.cn/2024/0628/c19281a347909/page.htm",
+      "coverage_level": "name_only_or_extended_identity_unresolved",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "徐志伟",
+      "roster_entry_id": "roster-ffa6c946264ce1c9",
+      "person_id": "hit-xuzhiwei",
+      "official_url": "https://seie.hit.edu.cn/2024/0628/c19281a347908/page.htm",
+      "coverage_level": "name_only_or_extended_identity_unresolved",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "倪洁",
+      "roster_entry_id": "roster-3fdcfc7e8a930a82",
+      "person_id": "hit-nijie",
+      "official_url": "https://homepage.hit.edu.cn/nijie",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "通信工程系",
+      "name": "李德志",
+      "roster_entry_id": "roster-2a2017fee0df87de",
+      "person_id": "hit-lidezhi",
+      "official_url": "https://homepage.hit.edu.cn/lidezhi",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "刘梅",
+      "roster_entry_id": "roster-627b8ab45f15166f",
+      "person_id": "hit-liumei",
+      "official_url": "https://homepage.hit.edu.cn/liumei?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "姜义成",
+      "roster_entry_id": "roster-50f414e8f48adbc9",
+      "person_id": "hit-jiangyicheng",
+      "official_url": "https://homepage.hit.edu.cn/jiangyicheng?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "董英凝",
+      "roster_entry_id": "roster-15087df18b9568ce",
+      "person_id": "hit-dongyn",
+      "official_url": "https://homepage.hit.edu.cn/dongyn?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "赵彬",
+      "roster_entry_id": "roster-7bfe10a67509a0e5",
+      "person_id": "hit-zhaobinhit1988",
+      "official_url": "https://homepage.hit.edu.cn/zhaobinhit1988?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "冀振元",
+      "roster_entry_id": "roster-68707f83af3a9d08",
+      "person_id": "hit-jizhenyuan",
+      "official_url": "https://homepage.hit.edu.cn/jizhenyuan?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "谢俊好",
+      "roster_entry_id": "roster-16cfe237754a6eeb",
+      "person_id": "hit-xiejunhao",
+      "official_url": "https://homepage.hit.edu.cn/xiejunhao",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "毛兴鹏",
+      "roster_entry_id": "roster-798db520d1508d4f",
+      "person_id": "hit-xingpengmao",
+      "official_url": "https://homepage.hit.edu.cn/XingpengMao",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "位寅生",
+      "roster_entry_id": "roster-1e8121c61e619a5e",
+      "person_id": "hit-weiyinsheng",
+      "official_url": "https://homepage.hit.edu.cn/weiyinsheng",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "张云",
+      "roster_entry_id": "roster-0fb66ba70fefc147",
+      "person_id": "hit-zhangyun",
+      "official_url": "https://homepage.hit.edu.cn/zhangyun",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "李高鹏",
+      "roster_entry_id": "roster-074426424c489a7d",
+      "person_id": "hit-ligaopeng",
+      "official_url": "https://homepage.hit.edu.cn/ligaopeng",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "李杨",
+      "roster_entry_id": "roster-d34fadd694e23f7f",
+      "person_id": "hit-liyang",
+      "official_url": "https://homepage.hit.edu.cn/liyang?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "周共健",
+      "roster_entry_id": "roster-2fe498aeb4082e81",
+      "person_id": "hit-zhougj",
+      "official_url": "https://homepage.hit.edu.cn/zhougj?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "王勇",
+      "roster_entry_id": "roster-237006d7466025db",
+      "person_id": "hit-wangyong6012",
+      "official_url": "https://homepage.hit.edu.cn/wangyong6012?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "于雷",
+      "roster_entry_id": "roster-c35fd5d9b43c5da2",
+      "person_id": "hit-yulei",
+      "official_url": "https://homepage.hit.edu.cn/yulei?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "张鑫",
+      "roster_entry_id": "roster-7042dd7441fb69d3",
+      "person_id": "hit-zhangxinhit",
+      "official_url": "https://homepage.hit.edu.cn/zhangxinhit?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "吴小川",
+      "roster_entry_id": "roster-54aa048fbd846427",
+      "person_id": "hit-wuxiaochuan",
+      "official_url": "https://homepage.hit.edu.cn/wuxiaochuan",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "索莹",
+      "roster_entry_id": "roster-14fda35e109658cc",
+      "person_id": "hit-suoy",
+      "official_url": "https://homepage.hit.edu.cn/suoy",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "耿钧",
+      "roster_entry_id": "roster-367531c79d2824fa",
+      "person_id": "hit-jgeng",
+      "official_url": "https://homepage.hit.edu.cn/jgeng",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "李鸿志",
+      "roster_entry_id": "roster-179b1896dd935fb0",
+      "person_id": "hit-lihongzhi",
+      "official_url": "https://homepage.hit.edu.cn/lihongzhi",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "童鹏",
+      "roster_entry_id": "roster-1abd4b05084d15db",
+      "person_id": "hit-tpeng",
+      "official_url": "https://homepage.hit.edu.cn/tpeng",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "李可毅",
+      "roster_entry_id": "roster-d55fb422e4f38876",
+      "person_id": "hit-likeyi",
+      "official_url": "https://homepage.hit.edu.cn/likeyi",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "刘子滔",
+      "roster_entry_id": "roster-657cbef7ba06c224",
+      "person_id": "hit-liuzitao",
+      "official_url": "https://homepage.hit.edu.cn/liuzitao",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "化青龙",
+      "roster_entry_id": "roster-e1ad79e563de5a7d",
+      "person_id": "hit-huaqinglong",
+      "official_url": "https://homepage.hit.edu.cn/huaqinglong",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "袁浩轩",
+      "roster_entry_id": "roster-a6490ffea64d037a",
+      "person_id": "hit-yuanhaoxuan",
+      "official_url": "https://homepage.hit.edu.cn/yuanhaoxuan",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "张君秋",
+      "roster_entry_id": "roster-7c858b6dd52b8ab8",
+      "person_id": "hit-zhangjunqiu",
+      "official_url": "https://homepage.hit.edu.cn/zhangjunqiu?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "丁明凯",
+      "roster_entry_id": "roster-14baa0aa001644e0",
+      "person_id": "hit-dingmingkai",
+      "official_url": "https://homepage.hit.edu.cn/dingmingkai?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "电子工程系",
+      "name": "田文龙",
+      "roster_entry_id": "roster-e7735fe15958d6f6",
+      "person_id": "hit-tianwl",
+      "official_url": "https://homepage.hit.edu.cn/tianwl?lang=zh",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "彭喜元",
+      "roster_entry_id": "roster-9f352e3aabbe4570",
+      "person_id": "hit-pengxiyuan",
+      "official_url": "https://homepage.hit.edu.cn/pengxiyuan?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "姜守达",
+      "roster_entry_id": "roster-9438ce6645c0a70e",
+      "person_id": "hit-jiangshouda",
+      "official_url": "https://homepage.hit.edu.cn/jiangshouda?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "付平",
+      "roster_entry_id": "roster-d9a1f0746991537c",
+      "person_id": "hit-fuping",
+      "official_url": "https://homepage.hit.edu.cn/fuping?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "彭宇",
+      "roster_entry_id": "roster-5138cae8a85ad5dc",
+      "person_id": "hit-pengyu",
+      "official_url": "https://homepage.hit.edu.cn/pengyu?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "乔立岩",
+      "roster_entry_id": "roster-58a0ef0fed3762af",
+      "person_id": "hit-qiaoliyan",
+      "official_url": "https://homepage.hit.edu.cn/qiaoliyan?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "许永辉",
+      "roster_entry_id": "roster-1243c118b19f3b5c",
+      "person_id": "hit-xuyonghui",
+      "official_url": "https://homepage.hit.edu.cn/xuyonghui",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "孙超",
+      "roster_entry_id": "roster-613110bfe25353ff",
+      "person_id": "hit-sunchao",
+      "official_url": "https://homepage.hit.edu.cn/sunchao",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "凤雷",
+      "roster_entry_id": "roster-3b02713199451f70",
+      "person_id": "hit-fenglei",
+      "official_url": "https://homepage.hit.edu.cn/fenglei",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "乔家庆",
+      "roster_entry_id": "roster-fd3310b6d503b826",
+      "person_id": "hit-qiaojiaqing",
+      "official_url": "https://homepage.hit.edu.cn/qiaojiaqing",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "赵光权",
+      "roster_entry_id": "roster-3e5b39e0cd83987c",
+      "person_id": "hit-zhaoguangquan",
+      "official_url": "https://homepage.hit.edu.cn/zhaoguangquan",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "杨智明",
+      "roster_entry_id": "roster-cd9995b7f838f93c",
+      "person_id": "hit-yangzhiming",
+      "official_url": "https://homepage.hit.edu.cn/yangzhiming?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "俞洋",
+      "roster_entry_id": "roster-57a3eeec389038ed",
+      "person_id": "hit-yuyang",
+      "official_url": "https://homepage.hit.edu.cn/yuyang?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "付宁",
+      "roster_entry_id": "roster-d279532a4e07be8e",
+      "person_id": "hit-funing",
+      "official_url": "https://homepage.hit.edu.cn/funing?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "林连雷",
+      "roster_entry_id": "roster-75ba56d9e9115133",
+      "person_id": "hit-linlianlei",
+      "official_url": "https://homepage.hit.edu.cn/linlianlei?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "魏长安",
+      "roster_entry_id": "roster-e1ee7450b5fbf31e",
+      "person_id": "hit-weichangan",
+      "official_url": "https://homepage.hit.edu.cn/weichangan?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "刘冰",
+      "roster_entry_id": "roster-212c00c336fceb4a",
+      "person_id": "hit-liubing",
+      "official_url": "https://homepage.hit.edu.cn/liubing",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "刘大同",
+      "roster_entry_id": "roster-07e313498e1dd9f8",
+      "person_id": "hit-liudatong",
+      "official_url": "https://homepage.hit.edu.cn/liudatong",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "刘连胜",
+      "roster_entry_id": "roster-da3ed4f01c1cf390",
+      "person_id": "hit-liuliansheng",
+      "official_url": "https://homepage.hit.edu.cn/liuliansheng",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "杨京礼",
+      "roster_entry_id": "roster-28754c3d801d3da4",
+      "person_id": "hit-yangjingli",
+      "official_url": "https://homepage.hit.edu.cn/yangjingli",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "张京超",
+      "roster_entry_id": "roster-82f550cc193eb1fd",
+      "person_id": "hit-zhangjingchao",
+      "official_url": "https://homepage.hit.edu.cn/zhangjingchao",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "魏德宝",
+      "roster_entry_id": "roster-3e5f43bb16754716",
+      "person_id": "hit-weidebao",
+      "official_url": "https://homepage.hit.edu.cn/weidebao?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "刘晓东",
+      "roster_entry_id": "roster-f514ea8eb60ca4fa",
+      "person_id": "hit-liuxiaodong",
+      "official_url": "https://homepage.hit.edu.cn/liuxiaodong?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "孙震",
+      "roster_entry_id": "roster-9aece3b7ba03c3ef",
+      "person_id": "hit-sunzhen",
+      "official_url": "https://homepage.hit.edu.cn/sunzhen?lang=zh",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "梁军",
+      "roster_entry_id": "roster-5a978e4191a3bbf3",
+      "person_id": "hit-ljzsylmy",
+      "official_url": "https://homepage.hit.edu.cn/ljzsylmy?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "孟升卫",
+      "roster_entry_id": "roster-de176067b8f52115",
+      "person_id": "hit-mengsw",
+      "official_url": "https://homepage.hit.edu.cn/mengsw?lang=zh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "尹洪涛",
+      "roster_entry_id": "roster-ac364b43c75e3c0d",
+      "person_id": "hit-yinhongtao",
+      "official_url": "https://homepage.hit.edu.cn/yinhongtao",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "马云彤",
+      "roster_entry_id": "roster-ad8d691d4a5882a7",
+      "person_id": "hit-mayuntong",
+      "official_url": "https://homepage.hit.edu.cn/mayuntong",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "刘兆庆",
+      "roster_entry_id": "roster-06670894daee6628",
+      "person_id": "hit-liuzhaoqing",
+      "official_url": "https://homepage.hit.edu.cn/liuzhaoqing",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "刘旺",
+      "roster_entry_id": "roster-5519ebeb59137d72",
+      "person_id": "hit-liuwang",
+      "official_url": "https://homepage.hit.edu.cn/liuwang",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "邹昕光",
+      "roster_entry_id": "roster-a51a6681bb09a002",
+      "person_id": "hit-zouxinguang",
+      "official_url": "https://homepage.hit.edu.cn/zouxinguang",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "宋宇晨",
+      "roster_entry_id": "roster-6fe9428ab1f1c878",
+      "person_id": "hit-songyuchen",
+      "official_url": "https://homepage.hit.edu.cn/songyuchen",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "王本宽",
+      "roster_entry_id": "roster-982d47fd8d5e9482",
+      "person_id": "hit-wangbenkuan",
+      "official_url": "https://homepage.hit.edu.cn/wangbenkuan",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "高天宇",
+      "roster_entry_id": "roster-5b00c6ef501f5344",
+      "person_id": "hit-gaotianyu",
+      "official_url": "https://homepage.hit.edu.cn/gaotianyu",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "尉志良",
+      "roster_entry_id": "roster-f4ad2c00614143a4",
+      "person_id": "hit-weizhiliang",
+      "official_url": "https://homepage.hit.edu.cn/WeiZhiliang",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "常永祺",
+      "roster_entry_id": "roster-9d664179b3614c3e",
+      "person_id": "hit-changyongqi",
+      "official_url": "https://homepage.hit.edu.cn/changyongqi",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "王俊凯",
+      "roster_entry_id": "roster-0be8b24e717b9a71",
+      "person_id": "hit-wangjunkai",
+      "official_url": "https://homepage.hit.edu.cn/WangJunkai",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "姚博文",
+      "roster_entry_id": "roster-a448e086e1787f75",
+      "person_id": "hit-yaobowen",
+      "official_url": "https://homepage.hit.edu.cn/yaobowen",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "王厂东",
+      "roster_entry_id": "roster-4ec44d791ba25605",
+      "person_id": "hit-wangchangdong",
+      "official_url": "https://homepage.hit.edu.cn/wangchangdong",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "吴艳",
+      "roster_entry_id": "roster-433935153ad741c8",
+      "person_id": "hit-wuyan",
+      "official_url": "https://homepage.hit.edu.cn/WuYan",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "郑文斌",
+      "roster_entry_id": "roster-85741b0dc58081db",
+      "person_id": "hit-zhengwenbin",
+      "official_url": "https://homepage.hit.edu.cn/zhengwenbin",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "测控工程系",
+      "name": "王传祥",
+      "roster_entry_id": "roster-571a6c9a9f0056ef",
+      "person_id": "hit-wangchuanxiang",
+      "official_url": "https://seie.hit.edu.cn/2026/0105/c19283a385839/page.htm",
+      "coverage_level": "name_only_or_extended_identity_unresolved",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "宿富林",
+      "roster_entry_id": "roster-9a111451727d51e4",
+      "person_id": "hit-franklinsu",
+      "official_url": "https://homepage.hit.edu.cn/franklinsu",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "邹斌",
+      "roster_entry_id": "roster-c160ba71cd5bf899",
+      "person_id": "hit-zoubin",
+      "official_url": "https://homepage.hit.edu.cn/zoubin",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "张钧萍",
+      "roster_entry_id": "roster-443546e0c540f1e3",
+      "person_id": "hit-zhangjunping",
+      "official_url": "https://homepage.hit.edu.cn/zhangjunping",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "朱兵",
+      "roster_entry_id": "roster-42a1b0c3c5291048",
+      "person_id": "hit-zhubing",
+      "official_url": "https://homepage.hit.edu.cn/zhubing",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "谷延锋",
+      "roster_entry_id": "roster-078e2241020f203d",
+      "person_id": "hit-guyf",
+      "official_url": "https://homepage.hit.edu.cn/guyf",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "侯成宇",
+      "roster_entry_id": "roster-2fc4ea74220c5b8c",
+      "person_id": "hit-houchengyu",
+      "official_url": "https://homepage.hit.edu.cn/houchengyu",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "陈雨时",
+      "roster_entry_id": "roster-06f403ff57b78936",
+      "person_id": "hit-chenyushi",
+      "official_url": "https://homepage.hit.edu.cn/chenyushi",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "尹振东",
+      "roster_entry_id": "roster-d4ae72198c972cae",
+      "person_id": "hit-yinzhendong",
+      "official_url": "https://homepage.hit.edu.cn/yinzhendong",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "陈浩",
+      "roster_entry_id": "roster-266a8a496c418592",
+      "person_id": "hit-hithao",
+      "official_url": "https://homepage.hit.edu.cn/hithao",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "张腊梅",
+      "roster_entry_id": "roster-453bebda45fb9fd6",
+      "person_id": "hit-zhanglm",
+      "official_url": "https://homepage.hit.edu.cn/zhanglm",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "杨柱天",
+      "roster_entry_id": "roster-f345a9a5a33a87c6",
+      "person_id": "hit-yangzhutian",
+      "official_url": "https://homepage.hit.edu.cn/yangzhutian",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "胡悦",
+      "roster_entry_id": "roster-404ce4a6e3ff77f5",
+      "person_id": "hit-huyue",
+      "official_url": "https://homepage.hit.edu.cn/huyue",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "刘金龙",
+      "roster_entry_id": "roster-0614962f61026e7c",
+      "person_id": "hit-jinlongliu",
+      "official_url": "https://homepage.hit.edu.cn/JinlongLiu",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "刘天竹",
+      "roster_entry_id": "roster-95489b5f860ad29b",
+      "person_id": "hit-liutianzhu",
+      "official_url": "https://homepage.hit.edu.cn/liutianzhu",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "肖傲然",
+      "roster_entry_id": "roster-e5aeef0da971464f",
+      "person_id": "hit-xiaoaoran",
+      "official_url": "https://homepage.hit.edu.cn/xiaoaoran",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "胡航",
+      "roster_entry_id": "roster-2c3f91e907d535ec",
+      "person_id": "hit-huhang",
+      "official_url": "https://homepage.hit.edu.cn/huhang",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "侯煜冠",
+      "roster_entry_id": "roster-c2b32b44ca805913",
+      "person_id": "hit-houyuguan",
+      "official_url": "https://homepage.hit.edu.cn/houyuguan",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "李宏博",
+      "roster_entry_id": "roster-c5ff459feee5e833",
+      "person_id": "hit-lihongbo",
+      "official_url": "https://homepage.hit.edu.cn/lihongbo",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "高建军",
+      "roster_entry_id": "roster-b2c39ee5550838ea",
+      "person_id": "hit-jjgao",
+      "official_url": "https://homepage.hit.edu.cn/jjgao",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "高国明",
+      "roster_entry_id": "roster-f100a9d03af8027c",
+      "person_id": "hit-gaoguoming",
+      "official_url": "https://homepage.hit.edu.cn/gaoguoming",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "官大衍",
+      "roster_entry_id": "roster-531be132ff48ea97",
+      "person_id": "hit-guandayan",
+      "official_url": "https://homepage.hit.edu.cn/guandayan",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "赵延龙",
+      "roster_entry_id": "roster-24c03f2c4e934cbc",
+      "person_id": "hit-zhaoyanlong",
+      "official_url": "https://homepage.hit.edu.cn/zhaoyanlong",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "曹立新",
+      "roster_entry_id": "roster-426461b12b27c669",
+      "person_id": "hit-caolixin",
+      "official_url": "https://homepage.hit.edu.cn/caolixin",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "陈迪",
+      "roster_entry_id": "roster-4260c5466fc81b5a",
+      "person_id": "hit-chendi",
+      "official_url": "https://homepage.hit.edu.cn/chendi",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "李贤",
+      "roster_entry_id": "roster-092033c7019f35c1",
+      "person_id": "hit-xianli",
+      "official_url": "https://homepage.hit.edu.cn/XianLi",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "李鹏",
+      "roster_entry_id": "roster-26dc86fb154bdffa",
+      "person_id": "hit-lipeng",
+      "official_url": "https://homepage.hit.edu.cn/lipeng",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "庄迪",
+      "roster_entry_id": "roster-9dfbc917faff4744",
+      "person_id": "hit-zhuangdi",
+      "official_url": "https://homepage.hit.edu.cn/zhuangdi",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "刘东洋",
+      "roster_entry_id": "roster-82af8cd0269c8a4c",
+      "person_id": "hit-liudongyang",
+      "official_url": "https://homepage.hit.edu.cn/liudongyang",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "李大森",
+      "roster_entry_id": "roster-8734c9fc725a0928",
+      "person_id": "hit-lidasen",
+      "official_url": "https://homepage.hit.edu.cn/lidasen",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "董喆",
+      "roster_entry_id": "roster-cf1f43eedce7d6a4",
+      "person_id": "hit-dongzhe",
+      "official_url": "https://homepage.hit.edu.cn/dongzhe",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "何胜阳",
+      "roster_entry_id": "roster-ae15529989922dcc",
+      "person_id": "hit-heshengyang",
+      "official_url": "https://seie.hit.edu.cn/2024/0704/c19284a348197/page.htm",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "李冬冬",
+      "roster_entry_id": "roster-ad81b19ef6f7472f",
+      "person_id": "hit-lidongdong",
+      "official_url": "https://seie.hit.edu.cn/2024/0704/c19284a348195/page.htm",
+      "coverage_level": "name_only_or_extended_identity_unresolved",
+      "fields_complete": false
+    },
+    {
+      "department": "信息工程系",
+      "name": "吴龙文",
+      "roster_entry_id": "roster-8cd6739e661b8369",
+      "person_id": "hit-wulongwen",
+      "official_url": "https://homepage.hit.edu.cn/wulongwen",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "李红梅",
+      "roster_entry_id": "roster-ae424bc56761f48a",
+      "person_id": "hit-lihongmei",
+      "official_url": "https://homepage.hit.edu.cn/lihongmei",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "傅佳辉",
+      "roster_entry_id": "roster-47dd86fb661370a5",
+      "person_id": "hit-fujiahui",
+      "official_url": "https://homepage.hit.edu.cn/fujiahui",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "林澍",
+      "roster_entry_id": "roster-9060fc55ac38d309",
+      "person_id": "hit-linshu",
+      "official_url": "https://homepage.hit.edu.cn/linshu",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "孟繁义",
+      "roster_entry_id": "roster-78606d23226a04be",
+      "person_id": "hit-20070140",
+      "official_url": "https://homepage.hit.edu.cn/20070140",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "宗华",
+      "roster_entry_id": "roster-b81853b0486f8890",
+      "person_id": "hit-zonghua",
+      "official_url": "https://homepage.hit.edu.cn/zonghua",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "祁嘉然",
+      "roster_entry_id": "roster-5abd0894eec06abf",
+      "person_id": "hit-qijiaran",
+      "official_url": "https://homepage.hit.edu.cn/qijiaran",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "王琮",
+      "roster_entry_id": "roster-d36794b5565761e7",
+      "person_id": "hit-wangcong1",
+      "official_url": "https://homepage.hit.edu.cn/wangcong1",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "张狂",
+      "roster_entry_id": "roster-e4f42b2b477c58e7",
+      "person_id": "hit-zhangkuang",
+      "official_url": "https://homepage.hit.edu.cn/zhangkuang",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "程亚运",
+      "roster_entry_id": "roster-7faddcd482d80ec2",
+      "person_id": "hit-chengyayun",
+      "official_url": "https://homepage.hit.edu.cn/chengyayun",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "袁乐眙",
+      "roster_entry_id": "roster-4cea616beb158cd3",
+      "person_id": "hit-yuanleyi",
+      "official_url": "https://homepage.hit.edu.cn/yuanleyi",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "张红军",
+      "roster_entry_id": "roster-37bf50c3ca7d5cf4",
+      "person_id": "hit-hongjunzhang",
+      "official_url": "https://homepage.hit.edu.cn/hongjunzhang",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "陈立甲",
+      "roster_entry_id": "roster-f16ec56006060395",
+      "person_id": "hit-ljchen",
+      "official_url": "https://homepage.hit.edu.cn/ljchen",
+      "coverage_level": "sparse_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "李伟",
+      "roster_entry_id": "roster-5f06a2e897817b1a",
+      "person_id": "hit-liw",
+      "official_url": "https://homepage.hit.edu.cn/liw",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "杨国辉",
+      "roster_entry_id": "roster-e669e622a7a72296",
+      "person_id": "hit-ygh",
+      "official_url": "https://homepage.hit.edu.cn/ygh",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "兰盛昌",
+      "roster_entry_id": "roster-9033200c4e4813ea",
+      "person_id": "hit-sclan",
+      "official_url": "https://homepage.hit.edu.cn/sclan",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "王楠楠",
+      "roster_entry_id": "roster-a134ff1723583b7d",
+      "person_id": "hit-wangnannan",
+      "official_url": "https://homepage.hit.edu.cn/wangnannan",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "杨海棠",
+      "roster_entry_id": "roster-8f61aa19baa87e46",
+      "person_id": "hit-yanghaitang",
+      "official_url": "https://homepage.hit.edu.cn/yanghaitang",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "王禹翔",
+      "roster_entry_id": "roster-b293a5c5cf028927",
+      "person_id": "hit-wangyuxiang",
+      "official_url": "https://homepage.hit.edu.cn/wangyuxiang",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "李金星",
+      "roster_entry_id": "roster-d8fefeff34bc7ab6",
+      "person_id": "hit-lijinxinghit",
+      "official_url": "https://homepage.hit.edu.cn/lijinxinghit",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "王禹忠",
+      "roster_entry_id": "roster-a7644a2013036e63",
+      "person_id": "hit-wangyuzhong",
+      "official_url": "https://homepage.hit.edu.cn/wangyuzhong",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "王鹏程",
+      "roster_entry_id": "roster-38fcbf59f1e43ea5",
+      "person_id": "hit-wangpengcheng",
+      "official_url": "https://homepage.hit.edu.cn/wangpengcheng",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    },
+    {
+      "department": "微波工程系",
+      "name": "刘北佳",
+      "roster_entry_id": "roster-7e67225c897f4a5a",
+      "person_id": "hit-liubeijia",
+      "official_url": "https://homepage.hit.edu.cn/liubeijia",
+      "coverage_level": "substantive_professional_history",
+      "fields_complete": false
+    }
+  ],
+  "limitations": [
+    "范围首轮查阅不是所有学历、导师、年份、论文全部核完；fields_complete始终false。",
+    "source计数为逐人来源记录数，跨人同一网页会重复，非独立文献数。",
+    "主图只用直接证据导师；委员会、合作对象、待核关系分层。",
+    "公开部分不含原始缓存、联系信息、出生资料、政治身份、学生名录或论文全文。",
+    "前六样本不计入本院165条名录；本报告不自动覆盖学院未来增删或其它校区。",
+    "旧批pending_mentors与新批pending_mentor_candidates均计待核，单列旧键数量及归一合计，不篡改已冻结旧数据。"
+  ]
+}
