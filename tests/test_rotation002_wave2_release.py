@@ -82,6 +82,16 @@ UNCHANGED_APPLICATION_SHA256 = {'site/app.js': '0e420fef54c0dae966d883bb0aeb0fb7
  'scripts/build_rosters.py': 'bc00cde087ec2ba1065b4ac2332fda16918885ec497c2c34dbd319d16f96a7bf',
  'scripts/deterministic_xlsx.py': '65158f54d001eebb2ac586fd820cd69deed8e5c96ed5b117668ced51c11dc300'}
 
+# Reviewed release24 display-only compatibility overlay. Preserve the historical
+# pins above; only these four assets may differ after the two fallback labels and
+# six shared cache tokens change. All source/data/field pins remain unchanged.
+DISPLAY_FIX_APPLICATION_SHA256 = {
+    'site/app.js': '5fec893a4b83318d4247299a545f34845d37e076d502bcc9100acec6f73e8f59',
+    'site/index.html': '4dde40455944aacd2b3a0a463aee89a64ae2d81ad792a3740dd43c42f005e72f',
+    'site/model.js': 'e932f5275311fc833c9ece21a82ade6713987e90e8c4269e199b1a3f07aaed8c',
+    'site/rosters.js': 'c3db53692e71b9874be1c003fe6e29a92f4b607a67730d2263c61de62b4874bd',
+}
+
 SOURCE_FINGERPRINTS = {'nju-chengxin': (49, 'a5c2a222999e64cf3b50590c05c4a828e7d47555fa84311e72f3378012d9f8c7'),
  'nju-chenpengfei': (68, 'b0cd451e1d5e0e10aa9c34a1be5bb9bbe770646b3c20d5d838a9431db8156ff4'),
  'nju-chenyang': (79, '1eaa226cd2783a6e17ca62779e835f2de12ed8e704a739b8487b5af8e79991f3'),
@@ -594,23 +604,23 @@ class Rotation002Wave2ReleaseTests(unittest.TestCase):
         count, digest = BASELINE_QUEUE_PREFIX
         self.assertEqual(count, 215)
         self.assertEqual(object_sha(self.q['tasks'][:count]), digest)
-        self.assertEqual(len(self.q['tasks']), 217)
-        self.assertEqual([t['institution_id'] for t in self.q['tasks'][count:]], ['nju', 'hnu'])
-        for task in self.q['tasks'][count:]:
+        self.assertEqual(len(self.q['tasks']), 219)
+        self.assertEqual([t['institution_id'] for t in self.q['tasks'][count:217]], ['nju', 'hnu'])
+        for task in self.q['tasks'][count:217]:
             self.assertEqual(task['status'], 'partial')
             self.assertIs(task['scope']['university_complete'], False)
             self.assertEqual(task['campus_ids'], [])
 
     def test_05_exact_approved_scope_totals_and_no_hust_additions(self):
-        self.assertEqual((len(self.d['people']), len(self.d['pending_people']), len(self.d['org_units']), len(self.d['institutions'])), (541,83,221,39))
-        self.assertEqual((len(self.r['entries']), len(self.r['source_observations'])), (1706,1744))
-        self.assertEqual([p['person_id'] for p in self.d['people'][535:]], list(SOURCE_FINGERPRINTS))
+        self.assertEqual((len(self.d['people']), len(self.d['pending_people']), len(self.d['org_units']), len(self.d['institutions'])), (547,83,223,39))
+        self.assertEqual((len(self.r['entries']), len(self.r['source_observations'])), (1712,1750))
+        self.assertEqual([p['person_id'] for p in self.d['people'][535:541]], list(SOURCE_FINGERPRINTS))
         self.assertEqual(len(self.d['pending_people'][83:]), 0)
-        self.assertEqual({p['school_id'] for p in self.d['people'][535:]}, {'nju','hnu'})
-        self.assertEqual({e['school_id'] for e in self.r['entries'][1700:]}, {'nju','hnu'})
-        self.assertEqual({o['id'] for o in self.d['org_units'][218:]}, set(ORG_FINGERPRINTS))
-        self.assertEqual(len(build.department_exports(self.d)), 105)
-        self.assertEqual([b['batch_id'] for b in self.d['profile_batches'][130:]], ['faculty-batch-nju-rotation-002','faculty-batch-hnu-rotation-002'])
+        self.assertEqual({p['school_id'] for p in self.d['people'][535:541]}, {'nju','hnu'})
+        self.assertEqual({e['school_id'] for e in self.r['entries'][1700:1706]}, {'nju','hnu'})
+        self.assertEqual({o['id'] for o in self.d['org_units'][218:221]}, set(ORG_FINGERPRINTS))
+        self.assertEqual(len(build.department_exports(self.d)), 107)
+        self.assertEqual([b['batch_id'] for b in self.d['profile_batches'][130:132]], ['faculty-batch-nju-rotation-002','faculty-batch-hnu-rotation-002'])
         for p in self.new:
             self.assertTrue(p['detail_count_eligible'])
             self.assertFalse(p['complete_profile_count_eligible'])
@@ -803,7 +813,7 @@ class Rotation002Wave2ReleaseTests(unittest.TestCase):
             self.assertEqual(batch['source_files'],[{'file':f'faculty-batch-{school}-rotation-002.json','sha256':SOURCE_PACKAGE_SHA256[school]}])
             self.assertEqual(batch['people_count'],3)
             self.assertFalse(batch['coverage_complete']); self.assertFalse(batch['fields_complete'])
-            entries = [e for e in self.r['entries'][1700:] if e['school_id']==school]
+            entries = [e for e in self.r['entries'][1700:1706] if e['school_id']==school]
             self.assertEqual([e['source_person_id'] for e in entries],ids)
             self.assertEqual([e['name'] for e in entries],EXPECTED_NAMES[school])
             for entry in entries:
@@ -872,7 +882,7 @@ class Rotation002Wave2ReleaseTests(unittest.TestCase):
 
     def test_22_no_application_changes_or_new_ui_columns(self):
         for path,digest in UNCHANGED_APPLICATION_SHA256.items():
-            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),digest,path)
+            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),DISPLAY_FIX_APPLICATION_SHA256.get(path,digest),path)
 
     def test_23_consumer_statistics_are_partial_and_not_full_school_population(self):
         js=self.consumers()

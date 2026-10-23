@@ -19,7 +19,7 @@
     "链接为官方目录提供的地址；未逐个验证所有院系主页可访问性。",
     "深圳旧电子信息学院 eie.hitsz.edu.cn 主页两次抓取超时，改用官方目录已确认的集成电路学院名录，不涉及访问拒绝。"
   ],
-  "scope_note": "39校有少量选中名录及部分职业资料，不代表全校全院完成或人事在岗核验。本轮2校6条观察新增6部分职业+0pending，原535职业、83pending及全部旧字段不变。候选教育、任职与导师独立隔离；本轮各校名录、职业事实、未知和来源限制分别保留。",
+  "scope_note": "39校有少量选中名录及部分职业资料，不代表全校全院完成或人事在岗核验。本轮2校6条观察新增6部分职业+0pending，原541职业、83pending及全部旧字段不变。候选教育、任职与导师独立隔离；本轮各校名录、职业事实、未知和来源限制分别保留。",
   "campuses": [
     {
       "id": "harbin",
@@ -3887,6 +3887,28 @@
       "parent_id": "hnu-chemistry",
       "source_url": "https://cc.hnu.edu.cn/szdw/jsmc.htm",
       "source_id": "hnu-chemistry-analytical-professor-roster",
+      "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "sysu-history-zhuhai",
+      "name": "历史学系（珠海）",
+      "type": "department",
+      "school_id": "sysu",
+      "parent_id": "sysu",
+      "source_url": "https://historyzh.sysu.edu.cn/teacher",
+      "source_id": "sysu-historyzh-professor-roster-index",
+      "evidence_status": "official_search_index_only",
+      "campus_ids": []
+    },
+    {
+      "id": "scu-materials-science-engineering",
+      "name": "材料科学与工程学院",
+      "type": "school",
+      "school_id": "scu",
+      "parent_id": "scu",
+      "source_url": "https://mse.scu.edu.cn/szdw/js.htm",
+      "source_id": "scu-materials-professor-roster",
       "evidence_status": "official_roster_body_read",
       "campus_ids": []
     }
@@ -176469,6 +176491,3313 @@
         "hnu-huanshuangyan-profile"
       ],
       "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "sysu-liuzhiwei",
+      "name": "刘志伟",
+      "school_id": "sysu",
+      "department_id": "sysu-history-zhuhai",
+      "organization_id": "sysu-history-zhuhai",
+      "campus_ids": [],
+      "campus": null,
+      "department": "历史学系（珠海）",
+      "department_basis": "official_index_only_sampling_affiliation_not_current_personnel_verification",
+      "roster_entry_id": "roster-sysu-historyzh-liuzhiwei",
+      "official_url": "https://historyzh.sysu.edu.cn/teacher/liu-zhi-wei",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://historyzh.sysu.edu.cn/teacher",
+      "listed_role_source_id": "sysu-historyzh-professor-roster-index",
+      "listed_role_basis": "explicit_official_professor_category_search_index_only",
+      "appointments": [
+        {
+          "institution": "中山大学",
+          "title": "任教",
+          "start": "1983",
+          "end": null,
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": "2016-01-09",
+          "source_url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "source_id": "xmu-liuzhiwei-interview",
+          "evidence_status": "official_public_body_read",
+          "note": "本人2016访谈说自1983年任教至今；今仅指访谈时，不代表2026续任，职称未用于1983起任。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "xmu-liuzhiwei-interview",
+            "title": "xmu-liuzhiwei-interview",
+            "start": "xmu-liuzhiwei-interview",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "institution": "中山大学历史学系",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": "2016-01-09",
+          "source_url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "source_id": "xmu-liuzhiwei-interview",
+          "evidence_status": "official_public_body_read",
+          "note": "访谈时教授身份；未核晋升年份，历史学系不可回填为珠海。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "xmu-liuzhiwei-interview",
+            "title": "xmu-liuzhiwei-interview",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "institution": "台湾大学历史系",
+          "title": "客座教授",
+          "start": "2015-09",
+          "end": "2016-01",
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "source_url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "source_id": "xmu-liuzhiwei-interview",
+          "evidence_status": "official_public_body_read",
+          "note": "与教育栏非学位学术访问是同一事件。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "xmu-liuzhiwei-interview",
+            "title": "xmu-liuzhiwei-interview",
+            "start": "xmu-liuzhiwei-interview",
+            "end": "xmu-liuzhiwei-interview"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          }
+        }
+      ],
+      "education": [
+        {
+          "event_id": "sysu-liuzhiwei-education-1",
+          "degree": null,
+          "institution": "中山大学",
+          "start": null,
+          "end": "1977",
+          "field": "历史学",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确院校所在地规范化；不表示国籍，不把访问或博士后当作授位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "undergraduate_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "source_id": "xmu-liuzhiwei-interview",
+          "evidence_status": "official_public_body_read",
+          "note": "本人访谈称大学毕业，未明确学位及入学年；不按三年制倒算入学年份。",
+          "include_in_education_filters": true,
+          "field_provenance": {
+            "degree": null,
+            "institution": "xmu-liuzhiwei-interview",
+            "start": null,
+            "end": "xmu-liuzhiwei-interview",
+            "field": "xmu-liuzhiwei-interview",
+            "degree_awarded": null,
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "education_event_id": "sysu-liuzhiwei-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "event_id": "sysu-liuzhiwei-education-2",
+          "degree": null,
+          "institution": "中山大学",
+          "start": "1980",
+          "end": "1983",
+          "field": "社会经济史",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确院校所在地规范化；不表示国籍，不把访问或博士后当作授位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "graduate_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "source_id": "xmu-liuzhiwei-interview",
+          "evidence_status": "official_public_body_read",
+          "note": "直接正文明确研究生阶段、1980考取与1983毕业，未明确硕/博层次或授位；不把索引中的硕士标签提升为正文证实。",
+          "include_in_education_filters": true,
+          "field_provenance": {
+            "degree": null,
+            "institution": "xmu-liuzhiwei-interview",
+            "start": "xmu-liuzhiwei-interview",
+            "end": "xmu-liuzhiwei-interview",
+            "field": "xmu-liuzhiwei-interview",
+            "degree_awarded": null,
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "education_event_id": "sysu-liuzhiwei-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "event_id": "sysu-liuzhiwei-education-3",
+          "degree": null,
+          "institution": "台湾大学",
+          "start": "2015-09",
+          "end": "2016-01",
+          "field": null,
+          "country": "中国",
+          "region": "hmt",
+          "continent": "亚洲",
+          "geography_basis": "按明确院校所在地规范化；不表示国籍，不把访问或博士后当作授位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "academic_visit",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "source_id": "xmu-liuzhiwei-interview",
+          "evidence_status": "official_public_body_read",
+          "note": "历史系客座教授，属于非学位学术访问；与任职栏同一经历，不重复认定为学位。",
+          "include_in_education_filters": true,
+          "field_provenance": {
+            "degree": null,
+            "institution": "xmu-liuzhiwei-interview",
+            "start": "xmu-liuzhiwei-interview",
+            "end": "xmu-liuzhiwei-interview",
+            "field": null,
+            "degree_awarded": "xmu-liuzhiwei-interview",
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "education_event_id": "sysu-liuzhiwei-education-3",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国台湾",
+          "continent_code": "asia"
+        }
+      ],
+      "mentors": [
+        {
+          "name": "汤明檖",
+          "type": "graduate_supervisor",
+          "education_stage": "研究生（直接正文未细分硕士或博士）",
+          "education_event_id": "sysu-liuzhiwei-education-2",
+          "start": null,
+          "end": null,
+          "source_url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "source_id": "xmu-liuzhiwei-interview",
+          "evidence_status": "official_public_body_read",
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_checked",
+          "employment_status": "not_checked",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "note": "本人明确研究所指导老师；只记直接研究生指导，不把梁方仲的间接学术传承或萧凤霞、科大卫、陈其南的合作/影响转为本人师承。导师现职及导航未核。",
+          "field_provenance": {
+            "name": "xmu-liuzhiwei-interview",
+            "type": "xmu-liuzhiwei-interview",
+            "education_stage": "xmu-liuzhiwei-interview",
+            "education_event_id": "xmu-liuzhiwei-interview",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "relationship_kind": "graduate_advisor_unspecified_stage",
+          "type_label": "研究生导师（硕博阶段未细分）",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_checked",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "graduate_supervisor",
+          "include_in_degree_mentorship_graph": true,
+          "relationship_scope": "来源仅研究生阶段直接指导；不得归为硕士或博士指导。"
+        }
+      ],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "在国家与社会之间：明清广东地区里甲赋役制度与乡村社会",
+          "year": null,
+          "venue": null,
+          "volume": null,
+          "pages_or_article_number": null,
+          "doi": null,
+          "url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "type": "book",
+          "source_url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "source_id": "xmu-liuzhiwei-interview",
+          "evidence_status": "official_public_body_read",
+          "identity_evidence": "来源直接对应本人并列为其著作。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "访谈导言直接列本人著作，仅保留题名；该来源未给版本年份和出版社，不从搜索索引补入，不是单书链接。",
+          "field_provenance": {
+            "title": "xmu-liuzhiwei-interview",
+            "year": null,
+            "venue": null,
+            "volume": null,
+            "pages_or_article_number": null,
+            "doi": null,
+            "type": "xmu-liuzhiwei-interview"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "not_disclosed",
+            "venue": "not_disclosed",
+            "volume": "not_disclosed",
+            "pages_or_article_number": "not_disclosed",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "type_label": "学术著作（非期刊或会议论文）",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "sysu-historyzh-professor-roster-index",
+          "url": "https://historyzh.sysu.edu.cn/teacher",
+          "evidence_status": "official_search_index_only",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "教授栏目单次公开搜索索引连续8人；普通正文403；非正文名录，不证明姓名链接href或人事在岗。",
+          "evidence_status_label": "仅官方搜索索引，未取得该目标正文。"
+        },
+        {
+          "id": "sysu-liuzhiwei-profile-index",
+          "url": "https://historyzh.sysu.edu.cn/teacher/liu-zhi-wei",
+          "evidence_status": "official_search_index_only",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "校内个人页公开索引；所在host名录正文403后未继续访问个人页。仅候选，不冒充个人页正文。",
+          "evidence_status_label": "仅官方搜索索引，未取得该目标正文。"
+        },
+        {
+          "id": "xmu-liuzhiwei-interview",
+          "url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_hosted_self_corrected_interview",
+          "access_note": "厦门大学公开转载本人订正的台湾大学历史系访谈，访谈2016-01-09，原刊2016-04，转载2018-10-12；旧现职不延伸至2026。",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "must-history-doctoral-roster",
+          "url": "https://www.must.edu.mo/cn/iscr/staff/ph",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "澳科大历史学博士导师名单正文，曹天忠行明确链接其PDF，刘志伟同表列示；仅核职业身份，不当作授位或全职雇佣证明。",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        }
+      ],
+      "unknowns": [
+        "本科与研究生明确授位及研究生学位层次未在可读正文中明确。",
+        "校内晋升年月与2026珠海在岗仅索引候选；历史任职终止时间未披露。",
+        "导师导航、当前任职状态与个人校区未核。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_index_and_separate_profile_index_crossmatched_with_professional_body",
+        "source_url": "https://historyzh.sysu.edu.cn/teacher",
+        "profile_url": "https://historyzh.sysu.edu.cn/teacher/liu-zhi-wei",
+        "source_ids": [
+          "sysu-historyzh-professor-roster-index",
+          "sysu-liuzhiwei-profile-index",
+          "xmu-liuzhiwei-interview",
+          "must-history-doctoral-roster"
+        ],
+        "official_roster_profile_link_verified": false,
+        "note": "名录教授类别、姓名与独立搜得同名校内个人页匹配；再以学校/学科/职业轨迹及著作与可读正文交叉核身份。不是名录href已核。 中大历史学、明清社会经济史、著作题名一致；未合并物理学及文学领域同名人物。"
+      },
+      "professional_field_provenance": {
+        "name": "sysu-historyzh-professor-roster-index",
+        "school_id": "sysu-historyzh-professor-roster-index",
+        "department_id": "sysu-historyzh-professor-roster-index",
+        "organization_id": "sysu-historyzh-professor-roster-index",
+        "listed_role": "sysu-historyzh-professor-roster-index",
+        "research_interests": [
+          "xmu-liuzhiwei-interview"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "navigation_verified": false,
+      "navigation_status": "official_profile_index_only_body_not_read",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [
+        {
+          "institution": "中山大学历史学系（珠海）",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "current": null,
+          "status": "pending_direct_body_verification",
+          "as_of": null,
+          "source_url": "https://historyzh.sysu.edu.cn/teacher",
+          "source_id": "sysu-historyzh-professor-roster-index",
+          "evidence_status": "official_search_index_only",
+          "note": "教授分类名录仅公开索引；抽样归属不等2026正式在岗。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "sysu-historyzh-professor-roster-index",
+            "title": "sysu-historyzh-professor-roster-index",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "include_in_appointment_count": false,
+          "include_in_verified_appointment_count": false
+        },
+        {
+          "institution": "中山大学历史学系",
+          "title": "讲师",
+          "start": "1985",
+          "end": null,
+          "current": null,
+          "status": "pending_direct_body_verification",
+          "as_of": null,
+          "source_url": "https://historyzh.sysu.edu.cn/teacher/liu-zhi-wei",
+          "source_id": "sysu-liuzhiwei-profile-index",
+          "evidence_status": "official_search_index_only",
+          "note": "晋升年份仅校方个人页索引。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "sysu-liuzhiwei-profile-index",
+            "title": "sysu-liuzhiwei-profile-index",
+            "start": "sysu-liuzhiwei-profile-index",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "include_in_appointment_count": false,
+          "include_in_verified_appointment_count": false
+        },
+        {
+          "institution": "中山大学历史学系",
+          "title": "副教授",
+          "start": "1991",
+          "end": null,
+          "current": null,
+          "status": "pending_direct_body_verification",
+          "as_of": null,
+          "source_url": "https://historyzh.sysu.edu.cn/teacher/liu-zhi-wei",
+          "source_id": "sysu-liuzhiwei-profile-index",
+          "evidence_status": "official_search_index_only",
+          "note": "晋升年份仅校方个人页索引。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "sysu-liuzhiwei-profile-index",
+            "title": "sysu-liuzhiwei-profile-index",
+            "start": "sysu-liuzhiwei-profile-index",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "include_in_appointment_count": false,
+          "include_in_verified_appointment_count": false
+        },
+        {
+          "institution": "中山大学历史学系",
+          "title": "教授",
+          "start": "1994",
+          "end": null,
+          "current": null,
+          "status": "pending_direct_body_verification",
+          "as_of": null,
+          "source_url": "https://historyzh.sysu.edu.cn/teacher/liu-zhi-wei",
+          "source_id": "sysu-liuzhiwei-profile-index",
+          "evidence_status": "official_search_index_only",
+          "note": "晋升年份仅校方个人页索引，不与珠海名录自动合并为连续任职。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "sysu-liuzhiwei-profile-index",
+            "title": "sysu-liuzhiwei-profile-index",
+            "start": "sysu-liuzhiwei-profile-index",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "include_in_appointment_count": false,
+          "include_in_verified_appointment_count": false
+        }
+      ],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "明清社会经济史",
+          "source_url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "source_id": "xmu-liuzhiwei-interview",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "历史人类学",
+          "source_url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "source_id": "xmu-liuzhiwei-interview",
+          "evidence_status": "official_public_body_read"
+        }
+      ],
+      "source_profile_status": "partial_direct_official_professional_profile",
+      "data_batch_id": "faculty-batch-sysu-rotation-002",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；中大归属仅官方索引，个人页正文与实时在职未核",
+      "research_interests": "明清社会经济史；历史人类学",
+      "research_interests_source_ids": [
+        "xmu-liuzhiwei-interview"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer",
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页正文未核，不启用个人主页导航。",
+      "include_in_current_faculty_count": false,
+      "current_faculty_status": "not_verified_official_index_only",
+      "roster_affiliation_status": "official_index_only",
+      "sampling_affiliation_label": "中山大学历史学系（珠海）仅为官方索引抽样关联，未核当前任职；历史职业事实另有正文来源。",
+      "alternative_professional_sources": [
+        {
+          "title": "已核官方历史职业资料（非现校个人主页）",
+          "url": "https://crlhd.xmu.edu.cn/info/1037/4695.htm",
+          "source_id": "xmu-liuzhiwei-interview"
+        }
+      ]
+    },
+    {
+      "person_id": "sysu-wutao",
+      "name": "吴滔",
+      "school_id": "sysu",
+      "department_id": "sysu-history-zhuhai",
+      "organization_id": "sysu-history-zhuhai",
+      "campus_ids": [],
+      "campus": null,
+      "department": "历史学系（珠海）",
+      "department_basis": "official_index_only_sampling_affiliation_not_current_personnel_verification",
+      "roster_entry_id": "roster-sysu-historyzh-wutao",
+      "official_url": "https://historyzh.sysu.edu.cn/teacher/wu-tao",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://historyzh.sysu.edu.cn/teacher",
+      "listed_role_source_id": "sysu-historyzh-professor-roster-index",
+      "listed_role_basis": "explicit_official_professor_category_search_index_only",
+      "appointments": [
+        {
+          "institution": "中山大学历史学系",
+          "title": "任教",
+          "start": "2005",
+          "end": null,
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": "2015-04-28",
+          "source_url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "source_id": "usts-wutao-bio-2015",
+          "evidence_status": "official_public_body_read",
+          "note": "2005进入历史学系工作，未披露起任职称；不得回填为珠海系。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "usts-wutao-bio-2015",
+            "title": "usts-wutao-bio-2015",
+            "start": "usts-wutao-bio-2015",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "institution": "中山大学历史学系",
+          "title": "教授、博士生导师",
+          "start": null,
+          "end": null,
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": "2015-04-28",
+          "source_url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "source_id": "usts-wutao-bio-2015",
+          "evidence_status": "official_public_body_read",
+          "note": "2015官方简介当时职称，非2026现职；教授晋升2010仅索引候选。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "usts-wutao-bio-2015",
+            "title": "usts-wutao-bio-2015",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "institution": "中山大学历史学系（珠海）",
+          "title": "主任",
+          "start": null,
+          "end": null,
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": "2022-06-11",
+          "source_url": "https://news.fudan.edu.cn/2022/0611/c31a131616/page.htm",
+          "source_id": "fudan-wutao-doctoral-mentor-2022",
+          "evidence_status": "official_public_body_read",
+          "note": "复旦活动报道明确2022时点任职，不由旧现任语句推出2026续任或2018起任。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "fudan-wutao-doctoral-mentor-2022",
+            "title": "fudan-wutao-doctoral-mentor-2022",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        }
+      ],
+      "education": [
+        {
+          "event_id": "sysu-wutao-education-1",
+          "degree": null,
+          "institution": "苏州铁道师范学院",
+          "start": null,
+          "end": null,
+          "field": null,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确院校所在地规范化；不表示国籍，不把访问或博士后当作授位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "undergraduate_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://www.sinoss.net/c/2012-09-21/511326.shtml",
+          "source_id": "sinoss-wutao-education-2012",
+          "evidence_status": "official_public_body_read",
+          "note": "明确本科、历史系；院系名称不自动转换为所学专业或学士授位。",
+          "include_in_education_filters": true,
+          "field_provenance": {
+            "degree": null,
+            "institution": "sinoss-wutao-education-2012",
+            "start": null,
+            "end": null,
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "education_event_id": "sysu-wutao-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "event_id": "sysu-wutao-education-2",
+          "degree": "硕士",
+          "institution": "南京农业大学",
+          "start": null,
+          "end": null,
+          "field": "农业史",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确院校所在地规范化；不表示国籍，不把访问或博士后当作授位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://www.sinoss.net/c/2012-09-21/511326.shtml",
+          "source_id": "sinoss-wutao-education-2012",
+          "evidence_status": "official_public_body_read",
+          "note": "报道描述硕士阶段与攻读方向，无明确学位获授或起止年月。",
+          "include_in_education_filters": true,
+          "field_provenance": {
+            "degree": "sinoss-wutao-education-2012",
+            "institution": "sinoss-wutao-education-2012",
+            "start": null,
+            "end": null,
+            "field": "sinoss-wutao-education-2012",
+            "degree_awarded": null,
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "education_event_id": "sysu-wutao-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "sysu-wutao-education-3",
+          "degree": "历史学博士",
+          "institution": "复旦大学",
+          "start": "2000",
+          "end": "2003",
+          "field": "历史地理学",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确院校所在地规范化；不表示国籍，不把访问或博士后当作授位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "degree_awarded_date": "2003",
+          "source_url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "source_id": "usts-wutao-bio-2015",
+          "evidence_status": "official_public_body_read",
+          "note": "学习2000—2003和导师来自2022复旦本人讲话；2003明确获历史学博士来自苏科大2015官方简介；研究方向来自中山大学报转载，不称正式专业名称。仅年精度。",
+          "include_in_education_filters": true,
+          "field_provenance": {
+            "degree": "usts-wutao-bio-2015",
+            "institution": "usts-wutao-bio-2015",
+            "start": "fudan-wutao-doctoral-mentor-2022",
+            "end": "fudan-wutao-doctoral-mentor-2022",
+            "field": "sinoss-wutao-education-2012",
+            "degree_awarded": "usts-wutao-bio-2015",
+            "degree_awarded_date": "usts-wutao-bio-2015"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_degree_award",
+            "degree_awarded_date": "source_reported"
+          },
+          "supporting_source_ids": [
+            "fudan-wutao-doctoral-mentor-2022",
+            "sinoss-wutao-education-2012"
+          ],
+          "education_event_id": "sysu-wutao-education-3",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "degree_award_source_id": "usts-wutao-bio-2015",
+          "degree_award_source_url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance"
+        },
+        {
+          "event_id": "sysu-wutao-education-4",
+          "degree": null,
+          "institution": "中山大学",
+          "start": "2003",
+          "end": null,
+          "field": null,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确院校所在地规范化；不表示国籍，不把访问或博士后当作授位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "postdoctoral_research",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "source_id": "usts-wutao-bio-2015",
+          "evidence_status": "official_public_body_read",
+          "note": "2003进入历史学系博士后流动站。2005入职并不直接证明博士后于2005结束，因此结束年为空。",
+          "include_in_education_filters": true,
+          "field_provenance": {
+            "degree": null,
+            "institution": "usts-wutao-bio-2015",
+            "start": "usts-wutao-bio-2015",
+            "end": null,
+            "field": null,
+            "degree_awarded": "usts-wutao-bio-2015",
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "education_event_id": "sysu-wutao-education-4",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        }
+      ],
+      "mentors": [
+        {
+          "name": "葛剑雄",
+          "type": "doctoral_supervisor",
+          "education_stage": "博士",
+          "education_event_id": "sysu-wutao-education-3",
+          "start": null,
+          "end": null,
+          "source_url": "https://news.fudan.edu.cn/2022/0611/c31a131616/page.htm",
+          "source_id": "fudan-wutao-doctoral-mentor-2022",
+          "evidence_status": "official_public_body_read",
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_checked",
+          "employment_status": "not_checked",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "note": "本人讲话明确跟随导师攻读博士。正文所列邹逸麟、张修桂、周振鹤是课程作者及学术影响，不新增为导师。导师2026现职及官方导航未核。",
+          "field_provenance": {
+            "name": "fudan-wutao-doctoral-mentor-2022",
+            "type": "fudan-wutao-doctoral-mentor-2022",
+            "education_stage": "fudan-wutao-doctoral-mentor-2022",
+            "education_event_id": "fudan-wutao-doctoral-mentor-2022",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "relationship_kind": "doctoral_advisor",
+          "type_label": "博士导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_checked",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "doctoral_supervisor",
+          "include_in_degree_mentorship_graph": true
+        }
+      ],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "清代江南市镇与农村关系的空间透视——以苏州地区为中心",
+          "year": 2010,
+          "venue": "上海古籍出版社",
+          "volume": null,
+          "pages_or_article_number": null,
+          "doi": null,
+          "url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "type": "book",
+          "source_url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "source_id": "usts-wutao-bio-2015",
+          "evidence_status": "official_public_body_read",
+          "identity_evidence": "来源直接对应本人并列为其著作。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "外校官方职业简介列独著与出版年份；不是出版社单书页面，不核全文或ISBN。",
+          "field_provenance": {
+            "title": "usts-wutao-bio-2015",
+            "year": "usts-wutao-bio-2015",
+            "venue": "usts-wutao-bio-2015",
+            "volume": null,
+            "pages_or_article_number": null,
+            "doi": null,
+            "type": "usts-wutao-bio-2015"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "not_disclosed",
+            "pages_or_article_number": "not_disclosed",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "type_label": "学术著作（非期刊或会议论文）",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "sysu-historyzh-professor-roster-index",
+          "url": "https://historyzh.sysu.edu.cn/teacher",
+          "evidence_status": "official_search_index_only",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "教授栏目单次公开搜索索引连续8人；普通正文403；非正文名录，不证明姓名链接href或人事在岗。",
+          "evidence_status_label": "仅官方搜索索引，未取得该目标正文。"
+        },
+        {
+          "id": "sysu-wutao-profile-index",
+          "url": "https://historyzh.sysu.edu.cn/teacher/wu-tao",
+          "evidence_status": "official_search_index_only",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "校内个人页公开索引；所在host名录正文403后未继续访问个人页。仅候选，不冒充个人页正文。",
+          "evidence_status_label": "仅官方搜索索引，未取得该目标正文。"
+        },
+        {
+          "id": "usts-wutao-bio-2015",
+          "url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "苏州科技大学官方2015-04-28职业简介，明确2003获历史学博士。",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "fudan-wutao-doctoral-mentor-2022",
+          "url": "https://news.fudan.edu.cn/2022/0611/c31a131616/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "2022-06-11复旦官方报道本人讲话明确2000—2003博士学习及导师葛剑雄；历史珠海系主任仅作2022时点。",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "sinoss-wutao-education-2012",
+          "url": "https://www.sinoss.net/c/2012-09-21/511326.shtml",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "official_humanities_portal_republication_of_university_newspaper",
+          "access_note": "2012-09-21中国高校人文社会科学信息网转载中山大学报署名报道；只取吴滔本科、硕士和博士研究方向，不把同页其他人的导师授予吴滔。",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "本科及硕士学位获授和年月未明确，博士授位只到年。",
+        "博士后结束日期、博士后合作导师未核；不从2005任教推断出站。",
+        "校内晋升、起任年月和2026现职索引候选与历史正文分开。",
+        "个人校区、全职人事状态、导师2026现职与导航未核。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_index_and_separate_profile_index_crossmatched_with_professional_body",
+        "source_url": "https://historyzh.sysu.edu.cn/teacher",
+        "profile_url": "https://historyzh.sysu.edu.cn/teacher/wu-tao",
+        "source_ids": [
+          "sysu-historyzh-professor-roster-index",
+          "sysu-wutao-profile-index",
+          "usts-wutao-bio-2015",
+          "fudan-wutao-doctoral-mentor-2022",
+          "sinoss-wutao-education-2012"
+        ],
+        "official_roster_profile_link_verified": false,
+        "note": "名录教授类别、姓名与独立搜得同名校内个人页匹配；再以学校/学科/职业轨迹及著作与可读正文交叉核身份。不是名录href已核。 中大历史学、复旦历史地理博士及相关书目一致，2022外校正文明确珠海系主任。"
+      },
+      "professional_field_provenance": {
+        "name": "sysu-historyzh-professor-roster-index",
+        "school_id": "sysu-historyzh-professor-roster-index",
+        "department_id": "sysu-historyzh-professor-roster-index",
+        "organization_id": "sysu-historyzh-professor-roster-index",
+        "listed_role": "sysu-historyzh-professor-roster-index",
+        "research_interests": [
+          "usts-wutao-bio-2015"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "navigation_verified": false,
+      "navigation_status": "official_profile_index_only_body_not_read",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [
+        {
+          "institution": "中山大学历史学系（珠海）",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "current": null,
+          "status": "pending_direct_body_verification",
+          "as_of": null,
+          "source_url": "https://historyzh.sysu.edu.cn/teacher",
+          "source_id": "sysu-historyzh-professor-roster-index",
+          "evidence_status": "official_search_index_only",
+          "note": "2026教授名录现列只按索引候选。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "sysu-historyzh-professor-roster-index",
+            "title": "sysu-historyzh-professor-roster-index",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "include_in_appointment_count": false,
+          "include_in_verified_appointment_count": false
+        },
+        {
+          "institution": "中山大学历史学系",
+          "title": "教授",
+          "start": "2010",
+          "end": null,
+          "current": null,
+          "status": "pending_direct_body_verification",
+          "as_of": null,
+          "source_url": "https://historyzh.sysu.edu.cn/teacher/wu-tao",
+          "source_id": "sysu-wutao-profile-index",
+          "evidence_status": "official_search_index_only",
+          "note": "晋升年份仅索引；不回填珠海组织。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "sysu-wutao-profile-index",
+            "title": "sysu-wutao-profile-index",
+            "start": "sysu-wutao-profile-index",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "include_in_appointment_count": false,
+          "include_in_verified_appointment_count": false
+        },
+        {
+          "institution": "中山大学历史学系（珠海）",
+          "title": "副主任（主持工作）",
+          "start": "2016",
+          "end": null,
+          "current": null,
+          "status": "pending_direct_body_verification",
+          "as_of": null,
+          "source_url": "https://historyzh.sysu.edu.cn/teacher/wu-tao",
+          "source_id": "sysu-wutao-profile-index",
+          "evidence_status": "official_search_index_only",
+          "note": "起任年仅索引；结束未披露。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "sysu-wutao-profile-index",
+            "title": "sysu-wutao-profile-index",
+            "start": "sysu-wutao-profile-index",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "include_in_appointment_count": false,
+          "include_in_verified_appointment_count": false
+        },
+        {
+          "institution": "中山大学历史学系（珠海）",
+          "title": "主任",
+          "start": "2018-07",
+          "end": null,
+          "current": null,
+          "status": "pending_direct_body_verification",
+          "as_of": null,
+          "source_url": "https://historyzh.sysu.edu.cn/teacher/wu-tao",
+          "source_id": "sysu-wutao-profile-index",
+          "evidence_status": "official_search_index_only",
+          "note": "起任年月与2026续任仅索引；2022任职有独立正文，不能将其反向证明2018开始。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "sysu-wutao-profile-index",
+            "title": "sysu-wutao-profile-index",
+            "start": "sysu-wutao-profile-index",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "include_in_appointment_count": false,
+          "include_in_verified_appointment_count": false
+        }
+      ],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "历史地理学",
+          "source_url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "source_id": "usts-wutao-bio-2015",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "中国社会经济史",
+          "source_url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "source_id": "usts-wutao-bio-2015",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "明清江南区域史",
+          "source_url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "source_id": "usts-wutao-bio-2015",
+          "evidence_status": "official_public_body_read"
+        }
+      ],
+      "source_profile_status": "partial_direct_official_professional_profile",
+      "data_batch_id": "faculty-batch-sysu-rotation-002",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；中大归属仅官方索引，个人页正文与实时在职未核",
+      "research_interests": "历史地理学；中国社会经济史；明清江南区域史",
+      "research_interests_source_ids": [
+        "usts-wutao-bio-2015"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer",
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页正文未核，不启用个人主页导航。",
+      "include_in_current_faculty_count": false,
+      "current_faculty_status": "not_verified_official_index_only",
+      "roster_affiliation_status": "official_index_only",
+      "sampling_affiliation_label": "中山大学历史学系（珠海）仅为官方索引抽样关联，未核当前任职；历史职业事实另有正文来源。",
+      "alternative_professional_sources": [
+        {
+          "title": "已核官方历史职业资料（非现校个人主页）",
+          "url": "https://shfzxy.usts.edu.cn/info/1133/6529.htm",
+          "source_id": "usts-wutao-bio-2015"
+        },
+        {
+          "title": "已核官方历史职业资料（非现校个人主页）",
+          "url": "https://news.fudan.edu.cn/2022/0611/c31a131616/page.htm",
+          "source_id": "fudan-wutao-doctoral-mentor-2022"
+        },
+        {
+          "title": "已核官方历史职业资料（非现校个人主页）",
+          "url": "https://www.sinoss.net/c/2012-09-21/511326.shtml",
+          "source_id": "sinoss-wutao-education-2012"
+        }
+      ]
+    },
+    {
+      "person_id": "sysu-caotianzhong",
+      "name": "曹天忠",
+      "school_id": "sysu",
+      "department_id": "sysu-history-zhuhai",
+      "organization_id": "sysu-history-zhuhai",
+      "campus_ids": [],
+      "campus": null,
+      "department": "历史学系（珠海）",
+      "department_basis": "official_index_only_sampling_affiliation_not_current_personnel_verification",
+      "roster_entry_id": "roster-sysu-historyzh-caotianzhong",
+      "official_url": "https://historyzh.sysu.edu.cn/node/2093",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://historyzh.sysu.edu.cn/teacher",
+      "listed_role_source_id": "sysu-historyzh-professor-roster-index",
+      "listed_role_basis": "explicit_official_professor_category_search_index_only",
+      "appointments": [
+        {
+          "institution": "中山大学人文学院历史系、孙中山研究所",
+          "title": "教授、博士生导师",
+          "start": null,
+          "end": null,
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": "2013-11-28",
+          "source_url": "https://www.southacademic.com/zygx/ddxl/content/post_184188.html",
+          "source_id": "southacademic-caotianzhong-bio-2013",
+          "evidence_status": "official_public_body_read",
+          "note": "2013原创职业简介保留原组织表述；不是珠海任职。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "southacademic-caotianzhong-bio-2013",
+            "title": "southacademic-caotianzhong-bio-2013",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "institution": "中山大学历史学系",
+          "title": "教授、博士生导师",
+          "start": null,
+          "end": null,
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "source_url": "https://www.must.edu.mo/images/ISCR/files/CaoTianZhong.pdf",
+          "source_id": "must-caotianzhong-cv",
+          "evidence_status": "official_public_body_read",
+          "note": "澳科大未标日期PDF的当时现职；不称2026现职，不把广州字样自动化为个人校区。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "must-caotianzhong-cv",
+            "title": "must-caotianzhong-cv",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        }
+      ],
+      "education": [
+        {
+          "event_id": "sysu-caotianzhong-education-1",
+          "degree": "博士",
+          "institution": "中山大学",
+          "start": null,
+          "end": null,
+          "field": "中国近现代史",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确院校所在地规范化；不表示国籍，不把访问或博士后当作授位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://www.must.edu.mo/images/ISCR/files/CaoTianZhong.pdf",
+          "source_id": "must-caotianzhong-cv",
+          "evidence_status": "official_public_body_read",
+          "note": "澳科大本人职业PDF学历行列1999年/中山大学历史学系/博士学位，仅保留学历标签年份；不据标签推定获授为true，也不将1999当作明确学习结束或授位日期。专业由2013原创职业简介补证。",
+          "include_in_education_filters": true,
+          "field_provenance": {
+            "degree": "must-caotianzhong-cv",
+            "institution": "must-caotianzhong-cv",
+            "start": null,
+            "end": null,
+            "field": "southacademic-caotianzhong-bio-2013",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "qualification_label_year": "must-caotianzhong-cv"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "qualification_label_year": "source_reported_degree_label_year_not_award_date"
+          },
+          "qualification_label_year": "1999",
+          "supporting_source_ids": [
+            "southacademic-caotianzhong-bio-2013"
+          ],
+          "education_event_id": "sysu-caotianzhong-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "教育与社会改造——雷沛鸿与近代广西的教育及社会",
+          "year": 2004,
+          "venue": "天津古籍出版社",
+          "volume": null,
+          "pages_or_article_number": null,
+          "doi": null,
+          "url": "https://www.southacademic.com/zygx/ddxl/content/post_184188.html",
+          "type": "book",
+          "source_url": "https://www.southacademic.com/zygx/ddxl/content/post_184188.html",
+          "source_id": "southacademic-caotianzhong-bio-2013",
+          "evidence_status": "official_public_body_read",
+          "identity_evidence": "来源直接对应本人并列为其著作。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "学术研究杂志社原创职业简介所列独著，仅书目，未核出版者单书入口。",
+          "field_provenance": {
+            "title": "southacademic-caotianzhong-bio-2013",
+            "year": "southacademic-caotianzhong-bio-2013",
+            "venue": "southacademic-caotianzhong-bio-2013",
+            "volume": null,
+            "pages_or_article_number": null,
+            "doi": null,
+            "type": "southacademic-caotianzhong-bio-2013"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "not_disclosed",
+            "pages_or_article_number": "not_disclosed",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "type_label": "学术著作（非期刊或会议论文）",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "sysu-historyzh-professor-roster-index",
+          "url": "https://historyzh.sysu.edu.cn/teacher",
+          "evidence_status": "official_search_index_only",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "教授栏目单次公开搜索索引连续8人；普通正文403；非正文名录，不证明姓名链接href或人事在岗。",
+          "evidence_status_label": "仅官方搜索索引，未取得该目标正文。"
+        },
+        {
+          "id": "sysu-caotianzhong-profile-index",
+          "url": "https://historyzh.sysu.edu.cn/node/2093",
+          "evidence_status": "official_search_index_only",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "校内个人页公开索引；所在host名录正文403后未继续访问个人页。仅候选，不冒充个人页正文。",
+          "evidence_status_label": "仅官方搜索索引，未取得该目标正文。"
+        },
+        {
+          "id": "southacademic-caotianzhong-bio-2013",
+          "url": "https://www.southacademic.com/zygx/ddxl/content/post_184188.html",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "academic_journal_publisher_original_professional_biography",
+          "access_note": "学术研究杂志社主办平台2013-11-28本网原创职业简介；不将历史院名和当时现职改写为珠海2026现职。",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "must-caotianzhong-cv",
+          "url": "https://www.must.edu.mo/images/ISCR/files/CaoTianZhong.pdf",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "从澳科大博士导师名单姓名链接读取3页PDF职业履历；学历标签1999年博士学位，不含明确获授动词，PDF无发布日期。截图工具Cache miss，文本行已读，未下载或保留全PDF。",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "must-history-doctoral-roster",
+          "url": "https://www.must.edu.mo/cn/iscr/staff/ph",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "澳科大历史学博士导师名单正文，曹天忠行明确链接其PDF，刘志伟同表列示；仅核职业身份，不当作授位或全职雇佣证明。",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        }
+      ],
+      "unknowns": [
+        "1999是学历标签年份，未核明确学位获授、学习起止或授位年月。",
+        "本科、硕士、具名学术导师未核。",
+        "现职珠海归属、校内行政任职2000—2001仅索引，未进入正文职业事实。",
+        "学术委员会、评审、合作研究和访问均不是其本人的导师；未扩展未标期的访问履历。",
+        "PDF截图工具Cache miss，教育与职业行文本已读；未下载或保存完整PDF。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_index_and_separate_profile_index_crossmatched_with_professional_body",
+        "source_url": "https://historyzh.sysu.edu.cn/teacher",
+        "profile_url": "https://historyzh.sysu.edu.cn/node/2093",
+        "source_ids": [
+          "sysu-historyzh-professor-roster-index",
+          "sysu-caotianzhong-profile-index",
+          "southacademic-caotianzhong-bio-2013",
+          "must-caotianzhong-cv",
+          "must-history-doctoral-roster"
+        ],
+        "official_roster_profile_link_verified": false,
+        "note": "名录教授类别、姓名与独立搜得同名校内个人页匹配；再以学校/学科/职业轨迹及著作与可读正文交叉核身份。不是名录href已核。 中大历史学博士、近现代教育史研究及著作一致；澳科大名录直链该PDF，不合并南京大学工程校友同名人物。"
+      },
+      "professional_field_provenance": {
+        "name": "sysu-historyzh-professor-roster-index",
+        "school_id": "sysu-historyzh-professor-roster-index",
+        "department_id": "sysu-historyzh-professor-roster-index",
+        "organization_id": "sysu-historyzh-professor-roster-index",
+        "listed_role": "sysu-historyzh-professor-roster-index",
+        "research_interests": [
+          "southacademic-caotianzhong-bio-2013"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "navigation_verified": false,
+      "navigation_status": "official_profile_index_only_body_not_read",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [
+        {
+          "institution": "中山大学历史学系（珠海）",
+          "title": "教授、博士生导师",
+          "start": null,
+          "end": null,
+          "current": null,
+          "status": "pending_direct_body_verification",
+          "as_of": null,
+          "source_url": "https://historyzh.sysu.edu.cn/node/2093",
+          "source_id": "sysu-caotianzhong-profile-index",
+          "evidence_status": "official_search_index_only",
+          "note": "当前校内个人页身份仅索引；不得把2013或未标日期PDF旧身份升为当前珠海在岗。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "field_provenance": {
+            "institution": "sysu-caotianzhong-profile-index",
+            "title": "sysu-caotianzhong-profile-index",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "include_in_appointment_count": false,
+          "include_in_verified_appointment_count": false
+        }
+      ],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "晚清民国文化史",
+          "source_url": "https://www.southacademic.com/zygx/ddxl/content/post_184188.html",
+          "source_id": "southacademic-caotianzhong-bio-2013",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "中国近现代教育与社会变迁",
+          "source_url": "https://www.southacademic.com/zygx/ddxl/content/post_184188.html",
+          "source_id": "southacademic-caotianzhong-bio-2013",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "中国近现代区域社会史",
+          "source_url": "https://www.southacademic.com/zygx/ddxl/content/post_184188.html",
+          "source_id": "southacademic-caotianzhong-bio-2013",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "中国历史文献学",
+          "source_url": "https://www.southacademic.com/zygx/ddxl/content/post_184188.html",
+          "source_id": "southacademic-caotianzhong-bio-2013",
+          "evidence_status": "official_public_body_read"
+        }
+      ],
+      "source_profile_status": "partial_direct_official_professional_profile",
+      "data_batch_id": "faculty-batch-sysu-rotation-002",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；中大归属仅官方索引，个人页正文与实时在职未核",
+      "research_interests": "晚清民国文化史；中国近现代教育与社会变迁；中国近现代区域社会史；中国历史文献学",
+      "research_interests_source_ids": [
+        "southacademic-caotianzhong-bio-2013"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer",
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "unavailable",
+      "official_profile_availability_label": "个人页正文未核，不启用个人主页导航。",
+      "include_in_current_faculty_count": false,
+      "current_faculty_status": "not_verified_official_index_only",
+      "roster_affiliation_status": "official_index_only",
+      "sampling_affiliation_label": "中山大学历史学系（珠海）仅为官方索引抽样关联，未核当前任职；历史职业事实另有正文来源。",
+      "alternative_professional_sources": [
+        {
+          "title": "已核官方历史职业资料（非现校个人主页）",
+          "url": "https://www.southacademic.com/zygx/ddxl/content/post_184188.html",
+          "source_id": "southacademic-caotianzhong-bio-2013"
+        },
+        {
+          "title": "已核官方历史职业资料（非现校个人主页）",
+          "url": "https://www.must.edu.mo/images/ISCR/files/CaoTianZhong.pdf",
+          "source_id": "must-caotianzhong-cv"
+        }
+      ]
+    },
+    {
+      "person_id": "scu-dutian",
+      "name": "杜天",
+      "school_id": "scu",
+      "department_id": "scu-materials-science-engineering",
+      "organization_id": "scu-materials-science-engineering",
+      "campus_ids": [],
+      "campus": null,
+      "department": "材料科学与工程学院",
+      "roster_entry_id": "roster-scu-dutian",
+      "official_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+      "listed_role": "特聘研究员",
+      "listed_role_source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+      "listed_role_source_id": "scu-dutian-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授",
+      "roster_category_source_id": "scu-materials-professor-roster",
+      "appointments": [
+        {
+          "institution": "四川大学",
+          "title": "特聘研究员",
+          "start": "2025",
+          "end": null,
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scu-dutian-profile",
+            "title": "scu-dutian-profile",
+            "start": "scu-dutian-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "note": "工作履历只写四川大学，未补历史院系；当前学院见人物归属。",
+          "employment_type": null,
+          "personnel_status_verified": false
+        },
+        {
+          "institution": "德国于利希研究中心",
+          "title": "研究员、课题组组长",
+          "start": "2023",
+          "end": "2025",
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scu-dutian-profile",
+            "title": "scu-dutian-profile",
+            "start": "scu-dutian-profile",
+            "end": "scu-dutian-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "note": null,
+          "employment_type": null,
+          "personnel_status_verified": false
+        }
+      ],
+      "education": [
+        {
+          "event_id": "scu-dutian-education-1",
+          "degree": "学士",
+          "institution": "北京航空航天大学",
+          "start": "2009",
+          "end": "2013",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "scu-dutian-profile",
+            "institution": "scu-dutian-profile",
+            "start": "scu-dutian-profile",
+            "end": "scu-dutian-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "仅学位层次标签；具体专业及明确授位未披露。",
+          "include_in_education_filters": true,
+          "education_event_id": "scu-dutian-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "scu-dutian-education-2",
+          "degree": "硕士",
+          "institution": "帝国理工学院",
+          "start": "2014",
+          "end": "2015",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "scu-dutian-profile",
+            "institution": "scu-dutian-profile",
+            "start": "scu-dutian-profile",
+            "end": "scu-dutian-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label_supplement": "imperial-dutian-graduation-2017"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "英国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "个人页为硕士标签。帝国理工官方2017毕业典礼报道在MRes类别列Tian Du，补充硕士导师，但不把毕业典礼日当授位日或改写2014–2015学习区间。",
+          "include_in_education_filters": true,
+          "supporting_source_ids": [
+            "imperial-dutian-graduation-2017"
+          ],
+          "source_reported_degree_label_supplement": "MRes",
+          "education_event_id": "scu-dutian-education-2",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "英国",
+          "continent_code": "europe",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "scu-dutian-education-3",
+          "degree": "博士",
+          "institution": "帝国理工学院",
+          "start": "2015",
+          "end": "2020",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "scu-dutian-profile",
+            "institution": "scu-dutian-profile",
+            "start": "scu-dutian-profile",
+            "end": "scu-dutian-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "英国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "个人页只有博士标签。另一官方网页索引称awarded his PhD，但正文403，候选隔离且degree_awarded仍null。",
+          "include_in_education_filters": true,
+          "education_event_id": "scu-dutian-education-3",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "英国",
+          "continent_code": "europe",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "scu-dutian-education-4",
+          "degree": null,
+          "institution": "帝国理工学院 & 玛丽女王大学",
+          "start": "2021",
+          "end": "2021",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "scu-dutian-profile",
+            "start": "scu-dutian-profile",
+            "end": "scu-dutian-profile",
+            "field": null,
+            "degree_awarded": "scu-dutian-profile",
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "英国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "postdoctoral_research",
+          "note": "原文2021–2021，保留年精度和双机构，不伪造月、顺序或学位。",
+          "include_in_education_filters": true,
+          "education_event_id": "scu-dutian-education-4",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "英国",
+          "continent_code": "europe"
+        },
+        {
+          "event_id": "scu-dutian-education-5",
+          "degree": null,
+          "institution": "德国埃尔朗根-纽伦堡大学",
+          "start": "2021",
+          "end": "2023",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "scu-dutian-profile",
+            "start": "scu-dutian-profile",
+            "end": "scu-dutian-profile",
+            "field": null,
+            "degree_awarded": "scu-dutian-profile",
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "德国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "postdoctoral_research",
+          "note": "博士后研究员为非学位职业研究经历，不重复计为博士学位。",
+          "include_in_education_filters": true,
+          "education_event_id": "scu-dutian-education-5",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "德国",
+          "continent_code": "europe"
+        }
+      ],
+      "mentors": [
+        {
+          "name": "Martyn McLachlan",
+          "type": "masters_supervisor",
+          "education_stage": "硕士（MRes）",
+          "education_event_id": "scu-dutian-education-2",
+          "start": null,
+          "end": null,
+          "source_id": "imperial-dutian-graduation-2017",
+          "source_url": "https://www.imperial.ac.uk/news/179504/graduation-2017/",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "imperial-dutian-graduation-2017",
+            "type": "imperial-dutian-graduation-2017",
+            "education_stage": "imperial-dutian-graduation-2017",
+            "education_event_id": "imperial-dutian-graduation-2017",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "evidence_note": "官方毕业报道MRes - Cohort 7栏目中Tian Du行明确supervised by；不误配为博士导师。",
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "直接指导关系与导师当前导航分开；未推断现单位，不把委员会、合著、科研项目或访问机构自动变成师承。",
+          "relationship_kind": "masters_advisor",
+          "type_label": "硕士导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "masters_supervisor",
+          "include_in_degree_mentorship_graph": true
+        },
+        {
+          "name": "Martin Heeney",
+          "type": "masters_supervisor",
+          "education_stage": "硕士（MRes）",
+          "education_event_id": "scu-dutian-education-2",
+          "start": null,
+          "end": null,
+          "source_id": "imperial-dutian-graduation-2017",
+          "source_url": "https://www.imperial.ac.uk/news/179504/graduation-2017/",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "imperial-dutian-graduation-2017",
+            "type": "imperial-dutian-graduation-2017",
+            "education_stage": "imperial-dutian-graduation-2017",
+            "education_event_id": "imperial-dutian-graduation-2017",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "evidence_note": "官方毕业报道MRes - Cohort 7栏目中Tian Du行明确supervised by；不误配为博士导师。",
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "直接指导关系与导师当前导航分开；未推断现单位，不把委员会、合著、科研项目或访问机构自动变成师承。",
+          "relationship_kind": "masters_advisor",
+          "type_label": "硕士导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "masters_supervisor",
+          "include_in_degree_mentorship_graph": true
+        },
+        {
+          "name": "Martyn McLachlan",
+          "type": "doctoral_co_supervisor",
+          "education_stage": "博士",
+          "education_event_id": "scu-dutian-education-3",
+          "start": null,
+          "end": null,
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scu-dutian-profile",
+            "type": "scu-dutian-profile",
+            "education_stage": "scu-dutian-profile",
+            "education_event_id": "scu-dutian-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "evidence_note": "官方个人页博士教育行直接写合作导师。",
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "直接指导关系与导师当前导航分开；未推断现单位，不把委员会、合著、科研项目或访问机构自动变成师承。",
+          "relationship_kind": "doctoral_co_advisor",
+          "type_label": "博士合作导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "doctoral_co_supervisor",
+          "include_in_degree_mentorship_graph": true
+        },
+        {
+          "name": "James Durrant",
+          "type": "doctoral_co_supervisor",
+          "education_stage": "博士",
+          "education_event_id": "scu-dutian-education-3",
+          "start": null,
+          "end": null,
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scu-dutian-profile",
+            "type": "scu-dutian-profile",
+            "education_stage": "scu-dutian-profile",
+            "education_event_id": "scu-dutian-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "evidence_note": "官方个人页博士教育行直接写合作导师。",
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "直接指导关系与导师当前导航分开；未推断现单位，不把委员会、合著、科研项目或访问机构自动变成师承。",
+          "relationship_kind": "doctoral_co_advisor",
+          "type_label": "博士合作导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "doctoral_co_supervisor",
+          "include_in_degree_mentorship_graph": true
+        },
+        {
+          "name": "Joe Briscoe",
+          "type": "postdoctoral_supervisor",
+          "education_stage": "博士后",
+          "education_event_id": "scu-dutian-education-4",
+          "start": null,
+          "end": null,
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scu-dutian-profile",
+            "type": "scu-dutian-profile",
+            "education_stage": "scu-dutian-profile",
+            "education_event_id": "scu-dutian-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "evidence_note": "官方个人页2021–2021双机构博士后行直接写合作导师。",
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "直接指导关系与导师当前导航分开；未推断现单位，不把委员会、合著、科研项目或访问机构自动变成师承。",
+          "relationship_kind": "postdoctoral_advisor",
+          "type_label": "博士后合作导师（非学位授位导师）",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "postdoctoral_supervisor",
+          "include_in_degree_mentorship_graph": false
+        },
+        {
+          "name": "Christoph Brabec",
+          "type": "postdoctoral_supervisor",
+          "education_stage": "博士后",
+          "education_event_id": "scu-dutian-education-5",
+          "start": null,
+          "end": null,
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scu-dutian-profile",
+            "type": "scu-dutian-profile",
+            "education_stage": "scu-dutian-profile",
+            "education_event_id": "scu-dutian-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "evidence_note": "官方个人页2021–2023德国博士后行直接写合作导师。",
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "直接指导关系与导师当前导航分开；未推断现单位，不把委员会、合著、科研项目或访问机构自动变成师承。",
+          "relationship_kind": "postdoctoral_advisor",
+          "type_label": "博士后合作导师（非学位授位导师）",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "postdoctoral_supervisor",
+          "include_in_degree_mentorship_graph": false
+        }
+      ],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Efficient, stable, and fully printed carbon-electrode perovskite solar cells enabled by hole-transporting bilayers",
+          "year": 2023,
+          "venue": "Joule",
+          "volume": "7",
+          "pages_or_article_number": "1920-1937",
+          "doi": null,
+          "url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "type": "journal_article",
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "scu-dutian-profile",
+            "year": "scu-dutian-profile",
+            "venue": "scu-dutian-profile",
+            "volume": "scu-dutian-profile",
+            "pages_or_article_number": "scu-dutian-profile",
+            "doi": null,
+            "type": "scu-dutian-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "source_reported",
+            "pages_or_article_number": "source_reported",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "identity_evidence": "官方本人页列于代表性或主要论文栏目；未由同名检索匹配。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "每人1条精选书目；未核出版者单篇链接，不是全文或论文全集。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "scu-materials-professor-roster",
+          "url": "https://mse.scu.edu.cn/szdw/js.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "scu-rotation-002-sources/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "scu-dutian-profile",
+          "url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "scu-rotation-002-sources/scu-dutian-profile-minimal.json",
+          "page_date": "2026-02-03",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "imperial-dutian-graduation-2017",
+          "url": "https://www.imperial.ac.uk/news/179504/graduation-2017/",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "scu-rotation-002-sources/supplementary-minimal.json",
+          "page_date": "2017-05-05",
+          "access_note": "Confirms MRes graduation and master's supervisors. Does not revise the source-reported 2014–2015 study interval or assert 2017 award date.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "imperial-durrant-group-phd-index",
+          "url": "https://www.imperial.ac.uk/durrant-group/activities/news-and-events/",
+          "evidence_status": "search_index_only",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "scu-rotation-002-sources/supplementary-minimal.json",
+          "access_note": "Stopped affected route immediately. No direct fetch, browser, alternate encoding, or retries to bypass denial.",
+          "missing_proof": "Body verification of doctoral award statement and award date; search index alone is not used as verified degree-award fact.",
+          "evidence_status_label": "仅搜索索引候选，目标正文未核；不作确证职业事实。"
+        }
+      ],
+      "unknowns": [
+        "教授栏目不代表本人职称教授，正文职称为特聘研究员。",
+        "三个教育阶段的具体专业与明确授位日未披露；硕士毕业典礼不能替代授位日期，博士获授仅索引候选。",
+        "所有导师关系阶段有直接正文，导师当前任职与导航未核。",
+        "校区不推断，两个2021博士后经历的月级先后未知。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://mse.scu.edu.cn/szdw/js.htm",
+        "profile_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+        "source_ids": [
+          "scu-materials-professor-roster",
+          "scu-dutian-profile"
+        ],
+        "note": "官方教授栏目姓名直链至同名学院个人正文。栏目成员资格不等同个人教授职称或全职人事核验。"
+      },
+      "professional_field_provenance": {
+        "name": "scu-materials-professor-roster",
+        "school_id": "scu-materials-professor-roster",
+        "department_id": "scu-materials-professor-roster",
+        "organization_id": "scu-materials-professor-roster",
+        "listed_role": "scu-dutian-profile",
+        "research_interests": [
+          "scu-dutian-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [
+        {
+          "candidate_id": "scu-dutian-phd-award-index",
+          "education_event_id": "scu-dutian-education-3",
+          "candidate_field": "degree_awarded",
+          "candidate_value": true,
+          "source_id": "imperial-durrant-group-phd-index",
+          "source_url": "https://www.imperial.ac.uk/durrant-group/activities/news-and-events/",
+          "evidence_status": "search_index_only",
+          "status": "pending_body_verification_access_denied",
+          "include_in_education_filters": false,
+          "include_in_mentorship_graph": false,
+          "note": "索引标题Tian Du awarded his PhD；正文403后停止，无绕过。不能确认授位日期，未更改已核教育字段。"
+        }
+      ],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "先进光谱技术的多模态联用与智能解析",
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "高通量数据生成与关联挖掘",
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "器件制造与运维的数字孪生",
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "面向量产的印刷电子技术",
+          "source_id": "scu-dutian-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/7592.htm",
+          "evidence_status": "official_public_body_read"
+        }
+      ],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-scu-rotation-002",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项",
+      "research_interests": "先进光谱技术的多模态联用与智能解析；高通量数据生成与关联挖掘；器件制造与运维的数字孪生；面向量产的印刷电子技术",
+      "research_interests_source_ids": [
+        "scu-dutian-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "scu-chenpan",
+      "name": "陈攀",
+      "school_id": "scu",
+      "department_id": "scu-materials-science-engineering",
+      "organization_id": "scu-materials-science-engineering",
+      "campus_ids": [],
+      "campus": null,
+      "department": "材料科学与工程学院",
+      "roster_entry_id": "roster-scu-chenpan",
+      "official_url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+      "listed_role": "教授、博士生导师",
+      "listed_role_source_url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+      "listed_role_source_id": "scu-chenpan-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授",
+      "roster_category_source_id": "scu-materials-professor-roster",
+      "appointments": [
+        {
+          "institution": "四川大学材料科学与工程学院",
+          "title": "教授、博士生导师",
+          "start": "2024",
+          "end": null,
+          "source_id": "scu-chenpan-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scu-chenpan-profile",
+            "title": "scu-chenpan-profile",
+            "start": "scu-chenpan-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "note": null,
+          "employment_type": null,
+          "personnel_status_verified": false
+        },
+        {
+          "institution": "四川大学材料科学与工程学院",
+          "title": "特聘研究员、博士生导师",
+          "start": null,
+          "end": "2024",
+          "source_id": "scu-chenpan-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scu-chenpan-profile",
+            "title": "scu-chenpan-profile",
+            "start": null,
+            "end": "scu-chenpan-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "conflicting_source_dates",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "note": "起始边界冲突：四川大学写2022，中南大学写2023-03，故start=null并候选隔离。",
+          "employment_type": null,
+          "personnel_status_verified": false
+        },
+        {
+          "institution": "中南大学资源加工与生物工程学院矿物工程系",
+          "title": "讲师",
+          "start": "2014-04",
+          "end": "2017-09",
+          "source_id": "csu-chenpan-group-profile",
+          "source_url": "https://hyh.csu.edu.cn/info/1019/2325.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-chenpan-group-profile",
+            "title": "csu-chenpan-group-profile",
+            "start": "csu-chenpan-group-profile",
+            "end": "csu-chenpan-group-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "note": null,
+          "employment_type": null,
+          "personnel_status_verified": false
+        },
+        {
+          "institution": "中南大学资源加工与生物工程学院矿物工程系",
+          "title": "副教授",
+          "start": "2017-09",
+          "end": null,
+          "source_id": "csu-chenpan-group-profile",
+          "source_url": "https://hyh.csu.edu.cn/info/1019/2325.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-chenpan-group-profile",
+            "title": "csu-chenpan-group-profile",
+            "start": "csu-chenpan-group-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "conflicting_source_dates"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "note": "结束边界冲突：中南大学写2023-03，四川大学履历至2022，故end=null；明确为历史任职，不延伸为当前。",
+          "employment_type": null,
+          "personnel_status_verified": false
+        }
+      ],
+      "education": [
+        {
+          "event_id": "scu-chenpan-education-1",
+          "degree": "工学学士",
+          "institution": "中南大学",
+          "start": "2003-09",
+          "end": "2007-07",
+          "field": "矿物加工工程",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "csu-chenpan-group-profile",
+          "source_url": "https://hyh.csu.edu.cn/info/1019/2325.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "csu-chenpan-group-profile",
+            "institution": "csu-chenpan-group-profile",
+            "start": "csu-chenpan-group-profile",
+            "end": "csu-chenpan-group-profile",
+            "field": "csu-chenpan-group-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "旧官方职业页提供具体年月和专业；学位标签不自动确认获授。",
+          "include_in_education_filters": true,
+          "education_event_id": "scu-chenpan-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.csu.edu.cn/zjzn/xxgk.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "scu-chenpan-education-2",
+          "degree": "工学硕士",
+          "institution": "中南大学",
+          "start": "2007-09",
+          "end": "2010-07",
+          "field": "矿物加工工程",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "csu-chenpan-group-profile",
+          "source_url": "https://hyh.csu.edu.cn/info/1019/2325.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "csu-chenpan-group-profile",
+            "institution": "csu-chenpan-group-profile",
+            "start": "csu-chenpan-group-profile",
+            "end": "csu-chenpan-group-profile",
+            "field": "csu-chenpan-group-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "学位标签不自动确认获授。",
+          "include_in_education_filters": true,
+          "education_event_id": "scu-chenpan-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.csu.edu.cn/zjzn/xxgk.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "scu-chenpan-education-3",
+          "degree": "工学博士",
+          "institution": "中南大学",
+          "start": "2010-09",
+          "end": "2013-12",
+          "field": "矿物加工工程",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "csu-chenpan-group-profile",
+          "source_url": "https://hyh.csu.edu.cn/info/1019/2325.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "csu-chenpan-group-profile",
+            "institution": "csu-chenpan-group-profile",
+            "start": "csu-chenpan-group-profile",
+            "end": "csu-chenpan-group-profile",
+            "field": "csu-chenpan-group-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "博士标签及留校工作不是明确授位日期证据。",
+          "include_in_education_filters": true,
+          "education_event_id": "scu-chenpan-education-3",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.csu.edu.cn/zjzn/xxgk.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "scu-chenpan-education-4",
+          "degree": null,
+          "institution": "中南大学冶金与环境学院",
+          "start": "2014-11",
+          "end": "2017-10",
+          "field": "有色金属冶金",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "csu-chenpan-group-profile",
+          "source_url": "https://hyh.csu.edu.cn/info/1019/2325.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "csu-chenpan-group-profile",
+            "start": "csu-chenpan-group-profile",
+            "end": "csu-chenpan-group-profile",
+            "field": "csu-chenpan-group-profile",
+            "degree_awarded": "csu-chenpan-group-profile",
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "postdoctoral_research",
+          "note": "旧官方职业页明确博士后，作为非学位研究事件，不由资助项目反推。",
+          "include_in_education_filters": true,
+          "education_event_id": "scu-chenpan-education-4",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "event_id": "scu-chenpan-education-5",
+          "degree": null,
+          "institution": "湖南有色金属研究院",
+          "start": "2018-09",
+          "end": null,
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "csu-chenpan-group-profile",
+          "source_url": "https://hyh.csu.edu.cn/info/1019/2325.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "csu-chenpan-group-profile",
+            "start": "csu-chenpan-group-profile",
+            "end": null,
+            "field": null,
+            "degree_awarded": "csu-chenpan-group-profile",
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "postdoctoral_research",
+          "note": "旧页面写至今但未有可靠更新日，保留历史开放结束事件，不认定2026仍在博士后岗位。",
+          "include_in_education_filters": true,
+          "current_status": "historical_open_ended_source_not_current_verified",
+          "education_event_id": "scu-chenpan-education-5",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Selective flotation of ilmenite from titanaugite using 2-amino-1,3-propanediol as a novel depressant",
+          "year": 2024,
+          "venue": "Colloids and Surfaces A: Physicochemical and Engineering Aspects",
+          "volume": "681",
+          "pages_or_article_number": "132752",
+          "doi": null,
+          "url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+          "type": "journal_article",
+          "source_id": "scu-chenpan-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "scu-chenpan-profile",
+            "year": "scu-chenpan-profile",
+            "venue": "scu-chenpan-profile",
+            "volume": "scu-chenpan-profile",
+            "pages_or_article_number": "scu-chenpan-profile",
+            "doi": null,
+            "type": "scu-chenpan-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "source_reported",
+            "pages_or_article_number": "source_reported",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "identity_evidence": "官方本人页列于代表性或主要论文栏目；未由同名检索匹配。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "每人1条精选书目；未核出版者单篇链接，不是全文或论文全集。原文年份20 24只合并排版空格为2024。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "scu-materials-professor-roster",
+          "url": "https://mse.scu.edu.cn/szdw/js.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "scu-rotation-002-sources/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "scu-chenpan-profile",
+          "url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "scu-rotation-002-sources/scu-chenpan-profile-minimal.json",
+          "page_date": "2025-01-19",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "csu-chenpan-group-profile",
+          "url": "https://hyh.csu.edu.cn/info/1019/2325.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "scu-rotation-002-sources/supplementary-minimal.json",
+          "page_date": "2020-09-29",
+          "access_note": "Page has 2020 displayed date but body contains 2023 updates. Do not assume displayed date is last update.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "四川大学入职/中南大学离任边界为2022与2023-03冲突，正式日期对应字段null。",
+        "教育具体年月来自中南大学旧官方页；该页显示2020日期但内容已含2023，不能当作2020冻结证据或2026现任证明。",
+        "本人具名导师未获得直接证据，课题组主持人、论文合作者不自动作为导师。",
+        "校区、全职人事状态与明确学位授予均未核；旧湖南博士后结束时间不明。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://mse.scu.edu.cn/szdw/js.htm",
+        "profile_url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+        "source_ids": [
+          "scu-materials-professor-roster",
+          "scu-chenpan-profile"
+        ],
+        "note": "官方教授栏目姓名直链至同名学院个人正文。栏目成员资格不等同个人教授职称或全职人事核验。"
+      },
+      "professional_field_provenance": {
+        "name": "scu-materials-professor-roster",
+        "school_id": "scu-materials-professor-roster",
+        "department_id": "scu-materials-professor-roster",
+        "organization_id": "scu-materials-professor-roster",
+        "listed_role": "scu-chenpan-profile",
+        "research_interests": [
+          "scu-chenpan-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [
+        {
+          "candidate_id": "scu-chenpan-transition-conflict",
+          "candidate_field": "cross_institution_transition_dates",
+          "source_claims": [
+            {
+              "source_id": "scu-chenpan-profile",
+              "source_url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+              "scu_special_researcher_start": "2022",
+              "csu_combined_appointment_end": "2022"
+            },
+            {
+              "source_id": "csu-chenpan-group-profile",
+              "source_url": "https://hyh.csu.edu.cn/info/1019/2325.htm",
+              "scu_special_researcher_start": "2023-03",
+              "csu_associate_professor_end": "2023-03"
+            }
+          ],
+          "evidence_status": "official_public_body_read",
+          "status": "unresolved_official_source_conflict",
+          "include_in_appointment_filters": false,
+          "note": "两官方页均已读，不任择一方为无争议事实；正式任职表冲突字段置null，阶段存在性及其他无冲突日期保留。"
+        }
+      ],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "战略矿产资源的高效开发利用",
+          "source_id": "scu-chenpan-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "战略矿产资源精深加工",
+          "source_id": "scu-chenpan-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "新能源电池材料",
+          "source_id": "scu-chenpan-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "高性能磁性材料",
+          "source_id": "scu-chenpan-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/6440.htm",
+          "evidence_status": "official_public_body_read"
+        }
+      ],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-scu-rotation-002",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项",
+      "research_interests": "战略矿产资源的高效开发利用；战略矿产资源精深加工；新能源电池材料；高性能磁性材料",
+      "research_interests_source_ids": [
+        "scu-chenpan-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "scu-yangjieren",
+      "name": "杨劼人",
+      "school_id": "scu",
+      "department_id": "scu-materials-science-engineering",
+      "organization_id": "scu-materials-science-engineering",
+      "campus_ids": [],
+      "campus": null,
+      "department": "材料科学与工程学院",
+      "roster_entry_id": "roster-scu-yangjieren",
+      "official_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+      "listed_role": "教授、博士生导师",
+      "listed_role_source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+      "listed_role_source_id": "scu-yangjieren-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授",
+      "roster_category_source_id": "scu-materials-professor-roster",
+      "appointments": [
+        {
+          "institution": "四川大学材料科学与工程学院",
+          "title": null,
+          "start": "2020-12",
+          "end": null,
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scu-yangjieren-profile",
+            "title": null,
+            "start": "scu-yangjieren-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "not_disclosed",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "note": "履历自2020-12只列单位，未列职称。单独记录机构任职起点，不能把当前教授职称回填为2020-12起。",
+          "employment_type": null,
+          "personnel_status_verified": false
+        },
+        {
+          "institution": "四川大学材料科学与工程学院",
+          "title": "教授、博士生导师",
+          "start": null,
+          "end": null,
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scu-yangjieren-profile",
+            "title": "scu-yangjieren-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "note": "当前简介明确教授/博导，晋升或取得资格起点未披露。",
+          "employment_type": null,
+          "personnel_status_verified": false
+        },
+        {
+          "institution": "西北工业大学材料学院/凝固技术国家重点实验室",
+          "title": null,
+          "start": "2013-09",
+          "end": "2020-12",
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scu-yangjieren-profile",
+            "title": null,
+            "start": "scu-yangjieren-profile",
+            "end": "scu-yangjieren-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "not_disclosed",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "note": "原文没有讲师、副教授等职称，保留title=null。",
+          "employment_type": null,
+          "personnel_status_verified": false
+        }
+      ],
+      "education": [
+        {
+          "event_id": "scu-yangjieren-education-1",
+          "degree": null,
+          "institution": "上海大学",
+          "start": "2003-09",
+          "end": "2007-07",
+          "field": "金属材料工程",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "scu-yangjieren-profile",
+            "start": "scu-yangjieren-profile",
+            "end": "scu-yangjieren-profile",
+            "field": "scu-yangjieren-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "education_level": "scu-yangjieren-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "education_level": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "undergraduate_study",
+          "note": "仅写本科，未补学士。",
+          "include_in_education_filters": true,
+          "education_level": "本科",
+          "education_event_id": "scu-yangjieren-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "event_id": "scu-yangjieren-education-2",
+          "degree": "硕士、博士",
+          "institution": "哈尔滨工业大学",
+          "start": "2007-09",
+          "end": "2013-07",
+          "field": "材料加工工程",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "scu-yangjieren-profile",
+            "institution": "scu-yangjieren-profile",
+            "start": "scu-yangjieren-profile",
+            "end": "scu-yangjieren-profile",
+            "field": "scu-yangjieren-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "education_level": "scu-yangjieren-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "education_level": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "graduate_study",
+          "note": "硕士博士合并一行，无分阶段边界；不伪造两段时间，也不推定硕博连读机制或已获两项学位。",
+          "include_in_education_filters": true,
+          "education_level": "硕士、博士",
+          "education_event_id": "scu-yangjieren-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "event_id": "scu-yangjieren-education-3",
+          "degree": null,
+          "institution": "京都大学材料工学部",
+          "start": "2017-09",
+          "end": "2018-09",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "scu-yangjieren-profile",
+            "start": "scu-yangjieren-profile",
+            "end": "scu-yangjieren-profile",
+            "field": null,
+            "degree_awarded": "scu-yangjieren-profile",
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "日本",
+          "region": "overseas",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "academic_visit",
+          "note": "国家公派访问学者，非日本学位；材料工学部是院系，不自动当作专业。",
+          "include_in_education_filters": true,
+          "education_event_id": "scu-yangjieren-education-3",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "日本",
+          "continent_code": "asia"
+        }
+      ],
+      "mentors": [
+        {
+          "name": "傅恒志",
+          "type": "postgraduate_supervisor",
+          "education_stage": "硕士、博士合并阶段（未细分）",
+          "education_event_id": "scu-yangjieren-education-2",
+          "start": null,
+          "end": null,
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scu-yangjieren-profile",
+            "type": "scu-yangjieren-profile",
+            "education_stage": "scu-yangjieren-profile",
+            "education_event_id": "scu-yangjieren-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "evidence_note": "2007.09–2013.07哈尔滨工业大学硕士、博士行下明确导师二人；不能指派其中一人为硕导或博导，也不能认定两人各自均指导两个阶段。",
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "直接指导关系与导师当前导航分开；未推断现单位，不把委员会、合著、科研项目或访问机构自动变成师承。",
+          "relationship_kind": "postgraduate_advisor",
+          "type_label": "硕博合述导师（未拆分阶段）",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "postgraduate_supervisor",
+          "include_in_degree_mentorship_graph": true,
+          "stage_scope": "combined_masters_doctoral_statement_not_separate_edges",
+          "relationship_scope": "仅绑定来源合并硕博经历，未拆分分别阶段、分别导师或授位；一条来源关系保持一条边。"
+        },
+        {
+          "name": "陈瑞润",
+          "type": "postgraduate_supervisor",
+          "education_stage": "硕士、博士合并阶段（未细分）",
+          "education_event_id": "scu-yangjieren-education-2",
+          "start": null,
+          "end": null,
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scu-yangjieren-profile",
+            "type": "scu-yangjieren-profile",
+            "education_stage": "scu-yangjieren-profile",
+            "education_event_id": "scu-yangjieren-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "evidence_note": "2007.09–2013.07哈尔滨工业大学硕士、博士行下明确导师二人；不能指派其中一人为硕导或博导，也不能认定两人各自均指导两个阶段。",
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "直接指导关系与导师当前导航分开；未推断现单位，不把委员会、合著、科研项目或访问机构自动变成师承。",
+          "relationship_kind": "postgraduate_advisor",
+          "type_label": "硕博合述导师（未拆分阶段）",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "postgraduate_supervisor",
+          "include_in_degree_mentorship_graph": true,
+          "stage_scope": "combined_masters_doctoral_statement_not_separate_edges",
+          "relationship_scope": "仅绑定来源合并硕博经历，未拆分分别阶段、分别导师或授位；一条来源关系保持一条边。"
+        }
+      ],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Challenges related to elevated temperature during creep in a PM-HIP Ti-6Al-4 V alloy: The role of <a> dislocations and pyramidal <c+a> dislocations",
+          "year": 2025,
+          "venue": "Journal of Materials Science & Technology",
+          "volume": "213",
+          "pages_or_article_number": "252-267",
+          "doi": null,
+          "url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "type": "journal_article",
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "scu-yangjieren-profile",
+            "year": "scu-yangjieren-profile",
+            "venue": "scu-yangjieren-profile",
+            "volume": "scu-yangjieren-profile",
+            "pages_or_article_number": "scu-yangjieren-profile",
+            "doi": null,
+            "type": "scu-yangjieren-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "source_reported",
+            "pages_or_article_number": "source_reported",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "identity_evidence": "官方本人页列于代表性或主要论文栏目；未由同名检索匹配。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "每人1条精选书目；未核出版者单篇链接，不是全文或论文全集。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "scu-materials-professor-roster",
+          "url": "https://mse.scu.edu.cn/szdw/js.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "scu-rotation-002-sources/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "scu-yangjieren-profile",
+          "url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "scu-rotation-002-sources/scu-yangjieren-profile-minimal.json",
+          "page_date": "2025-01-19",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "本科只有层次，硕博为合并行；学位授予、硕博阶段拆分及二位导师分别对应阶段未明确。",
+        "2020-12是四川大学机构任职起点，不是已证教授晋升日期。",
+        "西北工业大学任职职称未披露；日本访问不是日本学位。",
+        "校区不从工作地址推为教学或任职校区；导师当前任职与导航未核。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://mse.scu.edu.cn/szdw/js.htm",
+        "profile_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+        "source_ids": [
+          "scu-materials-professor-roster",
+          "scu-yangjieren-profile"
+        ],
+        "note": "官方教授栏目姓名直链至同名学院个人正文。栏目成员资格不等同个人教授职称或全职人事核验。"
+      },
+      "professional_field_provenance": {
+        "name": "scu-materials-professor-roster",
+        "school_id": "scu-materials-professor-roster",
+        "department_id": "scu-materials-professor-roster",
+        "organization_id": "scu-materials-professor-roster",
+        "listed_role": "scu-yangjieren-profile",
+        "research_interests": [
+          "scu-yangjieren-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "高性能Ti合金、TiAl、Ti2AlNb合金",
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "Pt、Ir等特种贵金属结构-功能材料",
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "高纯化、均质化、精准化制备原理与方法",
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "稀有金属单晶、定向晶、超细晶新装备与新技术",
+          "source_id": "scu-yangjieren-profile",
+          "source_url": "https://mse.scu.edu.cn/info/1017/5415.htm",
+          "evidence_status": "official_public_body_read"
+        }
+      ],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-scu-rotation-002",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项",
+      "research_interests": "高性能Ti合金、TiAl、Ti2AlNb合金；Pt、Ir等特种贵金属结构-功能材料；高纯化、均质化、精准化制备原理与方法；稀有金属单晶、定向晶、超细晶新装备与新技术",
+      "research_interests_source_ids": [
+        "scu-yangjieren-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
     }
   ],
   "profile_batches": [
@@ -180022,6 +183351,78 @@
         "楚霞副主任为有结束日期历史任职；不得依据简介无日期称谓恢复为当前职务。宦双燕本科不得规范化成已获学士。",
         "岗位现列并非独立在岗、全职、编制或退休核验；校区未知。具名导师未知，不得利用博导资格或论文合著建立师承边。",
         "仅精选本人官方书目，出版者单篇与全文未核；最小职业摘录不得扩成原始接口或页面公开缓存。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-sysu-rotation-002",
+      "source_batch_id": "faculty-batch-sysu-rotation-002",
+      "school_id": "sysu",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-23",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "历史学系（珠海）“教授”栏官方公开搜索索引连续8人，原序首3刘志伟、吴滔、曹天忠；首次进入历史学新院系。不按教育、海外经历或资料多少选人。名录正文403已停止，该顺序只属索引可见顺序，未核名录直链；3份外部正文部分职业档案，非全院全校完成。",
+      "selection_basis": "历史学系（珠海）“教授”栏官方公开搜索索引连续8人，原序首3刘志伟、吴滔、曹天忠；首次进入历史学新院系。不按教育、海外经历或资料多少选人。名录正文403已停止，该顺序只属索引可见顺序，未核名录直链；3份外部正文部分职业档案，非全院全校完成。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-sysu-rotation-002.json",
+          "sha256": "005d3d3f0c33c71b7bc45f2cbf20718e19ff07b5c3abc0ae2eff9bea941787cf"
+        }
+      ],
+      "limitations": [
+        "采样依据官方公开索引而非名录正文，三人当前校内任职均需正文复核；名录人数8仅教授栏目索引观察数。",
+        "所有正文职业事实来自可读外校官方或学术机构资料，历史现职不延伸为2026在岗；不把现院系回填历史岗位。",
+        "毕业、学习和学位标签不等明确授位；博士后与访问为非学位，标签年份单独记录。",
+        "导师只取本人直接关系陈述，研究生层次不明确时保留一般研究生指导；不把合作、项目、委员会或课程作者变为师承。",
+        "只有三份部分职业资料和每人一条精选书目，不是全院全校或完整履历；具体校区、全职人事状态及导师导航未知。",
+        "资料仅含必要公开职业事实、摘录与响应元数据，无联系方式、出生、私人背景、学生名单、论文全文、整页或完整PDF缓存。",
+        "本批只允许“官方搜索索引栏目原序首3”标签；8是索引观察数，不是当前正文已核总数。不得将scope提升为official_roster_body_read或将个人索引URL称名录直链。",
+        "3份可读外部职业正文可支持部分历史档案；学校/现院系/教授抽样归属仍index-only，主体主页快速导航和人事现任未核。若消费者不能清楚分层，应先hold而非默默升级。",
+        "9条索引候选不得进入已核任职计数或筛选；历史正文的现任语句只在其历史时点有效，不延伸2026，也不把原历史学系倒推成珠海。",
+        "吴滔博士唯一明确授位且仅2003年；5条null不确授，2条博士后/客座非学位。曹天忠qualification_label_year=1999不进入授位/毕业日期筛选。",
+        "刘志伟graduate_supervisor须显示研究生阶段未细分，不能默认硕士/博士；葛剑雄直接博士关系可保留。两人当前导师导航均禁用，委员会、课程作者、合著与学术影响不生成导师。",
+        "书目为精选且非出版者单篇/全文；来源段落仅保留必要职业事实，不复制私事、学生名单或完整PDF。校区始终未知，不因组织名含珠海推校区。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-scu-rotation-002",
+      "source_batch_id": "faculty-batch-scu-rotation-002",
+      "school_id": "scu",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-23",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "材料科学与工程学院“师资队伍 > 教授”单页正文42人，原序前3杜天、陈攀、杨劼人。本批仅3人部分公开职业资料，不是全院或全校覆盖；教授是名录类别，杜天个人职称为特聘研究员；名录现列不等全职或人事在岗证明。",
+      "selection_basis": "材料科学与工程学院“师资队伍 > 教授”单页正文42人，原序前3杜天、陈攀、杨劼人。本批仅3人部分公开职业资料，不是全院或全校覆盖；教授是名录类别，杜天个人职称为特聘研究员；名录现列不等全职或人事在岗证明。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-scu-rotation-002.json",
+          "sha256": "9847ea52ba380cc5d81bb8a7e5b6353dc33dfe2fd3c036de8dae17edea9a5088"
+        }
+      ],
+      "limitations": [
+        "材料科学与工程学院“师资队伍 > 教授”单页正文42人，原序前3杜天、陈攀、杨劼人。本批仅3人部分公开职业资料，不是全院或全校覆盖；教授是名录类别，杜天个人职称为特聘研究员；名录现列不等全职或人事在岗证明。",
+        "公开最小职业事实与每人1条书目；不保留联系方式、出生、学生名单、完整网页/API或论文全文。",
+        "学位标签及毕业典礼不自动确认明确授位；博士后和访问为非学位false，本批其余degree_awarded为null。",
+        "杜天博士获授只有索引，正文403已停止该路线，候选隔离不进入已核教育筛选。",
+        "陈攀跨校转换年份冲突字段置null，完整双方说法留在独立待核候选。",
+        "杨劼人硕博合并阶段导师不强拆为特定硕/博导师；当前教授称谓不回填历史职称。",
+        "本批8条直接指导关系已核阶段证据，但导师导航与当前任职未核。",
+        "出版者单篇链接、校区和全职人事状态未核。",
+        "仅教授栏目42人中原序首3的部分职业事实，不是全院或全校完成；杜天不得因栏目名改为教授。",
+        "8条导师是阶段关系边，不是8名不同导师；其中2条博士后不进入学位师承或已获学位统计，合并硕博2边不得拆成4边。全部导师当前导航未核禁用。",
+        "授位true0；8条null不能转为确证获授，5条非学位不能计国外学位。MRes2017典礼不改写2014–2015学习期或授位日；博士索引候选不入已核事实筛选。",
+        "陈攀跨校边界2022/2023-03仍冲突，候选隔离且正式对应日期null；旧开放结束博士后及历史职务不等2026现任。",
+        "杨劼人2020-12为机构起点不是教授晋升；未知职称、日期及校区不能推补。当前页称谓不等全职/人事状态核验。",
+        "仅精选本人页书目，出版者单篇未核；不得把来源最小摘录扩成含私人信息的完整网页缓存。"
       ]
     }
   ],
@@ -188876,6 +192277,24 @@
         }
       ],
       "note": "新增6部分职业+0pending；全部旧资料和教学事实不变。冲突与未核候选不进确证筛选或主图；主教育三态及来源冲突不改写。"
+    },
+    {
+      "kind": "reviewed_rotation002_wave3",
+      "source_batch_ids": [
+        "faculty-batch-sysu-rotation-002",
+        "faculty-batch-scu-rotation-002"
+      ],
+      "source_files": [
+        {
+          "file": "faculty-batch-sysu-rotation-002.json",
+          "sha256": "005d3d3f0c33c71b7bc45f2cbf20718e19ff07b5c3abc0ae2eff9bea941787cf"
+        },
+        {
+          "file": "faculty-batch-scu-rotation-002.json",
+          "sha256": "9847ea52ba380cc5d81bb8a7e5b6353dc33dfe2fd3c036de8dae17edea9a5088"
+        }
+      ],
+      "note": "新增6部分职业+0pending；全部旧资料和教学事实不变。冲突与未核候选不进确证筛选或主图；主教育三态及来源冲突不改写。"
     }
   ],
   "institutions": [
@@ -189657,7 +193076,7 @@
       "normalization_scope_note": "本轮首3样本及另列已审补强按各自来源范围保留，不合并同名、不自动升级原pending。"
     }
   ],
-  "build_id": "4a52b71a66630c4a",
+  "build_id": "75fd2c11e0ebb54d",
   "exports": [
     {
       "department_id": "bit-cs-image-perception",
@@ -190192,6 +193611,13 @@
       "people_count": 3
     },
     {
+      "department_id": "scu-materials-science-engineering",
+      "school_id": "scu",
+      "school_name": "四川大学",
+      "path": "exports/scu-materials-science-engineering.xlsx",
+      "people_count": 3
+    },
+    {
       "department_id": "scut-cs",
       "school_id": "scut",
       "school_name": "华南理工大学",
@@ -190253,6 +193679,13 @@
       "school_name": "上海交通大学",
       "path": "exports/sjtu-ic-chipdesign.xlsx",
       "people_count": 19
+    },
+    {
+      "department_id": "sysu-history-zhuhai",
+      "school_id": "sysu",
+      "school_name": "中山大学",
+      "path": "exports/sysu-history-zhuhai.xlsx",
+      "people_count": 3
     },
     {
       "department_id": "sysu-math",
