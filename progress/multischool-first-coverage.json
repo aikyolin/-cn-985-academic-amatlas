@@ -1,0 +1,125 @@
+{
+  "updated_at": "2026-10-23",
+  "scope": "四校各一院系首5条，部分覆盖",
+  "schools": [
+    {
+      "school_id": "zju",
+      "school_name": "浙江大学",
+      "selected_roster_records": 5,
+      "established_profiles": 3,
+      "pending_profiles": 2,
+      "complete_profiles": 0,
+      "counts": {
+        "education": 3,
+        "appointments": 11,
+        "mentors": 0,
+        "publications": 0,
+        "sources": 9
+      },
+      "scope_note": "本批仅收录一个官方院系下选中的5条名录及有证据的部分人物资料，不代表完整院系或全校覆盖；校区归属未单列。",
+      "organization_ids": [
+        "zju-ic",
+        "zju-ic-manufacturing"
+      ]
+    },
+    {
+      "school_id": "thu",
+      "school_name": "清华大学",
+      "selected_roster_records": 5,
+      "established_profiles": 5,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "counts": {
+        "education": 21,
+        "appointments": 20,
+        "mentors": 2,
+        "publications": 13,
+        "sources": 33
+      },
+      "scope_note": "本批仅收录一个官方院系下选中的5条名录及有证据的部分人物资料，不代表完整院系或全校覆盖；校区归属未单列。",
+      "organization_ids": [
+        "thu-ee",
+        "thu-ee-communications"
+      ]
+    },
+    {
+      "school_id": "pku",
+      "school_name": "北京大学",
+      "selected_roster_records": 5,
+      "established_profiles": 5,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "counts": {
+        "education": 16,
+        "appointments": 16,
+        "mentors": 3,
+        "publications": 11,
+        "sources": 40
+      },
+      "scope_note": "本批仅收录一个官方院系下选中的5条名录及有证据的部分人物资料，不代表完整院系或全校覆盖；校区归属未单列。",
+      "organization_ids": [
+        "pku-ic",
+        "pku-ic-microelectronics"
+      ]
+    },
+    {
+      "school_id": "sjtu",
+      "school_name": "上海交通大学",
+      "selected_roster_records": 5,
+      "established_profiles": 5,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "counts": {
+        "education": 8,
+        "appointments": 14,
+        "mentors": 1,
+        "publications": 15,
+        "sources": 15
+      },
+      "scope_note": "本批仅收录一个官方院系下选中的5条名录及有证据的部分人物资料，不代表完整院系或全校覆盖；校区归属未单列。",
+      "organization_ids": [
+        "sjtu-ic",
+        "sjtu-ic-chipdesign"
+      ]
+    }
+  ],
+  "coverage_complete": false,
+  "source_packages": [
+    {
+      "batch_id": "faculty-batch-zju-ic-001",
+      "source_sha256": "00effd2e3762731b3715307b75902e7e630b5abde804c15b38aeaa3ff9b2a239",
+      "independent_review_sha256": "f23177cc47f72e2834010ba6e472f52e5360b8b1fd5e347d9188bc888ff436d8",
+      "integration_file": "zju-ic-001-integration-ready.json",
+      "integration_sha256": "a0814a5672f24eedce75808139db094a450ed6019ea94ee067a37a1bdbdd8fe2",
+      "roster_file": "zju-ic-001-roster-integration-ready.json",
+      "roster_sha256": "9d25063ba4fa3053fe66ad5a2413015a38fd453d1889e01480d4fce93a720210"
+    },
+    {
+      "batch_id": "tsinghua-ee-001",
+      "source_sha256": "3a48d39d8b35c4289ae23f386fadfbc1c8e5d295224698d4712b45c0010b868f",
+      "independent_review_sha256": "4d19fce6d805a5f75d63aff2f37064e87d8c00c601e6ba1b3827189dcb3db8cd",
+      "integration_file": "tsinghua-ee-001-integration-ready.json",
+      "integration_sha256": "a92b1526b08305bf4dc3504f3fc395c6327a048264483c95f3fea79c20e3087a",
+      "roster_file": "tsinghua-ee-001-roster-integration-ready.json",
+      "roster_sha256": "cb2367b1396b786766dd2d91dd2d3b6222b280627c7a8b9a9557ff9e24ddb33b"
+    },
+    {
+      "batch_id": "pku-ic-001",
+      "source_sha256": "e712684b1402aecd9533859a880a3ef38d43359aa63464cf351a7e3b926ce4a9",
+      "independent_review_sha256": "07c04d070580f2d00653891c9975cd6ee3bedc87c24b5196999f96ca7eb4abff",
+      "integration_file": "pku-ic-001-integration-ready.json",
+      "integration_sha256": "39850bd095c753d3c05125b43f2670beb6562f5da9198e6dc464a0b7fc5f9a9c",
+      "roster_file": "pku-ic-001-roster-integration-ready.json",
+      "roster_sha256": "ddb365065fa1d1a5c004b240c4e32dc0642d5852d403b7358fcb94428a91fed9"
+    },
+    {
+      "batch_id": "faculty-batch-sjtu-ic-001",
+      "source_sha256": "068d9338e15429061b35ebde9623642dc1b6e9156b6720aa36ba9c830533d687",
+      "independent_review_sha256": "9f891cd1452ccda8d76fd40dac466258e3d80cb88ef431e8e65af6f87bfae19f",
+      "integration_file": "sjtu-ic-001-integration-ready.json",
+      "integration_sha256": "b0fdfea795b00fb1363b7d4429162e5e90edbaa445ea354986baf61892f801f2",
+      "roster_file": "sjtu-ic-001-roster-integration-ready.json",
+      "roster_sha256": "e34463ebc38b245d5a472029527727afff339549e481b3c68d0ff677bde417c8"
+    }
+  ]
+}

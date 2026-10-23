@@ -1,3 +1,4 @@
+from school_scope import hit_atlas, hit_rosters
 import copy,json,pathlib,sys,unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
@@ -6,9 +7,9 @@ from build_rosters import validate_rosters
 class InformationFirstTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.data=json.loads((ROOT/'data/atlas.json').read_text());cls.rosters=json.loads((ROOT/'data/rosters.json').read_text());cls.batch=[p for p in cls.data['people'] if p.get('data_batch_id')=='faculty-batch-harbin-eie-fourth-001']
+  cls.data=hit_atlas(json.loads((ROOT/'data/atlas.json').read_text()));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.batch=[p for p in cls.data['people'] if p.get('data_batch_id')=='faculty-batch-harbin-eie-fourth-001']
  def test_source_and_static_profiles_match(self):
-  public=json.loads((ROOT/'site/atlas.json').read_text());self.assertEqual(self.data['people'],public['people']);self.assertEqual(self.data['pending_people'],public['pending_people'])
+  public=hit_atlas(json.loads((ROOT/'site/atlas.json').read_text()));self.assertEqual(self.data['people'],public['people']);self.assertEqual(self.data['pending_people'],public['pending_people'])
  def test_exact_collection_counts(self):
   self.assertEqual(len(self.batch),10);self.assertEqual([sum(len(p[k]) for p in self.batch) for k in ['education','appointments','mentors','publications','sources']],[38,43,0,25,51])
  def test_roster_identity_evidence_and_counts(self):
@@ -33,4 +34,4 @@ class InformationFirstTests(unittest.TestCase):
   z=next(r for r in t['经历'] if r[0]=='张钧萍' and r[2]=='学士');self.assertEqual(z[3],'哈尔滨工程大学/哈尔滨医科大学');self.assertEqual(z[10],'unknown');self.assertIs(z[11],True)
   h=next(r for r in t['经历'] if r[0]=='侯成宇' and r[2]=='博士');self.assertIsNone(h[11]);self.assertIn('历史在读',h[14])
  def test_queue_baseline_and_partial_scope(self):
-  q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(q['base_commit'],'d7719f6916c2e3ac06906dcc403181f3bdc374a8');t=next(t for t in q['tasks'] if t['task_id']=='hit-seie:profiles');self.assertEqual(t['status'],'partial');self.assertFalse(t['scope']['university_complete']);self.assertIn('progress/harbin-information-progress.json',t['artifact_paths'])
+  q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(next(t for t in q['tasks'] if t['task_id']=='hit-weihai-information:profiles')['last_verified_commit'],'d7719f6916c2e3ac06906dcc403181f3bdc374a8');t=next(t for t in q['tasks'] if t['task_id']=='hit-seie:profiles');self.assertEqual(t['status'],'partial');self.assertFalse(t['scope']['university_complete']);self.assertIn('progress/harbin-information-progress.json',t['artifact_paths'])

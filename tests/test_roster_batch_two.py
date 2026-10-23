@@ -1,3 +1,4 @@
+from school_scope import hit_atlas, hit_rosters
 """Roster batch integrity and export tests; no workbook is generated."""
 import copy
 import csv
@@ -15,14 +16,21 @@ import build_rosters as roster_builder
 
 
 def digest(value):
+    # school_id is additive integration metadata; every original evidence byte
+    # still participates in these historical digests. Raw payloads are unchanged.
+    def historical(v):
+        if isinstance(v, list): return [historical(x) for x in v]
+        if isinstance(v, dict): return {k:historical(x) for k,x in v.items() if k != 'school_id'}
+        return v
+    value = historical(value)
     return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
 
 
 class RosterBatchTwoTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.rosters = json.loads((ROOT / 'data/rosters.json').read_text())
-        cls.atlas = json.loads((ROOT / 'data/atlas.json').read_text())
+        cls.rosters = hit_rosters(json.loads((ROOT / 'data/rosters.json').read_text()))
+        cls.atlas = hit_atlas(json.loads((ROOT / 'data/atlas.json').read_text()))
         cls.new_entries = [entry for entry in cls.rosters['entries'] if entry.get('batch_id') == 'harbin-002']
         cls.weihai_entries = [entry for entry in cls.rosters['entries'] if entry.get('batch_id') == 'weihai-003']
 
@@ -262,9 +270,9 @@ class RosterBatchTwoTests(unittest.TestCase):
         entry.update(id='test-observation', name='测试姓名', official_profile_url='https://example.test/person/', roster_source_url='https://example.test/roster', profile_identity_verified=False)
         for key in ('batch_id', 'verified_person_id', 'profile_identity_evidence'):
             entry.pop(key, None)
-        person = {'person_id': 'test-person', 'name': entry['name'], 'department_id': entry['organization_id'], 'official_url': 'http://example.test/person?lang=zh'}
-        roster = {'scope': 'Synthetic fixture', 'entries': [entry], 'summary': [{'visible_roster_entries': 1}], 'coverage': [{'organization_id': entry['organization_id'], 'category': entry['category'], 'visible_name_count': 1, 'url': entry['roster_source_url'], 'accessed_on': entry['accessed_on']}], 'limitations': [], 'conflicts': []}
-        atlas = {'people': [person], 'org_units': [{'id': entry['organization_id']}]}
+        person = {'school_id': 'hit', 'person_id': 'test-person', 'name': entry['name'], 'department_id': entry['organization_id'], 'official_url': 'http://example.test/person?lang=zh'}
+        roster = {'scope': 'Synthetic fixture', 'entries': [entry], 'summary': [{'visible_roster_entries': 1}], 'coverage': [{'school_id': 'hit', 'organization_id': entry['organization_id'], 'category': entry['category'], 'visible_name_count': 1, 'url': entry['roster_source_url'], 'accessed_on': entry['accessed_on']}], 'limitations': [], 'conflicts': []}
+        atlas = {'institutions': copy.deepcopy(self.atlas['institutions']), 'campuses': copy.deepcopy(self.atlas['campuses']), 'people': [person], 'org_units': [{'id': entry['organization_id'], 'school_id': 'hit'}]}
         return roster, atlas
 
     def test_exact_name_org_and_homepage_still_only_candidate(self):

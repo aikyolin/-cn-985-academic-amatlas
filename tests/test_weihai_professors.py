@@ -1,3 +1,4 @@
+from school_scope import hit_atlas, hit_rosters
 """Approved professor/researcher category boundaries and evidence-preserving update."""
 import copy,json,pathlib,sys,unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
@@ -7,7 +8,7 @@ from validate_queue import validate_queue
 class WeihaiProfessorsTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.data=json.loads((ROOT/'data/atlas.json').read_text());cls.rosters=json.loads((ROOT/'data/rosters.json').read_text());cls.people={p['person_id']:p for p in cls.data['people']};cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text());cls.group=[p for p in cls.data['people']if p.get('data_batch_id')in ['faculty-batch-weihai-info-001','faculty-batch-weihai-info-002','faculty-batch-weihai-info-003']]
+  cls.data=hit_atlas(json.loads((ROOT/'data/atlas.json').read_text()));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.people={p['person_id']:p for p in cls.data['people']};cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text());cls.group=[p for p in cls.data['people']if p.get('data_batch_id')in ['faculty-batch-weihai-info-001','faculty-batch-weihai-info-002','faculty-batch-weihai-info-003']]
  def test_global_checkpoint_and_school_counts(self):
   d=self.data;self.assertTrue(validate(d));self.assertEqual([len(d['people']),len(d['pending_people'])],[257,42]);self.assertEqual([sum(c in p['campus_ids']for p in d['people'])for c in ['harbin','weihai','shenzhen']],[159,62,36]);self.assertEqual([sum(len(p.get(k,[]))for p in d['people'])for k in ['education','appointments','mentors','committee_members','publications','sources']],[789,953,109,9,545,951]);self.assertEqual(sum(e['profile_identity_verified']for e in self.rosters['entries']),252)
  def test_category_24_is_not_full94_or_all_professors(self):
@@ -32,5 +33,5 @@ class WeihaiProfessorsTests(unittest.TestCase):
  def test_original_local_mapping_corrections_and_observation_count_survive(self):
   self.assertEqual(len(self.rosters['entries']),1381);self.assertEqual(len(self.rosters['source_observations']),1419);self.assertEqual(len(self.rosters['local_mapping_corrections']),4);self.assertEqual(len(self.rosters['withdrawn_local_conflicts']),1);self.assertEqual(len([c for c in self.rosters['conflicts']if c['type']=='same_url_different_names']),1)
  def test_queue_baseline_national_readme_and_next_category(self):
-  q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(q['base_commit'],'d7719f6916c2e3ac06906dcc403181f3bdc374a8');self.assertEqual(validate_queue(q,ROOT,True),[]);t=next(t for t in q['tasks']if t['task_id']=='hit-weihai-information:profiles');self.assertEqual(t['status'],'partial');self.assertEqual(t['next_cursor'],'weihai-information:first-pass-complete:uncertainty-review');self.assertIsNone(self.pg['next_roster_name']);self.assertTrue(self.pg['professor_researcher_category_first_pass_complete']);self.assertTrue(self.pg['first_pass_complete']);self.assertNotIn('220',(ROOT/'README.md').read_text())
+  q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(next(t for t in q['tasks'] if t['task_id']=='hit-weihai-information:profiles')['last_verified_commit'],'d7719f6916c2e3ac06906dcc403181f3bdc374a8');self.assertEqual(validate_queue(q,ROOT,True),[]);t=next(t for t in q['tasks']if t['task_id']=='hit-weihai-information:profiles');self.assertEqual(t['status'],'partial');self.assertEqual(t['next_cursor'],'weihai-information:first-pass-complete:uncertainty-review');self.assertIsNone(self.pg['next_roster_name']);self.assertTrue(self.pg['professor_researcher_category_first_pass_complete']);self.assertTrue(self.pg['first_pass_complete']);self.assertNotIn('220',(ROOT/'README.md').read_text())
 if __name__=='__main__':unittest.main()

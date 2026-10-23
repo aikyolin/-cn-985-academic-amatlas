@@ -1,3 +1,4 @@
+from school_scope import hit_atlas, hit_rosters
 """Reviewed Weihai boundaries and explicit news-backed roster identity; no exports written."""
 import copy,json,pathlib,sys,unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
@@ -7,7 +8,7 @@ from validate_queue import validate_queue
 class WeihaiFirstTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.data=json.loads((ROOT/'data/atlas.json').read_text());cls.rosters=json.loads((ROOT/'data/rosters.json').read_text());cls.people={p['name']:p for p in cls.data['people']};cls.batch=[p for p in cls.data['people']if p.get('data_batch_id')=='faculty-batch-weihai-info-001'];cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text())
+  cls.data=hit_atlas(json.loads((ROOT/'data/atlas.json').read_text()));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.people={p['name']:p for p in cls.data['people']};cls.batch=[p for p in cls.data['people']if p.get('data_batch_id')=='faculty-batch-weihai-info-001'];cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text())
  def entry(self,name):return next(e for e in self.rosters['entries']if e['name']==name)
  def test_global_counts(self):
   d=self.data;self.assertTrue(validate(d));self.assertEqual([len(d['people']),len(d['pending_people'])],[257,42]);self.assertEqual([sum(c in p['campus_ids']for p in d['people'])for c in ['harbin','weihai','shenzhen']],[159,62,36]);self.assertEqual([sum(len(p.get(k,[]))for p in d['people'])for k in ['education','appointments','mentors','committee_members','publications','sources']],[789,953,109,9,545,951]);self.assertEqual(sum(e['profile_identity_verified']for e in self.rosters['entries']),252)
@@ -33,7 +34,7 @@ class WeihaiFirstTests(unittest.TestCase):
  def test_liuaijun_independent_identity_keeps_wrong_libo_url(self):
   p=self.people['刘爱军'];e=self.entry('刘爱军');self.assertEqual(e['official_profile_url'],'http://homepage.hit.edu.cn/libo?lang=zh');self.assertEqual(e['profile_identity_evidence']['incorrect_roster_landing_name'],'李博');self.assertNotEqual(e['verified_person_id'],self.entry('李博')['verified_person_id']);self.assertNotIn('redirect_chain',e['profile_identity_evidence']);self.assertNotIn('verified_alias_urls',e['profile_identity_evidence']);broken=copy.deepcopy(e);broken['profile_identity_evidence'].pop('independent_profile_verification');self.assertFalse(_verified_profile_match(broken,p))
  def test_news_overview_export_has_blank_homepage_and_explicit_alternative_reports(self):
-  p=self.people['于长军'];before=copy.deepcopy(p);tables=dict(department_tables([p],self.data['updated_at']));head=tables['总览'][0];row=tables['总览'][1];self.assertEqual(row[head.index('官方主页')],'');self.assertIn('不可用',row[head.index('主页可用性')]);self.assertIn('news.hitwh.edu.cn',row[-1]);self.assertIn('news.hit.edu.cn',row[-1]);self.assertEqual(p,before)
+  p=self.people['于长军'];before=copy.deepcopy(p);tables=dict(department_tables([p],self.data['updated_at']));head=tables['总览'][0];row=tables['总览'][1];self.assertEqual(row[head.index('官方主页')],'');self.assertIn('不可用',row[head.index('主页可用性')]);self.assertIn('news.hitwh.edu.cn',row[head.index('替代官方职业报道（非个人主页）')]);self.assertIn('news.hit.edu.cn',row[head.index('替代官方职业报道（非个人主页）')]);self.assertEqual(p,before)
   rt=roster_tables(self.rosters,self.data)['待核对名录'];self.assertIn('职业身份关联已核（不代表个人主页可用）',rt[0]);r=next(row for row in rt[1:]if row[1]=='于长军');self.assertEqual(r[6],'http://homepage.hit.edu.cn/yuchangjun?lang=zh');self.assertTrue(r[10]);self.assertIn('official_profile_identity_verified',str(r))
  def test_four_confirmed_advisors_and_indexed_candidate_are_separate(self):
   self.assertEqual(sum(len(p['mentors'])for p in self.batch),4);self.assertEqual(sum(len(p.get('pending_mentor_candidates',[]))for p in self.batch),1);rows=dict(department_tables(self.batch,self.data['updated_at']))['导师'];self.assertEqual(len(rows),5);self.assertFalse(any('洪奕光'in str(r)for r in rows));self.assertTrue(all('非独立核实的精确指导起讫'in str(r)for r in rows[1:]))
@@ -52,7 +53,7 @@ class WeihaiFirstTests(unittest.TestCase):
      for x in v:walk(x)
    walk(p);self.assertNotIn('/workspace/',json.dumps(p))
  def test_queue_and_national_readme_boundary(self):
-  q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(q['base_commit'],'d7719f6916c2e3ac06906dcc403181f3bdc374a8');self.assertEqual(validate_queue(q,ROOT,True),[]);t=next(t for t in q['tasks']if t['task_id']=='hit-weihai-information:profiles');self.assertEqual(t['status'],'partial');self.assertEqual(t['next_cursor'],'weihai-information:first-pass-complete:uncertainty-review');self.assertIsNone(self.pg['next_roster_name']);readme=(ROOT/'README.md').read_text();self.assertIn('全国',readme);self.assertNotIn('220',readme);coverage=(ROOT/'progress/current-coverage.md').read_text();self.assertIn('257 位',coverage);self.assertIn('81条学术岗位与13条实验技术岗位',coverage)
+  q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(next(t for t in q['tasks'] if t['task_id']=='hit-weihai-information:profiles')['last_verified_commit'],'d7719f6916c2e3ac06906dcc403181f3bdc374a8');self.assertEqual(validate_queue(q,ROOT,True),[]);t=next(t for t in q['tasks']if t['task_id']=='hit-weihai-information:profiles');self.assertEqual(t['status'],'partial');self.assertEqual(t['next_cursor'],'weihai-information:first-pass-complete:uncertainty-review');self.assertIsNone(self.pg['next_roster_name']);readme=(ROOT/'README.md').read_text();self.assertIn('全国',readme);self.assertNotIn('220',readme);coverage=(ROOT/'progress/current-coverage.md').read_text();self.assertIn('257 位',coverage);self.assertIn('81条学术岗位与13条实验技术岗位',coverage)
  def test_exact_full_name_anchor_href_corrections_are_not_guessed_slugs(self):
   report=json.loads((ROOT/'progress/weihai-roster-corrections.json').read_text());self.assertEqual(report['entries_checked'],94);self.assertEqual(report['corrected_local_mapping_count'],4);self.assertEqual(report['source_link_changes'],0)
   expected={'李剑锋':('roster-a536f2ea74f19323','lijianfeng','sunzhengnai'),'康文静':('roster-3b8d1cda9026fd1b','kangwenjing','renxiuyun'),'梅英杰':('roster-26e200666f5745b7','meiyingjie','lijianfeng'),'孙烽豪':('roster-b7a90d44c5bc9ffa','sunfenghao','kangwenjing')}

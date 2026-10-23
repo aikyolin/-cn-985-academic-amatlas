@@ -5,10 +5,10 @@
   "required": [
     "schema_version",
     "updated_at",
-    "institution",
     "campuses",
     "org_units",
-    "people"
+    "people",
+    "institutions"
   ],
   "properties": {
     "schema_version": {
@@ -27,11 +27,14 @@
           "name",
           "parent_id",
           "campus_ids",
-          "source_url"
+          "source_url",
+          "school_id",
+          "type"
         ],
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]+$"
           },
           "parent_id": {
             "type": [
@@ -41,17 +44,19 @@
           },
           "campus_ids": {
             "type": "array",
+            "uniqueItems": true,
             "items": {
-              "enum": [
-                "harbin",
-                "weihai",
-                "shenzhen"
-              ]
+              "type": "string",
+              "minLength": 1
             }
           },
           "source_url": {
             "type": "string",
             "format": "uri"
+          },
+          "school_id": {
+            "type": "string",
+            "minLength": 1
           }
         }
       }
@@ -69,7 +74,8 @@
           "mentors",
           "publications",
           "sources",
-          "unknowns"
+          "unknowns",
+          "school_id"
         ],
         "properties": {
           "person_id": {
@@ -128,6 +134,18 @@
             "items": {
               "type": "string"
             }
+          },
+          "school_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "campus_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
           }
         }
       }
@@ -141,7 +159,9 @@
           "person_id",
           "name",
           "profile_status",
-          "roster_entry_id"
+          "roster_entry_id",
+          "school_id",
+          "campus_ids"
         ],
         "properties": {
           "profile_status": {
@@ -161,6 +181,71 @@
           "publications": {
             "type": "array",
             "maxItems": 0
+          },
+          "school_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "campus_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "institutions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "official_name",
+          "official_url"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_-]+$"
+          },
+          "official_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "official_url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "campuses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "school_id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_-]+$"
+          },
+          "school_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
           }
         }
       }

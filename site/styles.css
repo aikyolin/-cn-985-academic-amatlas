@@ -5,3 +5,6 @@
 @media(max-width:420px){header nav{gap:18px;flex-wrap:wrap}header nav a{font-size:12px}}
 
 .school-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.school-card{background:#fff;border:1px solid var(--line,#dce6eb);border-radius:12px;padding:22px;display:flex;flex-direction:column;align-items:flex-start}.school-card.available{border-top:4px solid #087f89}.school-card h2{font-size:20px;margin:15px 0 9px}.school-card p{color:#5a6e7e;line-height:1.7;flex:1}.school-card .button{margin-top:12px}@media(max-width:540px){.school-grid{grid-template-columns:1fr}.school-card{padding:18px}}
+
+/* Keep names as one clear touch target while the table scrolls locally. */
+.person-link{display:inline-block;white-space:nowrap;min-width:3em;min-height:28px;line-height:28px}

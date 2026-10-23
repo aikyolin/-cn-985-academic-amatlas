@@ -1,13 +1,21 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T14:22:00Z",
-  "base_commit": "d7719f6916c2e3ac06906dcc403181f3bdc374a8",
+  "updated_at": "2026-10-23T14:52:00Z",
+  "base_commit": "a50464bd62c57acb331a03e37e16ce87695d001f",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
     "registry_complete": false,
-    "known_organization_nodes": 78,
-    "write_model": "single_controller_expected_sha"
+    "known_organization_nodes": 86,
+    "write_model": "single_controller_expected_sha",
+    "active_institutions": [
+      "hit",
+      "thu",
+      "pku",
+      "zju",
+      "sjtu"
+    ],
+    "active_institution_note": "历史首校兼容字段；并行范围见active_institutions。"
   },
   "tasks": [
     {
@@ -3320,6 +3328,114 @@
       "next_cursor": null,
       "attempted_at": "2026-10-23T09:53:00Z",
       "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "zju:first-selected-profiles",
+      "institution_id": "zju",
+      "organization_id": "zju-ic-manufacturing",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "本批仅收录一个官方院系下选中的5条名录及有证据的部分人物资料，不代表完整院系或全校覆盖；校区归属未单列。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://ic.zju.edu.cn/jcdlxjzzjsyjs/"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-first-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续官方名录下一批，补来源、履历和未知字段；先独立审核再接入。",
+      "next_cursor": "first_selected_5_reviewed",
+      "attempted_at": "2026-10-23T14:52:00Z",
+      "last_verified_commit": null
+    },
+    {
+      "task_id": "thu:first-selected-profiles",
+      "institution_id": "thu",
+      "organization_id": "thu-ee-communications",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "本批仅收录一个官方院系下选中的5条名录及有证据的部分人物资料，不代表完整院系或全校覆盖；校区归属未单列。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.ee.tsinghua.edu.cn/yxjj/jgsz/yjs/txyjs.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-first-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续官方名录下一批，补来源、履历和未知字段；先独立审核再接入。",
+      "next_cursor": "first_selected_5_reviewed",
+      "attempted_at": "2026-10-23T14:52:00Z",
+      "last_verified_commit": null
+    },
+    {
+      "task_id": "pku:first-selected-profiles",
+      "institution_id": "pku",
+      "organization_id": "pku-ic-microelectronics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "本批仅收录一个官方院系下选中的5条名录及有证据的部分人物资料，不代表完整院系或全校覆盖；校区归属未单列。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://ic.pku.edu.cn/xszx/jcwndzx/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-first-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续官方名录下一批，补来源、履历和未知字段；先独立审核再接入。",
+      "next_cursor": "first_selected_5_reviewed",
+      "attempted_at": "2026-10-23T14:52:00Z",
+      "last_verified_commit": null
+    },
+    {
+      "task_id": "sjtu:first-selected-profiles",
+      "institution_id": "sjtu",
+      "organization_id": "sjtu-ic-chipdesign",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "本批仅收录一个官方院系下选中的5条名录及有证据的部分人物资料，不代表完整院系或全校覆盖；校区归属未单列。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://icisee.sjtu.edu.cn/jiaoshiml.html"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-first-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续官方名录下一批，补来源、履历和未知字段；先独立审核再接入。",
+      "next_cursor": "first_selected_5_reviewed",
+      "attempted_at": "2026-10-23T14:52:00Z",
+      "last_verified_commit": null
     }
   ]
 }

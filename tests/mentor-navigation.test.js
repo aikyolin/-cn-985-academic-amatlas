@@ -5,7 +5,7 @@ import {mentorProfileRoute,escapeHtml,safeUrl} from '../site/model.js';
 
 const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));
 const app=fs.readFileSync(new URL('../site/app.js',import.meta.url),'utf8');
-const person=name=>db.people.find(p=>p.name===name);
+const person=name=>db.people.find(p=>p.school_id==='hit'&&p.name===name);
 const relation=(name,mentor)=>person(name).mentors.find(m=>m.name===mentor);
 const lineageSource=app.match(/function lineage\(p\)\{[\s\S]*?\n(?=function makeMind)/)?.[0];
 assert(lineageSource,'Test must exercise the actual mentor-card renderer');

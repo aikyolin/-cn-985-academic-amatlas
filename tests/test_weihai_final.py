@@ -1,3 +1,4 @@
+from school_scope import hit_atlas, hit_rosters
 """Whole visible Weihai roster boundary, exact evidence, and defensive match tests."""
 import copy,hashlib,json,pathlib,sys,unittest
 from collections import Counter
@@ -8,9 +9,9 @@ from validate_queue import validate_queue
 class WeihaiFinalTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.d=json.loads((ROOT/'data/atlas.json').read_text());cls.r=json.loads((ROOT/'data/rosters.json').read_text());cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text());cls.people={p['name']:p for p in cls.d['people']if p['department_id']=='hit-weihai-information'};cls.pending={p['name']:p for p in cls.d['pending_people']if p.get('department_id')=='hit-weihai-information'}
+  cls.d=hit_atlas(json.loads((ROOT/'data/atlas.json').read_text()));cls.r=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text());cls.people={p['name']:p for p in cls.d['people']if p['department_id']=='hit-weihai-information'};cls.pending={p['name']:p for p in cls.d['pending_people']if p.get('department_id')=='hit-weihai-information'}
  def entry(self,n):return next(e for e in self.r['entries']if e['name']==n and e['organization_id']=='hit-weihai-information')
- def test_exact_global_counts_and_schema(self):
+ def test_exact_hit_counts_and_schema(self):
   self.assertTrue(validate(self.d));self.assertTrue(validate_rosters(self.r,self.d));self.assertEqual([len(self.d['people']),len(self.d['pending_people'])],[257,42]);self.assertEqual([sum(len(p.get(k,[]))for p in self.d['people'])for k in ['education','appointments','mentors','committee_members','publications','sources']],[789,953,109,9,545,951]);self.assertEqual(sum(e['profile_identity_verified']for e in self.r['entries']),252)
   import jsonschema
   jsonschema.Draft202012Validator(json.loads((ROOT/'schema/atlas.schema.json').read_text()),format_checker=jsonschema.FormatChecker()).validate(self.d)
@@ -91,5 +92,5 @@ class WeihaiFinalTests(unittest.TestCase):
      for x in v:walk(x)
    walk(p);self.assertNotIn('/workspace/',json.dumps(p));self.assertNotIn('/tmp/',json.dumps(p))
  def test_queue_honest_completion_boundary_and_verified_release_baseline(self):
-  q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(q['base_commit'],'d7719f6916c2e3ac06906dcc403181f3bdc374a8');self.assertEqual(validate_queue(q,ROOT,True),[]);t=next(t for t in q['tasks']if t['task_id']=='hit-weihai-information:profiles');self.assertEqual(t['status'],'partial');self.assertEqual(t['next_cursor'],'weihai-information:first-pass-complete:uncertainty-review');self.assertIsNone(self.pg['next_roster_name']);self.assertFalse(t['scope']['university_complete']);self.assertEqual(self.pg['integration_baseline_commit'],q['base_commit'])
+  q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(next(t for t in q['tasks'] if t['task_id']=='hit-weihai-information:profiles')['last_verified_commit'],'d7719f6916c2e3ac06906dcc403181f3bdc374a8');self.assertEqual(validate_queue(q,ROOT,True),[]);t=next(t for t in q['tasks']if t['task_id']=='hit-weihai-information:profiles');self.assertEqual(t['status'],'partial');self.assertEqual(t['next_cursor'],'weihai-information:first-pass-complete:uncertainty-review');self.assertIsNone(self.pg['next_roster_name']);self.assertFalse(t['scope']['university_complete']);self.assertEqual(self.pg['integration_baseline_commit'],t['last_verified_commit'])
 if __name__=='__main__':unittest.main()

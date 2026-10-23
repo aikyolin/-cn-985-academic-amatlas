@@ -8,11 +8,11 @@ import csv
 import json
 from urllib.parse import urlparse
 
-from build import ROOT, clean, sheet, valid_url
+from build import ROOT, clean, sheet, valid_url, school_index
 
 
 ENTRY_FIELDS = (
-    'id', 'name', 'campus_id', 'organization_id', 'category', 'listed_role',
+    'id', 'name', 'campus_id', 'organization_id', 'category', 'listed_role', 'school_id',
     'official_profile_url', 'roster_source_url', 'accessed_on', 'notes',
     'verification_status', 'profile_identity_verified',
 )
@@ -26,7 +26,8 @@ def homepage_key(url):
 
 def _matches_profile(entry, person):
     return (
-        entry['name'] == person['name']
+        entry.get('school_id') == person.get('school_id')
+        and entry['name'] == person['name']
         and entry['organization_id'] == person['department_id']
         and valid_url(entry.get('official_profile_url'))
         and valid_url(person.get('official_url'))
@@ -79,7 +80,7 @@ def _verified_profile_match(entry, person):
     redirect_chain is an ordered URL list beginning at the roster homepage and
     ending at the detailed profile. Neither is inferred from a shared URL slug.
     """
-    if entry['name'] != person['name'] or entry['organization_id'] != person['department_id']:
+    if not entry.get('school_id') or entry.get('school_id') != person.get('school_id') or entry['name'] != person['name'] or entry['organization_id'] != person['department_id']:
         return False
     if entry.get('official_profile_availability') == 'unavailable' or person.get('official_profile_availability') == 'unavailable':
         # Must precede same-URL matching: a dead URL cannot prove profile identity.
@@ -156,7 +157,9 @@ def validate_rosters(rosters, atlas):
     entry_ids = {entry['id'] for entry in entries}
     assert len(entry_ids) == len(entries), 'Duplicate roster record ID'
     people = {person['person_id']: person for person in atlas['people']}
-    organizations = {org['id'] for org in atlas['org_units']}
+    organizations = {org['id']: org for org in atlas['org_units']}
+    schools = school_index(atlas)
+    campuses = {c['id']: c for c in atlas['campuses']}
     batch_ids = set()
     batch_entry_ids = set()
     unverified_batch_ids = set()
@@ -175,6 +178,7 @@ def validate_rosters(rosters, atlas):
         assert len(ids) == len(set(ids)) == record_count, 'Batch record count mismatch'
         assert set(ids) <= entry_ids, 'Unknown batch observation ID'
         assert not batch_entry_ids.intersection(ids), 'Observation belongs to multiple batches'
+        assert batch.get('school_id') in schools and all(entries_by_id[i].get('school_id')==batch['school_id'] for i in ids), 'Cross-school roster batch'
         batch_entry_ids.update(ids)
         if batch['batch_id'] in UNVERIFIED_BATCHES:
             unverified_batch_ids.update(ids)
@@ -187,6 +191,7 @@ def validate_rosters(rosters, atlas):
         for item in observations:
             assert item['record_id'] in entries_by_id, 'Unknown source observation record'
             assert item['organization_id'] == entries_by_id[item['record_id']]['organization_id'], 'Source observation organization mismatch'
+            assert item.get('school_id') == entries_by_id[item['record_id']]['school_id'], 'Source observation school mismatch'
             assert valid_url(item['source_url']), 'Unsafe source observation URL'
             assert isinstance(item['source_payload'], dict), 'Original source observation payload missing'
         for batch in rosters.get('batches', []):
@@ -203,6 +208,10 @@ def validate_rosters(rosters, atlas):
         assert all(key in entry for key in ENTRY_FIELDS), 'Missing roster field'
         assert isinstance(entry['name'], str) and entry['name'].strip(), 'Empty roster name'
         assert entry['organization_id'] in organizations, 'Unknown roster organization'
+        assert entry.get('school_id') in schools and organizations[entry['organization_id']]['school_id']==entry['school_id'], 'Cross-school roster organization'
+        cid=entry.get('campus_id')
+        if entry['school_id']=='hit' and cid in {'hit-harbin','hit-weihai','hit-shenzhen'}:cid=cid[4:]
+        assert not cid or (cid in campuses and campuses[cid]['school_id']==entry['school_id']), 'Cross-school roster campus'
         assert valid_url(entry['roster_source_url']), 'Unsafe roster source URL'
         assert not entry['official_profile_url'] or valid_url(entry['official_profile_url']), 'Unsafe candidate profile URL'
         assert isinstance(entry['notes'], list) and all(isinstance(note, str) for note in entry['notes']), 'Invalid roster notes'
@@ -230,8 +239,15 @@ def validate_rosters(rosters, atlas):
         assert set(referenced_ids) <= entry_ids, 'Unknown conflict observation'
         if conflict.get('kind'):
             assert conflict['type'] == conflict['kind'], 'Conflict compatibility alias changed meaning'
+    for pending in atlas.get('pending_people', []):
+        entry=entries_by_id.get(pending.get('roster_entry_id'))
+        assert entry and entry['school_id']==pending.get('school_id') and entry['organization_id']==pending.get('department_id', pending.get('organization_id')), 'Cross-school or missing pending roster link'
+    for summary in rosters['summary']:
+        if summary.get('organization_id'):
+            assert summary['organization_id'] in organizations and summary.get('school_id')==organizations[summary['organization_id']]['school_id'], 'Cross-school roster summary'
     for coverage in rosters['coverage']:
         assert coverage['organization_id'] in organizations, 'Unknown coverage organization'
+        assert coverage.get('school_id')==organizations[coverage['organization_id']]['school_id'], 'Cross-school coverage organization'
         assert valid_url(coverage['url']), 'Unsafe coverage source URL'
         if 'source_url' in coverage:
             assert coverage['url'] == coverage['source_url'], 'Coverage URL alias mismatch'
@@ -304,15 +320,19 @@ def roster_tables(rosters, atlas):
         '门户个人资料显示更新时间（非在职核验）', '源时间状态及占位说明',
         '源批次原始主页核验值（不代表本项目档案关联）', '源批次主页归属证据',
     ]
+    columns.extend(['school_id','school_name'])
+    headers.extend(['所属学校ID','所属学校'])
+    names={school['id']:school['official_name'] for school in atlas['institutions']}
     rows = [headers]
     for entry in entries:
-        export_entry = dict(entry, batch_id=entry.get('batch_id') or batches.get(entry['id']), source_declared_update=source_dates.get((entry['organization_id'], entry['category'], entry['roster_source_url'])))
+        export_entry = dict(entry, school_name=names[entry['school_id']], batch_id=entry.get('batch_id') or batches.get(entry['id']), source_declared_update=source_dates.get((entry['organization_id'], entry['category'], entry['roster_source_url'])))
         rows.append([export_entry.get(key) for key in columns])
     tables = {'待核对名录': rows}
     tables['覆盖说明'] = [
         ['范围与限制'], [rosters['scope']],
+        ['以下为全库各来源批次保留说明，含历史数量与旧枚举范围，不表示当前各校完整收录。当前总数见首行范围和末尾统计；新增四校各5条仅为选中样本。'],
         *[[limitation] for limitation in rosters['limitations']],
-        [f"{len(entries)}条整合名录记录，另保存{len(rosters.get('source_observations', entries))}条原始来源观察；不是唯一人数或已核实在职人数，{len(atlas['people'])}份独立详细档案不自动合并。"],
+        [f"{len(entries)}条整合名录记录，另保存{len(rosters.get('source_observations', entries))}条原始来源观察；不是唯一人数或已核实在职人数，{len(atlas['people'])}份独立人物档案不自动合并。"],
         ['统计', rosters.get('totals', {})],
     ]
     tables['分类覆盖'] = [

@@ -1,11 +1,51 @@
 """Validate canonical data and derive static data + departmental Excel workbooks."""
-import json,pathlib,sys,hashlib
+import json,pathlib,sys,hashlib,re
 from urllib.parse import urlparse
 from openpyxl import Workbook
 from openpyxl.styles import Font,PatternFill,Alignment
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def valid_url(v):return isinstance(v,str) and urlparse(v).scheme in ('http','https') and bool(urlparse(v).netloc)
+def safe_id(value):return isinstance(value,str) and bool(re.fullmatch(r'[A-Za-z0-9_-]+',value))
+def school_index(d):
+ schools={row['id']:row for row in d['institutions']}
+ assert len(schools)==len(d['institutions']), 'Duplicate school ID'
+ assert all(safe_id(sid) for sid in schools), 'Unsafe school ID'
+ assert all(valid_url(row.get('official_url')) and row.get('official_name') for row in schools.values()), 'School identity needs a name and official URL'
+ return schools
+
+def validate_school_scope(d):
+ schools=school_index(d)
+ campuses={c['id']:c for c in d['campuses']}
+ assert len(campuses)==len(d['campuses']), 'Duplicate campus ID'
+ orgs={o['id']:o for o in d['org_units']}
+ assert len(orgs)==len(d['org_units']), 'Duplicate organization ID'
+ assert all(safe_id(oid) for oid in orgs), 'Unsafe organization ID'
+ legacy={'harbin','weihai','shenzhen'}
+ for c in campuses.values():
+  assert c.get('school_id') in schools, 'Unknown campus school'
+  assert safe_id(c['id']), 'Unsafe campus ID'
+  assert (c['school_id']=='hit' and c['id'] in legacy) or c['id'].startswith(c['school_id']+'-'), 'New campus IDs must be school-prefixed'
+ for key in ['org_units','people','pending_people']:
+  for row in d.get(key,[]):
+   sid=row.get('school_id');assert sid in schools, 'Unknown record school'
+   assert isinstance(row.get('campus_ids'),list), 'Campus associations must be explicit; empty is allowed'
+   for cid in row['campus_ids']:
+    assert cid in campuses and campuses[cid]['school_id']==sid, 'Cross-school or unknown campus reference'
+   if key=='org_units':
+    assert row.get('name') and row.get('type') and valid_url(row.get('source_url')), 'Organization needs a name, type and source URL'
+    parent=row.get('parent_id')
+    if parent in orgs:assert orgs[parent]['school_id']==sid, 'Cross-school organization parent'
+    elif parent:
+     # Preserve historical HIT parent aliases without creating synthetic org nodes.
+     legacy_parent=sid=='hit' and parent in {'hit-'+c for c in legacy}
+     assert parent==sid or (parent in campuses and campuses[parent]['school_id']==sid) or legacy_parent, 'Unknown or cross-school organization parent'
+   else:
+    oid=row.get('department_id') or row.get('organization_id')
+    assert oid in orgs and orgs[oid]['school_id']==sid, 'Cross-school or unknown person department'
+ return True
+
 def validate(d):
+ validate_school_scope(d)
  pending=d.get('pending_people',[])
  assert all(p.get('profile_status') in ('roster_identity_pending','profile_details_pending') and not p.get('education') and not p.get('mentors') and not p.get('publications') for p in pending),'Pending identities must stay outside confirmed collections'
  assert not ({p['person_id'] for p in pending}&{p['person_id'] for p in d['people']}),'Pending identity duplicated as detailed profile'
@@ -62,8 +102,13 @@ def sheet(wb,name,rows):
    if valid_url(cell.value):cell.hyperlink=cell.value;cell.font=Font(color='078B92',underline='single')
  for col in ws.columns:ws.column_dimensions[col[0].column_letter].width=min(65,max(16,max(len(str(c.value or '')) for c in col)*1.4))
  return ws
-def department_tables(people,updated_at):
- tables=[('总览',[['姓名','校区','院系','官方主页','核对日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p['campus'],p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],updated_at,'；'.join(p['unknowns']),'分批核实资料，不是完整名录','个人主页当前不可用' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else '公开个人页（时效以核对日为准）','；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]
+def department_tables(people,updated_at,institutions=None):
+ schools={p.get("school_id") for p in people}
+ assert len(schools)<=1 and None not in schools, "Department export cannot mix schools or omit school IDs"
+ school_id=next(iter(schools),"")
+ names={s["id"]:s["official_name"] for s in (institutions or [])}
+ school_name=names.get(school_id,school_id)
+ tables=[('总览',[['姓名','校区','院系','官方主页','核对日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p.get('campus') or '校区未标注',p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],updated_at,'；'.join(p['unknowns']),'分批核实资料，不是完整名录','个人主页当前不可用' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else '公开个人页（时效以核对日为准）','；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]
  fields=['event_kind','degree','institution','start','end','field','country','source_region','continent','institution_985','degree_awarded','degree_awarded_date','degree_award_source_url','note','geography_basis','source_url']
  rows=[['姓名','事件类型','阶段/职位','机构','开始','结束','专业','国家','地区','洲','历史985分类','确证授位','授位日期','授位来源','备注及冲突','地域口径','来源']]
  for p in people:
@@ -79,7 +124,7 @@ def department_tables(people,updated_at):
  mentor_fields=['name','type','education_stage','description','employment_status','employment_status_note','official_url','source_url','profile_source_url']
  rows=[['姓名','导师姓名','关系类型','阶段','简介','在职状态','状态说明','已核在职主页','关系来源','任职来源']]
  for p in people:
-  mentors=[dict(m,official_url=m.get('official_url') if m.get('employment_status')=='active_officially_listed' else '') for m in p['mentors']]+[dict(c,type=c.get('label','博士指导委员会成员（非师承）'),official_url='') for c in p.get('committee_members',[])]
+  mentors=[dict(m,type=m.get('type_label') or m.get('type'),official_url=m.get('official_url') if m.get('employment_status')=='active_officially_listed' else '') for m in p['mentors']]+[dict(c,type=c.get('label','博士指导委员会成员（非师承）'),official_url='') for c in p.get('committee_members',[])]
   rows.extend([[p['name'],*[m.get(k) for k in mentor_fields]] for m in mentors])
  tables.append(('导师',rows))
  for label,key,fields,headers in [('论文','publications',['title','year','doi','url','type','source_url','identity_evidence','link_status','note'],['标题','年份','DOI','链接','类型','收录来源','作者归属依据','链接核验范围','备注']),('来源','sources',['id','url','evidence_status','retrieved_at'],['来源ID','链接','核验方式','查阅日期'])]:
@@ -92,19 +137,32 @@ def department_tables(people,updated_at):
      if e.get('institution_985') in ('yes','no') and valid_url(url) and url not in seen:
       rows.append([p['name'],'institution-classification-'+str(len(seen)),url,'历史985院校分类参考；非个人授位或就读当年建设身份的证明',updated_at]);seen.add(url)
   tables.append((label,rows))
+ for _,rows in tables:
+  rows[0].extend(['所属学校ID','所属学校'])
+  for row in rows[1:]:row.extend([school_id,school_name])
  return tables
 
-def build(generate_excel=True):
- d=json.loads((ROOT/'data/atlas.json').read_text());validate(d);exports=[]
- d['build_id']=hashlib.sha256((ROOT/'data/atlas.json').read_bytes()+(ROOT/'data/rosters.json').read_bytes()+pathlib.Path(__file__).read_bytes()).hexdigest()[:16]
- out=ROOT/'site/exports';out.mkdir(exist_ok=True)
+def department_exports(d):
+ validate_school_scope(d)
+ units={u['id']:u for u in d['org_units']}
+ names={s['id']:s['official_name'] for s in d['institutions']}
+ result=[]
  for dept in sorted({p['department_id'] for p in d['people']}):
-  people=[p for p in d['people'] if p['department_id']==dept];path=out/(dept+'.xlsx')
+  school_id=units[dept]['school_id']
+  people=[p for p in d['people'] if p['department_id']==dept and p['school_id']==school_id]
+  result.append({'department_id':dept,'school_id':school_id,'school_name':names[school_id],'path':'exports/'+dept+'.xlsx','people_count':len(people)})
+ return result
+
+def build(generate_excel=True):
+ d=json.loads((ROOT/'data/atlas.json').read_text());validate(d);exports=department_exports(d)
+ d['build_id']=hashlib.sha256((ROOT/'data/atlas.json').read_bytes()+(ROOT/'data/rosters.json').read_bytes()+pathlib.Path(__file__).read_bytes()+(ROOT/'scripts/build_rosters.py').read_bytes()).hexdigest()[:16]
+ out=ROOT/'site/exports';out.mkdir(exist_ok=True)
+ for export in exports:
+  dept=export['department_id'];people=[p for p in d['people'] if p['department_id']==dept and p['school_id']==export['school_id']];path=out/(dept+'.xlsx')
   if generate_excel:
    wb=Workbook();wb.remove(wb.active)
-   for name,rows in department_tables(people,d['updated_at']):sheet(wb,name,rows)
+   for name,rows in department_tables(people,d['updated_at'],d['institutions']):sheet(wb,name,rows)
    wb.save(path)
-  exports.append({'department_id':dept,'path':'exports/'+path.name,'people_count':len(people)})
  from build_rosters import build_rosters
  build_rosters(d,generate_excel=generate_excel)
  roster_path=ROOT/'site/rosters.json';roster_snapshot=json.loads(roster_path.read_text());roster_snapshot['build_id']=d['build_id'];roster_path.write_text(json.dumps(roster_snapshot,ensure_ascii=False,indent=2)+'\n')

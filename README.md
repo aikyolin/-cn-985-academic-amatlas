@@ -2,7 +2,7 @@
 
 面向中国原39所985高校的教师学术经历与师承资料项目，提供学校院系总览、个人档案、分阶段师承关系图、学历地域筛选、论文链接与院系 Excel 导出。
 
-[浏览网站](https://aikyolin.github.io/-cn-985-academic-amatlas/) · [当前覆盖与核验进度](progress/current-coverage.md) · [数据政策](docs/data-policy.md)
+[浏览网站](https://aikyolin.github.io/-cn-985-academic-amatlas/) · [当前覆盖与核验进度](progress/current-coverage.md) · [数据政策](docs/data-policy.md) · [资料补充与纠错讨论](https://github.com/aikyolin/-cn-985-academic-amatlas/discussions)
 
 ## 项目范围
 
@@ -30,12 +30,13 @@ python -m unittest discover -s tests -v
 
 ## 模块
 
-- `data/atlas.json`：详细样板的数据源，公开学术事实及来源、冲突、缺项。
-- `data/rosters.json`：独立待核对名录数据源，含分类覆盖和冲突；不与详细样板自动合并。
+- `data/atlas.json`：人物资料的数据源，公开学术事实及来源、冲突、缺项。
+- `data/rosters.json`：独立待核对名录数据源，含分类覆盖和冲突；不与人物档案自动合并。
 - `scripts/build_rosters.py`：生成独立名录快照与Excel/CSV，标识消歧候选而非合并人物。
 - `site/`：静态 UI；个人主页和师承关系为独立路由；手机布局；可组合筛选；CSV、SVG 和 Excel 下载。
 - `scripts/build.py`：校验后生成网站数据快照与院系 Excel。
-- `schema/atlas.schema.json`：核心结构定义；构建另做引用、证据和循环关系检查。
+- `schema/atlas.schema.json`：核心结构定义；构建另做学校归属、引用、证据和循环关系检查。
+- `docs/multischool-data-contract.md`：多校数据接入、校区可选、学校范围与导出约定。
 - `tests/`：筛选语义、安全转义、源数据和工作簿校验。
 - `docs/`：数据政策与架构说明。
 

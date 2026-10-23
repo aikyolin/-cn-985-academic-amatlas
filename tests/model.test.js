@@ -1,8 +1,9 @@
+import {hitAtlas,hitRosters} from './school-scope.js';
 import {educationStageLabel} from '../site/model.js';
 import {collaboratorEvent} from '../site/model.js';
 import {rosterIdentityMatched,rosterStatusLabel} from '../site/rosters.js';
 import {test} from 'node:test';import assert from 'node:assert/strict';import {matches,degreeType,stages,mentorEvent,navigableProfileUrl,safeUrl,escapeHtml} from '../site/model.js';
-import fs from 'node:fs';const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));const list=f=>db.people.filter(p=>matches(p,f));
+import fs from 'node:fs';const db=hitAtlas(JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url))));const list=f=>db.people.filter(p=>matches(p,f));
 test('two hundred fifty seven detailed profiles keep pending identity separate',()=>{assert.equal(db.people.length,257);assert.equal(list({campus:'harbin'}).length,159);assert.equal(list({campus:'weihai'}).length,62);assert.equal(list({campus:'shenzhen'}).length,36)});
 test('bachelor 985 and geography combine',()=>{assert(list({ug:'no',doctor:'hmt'}).some(p=>p.name==='堵宏伟'));assert(list({ug:'yes',doctor:'overseas',continent:'north_america'}).some(p=>p.name==='高庆彬'))});
 test('joint cultivation not PhD granting institution',()=>{assert.equal(degreeType('联合培养（非单独学位）'),'other');assert(!list({doctor:'overseas'}).some(p=>p.name==='李焕'))});
@@ -40,7 +41,7 @@ test('matched but sparse profiles are not labeled identity-unknown',()=>{for(con
 
 test("Dong Heng undergraduate historical 985 classification has official evidence",()=>{const p=db.people.find(p=>p.name==="董衡");assert.equal(matches(p,{ug:"yes"}),true);assert.equal(stages(p,"master")[0].institution_985,"yes")});
 
-test("roster labels preserve matched sparse identity without promoting profile completeness",()=>{for(const n of ["孙鹏飞","苏雁泳"]){const p=db.pending_people.find(p=>p.name===n);const e={id:p.roster_entry_id};assert.equal(rosterIdentityMatched(db,e),true);assert.equal(rosterStatusLabel(db,e),"身份已匹配，资料待完善")}const h=db.pending_people.find(p=>p.name==="Hamdi Barkaoui");assert.equal(rosterIdentityMatched(db,{id:h.roster_entry_id}),false)});
+test("roster labels preserve matched sparse identity without promoting profile completeness",()=>{for(const n of ["孙鹏飞","苏雁泳"]){const p=db.pending_people.find(p=>p.name===n);const e={id:p.roster_entry_id,school_id:p.school_id};assert.equal(rosterIdentityMatched(db,e),true);assert.equal(rosterStatusLabel(db,e),"身份已匹配，资料待完善")}const h=db.pending_people.find(p=>p.name==="Hamdi Barkaoui");assert.equal(rosterIdentityMatched(db,{id:h.roster_entry_id}),false)});
 
 test("doctoral award with undisclosed institution stays geography unknown",()=>{const p=db.people.find(p=>p.name==="李高鹏");assert.equal(stages(p,"doctor").length,1);assert.equal(matches(p,{doctor:"unknown"}),true);assert.equal(matches(p,{doctor:"mainland"}),false);assert.equal(matches(p,{doctor:"overseas"}),false);assert.equal(stages(p,"doctor")[0].institution,null)});
 test("Jiang Yicheng guidance binds masters and Liu Yongtan is not claimed active",()=>{const p=db.people.find(p=>p.name==="姜义成");assert.equal(mentorEvent(p,p.mentors[0]).degree,"硕士");assert.equal(p.mentors[0].employment_status,"official_page_currently_listed_retirement_not_disclosed");assert.equal(p.mentors[0].quick_link_eligible,false)});

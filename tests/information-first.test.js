@@ -1,9 +1,10 @@
+import {hitAtlas,hitRosters} from './school-scope.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {stages,matches,educationStageLabel,mentorEvent,escapeHtml} from '../site/model.js';
-const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));
-const ro=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
+const db=hitAtlas(JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url))));
+const ro=hitRosters(JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url))));
 const batch=db.people.filter(p=>p.data_batch_id==='faculty-batch-harbin-eie-fourth-001');
 const person=name=>batch.find(p=>p.name===name);
 test('information first batch has ten detailed profiles and exact reviewed collection counts',()=>{assert.equal(batch.length,10);assert.deepEqual(['education','appointments','mentors','publications','sources'].map(k=>batch.reduce((n,p)=>n+p[k].length,0)),[38,43,0,25,51]);assert.deepEqual(['bachelor','master','doctor'].map(t=>batch.reduce((n,p)=>n+stages(p,t).length,0)),[5,6,8]);});

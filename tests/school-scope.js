@@ -1,0 +1,3 @@
+// Historical HIT views only. No implicit school inference or record mutation.
+export function hitAtlas(atlas){const out={...atlas};for(const key of ['campuses','org_units','people','pending_people','profile_batches','exports'])if(Array.isArray(atlas[key]))out[key]=atlas[key].filter(row=>row.school_id==='hit');if(atlas.institutions)out.institutions=atlas.institutions.filter(s=>s.id==='hit');return out}
+export function hitRosters(rosters){const out={...rosters};for(const [key,rows] of Object.entries(rosters))if(Array.isArray(rows)&&rows.length&&typeof rows[0]==='object'&&rows[0]!==null)out[key]=rows.filter(row=>row.school_id==='hit');return out}

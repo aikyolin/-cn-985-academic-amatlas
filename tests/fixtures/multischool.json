@@ -1,0 +1,41 @@
+{
+  "fixture_notice": "SYNTHETIC TEST DATA ONLY. All people and units here are fictional. Never copy to public data/ or site/.",
+  "schema_version": "0.1",
+  "updated_at": "2026-10-23",
+  "build_id": "synthetic-test-build",
+  "institutions": [
+    {"id":"hit","official_name":"测试甲校（虚构）","official_url":"https://a.example.test/"},
+    {"id":"pku","official_name":"测试乙校（虚构）","official_url":"https://b.example.test/"}
+  ],
+  "campuses": [{"id":"harbin","school_id":"hit","name":"甲校测试校区（虚构）"}],
+  "org_units": [
+    {"id":"hit-test-faculty","school_id":"hit","name":"测试学部（虚构）","type":"学部","parent_id":"hit","campus_ids":["harbin"],"source_url":"https://a.example.test/faculty"},
+    {"id":"hit-test-computing","school_id":"hit","name":"同名测试学院（虚构）","type":"学院","parent_id":"hit-test-faculty","campus_ids":["harbin"],"source_url":"https://a.example.test/college"},
+    {"id":"pku-test-computing","school_id":"pku","name":"同名测试学院（虚构）","type":"学院","parent_id":"pku","campus_ids":[],"source_url":"https://b.example.test/college"},
+    {"id":"pku-test-department","school_id":"pku","name":"乙校测试系（虚构）","type":"系","parent_id":"pku-test-computing","campus_ids":[],"source_url":"https://b.example.test/department"}
+  ],
+  "people": [
+    {"person_id":"hit-synthetic-person","school_id":"hit","name":"甲测试人物（虚构）","department_id":"hit-test-computing","department":"同名测试学院（虚构）","campus_ids":["harbin"],"official_url":"https://a.example.test/person","education":[],"appointments":[],"mentors":[],"publications":[],"sources":[],"unknowns":[]},
+    {"person_id":"pku-synthetic-person","school_id":"pku","name":"乙测试人物（虚构）","department_id":"pku-test-department","department":"乙校测试系（虚构）","campus_ids":[],"official_url":"https://b.example.test/person","education":[],"appointments":[],"mentors":[],"publications":[],"sources":[],"unknowns":[]}
+  ],
+  "pending_people": [],
+  "exports": [
+    {"department_id":"hit-test-computing","school_id":"hit","school_name":"测试甲校（虚构）","path":"exports/hit-test-computing.xlsx","people_count":1},
+    {"department_id":"pku-test-department","school_id":"pku","school_name":"测试乙校（虚构）","path":"exports/pku-test-department.xlsx","people_count":1}
+  ],
+  "rosters": {
+    "build_id":"synthetic-test-build",
+    "scope":"Synthetic test records only",
+    "entries":[
+      {"id":"hit-test-roster","school_id":"hit","name":"甲名录测试（虚构）","campus_id":"hit-harbin","organization_id":"hit-test-computing","category":"测试类别","listed_role":null,"official_profile_url":null,"roster_source_url":"https://a.example.test/roster","accessed_on":"2026-10-23","notes":[],"verification_status":"test_only","profile_identity_verified":false},
+      {"id":"pku-test-roster","school_id":"pku","name":"乙名录测试（虚构）","campus_id":null,"organization_id":"pku-test-department","category":"测试类别","listed_role":null,"official_profile_url":null,"roster_source_url":"https://b.example.test/roster","accessed_on":"2026-10-23","notes":[],"verification_status":"test_only","profile_identity_verified":false}
+    ],
+    "coverage":[
+      {"school_id":"hit","organization_id":"hit-test-computing","category":"测试类别","visible_name_count":1,"url":"https://a.example.test/roster","accessed_on":"2026-10-23"},
+      {"school_id":"pku","organization_id":"pku-test-department","category":"测试类别","visible_name_count":1,"url":"https://b.example.test/roster","accessed_on":"2026-10-23"}
+    ],
+    "summary":[{"school_id":"hit","organization_id":"hit-test-computing","visible_roster_entries":1},{"school_id":"pku","organization_id":"pku-test-department","visible_roster_entries":1}],
+    "totals":{"record_count":2,"raw_observation_count":2,"entries_without_profile_link":2,"entries_with_profile_link":0,"not_unique_people_count":true,"current_employment_count_verified":false},
+    "limitations":[],"conflicts":[],"dedup_candidates":[]
+  }
+}

@@ -1,3 +1,4 @@
+from school_scope import hit_atlas, hit_rosters
 import copy,hashlib,json,pathlib,sys,unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
@@ -6,7 +7,7 @@ from build_rosters import validate_rosters
 class InformationFinalTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.data=json.loads((ROOT/'data/atlas.json').read_text());cls.rosters=json.loads((ROOT/'data/rosters.json').read_text());cls.batch=[p for p in cls.data['people'] if p.get('data_batch_id')=='faculty-batch-harbin-eie-fourth-003'];cls.pending=[p for p in cls.data['pending_people'] if p.get('data_batch_id')=='faculty-batch-harbin-eie-fourth-003']
+  cls.data=hit_atlas(json.loads((ROOT/'data/atlas.json').read_text()));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.batch=[p for p in cls.data['people'] if p.get('data_batch_id')=='faculty-batch-harbin-eie-fourth-003'];cls.pending=[p for p in cls.data['pending_people'] if p.get('data_batch_id')=='faculty-batch-harbin-eie-fourth-003']
  def test_final_counts_and_pending_separation(self):
   self.assertTrue(validate(self.data));self.assertEqual([len(self.data['people']),len(self.data['pending_people'])],[257,42]);self.assertEqual([sum(len(p.get(k,[])) for p in self.data['people']) for k in ['education','appointments','mentors','committee_members','publications']],[789,953,109,9,545]);self.assertEqual(len(self.batch),12);self.assertEqual(len(self.pending),1);p=self.pending[0];self.assertEqual(p['name'],'李冬冬');self.assertEqual([len(p[k])for k in ['education','appointments','mentors','publications']],[0,0,0,0]);self.assertEqual(len(p['sources']),3)
  def test_frozen_coverage_hash_and_exact_strata(self):
@@ -47,4 +48,4 @@ class InformationFinalTests(unittest.TestCase):
      for x in v:walk(x)
    walk(p)
  def test_progress_records_full_first_pass_without_complete_biography_claim(self):
-  pg=json.loads((ROOT/'progress/harbin-information-progress.json').read_text());self.assertTrue(pg['first_pass_complete']);self.assertFalse(pg['coverage_complete']);self.assertFalse(pg['all_fields_complete']);self.assertEqual([pg['detailed_profiles'],pg['pending_profiles']],[32,1]);self.assertEqual(pg['detailed_source_entries'],152);self.assertEqual(pg['pending_source_entries'],3);self.assertEqual(pg['batches'][-1]['normalized_package_sha256'],'9f926f3a940585ad7d32d876e8ece2a4656057eb54d540f49ad01d51ba4fd640');q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(q['base_commit'],'d7719f6916c2e3ac06906dcc403181f3bdc374a8');task=next(t for t in q['tasks']if t['task_id']=='hit-seie:profiles');self.assertEqual(task['next_cursor'],'seie:first-pass-complete:uncertainty-review');self.assertEqual(task['status'],'partial');self.assertFalse(task['scope']['university_complete'])
+  pg=json.loads((ROOT/'progress/harbin-information-progress.json').read_text());self.assertTrue(pg['first_pass_complete']);self.assertFalse(pg['coverage_complete']);self.assertFalse(pg['all_fields_complete']);self.assertEqual([pg['detailed_profiles'],pg['pending_profiles']],[32,1]);self.assertEqual(pg['detailed_source_entries'],152);self.assertEqual(pg['pending_source_entries'],3);self.assertEqual(pg['batches'][-1]['normalized_package_sha256'],'9f926f3a940585ad7d32d876e8ece2a4656057eb54d540f49ad01d51ba4fd640');q=json.loads((ROOT/'progress/work-queue.json').read_text());self.assertEqual(next(t for t in q['tasks'] if t['task_id']=='hit-weihai-information:profiles')['last_verified_commit'],'d7719f6916c2e3ac06906dcc403181f3bdc374a8');task=next(t for t in q['tasks']if t['task_id']=='hit-seie:profiles');self.assertEqual(task['next_cursor'],'seie:first-pass-complete:uncertainty-review');self.assertEqual(task['status'],'partial');self.assertFalse(task['scope']['university_complete'])
