@@ -134,7 +134,7 @@
     },
     "pending_people": {
       "type": "array",
-      "description": "仅名录身份待核记录，禁止计入详细档案/学历筛选/确证成果",
+      "description": "身份或正文资料待完善，不计详细档案、学历筛选或确证成果统计",
       "items": {
         "type": "object",
         "required": [
@@ -145,7 +145,10 @@
         ],
         "properties": {
           "profile_status": {
-            "const": "roster_identity_pending"
+            "enum": [
+              "roster_identity_pending",
+              "profile_details_pending"
+            ]
           },
           "education": {
             "type": "array",

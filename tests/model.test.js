@@ -1,13 +1,14 @@
+import {rosterIdentityMatched,rosterStatusLabel} from '../site/rosters.js';
 import {test} from 'node:test';import assert from 'node:assert/strict';import {matches,degreeType,stages,mentorEvent,navigableProfileUrl,safeUrl,escapeHtml} from '../site/model.js';
 import fs from 'node:fs';const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));const list=f=>db.people.filter(p=>matches(p,f));
-test('fifty detailed profiles keep pending identity separate',()=>{assert.equal(db.people.length,50);assert.equal(list({campus:'harbin'}).length,12);assert.equal(list({campus:'weihai'}).length,2);assert.equal(list({campus:'shenzhen'}).length,36)});
+test('seventy-seven detailed profiles keep pending identity separate',()=>{assert.equal(db.people.length,77);assert.equal(list({campus:'harbin'}).length,39);assert.equal(list({campus:'weihai'}).length,2);assert.equal(list({campus:'shenzhen'}).length,36)});
 test('bachelor 985 and geography combine',()=>{assert(list({ug:'no',doctor:'hmt'}).some(p=>p.name==='堵宏伟'));assert(list({ug:'yes',doctor:'overseas',continent:'north_america'}).some(p=>p.name==='高庆彬'))});
 test('joint cultivation not PhD granting institution',()=>{assert.equal(degreeType('联合培养（非单独学位）'),'other');assert(!list({doctor:'overseas'}).some(p=>p.name==='李焕'))});
 test('missing stage is not unknown or non985',()=>{const p={name:'测试',campus_ids:[],education:[]};assert.equal(matches(p,{ug:'no'}),false);assert.equal(matches(p,{ug:'unknown'}),false);assert.equal(matches(p,{ug:'not_recorded'}),true)});
 test('safe content links',()=>{assert.equal(safeUrl('javascript:alert(1)'),'');assert.equal(escapeHtml('<script>'),'&lt;script&gt;')});
 test('conflicted mentors not active',()=>{const p=db.people.find(p=>p.name==='高庆彬');assert(p.mentors.some(m=>m.employment_status==='unknown_conflicting'))});
 test('hierarchical parent unit includes descendant faculty',()=>{const p=db.people.find(p=>p.name==='堵宏伟');assert.equal(matches(p,{org:'hit-shenzhen-information'},db.org_units),true)});
-test('committee is not a mentorship edge',()=>{assert.equal(db.people.reduce((n,p)=>n+p.mentors.length,0),36);assert.equal(db.people.reduce((n,p)=>n+(p.committee_members||[]).length,0),4)});
+test('committee is not a mentorship edge',()=>{assert.equal(db.people.reduce((n,p)=>n+p.mentors.length,0),49);assert.equal(db.people.reduce((n,p)=>n+(p.committee_members||[]).length,0),4)});
 
 test('unawarded doctoral study and visits never count as foreign PhD awards',()=>{const p=db.people.find(p=>p.name==='马星');assert.equal(matches(p,{doctor:'overseas',continent:'north_america'}),false);assert.equal(matches(p,{doctor:'overseas',continent:'asia'}),true);assert.equal(stages(p,'doctor').length,1);assert.equal(stages(db.people.find(p=>p.name==='肖君军'),'doctor')[0].region,'hmt')});
 test('joint masters-doctorate counts only evidenced doctoral award',()=>{const p=db.people.find(p=>p.name==='曲歌扬');assert.equal(stages(p,'doctor').length,1);assert.equal(stages(p,'master').length,0);assert.equal(stages(p,'doctor')[0].degree_awarded_date,'2022-06');assert.equal(stages(p,'doctor')[0].end,'2022-07')});
@@ -27,3 +28,14 @@ test('combined geography and continent must match the same awarded degree',()=>{
 
 test('Harbin unclear masters and visits do not become degrees',()=>{for(const name of ['沙学军','孟维晓','赵洪林'])assert.equal(stages(db.people.find(p=>p.name===name),'master').length,0);const g=db.people.find(p=>p.name==='高玉龙');assert.equal(stages(g,'doctor').length,0);assert.equal(matches(g,{doctor:'overseas'}),false);const m=db.people.find(p=>p.name==='马永奎');assert.equal(stages(m,'bachelor').length,0);assert.equal(stages(m,'master').length,0)});
 test('Harbin pending mentor and papers stay outside confirmed collections',()=>{const p=db.people.find(p=>p.name==='李卓明');assert(p.pending_mentors.length);assert.equal(p.mentors.length,0);for(const n of ['赵洪林','马永奎']){const q=db.people.find(p=>p.name===n);assert(q.pending_publications.length);assert(!q.publications.some(a=>q.pending_publications.some(c=>c.title===a.title)))}});
+
+test('explicit mentor event references prevent visit and second-doctorate misbinding',()=>{for(const [name,institution] of [['史军','特拉华大学'],['房宵杰','滑铁卢大学'],['叶亮','奥卢大学']]){const p=db.people.find(p=>p.name===name);for(const m of p.mentors)assert.equal(mentorEvent(p,m).institution,institution)}const y=db.people.find(p=>p.name==='叶亮');assert(y.mentors.every(m=>mentorEvent(y,m).degree==='科学博士（D.Sc）'));const j=db.people.find(p=>p.name==='贾敏');assert.equal(mentorEvent(j,j.mentors[1]).event_id,'hit-jiamin-education-02');assert.equal(stages(j,'doctor').length,0)});
+test('invalid explicit mentor reference never falls back to fuzzy degree matching',()=>{assert.deepEqual(mentorEvent({education:[{event_id:'real',degree:'博士'}]},{education_event_id:'missing',education_stage:'博士'}),{})});
+
+test('joint doctorates remain unawarded while guidance binds to each source stage',()=>{const p=db.people.find(p=>p.name==='王欣玉');assert.equal(stages(p,'doctor').length,0);for(const m of p.mentors)assert.equal(mentorEvent(p,m).event_id,m.education_event_id);const c=db.people.find(p=>p.name==='陈舒怡');assert(c.mentors.every(m=>mentorEvent(c,m).event_id===m.education_event_id))});
+
+test('matched but sparse profiles are not labeled identity-unknown',()=>{for(const name of ['孙鹏飞','苏雁泳']){const p=db.pending_people.find(p=>p.name===name);assert.equal(p.profile_status,'profile_details_pending');assert(p.pending_reason_label.includes('已匹配'));assert(!db.people.some(q=>q.person_id===p.person_id))}});
+
+test("Dong Heng undergraduate historical 985 classification has official evidence",()=>{const p=db.people.find(p=>p.name==="董衡");assert.equal(matches(p,{ug:"yes"}),true);assert.equal(stages(p,"master")[0].institution_985,"yes")});
+
+test("roster labels preserve matched sparse identity without promoting profile completeness",()=>{for(const n of ["孙鹏飞","苏雁泳"]){const p=db.pending_people.find(p=>p.name===n);const e={id:p.roster_entry_id};assert.equal(rosterIdentityMatched(db,e),true);assert.equal(rosterStatusLabel(db,e),"身份已匹配，资料待完善")}const h=db.pending_people.find(p=>p.name==="Hamdi Barkaoui");assert.equal(rosterIdentityMatched(db,{id:h.roster_entry_id}),false)});

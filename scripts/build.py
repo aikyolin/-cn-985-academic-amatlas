@@ -7,7 +7,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 def valid_url(v):return isinstance(v,str) and urlparse(v).scheme in ('http','https') and bool(urlparse(v).netloc)
 def validate(d):
  pending=d.get('pending_people',[])
- assert all(p.get('profile_status')=='roster_identity_pending' and not p.get('education') and not p.get('mentors') and not p.get('publications') for p in pending),'Pending identities must stay outside confirmed collections'
+ assert all(p.get('profile_status') in ('roster_identity_pending','profile_details_pending') and not p.get('education') and not p.get('mentors') and not p.get('publications') for p in pending),'Pending identities must stay outside confirmed collections'
  assert not ({p['person_id'] for p in pending}&{p['person_id'] for p in d['people']}),'Pending identity duplicated as detailed profile'
  ids=[u['id'] for u in d['org_units']]; assert len(ids)==len(set(ids)), 'Duplicate organization ID'
  people=d['people']; assert len({p['person_id'] for p in people})==len(people),'Duplicate person ID'
@@ -22,7 +22,10 @@ def validate(d):
    assert e['region'] in ('mainland','hmt','overseas','unknown')
    assert 'event_kind' in e and e.get('degree_awarded') in (True,False,None),'Missing event/award semantics'
    assert e.get('degree_awarded') is not True or e['event_kind']=='degree','Only degree events may confirm an award'
+  event_ids=[e['event_id'] for e in p['education'] if e.get('event_id')]
+  assert len(event_ids)==len(set(event_ids)),'Duplicate education event ID'
   for m in p['mentors']:
+   assert not m.get('education_event_id') or m['education_event_id'] in event_ids,'Mentor references unknown education event'
    if m['employment_status']=='active_officially_listed':
     assert valid_url(m.get('official_url')) and valid_url(m.get('profile_source_url')),'Active mentor needs homepage evidence'
  for u in d['org_units']:
