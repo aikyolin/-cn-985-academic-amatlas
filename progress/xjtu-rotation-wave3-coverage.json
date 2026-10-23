@@ -1,0 +1,171 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29",
+  "school_id": "xjtu",
+  "school_name": "西安交通大学",
+  "batch_id": "faculty-batch-xjtu-rotation-001",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "数学系介绍教授分类原序易媛、李东升、张正策。介绍称全系19，独立教师名录列25条，范围/维护差异未核，不宣称全系覆盖。",
+  "selection_basis": "数学系介绍教授分类原序易媛、李东升、张正策。介绍称全系19，独立教师名录列25条，范围/维护差异未核，不宣称全系覆盖。",
+  "source_urls": [
+    "https://math.xjtu.edu.cn/jgsz/xszx/sxx.htm"
+  ],
+  "organization_ids": [
+    "xjtu-math-department"
+  ],
+  "selected_roster_observations": 3,
+  "counts": {
+    "selected_records": 3,
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 22,
+      "appointments": 9,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 6,
+      "sources": 16,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "effective_professional_collections": {
+      "education": 22,
+      "appointments": 9,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 6,
+      "sources": 16,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 0,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 2,
+      "degree_awarded_false": 17,
+      "degree_awarded_null": 3,
+      "confirmed_degree_events": 2
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 2,
+      "degree_awarded_false": 17,
+      "degree_awarded_null": 3,
+      "confirmed_degree_events": 2
+    }
+  },
+  "records": [
+    {
+      "person_id": "xjtu-yiyuan",
+      "name": "易媛",
+      "department_id": "xjtu-math-department",
+      "roster_entry_id": "roster-xjtu-math-prof-yiyuan",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://gr.xjtu.edu.cn/yuanyi/",
+      "unknowns": [
+        "本人导师未见直接明确来源，不从合作者、访学目的地或所指导学生反推。",
+        "精选论文2篇非全集，公开原列表链接，未逐篇核DOI。",
+        "本硕及博士学校/年份未知，不与其他学校或不同专业同名易媛合并。"
+      ]
+    },
+    {
+      "person_id": "xjtu-lidongsheng",
+      "name": "李东升",
+      "department_id": "xjtu-math-department",
+      "roster_entry_id": "roster-xjtu-math-prof-lidongsheng",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://gr.xjtu.edu.cn/lidsh/",
+      "unknowns": [
+        "本人导师未见直接明确来源，不从合作者、访学目的地或所指导学生反推。",
+        "精选论文2篇非全集，公开原列表链接，未逐篇核DOI。",
+        "本科硕士履历未核；国际交流不等海外学位。",
+        "Albeta及Georgia机构名称按原文保留，不在无直接补证时强配标准机构ID。"
+      ]
+    },
+    {
+      "person_id": "xjtu-zhangzhengce",
+      "name": "张正策",
+      "department_id": "xjtu-math-department",
+      "roster_entry_id": "roster-xjtu-math-prof-zhangzhengce",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://gr.xjtu.edu.cn/zhangzc/",
+      "unknowns": [
+        "本人导师未见直接明确来源，不从合作者、访学目的地或所指导学生反推。",
+        "精选论文2篇非全集，公开原列表链接，未逐篇核DOI。"
+      ]
+    }
+  ],
+  "independent_source_review": {
+    "status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T18:22:25.772553+00:00",
+    "reviewed_data_sha256": "e079624c7347a31a22431d616e9d596501851404b83a8628c5e0d21a2849a737",
+    "checks": {
+      "source_reference_and_mentor_event_closure": "passed",
+      "counts_recomputed": true,
+      "source_package_modified": false
+    },
+    "integration_limits": [
+      "访问均非授位，不能进入境外硕博筛选；单月起止只表示该月有交流，不换算整月停留，2015年10月三站不推顺序。",
+      "未知博士授位机构不可按现任学校补齐；博士导师、同事、合作者身份不反推本人导师。",
+      "官网列示行政职务缺日期不作独立人事确认，张2003留校与2004讲师不同事件不强合并。",
+      "6篇只是官方精选书目，不是全部论文，也未逐篇核出版社链接；Albeta/Georgia机构原称保留不强配。",
+      "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+      "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+    ],
+    "blockers": [],
+    "review_scope": "来源批次的既有独立核验；本次本地接入仅复核数据、来源闭合与导出，不声称重新访问网页。"
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-xjtu-rotation-001.json",
+      "sha256": "e079624c7347a31a22431d616e9d596501851404b83a8628c5e0d21a2849a737",
+      "independent_review_file": "faculty-batch-xjtu-rotation-001-independent-review.json",
+      "independent_review_sha256": "eb8ae36a4e2d8d2e82eddd83cfdbdbb2412ac74d4c81c377f254d40696515213",
+      "scope_file": "faculty-batch-xjtu-rotation-001-scope.json",
+      "scope_sha256": "83a087530bc9b055af1c8ee0a9a1a723a8fdac2a646f89c45b78b211636af38f",
+      "qa_file": "faculty-batch-xjtu-rotation-001-qa.json",
+      "qa_sha256": "0b136527c0b26dbc9ca37387ef4b6a286557ebf766a6f2213df179f27eb196d5"
+    }
+  ],
+  "limitations": [
+    "数学系介绍教授分类原序易媛、李东升、张正策。介绍称全系19，独立教师名录列25条，范围/维护差异未核，不宣称全系覆盖。",
+    "个人主页或导师现职仅官方当前列示，不推断全职、人事在岗或退休。",
+    "精选论文非全集，无逐篇链接时明确标记；不公开原始网页缓存。",
+    "访问均非授位，不能进入境外硕博筛选；单月起止只表示该月有交流，不换算整月停留，2015年10月三站不推顺序。",
+    "未知博士授位机构不可按现任学校补齐；博士导师、同事、合作者身份不反推本人导师。",
+    "官网列示行政职务缺日期不作独立人事确认，张2003留校与2004讲师不同事件不强合并。",
+    "6篇只是官方精选书目，不是全部论文，也未逐篇核出版社链接；Albeta/Georgia机构原称保留不强配。",
+    "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+    "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+  ],
+  "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。"
+}

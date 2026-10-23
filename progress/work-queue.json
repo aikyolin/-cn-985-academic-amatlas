@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-10-23",
-  "base_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd",
+  "base_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
     "registry_complete": false,
-    "known_organization_nodes": 199,
+    "known_organization_nodes": 211,
     "write_model": "single_controller_expected_sha",
     "active_institutions": [
       "hit",
@@ -6286,6 +6286,261 @@
       "next_cursor": "rotation_selected_records_reviewed",
       "attempted_at": "2026-10-23",
       "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "cqu:cqu-mathematics-statistics:rotation-wave3",
+      "institution_id": "cqu",
+      "organization_id": "cqu-mathematics-statistics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "数学与统计学院教授列表原序前3：龚劬、何传江、黄小军。学院名录仅官方检索索引可见；学校教师门户数学与统计学院前两页正文交叉核验，按教授职称筛选的首3顺序相同，姓名、单位、职称及个人页链接均可核。非全院或全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://faculty.cqu.edu.cn/xyjslb.jsp?id=1105&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1002",
+        "https://faculty.cqu.edu.cn/xyjslb.jsp?PAGENUM=2&id=1105&lang=zh_CN&st=0&totalpage=11&urltype=tsites.CollegeTeacherList&wbtreeid=1002",
+        "https://sci.cqu.edu.cn/xwz/szlb.jsp?urltype=tree.TreeTempUrl&wbtreeid=1329"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/cqu-rotation-wave3-coverage.json",
+        "progress/multischool-rotation-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。",
+      "next_cursor": "rotation_wave3_selected_three_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29"
+    },
+    {
+      "task_id": "lzu:lzu-basic-mathematics:rotation-wave3",
+      "institution_id": "lzu",
+      "organization_id": "lzu-basic-mathematics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "数学与统计学院基础数学研究所官方分类原序常清泉、陈立志、程锡友。与首批法学院汪振江、刘光华、拜荣静不重复，仅3人部分职业资料。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://mathteacher.lzu.edu.cn/system/TeacherProfileqt/jsbm.jsp"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/lzu-rotation-wave3-coverage.json",
+        "progress/multischool-rotation-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。",
+      "next_cursor": "rotation_wave3_selected_three_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29"
+    },
+    {
+      "task_id": "nwpu:nwpu-mathematical-sciences:rotation-wave3",
+      "institution_id": "nwpu",
+      "organization_id": "nwpu-mathematical-sciences",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "数学科学系教授分类官方原序白学利、郭千桥、李斌龙；只取3人，非全系覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.nwpu.edu.cn/szdw/jsdw2/axhf/sxkxx.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/nwpu-rotation-wave3-coverage.json",
+        "progress/multischool-rotation-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。",
+      "next_cursor": "rotation_wave3_selected_three_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29"
+    },
+    {
+      "task_id": "nwsuaf:nwsuaf-agronomy-agronomy-department:rotation-wave3",
+      "institution_id": "nwsuaf",
+      "organization_id": "nwsuaf-agronomy-agronomy-department",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "农学院农学系教授、研究员官方分类原序冯佰利、冯永忠、高金锋。与首批信息工程学院李书琴、耿楠、宁纪锋不重复，仅3人部分职业资料。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://nxy.nwsuaf.edu.cn/szdw/nxx/jsyjyA/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/nwsuaf-rotation-wave3-coverage.json",
+        "progress/multischool-rotation-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。",
+      "next_cursor": "rotation_wave3_selected_three_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29"
+    },
+    {
+      "task_id": "scu:scu-chemical-engineering:rotation-wave3",
+      "institution_id": "scu",
+      "organization_id": "scu-chemical-engineering",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "化学工程学院教授-研究员列表页面当前顺序前3位：唐建华、梁葛萌、褚良银；列表显示顺序而非总目录拼音顺序。只收公开职业事实，2部分履历、1稀疏待核。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://ce.scu.edu.cn/szdw/jxkyg/js_yjy.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/scu-rotation-wave3-coverage.json",
+        "progress/multischool-rotation-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。",
+      "next_cursor": "rotation_wave3_selected_three_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29"
+    },
+    {
+      "task_id": "scut:scut-math:rotation-wave3",
+      "institution_id": "scut",
+      "organization_id": "scut-math",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "数学学院教授分类官方名录原序首3：陈博聪、陈培、陈映珊。非学院全体教师或学校完整覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www2.scut.edu.cn/math/",
+        "https://www2.scut.edu.cn/math/10365/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/scut-rotation-wave3-coverage.json",
+        "progress/multischool-rotation-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。",
+      "next_cursor": "rotation_wave3_selected_three_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29"
+    },
+    {
+      "task_id": "sysu:sysu-math:rotation-wave3",
+      "institution_id": "sysu",
+      "organization_id": "sysu-math",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "副教授分类公开索引原序古林燕、陈炳仪、成诚，非全院；2份部分职业资料、古林燕仅索引待核；不称3份完整教育详档。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.sysu.edu.cn/associate-professors"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/sysu-rotation-wave3-coverage.json",
+        "progress/multischool-rotation-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。",
+      "next_cursor": "rotation_wave3_selected_three_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29"
+    },
+    {
+      "task_id": "uestc:uestc-applied-math-center:rotation-wave3",
+      "institution_id": "uestc",
+      "organization_id": "uestc-applied-math-center",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "应用数学中心教职人员名单当次原序前3：顾亦奇、Kahn Jonas、孔婀芳；三人另有数学科学学院任职直接来源。中心与学院关系未核，不强造父子关系。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cam.uestc.edu.cn/szdw/jzry.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/uestc-rotation-wave3-coverage.json",
+        "progress/multischool-rotation-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。",
+      "next_cursor": "rotation_wave3_selected_three_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29"
+    },
+    {
+      "task_id": "xjtu:xjtu-math-department:rotation-wave3",
+      "institution_id": "xjtu",
+      "organization_id": "xjtu-math-department",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "数学系介绍教授分类原序易媛、李东升、张正策。介绍称全系19，独立教师名录列25条，范围/维护差异未核，不宣称全系覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.xjtu.edu.cn/jgsz/xszx/sxx.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/xjtu-rotation-wave3-coverage.json",
+        "progress/multischool-rotation-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。",
+      "next_cursor": "rotation_wave3_selected_three_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29"
     }
   ]
 }

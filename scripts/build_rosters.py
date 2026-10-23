@@ -9,6 +9,7 @@ import json
 from urllib.parse import urlparse
 
 from build import ROOT, clean, sheet, valid_url, school_index
+from deterministic_xlsx import save_deterministic_xlsx
 
 
 ENTRY_FIELDS = (
@@ -379,7 +380,7 @@ def build_rosters(atlas, generate_excel=True):
         workbook.remove(workbook.active)
         for name, rows in tables.items():
             sheet(workbook, name, rows)
-        workbook.save(output / '待核对名录.xlsx')
+        save_deterministic_xlsx(workbook, output / '待核对名录.xlsx')
     # The canonical dataset and XLSX matrices retain every raw observation.
     # Browser pages use the integrated records; avoid downloading the duplicate
     # source payloads on every page load and disclose where the evidence remains.

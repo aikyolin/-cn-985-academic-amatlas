@@ -1,0 +1,174 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29",
+  "school_id": "scut",
+  "school_name": "华南理工大学",
+  "batch_id": "faculty-batch-scut-rotation-001",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "数学学院教授分类官方名录原序首3：陈博聪、陈培、陈映珊。非学院全体教师或学校完整覆盖。",
+  "selection_basis": "数学学院教授分类官方名录原序首3：陈博聪、陈培、陈映珊。非学院全体教师或学校完整覆盖。",
+  "source_urls": [
+    "https://www2.scut.edu.cn/math/",
+    "https://www2.scut.edu.cn/math/10365/list.htm"
+  ],
+  "organization_ids": [
+    "scut-math"
+  ],
+  "selected_roster_observations": 3,
+  "counts": {
+    "selected_records": 3,
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 11,
+      "appointments": 9,
+      "mentors": 5,
+      "committee_members": 0,
+      "publications": 6,
+      "sources": 11,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "effective_professional_collections": {
+      "education": 11,
+      "appointments": 9,
+      "mentors": 5,
+      "committee_members": 0,
+      "publications": 6,
+      "sources": 11,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 0,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 4,
+      "degree_awarded_false": 4,
+      "degree_awarded_null": 3,
+      "confirmed_degree_events": 4
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 4,
+      "degree_awarded_false": 4,
+      "degree_awarded_null": 3,
+      "confirmed_degree_events": 4
+    }
+  },
+  "records": [
+    {
+      "person_id": "scut-chenbocong",
+      "name": "陈博聪",
+      "department_id": "scut-math",
+      "roster_entry_id": "roster-scut-math-chenbocong",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://www2.scut.edu.cn/math/2017/1227/c14582a462807/page.htm",
+      "unknowns": [
+        "本科及独立硕士事件未披露；不拆分2007至2013整体学习区间或猜博士起点。",
+        "樊恽当前在职/退休状态未知；San Ling现任机构及可用官方个人主页本批未确证。",
+        "教授职称晋升时间未知；书目为精选两条而非全集。"
+      ]
+    },
+    {
+      "person_id": "scut-chenpei",
+      "name": "陈培",
+      "department_id": "scut-math",
+      "roster_entry_id": "roster-scut-math-chenpei",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://www2.scut.edu.cn/math/2018/0316/c14582a440120/page.htm",
+      "unknowns": [
+        "各学位具体专业及导师未在已查简历明确，不从计算生物学研究领域或论文合作者推学历专业和导师。",
+        "UCLA联合培养时间与本校博士毕业时间有交叠差异，保留原文区间但不推UCLA授位。",
+        "官网简历所写两个历史院系名称与常见名称有差异，仅保留原文辅助字段，不新增组织实体。"
+      ]
+    },
+    {
+      "person_id": "scut-chenyingshan",
+      "name": "陈映珊",
+      "department_id": "scut-math",
+      "roster_entry_id": "roster-scut-math-chenyingshan",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://www2.scut.edu.cn/math/2017/1229/c10143a608054/page.htm",
+      "unknowns": [
+        "3个学历仅官方教育背景学位标签，具体授位状态和授位日期未知。",
+        "2017年以来多职称合并任职，未提供分职称晋升时间；不猜。",
+        "两篇书目未提供DOI和逐篇链接，保留个人页来源并明确未独立出版商验证。"
+      ]
+    }
+  ],
+  "independent_source_review": {
+    "status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T17:58:56.962731+00:00",
+    "reviewed_data_sha256": "528b670df3f36326a51260de8fdd64d1c6a50cfd0f27bf6bb838b6994ea2d0f5",
+    "checks": {
+      "source_reference_and_mentor_event_closure": "passed",
+      "counts_recomputed": true,
+      "source_package_modified": false
+    },
+    "integration_limits": [
+      "3份部分职业档案，非完整教育履历。4条明确授位统一degree，3条标签null，3博后和1联培false；不因导师边升级授位。",
+      "5指导关系为2博士+1硕士+2博后共同指导，日期未知；樊恽仅历史简介导航false，其他官网当前列示不等人事在岗核实。",
+      "陈博聪博士起点未知；陈培本人原文院系名称保留而不创建新组织实体；陈映珊2017起合并讲师/副教授/教授履历不等教授晋升年。",
+      "所有缓存路径及原始HTML只供私有审核，发布时剔除；6精选成果不是全集，逐篇出版社链接未另核。",
+      "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+      "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+    ],
+    "blockers": [],
+    "review_scope": "来源批次的既有独立核验；本次本地接入仅复核数据、来源闭合与导出，不声称重新访问网页。"
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-scut-rotation-001.json",
+      "sha256": "528b670df3f36326a51260de8fdd64d1c6a50cfd0f27bf6bb838b6994ea2d0f5",
+      "independent_review_file": "faculty-batch-scut-rotation-001-independent-review.json",
+      "independent_review_sha256": "98bacce7a4a7a86234d0a9969ee974110bae5f05b76af3ff882910a383981c48",
+      "scope_file": "faculty-batch-scut-rotation-001-scope.json",
+      "scope_sha256": "79670600bcf00cc710561043abb27cec647f9c45084b0887884663d428a35eb2",
+      "qa_file": "faculty-batch-scut-rotation-001-qa.json",
+      "qa_sha256": "79befb9fad8215eea23ac5b4c326bc07b724af5c1e2d500c30d445b45defe0f5"
+    }
+  ],
+  "limitations": [
+    "仅数学学院教授分类名录原序首3，非学院、学校完整覆盖；与首轮计算机学院人员无重复。",
+    "现职或导师简介仅官方页面列示，未披露退休信息不按年龄推断。",
+    "导师关系绑定明确教育/博士后事件；具体指导起止日未知，不用论文合作关系推导师。",
+    "精选论文每人2条，仅书目元数据，不阅读全文，不宣称已核验每篇出版商最终信息。",
+    "未收录联系方式、出生日期、家庭、学生名单等非必要个人信息。所有原网页缓存仅本地复核，禁止发布。",
+    "3份部分职业档案，非完整教育履历。4条明确授位统一degree，3条标签null，3博后和1联培false；不因导师边升级授位。",
+    "5指导关系为2博士+1硕士+2博后共同指导，日期未知；樊恽仅历史简介导航false，其他官网当前列示不等人事在岗核实。",
+    "陈博聪博士起点未知；陈培本人原文院系名称保留而不创建新组织实体；陈映珊2017起合并讲师/副教授/教授履历不等教授晋升年。",
+    "所有缓存路径及原始HTML只供私有审核，发布时剔除；6精选成果不是全集，逐篇出版社链接未另核。",
+    "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+    "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+  ],
+  "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。"
+}

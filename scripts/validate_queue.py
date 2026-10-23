@@ -1,11 +1,21 @@
 """Validate public task checkpoints, dependencies and reviewed completion evidence."""
-import argparse,json,pathlib
+import argparse,json,pathlib,datetime,re
 from jsonschema import Draft202012Validator,FormatChecker
 ROOT=pathlib.Path(__file__).resolve().parents[1]
+FORMATS=FormatChecker()
+@FORMATS.checks('date-time', raises=ValueError)
+def explicit_datetime(value):
+ # jsonschema's optional RFC3339 dependency is not guaranteed to be installed.
+ # Require an actual, timezone-qualified timestamp rather than silently accepting any text.
+ if not isinstance(value,str):return True
+ if not re.fullmatch(r'\d{4}-\d{2}-\d{2}[Tt]\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:[Zz]|[+-](?:[01]\d|2[0-3]):[0-5]\d)',value):return False
+ stamp=datetime.datetime.fromisoformat(value.upper().replace('Z','+00:00'))
+ return stamp.tzinfo is not None
+
 def validate_queue(data,root=ROOT,check_artifacts=False):
  root=pathlib.Path(root)
  schema=json.loads((ROOT/'schema/work-queue.schema.json').read_text())
- Draft202012Validator(schema,format_checker=FormatChecker()).validate(data)
+ Draft202012Validator(schema,format_checker=FORMATS).validate(data)
  atlas=json.loads((root/'data/atlas.json').read_text())
  schools={s['id'] for s in atlas['institutions']}
  organizations={o['id']:o for o in atlas['org_units']}

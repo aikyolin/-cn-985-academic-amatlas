@@ -1,0 +1,174 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29",
+  "school_id": "lzu",
+  "school_name": "兰州大学",
+  "batch_id": "faculty-batch-lzu-rotation-001",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "数学与统计学院基础数学研究所官方分类原序常清泉、陈立志、程锡友。与首批法学院汪振江、刘光华、拜荣静不重复，仅3人部分职业资料。",
+  "selection_basis": "数学与统计学院基础数学研究所官方分类原序常清泉、陈立志、程锡友。与首批法学院汪振江、刘光华、拜荣静不重复，仅3人部分职业资料。",
+  "source_urls": [
+    "https://mathteacher.lzu.edu.cn/system/TeacherProfileqt/jsbm.jsp"
+  ],
+  "organization_ids": [
+    "lzu-basic-mathematics"
+  ],
+  "selected_roster_observations": 3,
+  "counts": {
+    "selected_records": 3,
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 14,
+      "appointments": 7,
+      "mentors": 6,
+      "committee_members": 0,
+      "publications": 6,
+      "sources": 11,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "effective_professional_collections": {
+      "education": 14,
+      "appointments": 7,
+      "mentors": 6,
+      "committee_members": 0,
+      "publications": 6,
+      "sources": 11,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 0,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 9,
+      "confirmed_degree_events": 0
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 9,
+      "confirmed_degree_events": 0
+    }
+  },
+  "records": [
+    {
+      "person_id": "lzu-changqingquan",
+      "name": "常清泉",
+      "department_id": "lzu-basic-mathematics",
+      "roster_entry_id": "roster-lzu-basic-math-changqingquan",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://mathteacher.lzu.edu.cn/system/TeacherProfileqt/content2.jsp?id=245",
+      "unknowns": [
+        "只记录公开职业资料；不采联系方式、生日、籍贯、政治信息、学生名册。",
+        "学历标签不等于明确获授学位；缺少明确授位陈述的事件 degree_awarded=null。",
+        "仅精选两项论文元数据，非全集；出版者链接未经本轮逐篇访问。"
+      ]
+    },
+    {
+      "person_id": "lzu-chenlizhi",
+      "name": "陈立志",
+      "department_id": "lzu-basic-mathematics",
+      "roster_entry_id": "roster-lzu-basic-math-chenlizhi",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://mathteacher.lzu.edu.cn/system/TeacherProfileqt/content2.jsp?id=13",
+      "unknowns": [
+        "只记录公开职业资料；不采联系方式、生日、籍贯、政治信息、学生名册。",
+        "学历标签不等于明确获授学位；缺少明确授位陈述的事件 degree_awarded=null。",
+        "仅精选两项论文元数据，非全集；出版者链接未经本轮逐篇访问。",
+        "未见本人导师直接陈述，不从合著或指导学生关系推断。"
+      ]
+    },
+    {
+      "person_id": "lzu-chengxiyou",
+      "name": "程锡友",
+      "department_id": "lzu-basic-mathematics",
+      "roster_entry_id": "roster-lzu-basic-math-chengxiyou",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://mathteacher.lzu.edu.cn/system/TeacherProfileqt/content.jsp?id=1",
+      "unknowns": [
+        "只记录公开职业资料；不采联系方式、生日、籍贯、政治信息、学生名册。",
+        "学历标签不等于明确获授学位；缺少明确授位陈述的事件 degree_awarded=null。",
+        "仅精选两项论文元数据，非全集；出版者链接未经本轮逐篇访问。"
+      ]
+    }
+  ],
+  "independent_source_review": {
+    "status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T18:28:41.456730+00:00",
+    "reviewed_data_sha256": "c70ccd322594444d06eb061454bb6e77a2668c569ea7d40731ba22765649f24c",
+    "checks": {
+      "source_reference_and_mentor_event_closure": "passed",
+      "counts_recomputed": true,
+      "source_package_modified": false
+    },
+    "integration_limits": [
+      "3部分职业档案非完整教育；9授位未知不得进入已获授位筛选。",
+      "6指导日期来自教育/博士后区间，不是独立核定的全程指导起讫。",
+      "孙/马导航支持官方公开主页且当前列示，不称独立人事核查；曹/钟/张现职未核或退休不启用在职导航。",
+      "本科不等于学士，理学为门类非具体专业；访学及博士后均非学位。",
+      "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+      "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+    ],
+    "blockers": [],
+    "review_scope": "来源批次的既有独立核验；本次本地接入仅复核数据、来源闭合与导出，不声称重新访问网页。"
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-lzu-rotation-001.json",
+      "sha256": "c70ccd322594444d06eb061454bb6e77a2668c569ea7d40731ba22765649f24c",
+      "independent_review_file": "faculty-batch-lzu-rotation-001-independent-review.json",
+      "independent_review_sha256": "96a6d095773da6ab350775bb7a854392f68147d1d68bce615ceb7cff5071d707",
+      "scope_file": "faculty-batch-lzu-rotation-001-scope.json",
+      "scope_sha256": "db6bda0efda8682e99d3ffb3cbe22ef8a1a5fe4007ab7ffa62961f591d68d5bd",
+      "qa_file": "faculty-batch-lzu-rotation-001-qa.json",
+      "qa_sha256": "14deb7ea4eba3de6a832648a6109a108b7816f5122a9cab839a320e241802763"
+    }
+  ],
+  "limitations": [
+    "非全校、学院或研究所覆盖；每人仅精选2项论文元数据。",
+    "学位标签均未升级为明确获授；访问与博士后为非授位事件。",
+    "导师关系均来自本人官网直接陈述；访问对象不当作导师，退休及现职未核导师不启用导航。",
+    "程锡友按部门主页发生普通超时，改读官网全职分类明确链接的另一主页成功；无403/412/429等限制，也未绕过限制。",
+    "校园归属本轮未核，campuses及campus_ids均为空；不按办公地址或院系所在地推断校区。",
+    "3部分职业档案非完整教育；9授位未知不得进入已获授位筛选。",
+    "6指导日期来自教育/博士后区间，不是独立核定的全程指导起讫。",
+    "孙/马导航支持官方公开主页且当前列示，不称独立人事核查；曹/钟/张现职未核或退休不启用在职导航。",
+    "本科不等于学士，理学为门类非具体专业；访学及博士后均非学位。",
+    "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+    "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+  ],
+  "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。"
+}

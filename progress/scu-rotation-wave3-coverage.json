@@ -1,0 +1,172 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29",
+  "school_id": "scu",
+  "school_name": "四川大学",
+  "batch_id": "faculty-batch-scu-rotation-001",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "化学工程学院教授-研究员列表页面当前顺序前3位：唐建华、梁葛萌、褚良银；列表显示顺序而非总目录拼音顺序。只收公开职业事实，2部分履历、1稀疏待核。",
+  "selection_basis": "化学工程学院教授-研究员列表页面当前顺序前3位：唐建华、梁葛萌、褚良银；列表显示顺序而非总目录拼音顺序。只收公开职业事实，2部分履历、1稀疏待核。",
+  "source_urls": [
+    "https://ce.scu.edu.cn/szdw/jxkyg/js_yjy.htm"
+  ],
+  "organization_ids": [
+    "scu-chemical-engineering"
+  ],
+  "selected_roster_observations": 3,
+  "counts": {
+    "selected_records": 3,
+    "professional_profiles": 2,
+    "pending_profiles": 1,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 11,
+      "appointments": 15,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 4,
+      "sources": 9,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "effective_professional_collections": {
+      "education": 11,
+      "appointments": 14,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 4,
+      "sources": 6,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 1,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 3,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 6,
+      "confirmed_degree_events": 0
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 6,
+      "confirmed_degree_events": 0
+    }
+  },
+  "records": [
+    {
+      "person_id": "scu-tangjianhua",
+      "name": "唐建华",
+      "department_id": "scu-chemical-engineering",
+      "roster_entry_id": "roster-scu-chemical-tangjianhua",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://ce.scu.edu.cn/info/1090/3989.htm",
+      "unknowns": [
+        "未取得本人导师的直接明确依据，不从论文合作者或学生列表推断。",
+        "精选书目并非全集；原始网页不公开，缺失字段不是不存在。"
+      ]
+    },
+    {
+      "person_id": "scu-chuliangyin",
+      "name": "褚良银",
+      "department_id": "scu-chemical-engineering",
+      "roster_entry_id": "roster-scu-chemical-chuliangyin",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://ce.scu.edu.cn/info/1090/4013.htm",
+      "unknowns": [
+        "未取得本人导师的直接明确依据，不从论文合作者或学生列表推断。",
+        "精选书目并非全集；原始网页不公开，缺失字段不是不存在。",
+        "外校简介索引写1995.04–1997.04四川博后及1999.09赴日，与本人简历1997.06/1999.10不同；该外校页实际410，未作为已读正文或覆盖本人值。",
+        "博导称谓不代替本人学位获授证据；导师姓名未核。"
+      ]
+    },
+    {
+      "person_id": "scu-lianggemeng",
+      "name": "梁葛萌",
+      "department_id": "scu-chemical-engineering",
+      "roster_entry_id": "roster-scu-chemical-lianggemeng",
+      "profile_status": "profile_details_pending",
+      "record_layer": "pending",
+      "official_url": "https://ce.scu.edu.cn/info/1090/16044.htm",
+      "unknowns": [
+        "未取得本人导师的直接明确依据，不从论文合作者或学生列表推断。",
+        "精选书目并非全集；原始网页不公开，缺失字段不是不存在。",
+        "主页正文仅姓名，学历、学位、研究方向、导师及论文尚无可核正文。",
+        "2026新留校教师只确认加入教师队伍的年份，不等教授晋升日期。"
+      ]
+    }
+  ],
+  "independent_source_review": {
+    "status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T18:01:29.040158+00:00",
+    "reviewed_data_sha256": "f6e77f7cb079de3236051570b040c6bb140215e86270cdd17437c4e982c8a6dd",
+    "checks": {
+      "source_reference_and_mentor_event_closure": "passed",
+      "counts_recomputed": true,
+      "source_package_modified": false
+    },
+    "integration_limits": [
+      "2份部分职业资料（唐建华/褚良银）+梁葛萌1稀疏待核，不称3份教育详档。",
+      "11教育0明确授位/6null/5false（2博士后3访问），不从博导或教授称谓推本人获授。唐建华首段层次未知排除本科判断。",
+      "4精选书目只本人官方列举，非全量或出版社独立核验；无直接导师资料，关系为空不是确认无导师。",
+      "2025-09更新本人简历中的至今只官网列示，不独立声称2026在职人事核实；原网页联系方式、生日、政治和学生信息未进包。",
+      "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+      "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+    ],
+    "blockers": [],
+    "review_scope": "来源批次的既有独立核验；本次本地接入仅复核数据、来源闭合与导出，不声称重新访问网页。"
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-scu-rotation-001.json",
+      "sha256": "f6e77f7cb079de3236051570b040c6bb140215e86270cdd17437c4e982c8a6dd",
+      "independent_review_file": "faculty-batch-scu-rotation-001-independent-review.json",
+      "independent_review_sha256": "6bd0cb51eb47f2efb609a4c5be2c42f894433cf4ffbb8066249a629c0f02b8ae",
+      "scope_file": "faculty-batch-scu-rotation-001-scope.json",
+      "scope_sha256": "341d4286bf2bb91edb0eb04eb8eeec2e5dae1b270ab7437ed48ff72098362bc1",
+      "qa_file": "faculty-batch-scu-rotation-001-qa.json",
+      "qa_sha256": "c466cddbedad7ec68de4992fe8eefaf0c7938842b4288396fee526b8248d42a7"
+    }
+  ],
+  "limitations": [
+    "化学工程学院教授-研究员列表页面当前顺序前3位：唐建华、梁葛萌、褚良银；列表显示顺序而非总目录拼音顺序。只收公开职业事实，2部分履历、1稀疏待核。",
+    "个人主页或导师现职仅官方当前列示，不推断全职、人事在岗或退休。",
+    "精选论文非全集，无逐篇链接时明确标记；不公开原始网页缓存。",
+    "2份部分职业资料（唐建华/褚良银）+梁葛萌1稀疏待核，不称3份教育详档。",
+    "11教育0明确授位/6null/5false（2博士后3访问），不从博导或教授称谓推本人获授。唐建华首段层次未知排除本科判断。",
+    "4精选书目只本人官方列举，非全量或出版社独立核验；无直接导师资料，关系为空不是确认无导师。",
+    "2025-09更新本人简历中的至今只官网列示，不独立声称2026在职人事核实；原网页联系方式、生日、政治和学生信息未进包。",
+    "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+    "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+  ],
+  "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。"
+}

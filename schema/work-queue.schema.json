@@ -16,7 +16,14 @@
     },
     "updated_at": {
       "type": "string",
-      "format": "date-time"
+      "anyOf": [
+        {
+          "format": "date"
+        },
+        {
+          "format": "date-time"
+        }
+      ]
     },
     "base_commit": {
       "type": "string",
@@ -187,7 +194,14 @@
               "string",
               "null"
             ],
-            "format": "date-time"
+            "anyOf": [
+              {
+                "format": "date"
+              },
+              {
+                "format": "date-time"
+              }
+            ]
           },
           "last_verified_commit": {
             "anyOf": [
@@ -244,7 +258,14 @@
             "properties": {
               "checked_at": {
                 "type": "string",
-                "format": "date-time"
+                "anyOf": [
+                  {
+                    "format": "date"
+                  },
+                  {
+                    "format": "date-time"
+                  }
+                ]
               },
               "evidence_urls": {
                 "type": "array",
@@ -326,7 +347,14 @@
               "properties": {
                 "attempted_at": {
                   "type": "string",
-                  "format": "date-time"
+                  "anyOf": [
+                    {
+                      "format": "date"
+                    },
+                    {
+                      "format": "date-time"
+                    }
+                  ]
                 }
               }
             }

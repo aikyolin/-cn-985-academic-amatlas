@@ -1,0 +1,3919 @@
+{
+  "status": "passed_local_export_checks",
+  "baseline_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29",
+  "build_id": "a202e3b5b234812b",
+  "counts": {
+    "professional_records": 524,
+    "pending_records": 82,
+    "schools": 39,
+    "organization_nodes": 211,
+    "department_exports": 99,
+    "roster_records": 1688,
+    "raw_source_observations": 1726,
+    "category_count": 177,
+    "batch_category_count": 196,
+    "coverage_rows": 204,
+    "queue_tasks": 211
+  },
+  "checks": {
+    "canonical_atlas_and_rosters_schema": "passed",
+    "canonical_validators_and_school_closure": "passed",
+    "queue_schema_artifacts_dependencies": "passed",
+    "original_202_tasks_unchanged": true,
+    "new_tasks_partial_with_existing_evidence_paths": true,
+    "site_snapshots_match_canonical_derived_data": true,
+    "every_export_reopened_matches_table_generators": true,
+    "all_workbook_cells_match": true,
+    "all_workbook_hyperlinks_match": true,
+    "school_closure_and_row_counts": "passed",
+    "csv_exact_matrix_match": true,
+    "all_workbooks_fixed_core_dates_and_zip_metadata": true,
+    "full_build_repeated_byte_identical": true
+  },
+  "verification_totals": {
+    "xlsx_files": 100,
+    "sheets": 504,
+    "cells": 183046,
+    "hyperlinks": 15320,
+    "csv_records": 1688,
+    "deterministic_generated_files": 103
+  },
+  "determinism": {
+    "scope": "Two complete builds with the same current Python/openpyxl toolchain and more than two seconds between them. Every XLSX, CSV and site snapshot hash matched.",
+    "fixed_core_datetime": "2000-01-01T00:00:00",
+    "core_date_note": "Fixed archive metadata is not a source retrieval or review date; source dates remain in worksheet cells.",
+    "writer": "scripts/deterministic_xlsx.py",
+    "helper_included_in_build_id": true,
+    "files": {
+      "site/atlas.json": "332c546d148b92ec411e954a9cac40312d44354701aae0e870877e6075af9b19",
+      "site/rosters.json": "80ef803ec2ffc354e891446044d18361c2fb0f5ea639c3abf619a3614f11846e",
+      "site/exports/bit-cs-image-perception.xlsx": "8ecc8beff095f5f5d11220ad0b50ec47695fdae46b9869cd73e08d2f665b6732",
+      "site/exports/bit-sie-communications.xlsx": "92cd5ee427b093fb4b9760ef9ebab38b694a331139f9d2eccf54d61f81db4803",
+      "site/exports/bnu-ai.xlsx": "86f12f0f36ff3872324f1973ba9576a87a46166609f9702afce219e53ab2ab46",
+      "site/exports/bnu-math.xlsx": "c70465e0d1860159cc254795a94c5d24c32b95c7aacb77fbbfd4623a45a1f3f1",
+      "site/exports/buaa-cs.xlsx": "0f33d60bb4e9c874de291915fe7f2df0038bb3583383a3f4cfc74e4343842467",
+      "site/exports/buaa-physics-applied.xlsx": "147b53eea044df39df75298e78bb35da3e023773641d721059c61971c2f73315",
+      "site/exports/buaa-physics-department.xlsx": "73cc282a3510574a41813c3fafd354658d1d9bc7a52f368a2fb342160585a9db",
+      "site/exports/buaa-physics-nuclear.xlsx": "fc5ca475c896cde5528aab0c59ef682398c955e804e390f81e7cd794b4e0eca6",
+      "site/exports/cau-ciee-computer.xlsx": "54b8579a0593a744dedf82dcc32c9d8e112dd402689e4a44d049abc11e30f4cf",
+      "site/exports/cau-science-math.xlsx": "c03fc7faa75c7bb128f43effa033b3a55512b0fe5a4303d98d708677899834c4",
+      "site/exports/cqu-cs.xlsx": "e67dd852d2efb14019ee1fed04ba3c2250da2b5bb5f22b61e0e8e83a853c237c",
+      "site/exports/cqu-mathematics-statistics.xlsx": "11e246f87cff7aef8d529706b854e39cb1a4a338570ccfe2d70dc02e519447e0",
+      "site/exports/csu-cse.xlsx": "3fc12ea5379b0c669a0b6855c513c8fb46cb0f432d8a882a220e4fe2ce20d44d",
+      "site/exports/csu-math-applied.xlsx": "7484e1fc254fa9987bc57bdb292e1efc5ecdf318e53b84e06d295792bd8f6847",
+      "site/exports/dlut-cs-software-theory.xlsx": "5dbde15b50dab984d986ec3493d78ad5c7d27d8fcdf0c30658d7d342f9aad06d",
+      "site/exports/dlut-math-institute.xlsx": "1625969239b59a8244f727a522eb83e957cacb64b3e4d465704a4816c496a5a3",
+      "site/exports/ecnu-math-applied.xlsx": "4d657056812b4a89a8ce7c4e4b3a228c3a94eb5f29e9ed9d7fe474ffba2994cb",
+      "site/exports/ecnu-math-pure.xlsx": "b35e580a30dd29f4a180843d078fc23dfdbb6229daebc40cdc97bf6e0f6d27a7",
+      "site/exports/ecnu-sei.xlsx": "73529cf6469491fb6fa8793ab5f0c54327cfa3617f671e3aaa5ba449e5212c1c",
+      "site/exports/fdu-icmne.xlsx": "b6849ef1b1be24cca002bc0a0f915b6a8d4434ff8c09556d7b4568910c4d820e",
+      "site/exports/fdu-math-applied.xlsx": "8bed2e4e437b8426ddc39309946adaf02c3829b73d6e29f05d1a7ef176a0a23d",
+      "site/exports/fdu-math-probability-statistics-actuarial.xlsx": "193ff4457d1f269d3b7e9dce9a35dbf2c0195b3477f86b04aef633ed9f9b8e22",
+      "site/exports/hit-computing.xlsx": "958fbc68d19dcf3690a1087ade9da24287a56383536f06e684caad3cdc9fd172",
+      "site/exports/hit-seie.xlsx": "543c05288964285cc03152107b0682c4094c7ac14f5cdef2f80b8319ba0c0166",
+      "site/exports/hit-shenzhen-computer.xlsx": "58b222b67d96818aa52f16d201a8449bef5bb36e2302cf2bd5a68e9ae1aa8d53",
+      "site/exports/hit-shenzhen-ic.xlsx": "3744f412bbd5e7e21969cdb953040409d6720e385153fd1b7f1a3e43432c3b8f",
+      "site/exports/hit-shenzhen-robotics.xlsx": "ab6d347fa8b292fb66cec686ad16dc974af9188acc435e6d2f8856009d70797b",
+      "site/exports/hit-weihai-information.xlsx": "7cb591f80874dfb4fe3ccce0259f28cd0c9a0c6fde49c1ab30d63eb6c328433d",
+      "site/exports/hit-weihai-materials.xlsx": "54d21c6da24008000fb4191e8bf2c4d5adc811eed95c33982669cc3696f5743a",
+      "site/exports/hnu-cs-communication-engineering.xlsx": "e01ae98178c1caf20c1e18740e02db76998554dea745fc646c9e70939827d6b7",
+      "site/exports/hnu-cs-computer-engineering.xlsx": "7bb5394feca7c1986e877cfdddf7483b88a358d8c93ad35dd847199a03271c9f",
+      "site/exports/hnu-cs-software-engineering.xlsx": "4fdffd5a5f323dda2f212948be7a716d97581aa30820b467e45c49805e42a6c4",
+      "site/exports/hnu-math-basic.xlsx": "8d45b2063647a144c74c7f8e7d5ec33e848a5787e24a8dc8f26408501120a95c",
+      "site/exports/hust-cs-storage.xlsx": "be5028ada1801939f2f53daa010249bc031a9a6a43f2555aee0aa7c5aac7a39d",
+      "site/exports/hust-math-center.xlsx": "958cd31af3a503ea4187fe4f6bfd42131be4d57d453f7fcbe5a02bdeb27533b5",
+      "site/exports/hust-math-interdisciplinary.xlsx": "ec1f1fa56ac08e000b7808f0297d6814dbb9f744a4c42003da2b6c3fba39524f",
+      "site/exports/jlu-cs.xlsx": "4546f557b871c5e584dfdaac60affa8551bfa545cca0799018453e84e73a13a0",
+      "site/exports/jlu-math-applied.xlsx": "14536830ff485834b0e45603626ba94a72d6ed471cbc0162491479fb64dafa89",
+      "site/exports/jlu-math-computational.xlsx": "81d7218696de8a5dbbe215ea7a4e37ad9e166db36a2ad41093ada4d9d0bfc46f",
+      "site/exports/jlu-math-statistics.xlsx": "610cb4d6748821fd9e0f8b31dbfda3e04adea16e10c7ea0961a768f7cd9261b4",
+      "site/exports/lzu-basic-mathematics.xlsx": "6dc90c17aac81334fe036dceed021942ea587480215450eb04ed61cab8eba029",
+      "site/exports/lzu-law.xlsx": "8d62ec02ae35b737b04feb281ed89e0cc6cdacfcc83ae9b6f3eca2f891db294f",
+      "site/exports/muc-ise-cs.xlsx": "b7642d209c8ada88bd470c37fe712191233031b8765402b6fd94400f039c305e",
+      "site/exports/muc-science-math.xlsx": "22ef1e1930c2c49eed629dceb1bbf0a12fd84e880494eb582ab3acf7fd628279",
+      "site/exports/neu-cse-communication-electronics.xlsx": "bf487e818fd5e703b46b8f334baa28dea7b7790bd600b3a74a04f86c471164ae",
+      "site/exports/neu-cse-cs.xlsx": "6a9dfc9331ac2fc757122aa3d3bcff44d1736c91dcd32906bcbef0dd1c056079",
+      "site/exports/neu-science-math.xlsx": "12f9dbeaf2b25a09049b5aa3a3489e9bce73006f7bab618d2de0e7489542f796",
+      "site/exports/nju-cs.xlsx": "e75ef1d05b07d7c34effe7abbacce42d088eff06a18fc6966366fc1c88d54785",
+      "site/exports/nju-math.xlsx": "221e7ff8f76efdde2fd3542aa979d75651dfd972655d8119a6a1ca6a8e071c58",
+      "site/exports/nju-sme.xlsx": "1a4af1c71eb2aaf3a18081db8653aee42c0879605eb5f0ed04b746cd007edf94",
+      "site/exports/nku-cs.xlsx": "129463d6106d689e4a416d343ed11d089dd9b98584178de4635c3a08a2382771",
+      "site/exports/nku-cyber.xlsx": "920978e9a9d5e45a57915c2c8ccc739ca5e928aad3f97df899f494df62e53d75",
+      "site/exports/nku-stat.xlsx": "227e4c232fc5efc3a5e6e087ed3282bdd56c9b20738ce3102dd715b95d75e4aa",
+      "site/exports/nudt-aerospace.xlsx": "4d422f6152bc4ef75d334a719e60a6eaff8bbc5903dc582c363e095814a6f256",
+      "site/exports/nudt-electronic-science.xlsx": "3260867dd2d0b5239a05c60c3167240c92ee65ce56b6935d7aaf9e56e0fc9c84",
+      "site/exports/nudt-electronics.xlsx": "ad7a5b1686c3da6e73d2f680c41a9ed26fdc99b2d8847175b98012a37c70e92f",
+      "site/exports/nudt-foreign-languages.xlsx": "70f192adf64fe607676d7e3b78e9fff5a5674c1ffaea2032699957f13e4af4a5",
+      "site/exports/nudt-intelligence.xlsx": "9225f49a9da23e9a168158a4d02aaa0a98e6fc06aab75f02258dde270725bd80",
+      "site/exports/nudt-systems.xlsx": "417c343ecbc9917662df640ab2dffb3ec16b38a3f20c3618f009068c81c8bfb1",
+      "site/exports/nwpu-cs-computer-science-software.xlsx": "15f646eb84972804a67d0e7f2b763bc252822ce2f01a3bf7aaad89cf1511ac4d",
+      "site/exports/nwpu-mathematical-sciences.xlsx": "c36069333720ebb5c0965eb0f27c37eb9b957c396010bc3dabf095ec7d4dba61",
+      "site/exports/nwsuaf-agronomy-agronomy-department.xlsx": "38ab9f806f741fc54bca7f42cd149662681de1573710e33385ccb31ab58a1aad",
+      "site/exports/nwsuaf-cie-cs.xlsx": "5a0a8e7b0dbc3dc0563bc8a131d0d0f7908c94baae45167d69f044ecdaf7db1c",
+      "site/exports/nwsuaf-cie-data.xlsx": "c008f08177b0577eb59e985fe06ed84b756ebf969229af3d6d538e3a3e056bf8",
+      "site/exports/ouc-ise-cs.xlsx": "bef4f4e5a5257b44251746e8e15162bd646857d088f6e294c8eeb4d1b203633a",
+      "site/exports/ouc-math-department.xlsx": "a8b97ffaf5f340533da5a8d12b133a76a5b54c676dc8637a2459662dd7efe272",
+      "site/exports/pku-ic-microelectronics.xlsx": "7291ebe2cc688be153704102e39d3864df91bac5ad97259d16bd73a656554f42",
+      "site/exports/ruc-gsai.xlsx": "6b1429699da46c5f4fee3585c11721d2bd4023fd5d1fc063b533f690c5760b65",
+      "site/exports/ruc-info-eim.xlsx": "2ac362a53b5fbb1ff7580f04bba9d2c6fcec00a31540cfcde5cbe41c1c0c0119",
+      "site/exports/scu-chemical-engineering.xlsx": "60f80f78f8ecfa134b4957c0d2d04a16c78f2348a2c9ffb612784adcfd625186",
+      "site/exports/scu-cs.xlsx": "3cc913079af73ad9b667b2a7e248c9b693bee07aa6ccc49b954f96a93cd50d5d",
+      "site/exports/scut-cs.xlsx": "6fc48b36e796167f01e0326b06812c3d7507e10a9585b36b18fabdff9009bdf0",
+      "site/exports/scut-math.xlsx": "4c461609c2f0e78b8be8cc0f3a020387c67a8f52a787245ef678df126db5f5ee",
+      "site/exports/sdu-cs.xlsx": "15065fcc41a9a0f5413cb6bf36a83ddb7b6dd8ef3b42e54a488929feb3c2653e",
+      "site/exports/sdu-math.xlsx": "e9f056cb5a86693f16de85a93c3d50f3195140c34c87f75fa6e4580fd2232202",
+      "site/exports/seu-computing-joint-roster.xlsx": "48d5b9a81a28296fe5d265edcd4fc369d1c970fcaffd0c7df91b781f79d528fe",
+      "site/exports/seu-cs.xlsx": "abe27d1aa51acf1275aa560931da66d82ffe22fb451f62dd8c46168b07c2d465",
+      "site/exports/seu-math-computational.xlsx": "52f2403373aba5dee463834813b9e7f8bd497c3760e6688e5de592964e869751",
+      "site/exports/seu-math-systems.xlsx": "f54dc7088b8341fce7a57f31a6dc9b4c75bb49cb3bae428ef5a207552024f42f",
+      "site/exports/sjtu-ic-chipdesign.xlsx": "b3fa394373ae7fcb6c84142d81637c22e5f8dfaa0d4f1df97c93163cecc89a11",
+      "site/exports/sysu-math-department.xlsx": "ecc826f6e90603d05c17f6e7ed167f97974db04fbe3b175ca3e6ffbcbdc33111",
+      "site/exports/sysu-math.xlsx": "3edf48eda175bb96169ef9cd3d0960c5195ba3537d04431843b22e7f27cd2144",
+      "site/exports/sysu-mathzh.xlsx": "cdebb1c4bdb74a374c17d7c0e7f68eb5fc596833d450098b28a9ccb64ffb37d9",
+      "site/exports/thu-ee-communications.xlsx": "8701a586cde1d10eec194b8eb20fd648f12af8620f1d6c0c9828ab00a88d36e9",
+      "site/exports/tju-math.xlsx": "399936224a993c995cfad6cbb80a6dc74486f21621fe5e6ae473aee4d939a20e",
+      "site/exports/tju-sme.xlsx": "4f963ba2740c54d0406764f9384a03733e5ecc406294c633290fb333fa6144c0",
+      "site/exports/tongji-cs.xlsx": "99bd75bb420f58781e1b8a389e7d8ff72f5ccb97c4a77f09ed0af96da50c26d5",
+      "site/exports/tongji-math-teaching.xlsx": "84e40719460679f31b96cdda3cff6da20c17a10448c3e9ac89f92d5c4e351a3b",
+      "site/exports/uestc-aihss.xlsx": "3a4fabc60237a4ff3e854f764d4c4bbe92fe55c88977f7c7ce847b0d22838952",
+      "site/exports/uestc-applied-math-center.xlsx": "0d31c20c27bcf996526e01c573cf396f11f1fdfd3a888be34d8033d042148c31",
+      "site/exports/ustc-ic.xlsx": "bba52cc29f384a3ccc4e6b582ab4cdf1e7be215e4b6059926e1f6809cfa0be7e",
+      "site/exports/ustc-math.xlsx": "60edd4e8f47842ca1ce0e5e64f874d9365bffb51e71a92c641f4b4969e811297",
+      "site/exports/whu-eis.xlsx": "df7dfc47d4307136d341cbae96f731302c4414cd5e077b29dcb32968e63bf423",
+      "site/exports/whu-math-stat.xlsx": "4d45cfd5fd92a1f18a6d89cbe9112bd9da8c9faac6696c025e1d81b297725818",
+      "site/exports/xjtu-math-department.xlsx": "2bef8af7e2ac74764b31b651542b4f2547962c61d0a2ac95ee6530c45a2fc7f1",
+      "site/exports/xjtu-se.xlsx": "74dda6adf6cb6a0ae0a376b13ca98bcd6fc7c06dbe72037172b16df698da94d2",
+      "site/exports/xmu-informatics-cs.xlsx": "4975c6535af5ec76a4c5cf9ad40e78627739cabf40f422db69a443b09152b62a",
+      "site/exports/xmu-math-applied.xlsx": "080164257599a45cc2be8eb901fda292c3d9a233c10facd3319a4bb894379b55",
+      "site/exports/zju-ic-manufacturing.xlsx": "e683c104495e43aec93846c5d8767bd1040e0a135592c1003526028ed03262f9",
+      "site/exports/待核对名录.csv": "44bba98895de6d7467ad20e6e83118ba9f2468be84ea3da240f6f0657c3fa35d",
+      "site/exports/待核对名录.xlsx": "f5c03ad8c5faad94c2a0b068b74d07ede0b5564f02505af1c2d0ccd03b17273c"
+    }
+  },
+  "reopened_workbooks": [
+    {
+      "path": "site/exports/bit-cs-image-perception.xlsx",
+      "school_id": "bit",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 17,
+          "columns": 19,
+          "hyperlinks": 17
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 11,
+          "columns": 7,
+          "hyperlinks": 11
+        }
+      ],
+      "sha256": "8ecc8beff095f5f5d11220ad0b50ec47695fdae46b9869cd73e08d2f665b6732"
+    },
+    {
+      "path": "site/exports/bit-sie-communications.xlsx",
+      "school_id": "bit",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 18,
+          "columns": 19,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 12,
+          "columns": 7,
+          "hyperlinks": 12
+        }
+      ],
+      "sha256": "92cd5ee427b093fb4b9760ef9ebab38b694a331139f9d2eccf54d61f81db4803"
+    },
+    {
+      "path": "site/exports/bnu-ai.xlsx",
+      "school_id": "bnu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 18,
+          "columns": 19,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 11,
+          "columns": 7,
+          "hyperlinks": 11
+        }
+      ],
+      "sha256": "86f12f0f36ff3872324f1973ba9576a87a46166609f9702afce219e53ab2ab46"
+    },
+    {
+      "path": "site/exports/bnu-math.xlsx",
+      "school_id": "bnu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 19,
+          "columns": 19,
+          "hyperlinks": 19
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 4
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 8,
+          "columns": 7,
+          "hyperlinks": 8
+        }
+      ],
+      "sha256": "c70465e0d1860159cc254795a94c5d24c32b95c7aacb77fbbfd4623a45a1f3f1"
+    },
+    {
+      "path": "site/exports/buaa-cs.xlsx",
+      "school_id": "buaa",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 14,
+          "columns": 19,
+          "hyperlinks": 14
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 12,
+          "columns": 7,
+          "hyperlinks": 12
+        }
+      ],
+      "sha256": "0f33d60bb4e9c874de291915fe7f2df0038bb3583383a3f4cfc74e4343842467"
+    },
+    {
+      "path": "site/exports/buaa-physics-applied.xlsx",
+      "school_id": "buaa",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 6,
+          "columns": 19,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 4,
+          "columns": 7,
+          "hyperlinks": 4
+        }
+      ],
+      "sha256": "147b53eea044df39df75298e78bb35da3e023773641d721059c61971c2f73315"
+    },
+    {
+      "path": "site/exports/buaa-physics-department.xlsx",
+      "school_id": "buaa",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 5,
+          "columns": 19,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 4,
+          "columns": 7,
+          "hyperlinks": 4
+        }
+      ],
+      "sha256": "73cc282a3510574a41813c3fafd354658d1d9bc7a52f368a2fb342160585a9db"
+    },
+    {
+      "path": "site/exports/buaa-physics-nuclear.xlsx",
+      "school_id": "buaa",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 10,
+          "columns": 19,
+          "hyperlinks": 10
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 8,
+          "columns": 7,
+          "hyperlinks": 8
+        }
+      ],
+      "sha256": "fc5ca475c896cde5528aab0c59ef682398c955e804e390f81e7cd794b4e0eca6"
+    },
+    {
+      "path": "site/exports/cau-ciee-computer.xlsx",
+      "school_id": "cau",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 9,
+          "columns": 19,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 8,
+          "columns": 7,
+          "hyperlinks": 8
+        }
+      ],
+      "sha256": "54b8579a0593a744dedf82dcc32c9d8e112dd402689e4a44d049abc11e30f4cf"
+    },
+    {
+      "path": "site/exports/cau-science-math.xlsx",
+      "school_id": "cau",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 10,
+          "columns": 19,
+          "hyperlinks": 10
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 5,
+          "columns": 7,
+          "hyperlinks": 5
+        }
+      ],
+      "sha256": "c03fc7faa75c7bb128f43effa033b3a55512b0fe5a4303d98d708677899834c4"
+    },
+    {
+      "path": "site/exports/cqu-cs.xlsx",
+      "school_id": "cqu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 9,
+          "columns": 19,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 7,
+          "columns": 7,
+          "hyperlinks": 7
+        }
+      ],
+      "sha256": "e67dd852d2efb14019ee1fed04ba3c2250da2b5bb5f22b61e0e8e83a853c237c"
+    },
+    {
+      "path": "site/exports/cqu-mathematics-statistics.xlsx",
+      "school_id": "cqu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 20,
+          "columns": 19,
+          "hyperlinks": 20
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 10,
+          "columns": 7,
+          "hyperlinks": 10
+        }
+      ],
+      "sha256": "11e246f87cff7aef8d529706b854e39cb1a4a338570ccfe2d70dc02e519447e0"
+    },
+    {
+      "path": "site/exports/csu-cse.xlsx",
+      "school_id": "csu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 16,
+          "columns": 19,
+          "hyperlinks": 16
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 8,
+          "columns": 7,
+          "hyperlinks": 8
+        }
+      ],
+      "sha256": "3fc12ea5379b0c669a0b6855c513c8fb46cb0f432d8a882a220e4fe2ce20d44d"
+    },
+    {
+      "path": "site/exports/csu-math-applied.xlsx",
+      "school_id": "csu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 21,
+          "columns": 19,
+          "hyperlinks": 21
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 6,
+          "columns": 12,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 19,
+          "columns": 7,
+          "hyperlinks": 19
+        }
+      ],
+      "sha256": "7484e1fc254fa9987bc57bdb292e1efc5ecdf318e53b84e06d295792bd8f6847"
+    },
+    {
+      "path": "site/exports/dlut-cs-software-theory.xlsx",
+      "school_id": "dlut",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 17,
+          "columns": 19,
+          "hyperlinks": 17
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 14,
+          "columns": 7,
+          "hyperlinks": 14
+        }
+      ],
+      "sha256": "5dbde15b50dab984d986ec3493d78ad5c7d27d8fcdf0c30658d7d342f9aad06d"
+    },
+    {
+      "path": "site/exports/dlut-math-institute.xlsx",
+      "school_id": "dlut",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 22,
+          "columns": 19,
+          "hyperlinks": 22
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 11,
+          "columns": 7,
+          "hyperlinks": 11
+        }
+      ],
+      "sha256": "1625969239b59a8244f727a522eb83e957cacb64b3e4d465704a4816c496a5a3"
+    },
+    {
+      "path": "site/exports/ecnu-math-applied.xlsx",
+      "school_id": "ecnu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 5,
+          "columns": 19,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 2,
+          "columns": 7,
+          "hyperlinks": 2
+        }
+      ],
+      "sha256": "4d657056812b4a89a8ce7c4e4b3a228c3a94eb5f29e9ed9d7fe474ffba2994cb"
+    },
+    {
+      "path": "site/exports/ecnu-math-pure.xlsx",
+      "school_id": "ecnu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 6,
+          "columns": 19,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 5,
+          "columns": 7,
+          "hyperlinks": 5
+        }
+      ],
+      "sha256": "b35e580a30dd29f4a180843d078fc23dfdbb6229daebc40cdc97bf6e0f6d27a7"
+    },
+    {
+      "path": "site/exports/ecnu-sei.xlsx",
+      "school_id": "ecnu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 18,
+          "columns": 19,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 4,
+          "columns": 12,
+          "hyperlinks": 11
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 15,
+          "columns": 7,
+          "hyperlinks": 15
+        }
+      ],
+      "sha256": "73529cf6469491fb6fa8793ab5f0c54327cfa3617f671e3aaa5ba449e5212c1c"
+    },
+    {
+      "path": "site/exports/fdu-icmne.xlsx",
+      "school_id": "fdu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 26,
+          "columns": 19,
+          "hyperlinks": 26
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 12,
+          "columns": 7,
+          "hyperlinks": 12
+        }
+      ],
+      "sha256": "b6849ef1b1be24cca002bc0a0f915b6a8d4434ff8c09556d7b4568910c4d820e"
+    },
+    {
+      "path": "site/exports/fdu-math-applied.xlsx",
+      "school_id": "fdu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 10,
+          "columns": 19,
+          "hyperlinks": 10
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 13,
+          "columns": 7,
+          "hyperlinks": 13
+        }
+      ],
+      "sha256": "8bed2e4e437b8426ddc39309946adaf02c3829b73d6e29f05d1a7ef176a0a23d"
+    },
+    {
+      "path": "site/exports/fdu-math-probability-statistics-actuarial.xlsx",
+      "school_id": "fdu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 4,
+          "columns": 19,
+          "hyperlinks": 4
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 6,
+          "columns": 7,
+          "hyperlinks": 6
+        }
+      ],
+      "sha256": "193ff4457d1f269d3b7e9dce9a35dbf2c0195b3477f86b04aef633ed9f9b8e22"
+    },
+    {
+      "path": "site/exports/hit-computing.xlsx",
+      "school_id": "hit",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 8,
+          "columns": 19,
+          "hyperlinks": 8
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 6,
+          "columns": 7,
+          "hyperlinks": 6
+        }
+      ],
+      "sha256": "958fbc68d19dcf3690a1087ade9da24287a56383536f06e684caad3cdc9fd172"
+    },
+    {
+      "path": "site/exports/hit-seie.xlsx",
+      "school_id": "hit",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 157,
+          "columns": 11,
+          "hyperlinks": 157
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 1127,
+          "columns": 19,
+          "hyperlinks": 1133
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 60,
+          "columns": 12,
+          "hyperlinks": 122
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 334,
+          "columns": 12,
+          "hyperlinks": 999
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 760,
+          "columns": 7,
+          "hyperlinks": 760
+        }
+      ],
+      "sha256": "543c05288964285cc03152107b0682c4094c7ac14f5cdef2f80b8319ba0c0166"
+    },
+    {
+      "path": "site/exports/hit-shenzhen-computer.xlsx",
+      "school_id": "hit",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 3,
+          "columns": 19,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 4,
+          "columns": 7,
+          "hyperlinks": 4
+        }
+      ],
+      "sha256": "58b222b67d96818aa52f16d201a8449bef5bb36e2302cf2bd5a68e9ae1aa8d53"
+    },
+    {
+      "path": "site/exports/hit-shenzhen-ic.xlsx",
+      "school_id": "hit",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 34,
+          "columns": 11,
+          "hyperlinks": 34
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 234,
+          "columns": 19,
+          "hyperlinks": 236
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 33,
+          "columns": 12,
+          "hyperlinks": 89
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 47,
+          "columns": 12,
+          "hyperlinks": 137
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 175,
+          "columns": 7,
+          "hyperlinks": 175
+        }
+      ],
+      "sha256": "3744f412bbd5e7e21969cdb953040409d6720e385153fd1b7f1a3e43432c3b8f"
+    },
+    {
+      "path": "site/exports/hit-shenzhen-robotics.xlsx",
+      "school_id": "hit",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 3,
+          "columns": 19,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 5,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 5,
+          "columns": 7,
+          "hyperlinks": 5
+        }
+      ],
+      "sha256": "ab6d347fa8b292fb66cec686ad16dc974af9188acc435e6d2f8856009d70797b"
+    },
+    {
+      "path": "site/exports/hit-weihai-information.xlsx",
+      "school_id": "hit",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 61,
+          "columns": 11,
+          "hyperlinks": 60
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 366,
+          "columns": 19,
+          "hyperlinks": 380
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 18,
+          "columns": 12,
+          "hyperlinks": 39
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 158,
+          "columns": 12,
+          "hyperlinks": 460
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 248,
+          "columns": 7,
+          "hyperlinks": 248
+        }
+      ],
+      "sha256": "7cb591f80874dfb4fe3ccce0259f28cd0c9a0c6fde49c1ab30d63eb6c328433d"
+    },
+    {
+      "path": "site/exports/hit-weihai-materials.xlsx",
+      "school_id": "hit",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 5,
+          "columns": 19,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 4,
+          "columns": 7,
+          "hyperlinks": 4
+        }
+      ],
+      "sha256": "54d21c6da24008000fb4191e8bf2c4d5adc811eed95c33982669cc3696f5743a"
+    },
+    {
+      "path": "site/exports/hnu-cs-communication-engineering.xlsx",
+      "school_id": "hnu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 4,
+          "columns": 19,
+          "hyperlinks": 4
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 2,
+          "columns": 7,
+          "hyperlinks": 2
+        }
+      ],
+      "sha256": "e01ae98178c1caf20c1e18740e02db76998554dea745fc646c9e70939827d6b7"
+    },
+    {
+      "path": "site/exports/hnu-cs-computer-engineering.xlsx",
+      "school_id": "hnu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 4,
+          "columns": 19,
+          "hyperlinks": 4
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 3,
+          "columns": 7,
+          "hyperlinks": 3
+        }
+      ],
+      "sha256": "7bb5394feca7c1986e877cfdddf7483b88a358d8c93ad35dd847199a03271c9f"
+    },
+    {
+      "path": "site/exports/hnu-cs-software-engineering.xlsx",
+      "school_id": "hnu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 4,
+          "columns": 19,
+          "hyperlinks": 4
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 2,
+          "columns": 7,
+          "hyperlinks": 2
+        }
+      ],
+      "sha256": "4fdffd5a5f323dda2f212948be7a716d97581aa30820b467e45c49805e42a6c4"
+    },
+    {
+      "path": "site/exports/hnu-math-basic.xlsx",
+      "school_id": "hnu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 15,
+          "columns": 19,
+          "hyperlinks": 15
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 6,
+          "columns": 7,
+          "hyperlinks": 6
+        }
+      ],
+      "sha256": "8d45b2063647a144c74c7f8e7d5ec33e848a5787e24a8dc8f26408501120a95c"
+    },
+    {
+      "path": "site/exports/hust-cs-storage.xlsx",
+      "school_id": "hust",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 4,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 20,
+          "columns": 19,
+          "hyperlinks": 20
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 6,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 4,
+          "columns": 12,
+          "hyperlinks": 12
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 17,
+          "columns": 7,
+          "hyperlinks": 17
+        }
+      ],
+      "sha256": "be5028ada1801939f2f53daa010249bc031a9a6a43f2555aee0aa7c5aac7a39d"
+    },
+    {
+      "path": "site/exports/hust-math-center.xlsx",
+      "school_id": "hust",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 6,
+          "columns": 19,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 6,
+          "columns": 7,
+          "hyperlinks": 6
+        }
+      ],
+      "sha256": "958cd31af3a503ea4187fe4f6bfd42131be4d57d453f7fcbe5a02bdeb27533b5"
+    },
+    {
+      "path": "site/exports/hust-math-interdisciplinary.xlsx",
+      "school_id": "hust",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 3,
+          "columns": 19,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 5,
+          "columns": 7,
+          "hyperlinks": 5
+        }
+      ],
+      "sha256": "ec1f1fa56ac08e000b7808f0297d6814dbb9f744a4c42003da2b6c3fba39524f"
+    },
+    {
+      "path": "site/exports/jlu-cs.xlsx",
+      "school_id": "jlu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 22,
+          "columns": 19,
+          "hyperlinks": 22
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 13,
+          "columns": 7,
+          "hyperlinks": 13
+        }
+      ],
+      "sha256": "4546f557b871c5e584dfdaac60affa8551bfa545cca0799018453e84e73a13a0"
+    },
+    {
+      "path": "site/exports/jlu-math-applied.xlsx",
+      "school_id": "jlu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 8,
+          "columns": 19,
+          "hyperlinks": 8
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 3,
+          "columns": 7,
+          "hyperlinks": 3
+        }
+      ],
+      "sha256": "14536830ff485834b0e45603626ba94a72d6ed471cbc0162491479fb64dafa89"
+    },
+    {
+      "path": "site/exports/jlu-math-computational.xlsx",
+      "school_id": "jlu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 5,
+          "columns": 19,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 3,
+          "columns": 7,
+          "hyperlinks": 3
+        }
+      ],
+      "sha256": "81d7218696de8a5dbbe215ea7a4e37ad9e166db36a2ad41093ada4d9d0bfc46f"
+    },
+    {
+      "path": "site/exports/jlu-math-statistics.xlsx",
+      "school_id": "jlu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 8,
+          "columns": 19,
+          "hyperlinks": 8
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 4,
+          "columns": 7,
+          "hyperlinks": 4
+        }
+      ],
+      "sha256": "610cb4d6748821fd9e0f8b31dbfda3e04adea16e10c7ea0961a768f7cd9261b4"
+    },
+    {
+      "path": "site/exports/lzu-basic-mathematics.xlsx",
+      "school_id": "lzu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 21,
+          "columns": 19,
+          "hyperlinks": 21
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 6,
+          "columns": 12,
+          "hyperlinks": 13
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 6,
+          "columns": 12,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 14,
+          "columns": 7,
+          "hyperlinks": 14
+        }
+      ],
+      "sha256": "6dc90c17aac81334fe036dceed021942ea587480215450eb04ed61cab8eba029"
+    },
+    {
+      "path": "site/exports/lzu-law.xlsx",
+      "school_id": "lzu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 11,
+          "columns": 19,
+          "hyperlinks": 11
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 6,
+          "columns": 7,
+          "hyperlinks": 6
+        }
+      ],
+      "sha256": "8d62ec02ae35b737b04feb281ed89e0cc6cdacfcc83ae9b6f3eca2f891db294f"
+    },
+    {
+      "path": "site/exports/muc-ise-cs.xlsx",
+      "school_id": "muc",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 15,
+          "columns": 19,
+          "hyperlinks": 15
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 12,
+          "columns": 7,
+          "hyperlinks": 12
+        }
+      ],
+      "sha256": "b7642d209c8ada88bd470c37fe712191233031b8765402b6fd94400f039c305e"
+    },
+    {
+      "path": "site/exports/muc-science-math.xlsx",
+      "school_id": "muc",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 18,
+          "columns": 19,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 9,
+          "columns": 7,
+          "hyperlinks": 9
+        }
+      ],
+      "sha256": "22ef1e1930c2c49eed629dceb1bbf0a12fd84e880494eb582ab3acf7fd628279"
+    },
+    {
+      "path": "site/exports/neu-cse-communication-electronics.xlsx",
+      "school_id": "neu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 7,
+          "columns": 19,
+          "hyperlinks": 7
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 5,
+          "columns": 7,
+          "hyperlinks": 5
+        }
+      ],
+      "sha256": "bf487e818fd5e703b46b8f334baa28dea7b7790bd600b3a74a04f86c471164ae"
+    },
+    {
+      "path": "site/exports/neu-cse-cs.xlsx",
+      "school_id": "neu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 15,
+          "columns": 19,
+          "hyperlinks": 15
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 9,
+          "columns": 7,
+          "hyperlinks": 9
+        }
+      ],
+      "sha256": "6a9dfc9331ac2fc757122aa3d3bcff44d1736c91dcd32906bcbef0dd1c056079"
+    },
+    {
+      "path": "site/exports/neu-science-math.xlsx",
+      "school_id": "neu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 11,
+          "columns": 19,
+          "hyperlinks": 11
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 5,
+          "columns": 7,
+          "hyperlinks": 5
+        }
+      ],
+      "sha256": "12f9dbeaf2b25a09049b5aa3a3489e9bce73006f7bab618d2de0e7489542f796"
+    },
+    {
+      "path": "site/exports/nju-cs.xlsx",
+      "school_id": "nju",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 17,
+          "columns": 19,
+          "hyperlinks": 17
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 17,
+          "columns": 7,
+          "hyperlinks": 17
+        }
+      ],
+      "sha256": "e75ef1d05b07d7c34effe7abbacce42d088eff06a18fc6966366fc1c88d54785"
+    },
+    {
+      "path": "site/exports/nju-math.xlsx",
+      "school_id": "nju",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 9,
+          "columns": 19,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 6,
+          "columns": 7,
+          "hyperlinks": 6
+        }
+      ],
+      "sha256": "221e7ff8f76efdde2fd3542aa979d75651dfd972655d8119a6a1ca6a8e071c58"
+    },
+    {
+      "path": "site/exports/nju-sme.xlsx",
+      "school_id": "nju",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 9,
+          "columns": 19,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 4,
+          "columns": 12,
+          "hyperlinks": 4
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 3,
+          "columns": 7,
+          "hyperlinks": 3
+        }
+      ],
+      "sha256": "1a4af1c71eb2aaf3a18081db8653aee42c0879605eb5f0ed04b746cd007edf94"
+    },
+    {
+      "path": "site/exports/nku-cs.xlsx",
+      "school_id": "nku",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 12,
+          "columns": 19,
+          "hyperlinks": 12
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 7,
+          "columns": 7,
+          "hyperlinks": 7
+        }
+      ],
+      "sha256": "129463d6106d689e4a416d343ed11d089dd9b98584178de4635c3a08a2382771"
+    },
+    {
+      "path": "site/exports/nku-cyber.xlsx",
+      "school_id": "nku",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 2,
+          "columns": 19,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 5,
+          "columns": 7,
+          "hyperlinks": 5
+        }
+      ],
+      "sha256": "920978e9a9d5e45a57915c2c8ccc739ca5e928aad3f97df899f494df62e53d75"
+    },
+    {
+      "path": "site/exports/nku-stat.xlsx",
+      "school_id": "nku",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 24,
+          "columns": 19,
+          "hyperlinks": 24
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 6,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 9,
+          "columns": 7,
+          "hyperlinks": 9
+        }
+      ],
+      "sha256": "227e4c232fc5efc3a5e6e087ed3282bdd56c9b20738ce3102dd715b95d75e4aa"
+    },
+    {
+      "path": "site/exports/nudt-aerospace.xlsx",
+      "school_id": "nudt",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 5,
+          "columns": 19,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 3,
+          "columns": 7,
+          "hyperlinks": 3
+        }
+      ],
+      "sha256": "4d422f6152bc4ef75d334a719e60a6eaff8bbc5903dc582c363e095814a6f256"
+    },
+    {
+      "path": "site/exports/nudt-electronic-science.xlsx",
+      "school_id": "nudt",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 3,
+          "columns": 19,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 3,
+          "columns": 7,
+          "hyperlinks": 3
+        }
+      ],
+      "sha256": "3260867dd2d0b5239a05c60c3167240c92ee65ce56b6935d7aaf9e56e0fc9c84"
+    },
+    {
+      "path": "site/exports/nudt-electronics.xlsx",
+      "school_id": "nudt",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 5,
+          "columns": 19,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 3,
+          "columns": 7,
+          "hyperlinks": 3
+        }
+      ],
+      "sha256": "ad7a5b1686c3da6e73d2f680c41a9ed26fdc99b2d8847175b98012a37c70e92f"
+    },
+    {
+      "path": "site/exports/nudt-foreign-languages.xlsx",
+      "school_id": "nudt",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 1,
+          "columns": 19,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 3,
+          "columns": 7,
+          "hyperlinks": 3
+        }
+      ],
+      "sha256": "70f192adf64fe607676d7e3b78e9fff5a5674c1ffaea2032699957f13e4af4a5"
+    },
+    {
+      "path": "site/exports/nudt-intelligence.xlsx",
+      "school_id": "nudt",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 5,
+          "columns": 19,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 6,
+          "columns": 7,
+          "hyperlinks": 6
+        }
+      ],
+      "sha256": "9225f49a9da23e9a168158a4d02aaa0a98e6fc06aab75f02258dde270725bd80"
+    },
+    {
+      "path": "site/exports/nudt-systems.xlsx",
+      "school_id": "nudt",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 1,
+          "columns": 19,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 3,
+          "columns": 7,
+          "hyperlinks": 3
+        }
+      ],
+      "sha256": "417c343ecbc9917662df640ab2dffb3ec16b38a3f20c3618f009068c81c8bfb1"
+    },
+    {
+      "path": "site/exports/nwpu-cs-computer-science-software.xlsx",
+      "school_id": "nwpu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 5,
+          "columns": 11,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 20,
+          "columns": 19,
+          "hyperlinks": 20
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 23,
+          "columns": 7,
+          "hyperlinks": 23
+        }
+      ],
+      "sha256": "15f646eb84972804a67d0e7f2b763bc252822ce2f01a3bf7aaad89cf1511ac4d"
+    },
+    {
+      "path": "site/exports/nwpu-mathematical-sciences.xlsx",
+      "school_id": "nwpu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 15,
+          "columns": 19,
+          "hyperlinks": 15
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 6,
+          "columns": 12,
+          "hyperlinks": 13
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 22,
+          "columns": 7,
+          "hyperlinks": 22
+        }
+      ],
+      "sha256": "c36069333720ebb5c0965eb0f27c37eb9b957c396010bc3dabf095ec7d4dba61"
+    },
+    {
+      "path": "site/exports/nwsuaf-agronomy-agronomy-department.xlsx",
+      "school_id": "nwsuaf",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 13,
+          "columns": 19,
+          "hyperlinks": 13
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 6,
+          "columns": 12,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 7,
+          "columns": 7,
+          "hyperlinks": 7
+        }
+      ],
+      "sha256": "38ab9f806f741fc54bca7f42cd149662681de1573710e33385ccb31ab58a1aad"
+    },
+    {
+      "path": "site/exports/nwsuaf-cie-cs.xlsx",
+      "school_id": "nwsuaf",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 10,
+          "columns": 19,
+          "hyperlinks": 10
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 6,
+          "columns": 7,
+          "hyperlinks": 6
+        }
+      ],
+      "sha256": "5a0a8e7b0dbc3dc0563bc8a131d0d0f7908c94baae45167d69f044ecdaf7db1c"
+    },
+    {
+      "path": "site/exports/nwsuaf-cie-data.xlsx",
+      "school_id": "nwsuaf",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 3,
+          "columns": 19,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 2,
+          "columns": 7,
+          "hyperlinks": 2
+        }
+      ],
+      "sha256": "c008f08177b0577eb59e985fe06ed84b756ebf969229af3d6d538e3a3e056bf8"
+    },
+    {
+      "path": "site/exports/ouc-ise-cs.xlsx",
+      "school_id": "ouc",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 5,
+          "columns": 11,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 25,
+          "columns": 19,
+          "hyperlinks": 25
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 4,
+          "columns": 12,
+          "hyperlinks": 10
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 5,
+          "columns": 12,
+          "hyperlinks": 15
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 21,
+          "columns": 7,
+          "hyperlinks": 21
+        }
+      ],
+      "sha256": "bef4f4e5a5257b44251746e8e15162bd646857d088f6e294c8eeb4d1b203633a"
+    },
+    {
+      "path": "site/exports/ouc-math-department.xlsx",
+      "school_id": "ouc",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 13,
+          "columns": 19,
+          "hyperlinks": 13
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 11,
+          "columns": 7,
+          "hyperlinks": 11
+        }
+      ],
+      "sha256": "a8b97ffaf5f340533da5a8d12b133a76a5b54c676dc8637a2459662dd7efe272"
+    },
+    {
+      "path": "site/exports/pku-ic-microelectronics.xlsx",
+      "school_id": "pku",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 20,
+          "columns": 11,
+          "hyperlinks": 20
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 141,
+          "columns": 19,
+          "hyperlinks": 141
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 10,
+          "columns": 12,
+          "hyperlinks": 30
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 31,
+          "columns": 12,
+          "hyperlinks": 82
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 123,
+          "columns": 7,
+          "hyperlinks": 123
+        }
+      ],
+      "sha256": "7291ebe2cc688be153704102e39d3864df91bac5ad97259d16bd73a656554f42"
+    },
+    {
+      "path": "site/exports/ruc-gsai.xlsx",
+      "school_id": "ruc",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 22,
+          "columns": 19,
+          "hyperlinks": 22
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 13,
+          "columns": 7,
+          "hyperlinks": 13
+        }
+      ],
+      "sha256": "6b1429699da46c5f4fee3585c11721d2bd4023fd5d1fc063b533f690c5760b65"
+    },
+    {
+      "path": "site/exports/ruc-info-eim.xlsx",
+      "school_id": "ruc",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 20,
+          "columns": 19,
+          "hyperlinks": 20
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 4,
+          "columns": 12,
+          "hyperlinks": 12
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 13,
+          "columns": 7,
+          "hyperlinks": 13
+        }
+      ],
+      "sha256": "2ac362a53b5fbb1ff7580f04bba9d2c6fcec00a31540cfcde5cbe41c1c0c0119"
+    },
+    {
+      "path": "site/exports/scu-chemical-engineering.xlsx",
+      "school_id": "scu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 25,
+          "columns": 19,
+          "hyperlinks": 25
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 4,
+          "columns": 12,
+          "hyperlinks": 12
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 7,
+          "columns": 7,
+          "hyperlinks": 7
+        }
+      ],
+      "sha256": "60f80f78f8ecfa134b4957c0d2d04a16c78f2348a2c9ffb612784adcfd625186"
+    },
+    {
+      "path": "site/exports/scu-cs.xlsx",
+      "school_id": "scu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 13,
+          "columns": 19,
+          "hyperlinks": 13
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 11,
+          "columns": 7,
+          "hyperlinks": 11
+        }
+      ],
+      "sha256": "3cc913079af73ad9b667b2a7e248c9b693bee07aa6ccc49b954f96a93cd50d5d"
+    },
+    {
+      "path": "site/exports/scut-cs.xlsx",
+      "school_id": "scut",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 21,
+          "columns": 19,
+          "hyperlinks": 21
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 13,
+          "columns": 7,
+          "hyperlinks": 13
+        }
+      ],
+      "sha256": "6fc48b36e796167f01e0326b06812c3d7507e10a9585b36b18fabdff9009bdf0"
+    },
+    {
+      "path": "site/exports/scut-math.xlsx",
+      "school_id": "scut",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 20,
+          "columns": 19,
+          "hyperlinks": 20
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 5,
+          "columns": 12,
+          "hyperlinks": 11
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 6,
+          "columns": 12,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 14,
+          "columns": 7,
+          "hyperlinks": 14
+        }
+      ],
+      "sha256": "4c461609c2f0e78b8be8cc0f3a020387c67a8f52a787245ef678df126db5f5ee"
+    },
+    {
+      "path": "site/exports/sdu-cs.xlsx",
+      "school_id": "sdu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 20,
+          "columns": 19,
+          "hyperlinks": 20
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 9,
+          "columns": 7,
+          "hyperlinks": 9
+        }
+      ],
+      "sha256": "15065fcc41a9a0f5413cb6bf36a83ddb7b6dd8ef3b42e54a488929feb3c2653e"
+    },
+    {
+      "path": "site/exports/sdu-math.xlsx",
+      "school_id": "sdu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 24,
+          "columns": 19,
+          "hyperlinks": 24
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 13,
+          "columns": 7,
+          "hyperlinks": 13
+        }
+      ],
+      "sha256": "e9f056cb5a86693f16de85a93c3d50f3195140c34c87f75fa6e4580fd2232202"
+    },
+    {
+      "path": "site/exports/seu-computing-joint-roster.xlsx",
+      "school_id": "seu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 4,
+          "columns": 19,
+          "hyperlinks": 4
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 4,
+          "columns": 7,
+          "hyperlinks": 4
+        }
+      ],
+      "sha256": "48d5b9a81a28296fe5d265edcd4fc369d1c970fcaffd0c7df91b781f79d528fe"
+    },
+    {
+      "path": "site/exports/seu-cs.xlsx",
+      "school_id": "seu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 7,
+          "columns": 19,
+          "hyperlinks": 7
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 4
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 12,
+          "columns": 7,
+          "hyperlinks": 12
+        }
+      ],
+      "sha256": "abe27d1aa51acf1275aa560931da66d82ffe22fb451f62dd8c46168b07c2d465"
+    },
+    {
+      "path": "site/exports/seu-math-computational.xlsx",
+      "school_id": "seu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 9,
+          "columns": 19,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 3,
+          "columns": 7,
+          "hyperlinks": 3
+        }
+      ],
+      "sha256": "52f2403373aba5dee463834813b9e7f8bd497c3760e6688e5de592964e869751"
+    },
+    {
+      "path": "site/exports/seu-math-systems.xlsx",
+      "school_id": "seu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 19,
+          "columns": 19,
+          "hyperlinks": 19
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 5,
+          "columns": 7,
+          "hyperlinks": 5
+        }
+      ],
+      "sha256": "f54dc7088b8341fce7a57f31a6dc9b4c75bb49cb3bae428ef5a207552024f42f"
+    },
+    {
+      "path": "site/exports/sjtu-ic-chipdesign.xlsx",
+      "school_id": "sjtu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 19,
+          "columns": 11,
+          "hyperlinks": 19
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 103,
+          "columns": 19,
+          "hyperlinks": 103
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 44,
+          "columns": 12,
+          "hyperlinks": 132
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 79,
+          "columns": 7,
+          "hyperlinks": 79
+        }
+      ],
+      "sha256": "b3fa394373ae7fcb6c84142d81637c22e5f8dfaa0d4f1df97c93163cecc89a11"
+    },
+    {
+      "path": "site/exports/sysu-math.xlsx",
+      "school_id": "sysu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 18,
+          "columns": 19,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 5,
+          "columns": 12,
+          "hyperlinks": 11
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 23,
+          "columns": 7,
+          "hyperlinks": 23
+        }
+      ],
+      "sha256": "3edf48eda175bb96169ef9cd3d0960c5195ba3537d04431843b22e7f27cd2144"
+    },
+    {
+      "path": "site/exports/sysu-math-department.xlsx",
+      "school_id": "sysu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 7,
+          "columns": 19,
+          "hyperlinks": 7
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 10,
+          "columns": 7,
+          "hyperlinks": 10
+        }
+      ],
+      "sha256": "ecc826f6e90603d05c17f6e7ed167f97974db04fbe3b175ca3e6ffbcbdc33111"
+    },
+    {
+      "path": "site/exports/sysu-mathzh.xlsx",
+      "school_id": "sysu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 1,
+          "columns": 11,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 6,
+          "columns": 19,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 6,
+          "columns": 7,
+          "hyperlinks": 6
+        }
+      ],
+      "sha256": "cdebb1c4bdb74a374c17d7c0e7f68eb5fc596833d450098b28a9ccb64ffb37d9"
+    },
+    {
+      "path": "site/exports/thu-ee-communications.xlsx",
+      "school_id": "thu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 15,
+          "columns": 11,
+          "hyperlinks": 15
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 120,
+          "columns": 19,
+          "hyperlinks": 120
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 7
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 27,
+          "columns": 12,
+          "hyperlinks": 81
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 88,
+          "columns": 7,
+          "hyperlinks": 88
+        }
+      ],
+      "sha256": "8701a586cde1d10eec194b8eb20fd648f12af8620f1d6c0c9828ab00a88d36e9"
+    },
+    {
+      "path": "site/exports/tju-math.xlsx",
+      "school_id": "tju",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 19,
+          "columns": 19,
+          "hyperlinks": 19
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 12,
+          "columns": 7,
+          "hyperlinks": 12
+        }
+      ],
+      "sha256": "399936224a993c995cfad6cbb80a6dc74486f21621fe5e6ae473aee4d939a20e"
+    },
+    {
+      "path": "site/exports/tju-sme.xlsx",
+      "school_id": "tju",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 25,
+          "columns": 19,
+          "hyperlinks": 25
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 4,
+          "columns": 12,
+          "hyperlinks": 12
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 18,
+          "columns": 7,
+          "hyperlinks": 18
+        }
+      ],
+      "sha256": "4f963ba2740c54d0406764f9384a03733e5ecc406294c633290fb333fa6144c0"
+    },
+    {
+      "path": "site/exports/tongji-cs.xlsx",
+      "school_id": "tongji",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 8,
+          "columns": 19,
+          "hyperlinks": 8
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 7,
+          "columns": 7,
+          "hyperlinks": 7
+        }
+      ],
+      "sha256": "99bd75bb420f58781e1b8a389e7d8ff72f5ccb97c4a77f09ed0af96da50c26d5"
+    },
+    {
+      "path": "site/exports/tongji-math-teaching.xlsx",
+      "school_id": "tongji",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 5,
+          "columns": 19,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 4,
+          "columns": 7,
+          "hyperlinks": 4
+        }
+      ],
+      "sha256": "84e40719460679f31b96cdda3cff6da20c17a10448c3e9ac89f92d5c4e351a3b"
+    },
+    {
+      "path": "site/exports/uestc-aihss.xlsx",
+      "school_id": "uestc",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 23,
+          "columns": 19,
+          "hyperlinks": 23
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 9
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 9,
+          "columns": 7,
+          "hyperlinks": 9
+        }
+      ],
+      "sha256": "3a4fabc60237a4ff3e854f764d4c4bbe92fe55c88977f7c7ce847b0d22838952"
+    },
+    {
+      "path": "site/exports/uestc-applied-math-center.xlsx",
+      "school_id": "uestc",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 1
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 19,
+          "columns": 19,
+          "hyperlinks": 19
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 7
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 5,
+          "columns": 12,
+          "hyperlinks": 15
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 17,
+          "columns": 7,
+          "hyperlinks": 17
+        }
+      ],
+      "sha256": "0d31c20c27bcf996526e01c573cf396f11f1fdfd3a888be34d8033d042148c31"
+    },
+    {
+      "path": "site/exports/ustc-ic.xlsx",
+      "school_id": "ustc",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 21,
+          "columns": 19,
+          "hyperlinks": 21
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 6,
+          "columns": 12,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 12,
+          "columns": 7,
+          "hyperlinks": 12
+        }
+      ],
+      "sha256": "bba52cc29f384a3ccc4e6b582ab4cdf1e7be215e4b6059926e1f6809cfa0be7e"
+    },
+    {
+      "path": "site/exports/ustc-math.xlsx",
+      "school_id": "ustc",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 20,
+          "columns": 19,
+          "hyperlinks": 20
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 8
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 3,
+          "columns": 12,
+          "hyperlinks": 8
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 21,
+          "columns": 7,
+          "hyperlinks": 21
+        }
+      ],
+      "sha256": "60edd4e8f47842ca1ce0e5e64f874d9365bffb51e71a92c641f4b4969e811297"
+    },
+    {
+      "path": "site/exports/whu-eis.xlsx",
+      "school_id": "whu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 5,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 20,
+          "columns": 19,
+          "hyperlinks": 20
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 5,
+          "columns": 12,
+          "hyperlinks": 13
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 18,
+          "columns": 7,
+          "hyperlinks": 18
+        }
+      ],
+      "sha256": "df7dfc47d4307136d341cbae96f731302c4414cd5e077b29dcb32968e63bf423"
+    },
+    {
+      "path": "site/exports/whu-math-stat.xlsx",
+      "school_id": "whu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 17,
+          "columns": 19,
+          "hyperlinks": 17
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 5,
+          "columns": 12,
+          "hyperlinks": 15
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 16,
+          "columns": 7,
+          "hyperlinks": 16
+        }
+      ],
+      "sha256": "4d45cfd5fd92a1f18a6d89cbe9112bd9da8c9faac6696c025e1d81b297725818"
+    },
+    {
+      "path": "site/exports/xjtu-math-department.xlsx",
+      "school_id": "xjtu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 31,
+          "columns": 19,
+          "hyperlinks": 31
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 6,
+          "columns": 12,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 18,
+          "columns": 7,
+          "hyperlinks": 18
+        }
+      ],
+      "sha256": "2bef8af7e2ac74764b31b651542b4f2547962c61d0a2ac95ee6530c45a2fc7f1"
+    },
+    {
+      "path": "site/exports/xjtu-se.xlsx",
+      "school_id": "xjtu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 17,
+          "columns": 19,
+          "hyperlinks": 17
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 9,
+          "columns": 7,
+          "hyperlinks": 9
+        }
+      ],
+      "sha256": "74dda6adf6cb6a0ae0a376b13ca98bcd6fc7c06dbe72037172b16df698da94d2"
+    },
+    {
+      "path": "site/exports/xmu-informatics-cs.xlsx",
+      "school_id": "xmu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 2,
+          "columns": 11,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 5,
+          "columns": 19,
+          "hyperlinks": 5
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 1,
+          "columns": 12,
+          "hyperlinks": 2
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 8,
+          "columns": 7,
+          "hyperlinks": 8
+        }
+      ],
+      "sha256": "4975c6535af5ec76a4c5cf9ad40e78627739cabf40f422db69a443b09152b62a"
+    },
+    {
+      "path": "site/exports/xmu-math-applied.xlsx",
+      "school_id": "xmu",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 3,
+          "columns": 11,
+          "hyperlinks": 3
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 18,
+          "columns": 19,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 0,
+          "columns": 12,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 2,
+          "columns": 12,
+          "hyperlinks": 6
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 6,
+          "columns": 7,
+          "hyperlinks": 6
+        }
+      ],
+      "sha256": "080164257599a45cc2be8eb901fda292c3d9a233c10facd3319a4bb894379b55"
+    },
+    {
+      "path": "site/exports/zju-ic-manufacturing.xlsx",
+      "school_id": "zju",
+      "sheets": [
+        {
+          "sheet": "总览",
+          "data_rows": 13,
+          "columns": 11,
+          "hyperlinks": 13
+        },
+        {
+          "sheet": "经历",
+          "data_rows": 70,
+          "columns": 19,
+          "hyperlinks": 70
+        },
+        {
+          "sheet": "导师",
+          "data_rows": 7,
+          "columns": 12,
+          "hyperlinks": 21
+        },
+        {
+          "sheet": "论文",
+          "data_rows": 6,
+          "columns": 12,
+          "hyperlinks": 18
+        },
+        {
+          "sheet": "来源",
+          "data_rows": 62,
+          "columns": 7,
+          "hyperlinks": 62
+        }
+      ],
+      "sha256": "e683c104495e43aec93846c5d8767bd1040e0a135592c1003526028ed03262f9"
+    },
+    {
+      "path": "site/exports/待核对名录.xlsx",
+      "school_id": null,
+      "sheets": [
+        {
+          "sheet": "待核对名录",
+          "data_rows": 1688,
+          "columns": 34,
+          "hyperlinks": 4151
+        },
+        {
+          "sheet": "覆盖说明",
+          "data_rows": 39,
+          "columns": 2,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "分类覆盖",
+          "data_rows": 204,
+          "columns": 10,
+          "hyperlinks": 204
+        },
+        {
+          "sheet": "冲突记录",
+          "data_rows": 30,
+          "columns": 2,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "消歧候选",
+          "data_rows": 60,
+          "columns": 6,
+          "hyperlinks": 22
+        },
+        {
+          "sheet": "批次来源",
+          "data_rows": 100,
+          "columns": 9,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "排除与待查",
+          "data_rows": 11,
+          "columns": 2,
+          "hyperlinks": 0
+        },
+        {
+          "sheet": "原始来源观察",
+          "data_rows": 1726,
+          "columns": 10,
+          "hyperlinks": 1726
+        },
+        {
+          "sheet": "整合依据",
+          "data_rows": 2,
+          "columns": 6,
+          "hyperlinks": 0
+        }
+      ],
+      "sha256": "f5c03ad8c5faad94c2a0b068b74d07ede0b5564f02505af1c2d0ccd03b17273c"
+    }
+  ],
+  "baseline_known_protected_hashes_unchanged": {
+    "data/atlas.json": "43a43673f1092c7eea9c19cbca02fe1513ed3dd8dd14dad10ccc08d3727580fe",
+    "data/rosters.json": "df12e56cff15203e821a4cf37abe206058b8b1526278052ba25c1b1ebe03a5c5",
+    "site/universities.js": "9323dad42fc2c35808ad92888cdffb0ad41edaefaee88c3b57ebb798349c2d62"
+  },
+  "limitations": [
+    "Local, offline integration and export verification only; no new external source requests, browser verification, publication or deployment performed.",
+    "No assertion that selected school samples cover entire departments or institutions.",
+    "Workbook render layout was not changed; no native Excel application or visual renderer was used.",
+    "Source review details and unresolved fields remain in the nine per-school progress files."
+  ],
+  "focused_test_runs": [
+    {
+      "command": "python -m unittest discover -s tests -p 'test_deterministic_exports.py' -v",
+      "tests": 1,
+      "status": "passed"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_build.py' -v",
+      "tests": 15,
+      "status": "passed"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_school_scope.py' -v",
+      "tests": 5,
+      "status": "passed"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_queue.py' -v",
+      "tests": 11,
+      "status": "passed"
+    },
+    {
+      "command": "python scripts/validate_queue.py progress/work-queue.json --check-artifacts",
+      "tasks": 211,
+      "warnings": 0,
+      "status": "passed"
+    }
+  ],
+  "full_regression_status": "Assigned to the parent integrator; not claimed by this focused export report."
+}

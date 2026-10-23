@@ -1,0 +1,176 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29",
+  "school_id": "uestc",
+  "school_name": "电子科技大学",
+  "batch_id": "faculty-batch-uestc-rotation-001",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "应用数学中心教职人员名单当次原序前3：顾亦奇、Kahn Jonas、孔婀芳；三人另有数学科学学院任职直接来源。中心与学院关系未核，不强造父子关系。",
+  "selection_basis": "应用数学中心教职人员名单当次原序前3：顾亦奇、Kahn Jonas、孔婀芳；三人另有数学科学学院任职直接来源。中心与学院关系未核，不强造父子关系。",
+  "source_urls": [
+    "https://cam.uestc.edu.cn/szdw/jzry.htm"
+  ],
+  "organization_ids": [
+    "uestc-applied-math-center"
+  ],
+  "selected_roster_observations": 3,
+  "counts": {
+    "selected_records": 3,
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 10,
+      "appointments": 9,
+      "mentors": 3,
+      "committee_members": 0,
+      "publications": 5,
+      "sources": 15,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "effective_professional_collections": {
+      "education": 10,
+      "appointments": 9,
+      "mentors": 3,
+      "committee_members": 0,
+      "publications": 5,
+      "sources": 15,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 0,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 2,
+      "degree_awarded_false": 2,
+      "degree_awarded_null": 6,
+      "confirmed_degree_events": 2
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 2,
+      "degree_awarded_false": 2,
+      "degree_awarded_null": 6,
+      "confirmed_degree_events": 2
+    }
+  },
+  "records": [
+    {
+      "person_id": "uestc-guyiqi",
+      "name": "顾亦奇",
+      "department_id": "uestc-applied-math-center",
+      "roster_entry_id": "roster-uestc-cam-guyiqi",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://faculty.uestc.edu.cn/yiqigu/zh_CN/index.htm",
+      "unknowns": [
+        "仅精选书目而非全集，未披露字段不表示不存在。",
+        "不从合作者反推导师，指导起讫时间未知。",
+        "本人独立站超时/普通HTTP503，不重复请求或代替校内页宣称读回。",
+        "硕士指导者及后续全部任职尚未核；不从论文香港单位补完整任职时间。"
+      ]
+    },
+    {
+      "person_id": "uestc-jonas-kahn",
+      "name": "Kahn Jonas",
+      "department_id": "uestc-applied-math-center",
+      "roster_entry_id": "roster-uestc-cam-jonas-kahn",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://new1.uestc.edu.cn/?Id=96708&n=UestcNews.Front.DocumentV2.ArticlePage",
+      "unknowns": [
+        "仅精选书目而非全集，未披露字段不表示不存在。",
+        "不从合作者反推导师，指导起讫时间未知。",
+        "早期本科/硕士或ENS学历尚未实读，不从索引补层次。",
+        "莱顿博士导师与学位时间未核。法文论文PDF工具体积超限，普通下载未完成并终止；关系使用可直接读取的官方答辩目录。"
+      ]
+    },
+    {
+      "person_id": "uestc-kongefang",
+      "name": "孔婀芳",
+      "department_id": "uestc-applied-math-center",
+      "roster_entry_id": "roster-uestc-cam-kongefang",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://mc.hunnu.edu.cn/info/1577/6314.htm",
+      "unknowns": [
+        "仅精选书目而非全集，未披露字段不表示不存在。",
+        "不从合作者反推导师，指导起讫时间未知。",
+        "本人导师尚未取得直接证据，合作者Xia不自动当导师。",
+        "当前个人主页及加入电子科大时间未知。"
+      ]
+    }
+  ],
+  "independent_source_review": {
+    "status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T18:18:27.923406+00:00",
+    "reviewed_data_sha256": "4ab16856a48c81695c851c6cfe82dfdea86dce573015788ab7ed0df5379ea133",
+    "checks": {
+      "source_reference_and_mentor_event_closure": "passed",
+      "counts_recomputed": true,
+      "source_package_modified": false
+    },
+    "integration_limits": [
+      "3份部分职业档案，10教育2true6null2博后false。顾3学位和孔3学位标签保持null，未补猜授位。",
+      "3关系为顾博士与本科论文导师、Kahn法国博士导师；后续导师未知不从合著推断。Shen有另一机构明确现职可导航；历史Cheng/Massart现职未知仅简介。",
+      "Kahn和孔的official_url是官方新闻/讲座简介而非本人主页，navigation false；中心与数学学院任职分别保留，不强造组织层级。",
+      "顾NUS博后在导师毕业去向中有直接证据，起止保守未细填；本人旧CV另有Research Fellow区间，不把毕业年当精确起任日。",
+      "公开最小职业事实与5精选书目（1会议4期刊），无个人联络/出生/学生列表；不公开原PDF缓存，不访问VPN逐篇链接。",
+      "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+      "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+    ],
+    "blockers": [],
+    "review_scope": "来源批次的既有独立核验；本次本地接入仅复核数据、来源闭合与导出，不声称重新访问网页。"
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-uestc-rotation-001.json",
+      "sha256": "4ab16856a48c81695c851c6cfe82dfdea86dce573015788ab7ed0df5379ea133",
+      "independent_review_file": "faculty-batch-uestc-rotation-001-independent-review.json",
+      "independent_review_sha256": "7a36e3980f10f6f1a9dbf42005082d65b039e8f4750e2bcd897de293968db1f3",
+      "scope_file": "faculty-batch-uestc-rotation-001-scope.json",
+      "scope_sha256": "39323754eb752b9b8e7a6bc93fde88e333408e3c347a9398e4166022eb1e2c5d",
+      "qa_file": "faculty-batch-uestc-rotation-001-qa.json",
+      "qa_sha256": "6cb620e87d36963b247a71bf2d145bb756dc9981f988934c1e062ca4efb58934"
+    }
+  ],
+  "limitations": [
+    "应用数学中心教职人员名单当次原序前3：顾亦奇、Kahn Jonas、孔婀芳；三人另有数学科学学院任职直接来源。中心与学院关系未核，不强造父子关系。",
+    "个人主页或导师现职仅官方当前列示，不推断全职、人事在岗或退休。",
+    "精选论文非全集，无逐篇链接时明确标记；不公开原始网页缓存。",
+    "3份部分职业档案，10教育2true6null2博后false。顾3学位和孔3学位标签保持null，未补猜授位。",
+    "3关系为顾博士与本科论文导师、Kahn法国博士导师；后续导师未知不从合著推断。Shen有另一机构明确现职可导航；历史Cheng/Massart现职未知仅简介。",
+    "Kahn和孔的official_url是官方新闻/讲座简介而非本人主页，navigation false；中心与数学学院任职分别保留，不强造组织层级。",
+    "顾NUS博后在导师毕业去向中有直接证据，起止保守未细填；本人旧CV另有Research Fellow区间，不把毕业年当精确起任日。",
+    "公开最小职业事实与5精选书目（1会议4期刊），无个人联络/出生/学生列表；不公开原PDF缓存，不访问VPN逐篇链接。",
+    "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+    "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+  ],
+  "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。"
+}

@@ -1,0 +1,341 @@
+{
+  "updated_at": "2026-10-23",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "baseline_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29",
+  "scope": "九校各取明确分类原序3条，共27条所选记录、25份部分职业资料与2份待完善；不是全院或全校枚举，不升级旧待核身份。",
+  "counts": {
+    "source_batch_count": 9,
+    "source_people": 27,
+    "new_schools": 0,
+    "new_organization_nodes": 12,
+    "reused_organization_observations": 1,
+    "new_campuses": 0,
+    "new_professional_profiles": 25,
+    "new_pending_profiles": 2,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 102,
+      "appointments": 72,
+      "mentors": 24,
+      "committee_members": 0,
+      "publications": 37,
+      "sources": 113,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "effective_global_collection_delta": {
+      "education": 102,
+      "appointments": 70,
+      "mentors": 24,
+      "committee_members": 0,
+      "publications": 37,
+      "sources": 108,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 2,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 5,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 19,
+      "degree_awarded_false": 42,
+      "degree_awarded_null": 41,
+      "confirmed_degree_events": 19
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 19,
+      "degree_awarded_false": 42,
+      "degree_awarded_null": 41,
+      "confirmed_degree_events": 19
+    },
+    "direct_guidance_types": {
+      "doctoral_advisor": 13,
+      "masters_advisor": 4,
+      "postdoctoral_advisor": 4,
+      "postdoctoral_co_advisor": 2,
+      "undergraduate_thesis_advisor": 1
+    },
+    "quick_link_eligible_mentor_records": 8,
+    "guidance_count_note": "24条阶段指导不是24位独立导师；本科论文1、博士后共同指导2、其他博士后4分别保留，不能作为额外授位证据。",
+    "publication_types": {
+      "journal_article": 32,
+      "book_chapter": 1,
+      "doctoral_thesis": 1,
+      "doctoral_dissertation": 2,
+      "conference_paper": 1
+    },
+    "projection": {
+      "schools_with_any_records": 39,
+      "schools_with_professional_profiles": 39,
+      "professional_records": 524,
+      "pending_records": 82,
+      "organization_nodes": 211,
+      "campus_nodes": 4,
+      "collections": {
+        "education": 1607,
+        "appointments": 1738,
+        "mentors": 207,
+        "committee_members": 10,
+        "publications": 842,
+        "sources": 1937,
+        "research_collaborators": 6,
+        "pending_mentor_candidates": 22,
+        "pending_mentors": 7,
+        "project_guidance": 1,
+        "professional_research_advisors": 2,
+        "pending_publications": 2,
+        "teaching": 9
+      },
+      "degree_counts": {
+        "degree_awarded_true": 672,
+        "degree_awarded_false": 375,
+        "degree_awarded_null": 560,
+        "confirmed_degree_events": 672
+      },
+      "roster_totals": {
+        "organization_count": 113,
+        "category_count": 177,
+        "entries_with_profile_link": 1487,
+        "entries_without_profile_link": 201,
+        "dedup_candidate_groups": 60,
+        "placeholder_profile_link_observations": 18,
+        "current_employment_count_verified": false,
+        "not_unique_people_count": true,
+        "record_count": 1688,
+        "raw_observation_count": 1726,
+        "roster_records": 1688,
+        "raw_source_observations": 1726,
+        "coverage_unit_count": 204,
+        "count_unit": "integrated_roster_records",
+        "source_record_grouping_reduction": 38,
+        "category_count_basis": "unique_organization_category_pairs",
+        "unique_organization_category_pairs": 177,
+        "batch_category_count": 196,
+        "category_count_source": "coverage_rows_preserved_without_deduplication"
+      }
+    }
+  },
+  "schools": [
+    {
+      "school_id": "cqu",
+      "school_name": "重庆大学",
+      "batch_id": "faculty-batch-cqu-rotation-001",
+      "coverage_path": "progress/cqu-rotation-wave3-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "lzu",
+      "school_name": "兰州大学",
+      "batch_id": "faculty-batch-lzu-rotation-001",
+      "coverage_path": "progress/lzu-rotation-wave3-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "nwpu",
+      "school_name": "西北工业大学",
+      "batch_id": "faculty-batch-nwpu-rotation-001",
+      "coverage_path": "progress/nwpu-rotation-wave3-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "nwsuaf",
+      "school_name": "西北农林科技大学",
+      "batch_id": "faculty-batch-nwsuaf-rotation-001",
+      "coverage_path": "progress/nwsuaf-rotation-wave3-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "scu",
+      "school_name": "四川大学",
+      "batch_id": "faculty-batch-scu-rotation-001",
+      "coverage_path": "progress/scu-rotation-wave3-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 2,
+      "pending_profiles": 1,
+      "status": "partial"
+    },
+    {
+      "school_id": "scut",
+      "school_name": "华南理工大学",
+      "batch_id": "faculty-batch-scut-rotation-001",
+      "coverage_path": "progress/scut-rotation-wave3-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "sysu",
+      "school_name": "中山大学",
+      "batch_id": "faculty-batch-sysu-rotation-001",
+      "coverage_path": "progress/sysu-rotation-wave3-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 2,
+      "pending_profiles": 1,
+      "status": "partial"
+    },
+    {
+      "school_id": "uestc",
+      "school_name": "电子科技大学",
+      "batch_id": "faculty-batch-uestc-rotation-001",
+      "coverage_path": "progress/uestc-rotation-wave3-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "xjtu",
+      "school_name": "西安交通大学",
+      "batch_id": "faculty-batch-xjtu-rotation-001",
+      "coverage_path": "progress/xjtu-rotation-wave3-coverage.json",
+      "selected_records": 3,
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    }
+  ],
+  "source_references": [
+    {
+      "file": "faculty-batch-cqu-rotation-001.json",
+      "sha256": "92c9e7041f00b7b99f9b69de44013b1a294f6e0fbbb6747b6887fdbb28ada32a",
+      "independent_review_file": "faculty-batch-cqu-rotation-001-independent-review.json",
+      "independent_review_sha256": "cb7dda810ebf5aa2957f07aec12be2ae42bfdacf62892ca2868929f8691426db",
+      "scope_file": "faculty-batch-cqu-rotation-001-scope.json",
+      "scope_sha256": "3d8178768a480258a3fe4cdaa0de102293ca2c8fb5c1f826f62f8c62019579d0",
+      "qa_file": "faculty-batch-cqu-rotation-001-qa.json",
+      "qa_sha256": "bae3c4608170ca010f3f4fe290ea2b9212efec0aab56fcd46e31a45fc66b031d"
+    },
+    {
+      "file": "faculty-batch-lzu-rotation-001.json",
+      "sha256": "c70ccd322594444d06eb061454bb6e77a2668c569ea7d40731ba22765649f24c",
+      "independent_review_file": "faculty-batch-lzu-rotation-001-independent-review.json",
+      "independent_review_sha256": "96a6d095773da6ab350775bb7a854392f68147d1d68bce615ceb7cff5071d707",
+      "scope_file": "faculty-batch-lzu-rotation-001-scope.json",
+      "scope_sha256": "db6bda0efda8682e99d3ffb3cbe22ef8a1a5fe4007ab7ffa62961f591d68d5bd",
+      "qa_file": "faculty-batch-lzu-rotation-001-qa.json",
+      "qa_sha256": "14deb7ea4eba3de6a832648a6109a108b7816f5122a9cab839a320e241802763"
+    },
+    {
+      "file": "faculty-batch-nwpu-rotation-001.json",
+      "sha256": "0c614ace2925824e4ff945da13fc8621b5604451633b76af088d5989734255c1",
+      "independent_review_file": "faculty-batch-nwpu-rotation-001-independent-review.json",
+      "independent_review_sha256": "146860132bc7114769db7d23d024b03d59c7cba3db3fe754cc6eb582dc646c52",
+      "scope_file": "faculty-batch-nwpu-rotation-001-scope.json",
+      "scope_sha256": "21a7c4525e663a0ba44dc969328292809ca225bafa0bb789e55473d4dc9aaa70",
+      "qa_file": "faculty-batch-nwpu-rotation-001-qa.json",
+      "qa_sha256": "89c1c9145516d67270144f1972d1ac95e6057ab9a7548f6c6c2e5783669633f9"
+    },
+    {
+      "file": "faculty-batch-nwsuaf-rotation-001.json",
+      "sha256": "19cd6cee7c18847dba1aa8da94a975eb6da5ccf372296cbbde5529eeeb3fa5a0",
+      "independent_review_file": "faculty-batch-nwsuaf-rotation-001-independent-review.json",
+      "independent_review_sha256": "61404d86c3aeab063477eba77eaf6acdc923dcb956a126e599d5d8d83132fba2",
+      "scope_file": "faculty-batch-nwsuaf-rotation-001-scope.json",
+      "scope_sha256": "744da16d59dbb0a39e60c8f03a027635450e7cd0af26b1f65b7a531c17bd90ab",
+      "qa_file": "faculty-batch-nwsuaf-rotation-001-qa.json",
+      "qa_sha256": "187bbd0aa39fe25f6a764480fb8ac5a0092e063be322ab5e6a4d02643819642a"
+    },
+    {
+      "file": "faculty-batch-scu-rotation-001.json",
+      "sha256": "f6e77f7cb079de3236051570b040c6bb140215e86270cdd17437c4e982c8a6dd",
+      "independent_review_file": "faculty-batch-scu-rotation-001-independent-review.json",
+      "independent_review_sha256": "6bd0cb51eb47f2efb609a4c5be2c42f894433cf4ffbb8066249a629c0f02b8ae",
+      "scope_file": "faculty-batch-scu-rotation-001-scope.json",
+      "scope_sha256": "341d4286bf2bb91edb0eb04eb8eeec2e5dae1b270ab7437ed48ff72098362bc1",
+      "qa_file": "faculty-batch-scu-rotation-001-qa.json",
+      "qa_sha256": "c466cddbedad7ec68de4992fe8eefaf0c7938842b4288396fee526b8248d42a7"
+    },
+    {
+      "file": "faculty-batch-scut-rotation-001.json",
+      "sha256": "528b670df3f36326a51260de8fdd64d1c6a50cfd0f27bf6bb838b6994ea2d0f5",
+      "independent_review_file": "faculty-batch-scut-rotation-001-independent-review.json",
+      "independent_review_sha256": "98bacce7a4a7a86234d0a9969ee974110bae5f05b76af3ff882910a383981c48",
+      "scope_file": "faculty-batch-scut-rotation-001-scope.json",
+      "scope_sha256": "79670600bcf00cc710561043abb27cec647f9c45084b0887884663d428a35eb2",
+      "qa_file": "faculty-batch-scut-rotation-001-qa.json",
+      "qa_sha256": "79befb9fad8215eea23ac5b4c326bc07b724af5c1e2d500c30d445b45defe0f5"
+    },
+    {
+      "file": "faculty-batch-sysu-rotation-001.json",
+      "sha256": "106892a97730e1de99dbf6d7f007cb9c86ccafed2b1ad1edcb42b759e7eb96af",
+      "independent_review_file": "faculty-batch-sysu-rotation-001-independent-review.json",
+      "independent_review_sha256": "243faeb6db572fc4412cf076a4320651ef6009e791ff784eabbe7684f8b5b5ed",
+      "scope_file": "faculty-batch-sysu-rotation-001-scope.json",
+      "scope_sha256": "1588f7141534dc905345c14bdb4b1ab10ee6b3ff59257c45bf33ed635b742238",
+      "qa_file": "faculty-batch-sysu-rotation-001-qa.json",
+      "qa_sha256": "a5cbe78b3ce8d133b30515f719ac9fc11f98b0f8bc02fe4e1314d499f21c89e4"
+    },
+    {
+      "file": "faculty-batch-uestc-rotation-001.json",
+      "sha256": "4ab16856a48c81695c851c6cfe82dfdea86dce573015788ab7ed0df5379ea133",
+      "independent_review_file": "faculty-batch-uestc-rotation-001-independent-review.json",
+      "independent_review_sha256": "7a36e3980f10f6f1a9dbf42005082d65b039e8f4750e2bcd897de293968db1f3",
+      "scope_file": "faculty-batch-uestc-rotation-001-scope.json",
+      "scope_sha256": "39323754eb752b9b8e7a6bc93fde88e333408e3c347a9398e4166022eb1e2c5d",
+      "qa_file": "faculty-batch-uestc-rotation-001-qa.json",
+      "qa_sha256": "6cb620e87d36963b247a71bf2d145bb756dc9981f988934c1e062ca4efb58934"
+    },
+    {
+      "file": "faculty-batch-xjtu-rotation-001.json",
+      "sha256": "e079624c7347a31a22431d616e9d596501851404b83a8628c5e0d21a2849a737",
+      "independent_review_file": "faculty-batch-xjtu-rotation-001-independent-review.json",
+      "independent_review_sha256": "eb8ae36a4e2d8d2e82eddd83cfdbdbb2412ac74d4c81c377f254d40696515213",
+      "scope_file": "faculty-batch-xjtu-rotation-001-scope.json",
+      "scope_sha256": "83a087530bc9b055af1c8ee0a9a1a723a8fdac2a646f89c45b78b211636af38f",
+      "qa_file": "faculty-batch-xjtu-rotation-001-qa.json",
+      "qa_sha256": "0b136527c0b26dbc9ca37387ef4b6a286557ebf766a6f2213df179f27eb196d5"
+    }
+  ],
+  "consumer_boundaries": [
+    "9校27条：25部分职业、梁葛萌及古林燕2待核；旧499职业+80待核全部字段和9教学事实不变。",
+    "102学习原值19true/41null/42false；导师、学位标签、毕业、论文答辩及博士后不补推授位。",
+    "重庆龚劬哥伦比亚仅性质未知教育背景，不改访问、博士或已获海外学位；何传江博士起点冲突保留。",
+    "24指导关系：13博士、4硕士、1本科论文、4博士后、2博士后共同指导；日期与源事件绑定不猜造。",
+    "沈捷普渡荣休与东方理工明确现职分别保留；郑斯宁、易法槐链接可读但当前在职未证，不启用在职快捷链接。",
+    "所有退休、荣休、仅历史/索引、当前主页未核导师不启用在职快捷；未定阶段、委员会及普通合作仍排除主图。",
+    "NWPU三本人门户412与SYSU三本人仅索引不可表示个人正文已读；外校历史职业证据独立标注。",
+    "UESTC Kahn官方新闻、孔婀芳外校讲座不是个人主页；中心与学院父子关系未核不创建；双博士明确授位但日期未知。",
+    "李斌龙只Twente明确授位，西工大联合培养不是第二博士；陈培UCLA联合培养不算海外学位；陈映珊28%国外岗位不写全职。",
+    "成诚2016/2017年冲突、陈炳仪2016入学非毕业、历史西北农业/成都科技大学985未知保持。",
+    "精选37成果不是全集：32期刊、1章节、3博士论文、1会议；链接等级不升级为全文或出版社独立验证。",
+    "全部来源引用闭合；不发布原缓存、隐私字段或全文。所有新增校区未知保持空；名录27观察不当全校全系人数。"
+  ],
+  "source_review_scope": "逐校独立核验通过并保留限制。本地接入复核来源关联、语义边界与导出；本次不重新访问外部网站。",
+  "release_status": "local_integrated_not_published"
+}

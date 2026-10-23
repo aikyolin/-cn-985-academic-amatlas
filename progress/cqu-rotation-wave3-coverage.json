@@ -1,0 +1,178 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29",
+  "school_id": "cqu",
+  "school_name": "重庆大学",
+  "batch_id": "faculty-batch-cqu-rotation-001",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "数学与统计学院教授列表原序前3：龚劬、何传江、黄小军。学院名录仅官方检索索引可见；学校教师门户数学与统计学院前两页正文交叉核验，按教授职称筛选的首3顺序相同，姓名、单位、职称及个人页链接均可核。非全院或全校覆盖。",
+  "selection_basis": "数学与统计学院教授列表原序前3：龚劬、何传江、黄小军。学院名录仅官方检索索引可见；学校教师门户数学与统计学院前两页正文交叉核验，按教授职称筛选的首3顺序相同，姓名、单位、职称及个人页链接均可核。非全院或全校覆盖。",
+  "source_urls": [
+    "https://faculty.cqu.edu.cn/xyjslb.jsp?id=1105&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1002",
+    "https://faculty.cqu.edu.cn/xyjslb.jsp?PAGENUM=2&id=1105&lang=zh_CN&st=0&totalpage=11&urltype=tsites.CollegeTeacherList&wbtreeid=1002",
+    "https://sci.cqu.edu.cn/xwz/szlb.jsp?urltype=tree.TreeTempUrl&wbtreeid=1329"
+  ],
+  "organization_ids": [
+    "cqu-mathematics-statistics"
+  ],
+  "selected_roster_observations": 3,
+  "counts": {
+    "selected_records": 3,
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 11,
+      "appointments": 9,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 10,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "effective_professional_collections": {
+      "education": 11,
+      "appointments": 9,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 10,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 0,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 1,
+      "degree_awarded_null": 9,
+      "confirmed_degree_events": 1
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 1,
+      "degree_awarded_null": 9,
+      "confirmed_degree_events": 1
+    }
+  },
+  "records": [
+    {
+      "person_id": "cqu-gongqu",
+      "name": "龚劬",
+      "department_id": "cqu-mathematics-statistics",
+      "roster_entry_id": "roster-cqu-mathematics-statistics-gongqu",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://faculty.cqu.edu.cn/QuGong/zh_CN/index.htm",
+      "unknowns": [
+        "未取得本人导师的直接明确依据，不从合著、招生或学生栏目推断。",
+        "精选论文可为空，不代表没有发表成果；不公开原始网页缓存。",
+        "学院数学实验旧简介检索索引提及1982年毕业、1988年获硕士、2002年获博士，正文未核；未将索引升级为授位证据或已核日期。",
+        "教师门户论文页只有笼统总数，未把总数当作论文条目。",
+        "美国哥伦比亚大学条目性质不明，不推断访问或学位。"
+      ]
+    },
+    {
+      "person_id": "cqu-hechuanjiang",
+      "name": "何传江",
+      "department_id": "cqu-mathematics-statistics",
+      "roster_entry_id": "roster-cqu-mathematics-statistics-hechuanjiang",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://faculty.cqu.edu.cn/ChuanjiangHe/zh_CN/",
+      "unknowns": [
+        "未取得本人导师的直接明确依据，不从合著、招生或学生栏目推断。",
+        "精选论文可为空，不代表没有发表成果；不公开原始网页缓存。",
+        "博士开始时间同页矛盾，保留两种源值而不选定。",
+        "旧工作表副院长的至今不升级为实时行政任职；在职筛选待核。",
+        "论文成果公开HTTP200正文为0条，非没有学术成果。"
+      ]
+    },
+    {
+      "person_id": "cqu-huangxiaojun",
+      "name": "黄小军",
+      "department_id": "cqu-mathematics-statistics",
+      "roster_entry_id": "roster-cqu-mathematics-statistics-huangxiaojun",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://faculty.cqu.edu.cn/XiaojunHuang/zh_CN/index/235019/list/index.htm",
+      "unknowns": [
+        "未取得本人导师的直接明确依据，不从合著、招生或学生栏目推断。",
+        "精选论文可为空，不代表没有发表成果；不公开原始网页缓存。",
+        "博士后起止时间及合作导师未披露。",
+        "个人论文栏目为0条，未以发表总数或期刊名称构造论文记录。"
+      ]
+    }
+  ],
+  "independent_source_review": {
+    "status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T18:21:19.136233+00:00",
+    "reviewed_data_sha256": "92c9e7041f00b7b99f9b69de44013b1a294f6e0fbbb6747b6887fdbb28ada32a",
+    "checks": {
+      "source_reference_and_mentor_event_closure": "passed",
+      "counts_recomputed": true,
+      "source_package_modified": false
+    },
+    "integration_limits": [
+      "三人均仅部分职业资料；龚/何在职未核不得进入严格现任教师统计，黄仅官方个人页明示在职；导航读取成功与在职资格分开。",
+      "哥伦比亚education_background不得转访问、海外学位或博士；国家/985未独立核保留未知，不把未知等同非985。",
+      "空精选书目和师承不表示无成果或无导师；不由论文总数生成虚构书目。",
+      "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+      "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+    ],
+    "blockers": [],
+    "review_scope": "来源批次的既有独立核验；本次本地接入仅复核数据、来源闭合与导出，不声称重新访问网页。"
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-cqu-rotation-001.json",
+      "sha256": "92c9e7041f00b7b99f9b69de44013b1a294f6e0fbbb6747b6887fdbb28ada32a",
+      "independent_review_file": "faculty-batch-cqu-rotation-001-independent-review.json",
+      "independent_review_sha256": "cb7dda810ebf5aa2957f07aec12be2ae42bfdacf62892ca2868929f8691426db",
+      "scope_file": "faculty-batch-cqu-rotation-001-scope.json",
+      "scope_sha256": "3d8178768a480258a3fe4cdaa0de102293ca2c8fb5c1f826f62f8c62019579d0",
+      "qa_file": "faculty-batch-cqu-rotation-001-qa.json",
+      "qa_sha256": "bae3c4608170ca010f3f4fe290ea2b9212efec0aab56fcd46e31a45fc66b031d"
+    }
+  ],
+  "limitations": [
+    "数学与统计学院教授列表原序前3：龚劬、何传江、黄小军。学院名录仅官方检索索引可见；学校教师门户数学与统计学院前两页正文交叉核验，按教授职称筛选的首3顺序相同，姓名、单位、职称及个人页链接均可核。非全院或全校覆盖。",
+    "龚劬、何传江列于教师门户但缺明确在职字段；严格在职筛选暂不纳入。黄小军个人页明确在职。",
+    "学院与理学部名录正文HTTP412后停止请求，未绕过限制；学院名单索引仅用于顺序参考。",
+    "仅职业最小事实，不含联系方式、出生、政治身份、学生名单或原始缓存。",
+    "本批3名已核部分职业档案、11条教育/研究事件，不将名录、空论文页或缺失字段计为完整履历。",
+    "三人均仅部分职业资料；龚/何在职未核不得进入严格现任教师统计，黄仅官方个人页明示在职；导航读取成功与在职资格分开。",
+    "哥伦比亚education_background不得转访问、海外学位或博士；国家/985未独立核保留未知，不把未知等同非985。",
+    "空精选书目和师承不表示无成果或无导师；不由论文总数生成虚构书目。",
+    "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+    "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+  ],
+  "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。"
+}

@@ -1,0 +1,172 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "76c3fe0b8f8e4eead2072d8cec045bf975570e29",
+  "school_id": "nwpu",
+  "school_name": "西北工业大学",
+  "batch_id": "faculty-batch-nwpu-rotation-001",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "数学科学系教授分类官方原序白学利、郭千桥、李斌龙；只取3人，非全系覆盖。",
+  "selection_basis": "数学科学系教授分类官方原序白学利、郭千桥、李斌龙；只取3人，非全系覆盖。",
+  "source_urls": [
+    "https://math.nwpu.edu.cn/szdw/jsdw2/axhf/sxkxx.htm"
+  ],
+  "organization_ids": [
+    "nwpu-mathematical-sciences"
+  ],
+  "selected_roster_observations": 3,
+  "counts": {
+    "selected_records": 3,
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 11,
+      "appointments": 4,
+      "mentors": 6,
+      "committee_members": 0,
+      "publications": 2,
+      "sources": 18,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "effective_professional_collections": {
+      "education": 11,
+      "appointments": 4,
+      "mentors": 6,
+      "committee_members": 0,
+      "publications": 2,
+      "sources": 18,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 0,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 4,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 2,
+      "confirmed_degree_events": 4
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 4,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 2,
+      "confirmed_degree_events": 4
+    }
+  },
+  "records": [
+    {
+      "person_id": "nwpu-baixueli",
+      "name": "白学利",
+      "department_id": "nwpu-mathematical-sciences",
+      "roster_entry_id": "roster-nwpu-math-prof-baixueli",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://teacher.nwpu.edu.cn/xuelibai.html",
+      "unknowns": [
+        "个人教师门户返回412，未重试或绕过；以学校名录、校方新闻/院系简介及公开机构学术资料补充。",
+        "当前名录列教授，不等独立人事在岗证明；精选论文非全集，缺失不推断。",
+        "本科、硕士及博士起年未公开核实。"
+      ]
+    },
+    {
+      "person_id": "nwpu-guoqianqiao",
+      "name": "郭千桥",
+      "department_id": "nwpu-mathematical-sciences",
+      "roster_entry_id": "roster-nwpu-math-prof-guoqianqiao",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://teacher.nwpu.edu.cn/qianqiaoguo.html",
+      "unknowns": [
+        "个人教师门户返回412，未重试或绕过；以学校名录、校方新闻/院系简介及公开机构学术资料补充。",
+        "当前名录列教授，不等独立人事在岗证明；精选论文非全集，缺失不推断。",
+        "本科及硕博入学年月未核；本批未取得可靠具体论文题录。"
+      ]
+    },
+    {
+      "person_id": "nwpu-libinlong",
+      "name": "李斌龙",
+      "department_id": "nwpu-mathematical-sciences",
+      "roster_entry_id": "roster-nwpu-math-prof-libinlong",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://teacher.nwpu.edu.cn/libinlong.html",
+      "unknowns": [
+        "个人教师门户返回412，未重试或绕过；以学校名录、校方新闻/院系简介及公开机构学术资料补充。",
+        "当前名录列教授，不等独立人事在岗证明；精选论文非全集，缺失不推断。",
+        "本科硕士授位状态及各阶段开始时间未知；联合培养不等两张博士学位。",
+        "博士后/访问指导者未明确，不能从共同作者推断。"
+      ]
+    }
+  ],
+  "independent_source_review": {
+    "status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T18:25:26.393865+00:00",
+    "reviewed_data_sha256": "0c614ace2925824e4ff945da13fc8621b5604451633b76af088d5989734255c1",
+    "checks": {
+      "source_reference_and_mentor_event_closure": "passed",
+      "counts_recomputed": true,
+      "source_package_modified": false
+    },
+    "integration_limits": [
+      "三本人受限门户不得表示已验证可导航；官方新闻简介不冒充个人主页。",
+      "指导 dates 为未知，不能自动等同整个教育区间；5非授位事件不进入海外学位筛选。",
+      "退休/荣休者只简要介绍关闭导航；钮2026荣休仍标官方索引而非正文已核；郑退休未知不据网页存续推全职在岗。",
+      "李博士仅Twente明确授位，西工大为联合培养；书目仅新闻论文和博士论文不代表完整发表目录。",
+      "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+      "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+    ],
+    "blockers": [],
+    "review_scope": "来源批次的既有独立核验；本次本地接入仅复核数据、来源闭合与导出，不声称重新访问网页。"
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-nwpu-rotation-001.json",
+      "sha256": "0c614ace2925824e4ff945da13fc8621b5604451633b76af088d5989734255c1",
+      "independent_review_file": "faculty-batch-nwpu-rotation-001-independent-review.json",
+      "independent_review_sha256": "146860132bc7114769db7d23d024b03d59c7cba3db3fe754cc6eb582dc646c52",
+      "scope_file": "faculty-batch-nwpu-rotation-001-scope.json",
+      "scope_sha256": "21a7c4525e663a0ba44dc969328292809ca225bafa0bb789e55473d4dc9aaa70",
+      "qa_file": "faculty-batch-nwpu-rotation-001-qa.json",
+      "qa_sha256": "89c1c9145516d67270144f1972d1ac95e6057ab9a7548f6c6c2e5783669633f9"
+    }
+  ],
+  "limitations": [
+    "数学科学系教授分类官方原序白学利、郭千桥、李斌龙；只取3人，非全系覆盖。",
+    "个人主页或导师现职仅官方当前列示，不推断全职、人事在岗或退休。",
+    "精选论文非全集，无逐篇链接时明确标记；不公开原始网页缓存。",
+    "三本人受限门户不得表示已验证可导航；官方新闻简介不冒充个人主页。",
+    "指导 dates 为未知，不能自动等同整个教育区间；5非授位事件不进入海外学位筛选。",
+    "退休/荣休者只简要介绍关闭导航；钮2026荣休仍标官方索引而非正文已核；郑退休未知不据网页存续推全职在岗。",
+    "李博士仅Twente明确授位，西工大为联合培养；书目仅新闻论文和博士论文不代表完整发表目录。",
+    "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+    "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+  ],
+  "next_action": "按所选3条的未知身份、授位、导师和当前归属继续补证；如扩充名录，另开明确分类和分页范围，不把本批当全院或全校完成。"
+}
