@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {UNIVERSITIES,findUniversities} from '../site/universities.js';
+test('national directory contains39 unique historical985 universities',()=>{assert.equal(UNIVERSITIES.length,39);assert.equal(new Set(UNIVERSITIES.map(u=>u.id)).size,39);assert.equal(new Set(UNIVERSITIES.map(u=>u.name)).size,39);assert.equal(UNIVERSITIES.filter(u=>u.id==='hit').length,1)});
+test('school search supports names aliases and empty result',()=>{assert.equal(findUniversities('哈工大')[0].id,'hit');assert.equal(findUniversities('北京大学')[0].id,'pku');assert.equal(findUniversities('国防科学技术大学')[0].id,'nudt');assert.equal(findUniversities('不存在高校').length,0);assert.equal(findUniversities().length,39)});
