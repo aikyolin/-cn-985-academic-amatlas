@@ -26,7 +26,7 @@ class DataTests(unittest.TestCase):
   self.assertEqual(sum('委员会' in (r[2] or '') for r in rows),4)
  def test_roster_is_separate(self):
   r=json.loads((ROOT/'site/rosters.json').read_text())
-  self.assertEqual(len(r['entries']),1381);self.assertEqual(len(self.d['people']),103)
+  self.assertEqual(len(r['entries']),1381);self.assertEqual(len(self.d['people']),123)
   self.assertTrue(all(e['profile_identity_verified'] is False for e in r['entries'] if e.get('batch_id')=='harbin-002'))
   self.assertEqual(sum(not e['official_profile_url'] for e in r['entries']),163)
  def test_roster_conflicts_preserved(self):
@@ -40,4 +40,27 @@ class DataTests(unittest.TestCase):
   import csv
   w=load_workbook(ROOT/'site/exports/待核对名录.xlsx');self.assertEqual(w.sheetnames,['待核对名录','覆盖说明','分类覆盖','冲突记录','消歧候选','批次来源','排除与待查','原始来源观察','整合依据']);self.assertEqual(w['待核对名录'].max_row,1382)
   with (ROOT/'site/exports/待核对名录.csv').open(encoding='utf-8-sig') as f:self.assertEqual(len(list(csv.reader(f))),1382)
+ def test_collaborator_cannot_be_promoted(self):
+  p=next(p for p in self.d['people'] if p['name']=='刘冰');p['research_collaborators'][0]['include_in_mentorship_graph']=True
+  with self.assertRaises(AssertionError):validate(self.d)
+ def test_collaborator_needs_existing_event(self):
+  p=next(p for p in self.d['people'] if p['name']=='刘冰');p['research_collaborators'][0]['education_event_id']='missing'
+  with self.assertRaises(AssertionError):validate(self.d)
+ def test_visiting_collaborator_cannot_bind_degree(self):
+  p=next(p for p in self.d['people'] if p['name']=='刘冰');p['research_collaborators'][0]['education_event_id']=p['education'][0]['event_id']
+  with self.assertRaises(AssertionError):validate(self.d)
+ def test_collaboration_export_is_experience_not_mentor(self):
+  from build import department_tables
+  people=[p for p in self.d['people'] if p['name'] in ['刘冰','刘大同','张明宇']];tables=dict(department_tables(people,self.d['updated_at']))
+  self.assertEqual(len(tables['导师'])-1,sum(len(p['mentors'])+len(p.get('committee_members',[])) for p in people))
+  self.assertFalse(any(r[1] in ['Yu Hen Hu','Haitao Liao','张莹莹'] for r in tables['导师'][1:]))
+  rows=[r for r in tables['经历'][1:] if r[1] in ['visiting_research_collaborator','research_assistant_collaborator']]
+  self.assertEqual(len(rows),3);self.assertTrue(all('非导师认定' in r[14] for r in rows))
+ def test_collaboration_export_cannot_join_missing_ids(self):
+  from build import department_tables
+  p=copy.deepcopy(next(p for p in self.d['people'] if p['name']=='张明宇'));c=p['research_collaborators'][0]
+  rows=dict(department_tables([p],self.d['updated_at']))['经历'];row=next(r for r in rows if r[1]=='research_assistant_collaborator')
+  self.assertEqual(row[4:6],['2014-03','2014-08']);self.assertIn('清华大学',row[3])
+  c.pop('appointment_event_id');rows=dict(department_tables([p],self.d['updated_at']))['经历'];row=next(r for r in rows if r[1]=='research_assistant_collaborator')
+  self.assertEqual(row[4:6],[None,None])
 if __name__=='__main__':unittest.main()

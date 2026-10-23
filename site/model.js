@@ -13,3 +13,5 @@ export function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'
 export function navigableProfileUrl(v){const safe=safeUrl(v);if(!safe)return "";const u=new URL(safe);return /\/_cms\/|articleEdit|https?:/i.test(u.pathname)||u.searchParams.get("act")==="edit"?"":safe}
 
 export function matchStageFilters(p,type,region,continent){if(!region&&!continent)return true;const rows=stages(p,type);if(region==='not_recorded'||continent==='not_recorded')return rows.length===0&&(!region||region==='not_recorded')&&(!continent||continent==='not_recorded');return rows.some(e=>(!region||(e.region||'unknown')===region)&&(!continent||(e.continent_code||'unknown')===continent))}
+
+export function collaboratorEvent(p,c){if(c.education_event_id)return (p.education||[]).find(e=>e.event_id===c.education_event_id)||{};if(c.appointment_event_id)return (p.appointments||[]).find(e=>e.event_id===c.appointment_event_id)||{};return {}}

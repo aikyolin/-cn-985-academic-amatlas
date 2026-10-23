@@ -24,6 +24,17 @@ def validate(d):
    assert e.get('degree_awarded') is not True or e['event_kind']=='degree','Only degree events may confirm an award'
   event_ids=[e['event_id'] for e in p['education'] if e.get('event_id')]
   assert len(event_ids)==len(set(event_ids)),'Duplicate education event ID'
+  for c in p.get('research_collaborators',[]):
+   assert c.get('include_in_mentorship_graph') is False,'Collaborator must not be promoted to mentorship'
+   if c.get('relationship_kind')=='visiting_research_collaborator':
+    assert c.get('education_event_id') in event_ids,'Collaborator references unknown education event'
+    event=next(e for e in p['education'] if e.get('event_id')==c['education_event_id'])
+    assert event.get('degree_awarded') is False,'Visiting collaborator must bind a non-award event'
+   if c.get('appointment_event_id'):
+    assert any(a.get('event_id')==c['appointment_event_id'] for a in p['appointments']),'Collaborator references unknown appointment'
+   assert not(c.get('education_event_id') and c.get('appointment_event_id')),'Collaborator cannot bind two event kinds'
+   assert valid_url(c.get('source_url')),'Collaborator requires evidence'
+
   for m in p['mentors']:
    assert not m.get('education_event_id') or m['education_event_id'] in event_ids,'Mentor references unknown education event'
    if m['employment_status']=='active_officially_listed':
@@ -56,6 +67,12 @@ def department_tables(people,updated_at):
  for p in people:
   events=p['education']+[dict(a,event_kind='employment',degree=a.get('title')) for a in p['appointments']]
   rows.extend([[p['name'],*[e.get(k) for k in fields]] for e in events])
+  for c in p.get('research_collaborators',[]):
+   event_id=c.get('education_event_id') or c.get('appointment_event_id')
+   events=p['education'] if c.get('education_event_id') else p['appointments']
+   e=next((e for e in events if event_id and e.get('event_id')==event_id), {})
+   row=dict(event_kind=c.get('relationship_kind','research_collaborator'),degree=c.get('type'),institution=c.get('institution'),start=e.get('start'),end=e.get('end'),source_url=c.get('source_url'),note='；'.join(str(v) for v in [c.get('name'),c.get('description'),c.get('employment_status_note'),c.get('note') or c.get('evidence_note'),'非导师认定，不计师承',c.get('profile_source_url')] if v))
+   rows.append([p['name'],*[row.get(k) for k in fields]])
  tables.append(('经历',rows))
  mentor_fields=['name','type','education_stage','description','employment_status','employment_status_note','official_url','source_url','profile_source_url']
  rows=[['姓名','导师姓名','关系类型','阶段','简介','在职状态','状态说明','已核在职主页','关系来源','任职来源']]
