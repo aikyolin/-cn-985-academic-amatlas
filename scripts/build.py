@@ -63,7 +63,7 @@ def validate_school_scope(d):
 def validate(d):
  validate_school_scope(d)
  pending=d.get('pending_people',[])
- assert all(p.get('profile_status') in ('roster_identity_pending','profile_details_pending') and not p.get('education') and not p.get('mentors') and not p.get('publications') for p in pending),'Pending identities must stay outside confirmed collections'
+ assert all(p.get('profile_status') in ('roster_identity_pending','profile_details_pending') and not p.get('education') and not p.get('mentors') and not p.get('publications') and not p.get('professional_research_advisors') for p in pending),'Pending identities must stay outside confirmed collections'
  assert not ({p['person_id'] for p in pending}&{p['person_id'] for p in d['people']}),'Pending identity duplicated as detailed profile'
  ids=[u['id'] for u in d['org_units']]; assert len(ids)==len(set(ids)), 'Duplicate organization ID'
  people=d['people']; assert len({p['person_id'] for p in people})==len(people),'Duplicate person ID'
@@ -81,6 +81,7 @@ def validate(d):
   event_ids=[e['event_id'] for e in p['education'] if e.get('event_id')]
   assert len(event_ids)==len(set(event_ids)),'Duplicate education event ID'
   for c in p.get('research_collaborators',[]):
+   assert c.get('relationship_kind')!='professional_research_advisor','Explicit professional guidance must not be reduced to ordinary collaboration'
    assert c.get('include_in_mentorship_graph') is False,'Collaborator must not be promoted to mentorship'
    if c.get('relationship_kind')=='visiting_research_collaborator':
     assert c.get('education_event_id') in event_ids,'Collaborator references unknown education event'
@@ -90,6 +91,31 @@ def validate(d):
     assert any(a.get('event_id')==c['appointment_event_id'] for a in p['appointments']),'Collaborator references unknown appointment'
    assert not(c.get('education_event_id') and c.get('appointment_event_id')),'Collaborator cannot bind two event kinds'
    assert valid_url(c.get('source_url')),'Collaborator requires evidence'
+
+  assert isinstance(p.get('professional_research_advisors',[]),list),'Professional guidance must be an array'
+  for c in p.get('professional_research_advisors',[]):
+   assert isinstance(c,dict),'Professional guidance rows must be objects'
+   assert c.get('relationship_kind')=='professional_research_advisor','Professional guidance must preserve its verified relationship kind'
+   assert c.get('relationship_status')=='verified_direct_statement','Professional guidance requires a verified direct relationship'
+   assert c.get('include_in_mentorship_graph') is False and c.get('include_in_verified_mentor_count') is False,'Independent professional guidance must stay outside main mentor counts and graph'
+   assert c.get('include_in_degree_mentorship_graph') is False,'Professional guidance must stay outside degree mentorship'
+   assert c.get('include_in_verified_professional_guidance_count') is True,'Verified professional guidance count must be explicit'
+   assert 'education_event_id' in c and c['education_event_id'] is None,'Professional guidance must explicitly have no degree binding'
+   assert isinstance(c.get('name'),str) and c['name'].strip() and valid_url(c.get('source_url')),'Professional guidance requires direct source URL and name'
+   if c.get('appointment_event_id') is not None:
+    assert isinstance(c['appointment_event_id'],str) and c['appointment_event_id'].strip(),'Professional guidance appointment ID cannot be empty'
+    assert any(a.get('event_id')==c['appointment_event_id'] for a in p['appointments']),'Professional guidance references unknown appointment'
+   sources={row.get('id'):row.get('url') for row in p['sources']}
+   for key,urlkey in [('source_id','source_url'),('profile_source_id','profile_source_url')]:
+    if c.get(key) is not None:
+     assert c[key] in sources,'Professional guidance references unknown source'
+     assert sources[c[key]]==c.get(urlkey),'Professional guidance source ID and URL must agree'
+   if 'source_ids' in c:
+    assert isinstance(c['source_ids'],list) and all(isinstance(s,str) and s in sources for s in c['source_ids']),'Professional guidance references unknown evidence sources'
+   if c.get('employment_status')=='active_officially_listed':
+    assert valid_url(c.get('profile_source_url')),'Active professional guidance needs public employment evidence'
+    unavailable=(c.get('official_url') is None and c.get('quick_link_eligible') is False and c.get('navigation_verified') is False and isinstance(c.get('profile_navigation_unavailable_reason'),str) and bool(c['profile_navigation_unavailable_reason'].strip()))
+    assert valid_url(c.get('official_url')) or unavailable,'Active professional guidance needs homepage or explicit verified navigation limitation'
 
   for c in p.get('project_guidance',[]):
    assert c.get('include_in_mentorship_graph') is False,'Project guidance must stay outside the mentorship graph'
@@ -103,6 +129,10 @@ def validate(d):
   for m in p['mentors']:
    assert m.get('type')!='research_project_advisor' and m.get('relationship_kind')!='research_project_advisor','Project guidance must stay separate from mentors'
    assert not m.get('education_event_id') or m['education_event_id'] in event_ids,'Mentor references unknown education event'
+   if m.get('relationship_kind')=='professional_research_advisor':
+    # Preserve reviewed legacy non-award event bindings, never invent one for the new independent collection.
+    event=next((e for e in p['education'] if m.get('education_event_id') and e.get('event_id')==m['education_event_id']),None)
+    assert event and event.get('degree_awarded') is False and m.get('include_in_degree_mentorship_graph') is not False,'Unbound professional guidance must stay in its independent collection'
    if m['employment_status']=='active_officially_listed':
     assert valid_url(m.get('profile_source_url')),'Active mentor needs public employment evidence'
     unavailable = (m.get('official_url') is None and m.get('quick_link_eligible') is False and m.get('navigation_verified') is False and isinstance(m.get('profile_navigation_unavailable_reason'), str) and bool(m['profile_navigation_unavailable_reason'].strip()))
@@ -137,6 +167,9 @@ def publication_value(publication,key):
  raw=publication.get(key);label=publication.get(key+'_label') if key in ('type','link_status') else None
  return '；'.join(str(v) for v in [label,raw] if v) if label and label!=raw else raw if raw is not None else label
 
+def profile_availability_label(person):
+ return person.get('official_profile_availability_label') or ('个人主页当前不可用' if person.get('official_profile_availability')=='unavailable' or person.get('official_profile_navigation_eligible') is False else '公开个人页（时效以核对日为准）')
+
 def department_tables(people,updated_at,institutions=None):
  schools={p.get("school_id") for p in people}
  assert len(schools)<=1 and None not in schools, "Department export cannot mix schools or omit school IDs"
@@ -145,7 +178,7 @@ def department_tables(people,updated_at,institutions=None):
  school_id=next(iter(schools),"")
  names={s["id"]:s["official_name"] for s in (institutions or [])}
  school_name=names.get(school_id,school_id)
- tables=[('总览',[['姓名','校区','院系','官方主页','核对日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p.get('campus') or '校区未标注',p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],updated_at,'；'.join(p['unknowns']),'分批核实资料，不是完整名录','个人主页当前不可用' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else '公开个人页（时效以核对日为准）','；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]
+ tables=[('总览',[['姓名','校区','院系','官方主页','核对日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p.get('campus') or '校区未标注',p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],updated_at,'；'.join(p['unknowns']),'分批核实资料，不是完整名录',profile_availability_label(p),'；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]
  fields=['event_kind','degree','institution','start','end','field','country','source_region','continent','institution_985','degree_awarded','degree_awarded_date','degree_award_source_url','note','geography_basis','source_url']
  rows=[['姓名','事件类型','阶段/职位','机构','开始','结束','专业','国家','地区','洲','历史985分类','确证授位','授位日期','授位来源','备注及冲突','地域口径','来源']]
  for p in people:
@@ -166,6 +199,8 @@ def department_tables(people,updated_at,institutions=None):
  rows=[['姓名','导师姓名','关系类型','阶段','简介','在职状态','状态说明','已核在职主页','关系来源','任职来源']]
  for p in people:
   mentors=[dict(m,type=m.get('type_label') or m.get('type'),official_url=mentor_official_url(m),employment_status_note='；'.join(v for v in [m.get('employment_status_note'),mentor_navigation_notice(m)] if v) if mentor_navigation_notice(m) else m.get('employment_status_note')) for m in p['mentors']]+[dict(c,type=c.get('label','博士指导委员会成员（非师承）'),official_url='') for c in p.get('committee_members',[])]
+  # Independent occupational guidance is preserved, not silently converted to a degree mentor.
+  mentors += [dict(c,type='职业科研指导（非学位）',education_stage=c.get('education_stage') or '职业科研阶段（非学历绑定）',official_url=mentor_official_url(c),employment_status_note='；'.join(str(v) for v in [c.get('type_label'),c.get('type'),c.get('relationship_kind'),('机构：'+str(c['institution'])) if c.get('institution') else None,('指导起止：'+str(c.get('start') or '未披露')+' 至 '+str(c.get('end') or '未披露')) if c.get('start') or c.get('end') else None,c.get('employment_status_note'),c.get('relationship_scope'),c.get('note'),c.get('evidence_note'),c.get('scope_label'),mentor_navigation_notice(c),'独立职业指导，不计入学位师承图；已核职业指导计数：'+('1' if c.get('include_in_verified_professional_guidance_count') is True else '0')] if v)) for c in p.get('professional_research_advisors',[])]
   rows.extend([[p['name'],*[m.get(k) for k in mentor_fields]] for m in mentors])
  tables.append(('导师',rows))
  for label,key,fields,headers in [('论文','publications',['title','year','doi','url','type','source_url','identity_evidence','link_status','note'],['标题','年份','DOI','链接','类型','收录来源','作者归属依据','链接核验范围','备注']),('来源','sources',['id','url','evidence_status','retrieved_at'],['来源ID','链接','核验方式','查阅日期'])]:

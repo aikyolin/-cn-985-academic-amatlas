@@ -1,0 +1,205 @@
+{
+  "updated_at": "2026-10-23",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "baseline_commit": "484fd39b303c182aab1fbf407992d4e3d62d3c9c",
+  "counts": {
+    "new_schools": 11,
+    "new_organization_nodes": 19,
+    "new_campuses": 0,
+    "source_people": 33,
+    "new_professional_profiles": 32,
+    "new_pending_profiles": 1,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 84,
+      "appointments": 105,
+      "mentors": 5,
+      "committee_members": 0,
+      "publications": 25,
+      "sources": 118,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 2,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0
+    },
+    "effective_global_collection_delta": {
+      "education": 84,
+      "appointments": 104,
+      "mentors": 4,
+      "committee_members": 0,
+      "publications": 25,
+      "sources": 115,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 2,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 1
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 1,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 3,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 23,
+      "degree_awarded_false": 15,
+      "degree_awarded_null": 46,
+      "confirmed_degree_events": 22
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 23,
+      "degree_awarded_false": 15,
+      "degree_awarded_null": 46,
+      "confirmed_degree_events": 23
+    },
+    "normalized_event_kind_changes": [
+      {
+        "person_id": "muc-chenbo",
+        "event_id": "muc-chenbo-education-2",
+        "source_event_kind": "integrated_masters_doctoral_study",
+        "event_kind": "degree",
+        "degree_awarded": true
+      }
+    ],
+    "direct_guidance_types": {
+      "doctoral_advisor": 2,
+      "undergraduate_advisor": 1,
+      "joint_doctoral_training_advisor": 1
+    },
+    "publication_types": {
+      "journal_article": 10,
+      "conference_paper": 8,
+      "book": 5,
+      "unknown": 2
+    },
+    "institution_level_source_records": 3,
+    "source_counts_missing_but_independently_recomputed": [
+      "neu"
+    ],
+    "projection": {
+      "published_schools": 20,
+      "professional_records": 368,
+      "pending_records": 52,
+      "organization_nodes": 109,
+      "collections": {
+        "education": 1100,
+        "appointments": 1341,
+        "mentors": 137,
+        "committee_members": 9,
+        "publications": 692,
+        "sources": 1411,
+        "research_collaborators": 4,
+        "pending_mentor_candidates": 14,
+        "pending_mentors": 7,
+        "project_guidance": 1,
+        "professional_research_advisors": 1
+      },
+      "degree_counts": {
+        "degree_awarded_true": 560,
+        "degree_awarded_false": 203,
+        "degree_awarded_null": 337,
+        "confirmed_degree_events": 560
+      },
+      "roster_totals": {
+        "organization_count": 37,
+        "category_count": 100,
+        "entries_with_profile_link": 1330,
+        "entries_without_profile_link": 172,
+        "dedup_candidate_groups": 60,
+        "placeholder_profile_link_observations": 18,
+        "current_employment_count_verified": false,
+        "not_unique_people_count": true,
+        "record_count": 1502,
+        "raw_observation_count": 1540,
+        "roster_records": 1502,
+        "raw_source_observations": 1540,
+        "coverage_unit_count": 118,
+        "count_unit": "integrated_roster_records",
+        "source_record_grouping_reduction": 38,
+        "category_count_basis": "unique_organization_category_pairs",
+        "unique_organization_category_pairs": 100,
+        "batch_category_count": 111,
+        "category_count_source": "coverage_rows_preserved_without_deduplication"
+      }
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-bit-first-001.json",
+      "sha256": "5b0e3fe0eb1626d79ba542008f66643c850d2f33c0385f632b3b4a19b9d33b76",
+      "independent_review_file": "faculty-batch-bit-first-001-independent-review.json",
+      "independent_review_sha256": "497c2cd2665552debc7d15fb591b046cbd509384b3a0bf8d996881131484c5ac"
+    },
+    {
+      "file": "faculty-batch-bnu-first-001.json",
+      "sha256": "397e1a41d32d82f23f48ab1041a670b23324b96867ffcfdc4e0b30b3c31a92df",
+      "independent_review_file": "faculty-batch-bnu-first-001-independent-review.json",
+      "independent_review_sha256": "f26844b1c45488b3a75a3b444fecac9fc3dcc4a761e47e09e868ed77319ff56b"
+    },
+    {
+      "file": "faculty-batch-cau-first-001.json",
+      "sha256": "739b1dcdf0014c983d7dc51e811426b231c153c48268b03890115a3dbec4bf22",
+      "independent_review_file": "faculty-batch-cau-first-001-independent-review.json",
+      "independent_review_sha256": "1ac02b94f440c9eacd53b197ee1d109a2017be69771efabe9d1a45389f2d9b21"
+    },
+    {
+      "file": "faculty-batch-muc-first-001.json",
+      "sha256": "266e5aa1193112debae40393646e1f391e08686cc18a3fbc7504cac7ffc06993",
+      "independent_review_file": "faculty-batch-muc-first-001-independent-review.json",
+      "independent_review_sha256": "52c9090269856fa7b09806c8d88c79d82e724c43534381556294c9aff693f2a9"
+    },
+    {
+      "file": "faculty-batch-nku-first-001.json",
+      "sha256": "85f6d10035ac4fa431456b8a6cf8fc897030fd10c5bfcca1db944e6f18414fb0",
+      "independent_review_file": "faculty-batch-nku-first-001-independent-review.json",
+      "independent_review_sha256": "e983d35d2f8f31dedeed5787f05e2a2c48cffd58a60434d5a22881e839284133"
+    },
+    {
+      "file": "faculty-batch-dlut-first-001.json",
+      "sha256": "5a549e6d733736785d089156f0f8cfe4e0a345c35448897fa9790b934f223fed",
+      "independent_review_file": "faculty-batch-dlut-first-001-independent-review.json",
+      "independent_review_sha256": "d8bfa0139a30d8523dedfd9c7304eb187e44fe58fc0a82e9fd03a0b5d9656124"
+    },
+    {
+      "file": "faculty-batch-tju-first-001.json",
+      "sha256": "d5930bba30e6f7b808ad9e64d9e4f50096a4ac1ee8afce0dc25461daa596c57f",
+      "independent_review_file": "faculty-batch-tju-first-001-independent-review.json",
+      "independent_review_sha256": "b53065c5a98327c112d2ae5d004523cbc5c44ad3577a86370830d72a0a47f654"
+    },
+    {
+      "file": "faculty-batch-jlu-first-001.json",
+      "sha256": "92a47a38133eef620192419023288b6581ad4cab5082557ccc0971b60a6edaa2",
+      "independent_review_file": "faculty-batch-jlu-first-001-independent-review.json",
+      "independent_review_sha256": "033b8c88c53733d0a13e8ac9c27b18fdcd4955ab430b14388792481e013a69f0"
+    },
+    {
+      "file": "faculty-batch-tongji-first-001.json",
+      "sha256": "63210a56397abcf247e177ee3a66db8b319add431320cb0c18c5f1d996dad89c",
+      "independent_review_file": "faculty-batch-tongji-first-001-independent-review.json",
+      "independent_review_sha256": "0c7599647554a850c98995f4a3dce964eefdd3307b98b548bc4de8f01fc93bc9"
+    },
+    {
+      "file": "faculty-batch-ruc-first-001.json",
+      "sha256": "62e8875af172a20a8d5dc6c0fea05194bee888c7bd9061042c55042ff9f3a8b0",
+      "independent_review_file": "faculty-batch-ruc-first-001-independent-review.json",
+      "independent_review_sha256": "9142ec8efa1ac33b9253e64f8d6420eb9747d0000ca5d2d8f8c2187a79733b04"
+    },
+    {
+      "file": "faculty-batch-neu-first-001.json",
+      "sha256": "54ab535e6e9248ffe40132719d2951fb578b9d293e138e99032dc74b6452b1aa",
+      "independent_review_file": "faculty-batch-neu-first-001-independent-review.json",
+      "independent_review_sha256": "31516abd4a59728922d0807b2f5cef9662b430a08dfad6e27ede41b94fb256e1"
+    }
+  ],
+  "scope": "本波新增北京理工、北京师范、中国农业、中央民族、南开、大连理工、天津、吉林、同济、中国人民、东北大学各3条选中名录，形成32份部分职业资料与1份待核；不代表全校全院或全部字段完整。"
+}

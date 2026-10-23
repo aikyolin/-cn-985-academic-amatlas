@@ -146,6 +146,122 @@
               "type": "string",
               "minLength": 1
             }
+          },
+          "professional_research_advisors": {
+            "type": "array",
+            "description": "已直接核实的职业科研指导，独立于普通合作及学位师承，不借用空教育事件。",
+            "items": {
+              "type": "object",
+              "required": [
+                "name",
+                "relationship_kind",
+                "relationship_status",
+                "education_event_id",
+                "include_in_mentorship_graph",
+                "include_in_degree_mentorship_graph",
+                "include_in_verified_mentor_count",
+                "include_in_verified_professional_guidance_count",
+                "source_url"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "relationship_kind": {
+                  "const": "professional_research_advisor"
+                },
+                "relationship_status": {
+                  "const": "verified_direct_statement"
+                },
+                "education_event_id": {
+                  "type": "null"
+                },
+                "appointment_event_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "person_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "include_in_mentorship_graph": {
+                  "const": false
+                },
+                "include_in_degree_mentorship_graph": {
+                  "const": false
+                },
+                "include_in_verified_mentor_count": {
+                  "const": false
+                },
+                "include_in_verified_professional_guidance_count": {
+                  "const": true
+                },
+                "source_url": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https?://"
+                },
+                "profile_source_url": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "uri"
+                },
+                "source_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "profile_source_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "source_ids": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "navigation_verified": {
+                  "type": "boolean"
+                },
+                "quick_link_eligible": {
+                  "type": "boolean"
+                },
+                "start": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "end": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
           }
         }
       }
@@ -193,6 +309,10 @@
               "type": "string",
               "minLength": 1
             }
+          },
+          "professional_research_advisors": {
+            "type": "array",
+            "maxItems": 0
           }
         }
       }
