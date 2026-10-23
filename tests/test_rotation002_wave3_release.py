@@ -477,7 +477,7 @@ EXPECTED_FILTERS = {'sysu-liuzhiwei': {'stages': {'bachelor': [], 'master': [], 
                                   'unknown': False,
                                   'not_recorded': True}}}
 
-EXPECTED_FINAL_TOTALS = {'atlas': (547, 83, 223, 39), 'exports': 107}
+EXPECTED_FINAL_TOTALS = {'atlas': (555, 84, 229, 39), 'exports': 111}
 
 EXPECTED_DEPARTMENTS = ['scu-materials-science-engineering', 'sysu-history-zhuhai']
 
@@ -1349,21 +1349,21 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
         count, digest = BASELINE_QUEUE_PREFIX
         self.assertEqual(count, 217)
         self.assertEqual(object_sha(self.q['tasks'][:count]), digest)
-        self.assertEqual(len(self.q['tasks']), 219)
-        self.assertEqual([t['institution_id'] for t in self.q['tasks'][count:]], ['sysu', 'scu'])
-        for task in self.q['tasks'][count:]:
+        self.assertEqual(len(self.q['tasks']), 222)
+        self.assertEqual([t['institution_id'] for t in self.q['tasks'][count:219]], ['sysu', 'scu'])
+        for task in self.q['tasks'][count:219]:
             self.assertEqual(task['status'], 'partial')
             self.assertIs(task['scope']['university_complete'], False)
             self.assertEqual(task['campus_ids'], [])
 
     def test_06_exact_six_person_scope_no_hust_or_pending_identity_additions(self):
         self.assertEqual((len(self.d['people']), len(self.d['pending_people']), len(self.d['org_units']), len(self.d['institutions'])), EXPECTED_FINAL_TOTALS['atlas'])
-        self.assertEqual((len(self.r['entries']), len(self.r['source_observations'])), (1712, 1750))
-        self.assertEqual([p['person_id'] for p in self.d['people'][541:]], list(SOURCE_FINGERPRINTS))
-        self.assertEqual(self.d['pending_people'][83:], [])
-        self.assertEqual([e['source_person_id'] for e in self.r['entries'][1706:]], list(SOURCE_FINGERPRINTS))
-        self.assertEqual({o['id'] for o in self.d['org_units'][221:]}, set(ORG_FINGERPRINTS))
-        self.assertEqual([b['batch_id'] for b in self.d['profile_batches'][132:]], ['faculty-batch-sysu-rotation-002', 'faculty-batch-scu-rotation-002'])
+        self.assertEqual((len(self.r['entries']), len(self.r['source_observations'])), (1721, 1759))
+        self.assertEqual([p['person_id'] for p in self.d['people'][541:547]], list(SOURCE_FINGERPRINTS))
+        self.assertFalse({p['person_id'] for p in self.d['pending_people']} & set(SOURCE_FINGERPRINTS))
+        self.assertEqual([e['source_person_id'] for e in self.r['entries'][1706:1712]], list(SOURCE_FINGERPRINTS))
+        self.assertEqual({o['id'] for o in self.d['org_units'][221:223]}, set(ORG_FINGERPRINTS))
+        self.assertEqual([b['batch_id'] for b in self.d['profile_batches'][132:134]], ['faculty-batch-sysu-rotation-002', 'faculty-batch-scu-rotation-002'])
         self.assertEqual(len(build.department_exports(self.d)), EXPECTED_FINAL_TOTALS['exports'])
         for p in self.new:
             self.assertTrue(p['detail_count_eligible'])
@@ -1442,7 +1442,7 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
             self.assertEqual(batch['people_count'], 3)
             self.assertFalse(batch['coverage_complete'])
             self.assertFalse(batch['fields_complete'])
-            entries = [e for e in self.r['entries'][1706:] if e['school_id']==school]
+            entries = [e for e in self.r['entries'][1706:1712] if e['school_id']==school]
             self.assertEqual([e['source_person_id'] for e in entries], ids)
             self.assertEqual([e['name'] for e in entries], EXPECTED_NAMES[school])
             for entry in entries:
@@ -1488,7 +1488,7 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
 
     def test_16_unchanged_application_registry_and_helpers(self):
         for path, digest in UNCHANGED_APPLICATION_SHA256.items():
-            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(), DISPLAY_FIX_APPLICATION_SHA256.get(path,digest), path)
+            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(), LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest))), path)
 
     def test_17_actual_statistics_are_partial_not_full_school_population(self):
         js = self.consumers()
@@ -1868,14 +1868,22 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
     def test_37_built_site_selected_people_rosters_and_original_person_leaves_match_canonical(self):
         site = json.loads((ROOT/'site/atlas.json').read_text())
         roster = json.loads((ROOT/'site/rosters.json').read_text())
-        self.assertEqual(len(site['people']), 547)
-        self.assertEqual(len(site['pending_people']), 83)
+        self.assertEqual(len(site['people']), 555)
+        self.assertEqual(len(site['pending_people']), 84)
         site_people = {p['person_id']:p for p in site['people']}
         site_entries = {e['source_person_id']:e for e in roster['entries'] if e.get('source_person_id') in SOURCE_FINGERPRINTS}
         for pid, (shape, digest) in SOURCE_FINGERPRINTS.items():
             self.assertEqual(site_people[pid], self.ps[pid])
             self.assertEqual(site_entries[pid], {**self.entries[pid], 'automatic_merge':False, 'candidate_person_ids':[], 'candidate_match_status':'not_linked' if self.ps[pid]['school_id']=='sysu' else 'verified_separate_profile'})
             self.assertEqual(object_sha(project_source_shape(source_view(site_people[pid]), shape)), digest)
+
+
+# Release25 exact compatibility overlay; original historical pins above remain unchanged.
+ROTATION003_APPLICATION_SHA256 = {'site/app.js': '5d4efe8a3c85cbca0125b950a70d7494e3d34a2e67240e6043347903965c8d4b', 'site/model.js': '9dbc155288c1ee0a93fd5d11cd8a7c63724dc0bde6b117a2f71d327e34be3fef', 'site/rosters.js': 'e4bb3c53da7a4ff3c00c1109651d66cc479c20dc265e7705e41213e3019a3502', 'site/index.html': '3b5f7afdd4ac96aaca402884976bccb33cb9a1d2a1ad27793cf7cdd82e5970bf', 'scripts/build.py': '1bcd28d7c0f3766a54c2cae980add674f1eb0603df8b9dd8958d1c59634b6bb7', 'scripts/build_rosters.py': '29c5dee611bfaef3fd6afd1df9480b254652c51b1c4ce1c9568d75cb799319fe'}
+
+
+# Exact layout-only overlay; all original source/data/application pins remain above.
+LAYOUT_FIX_APPLICATION_SHA256 = {'site/styles.css': '3b01ec6a5674982d048237e5426aa107bd622662d2758913c81bc6f5c4c0ceca', 'site/app.js': '5ce1dbc7161a048ab263cdff313bc904544b362c13d39cc5963886b409f037e2', 'site/rosters.js': '7536ef08c4032e05e1ad3c09532858dd42fd68c20968c82e2146481cf6d9c85f', 'site/index.html': '7e6331d4846c13d64f0a5b5b65a9d52539df537b2ce20ef26563669739f8f2a3'}
 
 if __name__ == '__main__':
     unittest.main()

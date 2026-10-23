@@ -604,7 +604,7 @@ class Rotation002Wave2ReleaseTests(unittest.TestCase):
         count, digest = BASELINE_QUEUE_PREFIX
         self.assertEqual(count, 215)
         self.assertEqual(object_sha(self.q['tasks'][:count]), digest)
-        self.assertEqual(len(self.q['tasks']), 219)
+        self.assertEqual(len(self.q['tasks']), 222)
         self.assertEqual([t['institution_id'] for t in self.q['tasks'][count:217]], ['nju', 'hnu'])
         for task in self.q['tasks'][count:217]:
             self.assertEqual(task['status'], 'partial')
@@ -612,14 +612,14 @@ class Rotation002Wave2ReleaseTests(unittest.TestCase):
             self.assertEqual(task['campus_ids'], [])
 
     def test_05_exact_approved_scope_totals_and_no_hust_additions(self):
-        self.assertEqual((len(self.d['people']), len(self.d['pending_people']), len(self.d['org_units']), len(self.d['institutions'])), (547,83,223,39))
-        self.assertEqual((len(self.r['entries']), len(self.r['source_observations'])), (1712,1750))
+        self.assertEqual((len(self.d['people']), len(self.d['pending_people']), len(self.d['org_units']), len(self.d['institutions'])), (555,84,229,39))
+        self.assertEqual((len(self.r['entries']), len(self.r['source_observations'])), (1721,1759))
         self.assertEqual([p['person_id'] for p in self.d['people'][535:541]], list(SOURCE_FINGERPRINTS))
-        self.assertEqual(len(self.d['pending_people'][83:]), 0)
+        self.assertFalse({p['person_id'] for p in self.d['pending_people']} & set(SOURCE_FINGERPRINTS))
         self.assertEqual({p['school_id'] for p in self.d['people'][535:541]}, {'nju','hnu'})
         self.assertEqual({e['school_id'] for e in self.r['entries'][1700:1706]}, {'nju','hnu'})
         self.assertEqual({o['id'] for o in self.d['org_units'][218:221]}, set(ORG_FINGERPRINTS))
-        self.assertEqual(len(build.department_exports(self.d)), 107)
+        self.assertEqual(len(build.department_exports(self.d)), 111)
         self.assertEqual([b['batch_id'] for b in self.d['profile_batches'][130:132]], ['faculty-batch-nju-rotation-002','faculty-batch-hnu-rotation-002'])
         for p in self.new:
             self.assertTrue(p['detail_count_eligible'])
@@ -882,7 +882,7 @@ class Rotation002Wave2ReleaseTests(unittest.TestCase):
 
     def test_22_no_application_changes_or_new_ui_columns(self):
         for path,digest in UNCHANGED_APPLICATION_SHA256.items():
-            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),DISPLAY_FIX_APPLICATION_SHA256.get(path,digest),path)
+            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest))),path)
 
     def test_23_consumer_statistics_are_partial_and_not_full_school_population(self):
         js=self.consumers()
@@ -994,6 +994,14 @@ class Rotation002Wave2ReleaseTests(unittest.TestCase):
             # alias changes website display only and cannot add/reclassify rows.
             self.assertEqual(self.tables(p['person_id'],stripped),self.tables(p['person_id']))
 
+
+
+# Release25 exact compatibility overlay; original historical pins above remain unchanged.
+ROTATION003_APPLICATION_SHA256 = {'site/app.js': '5d4efe8a3c85cbca0125b950a70d7494e3d34a2e67240e6043347903965c8d4b', 'site/model.js': '9dbc155288c1ee0a93fd5d11cd8a7c63724dc0bde6b117a2f71d327e34be3fef', 'site/rosters.js': 'e4bb3c53da7a4ff3c00c1109651d66cc479c20dc265e7705e41213e3019a3502', 'site/index.html': '3b5f7afdd4ac96aaca402884976bccb33cb9a1d2a1ad27793cf7cdd82e5970bf', 'scripts/build.py': '1bcd28d7c0f3766a54c2cae980add674f1eb0603df8b9dd8958d1c59634b6bb7', 'scripts/build_rosters.py': '29c5dee611bfaef3fd6afd1df9480b254652c51b1c4ce1c9568d75cb799319fe'}
+
+
+# Exact layout-only overlay; all original source/data/application pins remain above.
+LAYOUT_FIX_APPLICATION_SHA256 = {'site/styles.css': '3b01ec6a5674982d048237e5426aa107bd622662d2758913c81bc6f5c4c0ceca', 'site/app.js': '5ce1dbc7161a048ab263cdff313bc904544b362c13d39cc5963886b409f037e2', 'site/rosters.js': '7536ef08c4032e05e1ad3c09532858dd42fd68c20968c82e2146481cf6d9c85f', 'site/index.html': '7e6331d4846c13d64f0a5b5b65a9d52539df537b2ce20ef26563669739f8f2a3'}
 
 if __name__ == '__main__':
     unittest.main()

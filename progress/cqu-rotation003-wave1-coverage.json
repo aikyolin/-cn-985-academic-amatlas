@@ -1,0 +1,436 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "a440e016e881da9f20d9872624f966311522f4cc",
+  "school_id": "cqu",
+  "school_name": "重庆大学",
+  "batch_id": "faculty-batch-cqu-rotation-003",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+  "selection_basis": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+  "source_urls": [
+    "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN"
+  ],
+  "organization_ids": [
+    "cqu-architecture-urban-planning"
+  ],
+  "selected_roster_observations": 3,
+  "source_category_observed_count": 65,
+  "source_category_count_basis": "Native pagination 共65条, 7 pages; pages 1–6 contain 10 linked teacher cards each and page 7 contains 5; 65 distinct listed names. A search-index URL carried stale totalpage=4; ignored and canonical native links used.",
+  "source_category_evidence_level": "official_roster_body_read",
+  "selected_roster_original_order": [
+    {
+      "id": "roster-cqu-chenke",
+      "name": "陈科",
+      "official_profile_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+      "native_roster_link_target": "http://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+      "order": 1,
+      "listed_role": null,
+      "profile_status": "body_verified_professional_profile"
+    },
+    {
+      "id": "roster-cqu-chenrenwei",
+      "name": "陈仁伟",
+      "official_profile_url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+      "native_roster_link_target": "http://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+      "order": 2,
+      "listed_role": null,
+      "profile_status": "sparse_official_profile"
+    },
+    {
+      "id": "roster-cqu-chenxiaomeng",
+      "name": "陈肖萌",
+      "official_profile_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+      "native_roster_link_target": "http://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+      "order": 3,
+      "listed_role": "副教授",
+      "profile_status": "body_verified_professional_profile"
+    }
+  ],
+  "counts": {
+    "selected_records": 3,
+    "professional_profiles": 2,
+    "pending_profiles": 1,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 4,
+      "appointments": 3,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 9,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 2,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 2,
+      "honors": 2,
+      "research_projects": 0,
+      "research_fields": 3
+    },
+    "effective_professional_collections": {
+      "education": 4,
+      "appointments": 3,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 7,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 2,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 2,
+      "honors": 2,
+      "research_projects": 0,
+      "research_fields": 3
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 2,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 4,
+      "confirmed_degree_events": 0
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 4,
+      "confirmed_degree_events": 0
+    }
+  },
+  "records": [
+    {
+      "person_id": "cqu-chenke",
+      "name": "陈科",
+      "department_id": "cqu-architecture-urban-planning",
+      "roster_entry_id": "roster-cqu-chenke",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+      "unknowns": [
+        "当前职称未在个人页披露；副教授仅有2025年校方报道快照，不当作2026人事证明。",
+        "个人页仅列毕业院校重庆大学，层次、授位、年月、专业及具名导师未知。",
+        "当前学院归属不等全职人员核验；历史聘期、校区均不推断。",
+        "未检索出版物全集、专利全集或全部荣誉；空数组不代表本人没有相关成果。"
+      ]
+    },
+    {
+      "person_id": "cqu-chenxiaomeng",
+      "name": "陈肖萌",
+      "department_id": "cqu-architecture-urban-planning",
+      "roster_entry_id": "roster-cqu-chenxiaomeng",
+      "profile_status": "partial_professional_source_checked",
+      "record_layer": "professional",
+      "official_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+      "unknowns": [
+        "3条教育的学位标签与学习区间明确，但明确授位、授位日和各阶段具名导师未披露。",
+        "2025-03-05仅是网页入职时间，不自动等同副教授任期或学院历史边界。",
+        "兼职日期至2026-06，虽简介仍称担任，未标记为当前。",
+        "不从办公地址推校区，不把网页“在职”标签当作全职人事核验。",
+        "研究项目只列资助类型且无完整项目名，未构造项目记录；未做全部论文、专利和荣誉深挖。"
+      ]
+    },
+    {
+      "person_id": "cqu-chenrenwei",
+      "name": "陈仁伟",
+      "department_id": "cqu-architecture-urban-planning",
+      "roster_entry_id": "roster-cqu-chenrenwei",
+      "profile_status": "profile_details_pending",
+      "record_layer": "pending",
+      "official_url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+      "unknowns": [
+        "官网仅核实姓名和建筑城规学院归属，工作、教育、社会兼职、研究方向均暂无内容。",
+        "职称、教育、师承、任职区间、全职人事状态和校区均未知；保持待补层，不替换样本或升级职业完成层。",
+        "其他大学体育、后勤及医学领域有同名检索结果，未见身份连接证据，均未合并。"
+      ]
+    }
+  ],
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T23:04:00Z",
+    "data_sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc",
+    "counts": {
+      "education": 4,
+      "appointments": 3,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 9,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 2,
+      "teaching": 2,
+      "honors": 2,
+      "research_projects": 0,
+      "professional_research_advisors": 0,
+      "people": 3,
+      "unique_sources": 7,
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 4,
+      "professional_people": 2,
+      "pending_people": 1,
+      "research_fields": 3
+    },
+    "checks": {
+      "exact_data_hash_verified": true,
+      "scope_and_qa_match_data": true,
+      "source_reference_and_mentor_event_closure": "passed",
+      "source_id_url_pairing": "passed",
+      "field_provenance_reference_closure": "passed",
+      "counts_recomputed": true,
+      "unique_person_and_event_ids": true,
+      "within_batch_name_id_url_duplicates": {
+        "person_id": [],
+        "name": [],
+        "official_url": []
+      },
+      "baseline_name_id_url_collisions": {
+        "person_id": [],
+        "name": [],
+        "official_url": []
+      },
+      "original_order_and_roster_link_identity": "passed_independent_seven_page_native_roster_http200_and_three_profile_identity_checks",
+      "sparse_original_selection_not_substituted": true,
+      "degree_award_and_non_degree_semantics": "passed",
+      "chronology_conflicts_retained": "passed",
+      "no_retroactive_current_department_assignment": "passed",
+      "campus_not_inferred": true,
+      "cached_full_body_vs_direct_404_separated": true,
+      "unavailable_source_navigation_disabled": true,
+      "no_nonempty_contact_birthdate_student_or_raw_cache_fields": true,
+      "source_package_modified_by_reviewer": false,
+      "browser_used": false,
+      "remote_writes": false,
+      "verified_stage_mentor_edges": 0,
+      "verified_current_mentor_navigation": 0
+    },
+    "integration_limits": [
+      "严格2职业+1pending：陈仁伟原序第二必须进入待补层，不能换人、增加到职业统计或因包people数组而自动算完成。",
+      "65人是该大学门户建筑城规学院当前观察名录，只有首3处理；不是全学院、全校或全部人事在岗核验。不得信旧搜索URL totalpage=4。",
+      "陈科两新闻只支持有日期的历史事实，必须显示官方完整缓存正文已读、源站直连404的差异，并保留source_navigation_enabled=false及来源navigation_enabled=false；不可改为实时正文可访问、索引摘要或已核2026职称。",
+      "4教育全degree_awarded=null；陈科毕业院校未知层次事件关闭教育筛选，不得补成学士或985本科。其他三段可作学习经历，但不能计明确获授。",
+      "2020赛事年度、2021-03-31公布通知与授奖日不能合并；2025-09-18科普首讲不是持续任课。陈肖萌2025-03-05入职不等副教授晋升日期，两期刊编委2026-06已终止。",
+      "具名本人导师0、当前导师导航0，校区未知；硕导资格、资助项目和刊物编委不可变师承。",
+      "原先学院网站412路线已停止，审查没有访问或重试该路线。陈仁伟reader内部错误不等源站拒绝，普通公开HTTPS200验证与其区别已记录。",
+      "本文件为原始研究包来源独审；原始地域/985及消费者字段规范化、pending迁移和缓存来源失效导航的消费者验证由独立整合流程执行。"
+    ],
+    "blockers": [],
+    "review_scope": "原始来源已经独审；本次接入仅离线哈希、闭合与消费者验证，不声称重新读取来源网页。"
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-cqu-rotation-003.json",
+      "sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc",
+      "scope_file": "faculty-batch-cqu-rotation-003-scope.json",
+      "scope_sha256": "9b4ade648e6f98b2824f893349a257c60eadccba5c03d3391318908c23c6bec1",
+      "qa_file": "faculty-batch-cqu-rotation-003-qa.json",
+      "qa_sha256": "9d615fbb0a3f60542286ff3fe8e20cee8a359be8c20419c4aa706b054e8ed630",
+      "independent_review_file": "faculty-batch-cqu-rotation-003-independent-review.json",
+      "independent_review_sha256": "0317f6e539c923722bc72e5ac3ca6e9a1ac2b7b03a663da3a8b70a97623195eb"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-cqu-rotation-003",
+    "institution": {
+      "id": "cqu",
+      "official_name": "重庆大学",
+      "official_url": "https://www.cqu.edu.cn/",
+      "source_urls": [
+        "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN"
+      ],
+      "scope_note": "全国轮换003新增建筑城规学院；官方教师列表原序首3，未按学历、海外经历或资料丰富度筛人。"
+    },
+    "org_units": [
+      {
+        "id": "cqu-architecture-urban-planning",
+        "name": "建筑城规学院",
+        "type": "school",
+        "school_id": "cqu",
+        "parent_id": "cqu",
+        "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "source_id": "cqu-architecture-teacher-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+    "retrieved_at": "2026-10-23",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "cqu-architecture-teacher-roster",
+        "url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "access_note": "Canonical native listing and all seven ordinary HTTPS pages returned HTTP200. Name order and first-three native HTTP link targets retained minimally. Current listing does not prove full-time personnel status.",
+        "supporting_urls": [
+          "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=2&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=3&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=4&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=5&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=6&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=7&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN"
+        ]
+      },
+      {
+        "id": "cqu-chenke-profile",
+        "url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "access_note": "HTTP200; biography, education, employment and research sections are empty. Only name and school affiliation retained."
+      },
+      {
+        "id": "cqu-chenke-details",
+        "url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/jsxx/289707/jsxx/jsxx.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "access_note": "HTTP200; graduate institution and master-supervisor eligibility only, not an actual degree stage, degree award, or named supervision edge."
+      },
+      {
+        "id": "cqu-chenke-teaching-2021",
+        "url": "https://news.cqu.edu.cn/archives/news2/content/2021/04/01/eeab4ef47653f3eca46265fa0c4a0a4d4a1eb0e4.html",
+        "evidence_status": "official_cached_body_read_direct_404",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "access_note": "University news dated 2021-04-01. Bounded historical teaching and prize evidence only; not current title or employment-date evidence. Web reader returned full cached article body, not a search-result snippet. A later ordinary HTTPS request returned404. Historical facts retain this limitation; no claim of live origin availability.",
+        "web_reader_status": "full_cached_official_article_body_read_with_title_date_and_paragraphs",
+        "ordinary_https_status": 404,
+        "navigation_available": false,
+        "navigation_enabled": false,
+        "evidence_status_label": "官方旧文完整缓存正文已读；原地址直连404，仅支持历史事实，关闭失效来源导航。"
+      },
+      {
+        "id": "cqu-chenke-lecture-2025",
+        "url": "https://news.cqu.edu.cn/archives/news2/content/2025/09/19/6bab3d43eb9c2f730772541ee4d983ff5aced5f3.html",
+        "evidence_status": "official_cached_body_read_direct_404",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "access_note": "University news dated 2025-09-19. Associate-professor title and architecture-department affiliation are historical snapshots as of that report, not a verified 2026 title. Web reader returned full cached article body, not a search-result snippet. A later ordinary HTTPS request returned404. Historical facts retain this limitation; no claim of live origin availability.",
+        "web_reader_status": "full_cached_official_article_body_read_with_title_date_and_paragraphs",
+        "ordinary_https_status": 404,
+        "navigation_available": false,
+        "navigation_enabled": false,
+        "evidence_status_label": "官方旧文完整缓存正文已读；原地址直连404，仅支持历史事实，关闭失效来源导航。"
+      },
+      {
+        "id": "cqu-chenrenwei-profile",
+        "url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "access_note": "HTTP200; name, English name and school affiliation only. Work, education, service and research sections show no content."
+      },
+      {
+        "id": "cqu-chenxiaomeng-profile",
+        "url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "access_note": "HTTP200 ordinary HTTPS public body. Degree labels are study evidence, not explicit award evidence. Structured editorial dates ending 2026-06 remain historical despite undated present-tense biography."
+      }
+    ],
+    "counts": {
+      "education": 4,
+      "appointments": 3,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 9,
+      "research_fields": 3,
+      "academic_service": 2,
+      "teaching": 2,
+      "honors": 2,
+      "research_projects": 0,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "people": 3,
+      "professional_people": 2,
+      "pending_people": 1,
+      "unique_sources": 7,
+      "degree_awarded_true": 0,
+      "degree_awarded_null": 4,
+      "degree_awarded_false": 0
+    },
+    "limitations": [
+      "本批仅3人固定原序样本，其中2职业层、1待补层；不是全院覆盖，也不是全职人事核验。",
+      "个人主页与名录来自HTTP200官方正文；陈科两条旧新闻由网页读取器完整缓存正文核实，直连现为404，均明确标记official_cached_body_read_direct_404，不是仅搜索摘要，也不声称源站现可访问。学校独立院站路线412后停止，不绕过。",
+      "学位标签和毕业文字不等明确获授；所有4教育事件degree_awarded=null，陈科未知层次教育不进筛选。",
+      "无具名导师证据，导师和委员会均保持空；招生指导资格不产生师承边。",
+      "只留必要职业字段、65个名录姓名顺序及首次3个直链；不留整页、原始API、联系方式、出生日期、学生名录或论文全文。",
+      "基线目录无Git元数据；发布commit a440e016e881da9f20d9872624f966311522f4cc由父任务指定，本地基线文件SHA256已独立核对。"
+    ]
+  },
+  "limitations": [
+    "本批仅3人固定原序样本，其中2职业层、1待补层；不是全院覆盖，也不是全职人事核验。",
+    "个人主页与名录来自HTTP200官方正文；陈科两条旧新闻由网页读取器完整缓存正文核实，直连现为404，均明确标记official_cached_body_read_direct_404，不是仅搜索摘要，也不声称源站现可访问。学校独立院站路线412后停止，不绕过。",
+    "学位标签和毕业文字不等明确获授；所有4教育事件degree_awarded=null，陈科未知层次教育不进筛选。",
+    "无具名导师证据，导师和委员会均保持空；招生指导资格不产生师承边。",
+    "只留必要职业字段、65个名录姓名顺序及首次3个直链；不留整页、原始API、联系方式、出生日期、学生名录或论文全文。",
+    "基线目录无Git元数据；发布commit a440e016e881da9f20d9872624f966311522f4cc由父任务指定，本地基线文件SHA256已独立核对。",
+    "严格2职业+1pending：陈仁伟原序第二必须进入待补层，不能换人、增加到职业统计或因包people数组而自动算完成。",
+    "65人是该大学门户建筑城规学院当前观察名录，只有首3处理；不是全学院、全校或全部人事在岗核验。不得信旧搜索URL totalpage=4。",
+    "陈科两新闻只支持有日期的历史事实，必须显示官方完整缓存正文已读、源站直连404的差异，并保留source_navigation_enabled=false及来源navigation_enabled=false；不可改为实时正文可访问、索引摘要或已核2026职称。",
+    "4教育全degree_awarded=null；陈科毕业院校未知层次事件关闭教育筛选，不得补成学士或985本科。其他三段可作学习经历，但不能计明确获授。",
+    "2020赛事年度、2021-03-31公布通知与授奖日不能合并；2025-09-18科普首讲不是持续任课。陈肖萌2025-03-05入职不等副教授晋升日期，两期刊编委2026-06已终止。",
+    "具名本人导师0、当前导师导航0，校区未知；硕导资格、资助项目和刊物编委不可变师承。",
+    "原先学院网站412路线已停止，审查没有访问或重试该路线。陈仁伟reader内部错误不等源站拒绝，普通公开HTTPS200验证与其区别已记录。",
+    "本文件为原始研究包来源独审；原始地域/985及消费者字段规范化、pending迁移和缓存来源失效导航的消费者验证由独立整合流程执行。"
+  ],
+  "next_action": "继续补核所选人物职业缺项、未知授位、具名导师与现任状态；扩充名录须另立原序、分类和分页范围，不将本批当完整院系。",
+  "release_status": "local_not_published",
+  "display_boundaries": {
+    "candidate_facts": "候选教育及任职原样保留且不进确证统计、筛选与主图。",
+    "teaching": "独立教学展示及Excel总览摘要，时间不等本人求学或任职；缓存正文已读与源站404分开。",
+    "sampling": "名录抽样单位与本人任职单位分别保存；机构和职称冲突不补推。",
+    "structured_only": "学术服务、荣誉及项目结构与来源保留，但本批不新增专属展示面板或Excel列。"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "status": "ready_for_controller_manifest_bound_review_not_published",
+  "corrects": "Long inert source URLs in teaching sections inherited source-link nowrap and widened the page.",
+  "prior_display_fix_freeze_sha256": "ea1a6038e6c1df70dfbab9782c6625d83b94a603898c0a4f7242be59cefbf8c4",
+  "baseline_commit": "a440e016e881da9f20d9872624f966311522f4cc",
+  "build_id": "dc1462986991f7b6",
+  "build_id_intentionally_unchanged": true,
+  "asset_version": "rotation003-20261023-w2",
+  "asset_reference_count": 6,
+  "counts": {
+    "professional_records": 555,
+    "pending_records": 84,
+    "schools": 39,
+    "organization_nodes": 229,
+    "department_exports": 111,
+    "roster_records": 1721,
+    "raw_source_observations": 1759,
+    "queue_tasks": 222,
+    "coverage_rows": 215
+  },
+  "implementation": {
+    "report_file": "rotation003-wave1-layout-fix-implementation-report.json",
+    "sha256": "af519b055a0c7886acbb13e2f26033d849f19621a6da1d21abfb6f3ca1f94f74",
+    "css_rule": ".source-unavailable{white-space:normal;overflow-wrap:anywhere;max-width:100%}",
+    "asset_reference_counts": {
+      "site/app.js": 3,
+      "site/rosters.js": 1,
+      "site/index.html": 2
+    },
+    "four_production_files_only": true,
+    "data_and_exporter_logic_unchanged": true
+  },
+  "independent_review": {
+    "report_file": "rotation003-wave1-layout-fix-independent-report.json",
+    "sha256": "0f8924c0c9c8f447054c83da411b320a1ad5ac87e86495681c69b53dab186c94",
+    "all_profile_lineage_routes_unchanged": 1110,
+    "complete_inert_URL_occurrences": 5,
+    "scoped_css_cascade_widths": [
+      360,
+      680,
+      1000,
+      1164,
+      1440
+    ],
+    "baseline_negative_control": "The two actual teaching source spans inherited nowrap; existing timeline wrapping was already correct.",
+    "no_extra_inline_block_or_min_width_needed": true,
+    "strict_historical_test_updates_reviewed": 7,
+    "blockers": []
+  },
+  "controller_supplied_browser_result": {
+    "source": "Controller-supplied real-browser QA result; not independently measured by this offline preparation.",
+    "viewport_width": 1164,
+    "body_scroll_width": 1164,
+    "teaching_span_widths": [
+      465,
+      464.8
+    ],
+    "teaching_span_right_edges": [
+      792,
+      791.8
+    ],
+    "complete_inert_URL_cache404_labels": 5,
+    "news_active_anchors": 0,
+    "stylesheet_token": "rotation003-20261023-w2"
+  },
+  "tests": {
+    "repository_total": 1027,
+    "python": 442,
+    "node": 585,
+    "failed": 0,
+    "skipped": 0,
+    "previous_repository_tests_retained": 1009,
+    "new_independent_default_tests": 18,
+    "new_optional_immutable_baseline_controls": 2,
+    "research_boundary_tests_rerun": 169,
+    "regression_input_manifest_sha256": "9220dae7301092a89d63b845afb356742f4f412e69429e09d3d484eff8e1726a",
+    "logs": {
+      "rotation003-wave1-layout-fix-full-python-tests.txt": "d64d4fd909c7431dc0d445d31a03bb8beb32a7758976a27785d78782c3d0d380",
+      "rotation003-wave1-layout-fix-full-node-tests.txt": "fbd645967f386b5231d32cf2b331121df301708096d98d229042178cc059f9a1",
+      "rotation003-wave1-layout-fix-research-tests.txt": "61e0928ed9157497c13a3839abc7456b71234e45c128de2789e3dc2cf2962794"
+    }
+  },
+  "export_audit": {
+    "report_file": "research/rotation003-wave1-layout-fix-build-export-report.json",
+    "sha256": "ce1f0cf7b13eddecaed4c77ab79b8b6c900fc997edc9ba4e162611f9daae5651",
+    "verification_totals": {
+      "cells": 191239,
+      "hyperlinks": 15886,
+      "sheets": 564,
+      "formula_cells": 0,
+      "suppressed_source_hyperlinks": 3,
+      "zip_members": 1928,
+      "xlsx_files": 112,
+      "csv_records": 1721,
+      "csv_columns": 34,
+      "csv_cells_including_header": 58548,
+      "deterministic_generated_files": 115
+    },
+    "all115_outputs_byte_identical_to_display_fix": true,
+    "all111_department_workbooks_byte_identical": true,
+    "all_roster_csv_xlsx_byte_identical": true,
+    "two_isolated_builds_equal_candidate_and_display_fix": true,
+    "generated_inventory_sha256": "41014c5462f1a41d147d4bf0e082cdace5f91be11f6ded4ee714e407fc6e7960",
+    "toolchain": {
+      "python": "3.12.14",
+      "openpyxl": "3.1.5",
+      "platform": "Linux",
+      "bytecode_writes_disabled": true
+    }
+  },
+  "actual_diff_audit": {
+    "file": "rotation003-wave1-layout-fix-changed-file-review.json",
+    "expected_changes_since_display_fix": 15,
+    "expected_changes_since_published_release24": 44,
+    "note": "External final freeze pins this report and actual diff without self-referential hashes."
+  },
+  "limitations": [
+    "This preparation used offline actual-app DOM/CSS-cascade checks, not a browser layout engine. The recorded real-browser geometry was supplied by the controller; final manifest-bound browser recheck remains with the controller.",
+    "No source revisit, network, remote write or publication. All prior frozen snapshots, source packages and evidence remain unchanged.",
+    "Only a scoped unavailable-source wrapping rule and six coordinated asset cache tokens change production files. Full original URL text remains visible; no clipping, ellipsis, hiding or active navigation is introduced.",
+    "All canonical data, role aliases, source/degree/candidate boundaries, 112 workbooks and 115 generated outputs are byte-identical to the independently audited display-fix predecessor.",
+    "Current workbook comparison reopens every cell and hyperlink and matches prior independently derived matrices/links; it is not Excel/LibreOffice visual review. Determinism is established for the recorded toolchain.",
+    "Earlier source limitations remain unchanged, including sparse pending profiles, cached-body/direct404 distinctions, BIT sampling versus employment, year-precision awards and unresolved intervals."
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-10-23",
-  "base_commit": "cfec2d602c269df3afed36cde87618fe1307e5ab",
+  "base_commit": "a440e016e881da9f20d9872624f966311522f4cc",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -6768,6 +6768,90 @@
       "next_cursor": "rotation002_wave3_selected_sample_reviewed_fields_incomplete",
       "attempted_at": "2026-10-23",
       "last_verified_commit": "cfec2d602c269df3afed36cde87618fe1307e5ab"
+    },
+    {
+      "task_id": "cqu:cqu-architecture-urban-planning:rotation003-wave1",
+      "institution_id": "cqu",
+      "organization_id": "cqu-architecture-urban-planning",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/cqu-rotation003-wave1-coverage.json",
+        "progress/multischool-rotation003-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续补核所选人物职业缺项、未知授位、具名导师与现任状态；扩充名录须另立原序、分类和分页范围，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave1_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "a440e016e881da9f20d9872624f966311522f4cc"
+    },
+    {
+      "task_id": "xmu:xmu-economics-department:rotation003-wave1",
+      "institution_id": "xmu",
+      "organization_id": "xmu-economics-department",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/xmu-rotation003-wave1-coverage.json",
+        "progress/multischool-rotation003-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续补核所选人物职业缺项、未知授位、具名导师与现任状态；扩充名录须另立原序、分类和分页范围，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave1_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "a440e016e881da9f20d9872624f966311522f4cc"
+    },
+    {
+      "task_id": "bit:bit-physics-optical:rotation003-wave1",
+      "institution_id": "bit",
+      "organization_id": "bit-physics-optical",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/bit-rotation003-wave1-coverage.json",
+        "progress/multischool-rotation003-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续补核所选人物职业缺项、未知授位、具名导师与现任状态；扩充名录须另立原序、分类和分页范围，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave1_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "a440e016e881da9f20d9872624f966311522f4cc"
     }
   ]
 }

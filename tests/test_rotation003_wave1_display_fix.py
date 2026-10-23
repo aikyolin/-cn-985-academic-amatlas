@@ -1,0 +1,335 @@
+"""Two evidence-bound Chen Ke teaching-role aliases, with no implementation change.
+Self-contained offline regression; no research/baseline dependency or output writes.
+"""
+import copy,hashlib,json,os,pathlib,sys,unittest
+sys.dont_write_bytecode=True
+ROOT=pathlib.Path(os.environ.get('ACADEMIC_ATLAS_TEST_ROOT',pathlib.Path(__file__).resolve().parents[1]))
+sys.path.insert(0,str(ROOT/'scripts'))
+import build
+
+def object_sha(value):
+    return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+def json_bytes_sha(value):
+    return hashlib.sha256((json.dumps(value,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest()
+
+BASELINE_ATLAS_SHA256 = '0b0fd57d534c40d6ee022fba99ce1958e0acb475404096cda1609287dff85f9f'
+
+BASELINE_ATLAS_OBJECT_SHA256 = '3604eba0262605b5facc007f5ef9b6909a903e2ec7b9038c39bb910525652867'
+
+BASELINE_SITE_ATLAS_SHA256 = 'a45a2d32578ad53a76b91599ca63c2e82b94eb098879ee967f8ff21b2b78defe'
+
+BASELINE_SITE_ROSTERS_SHA256 = '9e2360b5741d98d0cd9db41efa128bad73c4510b9797c40ed2b1a749f0295c52'
+
+BASELINE_BUILD_ID = 'bd358f2fcbb8afe8'
+
+BASELINE_TEACHING = [{'course': '建筑设计(1)+(2)',
+  'level': None,
+  'period': None,
+  'source_id': 'cqu-chenke-teaching-2021',
+  'source_url': 'https://news.cqu.edu.cn/archives/news2/content/2021/04/01/eeab4ef47653f3eca46265fa0c4a0a4d4a1eb0e4.html',
+  'source_navigation_enabled': False,
+  'source_availability': 'direct_404_cached_body_only',
+  'evidence_status': 'official_cached_body_read_direct_404',
+  'field_provenance': {'course': 'cqu-chenke-teaching-2021', 'level': None, 'period': None, 'note': ['cqu-chenke-teaching-2021']},
+  'field_status': {'course': 'source_reported', 'level': 'not_disclosed', 'period': 'not_disclosed'},
+  'as_of': '2021-04-01',
+  'status': 'historical_source_reported',
+  'note': '报道明确主讲课程；未声称2026仍授课。',
+  'source_note': '报道明确主讲课程；未声称2026仍授课。',
+  'note_derivation': 'verbatim_original_note_level_and_period_for_existing_teaching_consumers'},
+ {'course': '泛设计思维',
+  'level': None,
+  'period': '2025-09-18',
+  'source_id': 'cqu-chenke-lecture-2025',
+  'source_url': 'https://news.cqu.edu.cn/archives/news2/content/2025/09/19/6bab3d43eb9c2f730772541ee4d983ff5aced5f3.html',
+  'source_navigation_enabled': False,
+  'source_availability': 'direct_404_cached_body_only',
+  'evidence_status': 'official_cached_body_read_direct_404',
+  'field_provenance': {'course': 'cqu-chenke-lecture-2025',
+                       'level': None,
+                       'period': 'cqu-chenke-lecture-2025',
+                       'note': ['cqu-chenke-lecture-2025']},
+  'field_status': {'course': 'source_reported', 'level': 'not_disclosed', 'period': 'source_reported'},
+  'activity_type': 'public_science_lecture',
+  'status': 'historical_source_reported',
+  'note': '系列讲座首场、18日晚由本人主讲；不是学期课程或长期任课。；来源教学时期：2025-09-18',
+  'source_note': '系列讲座首场、18日晚由本人主讲；不是学期课程或长期任课。',
+  'note_derivation': 'verbatim_original_note_level_and_period_for_existing_teaching_consumers'}]
+
+BASELINE_TEACHING_SHA256 = '5281a6be9884dabc8cbff18298c2b3eaff8e8c277a6f6242badc4fe815b13012'
+
+BASELINE_OTHER_TEACHING_SHA256 = '306ff9682224028c50c512a9826190dc07c9034ef4e87439195a4b3ee28020d1'
+
+SOURCE_HASHES = {'faculty-batch-cqu-rotation-003.json': '74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc',
+ 'faculty-batch-cqu-rotation-003-independent-review.json': '0317f6e539c923722bc72e5ac3ca6e9a1ac2b7b03a663da3a8b70a97623195eb',
+ 'cqu-rotation-003-sources/cqu-chenke-teaching-2021-minimal.json': '1ad0ad1f34dc83b1473eaa6c925b1e3f68c2ae132fbf8c9d15bc09355b272bf2',
+ 'cqu-rotation-003-sources/cqu-chenke-lecture-2025-minimal.json': '4ca72ccc9566b64097a79bebee40ed1d4861b854cd6d3d5d7780dc173a3166e2'}
+
+UNCHANGED_FILES = {'data/rosters.json': 'fc08f82cf0a161d7ca8882151afcad6a0a7d5be88a8b56b936a6d055e997045a',
+ 'site/app.js': '5d4efe8a3c85cbca0125b950a70d7494e3d34a2e67240e6043347903965c8d4b',
+ 'site/model.js': '9dbc155288c1ee0a93fd5d11cd8a7c63724dc0bde6b117a2f71d327e34be3fef',
+ 'site/rosters.js': 'e4bb3c53da7a4ff3c00c1109651d66cc479c20dc265e7705e41213e3019a3502',
+ 'site/styles.css': '6063be4c04726d2dcf01a0442d5dc4d763b99c835a4110bd943799582c14fc34',
+ 'site/universities.js': '9323dad42fc2c35808ad92888cdffb0ad41edaefaee88c3b57ebb798349c2d62',
+ 'site/index.html': '3b5f7afdd4ac96aaca402884976bccb33cb9a1d2a1ad27793cf7cdd82e5970bf',
+ 'scripts/build.py': '1bcd28d7c0f3766a54c2cae980add674f1eb0603df8b9dd8958d1c59634b6bb7',
+ 'scripts/build_rosters.py': '29c5dee611bfaef3fd6afd1df9480b254652c51b1c4ce1c9568d75cb799319fe',
+ 'scripts/deterministic_xlsx.py': '65158f54d001eebb2ac586fd820cd69deed8e5c96ed5b117668ced51c11dc300'}
+
+UNCHANGED_DEPARTMENT_WORKBOOKS = {'site/exports/bit-cs-image-perception.xlsx': '8ecc8beff095f5f5d11220ad0b50ec47695fdae46b9869cd73e08d2f665b6732',
+ 'site/exports/bit-frontier-interdisciplinary-institute.xlsx': '3354cfe01171db2404b63e0ad8647ec7af93f75594b98ef895209f085c789f07',
+ 'site/exports/bit-physics-optical.xlsx': 'd8f38ddc33d62b132a30cde81d43706bf36d495f62bf4b1e9bb143c7033ec163',
+ 'site/exports/bit-sie-communications.xlsx': '92cd5ee427b093fb4b9760ef9ebab38b694a331139f9d2eccf54d61f81db4803',
+ 'site/exports/bnu-ai.xlsx': '86f12f0f36ff3872324f1973ba9576a87a46166609f9702afce219e53ab2ab46',
+ 'site/exports/bnu-math.xlsx': 'c70465e0d1860159cc254795a94c5d24c32b95c7aacb77fbbfd4623a45a1f3f1',
+ 'site/exports/buaa-cs.xlsx': '0f33d60bb4e9c874de291915fe7f2df0038bb3583383a3f4cfc74e4343842467',
+ 'site/exports/buaa-physics-applied.xlsx': '147b53eea044df39df75298e78bb35da3e023773641d721059c61971c2f73315',
+ 'site/exports/buaa-physics-department.xlsx': '73cc282a3510574a41813c3fafd354658d1d9bc7a52f368a2fb342160585a9db',
+ 'site/exports/buaa-physics-nuclear.xlsx': 'fc5ca475c896cde5528aab0c59ef682398c955e804e390f81e7cd794b4e0eca6',
+ 'site/exports/cau-biology-plant-science.xlsx': '619ad8d84b8686eb1d1c9d21a7b3e8c6f8f64476a64443c63adf3f6bd15d5b31',
+ 'site/exports/cau-ciee-computer.xlsx': '54b8579a0593a744dedf82dcc32c9d8e112dd402689e4a44d049abc11e30f4cf',
+ 'site/exports/cau-science-math.xlsx': 'c03fc7faa75c7bb128f43effa033b3a55512b0fe5a4303d98d708677899834c4',
+ 'site/exports/cqu-cs.xlsx': 'e67dd852d2efb14019ee1fed04ba3c2250da2b5bb5f22b61e0e8e83a853c237c',
+ 'site/exports/cqu-mathematics-statistics.xlsx': '11e246f87cff7aef8d529706b854e39cb1a4a338570ccfe2d70dc02e519447e0',
+ 'site/exports/csu-cse.xlsx': '3fc12ea5379b0c669a0b6855c513c8fb46cb0f432d8a882a220e4fe2ce20d44d',
+ 'site/exports/csu-math-applied.xlsx': '7484e1fc254fa9987bc57bdb292e1efc5ecdf318e53b84e06d295792bd8f6847',
+ 'site/exports/dlut-cs-software-theory.xlsx': '5dbde15b50dab984d986ec3493d78ad5c7d27d8fcdf0c30658d7d342f9aad06d',
+ 'site/exports/dlut-math-institute.xlsx': '1625969239b59a8244f727a522eb83e957cacb64b3e4d465704a4816c496a5a3',
+ 'site/exports/ecnu-geography.xlsx': 'bfc7480dde7dfa3ad263093384eb73c828e2359e4de331484aa0bdf2ebad4c0e',
+ 'site/exports/ecnu-math-applied.xlsx': '4d657056812b4a89a8ce7c4e4b3a228c3a94eb5f29e9ed9d7fe474ffba2994cb',
+ 'site/exports/ecnu-math-pure.xlsx': 'b35e580a30dd29f4a180843d078fc23dfdbb6229daebc40cdc97bf6e0f6d27a7',
+ 'site/exports/ecnu-sei.xlsx': '73529cf6469491fb6fa8793ab5f0c54327cfa3617f671e3aaa5ba449e5212c1c',
+ 'site/exports/fdu-icmne.xlsx': 'b6849ef1b1be24cca002bc0a0f915b6a8d4434ff8c09556d7b4568910c4d820e',
+ 'site/exports/fdu-math-applied.xlsx': '8bed2e4e437b8426ddc39309946adaf02c3829b73d6e29f05d1a7ef176a0a23d',
+ 'site/exports/fdu-math-probability-statistics-actuarial.xlsx': '193ff4457d1f269d3b7e9dce9a35dbf2c0195b3477f86b04aef633ed9f9b8e22',
+ 'site/exports/hit-computing.xlsx': '958fbc68d19dcf3690a1087ade9da24287a56383536f06e684caad3cdc9fd172',
+ 'site/exports/hit-seie.xlsx': '543c05288964285cc03152107b0682c4094c7ac14f5cdef2f80b8319ba0c0166',
+ 'site/exports/hit-shenzhen-computer.xlsx': '58b222b67d96818aa52f16d201a8449bef5bb36e2302cf2bd5a68e9ae1aa8d53',
+ 'site/exports/hit-shenzhen-ic.xlsx': '3744f412bbd5e7e21969cdb953040409d6720e385153fd1b7f1a3e43432c3b8f',
+ 'site/exports/hit-shenzhen-robotics.xlsx': 'ab6d347fa8b292fb66cec686ad16dc974af9188acc435e6d2f8856009d70797b',
+ 'site/exports/hit-weihai-information.xlsx': '7cb591f80874dfb4fe3ccce0259f28cd0c9a0c6fde49c1ab30d63eb6c328433d',
+ 'site/exports/hit-weihai-materials.xlsx': '54d21c6da24008000fb4191e8bf2c4d5adc811eed95c33982669cc3696f5743a',
+ 'site/exports/hnu-chemistry-department.xlsx': 'd868060f83ebce45609cd1446ceafcce5c4892478dc9a926dfc0afb0aeb1e040',
+ 'site/exports/hnu-cs-communication-engineering.xlsx': 'e01ae98178c1caf20c1e18740e02db76998554dea745fc646c9e70939827d6b7',
+ 'site/exports/hnu-cs-computer-engineering.xlsx': '7bb5394feca7c1986e877cfdddf7483b88a358d8c93ad35dd847199a03271c9f',
+ 'site/exports/hnu-cs-software-engineering.xlsx': '4fdffd5a5f323dda2f212948be7a716d97581aa30820b467e45c49805e42a6c4',
+ 'site/exports/hnu-math-basic.xlsx': '8d45b2063647a144c74c7f8e7d5ec33e848a5787e24a8dc8f26408501120a95c',
+ 'site/exports/hust-cs-storage.xlsx': 'be5028ada1801939f2f53daa010249bc031a9a6a43f2555aee0aa7c5aac7a39d',
+ 'site/exports/hust-math-center.xlsx': '958cd31af3a503ea4187fe4f6bfd42131be4d57d453f7fcbe5a02bdeb27533b5',
+ 'site/exports/hust-math-interdisciplinary.xlsx': 'ec1f1fa56ac08e000b7808f0297d6814dbb9f744a4c42003da2b6c3fba39524f',
+ 'site/exports/jlu-cs.xlsx': '4546f557b871c5e584dfdaac60affa8551bfa545cca0799018453e84e73a13a0',
+ 'site/exports/jlu-math-applied.xlsx': '14536830ff485834b0e45603626ba94a72d6ed471cbc0162491479fb64dafa89',
+ 'site/exports/jlu-math-computational.xlsx': '81d7218696de8a5dbbe215ea7a4e37ad9e166db36a2ad41093ada4d9d0bfc46f',
+ 'site/exports/jlu-math-statistics.xlsx': '610cb4d6748821fd9e0f8b31dbfda3e04adea16e10c7ea0961a768f7cd9261b4',
+ 'site/exports/lzu-basic-mathematics.xlsx': '6dc90c17aac81334fe036dceed021942ea587480215450eb04ed61cab8eba029',
+ 'site/exports/lzu-law.xlsx': '8d62ec02ae35b737b04feb281ed89e0cc6cdacfcc83ae9b6f3eca2f891db294f',
+ 'site/exports/muc-ise-cs.xlsx': 'b7642d209c8ada88bd470c37fe712191233031b8765402b6fd94400f039c305e',
+ 'site/exports/muc-science-math.xlsx': '22ef1e1930c2c49eed629dceb1bbf0a12fd84e880494eb582ab3acf7fd628279',
+ 'site/exports/neu-cse-communication-electronics.xlsx': 'bf487e818fd5e703b46b8f334baa28dea7b7790bd600b3a74a04f86c471164ae',
+ 'site/exports/neu-cse-cs.xlsx': '6a9dfc9331ac2fc757122aa3d3bcff44d1736c91dcd32906bcbef0dd1c056079',
+ 'site/exports/neu-mechanical-vehicle-engineering.xlsx': '51f430c8c53d29bdde2ef6f552c9ce74781440650e90a4009f61c0b0e45d1b1f',
+ 'site/exports/neu-science-math.xlsx': '12f9dbeaf2b25a09049b5aa3a3489e9bce73006f7bab618d2de0e7489542f796',
+ 'site/exports/nju-astronomy-space-science.xlsx': '477a5f1ca3a470e9fbe0392903c40dffc5adac2d1e16154b8ed9ed124a5d873a',
+ 'site/exports/nju-cs.xlsx': 'e75ef1d05b07d7c34effe7abbacce42d088eff06a18fc6966366fc1c88d54785',
+ 'site/exports/nju-math.xlsx': '221e7ff8f76efdde2fd3542aa979d75651dfd972655d8119a6a1ca6a8e071c58',
+ 'site/exports/nju-sme.xlsx': '1a4af1c71eb2aaf3a18081db8653aee42c0879605eb5f0ed04b746cd007edf94',
+ 'site/exports/nku-cs.xlsx': '129463d6106d689e4a416d343ed11d089dd9b98584178de4635c3a08a2382771',
+ 'site/exports/nku-cyber.xlsx': '920978e9a9d5e45a57915c2c8ccc739ca5e928aad3f97df899f494df62e53d75',
+ 'site/exports/nku-stat.xlsx': '227e4c232fc5efc3a5e6e087ed3282bdd56c9b20738ce3102dd715b95d75e4aa',
+ 'site/exports/nudt-aerospace.xlsx': '4d422f6152bc4ef75d334a719e60a6eaff8bbc5903dc582c363e095814a6f256',
+ 'site/exports/nudt-electronic-science.xlsx': '3260867dd2d0b5239a05c60c3167240c92ee65ce56b6935d7aaf9e56e0fc9c84',
+ 'site/exports/nudt-electronics.xlsx': 'ad7a5b1686c3da6e73d2f680c41a9ed26fdc99b2d8847175b98012a37c70e92f',
+ 'site/exports/nudt-foreign-languages.xlsx': '70f192adf64fe607676d7e3b78e9fff5a5674c1ffaea2032699957f13e4af4a5',
+ 'site/exports/nudt-intelligence.xlsx': '9225f49a9da23e9a168158a4d02aaa0a98e6fc06aab75f02258dde270725bd80',
+ 'site/exports/nudt-systems.xlsx': '417c343ecbc9917662df640ab2dffb3ec16b38a3f20c3618f009068c81c8bfb1',
+ 'site/exports/nwpu-cs-computer-science-software.xlsx': '15f646eb84972804a67d0e7f2b763bc252822ce2f01a3bf7aaad89cf1511ac4d',
+ 'site/exports/nwpu-mathematical-sciences.xlsx': 'c36069333720ebb5c0965eb0f27c37eb9b957c396010bc3dabf095ec7d4dba61',
+ 'site/exports/nwsuaf-agronomy-agronomy-department.xlsx': '38ab9f806f741fc54bca7f42cd149662681de1573710e33385ccb31ab58a1aad',
+ 'site/exports/nwsuaf-cie-cs.xlsx': '5a0a8e7b0dbc3dc0563bc8a131d0d0f7908c94baae45167d69f044ecdaf7db1c',
+ 'site/exports/nwsuaf-cie-data.xlsx': 'c008f08177b0577eb59e985fe06ed84b756ebf969229af3d6d538e3a3e056bf8',
+ 'site/exports/ouc-ise-cs.xlsx': 'bef4f4e5a5257b44251746e8e15162bd646857d088f6e294c8eeb4d1b203633a',
+ 'site/exports/ouc-math-department.xlsx': 'a8b97ffaf5f340533da5a8d12b133a76a5b54c676dc8637a2459662dd7efe272',
+ 'site/exports/pku-ic-microelectronics.xlsx': '7291ebe2cc688be153704102e39d3864df91bac5ad97259d16bd73a656554f42',
+ 'site/exports/ruc-gsai.xlsx': '6b1429699da46c5f4fee3585c11721d2bd4023fd5d1fc063b533f690c5760b65',
+ 'site/exports/ruc-info-eim.xlsx': '2ac362a53b5fbb1ff7580f04bba9d2c6fcec00a31540cfcde5cbe41c1c0c0119',
+ 'site/exports/scu-chemical-engineering.xlsx': '60f80f78f8ecfa134b4957c0d2d04a16c78f2348a2c9ffb612784adcfd625186',
+ 'site/exports/scu-cs.xlsx': '3cc913079af73ad9b667b2a7e248c9b693bee07aa6ccc49b954f96a93cd50d5d',
+ 'site/exports/scu-materials-science-engineering.xlsx': '77501002ebe4b12fe264a9a47249b1f60e3456571442b195d567eaacd3f001c8',
+ 'site/exports/scut-cs.xlsx': '6fc48b36e796167f01e0326b06812c3d7507e10a9585b36b18fabdff9009bdf0',
+ 'site/exports/scut-math.xlsx': '4c461609c2f0e78b8be8cc0f3a020387c67a8f52a787245ef678df126db5f5ee',
+ 'site/exports/sdu-cs.xlsx': '15065fcc41a9a0f5413cb6bf36a83ddb7b6dd8ef3b42e54a488929feb3c2653e',
+ 'site/exports/sdu-math.xlsx': 'e9f056cb5a86693f16de85a93c3d50f3195140c34c87f75fa6e4580fd2232202',
+ 'site/exports/seu-computing-joint-roster.xlsx': '48d5b9a81a28296fe5d265edcd4fc369d1c970fcaffd0c7df91b781f79d528fe',
+ 'site/exports/seu-cs.xlsx': 'abe27d1aa51acf1275aa560931da66d82ffe22fb451f62dd8c46168b07c2d465',
+ 'site/exports/seu-math-computational.xlsx': '52f2403373aba5dee463834813b9e7f8bd497c3760e6688e5de592964e869751',
+ 'site/exports/seu-math-systems.xlsx': 'f54dc7088b8341fce7a57f31a6dc9b4c75bb49cb3bae428ef5a207552024f42f',
+ 'site/exports/sjtu-ic-chipdesign.xlsx': 'b3fa394373ae7fcb6c84142d81637c22e5f8dfaa0d4f1df97c93163cecc89a11',
+ 'site/exports/sysu-history-zhuhai.xlsx': 'dffc21bfb97d1ac8d1817c172370f6523b4a90535aabdc16cbd246f0e28cd115',
+ 'site/exports/sysu-math-department.xlsx': 'ecc826f6e90603d05c17f6e7ed167f97974db04fbe3b175ca3e6ffbcbdc33111',
+ 'site/exports/sysu-math.xlsx': '3edf48eda175bb96169ef9cd3d0960c5195ba3537d04431843b22e7f27cd2144',
+ 'site/exports/sysu-mathzh.xlsx': 'cdebb1c4bdb74a374c17d7c0e7f68eb5fc596833d450098b28a9ccb64ffb37d9',
+ 'site/exports/thu-ee-communications.xlsx': '8701a586cde1d10eec194b8eb20fd648f12af8620f1d6c0c9828ab00a88d36e9',
+ 'site/exports/tju-math.xlsx': '399936224a993c995cfad6cbb80a6dc74486f21621fe5e6ae473aee4d939a20e',
+ 'site/exports/tju-sme.xlsx': '4f963ba2740c54d0406764f9384a03733e5ecc406294c633290fb333fa6144c0',
+ 'site/exports/tongji-civil-building-engineering.xlsx': '448632503151618b790da7adeb660b90b2fbd6bfaa8fa1e2d14d4f500e06b63c',
+ 'site/exports/tongji-cs.xlsx': '99bd75bb420f58781e1b8a389e7d8ff72f5ccb97c4a77f09ed0af96da50c26d5',
+ 'site/exports/tongji-math-teaching.xlsx': '84e40719460679f31b96cdda3cff6da20c17a10448c3e9ac89f92d5c4e351a3b',
+ 'site/exports/uestc-aihss.xlsx': '3a4fabc60237a4ff3e854f764d4c4bbe92fe55c88977f7c7ce847b0d22838952',
+ 'site/exports/uestc-applied-math-center.xlsx': '0d31c20c27bcf996526e01c573cf396f11f1fdfd3a888be34d8033d042148c31',
+ 'site/exports/ustc-ic.xlsx': 'bba52cc29f384a3ccc4e6b582ab4cdf1e7be215e4b6059926e1f6809cfa0be7e',
+ 'site/exports/ustc-math.xlsx': '60edd4e8f47842ca1ce0e5e64f874d9365bffb51e71a92c641f4b4969e811297',
+ 'site/exports/whu-eis.xlsx': 'df7dfc47d4307136d341cbae96f731302c4414cd5e077b29dcb32968e63bf423',
+ 'site/exports/whu-math-stat.xlsx': '4d45cfd5fd92a1f18a6d89cbe9112bd9da8c9faac6696c025e1d81b297725818',
+ 'site/exports/xjtu-math-department.xlsx': '2bef8af7e2ac74764b31b651542b4f2547962c61d0a2ac95ee6530c45a2fc7f1',
+ 'site/exports/xjtu-se.xlsx': '74dda6adf6cb6a0ae0a376b13ca98bcd6fc7c06dbe72037172b16df698da94d2',
+ 'site/exports/xmu-economics-department.xlsx': '85c03296b5dce754f54306b70492a9e37ece071b966abe1dbfdfe659d93e9dcc',
+ 'site/exports/xmu-informatics-cs.xlsx': '4975c6535af5ec76a4c5cf9ad40e78627739cabf40f422db69a443b09152b62a',
+ 'site/exports/xmu-math-applied.xlsx': '080164257599a45cc2be8eb901fda292c3d9a233c10facd3319a4bb894379b55',
+ 'site/exports/zju-ic-manufacturing.xlsx': 'e683c104495e43aec93846c5d8767bd1040e0a135592c1003526028ed03262f9'}
+
+BASELINE_ROSTER_WORKBOOK_SHA256 = '5e3dbea0ad5139f5cc180f4084de942375c89d63b92c0e8d5a6aa0c1c146582b'
+
+ROLE_KEYS=('role','role_source_id','role_source_url','role_source_note','role_derivation')
+SOURCE_IDS=['cqu-chenke-teaching-2021','cqu-chenke-lecture-2025']
+
+def strip_aliases(atlas):
+    restored=copy.deepcopy(atlas)
+    p=next(p for p in restored['people'] if p['person_id']=='cqu-chenke')
+    for row in p['teaching']:
+        for key in ROLE_KEYS: row.pop(key)
+        row['field_provenance'].pop('role');row['field_status'].pop('role')
+    return restored
+
+
+def assert_alias_contract(person):
+    assert person['person_id']=='cqu-chenke'
+    assert len(person['teaching'])==2
+    for row,original in zip(person['teaching'],BASELINE_TEACHING):
+        assert row['source_id']==original['source_id']
+        assert row['role']=='主讲'
+        assert row['role_source_id']==original['source_id']
+        assert row['role_source_url']==original['source_url']
+        assert row['role_source_note']==original['source_note']
+        assert row['role_derivation']=='consumer_alias_from_explicit_reviewed_source_note'
+        assert row['field_provenance']['role']==original['source_id']
+        assert row['field_status']['role']=='explicit_source_note_normalized'
+        restored=copy.deepcopy(row)
+        for key in ROLE_KEYS:restored.pop(key)
+        restored['field_provenance'].pop('role');restored['field_status'].pop('role')
+        assert restored==original,'No original teaching field may change'
+    return True
+
+
+class Rotation003Wave1DisplayFixTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.db=json.loads((ROOT/'data/atlas.json').read_text())
+        cls.person=next(p for p in cls.db['people']if p['person_id']=='cqu-chenke')
+        cls.original=strip_aliases(cls.db)
+        cls.old_person=next(p for p in cls.original['people']if p['person_id']=='cqu-chenke')
+
+    def test_01_only_two_exact_evidence_bound_role_aliases_added(self):
+        self.assertTrue(assert_alias_contract(self.person))
+        self.assertEqual([r['source_id']for r in self.person['teaching']],SOURCE_IDS)
+        self.assertEqual(object_sha(self.old_person['teaching']),BASELINE_TEACHING_SHA256)
+
+    def test_02_removing_only_fourteen_alias_leaves_restores_entire_original_atlas(self):
+        self.assertEqual(object_sha(self.original),BASELINE_ATLAS_OBJECT_SHA256)
+        self.assertEqual(json_bytes_sha(self.original),BASELINE_ATLAS_SHA256)
+        self.assertEqual((len(self.db['people']),len(self.db['pending_people']),len(self.db['institutions'])),(555,84,39))
+
+    def test_03_all_other_teaching_and_original_notes_remain_exact(self):
+        self.assertEqual(object_sha([[p['person_id'],p.get('teaching')]for p in self.db['people']if p['person_id']!='cqu-chenke']),BASELINE_OTHER_TEACHING_SHA256)
+        for row,old in zip(self.person['teaching'],BASELINE_TEACHING):
+            for key in ['note','source_note','note_derivation','period','level','status','source_id','source_url']:
+                self.assertEqual(row.get(key),old.get(key),key)
+            self.assertEqual(row['role_source_note'],row['source_note'])
+        self.assertEqual(self.person['teaching'][1]['period'],'2025-09-18')
+        self.assertNotIn('来源教学时期',self.person['teaching'][1]['role_source_note'])
+
+    def test_04_application_exporter_and_tokens_have_only_reviewed_layout_overlay(self):
+        for file,digest in UNCHANGED_FILES.items():
+            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),LAYOUT_FIX_APPLICATION_SHA256.get(file,digest),file)
+        for file,count in [('site/app.js',3),('site/rosters.js',1),('site/index.html',2)]:
+            self.assertEqual((ROOT/file).read_text().count('rotation003-20261023-w2'),count)
+
+    def test_05_generated_snapshots_recover_exactly_after_aliases_and_derived_build_id_removed(self):
+        site=json.loads((ROOT/'site/atlas.json').read_text());roster=json.loads((ROOT/'site/rosters.json').read_text())
+        self.assertEqual(site['people'],self.db['people']);self.assertEqual(site['pending_people'],self.db['pending_people'])
+        self.assertEqual(site['build_id'],roster['build_id']);self.assertNotEqual(site['build_id'],BASELINE_BUILD_ID)
+        site=strip_aliases(site);site['build_id']=BASELINE_BUILD_ID;roster['build_id']=BASELINE_BUILD_ID
+        self.assertEqual(json_bytes_sha(site),BASELINE_SITE_ATLAS_SHA256)
+        self.assertEqual(json_bytes_sha(roster),BASELINE_SITE_ROSTERS_SHA256)
+
+    def test_06_roles_do_not_change_education_appointments_mentors_or_candidates(self):
+        for key in ['education','appointments','mentors','committee_members','publications','research_fields','pending_education_candidates','pending_mentor_candidates','pending_appointment_candidates','pending_professional_fact_candidates']:
+            self.assertEqual(self.person[key],self.old_person[key],key)
+        self.assertEqual(len(self.person['education']),1);self.assertIsNone(self.person['education'][0]['degree'])
+        self.assertIsNone(self.person['education'][0]['degree_awarded']);self.assertFalse(self.person['education'][0]['include_in_education_filters'])
+        self.assertEqual(self.person['mentors'],[]);self.assertIsNone(self.person['listed_role'])
+        self.assertEqual([p['person_id']for p in self.db['pending_people'][83:]],['cqu-chenrenwei'])
+
+    def test_07_roles_preserve_cached404_navigation_and_historical_scope(self):
+        sources={s['id']:s for s in self.person['sources']}
+        for row in self.person['teaching']:
+            self.assertFalse(row['source_navigation_enabled']);self.assertEqual(row['status'],'historical_source_reported')
+            self.assertEqual(row['evidence_status'],'official_cached_body_read_direct_404')
+            source=sources[row['role_source_id']]
+            self.assertEqual(source['url'],row['role_source_url']);self.assertFalse(source['navigation_enabled']);self.assertEqual(source['ordinary_https_status'],404)
+        self.assertIn('未声称2026仍授课',self.person['teaching'][0]['note'])
+        self.assertIn('不是学期课程或长期任课',self.person['teaching'][1]['note'])
+
+    def test_08_actual_export_summary_replaces_only_two_role_placeholders(self):
+        now=build.teaching_summary(self.person);old=build.teaching_summary(self.old_person)
+        self.assertEqual(old.count('角色未披露'),2);self.assertNotIn('角色未披露',now)
+        self.assertEqual(now,old.replace('角色未披露','主讲'))
+        self.assertIn('2025-09-18',now);self.assertIn('404',now);self.assertIn('缓存',now)
+        current=dict(build.department_tables([self.person],self.db['updated_at'],self.db['institutions']))
+        baseline=dict(build.department_tables([self.old_person],self.original['updated_at'],self.original['institutions']))
+        self.assertNotEqual(current['总览'][1][6],baseline['总览'][1][6])
+        current['总览'][1][6]=current['总览'][1][6].replace('；主讲；','；角色未披露；')
+        self.assertEqual(current,baseline)
+
+    def test_09_changed_department_workbook_every_cell_matches_unchanged_canonical_exporter(self):
+        from openpyxl import load_workbook
+        people=[p for p in self.db['people']if p['department_id']=='cqu-architecture-urban-planning']
+        tables=dict(build.department_tables(people,self.db['updated_at'],self.db['institutions']))
+        blocked=build.disabled_sources_by_person(people)
+        book=load_workbook(ROOT/'site/exports/cqu-architecture-urban-planning.xlsx')
+        self.assertEqual(book.sheetnames,list(tables));checked=0
+        for name,rows in tables.items():
+            ws=book[name];self.assertEqual((ws.max_row,ws.max_column),(len(rows),len(rows[0])))
+            for i,row in enumerate(rows,1):
+                for j,value in enumerate(row,1):
+                    cell=ws.cell(i,j);value=build.clean(value);self.assertEqual(cell.value,value if value!='' else None,(name,i,j))
+                    expected=value if i>1 and build.valid_url(value) and value not in blocked.get(ws.cell(i,1).value,set())else None
+                    self.assertEqual(cell.hyperlink.target if cell.hyperlink else None,expected,(name,i,j));self.assertNotEqual(cell.data_type,'f');checked+=1
+        self.assertGreater(checked,250);book.close()
+
+    def test_10_all_110_other_department_and_roster_workbooks_remain_byte_identical(self):
+        self.assertEqual(len(UNCHANGED_DEPARTMENT_WORKBOOKS),110)
+        for file,digest in UNCHANGED_DEPARTMENT_WORKBOOKS.items():
+            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest,file)
+        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),BASELINE_ROSTER_WORKBOOK_SHA256)
+
+    def test_11_alias_guard_rejects_every_added_leaf_mutation_and_cross_source_swap(self):
+        paths=[(key,)for key in ROLE_KEYS]+[('field_provenance','role'),('field_status','role')]
+        for index in range(2):
+            for path in paths:
+                changed=copy.deepcopy(self.person);target=changed['teaching'][index]
+                for key in path[:-1]:target=target[key]
+                target[path[-1]]='unreviewed-role-or-source'
+                with self.assertRaises(AssertionError,msg=(index,path)):assert_alias_contract(changed)
+        changed=copy.deepcopy(self.person);changed['teaching'][0]['role_source_id']=SOURCE_IDS[1]
+        with self.assertRaises(AssertionError):assert_alias_contract(changed)
+
+    def test_12_validators_and_export_consumers_do_not_mutate_inputs(self):
+        before=object_sha(self.db);build.validate(self.db)
+        build.teaching_summary(self.person);build.department_tables([self.person],self.db['updated_at'],self.db['institutions'])
+        self.assertEqual(object_sha(self.db),before)
+
+
+# Exact layout-only overlay; all original source/data/application pins remain above.
+LAYOUT_FIX_APPLICATION_SHA256 = {'site/styles.css': '3b01ec6a5674982d048237e5426aa107bd622662d2758913c81bc6f5c4c0ceca', 'site/app.js': '5ce1dbc7161a048ab263cdff313bc904544b362c13d39cc5963886b409f037e2', 'site/rosters.js': '7536ef08c4032e05e1ad3c09532858dd42fd68c20968c82e2146481cf6d9c85f', 'site/index.html': '7e6331d4846c13d64f0a5b5b65a9d52539df537b2ce20ef26563669739f8f2a3'}
+
+if __name__=='__main__':unittest.main()

@@ -41,9 +41,9 @@ async function render(id, mode='profile', input=db) {
 }
 
 test('release23 six selected NJU/HNU profiles remain unchanged at the release24 endpoint', () => {
-  assert.equal(db.people.length,547);assert.equal(db.pending_people.length,83);
-  assert.equal(db.org_units.length,223);assert.equal(db.institutions.length,39);
-  assert.equal(db.rosters.entries.length,1712);assert.equal(db.rosters.source_observations.length,1750);
+  assert.equal(db.people.length,555);assert.equal(db.pending_people.length,84);
+  assert.equal(db.org_units.length,229);assert.equal(db.institutions.length,39);
+  assert.equal(db.rosters.entries.length,1721);assert.equal(db.rosters.source_observations.length,1759);
   assert.deepEqual(db.people.slice(535,541).map(p=>p.person_id),ids);
   assert.deepEqual(db.rosters.entries.slice(1700,1706).map(e=>e.source_person_id),ids);
   assert.deepEqual(db.profile_batches.slice(130,132).map(b=>b.batch_id),['faculty-batch-nju-rotation-002','faculty-batch-hnu-rotation-002']);

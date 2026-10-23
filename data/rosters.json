@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "39校公开名录样本，1712条整合记录、1750条原始来源观察；原1706记录与1744观察不变。新增2校6条选中观察不表示全系全院或唯一现任人数。",
+  "scope": "39校公开名录样本，1721条整合记录、1759条原始来源观察；原1712记录与1750观察不变。新增3校9条选中观察不表示全系全院或唯一现任人数。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -1275,6 +1275,27 @@
     {
       "school_id": "scu",
       "organization_id": "scu-materials-science-engineering",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "cqu",
+      "organization_id": "cqu-architecture-urban-planning",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "xmu",
+      "organization_id": "xmu-economics-department",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "bit",
+      "organization_id": "bit-physics-optical",
       "visible_roster_entries": 3,
       "count_scope": "selected_subset_only",
       "coverage_complete": false
@@ -4970,6 +4991,69 @@
       "batch_id": "scu-selected-roster-rotation-002",
       "source_category_observed_count": 42,
       "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "cqu",
+      "organization_id": "cqu-architecture-urban-planning",
+      "url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+      "category": "建筑城规学院教师列表",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+      "selection_basis": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "cqu-selected-roster-rotation-003",
+      "source_category_observed_count": 65,
+      "source_category_evidence_level": "official_roster_body_read",
+      "source_category_count_basis": "Native pagination 共65条, 7 pages; pages 1–6 contain 10 linked teacher cards each and page 7 contains 5; 65 distinct listed names. A search-index URL carried stale totalpage=4; ignored and canonical native links used."
+    },
+    {
+      "school_id": "xmu",
+      "organization_id": "xmu-economics-department",
+      "url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+      "category": "教学科研人员·经济学系",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+      "selection_basis": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "xmu-selected-roster-rotation-003",
+      "source_category_observed_count": 29,
+      "source_category_evidence_level": "official_roster_body_read",
+      "source_category_count_basis": "Single department category body, 29 distinct linked professional entries, web reader lines 140–329 (link numbers 90–118); navigation, footer, contacts and other department categories excluded. No pagination shown."
+    },
+    {
+      "school_id": "bit",
+      "organization_id": "bit-physics-optical",
+      "url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+      "category": "光学物理系 > ALL",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+      "selection_basis": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "bit-selected-roster-rotation-003",
+      "source_category_observed_count": 33,
+      "source_category_evidence_level": "official_roster_body_read",
+      "source_category_count_basis": "Two observations retained, not silently reconciled: web reader displayed totals 34/33 with 20+13 body names; later direct GET 200 for both pages displayed 33/33 and yielded 20+13 professional links. Complete observed name order has 33 entries; category-wide total remains qualified by the snapshot discrepancy."
     }
   ],
   "entries": [
@@ -57047,6 +57131,594 @@
         "independent_review_sha256": "1cd89b87e3520869b36438d4c0510939ca2a9c99e501c86b52500120f3554aec",
         "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
       }
+    },
+    {
+      "id": "roster-cqu-chenke",
+      "name": "陈科",
+      "school_id": "cqu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "cqu-architecture-urban-planning",
+      "department_id": "cqu-architecture-urban-planning",
+      "category": "建筑城规学院教师列表",
+      "listed_role": null,
+      "listed_role_basis": "not_disclosed_by_current_individual_profile",
+      "official_profile_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "cqu-chenke",
+      "source_person_id": "cqu-chenke",
+      "batch_id": "cqu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-cqu-rotation-003",
+      "source_ids": [
+        "cqu-architecture-teacher-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "profile_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+        "native_link_target": "http://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+        "source_ids": [
+          "cqu-architecture-teacher-roster",
+          "cqu-chenke-profile"
+        ],
+        "note": "官方建筑城规学院教师列表直接链接同名个人页；只将个人页所述同学院身份合并，不合并其他院系同名人物。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。"
+      ],
+      "source_observation_ids": [
+        "cqu-selected-roster-rotation-003:roster-cqu-chenke:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "cqu-architecture-teacher-roster",
+          "cqu-chenke-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "official_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+        "reviewed_source_sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc",
+        "independent_review_sha256": "0317f6e539c923722bc72e5ac3ca6e9a1ac2b7b03a663da3a8b70a97623195eb",
+        "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+      }
+    },
+    {
+      "id": "roster-cqu-chenrenwei",
+      "name": "陈仁伟",
+      "school_id": "cqu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "cqu-architecture-urban-planning",
+      "department_id": "cqu-architecture-urban-planning",
+      "category": "建筑城规学院教师列表",
+      "listed_role": null,
+      "listed_role_basis": "not_disclosed_by_current_individual_profile",
+      "official_profile_url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "cqu-chenrenwei",
+      "batch_id": "cqu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-cqu-rotation-003",
+      "source_ids": [
+        "cqu-architecture-teacher-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "profile_url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+        "native_link_target": "http://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+        "source_ids": [
+          "cqu-architecture-teacher-roster",
+          "cqu-chenrenwei-profile"
+        ],
+        "note": "官方建筑城规学院教师列表直接链接同名个人页；只将个人页所述同学院身份合并，不合并其他院系同名人物。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。"
+      ],
+      "source_observation_ids": [
+        "cqu-selected-roster-rotation-003:roster-cqu-chenrenwei:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "cqu-architecture-teacher-roster",
+          "cqu-chenrenwei-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "official_url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+        "reviewed_source_sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc",
+        "independent_review_sha256": "0317f6e539c923722bc72e5ac3ca6e9a1ac2b7b03a663da3a8b70a97623195eb",
+        "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+      },
+      "profile_status": "profile_details_pending",
+      "profile_coverage_label": "本人身份与名录直链已核，职业资料稀疏待完善；不计职业档案",
+      "profile_identity_matched": true,
+      "pending_identity_status": "official_roster_and_sparse_personal_profile_matched"
+    },
+    {
+      "id": "roster-cqu-chenxiaomeng",
+      "name": "陈肖萌",
+      "school_id": "cqu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "cqu-architecture-urban-planning",
+      "department_id": "cqu-architecture-urban-planning",
+      "category": "建筑城规学院教师列表",
+      "listed_role": "副教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "cqu-chenxiaomeng",
+      "source_person_id": "cqu-chenxiaomeng",
+      "batch_id": "cqu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-cqu-rotation-003",
+      "source_ids": [
+        "cqu-architecture-teacher-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "profile_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+        "native_link_target": "http://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+        "source_ids": [
+          "cqu-architecture-teacher-roster",
+          "cqu-chenxiaomeng-profile"
+        ],
+        "note": "官方建筑城规学院教师列表直接链接同名个人页；只将个人页所述同学院身份合并，不合并其他院系同名人物。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。"
+      ],
+      "source_observation_ids": [
+        "cqu-selected-roster-rotation-003:roster-cqu-chenxiaomeng:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "cqu-architecture-teacher-roster",
+          "cqu-chenxiaomeng-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "official_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+        "reviewed_source_sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc",
+        "independent_review_sha256": "0317f6e539c923722bc72e5ac3ca6e9a1ac2b7b03a663da3a8b70a97623195eb",
+        "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+      }
+    },
+    {
+      "id": "roster-xmu-chenhuang-economics",
+      "name": "陈煌",
+      "school_id": "xmu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "xmu-economics-department",
+      "department_id": "xmu-economics-department",
+      "category": "教学科研人员·经济学系",
+      "listed_role": "助理教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+      "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "xmu-chenhuang-economics",
+      "source_person_id": "xmu-chenhuang-economics",
+      "batch_id": "xmu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-xmu-rotation-003",
+      "source_ids": [
+        "xmu-economics-teaching-research-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "profile_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster",
+          "xmu-chenhuang-profile"
+        ],
+        "note": "按经济学系官方教学科研人员名录姓名直链至同名个人正文；名录现列不等全职或正式在岗人事核验。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。"
+      ],
+      "source_observation_ids": [
+        "xmu-selected-roster-rotation-003:roster-xmu-chenhuang-economics:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster",
+          "xmu-chenhuang-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "official_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+        "reviewed_source_sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8",
+        "independent_review_sha256": "8cc9848196b2c81933e395661768fd27343644b8cadf981839b02cb4156b23bc",
+        "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+      }
+    },
+    {
+      "id": "roster-xmu-chenwanyi",
+      "name": "陈琬祎",
+      "school_id": "xmu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "xmu-economics-department",
+      "department_id": "xmu-economics-department",
+      "category": "教学科研人员·经济学系",
+      "listed_role": "助理教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+      "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "xmu-chenwanyi",
+      "source_person_id": "xmu-chenwanyi",
+      "batch_id": "xmu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-xmu-rotation-003",
+      "source_ids": [
+        "xmu-economics-teaching-research-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "profile_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster",
+          "xmu-chenwanyi-profile",
+          "xmu-chenwanyi-2021-news"
+        ],
+        "note": "按经济学系官方教学科研人员名录姓名直链至同名个人正文；名录现列不等全职或正式在岗人事核验。 2021-12-15研究院新闻补证本人及王亚南经济研究院、经济学院经济学系双单位关联，不另造任职起点。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。"
+      ],
+      "source_observation_ids": [
+        "xmu-selected-roster-rotation-003:roster-xmu-chenwanyi:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster",
+          "xmu-chenwanyi-profile",
+          "xmu-chenwanyi-2021-news"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "official_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+        "reviewed_source_sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8",
+        "independent_review_sha256": "8cc9848196b2c81933e395661768fd27343644b8cadf981839b02cb4156b23bc",
+        "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+      }
+    },
+    {
+      "id": "roster-xmu-dingchangfa",
+      "name": "丁长发",
+      "school_id": "xmu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "xmu-economics-department",
+      "department_id": "xmu-economics-department",
+      "category": "教学科研人员·经济学系",
+      "listed_role": "副教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+      "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "xmu-dingchangfa",
+      "source_person_id": "xmu-dingchangfa",
+      "batch_id": "xmu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-xmu-rotation-003",
+      "source_ids": [
+        "xmu-economics-teaching-research-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "profile_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster",
+          "xmu-dingchangfa-profile"
+        ],
+        "note": "按经济学系官方教学科研人员名录姓名直链至同名个人正文；名录现列不等全职或正式在岗人事核验。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。"
+      ],
+      "source_observation_ids": [
+        "xmu-selected-roster-rotation-003:roster-xmu-dingchangfa:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster",
+          "xmu-dingchangfa-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "official_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+        "reviewed_source_sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8",
+        "independent_review_sha256": "8cc9848196b2c81933e395661768fd27343644b8cadf981839b02cb4156b23bc",
+        "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+      }
+    },
+    {
+      "id": "roster-bit-chentian",
+      "name": "陈天",
+      "school_id": "bit",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bit-physics-optical",
+      "department_id": "bit-physics-optical",
+      "category": "光学物理系 > ALL",
+      "listed_role": "准聘教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+      "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "bit-chentian",
+      "source_person_id": "bit-chentian",
+      "batch_id": "bit-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-bit-rotation-003",
+      "source_ids": [
+        "bit-physics-optical-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+        "source_ids": [
+          "bit-physics-optical-roster",
+          "bit-chentian-profile"
+        ],
+        "note": "官方同次名录原序首3姓名直链到同名专业主页；栏目现列不是全职、在岗或双聘核验。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。"
+      ],
+      "include_in_current_faculty_count": false,
+      "sampling_affiliation_label": "抽样入口：物理学院·光学物理系；仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。",
+      "source_observation_ids": [
+        "bit-selected-roster-rotation-003:roster-bit-chentian:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "bit-physics-optical-roster",
+          "bit-chentian-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "official_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+        "reviewed_source_sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477",
+        "independent_review_sha256": "2525d7a90408f4d99159326dc514b60a6fb1b37213094fa05ae0b1cb6fbfef79",
+        "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+      },
+      "profile_department_id": "bit-physics-optical",
+      "profile_organization_id": "bit-physics-optical",
+      "sampling_affiliation": {
+        "institution": "北京理工大学",
+        "department": "物理学院·光学物理系",
+        "organization_id": "bit-physics-optical",
+        "category": "ALL",
+        "source_id": "bit-physics-optical-roster",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "evidence_status": "official_roster_body_read",
+        "basis": "official_roster_category_membership_only",
+        "personnel_status_verified": false,
+        "joint_appointment_verified": false,
+        "note": "仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。"
+      },
+      "organization_assignment_basis": "explicit_original_sampling_affiliation_not_current_employment"
+    },
+    {
+      "id": "roster-bit-chenyuhui",
+      "name": "陈宇辉",
+      "school_id": "bit",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bit-physics-optical",
+      "department_id": "bit-physics-optical",
+      "category": "光学物理系 > ALL",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+      "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "bit-chenyuhui",
+      "source_person_id": "bit-chenyuhui",
+      "batch_id": "bit-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-bit-rotation-003",
+      "source_ids": [
+        "bit-physics-optical-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+        "source_ids": [
+          "bit-physics-optical-roster",
+          "bit-chenyuhui-profile"
+        ],
+        "note": "官方同次名录原序首3姓名直链到同名专业主页；栏目现列不是全职、在岗或双聘核验。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。"
+      ],
+      "include_in_current_faculty_count": false,
+      "sampling_affiliation_label": "抽样入口：物理学院·光学物理系；仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。",
+      "source_observation_ids": [
+        "bit-selected-roster-rotation-003:roster-bit-chenyuhui:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "bit-physics-optical-roster",
+          "bit-chenyuhui-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "official_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+        "reviewed_source_sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477",
+        "independent_review_sha256": "2525d7a90408f4d99159326dc514b60a6fb1b37213094fa05ae0b1cb6fbfef79",
+        "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+      },
+      "profile_department_id": "bit-physics-optical",
+      "profile_organization_id": "bit-physics-optical",
+      "sampling_affiliation": {
+        "institution": "北京理工大学",
+        "department": "物理学院·光学物理系",
+        "organization_id": "bit-physics-optical",
+        "category": "ALL",
+        "source_id": "bit-physics-optical-roster",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "evidence_status": "official_roster_body_read",
+        "basis": "official_roster_category_membership_only",
+        "personnel_status_verified": false,
+        "joint_appointment_verified": false,
+        "note": "仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。"
+      },
+      "organization_assignment_basis": "explicit_original_sampling_affiliation_not_current_employment"
+    },
+    {
+      "id": "roster-bit-daiyunyun",
+      "name": "戴贇贇",
+      "school_id": "bit",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bit-physics-optical",
+      "department_id": "bit-physics-optical",
+      "category": "光学物理系 > ALL",
+      "listed_role": null,
+      "listed_role_basis": "conflicting_official_title_claims_unresolved",
+      "official_profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+      "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "bit-daiyunyun",
+      "source_person_id": "bit-daiyunyun",
+      "batch_id": "bit-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-bit-rotation-003",
+      "source_ids": [
+        "bit-physics-optical-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+        "source_ids": [
+          "bit-physics-optical-roster",
+          "bit-daiyunyun-physics-profile",
+          "bit-daiyunyun-frontier-profile"
+        ],
+        "note": "官方同次名录原序首3姓名直链到同名专业主页；栏目现列不是全职、在岗或双聘核验。",
+        "supplementary_identity_basis": "前沿交叉官方同名页，与物理学院直链页的Aalto博士后年份及同一Nano Letters书目信息一致；跨院系来源用于补充履历，非扩充任职关系。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。"
+      ],
+      "include_in_current_faculty_count": false,
+      "sampling_affiliation_label": "抽样入口：物理学院·光学物理系ALL名录；本人任职正文：前沿交叉科学研究院。未核物理学院任职或双聘。现职称两官方页冲突，待核。",
+      "source_observation_ids": [
+        "bit-selected-roster-rotation-003:roster-bit-daiyunyun:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "bit-physics-optical-roster",
+          "bit-daiyunyun-physics-profile",
+          "bit-daiyunyun-frontier-profile"
+        ],
+        "checked_on": "2026-10-23",
+        "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "official_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+        "reviewed_source_sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477",
+        "independent_review_sha256": "2525d7a90408f4d99159326dc514b60a6fb1b37213094fa05ae0b1cb6fbfef79",
+        "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+      },
+      "profile_department_id": "bit-frontier-interdisciplinary-institute",
+      "profile_organization_id": "bit-frontier-interdisciplinary-institute",
+      "sampling_affiliation": {
+        "institution": "北京理工大学",
+        "department": "物理学院·光学物理系",
+        "organization_id": "bit-physics-optical",
+        "category": "ALL",
+        "source_id": "bit-physics-optical-roster",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "evidence_status": "official_roster_body_read",
+        "basis": "official_roster_category_membership_only",
+        "personnel_status_verified": false,
+        "joint_appointment_verified": false,
+        "note": "仅名录抽样归属。本人任职正文指向前沿交叉科学研究院，不能据此认定物理学院任职、全职或双聘。"
+      },
+      "organization_assignment_basis": "explicit_original_sampling_affiliation_not_current_employment"
     }
   ],
   "conflicts": [
@@ -64899,27 +65571,123 @@
         }
       ],
       "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "cqu-selected-roster-rotation-003",
+      "school_id": "cqu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-cqu-chenke",
+        "roster-cqu-chenrenwei",
+        "roster-cqu-chenxiaomeng"
+      ],
+      "source_observation_ids": [
+        "cqu-selected-roster-rotation-003:roster-cqu-chenke:1",
+        "cqu-selected-roster-rotation-003:roster-cqu-chenrenwei:1",
+        "cqu-selected-roster-rotation-003:roster-cqu-chenxiaomeng:1"
+      ],
+      "selection": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+      "selection_basis": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-cqu-rotation-003.json",
+          "sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "xmu-selected-roster-rotation-003",
+      "school_id": "xmu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-xmu-chenhuang-economics",
+        "roster-xmu-chenwanyi",
+        "roster-xmu-dingchangfa"
+      ],
+      "source_observation_ids": [
+        "xmu-selected-roster-rotation-003:roster-xmu-chenhuang-economics:1",
+        "xmu-selected-roster-rotation-003:roster-xmu-chenwanyi:1",
+        "xmu-selected-roster-rotation-003:roster-xmu-dingchangfa:1"
+      ],
+      "selection": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+      "selection_basis": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-xmu-rotation-003.json",
+          "sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "bit-selected-roster-rotation-003",
+      "school_id": "bit",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-bit-chentian",
+        "roster-bit-chenyuhui",
+        "roster-bit-daiyunyun"
+      ],
+      "source_observation_ids": [
+        "bit-selected-roster-rotation-003:roster-bit-chentian:1",
+        "bit-selected-roster-rotation-003:roster-bit-chenyuhui:1",
+        "bit-selected-roster-rotation-003:roster-bit-daiyunyun:1"
+      ],
+      "selection": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+      "selection_basis": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-bit-rotation-003.json",
+          "sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
     }
   ],
   "totals": {
-    "organization_count": 121,
-    "category_count": 185,
-    "entries_with_profile_link": 1505,
+    "organization_count": 124,
+    "category_count": 188,
+    "entries_with_profile_link": 1514,
     "entries_without_profile_link": 207,
     "dedup_candidate_groups": 60,
     "placeholder_profile_link_observations": 18,
     "current_employment_count_verified": false,
     "not_unique_people_count": true,
-    "record_count": 1712,
-    "raw_observation_count": 1750,
-    "roster_records": 1712,
-    "raw_source_observations": 1750,
-    "coverage_unit_count": 212,
+    "record_count": 1721,
+    "raw_observation_count": 1759,
+    "roster_records": 1721,
+    "raw_source_observations": 1759,
+    "coverage_unit_count": 215,
     "count_unit": "integrated_roster_records",
     "source_record_grouping_reduction": 38,
     "category_count_basis": "unique_organization_category_pairs",
-    "unique_organization_category_pairs": 185,
-    "batch_category_count": 204,
+    "unique_organization_category_pairs": 188,
+    "batch_category_count": 207,
     "category_count_source": "coverage_rows_preserved_without_deduplication"
   },
   "role_interpretation": {
@@ -118183,6 +118951,648 @@
           "independent_review_sha256": "1cd89b87e3520869b36438d4c0510939ca2a9c99e501c86b52500120f3554aec",
           "scope_note": "仅同名同院系官方名录直链身份核对，不表示学历完整、全职或人事在岗已核。"
         }
+      }
+    },
+    {
+      "observation_id": "cqu-selected-roster-rotation-003:roster-cqu-chenke:1",
+      "record_id": "roster-cqu-chenke",
+      "batch_id": "cqu-selected-roster-rotation-003",
+      "school_id": "cqu",
+      "organization_id": "cqu-architecture-urban-planning",
+      "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-cqu-chenke",
+        "name": "陈科",
+        "school_id": "cqu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "cqu-architecture-urban-planning",
+        "department_id": "cqu-architecture-urban-planning",
+        "category": "建筑城规学院教师列表",
+        "listed_role": null,
+        "listed_role_basis": "not_disclosed_by_current_individual_profile",
+        "official_profile_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+        "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "cqu-chenke",
+        "source_person_id": "cqu-chenke",
+        "batch_id": "cqu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-cqu-rotation-003",
+        "source_ids": [
+          "cqu-architecture-teacher-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "profile_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+          "native_link_target": "http://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+          "source_ids": [
+            "cqu-architecture-teacher-roster",
+            "cqu-chenke-profile"
+          ],
+          "note": "官方建筑城规学院教师列表直接链接同名个人页；只将个人页所述同学院身份合并，不合并其他院系同名人物。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "cqu-architecture-teacher-roster",
+            "cqu-chenke-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "official_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+          "reviewed_source_sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc",
+          "independent_review_sha256": "0317f6e539c923722bc72e5ac3ca6e9a1ac2b7b03a663da3a8b70a97623195eb",
+          "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+        }
+      }
+    },
+    {
+      "observation_id": "cqu-selected-roster-rotation-003:roster-cqu-chenrenwei:1",
+      "record_id": "roster-cqu-chenrenwei",
+      "batch_id": "cqu-selected-roster-rotation-003",
+      "school_id": "cqu",
+      "organization_id": "cqu-architecture-urban-planning",
+      "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-cqu-chenrenwei",
+        "name": "陈仁伟",
+        "school_id": "cqu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "cqu-architecture-urban-planning",
+        "department_id": "cqu-architecture-urban-planning",
+        "category": "建筑城规学院教师列表",
+        "listed_role": null,
+        "listed_role_basis": "not_disclosed_by_current_individual_profile",
+        "official_profile_url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+        "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": false,
+        "verified_person_id": null,
+        "source_person_id": "cqu-chenrenwei",
+        "batch_id": "cqu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-cqu-rotation-003",
+        "source_ids": [
+          "cqu-architecture-teacher-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "profile_url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+          "native_link_target": "http://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+          "source_ids": [
+            "cqu-architecture-teacher-roster",
+            "cqu-chenrenwei-profile"
+          ],
+          "note": "官方建筑城规学院教师列表直接链接同名个人页；只将个人页所述同学院身份合并，不合并其他院系同名人物。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "cqu-architecture-teacher-roster",
+            "cqu-chenrenwei-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "official_url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+          "reviewed_source_sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc",
+          "independent_review_sha256": "0317f6e539c923722bc72e5ac3ca6e9a1ac2b7b03a663da3a8b70a97623195eb",
+          "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+        },
+        "profile_status": "profile_details_pending",
+        "profile_coverage_label": "本人身份与名录直链已核，职业资料稀疏待完善；不计职业档案",
+        "profile_identity_matched": true,
+        "pending_identity_status": "official_roster_and_sparse_personal_profile_matched"
+      }
+    },
+    {
+      "observation_id": "cqu-selected-roster-rotation-003:roster-cqu-chenxiaomeng:1",
+      "record_id": "roster-cqu-chenxiaomeng",
+      "batch_id": "cqu-selected-roster-rotation-003",
+      "school_id": "cqu",
+      "organization_id": "cqu-architecture-urban-planning",
+      "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-cqu-chenxiaomeng",
+        "name": "陈肖萌",
+        "school_id": "cqu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "cqu-architecture-urban-planning",
+        "department_id": "cqu-architecture-urban-planning",
+        "category": "建筑城规学院教师列表",
+        "listed_role": "副教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+        "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "cqu-chenxiaomeng",
+        "source_person_id": "cqu-chenxiaomeng",
+        "batch_id": "cqu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-cqu-rotation-003",
+        "source_ids": [
+          "cqu-architecture-teacher-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "profile_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "native_link_target": "http://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "source_ids": [
+            "cqu-architecture-teacher-roster",
+            "cqu-chenxiaomeng-profile"
+          ],
+          "note": "官方建筑城规学院教师列表直接链接同名个人页；只将个人页所述同学院身份合并，不合并其他院系同名人物。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "cqu-architecture-teacher-roster",
+            "cqu-chenxiaomeng-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "official_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "reviewed_source_sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc",
+          "independent_review_sha256": "0317f6e539c923722bc72e5ac3ca6e9a1ac2b7b03a663da3a8b70a97623195eb",
+          "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+        }
+      }
+    },
+    {
+      "observation_id": "xmu-selected-roster-rotation-003:roster-xmu-chenhuang-economics:1",
+      "record_id": "roster-xmu-chenhuang-economics",
+      "batch_id": "xmu-selected-roster-rotation-003",
+      "school_id": "xmu",
+      "organization_id": "xmu-economics-department",
+      "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-xmu-chenhuang-economics",
+        "name": "陈煌",
+        "school_id": "xmu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "xmu-economics-department",
+        "department_id": "xmu-economics-department",
+        "category": "教学科研人员·经济学系",
+        "listed_role": "助理教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+        "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "xmu-chenhuang-economics",
+        "source_person_id": "xmu-chenhuang-economics",
+        "batch_id": "xmu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-xmu-rotation-003",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+          "profile_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "source_ids": [
+            "xmu-economics-teaching-research-roster",
+            "xmu-chenhuang-profile"
+          ],
+          "note": "按经济学系官方教学科研人员名录姓名直链至同名个人正文；名录现列不等全职或正式在岗人事核验。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "xmu-economics-teaching-research-roster",
+            "xmu-chenhuang-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+          "official_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "reviewed_source_sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8",
+          "independent_review_sha256": "8cc9848196b2c81933e395661768fd27343644b8cadf981839b02cb4156b23bc",
+          "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+        }
+      }
+    },
+    {
+      "observation_id": "xmu-selected-roster-rotation-003:roster-xmu-chenwanyi:1",
+      "record_id": "roster-xmu-chenwanyi",
+      "batch_id": "xmu-selected-roster-rotation-003",
+      "school_id": "xmu",
+      "organization_id": "xmu-economics-department",
+      "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-xmu-chenwanyi",
+        "name": "陈琬祎",
+        "school_id": "xmu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "xmu-economics-department",
+        "department_id": "xmu-economics-department",
+        "category": "教学科研人员·经济学系",
+        "listed_role": "助理教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+        "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "xmu-chenwanyi",
+        "source_person_id": "xmu-chenwanyi",
+        "batch_id": "xmu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-xmu-rotation-003",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+          "profile_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+          "source_ids": [
+            "xmu-economics-teaching-research-roster",
+            "xmu-chenwanyi-profile",
+            "xmu-chenwanyi-2021-news"
+          ],
+          "note": "按经济学系官方教学科研人员名录姓名直链至同名个人正文；名录现列不等全职或正式在岗人事核验。 2021-12-15研究院新闻补证本人及王亚南经济研究院、经济学院经济学系双单位关联，不另造任职起点。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "xmu-economics-teaching-research-roster",
+            "xmu-chenwanyi-profile",
+            "xmu-chenwanyi-2021-news"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+          "official_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+          "reviewed_source_sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8",
+          "independent_review_sha256": "8cc9848196b2c81933e395661768fd27343644b8cadf981839b02cb4156b23bc",
+          "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+        }
+      }
+    },
+    {
+      "observation_id": "xmu-selected-roster-rotation-003:roster-xmu-dingchangfa:1",
+      "record_id": "roster-xmu-dingchangfa",
+      "batch_id": "xmu-selected-roster-rotation-003",
+      "school_id": "xmu",
+      "organization_id": "xmu-economics-department",
+      "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-xmu-dingchangfa",
+        "name": "丁长发",
+        "school_id": "xmu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "xmu-economics-department",
+        "department_id": "xmu-economics-department",
+        "category": "教学科研人员·经济学系",
+        "listed_role": "副教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+        "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "xmu-dingchangfa",
+        "source_person_id": "xmu-dingchangfa",
+        "batch_id": "xmu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-xmu-rotation-003",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+          "profile_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "source_ids": [
+            "xmu-economics-teaching-research-roster",
+            "xmu-dingchangfa-profile"
+          ],
+          "note": "按经济学系官方教学科研人员名录姓名直链至同名个人正文；名录现列不等全职或正式在岗人事核验。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。"
+        ],
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "xmu-economics-teaching-research-roster",
+            "xmu-dingchangfa-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+          "official_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "reviewed_source_sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8",
+          "independent_review_sha256": "8cc9848196b2c81933e395661768fd27343644b8cadf981839b02cb4156b23bc",
+          "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+        }
+      }
+    },
+    {
+      "observation_id": "bit-selected-roster-rotation-003:roster-bit-chentian:1",
+      "record_id": "roster-bit-chentian",
+      "batch_id": "bit-selected-roster-rotation-003",
+      "school_id": "bit",
+      "organization_id": "bit-physics-optical",
+      "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-bit-chentian",
+        "name": "陈天",
+        "school_id": "bit",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "bit-physics-optical",
+        "department_id": "bit-physics-optical",
+        "category": "光学物理系 > ALL",
+        "listed_role": "准聘教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+        "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "bit-chentian",
+        "source_person_id": "bit-chentian",
+        "batch_id": "bit-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-bit-rotation-003",
+        "source_ids": [
+          "bit-physics-optical-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "source_ids": [
+            "bit-physics-optical-roster",
+            "bit-chentian-profile"
+          ],
+          "note": "官方同次名录原序首3姓名直链到同名专业主页；栏目现列不是全职、在岗或双聘核验。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。"
+        ],
+        "include_in_current_faculty_count": false,
+        "sampling_affiliation_label": "抽样入口：物理学院·光学物理系；仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。",
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "bit-physics-optical-roster",
+            "bit-chentian-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "official_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "reviewed_source_sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477",
+          "independent_review_sha256": "2525d7a90408f4d99159326dc514b60a6fb1b37213094fa05ae0b1cb6fbfef79",
+          "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+        },
+        "profile_department_id": "bit-physics-optical",
+        "profile_organization_id": "bit-physics-optical",
+        "sampling_affiliation": {
+          "institution": "北京理工大学",
+          "department": "物理学院·光学物理系",
+          "organization_id": "bit-physics-optical",
+          "category": "ALL",
+          "source_id": "bit-physics-optical-roster",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "evidence_status": "official_roster_body_read",
+          "basis": "official_roster_category_membership_only",
+          "personnel_status_verified": false,
+          "joint_appointment_verified": false,
+          "note": "仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。"
+        },
+        "organization_assignment_basis": "explicit_original_sampling_affiliation_not_current_employment"
+      }
+    },
+    {
+      "observation_id": "bit-selected-roster-rotation-003:roster-bit-chenyuhui:1",
+      "record_id": "roster-bit-chenyuhui",
+      "batch_id": "bit-selected-roster-rotation-003",
+      "school_id": "bit",
+      "organization_id": "bit-physics-optical",
+      "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-bit-chenyuhui",
+        "name": "陈宇辉",
+        "school_id": "bit",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "bit-physics-optical",
+        "department_id": "bit-physics-optical",
+        "category": "光学物理系 > ALL",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+        "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "bit-chenyuhui",
+        "source_person_id": "bit-chenyuhui",
+        "batch_id": "bit-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-bit-rotation-003",
+        "source_ids": [
+          "bit-physics-optical-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "source_ids": [
+            "bit-physics-optical-roster",
+            "bit-chenyuhui-profile"
+          ],
+          "note": "官方同次名录原序首3姓名直链到同名专业主页；栏目现列不是全职、在岗或双聘核验。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。"
+        ],
+        "include_in_current_faculty_count": false,
+        "sampling_affiliation_label": "抽样入口：物理学院·光学物理系；仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。",
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "bit-physics-optical-roster",
+            "bit-chenyuhui-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "official_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "reviewed_source_sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477",
+          "independent_review_sha256": "2525d7a90408f4d99159326dc514b60a6fb1b37213094fa05ae0b1cb6fbfef79",
+          "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+        },
+        "profile_department_id": "bit-physics-optical",
+        "profile_organization_id": "bit-physics-optical",
+        "sampling_affiliation": {
+          "institution": "北京理工大学",
+          "department": "物理学院·光学物理系",
+          "organization_id": "bit-physics-optical",
+          "category": "ALL",
+          "source_id": "bit-physics-optical-roster",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "evidence_status": "official_roster_body_read",
+          "basis": "official_roster_category_membership_only",
+          "personnel_status_verified": false,
+          "joint_appointment_verified": false,
+          "note": "仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。"
+        },
+        "organization_assignment_basis": "explicit_original_sampling_affiliation_not_current_employment"
+      }
+    },
+    {
+      "observation_id": "bit-selected-roster-rotation-003:roster-bit-daiyunyun:1",
+      "record_id": "roster-bit-daiyunyun",
+      "batch_id": "bit-selected-roster-rotation-003",
+      "school_id": "bit",
+      "organization_id": "bit-physics-optical",
+      "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+      "accessed_on": "2026-10-23",
+      "source_payload": {
+        "id": "roster-bit-daiyunyun",
+        "name": "戴贇贇",
+        "school_id": "bit",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "bit-physics-optical",
+        "department_id": "bit-physics-optical",
+        "category": "光学物理系 > ALL",
+        "listed_role": null,
+        "listed_role_basis": "conflicting_official_title_claims_unresolved",
+        "official_profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+        "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "accessed_on": "2026-10-23",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "bit-daiyunyun",
+        "source_person_id": "bit-daiyunyun",
+        "batch_id": "bit-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-bit-rotation-003",
+        "source_ids": [
+          "bit-physics-optical-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+          "source_ids": [
+            "bit-physics-optical-roster",
+            "bit-daiyunyun-physics-profile",
+            "bit-daiyunyun-frontier-profile"
+          ],
+          "note": "官方同次名录原序首3姓名直链到同名专业主页；栏目现列不是全职、在岗或双聘核验。",
+          "supplementary_identity_basis": "前沿交叉官方同名页，与物理学院直链页的Aalto博士后年份及同一Nano Letters书目信息一致；跨院系来源用于补充履历，非扩充任职关系。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。"
+        ],
+        "include_in_current_faculty_count": false,
+        "sampling_affiliation_label": "抽样入口：物理学院·光学物理系ALL名录；本人任职正文：前沿交叉科学研究院。未核物理学院任职或双聘。现职称两官方页冲突，待核。",
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "bit-physics-optical-roster",
+            "bit-daiyunyun-physics-profile",
+            "bit-daiyunyun-frontier-profile"
+          ],
+          "checked_on": "2026-10-23",
+          "roster_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "official_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+          "reviewed_source_sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477",
+          "independent_review_sha256": "2525d7a90408f4d99159326dc514b60a6fb1b37213094fa05ae0b1cb6fbfef79",
+          "scope_note": "仅同名本人页与官方名录链接身份核对，不表示职业档案完整、全职或人事在岗已核。"
+        },
+        "profile_department_id": "bit-frontier-interdisciplinary-institute",
+        "profile_organization_id": "bit-frontier-interdisciplinary-institute",
+        "sampling_affiliation": {
+          "institution": "北京理工大学",
+          "department": "物理学院·光学物理系",
+          "organization_id": "bit-physics-optical",
+          "category": "ALL",
+          "source_id": "bit-physics-optical-roster",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "evidence_status": "official_roster_body_read",
+          "basis": "official_roster_category_membership_only",
+          "personnel_status_verified": false,
+          "joint_appointment_verified": false,
+          "note": "仅名录抽样归属。本人任职正文指向前沿交叉科学研究院，不能据此认定物理学院任职、全职或双聘。"
+        },
+        "organization_assignment_basis": "explicit_original_sampling_affiliation_not_current_employment"
       }
     }
   ],

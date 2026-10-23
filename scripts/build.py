@@ -174,7 +174,7 @@ def clean(v):
  if v is None:return ''
  if isinstance(v,str) and v and v[:1] in '=+-@\t\r':return "'"+v
  return v
-def sheet(wb,name,rows):
+def sheet(wb,name,rows,disabled_sources_by_person=None):
  ws=wb.create_sheet(name)
  for row in rows:ws.append([clean(v) for v in row])
  ws.freeze_panes='A2';ws.auto_filter.ref=ws.dimensions
@@ -182,9 +182,24 @@ def sheet(wb,name,rows):
  for row in ws.iter_rows(min_row=2):
   for cell in row:
    cell.alignment=Alignment(vertical='top',wrap_text=True)
-   if valid_url(cell.value):cell.hyperlink=cell.value;cell.font=Font(color='078B92',underline='single')
+   if valid_url(cell.value) and cell.value not in (disabled_sources_by_person or {}).get(ws.cell(cell.row,1).value,set()):cell.hyperlink=cell.value;cell.font=Font(color='078B92',underline='single')
  for col in ws.columns:ws.column_dimensions[col[0].column_letter].width=min(65,max(16,max(len(str(c.value or '')) for c in col)*1.4))
  return ws
+def disabled_sources_by_person(people):
+ # Only explicit source metadata for the person named on the workbook row controls links.
+ result={}
+ for p in people:
+  blocked={s['url'] for s in p.get('sources',[]) if s.get('navigation_enabled') is False or s.get('navigation_available') is False}
+  for rows in p.values():
+   if isinstance(rows,list):blocked.update(row['source_url'] for row in rows if isinstance(row,dict) and row.get('source_navigation_enabled') is False and valid_url(row.get('source_url')))
+  if blocked:assert sum(x['name']==p['name'] for x in people)==1,'Ambiguous same-name source navigation; retain person separation before exporting'
+  result.setdefault(p['name'],set()).update(blocked)
+ return result
+
+def source_availability_note(person,url):
+ source=next((s for s in person.get('sources',[]) if s.get('url')==url and (s.get('navigation_enabled') is False or s.get('navigation_available') is False)),None)
+ return source_evidence_text(source) if source else ''
+
 def source_evidence_text(source):
  label=source.get('evidence_label') or source.get('evidence_status_label')
  status=source.get('evidence_status')
@@ -209,7 +224,7 @@ def teaching_summary(person):
   facts.append('；'.join(str(v) for v in [
    row.get('name') or row.get('course') or '、'.join(row.get('courses') or []) or '教学主题未披露',row.get('role') or '角色未披露',
    '教学／课程开设时间：'+str(row.get('start') or '时间未披露'),row.get('note'),
-   '来源ID：'+str(row.get('source_id') or '未披露'),row.get('source_url')
+   '来源ID：'+str(row.get('source_id') or '未披露'),row.get('source_url'),source_availability_note(person,row.get('source_url'))
   ] if v))
  if not facts:return ''
  return '公开教学事实（非本人求学学历；教学／课程开设时间不是入学、授位或任职起点；不计入教育、任职、论文、导师统计及师承图）：'+' | '.join(facts)
@@ -313,7 +328,7 @@ def build(generate_excel=True):
   dept=export['department_id'];people=[p for p in d['people'] if p['department_id']==dept and p['school_id']==export['school_id']];path=out/(dept+'.xlsx')
   if generate_excel:
    wb=Workbook();wb.remove(wb.active)
-   for name,rows in department_tables(people,d['updated_at'],d['institutions']):sheet(wb,name,rows)
+   for name,rows in department_tables(people,d['updated_at'],d['institutions']):sheet(wb,name,rows,disabled_sources_by_person(people))
    save_deterministic_xlsx(wb,path)
  from build_rosters import build_rosters
  build_rosters(d,generate_excel=generate_excel)

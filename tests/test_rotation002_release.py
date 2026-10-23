@@ -815,26 +815,26 @@ class Rotation002ReleaseTests(unittest.TestCase):
 
     def test_04_exact_reviewed_additions_not_unknown_optional_batches(self):
         # Release24 endpoint; release23 NJU/HNU source assertions keep their bounded historical slice.
-        self.assertEqual(len(self.d['people']), 547)
+        self.assertEqual(len(self.d['people']), 555)
         self.assertEqual([p['person_id'] for p in self.d['people'][535:541]],
                          ['nju-chengxin','nju-chenpengfei','nju-chenyang','hnu-chenzengping','hnu-chuxia','hnu-huanshuangyan'])
         self.assertEqual([(b['batch_id'], b['source_files']) for b in self.d['profile_batches'][130:132]], [
             ('faculty-batch-nju-rotation-002', [{'file':'faculty-batch-nju-rotation-002.json','sha256':'141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471'}]),
             ('faculty-batch-hnu-rotation-002', [{'file':'faculty-batch-hnu-rotation-002.json','sha256':'7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54'}]),
         ])
-        self.assertEqual(len(self.d['pending_people']), 83)
+        self.assertEqual(len(self.d['pending_people']), 84)
         self.assertEqual(len(self.d['institutions']), 39)
-        self.assertEqual(len(self.d['org_units']), 223)
+        self.assertEqual(len(self.d['org_units']), 229)
         self.assertEqual([u['id'] for u in self.d['org_units'][218:221]], ['nju-astronomy-space-science','hnu-chemistry','hnu-chemistry-department'])
         self.assertEqual(len(self.d['campuses']), 4)
         self.assertEqual({p['person_id'] for p in self.d['people'][524:535]}, set(SOURCE_FINGERPRINTS) - set(PENDING_IDS))
-        self.assertEqual([p['person_id'] for p in self.d['pending_people'][82:]], list(PENDING_IDS))
+        self.assertEqual([p['person_id'] for p in self.d['pending_people'][82:83]], list(PENDING_IDS))
         self.assertEqual(len(self.new), 12)
         self.assertEqual(len(self.pro), 11)
         self.assertEqual(Counter(p['school_id'] for p in self.new), Counter({school: 3 for school in SCHOOLS}))
-        self.assertEqual(len(self.r['entries']), 1712)
-        self.assertEqual(len(self.r['source_observations']), 1750)
-        self.assertEqual(len(self.r['coverage']), 212)
+        self.assertEqual(len(self.r['entries']), 1721)
+        self.assertEqual(len(self.r['source_observations']), 1759)
+        self.assertEqual(len(self.r['coverage']), 215)
         self.assertEqual(set(self.entries), set(SOURCE_FINGERPRINTS))
         for person in self.pro:
             self.assertIs(person['detail_count_eligible'], True)

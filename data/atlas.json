@@ -19,7 +19,7 @@
     "链接为官方目录提供的地址；未逐个验证所有院系主页可访问性。",
     "深圳旧电子信息学院 eie.hitsz.edu.cn 主页两次抓取超时，改用官方目录已确认的集成电路学院名录，不涉及访问拒绝。"
   ],
-  "scope_note": "39校有少量选中名录及部分职业资料，不代表全校全院完成或人事在岗核验。本轮2校6条观察新增6部分职业+0pending，原541职业、83pending及全部旧字段不变。候选教育、任职与导师独立隔离；本轮各校名录、职业事实、未知和来源限制分别保留。",
+  "scope_note": "39校少量选中名录及部分职业资料，不代表全校全院完成或人事在岗核验。本轮3校9观察新增8部分职业+1pending，原547职业、83pending及全部旧字段不变。候选教育、任职及导师独立隔离；院系名录抽样与本人任职分别保留。",
   "campuses": [
     {
       "id": "harbin",
@@ -3910,6 +3910,73 @@
       "source_url": "https://mse.scu.edu.cn/szdw/js.htm",
       "source_id": "scu-materials-professor-roster",
       "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "cqu-architecture-urban-planning",
+      "name": "建筑城规学院",
+      "type": "school",
+      "school_id": "cqu",
+      "parent_id": "cqu",
+      "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+      "source_id": "cqu-architecture-teacher-roster",
+      "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "xmu-economics-school",
+      "name": "经济学院",
+      "type": "school",
+      "school_id": "xmu",
+      "parent_id": "xmu",
+      "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+      "source_id": "xmu-economics-teaching-research-roster",
+      "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "xmu-economics-department",
+      "name": "经济学系",
+      "type": "department",
+      "school_id": "xmu",
+      "parent_id": "xmu-economics-school",
+      "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+      "source_id": "xmu-economics-teaching-research-roster",
+      "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "bit-physics",
+      "name": "物理学院",
+      "type": "school",
+      "school_id": "bit",
+      "parent_id": "bit",
+      "source_id": "bit-physics-optical-roster",
+      "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+      "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "bit-physics-optical",
+      "name": "光学物理系",
+      "type": "department",
+      "school_id": "bit",
+      "parent_id": "bit-physics",
+      "source_id": "bit-physics-optical-roster",
+      "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+      "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "bit-frontier-interdisciplinary-institute",
+      "name": "前沿交叉科学研究院",
+      "type": "institute",
+      "school_id": "bit",
+      "parent_id": "bit",
+      "source_id": "bit-daiyunyun-frontier-profile",
+      "source_url": "https://sis.bit.edu.cn/szdw/jsml/jsmllcxb/1wlx/86fc7bc45b0f49d284cfa5810ff1fff0.htm",
+      "evidence_status": "official_public_body_read",
+      "scope_note": "仅为戴贇贇正文明确的任职机构建单位，不宣称该院完成名录覆盖；名称沿革未核。",
       "campus_ids": []
     }
   ],
@@ -179798,6 +179865,3245 @@
         "scu-yangjieren-profile"
       ],
       "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "cqu-chenke",
+      "name": "陈科",
+      "school_id": "cqu",
+      "department_id": "cqu-architecture-urban-planning",
+      "organization_id": "cqu-architecture-urban-planning",
+      "campus_ids": [],
+      "campus": null,
+      "department": "建筑城规学院",
+      "roster_entry_id": "roster-cqu-chenke",
+      "official_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+      "listed_role": null,
+      "listed_role_source_url": null,
+      "listed_role_source_id": null,
+      "listed_role_basis": "not_disclosed_by_current_individual_profile",
+      "roster_category": "建筑城规学院教师列表",
+      "roster_category_source_id": "cqu-architecture-teacher-roster",
+      "profile_status": "partial_professional_source_checked",
+      "sources": [
+        {
+          "id": "cqu-architecture-teacher-roster",
+          "url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "Canonical native listing and all seven ordinary HTTPS pages returned HTTP200. Name order and first-three native HTTP link targets retained minimally. Current listing does not prove full-time personnel status.",
+          "supporting_urls": [
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=2&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=3&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=4&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=5&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=6&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=7&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN"
+          ],
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "cqu-chenke-profile",
+          "url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "HTTP200; biography, education, employment and research sections are empty. Only name and school affiliation retained.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "cqu-chenke-details",
+          "url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/jsxx/289707/jsxx/jsxx.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "HTTP200; graduate institution and master-supervisor eligibility only, not an actual degree stage, degree award, or named supervision edge.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "cqu-chenke-teaching-2021",
+          "url": "https://news.cqu.edu.cn/archives/news2/content/2021/04/01/eeab4ef47653f3eca46265fa0c4a0a4d4a1eb0e4.html",
+          "evidence_status": "official_cached_body_read_direct_404",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "University news dated 2021-04-01. Bounded historical teaching and prize evidence only; not current title or employment-date evidence. Web reader returned full cached article body, not a search-result snippet. A later ordinary HTTPS request returned404. Historical facts retain this limitation; no claim of live origin availability.",
+          "web_reader_status": "full_cached_official_article_body_read_with_title_date_and_paragraphs",
+          "ordinary_https_status": 404,
+          "navigation_available": false,
+          "navigation_enabled": false,
+          "evidence_status_label": "官方旧文完整缓存正文已读；原地址直连404，仅支持历史事实，关闭失效来源导航。"
+        },
+        {
+          "id": "cqu-chenke-lecture-2025",
+          "url": "https://news.cqu.edu.cn/archives/news2/content/2025/09/19/6bab3d43eb9c2f730772541ee4d983ff5aced5f3.html",
+          "evidence_status": "official_cached_body_read_direct_404",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "University news dated 2025-09-19. Associate-professor title and architecture-department affiliation are historical snapshots as of that report, not a verified 2026 title. Web reader returned full cached article body, not a search-result snippet. A later ordinary HTTPS request returned404. Historical facts retain this limitation; no claim of live origin availability.",
+          "web_reader_status": "full_cached_official_article_body_read_with_title_date_and_paragraphs",
+          "ordinary_https_status": 404,
+          "navigation_available": false,
+          "navigation_enabled": false,
+          "evidence_status_label": "官方旧文完整缓存正文已读；原地址直连404，仅支持历史事实，关闭失效来源导航。"
+        }
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "profile_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+        "native_link_target": "http://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+        "source_ids": [
+          "cqu-architecture-teacher-roster",
+          "cqu-chenke-profile"
+        ],
+        "note": "官方建筑城规学院教师列表直接链接同名个人页；只将个人页所述同学院身份合并，不合并其他院系同名人物。"
+      },
+      "professional_field_provenance": {
+        "name": "cqu-architecture-teacher-roster",
+        "school_id": "cqu-architecture-teacher-roster",
+        "department_id": "cqu-architecture-teacher-roster",
+        "organization_id": "cqu-architecture-teacher-roster",
+        "department": "cqu-architecture-teacher-roster",
+        "official_url": "cqu-architecture-teacher-roster",
+        "listed_role": null
+      },
+      "unknowns": [
+        "当前职称未在个人页披露；副教授仅有2025年校方报道快照，不当作2026人事证明。",
+        "个人页仅列毕业院校重庆大学，层次、授位、年月、专业及具名导师未知。",
+        "当前学院归属不等全职人员核验；历史聘期、校区均不推断。",
+        "未检索出版物全集、专利全集或全部荣誉；空数组不代表本人没有相关成果。"
+      ],
+      "appointments": [
+        {
+          "institution": "重庆大学建筑城规学院",
+          "title": null,
+          "start": null,
+          "end": null,
+          "source_id": "cqu-chenke-profile",
+          "source_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "cqu-chenke-profile",
+            "title": null,
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "not_disclosed",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "只核实官方页现列学院归属，现职称和入职区间未披露；不将2025副教授称谓提升为2026现职。"
+        },
+        {
+          "institution": "重庆大学建筑城规学院建筑系",
+          "title": "副教授",
+          "start": null,
+          "end": null,
+          "source_id": "cqu-chenke-lecture-2025",
+          "source_url": "https://news.cqu.edu.cn/archives/news2/content/2025/09/19/6bab3d43eb9c2f730772541ee4d983ff5aced5f3.html",
+          "source_navigation_enabled": false,
+          "source_availability": "direct_404_cached_body_only",
+          "evidence_status": "official_cached_body_read_direct_404",
+          "field_provenance": {
+            "institution": "cqu-chenke-lecture-2025",
+            "title": "cqu-chenke-lecture-2025",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": "2025-09-19",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "2025-09-19报道的职业快照；日期不是聘期起止，也不回填其他历史工作。"
+        }
+      ],
+      "education": [
+        {
+          "degree": null,
+          "institution": "重庆大学",
+          "start": null,
+          "end": null,
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "cqu-chenke-details",
+          "source_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/jsxx/289707/jsxx/jsxx.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "cqu-chenke-details",
+            "start": null,
+            "end": null,
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "event_id": "cqu-chenke-education-1",
+          "event_kind": "education_level_unknown",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不代表国籍；学位标签不等于明确获授。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "include_in_education_filters": false,
+          "note": "仅“毕业院校：重庆大学”，本硕博层次、专业、起止与明确授位未知；不进入分学位或985本科筛选。",
+          "education_event_id": "cqu-chenke-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.cqu.edu.cn/xqgk/xxjj.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "research_fields": [],
+      "academic_service": [],
+      "teaching": [
+        {
+          "course": "建筑设计(1)+(2)",
+          "level": null,
+          "period": null,
+          "source_id": "cqu-chenke-teaching-2021",
+          "source_url": "https://news.cqu.edu.cn/archives/news2/content/2021/04/01/eeab4ef47653f3eca46265fa0c4a0a4d4a1eb0e4.html",
+          "source_navigation_enabled": false,
+          "source_availability": "direct_404_cached_body_only",
+          "evidence_status": "official_cached_body_read_direct_404",
+          "field_provenance": {
+            "course": "cqu-chenke-teaching-2021",
+            "level": null,
+            "period": null,
+            "note": [
+              "cqu-chenke-teaching-2021"
+            ],
+            "role": "cqu-chenke-teaching-2021"
+          },
+          "field_status": {
+            "course": "source_reported",
+            "level": "not_disclosed",
+            "period": "not_disclosed",
+            "role": "explicit_source_note_normalized"
+          },
+          "as_of": "2021-04-01",
+          "status": "historical_source_reported",
+          "note": "报道明确主讲课程；未声称2026仍授课。",
+          "source_note": "报道明确主讲课程；未声称2026仍授课。",
+          "note_derivation": "verbatim_original_note_level_and_period_for_existing_teaching_consumers",
+          "role": "主讲",
+          "role_source_id": "cqu-chenke-teaching-2021",
+          "role_source_url": "https://news.cqu.edu.cn/archives/news2/content/2021/04/01/eeab4ef47653f3eca46265fa0c4a0a4d4a1eb0e4.html",
+          "role_source_note": "报道明确主讲课程；未声称2026仍授课。",
+          "role_derivation": "consumer_alias_from_explicit_reviewed_source_note"
+        },
+        {
+          "course": "泛设计思维",
+          "level": null,
+          "period": "2025-09-18",
+          "source_id": "cqu-chenke-lecture-2025",
+          "source_url": "https://news.cqu.edu.cn/archives/news2/content/2025/09/19/6bab3d43eb9c2f730772541ee4d983ff5aced5f3.html",
+          "source_navigation_enabled": false,
+          "source_availability": "direct_404_cached_body_only",
+          "evidence_status": "official_cached_body_read_direct_404",
+          "field_provenance": {
+            "course": "cqu-chenke-lecture-2025",
+            "level": null,
+            "period": "cqu-chenke-lecture-2025",
+            "note": [
+              "cqu-chenke-lecture-2025"
+            ],
+            "role": "cqu-chenke-lecture-2025"
+          },
+          "field_status": {
+            "course": "source_reported",
+            "level": "not_disclosed",
+            "period": "source_reported",
+            "role": "explicit_source_note_normalized"
+          },
+          "activity_type": "public_science_lecture",
+          "status": "historical_source_reported",
+          "note": "系列讲座首场、18日晚由本人主讲；不是学期课程或长期任课。；来源教学时期：2025-09-18",
+          "source_note": "系列讲座首场、18日晚由本人主讲；不是学期课程或长期任课。",
+          "note_derivation": "verbatim_original_note_level_and_period_for_existing_teaching_consumers",
+          "role": "主讲",
+          "role_source_id": "cqu-chenke-lecture-2025",
+          "role_source_url": "https://news.cqu.edu.cn/archives/news2/content/2025/09/19/6bab3d43eb9c2f730772541ee4d983ff5aced5f3.html",
+          "role_source_note": "系列讲座首场、18日晚由本人主讲；不是学期课程或长期任课。",
+          "role_derivation": "consumer_alias_from_explicit_reviewed_source_note"
+        }
+      ],
+      "honors": [
+        {
+          "name": "重庆市2020年高校教师教学创新大赛副高组一等奖",
+          "year": 2020,
+          "source_id": "cqu-chenke-teaching-2021",
+          "source_url": "https://news.cqu.edu.cn/archives/news2/content/2021/04/01/eeab4ef47653f3eca46265fa0c4a0a4d4a1eb0e4.html",
+          "source_navigation_enabled": false,
+          "source_availability": "direct_404_cached_body_only",
+          "evidence_status": "official_cached_body_read_direct_404",
+          "field_provenance": {
+            "name": "cqu-chenke-teaching-2021",
+            "year": "cqu-chenke-teaching-2021",
+            "award_date": null,
+            "announcement_date": "cqu-chenke-teaching-2021"
+          },
+          "field_status": {
+            "name": "source_reported",
+            "year": "source_reported",
+            "award_date": "not_disclosed",
+            "announcement_date": "source_reported"
+          },
+          "award_date": null,
+          "announcement_date": "2021-03-31",
+          "note": "2020是赛事年度；2021-03-31是获奖名单通知日期，不等于授奖日。"
+        }
+      ],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "supervision_eligibility": {
+        "role": "硕士生导师",
+        "source_id": "cqu-chenke-details",
+        "source_url": "https://faculty.cqu.edu.cn/KeChen11/zh_CN/jsxx/289707/jsxx/jsxx.htm",
+        "evidence_status": "official_public_body_read",
+        "field_provenance": {
+          "role": "cqu-chenke-details"
+        },
+        "field_status": {
+          "role": "source_reported"
+        },
+        "note": "招生指导资格，不是本人的导师或已指导学生名录；不生成师承边。"
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-cqu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项"
+    },
+    {
+      "person_id": "cqu-chenxiaomeng",
+      "name": "陈肖萌",
+      "school_id": "cqu",
+      "department_id": "cqu-architecture-urban-planning",
+      "organization_id": "cqu-architecture-urban-planning",
+      "campus_ids": [],
+      "campus": null,
+      "department": "建筑城规学院",
+      "roster_entry_id": "roster-cqu-chenxiaomeng",
+      "official_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+      "listed_role": "副教授",
+      "listed_role_source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+      "listed_role_source_id": "cqu-chenxiaomeng-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "建筑城规学院教师列表",
+      "roster_category_source_id": "cqu-architecture-teacher-roster",
+      "profile_status": "partial_professional_source_checked",
+      "sources": [
+        {
+          "id": "cqu-architecture-teacher-roster",
+          "url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "Canonical native listing and all seven ordinary HTTPS pages returned HTTP200. Name order and first-three native HTTP link targets retained minimally. Current listing does not prove full-time personnel status.",
+          "supporting_urls": [
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=2&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=3&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=4&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=5&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=6&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=7&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN"
+          ],
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "cqu-chenxiaomeng-profile",
+          "url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "HTTP200 ordinary HTTPS public body. Degree labels are study evidence, not explicit award evidence. Structured editorial dates ending 2026-06 remain historical despite undated present-tense biography.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "profile_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+        "native_link_target": "http://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+        "source_ids": [
+          "cqu-architecture-teacher-roster",
+          "cqu-chenxiaomeng-profile"
+        ],
+        "note": "官方建筑城规学院教师列表直接链接同名个人页；只将个人页所述同学院身份合并，不合并其他院系同名人物。"
+      },
+      "professional_field_provenance": {
+        "name": "cqu-architecture-teacher-roster",
+        "school_id": "cqu-architecture-teacher-roster",
+        "department_id": "cqu-architecture-teacher-roster",
+        "organization_id": "cqu-architecture-teacher-roster",
+        "department": "cqu-architecture-teacher-roster",
+        "official_url": "cqu-architecture-teacher-roster",
+        "listed_role": "cqu-chenxiaomeng-profile",
+        "research_interests": [
+          "cqu-chenxiaomeng-profile"
+        ]
+      },
+      "unknowns": [
+        "3条教育的学位标签与学习区间明确，但明确授位、授位日和各阶段具名导师未披露。",
+        "2025-03-05仅是网页入职时间，不自动等同副教授任期或学院历史边界。",
+        "兼职日期至2026-06，虽简介仍称担任，未标记为当前。",
+        "不从办公地址推校区，不把网页“在职”标签当作全职人事核验。",
+        "研究项目只列资助类型且无完整项目名，未构造项目记录；未做全部论文、专利和荣誉深挖。"
+      ],
+      "appointments": [
+        {
+          "institution": "重庆大学建筑城规学院",
+          "title": "副教授",
+          "start": null,
+          "end": null,
+          "source_id": "cqu-chenxiaomeng-profile",
+          "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "cqu-chenxiaomeng-profile",
+            "title": "cqu-chenxiaomeng-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "页面另列入职时间2025-03-05，但没有说该日开始副教授职称或此学院任职，故本条职称起日留空。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "学士",
+          "institution": "同济大学",
+          "start": "2007-09",
+          "end": "2011-07",
+          "field": "建筑技术科学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "cqu-chenxiaomeng-profile",
+          "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "cqu-chenxiaomeng-profile",
+            "institution": "cqu-chenxiaomeng-profile",
+            "start": "cqu-chenxiaomeng-profile",
+            "end": "cqu-chenxiaomeng-profile",
+            "field": "cqu-chenxiaomeng-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "cqu-chenxiaomeng-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "cqu-chenxiaomeng-education-1",
+          "event_kind": "degree_study",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不代表国籍；学位标签不等于明确获授。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "include_in_education_filters": true,
+          "note": "原文“学士学位”标签与学习区间；未明确“获授”，保持degree_awarded=null。",
+          "source_reported_degree_label": "学士学位",
+          "education_event_id": "cqu-chenxiaomeng-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "degree": "硕士",
+          "institution": "慕尼黑工业大学",
+          "start": "2011-09",
+          "end": "2014-09",
+          "field": "建筑技术科学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "cqu-chenxiaomeng-profile",
+          "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "cqu-chenxiaomeng-profile",
+            "institution": "cqu-chenxiaomeng-profile",
+            "start": "cqu-chenxiaomeng-profile",
+            "end": "cqu-chenxiaomeng-profile",
+            "field": "cqu-chenxiaomeng-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "cqu-chenxiaomeng-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "cqu-chenxiaomeng-education-2",
+          "event_kind": "degree_study",
+          "country": "德国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源明确院校所在地标准化，不代表国籍；学位标签不等于明确获授。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "include_in_education_filters": true,
+          "note": "原文“硕士学位”和“硕士毕业”不等同明确授位证据，保持degree_awarded=null。",
+          "source_reported_degree_label": "硕士学位",
+          "education_event_id": "cqu-chenxiaomeng-education-2",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "德国",
+          "continent_code": "europe",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "degree": "博士",
+          "institution": "清华大学",
+          "start": "2017-08",
+          "end": "2022-06",
+          "field": "建筑技术科学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "cqu-chenxiaomeng-profile",
+          "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "cqu-chenxiaomeng-profile",
+            "institution": "cqu-chenxiaomeng-profile",
+            "start": "cqu-chenxiaomeng-profile",
+            "end": "cqu-chenxiaomeng-profile",
+            "field": "cqu-chenxiaomeng-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "cqu-chenxiaomeng-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "cqu-chenxiaomeng-education-3",
+          "event_kind": "degree_study",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确院校所在地标准化，不代表国籍；学位标签不等于明确获授。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "include_in_education_filters": true,
+          "note": "原文“工学博士学位”和“博士毕业”作为学位层次/学习经历；未明确获授，保持degree_awarded=null。",
+          "source_reported_degree_label": "工学博士学位",
+          "education_event_id": "cqu-chenxiaomeng-education-3",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.csust.edu.cn/fzgh/info/1016/1662.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "绿色建筑与新能源",
+          "source_id": "cqu-chenxiaomeng-profile",
+          "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "cqu-chenxiaomeng-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "建筑太阳能光热利用",
+          "source_id": "cqu-chenxiaomeng-profile",
+          "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "cqu-chenxiaomeng-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "天空辐射致冷新材料交叉",
+          "source_id": "cqu-chenxiaomeng-profile",
+          "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "cqu-chenxiaomeng-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [
+        {
+          "organization": "Decarbon",
+          "role": "青年编委",
+          "start": "2025-04",
+          "end": "2026-06",
+          "source_id": "cqu-chenxiaomeng-profile",
+          "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "organization": "cqu-chenxiaomeng-profile",
+            "role": "cqu-chenxiaomeng-profile",
+            "start": "cqu-chenxiaomeng-profile",
+            "end": "cqu-chenxiaomeng-profile"
+          },
+          "field_status": {
+            "organization": "source_reported",
+            "role": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "status": "historical_source_reported",
+          "current": false,
+          "note": "结构化兼职表明确到2026-06；不由未注明日期的简介现时语气续期。"
+        },
+        {
+          "organization": "Information Processing in Agriculture",
+          "role": "青年编委",
+          "start": "2022-06",
+          "end": "2026-06",
+          "source_id": "cqu-chenxiaomeng-profile",
+          "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "organization": "cqu-chenxiaomeng-profile",
+            "role": "cqu-chenxiaomeng-profile",
+            "start": "cqu-chenxiaomeng-profile",
+            "end": "cqu-chenxiaomeng-profile"
+          },
+          "field_status": {
+            "organization": "source_reported",
+            "role": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "status": "historical_source_reported",
+          "current": false,
+          "note": "结构化兼职表明确到2026-06；不由未注明日期的简介现时语气续期。"
+        }
+      ],
+      "teaching": [],
+      "honors": [
+        {
+          "name": "日内瓦国际发明展金奖",
+          "year": null,
+          "source_id": "cqu-chenxiaomeng-profile",
+          "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "cqu-chenxiaomeng-profile",
+            "year": null,
+            "role": "cqu-chenxiaomeng-profile",
+            "award_date": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "year": "not_disclosed",
+            "role": "source_reported",
+            "award_date": "not_disclosed"
+          },
+          "role": "第一发明人",
+          "award_date": null,
+          "note": "个人简介直接记载，年份、届次和具体获奖项目未知，未增补。"
+        }
+      ],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "supervision_eligibility": {
+        "role": "硕士生导师",
+        "source_id": "cqu-chenxiaomeng-profile",
+        "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+        "evidence_status": "official_public_body_read",
+        "field_provenance": {
+          "role": "cqu-chenxiaomeng-profile"
+        },
+        "field_status": {
+          "role": "source_reported"
+        },
+        "note": "指导资格不是本人的导师关系。"
+      },
+      "employment_join_date_evidence": {
+        "date": "2025-03-05",
+        "source_label": "入职时间",
+        "source_id": "cqu-chenxiaomeng-profile",
+        "source_url": "https://faculty.cqu.edu.cn/chenxiaomeng/zh_CN/index.htm",
+        "evidence_status": "official_public_body_read",
+        "field_provenance": {
+          "date": "cqu-chenxiaomeng-profile",
+          "source_label": "cqu-chenxiaomeng-profile"
+        },
+        "field_status": {
+          "date": "source_reported",
+          "source_label": "source_reported"
+        },
+        "note": "入职日期单独保留；不认定为副教授聘期起点或历史院系边界。"
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-cqu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项",
+      "research_interests": "绿色建筑与新能源；建筑太阳能光热利用；天空辐射致冷新材料交叉",
+      "research_interests_source_ids": [
+        "cqu-chenxiaomeng-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "xmu-chenhuang-economics",
+      "name": "陈煌",
+      "school_id": "xmu",
+      "department_id": "xmu-economics-department",
+      "organization_id": "xmu-economics-department",
+      "campus_ids": [],
+      "campus": null,
+      "department": "经济学院·经济学系",
+      "roster_entry_id": "roster-xmu-chenhuang-economics",
+      "official_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+      "listed_role": "助理教授",
+      "listed_role_source_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+      "listed_role_source_id": "xmu-chenhuang-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教学科研人员·经济学系",
+      "roster_category_source_id": "xmu-economics-teaching-research-roster",
+      "appointments": [
+        {
+          "institution": "厦门大学邹至庄经济研究院、经济学院",
+          "title": "助理教授",
+          "start": "2018-09",
+          "end": null,
+          "source_id": "xmu-chenhuang-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "xmu-chenhuang-profile",
+            "title": "xmu-chenhuang-profile",
+            "start": "xmu-chenhuang-profile",
+            "end": "xmu-chenhuang-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reports_present_no_terminal_date"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "note": "原文明确两个机构的助理教授经历；不把经济学系的当前名录归属回填为2018-09起的具体院系。",
+          "employment_type": null,
+          "personnel_status_verified": false
+        }
+      ],
+      "education": [
+        {
+          "event_id": "xmu-chenhuang-economics-education-1",
+          "degree": "学士",
+          "institution": "南京农业大学",
+          "start": "2005",
+          "end": "2009",
+          "field": "农业与林业经济管理",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "xmu-chenhuang-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "xmu-chenhuang-profile",
+            "institution": "xmu-chenhuang-profile",
+            "start": "xmu-chenhuang-profile",
+            "end": "xmu-chenhuang-profile",
+            "field": "xmu-chenhuang-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "xmu-chenhuang-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按正文明确院校所在地标准化，不表示国籍；进修和访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "来源B.A.标签与学习年份；不推定已获学士或具体授位日。",
+          "include_in_education_filters": true,
+          "source_reported_degree_label": "B.A.",
+          "education_event_id": "xmu-chenhuang-economics-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "xmu-chenhuang-economics-education-2",
+          "degree": "硕士",
+          "institution": "中国科学院",
+          "start": "2009",
+          "end": "2012",
+          "field": "农业经济管理",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "xmu-chenhuang-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "xmu-chenhuang-profile",
+            "institution": "xmu-chenhuang-profile",
+            "start": "xmu-chenhuang-profile",
+            "end": "xmu-chenhuang-profile",
+            "field": "xmu-chenhuang-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "xmu-chenhuang-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按正文明确院校所在地标准化，不表示国籍；进修和访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "机构按正文Chinese Academy of Sciences记录，不自行改为中国科学院大学或补研究所。",
+          "include_in_education_filters": true,
+          "source_reported_degree_label": "M.S.",
+          "education_event_id": "xmu-chenhuang-economics-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "xmu-chenhuang-economics-education-3",
+          "degree": "博士",
+          "institution": "加州大学戴维斯分校",
+          "start": "2013",
+          "end": "2018",
+          "field": "农业与资源经济学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "xmu-chenhuang-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "xmu-chenhuang-profile",
+            "institution": "xmu-chenhuang-profile",
+            "start": "xmu-chenhuang-profile",
+            "end": "xmu-chenhuang-profile",
+            "field": "xmu-chenhuang-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "xmu-chenhuang-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "按正文明确院校所在地标准化，不表示国籍；进修和访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "Ph.D.标签加学习区间不等明确获授；不从毕业院校字段反推授位日。",
+          "include_in_education_filters": true,
+          "source_reported_degree_label": "Ph.D.",
+          "education_event_id": "xmu-chenhuang-economics-education-3",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Health Insurance Portability and Coverage: Evidence from China's Cross-Regional Instant Reimbursement Reform",
+          "year": 2026,
+          "venue": "Journal of Health Economics",
+          "pages_or_article_number": "103136",
+          "volume": null,
+          "doi": null,
+          "url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/zdylm/1023528/list/index.htm",
+          "type": "journal_article",
+          "source_id": "xmu-chenhuang-publications",
+          "source_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/zdylm/1023528/list/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "xmu-chenhuang-publications",
+            "year": "xmu-chenhuang-publications",
+            "venue": "xmu-chenhuang-publications",
+            "volume": null,
+            "pages_or_article_number": "xmu-chenhuang-publications",
+            "doi": null,
+            "type": "xmu-chenhuang-publications"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "not_disclosed",
+            "pages_or_article_number": "source_reported",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "identity_evidence": "官方本人主页链接的研究成果栏目明确列出本人论文。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "精选书目元数据；未验证出版者单篇链接，不是全文入口或论文全集。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "xmu-economics-teaching-research-roster",
+          "url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "xmu-rotation-003-sources/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "xmu-chenhuang-profile",
+          "url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "xmu-rotation-003-sources/xmu-chenhuang-profile-minimal.json",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "xmu-chenhuang-publications",
+          "url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/zdylm/1023528/list/index.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "xmu-rotation-003-sources/publications-minimal.json",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "学位授予与授位日期未明确；三个教育阶段导师均未在所读正文确认。",
+        "中国科学院具体培养研究所、校区、全职人事状态未核。",
+        "学院名录的经济学系归属，与个人页邹至庄研究院/经济学院履历分别保留。",
+        "仅保留1条论文元数据，不代表完整论文目录；未把合作者当导师。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "profile_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster",
+          "xmu-chenhuang-profile"
+        ],
+        "note": "按经济学系官方教学科研人员名录姓名直链至同名个人正文；名录现列不等全职或正式在岗人事核验。"
+      },
+      "professional_field_provenance": {
+        "name": "xmu-economics-teaching-research-roster",
+        "school_id": "xmu-economics-teaching-research-roster",
+        "department_id": "xmu-economics-teaching-research-roster",
+        "organization_id": "xmu-economics-teaching-research-roster",
+        "department": "xmu-economics-teaching-research-roster",
+        "official_url": "xmu-economics-teaching-research-roster",
+        "listed_role": "xmu-chenhuang-profile",
+        "roster_category": "xmu-economics-teaching-research-roster",
+        "research_interests": [
+          "xmu-chenhuang-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "农业经济学",
+          "field_provenance": {
+            "name": "xmu-chenhuang-profile"
+          },
+          "normalization_note": "忠实翻译或规范化来源术语，不新增研究领域。",
+          "source_id": "xmu-chenhuang-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "发展经济学",
+          "field_provenance": {
+            "name": "xmu-chenhuang-profile"
+          },
+          "normalization_note": "忠实翻译或规范化来源术语，不新增研究领域。",
+          "source_id": "xmu-chenhuang-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "资源与环境经济学",
+          "field_provenance": {
+            "name": "xmu-chenhuang-profile"
+          },
+          "normalization_note": "忠实翻译或规范化来源术语，不新增研究领域。",
+          "source_id": "xmu-chenhuang-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "西方经济学",
+          "field_provenance": {
+            "name": "xmu-chenhuang-profile"
+          },
+          "normalization_note": "忠实翻译或规范化来源术语，不新增研究领域。",
+          "source_id": "xmu-chenhuang-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "应用计量经济学",
+          "field_provenance": {
+            "name": "xmu-chenhuang-profile"
+          },
+          "normalization_note": "忠实翻译或规范化来源术语，不新增研究领域。",
+          "source_id": "xmu-chenhuang-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CH1234/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read"
+        }
+      ],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-xmu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项",
+      "research_interests": "农业经济学；发展经济学；资源与环境经济学；西方经济学；应用计量经济学",
+      "research_interests_source_ids": [
+        "xmu-chenhuang-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "xmu-chenwanyi",
+      "name": "陈琬祎",
+      "school_id": "xmu",
+      "department_id": "xmu-economics-department",
+      "organization_id": "xmu-economics-department",
+      "campus_ids": [],
+      "campus": null,
+      "department": "经济学院·经济学系",
+      "roster_entry_id": "roster-xmu-chenwanyi",
+      "official_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+      "listed_role": "助理教授",
+      "listed_role_source_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+      "listed_role_source_id": "xmu-chenwanyi-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教学科研人员·经济学系",
+      "roster_category_source_id": "xmu-economics-teaching-research-roster",
+      "appointments": [
+        {
+          "institution": "中国科学技术大学管理学院",
+          "title": "特聘副研究员",
+          "start": "2018-08",
+          "end": "2021-07",
+          "source_id": "xmu-chenwanyi-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "xmu-chenwanyi-profile",
+            "title": "xmu-chenwanyi-profile",
+            "start": "xmu-chenwanyi-profile",
+            "end": "xmu-chenwanyi-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "note": null,
+          "employment_type": null,
+          "personnel_status_verified": false
+        },
+        {
+          "institution": "厦门大学王亚南经济研究院",
+          "title": "助理教授",
+          "start": "2021-11",
+          "end": null,
+          "source_id": "xmu-chenwanyi-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "xmu-chenwanyi-profile",
+            "title": "xmu-chenwanyi-profile",
+            "start": "xmu-chenwanyi-profile",
+            "end": "xmu-chenwanyi-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reports_present_no_terminal_date"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "note": "个人页工作经历只明确王亚南经济研究院；经济学系当前名录归属另有名录证据，2021新闻亦直接报道双单位，不改写履历开始边界。",
+          "employment_type": null,
+          "personnel_status_verified": false
+        }
+      ],
+      "education": [
+        {
+          "event_id": "xmu-chenwanyi-education-1",
+          "degree": "学士",
+          "institution": "武汉大学",
+          "start": null,
+          "end": "2011",
+          "field": "数学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "xmu-chenwanyi-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "xmu-chenwanyi-profile",
+            "institution": "xmu-chenwanyi-profile",
+            "start": null,
+            "end": "xmu-chenwanyi-profile",
+            "field": "xmu-chenwanyi-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "xmu-chenwanyi-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按正文明确院校所在地标准化，不表示国籍；进修和访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "官方同一行明确数学学士和金融学学士两个标签；2011为该行年份，起始年和授位日未知。",
+          "include_in_education_filters": true,
+          "source_reported_degree_label": "数学学士",
+          "education_event_id": "xmu-chenwanyi-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.whu.edu.cn/xxgk/xxjj.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "xmu-chenwanyi-education-2",
+          "degree": "学士",
+          "institution": "武汉大学",
+          "start": null,
+          "end": "2011",
+          "field": "金融学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "xmu-chenwanyi-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "xmu-chenwanyi-profile",
+            "institution": "xmu-chenwanyi-profile",
+            "start": null,
+            "end": "xmu-chenwanyi-profile",
+            "field": "xmu-chenwanyi-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "xmu-chenwanyi-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按正文明确院校所在地标准化，不表示国籍；进修和访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "与数学学士同一来源行的另一学位标签；不推定入学年、辅修机制或明确授位。",
+          "include_in_education_filters": true,
+          "source_reported_degree_label": "金融学学士",
+          "education_event_id": "xmu-chenwanyi-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.whu.edu.cn/xxgk/xxjj.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "xmu-chenwanyi-education-3",
+          "degree": "博士",
+          "institution": "威斯康星大学麦迪逊分校",
+          "start": null,
+          "end": "2018",
+          "field": "经济学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "xmu-chenwanyi-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "xmu-chenwanyi-profile",
+            "institution": "xmu-chenwanyi-profile",
+            "start": null,
+            "end": "xmu-chenwanyi-profile",
+            "field": "xmu-chenwanyi-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "xmu-chenwanyi-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "按正文明确院校所在地标准化，不表示国籍；进修和访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "2018为学位标签所在行年份；不将其直接作为已核授位日期。",
+          "include_in_education_filters": true,
+          "source_reported_degree_label": "经济学博士",
+          "education_event_id": "xmu-chenwanyi-education-3",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Dynamic Survival Bias in Optimal Stopping Problems",
+          "year": 2021,
+          "venue": "Journal of Economic Theory",
+          "volume": "196",
+          "pages_or_article_number": "105286",
+          "doi": null,
+          "url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/zdylm/1025478/list/index.htm",
+          "type": "journal_article",
+          "source_id": "xmu-chenwanyi-publications",
+          "source_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/zdylm/1025478/list/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "xmu-chenwanyi-publications",
+            "year": "xmu-chenwanyi-publications",
+            "venue": "xmu-chenwanyi-publications",
+            "volume": "xmu-chenwanyi-publications",
+            "pages_or_article_number": "xmu-chenwanyi-publications",
+            "doi": null,
+            "type": "xmu-chenwanyi-publications"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "source_reported",
+            "pages_or_article_number": "source_reported",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "identity_evidence": "官方本人主页链接的研究成果栏目明确列出本人论文。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "精选书目元数据；未验证出版者单篇链接，不是全文入口或论文全集。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "xmu-economics-teaching-research-roster",
+          "url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "xmu-rotation-003-sources/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "xmu-chenwanyi-profile",
+          "url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "xmu-rotation-003-sources/xmu-chenwanyi-profile-minimal.json",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "xmu-chenwanyi-publications",
+          "url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/zdylm/1025478/list/index.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "xmu-rotation-003-sources/publications-minimal.json",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "xmu-chenwanyi-2021-news",
+          "url": "https://wise.xmu.edu.cn/info/1831/151311.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "xmu-rotation-003-sources/supplementary-minimal.json",
+          "page_date": "2021-12-15",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "三项学位标签没有明确授位动作；起始年、授位日和本人的具名导师均未知。",
+        "数学学士、金融学学士来源同一行，不额外推断双学位培养机制。",
+        "个人页任职单位与名录归属分别保留；校区、全职在岗和具体任职合同未核。",
+        "论文书目核到本人官方成果页，出版者单篇链接未核。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "profile_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster",
+          "xmu-chenwanyi-profile",
+          "xmu-chenwanyi-2021-news"
+        ],
+        "note": "按经济学系官方教学科研人员名录姓名直链至同名个人正文；名录现列不等全职或正式在岗人事核验。 2021-12-15研究院新闻补证本人及王亚南经济研究院、经济学院经济学系双单位关联，不另造任职起点。"
+      },
+      "professional_field_provenance": {
+        "name": "xmu-economics-teaching-research-roster",
+        "school_id": "xmu-economics-teaching-research-roster",
+        "department_id": "xmu-economics-teaching-research-roster",
+        "organization_id": "xmu-economics-teaching-research-roster",
+        "department": "xmu-economics-teaching-research-roster",
+        "official_url": "xmu-economics-teaching-research-roster",
+        "listed_role": "xmu-chenwanyi-profile",
+        "roster_category": "xmu-economics-teaching-research-roster",
+        "research_interests": [
+          "xmu-chenwanyi-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "博弈论",
+          "field_provenance": {
+            "name": "xmu-chenwanyi-profile"
+          },
+          "normalization_note": "忠实翻译或规范化来源术语，不新增研究领域。",
+          "source_id": "xmu-chenwanyi-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "信息经济学",
+          "field_provenance": {
+            "name": "xmu-chenwanyi-profile"
+          },
+          "normalization_note": "忠实翻译或规范化来源术语，不新增研究领域。",
+          "source_id": "xmu-chenwanyi-profile",
+          "source_url": "https://faculty.xmu.edu.cn/CWY12/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read"
+        }
+      ],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-xmu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项",
+      "research_interests": "博弈论；信息经济学",
+      "research_interests_source_ids": [
+        "xmu-chenwanyi-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "xmu-dingchangfa",
+      "name": "丁长发",
+      "school_id": "xmu",
+      "department_id": "xmu-economics-department",
+      "organization_id": "xmu-economics-department",
+      "campus_ids": [],
+      "campus": null,
+      "department": "经济学院·经济学系",
+      "roster_entry_id": "roster-xmu-dingchangfa",
+      "official_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+      "listed_role": "副教授",
+      "listed_role_source_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+      "listed_role_source_id": "xmu-dingchangfa-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教学科研人员·经济学系",
+      "roster_category_source_id": "xmu-economics-teaching-research-roster",
+      "appointments": [
+        {
+          "institution": "福建省建阳农业工程学校",
+          "title": null,
+          "start": "1992-07",
+          "end": "1994-07",
+          "source_id": "xmu-dingchangfa-profile",
+          "source_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "xmu-dingchangfa-profile",
+            "title": null,
+            "start": "xmu-dingchangfa-profile",
+            "end": "xmu-dingchangfa-profile",
+            "source_reported_duty": "xmu-dingchangfa-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "not_disclosed",
+            "start": "source_reported",
+            "end": "source_reported",
+            "source_reported_duty": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "note": "来源说明讲授政治经济学，未给职称，不从任教推为讲师。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "source_reported_duty": "讲授政治经济学"
+        },
+        {
+          "institution": "厦门大学经济学系",
+          "title": null,
+          "start": "1997-10",
+          "end": null,
+          "source_id": "xmu-dingchangfa-profile",
+          "source_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "xmu-dingchangfa-profile",
+            "title": null,
+            "start": "xmu-dingchangfa-profile",
+            "end": "xmu-dingchangfa-profile",
+            "source_reported_duty": "xmu-dingchangfa-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "not_disclosed",
+            "start": "source_reported",
+            "end": "source_reports_present_no_terminal_date",
+            "source_reported_duty": "source_reported"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "note": "来源只写自1997-10任教；当前副教授单列在listed_role，不把副教授称谓追溯至1997年。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "source_reported_duty": "任教"
+        }
+      ],
+      "education": [
+        {
+          "event_id": "xmu-dingchangfa-education-1",
+          "degree": "硕士",
+          "institution": "福建师范大学",
+          "start": "1994-08",
+          "end": "1997-07",
+          "field": "政治经济学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "xmu-dingchangfa-profile",
+          "source_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "xmu-dingchangfa-profile",
+            "institution": "xmu-dingchangfa-profile",
+            "start": "xmu-dingchangfa-profile",
+            "end": "xmu-dingchangfa-profile",
+            "field": "xmu-dingchangfa-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_unit": "xmu-dingchangfa-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_unit": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按正文明确院校所在地标准化，不表示国籍；进修和访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "原文攻读硕士，不升级为获授。",
+          "include_in_education_filters": true,
+          "source_reported_unit": "经济法律学院",
+          "education_event_id": "xmu-dingchangfa-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "xmu-dingchangfa-education-2",
+          "degree": "博士",
+          "institution": "厦门大学",
+          "start": "1999-09",
+          "end": "2002-07",
+          "field": "经济思想史",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "xmu-dingchangfa-profile",
+          "source_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "xmu-dingchangfa-profile",
+            "institution": "xmu-dingchangfa-profile",
+            "start": "xmu-dingchangfa-profile",
+            "end": "xmu-dingchangfa-profile",
+            "field": "xmu-dingchangfa-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_unit": "xmu-dingchangfa-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_unit": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按正文明确院校所在地标准化，不表示国籍；进修和访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "原文攻读博士；个人简介博士称谓仍不构成明确授位动作或授位日。",
+          "include_in_education_filters": true,
+          "source_reported_unit": "经济学院",
+          "education_event_id": "xmu-dingchangfa-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "xmu-dingchangfa-education-3",
+          "degree": null,
+          "institution": "墨尔本皇家理工学院",
+          "start": "2007-07",
+          "end": "2007-08",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "xmu-dingchangfa-profile",
+          "source_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "xmu-dingchangfa-profile",
+            "start": "xmu-dingchangfa-profile",
+            "end": "xmu-dingchangfa-profile",
+            "field": null,
+            "degree_awarded": "xmu-dingchangfa-profile",
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "澳大利亚",
+          "region": "overseas",
+          "continent": "大洋洲",
+          "geography_basis": "按正文明确院校所在地标准化，不表示国籍；进修和访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "academic_exchange_or_training",
+          "note": "原文为进修，简介另称进修访问；不是澳大利亚学位，专业和指导者未知。",
+          "include_in_education_filters": true,
+          "education_event_id": "xmu-dingchangfa-education-3",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "澳大利亚",
+          "continent_code": "oceania"
+        },
+        {
+          "event_id": "xmu-dingchangfa-education-4",
+          "degree": null,
+          "institution": "康奈尔大学",
+          "start": "2008-08",
+          "end": "2009-06",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "xmu-dingchangfa-profile",
+          "source_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "xmu-dingchangfa-profile",
+            "start": "xmu-dingchangfa-profile",
+            "end": "xmu-dingchangfa-profile",
+            "field": null,
+            "degree_awarded": "xmu-dingchangfa-profile",
+            "degree_awarded_date": null,
+            "source_reported_unit": "xmu-dingchangfa-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_unit": "source_reported"
+          },
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "按正文明确院校所在地标准化，不表示国籍；进修和访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "academic_visit",
+          "note": "访问学者；经济系是访问单位，不自动当作获授专业；未披露指导者。",
+          "include_in_education_filters": true,
+          "source_reported_unit": "经济系",
+          "education_event_id": "xmu-dingchangfa-education-4",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "sources": [
+        {
+          "id": "xmu-economics-teaching-research-roster",
+          "url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "xmu-rotation-003-sources/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "xmu-dingchangfa-profile",
+          "url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "xmu-rotation-003-sources/xmu-dingchangfa-profile-minimal.json",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "xmu-dingchangfa-publications",
+          "url": "https://faculty.xmu.edu.cn/DZF/zh_CN/zdylm/1023000/list/index.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "xmu-rotation-003-sources/publications-minimal.json",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "本科信息未披露；硕士、博士均为攻读经历，明确授位与授位日未知。",
+        "1997-10是经济学系任教起点，不是已核副教授晋升日期。",
+        "墨尔本进修、康奈尔访问非海外学位；访问合作、指导或导师身份没有直接证据。",
+        "研究成果子页暂无内容，不等于本人没有论文；本批未另做穷尽书目检索。",
+        "校区和全职人事状态未知；博士/硕士本人导师、答辩委员会未核。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soe.xmu.edu.cn/jsfc_jxkyry.jsp?checkaggregatequeryid=1022$1034&collegeid=1250&faggregatequeryid=1022&language=zh_CN&postdutyid=1034&urltype=tp.TpCollegeZWTeachers&wbtreeid=6431",
+        "profile_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+        "source_ids": [
+          "xmu-economics-teaching-research-roster",
+          "xmu-dingchangfa-profile"
+        ],
+        "note": "按经济学系官方教学科研人员名录姓名直链至同名个人正文；名录现列不等全职或正式在岗人事核验。"
+      },
+      "professional_field_provenance": {
+        "name": "xmu-economics-teaching-research-roster",
+        "school_id": "xmu-economics-teaching-research-roster",
+        "department_id": "xmu-economics-teaching-research-roster",
+        "organization_id": "xmu-economics-teaching-research-roster",
+        "department": "xmu-economics-teaching-research-roster",
+        "official_url": "xmu-economics-teaching-research-roster",
+        "listed_role": "xmu-dingchangfa-profile",
+        "roster_category": "xmu-economics-teaching-research-roster",
+        "research_interests": [
+          "xmu-dingchangfa-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "政治经济学",
+          "field_provenance": {
+            "name": "xmu-dingchangfa-profile"
+          },
+          "normalization_note": "忠实翻译或规范化来源术语，不新增研究领域。",
+          "source_id": "xmu-dingchangfa-profile",
+          "source_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "区域经济学",
+          "field_provenance": {
+            "name": "xmu-dingchangfa-profile"
+          },
+          "normalization_note": "忠实翻译或规范化来源术语，不新增研究领域。",
+          "source_id": "xmu-dingchangfa-profile",
+          "source_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read"
+        },
+        {
+          "name": "中国农村经济体制改革（农地产权、小农经济理论与现代化）",
+          "field_provenance": {
+            "name": "xmu-dingchangfa-profile"
+          },
+          "normalization_note": "忠实翻译或规范化来源术语，不新增研究领域。",
+          "source_id": "xmu-dingchangfa-profile",
+          "source_url": "https://faculty.xmu.edu.cn/DZF/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read"
+        }
+      ],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-xmu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项",
+      "research_interests": "政治经济学；区域经济学；中国农村经济体制改革（农地产权、小农经济理论与现代化）",
+      "research_interests_source_ids": [
+        "xmu-dingchangfa-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "bit-chentian",
+      "name": "陈天",
+      "school_id": "bit",
+      "department_id": "bit-physics-optical",
+      "organization_id": "bit-physics-optical",
+      "campus_ids": [],
+      "campus": null,
+      "department": "物理学院·光学物理系",
+      "roster_entry_id": "roster-bit-chentian",
+      "official_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+      "listed_role": "准聘教授",
+      "listed_role_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+      "listed_role_source_id": "bit-chentian-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "光学物理系 > ALL",
+      "roster_category_source_id": "bit-physics-optical-roster",
+      "appointments": [
+        {
+          "institution": "北京理工大学物理学院",
+          "title": "准聘教授",
+          "start": "2025",
+          "end": null,
+          "source_id": "bit-chentian-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "bit-chentian-profile",
+            "title": "bit-chentian-profile",
+            "start": "bit-chentian-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "note": null,
+          "employment_type": null,
+          "personnel_status_verified": false
+        },
+        {
+          "institution": "北京理工大学物理学院",
+          "title": "副教授",
+          "start": "2018",
+          "end": "2025",
+          "source_id": "bit-chentian-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "bit-chentian-profile",
+            "title": "bit-chentian-profile",
+            "start": "bit-chentian-profile",
+            "end": "bit-chentian-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "note": null,
+          "employment_type": null,
+          "personnel_status_verified": false
+        },
+        {
+          "institution": "北京理工大学物理学院",
+          "title": "讲师",
+          "start": "2015",
+          "end": "2018",
+          "source_id": "bit-chentian-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "bit-chentian-profile",
+            "title": "bit-chentian-profile",
+            "start": "bit-chentian-profile",
+            "end": "bit-chentian-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "note": null,
+          "employment_type": null,
+          "personnel_status_verified": false
+        }
+      ],
+      "education": [
+        {
+          "event_id": "bit-chentian-education-1",
+          "degree": "学士",
+          "institution": "南开大学",
+          "start": "2006",
+          "end": "2010",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "bit-chentian-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bit-chentian-profile",
+            "institution": "bit-chentian-profile",
+            "start": "bit-chentian-profile",
+            "end": "bit-chentian-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_educational_department": "bit-chentian-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_educational_department": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确机构所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "来源只有学士层次标签，未明确获授；物理学院为院系而非推定专业。",
+          "include_in_education_filters": true,
+          "source_reported_educational_department": "物理学院",
+          "education_event_id": "bit-chentian-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "bit-chentian-education-2",
+          "degree": "博士",
+          "institution": "清华大学",
+          "start": "2010",
+          "end": "2015",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "bit-chentian-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bit-chentian-profile",
+            "institution": "bit-chentian-profile",
+            "start": "bit-chentian-profile",
+            "end": "bit-chentian-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_educational_department": "bit-chentian-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_educational_department": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确机构所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "博士层次与时间为来源明载，未明确获授或导师。",
+          "include_in_education_filters": true,
+          "source_reported_educational_department": "物理系",
+          "education_event_id": "bit-chentian-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.csust.edu.cn/fzgh/info/1016/1662.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "bit-chentian-education-3",
+          "degree": null,
+          "institution": "美国斯蒂文森理工学院",
+          "start": "2013",
+          "end": "2014",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "bit-chentian-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "bit-chentian-profile",
+            "start": "bit-chentian-profile",
+            "end": "bit-chentian-profile",
+            "field": null,
+            "degree_awarded": "bit-chentian-profile",
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "按来源明确机构所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "academic_visit",
+          "note": "来源明确访问学者，保留来源院校称呼；不是美国学位，也不因与博士阶段重叠而推断联合培养。",
+          "include_in_education_filters": true,
+          "education_event_id": "bit-chentian-education-3",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Quantum photonic solver for complicated vibronic spectra of large molecules",
+          "year": 2024,
+          "venue": "Nature Communications",
+          "volume": "15",
+          "pages_or_article_number": "6057",
+          "doi": null,
+          "url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "type": "journal_article",
+          "source_id": "bit-chentian-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "bit-chentian-profile",
+            "year": "bit-chentian-profile",
+            "venue": "bit-chentian-profile",
+            "volume": "bit-chentian-profile",
+            "pages_or_article_number": "bit-chentian-profile",
+            "doi": null,
+            "type": "bit-chentian-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "source_reported",
+            "pages_or_article_number": "source_reported",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "identity_evidence": "官方本人页代表性论文栏目直接列出，不以同名检索猜测作者身份。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "仅1条代表性书目；未核出版者单篇链接，不保存全文。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "bit-physics-optical-roster",
+          "url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "bit-rotation-003-sources/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "bit-chentian-profile",
+          "url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "bit-rotation-003-sources/bit-chentian-profile-minimal.json",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "博士、学士明确授位状态和授位日期未披露；不从教育层次标签自动确认。",
+        "未获得本人具名导师直接证据；访问经历不是海外学位。",
+        "校区、全职人事状态未知。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+        "source_ids": [
+          "bit-physics-optical-roster",
+          "bit-chentian-profile"
+        ],
+        "note": "官方同次名录原序首3姓名直链到同名专业主页；栏目现列不是全职、在岗或双聘核验。"
+      },
+      "professional_field_provenance": {
+        "name": "bit-physics-optical-roster",
+        "school_id": "bit-physics-optical-roster",
+        "department_id": "bit-chentian-profile",
+        "organization_id": "bit-chentian-profile",
+        "listed_role": "bit-chentian-profile",
+        "research_interests": [
+          "bit-chentian-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "拓扑物态调控及量子信息处理应用",
+          "source_id": "bit-chentian-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bit-chentian-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "基于光电平台的量子行走实验与量子态调控",
+          "source_id": "bit-chentian-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bit-chentian-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "量子行走网络、高灵敏感知与量子启发算法",
+          "source_id": "bit-chentian-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/b849925b20f0409a8dfb0be2500867b3.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bit-chentian-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "sampling_affiliation": {
+        "institution": "北京理工大学",
+        "department": "物理学院·光学物理系",
+        "organization_id": "bit-physics-optical",
+        "category": "ALL",
+        "source_id": "bit-physics-optical-roster",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "evidence_status": "official_roster_body_read",
+        "basis": "official_roster_category_membership_only",
+        "personnel_status_verified": false,
+        "joint_appointment_verified": false,
+        "note": "仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。"
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-bit-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项",
+      "research_interests": "拓扑物态调控及量子信息处理应用；基于光电平台的量子行走实验与量子态调控；量子行走网络、高灵敏感知与量子启发算法",
+      "research_interests_source_ids": [
+        "bit-chentian-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer",
+      "sampling_affiliation_label": "抽样入口：物理学院·光学物理系；仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。",
+      "sampling_affiliation_label_source_ids": [
+        "bit-physics-optical-roster"
+      ],
+      "sampling_affiliation_label_derivation": "original_display_affiliation_note_or_sampling_affiliation_department_and_note",
+      "include_in_current_faculty_count": false
+    },
+    {
+      "person_id": "bit-chenyuhui",
+      "name": "陈宇辉",
+      "school_id": "bit",
+      "department_id": "bit-physics-optical",
+      "organization_id": "bit-physics-optical",
+      "campus_ids": [],
+      "campus": null,
+      "department": "物理学院·光学物理系",
+      "roster_entry_id": "roster-bit-chenyuhui",
+      "official_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+      "listed_role_source_id": "bit-chenyuhui-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "光学物理系 > ALL",
+      "roster_category_source_id": "bit-physics-optical-roster",
+      "appointments": [
+        {
+          "institution": "北京理工大学物理学院",
+          "title": "教授、博导",
+          "start": "2023",
+          "end": null,
+          "source_id": "bit-chenyuhui-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "bit-chenyuhui-profile",
+            "title": "bit-chenyuhui-profile",
+            "start": "bit-chenyuhui-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "note": null,
+          "employment_type": null,
+          "personnel_status_verified": false
+        },
+        {
+          "institution": "北京理工大学物理学院",
+          "title": "特别研究员、博导",
+          "start": "2018",
+          "end": "2023",
+          "source_id": "bit-chenyuhui-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "bit-chenyuhui-profile",
+            "title": "bit-chenyuhui-profile",
+            "start": "bit-chenyuhui-profile",
+            "end": "bit-chenyuhui-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "note": null,
+          "employment_type": null,
+          "personnel_status_verified": false
+        },
+        {
+          "institution": "新西兰奥塔哥大学",
+          "title": "研究员",
+          "start": "2017",
+          "end": "2018",
+          "source_id": "bit-chenyuhui-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "bit-chenyuhui-profile",
+            "title": "bit-chenyuhui-profile",
+            "start": "bit-chenyuhui-profile",
+            "end": "bit-chenyuhui-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": null,
+          "note": null,
+          "employment_type": null,
+          "personnel_status_verified": false
+        }
+      ],
+      "education": [
+        {
+          "event_id": "bit-chenyuhui-education-1",
+          "degree": "理学学士",
+          "institution": "中山大学",
+          "start": "2004",
+          "end": "2008",
+          "field": null,
+          "degree_awarded": true,
+          "degree_awarded_date": "2008",
+          "source_id": "bit-chenyuhui-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bit-chenyuhui-2018-seminar",
+            "institution": "bit-chenyuhui-profile",
+            "start": "bit-chenyuhui-profile",
+            "end": "bit-chenyuhui-profile",
+            "field": null,
+            "degree_awarded": "bit-chenyuhui-2018-seminar",
+            "degree_awarded_date": "bit-chenyuhui-2018-seminar",
+            "source_reported_educational_department": "bit-chenyuhui-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "source_reported_year_precision",
+            "source_reported_educational_department": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确机构所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree",
+          "note": "2004–2008学习区间来自个人页，理学学士及2008获授来自校级讲座正文。",
+          "include_in_education_filters": true,
+          "source_reported_educational_department": "物理工程与技术学院",
+          "supporting_source_ids": [
+            "bit-chenyuhui-2018-seminar"
+          ],
+          "education_event_id": "bit-chenyuhui-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "degree_award_source_id": "bit-chenyuhui-2018-seminar",
+          "degree_award_source_url": "https://bit.edu.cn/tzgg17/jzyg2/a151057.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance"
+        },
+        {
+          "event_id": "bit-chenyuhui-education-2",
+          "degree": "博士",
+          "institution": "中国科学院物理研究所",
+          "start": null,
+          "end": null,
+          "field": "光学",
+          "degree_awarded": true,
+          "degree_awarded_date": "2013",
+          "source_id": "bit-chenyuhui-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bit-chenyuhui-profile",
+            "institution": "bit-chenyuhui-profile",
+            "start": null,
+            "end": null,
+            "field": "bit-chenyuhui-2018-seminar",
+            "degree_awarded": "bit-chenyuhui-2018-seminar",
+            "degree_awarded_date": "bit-chenyuhui-2018-seminar"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reversed_interval_unresolved",
+            "end": "source_reversed_interval_unresolved",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "source_reported_year_precision"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确机构所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree",
+          "note": "个人页原文2013–2008为反向区间，学习start/end均null并保留候选；2013获光学博士为独立校级正文直述，不自动补学习区间。",
+          "include_in_education_filters": true,
+          "supporting_source_ids": [
+            "bit-chenyuhui-2018-seminar"
+          ],
+          "education_event_id": "bit-chenyuhui-education-2",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "degree_award_source_id": "bit-chenyuhui-2018-seminar",
+          "degree_award_source_url": "https://bit.edu.cn/tzgg17/jzyg2/a151057.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance"
+        },
+        {
+          "event_id": "bit-chenyuhui-education-3",
+          "degree": null,
+          "institution": "新西兰奥塔哥大学",
+          "start": "2013",
+          "end": "2017",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "bit-chenyuhui-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "bit-chenyuhui-profile",
+            "start": "bit-chenyuhui-profile",
+            "end": "bit-chenyuhui-profile",
+            "field": null,
+            "degree_awarded": "bit-chenyuhui-profile",
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "新西兰",
+          "region": "overseas",
+          "continent": "大洋洲",
+          "geography_basis": "按来源明确机构所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "postdoctoral_research",
+          "note": "个人页明确博士后，非海外学位。2018讲座的2013-06至2018-02是博士后及Research Fellow合并时期，不据此拆分月级边界。",
+          "include_in_education_filters": true,
+          "education_event_id": "bit-chenyuhui-education-3",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "新西兰",
+          "continent_code": "oceania"
+        }
+      ],
+      "mentors": [
+        {
+          "name": "李志远",
+          "type": "doctoral_supervisor",
+          "education_stage": "博士",
+          "education_event_id": "bit-chenyuhui-education-2",
+          "start": null,
+          "end": null,
+          "source_id": "bit-chenyuhui-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bit-chenyuhui-profile",
+            "type": "bit-chenyuhui-profile",
+            "education_stage": "bit-chenyuhui-profile",
+            "education_event_id": "bit-chenyuhui-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "evidence_note": "官方个人教育行在博士项目直接写导师：李志远教授；时间反向不影响机构、层次及具名关系本身。",
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "导师当前任职和导航未核；讲座邀请人张向东、论文合作者和访问机构均不作导师。",
+          "relationship_kind": "doctoral_advisor",
+          "type_label": "博士导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "doctoral_supervisor",
+          "include_in_degree_mentorship_graph": true
+        }
+      ],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Efficient on-chip platform for coherent light-matter coupling using bound states in the continuum",
+          "year": 2025,
+          "venue": "Science Advances",
+          "volume": "11",
+          "pages_or_article_number": "eadu0976",
+          "doi": null,
+          "url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "type": "journal_article",
+          "source_id": "bit-chenyuhui-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "bit-chenyuhui-profile",
+            "year": "bit-chenyuhui-profile",
+            "venue": "bit-chenyuhui-profile",
+            "volume": "bit-chenyuhui-profile",
+            "pages_or_article_number": "bit-chenyuhui-profile",
+            "doi": null,
+            "type": "bit-chenyuhui-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "source_reported",
+            "pages_or_article_number": "source_reported",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "identity_evidence": "官方本人页代表性论文栏目直接列出，不以同名检索猜测作者身份。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "仅1条代表性书目；未核出版者单篇链接，不保存全文。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "bit-physics-optical-roster",
+          "url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "bit-rotation-003-sources/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "bit-chenyuhui-profile",
+          "url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "bit-rotation-003-sources/bit-chenyuhui-profile-minimal.json",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "bit-chenyuhui-2018-seminar",
+          "url": "https://bit.edu.cn/tzgg17/jzyg2/a151057.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "bit-rotation-003-sources/bit-chenyuhui-2018-seminar-minimal.json",
+          "page_date": "2018-03-01",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "博士学习区间原文反向，start/end均null；博士2013年获授与学士2008年获授有独立正文。",
+        "导师当前任职与导航未核；博士后与研究员月级转折不由合并简历拆分。",
+        "校区、全职人事状态未知。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+        "source_ids": [
+          "bit-physics-optical-roster",
+          "bit-chenyuhui-profile"
+        ],
+        "note": "官方同次名录原序首3姓名直链到同名专业主页；栏目现列不是全职、在岗或双聘核验。"
+      },
+      "professional_field_provenance": {
+        "name": "bit-physics-optical-roster",
+        "school_id": "bit-physics-optical-roster",
+        "department_id": "bit-chenyuhui-profile",
+        "organization_id": "bit-chenyuhui-profile",
+        "listed_role": "bit-chenyuhui-profile",
+        "research_interests": [
+          "bit-chenyuhui-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [
+        {
+          "candidate_id": "bit-chenyuhui-phd-reversed-interval",
+          "education_event_id": "bit-chenyuhui-education-2",
+          "candidate_field": "study_interval",
+          "source_reported_text": "2013-2008，中国科学院物理研究所，博士，导师：李志远教授",
+          "source_id": "bit-chenyuhui-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "status": "source_reversed_interval_unresolved",
+          "include_in_education_filters": false,
+          "include_in_mentorship_graph": false,
+          "note": "不自行颠倒日期。2013博士获授有另页正文，但入学年和学习结束边界仍不代填。"
+        }
+      ],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "基于稀土掺杂晶体的光量子芯片",
+          "source_id": "bit-chenyuhui-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bit-chenyuhui-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "微纳尺度光与物质相互作用",
+          "source_id": "bit-chenyuhui-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/fc7cf76ea7fe4813947b1f8f8cab5724.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bit-chenyuhui-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "sampling_affiliation": {
+        "institution": "北京理工大学",
+        "department": "物理学院·光学物理系",
+        "organization_id": "bit-physics-optical",
+        "category": "ALL",
+        "source_id": "bit-physics-optical-roster",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "evidence_status": "official_roster_body_read",
+        "basis": "official_roster_category_membership_only",
+        "personnel_status_verified": false,
+        "joint_appointment_verified": false,
+        "note": "仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。"
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-bit-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项",
+      "research_interests": "基于稀土掺杂晶体的光量子芯片；微纳尺度光与物质相互作用",
+      "research_interests_source_ids": [
+        "bit-chenyuhui-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer",
+      "sampling_affiliation_label": "抽样入口：物理学院·光学物理系；仅用于解释抽样入口，不自动代表本人现任院系、全职或双聘。",
+      "sampling_affiliation_label_source_ids": [
+        "bit-physics-optical-roster"
+      ],
+      "sampling_affiliation_label_derivation": "original_display_affiliation_note_or_sampling_affiliation_department_and_note",
+      "include_in_current_faculty_count": false
+    },
+    {
+      "person_id": "bit-daiyunyun",
+      "name": "戴贇贇",
+      "school_id": "bit",
+      "department_id": "bit-frontier-interdisciplinary-institute",
+      "organization_id": "bit-frontier-interdisciplinary-institute",
+      "campus_ids": [],
+      "campus": null,
+      "department": "前沿交叉科学研究院",
+      "roster_entry_id": "roster-bit-daiyunyun",
+      "official_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+      "listed_role": null,
+      "listed_role_source_url": null,
+      "listed_role_source_id": null,
+      "listed_role_basis": "conflicting_official_title_claims_unresolved",
+      "roster_category": "光学物理系 > ALL",
+      "roster_category_source_id": "bit-physics-optical-roster",
+      "appointments": [
+        {
+          "institution": "北京理工大学前沿交叉科学研究院",
+          "title": null,
+          "start": "2022-02",
+          "end": null,
+          "source_id": "bit-daiyunyun-physics-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "bit-daiyunyun-physics-profile",
+            "title": null,
+            "start": "bit-daiyunyun-physics-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "conflicting_official_title_claims",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-23",
+          "note": "两官方页均有2022-02入职且机构一致；当前职称与2022-10晋升边界存在冲突，title=null，完整双方说法留在独立候选。机构沿用正文称呼，不把当前网站标题追溯到历史。",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "supporting_source_ids": [
+            "bit-daiyunyun-frontier-profile"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "event_id": "bit-daiyunyun-education-1",
+          "degree": "学士",
+          "institution": "南京大学",
+          "start": "2007",
+          "end": "2011",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "bit-daiyunyun-frontier-profile",
+          "source_url": "https://sis.bit.edu.cn/szdw/jsml/jsmllcxb/1wlx/86fc7bc45b0f49d284cfa5810ff1fff0.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bit-daiyunyun-frontier-profile",
+            "institution": "bit-daiyunyun-frontier-profile",
+            "start": "bit-daiyunyun-frontier-profile",
+            "end": "bit-daiyunyun-frontier-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_educational_department": "bit-daiyunyun-frontier-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_educational_department": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确机构所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "来源为学士标签，未明载获授；院系不自动充当专业。",
+          "include_in_education_filters": true,
+          "source_reported_educational_department": "物理学系",
+          "education_event_id": "bit-daiyunyun-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "bit-daiyunyun-education-2",
+          "degree": "博士",
+          "institution": "复旦大学",
+          "start": "2011",
+          "end": "2017",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "bit-daiyunyun-frontier-profile",
+          "source_url": "https://sis.bit.edu.cn/szdw/jsml/jsmllcxb/1wlx/86fc7bc45b0f49d284cfa5810ff1fff0.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bit-daiyunyun-frontier-profile",
+            "institution": "bit-daiyunyun-frontier-profile",
+            "start": "bit-daiyunyun-frontier-profile",
+            "end": "bit-daiyunyun-frontier-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_educational_department": "bit-daiyunyun-frontier-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_educational_department": "source_reported"
+          },
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源明确机构所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "degree_study",
+          "note": "来源为博士标签，未明载获授或导师。",
+          "include_in_education_filters": true,
+          "source_reported_educational_department": "物理学系",
+          "education_event_id": "bit-daiyunyun-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "event_id": "bit-daiyunyun-education-3",
+          "degree": null,
+          "institution": "丹麦科技大学",
+          "start": "2014",
+          "end": "2014",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "bit-daiyunyun-frontier-profile",
+          "source_url": "https://sis.bit.edu.cn/szdw/jsml/jsmllcxb/1wlx/86fc7bc45b0f49d284cfa5810ff1fff0.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "bit-daiyunyun-frontier-profile",
+            "start": "bit-daiyunyun-frontier-profile",
+            "end": "bit-daiyunyun-frontier-profile",
+            "field": null,
+            "degree_awarded": "bit-daiyunyun-frontier-profile",
+            "degree_awarded_date": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed"
+          },
+          "country": "丹麦",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源明确机构所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "academic_visit",
+          "note": "单一年份的访问学者，不补月日或博士联合培养。",
+          "include_in_education_filters": true,
+          "education_event_id": "bit-daiyunyun-education-3",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "丹麦",
+          "continent_code": "europe"
+        },
+        {
+          "event_id": "bit-daiyunyun-education-4",
+          "degree": null,
+          "institution": "芬兰阿尔托大学（Aalto University）",
+          "start": "2017-04",
+          "end": "2021-12",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "bit-daiyunyun-physics-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "bit-daiyunyun-physics-profile",
+            "start": "bit-daiyunyun-physics-profile",
+            "end": "bit-daiyunyun-physics-profile",
+            "field": null,
+            "degree_awarded": "bit-daiyunyun-physics-profile",
+            "degree_awarded_date": null,
+            "source_reported_educational_department": "bit-daiyunyun-physics-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "not_a_degree_event",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_educational_department": "source_reported"
+          },
+          "country": "芬兰",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源明确机构所在地标准化，不表示国籍；博士后与访问不是学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_kind": "postdoctoral_research",
+          "note": "物理学院页提供月精度，前沿交叉页给2017–2021相容年精度；同一博士后事件不重复计数。",
+          "include_in_education_filters": true,
+          "source_reported_educational_department": "微电子与纳米工程系",
+          "supporting_source_ids": [
+            "bit-daiyunyun-frontier-profile"
+          ],
+          "education_event_id": "bit-daiyunyun-education-4",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "芬兰",
+          "continent_code": "europe"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Broadband Plasmon-Enhanced Four-Wave Mixing in Monolayer MoS2",
+          "year": 2021,
+          "venue": "Nano Letters",
+          "volume": "21",
+          "pages_or_article_number": "6321–6327",
+          "doi": null,
+          "url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+          "type": "journal_article",
+          "source_id": "bit-daiyunyun-physics-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "bit-daiyunyun-physics-profile",
+            "year": "bit-daiyunyun-physics-profile",
+            "venue": "bit-daiyunyun-physics-profile",
+            "volume": "bit-daiyunyun-physics-profile",
+            "pages_or_article_number": "bit-daiyunyun-physics-profile",
+            "doi": null,
+            "type": "bit-daiyunyun-physics-profile",
+            "issue": "bit-daiyunyun-physics-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "source_reported",
+            "pages_or_article_number": "source_reported",
+            "doi": "not_disclosed",
+            "type": "source_reported",
+            "issue": "source_reported"
+          },
+          "issue": "14",
+          "identity_evidence": "官方本人页代表性论文栏目直接列出，不以同名检索猜测作者身份。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "仅1条代表性书目；未核出版者单篇链接，不保存全文。",
+          "supporting_source_ids": [
+            "bit-daiyunyun-frontier-profile"
+          ],
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "bit-physics-optical-roster",
+          "url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "bit-rotation-003-sources/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "bit-daiyunyun-physics-profile",
+          "url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "bit-rotation-003-sources/bit-daiyunyun-physics-profile-minimal.json",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "bit-daiyunyun-frontier-profile",
+          "url": "https://sis.bit.edu.cn/szdw/jsml/jsmllcxb/1wlx/86fc7bc45b0f49d284cfa5810ff1fff0.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "evidence_file": "bit-rotation-003-sources/bit-daiyunyun-frontier-profile-minimal.json",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "物理学院·光学物理系仅抽样名录归属；全职、双聘或物理学院在岗关系均未核。",
+        "当前职称/2022-10晋升边界两官方页冲突，正式职称null并保留候选。",
+        "当前网站页眉前沿交叉科学院与履历前沿交叉科学研究院不同，机构沿革及更名边界未核。",
+        "博士、学士明确获授、导师、校区未核；博士后和访问不能计海外学位。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "profile_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+        "source_ids": [
+          "bit-physics-optical-roster",
+          "bit-daiyunyun-physics-profile",
+          "bit-daiyunyun-frontier-profile"
+        ],
+        "note": "官方同次名录原序首3姓名直链到同名专业主页；栏目现列不是全职、在岗或双聘核验。",
+        "supplementary_identity_basis": "前沿交叉官方同名页，与物理学院直链页的Aalto博士后年份及同一Nano Letters书目信息一致；跨院系来源用于补充履历，非扩充任职关系。"
+      },
+      "professional_field_provenance": {
+        "name": "bit-physics-optical-roster",
+        "school_id": "bit-physics-optical-roster",
+        "department_id": "bit-daiyunyun-frontier-profile",
+        "organization_id": "bit-daiyunyun-frontier-profile",
+        "listed_role": null,
+        "research_interests": [
+          "bit-daiyunyun-physics-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [
+        {
+          "candidate_id": "bit-daiyunyun-current-title-conflict",
+          "candidate_field": "appointment_title_and_transition",
+          "source_claims": [
+            {
+              "source_id": "bit-daiyunyun-physics-profile",
+              "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+              "institution": "北京理工大学前沿交叉科学研究院",
+              "title": "预聘副教授",
+              "start": "2022-02",
+              "end_label": "至今"
+            },
+            {
+              "source_id": "bit-daiyunyun-frontier-profile",
+              "source_url": "https://sis.bit.edu.cn/szdw/jsml/jsmllcxb/1wlx/86fc7bc45b0f49d284cfa5810ff1fff0.htm",
+              "institution": "北京理工大学前沿交叉科学研究院",
+              "title": "预聘副教授、博导",
+              "start": "2022-02",
+              "end": "2022-09"
+            },
+            {
+              "source_id": "bit-daiyunyun-frontier-profile",
+              "source_url": "https://sis.bit.edu.cn/szdw/jsml/jsmllcxb/1wlx/86fc7bc45b0f49d284cfa5810ff1fff0.htm",
+              "institution": "北京理工大学前沿交叉科学研究院",
+              "title": "准聘教授、博导",
+              "start": "2022-10",
+              "end_label": "至今"
+            }
+          ],
+          "evidence_status": "official_public_body_read",
+          "status": "unresolved_official_source_conflict",
+          "include_in_appointment_filters": false,
+          "note": "不同官方页当前称谓冲突且可靠更新日期未披露，合并当前职称保持null，不自行确定哪页更新。前沿交叉是明确任职机构；物理学院名录栏目不能加成第二任职。"
+        }
+      ],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "新型半导体与纳米器件的制备、表征及光电性质",
+          "source_id": "bit-daiyunyun-physics-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bit-daiyunyun-physics-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "纳米光子学",
+          "source_id": "bit-daiyunyun-physics-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bit-daiyunyun-physics-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "非线性光学",
+          "source_id": "bit-daiyunyun-physics-profile",
+          "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/003f61902d674102bc89e9097690b040.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bit-daiyunyun-physics-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "sampling_affiliation": {
+        "institution": "北京理工大学",
+        "department": "物理学院·光学物理系",
+        "organization_id": "bit-physics-optical",
+        "category": "ALL",
+        "source_id": "bit-physics-optical-roster",
+        "source_url": "https://physics.bit.edu.cn/szdw/szml/zjzc/ALL_02/index.htm",
+        "evidence_status": "official_roster_body_read",
+        "basis": "official_roster_category_membership_only",
+        "personnel_status_verified": false,
+        "joint_appointment_verified": false,
+        "note": "仅名录抽样归属。本人任职正文指向前沿交叉科学研究院，不能据此认定物理学院任职、全职或双聘。"
+      },
+      "department_source_id": "bit-daiyunyun-frontier-profile",
+      "department_source_url": "https://sis.bit.edu.cn/szdw/jsml/jsmllcxb/1wlx/86fc7bc45b0f49d284cfa5810ff1fff0.htm",
+      "department_status": "explicit_appointment_institution_source_reported_not_personnel_verified",
+      "roster_listed_role": "预聘副教授（特别研究员）",
+      "roster_listed_role_source_id": "bit-physics-optical-roster",
+      "display_affiliation_note": "抽样入口：物理学院·光学物理系ALL名录；本人任职正文：前沿交叉科学研究院。未核物理学院任职或双聘。现职称两官方页冲突，待核。",
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-bit-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项",
+      "research_interests": "新型半导体与纳米器件的制备、表征及光电性质；纳米光子学；非线性光学",
+      "research_interests_source_ids": [
+        "bit-daiyunyun-physics-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer",
+      "sampling_affiliation_label": "抽样入口：物理学院·光学物理系ALL名录；本人任职正文：前沿交叉科学研究院。未核物理学院任职或双聘。现职称两官方页冲突，待核。",
+      "sampling_affiliation_label_source_ids": [
+        "bit-physics-optical-roster"
+      ],
+      "sampling_affiliation_label_derivation": "original_display_affiliation_note_or_sampling_affiliation_department_and_note",
+      "include_in_current_faculty_count": false
     }
   ],
   "profile_batches": [
@@ -183423,6 +186729,118 @@
         "陈攀跨校边界2022/2023-03仍冲突，候选隔离且正式对应日期null；旧开放结束博士后及历史职务不等2026现任。",
         "杨劼人2020-12为机构起点不是教授晋升；未知职称、日期及校区不能推补。当前页称谓不等全职/人事状态核验。",
         "仅精选本人页书目，出版者单篇未核；不得把来源最小摘录扩成含私人信息的完整网页缓存。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-cqu-rotation-003",
+      "source_batch_id": "faculty-batch-cqu-rotation-003",
+      "school_id": "cqu",
+      "people_count": 3,
+      "established_professional_profiles": 2,
+      "pending_profiles": 1,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-23",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+      "selection_basis": "建筑城规学院官方教师列表原生7页共65条，原序首3陈科、陈仁伟、陈肖萌。只完成2人的部分职业资料，陈仁伟仅身份与学院归属待补；不替换稀疏人选。未按学历、海外或资料丰富度选人，非全院或全校覆盖；名录现列不等全职人事证明。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-cqu-rotation-003.json",
+          "sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc"
+        }
+      ],
+      "limitations": [
+        "本批仅3人固定原序样本，其中2职业层、1待补层；不是全院覆盖，也不是全职人事核验。",
+        "个人主页与名录来自HTTP200官方正文；陈科两条旧新闻由网页读取器完整缓存正文核实，直连现为404，均明确标记official_cached_body_read_direct_404，不是仅搜索摘要，也不声称源站现可访问。学校独立院站路线412后停止，不绕过。",
+        "学位标签和毕业文字不等明确获授；所有4教育事件degree_awarded=null，陈科未知层次教育不进筛选。",
+        "无具名导师证据，导师和委员会均保持空；招生指导资格不产生师承边。",
+        "只留必要职业字段、65个名录姓名顺序及首次3个直链；不留整页、原始API、联系方式、出生日期、学生名录或论文全文。",
+        "基线目录无Git元数据；发布commit a440e016e881da9f20d9872624f966311522f4cc由父任务指定，本地基线文件SHA256已独立核对。",
+        "严格2职业+1pending：陈仁伟原序第二必须进入待补层，不能换人、增加到职业统计或因包people数组而自动算完成。",
+        "65人是该大学门户建筑城规学院当前观察名录，只有首3处理；不是全学院、全校或全部人事在岗核验。不得信旧搜索URL totalpage=4。",
+        "陈科两新闻只支持有日期的历史事实，必须显示官方完整缓存正文已读、源站直连404的差异，并保留source_navigation_enabled=false及来源navigation_enabled=false；不可改为实时正文可访问、索引摘要或已核2026职称。",
+        "4教育全degree_awarded=null；陈科毕业院校未知层次事件关闭教育筛选，不得补成学士或985本科。其他三段可作学习经历，但不能计明确获授。",
+        "2020赛事年度、2021-03-31公布通知与授奖日不能合并；2025-09-18科普首讲不是持续任课。陈肖萌2025-03-05入职不等副教授晋升日期，两期刊编委2026-06已终止。",
+        "具名本人导师0、当前导师导航0，校区未知；硕导资格、资助项目和刊物编委不可变师承。",
+        "原先学院网站412路线已停止，审查没有访问或重试该路线。陈仁伟reader内部错误不等源站拒绝，普通公开HTTPS200验证与其区别已记录。",
+        "本文件为原始研究包来源独审；原始地域/985及消费者字段规范化、pending迁移和缓存来源失效导航的消费者验证由独立整合流程执行。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-xmu-rotation-003",
+      "source_batch_id": "faculty-batch-xmu-rotation-003",
+      "school_id": "xmu",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-23",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+      "selection_basis": "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-xmu-rotation-003.json",
+          "sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8"
+        }
+      ],
+      "limitations": [
+        "经济学院“师资队伍 > 教学科研人员 > 经济学系”单页名录29人，按官方原序首3陈煌、陈琬祎、丁长发。本批仅3条部分公开职业档案，不是该系、学院或全校完整覆盖；官方名录在列不等全职或正式人事在岗核验。",
+        "仅保留必要职业字段与2条书目元数据，不保存联系方式、出生信息、学生名单、完整网页/API、论文全文或PDF。",
+        "学位标签和攻读经历不等明确授位；8条学位标签/学习经历degree_awarded为null，2条海外进修/访问为false。",
+        "丁长发1997-10任教不等当时已为副教授；陈煌学院/研究院履历不回填经济学系开始日期。",
+        "陈琬祎两项学士标签原文明确，但培养机制、入学年和授位日未知；新闻仅补证历史双单位关联。",
+        "未发现本人的具名导师直接证据；导师、博士后指导者、委员会、合作者与访问经历不混用。",
+        "三人校区、全职在岗、正式人员状态及出版者单篇链接未核；官方页面present只表示页面当前列示。",
+        "本批无索引独占职业事实；搜索中的非官方或同名异人结果未提升为档案证据。",
+        "仅经济学系29人中原序首3部分职业资料，不是全系、全院或全校完成。",
+        "8条学位标签/攻读经历授位null，不得计为已核获授；2条进修访问为非学位，不得计海外学位。陈琬祎两个学士标签不支持推断双学位培养机制。",
+        "陈煌历史任职双机构与当前经济学系名录、陈琬祎WISE履历与经济学系名录必须分层；2021新闻不证明2026双聘或全职人事状态。丁长发1997-10不等副教授晋升日期。",
+        "无具名本人导师、博士后导师、委员会或访问指导关系可新增；校区未知，不能由办公室位置推定。",
+        "仅2条精选本人官方书目，不声称出版社单篇与全文核验；原始成功证据只保留必要职业摘录，不扩展为公开原始网页缓存。",
+        "本文件为原始研究包独立来源审查；地域、985与消费者字段的规范化及集成schema验证仍由独立整合流程执行。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-bit-rotation-003",
+      "source_batch_id": "faculty-batch-bit-rotation-003",
+      "school_id": "bit",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-23",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+      "selection_basis": "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-bit-rotation-003.json",
+          "sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477"
+        }
+      ],
+      "limitations": [
+        "物理学院·光学物理系“师资名录 > ALL”原序首3：陈天、陈宇辉、戴贇贇。同次直接GET两页20+13名且各显示33条；较早reader第一页34/第二页33差异另存，未宣称无争议类别总数。仅3人公开职业资料；戴贇贇的名录抽样归属与前沿交叉科学研究院任职正文分开，不是物理学院在岗或双聘证明。",
+        "每人1条代表性书目，不做论文全集、荣誉穷举或篇数引用统计。",
+        "不保留联系方式、出生、学生名单、完整网页/API或论文全文。",
+        "陈宇辉博士反向学习区间保留候选，正式日期null；独立获授年份不代替学习日期。",
+        "戴贇贇现职称冲突留null；来源正文任职院名不由网站新页眉追溯替换。",
+        "导师关系只有1条具名直接证据；导师现单位、导航、其他两人的导师均未核。",
+        "学位标签不自动认定已获授；博士后和访问为非学位。",
+        "校区与全职人事状态未核。",
+        "仅光学物理系ALL栏目首3观察，不是全系全院完成。两页reader34/33和研究者直接GET33/33快照均需保留；33是观察到的姓名数，不得显示为无条件完整在岗总数。",
+        "陈宇辉博士学习start/end必须继续null，反向区间候选不得参与正常年表；独立获授2008/2013保持年精度，不代填学习入学/结束日期。",
+        "2条获授true、4条null与4条非学位须分开；博士后与访问不计海外学位，部门名称不自动等专业。",
+        "戴贇贇首要任职来源单位为前沿交叉科学研究院；物理学院·光学物理系只为抽样来源。当前职称null与2022-10晋升冲突候选不得在消费者中转为已核职称或双聘。页眉机构更名沿革未核。",
+        "李志远1条博士导师关系可以作历史师承，但当前导航未核关闭。不得根据邀请、访问、项目、论文合著增导师；校区不能由通讯地址推定。",
+        "仅3条官方精选书目，无出版社单篇与全文核验；非完整职业、人事或全职调查。",
+        "本文件为原始研究包来源独审；地域、985和消费者规范化字段及集成schema验证仍由独立整合流程执行。"
       ]
     }
   ],
@@ -191742,6 +195160,104 @@
       "official_profile_availability_label": "个人页正文未核，不启用个人主页导航。",
       "pending_reason": "official_index_only_body_pending",
       "pending_note": "仅官方索引候选；教育与任职候选不进入主事件、确证筛选或关系图。"
+    },
+    {
+      "person_id": "cqu-chenrenwei",
+      "name": "陈仁伟",
+      "school_id": "cqu",
+      "department_id": "cqu-architecture-urban-planning",
+      "organization_id": "cqu-architecture-urban-planning",
+      "campus_ids": [],
+      "campus": null,
+      "department": "建筑城规学院",
+      "roster_entry_id": "roster-cqu-chenrenwei",
+      "official_url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+      "listed_role": null,
+      "listed_role_source_url": null,
+      "listed_role_source_id": null,
+      "listed_role_basis": "not_disclosed_by_current_individual_profile",
+      "roster_category": "建筑城规学院教师列表",
+      "roster_category_source_id": "cqu-architecture-teacher-roster",
+      "profile_status": "profile_details_pending",
+      "sources": [
+        {
+          "id": "cqu-architecture-teacher-roster",
+          "url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "Canonical native listing and all seven ordinary HTTPS pages returned HTTP200. Name order and first-three native HTTP link targets retained minimally. Current listing does not prove full-time personnel status.",
+          "supporting_urls": [
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=2&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=3&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=4&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=5&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=6&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+            "https://faculty.cqu.edu.cn/xyjslb.jsp?totalpage=7&PAGENUM=7&urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN"
+          ],
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "cqu-chenrenwei-profile",
+          "url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "source_type": "university_official",
+          "access_note": "HTTP200; name, English name and school affiliation only. Work, education, service and research sections show no content.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1002&st=0&id=1128&lang=zh_CN",
+        "profile_url": "https://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+        "native_link_target": "http://faculty.cqu.edu.cn/RenweiChen/zh_CN/index.htm",
+        "source_ids": [
+          "cqu-architecture-teacher-roster",
+          "cqu-chenrenwei-profile"
+        ],
+        "note": "官方建筑城规学院教师列表直接链接同名个人页；只将个人页所述同学院身份合并，不合并其他院系同名人物。"
+      },
+      "professional_field_provenance": {
+        "name": "cqu-architecture-teacher-roster",
+        "school_id": "cqu-architecture-teacher-roster",
+        "department_id": "cqu-architecture-teacher-roster",
+        "organization_id": "cqu-architecture-teacher-roster",
+        "department": "cqu-architecture-teacher-roster",
+        "official_url": "cqu-architecture-teacher-roster",
+        "listed_role": null
+      },
+      "unknowns": [
+        "官网仅核实姓名和建筑城规学院归属，工作、教育、社会兼职、研究方向均暂无内容。",
+        "职称、教育、师承、任职区间、全职人事状态和校区均未知；保持待补层，不替换样本或升级职业完成层。",
+        "其他大学体育、后勤及医学领域有同名检索结果，未见身份连接证据，均未合并。"
+      ],
+      "appointments": [],
+      "education": [],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "research_fields": [],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "recommended_layer": "roster_pending",
+      "source_profile_status": "sparse_official_profile",
+      "data_batch_id": "faculty-batch-cqu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": false,
+      "established_professional_count_eligible": false,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "本人身份与名录直链已核，职业资料稀疏待完善；不计职业档案",
+      "pending_reason": "sparse_official_profile_body",
+      "pending_reason_label": "人物身份已匹配，职业资料待完善",
+      "pending_note": "只核姓名、本人主页与学院，职业履历正文稀疏；不因有个人页升级为职业详档。"
     }
   ],
   "normalization_evidence": [
@@ -192295,6 +195811,29 @@
         }
       ],
       "note": "新增6部分职业+0pending；全部旧资料和教学事实不变。冲突与未核候选不进确证筛选或主图；主教育三态及来源冲突不改写。"
+    },
+    {
+      "kind": "reviewed_rotation003_wave1",
+      "source_batch_ids": [
+        "faculty-batch-cqu-rotation-003",
+        "faculty-batch-xmu-rotation-003",
+        "faculty-batch-bit-rotation-003"
+      ],
+      "source_files": [
+        {
+          "file": "faculty-batch-cqu-rotation-003.json",
+          "sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc"
+        },
+        {
+          "file": "faculty-batch-xmu-rotation-003.json",
+          "sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8"
+        },
+        {
+          "file": "faculty-batch-bit-rotation-003.json",
+          "sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477"
+        }
+      ],
+      "note": "新增8部分职业+1pending；原始职业字段及三态授位、日期精度保留。课程别名和抽样归属显式来源派生；缓存正文与失效导航分开，未核候选不进确证事件。"
     }
   ],
   "institutions": [

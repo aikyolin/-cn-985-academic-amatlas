@@ -74,6 +74,50 @@ def _official_news_identity_match(entry, person):
     )
 
 
+def _sampling_profile_match(entry, person):
+    """Explicit identity only: a sampled roster unit does not become employment."""
+    sampling = person.get('sampling_affiliation') or {}
+    identity = person.get('identity_evidence') or {}
+    evidence = entry.get('profile_identity_evidence') or {}
+    sources = {s.get('id'): s.get('url') for s in person.get('sources', [])}
+    ids = evidence.get('source_ids') or []
+    sha = lambda value: isinstance(value, str) and len(value) == 64 and all(c in '0123456789abcdef' for c in value)
+    return bool(
+        person.get('detail_count_eligible') is True
+        and entry.get('profile_identity_verified') is True
+        and entry.get('verified_person_id') == person.get('person_id')
+        and entry.get('source_person_id') == person.get('person_id')
+        and entry.get('school_id') and entry['school_id'] == person.get('school_id')
+        and entry.get('name') == person.get('name')
+        and entry.get('organization_id') and person.get('department_id')
+        and entry.get('organization_id') != person.get('department_id')
+        and entry.get('profile_department_id') == person.get('department_id')
+        and entry.get('profile_organization_id') == person.get('organization_id')
+        and entry.get('sampling_affiliation') == sampling
+        and sampling.get('organization_id') == entry.get('organization_id')
+        and sampling.get('source_url') == entry.get('roster_source_url')
+        and sampling.get('basis') == 'official_roster_category_membership_only'
+        and sampling.get('personnel_status_verified') is False
+        and sampling.get('joint_appointment_verified') is False
+        and sources.get(sampling.get('source_id')) == entry.get('roster_source_url')
+        and identity.get('status') == 'official_roster_explicit_profile_link'
+        and identity.get('source_url') == entry.get('roster_source_url')
+        and identity.get('profile_url') == person.get('official_url')
+        and evidence.get('status') == 'independently_reviewed_official_roster_explicit_profile_link'
+        and evidence.get('official_url') == person.get('official_url')
+        and evidence.get('roster_source_url') == entry.get('roster_source_url')
+        and evidence.get('checked_on') and isinstance(ids, list) and bool(ids)
+        and set(identity.get('source_ids') or []) == set(ids)
+        and sampling.get('source_id') in ids and all(sid in sources for sid in ids)
+        and any(sources[sid] == person.get('official_url') for sid in ids)
+        and sha(evidence.get('reviewed_source_sha256')) and sha(evidence.get('independent_review_sha256'))
+        and valid_url(entry.get('official_profile_url')) and valid_url(person.get('official_url'))
+        and entry['official_profile_url'] == person['official_url']
+        and entry.get('official_profile_availability') != 'unavailable'
+        and person.get('official_profile_availability') != 'unavailable'
+    )
+
+
 def _verified_profile_match(entry, person):
     """Accept cross-domain aliases only from explicit, source-backed identity evidence.
 
@@ -81,6 +125,8 @@ def _verified_profile_match(entry, person):
     redirect_chain is an ordered URL list beginning at the roster homepage and
     ending at the detailed profile. Neither is inferred from a shared URL slug.
     """
+    if _sampling_profile_match(entry, person):
+        return True
     if not entry.get('school_id') or entry.get('school_id') != person.get('school_id') or entry['name'] != person['name'] or entry['organization_id'] != person['department_id']:
         return False
     if entry.get('official_profile_availability') == 'unavailable' or person.get('official_profile_availability') == 'unavailable':

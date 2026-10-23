@@ -210,7 +210,7 @@ function renderMentorCard(p){
   const elements=new Map(),$=key=>{if(!elements.has(key))elements.set(key,{innerHTML:'',clientWidth:960,dataset:{height:'320'},style:{},addEventListener(){},click(){this.onclick?.()}});return elements.get(key)};
   const link=(url,label,cls='')=>safeUrl(url)?`<a class="${cls}" href="${escapeHtml(safeUrl(url))}">${escapeHtml(label)}</a>`:'';
   const src=(url,label)=>link(url,label,'source-link');
-  const render=new Function('db','$','esc','statusLabel','src','mentorProfileRoute','mentorOfficialUrl','mentorNavigationNotice','safeUrl','link','makeMind',`let zoom=1;return (${source});`)(db,$,escapeHtml,statusLabel,src,mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,safeUrl,link,()=>'<svg></svg>');
+  const render=new Function('db','$','esc','statusLabel','src','mentorProfileRoute','mentorOfficialUrl','mentorNavigationNotice','safeUrl','link','makeMind',`let zoom=1;${app.match(/^const sourceLink=.*$/m)?.[0]||''}return (${source});`)(db,$,escapeHtml,statusLabel,src,mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,safeUrl,link,()=>'<svg></svg>');
   render(p);return $('#profile-content').innerHTML;
 }
 

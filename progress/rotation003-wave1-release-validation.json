@@ -1,0 +1,232 @@
+{
+  "status": "ready_for_controller_browser_review_not_published",
+  "baseline_commit": "a440e016e881da9f20d9872624f966311522f4cc",
+  "build_id": "bd358f2fcbb8afe8",
+  "asset_version": "rotation003-20261023-w1",
+  "asset_reference_count": 6,
+  "counts": {
+    "professional_records": 555,
+    "pending_records": 84,
+    "schools": 39,
+    "organization_nodes": 229,
+    "department_exports": 111,
+    "roster_records": 1721,
+    "raw_source_observations": 1759,
+    "queue_tasks": 222,
+    "coverage_rows": 215
+  },
+  "additions": {
+    "professional_records": 8,
+    "pending_records": 1,
+    "organization_nodes": 6,
+    "roster_records": 9,
+    "raw_source_observations": 9,
+    "queue_tasks": 3,
+    "department_exports": 4,
+    "education_events": 24,
+    "appointments": 15,
+    "historical_mentor_relations": 1,
+    "publications": 5,
+    "teaching_items": 2
+  },
+  "source_review_gate": {
+    "status": "approved_and_exact_hash_verified",
+    "source_specifications_sha256": "5845fe1c0efbb6cdd491d97dcd8fd69ffc0429ce6d6a3c885f8df63892a1dffe",
+    "approved_file_count": 38,
+    "approved_source_review_evidence_sha256": {
+      "faculty-batch-cqu-rotation-003.json": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc",
+      "faculty-batch-cqu-rotation-003-scope.json": "9b4ade648e6f98b2824f893349a257c60eadccba5c03d3391318908c23c6bec1",
+      "faculty-batch-cqu-rotation-003-qa.json": "9d615fbb0a3f60542286ff3fe8e20cee8a359be8c20419c4aa706b054e8ed630",
+      "faculty-batch-cqu-rotation-003-independent-review.json": "0317f6e539c923722bc72e5ac3ca6e9a1ac2b7b03a663da3a8b70a97623195eb",
+      "cqu-rotation-003-sources/cqu-chenke-details-minimal.json": "1ef06e86335bb49dc0993c0ca846373a7b1523c4f6b4bcded61431f1242d1445",
+      "cqu-rotation-003-sources/cqu-chenke-lecture-2025-minimal.json": "4ca72ccc9566b64097a79bebee40ed1d4861b854cd6d3d5d7780dc173a3166e2",
+      "cqu-rotation-003-sources/cqu-chenke-profile-minimal.json": "8271d529dd296e475791c03644e1c2d232263c333f9640ef5e486a20ac3c0d50",
+      "cqu-rotation-003-sources/cqu-chenke-teaching-2021-minimal.json": "1ad0ad1f34dc83b1473eaa6c925b1e3f68c2ae132fbf8c9d15bc09355b272bf2",
+      "cqu-rotation-003-sources/cqu-chenrenwei-profile-minimal.json": "6d260b4701b7d76321d3930b78fd741a4a9a5dadb03e8a7fb13d127ee7158662",
+      "cqu-rotation-003-sources/cqu-chenxiaomeng-profile-minimal.json": "61a7d0fd9f5db4b54e9d497cf5131a55292c5c9f5f198b4b0ce61c966cda7097",
+      "cqu-rotation-003-sources/roster-first-page-minimal.json": "edd94a91e3efd0e6ff1a8c14d1bd01cf095562b192e2b0a1f694faf9ea81144d",
+      "cqu-rotation-003-sources/roster-order-evidence.json": "4cd4503d03541e23fb4ebe65f2225f661b52ba4e56815701153431eaea3ae48a",
+      "cqu-rotation-003-sources/save_roster_minimal.py": "f8ae7f3ab58442bf42003d8b19dcd5f38a8d049b8353993493d7589b1a77e8e5",
+      "cqu-rotation-003-sources/source-register.json": "8d6f87fd550952e534e3d35be6e86df2131b5b2a258d81cd189b5f78f39e3be6",
+      "cqu-rotation-003-sources/freeze-manifest.json": "b71f8a55aa3918390bcefd2c690d0da041d040daeb3695c3363e2d28611cd068",
+      "review-rotation003-cqu-xmu-bit/cqu-independent-minimal-get-evidence.json": "566796cfea63506bf5294d4eb27198169997263f16f998477a2b025585579ef6",
+      "review-rotation003-cqu-xmu-bit/cqu-news-direct-status.json": "d9f130628bcb0f8db2bc6cfcf6fc741157a53479b59cf6ddb67f722184437b47",
+      "review-rotation003-cqu-xmu-bit/cqu-renwei-sparse-section-check.json": "72d0a080e390d36076d7da18bc4765aa120cdb0c206f945189bcd6c0711de6ef",
+      "faculty-batch-xmu-rotation-003.json": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8",
+      "faculty-batch-xmu-rotation-003-scope.json": "a8235186a33f1507758f1132d2546f41fc4321d14ea9566d3706efda6b66aa6c",
+      "faculty-batch-xmu-rotation-003-qa.json": "abb6f98c0ca80f9cc4bddd28e75d708cb560cba28ca4bcc3925c81caae779124",
+      "faculty-batch-xmu-rotation-003-independent-review.json": "8cc9848196b2c81933e395661768fd27343644b8cadf981839b02cb4156b23bc",
+      "xmu-rotation-003-sources/publications-minimal.json": "feeaf23ea7003ef2928cb8d474674a954acc460bfd9a3f012e4f787cb53234d2",
+      "xmu-rotation-003-sources/roster-minimal.json": "49faae45b02fc5bc626daf879d7a6316da6f0a89ee1c3fbffebf553ae9449ee4",
+      "xmu-rotation-003-sources/supplementary-minimal.json": "7817f1d686abc23cb86a4d70f35ca4126d51d250f1f48f0715683acae1b4828c",
+      "xmu-rotation-003-sources/xmu-chenhuang-profile-minimal.json": "96d020ee0eb7f9e26e604354debdbab1014329a7d31156e7585183682f34bd86",
+      "xmu-rotation-003-sources/xmu-chenwanyi-profile-minimal.json": "494c6f4012f1dfad40f48312ca5e6a2ef5bf576c07f912f2885650bc7879701b",
+      "xmu-rotation-003-sources/xmu-dingchangfa-profile-minimal.json": "8146b9ff1579a0771543aeab7e48b7f78d6174831ae3a85f85d848eeb854b2c3",
+      "faculty-batch-bit-rotation-003.json": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477",
+      "faculty-batch-bit-rotation-003-scope.json": "9368934ce21c4187cc799afdf22d04b51a4a3383a8a5ce53837f55c87cce3123",
+      "faculty-batch-bit-rotation-003-qa.json": "e42b53ac5007e2a6749067ba8d576c17c737fbd32ee66a7a1838f4c5bc5654dc",
+      "faculty-batch-bit-rotation-003-independent-review.json": "2525d7a90408f4d99159326dc514b60a6fb1b37213094fa05ae0b1cb6fbfef79",
+      "bit-rotation-003-sources/bit-chentian-profile-minimal.json": "8e2b9466b32655fd6be2d6a4a72cc298e9628cc40ff254673294028784e23d7f",
+      "bit-rotation-003-sources/bit-chenyuhui-2018-seminar-minimal.json": "fc4da6c1453fda6a06a35952ac6136a9dbb24e7841781ebaab53cbd398cfabb8",
+      "bit-rotation-003-sources/bit-chenyuhui-profile-minimal.json": "63bb823c42fb7c23e2ccb0d8d3ee80dd26d853a57a5ff6aeb97baed2604a6937",
+      "bit-rotation-003-sources/bit-daiyunyun-frontier-profile-minimal.json": "060cd94936166e8c3cc983f6688ac10f797f0008674b795c7369a16f6e017082",
+      "bit-rotation-003-sources/bit-daiyunyun-physics-profile-minimal.json": "bf67bfbaa5d07d7575f3f15d69c23adc5ac510530a4701a17a5f57156bece00d",
+      "bit-rotation-003-sources/roster-minimal.json": "9a41ca7d080e0d35f70362acc1a02aa70ab155a6105c311dedc9fc16bf8012fa"
+    },
+    "source_review_outcomes": {
+      "cqu-rotation-003": {
+        "status": "passed_with_documented_limits",
+        "data_sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc",
+        "blockers": [],
+        "limits_preserved": true
+      },
+      "xmu-rotation-003": {
+        "status": "passed_with_documented_limits",
+        "data_sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8",
+        "blockers": [],
+        "limits_preserved": true
+      },
+      "bit-rotation-003": {
+        "status": "passed_with_documented_limits",
+        "data_sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477",
+        "blockers": [],
+        "limits_preserved": true
+      }
+    }
+  },
+  "preservation": {
+    "approved_files_verified": 38,
+    "person_scalar_leaves": 2176,
+    "nonperson_source_context_scalar_leaves": 307,
+    "source_shape_nodes": 129,
+    "raw_metadata_excluded": "Only public_raw_cache=false: 27 person-source occurrences and 22 top-level source occurrences. No career fact omitted.",
+    "baseline_files_reverified": 267,
+    "original_people": 547,
+    "original_pending": 83,
+    "original_roster_entries": 1712,
+    "original_source_observations": 1750,
+    "original_queue_tasks": 219,
+    "original_department_workbooks_byte_identical": 107
+  },
+  "tests": {
+    "repository_total": 987,
+    "repository_python": 422,
+    "repository_node": 565,
+    "repository_failed": 0,
+    "repository_skipped": 0,
+    "original_repository_tests_retained": 927,
+    "new_independent_source_consumer_tests": 60,
+    "research_boundary_tests": 169,
+    "prior_immutable_research_boundary_tests": 149,
+    "new_preparation_normalization_tests": 20,
+    "independent_export_oracle_self_tests": 26,
+    "optional_baseline_negative_controls": 4,
+    "logs": {
+      "rotation003-wave1-full-python-tests.txt": "35cab5d35afa52964278c1d9c53628ee162ffc8939872344b6774aa1daf8bb99",
+      "rotation003-wave1-full-node-tests.txt": "1b24ccb19cecd869962a6e29b9fc4af8f49a51ea14221300867ef62f4ac2f590",
+      "rotation003-wave1-preparation-final-tests.txt": "6dee0dfaf2c33afae7b6d87cd5bbb5e5650d2e29a1e491d4246faa8fab48483f",
+      "rotation003-wave1-normalization-tests.txt": "31cbc695fcfd89fd52bb5ef9b26c0ab8da11bef9d407ad91e308c1f272c3fdba",
+      "rotation003-wave1-prior-display-fix-tests.txt": "462ffcca8806fef2af65db1dc2e62650da3fb1be136772d6e9cc355e9d0a9222",
+      "rotation003-wave1-prior44-tests.txt": "eae62dee3275069811458c28249d6bae27b9a3233f85fc06c9480288e779fa2b",
+      "rotation003-wave1-prior38-tests.txt": "adb14eb3517d76cb26b3cd358ea9adbeda7241af5ddfad8d02af71f8222b7d65",
+      "rotation003-wave1-prior28-tests.txt": "ab10332224d17d6c1f79ff59e41a692d018760d3f2a76ab81176e6b95459e50f",
+      "rotation003-wave1-prior22-tests.txt": "a385726b4b800eae65cedbbef2121ab737d7395fb0d6a87c7ce7c6843e04e872",
+      "rotation003-wave1-export-oracle-selftest.log": "de0d314bf38201f1996b1a425e6e94cc96a11ed72cc68d7718661350bf4480c0",
+      "rotation003-wave1-independent-python-final.txt": "09797b8a2fde1d55ed8521aff2e4feb876fc0440ad07e52abed721c9366d2525",
+      "rotation003-wave1-independent-node-final.txt": "bd7cc8f2dd2aa7afdbeeaab111c22124c2c4a08292704da52d0521fea8e23893"
+    },
+    "regression_input_manifest_sha256": "880a25945123878a2e84d14ce9100f2aa4c492e6a00fa058c9d1573f78beecb8"
+  },
+  "independent_consumer_audit": {
+    "report_file": "rotation003-wave1-independent-report.json",
+    "report_sha256": "1969d9b634e167388cf5cfc710c4757c8cbc0719ae6ab9a5dc7da1d98d0e3d1f",
+    "profile_lineage_comparisons": 1094,
+    "historical_filter_combinations_per_profile": 122,
+    "approved_old_label_event_ids": [
+      "nwsuaf-gengnan-education-1",
+      "nudt-hudewen-education-1",
+      "nudt-lixiang-education-1",
+      "nudt-lidongxu-education-1"
+    ],
+    "degree_awarded_distribution": {
+      "null": 16,
+      "false": 6,
+      "true": 2
+    },
+    "new_candidate_filter_probes": 1026,
+    "negative_tests": [
+      "Mutation of every 2176 original person scalar leaf changes its fingerprint.",
+      "All original person object-key and array-length mutations fail shape guard.",
+      "Unknown source IDs, mismatched source URLs/provenance, candidate event binding, and candidate filter promotion fail closure guard.",
+      "Removing all pending candidates changes no actual profile, lineage, filter or canonical export output.",
+      "Source-only and fact-only disabled flags independently suppress appropriate HTML links.",
+      "Workbook source suppression stays person-scoped; duplicate names with disabled source metadata fail closed.",
+      "Cross-unit identity rejects 19 missing/mismatched evidence variants plus both sampling units absent, preserving exact source/review pins and sampling/employment separation."
+    ]
+  },
+  "implementation_review": {
+    "controller_reviewed_fixed_diff": true,
+    "independent_worker_reviewed_fixed_diff": true,
+    "compatibility_patch_sha256": "65f84336331ae9df8013bc993ee161b356e111436020309b81219ca165c8c69c",
+    "compatibility_review_sha256": "e368639a86171426d5aa0ce106fe6c0c7a51ce18b89716926e3f42db0313bdfb",
+    "changed_application_files": [
+      "scripts/build.py",
+      "scripts/build_rosters.py",
+      "site/app.js",
+      "site/index.html",
+      "site/model.js",
+      "site/rosters.js"
+    ],
+    "narrow_boundaries": [
+      "Per-person/per-source explicit false navigation flags, including fact-only veto; normal source links remain active.",
+      "Department-local workbook source suppression rejects ambiguous duplicate names rather than affecting another person.",
+      "Only education_level_unknown display alias added; no source-field or filter promotion.",
+      "Cross-unit identity requires same-school explicit reviewed sampling/profile/source closure including query equality and unit IDs; no same-name-only inference."
+    ],
+    "historical_test_maintenance_sha256": "74260b4c99d30c097e8148435f8f75535b3b8c765b47acb805ac0c31c8d5c8a0",
+    "global_golden_relaxed": false
+  },
+  "exports": {
+    "report_file": "research/rotation003-wave1-build-export-report.json",
+    "report_sha256": "aa92df54da60fd7ce0643e474d9907479dd8474cf03937be3ebc9382c90c7e1e",
+    "verification_totals": {
+      "cells": 191239,
+      "hyperlinks": 15886,
+      "sheets": 564,
+      "formula_cells": 0,
+      "suppressed_source_hyperlinks": 3,
+      "zip_members": 1928,
+      "xlsx_files": 112,
+      "csv_records": 1721,
+      "csv_columns": 34,
+      "csv_cells_including_header": 58548,
+      "deterministic_generated_files": 115
+    },
+    "original_department_workbooks_unchanged": 107,
+    "two_complete_isolated_builds_match_candidate": true,
+    "generated_inventory_sha256": "184475a75574e45c5f426fbaa09a6128f4d13299787cd5f799fc3102aadf26cc",
+    "toolchain": {
+      "python": "3.12.14",
+      "openpyxl": "3.1.5",
+      "platform": "Linux",
+      "bytecode_writes_disabled": true
+    }
+  },
+  "final_actual_diff_audit": {
+    "report_file": "rotation003-wave1-changed-file-review.json",
+    "privacy_report_file": "rotation003-wave1-privacy-diff-audit.json",
+    "expected_changed_or_added_files": 35,
+    "note": "External final freeze pins the audit and every final candidate file to avoid a self-referential report hash."
+  },
+  "limitations": [
+    "Local-only preparation; no browser, source revisit/refetch, network, remote write, deployment or publication performed. Final real-browser review remains with the controller.",
+    "Source content is supported by separately pinned independent reviews; this integration verifies exact source chains and consumers, not a fresh live-source investigation.",
+    "The nine selected people are a partial original-order sample: eight professional records and one sparse pending record. They do not establish complete department/category/school coverage or verified current personnel status.",
+    "CQU Chen Renwei remains pending. Two Chen Ke official news sources were read as complete cached bodies while their original URLs returned404; original URLs and source provenance remain visible as inert text, not navigable links.",
+    "BIT Dai Yunyun is sampled from physics but the reviewed actual department is the Frontier Interdisciplinary Research Institute. Cross-unit roster linking proves identity only, not dual appointment; conflicting role remains null.",
+    "BIT Chen Yuhui reversed doctoral interval remains null. Independently supported degree-award dates retain year precision. Candidate and uncertain facts do not enter confirmed degree filters or current mentor navigation.",
+    "The unknown-education label affects Chen Ke and exactly four approved historical null-degree events; source data, degree eligibility and historical filters remain unchanged.",
+    "JavaScript checks use actual application code in a local DOM harness, not visual browser QA. XLSX checks use openpyxl and ZIP/CRC inspection, not Microsoft Excel or LibreOffice visual rendering.",
+    "Determinism is established for the recorded Python3.12.14/openpyxl3.1.5 toolchain. Roster records and observations are not unique-person or confirmed-current-employment totals."
+  ]
+}

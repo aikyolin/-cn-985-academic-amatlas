@@ -1,0 +1,110 @@
+{
+  "status": "ready_for_controller_targeted_browser_review_not_published",
+  "corrects": "Two source-explicit teaching roles rendered as undisclosed in the original release25 candidate.",
+  "prior_release25_freeze_sha256": "9ec7d2794d59e822b620d11c2cc69981e8cef584857abf7d18b46ceec7881262",
+  "baseline_commit": "a440e016e881da9f20d9872624f966311522f4cc",
+  "build_id": "dc1462986991f7b6",
+  "asset_version": "rotation003-20261023-w1",
+  "counts": {
+    "professional_records": 555,
+    "pending_records": 84,
+    "schools": 39,
+    "organization_nodes": 229,
+    "department_exports": 111,
+    "roster_records": 1721,
+    "raw_source_observations": 1759,
+    "queue_tasks": 222,
+    "coverage_rows": 215
+  },
+  "alias_contract": {
+    "file": "rotation003-wave1-display-fix-alias-report.json",
+    "sha256": "2670c3750934a8df961f4731be57ec2acaf2b98f7cd857c1411c14635760bf27",
+    "person_id": "cqu-chenke",
+    "source_ids": [
+      "cqu-chenke-teaching-2021",
+      "cqu-chenke-lecture-2025"
+    ],
+    "role": "主讲",
+    "facts_changed": 2,
+    "added_scalar_fields": 14,
+    "full_original_canonical_atlas_recovers_exactly": true,
+    "no_other_canonical_changes": true
+  },
+  "independent_review": {
+    "file": "rotation003-wave1-display-fix-independent-report.json",
+    "sha256": "5f7aa31ea34e204b7599ead7cb6f59aa7d61a12bd1e302f5488f84fb711be9f0",
+    "all_profile_and_lineage_routes_compared": 1110,
+    "only_html_delta": "Two exact teaching headings: 具体教学角色未披露 → 主讲.",
+    "other_teacher_html_controls": 9,
+    "all_555_profile_filter_combinations": 122,
+    "blockers": []
+  },
+  "tests": {
+    "repository_total": 1009,
+    "python": 434,
+    "node": 575,
+    "failed": 0,
+    "skipped": 0,
+    "previous_repository_tests_retained": 987,
+    "new_independent_default_tests": 22,
+    "new_optional_immutable_baseline_controls": 1,
+    "research_boundary_tests_rerun": 169,
+    "independent_export_oracle_tests": 26,
+    "regression_input_manifest_sha256": "e9ca9e38326fdf488bb333b03d9187e9bc158c8b58e9736957e8dbcdfcfe3778",
+    "logs": {
+      "rotation003-wave1-display-fix-full-python-tests.txt": "200e636f14d4380006b937a40e5d5a817bbba6e9db34a318a4b075561c2a5211",
+      "rotation003-wave1-display-fix-full-node-tests.txt": "f2e697f98853adb53a31caf3809ec04bbb41629860c4a24d8a4c6b8b87344298",
+      "rotation003-wave1-display-fix-research-tests.txt": "1fea1641bf89029b51478293d4869ec0771add261a617c04856450c30f5e52c9",
+      "rotation003-wave1-display-fix-export-oracle-selftest.log": "de0d314bf38201f1996b1a425e6e94cc96a11ed72cc68d7718661350bf4480c0"
+    }
+  },
+  "export_audit": {
+    "file": "research/rotation003-wave1-display-fix-build-export-report.json",
+    "sha256": "72f7327707be2ee55130c57623aee00da5d79724c55a2a0467be527a8237a735",
+    "verification_totals": {
+      "cells": 191239,
+      "hyperlinks": 15886,
+      "sheets": 564,
+      "formula_cells": 0,
+      "suppressed_source_hyperlinks": 3,
+      "zip_members": 1928,
+      "xlsx_files": 112,
+      "csv_records": 1721,
+      "csv_columns": 34,
+      "csv_cells_including_header": 58548,
+      "deterministic_generated_files": 115
+    },
+    "two_isolated_builds_match_candidate": true,
+    "generated_inventory_sha256": "41014c5462f1a41d147d4bf0e082cdace5f91be11f6ded4ee714e407fc6e7960",
+    "changed_cell": "cqu-architecture-urban-planning.xlsx / 总览!G2",
+    "other_department_workbooks_byte_identical": 110,
+    "all_hyperlinks_unchanged": true,
+    "roster_xlsx_and_csv_byte_identical": true,
+    "toolchain": {
+      "python": "3.12.14",
+      "openpyxl": "3.1.5",
+      "platform": "Linux",
+      "bytecode_writes_disabled": true
+    }
+  },
+  "scope": {
+    "source_packages_and_all_original_fields_preserved": true,
+    "application_exporter_and_asset_tokens_unchanged": true,
+    "historical_test_goldens_preserved": true,
+    "no_new_hust_data": true
+  },
+  "final_actual_diff_audit": {
+    "file": "rotation003-wave1-display-fix-changed-file-review.json",
+    "expected_changed_since_original_release25": 9,
+    "expected_changed_since_published_release24": 39,
+    "note": "Final external freeze pins this audit and candidate bytes without a self-referential hash."
+  },
+  "limitations": [
+    "Local correction only; no browser, new source retrieval, network, remote write or publication. Controller must recheck the corrected teaching display and download before publication.",
+    "Only two Chen Ke teaching facts gain source-explicit role aliases. Their historical dates, unknown teaching level/period, source notes, direct404/cache status and disabled source navigation are unchanged; no current long-term teaching claim is inferred.",
+    "All source packages, all app/model/roster/exporter implementation files and asset tokens remain unchanged. Site roster JSON changes only the common data-derived build_id.",
+    "The frozen original release25 and all previous reports remain immutable historical records. This correction validation supersedes its readiness status only for the corrected candidate.",
+    "Local DOM and openpyxl/ZIP inspection are not visual browser or Excel/LibreOffice review. Determinism is established for the recorded toolchain only.",
+    "All previous source limits remain: Chen Renwei pending, BIT sampling affiliation distinct from actual employment, reversed doctoral interval null, award years only year precision, candidates isolated and unavailable mentor/source navigation disabled."
+  ]
+}

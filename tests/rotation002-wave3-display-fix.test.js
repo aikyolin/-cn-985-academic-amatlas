@@ -24,6 +24,9 @@ const EXPECTED_CHANGED_LABELS={
   'sysu-wutao-education-1':UNDERGRADUATE,
   'scu-yangjieren-education-1':UNDERGRADUATE,
 };
+const RELEASE25_DATA_SHA256={"data/atlas.json": "0b0fd57d534c40d6ee022fba99ce1958e0acb475404096cda1609287dff85f9f", "data/rosters.json": "fc08f82cf0a161d7ca8882151afcad6a0a7d5be88a8b56b936a6d055e997045a", "site/atlas.json": "a45a2d32578ad53a76b91599ca63c2e82b94eb098879ee967f8ff21b2b78defe", "site/rosters.json": "9e2360b5741d98d0cd9db41efa128bad73c4510b9797c40ed2b1a749f0295c52"};
+const RELEASE25_ROLE_DISPLAY_DATA_SHA256={"data/atlas.json": "c091ec997338745db522e4e5434836359223fde281b29c0d7bbf1ee0f4856df8", "site/atlas.json": "b53c075a6e4113c6d82957835d85d6733cb9ba45c42e2a5c72cb9fcc414499c0", "site/rosters.json": "c9ee602e74636e0253cdffc0df814c1048e26784a8954a4c42c67d9a826053ad"};
+const RELEASE25_CHANGED_LABEL_IDS=new Set(["nwsuaf-gengnan-education-1", "nudt-hudewen-education-1", "nudt-lixiang-education-1", "nudt-lidongxu-education-1"]);
 const RELEASE24_DATA_SHA256={
   'data/atlas.json':'3cc08cd4c3db2651d94e599335809c581357e45335cbd4f8b8283a056d5d54f5',
   'data/rosters.json':'1b90fa0e5f0624a2f6f508161fd40c0fce33d64508db5c6d89a899f01fbb6d17',
@@ -64,8 +67,8 @@ function educationRows(html){
   return [...section.matchAll(/<article>([\s\S]*?)<\/article>/g)].map(match=>match[1]);
 }
 
-test('display fix leaves all four canonical source and generated data files byte-identical',()=>{
-  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),hash,file);
+test('reviewed release25 append endpoint pins all four canonical and generated data files exactly',()=>{
+  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
 });
 
 test('exactly four previously generic event fallbacks acquire uncertainty-preserving labels',()=>{
@@ -136,8 +139,9 @@ test('actual doctoral postdoctoral and visiting profile labels retain their revi
 });
 
 test('all 1695 unaffected education labels match the immutable predecessor, including provisional degrees',()=>{
-  const labels=db.people.flatMap(p=>(p.education||[])
-    .map((e,i)=>[p.person_id,i,e.event_id??null,educationStageLabel(e)])
+  for(const id of RELEASE25_CHANGED_LABEL_IDS){const e=event(id);assert.equal(e.event_kind,'education_level_unknown');assert.equal(e.degree,null);assert.equal(educationStageLabel(e),'学习经历（层次与授位未核实）')}
+  const labels=db.people.slice(0,547).flatMap(p=>(p.education||[])
+    .map((e,i)=>[p.person_id,i,e.event_id??null,RELEASE25_CHANGED_LABEL_IDS.has(e.event_id)?'研究经历':educationStageLabel(e)])
     .filter(row=>!Object.hasOwn(EXPECTED_CHANGED_LABELS,row[2])));
   assert.equal(labels.length,1695);
   assert.equal(objectDigest(labels),'29b663515dbdbdb42284a5fb402fb6c4c35a636765322fdb7cebdd039006ab23');
@@ -150,7 +154,7 @@ test('confirmed-degree membership and 122 education filters stay identical for a
     ...['master','doctor'].flatMap(key=>regions.map(v=>({[key]:v}))),
     ...['master_continent','continent'].flatMap(key=>continents.map(v=>({[key]:v}))),
     ...regions.flatMap(r=>continents.flatMap(c=>[{master:r,master_continent:c},{doctor:r,continent:c}]))];
-  const outcomes=db.people.map(p=>[p.person_id,
+  const outcomes=db.people.slice(0,547).map(p=>[p.person_id,
     ['bachelor','master','doctor'].map(k=>stages(p,k).map(e=>e.event_id??null)),
     filters.map(f=>matches(p,f,db.org_units))]);
   assert.equal(outcomes.length,547);assert.equal(filters.length,122);
@@ -161,11 +165,11 @@ test('confirmed-degree membership and 122 education filters stay identical for a
   assert.deepEqual(stages(person('sysu-wutao'),'doctor').map(e=>e.event_id),['sysu-wutao-education-3']);
 });
 
-test('the six existing asset references move together to the exact reviewed wave3 token',()=>{
+test('the six existing asset references move together to the exact reviewed rotation003 token',()=>{
   const counts={'site/app.js':3,'site/rosters.js':1,'site/index.html':2};
   for(const [file,count] of Object.entries(counts)){
     const source=read(file).toString();
-    assert.equal((source.match(/rotation002-20261023-w3/g)||[]).length,count,file);
+    assert.equal((source.match(/rotation003-20261023-w2/g)||[]).length,count,file);
     assert(!source.includes('rotation002-20261023-w1'),file);
   }
 });
@@ -178,5 +182,5 @@ test('real consumers and model projections do not mutate the canonical source sc
     for(const type of ['bachelor','master','doctor'])stages(person(id),type);
   }
   assert.equal(JSON.stringify(db),before);
-  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),hash,file);
+  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
 });

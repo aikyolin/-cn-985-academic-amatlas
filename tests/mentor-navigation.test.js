@@ -18,7 +18,7 @@ function renderCards(p,people=db.people){
   };
   const link=(url,label,cls='')=>safeUrl(url)?`<a class="${cls}" href="${escapeHtml(safeUrl(url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`:`<span>${escapeHtml(label)}</span>`;
   const src=(url,label)=>url?link(url,label,'source-link'):'';
-  const render=new Function('db','$','esc','statusLabel','src','mentorProfileRoute','mentorOfficialUrl','mentorNavigationNotice','safeUrl','link','makeMind',`let zoom=1;return (${lineageSource});`)(
+  const render=new Function('db','$','esc','statusLabel','src','mentorProfileRoute','mentorOfficialUrl','mentorNavigationNotice','safeUrl','link','makeMind',`let zoom=1;${app.match(/^const sourceLink=.*$/m)?.[0]||''}return (${lineageSource});`)(
     {people},$,escapeHtml,value=>value,src,mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,safeUrl,link,()=>'<svg></svg>'
   );
   render(p);
