@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Academic Atlas canonical snapshot",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "updated_at",
+    "institution",
+    "campuses",
+    "org_units",
+    "people"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "org_units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "parent_id",
+          "campus_ids",
+          "source_url"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "parent_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "campus_ids": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "harbin",
+                "weihai",
+                "shenzhen"
+              ]
+            }
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "person_id",
+          "name",
+          "department_id",
+          "campus_ids",
+          "education",
+          "mentors",
+          "publications",
+          "sources",
+          "unknowns"
+        ],
+        "properties": {
+          "person_id": {
+            "type": "string"
+          },
+          "education": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "degree",
+                "institution",
+                "source_url",
+                "institution_985",
+                "region",
+                "continent_code"
+              ],
+              "properties": {
+                "institution_985": {
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unknown"
+                  ]
+                },
+                "region": {
+                  "enum": [
+                    "mainland",
+                    "hmt",
+                    "overseas",
+                    "unknown"
+                  ]
+                }
+              }
+            }
+          },
+          "mentors": {
+            "type": "array"
+          },
+          "committee_members": {
+            "type": "array"
+          },
+          "unknowns": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

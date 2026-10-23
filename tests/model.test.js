@@ -1,0 +1,10 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {matches,degreeType,safeUrl,escapeHtml} from '../site/model.js';
+import fs from 'node:fs';const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));const list=f=>db.people.filter(p=>matches(p,f));
+test('six real samples across three campuses',()=>{assert.equal(db.people.length,6);for(const campus of ['harbin','weihai','shenzhen'])assert.equal(list({campus}).length,2)});
+test('bachelor 985 and geography combine',()=>{assert.deepEqual(list({ug:'no',doctor:'hmt'}).map(p=>p.name),['堵宏伟']);assert.deepEqual(list({ug:'yes',doctor:'overseas',continent:'north_america'}).map(p=>p.name),['高庆彬'])});
+test('joint cultivation not PhD granting institution',()=>{assert.equal(degreeType('联合培养（非单独学位）'),'other');assert.equal(list({doctor:'overseas'}).length,1)});
+test('missing stage is not unknown or non985',()=>{const p={name:'测试',campus_ids:[],education:[]};assert.equal(matches(p,{ug:'no'}),false);assert.equal(matches(p,{ug:'unknown'}),false);assert.equal(matches(p,{ug:'not_recorded'}),true)});
+test('safe content links',()=>{assert.equal(safeUrl('javascript:alert(1)'),'');assert.equal(escapeHtml('<script>'),'&lt;script&gt;')});
+test('conflicted mentors not active',()=>{const p=db.people.find(p=>p.name==='高庆彬');assert(p.mentors.some(m=>m.employment_status==='unknown_conflicting'))});
+test('hierarchical parent unit includes descendant faculty',()=>{const p=db.people.find(p=>p.name==='堵宏伟');assert.equal(matches(p,{org:'hit-shenzhen-information'},db.org_units),true)});
+test('committee is not a mentorship edge',()=>{assert.equal(db.people.reduce((n,p)=>n+p.mentors.length,0),3);assert.equal(db.people.reduce((n,p)=>n+(p.committee_members||[]).length,0),4)});
