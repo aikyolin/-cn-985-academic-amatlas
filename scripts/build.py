@@ -81,7 +81,15 @@ def department_tables(people,updated_at):
   rows.extend([[p['name'],*[m.get(k) for k in mentor_fields]] for m in mentors])
  tables.append(('导师',rows))
  for label,key,fields,headers in [('论文','publications',['title','year','doi','url','type','source_url','identity_evidence','link_status','note'],['标题','年份','DOI','链接','类型','收录来源','作者归属依据','链接核验范围','备注']),('来源','sources',['id','url','evidence_status','retrieved_at'],['来源ID','链接','核验方式','查阅日期'])]:
-  tables.append((label,[['姓名',*headers],*[[p['name'],*[r.get(k) for k in fields]] for p in people for r in p[key]]]))
+  rows=[['姓名',*headers],*[[p['name'],*[r.get(k) for k in fields]] for p in people for r in p[key]]]
+  if key=='sources':
+   for p in people:
+    seen={row.get('url') for row in p['sources']}
+    for e in p['education']:
+     url=e.get('classification_source')
+     if e.get('institution_985') in ('yes','no') and valid_url(url) and url not in seen:
+      rows.append([p['name'],'institution-classification-'+str(len(seen)),url,'历史985院校分类参考；非个人授位或就读当年建设身份的证明',updated_at]);seen.add(url)
+  tables.append((label,rows))
  return tables
 
 def build(generate_excel=True):

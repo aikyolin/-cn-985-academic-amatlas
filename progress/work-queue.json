@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T12:53:00Z",
-  "base_commit": "f291e6d1e5c4a6a6106e95187cb02a623d82fc09",
+  "updated_at": "2026-10-23T13:06:30Z",
+  "base_commit": "652284e5caab14a09abc8384670fe13266df2fdc",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -106,7 +106,7 @@
       "stage": "profile_research",
       "status": "partial",
       "scope": {
-        "description": "165条名录中通信42、电子27、测控41已完成当前名录首查；信息工程系33人中前20人已核实，尚余13人待查。已读正文仍有缺项，不代表完整履历或全院完成。",
+        "description": "165条名录中通信42、电子27、测控41、信息33均已完成当前名录首查，共143条；微波工程系22人尚待首查。姓名待核、正文稀疏与缺项分层保留，非143份完整履历或全院完成。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
@@ -134,13 +134,14 @@
         "progress/harbin-communication-coverage.json",
         "progress/harbin-electronic-engineering-coverage.json",
         "progress/harbin-measurement-coverage.json",
-        "progress/harbin-information-progress.json"
+        "progress/harbin-information-progress.json",
+        "progress/harbin-information-coverage.json"
       ],
       "review_status": "approved",
-      "next_action": "从信息工程系名录第21位官大衍继续，逐人核验身份与公开职业正文；前20人已核实，33人尚未首查完成。浏览器与新版XLSX在发布前另行验收。",
-      "next_cursor": "information-engineering:roster-position:21",
-      "attempted_at": "2026-10-23T12:53:00Z",
-      "last_verified_commit": "f291e6d1e5c4a6a6106e95187cb02a623d82fc09"
+      "next_action": "继续微波工程系22条名录，从第1位李红梅开始逐人核验公开职业正文；此前四系143条已首查，身份与资料缺项不等同完整。发布前须另行完成新版全部院系XLSX与浏览器验收。",
+      "next_cursor": "microwave-engineering:roster-position:1",
+      "attempted_at": "2026-10-23T13:06:30Z",
+      "last_verified_commit": "652284e5caab14a09abc8384670fe13266df2fdc"
     },
     {
       "task_id": "hit-mechanical:roster",

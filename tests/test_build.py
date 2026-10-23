@@ -26,7 +26,7 @@ class DataTests(unittest.TestCase):
   self.assertEqual(sum('委员会' in (r[2] or '') for r in rows),4)
  def test_roster_is_separate(self):
   r=json.loads((ROOT/'site/rosters.json').read_text())
-  self.assertEqual(len(r['entries']),1381);self.assertEqual(len(self.d['people']),163)
+  self.assertEqual(len(r['entries']),1381);self.assertEqual(len(self.d['people']),175)
   self.assertTrue(all(e['profile_identity_verified'] is False for e in r['entries'] if e.get('batch_id')=='harbin-002'))
   self.assertEqual(sum(not e['official_profile_url'] for e in r['entries']),163)
  def test_roster_conflicts_preserved(self):
