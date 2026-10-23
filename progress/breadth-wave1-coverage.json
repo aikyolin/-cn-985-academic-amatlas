@@ -1,0 +1,143 @@
+{
+  "updated_at": "2026-10-23",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "baseline_commit": "1604775583c7ea6634d3242d7c8fb72689d74b4a",
+  "counts": {
+    "new_schools": 4,
+    "new_organization_nodes": 4,
+    "new_campuses": 0,
+    "source_people": 12,
+    "new_professional_profiles": 12,
+    "new_pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 35,
+      "appointments": 43,
+      "mentors": 2,
+      "committee_members": 0,
+      "publications": 14,
+      "sources": 46,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0
+    },
+    "effective_global_collection_delta": {
+      "education": 35,
+      "appointments": 43,
+      "mentors": 2,
+      "committee_members": 0,
+      "publications": 14,
+      "sources": 46,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 0,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 13,
+      "degree_awarded_false": 10,
+      "degree_awarded_null": 12,
+      "confirmed_degree_events": 13
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 13,
+      "degree_awarded_false": 10,
+      "degree_awarded_null": 12,
+      "confirmed_degree_events": 13
+    },
+    "direct_guidance_types": {
+      "doctoral_advisor": 2
+    },
+    "publication_types": {
+      "journal_article": 8,
+      "book": 4,
+      "conference_paper": 2
+    },
+    "projection": {
+      "published_schools": 9,
+      "professional_records": 336,
+      "pending_records": 51,
+      "organization_nodes": 90,
+      "collections": {
+        "education": 1016,
+        "appointments": 1237,
+        "mentors": 133,
+        "committee_members": 9,
+        "publications": 667,
+        "sources": 1296,
+        "research_collaborators": 4,
+        "pending_mentor_candidates": 12,
+        "pending_mentors": 7,
+        "project_guidance": 1
+      },
+      "degree_counts": {
+        "degree_awarded_true": 537,
+        "degree_awarded_false": 188,
+        "degree_awarded_null": 291,
+        "confirmed_degree_events": 537
+      },
+      "roster_totals": {
+        "organization_count": 24,
+        "category_count": 87,
+        "entries_with_profile_link": 1306,
+        "entries_without_profile_link": 163,
+        "dedup_candidate_groups": 60,
+        "placeholder_profile_link_observations": 18,
+        "current_employment_count_verified": false,
+        "not_unique_people_count": true,
+        "record_count": 1469,
+        "raw_observation_count": 1507,
+        "roster_records": 1469,
+        "raw_source_observations": 1507,
+        "coverage_unit_count": 105,
+        "count_unit": "integrated_roster_records",
+        "source_record_grouping_reduction": 38,
+        "category_count_basis": "unique_organization_category_pairs",
+        "unique_organization_category_pairs": 87,
+        "batch_category_count": 98,
+        "category_count_source": "coverage_rows_preserved_without_deduplication"
+      }
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-fdu-first-001.json",
+      "sha256": "92f100f58a2774fd622c6da5e12797d8f360ee6cbb12e5153b7d1fdb9215e7d8",
+      "independent_review_file": "faculty-batch-fdu-first-001-independent-review.json",
+      "independent_review_sha256": "e75c8f2922fd3c53856ff3ab9cfc6030cf9001ec72717efb5d9fe2927b6bd942"
+    },
+    {
+      "file": "faculty-batch-nju-first-001.json",
+      "sha256": "acde5b544752822bd99afdae359073cd8588f3e016c232026af65098012ceece",
+      "independent_review_file": "faculty-batch-nju-first-001-independent-review.json",
+      "independent_review_sha256": "c40016a6924b74332eeaa325c994ecc0b1b0d5bf43d8e92da36e09488aecf883"
+    },
+    {
+      "file": "faculty-batch-ustc-first-001.json",
+      "sha256": "838f69732426459c4962e6f820acbeaf619e79f7fba4b2f621721fc432cacb00",
+      "independent_review_file": "faculty-batch-ustc-first-001-independent-review.json",
+      "independent_review_sha256": "9696a789cfced2024f8a09e42ce103250df89585545349534130a7621fb4750e"
+    },
+    {
+      "file": "faculty-batch-buaa-first-001.json",
+      "sha256": "dbcbaf051fc310be1bd70304e74c66a0d93e25ad9bbf2607e8e113cff5d9ba65",
+      "independent_review_file": "faculty-batch-buaa-first-001-independent-review.json",
+      "independent_review_sha256": "1954fb41ce60bf8fe2358dc6b2fa5224af842dd4cbcefea635bac47c865c41ad"
+    }
+  ],
+  "scope": "新接入复旦、南京大学、中国科学技术大学、北京航空航天大学各3份部分职业资料，所选栏目首批，不代表全校全院或全部职级完整。"
+}

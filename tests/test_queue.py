@@ -5,7 +5,7 @@ from validate_queue import validate_queue
 from jsonschema.exceptions import ValidationError
 class QueueTests(unittest.TestCase):
  def setUp(self):
-  self.d={'schema_version':'1.0','updated_at':'2026-10-23T09:00:00Z','base_commit':'a'*40,'scope':{'active_institution':'hit','target_university_count':39,'registry_complete':False},'tasks':[{'task_id':'hit:test:roster','institution_id':'hit','organization_id':'test-unit','campus_ids':[],'stage':'roster_enumeration','status':'pending','scope':{'description':'Synthetic test scope','claim':'listed_public_scope_only','university_complete':False},'depends_on':[],'source_urls':['https://example.test/roster'],'artifact_paths':[],'review_status':'pending_review','next_action':'Review test fixture'}]}
+  self.d={'schema_version':'1.0','updated_at':'2026-10-23T09:00:00Z','base_commit':'a'*40,'scope':{'active_institution':'hit','target_university_count':39,'registry_complete':False},'tasks':[{'task_id':'hit:test:roster','institution_id':'hit','organization_id':'hit-aerospace','campus_ids':[],'stage':'roster_enumeration','status':'pending','scope':{'description':'Synthetic test scope','claim':'listed_public_scope_only','university_complete':False},'depends_on':[],'source_urls':['https://example.test/roster'],'artifact_paths':[],'review_status':'pending_review','next_action':'Review test fixture'}]}
  def test_valid_pending(self):self.assertEqual(validate_queue(self.d),[])
  def test_unreviewed_done_rejected(self):
   self.d['tasks'][0]['status']='done'

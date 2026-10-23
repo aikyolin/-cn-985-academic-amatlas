@@ -3,12 +3,27 @@ import argparse,json,pathlib
 from jsonschema import Draft202012Validator,FormatChecker
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def validate_queue(data,root=ROOT,check_artifacts=False):
+ root=pathlib.Path(root)
  schema=json.loads((ROOT/'schema/work-queue.schema.json').read_text())
  Draft202012Validator(schema,format_checker=FormatChecker()).validate(data)
+ atlas=json.loads((root/'data/atlas.json').read_text())
+ schools={s['id'] for s in atlas['institutions']}
+ organizations={o['id']:o for o in atlas['org_units']}
+ campuses={c['id']:c for c in atlas['campuses']}
+ active=data['scope'].get('active_institutions')
+ if active is not None and not set(active)<=schools:raise ValueError('Unknown active institution')
  tasks=data['tasks'];ids=[t['task_id'] for t in tasks]
  if len(ids)!=len(set(ids)):raise ValueError('Duplicate task ID')
  by_id={t['task_id']:t for t in tasks};warnings=[]
  for t in tasks:
+  sid=t['institution_id'];oid=t['organization_id']
+  if sid not in schools:raise ValueError('Unknown task institution: '+sid)
+  if active is not None and sid not in active:raise ValueError('Task institution outside active scope: '+sid)
+  if oid is not None and (oid not in organizations or organizations[oid]['school_id']!=sid):raise ValueError('Unknown or cross-school task organization: '+oid)
+  for original in t['campus_ids']:
+   # These three aliases remain valid only for historical HIT queue records.
+   cid=original[4:] if sid=='hit' and original in {'hit-harbin','hit-weihai','hit-shenzhen'} else original
+   if cid not in campuses or campuses[cid]['school_id']!=sid:raise ValueError('Unknown or cross-school task campus: '+original)
   for dep in t['depends_on']:
    if dep not in by_id:raise ValueError('Unknown dependency: '+dep)
    if t['status']=='done' and by_id[dep]['status']!='done':raise ValueError('Done task has unfinished dependency')

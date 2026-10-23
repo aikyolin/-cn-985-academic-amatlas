@@ -19,7 +19,7 @@
     "链接为官方目录提供的地址；未逐个验证所有院系主页可访问性。",
     "深圳旧电子信息学院 eie.hitsz.edu.cn 主页两次抓取超时，改用官方目录已确认的集成电路学院名录，不涉及访问拒绝。"
   ],
-  "scope_note": "当前5所高校分批收录，86个组织节点包含父子层级，不是86个互斥学院。其余学校为待收录；任何学校均未声明完整覆盖。",
+  "scope_note": "当前9所高校分批收录，90个组织节点包含父子层级，不是90个互斥学院。其余学校为待收录；任何学校均未声明完整覆盖。本轮新校各仅明确名录分类的首3条选中观察与部分职业资料。",
   "campuses": [
     {
       "id": "harbin",
@@ -2607,6 +2607,51 @@
       "parent_id": "sjtu-ic",
       "school_id": "sjtu",
       "source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
+      "campus_ids": []
+    },
+    {
+      "id": "fdu-icmne",
+      "name": "集成电路与微纳电子创新学院",
+      "type": "school",
+      "parent_id": "fdu",
+      "school_id": "fdu",
+      "source_url": "https://icmne.fudan.edu.cn/xyjj/list.htm",
+      "campus_ids": []
+    },
+    {
+      "id": "nju-cs",
+      "name": "计算机学院",
+      "official_name": "南京大学计算机学院",
+      "type": "college",
+      "parent_id": "nju",
+      "school_id": "nju",
+      "source_url": "https://cs.nju.edu.cn/1674/list.htm",
+      "aliases": [
+        "计算机科学与技术系"
+      ],
+      "scope_note": "官方概览明确2024年由计算机科学与技术系更名为计算机学院；当前来源未划分更细一级系，学院为本批叶节点。",
+      "campus_ids": []
+    },
+    {
+      "id": "ustc-ic",
+      "name": "集成电路学院（国家示范性微电子学院）",
+      "type": "school",
+      "parent_id": "ustc",
+      "school_id": "ustc",
+      "source_url": "https://welcome.ustc.edu.cn/web/news/182",
+      "aliases": [
+        "国家示范性微电子学院",
+        "微电子学院"
+      ],
+      "campus_ids": []
+    },
+    {
+      "id": "buaa-cs",
+      "name": "计算机学院",
+      "type": "school",
+      "parent_id": "buaa",
+      "school_id": "buaa",
+      "source_url": "https://scse.buaa.edu.cn/xyjj/xyjs.htm",
       "campus_ids": []
     }
   ],
@@ -114962,6 +115007,2947 @@
       "established_professional_count_eligible": true,
       "complete_profile_count_eligible": false,
       "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "fdu-bianlifeng",
+      "name": "边历峰",
+      "school_id": "fdu",
+      "department_id": "fdu-icmne",
+      "organization_id": "fdu-icmne",
+      "campus_ids": [],
+      "campus": null,
+      "department": "集成电路与微纳电子创新学院",
+      "roster_entry_id": "roster-fdu-icmne-bianlifeng",
+      "official_url": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+      "listed_role": "研究员",
+      "appointments": [
+        {
+          "institution": "复旦大学集成电路与微纳电子创新学院",
+          "title": "研究员",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+          "source_id": "bianlifeng-source-2",
+          "note": "现行官方名录列示；不代表独立人事在岗核验，起始年月未知。"
+        },
+        {
+          "institution": "Paul-Drude固体电子学研究所",
+          "title": "博士后",
+          "start": "2004",
+          "end": "2006",
+          "status": "historical",
+          "source_url": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+          "source_id": "bianlifeng-source-2",
+          "note": null
+        },
+        {
+          "institution": "中国科学院苏州纳米技术与纳米仿生研究所",
+          "title": "副研究员和研究员",
+          "start": "2006",
+          "end": "2021",
+          "status": "historical",
+          "source_url": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+          "source_id": "bianlifeng-source-2",
+          "note": "合并区间，两个职级转换时间未披露。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "中国科学院半导体研究所",
+          "start": null,
+          "end": "2004",
+          "field": "凝聚态物理",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+          "source_id": "bianlifeng-source-2",
+          "field_provenance": {
+            "degree": "bianlifeng-source-2",
+            "institution": "bianlifeng-source-2",
+            "start": null,
+            "end": "bianlifeng-source-2",
+            "field": "bianlifeng-source-2"
+          },
+          "note": "本人官方介绍明确获得理学博士；不将研究所擅改为另一授位大学。",
+          "event_id": "fdu-bianlifeng-education-1",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "fdu-bianlifeng-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": null,
+          "institution": "Paul-Drude固体电子学研究所",
+          "start": "2004",
+          "end": "2006",
+          "field": null,
+          "country": "德国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "postdoctoral_research",
+          "degree_awarded": false,
+          "source_url": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+          "source_id": "bianlifeng-source-2",
+          "field_provenance": {
+            "degree": null,
+            "institution": "bianlifeng-source-2",
+            "start": "bianlifeng-source-2",
+            "end": "bianlifeng-source-2",
+            "field": null
+          },
+          "note": null,
+          "event_id": "fdu-bianlifeng-education-2",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed"
+          },
+          "education_event_id": "fdu-bianlifeng-education-2",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "德国",
+          "continent_code": "europe"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Bidirectional negative differential resistance in AlN/GaN resonant tunneling diodes grown on freestanding GaN",
+          "year": 2021,
+          "venue": "Applied Physics Letters119:062108",
+          "doi": "10.1063/5.0061872",
+          "url": "https://doi.org/10.1063/5.0061872",
+          "type": "journal_article",
+          "source_url": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+          "source_id": "bianlifeng-source-2",
+          "identity_evidence": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+          "link_status": "doi_explicitly_listed_on_official_profile",
+          "note": "本人官网显式DOI，未逐篇打开出版页面。",
+          "type_label": "期刊论文",
+          "link_status_label": "DOI由官方个人页明确列示，未据此声称出版社落地页或全文已读。"
+        },
+        {
+          "title": "Direct observation of contact potential distributions of wafer-bonded p-GaAs/n-GaN and p-GaAs/n-Si by scanning Kelvin probe force microscopy",
+          "year": 2020,
+          "venue": "Japanese Journal of Applied Physics59(11):115502",
+          "doi": null,
+          "url": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+          "type": "journal_article",
+          "source_url": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+          "source_id": "bianlifeng-source-2",
+          "identity_evidence": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+          "link_status": "official_publication_list_only",
+          "note": "本人官网精选书目；链接仅来源页。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "bianlifeng-source-1",
+          "url": "https://icmne.fudan.edu.cn/apy/list.htm",
+          "evidence_status": "official_roster_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "bianlifeng-source-2",
+          "url": "https://icmne.fudan.edu.cn/17/4b/c48925a726859/page.htm",
+          "evidence_status": "official_publisher_or_institution_metadata",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "bianlifeng-source-3",
+          "url": "https://icmne.fudan.edu.cn/xyjj/list.htm",
+          "evidence_status": "official_organization_page_read",
+          "retrieved_at": "2026-10-23"
+        }
+      ],
+      "unknowns": [
+        "首批范围内公开职业事实；本科/硕士/导师无直接材料留空，不代表不存在。名录当前列示不等独立人事在岗核验。",
+        "主名录列表摘要发生模板重复，未采用列表中NJU/UCR教育；使用本人详情明确2004中科院博士。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://icmne.fudan.edu.cn/apy/list.htm"
+      },
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-fdu-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "fdu-zengxuan",
+      "name": "曾璇",
+      "school_id": "fdu",
+      "department_id": "fdu-icmne",
+      "organization_id": "fdu-icmne",
+      "campus_ids": [],
+      "campus": null,
+      "department": "集成电路与微纳电子创新学院",
+      "roster_entry_id": "roster-fdu-icmne-zengxuan",
+      "official_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+      "listed_role": "教授",
+      "appointments": [
+        {
+          "institution": "复旦大学集成电路与微纳电子创新学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "note": "现行官方名录列示；不代表独立人事在岗核验，起始年月未知。"
+        },
+        {
+          "institution": "美国北卡大学（具体校区未核）",
+          "title": "访问科学家",
+          "start": "1998-07",
+          "end": "1999-01",
+          "status": "historical",
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "note": null
+        },
+        {
+          "institution": "德克萨斯大学达拉斯分校",
+          "title": "访问学者",
+          "start": "2000-07",
+          "end": "2000-10",
+          "status": "historical",
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "note": null
+        },
+        {
+          "institution": "Texas A&M University",
+          "title": "客座教授",
+          "start": "2002-09",
+          "end": "2002-11",
+          "status": "historical",
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "note": null
+        },
+        {
+          "institution": "Delft University of Technology",
+          "title": "客座教授",
+          "start": "2003-09",
+          "end": "2003-11",
+          "status": "historical",
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "note": null
+        },
+        {
+          "institution": "复旦大学电子工程系",
+          "title": "讲师",
+          "start": "1997-07",
+          "end": "1999-05",
+          "status": "historical",
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "note": null
+        },
+        {
+          "institution": "复旦大学电子工程系",
+          "title": "副教授",
+          "start": "1999-06",
+          "end": "2001-11",
+          "status": "historical",
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "note": null
+        },
+        {
+          "institution": "复旦大学微电子系",
+          "title": "教授",
+          "start": "2001-12",
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "note": null
+        },
+        {
+          "institution": "复旦大学专用集成电路与系统国家重点实验室",
+          "title": "主任",
+          "start": "2008-01",
+          "end": "2012-12",
+          "status": "historical",
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "note": null
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "复旦大学",
+          "start": null,
+          "end": "1997",
+          "field": "半导体物理与半导体器件物理学",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm",
+          "source_id": "zengxuan-source-4",
+          "field_provenance": {
+            "degree": "zengxuan-source-4",
+            "institution": "zengxuan-source-4",
+            "start": null,
+            "end": "zengxuan-source-4",
+            "field": "zengxuan-source-4"
+          },
+          "note": "官方实验室2014历史介绍明确1997获博士，当前学院页同专业。历史行政职务不当现职。",
+          "event_id": "fdu-zengxuan-education-1",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "fdu-zengxuan-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": null,
+          "institution": "美国北卡大学（具体校区未核）",
+          "start": "1998-07",
+          "end": "1999-01",
+          "field": null,
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "visiting_research",
+          "degree_awarded": false,
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "field_provenance": {
+            "degree": null,
+            "institution": "zengxuan-source-2",
+            "start": "zengxuan-source-2",
+            "end": "zengxuan-source-2",
+            "field": null
+          },
+          "note": null,
+          "event_id": "fdu-zengxuan-education-2",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed"
+          },
+          "education_event_id": "fdu-zengxuan-education-2",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america"
+        },
+        {
+          "degree": null,
+          "institution": "德克萨斯大学达拉斯分校",
+          "start": "2000-07",
+          "end": "2000-10",
+          "field": null,
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "visiting_research",
+          "degree_awarded": false,
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "field_provenance": {
+            "degree": null,
+            "institution": "zengxuan-source-2",
+            "start": "zengxuan-source-2",
+            "end": "zengxuan-source-2",
+            "field": null
+          },
+          "note": null,
+          "event_id": "fdu-zengxuan-education-3",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed"
+          },
+          "education_event_id": "fdu-zengxuan-education-3",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america"
+        },
+        {
+          "degree": null,
+          "institution": "Texas A&M University",
+          "start": "2002-09",
+          "end": "2002-11",
+          "field": null,
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "visiting_research",
+          "degree_awarded": false,
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "field_provenance": {
+            "degree": null,
+            "institution": "zengxuan-source-2",
+            "start": "zengxuan-source-2",
+            "end": "zengxuan-source-2",
+            "field": null
+          },
+          "note": null,
+          "event_id": "fdu-zengxuan-education-4",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed"
+          },
+          "education_event_id": "fdu-zengxuan-education-4",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america"
+        },
+        {
+          "degree": null,
+          "institution": "Delft University of Technology",
+          "start": "2003-09",
+          "end": "2003-11",
+          "field": null,
+          "country": "荷兰",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "visiting_research",
+          "degree_awarded": false,
+          "source_url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "source_id": "zengxuan-source-2",
+          "field_provenance": {
+            "degree": null,
+            "institution": "zengxuan-source-2",
+            "start": "zengxuan-source-2",
+            "end": "zengxuan-source-2",
+            "field": null
+          },
+          "note": null,
+          "event_id": "fdu-zengxuan-education-5",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed"
+          },
+          "education_event_id": "fdu-zengxuan-education-5",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "荷兰",
+          "continent_code": "europe"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "An Integrated Algorithm for 3D-IC TSV Assignment",
+          "year": 2013,
+          "venue": "IEEE Transactions on Very Large Scale Integration Systems",
+          "doi": null,
+          "url": "https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm",
+          "type": "journal_article",
+          "source_url": "https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm",
+          "source_id": "zengxuan-source-4",
+          "identity_evidence": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "link_status": "official_publication_list_only",
+          "note": "2014官方实验室历史精选书目，非最新全集。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "zengxuan-source-1",
+          "url": "https://icmne.fudan.edu.cn/apy/list.htm",
+          "evidence_status": "official_roster_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "zengxuan-source-2",
+          "url": "https://icmne.fudan.edu.cn/2d/59/c48925a732505/page.htm",
+          "evidence_status": "official_publisher_or_institution_metadata",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "zengxuan-source-3",
+          "url": "https://icmne.fudan.edu.cn/xyjj/list.htm",
+          "evidence_status": "official_organization_page_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "zengxuan-source-4",
+          "url": "https://asic-skl.fudan.edu.cn/d2/0c/c29516a315916/page.htm",
+          "evidence_status": "official_publisher_or_institution_metadata",
+          "retrieved_at": "2026-10-23"
+        }
+      ],
+      "unknowns": [
+        "首批范围内公开职业事实；本科/硕士/导师无直接材料留空，不代表不存在。名录当前列示不等独立人事在岗核验。",
+        "2014旧页1997–1991任职倒置，当前学院分段明确故采用现行页；北卡大学具体分校未知，不能默认NCSU/UNC。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://icmne.fudan.edu.cn/apy/list.htm"
+      },
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-fdu-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "fdu-zengxiaoyang",
+      "name": "曾晓洋",
+      "school_id": "fdu",
+      "department_id": "fdu-icmne",
+      "organization_id": "fdu-icmne",
+      "campus_ids": [],
+      "campus": null,
+      "department": "集成电路与微纳电子创新学院",
+      "roster_entry_id": "roster-fdu-icmne-zengxiaoyang",
+      "official_url": "https://icmne.fudan.edu.cn/2d/58/c48925a732504/page.htm",
+      "listed_role": "教授",
+      "appointments": [
+        {
+          "institution": "复旦大学集成电路与微纳电子创新学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://icmne.fudan.edu.cn/2d/58/c48925a732504/page.htm",
+          "source_id": "zengxiaoyang-source-2",
+          "note": "现行官方名录列示；不代表独立人事在岗核验，起始年月未知。"
+        },
+        {
+          "institution": "复旦大学",
+          "title": "博士后研究人员",
+          "start": "2001-04",
+          "end": "2003-03",
+          "status": "historical",
+          "source_url": "https://icmne.fudan.edu.cn/2d/58/c48925a732504/page.htm",
+          "source_id": "zengxiaoyang-source-2",
+          "note": null
+        },
+        {
+          "institution": "复旦大学",
+          "title": "讲师",
+          "start": null,
+          "end": null,
+          "status": "historical_conflicting_dates",
+          "source_url": "https://icmne.fudan.edu.cn/2d/58/c48925a732504/page.htm",
+          "source_id": "zengxiaoyang-source-2",
+          "note": "官网区间2003.04–2003.01倒置，不自动修成12月，两端保留为冲突原文。",
+          "current": false,
+          "source_reported_period": "2003-04–2003-01"
+        },
+        {
+          "institution": "复旦大学信息学院",
+          "title": "副教授",
+          "start": "2003-12",
+          "end": "2007-03",
+          "status": "historical",
+          "source_url": "https://icmne.fudan.edu.cn/2d/58/c48925a732504/page.htm",
+          "source_id": "zengxiaoyang-source-2",
+          "note": null
+        },
+        {
+          "institution": "复旦大学微电子学院",
+          "title": "教授",
+          "start": "2007-04",
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://icmne.fudan.edu.cn/2d/58/c48925a732504/page.htm",
+          "source_id": "zengxiaoyang-source-2",
+          "note": null
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "中国科学院长春光机所",
+          "start": null,
+          "end": null,
+          "field": "光学工程",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": null,
+          "source_url": "https://icmne.fudan.edu.cn/2d/58/c48925a732504/page.htm",
+          "source_id": "zengxiaoyang-source-2",
+          "field_provenance": {
+            "degree": "zengxiaoyang-source-2",
+            "institution": "zengxiaoyang-source-2",
+            "start": null,
+            "end": null,
+            "field": "zengxiaoyang-source-2"
+          },
+          "note": "官方博士标签，未见获授年份及本科硕士。研究所历史全称暂按原文。",
+          "event_id": "fdu-zengxiaoyang-education-1",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "source_reported"
+          },
+          "education_event_id": "fdu-zengxiaoyang-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": null,
+          "institution": "复旦大学",
+          "start": "2001-04",
+          "end": "2003-03",
+          "field": null,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "postdoctoral_research",
+          "degree_awarded": false,
+          "source_url": "https://icmne.fudan.edu.cn/2d/58/c48925a732504/page.htm",
+          "source_id": "zengxiaoyang-source-2",
+          "field_provenance": {
+            "degree": null,
+            "institution": "zengxiaoyang-source-2",
+            "start": "zengxiaoyang-source-2",
+            "end": "zengxiaoyang-source-2",
+            "field": null
+          },
+          "note": null,
+          "event_id": "fdu-zengxiaoyang-education-2",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed"
+          },
+          "education_event_id": "fdu-zengxiaoyang-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "sources": [
+        {
+          "id": "zengxiaoyang-source-1",
+          "url": "https://icmne.fudan.edu.cn/apy/list.htm",
+          "evidence_status": "official_roster_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "zengxiaoyang-source-2",
+          "url": "https://icmne.fudan.edu.cn/2d/58/c48925a732504/page.htm",
+          "evidence_status": "official_publisher_or_institution_metadata",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "zengxiaoyang-source-3",
+          "url": "https://icmne.fudan.edu.cn/xyjj/list.htm",
+          "evidence_status": "official_organization_page_read",
+          "retrieved_at": "2026-10-23"
+        }
+      ],
+      "unknowns": [
+        "首批范围内公开职业事实；本科/硕士/导师无直接材料留空，不代表不存在。名录当前列示不等独立人事在岗核验。",
+        "官网未列具体论文题名，首批不从获奖名生成论文；导师未知。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://icmne.fudan.edu.cn/apy/list.htm"
+      },
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-fdu-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "nju-lvjian",
+      "name": "吕建",
+      "school_id": "nju",
+      "department_id": "nju-cs",
+      "organization_id": "nju-cs",
+      "campus_ids": [],
+      "campus": null,
+      "department": "计算机学院",
+      "roster_entry_id": "roster-nju-cs-lvjian",
+      "official_url": "https://cs.nju.edu.cn/58/2a/c2639a153642/page.htm",
+      "listed_role": "教授、博士生导师",
+      "appointments": [
+        {
+          "institution": "南京大学计算机学院",
+          "title": "教授、博士生导师",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://cs.nju.edu.cn/2639/list.htm",
+          "source_id": "lvjian-source-1",
+          "note": "当前官方教授分类名录列示，姓名条目标注博导；不等于独立核实全职、在岗或退休状态。",
+          "field_provenance": {
+            "institution": "lvjian-source-1",
+            "title": "lvjian-source-1",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "institution": "University of Manchester",
+          "title": "访问学者",
+          "start": "1993",
+          "end": "1994",
+          "status": "historical",
+          "source_url": "https://cs.nju.edu.cn/58/2a/c2639a153642/page.htm",
+          "source_id": "lvjian-source-2",
+          "note": "非授位访问经历。",
+          "field_provenance": {
+            "institution": "lvjian-source-2",
+            "title": "lvjian-source-2",
+            "start": "lvjian-source-2",
+            "end": "lvjian-source-2"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          }
+        }
+      ],
+      "education": [
+        {
+          "degree": null,
+          "institution": "南京大学",
+          "start": null,
+          "end": "1982",
+          "field": null,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "source_url": "https://cs.nju.edu.cn/58/2a/c2639a153642/page.htm",
+          "source_id": "lvjian-source-2",
+          "field_provenance": {
+            "degree": null,
+            "institution": "lvjian-source-2",
+            "start": null,
+            "end": "lvjian-source-2",
+            "field": null,
+            "degree_awarded": null
+          },
+          "note": "官网仅称1982年毕业于南京大学计算机系，未明示学位级别或授位，不推为已获学士。",
+          "original_department": "计算机系",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_id": "nju-lvjian-education-1",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "not_explicitly_awarded"
+          },
+          "education_event_id": "nju-lvjian-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）"
+        },
+        {
+          "degree": "硕士",
+          "institution": "南京大学",
+          "start": null,
+          "end": "1984",
+          "field": null,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://www.nju.edu.cn/info/3191/193131.htm",
+          "source_id": "lvjian-source-4",
+          "field_provenance": {
+            "degree": "lvjian-source-4",
+            "institution": "lvjian-source-4",
+            "start": null,
+            "end": "lvjian-source-4",
+            "field": null,
+            "degree_awarded": "lvjian-source-4"
+          },
+          "note": "南京大学官网转载光明日报人物报道明确获该校硕士学位；未披露起始年和专业。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_id": "nju-lvjian-education-2",
+          "degree_awarded_date": "1984",
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "explicit_award_statement"
+          },
+          "education_event_id": "nju-lvjian-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": "博士",
+          "institution": "南京大学",
+          "start": null,
+          "end": "1988",
+          "field": null,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://www.nju.edu.cn/info/3191/193131.htm",
+          "source_id": "lvjian-source-4",
+          "field_provenance": {
+            "degree": "lvjian-source-4",
+            "institution": "lvjian-source-4",
+            "start": null,
+            "end": "lvjian-source-4",
+            "field": null,
+            "degree_awarded": "lvjian-source-4"
+          },
+          "note": "南京大学官网人物报道明确获该校博士学位；学院个人页亦载1988年获博士学位。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_id": "nju-lvjian-education-3",
+          "degree_awarded_date": "1988",
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "explicit_award_statement"
+          },
+          "education_event_id": "nju-lvjian-education-3",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": null,
+          "institution": "University of Manchester",
+          "start": "1993",
+          "end": "1994",
+          "field": null,
+          "country": "英国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "visiting_scholar",
+          "degree_awarded": false,
+          "source_url": "https://cs.nju.edu.cn/58/2a/c2639a153642/page.htm",
+          "source_id": "lvjian-source-2",
+          "field_provenance": {
+            "degree": null,
+            "institution": "lvjian-source-2",
+            "start": "lvjian-source-2",
+            "end": "lvjian-source-2",
+            "field": null,
+            "degree_awarded": "lvjian-source-2"
+          },
+          "note": "个人页明确访问学者；不是授位教育。",
+          "original_department": "计算机系",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_id": "nju-lvjian-education-4",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "non_degree_event"
+          },
+          "education_event_id": "nju-lvjian-education-4",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "英国",
+          "continent_code": "europe"
+        }
+      ],
+      "mentors": [
+        {
+          "name": "徐家福",
+          "type": "博士导师",
+          "education_stage": "博士",
+          "description": "南京大学教授、计算机软件学者。官方校友人物报道在博士训练语境明确其为吕建导师；学校讣告证实2018年逝世。",
+          "employment_status": "deceased",
+          "employment_status_note": "南京大学2018-01-17讣告明确其于2018年逝世。",
+          "official_url": "https://www.nju.edu.cn/info/3181/60231.htm",
+          "source_url": "https://alumni.nju.edu.cn/fd/cb/c3067a64971/pagem.htm",
+          "source_id": "lvjian-source-5",
+          "profile_source_url": "https://www.nju.edu.cn/info/3181/60231.htm",
+          "profile_source_id": "lvjian-source-6",
+          "person_id": null,
+          "education_event_id": "nju-lvjian-education-3",
+          "education_event_index": 2,
+          "relationship_evidence": "在导师徐家福教授的指导下",
+          "relationship_stage_basis": "同一人物报道此前直接叙述徐教授所带博士及吕建获得博士学位的训练经过。",
+          "start": null,
+          "end": null,
+          "include_in_mentorship_graph": true,
+          "relationship_status": "verified_direct_statement",
+          "date_basis": "supervision_dates_not_independently_verified",
+          "relationship_kind": "doctoral_advisor",
+          "type_label": "博士导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "deceased",
+          "navigation_verified": false,
+          "quick_link_eligible": false,
+          "source_official_url": "https://www.nju.edu.cn/info/3181/60231.htm",
+          "profile_navigation_unavailable_reason": "导师已逝，仅保留简要介绍及讣告等证据，不提供在职快捷主页。"
+        }
+      ],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "软件自动化",
+          "year": null,
+          "venue": null,
+          "doi": null,
+          "url": "https://cs.nju.edu.cn/58/2a/c2639a153642/page.htm",
+          "type": "book",
+          "source_url": "https://cs.nju.edu.cn/58/2a/c2639a153642/page.htm",
+          "source_id": "lvjian-source-2",
+          "identity_evidence": "https://cs.nju.edu.cn/58/2a/c2639a153642/page.htm",
+          "link_status": "official_profile_mentions_book_only",
+          "note": "本人官方简介明确合著专著；本批未核出版年、出版机构、ISBN或独立书目页。",
+          "individual_article_link_verified": false,
+          "type_label": "学术著作（非期刊或会议论文）",
+          "link_status_label": "官方个人页仅提及著作，未核出版商落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "lvjian-source-1",
+          "url": "https://cs.nju.edu.cn/2639/list.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "3118f08d365f29f61cd2cf68b210689d72bdcb1e6c8bc689009aa9ab74cfc9b0"
+        },
+        {
+          "id": "lvjian-source-2",
+          "url": "https://cs.nju.edu.cn/58/2a/c2639a153642/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "07cb27c40bc608f6aac27c5161ec9ffc6aecfd19fc506ffc400d8c33ac99c7aa"
+        },
+        {
+          "id": "lvjian-source-3",
+          "url": "https://cs.nju.edu.cn/1674/list.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "5e674a2e8a7f42386cf49ecdfe9a8f8adab730dfe09bebac710c36082d0df88b"
+        },
+        {
+          "id": "lvjian-source-4",
+          "url": "https://www.nju.edu.cn/info/3191/193131.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "e54ea354dc6a3d396207f1b753e37b2541e279e6111a89c943443d47e99374d8"
+        },
+        {
+          "id": "lvjian-source-5",
+          "url": "https://alumni.nju.edu.cn/fd/cb/c3067a64971/pagem.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "4036beab8dcdbbb6be253b274268e9b796ddf941f9418d0c10b8f88e9f9d0ce8"
+        },
+        {
+          "id": "lvjian-source-6",
+          "url": "https://www.nju.edu.cn/info/3181/60231.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "8be552184586230515b00f565c99a57a209ee3cf5cbc1593b2114f0af64d9971"
+        }
+      ],
+      "unknowns": [
+        "1982年毕业的具体学位级别及是否授位、各学历阶段入学时间和专业未由本批来源明确。",
+        "2016年个人页正文行政职务明显属于历史介绍，本批不把其副系主任等称谓当作当前职务。",
+        "1995年澳门研究经历仅有年份，未细采；访问期间琼斯教授的指导类型及正式关系未核，不纳入导师图。",
+        "仅确认徐家福的直接博士指导关系，不从同领域、同机构、论文共著或学生列表推断其他关系。",
+        "精选书目非全集；原始网页缓存、联系方式、出生日期、学生列表不公开。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cs.nju.edu.cn/2639/list.htm"
+      },
+      "roster_position": 1,
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-nju-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "nju-tantieniu",
+      "name": "谭铁牛",
+      "school_id": "nju",
+      "department_id": "nju-cs",
+      "organization_id": "nju-cs",
+      "campus_ids": [],
+      "campus": null,
+      "department": "计算机学院",
+      "roster_entry_id": "roster-nju-cs-tantieniu",
+      "official_url": "https://cs.nju.edu.cn/99/28/c2639a629032/page.htm",
+      "listed_role": "教授、博士生导师",
+      "appointments": [
+        {
+          "institution": "南京大学计算机学院",
+          "title": "教授、博士生导师",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://cs.nju.edu.cn/2639/list.htm",
+          "source_id": "tantieniu-source-1",
+          "note": "当前官方教授分类名录列示，姓名条目标注博导；不等于独立核实全职、在岗或退休状态。",
+          "field_provenance": {
+            "institution": "tantieniu-source-1",
+            "title": "tantieniu-source-1",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "institution": "University of Reading",
+          "title": "工作（具体职称未在所引页披露）",
+          "start": "1989",
+          "end": "1997",
+          "status": "historical",
+          "source_url": "https://cs.nju.edu.cn/99/28/c2639a629032/page.htm",
+          "source_id": "tantieniu-source-2",
+          "note": "官方个人页明确1989–1997年在英国雷丁大学工作；不推为博士后。",
+          "field_provenance": {
+            "institution": "tantieniu-source-2",
+            "title": "tantieniu-source-2",
+            "start": "tantieniu-source-2",
+            "end": "tantieniu-source-2"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          }
+        }
+      ],
+      "education": [
+        {
+          "degree": "学士",
+          "institution": "西安交通大学",
+          "start": null,
+          "end": "1984",
+          "field": null,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://cs.nju.edu.cn/99/28/c2639a629032/page.htm",
+          "source_id": "tantieniu-source-2",
+          "field_provenance": {
+            "degree": "tantieniu-source-2",
+            "institution": "tantieniu-source-2",
+            "start": null,
+            "end": "tantieniu-source-2",
+            "field": null,
+            "degree_awarded": "tantieniu-source-2"
+          },
+          "note": "官方个人页明确获学士学位；起始日期和专业未披露。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_id": "nju-tantieniu-education-1",
+          "degree_awarded_date": "1984",
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "explicit_award_statement"
+          },
+          "education_event_id": "nju-tantieniu-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": "硕士",
+          "institution": "Imperial College London",
+          "start": null,
+          "end": "1986",
+          "field": null,
+          "country": "英国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://cs.nju.edu.cn/99/28/c2639a629032/page.htm",
+          "source_id": "tantieniu-source-2",
+          "field_provenance": {
+            "degree": "tantieniu-source-2",
+            "institution": "tantieniu-source-2",
+            "start": null,
+            "end": "tantieniu-source-2",
+            "field": null,
+            "degree_awarded": "tantieniu-source-2"
+          },
+          "note": "官方个人页明确分别获英国帝国理工学院硕士、博士学位；不由相邻授位年推入学日期。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_id": "nju-tantieniu-education-2",
+          "degree_awarded_date": "1986",
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "explicit_award_statement"
+          },
+          "education_event_id": "nju-tantieniu-education-2",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "英国",
+          "continent_code": "europe"
+        },
+        {
+          "degree": "博士",
+          "institution": "Imperial College London",
+          "start": null,
+          "end": "1989",
+          "field": null,
+          "country": "英国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://cs.nju.edu.cn/99/28/c2639a629032/page.htm",
+          "source_id": "tantieniu-source-2",
+          "field_provenance": {
+            "degree": "tantieniu-source-2",
+            "institution": "tantieniu-source-2",
+            "start": null,
+            "end": "tantieniu-source-2",
+            "field": null,
+            "degree_awarded": "tantieniu-source-2"
+          },
+          "note": "官方个人页明确分别获英国帝国理工学院硕士、博士学位；不由相邻授位年推入学日期。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_id": "nju-tantieniu-education-3",
+          "degree_awarded_date": "1989",
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "explicit_award_statement"
+          },
+          "education_event_id": "nju-tantieniu-education-3",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "英国",
+          "continent_code": "europe"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "sources": [
+        {
+          "id": "tantieniu-source-1",
+          "url": "https://cs.nju.edu.cn/2639/list.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "3118f08d365f29f61cd2cf68b210689d72bdcb1e6c8bc689009aa9ab74cfc9b0"
+        },
+        {
+          "id": "tantieniu-source-2",
+          "url": "https://cs.nju.edu.cn/99/28/c2639a629032/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "3ab1cd48c5ddb6314901fb2866484e016075b285b5f2d36099eeb159da85a84f"
+        },
+        {
+          "id": "tantieniu-source-3",
+          "url": "https://cs.nju.edu.cn/1674/list.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "5e674a2e8a7f42386cf49ecdfe9a8f8adab730dfe09bebac710c36082d0df88b"
+        }
+      ],
+      "unknowns": [
+        "三段学历的起始日期及具体专业未披露；没有使用工学博士的总述给各学位擅加专业。",
+        "本人导师、独立精选论文或书目未在已读南京大学个人页给出，本批暂留空。",
+        "中科院自动化所个人页web读取超时，普通公开抓取返回503；本批不以搜索摘要代替全文建立额外职业或书目事实。",
+        "精选书目非全集；原始网页缓存、联系方式、出生日期、学生列表不公开。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cs.nju.edu.cn/2639/list.htm"
+      },
+      "roster_position": 2,
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-nju-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "nju-zhouzhihua",
+      "name": "周志华",
+      "school_id": "nju",
+      "department_id": "nju-cs",
+      "organization_id": "nju-cs",
+      "campus_ids": [],
+      "campus": null,
+      "department": "计算机学院",
+      "roster_entry_id": "roster-nju-cs-zhouzhihua",
+      "official_url": "https://www.nju.edu.cn/info/1040/372961.htm",
+      "listed_role": "教授、博士生导师",
+      "appointments": [
+        {
+          "institution": "南京大学计算机学院",
+          "title": "教授、博士生导师",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://cs.nju.edu.cn/2639/list.htm",
+          "source_id": "zhouzhihua-source-1",
+          "note": "当前官方教授分类名录列示，姓名条目标注博导；不等于独立核实全职、在岗或退休状态。",
+          "field_provenance": {
+            "institution": "zhouzhihua-source-1",
+            "title": "zhouzhihua-source-1",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "institution": "南京大学",
+          "title": "副校长",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://www.nju.edu.cn/info/1040/372961.htm",
+          "source_id": "zhouzhihua-source-2",
+          "note": "校方现任领导页及本人官网一致列示；起任时间本批未核。",
+          "field_provenance": {
+            "institution": "zhouzhihua-source-2",
+            "title": "zhouzhihua-source-2",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "institution": "南京大学计算机科学与技术系",
+          "title": "Assistant Professor（原文）",
+          "start": "2001",
+          "end": null,
+          "status": "historical_start_only_not_current_confirmation",
+          "source_url": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/resume_en.htm",
+          "source_id": "zhouzhihua-source-4",
+          "note": "英文简历明确2001年入职时职称；不把未给终止时间解释为仍任Assistant Professor。",
+          "field_provenance": {
+            "institution": "zhouzhihua-source-4",
+            "title": "zhouzhihua-source-4",
+            "start": "zhouzhihua-source-4",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          }
+        }
+      ],
+      "education": [
+        {
+          "degree": "学士",
+          "institution": "南京大学",
+          "start": null,
+          "end": "1996",
+          "field": "计算机科学",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/resume_en.htm",
+          "source_id": "zhouzhihua-source-4",
+          "field_provenance": {
+            "degree": "zhouzhihua-source-4",
+            "institution": "zhouzhihua-source-4",
+            "start": null,
+            "end": "zhouzhihua-source-4",
+            "field": "zhouzhihua-source-4",
+            "degree_awarded": "zhouzhihua-source-4"
+          },
+          "note": "本人官网英文简历明确received B.Sc., M.Sc. and Ph.D. degrees in computer science；不补推入学年。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_id": "nju-zhouzhihua-education-1",
+          "degree_awarded_date": "1996",
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement"
+          },
+          "education_event_id": "nju-zhouzhihua-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": "硕士",
+          "institution": "南京大学",
+          "start": null,
+          "end": "1998",
+          "field": "计算机科学",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/resume_en.htm",
+          "source_id": "zhouzhihua-source-4",
+          "field_provenance": {
+            "degree": "zhouzhihua-source-4",
+            "institution": "zhouzhihua-source-4",
+            "start": null,
+            "end": "zhouzhihua-source-4",
+            "field": "zhouzhihua-source-4",
+            "degree_awarded": "zhouzhihua-source-4"
+          },
+          "note": "本人官网英文简历明确received B.Sc., M.Sc. and Ph.D. degrees in computer science；不补推入学年。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_id": "nju-zhouzhihua-education-2",
+          "degree_awarded_date": "1998",
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement"
+          },
+          "education_event_id": "nju-zhouzhihua-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": "博士",
+          "institution": "南京大学",
+          "start": null,
+          "end": "2000",
+          "field": "计算机科学",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/resume_en.htm",
+          "source_id": "zhouzhihua-source-4",
+          "field_provenance": {
+            "degree": "zhouzhihua-source-4",
+            "institution": "zhouzhihua-source-4",
+            "start": null,
+            "end": "zhouzhihua-source-4",
+            "field": "zhouzhihua-source-4",
+            "degree_awarded": "zhouzhihua-source-4"
+          },
+          "note": "本人官网英文简历明确received B.Sc., M.Sc. and Ph.D. degrees in computer science；不补推入学年。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "event_id": "nju-zhouzhihua-education-3",
+          "degree_awarded_date": "2000",
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement"
+          },
+          "education_event_id": "nju-zhouzhihua-education-3",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "机器学习",
+          "year": 2016,
+          "venue": "清华大学出版社",
+          "doi": null,
+          "url": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm",
+          "type": "book",
+          "source_url": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm",
+          "source_id": "zhouzhihua-source-5",
+          "identity_evidence": "https://cs.nju.edu.cn/zhouzh/",
+          "link_status": "official_author_book_metadata_verified",
+          "note": "本人官方书籍专页；仅书目不收录书籍正文。",
+          "individual_article_link_verified": false,
+          "type_label": "学术著作（非期刊或会议论文）",
+          "link_status_label": "作者官方职业页面的著作书目元数据已核，不表示出版商页面或全文已读。"
+        },
+        {
+          "title": "机器学习理论导引",
+          "year": 2020,
+          "venue": "机械工业出版社",
+          "doi": null,
+          "url": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLthybook2020.htm",
+          "type": "book",
+          "source_url": "https://cs.nju.edu.cn/zhouzh/",
+          "source_id": "zhouzhihua-source-6",
+          "identity_evidence": "https://cs.nju.edu.cn/zhouzh/",
+          "link_status": "official_author_book_metadata_verified",
+          "note": "题名采用本人主页书目及专页标题；专页正文首行引文称机器学习理论研究导引，保留原站内题名差异，不另造第二本书。",
+          "alternate_title_on_book_page": "机器学习理论研究导引",
+          "individual_article_link_verified": false,
+          "type_label": "学术著作（非期刊或会议论文）",
+          "link_status_label": "作者官方职业页面的著作书目元数据已核，不表示出版商页面或全文已读。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "zhouzhihua-source-1",
+          "url": "https://cs.nju.edu.cn/2639/list.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "3118f08d365f29f61cd2cf68b210689d72bdcb1e6c8bc689009aa9ab74cfc9b0"
+        },
+        {
+          "id": "zhouzhihua-source-2",
+          "url": "https://www.nju.edu.cn/info/1040/372961.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "687b8f93e4028def5dd3c423dbd3044c895f9c16a11a3656eb36ee4e92da99b4"
+        },
+        {
+          "id": "zhouzhihua-source-3",
+          "url": "https://cs.nju.edu.cn/1674/list.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "5e674a2e8a7f42386cf49ecdfe9a8f8adab730dfe09bebac710c36082d0df88b"
+        },
+        {
+          "id": "zhouzhihua-source-4",
+          "url": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/resume_en.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "914b464a97ec18f2bed0db0ad661e03097f53cf25a11fad466b60efe413c1ccb"
+        },
+        {
+          "id": "zhouzhihua-source-5",
+          "url": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "abc863ea2d4bc4c72d8e06632d50a14a91f11dcbe1a63c6c0a7b890fef814432"
+        },
+        {
+          "id": "zhouzhihua-source-6",
+          "url": "https://cs.nju.edu.cn/zhouzh/",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "16c64d099d540617aaed1f626ae038f024557914236384926243c26b6931b70d"
+        },
+        {
+          "id": "zhouzhihua-source-7",
+          "url": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLthybook2020.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-23",
+          "body_sha256": "be2464565f36b879e31eacefbf923d9ecdae095165efa8bc835e60093e57500b"
+        }
+      ],
+      "unknowns": [
+        "本科、硕士、博士的入学日期均未披露；不从相邻学位年份补推。",
+        "本批所读官网英文简历未明确本人导师，导师留空；未采用搜索中非官方关系图或论文共同作者推断。",
+        "校园地址不用于推断个人单一任职校区，campus_ids保持空。",
+        "精选书目非全集；原始网页缓存、联系方式、出生日期、学生列表不公开。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cs.nju.edu.cn/2639/list.htm"
+      },
+      "roster_position": 3,
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-nju-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "ustc-longshibing",
+      "name": "龙世兵",
+      "school_id": "ustc",
+      "department_id": "ustc-ic",
+      "organization_id": "ustc-ic",
+      "campus_ids": [],
+      "campus": null,
+      "department": "集成电路学院（国家示范性微电子学院）",
+      "roster_entry_id": "roster-ustc-ic-longshibing",
+      "official_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+      "listed_role": "教授",
+      "appointments": [
+        {
+          "institution": "中国科学技术大学集成电路学院（国家示范性微电子学院）",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://sme.ustc.edu.cn/zdjswxnw_30996/list.htm",
+          "source_id": "longshibing-source-1",
+          "note": "现行官方名录列示；不代表独立人事在岗核验，起始年月未知。"
+        },
+        {
+          "institution": "中国科学院微电子研究所",
+          "title": "助理研究员、副研究员、研究员",
+          "start": "2005-07",
+          "end": "2018-03",
+          "status": "historical",
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "source_id": "longshibing-source-3",
+          "note": "原文多个职级合并区间，转换年份未知。"
+        },
+        {
+          "institution": "中国科学技术大学微电子学院",
+          "title": "教授",
+          "start": "2018-03",
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "source_id": "longshibing-source-3",
+          "note": null
+        },
+        {
+          "institution": "中国科学技术大学微电子学院",
+          "title": "常务副院长、执行院长（合并列示）",
+          "start": null,
+          "end": null,
+          "status": "source_listed_roles_individual_dates_unknown",
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "source_id": "longshibing-source-3",
+          "note": "2018.03至今的复合经历中列行政职务，不把2018视为两岗位起任，不独立确认现任具体岗位。",
+          "current": null
+        }
+      ],
+      "education": [
+        {
+          "degree": "学士",
+          "institution": "北京科技大学",
+          "start": null,
+          "end": null,
+          "field": "应用物理",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": null,
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "source_id": "longshibing-source-3",
+          "field_provenance": {
+            "degree": "longshibing-source-3",
+            "institution": "longshibing-source-3",
+            "start": null,
+            "end": null,
+            "field": "longshibing-source-3"
+          },
+          "note": "官网本科/硕士合并区间1995.09–2002.03，没有阶段分界，不猜1999。",
+          "source_reported_combined_period": "1995-09–2002-03",
+          "event_id": "ustc-longshibing-education-1",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "source_reported"
+          },
+          "education_event_id": "ustc-longshibing-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": "硕士",
+          "institution": "北京科技大学",
+          "start": null,
+          "end": null,
+          "field": "材料物理",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": null,
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "source_id": "longshibing-source-3",
+          "field_provenance": {
+            "degree": "longshibing-source-3",
+            "institution": "longshibing-source-3",
+            "start": null,
+            "end": null,
+            "field": "longshibing-source-3"
+          },
+          "note": "合并本科/硕士区间1995.09–2002.03，不把全部区间复制为两个独立学程。",
+          "source_reported_combined_period": "1995-09–2002-03",
+          "event_id": "ustc-longshibing-education-2",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "source_reported"
+          },
+          "education_event_id": "ustc-longshibing-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": "博士",
+          "institution": "中国科学院微电子研究所",
+          "start": "2002-04",
+          "end": "2005-06",
+          "field": "微电子学与固体电子学",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": null,
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "source_id": "longshibing-source-3",
+          "field_provenance": {
+            "degree": "longshibing-source-3",
+            "institution": "longshibing-source-3",
+            "start": "longshibing-source-3",
+            "end": "longshibing-source-3",
+            "field": "longshibing-source-3"
+          },
+          "note": null,
+          "event_id": "ustc-longshibing-education-3",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "ustc-longshibing-education-3",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Evolution of the conductive filament system in HfO2-based memristors observed by direct atomic-scale imaging",
+          "year": 2021,
+          "venue": "Nature Communications12:7232",
+          "doi": null,
+          "url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "type": "journal_article",
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "source_id": "longshibing-source-3",
+          "identity_evidence": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "link_status": "official_publication_list_only",
+          "note": "本人官方精选书目，未逐篇核出版页。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        },
+        {
+          "title": "High-performance harsh-environment-resistant GaOX solar-blind photodetectors via defect and doping engineering",
+          "year": 2021,
+          "venue": "Advanced Materials:2106923",
+          "doi": null,
+          "url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "type": "journal_article",
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "source_id": "longshibing-source-3",
+          "identity_evidence": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "link_status": "official_publication_list_only",
+          "note": "本人官方精选书目，未逐篇核出版页。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "longshibing-source-1",
+          "url": "https://sme.ustc.edu.cn/zdjswxnw_30996/list.htm",
+          "evidence_status": "official_roster_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "longshibing-source-2",
+          "url": "https://welcome.ustc.edu.cn/web/news/182",
+          "evidence_status": "official_university_organization_name_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "longshibing-source-3",
+          "url": "https://sme.ustc.edu.cn/2022/0601/c30996a556910/page.htm",
+          "evidence_status": "official_publisher_or_institution_metadata",
+          "retrieved_at": "2026-10-23"
+        }
+      ],
+      "unknowns": [
+        "学位标签不自动升级授位；未列经历保持未知；院系改名由2026官方介绍核，旧网页页脚仍沿旧名。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://sme.ustc.edu.cn/zdjswxnw_30996/list.htm"
+      },
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-ustc-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "ustc-chenglin",
+      "name": "程林",
+      "school_id": "ustc",
+      "department_id": "ustc-ic",
+      "organization_id": "ustc-ic",
+      "campus_ids": [],
+      "campus": null,
+      "department": "集成电路学院（国家示范性微电子学院）",
+      "roster_entry_id": "roster-ustc-ic-chenglin",
+      "official_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+      "listed_role": "教授",
+      "appointments": [
+        {
+          "institution": "中国科学技术大学集成电路学院（国家示范性微电子学院）",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://sme.ustc.edu.cn/zdjswxnw_30996/list.htm",
+          "source_id": "chenglin-source-1",
+          "note": "现行官方名录列示；不代表独立人事在岗核验，起始年月未知。"
+        },
+        {
+          "institution": "香港科技大学",
+          "title": "博士后",
+          "start": "2016",
+          "end": "2018",
+          "status": "historical",
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "source_id": "chenglin-source-3",
+          "note": null
+        },
+        {
+          "institution": "中国科学技术大学集成电路学院",
+          "title": "副院长",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "source_id": "chenglin-source-3",
+          "note": "当前个人简介明确，起任日期未知。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "学士",
+          "institution": "合肥工业大学",
+          "start": "2004",
+          "end": "2008",
+          "field": "电子科学与技术",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": null,
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "source_id": "chenglin-source-3",
+          "field_provenance": {
+            "degree": "chenglin-source-3",
+            "institution": "chenglin-source-3",
+            "start": "chenglin-source-3",
+            "end": "chenglin-source-3",
+            "field": "chenglin-source-3"
+          },
+          "note": null,
+          "event_id": "ustc-chenglin-education-1",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "ustc-chenglin-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": "硕士",
+          "institution": "复旦大学",
+          "start": "2008",
+          "end": "2011",
+          "field": "微电子与固体电子学",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": null,
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "source_id": "chenglin-source-3",
+          "field_provenance": {
+            "degree": "chenglin-source-3",
+            "institution": "chenglin-source-3",
+            "start": "chenglin-source-3",
+            "end": "chenglin-source-3",
+            "field": "chenglin-source-3"
+          },
+          "note": null,
+          "event_id": "ustc-chenglin-education-2",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "ustc-chenglin-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": "博士",
+          "institution": "香港科技大学",
+          "start": "2011",
+          "end": "2016",
+          "field": "电子及计算机工程",
+          "country": "中国",
+          "region": "hmt",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": null,
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "source_id": "chenglin-source-3",
+          "field_provenance": {
+            "degree": "chenglin-source-3",
+            "institution": "chenglin-source-3",
+            "start": "chenglin-source-3",
+            "end": "chenglin-source-3",
+            "field": "chenglin-source-3"
+          },
+          "note": null,
+          "event_id": "ustc-chenglin-education-3",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "ustc-chenglin-education-3",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国香港",
+          "continent_code": "asia"
+        },
+        {
+          "degree": null,
+          "institution": "香港科技大学",
+          "start": "2016",
+          "end": "2018",
+          "field": null,
+          "country": "中国",
+          "region": "hmt",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "postdoctoral_research",
+          "degree_awarded": false,
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "source_id": "chenglin-source-3",
+          "field_provenance": {
+            "degree": null,
+            "institution": "chenglin-source-3",
+            "start": "chenglin-source-3",
+            "end": "chenglin-source-3",
+            "field": null
+          },
+          "note": null,
+          "event_id": "ustc-chenglin-education-4",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed"
+          },
+          "education_event_id": "ustc-chenglin-education-4",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国香港",
+          "continent_code": "asia"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "A 100A 93.4%-Peak-Efficiency LLC Resonant Converter with an Embedded Primary-Current-Extracted Regulator",
+          "year": 2026,
+          "venue": "IEEE ISSCC",
+          "doi": null,
+          "url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "type": "conference_paper",
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "source_id": "chenglin-source-3",
+          "identity_evidence": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "link_status": "official_publication_list_only",
+          "note": "本人官方精选会议论文，未逐篇补出版链接。",
+          "type_label": "会议论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        },
+        {
+          "title": "A 1.2μs 1-to-12V Symbol Power Tracking Supply Modulator with Two-step Subranging DVS Scheme and Boosted IL Slew Rate for 5G Mobile Devices",
+          "year": 2026,
+          "venue": "IEEE ISSCC",
+          "doi": null,
+          "url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "type": "conference_paper",
+          "source_url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "source_id": "chenglin-source-3",
+          "identity_evidence": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "link_status": "official_publication_list_only",
+          "note": "本人官方精选会议论文，未逐篇补出版链接。",
+          "type_label": "会议论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "chenglin-source-1",
+          "url": "https://sme.ustc.edu.cn/zdjswxnw_30996/list.htm",
+          "evidence_status": "official_roster_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "chenglin-source-2",
+          "url": "https://welcome.ustc.edu.cn/web/news/182",
+          "evidence_status": "official_university_organization_name_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "chenglin-source-3",
+          "url": "https://sme.ustc.edu.cn/2022/0601/c30996a556909/page.htm",
+          "evidence_status": "official_publisher_or_institution_metadata",
+          "retrieved_at": "2026-10-23"
+        }
+      ],
+      "unknowns": [
+        "学位标签不自动升级授位；未列经历保持未知；院系改名由2026官方介绍核，旧网页页脚仍沿旧名。",
+        "未从与W.H.Ki等合著推导师。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://sme.ustc.edu.cn/zdjswxnw_30996/list.htm"
+      },
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-ustc-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "ustc-yangshu",
+      "name": "杨树",
+      "school_id": "ustc",
+      "department_id": "ustc-ic",
+      "organization_id": "ustc-ic",
+      "campus_ids": [],
+      "campus": null,
+      "department": "集成电路学院（国家示范性微电子学院）",
+      "roster_entry_id": "roster-ustc-ic-yangshu",
+      "official_url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+      "listed_role": "教授",
+      "appointments": [
+        {
+          "institution": "中国科学技术大学集成电路学院（国家示范性微电子学院）",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://sme.ustc.edu.cn/zdjswxnw_30996/list.htm",
+          "source_id": "yangshu-source-1",
+          "note": "现行官方名录列示；不代表独立人事在岗核验，起始年月未知。"
+        },
+        {
+          "institution": "香港科技大学",
+          "title": "客座助理教授",
+          "start": "2014",
+          "end": "2016",
+          "status": "historical",
+          "source_url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "source_id": "yangshu-source-3",
+          "note": null
+        },
+        {
+          "institution": "剑桥大学",
+          "title": "博士后",
+          "start": "2016",
+          "end": "2016",
+          "status": "historical",
+          "source_url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "source_id": "yangshu-source-3",
+          "note": null
+        },
+        {
+          "institution": "浙江大学",
+          "title": "百人计划研究员",
+          "start": "2016",
+          "end": "2022",
+          "status": "historical",
+          "source_url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "source_id": "yangshu-source-3",
+          "note": null
+        }
+      ],
+      "education": [
+        {
+          "degree": "学士",
+          "institution": "复旦大学",
+          "start": "2006",
+          "end": "2010",
+          "field": "微电子学",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": null,
+          "source_url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "source_id": "yangshu-source-3",
+          "field_provenance": {
+            "degree": "yangshu-source-3",
+            "institution": "yangshu-source-3",
+            "start": "yangshu-source-3",
+            "end": "yangshu-source-3",
+            "field": "yangshu-source-3"
+          },
+          "note": null,
+          "event_id": "ustc-yangshu-education-1",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "ustc-yangshu-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": "博士",
+          "institution": "香港科技大学",
+          "start": "2010",
+          "end": "2014",
+          "field": "电子及计算机工程",
+          "country": "中国",
+          "region": "hmt",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": null,
+          "source_url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "source_id": "yangshu-source-3",
+          "field_provenance": {
+            "degree": "yangshu-source-3",
+            "institution": "yangshu-source-3",
+            "start": "yangshu-source-3",
+            "end": "yangshu-source-3",
+            "field": "yangshu-source-3"
+          },
+          "note": null,
+          "event_id": "ustc-yangshu-education-2",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "ustc-yangshu-education-2",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国香港",
+          "continent_code": "asia"
+        },
+        {
+          "degree": null,
+          "institution": "剑桥大学",
+          "start": "2016",
+          "end": "2016",
+          "field": null,
+          "country": "英国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "postdoctoral_research",
+          "degree_awarded": false,
+          "source_url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "source_id": "yangshu-source-3",
+          "field_provenance": {
+            "degree": null,
+            "institution": "yangshu-source-3",
+            "start": "yangshu-source-3",
+            "end": "yangshu-source-3",
+            "field": null
+          },
+          "note": null,
+          "event_id": "ustc-yangshu-education-3",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed"
+          },
+          "education_event_id": "ustc-yangshu-education-3",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "英国",
+          "continent_code": "europe"
+        }
+      ],
+      "mentors": [
+        {
+          "name": "Kevin J. Chen",
+          "type": "博士导师",
+          "education_stage": "博士",
+          "description": "香港科技大学电子与计算机工程系讲座教授，研究宽禁带半导体器件。",
+          "employment_status": "active_officially_listed",
+          "employment_status_note": "本人官方现行页列Chair Professor，不等独立人事核验。",
+          "official_url": "https://eekjchen.people.ust.hk/people/",
+          "source_url": "https://eekjchen.people.ust.hk/people/",
+          "source_id": "yangshu-source-4",
+          "profile_source_url": "https://eekjchen.people.ust.hk/people/",
+          "person_id": null,
+          "profile_source_id": "yangshu-source-4",
+          "relationship_type": "doctoral_supervisor",
+          "education_event_id": "ustc-yangshu-education-2",
+          "institution": "香港科技大学",
+          "navigation_verified": true,
+          "evidence_note": "Student Supervision > Ph.D students graduated列Shu Yang2014，且从浙江大学至USTC任职消歧，非一般团队名单。",
+          "start": null,
+          "end": null,
+          "include_in_mentorship_graph": true,
+          "relationship_status": "verified_direct_statement",
+          "relationship_kind": "doctoral_advisor",
+          "type_label": "博士导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "active_officially_listed",
+          "quick_link_eligible": true
+        }
+      ],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Dynamic on-resistance in GaN power devices: Mechanisms, characterizations and modeling",
+          "year": 2019,
+          "venue": "IEEE Journal of Emerging and Selected Topics in Power Electronics7(3):1425–1439",
+          "doi": null,
+          "url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "type": "journal_article",
+          "source_url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "source_id": "yangshu-source-3",
+          "identity_evidence": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "link_status": "official_publication_list_only",
+          "note": "本人官方精选，未逐篇核出版链接。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        },
+        {
+          "title": "Conductivity modulation in vertical GaN PiN diode: Evidence and impact",
+          "year": 2021,
+          "venue": "IEEE Electron Device Letters42(3):300–303",
+          "doi": null,
+          "url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "type": "journal_article",
+          "source_url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "source_id": "yangshu-source-3",
+          "identity_evidence": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "link_status": "official_publication_list_only",
+          "note": "本人官方精选，未逐篇核出版链接。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "yangshu-source-1",
+          "url": "https://sme.ustc.edu.cn/zdjswxnw_30996/list.htm",
+          "evidence_status": "official_roster_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "yangshu-source-2",
+          "url": "https://welcome.ustc.edu.cn/web/news/182",
+          "evidence_status": "official_university_organization_name_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "yangshu-source-3",
+          "url": "https://sme.ustc.edu.cn/2023/0320/c30996a595778/page.htm",
+          "evidence_status": "official_publisher_or_institution_metadata",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "yangshu-source-4",
+          "url": "https://eekjchen.people.ust.hk/people/",
+          "evidence_status": "official_publisher_or_institution_metadata",
+          "retrieved_at": "2026-10-23"
+        }
+      ],
+      "unknowns": [
+        "学位标签不自动升级授位；未列经历保持未知；院系改名由2026官方介绍核，旧网页页脚仍沿旧名。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://sme.ustc.edu.cn/zdjswxnw_30996/list.htm"
+      },
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-ustc-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "buaa-liwei",
+      "name": "李未",
+      "school_id": "buaa",
+      "department_id": "buaa-cs",
+      "organization_id": "buaa-cs",
+      "campus_ids": [],
+      "campus": null,
+      "department": "计算机学院",
+      "roster_entry_id": "roster-buaa-cs-liwei",
+      "official_url": "https://scse.buaa.edu.cn/info/1078/2627.htm",
+      "listed_role": "教授",
+      "appointments": [
+        {
+          "institution": "北京航空航天大学计算机学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://scse.buaa.edu.cn/szdw/qtjs.htm",
+          "source_id": "liwei-source-1",
+          "note": "现行官方名录列示；不代表独立人事在岗核验，起始年月未知。"
+        },
+        {
+          "institution": "北京航空航天大学",
+          "title": "校长",
+          "start": "2002",
+          "end": "2009",
+          "status": "historical",
+          "source_url": "https://scse.buaa.edu.cn/info/1078/2627.htm",
+          "source_id": "liwei-source-3",
+          "note": null
+        }
+      ],
+      "education": [
+        {
+          "degree": "本科",
+          "institution": "北京大学",
+          "start": null,
+          "end": "1966",
+          "field": "数学与力学",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": null,
+          "source_url": "https://scse.buaa.edu.cn/info/1078/2627.htm",
+          "source_id": "liwei-source-3",
+          "field_provenance": {
+            "degree": "liwei-source-3",
+            "institution": "liwei-source-3",
+            "start": null,
+            "end": "liwei-source-3",
+            "field": "liwei-source-3"
+          },
+          "note": "官网毕业表述，未明确学士授位；保留本科不追授学士。",
+          "event_id": "buaa-liwei-education-1",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "buaa-liwei-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": "博士",
+          "institution": "爱丁堡大学",
+          "start": null,
+          "end": "1983",
+          "field": "计算机科学",
+          "country": "英国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://scse.buaa.edu.cn/info/1078/2627.htm",
+          "source_id": "liwei-source-3",
+          "field_provenance": {
+            "degree": "liwei-source-3",
+            "institution": "liwei-source-3",
+            "start": null,
+            "end": "liwei-source-3",
+            "field": "liwei-source-3"
+          },
+          "note": "本人官方介绍明确1983获博士。",
+          "event_id": "buaa-liwei-education-2",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "buaa-liwei-education-2",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "英国",
+          "continent_code": "europe"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "数理逻辑——基本原理与形式演算",
+          "year": 2007,
+          "venue": "中文专著",
+          "doi": null,
+          "url": "https://scse.buaa.edu.cn/info/1078/2627.htm",
+          "type": "book",
+          "source_url": "https://scse.buaa.edu.cn/info/1078/2627.htm",
+          "source_id": "liwei-source-3",
+          "identity_evidence": "https://scse.buaa.edu.cn/info/1078/2627.htm",
+          "link_status": "official_publication_list_only",
+          "note": "官方介绍仅给中文书名与2007中文版本；出版者/ISBN未核，不生成标识。",
+          "type_label": "学术著作（非期刊或会议论文）",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "liwei-source-1",
+          "url": "https://scse.buaa.edu.cn/szdw/qtjs.htm",
+          "evidence_status": "official_roster_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "liwei-source-2",
+          "url": "https://scse.buaa.edu.cn/xyjj/xyjs.htm",
+          "evidence_status": "official_organization_page_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "liwei-source-3",
+          "url": "https://scse.buaa.edu.cn/info/1078/2627.htm",
+          "evidence_status": "official_publisher_or_institution_metadata",
+          "retrieved_at": "2026-10-23"
+        }
+      ],
+      "unknowns": [
+        "个人介绍为2017或2021历史发表，现职只依当前名录教授列示，不自动保留旧页的所有行政/社会任职为现职；本科硕士缺失不补猜。",
+        "导师暂无直接证据，未从同名人物或合作作者推断。",
+        "官网同时提2010英文专著但未给英文题名，首批不猜译名；同名Edinburgh2024生物论文不是本人物。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://scse.buaa.edu.cn/szdw/qtjs.htm"
+      },
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-buaa-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "buaa-zhengzhiming",
+      "name": "郑志明",
+      "school_id": "buaa",
+      "department_id": "buaa-cs",
+      "organization_id": "buaa-cs",
+      "campus_ids": [],
+      "campus": null,
+      "department": "计算机学院",
+      "roster_entry_id": "roster-buaa-cs-zhengzhiming",
+      "official_url": "https://scse.buaa.edu.cn/info/1078/8422.htm",
+      "listed_role": "教授",
+      "appointments": [
+        {
+          "institution": "北京航空航天大学计算机学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://scse.buaa.edu.cn/szdw/qtjs.htm",
+          "source_id": "zhengzhiming-source-1",
+          "note": "现行官方名录列示；不代表独立人事在岗核验，起始年月未知。"
+        },
+        {
+          "institution": "北京大学数学科学学院",
+          "title": "副院长",
+          "start": null,
+          "end": null,
+          "status": "historical_dates_unknown",
+          "source_url": "https://scse.buaa.edu.cn/info/1078/8422.htm",
+          "source_id": "zhengzhiming-source-3",
+          "note": "2021简介明确曾任，起止未披露。",
+          "current": false
+        },
+        {
+          "institution": "北京大学",
+          "title": "副教务长",
+          "start": null,
+          "end": null,
+          "status": "historical_dates_unknown",
+          "source_url": "https://scse.buaa.edu.cn/info/1078/8422.htm",
+          "source_id": "zhengzhiming-source-3",
+          "note": "2021简介明确曾任，起止未披露。",
+          "current": false
+        },
+        {
+          "institution": "北京航空航天大学",
+          "title": "副校长",
+          "start": null,
+          "end": null,
+          "status": "historical_dates_unknown",
+          "source_url": "https://scse.buaa.edu.cn/info/1078/8422.htm",
+          "source_id": "zhengzhiming-source-3",
+          "note": "2021简介明确曾任，起止未披露。",
+          "current": false
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "北京大学",
+          "start": null,
+          "end": "1987",
+          "field": "数学",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://scse.buaa.edu.cn/info/1078/8422.htm",
+          "source_id": "zhengzhiming-source-3",
+          "field_provenance": {
+            "degree": "zhengzhiming-source-3",
+            "institution": "zhengzhiming-source-3",
+            "start": null,
+            "end": "zhengzhiming-source-3",
+            "field": "zhengzhiming-source-3"
+          },
+          "note": "本人官方明确获理学博士，未给本硕信息。",
+          "event_id": "buaa-zhengzhiming-education-1",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "buaa-zhengzhiming-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "sources": [
+        {
+          "id": "zhengzhiming-source-1",
+          "url": "https://scse.buaa.edu.cn/szdw/qtjs.htm",
+          "evidence_status": "official_roster_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "zhengzhiming-source-2",
+          "url": "https://scse.buaa.edu.cn/xyjj/xyjs.htm",
+          "evidence_status": "official_organization_page_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "zhengzhiming-source-3",
+          "url": "https://scse.buaa.edu.cn/info/1078/8422.htm",
+          "evidence_status": "official_publisher_or_institution_metadata",
+          "retrieved_at": "2026-10-23"
+        }
+      ],
+      "unknowns": [
+        "个人介绍为2017或2021历史发表，现职只依当前名录教授列示，不自动保留旧页的所有行政/社会任职为现职；本科硕士缺失不补猜。",
+        "导师暂无直接证据，未从同名人物或合作作者推断。",
+        "当前所读个人页未列具体成果题名，不把论文数量生成书目。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://scse.buaa.edu.cn/szdw/qtjs.htm"
+      },
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-buaa-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
+    },
+    {
+      "person_id": "buaa-qiandepei",
+      "name": "钱德沛",
+      "school_id": "buaa",
+      "department_id": "buaa-cs",
+      "organization_id": "buaa-cs",
+      "campus_ids": [],
+      "campus": null,
+      "department": "计算机学院",
+      "roster_entry_id": "roster-buaa-cs-qiandepei",
+      "official_url": "https://scse.buaa.edu.cn/info/1078/8362.htm",
+      "listed_role": "教授",
+      "appointments": [
+        {
+          "institution": "北京航空航天大学计算机学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "status": "official_page_currently_listed",
+          "source_url": "https://scse.buaa.edu.cn/szdw/qtjs.htm",
+          "source_id": "qiandepei-source-1",
+          "note": "现行官方名录列示；不代表独立人事在岗核验，起始年月未知。"
+        },
+        {
+          "institution": "汉诺威大学计算机系统结构与操作系统研究所",
+          "title": "高级访问学者",
+          "start": "1991-06",
+          "end": "1992-03",
+          "status": "historical",
+          "source_url": "https://scse.buaa.edu.cn/info/1078/8362.htm",
+          "source_id": "qiandepei-source-3",
+          "note": null
+        }
+      ],
+      "education": [
+        {
+          "degree": "本科",
+          "institution": "西安交通大学",
+          "start": null,
+          "end": "1977",
+          "field": "计算机",
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": null,
+          "source_url": "https://scse.buaa.edu.cn/info/1078/8362.htm",
+          "source_id": "qiandepei-source-3",
+          "field_provenance": {
+            "degree": "qiandepei-source-3",
+            "institution": "qiandepei-source-3",
+            "start": null,
+            "end": "qiandepei-source-3",
+            "field": "qiandepei-source-3"
+          },
+          "note": "官网毕业，未明确学士授位。",
+          "event_id": "buaa-qiandepei-education-1",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported"
+          },
+          "education_event_id": "buaa-qiandepei-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia"
+        },
+        {
+          "degree": "硕士",
+          "institution": "北德州立大学",
+          "start": "1982",
+          "end": "1984-05",
+          "field": null,
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "source_url": "https://scse.buaa.edu.cn/info/1078/8362.htm",
+          "source_id": "qiandepei-source-3",
+          "field_provenance": {
+            "degree": "qiandepei-source-3",
+            "institution": "qiandepei-source-3",
+            "start": "qiandepei-source-3",
+            "end": "qiandepei-source-3",
+            "field": null
+          },
+          "note": "官网明确1984年5月获硕士；采用历史校名，尚未独立核更名不强改别名。",
+          "event_id": "buaa-qiandepei-education-2",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed"
+          },
+          "education_event_id": "buaa-qiandepei-education-2",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america"
+        },
+        {
+          "degree": null,
+          "institution": "汉诺威大学",
+          "start": "1991-06",
+          "end": "1992-03",
+          "field": null,
+          "country": "德国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "按来源所指院校所在地标准化，不代表国籍；授位地点与访问、攻读未获学位、联合培养分开。",
+          "event_kind": "visiting_research",
+          "degree_awarded": false,
+          "source_url": "https://scse.buaa.edu.cn/info/1078/8362.htm",
+          "source_id": "qiandepei-source-3",
+          "field_provenance": {
+            "degree": null,
+            "institution": "qiandepei-source-3",
+            "start": "qiandepei-source-3",
+            "end": "qiandepei-source-3",
+            "field": null
+          },
+          "note": null,
+          "event_id": "buaa-qiandepei-education-3",
+          "degree_awarded_date": null,
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed"
+          },
+          "education_event_id": "buaa-qiandepei-education-3",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "德国",
+          "continent_code": "europe"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "从网格到“东数西算”：构建国家算力基础设施",
+          "year": 2022,
+          "venue": "北京航空航天大学学报48(9):1561–1574",
+          "doi": "10.13700/j.bh.1001-5965.2022.0715",
+          "url": "https://bhxb.buaa.edu.cn/bhzk/article/doi/10.13700/j.bh.1001-5965.2022.0715",
+          "type": "journal_article",
+          "source_url": "https://bhxb.buaa.edu.cn/bhzk/article/doi/10.13700/j.bh.1001-5965.2022.0715",
+          "source_id": "qiandepei-source-4",
+          "identity_evidence": "https://scse.buaa.edu.cn/info/1078/8362.htm",
+          "link_status": "article_metadata_verified",
+          "note": "官方学报正式文章页直读题名作者DOI页码及北航计算机学院单位。",
+          "type_label": "期刊论文",
+          "link_status_label": "单篇文章书目元数据已核，不表示全文已读或成果全集。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "qiandepei-source-1",
+          "url": "https://scse.buaa.edu.cn/szdw/qtjs.htm",
+          "evidence_status": "official_roster_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "qiandepei-source-2",
+          "url": "https://scse.buaa.edu.cn/xyjj/xyjs.htm",
+          "evidence_status": "official_organization_page_read",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "qiandepei-source-3",
+          "url": "https://scse.buaa.edu.cn/info/1078/8362.htm",
+          "evidence_status": "official_publisher_or_institution_metadata",
+          "retrieved_at": "2026-10-23"
+        },
+        {
+          "id": "qiandepei-source-4",
+          "url": "https://bhxb.buaa.edu.cn/bhzk/article/doi/10.13700/j.bh.1001-5965.2022.0715",
+          "evidence_status": "publisher_article_metadata_read",
+          "retrieved_at": "2026-10-23"
+        }
+      ],
+      "unknowns": [
+        "个人介绍为2017或2021历史发表，现职只依当前名录教授列示，不自动保留旧页的所有行政/社会任职为现职；本科硕士缺失不补猜。",
+        "导师暂无直接证据，未从同名人物或合作作者推断。",
+        "博士阶段未披露，不能因博士生导师身份补博士；1992升教授未明所属机构，未强绑当年北航。"
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://scse.buaa.edu.cn/szdw/qtjs.htm"
+      },
+      "source_profile_status": "partial_verified_professional_facts",
+      "data_batch_id": "faculty-batch-buaa-first-001",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "profile_coverage_label": "部分职业履历，学历与师承仍有缺项"
     }
   ],
   "profile_batches": [
@@ -115832,6 +118818,129 @@
         "毛志刚高等电气学校未知实体/地域不可猜法国；空校区不可默认。",
         "11精选成果非全集；只官网条目不可显示全部单篇已实开。",
         "原始网页PDF/联系方式不公开；刘彦名誉/访问Imperial角色不推全职双聘。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-fdu-first-001",
+      "source_batch_id": "faculty-batch-fdu-first-001",
+      "school_id": "fdu",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-23",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "学院公开名录按拼音页面所调用只读查询接口，正高级筛选、letter升序响应首3：边历峰、曾璇、曾晓洋。接口37条，未把响应顺序冒称浏览器最终拼音重排；仅选定3人查阅，非全院101名录完成。",
+      "selection_basis": "官方正高级分类只读接口响应首3，不等同浏览器最终重排顺序。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-fdu-first-001.json",
+          "sha256": "92f100f58a2774fd622c6da5e12797d8f360ee6cbb12e5153b7d1fdb9215e7d8"
+        }
+      ],
+      "limitations": [
+        "学院公开名录按拼音页面所调用只读查询接口，正高级筛选、letter升序响应首3：边历峰、曾璇、曾晓洋。接口37条，未把响应顺序冒称浏览器最终拼音重排；仅选定3人查阅，非全院101名录完成。",
+        "个人主页或导师现职仅官方当前列示，不推断全职、人事在岗或退休。",
+        "精选论文非全集，无逐篇链接时明确标记；不公开原始网页缓存。",
+        "正高级分类API响应首3，不冒称浏览器最终重排。",
+        "曾晓洋博士标签授位未知，学院历史页与当前详情冲突保留。",
+        "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+        "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-nju-first-001",
+      "source_batch_id": "faculty-batch-nju-first-001",
+      "school_id": "nju",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-23",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "南京大学计算机学院教授分类官方名录第1–3位：吕建、谭铁牛、周志华；按名录顺序，不按教育背景或成就筛选。仅首3的必要职业事实，不作全院深挖。",
+      "selection_basis": "官方教授分类名录原顺序首3。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-nju-first-001.json",
+          "sha256": "acde5b544752822bd99afdae359073cd8588f3e016c232026af65098012ceece"
+        }
+      ],
+      "limitations": [
+        "仅计算机学院教授分类官方顺序首3，不代表全院或全校覆盖。",
+        "学位授予仅在明确获学位或received语句时记true；学位或学历标签记null，访问记false。",
+        "导师仅采明确直接指导，不以论文共著或学生列表反推；未披露字段保留未知。",
+        "旧个人介绍不作当前行政职务证明；教授身份为官方名录列示，不证明全职或在岗。",
+        "每人最多2条精选书目；书目空值不等于无科研成果。",
+        "无联系方式、生日、学生列表或完整网页/PDF正文；原始证据缓存仅私有核验。",
+        "徐家福已逝，只简要介绍及讣告证据，不作在职导航。",
+        "吕建1982毕业阶段未知，不补学士；3精选书目不等全成果。",
+        "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+        "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-ustc-first-001",
+      "source_batch_id": "faculty-batch-ustc-first-001",
+      "school_id": "ustc",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-23",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "集成电路学院（国家示范性微电子学院）教授/研究员下校内指导教师分类，当前官方30条，仅顺序首3。其他职级和校外指导教师未纳入。",
+      "selection_basis": "官方教授/研究员下校内指导教师分类原顺序首3，校外指导和其他职级未纳入。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-ustc-first-001.json",
+          "sha256": "838f69732426459c4962e6f820acbeaf619e79f7fba4b2f621721fc432cacb00"
+        }
+      ],
+      "limitations": [
+        "集成电路学院（国家示范性微电子学院）教授/研究员下校内指导教师分类，当前官方30条，仅顺序首3。其他职级和校外指导教师未纳入。",
+        "个人主页或导师现职仅官方当前列示，不推断全职、人事在岗或退休。",
+        "精选论文非全集，无逐篇链接时明确标记；不公开原始网页缓存。",
+        "10事件8未知授位2非授位，不得按导师边将杨树博士自动升级true。",
+        "学院当前名与旧页脚区别保留，30名校内指导分类仅取3。",
+        "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+        "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-buaa-first-001",
+      "source_batch_id": "faculty-batch-buaa-first-001",
+      "school_id": "buaa",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-23",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "计算机学院全体教师名录当前81条，仅原顺序首3。学院简介教职工163是另一范围/更新时点，不能等同名录81。电子信息学院名录超时未作事实判断，改可读计算机学院。",
+      "selection_basis": "官方全体教师名录原顺序首3，不把名录81与学院简介163相加或等同。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-buaa-first-001.json",
+          "sha256": "dbcbaf051fc310be1bd70304e74c66a0d93e25ad9bbf2607e8e113cff5d9ba65"
+        }
+      ],
+      "limitations": [
+        "计算机学院全体教师名录当前81条，仅原顺序首3。学院简介教职工163是另一范围/更新时点，不能等同名录81。电子信息学院名录超时未作事实判断，改可读计算机学院。",
+        "个人主页或导师现职仅官方当前列示，不推断全职、人事在岗或退休。",
+        "精选论文非全集，无逐篇链接时明确标记；不公开原始网页缓存。",
+        "原名录81与学院简介163不同范围，不以首3证明全院全校覆盖。",
+        "李未书为book；钱德沛仅已核正式论文书目，未知本科授位保持null。",
+        "仅明确名录范围首3的部分职业资料，不代表全校或全院完成；校区未核不默认。",
+        "只发布最小职业事实及精选书目，不公开原始缓存、联系方式、生日或学生名单；未核授位保留null，访问/博士后非学位。"
       ]
     }
   ],
@@ -120849,6 +123958,34 @@
         "zju",
         "sjtu"
       ]
+    },
+    {
+      "kind": "reviewed_new_school_breadth_wave1",
+      "schools": [
+        "fdu",
+        "nju",
+        "ustc",
+        "buaa"
+      ],
+      "source_files": [
+        {
+          "file": "faculty-batch-fdu-first-001.json",
+          "sha256": "92f100f58a2774fd622c6da5e12797d8f360ee6cbb12e5153b7d1fdb9215e7d8"
+        },
+        {
+          "file": "faculty-batch-nju-first-001.json",
+          "sha256": "acde5b544752822bd99afdae359073cd8588f3e016c232026af65098012ceece"
+        },
+        {
+          "file": "faculty-batch-ustc-first-001.json",
+          "sha256": "838f69732426459c4962e6f820acbeaf619e79f7fba4b2f621721fc432cacb00"
+        },
+        {
+          "file": "faculty-batch-buaa-first-001.json",
+          "sha256": "dbcbaf051fc310be1bd70304e74c66a0d93e25ad9bbf2607e8e113cff5d9ba65"
+        }
+      ],
+      "note": "仅首波4校已审首3。逐人保留来源部门、未知授位及分阶段师承；不以39校导航注册表代表已收录数据，不默认校区。"
     }
   ],
   "institutions": [
@@ -120880,10 +124017,62 @@
       "official_name": "上海交通大学",
       "official_url": "https://www.sjtu.edu.cn/",
       "scope_note": "目前累计保留有明确组织来源的20条选中名录观察及部分人物资料，不代表完整院系或全校覆盖；校区归属未单列。"
+    },
+    {
+      "id": "fdu",
+      "official_name": "复旦大学",
+      "official_url": "https://www.fudan.edu.cn/",
+      "source_urls": [
+        "https://icmne.fudan.edu.cn/xyjj/list.htm"
+      ],
+      "scope_note": "首批仅集成电路与微纳电子创新学院公开名录正高级分类3人，不等全校覆盖。"
+    },
+    {
+      "id": "nju",
+      "official_name": "南京大学",
+      "official_url": "https://www.nju.edu.cn/",
+      "source_urls": [
+        "https://www.nju.edu.cn/",
+        "https://cs.nju.edu.cn/1674/list.htm",
+        "https://cs.nju.edu.cn/2639/list.htm"
+      ],
+      "scope_note": "本批仅计算机学院教授分类官方名录原顺序首3，不代表全校、全院或完整学术履历。"
+    },
+    {
+      "id": "ustc",
+      "official_name": "中国科学技术大学",
+      "official_url": "https://www.ustc.edu.cn/",
+      "source_urls": [
+        "https://welcome.ustc.edu.cn/web/news/182"
+      ],
+      "scope_note": "一院系校内指导教师公开分类首3，不等全校覆盖。"
+    },
+    {
+      "id": "buaa",
+      "official_name": "北京航空航天大学",
+      "official_url": "https://www.buaa.edu.cn/",
+      "source_urls": [
+        "https://scse.buaa.edu.cn/xyjj/xyjs.htm"
+      ],
+      "scope_note": "仅计算机学院现行全体教师名录首3，不等全校/全院完成。"
     }
   ],
-  "build_id": "050739c0d0f8f806",
+  "build_id": "14c79dd391214298",
   "exports": [
+    {
+      "department_id": "buaa-cs",
+      "school_id": "buaa",
+      "school_name": "北京航空航天大学",
+      "path": "exports/buaa-cs.xlsx",
+      "people_count": 3
+    },
+    {
+      "department_id": "fdu-icmne",
+      "school_id": "fdu",
+      "school_name": "复旦大学",
+      "path": "exports/fdu-icmne.xlsx",
+      "people_count": 3
+    },
     {
       "department_id": "hit-computing",
       "school_id": "hit",
@@ -120934,6 +124123,13 @@
       "people_count": 1
     },
     {
+      "department_id": "nju-cs",
+      "school_id": "nju",
+      "school_name": "南京大学",
+      "path": "exports/nju-cs.xlsx",
+      "people_count": 3
+    },
+    {
       "department_id": "pku-ic-microelectronics",
       "school_id": "pku",
       "school_name": "北京大学",
@@ -120953,6 +124149,13 @@
       "school_name": "清华大学",
       "path": "exports/thu-ee-communications.xlsx",
       "people_count": 15
+    },
+    {
+      "department_id": "ustc-ic",
+      "school_id": "ustc",
+      "school_name": "中国科学技术大学",
+      "path": "exports/ustc-ic.xlsx",
+      "people_count": 3
     },
     {
       "department_id": "zju-ic-manufacturing",

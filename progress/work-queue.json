@@ -1,19 +1,23 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T15:43:30Z",
-  "base_commit": "1fb625112ac7031b88f8f3e0c30ffacb3ead7342",
+  "updated_at": "2026-10-23T16:15:00Z",
+  "base_commit": "1604775583c7ea6634d3242d7c8fb72689d74b4a",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
     "registry_complete": false,
-    "known_organization_nodes": 86,
+    "known_organization_nodes": 90,
     "write_model": "single_controller_expected_sha",
     "active_institutions": [
       "hit",
+      "zju",
       "thu",
       "pku",
-      "zju",
-      "sjtu"
+      "sjtu",
+      "fdu",
+      "nju",
+      "ustc",
+      "buaa"
     ],
     "active_institution_note": "历史首校兼容字段；并行范围见active_institutions。"
   },
@@ -3444,6 +3448,114 @@
       "next_cursor": "selected_20_reviewed",
       "attempted_at": "2026-10-23T15:43:30Z",
       "last_verified_commit": "1fb625112ac7031b88f8f3e0c30ffacb3ead7342"
+    },
+    {
+      "task_id": "fdu:fdu-icmne:first-selected-profiles",
+      "institution_id": "fdu",
+      "organization_id": "fdu-icmne",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "首批仅集成电路与微纳电子创新学院公开名录正高级分类3人，不等全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://icmne.fudan.edu.cn/xyjj/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:15:00Z",
+      "last_verified_commit": "1604775583c7ea6634d3242d7c8fb72689d74b4a"
+    },
+    {
+      "task_id": "nju:nju-cs:first-selected-profiles",
+      "institution_id": "nju",
+      "organization_id": "nju-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "本批仅计算机学院教授分类官方名录原顺序首3，不代表全校、全院或完整学术履历。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cs.nju.edu.cn/1674/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:15:00Z",
+      "last_verified_commit": "1604775583c7ea6634d3242d7c8fb72689d74b4a"
+    },
+    {
+      "task_id": "ustc:ustc-ic:first-selected-profiles",
+      "institution_id": "ustc",
+      "organization_id": "ustc-ic",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "一院系校内指导教师公开分类首3，不等全校覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://welcome.ustc.edu.cn/web/news/182"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:15:00Z",
+      "last_verified_commit": "1604775583c7ea6634d3242d7c8fb72689d74b4a"
+    },
+    {
+      "task_id": "buaa:buaa-cs:first-selected-profiles",
+      "institution_id": "buaa",
+      "organization_id": "buaa-cs",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "仅计算机学院现行全体教师名录首3，不等全校/全院完成。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://scse.buaa.edu.cn/xyjj/xyjs.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/breadth-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留未知项及待完善字段；优先接入尚无资料的其他985高校，再扩大本校。",
+      "next_cursor": "selected_3_reviewed",
+      "attempted_at": "2026-10-23T16:15:00Z",
+      "last_verified_commit": "1604775583c7ea6634d3242d7c8fb72689d74b4a"
     }
   ]
 }

@@ -52,10 +52,12 @@ class DataTests(unittest.TestCase):
   with self.assertRaises(AssertionError):validate(self.d)
  def test_collaboration_export_is_experience_not_mentor(self):
   from build import department_tables
-  people=[p for p in self.d['people'] if p['name'] in ['刘冰','刘大同','张明宇']];tables=dict(department_tables(people,self.d['updated_at']))
-  self.assertEqual(len(tables['导师'])-1,sum(len(p['mentors'])+len(p.get('committee_members',[])) for p in people))
-  self.assertFalse(any(r[1] in ['Yu Hen Hu','Haitao Liao','张莹莹'] for r in tables['导师'][1:]))
-  rows=[r for r in tables['经历'][1:] if r[1] in ['visiting_research_collaborator','research_assistant_collaborator']]
+  people=[p for p in self.d['people'] if p['name'] in ['刘冰','刘大同','张明宇']]
+  tables=[dict(department_tables([p for p in people if p['department_id']==dept],self.d['updated_at'])) for dept in sorted({p['department_id'] for p in people})]
+  mentors=[r for table in tables for r in table['导师'][1:]]
+  self.assertEqual(len(mentors),sum(len(p['mentors'])+len(p.get('committee_members',[])) for p in people))
+  self.assertFalse(any(r[1] in ['Yu Hen Hu','Haitao Liao','张莹莹'] for r in mentors))
+  rows=[r for table in tables for r in table['经历'][1:] if r[1] in ['visiting_research_collaborator','research_assistant_collaborator']]
   self.assertEqual(len(rows),3);self.assertTrue(all('非导师认定' in r[14] for r in rows))
  def test_collaboration_export_cannot_join_missing_ids(self):
   from build import department_tables

@@ -133,9 +133,15 @@ def source_evidence_text(source):
  status=source.get('evidence_status')
  return '；'.join(str(v) for v in [label,status] if v) if label and label!=status else status or label
 
+def publication_value(publication,key):
+ raw=publication.get(key);label=publication.get(key+'_label') if key in ('type','link_status') else None
+ return '；'.join(str(v) for v in [label,raw] if v) if label and label!=raw else raw if raw is not None else label
+
 def department_tables(people,updated_at,institutions=None):
  schools={p.get("school_id") for p in people}
  assert len(schools)<=1 and None not in schools, "Department export cannot mix schools or omit school IDs"
+ departments={p.get("department_id") for p in people}
+ assert len(departments)<=1 and all(safe_id(dept) for dept in departments), "Department export cannot mix departments or omit department IDs; group people by department_id"
  school_id=next(iter(schools),"")
  names={s["id"]:s["official_name"] for s in (institutions or [])}
  school_name=names.get(school_id,school_id)
@@ -163,7 +169,7 @@ def department_tables(people,updated_at,institutions=None):
   rows.extend([[p['name'],*[m.get(k) for k in mentor_fields]] for m in mentors])
  tables.append(('导师',rows))
  for label,key,fields,headers in [('论文','publications',['title','year','doi','url','type','source_url','identity_evidence','link_status','note'],['标题','年份','DOI','链接','类型','收录来源','作者归属依据','链接核验范围','备注']),('来源','sources',['id','url','evidence_status','retrieved_at'],['来源ID','链接','核验方式','查阅日期'])]:
-  rows=[['姓名',*headers],*[[p['name'],*[source_evidence_text(r) if k=='evidence_status' else r.get(k) for k in fields]] for p in people for r in p[key]]]
+  rows=[['姓名',*headers],*[[p['name'],*[source_evidence_text(r) if k=='evidence_status' else publication_value(r,k) if key=='publications' else r.get(k) for k in fields]] for p in people for r in p[key]]]
   if key=='sources':
    for p in people:
     seen={row.get('url') for row in p['sources']}

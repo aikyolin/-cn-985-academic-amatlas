@@ -22,7 +22,7 @@ class MentorNavigationTests(unittest.TestCase):
 
     def export(self, mentor):
         person = {
-            'name': '测试学生', 'school_id': 'test-school', 'department': '测试院系',
+            'name': '测试学生', 'school_id': 'test-school', 'department_id': 'test-department', 'department': '测试院系',
             'official_url': 'https://example.edu.test/student', 'unknowns': [],
             'education': [], 'appointments': [], 'mentors': [mentor],
             'publications': [], 'sources': [],
