@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "39校公开名录样本，1589条整合记录、1627条原始来源观察。原1562条记录与1600条观察保持，本轮9已审延续/轮转批次27条选中观察；非全校/全院完成、唯一人数或实时在岗人数。分类按唯一组织类别而非批次累加，旧144条coverage全部保留。",
+  "scope": "39校公开名录样本，1628条整合记录、1666条原始来源观察。原1589条记录及1627条观察保持，本轮13个已审轮转包39条选中观察，不含已入库RUC或后到新包；非唯一人数、全院完成或实时在岗人数。分类按唯一组织类别重算，全部旧156条coverage保留。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -891,6 +891,153 @@
       "school_id": "whu",
       "organization_id": "whu-eis",
       "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "bit",
+      "organization_id": "bit-cs-image-perception",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "cau",
+      "organization_id": "cau-science-math",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "buaa",
+      "organization_id": "buaa-physics-applied",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "buaa",
+      "organization_id": "buaa-physics-department",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "buaa",
+      "organization_id": "buaa-physics-nuclear",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "muc",
+      "organization_id": "muc-science-math",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "bnu",
+      "organization_id": "bnu-math",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "nku",
+      "organization_id": "nku-stat",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "dlut",
+      "organization_id": "dlut-math-institute",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "neu",
+      "organization_id": "neu-science-math",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "tju",
+      "organization_id": "tju-math",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "jlu",
+      "organization_id": "jlu-math-applied",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "jlu",
+      "organization_id": "jlu-math-computational",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "jlu",
+      "organization_id": "jlu-math-statistics",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "tongji",
+      "organization_id": "tongji-math-combinatorics",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "tongji",
+      "organization_id": "tongji-math-teaching",
+      "visible_roster_entries": 2,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "ecnu",
+      "organization_id": "ecnu-math-applied",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "ecnu",
+      "organization_id": "ecnu-math-education",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "ecnu",
+      "organization_id": "ecnu-math-pure",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "nju",
+      "organization_id": "nju-math",
+      "visible_roster_entries": 2,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "nju",
+      "organization_id": "nju-sme",
+      "visible_roster_entries": 1,
       "count_scope": "selected_subset_only",
       "coverage_complete": false
     }
@@ -3573,6 +3720,384 @@
       "pagination": "not_established_for_this_selected_subset",
       "accessed_on": "2026-10-23",
       "batch_id": "whu-selected-roster-supplement-001"
+    },
+    {
+      "school_id": "bit",
+      "organization_id": "bit-cs-image-perception",
+      "url": "https://cs.bit.edu.cn/szdw/jsml2/txjsygzznyjs2/index.htm",
+      "category": "图像计算与感知智能研究所教师名录",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "图像计算与感知智能研究所教师名录15条中的官方顺序首3；不采用机构介绍旧表11人顺序。",
+      "selection_basis": "图像计算与感知智能研究所教师名录15条中的官方顺序首3；不采用机构介绍旧表11人顺序。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "bit-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "cau",
+      "organization_id": "cau-science-math",
+      "url": "https://sci.cau.edu.cn/col/col40615/index.html",
+      "category": "应用数学系（原始HTML系别筛选去重）",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "理学院专任教师原始HTML按date2=应用数学系过滤、保持文档顺序并去除分类重复后36条的首3；网页文本忽略筛选会把所有人重复显示为不同职称，故职称取本人正文/原始date1。",
+      "selection_basis": "理学院专任教师原始HTML按date2=应用数学系过滤、保持文档顺序并去除分类重复后36条的首3；网页文本忽略筛选会把所有人重复显示为不同职称，故职称取本人正文/原始date1。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "cau-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "buaa",
+      "organization_id": "buaa-physics-applied",
+      "url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+      "category": "全体教师（默认首字母稳定升序）",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。",
+      "selection_basis": "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。",
+      "source_evidence_status": "official_roster_inline_public_json_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "buaa-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "buaa",
+      "organization_id": "buaa-physics-nuclear",
+      "url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+      "category": "全体教师（默认首字母稳定升序）",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。",
+      "selection_basis": "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。",
+      "source_evidence_status": "official_roster_inline_public_json_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "buaa-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "buaa",
+      "organization_id": "buaa-physics-department",
+      "url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+      "category": "全体教师（默认首字母稳定升序）",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。",
+      "selection_basis": "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。",
+      "source_evidence_status": "official_roster_inline_public_json_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "buaa-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "muc",
+      "organization_id": "muc-science-math",
+      "url": "https://lxy.muc.edu.cn/szdw/sxx.htm",
+      "category": "数学系教师名录",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "理学院数学系官方当前15条名录首3牛瑞超、尹宇航、单敏捷，部分履历非全字段核完。",
+      "selection_basis": "理学院数学系官方当前15条名录首3牛瑞超、尹宇航、单敏捷，部分履历非全字段核完。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "muc-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "bnu",
+      "organization_id": "bnu-math",
+      "url": "https://math.bnu.edu.cn/jzg/szdw/ac/index.htm",
+      "category": "教师A-C字母分组",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "数学科学学院师资队伍A-C字母分组10条中的官方顺序首3；不代表全院或全校，且不与人工智能学院首批3人重复。",
+      "selection_basis": "数学科学学院师资队伍A-C字母分组10条中的官方顺序首3；不代表全院或全校，且不与人工智能学院首批3人重复。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "bnu-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "nku",
+      "organization_id": "nku-stat",
+      "url": "https://stat.nankai.edu.cn/8081/",
+      "category": "统计与数据科学学院教师目录",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "统计与数据科学学院全体教师目录显示52条/3页，本次仅第一页官方顺序首3；不声称全量52逐人核完。",
+      "selection_basis": "统计与数据科学学院全体教师目录显示52条/3页，本次仅第一页官方顺序首3；不声称全量52逐人核完。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "nku-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "dlut",
+      "organization_id": "dlut-math-institute",
+      "url": "https://math.dlut.edu.cn/szdw/szxx2.htm",
+      "category": "数学科学学院数学研究所",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "数学研究所正高级目录17条首3；未扩大为所有数学教师。",
+      "selection_basis": "数学研究所正高级目录17条首3；未扩大为所有数学教师。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "dlut-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "neu",
+      "organization_id": "neu-science-math",
+      "url": "https://cos.neu.edu.cn/math/2025/0422/c8906a282040/page.htm",
+      "category": "数学系教师名录",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "数学系官方2026-09-16更新名录，教授按姓名首字母排序首3陈艳萍、谷世杰、郭萌；第三人无详情链接，只待核名录层。",
+      "selection_basis": "数学系官方2026-09-16更新名录，教授按姓名首字母排序首3陈艳萍、谷世杰、郭萌；第三人无详情链接，只待核名录层。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "neu-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "tju",
+      "organization_id": "tju-math",
+      "url": "https://math.tju.edu.cn/szdw/jsdw.htm",
+      "category": "数学学院教师队伍",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "数学学院教师队伍首页原序首3（鲍建海、曹杰、曾红刚）；页面共5页，本轮不声称全院覆盖，也不按教育背景筛人。",
+      "selection_basis": "数学学院教师队伍首页原序首3（鲍建海、曹杰、曾红刚）；页面共5页，本轮不声称全院覆盖，也不按教育背景筛人。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "tju-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "jlu",
+      "organization_id": "jlu-math-applied",
+      "url": "https://math.jlu.edu.cn/szdw1/js.htm",
+      "category": "数学学院教授",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。",
+      "selection_basis": "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "jlu-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "jlu",
+      "organization_id": "jlu-math-computational",
+      "url": "https://math.jlu.edu.cn/szdw1/js.htm",
+      "category": "数学学院教授",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。",
+      "selection_basis": "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "jlu-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "jlu",
+      "organization_id": "jlu-math-statistics",
+      "url": "https://math.jlu.edu.cn/szdw1/js.htm",
+      "category": "数学学院教授",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。",
+      "selection_basis": "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "jlu-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "tongji",
+      "organization_id": "tongji-math-teaching",
+      "url": "https://math.tongji.edu.cn/szdw2/azc/js.htm",
+      "category": "教授（姓氏首字母顺序）",
+      "visible_name_count": 2,
+      "selected_observation_count": 2,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。",
+      "selection_basis": "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "tongji-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "tongji",
+      "organization_id": "tongji-math-combinatorics",
+      "url": "https://math.tongji.edu.cn/szdw2/azc/js.htm",
+      "category": "教授（姓氏首字母顺序）",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。",
+      "selection_basis": "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "tongji-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "ecnu",
+      "organization_id": "ecnu-math-applied",
+      "url": "https://math.ecnu.edu.cn/faculty.html",
+      "category": "在职专任教师",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。",
+      "selection_basis": "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "ecnu-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "ecnu",
+      "organization_id": "ecnu-math-education",
+      "url": "https://math.ecnu.edu.cn/faculty.html",
+      "category": "在职专任教师",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。",
+      "selection_basis": "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "ecnu-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "ecnu",
+      "organization_id": "ecnu-math-pure",
+      "url": "https://math.ecnu.edu.cn/faculty.html",
+      "category": "在职专任教师",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。",
+      "selection_basis": "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "ecnu-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "nju",
+      "organization_id": "nju-math",
+      "url": "https://math.nju.edu.cn/jzyg/apypl/index.html",
+      "category": "数学学院公开查询名录（保留跨院归属）",
+      "visible_name_count": 2,
+      "selected_observation_count": 2,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。",
+      "selection_basis": "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "nju-selected-roster-rotation-001"
+    },
+    {
+      "school_id": "nju",
+      "organization_id": "nju-sme",
+      "url": "https://math.nju.edu.cn/jzyg/apypl/index.html",
+      "category": "数学学院公开查询名录（保留跨院归属）",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。",
+      "selection_basis": "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。",
+      "source_evidence_status": "official_roster_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-23",
+      "batch_id": "nju-selected-roster-rotation-001"
     }
   ],
   "entries": [
@@ -54243,6 +54768,1742 @@
         "whu-hepingan"
       ],
       "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-bit-cs-image-dihuijun",
+      "name": "邸慧军",
+      "school_id": "bit",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bit-cs-image-perception",
+      "department_id": "bit-cs-image-perception",
+      "category": "图像计算与感知智能研究所教师名录",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://cs.bit.edu.cn/szdw/jsml2/txjsygzznyjs2/207b05c726964d76b167c92a3073b969.htm",
+      "roster_source_url": "https://cs.bit.edu.cn/szdw/jsml2/txjsygzznyjs2/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "bit-dihuijun",
+      "batch_id": "bit-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-bit-rotation-001",
+      "source_ids": [
+        "dihuijun-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "图像计算与感知智能研究所教师名录15条中的官方顺序首3；不采用机构介绍旧表11人顺序。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cs.bit.edu.cn/szdw/jsml2/txjsygzznyjs2/index.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "图像计算与感知智能研究所教师名录15条中的官方顺序首3；不采用机构介绍旧表11人顺序。"
+      ],
+      "source_observation_ids": [
+        "bit-selected-roster-rotation-001:roster-bit-cs-image-dihuijun:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "bit-dihuijun"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-bit-cs-image-gaozhi",
+      "name": "高志",
+      "school_id": "bit",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bit-cs-image-perception",
+      "department_id": "bit-cs-image-perception",
+      "category": "图像计算与感知智能研究所教师名录",
+      "listed_role": "预聘副教授、特别研究员",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://cs.bit.edu.cn/szdw/jsml2/txjsygzznyjs2/6745ff453226406ba1424e53c2dc2c6f.htm",
+      "roster_source_url": "https://cs.bit.edu.cn/szdw/jsml2/txjsygzznyjs2/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "bit-gaozhi",
+      "batch_id": "bit-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-bit-rotation-001",
+      "source_ids": [
+        "gaozhi-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "图像计算与感知智能研究所教师名录15条中的官方顺序首3；不采用机构介绍旧表11人顺序。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cs.bit.edu.cn/szdw/jsml2/txjsygzznyjs2/index.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "图像计算与感知智能研究所教师名录15条中的官方顺序首3；不采用机构介绍旧表11人顺序。"
+      ],
+      "source_observation_ids": [
+        "bit-selected-roster-rotation-001:roster-bit-cs-image-gaozhi:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "bit-gaozhi"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-bit-cs-image-lijianwu",
+      "name": "李建武",
+      "school_id": "bit",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bit-cs-image-perception",
+      "department_id": "bit-cs-image-perception",
+      "category": "图像计算与感知智能研究所教师名录",
+      "listed_role": "副教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://cs.bit.edu.cn/szdw/jsml2/txjsygzznyjs2/29f4f6d1c8b54e6791fc98f2c64866e3.htm",
+      "roster_source_url": "https://cs.bit.edu.cn/szdw/jsml2/txjsygzznyjs2/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "bit-lijianwu",
+      "batch_id": "bit-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-bit-rotation-001",
+      "source_ids": [
+        "lijianwu-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "图像计算与感知智能研究所教师名录15条中的官方顺序首3；不采用机构介绍旧表11人顺序。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cs.bit.edu.cn/szdw/jsml2/txjsygzznyjs2/index.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "图像计算与感知智能研究所教师名录15条中的官方顺序首3；不采用机构介绍旧表11人顺序。"
+      ],
+      "source_observation_ids": [
+        "bit-selected-roster-rotation-001:roster-bit-cs-image-lijianwu:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "bit-lijianwu"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-cau-science-math-wangchao",
+      "name": "王超",
+      "school_id": "cau",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "cau-science-math",
+      "department_id": "cau-science-math",
+      "category": "应用数学系（原始HTML系别筛选去重）",
+      "listed_role": "副教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://faculty.cau.edu.cn/wc3/",
+      "roster_source_url": "https://sci.cau.edu.cn/col/col40615/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "cau-wangchao",
+      "batch_id": "cau-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-cau-rotation-001",
+      "source_ids": [
+        "wangchao-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "理学院专任教师原始HTML按date2=应用数学系过滤、保持文档顺序并去除分类重复后36条的首3；网页文本忽略筛选会把所有人重复显示为不同职称，故职称取本人正文/原始date1。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://sci.cau.edu.cn/col/col40615/index.html"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "理学院专任教师原始HTML按date2=应用数学系过滤、保持文档顺序并去除分类重复后36条的首3；网页文本忽略筛选会把所有人重复显示为不同职称，故职称取本人正文/原始date1。"
+      ],
+      "source_observation_ids": [
+        "cau-selected-roster-rotation-001:roster-cau-science-math-wangchao:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "cau-wangchao"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-cau-science-math-peishan",
+      "name": "裴姗",
+      "school_id": "cau",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "cau-science-math",
+      "department_id": "cau-science-math",
+      "category": "应用数学系（原始HTML系别筛选去重）",
+      "listed_role": "副教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://sci.cau.edu.cn/art/2025/11/5/art_40615_1781.html",
+      "roster_source_url": "https://sci.cau.edu.cn/col/col40615/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "cau-peishan",
+      "batch_id": "cau-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-cau-rotation-001",
+      "source_ids": [
+        "peishan-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "理学院专任教师原始HTML按date2=应用数学系过滤、保持文档顺序并去除分类重复后36条的首3；网页文本忽略筛选会把所有人重复显示为不同职称，故职称取本人正文/原始date1。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://sci.cau.edu.cn/col/col40615/index.html"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "理学院专任教师原始HTML按date2=应用数学系过滤、保持文档顺序并去除分类重复后36条的首3；网页文本忽略筛选会把所有人重复显示为不同职称，故职称取本人正文/原始date1。"
+      ],
+      "source_observation_ids": [
+        "cau-selected-roster-rotation-001:roster-cau-science-math-peishan:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-cau-science-math-mengfanfei",
+      "name": "孟繁飞",
+      "school_id": "cau",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "cau-science-math",
+      "department_id": "cau-science-math",
+      "category": "应用数学系（原始HTML系别筛选去重）",
+      "listed_role": "讲师（高校）",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://faculty.cau.edu.cn/mff/",
+      "roster_source_url": "https://sci.cau.edu.cn/col/col40615/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "cau-mengfanfei",
+      "batch_id": "cau-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-cau-rotation-001",
+      "source_ids": [
+        "mengfanfei-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "理学院专任教师原始HTML按date2=应用数学系过滤、保持文档顺序并去除分类重复后36条的首3；网页文本忽略筛选会把所有人重复显示为不同职称，故职称取本人正文/原始date1。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://sci.cau.edu.cn/col/col40615/index.html"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "理学院专任教师原始HTML按date2=应用数学系过滤、保持文档顺序并去除分类重复后36条的首3；网页文本忽略筛选会把所有人重复显示为不同职称，故职称取本人正文/原始date1。"
+      ],
+      "source_observation_ids": [
+        "cau-selected-roster-rotation-001:roster-cau-science-math-mengfanfei:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "cau-mengfanfei"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-buaa-physics-bizhuanfang",
+      "name": "毕篆芳",
+      "school_id": "buaa",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "buaa-physics-applied",
+      "department_id": "buaa-physics-applied",
+      "category": "全体教师（默认首字母稳定升序）",
+      "listed_role": "副教授，博士生导师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://physics.buaa.edu.cn/info/1131/2884.htm",
+      "roster_source_url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "buaa-bizhuanfang",
+      "batch_id": "buaa-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-buaa-rotation-001",
+      "source_ids": [
+        "buaa-bizhuanfang-source-1"
+      ],
+      "source_evidence_status": "official_roster_inline_public_json_read",
+      "source_evidence_status_label": "官方页面内嵌公开名录JSON已读，按所述显示顺序取样。",
+      "selection_status": "selected_subset",
+      "selection_basis": "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+        "roster_order": 1
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。"
+      ],
+      "source_department_id": "buaa-physics",
+      "organization_assignment_basis": "reviewed_official_roster_person_fields_xs",
+      "organization_assignment_source_url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+      "source_observation_ids": [
+        "buaa-selected-roster-rotation-001:roster-buaa-physics-bizhuanfang:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "buaa-bizhuanfang"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-buaa-physics-chengtongguang",
+      "name": "成曈光",
+      "school_id": "buaa",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "buaa-physics-nuclear",
+      "department_id": "buaa-physics-nuclear",
+      "category": "全体教师（默认首字母稳定升序）",
+      "listed_role": "教授，博士生导师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://physics.buaa.edu.cn/info/1131/3015.htm",
+      "roster_source_url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "buaa-chengtongguang",
+      "batch_id": "buaa-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-buaa-rotation-001",
+      "source_ids": [
+        "buaa-chengtongguang-source-1"
+      ],
+      "source_evidence_status": "official_roster_inline_public_json_read",
+      "source_evidence_status_label": "官方页面内嵌公开名录JSON已读，按所述显示顺序取样。",
+      "selection_status": "selected_subset",
+      "selection_basis": "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+        "roster_order": 2
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。"
+      ],
+      "source_department_id": "buaa-physics",
+      "organization_assignment_basis": "reviewed_official_roster_person_fields_xs",
+      "organization_assignment_source_url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+      "source_observation_ids": [
+        "buaa-selected-roster-rotation-001:roster-buaa-physics-chengtongguang:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "buaa-chengtongguang"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-buaa-physics-chenyong",
+      "name": "陈勇",
+      "school_id": "buaa",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "buaa-physics-department",
+      "department_id": "buaa-physics-department",
+      "category": "全体教师（默认首字母稳定升序）",
+      "listed_role": "教授，博士生导师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://physics.buaa.edu.cn/info/1131/3014.htm",
+      "roster_source_url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "buaa-chenyong",
+      "batch_id": "buaa-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-buaa-rotation-001",
+      "source_ids": [
+        "buaa-chenyong-source-1"
+      ],
+      "source_evidence_status": "official_roster_inline_public_json_read",
+      "source_evidence_status_label": "官方页面内嵌公开名录JSON已读，按所述显示顺序取样。",
+      "selection_status": "selected_subset",
+      "selection_basis": "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+        "roster_order": 3
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。"
+      ],
+      "source_department_id": "buaa-physics",
+      "organization_assignment_basis": "reviewed_official_roster_person_fields_xs",
+      "organization_assignment_source_url": "https://physics.buaa.edu.cn/szdw/qtjs.htm",
+      "source_observation_ids": [
+        "buaa-selected-roster-rotation-001:roster-buaa-physics-chenyong:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "buaa-chenyong"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-muc-math-niuruichao",
+      "name": "牛瑞超",
+      "school_id": "muc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "muc-science-math",
+      "department_id": "muc-science-math",
+      "category": "数学系教师名录",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://lxy.muc.edu.cn/info/1037/2793.htm",
+      "roster_source_url": "https://lxy.muc.edu.cn/szdw/sxx.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "muc-niuruichao",
+      "batch_id": "muc-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-muc-rotation-001",
+      "source_ids": [
+        "niuruichao-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "理学院数学系官方当前15条名录首3牛瑞超、尹宇航、单敏捷，部分履历非全字段核完。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://lxy.muc.edu.cn/szdw/sxx.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "理学院数学系官方当前15条名录首3牛瑞超、尹宇航、单敏捷，部分履历非全字段核完。"
+      ],
+      "source_observation_ids": [
+        "muc-selected-roster-rotation-001:roster-muc-math-niuruichao:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "muc-niuruichao"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-muc-math-yinyuhang",
+      "name": "尹宇航",
+      "school_id": "muc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "muc-science-math",
+      "department_id": "muc-science-math",
+      "category": "数学系教师名录",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://lxy.muc.edu.cn/info/1037/2763.htm",
+      "roster_source_url": "https://lxy.muc.edu.cn/szdw/sxx.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "muc-yinyuhang",
+      "batch_id": "muc-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-muc-rotation-001",
+      "source_ids": [
+        "yinyuhang-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "理学院数学系官方当前15条名录首3牛瑞超、尹宇航、单敏捷，部分履历非全字段核完。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://lxy.muc.edu.cn/szdw/sxx.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "理学院数学系官方当前15条名录首3牛瑞超、尹宇航、单敏捷，部分履历非全字段核完。"
+      ],
+      "source_observation_ids": [
+        "muc-selected-roster-rotation-001:roster-muc-math-yinyuhang:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "muc-yinyuhang"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-muc-math-shanminjie",
+      "name": "单敏捷",
+      "school_id": "muc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "muc-science-math",
+      "department_id": "muc-science-math",
+      "category": "数学系教师名录",
+      "listed_role": "副教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://lxy.muc.edu.cn/info/1037/2643.htm",
+      "roster_source_url": "https://lxy.muc.edu.cn/szdw/sxx.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "muc-shanminjie",
+      "batch_id": "muc-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-muc-rotation-001",
+      "source_ids": [
+        "shanminjie-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "理学院数学系官方当前15条名录首3牛瑞超、尹宇航、单敏捷，部分履历非全字段核完。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://lxy.muc.edu.cn/szdw/sxx.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "理学院数学系官方当前15条名录首3牛瑞超、尹宇航、单敏捷，部分履历非全字段核完。"
+      ],
+      "source_observation_ids": [
+        "muc-selected-roster-rotation-001:roster-muc-math-shanminjie:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "muc-shanminjie"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-bnu-math-baojiguang",
+      "name": "保继光",
+      "school_id": "bnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bnu-math",
+      "department_id": "bnu-math",
+      "category": "教师A-C字母分组",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.bnu.edu.cn/jzg/szdw/ac/212922.htm",
+      "roster_source_url": "https://math.bnu.edu.cn/jzg/szdw/ac/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "bnu-baojiguang",
+      "batch_id": "bnu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-bnu-rotation-001",
+      "source_ids": [
+        "baojiguang-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学科学学院师资队伍A-C字母分组10条中的官方顺序首3；不代表全院或全校，且不与人工智能学院首批3人重复。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.bnu.edu.cn/jzg/szdw/ac/index.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学科学学院师资队伍A-C字母分组10条中的官方顺序首3；不代表全院或全校，且不与人工智能学院首批3人重复。"
+      ],
+      "source_observation_ids": [
+        "bnu-selected-roster-rotation-001:roster-bnu-math-baojiguang:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "bnu-baojiguang"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-bnu-math-caiyongqiang",
+      "name": "蔡永强",
+      "school_id": "bnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bnu-math",
+      "department_id": "bnu-math",
+      "category": "教师A-C字母分组",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.bnu.edu.cn/jzg/szdw/ac/224162.htm",
+      "roster_source_url": "https://math.bnu.edu.cn/jzg/szdw/ac/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "bnu-caiyongqiang",
+      "batch_id": "bnu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-bnu-rotation-001",
+      "source_ids": [
+        "caiyongqiang-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学科学学院师资队伍A-C字母分组10条中的官方顺序首3；不代表全院或全校，且不与人工智能学院首批3人重复。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.bnu.edu.cn/jzg/szdw/ac/index.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学科学学院师资队伍A-C字母分组10条中的官方顺序首3；不代表全院或全校，且不与人工智能学院首批3人重复。"
+      ],
+      "source_observation_ids": [
+        "bnu-selected-roster-rotation-001:roster-bnu-math-caiyongqiang:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "bnu-caiyongqiang"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-bnu-math-caiyongyong",
+      "name": "蔡勇勇",
+      "school_id": "bnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bnu-math",
+      "department_id": "bnu-math",
+      "category": "教师A-C字母分组",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.bnu.edu.cn/jzg/szdw/ac/219441.htm",
+      "roster_source_url": "https://math.bnu.edu.cn/jzg/szdw/ac/index.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "bnu-caiyongyong",
+      "batch_id": "bnu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-bnu-rotation-001",
+      "source_ids": [
+        "caiyongyong-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学科学学院师资队伍A-C字母分组10条中的官方顺序首3；不代表全院或全校，且不与人工智能学院首批3人重复。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.bnu.edu.cn/jzg/szdw/ac/index.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学科学学院师资队伍A-C字母分组10条中的官方顺序首3；不代表全院或全校，且不与人工智能学院首批3人重复。"
+      ],
+      "source_observation_ids": [
+        "bnu-selected-roster-rotation-001:roster-bnu-math-caiyongyong:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "bnu-caiyongyong"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-nku-stat-wangzhaojun",
+      "name": "王兆军",
+      "school_id": "nku",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nku-stat",
+      "department_id": "nku-stat",
+      "category": "统计与数据科学学院教师目录",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://my.nankai.edu.cn/stat/wzj/list.htm",
+      "roster_source_url": "https://stat.nankai.edu.cn/8081/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "nku-wangzhaojun",
+      "batch_id": "nku-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-nku-rotation-001",
+      "source_ids": [
+        "wangzhaojun-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "统计与数据科学学院全体教师目录显示52条/3页，本次仅第一页官方顺序首3；不声称全量52逐人核完。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://stat.nankai.edu.cn/8081/"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "统计与数据科学学院全体教师目录显示52条/3页，本次仅第一页官方顺序首3；不声称全量52逐人核完。"
+      ],
+      "source_observation_ids": [
+        "nku-selected-roster-rotation-001:roster-nku-stat-wangzhaojun:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "nku-wangzhaojun"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-nku-stat-liuminqian",
+      "name": "刘民千",
+      "school_id": "nku",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nku-stat",
+      "department_id": "nku-stat",
+      "category": "统计与数据科学学院教师目录",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://my.nankai.edu.cn/stat/lmq/list.htm",
+      "roster_source_url": "https://stat.nankai.edu.cn/8081/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "nku-liuminqian",
+      "batch_id": "nku-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-nku-rotation-001",
+      "source_ids": [
+        "liuminqian-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "统计与数据科学学院全体教师目录显示52条/3页，本次仅第一页官方顺序首3；不声称全量52逐人核完。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://stat.nankai.edu.cn/8081/"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "统计与数据科学学院全体教师目录显示52条/3页，本次仅第一页官方顺序首3；不声称全量52逐人核完。"
+      ],
+      "source_observation_ids": [
+        "nku-selected-roster-rotation-001:roster-nku-stat-liuminqian:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "nku-liuminqian"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-nku-stat-zouchangliang",
+      "name": "邹长亮",
+      "school_id": "nku",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nku-stat",
+      "department_id": "nku-stat",
+      "category": "统计与数据科学学院教师目录",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://my.nankai.edu.cn/stat/zzl/list.htm",
+      "roster_source_url": "https://stat.nankai.edu.cn/8081/",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "nku-zouchangliang",
+      "batch_id": "nku-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-nku-rotation-001",
+      "source_ids": [
+        "zouchangliang-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "统计与数据科学学院全体教师目录显示52条/3页，本次仅第一页官方顺序首3；不声称全量52逐人核完。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://stat.nankai.edu.cn/8081/"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "统计与数据科学学院全体教师目录显示52条/3页，本次仅第一页官方顺序首3；不声称全量52逐人核完。"
+      ],
+      "source_observation_ids": [
+        "nku-selected-roster-rotation-001:roster-nku-stat-zouchangliang:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "nku-zouchangliang"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-dlut-math-chengguozheng",
+      "name": "程国正",
+      "school_id": "dlut",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "dlut-math-institute",
+      "department_id": "dlut-math-institute",
+      "category": "数学科学学院数学研究所",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://faculty.dlut.edu.cn/chengguozheng/zh_CN/index.htm",
+      "roster_source_url": "https://math.dlut.edu.cn/szdw/szxx2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "dlut-chengguozheng",
+      "batch_id": "dlut-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-dlut-rotation-001",
+      "source_ids": [
+        "chengguozheng-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学研究所正高级目录17条首3；未扩大为所有数学教师。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.dlut.edu.cn/szdw/szxx2.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学研究所正高级目录17条首3；未扩大为所有数学教师。"
+      ],
+      "source_observation_ids": [
+        "dlut-selected-roster-rotation-001:roster-dlut-math-chengguozheng:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "dlut-chengguozheng"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-dlut-math-daiguowei",
+      "name": "代国伟",
+      "school_id": "dlut",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "dlut-math-institute",
+      "department_id": "dlut-math-institute",
+      "category": "数学科学学院数学研究所",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://faculty.dlut.edu.cn/daiguowei/zh_CN/index.htm",
+      "roster_source_url": "https://math.dlut.edu.cn/szdw/szxx2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "dlut-daiguowei",
+      "batch_id": "dlut-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-dlut-rotation-001",
+      "source_ids": [
+        "daiguowei-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学研究所正高级目录17条首3；未扩大为所有数学教师。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.dlut.edu.cn/szdw/szxx2.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学研究所正高级目录17条首3；未扩大为所有数学教师。"
+      ],
+      "source_observation_ids": [
+        "dlut-selected-roster-rotation-001:roster-dlut-math-daiguowei:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "dlut-daiguowei"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-dlut-math-hanzhiqing",
+      "name": "韩志清",
+      "school_id": "dlut",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "dlut-math-institute",
+      "department_id": "dlut-math-institute",
+      "category": "数学科学学院数学研究所",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://faculty.dlut.edu.cn/1997011075/zh_CN/index.htm",
+      "roster_source_url": "https://math.dlut.edu.cn/szdw/szxx2.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "dlut-hanzhiqing",
+      "batch_id": "dlut-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-dlut-rotation-001",
+      "source_ids": [
+        "hanzhiqing-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学研究所正高级目录17条首3；未扩大为所有数学教师。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.dlut.edu.cn/szdw/szxx2.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学研究所正高级目录17条首3；未扩大为所有数学教师。"
+      ],
+      "source_observation_ids": [
+        "dlut-selected-roster-rotation-001:roster-dlut-math-hanzhiqing:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "dlut-hanzhiqing"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-neu-math-chenyanping",
+      "name": "陈艳萍",
+      "school_id": "neu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "neu-science-math",
+      "department_id": "neu-science-math",
+      "category": "数学系教师名录",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://cos.neu.edu.cn/math/2024/1223/c9317a276228/page.htm",
+      "roster_source_url": "https://cos.neu.edu.cn/math/2025/0422/c8906a282040/page.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "neu-chenyanping",
+      "batch_id": "neu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-neu-rotation-001",
+      "source_ids": [
+        "chenyanping-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学系官方2026-09-16更新名录，教授按姓名首字母排序首3陈艳萍、谷世杰、郭萌；第三人无详情链接，只待核名录层。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cos.neu.edu.cn/math/2025/0422/c8906a282040/page.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学系官方2026-09-16更新名录，教授按姓名首字母排序首3陈艳萍、谷世杰、郭萌；第三人无详情链接，只待核名录层。"
+      ],
+      "source_observation_ids": [
+        "neu-selected-roster-rotation-001:roster-neu-math-chenyanping:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "neu-chenyanping"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-neu-math-gushijie",
+      "name": "谷世杰",
+      "school_id": "neu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "neu-science-math",
+      "department_id": "neu-science-math",
+      "category": "数学系教师名录",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://cos.neu.edu.cn/math/2023/1020/c9317a236392/page.htm",
+      "roster_source_url": "https://cos.neu.edu.cn/math/2025/0422/c8906a282040/page.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "neu-gushijie",
+      "batch_id": "neu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-neu-rotation-001",
+      "source_ids": [
+        "gushijie-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学系官方2026-09-16更新名录，教授按姓名首字母排序首3陈艳萍、谷世杰、郭萌；第三人无详情链接，只待核名录层。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://cos.neu.edu.cn/math/2025/0422/c8906a282040/page.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学系官方2026-09-16更新名录，教授按姓名首字母排序首3陈艳萍、谷世杰、郭萌；第三人无详情链接，只待核名录层。"
+      ],
+      "source_observation_ids": [
+        "neu-selected-roster-rotation-001:roster-neu-math-gushijie:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "neu-gushijie"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-neu-math-guomeng",
+      "name": "郭萌",
+      "school_id": "neu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "neu-science-math",
+      "department_id": "neu-science-math",
+      "category": "数学系教师名录",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": null,
+      "roster_source_url": "https://cos.neu.edu.cn/math/2025/0422/c8906a282040/page.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_selected_roster_and_independent_identity_evidence_no_direct_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "neu-guomeng",
+      "batch_id": "neu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-neu-rotation-001",
+      "source_ids": [
+        "guomeng-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学系官方2026-09-16更新名录，教授按姓名首字母排序首3陈艳萍、谷世杰、郭萌；第三人无详情链接，只待核名录层。",
+      "source_identity_evidence": {
+        "status": "official_roster_only_no_profile_link",
+        "source_url": "https://cos.neu.edu.cn/math/2025/0422/c8906a282040/page.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学系官方2026-09-16更新名录，教授按姓名首字母排序首3陈艳萍、谷世杰、郭萌；第三人无详情链接，只待核名录层。"
+      ],
+      "profile_candidate_url": null,
+      "professional_evidence_url": "https://cos.neu.edu.cn/math/2025/0422/c8906a282040/page.htm",
+      "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
+      "official_profile_navigation_eligible": false,
+      "official_profile_availability": "not_identified",
+      "official_profile_availability_label": "官方名录未提供个人主页，不按同名外校页面补链",
+      "source_observation_ids": [
+        "neu-selected-roster-rotation-001:roster-neu-math-guomeng:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-tju-math-baojianhai",
+      "name": "鲍建海",
+      "school_id": "tju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "tju-math",
+      "department_id": "tju-math",
+      "category": "数学学院教师队伍",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://cam.tju.edu.cn/faculty/teacherDetail.php?id=102",
+      "roster_source_url": "https://math.tju.edu.cn/szdw/jsdw.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "tju-baojianhai",
+      "batch_id": "tju-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-tju-rotation-001",
+      "source_ids": [
+        "baojianhai-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学学院教师队伍首页原序首3（鲍建海、曹杰、曾红刚）；页面共5页，本轮不声称全院覆盖，也不按教育背景筛人。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.tju.edu.cn/szdw/jsdw.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学学院教师队伍首页原序首3（鲍建海、曹杰、曾红刚）；页面共5页，本轮不声称全院覆盖，也不按教育背景筛人。"
+      ],
+      "source_observation_ids": [
+        "tju-selected-roster-rotation-001:roster-tju-math-baojianhai:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "tju-baojianhai"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-tju-math-caojie",
+      "name": "曹杰",
+      "school_id": "tju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "tju-math",
+      "department_id": "tju-math",
+      "category": "数学学院教师队伍",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://cam.tju.edu.cn/faculty/teacherDetail.php?id=126",
+      "roster_source_url": "https://math.tju.edu.cn/szdw/jsdw.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "tju-caojie",
+      "batch_id": "tju-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-tju-rotation-001",
+      "source_ids": [
+        "caojie-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学学院教师队伍首页原序首3（鲍建海、曹杰、曾红刚）；页面共5页，本轮不声称全院覆盖，也不按教育背景筛人。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.tju.edu.cn/szdw/jsdw.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学学院教师队伍首页原序首3（鲍建海、曹杰、曾红刚）；页面共5页，本轮不声称全院覆盖，也不按教育背景筛人。"
+      ],
+      "source_observation_ids": [
+        "tju-selected-roster-rotation-001:roster-tju-math-caojie:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "tju-caojie"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-tju-math-zenghonggang",
+      "name": "曾红刚",
+      "school_id": "tju",
+      "campus_id": "tju-beiyangyuan",
+      "campus_ids": [
+        "tju-beiyangyuan"
+      ],
+      "organization_id": "tju-math",
+      "department_id": "tju-math",
+      "category": "数学学院教师队伍",
+      "listed_role": "副教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.tju.edu.cn/info/1715/5520.htm",
+      "roster_source_url": "https://math.tju.edu.cn/szdw/jsdw.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "tju-zenghonggang",
+      "batch_id": "tju-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-tju-rotation-001",
+      "source_ids": [
+        "zenghonggang-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "数学学院教师队伍首页原序首3（鲍建海、曹杰、曾红刚）；页面共5页，本轮不声称全院覆盖，也不按教育背景筛人。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.tju.edu.cn/szdw/jsdw.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "数学学院教师队伍首页原序首3（鲍建海、曹杰、曾红刚）；页面共5页，本轮不声称全院覆盖，也不按教育背景筛人。"
+      ],
+      "campus_evidence": {
+        "source_id": "zenghonggang-source-2",
+        "source_url": "https://math.tju.edu.cn/info/1715/5520.htm",
+        "basis": "official_profile_office_campus_explicit",
+        "note": "个人页明确办公室所在校区；仅记录校区，不保留具体办公室或联系方式。"
+      },
+      "source_observation_ids": [
+        "tju-selected-roster-rotation-001:roster-tju-math-zenghonggang:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "tju-zenghonggang"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-jlu-math-zhangyubiao",
+      "name": "张与彪",
+      "school_id": "jlu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "jlu-math-applied",
+      "department_id": "jlu-math-applied",
+      "category": "数学学院教授",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.jlu.edu.cn/info/1061/16332.htm",
+      "roster_source_url": "https://math.jlu.edu.cn/szdw1/js.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "jlu-zhangyubiao",
+      "batch_id": "jlu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-jlu-rotation-001",
+      "source_ids": [
+        "zhangyubiao-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.jlu.edu.cn/szdw1/js.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。"
+      ],
+      "source_observation_ids": [
+        "jlu-selected-roster-rotation-001:roster-jlu-math-zhangyubiao:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "jlu-zhangyubiao"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-jlu-math-zhangqian-math",
+      "name": "张倩",
+      "school_id": "jlu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "jlu-math-computational",
+      "department_id": "jlu-math-computational",
+      "category": "数学学院教授",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.jlu.edu.cn/info/1061/16325.htm",
+      "roster_source_url": "https://math.jlu.edu.cn/szdw1/js.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "jlu-zhangqian-math",
+      "batch_id": "jlu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-jlu-rotation-001",
+      "source_ids": [
+        "zhangqian-math-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.jlu.edu.cn/szdw1/js.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。"
+      ],
+      "source_observation_ids": [
+        "jlu-selected-roster-rotation-001:roster-jlu-math-zhangqian-math:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "jlu-zhangqian-math"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-jlu-math-wenjinming",
+      "name": "温金明",
+      "school_id": "jlu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "jlu-math-statistics",
+      "department_id": "jlu-math-statistics",
+      "category": "数学学院教授",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.jlu.edu.cn/info/1061/16096.htm",
+      "roster_source_url": "https://math.jlu.edu.cn/szdw1/js.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "jlu-wenjinming",
+      "batch_id": "jlu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-jlu-rotation-001",
+      "source_ids": [
+        "wenjinming-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.jlu.edu.cn/szdw1/js.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。"
+      ],
+      "source_observation_ids": [
+        "jlu-selected-roster-rotation-001:roster-jlu-math-wenjinming:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "jlu-wenjinming"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-tongji-math-chensuqin",
+      "name": "陈素琴",
+      "school_id": "tongji",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "tongji-math-teaching",
+      "department_id": "tongji-math-teaching",
+      "category": "教授（姓氏首字母顺序）",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.tongji.edu.cn/info/1122/8160.htm",
+      "roster_source_url": "https://math.tongji.edu.cn/szdw2/azc/js.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "tongji-chensuqin",
+      "batch_id": "tongji-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-tongji-rotation-001",
+      "source_ids": [
+        "chensuqin-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.tongji.edu.cn/szdw2/azc/js.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。"
+      ],
+      "employment_status": "official_profile_explicitly_active",
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation-001:roster-tongji-math-chensuqin:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "tongji-chensuqin"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-tongji-math-chenxiongda",
+      "name": "陈雄达",
+      "school_id": "tongji",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "tongji-math-teaching",
+      "department_id": "tongji-math-teaching",
+      "category": "教授（姓氏首字母顺序）",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.tongji.edu.cn/info/1122/8165.htm",
+      "roster_source_url": "https://math.tongji.edu.cn/szdw2/azc/js.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "tongji-chenxiongda",
+      "batch_id": "tongji-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-tongji-rotation-001",
+      "source_ids": [
+        "chenxiongda-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.tongji.edu.cn/szdw2/azc/js.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。"
+      ],
+      "employment_status": "official_profile_explicitly_active",
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation-001:roster-tongji-math-chenxiongda:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "tongji-chenxiongda"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-tongji-math-shanhaiying",
+      "name": "单海英",
+      "school_id": "tongji",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "tongji-math-combinatorics",
+      "department_id": "tongji-math-combinatorics",
+      "category": "教授（姓氏首字母顺序）",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.tongji.edu.cn/info/1122/8489.htm",
+      "roster_source_url": "https://math.tongji.edu.cn/szdw2/azc/js.htm",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "tongji-shanhaiying",
+      "batch_id": "tongji-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-tongji-rotation-001",
+      "source_ids": [
+        "shanhaiying-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.tongji.edu.cn/szdw2/azc/js.htm"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。"
+      ],
+      "employment_status": "official_profile_explicitly_active",
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation-001:roster-tongji-math-shanhaiying:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-ecnu-math-biping",
+      "name": "毕平",
+      "school_id": "ecnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ecnu-math-applied",
+      "department_id": "ecnu-math-applied",
+      "category": "在职专任教师",
+      "listed_role": "副教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.ecnu.edu.cn/facultydetail.html?uid=pbi",
+      "roster_source_url": "https://math.ecnu.edu.cn/faculty.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ecnu-biping",
+      "batch_id": "ecnu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-ecnu-rotation-001",
+      "source_ids": [
+        "biping-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.ecnu.edu.cn/faculty.html"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。"
+      ],
+      "source_observation_ids": [
+        "ecnu-selected-roster-rotation-001:roster-ecnu-math-biping:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "ecnu-biping"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-ecnu-math-chenxin-math",
+      "name": "陈鑫",
+      "school_id": "ecnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ecnu-math-education",
+      "department_id": "ecnu-math-education",
+      "category": "在职专任教师",
+      "listed_role": "讲师",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.ecnu.edu.cn/facultydetail.html?uid=xchen",
+      "roster_source_url": "https://math.ecnu.edu.cn/faculty.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ecnu-chenxin-math",
+      "batch_id": "ecnu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-ecnu-rotation-001",
+      "source_ids": [
+        "chenxin-math-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.ecnu.edu.cn/faculty.html"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。"
+      ],
+      "source_observation_ids": [
+        "ecnu-selected-roster-rotation-001:roster-ecnu-math-chenxin-math:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
+    },
+    {
+      "id": "roster-ecnu-math-chenzhangchi",
+      "name": "陈张弛",
+      "school_id": "ecnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ecnu-math-pure",
+      "department_id": "ecnu-math-pure",
+      "category": "在职专任教师",
+      "listed_role": "青年研究员",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.ecnu.edu.cn/facultydetail.html?uid=zcchen",
+      "roster_source_url": "https://math.ecnu.edu.cn/faculty.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "ecnu-chenzhangchi",
+      "batch_id": "ecnu-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-ecnu-rotation-001",
+      "source_ids": [
+        "chenzhangchi-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.ecnu.edu.cn/faculty.html"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。"
+      ],
+      "source_observation_ids": [
+        "ecnu-selected-roster-rotation-001:roster-ecnu-math-chenzhangchi:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "ecnu-chenzhangchi"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-nju-math-caoliyuan",
+      "name": "曹立元",
+      "school_id": "nju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nju-math",
+      "department_id": "nju-math",
+      "category": "数学学院公开查询名录（保留跨院归属）",
+      "listed_role": "准聘助理教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.nju.edu.cn/jzyg/apypl/20241119/i301883.html",
+      "roster_source_url": "https://math.nju.edu.cn/jzyg/apypl/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "nju-caoliyuan",
+      "batch_id": "nju-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-nju-rotation-001",
+      "source_ids": [
+        "caoliyuan-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.nju.edu.cn/jzyg/apypl/index.html"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。"
+      ],
+      "source_observation_ids": [
+        "nju-selected-roster-rotation-001:roster-nju-math-caoliyuan:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "nju-caoliyuan"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-nju-math-chencaihua",
+      "name": "陈彩华",
+      "school_id": "nju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nju-sme",
+      "department_id": "nju-sme",
+      "category": "数学学院公开查询名录（保留跨院归属）",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://sme.nju.edu.cn/cch/listm.htm",
+      "roster_source_url": "https://math.nju.edu.cn/jzyg/apypl/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "nju-chencaihua",
+      "batch_id": "nju-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-nju-rotation-001",
+      "source_ids": [
+        "chencaihua-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.nju.edu.cn/jzyg/apypl/index.html",
+        "cross_org_note": "数学学院名录明确括注工程管理学院并原生数据链接本页，不推断数学学院兼任。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。"
+      ],
+      "source_observation_ids": [
+        "nju-selected-roster-rotation-001:roster-nju-math-chencaihua:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [
+        "nju-chencaihua"
+      ],
+      "candidate_match_status": "pending_identity_review"
+    },
+    {
+      "id": "roster-nju-math-chengchuangxun",
+      "name": "程创勋",
+      "school_id": "nju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "nju-math",
+      "department_id": "nju-math",
+      "category": "数学学院公开查询名录（保留跨院归属）",
+      "listed_role": "教授",
+      "listed_role_basis": "reviewed_source_record",
+      "official_profile_url": "https://math.nju.edu.cn/jzyg/apypl/20240321/i261795.html",
+      "roster_source_url": "https://math.nju.edu.cn/jzyg/apypl/index.html",
+      "accessed_on": "2026-10-23",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": false,
+      "verified_person_id": null,
+      "source_person_id": "nju-chengchuangxun",
+      "batch_id": "nju-selected-roster-rotation-001",
+      "source_batch_id": "faculty-batch-nju-rotation-001",
+      "source_ids": [
+        "chengchuangxun-source-1"
+      ],
+      "source_evidence_status": "official_roster_read",
+      "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://math.nju.edu.cn/jzyg/apypl/index.html"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。"
+      ],
+      "source_observation_ids": [
+        "nju-selected-roster-rotation-001:roster-nju-math-chengchuangxun:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "not_linked"
     }
   ],
   "conflicts": [
@@ -60783,27 +63044,443 @@
         }
       ],
       "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "bit-selected-roster-rotation-001",
+      "school_id": "bit",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-bit-cs-image-dihuijun",
+        "roster-bit-cs-image-gaozhi",
+        "roster-bit-cs-image-lijianwu"
+      ],
+      "source_observation_ids": [
+        "bit-selected-roster-rotation-001:roster-bit-cs-image-dihuijun:1",
+        "bit-selected-roster-rotation-001:roster-bit-cs-image-gaozhi:1",
+        "bit-selected-roster-rotation-001:roster-bit-cs-image-lijianwu:1"
+      ],
+      "selection": "图像计算与感知智能研究所教师名录15条中的官方顺序首3；不采用机构介绍旧表11人顺序。",
+      "selection_basis": "图像计算与感知智能研究所教师名录15条中的官方顺序首3；不采用机构介绍旧表11人顺序。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-bit-rotation-001.json",
+          "sha256": "9c0339460520dac802cad445cc15631e641287baeb7d5fbc3c876beb412acb0a"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "cau-selected-roster-rotation-001",
+      "school_id": "cau",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-cau-science-math-wangchao",
+        "roster-cau-science-math-peishan",
+        "roster-cau-science-math-mengfanfei"
+      ],
+      "source_observation_ids": [
+        "cau-selected-roster-rotation-001:roster-cau-science-math-wangchao:1",
+        "cau-selected-roster-rotation-001:roster-cau-science-math-peishan:1",
+        "cau-selected-roster-rotation-001:roster-cau-science-math-mengfanfei:1"
+      ],
+      "selection": "理学院专任教师原始HTML按date2=应用数学系过滤、保持文档顺序并去除分类重复后36条的首3；网页文本忽略筛选会把所有人重复显示为不同职称，故职称取本人正文/原始date1。",
+      "selection_basis": "理学院专任教师原始HTML按date2=应用数学系过滤、保持文档顺序并去除分类重复后36条的首3；网页文本忽略筛选会把所有人重复显示为不同职称，故职称取本人正文/原始date1。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-cau-rotation-001.json",
+          "sha256": "0cd377820a4b67b874f4aaf29464c0ea7bae370df5c9a9bae9f41fb79391f7f4"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "buaa-selected-roster-rotation-001",
+      "school_id": "buaa",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 3,
+      "coverage_unit_count": 3,
+      "entry_ids": [
+        "roster-buaa-physics-bizhuanfang",
+        "roster-buaa-physics-chengtongguang",
+        "roster-buaa-physics-chenyong"
+      ],
+      "source_observation_ids": [
+        "buaa-selected-roster-rotation-001:roster-buaa-physics-bizhuanfang:1",
+        "buaa-selected-roster-rotation-001:roster-buaa-physics-chengtongguang:1",
+        "buaa-selected-roster-rotation-001:roster-buaa-physics-chenyong:1"
+      ],
+      "selection": "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。",
+      "selection_basis": "物理学院全体教师公开页内嵌79条；按网页默认首字母稳定升序的显示顺序取首3，不按教育背景筛选。同字母保持官方原数据顺序。学院简介教职工124人（2026年6月）属于不同口径，不视作79条目录的完整性证明。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-buaa-rotation-001.json",
+          "sha256": "436bbcda132584780afe8cfbe0b231e9056f83377a4ec602dd3da6246457d025"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "muc-selected-roster-rotation-001",
+      "school_id": "muc",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-muc-math-niuruichao",
+        "roster-muc-math-yinyuhang",
+        "roster-muc-math-shanminjie"
+      ],
+      "source_observation_ids": [
+        "muc-selected-roster-rotation-001:roster-muc-math-niuruichao:1",
+        "muc-selected-roster-rotation-001:roster-muc-math-yinyuhang:1",
+        "muc-selected-roster-rotation-001:roster-muc-math-shanminjie:1"
+      ],
+      "selection": "理学院数学系官方当前15条名录首3牛瑞超、尹宇航、单敏捷，部分履历非全字段核完。",
+      "selection_basis": "理学院数学系官方当前15条名录首3牛瑞超、尹宇航、单敏捷，部分履历非全字段核完。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-muc-rotation-001.json",
+          "sha256": "01736382664998535a8f7c2c02e98fd7a79f9aaf11b14f47eb8ed96177db4c9c"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "bnu-selected-roster-rotation-001",
+      "school_id": "bnu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-bnu-math-baojiguang",
+        "roster-bnu-math-caiyongqiang",
+        "roster-bnu-math-caiyongyong"
+      ],
+      "source_observation_ids": [
+        "bnu-selected-roster-rotation-001:roster-bnu-math-baojiguang:1",
+        "bnu-selected-roster-rotation-001:roster-bnu-math-caiyongqiang:1",
+        "bnu-selected-roster-rotation-001:roster-bnu-math-caiyongyong:1"
+      ],
+      "selection": "数学科学学院师资队伍A-C字母分组10条中的官方顺序首3；不代表全院或全校，且不与人工智能学院首批3人重复。",
+      "selection_basis": "数学科学学院师资队伍A-C字母分组10条中的官方顺序首3；不代表全院或全校，且不与人工智能学院首批3人重复。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-bnu-rotation-001.json",
+          "sha256": "666deda7a911769abfbed98664bf23768946057f215f7b4e07a0dad3389bcbc6"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "nku-selected-roster-rotation-001",
+      "school_id": "nku",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-nku-stat-wangzhaojun",
+        "roster-nku-stat-liuminqian",
+        "roster-nku-stat-zouchangliang"
+      ],
+      "source_observation_ids": [
+        "nku-selected-roster-rotation-001:roster-nku-stat-wangzhaojun:1",
+        "nku-selected-roster-rotation-001:roster-nku-stat-liuminqian:1",
+        "nku-selected-roster-rotation-001:roster-nku-stat-zouchangliang:1"
+      ],
+      "selection": "统计与数据科学学院全体教师目录显示52条/3页，本次仅第一页官方顺序首3；不声称全量52逐人核完。",
+      "selection_basis": "统计与数据科学学院全体教师目录显示52条/3页，本次仅第一页官方顺序首3；不声称全量52逐人核完。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-nku-rotation-001.json",
+          "sha256": "2177bbd15bf1abfe314d2dfabf9060ca1c31c66a5c282322053e3482537c6e55"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "dlut-selected-roster-rotation-001",
+      "school_id": "dlut",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-dlut-math-chengguozheng",
+        "roster-dlut-math-daiguowei",
+        "roster-dlut-math-hanzhiqing"
+      ],
+      "source_observation_ids": [
+        "dlut-selected-roster-rotation-001:roster-dlut-math-chengguozheng:1",
+        "dlut-selected-roster-rotation-001:roster-dlut-math-daiguowei:1",
+        "dlut-selected-roster-rotation-001:roster-dlut-math-hanzhiqing:1"
+      ],
+      "selection": "数学研究所正高级目录17条首3；未扩大为所有数学教师。",
+      "selection_basis": "数学研究所正高级目录17条首3；未扩大为所有数学教师。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-dlut-rotation-001.json",
+          "sha256": "9ae01b208f09a4cdfd86159934f6569df597383f77b690e8c52c53b0fdaf348d"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "neu-selected-roster-rotation-001",
+      "school_id": "neu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-neu-math-chenyanping",
+        "roster-neu-math-gushijie",
+        "roster-neu-math-guomeng"
+      ],
+      "source_observation_ids": [
+        "neu-selected-roster-rotation-001:roster-neu-math-chenyanping:1",
+        "neu-selected-roster-rotation-001:roster-neu-math-gushijie:1",
+        "neu-selected-roster-rotation-001:roster-neu-math-guomeng:1"
+      ],
+      "selection": "数学系官方2026-09-16更新名录，教授按姓名首字母排序首3陈艳萍、谷世杰、郭萌；第三人无详情链接，只待核名录层。",
+      "selection_basis": "数学系官方2026-09-16更新名录，教授按姓名首字母排序首3陈艳萍、谷世杰、郭萌；第三人无详情链接，只待核名录层。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-neu-rotation-001.json",
+          "sha256": "1cdcfd5ffd3a3b64c763ecf7b963629a3e9564a30e022bd921e25508074c059d"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "tju-selected-roster-rotation-001",
+      "school_id": "tju",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-tju-math-baojianhai",
+        "roster-tju-math-caojie",
+        "roster-tju-math-zenghonggang"
+      ],
+      "source_observation_ids": [
+        "tju-selected-roster-rotation-001:roster-tju-math-baojianhai:1",
+        "tju-selected-roster-rotation-001:roster-tju-math-caojie:1",
+        "tju-selected-roster-rotation-001:roster-tju-math-zenghonggang:1"
+      ],
+      "selection": "数学学院教师队伍首页原序首3（鲍建海、曹杰、曾红刚）；页面共5页，本轮不声称全院覆盖，也不按教育背景筛人。",
+      "selection_basis": "数学学院教师队伍首页原序首3（鲍建海、曹杰、曾红刚）；页面共5页，本轮不声称全院覆盖，也不按教育背景筛人。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-tju-rotation-001.json",
+          "sha256": "49e6aca7df09c8169521ab9dcf15ede659006997e34e0b389c8ed9999c102bec"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "jlu-selected-roster-rotation-001",
+      "school_id": "jlu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 3,
+      "coverage_unit_count": 3,
+      "entry_ids": [
+        "roster-jlu-math-zhangyubiao",
+        "roster-jlu-math-zhangqian-math",
+        "roster-jlu-math-wenjinming"
+      ],
+      "source_observation_ids": [
+        "jlu-selected-roster-rotation-001:roster-jlu-math-zhangyubiao:1",
+        "jlu-selected-roster-rotation-001:roster-jlu-math-zhangqian-math:1",
+        "jlu-selected-roster-rotation-001:roster-jlu-math-wenjinming:1"
+      ],
+      "selection": "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。",
+      "selection_basis": "官方教授分类页可见68条，按当前页面顺序首3张与彪、张倩、温金明；此排序不是姓名序，不宣称全院覆盖。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-jlu-rotation-001.json",
+          "sha256": "301801b782b5862ca4c2f69573c4a293d00a08470141cc79d42fb0e3d1e9989b"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "tongji-selected-roster-rotation-001",
+      "school_id": "tongji",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 2,
+      "coverage_unit_count": 2,
+      "entry_ids": [
+        "roster-tongji-math-chensuqin",
+        "roster-tongji-math-chenxiongda",
+        "roster-tongji-math-shanhaiying"
+      ],
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation-001:roster-tongji-math-chensuqin:1",
+        "tongji-selected-roster-rotation-001:roster-tongji-math-chenxiongda:1",
+        "tongji-selected-roster-rotation-001:roster-tongji-math-shanhaiying:1"
+      ],
+      "selection": "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。",
+      "selection_basis": "官方教授分类标共39条，当前第1页姓氏首字母序首3陈素琴、陈雄达、单海英；2部分职业+1稀疏待核，非详细履历完成。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-tongji-rotation-001.json",
+          "sha256": "0e0c2d3b4557f74ed53e0f5154c594d2c53bfa4084a21aab6a3556eb8bb73137"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "ecnu-selected-roster-rotation-001",
+      "school_id": "ecnu",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 3,
+      "coverage_unit_count": 3,
+      "entry_ids": [
+        "roster-ecnu-math-biping",
+        "roster-ecnu-math-chenxin-math",
+        "roster-ecnu-math-chenzhangchi"
+      ],
+      "source_observation_ids": [
+        "ecnu-selected-roster-rotation-001:roster-ecnu-math-biping:1",
+        "ecnu-selected-roster-rotation-001:roster-ecnu-math-chenxin-math:1",
+        "ecnu-selected-roster-rotation-001:roster-ecnu-math-chenzhangchi:1"
+      ],
+      "selection": "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。",
+      "selection_basis": "官方名录标100位，在职专任教师原序首3毕平、陈鑫、陈张弛，2部分职业+1稀疏待核。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-ecnu-rotation-001.json",
+          "sha256": "559acbdca3c51c489c192acb0c0ea3b60aba6d6a0c1f7a691ce71d5b8ff25c4a"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "nju-selected-roster-rotation-001",
+      "school_id": "nju",
+      "accessed_on": "2026-10-23",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 2,
+      "coverage_unit_count": 2,
+      "entry_ids": [
+        "roster-nju-math-caoliyuan",
+        "roster-nju-math-chencaihua",
+        "roster-nju-math-chengchuangxun"
+      ],
+      "source_observation_ids": [
+        "nju-selected-roster-rotation-001:roster-nju-math-caoliyuan:1",
+        "nju-selected-roster-rotation-001:roster-nju-math-chencaihua:1",
+        "nju-selected-roster-rotation-001:roster-nju-math-chengchuangxun:1"
+      ],
+      "selection": "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。",
+      "selection_basis": "当前数学学院公开名录页面原生POST只读查询返回前3曹立元、陈彩华（工程管理学院）、程创勋；保留跨院归属，2部分+1稀疏待核。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-nju-rotation-001.json",
+          "sha256": "b9ed7f39637631b7e9dbdef9e5f716ad7f4e29ec67fda5f812ab5fc0fc76ff8e"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
     }
   ],
   "totals": {
-    "organization_count": 67,
-    "category_count": 130,
-    "entries_with_profile_link": 1399,
-    "entries_without_profile_link": 190,
+    "organization_count": 88,
+    "category_count": 151,
+    "entries_with_profile_link": 1437,
+    "entries_without_profile_link": 191,
     "dedup_candidate_groups": 60,
     "placeholder_profile_link_observations": 18,
     "current_employment_count_verified": false,
     "not_unique_people_count": true,
-    "record_count": 1589,
-    "raw_observation_count": 1627,
-    "roster_records": 1589,
-    "raw_source_observations": 1627,
-    "coverage_unit_count": 156,
+    "record_count": 1628,
+    "raw_observation_count": 1666,
+    "roster_records": 1628,
+    "raw_source_observations": 1666,
+    "coverage_unit_count": 177,
     "count_unit": "integrated_roster_records",
     "source_record_grouping_reduction": 38,
     "category_count_basis": "unique_organization_category_pairs",
-    "unique_organization_category_pairs": 130,
-    "batch_category_count": 149,
+    "unique_organization_category_pairs": 151,
+    "batch_category_count": 170,
     "category_count_source": "coverage_rows_preserved_without_deduplication"
   },
   "role_interpretation": {
@@ -60948,5 +63625,5 @@
     }
   ],
   "raw_data_location": "完整原始来源观察保存在仓库 data/rosters.json，以及导出 Excel 的“原始来源观察”工作表；网站快照不重复加载这些原始内容。",
-  "build_id": "d8d3b4c2c65cd49b"
+  "build_id": "4ed39e7aaef51707"
 }

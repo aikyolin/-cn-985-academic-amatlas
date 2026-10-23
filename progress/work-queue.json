@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T17:20:00Z",
-  "base_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb",
+  "updated_at": "2026-10-23T17:44:00Z",
+  "base_commit": "6a2ffd149996b120a614d82652c5805790e54b82",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
     "registry_complete": false,
-    "known_organization_nodes": 145,
+    "known_organization_nodes": 175,
     "write_model": "single_controller_expected_sha",
     "active_institutions": [
       "hit",
@@ -5260,6 +5260,573 @@
       "next_cursor": "followup_selected_records_reviewed",
       "attempted_at": "2026-10-23T17:20:00Z",
       "last_verified_commit": "4a4bbf0d303a9a2b0880a44a75e4dc5542bb2edb"
+    },
+    {
+      "task_id": "bit:bit-cs-image-perception:rotation-wave1",
+      "institution_id": "bit",
+      "organization_id": "bit-cs-image-perception",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cs.bit.edu.cn/szdw/jsml2/txjsygzznyjs2/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "bnu:bnu-math:rotation-wave1",
+      "institution_id": "bnu",
+      "organization_id": "bnu-math",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.bnu.edu.cn/jzg/szdw/ac/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "buaa:buaa-physics-applied:rotation-wave1",
+      "institution_id": "buaa",
+      "organization_id": "buaa-physics-applied",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://physics.buaa.edu.cn/xygk/jgsz.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "buaa:buaa-physics-department:rotation-wave1",
+      "institution_id": "buaa",
+      "organization_id": "buaa-physics-department",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://physics.buaa.edu.cn/xygk/jgsz.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "buaa:buaa-physics-nuclear:rotation-wave1",
+      "institution_id": "buaa",
+      "organization_id": "buaa-physics-nuclear",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://physics.buaa.edu.cn/xygk/jgsz.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "cau:cau-science-math:rotation-wave1",
+      "institution_id": "cau",
+      "organization_id": "cau-science-math",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://sci.cau.edu.cn/col/col40615/index.html"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "dlut:dlut-math-institute:rotation-wave1",
+      "institution_id": "dlut",
+      "organization_id": "dlut-math-institute",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.dlut.edu.cn/szdw/szxx2.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "ecnu:ecnu-math-applied:rotation-wave1",
+      "institution_id": "ecnu",
+      "organization_id": "ecnu-math-applied",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.ecnu.edu.cn/facultydetail.html?uid=pbi"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "ecnu:ecnu-math-education:rotation-wave1",
+      "institution_id": "ecnu",
+      "organization_id": "ecnu-math-education",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.ecnu.edu.cn/facultydetail.html?uid=xchen"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "ecnu:ecnu-math-pure:rotation-wave1",
+      "institution_id": "ecnu",
+      "organization_id": "ecnu-math-pure",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.ecnu.edu.cn/facultydetail.html?uid=zcchen"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "jlu:jlu-math-applied:rotation-wave1",
+      "institution_id": "jlu",
+      "organization_id": "jlu-math-applied",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.jlu.edu.cn/info/1061/16332.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "jlu:jlu-math-computational:rotation-wave1",
+      "institution_id": "jlu",
+      "organization_id": "jlu-math-computational",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.jlu.edu.cn/info/1061/16325.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "jlu:jlu-math-statistics:rotation-wave1",
+      "institution_id": "jlu",
+      "organization_id": "jlu-math-statistics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.jlu.edu.cn/info/1061/16096.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "muc:muc-science-math:rotation-wave1",
+      "institution_id": "muc",
+      "organization_id": "muc-science-math",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://lxy.muc.edu.cn/szdw/sxx.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "neu:neu-science-math:rotation-wave1",
+      "institution_id": "neu",
+      "organization_id": "neu-science-math",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://cos.neu.edu.cn/math/2025/0422/c8906a282040/page.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "nju:nju-math:rotation-wave1",
+      "institution_id": "nju",
+      "organization_id": "nju-math",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.nju.edu.cn/jzyg/apypl/index.html"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "nju:nju-sme:rotation-wave1",
+      "institution_id": "nju",
+      "organization_id": "nju-sme",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://sme.nju.edu.cn/cch/listm.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "nku:nku-stat:rotation-wave1",
+      "institution_id": "nku",
+      "organization_id": "nku-stat",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://stat.nankai.edu.cn/8081/"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "tju:tju-math:rotation-wave1",
+      "institution_id": "tju",
+      "organization_id": "tju-math",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.tju.edu.cn/xyjs/xyjj.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "tongji:tongji-math-combinatorics:rotation-wave1",
+      "institution_id": "tongji",
+      "organization_id": "tongji-math-combinatorics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.tongji.edu.cn/szdw2/azc/js.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "tongji:tongji-math-teaching:rotation-wave1",
+      "institution_id": "tongji",
+      "organization_id": "tongji-math-teaching",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十三校轮转中的所选公开资料，不代表完整院系或当前人事名录。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.tongji.edu.cn/szdw2/azc/js.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave1-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续分校轮转与未知项补核，保留退休、历史岗位及证据级别。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23T17:44:00Z",
+      "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
     }
   ]
 }

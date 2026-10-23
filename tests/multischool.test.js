@@ -49,6 +49,17 @@ test('actual school pages isolate units and no-campus schools navigate straight 
  assert(!html.includes('#/org/hit-test-computing'));assert(!html.includes('甲校测试校区'));assert(!side.includes('campus-nav'));
  ui.navigate('#/campus/harbin');assert(ui.node('#main').innerHTML.includes('测试甲校（虚构）'));assert(!ui.node('#main').innerHTML.includes('#/org/pku-test-computing'));
 });
+test('school scope notes are historical across schools and remain escaped through repeated navigation',async()=>{
+ const d=fixture(),label='初始采样说明（历史范围，不代表当前全部收录）';
+ d.institutions[0].scope_note='最初只采样一个单位 <script>unsafe()</script>';d.institutions[1].scope_note='首批仅选3人，不代表当前收录';
+ const ui=await app(d,'#/school/hit');let html=ui.node('#main').innerHTML;
+ assert(html.includes('<strong>'+label+'：</strong>最初只采样一个单位 &lt;script&gt;unsafe()&lt;/script&gt;'));assert(!html.includes('<script>unsafe()</script>'));
+ for(const sid of ['pku','hit','pku']){ui.navigate('#/school/'+sid);html=ui.node('#main').innerHTML;assert.equal((html.match(/初始采样说明/g)||[]).length,1);assert(html.includes(label));assert(html.includes('<strong>1</strong>份已建人物档案'));assert(html.includes('<strong>2</strong>个已整理组织节点'));assert(html.includes('统计不代表全校教师或学院总数'));assert.equal(html.includes('首批仅选3人'),sid==='pku')}
+});
+test('legacy school scope fallback is historical but no-note schools retain neutral directory guidance',async()=>{
+ const d=fixture(),label='初始采样说明（历史范围，不代表当前全部收录）';d.institution={id:'hit'};d.scope_note='旧版甲校首批范围';
+ const ui=await app(d,'#/school/hit');assert(ui.node('#main').innerHTML.includes('<strong>'+label+'：</strong>'+d.scope_note));ui.navigate('#/school/pku');const html=ui.node('#main').innerHTML;assert(!html.includes(label));assert(!html.includes(d.scope_note));assert(html.includes('组织节点来自官方目录；合并与隶属关系以各条页面来源为准。'));
+});
 test('actual teacher filtering and school switches reset campus and org consistently',async()=>{
  const ui=await app(fixture(),'#/org/hit-test-computing');assert(ui.node('#results').innerHTML.includes('甲测试人物'));assert(!ui.node('#results').innerHTML.includes('乙测试人物'));
  ui.change('#filters','school','pku');assert(ui.node('#results').innerHTML.includes('乙测试人物'));assert(!ui.node('#results').innerHTML.includes('甲测试人物'));
