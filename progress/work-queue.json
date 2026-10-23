@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T17:44:00Z",
-  "base_commit": "6a2ffd149996b120a614d82652c5805790e54b82",
+  "updated_at": "2026-10-23",
+  "base_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
     "registry_complete": false,
-    "known_organization_nodes": 175,
+    "known_organization_nodes": 199,
     "write_model": "single_controller_expected_sha",
     "active_institutions": [
       "hit",
@@ -5827,6 +5827,465 @@
       "next_cursor": "rotation_selected_records_reviewed",
       "attempted_at": "2026-10-23T17:44:00Z",
       "last_verified_commit": "6a2ffd149996b120a614d82652c5805790e54b82"
+    },
+    {
+      "task_id": "csu:csu-math-applied:rotation-wave2",
+      "institution_id": "csu",
+      "organization_id": "csu-math-applied",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.csu.edu.cn/szdw/yysxx.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "fdu:fdu-math-applied:rotation-wave2",
+      "institution_id": "fdu",
+      "organization_id": "fdu-math-applied",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.fudan.edu.cn/yysxx/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "fdu:fdu-math-probability-statistics-actuarial:rotation-wave2",
+      "institution_id": "fdu",
+      "organization_id": "fdu-math-probability-statistics-actuarial",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.fudan.edu.cn/glytjjsx/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "hnu:hnu-math-basic:rotation-wave2",
+      "institution_id": "hnu",
+      "organization_id": "hnu-math-basic",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.hnu.edu.cn/szdw.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "hust:hust-math-applied:rotation-wave2",
+      "institution_id": "hust",
+      "organization_id": "hust-math-applied",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://maths.hust.edu.cn/szdw/szdw.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "hust:hust-math-center:rotation-wave2",
+      "institution_id": "hust",
+      "organization_id": "hust-math-center",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://mathcenter.hust.edu.cn/info/1082/3023.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "hust:hust-math-interdisciplinary:rotation-wave2",
+      "institution_id": "hust",
+      "organization_id": "hust-math-interdisciplinary",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://maths.hust.edu.cn/szdw/szdw.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "nudt:nudt-electronic-science:rotation-wave2",
+      "institution_id": "nudt",
+      "organization_id": "nudt-electronic-science",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.nudt.edu.cn/yssz/dzkxxy/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "nudt:nudt-foreign-languages:rotation-wave2",
+      "institution_id": "nudt",
+      "organization_id": "nudt-foreign-languages",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.nudt.edu.cn/yssz/gjgxxy/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "nudt:nudt-systems:rotation-wave2",
+      "institution_id": "nudt",
+      "organization_id": "nudt-systems",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.nudt.edu.cn/yssz/xtgcxy/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "ouc:ouc-math-department:rotation-wave2",
+      "institution_id": "ouc",
+      "organization_id": "ouc-math-department",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.ouc.edu.cn/sxx/list.psp"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "sdu:sdu-math:rotation-wave2",
+      "institution_id": "sdu",
+      "organization_id": "sdu-math",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.math.sdu.edu.cn/szdw.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "seu:seu-math-computational:rotation-wave2",
+      "institution_id": "seu",
+      "organization_id": "seu-math-computational",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.seu.edu.cn/_s256/cwr/list.psp"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "seu:seu-math-systems:rotation-wave2",
+      "institution_id": "seu",
+      "organization_id": "seu-math-systems",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.seu.edu.cn/BALDI%20SIMONE4/list.psp"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "ustc:ustc-math:rotation-wave2",
+      "institution_id": "ustc",
+      "organization_id": "ustc-math",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.ustc.edu.cn/szdw/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "whu:whu-math-stat:rotation-wave2",
+      "institution_id": "whu",
+      "organization_id": "whu-math-stat",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://jszy.whu.edu.cn/xyjslb.jsp?PAGENUM=1&id=2095&lang=zh_CN&st=0&totalpage=12&urltype=tsites.CollegeTeacherList&wbtreeid=1006"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
+    },
+    {
+      "task_id": "xmu:xmu-math-applied:rotation-wave2",
+      "institution_id": "xmu",
+      "organization_id": "xmu-math-applied",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "十一校轮转所选公开职业与教学资料；不代表全院名录、完整求学履历或当前在岗核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://math.xmu.edu.cn/szdw/zrjs.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/multischool-rotation-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "分校轮转并补核学历、身份及师承缺项；历史名录关联不推现职。",
+      "next_cursor": "rotation_selected_records_reviewed",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd"
     }
   ]
 }

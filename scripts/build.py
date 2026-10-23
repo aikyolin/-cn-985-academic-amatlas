@@ -70,6 +70,20 @@ def validate(d):
  for p in people:
   assert p['department_id'] in ids,'Unknown department'
   assert valid_url(p['official_url']),'Unsafe profile URL'
+  teaching=p.get('teaching')
+  assert teaching is None or isinstance(teaching,list),'Teaching must be an array or null'
+  for fact in teaching or []:
+   assert isinstance(fact,dict),'Teaching facts must be objects'
+   assert (isinstance(fact.get('name'),str) and fact['name'].strip()) or (isinstance(fact.get('course'),str) and fact['course'].strip()) or (isinstance(fact.get('courses'),list) and fact['courses'] and all(isinstance(v,str) and v.strip() for v in fact['courses'])),'Teaching facts require a named topic or legacy course list'
+   assert isinstance(fact.get('source_id'),str) and fact['source_id'].strip(),'Teaching facts require a source ID'
+   assert fact.get('role') is None or isinstance(fact['role'],str) and fact['role'].strip(),'Teaching role must be nonempty when provided'
+   assert valid_url(fact.get('source_url')),'Teaching facts require a safe evidence URL'
+   sources=[s for s in p['sources'] if s.get('id')==fact['source_id']]
+   assert len(sources)==1,'Teaching references unknown or ambiguous source'
+   assert sources[0].get('url')==fact['source_url'],'Teaching source ID and URL must agree'
+   assert all(fact.get(key) is None or isinstance(fact[key],str) for key in ['start','note']),'Teaching time and note must be text or null'
+   assert not any(fact.get(key) for key in ['education_event_id','education_event_ids','appointment_event_id']),'Teaching must not bind education or appointment events'
+   assert not any(fact.get(key) is True for key in ['degree_awarded','include_in_mentorship_graph','include_in_verified_mentor_count','include_in_education_count','include_in_appointment_count','include_in_publication_count']),'Teaching must stay outside degree and mentor claims'
   for collection in ['education','mentors','appointments','publications','committee_members']:
    for row in p.get(collection,[]):
     assert valid_url(row.get('source_url')),'Missing evidence URL'
@@ -184,6 +198,21 @@ def profile_availability_label(person):
  status='个人主页当前不可用' if person.get('official_profile_availability')=='unavailable' or person.get('official_profile_navigation_eligible') is False else '公开个人页（时效以核对日为准）'
  return '；'.join(v for v in [person.get('official_profile_link_label'),status] if v)
 
+def teaching_summary(person):
+ # Teaching is evidence about the teacher's work, never the teacher's own education.
+ rows=person.get('teaching')
+ if not isinstance(rows,list) or not rows:return ''
+ facts=[]
+ for row in rows:
+  if not isinstance(row,dict):continue
+  facts.append('；'.join(str(v) for v in [
+   row.get('name') or row.get('course') or '、'.join(row.get('courses') or []) or '教学主题未披露',row.get('role') or '角色未披露',
+   '教学／课程开设时间：'+str(row.get('start') or '时间未披露'),row.get('note'),
+   '来源ID：'+str(row.get('source_id') or '未披露'),row.get('source_url')
+  ] if v))
+ if not facts:return ''
+ return '公开教学事实（非本人求学学历；教学／课程开设时间不是入学、授位或任职起点；不计入教育、任职、论文、导师统计及师承图）：'+' | '.join(facts)
+
 def professional_guidance_event(person,guidance):
  event_id=guidance.get('education_event_id')
  if not isinstance(event_id,str) or not event_id.strip():return {}
@@ -215,6 +244,12 @@ def department_tables(people,updated_at,institutions=None):
  names={s["id"]:s["official_name"] for s in (institutions or [])}
  school_name=names.get(school_id,school_id)
  tables=[('总览',[['姓名','校区','院系','官方主页','核对日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p.get('campus') or '校区未标注',p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],updated_at,'；'.join(p['unknowns']),'分批核实资料，不是完整名录',profile_availability_label(p),'；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]
+ # Append inside the existing overview scope cell: keep all five sheets and every column.
+ for p,row in zip(people,tables[0][1][1:]):
+  summary=teaching_summary(p)
+  current=p.get('current_employment') or {}
+  affiliation='；'.join(str(v) for v in [p.get('sampling_affiliation_label'),'已核现任单位：'+str(current['institution']) if current.get('institution') else None,current.get('note'),current.get('source_url')] if v) if p.get('sampling_affiliation_label') else ''
+  if summary or affiliation:row[6]='；'.join(v for v in [row[6],p.get('profile_coverage_label'),affiliation,summary] if v)
  # Explicit source labels, not URL hosts, opt this table into neutral headings. Positions stay fixed.
  if any(p.get('official_profile_link_label') or p.get('official_profile_availability_label') for p in people):
   tables[0][1][0][3]='个人主页／职业网站（来源类型见说明）'

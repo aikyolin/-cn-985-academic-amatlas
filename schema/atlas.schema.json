@@ -343,6 +343,122 @@
                 }
               }
             }
+          },
+          "teaching": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "description": "公开教学事实，非本人学习经历，不参与学历/任职/导师/成果统计。",
+            "items": {
+              "type": "object",
+              "required": [
+                "source_id",
+                "source_url"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "role": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_url": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https?://"
+                },
+                "start": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "note": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "degree_awarded": {
+                  "enum": [
+                    false,
+                    null
+                  ]
+                },
+                "include_in_mentorship_graph": {
+                  "enum": [
+                    false,
+                    null
+                  ]
+                },
+                "include_in_verified_mentor_count": {
+                  "enum": [
+                    false,
+                    null
+                  ]
+                },
+                "education_event_id": {
+                  "type": "null"
+                },
+                "appointment_event_id": {
+                  "type": "null"
+                },
+                "course": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "courses": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "include_in_education_count": {
+                  "enum": [
+                    false,
+                    null
+                  ]
+                },
+                "include_in_appointment_count": {
+                  "enum": [
+                    false,
+                    null
+                  ]
+                },
+                "include_in_publication_count": {
+                  "enum": [
+                    false,
+                    null
+                  ]
+                }
+              },
+              "anyOf": [
+                {
+                  "required": [
+                    "name"
+                  ]
+                },
+                {
+                  "required": [
+                    "course"
+                  ]
+                },
+                {
+                  "required": [
+                    "courses"
+                  ]
+                }
+              ]
+            }
           }
         }
       }

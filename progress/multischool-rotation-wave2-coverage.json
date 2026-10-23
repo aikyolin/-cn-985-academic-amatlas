@@ -1,0 +1,256 @@
+{
+  "updated_at": "2026-10-23",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "baseline_commit": "db3b7d221a2ad02af3d1371c5f1f2e5d8bba70fd",
+  "counts": {
+    "source_batch_count": 11,
+    "source_people": 33,
+    "new_schools": 0,
+    "new_organization_nodes": 24,
+    "reused_organization_observations": 0,
+    "new_campuses": 0,
+    "new_professional_profiles": 31,
+    "new_pending_profiles": 2,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 101,
+      "appointments": 85,
+      "mentors": 10,
+      "committee_members": 0,
+      "publications": 32,
+      "sources": 125,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 6,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 6
+    },
+    "effective_global_collection_delta": {
+      "education": 101,
+      "appointments": 83,
+      "mentors": 10,
+      "committee_members": 0,
+      "publications": 31,
+      "sources": 119,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 6,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 6
+    },
+    "pending_main_collections": {
+      "education": 0,
+      "appointments": 2,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 6,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0
+    },
+    "pending_biography_publication_records": 1,
+    "source_degree_counts": {
+      "degree_awarded_true": 21,
+      "degree_awarded_false": 37,
+      "degree_awarded_null": 43,
+      "confirmed_degree_events": 21
+    },
+    "effective_degree_counts": {
+      "degree_awarded_true": 21,
+      "degree_awarded_false": 37,
+      "degree_awarded_null": 43,
+      "confirmed_degree_events": 21
+    },
+    "direct_guidance_types": {
+      "masters_advisor": 2,
+      "doctoral_advisor": 6,
+      "doctoral_dissertation_executive_advisor": 1,
+      "visiting_supervisor": 1
+    },
+    "quick_link_eligible_mentor_records": 2,
+    "guidance_count_note": "10条有阶段指导关系不是10名独立导师，博士论文执行指导1条、访问指导1条必须分型；6条未定阶段候选不入师承图或已核导师统计。",
+    "teaching_profiles": 3,
+    "teaching_facts": 6,
+    "teaching_count_note": "教学事实只在独立teaching集合展示和导出，不加入教育、任职、导师或成果集合统计。",
+    "source_degree_false_learning_events": 2,
+    "source_degree_false_research_or_training_events": 35,
+    "historical_sampling_affiliation_not_current_faculty_records": 2,
+    "publication_types": {
+      "journal_article": 30,
+      "research_report": 1
+    },
+    "projection": {
+      "schools_with_any_records": 39,
+      "schools_with_professional_profiles": 39,
+      "professional_records": 499,
+      "pending_records": 80,
+      "organization_nodes": 199,
+      "campus_nodes": 4,
+      "collections": {
+        "education": 1505,
+        "appointments": 1668,
+        "mentors": 183,
+        "committee_members": 10,
+        "publications": 805,
+        "sources": 1829,
+        "research_collaborators": 6,
+        "pending_mentor_candidates": 22,
+        "pending_mentors": 7,
+        "project_guidance": 1,
+        "professional_research_advisors": 2,
+        "pending_publications": 2,
+        "teaching": 9
+      },
+      "degree_counts": {
+        "degree_awarded_true": 653,
+        "degree_awarded_false": 333,
+        "degree_awarded_null": 519,
+        "confirmed_degree_events": 653
+      },
+      "roster_totals": {
+        "organization_count": 105,
+        "category_count": 168,
+        "entries_with_profile_link": 1466,
+        "entries_without_profile_link": 195,
+        "dedup_candidate_groups": 60,
+        "placeholder_profile_link_observations": 18,
+        "current_employment_count_verified": false,
+        "not_unique_people_count": true,
+        "record_count": 1661,
+        "raw_observation_count": 1699,
+        "roster_records": 1661,
+        "raw_source_observations": 1699,
+        "coverage_unit_count": 195,
+        "count_unit": "integrated_roster_records",
+        "source_record_grouping_reduction": 38,
+        "category_count_basis": "unique_organization_category_pairs",
+        "unique_organization_category_pairs": 168,
+        "batch_category_count": 187,
+        "category_count_source": "coverage_rows_preserved_without_deduplication"
+      }
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-fdu-rotation-001.json",
+      "sha256": "4909648728d27711a2c6231860f89bdc638f3a67b9cb916aa2e4d50521910d10",
+      "independent_review_file": "faculty-batch-fdu-rotation-001-independent-review.json",
+      "independent_review_sha256": "ffdaeddb0ac693d3c46d38c9d324754377519a9dcbca7758e467824ab99aba96",
+      "scope_file": "faculty-batch-fdu-rotation-001-scope.json",
+      "scope_sha256": "1b5eb155c3ac75aec7e99684f98bc7963c624fa867e273ec89c82c122cd306f0",
+      "qa_file": "faculty-batch-fdu-rotation-001-qa.json",
+      "qa_sha256": "92c97a89dbd3937e78cd26e5b4cf631957d20f8cfd86f9dde473eab9e26d505f"
+    },
+    {
+      "file": "faculty-batch-seu-rotation-001.json",
+      "sha256": "4f2b76e873aa3c401c7e934d9408b3c789bcad6f195e6ba87c0b5f5ae8971bec",
+      "independent_review_file": "faculty-batch-seu-rotation-001-independent-review.json",
+      "independent_review_sha256": "c98060f3c382395618b61f1d167530ea00aba0dbc58d903b4f04eabecd5c3012",
+      "scope_file": "faculty-batch-seu-rotation-001-scope.json",
+      "scope_sha256": "ce5af43e5ed3a688235b112380d83bde23f1970823a2464d14d77ff8da92ae2f",
+      "qa_file": "faculty-batch-seu-rotation-001-qa.json",
+      "qa_sha256": "0f949c9313f3db9631bd43652188587c8541831476f900ebeddbfa845b021679"
+    },
+    {
+      "file": "faculty-batch-xmu-rotation-001.json",
+      "sha256": "ceb1168673d9c65fb4175e1945cff4a9fd9068b50d366245011d060013d3dca8",
+      "independent_review_file": "faculty-batch-xmu-rotation-001-independent-review.json",
+      "independent_review_sha256": "676559d5de412271396eaa99ff16eeb3a01555e896fa1fbb01c517a3b0c90310",
+      "scope_file": "faculty-batch-xmu-rotation-001-scope.json",
+      "scope_sha256": "73f19b4f9acfc7f74dfacc57ec693efad947f29d98e95f98ca2f2deab23adb0a",
+      "qa_file": "faculty-batch-xmu-rotation-001-qa.json",
+      "qa_sha256": "d18b80ff3e718a74aa3d95d6daafa2e2e09cf89c3225b0733174651a936eeb56"
+    },
+    {
+      "file": "faculty-batch-sdu-rotation-001.json",
+      "sha256": "cc1c28142ad954d792818e580998c88a1ce8aa8178577202fc98df003828eb30",
+      "independent_review_file": "faculty-batch-sdu-rotation-001-independent-review.json",
+      "independent_review_sha256": "8700e379f502d3e2f178418d9064deee817696ed875213f41c8420360d2a65cd",
+      "scope_file": "faculty-batch-sdu-rotation-001-scope.json",
+      "scope_sha256": "528d2990b32750561532daf7877bd23aef0cd997c7e0a1dfb8ae31af13b447b0",
+      "qa_file": "faculty-batch-sdu-rotation-001-qa.json",
+      "qa_sha256": "97213119a6c307e41c64d4244a33cf140da648bb2cdc1722f819aa278c026094"
+    },
+    {
+      "file": "faculty-batch-ustc-rotation-001.json",
+      "sha256": "fefbf1e9f368266cdcc3ad8a860b0ae12a37719eef5d6e7c0e27600b88fbddd5",
+      "independent_review_file": "faculty-batch-ustc-rotation-001-independent-review.json",
+      "independent_review_sha256": "30928426acdf112eb6009d793d35d15d2e356db9b0a122f83ba31aa5033133e8",
+      "scope_file": "faculty-batch-ustc-rotation-001-scope.json",
+      "scope_sha256": "a59d62a7237d2db238ed4d4cffd3344a90094cf9ec380b27c93c600796370794",
+      "qa_file": "faculty-batch-ustc-rotation-001-qa.json",
+      "qa_sha256": "6b557563723637b37ca8f640cb85441bcc2ff9eb931f208447637994e7c9a10a"
+    },
+    {
+      "file": "faculty-batch-ouc-rotation-001.json",
+      "sha256": "add56548386df237f8ba55d4ace6e598451207e6e1ff2490d7b47e372207f8d4",
+      "independent_review_file": "faculty-batch-ouc-rotation-001-independent-review.json",
+      "independent_review_sha256": "880cff44bf61fabb8bba0efc787b581ca65a423df6bb6c7f98e95ba7c9c706cb",
+      "scope_file": "faculty-batch-ouc-rotation-001-scope.json",
+      "scope_sha256": "df69186c153519bcfc382e1118fa8aaae4573ac499e2e729e9356480014af9e4",
+      "qa_file": "faculty-batch-ouc-rotation-001-qa.json",
+      "qa_sha256": "7611b0b1ef5dd0b1c5d7a1b42d5d461e6bb8eed85001d498c7cd4d30a3ad0583"
+    },
+    {
+      "file": "faculty-batch-hust-rotation-001.json",
+      "sha256": "131b14de5928efad9d1e093c26446da894515d18be315ecfc0ca4ae2a4f95a16",
+      "independent_review_file": "faculty-batch-hust-rotation-001-independent-review.json",
+      "independent_review_sha256": "952a7e559809c1e997068b70d4bcadbadd9c17da6b36066f283be308bcff4e12",
+      "scope_file": "faculty-batch-hust-rotation-001-scope.json",
+      "scope_sha256": "f26cb96d1f155ec4f6219b926671d3ce2635296cc4f464486fa3e3c313a83be1",
+      "qa_file": "faculty-batch-hust-rotation-001-qa.json",
+      "qa_sha256": "a7e58dea0eb85d482c6622dfe80e642b928a1dccdedbf3ba628078acf0a16f34"
+    },
+    {
+      "file": "faculty-batch-hnu-rotation-001.json",
+      "sha256": "2adb3d0a619ca8658453e35c75cc2e42ad5484af9ea17a5dd9ac59bd867def2c",
+      "independent_review_file": "faculty-batch-hnu-rotation-001-independent-review.json",
+      "independent_review_sha256": "cb71bb22115d467e6537b4367652089efa496ac1a3b5f072e5b2f5d9231b071f",
+      "scope_file": "faculty-batch-hnu-rotation-001-scope.json",
+      "scope_sha256": "099b90ab575e5fc483c8d1a0f2029efa50a559623a4f557fe1630e10c2d71114",
+      "qa_file": "faculty-batch-hnu-rotation-001-qa.json",
+      "qa_sha256": "d0e2425a76f48b13906c2d646eb35728fb24066987dfe11f49bf85d47d827e28"
+    },
+    {
+      "file": "faculty-batch-whu-rotation-001.json",
+      "sha256": "ca0f7aacde86f6ec7bdcb5045104a12ef40814e24705eba3a8745628e94c8b49",
+      "independent_review_file": "faculty-batch-whu-rotation-001-independent-review.json",
+      "independent_review_sha256": "0f70cd6e83b8981fd7973704d998db8cbbef2941bdee903129e4314b4a0417e9",
+      "scope_file": "faculty-batch-whu-rotation-001-scope.json",
+      "scope_sha256": "d382a6ec6870702c04022ba16ce6b93c32dba87496482cf6150c13b690f5f243",
+      "qa_file": "faculty-batch-whu-rotation-001-qa.json",
+      "qa_sha256": "7d15bf70907211aa75ef17e8784364d6f51da987b54b4f11ab134d8939fa5638"
+    },
+    {
+      "file": "faculty-batch-nudt-rotation-001.json",
+      "sha256": "96b5890fae33788e9a3d1e3eefb19bf00efb7727ccd264c56f42eb2577c1547e",
+      "independent_review_file": "faculty-batch-nudt-rotation-001-independent-review.json",
+      "independent_review_sha256": "f53e23e9a0c39ca3d6a106d19add1e3da3c6b3c02d3a3175c839c24ceace9ddb",
+      "scope_file": "faculty-batch-nudt-rotation-001-scope.json",
+      "scope_sha256": "82549d2aa792e6724846717933d75bea5815eafc4b4e4aa8f465f46f49472257",
+      "qa_file": "faculty-batch-nudt-rotation-001-qa.json",
+      "qa_sha256": "4184d08e99b623e0146a7ff71c4bb7e72ae29e7125f8451c89917779ca324761"
+    },
+    {
+      "file": "faculty-batch-csu-rotation-001.json",
+      "sha256": "46c12bb69530cb652594841f6942f5666da7747cf96411f696b77cdcd684af76",
+      "independent_review_file": "faculty-batch-csu-rotation-001-independent-review.json",
+      "independent_review_sha256": "ff67a46dd6e2fc03193fe9a8131a8f0a8a2a3c0b05b5efed3ef4a4a9ce819899",
+      "scope_file": "faculty-batch-csu-rotation-001-scope.json",
+      "scope_sha256": "b72c8837b662bde8ecfccffd5c3ff2d1d2451a5f0a8bc2606fb970ed356409f7",
+      "qa_file": "faculty-batch-csu-rotation-001-qa.json",
+      "qa_sha256": "2d5196a152f355f204d031ba42657ee1fc03bf62297752be959a63b250a8e2d9"
+    }
+  ],
+  "scope": "十一校所选33条记录，31份部分职业资料与2份待完善；其中3份主要为岗位与公开教学事实，不称完整学历档案。历史名录关联不代表现职。"
+}
