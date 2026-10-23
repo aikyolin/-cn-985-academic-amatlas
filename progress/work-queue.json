@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T09:53:00Z",
-  "base_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+  "updated_at": "2026-10-23T10:10:00Z",
+  "base_commit": "0ed4488a7dded0b4f54c6aca17eeb01ed07740bf",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -207,16 +207,23 @@
         "hit-harbin"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批官方页面可见分类观察枚举完成，不是唯一人数或完整在职名册。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资队伍",
-          "教师名录",
-          "师资队伍",
-          "师资队伍"
+          "航空发动机研究所",
+          "推进理论与技术研究所",
+          "碳中和能源技术研究所",
+          "航空航天热物理研究所",
+          "先进动力技术研究所",
+          "动力机械振动与噪声控制技术研究所",
+          "流体机械及工程研究所",
+          "能源与环境工程研究所",
+          "核科学与技术研究所",
+          "空间能源技术研究所",
+          "能源动力实验教学中心"
         ]
       },
       "depends_on": [],
@@ -228,13 +235,23 @@
         "http://power.hit.edu.cn/19202/list.htm"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "核对逐人身份与履历，保留历史页面时效和候选冲突。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:10:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:10:00Z",
+        "evidence_urls": [
+          "https://power.hit.edu.cn/5735/list.htm"
+        ],
+        "unresolved_items": [
+          "逐人身份、当前任职、履历与候选重复待核实；旧页面可能滞后。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-electrical:roster",
@@ -281,15 +298,28 @@
         "hit-harbin"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批官方页面可见分类观察枚举完成，不是唯一人数或完整在职名册。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资队伍",
-          "专任教师队伍",
-          "实验教师队伍"
+          "超精密光电仪器工程研究所",
+          "精密测控仪器研究所",
+          "光电测量与控制研究所",
+          "导航仪器研究所",
+          "辐射测温及热物性测试研究所",
+          "精密电测技术与仪器研究所",
+          "精密声光仪器研究所",
+          "现代显微仪器研究所",
+          "微纳光学技术研究室",
+          "公差与仪器零件教研室",
+          "空间激光信息传输研究室",
+          "先进光电成像技术研究所",
+          "公差与仪器零件实验中心",
+          "测控技术与仪器实验中心",
+          "光电信息工程实验中心",
+          "创新创业发展中心"
         ]
       },
       "depends_on": [],
@@ -300,13 +330,24 @@
         "https://ise.hit.edu.cn/16181/list.htm"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "核对逐人身份与履历，保留历史页面时效和候选冲突。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:10:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:10:00Z",
+        "evidence_urls": [
+          "https://ise.hit.edu.cn/16180/list.htm",
+          "https://ise.hit.edu.cn/16181/list.htm"
+        ],
+        "unresolved_items": [
+          "逐人身份、当前任职、履历与候选重复待核实；旧页面可能滞后。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-math:roster",
@@ -535,13 +576,19 @@
         "hit-harbin"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批官方页面可见分类观察枚举完成，不是唯一人数或完整在职名册。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资队伍"
+          "环境科学系",
+          "环境生态系",
+          "环境工程系",
+          "市政工程系",
+          "博士后副研究员",
+          "实验中心",
+          "常规博士后（助理研究员）"
         ]
       },
       "depends_on": [],
@@ -550,13 +597,23 @@
         "https://env.hit.edu.cn/szdw/list.htm"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "核对逐人身份与履历，保留历史页面时效和候选冲突。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:10:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:10:00Z",
+        "evidence_urls": [
+          "https://env.hit.edu.cn/szdw/list.htm"
+        ],
+        "unresolved_items": [
+          "逐人身份、当前任职、履历与候选重复待核实；旧页面可能滞后。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-architecture:roster",
@@ -1271,28 +1328,60 @@
         "hit-weihai"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批官方页面可见分类观察枚举完成，不是唯一人数或完整在职名册。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资队伍"
+          "机械工程系",
+          "船舶工程系",
+          "土木工程系",
+          "工程图学部",
+          "力学教学部",
+          "实验中心",
+          "工程训练中心",
+          "拖曳水池与综合水池"
         ]
       },
       "depends_on": [],
       "source_urls": [
         "https://www.hitwh.edu.cn/yxsz/list.htm",
-        "https://snaoe.hitwh.edu.cn/32/list.htm"
+        "https://snaoe.hitwh.edu.cn/32/list.htm",
+        "https://snaoe.hitwh.edu.cn/44/list.htm",
+        "https://snaoe.hitwh.edu.cn/45/list.htm",
+        "https://snaoe.hitwh.edu.cn/tmgcx/list.htm",
+        "https://snaoe.hitwh.edu.cn/46/list.htm",
+        "https://snaoe.hitwh.edu.cn/lxjxb/list.htm",
+        "https://snaoe.hitwh.edu.cn/syzx/list.htm",
+        "https://snaoe.hitwh.edu.cn/47/list.htm",
+        "https://snaoe.hitwh.edu.cn/tyscyzhsc/list.htm"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "核对逐人身份与履历，保留历史页面时效和候选冲突。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:10:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:10:00Z",
+        "evidence_urls": [
+          "https://snaoe.hitwh.edu.cn/44/list.htm",
+          "https://snaoe.hitwh.edu.cn/45/list.htm",
+          "https://snaoe.hitwh.edu.cn/tmgcx/list.htm",
+          "https://snaoe.hitwh.edu.cn/46/list.htm",
+          "https://snaoe.hitwh.edu.cn/lxjxb/list.htm",
+          "https://snaoe.hitwh.edu.cn/syzx/list.htm",
+          "https://snaoe.hitwh.edu.cn/47/list.htm",
+          "https://snaoe.hitwh.edu.cn/tyscyzhsc/list.htm"
+        ],
+        "unresolved_items": [
+          "逐人身份、当前任职、履历与候选重复待核实；旧页面可能滞后。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-weihai-marine-science:roster",
@@ -1336,30 +1425,49 @@
         "hit-weihai"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批官方页面可见分类观察枚举完成，不是唯一人数或完整在职名册。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资队伍",
-          "导师队伍"
+          "车辆工程系",
+          "智能车辆工程系",
+          "交通工程系",
+          "教学实验中心"
         ]
       },
       "depends_on": [],
       "source_urls": [
         "https://www.hitwh.edu.cn/yxsz/list.htm",
         "https://auto.hitwh.edu.cn/152/list.htm",
-        "https://auto.hitwh.edu.cn/dsdw/list.htm"
+        "https://auto.hitwh.edu.cn/dsdw/list.htm",
+        "https://auto.hitwh.edu.cn/clgcx/list.htm",
+        "https://auto.hitwh.edu.cn/znclgcx/list.htm",
+        "https://auto.hitwh.edu.cn/jtgcx/list.htm",
+        "https://auto.hitwh.edu.cn/syzx/list.htm"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "核对逐人身份与履历，保留历史页面时效和候选冲突。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:10:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:10:00Z",
+        "evidence_urls": [
+          "https://auto.hitwh.edu.cn/clgcx/list.htm",
+          "https://auto.hitwh.edu.cn/znclgcx/list.htm",
+          "https://auto.hitwh.edu.cn/jtgcx/list.htm",
+          "https://auto.hitwh.edu.cn/syzx/list.htm"
+        ],
+        "unresolved_items": [
+          "逐人身份、当前任职、履历与候选重复待核实；旧页面可能滞后。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-weihai-information:roster",
@@ -1459,30 +1567,52 @@
         "hit-weihai"
       ],
       "stage": "roster_enumeration",
-      "status": "partial",
+      "status": "done",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "本批官方页面可见分类观察枚举完成，不是唯一人数或完整在职名册。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
-          "师资队伍",
-          "导师队伍"
+          "计算机科学与技术系",
+          "软件工程系",
+          "网络空间安全系",
+          "人工智能系",
+          "计算机基础系"
         ]
       },
       "depends_on": [],
       "source_urls": [
         "https://www.hitwh.edu.cn/yxsz/list.htm",
         "https://cst.hitwh.edu.cn/jsdw/list.htm",
-        "https://cst.hitwh.edu.cn/dsdw/list.htm"
+        "https://cst.hitwh.edu.cn/dsdw/list.htm",
+        "https://cst.hitwh.edu.cn/jsjkxyjsx/list.htm",
+        "https://cst.hitwh.edu.cn/rjgcx/list.htm",
+        "https://cst.hitwh.edu.cn/wlkjaq_5959/list.htm",
+        "https://cst.hitwh.edu.cn/rgznx/list.htm",
+        "https://cst.hitwh.edu.cn/jsjjcx/list.htm"
       ],
       "artifact_paths": [
-        "research/coverage-work-queue.json"
+        "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按followup_links遍历分类和分页，解析个人名单并去除导航/跨院重复。",
+      "review_status": "approved",
+      "next_action": "核对逐人身份与履历，保留历史页面时效和候选冲突。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
-      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+      "attempted_at": "2026-10-23T10:10:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369",
+      "completion": {
+        "checked_at": "2026-10-23T10:10:00Z",
+        "evidence_urls": [
+          "https://cst.hitwh.edu.cn/jsjkxyjsx/list.htm",
+          "https://cst.hitwh.edu.cn/rjgcx/list.htm",
+          "https://cst.hitwh.edu.cn/wlkjaq_5959/list.htm",
+          "https://cst.hitwh.edu.cn/rgznx/list.htm",
+          "https://cst.hitwh.edu.cn/jsjjcx/list.htm"
+        ],
+        "unresolved_items": [
+          "逐人身份、当前任职、履历与候选重复待核实；旧页面可能滞后。"
+        ],
+        "scope_closed": true
+      }
     },
     {
       "task_id": "hit-weihai-materials:roster",
@@ -1891,9 +2021,9 @@
         "hit-shenzhen"
       ],
       "stage": "profile_research",
-      "status": "pending",
+      "status": "partial",
       "scope": {
-        "description": "公开名录可见条目，不代表完整在职人事名册。 仅限当前已发现的官方分类与分页，不是完整在职人事名册。",
+        "description": "35条集成电路名录中的20条已独立核验并建立详细档案；全院资料仍不完整。",
         "claim": "listed_public_scope_only",
         "university_complete": false,
         "source_categories": [
@@ -1912,12 +2042,13 @@
         "https://ic.hitsz.edu.cn/szll/yjy.htm"
       ],
       "artifact_paths": [
+        "data/atlas.json",
         "data/rosters.json"
       ],
-      "review_status": "pending_review",
-      "next_action": "按名录稳定记录ID逐人核对身份；优先处理同链接异名，未核实不可自动合并。",
+      "review_status": "approved",
+      "next_action": "已补20份独立档案；继续其余15条名录身份及履历核验，未补阶段不表示无学历。",
       "next_cursor": null,
-      "attempted_at": "2026-10-23T09:53:00Z",
+      "attempted_at": "2026-10-23T10:10:00Z",
       "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
     },
     {
@@ -2590,6 +2721,237 @@
       ],
       "review_status": "pending_review",
       "next_action": "访问官方首页寻找教师名录入口；不得用候选校区直接填充校区",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-energy:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-energy",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "逐条研究本院系名录观察，不按同名自动合并。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "通信工程系",
+          "电子工程系",
+          "测控工程系",
+          "信息工程系",
+          "微波工程系"
+        ]
+      },
+      "depends_on": [
+        "hit-energy:roster"
+      ],
+      "source_urls": [
+        "https://power.hit.edu.cn/5735/list.htm"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "由可见名录逐人核验身份、履历、导师与论文。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-environment:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-environment",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "逐条研究本院系名录观察，不按同名自动合并。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "通信工程系",
+          "电子工程系",
+          "测控工程系",
+          "信息工程系",
+          "微波工程系"
+        ]
+      },
+      "depends_on": [
+        "hit-environment:roster"
+      ],
+      "source_urls": [
+        "https://env.hit.edu.cn/szdw/list.htm"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "由可见名录逐人核验身份、履历、导师与论文。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-instrument:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-instrument",
+      "campus_ids": [
+        "hit-harbin"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "逐条研究本院系名录观察，不按同名自动合并。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "通信工程系",
+          "电子工程系",
+          "测控工程系",
+          "信息工程系",
+          "微波工程系"
+        ]
+      },
+      "depends_on": [
+        "hit-instrument:roster"
+      ],
+      "source_urls": [
+        "https://ise.hit.edu.cn/16180/list.htm",
+        "https://ise.hit.edu.cn/16181/list.htm"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "由可见名录逐人核验身份、履历、导师与论文。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-automotive:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-automotive",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "逐条研究本院系名录观察，不按同名自动合并。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "通信工程系",
+          "电子工程系",
+          "测控工程系",
+          "信息工程系",
+          "微波工程系"
+        ]
+      },
+      "depends_on": [
+        "hit-weihai-automotive:roster"
+      ],
+      "source_urls": [
+        "https://auto.hitwh.edu.cn/clgcx/list.htm",
+        "https://auto.hitwh.edu.cn/znclgcx/list.htm",
+        "https://auto.hitwh.edu.cn/jtgcx/list.htm",
+        "https://auto.hitwh.edu.cn/syzx/list.htm"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "由可见名录逐人核验身份、履历、导师与论文。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-computer:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-computer",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "逐条研究本院系名录观察，不按同名自动合并。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "通信工程系",
+          "电子工程系",
+          "测控工程系",
+          "信息工程系",
+          "微波工程系"
+        ]
+      },
+      "depends_on": [
+        "hit-weihai-computer:roster"
+      ],
+      "source_urls": [
+        "https://cst.hitwh.edu.cn/jsjkxyjsx/list.htm",
+        "https://cst.hitwh.edu.cn/rjgcx/list.htm",
+        "https://cst.hitwh.edu.cn/wlkjaq_5959/list.htm",
+        "https://cst.hitwh.edu.cn/rgznx/list.htm",
+        "https://cst.hitwh.edu.cn/jsjjcx/list.htm"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "由可见名录逐人核验身份、履历、导师与论文。",
+      "next_cursor": null,
+      "attempted_at": "2026-10-23T09:53:00Z",
+      "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"
+    },
+    {
+      "task_id": "hit-weihai-marine-engineering:profiles",
+      "institution_id": "hit",
+      "organization_id": "hit-weihai-marine-engineering",
+      "campus_ids": [
+        "hit-weihai"
+      ],
+      "stage": "profile_research",
+      "status": "pending",
+      "scope": {
+        "description": "逐条研究本院系名录观察，不按同名自动合并。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false,
+        "source_categories": [
+          "通信工程系",
+          "电子工程系",
+          "测控工程系",
+          "信息工程系",
+          "微波工程系"
+        ]
+      },
+      "depends_on": [
+        "hit-weihai-marine-engineering:roster"
+      ],
+      "source_urls": [
+        "https://snaoe.hitwh.edu.cn/44/list.htm",
+        "https://snaoe.hitwh.edu.cn/45/list.htm",
+        "https://snaoe.hitwh.edu.cn/tmgcx/list.htm",
+        "https://snaoe.hitwh.edu.cn/46/list.htm",
+        "https://snaoe.hitwh.edu.cn/lxjxb/list.htm",
+        "https://snaoe.hitwh.edu.cn/syzx/list.htm",
+        "https://snaoe.hitwh.edu.cn/47/list.htm",
+        "https://snaoe.hitwh.edu.cn/tyscyzhsc/list.htm"
+      ],
+      "artifact_paths": [
+        "data/rosters.json"
+      ],
+      "review_status": "pending_review",
+      "next_action": "由可见名录逐人核验身份、履历、导师与论文。",
       "next_cursor": null,
       "attempted_at": "2026-10-23T09:53:00Z",
       "last_verified_commit": "de9da4d19d4501bd85e9753c5bcc3b45aa31d369"

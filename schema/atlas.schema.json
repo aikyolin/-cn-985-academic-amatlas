@@ -85,7 +85,9 @@
                 "source_url",
                 "institution_985",
                 "region",
-                "continent_code"
+                "continent_code",
+                "event_kind",
+                "degree_awarded"
               ],
               "properties": {
                 "institution_985": {
@@ -101,6 +103,15 @@
                     "hmt",
                     "overseas",
                     "unknown"
+                  ]
+                },
+                "event_kind": {
+                  "type": "string"
+                },
+                "degree_awarded": {
+                  "type": [
+                    "boolean",
+                    "null"
                   ]
                 }
               }

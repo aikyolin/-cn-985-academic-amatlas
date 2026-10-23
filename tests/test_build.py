@@ -13,7 +13,7 @@ class DataTests(unittest.TestCase):
   with self.assertRaises(AssertionError):validate(self.d)
  def test_formula_injection(self):self.assertEqual(clean('=HYPERLINK("bad")'),'\'=HYPERLINK("bad")')
  def test_workbooks(self):
-  files=list((ROOT/'site/exports').glob('hit*.xlsx'));self.assertEqual(len(files),5)
+  files=list((ROOT/'site/exports').glob('hit*.xlsx'));self.assertEqual(len(files),6)
   for f in files:
    wb=load_workbook(f);self.assertEqual(wb.sheetnames,['总览','经历','导师','论文','来源']);self.assertEqual(wb['总览'].freeze_panes,'A2')
  def test_committee_export_and_conflicted_homepage(self):
@@ -26,9 +26,9 @@ class DataTests(unittest.TestCase):
   self.assertEqual(sum('委员会' in (r[2] or '') for r in rows),4)
  def test_roster_is_separate(self):
   r=json.loads((ROOT/'site/rosters.json').read_text())
-  self.assertEqual(len(r['entries']),294);self.assertEqual(len(self.d['people']),6)
-  self.assertTrue(all(e['profile_identity_verified'] is False for e in r['entries']))
-  self.assertEqual(sum(not e['official_profile_url'] for e in r['entries']),35)
+  self.assertEqual(len(r['entries']),967);self.assertEqual(len(self.d['people']),26)
+  self.assertTrue(all(e['profile_identity_verified'] is False for e in r['entries'] if e.get('batch_id')=='harbin-002'))
+  self.assertEqual(sum(not e['official_profile_url'] for e in r['entries']),162)
  def test_roster_conflicts_preserved(self):
   r=json.loads((ROOT/'site/rosters.json').read_text())
   cs=[c for c in r['conflicts'] if c['type']=='same_url_different_names'];self.assertEqual(len(cs),2)
@@ -38,6 +38,6 @@ class DataTests(unittest.TestCase):
   self.assertEqual(e['candidate_person_ids'],['hit-jintao']);self.assertEqual(e['candidate_match_status'],'pending_identity_review')
  def test_roster_exports(self):
   import csv
-  w=load_workbook(ROOT/'site/exports/待核对名录.xlsx');self.assertEqual(w.sheetnames,['待核对名录','覆盖说明','分类覆盖','冲突记录']);self.assertEqual(w['待核对名录'].max_row,295)
-  with (ROOT/'site/exports/待核对名录.csv').open(encoding='utf-8-sig') as f:self.assertEqual(len(list(csv.reader(f))),295)
+  w=load_workbook(ROOT/'site/exports/待核对名录.xlsx');self.assertEqual(w.sheetnames,['待核对名录','覆盖说明','分类覆盖','冲突记录','消歧候选','批次来源','排除与待查']);self.assertEqual(w['待核对名录'].max_row,968)
+  with (ROOT/'site/exports/待核对名录.csv').open(encoding='utf-8-sig') as f:self.assertEqual(len(list(csv.reader(f))),968)
 if __name__=='__main__':unittest.main()

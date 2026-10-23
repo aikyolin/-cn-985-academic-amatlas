@@ -32,7 +32,7 @@ class QueueTests(unittest.TestCase):
   import json
   root=pathlib.Path(__file__).resolve().parents[1]
   d=json.loads((root/'progress/work-queue.json').read_text());self.assertEqual(validate_queue(d,root,True),[])
-  self.assertEqual(len(d['tasks']),81);self.assertEqual(sum(t['status']=='done' for t in d['tasks']),3)
+  self.assertEqual(len(d['tasks']),87);self.assertEqual(sum(t['status']=='done' for t in d['tasks']),9)
  def test_campus_evidence_scope(self):
   import json,collections
   root=pathlib.Path(__file__).resolve().parents[1];d=json.loads((root/'data/atlas.json').read_text())

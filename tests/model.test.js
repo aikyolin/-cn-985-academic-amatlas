@@ -1,10 +1,20 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import {matches,degreeType,safeUrl,escapeHtml} from '../site/model.js';
+import {test} from 'node:test';import assert from 'node:assert/strict';import {matches,degreeType,stages,mentorEvent,navigableProfileUrl,safeUrl,escapeHtml} from '../site/model.js';
 import fs from 'node:fs';const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));const list=f=>db.people.filter(p=>matches(p,f));
-test('six real samples across three campuses',()=>{assert.equal(db.people.length,6);for(const campus of ['harbin','weihai','shenzhen'])assert.equal(list({campus}).length,2)});
-test('bachelor 985 and geography combine',()=>{assert.deepEqual(list({ug:'no',doctor:'hmt'}).map(p=>p.name),['堵宏伟']);assert.deepEqual(list({ug:'yes',doctor:'overseas',continent:'north_america'}).map(p=>p.name),['高庆彬'])});
-test('joint cultivation not PhD granting institution',()=>{assert.equal(degreeType('联合培养（非单独学位）'),'other');assert.equal(list({doctor:'overseas'}).length,1)});
+test('six initial profiles plus twenty reviewed Shenzhen profiles',()=>{assert.equal(db.people.length,26);assert.equal(list({campus:'harbin'}).length,2);assert.equal(list({campus:'weihai'}).length,2);assert.equal(list({campus:'shenzhen'}).length,22)});
+test('bachelor 985 and geography combine',()=>{assert.deepEqual(list({ug:'no',doctor:'hmt'}).map(p=>p.name),['堵宏伟','陈书湄']);assert.deepEqual(list({ug:'yes',doctor:'overseas',continent:'north_america'}).map(p=>p.name),['高庆彬','陈怡沐','钟颖','王永杰'])});
+test('joint cultivation not PhD granting institution',()=>{assert.equal(degreeType('联合培养（非单独学位）'),'other');assert.deepEqual(list({doctor:'overseas'}).map(p=>p.name).sort(),['高庆彬','马星','江智','陈怡沐','周宇','钟颖','王永杰'].sort())});
 test('missing stage is not unknown or non985',()=>{const p={name:'测试',campus_ids:[],education:[]};assert.equal(matches(p,{ug:'no'}),false);assert.equal(matches(p,{ug:'unknown'}),false);assert.equal(matches(p,{ug:'not_recorded'}),true)});
 test('safe content links',()=>{assert.equal(safeUrl('javascript:alert(1)'),'');assert.equal(escapeHtml('<script>'),'&lt;script&gt;')});
 test('conflicted mentors not active',()=>{const p=db.people.find(p=>p.name==='高庆彬');assert(p.mentors.some(m=>m.employment_status==='unknown_conflicting'))});
 test('hierarchical parent unit includes descendant faculty',()=>{const p=db.people.find(p=>p.name==='堵宏伟');assert.equal(matches(p,{org:'hit-shenzhen-information'},db.org_units),true)});
-test('committee is not a mentorship edge',()=>{assert.equal(db.people.reduce((n,p)=>n+p.mentors.length,0),3);assert.equal(db.people.reduce((n,p)=>n+(p.committee_members||[]).length,0),4)});
+test('committee is not a mentorship edge',()=>{assert.equal(db.people.reduce((n,p)=>n+p.mentors.length,0),20);assert.equal(db.people.reduce((n,p)=>n+(p.committee_members||[]).length,0),4)});
+
+test('unawarded doctoral study and visits never count as foreign PhD awards',()=>{const p=db.people.find(p=>p.name==='马星');assert.equal(matches(p,{doctor:'overseas',continent:'north_america'}),false);assert.equal(matches(p,{doctor:'overseas',continent:'asia'}),true);assert.equal(stages(p,'doctor').length,1);assert.equal(stages(db.people.find(p=>p.name==='肖君军'),'doctor')[0].region,'hmt')});
+test('joint masters-doctorate counts only evidenced doctoral award',()=>{const p=db.people.find(p=>p.name==='曲歌扬');assert.equal(stages(p,'doctor').length,1);assert.equal(stages(p,'master').length,0);assert.equal(stages(p,'doctor')[0].degree_awarded_date,'2022-06');assert.equal(stages(p,'doctor')[0].end,'2022-07')});
+test('unknown award remains excluded even if degree string contains doctorate',()=>{const p={education:[{degree:'博士（硕博连读）',event_kind:'degree',degree_awarded:null}]};assert.equal(stages(p,'doctor').length,0)});
+test('ambiguous undergraduate-master mentorship not assigned an invented single event',()=>{const p=db.people.find(p=>p.name==='江智');assert.deepEqual(mentorEvent(p,p.mentors[0]),{});assert.equal(mentorEvent(p,p.mentors[1]).institution,'东京大学')});
+
+test('Zhong Ying unverified HIT doctoral study is not a domestic doctorate',()=>{const p=db.people.find(p=>p.name==='钟颖');assert.equal(stages(p,'doctor').length,1);assert.equal(matches(p,{doctor:'mainland'}),false);assert.equal(matches(p,{doctor:'overseas',continent:'north_america'}),true)});
+test('emeritus mentors do not become active by having a profile',()=>{const p=db.people.find(p=>p.name==='陈书湄');assert.equal(p.mentors[0].employment_status,'emeritus_officially_listed');assert.equal(p.mentors[0].official_url,null)});
+
+test('CMS editing and concatenated URLs never become navigable profile links',()=>{assert.equal(navigableProfileUrl('http://web.hitwh.edu.cn/_web/_cms/folder/api/articleEdit/edit292.rst?act=edit'),'');assert.equal(navigableProfileUrl('http://homepage.hit.edu.cn/zhangxingminghttp://homepage.hit.edu.cn/zhangxingming'),'');assert.ok(navigableProfileUrl('https://homepage.hit.edu.cn/songqinghai'))});
