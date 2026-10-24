@@ -1,6 +1,6 @@
-import {UNIVERSITIES,UNIVERSITY_SOURCE,UNIVERSITY_CROSSCHECK,findUniversities} from './universities.js?v=rotation003-20261023-w2';
-import {renderRosters} from './rosters.js?v=rotation003-20261023-w2';
-import {CAMPUS_LABELS as CL,REGION_LABELS as RL,CONTINENT_LABELS as CO,stages,educationStageLabel,provisionalDegree,mentorEvent,professionalGuidanceEvent,mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,officialProfileUrl,versionedPath,sameBuild,collaboratorEvent,institutions,schoolName as storedSchoolName,schoolCampuses,schoolUnits,campusLabel,schoolStats,normalizeSchoolFilters,routeSchool,matches,safeUrl,escapeHtml as esc} from './model.js?v=rotation003-20261023-w2';
+import {UNIVERSITIES,UNIVERSITY_SOURCE,UNIVERSITY_CROSSCHECK,findUniversities} from './universities.js?v=rotation003-20261024-w2';
+import {renderRosters} from './rosters.js?v=rotation003-20261024-w2';
+import {CAMPUS_LABELS as CL,REGION_LABELS as RL,CONTINENT_LABELS as CO,stages,educationStageLabel,provisionalDegree,mentorEvent,professionalGuidanceEvent,mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,officialProfileUrl,versionedPath,sameBuild,collaboratorEvent,institutions,schoolName as storedSchoolName,schoolCampuses,schoolUnits,campusLabel,schoolStats,normalizeSchoolFilters,routeSchool,matches,safeUrl,escapeHtml as esc} from './model.js?v=rotation003-20261024-w2';
 const $=s=>document.querySelector(s), main=$('#main');
 let schoolContext='';
 let db, filter={school:'',q:'',campus:'',org:'',ug:'',master:'',doctor:'',continent:'',master_continent:''}, zoom=1;

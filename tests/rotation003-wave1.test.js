@@ -1,3 +1,4 @@
+import {release25View} from './release-history.js';
 // Independent release25 actual-consumer regression. Offline, no build writes.
 // Fixture constants come from approved raw source packages, never normalization output.
 import {test} from 'node:test';
@@ -8,7 +9,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 const root=process.env.ACADEMIC_ATLAS_TEST_ROOT||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=name=>JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
-const db=read('data/atlas.json'); db.rosters=read('data/rosters.json');
+const db=release25View(read('data/atlas.json'),'data/atlas.json'); db.rosters=release25View(read('data/rosters.json'),'data/rosters.json');
 const {stages,matches,educationStageLabel,mentorEvents,mentorOfficialUrl,mentorProfileRoute,officialProfileUrl,schoolStats}=await import(pathToFileURL(path.join(root,'site/model.js')));
 const {rosterIdentityMatched,rosterStatusLabel,renderRosters,rosterSamplingIdentityMatched}=await import(pathToFileURL(path.join(root,'site/rosters.js')));
 const digest=x=>createHash('sha256').update(JSON.stringify(x)).digest('hex');
@@ -225,7 +226,7 @@ test('547 original profiles retain 122-filter outputs and exact labels except fo
 
 test('all six static asset references use the same exact release25 token',()=>{
   for(const [file,count]of Object.entries({'site/app.js':3,'site/rosters.js':1,'site/index.html':2})){
-    const source=fs.readFileSync(path.join(root,file),'utf8');assert.equal((source.match(/rotation003-20261023-w2/g)||[]).length,count,file);
+    const source=fs.readFileSync(path.join(root,file),'utf8');assert.equal((source.match(/rotation003-20261024-w2/g)||[]).length,count,file);
     assert(!source.includes('rotation002-20261023-w3'),file);
   }
 });

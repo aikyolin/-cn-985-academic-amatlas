@@ -1,3 +1,4 @@
+import {release25View} from './release-history.js';
 // Offline actual-app HTML and scoped CSS-cascade regression, not a browser geometry test.
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
@@ -7,7 +8,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 const root=process.env.ACADEMIC_ATLAS_TEST_ROOT||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=name=>JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
-const db=read('data/atlas.json');db.rosters=read('data/rosters.json');
+const db=release25View(read('data/atlas.json'),'data/atlas.json');db.rosters=release25View(read('data/rosters.json'),'data/rosters.json');
 const css=fs.readFileSync(path.join(root,'site/styles.css'),'utf8');
 const RULE='.source-unavailable{white-space:normal;overflow-wrap:anywhere;max-width:100%}';
 const sha=x=>createHash('sha256').update(x).digest('hex');
@@ -155,9 +156,9 @@ test('all 1110 actual profile and lineage renders are byte-identical to frozen d
 
 test('six asset references are synchronized to the new wrapping CSS generation',()=>{
  for(const [file,count]of [['site/app.js',3],['site/rosters.js',1],['site/index.html',2]]){
-  const text=fs.readFileSync(path.join(root,file),'utf8');assert.equal(text.split('rotation003-20261023-w2').length-1,count);assert(!text.includes('rotation003-20261023-w1'));
+  const text=fs.readFileSync(path.join(root,file),'utf8');assert.equal(text.split('rotation003-20261024-w2').length-1,count);assert(!text.includes('rotation003-20261023-w1'));
  }
- const index=fs.readFileSync(path.join(root,'site/index.html'),'utf8');assert(index.includes('styles.css?v=rotation003-20261023-w2'));assert(index.includes('app.js?v=rotation003-20261023-w2'));
+ const index=fs.readFileSync(path.join(root,'site/index.html'),'utf8');assert(index.includes('styles.css?v=rotation003-20261024-w2'));assert(index.includes('app.js?v=rotation003-20261024-w2'));
 });
 
 test('rendering stays read-only and does not turn pending or unknown degrees into profiles',async()=>{

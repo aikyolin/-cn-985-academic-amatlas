@@ -6,6 +6,7 @@ release repository and normal test dependencies, never research files, raw
 packages, baseline directories, network, a browser, or writes to build outputs.
 This tests the selected six-person sample, not live sources or school completion.
 """
+from release_history import release25_view
 import copy
 import hashlib
 import json
@@ -1288,9 +1289,9 @@ def assert_source_closure(person):
 class Rotation002Wave3ReleaseTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.d = json.loads((ROOT / 'data/atlas.json').read_text())
-        cls.r = json.loads((ROOT / 'data/rosters.json').read_text())
-        cls.q = json.loads((ROOT / 'progress/work-queue.json').read_text())
+        cls.d = release25_view(json.loads((ROOT / 'data/atlas.json').read_text()), 'data/atlas.json')
+        cls.r = release25_view(json.loads((ROOT / 'data/rosters.json').read_text()), 'data/rosters.json')
+        cls.q = release25_view(json.loads((ROOT / 'progress/work-queue.json').read_text()), 'progress/work-queue.json')
         cls.ps = {p['person_id']: p for p in cls.d['people'] + cls.d['pending_people']}
         cls.new = [cls.ps[pid] for pid in SOURCE_FINGERPRINTS]
         cls.entries = {e['source_person_id']: e for e in cls.r['entries'] if e.get('source_person_id') in SOURCE_FINGERPRINTS}
@@ -1488,7 +1489,7 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
 
     def test_16_unchanged_application_registry_and_helpers(self):
         for path, digest in UNCHANGED_APPLICATION_SHA256.items():
-            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(), LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest))), path)
+            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(), RELEASE26_DISPLAY_SHA256.get(path, LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest)))), path)
 
     def test_17_actual_statistics_are_partial_not_full_school_population(self):
         js = self.consumers()
@@ -1525,7 +1526,7 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
 
     def test_20_three_scu_reviewed_roster_identity_matches_are_not_current_employment(self):
         js = self.consumers()['rosters']
-        snapshot = json.loads((ROOT / 'site/rosters.json').read_text())
+        snapshot = release25_view(json.loads((ROOT / 'site/rosters.json').read_text()), 'site/rosters.json')
         built = {e['source_person_id']:e for e in snapshot['entries'] if e.get('source_person_id') in SOURCE_FINGERPRINTS}
         for p in self.new:
             if p['school_id'] != 'scu':
@@ -1866,8 +1867,8 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
                 assert_source_closure(p)
 
     def test_37_built_site_selected_people_rosters_and_original_person_leaves_match_canonical(self):
-        site = json.loads((ROOT/'site/atlas.json').read_text())
-        roster = json.loads((ROOT/'site/rosters.json').read_text())
+        site = release25_view(json.loads((ROOT/'site/atlas.json').read_text()), 'site/atlas.json')
+        roster = release25_view(json.loads((ROOT/'site/rosters.json').read_text()), 'site/rosters.json')
         self.assertEqual(len(site['people']), 555)
         self.assertEqual(len(site['pending_people']), 84)
         site_people = {p['person_id']:p for p in site['people']}
@@ -1884,6 +1885,9 @@ ROTATION003_APPLICATION_SHA256 = {'site/app.js': '5d4efe8a3c85cbca0125b950a70d74
 
 # Exact layout-only overlay; all original source/data/application pins remain above.
 LAYOUT_FIX_APPLICATION_SHA256 = {'site/styles.css': '3b01ec6a5674982d048237e5426aa107bd622662d2758913c81bc6f5c4c0ceca', 'site/app.js': '5ce1dbc7161a048ab263cdff313bc904544b362c13d39cc5963886b409f037e2', 'site/rosters.js': '7536ef08c4032e05e1ad3c09532858dd42fd68c20968c82e2146481cf6d9c85f', 'site/index.html': '7e6331d4846c13d64f0a5b5b65a9d52539df537b2ce20ef26563669739f8f2a3'}
+
+# Exact three-file heading/cache correction; all earlier golden constants remain.
+RELEASE26_DISPLAY_SHA256={'site/index.html': 'a6e57e88a623157fd3103a6099b9e72b21a0435c9fa62530a41469814844242c', 'site/app.js': '19945c1392982e4b3a1df95d93c271e957bf16b2a238f8d63d24ed892c722dea', 'site/rosters.js': 'd060662fe29e2d5209ca7cabd89121f253c6df69878d776e652f2fe8f8eb45a9'}
 
 if __name__ == '__main__':
     unittest.main()

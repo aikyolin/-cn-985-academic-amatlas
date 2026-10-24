@@ -5,6 +5,7 @@ import hashlib,json,os,pathlib,re,unittest
 ROOT=pathlib.Path(os.environ.get('ACADEMIC_ATLAS_TEST_ROOT',pathlib.Path(__file__).resolve().parents[1]))
 OLD_TOKEN='rotation003-20261023-w1'
 NEW_TOKEN='rotation003-20261023-w2'
+CURRENT_TOKEN='rotation003-20261024-w2'
 RULE='.source-unavailable{white-space:normal;overflow-wrap:anywhere;max-width:100%}'
 TOKEN_FILES={'site/app.js':3,'site/index.html':2,'site/rosters.js':1}
 def sha(data): return hashlib.sha256(data).hexdigest()
@@ -293,21 +294,25 @@ BASELINE_FILES={'.github/pull_request_template.md': '01cd056e32e38dbae95c832514c
  'tests/weihai-second.test.js': 'f79850bf9faa391687e12b2eed65f9ecd6eea1dafb03d392c1fec65ee53adc62',
  'tests/weihai-third.test.js': '031074839c6c59ee56b9f76279bee0595fbb2b2eaa7f397b7052347edaaba216'}
 
+# Exact data/coverage/export-only release26 endpoint; all historical pins above remain.
+RELEASE26_PIN_OVERLAY={'site/atlas.json': 'f0f46d4cba67eec805f944e2bef431120b38016465afcdd1227cf6e7fd4a6861', 'site/rosters.json': '509f98b11edd2fdfe3a80ef1b0de0d07d46d2f186ed29c363e3e8ebe293168b0', 'data/atlas.json': '4a2caaf803967d671bf0bb6b3aeb7c661eecaa40e7bf74e31c214215a3fecc93', 'data/rosters.json': '0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f', 'progress/README.md': '3226f9521575934bf9d3a193994414280f654e41bf61d56826ceaff127cebfea', 'progress/current-coverage.md': 'f0a89a29a14b88781880555e01df0ac280d4a59a6051363638725d46cd1d0c44', 'progress/work-queue.json': '829169fdf8815ddff328d1a3d324ad102bd52b0220a6025277e8d9fef8ebdaff', 'site/exports/待核对名录.xlsx': '6e01fe76a8b3620f51e3a0ec68b27d1fa5a81ff3427ddfb266efd2e03235176a', 'site/exports/待核对名录.csv': 'b8d625c46e68bc8ed171c6184a760dda8943ecdb323e70db025ca7f1f9507338'}
+RELEASE26_ADDED_WORKBOOKS={'site/exports/lzu-civil-engineering-mechanics.xlsx': '6332c787a78aafee8b83c18768fb99fee29b6c8f121d182ebd1dca22bb86efa3', 'site/exports/nwsuaf-life-sciences.xlsx': 'ecbce0ff91b5f0e626ec1e2062e971aab36e51c7bc1724c67e515f8b763e443b', 'site/exports/xjtu-modern-physics-astronomy-preparatory.xlsx': 'f73df1a620894c105fd452b3e29742e66b0c8f25d8d277ec8cee3778f9286ddb'}
 class SourceUnavailableLayoutFix(unittest.TestCase):
     def test_all_four_data_payloads_are_byte_identical(self):
         for name in ['data/atlas.json','data/rosters.json','site/atlas.json','site/rosters.json']:
-            with self.subTest(name=name): self.assertEqual(sha(read(name)),BASELINE_FILES[name])
+            with self.subTest(name=name): self.assertEqual(sha(read(name)),RELEASE26_PIN_OVERLAY.get(name,BASELINE_FILES[name]))
     def test_all_112_workbooks_are_byte_identical(self):
         expected={n:h for n,h in BASELINE_FILES.items() if n.startswith('site/exports/') and n.endswith('.xlsx')}
         self.assertEqual(len(expected),112)
         actual={str(p.relative_to(ROOT)):sha(p.read_bytes()) for p in (ROOT/'site/exports').glob('*.xlsx')}
+        expected={n:RELEASE26_PIN_OVERLAY.get(n,h)for n,h in expected.items()};expected.update(RELEASE26_ADDED_WORKBOOKS)
         self.assertEqual(actual,expected)
     def test_all_other_non_test_baseline_files_are_byte_identical(self):
         allow=set(TOKEN_FILES)|{'site/styles.css'}
         checked=0
         for name,digest in BASELINE_FILES.items():
             if name in allow or name.startswith('tests/'): continue
-            with self.subTest(name=name): self.assertEqual(sha(read(name)),digest)
+            with self.subTest(name=name): self.assertEqual(sha(read(name)),RELEASE26_PIN_OVERLAY.get(name,digest))
             checked+=1
         self.assertGreater(checked,170)
     def test_stylesheet_adds_only_the_exact_scoped_wrapping_rule(self):
@@ -320,14 +325,14 @@ class SourceUnavailableLayoutFix(unittest.TestCase):
         total=0
         for name,count in TOKEN_FILES.items():
             content=read(name)
-            self.assertEqual(content.count(NEW_TOKEN.encode()),count,name)
+            self.assertEqual(content.count(CURRENT_TOKEN.encode()),count,name)
             self.assertNotIn(OLD_TOKEN.encode(),content,name)
-            self.assertEqual(sha(content.replace(NEW_TOKEN.encode(),OLD_TOKEN.encode())),BASELINE_FILES[name],name)
+            self.assertEqual(sha(content.replace(CURRENT_TOKEN.encode(),OLD_TOKEN.encode()).replace('此名录记录尚未绑定个人档案'.encode(),'个人档案尚未建立'.encode())),BASELINE_FILES[name],name)
             total+=count
         self.assertEqual(total,6)
     def test_roles_and_historical_source_boundaries_remain(self):
         db=json.loads(read('data/atlas.json'))
-        self.assertEqual((len(db['people']),len(db['pending_people']),len(db['institutions'])),(555,84,39))
+        self.assertEqual((len(db['people']),len(db['pending_people']),len(db['institutions'])),(564,84,39))
         p=next(p for p in db['people'] if p['person_id']=='cqu-chenke')
         self.assertEqual(len(p['teaching']),2)
         for row in p['teaching']:
@@ -349,7 +354,7 @@ class SourceUnavailableLayoutFix(unittest.TestCase):
         self.assertEqual(p['mentors'],[])
     def test_common_build_id_remains_the_frozen_display_fix_id(self):
         for name in ['site/atlas.json','site/rosters.json']:
-            self.assertEqual(json.loads(read(name))['build_id'],'dc1462986991f7b6')
+            self.assertEqual(json.loads(read(name))['build_id'],'c0d2d19978fa88dd')
 
 if os.environ.get('ACADEMIC_ATLAS_NEGATIVE_CONTROL_ROOT'):
     class FrozenBaselineControl(unittest.TestCase):

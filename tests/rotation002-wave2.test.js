@@ -1,3 +1,4 @@
+import {release25View} from './release-history.js';
 // Offline release23 consumer regressions. Only reviewed NJU/HNU additions;
 // no source fetch, browser, build writes, or dependency on the research folder.
 import {test} from 'node:test';
@@ -7,8 +8,8 @@ import {stages,matches,educationStageLabel,mentorOfficialUrl,mentorEvents,offici
 import {rosterIdentityMatched,rosterStatusLabel,renderRosters} from '../site/rosters.js';
 
 const read = path => JSON.parse(fs.readFileSync(new URL(path, import.meta.url)));
-const db = read('../data/atlas.json');
-db.rosters = read('../data/rosters.json');
+const db = release25View(read('../data/atlas.json'),'data/atlas.json');
+db.rosters = release25View(read('../data/rosters.json'),'data/rosters.json');
 const ids = ['nju-chengxin','nju-chenpengfei','nju-chenyang','hnu-chenzengping','hnu-chuxia','hnu-huanshuangyan'];
 const person = id => db.people.find(p => p.person_id === id);
 const added = ids.map(person);

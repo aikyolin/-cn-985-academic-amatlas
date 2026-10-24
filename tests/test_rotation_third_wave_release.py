@@ -1370,7 +1370,7 @@ class RotationThirdWaveReleaseTests(unittest.TestCase):
             self.assertIs(p['detail_count_eligible'],False)
             for key in ('education','mentors','publications'):self.assertEqual(p[key],[])
             self.assertIsNone(e['verified_person_id']);self.assertIs(e['profile_identity_verified'],False)
-            self.assertIn('个人档案尚未建立',js['people'][pid]['profileMain'])
+            self.assertIn('此名录记录尚未绑定个人档案',js['people'][pid]['profileMain'])
             self.assertNotIn('进入已核实身份的人物档案',js['pending'][pid]['html'])
             self.assertIn('候选成果不计正式统计',js['pending'][pid]['html'])
         self.assertTrue(js['pending']['scu-lianggemeng']['matched'])

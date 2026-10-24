@@ -12,6 +12,7 @@ Approved scope covers CAU, NEU, Tongji, and the explicitly reviewed final ECNU
 revision. Any further batch must be independently pinned before totals expand. This is not a
 live-source re-review, personnel audit, complete school roster, or publisher check.
 """
+from release_history import release25_view
 import copy
 import hashlib
 import json
@@ -760,8 +761,8 @@ process.stdout.write(JSON.stringify(out));
 class Rotation002ReleaseTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.d = json.loads((ROOT / 'data/atlas.json').read_text())
-        cls.r = json.loads((ROOT / 'data/rosters.json').read_text())
+        cls.d = release25_view(json.loads((ROOT / 'data/atlas.json').read_text()), 'data/atlas.json')
+        cls.r = release25_view(json.loads((ROOT / 'data/rosters.json').read_text()), 'data/rosters.json')
         cls.ps = {p['person_id']: p for p in cls.d['people'] + cls.d['pending_people']}
         cls.new = [cls.ps[pid] for pid in SOURCE_FINGERPRINTS]
         cls.pro = [p for p in cls.new if p['person_id'] not in PENDING_IDS]
@@ -942,7 +943,7 @@ class Rotation002ReleaseTests(unittest.TestCase):
         self.assertEqual(len(person['pending_education_candidates']), 2)
         self.assertEqual(len(person['pending_appointment_candidates']), 5)
         self.assertEqual(js['people'][pid]['officialUrl'], '')
-        self.assertIn('个人档案尚未建立', js['people'][pid]['profileMain'])
+        self.assertIn('此名录记录尚未绑定个人档案', js['people'][pid]['profileMain'])
         self.assertFalse(js['rosters'][pid]['matched'])
         self.assertNotIn('进入已核实身份的人物档案', js['rosters'][pid]['html'])
         self.assertNotIn('人物身份已匹配', js['rosters'][pid]['html'])

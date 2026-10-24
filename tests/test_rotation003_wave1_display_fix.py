@@ -1,6 +1,7 @@
 """Two evidence-bound Chen Ke teaching-role aliases, with no implementation change.
 Self-contained offline regression; no research/baseline dependency or output writes.
 """
+from release_history import release25_view
 import copy,hashlib,json,os,pathlib,sys,unittest
 sys.dont_write_bytecode=True
 ROOT=pathlib.Path(os.environ.get('ACADEMIC_ATLAS_TEST_ROOT',pathlib.Path(__file__).resolve().parents[1]))
@@ -220,10 +221,13 @@ def assert_alias_contract(person):
     return True
 
 
+
+# Exact live release26 overlays; original golden constants remain above.
+RELEASE26_PIN_OVERLAY={'data/rosters.json': '0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f', 'site/exports/待核对名录.xlsx': '6e01fe76a8b3620f51e3a0ec68b27d1fa5a81ff3427ddfb266efd2e03235176a', 'site/index.html': 'a6e57e88a623157fd3103a6099b9e72b21a0435c9fa62530a41469814844242c', 'site/app.js': '19945c1392982e4b3a1df95d93c271e957bf16b2a238f8d63d24ed892c722dea', 'site/rosters.js': 'd060662fe29e2d5209ca7cabd89121f253c6df69878d776e652f2fe8f8eb45a9'}
 class Rotation003Wave1DisplayFixTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.db=json.loads((ROOT/'data/atlas.json').read_text())
+        cls.db=release25_view(json.loads((ROOT/'data/atlas.json').read_text()), 'data/atlas.json')
         cls.person=next(p for p in cls.db['people']if p['person_id']=='cqu-chenke')
         cls.original=strip_aliases(cls.db)
         cls.old_person=next(p for p in cls.original['people']if p['person_id']=='cqu-chenke')
@@ -249,12 +253,12 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
 
     def test_04_application_exporter_and_tokens_have_only_reviewed_layout_overlay(self):
         for file,digest in UNCHANGED_FILES.items():
-            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),LAYOUT_FIX_APPLICATION_SHA256.get(file,digest),file)
+            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)),file)
         for file,count in [('site/app.js',3),('site/rosters.js',1),('site/index.html',2)]:
-            self.assertEqual((ROOT/file).read_text().count('rotation003-20261023-w2'),count)
+            self.assertEqual((ROOT/file).read_text().count('rotation003-20261024-w2'),count)
 
     def test_05_generated_snapshots_recover_exactly_after_aliases_and_derived_build_id_removed(self):
-        site=json.loads((ROOT/'site/atlas.json').read_text());roster=json.loads((ROOT/'site/rosters.json').read_text())
+        site=release25_view(json.loads((ROOT/'site/atlas.json').read_text()), 'site/atlas.json');roster=release25_view(json.loads((ROOT/'site/rosters.json').read_text()), 'site/rosters.json')
         self.assertEqual(site['people'],self.db['people']);self.assertEqual(site['pending_people'],self.db['pending_people'])
         self.assertEqual(site['build_id'],roster['build_id']);self.assertNotEqual(site['build_id'],BASELINE_BUILD_ID)
         site=strip_aliases(site);site['build_id']=BASELINE_BUILD_ID;roster['build_id']=BASELINE_BUILD_ID
@@ -310,7 +314,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
         self.assertEqual(len(UNCHANGED_DEPARTMENT_WORKBOOKS),110)
         for file,digest in UNCHANGED_DEPARTMENT_WORKBOOKS.items():
             self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest,file)
-        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),BASELINE_ROSTER_WORKBOOK_SHA256)
+        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),RELEASE26_PIN_OVERLAY['site/exports/待核对名录.xlsx'])
 
     def test_11_alias_guard_rejects_every_added_leaf_mutation_and_cross_source_swap(self):
         paths=[(key,)for key in ROLE_KEYS]+[('field_provenance','role'),('field_status','role')]

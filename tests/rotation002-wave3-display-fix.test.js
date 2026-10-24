@@ -1,3 +1,5 @@
+const RELEASE26_DATA_SHA256={"data/atlas.json": "4a2caaf803967d671bf0bb6b3aeb7c661eecaa40e7bf74e31c214215a3fecc93", "data/rosters.json": "0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f", "site/atlas.json": "f0f46d4cba67eec805f944e2bef431120b38016465afcdd1227cf6e7fd4a6861", "site/rosters.json": "509f98b11edd2fdfe3a80ef1b0de0d07d46d2f186ed29c363e3e8ebe293168b0"};
+import {release25View} from './release-history.js';
 // Independent display-only regression. Golden hashes are from immutable release24,
 // not recomputed from the candidate. Runtime is offline and writes no build files.
 import {test} from 'node:test';
@@ -12,8 +14,8 @@ const {educationStageLabel,stages,matches,mentorEvents}=await import(pathToFileU
 const read=name=>fs.readFileSync(path.join(root,name));
 const digest=value=>createHash('sha256').update(value).digest('hex');
 const objectDigest=value=>digest(JSON.stringify(value));
-const db=JSON.parse(read('data/atlas.json'));
-db.rosters=JSON.parse(read('data/rosters.json'));
+const db=release25View(JSON.parse(read('data/atlas.json')),'data/atlas.json');
+db.rosters=release25View(JSON.parse(read('data/rosters.json')),'data/rosters.json');
 const person=id=>db.people.find(p=>p.person_id===id);
 const event=id=>db.people.flatMap(p=>p.education||[]).find(e=>e.event_id===id);
 const UNDERGRADUATE='本科阶段学习（学位及授位未核实）';
@@ -68,7 +70,7 @@ function educationRows(html){
 }
 
 test('reviewed release25 append endpoint pins all four canonical and generated data files exactly',()=>{
-  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
+  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
 });
 
 test('exactly four previously generic event fallbacks acquire uncertainty-preserving labels',()=>{
@@ -169,7 +171,7 @@ test('the six existing asset references move together to the exact reviewed rota
   const counts={'site/app.js':3,'site/rosters.js':1,'site/index.html':2};
   for(const [file,count] of Object.entries(counts)){
     const source=read(file).toString();
-    assert.equal((source.match(/rotation003-20261023-w2/g)||[]).length,count,file);
+    assert.equal((source.match(/rotation003-20261024-w2/g)||[]).length,count,file);
     assert(!source.includes('rotation002-20261023-w1'),file);
   }
 });
@@ -182,5 +184,5 @@ test('real consumers and model projections do not mutate the canonical source sc
     for(const type of ['bachelor','master','doctor'])stages(person(id),type);
   }
   assert.equal(JSON.stringify(db),before);
-  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
+  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
 });

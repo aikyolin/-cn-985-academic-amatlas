@@ -1,0 +1,353 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "ab8aefd28f821c903517f17852560d6214a9d67c",
+  "school_id": "xjtu",
+  "school_name": "西安交通大学",
+  "batch_id": "faculty-batch-xjtu-rotation-003",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "2025-07-11近代物理与天文系（筹）/近代物理研究所“教授（研究员）”15人原序首3王延申、李广良、徐忠锋。原文全系35人为页面时点陈述，非2026实时人事总量。本批3条部分职业档案，非该系、研究所、学院或全校覆盖；采样归属不等雇佣或实际在岗。",
+  "source_urls": [
+    "https://phy.xjtu.edu.cn/info/1136/9939.htm"
+  ],
+  "selected_roster_observations": 3,
+  "source_category_observed_count": 15,
+  "source_category_count_basis": "15 original names in one labelled professor/researcher category; department prose reports 35 total staff at page date. These denominators are not interchangeable.",
+  "selected_roster_original_order": [
+    {
+      "id": "roster-xjtu-modern-physics-wangyanshen",
+      "name": "王延申",
+      "official_profile_url": "https://gr.xjtu.edu.cn/yswang/",
+      "native_roster_link_target": null,
+      "roster_source_url": "https://phy.xjtu.edu.cn/info/1136/9939.htm",
+      "order": 1,
+      "listed_role": "教授",
+      "profile_status": "body_verified_professional_profile"
+    },
+    {
+      "id": "roster-xjtu-modern-physics-liguangliang",
+      "name": "李广良",
+      "official_profile_url": "https://gr.xjtu.edu.cn/leegl/",
+      "native_roster_link_target": null,
+      "roster_source_url": "https://phy.xjtu.edu.cn/info/1136/9939.htm",
+      "order": 2,
+      "listed_role": "教授",
+      "profile_status": "body_verified_professional_profile"
+    },
+    {
+      "id": "roster-xjtu-modern-physics-xuzhongfeng",
+      "name": "徐忠锋",
+      "official_profile_url": "https://gr.xjtu.edu.cn/zhfxu/",
+      "native_roster_link_target": null,
+      "roster_source_url": "https://phy.xjtu.edu.cn/info/1136/9939.htm",
+      "order": 3,
+      "listed_role": "教授",
+      "profile_status": "body_verified_professional_profile"
+    }
+  ],
+  "counts": {
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 19,
+      "appointments": 7,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 2,
+      "sources": 13,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 9
+    },
+    "effective_professional_collections": {
+      "education": 19,
+      "appointments": 7,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 2,
+      "sources": 13,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 9
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 7,
+      "degree_awarded_false": 12,
+      "degree_awarded_null": 0,
+      "confirmed_degree_events": 7
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-xjtu-rotation-003.json",
+      "sha256": "857ad9b33181de41c2ea6c967ab09eab8405c2e35dd91cdec4025bc58b6211e1",
+      "scope_file": "faculty-batch-xjtu-rotation-003-scope.json",
+      "scope_sha256": "9612e8b9a1bf7e347b4e9e0bf60150c8cdb83830bee22413feabb64b6f5b83dd",
+      "qa_file": "faculty-batch-xjtu-rotation-003-qa.json",
+      "qa_sha256": "d87d2b80cd61ad7240cf55bac5f8e4451200e841aaf89567d359bf3986071931",
+      "independent_review_file": "faculty-batch-xjtu-rotation-003-independent-review.json",
+      "independent_review_sha256": "d2e2fbb073ebf6945d749d0721a84a9a0ed65b1f466f4b1a23ccae524abf80ad"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-xjtu-rotation-003",
+    "institution": {
+      "id": "xjtu",
+      "official_name": "西安交通大学",
+      "official_url": "https://www.xjtu.edu.cn/",
+      "source_urls": [
+        "https://phy.xjtu.edu.cn/info/1136/9939.htm"
+      ],
+      "scope_note": "全国轮换003新增物理学院近代物理与天文系（筹）采样层。原序首3，未按学位、海外经历或资料丰富度筛人。"
+    },
+    "org_units": [
+      {
+        "id": "xjtu-physics-school",
+        "name": "物理学院",
+        "type": "school",
+        "school_id": "xjtu",
+        "parent_id": "xjtu",
+        "source_id": "xjtu-rotation003-organization",
+        "source_url": "https://phy.xjtu.edu.cn/xygk.htm",
+        "evidence_status": "official_public_body_read"
+      },
+      {
+        "id": "xjtu-modern-physics-astronomy-preparatory",
+        "name": "近代物理与天文系（筹）",
+        "type": "department",
+        "school_id": "xjtu",
+        "parent_id": "xjtu-physics-school",
+        "source_id": "xjtu-modern-physics-professor-roster",
+        "source_url": "https://phy.xjtu.edu.cn/info/1136/9939.htm",
+        "evidence_status": "official_roster_body_read",
+        "source_label": "近代物理与天文系（筹）/近代物理研究所",
+        "status": "source_label_preparatory",
+        "established_at": null,
+        "note": "保留采样页系名（筹）。学院简介2026-01-31仍写筹建；不得推断筹建完成、正式生效日期或把研究所等同系。"
+      },
+      {
+        "id": "xjtu-modern-physics-institute",
+        "name": "近代物理研究所",
+        "type": "institute",
+        "school_id": "xjtu",
+        "parent_id": "xjtu-physics-school",
+        "source_id": "xjtu-modern-physics-professor-roster",
+        "source_url": "https://phy.xjtu.edu.cn/info/1136/9939.htm",
+        "evidence_status": "official_roster_body_read",
+        "note": "来源与教学系并列。保留机构身份，不自动生成个人第二雇佣关系。"
+      }
+    ],
+    "campuses": [],
+    "scope": "2025-07-11近代物理与天文系（筹）/近代物理研究所“教授（研究员）”15人原序首3王延申、李广良、徐忠锋。原文全系35人为页面时点陈述，非2026实时人事总量。本批3条部分职业档案，非该系、研究所、学院或全校覆盖；采样归属不等雇佣或实际在岗。",
+    "retrieved_at": "2026-10-23",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "xjtu-modern-physics-professor-roster",
+        "url": "https://phy.xjtu.edu.cn/info/1136/9939.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "xjtu-rotation-003-sources/roster-minimal.json",
+        "page_date": "2025-07-11"
+      },
+      {
+        "id": "xjtu-rotation003-organization",
+        "url": "https://phy.xjtu.edu.cn/xygk.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "xjtu-rotation-003-sources/organization-minimal.json",
+        "page_date": "2026-01-31"
+      },
+      {
+        "id": "xjtu-rotation003-identity",
+        "url": "https://phy.xjtu.edu.cn/szdw/jsdw1.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "xjtu-rotation-003-sources/identity-minimal.json"
+      },
+      {
+        "id": "xjtu-rotation003-wang-profile",
+        "url": "https://gr.xjtu.edu.cn/yswang/",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "xjtu-rotation-003-sources/wang-minimal.json"
+      },
+      {
+        "id": "xjtu-rotation003-wang-bio",
+        "url": "https://www.xjtu.edu.cn/jsnr.jsp?urltype=tree.TreeTempUrl&wbtreeid=1632&wbwbxjtuteacherid=132",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "xjtu-rotation-003-sources/wang-minimal.json",
+        "page_date": "2015-03-28"
+      },
+      {
+        "id": "xjtu-rotation003-li-profile",
+        "url": "https://gr.xjtu.edu.cn/leegl/",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "xjtu-rotation-003-sources/li-minimal.json"
+      },
+      {
+        "id": "xjtu-rotation003-li-bio",
+        "url": "https://www.xjtu.edu.cn/jsnr.jsp?urltype=tree.TreeTempUrl&wbtreeid=1632&wbwbxjtuteacherid=184",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "xjtu-rotation-003-sources/li-minimal.json",
+        "page_date": "2025-07-30"
+      },
+      {
+        "id": "xjtu-rotation003-xu-profile",
+        "url": "https://gr.xjtu.edu.cn/zhfxu/",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "xjtu-rotation-003-sources/xu-minimal.json"
+      },
+      {
+        "id": "xjtu-rotation003-xu-team-bio",
+        "url": "https://gr.xjtu.edu.cn/zhfxu/zh_CN/zdylm/990512/list/index.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "xjtu-rotation-003-sources/xu-minimal.json",
+        "temporal_note": "Undated legacy team biography; use historical education only, not its administrative title as current."
+      },
+      {
+        "id": "xjtu-rotation003-xu-publications",
+        "url": "https://gr.xjtu.edu.cn/zhfxu/zh_CN/lwcg/250306/list/index.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "xjtu-rotation-003-sources/publications-minimal.json"
+      }
+    ],
+    "counts": {
+      "education": 19,
+      "appointments": 7,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 2,
+      "sources": 13,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "people": 3,
+      "unique_sources": 10,
+      "degree_awarded_true": 7,
+      "degree_awarded_false": 12,
+      "degree_awarded_null": 0,
+      "degree_events": 7,
+      "nondegree_events": 12
+    },
+    "limitations": [
+      "2025-07-11近代物理与天文系（筹）/近代物理研究所“教授（研究员）”15人原序首3王延申、李广良、徐忠锋。原文全系35人为页面时点陈述，非2026实时人事总量。本批3条部分职业档案，非该系、研究所、学院或全校覆盖；采样归属不等雇佣或实际在岗。",
+      "保留“筹”字；实际生效日期、筹建结束时间、当前组织变更未核。系所采样与学院教师分组不同，分别记录，不强合并。",
+      "仅必要公开职业字段及2条书目元数据。无联系方式、出生信息、学生名单、全文缓存或论文全文。",
+      "7条明确获授学位；12条博士后、访问和合作研究均非学位，均不进入学历/学位筛选。事件月不伪造完整区间；徐忠锋2004-04仅授位时点，博士学习起止均未知。",
+      "王延申博士以中文官方来源确定为中国西北大学，不因英文Northwestern University误设美国。",
+      "历史至今以来源更新日期截断语境，不推到抓取日；所有现列岗位只作页面观察，未核全职在岗。",
+      "本人导师、博士后指导者和委员会关系无直接证据，均为空；徐忠锋团队指导老师页为本人，不生成自指导。",
+      "当前个人头衔与入校、旧院系、行政旧职分离；不会把任教年份自动回填教授起点。",
+      "原序三人均有正文职业证据，未因最初稀疏、旧链接失败或无导师信息替换人选。"
+    ]
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T23:59:00Z",
+    "data_sha256": "857ad9b33181de41c2ea6c967ab09eab8405c2e35dd91cdec4025bc58b6211e1",
+    "counts": {
+      "education": 19,
+      "appointments": 7,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 2,
+      "sources": 13,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "teaching": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 9,
+      "professional_research_advisors": 0,
+      "people": 3,
+      "unique_sources": 10,
+      "degree_awarded_true": 7,
+      "degree_awarded_false": 12,
+      "degree_awarded_null": 0,
+      "professional_people": 3,
+      "pending_people": 0,
+      "degree_events": 7,
+      "nondegree_events": 12
+    },
+    "integration_limits": [
+      "仅教授/研究员类别15名原序首3，不是全系35、学院或学校覆盖；采样页面没有个人链接，不能改称原页直链。",
+      "系名保留（筹）；系与研究所分开，学院名录分组差异不得抹去或推双聘。历史旧页至今不得延伸到抓取日期。",
+      "王延申博士院校为中国西北大学，不是美国Northwestern；未知博士专业及入学时间不补。",
+      "徐博士2004-04只为获授月，学习起止均null；其他仅访问事件月不得变完整区间。李2001来校、王1998来校不当教授起点。",
+      "12非学位保持两个学历/学位筛选false，并与7明确获授区分；两个人的导师资格及徐团队自我介绍不产生导师边，当前导师导航0。",
+      "徐论文只有本人目录书目，不保留失败且标题有异的单篇目标为已核文章入口；王空缺成果不等本人无发表。",
+      "仅徐论文列表独核普通HTTPS200，其余来源为reader正文读通，不泛化网络状态。源站读通不代表人事在岗或行政任期独核。",
+      "原始来源审查通过不代替最终地域/985/消费者字段归一化及显示、筛选集成验证。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "2025-07-11近代物理与天文系（筹）/近代物理研究所“教授（研究员）”15人原序首3王延申、李广良、徐忠锋。原文全系35人为页面时点陈述，非2026实时人事总量。本批3条部分职业档案，非该系、研究所、学院或全校覆盖；采样归属不等雇佣或实际在岗。",
+    "保留“筹”字；实际生效日期、筹建结束时间、当前组织变更未核。系所采样与学院教师分组不同，分别记录，不强合并。",
+    "仅必要公开职业字段及2条书目元数据。无联系方式、出生信息、学生名单、全文缓存或论文全文。",
+    "7条明确获授学位；12条博士后、访问和合作研究均非学位，均不进入学历/学位筛选。事件月不伪造完整区间；徐忠锋2004-04仅授位时点，博士学习起止均未知。",
+    "王延申博士以中文官方来源确定为中国西北大学，不因英文Northwestern University误设美国。",
+    "历史至今以来源更新日期截断语境，不推到抓取日；所有现列岗位只作页面观察，未核全职在岗。",
+    "本人导师、博士后指导者和委员会关系无直接证据，均为空；徐忠锋团队指导老师页为本人，不生成自指导。",
+    "当前个人头衔与入校、旧院系、行政旧职分离；不会把任教年份自动回填教授起点。",
+    "原序三人均有正文职业证据，未因最初稀疏、旧链接失败或无导师信息替换人选。",
+    "仅教授/研究员类别15名原序首3，不是全系35、学院或学校覆盖；采样页面没有个人链接，不能改称原页直链。",
+    "系名保留（筹）；系与研究所分开，学院名录分组差异不得抹去或推双聘。历史旧页至今不得延伸到抓取日期。",
+    "王延申博士院校为中国西北大学，不是美国Northwestern；未知博士专业及入学时间不补。",
+    "徐博士2004-04只为获授月，学习起止均null；其他仅访问事件月不得变完整区间。李2001来校、王1998来校不当教授起点。",
+    "12非学位保持两个学历/学位筛选false，并与7明确获授区分；两个人的导师资格及徐团队自我介绍不产生导师边，当前导师导航0。",
+    "徐论文只有本人目录书目，不保留失败且标题有异的单篇目标为已核文章入口；王空缺成果不等本人无发表。",
+    "仅徐论文列表独核普通HTTPS200，其余来源为reader正文读通，不泛化网络状态。源站读通不代表人事在岗或行政任期独核。",
+    "原始来源审查通过不代替最终地域/985/消费者字段归一化及显示、筛选集成验证。"
+  ],
+  "next_action": "继续核实所选人物教育、师承和人事缺项；扩充名录须另立原序范围，不将本批当完整院系。",
+  "release_status": "local_not_published"
+}

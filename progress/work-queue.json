@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-10-23",
-  "base_commit": "a440e016e881da9f20d9872624f966311522f4cc",
+  "base_commit": "ab8aefd28f821c903517f17852560d6214a9d67c",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -6852,6 +6852,90 @@
       "next_cursor": "rotation003_wave1_selected_sample_reviewed_fields_incomplete",
       "attempted_at": "2026-10-23",
       "last_verified_commit": "a440e016e881da9f20d9872624f966311522f4cc"
+    },
+    {
+      "task_id": "lzu:lzu-civil-engineering-mechanics:rotation003-wave2",
+      "institution_id": "lzu",
+      "organization_id": "lzu-civil-engineering-mechanics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "土木工程与力学学院师资总页的“教授（正高职）”类别可见41名，原序首3周又和、黄宁、王记增均与基线及旧LZU批次不重合。仅3份部分公开职业档案，非全院或全校完整覆盖；类别在列不等全职在岗证明。单独类别更多页超时，计数只指已读总页该类别。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://gxy.lzu.edu.cn/shiziduiwu/index.html"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/lzu-rotation003-wave2-coverage.json",
+        "progress/multischool-rotation003-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续核实所选人物教育、师承和人事缺项；扩充名录须另立原序范围，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave2_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "ab8aefd28f821c903517f17852560d6214a9d67c"
+    },
+    {
+      "task_id": "nwsuaf:nwsuaf-life-sciences:rotation003-wave2",
+      "institution_id": "nwsuaf",
+      "organization_id": "nwsuaf-life-sciences",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "生命科学学院“师资队伍 > 教授”单页名录53人，官方原序首3为Israel Ausin、安丽君、曹帅。本批仅3条部分公开职业档案；是新增学院层级覆盖，不制造下属系。不是全院或全校完整覆盖；当前名录和职业主页在列不等全职或正式在岗人事核验。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://life.nwsuaf.edu.cn/szdw/js2/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/nwsuaf-rotation003-wave2-coverage.json",
+        "progress/multischool-rotation003-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续核实所选人物教育、师承和人事缺项；扩充名录须另立原序范围，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave2_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "ab8aefd28f821c903517f17852560d6214a9d67c"
+    },
+    {
+      "task_id": "xjtu:xjtu-modern-physics-astronomy-preparatory:rotation003-wave2",
+      "institution_id": "xjtu",
+      "organization_id": "xjtu-modern-physics-astronomy-preparatory",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "2025-07-11近代物理与天文系（筹）/近代物理研究所“教授（研究员）”15人原序首3王延申、李广良、徐忠锋。原文全系35人为页面时点陈述，非2026实时人事总量。本批3条部分职业档案，非该系、研究所、学院或全校覆盖；采样归属不等雇佣或实际在岗。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://phy.xjtu.edu.cn/info/1136/9939.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/xjtu-rotation003-wave2-coverage.json",
+        "progress/multischool-rotation003-wave2-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续核实所选人物教育、师承和人事缺项；扩充名录须另立原序范围，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave2_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-23",
+      "last_verified_commit": "ab8aefd28f821c903517f17852560d6214a9d67c"
     }
   ]
 }

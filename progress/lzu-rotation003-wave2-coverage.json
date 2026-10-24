@@ -1,0 +1,299 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "ab8aefd28f821c903517f17852560d6214a9d67c",
+  "school_id": "lzu",
+  "school_name": "兰州大学",
+  "batch_id": "faculty-batch-lzu-rotation-003",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "土木工程与力学学院师资总页的“教授（正高职）”类别可见41名，原序首3周又和、黄宁、王记增均与基线及旧LZU批次不重合。仅3份部分公开职业档案，非全院或全校完整覆盖；类别在列不等全职在岗证明。单独类别更多页超时，计数只指已读总页该类别。",
+  "source_urls": [
+    "https://gxy.lzu.edu.cn/shiziduiwu/index.html"
+  ],
+  "selected_roster_observations": 3,
+  "source_category_observed_count": 41,
+  "source_category_count_basis": "Counted 41 distinct linked names inside the single professor/full senior category, between its heading and the associate-professor category. The preceding distinguished-talent category repeats Zhou Youhe and is excluded. No category-total or college-headcount extrapolation.",
+  "selected_roster_original_order": [
+    {
+      "id": "roster-lzu-zhouyouhe",
+      "name": "周又和",
+      "official_profile_url": "https://gxy.lzu.edu.cn/shiziduiwu/liangyuanyuanshi/2019/0903/107250.html",
+      "native_link_target": "https://gxy.lzu.edu.cn/shiziduiwu/liangyuanyuanshi/2019/0903/107250.html",
+      "roster_source_url": "https://gxy.lzu.edu.cn/shiziduiwu/index.html",
+      "order": 1,
+      "listed_role": "教授",
+      "roster_category": "教授（正高职）"
+    },
+    {
+      "id": "roster-lzu-huangning",
+      "name": "黄宁",
+      "official_profile_url": "https://gxy.lzu.edu.cn/shiziduiwu/jiaoshou/2019/0903/107246.html",
+      "native_link_target": "https://gxy.lzu.edu.cn/shiziduiwu/jiaoshou/2019/0903/107246.html",
+      "roster_source_url": "https://gxy.lzu.edu.cn/shiziduiwu/index.html",
+      "order": 2,
+      "listed_role": "教授（二级）",
+      "roster_category": "教授（正高职）"
+    },
+    {
+      "id": "roster-lzu-wangjizeng",
+      "name": "王记增",
+      "official_profile_url": "https://gxy.lzu.edu.cn/shiziduiwu/jiaoshou/2019/0903/107240.html",
+      "native_link_target": "https://gxy.lzu.edu.cn/shiziduiwu/jiaoshou/2019/0903/107240.html",
+      "roster_source_url": "https://gxy.lzu.edu.cn/shiziduiwu/index.html",
+      "order": 3,
+      "listed_role": "教授",
+      "roster_category": "教授（正高职）"
+    }
+  ],
+  "counts": {
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 17,
+      "appointments": 10,
+      "mentors": 1,
+      "committee_members": 0,
+      "publications": 3,
+      "sources": 8,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 2,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 14
+    },
+    "effective_professional_collections": {
+      "education": 17,
+      "appointments": 10,
+      "mentors": 1,
+      "committee_members": 0,
+      "publications": 3,
+      "sources": 8,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 2,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 14
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 6,
+      "degree_awarded_false": 9,
+      "degree_awarded_null": 2,
+      "confirmed_degree_events": 6
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-lzu-rotation-003.json",
+      "sha256": "81746e6b89ae433f321d1b595422b99031082b42147318e02bccd38b899c2e98",
+      "scope_file": "faculty-batch-lzu-rotation-003-scope.json",
+      "scope_sha256": "d19075a3b716aa671c1893b3748e8cabd494498392a9a18ada832fe44d5599ce",
+      "qa_file": "faculty-batch-lzu-rotation-003-qa.json",
+      "qa_sha256": "bfb8aef6758c56d490e23c84601e0e77ebd511cca5f42f6c019c0f0666abcf23",
+      "independent_review_file": "faculty-batch-lzu-rotation-003-independent-review.json",
+      "independent_review_sha256": "051538941807141563b918c4aed62c65b980054ea1855db314d3b547275f1702"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-lzu-rotation-003",
+    "institution": {
+      "id": "lzu",
+      "official_name": "兰州大学",
+      "official_url": "https://www.lzu.edu.cn/",
+      "source_urls": [
+        "https://gxy.lzu.edu.cn/shiziduiwu/index.html"
+      ],
+      "scope_note": "全国轮换003新增土木工程与力学学院；官方教授（正高职）类别原序首3，不按学历、海外或资料丰寡选人。"
+    },
+    "org_units": [
+      {
+        "id": "lzu-civil-engineering-mechanics",
+        "name": "土木工程与力学学院",
+        "type": "school",
+        "school_id": "lzu",
+        "parent_id": "lzu",
+        "source_url": "https://gxy.lzu.edu.cn/shiziduiwu/index.html",
+        "source_id": "lzu-civil-mechanics-professors-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "土木工程与力学学院师资总页的“教授（正高职）”类别可见41名，原序首3周又和、黄宁、王记增均与基线及旧LZU批次不重合。仅3份部分公开职业档案，非全院或全校完整覆盖；类别在列不等全职在岗证明。单独类别更多页超时，计数只指已读总页该类别。",
+    "retrieved_at": "2026-10-23",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "lzu-civil-mechanics-professors-roster",
+        "url": "https://gxy.lzu.edu.cn/shiziduiwu/index.html",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "lzu-rotation-003-sources/roster-minimal.json",
+        "access_note": "Web reader returned the entire 188-line faculty listing body. HTTP origin status is not exposed; no direct-origin status claimed. Separate category more link timed out once, so selection is bounded to the fully read parent category rather than an unverified standalone page."
+      },
+      {
+        "id": "lzu-zhouyouhe-profile",
+        "url": "https://gxy.lzu.edu.cn/shiziduiwu/liangyuanyuanshi/2019/0903/107250.html",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "lzu-rotation-003-sources/lzu-zhouyouhe-profile-minimal.json",
+        "web_reference": "turn2153view1",
+        "body_sections_read": "149–245, 333–334",
+        "access_note": "Web reader returned professional page body; origin HTTP status is not exposed. Present-tense page listing is not an independent personnel/employment verification."
+      },
+      {
+        "id": "lzu-huangning-profile",
+        "url": "https://gxy.lzu.edu.cn/shiziduiwu/jiaoshou/2019/0903/107246.html",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "lzu-rotation-003-sources/lzu-huangning-profile-minimal.json",
+        "web_reference": "turn2158view0",
+        "body_sections_read": "149–237",
+        "access_note": "Web reader returned professional page body; origin HTTP status is not exposed. Present-tense page listing is not an independent personnel/employment verification."
+      },
+      {
+        "id": "lzu-wangjizeng-profile",
+        "url": "https://gxy.lzu.edu.cn/shiziduiwu/jiaoshou/2019/0903/107240.html",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "lzu-rotation-003-sources/lzu-wangjizeng-profile-minimal.json",
+        "web_reference": "turn2158view1",
+        "body_sections_read": "147–214",
+        "access_note": "Web reader returned professional page body; origin HTTP status is not exposed. Present-tense page listing is not an independent personnel/employment verification."
+      },
+      {
+        "id": "lzu-zhouyouhe-doctoral-history-2021",
+        "url": "https://ae.hust.edu.cn/info/1071/1858.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official_republished_article",
+        "evidence_file": "lzu-rotation-003-sources/supplementary-minimal.json",
+        "web_reference": "turn2171view0",
+        "published_at": "2021-11-19",
+        "access_note": "HUST School of Aerospace Engineering alumni article. Explicitly credits a Changjiang Daily report compiled from university and other sources. Complete body read; only bounded historical PhD award and doctoral supervision facts used, not 2026 employment."
+      },
+      {
+        "id": "lzu-wangjizeng-mentorship-index-candidate",
+        "url": "https://tzb.lzu.edu.cn/yaowendongtai/zuixindongtai/2022/0330/192894.html",
+        "evidence_status": "official_search_snippet_only_body_unavailable",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official_index_candidate",
+        "evidence_file": "lzu-rotation-003-sources/supplementary-minimal.json",
+        "web_reference": "turn2163search0",
+        "published_at": "2022-03-30",
+        "access_note": "Search index excerpt only. A single open failed with web-reader 400 Timeout fetching (turn2168view0); no retry or bypass. Not usable for a verified mentorship edge or education filter.",
+        "navigation_available": false,
+        "navigation_enabled": false
+      }
+    ],
+    "counts": {
+      "education": 17,
+      "appointments": 10,
+      "mentors": 1,
+      "committee_members": 0,
+      "publications": 3,
+      "sources": 8,
+      "pending_mentor_candidates": 2,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "people": 3,
+      "unique_sources": 6,
+      "degree_awarded_true": 6,
+      "degree_awarded_null": 2,
+      "degree_awarded_false": 9
+    },
+    "limitations": [
+      "土木工程与力学学院师资总页的“教授（正高职）”类别可见41名，原序首3周又和、黄宁、王记增均与基线及旧LZU批次不重合。仅3份部分公开职业档案，非全院或全校完整覆盖；类别在列不等全职在岗证明。单独类别更多页超时，计数只指已读总页该类别。",
+      "3人当前职称来自本人专业正文；在列不等人事核验，校区不由通讯地址推定。",
+      "博士后、访问研究与授位分开；周又和本硕学位标签不升级获授，博士有独立历史正文明确获授。黄宁三学位明确获授但授位日期未单列。王记增仅明确本科、博士授位年。",
+      "周又和博士导师叶开沅有直接历史正文；王记增的两位师承索引候选正文超时，不进入已核关系图。导师导航未核。",
+      "2020年黄宁教学旧页的院长至今措辞不覆盖本人页2017-12至2024-05的明确历史区间；王记增现任院长起点仍未知。",
+      "每人仅保留1条代表书目，出版者单篇入口与DOI解析未核；不复制全文或保留整页。",
+      "未保存联系方式、出生信息、学生名单、全量网页/API、照片或论文PDF。"
+    ]
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T23:55:00Z",
+    "data_sha256": "81746e6b89ae433f321d1b595422b99031082b42147318e02bccd38b899c2e98",
+    "counts": {
+      "education": 17,
+      "appointments": 10,
+      "mentors": 1,
+      "committee_members": 0,
+      "publications": 3,
+      "sources": 8,
+      "pending_mentor_candidates": 2,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "teaching": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 14,
+      "professional_research_advisors": 0,
+      "people": 3,
+      "unique_sources": 6,
+      "degree_awarded_true": 6,
+      "degree_awarded_false": 9,
+      "degree_awarded_null": 2,
+      "professional_people": 3,
+      "pending_people": 0
+    },
+    "integration_limits": [
+      "只处理总页教授类别41名原序首3，非全院全校或实时人事覆盖。",
+      "3条黄宁source_department是系名，不能重新归入专业field；所有未披露授位日、教授晋升日和校区保持未知。",
+      "6明确获授、2授位未知、9非学位分开；王记增仅授位年份不回填学习期。",
+      "1博士导师边为历史关系，当前导航0；2索引候选与来源不可访问标记保持，不能升正式关系。",
+      "黄宁旧院长任期已结束，历史研究职位和访问不与当前名录混合。",
+      "本次reader正文可读未独核原站HTTP状态，不宣称直连200。原先412及超时路线未重试。",
+      "书目仅本人官方列表元数据；原始包通过来源审查不代替消费者归一化和最终集成测试。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "土木工程与力学学院师资总页的“教授（正高职）”类别可见41名，原序首3周又和、黄宁、王记增均与基线及旧LZU批次不重合。仅3份部分公开职业档案，非全院或全校完整覆盖；类别在列不等全职在岗证明。单独类别更多页超时，计数只指已读总页该类别。",
+    "3人当前职称来自本人专业正文；在列不等人事核验，校区不由通讯地址推定。",
+    "博士后、访问研究与授位分开；周又和本硕学位标签不升级获授，博士有独立历史正文明确获授。黄宁三学位明确获授但授位日期未单列。王记增仅明确本科、博士授位年。",
+    "周又和博士导师叶开沅有直接历史正文；王记增的两位师承索引候选正文超时，不进入已核关系图。导师导航未核。",
+    "2020年黄宁教学旧页的院长至今措辞不覆盖本人页2017-12至2024-05的明确历史区间；王记增现任院长起点仍未知。",
+    "每人仅保留1条代表书目，出版者单篇入口与DOI解析未核；不复制全文或保留整页。",
+    "未保存联系方式、出生信息、学生名单、全量网页/API、照片或论文PDF。",
+    "只处理总页教授类别41名原序首3，非全院全校或实时人事覆盖。",
+    "3条黄宁source_department是系名，不能重新归入专业field；所有未披露授位日、教授晋升日和校区保持未知。",
+    "6明确获授、2授位未知、9非学位分开；王记增仅授位年份不回填学习期。",
+    "1博士导师边为历史关系，当前导航0；2索引候选与来源不可访问标记保持，不能升正式关系。",
+    "黄宁旧院长任期已结束，历史研究职位和访问不与当前名录混合。",
+    "本次reader正文可读未独核原站HTTP状态，不宣称直连200。原先412及超时路线未重试。",
+    "书目仅本人官方列表元数据；原始包通过来源审查不代替消费者归一化和最终集成测试。"
+  ],
+  "next_action": "继续核实所选人物教育、师承和人事缺项；扩充名录须另立原序范围，不将本批当完整院系。",
+  "release_status": "local_not_published"
+}

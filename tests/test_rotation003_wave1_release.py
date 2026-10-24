@@ -3,6 +3,7 @@ Pins derive only from hash-approved original packages and immutable release24.
 Runtime is repository-self-contained and offline; it does not fetch source pages,
 import normalization code, read the research directory, or write build outputs.
 """
+from release_history import release25_view
 import copy, hashlib, json, os, pathlib, subprocess, sys, unittest
 from collections import Counter
 from unittest import mock
@@ -1617,9 +1618,9 @@ def assert_source_closure(person):
 class Rotation003Wave1ReleaseTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.d = json.loads((ROOT/'data/atlas.json').read_text())
-        cls.r = json.loads((ROOT/'data/rosters.json').read_text())
-        cls.q = json.loads((ROOT/'progress/work-queue.json').read_text())
+        cls.d = release25_view(json.loads((ROOT/'data/atlas.json').read_text()), 'data/atlas.json')
+        cls.r = release25_view(json.loads((ROOT/'data/rosters.json').read_text()), 'data/rosters.json')
+        cls.q = release25_view(json.loads((ROOT/'progress/work-queue.json').read_text()), 'progress/work-queue.json')
         cls.ps = {p['person_id']:p for p in cls.d['people'] + cls.d['pending_people']}
         cls.new = [cls.ps[pid] for pid in SOURCE_FINGERPRINTS]
         cls.entries = {e['source_person_id']:e for e in cls.r['entries'] if e.get('source_person_id') in SOURCE_FINGERPRINTS}
@@ -1949,7 +1950,7 @@ class Rotation003Wave1ReleaseTests(unittest.TestCase):
             with self.assertRaises(AssertionError,msg=mode): assert_source_closure(p)
 
     def test_28_generated_site_preserves_canonical_profiles_and_pending_layer(self):
-        site=json.loads((ROOT/'site/atlas.json').read_text()); roster=json.loads((ROOT/'site/rosters.json').read_text())
+        site=release25_view(json.loads((ROOT/'site/atlas.json').read_text()), 'site/atlas.json'); roster=release25_view(json.loads((ROOT/'site/rosters.json').read_text()), 'site/rosters.json')
         self.assertEqual(site['people'],self.d['people']); self.assertEqual(site['pending_people'],self.d['pending_people'])
         self.assertEqual(site['build_id'],roster['build_id']); self.assertEqual(len(site['exports']),111)
         self.assertEqual(len(roster['entries']),1721)
@@ -1958,7 +1959,7 @@ class Rotation003Wave1ReleaseTests(unittest.TestCase):
         for file,digest in UNCHANGED_APPLICATION_SHA256.items():
             self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),LAYOUT_FIX_APPLICATION_SHA256.get(file,REVIEWED_COMPATIBILITY_SHA256.get(file,digest)),file)
         for file,digest in REVIEWED_COMPATIBILITY_SHA256.items():
-            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),LAYOUT_FIX_APPLICATION_SHA256.get(file,digest),file)
+            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),RELEASE26_DISPLAY_SHA256.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)),file)
 
     def test_30_actual_validators_consumers_and_exports_are_nonmutating(self):
         before=object_sha([self.d,self.r])
@@ -2055,5 +2056,8 @@ class Rotation003Wave1ReleaseTests(unittest.TestCase):
 
 # Exact layout-only overlay; all original source/data/application pins remain above.
 LAYOUT_FIX_APPLICATION_SHA256 = {'site/styles.css': '3b01ec6a5674982d048237e5426aa107bd622662d2758913c81bc6f5c4c0ceca', 'site/app.js': '5ce1dbc7161a048ab263cdff313bc904544b362c13d39cc5963886b409f037e2', 'site/rosters.js': '7536ef08c4032e05e1ad3c09532858dd42fd68c20968c82e2146481cf6d9c85f', 'site/index.html': '7e6331d4846c13d64f0a5b5b65a9d52539df537b2ce20ef26563669739f8f2a3'}
+
+# Exact three-file heading/cache correction; all earlier golden constants remain.
+RELEASE26_DISPLAY_SHA256={'site/index.html': 'a6e57e88a623157fd3103a6099b9e72b21a0435c9fa62530a41469814844242c', 'site/app.js': '19945c1392982e4b3a1df95d93c271e957bf16b2a238f8d63d24ed892c722dea', 'site/rosters.js': 'd060662fe29e2d5209ca7cabd89121f253c6df69878d776e652f2fe8f8eb45a9'}
 
 if __name__=='__main__': unittest.main()

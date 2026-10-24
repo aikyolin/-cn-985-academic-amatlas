@@ -1,3 +1,5 @@
+const RELEASE26_PIN_OVERLAY={"data/rosters.json": "0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f", "site/index.html": "a6e57e88a623157fd3103a6099b9e72b21a0435c9fa62530a41469814844242c", "site/app.js": "19945c1392982e4b3a1df95d93c271e957bf16b2a238f8d63d24ed892c722dea", "site/rosters.js": "d060662fe29e2d5209ca7cabd89121f253c6df69878d776e652f2fe8f8eb45a9"};
+import {release25View} from './release-history.js';
 // Focused offline consumer tests for two evidence-bound teaching-role aliases.
 // Frozen original teaching fixtures and unchanged real app provide negative controls.
 import {test} from 'node:test';
@@ -9,7 +11,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 const LAYOUT_FIX_APPLICATION_SHA256={"site/styles.css": "3b01ec6a5674982d048237e5426aa107bd622662d2758913c81bc6f5c4c0ceca", "site/app.js": "5ce1dbc7161a048ab263cdff313bc904544b362c13d39cc5963886b409f037e2", "site/rosters.js": "7536ef08c4032e05e1ad3c09532858dd42fd68c20968c82e2146481cf6d9c85f", "site/index.html": "7e6331d4846c13d64f0a5b5b65a9d52539df537b2ce20ef26563669739f8f2a3"};
 const root=process.env.ACADEMIC_ATLAS_TEST_ROOT||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=name=>JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
-const db=read('data/atlas.json');db.rosters=read('data/rosters.json');
+const db=release25View(read('data/atlas.json'),'data/atlas.json');db.rosters=release25View(read('data/rosters.json'),'data/rosters.json');
 const {stages,matches,educationStageLabel}=await import(pathToFileURL(path.join(root,'site/model.js')));
 const sha=x=>createHash('sha256').update(x).digest('hex');
 const objectSha=x=>sha(JSON.stringify(x));
@@ -107,8 +109,8 @@ test('all degree-stage memberships and 122 filter combinations are unchanged by 
 });
 
 test('application and exporter match original bytes or the exact reviewed layout-only overlay',()=>{
- for(const [file,digest]of Object.entries(UNCHANGED_FILES))assert.equal(sha(fs.readFileSync(path.join(root,file))),LAYOUT_FIX_APPLICATION_SHA256[file]||digest,file);
- for(const [file,n]of [['site/app.js',3],['site/rosters.js',1],['site/index.html',2]])assert.equal(fs.readFileSync(path.join(root,file),'utf8').split('rotation003-20261023-w2').length-1,n);
+ for(const [file,digest]of Object.entries(UNCHANGED_FILES))assert.equal(sha(fs.readFileSync(path.join(root,file))),RELEASE26_PIN_OVERLAY[file]||LAYOUT_FIX_APPLICATION_SHA256[file]||digest,file);
+ for(const [file,n]of [['site/app.js',3],['site/rosters.js',1],['site/index.html',2]])assert.equal(fs.readFileSync(path.join(root,file),'utf8').split('rotation003-20261024-w2').length-1,n);
 });
 
 test('actual rendering is read-only and does not promote the pending Chen Renwei selection',async()=>{

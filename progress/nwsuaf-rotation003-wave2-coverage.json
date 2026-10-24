@@ -1,0 +1,328 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "ab8aefd28f821c903517f17852560d6214a9d67c",
+  "school_id": "nwsuaf",
+  "school_name": "西北农林科技大学",
+  "batch_id": "faculty-batch-nwsuaf-rotation-003",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "生命科学学院“师资队伍 > 教授”单页名录53人，官方原序首3为Israel Ausin、安丽君、曹帅。本批仅3条部分公开职业档案；是新增学院层级覆盖，不制造下属系。不是全院或全校完整覆盖；当前名录和职业主页在列不等全职或正式在岗人事核验。",
+  "source_urls": [
+    "https://life.nwsuaf.edu.cn/szdw/js2/index.htm"
+  ],
+  "selected_roster_observations": 3,
+  "source_category_observed_count": 53,
+  "source_category_count_basis": "Reader lines28–235 contain53 distinct linked names (links14–66); footer line237 confirms53 entries,1page. Navigation and contacts excluded.",
+  "selected_roster_original_order": [
+    {
+      "id": "roster-nwsuaf-israelausin",
+      "name": "Israel Ausin",
+      "official_profile_url": "https://life.nwsuaf.edu.cn/szdw/js2/aaab4cec07dd404d99f90a6429ef20c6.htm",
+      "roster_source_url": "https://life.nwsuaf.edu.cn/szdw/js2/index.htm",
+      "order": 1,
+      "listed_role": "教授",
+      "actual_profile_title": "教授",
+      "actual_profile_title_source_id": "nwsuaf-israelausin-profile"
+    },
+    {
+      "id": "roster-nwsuaf-anlijun",
+      "name": "安丽君",
+      "official_profile_url": "https://life.nwsuaf.edu.cn/szdw/js2/d92b77daf28b4b55830dc2be5018f5dc.htm",
+      "roster_source_url": "https://life.nwsuaf.edu.cn/szdw/js2/index.htm",
+      "order": 2,
+      "listed_role": "教授",
+      "actual_profile_title": "教授",
+      "actual_profile_title_source_id": "nwsuaf-anlijun-admissions"
+    },
+    {
+      "id": "roster-nwsuaf-caoshuai",
+      "name": "曹帅",
+      "official_profile_url": "https://life.nwsuaf.edu.cn/szdw/js2/2db4ae803ce3409e92a539868af300a1.htm",
+      "roster_source_url": "https://life.nwsuaf.edu.cn/szdw/js2/index.htm",
+      "order": 3,
+      "listed_role": "教授",
+      "actual_profile_title": "教授（四级）",
+      "actual_profile_title_source_id": "nwsuaf-caoshuai-profile"
+    }
+  ],
+  "counts": {
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 8,
+      "appointments": 6,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 3,
+      "sources": 13,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 2,
+      "pending_education_candidates": 1,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 5
+    },
+    "effective_professional_collections": {
+      "education": 8,
+      "appointments": 6,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 3,
+      "sources": 13,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 2,
+      "pending_education_candidates": 1,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 5
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 4,
+      "degree_awarded_false": 4,
+      "degree_awarded_null": 0,
+      "confirmed_degree_events": 4
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-nwsuaf-rotation-003.json",
+      "sha256": "4bfe874e79de0f0cffd0aaf9e744fa6a64ca4729a55071b4713d758cd7f9d974",
+      "scope_file": "faculty-batch-nwsuaf-rotation-003-scope.json",
+      "scope_sha256": "33779c8c918271c29ee7a85f5808075d4c4bec8d724568f61e2e4c8ee9d1913c",
+      "qa_file": "faculty-batch-nwsuaf-rotation-003-qa.json",
+      "qa_sha256": "83f92acd6a072c7c9a2a4238f2328fea6eaec2a39f9af6b1a0349ee2b241840c",
+      "independent_review_file": "faculty-batch-nwsuaf-rotation-003-independent-review.json",
+      "independent_review_sha256": "526f22de111717ad11b41441291b643060a83116a3812ab4034df05201cf9cf8"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-nwsuaf-rotation-003",
+    "institution": {
+      "id": "nwsuaf",
+      "official_name": "西北农林科技大学",
+      "official_url": "https://www.nwsuaf.edu.cn/",
+      "source_urls": [
+        "https://life.nwsuaf.edu.cn/szdw/js2/index.htm"
+      ],
+      "scope_note": "全国轮换003新增生命科学学院；教授官方类别原序首3，不按学历、海外经历或资料丰寡选人。"
+    },
+    "org_units": [
+      {
+        "id": "nwsuaf-life-sciences",
+        "name": "生命科学学院",
+        "type": "school",
+        "school_id": "nwsuaf",
+        "parent_id": "nwsuaf",
+        "source_url": "https://life.nwsuaf.edu.cn/szdw/js2/index.htm",
+        "source_id": "nwsuaf-life-professors-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "生命科学学院“师资队伍 > 教授”单页名录53人，官方原序首3为Israel Ausin、安丽君、曹帅。本批仅3条部分公开职业档案；是新增学院层级覆盖，不制造下属系。不是全院或全校完整覆盖；当前名录和职业主页在列不等全职或正式在岗人事核验。",
+    "retrieved_at": "2026-10-23",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "nwsuaf-life-professors-roster",
+        "url": "https://life.nwsuaf.edu.cn/szdw/js2/index.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "evidence_file": "nwsuaf-rotation-003-sources/roster-minimal.json"
+      },
+      {
+        "id": "nwsuaf-israelausin-profile",
+        "url": "https://life.nwsuaf.edu.cn/szdw/js2/aaab4cec07dd404d99f90a6429ef20c6.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "page_date": "2020-05-27",
+        "evidence_file": "nwsuaf-rotation-003-sources/nwsuaf-israelausin-profile-minimal.json"
+      },
+      {
+        "id": "nwsuaf-anlijun-profile",
+        "url": "https://life.nwafu.edu.cn/szdw/js2/d92b77daf28b4b55830dc2be5018f5dc.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "page_date": "2025-05-30",
+        "evidence_file": "nwsuaf-rotation-003-sources/nwsuaf-anlijun-profile-minimal.json"
+      },
+      {
+        "id": "nwsuaf-caoshuai-profile",
+        "url": "https://life.nwsuaf.edu.cn/szdw/js2/2db4ae803ce3409e92a539868af300a1.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "page_date": "2025-07-17",
+        "evidence_file": "nwsuaf-rotation-003-sources/nwsuaf-caoshuai-profile-minimal.json"
+      },
+      {
+        "id": "nwsuaf-life-professors-roster-alias",
+        "url": "https://life.nwafu.edu.cn/szdw/js2/index.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "page_date": null,
+        "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json"
+      },
+      {
+        "id": "nwsuaf-admissions-life-roster",
+        "url": "https://yz.nwafu.edu.cn/xydsfc/smkxxy/index.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "page_date": null,
+        "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json"
+      },
+      {
+        "id": "nwsuaf-anlijun-admissions",
+        "url": "https://yz.nwafu.edu.cn/xydsfc/smkxxy/8786082aba7a427399fd250b1c06d81e.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "page_date": "2025-08-05",
+        "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json"
+      },
+      {
+        "id": "nwsuaf-israelausin-admissions",
+        "url": "https://yz.nwafu.edu.cn/xydsfc/smkxxy/151a708113dd4a0b8b287a86ac9732ce.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "page_date": "2025-08-05",
+        "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json"
+      },
+      {
+        "id": "nwsuaf-caoshuai-admissions",
+        "url": "https://yz.nwsuaf.edu.cn/xydsfc/smkxxy/fda212753b2d432fa136dab5d88a7543.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "page_date": "2025-08-05",
+        "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json"
+      },
+      {
+        "id": "nwsuaf-caoshuai-njau-2021",
+        "url": "https://www.njau.edu.cn/2021/0318/c174a112881/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-23",
+        "source_type": "university_official",
+        "page_date": "2021-03-18",
+        "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json"
+      }
+    ],
+    "counts": {
+      "education": 8,
+      "appointments": 6,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 3,
+      "sources": 13,
+      "research_fields": 5,
+      "teaching": 2,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 1,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "people": 3,
+      "professional_people": 3,
+      "pending_people": 0,
+      "unique_sources": 10,
+      "degree_awarded_true": 4,
+      "degree_awarded_null": 0,
+      "degree_awarded_false": 4
+    },
+    "limitations": [
+      "生命科学学院“师资队伍 > 教授”单页名录53人，官方原序首3为Israel Ausin、安丽君、曹帅。本批仅3条部分公开职业档案；是新增学院层级覆盖，不制造下属系。不是全院或全校完整覆盖；当前名录和职业主页在列不等全职或正式在岗人事核验。",
+      "官方正文由web reader读取；无独立直连HTTP状态，不伪造200或称完成现站网络核验。",
+      "安丽君博士获授明确，但混排2003/2008日期保持候选，正式年月null；2012入职不回填教授聘期。",
+      "博士后、访问及Research Fellow不同于学位；实验室归属、指导资格与本人导师关系分开。",
+      "0条已核导师边；未把通讯作者、合著者或实验室负责人自动转成导师。",
+      "每人1条书目非全集，未逐篇核验出版者链接或全文。",
+      "不保存出生、联系方式、学生名单、完整网页/API或论文全文；校区不从通信地址填入。",
+      "全职人事状态、历史任职结束日期及未披露学历年月保留未知。"
+    ]
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-23T23:55:00Z",
+    "data_sha256": "4bfe874e79de0f0cffd0aaf9e744fa6a64ca4729a55071b4713d758cd7f9d974",
+    "counts": {
+      "education": 8,
+      "appointments": 6,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 3,
+      "sources": 13,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 1,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "teaching": 2,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 5,
+      "professional_research_advisors": 0,
+      "people": 3,
+      "unique_sources": 10,
+      "degree_awarded_true": 4,
+      "degree_awarded_false": 4,
+      "degree_awarded_null": 0,
+      "professional_people": 3,
+      "pending_people": 0
+    },
+    "integration_limits": [
+      "仅生命科学学院教授栏目53名原序首3，非全院全校完成或人事在岗证明。",
+      "安丽君官方原文2003/2008冲突须保留，授位日与学习起止null，不能补本科学历或把2012入校当教授起点。",
+      "4授位和4非学位须分开；Research Fellow留任职，实验室归属、PI/导师资格及合著均不构造本人导师。",
+      "安丽君可读正文来自官方nwafu名录链接，nwsuaf原链接cache miss区别保留；不得将已读别名正文改为原站独核HTTP200。",
+      "历史任职结束日期、未披露学历年月、校区和全职状态仍未知。",
+      "2组课程不表示本学期在教；3条书目非全集、非出版社单篇或全文核验。",
+      "来源审查通过不代替地域/985/消费者字段归一化与最终集成验证。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "生命科学学院“师资队伍 > 教授”单页名录53人，官方原序首3为Israel Ausin、安丽君、曹帅。本批仅3条部分公开职业档案；是新增学院层级覆盖，不制造下属系。不是全院或全校完整覆盖；当前名录和职业主页在列不等全职或正式在岗人事核验。",
+    "官方正文由web reader读取；无独立直连HTTP状态，不伪造200或称完成现站网络核验。",
+    "安丽君博士获授明确，但混排2003/2008日期保持候选，正式年月null；2012入职不回填教授聘期。",
+    "博士后、访问及Research Fellow不同于学位；实验室归属、指导资格与本人导师关系分开。",
+    "0条已核导师边；未把通讯作者、合著者或实验室负责人自动转成导师。",
+    "每人1条书目非全集，未逐篇核验出版者链接或全文。",
+    "不保存出生、联系方式、学生名单、完整网页/API或论文全文；校区不从通信地址填入。",
+    "全职人事状态、历史任职结束日期及未披露学历年月保留未知。",
+    "仅生命科学学院教授栏目53名原序首3，非全院全校完成或人事在岗证明。",
+    "安丽君官方原文2003/2008冲突须保留，授位日与学习起止null，不能补本科学历或把2012入校当教授起点。",
+    "4授位和4非学位须分开；Research Fellow留任职，实验室归属、PI/导师资格及合著均不构造本人导师。",
+    "安丽君可读正文来自官方nwafu名录链接，nwsuaf原链接cache miss区别保留；不得将已读别名正文改为原站独核HTTP200。",
+    "历史任职结束日期、未披露学历年月、校区和全职状态仍未知。",
+    "2组课程不表示本学期在教；3条书目非全集、非出版社单篇或全文核验。",
+    "来源审查通过不代替地域/985/消费者字段归一化与最终集成验证。"
+  ],
+  "next_action": "继续核实所选人物教育、师承和人事缺项；扩充名录须另立原序范围，不将本批当完整院系。",
+  "release_status": "local_not_published"
+}

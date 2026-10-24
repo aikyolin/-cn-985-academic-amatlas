@@ -1,0 +1,118 @@
+{
+  "status": "passed_local_checks_awaiting_controller_publication",
+  "baseline_commit": "ab8aefd28f821c903517f17852560d6214a9d67c",
+  "build_id": "c0d2d19978fa88dd",
+  "asset_version": "rotation003-20261024-w2",
+  "counts": {
+    "professional": 564,
+    "pending": 84,
+    "schools": 39,
+    "organizations": 234,
+    "roster_entries": 1730,
+    "raw_observations": 1768,
+    "tasks": 225,
+    "department_workbooks": 114
+  },
+  "additions": {
+    "professional": 9,
+    "pending": 0,
+    "education": 44,
+    "awarded_degrees": 17,
+    "award_unknown": 2,
+    "nondegree": 25,
+    "appointments": 23,
+    "publications": 8,
+    "historical_doctoral_mentor": 1,
+    "pending_mentor_candidates": 2,
+    "pending_education_candidates": 1
+  },
+  "source_integrity": {
+    "source_specifications_sha256": "33a5fd76831f391a3368414689031d1819fc9e3544d7489bd3164bf3a913ec92",
+    "approved_source_review_companion_evidence_files": 42,
+    "source_and_review_hashes": {
+      "faculty-batch-lzu-rotation-003.json": "81746e6b89ae433f321d1b595422b99031082b42147318e02bccd38b899c2e98",
+      "faculty-batch-lzu-rotation-003-independent-review.json": "051538941807141563b918c4aed62c65b980054ea1855db314d3b547275f1702",
+      "faculty-batch-nwsuaf-rotation-003.json": "4bfe874e79de0f0cffd0aaf9e744fa6a64ca4729a55071b4713d758cd7f9d974",
+      "faculty-batch-nwsuaf-rotation-003-independent-review.json": "526f22de111717ad11b41441291b643060a83116a3812ab4034df05201cf9cf8",
+      "faculty-batch-xjtu-rotation-003.json": "857ad9b33181de41c2ea6c967ab09eab8405c2e35dd91cdec4025bc58b6211e1",
+      "faculty-batch-xjtu-rotation-003-independent-review.json": "d2e2fbb073ebf6945d749d0721a84a9a0ed65b1f466f4b1a23ccae524abf80ad"
+    }
+  },
+  "regressions": {
+    "repository_total": 1036,
+    "python": 450,
+    "node": 586,
+    "all_original_1027_retained": true,
+    "new_general_boundary_tests": 8,
+    "new_generic_heading_regression": 1,
+    "earlier_research_boundaries": 169,
+    "new_gate_tamper_tests": 4,
+    "no_skips": true,
+    "node_command": "node --test tests/*.test.js",
+    "dependencies_installed": false
+  },
+  "preservation": {
+    "old_profiles": 555,
+    "old_pending": 84,
+    "old_roster_rows": 1721,
+    "old_observations": 1759,
+    "old_tasks": 222,
+    "old_department_workbooks_byte_identical": 111,
+    "source_public_leaves_checked": 3300,
+    "historical_profile_and_lineage_renders_identical": 1110,
+    "historical_filter_results_identical": 67710,
+    "schema_builders_model_css_unchanged": true
+  },
+  "minimal_display_correction": {
+    "unlinked_heading": "此名录记录尚未绑定个人档案",
+    "only_visible_change": "Generic heading on unlinked roster details; all data, source uncertainty, filters, identity matching and navigation conditions unchanged.",
+    "production_files": {
+      "site/index.html": "a6e57e88a623157fd3103a6099b9e72b21a0435c9fa62530a41469814844242c",
+      "site/app.js": "19945c1392982e4b3a1df95d93c271e957bf16b2a238f8d63d24ed892c722dea",
+      "site/rosters.js": "d060662fe29e2d5209ca7cabd89121f253c6df69878d776e652f2fe8f8eb45a9"
+    },
+    "cache_references": 6,
+    "roster_detail_checks": 1730,
+    "linked_views_unchanged": 275,
+    "unlinked_views_heading_only": 1455,
+    "global_and_school_indexes_unchanged": 40,
+    "all_href_sequences_unchanged": true
+  },
+  "export_review": {
+    "current_report": "research/rotation003-wave2-display-build-export-report.json",
+    "sha256": "07d1f0d3031c6759b5615529e60ede750460be08294f80a4f78ce2f728ba9a7d",
+    "prior_stage_report": "research/rotation003-wave2-build-export-report.json",
+    "prior_stage_report_scope": "Data-only integration before the minimal heading/cache correction; final supplement supersedes only its application identity statement.",
+    "workbooks": 115,
+    "sheets": 579,
+    "cells_and_types": 193656,
+    "hyperlinks": 16065,
+    "formulas": 0,
+    "independent_full_builds": 2,
+    "identical_generated_files": 118
+  },
+  "independent_reviews": [
+    {
+      "artifact": "rotation003-wave2-independent-consumer-report.json",
+      "sha256": "2c6a446bd8a71dc7967d515f0c2c9a2e18575168f8fcfed4d92ea5595ed075c1"
+    },
+    {
+      "artifact": "rotation003-wave2-independent-consumer-test-maintenance-review.json",
+      "sha256": "d668fa738c5c3ea16656d275d2fa3bae8b43bc8506eb0ebaa22a8cf8066d3d7b"
+    },
+    {
+      "artifact": "rotation003-wave2-independent-display-review.json",
+      "sha256": "d1c74aa1ce3878ca0ff686038eb2953fd3428de1121ad922f71813e668289ee6"
+    },
+    {
+      "artifact": "rotation003-wave2-export-negative-controls-report.json",
+      "sha256": "04f17969e39d50ed4dc5b63b00df5399c54a6cbfcd95eac2246f2024cd6fcb79"
+    }
+  ],
+  "limitations": [
+    "Only selected partial public professional profiles; no whole-department or current-personnel completion claim.",
+    "XJTU roster identities without native profile links remain unlinked; independently researched profiles are searchable separately.",
+    "Award dates and source event dates do not fill unknown learning intervals; candidate and nondegree layers stay excluded from confirmed-degree and mentor navigation.",
+    "This report records offline local checks, not publication or an independent browser/visual Excel claim. Final browser acceptance and publication belong to the controller."
+  ]
+}

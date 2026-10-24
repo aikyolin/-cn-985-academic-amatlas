@@ -1,0 +1,127 @@
+{
+  "updated_at": "2026-10-23",
+  "baseline_commit": "ab8aefd28f821c903517f17852560d6214a9d67c",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "counts": {
+    "source_people": 9,
+    "new_professional_profiles": 9,
+    "new_pending_profiles": 0,
+    "new_organization_nodes": 5,
+    "source_collections": {
+      "education": 44,
+      "appointments": 23,
+      "mentors": 1,
+      "committee_members": 0,
+      "publications": 8,
+      "sources": 34,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 2,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 2,
+      "pending_education_candidates": 1,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 28
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 17,
+      "degree_awarded_false": 25,
+      "degree_awarded_null": 2,
+      "confirmed_degree_events": 17
+    },
+    "quick_link_eligible_mentor_records": 0
+  },
+  "schools": [
+    {
+      "school_id": "lzu",
+      "batch_id": "faculty-batch-lzu-rotation-003",
+      "coverage_path": "progress/lzu-rotation003-wave2-coverage.json",
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "nwsuaf",
+      "batch_id": "faculty-batch-nwsuaf-rotation-003",
+      "coverage_path": "progress/nwsuaf-rotation003-wave2-coverage.json",
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "xjtu",
+      "batch_id": "faculty-batch-xjtu-rotation-003",
+      "coverage_path": "progress/xjtu-rotation003-wave2-coverage.json",
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    }
+  ],
+  "source_references": [
+    {
+      "file": "faculty-batch-lzu-rotation-003.json",
+      "sha256": "81746e6b89ae433f321d1b595422b99031082b42147318e02bccd38b899c2e98",
+      "scope_file": "faculty-batch-lzu-rotation-003-scope.json",
+      "scope_sha256": "d19075a3b716aa671c1893b3748e8cabd494498392a9a18ada832fe44d5599ce",
+      "qa_file": "faculty-batch-lzu-rotation-003-qa.json",
+      "qa_sha256": "bfb8aef6758c56d490e23c84601e0e77ebd511cca5f42f6c019c0f0666abcf23",
+      "independent_review_file": "faculty-batch-lzu-rotation-003-independent-review.json",
+      "independent_review_sha256": "051538941807141563b918c4aed62c65b980054ea1855db314d3b547275f1702"
+    },
+    {
+      "file": "faculty-batch-nwsuaf-rotation-003.json",
+      "sha256": "4bfe874e79de0f0cffd0aaf9e744fa6a64ca4729a55071b4713d758cd7f9d974",
+      "scope_file": "faculty-batch-nwsuaf-rotation-003-scope.json",
+      "scope_sha256": "33779c8c918271c29ee7a85f5808075d4c4bec8d724568f61e2e4c8ee9d1913c",
+      "qa_file": "faculty-batch-nwsuaf-rotation-003-qa.json",
+      "qa_sha256": "83f92acd6a072c7c9a2a4238f2328fea6eaec2a39f9af6b1a0349ee2b241840c",
+      "independent_review_file": "faculty-batch-nwsuaf-rotation-003-independent-review.json",
+      "independent_review_sha256": "526f22de111717ad11b41441291b643060a83116a3812ab4034df05201cf9cf8"
+    },
+    {
+      "file": "faculty-batch-xjtu-rotation-003.json",
+      "sha256": "857ad9b33181de41c2ea6c967ab09eab8405c2e35dd91cdec4025bc58b6211e1",
+      "scope_file": "faculty-batch-xjtu-rotation-003-scope.json",
+      "scope_sha256": "9612e8b9a1bf7e347b4e9e0bf60150c8cdb83830bee22413feabb64b6f5b83dd",
+      "qa_file": "faculty-batch-xjtu-rotation-003-qa.json",
+      "qa_sha256": "d87d2b80cd61ad7240cf55bac5f8e4451200e841aaf89567d359bf3986071931",
+      "independent_review_file": "faculty-batch-xjtu-rotation-003-independent-review.json",
+      "independent_review_sha256": "d2e2fbb073ebf6945d749d0721a84a9a0ed65b1f466f4b1a23ccae524abf80ad"
+    }
+  ],
+  "consumer_boundaries": [
+    "只处理总页教授类别41名原序首3，非全院全校或实时人事覆盖。",
+    "3条黄宁source_department是系名，不能重新归入专业field；所有未披露授位日、教授晋升日和校区保持未知。",
+    "6明确获授、2授位未知、9非学位分开；王记增仅授位年份不回填学习期。",
+    "1博士导师边为历史关系，当前导航0；2索引候选与来源不可访问标记保持，不能升正式关系。",
+    "黄宁旧院长任期已结束，历史研究职位和访问不与当前名录混合。",
+    "本次reader正文可读未独核原站HTTP状态，不宣称直连200。原先412及超时路线未重试。",
+    "书目仅本人官方列表元数据；原始包通过来源审查不代替消费者归一化和最终集成测试。",
+    "仅生命科学学院教授栏目53名原序首3，非全院全校完成或人事在岗证明。",
+    "安丽君官方原文2003/2008冲突须保留，授位日与学习起止null，不能补本科学历或把2012入校当教授起点。",
+    "4授位和4非学位须分开；Research Fellow留任职，实验室归属、PI/导师资格及合著均不构造本人导师。",
+    "安丽君可读正文来自官方nwafu名录链接，nwsuaf原链接cache miss区别保留；不得将已读别名正文改为原站独核HTTP200。",
+    "历史任职结束日期、未披露学历年月、校区和全职状态仍未知。",
+    "2组课程不表示本学期在教；3条书目非全集、非出版社单篇或全文核验。",
+    "来源审查通过不代替地域/985/消费者字段归一化与最终集成验证。",
+    "仅教授/研究员类别15名原序首3，不是全系35、学院或学校覆盖；采样页面没有个人链接，不能改称原页直链。",
+    "系名保留（筹）；系与研究所分开，学院名录分组差异不得抹去或推双聘。历史旧页至今不得延伸到抓取日期。",
+    "王延申博士院校为中国西北大学，不是美国Northwestern；未知博士专业及入学时间不补。",
+    "徐博士2004-04只为获授月，学习起止均null；其他仅访问事件月不得变完整区间。李2001来校、王1998来校不当教授起点。",
+    "12非学位保持两个学历/学位筛选false，并与7明确获授区分；两个人的导师资格及徐团队自我介绍不产生导师边，当前导师导航0。",
+    "徐论文只有本人目录书目，不保留失败且标题有异的单篇目标为已核文章入口；王空缺成果不等本人无发表。",
+    "仅徐论文列表独核普通HTTPS200，其余来源为reader正文读通，不泛化网络状态。源站读通不代表人事在岗或行政任期独核。",
+    "原始来源审查通过不代替最终地域/985/消费者字段归一化及显示、筛选集成验证。",
+    "单次事件日期经来源派生说明展示，起止仍未知；西交无原名录直链者保留独立身份审查与候选地址，但不伪造当前部门匹配或已核名录导航。"
+  ],
+  "source_review_scope": "来源已独审，本次只离线哈希、保真和消费者验证，无来源重访。",
+  "release_status": "local_not_published",
+  "local_patch_sha256": "ab0395c904dde77e31d80ebf054bdbb71fcd78499d82eef4d352fba3b8c85baa"
+}
