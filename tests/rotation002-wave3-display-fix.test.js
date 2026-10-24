@@ -1,3 +1,4 @@
+const RELEASE27_PIN_OVERLAY={"data/atlas.json": "602e459ef4bc62aa839e8eff7475819f5a6672e1492b1181ac9188372fe9d1c5", "data/rosters.json": "217716511dc290970fd8708af5cacebaf5f1343b1ec671515b5048e5f81dabec", "site/atlas.json": "1d2e8210a0ca6d60b874d793bd77e49de7da6f845493eb6912b0f4861e57afa2", "site/rosters.json": "4971f6b3812c6f8d133fd0aba909e65f2209b72cfb0d37e668c62531ec0446cc"};
 const RELEASE26_DATA_SHA256={"data/atlas.json": "4a2caaf803967d671bf0bb6b3aeb7c661eecaa40e7bf74e31c214215a3fecc93", "data/rosters.json": "0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f", "site/atlas.json": "f0f46d4cba67eec805f944e2bef431120b38016465afcdd1227cf6e7fd4a6861", "site/rosters.json": "509f98b11edd2fdfe3a80ef1b0de0d07d46d2f186ed29c363e3e8ebe293168b0"};
 import {release25View} from './release-history.js';
 // Independent display-only regression. Golden hashes are from immutable release24,
@@ -70,7 +71,7 @@ function educationRows(html){
 }
 
 test('reviewed release25 append endpoint pins all four canonical and generated data files exactly',()=>{
-  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
+  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE27_PIN_OVERLAY[file]||RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
 });
 
 test('exactly four previously generic event fallbacks acquire uncertainty-preserving labels',()=>{
@@ -184,5 +185,5 @@ test('real consumers and model projections do not mutate the canonical source sc
     for(const type of ['bachelor','master','doctor'])stages(person(id),type);
   }
   assert.equal(JSON.stringify(db),before);
-  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
+  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE27_PIN_OVERLAY[file]||RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
 });

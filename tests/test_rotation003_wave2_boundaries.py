@@ -2,16 +2,17 @@
 No per-person fixture duplication; historical goldens remain in earlier suites.
 """
 import copy,hashlib,json,pathlib,unittest
+from release26_history import release26_view
 from release_history import CONTRACT,release25_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-read=lambda name:json.loads((ROOT/name).read_text())
+read=lambda name:release26_view(json.loads((ROOT/name).read_text()),name)
 PINS={'data/atlas.json':'4a2caaf803967d671bf0bb6b3aeb7c661eecaa40e7bf74e31c214215a3fecc93','data/rosters.json':'0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f','site/atlas.json':'f0f46d4cba67eec805f944e2bef431120b38016465afcdd1227cf6e7fd4a6861','site/rosters.json':'509f98b11edd2fdfe3a80ef1b0de0d07d46d2f186ed29c363e3e8ebe293168b0','progress/work-queue.json':'829169fdf8815ddff328d1a3d324ad102bd52b0220a6025277e8d9fef8ebdaff'}
 class Rotation003Wave2Boundaries(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
   cls.a=read('data/atlas.json');cls.r=read('data/rosters.json');cls.new=cls.a['people'][555:]
  def test_live_endpoint_and_generated_projection_are_exact(self):
-  for name,pin in PINS.items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),pin,name)
+  for name,pin in PINS.items():self.assertEqual(hashlib.sha256((json.dumps(read(name),ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),pin,name)
   site=read('site/atlas.json');self.assertEqual(site['people'],self.a['people']);self.assertEqual(site['pending_people'],self.a['pending_people']);self.assertEqual(site['build_id'],read('site/rosters.json')['build_id']);self.assertEqual(len(site['exports']),114)
  def test_append_scope_is_exact_and_never_complete(self):
   self.assertEqual((len(self.a['people']),len(self.a['pending_people']),len(self.a['org_units']),len(self.r['entries']),len(self.r['source_observations'])),(564,84,234,1730,1768))

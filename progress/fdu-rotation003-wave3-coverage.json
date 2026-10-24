@@ -1,0 +1,269 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "ec303852c3331eb4ef33d725f85dcf531d3a6ef6",
+  "school_id": "fdu",
+  "school_name": "复旦大学",
+  "batch_id": "faculty-batch-fdu-rotation-003",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+  "source_urls": [
+    "https://som.fudan.edu.cn/szll/list.htm"
+  ],
+  "selected_roster_observations": 3,
+  "source_category_observed_count": 27,
+  "source_category_count_basis": "Count distinct names within this labelled category only; not department or university total.",
+  "selected_roster_original_order": [
+    {
+      "id": "roster-fdu-chenxueming",
+      "name": "陈学明",
+      "official_profile_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+      "native_link_target": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+      "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+      "order": 1,
+      "listed_role": "教授",
+      "roster_category": "教授"
+    },
+    {
+      "id": "roster-fdu-chenzhonghe",
+      "name": "谌中和",
+      "official_profile_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+      "native_link_target": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+      "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+      "order": 2,
+      "listed_role": "教授",
+      "roster_category": "教授"
+    },
+    {
+      "id": "roster-fdu-dongyahua",
+      "name": "董雅华",
+      "official_profile_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+      "native_link_target": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+      "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+      "order": 3,
+      "listed_role": "教授",
+      "roster_category": "教授"
+    }
+  ],
+  "counts": {
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 4,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 3,
+      "sources": 6,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 9
+    },
+    "effective_professional_collections": {
+      "education": 4,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 3,
+      "sources": 6,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 9
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 4,
+      "confirmed_degree_events": 0
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-fdu-rotation-003.json",
+      "sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab",
+      "scope_file": "faculty-batch-fdu-rotation-003-scope.json",
+      "scope_sha256": "a6acd4e1d5624f05a9ddff1c8332626260beb1d1c66a54f5ab526050548a8c62",
+      "qa_file": "faculty-batch-fdu-rotation-003-qa.json",
+      "qa_sha256": "da3caf672e38663bf633f808a57f4a3fd04be21be54e8d0426f56942baec7460",
+      "independent_review_file": "faculty-batch-fdu-rotation-003-independent-review.json",
+      "independent_review_sha256": "23d85f1f2b9b52e90d5ac87f60617affee86e50c0268c7f2538406f408d7aaf8"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-fdu-rotation-003",
+    "institution": {
+      "id": "fdu",
+      "official_name": "复旦大学",
+      "official_url": "https://www.fudan.edu.cn/",
+      "source_urls": [
+        "https://som.fudan.edu.cn/szll/list.htm"
+      ],
+      "scope_note": "全国轮换003新增院系；官方单一类别原序首3，不按学历、海外或资料丰寡选人。"
+    },
+    "org_units": [
+      {
+        "id": "fdu-marxism",
+        "name": "马克思主义学院",
+        "type": "school",
+        "school_id": "fdu",
+        "parent_id": "fdu",
+        "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "source_id": "fdu-rotation003-professors-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+    "retrieved_at": "2026-10-24",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "fdu-rotation003-professors-roster",
+        "url": "https://som.fudan.edu.cn/szll/list.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-fdu-bnu/fdu-roster-minimal.json",
+        "web_reference": "turn2190view0",
+        "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification."
+      },
+      {
+        "id": "fdu-chenxueming-profile",
+        "url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-fdu-bnu/fdu-chenxueming-minimal.json",
+        "web_reference": "turn2192view1",
+        "body_sections_read": "85–236",
+        "published_at": "2021-09-06",
+        "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported."
+      },
+      {
+        "id": "fdu-chenzhonghe-profile",
+        "url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-fdu-bnu/fdu-chenzhonghe-minimal.json",
+        "web_reference": "turn2192view2",
+        "body_sections_read": "85–90",
+        "published_at": "2018-12-12",
+        "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported."
+      },
+      {
+        "id": "fdu-dongyahua-profile",
+        "url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-fdu-bnu/fdu-dongyahua-minimal.json",
+        "web_reference": "turn2194view0",
+        "body_sections_read": "85–108",
+        "published_at": "2018-12-10",
+        "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported."
+      }
+    ],
+    "limitations": [
+      "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "不由旧页职称推断现职；校区不由页脚地址推定。",
+      "无明确获授措辞的标签保持degree_awarded=null；访问不计学位。",
+      "MSW导师类别仅采样资格，非本人博士导师关系。",
+      "书目不等可用全文；不保留网页全量、联系方式、出生或照片。"
+    ],
+    "counts": {
+      "education": 4,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 3,
+      "sources": 6,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "people": 3,
+      "unique_sources": 4,
+      "degree_awarded_true": 0,
+      "degree_awarded_null": 4,
+      "degree_awarded_false": 0
+    }
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T00:18:57.412621+00:00",
+    "data_sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab",
+    "counts": {
+      "education": 4,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 3,
+      "research_fields": 9,
+      "academic_service": 0,
+      "teaching": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "pending_education_candidates": 0,
+      "pending_mentor_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "people": 3,
+      "unique_sources": 4,
+      "professional_people": 3,
+      "pending_people": 0,
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 4
+    },
+    "integration_limits": [
+      "仅原序首3部分职业档案，不是全院全校或实时人事覆盖。",
+      "来源reader正文不等同原站HTTP状态验证；不能宣称直连200。",
+      "未披露学位获授、授位日、校区和当前人事状态保持未知；书目未独立验证出版者。",
+      "董雅华教授类别行无链接，使用同页拼音/教研室视图闭合；不改称该行直接链接。",
+      "旧个人页职称仅列示，不得建立当前任职断言。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+    "不由旧页职称推断现职；校区不由页脚地址推定。",
+    "无明确获授措辞的标签保持degree_awarded=null；访问不计学位。",
+    "MSW导师类别仅采样资格，非本人博士导师关系。",
+    "书目不等可用全文；不保留网页全量、联系方式、出生或照片。",
+    "仅原序首3部分职业档案，不是全院全校或实时人事覆盖。",
+    "来源reader正文不等同原站HTTP状态验证；不能宣称直连200。",
+    "未披露学位获授、授位日、校区和当前人事状态保持未知；书目未独立验证出版者。",
+    "董雅华教授类别行无链接，使用同页拼音/教研室视图闭合；不改称该行直接链接。",
+    "旧个人页职称仅列示，不得建立当前任职断言。"
+  ],
+  "next_action": "继续核实所选人物教育、师承和人事缺项；扩充名录须另立原序范围，不将本批当完整院系。",
+  "release_status": "local_not_published"
+}

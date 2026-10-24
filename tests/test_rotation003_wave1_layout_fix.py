@@ -1,6 +1,7 @@
 """Offline exact-boundary tests for the source-unavailable wrapping-only patch.
 No network, browser, build, or output writes. All prior source/Excel bytes are pinned.
 """
+from release26_history import release26_view
 import hashlib,json,os,pathlib,re,unittest
 ROOT=pathlib.Path(os.environ.get('ACADEMIC_ATLAS_TEST_ROOT',pathlib.Path(__file__).resolve().parents[1]))
 OLD_TOKEN='rotation003-20261023-w1'
@@ -297,22 +298,24 @@ BASELINE_FILES={'.github/pull_request_template.md': '01cd056e32e38dbae95c832514c
 # Exact data/coverage/export-only release26 endpoint; all historical pins above remain.
 RELEASE26_PIN_OVERLAY={'site/atlas.json': 'f0f46d4cba67eec805f944e2bef431120b38016465afcdd1227cf6e7fd4a6861', 'site/rosters.json': '509f98b11edd2fdfe3a80ef1b0de0d07d46d2f186ed29c363e3e8ebe293168b0', 'data/atlas.json': '4a2caaf803967d671bf0bb6b3aeb7c661eecaa40e7bf74e31c214215a3fecc93', 'data/rosters.json': '0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f', 'progress/README.md': '3226f9521575934bf9d3a193994414280f654e41bf61d56826ceaff127cebfea', 'progress/current-coverage.md': 'f0a89a29a14b88781880555e01df0ac280d4a59a6051363638725d46cd1d0c44', 'progress/work-queue.json': '829169fdf8815ddff328d1a3d324ad102bd52b0220a6025277e8d9fef8ebdaff', 'site/exports/待核对名录.xlsx': '6e01fe76a8b3620f51e3a0ec68b27d1fa5a81ff3427ddfb266efd2e03235176a', 'site/exports/待核对名录.csv': 'b8d625c46e68bc8ed171c6184a760dda8943ecdb323e70db025ca7f1f9507338'}
 RELEASE26_ADDED_WORKBOOKS={'site/exports/lzu-civil-engineering-mechanics.xlsx': '6332c787a78aafee8b83c18768fb99fee29b6c8f121d182ebd1dca22bb86efa3', 'site/exports/nwsuaf-life-sciences.xlsx': 'ecbce0ff91b5f0e626ec1e2062e971aab36e51c7bc1724c67e515f8b763e443b', 'site/exports/xjtu-modern-physics-astronomy-preparatory.xlsx': 'f73df1a620894c105fd452b3e29742e66b0c8f25d8d277ec8cee3778f9286ddb'}
+# Exact release27 endpoint overlay; all earlier golden constants remain unchanged.
+RELEASE27_PIN_OVERLAY={'site/atlas.json': '1d2e8210a0ca6d60b874d793bd77e49de7da6f845493eb6912b0f4861e57afa2', 'site/rosters.json': '4971f6b3812c6f8d133fd0aba909e65f2209b72cfb0d37e668c62531ec0446cc', 'data/atlas.json': '602e459ef4bc62aa839e8eff7475819f5a6672e1492b1181ac9188372fe9d1c5', 'data/rosters.json': '217716511dc290970fd8708af5cacebaf5f1343b1ec671515b5048e5f81dabec', 'progress/README.md': '08617604707fff4e8121cdd13b08ef3a92e96aa1df2b38cc9cad9f91cc5b1cc6', 'progress/current-coverage.md': 'f92a7728e5c329e0c203fa1c04910d485b496c83f1756728bf9bbd5dc7b55d4a', 'progress/work-queue.json': '88037ab5e76bb2744eaa5b5dc9601d5e1e375b31e3c3f33116e8eeb3a1fd1f60', 'site/exports/待核对名录.xlsx': '9100c6cf6a1a5b6128737e49ef0f79efa49779739efd11bafbf12dfa05917972', 'site/exports/待核对名录.csv': '2e14625fd76a04d5fa29ee4621669dd8b496ca26fbabb41df20043169f1fa78c'}
 class SourceUnavailableLayoutFix(unittest.TestCase):
     def test_all_four_data_payloads_are_byte_identical(self):
         for name in ['data/atlas.json','data/rosters.json','site/atlas.json','site/rosters.json']:
-            with self.subTest(name=name): self.assertEqual(sha(read(name)),RELEASE26_PIN_OVERLAY.get(name,BASELINE_FILES[name]))
+            with self.subTest(name=name): self.assertEqual(sha(read(name)),RELEASE27_PIN_OVERLAY.get(name,RELEASE26_PIN_OVERLAY.get(name,BASELINE_FILES[name])))
     def test_all_112_workbooks_are_byte_identical(self):
         expected={n:h for n,h in BASELINE_FILES.items() if n.startswith('site/exports/') and n.endswith('.xlsx')}
         self.assertEqual(len(expected),112)
         actual={str(p.relative_to(ROOT)):sha(p.read_bytes()) for p in (ROOT/'site/exports').glob('*.xlsx')}
-        expected={n:RELEASE26_PIN_OVERLAY.get(n,h)for n,h in expected.items()};expected.update(RELEASE26_ADDED_WORKBOOKS)
+        expected={n:RELEASE27_PIN_OVERLAY.get(n,RELEASE26_PIN_OVERLAY.get(n,h))for n,h in expected.items()};expected.update(RELEASE26_ADDED_WORKBOOKS);expected.update({'site/exports/bnu-sociology.xlsx': '753ba9690453605f0860ae97ae13d9348f8ec72ad3f1ffae9480a620839e8914', 'site/exports/fdu-marxism.xlsx': 'db33026a377539a55c154f80adf1670f4c48588380e3f3297b5fc3fffdec0a2e', 'site/exports/ustc-chemistry.xlsx': '166064516591b881dbd8942e74c234185742a12b811acc93be50157bf7b2ad13'})
         self.assertEqual(actual,expected)
     def test_all_other_non_test_baseline_files_are_byte_identical(self):
         allow=set(TOKEN_FILES)|{'site/styles.css'}
         checked=0
         for name,digest in BASELINE_FILES.items():
             if name in allow or name.startswith('tests/'): continue
-            with self.subTest(name=name): self.assertEqual(sha(read(name)),RELEASE26_PIN_OVERLAY.get(name,digest))
+            with self.subTest(name=name): self.assertEqual(sha(read(name)),RELEASE27_PIN_OVERLAY.get(name,RELEASE26_PIN_OVERLAY.get(name,digest)))
             checked+=1
         self.assertGreater(checked,170)
     def test_stylesheet_adds_only_the_exact_scoped_wrapping_rule(self):
@@ -331,7 +334,7 @@ class SourceUnavailableLayoutFix(unittest.TestCase):
             total+=count
         self.assertEqual(total,6)
     def test_roles_and_historical_source_boundaries_remain(self):
-        db=json.loads(read('data/atlas.json'))
+        db=release26_view(json.loads(read('data/atlas.json')),'data/atlas.json')
         self.assertEqual((len(db['people']),len(db['pending_people']),len(db['institutions'])),(564,84,39))
         p=next(p for p in db['people'] if p['person_id']=='cqu-chenke')
         self.assertEqual(len(p['teaching']),2)
@@ -345,7 +348,7 @@ class SourceUnavailableLayoutFix(unittest.TestCase):
             self.assertEqual(row['source_availability'],'direct_404_cached_body_only')
             self.assertIsNone(row['level'])
     def test_pending_and_unknown_education_are_not_promoted(self):
-        db=json.loads(read('data/atlas.json'))
+        db=release26_view(json.loads(read('data/atlas.json')),'data/atlas.json')
         self.assertNotIn('cqu-chenrenwei',{p['person_id'] for p in db['people']})
         self.assertIn('cqu-chenrenwei',{p['person_id'] for p in db['pending_people']})
         p=next(p for p in db['people'] if p['person_id']=='cqu-chenke')
@@ -354,7 +357,7 @@ class SourceUnavailableLayoutFix(unittest.TestCase):
         self.assertEqual(p['mentors'],[])
     def test_common_build_id_remains_the_frozen_display_fix_id(self):
         for name in ['site/atlas.json','site/rosters.json']:
-            self.assertEqual(json.loads(read(name))['build_id'],'c0d2d19978fa88dd')
+            self.assertEqual(release26_view(json.loads(read(name)),name)['build_id'],'c0d2d19978fa88dd')
 
 if os.environ.get('ACADEMIC_ATLAS_NEGATIVE_CONTROL_ROOT'):
     class FrozenBaselineControl(unittest.TestCase):

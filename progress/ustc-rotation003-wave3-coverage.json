@@ -1,0 +1,302 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "ec303852c3331eb4ef33d725f85dcf531d3a6ef6",
+  "school_id": "ustc",
+  "school_name": "中国科学技术大学",
+  "batch_id": "faculty-batch-ustc-rotation-003",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+  "source_urls": [
+    "https://chem.ustc.edu.cn/js/list.htm"
+  ],
+  "selected_roster_observations": 3,
+  "source_category_observed_count": 40,
+  "source_category_count_basis": "Read 14+14+12 linked entries across three pages, 40 distinct names; total labels conflict (37 vs 40), not an authoritative current personnel count.",
+  "selected_roster_original_order": [
+    {
+      "id": "roster-ustc-liujianzhong",
+      "name": "刘建忠",
+      "official_profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+      "native_link_target": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+      "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+      "order": 1,
+      "listed_role": "特任教授",
+      "roster_category": "教授"
+    },
+    {
+      "id": "roster-ustc-zhuoqingde",
+      "name": "卓庆德",
+      "official_profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+      "native_link_target": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+      "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+      "order": 2,
+      "listed_role": "特任教授",
+      "roster_category": "教授"
+    },
+    {
+      "id": "roster-ustc-songlei",
+      "name": "宋磊",
+      "official_profile_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+      "native_link_target": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+      "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+      "order": 3,
+      "listed_role": "教授",
+      "roster_category": "教授"
+    }
+  ],
+  "counts": {
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 11,
+      "appointments": 8,
+      "mentors": 7,
+      "committee_members": 0,
+      "publications": 2,
+      "sources": 7,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 1,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 6
+    },
+    "effective_professional_collections": {
+      "education": 11,
+      "appointments": 8,
+      "mentors": 7,
+      "committee_members": 0,
+      "publications": 2,
+      "sources": 7,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 1,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 6
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 5,
+      "confirmed_degree_events": 1
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-ustc-rotation-003.json",
+      "sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032",
+      "scope_file": "faculty-batch-ustc-rotation-003-scope.json",
+      "scope_sha256": "9c4b9666bd5c7f0140e7e2730ab7a701e20b07b3c35d668670cbd147dd78e5ce",
+      "qa_file": "faculty-batch-ustc-rotation-003-qa.json",
+      "qa_sha256": "4a2d785b334cea975f29651a3b8f9e344cc6bee8de422d53874b4c4bee6d6373",
+      "independent_review_file": "faculty-batch-ustc-rotation-003-independent-review.json",
+      "independent_review_sha256": "d0769d51e89e50efbfd4749cc8b984368d8f894696f2b2129e80309ef7f7ae01"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-ustc-rotation-003",
+    "institution": {
+      "id": "ustc",
+      "official_name": "中国科学技术大学",
+      "official_url": "https://www.ustc.edu.cn/",
+      "source_urls": [
+        "https://chem.ustc.edu.cn/js/list.htm"
+      ],
+      "scope_note": "全国轮换003新增化学系；教授类别原序首3，不按学历、海外经历或资料丰富度选人。"
+    },
+    "org_units": [
+      {
+        "id": "ustc-chemistry",
+        "name": "化学系",
+        "type": "department",
+        "school_id": "ustc",
+        "parent_id": "ustc",
+        "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "source_id": "ustc-chemistry-professors-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+    "retrieved_at": "2026-10-24",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "ustc-chemistry-professors-roster",
+        "url": "https://chem.ustc.edu.cn/js/list.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-ustc/roster-minimal.json",
+        "web_reference": "turn2193view0",
+        "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
+      },
+      {
+        "id": "ustc-chemistry-professors-roster-page2",
+        "url": "https://chem.ustc.edu.cn/js/list2.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-ustc/roster-minimal.json",
+        "web_reference": "turn2196view0",
+        "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
+      },
+      {
+        "id": "ustc-chemistry-professors-roster-page3",
+        "url": "https://chem.ustc.edu.cn/js/list3.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-ustc/roster-minimal.json",
+        "web_reference": "turn2196view1",
+        "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
+      },
+      {
+        "id": "ustc-liujianzhong-profile",
+        "url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-ustc/ustc-liujianzhong-minimal.json",
+        "web_reference": "turn2195view0",
+        "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
+      },
+      {
+        "id": "ustc-zhuoqingde-profile",
+        "url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-ustc/ustc-zhuoqingde-minimal.json",
+        "web_reference": "turn2195view1",
+        "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
+      },
+      {
+        "id": "ustc-songlei-profile",
+        "url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-ustc/ustc-songlei-minimal.json",
+        "web_reference": "turn2195view2",
+        "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
+      },
+      {
+        "id": "ustc-songlei-publications",
+        "url": "https://sklfs.ustc.edu.cn/2018/1126/c17179a356390/page.htm",
+        "evidence_status": "researcher_body_read_independent_review_unavailable",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-ustc/songlei-publication-minimal.json",
+        "web_reference": "turn2196view2",
+        "access_note": "Researcher originally read official body at turn2196view2; independent auditor could not access the target and did not retry. Retained bibliography is held as a candidate only; not independently verified.",
+        "independent_review_status": "not_passed_source_unavailable",
+        "navigation_available": false,
+        "navigation_enabled": false
+      }
+    ],
+    "counts": {
+      "education": 11,
+      "appointments": 8,
+      "mentors": 7,
+      "committee_members": 0,
+      "publications": 2,
+      "sources": 7,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 1,
+      "people": 3,
+      "unique_sources": 7,
+      "degree_awarded_true": 1,
+      "degree_awarded_null": 5,
+      "degree_awarded_false": 5
+    },
+    "limitations": [
+      "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+      "不由办公室地址推定校区；名录类别教授与个人页特任教授分别保留。",
+      "刘建忠仅博士明确获授；其他毕业或学位标签不升级。研究助理、研究员、博士后及联合培养均非独立学位。",
+      "刘建忠两个岗位与卓庆德研究员起始月份存在同页冲突，置null；不得用历史日期冒充现时人事核验。",
+      "导师明确分博士、硕士、联合培养与博士后；导师个人页、导航和当前任职未研究。",
+      "出版者单篇和DOI解析未核；每人仅一条官方书目。无联系方式、出生信息、照片、学生名单、论文全文或整页缓存。",
+      "独审时宋磊代表性论著目标不可访问；保留研究阶段最小书目信息为候选，不计已核出版物，不再网络重试。"
+    ]
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T00:18:57.414738+00:00",
+    "data_sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032",
+    "counts": {
+      "education": 11,
+      "appointments": 8,
+      "mentors": 7,
+      "committee_members": 0,
+      "publications": 2,
+      "research_fields": 6,
+      "academic_service": 0,
+      "teaching": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "pending_education_candidates": 0,
+      "pending_mentor_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 1,
+      "people": 3,
+      "unique_sources": 7,
+      "professional_people": 3,
+      "pending_people": 0,
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 5
+    },
+    "integration_limits": [
+      "仅原序首3部分职业档案，不是全院全校或实时人事覆盖。",
+      "来源reader正文不等同原站HTTP状态验证；不能宣称直连200。",
+      "未披露学位获授、授位日、校区和当前人事状态保持未知；书目未独立验证出版者。",
+      "37/40名录矛盾和三处起点冲突必须保留；不能以升职/入职日期反推另一任期。",
+      "宋磊publication候选不得升入已核出版物、点击导航或已核计数；本次未独立验证其引用元数据。",
+      "7历史分阶段师承边不代表导师现在任职/招生，当前导航保持0。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+    "不由办公室地址推定校区；名录类别教授与个人页特任教授分别保留。",
+    "刘建忠仅博士明确获授；其他毕业或学位标签不升级。研究助理、研究员、博士后及联合培养均非独立学位。",
+    "刘建忠两个岗位与卓庆德研究员起始月份存在同页冲突，置null；不得用历史日期冒充现时人事核验。",
+    "导师明确分博士、硕士、联合培养与博士后；导师个人页、导航和当前任职未研究。",
+    "出版者单篇和DOI解析未核；每人仅一条官方书目。无联系方式、出生信息、照片、学生名单、论文全文或整页缓存。",
+    "独审时宋磊代表性论著目标不可访问；保留研究阶段最小书目信息为候选，不计已核出版物，不再网络重试。",
+    "仅原序首3部分职业档案，不是全院全校或实时人事覆盖。",
+    "来源reader正文不等同原站HTTP状态验证；不能宣称直连200。",
+    "未披露学位获授、授位日、校区和当前人事状态保持未知；书目未独立验证出版者。",
+    "37/40名录矛盾和三处起点冲突必须保留；不能以升职/入职日期反推另一任期。",
+    "宋磊publication候选不得升入已核出版物、点击导航或已核计数；本次未独立验证其引用元数据。",
+    "7历史分阶段师承边不代表导师现在任职/招生，当前导航保持0。"
+  ],
+  "next_action": "继续核实所选人物教育、师承和人事缺项；扩充名录须另立原序范围，不将本批当完整院系。",
+  "release_status": "local_not_published"
+}

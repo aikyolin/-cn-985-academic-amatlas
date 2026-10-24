@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-10-23",
-  "base_commit": "ab8aefd28f821c903517f17852560d6214a9d67c",
+  "base_commit": "ec303852c3331eb4ef33d725f85dcf531d3a6ef6",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -6936,6 +6936,90 @@
       "next_cursor": "rotation003_wave2_selected_sample_reviewed_fields_incomplete",
       "attempted_at": "2026-10-23",
       "last_verified_commit": "ab8aefd28f821c903517f17852560d6214a9d67c"
+    },
+    {
+      "task_id": "fdu:fdu-marxism:rotation003-wave3",
+      "institution_id": "fdu",
+      "organization_id": "fdu-marxism",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://som.fudan.edu.cn/szll/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/fdu-rotation003-wave3-coverage.json",
+        "progress/multischool-rotation003-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续核实所选人物教育、师承和人事缺项；扩充名录须另立原序范围，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave3_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "ec303852c3331eb4ef33d725f85dcf531d3a6ef6"
+    },
+    {
+      "task_id": "bnu:bnu-sociology:rotation003-wave3",
+      "institution_id": "bnu",
+      "organization_id": "bnu-sociology",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://soc.bnu.edu.cn/szdw/MSWds/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/bnu-rotation003-wave3-coverage.json",
+        "progress/multischool-rotation003-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续核实所选人物教育、师承和人事缺项；扩充名录须另立原序范围，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave3_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "ec303852c3331eb4ef33d725f85dcf531d3a6ef6"
+    },
+    {
+      "task_id": "ustc:ustc-chemistry:rotation003-wave3",
+      "institution_id": "ustc",
+      "organization_id": "ustc-chemistry",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://chem.ustc.edu.cn/js/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/ustc-rotation003-wave3-coverage.json",
+        "progress/multischool-rotation003-wave3-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "继续核实所选人物教育、师承和人事缺项；扩充名录须另立原序范围，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave3_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "ec303852c3331eb4ef33d725f85dcf531d3a6ef6"
     }
   ]
 }

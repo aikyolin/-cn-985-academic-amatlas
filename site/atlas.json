@@ -19,7 +19,7 @@
     "链接为官方目录提供的地址；未逐个验证所有院系主页可访问性。",
     "深圳旧电子信息学院 eie.hitsz.edu.cn 主页两次抓取超时，改用官方目录已确认的集成电路学院名录，不涉及访问拒绝。"
   ],
-  "scope_note": "39校少量选中名录及部分职业资料，不代表全校全院完成或人事在岗核验。本轮3校9观察新增9部分职业，原555职业、84pending及全部旧字段不变。候选导师与日期分层；事件时点不改起止、学科系名不改专业、采样归属不改现任聘用。",
+  "scope_note": "39校选中名录和部分职业资料，本批新增9部分职业，当前573职业、84待补；不代表全院全校或当前在岗覆盖。师承保留博士、硕士、联合培养与博士后阶段，候选书目不进确证论文。",
   "campuses": [
     {
       "id": "harbin",
@@ -4037,6 +4037,39 @@
       "source_url": "https://phy.xjtu.edu.cn/info/1136/9939.htm",
       "evidence_status": "official_roster_body_read",
       "note": "来源与教学系并列。保留机构身份，不自动生成个人第二雇佣关系。",
+      "campus_ids": []
+    },
+    {
+      "id": "fdu-marxism",
+      "name": "马克思主义学院",
+      "type": "school",
+      "school_id": "fdu",
+      "parent_id": "fdu",
+      "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+      "source_id": "fdu-rotation003-professors-roster",
+      "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "bnu-sociology",
+      "name": "社会学院",
+      "type": "school",
+      "school_id": "bnu",
+      "parent_id": "bnu",
+      "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+      "source_id": "bnu-rotation003-professors-roster",
+      "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "ustc-chemistry",
+      "name": "化学系",
+      "type": "department",
+      "school_id": "ustc",
+      "parent_id": "ustc",
+      "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+      "source_id": "ustc-chemistry-professors-roster",
+      "evidence_status": "official_roster_body_read",
       "campus_ids": []
     }
   ],
@@ -188170,6 +188203,3719 @@
       "sampling_affiliation_label_source_ids": [
         "xjtu-modern-physics-professor-roster"
       ]
+    },
+    {
+      "person_id": "fdu-chenxueming",
+      "name": "陈学明",
+      "school_id": "fdu",
+      "department_id": "fdu-marxism",
+      "organization_id": "fdu-marxism",
+      "campus_ids": [],
+      "campus": null,
+      "department": "马克思主义学院",
+      "roster_entry_id": "roster-fdu-chenxueming",
+      "official_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+      "listed_role_source_id": "fdu-chenxueming-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授",
+      "roster_category_source_id": "fdu-rotation003-professors-roster",
+      "appointments": [],
+      "education": [
+        {
+          "degree": null,
+          "institution": "复旦大学",
+          "start": null,
+          "end": "1973",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": null,
+          "source_department": "哲学系",
+          "source_id": "fdu-chenxueming-profile",
+          "source_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "fdu-chenxueming-profile",
+            "start": null,
+            "end": "fdu-chenxueming-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": null,
+            "source_department": "fdu-chenxueming-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "not_disclosed",
+            "source_department": "source_reported"
+          },
+          "event_id": "fdu-chenxueming-education-1",
+          "event_kind": "education_level_unknown",
+          "include_in_education_filters": false,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源记载毕业；学历层次及授位未披露",
+          "education_event_id": "fdu-chenxueming-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "graduation_degree_unspecified",
+          "event_kind_normalization_note": "仅映射已核原文阶段至既有显示标签，保留原类型；不改变学位层次、授位、日期或筛选。",
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_source_reported_graduation_with_unknown_degree",
+          "note_derivation_source_ids": [
+            "fdu-chenxueming-profile"
+          ],
+          "include_in_degree_filters": false
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "走近马克思",
+          "year": null,
+          "venue": null,
+          "volume": null,
+          "pages_or_article_number": null,
+          "doi": null,
+          "type": "book",
+          "source_id": "fdu-chenxueming-profile",
+          "source_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "fdu-chenxueming-profile",
+            "year": null,
+            "venue": null,
+            "volume": null,
+            "pages_or_article_number": null,
+            "doi": null,
+            "type": "fdu-chenxueming-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "not_disclosed",
+            "venue": "not_disclosed",
+            "volume": "not_disclosed",
+            "pages_or_article_number": "not_disclosed",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+          "identity_evidence": "本人官方专业页列示。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "仅书目；单篇出版者页面及DOI解析未核。",
+          "type_label": "学术著作（非期刊或会议论文）",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "fdu-rotation003-professors-roster",
+          "url": "https://som.fudan.edu.cn/szll/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/fdu-roster-minimal.json",
+          "web_reference": "turn2190view0",
+          "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "fdu-chenxueming-profile",
+          "url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/fdu-chenxueming-minimal.json",
+          "web_reference": "turn2192view1",
+          "body_sections_read": "85–236",
+          "published_at": "2021-09-06",
+          "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "校区、全职和实时人事状态未核；当前列示不等在岗核验。",
+        "本人导师未披露；博士生导师称谓及MSW类别不是本人师承关系。",
+        "仅必要公开职业事实与1条书目；未穷尽职业履历。",
+        "旧个人页职称与现目录列示保留为listed_role；不建立当前任职断言。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "profile_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+        "native_link_target": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+        "source_ids": [
+          "fdu-rotation003-professors-roster",
+          "fdu-chenxueming-profile"
+        ],
+        "note": "官方类别姓名直链至同名专业正文。"
+      },
+      "professional_field_provenance": {
+        "name": "fdu-rotation003-professors-roster",
+        "school_id": "fdu-rotation003-professors-roster",
+        "department_id": "fdu-rotation003-professors-roster",
+        "organization_id": "fdu-rotation003-professors-roster",
+        "department": "fdu-rotation003-professors-roster",
+        "official_url": "fdu-rotation003-professors-roster",
+        "roster_category": "fdu-rotation003-professors-roster",
+        "listed_role": "fdu-chenxueming-profile",
+        "research_interests": [
+          "fdu-chenxueming-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "西方马克思主义",
+          "source_id": "fdu-chenxueming-profile",
+          "source_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "fdu-chenxueming-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "现代西方哲学",
+          "source_id": "fdu-chenxueming-profile",
+          "source_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "fdu-chenxueming-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "马克思主义哲学发展史",
+          "source_id": "fdu-chenxueming-profile",
+          "source_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "fdu-chenxueming-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "当代中国马克思主义",
+          "source_id": "fdu-chenxueming-profile",
+          "source_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "fdu-chenxueming-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-fdu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "西方马克思主义；现代西方哲学；马克思主义哲学发展史；当代中国马克思主义",
+      "research_interests_source_ids": [
+        "fdu-chenxueming-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "fdu-chenzhonghe",
+      "name": "谌中和",
+      "school_id": "fdu",
+      "department_id": "fdu-marxism",
+      "organization_id": "fdu-marxism",
+      "campus_ids": [],
+      "campus": null,
+      "department": "马克思主义学院",
+      "roster_entry_id": "roster-fdu-chenzhonghe",
+      "official_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+      "listed_role_source_id": "fdu-chenzhonghe-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授",
+      "roster_category_source_id": "fdu-rotation003-professors-roster",
+      "appointments": [],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": null,
+          "start": null,
+          "end": null,
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "哲学博士",
+          "source_department": null,
+          "source_id": "fdu-chenzhonghe-profile",
+          "source_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "fdu-chenzhonghe-profile",
+            "institution": null,
+            "start": null,
+            "end": null,
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "fdu-chenzhonghe-profile",
+            "source_department": null
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "not_disclosed",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "not_disclosed"
+          },
+          "event_id": "fdu-chenzhonghe-education-1",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_basis": null,
+          "geography_status": "not_disclosed",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：哲学博士",
+          "education_event_id": "fdu-chenzhonghe-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "awarding_institution_not_disclosed",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "fdu-chenzhonghe-profile"
+          ]
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "中国的诞生",
+          "year": null,
+          "venue": null,
+          "volume": null,
+          "pages_or_article_number": null,
+          "doi": null,
+          "type": "book",
+          "source_id": "fdu-chenzhonghe-profile",
+          "source_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "fdu-chenzhonghe-profile",
+            "year": null,
+            "venue": null,
+            "volume": null,
+            "pages_or_article_number": null,
+            "doi": null,
+            "type": "fdu-chenzhonghe-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "not_disclosed",
+            "venue": "not_disclosed",
+            "volume": "not_disclosed",
+            "pages_or_article_number": "not_disclosed",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+          "identity_evidence": "本人官方专业页列示。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "仅书目；单篇出版者页面及DOI解析未核。",
+          "type_label": "学术著作（非期刊或会议论文）",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "fdu-rotation003-professors-roster",
+          "url": "https://som.fudan.edu.cn/szll/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/fdu-roster-minimal.json",
+          "web_reference": "turn2190view0",
+          "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "fdu-chenzhonghe-profile",
+          "url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/fdu-chenzhonghe-minimal.json",
+          "web_reference": "turn2192view2",
+          "body_sections_read": "85–90",
+          "published_at": "2018-12-12",
+          "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "校区、全职和实时人事状态未核；当前列示不等在岗核验。",
+        "本人导师未披露；博士生导师称谓及MSW类别不是本人师承关系。",
+        "仅必要公开职业事实与1条书目；未穷尽职业履历。",
+        "旧个人页职称与现目录列示保留为listed_role；不建立当前任职断言。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "profile_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+        "native_link_target": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+        "source_ids": [
+          "fdu-rotation003-professors-roster",
+          "fdu-chenzhonghe-profile"
+        ],
+        "note": "官方类别姓名直链至同名专业正文。"
+      },
+      "professional_field_provenance": {
+        "name": "fdu-rotation003-professors-roster",
+        "school_id": "fdu-rotation003-professors-roster",
+        "department_id": "fdu-rotation003-professors-roster",
+        "organization_id": "fdu-rotation003-professors-roster",
+        "department": "fdu-rotation003-professors-roster",
+        "official_url": "fdu-rotation003-professors-roster",
+        "roster_category": "fdu-rotation003-professors-roster",
+        "listed_role": "fdu-chenzhonghe-profile"
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-fdu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。"
+    },
+    {
+      "person_id": "fdu-dongyahua",
+      "name": "董雅华",
+      "school_id": "fdu",
+      "department_id": "fdu-marxism",
+      "organization_id": "fdu-marxism",
+      "campus_ids": [],
+      "campus": null,
+      "department": "马克思主义学院",
+      "roster_entry_id": "roster-fdu-dongyahua",
+      "official_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+      "listed_role_source_id": "fdu-dongyahua-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授",
+      "roster_category_source_id": "fdu-rotation003-professors-roster",
+      "appointments": [],
+      "education": [
+        {
+          "degree": null,
+          "institution": "复旦大学",
+          "start": null,
+          "end": null,
+          "field": "思想政治教育",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "本科",
+          "source_department": "国际政治系",
+          "source_id": "fdu-dongyahua-profile",
+          "source_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "fdu-dongyahua-profile",
+            "start": null,
+            "end": null,
+            "field": "fdu-dongyahua-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "fdu-dongyahua-profile",
+            "source_department": "fdu-dongyahua-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "source_reported"
+          },
+          "event_id": "fdu-dongyahua-education-1",
+          "event_kind": "undergraduate_study",
+          "include_in_education_filters": false,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：本科",
+          "education_event_id": "fdu-dongyahua-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "include_in_degree_filters": false,
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "fdu-dongyahua-profile"
+          ]
+        },
+        {
+          "degree": "博士",
+          "institution": "复旦大学",
+          "start": null,
+          "end": null,
+          "field": "政治学理论",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "法学博士",
+          "source_department": "国际关系与公共事务学院",
+          "source_id": "fdu-dongyahua-profile",
+          "source_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "fdu-dongyahua-profile",
+            "institution": "fdu-dongyahua-profile",
+            "start": null,
+            "end": null,
+            "field": "fdu-dongyahua-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "fdu-dongyahua-profile",
+            "source_department": "fdu-dongyahua-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "source_reported"
+          },
+          "event_id": "fdu-dongyahua-education-2",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：法学博士",
+          "education_event_id": "fdu-dongyahua-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "fdu-dongyahua-profile"
+          ]
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "意识形态及其本质属性论析",
+          "year": null,
+          "venue": null,
+          "volume": null,
+          "pages_or_article_number": null,
+          "doi": null,
+          "type": "journal_article",
+          "source_id": "fdu-dongyahua-profile",
+          "source_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "fdu-dongyahua-profile",
+            "year": null,
+            "venue": null,
+            "volume": null,
+            "pages_or_article_number": null,
+            "doi": null,
+            "type": "fdu-dongyahua-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "not_disclosed",
+            "venue": "not_disclosed",
+            "volume": "not_disclosed",
+            "pages_or_article_number": "not_disclosed",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "identity_evidence": "本人官方专业页列示。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "仅书目；单篇出版者页面及DOI解析未核。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "fdu-rotation003-professors-roster",
+          "url": "https://som.fudan.edu.cn/szll/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/fdu-roster-minimal.json",
+          "web_reference": "turn2190view0",
+          "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "fdu-dongyahua-profile",
+          "url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/fdu-dongyahua-minimal.json",
+          "web_reference": "turn2194view0",
+          "body_sections_read": "85–108",
+          "published_at": "2018-12-10",
+          "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "校区、全职和实时人事状态未核；当前列示不等在岗核验。",
+        "本人导师未披露；博士生导师称谓及MSW类别不是本人师承关系。",
+        "仅必要公开职业事实与1条书目；未穷尽职业履历。",
+        "旧个人页职称与现目录列示保留为listed_role；不建立当前任职断言。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "profile_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+        "native_link_target": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+        "source_ids": [
+          "fdu-rotation003-professors-roster",
+          "fdu-dongyahua-profile"
+        ],
+        "note": "FDU董雅华同一名录的按拼音及教研室视图提供姓名直链；教授视图同名条目无链接。"
+      },
+      "professional_field_provenance": {
+        "name": "fdu-rotation003-professors-roster",
+        "school_id": "fdu-rotation003-professors-roster",
+        "department_id": "fdu-rotation003-professors-roster",
+        "organization_id": "fdu-rotation003-professors-roster",
+        "department": "fdu-rotation003-professors-roster",
+        "official_url": "fdu-rotation003-professors-roster",
+        "roster_category": "fdu-rotation003-professors-roster",
+        "listed_role": "fdu-dongyahua-profile",
+        "research_interests": [
+          "fdu-dongyahua-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "思想政治教育学原理",
+          "source_id": "fdu-dongyahua-profile",
+          "source_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "fdu-dongyahua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "思想政治教育哲学",
+          "source_id": "fdu-dongyahua-profile",
+          "source_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "fdu-dongyahua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "比较思想政治教育",
+          "source_id": "fdu-dongyahua-profile",
+          "source_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "fdu-dongyahua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "价值观及其教育比较研究",
+          "source_id": "fdu-dongyahua-profile",
+          "source_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "fdu-dongyahua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "高校思想政治教育",
+          "source_id": "fdu-dongyahua-profile",
+          "source_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "fdu-dongyahua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-fdu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "思想政治教育学原理；思想政治教育哲学；比较思想政治教育；价值观及其教育比较研究；高校思想政治教育",
+      "research_interests_source_ids": [
+        "fdu-dongyahua-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "bnu-dongleiming",
+      "name": "董磊明",
+      "school_id": "bnu",
+      "department_id": "bnu-sociology",
+      "organization_id": "bnu-sociology",
+      "campus_ids": [],
+      "campus": null,
+      "department": "社会学院",
+      "roster_entry_id": "roster-bnu-dongleiming",
+      "official_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+      "listed_role_source_id": "bnu-dongleiming-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "MSW导师 / 教授（按照姓名拼音排序）",
+      "roster_category_source_id": "bnu-rotation003-professors-roster",
+      "appointments": [
+        {
+          "institution": "北京师范大学",
+          "title": "教授",
+          "start": "2009-09",
+          "end": null,
+          "source_id": "bnu-dongleiming-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "bnu-dongleiming-profile",
+            "title": "bnu-dongleiming-profile",
+            "start": "bnu-dongleiming-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "当前专业页明确教授；不声称独立人事核验。起点仅按个人履历。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "南京师范大学",
+          "start": "2005",
+          "end": "2008",
+          "field": "政治学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "博士学位",
+          "source_department": null,
+          "source_id": "bnu-dongleiming-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bnu-dongleiming-profile",
+            "institution": "bnu-dongleiming-profile",
+            "start": "bnu-dongleiming-profile",
+            "end": "bnu-dongleiming-profile",
+            "field": "bnu-dongleiming-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "bnu-dongleiming-profile",
+            "source_department": null
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "not_disclosed"
+          },
+          "event_id": "bnu-dongleiming-education-1",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：博士学位",
+          "education_event_id": "bnu-dongleiming-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "bnu-dongleiming-profile"
+          ]
+        },
+        {
+          "degree": "硕士",
+          "institution": "南京师范大学",
+          "start": "1995",
+          "end": "1998",
+          "field": "政治学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "硕士学位",
+          "source_department": null,
+          "source_id": "bnu-dongleiming-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bnu-dongleiming-profile",
+            "institution": "bnu-dongleiming-profile",
+            "start": "bnu-dongleiming-profile",
+            "end": "bnu-dongleiming-profile",
+            "field": "bnu-dongleiming-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "bnu-dongleiming-profile",
+            "source_department": null
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "not_disclosed"
+          },
+          "event_id": "bnu-dongleiming-education-2",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：硕士学位",
+          "education_event_id": "bnu-dongleiming-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "bnu-dongleiming-profile"
+          ]
+        },
+        {
+          "degree": "学士",
+          "institution": "南京师范大学",
+          "start": "1991",
+          "end": "1995",
+          "field": "历史学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "学士学位",
+          "source_department": null,
+          "source_id": "bnu-dongleiming-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bnu-dongleiming-profile",
+            "institution": "bnu-dongleiming-profile",
+            "start": "bnu-dongleiming-profile",
+            "end": "bnu-dongleiming-profile",
+            "field": "bnu-dongleiming-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "bnu-dongleiming-profile",
+            "source_department": null
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "not_disclosed"
+          },
+          "event_id": "bnu-dongleiming-education-3",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：学士学位",
+          "education_event_id": "bnu-dongleiming-education-3",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "bnu-dongleiming-profile"
+          ]
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "乡土社会中的面子观与乡村治理",
+          "year": 2017,
+          "venue": "中国社会科学",
+          "volume": null,
+          "pages_or_article_number": null,
+          "doi": null,
+          "type": "journal_article",
+          "source_id": "bnu-dongleiming-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "bnu-dongleiming-profile",
+            "year": "bnu-dongleiming-profile",
+            "venue": "bnu-dongleiming-profile",
+            "volume": null,
+            "pages_or_article_number": null,
+            "doi": null,
+            "type": "bnu-dongleiming-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "not_disclosed",
+            "pages_or_article_number": "not_disclosed",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "identity_evidence": "本人官方专业页列示。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "仅书目；单篇出版者页面及DOI解析未核。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "bnu-rotation003-professors-roster",
+          "url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/bnu-roster-minimal.json",
+          "web_reference": "turn2192view0",
+          "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "bnu-dongleiming-profile",
+          "url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/bnu-dongleiming-minimal.json",
+          "web_reference": "turn2197view0",
+          "body_sections_read": "67–143",
+          "published_at": null,
+          "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "校区、全职和实时人事状态未核；当前列示不等在岗核验。",
+        "本人导师未披露；博士生导师称谓及MSW类别不是本人师承关系。",
+        "仅必要公开职业事实与1条书目；未穷尽职业履历。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+        "native_link_target": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+        "source_ids": [
+          "bnu-rotation003-professors-roster",
+          "bnu-dongleiming-profile"
+        ],
+        "note": "官方类别姓名直链至同名专业正文。"
+      },
+      "professional_field_provenance": {
+        "name": "bnu-rotation003-professors-roster",
+        "school_id": "bnu-rotation003-professors-roster",
+        "department_id": "bnu-rotation003-professors-roster",
+        "organization_id": "bnu-rotation003-professors-roster",
+        "department": "bnu-rotation003-professors-roster",
+        "official_url": "bnu-rotation003-professors-roster",
+        "roster_category": "bnu-rotation003-professors-roster",
+        "listed_role": "bnu-dongleiming-profile",
+        "research_interests": [
+          "bnu-dongleiming-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "农村社会学",
+          "source_id": "bnu-dongleiming-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-dongleiming-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "政治社会学",
+          "source_id": "bnu-dongleiming-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-dongleiming-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-bnu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "农村社会学；政治社会学",
+      "research_interests_source_ids": [
+        "bnu-dongleiming-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "bnu-fuchangbo",
+      "name": "傅昌波",
+      "school_id": "bnu",
+      "department_id": "bnu-sociology",
+      "organization_id": "bnu-sociology",
+      "campus_ids": [],
+      "campus": null,
+      "department": "社会学院",
+      "roster_entry_id": "roster-bnu-fuchangbo",
+      "official_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+      "listed_role_source_id": "bnu-fuchangbo-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "MSW导师 / 教授（按照姓名拼音排序）",
+      "roster_category_source_id": "bnu-rotation003-professors-roster",
+      "appointments": [
+        {
+          "institution": "北京师范大学社会学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "source_id": "bnu-fuchangbo-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "bnu-fuchangbo-profile",
+            "title": "bnu-fuchangbo-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "当前专业页明确教授；不声称独立人事核验。起点仅按个人履历。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": null,
+          "start": null,
+          "end": null,
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "文学博士",
+          "source_department": null,
+          "source_id": "bnu-fuchangbo-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bnu-fuchangbo-profile",
+            "institution": null,
+            "start": null,
+            "end": null,
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "bnu-fuchangbo-profile",
+            "source_department": null
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "not_disclosed",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "not_disclosed"
+          },
+          "event_id": "bnu-fuchangbo-education-1",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_basis": null,
+          "geography_status": "not_disclosed",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：文学博士",
+          "education_event_id": "bnu-fuchangbo-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "awarding_institution_not_disclosed",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "bnu-fuchangbo-profile"
+          ]
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "中国高净值人群慈善研究报告（2024）",
+          "year": null,
+          "venue": null,
+          "volume": null,
+          "pages_or_article_number": null,
+          "doi": null,
+          "type": "report",
+          "source_id": "bnu-fuchangbo-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "bnu-fuchangbo-profile",
+            "year": null,
+            "venue": null,
+            "volume": null,
+            "pages_or_article_number": null,
+            "doi": null,
+            "type": "bnu-fuchangbo-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "not_disclosed",
+            "venue": "not_disclosed",
+            "volume": "not_disclosed",
+            "pages_or_article_number": "not_disclosed",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "identity_evidence": "本人官方专业页列示。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "仅书目；单篇出版者页面及DOI解析未核。报告标题中的2024不自动用作出版年。",
+          "type_label": "研究报告（非期刊论文）",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "bnu-rotation003-professors-roster",
+          "url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/bnu-roster-minimal.json",
+          "web_reference": "turn2192view0",
+          "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "bnu-fuchangbo-profile",
+          "url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/bnu-fuchangbo-minimal.json",
+          "web_reference": "turn2197view1",
+          "body_sections_read": "67–80",
+          "published_at": null,
+          "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "校区、全职和实时人事状态未核；当前列示不等在岗核验。",
+        "本人导师未披露；博士生导师称谓及MSW类别不是本人师承关系。",
+        "仅必要公开职业事实与1条书目；未穷尽职业履历。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+        "native_link_target": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+        "source_ids": [
+          "bnu-rotation003-professors-roster",
+          "bnu-fuchangbo-profile"
+        ],
+        "note": "官方类别姓名直链至同名专业正文。"
+      },
+      "professional_field_provenance": {
+        "name": "bnu-rotation003-professors-roster",
+        "school_id": "bnu-rotation003-professors-roster",
+        "department_id": "bnu-rotation003-professors-roster",
+        "organization_id": "bnu-rotation003-professors-roster",
+        "department": "bnu-rotation003-professors-roster",
+        "official_url": "bnu-rotation003-professors-roster",
+        "roster_category": "bnu-rotation003-professors-roster",
+        "listed_role": "bnu-fuchangbo-profile",
+        "research_interests": [
+          "bnu-fuchangbo-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "基层治理",
+          "source_id": "bnu-fuchangbo-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuchangbo-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "社会政策",
+          "source_id": "bnu-fuchangbo-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuchangbo-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "公益慈善",
+          "source_id": "bnu-fuchangbo-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuchangbo-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "善家传承",
+          "source_id": "bnu-fuchangbo-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuchangbo-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "商业向善",
+          "source_id": "bnu-fuchangbo-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuchangbo-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "社会创新",
+          "source_id": "bnu-fuchangbo-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuchangbo-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "公共传播",
+          "source_id": "bnu-fuchangbo-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuchangbo-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-bnu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "基层治理；社会政策；公益慈善；善家传承；商业向善；社会创新；公共传播",
+      "research_interests_source_ids": [
+        "bnu-fuchangbo-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "bnu-fuyuanyuan",
+      "name": "付媛媛",
+      "school_id": "bnu",
+      "department_id": "bnu-sociology",
+      "organization_id": "bnu-sociology",
+      "campus_ids": [],
+      "campus": null,
+      "department": "社会学院",
+      "roster_entry_id": "roster-bnu-fuyuanyuan",
+      "official_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+      "listed_role_source_id": "bnu-fuyuanyuan-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "MSW导师 / 教授（按照姓名拼音排序）",
+      "roster_category_source_id": "bnu-rotation003-professors-roster",
+      "appointments": [
+        {
+          "institution": "北京师范大学社会学院",
+          "title": "教授",
+          "start": "2026",
+          "end": null,
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "bnu-fuyuanyuan-profile",
+            "title": "bnu-fuyuanyuan-profile",
+            "start": "bnu-fuyuanyuan-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "当前专业页明确教授；不声称独立人事核验。起点仅按个人履历。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "香港大学",
+          "start": "2013",
+          "end": "2017",
+          "field": null,
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "博士学位",
+          "source_department": "社会科学学院，社会工作及社会行政学系",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bnu-fuyuanyuan-profile",
+            "institution": "bnu-fuyuanyuan-profile",
+            "start": "bnu-fuyuanyuan-profile",
+            "end": "bnu-fuyuanyuan-profile",
+            "field": null,
+            "degree_awarded": "bnu-fuyuanyuan-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "bnu-fuyuanyuan-profile",
+            "source_department": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "source_reported"
+          },
+          "event_id": "bnu-fuyuanyuan-education-1",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "hmt",
+          "continent": "亚洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：博士学位",
+          "education_event_id": "bnu-fuyuanyuan-education-1",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国香港",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "bnu-fuyuanyuan-profile",
+          "degree_award_source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance",
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "bnu-fuyuanyuan-profile"
+          ]
+        },
+        {
+          "degree": "硕士",
+          "institution": "中国人民大学",
+          "start": "2011",
+          "end": "2013",
+          "field": "社会保障",
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "硕士学位",
+          "source_department": "劳动人事学院",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bnu-fuyuanyuan-profile",
+            "institution": "bnu-fuyuanyuan-profile",
+            "start": "bnu-fuyuanyuan-profile",
+            "end": "bnu-fuyuanyuan-profile",
+            "field": "bnu-fuyuanyuan-profile",
+            "degree_awarded": "bnu-fuyuanyuan-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "bnu-fuyuanyuan-profile",
+            "source_department": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "source_reported"
+          },
+          "event_id": "bnu-fuyuanyuan-education-2",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：硕士学位",
+          "education_event_id": "bnu-fuyuanyuan-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "bnu-fuyuanyuan-profile",
+          "degree_award_source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance",
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "bnu-fuyuanyuan-profile"
+          ]
+        },
+        {
+          "degree": "学士",
+          "institution": "吉林大学",
+          "start": "2007",
+          "end": "2011",
+          "field": "劳动与社会保障",
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "学士学位",
+          "source_department": "哲学社会学院",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bnu-fuyuanyuan-profile",
+            "institution": "bnu-fuyuanyuan-profile",
+            "start": "bnu-fuyuanyuan-profile",
+            "end": "bnu-fuyuanyuan-profile",
+            "field": "bnu-fuyuanyuan-profile",
+            "degree_awarded": "bnu-fuyuanyuan-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "bnu-fuyuanyuan-profile",
+            "source_department": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "source_reported"
+          },
+          "event_id": "bnu-fuyuanyuan-education-3",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：学士学位",
+          "education_event_id": "bnu-fuyuanyuan-education-3",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.jlu.edu.cn/xxgk.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "bnu-fuyuanyuan-profile",
+          "degree_award_source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance",
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "bnu-fuyuanyuan-profile"
+          ]
+        },
+        {
+          "degree": "学士",
+          "institution": "吉林大学",
+          "start": "2009",
+          "end": "2011",
+          "field": "保险精算",
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "学士学位（第二学历）",
+          "source_department": "数学学院",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bnu-fuyuanyuan-profile",
+            "institution": "bnu-fuyuanyuan-profile",
+            "start": "bnu-fuyuanyuan-profile",
+            "end": "bnu-fuyuanyuan-profile",
+            "field": "bnu-fuyuanyuan-profile",
+            "degree_awarded": "bnu-fuyuanyuan-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "bnu-fuyuanyuan-profile",
+            "source_department": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "source_reported"
+          },
+          "event_id": "bnu-fuyuanyuan-education-4",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：学士学位（第二学历）",
+          "education_event_id": "bnu-fuyuanyuan-education-4",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.jlu.edu.cn/xxgk.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "bnu-fuyuanyuan-profile",
+          "degree_award_source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance",
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "bnu-fuyuanyuan-profile"
+          ]
+        },
+        {
+          "degree": "学士",
+          "institution": "吉林大学",
+          "start": "2008",
+          "end": "2010",
+          "field": "国际经济与贸易",
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "学士学位（第二学历）",
+          "source_department": "经济学院",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "bnu-fuyuanyuan-profile",
+            "institution": "bnu-fuyuanyuan-profile",
+            "start": "bnu-fuyuanyuan-profile",
+            "end": "bnu-fuyuanyuan-profile",
+            "field": "bnu-fuyuanyuan-profile",
+            "degree_awarded": "bnu-fuyuanyuan-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "bnu-fuyuanyuan-profile",
+            "source_department": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "source_department": "source_reported"
+          },
+          "event_id": "bnu-fuyuanyuan-education-5",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。；来源标注：学士学位（第二学历）",
+          "education_event_id": "bnu-fuyuanyuan-education-5",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.jlu.edu.cn/xxgk.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "bnu-fuyuanyuan-profile",
+          "degree_award_source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance",
+          "source_note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "bnu-fuyuanyuan-profile"
+          ]
+        },
+        {
+          "degree": null,
+          "institution": "悉尼大学",
+          "start": "2018-08",
+          "end": "2018-08",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": null,
+          "source_department": "教育与社会工作学院",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "bnu-fuyuanyuan-profile",
+            "start": "bnu-fuyuanyuan-profile",
+            "end": "bnu-fuyuanyuan-profile",
+            "field": null,
+            "degree_awarded": "bnu-fuyuanyuan-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": null,
+            "source_department": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "non_degree_activity",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "not_disclosed",
+            "source_department": "source_reported"
+          },
+          "event_id": "bnu-fuyuanyuan-education-6",
+          "event_kind": "visiting_scholar",
+          "include_in_education_filters": false,
+          "country": "澳大利亚",
+          "region": "overseas",
+          "continent": "大洋洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "education_event_id": "bnu-fuyuanyuan-education-6",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "澳大利亚",
+          "continent_code": "oceania",
+          "include_in_degree_filters": false
+        },
+        {
+          "degree": null,
+          "institution": "宾夕法尼亚大学",
+          "start": "2016-06",
+          "end": "2016-08",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": null,
+          "source_department": "社会政策与实践学院",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "bnu-fuyuanyuan-profile",
+            "start": "bnu-fuyuanyuan-profile",
+            "end": "bnu-fuyuanyuan-profile",
+            "field": null,
+            "degree_awarded": "bnu-fuyuanyuan-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": null,
+            "source_department": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "non_degree_activity",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "not_disclosed",
+            "source_department": "source_reported"
+          },
+          "event_id": "bnu-fuyuanyuan-education-7",
+          "event_kind": "visiting_scholar",
+          "include_in_education_filters": false,
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "按明确机构所在国家地区标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "明确获授仅按正文；学习区间终点不作授位日。本科毕业不推定学士，博士称谓不推定院校或授位。",
+          "education_event_id": "bnu-fuyuanyuan-education-7",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america",
+          "include_in_degree_filters": false
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Association between adverse childhood experiences and elder abuse victimization: A systematic review and meta-analysis",
+          "year": 2025,
+          "venue": "Child Abuse & Neglect",
+          "volume": null,
+          "pages_or_article_number": null,
+          "doi": "10.1016/j.chiabu.2025.107759",
+          "type": "journal_article",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "bnu-fuyuanyuan-profile",
+            "year": "bnu-fuyuanyuan-profile",
+            "venue": "bnu-fuyuanyuan-profile",
+            "volume": null,
+            "pages_or_article_number": null,
+            "doi": "bnu-fuyuanyuan-profile",
+            "type": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "not_disclosed",
+            "pages_or_article_number": "not_disclosed",
+            "doi": "source_reported",
+            "type": "source_reported"
+          },
+          "url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "identity_evidence": "本人官方专业页列示。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "仅书目；单篇出版者页面及DOI解析未核。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "bnu-rotation003-professors-roster",
+          "url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/bnu-roster-minimal.json",
+          "web_reference": "turn2192view0",
+          "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "bnu-fuyuanyuan-profile",
+          "url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-fdu-bnu/bnu-fuyuanyuan-minimal.json",
+          "web_reference": "turn2198view0",
+          "body_sections_read": "67–268",
+          "published_at": null,
+          "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "校区、全职和实时人事状态未核；当前列示不等在岗核验。",
+        "本人导师未披露；博士生导师称谓及MSW类别不是本人师承关系。",
+        "仅必要公开职业事实与1条书目；未穷尽职业履历。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+        "native_link_target": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+        "source_ids": [
+          "bnu-rotation003-professors-roster",
+          "bnu-fuyuanyuan-profile"
+        ],
+        "note": "官方类别姓名直链至同名专业正文。"
+      },
+      "professional_field_provenance": {
+        "name": "bnu-rotation003-professors-roster",
+        "school_id": "bnu-rotation003-professors-roster",
+        "department_id": "bnu-rotation003-professors-roster",
+        "organization_id": "bnu-rotation003-professors-roster",
+        "department": "bnu-rotation003-professors-roster",
+        "official_url": "bnu-rotation003-professors-roster",
+        "roster_category": "bnu-rotation003-professors-roster",
+        "listed_role": "bnu-fuyuanyuan-profile",
+        "research_interests": [
+          "bnu-fuyuanyuan-profile"
+        ]
+      },
+      "profile_status": "partial_professional_source_checked",
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "research_fields": [
+        {
+          "name": "生产性老龄化",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "健康老龄化",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "养老服务与长期照护",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "代际共育",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "终身教育",
+          "source_id": "bnu-fuyuanyuan-profile",
+          "source_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "bnu-fuyuanyuan-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-bnu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "生产性老龄化；健康老龄化；养老服务与长期照护；代际共育；终身教育",
+      "research_interests_source_ids": [
+        "bnu-fuyuanyuan-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "ustc-liujianzhong",
+      "name": "刘建忠",
+      "school_id": "ustc",
+      "department_id": "ustc-chemistry",
+      "organization_id": "ustc-chemistry",
+      "department": "化学系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-ustc-liujianzhong",
+      "official_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+      "listed_role": "特任教授",
+      "listed_role_source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+      "listed_role_source_id": "ustc-liujianzhong-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授",
+      "roster_category_source_id": "ustc-chemistry-professors-roster",
+      "profile_status": "partial_professional_source_checked",
+      "appointments": [
+        {
+          "institution": "中国科学技术大学化学与材料科学学院",
+          "title": "特任教授",
+          "start": "2024-12",
+          "end": null,
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "ustc-liujianzhong-profile",
+            "title": "ustc-liujianzhong-profile",
+            "start": "ustc-liujianzhong-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": null
+        },
+        {
+          "institution": "北京大学",
+          "title": "科研助理",
+          "start": null,
+          "end": "2020-10",
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "ustc-liujianzhong-profile",
+            "title": "ustc-liujianzhong-profile",
+            "start": null,
+            "end": "ustc-liujianzhong-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "列表起点2018-06、简介2018-09，置null；焦宁仅此岗位合作导师，不重复建立博士师承。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "北京大学",
+          "start": "2015-09",
+          "end": "2018-06",
+          "field": "药物化学与有机合成",
+          "degree_awarded": true,
+          "degree_awarded_date": "2018",
+          "source_reported_degree_label": "博士",
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "ustc-liujianzhong-profile",
+            "institution": "ustc-liujianzhong-profile",
+            "start": "ustc-liujianzhong-profile",
+            "end": "ustc-liujianzhong-profile",
+            "field": "ustc-liujianzhong-profile",
+            "degree_awarded": "ustc-liujianzhong-profile",
+            "degree_awarded_date": "ustc-liujianzhong-profile",
+            "source_reported_degree_label": "ustc-liujianzhong-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "source_reported",
+            "degree_awarded_date": "source_reported",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "ustc-liujianzhong-education-1",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "note": null,
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_status": "not_normalized_in_bounded_batch",
+          "education_event_id": "ustc-liujianzhong-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "ustc-liujianzhong-profile",
+          "degree_award_source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance"
+        },
+        {
+          "degree": "硕士",
+          "institution": "中国科学院成都生物研究所",
+          "start": "2012-09",
+          "end": "2015-06",
+          "field": "药物化学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "硕士",
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "ustc-liujianzhong-profile",
+            "institution": "ustc-liujianzhong-profile",
+            "start": "ustc-liujianzhong-profile",
+            "end": "ustc-liujianzhong-profile",
+            "field": "ustc-liujianzhong-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "ustc-liujianzhong-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "ustc-liujianzhong-education-2",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "note": null,
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_status": "not_normalized_in_bounded_batch",
+          "education_event_id": "ustc-liujianzhong-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false
+        },
+        {
+          "degree": null,
+          "institution": "华南理工大学",
+          "start": "2013-09",
+          "end": "2015-03",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "联合培养",
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "ustc-liujianzhong-profile",
+            "start": "ustc-liujianzhong-profile",
+            "end": "ustc-liujianzhong-profile",
+            "field": null,
+            "degree_awarded": "ustc-liujianzhong-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "ustc-liujianzhong-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "source_reported",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "ustc-liujianzhong-education-3",
+          "event_kind": "joint_training",
+          "include_in_education_filters": false,
+          "note": "硕士期间联合培养，不是独立授位。；来源标注：联合培养",
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_status": "not_normalized_in_bounded_batch",
+          "education_event_id": "ustc-liujianzhong-education-3",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://xxgk.scut.edu.cn/_upload/article/files/f9/59/7229d8c64109b93efc60864c9f8f/715ab56f-79b5-46ff-afae-c75af81b2036.pdf",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "source_note": "硕士期间联合培养，不是独立授位。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "ustc-liujianzhong-profile"
+          ]
+        },
+        {
+          "degree": "本科",
+          "institution": "河南大学",
+          "start": "2007-09",
+          "end": "2011-06",
+          "field": "药物制剂",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "本科",
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "ustc-liujianzhong-profile",
+            "institution": "ustc-liujianzhong-profile",
+            "start": "ustc-liujianzhong-profile",
+            "end": "ustc-liujianzhong-profile",
+            "field": "ustc-liujianzhong-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "ustc-liujianzhong-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "ustc-liujianzhong-education-4",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "note": "本科毕业不扩写学士获授。",
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_status": "not_normalized_in_bounded_batch",
+          "education_event_id": "ustc-liujianzhong-education-4",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false
+        },
+        {
+          "degree": null,
+          "institution": "剑桥大学",
+          "start": null,
+          "end": "2024-11",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "博士后",
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "ustc-liujianzhong-profile",
+            "start": null,
+            "end": "ustc-liujianzhong-profile",
+            "field": null,
+            "degree_awarded": "ustc-liujianzhong-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "ustc-liujianzhong-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "source_reported",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "ustc-liujianzhong-education-5",
+          "event_kind": "postdoctoral_research",
+          "include_in_education_filters": false,
+          "note": "列表开始2020-10、简介2020-11，起点冲突置null。；来源标注：博士后",
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_status": "not_normalized_in_bounded_batch",
+          "education_event_id": "ustc-liujianzhong-education-5",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "source_event_kind": "postdoc",
+          "event_kind_normalization_note": "仅映射已核原文阶段至既有显示标签，保留原类型；不改变学位层次、授位、日期或筛选。",
+          "include_in_degree_filters": false,
+          "source_note": "列表开始2020-10、简介2020-11，起点冲突置null。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "ustc-liujianzhong-profile"
+          ]
+        }
+      ],
+      "mentors": [
+        {
+          "name": "焦宁",
+          "type": "doctoral_supervisor",
+          "education_stage": "博士",
+          "education_event_id": "ustc-liujianzhong-education-1",
+          "start": null,
+          "end": null,
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-liujianzhong-profile",
+            "type": "ustc-liujianzhong-profile",
+            "education_stage": "ustc-liujianzhong-profile",
+            "education_event_id": "ustc-liujianzhong-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "来源明确阶段与导师关系；不由合著或课题组成员推断，不推定关系起止日期。",
+          "relationship_kind": "doctoral_advisor",
+          "type_label": "博士导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "doctoral_supervisor",
+          "include_in_degree_mentorship_graph": true
+        },
+        {
+          "name": "卢小霞",
+          "type": "masters_supervisor",
+          "education_stage": "硕士",
+          "education_event_id": "ustc-liujianzhong-education-2",
+          "start": null,
+          "end": null,
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-liujianzhong-profile",
+            "type": "ustc-liujianzhong-profile",
+            "education_stage": "ustc-liujianzhong-profile",
+            "education_event_id": "ustc-liujianzhong-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "来源明确阶段与导师关系；不由合著或课题组成员推断，不推定关系起止日期。",
+          "relationship_kind": "masters_advisor",
+          "type_label": "硕士导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "masters_supervisor",
+          "include_in_degree_mentorship_graph": true
+        },
+        {
+          "name": "曾伟",
+          "type": "joint_training_supervisor",
+          "education_stage": "硕士联合培养",
+          "education_event_id": "ustc-liujianzhong-education-3",
+          "start": null,
+          "end": null,
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-liujianzhong-profile",
+            "type": "ustc-liujianzhong-profile",
+            "education_stage": "ustc-liujianzhong-profile",
+            "education_event_id": "ustc-liujianzhong-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "来源明确阶段与导师关系；不由合著或课题组成员推断，不推定关系起止日期。",
+          "relationship_kind": "joint_training_advisor",
+          "type_label": "联合培养导师（硕士联合培养，非独立授位）",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "joint_training_supervisor",
+          "include_in_degree_mentorship_graph": false
+        },
+        {
+          "name": "Matthew J. Gaunt",
+          "type": "postdoctoral_supervisor",
+          "education_stage": "博士后",
+          "education_event_id": "ustc-liujianzhong-education-5",
+          "start": null,
+          "end": null,
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-liujianzhong-profile",
+            "type": "ustc-liujianzhong-profile",
+            "education_stage": "ustc-liujianzhong-profile",
+            "education_event_id": "ustc-liujianzhong-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "来源明确阶段与导师关系；不由合著或课题组成员推断，不推定关系起止日期。",
+          "relationship_kind": "postdoctoral_advisor",
+          "type_label": "博士后合作导师（非博士授位导师）",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "postdoctoral_supervisor",
+          "include_in_degree_mentorship_graph": false
+        }
+      ],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Versatile, Modular, and General Strategy for the Synthesis of α-Amino Carbonyls",
+          "year": 2024,
+          "venue": "J. Am. Chem. Soc.",
+          "volume": "146(35)",
+          "pages_or_article_number": "24699",
+          "doi": "10.1021/jacs.4c09434",
+          "type": "journal_article",
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "ustc-liujianzhong-profile",
+            "year": "ustc-liujianzhong-profile",
+            "venue": "ustc-liujianzhong-profile",
+            "volume": "ustc-liujianzhong-profile",
+            "pages_or_article_number": "ustc-liujianzhong-profile",
+            "doi": "ustc-liujianzhong-profile",
+            "type": "ustc-liujianzhong-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "source_reported",
+            "pages_or_article_number": "source_reported",
+            "doi": "source_reported",
+            "type": "source_reported"
+          },
+          "url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "identity_evidence": "本人官方页面的代表性论著栏目列示；宋磊由个人页直接链接至同名书目。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "仅1条代表书目；出版者与DOI解析未独立核验。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "research_fields": [
+        {
+          "name": "分子光物理学与合成化学的结合",
+          "source_id": "ustc-liujianzhong-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-liujianzhong-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "sources": [
+        {
+          "id": "ustc-chemistry-professors-roster",
+          "url": "https://chem.ustc.edu.cn/js/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-ustc/roster-minimal.json",
+          "web_reference": "turn2193view0",
+          "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "ustc-liujianzhong-profile",
+          "url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-ustc/ustc-liujianzhong-minimal.json",
+          "web_reference": "turn2195view0",
+          "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "校区、全职与人事在岗状态未核；在列不等独立人事确认。",
+        "仅部分公开职业记录；未穷尽项目、荣誉或出版物；导师导航未研究。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+        "native_link_target": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+        "source_ids": [
+          "ustc-chemistry-professors-roster",
+          "ustc-liujianzhong-profile"
+        ],
+        "note": "教授类别原序姓名直链同名官方专业正文。"
+      },
+      "professional_field_provenance": {
+        "name": "ustc-chemistry-professors-roster",
+        "school_id": "ustc-chemistry-professors-roster",
+        "department_id": "ustc-chemistry-professors-roster",
+        "organization_id": "ustc-chemistry-professors-roster",
+        "department": "ustc-chemistry-professors-roster",
+        "official_url": "ustc-chemistry-professors-roster",
+        "roster_category": "ustc-chemistry-professors-roster",
+        "listed_role": "ustc-liujianzhong-profile",
+        "research_interests": [
+          "ustc-liujianzhong-profile"
+        ]
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-ustc-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "分子光物理学与合成化学的结合",
+      "research_interests_source_ids": [
+        "ustc-liujianzhong-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "ustc-zhuoqingde",
+      "name": "卓庆德",
+      "school_id": "ustc",
+      "department_id": "ustc-chemistry",
+      "organization_id": "ustc-chemistry",
+      "department": "化学系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-ustc-zhuoqingde",
+      "official_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+      "listed_role": "特任教授",
+      "listed_role_source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+      "listed_role_source_id": "ustc-zhuoqingde-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授",
+      "roster_category_source_id": "ustc-chemistry-professors-roster",
+      "profile_status": "partial_professional_source_checked",
+      "appointments": [
+        {
+          "institution": "中国科学技术大学",
+          "title": "特任教授",
+          "start": "2025-01",
+          "end": null,
+          "source_id": "ustc-zhuoqingde-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "ustc-zhuoqingde-profile",
+            "title": "ustc-zhuoqingde-profile",
+            "start": "ustc-zhuoqingde-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": null
+        },
+        {
+          "institution": "日本理化学研究所",
+          "title": "研究员",
+          "start": null,
+          "end": "2025-01",
+          "source_id": "ustc-zhuoqingde-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "ustc-zhuoqingde-profile",
+            "title": "ustc-zhuoqingde-profile",
+            "start": null,
+            "end": "ustc-zhuoqingde-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "简介晋升2024-03，履历开始2024-04，起点置null；研究员不是学位。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "厦门大学",
+          "start": "2010-09",
+          "end": "2015-12",
+          "field": "有机化学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "博士",
+          "source_id": "ustc-zhuoqingde-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "ustc-zhuoqingde-profile",
+            "institution": "ustc-zhuoqingde-profile",
+            "start": "ustc-zhuoqingde-profile",
+            "end": "ustc-zhuoqingde-profile",
+            "field": "ustc-zhuoqingde-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "ustc-zhuoqingde-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "ustc-zhuoqingde-education-1",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "note": "博士毕业及学位标签，未单独明确获授。",
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_status": "not_normalized_in_bounded_batch",
+          "education_event_id": "ustc-zhuoqingde-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false
+        },
+        {
+          "degree": "学士",
+          "institution": "南昌大学",
+          "start": "2006-09",
+          "end": "2010-07",
+          "field": "应用化学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "学士",
+          "source_id": "ustc-zhuoqingde-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "ustc-zhuoqingde-profile",
+            "institution": "ustc-zhuoqingde-profile",
+            "start": "ustc-zhuoqingde-profile",
+            "end": "ustc-zhuoqingde-profile",
+            "field": "ustc-zhuoqingde-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "ustc-zhuoqingde-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "ustc-zhuoqingde-education-2",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "note": "标签及本科毕业不升级明确获授。",
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_status": "not_normalized_in_bounded_batch",
+          "education_event_id": "ustc-zhuoqingde-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false
+        },
+        {
+          "degree": null,
+          "institution": "厦门大学",
+          "start": "2016-03",
+          "end": "2019-03",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "博士后",
+          "source_id": "ustc-zhuoqingde-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "ustc-zhuoqingde-profile",
+            "start": "ustc-zhuoqingde-profile",
+            "end": "ustc-zhuoqingde-profile",
+            "field": null,
+            "degree_awarded": "ustc-zhuoqingde-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "ustc-zhuoqingde-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "source_reported",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "ustc-zhuoqingde-education-3",
+          "event_kind": "postdoctoral_research",
+          "include_in_education_filters": false,
+          "note": "来源标注：博士后",
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_status": "not_normalized_in_bounded_batch",
+          "education_event_id": "ustc-zhuoqingde-education-3",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "source_event_kind": "postdoc",
+          "event_kind_normalization_note": "仅映射已核原文阶段至既有显示标签，保留原类型；不改变学位层次、授位、日期或筛选。",
+          "include_in_degree_filters": false,
+          "source_note": null,
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "ustc-zhuoqingde-profile"
+          ]
+        },
+        {
+          "degree": null,
+          "institution": "日本理化学研究所",
+          "start": "2019-04",
+          "end": "2024-03",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "博士后",
+          "source_id": "ustc-zhuoqingde-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "ustc-zhuoqingde-profile",
+            "start": "ustc-zhuoqingde-profile",
+            "end": "ustc-zhuoqingde-profile",
+            "field": null,
+            "degree_awarded": "ustc-zhuoqingde-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "ustc-zhuoqingde-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "source_reported",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "ustc-zhuoqingde-education-4",
+          "event_kind": "postdoctoral_research",
+          "include_in_education_filters": false,
+          "note": "来源标注：博士后",
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_status": "not_normalized_in_bounded_batch",
+          "education_event_id": "ustc-zhuoqingde-education-4",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "source_event_kind": "postdoc",
+          "event_kind_normalization_note": "仅映射已核原文阶段至既有显示标签，保留原类型；不改变学位层次、授位、日期或筛选。",
+          "include_in_degree_filters": false,
+          "source_note": null,
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "ustc-zhuoqingde-profile"
+          ]
+        }
+      ],
+      "mentors": [
+        {
+          "name": "夏海平",
+          "type": "doctoral_supervisor",
+          "education_stage": "博士",
+          "education_event_id": "ustc-zhuoqingde-education-1",
+          "start": null,
+          "end": null,
+          "source_id": "ustc-zhuoqingde-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-zhuoqingde-profile",
+            "type": "ustc-zhuoqingde-profile",
+            "education_stage": "ustc-zhuoqingde-profile",
+            "education_event_id": "ustc-zhuoqingde-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "来源明确阶段与导师关系；不由合著或课题组成员推断，不推定关系起止日期。",
+          "relationship_kind": "doctoral_advisor",
+          "type_label": "博士导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "doctoral_supervisor",
+          "include_in_degree_mentorship_graph": true
+        },
+        {
+          "name": "夏海平",
+          "type": "postdoctoral_supervisor",
+          "education_stage": "博士后",
+          "education_event_id": "ustc-zhuoqingde-education-3",
+          "start": null,
+          "end": null,
+          "source_id": "ustc-zhuoqingde-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-zhuoqingde-profile",
+            "type": "ustc-zhuoqingde-profile",
+            "education_stage": "ustc-zhuoqingde-profile",
+            "education_event_id": "ustc-zhuoqingde-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "来源明确阶段与导师关系；不由合著或课题组成员推断，不推定关系起止日期。",
+          "relationship_kind": "postdoctoral_advisor",
+          "type_label": "博士后合作导师（非博士授位导师）",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "postdoctoral_supervisor",
+          "include_in_degree_mentorship_graph": false
+        },
+        {
+          "name": "侯召民",
+          "type": "postdoctoral_supervisor",
+          "education_stage": "博士后",
+          "education_event_id": "ustc-zhuoqingde-education-4",
+          "start": null,
+          "end": null,
+          "source_id": "ustc-zhuoqingde-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-zhuoqingde-profile",
+            "type": "ustc-zhuoqingde-profile",
+            "education_stage": "ustc-zhuoqingde-profile",
+            "education_event_id": "ustc-zhuoqingde-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "来源明确阶段与导师关系；不由合著或课题组成员推断，不推定关系起止日期。",
+          "relationship_kind": "postdoctoral_advisor",
+          "type_label": "博士后合作导师（非博士授位导师）",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "postdoctoral_supervisor",
+          "include_in_degree_mentorship_graph": false
+        }
+      ],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Hydroamination of alkenes with dinitrogen and titanium polyhydrides",
+          "year": 2024,
+          "venue": "Nature",
+          "volume": "632",
+          "pages_or_article_number": "307–312",
+          "doi": null,
+          "type": "journal_article",
+          "source_id": "ustc-zhuoqingde-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "ustc-zhuoqingde-profile",
+            "year": "ustc-zhuoqingde-profile",
+            "venue": "ustc-zhuoqingde-profile",
+            "volume": "ustc-zhuoqingde-profile",
+            "pages_or_article_number": "ustc-zhuoqingde-profile",
+            "doi": null,
+            "type": "ustc-zhuoqingde-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "source_reported",
+            "pages_or_article_number": "source_reported",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "identity_evidence": "本人官方页面的代表性论著栏目列示；宋磊由个人页直接链接至同名书目。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "仅1条代表书目；出版者与DOI解析未独立核验。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方精选书目已核，未逐篇核实出版社落地页或全文。"
+        }
+      ],
+      "research_fields": [
+        {
+          "name": "新型金属有机化合物的创制与应用",
+          "source_id": "ustc-zhuoqingde-profile",
+          "source_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-zhuoqingde-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "sources": [
+        {
+          "id": "ustc-chemistry-professors-roster",
+          "url": "https://chem.ustc.edu.cn/js/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-ustc/roster-minimal.json",
+          "web_reference": "turn2193view0",
+          "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "ustc-zhuoqingde-profile",
+          "url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-ustc/ustc-zhuoqingde-minimal.json",
+          "web_reference": "turn2195view1",
+          "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "unknowns": [
+        "校区、全职与人事在岗状态未核；在列不等独立人事确认。",
+        "仅部分公开职业记录；未穷尽项目、荣誉或出版物；导师导航未研究。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+        "native_link_target": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+        "source_ids": [
+          "ustc-chemistry-professors-roster",
+          "ustc-zhuoqingde-profile"
+        ],
+        "note": "教授类别原序姓名直链同名官方专业正文。"
+      },
+      "professional_field_provenance": {
+        "name": "ustc-chemistry-professors-roster",
+        "school_id": "ustc-chemistry-professors-roster",
+        "department_id": "ustc-chemistry-professors-roster",
+        "organization_id": "ustc-chemistry-professors-roster",
+        "department": "ustc-chemistry-professors-roster",
+        "official_url": "ustc-chemistry-professors-roster",
+        "roster_category": "ustc-chemistry-professors-roster",
+        "listed_role": "ustc-zhuoqingde-profile",
+        "research_interests": [
+          "ustc-zhuoqingde-profile"
+        ]
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-ustc-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "新型金属有机化合物的创制与应用",
+      "research_interests_source_ids": [
+        "ustc-zhuoqingde-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "ustc-songlei",
+      "name": "宋磊",
+      "school_id": "ustc",
+      "department_id": "ustc-chemistry",
+      "organization_id": "ustc-chemistry",
+      "department": "化学系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-ustc-songlei",
+      "official_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+      "listed_role_source_id": "ustc-songlei-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授",
+      "roster_category_source_id": "ustc-chemistry-professors-roster",
+      "profile_status": "partial_professional_source_checked",
+      "appointments": [
+        {
+          "institution": "中国科学技术大学",
+          "title": "助理研究员",
+          "start": "2005",
+          "end": "2007",
+          "source_id": "ustc-songlei-profile",
+          "source_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "ustc-songlei-profile",
+            "title": "ustc-songlei-profile",
+            "start": "ustc-songlei-profile",
+            "end": "ustc-songlei-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": null
+        },
+        {
+          "institution": "中国科学技术大学",
+          "title": "副研究员",
+          "start": "2008",
+          "end": "2017",
+          "source_id": "ustc-songlei-profile",
+          "source_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "ustc-songlei-profile",
+            "title": "ustc-songlei-profile",
+            "start": "ustc-songlei-profile",
+            "end": "ustc-songlei-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "current": false,
+          "status": "historical_source_reported",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": null
+        },
+        {
+          "institution": "中国科学技术大学",
+          "title": "教授",
+          "start": "2017",
+          "end": null,
+          "source_id": "ustc-songlei-profile",
+          "source_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "ustc-songlei-profile",
+            "title": "ustc-songlei-profile",
+            "start": "ustc-songlei-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": null
+        },
+        {
+          "institution": "火灾实验室火灾化学研究室",
+          "title": "主任",
+          "start": "2014",
+          "end": null,
+          "source_id": "ustc-songlei-profile",
+          "source_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "ustc-songlei-profile",
+            "title": "ustc-songlei-profile",
+            "start": "ustc-songlei-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "个人页现时列示，未独立核对2026年在岗。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "中国科学技术大学",
+          "start": null,
+          "end": "2002",
+          "field": "无机化学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "博士",
+          "source_id": "ustc-songlei-profile",
+          "source_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "ustc-songlei-profile",
+            "institution": "ustc-songlei-profile",
+            "start": null,
+            "end": "ustc-songlei-profile",
+            "field": "ustc-songlei-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "ustc-songlei-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "ustc-songlei-education-1",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "note": "来源为博士(2002)标签，未明确获授；2002为来源列示终年而非推定授位日期。",
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_status": "not_normalized_in_bounded_batch",
+          "education_event_id": "ustc-songlei-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false
+        },
+        {
+          "degree": null,
+          "institution": "中国科学技术大学",
+          "start": "2002",
+          "end": "2005",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "博士后",
+          "source_id": "ustc-songlei-profile",
+          "source_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "ustc-songlei-profile",
+            "start": "ustc-songlei-profile",
+            "end": "ustc-songlei-profile",
+            "field": null,
+            "degree_awarded": "ustc-songlei-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "ustc-songlei-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "source_reported",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "ustc-songlei-education-2",
+          "event_kind": "postdoctoral_research",
+          "include_in_education_filters": false,
+          "note": "来源标注：博士后",
+          "country": null,
+          "region": "unknown",
+          "continent": null,
+          "geography_status": "not_normalized_in_bounded_batch",
+          "education_event_id": "ustc-songlei-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": null,
+          "continent_code": "unknown",
+          "source_event_kind": "postdoc",
+          "event_kind_normalization_note": "仅映射已核原文阶段至既有显示标签，保留原类型；不改变学位层次、授位、日期或筛选。",
+          "include_in_degree_filters": false,
+          "source_note": null,
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "ustc-songlei-profile"
+          ]
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "新型绿色阻燃原理和技术",
+          "source_id": "ustc-songlei-profile",
+          "source_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-songlei-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "高性能聚合物基纳米复合材料",
+          "source_id": "ustc-songlei-profile",
+          "source_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-songlei-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "先进功能材料",
+          "source_id": "ustc-songlei-profile",
+          "source_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-songlei-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "材料火灾安全性评价方法和技术",
+          "source_id": "ustc-songlei-profile",
+          "source_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "ustc-songlei-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [
+        {
+          "title": "Carbon-conscious and sustainably sourced non-isocyanate polyurethane with intrinsic flame retardancy, high strength, and ultra-robust adhesion",
+          "year": 2025,
+          "venue": "CHEMICAL ENGINEERING JOURNAL",
+          "volume": "525",
+          "pages_or_article_number": "169854",
+          "doi": null,
+          "type": "journal_article",
+          "source_id": "ustc-songlei-publications",
+          "source_url": "https://sklfs.ustc.edu.cn/2018/1126/c17179a356390/page.htm",
+          "evidence_status": "researcher_body_read_independent_review_unavailable",
+          "field_provenance": {
+            "title": "ustc-songlei-publications",
+            "year": "ustc-songlei-publications",
+            "venue": "ustc-songlei-publications",
+            "volume": "ustc-songlei-publications",
+            "pages_or_article_number": "ustc-songlei-publications",
+            "doi": null,
+            "type": "ustc-songlei-publications"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "volume": "source_reported",
+            "pages_or_article_number": "source_reported",
+            "doi": "not_disclosed",
+            "type": "source_reported"
+          },
+          "url": "https://sklfs.ustc.edu.cn/2018/1126/c17179a356390/page.htm",
+          "identity_evidence": "本人官方页面的代表性论著栏目列示；宋磊由个人页直接链接至同名书目。",
+          "link_status": "official_publication_list_only",
+          "individual_article_link_verified": false,
+          "note": "研究阶段读取过目标正文并保留最小书目信息；独审时该目标正文不可访问，原化学系个人页仅有书目链接无引文。按独审要求隔离候选，不计入已核出版物；不重试网络。",
+          "candidate_type": "publication",
+          "verification_status": "held_pending_independent_source_access",
+          "include_in_verified_publications": false,
+          "independent_review_status": "not_passed_source_unavailable"
+        }
+      ],
+      "sources": [
+        {
+          "id": "ustc-chemistry-professors-roster",
+          "url": "https://chem.ustc.edu.cn/js/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-ustc/roster-minimal.json",
+          "web_reference": "turn2193view0",
+          "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "ustc-songlei-profile",
+          "url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-ustc/ustc-songlei-minimal.json",
+          "web_reference": "turn2195view2",
+          "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        },
+        {
+          "id": "ustc-songlei-publications",
+          "url": "https://sklfs.ustc.edu.cn/2018/1126/c17179a356390/page.htm",
+          "evidence_status": "researcher_body_read_independent_review_unavailable",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-ustc/songlei-publication-minimal.json",
+          "web_reference": "turn2196view2",
+          "access_note": "Researcher originally read official body at turn2196view2; independent auditor could not access the target and did not retry. Retained bibliography is held as a candidate only; not independently verified.",
+          "independent_review_status": "not_passed_source_unavailable",
+          "navigation_available": false,
+          "navigation_enabled": false,
+          "evidence_status_label": "研究者曾读取，独立复核正文不可用；仅候选，不作确证书目或导航。"
+        }
+      ],
+      "unknowns": [
+        "校区、全职与人事在岗状态未核；在列不等独立人事确认。",
+        "仅部分公开职业记录；未穷尽项目、荣誉或出版物；导师导航未研究。",
+        "宋磊唯一书目待独审正文可用性核验，当前仅候选。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "profile_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+        "native_link_target": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+        "source_ids": [
+          "ustc-chemistry-professors-roster",
+          "ustc-songlei-profile"
+        ],
+        "note": "教授类别原序姓名直链同名官方专业正文。"
+      },
+      "professional_field_provenance": {
+        "name": "ustc-chemistry-professors-roster",
+        "school_id": "ustc-chemistry-professors-roster",
+        "department_id": "ustc-chemistry-professors-roster",
+        "organization_id": "ustc-chemistry-professors-roster",
+        "department": "ustc-chemistry-professors-roster",
+        "official_url": "ustc-chemistry-professors-roster",
+        "roster_category": "ustc-chemistry-professors-roster",
+        "listed_role": "ustc-songlei-profile",
+        "research_interests": [
+          "ustc-songlei-profile"
+        ]
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-ustc-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "新型绿色阻燃原理和技术；高性能聚合物基纳米复合材料；先进功能材料；材料火灾安全性评价方法和技术",
+      "research_interests_source_ids": [
+        "ustc-songlei-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
     }
   ],
   "profile_batches": [
@@ -192022,6 +195768,108 @@
         "徐论文只有本人目录书目，不保留失败且标题有异的单篇目标为已核文章入口；王空缺成果不等本人无发表。",
         "仅徐论文列表独核普通HTTPS200，其余来源为reader正文读通，不泛化网络状态。源站读通不代表人事在岗或行政任期独核。",
         "原始来源审查通过不代替最终地域/985/消费者字段归一化及显示、筛选集成验证。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-fdu-rotation-003",
+      "source_batch_id": "faculty-batch-fdu-rotation-003",
+      "school_id": "fdu",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-24",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "selection_basis": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-fdu-rotation-003.json",
+          "sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab"
+        }
+      ],
+      "limitations": [
+        "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "不由旧页职称推断现职；校区不由页脚地址推定。",
+        "无明确获授措辞的标签保持degree_awarded=null；访问不计学位。",
+        "MSW导师类别仅采样资格，非本人博士导师关系。",
+        "书目不等可用全文；不保留网页全量、联系方式、出生或照片。",
+        "仅原序首3部分职业档案，不是全院全校或实时人事覆盖。",
+        "来源reader正文不等同原站HTTP状态验证；不能宣称直连200。",
+        "未披露学位获授、授位日、校区和当前人事状态保持未知；书目未独立验证出版者。",
+        "董雅华教授类别行无链接，使用同页拼音/教研室视图闭合；不改称该行直接链接。",
+        "旧个人页职称仅列示，不得建立当前任职断言。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-bnu-rotation-003",
+      "source_batch_id": "faculty-batch-bnu-rotation-003",
+      "school_id": "bnu",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-24",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "selection_basis": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-bnu-rotation-003.json",
+          "sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f"
+        }
+      ],
+      "limitations": [
+        "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "不由旧页职称推断现职；校区不由页脚地址推定。",
+        "无明确获授措辞的标签保持degree_awarded=null；访问不计学位。",
+        "MSW导师类别仅采样资格，非本人博士导师关系。",
+        "书目不等可用全文；不保留网页全量、联系方式、出生或照片。",
+        "仅原序首3部分职业档案，不是全院全校或实时人事覆盖。",
+        "来源reader正文不等同原站HTTP状态验证；不能宣称直连200。",
+        "未披露学位获授、授位日、校区和当前人事状态保持未知；书目未独立验证出版者。",
+        "MSW教授类别抽样，不扩写全院在职人数。",
+        "香港大学地区中国香港；海外访问为非学位，系名不得转作专业。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-ustc-rotation-003",
+      "source_batch_id": "faculty-batch-ustc-rotation-003",
+      "school_id": "ustc",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-24",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+      "selection_basis": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-ustc-rotation-003.json",
+          "sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032"
+        }
+      ],
+      "limitations": [
+        "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+        "不由办公室地址推定校区；名录类别教授与个人页特任教授分别保留。",
+        "刘建忠仅博士明确获授；其他毕业或学位标签不升级。研究助理、研究员、博士后及联合培养均非独立学位。",
+        "刘建忠两个岗位与卓庆德研究员起始月份存在同页冲突，置null；不得用历史日期冒充现时人事核验。",
+        "导师明确分博士、硕士、联合培养与博士后；导师个人页、导航和当前任职未研究。",
+        "出版者单篇和DOI解析未核；每人仅一条官方书目。无联系方式、出生信息、照片、学生名单、论文全文或整页缓存。",
+        "独审时宋磊代表性论著目标不可访问；保留研究阶段最小书目信息为候选，不计已核出版物，不再网络重试。",
+        "仅原序首3部分职业档案，不是全院全校或实时人事覆盖。",
+        "来源reader正文不等同原站HTTP状态验证；不能宣称直连200。",
+        "未披露学位获授、授位日、校区和当前人事状态保持未知；书目未独立验证出版者。",
+        "37/40名录矛盾和三处起点冲突必须保留；不能以升职/入职日期反推另一任期。",
+        "宋磊publication候选不得升入已核出版物、点击导航或已核计数；本次未独立验证其引用元数据。",
+        "7历史分阶段师承边不代表导师现在任职/招生，当前导航保持0。"
       ]
     }
   ],
@@ -201038,6 +204886,29 @@
         }
       ],
       "note": "新增9部分职业，0pending；所有原始职业字段、三态授位与日期精度保留。研究方向和单次事件日期仅显式来源派生展示，不补推学习区间。西交采样单位不作为当前聘任，未链接名录保持保守导航。"
+    },
+    {
+      "kind": "reviewed_rotation003_wave3",
+      "source_batch_ids": [
+        "faculty-batch-fdu-rotation-003",
+        "faculty-batch-bnu-rotation-003",
+        "faculty-batch-ustc-rotation-003"
+      ],
+      "source_files": [
+        {
+          "file": "faculty-batch-fdu-rotation-003.json",
+          "sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab"
+        },
+        {
+          "file": "faculty-batch-bnu-rotation-003.json",
+          "sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f"
+        },
+        {
+          "file": "faculty-batch-ustc-rotation-003.json",
+          "sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032"
+        }
+      ],
+      "note": "新增9部分职业，0pending；保留三态授位、全部日期和7条明确阶段师承，现任导师导航关闭。博士后和未知层次毕业仅来源保真显示映射；宋磊书目只保留候选。"
     }
   ],
   "institutions": [
@@ -201819,7 +205690,7 @@
       "normalization_scope_note": "本轮首3样本及另列已审补强按各自来源范围保留，不合并同名、不自动升级原pending。"
     }
   ],
-  "build_id": "c0d2d19978fa88dd",
+  "build_id": "9ddba001ee7b3086",
   "exports": [
     {
       "department_id": "bit-cs-image-perception",
@@ -201861,6 +205732,13 @@
       "school_id": "bnu",
       "school_name": "北京师范大学",
       "path": "exports/bnu-math.xlsx",
+      "people_count": 3
+    },
+    {
+      "department_id": "bnu-sociology",
+      "school_id": "bnu",
+      "school_name": "北京师范大学",
+      "path": "exports/bnu-sociology.xlsx",
       "people_count": 3
     },
     {
@@ -201994,6 +205872,13 @@
       "school_id": "fdu",
       "school_name": "复旦大学",
       "path": "exports/fdu-icmne.xlsx",
+      "people_count": 3
+    },
+    {
+      "department_id": "fdu-marxism",
+      "school_id": "fdu",
+      "school_name": "复旦大学",
+      "path": "exports/fdu-marxism.xlsx",
       "people_count": 3
     },
     {
@@ -202540,6 +206425,13 @@
       "school_id": "uestc",
       "school_name": "电子科技大学",
       "path": "exports/uestc-applied-math-center.xlsx",
+      "people_count": 3
+    },
+    {
+      "department_id": "ustc-chemistry",
+      "school_id": "ustc",
+      "school_name": "中国科学技术大学",
+      "path": "exports/ustc-chemistry.xlsx",
       "people_count": 3
     },
     {

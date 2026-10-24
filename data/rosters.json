@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "39校公开名录样本，1730条整合记录、1768条原始来源观察；原1721记录与1759观察不变。新增3校9条选中观察不表示全系全院或唯一现任人数。",
+  "scope": "39校公开名录样本，1739条整合记录、1777条原始来源观察；原1730记录与1768观察不变。新增3校9选中观察不表示全院或当前人事总数。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -1317,6 +1317,27 @@
     {
       "school_id": "xjtu",
       "organization_id": "xjtu-modern-physics-astronomy-preparatory",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "fdu",
+      "organization_id": "fdu-marxism",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "bnu",
+      "organization_id": "bnu-sociology",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "ustc",
+      "organization_id": "ustc-chemistry",
       "visible_roster_entries": 3,
       "count_scope": "selected_subset_only",
       "coverage_complete": false
@@ -5137,6 +5158,69 @@
       "batch_id": "xjtu-selected-roster-rotation-003",
       "source_category_observed_count": 15,
       "source_category_count_basis": "15 original names in one labelled professor/researcher category; department prose reports 35 total staff at page date. These denominators are not interchangeable.",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "fdu",
+      "organization_id": "fdu-marxism",
+      "url": "https://som.fudan.edu.cn/szll/list.htm",
+      "category": "教授",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "selection_basis": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "fdu-selected-roster-rotation-003",
+      "source_category_observed_count": 27,
+      "source_category_count_basis": "Count distinct names within this labelled category only; not department or university total.",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "bnu",
+      "organization_id": "bnu-sociology",
+      "url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+      "category": "MSW导师 / 教授（按照姓名拼音排序）",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "selection_basis": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "bnu-selected-roster-rotation-003",
+      "source_category_observed_count": 19,
+      "source_category_count_basis": "Count distinct names within this labelled category only; not department or university total.",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "ustc",
+      "organization_id": "ustc-chemistry",
+      "url": "https://chem.ustc.edu.cn/js/list.htm",
+      "category": "教授",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+      "selection_basis": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "ustc-selected-roster-rotation-003",
+      "source_category_observed_count": 40,
+      "source_category_count_basis": "Read 14+14+12 linked entries across three pages, 40 distinct names; total labels conflict (37 vs 40), not an authoritative current personnel count.",
       "source_category_evidence_level": "official_roster_body_read"
     }
   ],
@@ -58383,6 +58467,555 @@
       },
       "independent_person_identity_reviewed": true,
       "roster_profile_association_status": "conservative_unlinked_sampling_roster_no_current_department_match_claim"
+    },
+    {
+      "id": "roster-fdu-chenxueming",
+      "name": "陈学明",
+      "school_id": "fdu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "fdu-marxism",
+      "department_id": "fdu-marxism",
+      "category": "教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+      "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "fdu-chenxueming",
+      "source_person_id": "fdu-chenxueming",
+      "batch_id": "fdu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-fdu-rotation-003",
+      "source_ids": [
+        "fdu-rotation003-professors-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "profile_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+        "native_link_target": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+        "source_ids": [
+          "fdu-rotation003-professors-roster",
+          "fdu-chenxueming-profile"
+        ],
+        "note": "官方类别姓名直链至同名专业正文。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "官方类别姓名直链至同名专业正文。"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "fdu-selected-roster-rotation-003:roster-fdu-chenxueming:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "fdu-rotation003-professors-roster",
+          "fdu-chenxueming-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "official_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+        "reviewed_source_sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab",
+        "independent_review_sha256": "23d85f1f2b9b52e90d5ac87f60617affee86e50c0268c7f2538406f408d7aaf8",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-fdu-chenzhonghe",
+      "name": "谌中和",
+      "school_id": "fdu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "fdu-marxism",
+      "department_id": "fdu-marxism",
+      "category": "教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+      "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "fdu-chenzhonghe",
+      "source_person_id": "fdu-chenzhonghe",
+      "batch_id": "fdu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-fdu-rotation-003",
+      "source_ids": [
+        "fdu-rotation003-professors-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "profile_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+        "native_link_target": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+        "source_ids": [
+          "fdu-rotation003-professors-roster",
+          "fdu-chenzhonghe-profile"
+        ],
+        "note": "官方类别姓名直链至同名专业正文。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "官方类别姓名直链至同名专业正文。"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "fdu-selected-roster-rotation-003:roster-fdu-chenzhonghe:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "fdu-rotation003-professors-roster",
+          "fdu-chenzhonghe-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "official_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+        "reviewed_source_sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab",
+        "independent_review_sha256": "23d85f1f2b9b52e90d5ac87f60617affee86e50c0268c7f2538406f408d7aaf8",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-fdu-dongyahua",
+      "name": "董雅华",
+      "school_id": "fdu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "fdu-marxism",
+      "department_id": "fdu-marxism",
+      "category": "教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+      "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "fdu-dongyahua",
+      "source_person_id": "fdu-dongyahua",
+      "batch_id": "fdu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-fdu-rotation-003",
+      "source_ids": [
+        "fdu-rotation003-professors-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "profile_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+        "native_link_target": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+        "source_ids": [
+          "fdu-rotation003-professors-roster",
+          "fdu-dongyahua-profile"
+        ],
+        "note": "FDU董雅华同一名录的按拼音及教研室视图提供姓名直链；教授视图同名条目无链接。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "FDU董雅华同一名录的按拼音及教研室视图提供姓名直链；教授视图同名条目无链接。"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "fdu-selected-roster-rotation-003:roster-fdu-dongyahua:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "fdu-rotation003-professors-roster",
+          "fdu-dongyahua-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "official_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+        "reviewed_source_sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab",
+        "independent_review_sha256": "23d85f1f2b9b52e90d5ac87f60617affee86e50c0268c7f2538406f408d7aaf8",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-bnu-dongleiming",
+      "name": "董磊明",
+      "school_id": "bnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bnu-sociology",
+      "department_id": "bnu-sociology",
+      "category": "MSW导师 / 教授（按照姓名拼音排序）",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+      "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "bnu-dongleiming",
+      "source_person_id": "bnu-dongleiming",
+      "batch_id": "bnu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-bnu-rotation-003",
+      "source_ids": [
+        "bnu-rotation003-professors-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+        "native_link_target": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+        "source_ids": [
+          "bnu-rotation003-professors-roster",
+          "bnu-dongleiming-profile"
+        ],
+        "note": "官方类别姓名直链至同名专业正文。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "官方类别姓名直链至同名专业正文。"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "bnu-selected-roster-rotation-003:roster-bnu-dongleiming:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "bnu-rotation003-professors-roster",
+          "bnu-dongleiming-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "official_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+        "reviewed_source_sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f",
+        "independent_review_sha256": "0e2a93122e67557a73bba57594f347d5b20c02d6f2d8b622b378545d243b85e5",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-bnu-fuchangbo",
+      "name": "傅昌波",
+      "school_id": "bnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bnu-sociology",
+      "department_id": "bnu-sociology",
+      "category": "MSW导师 / 教授（按照姓名拼音排序）",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+      "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "bnu-fuchangbo",
+      "source_person_id": "bnu-fuchangbo",
+      "batch_id": "bnu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-bnu-rotation-003",
+      "source_ids": [
+        "bnu-rotation003-professors-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+        "native_link_target": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+        "source_ids": [
+          "bnu-rotation003-professors-roster",
+          "bnu-fuchangbo-profile"
+        ],
+        "note": "官方类别姓名直链至同名专业正文。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "官方类别姓名直链至同名专业正文。"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "bnu-selected-roster-rotation-003:roster-bnu-fuchangbo:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "bnu-rotation003-professors-roster",
+          "bnu-fuchangbo-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "official_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+        "reviewed_source_sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f",
+        "independent_review_sha256": "0e2a93122e67557a73bba57594f347d5b20c02d6f2d8b622b378545d243b85e5",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-bnu-fuyuanyuan",
+      "name": "付媛媛",
+      "school_id": "bnu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "bnu-sociology",
+      "department_id": "bnu-sociology",
+      "category": "MSW导师 / 教授（按照姓名拼音排序）",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+      "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "bnu-fuyuanyuan",
+      "source_person_id": "bnu-fuyuanyuan",
+      "batch_id": "bnu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-bnu-rotation-003",
+      "source_ids": [
+        "bnu-rotation003-professors-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+        "native_link_target": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+        "source_ids": [
+          "bnu-rotation003-professors-roster",
+          "bnu-fuyuanyuan-profile"
+        ],
+        "note": "官方类别姓名直链至同名专业正文。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "官方类别姓名直链至同名专业正文。"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "bnu-selected-roster-rotation-003:roster-bnu-fuyuanyuan:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "bnu-rotation003-professors-roster",
+          "bnu-fuyuanyuan-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "official_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+        "reviewed_source_sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f",
+        "independent_review_sha256": "0e2a93122e67557a73bba57594f347d5b20c02d6f2d8b622b378545d243b85e5",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-ustc-liujianzhong",
+      "name": "刘建忠",
+      "school_id": "ustc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ustc-chemistry",
+      "department_id": "ustc-chemistry",
+      "category": "教授",
+      "listed_role": "特任教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+      "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "ustc-liujianzhong",
+      "source_person_id": "ustc-liujianzhong",
+      "batch_id": "ustc-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-ustc-rotation-003",
+      "source_ids": [
+        "ustc-chemistry-professors-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+        "native_link_target": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+        "source_ids": [
+          "ustc-chemistry-professors-roster",
+          "ustc-liujianzhong-profile"
+        ],
+        "note": "教授类别原序姓名直链同名官方专业正文。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+        "教授类别原序姓名直链同名官方专业正文。"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "ustc-selected-roster-rotation-003:roster-ustc-liujianzhong:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "ustc-chemistry-professors-roster",
+          "ustc-liujianzhong-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "official_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+        "reviewed_source_sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032",
+        "independent_review_sha256": "d0769d51e89e50efbfd4749cc8b984368d8f894696f2b2129e80309ef7f7ae01",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-ustc-zhuoqingde",
+      "name": "卓庆德",
+      "school_id": "ustc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ustc-chemistry",
+      "department_id": "ustc-chemistry",
+      "category": "教授",
+      "listed_role": "特任教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+      "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "ustc-zhuoqingde",
+      "source_person_id": "ustc-zhuoqingde",
+      "batch_id": "ustc-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-ustc-rotation-003",
+      "source_ids": [
+        "ustc-chemistry-professors-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+        "native_link_target": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+        "source_ids": [
+          "ustc-chemistry-professors-roster",
+          "ustc-zhuoqingde-profile"
+        ],
+        "note": "教授类别原序姓名直链同名官方专业正文。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+        "教授类别原序姓名直链同名官方专业正文。"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "ustc-selected-roster-rotation-003:roster-ustc-zhuoqingde:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "ustc-chemistry-professors-roster",
+          "ustc-zhuoqingde-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "official_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+        "reviewed_source_sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032",
+        "independent_review_sha256": "d0769d51e89e50efbfd4749cc8b984368d8f894696f2b2129e80309ef7f7ae01",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-ustc-songlei",
+      "name": "宋磊",
+      "school_id": "ustc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ustc-chemistry",
+      "department_id": "ustc-chemistry",
+      "category": "教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+      "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "ustc-songlei",
+      "source_person_id": "ustc-songlei",
+      "batch_id": "ustc-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-ustc-rotation-003",
+      "source_ids": [
+        "ustc-chemistry-professors-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+      "source_identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "profile_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+        "native_link_target": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+        "source_ids": [
+          "ustc-chemistry-professors-roster",
+          "ustc-songlei-profile"
+        ],
+        "note": "教授类别原序姓名直链同名官方专业正文。"
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+        "教授类别原序姓名直链同名官方专业正文。"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "ustc-selected-roster-rotation-003:roster-ustc-songlei:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_explicit_profile_link",
+        "source_ids": [
+          "ustc-chemistry-professors-roster",
+          "ustc-songlei-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "official_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+        "reviewed_source_sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032",
+        "independent_review_sha256": "d0769d51e89e50efbfd4749cc8b984368d8f894696f2b2129e80309ef7f7ae01",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
     }
   ],
   "conflicts": [
@@ -66427,27 +67060,123 @@
         }
       ],
       "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "fdu-selected-roster-rotation-003",
+      "school_id": "fdu",
+      "accessed_on": "2026-10-24",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-fdu-chenxueming",
+        "roster-fdu-chenzhonghe",
+        "roster-fdu-dongyahua"
+      ],
+      "source_observation_ids": [
+        "fdu-selected-roster-rotation-003:roster-fdu-chenxueming:1",
+        "fdu-selected-roster-rotation-003:roster-fdu-chenzhonghe:1",
+        "fdu-selected-roster-rotation-003:roster-fdu-dongyahua:1"
+      ],
+      "selection": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "selection_basis": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-fdu-rotation-003.json",
+          "sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "bnu-selected-roster-rotation-003",
+      "school_id": "bnu",
+      "accessed_on": "2026-10-24",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-bnu-dongleiming",
+        "roster-bnu-fuchangbo",
+        "roster-bnu-fuyuanyuan"
+      ],
+      "source_observation_ids": [
+        "bnu-selected-roster-rotation-003:roster-bnu-dongleiming:1",
+        "bnu-selected-roster-rotation-003:roster-bnu-fuchangbo:1",
+        "bnu-selected-roster-rotation-003:roster-bnu-fuyuanyuan:1"
+      ],
+      "selection": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "selection_basis": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-bnu-rotation-003.json",
+          "sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "ustc-selected-roster-rotation-003",
+      "school_id": "ustc",
+      "accessed_on": "2026-10-24",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-ustc-liujianzhong",
+        "roster-ustc-zhuoqingde",
+        "roster-ustc-songlei"
+      ],
+      "source_observation_ids": [
+        "ustc-selected-roster-rotation-003:roster-ustc-liujianzhong:1",
+        "ustc-selected-roster-rotation-003:roster-ustc-zhuoqingde:1",
+        "ustc-selected-roster-rotation-003:roster-ustc-songlei:1"
+      ],
+      "selection": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+      "selection_basis": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-ustc-rotation-003.json",
+          "sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
     }
   ],
   "totals": {
-    "organization_count": 127,
-    "category_count": 191,
-    "entries_with_profile_link": 1520,
+    "organization_count": 130,
+    "category_count": 194,
+    "entries_with_profile_link": 1529,
     "entries_without_profile_link": 210,
     "dedup_candidate_groups": 60,
     "placeholder_profile_link_observations": 18,
     "current_employment_count_verified": false,
     "not_unique_people_count": true,
-    "record_count": 1730,
-    "raw_observation_count": 1768,
-    "roster_records": 1730,
-    "raw_source_observations": 1768,
-    "coverage_unit_count": 218,
+    "record_count": 1739,
+    "raw_observation_count": 1777,
+    "roster_records": 1739,
+    "raw_source_observations": 1777,
+    "coverage_unit_count": 221,
     "count_unit": "integrated_roster_records",
     "source_record_grouping_reduction": 38,
     "category_count_basis": "unique_organization_category_pairs",
-    "unique_organization_category_pairs": 191,
-    "batch_category_count": 210,
+    "unique_organization_category_pairs": 194,
+    "batch_category_count": 213,
     "category_count_source": "coverage_rows_preserved_without_deduplication"
   },
   "role_interpretation": {
@@ -120987,6 +121716,609 @@
         },
         "independent_person_identity_reviewed": true,
         "roster_profile_association_status": "conservative_unlinked_sampling_roster_no_current_department_match_claim"
+      }
+    },
+    {
+      "observation_id": "fdu-selected-roster-rotation-003:roster-fdu-chenxueming:1",
+      "record_id": "roster-fdu-chenxueming",
+      "batch_id": "fdu-selected-roster-rotation-003",
+      "school_id": "fdu",
+      "organization_id": "fdu-marxism",
+      "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-fdu-chenxueming",
+        "name": "陈学明",
+        "school_id": "fdu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "fdu-marxism",
+        "department_id": "fdu-marxism",
+        "category": "教授",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+        "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "fdu-chenxueming",
+        "source_person_id": "fdu-chenxueming",
+        "batch_id": "fdu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-fdu-rotation-003",
+        "source_ids": [
+          "fdu-rotation003-professors-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+          "profile_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+          "native_link_target": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+          "source_ids": [
+            "fdu-rotation003-professors-roster",
+            "fdu-chenxueming-profile"
+          ],
+          "note": "官方类别姓名直链至同名专业正文。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+          "官方类别姓名直链至同名专业正文。"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "fdu-rotation003-professors-roster",
+            "fdu-chenxueming-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+          "official_url": "https://som.fudan.edu.cn/3f/a5/c16072a409509/page.htm",
+          "reviewed_source_sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab",
+          "independent_review_sha256": "23d85f1f2b9b52e90d5ac87f60617affee86e50c0268c7f2538406f408d7aaf8",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "fdu-selected-roster-rotation-003:roster-fdu-chenzhonghe:1",
+      "record_id": "roster-fdu-chenzhonghe",
+      "batch_id": "fdu-selected-roster-rotation-003",
+      "school_id": "fdu",
+      "organization_id": "fdu-marxism",
+      "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-fdu-chenzhonghe",
+        "name": "谌中和",
+        "school_id": "fdu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "fdu-marxism",
+        "department_id": "fdu-marxism",
+        "category": "教授",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+        "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "fdu-chenzhonghe",
+        "source_person_id": "fdu-chenzhonghe",
+        "batch_id": "fdu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-fdu-rotation-003",
+        "source_ids": [
+          "fdu-rotation003-professors-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+          "profile_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+          "native_link_target": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+          "source_ids": [
+            "fdu-rotation003-professors-roster",
+            "fdu-chenzhonghe-profile"
+          ],
+          "note": "官方类别姓名直链至同名专业正文。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+          "官方类别姓名直链至同名专业正文。"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "fdu-rotation003-professors-roster",
+            "fdu-chenzhonghe-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+          "official_url": "https://som.fudan.edu.cn/74/49/c16072a160841/page.htm",
+          "reviewed_source_sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab",
+          "independent_review_sha256": "23d85f1f2b9b52e90d5ac87f60617affee86e50c0268c7f2538406f408d7aaf8",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "fdu-selected-roster-rotation-003:roster-fdu-dongyahua:1",
+      "record_id": "roster-fdu-dongyahua",
+      "batch_id": "fdu-selected-roster-rotation-003",
+      "school_id": "fdu",
+      "organization_id": "fdu-marxism",
+      "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-fdu-dongyahua",
+        "name": "董雅华",
+        "school_id": "fdu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "fdu-marxism",
+        "department_id": "fdu-marxism",
+        "category": "教授",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+        "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "fdu-dongyahua",
+        "source_person_id": "fdu-dongyahua",
+        "batch_id": "fdu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-fdu-rotation-003",
+        "source_ids": [
+          "fdu-rotation003-professors-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://som.fudan.edu.cn/szll/list.htm",
+          "profile_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "native_link_target": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "source_ids": [
+            "fdu-rotation003-professors-roster",
+            "fdu-dongyahua-profile"
+          ],
+          "note": "FDU董雅华同一名录的按拼音及教研室视图提供姓名直链；教授视图同名条目无链接。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "马克思主义学院官方“教授”类别可见27名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+          "FDU董雅华同一名录的按拼音及教研室视图提供姓名直链；教授视图同名条目无链接。"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "fdu-rotation003-professors-roster",
+            "fdu-dongyahua-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://som.fudan.edu.cn/szll/list.htm",
+          "official_url": "https://som.fudan.edu.cn/74/4a/c16072a160842/page.htm",
+          "reviewed_source_sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab",
+          "independent_review_sha256": "23d85f1f2b9b52e90d5ac87f60617affee86e50c0268c7f2538406f408d7aaf8",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "bnu-selected-roster-rotation-003:roster-bnu-dongleiming:1",
+      "record_id": "roster-bnu-dongleiming",
+      "batch_id": "bnu-selected-roster-rotation-003",
+      "school_id": "bnu",
+      "organization_id": "bnu-sociology",
+      "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-bnu-dongleiming",
+        "name": "董磊明",
+        "school_id": "bnu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "bnu-sociology",
+        "department_id": "bnu-sociology",
+        "category": "MSW导师 / 教授（按照姓名拼音排序）",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+        "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "bnu-dongleiming",
+        "source_person_id": "bnu-dongleiming",
+        "batch_id": "bnu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-bnu-rotation-003",
+        "source_ids": [
+          "bnu-rotation003-professors-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+          "profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "native_link_target": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "source_ids": [
+            "bnu-rotation003-professors-roster",
+            "bnu-dongleiming-profile"
+          ],
+          "note": "官方类别姓名直链至同名专业正文。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+          "官方类别姓名直链至同名专业正文。"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "bnu-rotation003-professors-roster",
+            "bnu-dongleiming-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+          "official_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/ac0d277d92a748068a14e5b21f40c3b2.htm",
+          "reviewed_source_sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f",
+          "independent_review_sha256": "0e2a93122e67557a73bba57594f347d5b20c02d6f2d8b622b378545d243b85e5",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "bnu-selected-roster-rotation-003:roster-bnu-fuchangbo:1",
+      "record_id": "roster-bnu-fuchangbo",
+      "batch_id": "bnu-selected-roster-rotation-003",
+      "school_id": "bnu",
+      "organization_id": "bnu-sociology",
+      "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-bnu-fuchangbo",
+        "name": "傅昌波",
+        "school_id": "bnu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "bnu-sociology",
+        "department_id": "bnu-sociology",
+        "category": "MSW导师 / 教授（按照姓名拼音排序）",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+        "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "bnu-fuchangbo",
+        "source_person_id": "bnu-fuchangbo",
+        "batch_id": "bnu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-bnu-rotation-003",
+        "source_ids": [
+          "bnu-rotation003-professors-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+          "profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "native_link_target": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "source_ids": [
+            "bnu-rotation003-professors-roster",
+            "bnu-fuchangbo-profile"
+          ],
+          "note": "官方类别姓名直链至同名专业正文。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+          "官方类别姓名直链至同名专业正文。"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "bnu-rotation003-professors-roster",
+            "bnu-fuchangbo-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+          "official_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/a55355ea1ddb4017be29e85666f28618.htm",
+          "reviewed_source_sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f",
+          "independent_review_sha256": "0e2a93122e67557a73bba57594f347d5b20c02d6f2d8b622b378545d243b85e5",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "bnu-selected-roster-rotation-003:roster-bnu-fuyuanyuan:1",
+      "record_id": "roster-bnu-fuyuanyuan",
+      "batch_id": "bnu-selected-roster-rotation-003",
+      "school_id": "bnu",
+      "organization_id": "bnu-sociology",
+      "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-bnu-fuyuanyuan",
+        "name": "付媛媛",
+        "school_id": "bnu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "bnu-sociology",
+        "department_id": "bnu-sociology",
+        "category": "MSW导师 / 教授（按照姓名拼音排序）",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+        "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "bnu-fuyuanyuan",
+        "source_person_id": "bnu-fuyuanyuan",
+        "batch_id": "bnu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-bnu-rotation-003",
+        "source_ids": [
+          "bnu-rotation003-professors-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+          "profile_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "native_link_target": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "source_ids": [
+            "bnu-rotation003-professors-roster",
+            "bnu-fuyuanyuan-profile"
+          ],
+          "note": "官方类别姓名直链至同名专业正文。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "社会学院官方“MSW导师 / 教授（按照姓名拼音排序）”类别可见19名，原序首3；仅3份部分公开职业档案，不代表全院、全校或实时在岗覆盖。",
+          "官方类别姓名直链至同名专业正文。"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "bnu-rotation003-professors-roster",
+            "bnu-fuyuanyuan-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://soc.bnu.edu.cn/szdw/MSWds/index.htm",
+          "official_url": "https://soc.bnu.edu.cn/szdw/zzjs/js/163cbfa903f8467f851adbcdd0d51605.htm",
+          "reviewed_source_sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f",
+          "independent_review_sha256": "0e2a93122e67557a73bba57594f347d5b20c02d6f2d8b622b378545d243b85e5",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "ustc-selected-roster-rotation-003:roster-ustc-liujianzhong:1",
+      "record_id": "roster-ustc-liujianzhong",
+      "batch_id": "ustc-selected-roster-rotation-003",
+      "school_id": "ustc",
+      "organization_id": "ustc-chemistry",
+      "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-ustc-liujianzhong",
+        "name": "刘建忠",
+        "school_id": "ustc",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "ustc-chemistry",
+        "department_id": "ustc-chemistry",
+        "category": "教授",
+        "listed_role": "特任教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+        "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "ustc-liujianzhong",
+        "source_person_id": "ustc-liujianzhong",
+        "batch_id": "ustc-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-ustc-rotation-003",
+        "source_ids": [
+          "ustc-chemistry-professors-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+          "profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "native_link_target": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "source_ids": [
+            "ustc-chemistry-professors-roster",
+            "ustc-liujianzhong-profile"
+          ],
+          "note": "教授类别原序姓名直链同名官方专业正文。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+          "教授类别原序姓名直链同名官方专业正文。"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "ustc-chemistry-professors-roster",
+            "ustc-liujianzhong-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+          "official_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673524/page.htm",
+          "reviewed_source_sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032",
+          "independent_review_sha256": "d0769d51e89e50efbfd4749cc8b984368d8f894696f2b2129e80309ef7f7ae01",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "ustc-selected-roster-rotation-003:roster-ustc-zhuoqingde:1",
+      "record_id": "roster-ustc-zhuoqingde",
+      "batch_id": "ustc-selected-roster-rotation-003",
+      "school_id": "ustc",
+      "organization_id": "ustc-chemistry",
+      "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-ustc-zhuoqingde",
+        "name": "卓庆德",
+        "school_id": "ustc",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "ustc-chemistry",
+        "department_id": "ustc-chemistry",
+        "category": "教授",
+        "listed_role": "特任教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+        "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "ustc-zhuoqingde",
+        "source_person_id": "ustc-zhuoqingde",
+        "batch_id": "ustc-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-ustc-rotation-003",
+        "source_ids": [
+          "ustc-chemistry-professors-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+          "profile_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "native_link_target": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "source_ids": [
+            "ustc-chemistry-professors-roster",
+            "ustc-zhuoqingde-profile"
+          ],
+          "note": "教授类别原序姓名直链同名官方专业正文。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+          "教授类别原序姓名直链同名官方专业正文。"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "ustc-chemistry-professors-roster",
+            "ustc-zhuoqingde-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+          "official_url": "https://chem.ustc.edu.cn/2025/0202/c2474a673523/page.htm",
+          "reviewed_source_sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032",
+          "independent_review_sha256": "d0769d51e89e50efbfd4749cc8b984368d8f894696f2b2129e80309ef7f7ae01",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "ustc-selected-roster-rotation-003:roster-ustc-songlei:1",
+      "record_id": "roster-ustc-songlei",
+      "batch_id": "ustc-selected-roster-rotation-003",
+      "school_id": "ustc",
+      "organization_id": "ustc-chemistry",
+      "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-ustc-songlei",
+        "name": "宋磊",
+        "school_id": "ustc",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "ustc-chemistry",
+        "department_id": "ustc-chemistry",
+        "category": "教授",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+        "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "ustc-songlei",
+        "source_person_id": "ustc-songlei",
+        "batch_id": "ustc-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-ustc-rotation-003",
+        "source_ids": [
+          "ustc-chemistry-professors-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+        "source_identity_evidence": {
+          "status": "official_roster_explicit_profile_link",
+          "source_url": "https://chem.ustc.edu.cn/js/list.htm",
+          "profile_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "native_link_target": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "source_ids": [
+            "ustc-chemistry-professors-roster",
+            "ustc-songlei-profile"
+          ],
+          "note": "教授类别原序姓名直链同名官方专业正文。"
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "化学系教授类别第一页原序首3刘建忠、卓庆德、宋磊；仅3份部分职业档案，非全系全校覆盖。第一页14项并声明37总数，后二页14和12项并声明40；跨页观察40个不同姓名但总数矛盾保留，不当作现有人事总数。",
+          "教授类别原序姓名直链同名官方专业正文。"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_explicit_profile_link",
+          "source_ids": [
+            "ustc-chemistry-professors-roster",
+            "ustc-songlei-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://chem.ustc.edu.cn/js/list.htm",
+          "official_url": "https://chem.ustc.edu.cn/2024/0320/c2474a633311/page.htm",
+          "reviewed_source_sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032",
+          "independent_review_sha256": "d0769d51e89e50efbfd4749cc8b984368d8f894696f2b2129e80309ef7f7ae01",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
       }
     }
   ],

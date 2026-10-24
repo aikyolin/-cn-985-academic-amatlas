@@ -1,3 +1,4 @@
+const RELEASE27_PIN_OVERLAY={"data/atlas.json": "602e459ef4bc62aa839e8eff7475819f5a6672e1492b1181ac9188372fe9d1c5", "data/rosters.json": "217716511dc290970fd8708af5cacebaf5f1343b1ec671515b5048e5f81dabec", "site/atlas.json": "1d2e8210a0ca6d60b874d793bd77e49de7da6f845493eb6912b0f4861e57afa2", "site/rosters.json": "4971f6b3812c6f8d133fd0aba909e65f2209b72cfb0d37e668c62531ec0446cc"};
 const RELEASE26_PIN_OVERLAY={"data/rosters.json": "0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f", "site/index.html": "a6e57e88a623157fd3103a6099b9e72b21a0435c9fa62530a41469814844242c", "site/app.js": "19945c1392982e4b3a1df95d93c271e957bf16b2a238f8d63d24ed892c722dea", "site/rosters.js": "d060662fe29e2d5209ca7cabd89121f253c6df69878d776e652f2fe8f8eb45a9"};
 import {release25View} from './release-history.js';
 // Focused offline consumer tests for two evidence-bound teaching-role aliases.
@@ -109,7 +110,7 @@ test('all degree-stage memberships and 122 filter combinations are unchanged by 
 });
 
 test('application and exporter match original bytes or the exact reviewed layout-only overlay',()=>{
- for(const [file,digest]of Object.entries(UNCHANGED_FILES))assert.equal(sha(fs.readFileSync(path.join(root,file))),RELEASE26_PIN_OVERLAY[file]||LAYOUT_FIX_APPLICATION_SHA256[file]||digest,file);
+ for(const [file,digest]of Object.entries(UNCHANGED_FILES))assert.equal(sha(fs.readFileSync(path.join(root,file))),RELEASE27_PIN_OVERLAY[file]||RELEASE26_PIN_OVERLAY[file]||LAYOUT_FIX_APPLICATION_SHA256[file]||digest,file);
  for(const [file,n]of [['site/app.js',3],['site/rosters.js',1],['site/index.html',2]])assert.equal(fs.readFileSync(path.join(root,file),'utf8').split('rotation003-20261024-w2').length-1,n);
 });
 

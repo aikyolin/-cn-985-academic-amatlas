@@ -224,6 +224,8 @@ def assert_alias_contract(person):
 
 # Exact live release26 overlays; original golden constants remain above.
 RELEASE26_PIN_OVERLAY={'data/rosters.json': '0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f', 'site/exports/待核对名录.xlsx': '6e01fe76a8b3620f51e3a0ec68b27d1fa5a81ff3427ddfb266efd2e03235176a', 'site/index.html': 'a6e57e88a623157fd3103a6099b9e72b21a0435c9fa62530a41469814844242c', 'site/app.js': '19945c1392982e4b3a1df95d93c271e957bf16b2a238f8d63d24ed892c722dea', 'site/rosters.js': 'd060662fe29e2d5209ca7cabd89121f253c6df69878d776e652f2fe8f8eb45a9'}
+# Exact release27 endpoint overlay; all earlier golden constants remain unchanged.
+RELEASE27_PIN_OVERLAY={'site/atlas.json': '1d2e8210a0ca6d60b874d793bd77e49de7da6f845493eb6912b0f4861e57afa2', 'site/rosters.json': '4971f6b3812c6f8d133fd0aba909e65f2209b72cfb0d37e668c62531ec0446cc', 'data/atlas.json': '602e459ef4bc62aa839e8eff7475819f5a6672e1492b1181ac9188372fe9d1c5', 'data/rosters.json': '217716511dc290970fd8708af5cacebaf5f1343b1ec671515b5048e5f81dabec', 'progress/README.md': '08617604707fff4e8121cdd13b08ef3a92e96aa1df2b38cc9cad9f91cc5b1cc6', 'progress/current-coverage.md': 'f92a7728e5c329e0c203fa1c04910d485b496c83f1756728bf9bbd5dc7b55d4a', 'progress/work-queue.json': '88037ab5e76bb2744eaa5b5dc9601d5e1e375b31e3c3f33116e8eeb3a1fd1f60', 'site/exports/待核对名录.xlsx': '9100c6cf6a1a5b6128737e49ef0f79efa49779739efd11bafbf12dfa05917972', 'site/exports/待核对名录.csv': '2e14625fd76a04d5fa29ee4621669dd8b496ca26fbabb41df20043169f1fa78c'}
 class Rotation003Wave1DisplayFixTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -253,7 +255,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
 
     def test_04_application_exporter_and_tokens_have_only_reviewed_layout_overlay(self):
         for file,digest in UNCHANGED_FILES.items():
-            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)),file)
+            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest))),file)
         for file,count in [('site/app.js',3),('site/rosters.js',1),('site/index.html',2)]:
             self.assertEqual((ROOT/file).read_text().count('rotation003-20261024-w2'),count)
 
@@ -314,7 +316,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
         self.assertEqual(len(UNCHANGED_DEPARTMENT_WORKBOOKS),110)
         for file,digest in UNCHANGED_DEPARTMENT_WORKBOOKS.items():
             self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest,file)
-        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),RELEASE26_PIN_OVERLAY['site/exports/待核对名录.xlsx'])
+        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),RELEASE27_PIN_OVERLAY['site/exports/待核对名录.xlsx'])
 
     def test_11_alias_guard_rejects_every_added_leaf_mutation_and_cross_source_swap(self):
         paths=[(key,)for key in ROLE_KEYS]+[('field_provenance','role'),('field_status','role')]
