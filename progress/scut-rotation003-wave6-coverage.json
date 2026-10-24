@@ -1,0 +1,298 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "151fa84f9a732b253efc180b6cedf48e19740620",
+  "school_id": "scut",
+  "school_name": "华南理工大学",
+  "batch_id": "faculty-batch-scut-rotation-003",
+  "status": "partial",
+  "held_candidates": [],
+  "selected_candidate_names": [
+    "边宇",
+    "陈建华",
+    "陈昌勇"
+  ],
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "建筑学院 / 专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+  "selection_method": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+  "source_urls": [
+    "https://www2.scut.edu.cn/architecture/zrjs/list.htm"
+  ],
+  "selected_roster_observations": 3,
+  "source_category_observed_count": 25,
+  "source_category_count_basis": "官方类别页正文“总共25记录”，页码1/1；非独立人事人数。",
+  "source_total_reported": 25,
+  "selected_roster_original_order": [
+    {
+      "id": "roster-scut-bianyu",
+      "school_id": "scut",
+      "name": "边宇",
+      "department_id": "scut-architecture-department",
+      "organization_id": "scut-architecture-department",
+      "campus_ids": [],
+      "campus_id": null,
+      "official_profile_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+      "native_link_target": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+      "roster_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+      "order": 1,
+      "roster_category": "专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "listed_role": "教授、博士生导师",
+      "listed_role_source_id": "scut-bianyu-profile"
+    },
+    {
+      "id": "roster-scut-chenjianhua",
+      "school_id": "scut",
+      "name": "陈建华",
+      "department_id": "scut-architecture-department",
+      "organization_id": "scut-architecture-department",
+      "campus_ids": [],
+      "campus_id": null,
+      "official_profile_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+      "native_link_target": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+      "roster_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+      "order": 2,
+      "roster_category": "专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "listed_role": "教授",
+      "listed_role_source_id": "scut-chenjianhua-profile"
+    },
+    {
+      "id": "roster-scut-chenchangyong",
+      "school_id": "scut",
+      "name": "陈昌勇",
+      "department_id": "scut-architecture-department",
+      "organization_id": "scut-architecture-department",
+      "campus_ids": [],
+      "campus_id": null,
+      "official_profile_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+      "native_link_target": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+      "roster_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+      "order": 3,
+      "roster_category": "专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "listed_role": "教授",
+      "listed_role_source_id": "scut-chenchangyong-profile"
+    }
+  ],
+  "counts": {
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "held": 0,
+    "source_collections": {
+      "education": 9,
+      "appointments": 14,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "research_fields": 9,
+      "teaching": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "academic_service": 0,
+      "professional_qualifications": 2,
+      "research_collaborators": 0,
+      "professional_research_advisors": 0,
+      "project_guidance": 0,
+      "pending_education_candidates": 0,
+      "pending_mentor_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 2,
+      "degree_awarded_false": 1,
+      "degree_awarded_null": 6,
+      "confirmed_degree_events": 2
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-scut-rotation-003.json",
+      "sha256": "b9d6f12723ee263cbbb5d906db58d196bdc59f474a198cc411d2a6d3ed123f70",
+      "independent_review_file": "faculty-batch-scut-rotation-003-independent-review.json",
+      "independent_review_sha256": "b0d3a97d62041d6a0a0663ea5d939c22a6d55c0f9aef0cb307ab6126409f3443",
+      "scope_file": "faculty-batch-scut-rotation-003-scope.json",
+      "scope_sha256": "befb77a83682d9bd467f0b6fc8e0145a0a3b4ac5868d3caf9c3c529c9dac0950",
+      "qa_file": "faculty-batch-scut-rotation-003-qa.json",
+      "qa_sha256": "890a8a12c81f2c184a4b639b4b0e5121c17b80640621e198645b15d09647cfac"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-scut-rotation-003",
+    "base_commit": "151fa84f9a732b253efc180b6cedf48e19740620",
+    "institution": {
+      "id": "scut",
+      "official_name": "华南理工大学",
+      "official_url": "https://www.scut.edu.cn/",
+      "source_urls": [
+        "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "https://www2.scut.edu.cn/architecture/jzx/list.htm"
+      ],
+      "scope_note": "建筑学院建筑系正高级类别官方原序首3；不是全院全校覆盖。"
+    },
+    "org_units": [
+      {
+        "id": "scut-architecture",
+        "school_id": "scut",
+        "name": "建筑学院",
+        "type": "school",
+        "parent_id": "scut",
+        "campus_ids": [],
+        "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "source_id": "scut-rotation003-roster",
+        "evidence_status": "official_roster_body_read"
+      },
+      {
+        "id": "scut-architecture-department",
+        "school_id": "scut",
+        "name": "建筑系",
+        "type": "department",
+        "parent_id": "scut-architecture",
+        "campus_ids": [],
+        "source_url": "https://www2.scut.edu.cn/architecture/jzx/list.htm",
+        "source_id": "scut-rotation003-hierarchy",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "建筑学院 / 专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+    "retrieved_at": "2026-10-24",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "scut-rotation003-roster",
+        "url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "public_raw_cache": false,
+        "source_type": "university_official",
+        "web_reference": "turn2254view0",
+        "evidence_file": "research-rotation003-csu-scut/scut/roster-minimal.json"
+      },
+      {
+        "id": "scut-rotation003-hierarchy",
+        "url": "https://www2.scut.edu.cn/architecture/jzx/list.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "public_raw_cache": false,
+        "source_type": "university_official",
+        "web_reference": "turn2259view0",
+        "evidence_file": "research-rotation003-csu-scut/scut/hierarchy-minimal.json"
+      },
+      {
+        "id": "scut-bianyu-profile",
+        "url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": "2026-03-18",
+        "public_raw_cache": false,
+        "source_type": "university_official",
+        "web_reference": "turn2255view0",
+        "evidence_file": "research-rotation003-csu-scut/scut/scut-bianyu-minimal.json"
+      },
+      {
+        "id": "scut-chenjianhua-profile",
+        "url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": "2024-08-30",
+        "public_raw_cache": false,
+        "source_type": "university_official",
+        "web_reference": "turn2255view1",
+        "evidence_file": "research-rotation003-csu-scut/scut/scut-chenjianhua-minimal.json"
+      },
+      {
+        "id": "scut-chenchangyong-profile",
+        "url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": "2023-06-12",
+        "public_raw_cache": false,
+        "source_type": "university_official",
+        "web_reference": "turn2255view2",
+        "evidence_file": "research-rotation003-csu-scut/scut/scut-chenchangyong-minimal.json"
+      }
+    ],
+    "pending_people": [],
+    "limitations": [
+      "本批只覆盖一个新院系类别的原序首3，不代表完整院系或全校覆盖。",
+      "名录列示、个人页导航和来源自述的现职区间不等于独立实时在岗核验。",
+      "学士/硕士/博士标签及毕业不自动确认授位；只有明确“获…学位”记 true；非授位经历记 false，其他为 null。",
+      "未直接核到导师关系，全部留空；不从合著、项目或本人指导学生的身份推断师承。",
+      "日期冲突保留并列证据，发布日期按正文，不从URL路径日期推断。",
+      "教育机构985与地理标准化留待集成独审，本研究包使用显式 unknown，不冒充已做标准化核验。",
+      "论文、教学、项目和荣誉未穷尽；仅保存必要职业事实证据摘录，不存整页、原始简历或个人私密字段。"
+    ],
+    "counts": {
+      "people": 3,
+      "held": 0,
+      "pending_people": 0,
+      "education_events": 9,
+      "awarded_degree_events": 2,
+      "mentors": 0
+    }
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T02:32:42.186192+00:00",
+    "data_sha256": "b9d6f12723ee263cbbb5d906db58d196bdc59f474a198cc411d2a6d3ed123f70",
+    "counts": {
+      "education": 9,
+      "appointments": 14,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "honors": 0,
+      "research_fields": 9,
+      "teaching": 0,
+      "research_projects": 0,
+      "academic_service": 0,
+      "professional_qualifications": 2,
+      "pending_education_candidates": 0,
+      "pending_mentor_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "people": 3,
+      "held": 0,
+      "pending_people": 0,
+      "unique_sources": 5,
+      "degree_awarded_true": 2,
+      "degree_awarded_false": 1,
+      "degree_awarded_null": 6
+    },
+    "integration_limits": [
+      "只批准精确哈希的限定事实；本审不是消费者schema、站点、导出或远端发布审核。",
+      "原序、选样、名录可见条目数与当前人事人数分别记录；不声称全院或全校完整。",
+      "授位true、false、null三态以及博士后、访问、学习、资格标签、任职和课程保持区分。",
+      "当前官网列示不等独立实时人事证明；个人主页可导航不等在职导师快捷链接。",
+      "不补未披露的校区、学位、专业、导师、精确日期或同名身份。未采集某字段不代表不存在。",
+      "来源差异须保留；历史标题、当前标题与同一博士后跨教育/任职表示不可重复计算为独立工作或学位。",
+      "985、地域与洲分类源包unknown；只有经已有来源映射和独立整合审核才能标准化，不得在本审名义下猜测郭光华俄校唯一实体或郭爱敏加州分校。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "本批只覆盖一个新院系类别的原序首3，不代表完整院系或全校覆盖。",
+    "名录列示、个人页导航和来源自述的现职区间不等于独立实时在岗核验。",
+    "学士/硕士/博士标签及毕业不自动确认授位；只有明确“获…学位”记 true；非授位经历记 false，其他为 null。",
+    "未直接核到导师关系，全部留空；不从合著、项目或本人指导学生的身份推断师承。",
+    "日期冲突保留并列证据，发布日期按正文，不从URL路径日期推断。",
+    "教育机构985与地理标准化留待集成独审，本研究包使用显式 unknown，不冒充已做标准化核验。",
+    "论文、教学、项目和荣誉未穷尽；仅保存必要职业事实证据摘录，不存整页、原始简历或个人私密字段。",
+    "只批准精确哈希的限定事实；本审不是消费者schema、站点、导出或远端发布审核。",
+    "原序、选样、名录可见条目数与当前人事人数分别记录；不声称全院或全校完整。",
+    "授位true、false、null三态以及博士后、访问、学习、资格标签、任职和课程保持区分。",
+    "当前官网列示不等独立实时人事证明；个人主页可导航不等在职导师快捷链接。",
+    "不补未披露的校区、学位、专业、导师、精确日期或同名身份。未采集某字段不代表不存在。",
+    "来源差异须保留；历史标题、当前标题与同一博士后跨教育/任职表示不可重复计算为独立工作或学位。",
+    "985、地域与洲分类源包unknown；只有经已有来源映射和独立整合审核才能标准化，不得在本审名义下猜测郭光华俄校唯一实体或郭爱敏加州分校。"
+  ],
+  "next_action": "保留原序与hold，不替补、不重试受限路线；追加核验须另获授权，不声称完整院系。",
+  "display_scope": "研究项目、荣誉与职业资格逐字段保留于结构化数据，本版本无专用页面或Excel列；不混入教育、任职、师承或论文统计。",
+  "classification_scope": "原包显式unknown的985/地域/洲分类保持未知；未用名称猜测俄校实体或加州分校。",
+  "release_status": "local_not_published"
+}

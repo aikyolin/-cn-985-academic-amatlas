@@ -19,7 +19,7 @@
     "链接为官方目录提供的地址；未逐个验证所有院系主页可访问性。",
     "深圳旧电子信息学院 eie.hitsz.edu.cn 主页两次抓取超时，改用官方目录已确认的集成电路学院名录，不涉及访问拒绝。"
   ],
-  "scope_note": "39校选中名录和部分职业资料，本批新增13部分职业，当前593职业、84待补；不代表全院全校或当前在岗覆盖。师承保留博士、硕士、联合培养与博士后阶段，候选书目不进确证论文。",
+  "scope_note": "39校公开职业资料样本，当前600职业、84待补；本批新增7部分职业，5个原序候选保留hold，不替补、不造pending；不表示全院全校或实时人事覆盖。",
   "campuses": [
     {
       "id": "harbin",
@@ -4170,6 +4170,50 @@
       "source_id": "sdu-rotation003-roster",
       "evidence_status": "official_roster_body_read",
       "campus_ids": []
+    },
+    {
+      "id": "csu-physics",
+      "name": "物理学院",
+      "type": "school",
+      "school_id": "csu",
+      "parent_id": "csu",
+      "campus_ids": [],
+      "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+      "source_id": "csu-rotation003-roster",
+      "evidence_status": "official_roster_body_read"
+    },
+    {
+      "id": "scut-architecture",
+      "school_id": "scut",
+      "name": "建筑学院",
+      "type": "school",
+      "parent_id": "scut",
+      "campus_ids": [],
+      "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+      "source_id": "scut-rotation003-roster",
+      "evidence_status": "official_roster_body_read"
+    },
+    {
+      "id": "scut-architecture-department",
+      "school_id": "scut",
+      "name": "建筑系",
+      "type": "department",
+      "parent_id": "scut-architecture",
+      "campus_ids": [],
+      "source_url": "https://www2.scut.edu.cn/architecture/jzx/list.htm",
+      "source_id": "scut-rotation003-hierarchy",
+      "evidence_status": "official_roster_body_read"
+    },
+    {
+      "id": "uestc-public-administration",
+      "name": "公共管理学院",
+      "type": "school",
+      "school_id": "uestc",
+      "parent_id": "uestc",
+      "campus_ids": [],
+      "source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+      "source_id": "uestc-rotation003-roster",
+      "evidence_status": "official_roster_body_read"
     }
   ],
   "people": [
@@ -200361,6 +200405,3904 @@
         "sdu-chenfeng-profile"
       ],
       "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "csu-fujunwei",
+      "name": "傅俊伟",
+      "school_id": "csu",
+      "department_id": "csu-physics",
+      "organization_id": "csu-physics",
+      "department": "物理学院",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-csu-physics-fujunwei",
+      "official_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+      "listed_role": "教授",
+      "listed_role_source_id": "csu-fujunwei-profile",
+      "listed_role_source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授：（含正高职称人员，按姓名拼音排序）",
+      "roster_category_source_id": "csu-rotation003-roster",
+      "selection_order": 1,
+      "sources": [
+        {
+          "id": "csu-rotation003-roster",
+          "url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+          "source_type": "university_official",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "web_reference": "turn2243view0",
+          "evidence_file": "research-rotation003-csu-scut/csu/csu-roster-minimal.json",
+          "public_raw_cache": false,
+          "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
+        },
+        {
+          "id": "csu-fujunwei-profile",
+          "url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+          "source_type": "university_official",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "web_reference": "turn2245view0",
+          "evidence_file": "research-rotation003-csu-scut/csu/csu-fujunwei-minimal.json",
+          "public_raw_cache": false,
+          "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "profile_coverage_label": "部分公开职业资料，学历、导师与时间线仍有未决项",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+        "profile_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+        "native_link_target": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+        "source_ids": [
+          "csu-rotation003-roster",
+          "csu-fujunwei-profile"
+        ]
+      },
+      "education": [
+        {
+          "event_id": "csu-fujunwei-education-1",
+          "institution": "武汉理工大学",
+          "field": "材料物理学",
+          "degree": "博士",
+          "source_reported_degree_label": "材料物理学博士",
+          "start": null,
+          "end": null,
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "csu-fujunwei-profile",
+          "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+          "source_ids": [
+            "csu-fujunwei-profile"
+          ],
+          "evidence_status": "official_public_body_read",
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_education_filters": false,
+          "note": "个人简介为博士资格标签，无直接授位动词；起止及授位日未核，不以2018年博士后起点推算博士毕业。；来源标注：材料物理学博士",
+          "field_provenance": {
+            "institution": "csu-fujunwei-profile",
+            "field": "csu-fujunwei-profile",
+            "degree": "csu-fujunwei-profile",
+            "source_reported_degree_label": "csu-fujunwei-profile",
+            "start": null,
+            "end": null,
+            "event_kind": "csu-fujunwei-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "field": "source_reported",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "event_kind": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "education_event_id": "csu-fujunwei-education-1",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "csu-fujunwei-profile"
+          ],
+          "source_note": "个人简介为博士资格标签，无直接授位动词；起止及授位日未核，不以2018年博士后起点推算博士毕业。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "csu-fujunwei-profile"
+          ]
+        },
+        {
+          "event_id": "csu-fujunwei-education-2",
+          "institution": "中南大学",
+          "field": "物理学",
+          "degree": "博士后",
+          "source_reported_degree_label": "博士后",
+          "start": "2018-07",
+          "end": "2020-07",
+          "event_kind": "postdoctoral_research",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "csu-fujunwei-profile",
+          "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+          "source_ids": [
+            "csu-fujunwei-profile"
+          ],
+          "evidence_status": "official_public_body_read",
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_education_filters": false,
+          "note": "工作经历明确博士后，不是博士学位。",
+          "field_provenance": {
+            "institution": "csu-fujunwei-profile",
+            "field": "csu-fujunwei-profile",
+            "degree": "csu-fujunwei-profile",
+            "source_reported_degree_label": "csu-fujunwei-profile",
+            "start": "csu-fujunwei-profile",
+            "end": "csu-fujunwei-profile",
+            "event_kind": "csu-fujunwei-profile",
+            "degree_awarded": "csu-fujunwei-profile",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "field": "source_reported",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_non_degree_event",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "education_event_id": "csu-fujunwei-education-2",
+          "source_event_kind": "postdoc",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "csu-fujunwei-profile"
+          ]
+        }
+      ],
+      "appointments": [
+        {
+          "event_id": "csu-fujunwei-appointment-1",
+          "institution": "中南大学 物理学院",
+          "title": "教授",
+          "start": "2024-09",
+          "end": null,
+          "current": true,
+          "status": "official_profile_explicitly_employed",
+          "personnel_status_verified": false,
+          "source_id": "csu-fujunwei-profile",
+          "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-fujunwei-profile",
+            "title": "csu-fujunwei-profile",
+            "start": "csu-fujunwei-profile",
+            "end": null,
+            "current": "csu-fujunwei-profile"
+          },
+          "note": "工作经历明确2024.9至今；页首入职日2020-09-09是学校入职日，不当教授起点。"
+        },
+        {
+          "event_id": "csu-fujunwei-appointment-2",
+          "institution": "中南大学 物理与电子学院",
+          "title": "特聘副教授",
+          "start": "2020-09",
+          "end": "2024-09",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "source_id": "csu-fujunwei-profile",
+          "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-fujunwei-profile",
+            "title": "csu-fujunwei-profile",
+            "start": "csu-fujunwei-profile",
+            "end": "csu-fujunwei-profile",
+            "current": "csu-fujunwei-profile"
+          },
+          "note": "保留当段来源院系称谓。"
+        },
+        {
+          "event_id": "csu-fujunwei-appointment-3",
+          "institution": "中南大学 物理学博士后流动站",
+          "title": "博士后",
+          "start": "2018-07",
+          "end": "2020-07",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "source_id": "csu-fujunwei-profile",
+          "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-fujunwei-profile",
+            "title": "csu-fujunwei-profile",
+            "start": "csu-fujunwei-profile",
+            "end": "csu-fujunwei-profile",
+            "current": "csu-fujunwei-profile"
+          },
+          "note": "与教育中的非授位博士后事件为同一经历，不重复计作学位。",
+          "linked_education_event_id": "csu-fujunwei-education-2"
+        }
+      ],
+      "mentors": [
+        {
+          "name": "余家国",
+          "type": "doctoral_supervisor",
+          "education_stage": "博士",
+          "education_event_id": "csu-fujunwei-education-1",
+          "description": "本人简介在武汉理工大学材料物理学博士标签后直接列导师。",
+          "relationship_status": "verified_direct_statement",
+          "source_id": "csu-fujunwei-profile",
+          "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+          "stage_source_id": "csu-fujunwei-profile",
+          "official_url": null,
+          "profile_source_url": null,
+          "profile_source_id": null,
+          "person_id": null,
+          "employment_status": "unknown",
+          "employment_status_note": "候选官方主页正文超时，搜索摘要不用于核验导师现职或导航。",
+          "navigation_verified": false,
+          "navigation_status": "official_profile_body_unavailable",
+          "start": null,
+          "end": null,
+          "date_basis": "具体指导日期未披露，不抄博士后区间。",
+          "include_in_mentorship_graph": true,
+          "include_in_current_faculty_count": false,
+          "field_provenance": {
+            "name": "csu-fujunwei-profile",
+            "type": "csu-fujunwei-profile",
+            "education_stage": "csu-fujunwei-profile",
+            "education_event_id": "csu-fujunwei-profile",
+            "start": null,
+            "end": null,
+            "employment_status": null,
+            "profile_source_url": null
+          },
+          "relationship_kind": "doctoral_advisor",
+          "type_label": "博士导师",
+          "include_in_verified_mentor_count": true,
+          "include_in_degree_mentorship_graph": true,
+          "quick_link_eligible": false,
+          "education_event_link_basis": "original_direct_doctoral_relationship_and_event_id",
+          "consumer_relationship_alias_source_ids": [
+            "csu-fujunwei-profile"
+          ]
+        }
+      ],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Theoretical Insights into the Selectivity of Single-Atom Fe–N–C Catalysts for Electrochemical NOx Reduction",
+          "year": 2025,
+          "venue": "Journal of the American Chemical Society",
+          "volume": "147(6)",
+          "doi": null,
+          "url": null,
+          "type": "journal_article",
+          "source_id": "csu-fujunwei-profile",
+          "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+          "evidence_status": "official_profile_bibliography_read",
+          "identity_evidence": {
+            "status": "listed_in_official_personal_bibliography",
+            "matched_author": "Junwei Fu",
+            "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+            "source_locator": "L79"
+          },
+          "link_status": "official_bibliography_only_no_individual_link_verified",
+          "publication_status": "published_as_reported_by_official_profile",
+          "note": "仅官网精选书目条目；未阅读全文、未独立核验出版商元数据，不推断DOI。",
+          "field_provenance": {
+            "title": "csu-fujunwei-profile",
+            "year": "csu-fujunwei-profile",
+            "venue": "csu-fujunwei-profile",
+            "volume": "csu-fujunwei-profile",
+            "type": "csu-fujunwei-profile",
+            "doi": null,
+            "url": null,
+            "pages": "csu-fujunwei-profile"
+          },
+          "pages": "4937-4944",
+          "type_label": "期刊论文",
+          "link_status_label": "仅本人官方精选书目，未核出版社单篇或全文；不推断DOI。",
+          "consumer_label_source_ids": [
+            "csu-fujunwei-profile"
+          ]
+        },
+        {
+          "title": "Sustainable conversion of alkaline nitrate to ammonia at activities greater than 2 A cm-2",
+          "year": 2024,
+          "venue": "Nature Communications",
+          "volume": "15",
+          "article_number": "1264",
+          "doi": null,
+          "url": null,
+          "type": "journal_article",
+          "source_id": "csu-fujunwei-profile",
+          "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+          "evidence_status": "official_profile_bibliography_read",
+          "identity_evidence": {
+            "status": "listed_in_official_personal_bibliography",
+            "matched_author": "Junwei Fu",
+            "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+            "source_locator": "L80"
+          },
+          "link_status": "official_bibliography_only_no_individual_link_verified",
+          "publication_status": "published_as_reported_by_official_profile",
+          "note": "仅官网精选书目条目；未阅读全文、未独立核验出版商元数据，不推断DOI。",
+          "field_provenance": {
+            "title": "csu-fujunwei-profile",
+            "year": "csu-fujunwei-profile",
+            "venue": "csu-fujunwei-profile",
+            "volume": "csu-fujunwei-profile",
+            "article_number": "csu-fujunwei-profile",
+            "type": "csu-fujunwei-profile",
+            "doi": null,
+            "url": null
+          },
+          "type_label": "期刊论文",
+          "link_status_label": "仅本人官方精选书目，未核出版社单篇或全文；不推断DOI。",
+          "consumer_label_source_ids": [
+            "csu-fujunwei-profile"
+          ]
+        }
+      ],
+      "research_fields": [
+        "微纳催化器件",
+        "高分辨空间光电原位成像技术"
+      ],
+      "honors": [],
+      "academic_service": [],
+      "teaching": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "unknowns": [
+        "本科、硕士未在已读本人主页披露；不造缺失学位事件。",
+        "博士起止、授位事实与授位日期未取得直接句证据；博士导师关系不提升授位状态。",
+        "余家国当前人事状态与可用主页导航未核；博士后指导人未直接披露。",
+        "校区、机构分类及地理字段未独立规范化；未穷尽荣誉、项目、教学、学术服务及全部成果。"
+      ],
+      "source_conflicts": [],
+      "professional_field_provenance": {
+        "name": "csu-fujunwei-profile",
+        "official_url": "csu-fujunwei-profile",
+        "listed_role": "csu-fujunwei-profile",
+        "school_id": "csu-rotation003-roster",
+        "department_id": "csu-rotation003-roster",
+        "organization_id": "csu-rotation003-roster",
+        "department": "csu-rotation003-roster",
+        "roster_category": "csu-rotation003-roster",
+        "research_fields": "csu-fujunwei-profile",
+        "research_interests": [
+          "csu-fujunwei-profile"
+        ]
+      },
+      "current_personnel_observation": {
+        "source_reported_status": "在职",
+        "status": "official_profile_explicitly_employed",
+        "personnel_status_verified": false,
+        "source_id": "csu-fujunwei-profile",
+        "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+        "retrieved_at": "2026-10-24",
+        "note": "仅官网在职字段原文，不将页面存在视作独立人事核验。",
+        "field_provenance": {
+          "source_reported_status": "csu-fujunwei-profile",
+          "status": "csu-fujunwei-profile"
+        }
+      },
+      "employment_entry_observation": {
+        "date": "2020-09-09",
+        "scope": "school_entry_date_as_reported",
+        "source_id": "csu-fujunwei-profile",
+        "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+        "field_provenance": {
+          "date": "csu-fujunwei-profile"
+        },
+        "note": "不能覆盖教授2024-09起或博士后2018-07起。"
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-csu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "research_interests": "微纳催化器件；高分辨空间光电原位成像技术",
+      "research_interests_source_ids": [
+        "csu-fujunwei-profile"
+      ],
+      "research_interests_derivation": "verbatim_source_research_fields_in_original_order"
+    },
+    {
+      "person_id": "csu-guoaimin",
+      "name": "郭爱敏",
+      "school_id": "csu",
+      "department_id": "csu-physics",
+      "organization_id": "csu-physics",
+      "department": "物理学院",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-csu-physics-guoaimin",
+      "official_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+      "listed_role": "教授",
+      "listed_role_source_id": "csu-guoaimin-profile",
+      "listed_role_source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授：（含正高职称人员，按姓名拼音排序）",
+      "roster_category_source_id": "csu-rotation003-roster",
+      "selection_order": 2,
+      "sources": [
+        {
+          "id": "csu-rotation003-roster",
+          "url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+          "source_type": "university_official",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "web_reference": "turn2243view0",
+          "evidence_file": "research-rotation003-csu-scut/csu/csu-roster-minimal.json",
+          "public_raw_cache": false,
+          "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
+        },
+        {
+          "id": "csu-guoaimin-profile",
+          "url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "source_type": "university_official",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "web_reference": "turn2245view1",
+          "evidence_file": "research-rotation003-csu-scut/csu/csu-guoaimin-minimal.json",
+          "public_raw_cache": false,
+          "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
+        },
+        {
+          "id": "csu-guoaimin-2017-talk",
+          "url": "https://wl.csu.edu.cn/info/1042/2029.htm",
+          "source_type": "university_official",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": "2017-05-02",
+          "web_reference": "turn2261view0",
+          "evidence_file": "research-rotation003-csu-scut/csu/csu-guoaimin-2017-talk-minimal.json",
+          "public_raw_cache": false,
+          "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "profile_coverage_label": "部分公开职业资料，学历、导师与时间线仍有未决项",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+        "profile_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+        "native_link_target": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+        "source_ids": [
+          "csu-rotation003-roster",
+          "csu-guoaimin-profile"
+        ]
+      },
+      "education": [
+        {
+          "event_id": "csu-guoaimin-education-1",
+          "institution": "南京大学",
+          "field": "理论物理",
+          "degree": "博士",
+          "source_reported_degree_label": "理学博士",
+          "start": "2007-09",
+          "end": "2010-06",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "degree_awarded_date": "2010",
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "source_ids": [
+            "csu-guoaimin-profile",
+            "csu-guoaimin-2017-talk"
+          ],
+          "evidence_status": "official_public_body_read",
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_education_filters": true,
+          "note": "学习起止来自个人主页；2017院内报告明确获学位，授位日期仅保留年份，不能扩展到学习结束月份。；来源标注：理学博士",
+          "degree_award_source_url": "https://wl.csu.edu.cn/info/1042/2029.htm",
+          "degree_award_source_id": "csu-guoaimin-2017-talk",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "field": "csu-guoaimin-profile",
+            "degree": "csu-guoaimin-profile",
+            "source_reported_degree_label": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": "csu-guoaimin-profile",
+            "event_kind": "csu-guoaimin-profile",
+            "degree_awarded": "csu-guoaimin-2017-talk",
+            "degree_awarded_date": "csu-guoaimin-2017-talk",
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "field": "source_reported",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "explicit_award_year",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "education_event_id": "csu-guoaimin-education-1",
+          "include_in_degree_filters": true,
+          "degree_award_link_basis": "direct_original_degree_awarded_field_provenance",
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "csu-guoaimin-profile"
+          ],
+          "source_note": "学习起止来自个人主页；2017院内报告明确获学位，授位日期仅保留年份，不能扩展到学习结束月份。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "csu-guoaimin-profile"
+          ]
+        },
+        {
+          "event_id": "csu-guoaimin-education-2",
+          "institution": "中南大学",
+          "field": "凝聚态物理",
+          "degree": "硕士",
+          "source_reported_degree_label": "理学硕士",
+          "start": "2004-09",
+          "end": "2007-05",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "degree_awarded_date": "2007",
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "source_ids": [
+            "csu-guoaimin-profile",
+            "csu-guoaimin-2017-talk"
+          ],
+          "evidence_status": "official_public_body_read",
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_education_filters": true,
+          "note": "学习起止来自个人主页；2017院内报告明确获学位，授位日期仅保留年份，不能扩展到学习结束月份。；来源标注：理学硕士",
+          "degree_award_source_url": "https://wl.csu.edu.cn/info/1042/2029.htm",
+          "degree_award_source_id": "csu-guoaimin-2017-talk",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "field": "csu-guoaimin-profile",
+            "degree": "csu-guoaimin-profile",
+            "source_reported_degree_label": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": "csu-guoaimin-profile",
+            "event_kind": "csu-guoaimin-profile",
+            "degree_awarded": "csu-guoaimin-2017-talk",
+            "degree_awarded_date": "csu-guoaimin-2017-talk",
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "field": "source_reported",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "explicit_award_year",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "education_event_id": "csu-guoaimin-education-2",
+          "include_in_degree_filters": true,
+          "degree_award_link_basis": "direct_original_degree_awarded_field_provenance",
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "csu-guoaimin-profile"
+          ],
+          "source_note": "学习起止来自个人主页；2017院内报告明确获学位，授位日期仅保留年份，不能扩展到学习结束月份。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "csu-guoaimin-profile"
+          ]
+        },
+        {
+          "event_id": "csu-guoaimin-education-3",
+          "institution": "中南大学",
+          "field": "应用物理学",
+          "degree": "学士",
+          "source_reported_degree_label": "理学学士",
+          "start": "2000-09",
+          "end": "2004-06",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "degree_awarded_date": "2004",
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "source_ids": [
+            "csu-guoaimin-profile",
+            "csu-guoaimin-2017-talk"
+          ],
+          "evidence_status": "official_public_body_read",
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_education_filters": true,
+          "note": "学习起止来自个人主页；2017院内报告明确获学位，授位日期仅保留年份，不能扩展到学习结束月份。；来源标注：理学学士",
+          "degree_award_source_url": "https://wl.csu.edu.cn/info/1042/2029.htm",
+          "degree_award_source_id": "csu-guoaimin-2017-talk",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "field": "csu-guoaimin-profile",
+            "degree": "csu-guoaimin-profile",
+            "source_reported_degree_label": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": "csu-guoaimin-profile",
+            "event_kind": "csu-guoaimin-profile",
+            "degree_awarded": "csu-guoaimin-2017-talk",
+            "degree_awarded_date": "csu-guoaimin-2017-talk",
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "field": "source_reported",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "explicit_award_year",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "education_event_id": "csu-guoaimin-education-3",
+          "include_in_degree_filters": true,
+          "degree_award_link_basis": "direct_original_degree_awarded_field_provenance",
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "csu-guoaimin-profile"
+          ],
+          "source_note": "学习起止来自个人主页；2017院内报告明确获学位，授位日期仅保留年份，不能扩展到学习结束月份。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "csu-guoaimin-profile"
+          ]
+        },
+        {
+          "event_id": "csu-guoaimin-education-4",
+          "institution": "加州州立大学",
+          "field": null,
+          "degree": "博士后",
+          "source_reported_degree_label": "博士后",
+          "start": "2011-04",
+          "end": "2011-10",
+          "event_kind": "postdoctoral_research",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "source_ids": [
+            "csu-guoaimin-profile"
+          ],
+          "evidence_status": "official_public_body_read",
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_education_filters": false,
+          "note": "本人简介注明美国；具体分校未披露，不凭简称补分校。",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "field": null,
+            "degree": "csu-guoaimin-profile",
+            "source_reported_degree_label": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": "csu-guoaimin-profile",
+            "event_kind": "csu-guoaimin-profile",
+            "degree_awarded": "csu-guoaimin-profile",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "field": "not_disclosed",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_non_degree_event",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "education_event_id": "csu-guoaimin-education-4",
+          "source_event_kind": "postdoc",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "csu-guoaimin-profile"
+          ]
+        },
+        {
+          "event_id": "csu-guoaimin-education-5",
+          "institution": "中国科学院物理研究所",
+          "field": null,
+          "degree": "博士后",
+          "source_reported_degree_label": "博士后",
+          "start": "2011-10",
+          "end": "2015-01",
+          "event_kind": "postdoctoral_research",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "source_ids": [
+            "csu-guoaimin-profile"
+          ],
+          "evidence_status": "official_public_body_read",
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_education_filters": false,
+          "note": "主页逐段表为2011.10–2015.1；2017报告把两次博士后概括为2011–2014，差异保留于source_conflicts。",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "field": null,
+            "degree": "csu-guoaimin-profile",
+            "source_reported_degree_label": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": "csu-guoaimin-profile",
+            "event_kind": "csu-guoaimin-profile",
+            "degree_awarded": "csu-guoaimin-profile",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "field": "not_disclosed",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_non_degree_event",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "education_event_id": "csu-guoaimin-education-5",
+          "source_event_kind": "postdoc",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "csu-guoaimin-profile"
+          ]
+        },
+        {
+          "event_id": "csu-guoaimin-education-6",
+          "institution": "北京大学量子材料科学中心",
+          "field": null,
+          "degree": "访问学者",
+          "source_reported_degree_label": "访问学者",
+          "start": "2015-07",
+          "end": "2017-12",
+          "event_kind": "academic_visit",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "source_ids": [
+            "csu-guoaimin-profile"
+          ],
+          "evidence_status": "official_public_body_read",
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_education_filters": false,
+          "note": "访问学者为非授位事件，不能计作留学学位。",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "field": null,
+            "degree": "csu-guoaimin-profile",
+            "source_reported_degree_label": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": "csu-guoaimin-profile",
+            "event_kind": "csu-guoaimin-profile",
+            "degree_awarded": "csu-guoaimin-profile",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "field": "not_disclosed",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_non_degree_event",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "education_event_id": "csu-guoaimin-education-6",
+          "source_event_kind": "visiting",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "csu-guoaimin-profile"
+          ]
+        }
+      ],
+      "appointments": [
+        {
+          "event_id": "csu-guoaimin-appointment-1",
+          "institution": "中南大学",
+          "title": "教授、博士生导师",
+          "start": "2018-01",
+          "end": null,
+          "current": true,
+          "status": "official_profile_explicitly_employed",
+          "personnel_status_verified": false,
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "title": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": null,
+            "current": "csu-guoaimin-profile"
+          },
+          "note": "正文说明2018年以特聘教授身份入职物理与电子学院；现单位头部为物理学院。"
+        },
+        {
+          "event_id": "csu-guoaimin-appointment-2",
+          "institution": "哈尔滨工业大学",
+          "title": "教授、博士生导师",
+          "start": "2015-01",
+          "end": "2018-01",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "title": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": "csu-guoaimin-profile",
+            "current": "csu-guoaimin-profile"
+          },
+          "note": "此区间仅工作表版本，简介另有2014受聘表述，未作统一裁定。"
+        },
+        {
+          "event_id": "csu-guoaimin-appointment-3",
+          "institution": "北京大学量子材料科学中心",
+          "title": "访问学者",
+          "start": "2015-07",
+          "end": "2017-12",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "title": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": "csu-guoaimin-profile",
+            "current": "csu-guoaimin-profile"
+          },
+          "note": "同一非授位访问事件；与哈工大任职区间重叠不强制拆开。",
+          "linked_education_event_id": "csu-guoaimin-education-6"
+        },
+        {
+          "event_id": "csu-guoaimin-appointment-4",
+          "institution": "中国科学院物理研究所",
+          "title": "博士后",
+          "start": "2011-10",
+          "end": "2015-01",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "title": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": "csu-guoaimin-profile",
+            "current": "csu-guoaimin-profile"
+          },
+          "note": "2017报告概括总博士后范围2011–2014，不以概括覆盖详细表。",
+          "linked_education_event_id": "csu-guoaimin-education-5"
+        },
+        {
+          "event_id": "csu-guoaimin-appointment-5",
+          "institution": "加州州立大学",
+          "title": "博士后",
+          "start": "2011-04",
+          "end": "2011-10",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "title": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": "csu-guoaimin-profile",
+            "current": "csu-guoaimin-profile"
+          },
+          "note": "未确认具体分校。",
+          "linked_education_event_id": "csu-guoaimin-education-4"
+        },
+        {
+          "event_id": "csu-guoaimin-appointment-6",
+          "institution": "浙江工业大学",
+          "title": "讲师",
+          "start": "2010-06",
+          "end": "2011-04",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-guoaimin-profile",
+            "title": "csu-guoaimin-profile",
+            "start": "csu-guoaimin-profile",
+            "end": "csu-guoaimin-profile",
+            "current": "csu-guoaimin-profile"
+          },
+          "note": ""
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Spin-to-charge conversion driven by inverse chiral-induced spin selectivity",
+          "year": 2026,
+          "venue": "Physical Review Letters",
+          "volume": null,
+          "article_number": null,
+          "doi": null,
+          "url": null,
+          "type": "journal_article",
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "evidence_status": "official_profile_bibliography_read",
+          "identity_evidence": {
+            "status": "listed_in_official_personal_bibliography",
+            "matched_author": "Ai-Min Guo",
+            "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+            "source_locator": "L60"
+          },
+          "link_status": "official_bibliography_only_no_individual_link_verified",
+          "publication_status": "published_as_reported_by_official_profile",
+          "note": "仅官网精选书目条目；未阅读全文、未独立核验出版商元数据，不推断DOI。",
+          "field_provenance": {
+            "title": "csu-guoaimin-profile",
+            "year": "csu-guoaimin-profile",
+            "venue": "csu-guoaimin-profile",
+            "volume": null,
+            "article_number": null,
+            "type": "csu-guoaimin-profile",
+            "doi": null,
+            "url": null
+          },
+          "type_label": "期刊论文",
+          "link_status_label": "仅本人官方精选书目，未核出版社单篇或全文；不推断DOI。",
+          "consumer_label_source_ids": [
+            "csu-guoaimin-profile"
+          ]
+        },
+        {
+          "title": "Spin-driven Enantioselective Regulation of Cyclooxygenase-2 Activity for Rheumatoid Arthritis Therapy via Chiral Gold Nanohelices",
+          "year": 2026,
+          "venue": "Nature Communications",
+          "volume": "17",
+          "article_number": "6522",
+          "doi": null,
+          "url": null,
+          "type": "journal_article",
+          "source_id": "csu-guoaimin-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+          "evidence_status": "official_profile_bibliography_read",
+          "identity_evidence": {
+            "status": "listed_in_official_personal_bibliography",
+            "matched_author": "Ai-Min Guo",
+            "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+            "source_locator": "L61"
+          },
+          "link_status": "official_bibliography_only_no_individual_link_verified",
+          "publication_status": "published_as_reported_by_official_profile",
+          "note": "仅官网精选书目条目；未阅读全文、未独立核验出版商元数据，不推断DOI。",
+          "field_provenance": {
+            "title": "csu-guoaimin-profile",
+            "year": "csu-guoaimin-profile",
+            "venue": "csu-guoaimin-profile",
+            "volume": "csu-guoaimin-profile",
+            "article_number": "csu-guoaimin-profile",
+            "type": "csu-guoaimin-profile",
+            "doi": null,
+            "url": null
+          },
+          "type_label": "期刊论文",
+          "link_status_label": "仅本人官方精选书目，未核出版社单篇或全文；不推断DOI。",
+          "consumer_label_source_ids": [
+            "csu-guoaimin-profile"
+          ]
+        }
+      ],
+      "research_fields": [
+        "低维体系量子输运",
+        "有机分子自旋电子学",
+        "无序系统局域化与金属-绝缘体相变"
+      ],
+      "honors": [],
+      "academic_service": [],
+      "teaching": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "unknowns": [
+        "导师未在已读主页或2017报告明确，保持空数组，不从合著或研究主题推断。",
+        "任职起点2014与2015-01、历史职称用词及博士后总范围来源差异未解决。",
+        "加州州立大学具体分校未知；校区、机构分类与地理字段未独立规范化。",
+        "仅精选书目和主要职业轨迹；荣誉、科研项目、学术服务、教学及全部成果未穷尽。"
+      ],
+      "source_conflicts": [
+        {
+          "field": "appointments.hits_start",
+          "status": "unresolved",
+          "source_ids": [
+            "csu-guoaimin-profile",
+            "csu-guoaimin-2017-talk"
+          ],
+          "observations": [
+            {
+              "source_id": "csu-guoaimin-profile",
+              "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+              "source_locator": "L46",
+              "reported_start": "2014",
+              "reported_title": "教授、博士生导师",
+              "context": "简介的入选及受聘表述"
+            },
+            {
+              "source_id": "csu-guoaimin-profile",
+              "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+              "source_locator": "L102-L104",
+              "reported_start": "2015-01",
+              "reported_end": "2018-01",
+              "reported_title": "教授、博士生导师",
+              "context": "工作经历表"
+            },
+            {
+              "source_id": "csu-guoaimin-2017-talk",
+              "source_url": "https://wl.csu.edu.cn/info/1042/2029.htm",
+              "source_locator": "L83,L89",
+              "reported_start": "2015",
+              "reported_title": "研究员、博士生导师",
+              "context": "2017年官方报告历史身份"
+            }
+          ],
+          "note": "不把2014人才入选年和2015到岗表静默合并；历史研究员/教授用词也同时保留。"
+        },
+        {
+          "field": "education.postdoc_total_range",
+          "status": "unresolved_source_granularity_difference",
+          "source_ids": [
+            "csu-guoaimin-profile",
+            "csu-guoaimin-2017-talk"
+          ],
+          "observations": [
+            {
+              "source_id": "csu-guoaimin-profile",
+              "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+              "source_locator": "L110-L116",
+              "reported_ranges": [
+                "2011-04/2011-10",
+                "2011-10/2015-01"
+              ]
+            },
+            {
+              "source_id": "csu-guoaimin-2017-talk",
+              "source_url": "https://wl.csu.edu.cn/info/1042/2029.htm",
+              "source_locator": "L89",
+              "reported_range": "2011/2014"
+            }
+          ],
+          "note": "报告是两段博后合称，主页按机构分列；不擅自更改2015-01终点。"
+        }
+      ],
+      "professional_field_provenance": {
+        "name": "csu-guoaimin-profile",
+        "official_url": "csu-guoaimin-profile",
+        "listed_role": "csu-guoaimin-profile",
+        "school_id": "csu-rotation003-roster",
+        "department_id": "csu-rotation003-roster",
+        "organization_id": "csu-rotation003-roster",
+        "department": "csu-rotation003-roster",
+        "roster_category": "csu-rotation003-roster",
+        "research_fields": "csu-guoaimin-profile",
+        "research_interests": [
+          "csu-guoaimin-profile"
+        ]
+      },
+      "current_personnel_observation": {
+        "source_reported_status": "在职",
+        "status": "official_profile_explicitly_employed",
+        "personnel_status_verified": false,
+        "source_id": "csu-guoaimin-profile",
+        "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+        "retrieved_at": "2026-10-24",
+        "note": "仅官网在职字段原文，不将页面存在视作独立人事核验。",
+        "field_provenance": {
+          "source_reported_status": "csu-guoaimin-profile",
+          "status": "csu-guoaimin-profile"
+        }
+      },
+      "employment_entry_observation": {
+        "date": "2018-01-26",
+        "scope": "school_entry_date_as_reported",
+        "source_id": "csu-guoaimin-profile",
+        "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+        "field_provenance": {
+          "date": "csu-guoaimin-profile"
+        },
+        "note": "工作表月精度与页首日精度分别保存。"
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-csu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "research_interests": "低维体系量子输运；有机分子自旋电子学；无序系统局域化与金属-绝缘体相变",
+      "research_interests_source_ids": [
+        "csu-guoaimin-profile"
+      ],
+      "research_interests_derivation": "verbatim_source_research_fields_in_original_order"
+    },
+    {
+      "person_id": "csu-guoguanghua",
+      "name": "郭光华",
+      "school_id": "csu",
+      "department_id": "csu-physics",
+      "organization_id": "csu-physics",
+      "department": "物理学院",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-csu-physics-guoguanghua",
+      "official_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+      "listed_role": "教授",
+      "listed_role_source_id": "csu-guoguanghua-profile",
+      "listed_role_source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授：（含正高职称人员，按姓名拼音排序）",
+      "roster_category_source_id": "csu-rotation003-roster",
+      "selection_order": 3,
+      "sources": [
+        {
+          "id": "csu-rotation003-roster",
+          "url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+          "source_type": "university_official",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "web_reference": "turn2243view0",
+          "evidence_file": "research-rotation003-csu-scut/csu/csu-roster-minimal.json",
+          "public_raw_cache": false,
+          "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
+        },
+        {
+          "id": "csu-guoguanghua-profile",
+          "url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "source_type": "university_official",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "web_reference": "turn2263view0",
+          "evidence_file": "research-rotation003-csu-scut/csu/csu-guoguanghua-minimal.json",
+          "public_raw_cache": false,
+          "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "profile_coverage_label": "部分公开职业资料，学历、导师与时间线仍有未决项",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+        "profile_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+        "native_link_target": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+        "source_ids": [
+          "csu-rotation003-roster",
+          "csu-guoguanghua-profile"
+        ]
+      },
+      "education": [
+        {
+          "event_id": "csu-guoguanghua-education-1",
+          "institution": "吉林大学",
+          "field": "物理学",
+          "degree": "硕士",
+          "source_reported_degree_label": "硕士学位",
+          "start": "1985-09",
+          "end": "1988-07",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_id": "csu-guoguanghua-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "source_ids": [
+            "csu-guoguanghua-profile"
+          ],
+          "evidence_status": "official_public_body_read",
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_education_filters": true,
+          "note": "教育表给出各自学习区间；简介在1988年毕业句中合列获学士与硕士，支持两学位已获但不支持两授位日同为1988；两事件授位日期保持null。；来源标注：硕士学位",
+          "degree_award_source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "degree_award_source_id": "csu-guoguanghua-profile",
+          "field_provenance": {
+            "institution": "csu-guoguanghua-profile",
+            "field": "csu-guoguanghua-profile",
+            "degree": "csu-guoguanghua-profile",
+            "source_reported_degree_label": "csu-guoguanghua-profile",
+            "start": "csu-guoguanghua-profile",
+            "end": "csu-guoguanghua-profile",
+            "event_kind": "csu-guoguanghua-profile",
+            "degree_awarded": "csu-guoguanghua-profile",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "field": "source_reported",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "education_event_id": "csu-guoguanghua-education-1",
+          "include_in_degree_filters": true,
+          "degree_award_link_basis": "direct_original_degree_awarded_field_provenance",
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "csu-guoguanghua-profile"
+          ],
+          "source_note": "教育表给出各自学习区间；简介在1988年毕业句中合列获学士与硕士，支持两学位已获但不支持两授位日同为1988；两事件授位日期保持null。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "csu-guoguanghua-profile"
+          ]
+        },
+        {
+          "event_id": "csu-guoguanghua-education-2",
+          "institution": "吉林大学",
+          "field": "物理学",
+          "degree": "学士",
+          "source_reported_degree_label": "学士学位",
+          "start": "1981-09",
+          "end": "1985-07",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_id": "csu-guoguanghua-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "source_ids": [
+            "csu-guoguanghua-profile"
+          ],
+          "evidence_status": "official_public_body_read",
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_education_filters": true,
+          "note": "教育表给出各自学习区间；简介在1988年毕业句中合列获学士与硕士，支持两学位已获但不支持两授位日同为1988；两事件授位日期保持null。；来源标注：学士学位",
+          "degree_award_source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "degree_award_source_id": "csu-guoguanghua-profile",
+          "field_provenance": {
+            "institution": "csu-guoguanghua-profile",
+            "field": "csu-guoguanghua-profile",
+            "degree": "csu-guoguanghua-profile",
+            "source_reported_degree_label": "csu-guoguanghua-profile",
+            "start": "csu-guoguanghua-profile",
+            "end": "csu-guoguanghua-profile",
+            "event_kind": "csu-guoguanghua-profile",
+            "degree_awarded": "csu-guoguanghua-profile",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "field": "source_reported",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "education_event_id": "csu-guoguanghua-education-2",
+          "include_in_degree_filters": true,
+          "degree_award_link_basis": "direct_original_degree_awarded_field_provenance",
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "csu-guoguanghua-profile"
+          ],
+          "source_note": "教育表给出各自学习区间；简介在1988年毕业句中合列获学士与硕士，支持两学位已获但不支持两授位日同为1988；两事件授位日期保持null。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "csu-guoguanghua-profile"
+          ]
+        },
+        {
+          "event_id": "csu-guoguanghua-education-3",
+          "institution": "莫斯科大学",
+          "field": null,
+          "degree": "博士",
+          "source_reported_degree_label": "数理博士学位",
+          "start": "1995-09",
+          "end": "1999-12",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_id": "csu-guoguanghua-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "source_ids": [
+            "csu-guoguanghua-profile"
+          ],
+          "evidence_status": "official_public_body_read",
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_education_filters": true,
+          "note": "简介明确获博士；表格机构原称另为俄罗斯莫斯科州立大学，两称并存，未核唯一外校实体。不以1999-12毕业区间末月确认授位日。；来源标注：数理博士学位",
+          "source_reported_institution": "俄罗斯莫斯科州立大学",
+          "degree_award_source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "degree_award_source_id": "csu-guoguanghua-profile",
+          "field_provenance": {
+            "institution": "csu-guoguanghua-profile",
+            "field": null,
+            "degree": "csu-guoguanghua-profile",
+            "source_reported_degree_label": "csu-guoguanghua-profile",
+            "start": "csu-guoguanghua-profile",
+            "end": "csu-guoguanghua-profile",
+            "source_reported_institution": "csu-guoguanghua-profile",
+            "event_kind": "csu-guoguanghua-profile",
+            "degree_awarded": "csu-guoguanghua-profile",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "field": "not_disclosed",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "source_reported_institution": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "education_event_id": "csu-guoguanghua-education-3",
+          "include_in_degree_filters": true,
+          "degree_award_link_basis": "direct_original_degree_awarded_field_provenance",
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "csu-guoguanghua-profile"
+          ],
+          "source_note": "简介明确获博士；表格机构原称另为俄罗斯莫斯科州立大学，两称并存，未核唯一外校实体。不以1999-12毕业区间末月确认授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "csu-guoguanghua-profile"
+          ]
+        }
+      ],
+      "appointments": [
+        {
+          "event_id": "csu-guoguanghua-appointment-1",
+          "institution": "中南大学 物理学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "current": true,
+          "status": "official_profile_explicitly_employed",
+          "personnel_status_verified": false,
+          "source_id": "csu-guoguanghua-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-guoguanghua-profile",
+            "title": "csu-guoguanghua-profile",
+            "start": null,
+            "end": null,
+            "current": "csu-guoguanghua-profile"
+          },
+          "note": "当前身份只用页首列示，不把1999科研教学起点当教授起点。"
+        },
+        {
+          "event_id": "csu-guoguanghua-appointment-2",
+          "institution": "中南大学物理与电子学院",
+          "title": "科研与教学工作",
+          "start": "1999",
+          "end": null,
+          "current": null,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "source_id": "csu-guoguanghua-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-guoguanghua-profile",
+            "title": "csu-guoguanghua-profile",
+            "start": "csu-guoguanghua-profile",
+            "end": null,
+            "current": null
+          },
+          "note": "历史来源自述“1999年至今”，仅表示正文回述；机构历史名称未单独核对，未独立核实时现职。",
+          "field_status": {
+            "current": "current_status_not_independently_verified"
+          }
+        },
+        {
+          "event_id": "csu-guoguanghua-appointment-3",
+          "institution": "中南大学物理与电子学院",
+          "title": "教授",
+          "start": "2000",
+          "end": null,
+          "current": null,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "source_id": "csu-guoguanghua-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-guoguanghua-profile",
+            "title": "csu-guoguanghua-profile",
+            "start": "csu-guoguanghua-profile",
+            "end": null,
+            "current": null
+          },
+          "note": "来源简介仅记载评聘或晋升年份；没有终止事实，不把未核实时现职编码为否。",
+          "appointment_kind": "qualification_or_promotion",
+          "field_status": {
+            "current": "current_status_not_independently_verified"
+          }
+        },
+        {
+          "event_id": "csu-guoguanghua-appointment-4",
+          "institution": "中南大学物理与电子学院",
+          "title": "博士生导师",
+          "start": "2004",
+          "end": null,
+          "current": null,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "source_id": "csu-guoguanghua-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-guoguanghua-profile",
+            "title": "csu-guoguanghua-profile",
+            "start": "csu-guoguanghua-profile",
+            "end": null,
+            "current": null
+          },
+          "note": "来源简介仅记载评聘或晋升年份；没有终止事实，不把未核实时现职编码为否。",
+          "appointment_kind": "qualification_or_promotion",
+          "field_status": {
+            "current": "current_status_not_independently_verified"
+          }
+        },
+        {
+          "event_id": "csu-guoguanghua-appointment-5",
+          "institution": "中南大学物理与电子学院",
+          "title": "二级教授",
+          "start": "2013",
+          "end": null,
+          "current": null,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "source_id": "csu-guoguanghua-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "csu-guoguanghua-profile",
+            "title": "csu-guoguanghua-profile",
+            "start": "csu-guoguanghua-profile",
+            "end": null,
+            "current": null
+          },
+          "note": "来源简介仅记载评聘或晋升年份；没有终止事实，不把未核实时现职编码为否。",
+          "appointment_kind": "qualification_or_promotion",
+          "field_status": {
+            "current": "current_status_not_independently_verified"
+          }
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Manipulation of the polarized magnon transmission in trilayer magnonic spin-valve",
+          "year": 2022,
+          "venue": "Physical Review B",
+          "volume": "105",
+          "article_number": "094416",
+          "doi": null,
+          "url": null,
+          "type": "journal_article",
+          "source_id": "csu-guoguanghua-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "evidence_status": "official_profile_bibliography_read",
+          "identity_evidence": {
+            "status": "listed_in_official_personal_bibliography",
+            "matched_author": "Guang-hua Guo",
+            "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+            "source_locator": "L71"
+          },
+          "link_status": "official_bibliography_only_no_individual_link_verified",
+          "publication_status": "published_as_reported_by_official_profile",
+          "note": "仅官网精选书目条目；未阅读全文、未独立核验出版商元数据，不推断DOI。",
+          "field_provenance": {
+            "title": "csu-guoguanghua-profile",
+            "year": "csu-guoguanghua-profile",
+            "venue": "csu-guoguanghua-profile",
+            "volume": "csu-guoguanghua-profile",
+            "article_number": "csu-guoguanghua-profile",
+            "type": "csu-guoguanghua-profile",
+            "doi": null,
+            "url": null
+          },
+          "type_label": "期刊论文",
+          "link_status_label": "仅本人官方精选书目，未核出版社单篇或全文；不推断DOI。",
+          "consumer_label_source_ids": [
+            "csu-guoguanghua-profile"
+          ]
+        },
+        {
+          "title": "Reconfigurable Spin-wave Coupler Based on Domain Wall Channels",
+          "year": 2022,
+          "venue": "Physical Review Applied",
+          "volume": "17",
+          "article_number": "064013",
+          "doi": null,
+          "url": null,
+          "type": "journal_article",
+          "source_id": "csu-guoguanghua-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "evidence_status": "official_profile_bibliography_read",
+          "identity_evidence": {
+            "status": "listed_in_official_personal_bibliography",
+            "matched_author": "Guang-hua Guo",
+            "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+            "source_locator": "L73"
+          },
+          "link_status": "official_bibliography_only_no_individual_link_verified",
+          "publication_status": "published_as_reported_by_official_profile",
+          "note": "仅官网精选书目条目；未阅读全文、未独立核验出版商元数据，不推断DOI。",
+          "field_provenance": {
+            "title": "csu-guoguanghua-profile",
+            "year": "csu-guoguanghua-profile",
+            "venue": "csu-guoguanghua-profile",
+            "volume": "csu-guoguanghua-profile",
+            "article_number": "csu-guoguanghua-profile",
+            "type": "csu-guoguanghua-profile",
+            "doi": null,
+            "url": null
+          },
+          "type_label": "期刊论文",
+          "link_status_label": "仅本人官方精选书目，未核出版社单篇或全文；不推断DOI。",
+          "consumer_label_source_ids": [
+            "csu-guoguanghua-profile"
+          ]
+        }
+      ],
+      "research_fields": [
+        "磁学和磁性材料",
+        "自旋电子学与自旋器件",
+        "二维体系电子结构与自旋输运"
+      ],
+      "honors": [],
+      "academic_service": [],
+      "teaching": [
+        {
+          "course": "固体物理",
+          "role": "国家精品课程和国家精品资源共享课程负责人",
+          "start": null,
+          "end": null,
+          "source_id": "csu-guoguanghua-profile",
+          "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "course": "csu-guoguanghua-profile",
+            "role": "csu-guoguanghua-profile",
+            "start": null,
+            "end": null
+          },
+          "note": "课程建设职责，不是本人教育/学位事件；时间未披露。"
+        }
+      ],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "unknowns": [
+        "吉林大学两学位独立授位年未知；保留1988合列毕业句与学士1985学习结束的语义差异。",
+        "博士外校名称两称并存，不补唯一外文名；博士专业只见物理系而非明确专业字段，field为null。",
+        "导师均未获直接阶段证据，mentors保持空；不以书目合作作者推师承。",
+        "1999起点与回述院系历史未完成机构沿革核验；校区、机构分类与地理字段未独立规范化。",
+        "仅选2项2022书目与1项课程建设事实，非成果或教学全集。"
+      ],
+      "source_conflicts": [
+        {
+          "field": "education.jlu_degree_dates",
+          "status": "unresolved_grouped_graduation_wording",
+          "source_ids": [
+            "csu-guoguanghua-profile"
+          ],
+          "observations": [
+            {
+              "source_id": "csu-guoguanghua-profile",
+              "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+              "source_locator": "L44",
+              "reported_year": "1988",
+              "context": "简介合列吉林大学毕业和获学士、硕士"
+            },
+            {
+              "source_id": "csu-guoguanghua-profile",
+              "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+              "source_locator": "L182-L188",
+              "bachelor_study_range": "1981-09/1985-07",
+              "master_study_range": "1985-09/1988-07"
+            }
+          ],
+          "note": "保留教育表区间而不从合列句分配授位年。"
+        },
+        {
+          "field": "education.doctoral_institution_label",
+          "status": "unresolved_name_mapping",
+          "source_ids": [
+            "csu-guoguanghua-profile"
+          ],
+          "observations": [
+            {
+              "source_id": "csu-guoguanghua-profile",
+              "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+              "source_locator": "L44",
+              "reported_institution": "莫斯科大学"
+            },
+            {
+              "source_id": "csu-guoguanghua-profile",
+              "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+              "source_locator": "L192",
+              "reported_institution": "俄罗斯莫斯科州立大学"
+            }
+          ],
+          "note": "未擅自消歧或补外文校名。"
+        },
+        {
+          "field": "appointments.historical_institution_label",
+          "status": "source_reported_historical_naming_not_reconciled",
+          "source_ids": [
+            "csu-guoguanghua-profile"
+          ],
+          "observations": [
+            {
+              "source_id": "csu-guoguanghua-profile",
+              "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+              "source_locator": "L44",
+              "reported_start": "1999",
+              "reported_institution": "中南大学物理与电子学院"
+            }
+          ],
+          "note": "来源用当前/后来的机构称谓回述历史；保留原称，不造合并前机构或替换起点。"
+        }
+      ],
+      "professional_field_provenance": {
+        "name": "csu-guoguanghua-profile",
+        "official_url": "csu-guoguanghua-profile",
+        "listed_role": "csu-guoguanghua-profile",
+        "school_id": "csu-rotation003-roster",
+        "department_id": "csu-rotation003-roster",
+        "organization_id": "csu-rotation003-roster",
+        "department": "csu-rotation003-roster",
+        "roster_category": "csu-rotation003-roster",
+        "research_fields": "csu-guoguanghua-profile",
+        "research_interests": [
+          "csu-guoguanghua-profile"
+        ]
+      },
+      "current_personnel_observation": {
+        "source_reported_status": "在职",
+        "status": "official_profile_explicitly_employed",
+        "personnel_status_verified": false,
+        "source_id": "csu-guoguanghua-profile",
+        "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+        "retrieved_at": "2026-10-24",
+        "note": "仅官网在职字段原文，不将页面存在视作独立人事核验。",
+        "field_provenance": {
+          "source_reported_status": "csu-guoguanghua-profile",
+          "status": "csu-guoguanghua-profile"
+        }
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-csu-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "research_interests": "磁学和磁性材料；自旋电子学与自旋器件；二维体系电子结构与自旋输运",
+      "research_interests_source_ids": [
+        "csu-guoguanghua-profile"
+      ],
+      "research_interests_derivation": "verbatim_source_research_fields_in_original_order"
+    },
+    {
+      "person_id": "scut-bianyu",
+      "name": "边宇",
+      "school_id": "scut",
+      "department_id": "scut-architecture-department",
+      "organization_id": "scut-architecture-department",
+      "department": "建筑学院 / 建筑系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-scut-bianyu",
+      "official_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+      "listed_role": "教授、博士生导师",
+      "listed_role_source_id": "scut-bianyu-profile",
+      "listed_role_source_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "roster_category_source_id": "scut-rotation003-roster",
+      "selection_order": 1,
+      "sources": [
+        {
+          "id": "scut-rotation003-roster",
+          "url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "public_raw_cache": false,
+          "source_type": "university_official",
+          "web_reference": "turn2254view0",
+          "evidence_file": "research-rotation003-csu-scut/scut/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
+        },
+        {
+          "id": "scut-rotation003-hierarchy",
+          "url": "https://www2.scut.edu.cn/architecture/jzx/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "public_raw_cache": false,
+          "source_type": "university_official",
+          "web_reference": "turn2259view0",
+          "evidence_file": "research-rotation003-csu-scut/scut/hierarchy-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
+        },
+        {
+          "id": "scut-bianyu-profile",
+          "url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": "2026-03-18",
+          "public_raw_cache": false,
+          "source_type": "university_official",
+          "web_reference": "turn2255view0",
+          "evidence_file": "research-rotation003-csu-scut/scut/scut-bianyu-minimal.json",
+          "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "profile_coverage_label": "官方职业资料已核，授位与实时人事状态仍有未知项",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "profile_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+        "native_link_target": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+        "source_ids": [
+          "scut-rotation003-roster",
+          "scut-bianyu-profile"
+        ]
+      },
+      "profile_navigation": {
+        "official_profile_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+        "navigation_verified": true,
+        "native_link_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "personnel_status_verified": false,
+        "quick_link_eligible": false,
+        "note": "原生主页导航已核，不据此启用在职导师快捷链接。"
+      },
+      "current_employment_status": "not_independently_verified",
+      "education": [
+        {
+          "institution": "天津大学",
+          "source_reported_degree_label": "学士",
+          "degree": "学士",
+          "start": "2000",
+          "end": "2004",
+          "field": "电气工程",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "scut-bianyu-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-bianyu-profile",
+            "source_reported_degree_label": "scut-bianyu-profile",
+            "degree": "scut-bianyu-profile",
+            "start": "scut-bianyu-profile",
+            "end": "scut-bianyu-profile",
+            "field": "scut-bianyu-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "degree": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "normalization_not_in_this_research_scope",
+            "region": "normalization_not_in_this_research_scope",
+            "continent_code": "normalization_not_in_this_research_scope"
+          },
+          "event_id": "scut-bianyu-education-1",
+          "event_kind": "degree_study",
+          "include_in_education_filters": false,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "normalization_status": "deferred_to_integration_review",
+          "note": "学习经历的资格标签不单独证明授位；保留三态未知，不由区间终点推断授位日。",
+          "education_event_id": "scut-bianyu-education-1",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "scut-bianyu-profile"
+          ]
+        },
+        {
+          "institution": "天津大学",
+          "source_reported_degree_label": "硕士",
+          "degree": "硕士",
+          "start": "2004",
+          "end": "2007",
+          "field": "建筑技术科学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "scut-bianyu-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-bianyu-profile",
+            "source_reported_degree_label": "scut-bianyu-profile",
+            "degree": "scut-bianyu-profile",
+            "start": "scut-bianyu-profile",
+            "end": "scut-bianyu-profile",
+            "field": "scut-bianyu-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "degree": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "normalization_not_in_this_research_scope",
+            "region": "normalization_not_in_this_research_scope",
+            "continent_code": "normalization_not_in_this_research_scope"
+          },
+          "event_id": "scut-bianyu-education-2",
+          "event_kind": "degree_study",
+          "include_in_education_filters": false,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "normalization_status": "deferred_to_integration_review",
+          "note": "学习经历的资格标签不单独证明授位；保留三态未知，不由区间终点推断授位日。",
+          "education_event_id": "scut-bianyu-education-2",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "scut-bianyu-profile"
+          ]
+        },
+        {
+          "institution": "天津大学",
+          "source_reported_degree_label": "博士",
+          "degree": "博士",
+          "start": "2007",
+          "end": "2010",
+          "field": "建筑技术科学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "scut-bianyu-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-bianyu-profile",
+            "source_reported_degree_label": "scut-bianyu-profile",
+            "degree": "scut-bianyu-profile",
+            "start": "scut-bianyu-profile",
+            "end": "scut-bianyu-profile",
+            "field": "scut-bianyu-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "degree": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "normalization_not_in_this_research_scope",
+            "region": "normalization_not_in_this_research_scope",
+            "continent_code": "normalization_not_in_this_research_scope"
+          },
+          "event_id": "scut-bianyu-education-3",
+          "event_kind": "degree_study",
+          "include_in_education_filters": false,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "normalization_status": "deferred_to_integration_review",
+          "note": "学习经历的资格标签不单独证明授位；保留三态未知，不由区间终点推断授位日。",
+          "education_event_id": "scut-bianyu-education-3",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "scut-bianyu-profile"
+          ]
+        },
+        {
+          "institution": "加州大学戴维斯分校（UC Davis）加州照明研究中心（CLTC）",
+          "source_reported_degree_label": "访问学者",
+          "degree": null,
+          "start": "2019",
+          "end": "2020",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_id": "scut-bianyu-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-bianyu-profile",
+            "source_reported_degree_label": "scut-bianyu-profile",
+            "degree": null,
+            "start": "scut-bianyu-profile",
+            "end": "scut-bianyu-profile",
+            "field": null,
+            "degree_awarded": "scut-bianyu-profile",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "degree": "not_disclosed",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "explicit_non_degree_activity",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "normalization_not_in_this_research_scope",
+            "region": "normalization_not_in_this_research_scope",
+            "continent_code": "normalization_not_in_this_research_scope"
+          },
+          "event_id": "scut-bianyu-education-4",
+          "event_kind": "visiting_scholar",
+          "include_in_education_filters": false,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "normalization_status": "deferred_to_integration_review",
+          "note": "访问学者是非授位经历，不能充作学位；机构细分名称按原文保留。；来源标注：访问学者",
+          "education_event_id": "scut-bianyu-education-4",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "scut-bianyu-profile"
+          ],
+          "source_note": "访问学者是非授位经历，不能充作学位；机构细分名称按原文保留。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "scut-bianyu-profile"
+          ]
+        }
+      ],
+      "appointments": [
+        {
+          "institution": "华南理工大学建筑学院建筑系",
+          "title": "教授、博士生导师",
+          "start": null,
+          "end": null,
+          "source_id": "scut-bianyu-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-rotation003-hierarchy",
+            "title": "scut-bianyu-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "official_hierarchy_and_profile_affiliation",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "event_id": "scut-bianyu-appointment-1",
+          "current": null,
+          "status": "official_page_currently_listed",
+          "personnel_status_verified": false,
+          "note": "官方名录与个人页列示的职称，仅说明来源状态；不补任职起点，不与早期入职日期合并。",
+          "source_ids": [
+            "scut-rotation003-hierarchy",
+            "scut-bianyu-profile"
+          ]
+        },
+        {
+          "institution": "华南理工大学建筑学院",
+          "title": null,
+          "start": "2010",
+          "end": "至今",
+          "source_id": "scut-bianyu-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-bianyu-profile",
+            "title": null,
+            "start": "scut-bianyu-profile",
+            "end": "scut-bianyu-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "not_disclosed",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "event_id": "scut-bianyu-appointment-2",
+          "current": true,
+          "status": "source_reported_current",
+          "personnel_status_verified": false,
+          "note": "原文仅给学院工作起点；不能推定从2010年起即任教授。"
+        },
+        {
+          "institution": "华南理工大学亚热带建筑科学国家重点实验室建筑光学实验室（光环境研究中心）",
+          "title": "主任",
+          "start": "2010",
+          "end": "至今",
+          "source_id": "scut-bianyu-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-bianyu-profile",
+            "title": "scut-bianyu-profile",
+            "start": "scut-bianyu-profile",
+            "end": "scut-bianyu-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "event_id": "scut-bianyu-appointment-3",
+          "current": true,
+          "status": "source_reported_current",
+          "personnel_status_verified": false,
+          "note": "来源职业自述，不是独立实时人事核验。"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "research_collaborators": [],
+      "professional_research_advisors": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "建筑光学",
+          "source_id": "scut-bianyu-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scut-bianyu-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "建筑综合能源系统",
+          "source_id": "scut-bianyu-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scut-bianyu-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "teaching": [],
+      "honors": [],
+      "academic_service": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "unknowns": [
+        "未见与本人培养阶段直接对应的导师证据，mentors 留空。",
+        "授位日、个人校区归属与独立实时人事状态均未核实；公开主页不等于在岗证明。",
+        "三段学历均为学习经历中的学士/硕士/博士标签，未见独立明确授位语句，degree_awarded 均为 null。"
+      ],
+      "professional_field_provenance": {
+        "name": "scut-bianyu-profile",
+        "listed_role": "scut-bianyu-profile",
+        "official_url": "scut-rotation003-roster",
+        "school_id": "scut-rotation003-roster",
+        "department_id": "scut-rotation003-hierarchy",
+        "organization_id": "scut-rotation003-hierarchy",
+        "department": "scut-rotation003-hierarchy",
+        "roster_category": "scut-rotation003-roster",
+        "research_interests": [
+          "scut-bianyu-profile"
+        ]
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-scut-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "research_interests": "建筑光学；建筑综合能源系统",
+      "research_interests_source_ids": [
+        "scut-bianyu-profile"
+      ],
+      "research_interests_derivation": "verbatim_source_research_fields_in_original_order"
+    },
+    {
+      "person_id": "scut-chenjianhua",
+      "name": "陈建华",
+      "school_id": "scut",
+      "department_id": "scut-architecture-department",
+      "organization_id": "scut-architecture-department",
+      "department": "建筑学院 / 建筑系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-scut-chenjianhua",
+      "official_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+      "listed_role": "教授",
+      "listed_role_source_id": "scut-chenjianhua-profile",
+      "listed_role_source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "roster_category_source_id": "scut-rotation003-roster",
+      "selection_order": 2,
+      "sources": [
+        {
+          "id": "scut-rotation003-roster",
+          "url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "public_raw_cache": false,
+          "source_type": "university_official",
+          "web_reference": "turn2254view0",
+          "evidence_file": "research-rotation003-csu-scut/scut/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
+        },
+        {
+          "id": "scut-rotation003-hierarchy",
+          "url": "https://www2.scut.edu.cn/architecture/jzx/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "public_raw_cache": false,
+          "source_type": "university_official",
+          "web_reference": "turn2259view0",
+          "evidence_file": "research-rotation003-csu-scut/scut/hierarchy-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
+        },
+        {
+          "id": "scut-chenjianhua-profile",
+          "url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": "2024-08-30",
+          "public_raw_cache": false,
+          "source_type": "university_official",
+          "web_reference": "turn2255view1",
+          "evidence_file": "research-rotation003-csu-scut/scut/scut-chenjianhua-minimal.json",
+          "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "profile_coverage_label": "官方职业资料已核，授位与实时人事状态仍有未知项",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "profile_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+        "native_link_target": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+        "source_ids": [
+          "scut-rotation003-roster",
+          "scut-chenjianhua-profile"
+        ]
+      },
+      "profile_navigation": {
+        "official_profile_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+        "navigation_verified": true,
+        "native_link_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "personnel_status_verified": false,
+        "quick_link_eligible": false,
+        "note": "原生主页导航已核，不据此启用在职导师快捷链接。"
+      },
+      "current_employment_status": "not_independently_verified",
+      "education": [
+        {
+          "institution": "重庆大学（原重庆建筑工程学院）",
+          "source_reported_degree_label": "本科",
+          "degree": null,
+          "start": "1986",
+          "end": "1990",
+          "field": "建筑学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "scut-chenjianhua-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenjianhua-profile",
+            "source_reported_degree_label": "scut-chenjianhua-profile",
+            "degree": null,
+            "start": "scut-chenjianhua-profile",
+            "end": "scut-chenjianhua-profile",
+            "field": "scut-chenjianhua-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "degree": "not_disclosed",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "normalization_not_in_this_research_scope",
+            "region": "normalization_not_in_this_research_scope",
+            "continent_code": "normalization_not_in_this_research_scope"
+          },
+          "event_id": "scut-chenjianhua-education-1",
+          "event_kind": "undergraduate_study",
+          "include_in_education_filters": false,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "normalization_status": "deferred_to_integration_review",
+          "note": "原文“本科”不等于学士授位；来源中的历史校名附注保留，未把就读当年的学校改称当前985身份。；来源标注：本科",
+          "education_event_id": "scut-chenjianhua-education-1",
+          "source_event_kind": "degree_study",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "scut-chenjianhua-profile"
+          ],
+          "source_note": "原文“本科”不等于学士授位；来源中的历史校名附注保留，未把就读当年的学校改称当前985身份。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "scut-chenjianhua-profile"
+          ]
+        },
+        {
+          "institution": "华南理工大学",
+          "source_reported_degree_label": "建筑学硕士学位",
+          "degree": "硕士",
+          "start": "1995",
+          "end": "1998",
+          "field": null,
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_id": "scut-chenjianhua-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenjianhua-profile",
+            "source_reported_degree_label": "scut-chenjianhua-profile",
+            "degree": "scut-chenjianhua-profile",
+            "start": "scut-chenjianhua-profile",
+            "end": "scut-chenjianhua-profile",
+            "field": null,
+            "degree_awarded": "scut-chenjianhua-profile",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "degree": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "direct_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "normalization_not_in_this_research_scope",
+            "region": "normalization_not_in_this_research_scope",
+            "continent_code": "normalization_not_in_this_research_scope"
+          },
+          "event_id": "scut-chenjianhua-education-2",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "normalization_status": "deferred_to_integration_review",
+          "note": "明确“获建筑学硕士学位”；建筑学保留在原始学位名称，不由建筑学系直接推断专业；授位日未单列。；来源标注：建筑学硕士学位",
+          "education_event_id": "scut-chenjianhua-education-2",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "scut-chenjianhua-profile",
+          "degree_award_source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "degree_award_link_basis": "direct_original_degree_awarded_field_provenance",
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "scut-chenjianhua-profile"
+          ],
+          "source_note": "明确“获建筑学硕士学位”；建筑学保留在原始学位名称，不由建筑学系直接推断专业；授位日未单列。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "scut-chenjianhua-profile"
+          ]
+        },
+        {
+          "institution": "华南理工大学",
+          "source_reported_degree_label": "工学博士学位",
+          "degree": "博士",
+          "start": "1998",
+          "end": "2003",
+          "field": null,
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_id": "scut-chenjianhua-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenjianhua-profile",
+            "source_reported_degree_label": "scut-chenjianhua-profile",
+            "degree": "scut-chenjianhua-profile",
+            "start": "scut-chenjianhua-profile",
+            "end": "scut-chenjianhua-profile",
+            "field": null,
+            "degree_awarded": "scut-chenjianhua-profile",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "degree": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "direct_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "normalization_not_in_this_research_scope",
+            "region": "normalization_not_in_this_research_scope",
+            "continent_code": "normalization_not_in_this_research_scope"
+          },
+          "event_id": "scut-chenjianhua-education-3",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "normalization_status": "deferred_to_integration_review",
+          "note": "明确“获工学博士学位”；未单列专业和授位日期，不能由学系或区间终点补齐。；来源标注：工学博士学位",
+          "education_event_id": "scut-chenjianhua-education-3",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "scut-chenjianhua-profile",
+          "degree_award_source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "degree_award_link_basis": "direct_original_degree_awarded_field_provenance",
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "scut-chenjianhua-profile"
+          ],
+          "source_note": "明确“获工学博士学位”；未单列专业和授位日期，不能由学系或区间终点补齐。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "scut-chenjianhua-profile"
+          ]
+        }
+      ],
+      "appointments": [
+        {
+          "institution": "华南理工大学建筑学院建筑系",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "source_id": "scut-chenjianhua-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-rotation003-hierarchy",
+            "title": "scut-chenjianhua-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "official_hierarchy_and_profile_affiliation",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "event_id": "scut-chenjianhua-appointment-1",
+          "current": null,
+          "status": "official_page_currently_listed",
+          "personnel_status_verified": false,
+          "note": "官方名录与个人页列示的职称，仅说明来源状态；不补任职起点，不与早期入职日期合并。",
+          "source_ids": [
+            "scut-rotation003-hierarchy",
+            "scut-chenjianhua-profile"
+          ]
+        },
+        {
+          "institution": "江西省建筑总公司",
+          "title": null,
+          "start": "1990",
+          "end": "1995",
+          "source_id": "scut-chenjianhua-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenjianhua-profile",
+            "title": null,
+            "start": "scut-chenjianhua-profile",
+            "end": "scut-chenjianhua-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "not_disclosed",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "event_id": "scut-chenjianhua-appointment-2",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "note": "来源职业自述，不是独立实时人事核验。"
+        },
+        {
+          "institution": "华南理工大学建筑学院",
+          "title": null,
+          "start": "2004",
+          "end": "至今",
+          "source_id": "scut-chenjianhua-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenjianhua-profile",
+            "title": null,
+            "start": "scut-chenjianhua-profile",
+            "end": "scut-chenjianhua-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "not_disclosed",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "event_id": "scut-chenjianhua-appointment-3",
+          "current": true,
+          "status": "source_reported_current",
+          "personnel_status_verified": false,
+          "note": "原文“任职”未指定该段起点时职称，不把2004年视为教授起任。"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "research_collaborators": [],
+      "professional_research_advisors": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "建筑设计及其理论",
+          "source_id": "scut-chenjianhua-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scut-chenjianhua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "大型公共建筑室内设计",
+          "source_id": "scut-chenjianhua-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scut-chenjianhua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "建筑与构造一体化设计",
+          "source_id": "scut-chenjianhua-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scut-chenjianhua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "建成环境的使用后评价",
+          "source_id": "scut-chenjianhua-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scut-chenjianhua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "teaching": [],
+      "honors": [],
+      "academic_service": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "unknowns": [
+        "未见与本人培养阶段直接对应的导师证据，mentors 留空。",
+        "授位日、个人校区归属与独立实时人事状态均未核实；公开主页不等于在岗证明。"
+      ],
+      "professional_field_provenance": {
+        "name": "scut-chenjianhua-profile",
+        "listed_role": "scut-chenjianhua-profile",
+        "official_url": "scut-rotation003-roster",
+        "school_id": "scut-rotation003-roster",
+        "department_id": "scut-rotation003-hierarchy",
+        "organization_id": "scut-rotation003-hierarchy",
+        "department": "scut-rotation003-hierarchy",
+        "roster_category": "scut-rotation003-roster",
+        "research_interests": [
+          "scut-chenjianhua-profile"
+        ]
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-scut-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "research_interests": "建筑设计及其理论；大型公共建筑室内设计；建筑与构造一体化设计；建成环境的使用后评价",
+      "research_interests_source_ids": [
+        "scut-chenjianhua-profile"
+      ],
+      "research_interests_derivation": "verbatim_source_research_fields_in_original_order"
+    },
+    {
+      "person_id": "scut-chenchangyong",
+      "name": "陈昌勇",
+      "school_id": "scut",
+      "department_id": "scut-architecture-department",
+      "organization_id": "scut-architecture-department",
+      "department": "建筑学院 / 建筑系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-scut-chenchangyong",
+      "official_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+      "listed_role": "教授",
+      "listed_role_source_id": "scut-chenchangyong-profile",
+      "listed_role_source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "roster_category_source_id": "scut-rotation003-roster",
+      "selection_order": 3,
+      "sources": [
+        {
+          "id": "scut-rotation003-roster",
+          "url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "public_raw_cache": false,
+          "source_type": "university_official",
+          "web_reference": "turn2254view0",
+          "evidence_file": "research-rotation003-csu-scut/scut/roster-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
+        },
+        {
+          "id": "scut-rotation003-hierarchy",
+          "url": "https://www2.scut.edu.cn/architecture/jzx/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "public_raw_cache": false,
+          "source_type": "university_official",
+          "web_reference": "turn2259view0",
+          "evidence_file": "research-rotation003-csu-scut/scut/hierarchy-minimal.json",
+          "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
+        },
+        {
+          "id": "scut-chenchangyong-profile",
+          "url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": "2023-06-12",
+          "public_raw_cache": false,
+          "source_type": "university_official",
+          "web_reference": "turn2255view2",
+          "evidence_file": "research-rotation003-csu-scut/scut/scut-chenchangyong-minimal.json",
+          "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "profile_coverage_label": "官方职业资料已核，授位与实时人事状态仍有未知项",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "profile_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+        "native_link_target": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+        "source_ids": [
+          "scut-rotation003-roster",
+          "scut-chenchangyong-profile"
+        ]
+      },
+      "profile_navigation": {
+        "official_profile_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+        "navigation_verified": true,
+        "native_link_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "personnel_status_verified": false,
+        "quick_link_eligible": false,
+        "note": "原生主页导航已核，不据此启用在职导师快捷链接。"
+      },
+      "current_employment_status": "not_independently_verified",
+      "education": [
+        {
+          "institution": "华南理工大学",
+          "source_reported_degree_label": "本科毕业",
+          "degree": null,
+          "start": null,
+          "end": "2001-06",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenchangyong-profile",
+            "source_reported_degree_label": "scut-chenchangyong-profile",
+            "degree": null,
+            "start": null,
+            "end": "scut-chenchangyong-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "degree": "not_disclosed",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "normalization_not_in_this_research_scope",
+            "region": "normalization_not_in_this_research_scope",
+            "continent_code": "normalization_not_in_this_research_scope"
+          },
+          "event_id": "scut-chenchangyong-education-1",
+          "event_kind": "undergraduate_study",
+          "include_in_education_filters": false,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "normalization_status": "deferred_to_integration_review",
+          "note": "本科毕业没有明确学士授位陈述，不补学士或入学起点。；来源标注：本科毕业",
+          "education_event_id": "scut-chenchangyong-education-1",
+          "source_event_kind": "degree_study",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "scut-chenchangyong-profile"
+          ],
+          "source_note": "本科毕业没有明确学士授位陈述，不补学士或入学起点。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "scut-chenchangyong-profile"
+          ]
+        },
+        {
+          "institution": "华南理工大学",
+          "source_reported_degree_label": "博士毕业",
+          "degree": "博士",
+          "start": null,
+          "end": "2007-06",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenchangyong-profile",
+            "source_reported_degree_label": "scut-chenchangyong-profile",
+            "degree": "scut-chenchangyong-profile",
+            "start": null,
+            "end": "scut-chenchangyong-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "degree": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "normalization_not_in_this_research_scope",
+            "region": "normalization_not_in_this_research_scope",
+            "continent_code": "normalization_not_in_this_research_scope"
+          },
+          "event_id": "scut-chenchangyong-education-2",
+          "event_kind": "degree_study",
+          "include_in_education_filters": false,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "normalization_status": "deferred_to_integration_review",
+          "note": "博士毕业只作为毕业/学习阶段记录，未见明确获授学位动作；授位三态保留 null，不以毕业时间充作授位时间。；来源标注：博士毕业",
+          "education_event_id": "scut-chenchangyong-education-2",
+          "include_in_degree_filters": false,
+          "source_region": "未核实",
+          "continent": "未核实",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "scut-chenchangyong-profile"
+          ],
+          "source_note": "博士毕业只作为毕业/学习阶段记录，未见明确获授学位动作；授位三态保留 null，不以毕业时间充作授位时间。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "scut-chenchangyong-profile"
+          ]
+        }
+      ],
+      "appointments": [
+        {
+          "institution": "华南理工大学建筑学院建筑系",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-rotation003-hierarchy",
+            "title": "scut-chenchangyong-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "official_hierarchy_and_profile_affiliation",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "event_id": "scut-chenchangyong-appointment-1",
+          "current": null,
+          "status": "official_page_currently_listed",
+          "personnel_status_verified": false,
+          "note": "官方名录与个人页列示的职称，仅说明来源状态；不补任职起点，不与早期入职日期合并。",
+          "source_ids": [
+            "scut-rotation003-hierarchy",
+            "scut-chenchangyong-profile"
+          ]
+        },
+        {
+          "institution": "华南理工大学建筑学院",
+          "title": "教授",
+          "start": "2019-02",
+          "end": "至今",
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenchangyong-profile",
+            "title": "scut-chenchangyong-profile",
+            "start": "scut-chenchangyong-profile",
+            "end": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "event_id": "scut-chenchangyong-appointment-2",
+          "current": true,
+          "status": "source_reported_current",
+          "personnel_status_verified": false,
+          "note": "来源职业自述，不是独立实时人事核验。"
+        },
+        {
+          "institution": "华南理工大学基建处",
+          "title": "总工",
+          "start": null,
+          "end": null,
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenchangyong-profile",
+            "title": "scut-chenchangyong-profile",
+            "start": null,
+            "end": null,
+            "date_claims": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "conflicting_source_statements",
+            "end": "conflicting_source_statements",
+            "date_claims": "source_reported_conflict"
+          },
+          "event_id": "scut-chenchangyong-appointment-3",
+          "current": null,
+          "status": "source_reported_period_unresolved",
+          "personnel_status_verified": false,
+          "note": "同页“工作经历”与“学术成果/基本介绍”日期冲突。保留两项陈述，不挑选其一，不生成两份独立任职。",
+          "date_claims": [
+            {
+              "start": "2020",
+              "end": "2023",
+              "source_text": "2020-2023年",
+              "source_location": "工作经历 L45",
+              "source_id": "scut-chenchangyong-profile",
+              "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm"
+            },
+            {
+              "start": "2019",
+              "end": "2020",
+              "source_text": "2019-2020年",
+              "source_location": "学术成果/基本介绍 L55",
+              "source_id": "scut-chenchangyong-profile",
+              "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm"
+            }
+          ]
+        },
+        {
+          "institution": "华南理工大学基建处",
+          "title": "副处长（挂职）",
+          "start": "2019",
+          "end": "2020",
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenchangyong-profile",
+            "title": "scut-chenchangyong-profile",
+            "start": "scut-chenchangyong-profile",
+            "end": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "event_id": "scut-chenchangyong-appointment-4",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "note": "来源职业自述，不是独立实时人事核验。"
+        },
+        {
+          "institution": "加拿大卡尔加里大学",
+          "title": "访问教授（国家公派留学）",
+          "start": "2016-08",
+          "end": "2017-08",
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenchangyong-profile",
+            "title": "scut-chenchangyong-profile",
+            "start": "scut-chenchangyong-profile",
+            "end": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "event_id": "scut-chenchangyong-appointment-5",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "note": "访问教授记录为职业任职，不计学历或获授学位；没有推断博士后或导师。"
+        },
+        {
+          "institution": "江西赣州城乡规划建设局",
+          "title": "副局长（挂职）",
+          "start": "2013-11",
+          "end": "2014-11",
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenchangyong-profile",
+            "title": "scut-chenchangyong-profile",
+            "start": "scut-chenchangyong-profile",
+            "end": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "event_id": "scut-chenchangyong-appointment-6",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "note": "来源职业自述，不是独立实时人事核验。"
+        },
+        {
+          "institution": "华南理工大学建筑学院",
+          "title": "副教授",
+          "start": "2012-10",
+          "end": "2019-02",
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenchangyong-profile",
+            "title": "scut-chenchangyong-profile",
+            "start": "scut-chenchangyong-profile",
+            "end": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "event_id": "scut-chenchangyong-appointment-7",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "note": "来源职业自述，不是独立实时人事核验。"
+        },
+        {
+          "institution": "华南理工大学建筑学院",
+          "title": "讲师",
+          "start": "2007-12",
+          "end": "2012-10",
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "scut-chenchangyong-profile",
+            "title": "scut-chenchangyong-profile",
+            "start": "scut-chenchangyong-profile",
+            "end": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported"
+          },
+          "event_id": "scut-chenchangyong-appointment-8",
+          "current": false,
+          "status": "source_reported_history",
+          "personnel_status_verified": false,
+          "note": "来源职业自述，不是独立实时人事核验。"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "research_collaborators": [],
+      "professional_research_advisors": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "既有建筑的活化与更新",
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "参数化城市设计",
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "城市住区规划和住宅设计",
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "teaching": [],
+      "honors": [],
+      "academic_service": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "unknowns": [
+        "未见与本人培养阶段直接对应的导师证据，mentors 留空。",
+        "授位日、个人校区归属与独立实时人事状态均未核实；公开主页不等于在岗证明。",
+        "同一页面基建处总工任职区间有2020-2023与2019-2020两种陈述，未裁决。",
+        "个人页所在系字段写“建筑学”，组织树和类别写“建筑系”；保留原字段标签，组织归属以官方层级导航核对。"
+      ],
+      "professional_field_provenance": {
+        "name": "scut-chenchangyong-profile",
+        "listed_role": "scut-chenchangyong-profile",
+        "official_url": "scut-rotation003-roster",
+        "school_id": "scut-rotation003-roster",
+        "department_id": "scut-rotation003-hierarchy",
+        "organization_id": "scut-rotation003-hierarchy",
+        "department": "scut-rotation003-hierarchy",
+        "roster_category": "scut-rotation003-roster",
+        "source_reported_affiliation_label": "scut-chenchangyong-profile",
+        "research_interests": [
+          "scut-chenchangyong-profile"
+        ]
+      },
+      "source_reported_affiliation_label": "建筑学",
+      "professional_qualifications": [
+        {
+          "name": "国家一级注册建筑师",
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "国家注册城市规划师",
+          "source_id": "scut-chenchangyong-profile",
+          "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "scut-chenchangyong-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-scut-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "research_interests": "既有建筑的活化与更新；参数化城市设计；城市住区规划和住宅设计",
+      "research_interests_source_ids": [
+        "scut-chenchangyong-profile"
+      ],
+      "research_interests_derivation": "verbatim_source_research_fields_in_original_order"
+    },
+    {
+      "person_id": "uestc-fanxin",
+      "name": "范昕",
+      "school_id": "uestc",
+      "department_id": "uestc-public-administration",
+      "organization_id": "uestc-public-administration",
+      "department": "公共管理学院",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-uestc-fanxin",
+      "official_url": "https://faculty.uestc.edu.cn/fanxin/zh_CN/index.htm",
+      "listed_role": "副教授",
+      "listed_role_source_id": "uestc-fanxin-admissions-profile",
+      "listed_role_source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "公共管理学院教师列表 / 首页",
+      "roster_category_source_id": "uestc-rotation003-roster",
+      "selection_order": 3,
+      "sources": [
+        {
+          "id": "uestc-rotation003-roster",
+          "url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "source_type": "university_official",
+          "web_reference": "turn2244view1",
+          "evidence_file": "research-rotation003-uestc-hust/uestc-roster-minimal.json",
+          "public_raw_cache": false,
+          "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
+        },
+        {
+          "id": "uestc-fanxin-profile",
+          "url": "https://faculty.uestc.edu.cn/fanxin/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "source_type": "university_official",
+          "web_reference": "turn2246view5",
+          "evidence_file": "research-rotation003-uestc-hust/uestc-fanxin-profile-minimal.json",
+          "public_raw_cache": false,
+          "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
+        },
+        {
+          "id": "uestc-public-admin-admissions-roster",
+          "url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc?yxsh=16",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "source_type": "university_official",
+          "web_reference": "turn2258view0",
+          "evidence_file": "research-rotation003-uestc-hust/uestc-admissions-link-minimal.json",
+          "public_raw_cache": false,
+          "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
+        },
+        {
+          "id": "uestc-fanxin-admissions-profile",
+          "url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "published_at": null,
+          "source_type": "university_official",
+          "web_reference": "turn2256view0",
+          "evidence_file": "research-rotation003-uestc-hust/uestc-fanxin-admissions-minimal.json",
+          "public_raw_cache": false,
+          "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "profile_coverage_label": "官方个人页及研招简介所见部分职业资料，学历时间与师承未披露。",
+      "education": [
+        {
+          "institution": "北京师范大学",
+          "degree": null,
+          "source_reported_degree_label": "本科毕业",
+          "start": null,
+          "end": null,
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "country": "中国",
+          "region": "mainland",
+          "continent_code": "asia",
+          "institution_985": "yes",
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "uestc-fanxin-admissions-profile",
+            "degree": null,
+            "source_reported_degree_label": "uestc-fanxin-admissions-profile",
+            "start": null,
+            "end": null,
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "country": "uestc-fanxin-admissions-profile",
+            "region": "uestc-fanxin-admissions-profile",
+            "continent_code": "uestc-fanxin-admissions-profile",
+            "institution_985": "uestc-fanxin-admissions-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "degree": "not_disclosed",
+            "source_reported_degree_label": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "country": "normalized_from_source_institution",
+            "region": "normalized_from_source_institution",
+            "continent_code": "normalized_from_source_institution",
+            "institution_985": "normalized_from_source_institution"
+          },
+          "event_id": "uestc-fanxin-education-1",
+          "education_event_id": "uestc-fanxin-education-1",
+          "event_kind": "undergraduate_study",
+          "include_in_education_filters": false,
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_note": "历史985分类，不证明就读当年身份；地域按所列机构所在地，不代表国籍或学习实际地点。",
+          "note": "来源明确毕业但无独立授位表述；不由毕业确认学位授予，日期与专业均未披露。；来源标注：本科毕业",
+          "source_event_kind": "degree_study",
+          "include_in_degree_filters": false,
+          "source_region": "中国内地",
+          "continent": "亚洲",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "uestc-fanxin-admissions-profile"
+          ],
+          "source_note": "来源明确毕业但无独立授位表述；不由毕业确认学位授予，日期与专业均未披露。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "uestc-fanxin-admissions-profile"
+          ]
+        },
+        {
+          "institution": "北京师范大学",
+          "degree": "硕士",
+          "source_reported_degree_label": "硕士毕业",
+          "start": null,
+          "end": null,
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "country": "中国",
+          "region": "mainland",
+          "continent_code": "asia",
+          "institution_985": "yes",
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "uestc-fanxin-admissions-profile",
+            "degree": "uestc-fanxin-admissions-profile",
+            "source_reported_degree_label": "uestc-fanxin-admissions-profile",
+            "start": null,
+            "end": null,
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "country": "uestc-fanxin-admissions-profile",
+            "region": "uestc-fanxin-admissions-profile",
+            "continent_code": "uestc-fanxin-admissions-profile",
+            "institution_985": "uestc-fanxin-admissions-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "degree": "source_reported",
+            "source_reported_degree_label": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "country": "normalized_from_source_institution",
+            "region": "normalized_from_source_institution",
+            "continent_code": "normalized_from_source_institution",
+            "institution_985": "normalized_from_source_institution"
+          },
+          "event_id": "uestc-fanxin-education-2",
+          "education_event_id": "uestc-fanxin-education-2",
+          "event_kind": "degree_study",
+          "include_in_education_filters": false,
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_note": "历史985分类，不证明就读当年身份；地域按所列机构所在地，不代表国籍或学习实际地点。",
+          "note": "来源明确毕业但无独立授位表述；不由毕业确认学位授予，日期与专业均未披露。；来源标注：硕士毕业",
+          "include_in_degree_filters": false,
+          "source_region": "中国内地",
+          "continent": "亚洲",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "uestc-fanxin-admissions-profile"
+          ],
+          "source_note": "来源明确毕业但无独立授位表述；不由毕业确认学位授予，日期与专业均未披露。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "uestc-fanxin-admissions-profile"
+          ]
+        },
+        {
+          "institution": "蒙纳什大学",
+          "degree": "博士",
+          "source_reported_degree_label": "管理学博士学位",
+          "start": null,
+          "end": null,
+          "field": null,
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "country": "澳大利亚",
+          "region": "overseas",
+          "continent_code": "oceania",
+          "institution_985": "no",
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "uestc-fanxin-admissions-profile",
+            "degree": "uestc-fanxin-admissions-profile",
+            "source_reported_degree_label": "uestc-fanxin-admissions-profile",
+            "start": null,
+            "end": null,
+            "field": null,
+            "degree_awarded": "uestc-fanxin-admissions-profile",
+            "degree_awarded_date": null,
+            "country": "uestc-fanxin-admissions-profile",
+            "region": "uestc-fanxin-admissions-profile",
+            "continent_code": "uestc-fanxin-admissions-profile",
+            "institution_985": "uestc-fanxin-admissions-profile",
+            "source_reported_institution": "uestc-fanxin-admissions-profile"
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "degree": "source_reported",
+            "source_reported_degree_label": "conflicting_source_labels_preserved",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "field": "not_disclosed",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "country": "source_reported",
+            "region": "normalized_from_source_institution",
+            "continent_code": "normalized_from_source_institution",
+            "institution_985": "normalized_from_source_institution"
+          },
+          "event_id": "uestc-fanxin-education-3",
+          "education_event_id": "uestc-fanxin-education-3",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985分类，不证明就读当年身份；地域按所列机构所在地，不代表国籍或学习实际地点。",
+          "source_reported_institution": "澳大利亚蒙纳什大学",
+          "source_reported_degree_label_alternatives": [
+            {
+              "label": "管理学博士学位",
+              "location": "学术经历正文 L14",
+              "source_id": "uestc-fanxin-admissions-profile"
+            },
+            {
+              "label": "哲学博士学位",
+              "location": "研招页头 L8",
+              "source_id": "uestc-fanxin-admissions-profile"
+            },
+            {
+              "label": "哲学博士学位",
+              "location": "教师主页 L18,L35",
+              "source_id": "uestc-fanxin-profile"
+            }
+          ],
+          "note": "正文明确获管理学博士学位，泛化层级博士和授位属实；页头哲学博士标签与正文不一致，标签差异未决，不据标签推断专业。；来源标注：管理学博士学位",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "uestc-fanxin-admissions-profile",
+          "degree_award_source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "degree_award_link_basis": "direct_original_degree_awarded_field_provenance",
+          "source_region": "其他国家或地区",
+          "continent": "大洋洲",
+          "geography_basis": "来源已有地域分类仅按机构口径展示，不推国籍、就读地点或未定院校实体；原包unknown仍为未核实。",
+          "consumer_geography_alias_source_ids": [
+            "uestc-fanxin-admissions-profile"
+          ],
+          "source_note": "正文明确获管理学博士学位，泛化层级博士和授位属实；页头哲学博士标签与正文不一致，标签差异未决，不据标签推断专业。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "uestc-fanxin-admissions-profile"
+          ]
+        }
+      ],
+      "appointments": [
+        {
+          "institution": "电子科技大学公共管理学院",
+          "title": "副教授",
+          "start": null,
+          "end": null,
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "uestc-fanxin-admissions-profile",
+            "title": "uestc-fanxin-admissions-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "same_official_biography_organization",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "event_id": "uestc-fanxin-appointment-1",
+          "current": true,
+          "status": "official_page_currently_listed",
+          "personnel_status_verified": false,
+          "note": "研招页列为公共管理学院副教授、专职；记录官网当前列示，不独立验证实时人事关系。"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "托幼服务治理模式国际比较及中国路径选择",
+          "authors": [
+            "范昕",
+            "李敏谊",
+            "叶品"
+          ],
+          "year": 2021,
+          "venue": "比较教育研究",
+          "issue": "1",
+          "doi": null,
+          "type": "journal_article",
+          "url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "uestc-fanxin-admissions-profile",
+            "authors": "uestc-fanxin-admissions-profile",
+            "year": "uestc-fanxin-admissions-profile",
+            "venue": "uestc-fanxin-admissions-profile",
+            "issue": "uestc-fanxin-admissions-profile",
+            "doi": null,
+            "type": "uestc-fanxin-admissions-profile",
+            "url": "uestc-fanxin-admissions-profile"
+          },
+          "field_status": {
+            "title": "source_reported",
+            "authors": "source_reported",
+            "year": "source_reported",
+            "venue": "source_reported",
+            "issue": "source_reported",
+            "doi": "not_disclosed",
+            "type": "source_reported",
+            "url": "source_reported"
+          },
+          "link_status": "official_publication_list_only",
+          "identity_evidence": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "note": "仅本人官方研招简介书目，未核出版社落地页或全文，未由共著推断导师关系。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅本人官方精选书目，未核出版社单篇或全文；不推断DOI。",
+          "consumer_label_source_ids": [
+            "uestc-fanxin-admissions-profile"
+          ]
+        }
+      ],
+      "research_fields": [
+        {
+          "name": "儿童照顾政策",
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "uestc-fanxin-admissions-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "教育政策",
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "uestc-fanxin-admissions-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "福利态度",
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "uestc-fanxin-admissions-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "teaching": [
+        {
+          "course": "社会政策导论",
+          "role": "讲授",
+          "start": null,
+          "end": null,
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "course": "uestc-fanxin-admissions-profile",
+            "role": "uestc-fanxin-admissions-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "course": "source_reported",
+            "role": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "course": "教育管理学",
+          "role": "讲授",
+          "start": null,
+          "end": null,
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "course": "uestc-fanxin-admissions-profile",
+            "role": "uestc-fanxin-admissions-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "course": "source_reported",
+            "role": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "course": "教育政策",
+          "role": "讲授",
+          "start": null,
+          "end": null,
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "course": "uestc-fanxin-admissions-profile",
+            "role": "uestc-fanxin-admissions-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "course": "source_reported",
+            "role": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "course": "社会学原理",
+          "role": "讲授",
+          "start": null,
+          "end": null,
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "course": "uestc-fanxin-admissions-profile",
+            "role": "uestc-fanxin-admissions-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "course": "source_reported",
+            "role": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        }
+      ],
+      "research_projects": [
+        {
+          "name": "“幼有所育”背景下婴幼儿托育服务供给模式研究",
+          "program": "国家社会科学基金青年项目",
+          "role": "主持",
+          "start": null,
+          "end": null,
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "uestc-fanxin-admissions-profile",
+            "program": "uestc-fanxin-admissions-profile",
+            "role": "uestc-fanxin-admissions-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "program": "source_reported",
+            "role": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        },
+        {
+          "name": "地方政府扩大普惠性学前教育资源的路径选择与政策效果研究",
+          "program": "教育部人文社会科学研究青年基金项目",
+          "role": "主持",
+          "start": null,
+          "end": null,
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "uestc-fanxin-admissions-profile",
+            "program": "uestc-fanxin-admissions-profile",
+            "role": "uestc-fanxin-admissions-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "program": "source_reported",
+            "role": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          }
+        }
+      ],
+      "honors": [
+        {
+          "name": "第九届广东省哲学社会科学优秀成果奖一等奖",
+          "year": 2021,
+          "rank": "第二",
+          "source_id": "uestc-fanxin-admissions-profile",
+          "source_url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "uestc-fanxin-admissions-profile",
+            "year": "uestc-fanxin-admissions-profile",
+            "rank": "uestc-fanxin-admissions-profile"
+          },
+          "field_status": {
+            "name": "source_reported",
+            "year": "source_reported",
+            "rank": "source_reported"
+          },
+          "note": "来源未把奖项明确绑定某篇成果，不补写获奖作品。"
+        }
+      ],
+      "academic_service": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "unknowns": [
+        "本科及硕士授位未由来源明确，不能由毕业自动确认。",
+        "全部求学日期、具体学习专业、个人校区、本人导师及完整任职履历未披露。",
+        "博士资格标签存在哲学博士/管理学博士差异，未据此推断学科或多项博士学位。",
+        "当前官网列示与独立人事状态不同；未独立核验实时在岗。",
+        "论文仅为官方书目，未核出版社元数据和全文。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_native_link_and_independent_same_school_biography",
+        "source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+        "profile_url": "https://faculty.uestc.edu.cn/fanxin/zh_CN/index.htm",
+        "native_link_target": "https://faculty.uestc.edu.cn/fanxin/zh_CN/index.htm",
+        "additional_native_link_source": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc?yxsh=16",
+        "additional_native_link_target": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+        "corroboration": "两官方系统均指公共管理学院范昕副教授；原生名录链接和学位资格标签交叉相符，不以单纯同名合并。",
+        "source_ids": [
+          "uestc-rotation003-roster",
+          "uestc-fanxin-profile",
+          "uestc-public-admin-admissions-roster",
+          "uestc-fanxin-admissions-profile"
+        ]
+      },
+      "official_profile_navigation_eligible": true,
+      "official_profile_availability": "body_read",
+      "current_personnel_navigation_eligible": false,
+      "current_faculty_status": "officially_listed_not_independently_personnel_verified",
+      "professional_field_provenance": {
+        "name": "uestc-fanxin-admissions-profile",
+        "school_id": "uestc-rotation003-roster",
+        "department_id": "uestc-rotation003-roster",
+        "organization_id": "uestc-rotation003-roster",
+        "department": "uestc-fanxin-admissions-profile",
+        "official_url": "uestc-fanxin-profile",
+        "listed_role": "uestc-fanxin-admissions-profile",
+        "roster_category": "uestc-rotation003-roster",
+        "research_interests": [
+          "uestc-fanxin-admissions-profile"
+        ]
+      },
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-uestc-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "research_interests": "儿童照顾政策；教育政策；福利态度",
+      "research_interests_source_ids": [
+        "uestc-fanxin-admissions-profile"
+      ],
+      "research_interests_derivation": "verbatim_source_research_fields_in_original_order"
     }
   ],
   "profile_batches": [
@@ -204617,6 +208559,115 @@
         "当前标题与历史工作是不同维度，19条任职记录不能简单当19份独立工作；官方列示不是实时人事在职核验。",
         "不推断学位、授位日期、个人校区、本人导师或国籍；0导师边。未采集项目、服务、论文、其余荣誉不等不存在。",
         "消费者schema、展示与筛选由独立整合审核；本审无仓库修改或测试。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-csu-rotation-003",
+      "source_batch_id": "faculty-batch-csu-rotation-003",
+      "school_id": "csu",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-24",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "物理学院 / 教授（含正高职称，按姓名拼音）",
+      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-csu-rotation-003.json",
+          "sha256": "4ff995e135b6f7d00a53a21b4aa7718002c897d1a4e6aa0b1ffc1e3d1620bb05"
+        }
+      ],
+      "limitations": [
+        "仅物理学院教授类别原序首3，不代表全院或全校完整覆盖；已有计算机、数学人员不重复。",
+        "学位资格标签、学习/毕业区间不单独证明授位；仅直接授位句支持true。授位日期与学习结束日期独立记录。",
+        "访问、博士后为非授位事件；导师需本人直接说明培养阶段。页面在职字段只表示官网当前自述，不等同独立实时人事核验。",
+        "来源中的任职起点、历史机构称谓与学历日期歧义显式保留，不选择最顺畅的履历。",
+        "精选论文每人2项仅官网书目，不是论文全集，未读论文全文或独立核验出版商最终元数据；不猜DOI。",
+        "仅最小职业学术事实和短证据摘录，无联系方式、出生、性别、家庭、学生名单、照片或完整网页缓存。",
+        "院校985及地理分类本研究批次不作未取证推断，统一保留unknown等待整合阶段既有规范化证据映射。",
+        "只批准精确哈希的限定事实；本审不是消费者schema、站点、导出或远端发布审核。",
+        "原序、选样、名录可见条目数与当前人事人数分别记录；不声称全院或全校完整。",
+        "授位true、false、null三态以及博士后、访问、学习、资格标签、任职和课程保持区分。",
+        "当前官网列示不等独立实时人事证明；个人主页可导航不等在职导师快捷链接。",
+        "不补未披露的校区、学位、专业、导师、精确日期或同名身份。未采集某字段不代表不存在。",
+        "来源差异须保留；历史标题、当前标题与同一博士后跨教育/任职表示不可重复计算为独立工作或学位。",
+        "985、地域与洲分类源包unknown；只有经已有来源映射和独立整合审核才能标准化，不得在本审名义下猜测郭光华俄校唯一实体或郭爱敏加州分校。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-scut-rotation-003",
+      "source_batch_id": "faculty-batch-scut-rotation-003",
+      "school_id": "scut",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-24",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "建筑学院 / 专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-scut-rotation-003.json",
+          "sha256": "b9d6f12723ee263cbbb5d906db58d196bdc59f474a198cc411d2a6d3ed123f70"
+        }
+      ],
+      "limitations": [
+        "本批只覆盖一个新院系类别的原序首3，不代表完整院系或全校覆盖。",
+        "名录列示、个人页导航和来源自述的现职区间不等于独立实时在岗核验。",
+        "学士/硕士/博士标签及毕业不自动确认授位；只有明确“获…学位”记 true；非授位经历记 false，其他为 null。",
+        "未直接核到导师关系，全部留空；不从合著、项目或本人指导学生的身份推断师承。",
+        "日期冲突保留并列证据，发布日期按正文，不从URL路径日期推断。",
+        "教育机构985与地理标准化留待集成独审，本研究包使用显式 unknown，不冒充已做标准化核验。",
+        "论文、教学、项目和荣誉未穷尽；仅保存必要职业事实证据摘录，不存整页、原始简历或个人私密字段。",
+        "只批准精确哈希的限定事实；本审不是消费者schema、站点、导出或远端发布审核。",
+        "原序、选样、名录可见条目数与当前人事人数分别记录；不声称全院或全校完整。",
+        "授位true、false、null三态以及博士后、访问、学习、资格标签、任职和课程保持区分。",
+        "当前官网列示不等独立实时人事证明；个人主页可导航不等在职导师快捷链接。",
+        "不补未披露的校区、学位、专业、导师、精确日期或同名身份。未采集某字段不代表不存在。",
+        "来源差异须保留；历史标题、当前标题与同一博士后跨教育/任职表示不可重复计算为独立工作或学位。",
+        "985、地域与洲分类源包unknown；只有经已有来源映射和独立整合审核才能标准化，不得在本审名义下猜测郭光华俄校唯一实体或郭爱敏加州分校。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-uestc-rotation-003",
+      "source_batch_id": "faculty-batch-uestc-rotation-003",
+      "school_id": "uestc",
+      "people_count": 1,
+      "established_professional_profiles": 1,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-24",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "公共管理学院 / 公共管理学院教师列表 / 首页",
+      "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement.",
+      "selected_roster_observations": 1,
+      "source_files": [
+        {
+          "file": "faculty-batch-uestc-rotation-003.json",
+          "sha256": "69e57db2d5bb6f88d88c4cce0ca90588e183fe44af5edb855153e8fc6af7562c"
+        }
+      ],
+      "limitations": [
+        "每校仅一个新院系原序首3小样本；未遍历全院系，不声明覆盖完成。",
+        "名录原序不因履历丰富度或访问结果改变；hold不替补、不制造pending人物。",
+        "当前官网列示不等于独立实时人事核验；主页可导航与当前在职认定分开。",
+        "仅本科/硕士毕业不能推断授位；招生专业、导师资格、资格标签不能证明个人授位或师承。",
+        "日期未披露则留空；导师无阶段直接证据则留空。",
+        "仅保留最短必要公开职业证据，不缓存完整网页、不保存出生、联系方式或家庭信息。",
+        "只批准精确哈希的限定事实；本审不是消费者schema、站点、导出或远端发布审核。",
+        "原序、选样、名录可见条目数与当前人事人数分别记录；不声称全院或全校完整。",
+        "授位true、false、null三态以及博士后、访问、学习、资格标签、任职和课程保持区分。",
+        "当前官网列示不等独立实时人事证明；个人主页可导航不等在职导师快捷链接。",
+        "不补未披露的校区、学位、专业、导师、精确日期或同名身份。未采集某字段不代表不存在。",
+        "来源差异须保留；历史标题、当前标题与同一博士后跨教育/任职表示不可重复计算为独立工作或学位。"
       ]
     }
   ],
@@ -213717,6 +217768,34 @@
         }
       ],
       "note": "新增13部分职业，0pending；保留三态授位、全部日期和零条新增师承，现任导师导航关闭。未知学习阶段仅作来源保真显示映射；Duan Chunying、何平、叶巍、刘向东、李世渊保留受限候选，不替换或制造待补档案。"
+    },
+    {
+      "kind": "reviewed_rotation003_wave6",
+      "source_batch_ids": [
+        "faculty-batch-csu-rotation-003",
+        "faculty-batch-scut-rotation-003",
+        "faculty-batch-uestc-rotation-003",
+        "faculty-batch-hust-rotation-003"
+      ],
+      "source_files": [
+        {
+          "file": "faculty-batch-csu-rotation-003.json",
+          "sha256": "4ff995e135b6f7d00a53a21b4aa7718002c897d1a4e6aa0b1ffc1e3d1620bb05"
+        },
+        {
+          "file": "faculty-batch-scut-rotation-003.json",
+          "sha256": "b9d6f12723ee263cbbb5d906db58d196bdc59f474a198cc411d2a6d3ed123f70"
+        },
+        {
+          "file": "faculty-batch-uestc-rotation-003.json",
+          "sha256": "69e57db2d5bb6f88d88c4cce0ca90588e183fe44af5edb855153e8fc6af7562c"
+        },
+        {
+          "file": "faculty-batch-hust-rotation-003.json",
+          "sha256": "08eb2b66846c882d65290b887a6880edef42fafe27cd45433532016298b70696"
+        }
+      ],
+      "note": "仅原序已独审部分职业事实接入；三态授位、未知日期、原生导航与hold分层保留。原包地理unknown仍为未知；研究项目、荣誉与职业资格保留独立数组，无专用展示列，不混入其他事实类别。"
     }
   ],
   "institutions": [

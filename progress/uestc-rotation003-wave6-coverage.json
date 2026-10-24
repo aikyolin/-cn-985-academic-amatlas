@@ -1,0 +1,509 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "151fa84f9a732b253efc180b6cedf48e19740620",
+  "school_id": "uestc",
+  "school_name": "电子科技大学",
+  "batch_id": "faculty-batch-uestc-rotation-003",
+  "status": "partial",
+  "held_candidates": [
+    {
+      "id": "roster-uestc-baochunyan",
+      "name": "包春艳",
+      "school_id": "uestc",
+      "organization_id": "uestc-public-administration",
+      "department_id": "uestc-public-administration",
+      "campus_ids": [],
+      "official_profile_url": "https://faculty.uestc.edu.cn/baochunyan/zh_CN/index.htm",
+      "native_link_target": "https://faculty.uestc.edu.cn/baochunyan/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+      "roster_source_id": "uestc-rotation003-roster",
+      "order": 1,
+      "roster_category": "公共管理学院教师列表 / 首页",
+      "listed_role": null,
+      "listed_role_source_id": null,
+      "status": "held_not_integrated",
+      "reason": "Official native profile is readable but has only identity/qualification labels and insufficient professional biography.",
+      "source_ids": [
+        "uestc-rotation003-roster",
+        "uestc-baochunyan-profile"
+      ],
+      "web_reference": "turn2246view3",
+      "qualification_labels": [
+        {
+          "field": "学位",
+          "value": "管理学硕士学位",
+          "source_id": "uestc-baochunyan-profile",
+          "source_url": "https://faculty.uestc.edu.cn/baochunyan/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "field": "uestc-baochunyan-profile",
+            "value": "uestc-baochunyan-profile"
+          }
+        },
+        {
+          "field": "学历",
+          "value": "硕士研究生毕业",
+          "source_id": "uestc-baochunyan-profile",
+          "source_url": "https://faculty.uestc.edu.cn/baochunyan/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "field": "uestc-baochunyan-profile",
+            "value": "uestc-baochunyan-profile"
+          }
+        }
+      ],
+      "education": [],
+      "mentors": [],
+      "unknowns": [
+        "授位院校、求学起止时间及导师均未核实；资格标签不转成学历事件。"
+      ],
+      "retry_attempted": false,
+      "replacement_selected": false
+    },
+    {
+      "id": "roster-uestc-fangdecheng",
+      "name": "方德成",
+      "school_id": "uestc",
+      "organization_id": "uestc-public-administration",
+      "department_id": "uestc-public-administration",
+      "campus_ids": [],
+      "official_profile_url": "https://faculty.uestc.edu.cn/fangdecheng/zh_CN/index.htm",
+      "native_link_target": "https://faculty.uestc.edu.cn/fangdecheng/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+      "roster_source_id": "uestc-rotation003-roster",
+      "order": 2,
+      "roster_category": "公共管理学院教师列表 / 首页",
+      "listed_role": "工程师（管理）",
+      "listed_role_source_id": "uestc-rotation003-roster",
+      "status": "held_not_integrated",
+      "reason": "Official native profile is readable but has only identity/qualification labels and insufficient professional biography.",
+      "source_ids": [
+        "uestc-rotation003-roster",
+        "uestc-fangdecheng-profile"
+      ],
+      "web_reference": "turn2246view4",
+      "qualification_labels": [
+        {
+          "field": "学历",
+          "value": "大学本科毕业",
+          "source_id": "uestc-fangdecheng-profile",
+          "source_url": "https://faculty.uestc.edu.cn/fangdecheng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "field": "uestc-fangdecheng-profile",
+            "value": "uestc-fangdecheng-profile"
+          }
+        },
+        {
+          "field": "学位",
+          "value": "公共管理硕士专业学位",
+          "source_id": "uestc-fangdecheng-profile",
+          "source_url": "https://faculty.uestc.edu.cn/fangdecheng/zh_CN/index.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "field": "uestc-fangdecheng-profile",
+            "value": "uestc-fangdecheng-profile"
+          }
+        }
+      ],
+      "education": [],
+      "mentors": [],
+      "unknowns": [
+        "授位院校、求学起止时间及导师均未核实；资格标签不转成学历事件。"
+      ],
+      "retry_attempted": false,
+      "replacement_selected": false
+    }
+  ],
+  "selected_candidate_names": [
+    "包春艳",
+    "方德成",
+    "范昕"
+  ],
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "公共管理学院 / 公共管理学院教师列表 / 首页",
+  "selection_method": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement.",
+  "source_urls": [
+    "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033"
+  ],
+  "selected_roster_observations": 1,
+  "source_category_observed_count": 16,
+  "source_category_count_basis": "Source body pagination and native visible entries; source-time category, not real-time personnel total.",
+  "source_total_reported": 36,
+  "selected_roster_original_order": [
+    {
+      "id": "roster-uestc-baochunyan",
+      "name": "包春艳",
+      "school_id": "uestc",
+      "organization_id": "uestc-public-administration",
+      "department_id": "uestc-public-administration",
+      "campus_ids": [],
+      "official_profile_url": "https://faculty.uestc.edu.cn/baochunyan/zh_CN/index.htm",
+      "native_link_target": "https://faculty.uestc.edu.cn/baochunyan/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+      "roster_source_id": "uestc-rotation003-roster",
+      "order": 1,
+      "roster_category": "公共管理学院教师列表 / 首页",
+      "listed_role": null,
+      "listed_role_source_id": null
+    },
+    {
+      "id": "roster-uestc-fangdecheng",
+      "name": "方德成",
+      "school_id": "uestc",
+      "organization_id": "uestc-public-administration",
+      "department_id": "uestc-public-administration",
+      "campus_ids": [],
+      "official_profile_url": "https://faculty.uestc.edu.cn/fangdecheng/zh_CN/index.htm",
+      "native_link_target": "https://faculty.uestc.edu.cn/fangdecheng/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+      "roster_source_id": "uestc-rotation003-roster",
+      "order": 2,
+      "roster_category": "公共管理学院教师列表 / 首页",
+      "listed_role": "工程师（管理）",
+      "listed_role_source_id": "uestc-rotation003-roster"
+    },
+    {
+      "id": "roster-uestc-fanxin",
+      "name": "范昕",
+      "school_id": "uestc",
+      "organization_id": "uestc-public-administration",
+      "department_id": "uestc-public-administration",
+      "campus_ids": [],
+      "official_profile_url": "https://faculty.uestc.edu.cn/fanxin/zh_CN/index.htm",
+      "native_link_target": "https://faculty.uestc.edu.cn/fanxin/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+      "roster_source_id": "uestc-rotation003-roster",
+      "order": 3,
+      "roster_category": "公共管理学院教师列表 / 首页",
+      "listed_role": "副教授",
+      "listed_role_source_id": "uestc-rotation003-roster"
+    }
+  ],
+  "counts": {
+    "professional_profiles": 1,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "held": 2,
+    "source_collections": {
+      "education": 3,
+      "appointments": 1,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 1,
+      "research_fields": 3,
+      "teaching": 4,
+      "honors": 1,
+      "research_projects": 2,
+      "academic_service": 0,
+      "professional_qualifications": 0,
+      "research_collaborators": 0,
+      "professional_research_advisors": 0,
+      "project_guidance": 0,
+      "pending_education_candidates": 0,
+      "pending_mentor_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 2,
+      "confirmed_degree_events": 1
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-uestc-rotation-003.json",
+      "sha256": "69e57db2d5bb6f88d88c4cce0ca90588e183fe44af5edb855153e8fc6af7562c",
+      "independent_review_file": "faculty-batch-uestc-rotation-003-independent-review.json",
+      "independent_review_sha256": "ebab147adedab34cc66cf7e049025a31483d39b9df1148be452739da5e79ae78",
+      "scope_file": "faculty-batch-uestc-rotation-003-scope.json",
+      "scope_sha256": "a190b39e6a9a8ee30ee71e8c238486d4f26d2dedc76645da94fc57ee8ec818f3",
+      "qa_file": "faculty-batch-uestc-rotation-003-qa.json",
+      "qa_sha256": "84003571e941900d7a745764ddfdfdfff35d3bfd8a92d2e7219d60b200489971"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-uestc-rotation-003",
+    "institution": {
+      "id": "uestc",
+      "official_name": "电子科技大学",
+      "official_url": "https://www.uestc.edu.cn/",
+      "source_urls": [
+        "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033"
+      ],
+      "scope_note": "新院系原序首3；不按履历丰富度选择，held不替补。"
+    },
+    "org_units": [
+      {
+        "id": "uestc-public-administration",
+        "name": "公共管理学院",
+        "type": "school",
+        "school_id": "uestc",
+        "parent_id": "uestc",
+        "campus_ids": [],
+        "source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+        "source_id": "uestc-rotation003-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "公共管理学院 / 公共管理学院教师列表 / 首页",
+    "retrieved_at": "2026-10-24",
+    "base_commit": "151fa84f9a732b253efc180b6cedf48e19740620",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "uestc-rotation003-roster",
+        "url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "source_type": "university_official",
+        "web_reference": "turn2244view1",
+        "evidence_file": "research-rotation003-uestc-hust/uestc-roster-minimal.json",
+        "public_raw_cache": false
+      },
+      {
+        "id": "uestc-baochunyan-profile",
+        "url": "https://faculty.uestc.edu.cn/baochunyan/zh_CN/index.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "source_type": "university_official",
+        "web_reference": "turn2246view3",
+        "evidence_file": "research-rotation003-uestc-hust/uestc-baochunyan-profile-minimal.json",
+        "public_raw_cache": false
+      },
+      {
+        "id": "uestc-fangdecheng-profile",
+        "url": "https://faculty.uestc.edu.cn/fangdecheng/zh_CN/index.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "source_type": "university_official",
+        "web_reference": "turn2246view4",
+        "evidence_file": "research-rotation003-uestc-hust/uestc-fangdecheng-profile-minimal.json",
+        "public_raw_cache": false
+      },
+      {
+        "id": "uestc-fanxin-profile",
+        "url": "https://faculty.uestc.edu.cn/fanxin/zh_CN/index.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "source_type": "university_official",
+        "web_reference": "turn2246view5",
+        "evidence_file": "research-rotation003-uestc-hust/uestc-fanxin-profile-minimal.json",
+        "public_raw_cache": false
+      },
+      {
+        "id": "uestc-public-admin-admissions-roster",
+        "url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc?yxsh=16",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "source_type": "university_official",
+        "web_reference": "turn2258view0",
+        "evidence_file": "research-rotation003-uestc-hust/uestc-admissions-link-minimal.json",
+        "public_raw_cache": false
+      },
+      {
+        "id": "uestc-fanxin-admissions-profile",
+        "url": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "source_type": "university_official",
+        "web_reference": "turn2256view0",
+        "evidence_file": "research-rotation003-uestc-hust/uestc-fanxin-admissions-minimal.json",
+        "public_raw_cache": false
+      }
+    ],
+    "held_candidates": [
+      {
+        "id": "roster-uestc-baochunyan",
+        "name": "包春艳",
+        "school_id": "uestc",
+        "organization_id": "uestc-public-administration",
+        "department_id": "uestc-public-administration",
+        "campus_ids": [],
+        "official_profile_url": "https://faculty.uestc.edu.cn/baochunyan/zh_CN/index.htm",
+        "native_link_target": "https://faculty.uestc.edu.cn/baochunyan/zh_CN/index.htm",
+        "roster_source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+        "roster_source_id": "uestc-rotation003-roster",
+        "order": 1,
+        "roster_category": "公共管理学院教师列表 / 首页",
+        "listed_role": null,
+        "listed_role_source_id": null,
+        "status": "held_not_integrated",
+        "reason": "Official native profile is readable but has only identity/qualification labels and insufficient professional biography.",
+        "source_ids": [
+          "uestc-rotation003-roster",
+          "uestc-baochunyan-profile"
+        ],
+        "web_reference": "turn2246view3",
+        "qualification_labels": [
+          {
+            "field": "学位",
+            "value": "管理学硕士学位",
+            "source_id": "uestc-baochunyan-profile",
+            "source_url": "https://faculty.uestc.edu.cn/baochunyan/zh_CN/index.htm",
+            "evidence_status": "official_public_body_read",
+            "field_provenance": {
+              "field": "uestc-baochunyan-profile",
+              "value": "uestc-baochunyan-profile"
+            }
+          },
+          {
+            "field": "学历",
+            "value": "硕士研究生毕业",
+            "source_id": "uestc-baochunyan-profile",
+            "source_url": "https://faculty.uestc.edu.cn/baochunyan/zh_CN/index.htm",
+            "evidence_status": "official_public_body_read",
+            "field_provenance": {
+              "field": "uestc-baochunyan-profile",
+              "value": "uestc-baochunyan-profile"
+            }
+          }
+        ],
+        "education": [],
+        "mentors": [],
+        "unknowns": [
+          "授位院校、求学起止时间及导师均未核实；资格标签不转成学历事件。"
+        ],
+        "retry_attempted": false,
+        "replacement_selected": false
+      },
+      {
+        "id": "roster-uestc-fangdecheng",
+        "name": "方德成",
+        "school_id": "uestc",
+        "organization_id": "uestc-public-administration",
+        "department_id": "uestc-public-administration",
+        "campus_ids": [],
+        "official_profile_url": "https://faculty.uestc.edu.cn/fangdecheng/zh_CN/index.htm",
+        "native_link_target": "https://faculty.uestc.edu.cn/fangdecheng/zh_CN/index.htm",
+        "roster_source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+        "roster_source_id": "uestc-rotation003-roster",
+        "order": 2,
+        "roster_category": "公共管理学院教师列表 / 首页",
+        "listed_role": "工程师（管理）",
+        "listed_role_source_id": "uestc-rotation003-roster",
+        "status": "held_not_integrated",
+        "reason": "Official native profile is readable but has only identity/qualification labels and insufficient professional biography.",
+        "source_ids": [
+          "uestc-rotation003-roster",
+          "uestc-fangdecheng-profile"
+        ],
+        "web_reference": "turn2246view4",
+        "qualification_labels": [
+          {
+            "field": "学历",
+            "value": "大学本科毕业",
+            "source_id": "uestc-fangdecheng-profile",
+            "source_url": "https://faculty.uestc.edu.cn/fangdecheng/zh_CN/index.htm",
+            "evidence_status": "official_public_body_read",
+            "field_provenance": {
+              "field": "uestc-fangdecheng-profile",
+              "value": "uestc-fangdecheng-profile"
+            }
+          },
+          {
+            "field": "学位",
+            "value": "公共管理硕士专业学位",
+            "source_id": "uestc-fangdecheng-profile",
+            "source_url": "https://faculty.uestc.edu.cn/fangdecheng/zh_CN/index.htm",
+            "evidence_status": "official_public_body_read",
+            "field_provenance": {
+              "field": "uestc-fangdecheng-profile",
+              "value": "uestc-fangdecheng-profile"
+            }
+          }
+        ],
+        "education": [],
+        "mentors": [],
+        "unknowns": [
+          "授位院校、求学起止时间及导师均未核实；资格标签不转成学历事件。"
+        ],
+        "retry_attempted": false,
+        "replacement_selected": false
+      }
+    ],
+    "pending_people": [],
+    "limitations": [
+      "每校仅一个新院系原序首3小样本；未遍历全院系，不声明覆盖完成。",
+      "名录原序不因履历丰富度或访问结果改变；hold不替补、不制造pending人物。",
+      "当前官网列示不等于独立实时人事核验；主页可导航与当前在职认定分开。",
+      "仅本科/硕士毕业不能推断授位；招生专业、导师资格、资格标签不能证明个人授位或师承。",
+      "日期未披露则留空；导师无阶段直接证据则留空。",
+      "仅保留最短必要公开职业证据，不缓存完整网页、不保存出生、联系方式或家庭信息。"
+    ],
+    "counts": {
+      "people": 1,
+      "held": 2,
+      "pending_people": 0
+    }
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T02:32:42.188291+00:00",
+    "data_sha256": "69e57db2d5bb6f88d88c4cce0ca90588e183fe44af5edb855153e8fc6af7562c",
+    "counts": {
+      "education": 3,
+      "appointments": 1,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 1,
+      "honors": 1,
+      "research_fields": 3,
+      "teaching": 4,
+      "research_projects": 2,
+      "academic_service": 0,
+      "professional_qualifications": 0,
+      "pending_education_candidates": 0,
+      "pending_mentor_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "people": 1,
+      "held": 2,
+      "pending_people": 0,
+      "unique_sources": 6,
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 2
+    },
+    "integration_limits": [
+      "只批准精确哈希的限定事实；本审不是消费者schema、站点、导出或远端发布审核。",
+      "原序、选样、名录可见条目数与当前人事人数分别记录；不声称全院或全校完整。",
+      "授位true、false、null三态以及博士后、访问、学习、资格标签、任职和课程保持区分。",
+      "当前官网列示不等独立实时人事证明；个人主页可导航不等在职导师快捷链接。",
+      "不补未披露的校区、学位、专业、导师、精确日期或同名身份。未采集某字段不代表不存在。",
+      "来源差异须保留；历史标题、当前标题与同一博士后跨教育/任职表示不可重复计算为独立工作或学位。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "每校仅一个新院系原序首3小样本；未遍历全院系，不声明覆盖完成。",
+    "名录原序不因履历丰富度或访问结果改变；hold不替补、不制造pending人物。",
+    "当前官网列示不等于独立实时人事核验；主页可导航与当前在职认定分开。",
+    "仅本科/硕士毕业不能推断授位；招生专业、导师资格、资格标签不能证明个人授位或师承。",
+    "日期未披露则留空；导师无阶段直接证据则留空。",
+    "仅保留最短必要公开职业证据，不缓存完整网页、不保存出生、联系方式或家庭信息。",
+    "只批准精确哈希的限定事实；本审不是消费者schema、站点、导出或远端发布审核。",
+    "原序、选样、名录可见条目数与当前人事人数分别记录；不声称全院或全校完整。",
+    "授位true、false、null三态以及博士后、访问、学习、资格标签、任职和课程保持区分。",
+    "当前官网列示不等独立实时人事证明；个人主页可导航不等在职导师快捷链接。",
+    "不补未披露的校区、学位、专业、导师、精确日期或同名身份。未采集某字段不代表不存在。",
+    "来源差异须保留；历史标题、当前标题与同一博士后跨教育/任职表示不可重复计算为独立工作或学位。"
+  ],
+  "next_action": "保留原序与hold，不替补、不重试受限路线；追加核验须另获授权，不声称完整院系。",
+  "display_scope": "研究项目、荣誉与职业资格逐字段保留于结构化数据，本版本无专用页面或Excel列；不混入教育、任职、师承或论文统计。",
+  "classification_scope": "原包显式unknown的985/地域/洲分类保持未知；未用名称猜测俄校实体或加州分校。",
+  "release_status": "local_not_published"
+}

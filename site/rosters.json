@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "39校公开名录样本，1759条整合记录、1797条原始来源观察；原1746记录与1784观察不变。新增6校13选中观察不表示全院或当前人事总数。",
+  "scope": "39校公开名录样本，1766条整合记录、1804条原始观察。本批仅新增7经审原生名录观察；5个hold不计入名录或人物；不是全院或当前人事总数。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -1401,6 +1401,27 @@
     {
       "school_id": "sdu",
       "organization_id": "sdu-physics",
+      "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "csu",
+      "organization_id": "csu-physics",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "scut",
+      "organization_id": "scut-architecture-department",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "uestc",
+      "organization_id": "uestc-public-administration",
       "visible_roster_entries": 1,
       "count_scope": "selected_subset_only",
       "coverage_complete": false
@@ -5473,6 +5494,69 @@
       "batch_id": "sdu-selected-roster-rotation-003",
       "source_category_observed_count": 3,
       "source_category_count_basis": "SEU教授类别16个原序姓名人工清点；RUC首页面20项、分页标注50；SDU原文2026年博士招生名单44人。不是实时人事总数。",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "csu",
+      "organization_id": "csu-physics",
+      "url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+      "category": "教授：（含正高职称人员，按姓名拼音排序）",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "物理学院 / 教授（含正高职称，按姓名拼音）",
+      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "csu-selected-roster-rotation-003",
+      "source_category_observed_count": 42,
+      "source_category_count_basis": "Manual count of the professor category in source L199-L280; no independent current employment denominator.",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "scut",
+      "organization_id": "scut-architecture-department",
+      "url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+      "category": "专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "建筑学院 / 专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "scut-selected-roster-rotation-003",
+      "source_category_observed_count": 25,
+      "source_category_count_basis": "官方类别页正文“总共25记录”，页码1/1；非独立人事人数。",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "uestc",
+      "organization_id": "uestc-public-administration",
+      "url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+      "category": "公共管理学院教师列表 / 首页",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "公共管理学院 / 公共管理学院教师列表 / 首页",
+      "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement.",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "uestc-selected-roster-rotation-003",
+      "source_category_observed_count": 16,
+      "source_category_count_basis": "Source body pagination and native visible entries; source-time category, not real-time personnel total.",
       "source_category_evidence_level": "official_roster_body_read"
     }
   ],
@@ -65170,6 +65254,440 @@
       "automatic_merge": false,
       "candidate_person_ids": [],
       "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-csu-physics-fujunwei",
+      "name": "傅俊伟",
+      "school_id": "csu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "csu-physics",
+      "department_id": "csu-physics",
+      "category": "教授：（含正高职称人员，按姓名拼音排序）",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+      "roster_source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "csu-fujunwei",
+      "source_person_id": "csu-fujunwei",
+      "batch_id": "csu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-csu-rotation-003",
+      "source_ids": [
+        "csu-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
+      "selection_status": "selected_subset",
+      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+        "profile_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+        "native_link_target": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+        "source_ids": [
+          "csu-rotation003-roster",
+          "csu-fujunwei-profile"
+        ]
+      },
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "csu-rotation003-roster",
+          "csu-fujunwei-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+        "official_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+        "reviewed_source_sha256": "4ff995e135b6f7d00a53a21b4aa7718002c897d1a4e6aa0b1ffc1e3d1620bb05",
+        "independent_review_sha256": "b1b5b90251e645cb09d491384ada4ebda2eb7228d2c0103bf8343841fc45e91c",
+        "scope_note": "仅原生名录链接与部分职业身份已核；不推实时人事或完整履历。"
+      },
+      "notes": [
+        "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
+        "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution."
+      ],
+      "source_observation_ids": [
+        "csu-selected-roster-rotation-003:roster-csu-physics-fujunwei:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-csu-physics-guoaimin",
+      "name": "郭爱敏",
+      "school_id": "csu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "csu-physics",
+      "department_id": "csu-physics",
+      "category": "教授：（含正高职称人员，按姓名拼音排序）",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+      "roster_source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "csu-guoaimin",
+      "source_person_id": "csu-guoaimin",
+      "batch_id": "csu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-csu-rotation-003",
+      "source_ids": [
+        "csu-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
+      "selection_status": "selected_subset",
+      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+        "profile_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+        "native_link_target": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+        "source_ids": [
+          "csu-rotation003-roster",
+          "csu-guoaimin-profile"
+        ]
+      },
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "csu-rotation003-roster",
+          "csu-guoaimin-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+        "official_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+        "reviewed_source_sha256": "4ff995e135b6f7d00a53a21b4aa7718002c897d1a4e6aa0b1ffc1e3d1620bb05",
+        "independent_review_sha256": "b1b5b90251e645cb09d491384ada4ebda2eb7228d2c0103bf8343841fc45e91c",
+        "scope_note": "仅原生名录链接与部分职业身份已核；不推实时人事或完整履历。"
+      },
+      "notes": [
+        "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
+        "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution."
+      ],
+      "source_observation_ids": [
+        "csu-selected-roster-rotation-003:roster-csu-physics-guoaimin:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-csu-physics-guoguanghua",
+      "name": "郭光华",
+      "school_id": "csu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "csu-physics",
+      "department_id": "csu-physics",
+      "category": "教授：（含正高职称人员，按姓名拼音排序）",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+      "roster_source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "csu-guoguanghua",
+      "source_person_id": "csu-guoguanghua",
+      "batch_id": "csu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-csu-rotation-003",
+      "source_ids": [
+        "csu-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
+      "selection_status": "selected_subset",
+      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+        "profile_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+        "native_link_target": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+        "source_ids": [
+          "csu-rotation003-roster",
+          "csu-guoguanghua-profile"
+        ]
+      },
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "csu-rotation003-roster",
+          "csu-guoguanghua-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+        "official_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+        "reviewed_source_sha256": "4ff995e135b6f7d00a53a21b4aa7718002c897d1a4e6aa0b1ffc1e3d1620bb05",
+        "independent_review_sha256": "b1b5b90251e645cb09d491384ada4ebda2eb7228d2c0103bf8343841fc45e91c",
+        "scope_note": "仅原生名录链接与部分职业身份已核；不推实时人事或完整履历。"
+      },
+      "notes": [
+        "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
+        "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution."
+      ],
+      "source_observation_ids": [
+        "csu-selected-roster-rotation-003:roster-csu-physics-guoguanghua:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-scut-bianyu",
+      "name": "边宇",
+      "school_id": "scut",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "scut-architecture-department",
+      "department_id": "scut-architecture-department",
+      "category": "专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "listed_role": "教授、博士生导师",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+      "roster_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "scut-bianyu",
+      "source_person_id": "scut-bianyu",
+      "batch_id": "scut-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-scut-rotation-003",
+      "source_ids": [
+        "scut-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
+      "selection_status": "selected_subset",
+      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "profile_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+        "native_link_target": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+        "source_ids": [
+          "scut-rotation003-roster",
+          "scut-bianyu-profile"
+        ]
+      },
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "scut-rotation003-roster",
+          "scut-bianyu-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "official_url": "https://www2.scut.edu.cn/architecture/2023/0531/c35342a505234/page.htm",
+        "reviewed_source_sha256": "b9d6f12723ee263cbbb5d906db58d196bdc59f474a198cc411d2a6d3ed123f70",
+        "independent_review_sha256": "b0d3a97d62041d6a0a0663ea5d939c22a6d55c0f9aef0cb307ab6126409f3443",
+        "scope_note": "仅原生名录链接与部分职业身份已核；不推实时人事或完整履历。"
+      },
+      "notes": [
+        "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
+        "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates"
+      ],
+      "source_observation_ids": [
+        "scut-selected-roster-rotation-003:roster-scut-bianyu:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-scut-chenjianhua",
+      "name": "陈建华",
+      "school_id": "scut",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "scut-architecture-department",
+      "department_id": "scut-architecture-department",
+      "category": "专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+      "roster_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "scut-chenjianhua",
+      "source_person_id": "scut-chenjianhua",
+      "batch_id": "scut-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-scut-rotation-003",
+      "source_ids": [
+        "scut-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
+      "selection_status": "selected_subset",
+      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "profile_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+        "native_link_target": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+        "source_ids": [
+          "scut-rotation003-roster",
+          "scut-chenjianhua-profile"
+        ]
+      },
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "scut-rotation003-roster",
+          "scut-chenjianhua-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "official_url": "https://www2.scut.edu.cn/architecture/2023/0601/c35342a560089/page.htm",
+        "reviewed_source_sha256": "b9d6f12723ee263cbbb5d906db58d196bdc59f474a198cc411d2a6d3ed123f70",
+        "independent_review_sha256": "b0d3a97d62041d6a0a0663ea5d939c22a6d55c0f9aef0cb307ab6126409f3443",
+        "scope_note": "仅原生名录链接与部分职业身份已核；不推实时人事或完整履历。"
+      },
+      "notes": [
+        "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
+        "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates"
+      ],
+      "source_observation_ids": [
+        "scut-selected-roster-rotation-003:roster-scut-chenjianhua:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-scut-chenchangyong",
+      "name": "陈昌勇",
+      "school_id": "scut",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "scut-architecture-department",
+      "department_id": "scut-architecture-department",
+      "category": "专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+      "roster_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "scut-chenchangyong",
+      "source_person_id": "scut-chenchangyong",
+      "batch_id": "scut-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-scut-rotation-003",
+      "source_ids": [
+        "scut-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
+      "selection_status": "selected_subset",
+      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "profile_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+        "native_link_target": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+        "source_ids": [
+          "scut-rotation003-roster",
+          "scut-chenchangyong-profile"
+        ]
+      },
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "scut-rotation003-roster",
+          "scut-chenchangyong-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
+        "official_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm",
+        "reviewed_source_sha256": "b9d6f12723ee263cbbb5d906db58d196bdc59f474a198cc411d2a6d3ed123f70",
+        "independent_review_sha256": "b0d3a97d62041d6a0a0663ea5d939c22a6d55c0f9aef0cb307ab6126409f3443",
+        "scope_note": "仅原生名录链接与部分职业身份已核；不推实时人事或完整履历。"
+      },
+      "notes": [
+        "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
+        "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates"
+      ],
+      "source_observation_ids": [
+        "scut-selected-roster-rotation-003:roster-scut-chenchangyong:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-uestc-fanxin",
+      "name": "范昕",
+      "school_id": "uestc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "uestc-public-administration",
+      "department_id": "uestc-public-administration",
+      "category": "公共管理学院教师列表 / 首页",
+      "listed_role": "副教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://faculty.uestc.edu.cn/fanxin/zh_CN/index.htm",
+      "roster_source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "uestc-fanxin",
+      "source_person_id": "uestc-fanxin",
+      "batch_id": "uestc-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-uestc-rotation-003",
+      "source_ids": [
+        "uestc-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
+      "selection_status": "selected_subset",
+      "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement.",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link_and_independent_same_school_biography",
+        "source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+        "profile_url": "https://faculty.uestc.edu.cn/fanxin/zh_CN/index.htm",
+        "native_link_target": "https://faculty.uestc.edu.cn/fanxin/zh_CN/index.htm",
+        "additional_native_link_source": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc?yxsh=16",
+        "additional_native_link_target": "https://yjsjy.uestc.edu.cn/gmis/jcsjgl/dsfc/dsgrjj/20551?yxsh=16",
+        "corroboration": "两官方系统均指公共管理学院范昕副教授；原生名录链接和学位资格标签交叉相符，不以单纯同名合并。",
+        "source_ids": [
+          "uestc-rotation003-roster",
+          "uestc-fanxin-profile",
+          "uestc-public-admin-admissions-roster",
+          "uestc-fanxin-admissions-profile"
+        ]
+      },
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link_and_independent_same_school_biography",
+        "source_ids": [
+          "uestc-rotation003-roster",
+          "uestc-fanxin-profile",
+          "uestc-public-admin-admissions-roster",
+          "uestc-fanxin-admissions-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+        "official_url": "https://faculty.uestc.edu.cn/fanxin/zh_CN/index.htm",
+        "reviewed_source_sha256": "69e57db2d5bb6f88d88c4cce0ca90588e183fe44af5edb855153e8fc6af7562c",
+        "independent_review_sha256": "ebab147adedab34cc66cf7e049025a31483d39b9df1148be452739da5e79ae78",
+        "scope_note": "仅原生名录链接与部分职业身份已核；不推实时人事或完整履历。"
+      },
+      "notes": [
+        "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
+        "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement."
+      ],
+      "source_observation_ids": [
+        "uestc-selected-roster-rotation-003:roster-uestc-fanxin:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
     }
   ],
   "conflicts": [
@@ -73584,27 +74102,119 @@
         }
       ],
       "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "csu-selected-roster-rotation-003",
+      "school_id": "csu",
+      "accessed_on": "2026-10-24",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-csu-physics-fujunwei",
+        "roster-csu-physics-guoaimin",
+        "roster-csu-physics-guoguanghua"
+      ],
+      "source_observation_ids": [
+        "csu-selected-roster-rotation-003:roster-csu-physics-fujunwei:1",
+        "csu-selected-roster-rotation-003:roster-csu-physics-guoaimin:1",
+        "csu-selected-roster-rotation-003:roster-csu-physics-guoguanghua:1"
+      ],
+      "selection": "物理学院 / 教授（含正高职称，按姓名拼音）",
+      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-csu-rotation-003.json",
+          "sha256": "4ff995e135b6f7d00a53a21b4aa7718002c897d1a4e6aa0b1ffc1e3d1620bb05"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "scut-selected-roster-rotation-003",
+      "school_id": "scut",
+      "accessed_on": "2026-10-24",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-scut-bianyu",
+        "roster-scut-chenjianhua",
+        "roster-scut-chenchangyong"
+      ],
+      "source_observation_ids": [
+        "scut-selected-roster-rotation-003:roster-scut-bianyu:1",
+        "scut-selected-roster-rotation-003:roster-scut-chenjianhua:1",
+        "scut-selected-roster-rotation-003:roster-scut-chenchangyong:1"
+      ],
+      "selection": "建筑学院 / 专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
+      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-scut-rotation-003.json",
+          "sha256": "b9d6f12723ee263cbbb5d906db58d196bdc59f474a198cc411d2a6d3ed123f70"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "uestc-selected-roster-rotation-003",
+      "school_id": "uestc",
+      "accessed_on": "2026-10-24",
+      "observation_count": 1,
+      "record_count": 1,
+      "raw_observation_count": 1,
+      "raw_count": 1,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-uestc-fanxin"
+      ],
+      "source_observation_ids": [
+        "uestc-selected-roster-rotation-003:roster-uestc-fanxin:1"
+      ],
+      "selection": "公共管理学院 / 公共管理学院教师列表 / 首页",
+      "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement.",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-uestc-rotation-003.json",
+          "sha256": "69e57db2d5bb6f88d88c4cce0ca90588e183fe44af5edb855153e8fc6af7562c"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
     }
   ],
   "totals": {
-    "organization_count": 139,
-    "category_count": 203,
-    "entries_with_profile_link": 1546,
+    "organization_count": 142,
+    "category_count": 206,
+    "entries_with_profile_link": 1553,
     "entries_without_profile_link": 213,
     "dedup_candidate_groups": 60,
     "placeholder_profile_link_observations": 18,
     "current_employment_count_verified": false,
     "not_unique_people_count": true,
-    "record_count": 1759,
-    "raw_observation_count": 1797,
-    "roster_records": 1759,
-    "raw_source_observations": 1797,
-    "coverage_unit_count": 230,
+    "record_count": 1766,
+    "raw_observation_count": 1804,
+    "roster_records": 1766,
+    "raw_source_observations": 1804,
+    "coverage_unit_count": 233,
     "count_unit": "integrated_roster_records",
     "source_record_grouping_reduction": 38,
     "category_count_basis": "unique_organization_category_pairs",
-    "unique_organization_category_pairs": 203,
-    "batch_category_count": 222,
+    "unique_organization_category_pairs": 206,
+    "batch_category_count": 225,
     "category_count_source": "coverage_rows_preserved_without_deduplication"
   },
   "role_interpretation": {
@@ -73749,5 +74359,5 @@
     }
   ],
   "raw_data_location": "完整原始来源观察保存在仓库 data/rosters.json，以及导出 Excel 的“原始来源观察”工作表；网站快照不重复加载这些原始内容。",
-  "build_id": "d430dcba943f10e3"
+  "build_id": "1fe206ab16bfa055"
 }

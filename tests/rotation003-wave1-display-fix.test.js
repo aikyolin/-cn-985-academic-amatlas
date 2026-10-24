@@ -1,3 +1,4 @@
+const RELEASE30_PIN_OVERLAY={"data/atlas.json": "7bcbb58ea605ea73fec2a51412850550533ba5617d3f200d3812d10551c534fe", "data/rosters.json": "8be8881d52699b7417e5ae7e542629d64156744d524c581c856faf6172878313", "site/atlas.json": "8a2fe871c7262ffc0a2f3edddb5b970a27382b9f5b85797c44f29f3be7582e4b", "site/rosters.json": "c837c259317159de566137c0227866a1fd7224020afbe1e37ab515ffb8a4f0a2"};
 const RELEASE29_PIN_OVERLAY={"data/atlas.json": "e2cbfcde9c8f96ebc9e96a0829fe95698428b672fd611ab6dff1078eafa75303", "data/rosters.json": "854ff13b8c352b68a51a20c1cd322f638664de68fdf4996bb922dc344250d11b", "site/atlas.json": "4b976d4c2e4a5b0beb1c838263ade37ece4fd8b5561ab8517d8ad83e13ca0996", "site/rosters.json": "e9ac62ce2ff63201b443717af9da4468d449521238dcde53c79fad7e9676c904"};
 const RELEASE28_PIN_OVERLAY={"data/atlas.json": "184d94676b19b55d24d00b9c6056748a3a778754dd920a1a126be21685168d61", "data/rosters.json": "eefa9fe9add7c8dd9aaa49b81deeda73e51a8a1b214a9a6b3a26a2429110de29", "site/atlas.json": "36fe06b748feef6919e105ce3fa81c58426b43d8374ccb03b2d828960462ed8b", "site/rosters.json": "84edc29d2a70ef04d809effe8b3757cba2d614d469691bb16a8ce9f711b052cc"};
 const RELEASE27_PIN_OVERLAY={"data/atlas.json": "602e459ef4bc62aa839e8eff7475819f5a6672e1492b1181ac9188372fe9d1c5", "data/rosters.json": "217716511dc290970fd8708af5cacebaf5f1343b1ec671515b5048e5f81dabec", "site/atlas.json": "1d2e8210a0ca6d60b874d793bd77e49de7da6f845493eb6912b0f4861e57afa2", "site/rosters.json": "4971f6b3812c6f8d133fd0aba909e65f2209b72cfb0d37e668c62531ec0446cc"};
@@ -112,7 +113,7 @@ test('all degree-stage memberships and 122 filter combinations are unchanged by 
 });
 
 test('application and exporter match original bytes or the exact reviewed layout-only overlay',()=>{
- for(const [file,digest]of Object.entries(UNCHANGED_FILES))assert.equal(sha(fs.readFileSync(path.join(root,file))),RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_PIN_OVERLAY[file]||LAYOUT_FIX_APPLICATION_SHA256[file]||digest,file);
+ for(const [file,digest]of Object.entries(UNCHANGED_FILES))assert.equal(sha(fs.readFileSync(path.join(root,file))),RELEASE30_PIN_OVERLAY[file]||RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_PIN_OVERLAY[file]||LAYOUT_FIX_APPLICATION_SHA256[file]||digest,file);
  for(const [file,n]of [['site/app.js',3],['site/rosters.js',1],['site/index.html',2]])assert.equal(fs.readFileSync(path.join(root,file),'utf8').split('rotation003-20261024-w2').length-1,n);
 });
 

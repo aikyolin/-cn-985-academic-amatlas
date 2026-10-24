@@ -1,0 +1,299 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "151fa84f9a732b253efc180b6cedf48e19740620",
+  "school_id": "csu",
+  "school_name": "中南大学",
+  "batch_id": "faculty-batch-csu-rotation-003",
+  "status": "partial",
+  "held_candidates": [],
+  "selected_candidate_names": [
+    "傅俊伟",
+    "郭爱敏",
+    "郭光华"
+  ],
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "物理学院 / 教授（含正高职称，按姓名拼音）",
+  "selection_method": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+  "source_urls": [
+    "https://wl.csu.edu.cn/xygk/szdw1.htm"
+  ],
+  "selected_roster_observations": 3,
+  "source_category_observed_count": 42,
+  "source_category_count_basis": "Manual count of the professor category in source L199-L280; no independent current employment denominator.",
+  "source_total_reported": null,
+  "selected_roster_original_order": [
+    {
+      "id": "roster-csu-physics-fujunwei",
+      "school_id": "csu",
+      "organization_id": "csu-physics",
+      "department_id": "csu-physics",
+      "campus_ids": [],
+      "name": "傅俊伟",
+      "official_profile_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+      "native_link_target": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+      "roster_source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+      "order": 1,
+      "roster_category": "教授：（含正高职称人员，按姓名拼音排序）",
+      "listed_role": "教授",
+      "listed_role_basis": "individual_profile_explicit_title",
+      "source_ids": [
+        "csu-rotation003-roster",
+        "csu-fujunwei-profile"
+      ]
+    },
+    {
+      "id": "roster-csu-physics-guoaimin",
+      "school_id": "csu",
+      "organization_id": "csu-physics",
+      "department_id": "csu-physics",
+      "campus_ids": [],
+      "name": "郭爱敏",
+      "official_profile_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+      "native_link_target": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+      "roster_source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+      "order": 2,
+      "roster_category": "教授：（含正高职称人员，按姓名拼音排序）",
+      "listed_role": "教授",
+      "listed_role_basis": "individual_profile_explicit_title",
+      "source_ids": [
+        "csu-rotation003-roster",
+        "csu-guoaimin-profile"
+      ]
+    },
+    {
+      "id": "roster-csu-physics-guoguanghua",
+      "school_id": "csu",
+      "organization_id": "csu-physics",
+      "department_id": "csu-physics",
+      "campus_ids": [],
+      "name": "郭光华",
+      "official_profile_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+      "native_link_target": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+      "roster_source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+      "order": 3,
+      "roster_category": "教授：（含正高职称人员，按姓名拼音排序）",
+      "listed_role": "教授",
+      "listed_role_basis": "individual_profile_explicit_title",
+      "source_ids": [
+        "csu-rotation003-roster",
+        "csu-guoguanghua-profile"
+      ]
+    }
+  ],
+  "counts": {
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "held": 0,
+    "source_collections": {
+      "education": 11,
+      "appointments": 14,
+      "mentors": 1,
+      "committee_members": 0,
+      "publications": 6,
+      "research_fields": 8,
+      "teaching": 1,
+      "honors": 0,
+      "research_projects": 0,
+      "academic_service": 0,
+      "professional_qualifications": 0,
+      "research_collaborators": 0,
+      "professional_research_advisors": 0,
+      "project_guidance": 0,
+      "pending_education_candidates": 0,
+      "pending_mentor_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 6,
+      "degree_awarded_false": 4,
+      "degree_awarded_null": 1,
+      "confirmed_degree_events": 6
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-csu-rotation-003.json",
+      "sha256": "4ff995e135b6f7d00a53a21b4aa7718002c897d1a4e6aa0b1ffc1e3d1620bb05",
+      "independent_review_file": "faculty-batch-csu-rotation-003-independent-review.json",
+      "independent_review_sha256": "b1b5b90251e645cb09d491384ada4ebda2eb7228d2c0103bf8343841fc45e91c",
+      "scope_file": "faculty-batch-csu-rotation-003-scope.json",
+      "scope_sha256": "0b192fccc505d6c6608ca79fd0900c1157db04d3050a17816cfa56f5f5de3b23",
+      "qa_file": "faculty-batch-csu-rotation-003-qa.json",
+      "qa_sha256": "c5caead0275e504465b65b56881d0ebf8ffe72b75ce34f5797edf14f126c68b4"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-csu-rotation-003",
+    "base_commit": "151fa84f9a732b253efc180b6cedf48e19740620",
+    "institution": {
+      "id": "csu",
+      "official_name": "中南大学",
+      "official_url": "https://www.csu.edu.cn/",
+      "source_urls": [
+        "https://wl.csu.edu.cn/xygk/szdw1.htm"
+      ],
+      "scope_note": "物理学院教授类别原序首3，保持选人锁，不因来源受限替换。"
+    },
+    "org_units": [
+      {
+        "id": "csu-physics",
+        "name": "物理学院",
+        "type": "school",
+        "school_id": "csu",
+        "parent_id": "csu",
+        "campus_ids": [],
+        "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+        "source_id": "csu-rotation003-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "物理学院 / 教授（含正高职称，按姓名拼音）",
+    "retrieved_at": "2026-10-24",
+    "coverage_complete": false,
+    "fields_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "csu-rotation003-roster",
+        "url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
+        "source_type": "university_official",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "web_reference": "turn2243view0",
+        "evidence_file": "research-rotation003-csu-scut/csu/csu-roster-minimal.json",
+        "public_raw_cache": false
+      },
+      {
+        "id": "csu-fujunwei-profile",
+        "url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
+        "source_type": "university_official",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "web_reference": "turn2245view0",
+        "evidence_file": "research-rotation003-csu-scut/csu/csu-fujunwei-minimal.json",
+        "public_raw_cache": false
+      },
+      {
+        "id": "csu-guoaimin-profile",
+        "url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
+        "source_type": "university_official",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "web_reference": "turn2245view1",
+        "evidence_file": "research-rotation003-csu-scut/csu/csu-guoaimin-minimal.json",
+        "public_raw_cache": false
+      },
+      {
+        "id": "csu-guoguanghua-profile",
+        "url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
+        "source_type": "university_official",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": null,
+        "web_reference": "turn2263view0",
+        "evidence_file": "research-rotation003-csu-scut/csu/csu-guoguanghua-minimal.json",
+        "public_raw_cache": false
+      },
+      {
+        "id": "csu-guoaimin-2017-talk",
+        "url": "https://wl.csu.edu.cn/info/1042/2029.htm",
+        "source_type": "university_official",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "published_at": "2017-05-02",
+        "web_reference": "turn2261view0",
+        "evidence_file": "research-rotation003-csu-scut/csu/csu-guoaimin-2017-talk-minimal.json",
+        "public_raw_cache": false
+      }
+    ],
+    "pending_people": [],
+    "limitations": [
+      "仅物理学院教授类别原序首3，不代表全院或全校完整覆盖；已有计算机、数学人员不重复。",
+      "学位资格标签、学习/毕业区间不单独证明授位；仅直接授位句支持true。授位日期与学习结束日期独立记录。",
+      "访问、博士后为非授位事件；导师需本人直接说明培养阶段。页面在职字段只表示官网当前自述，不等同独立实时人事核验。",
+      "来源中的任职起点、历史机构称谓与学历日期歧义显式保留，不选择最顺畅的履历。",
+      "精选论文每人2项仅官网书目，不是论文全集，未读论文全文或独立核验出版商最终元数据；不猜DOI。",
+      "仅最小职业学术事实和短证据摘录，无联系方式、出生、性别、家庭、学生名单、照片或完整网页缓存。",
+      "院校985及地理分类本研究批次不作未取证推断，统一保留unknown等待整合阶段既有规范化证据映射。"
+    ],
+    "counts": {
+      "people": 3,
+      "held": 0,
+      "pending_people": 0,
+      "education_events": 11,
+      "degree_awarded_true": 6,
+      "degree_awarded_false": 4,
+      "degree_awarded_null": 1,
+      "mentors": 1,
+      "publications": 6
+    }
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T02:32:42.184064+00:00",
+    "data_sha256": "4ff995e135b6f7d00a53a21b4aa7718002c897d1a4e6aa0b1ffc1e3d1620bb05",
+    "counts": {
+      "education": 11,
+      "appointments": 14,
+      "mentors": 1,
+      "committee_members": 0,
+      "publications": 6,
+      "honors": 0,
+      "research_fields": 8,
+      "teaching": 1,
+      "research_projects": 0,
+      "academic_service": 0,
+      "professional_qualifications": 0,
+      "pending_education_candidates": 0,
+      "pending_mentor_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "people": 3,
+      "held": 0,
+      "pending_people": 0,
+      "unique_sources": 5,
+      "degree_awarded_true": 6,
+      "degree_awarded_false": 4,
+      "degree_awarded_null": 1
+    },
+    "integration_limits": [
+      "只批准精确哈希的限定事实；本审不是消费者schema、站点、导出或远端发布审核。",
+      "原序、选样、名录可见条目数与当前人事人数分别记录；不声称全院或全校完整。",
+      "授位true、false、null三态以及博士后、访问、学习、资格标签、任职和课程保持区分。",
+      "当前官网列示不等独立实时人事证明；个人主页可导航不等在职导师快捷链接。",
+      "不补未披露的校区、学位、专业、导师、精确日期或同名身份。未采集某字段不代表不存在。",
+      "来源差异须保留；历史标题、当前标题与同一博士后跨教育/任职表示不可重复计算为独立工作或学位。",
+      "985、地域与洲分类源包unknown；只有经已有来源映射和独立整合审核才能标准化，不得在本审名义下猜测郭光华俄校唯一实体或郭爱敏加州分校。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "仅物理学院教授类别原序首3，不代表全院或全校完整覆盖；已有计算机、数学人员不重复。",
+    "学位资格标签、学习/毕业区间不单独证明授位；仅直接授位句支持true。授位日期与学习结束日期独立记录。",
+    "访问、博士后为非授位事件；导师需本人直接说明培养阶段。页面在职字段只表示官网当前自述，不等同独立实时人事核验。",
+    "来源中的任职起点、历史机构称谓与学历日期歧义显式保留，不选择最顺畅的履历。",
+    "精选论文每人2项仅官网书目，不是论文全集，未读论文全文或独立核验出版商最终元数据；不猜DOI。",
+    "仅最小职业学术事实和短证据摘录，无联系方式、出生、性别、家庭、学生名单、照片或完整网页缓存。",
+    "院校985及地理分类本研究批次不作未取证推断，统一保留unknown等待整合阶段既有规范化证据映射。",
+    "只批准精确哈希的限定事实；本审不是消费者schema、站点、导出或远端发布审核。",
+    "原序、选样、名录可见条目数与当前人事人数分别记录；不声称全院或全校完整。",
+    "授位true、false、null三态以及博士后、访问、学习、资格标签、任职和课程保持区分。",
+    "当前官网列示不等独立实时人事证明；个人主页可导航不等在职导师快捷链接。",
+    "不补未披露的校区、学位、专业、导师、精确日期或同名身份。未采集某字段不代表不存在。",
+    "来源差异须保留；历史标题、当前标题与同一博士后跨教育/任职表示不可重复计算为独立工作或学位。",
+    "985、地域与洲分类源包unknown；只有经已有来源映射和独立整合审核才能标准化，不得在本审名义下猜测郭光华俄校唯一实体或郭爱敏加州分校。"
+  ],
+  "next_action": "保留原序与hold，不替补、不重试受限路线；追加核验须另获授权，不声称完整院系。",
+  "display_scope": "研究项目、荣誉与职业资格逐字段保留于结构化数据，本版本无专用页面或Excel列；不混入教育、任职、师承或论文统计。",
+  "classification_scope": "原包显式unknown的985/地域/洲分类保持未知；未用名称猜测俄校实体或加州分校。",
+  "release_status": "local_not_published"
+}

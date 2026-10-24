@@ -1,0 +1,538 @@
+{
+  "data/atlas.json": {
+    "object_sha256": "362a572a97d7f40e6226f7ac84fb0016378133d0a6db8e0c8c401cbce56af230",
+    "byte_sha256": "e2cbfcde9c8f96ebc9e96a0829fe95698428b672fd611ab6dff1078eafa75303",
+    "lists": {
+      "limitations": {
+        "length": 6,
+        "sha256": "a49996988d143a02303ec539cb493667cdc9b28a287271ae141f6cfd7b95021a"
+      },
+      "campuses": {
+        "length": 4,
+        "sha256": "a29d9956fbbc284b9cdafc640ac9057dd4512c2181d89780a92a6a8bf01e6505"
+      },
+      "org_units": {
+        "length": 246,
+        "sha256": "04ae6d0c058b3cf3579b4d4c0ce6d11c0d4ba466cb73996d04e80f56f29b9d8c"
+      },
+      "people": {
+        "length": 593,
+        "sha256": "17b7494d4a67261c484e426993c60ea756743b76fec3d834bd69456ad4688d26"
+      },
+      "profile_batches": {
+        "length": 152,
+        "sha256": "17e7642a423b5af0a0e53b7f72bf22b0021d6f3ffbc21349bd02b000adc4cac9"
+      },
+      "pending_people": {
+        "length": 84,
+        "sha256": "66de95adae0df7d6593087b57dedc89a379bf86490cb70f0713ddf658b91d86a"
+      },
+      "normalization_evidence": {
+        "length": 19,
+        "sha256": "5f366f6721dfe6e996f075a537c2d9cfb06eaa5e9d43223b23494fc7269984dd"
+      },
+      "institutions": {
+        "length": 39,
+        "sha256": "8234ea78331d931b8a54c5f40d4427a7844e7fcd621d0832a69e5f2df1b41848"
+      }
+    },
+    "metadata": {
+      "schema_version": "0.1",
+      "updated_at": "2026-10-23",
+      "institution": {
+        "id": "hit",
+        "official_name": "哈尔滨工业大学",
+        "official_url": "https://www.hit.edu.cn/"
+      },
+      "coverage": {
+        "weihai": "官方院系设置页全部展示名称已录入，未覆盖所有内部系所。",
+        "shenzhen": "院系部门页学部设置区全部展示名称已录入：4学部、15学院、5研究院；另增研究生培养表2系。行政部门及直属服务单位不在范围。",
+        "harbin": "当前28个组织节点有哈尔滨校区来源归属；另10个全校节点校区仍待核实。组织及教师全量覆盖尚未完成。"
+      },
+      "scope_note": "39校选中名录和部分职业资料，本批新增13部分职业，当前593职业、84待补；不代表全院全校或当前在岗覆盖。师承保留博士、硕士、联合培养与博士后阶段，候选书目不进确证论文。"
+    },
+    "mutable_metadata": [
+      "scope_note",
+      "scope",
+      "totals",
+      "build_id",
+      "base_commit"
+    ]
+  },
+  "data/rosters.json": {
+    "object_sha256": "02a38082f3fbd4c19bfeb1a965811e96f8f198d0cfe88ec29f926c13d44cb5f3",
+    "byte_sha256": "854ff13b8c352b68a51a20c1cd322f638664de68fdf4996bb922dc344250d11b",
+    "lists": {
+      "summary": {
+        "length": 159,
+        "sha256": "7f01f8af00684466b6d0e63e00705561ed7608267bc97f993b151b90bf2e8c26"
+      },
+      "coverage": {
+        "length": 230,
+        "sha256": "ae55ca2683b9d92a372ecb0fd4ba3ca5cc6024335bd31cc1933c51a084b707fb"
+      },
+      "entries": {
+        "length": 1759,
+        "sha256": "e33e4ee77eb58b38aa89a3dd1b8f78a05d1df74f4f6b4ddf592c455bdb6d2e06"
+      },
+      "conflicts": {
+        "length": 30,
+        "sha256": "0f809e3a2c4ef1857b03479230f35a342b703ccf5f8a99ef032271d150c44c09"
+      },
+      "limitations": {
+        "length": 35,
+        "sha256": "4fe8dea8da59fb3789194955a1b22aac4453cbf0e6a4d1cc2e82d172ba77c116"
+      },
+      "dedup_candidates": {
+        "length": 60,
+        "sha256": "0a1adbff0d7b0ae2fe42cceff9a89e5e9eb6d164044456f319cfab6c9d1b1653"
+      },
+      "exclusions": {
+        "length": 3,
+        "sha256": "89dc768c034efe9de60bb4199c92be749ea7f1bb1405daceff0e3ca88fa5228d"
+      },
+      "pending_checks": {
+        "length": 2,
+        "sha256": "143ba1254ce843007ed487ca7f7ef2c684912b54c0580c6bb3f7157b7bc61048"
+      },
+      "source_snapshots": {
+        "length": 36,
+        "sha256": "64efd7679845995f5418bdfba501a5908717932d9c26ef812ae8987cc1a1d778"
+      },
+      "batches": {
+        "length": 125,
+        "sha256": "b8a3c4363eab7cc729ca309a090c7e31b8048cad552e5d027ae9c46a1fc6ac83"
+      },
+      "source_observations": {
+        "length": 1797,
+        "sha256": "2b3499022e8eb736ef4ed054a6faef1c6d9697a1856d8c0b9916e4165a246aa2"
+      },
+      "consolidations": {
+        "length": 2,
+        "sha256": "094423def9986b8e47457a6592e143f75d67eaa7647c2c346df93d54b983e4e0"
+      },
+      "supporting_method_evidence": {
+        "length": 4,
+        "sha256": "499f5f2aa6250f9300c5953df9a10da6aeeb384aa2543a7c45862cb8539a1efa"
+      },
+      "local_mapping_corrections": {
+        "length": 4,
+        "sha256": "9a1ccc7df1e46b7e8240c3963456fcaf0177d07ad31c051db7d1d5334a1aca1d"
+      },
+      "withdrawn_local_conflicts": {
+        "length": 1,
+        "sha256": "8b54b3a107c8f050e3c33cc2125a710a4084b1be287fdb20db8ca392c093ed05"
+      }
+    },
+    "metadata": {
+      "schema_version": "0.1",
+      "accessed_on": "2026-10-23",
+      "scope": "39校公开名录样本，1759条整合记录、1797条原始来源观察；原1746记录与1784观察不变。新增6校13选中观察不表示全院或当前人事总数。",
+      "totals": {
+        "organization_count": 139,
+        "category_count": 203,
+        "entries_with_profile_link": 1546,
+        "entries_without_profile_link": 213,
+        "dedup_candidate_groups": 60,
+        "placeholder_profile_link_observations": 18,
+        "current_employment_count_verified": false,
+        "not_unique_people_count": true,
+        "record_count": 1759,
+        "raw_observation_count": 1797,
+        "roster_records": 1759,
+        "raw_source_observations": 1797,
+        "coverage_unit_count": 230,
+        "count_unit": "integrated_roster_records",
+        "source_record_grouping_reduction": 38,
+        "category_count_basis": "unique_organization_category_pairs",
+        "unique_organization_category_pairs": 203,
+        "batch_category_count": 222,
+        "category_count_source": "coverage_rows_preserved_without_deduplication"
+      },
+      "role_interpretation": {
+        "孔珂": "网页列在讲师栏，但姓名附注博士后/特聘副研究员，保留二者，不强制解释为讲师职称。",
+        "刘心岩": "网页列在讲师栏，但姓名附注博士后/助理研究员，保留二者。",
+        "王复明": "海洋工程船舶系名录明确附注兼职，不按普通专任计数。",
+        "Gardoni Paolo": "土木系名录明确附注兼职。",
+        "实验中心": "这是名录分组标题，不是个人职称。",
+        "拖曳水池与综合水池": "这是名录分组标题，不是个人职称。"
+      }
+    },
+    "mutable_metadata": [
+      "scope_note",
+      "scope",
+      "totals",
+      "build_id",
+      "base_commit"
+    ]
+  },
+  "site/atlas.json": {
+    "object_sha256": "c9c4cf16a556e5efe1fb1911f27a0b41340a1a774a0ea36a733185122dd29a58",
+    "byte_sha256": "4b976d4c2e4a5b0beb1c838263ade37ece4fd8b5561ab8517d8ad83e13ca0996",
+    "lists": {
+      "limitations": {
+        "length": 6,
+        "sha256": "a49996988d143a02303ec539cb493667cdc9b28a287271ae141f6cfd7b95021a"
+      },
+      "campuses": {
+        "length": 4,
+        "sha256": "a29d9956fbbc284b9cdafc640ac9057dd4512c2181d89780a92a6a8bf01e6505"
+      },
+      "org_units": {
+        "length": 246,
+        "sha256": "04ae6d0c058b3cf3579b4d4c0ce6d11c0d4ba466cb73996d04e80f56f29b9d8c"
+      },
+      "people": {
+        "length": 593,
+        "sha256": "17b7494d4a67261c484e426993c60ea756743b76fec3d834bd69456ad4688d26"
+      },
+      "profile_batches": {
+        "length": 152,
+        "sha256": "17e7642a423b5af0a0e53b7f72bf22b0021d6f3ffbc21349bd02b000adc4cac9"
+      },
+      "pending_people": {
+        "length": 84,
+        "sha256": "66de95adae0df7d6593087b57dedc89a379bf86490cb70f0713ddf658b91d86a"
+      },
+      "normalization_evidence": {
+        "length": 19,
+        "sha256": "5f366f6721dfe6e996f075a537c2d9cfb06eaa5e9d43223b23494fc7269984dd"
+      },
+      "institutions": {
+        "length": 39,
+        "sha256": "8234ea78331d931b8a54c5f40d4427a7844e7fcd621d0832a69e5f2df1b41848"
+      },
+      "exports": {
+        "length": 126,
+        "sha256": "d9451ab45efe2246d827ee0e84e301dc3d53a2b203b5851664969985baa0b590",
+        "selected_ids": [
+          "bit-cs-image-perception",
+          "bit-frontier-interdisciplinary-institute",
+          "bit-physics-optical",
+          "bit-sie-communications",
+          "bnu-ai",
+          "bnu-math",
+          "bnu-sociology",
+          "buaa-aeronautic-science-engineering",
+          "buaa-cs",
+          "buaa-physics-applied",
+          "buaa-physics-department",
+          "buaa-physics-nuclear",
+          "cau-biology-plant-science",
+          "cau-ciee-computer",
+          "cau-science-math",
+          "cqu-architecture-urban-planning",
+          "cqu-cs",
+          "cqu-mathematics-statistics",
+          "csu-cse",
+          "csu-math-applied",
+          "dlut-chemistry",
+          "dlut-cs-software-theory",
+          "dlut-math-institute",
+          "ecnu-geography",
+          "ecnu-math-applied",
+          "ecnu-math-pure",
+          "ecnu-sei",
+          "fdu-icmne",
+          "fdu-marxism",
+          "fdu-math-applied",
+          "fdu-math-probability-statistics-actuarial",
+          "hit-computing",
+          "hit-seie",
+          "hit-shenzhen-computer",
+          "hit-shenzhen-ic",
+          "hit-shenzhen-robotics",
+          "hit-weihai-information",
+          "hit-weihai-materials",
+          "hnu-chemistry-department",
+          "hnu-cs-communication-engineering",
+          "hnu-cs-computer-engineering",
+          "hnu-cs-software-engineering",
+          "hnu-math-basic",
+          "hust-cs-storage",
+          "hust-math-center",
+          "hust-math-interdisciplinary",
+          "jlu-cs",
+          "jlu-math-applied",
+          "jlu-math-computational",
+          "jlu-math-statistics",
+          "jlu-physics",
+          "lzu-basic-mathematics",
+          "lzu-civil-engineering-mechanics",
+          "lzu-law",
+          "muc-education",
+          "muc-ise-cs",
+          "muc-science-math",
+          "neu-cse-communication-electronics",
+          "neu-cse-cs",
+          "neu-mechanical-vehicle-engineering",
+          "neu-science-math",
+          "nju-astronomy-space-science",
+          "nju-cs",
+          "nju-math",
+          "nju-sme",
+          "nku-cs",
+          "nku-cyber",
+          "nku-economics",
+          "nku-stat",
+          "nudt-aerospace",
+          "nudt-electronic-science",
+          "nudt-electronics",
+          "nudt-foreign-languages",
+          "nudt-intelligence",
+          "nudt-systems",
+          "nwpu-cs-computer-science-software",
+          "nwpu-mathematical-sciences",
+          "nwsuaf-agronomy-agronomy-department",
+          "nwsuaf-cie-cs",
+          "nwsuaf-cie-data",
+          "nwsuaf-life-sciences",
+          "ouc-ise-cs",
+          "ouc-math-department",
+          "pku-ic-microelectronics",
+          "ruc-gsai",
+          "ruc-info-eim",
+          "ruc-sociology",
+          "scu-chemical-engineering",
+          "scu-cs",
+          "scu-materials-science-engineering",
+          "scut-cs",
+          "scut-math",
+          "sdu-cs",
+          "sdu-math",
+          "sdu-physics",
+          "seu-computing-joint-roster",
+          "seu-cs",
+          "seu-math-computational",
+          "seu-math-systems",
+          "seu-physics-department",
+          "sjtu-ic-chipdesign",
+          "sysu-history-zhuhai",
+          "sysu-math",
+          "sysu-math-department",
+          "sysu-mathzh",
+          "thu-ee-communications",
+          "tju-math",
+          "tju-mechanical-engineering",
+          "tju-sme",
+          "tongji-civil-building-engineering",
+          "tongji-cs",
+          "tongji-math-teaching",
+          "uestc-aihss",
+          "uestc-applied-math-center",
+          "ustc-chemistry",
+          "ustc-ic",
+          "ustc-math",
+          "whu-eis",
+          "whu-math-stat",
+          "xjtu-math-department",
+          "xjtu-modern-physics-astronomy-preparatory",
+          "xjtu-se",
+          "xmu-economics-department",
+          "xmu-informatics-cs",
+          "xmu-math-applied",
+          "zju-ic-manufacturing"
+        ]
+      }
+    },
+    "metadata": {
+      "schema_version": "0.1",
+      "updated_at": "2026-10-23",
+      "institution": {
+        "id": "hit",
+        "official_name": "哈尔滨工业大学",
+        "official_url": "https://www.hit.edu.cn/"
+      },
+      "coverage": {
+        "weihai": "官方院系设置页全部展示名称已录入，未覆盖所有内部系所。",
+        "shenzhen": "院系部门页学部设置区全部展示名称已录入：4学部、15学院、5研究院；另增研究生培养表2系。行政部门及直属服务单位不在范围。",
+        "harbin": "当前28个组织节点有哈尔滨校区来源归属；另10个全校节点校区仍待核实。组织及教师全量覆盖尚未完成。"
+      },
+      "scope_note": "39校选中名录和部分职业资料，本批新增13部分职业，当前593职业、84待补；不代表全院全校或当前在岗覆盖。师承保留博士、硕士、联合培养与博士后阶段，候选书目不进确证论文。",
+      "build_id": "d430dcba943f10e3"
+    },
+    "mutable_metadata": [
+      "scope_note",
+      "scope",
+      "totals",
+      "build_id",
+      "base_commit"
+    ]
+  },
+  "site/rosters.json": {
+    "object_sha256": "2110bc52ac3ae6b76eebfacf2248ddf6422b3779fef5dd3470e8a5bfb238480a",
+    "byte_sha256": "e9ac62ce2ff63201b443717af9da4468d449521238dcde53c79fad7e9676c904",
+    "lists": {
+      "summary": {
+        "length": 159,
+        "sha256": "7f01f8af00684466b6d0e63e00705561ed7608267bc97f993b151b90bf2e8c26"
+      },
+      "coverage": {
+        "length": 230,
+        "sha256": "ae55ca2683b9d92a372ecb0fd4ba3ca5cc6024335bd31cc1933c51a084b707fb"
+      },
+      "entries": {
+        "length": 1759,
+        "sha256": "6ed40facfa4a0093b11789f9f6af78889867ad731af3a588ae557b95be015bcd"
+      },
+      "conflicts": {
+        "length": 30,
+        "sha256": "0f809e3a2c4ef1857b03479230f35a342b703ccf5f8a99ef032271d150c44c09"
+      },
+      "limitations": {
+        "length": 35,
+        "sha256": "4fe8dea8da59fb3789194955a1b22aac4453cbf0e6a4d1cc2e82d172ba77c116"
+      },
+      "dedup_candidates": {
+        "length": 60,
+        "sha256": "0a1adbff0d7b0ae2fe42cceff9a89e5e9eb6d164044456f319cfab6c9d1b1653"
+      },
+      "exclusions": {
+        "length": 3,
+        "sha256": "89dc768c034efe9de60bb4199c92be749ea7f1bb1405daceff0e3ca88fa5228d"
+      },
+      "pending_checks": {
+        "length": 2,
+        "sha256": "143ba1254ce843007ed487ca7f7ef2c684912b54c0580c6bb3f7157b7bc61048"
+      },
+      "source_snapshots": {
+        "length": 36,
+        "sha256": "64efd7679845995f5418bdfba501a5908717932d9c26ef812ae8987cc1a1d778"
+      },
+      "batches": {
+        "length": 125,
+        "sha256": "b8a3c4363eab7cc729ca309a090c7e31b8048cad552e5d027ae9c46a1fc6ac83"
+      },
+      "consolidations": {
+        "length": 2,
+        "sha256": "094423def9986b8e47457a6592e143f75d67eaa7647c2c346df93d54b983e4e0"
+      },
+      "supporting_method_evidence": {
+        "length": 4,
+        "sha256": "499f5f2aa6250f9300c5953df9a10da6aeeb384aa2543a7c45862cb8539a1efa"
+      },
+      "local_mapping_corrections": {
+        "length": 4,
+        "sha256": "9a1ccc7df1e46b7e8240c3963456fcaf0177d07ad31c051db7d1d5334a1aca1d"
+      },
+      "withdrawn_local_conflicts": {
+        "length": 1,
+        "sha256": "8b54b3a107c8f050e3c33cc2125a710a4084b1be287fdb20db8ca392c093ed05"
+      }
+    },
+    "metadata": {
+      "schema_version": "0.1",
+      "accessed_on": "2026-10-23",
+      "scope": "39校公开名录样本，1759条整合记录、1797条原始来源观察；原1746记录与1784观察不变。新增6校13选中观察不表示全院或当前人事总数。",
+      "totals": {
+        "organization_count": 139,
+        "category_count": 203,
+        "entries_with_profile_link": 1546,
+        "entries_without_profile_link": 213,
+        "dedup_candidate_groups": 60,
+        "placeholder_profile_link_observations": 18,
+        "current_employment_count_verified": false,
+        "not_unique_people_count": true,
+        "record_count": 1759,
+        "raw_observation_count": 1797,
+        "roster_records": 1759,
+        "raw_source_observations": 1797,
+        "coverage_unit_count": 230,
+        "count_unit": "integrated_roster_records",
+        "source_record_grouping_reduction": 38,
+        "category_count_basis": "unique_organization_category_pairs",
+        "unique_organization_category_pairs": 203,
+        "batch_category_count": 222,
+        "category_count_source": "coverage_rows_preserved_without_deduplication"
+      },
+      "role_interpretation": {
+        "孔珂": "网页列在讲师栏，但姓名附注博士后/特聘副研究员，保留二者，不强制解释为讲师职称。",
+        "刘心岩": "网页列在讲师栏，但姓名附注博士后/助理研究员，保留二者。",
+        "王复明": "海洋工程船舶系名录明确附注兼职，不按普通专任计数。",
+        "Gardoni Paolo": "土木系名录明确附注兼职。",
+        "实验中心": "这是名录分组标题，不是个人职称。",
+        "拖曳水池与综合水池": "这是名录分组标题，不是个人职称。"
+      },
+      "raw_data_location": "完整原始来源观察保存在仓库 data/rosters.json，以及导出 Excel 的“原始来源观察”工作表；网站快照不重复加载这些原始内容。",
+      "build_id": "d430dcba943f10e3"
+    },
+    "mutable_metadata": [
+      "scope_note",
+      "scope",
+      "totals",
+      "build_id",
+      "base_commit"
+    ]
+  },
+  "progress/work-queue.json": {
+    "object_sha256": "fd8b9dfb9f594d9b4e2a8de81cda0083f9f07be78553861f1ee47de554e60488",
+    "byte_sha256": "6ce290b467650489cfc260a27ece315a6efd86442af058f4a8558f8a3dfca359",
+    "lists": {
+      "tasks": {
+        "length": 237,
+        "sha256": "99179ca6d84175a74c06f20421bce7a02f3ebe4273175f2b565fa278a9a03db2"
+      }
+    },
+    "metadata": {
+      "schema_version": "1.0",
+      "updated_at": "2026-10-23",
+      "base_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd",
+      "scope": {
+        "active_institution": "hit",
+        "target_university_count": 39,
+        "registry_complete": false,
+        "known_organization_nodes": 218,
+        "write_model": "single_controller_expected_sha",
+        "active_institutions": [
+          "hit",
+          "zju",
+          "thu",
+          "pku",
+          "sjtu",
+          "fdu",
+          "nju",
+          "ustc",
+          "buaa",
+          "bit",
+          "bnu",
+          "cau",
+          "muc",
+          "nku",
+          "dlut",
+          "tju",
+          "jlu",
+          "tongji",
+          "ruc",
+          "neu",
+          "ecnu",
+          "seu",
+          "xmu",
+          "sdu",
+          "ouc",
+          "whu",
+          "hust",
+          "hnu",
+          "csu",
+          "nudt",
+          "sysu",
+          "scut",
+          "scu",
+          "uestc",
+          "cqu",
+          "xjtu",
+          "nwpu",
+          "nwsuaf",
+          "lzu"
+        ],
+        "active_institution_note": "历史首校兼容字段；并行范围见active_institutions。"
+      }
+    },
+    "mutable_metadata": [
+      "scope_note",
+      "scope",
+      "totals",
+      "build_id",
+      "base_commit"
+    ]
+  }
+}

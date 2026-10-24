@@ -230,6 +230,8 @@ RELEASE27_PIN_OVERLAY={'site/atlas.json': '1d2e8210a0ca6d60b874d793bd77e49de7da6
 RELEASE28_PIN_OVERLAY={'site/atlas.json': '36fe06b748feef6919e105ce3fa81c58426b43d8374ccb03b2d828960462ed8b', 'site/rosters.json': '84edc29d2a70ef04d809effe8b3757cba2d614d469691bb16a8ce9f711b052cc', 'data/atlas.json': '184d94676b19b55d24d00b9c6056748a3a778754dd920a1a126be21685168d61', 'data/rosters.json': 'eefa9fe9add7c8dd9aaa49b81deeda73e51a8a1b214a9a6b3a26a2429110de29', 'progress/README.md': '7db1b1af415d5ea1086b76c6253dd91bce89abb330cfaa39ce63bae45f2f2045', 'progress/current-coverage.md': 'ddd946e215da974b867a2da0816b9fc4d36758b18d2a4f99085e1800978665cd', 'progress/work-queue.json': '157958452c461dee7d1fced71e8c8260d09ac2548fcc262ebd7d01c34b4f4d7e', 'site/exports/待核对名录.xlsx': '0482a9b49535e69a633ac7e4a25920232525e1fa34a5c770b53bd8757aa55c1b', 'site/exports/待核对名录.csv': '62ead57bd26f1d29fa26ade92aa5f021937354f31427867b1b433ba25d15bd32'}
 # Exact release29 endpoint overlay; original constants preserved.
 RELEASE29_PIN_OVERLAY={'site/atlas.json': '4b976d4c2e4a5b0beb1c838263ade37ece4fd8b5561ab8517d8ad83e13ca0996', 'site/rosters.json': 'e9ac62ce2ff63201b443717af9da4468d449521238dcde53c79fad7e9676c904', 'data/atlas.json': 'e2cbfcde9c8f96ebc9e96a0829fe95698428b672fd611ab6dff1078eafa75303', 'data/rosters.json': '854ff13b8c352b68a51a20c1cd322f638664de68fdf4996bb922dc344250d11b', 'progress/README.md': '943924d756b71e5c0bb3b6057faf1bcc30193b0bdd1733cf5fe986e6bf1466cb', 'progress/current-coverage.md': '467b5664162ff2a1fbb17b9c71b80038be3bffbc24602cbae9c84dc0b63add5f', 'progress/work-queue.json': '6ce290b467650489cfc260a27ece315a6efd86442af058f4a8558f8a3dfca359', 'site/exports/待核对名录.xlsx': 'efc5aaeaefb8c9e73f726619db2a09cc8d17f4ee1807be879cb5f16cf1e3eaa5', 'site/exports/待核对名录.csv': '99ef76904dd171f877c9a442e9d338badb15ac68e4b3ec145b71462234eb9017'}
+# Exact release30 current endpoint pins; all historical constants and assertions remain below.
+RELEASE30_PIN_OVERLAY={'data/atlas.json': '7bcbb58ea605ea73fec2a51412850550533ba5617d3f200d3812d10551c534fe', 'data/rosters.json': '8be8881d52699b7417e5ae7e542629d64156744d524c581c856faf6172878313', 'progress/README.md': '83b8119bb351cc5fd50905314aed93d62d1d1e72b74b91a4c0d4afd9b6e916fc', 'progress/current-coverage.md': '5c7f1f00dadf7a6622c90ea9e677127e4dcf3b9416819ee09700087af870b0c7', 'progress/work-queue.json': 'be961acbf8eb14435379eb9a3fd61da45cab3cddce0f95593f00bf57837f861b', 'site/atlas.json': '8a2fe871c7262ffc0a2f3edddb5b970a27382b9f5b85797c44f29f3be7582e4b', 'site/exports/待核对名录.csv': '9b0ca81c0420ef1fbe844b63d99684ee8b2bfb1beafb873cfcb40185158a9dd0', 'site/exports/待核对名录.xlsx': '75ad1f8c73e2add290a15de5e4aafa82d857dada4352af0cd7089a6ba2e4a25d', 'site/rosters.json': 'c837c259317159de566137c0227866a1fd7224020afbe1e37ab515ffb8a4f0a2'}
 class Rotation003Wave1DisplayFixTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -259,7 +261,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
 
     def test_04_application_exporter_and_tokens_have_only_reviewed_layout_overlay(self):
         for file,digest in UNCHANGED_FILES.items():
-            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)))),file)
+            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)))),file)
         for file,count in [('site/app.js',3),('site/rosters.js',1),('site/index.html',2)]:
             self.assertEqual((ROOT/file).read_text().count('rotation003-20261024-w2'),count)
 
@@ -320,7 +322,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
         self.assertEqual(len(UNCHANGED_DEPARTMENT_WORKBOOKS),110)
         for file,digest in UNCHANGED_DEPARTMENT_WORKBOOKS.items():
             self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest,file)
-        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),RELEASE29_PIN_OVERLAY['site/exports/待核对名录.xlsx'])
+        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),RELEASE30_PIN_OVERLAY['site/exports/待核对名录.xlsx'])
 
     def test_11_alias_guard_rejects_every_added_leaf_mutation_and_cross_source_swap(self):
         paths=[(key,)for key in ROLE_KEYS]+[('field_provenance','role'),('field_status','role')]

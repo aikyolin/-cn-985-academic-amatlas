@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-10-23",
-  "base_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd",
+  "base_commit": "151fa84f9a732b253efc180b6cedf48e19740620",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -7272,6 +7272,118 @@
       "next_cursor": "rotation003_wave5_selected_sample_reviewed_fields_incomplete",
       "attempted_at": "2026-10-24",
       "last_verified_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd"
+    },
+    {
+      "task_id": "csu:rotation003-wave6",
+      "institution_id": "csu",
+      "organization_id": "csu-physics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "物理学院 / 教授（含正高职称，按姓名拼音）；One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://wl.csu.edu.cn/xygk/szdw1.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/csu-rotation003-wave6-coverage.json",
+        "progress/multischool-rotation003-wave6-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序与hold，不替补、不重试受限路线；追加核验须另获授权，不声称完整院系。",
+      "next_cursor": "rotation003_wave6_source_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "151fa84f9a732b253efc180b6cedf48e19740620"
+    },
+    {
+      "task_id": "scut:rotation003-wave6",
+      "institution_id": "scut",
+      "organization_id": "scut-architecture-department",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "建筑学院 / 专任教师 / 建筑系 / 教授/研究员/教授级高级工程师；official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www2.scut.edu.cn/architecture/zrjs/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/scut-rotation003-wave6-coverage.json",
+        "progress/multischool-rotation003-wave6-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序与hold，不替补、不重试受限路线；追加核验须另获授权，不声称完整院系。",
+      "next_cursor": "rotation003_wave6_source_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "151fa84f9a732b253efc180b6cedf48e19740620"
+    },
+    {
+      "task_id": "uestc:rotation003-wave6",
+      "institution_id": "uestc",
+      "organization_id": "uestc-public-administration",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "公共管理学院 / 公共管理学院教师列表 / 首页；One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement.",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/uestc-rotation003-wave6-coverage.json",
+        "progress/multischool-rotation003-wave6-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序与hold，不替补、不重试受限路线；追加核验须另获授权，不声称完整院系。",
+      "next_cursor": "rotation003_wave6_source_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "151fa84f9a732b253efc180b6cedf48e19740620"
+    },
+    {
+      "task_id": "hust:rotation003-wave6",
+      "institution_id": "hust",
+      "organization_id": null,
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "物理学院 / 教授；One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement.；仅hold覆盖检查点，零人物与零新增组织接入。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://phys.hust.edu.cn/szdw2/js.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/hust-rotation003-wave6-coverage.json",
+        "progress/multischool-rotation003-wave6-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序与hold，不替补、不重试受限路线；追加核验须另获授权，不声称完整院系。",
+      "next_cursor": "rotation003_wave6_source_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "151fa84f9a732b253efc180b6cedf48e19740620"
     }
   ]
 }
