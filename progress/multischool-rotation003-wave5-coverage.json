@@ -1,0 +1,188 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "counts": {
+    "source_people": 13,
+    "new_professional_profiles": 13,
+    "new_pending_profiles": 0,
+    "new_organization_nodes": 6,
+    "source_collections": {
+      "education": 51,
+      "appointments": 43,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 27,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 1,
+      "academic_service": 0,
+      "honors": 22,
+      "research_projects": 0,
+      "research_fields": 37
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 9,
+      "degree_awarded_false": 17,
+      "degree_awarded_null": 25,
+      "confirmed_degree_events": 9
+    },
+    "quick_link_eligible_mentor_records": 0
+  },
+  "schools": [
+    {
+      "school_id": "dlut",
+      "batch_id": "faculty-batch-dlut-rotation-003",
+      "coverage_path": "progress/dlut-rotation003-wave5-coverage.json",
+      "professional_profiles": 2,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "tju",
+      "batch_id": "faculty-batch-tju-rotation-003",
+      "coverage_path": "progress/tju-rotation003-wave5-coverage.json",
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "jlu",
+      "batch_id": "faculty-batch-jlu-rotation-003",
+      "coverage_path": "progress/jlu-rotation003-wave5-coverage.json",
+      "professional_profiles": 2,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "ruc",
+      "batch_id": "faculty-batch-ruc-rotation-003",
+      "coverage_path": "progress/ruc-rotation003-wave5-coverage.json",
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "seu",
+      "batch_id": "faculty-batch-seu-rotation-003",
+      "coverage_path": "progress/seu-rotation003-wave5-coverage.json",
+      "professional_profiles": 2,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "sdu",
+      "batch_id": "faculty-batch-sdu-rotation-003",
+      "coverage_path": "progress/sdu-rotation003-wave5-coverage.json",
+      "professional_profiles": 1,
+      "pending_profiles": 0,
+      "status": "partial"
+    }
+  ],
+  "source_references": [
+    {
+      "file": "faculty-batch-dlut-rotation-003.json",
+      "sha256": "d10af13e5368561eee8a09fc83730af788c93298c96585d1eb577600f622ea03",
+      "scope_file": "faculty-batch-dlut-rotation-003-scope.json",
+      "scope_sha256": "53a01e688ed25b27bde402cc4c7edf1e7af11db1262844871adbe88698740ba5",
+      "qa_file": "faculty-batch-dlut-rotation-003-qa.json",
+      "qa_sha256": "88eb0654d9ff686a4b3f4c7f5055b1a3a5c17e9e661de03d6774248dec2619b8",
+      "independent_review_file": "faculty-batch-dlut-rotation-003-independent-review.json",
+      "independent_review_sha256": "790f2f46d19dfbc8def573f7f366e5b3227977b25328c3932253b50bd5c4a48b"
+    },
+    {
+      "file": "faculty-batch-tju-rotation-003.json",
+      "sha256": "3cef3140bd55d3e18b089531717ef1277fcd3edb521f9ba14abfb70247821c8a",
+      "scope_file": "faculty-batch-tju-rotation-003-scope.json",
+      "scope_sha256": "bf84b34ff185acdff3025c7be60c1f5ec0690be852747e9688a3b6e0cf00e42c",
+      "qa_file": "faculty-batch-tju-rotation-003-qa.json",
+      "qa_sha256": "9bbdb041fc65e5585a82cc54c94a08232735f4e7223d08e8a6d4f72d00d80881",
+      "independent_review_file": "faculty-batch-tju-rotation-003-independent-review.json",
+      "independent_review_sha256": "d9b0bbde8fafe7ad6c1c8af28b9a88e0b599fad7d2834852ecdf03c6090bde1b"
+    },
+    {
+      "file": "faculty-batch-jlu-rotation-003.json",
+      "sha256": "b3bec9b8b511a9f3117a6cc4389503e2638207521ed74d3fd0a75fb02bb175c7",
+      "scope_file": "faculty-batch-jlu-rotation-003-scope.json",
+      "scope_sha256": "eb6e9af4d43eef079a15b927a3feb583ebd5c01e3e37aceaad404c68441814cb",
+      "qa_file": "faculty-batch-jlu-rotation-003-qa.json",
+      "qa_sha256": "cbb06368c435fa3584edfa06353a1a8f707c18d0de6c2ca219fd04b7f171d1ea",
+      "independent_review_file": "faculty-batch-jlu-rotation-003-independent-review.json",
+      "independent_review_sha256": "b4c89ee3a2a1893488133eab46510bb6e66874f5cf224c00f38d1bf8e350bffc"
+    },
+    {
+      "file": "faculty-batch-ruc-rotation-003.json",
+      "sha256": "b1a06aa29af5e6bb1ca28db3b4cbf0c9ef04c60cb5647347e0ccaac295aa3886",
+      "scope_file": "faculty-batch-ruc-rotation-003-scope.json",
+      "scope_sha256": "cc49f083656eceae1f0caab297262ee5f6086b45277c376890b7401d28945ce1",
+      "qa_file": "faculty-batch-ruc-rotation-003-qa.json",
+      "qa_sha256": "1e708ef3899b399c0dbb582ebf54f0a0c8dc11963707e580a0e32c9a63cb4616",
+      "independent_review_file": "faculty-batch-ruc-rotation-003-independent-review.json",
+      "independent_review_sha256": "0091a049f8b6de69addf3b1302158f1351315cb133baf869e43e8ea3272d74e1"
+    },
+    {
+      "file": "faculty-batch-seu-rotation-003.json",
+      "sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade",
+      "scope_file": "faculty-batch-seu-rotation-003-scope.json",
+      "scope_sha256": "7d583efe19af071b176b8f3ea714c832fd8472169a52cea39160aa9bb175d540",
+      "qa_file": "faculty-batch-seu-rotation-003-qa.json",
+      "qa_sha256": "4693ea944682ceba01425553e344683789a8e6108e647f497f35b6d5ca6a7ca5",
+      "independent_review_file": "faculty-batch-seu-rotation-003-independent-review.json",
+      "independent_review_sha256": "0a3dcb54c3f86bbab8d65aaac4bd5060166a2f87214b587d5d4a4feddd7b8fee"
+    },
+    {
+      "file": "faculty-batch-sdu-rotation-003.json",
+      "sha256": "9319a041c8a044c62f6aff4cf7472975386b174d4f686d5bac200783349491c5",
+      "scope_file": "faculty-batch-sdu-rotation-003-scope.json",
+      "scope_sha256": "e882e4b5829ff2ab9b387f070359ce1fe3e501db0518b2d7b2a9899d7e02dad5",
+      "qa_file": "faculty-batch-sdu-rotation-003-qa.json",
+      "qa_sha256": "c056f3aa71c927de6574722051c54e6ea5e863eee4f35841e6f2e6e8b2a06d23",
+      "independent_review_file": "faculty-batch-sdu-rotation-003-independent-review.json",
+      "independent_review_sha256": "49f2c9c15810e9f6b11503f75e68ea314b0f0a36df672b4c61ceedaf93d7e6be"
+    }
+  ],
+  "consumer_boundaries": [
+    "只批准上述精确哈希下部分职业资料；不代表全院或全校完整覆盖。",
+    "官方页面当前列示与历史时间线须区分，不是独立人事在职核验；不推正式校区、授位日期、导师或国籍。",
+    "无具名本人导师证据，导师事件边及当前导师导航均0；PI及社会委员会不是本人导师。",
+    "原始数据中当前标题与历史任职是不同来源维度，不能简单累加成独立任职数；冲突不得静默解决。",
+    "未采集论文、第二资格、某些职业事实不等不存在；不存全文或私人字段。",
+    "消费者字段、schema、展示与筛选行为须由独立整合审核；本审不运行仓库测试或修改仓库。",
+    "只批准上述精确哈希下部分职业资料；不代表全院或全校完整覆盖。",
+    "官方页面当前列示与历史时间线须区分，不是独立人事在职核验；不推正式校区、授位日期、导师或国籍。",
+    "无具名本人导师证据，导师事件边及当前导师导航均0；PI及社会委员会不是本人导师。",
+    "原始数据中当前标题与历史任职是不同来源维度，不能简单累加成独立任职数；冲突不得静默解决。",
+    "未采集论文、第二资格、某些职业事实不等不存在；不存全文或私人字段。",
+    "消费者字段、schema、展示与筛选行为须由独立整合审核；本审不运行仓库测试或修改仓库。",
+    "只批准上述精确哈希下部分职业资料；不代表全院或全校完整覆盖。",
+    "官方页面当前列示与历史时间线须区分，不是独立人事在职核验；不推正式校区、授位日期、导师或国籍。",
+    "无具名本人导师证据，导师事件边及当前导师导航均0；PI及社会委员会不是本人导师。",
+    "原始数据中当前标题与历史任职是不同来源维度，不能简单累加成独立任职数；冲突不得静默解决。",
+    "未采集论文、第二资格、某些职业事实不等不存在；不存全文或私人字段。",
+    "消费者字段、schema、展示与筛选行为须由独立整合审核；本审不运行仓库测试或修改仓库。",
+    "仅批准精确哈希的部分职业资料，不代表全院或全校完整覆盖。",
+    "当前标题与历史工作是不同维度，19条任职记录不能简单当19份独立工作；官方列示不是实时人事在职核验。",
+    "不推断学位、授位日期、个人校区、本人导师或国籍；0导师边。未采集项目、服务、论文、其余荣誉不等不存在。",
+    "消费者schema、展示与筛选由独立整合审核；本审无仓库修改或测试。",
+    "仅批准精确哈希的部分职业资料，不代表全院或全校完整覆盖。",
+    "当前标题与历史工作是不同维度，19条任职记录不能简单当19份独立工作；官方列示不是实时人事在职核验。",
+    "不推断学位、授位日期、个人校区、本人导师或国籍；0导师边。未采集项目、服务、论文、其余荣誉不等不存在。",
+    "消费者schema、展示与筛选由独立整合审核；本审无仓库修改或测试。",
+    "仅批准精确哈希的部分职业资料，不代表全院或全校完整覆盖。",
+    "当前标题与历史工作是不同维度，19条任职记录不能简单当19份独立工作；官方列示不是实时人事在职核验。",
+    "不推断学位、授位日期、个人校区、本人导师或国籍；0导师边。未采集项目、服务、论文、其余荣誉不等不存在。",
+    "消费者schema、展示与筛选由独立整合审核；本审无仓库修改或测试。"
+  ],
+  "source_review_scope": "来源已独审，本次只离线哈希、保真和消费者验证，无来源重访。",
+  "release_status": "local_not_published",
+  "local_patch_sha256": "9bfddc31b158baa6b3d6e19b76ad4deb2764597771d4e069b1da0487172b656d"
+}

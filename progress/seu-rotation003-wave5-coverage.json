@@ -1,0 +1,262 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd",
+  "school_id": "seu",
+  "school_name": "东南大学",
+  "batch_id": "faculty-batch-seu-rotation-003",
+  "status": "partial",
+  "held_candidates": [
+    {
+      "id": "roster-seu-yewei",
+      "name": "叶巍",
+      "official_profile_url": null,
+      "native_link_target": null,
+      "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+      "order": 2,
+      "roster_category": "教授",
+      "listed_role": null,
+      "reason": "no native individual link in selected category; no identity substitution/search bypass",
+      "web_reference": null,
+      "status": "held_not_integrated",
+      "retry_attempted": false,
+      "replacement_selected": false
+    }
+  ],
+  "selected_candidate_names": [
+    "杨永宏",
+    "叶巍",
+    "蒋维洲"
+  ],
+  "access_limitations": [
+    "仅原序首3小批；不是完整院系覆盖。",
+    "类别人数仅为来源时点内容，不代表实时在岗人数；未独立核验人事状态。",
+    "学习经历与授位分开；仅明确授位或已获学位资格与毕业院校闭合证据支持授位；不以区间推断授位日。院系不自动映射为专业。",
+    "访问、博士后与研究任职不视作学位；导师未直接关联培养阶段则留空。",
+    "仅保存所用职业事实的最小证据，不收集私密字段或整页缓存；科研成果、项目与荣誉未穷尽。"
+  ],
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "物理学院·物理系 / 教授",
+  "source_urls": [
+    "https://physics.seu.edu.cn/23137/list.htm"
+  ],
+  "selected_roster_observations": 2,
+  "source_category_observed_count": 16,
+  "source_category_count_basis": "SEU教授类别16个原序姓名人工清点；RUC首页面20项、分页标注50；SDU原文2026年博士招生名单44人。不是实时人事总数。",
+  "selected_roster_original_order": [
+    {
+      "id": "roster-seu-yangyonghong",
+      "name": "杨永宏",
+      "official_profile_url": "https://physics.seu.edu.cn/2019/0116/c29635a258539/page.htm",
+      "native_link_target": "https://physics.seu.edu.cn/2019/0116/c29635a258539/page.htm",
+      "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+      "order": 1,
+      "roster_category": "教授",
+      "listed_role": "教授、博士生导师"
+    },
+    {
+      "id": "roster-seu-yewei",
+      "name": "叶巍",
+      "official_profile_url": null,
+      "native_link_target": null,
+      "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+      "order": 2,
+      "roster_category": "教授",
+      "listed_role": null
+    },
+    {
+      "id": "roster-seu-jiangweizhou",
+      "name": "蒋维洲",
+      "official_profile_url": "https://physics.seu.edu.cn/2019/0116/c29635a258538/page.htm",
+      "native_link_target": "https://physics.seu.edu.cn/2019/0116/c29635a258538/page.htm",
+      "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+      "order": 3,
+      "roster_category": "教授",
+      "listed_role": "教授"
+    }
+  ],
+  "source_total_reported": null,
+  "counts": {
+    "professional_profiles": 2,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 9,
+      "appointments": 4,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 4,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 3,
+      "research_projects": 0,
+      "research_fields": 5
+    },
+    "effective_professional_collections": {
+      "education": 9,
+      "appointments": 4,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 4,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 3,
+      "research_projects": 0,
+      "research_fields": 5
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 3,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 1,
+      "confirmed_degree_events": 3
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-seu-rotation-003.json",
+      "sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade",
+      "scope_file": "faculty-batch-seu-rotation-003-scope.json",
+      "scope_sha256": "7d583efe19af071b176b8f3ea714c832fd8472169a52cea39160aa9bb175d540",
+      "qa_file": "faculty-batch-seu-rotation-003-qa.json",
+      "qa_sha256": "4693ea944682ceba01425553e344683789a8e6108e647f497f35b6d5ca6a7ca5",
+      "independent_review_file": "faculty-batch-seu-rotation-003-independent-review.json",
+      "independent_review_sha256": "0a3dcb54c3f86bbab8d65aaac4bd5060166a2f87214b587d5d4a4feddd7b8fee"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-seu-rotation-003",
+    "institution": {
+      "id": "seu",
+      "official_name": "东南大学",
+      "official_url": "https://www.seu.edu.cn/",
+      "source_urls": [
+        "https://physics.seu.edu.cn/23137/list.htm"
+      ],
+      "scope_note": "新院系官方类别原序首3，held不替换；不按学位或履历丰富度选择。"
+    },
+    "org_units": [
+      {
+        "id": "seu-physics-department",
+        "name": "物理学院·物理系",
+        "type": "department",
+        "school_id": "seu",
+        "parent_id": "seu",
+        "source_url": "https://physics.seu.edu.cn/23137/list.htm",
+        "source_id": "seu-rotation003-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "物理学院·物理系 / 教授",
+    "retrieved_at": "2026-10-24",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "seu-rotation003-roster",
+        "url": "https://physics.seu.edu.cn/23137/list.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "web_reference": "turn2230view0",
+        "evidence_file": "research-rotation003-ruc-seu-sdu/seu-roster-minimal.json",
+        "published_at": null
+      },
+      {
+        "id": "seu-yangyonghong-profile",
+        "url": "https://physics.seu.edu.cn/2019/0116/c29635a258539/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "web_reference": "turn2232view0",
+        "evidence_file": "research-rotation003-ruc-seu-sdu/seu-yangyonghong-minimal.json",
+        "published_at": "2012-09-18"
+      },
+      {
+        "id": "seu-jiangweizhou-profile",
+        "url": "https://physics.seu.edu.cn/2019/0116/c29635a258538/page.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "web_reference": "turn2232view1",
+        "evidence_file": "research-rotation003-ruc-seu-sdu/seu-jiangweizhou-minimal.json",
+        "published_at": "2019-03-14"
+      }
+    ],
+    "limitations": [
+      "仅原序首3小批；不是完整院系覆盖。",
+      "类别人数仅为来源时点内容，不代表实时在岗人数；未独立核验人事状态。",
+      "学习经历与授位分开；仅明确授位或已获学位资格与毕业院校闭合证据支持授位；不以区间推断授位日。院系不自动映射为专业。",
+      "访问、博士后与研究任职不视作学位；导师未直接关联培养阶段则留空。",
+      "仅保存所用职业事实的最小证据，不收集私密字段或整页缓存；科研成果、项目与荣誉未穷尽。"
+    ],
+    "counts": {
+      "people": 2,
+      "held": 1,
+      "pending_people": 0
+    }
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T01:04:23.752994+00:00",
+    "data_sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade",
+    "counts": {
+      "education": 9,
+      "appointments": 4,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "honors": 3,
+      "research_fields": 5,
+      "pending_professional_fact_candidates": 0,
+      "people": 2,
+      "unique_sources": 3,
+      "held_candidates": 1,
+      "degree_awarded_true": 3,
+      "degree_awarded_false": 5,
+      "degree_awarded_none": 1
+    },
+    "integration_limits": [
+      "仅批准精确哈希的部分职业资料，不代表全院或全校完整覆盖。",
+      "当前标题与历史工作是不同维度，19条任职记录不能简单当19份独立工作；官方列示不是实时人事在职核验。",
+      "不推断学位、授位日期、个人校区、本人导师或国籍；0导师边。未采集项目、服务、论文、其余荣誉不等不存在。",
+      "消费者schema、展示与筛选由独立整合审核；本审无仓库修改或测试。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "仅原序首3小批；不是完整院系覆盖。",
+    "类别人数仅为来源时点内容，不代表实时在岗人数；未独立核验人事状态。",
+    "学习经历与授位分开；仅明确授位或已获学位资格与毕业院校闭合证据支持授位；不以区间推断授位日。院系不自动映射为专业。",
+    "访问、博士后与研究任职不视作学位；导师未直接关联培养阶段则留空。",
+    "仅保存所用职业事实的最小证据，不收集私密字段或整页缓存；科研成果、项目与荣誉未穷尽。",
+    "仅批准精确哈希的部分职业资料，不代表全院或全校完整覆盖。",
+    "当前标题与历史工作是不同维度，19条任职记录不能简单当19份独立工作；官方列示不是实时人事在职核验。",
+    "不推断学位、授位日期、个人校区、本人导师或国籍；0导师边。未采集项目、服务、论文、其余荣誉不等不存在。",
+    "消费者schema、展示与筛选由独立整合审核；本审无仓库修改或测试。"
+  ],
+  "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+  "release_status": "local_not_published"
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "39校公开名录样本，1746条整合记录、1784条原始来源观察；原1739记录与1777观察不变。新增3校7选中观察不表示全院或当前人事总数。",
+  "scope": "39校公开名录样本，1759条整合记录、1797条原始来源观察；原1746记录与1784观察不变。新增6校13选中观察不表示全院或当前人事总数。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -1360,6 +1360,48 @@
       "school_id": "nku",
       "organization_id": "nku-economics",
       "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "dlut",
+      "organization_id": "dlut-chemistry",
+      "visible_roster_entries": 2,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "tju",
+      "organization_id": "tju-mechanical-engineering",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "jlu",
+      "organization_id": "jlu-physics",
+      "visible_roster_entries": 2,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "ruc",
+      "organization_id": "ruc-sociology",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "seu",
+      "organization_id": "seu-physics-department",
+      "visible_roster_entries": 2,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "sdu",
+      "organization_id": "sdu-physics",
+      "visible_roster_entries": 1,
       "count_scope": "selected_subset_only",
       "coverage_complete": false
     }
@@ -5305,6 +5347,132 @@
       "batch_id": "nku-selected-roster-rotation-003",
       "source_category_observed_count": 14,
       "source_category_count_basis": "Observed roster/category only; not independently current headcount or employment. NKU only page 1 read; 163 is page-reported total.",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "dlut",
+      "organization_id": "dlut-chemistry",
+      "url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+      "category": "Inorganic Chemistry / Professor",
+      "visible_name_count": 2,
+      "selected_observation_count": 2,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "化学学院 / Inorganic Chemistry / Professor",
+      "selection_basis": "化学学院 / Inorganic Chemistry / Professor",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "dlut-selected-roster-rotation-003",
+      "source_category_observed_count": 7,
+      "source_category_count_basis": "该教授类别7个列示条目；不是学院总人数。",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "tju",
+      "organization_id": "tju-mechanical-engineering",
+      "url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+      "category": "教学科研系列",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "机械工程学院 / 教学科研系列",
+      "selection_basis": "机械工程学院 / 教学科研系列",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "tju-selected-roster-rotation-003",
+      "source_category_observed_count": 3,
+      "source_category_count_basis": "仅原序首3选定并完整保留；总数未独立清点，不使用链接序号差推断总数。",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "jlu",
+      "organization_id": "jlu-physics",
+      "url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+      "category": "教研人员 / 理论物理中心",
+      "visible_name_count": 2,
+      "selected_observation_count": 2,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "物理学院 / 教研人员 / 理论物理中心",
+      "selection_basis": "物理学院 / 教研人员 / 理论物理中心",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "jlu-selected-roster-rotation-003",
+      "source_category_observed_count": 6,
+      "source_category_count_basis": "来源时点类别计数；JLU仅读第一页6条，页面报告总数18。",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "ruc",
+      "organization_id": "ruc-sociology",
+      "url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+      "category": "在职教师 / 按拼音 / All",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "社会学院 / 在职教师 / 按拼音 / All",
+      "selection_basis": "社会学院 / 在职教师 / 按拼音 / All",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "ruc-selected-roster-rotation-003",
+      "source_category_observed_count": 20,
+      "source_category_count_basis": "SEU教授类别16个原序姓名人工清点；RUC首页面20项、分页标注50；SDU原文2026年博士招生名单44人。不是实时人事总数。",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "seu",
+      "organization_id": "seu-physics-department",
+      "url": "https://physics.seu.edu.cn/23137/list.htm",
+      "category": "教授",
+      "visible_name_count": 2,
+      "selected_observation_count": 2,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "物理学院·物理系 / 教授",
+      "selection_basis": "物理学院·物理系 / 教授",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "seu-selected-roster-rotation-003",
+      "source_category_observed_count": 16,
+      "source_category_count_basis": "SEU教授类别16个原序姓名人工清点；RUC首页面20项、分页标注50；SDU原文2026年博士招生名单44人。不是实时人事总数。",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "sdu",
+      "organization_id": "sdu-physics",
+      "url": "https://www.phy.sdu.edu.cn/szll/jzgyl.htm",
+      "category": "2026年招收博士研究生人员名单",
+      "visible_name_count": 1,
+      "selected_observation_count": 1,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "物理学院 / 2026年招收博士研究生人员名单",
+      "selection_basis": "物理学院 / 2026年招收博士研究生人员名单",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "not_established_for_this_selected_subset",
+      "accessed_on": "2026-10-24",
+      "batch_id": "sdu-selected-roster-rotation-003",
+      "source_category_observed_count": 3,
+      "source_category_count_basis": "SEU教授类别16个原序姓名人工清点；RUC首页面20项、分页标注50；SDU原文2026年博士招生名单44人。不是实时人事总数。",
       "source_category_evidence_level": "official_roster_body_read"
     }
   ],
@@ -59545,6 +59713,775 @@
         "independent_review_sha256": "717c344509aa7afd444e7662c1a74cbe5e42cec1997f55ec16288036c37adf40",
         "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
       }
+    },
+    {
+      "id": "roster-dlut-hutao",
+      "name": "胡涛",
+      "school_id": "dlut",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "dlut-chemistry",
+      "department_id": "dlut-chemistry",
+      "category": "Inorganic Chemistry / Professor",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://faculty.dlut.edu.cn/2003011094/zh_CN/index.htm",
+      "roster_source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "dlut-hutao",
+      "source_person_id": "dlut-hutao",
+      "batch_id": "dlut-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-dlut-rotation-003",
+      "source_ids": [
+        "dlut-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "化学学院 / Inorganic Chemistry / Professor",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+        "profile_url": "https://faculty.dlut.edu.cn/2003011094/zh_CN/index.htm",
+        "native_link_target": "https://faculty.dlut.edu.cn/2003011094/zh_CN/index.htm",
+        "source_ids": [
+          "dlut-rotation003-roster",
+          "dlut-hutao-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "化学学院 / Inorganic Chemistry / Professor"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "dlut-selected-roster-rotation-003:roster-dlut-hutao:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "dlut-rotation003-roster",
+          "dlut-hutao-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+        "official_url": "https://faculty.dlut.edu.cn/2003011094/zh_CN/index.htm",
+        "reviewed_source_sha256": "d10af13e5368561eee8a09fc83730af788c93298c96585d1eb577600f622ea03",
+        "independent_review_sha256": "790f2f46d19dfbc8def573f7f366e5b3227977b25328c3932253b50bd5c4a48b",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-dlut-liyanqin",
+      "name": "李艳芹",
+      "school_id": "dlut",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "dlut-chemistry",
+      "department_id": "dlut-chemistry",
+      "category": "Inorganic Chemistry / Professor",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://faculty.dlut.edu.cn/2008011143/zh_CN/index.htm",
+      "roster_source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "dlut-liyanqin",
+      "source_person_id": "dlut-liyanqin",
+      "batch_id": "dlut-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-dlut-rotation-003",
+      "source_ids": [
+        "dlut-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "化学学院 / Inorganic Chemistry / Professor",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+        "profile_url": "https://faculty.dlut.edu.cn/2008011143/zh_CN/index.htm",
+        "native_link_target": "https://faculty.dlut.edu.cn/2008011143/zh_CN/index.htm",
+        "source_ids": [
+          "dlut-rotation003-roster",
+          "dlut-liyanqin-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "化学学院 / Inorganic Chemistry / Professor"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "dlut-selected-roster-rotation-003:roster-dlut-liyanqin:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "dlut-rotation003-roster",
+          "dlut-liyanqin-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+        "official_url": "https://faculty.dlut.edu.cn/2008011143/zh_CN/index.htm",
+        "reviewed_source_sha256": "d10af13e5368561eee8a09fc83730af788c93298c96585d1eb577600f622ea03",
+        "independent_review_sha256": "790f2f46d19dfbc8def573f7f366e5b3227977b25328c3932253b50bd5c4a48b",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-tju-abbasali-abouei-mehrizi",
+      "name": "阿巴斯（Abbasali Abouei Mehrizi）",
+      "school_id": "tju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "tju-mechanical-engineering",
+      "department_id": "tju-mechanical-engineering",
+      "category": "教学科研系列",
+      "listed_role": "英才副教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://me.tju.edu.cn/info/2080/41861.htm",
+      "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "tju-abbasali-abouei-mehrizi",
+      "source_person_id": "tju-abbasali-abouei-mehrizi",
+      "batch_id": "tju-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-tju-rotation-003",
+      "source_ids": [
+        "tju-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "机械工程学院 / 教学科研系列",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+        "profile_url": "https://me.tju.edu.cn/info/2080/41861.htm",
+        "native_link_target": "https://me.tju.edu.cn/info/2080/41861.htm",
+        "source_ids": [
+          "tju-rotation003-roster",
+          "tju-abbasali-abouei-mehrizi-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "机械工程学院 / 教学科研系列"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "tju-selected-roster-rotation-003:roster-tju-abbasali-abouei-mehrizi:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "tju-rotation003-roster",
+          "tju-abbasali-abouei-mehrizi-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+        "official_url": "https://me.tju.edu.cn/info/2080/41861.htm",
+        "reviewed_source_sha256": "3cef3140bd55d3e18b089531717ef1277fcd3edb521f9ba14abfb70247821c8a",
+        "independent_review_sha256": "d9b0bbde8fafe7ad6c1c8af28b9a88e0b599fad7d2834852ecdf03c6090bde1b",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-tju-anqingsong",
+      "name": "安青松",
+      "school_id": "tju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "tju-mechanical-engineering",
+      "department_id": "tju-mechanical-engineering",
+      "category": "教学科研系列",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://me.tju.edu.cn/info/2080/41871.htm",
+      "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "tju-anqingsong",
+      "source_person_id": "tju-anqingsong",
+      "batch_id": "tju-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-tju-rotation-003",
+      "source_ids": [
+        "tju-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "机械工程学院 / 教学科研系列",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+        "profile_url": "https://me.tju.edu.cn/info/2080/41871.htm",
+        "native_link_target": "https://me.tju.edu.cn/info/2080/41871.htm",
+        "source_ids": [
+          "tju-rotation003-roster",
+          "tju-anqingsong-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "机械工程学院 / 教学科研系列"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "tju-selected-roster-rotation-003:roster-tju-anqingsong:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "tju-rotation003-roster",
+          "tju-anqingsong-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+        "official_url": "https://me.tju.edu.cn/info/2080/41871.htm",
+        "reviewed_source_sha256": "3cef3140bd55d3e18b089531717ef1277fcd3edb521f9ba14abfb70247821c8a",
+        "independent_review_sha256": "d9b0bbde8fafe7ad6c1c8af28b9a88e0b599fad7d2834852ecdf03c6090bde1b",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-tju-anweijin",
+      "name": "安蔚瑾",
+      "school_id": "tju",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "tju-mechanical-engineering",
+      "department_id": "tju-mechanical-engineering",
+      "category": "教学科研系列",
+      "listed_role": "副教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://me.tju.edu.cn/info/2070/39141.htm",
+      "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "tju-anweijin",
+      "source_person_id": "tju-anweijin",
+      "batch_id": "tju-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-tju-rotation-003",
+      "source_ids": [
+        "tju-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "机械工程学院 / 教学科研系列",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+        "profile_url": "https://me.tju.edu.cn/info/2070/39141.htm",
+        "native_link_target": "https://me.tju.edu.cn/info/2070/39141.htm",
+        "source_ids": [
+          "tju-rotation003-roster",
+          "tju-anweijin-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "机械工程学院 / 教学科研系列"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "tju-selected-roster-rotation-003:roster-tju-anweijin:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "tju-rotation003-roster",
+          "tju-anweijin-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+        "official_url": "https://me.tju.edu.cn/info/2070/39141.htm",
+        "reviewed_source_sha256": "3cef3140bd55d3e18b089531717ef1277fcd3edb521f9ba14abfb70247821c8a",
+        "independent_review_sha256": "d9b0bbde8fafe7ad6c1c8af28b9a88e0b599fad7d2834852ecdf03c6090bde1b",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-jlu-songweimin",
+      "name": "宋维民",
+      "school_id": "jlu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "jlu-physics",
+      "department_id": "jlu-physics",
+      "category": "教研人员 / 理论物理中心",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://theory.jlu.edu.cn/info/1042/1012.htm",
+      "roster_source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "jlu-songweimin",
+      "source_person_id": "jlu-songweimin",
+      "batch_id": "jlu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-jlu-rotation-003",
+      "source_ids": [
+        "jlu-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "物理学院 / 教研人员 / 理论物理中心",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+        "profile_url": "https://theory.jlu.edu.cn/info/1042/1012.htm",
+        "native_link_target": "https://theory.jlu.edu.cn/info/1042/1012.htm",
+        "source_ids": [
+          "jlu-rotation003-roster",
+          "jlu-songweimin-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "物理学院 / 教研人员 / 理论物理中心"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "jlu-selected-roster-rotation-003:roster-jlu-songweimin:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "jlu-rotation003-roster",
+          "jlu-songweimin-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+        "official_url": "https://theory.jlu.edu.cn/info/1042/1012.htm",
+        "reviewed_source_sha256": "b3bec9b8b511a9f3117a6cc4389503e2638207521ed74d3fd0a75fb02bb175c7",
+        "independent_review_sha256": "b4c89ee3a2a1893488133eab46510bb6e66874f5cf224c00f38d1bf8e350bffc",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-jlu-jiaoliguang",
+      "name": "焦利光",
+      "school_id": "jlu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "jlu-physics",
+      "department_id": "jlu-physics",
+      "category": "教研人员 / 理论物理中心",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://teachers.jlu.edu.cn/lgjiao",
+      "roster_source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "jlu-jiaoliguang",
+      "source_person_id": "jlu-jiaoliguang",
+      "batch_id": "jlu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-jlu-rotation-003",
+      "source_ids": [
+        "jlu-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "物理学院 / 教研人员 / 理论物理中心",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+        "profile_url": "https://teachers.jlu.edu.cn/lgjiao",
+        "native_link_target": "https://teachers.jlu.edu.cn/lgjiao",
+        "source_ids": [
+          "jlu-rotation003-roster",
+          "jlu-jiaoliguang-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "物理学院 / 教研人员 / 理论物理中心"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "jlu-selected-roster-rotation-003:roster-jlu-jiaoliguang:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "jlu-rotation003-roster",
+          "jlu-jiaoliguang-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+        "official_url": "https://teachers.jlu.edu.cn/lgjiao",
+        "reviewed_source_sha256": "b3bec9b8b511a9f3117a6cc4389503e2638207521ed74d3fd0a75fb02bb175c7",
+        "independent_review_sha256": "b4c89ee3a2a1893488133eab46510bb6e66874f5cf224c00f38d1bf8e350bffc",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-ruc-chenjinsong",
+      "name": "陈劲松",
+      "school_id": "ruc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ruc-sociology",
+      "department_id": "ruc-sociology",
+      "category": "在职教师 / 按拼音 / All",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://ssr.ruc.edu.cn/jszy/cjs/cjs_grjj/a47e7e3b620a420d89e7abf75742ee37.htm",
+      "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "ruc-chenjinsong",
+      "source_person_id": "ruc-chenjinsong",
+      "batch_id": "ruc-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-ruc-rotation-003",
+      "source_ids": [
+        "ruc-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "社会学院 / 在职教师 / 按拼音 / All",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+        "profile_url": "https://ssr.ruc.edu.cn/jszy/cjs/cjs_grjj/a47e7e3b620a420d89e7abf75742ee37.htm",
+        "native_link_target": "https://ssr.ruc.edu.cn/jszy/cjs/cjs_grjj/a47e7e3b620a420d89e7abf75742ee37.htm",
+        "source_ids": [
+          "ruc-rotation003-roster",
+          "ruc-chenjinsong-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "社会学院 / 在职教师 / 按拼音 / All"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "ruc-selected-roster-rotation-003:roster-ruc-chenjinsong:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "ruc-rotation003-roster",
+          "ruc-chenjinsong-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+        "official_url": "https://ssr.ruc.edu.cn/jszy/cjs/cjs_grjj/a47e7e3b620a420d89e7abf75742ee37.htm",
+        "reviewed_source_sha256": "b1a06aa29af5e6bb1ca28db3b4cbf0c9ef04c60cb5647347e0ccaac295aa3886",
+        "independent_review_sha256": "0091a049f8b6de69addf3b1302158f1351315cb133baf869e43e8ea3272d74e1",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-ruc-chennabo",
+      "name": "陈那波",
+      "school_id": "ruc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ruc-sociology",
+      "department_id": "ruc-sociology",
+      "category": "在职教师 / 按拼音 / All",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://ssr.ruc.edu.cn/jszy/cnb/cnb_grjj/f45c0f28407746188972dd45f7a5a366.htm",
+      "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "ruc-chennabo",
+      "source_person_id": "ruc-chennabo",
+      "batch_id": "ruc-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-ruc-rotation-003",
+      "source_ids": [
+        "ruc-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "社会学院 / 在职教师 / 按拼音 / All",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+        "profile_url": "https://ssr.ruc.edu.cn/jszy/cnb/cnb_grjj/f45c0f28407746188972dd45f7a5a366.htm",
+        "native_link_target": "https://ssr.ruc.edu.cn/jszy/cnb/cnb_grjj/f45c0f28407746188972dd45f7a5a366.htm",
+        "source_ids": [
+          "ruc-rotation003-roster",
+          "ruc-chennabo-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "社会学院 / 在职教师 / 按拼音 / All"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "ruc-selected-roster-rotation-003:roster-ruc-chennabo:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "ruc-rotation003-roster",
+          "ruc-chennabo-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+        "official_url": "https://ssr.ruc.edu.cn/jszy/cnb/cnb_grjj/f45c0f28407746188972dd45f7a5a366.htm",
+        "reviewed_source_sha256": "b1a06aa29af5e6bb1ca28db3b4cbf0c9ef04c60cb5647347e0ccaac295aa3886",
+        "independent_review_sha256": "0091a049f8b6de69addf3b1302158f1351315cb133baf869e43e8ea3272d74e1",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-ruc-fanglijie",
+      "name": "房莉杰",
+      "school_id": "ruc",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "ruc-sociology",
+      "department_id": "ruc-sociology",
+      "category": "在职教师 / 按拼音 / All",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://ssr.ruc.edu.cn/jszy/flj/flj_grjj/d0ca211ec1ab4c0690e3810e42aaff3f.htm",
+      "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "ruc-fanglijie",
+      "source_person_id": "ruc-fanglijie",
+      "batch_id": "ruc-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-ruc-rotation-003",
+      "source_ids": [
+        "ruc-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "社会学院 / 在职教师 / 按拼音 / All",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+        "profile_url": "https://ssr.ruc.edu.cn/jszy/flj/flj_grjj/d0ca211ec1ab4c0690e3810e42aaff3f.htm",
+        "native_link_target": "https://ssr.ruc.edu.cn/jszy/flj/flj_grjj/d0ca211ec1ab4c0690e3810e42aaff3f.htm",
+        "source_ids": [
+          "ruc-rotation003-roster",
+          "ruc-fanglijie-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "社会学院 / 在职教师 / 按拼音 / All"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "ruc-selected-roster-rotation-003:roster-ruc-fanglijie:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "ruc-rotation003-roster",
+          "ruc-fanglijie-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+        "official_url": "https://ssr.ruc.edu.cn/jszy/flj/flj_grjj/d0ca211ec1ab4c0690e3810e42aaff3f.htm",
+        "reviewed_source_sha256": "b1a06aa29af5e6bb1ca28db3b4cbf0c9ef04c60cb5647347e0ccaac295aa3886",
+        "independent_review_sha256": "0091a049f8b6de69addf3b1302158f1351315cb133baf869e43e8ea3272d74e1",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-seu-yangyonghong",
+      "name": "杨永宏",
+      "school_id": "seu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "seu-physics-department",
+      "department_id": "seu-physics-department",
+      "category": "教授",
+      "listed_role": "教授、博士生导师",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://physics.seu.edu.cn/2019/0116/c29635a258539/page.htm",
+      "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "seu-yangyonghong",
+      "source_person_id": "seu-yangyonghong",
+      "batch_id": "seu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-seu-rotation-003",
+      "source_ids": [
+        "seu-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "物理学院·物理系 / 教授",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://physics.seu.edu.cn/23137/list.htm",
+        "profile_url": "https://physics.seu.edu.cn/2019/0116/c29635a258539/page.htm",
+        "native_link_target": "https://physics.seu.edu.cn/2019/0116/c29635a258539/page.htm",
+        "source_ids": [
+          "seu-rotation003-roster",
+          "seu-yangyonghong-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "物理学院·物理系 / 教授"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "seu-selected-roster-rotation-003:roster-seu-yangyonghong:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "seu-rotation003-roster",
+          "seu-yangyonghong-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+        "official_url": "https://physics.seu.edu.cn/2019/0116/c29635a258539/page.htm",
+        "reviewed_source_sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade",
+        "independent_review_sha256": "0a3dcb54c3f86bbab8d65aaac4bd5060166a2f87214b587d5d4a4feddd7b8fee",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-seu-jiangweizhou",
+      "name": "蒋维洲",
+      "school_id": "seu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "seu-physics-department",
+      "department_id": "seu-physics-department",
+      "category": "教授",
+      "listed_role": "教授",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://physics.seu.edu.cn/2019/0116/c29635a258538/page.htm",
+      "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "seu-jiangweizhou",
+      "source_person_id": "seu-jiangweizhou",
+      "batch_id": "seu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-seu-rotation-003",
+      "source_ids": [
+        "seu-rotation003-roster"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "物理学院·物理系 / 教授",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://physics.seu.edu.cn/23137/list.htm",
+        "profile_url": "https://physics.seu.edu.cn/2019/0116/c29635a258538/page.htm",
+        "native_link_target": "https://physics.seu.edu.cn/2019/0116/c29635a258538/page.htm",
+        "source_ids": [
+          "seu-rotation003-roster",
+          "seu-jiangweizhou-profile"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "物理学院·物理系 / 教授"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "seu-selected-roster-rotation-003:roster-seu-jiangweizhou:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "seu-rotation003-roster",
+          "seu-jiangweizhou-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+        "official_url": "https://physics.seu.edu.cn/2019/0116/c29635a258538/page.htm",
+        "reviewed_source_sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade",
+        "independent_review_sha256": "0a3dcb54c3f86bbab8d65aaac4bd5060166a2f87214b587d5d4a4feddd7b8fee",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
+    },
+    {
+      "id": "roster-sdu-chenfeng",
+      "name": "陈峰",
+      "school_id": "sdu",
+      "campus_id": null,
+      "campus_ids": [],
+      "organization_id": "sdu-physics",
+      "department_id": "sdu-physics",
+      "category": "2026年招收博士研究生人员名单",
+      "listed_role": "教授（二级）、博士生导师、硕士生导师",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "official_profile_url": "https://faculty.sdu.edu.cn/chenfeng1/zh_CN/index.htm",
+      "roster_source_url": "https://www.phy.sdu.edu.cn/szll/jzgyl.htm",
+      "accessed_on": "2026-10-24",
+      "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+      "profile_identity_verified": true,
+      "verified_person_id": "sdu-chenfeng",
+      "source_person_id": "sdu-chenfeng",
+      "batch_id": "sdu-selected-roster-rotation-003",
+      "source_batch_id": "faculty-batch-sdu-rotation-003",
+      "source_ids": [
+        "sdu-rotation003-native-links"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+      "selection_status": "selected_subset",
+      "selection_basis": "物理学院 / 2026年招收博士研究生人员名单",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://www.phy.sdu.edu.cn/szll/jzgyl.htm",
+        "profile_url": "https://faculty.sdu.edu.cn/chenfeng1/zh_CN/index.htm",
+        "native_link_target": "https://faculty.sdu.edu.cn/chenfeng1/zh_CN/index.htm",
+        "source_ids": [
+          "sdu-rotation003-roster",
+          "sdu-chenfeng-profile",
+          "sdu-rotation003-native-links"
+        ]
+      },
+      "notes": [
+        "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+        "物理学院 / 2026年招收博士研究生人员名单"
+      ],
+      "include_in_current_faculty_count": false,
+      "source_observation_ids": [
+        "sdu-selected-roster-rotation-003:roster-sdu-chenfeng:1"
+      ],
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "sdu-rotation003-roster",
+          "sdu-chenfeng-profile",
+          "sdu-rotation003-native-links"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://www.phy.sdu.edu.cn/szll/jzgyl.htm",
+        "official_url": "https://faculty.sdu.edu.cn/chenfeng1/zh_CN/index.htm",
+        "reviewed_source_sha256": "9319a041c8a044c62f6aff4cf7472975386b174d4f686d5bac200783349491c5",
+        "independent_review_sha256": "49f2c9c15810e9f6b11503f75e68ea314b0f0a36df672b4c61ceedaf93d7e6be",
+        "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+      }
     }
   ],
   "conflicts": [
@@ -67777,27 +68714,209 @@
         }
       ],
       "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "dlut-selected-roster-rotation-003",
+      "school_id": "dlut",
+      "accessed_on": "2026-10-24",
+      "observation_count": 2,
+      "record_count": 2,
+      "raw_observation_count": 2,
+      "raw_count": 2,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-dlut-hutao",
+        "roster-dlut-liyanqin"
+      ],
+      "source_observation_ids": [
+        "dlut-selected-roster-rotation-003:roster-dlut-hutao:1",
+        "dlut-selected-roster-rotation-003:roster-dlut-liyanqin:1"
+      ],
+      "selection": "化学学院 / Inorganic Chemistry / Professor",
+      "selection_basis": "化学学院 / Inorganic Chemistry / Professor",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-dlut-rotation-003.json",
+          "sha256": "d10af13e5368561eee8a09fc83730af788c93298c96585d1eb577600f622ea03"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "tju-selected-roster-rotation-003",
+      "school_id": "tju",
+      "accessed_on": "2026-10-24",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-tju-abbasali-abouei-mehrizi",
+        "roster-tju-anqingsong",
+        "roster-tju-anweijin"
+      ],
+      "source_observation_ids": [
+        "tju-selected-roster-rotation-003:roster-tju-abbasali-abouei-mehrizi:1",
+        "tju-selected-roster-rotation-003:roster-tju-anqingsong:1",
+        "tju-selected-roster-rotation-003:roster-tju-anweijin:1"
+      ],
+      "selection": "机械工程学院 / 教学科研系列",
+      "selection_basis": "机械工程学院 / 教学科研系列",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-tju-rotation-003.json",
+          "sha256": "3cef3140bd55d3e18b089531717ef1277fcd3edb521f9ba14abfb70247821c8a"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "jlu-selected-roster-rotation-003",
+      "school_id": "jlu",
+      "accessed_on": "2026-10-24",
+      "observation_count": 2,
+      "record_count": 2,
+      "raw_observation_count": 2,
+      "raw_count": 2,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-jlu-songweimin",
+        "roster-jlu-jiaoliguang"
+      ],
+      "source_observation_ids": [
+        "jlu-selected-roster-rotation-003:roster-jlu-songweimin:1",
+        "jlu-selected-roster-rotation-003:roster-jlu-jiaoliguang:1"
+      ],
+      "selection": "物理学院 / 教研人员 / 理论物理中心",
+      "selection_basis": "物理学院 / 教研人员 / 理论物理中心",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-jlu-rotation-003.json",
+          "sha256": "b3bec9b8b511a9f3117a6cc4389503e2638207521ed74d3fd0a75fb02bb175c7"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "ruc-selected-roster-rotation-003",
+      "school_id": "ruc",
+      "accessed_on": "2026-10-24",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-ruc-chenjinsong",
+        "roster-ruc-chennabo",
+        "roster-ruc-fanglijie"
+      ],
+      "source_observation_ids": [
+        "ruc-selected-roster-rotation-003:roster-ruc-chenjinsong:1",
+        "ruc-selected-roster-rotation-003:roster-ruc-chennabo:1",
+        "ruc-selected-roster-rotation-003:roster-ruc-fanglijie:1"
+      ],
+      "selection": "社会学院 / 在职教师 / 按拼音 / All",
+      "selection_basis": "社会学院 / 在职教师 / 按拼音 / All",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-ruc-rotation-003.json",
+          "sha256": "b1a06aa29af5e6bb1ca28db3b4cbf0c9ef04c60cb5647347e0ccaac295aa3886"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "seu-selected-roster-rotation-003",
+      "school_id": "seu",
+      "accessed_on": "2026-10-24",
+      "observation_count": 2,
+      "record_count": 2,
+      "raw_observation_count": 2,
+      "raw_count": 2,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-seu-yangyonghong",
+        "roster-seu-jiangweizhou"
+      ],
+      "source_observation_ids": [
+        "seu-selected-roster-rotation-003:roster-seu-yangyonghong:1",
+        "seu-selected-roster-rotation-003:roster-seu-jiangweizhou:1"
+      ],
+      "selection": "物理学院·物理系 / 教授",
+      "selection_basis": "物理学院·物理系 / 教授",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-seu-rotation-003.json",
+          "sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "sdu-selected-roster-rotation-003",
+      "school_id": "sdu",
+      "accessed_on": "2026-10-24",
+      "observation_count": 1,
+      "record_count": 1,
+      "raw_observation_count": 1,
+      "raw_count": 1,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-sdu-chenfeng"
+      ],
+      "source_observation_ids": [
+        "sdu-selected-roster-rotation-003:roster-sdu-chenfeng:1"
+      ],
+      "selection": "物理学院 / 2026年招收博士研究生人员名单",
+      "selection_basis": "物理学院 / 2026年招收博士研究生人员名单",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "faculty-batch-sdu-rotation-003.json",
+          "sha256": "9319a041c8a044c62f6aff4cf7472975386b174d4f686d5bac200783349491c5"
+        }
+      ],
+      "validation": "independently_reviewed_selected_source_observations_only"
     }
   ],
   "totals": {
-    "organization_count": 133,
-    "category_count": 197,
-    "entries_with_profile_link": 1533,
+    "organization_count": 139,
+    "category_count": 203,
+    "entries_with_profile_link": 1546,
     "entries_without_profile_link": 213,
     "dedup_candidate_groups": 60,
     "placeholder_profile_link_observations": 18,
     "current_employment_count_verified": false,
     "not_unique_people_count": true,
-    "record_count": 1746,
-    "raw_observation_count": 1784,
-    "roster_records": 1746,
-    "raw_source_observations": 1784,
-    "coverage_unit_count": 224,
+    "record_count": 1759,
+    "raw_observation_count": 1797,
+    "roster_records": 1759,
+    "raw_source_observations": 1797,
+    "coverage_unit_count": 230,
     "count_unit": "integrated_roster_records",
     "source_record_grouping_reduction": 38,
     "category_count_basis": "unique_organization_category_pairs",
-    "unique_organization_category_pairs": 197,
-    "batch_category_count": 216,
+    "unique_organization_category_pairs": 203,
+    "batch_category_count": 222,
     "category_count_source": "coverage_rows_preserved_without_deduplication"
   },
   "role_interpretation": {
@@ -123425,6 +124544,853 @@
           "official_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
           "reviewed_source_sha256": "8c8b70fd671db58f8f55f7120c7aff626f4addbeddbb0d430c2d2320d507433c",
           "independent_review_sha256": "717c344509aa7afd444e7662c1a74cbe5e42cec1997f55ec16288036c37adf40",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "dlut-selected-roster-rotation-003:roster-dlut-hutao:1",
+      "record_id": "roster-dlut-hutao",
+      "batch_id": "dlut-selected-roster-rotation-003",
+      "school_id": "dlut",
+      "organization_id": "dlut-chemistry",
+      "source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-dlut-hutao",
+        "name": "胡涛",
+        "school_id": "dlut",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "dlut-chemistry",
+        "department_id": "dlut-chemistry",
+        "category": "Inorganic Chemistry / Professor",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://faculty.dlut.edu.cn/2003011094/zh_CN/index.htm",
+        "roster_source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "dlut-hutao",
+        "source_person_id": "dlut-hutao",
+        "batch_id": "dlut-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-dlut-rotation-003",
+        "source_ids": [
+          "dlut-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "化学学院 / Inorganic Chemistry / Professor",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+          "profile_url": "https://faculty.dlut.edu.cn/2003011094/zh_CN/index.htm",
+          "native_link_target": "https://faculty.dlut.edu.cn/2003011094/zh_CN/index.htm",
+          "source_ids": [
+            "dlut-rotation003-roster",
+            "dlut-hutao-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "化学学院 / Inorganic Chemistry / Professor"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "dlut-rotation003-roster",
+            "dlut-hutao-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+          "official_url": "https://faculty.dlut.edu.cn/2003011094/zh_CN/index.htm",
+          "reviewed_source_sha256": "d10af13e5368561eee8a09fc83730af788c93298c96585d1eb577600f622ea03",
+          "independent_review_sha256": "790f2f46d19dfbc8def573f7f366e5b3227977b25328c3932253b50bd5c4a48b",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "dlut-selected-roster-rotation-003:roster-dlut-liyanqin:1",
+      "record_id": "roster-dlut-liyanqin",
+      "batch_id": "dlut-selected-roster-rotation-003",
+      "school_id": "dlut",
+      "organization_id": "dlut-chemistry",
+      "source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-dlut-liyanqin",
+        "name": "李艳芹",
+        "school_id": "dlut",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "dlut-chemistry",
+        "department_id": "dlut-chemistry",
+        "category": "Inorganic Chemistry / Professor",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://faculty.dlut.edu.cn/2008011143/zh_CN/index.htm",
+        "roster_source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "dlut-liyanqin",
+        "source_person_id": "dlut-liyanqin",
+        "batch_id": "dlut-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-dlut-rotation-003",
+        "source_ids": [
+          "dlut-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "化学学院 / Inorganic Chemistry / Professor",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+          "profile_url": "https://faculty.dlut.edu.cn/2008011143/zh_CN/index.htm",
+          "native_link_target": "https://faculty.dlut.edu.cn/2008011143/zh_CN/index.htm",
+          "source_ids": [
+            "dlut-rotation003-roster",
+            "dlut-liyanqin-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "化学学院 / Inorganic Chemistry / Professor"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "dlut-rotation003-roster",
+            "dlut-liyanqin-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://chem.dlut.edu.cn/English/Faculty/Overview.htm",
+          "official_url": "https://faculty.dlut.edu.cn/2008011143/zh_CN/index.htm",
+          "reviewed_source_sha256": "d10af13e5368561eee8a09fc83730af788c93298c96585d1eb577600f622ea03",
+          "independent_review_sha256": "790f2f46d19dfbc8def573f7f366e5b3227977b25328c3932253b50bd5c4a48b",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "tju-selected-roster-rotation-003:roster-tju-abbasali-abouei-mehrizi:1",
+      "record_id": "roster-tju-abbasali-abouei-mehrizi",
+      "batch_id": "tju-selected-roster-rotation-003",
+      "school_id": "tju",
+      "organization_id": "tju-mechanical-engineering",
+      "source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-tju-abbasali-abouei-mehrizi",
+        "name": "阿巴斯（Abbasali Abouei Mehrizi）",
+        "school_id": "tju",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "tju-mechanical-engineering",
+        "department_id": "tju-mechanical-engineering",
+        "category": "教学科研系列",
+        "listed_role": "英才副教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://me.tju.edu.cn/info/2080/41861.htm",
+        "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "tju-abbasali-abouei-mehrizi",
+        "source_person_id": "tju-abbasali-abouei-mehrizi",
+        "batch_id": "tju-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-tju-rotation-003",
+        "source_ids": [
+          "tju-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "机械工程学院 / 教学科研系列",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+          "profile_url": "https://me.tju.edu.cn/info/2080/41861.htm",
+          "native_link_target": "https://me.tju.edu.cn/info/2080/41861.htm",
+          "source_ids": [
+            "tju-rotation003-roster",
+            "tju-abbasali-abouei-mehrizi-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "机械工程学院 / 教学科研系列"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "tju-rotation003-roster",
+            "tju-abbasali-abouei-mehrizi-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+          "official_url": "https://me.tju.edu.cn/info/2080/41861.htm",
+          "reviewed_source_sha256": "3cef3140bd55d3e18b089531717ef1277fcd3edb521f9ba14abfb70247821c8a",
+          "independent_review_sha256": "d9b0bbde8fafe7ad6c1c8af28b9a88e0b599fad7d2834852ecdf03c6090bde1b",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "tju-selected-roster-rotation-003:roster-tju-anqingsong:1",
+      "record_id": "roster-tju-anqingsong",
+      "batch_id": "tju-selected-roster-rotation-003",
+      "school_id": "tju",
+      "organization_id": "tju-mechanical-engineering",
+      "source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-tju-anqingsong",
+        "name": "安青松",
+        "school_id": "tju",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "tju-mechanical-engineering",
+        "department_id": "tju-mechanical-engineering",
+        "category": "教学科研系列",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://me.tju.edu.cn/info/2080/41871.htm",
+        "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "tju-anqingsong",
+        "source_person_id": "tju-anqingsong",
+        "batch_id": "tju-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-tju-rotation-003",
+        "source_ids": [
+          "tju-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "机械工程学院 / 教学科研系列",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+          "profile_url": "https://me.tju.edu.cn/info/2080/41871.htm",
+          "native_link_target": "https://me.tju.edu.cn/info/2080/41871.htm",
+          "source_ids": [
+            "tju-rotation003-roster",
+            "tju-anqingsong-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "机械工程学院 / 教学科研系列"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "tju-rotation003-roster",
+            "tju-anqingsong-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+          "official_url": "https://me.tju.edu.cn/info/2080/41871.htm",
+          "reviewed_source_sha256": "3cef3140bd55d3e18b089531717ef1277fcd3edb521f9ba14abfb70247821c8a",
+          "independent_review_sha256": "d9b0bbde8fafe7ad6c1c8af28b9a88e0b599fad7d2834852ecdf03c6090bde1b",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "tju-selected-roster-rotation-003:roster-tju-anweijin:1",
+      "record_id": "roster-tju-anweijin",
+      "batch_id": "tju-selected-roster-rotation-003",
+      "school_id": "tju",
+      "organization_id": "tju-mechanical-engineering",
+      "source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-tju-anweijin",
+        "name": "安蔚瑾",
+        "school_id": "tju",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "tju-mechanical-engineering",
+        "department_id": "tju-mechanical-engineering",
+        "category": "教学科研系列",
+        "listed_role": "副教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://me.tju.edu.cn/info/2070/39141.htm",
+        "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "tju-anweijin",
+        "source_person_id": "tju-anweijin",
+        "batch_id": "tju-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-tju-rotation-003",
+        "source_ids": [
+          "tju-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "机械工程学院 / 教学科研系列",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+          "profile_url": "https://me.tju.edu.cn/info/2070/39141.htm",
+          "native_link_target": "https://me.tju.edu.cn/info/2070/39141.htm",
+          "source_ids": [
+            "tju-rotation003-roster",
+            "tju-anweijin-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "机械工程学院 / 教学科研系列"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "tju-rotation003-roster",
+            "tju-anweijin-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://me.tju.edu.cn/szdw/jxkyxl.htm",
+          "official_url": "https://me.tju.edu.cn/info/2070/39141.htm",
+          "reviewed_source_sha256": "3cef3140bd55d3e18b089531717ef1277fcd3edb521f9ba14abfb70247821c8a",
+          "independent_review_sha256": "d9b0bbde8fafe7ad6c1c8af28b9a88e0b599fad7d2834852ecdf03c6090bde1b",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "jlu-selected-roster-rotation-003:roster-jlu-songweimin:1",
+      "record_id": "roster-jlu-songweimin",
+      "batch_id": "jlu-selected-roster-rotation-003",
+      "school_id": "jlu",
+      "organization_id": "jlu-physics",
+      "source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-jlu-songweimin",
+        "name": "宋维民",
+        "school_id": "jlu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "jlu-physics",
+        "department_id": "jlu-physics",
+        "category": "教研人员 / 理论物理中心",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://theory.jlu.edu.cn/info/1042/1012.htm",
+        "roster_source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "jlu-songweimin",
+        "source_person_id": "jlu-songweimin",
+        "batch_id": "jlu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-jlu-rotation-003",
+        "source_ids": [
+          "jlu-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "物理学院 / 教研人员 / 理论物理中心",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+          "profile_url": "https://theory.jlu.edu.cn/info/1042/1012.htm",
+          "native_link_target": "https://theory.jlu.edu.cn/info/1042/1012.htm",
+          "source_ids": [
+            "jlu-rotation003-roster",
+            "jlu-songweimin-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "物理学院 / 教研人员 / 理论物理中心"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "jlu-rotation003-roster",
+            "jlu-songweimin-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+          "official_url": "https://theory.jlu.edu.cn/info/1042/1012.htm",
+          "reviewed_source_sha256": "b3bec9b8b511a9f3117a6cc4389503e2638207521ed74d3fd0a75fb02bb175c7",
+          "independent_review_sha256": "b4c89ee3a2a1893488133eab46510bb6e66874f5cf224c00f38d1bf8e350bffc",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "jlu-selected-roster-rotation-003:roster-jlu-jiaoliguang:1",
+      "record_id": "roster-jlu-jiaoliguang",
+      "batch_id": "jlu-selected-roster-rotation-003",
+      "school_id": "jlu",
+      "organization_id": "jlu-physics",
+      "source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-jlu-jiaoliguang",
+        "name": "焦利光",
+        "school_id": "jlu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "jlu-physics",
+        "department_id": "jlu-physics",
+        "category": "教研人员 / 理论物理中心",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://teachers.jlu.edu.cn/lgjiao",
+        "roster_source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "jlu-jiaoliguang",
+        "source_person_id": "jlu-jiaoliguang",
+        "batch_id": "jlu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-jlu-rotation-003",
+        "source_ids": [
+          "jlu-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "物理学院 / 教研人员 / 理论物理中心",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+          "profile_url": "https://teachers.jlu.edu.cn/lgjiao",
+          "native_link_target": "https://teachers.jlu.edu.cn/lgjiao",
+          "source_ids": [
+            "jlu-rotation003-roster",
+            "jlu-jiaoliguang-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "物理学院 / 教研人员 / 理论物理中心"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "jlu-rotation003-roster",
+            "jlu-jiaoliguang-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm",
+          "official_url": "https://teachers.jlu.edu.cn/lgjiao",
+          "reviewed_source_sha256": "b3bec9b8b511a9f3117a6cc4389503e2638207521ed74d3fd0a75fb02bb175c7",
+          "independent_review_sha256": "b4c89ee3a2a1893488133eab46510bb6e66874f5cf224c00f38d1bf8e350bffc",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "ruc-selected-roster-rotation-003:roster-ruc-chenjinsong:1",
+      "record_id": "roster-ruc-chenjinsong",
+      "batch_id": "ruc-selected-roster-rotation-003",
+      "school_id": "ruc",
+      "organization_id": "ruc-sociology",
+      "source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-ruc-chenjinsong",
+        "name": "陈劲松",
+        "school_id": "ruc",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "ruc-sociology",
+        "department_id": "ruc-sociology",
+        "category": "在职教师 / 按拼音 / All",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://ssr.ruc.edu.cn/jszy/cjs/cjs_grjj/a47e7e3b620a420d89e7abf75742ee37.htm",
+        "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "ruc-chenjinsong",
+        "source_person_id": "ruc-chenjinsong",
+        "batch_id": "ruc-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-ruc-rotation-003",
+        "source_ids": [
+          "ruc-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "社会学院 / 在职教师 / 按拼音 / All",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+          "profile_url": "https://ssr.ruc.edu.cn/jszy/cjs/cjs_grjj/a47e7e3b620a420d89e7abf75742ee37.htm",
+          "native_link_target": "https://ssr.ruc.edu.cn/jszy/cjs/cjs_grjj/a47e7e3b620a420d89e7abf75742ee37.htm",
+          "source_ids": [
+            "ruc-rotation003-roster",
+            "ruc-chenjinsong-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "社会学院 / 在职教师 / 按拼音 / All"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "ruc-rotation003-roster",
+            "ruc-chenjinsong-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+          "official_url": "https://ssr.ruc.edu.cn/jszy/cjs/cjs_grjj/a47e7e3b620a420d89e7abf75742ee37.htm",
+          "reviewed_source_sha256": "b1a06aa29af5e6bb1ca28db3b4cbf0c9ef04c60cb5647347e0ccaac295aa3886",
+          "independent_review_sha256": "0091a049f8b6de69addf3b1302158f1351315cb133baf869e43e8ea3272d74e1",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "ruc-selected-roster-rotation-003:roster-ruc-chennabo:1",
+      "record_id": "roster-ruc-chennabo",
+      "batch_id": "ruc-selected-roster-rotation-003",
+      "school_id": "ruc",
+      "organization_id": "ruc-sociology",
+      "source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-ruc-chennabo",
+        "name": "陈那波",
+        "school_id": "ruc",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "ruc-sociology",
+        "department_id": "ruc-sociology",
+        "category": "在职教师 / 按拼音 / All",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://ssr.ruc.edu.cn/jszy/cnb/cnb_grjj/f45c0f28407746188972dd45f7a5a366.htm",
+        "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "ruc-chennabo",
+        "source_person_id": "ruc-chennabo",
+        "batch_id": "ruc-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-ruc-rotation-003",
+        "source_ids": [
+          "ruc-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "社会学院 / 在职教师 / 按拼音 / All",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+          "profile_url": "https://ssr.ruc.edu.cn/jszy/cnb/cnb_grjj/f45c0f28407746188972dd45f7a5a366.htm",
+          "native_link_target": "https://ssr.ruc.edu.cn/jszy/cnb/cnb_grjj/f45c0f28407746188972dd45f7a5a366.htm",
+          "source_ids": [
+            "ruc-rotation003-roster",
+            "ruc-chennabo-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "社会学院 / 在职教师 / 按拼音 / All"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "ruc-rotation003-roster",
+            "ruc-chennabo-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+          "official_url": "https://ssr.ruc.edu.cn/jszy/cnb/cnb_grjj/f45c0f28407746188972dd45f7a5a366.htm",
+          "reviewed_source_sha256": "b1a06aa29af5e6bb1ca28db3b4cbf0c9ef04c60cb5647347e0ccaac295aa3886",
+          "independent_review_sha256": "0091a049f8b6de69addf3b1302158f1351315cb133baf869e43e8ea3272d74e1",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "ruc-selected-roster-rotation-003:roster-ruc-fanglijie:1",
+      "record_id": "roster-ruc-fanglijie",
+      "batch_id": "ruc-selected-roster-rotation-003",
+      "school_id": "ruc",
+      "organization_id": "ruc-sociology",
+      "source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-ruc-fanglijie",
+        "name": "房莉杰",
+        "school_id": "ruc",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "ruc-sociology",
+        "department_id": "ruc-sociology",
+        "category": "在职教师 / 按拼音 / All",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://ssr.ruc.edu.cn/jszy/flj/flj_grjj/d0ca211ec1ab4c0690e3810e42aaff3f.htm",
+        "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "ruc-fanglijie",
+        "source_person_id": "ruc-fanglijie",
+        "batch_id": "ruc-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-ruc-rotation-003",
+        "source_ids": [
+          "ruc-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "社会学院 / 在职教师 / 按拼音 / All",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+          "profile_url": "https://ssr.ruc.edu.cn/jszy/flj/flj_grjj/d0ca211ec1ab4c0690e3810e42aaff3f.htm",
+          "native_link_target": "https://ssr.ruc.edu.cn/jszy/flj/flj_grjj/d0ca211ec1ab4c0690e3810e42aaff3f.htm",
+          "source_ids": [
+            "ruc-rotation003-roster",
+            "ruc-fanglijie-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "社会学院 / 在职教师 / 按拼音 / All"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "ruc-rotation003-roster",
+            "ruc-fanglijie-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm",
+          "official_url": "https://ssr.ruc.edu.cn/jszy/flj/flj_grjj/d0ca211ec1ab4c0690e3810e42aaff3f.htm",
+          "reviewed_source_sha256": "b1a06aa29af5e6bb1ca28db3b4cbf0c9ef04c60cb5647347e0ccaac295aa3886",
+          "independent_review_sha256": "0091a049f8b6de69addf3b1302158f1351315cb133baf869e43e8ea3272d74e1",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "seu-selected-roster-rotation-003:roster-seu-yangyonghong:1",
+      "record_id": "roster-seu-yangyonghong",
+      "batch_id": "seu-selected-roster-rotation-003",
+      "school_id": "seu",
+      "organization_id": "seu-physics-department",
+      "source_url": "https://physics.seu.edu.cn/23137/list.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-seu-yangyonghong",
+        "name": "杨永宏",
+        "school_id": "seu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "seu-physics-department",
+        "department_id": "seu-physics-department",
+        "category": "教授",
+        "listed_role": "教授、博士生导师",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://physics.seu.edu.cn/2019/0116/c29635a258539/page.htm",
+        "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "seu-yangyonghong",
+        "source_person_id": "seu-yangyonghong",
+        "batch_id": "seu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-seu-rotation-003",
+        "source_ids": [
+          "seu-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "物理学院·物理系 / 教授",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://physics.seu.edu.cn/23137/list.htm",
+          "profile_url": "https://physics.seu.edu.cn/2019/0116/c29635a258539/page.htm",
+          "native_link_target": "https://physics.seu.edu.cn/2019/0116/c29635a258539/page.htm",
+          "source_ids": [
+            "seu-rotation003-roster",
+            "seu-yangyonghong-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "物理学院·物理系 / 教授"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "seu-rotation003-roster",
+            "seu-yangyonghong-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+          "official_url": "https://physics.seu.edu.cn/2019/0116/c29635a258539/page.htm",
+          "reviewed_source_sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade",
+          "independent_review_sha256": "0a3dcb54c3f86bbab8d65aaac4bd5060166a2f87214b587d5d4a4feddd7b8fee",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "seu-selected-roster-rotation-003:roster-seu-jiangweizhou:1",
+      "record_id": "roster-seu-jiangweizhou",
+      "batch_id": "seu-selected-roster-rotation-003",
+      "school_id": "seu",
+      "organization_id": "seu-physics-department",
+      "source_url": "https://physics.seu.edu.cn/23137/list.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-seu-jiangweizhou",
+        "name": "蒋维洲",
+        "school_id": "seu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "seu-physics-department",
+        "department_id": "seu-physics-department",
+        "category": "教授",
+        "listed_role": "教授",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://physics.seu.edu.cn/2019/0116/c29635a258538/page.htm",
+        "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "seu-jiangweizhou",
+        "source_person_id": "seu-jiangweizhou",
+        "batch_id": "seu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-seu-rotation-003",
+        "source_ids": [
+          "seu-rotation003-roster"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "物理学院·物理系 / 教授",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://physics.seu.edu.cn/23137/list.htm",
+          "profile_url": "https://physics.seu.edu.cn/2019/0116/c29635a258538/page.htm",
+          "native_link_target": "https://physics.seu.edu.cn/2019/0116/c29635a258538/page.htm",
+          "source_ids": [
+            "seu-rotation003-roster",
+            "seu-jiangweizhou-profile"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "物理学院·物理系 / 教授"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "seu-rotation003-roster",
+            "seu-jiangweizhou-profile"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://physics.seu.edu.cn/23137/list.htm",
+          "official_url": "https://physics.seu.edu.cn/2019/0116/c29635a258538/page.htm",
+          "reviewed_source_sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade",
+          "independent_review_sha256": "0a3dcb54c3f86bbab8d65aaac4bd5060166a2f87214b587d5d4a4feddd7b8fee",
+          "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
+        }
+      }
+    },
+    {
+      "observation_id": "sdu-selected-roster-rotation-003:roster-sdu-chenfeng:1",
+      "record_id": "roster-sdu-chenfeng",
+      "batch_id": "sdu-selected-roster-rotation-003",
+      "school_id": "sdu",
+      "organization_id": "sdu-physics",
+      "source_url": "https://www.phy.sdu.edu.cn/szll/jzgyl.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-sdu-chenfeng",
+        "name": "陈峰",
+        "school_id": "sdu",
+        "campus_id": null,
+        "campus_ids": [],
+        "organization_id": "sdu-physics",
+        "department_id": "sdu-physics",
+        "category": "2026年招收博士研究生人员名单",
+        "listed_role": "教授（二级）、博士生导师、硕士生导师",
+        "listed_role_basis": "explicit_individual_profile_title",
+        "official_profile_url": "https://faculty.sdu.edu.cn/chenfeng1/zh_CN/index.htm",
+        "roster_source_url": "https://www.phy.sdu.edu.cn/szll/jzgyl.htm",
+        "accessed_on": "2026-10-24",
+        "verification_status": "reviewed_official_roster_name_and_explicit_profile_link",
+        "profile_identity_verified": true,
+        "verified_person_id": "sdu-chenfeng",
+        "source_person_id": "sdu-chenfeng",
+        "batch_id": "sdu-selected-roster-rotation-003",
+        "source_batch_id": "faculty-batch-sdu-rotation-003",
+        "source_ids": [
+          "sdu-rotation003-native-links"
+        ],
+        "source_evidence_status": "official_roster_body_read",
+        "source_evidence_status_label": "官方名录正文已读，仅本批选中观察。",
+        "selection_status": "selected_subset",
+        "selection_basis": "物理学院 / 2026年招收博士研究生人员名单",
+        "source_identity_evidence": {
+          "status": "official_roster_native_link",
+          "source_url": "https://www.phy.sdu.edu.cn/szll/jzgyl.htm",
+          "profile_url": "https://faculty.sdu.edu.cn/chenfeng1/zh_CN/index.htm",
+          "native_link_target": "https://faculty.sdu.edu.cn/chenfeng1/zh_CN/index.htm",
+          "source_ids": [
+            "sdu-rotation003-roster",
+            "sdu-chenfeng-profile",
+            "sdu-rotation003-native-links"
+          ]
+        },
+        "notes": [
+          "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
+          "物理学院 / 2026年招收博士研究生人员名单"
+        ],
+        "include_in_current_faculty_count": false,
+        "profile_identity_evidence": {
+          "status": "independently_reviewed_official_roster_native_link",
+          "source_ids": [
+            "sdu-rotation003-roster",
+            "sdu-chenfeng-profile",
+            "sdu-rotation003-native-links"
+          ],
+          "checked_on": "2026-10-24",
+          "roster_source_url": "https://www.phy.sdu.edu.cn/szll/jzgyl.htm",
+          "official_url": "https://faculty.sdu.edu.cn/chenfeng1/zh_CN/index.htm",
+          "reviewed_source_sha256": "9319a041c8a044c62f6aff4cf7472975386b174d4f686d5bac200783349491c5",
+          "independent_review_sha256": "49f2c9c15810e9f6b11503f75e68ea314b0f0a36df672b4c61ceedaf93d7e6be",
           "scope_note": "仅所选姓名和本人专业资料核对，不推断当前全职人事或采样单位实际聘任。"
         }
       }

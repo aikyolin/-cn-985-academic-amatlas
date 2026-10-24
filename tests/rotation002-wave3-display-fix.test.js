@@ -1,3 +1,4 @@
+const RELEASE29_PIN_OVERLAY={"data/atlas.json": "e2cbfcde9c8f96ebc9e96a0829fe95698428b672fd611ab6dff1078eafa75303", "data/rosters.json": "854ff13b8c352b68a51a20c1cd322f638664de68fdf4996bb922dc344250d11b", "site/atlas.json": "4b976d4c2e4a5b0beb1c838263ade37ece4fd8b5561ab8517d8ad83e13ca0996", "site/rosters.json": "e9ac62ce2ff63201b443717af9da4468d449521238dcde53c79fad7e9676c904"};
 const RELEASE28_PIN_OVERLAY={"data/atlas.json": "184d94676b19b55d24d00b9c6056748a3a778754dd920a1a126be21685168d61", "data/rosters.json": "eefa9fe9add7c8dd9aaa49b81deeda73e51a8a1b214a9a6b3a26a2429110de29", "site/atlas.json": "36fe06b748feef6919e105ce3fa81c58426b43d8374ccb03b2d828960462ed8b", "site/rosters.json": "84edc29d2a70ef04d809effe8b3757cba2d614d469691bb16a8ce9f711b052cc"};
 const RELEASE27_PIN_OVERLAY={"data/atlas.json": "602e459ef4bc62aa839e8eff7475819f5a6672e1492b1181ac9188372fe9d1c5", "data/rosters.json": "217716511dc290970fd8708af5cacebaf5f1343b1ec671515b5048e5f81dabec", "site/atlas.json": "1d2e8210a0ca6d60b874d793bd77e49de7da6f845493eb6912b0f4861e57afa2", "site/rosters.json": "4971f6b3812c6f8d133fd0aba909e65f2209b72cfb0d37e668c62531ec0446cc"};
 const RELEASE26_DATA_SHA256={"data/atlas.json": "4a2caaf803967d671bf0bb6b3aeb7c661eecaa40e7bf74e31c214215a3fecc93", "data/rosters.json": "0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f", "site/atlas.json": "f0f46d4cba67eec805f944e2bef431120b38016465afcdd1227cf6e7fd4a6861", "site/rosters.json": "509f98b11edd2fdfe3a80ef1b0de0d07d46d2f186ed29c363e3e8ebe293168b0"};
@@ -72,7 +73,7 @@ function educationRows(html){
 }
 
 test('reviewed release25 append endpoint pins all four canonical and generated data files exactly',()=>{
-  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
+  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
 });
 
 test('exactly four previously generic event fallbacks acquire uncertainty-preserving labels',()=>{
@@ -186,5 +187,5 @@ test('real consumers and model projections do not mutate the canonical source sc
     for(const type of ['bachelor','master','doctor'])stages(person(id),type);
   }
   assert.equal(JSON.stringify(db),before);
-  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
+  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash,file);
 });

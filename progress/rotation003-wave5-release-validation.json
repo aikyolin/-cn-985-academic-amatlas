@@ -1,0 +1,76 @@
+{
+  "status": "passed_local_checks_awaiting_publication",
+  "baseline_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd",
+  "counts": {
+    "professional": 593,
+    "pending": 84,
+    "schools": 39,
+    "organizations": 246,
+    "roster_entries": 1759,
+    "raw_observations": 1797,
+    "tasks": 237,
+    "department_workbooks": 126
+  },
+  "build_id": "d430dcba943f10e3",
+  "additions": {
+    "professional": 13,
+    "education": 51,
+    "appointments_facets": 43,
+    "mentors": 0,
+    "degree_awarded_true": 9,
+    "degree_awarded_null": 25,
+    "degree_awarded_false": 17,
+    "held_candidates_not_person_records": 5
+  },
+  "regressions": {
+    "python": 466,
+    "node": 586,
+    "total": 1052,
+    "original_1049_retained": true,
+    "new_generic_tests": 3
+  },
+  "preservation": {
+    "professional_prefix": 580,
+    "pending_prefix": 84,
+    "roster_prefix": 1746,
+    "observation_prefix": 1784,
+    "previous_department_workbooks_byte_identical": 120,
+    "production_schema_unchanged": true
+  },
+  "independent_review_sha256": {
+    "rotation003-wave5-independent-consumer-report.json": "382acdc26501ecbf70736d724899c4005439b9d58bde4925a4d66e4666566b4b",
+    "rotation003-wave5-independent-consumer-actual-consumers.json": "2308cb3f5f1294862fc134bf392f88a591bee79233d8db55260db474503bf89a",
+    "rotation003-wave5-export-audit-report.json": "0635108a387028ef9019aef402c8db45879211f649b94433516bc70bb1ab8f81",
+    "rotation003-wave5-export-determinism-report.json": "bf16315f2ae8520360865d08f6aa6fcde8499a53155c239e7f3f3d9be0766768",
+    "recovery29-final-independent-review.json": "7b5e8cb853d136ca5aaaab04b69ca953c7fe353769ae4111bb60b989231793fb"
+  },
+  "export_audit": {
+    "cells": 200091,
+    "hyperlinks": 16479,
+    "sheets": 639,
+    "formula_cells": 0,
+    "suppressed_source_hyperlinks": 5,
+    "zip_members": 2177,
+    "xlsx_files": 127,
+    "csv_records": 1759,
+    "csv_columns": 34,
+    "csv_cells_including_header": 59840
+  },
+  "deterministic_generated_files": 130,
+  "complete_builds": 2,
+  "browser_acceptance": {
+    "cloud_browser": true,
+    "school_department_navigation": true,
+    "keyword_search": true,
+    "unknown_degree_not_filterable": true,
+    "unverified_mentor_zero_edges": true,
+    "real_xlsx_download_byte_equal": true
+  },
+  "limitations": [
+    "Partial professional profiles only, not full department or university coverage.",
+    "Current employment, native profile navigation and academic relation evidence remain separate.",
+    "Five original-order held candidates not replaced or promoted.",
+    "Historical first-seven artifact manifest is not the final thirteen-person manifest."
+  ],
+  "remote_publication": "not_yet_done"
+}

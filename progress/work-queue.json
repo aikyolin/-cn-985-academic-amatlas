@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-10-23",
-  "base_commit": "515d16f5e48cff7dae151464e0ea2ea704b8ace6",
+  "base_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -7104,6 +7104,174 @@
       "next_cursor": "rotation003_wave4_selected_sample_reviewed_fields_incomplete",
       "attempted_at": "2026-10-24",
       "last_verified_commit": "515d16f5e48cff7dae151464e0ea2ea704b8ace6"
+    },
+    {
+      "task_id": "dlut:dlut-chemistry:rotation003-wave5",
+      "institution_id": "dlut",
+      "organization_id": "dlut-chemistry",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "化学学院 / Inorganic Chemistry / Professor",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://chem.dlut.edu.cn/English/Faculty/Overview.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/dlut-rotation003-wave5-coverage.json",
+        "progress/multischool-rotation003-wave5-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave5_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd"
+    },
+    {
+      "task_id": "tju:tju-mechanical-engineering:rotation003-wave5",
+      "institution_id": "tju",
+      "organization_id": "tju-mechanical-engineering",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "机械工程学院 / 教学科研系列",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://me.tju.edu.cn/szdw/jxkyxl.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/tju-rotation003-wave5-coverage.json",
+        "progress/multischool-rotation003-wave5-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave5_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd"
+    },
+    {
+      "task_id": "jlu:jlu-physics:rotation003-wave5",
+      "institution_id": "jlu",
+      "organization_id": "jlu-physics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "物理学院 / 教研人员 / 理论物理中心",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://phy.jlu.edu.cn/szdw/jyry1/llwlzx.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/jlu-rotation003-wave5-coverage.json",
+        "progress/multischool-rotation003-wave5-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave5_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd"
+    },
+    {
+      "task_id": "ruc:ruc-sociology:rotation003-wave5",
+      "institution_id": "ruc",
+      "organization_id": "ruc-sociology",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "社会学院 / 在职教师 / 按拼音 / All",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://ssr.ruc.edu.cn/szdw/zzjs/apy/All/index.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/ruc-rotation003-wave5-coverage.json",
+        "progress/multischool-rotation003-wave5-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave5_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd"
+    },
+    {
+      "task_id": "seu:seu-physics-department:rotation003-wave5",
+      "institution_id": "seu",
+      "organization_id": "seu-physics-department",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "物理学院·物理系 / 教授",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://physics.seu.edu.cn/23137/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/seu-rotation003-wave5-coverage.json",
+        "progress/multischool-rotation003-wave5-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave5_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd"
+    },
+    {
+      "task_id": "sdu:sdu-physics:rotation003-wave5",
+      "institution_id": "sdu",
+      "organization_id": "sdu-physics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "物理学院 / 2026年招收博士研究生人员名单",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.phy.sdu.edu.cn/szll/yjsds.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/sdu-rotation003-wave5-coverage.json",
+        "progress/multischool-rotation003-wave5-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave5_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd"
     }
   ]
 }

@@ -1,0 +1,277 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "c619a20c917f9d3bcaa5b5a7e7d70a562e0517fd",
+  "school_id": "sdu",
+  "school_name": "山东大学",
+  "batch_id": "faculty-batch-sdu-rotation-003",
+  "status": "partial",
+  "held_candidates": [
+    {
+      "id": "roster-sdu-liuxiangdong",
+      "name": "刘向东",
+      "official_profile_url": "https://www.phy.sdu.edu.cn/info/1071/4698.htm",
+      "native_link_target": "https://www.phy.sdu.edu.cn/info/1071/4698.htm",
+      "roster_source_url": "https://www.phy.sdu.edu.cn/szll/yjsds.htm",
+      "order": 1,
+      "roster_category": "2026年招收博士研究生人员名单",
+      "listed_role": null,
+      "reason": "native body 404",
+      "web_reference": "turn2232view2",
+      "status": "held_not_integrated",
+      "retry_attempted": false,
+      "replacement_selected": false
+    },
+    {
+      "id": "roster-sdu-lishiyuan",
+      "name": "李世渊",
+      "official_profile_url": "https://www.phy.sdu.edu.cn/info/1071/4671.htm",
+      "native_link_target": "https://www.phy.sdu.edu.cn/info/1071/4671.htm",
+      "roster_source_url": "https://www.phy.sdu.edu.cn/szll/yjsds.htm",
+      "order": 2,
+      "roster_category": "2026年招收博士研究生人员名单",
+      "listed_role": null,
+      "reason": "native body timeout",
+      "web_reference": "turn2232view3",
+      "status": "held_not_integrated",
+      "retry_attempted": false,
+      "replacement_selected": false
+    }
+  ],
+  "selected_candidate_names": [
+    "刘向东",
+    "李世渊",
+    "陈峰"
+  ],
+  "access_limitations": [
+    "仅原序首3小批；不是完整院系覆盖。",
+    "类别人数仅为来源时点内容，不代表实时在岗人数；未独立核验人事状态。",
+    "学习经历与授位分开；仅明确授位或已获学位资格与毕业院校闭合证据支持授位；不以区间推断授位日。院系不自动映射为专业。",
+    "访问、博士后与研究任职不视作学位；导师未直接关联培养阶段则留空。",
+    "仅保存所用职业事实的最小证据，不收集私密字段或整页缓存；科研成果、项目与荣誉未穷尽。"
+  ],
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "物理学院 / 2026年招收博士研究生人员名单",
+  "source_urls": [
+    "https://www.phy.sdu.edu.cn/szll/yjsds.htm"
+  ],
+  "selected_roster_observations": 1,
+  "source_category_observed_count": 3,
+  "source_category_count_basis": "SEU教授类别16个原序姓名人工清点；RUC首页面20项、分页标注50；SDU原文2026年博士招生名单44人。不是实时人事总数。",
+  "selected_roster_original_order": [
+    {
+      "id": "roster-sdu-liuxiangdong",
+      "name": "刘向东",
+      "official_profile_url": "https://www.phy.sdu.edu.cn/info/1071/4698.htm",
+      "native_link_target": "https://www.phy.sdu.edu.cn/info/1071/4698.htm",
+      "roster_source_url": "https://www.phy.sdu.edu.cn/szll/yjsds.htm",
+      "order": 1,
+      "roster_category": "2026年招收博士研究生人员名单",
+      "listed_role": null
+    },
+    {
+      "id": "roster-sdu-lishiyuan",
+      "name": "李世渊",
+      "official_profile_url": "https://www.phy.sdu.edu.cn/info/1071/4671.htm",
+      "native_link_target": "https://www.phy.sdu.edu.cn/info/1071/4671.htm",
+      "roster_source_url": "https://www.phy.sdu.edu.cn/szll/yjsds.htm",
+      "order": 2,
+      "roster_category": "2026年招收博士研究生人员名单",
+      "listed_role": null
+    },
+    {
+      "id": "roster-sdu-chenfeng",
+      "name": "陈峰",
+      "official_profile_url": "https://faculty.sdu.edu.cn/chenfeng1/zh_CN/index.htm",
+      "native_link_target": "https://faculty.sdu.edu.cn/chenfeng1/zh_CN/index.htm",
+      "roster_source_url": "https://www.phy.sdu.edu.cn/szll/yjsds.htm",
+      "order": 3,
+      "roster_category": "2026年招收博士研究生人员名单",
+      "listed_role": "教授（二级）、博士生导师、硕士生导师"
+    }
+  ],
+  "source_total_reported": 44,
+  "counts": {
+    "professional_profiles": 1,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 2,
+      "appointments": 4,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 3,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 5,
+      "research_projects": 0,
+      "research_fields": 5
+    },
+    "effective_professional_collections": {
+      "education": 2,
+      "appointments": 4,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 3,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 5,
+      "research_projects": 0,
+      "research_fields": 5
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 1,
+      "confirmed_degree_events": 1
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-sdu-rotation-003.json",
+      "sha256": "9319a041c8a044c62f6aff4cf7472975386b174d4f686d5bac200783349491c5",
+      "scope_file": "faculty-batch-sdu-rotation-003-scope.json",
+      "scope_sha256": "e882e4b5829ff2ab9b387f070359ce1fe3e501db0518b2d7b2a9899d7e02dad5",
+      "qa_file": "faculty-batch-sdu-rotation-003-qa.json",
+      "qa_sha256": "c056f3aa71c927de6574722051c54e6ea5e863eee4f35841e6f2e6e8b2a06d23",
+      "independent_review_file": "faculty-batch-sdu-rotation-003-independent-review.json",
+      "independent_review_sha256": "49f2c9c15810e9f6b11503f75e68ea314b0f0a36df672b4c61ceedaf93d7e6be"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-sdu-rotation-003",
+    "institution": {
+      "id": "sdu",
+      "official_name": "山东大学",
+      "official_url": "https://www.sdu.edu.cn/",
+      "source_urls": [
+        "https://www.phy.sdu.edu.cn/szll/yjsds.htm"
+      ],
+      "scope_note": "新院系官方类别原序首3，held不替换；不按学位或履历丰富度选择。"
+    },
+    "org_units": [
+      {
+        "id": "sdu-physics",
+        "name": "物理学院",
+        "type": "school",
+        "school_id": "sdu",
+        "parent_id": "sdu",
+        "source_url": "https://www.phy.sdu.edu.cn/szll/yjsds.htm",
+        "source_id": "sdu-rotation003-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "物理学院 / 2026年招收博士研究生人员名单",
+    "retrieved_at": "2026-10-24",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "sdu-rotation003-roster",
+        "url": "https://www.phy.sdu.edu.cn/szll/yjsds.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "web_reference": "turn2230view1",
+        "evidence_file": "research-rotation003-ruc-seu-sdu/sdu-roster-minimal.json",
+        "published_at": null
+      },
+      {
+        "id": "sdu-rotation003-native-links",
+        "url": "https://www.phy.sdu.edu.cn/szll/jzgyl.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "web_reference": "turn2231view2",
+        "evidence_file": "research-rotation003-ruc-seu-sdu/sdu-native-links-minimal.json",
+        "published_at": null
+      },
+      {
+        "id": "sdu-chenfeng-profile",
+        "url": "https://faculty.sdu.edu.cn/chenfeng1/zh_CN/index.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "web_reference": "turn2232view4",
+        "evidence_file": "research-rotation003-ruc-seu-sdu/sdu-chenfeng-minimal.json",
+        "published_at": null
+      }
+    ],
+    "limitations": [
+      "仅原序首3小批；不是完整院系覆盖。",
+      "类别人数仅为来源时点内容，不代表实时在岗人数；未独立核验人事状态。",
+      "学习经历与授位分开；仅明确授位或已获学位资格与毕业院校闭合证据支持授位；不以区间推断授位日。院系不自动映射为专业。",
+      "访问、博士后与研究任职不视作学位；导师未直接关联培养阶段则留空。",
+      "仅保存所用职业事实的最小证据，不收集私密字段或整页缓存；科研成果、项目与荣誉未穷尽。"
+    ],
+    "counts": {
+      "people": 1,
+      "held": 2,
+      "pending_people": 0
+    }
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T01:04:23.753862+00:00",
+    "data_sha256": "9319a041c8a044c62f6aff4cf7472975386b174d4f686d5bac200783349491c5",
+    "counts": {
+      "education": 2,
+      "appointments": 4,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "honors": 5,
+      "research_fields": 5,
+      "pending_professional_fact_candidates": 0,
+      "people": 1,
+      "unique_sources": 3,
+      "held_candidates": 2,
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 0,
+      "degree_awarded_none": 1
+    },
+    "integration_limits": [
+      "仅批准精确哈希的部分职业资料，不代表全院或全校完整覆盖。",
+      "当前标题与历史工作是不同维度，19条任职记录不能简单当19份独立工作；官方列示不是实时人事在职核验。",
+      "不推断学位、授位日期、个人校区、本人导师或国籍；0导师边。未采集项目、服务、论文、其余荣誉不等不存在。",
+      "消费者schema、展示与筛选由独立整合审核；本审无仓库修改或测试。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "仅原序首3小批；不是完整院系覆盖。",
+    "类别人数仅为来源时点内容，不代表实时在岗人数；未独立核验人事状态。",
+    "学习经历与授位分开；仅明确授位或已获学位资格与毕业院校闭合证据支持授位；不以区间推断授位日。院系不自动映射为专业。",
+    "访问、博士后与研究任职不视作学位；导师未直接关联培养阶段则留空。",
+    "仅保存所用职业事实的最小证据，不收集私密字段或整页缓存；科研成果、项目与荣誉未穷尽。",
+    "仅批准精确哈希的部分职业资料，不代表全院或全校完整覆盖。",
+    "当前标题与历史工作是不同维度，19条任职记录不能简单当19份独立工作；官方列示不是实时人事在职核验。",
+    "不推断学位、授位日期、个人校区、本人导师或国籍；0导师边。未采集项目、服务、论文、其余荣誉不等不存在。",
+    "消费者schema、展示与筛选由独立整合审核；本审无仓库修改或测试。"
+  ],
+  "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+  "release_status": "local_not_published"
+}

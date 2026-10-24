@@ -1,8 +1,9 @@
 """Live append boundaries: source order, non-native identity, and unknown stages."""
 import copy,json,pathlib,unittest
+from release28_history import release28_view
 from release27_history import CONTRACT,release27_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-read=lambda rel:json.loads((ROOT/rel).read_text())
+read=lambda rel:release28_view(json.loads((ROOT/rel).read_text()),rel) if rel in CONTRACT else json.loads((ROOT/rel).read_text())
 class Rotation003Wave4Boundaries(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
