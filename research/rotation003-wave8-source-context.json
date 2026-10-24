@@ -1,0 +1,225 @@
+{
+  "representation": "Original package context only; pre-integration researcher statements are not independent approval or current personnel verification.",
+  "packages": {
+    "sdu": {
+      "data": {
+        "schema_version": "1.2",
+        "batch_id": "faculty-batch-sdu-history-rotation003-wave8",
+        "baseline_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3",
+        "institution": {
+          "id": "sdu",
+          "official_name": "山东大学",
+          "official_url": "https://www.sdu.edu.cn/",
+          "source_urls": [
+            "https://history.sdu.edu.cn/xygk/xyjj.htm",
+            "https://history.sdu.edu.cn/szdw/xxsz.htm"
+          ]
+        },
+        "campuses": [],
+        "scope": "历史学院／学系师资首页／历史学系（中国古代史教研室）／教授(研究员)",
+        "retrieved_at": "2026-10-24",
+        "coverage_complete": false,
+        "fields_complete": false,
+        "review_status": "pending_independent_review",
+        "held_candidates": [],
+        "pending_people": [],
+        "sources": [
+          {
+            "id": "sdu-history-wave8-roster",
+            "url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+            "title": "学系师资",
+            "evidence_status": "official_roster_body_read",
+            "retrieved_at": "2026-10-24",
+            "source_type": "university_official",
+            "published_at": null,
+            "locator": "历史学系（中国古代史教研室）／教授(研究员)"
+          },
+          {
+            "id": "sdu-history-wave8-organization",
+            "url": "https://history.sdu.edu.cn/xygk/xyjj.htm",
+            "title": "山东大学历史学院简介",
+            "evidence_status": "official_public_body_read",
+            "retrieved_at": "2026-10-24",
+            "source_type": "university_official",
+            "published_at": null,
+            "locator": "简介中2023年12月改建及学院下设学系段落",
+            "updated_at_source": "2024-04",
+            "date_note": "正文标注更新日期2024年4月，未将其写为发布时间。"
+          },
+          {
+            "id": "sdu-chenshangsheng-wave8-profile",
+            "url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+            "title": "陈尚胜",
+            "evidence_status": "official_public_body_read",
+            "retrieved_at": "2026-10-24",
+            "source_type": "university_official",
+            "published_at": "2024-05-17",
+            "locator": "简介首段、主讲课程、主要论著／主要论文第一项"
+          },
+          {
+            "id": "sdu-daiguoxi-wave8-profile",
+            "url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+            "title": "代国玺",
+            "evidence_status": "official_public_body_read",
+            "retrieved_at": "2026-10-24",
+            "source_type": "university_official",
+            "published_at": "2024-05-06",
+            "locator": "简介首段、主讲课程、主要代表作品第一项"
+          },
+          {
+            "id": "sdu-duyong-wave8-profile",
+            "url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+            "title": "杜勇",
+            "evidence_status": "official_public_body_read",
+            "retrieved_at": "2026-10-24",
+            "source_type": "university_official",
+            "published_at": "2024-07-31",
+            "locator": "简介首段、主讲课程、主要论著／论文第一项"
+          }
+        ],
+        "limitations": [
+          "仅历史学院学系师资首页首个教授(研究员)类别原序首3，不是全院或全校覆盖。",
+          "三人均以名录原生链接确认身份；不以履历丰富程度选样，无替补。",
+          "现行名录和个人页不等独立实时人事核验。陈尚胜、代国玺的当前在岗未知；杜勇仅保留来源明示现为特聘教授，不启用实时在岗导航。",
+          "学历标签与授位分开；无直接授位措辞保持null，未披露的日期、授位院校或本人导师不猜。",
+          "只公开必要职业事实；三篇成果仅官方本人书目，未核出版者元数据或全文。",
+          "页脚地址不作个人校区依据；出生与联系方式排除。"
+        ],
+        "counts": {
+          "people": 3,
+          "pending_people": 0,
+          "held_candidates": 0,
+          "education": 4,
+          "degree_awarded_true": 1,
+          "degree_awarded_false": 0,
+          "degree_awarded_null": 3,
+          "mentors": 0,
+          "publications": 3,
+          "appointments": 4,
+          "teaching": 6
+        }
+      }
+    },
+    "ouc": {
+      "data": {
+        "package_id": "research-rotation003-wave8-ouc",
+        "base_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3",
+        "school_id": "ouc",
+        "retrieved_at": "2026-10-24",
+        "status": "research_complete_pending_independent_review",
+        "pending_people": [],
+        "hold": [],
+        "limitations": [
+          "仅海洋与大气学院海洋学系教授分类首页原序前三个非重复身份，不代表全院、全校或实时在岗名册。",
+          "三人均有官方职业正文，可供部分档案候选；尚待独立审查，不自称审核通过。",
+          "9条学位学习事件均为null，2条博士后和1条访问均false；无直接授位句，不推true。",
+          "同页中英文冲突分别保留语义位置与source_id，未自行择一；现职均unknown，关闭在职快捷导航。",
+          "公开数据仅职业事实与必要链接，不含个人联系方式、生日、地址或原始整页缓存。",
+          "不把公开书目当论文全文；本批每人只取一条原页代表文章，作者关系不构成师承。",
+          "分类均unknown，后续只能使用经审规范化映射，不以本研究包直接升级。"
+        ]
+      }
+    },
+    "whu": {
+      "data": {
+        "package_id": "research-rotation003-wave8-whu-hold",
+        "base_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3",
+        "school_id": "whu",
+        "requested_department": "化学与分子科学学院",
+        "official_organization_body_verified": false,
+        "status": "hold_scope",
+        "selected": [],
+        "people": [],
+        "pending_people": [],
+        "org_units": [],
+        "roster_entries": [],
+        "hold": [
+          {
+            "scope": "武汉大学化学与分子科学学院教授或专任教师明确分类首页原序首3",
+            "reason": "官网首页和学院简介同批直接访问403 Forbidden，尚无名录正文，无法确定原序；整范围hold，不生成候选名单。",
+            "attempted_at": "2026-10-24T04:46:14Z",
+            "attempted_urls": [
+              "https://chem.whu.edu.cn/",
+              "https://chem.whu.edu.cn/xygk/xyjj.htm"
+            ],
+            "restriction": "403 Forbidden",
+            "outcome": "denied",
+            "route_stopped": true,
+            "replacement_performed": false,
+            "not_performed": [
+              "未继续请求受限站点",
+              "未改用教师门户或缓存补原序",
+              "未选择其他学院或替补人物",
+              "未生成组织节点或人物"
+            ]
+          }
+        ],
+        "source_policy": "搜索结果仅为发现线索，不作为官网正文、组织名核实或名录顺序证据。",
+        "review_status": "pending_independent_review"
+      }
+    },
+    "uestc": {
+      "data": {
+        "baseline_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3",
+        "school_id": "uestc",
+        "school_name": "电子科技大学",
+        "scope": "电子科学与工程学院／可明确分类教授或专任教师首页",
+        "status": "whole_scope_held",
+        "selected": [],
+        "selected_candidate_names": [],
+        "people": [],
+        "pending_people": [],
+        "held_candidates": [],
+        "held_scope": {
+          "reason": "学院官网首页只返回HTTP 202的JavaScript验证挑战，未获得教授或专任教师分类名录正文。",
+          "target_url": "https://www.ese.uestc.edu.cn/",
+          "access_state": "verification_challenge",
+          "http_status": 202,
+          "retry_attempted": false,
+          "challenge_executed": false,
+          "cookies_reused": false,
+          "replacement_department_selected": false,
+          "selected_roster_observations": 0,
+          "exact_order_known": false
+        },
+        "organization_observation": {
+          "name": "电子科学与工程学院",
+          "source_url": "https://www.uestc.edu.cn/xybm/jxkydw_yjjg.htm",
+          "locator": "教学科研单位、研究机构列表中“电子科学与工程学院”链接",
+          "evidence_status": "official_public_body_read",
+          "campus_ids": []
+        },
+        "other_preexisting_observation": {
+          "url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2037&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1035",
+          "title": "电子科学与工程学院（示范性微电子学院）教师列表",
+          "evidence_status": "official_roster_body_read_but_ineligible_sampling_category",
+          "note": "在发现学院首页挑战之前读取。该平台列为混合职称全员名单且括注与学校当前机构列表不一致；没有把其全员前三转成教授或专任教师样本，也未进入个人页。",
+          "selected": []
+        },
+        "old_held_objects_retried": false,
+        "coverage_complete": false,
+        "fields_complete": false,
+        "university_complete": false,
+        "review_status": "pending_independent_review",
+        "sources": [
+          {
+            "id": "uestc-wave8-school-organization",
+            "url": "https://www.uestc.edu.cn/xybm/jxkydw_yjjg.htm",
+            "evidence_status": "official_public_body_read",
+            "retrieved_at": "2026-10-24",
+            "published_at": null,
+            "locator": "教学科研单位、研究机构列表"
+          },
+          {
+            "id": "uestc-wave8-department-home-challenge",
+            "url": "https://www.ese.uestc.edu.cn/",
+            "evidence_status": "access_challenge_no_roster_body",
+            "retrieved_at": "2026-10-24",
+            "published_at": null,
+            "access_note": "HTTP 202，空body和JavaScript验证挑战；停止，不执行或绕过。"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "version": "public_append_manifest_v1",
+  "baseline_fixture_sha256": "034470bc2d40294199f60051f0619d095ebd47aa882acf0652b5e20a47fb2526",
+  "baseline_inventory_sha256": "c35c0512ff5a147a4d412da6abed4bd7fbe61cd8193893b90db57c394b798af9",
+  "baseline_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3",
+  "source_contract": {
+    "path": "tests/fixtures/rotation003-wave8-source-contract.json",
+    "sha256": "65c2a67e2cb10893fc3d0b42c8bcc94cc0d8eb85741b7427e44133d34d7c2a95"
+  },
+  "audit_digests": {
+    "source_input_sha256": "ad5576c8f962e279045cd0bc13c81f15f6293ffdd803c746ac41c73a8be1aff6",
+    "review_result_sha256": "7eee85ab1f058cb693876b2b384eb62378c39001af547c164648eef244121412"
+  },
+  "changed_existing": {
+    "data/atlas.json": {
+      "before_sha256": "2f843a600ef79f9b6d24ee98b702ed17dc335c776c4893f0316b5064ba3474fb",
+      "after_sha256": "a5535aebc0330c1ceed77cacc6c3dfe044b7cb0868419d85915a13ffcc4adbea",
+      "byte_length": 10141960
+    },
+    "data/rosters.json": {
+      "before_sha256": "fa3fd547a59c10a5e6285523fbcd5e3215b6076f59f0a9246554fedbf2e3a83e",
+      "after_sha256": "6d8d8afc79e56e236c31cb7ef5b0a011b49d3d2fd139cd9606955113021cc102",
+      "byte_length": 5662140
+    },
+    "progress/README.md": {
+      "before_sha256": "08db02455222e2e99629cca4c56490300d3f1df64733291b33f3f6567cf25aaf",
+      "after_sha256": "3d8fc3fe661c93c92e360b2bcdf14ff708e5982235d706abb8598dfc86eb4d7b",
+      "byte_length": 9454
+    },
+    "progress/current-coverage.md": {
+      "before_sha256": "375f389c9d889c6c3cbf6e7f0e9b025b4eee97d7a930fad1b7ebac4e23c602c3",
+      "after_sha256": "44e11b4d4abbad22bd863fa6f01c56677285de4131032cc81bf87b882541b1ef",
+      "byte_length": 37721
+    },
+    "progress/work-queue.json": {
+      "before_sha256": "d22c628ade740a72f063d7f0fe3570374ebdd881ef2d787330c4b39e5b51ea37",
+      "after_sha256": "85e850dbc2e02328544131152f9e8e39cf6ef5dc5e5729e354958b6fc3c44862",
+      "byte_length": 301742
+    },
+    "site/atlas.json": {
+      "before_sha256": "7d712a1f1e7d83d6093242dd0e9e12bb9d39d2183c33e4f7ffdecb2846caa327",
+      "after_sha256": "9d805c710f54503940e27fc1d54e66567338fed3318f613f5717a5c5b2ebf8c3",
+      "byte_length": 10168224
+    },
+    "site/exports/待核对名录.csv": {
+      "before_sha256": "aa21299c3f87de06b9427dffad265e1f6de15a2a22d79be4199e41008592c350",
+      "after_sha256": "ecb11f8a0198ec5a8187c2de0c5004a5cb2c429503d0f59c5351aa747a03c5bd",
+      "byte_length": 1212258
+    },
+    "site/exports/待核对名录.xlsx": {
+      "before_sha256": "a51eb8fa7b9f13d8e03849f6fab02121df894a2b81e560e435cc855c69d19047",
+      "after_sha256": "94214280a92ff475bdcaa27dfadabdb7a48ccf0219bb20f5f9aaabfe9d9c6885",
+      "byte_length": 692667
+    },
+    "site/rosters.json": {
+      "before_sha256": "35cad326388607f1abac4e9efbd05dbefa1eb4a1a7b7ffbc1ed194a1ee56dc27",
+      "after_sha256": "fec54195daeebc3209dd5691bebf3482c40155242efabfd424acbf8c982d30e8",
+      "byte_length": 3250431
+    }
+  },
+  "deleted_existing": [],
+  "allowed_added_outputs": {
+    "progress/multischool-rotation003-wave8-coverage.json": {
+      "sha256": "3d93b13a89aea56d29dd5869366bb65abf95e8738b0c76cf3b9c91ed761fbafe",
+      "byte_length": 4733
+    },
+    "progress/ouc-rotation003-wave8-coverage.json": {
+      "sha256": "dc35f2f9b4d60fc4a80f86490459bb3349a43fb647219d56a7690763351e2cc2",
+      "byte_length": 8445
+    },
+    "progress/sdu-rotation003-wave8-coverage.json": {
+      "sha256": "03fe08a343a29d56a4cc7f6c0b5eb96edccfad8ffd03c5a8d8ac9212f1b23ff6",
+      "byte_length": 9398
+    },
+    "progress/uestc-rotation003-wave8-coverage.json": {
+      "sha256": "2ede2ef5248e210fba11532c2d5514588ae7303f2e030bb0bda3f80790d3a2d2",
+      "byte_length": 2360
+    },
+    "progress/whu-rotation003-wave8-coverage.json": {
+      "sha256": "0dcdd61780c52794b1c1c5c029064a6d01464a8678300482a025c9662d4cc7a2",
+      "byte_length": 2744
+    },
+    "research/rotation003-wave8-source-context.json": {
+      "sha256": "ac883691828719beb6ecec7b165648e4c036062d20fa54c3fda9b602d1220c64",
+      "byte_length": 10498
+    },
+    "site/exports/ouc-coas-oceanography.xlsx": {
+      "sha256": "1fc06f65cb057c17b9cae4e961664f4387b2ff992f7bff7d372bde5745109f58",
+      "byte_length": 16145
+    },
+    "site/exports/sdu-history-department.xlsx": {
+      "sha256": "c4d423128f1ae2ee6d99a6c0c577f7ed62f2b69bb4a982c66e7565758f150af1",
+      "byte_length": 14090
+    }
+  },
+  "implementation_added_files": [
+    "scripts/validate_source_contract.py",
+    "tests/fixtures/release32-public-baseline.json",
+    "tests/fixtures/release32-public-file-manifest.json",
+    "tests/fixtures/rotation003-wave8-append-manifest.json",
+    "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+    "tests/fixtures/rotation003-wave8-source-contract.json",
+    "tests/public-append-history.js",
+    "tests/public-append-history.test.js",
+    "tests/public_append_history.py",
+    "tests/test_public_append_history.py",
+    "tests/test_rotation003_wave8_source_contract.py"
+  ],
+  "implementation_modified_files": {
+    "tests/rotation002-wave3-display-fix.test.js": {
+      "before_sha256": "6ab7c25d25dd249cf1f748fc5eba7708dd694b158f7baae9560681c8f7545144"
+    },
+    "tests/rotation003-wave1-display-fix.test.js": {
+      "before_sha256": "fe6e264ba1a64dba4b7ce5cd528e1e4770697a340c2de144824b35ccb2eebfda"
+    },
+    "tests/test_rotation003_wave1_display_fix.py": {
+      "before_sha256": "260cf904e0722b402d5ddeed7da017d103e18d41eb2e0f64b40d1a65481bee02"
+    },
+    "tests/test_rotation003_wave1_layout_fix.py": {
+      "before_sha256": "7818fae0ab545e5f52aa07c792db15246c49ae5398d5ae009b434d9d3eaa497d"
+    },
+    "tests/test_rotation003_wave7_boundaries.py": {
+      "before_sha256": "19777e20098346c459a10020b4e7c1005cbdf62d652d0796618beb314d1565f5"
+    }
+  }
+}

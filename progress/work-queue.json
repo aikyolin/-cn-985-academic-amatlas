@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-10-23",
-  "base_commit": "8d391b596497ac6eb2c5c654f31eccecba202485",
+  "base_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -7501,6 +7501,125 @@
         "category": "access_denied",
         "description": "官方物理Faculty名录返回412，原序正文不可得，整范围hold；零已锁候选、零人物、零新增组织。",
         "retry_condition": "本批不重试、不绕路、不替补；仅在另获明确授权且访问条件发生实质变化后重新评估。"
+      }
+    },
+    {
+      "task_id": "sdu:rotation003-wave8",
+      "institution_id": "sdu",
+      "organization_id": "sdu-history-department",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "历史学院／学系师资首页／历史学系（中国古代史教研室）／教授(研究员)；仅原序首3部分职业资料，不声明完整名录或实时在岗。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://history.sdu.edu.cn/szdw/xxsz.htm"
+      ],
+      "artifact_paths": [
+        "progress/sdu-rotation003-wave8-coverage.json",
+        "progress/multischool-rotation003-wave8-coverage.json",
+        "data/atlas.json",
+        "data/rosters.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序部分职业样本及未决项；新增范围另行审核。",
+      "next_cursor": "source_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3"
+    },
+    {
+      "task_id": "ouc:rotation003-wave8",
+      "institution_id": "ouc",
+      "organization_id": "ouc-coas-oceanography",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "海洋与大气学院 / 海洋学系 / 教授 / 首页1/5；仅原序首3部分职业资料，不声明完整名录或实时在岗。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://coas.ouc.edu.cn/js_8869/list.htm"
+      ],
+      "artifact_paths": [
+        "progress/ouc-rotation003-wave8-coverage.json",
+        "progress/multischool-rotation003-wave8-coverage.json",
+        "data/atlas.json",
+        "data/rosters.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序部分职业样本及未决项；新增范围另行审核。",
+      "next_cursor": "source_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3"
+    },
+    {
+      "task_id": "whu:rotation003-wave8",
+      "institution_id": "whu",
+      "organization_id": null,
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "blocked",
+      "scope": {
+        "description": "武汉大学化学与分子科学学院教授或专任教师明确分类首页原序首3；整范围hold，零候选、零新人物或组织。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://chem.whu.edu.cn/",
+        "https://chem.whu.edu.cn/xygk/xyjj.htm"
+      ],
+      "artifact_paths": [
+        "progress/whu-rotation003-wave8-coverage.json",
+        "progress/multischool-rotation003-wave8-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留整范围hold，不重试受限路线、不替补。",
+      "next_cursor": "source_scope_held",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3",
+      "blocker": {
+        "category": "access_denied",
+        "description": "官网首页和学院简介同批直接访问403 Forbidden，尚无名录正文，无法确定原序；整范围hold，不生成候选名单。",
+        "retry_condition": "本批停止，不绕过限制或替补；仅访问条件有实质变化并获明确授权后重新评估。"
+      }
+    },
+    {
+      "task_id": "uestc:rotation003-wave8",
+      "institution_id": "uestc",
+      "organization_id": null,
+      "campus_ids": [],
+      "stage": "roster_enumeration",
+      "status": "blocked",
+      "scope": {
+        "description": "电子科学与工程学院／可明确分类教授或专任教师首页；整范围hold，零候选、零新人物或组织。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://www.ese.uestc.edu.cn/"
+      ],
+      "artifact_paths": [
+        "progress/uestc-rotation003-wave8-coverage.json",
+        "progress/multischool-rotation003-wave8-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留整范围hold，不重试受限路线、不替补。",
+      "next_cursor": "source_scope_held",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3",
+      "blocker": {
+        "category": "access_denied",
+        "description": "学院官网首页只返回HTTP 202的JavaScript验证挑战，未获得教授或专任教师分类名录正文。",
+        "retry_condition": "本批停止，不绕过限制或替补；仅访问条件有实质变化并获明确授权后重新评估。"
       }
     }
   ]

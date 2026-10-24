@@ -1,8 +1,11 @@
 """Generic reviewed append conservation and scope boundaries; factual expectations are frozen data."""
 import copy,hashlib,json,pathlib,re,unittest
 from release30_history import CONTRACT,release30_view
+from public_append_history import load_baseline, public_append_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-def read(rel):return json.loads((ROOT/rel).read_text())
+def read(rel):
+ value=json.loads((ROOT/rel).read_text())
+ return public_append_view(value,rel) if rel in load_baseline()['files'] else value
 def digest(value):return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 def pointer(value,path):
  for part in path.split('/')[1:]:

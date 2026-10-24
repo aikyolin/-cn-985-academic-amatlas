@@ -1,0 +1,73 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3",
+  "school_id": "whu",
+  "status": "blocked",
+  "organization_id": null,
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "武汉大学化学与分子科学学院教授或专任教师明确分类首页原序首3",
+  "selected_candidate_names": [],
+  "selected_roster_original_order": [],
+  "whole_scope_hold": true,
+  "held_candidates": [],
+  "counts": {
+    "education": 0,
+    "appointments": 0,
+    "mentors": 0,
+    "committee_members": 0,
+    "publications": 0,
+    "teaching": 0,
+    "research_fields": 0,
+    "professional_qualifications": 0,
+    "people": 0,
+    "pending_people": 0,
+    "org_units": 0,
+    "roster_entries": 0,
+    "source_observations": 0,
+    "held_scopes": 1,
+    "held_candidates": 0,
+    "degree_awarded_true": 0,
+    "degree_awarded_false": 0,
+    "degree_awarded_null": 0
+  },
+  "source_urls": [
+    "https://chem.whu.edu.cn/",
+    "https://chem.whu.edu.cn/xygk/xyjj.htm"
+  ],
+  "source_review_status": "approved_scope_only",
+  "audit_integrity": {
+    "source_input_sha256": "187ccedf40a7bfd81ce4e240f73356f7a85aeec4ccdbe2b11e43d5c599e16aca",
+    "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+    "review_result_sha256": "8ee376e8b392b5ed4e47c4a3ffa06a319c333ae9baeef98aff92c854a53e80a2",
+    "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+  },
+  "limitations": [
+    "整范围hold；未建立任何本批组织、人物、待补、名录或来源观察，不以其他入口或院系替补。"
+  ],
+  "next_action": "保留整范围hold，不重试受限路线、不替补。",
+  "date_scope": "来源实际读取日为2026-10-24；全库兼容日期沿用历史值，不代表逐人重新核验。",
+  "release_status": "local_integration_candidate_not_published",
+  "hold_details": [
+    {
+      "scope": "武汉大学化学与分子科学学院教授或专任教师明确分类首页原序首3",
+      "reason": "官网首页和学院简介同批直接访问403 Forbidden，尚无名录正文，无法确定原序；整范围hold，不生成候选名单。",
+      "attempted_at": "2026-10-24T04:46:14Z",
+      "attempted_urls": [
+        "https://chem.whu.edu.cn/",
+        "https://chem.whu.edu.cn/xygk/xyjj.htm"
+      ],
+      "restriction": "403 Forbidden",
+      "outcome": "denied",
+      "route_stopped": true,
+      "replacement_performed": false,
+      "not_performed": [
+        "未继续请求受限站点",
+        "未改用教师门户或缓存补原序",
+        "未选择其他学院或替补人物",
+        "未生成组织节点或人物"
+      ]
+    }
+  ]
+}

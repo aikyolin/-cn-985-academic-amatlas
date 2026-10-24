@@ -1,0 +1,2433 @@
+{
+  "contract_version": 1,
+  "baseline_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3",
+  "source_fixture": {
+    "path": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+    "sha256": "4cd26e241f1293484af3d400288638484e0286f43ef0718ef5cbd7accb2d251a",
+    "hash_scope": "public_structured_source_fixture_bytes_not_webpage_bytes"
+  },
+  "source_packages": [
+    {
+      "school_id": "sdu",
+      "pointer": "/packages/sdu/data",
+      "canonical_sha256": "094565bae5720ba5313dcc9426175afa950483ce20c3cf7046d500804af8a246",
+      "audit_sha256": "f530b8040a1636cf4e5c94d79a3249239cd8308897cfa1a4e3e4fc18dc0bdb02",
+      "audit_sha256_scope": "approved_research_package_file_bytes_not_webpage_bytes"
+    },
+    {
+      "school_id": "sdu",
+      "pointer": "/packages/sdu/scope",
+      "canonical_sha256": "7dede3d895cd55be49cea34e41430218baf6d306b2e4f589f020f6cafff2e73f",
+      "audit_sha256": "ff8fc525e7f4e5b1bb306e4b11f88351c5f72d590390ccc6df974377fa15b5b1",
+      "audit_sha256_scope": "approved_research_package_file_bytes_not_webpage_bytes"
+    },
+    {
+      "school_id": "ouc",
+      "pointer": "/packages/ouc/data",
+      "canonical_sha256": "9471dc24e8e904352b85f754369a37bd750f2696f66d844537771d51e5329bb4",
+      "audit_sha256": "5f65b3273894048658a59c45da3a530463c85b7395307a9cf1e403fb27b8b889",
+      "audit_sha256_scope": "approved_research_package_file_bytes_not_webpage_bytes"
+    },
+    {
+      "school_id": "whu",
+      "pointer": "/packages/whu/data",
+      "canonical_sha256": "aafa08f9edffb4ea0609f67be7c0494d62eac7027904898b52941b93d4ddedba",
+      "audit_sha256": "187ccedf40a7bfd81ce4e240f73356f7a85aeec4ccdbe2b11e43d5c599e16aca",
+      "audit_sha256_scope": "approved_research_package_file_bytes_not_webpage_bytes"
+    },
+    {
+      "school_id": "uestc",
+      "pointer": "/packages/uestc/data",
+      "canonical_sha256": "fec7162fcf73e80046d4cf48a80678100905f963b66ed6dc244794bc6245065e",
+      "audit_sha256": "cd044b23b282b5f5a78f5ee645c837d105253d39c7868ca92ea083e32a4fdb57",
+      "audit_sha256_scope": "approved_research_package_file_bytes_not_webpage_bytes"
+    }
+  ],
+  "document_objects": [
+    {
+      "file": "progress/sdu-rotation003-wave8-coverage.json",
+      "canonical_sha256": "6536b5eae13e4e8fc16c1fa70c4de395e9a5e523225a4905dec64602a6650a0c"
+    },
+    {
+      "file": "progress/ouc-rotation003-wave8-coverage.json",
+      "canonical_sha256": "2ff36351fc30f6b55dc8d5202a1f7b027bc7ea18e89b0ac76a8c1c46d6a29abe"
+    },
+    {
+      "file": "progress/whu-rotation003-wave8-coverage.json",
+      "canonical_sha256": "112053bd714910b67823797c0f83421b6b4cfe253f709ef401451e498a646c3a"
+    },
+    {
+      "file": "progress/uestc-rotation003-wave8-coverage.json",
+      "canonical_sha256": "a2a93c3b16ff25e1326c8848196b8594609192b8662f79ac1c0cb6519ce407bd"
+    },
+    {
+      "file": "progress/multischool-rotation003-wave8-coverage.json",
+      "canonical_sha256": "003ce677ad3fb625bf086b2a3bea23de4f680737cb456a5e1c174568700d977b"
+    },
+    {
+      "file": "data/atlas.json",
+      "canonical_sha256": "7e14e4fdba3a02b2eebb6dbf66a45c92a8aa5a8aa4b3a5da515056ce5bc1a2d8"
+    },
+    {
+      "file": "data/rosters.json",
+      "canonical_sha256": "f24d98808b68a63682af2482ea86d2e1ae870cbfc1ab0f59d31b146cd8480e85"
+    },
+    {
+      "file": "progress/work-queue.json",
+      "canonical_sha256": "3e73764346df45610f8072a39d2885c3d652336070726e7c9607ec4d0d097a42"
+    },
+    {
+      "file": "research/rotation003-wave8-source-context.json",
+      "canonical_sha256": "bd45001a81b0294c291543c63ac64cff276d97a0a4c2a2938fca297877ad3810"
+    }
+  ],
+  "objects": [
+    {
+      "id": "binding-1",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/schema_version"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/schema_version"
+      },
+      "source_object_sha256": "b83db121bd629895e9b3c8de3d5a3d21ff7ae9ee29b79466aedc2a6a72957990",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-2",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/batch_id"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/batch_id"
+      },
+      "source_object_sha256": "9d84638617e8062a66a1d7a21119e76f5bc5f613c4a561877607a0a0a149357e",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-3",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/baseline_commit"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/baseline_commit"
+      },
+      "source_object_sha256": "bb7a71c32cbee24fb0e82f57ba3962de04b47ab12f9cd006346986a37d2626bc",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-4",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/institution"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/institution"
+      },
+      "source_object_sha256": "2fa9a2401ec84a10f75524be9792fcfd33e983536cd2891b68d06a06efca541a",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-5",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/campuses"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/campuses"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-6",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/scope"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/scope"
+      },
+      "source_object_sha256": "5e0816d6e27de3f074a134c6801951a96a6a079c12f7f7f04a6086ca0b4e7ead",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-7",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/retrieved_at"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/retrieved_at"
+      },
+      "source_object_sha256": "6484fdf06f96fdc8798ea7ad65d1bf470ca8dadbbe42e38c894d63839c90f6be",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-8",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/coverage_complete"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/coverage_complete"
+      },
+      "source_object_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-9",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/fields_complete"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/fields_complete"
+      },
+      "source_object_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-10",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/review_status"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/review_status"
+      },
+      "source_object_sha256": "73ab835a030742ea12d7fd6860559100a04f3d2b52ef11b970b0fce8924a89b5",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-11",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/held_candidates"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/held_candidates"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-12",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/pending_people"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/pending_people"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-13",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/sources"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/sources"
+      },
+      "source_object_sha256": "a5065178a55a935b87b89fda903c3692318046746730d3d75b09d98827c401a4",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-14",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/limitations"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/limitations"
+      },
+      "source_object_sha256": "13a0c7a256fee0851a0a8ae8cd2d869870b4faecc7a131548324d94ccd7799d2",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-15",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/counts"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/sdu/data/counts"
+      },
+      "source_object_sha256": "2ef22d4208b88faade1548f36beb7489d2caacc0059156749e10595446c22374",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-16",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/people/0"
+      },
+      "target": {
+        "file": "data/atlas.json",
+        "pointer": "/people/606"
+      },
+      "source_object_sha256": "2f332695584a50e63cdf4570f7580378263bc31f8bb432e9d37e964d952e78fc",
+      "normalizations": [],
+      "additions": [
+        {
+          "path": "/employment_status",
+          "value": "unknown",
+          "before_exists": false
+        },
+        {
+          "path": "/employment_status_basis",
+          "value": "source_reported_roles_do_not_establish_current_personnel_status",
+          "before_exists": false
+        },
+        {
+          "path": "/employment_status_note",
+          "value": "保留来源时点职称与现职文字，不作为2026年实时在岗证明。",
+          "before_exists": false
+        },
+        {
+          "path": "/quick_link_eligible",
+          "value": false,
+          "before_exists": false
+        },
+        {
+          "path": "/personnel_status_verified",
+          "value": false,
+          "before_exists": false
+        },
+        {
+          "path": "/navigation_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/navigation_status",
+          "value": "official_roster_native_profile_link_resolves_and_identity_matches",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_source_url",
+          "value": "https://history.sdu.edu.cn/info/1066/4598.htm",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_source_id",
+          "value": "sdu-chenshangsheng-wave8-profile",
+          "before_exists": false
+        }
+      ]
+    },
+    {
+      "id": "binding-17",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/people/1"
+      },
+      "target": {
+        "file": "data/atlas.json",
+        "pointer": "/people/607"
+      },
+      "source_object_sha256": "159df0e0ba607a8598bddcfd2c54151eb2faecdba3de548223b24e9db2a98b24",
+      "normalizations": [
+        {
+          "path": "/education/0/note",
+          "before": "原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "after": "来源资格标签：兰州大学历史学学士（2006）。原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "preserved_at": "/education/0/source_note_before_display_normalization",
+          "reason": "Expose the source-reported qualification label and its year in existing note consumers. The source year remains a qualification-label year, not an award date or study end; the original note is retained verbatim."
+        },
+        {
+          "path": "/education/1/note",
+          "before": "原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "after": "来源资格标签：南开大学历史学硕士（2008）。原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "preserved_at": "/education/1/source_note_before_display_normalization",
+          "reason": "Expose the source-reported qualification label and its year in existing note consumers. The source year remains a qualification-label year, not an award date or study end; the original note is retained verbatim."
+        },
+        {
+          "path": "/education/2/note",
+          "before": "原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "after": "来源资格标签：南开大学历史学博士（2012）。原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "preserved_at": "/education/2/source_note_before_display_normalization",
+          "reason": "Expose the source-reported qualification label and its year in existing note consumers. The source year remains a qualification-label year, not an award date or study end; the original note is retained verbatim."
+        }
+      ],
+      "additions": [
+        {
+          "path": "/education/0/source_note_before_display_normalization",
+          "value": "原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "before_exists": false
+        },
+        {
+          "path": "/education/1/source_note_before_display_normalization",
+          "value": "原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "before_exists": false
+        },
+        {
+          "path": "/education/2/source_note_before_display_normalization",
+          "value": "原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "before_exists": false
+        },
+        {
+          "path": "/employment_status",
+          "value": "unknown",
+          "before_exists": false
+        },
+        {
+          "path": "/employment_status_basis",
+          "value": "source_reported_roles_do_not_establish_current_personnel_status",
+          "before_exists": false
+        },
+        {
+          "path": "/employment_status_note",
+          "value": "保留来源时点职称与现职文字，不作为2026年实时在岗证明。",
+          "before_exists": false
+        },
+        {
+          "path": "/quick_link_eligible",
+          "value": false,
+          "before_exists": false
+        },
+        {
+          "path": "/personnel_status_verified",
+          "value": false,
+          "before_exists": false
+        },
+        {
+          "path": "/navigation_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/navigation_status",
+          "value": "official_roster_native_profile_link_resolves_and_identity_matches",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_source_url",
+          "value": "https://history.sdu.edu.cn/info/1066/2075.htm",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_source_id",
+          "value": "sdu-daiguoxi-wave8-profile",
+          "before_exists": false
+        }
+      ]
+    },
+    {
+      "id": "binding-18",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/people/2"
+      },
+      "target": {
+        "file": "data/atlas.json",
+        "pointer": "/people/608"
+      },
+      "source_object_sha256": "0d6fdb154c92808aac2ca3606c7e0239aa55ed1a8d3683beae534961a0e39a83",
+      "normalizations": [],
+      "additions": [
+        {
+          "path": "/employment_status",
+          "value": "unknown",
+          "before_exists": false
+        },
+        {
+          "path": "/employment_status_basis",
+          "value": "source_reported_roles_do_not_establish_current_personnel_status",
+          "before_exists": false
+        },
+        {
+          "path": "/employment_status_note",
+          "value": "保留来源时点职称与现职文字，不作为2026年实时在岗证明。",
+          "before_exists": false
+        },
+        {
+          "path": "/quick_link_eligible",
+          "value": false,
+          "before_exists": false
+        },
+        {
+          "path": "/personnel_status_verified",
+          "value": false,
+          "before_exists": false
+        },
+        {
+          "path": "/navigation_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/navigation_status",
+          "value": "official_roster_native_profile_link_resolves_and_identity_matches",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_source_url",
+          "value": "https://history.sdu.edu.cn/info/1066/4967.htm",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_source_id",
+          "value": "sdu-duyong-wave8-profile",
+          "before_exists": false
+        }
+      ]
+    },
+    {
+      "id": "binding-19",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/org_units/0"
+      },
+      "target": {
+        "file": "data/atlas.json",
+        "pointer": "/org_units/252"
+      },
+      "source_object_sha256": "95bba3f82b92fa6fb4a31863e922c74e44b01094ba96543637c7a77e258706a8",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-20",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/org_units/1"
+      },
+      "target": {
+        "file": "data/atlas.json",
+        "pointer": "/org_units/253"
+      },
+      "source_object_sha256": "eae842a8c93a277764ce5662c963f1ee0aef6e3d11c1c70771bcf3f080a7f9f8",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-21",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/selected_roster_original_order/0"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/entries/1772"
+      },
+      "source_object_sha256": "66b6d7927feb3e0a5c585f54351212463b37c65fdf854ad7da28526e692c84ee",
+      "normalizations": [],
+      "additions": [
+        {
+          "path": "/campus_id",
+          "value": null,
+          "before_exists": false
+        },
+        {
+          "path": "/category",
+          "value": "历史学系（中国古代史教研室）／教授(研究员)",
+          "before_exists": false
+        },
+        {
+          "path": "/accessed_on",
+          "value": "2026-10-24",
+          "before_exists": false
+        },
+        {
+          "path": "/batch_id",
+          "value": "sdu-selected-roster-rotation003-wave8",
+          "before_exists": false
+        },
+        {
+          "path": "/source_batch_id",
+          "value": "faculty-batch-sdu-history-rotation003-wave8",
+          "before_exists": false
+        },
+        {
+          "path": "/selection_status",
+          "value": "selected_subset",
+          "before_exists": false
+        },
+        {
+          "path": "/selection_basis",
+          "value": "官方明确分类首页原序首三，非全院或实时在岗人事范围。",
+          "before_exists": false
+        },
+        {
+          "path": "/source_identity_evidence",
+          "value": {
+            "status": "official_roster_native_link",
+            "source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+            "profile_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+            "native_link_target": "https://history.sdu.edu.cn/info/1066/4598.htm",
+            "source_ids": [
+              "sdu-history-wave8-roster",
+              "sdu-chenshangsheng-wave8-profile"
+            ]
+          },
+          "before_exists": false
+        },
+        {
+          "path": "/source_person_id",
+          "value": "sdu-chenshangsheng",
+          "before_exists": false
+        },
+        {
+          "path": "/professional_identity_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/official_profile_identity_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/profile_identity_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/verification_status",
+          "value": "reviewed_official_roster_native_profile_link",
+          "before_exists": false
+        },
+        {
+          "path": "/notes",
+          "value": [
+            "本批仅原序样本；职业身份、可点击主页与当前在岗分别核验。"
+          ],
+          "before_exists": false
+        },
+        {
+          "path": "/verified_person_id",
+          "value": "sdu-chenshangsheng",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_identity_evidence",
+          "value": {
+            "status": "independently_reviewed_official_roster_native_link",
+            "source_ids": [
+              "sdu-history-wave8-roster",
+              "sdu-chenshangsheng-wave8-profile"
+            ],
+            "checked_on": "2026-10-24",
+            "roster_source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+            "official_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+            "audit_integrity": {
+              "source_input_sha256": "f530b8040a1636cf4e5c94d79a3249239cd8308897cfa1a4e3e4fc18dc0bdb02",
+              "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+              "review_result_sha256": "f7f6667e61db61215ecafb21e05912a92db810747a0acacf0396678b18c40dba",
+              "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+            }
+          },
+          "before_exists": false
+        },
+        {
+          "path": "/source_observation_ids",
+          "value": [
+            "sdu-selected-roster-rotation003-wave8:roster-sdu-chenshangsheng:1"
+          ],
+          "before_exists": false
+        }
+      ]
+    },
+    {
+      "id": "binding-22",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/selected_roster_original_order/0"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/source_observations/1810/source_payload"
+      },
+      "source_object_sha256": "66b6d7927feb3e0a5c585f54351212463b37c65fdf854ad7da28526e692c84ee",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-23",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/selected_roster_original_order/1"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/entries/1773"
+      },
+      "source_object_sha256": "30dc84cc4d3f8c7ed5e14228193b7e719bd4ae9bd1b27dcc74851b7ffc397fcb",
+      "normalizations": [],
+      "additions": [
+        {
+          "path": "/campus_id",
+          "value": null,
+          "before_exists": false
+        },
+        {
+          "path": "/category",
+          "value": "历史学系（中国古代史教研室）／教授(研究员)",
+          "before_exists": false
+        },
+        {
+          "path": "/accessed_on",
+          "value": "2026-10-24",
+          "before_exists": false
+        },
+        {
+          "path": "/batch_id",
+          "value": "sdu-selected-roster-rotation003-wave8",
+          "before_exists": false
+        },
+        {
+          "path": "/source_batch_id",
+          "value": "faculty-batch-sdu-history-rotation003-wave8",
+          "before_exists": false
+        },
+        {
+          "path": "/selection_status",
+          "value": "selected_subset",
+          "before_exists": false
+        },
+        {
+          "path": "/selection_basis",
+          "value": "官方明确分类首页原序首三，非全院或实时在岗人事范围。",
+          "before_exists": false
+        },
+        {
+          "path": "/source_identity_evidence",
+          "value": {
+            "status": "official_roster_native_link",
+            "source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+            "profile_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+            "native_link_target": "https://history.sdu.edu.cn/info/1066/2075.htm",
+            "source_ids": [
+              "sdu-history-wave8-roster",
+              "sdu-daiguoxi-wave8-profile"
+            ]
+          },
+          "before_exists": false
+        },
+        {
+          "path": "/source_person_id",
+          "value": "sdu-daiguoxi",
+          "before_exists": false
+        },
+        {
+          "path": "/professional_identity_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/official_profile_identity_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/profile_identity_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/verification_status",
+          "value": "reviewed_official_roster_native_profile_link",
+          "before_exists": false
+        },
+        {
+          "path": "/notes",
+          "value": [
+            "本批仅原序样本；职业身份、可点击主页与当前在岗分别核验。"
+          ],
+          "before_exists": false
+        },
+        {
+          "path": "/verified_person_id",
+          "value": "sdu-daiguoxi",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_identity_evidence",
+          "value": {
+            "status": "independently_reviewed_official_roster_native_link",
+            "source_ids": [
+              "sdu-history-wave8-roster",
+              "sdu-daiguoxi-wave8-profile"
+            ],
+            "checked_on": "2026-10-24",
+            "roster_source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+            "official_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+            "audit_integrity": {
+              "source_input_sha256": "f530b8040a1636cf4e5c94d79a3249239cd8308897cfa1a4e3e4fc18dc0bdb02",
+              "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+              "review_result_sha256": "f7f6667e61db61215ecafb21e05912a92db810747a0acacf0396678b18c40dba",
+              "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+            }
+          },
+          "before_exists": false
+        },
+        {
+          "path": "/source_observation_ids",
+          "value": [
+            "sdu-selected-roster-rotation003-wave8:roster-sdu-daiguoxi:1"
+          ],
+          "before_exists": false
+        }
+      ]
+    },
+    {
+      "id": "binding-24",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/selected_roster_original_order/1"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/source_observations/1811/source_payload"
+      },
+      "source_object_sha256": "30dc84cc4d3f8c7ed5e14228193b7e719bd4ae9bd1b27dcc74851b7ffc397fcb",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-25",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/selected_roster_original_order/2"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/entries/1774"
+      },
+      "source_object_sha256": "2062b28a2d9570397c56fd7fa3436383361cf5fa96c96e53db8f02bc042a22fe",
+      "normalizations": [],
+      "additions": [
+        {
+          "path": "/campus_id",
+          "value": null,
+          "before_exists": false
+        },
+        {
+          "path": "/category",
+          "value": "历史学系（中国古代史教研室）／教授(研究员)",
+          "before_exists": false
+        },
+        {
+          "path": "/accessed_on",
+          "value": "2026-10-24",
+          "before_exists": false
+        },
+        {
+          "path": "/batch_id",
+          "value": "sdu-selected-roster-rotation003-wave8",
+          "before_exists": false
+        },
+        {
+          "path": "/source_batch_id",
+          "value": "faculty-batch-sdu-history-rotation003-wave8",
+          "before_exists": false
+        },
+        {
+          "path": "/selection_status",
+          "value": "selected_subset",
+          "before_exists": false
+        },
+        {
+          "path": "/selection_basis",
+          "value": "官方明确分类首页原序首三，非全院或实时在岗人事范围。",
+          "before_exists": false
+        },
+        {
+          "path": "/source_identity_evidence",
+          "value": {
+            "status": "official_roster_native_link",
+            "source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+            "profile_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+            "native_link_target": "https://history.sdu.edu.cn/info/1066/4967.htm",
+            "source_ids": [
+              "sdu-history-wave8-roster",
+              "sdu-duyong-wave8-profile"
+            ]
+          },
+          "before_exists": false
+        },
+        {
+          "path": "/source_person_id",
+          "value": "sdu-duyong",
+          "before_exists": false
+        },
+        {
+          "path": "/professional_identity_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/official_profile_identity_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/profile_identity_verified",
+          "value": true,
+          "before_exists": false
+        },
+        {
+          "path": "/verification_status",
+          "value": "reviewed_official_roster_native_profile_link",
+          "before_exists": false
+        },
+        {
+          "path": "/notes",
+          "value": [
+            "本批仅原序样本；职业身份、可点击主页与当前在岗分别核验。"
+          ],
+          "before_exists": false
+        },
+        {
+          "path": "/verified_person_id",
+          "value": "sdu-duyong",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_identity_evidence",
+          "value": {
+            "status": "independently_reviewed_official_roster_native_link",
+            "source_ids": [
+              "sdu-history-wave8-roster",
+              "sdu-duyong-wave8-profile"
+            ],
+            "checked_on": "2026-10-24",
+            "roster_source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+            "official_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+            "audit_integrity": {
+              "source_input_sha256": "f530b8040a1636cf4e5c94d79a3249239cd8308897cfa1a4e3e4fc18dc0bdb02",
+              "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+              "review_result_sha256": "f7f6667e61db61215ecafb21e05912a92db810747a0acacf0396678b18c40dba",
+              "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+            }
+          },
+          "before_exists": false
+        },
+        {
+          "path": "/source_observation_ids",
+          "value": [
+            "sdu-selected-roster-rotation003-wave8:roster-sdu-duyong:1"
+          ],
+          "before_exists": false
+        }
+      ]
+    },
+    {
+      "id": "binding-26",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/data/selected_roster_original_order/2"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/source_observations/1812/source_payload"
+      },
+      "source_object_sha256": "2062b28a2d9570397c56fd7fa3436383361cf5fa96c96e53db8f02bc042a22fe",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-27",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/sdu/scope"
+      },
+      "target": {
+        "file": "progress/sdu-rotation003-wave8-coverage.json",
+        "pointer": "/source_scope"
+      },
+      "source_object_sha256": "7dede3d895cd55be49cea34e41430218baf6d306b2e4f589f020f6cafff2e73f",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-28",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/package_id"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/ouc/data/package_id"
+      },
+      "source_object_sha256": "c4d13cde93e39433960540041a8c07a608a06f1dcd63649d21611b7dc0bcded7",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-29",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/base_commit"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/ouc/data/base_commit"
+      },
+      "source_object_sha256": "bb7a71c32cbee24fb0e82f57ba3962de04b47ab12f9cd006346986a37d2626bc",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-30",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/school_id"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/ouc/data/school_id"
+      },
+      "source_object_sha256": "d3e1e5836b49ce087f441d4befc9523ee7e40f8bcfbedcda6c7b6e6de3f1ea68",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-31",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/retrieved_at"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/ouc/data/retrieved_at"
+      },
+      "source_object_sha256": "6484fdf06f96fdc8798ea7ad65d1bf470ca8dadbbe42e38c894d63839c90f6be",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-32",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/status"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/ouc/data/status"
+      },
+      "source_object_sha256": "1c3c824f40491bd8ee0a564eff1c57ee821ea6837258b1c534da6c22554ada5b",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-33",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/pending_people"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/ouc/data/pending_people"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-34",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/hold"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/ouc/data/hold"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-35",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/limitations"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/ouc/data/limitations"
+      },
+      "source_object_sha256": "cb361cb08fd8b20fdc585e42ef5172b704483149bcd64a9844d0389c09485121",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-36",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/people/0"
+      },
+      "target": {
+        "file": "data/atlas.json",
+        "pointer": "/people/609"
+      },
+      "source_object_sha256": "9aaf5069ab4c2f526c70cf130bd3698641b2192319c67dd52c6171fbfe6254de",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-37",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/people/1"
+      },
+      "target": {
+        "file": "data/atlas.json",
+        "pointer": "/people/610"
+      },
+      "source_object_sha256": "f2948cc07e7e2b8510389dfe8edbee4d8c9fe2eb293dce04836d783eec978427",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-38",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/people/2"
+      },
+      "target": {
+        "file": "data/atlas.json",
+        "pointer": "/people/611"
+      },
+      "source_object_sha256": "31068fef70275782883d43057c3edea3f871e37f177329a63eacb97643c56241",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-39",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/org_units/0"
+      },
+      "target": {
+        "file": "data/atlas.json",
+        "pointer": "/org_units/254"
+      },
+      "source_object_sha256": "bc3c04441ae5db57b227c17700e4853251afb8ecf4fa569adecfb51165bf1add",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-40",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/org_units/1"
+      },
+      "target": {
+        "file": "data/atlas.json",
+        "pointer": "/org_units/255"
+      },
+      "source_object_sha256": "81d3e6aff1c8ef30d880c77f0cd4994294b4e4030a83eca425682e5867e77eca",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-41",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/profile_batches/0"
+      },
+      "target": {
+        "file": "data/atlas.json",
+        "pointer": "/profile_batches/158"
+      },
+      "source_object_sha256": "b8b29c37372d558266f9d1c36c823976520bd72a567fe255da6d11171273f930",
+      "normalizations": [],
+      "additions": [
+        {
+          "path": "/integration_review_status",
+          "value": "source_approved_fields_incomplete",
+          "before_exists": false
+        },
+        {
+          "path": "/audit_integrity",
+          "value": {
+            "source_input_sha256": "5f65b3273894048658a59c45da3a530463c85b7395307a9cf1e403fb27b8b889",
+            "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+            "review_result_sha256": "8ee376e8b392b5ed4e47c4a3ffa06a319c333ae9baeef98aff92c854a53e80a2",
+            "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+          },
+          "before_exists": false
+        }
+      ]
+    },
+    {
+      "id": "binding-42",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/roster_entries/0"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/entries/1775"
+      },
+      "source_object_sha256": "26e9be7a776f97a45bca5302851c6739e170ee8471fc8d27d9baf92e0fed27a8",
+      "normalizations": [
+        {
+          "path": "/verification_status",
+          "before": "official_roster_native_profile_link_read_pending_independent_review",
+          "after": "reviewed_official_roster_native_profile_link",
+          "preserved_at": "/source_verification_status",
+          "reason": "Represent independently approved roster-to-profile identity; retain the original pre-review label. This does not verify current employment."
+        }
+      ],
+      "additions": [
+        {
+          "path": "/source_verification_status",
+          "value": "official_roster_native_profile_link_read_pending_independent_review",
+          "before_exists": false
+        },
+        {
+          "path": "/verified_person_id",
+          "value": "ouc-guanchanglong",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_identity_evidence",
+          "value": {
+            "status": "independently_reviewed_official_roster_native_link",
+            "source_ids": [
+              "ouc-rotation003-wave8-roster",
+              "ouc-guanchanglong-profile-cn",
+              "ouc-guanchanglong-profile-en"
+            ],
+            "checked_on": "2026-10-24",
+            "roster_source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+            "official_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+            "audit_integrity": {
+              "source_input_sha256": "5f65b3273894048658a59c45da3a530463c85b7395307a9cf1e403fb27b8b889",
+              "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+              "review_result_sha256": "8ee376e8b392b5ed4e47c4a3ffa06a319c333ae9baeef98aff92c854a53e80a2",
+              "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+            }
+          },
+          "before_exists": false
+        },
+        {
+          "path": "/source_observation_ids",
+          "value": [
+            "ouc-selected-roster-rotation003-wave8:roster-ouc-coas-oceanography-guanchanglong:1"
+          ],
+          "before_exists": false
+        }
+      ]
+    },
+    {
+      "id": "binding-43",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/roster_entries/0"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/source_observations/1813/source_payload"
+      },
+      "source_object_sha256": "26e9be7a776f97a45bca5302851c6739e170ee8471fc8d27d9baf92e0fed27a8",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-44",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/roster_entries/1"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/entries/1776"
+      },
+      "source_object_sha256": "5672fae8269cc640320cd8186a09a8ab8201efa158ee2e366221cad9e3d30ea1",
+      "normalizations": [
+        {
+          "path": "/verification_status",
+          "before": "official_roster_native_profile_link_read_pending_independent_review",
+          "after": "reviewed_official_roster_native_profile_link",
+          "preserved_at": "/source_verification_status",
+          "reason": "Represent independently approved roster-to-profile identity; retain the original pre-review label. This does not verify current employment."
+        }
+      ],
+      "additions": [
+        {
+          "path": "/source_verification_status",
+          "value": "official_roster_native_profile_link_read_pending_independent_review",
+          "before_exists": false
+        },
+        {
+          "path": "/verified_person_id",
+          "value": "ouc-tianjiwei",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_identity_evidence",
+          "value": {
+            "status": "independently_reviewed_official_roster_native_link",
+            "source_ids": [
+              "ouc-rotation003-wave8-roster",
+              "ouc-tianjiwei-profile-cn",
+              "ouc-tianjiwei-profile-en"
+            ],
+            "checked_on": "2026-10-24",
+            "roster_source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+            "official_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+            "audit_integrity": {
+              "source_input_sha256": "5f65b3273894048658a59c45da3a530463c85b7395307a9cf1e403fb27b8b889",
+              "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+              "review_result_sha256": "8ee376e8b392b5ed4e47c4a3ffa06a319c333ae9baeef98aff92c854a53e80a2",
+              "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+            }
+          },
+          "before_exists": false
+        },
+        {
+          "path": "/source_observation_ids",
+          "value": [
+            "ouc-selected-roster-rotation003-wave8:roster-ouc-coas-oceanography-tianjiwei:1"
+          ],
+          "before_exists": false
+        }
+      ]
+    },
+    {
+      "id": "binding-45",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/roster_entries/1"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/source_observations/1814/source_payload"
+      },
+      "source_object_sha256": "5672fae8269cc640320cd8186a09a8ab8201efa158ee2e366221cad9e3d30ea1",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-46",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/roster_entries/2"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/entries/1777"
+      },
+      "source_object_sha256": "ce593e45f12c789a1db347e8d70f8c6d3d1091833f4919ce19812ee560470b7e",
+      "normalizations": [
+        {
+          "path": "/verification_status",
+          "before": "official_roster_native_profile_link_read_pending_independent_review",
+          "after": "reviewed_official_roster_native_profile_link",
+          "preserved_at": "/source_verification_status",
+          "reason": "Represent independently approved roster-to-profile identity; retain the original pre-review label. This does not verify current employment."
+        }
+      ],
+      "additions": [
+        {
+          "path": "/source_verification_status",
+          "value": "official_roster_native_profile_link_read_pending_independent_review",
+          "before_exists": false
+        },
+        {
+          "path": "/verified_person_id",
+          "value": "ouc-baoxianwen",
+          "before_exists": false
+        },
+        {
+          "path": "/profile_identity_evidence",
+          "value": {
+            "status": "independently_reviewed_official_roster_native_link",
+            "source_ids": [
+              "ouc-rotation003-wave8-roster",
+              "ouc-baoxianwen-profile-cn",
+              "ouc-baoxianwen-profile-en"
+            ],
+            "checked_on": "2026-10-24",
+            "roster_source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+            "official_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+            "audit_integrity": {
+              "source_input_sha256": "5f65b3273894048658a59c45da3a530463c85b7395307a9cf1e403fb27b8b889",
+              "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+              "review_result_sha256": "8ee376e8b392b5ed4e47c4a3ffa06a319c333ae9baeef98aff92c854a53e80a2",
+              "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+            }
+          },
+          "before_exists": false
+        },
+        {
+          "path": "/source_observation_ids",
+          "value": [
+            "ouc-selected-roster-rotation003-wave8:roster-ouc-coas-oceanography-baoxianwen:1"
+          ],
+          "before_exists": false
+        }
+      ]
+    },
+    {
+      "id": "binding-47",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/ouc/data/roster_entries/2"
+      },
+      "target": {
+        "file": "data/rosters.json",
+        "pointer": "/source_observations/1815/source_payload"
+      },
+      "source_object_sha256": "ce593e45f12c789a1db347e8d70f8c6d3d1091833f4919ce19812ee560470b7e",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-48",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/package_id"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/package_id"
+      },
+      "source_object_sha256": "3294582c0f4204b857808fa696d69adefb4484bb1e50c88dd953745090fa398f",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-49",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/base_commit"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/base_commit"
+      },
+      "source_object_sha256": "bb7a71c32cbee24fb0e82f57ba3962de04b47ab12f9cd006346986a37d2626bc",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-50",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/school_id"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/school_id"
+      },
+      "source_object_sha256": "9d1e91e26bdfd2c98e7bc55033e22e4a08570c9e4e2e958dbcaba737d301bbd9",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-51",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/requested_department"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/requested_department"
+      },
+      "source_object_sha256": "2334951bef6951ccfe4cc8d9f251583c4896227dc7ca9a9d7e554b649942244b",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-52",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/official_organization_body_verified"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/official_organization_body_verified"
+      },
+      "source_object_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-53",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/status"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/status"
+      },
+      "source_object_sha256": "c8fb04c3e0a1bd9b8a37cd46bc7477d5a1c2b819cf39f217e1d921f5f4a7bf05",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-54",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/selected"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/selected"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-55",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/people"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/people"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-56",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/pending_people"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/pending_people"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-57",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/org_units"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/org_units"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-58",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/roster_entries"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/roster_entries"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-59",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/hold"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/hold"
+      },
+      "source_object_sha256": "5757893da3b5e5a6f65fe282e13f16e9b5e533b06985e8afdbd6e3e70b0eb3e3",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-60",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/source_policy"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/source_policy"
+      },
+      "source_object_sha256": "bd40a9a9a64c0c45f6c10827a3a8ec4ddd274a708a409f9f5ecb6c509db7ca62",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-61",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/whu/data/review_status"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/whu/data/review_status"
+      },
+      "source_object_sha256": "73ab835a030742ea12d7fd6860559100a04f3d2b52ef11b970b0fce8924a89b5",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-62",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/baseline_commit"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/baseline_commit"
+      },
+      "source_object_sha256": "bb7a71c32cbee24fb0e82f57ba3962de04b47ab12f9cd006346986a37d2626bc",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-63",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/school_id"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/school_id"
+      },
+      "source_object_sha256": "48b7cb7c9d3daa2fcfead38cfb789d3713f6a109b983cfe1c4d10d3cb16eda94",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-64",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/school_name"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/school_name"
+      },
+      "source_object_sha256": "4e4c87e5d45f1677bcf7daaa4aa31872711c1b05551409e0c242754e5290629a",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-65",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/scope"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/scope"
+      },
+      "source_object_sha256": "bd843cdc2b5b355f52fc7d170f3287e9100c78c539b9bd27c71ce24699cd56ea",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-66",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/status"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/status"
+      },
+      "source_object_sha256": "7c975add18014282e6e6b3a72c11c82d7e2583e6f74edacaf10429b0943f196f",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-67",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/selected"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/selected"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-68",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/selected_candidate_names"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/selected_candidate_names"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-69",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/people"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/people"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-70",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/pending_people"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/pending_people"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-71",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/held_candidates"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/held_candidates"
+      },
+      "source_object_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-72",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/held_scope"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/held_scope"
+      },
+      "source_object_sha256": "de3adaf88abd76ea355d67500be7c295f0c347025129c78a4df45a07fe466b3f",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-73",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/organization_observation"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/organization_observation"
+      },
+      "source_object_sha256": "16feca5a079377ed4bfa35cdc001d703dd3e822204fc78076f82391e73cc2d0c",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-74",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/other_preexisting_observation"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/other_preexisting_observation"
+      },
+      "source_object_sha256": "aa88c009626d804b884be48b93cc7dcc63b6205d4ef6641f26a542d930466fe0",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-75",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/old_held_objects_retried"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/old_held_objects_retried"
+      },
+      "source_object_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-76",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/coverage_complete"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/coverage_complete"
+      },
+      "source_object_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-77",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/fields_complete"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/fields_complete"
+      },
+      "source_object_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-78",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/university_complete"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/university_complete"
+      },
+      "source_object_sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-79",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/review_status"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/review_status"
+      },
+      "source_object_sha256": "73ab835a030742ea12d7fd6860559100a04f3d2b52ef11b970b0fce8924a89b5",
+      "normalizations": [],
+      "additions": []
+    },
+    {
+      "id": "binding-80",
+      "source": {
+        "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+        "pointer": "/packages/uestc/data/sources"
+      },
+      "target": {
+        "file": "research/rotation003-wave8-source-context.json",
+        "pointer": "/packages/uestc/data/sources"
+      },
+      "source_object_sha256": "63b58a448983dce1b6dc8c6d9af0506574f7fb037ec8d8bde3843d2246d26f45",
+      "normalizations": [],
+      "additions": []
+    }
+  ],
+  "selection": [
+    {
+      "school_id": "sdu",
+      "person_ids": [
+        "sdu-chenshangsheng",
+        "sdu-daiguoxi",
+        "sdu-duyong"
+      ],
+      "roster_entry_ids": [
+        "roster-sdu-chenshangsheng",
+        "roster-sdu-daiguoxi",
+        "roster-sdu-duyong"
+      ],
+      "profile_batch_ids": [
+        "faculty-batch-sdu-history-rotation003-wave8"
+      ],
+      "source_order_verified": true,
+      "procedural_timing_independently_verified": null,
+      "no_replacement": true
+    },
+    {
+      "school_id": "ouc",
+      "person_ids": [
+        "ouc-guanchanglong",
+        "ouc-tianjiwei",
+        "ouc-baoxianwen"
+      ],
+      "roster_entry_ids": [
+        "roster-ouc-coas-oceanography-guanchanglong",
+        "roster-ouc-coas-oceanography-tianjiwei",
+        "roster-ouc-coas-oceanography-baoxianwen"
+      ],
+      "profile_batch_ids": [
+        "faculty-batch-ouc-rotation003-wave8"
+      ],
+      "source_order_verified": true,
+      "procedural_timing_independently_verified": null,
+      "no_replacement": true
+    }
+  ],
+  "whole_holds": [
+    {
+      "school_id": "whu",
+      "whole_scope_hold": true,
+      "selected_person_ids": [],
+      "selected_roster_entry_ids": [],
+      "new_org_units": 0,
+      "new_people": 0,
+      "new_pending_people": 0,
+      "new_roster_entries": 0,
+      "new_source_observations": 0,
+      "replacement_performed": false
+    },
+    {
+      "school_id": "uestc",
+      "whole_scope_hold": true,
+      "selected_person_ids": [],
+      "selected_roster_entry_ids": [],
+      "new_org_units": 0,
+      "new_people": 0,
+      "new_pending_people": 0,
+      "new_roster_entries": 0,
+      "new_source_observations": 0,
+      "replacement_performed": false
+    }
+  ],
+  "new_collections": [
+    {
+      "file": "data/atlas.json",
+      "pointer": "/limitations",
+      "baseline_length": 6,
+      "baseline_sha256": "a49996988d143a02303ec539cb493667cdc9b28a287271ae141f6cfd7b95021a",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/atlas.json",
+      "pointer": "/campuses",
+      "baseline_length": 4,
+      "baseline_sha256": "a29d9956fbbc284b9cdafc640ac9057dd4512c2181d89780a92a6a8bf01e6505",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/atlas.json",
+      "pointer": "/org_units",
+      "baseline_length": 252,
+      "baseline_sha256": "bc8f6ee1d2d1f2430a15b2405afec308ab98190f5847c1a98f7bf3990dda8e4e",
+      "length": 4,
+      "sha256": "0d39304ed1f105d84f2f5cc7cc13c8f1c6062bfda29bed8c3905e4289c3e6213"
+    },
+    {
+      "file": "data/atlas.json",
+      "pointer": "/people",
+      "baseline_length": 606,
+      "baseline_sha256": "ae94480241783632f26f7b2d0d6dec1e25b5f1e06f83cc939d745e9a60fa9379",
+      "length": 6,
+      "sha256": "1dc8635d354dc5040759a4f607d8f2be546479001486f37a77742b3b7bb693ec"
+    },
+    {
+      "file": "data/atlas.json",
+      "pointer": "/profile_batches",
+      "baseline_length": 157,
+      "baseline_sha256": "4bf95fdaeeb25950343064365c0c0cd0d34278a2677666f00121a751fee6dfab",
+      "length": 2,
+      "sha256": "a098a7e8d021fded4332f1f20c5cfb700fa240d29e6794edd09587653a91ba20"
+    },
+    {
+      "file": "data/atlas.json",
+      "pointer": "/pending_people",
+      "baseline_length": 84,
+      "baseline_sha256": "66de95adae0df7d6593087b57dedc89a379bf86490cb70f0713ddf658b91d86a",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/atlas.json",
+      "pointer": "/normalization_evidence",
+      "baseline_length": 21,
+      "baseline_sha256": "17319e12dd8cbe1b996d21295a4159471a80b08d616e422b608ff729ec42bdfc",
+      "length": 1,
+      "sha256": "8ec83713bce550fc8c8a318f6cf4449e8c81a91d55f9e101983aa2b53ea9046d"
+    },
+    {
+      "file": "data/atlas.json",
+      "pointer": "/institutions",
+      "baseline_length": 39,
+      "baseline_sha256": "8234ea78331d931b8a54c5f40d4427a7844e7fcd621d0832a69e5f2df1b41848",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/summary",
+      "baseline_length": 164,
+      "baseline_sha256": "e4ea065763bf1d313348aa05162435d4410c5963e1eae6e3b929ce97058fabf0",
+      "length": 2,
+      "sha256": "40d00d685c70b0eb995db27a9160dc0686d126848164448a8aa54e804588eb0a"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/coverage",
+      "baseline_length": 235,
+      "baseline_sha256": "c296f1d3353cb38279bfffbdccb2cf1b6650cb5910041cade6de15678d4b1a1c",
+      "length": 2,
+      "sha256": "85cd6c1bf0a10f188342c76563a62a1b6b0f30c2007cbf07f387236de48bc3e3"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/entries",
+      "baseline_length": 1772,
+      "baseline_sha256": "fd1282ecfbde6d6835d5023b6c2bc86a0672ff39d8fbf553804819115f752946",
+      "length": 6,
+      "sha256": "2b26c148455c2e06fb6502396f2dc11f2913dd83a732485543afe34894e03504"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/conflicts",
+      "baseline_length": 30,
+      "baseline_sha256": "0f809e3a2c4ef1857b03479230f35a342b703ccf5f8a99ef032271d150c44c09",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/limitations",
+      "baseline_length": 35,
+      "baseline_sha256": "4fe8dea8da59fb3789194955a1b22aac4453cbf0e6a4d1cc2e82d172ba77c116",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/dedup_candidates",
+      "baseline_length": 60,
+      "baseline_sha256": "0a1adbff0d7b0ae2fe42cceff9a89e5e9eb6d164044456f319cfab6c9d1b1653",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/exclusions",
+      "baseline_length": 3,
+      "baseline_sha256": "89dc768c034efe9de60bb4199c92be749ea7f1bb1405daceff0e3ca88fa5228d",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/pending_checks",
+      "baseline_length": 2,
+      "baseline_sha256": "143ba1254ce843007ed487ca7f7ef2c684912b54c0580c6bb3f7157b7bc61048",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/source_snapshots",
+      "baseline_length": 36,
+      "baseline_sha256": "bae26c4aa31edf9ee3212a7723508241f475441863f03f69a8058264ad3b81c2",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/batches",
+      "baseline_length": 130,
+      "baseline_sha256": "e352e15a25087ec0f4aa7bbd20ffbb08609636277511fed6a60ff068819e7164",
+      "length": 2,
+      "sha256": "6675af0c823a8f3f44aeb8c4b35b33d31a398890ca9d5f38dd2ab88ee91857ff"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/source_observations",
+      "baseline_length": 1810,
+      "baseline_sha256": "2bdff94735578cc4f66857c83b6a02946ce54a3dd8b6601bdcd6f1508923655e",
+      "length": 6,
+      "sha256": "20032f331cd5c3114add4b810d043b24584576aa46d4806cf38abd2b22682e99"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/consolidations",
+      "baseline_length": 2,
+      "baseline_sha256": "094423def9986b8e47457a6592e143f75d67eaa7647c2c346df93d54b983e4e0",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/supporting_method_evidence",
+      "baseline_length": 4,
+      "baseline_sha256": "db4e111a865957df036ada510d96050eb5c2b39ed6635c628d48a9a2717ec547",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/local_mapping_corrections",
+      "baseline_length": 4,
+      "baseline_sha256": "9a1ccc7df1e46b7e8240c3963456fcaf0177d07ad31c051db7d1d5334a1aca1d",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "data/rosters.json",
+      "pointer": "/withdrawn_local_conflicts",
+      "baseline_length": 1,
+      "baseline_sha256": "8b54b3a107c8f050e3c33cc2125a710a4084b1be287fdb20db8ca392c093ed05",
+      "length": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "progress/work-queue.json",
+      "pointer": "/tasks",
+      "baseline_length": 245,
+      "baseline_sha256": "61a4f61c20c994ae9a90455dca29f8d57e4087cccb22320cdd4751d03b6d554b",
+      "length": 4,
+      "sha256": "4c0e01f100caf97f8f18053fe1f5f3cdeca48e964a649d7ed334622c6bf4401a"
+    }
+  ],
+  "collection_counts": {
+    "education": 16,
+    "appointments": 8,
+    "mentors": 0,
+    "committee_members": 0,
+    "publications": 6,
+    "teaching": 8,
+    "research_fields": 7,
+    "professional_qualifications": 1,
+    "people": 6,
+    "pending_people": 0,
+    "org_units": 4,
+    "roster_entries": 6,
+    "source_observations": 6,
+    "held_scopes": 2,
+    "held_candidates": 0,
+    "degree_awarded_true": 1,
+    "degree_awarded_false": 3,
+    "degree_awarded_null": 12
+  },
+  "append_scope": {
+    "approved_department_ids": [
+      "ouc-coas-oceanography",
+      "sdu-history-department"
+    ],
+    "added_context_paths": [
+      "research/rotation003-wave8-source-context.json"
+    ],
+    "added_report_paths": [
+      "progress/multischool-rotation003-wave8-coverage.json",
+      "progress/ouc-rotation003-wave8-coverage.json",
+      "progress/sdu-rotation003-wave8-coverage.json",
+      "progress/uestc-rotation003-wave8-coverage.json",
+      "progress/whu-rotation003-wave8-coverage.json"
+    ],
+    "file_suffixes": {
+      "data/atlas.json": {
+        "limitations": {
+          "baseline_length": 6,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "campuses": {
+          "baseline_length": 4,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "org_units": {
+          "baseline_length": 252,
+          "length": 4,
+          "sha256": "0d39304ed1f105d84f2f5cc7cc13c8f1c6062bfda29bed8c3905e4289c3e6213"
+        },
+        "people": {
+          "baseline_length": 606,
+          "length": 6,
+          "sha256": "1dc8635d354dc5040759a4f607d8f2be546479001486f37a77742b3b7bb693ec"
+        },
+        "profile_batches": {
+          "baseline_length": 157,
+          "length": 2,
+          "sha256": "a098a7e8d021fded4332f1f20c5cfb700fa240d29e6794edd09587653a91ba20"
+        },
+        "pending_people": {
+          "baseline_length": 84,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "normalization_evidence": {
+          "baseline_length": 21,
+          "length": 1,
+          "sha256": "8ec83713bce550fc8c8a318f6cf4449e8c81a91d55f9e101983aa2b53ea9046d"
+        },
+        "institutions": {
+          "baseline_length": 39,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      },
+      "data/rosters.json": {
+        "summary": {
+          "baseline_length": 164,
+          "length": 2,
+          "sha256": "40d00d685c70b0eb995db27a9160dc0686d126848164448a8aa54e804588eb0a"
+        },
+        "coverage": {
+          "baseline_length": 235,
+          "length": 2,
+          "sha256": "85cd6c1bf0a10f188342c76563a62a1b6b0f30c2007cbf07f387236de48bc3e3"
+        },
+        "entries": {
+          "baseline_length": 1772,
+          "length": 6,
+          "sha256": "2b26c148455c2e06fb6502396f2dc11f2913dd83a732485543afe34894e03504"
+        },
+        "conflicts": {
+          "baseline_length": 30,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "limitations": {
+          "baseline_length": 35,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "dedup_candidates": {
+          "baseline_length": 60,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "exclusions": {
+          "baseline_length": 3,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "pending_checks": {
+          "baseline_length": 2,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "source_snapshots": {
+          "baseline_length": 36,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "batches": {
+          "baseline_length": 130,
+          "length": 2,
+          "sha256": "6675af0c823a8f3f44aeb8c4b35b33d31a398890ca9d5f38dd2ab88ee91857ff"
+        },
+        "source_observations": {
+          "baseline_length": 1810,
+          "length": 6,
+          "sha256": "20032f331cd5c3114add4b810d043b24584576aa46d4806cf38abd2b22682e99"
+        },
+        "consolidations": {
+          "baseline_length": 2,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "supporting_method_evidence": {
+          "baseline_length": 4,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "local_mapping_corrections": {
+          "baseline_length": 4,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "withdrawn_local_conflicts": {
+          "baseline_length": 1,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      },
+      "progress/work-queue.json": {
+        "tasks": {
+          "baseline_length": 245,
+          "length": 4,
+          "sha256": "4c0e01f100caf97f8f18053fe1f5f3cdeca48e964a649d7ed334622c6bf4401a"
+        }
+      },
+      "site/atlas.json": {
+        "limitations": {
+          "baseline_length": 6,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "campuses": {
+          "baseline_length": 4,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "org_units": {
+          "baseline_length": 252,
+          "length": 4,
+          "sha256": "0d39304ed1f105d84f2f5cc7cc13c8f1c6062bfda29bed8c3905e4289c3e6213"
+        },
+        "people": {
+          "baseline_length": 606,
+          "length": 6,
+          "sha256": "1dc8635d354dc5040759a4f607d8f2be546479001486f37a77742b3b7bb693ec"
+        },
+        "profile_batches": {
+          "baseline_length": 157,
+          "length": 2,
+          "sha256": "a098a7e8d021fded4332f1f20c5cfb700fa240d29e6794edd09587653a91ba20"
+        },
+        "pending_people": {
+          "baseline_length": 84,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "normalization_evidence": {
+          "baseline_length": 21,
+          "length": 1,
+          "sha256": "8ec83713bce550fc8c8a318f6cf4449e8c81a91d55f9e101983aa2b53ea9046d"
+        },
+        "institutions": {
+          "baseline_length": 39,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "exports": {
+          "mode": "new_department_rows",
+          "baseline_length": 131,
+          "length": 2,
+          "sha256": "6cccf6f42f72a32fedf091007cd3e36769ed6d86a1d8db2b9261dec86689f596"
+        }
+      },
+      "site/rosters.json": {
+        "summary": {
+          "baseline_length": 164,
+          "length": 2,
+          "sha256": "40d00d685c70b0eb995db27a9160dc0686d126848164448a8aa54e804588eb0a"
+        },
+        "coverage": {
+          "baseline_length": 235,
+          "length": 2,
+          "sha256": "85cd6c1bf0a10f188342c76563a62a1b6b0f30c2007cbf07f387236de48bc3e3"
+        },
+        "entries": {
+          "baseline_length": 1772,
+          "length": 6,
+          "sha256": "5f10ceb7779ce9d25f90f176f40b2367ce0e314c9991e6a5a1f5a93e12a3bd1c"
+        },
+        "conflicts": {
+          "baseline_length": 30,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "limitations": {
+          "baseline_length": 35,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "dedup_candidates": {
+          "baseline_length": 60,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "exclusions": {
+          "baseline_length": 3,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "pending_checks": {
+          "baseline_length": 2,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "source_snapshots": {
+          "baseline_length": 36,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "batches": {
+          "baseline_length": 130,
+          "length": 2,
+          "sha256": "6675af0c823a8f3f44aeb8c4b35b33d31a398890ca9d5f38dd2ab88ee91857ff"
+        },
+        "consolidations": {
+          "baseline_length": 2,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "supporting_method_evidence": {
+          "baseline_length": 4,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "local_mapping_corrections": {
+          "baseline_length": 4,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "withdrawn_local_conflicts": {
+          "baseline_length": 1,
+          "length": 0,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    "derived_site_expectation": "Pure production projections fixed before full build; actual generated files must be checked independently."
+  },
+  "policy": {
+    "unknown_award_is_null": true,
+    "research_package_hash_is_not_webpage_hash": true,
+    "source_status_labels_are_original_preintegration_metadata": true,
+    "source_procedural_timing_claims_are_not_independently_verified": true,
+    "no_current_employment_or_geography_inference": true,
+    "no_unlisted_source_transformations": true
+  }
+}

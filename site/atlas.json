@@ -19,7 +19,7 @@
     "链接为官方目录提供的地址；未逐个验证所有院系主页可访问性。",
     "深圳旧电子信息学院 eie.hitsz.edu.cn 主页两次抓取超时，改用官方目录已确认的集成电路学院名录，不涉及访问拒绝。"
   ],
-  "scope_note": "39校公开职业资料样本，当前606职业、84待补；本批两校各原序首3部分职业，另两校整范围hold，无人物替补，不代表完整院系或实时人事覆盖。",
+  "scope_note": "39校公开职业资料样本，当前612职业、84待补；本批山东大学历史学系与中国海洋大学海洋学系各原序首3部分职业，武汉大学化学与电子科技大学电子科学范围整范围hold，无人物替补，不代表完整院系或实时人事覆盖。",
   "campuses": [
     {
       "id": "harbin",
@@ -4236,6 +4236,48 @@
       "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
       "source_id": "tongji-rotation003-wave7-roster",
       "evidence_status": "official_roster_body_read"
+    },
+    {
+      "id": "sdu-history",
+      "name": "历史学院",
+      "type": "school",
+      "school_id": "sdu",
+      "parent_id": "sdu",
+      "campus_ids": [],
+      "source_url": "https://history.sdu.edu.cn/xygk/xyjj.htm",
+      "source_id": "sdu-history-wave8-organization"
+    },
+    {
+      "id": "sdu-history-department",
+      "name": "历史学系",
+      "type": "department",
+      "school_id": "sdu",
+      "parent_id": "sdu-history",
+      "campus_ids": [],
+      "source_url": "https://history.sdu.edu.cn/xygk/xyjj.htm",
+      "source_id": "sdu-history-wave8-organization",
+      "additional_source_urls": [
+        "https://history.sdu.edu.cn/szdw/xxsz.htm"
+      ],
+      "source_note": "学院简介明确下设历史学系；学系师资以历史学系（中国古代史教研室）列本批教授类别，不额外推断个人校区。"
+    },
+    {
+      "id": "ouc-coas",
+      "name": "海洋与大气学院",
+      "type": "school",
+      "school_id": "ouc",
+      "parent_id": "ouc",
+      "source_url": "https://coas.ouc.edu.cn/xyjj/",
+      "campus_ids": []
+    },
+    {
+      "id": "ouc-coas-oceanography",
+      "name": "海洋学系",
+      "type": "department",
+      "school_id": "ouc",
+      "parent_id": "ouc-coas",
+      "source_url": "https://coas.ouc.edu.cn/xyjj/",
+      "campus_ids": []
     }
   ],
   "people": [
@@ -206335,6 +206377,2283 @@
       "established_professional_count_eligible": true,
       "complete_profile_count_eligible": false,
       "include_in_current_faculty_count": false
+    },
+    {
+      "person_id": "sdu-chenshangsheng",
+      "name": "陈尚胜",
+      "school_id": "sdu",
+      "department_id": "sdu-history-department",
+      "organization_id": "sdu-history-department",
+      "department": "历史学院／历史学系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-sdu-chenshangsheng",
+      "official_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+      "roster_category": "历史学系（中国古代史教研室）／教授(研究员)",
+      "roster_category_source_id": "sdu-history-wave8-roster",
+      "selection_order": 1,
+      "sources": [
+        {
+          "id": "sdu-history-wave8-roster",
+          "url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+          "title": "学系师资",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "published_at": null,
+          "locator": "历史学系（中国古代史教研室）／教授(研究员)"
+        },
+        {
+          "id": "sdu-history-wave8-organization",
+          "url": "https://history.sdu.edu.cn/xygk/xyjj.htm",
+          "title": "山东大学历史学院简介",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "published_at": null,
+          "locator": "简介中2023年12月改建及学院下设学系段落",
+          "updated_at_source": "2024-04",
+          "date_note": "正文标注更新日期2024年4月，未将其写为发布时间。"
+        },
+        {
+          "id": "sdu-chenshangsheng-wave8-profile",
+          "url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+          "title": "陈尚胜",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "published_at": "2024-05-17",
+          "locator": "简介首段、主讲课程、主要论著／主要论文第一项"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-sdu-history-rotation003-wave8",
+      "education": [],
+      "appointments": [
+        {
+          "institution": "山东大学历史学院",
+          "title": "特聘教授、博士生导师",
+          "start": null,
+          "end": null,
+          "current": null,
+          "personnel_status_verified": false,
+          "status": "official_roster_title_current_personnel_unknown",
+          "note": "简介职称与当前名录分类可核；未见足以独立确认当前在岗的直接说明，current保持null。",
+          "source_id": "sdu-chenshangsheng-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "sdu-history-wave8-roster",
+            "title": "sdu-chenshangsheng-wave8-profile",
+            "start": null,
+            "end": null,
+            "current": null,
+            "personnel_status_verified": "sdu-chenshangsheng-wave8-profile",
+            "status": "sdu-chenshangsheng-wave8-profile"
+          },
+          "source_retrieved_at": "2026-10-24",
+          "source_page_published_at": "2024-05-17",
+          "source_time_note": "现职措辞仅对应页面正文及其发布时点；查阅时点不是新的实时人事证明。"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "中国传统对外关系研究刍议",
+          "year": 2008,
+          "venue": "安徽史学",
+          "issue": "第1期",
+          "type": "journal_article",
+          "publication_type": "journal_article",
+          "doi": null,
+          "url": null,
+          "evidence_level": "official_profile_bibliography",
+          "attribution_basis": "官方本人“主要论文”首项；未核完整作者表",
+          "note": "精选官方书目，非全文或出版者元数据核验。",
+          "source_id": "sdu-chenshangsheng-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "sdu-chenshangsheng-wave8-profile",
+            "year": "sdu-chenshangsheng-wave8-profile",
+            "venue": "sdu-chenshangsheng-wave8-profile",
+            "issue": "sdu-chenshangsheng-wave8-profile",
+            "type": "sdu-chenshangsheng-wave8-profile",
+            "publication_type": "sdu-chenshangsheng-wave8-profile",
+            "doi": null,
+            "url": null,
+            "evidence_level": "sdu-chenshangsheng-wave8-profile",
+            "attribution_basis": "sdu-chenshangsheng-wave8-profile"
+          }
+        }
+      ],
+      "teaching": [
+        {
+          "name": "中国传统对外关系",
+          "course": "中国传统对外关系",
+          "role": "主讲",
+          "level": "本科生课程",
+          "start": null,
+          "education_event_id": null,
+          "appointment_event_id": null,
+          "degree_awarded": false,
+          "include_in_education_count": false,
+          "include_in_appointment_count": false,
+          "include_in_publication_count": false,
+          "include_in_mentorship_graph": false,
+          "include_in_verified_mentor_count": false,
+          "note": "来源“主讲课程”所列，未披露开课年份；不是本人教育经历。",
+          "source_id": "sdu-chenshangsheng-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-chenshangsheng-wave8-profile",
+            "course": "sdu-chenshangsheng-wave8-profile",
+            "role": "sdu-chenshangsheng-wave8-profile",
+            "level": "sdu-chenshangsheng-wave8-profile",
+            "start": null,
+            "education_event_id": null,
+            "appointment_event_id": null,
+            "degree_awarded": "sdu-chenshangsheng-wave8-profile",
+            "include_in_education_count": "sdu-chenshangsheng-wave8-profile",
+            "include_in_appointment_count": "sdu-chenshangsheng-wave8-profile",
+            "include_in_publication_count": "sdu-chenshangsheng-wave8-profile",
+            "include_in_mentorship_graph": "sdu-chenshangsheng-wave8-profile",
+            "include_in_verified_mentor_count": "sdu-chenshangsheng-wave8-profile"
+          }
+        },
+        {
+          "name": "中外关系史文献导读",
+          "course": "中外关系史文献导读",
+          "role": "主讲",
+          "level": "研究生课程（硕士）",
+          "start": null,
+          "education_event_id": null,
+          "appointment_event_id": null,
+          "degree_awarded": false,
+          "include_in_education_count": false,
+          "include_in_appointment_count": false,
+          "include_in_publication_count": false,
+          "include_in_mentorship_graph": false,
+          "include_in_verified_mentor_count": false,
+          "note": "来源“主讲课程”所列，未披露开课年份；不是本人教育经历。",
+          "source_id": "sdu-chenshangsheng-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-chenshangsheng-wave8-profile",
+            "course": "sdu-chenshangsheng-wave8-profile",
+            "role": "sdu-chenshangsheng-wave8-profile",
+            "level": "sdu-chenshangsheng-wave8-profile",
+            "start": null,
+            "education_event_id": null,
+            "appointment_event_id": null,
+            "degree_awarded": "sdu-chenshangsheng-wave8-profile",
+            "include_in_education_count": "sdu-chenshangsheng-wave8-profile",
+            "include_in_appointment_count": "sdu-chenshangsheng-wave8-profile",
+            "include_in_publication_count": "sdu-chenshangsheng-wave8-profile",
+            "include_in_mentorship_graph": "sdu-chenshangsheng-wave8-profile",
+            "include_in_verified_mentor_count": "sdu-chenshangsheng-wave8-profile"
+          }
+        }
+      ],
+      "research_fields": [
+        {
+          "name": "明清王朝对外政策、涉外制度和对外关系史",
+          "source_id": "sdu-chenshangsheng-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-chenshangsheng-wave8-profile"
+          }
+        },
+        {
+          "name": "古代中朝（韩）关系史",
+          "source_id": "sdu-chenshangsheng-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-chenshangsheng-wave8-profile"
+          }
+        },
+        {
+          "name": "明清时期中国海洋史",
+          "source_id": "sdu-chenshangsheng-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-chenshangsheng-wave8-profile"
+          }
+        }
+      ],
+      "professional_qualifications": [
+        {
+          "name": "历史学博士",
+          "note": "仅资格标签，授位院校和日期未披露；不创建博士授位事件。",
+          "source_id": "sdu-chenshangsheng-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-chenshangsheng-wave8-profile"
+          }
+        }
+      ],
+      "unknowns": [
+        "本人导师、精确授位日期、个人校区和实时人事状态未核实。",
+        "成果仅限精选官方书目，不代表全集或已核全文。",
+        "简介只列历史学博士资格，没有授位院校与授位时间，因此education保持空。"
+      ],
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "official_profile_navigation_eligible": true,
+      "official_profile_availability": "body_read",
+      "current_personnel_navigation_eligible": false,
+      "current_faculty_status": "officially_listed_not_independently_personnel_verified",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+        "profile_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+        "native_link_target": "https://history.sdu.edu.cn/info/1066/4598.htm",
+        "source_ids": [
+          "sdu-history-wave8-roster",
+          "sdu-chenshangsheng-wave8-profile"
+        ]
+      },
+      "professional_field_provenance": {
+        "name": "sdu-chenshangsheng-wave8-profile",
+        "school_id": "sdu-history-wave8-organization",
+        "department_id": "sdu-history-wave8-roster",
+        "organization_id": "sdu-history-wave8-roster",
+        "department": "sdu-history-wave8-roster",
+        "roster_category": "sdu-history-wave8-roster",
+        "official_url": "sdu-chenshangsheng-wave8-profile",
+        "listed_role": "sdu-chenshangsheng-wave8-profile",
+        "research_interests": [
+          "sdu-chenshangsheng-wave8-profile"
+        ]
+      },
+      "listed_role": "特聘教授、博士生导师",
+      "listed_role_source_id": "sdu-chenshangsheng-wave8-profile",
+      "listed_role_source_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+      "listed_role_basis": "explicit_individual_profile_text",
+      "research_interests": "明清王朝对外政策、涉外制度和对外关系史；古代中朝（韩）关系史；明清时期中国海洋史",
+      "research_interests_source_ids": [
+        "sdu-chenshangsheng-wave8-profile"
+      ],
+      "employment_status": "unknown",
+      "employment_status_basis": "source_reported_roles_do_not_establish_current_personnel_status",
+      "employment_status_note": "保留来源时点职称与现职文字，不作为2026年实时在岗证明。",
+      "quick_link_eligible": false,
+      "personnel_status_verified": false,
+      "navigation_verified": true,
+      "navigation_status": "official_roster_native_profile_link_resolves_and_identity_matches",
+      "profile_source_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+      "profile_source_id": "sdu-chenshangsheng-wave8-profile"
+    },
+    {
+      "person_id": "sdu-daiguoxi",
+      "name": "代国玺",
+      "school_id": "sdu",
+      "department_id": "sdu-history-department",
+      "organization_id": "sdu-history-department",
+      "department": "历史学院／历史学系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-sdu-daiguoxi",
+      "official_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+      "roster_category": "历史学系（中国古代史教研室）／教授(研究员)",
+      "roster_category_source_id": "sdu-history-wave8-roster",
+      "selection_order": 2,
+      "sources": [
+        {
+          "id": "sdu-history-wave8-roster",
+          "url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+          "title": "学系师资",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "published_at": null,
+          "locator": "历史学系（中国古代史教研室）／教授(研究员)"
+        },
+        {
+          "id": "sdu-history-wave8-organization",
+          "url": "https://history.sdu.edu.cn/xygk/xyjj.htm",
+          "title": "山东大学历史学院简介",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "published_at": null,
+          "locator": "简介中2023年12月改建及学院下设学系段落",
+          "updated_at_source": "2024-04",
+          "date_note": "正文标注更新日期2024年4月，未将其写为发布时间。"
+        },
+        {
+          "id": "sdu-daiguoxi-wave8-profile",
+          "url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+          "title": "代国玺",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "published_at": "2024-05-06",
+          "locator": "简介首段、主讲课程、主要代表作品第一项"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-sdu-history-rotation003-wave8",
+      "education": [
+        {
+          "event_id": "sdu-daiguoxi-education-1",
+          "education_event_id": "sdu-daiguoxi-education-1",
+          "degree": "学士",
+          "institution": "兰州大学",
+          "field": "历史学",
+          "start": null,
+          "end": null,
+          "source_reported_year": "2006",
+          "source_reported_degree_label": "兰州大学历史学学士（2006）",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "来源资格标签：兰州大学历史学学士（2006）。原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "source_id": "sdu-daiguoxi-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "event_id": "sdu-daiguoxi-wave8-profile",
+            "education_event_id": "sdu-daiguoxi-wave8-profile",
+            "degree": "sdu-daiguoxi-wave8-profile",
+            "institution": "sdu-daiguoxi-wave8-profile",
+            "field": "sdu-daiguoxi-wave8-profile",
+            "start": null,
+            "end": null,
+            "source_reported_year": "sdu-daiguoxi-wave8-profile",
+            "source_reported_degree_label": "sdu-daiguoxi-wave8-profile",
+            "event_kind": "sdu-daiguoxi-wave8-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null,
+            "include_in_degree_filters": "sdu-daiguoxi-wave8-profile",
+            "include_in_education_filters": "sdu-daiguoxi-wave8-profile"
+          },
+          "field_status": {
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "source_reported_year": "qualification_label_year_not_award_date",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "source_note_before_display_normalization": "原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。"
+        },
+        {
+          "event_id": "sdu-daiguoxi-education-2",
+          "education_event_id": "sdu-daiguoxi-education-2",
+          "degree": "硕士",
+          "institution": "南开大学",
+          "field": "历史学",
+          "start": null,
+          "end": null,
+          "source_reported_year": "2008",
+          "source_reported_degree_label": "南开大学历史学硕士（2008）",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "来源资格标签：南开大学历史学硕士（2008）。原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "source_id": "sdu-daiguoxi-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "event_id": "sdu-daiguoxi-wave8-profile",
+            "education_event_id": "sdu-daiguoxi-wave8-profile",
+            "degree": "sdu-daiguoxi-wave8-profile",
+            "institution": "sdu-daiguoxi-wave8-profile",
+            "field": "sdu-daiguoxi-wave8-profile",
+            "start": null,
+            "end": null,
+            "source_reported_year": "sdu-daiguoxi-wave8-profile",
+            "source_reported_degree_label": "sdu-daiguoxi-wave8-profile",
+            "event_kind": "sdu-daiguoxi-wave8-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null,
+            "include_in_degree_filters": "sdu-daiguoxi-wave8-profile",
+            "include_in_education_filters": "sdu-daiguoxi-wave8-profile"
+          },
+          "field_status": {
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "source_reported_year": "qualification_label_year_not_award_date",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "source_note_before_display_normalization": "原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。"
+        },
+        {
+          "event_id": "sdu-daiguoxi-education-3",
+          "education_event_id": "sdu-daiguoxi-education-3",
+          "degree": "博士",
+          "institution": "南开大学",
+          "field": "历史学",
+          "start": null,
+          "end": null,
+          "source_reported_year": "2012",
+          "source_reported_degree_label": "南开大学历史学博士（2012）",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "来源资格标签：南开大学历史学博士（2012）。原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。",
+          "source_id": "sdu-daiguoxi-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "event_id": "sdu-daiguoxi-wave8-profile",
+            "education_event_id": "sdu-daiguoxi-wave8-profile",
+            "degree": "sdu-daiguoxi-wave8-profile",
+            "institution": "sdu-daiguoxi-wave8-profile",
+            "field": "sdu-daiguoxi-wave8-profile",
+            "start": null,
+            "end": null,
+            "source_reported_year": "sdu-daiguoxi-wave8-profile",
+            "source_reported_degree_label": "sdu-daiguoxi-wave8-profile",
+            "event_kind": "sdu-daiguoxi-wave8-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null,
+            "include_in_degree_filters": "sdu-daiguoxi-wave8-profile",
+            "include_in_education_filters": "sdu-daiguoxi-wave8-profile"
+          },
+          "field_status": {
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "source_reported_year": "qualification_label_year_not_award_date",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "source_note_before_display_normalization": "原文为院校、学位层次与括号年份标签，无直接授位措辞；年份不转换为授位日或学习区间终点。机构分类留待已有映射闭合。"
+        }
+      ],
+      "appointments": [
+        {
+          "institution": "山东大学历史学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "current": null,
+          "personnel_status_verified": false,
+          "status": "official_roster_title_current_personnel_unknown",
+          "note": "简介职称与当前名录分类可核；未见足以独立确认当前在岗的直接说明，current保持null。",
+          "source_id": "sdu-daiguoxi-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "sdu-history-wave8-roster",
+            "title": "sdu-daiguoxi-wave8-profile",
+            "start": null,
+            "end": null,
+            "current": null,
+            "personnel_status_verified": "sdu-daiguoxi-wave8-profile",
+            "status": "sdu-daiguoxi-wave8-profile"
+          },
+          "source_retrieved_at": "2026-10-24",
+          "source_page_published_at": "2024-05-06",
+          "source_time_note": "现职措辞仅对应页面正文及其发布时点；查阅时点不是新的实时人事证明。"
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "秦及汉初的田租征收和计量问题新探",
+          "year": 2023,
+          "venue": "历史研究",
+          "issue": "第3期",
+          "type": "journal_article",
+          "publication_type": "journal_article",
+          "doi": null,
+          "url": null,
+          "evidence_level": "official_profile_bibliography",
+          "attribution_basis": "官方本人“主要代表作品”首项；未核完整作者表",
+          "note": "精选官方书目，非全文或出版者元数据核验。",
+          "source_id": "sdu-daiguoxi-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "sdu-daiguoxi-wave8-profile",
+            "year": "sdu-daiguoxi-wave8-profile",
+            "venue": "sdu-daiguoxi-wave8-profile",
+            "issue": "sdu-daiguoxi-wave8-profile",
+            "type": "sdu-daiguoxi-wave8-profile",
+            "publication_type": "sdu-daiguoxi-wave8-profile",
+            "doi": null,
+            "url": null,
+            "evidence_level": "sdu-daiguoxi-wave8-profile",
+            "attribution_basis": "sdu-daiguoxi-wave8-profile"
+          }
+        }
+      ],
+      "teaching": [
+        {
+          "name": "中国古代史",
+          "course": "中国古代史",
+          "role": "主讲",
+          "level": "本科生课程",
+          "start": null,
+          "education_event_id": null,
+          "appointment_event_id": null,
+          "degree_awarded": false,
+          "include_in_education_count": false,
+          "include_in_appointment_count": false,
+          "include_in_publication_count": false,
+          "include_in_mentorship_graph": false,
+          "include_in_verified_mentor_count": false,
+          "note": "来源“主讲课程”所列，未披露开课年份；不是本人教育经历。",
+          "source_id": "sdu-daiguoxi-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-daiguoxi-wave8-profile",
+            "course": "sdu-daiguoxi-wave8-profile",
+            "role": "sdu-daiguoxi-wave8-profile",
+            "level": "sdu-daiguoxi-wave8-profile",
+            "start": null,
+            "education_event_id": null,
+            "appointment_event_id": null,
+            "degree_awarded": "sdu-daiguoxi-wave8-profile",
+            "include_in_education_count": "sdu-daiguoxi-wave8-profile",
+            "include_in_appointment_count": "sdu-daiguoxi-wave8-profile",
+            "include_in_publication_count": "sdu-daiguoxi-wave8-profile",
+            "include_in_mentorship_graph": "sdu-daiguoxi-wave8-profile",
+            "include_in_verified_mentor_count": "sdu-daiguoxi-wave8-profile"
+          }
+        },
+        {
+          "name": "先秦秦汉史专题",
+          "course": "先秦秦汉史专题",
+          "role": "主讲",
+          "level": "研究生课程",
+          "start": null,
+          "education_event_id": null,
+          "appointment_event_id": null,
+          "degree_awarded": false,
+          "include_in_education_count": false,
+          "include_in_appointment_count": false,
+          "include_in_publication_count": false,
+          "include_in_mentorship_graph": false,
+          "include_in_verified_mentor_count": false,
+          "note": "来源“主讲课程”所列，未披露开课年份；不是本人教育经历。",
+          "source_id": "sdu-daiguoxi-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-daiguoxi-wave8-profile",
+            "course": "sdu-daiguoxi-wave8-profile",
+            "role": "sdu-daiguoxi-wave8-profile",
+            "level": "sdu-daiguoxi-wave8-profile",
+            "start": null,
+            "education_event_id": null,
+            "appointment_event_id": null,
+            "degree_awarded": "sdu-daiguoxi-wave8-profile",
+            "include_in_education_count": "sdu-daiguoxi-wave8-profile",
+            "include_in_appointment_count": "sdu-daiguoxi-wave8-profile",
+            "include_in_publication_count": "sdu-daiguoxi-wave8-profile",
+            "include_in_mentorship_graph": "sdu-daiguoxi-wave8-profile",
+            "include_in_verified_mentor_count": "sdu-daiguoxi-wave8-profile"
+          }
+        }
+      ],
+      "research_fields": [
+        {
+          "name": "战国秦汉魏晋史",
+          "source_id": "sdu-daiguoxi-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-daiguoxi-wave8-profile"
+          }
+        },
+        {
+          "name": "中国思想文化史",
+          "source_id": "sdu-daiguoxi-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-daiguoxi-wave8-profile"
+          }
+        }
+      ],
+      "professional_qualifications": [],
+      "unknowns": [
+        "本人导师、精确授位日期、个人校区和实时人事状态未核实。",
+        "成果仅限精选官方书目，不代表全集或已核全文。",
+        "本硕博三个标签均无直接授位动词，degree_awarded均null；2018年晋升教授不代替当前在岗证明。"
+      ],
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "official_profile_navigation_eligible": true,
+      "official_profile_availability": "body_read",
+      "current_personnel_navigation_eligible": false,
+      "current_faculty_status": "officially_listed_not_independently_personnel_verified",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+        "profile_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+        "native_link_target": "https://history.sdu.edu.cn/info/1066/2075.htm",
+        "source_ids": [
+          "sdu-history-wave8-roster",
+          "sdu-daiguoxi-wave8-profile"
+        ]
+      },
+      "professional_field_provenance": {
+        "name": "sdu-daiguoxi-wave8-profile",
+        "school_id": "sdu-history-wave8-organization",
+        "department_id": "sdu-history-wave8-roster",
+        "organization_id": "sdu-history-wave8-roster",
+        "department": "sdu-history-wave8-roster",
+        "roster_category": "sdu-history-wave8-roster",
+        "official_url": "sdu-daiguoxi-wave8-profile",
+        "listed_role": "sdu-daiguoxi-wave8-profile",
+        "research_interests": [
+          "sdu-daiguoxi-wave8-profile"
+        ]
+      },
+      "listed_role": "教授",
+      "listed_role_source_id": "sdu-daiguoxi-wave8-profile",
+      "listed_role_source_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+      "listed_role_basis": "explicit_individual_profile_text",
+      "research_interests": "战国秦汉魏晋史；中国思想文化史",
+      "research_interests_source_ids": [
+        "sdu-daiguoxi-wave8-profile"
+      ],
+      "employment_status": "unknown",
+      "employment_status_basis": "source_reported_roles_do_not_establish_current_personnel_status",
+      "employment_status_note": "保留来源时点职称与现职文字，不作为2026年实时在岗证明。",
+      "quick_link_eligible": false,
+      "personnel_status_verified": false,
+      "navigation_verified": true,
+      "navigation_status": "official_roster_native_profile_link_resolves_and_identity_matches",
+      "profile_source_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+      "profile_source_id": "sdu-daiguoxi-wave8-profile"
+    },
+    {
+      "person_id": "sdu-duyong",
+      "name": "杜勇",
+      "school_id": "sdu",
+      "department_id": "sdu-history-department",
+      "organization_id": "sdu-history-department",
+      "department": "历史学院／历史学系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-sdu-duyong",
+      "official_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+      "roster_category": "历史学系（中国古代史教研室）／教授(研究员)",
+      "roster_category_source_id": "sdu-history-wave8-roster",
+      "selection_order": 3,
+      "sources": [
+        {
+          "id": "sdu-history-wave8-roster",
+          "url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+          "title": "学系师资",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "published_at": null,
+          "locator": "历史学系（中国古代史教研室）／教授(研究员)"
+        },
+        {
+          "id": "sdu-history-wave8-organization",
+          "url": "https://history.sdu.edu.cn/xygk/xyjj.htm",
+          "title": "山东大学历史学院简介",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "published_at": null,
+          "locator": "简介中2023年12月改建及学院下设学系段落",
+          "updated_at_source": "2024-04",
+          "date_note": "正文标注更新日期2024年4月，未将其写为发布时间。"
+        },
+        {
+          "id": "sdu-duyong-wave8-profile",
+          "url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+          "title": "杜勇",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "published_at": "2024-07-31",
+          "locator": "简介首段、主讲课程、主要论著／论文第一项"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-sdu-history-rotation003-wave8",
+      "education": [
+        {
+          "event_id": "sdu-duyong-education-1",
+          "education_event_id": "sdu-duyong-education-1",
+          "degree": "博士",
+          "institution": "北京师范大学",
+          "field": "历史学",
+          "start": null,
+          "end": null,
+          "source_reported_degree_label": "历史学博士学位",
+          "event_kind": "degree",
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": true,
+          "include_in_education_filters": true,
+          "degree_award_source_id": "sdu-duyong-wave8-profile",
+          "degree_award_source_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+          "note": "简介明确北京师范大学历史系毕业，获历史学博士学位。未披露求学区间或授位日期；历史系不细推专业。机构分类留待已有映射闭合。",
+          "source_id": "sdu-duyong-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "event_id": "sdu-duyong-wave8-profile",
+            "education_event_id": "sdu-duyong-wave8-profile",
+            "degree": "sdu-duyong-wave8-profile",
+            "institution": "sdu-duyong-wave8-profile",
+            "field": "sdu-duyong-wave8-profile",
+            "start": null,
+            "end": null,
+            "source_reported_degree_label": "sdu-duyong-wave8-profile",
+            "event_kind": "sdu-duyong-wave8-profile",
+            "degree_awarded": "sdu-duyong-wave8-profile",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null,
+            "include_in_degree_filters": "sdu-duyong-wave8-profile",
+            "include_in_education_filters": "sdu-duyong-wave8-profile",
+            "degree_award_source_id": "sdu-duyong-wave8-profile",
+            "degree_award_source_url": "sdu-duyong-wave8-profile"
+          },
+          "field_status": {
+            "degree_awarded": "explicit_award_statement",
+            "start": "not_disclosed",
+            "end": "not_disclosed",
+            "degree_awarded_date": "not_disclosed"
+          }
+        }
+      ],
+      "appointments": [
+        {
+          "institution": "山东大学历史学院",
+          "title": "特聘教授",
+          "start": null,
+          "end": null,
+          "current": null,
+          "personnel_status_verified": false,
+          "status": "source_as_of_current_title_current_personnel_unknown",
+          "note": "2024-07-31发布的本人页称“现为山东大学历史学院特聘教授”。这是来源发布时点的现职声称；2026-10-24查阅不等于重新核实实时人事状态，规范current为null，不启用在岗快捷导航。",
+          "source_id": "sdu-duyong-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "sdu-duyong-wave8-profile",
+            "title": "sdu-duyong-wave8-profile",
+            "start": null,
+            "end": null,
+            "current": null,
+            "personnel_status_verified": "sdu-duyong-wave8-profile",
+            "status": "sdu-duyong-wave8-profile",
+            "source_as_of_current": "sdu-duyong-wave8-profile",
+            "source_reported_current_label": "sdu-duyong-wave8-profile"
+          },
+          "source_retrieved_at": "2026-10-24",
+          "source_page_published_at": "2024-07-31",
+          "source_time_note": "现职措辞仅对应页面正文及其发布时点；查阅时点不是新的实时人事证明。",
+          "source_as_of_current": true,
+          "source_reported_current_label": "现为山东大学历史学院特聘教授"
+        },
+        {
+          "institution": "天津师范大学历史文化学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "current": false,
+          "personnel_status_verified": false,
+          "status": "source_explicit_former_position",
+          "note": "原文“曾任”，不推具体任期。",
+          "source_id": "sdu-duyong-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "sdu-duyong-wave8-profile",
+            "title": "sdu-duyong-wave8-profile",
+            "start": null,
+            "end": null,
+            "current": "sdu-duyong-wave8-profile",
+            "personnel_status_verified": "sdu-duyong-wave8-profile",
+            "status": "sdu-duyong-wave8-profile"
+          }
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "周原庙祭甲骨族属问题再探讨",
+          "year": 2020,
+          "venue": "历史研究",
+          "issue": "第6期",
+          "type": "journal_article",
+          "publication_type": "journal_article",
+          "doi": null,
+          "url": null,
+          "evidence_level": "official_profile_bibliography",
+          "attribution_basis": "官方本人“论文”首项明确第一作者；未核完整作者表",
+          "note": "精选官方书目，非全文或出版者元数据核验。",
+          "source_id": "sdu-duyong-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "title": "sdu-duyong-wave8-profile",
+            "year": "sdu-duyong-wave8-profile",
+            "venue": "sdu-duyong-wave8-profile",
+            "issue": "sdu-duyong-wave8-profile",
+            "type": "sdu-duyong-wave8-profile",
+            "publication_type": "sdu-duyong-wave8-profile",
+            "doi": null,
+            "url": null,
+            "evidence_level": "sdu-duyong-wave8-profile",
+            "attribution_basis": "sdu-duyong-wave8-profile"
+          }
+        }
+      ],
+      "teaching": [
+        {
+          "name": "文物鉴赏与保护",
+          "course": "文物鉴赏与保护",
+          "role": "主讲",
+          "level": "本科生课程",
+          "start": null,
+          "education_event_id": null,
+          "appointment_event_id": null,
+          "degree_awarded": false,
+          "include_in_education_count": false,
+          "include_in_appointment_count": false,
+          "include_in_publication_count": false,
+          "include_in_mentorship_graph": false,
+          "include_in_verified_mentor_count": false,
+          "note": "来源“主讲课程”所列，未披露开课年份；不是本人教育经历。",
+          "source_id": "sdu-duyong-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-duyong-wave8-profile",
+            "course": "sdu-duyong-wave8-profile",
+            "role": "sdu-duyong-wave8-profile",
+            "level": "sdu-duyong-wave8-profile",
+            "start": null,
+            "education_event_id": null,
+            "appointment_event_id": null,
+            "degree_awarded": "sdu-duyong-wave8-profile",
+            "include_in_education_count": "sdu-duyong-wave8-profile",
+            "include_in_appointment_count": "sdu-duyong-wave8-profile",
+            "include_in_publication_count": "sdu-duyong-wave8-profile",
+            "include_in_mentorship_graph": "sdu-duyong-wave8-profile",
+            "include_in_verified_mentor_count": "sdu-duyong-wave8-profile"
+          }
+        },
+        {
+          "name": "出土文献研究",
+          "course": "出土文献研究",
+          "role": "主讲",
+          "level": "研究生课程",
+          "start": null,
+          "education_event_id": null,
+          "appointment_event_id": null,
+          "degree_awarded": false,
+          "include_in_education_count": false,
+          "include_in_appointment_count": false,
+          "include_in_publication_count": false,
+          "include_in_mentorship_graph": false,
+          "include_in_verified_mentor_count": false,
+          "note": "来源“主讲课程”所列，未披露开课年份；不是本人教育经历。",
+          "source_id": "sdu-duyong-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-duyong-wave8-profile",
+            "course": "sdu-duyong-wave8-profile",
+            "role": "sdu-duyong-wave8-profile",
+            "level": "sdu-duyong-wave8-profile",
+            "start": null,
+            "education_event_id": null,
+            "appointment_event_id": null,
+            "degree_awarded": "sdu-duyong-wave8-profile",
+            "include_in_education_count": "sdu-duyong-wave8-profile",
+            "include_in_appointment_count": "sdu-duyong-wave8-profile",
+            "include_in_publication_count": "sdu-duyong-wave8-profile",
+            "include_in_mentorship_graph": "sdu-duyong-wave8-profile",
+            "include_in_verified_mentor_count": "sdu-duyong-wave8-profile"
+          }
+        }
+      ],
+      "research_fields": [
+        {
+          "name": "先秦史",
+          "source_id": "sdu-duyong-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-duyong-wave8-profile"
+          }
+        },
+        {
+          "name": "出土文献",
+          "source_id": "sdu-duyong-wave8-profile",
+          "source_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "sdu-duyong-wave8-profile"
+          }
+        }
+      ],
+      "professional_qualifications": [],
+      "unknowns": [
+        "本人导师、精确授位日期、个人校区和实时人事状态未核实。",
+        "成果仅限精选官方书目，不代表全集或已核全文。"
+      ],
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "official_profile_navigation_eligible": true,
+      "official_profile_availability": "body_read",
+      "current_personnel_navigation_eligible": false,
+      "current_faculty_status": "officially_listed_not_independently_personnel_verified",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+        "profile_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+        "native_link_target": "https://history.sdu.edu.cn/info/1066/4967.htm",
+        "source_ids": [
+          "sdu-history-wave8-roster",
+          "sdu-duyong-wave8-profile"
+        ]
+      },
+      "professional_field_provenance": {
+        "name": "sdu-duyong-wave8-profile",
+        "school_id": "sdu-history-wave8-organization",
+        "department_id": "sdu-history-wave8-roster",
+        "organization_id": "sdu-history-wave8-roster",
+        "department": "sdu-history-wave8-roster",
+        "roster_category": "sdu-history-wave8-roster",
+        "official_url": "sdu-duyong-wave8-profile",
+        "listed_role": "sdu-duyong-wave8-profile",
+        "research_interests": [
+          "sdu-duyong-wave8-profile"
+        ]
+      },
+      "listed_role": "特聘教授",
+      "listed_role_source_id": "sdu-duyong-wave8-profile",
+      "listed_role_source_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+      "listed_role_basis": "explicit_individual_profile_text",
+      "research_interests": "先秦史；出土文献",
+      "research_interests_source_ids": [
+        "sdu-duyong-wave8-profile"
+      ],
+      "employment_status": "unknown",
+      "employment_status_basis": "source_reported_roles_do_not_establish_current_personnel_status",
+      "employment_status_note": "保留来源时点职称与现职文字，不作为2026年实时在岗证明。",
+      "quick_link_eligible": false,
+      "personnel_status_verified": false,
+      "navigation_verified": true,
+      "navigation_status": "official_roster_native_profile_link_resolves_and_identity_matches",
+      "profile_source_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+      "profile_source_id": "sdu-duyong-wave8-profile"
+    },
+    {
+      "person_id": "ouc-guanchanglong",
+      "name": "管长龙",
+      "school_id": "ouc",
+      "department_id": "ouc-coas-oceanography",
+      "organization_id": "ouc-coas-oceanography",
+      "department": "海洋与大气学院·海洋学系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-ouc-coas-oceanography-guanchanglong",
+      "official_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+      "listed_role": "教授",
+      "listed_role_source_id": "ouc-guanchanglong-profile-cn",
+      "listed_role_source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+      "listed_role_basis": "individual_profile_source_reported_title_not_current_employment_verification",
+      "roster_category": "教授",
+      "roster_category_source_id": "ouc-rotation003-wave8-roster",
+      "selection_order": 1,
+      "sources": [
+        {
+          "id": "ouc-rotation003-wave8-roster",
+          "url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+          "source_type": "university_official",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:30.122811+00:00",
+          "published_at": null,
+          "source_locators": [
+            "师资队伍导航：海洋学系下的教授分类",
+            "教授：首页1/5，原序管长龙、田纪伟、鲍献文；后接兰健、吕咸青、赵栋梁"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        },
+        {
+          "id": "ouc-rotation003-wave8-organization",
+          "url": "https://coas.ouc.edu.cn/xyjj/",
+          "source_type": "university_official",
+          "evidence_status": "official_organization_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:26.830930+00:00",
+          "published_at": null,
+          "source_locators": [
+            "学院简介首段：中国海洋大学海洋与大气学院下设海洋学系与海洋气象学系"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        },
+        {
+          "id": "ouc-guanchanglong-profile-cn",
+          "url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "source_type": "university_official",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:35.136664+00:00",
+          "published_at": "2021-12-02",
+          "source_locators": [
+            "中文姓名与职称头部",
+            "中文教育经历",
+            "中文工作经历",
+            "中文代表文章首项",
+            "中文讲授课程"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        },
+        {
+          "id": "ouc-guanchanglong-profile-en",
+          "url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "source_type": "university_official",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:35.136664+00:00",
+          "published_at": "2021-12-02",
+          "source_locators": [
+            "英文姓名与职称头部",
+            "Education",
+            "EXPERIENCE"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "profile_coverage_label": "部分公开职业资料；非完整履历或当前人事在岗证明",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+        "profile_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+        "native_link_target": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.htm",
+        "source_ids": [
+          "ouc-rotation003-wave8-roster",
+          "ouc-guanchanglong-profile-cn",
+          "ouc-guanchanglong-profile-en"
+        ]
+      },
+      "employment_status": "unknown",
+      "employment_status_basis": "roster_and_2021_biography_do_not_independently_establish_current_employment",
+      "employment_status_note": "官网教授类别与历史个人页只证明列示；本批未取得当前在岗的直接证据。",
+      "profile_source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+      "profile_source_id": "ouc-guanchanglong-profile-cn",
+      "navigation_verified": true,
+      "navigation_status": "official_roster_native_profile_link_resolves_and_identity_matches",
+      "quick_link_eligible": false,
+      "personnel_status_verified": false,
+      "include_in_current_faculty_count": false,
+      "education": [
+        {
+          "event_id": "ouc-guanchanglong-education-1",
+          "education_event_id": "ouc-guanchanglong-education-1",
+          "degree": "学士",
+          "source_reported_degree_label": "学士",
+          "institution": "吉林大学",
+          "field": "物理学",
+          "start": "1980-09",
+          "end": "1984-07",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "source_id": "ouc-guanchanglong-profile-cn",
+          "source_ids": [
+            "ouc-guanchanglong-profile-cn",
+            "ouc-guanchanglong-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "仅教育经历中的学位层次/资格标签及学习时间，未见直接授予或获得措辞；不以结束日期推授位。",
+          "field_provenance": {
+            "degree": "ouc-guanchanglong-profile-cn",
+            "institution": "ouc-guanchanglong-profile-cn",
+            "field": "ouc-guanchanglong-profile-cn",
+            "start": "ouc-guanchanglong-profile-cn",
+            "end": "ouc-guanchanglong-profile-cn",
+            "event_kind": "ouc-guanchanglong-profile-cn",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "source_reported_qualification_label",
+            "institution": "source_reported",
+            "field": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          }
+        },
+        {
+          "event_id": "ouc-guanchanglong-education-2",
+          "education_event_id": "ouc-guanchanglong-education-2",
+          "degree": "硕士",
+          "source_reported_degree_label": "硕士",
+          "institution": "吉林大学",
+          "field": "理论物理学",
+          "start": "1984-09",
+          "end": "1987-07",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "source_id": "ouc-guanchanglong-profile-cn",
+          "source_ids": [
+            "ouc-guanchanglong-profile-cn",
+            "ouc-guanchanglong-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "仅教育经历中的学位层次/资格标签及学习时间，未见直接授予或获得措辞；不以结束日期推授位。",
+          "field_provenance": {
+            "degree": "ouc-guanchanglong-profile-cn",
+            "institution": "ouc-guanchanglong-profile-cn",
+            "field": "ouc-guanchanglong-profile-cn",
+            "start": "ouc-guanchanglong-profile-cn",
+            "end": "ouc-guanchanglong-profile-cn",
+            "event_kind": "ouc-guanchanglong-profile-cn",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "source_reported_qualification_label",
+            "institution": "source_reported",
+            "field": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          }
+        },
+        {
+          "event_id": "ouc-guanchanglong-education-3",
+          "education_event_id": "ouc-guanchanglong-education-3",
+          "degree": "博士",
+          "source_reported_degree_label": "博士",
+          "institution": "青岛海洋大学",
+          "field": "物理海洋学",
+          "start": "1989-09",
+          "end": "1992-07",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "source_id": "ouc-guanchanglong-profile-cn",
+          "source_ids": [
+            "ouc-guanchanglong-profile-cn",
+            "ouc-guanchanglong-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "仅教育经历中的学位层次/资格标签及学习时间，未见直接授予或获得措辞；不以结束日期推授位。",
+          "field_provenance": {
+            "degree": "ouc-guanchanglong-profile-cn",
+            "institution": "ouc-guanchanglong-profile-cn",
+            "field": "ouc-guanchanglong-profile-cn",
+            "start": "ouc-guanchanglong-profile-cn",
+            "end": "ouc-guanchanglong-profile-cn",
+            "event_kind": "ouc-guanchanglong-profile-cn",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "source_reported_qualification_label",
+            "institution": "source_reported",
+            "field": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          }
+        },
+        {
+          "event_id": "ouc-guanchanglong-education-4",
+          "education_event_id": "ouc-guanchanglong-education-4",
+          "degree": null,
+          "source_reported_degree_label": null,
+          "institution": "法国土伦大学地球环境遥感实验室",
+          "field": null,
+          "start": "1995-10",
+          "end": "1996-08",
+          "event_kind": "postdoctoral_research",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "source_id": "ouc-guanchanglong-profile-cn",
+          "source_ids": [
+            "ouc-guanchanglong-profile-cn",
+            "ouc-guanchanglong-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "博士后是非授位经历，不作为博士或其他学位。",
+          "field_provenance": {
+            "degree": null,
+            "institution": "ouc-guanchanglong-profile-cn",
+            "field": null,
+            "start": "ouc-guanchanglong-profile-cn",
+            "end": "ouc-guanchanglong-profile-cn",
+            "event_kind": "ouc-guanchanglong-profile-cn",
+            "degree_awarded": "ouc-guanchanglong-profile-cn",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "not_applicable_non_degree_event",
+            "institution": "source_reported",
+            "field": "not_disclosed",
+            "start": "source_reported",
+            "end": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_non_degree_event"
+          }
+        },
+        {
+          "event_id": "ouc-guanchanglong-education-5",
+          "education_event_id": "ouc-guanchanglong-education-5",
+          "degree": null,
+          "source_reported_degree_label": null,
+          "institution": "美国北卡罗莱纳州立大学",
+          "field": null,
+          "start": "2002-09",
+          "end": "2003-10",
+          "event_kind": "visiting_scholar",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "source_id": "ouc-guanchanglong-profile-cn",
+          "source_ids": [
+            "ouc-guanchanglong-profile-cn",
+            "ouc-guanchanglong-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "高级访问学者是非授位经历，不作为博士或其他学位。",
+          "field_provenance": {
+            "degree": null,
+            "institution": "ouc-guanchanglong-profile-cn",
+            "field": null,
+            "start": "ouc-guanchanglong-profile-cn",
+            "end": "ouc-guanchanglong-profile-cn",
+            "event_kind": "ouc-guanchanglong-profile-cn",
+            "degree_awarded": "ouc-guanchanglong-profile-cn",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "not_applicable_non_degree_event",
+            "institution": "source_reported",
+            "field": "not_disclosed",
+            "start": "source_reported",
+            "end": "source_reported",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_non_degree_event"
+          }
+        }
+      ],
+      "appointments": [
+        {
+          "institution": "中国海洋大学海洋与大气学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "status": "source_reported_current_employment_unverified",
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "source_id": "ouc-guanchanglong-profile-cn",
+          "source_ids": [
+            "ouc-guanchanglong-profile-cn",
+            "ouc-guanchanglong-profile-en",
+            "ouc-rotation003-wave8-roster"
+          ],
+          "note": "保留官方页职称列示，不等于现任在岗。若中英文冲突，分别保留，不自行择一。",
+          "field_provenance": {
+            "institution": "ouc-guanchanglong-profile-cn",
+            "title": "ouc-guanchanglong-profile-cn",
+            "start": null,
+            "end": null
+          }
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Wind and wave climate in the Arctic Ocean as observed by altimeters",
+          "year": 2016,
+          "venue": "J. Clim.",
+          "doi": "10.1175/JCLI-D-16-0219.1",
+          "url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "type": "journal_article",
+          "source_id": "ouc-guanchanglong-profile-cn",
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "identity_evidence": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "link_status": "official_publication_list_only",
+          "note": "本人官方页中文代表文章首项；DOI为页面明列，未核出版社落地页或全文，不从作者列表推师承。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方个人页书目，未核论文全文或出版社元数据。",
+          "field_provenance": {
+            "title": "ouc-guanchanglong-profile-cn",
+            "year": "ouc-guanchanglong-profile-cn",
+            "venue": "ouc-guanchanglong-profile-cn",
+            "doi": "ouc-guanchanglong-profile-cn",
+            "type": "ouc-guanchanglong-profile-cn",
+            "identity_evidence": "ouc-guanchanglong-profile-cn"
+          }
+        }
+      ],
+      "unknowns": [
+        "本人导师及各非授位经历指导者未见直接披露，不从论文共同作者推断。",
+        "学位仅为教育表中的学士、硕士、博士及英文资格标签，未有直接授位句，三条授位保持null。",
+        "页面中文教授经历使用青岛海洋大学海洋环境学院旧称并写1997/12至今，英文工作经历合列1992年至今；本批不据该旧页面推定今日岗位或改写历史组织。",
+        "具体校区未知，不依据地址推断。",
+        "985与地域分类本研究包不另作归一化，保持unknown，待经审映射处理。"
+      ],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-ouc-rotation003-wave8",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "teaching": [
+        {
+          "courses": [
+            "海浪理论与计算原理",
+            "海洋要素计算与预报",
+            "海洋波动"
+          ],
+          "role": "讲授",
+          "start": null,
+          "end": null,
+          "source_id": "ouc-guanchanglong-profile-cn",
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+          "note": "官方页讲授课程栏；不推授课年份或现期开课，不是本人学习经历。",
+          "degree_awarded": false,
+          "education_event_id": null,
+          "appointment_event_id": null,
+          "include_in_education_count": false,
+          "include_in_appointment_count": false,
+          "include_in_publication_count": false,
+          "include_in_mentorship_graph": false,
+          "include_in_verified_mentor_count": false
+        }
+      ]
+    },
+    {
+      "person_id": "ouc-tianjiwei",
+      "name": "田纪伟",
+      "school_id": "ouc",
+      "department_id": "ouc-coas-oceanography",
+      "organization_id": "ouc-coas-oceanography",
+      "department": "海洋与大气学院·海洋学系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-ouc-coas-oceanography-tianjiwei",
+      "official_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+      "listed_role": "教授",
+      "listed_role_source_id": "ouc-tianjiwei-profile-cn",
+      "listed_role_source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+      "listed_role_basis": "individual_profile_source_reported_title_not_current_employment_verification",
+      "roster_category": "教授",
+      "roster_category_source_id": "ouc-rotation003-wave8-roster",
+      "selection_order": 2,
+      "sources": [
+        {
+          "id": "ouc-rotation003-wave8-roster",
+          "url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+          "source_type": "university_official",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:30.122811+00:00",
+          "published_at": null,
+          "source_locators": [
+            "师资队伍导航：海洋学系下的教授分类",
+            "教授：首页1/5，原序管长龙、田纪伟、鲍献文；后接兰健、吕咸青、赵栋梁"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        },
+        {
+          "id": "ouc-rotation003-wave8-organization",
+          "url": "https://coas.ouc.edu.cn/xyjj/",
+          "source_type": "university_official",
+          "evidence_status": "official_organization_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:26.830930+00:00",
+          "published_at": null,
+          "source_locators": [
+            "学院简介首段：中国海洋大学海洋与大气学院下设海洋学系与海洋气象学系"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        },
+        {
+          "id": "ouc-tianjiwei-profile-cn",
+          "url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+          "source_type": "university_official",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:43.196127+00:00",
+          "published_at": "2021-12-01",
+          "source_locators": [
+            "中文姓名与职称头部",
+            "中文教育经历",
+            "中文工作经历",
+            "中文代表文章首项"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        },
+        {
+          "id": "ouc-tianjiwei-profile-en",
+          "url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+          "source_type": "university_official",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:43.196127+00:00",
+          "published_at": "2021-12-01",
+          "source_locators": [
+            "英文姓名与职称头部",
+            "Education",
+            "Employment"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "profile_coverage_label": "部分公开职业资料；非完整履历或当前人事在岗证明",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+        "profile_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+        "native_link_target": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.htm",
+        "source_ids": [
+          "ouc-rotation003-wave8-roster",
+          "ouc-tianjiwei-profile-cn",
+          "ouc-tianjiwei-profile-en"
+        ]
+      },
+      "employment_status": "unknown",
+      "employment_status_basis": "roster_and_2021_biography_do_not_independently_establish_current_employment",
+      "employment_status_note": "官网教授类别与历史个人页只证明列示；本批未取得当前在岗的直接证据。",
+      "profile_source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+      "profile_source_id": "ouc-tianjiwei-profile-cn",
+      "navigation_verified": true,
+      "navigation_status": "official_roster_native_profile_link_resolves_and_identity_matches",
+      "quick_link_eligible": false,
+      "personnel_status_verified": false,
+      "include_in_current_faculty_count": false,
+      "education": [
+        {
+          "event_id": "ouc-tianjiwei-education-1",
+          "education_event_id": "ouc-tianjiwei-education-1",
+          "degree": "学士",
+          "source_reported_degree_label": "学士",
+          "institution": "河海大学",
+          "field": "数学",
+          "start": "1978-09",
+          "end": "1982-06",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+          "source_id": "ouc-tianjiwei-profile-cn",
+          "source_ids": [
+            "ouc-tianjiwei-profile-cn",
+            "ouc-tianjiwei-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "仅教育经历中的学位层次/资格标签及学习时间，未见直接授予或获得措辞；不以结束日期推授位。",
+          "field_provenance": {
+            "degree": "ouc-tianjiwei-profile-cn",
+            "institution": "ouc-tianjiwei-profile-cn",
+            "field": "ouc-tianjiwei-profile-cn",
+            "start": "ouc-tianjiwei-profile-cn",
+            "end": "ouc-tianjiwei-profile-cn",
+            "event_kind": "ouc-tianjiwei-profile-cn",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "source_reported_qualification_label",
+            "institution": "source_reported",
+            "field": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          }
+        },
+        {
+          "event_id": "ouc-tianjiwei-education-2",
+          "education_event_id": "ouc-tianjiwei-education-2",
+          "degree": "硕士",
+          "source_reported_degree_label": "硕士",
+          "institution": "中科院数学所",
+          "field": "基础数学",
+          "start": "1984-09",
+          "end": "1987-06",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+          "source_id": "ouc-tianjiwei-profile-cn",
+          "source_ids": [
+            "ouc-tianjiwei-profile-cn",
+            "ouc-tianjiwei-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "仅教育经历中的学位层次/资格标签及学习时间，未见直接授予或获得措辞；不以结束日期推授位。 中文数学所和英文Institute of Mathematics and Systems Science两种机构写法分别保留，不另作历史机构归一化。",
+          "field_provenance": {
+            "degree": "ouc-tianjiwei-profile-cn",
+            "institution": "ouc-tianjiwei-profile-cn",
+            "field": "ouc-tianjiwei-profile-cn",
+            "start": "ouc-tianjiwei-profile-cn",
+            "end": "ouc-tianjiwei-profile-cn",
+            "event_kind": "ouc-tianjiwei-profile-cn",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "source_reported_qualification_label",
+            "institution": "source_reported",
+            "field": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "source_assertions": [
+            {
+              "language": "zh",
+              "institution": "中科院数学所",
+              "source_id": "ouc-tianjiwei-profile-cn",
+              "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+              "source_locator": "中文教育经历硕士项"
+            },
+            {
+              "language": "en",
+              "institution": "Institute of Mathematics and Systems Science, Chinese Academy of Sciences",
+              "source_id": "ouc-tianjiwei-profile-en",
+              "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+              "source_locator": "Education的M.S.项"
+            }
+          ]
+        },
+        {
+          "event_id": "ouc-tianjiwei-education-3",
+          "education_event_id": "ouc-tianjiwei-education-3",
+          "degree": "博士",
+          "source_reported_degree_label": "博士",
+          "institution": "中科院力学所",
+          "field": "流体力学",
+          "start": "1989-09",
+          "end": "1992-06",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+          "source_id": "ouc-tianjiwei-profile-cn",
+          "source_ids": [
+            "ouc-tianjiwei-profile-cn",
+            "ouc-tianjiwei-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "仅教育经历中的学位层次/资格标签及学习时间，未见直接授予或获得措辞；不以结束日期推授位。",
+          "field_provenance": {
+            "degree": "ouc-tianjiwei-profile-cn",
+            "institution": "ouc-tianjiwei-profile-cn",
+            "field": "ouc-tianjiwei-profile-cn",
+            "start": "ouc-tianjiwei-profile-cn",
+            "end": "ouc-tianjiwei-profile-cn",
+            "event_kind": "ouc-tianjiwei-profile-cn",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "source_reported_qualification_label",
+            "institution": "source_reported",
+            "field": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          }
+        },
+        {
+          "event_id": "ouc-tianjiwei-education-4",
+          "education_event_id": "ouc-tianjiwei-education-4",
+          "degree": null,
+          "source_reported_degree_label": null,
+          "institution": "中科院海洋所",
+          "field": null,
+          "start": null,
+          "end": null,
+          "event_kind": "postdoctoral_research",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+          "source_id": "ouc-tianjiwei-profile-cn",
+          "source_ids": [
+            "ouc-tianjiwei-profile-cn",
+            "ouc-tianjiwei-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "博士后是非授位经历，不作为博士或其他学位。 中英文起止月份冲突，规范start/end留null，不自行择一。",
+          "field_provenance": {
+            "degree": null,
+            "institution": "ouc-tianjiwei-profile-cn",
+            "field": null,
+            "start": null,
+            "end": null,
+            "event_kind": "ouc-tianjiwei-profile-cn",
+            "degree_awarded": "ouc-tianjiwei-profile-cn",
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "not_applicable_non_degree_event",
+            "institution": "source_reported",
+            "field": "not_disclosed",
+            "start": "conflicting_source_assertions",
+            "end": "conflicting_source_assertions",
+            "event_kind": "source_reported",
+            "degree_awarded": "explicit_non_degree_event"
+          },
+          "source_assertions": [
+            {
+              "language": "zh",
+              "start": "1992-07",
+              "end": "1994-07",
+              "source_id": "ouc-tianjiwei-profile-cn",
+              "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+              "source_locator": "中文工作经历博士后条目"
+            },
+            {
+              "language": "en",
+              "start": "1992-09",
+              "end": "1994-06",
+              "source_id": "ouc-tianjiwei-profile-en",
+              "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+              "source_locator": "Employment的Postdoctoral research条目"
+            }
+          ]
+        }
+      ],
+      "appointments": [
+        {
+          "institution": "中国海洋大学海洋与大气学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "status": "source_reported_current_employment_unverified",
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+          "source_id": "ouc-tianjiwei-profile-cn",
+          "source_ids": [
+            "ouc-tianjiwei-profile-cn",
+            "ouc-tianjiwei-profile-en",
+            "ouc-rotation003-wave8-roster"
+          ],
+          "note": "保留官方页职称列示，不等于现任在岗。若中英文冲突，分别保留，不自行择一。",
+          "field_provenance": {
+            "institution": "ouc-tianjiwei-profile-cn",
+            "title": "ouc-tianjiwei-profile-cn",
+            "start": null,
+            "end": null
+          }
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Observed 3D structure, generation, and dissipation of oceanic mesoscale eddies in the South China Sea",
+          "year": 2016,
+          "venue": "Sci. Rep.",
+          "doi": "10.1038/srep24349",
+          "url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+          "type": "journal_article",
+          "source_id": "ouc-tianjiwei-profile-cn",
+          "source_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+          "identity_evidence": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+          "link_status": "official_publication_list_only",
+          "note": "本人官方页中文代表文章首项；DOI为页面明列，未核出版社落地页或全文，不从作者列表推师承。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方个人页书目，未核论文全文或出版社元数据。",
+          "field_provenance": {
+            "title": "ouc-tianjiwei-profile-cn",
+            "year": "ouc-tianjiwei-profile-cn",
+            "venue": "ouc-tianjiwei-profile-cn",
+            "doi": "ouc-tianjiwei-profile-cn",
+            "type": "ouc-tianjiwei-profile-cn",
+            "identity_evidence": "ouc-tianjiwei-profile-cn"
+          }
+        }
+      ],
+      "unknowns": [
+        "本人导师未有直接披露；博士生导师是其指导资格，不是其本人的博士导师关系。",
+        "学位仅为教育表中资格标签，三条授位保持null。",
+        "博士后日期中文1992/07至1994/7与英文09/1992至06/1994不一致；start/end保持null，分别保留两语断言。",
+        "1994/09至今教授的写法出自2021年页面，不作为今日在岗核验。",
+        "具体校区未知，不依据地址推断。",
+        "985与地域分类本研究包不另作归一化，保持unknown，待经审映射处理。"
+      ],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-ouc-rotation003-wave8",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false
+    },
+    {
+      "person_id": "ouc-baoxianwen",
+      "name": "鲍献文",
+      "school_id": "ouc",
+      "department_id": "ouc-coas-oceanography",
+      "organization_id": "ouc-coas-oceanography",
+      "department": "海洋与大气学院·海洋学系",
+      "campus_ids": [],
+      "campus": null,
+      "roster_entry_id": "roster-ouc-coas-oceanography-baoxianwen",
+      "official_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+      "listed_role": "教授 / Associate Professor（同页中英文冲突）",
+      "listed_role_source_id": "ouc-baoxianwen-profile-cn",
+      "listed_role_source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+      "listed_role_basis": "individual_profile_source_reported_title_not_current_employment_verification",
+      "roster_category": "教授",
+      "roster_category_source_id": "ouc-rotation003-wave8-roster",
+      "selection_order": 3,
+      "sources": [
+        {
+          "id": "ouc-rotation003-wave8-roster",
+          "url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+          "source_type": "university_official",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:30.122811+00:00",
+          "published_at": null,
+          "source_locators": [
+            "师资队伍导航：海洋学系下的教授分类",
+            "教授：首页1/5，原序管长龙、田纪伟、鲍献文；后接兰健、吕咸青、赵栋梁"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        },
+        {
+          "id": "ouc-rotation003-wave8-organization",
+          "url": "https://coas.ouc.edu.cn/xyjj/",
+          "source_type": "university_official",
+          "evidence_status": "official_organization_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:26.830930+00:00",
+          "published_at": null,
+          "source_locators": [
+            "学院简介首段：中国海洋大学海洋与大气学院下设海洋学系与海洋气象学系"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        },
+        {
+          "id": "ouc-baoxianwen-profile-cn",
+          "url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "source_type": "university_official",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:47.503548+00:00",
+          "published_at": "2021-11-29",
+          "source_locators": [
+            "中文姓名与职称头部",
+            "中文教育经历",
+            "中文工作经历",
+            "中文代表文章首项",
+            "中文讲授课程"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        },
+        {
+          "id": "ouc-baoxianwen-profile-en",
+          "url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "source_type": "university_official",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T04:47:47.503548+00:00",
+          "published_at": "2021-11-29",
+          "source_locators": [
+            "英文姓名与职称头部",
+            "Education",
+            "EMPLOYMENT"
+          ],
+          "public_raw_cache": false,
+          "evidence_scope": "官方公开正文，限所列字段与语义位置；原始响应仅供私下复核，不公开整页。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "profile_coverage_label": "部分公开职业资料；非完整履历或当前人事在岗证明",
+      "identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+        "profile_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+        "native_link_target": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.htm",
+        "source_ids": [
+          "ouc-rotation003-wave8-roster",
+          "ouc-baoxianwen-profile-cn",
+          "ouc-baoxianwen-profile-en"
+        ]
+      },
+      "employment_status": "unknown",
+      "employment_status_basis": "roster_and_2021_biography_do_not_independently_establish_current_employment",
+      "employment_status_note": "官网教授类别与历史个人页只证明列示；本批未取得当前在岗的直接证据。",
+      "profile_source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+      "profile_source_id": "ouc-baoxianwen-profile-cn",
+      "navigation_verified": true,
+      "navigation_status": "official_roster_native_profile_link_resolves_and_identity_matches",
+      "quick_link_eligible": false,
+      "personnel_status_verified": false,
+      "include_in_current_faculty_count": false,
+      "education": [
+        {
+          "event_id": "ouc-baoxianwen-education-1",
+          "education_event_id": "ouc-baoxianwen-education-1",
+          "degree": "学士",
+          "source_reported_degree_label": "学士",
+          "institution": null,
+          "field": null,
+          "start": "1984-09",
+          "end": "1988-07",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "source_id": "ouc-baoxianwen-profile-cn",
+          "source_ids": [
+            "ouc-baoxianwen-profile-cn",
+            "ouc-baoxianwen-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "仅教育经历中的学位层次/资格标签及学习时间，未见直接授予或获得措辞；不以结束日期推授位。 中英文机构名称不自行合并，分别保存；本科专业也保留两语原值。",
+          "field_provenance": {
+            "degree": "ouc-baoxianwen-profile-cn",
+            "institution": null,
+            "field": null,
+            "start": "ouc-baoxianwen-profile-cn",
+            "end": "ouc-baoxianwen-profile-cn",
+            "event_kind": "ouc-baoxianwen-profile-cn",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "source_reported_qualification_label",
+            "institution": "source_variants_not_normalized",
+            "field": "source_variants_not_normalized",
+            "start": "source_reported",
+            "end": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "source_assertions": [
+            {
+              "language": "zh",
+              "institution": "中国海洋大学",
+              "field": "海洋应用地球物理",
+              "source_id": "ouc-baoxianwen-profile-cn",
+              "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+              "source_locator": "中文教育经历第1项"
+            },
+            {
+              "language": "en",
+              "institution": "Ocean University of Qingdao",
+              "field": "Geophysics",
+              "source_id": "ouc-baoxianwen-profile-en",
+              "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+              "source_locator": "Education第1项"
+            }
+          ]
+        },
+        {
+          "event_id": "ouc-baoxianwen-education-2",
+          "education_event_id": "ouc-baoxianwen-education-2",
+          "degree": "硕士",
+          "source_reported_degree_label": "硕士",
+          "institution": null,
+          "field": "物理海洋学",
+          "start": "1990-09",
+          "end": "1993-07",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "source_id": "ouc-baoxianwen-profile-cn",
+          "source_ids": [
+            "ouc-baoxianwen-profile-cn",
+            "ouc-baoxianwen-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "仅教育经历中的学位层次/资格标签及学习时间，未见直接授予或获得措辞；不以结束日期推授位。 中英文机构名称不自行合并，分别保存；本科专业也保留两语原值。",
+          "field_provenance": {
+            "degree": "ouc-baoxianwen-profile-cn",
+            "institution": null,
+            "field": "ouc-baoxianwen-profile-cn",
+            "start": "ouc-baoxianwen-profile-cn",
+            "end": "ouc-baoxianwen-profile-cn",
+            "event_kind": "ouc-baoxianwen-profile-cn",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "source_reported_qualification_label",
+            "institution": "source_variants_not_normalized",
+            "field": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          },
+          "source_assertions": [
+            {
+              "language": "zh",
+              "institution": "中国海洋大学",
+              "field": "物理海洋学",
+              "source_id": "ouc-baoxianwen-profile-cn",
+              "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+              "source_locator": "中文教育经历第2项"
+            },
+            {
+              "language": "en",
+              "institution": "Ocean University of Qingdao",
+              "field": "Physical Oceanography",
+              "source_id": "ouc-baoxianwen-profile-en",
+              "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+              "source_locator": "Education第2项"
+            }
+          ]
+        },
+        {
+          "event_id": "ouc-baoxianwen-education-3",
+          "education_event_id": "ouc-baoxianwen-education-3",
+          "degree": "博士",
+          "source_reported_degree_label": "博士",
+          "institution": "中国海洋大学",
+          "field": "物理海洋学",
+          "start": null,
+          "end": "2003-06",
+          "event_kind": "degree_study",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "source_id": "ouc-baoxianwen-profile-cn",
+          "source_ids": [
+            "ouc-baoxianwen-profile-cn",
+            "ouc-baoxianwen-profile-en"
+          ],
+          "institution_985": "unknown",
+          "region": "unknown",
+          "continent_code": "unknown",
+          "include_in_degree_filters": false,
+          "include_in_education_filters": false,
+          "note": "仅教育经历中的学位层次/资格标签及学习时间，未见直接授予或获得措辞；不以结束日期推授位。",
+          "field_provenance": {
+            "degree": "ouc-baoxianwen-profile-cn",
+            "institution": "ouc-baoxianwen-profile-cn",
+            "field": "ouc-baoxianwen-profile-cn",
+            "start": null,
+            "end": "ouc-baoxianwen-profile-cn",
+            "event_kind": "ouc-baoxianwen-profile-cn",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "institution_985": null,
+            "region": null,
+            "continent_code": null
+          },
+          "field_status": {
+            "degree": "source_reported_qualification_label",
+            "institution": "source_reported",
+            "field": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "institution_985": "not_normalized_in_research_batch",
+            "region": "not_normalized_in_research_batch",
+            "continent_code": "not_normalized_in_research_batch"
+          }
+        }
+      ],
+      "appointments": [
+        {
+          "institution": "中国海洋大学海洋与大气学院",
+          "title": "教授 / Associate Professor（同页中英文冲突）",
+          "start": null,
+          "end": null,
+          "status": "source_reported_current_employment_unverified",
+          "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "source_id": "ouc-baoxianwen-profile-cn",
+          "source_ids": [
+            "ouc-baoxianwen-profile-cn",
+            "ouc-baoxianwen-profile-en",
+            "ouc-rotation003-wave8-roster"
+          ],
+          "note": "保留官方页职称列示，不等于现任在岗。若中英文冲突，分别保留，不自行择一。",
+          "field_provenance": {
+            "institution": "ouc-baoxianwen-profile-cn",
+            "title": null,
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "title": "conflicting_source_assertions"
+          }
+        },
+        {
+          "institution": "中国海洋大学海洋与大气学院",
+          "title": "教授/副院长",
+          "start": "2003-12",
+          "end": "2015-09",
+          "status": "historical",
+          "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "source_id": "ouc-baoxianwen-profile-cn",
+          "source_ids": [
+            "ouc-baoxianwen-profile-cn",
+            "ouc-baoxianwen-profile-en"
+          ],
+          "note": "中英文工作经历均有此区间；不将旧副院长职务当作现职。",
+          "field_provenance": {
+            "institution": "ouc-baoxianwen-profile-cn",
+            "title": "ouc-baoxianwen-profile-cn",
+            "start": "ouc-baoxianwen-profile-cn",
+            "end": "ouc-baoxianwen-profile-cn"
+          }
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [
+        {
+          "title": "Tidal distortion caused by the resonance of sexta-diurnal tides in a micromesotidal embayment",
+          "year": 2016,
+          "venue": "Journal of Geophysical Research: Oceans",
+          "doi": "10.1002/2016JC012039",
+          "url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "type": "journal_article",
+          "source_id": "ouc-baoxianwen-profile-cn",
+          "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "identity_evidence": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "link_status": "official_publication_list_only",
+          "note": "本人官方页中文代表文章首项；DOI为页面明列，未核出版社落地页或全文，不从作者列表推师承。",
+          "type_label": "期刊论文",
+          "link_status_label": "仅官方个人页书目，未核论文全文或出版社元数据。",
+          "field_provenance": {
+            "title": "ouc-baoxianwen-profile-cn",
+            "year": "ouc-baoxianwen-profile-cn",
+            "venue": "ouc-baoxianwen-profile-cn",
+            "doi": "ouc-baoxianwen-profile-cn",
+            "type": "ouc-baoxianwen-profile-cn",
+            "identity_evidence": "ouc-baoxianwen-profile-cn"
+          }
+        }
+      ],
+      "unknowns": [
+        "中文头部教授与英文头部Associate Professor不一致，当前职称及在岗状态保持unknown，不启用在职快捷导航。",
+        "本人导师未见直接披露，不从合著推断。",
+        "三条教育学位仅资格标签，授位保持null；博士开始日期未披露。",
+        "本科及硕士机构中文作中国海洋大学、英文作Ocean University of Qingdao；不自行统一历史校名，机构字段留null并保存各语原值。本科专业中文海洋应用地球物理、英文Geophysics亦分别保留。",
+        "历史教授/副院长工作记录为2003.12至2015.09，不把结束时间删掉或推为现职。",
+        "具体校区未知，不依据地址推断。",
+        "985与地域分类本研究包不另作归一化，保持unknown，待经审映射处理。"
+      ],
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-ouc-rotation003-wave8",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "role_assertions": [
+        {
+          "title": "教授",
+          "language": "zh",
+          "source_id": "ouc-baoxianwen-profile-cn",
+          "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "source_locator": "中文姓名下方职称"
+        },
+        {
+          "title": "Associate Professor",
+          "language": "en",
+          "source_id": "ouc-baoxianwen-profile-en",
+          "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "source_locator": "Xianwen BAO下方职称"
+        }
+      ],
+      "teaching": [
+        {
+          "courses": [
+            "海洋调查方法"
+          ],
+          "role": "讲授",
+          "start": null,
+          "end": null,
+          "source_id": "ouc-baoxianwen-profile-cn",
+          "source_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+          "note": "官方页讲授课程栏；不推授课年份或现期开课，不是本人学习经历。",
+          "degree_awarded": false,
+          "education_event_id": null,
+          "appointment_event_id": null,
+          "include_in_education_count": false,
+          "include_in_appointment_count": false,
+          "include_in_publication_count": false,
+          "include_in_mentorship_graph": false,
+          "include_in_verified_mentor_count": false
+        }
+      ]
     }
   ],
   "profile_batches": [
@@ -210652,6 +212971,71 @@
       "source_urls": [
         "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm"
       ]
+    },
+    {
+      "batch_id": "faculty-batch-sdu-history-rotation003-wave8",
+      "source_batch_id": "faculty-batch-sdu-history-rotation003-wave8",
+      "school_id": "sdu",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-24",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "历史学院／学系师资首页／历史学系（中国古代史教研室）／教授(研究员)",
+      "selection_basis": "经核实的官网明确分类首页原序首三；过程锁样时点仅保留研究者声称，未独立核实。",
+      "selected_roster_observations": 3,
+      "limitations": [
+        "仅历史学院学系师资首页首个教授(研究员)类别原序首3，不是全院或全校覆盖。",
+        "三人均以名录原生链接确认身份；不以履历丰富程度选样，无替补。",
+        "现行名录和个人页不等独立实时人事核验。陈尚胜、代国玺的当前在岗未知；杜勇仅保留来源明示现为特聘教授，不启用实时在岗导航。",
+        "学历标签与授位分开；无直接授位措辞保持null，未披露的日期、授位院校或本人导师不猜。",
+        "只公开必要职业事实；三篇成果仅官方本人书目，未核出版者元数据或全文。",
+        "页脚地址不作个人校区依据；出生与联系方式排除。"
+      ],
+      "integration_review_status": "source_approved_fields_incomplete",
+      "audit_integrity": {
+        "source_input_sha256": "f530b8040a1636cf4e5c94d79a3249239cd8308897cfa1a4e3e4fc18dc0bdb02",
+        "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+        "review_result_sha256": "f7f6667e61db61215ecafb21e05912a92db810747a0acacf0396678b18c40dba",
+        "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+      }
+    },
+    {
+      "batch_id": "faculty-batch-ouc-rotation003-wave8",
+      "source_batch_id": "faculty-batch-ouc-rotation003-wave8",
+      "school_id": "ouc",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-24",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "海洋与大气学院 / 海洋学系 / 教授 / 首页1/5",
+      "selection_basis": "官方明确教授分类首页正文原序，先锁样后研究，无替补。",
+      "selected_roster_observations": 3,
+      "source_urls": [
+        "https://coas.ouc.edu.cn/js_8869/list.htm",
+        "https://coas.ouc.edu.cn/xyjj/"
+      ],
+      "limitations": [
+        "仅海洋与大气学院海洋学系教授分类首页原序前三个非重复身份，不代表全院、全校或实时在岗名册。",
+        "三人均有官方职业正文，可供部分档案候选；尚待独立审查，不自称审核通过。",
+        "9条学位学习事件均为null，2条博士后和1条访问均false；无直接授位句，不推true。",
+        "同页中英文冲突分别保留语义位置与source_id，未自行择一；现职均unknown，关闭在职快捷导航。",
+        "公开数据仅职业事实与必要链接，不含个人联系方式、生日、地址或原始整页缓存。",
+        "不把公开书目当论文全文；本批每人只取一条原页代表文章，作者关系不构成师承。",
+        "分类均unknown，后续只能使用经审规范化映射，不以本研究包直接升级。"
+      ],
+      "integration_review_status": "source_approved_fields_incomplete",
+      "audit_integrity": {
+        "source_input_sha256": "5f65b3273894048658a59c45da3a530463c85b7395307a9cf1e403fb27b8b889",
+        "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+        "review_result_sha256": "8ee376e8b392b5ed4e47c4a3ffa06a319c333ae9baeef98aff92c854a53e80a2",
+        "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+      }
     }
   ],
   "pending_people": [
@@ -219696,6 +222080,21 @@
         "https://faculty.tongji.edu.cn/tianjicai/zh_CN/lwcg/985994/list/index.htm",
         "https://phys.cqu.edu.cn/yww/Faculty.htm"
       ]
+    },
+    {
+      "kind": "reviewed_rotation003_wave8",
+      "source_batch_ids": [
+        "faculty-batch-sdu-history-rotation003-wave8",
+        "faculty-batch-ouc-rotation003-wave8"
+      ],
+      "source_files": [
+        {
+          "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+          "sha256": "4cd26e241f1293484af3d400288638484e0286f43ef0718ef5cbd7accb2d251a",
+          "hash_scope": "public_structured_source_fixture_bytes_not_webpage_bytes"
+        }
+      ],
+      "note": "本批16条教育保留1明确授位、3非学位、12授位未知；无学位、任职或地理分类推断。来源原值保留，只有身份审核标签兼容与显式未知导航字段新增；整范围hold不造记录。"
     }
   ],
   "institutions": [
@@ -220477,7 +222876,7 @@
       "normalization_scope_note": "本轮首3样本及另列已审补强按各自来源范围保留，不合并同名、不自动升级原pending。"
     }
   ],
-  "build_id": "aea793ff60a91275",
+  "build_id": "9ee1e24d63baef0c",
   "exports": [
     {
       "department_id": "bit-cs-image-perception",
@@ -221061,6 +223460,13 @@
       "people_count": 3
     },
     {
+      "department_id": "ouc-coas-oceanography",
+      "school_id": "ouc",
+      "school_name": "中国海洋大学",
+      "path": "exports/ouc-coas-oceanography.xlsx",
+      "people_count": 3
+    },
+    {
       "department_id": "ouc-ise-cs",
       "school_id": "ouc",
       "school_name": "中国海洋大学",
@@ -221149,6 +223555,13 @@
       "school_id": "sdu",
       "school_name": "山东大学",
       "path": "exports/sdu-cs.xlsx",
+      "people_count": 3
+    },
+    {
+      "department_id": "sdu-history-department",
+      "school_id": "sdu",
+      "school_name": "山东大学",
+      "path": "exports/sdu-history-department.xlsx",
       "people_count": 3
     },
     {

@@ -2,6 +2,7 @@
 Self-contained offline regression; no research/baseline dependency or output writes.
 """
 from release_history import release25_view
+from public_append_history import endpoint_sha256
 import copy,hashlib,json,os,pathlib,sys,unittest
 sys.dont_write_bytecode=True
 ROOT=pathlib.Path(os.environ.get('ACADEMIC_ATLAS_TEST_ROOT',pathlib.Path(__file__).resolve().parents[1]))
@@ -273,7 +274,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
 
     def test_04_application_exporter_and_tokens_have_only_reviewed_layout_overlay(self):
         for file,digest in UNCHANGED_FILES.items():
-            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),dict(dict(dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY),**RELEASE31_PIN_OVERLAY),**RELEASE31_PUBLIC_METADATA_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)))),file)
+            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),endpoint_sha256(file,dict(dict(dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY),**RELEASE31_PIN_OVERLAY),**RELEASE31_PUBLIC_METADATA_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest))))),file)
         for file,count in [('site/app.js',3),('site/rosters.js',1),('site/index.html',2)]:
             self.assertEqual((ROOT/file).read_text().count('rotation003-20261024-w2'),count)
 
@@ -334,7 +335,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
         self.assertEqual(len(UNCHANGED_DEPARTMENT_WORKBOOKS),110)
         for file,digest in UNCHANGED_DEPARTMENT_WORKBOOKS.items():
             self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest,file)
-        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),RELEASE31_PUBLIC_METADATA_PIN_OVERLAY['site/exports/待核对名录.xlsx'])
+        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),endpoint_sha256('site/exports/待核对名录.xlsx',RELEASE31_PUBLIC_METADATA_PIN_OVERLAY['site/exports/待核对名录.xlsx']))
 
     def test_11_alias_guard_rejects_every_added_leaf_mutation_and_cross_source_swap(self):
         paths=[(key,)for key in ROLE_KEYS]+[('field_provenance','role'),('field_status','role')]

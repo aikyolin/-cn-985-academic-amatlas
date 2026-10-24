@@ -1,0 +1,165 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "fef3688f0c162243255d6fd8d137a74be4e415d3",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "schools": [
+    {
+      "school_id": "sdu",
+      "coverage_path": "progress/sdu-rotation003-wave8-coverage.json",
+      "people_ids": [
+        "sdu-chenshangsheng",
+        "sdu-daiguoxi",
+        "sdu-duyong"
+      ],
+      "counts": {
+        "education": 4,
+        "appointments": 4,
+        "mentors": 0,
+        "committee_members": 0,
+        "publications": 3,
+        "teaching": 6,
+        "research_fields": 7,
+        "professional_qualifications": 1,
+        "people": 3,
+        "pending_people": 0,
+        "org_units": 2,
+        "roster_entries": 3,
+        "source_observations": 3,
+        "held_scopes": 0,
+        "held_candidates": 0,
+        "degree_awarded_true": 1,
+        "degree_awarded_false": 0,
+        "degree_awarded_null": 3
+      },
+      "whole_scope_hold": false
+    },
+    {
+      "school_id": "ouc",
+      "coverage_path": "progress/ouc-rotation003-wave8-coverage.json",
+      "people_ids": [
+        "ouc-guanchanglong",
+        "ouc-tianjiwei",
+        "ouc-baoxianwen"
+      ],
+      "counts": {
+        "education": 12,
+        "appointments": 4,
+        "mentors": 0,
+        "committee_members": 0,
+        "publications": 3,
+        "teaching": 2,
+        "research_fields": 0,
+        "professional_qualifications": 0,
+        "people": 3,
+        "pending_people": 0,
+        "org_units": 2,
+        "roster_entries": 3,
+        "source_observations": 3,
+        "held_scopes": 0,
+        "held_candidates": 0,
+        "degree_awarded_true": 0,
+        "degree_awarded_false": 3,
+        "degree_awarded_null": 9
+      },
+      "whole_scope_hold": false
+    },
+    {
+      "school_id": "whu",
+      "coverage_path": "progress/whu-rotation003-wave8-coverage.json",
+      "people_ids": [],
+      "counts": {
+        "education": 0,
+        "appointments": 0,
+        "mentors": 0,
+        "committee_members": 0,
+        "publications": 0,
+        "teaching": 0,
+        "research_fields": 0,
+        "professional_qualifications": 0,
+        "people": 0,
+        "pending_people": 0,
+        "org_units": 0,
+        "roster_entries": 0,
+        "source_observations": 0,
+        "held_scopes": 1,
+        "held_candidates": 0,
+        "degree_awarded_true": 0,
+        "degree_awarded_false": 0,
+        "degree_awarded_null": 0
+      },
+      "whole_scope_hold": true
+    },
+    {
+      "school_id": "uestc",
+      "coverage_path": "progress/uestc-rotation003-wave8-coverage.json",
+      "people_ids": [],
+      "counts": {
+        "education": 0,
+        "appointments": 0,
+        "mentors": 0,
+        "committee_members": 0,
+        "publications": 0,
+        "teaching": 0,
+        "research_fields": 0,
+        "professional_qualifications": 0,
+        "people": 0,
+        "pending_people": 0,
+        "org_units": 0,
+        "roster_entries": 0,
+        "source_observations": 0,
+        "held_scopes": 1,
+        "held_candidates": 0,
+        "degree_awarded_true": 0,
+        "degree_awarded_false": 0,
+        "degree_awarded_null": 0
+      },
+      "whole_scope_hold": true
+    }
+  ],
+  "counts": {
+    "new_professional_profiles": 6,
+    "new_pending_profiles": 0,
+    "held_candidates": 0,
+    "held_scopes": 2,
+    "source_counts": {
+      "education": 16,
+      "appointments": 8,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 6,
+      "teaching": 8,
+      "research_fields": 7,
+      "professional_qualifications": 1,
+      "people": 6,
+      "pending_people": 0,
+      "org_units": 4,
+      "roster_entries": 6,
+      "source_observations": 6,
+      "held_scopes": 2,
+      "held_candidates": 0,
+      "degree_awarded_true": 1,
+      "degree_awarded_false": 3,
+      "degree_awarded_null": 12
+    },
+    "projection": {
+      "professional": 612,
+      "pending": 84,
+      "schools": 39,
+      "organizations": 256,
+      "roster_entries": 1778,
+      "raw_observations": 1816,
+      "tasks": 249,
+      "department_workbooks": 133
+    }
+  },
+  "consumer_boundaries": [
+    "全部旧数组事实保持严格前缀；旧131院系工作簿保持原输入。",
+    "历史资格标签与学习日期不授位，未知学历日期保持null，地理分类均unknown。",
+    "六人官网主页身份可核与实时在岗未核分开；不启用在岗快捷导航。",
+    "同页中英文冲突、历史结束日期、来源时点现职声明保留，不自行择一。",
+    "SDU名录原序已核；先锁样后研究的过程时序未独立核实，保持null及研究者原声明。"
+  ],
+  "release_status": "local_integration_candidate_not_published"
+}

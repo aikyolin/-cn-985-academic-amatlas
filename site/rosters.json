@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "39校公开名录样本，1772条整合记录、1810条原始观察。新增6条经审原序观察；NUDT年度招生PDF无个人链接，职业身份与个人主页核验区分。NEU/CQU整范围hold不进入人物或名录计数。",
+  "scope": "39校公开名录样本，1778条整合记录、1816条原始观察。本批两校各新增3条经审原序观察；个人主页核验与当前在岗分开。WHU/UESTC整范围hold不进入本批组织、人物或名录计数。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -1436,6 +1436,20 @@
     {
       "school_id": "tongji",
       "organization_id": "tongji-physics",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "sdu",
+      "organization_id": "sdu-history-department",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "ouc",
+      "organization_id": "ouc-coas-oceanography",
       "visible_roster_entries": 3,
       "count_scope": "selected_subset_only",
       "coverage_complete": false
@@ -5614,6 +5628,40 @@
       "source_category_observed_count": 9,
       "source_category_count_basis": "Only page 1 body: 9 entries; 7 pages shown, not a personnel denominator; no subsequent pages enumerated.",
       "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "sdu",
+      "organization_id": "sdu-history-department",
+      "url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+      "category": "历史学系（中国古代史教研室）／教授(研究员)",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "pagination": "only_reviewed_original_first_three",
+      "accessed_on": "2026-10-24",
+      "batch_id": "sdu-selected-roster-rotation003-wave8",
+      "source_evidence_status": "official_roster_body_read",
+      "source_category_observed_count": 18,
+      "source_category_count_note": "来源类别观察数不是已收录数或当前在岗人数。"
+    },
+    {
+      "school_id": "ouc",
+      "organization_id": "ouc-coas-oceanography",
+      "url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+      "category": "教授",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "pagination": "only_reviewed_original_first_three",
+      "accessed_on": "2026-10-24",
+      "batch_id": "ouc-selected-roster-rotation003-wave8",
+      "source_evidence_status": "official_roster_body_read",
+      "source_category_observed_count": null,
+      "source_category_count_note": "来源类别观察数不是已收录数或当前在岗人数。"
     }
   ],
   "entries": [
@@ -66164,6 +66212,411 @@
       "automatic_merge": false,
       "candidate_person_ids": [],
       "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-sdu-chenshangsheng",
+      "name": "陈尚胜",
+      "school_id": "sdu",
+      "department_id": "sdu-history-department",
+      "organization_id": "sdu-history-department",
+      "campus_ids": [],
+      "order": 1,
+      "roster_category": "历史学系（中国古代史教研室）／教授(研究员)",
+      "roster_source_id": "sdu-history-wave8-roster",
+      "roster_source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+      "native_link_target": "https://history.sdu.edu.cn/info/1066/4598.htm",
+      "official_profile_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+      "listed_role": "教授(研究员)",
+      "listed_role_basis": "category_only_not_individual_title",
+      "campus_id": null,
+      "category": "历史学系（中国古代史教研室）／教授(研究员)",
+      "accessed_on": "2026-10-24",
+      "batch_id": "sdu-selected-roster-rotation003-wave8",
+      "source_batch_id": "faculty-batch-sdu-history-rotation003-wave8",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方明确分类首页原序首三，非全院或实时在岗人事范围。",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+        "profile_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+        "native_link_target": "https://history.sdu.edu.cn/info/1066/4598.htm",
+        "source_ids": [
+          "sdu-history-wave8-roster",
+          "sdu-chenshangsheng-wave8-profile"
+        ]
+      },
+      "source_person_id": "sdu-chenshangsheng",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": true,
+      "profile_identity_verified": true,
+      "verification_status": "reviewed_official_roster_native_profile_link",
+      "notes": [
+        "本批仅原序样本；职业身份、可点击主页与当前在岗分别核验。"
+      ],
+      "verified_person_id": "sdu-chenshangsheng",
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "sdu-history-wave8-roster",
+          "sdu-chenshangsheng-wave8-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+        "official_url": "https://history.sdu.edu.cn/info/1066/4598.htm",
+        "audit_integrity": {
+          "source_input_sha256": "f530b8040a1636cf4e5c94d79a3249239cd8308897cfa1a4e3e4fc18dc0bdb02",
+          "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+          "review_result_sha256": "f7f6667e61db61215ecafb21e05912a92db810747a0acacf0396678b18c40dba",
+          "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+        }
+      },
+      "source_observation_ids": [
+        "sdu-selected-roster-rotation003-wave8:roster-sdu-chenshangsheng:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-sdu-daiguoxi",
+      "name": "代国玺",
+      "school_id": "sdu",
+      "department_id": "sdu-history-department",
+      "organization_id": "sdu-history-department",
+      "campus_ids": [],
+      "order": 2,
+      "roster_category": "历史学系（中国古代史教研室）／教授(研究员)",
+      "roster_source_id": "sdu-history-wave8-roster",
+      "roster_source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+      "native_link_target": "https://history.sdu.edu.cn/info/1066/2075.htm",
+      "official_profile_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+      "listed_role": "教授(研究员)",
+      "listed_role_basis": "category_only_not_individual_title",
+      "campus_id": null,
+      "category": "历史学系（中国古代史教研室）／教授(研究员)",
+      "accessed_on": "2026-10-24",
+      "batch_id": "sdu-selected-roster-rotation003-wave8",
+      "source_batch_id": "faculty-batch-sdu-history-rotation003-wave8",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方明确分类首页原序首三，非全院或实时在岗人事范围。",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+        "profile_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+        "native_link_target": "https://history.sdu.edu.cn/info/1066/2075.htm",
+        "source_ids": [
+          "sdu-history-wave8-roster",
+          "sdu-daiguoxi-wave8-profile"
+        ]
+      },
+      "source_person_id": "sdu-daiguoxi",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": true,
+      "profile_identity_verified": true,
+      "verification_status": "reviewed_official_roster_native_profile_link",
+      "notes": [
+        "本批仅原序样本；职业身份、可点击主页与当前在岗分别核验。"
+      ],
+      "verified_person_id": "sdu-daiguoxi",
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "sdu-history-wave8-roster",
+          "sdu-daiguoxi-wave8-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+        "official_url": "https://history.sdu.edu.cn/info/1066/2075.htm",
+        "audit_integrity": {
+          "source_input_sha256": "f530b8040a1636cf4e5c94d79a3249239cd8308897cfa1a4e3e4fc18dc0bdb02",
+          "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+          "review_result_sha256": "f7f6667e61db61215ecafb21e05912a92db810747a0acacf0396678b18c40dba",
+          "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+        }
+      },
+      "source_observation_ids": [
+        "sdu-selected-roster-rotation003-wave8:roster-sdu-daiguoxi:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-sdu-duyong",
+      "name": "杜勇",
+      "school_id": "sdu",
+      "department_id": "sdu-history-department",
+      "organization_id": "sdu-history-department",
+      "campus_ids": [],
+      "order": 3,
+      "roster_category": "历史学系（中国古代史教研室）／教授(研究员)",
+      "roster_source_id": "sdu-history-wave8-roster",
+      "roster_source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+      "native_link_target": "https://history.sdu.edu.cn/info/1066/4967.htm",
+      "official_profile_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+      "listed_role": "教授(研究员)",
+      "listed_role_basis": "category_only_not_individual_title",
+      "campus_id": null,
+      "category": "历史学系（中国古代史教研室）／教授(研究员)",
+      "accessed_on": "2026-10-24",
+      "batch_id": "sdu-selected-roster-rotation003-wave8",
+      "source_batch_id": "faculty-batch-sdu-history-rotation003-wave8",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方明确分类首页原序首三，非全院或实时在岗人事范围。",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+        "profile_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+        "native_link_target": "https://history.sdu.edu.cn/info/1066/4967.htm",
+        "source_ids": [
+          "sdu-history-wave8-roster",
+          "sdu-duyong-wave8-profile"
+        ]
+      },
+      "source_person_id": "sdu-duyong",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": true,
+      "profile_identity_verified": true,
+      "verification_status": "reviewed_official_roster_native_profile_link",
+      "notes": [
+        "本批仅原序样本；职业身份、可点击主页与当前在岗分别核验。"
+      ],
+      "verified_person_id": "sdu-duyong",
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "sdu-history-wave8-roster",
+          "sdu-duyong-wave8-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+        "official_url": "https://history.sdu.edu.cn/info/1066/4967.htm",
+        "audit_integrity": {
+          "source_input_sha256": "f530b8040a1636cf4e5c94d79a3249239cd8308897cfa1a4e3e4fc18dc0bdb02",
+          "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+          "review_result_sha256": "f7f6667e61db61215ecafb21e05912a92db810747a0acacf0396678b18c40dba",
+          "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+        }
+      },
+      "source_observation_ids": [
+        "sdu-selected-roster-rotation003-wave8:roster-sdu-duyong:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-ouc-coas-oceanography-guanchanglong",
+      "school_id": "ouc",
+      "organization_id": "ouc-coas-oceanography",
+      "department_id": "ouc-coas-oceanography",
+      "campus_ids": [],
+      "campus_id": null,
+      "name": "管长龙",
+      "official_profile_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+      "native_link_target": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.htm",
+      "roster_source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+      "order": 1,
+      "roster_category": "教授",
+      "category": "教授",
+      "listed_role": "教授",
+      "listed_role_basis": "individual_profile_explicit_title_with_source_conflicts_preserved",
+      "source_ids": [
+        "ouc-rotation003-wave8-roster",
+        "ouc-guanchanglong-profile-cn",
+        "ouc-guanchanglong-profile-en"
+      ],
+      "accessed_on": "2026-10-24",
+      "batch_id": "ouc-selected-roster-rotation003-wave8",
+      "source_batch_id": "faculty-batch-ouc-rotation003-wave8",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方海洋学系教授分类首页原序前三个非重复身份；先锁样后研究；无替补。",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+        "profile_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+        "native_link_target": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.htm",
+        "source_ids": [
+          "ouc-rotation003-wave8-roster",
+          "ouc-guanchanglong-profile-cn",
+          "ouc-guanchanglong-profile-en"
+        ]
+      },
+      "source_person_id": "ouc-guanchanglong",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": true,
+      "profile_identity_verified": true,
+      "verification_status": "reviewed_official_roster_native_profile_link",
+      "notes": [
+        "仅已选原序范围，不代表全院/全校或当前在岗人事名册。"
+      ],
+      "source_verification_status": "official_roster_native_profile_link_read_pending_independent_review",
+      "verified_person_id": "ouc-guanchanglong",
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "ouc-rotation003-wave8-roster",
+          "ouc-guanchanglong-profile-cn",
+          "ouc-guanchanglong-profile-en"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+        "official_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59952/page.psp",
+        "audit_integrity": {
+          "source_input_sha256": "5f65b3273894048658a59c45da3a530463c85b7395307a9cf1e403fb27b8b889",
+          "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+          "review_result_sha256": "8ee376e8b392b5ed4e47c4a3ffa06a319c333ae9baeef98aff92c854a53e80a2",
+          "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+        }
+      },
+      "source_observation_ids": [
+        "ouc-selected-roster-rotation003-wave8:roster-ouc-coas-oceanography-guanchanglong:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-ouc-coas-oceanography-tianjiwei",
+      "school_id": "ouc",
+      "organization_id": "ouc-coas-oceanography",
+      "department_id": "ouc-coas-oceanography",
+      "campus_ids": [],
+      "campus_id": null,
+      "name": "田纪伟",
+      "official_profile_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+      "native_link_target": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.htm",
+      "roster_source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+      "order": 2,
+      "roster_category": "教授",
+      "category": "教授",
+      "listed_role": "教授",
+      "listed_role_basis": "individual_profile_explicit_title_with_source_conflicts_preserved",
+      "source_ids": [
+        "ouc-rotation003-wave8-roster",
+        "ouc-tianjiwei-profile-cn",
+        "ouc-tianjiwei-profile-en"
+      ],
+      "accessed_on": "2026-10-24",
+      "batch_id": "ouc-selected-roster-rotation003-wave8",
+      "source_batch_id": "faculty-batch-ouc-rotation003-wave8",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方海洋学系教授分类首页原序前三个非重复身份；先锁样后研究；无替补。",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+        "profile_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+        "native_link_target": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.htm",
+        "source_ids": [
+          "ouc-rotation003-wave8-roster",
+          "ouc-tianjiwei-profile-cn",
+          "ouc-tianjiwei-profile-en"
+        ]
+      },
+      "source_person_id": "ouc-tianjiwei",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": true,
+      "profile_identity_verified": true,
+      "verification_status": "reviewed_official_roster_native_profile_link",
+      "notes": [
+        "仅已选原序范围，不代表全院/全校或当前在岗人事名册。"
+      ],
+      "source_verification_status": "official_roster_native_profile_link_read_pending_independent_review",
+      "verified_person_id": "ouc-tianjiwei",
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "ouc-rotation003-wave8-roster",
+          "ouc-tianjiwei-profile-cn",
+          "ouc-tianjiwei-profile-en"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+        "official_url": "https://coas.ouc.edu.cn/2017/0310/c8869a59950/page.psp",
+        "audit_integrity": {
+          "source_input_sha256": "5f65b3273894048658a59c45da3a530463c85b7395307a9cf1e403fb27b8b889",
+          "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+          "review_result_sha256": "8ee376e8b392b5ed4e47c4a3ffa06a319c333ae9baeef98aff92c854a53e80a2",
+          "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+        }
+      },
+      "source_observation_ids": [
+        "ouc-selected-roster-rotation003-wave8:roster-ouc-coas-oceanography-tianjiwei:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
+    },
+    {
+      "id": "roster-ouc-coas-oceanography-baoxianwen",
+      "school_id": "ouc",
+      "organization_id": "ouc-coas-oceanography",
+      "department_id": "ouc-coas-oceanography",
+      "campus_ids": [],
+      "campus_id": null,
+      "name": "鲍献文",
+      "official_profile_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+      "native_link_target": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.htm",
+      "roster_source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+      "order": 3,
+      "roster_category": "教授",
+      "category": "教授",
+      "listed_role": "教授 / Associate Professor（同页中英文冲突）",
+      "listed_role_basis": "individual_profile_explicit_title_with_source_conflicts_preserved",
+      "source_ids": [
+        "ouc-rotation003-wave8-roster",
+        "ouc-baoxianwen-profile-cn",
+        "ouc-baoxianwen-profile-en"
+      ],
+      "accessed_on": "2026-10-24",
+      "batch_id": "ouc-selected-roster-rotation003-wave8",
+      "source_batch_id": "faculty-batch-ouc-rotation003-wave8",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方海洋学系教授分类首页原序前三个非重复身份；先锁样后研究；无替补。",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+        "profile_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+        "native_link_target": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.htm",
+        "source_ids": [
+          "ouc-rotation003-wave8-roster",
+          "ouc-baoxianwen-profile-cn",
+          "ouc-baoxianwen-profile-en"
+        ]
+      },
+      "source_person_id": "ouc-baoxianwen",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": true,
+      "profile_identity_verified": true,
+      "verification_status": "reviewed_official_roster_native_profile_link",
+      "notes": [
+        "仅已选原序范围，不代表全院/全校或当前在岗人事名册。"
+      ],
+      "source_verification_status": "official_roster_native_profile_link_read_pending_independent_review",
+      "verified_person_id": "ouc-baoxianwen",
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "ouc-rotation003-wave8-roster",
+          "ouc-baoxianwen-profile-cn",
+          "ouc-baoxianwen-profile-en"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://coas.ouc.edu.cn/js_8869/list.htm",
+        "official_url": "https://coas.ouc.edu.cn/2017/0309/c8869a59894/page.psp",
+        "audit_integrity": {
+          "source_input_sha256": "5f65b3273894048658a59c45da3a530463c85b7395307a9cf1e403fb27b8b889",
+          "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+          "review_result_sha256": "8ee376e8b392b5ed4e47c4a3ffa06a319c333ae9baeef98aff92c854a53e80a2",
+          "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+        }
+      },
+      "source_observation_ids": [
+        "ouc-selected-roster-rotation003-wave8:roster-ouc-coas-oceanography-baoxianwen:1"
+      ],
+      "automatic_merge": false,
+      "candidate_person_ids": [],
+      "candidate_match_status": "verified_separate_profile"
     }
   ],
   "conflicts": [
@@ -74563,27 +75016,101 @@
       "source_urls": [
         "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm"
       ]
+    },
+    {
+      "batch_id": "sdu-selected-roster-rotation003-wave8",
+      "school_id": "sdu",
+      "accessed_on": "2026-10-24",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-sdu-chenshangsheng",
+        "roster-sdu-daiguoxi",
+        "roster-sdu-duyong"
+      ],
+      "source_observation_ids": [
+        "sdu-selected-roster-rotation003-wave8:roster-sdu-chenshangsheng:1",
+        "sdu-selected-roster-rotation003-wave8:roster-sdu-daiguoxi:1",
+        "sdu-selected-roster-rotation003-wave8:roster-sdu-duyong:1"
+      ],
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+          "sha256": "4cd26e241f1293484af3d400288638484e0286f43ef0718ef5cbd7accb2d251a",
+          "hash_scope": "public_structured_source_fixture_bytes_not_webpage_bytes"
+        }
+      ],
+      "audit_integrity": {
+        "source_input_sha256": "f530b8040a1636cf4e5c94d79a3249239cd8308897cfa1a4e3e4fc18dc0bdb02",
+        "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+        "review_result_sha256": "f7f6667e61db61215ecafb21e05912a92db810747a0acacf0396678b18c40dba",
+        "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+      },
+      "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "ouc-selected-roster-rotation003-wave8",
+      "school_id": "ouc",
+      "accessed_on": "2026-10-24",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-ouc-coas-oceanography-guanchanglong",
+        "roster-ouc-coas-oceanography-tianjiwei",
+        "roster-ouc-coas-oceanography-baoxianwen"
+      ],
+      "source_observation_ids": [
+        "ouc-selected-roster-rotation003-wave8:roster-ouc-coas-oceanography-guanchanglong:1",
+        "ouc-selected-roster-rotation003-wave8:roster-ouc-coas-oceanography-tianjiwei:1",
+        "ouc-selected-roster-rotation003-wave8:roster-ouc-coas-oceanography-baoxianwen:1"
+      ],
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [
+        {
+          "file": "tests/fixtures/rotation003-wave8-clean-public-sources.json",
+          "sha256": "4cd26e241f1293484af3d400288638484e0286f43ef0718ef5cbd7accb2d251a",
+          "hash_scope": "public_structured_source_fixture_bytes_not_webpage_bytes"
+        }
+      ],
+      "audit_integrity": {
+        "source_input_sha256": "5f65b3273894048658a59c45da3a530463c85b7395307a9cf1e403fb27b8b889",
+        "source_input_hash_scope": "approved_research_package_file_bytes_not_webpage_bytes",
+        "review_result_sha256": "8ee376e8b392b5ed4e47c4a3ffa06a319c333ae9baeef98aff92c854a53e80a2",
+        "review_result_hash_scope": "independent_review_artifact_bytes_not_webpage_bytes"
+      },
+      "validation": "independently_reviewed_selected_source_observations_only"
     }
   ],
   "totals": {
-    "organization_count": 144,
-    "category_count": 208,
-    "entries_with_profile_link": 1556,
+    "organization_count": 146,
+    "category_count": 210,
+    "entries_with_profile_link": 1562,
     "entries_without_profile_link": 216,
     "dedup_candidate_groups": 60,
     "placeholder_profile_link_observations": 18,
     "current_employment_count_verified": false,
     "not_unique_people_count": true,
-    "record_count": 1772,
-    "raw_observation_count": 1810,
-    "roster_records": 1772,
-    "raw_source_observations": 1810,
-    "coverage_unit_count": 235,
+    "record_count": 1778,
+    "raw_observation_count": 1816,
+    "roster_records": 1778,
+    "raw_source_observations": 1816,
+    "coverage_unit_count": 237,
     "count_unit": "integrated_roster_records",
     "source_record_grouping_reduction": 38,
     "category_count_basis": "unique_organization_category_pairs",
-    "unique_organization_category_pairs": 208,
-    "batch_category_count": 227,
+    "unique_organization_category_pairs": 210,
+    "batch_category_count": 229,
     "category_count_source": "coverage_rows_preserved_without_deduplication"
   },
   "role_interpretation": {
@@ -74724,5 +75251,5 @@
     }
   ],
   "raw_data_location": "完整原始来源观察保存在仓库 data/rosters.json，以及导出 Excel 的“原始来源观察”工作表；网站快照不重复加载这些原始内容。",
-  "build_id": "aea793ff60a91275"
+  "build_id": "9ee1e24d63baef0c"
 }
