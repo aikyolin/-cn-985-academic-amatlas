@@ -231,6 +231,10 @@ RELEASE28_PIN_OVERLAY={'site/atlas.json': '36fe06b748feef6919e105ce3fa81c58426b4
 # Exact release29 endpoint overlay; original constants preserved.
 RELEASE29_PIN_OVERLAY={'site/atlas.json': '4b976d4c2e4a5b0beb1c838263ade37ece4fd8b5561ab8517d8ad83e13ca0996', 'site/rosters.json': 'e9ac62ce2ff63201b443717af9da4468d449521238dcde53c79fad7e9676c904', 'data/atlas.json': 'e2cbfcde9c8f96ebc9e96a0829fe95698428b672fd611ab6dff1078eafa75303', 'data/rosters.json': '854ff13b8c352b68a51a20c1cd322f638664de68fdf4996bb922dc344250d11b', 'progress/README.md': '943924d756b71e5c0bb3b6057faf1bcc30193b0bdd1733cf5fe986e6bf1466cb', 'progress/current-coverage.md': '467b5664162ff2a1fbb17b9c71b80038be3bffbc24602cbae9c84dc0b63add5f', 'progress/work-queue.json': '6ce290b467650489cfc260a27ece315a6efd86442af058f4a8558f8a3dfca359', 'site/exports/待核对名录.xlsx': 'efc5aaeaefb8c9e73f726619db2a09cc8d17f4ee1807be879cb5f16cf1e3eaa5', 'site/exports/待核对名录.csv': '99ef76904dd171f877c9a442e9d338badb15ac68e4b3ec145b71462234eb9017'}
 # Exact release30 current endpoint pins; all historical constants and assertions remain below.
+# Exact release31 current endpoint pins; previous release assertions remain intact.
+# Exact public-metadata endpoint overlay; previous hashes and all fact assertions are retained.
+RELEASE31_PUBLIC_METADATA_PIN_OVERLAY={'data/atlas.json': '7ae5245f6d6cd4b7b6e36cddbbbd64bf283a38a784e3d8f16f503996427879f8', 'data/rosters.json': 'ac8eedf3a8db18424e479d719f451f45bd3f803d6707471f8539217c22267dff', 'site/atlas.json': '7326248f02e2d088621dfb8247ff0912522a530fb9386a345e6436e67f8d8509', 'site/rosters.json': '4895b98cee06f9cdd8a62daf79a81e5fa501469b2feb4d947474783a85a40d4f', 'site/exports/待核对名录.csv': '176a344f1f72b15fcad2dc34c05f1af21b1b86bd42ef30f33c255a7ba35994b8', 'site/exports/待核对名录.xlsx': '31a14ca3d0629fe2a8583367b71235a0c61d54decfb2a3aa8389fcc256627fb7'}
+RELEASE31_PIN_OVERLAY={'data/atlas.json': '28643e5c9a1d67007146dba8a2e6d410008deba5a5a1fcabdd10979f408fd679', 'data/rosters.json': '3e47fc6836bde53790d63b6c2c6347fad614ecff63c8548051398ef8bd7eb3ca', 'progress/README.md': '08db02455222e2e99629cca4c56490300d3f1df64733291b33f3f6567cf25aaf', 'progress/current-coverage.md': '375f389c9d889c6c3cbf6e7f0e9b025b4eee97d7a930fad1b7ebac4e23c602c3', 'progress/work-queue.json': 'd22c628ade740a72f063d7f0fe3570374ebdd881ef2d787330c4b39e5b51ea37', 'site/atlas.json': '47e92ca3f762d8921aa8bc6ab8f150c6d20d509d29bdee307cf5fecd6d263470', 'site/exports/待核对名录.csv': '0fba9ecbafaa02974d5af4d8c165ed6a4b135812e19f74d1dd3000cffaaf5231', 'site/exports/待核对名录.xlsx': '93736f1b3a20451a5622e99a42abc50c710af5322ea6c00fd582afc69f46969d', 'site/rosters.json': 'fd18bd4a98d291c4a441d4f1ac2ec7f7e4e684cf1e406965fa2c6a6cbd8fe4b1'}
 RELEASE30_PIN_OVERLAY={'data/atlas.json': '7bcbb58ea605ea73fec2a51412850550533ba5617d3f200d3812d10551c534fe', 'data/rosters.json': '8be8881d52699b7417e5ae7e542629d64156744d524c581c856faf6172878313', 'progress/README.md': '83b8119bb351cc5fd50905314aed93d62d1d1e72b74b91a4c0d4afd9b6e916fc', 'progress/current-coverage.md': '5c7f1f00dadf7a6622c90ea9e677127e4dcf3b9416819ee09700087af870b0c7', 'progress/work-queue.json': 'be961acbf8eb14435379eb9a3fd61da45cab3cddce0f95593f00bf57837f861b', 'site/atlas.json': '8a2fe871c7262ffc0a2f3edddb5b970a27382b9f5b85797c44f29f3be7582e4b', 'site/exports/待核对名录.csv': '9b0ca81c0420ef1fbe844b63d99684ee8b2bfb1beafb873cfcb40185158a9dd0', 'site/exports/待核对名录.xlsx': '75ad1f8c73e2add290a15de5e4aafa82d857dada4352af0cd7089a6ba2e4a25d', 'site/rosters.json': 'c837c259317159de566137c0227866a1fd7224020afbe1e37ab515ffb8a4f0a2'}
 class Rotation003Wave1DisplayFixTests(unittest.TestCase):
     @classmethod
@@ -261,7 +265,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
 
     def test_04_application_exporter_and_tokens_have_only_reviewed_layout_overlay(self):
         for file,digest in UNCHANGED_FILES.items():
-            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)))),file)
+            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),dict(dict(dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY),**RELEASE31_PIN_OVERLAY),**RELEASE31_PUBLIC_METADATA_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)))),file)
         for file,count in [('site/app.js',3),('site/rosters.js',1),('site/index.html',2)]:
             self.assertEqual((ROOT/file).read_text().count('rotation003-20261024-w2'),count)
 
@@ -322,7 +326,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
         self.assertEqual(len(UNCHANGED_DEPARTMENT_WORKBOOKS),110)
         for file,digest in UNCHANGED_DEPARTMENT_WORKBOOKS.items():
             self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest,file)
-        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),RELEASE30_PIN_OVERLAY['site/exports/待核对名录.xlsx'])
+        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),RELEASE31_PUBLIC_METADATA_PIN_OVERLAY['site/exports/待核对名录.xlsx'])
 
     def test_11_alias_guard_rejects_every_added_leaf_mutation_and_cross_source_swap(self):
         paths=[(key,)for key in ROLE_KEYS]+[('field_provenance','role'),('field_status','role')]

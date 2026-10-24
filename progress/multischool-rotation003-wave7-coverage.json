@@ -1,0 +1,143 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "8d391b596497ac6eb2c5c654f31eccecba202485",
+  "status": "partial",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "schools": [
+    {
+      "school_id": "nudt",
+      "people_ids": [
+        "nudt-lukai",
+        "nudt-sujinshu",
+        "nudt-wanghuaimin"
+      ],
+      "coverage_path": "progress/nudt-rotation003-wave7-coverage.json",
+      "counts": {
+        "education": 5,
+        "appointments": 4,
+        "mentors": 0,
+        "committee_members": 0,
+        "publications": 0,
+        "teaching": 0,
+        "people": 3,
+        "pending_people": 0,
+        "held": 0,
+        "held_scopes": 0,
+        "unique_sources": 7,
+        "degree_awarded_true": 4,
+        "degree_awarded_false": 0,
+        "degree_awarded_null": 1
+      }
+    },
+    {
+      "school_id": "neu",
+      "people_ids": [],
+      "coverage_path": "progress/neu-rotation003-wave7-coverage.json",
+      "counts": {
+        "education": 0,
+        "appointments": 0,
+        "mentors": 0,
+        "committee_members": 0,
+        "publications": 0,
+        "teaching": 0,
+        "people": 0,
+        "pending_people": 0,
+        "held": 0,
+        "held_scopes": 1,
+        "unique_sources": 0,
+        "degree_awarded_true": 0,
+        "degree_awarded_false": 0,
+        "degree_awarded_null": 0
+      }
+    },
+    {
+      "school_id": "tongji",
+      "people_ids": [
+        "tongji-baozhihao",
+        "tongji-caitianji",
+        "tongji-chenjie-physics"
+      ],
+      "coverage_path": "progress/tongji-rotation003-wave7-coverage.json",
+      "counts": {
+        "education": 14,
+        "appointments": 12,
+        "mentors": 3,
+        "committee_members": 0,
+        "publications": 4,
+        "teaching": 2,
+        "people": 3,
+        "pending_people": 0,
+        "held": 0,
+        "held_scopes": 0,
+        "unique_sources": 5,
+        "degree_awarded_true": 3,
+        "degree_awarded_false": 5,
+        "degree_awarded_null": 6
+      }
+    },
+    {
+      "school_id": "cqu",
+      "people_ids": [],
+      "coverage_path": "progress/cqu-rotation003-wave7-coverage.json",
+      "counts": {
+        "education": 0,
+        "appointments": 0,
+        "mentors": 0,
+        "committee_members": 0,
+        "publications": 0,
+        "teaching": 0,
+        "people": 0,
+        "pending_people": 0,
+        "held": 0,
+        "held_scopes": 1,
+        "unique_sources": 1,
+        "degree_awarded_true": 0,
+        "degree_awarded_false": 0,
+        "degree_awarded_null": 0
+      }
+    }
+  ],
+  "counts": {
+    "new_professional_profiles": 6,
+    "new_pending_profiles": 0,
+    "held_candidates": 0,
+    "held_scopes": 2,
+    "source_counts": {
+      "education": 19,
+      "appointments": 16,
+      "mentors": 3,
+      "committee_members": 0,
+      "publications": 4,
+      "teaching": 2,
+      "people": 6,
+      "pending_people": 0,
+      "held": 0,
+      "held_scopes": 2,
+      "unique_sources": 13,
+      "degree_awarded_true": 7,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 7
+    },
+    "projection": {
+      "professional": 606,
+      "pending": 84,
+      "schools": 39,
+      "organizations": 252,
+      "roster_entries": 1772,
+      "raw_observations": 1810,
+      "tasks": 245,
+      "department_workbooks": 131
+    }
+  },
+  "consumer_boundaries": [
+    "This is exact-hash source review, not consumer-schema, export, site or remote-release approval.",
+    "Do not change any approved fact, unknown, conflict, source meaning or person selection without renewed review.",
+    "Classifications remain unknown in this source package; only separately reviewed canonical normalization may set 985/region/continent.",
+    "No new currently-employed mentor navigation. Individual source navigation and direct current-role listing do not establish independently verified personnel status.",
+    "Keep unknowns null/empty where unverified; never treat absence as negative evidence.",
+    "Do not publish raw pages, whole PDFs, full biographies, contact details, birthday or temporary reviewer images.",
+    "Canonical consumers must preserve the single combined undergraduate/master relation without manufacturing a stage binding or duplicate edges; validate the education_event_ids representation before publication."
+  ],
+  "release_status": "source_reviewed_snapshot"
+}

@@ -1,8 +1,10 @@
 """Generic reviewed-append preservation, held-scope and conservative consumer boundaries."""
 import copy,hashlib,json,pathlib,unittest
 from release29_history import CONTRACT,release29_view
+from release30_history import CONTRACT as RELEASE30_CONTRACT,release30_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-def read(rel):return json.loads((ROOT/rel).read_text())
+def read(rel):
+ value=json.loads((ROOT/rel).read_text());return release30_view(value,rel)if rel in RELEASE30_CONTRACT else value
 def digest(value):return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 def pointer(value,path):
  for part in path.split('/')[1:]:

@@ -1,0 +1,159 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "8d391b596497ac6eb2c5c654f31eccecba202485",
+  "school_id": "neu",
+  "school_name": "东北大学",
+  "batch_id": "faculty-batch-neu-rotation-003-wave7",
+  "status": "blocked",
+  "organization_id": null,
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "机器人科学与工程学院 / 专职教师 / 教授",
+  "selection_method": "须取得名录正文原序首3非重复后才能锁样；本范围未达到条件，整范围hold。",
+  "selected_candidate_names": [],
+  "selected_roster_original_order": [],
+  "held_candidates": [],
+  "whole_scope_hold": true,
+  "counts": {
+    "education": 0,
+    "appointments": 0,
+    "mentors": 0,
+    "committee_members": 0,
+    "publications": 0,
+    "teaching": 0,
+    "people": 0,
+    "pending_people": 0,
+    "held": 0,
+    "held_scopes": 1,
+    "unique_sources": 0,
+    "degree_awarded_true": 0,
+    "degree_awarded_false": 0,
+    "degree_awarded_null": 0
+  },
+  "source_urls": [
+    "https://www.rse.neu.edu.cn/2105/list.htm"
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-neu-rotation-003-wave7",
+    "base_commit": "8d391b596497ac6eb2c5c654f31eccecba202485",
+    "institution": {
+      "id": "neu",
+      "official_name": "东北大学",
+      "official_url": "https://www.neu.edu.cn/",
+      "source_urls": [
+        "https://www.rse.neu.edu.cn/2105/list.htm"
+      ],
+      "scope_note": "机器人科学与工程学院 / 专职教师 / 教授范围整批hold，名录原序正文不可得，零新人物、零新增组织。"
+    },
+    "org_units": [],
+    "campuses": [],
+    "scope": "机器人科学与工程学院 / 专职教师 / 教授",
+    "retrieved_at": "2026-10-24",
+    "coverage_complete": false,
+    "fields_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [],
+    "pending_people": [],
+    "limitations": [
+      "名录搜索索引仅作发现线索，不能作为原序正文；整范围hold，无个人页读取、无替补。",
+      "相同名录URL首次web读取超时，直接HTTP读取503后停止；没有转换移动页、代理、登录或其他路径。",
+      "未取得学院名录直接证据，org_units、people、pending_people及entries均为空；不把索引三人伪造为已锁样本。"
+    ],
+    "counts": {
+      "people": 0,
+      "held_scopes": 1,
+      "selected_candidates": 0,
+      "pending_people": 0,
+      "education_events": 0,
+      "mentors": 0,
+      "publications": 0
+    }
+  },
+  "source_scope": {
+    "batch_id": "faculty-batch-neu-rotation-003-wave7",
+    "base_commit": "8d391b596497ac6eb2c5c654f31eccecba202485",
+    "review_status": "pending_independent_review",
+    "institution": {
+      "id": "neu",
+      "official_name": "东北大学",
+      "official_url": "https://www.neu.edu.cn/",
+      "source_urls": [
+        "https://www.rse.neu.edu.cn/2105/list.htm"
+      ],
+      "scope_note": "机器人科学与工程学院 / 专职教师 / 教授范围整批hold，名录原序正文不可得，零新人物、零新增组织。"
+    },
+    "org_units": [],
+    "campuses": [],
+    "scope": "机器人科学与工程学院 / 专职教师 / 教授",
+    "roster_url": "https://www.rse.neu.edu.cn/2105/list.htm",
+    "roster_source_id": null,
+    "roster_evidence_status": "body_unavailable_scope_held",
+    "selection_method": "须取得名录正文原序首3非重复后才能锁样；本范围未达到条件，整范围hold。",
+    "roster_count_observed": null,
+    "roster_total_reported": null,
+    "entries": [],
+    "selected_candidate_names": [],
+    "held_candidates": [],
+    "held_scope": true,
+    "hold_reason": "timeout_then_503_no_direct_roster_body",
+    "index_only_leads": [
+      "李新德",
+      "王斐",
+      "王昊"
+    ],
+    "index_only_leads_status": "discovery_only_not_locked_candidates_not_person_records",
+    "pending_people": [],
+    "coverage_complete": false,
+    "limitations": [
+      "名录搜索索引仅作发现线索，不能作为原序正文；整范围hold，无个人页读取、无替补。",
+      "相同名录URL首次web读取超时，直接HTTP读取503后停止；没有转换移动页、代理、登录或其他路径。",
+      "未取得学院名录直接证据，org_units、people、pending_people及entries均为空；不把索引三人伪造为已锁样本。"
+    ]
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T03:18:49.933111+00:00",
+    "counts": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "teaching": 0,
+      "people": 0,
+      "held": 0,
+      "held_scopes": 1,
+      "pending_people": 0,
+      "unique_sources": 0,
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 0
+    },
+    "integration_limits": [
+      "This is exact-hash source review, not consumer-schema, export, site or remote-release approval.",
+      "Do not change any approved fact, unknown, conflict, source meaning or person selection without renewed review.",
+      "Classifications remain unknown in this source package; only separately reviewed canonical normalization may set 985/region/continent.",
+      "No new currently-employed mentor navigation. Individual source navigation and direct current-role listing do not establish independently verified personnel status.",
+      "Keep unknowns null/empty where unverified; never treat absence as negative evidence.",
+      "Do not publish raw pages, whole PDFs, full biographies, contact details, birthday or temporary reviewer images."
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "名录搜索索引仅作发现线索，不能作为原序正文；整范围hold，无个人页读取、无替补。",
+    "相同名录URL首次web读取超时，直接HTTP读取503后停止；没有转换移动页、代理、登录或其他路径。",
+    "未取得学院名录直接证据，org_units、people、pending_people及entries均为空；不把索引三人伪造为已锁样本。",
+    "This is exact-hash source review, not consumer-schema, export, site or remote-release approval.",
+    "Do not change any approved fact, unknown, conflict, source meaning or person selection without renewed review.",
+    "Classifications remain unknown in this source package; only separately reviewed canonical normalization may set 985/region/continent.",
+    "No new currently-employed mentor navigation. Individual source navigation and direct current-role listing do not establish independently verified personnel status.",
+    "Keep unknowns null/empty where unverified; never treat absence as negative evidence.",
+    "Do not publish raw pages, whole PDFs, full biographies, contact details, birthday or temporary reviewer images."
+  ],
+  "next_action": "保留整范围hold，不重试受限路线、不以索引姓名或其他院系替补。",
+  "display_scope": "职业身份与名录原生个人主页分别记录。NUDT年度招生PDF不作为个人在职主页；独立教学、项目、荣誉、资格字段不混入学历、任职、师承或论文计数。",
+  "date_scope": "本批来源实际读取日期为2026-10-24；全库兼容updated_at沿用2026-10-23以保持旧院系工作簿逐字节不变，不能将其视为本批来源读取日。",
+  "release_status": "source_reviewed_snapshot"
+}

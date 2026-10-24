@@ -1,8 +1,10 @@
 """Generic live-release boundaries for native roster aliases and source-access holds."""
 import json,pathlib,unittest
 from release28_history import CONTRACT,release28_view
+from release30_history import CONTRACT as RELEASE30_CONTRACT,release30_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-def read(rel):return json.loads((ROOT/rel).read_text())
+def read(rel):
+ value=json.loads((ROOT/rel).read_text());return release30_view(value,rel)if rel in RELEASE30_CONTRACT else value
 class ReviewedAppendBoundaries(unittest.TestCase):
  def test_original_prefixes_and_actual_generated_views_are_preserved(self):
   for rel in CONTRACT:release28_view(read(rel),rel)

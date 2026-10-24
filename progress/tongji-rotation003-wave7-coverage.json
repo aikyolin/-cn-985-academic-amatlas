@@ -1,0 +1,401 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "8d391b596497ac6eb2c5c654f31eccecba202485",
+  "school_id": "tongji",
+  "school_name": "同济大学",
+  "batch_id": "faculty-batch-tongji-rotation003-wave7",
+  "status": "partial",
+  "organization_id": "tongji-physics",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "物理科学与工程学院 / 教职员工 / 教授（研究员） / 首页",
+  "selection_method": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+  "selected_candidate_names": [
+    "包志豪",
+    "蔡恬吉",
+    "陈杰"
+  ],
+  "selected_roster_original_order": [
+    {
+      "id": "roster-tongji-physics-baozhihao",
+      "school_id": "tongji",
+      "organization_id": "tongji-physics",
+      "department_id": "tongji-physics",
+      "campus_ids": [],
+      "name": "包志豪",
+      "official_profile_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
+      "native_link_target": "https://physics.tongji.edu.cn/info/1126/3141.htm",
+      "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+      "order": 1,
+      "roster_category": "教授（研究员）",
+      "listed_role": "教授",
+      "listed_role_basis": "individual_profile_explicit_title",
+      "source_ids": [
+        "tongji-rotation003-wave7-roster",
+        "tongji-baozhihao-profile"
+      ]
+    },
+    {
+      "id": "roster-tongji-physics-caitianji",
+      "school_id": "tongji",
+      "organization_id": "tongji-physics",
+      "department_id": "tongji-physics",
+      "campus_ids": [],
+      "name": "蔡恬吉",
+      "official_profile_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
+      "native_link_target": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
+      "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+      "order": 2,
+      "roster_category": "教授（研究员）",
+      "listed_role": "特聘研究员",
+      "listed_role_basis": "individual_profile_explicit_title",
+      "source_ids": [
+        "tongji-rotation003-wave7-roster",
+        "tongji-caitianji-profile"
+      ]
+    },
+    {
+      "id": "roster-tongji-physics-chenjie-physics",
+      "school_id": "tongji",
+      "organization_id": "tongji-physics",
+      "department_id": "tongji-physics",
+      "campus_ids": [],
+      "name": "陈杰",
+      "official_profile_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
+      "native_link_target": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
+      "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+      "order": 3,
+      "roster_category": "教授（研究员）",
+      "listed_role": "长聘教授",
+      "listed_role_basis": "individual_profile_explicit_title",
+      "source_ids": [
+        "tongji-rotation003-wave7-roster",
+        "tongji-chenjie-physics-profile"
+      ]
+    }
+  ],
+  "held_candidates": [],
+  "whole_scope_hold": false,
+  "counts": {
+    "education": 14,
+    "appointments": 12,
+    "mentors": 3,
+    "committee_members": 0,
+    "publications": 4,
+    "teaching": 2,
+    "people": 3,
+    "pending_people": 0,
+    "held": 0,
+    "held_scopes": 0,
+    "unique_sources": 5,
+    "degree_awarded_true": 3,
+    "degree_awarded_false": 5,
+    "degree_awarded_null": 6
+  },
+  "source_urls": [
+    "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm"
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-tongji-rotation003-wave7",
+    "base_commit": "8d391b596497ac6eb2c5c654f31eccecba202485",
+    "institution": {
+      "id": "tongji",
+      "official_name": "同济大学",
+      "official_url": "https://www.tongji.edu.cn/",
+      "source_urls": [
+        "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm"
+      ]
+    },
+    "org_units": [
+      {
+        "id": "tongji-physics",
+        "name": "物理科学与工程学院",
+        "type": "school",
+        "school_id": "tongji",
+        "parent_id": "tongji",
+        "campus_ids": [],
+        "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "source_id": "tongji-rotation003-wave7-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "物理科学与工程学院 / 教职员工 / 教授（研究员） / 首页",
+    "retrieved_at": "2026-10-24",
+    "coverage_complete": false,
+    "fields_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "tongji-rotation003-wave7-roster",
+        "url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "source_type": "university_official",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "observed_at": "2026-10-24T03:06:59Z",
+        "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
+        "published_at": null,
+        "source_locators": [
+          "L42-L54: category and separate retired category",
+          "L55-L57: selected first three",
+          "L55-L63: first-page sequence",
+          "L64: page 1 and seven-page navigation"
+        ],
+        "evidence_format": "minimized_verbatim_web_tool_excerpt",
+        "public_raw_cache": false
+      },
+      {
+        "id": "tongji-baozhihao-profile",
+        "url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
+        "source_type": "university_official",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "observed_at": "2026-10-24T03:07:07Z",
+        "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
+        "published_at": null,
+        "source_locators": [
+          "L47: identity",
+          "L59-L66: education and work",
+          "L70: teaching",
+          "L84-L86: selected bibliography"
+        ],
+        "evidence_format": "minimized_verbatim_web_tool_excerpt",
+        "public_raw_cache": false
+      },
+      {
+        "id": "tongji-caitianji-profile",
+        "url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
+        "source_type": "university_official",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "observed_at": "2026-10-24T03:07:07Z",
+        "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
+        "published_at": null,
+        "source_locators": [
+          "L24-L34: identity and role",
+          "L39: current role, explicit degree awards, postdoc and visiting role",
+          "L46-L58: dated education and work"
+        ],
+        "evidence_format": "minimized_verbatim_web_tool_excerpt",
+        "public_raw_cache": false
+      },
+      {
+        "id": "tongji-chenjie-physics-profile",
+        "url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
+        "source_type": "university_official",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "observed_at": "2026-10-24T03:07:07Z",
+        "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
+        "published_at": null,
+        "source_locators": [
+          "L61-L74: identity and qualification labels",
+          "L100 beginning: current role and explicit stage-specific mentors",
+          "L118 and L122: selected bibliography",
+          "L176-L197: dated education/work, including PhD date conflict"
+        ],
+        "evidence_format": "minimized_verbatim_web_tool_excerpt",
+        "public_raw_cache": false
+      },
+      {
+        "id": "tongji-caitianji-publications",
+        "url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/lwcg/985994/list/index.htm",
+        "source_type": "university_official",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "observed_at": "2026-10-24T03:07:33Z",
+        "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
+        "published_at": null,
+        "source_locators": [
+          "L25-L29: identity",
+          "L36-L41: empty publication category"
+        ],
+        "evidence_format": "minimized_verbatim_web_tool_excerpt",
+        "public_raw_cache": false
+      }
+    ],
+    "pending_people": [],
+    "limitations": [
+      "仅新学院教授（研究员）类别首页原序首3，不代表全院、全校完整覆盖或实时人事名册。",
+      "教授（研究员）为名录类别，具体职称使用个人正文，不把特聘研究员改称教授。",
+      "授位true只依据直接授予或获得句；毕业、层次和学习结束日期不确认授位；访问、博士后单独编码false。",
+      "导师关系、阶段与导师当前任职分开；未核导师本人官方页者不启用在职导航。",
+      "书目只记录本人官方页列示，不是论文全文核验；空栏目不等于没有成果。",
+      "公开职业事实最小化，只保留可复核短原文及行号，不存出生、联系方式、地址、家庭、照片或完整网页缓存。",
+      "院校985和地理分类本隔离批次全部unknown，整合时只能依据已有经审规范化映射。"
+    ],
+    "counts": {
+      "people": 3,
+      "held": 0,
+      "pending_people": 0,
+      "education_events": 14,
+      "degree_awarded_true": 3,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 6,
+      "mentors": 3,
+      "publications": 4
+    }
+  },
+  "source_scope": {
+    "batch_id": "faculty-batch-tongji-rotation003-wave7",
+    "review_status": "pending_independent_review",
+    "base_commit": "8d391b596497ac6eb2c5c654f31eccecba202485",
+    "institution": {
+      "id": "tongji",
+      "official_name": "同济大学",
+      "official_url": "https://www.tongji.edu.cn/",
+      "source_urls": [
+        "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm"
+      ]
+    },
+    "org_units": [
+      {
+        "id": "tongji-physics",
+        "name": "物理科学与工程学院",
+        "type": "school",
+        "school_id": "tongji",
+        "parent_id": "tongji",
+        "campus_ids": [],
+        "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "source_id": "tongji-rotation003-wave7-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "物理科学与工程学院 / 教职员工 / 教授（研究员） / 首页",
+    "roster_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+    "roster_source_id": "tongji-rotation003-wave7-roster",
+    "selection_method": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+    "roster_count_observed": 9,
+    "roster_total_reported": null,
+    "roster_count_basis": "Only page 1 body L55-L63: 9 entries; L64 shows 7 pages, not a personnel denominator; no subsequent pages enumerated.",
+    "entries": [
+      {
+        "id": "roster-tongji-physics-baozhihao",
+        "school_id": "tongji",
+        "organization_id": "tongji-physics",
+        "department_id": "tongji-physics",
+        "campus_ids": [],
+        "name": "包志豪",
+        "official_profile_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
+        "native_link_target": "https://physics.tongji.edu.cn/info/1126/3141.htm",
+        "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "order": 1,
+        "roster_category": "教授（研究员）",
+        "listed_role": "教授",
+        "listed_role_basis": "individual_profile_explicit_title",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-baozhihao-profile"
+        ]
+      },
+      {
+        "id": "roster-tongji-physics-caitianji",
+        "school_id": "tongji",
+        "organization_id": "tongji-physics",
+        "department_id": "tongji-physics",
+        "campus_ids": [],
+        "name": "蔡恬吉",
+        "official_profile_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
+        "native_link_target": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
+        "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "order": 2,
+        "roster_category": "教授（研究员）",
+        "listed_role": "特聘研究员",
+        "listed_role_basis": "individual_profile_explicit_title",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-caitianji-profile"
+        ]
+      },
+      {
+        "id": "roster-tongji-physics-chenjie-physics",
+        "school_id": "tongji",
+        "organization_id": "tongji-physics",
+        "department_id": "tongji-physics",
+        "campus_ids": [],
+        "name": "陈杰",
+        "official_profile_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
+        "native_link_target": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
+        "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "order": 3,
+        "roster_category": "教授（研究员）",
+        "listed_role": "长聘教授",
+        "listed_role_basis": "individual_profile_explicit_title",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-chenjie-physics-profile"
+        ]
+      }
+    ],
+    "selected_candidate_names": [
+      "包志豪",
+      "蔡恬吉",
+      "陈杰"
+    ],
+    "held_candidates": [],
+    "pending_people": [],
+    "coverage_complete": false,
+    "limitations": [
+      "仅新学院教授（研究员）类别首页原序首3，不代表全院、全校完整覆盖或实时人事名册。",
+      "教授（研究员）为名录类别，具体职称使用个人正文，不把特聘研究员改称教授。",
+      "授位true只依据直接授予或获得句；毕业、层次和学习结束日期不确认授位；访问、博士后单独编码false。",
+      "导师关系、阶段与导师当前任职分开；未核导师本人官方页者不启用在职导航。",
+      "书目只记录本人官方页列示，不是论文全文核验；空栏目不等于没有成果。",
+      "公开职业事实最小化，只保留可复核短原文及行号，不存出生、联系方式、地址、家庭、照片或完整网页缓存。",
+      "院校985和地理分类本隔离批次全部unknown，整合时只能依据已有经审规范化映射。"
+    ]
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T03:18:30.403538+00:00",
+    "counts": {
+      "education": 14,
+      "appointments": 12,
+      "mentors": 3,
+      "committee_members": 0,
+      "publications": 4,
+      "teaching": 2,
+      "people": 3,
+      "held": 0,
+      "held_scopes": 0,
+      "pending_people": 0,
+      "unique_sources": 5,
+      "degree_awarded_true": 3,
+      "degree_awarded_false": 5,
+      "degree_awarded_null": 6
+    },
+    "integration_limits": [
+      "This is exact-hash source review, not consumer-schema, export, site or remote-release approval.",
+      "Do not change any approved fact, unknown, conflict, source meaning or person selection without renewed review.",
+      "Classifications remain unknown in this source package; only separately reviewed canonical normalization may set 985/region/continent.",
+      "No new currently-employed mentor navigation. Individual source navigation and direct current-role listing do not establish independently verified personnel status.",
+      "Keep unknowns null/empty where unverified; never treat absence as negative evidence.",
+      "Do not publish raw pages, whole PDFs, full biographies, contact details, birthday or temporary reviewer images.",
+      "Canonical consumers must preserve the single combined undergraduate/master relation without manufacturing a stage binding or duplicate edges; validate the education_event_ids representation before publication."
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "仅新学院教授（研究员）类别首页原序首3，不代表全院、全校完整覆盖或实时人事名册。",
+    "教授（研究员）为名录类别，具体职称使用个人正文，不把特聘研究员改称教授。",
+    "授位true只依据直接授予或获得句；毕业、层次和学习结束日期不确认授位；访问、博士后单独编码false。",
+    "导师关系、阶段与导师当前任职分开；未核导师本人官方页者不启用在职导航。",
+    "书目只记录本人官方页列示，不是论文全文核验；空栏目不等于没有成果。",
+    "公开职业事实最小化，只保留可复核短原文及行号，不存出生、联系方式、地址、家庭、照片或完整网页缓存。",
+    "院校985和地理分类本隔离批次全部unknown，整合时只能依据已有经审规范化映射。",
+    "This is exact-hash source review, not consumer-schema, export, site or remote-release approval.",
+    "Do not change any approved fact, unknown, conflict, source meaning or person selection without renewed review.",
+    "Classifications remain unknown in this source package; only separately reviewed canonical normalization may set 985/region/continent.",
+    "No new currently-employed mentor navigation. Individual source navigation and direct current-role listing do not establish independently verified personnel status.",
+    "Keep unknowns null/empty where unverified; never treat absence as negative evidence.",
+    "Do not publish raw pages, whole PDFs, full biographies, contact details, birthday or temporary reviewer images.",
+    "Canonical consumers must preserve the single combined undergraduate/master relation without manufacturing a stage binding or duplicate edges; validate the education_event_ids representation before publication."
+  ],
+  "next_action": "保持原序部分职业样本、未知项和来源冲突；追加范围另行审核，不声称完整学院或实时人事核验。",
+  "display_scope": "职业身份与名录原生个人主页分别记录。NUDT年度招生PDF不作为个人在职主页；独立教学、项目、荣誉、资格字段不混入学历、任职、师承或论文计数。",
+  "date_scope": "本批来源实际读取日期为2026-10-24；全库兼容updated_at沿用2026-10-23以保持旧院系工作簿逐字节不变，不能将其视为本批来源读取日。",
+  "release_status": "source_reviewed_snapshot"
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "39校公开名录样本，1766条整合记录、1804条原始观察。本批仅新增7经审原生名录观察；5个hold不计入名录或人物；不是全院或当前人事总数。",
+  "scope": "39校公开名录样本，1772条整合记录、1810条原始观察。新增6条经审原序观察；NUDT年度招生PDF无个人链接，职业身份与个人主页核验区分。NEU/CQU整范围hold不进入人物或名录计数。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -1423,6 +1423,20 @@
       "school_id": "uestc",
       "organization_id": "uestc-public-administration",
       "visible_roster_entries": 1,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "nudt",
+      "organization_id": "nudt-computer",
+      "visible_roster_entries": 3,
+      "count_scope": "selected_subset_only",
+      "coverage_complete": false
+    },
+    {
+      "school_id": "tongji",
+      "organization_id": "tongji-physics",
+      "visible_roster_entries": 3,
       "count_scope": "selected_subset_only",
       "coverage_complete": false
     }
@@ -5557,6 +5571,48 @@
       "batch_id": "uestc-selected-roster-rotation-003",
       "source_category_observed_count": 16,
       "source_category_count_basis": "Source body pagination and native visible entries; source-time category, not real-time personnel total.",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "nudt",
+      "organization_id": "nudt-computer",
+      "url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+      "category": "计算机科学与技术（081200）指导教师",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "2027年博士研究生招生简章 / 计算机学院目录 / 计算机科学与技术（081200） / 指导教师",
+      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "only_reviewed_original_selected_scope",
+      "accessed_on": "2026-10-24",
+      "batch_id": "nudt-selected-roster-rotation003-wave7",
+      "source_category_observed_count": 4,
+      "source_category_count_basis": "仅保存首3及紧随其后的第4人边界；未穷尽该学科或全院人数，不作人事分母。",
+      "source_category_evidence_level": "official_roster_body_read"
+    },
+    {
+      "school_id": "tongji",
+      "organization_id": "tongji-physics",
+      "url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+      "category": "教授（研究员）",
+      "visible_name_count": 3,
+      "selected_observation_count": 3,
+      "count_scope": "selected_subset_only",
+      "full_source_visible_name_count": null,
+      "all_visible_entries_captured": false,
+      "coverage_complete": false,
+      "selection": "物理科学与工程学院 / 教职员工 / 教授（研究员） / 首页",
+      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+      "source_evidence_status": "official_roster_body_read",
+      "pagination": "only_reviewed_original_selected_scope",
+      "accessed_on": "2026-10-24",
+      "batch_id": "tongji-selected-roster-rotation003-wave7",
+      "source_category_observed_count": 9,
+      "source_category_count_basis": "Only page 1 body L55-L63: 9 entries; L64 shows 7 pages, not a personnel denominator; no subsequent pages enumerated.",
       "source_category_evidence_level": "official_roster_body_read"
     }
   ],
@@ -60979,6 +61035,408 @@
       "source_observation_ids": [
         "uestc-selected-roster-rotation-003:roster-uestc-fanxin:1"
       ]
+    },
+    {
+      "id": "roster-nudt-lukai-2027-computer",
+      "school_id": "nudt",
+      "organization_id": "nudt-computer",
+      "department_id": "nudt-computer",
+      "campus_ids": [],
+      "name": "卢凯",
+      "official_profile_url": null,
+      "native_link_target": null,
+      "roster_source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+      "order": 1,
+      "roster_category": "计算机科学与技术（081200）指导教师",
+      "listed_role": "2027年博士研究生招生指导教师",
+      "listed_role_basis": "annual_admissions_roster",
+      "source_ids": [
+        "nudt-wave7-roster"
+      ],
+      "campus_id": null,
+      "category": "计算机科学与技术（081200）指导教师",
+      "accessed_on": "2026-10-24",
+      "batch_id": "nudt-selected-roster-rotation003-wave7",
+      "source_batch_id": "faculty-batch-nudt-rotation-002-wave7",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。",
+      "source_identity_evidence": {
+        "status": "same_name_same_institution_academic_role_context",
+        "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+        "native_profile_link": false,
+        "source_ids": [
+          "nudt-wave7-roster",
+          "nudt-lukai-2022-news",
+          "nudt-lukai-2018-isc"
+        ],
+        "note": "招生PDF无个人链接，人物身份以相同姓名、学校、学院及公开学术职务相互核验；不合并无关同名人物。"
+      },
+      "source_person_id": "nudt-lukai",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": false,
+      "profile_identity_verified": false,
+      "verification_status": "reviewed_professional_identity_without_personal_profile_link",
+      "notes": [
+        "本批原序样本，不代表全院全校或实时人事名册。",
+        "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。"
+      ],
+      "verified_person_id": null,
+      "official_profile_navigation_eligible": false,
+      "professional_identity_evidence": {
+        "status": "independently_reviewed_professional_identity_not_personal_homepage",
+        "source_identity_evidence": {
+          "status": "same_name_same_institution_academic_role_context",
+          "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+          "native_profile_link": false,
+          "source_ids": [
+            "nudt-wave7-roster",
+            "nudt-lukai-2022-news",
+            "nudt-lukai-2018-isc"
+          ],
+          "note": "招生PDF无个人链接，人物身份以相同姓名、学校、学院及公开学术职务相互核验；不合并无关同名人物。"
+        },
+        "source_ids": [
+          "nudt-wave7-roster",
+          "nudt-lukai-2022-news",
+          "nudt-lukai-2018-isc"
+        ],
+        "scope_note": "职业身份接受不等于名录含个人链接、个人主页已核或实时在岗。"
+      },
+      "profile_linkage_note": "本条没有名录原生个人主页，未使用current_official_profile标签；人物职业事实仍保留在本库档案。",
+      "source_observation_ids": [
+        "nudt-selected-roster-rotation003-wave7:roster-nudt-lukai-2027-computer:1"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "已读所列官方名录范围；职业身份、原生个人页与实时人事资格分别记录。"
+    },
+    {
+      "id": "roster-nudt-sujinshu-2027-computer",
+      "school_id": "nudt",
+      "organization_id": "nudt-computer",
+      "department_id": "nudt-computer",
+      "campus_ids": [],
+      "name": "苏金树",
+      "official_profile_url": null,
+      "native_link_target": null,
+      "roster_source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+      "order": 2,
+      "roster_category": "计算机科学与技术（081200）指导教师",
+      "listed_role": "2027年博士研究生招生指导教师",
+      "listed_role_basis": "annual_admissions_roster",
+      "source_ids": [
+        "nudt-wave7-roster"
+      ],
+      "campus_id": null,
+      "category": "计算机科学与技术（081200）指导教师",
+      "accessed_on": "2026-10-24",
+      "batch_id": "nudt-selected-roster-rotation003-wave7",
+      "source_batch_id": "faculty-batch-nudt-rotation-002-wave7",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。",
+      "source_identity_evidence": {
+        "status": "same_name_same_institution_academic_role_context",
+        "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+        "native_profile_link": false,
+        "source_ids": [
+          "nudt-wave7-roster",
+          "nudt-sujinshu-2020-news",
+          "nudt-sujinshu-2020-fzu"
+        ],
+        "note": "招生PDF无个人链接，人物身份以相同姓名、学校、学院及公开学术职务相互核验；不合并无关同名人物。"
+      },
+      "source_person_id": "nudt-sujinshu",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": false,
+      "profile_identity_verified": false,
+      "verification_status": "reviewed_professional_identity_without_personal_profile_link",
+      "notes": [
+        "本批原序样本，不代表全院全校或实时人事名册。",
+        "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。"
+      ],
+      "verified_person_id": null,
+      "official_profile_navigation_eligible": false,
+      "professional_identity_evidence": {
+        "status": "independently_reviewed_professional_identity_not_personal_homepage",
+        "source_identity_evidence": {
+          "status": "same_name_same_institution_academic_role_context",
+          "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+          "native_profile_link": false,
+          "source_ids": [
+            "nudt-wave7-roster",
+            "nudt-sujinshu-2020-news",
+            "nudt-sujinshu-2020-fzu"
+          ],
+          "note": "招生PDF无个人链接，人物身份以相同姓名、学校、学院及公开学术职务相互核验；不合并无关同名人物。"
+        },
+        "source_ids": [
+          "nudt-wave7-roster",
+          "nudt-sujinshu-2020-news",
+          "nudt-sujinshu-2020-fzu"
+        ],
+        "scope_note": "职业身份接受不等于名录含个人链接、个人主页已核或实时在岗。"
+      },
+      "profile_linkage_note": "本条没有名录原生个人主页，未使用current_official_profile标签；人物职业事实仍保留在本库档案。",
+      "source_observation_ids": [
+        "nudt-selected-roster-rotation003-wave7:roster-nudt-sujinshu-2027-computer:1"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "已读所列官方名录范围；职业身份、原生个人页与实时人事资格分别记录。"
+    },
+    {
+      "id": "roster-nudt-wanghuaimin-2027-computer",
+      "school_id": "nudt",
+      "organization_id": "nudt-computer",
+      "department_id": "nudt-computer",
+      "campus_ids": [],
+      "name": "王怀民",
+      "official_profile_url": null,
+      "native_link_target": null,
+      "roster_source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+      "order": 3,
+      "roster_category": "计算机科学与技术（081200）指导教师",
+      "listed_role": "2027年博士研究生招生指导教师",
+      "listed_role_basis": "annual_admissions_roster",
+      "source_ids": [
+        "nudt-wave7-roster"
+      ],
+      "campus_id": null,
+      "category": "计算机科学与技术（081200）指导教师",
+      "accessed_on": "2026-10-24",
+      "batch_id": "nudt-selected-roster-rotation003-wave7",
+      "source_batch_id": "faculty-batch-nudt-rotation-002-wave7",
+      "selection_status": "selected_subset",
+      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。",
+      "source_identity_evidence": {
+        "status": "same_name_same_institution_academic_role_context",
+        "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+        "native_profile_link": false,
+        "source_ids": [
+          "nudt-wave7-roster",
+          "nudt-wanghuaimin-2026-news",
+          "nudt-wanghuaimin-cas"
+        ],
+        "note": "招生PDF无个人链接，人物身份以相同姓名、学校、学院及公开学术职务相互核验；不合并无关同名人物。"
+      },
+      "source_person_id": "nudt-wanghuaimin",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": false,
+      "profile_identity_verified": false,
+      "verification_status": "reviewed_professional_identity_without_personal_profile_link",
+      "notes": [
+        "本批原序样本，不代表全院全校或实时人事名册。",
+        "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。"
+      ],
+      "verified_person_id": null,
+      "official_profile_navigation_eligible": false,
+      "professional_identity_evidence": {
+        "status": "independently_reviewed_professional_identity_not_personal_homepage",
+        "source_identity_evidence": {
+          "status": "same_name_same_institution_academic_role_context",
+          "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+          "native_profile_link": false,
+          "source_ids": [
+            "nudt-wave7-roster",
+            "nudt-wanghuaimin-2026-news",
+            "nudt-wanghuaimin-cas"
+          ],
+          "note": "招生PDF无个人链接，人物身份以相同姓名、学校、学院及公开学术职务相互核验；不合并无关同名人物。"
+        },
+        "source_ids": [
+          "nudt-wave7-roster",
+          "nudt-wanghuaimin-2026-news",
+          "nudt-wanghuaimin-cas"
+        ],
+        "scope_note": "职业身份接受不等于名录含个人链接、个人主页已核或实时在岗。"
+      },
+      "profile_linkage_note": "本条没有名录原生个人主页，未使用current_official_profile标签；人物职业事实仍保留在本库档案。",
+      "source_observation_ids": [
+        "nudt-selected-roster-rotation003-wave7:roster-nudt-wanghuaimin-2027-computer:1"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "已读所列官方名录范围；职业身份、原生个人页与实时人事资格分别记录。"
+    },
+    {
+      "id": "roster-tongji-physics-baozhihao",
+      "school_id": "tongji",
+      "organization_id": "tongji-physics",
+      "department_id": "tongji-physics",
+      "campus_ids": [],
+      "name": "包志豪",
+      "official_profile_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
+      "native_link_target": "https://physics.tongji.edu.cn/info/1126/3141.htm",
+      "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+      "order": 1,
+      "roster_category": "教授（研究员）",
+      "listed_role": "教授",
+      "listed_role_basis": "individual_profile_explicit_title",
+      "source_ids": [
+        "tongji-rotation003-wave7-roster",
+        "tongji-baozhihao-profile"
+      ],
+      "campus_id": null,
+      "category": "教授（研究员）",
+      "accessed_on": "2026-10-24",
+      "batch_id": "tongji-selected-roster-rotation003-wave7",
+      "source_batch_id": "faculty-batch-tongji-rotation003-wave7",
+      "selection_status": "selected_subset",
+      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "profile_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
+        "native_link_target": "https://physics.tongji.edu.cn/info/1126/3141.htm",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-baozhihao-profile"
+        ]
+      },
+      "source_person_id": "tongji-baozhihao",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": true,
+      "profile_identity_verified": true,
+      "verification_status": "reviewed_official_roster_native_profile_link",
+      "notes": [
+        "本批原序样本，不代表全院全校或实时人事名册。",
+        "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution."
+      ],
+      "verified_person_id": "tongji-baozhihao",
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-baozhihao-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "official_url": "https://physics.tongji.edu.cn/info/1126/3141.htm"
+      },
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation003-wave7:roster-tongji-physics-baozhihao:1"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "已读所列官方名录范围；职业身份、原生个人页与实时人事资格分别记录。"
+    },
+    {
+      "id": "roster-tongji-physics-caitianji",
+      "school_id": "tongji",
+      "organization_id": "tongji-physics",
+      "department_id": "tongji-physics",
+      "campus_ids": [],
+      "name": "蔡恬吉",
+      "official_profile_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
+      "native_link_target": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
+      "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+      "order": 2,
+      "roster_category": "教授（研究员）",
+      "listed_role": "特聘研究员",
+      "listed_role_basis": "individual_profile_explicit_title",
+      "source_ids": [
+        "tongji-rotation003-wave7-roster",
+        "tongji-caitianji-profile"
+      ],
+      "campus_id": null,
+      "category": "教授（研究员）",
+      "accessed_on": "2026-10-24",
+      "batch_id": "tongji-selected-roster-rotation003-wave7",
+      "source_batch_id": "faculty-batch-tongji-rotation003-wave7",
+      "selection_status": "selected_subset",
+      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "profile_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
+        "native_link_target": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-caitianji-profile"
+        ]
+      },
+      "source_person_id": "tongji-caitianji",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": true,
+      "profile_identity_verified": true,
+      "verification_status": "reviewed_official_roster_native_profile_link",
+      "notes": [
+        "本批原序样本，不代表全院全校或实时人事名册。",
+        "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution."
+      ],
+      "verified_person_id": "tongji-caitianji",
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-caitianji-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "official_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm"
+      },
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation003-wave7:roster-tongji-physics-caitianji:1"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "已读所列官方名录范围；职业身份、原生个人页与实时人事资格分别记录。"
+    },
+    {
+      "id": "roster-tongji-physics-chenjie-physics",
+      "school_id": "tongji",
+      "organization_id": "tongji-physics",
+      "department_id": "tongji-physics",
+      "campus_ids": [],
+      "name": "陈杰",
+      "official_profile_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
+      "native_link_target": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
+      "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+      "order": 3,
+      "roster_category": "教授（研究员）",
+      "listed_role": "长聘教授",
+      "listed_role_basis": "individual_profile_explicit_title",
+      "source_ids": [
+        "tongji-rotation003-wave7-roster",
+        "tongji-chenjie-physics-profile"
+      ],
+      "campus_id": null,
+      "category": "教授（研究员）",
+      "accessed_on": "2026-10-24",
+      "batch_id": "tongji-selected-roster-rotation003-wave7",
+      "source_batch_id": "faculty-batch-tongji-rotation003-wave7",
+      "selection_status": "selected_subset",
+      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+      "source_identity_evidence": {
+        "status": "official_roster_native_link",
+        "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "profile_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
+        "native_link_target": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-chenjie-physics-profile"
+        ]
+      },
+      "source_person_id": "tongji-chenjie-physics",
+      "professional_identity_verified": true,
+      "official_profile_identity_verified": true,
+      "profile_identity_verified": true,
+      "verification_status": "reviewed_official_roster_native_profile_link",
+      "notes": [
+        "本批原序样本，不代表全院全校或实时人事名册。",
+        "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution."
+      ],
+      "verified_person_id": "tongji-chenjie-physics",
+      "profile_identity_evidence": {
+        "status": "independently_reviewed_official_roster_native_link",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-chenjie-physics-profile"
+        ],
+        "checked_on": "2026-10-24",
+        "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "official_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm"
+      },
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation003-wave7:roster-tongji-physics-chenjie-physics:1"
+      ],
+      "source_evidence_status": "official_roster_body_read",
+      "source_evidence_status_label": "已读所列官方名录范围；职业身份、原生个人页与实时人事资格分别记录。"
     }
   ],
   "conflicts": [
@@ -69485,27 +69943,87 @@
         }
       ],
       "validation": "independently_reviewed_selected_source_observations_only"
+    },
+    {
+      "batch_id": "nudt-selected-roster-rotation003-wave7",
+      "school_id": "nudt",
+      "accessed_on": "2026-10-24",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-nudt-lukai-2027-computer",
+        "roster-nudt-sujinshu-2027-computer",
+        "roster-nudt-wanghuaimin-2027-computer"
+      ],
+      "source_observation_ids": [
+        "nudt-selected-roster-rotation003-wave7:roster-nudt-lukai-2027-computer:1",
+        "nudt-selected-roster-rotation003-wave7:roster-nudt-sujinshu-2027-computer:1",
+        "nudt-selected-roster-rotation003-wave7:roster-nudt-wanghuaimin-2027-computer:1"
+      ],
+      "selection": "2027年博士研究生招生简章 / 计算机学院目录 / 计算机科学与技术（081200） / 指导教师",
+      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [],
+      "validation": "independently_reviewed_selected_source_observations_only",
+      "source_urls": [
+        "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf"
+      ]
+    },
+    {
+      "batch_id": "tongji-selected-roster-rotation003-wave7",
+      "school_id": "tongji",
+      "accessed_on": "2026-10-24",
+      "observation_count": 3,
+      "record_count": 3,
+      "raw_observation_count": 3,
+      "raw_count": 3,
+      "category_count": 1,
+      "coverage_unit_count": 1,
+      "entry_ids": [
+        "roster-tongji-physics-baozhihao",
+        "roster-tongji-physics-caitianji",
+        "roster-tongji-physics-chenjie-physics"
+      ],
+      "source_observation_ids": [
+        "tongji-selected-roster-rotation003-wave7:roster-tongji-physics-baozhihao:1",
+        "tongji-selected-roster-rotation003-wave7:roster-tongji-physics-caitianji:1",
+        "tongji-selected-roster-rotation003-wave7:roster-tongji-physics-chenjie-physics:1"
+      ],
+      "selection": "物理科学与工程学院 / 教职员工 / 教授（研究员） / 首页",
+      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+      "coverage_complete": false,
+      "count_scope": "selected_subset_only",
+      "source_files": [],
+      "validation": "independently_reviewed_selected_source_observations_only",
+      "source_urls": [
+        "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm"
+      ]
     }
   ],
   "totals": {
-    "organization_count": 142,
-    "category_count": 206,
-    "entries_with_profile_link": 1553,
-    "entries_without_profile_link": 213,
+    "organization_count": 144,
+    "category_count": 208,
+    "entries_with_profile_link": 1556,
+    "entries_without_profile_link": 216,
     "dedup_candidate_groups": 60,
     "placeholder_profile_link_observations": 18,
     "current_employment_count_verified": false,
     "not_unique_people_count": true,
-    "record_count": 1766,
-    "raw_observation_count": 1804,
-    "roster_records": 1766,
-    "raw_source_observations": 1804,
-    "coverage_unit_count": 233,
+    "record_count": 1772,
+    "raw_observation_count": 1810,
+    "roster_records": 1772,
+    "raw_source_observations": 1810,
+    "coverage_unit_count": 235,
     "count_unit": "integrated_roster_records",
     "source_record_grouping_reduction": 38,
     "category_count_basis": "unique_organization_category_pairs",
-    "unique_organization_category_pairs": 206,
-    "batch_category_count": 225,
+    "unique_organization_category_pairs": 208,
+    "batch_category_count": 227,
     "category_count_source": "coverage_rows_preserved_without_deduplication"
   },
   "role_interpretation": {
@@ -126436,6 +126954,171 @@
         "notes": [
           "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
           "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement."
+        ]
+      }
+    },
+    {
+      "observation_id": "nudt-selected-roster-rotation003-wave7:roster-nudt-lukai-2027-computer:1",
+      "record_id": "roster-nudt-lukai-2027-computer",
+      "batch_id": "nudt-selected-roster-rotation003-wave7",
+      "school_id": "nudt",
+      "organization_id": "nudt-computer",
+      "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-nudt-lukai-2027-computer",
+        "school_id": "nudt",
+        "organization_id": "nudt-computer",
+        "department_id": "nudt-computer",
+        "campus_ids": [],
+        "name": "卢凯",
+        "official_profile_url": null,
+        "native_link_target": null,
+        "roster_source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+        "order": 1,
+        "roster_category": "计算机科学与技术（081200）指导教师",
+        "listed_role": "2027年博士研究生招生指导教师",
+        "listed_role_basis": "annual_admissions_roster",
+        "source_ids": [
+          "nudt-wave7-roster"
+        ]
+      }
+    },
+    {
+      "observation_id": "nudt-selected-roster-rotation003-wave7:roster-nudt-sujinshu-2027-computer:1",
+      "record_id": "roster-nudt-sujinshu-2027-computer",
+      "batch_id": "nudt-selected-roster-rotation003-wave7",
+      "school_id": "nudt",
+      "organization_id": "nudt-computer",
+      "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-nudt-sujinshu-2027-computer",
+        "school_id": "nudt",
+        "organization_id": "nudt-computer",
+        "department_id": "nudt-computer",
+        "campus_ids": [],
+        "name": "苏金树",
+        "official_profile_url": null,
+        "native_link_target": null,
+        "roster_source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+        "order": 2,
+        "roster_category": "计算机科学与技术（081200）指导教师",
+        "listed_role": "2027年博士研究生招生指导教师",
+        "listed_role_basis": "annual_admissions_roster",
+        "source_ids": [
+          "nudt-wave7-roster"
+        ]
+      }
+    },
+    {
+      "observation_id": "nudt-selected-roster-rotation003-wave7:roster-nudt-wanghuaimin-2027-computer:1",
+      "record_id": "roster-nudt-wanghuaimin-2027-computer",
+      "batch_id": "nudt-selected-roster-rotation003-wave7",
+      "school_id": "nudt",
+      "organization_id": "nudt-computer",
+      "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-nudt-wanghuaimin-2027-computer",
+        "school_id": "nudt",
+        "organization_id": "nudt-computer",
+        "department_id": "nudt-computer",
+        "campus_ids": [],
+        "name": "王怀民",
+        "official_profile_url": null,
+        "native_link_target": null,
+        "roster_source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
+        "order": 3,
+        "roster_category": "计算机科学与技术（081200）指导教师",
+        "listed_role": "2027年博士研究生招生指导教师",
+        "listed_role_basis": "annual_admissions_roster",
+        "source_ids": [
+          "nudt-wave7-roster"
+        ]
+      }
+    },
+    {
+      "observation_id": "tongji-selected-roster-rotation003-wave7:roster-tongji-physics-baozhihao:1",
+      "record_id": "roster-tongji-physics-baozhihao",
+      "batch_id": "tongji-selected-roster-rotation003-wave7",
+      "school_id": "tongji",
+      "organization_id": "tongji-physics",
+      "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-tongji-physics-baozhihao",
+        "school_id": "tongji",
+        "organization_id": "tongji-physics",
+        "department_id": "tongji-physics",
+        "campus_ids": [],
+        "name": "包志豪",
+        "official_profile_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
+        "native_link_target": "https://physics.tongji.edu.cn/info/1126/3141.htm",
+        "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "order": 1,
+        "roster_category": "教授（研究员）",
+        "listed_role": "教授",
+        "listed_role_basis": "individual_profile_explicit_title",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-baozhihao-profile"
+        ]
+      }
+    },
+    {
+      "observation_id": "tongji-selected-roster-rotation003-wave7:roster-tongji-physics-caitianji:1",
+      "record_id": "roster-tongji-physics-caitianji",
+      "batch_id": "tongji-selected-roster-rotation003-wave7",
+      "school_id": "tongji",
+      "organization_id": "tongji-physics",
+      "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-tongji-physics-caitianji",
+        "school_id": "tongji",
+        "organization_id": "tongji-physics",
+        "department_id": "tongji-physics",
+        "campus_ids": [],
+        "name": "蔡恬吉",
+        "official_profile_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
+        "native_link_target": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
+        "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "order": 2,
+        "roster_category": "教授（研究员）",
+        "listed_role": "特聘研究员",
+        "listed_role_basis": "individual_profile_explicit_title",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-caitianji-profile"
+        ]
+      }
+    },
+    {
+      "observation_id": "tongji-selected-roster-rotation003-wave7:roster-tongji-physics-chenjie-physics:1",
+      "record_id": "roster-tongji-physics-chenjie-physics",
+      "batch_id": "tongji-selected-roster-rotation003-wave7",
+      "school_id": "tongji",
+      "organization_id": "tongji-physics",
+      "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+      "accessed_on": "2026-10-24",
+      "source_payload": {
+        "id": "roster-tongji-physics-chenjie-physics",
+        "school_id": "tongji",
+        "organization_id": "tongji-physics",
+        "department_id": "tongji-physics",
+        "campus_ids": [],
+        "name": "陈杰",
+        "official_profile_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
+        "native_link_target": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
+        "roster_source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
+        "order": 3,
+        "roster_category": "教授（研究员）",
+        "listed_role": "长聘教授",
+        "listed_role_basis": "individual_profile_explicit_title",
+        "source_ids": [
+          "tongji-rotation003-wave7-roster",
+          "tongji-chenjie-physics-profile"
         ]
       }
     }

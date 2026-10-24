@@ -1,0 +1,191 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "8d391b596497ac6eb2c5c654f31eccecba202485",
+  "school_id": "cqu",
+  "school_name": "重庆大学",
+  "batch_id": "faculty-batch-cqu-rotation003-wave7",
+  "status": "blocked",
+  "organization_id": null,
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "物理学院 / Faculty",
+  "selection_method": "First three nonduplicates in direct official body order only; lack of direct roster body makes entire scope hold.",
+  "selected_candidate_names": [],
+  "selected_roster_original_order": [],
+  "held_candidates": [],
+  "whole_scope_hold": true,
+  "counts": {
+    "education": 0,
+    "appointments": 0,
+    "mentors": 0,
+    "committee_members": 0,
+    "publications": 0,
+    "teaching": 0,
+    "people": 0,
+    "pending_people": 0,
+    "held": 0,
+    "held_scopes": 1,
+    "unique_sources": 1,
+    "degree_awarded_true": 0,
+    "degree_awarded_false": 0,
+    "degree_awarded_null": 0
+  },
+  "source_urls": [
+    "https://phys.cqu.edu.cn/yww/Faculty.htm"
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-cqu-rotation003-wave7",
+    "base_commit": "8d391b596497ac6eb2c5c654f31eccecba202485",
+    "institution": {
+      "id": "cqu",
+      "official_name": "重庆大学",
+      "official_url": "https://www.cqu.edu.cn/"
+    },
+    "org_units": [],
+    "campuses": [],
+    "scope": "物理学院 / Faculty",
+    "retrieved_at": "2026-10-24",
+    "coverage_complete": false,
+    "fields_complete": false,
+    "review_status": "pending_independent_review",
+    "research_status": "scope_hold_no_direct_roster_body",
+    "sources": [
+      {
+        "id": "cqu-rotation003-wave7-roster-attempt",
+        "url": "https://phys.cqu.edu.cn/yww/Faculty.htm",
+        "source_type": "university_official",
+        "evidence_status": "access_restricted_no_body",
+        "retrieved_at": "2026-10-24",
+        "observed_at": "2026-10-24T03:06:48Z",
+        "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
+        "published_at": null,
+        "source_locators": [
+          "L0: HTTP 412 Precondition Failed"
+        ],
+        "evidence_format": "minimized_verbatim_web_tool_excerpt",
+        "public_raw_cache": false
+      }
+    ],
+    "pending_people": [],
+    "held_scopes": [
+      {
+        "scope": "物理学院 / Faculty",
+        "roster_url": "https://phys.cqu.edu.cn/yww/Faculty.htm",
+        "status": "hold",
+        "reason": "Official roster body returned HTTP 412 Precondition Failed; original sequence unavailable.",
+        "http_status": 412,
+        "source_id": "cqu-rotation003-wave7-roster-attempt",
+        "source_url": "https://phys.cqu.edu.cn/yww/Faculty.htm",
+        "source_locator": "L0",
+        "observed_at": "2026-10-24T03:06:48Z",
+        "retry_performed": false,
+        "alternate_route_performed": false,
+        "scope_substitution_performed": false,
+        "candidates_selected": [],
+        "decision": "Stop this route and hold entire scope; no search-index candidates used as roster evidence."
+      }
+    ],
+    "limitations": [
+      "名录正文HTTP 412，整范围hold；无法确认原序，不选人、不采资料、不建组织、不替换院系。",
+      "不重试、换主机、换身份、代理或用检索摘要绕过受限路线。"
+    ],
+    "counts": {
+      "people": 0,
+      "held": 0,
+      "pending_people": 0,
+      "held_scopes": 1,
+      "education_events": 0,
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 0,
+      "mentors": 0,
+      "publications": 0
+    }
+  },
+  "source_scope": {
+    "batch_id": "faculty-batch-cqu-rotation003-wave7",
+    "base_commit": "8d391b596497ac6eb2c5c654f31eccecba202485",
+    "review_status": "pending_independent_review",
+    "institution": {
+      "id": "cqu",
+      "official_name": "重庆大学",
+      "official_url": "https://www.cqu.edu.cn/"
+    },
+    "org_units": [],
+    "campuses": [],
+    "scope": "物理学院 / Faculty",
+    "roster_url": "https://phys.cqu.edu.cn/yww/Faculty.htm",
+    "roster_source_id": "cqu-rotation003-wave7-roster-attempt",
+    "selection_method": "First three nonduplicates in direct official body order only; lack of direct roster body makes entire scope hold.",
+    "entries": [],
+    "selected_candidate_names": [],
+    "held_candidates": [],
+    "pending_people": [],
+    "held_scopes": [
+      {
+        "scope": "物理学院 / Faculty",
+        "roster_url": "https://phys.cqu.edu.cn/yww/Faculty.htm",
+        "status": "hold",
+        "reason": "Official roster body returned HTTP 412 Precondition Failed; original sequence unavailable.",
+        "http_status": 412,
+        "source_id": "cqu-rotation003-wave7-roster-attempt",
+        "source_url": "https://phys.cqu.edu.cn/yww/Faculty.htm",
+        "source_locator": "L0",
+        "observed_at": "2026-10-24T03:06:48Z",
+        "retry_performed": false,
+        "alternate_route_performed": false,
+        "scope_substitution_performed": false,
+        "candidates_selected": [],
+        "decision": "Stop this route and hold entire scope; no search-index candidates used as roster evidence."
+      }
+    ],
+    "roster_count_observed": null,
+    "roster_total_reported": null,
+    "coverage_complete": false
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T03:18:30.404406+00:00",
+    "counts": {
+      "education": 0,
+      "appointments": 0,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "teaching": 0,
+      "people": 0,
+      "held": 0,
+      "held_scopes": 1,
+      "pending_people": 0,
+      "unique_sources": 1,
+      "degree_awarded_true": 0,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 0
+    },
+    "integration_limits": [
+      "This is exact-hash source review, not consumer-schema, export, site or remote-release approval.",
+      "Do not change any approved fact, unknown, conflict, source meaning or person selection without renewed review.",
+      "Classifications remain unknown in this source package; only separately reviewed canonical normalization may set 985/region/continent.",
+      "No new currently-employed mentor navigation. Individual source navigation and direct current-role listing do not establish independently verified personnel status.",
+      "Keep unknowns null/empty where unverified; never treat absence as negative evidence.",
+      "Do not publish raw pages, whole PDFs, full biographies, contact details, birthday or temporary reviewer images."
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "名录正文HTTP 412，整范围hold；无法确认原序，不选人、不采资料、不建组织、不替换院系。",
+    "不重试、换主机、换身份、代理或用检索摘要绕过受限路线。",
+    "This is exact-hash source review, not consumer-schema, export, site or remote-release approval.",
+    "Do not change any approved fact, unknown, conflict, source meaning or person selection without renewed review.",
+    "Classifications remain unknown in this source package; only separately reviewed canonical normalization may set 985/region/continent.",
+    "No new currently-employed mentor navigation. Individual source navigation and direct current-role listing do not establish independently verified personnel status.",
+    "Keep unknowns null/empty where unverified; never treat absence as negative evidence.",
+    "Do not publish raw pages, whole PDFs, full biographies, contact details, birthday or temporary reviewer images."
+  ],
+  "next_action": "保留整范围hold，不重试受限路线、不以索引姓名或其他院系替补。",
+  "display_scope": "职业身份与名录原生个人主页分别记录。NUDT年度招生PDF不作为个人在职主页；独立教学、项目、荣誉、资格字段不混入学历、任职、师承或论文计数。",
+  "date_scope": "本批来源实际读取日期为2026-10-24；全库兼容updated_at沿用2026-10-23以保持旧院系工作簿逐字节不变，不能将其视为本批来源读取日。",
+  "release_status": "source_reviewed_snapshot"
+}
