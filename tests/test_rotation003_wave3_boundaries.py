@@ -1,8 +1,9 @@
 """Generic source-preserving event, mentor, and candidate isolation boundaries."""
 import copy,hashlib,json,pathlib,unittest
+from release27_history import release27_view
 from release26_history import CONTRACT,release26_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-read=lambda rel:json.loads((ROOT/rel).read_text())
+read=lambda rel:release27_view(json.loads((ROOT/rel).read_text()),rel)
 class Rotation003Wave3Boundaries(unittest.TestCase):
  @classmethod
  def setUpClass(cls):cls.a=read('data/atlas.json');cls.r=read('data/rosters.json');cls.new=cls.a['people'][CONTRACT['data/atlas.json']['lists']['people']['length']:]

@@ -1,0 +1,286 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "515d16f5e48cff7dae151464e0ea2ea704b8ace6",
+  "school_id": "buaa",
+  "school_name": "北京航空航天大学",
+  "batch_id": "faculty-batch-buaa-rotation-003",
+  "status": "partial",
+  "held_candidates": [],
+  "selected_candidate_names": [
+    "曹义华",
+    "程小全",
+    "董雷霆"
+  ],
+  "access_limitations": [
+    {
+      "url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/qtjs.htm",
+      "outcome": "404"
+    },
+    {
+      "url": "https://ase.buaa.edu.cn/szdw/qtjs.htm",
+      "outcome": "Cache miss"
+    },
+    {
+      "url": "https://www.ase.buaa.edu.cn/san_list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1079&zmstr=%27X%27",
+      "outcome": "Timeout; no facts used"
+    }
+  ],
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "航空科学与工程学院官方飞机系 / 教授类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+  "source_urls": [
+    "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm"
+  ],
+  "selected_roster_observations": 3,
+  "source_category_observed_count": 22,
+  "source_category_count_basis": "Observed roster/category only; not independently current headcount or employment. NKU only page 1 read; 163 is page-reported total.",
+  "selected_roster_original_order": [
+    {
+      "id": "roster-buaa-caoyihua",
+      "name": "曹义华",
+      "official_profile_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+      "native_link_target": null,
+      "roster_source_url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+      "order": 1,
+      "listed_role": "教授",
+      "roster_category": "飞机系 / 教授"
+    },
+    {
+      "id": "roster-buaa-chengxiaoquan",
+      "name": "程小全",
+      "official_profile_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+      "native_link_target": null,
+      "roster_source_url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+      "order": 2,
+      "listed_role": "教授",
+      "roster_category": "飞机系 / 教授"
+    },
+    {
+      "id": "roster-buaa-dongleiting",
+      "name": "董雷霆",
+      "official_profile_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+      "native_link_target": null,
+      "roster_source_url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+      "order": 3,
+      "listed_role": "教授",
+      "roster_category": "飞机系 / 教授"
+    }
+  ],
+  "source_total_reported": 22,
+  "counts": {
+    "professional_profiles": 3,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 11,
+      "appointments": 3,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 6,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 1,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 9
+    },
+    "effective_professional_collections": {
+      "education": 11,
+      "appointments": 3,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 6,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 1,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 9
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 2,
+      "degree_awarded_false": 3,
+      "degree_awarded_null": 6,
+      "confirmed_degree_events": 2
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-buaa-rotation-003.json",
+      "sha256": "9bb7fc7e5c4c597e6404861a81f50fbaa611e685cf5c6e9477205379293750c0",
+      "scope_file": "faculty-batch-buaa-rotation-003-scope.json",
+      "scope_sha256": "edabfe90f6d7818b9f78757e56d40dfe2127401242519e4340f9dd9e3bf0cd51",
+      "qa_file": "faculty-batch-buaa-rotation-003-qa.json",
+      "qa_sha256": "2ebcd92bbe029d96755be2a2dfd11ef72534a2de10df8e508c135c6377e6b001",
+      "independent_review_file": "faculty-batch-buaa-rotation-003-independent-review.json",
+      "independent_review_sha256": "c56df216b80b38cde9708dcda9416e1e9e44a84440e11c73d3fe389fcb374853"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-buaa-rotation-003",
+    "institution": {
+      "id": "buaa",
+      "official_name": "北京航空航天大学",
+      "official_url": "https://www.buaa.edu.cn/",
+      "source_urls": [
+        "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm"
+      ],
+      "scope_note": "新增院系；单一官方类别原序首3，缺正文者保留未核，不后移补人。"
+    },
+    "org_units": [
+      {
+        "id": "buaa-aeronautic-science-engineering",
+        "name": "航空科学与工程学院",
+        "type": "school",
+        "school_id": "buaa",
+        "parent_id": "buaa",
+        "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+        "source_id": "buaa-rotation003-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "航空科学与工程学院官方飞机系 / 教授类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+    "retrieved_at": "2026-10-24",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "buaa-rotation003-roster",
+        "url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-buaa-muc-nku/buaa-roster-minimal.json",
+        "web_reference": "turn2206view0",
+        "published_at": null,
+        "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification."
+      },
+      {
+        "id": "buaa-caoyihua-profile",
+        "url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-buaa-muc-nku/buaa-caoyihua-minimal.json",
+        "web_reference": "turn2210view1",
+        "published_at": null,
+        "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification."
+      },
+      {
+        "id": "buaa-chengxiaoquan-profile",
+        "url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-buaa-muc-nku/buaa-chengxiaoquan-minimal.json",
+        "web_reference": "turn2210view2",
+        "published_at": null,
+        "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification."
+      },
+      {
+        "id": "buaa-dongleiting-profile",
+        "url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-buaa-muc-nku/buaa-dongleiting-minimal.json",
+        "web_reference": "turn2211view0",
+        "published_at": null,
+        "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification."
+      }
+    ],
+    "limitations": [
+      "校区不由办公地址推断；实时人事、聘用类型均未独立核验。",
+      "标签与日期不推定授位；访问、博士后与学位分开。",
+      "仅必要公开职业信息；无联系方式、出生、照片或网页全量缓存。",
+      "仅已读专业事实；未穷尽履历、成果或导师；空值非无此经历。",
+      "概况飞机系教授栏22名，不等全院人数；无个人原生直链，以同校官方同名专业身份闭合。董雷霆同页入职日期冲突未归一。"
+    ],
+    "counts": {
+      "education": 11,
+      "appointments": 3,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 6,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 1,
+      "pending_professional_fact_candidates": 0,
+      "people": 3,
+      "unique_sources": 4,
+      "degree_awarded_true": 2,
+      "degree_awarded_null": 6,
+      "degree_awarded_false": 3
+    }
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T00:42:45.797988+00:00",
+    "data_sha256": "9bb7fc7e5c4c597e6404861a81f50fbaa611e685cf5c6e9477205379293750c0",
+    "counts": {
+      "education": 11,
+      "appointments": 3,
+      "mentors": 0,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 6,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 1,
+      "pending_professional_fact_candidates": 0,
+      "people": 3,
+      "unique_sources": 4,
+      "degree_awarded_true": 2,
+      "degree_awarded_false": 3,
+      "degree_awarded_null": 6
+    },
+    "integration_limits": [
+      "只批准精确哈希下的部分职业资料；不代表整院、整校完整覆盖。",
+      "已明确授位、学位/攻读标签和非学位经历须分层；学校地理标准化不代表国籍，校区均未知。",
+      "当前名录/官方页面列示不等独立人事核验；不补推聘用类型或任职起点。",
+      "导师事件边不等导师当前导航，当前导师导航0。",
+      "未采集书目、第二资格及其他职业事实不等不存在；无论文全文或原始页面全量缓存。",
+      "仅原始研究来源审查；消费者字段和schema验证须由独立整合流程执行。",
+      "董雷霆的两种起点保持冲突候选；BUAA不得标记为原生个人名录链接。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "校区不由办公地址推断；实时人事、聘用类型均未独立核验。",
+    "标签与日期不推定授位；访问、博士后与学位分开。",
+    "仅必要公开职业信息；无联系方式、出生、照片或网页全量缓存。",
+    "仅已读专业事实；未穷尽履历、成果或导师；空值非无此经历。",
+    "概况飞机系教授栏22名，不等全院人数；无个人原生直链，以同校官方同名专业身份闭合。董雷霆同页入职日期冲突未归一。",
+    "只批准精确哈希下的部分职业资料；不代表整院、整校完整覆盖。",
+    "已明确授位、学位/攻读标签和非学位经历须分层；学校地理标准化不代表国籍，校区均未知。",
+    "当前名录/官方页面列示不等独立人事核验；不补推聘用类型或任职起点。",
+    "导师事件边不等导师当前导航，当前导师导航0。",
+    "未采集书目、第二资格及其他职业事实不等不存在；无论文全文或原始页面全量缓存。",
+    "仅原始研究来源审查；消费者字段和schema验证须由独立整合流程执行。",
+    "董雷霆的两种起点保持冲突候选；BUAA不得标记为原生个人名录链接。"
+  ],
+  "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+  "release_status": "local_not_published"
+}

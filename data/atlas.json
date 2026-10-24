@@ -19,7 +19,7 @@
     "链接为官方目录提供的地址；未逐个验证所有院系主页可访问性。",
     "深圳旧电子信息学院 eie.hitsz.edu.cn 主页两次抓取超时，改用官方目录已确认的集成电路学院名录，不涉及访问拒绝。"
   ],
-  "scope_note": "39校选中名录和部分职业资料，本批新增9部分职业，当前573职业、84待补；不代表全院全校或当前在岗覆盖。师承保留博士、硕士、联合培养与博士后阶段，候选书目不进确证论文。",
+  "scope_note": "39校选中名录和部分职业资料，本批新增7部分职业，当前580职业、84待补；不代表全院全校或当前在岗覆盖。师承保留博士、硕士、联合培养与博士后阶段，候选书目不进确证论文。",
   "campuses": [
     {
       "id": "harbin",
@@ -4069,6 +4069,39 @@
       "parent_id": "ustc",
       "source_url": "https://chem.ustc.edu.cn/js/list.htm",
       "source_id": "ustc-chemistry-professors-roster",
+      "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "buaa-aeronautic-science-engineering",
+      "name": "航空科学与工程学院",
+      "type": "school",
+      "school_id": "buaa",
+      "parent_id": "buaa",
+      "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+      "source_id": "buaa-rotation003-roster",
+      "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "muc-education",
+      "name": "教育学院",
+      "type": "school",
+      "school_id": "muc",
+      "parent_id": "muc",
+      "source_url": "https://edu.muc.edu.cn/szdw/js.htm",
+      "source_id": "muc-rotation003-roster",
+      "evidence_status": "official_roster_body_read",
+      "campus_ids": []
+    },
+    {
+      "id": "nku-economics",
+      "name": "经济学院",
+      "type": "school",
+      "school_id": "nku",
+      "parent_id": "nku",
+      "source_url": "https://economics.nankai.edu.cn/qzjs/list.htm",
+      "source_id": "nku-rotation003-roster",
       "evidence_status": "official_roster_body_read",
       "campus_ids": []
     }
@@ -191916,6 +191949,2647 @@
         "ustc-songlei-profile"
       ],
       "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "buaa-caoyihua",
+      "name": "曹义华",
+      "school_id": "buaa",
+      "department_id": "buaa-aeronautic-science-engineering",
+      "organization_id": "buaa-aeronautic-science-engineering",
+      "campus_ids": [],
+      "campus": null,
+      "department": "航空科学与工程学院",
+      "roster_entry_id": "roster-buaa-caoyihua",
+      "official_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+      "listed_role_source_id": "buaa-caoyihua-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "飞机系 / 教授",
+      "roster_category_source_id": "buaa-rotation003-roster",
+      "sources": [
+        {
+          "id": "buaa-rotation003-roster",
+          "url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-roster-minimal.json",
+          "web_reference": "turn2206view0",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "buaa-caoyihua-profile",
+          "url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-caoyihua-minimal.json",
+          "web_reference": "turn2210view1",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "unknowns": [
+        "校区、实时人事状态、完整成果与未列师承未知。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_and_same_school_named_profile",
+        "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+        "profile_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+        "native_link_target": null,
+        "source_ids": [
+          "buaa-rotation003-roster",
+          "buaa-caoyihua-profile"
+        ],
+        "note": "北航概况表无个人直链；以同校官方专业页同名、学院与教授身份闭合，不声称原生链接。"
+      },
+      "appointments": [
+        {
+          "institution": "北京航空航天大学 航空科学与工程学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "source_id": "buaa-caoyihua-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "buaa-caoyihua-profile",
+            "title": "buaa-caoyihua-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "官方正文及当前类别列示，不等独立人事核验。"
+        }
+      ],
+      "education": [
+        {
+          "degree": null,
+          "institution": "南京航空航天大学",
+          "start": null,
+          "end": "1982",
+          "field": "飞行器设计",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "本科毕业",
+          "source_id": "buaa-caoyihua-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "buaa-caoyihua-profile",
+            "start": null,
+            "end": "buaa-caoyihua-profile",
+            "field": "buaa-caoyihua-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "buaa-caoyihua-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "buaa-caoyihua-education-1",
+          "event_kind": "undergraduate_study",
+          "include_in_education_filters": false,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "本科毕业不等学士授位，degree与degree_awarded保留空。；来源标注：本科毕业",
+          "education_event_id": "buaa-caoyihua-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "include_in_degree_filters": false,
+          "source_note": "本科毕业不等学士授位，degree与degree_awarded保留空。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "buaa-caoyihua-profile"
+          ]
+        },
+        {
+          "degree": "博士",
+          "institution": "南京航空航天大学",
+          "start": null,
+          "end": "1990",
+          "field": "飞行器设计",
+          "degree_awarded": true,
+          "degree_awarded_date": "1990",
+          "source_reported_degree_label": "博士学位",
+          "source_id": "buaa-caoyihua-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "buaa-caoyihua-profile",
+            "institution": "buaa-caoyihua-profile",
+            "start": null,
+            "end": "buaa-caoyihua-profile",
+            "field": "buaa-caoyihua-profile",
+            "degree_awarded": "buaa-caoyihua-profile",
+            "degree_awarded_date": "buaa-caoyihua-profile",
+            "source_reported_degree_label": "buaa-caoyihua-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "source_reported",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "buaa-caoyihua-education-2",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：博士学位",
+          "education_event_id": "buaa-caoyihua-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "buaa-caoyihua-profile",
+          "degree_award_source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance",
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "buaa-caoyihua-profile"
+          ]
+        },
+        {
+          "degree": null,
+          "institution": "南京理工大学",
+          "start": null,
+          "end": "1992",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": null,
+          "source_id": "buaa-caoyihua-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "buaa-caoyihua-profile",
+            "start": null,
+            "end": "buaa-caoyihua-profile",
+            "field": null,
+            "degree_awarded": "buaa-caoyihua-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "non_degree_activity",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "not_disclosed"
+          },
+          "event_id": "buaa-caoyihua-education-3",
+          "event_kind": "postdoctoral_research",
+          "include_in_education_filters": false,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。",
+          "education_event_id": "buaa-caoyihua-education-3",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "include_in_degree_filters": false
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "飞行器总体综合设计",
+          "source_id": "buaa-caoyihua-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "buaa-caoyihua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "飞行器空气动力学",
+          "source_id": "buaa-caoyihua-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "buaa-caoyihua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "飞行力学",
+          "source_id": "buaa-caoyihua-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "buaa-caoyihua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "计算流体力学",
+          "source_id": "buaa-caoyihua-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3422.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "buaa-caoyihua-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "professional_field_provenance": {
+        "name": "buaa-rotation003-roster",
+        "school_id": "buaa-rotation003-roster",
+        "department_id": "buaa-rotation003-roster",
+        "organization_id": "buaa-rotation003-roster",
+        "department": "buaa-rotation003-roster",
+        "roster_category": "buaa-rotation003-roster",
+        "official_url": "buaa-caoyihua-profile",
+        "listed_role": "buaa-caoyihua-profile",
+        "research_interests": [
+          "buaa-caoyihua-profile"
+        ]
+      },
+      "selection_order": 1,
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-buaa-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "飞行器总体综合设计；飞行器空气动力学；飞行力学；计算流体力学",
+      "research_interests_source_ids": [
+        "buaa-caoyihua-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "buaa-chengxiaoquan",
+      "name": "程小全",
+      "school_id": "buaa",
+      "department_id": "buaa-aeronautic-science-engineering",
+      "organization_id": "buaa-aeronautic-science-engineering",
+      "campus_ids": [],
+      "campus": null,
+      "department": "航空科学与工程学院",
+      "roster_entry_id": "roster-buaa-chengxiaoquan",
+      "official_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+      "listed_role_source_id": "buaa-chengxiaoquan-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "飞机系 / 教授",
+      "roster_category_source_id": "buaa-rotation003-roster",
+      "sources": [
+        {
+          "id": "buaa-rotation003-roster",
+          "url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-roster-minimal.json",
+          "web_reference": "turn2206view0",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "buaa-chengxiaoquan-profile",
+          "url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-chengxiaoquan-minimal.json",
+          "web_reference": "turn2210view2",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "unknowns": [
+        "校区、实时人事状态、完整成果与未列师承未知。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_and_same_school_named_profile",
+        "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+        "profile_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+        "native_link_target": null,
+        "source_ids": [
+          "buaa-rotation003-roster",
+          "buaa-chengxiaoquan-profile"
+        ],
+        "note": "北航概况表无个人直链；以同校官方专业页同名、学院与教授身份闭合，不声称原生链接。"
+      },
+      "appointments": [
+        {
+          "institution": "北京航空航天大学 航空科学与工程学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "source_id": "buaa-chengxiaoquan-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "buaa-chengxiaoquan-profile",
+            "title": "buaa-chengxiaoquan-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "2000-09为入校工作时间，非教授任职起点；教授起点未知。"
+        }
+      ],
+      "education": [
+        {
+          "degree": null,
+          "institution": "西北工业大学",
+          "start": null,
+          "end": "1987",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "飞机系毕业",
+          "source_id": "buaa-chengxiaoquan-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "buaa-chengxiaoquan-profile",
+            "start": null,
+            "end": "buaa-chengxiaoquan-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "buaa-chengxiaoquan-profile"
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "buaa-chengxiaoquan-education-1",
+          "event_kind": "education_level_unknown",
+          "include_in_education_filters": false,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "原文只写飞机系毕业，未推定本科或学士。；来源标注：飞机系毕业",
+          "education_event_id": "buaa-chengxiaoquan-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.csust.edu.cn/fzgh/info/1016/1662.htm",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "include_in_degree_filters": false,
+          "source_note": "原文只写飞机系毕业，未推定本科或学士。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "buaa-chengxiaoquan-profile"
+          ],
+          "source_event_kind": "study_level_unspecified",
+          "event_kind_normalization_note": "仅映射已核原文阶段至既有显示标签，保留原类型；不改变学位层次、授位、日期或筛选。"
+        },
+        {
+          "degree": "硕士",
+          "institution": "北京航空航天大学",
+          "start": "1992",
+          "end": "1994",
+          "field": "飞行器设计",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "攻读硕士",
+          "source_id": "buaa-chengxiaoquan-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "buaa-chengxiaoquan-profile",
+            "institution": "buaa-chengxiaoquan-profile",
+            "start": "buaa-chengxiaoquan-profile",
+            "end": "buaa-chengxiaoquan-profile",
+            "field": "buaa-chengxiaoquan-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "buaa-chengxiaoquan-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "buaa-chengxiaoquan-education-2",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "1994提前转博士，硕士学位是否授予未知。；来源标注：攻读硕士",
+          "education_event_id": "buaa-chengxiaoquan-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "1994提前转博士，硕士学位是否授予未知。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "buaa-chengxiaoquan-profile"
+          ]
+        },
+        {
+          "degree": "博士",
+          "institution": "北京航空航天大学",
+          "start": "1994",
+          "end": "1998",
+          "field": "飞行器设计",
+          "degree_awarded": true,
+          "degree_awarded_date": "1998",
+          "source_reported_degree_label": "工学博士学位",
+          "source_id": "buaa-chengxiaoquan-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "buaa-chengxiaoquan-profile",
+            "institution": "buaa-chengxiaoquan-profile",
+            "start": "buaa-chengxiaoquan-profile",
+            "end": "buaa-chengxiaoquan-profile",
+            "field": "buaa-chengxiaoquan-profile",
+            "degree_awarded": "buaa-chengxiaoquan-profile",
+            "degree_awarded_date": "buaa-chengxiaoquan-profile",
+            "source_reported_degree_label": "buaa-chengxiaoquan-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "source_reported",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "buaa-chengxiaoquan-education-3",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：工学博士学位",
+          "education_event_id": "buaa-chengxiaoquan-education-3",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "buaa-chengxiaoquan-profile",
+          "degree_award_source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance",
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "buaa-chengxiaoquan-profile"
+          ]
+        },
+        {
+          "degree": null,
+          "institution": "北京航空材料研究院",
+          "start": "1998",
+          "end": "2000-09",
+          "field": "材料科学与工程",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": null,
+          "source_id": "buaa-chengxiaoquan-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "buaa-chengxiaoquan-profile",
+            "start": "buaa-chengxiaoquan-profile",
+            "end": "buaa-chengxiaoquan-profile",
+            "field": "buaa-chengxiaoquan-profile",
+            "degree_awarded": "buaa-chengxiaoquan-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "non_degree_activity",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "not_disclosed"
+          },
+          "event_id": "buaa-chengxiaoquan-education-4",
+          "event_kind": "postdoctoral_research",
+          "include_in_education_filters": false,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。",
+          "education_event_id": "buaa-chengxiaoquan-education-4",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "include_in_degree_filters": false
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "飞行器结构设计",
+          "source_id": "buaa-chengxiaoquan-profile",
+          "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/info/1084/3428.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "buaa-chengxiaoquan-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "professional_field_provenance": {
+        "name": "buaa-rotation003-roster",
+        "school_id": "buaa-rotation003-roster",
+        "department_id": "buaa-rotation003-roster",
+        "organization_id": "buaa-rotation003-roster",
+        "department": "buaa-rotation003-roster",
+        "roster_category": "buaa-rotation003-roster",
+        "official_url": "buaa-chengxiaoquan-profile",
+        "listed_role": "buaa-chengxiaoquan-profile",
+        "research_interests": [
+          "buaa-chengxiaoquan-profile"
+        ]
+      },
+      "selection_order": 2,
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-buaa-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "飞行器结构设计",
+      "research_interests_source_ids": [
+        "buaa-chengxiaoquan-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "buaa-dongleiting",
+      "name": "董雷霆",
+      "school_id": "buaa",
+      "department_id": "buaa-aeronautic-science-engineering",
+      "organization_id": "buaa-aeronautic-science-engineering",
+      "campus_ids": [],
+      "campus": null,
+      "department": "航空科学与工程学院",
+      "roster_entry_id": "roster-buaa-dongleiting",
+      "official_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+      "listed_role_source_id": "buaa-dongleiting-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "飞机系 / 教授",
+      "roster_category_source_id": "buaa-rotation003-roster",
+      "sources": [
+        {
+          "id": "buaa-rotation003-roster",
+          "url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-roster-minimal.json",
+          "web_reference": "turn2206view0",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "buaa-dongleiting-profile",
+          "url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-dongleiting-minimal.json",
+          "web_reference": "turn2211view0",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "unknowns": [
+        "校区、实时人事状态、完整成果与未列师承未知。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_and_same_school_named_profile",
+        "source_url": "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm",
+        "profile_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+        "native_link_target": null,
+        "source_ids": [
+          "buaa-rotation003-roster",
+          "buaa-dongleiting-profile"
+        ],
+        "note": "北航概况表无个人直链；以同校官方专业页同名、学院与教授身份闭合，不声称原生链接。"
+      },
+      "appointments": [
+        {
+          "institution": "北京航空航天大学 航空科学与工程学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "source_id": "buaa-dongleiting-profile",
+          "source_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "buaa-dongleiting-profile",
+            "title": "buaa-dongleiting-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "页面工作经历列2015-10至今教授，元数据入职时间2016-02-01，两处起点不一致；保留冲突，任职起点不归一。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "University of California, Irvine",
+          "start": "2010-06",
+          "end": "2013-04",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "博士学位",
+          "source_id": "buaa-dongleiting-profile",
+          "source_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "buaa-dongleiting-profile",
+            "institution": "buaa-dongleiting-profile",
+            "start": "buaa-dongleiting-profile",
+            "end": "buaa-dongleiting-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "buaa-dongleiting-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "buaa-dongleiting-education-1",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：博士学位",
+          "education_event_id": "buaa-dongleiting-education-1",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "buaa-dongleiting-profile"
+          ]
+        },
+        {
+          "degree": "硕士",
+          "institution": "University of California, Irvine",
+          "start": "2009-09",
+          "end": "2010-06",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "硕士学位",
+          "source_id": "buaa-dongleiting-profile",
+          "source_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "buaa-dongleiting-profile",
+            "institution": "buaa-dongleiting-profile",
+            "start": "buaa-dongleiting-profile",
+            "end": "buaa-dongleiting-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "buaa-dongleiting-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "buaa-dongleiting-education-2",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：硕士学位",
+          "education_event_id": "buaa-dongleiting-education-2",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "buaa-dongleiting-profile"
+          ]
+        },
+        {
+          "degree": "学士",
+          "institution": "厦门大学",
+          "start": "2005-09",
+          "end": "2009-06",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "学士学位",
+          "source_id": "buaa-dongleiting-profile",
+          "source_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "buaa-dongleiting-profile",
+            "institution": "buaa-dongleiting-profile",
+            "start": "buaa-dongleiting-profile",
+            "end": "buaa-dongleiting-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "buaa-dongleiting-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "buaa-dongleiting-education-3",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：学士学位",
+          "education_event_id": "buaa-dongleiting-education-3",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "buaa-dongleiting-profile"
+          ]
+        },
+        {
+          "degree": null,
+          "institution": "University of California, Irvine",
+          "start": "2013-04",
+          "end": "2015-07",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": null,
+          "source_id": "buaa-dongleiting-profile",
+          "source_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "buaa-dongleiting-profile",
+            "start": "buaa-dongleiting-profile",
+            "end": "buaa-dongleiting-profile",
+            "field": null,
+            "degree_awarded": "buaa-dongleiting-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "non_degree_activity",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "not_disclosed"
+          },
+          "event_id": "buaa-dongleiting-education-4",
+          "event_kind": "postdoctoral_research",
+          "include_in_education_filters": false,
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。",
+          "education_event_id": "buaa-dongleiting-education-4",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america",
+          "include_in_degree_filters": false
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "飞机结构数字孪生",
+          "source_id": "buaa-dongleiting-profile",
+          "source_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "buaa-dongleiting-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "结构疲劳与损伤容限",
+          "source_id": "buaa-dongleiting-profile",
+          "source_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "buaa-dongleiting-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "结构毁伤与防护",
+          "source_id": "buaa-dongleiting-profile",
+          "source_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "buaa-dongleiting-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "计算力学新方法与软件",
+          "source_id": "buaa-dongleiting-profile",
+          "source_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "buaa-dongleiting-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [
+        {
+          "source_id": "buaa-dongleiting-profile",
+          "source_url": "https://shi.buaa.edu.cn/dongleiting/zh_CN/",
+          "reason": "同页入职时间2016-02-01与工作经历2015-10至今不一致。",
+          "source_reported_dates": [
+            "2016-02-01",
+            "2015-10"
+          ],
+          "resolution": null
+        }
+      ],
+      "pending_professional_fact_candidates": [],
+      "professional_field_provenance": {
+        "name": "buaa-rotation003-roster",
+        "school_id": "buaa-rotation003-roster",
+        "department_id": "buaa-rotation003-roster",
+        "organization_id": "buaa-rotation003-roster",
+        "department": "buaa-rotation003-roster",
+        "roster_category": "buaa-rotation003-roster",
+        "official_url": "buaa-dongleiting-profile",
+        "listed_role": "buaa-dongleiting-profile",
+        "research_interests": [
+          "buaa-dongleiting-profile"
+        ]
+      },
+      "selection_order": 3,
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-buaa-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "飞机结构数字孪生；结构疲劳与损伤容限；结构毁伤与防护；计算力学新方法与软件",
+      "research_interests_source_ids": [
+        "buaa-dongleiting-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "muc-gaobing",
+      "name": "高兵",
+      "school_id": "muc",
+      "department_id": "muc-education",
+      "organization_id": "muc-education",
+      "campus_ids": [],
+      "campus": null,
+      "department": "教育学院",
+      "roster_entry_id": "roster-muc-gaobing",
+      "official_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+      "listed_role_source_id": "muc-gaobing-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "教授",
+      "roster_category_source_id": "muc-rotation003-roster",
+      "sources": [
+        {
+          "id": "muc-rotation003-roster",
+          "url": "https://edu.muc.edu.cn/szdw/js.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/muc-roster-minimal.json",
+          "web_reference": "turn2206view1",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "muc-gaobing-profile",
+          "url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/muc-gaobing-minimal.json",
+          "web_reference": "turn2207view3",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "unknowns": [
+        "校区、实时人事状态、完整成果与未列师承未知。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://edu.muc.edu.cn/szdw/js.htm",
+        "profile_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+        "native_link_target": "https://edu.muc.edu.cn/info/1008/1700.htm",
+        "source_ids": [
+          "muc-rotation003-roster",
+          "muc-gaobing-profile"
+        ],
+        "note": "类别同名原生直链至官方正文。"
+      },
+      "appointments": [
+        {
+          "institution": "中央民族大学 教育学院",
+          "title": "教授",
+          "start": null,
+          "end": null,
+          "source_id": "muc-gaobing-profile",
+          "source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "muc-gaobing-profile",
+            "title": "muc-gaobing-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "2007为入院工作而非教授起点，教授起点留空。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "学士",
+          "institution": "曲阜师范大学",
+          "start": "1994",
+          "end": "1998",
+          "field": "教育学",
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "教育学学士学位",
+          "source_id": "muc-gaobing-profile",
+          "source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "muc-gaobing-profile",
+            "institution": "muc-gaobing-profile",
+            "start": "muc-gaobing-profile",
+            "end": "muc-gaobing-profile",
+            "field": "muc-gaobing-profile",
+            "degree_awarded": "muc-gaobing-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "muc-gaobing-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "muc-gaobing-education-1",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：教育学学士学位",
+          "education_event_id": "muc-gaobing-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "muc-gaobing-profile",
+          "degree_award_source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance",
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "muc-gaobing-profile"
+          ]
+        },
+        {
+          "degree": "硕士",
+          "institution": "山东师范大学",
+          "start": "2001",
+          "end": "2004",
+          "field": "基础心理学",
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "教育学硕士学位",
+          "source_id": "muc-gaobing-profile",
+          "source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "muc-gaobing-profile",
+            "institution": "muc-gaobing-profile",
+            "start": "muc-gaobing-profile",
+            "end": "muc-gaobing-profile",
+            "field": "muc-gaobing-profile",
+            "degree_awarded": "muc-gaobing-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "muc-gaobing-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "muc-gaobing-education-2",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：教育学硕士学位",
+          "education_event_id": "muc-gaobing-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "muc-gaobing-profile",
+          "degree_award_source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance",
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "muc-gaobing-profile"
+          ]
+        },
+        {
+          "degree": "博士",
+          "institution": "中国科学院心理研究所",
+          "start": "2004",
+          "end": "2007",
+          "field": "基础心理学",
+          "degree_awarded": true,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "理学博士学位",
+          "source_id": "muc-gaobing-profile",
+          "source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "muc-gaobing-profile",
+            "institution": "muc-gaobing-profile",
+            "start": "muc-gaobing-profile",
+            "end": "muc-gaobing-profile",
+            "field": "muc-gaobing-profile",
+            "degree_awarded": "muc-gaobing-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "muc-gaobing-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "muc-gaobing-education-3",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：理学博士学位",
+          "education_event_id": "muc-gaobing-education-3",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "muc-gaobing-profile",
+          "degree_award_source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance",
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "muc-gaobing-profile"
+          ]
+        }
+      ],
+      "mentors": [
+        {
+          "name": "高峰强",
+          "type": "masters_supervisor",
+          "education_stage": "硕士",
+          "education_event_id": "muc-gaobing-education-2",
+          "start": null,
+          "end": null,
+          "source_id": "muc-gaobing-profile",
+          "source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "muc-gaobing-profile",
+            "type": "muc-gaobing-profile",
+            "education_stage": "muc-gaobing-profile",
+            "education_event_id": "muc-gaobing-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "明确师从关系；未核导师当前任职及导航。",
+          "relationship_kind": "masters_advisor",
+          "type_label": "硕士导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "masters_supervisor",
+          "include_in_degree_mentorship_graph": true
+        },
+        {
+          "name": "杨玉芳",
+          "type": "doctoral_supervisor",
+          "education_stage": "博士",
+          "education_event_id": "muc-gaobing-education-3",
+          "start": null,
+          "end": null,
+          "source_id": "muc-gaobing-profile",
+          "source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "muc-gaobing-profile",
+            "type": "muc-gaobing-profile",
+            "education_stage": "muc-gaobing-profile",
+            "education_event_id": "muc-gaobing-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "name": "source_reported",
+            "type": "source_reported",
+            "education_stage": "source_reported",
+            "education_event_id": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "relationship_status": "verified_direct_statement",
+          "include_in_mentorship_graph": true,
+          "navigation_verified": false,
+          "navigation_status": "not_researched_in_bounded_batch",
+          "employment_status": "not_verified",
+          "current_institution": null,
+          "official_url": null,
+          "person_id": null,
+          "navigation_source_ids": [],
+          "note": "明确师从关系；未核导师当前任职及导航。",
+          "relationship_kind": "doctoral_advisor",
+          "type_label": "博士导师",
+          "include_in_verified_mentor_count": true,
+          "education_event_link_basis": "reviewed_direct_relationship_evidence_and_original_event_identity",
+          "source_employment_status": "not_verified",
+          "quick_link_eligible": false,
+          "source_official_url": null,
+          "profile_navigation_unavailable_reason": "现任个人主页未直接核验，或官方已列退休；保留职业介绍与关系来源，不提供快捷主页导航。",
+          "source_type": "doctoral_supervisor",
+          "include_in_degree_mentorship_graph": true
+        }
+      ],
+      "committee_members": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "言语认知",
+          "source_id": "muc-gaobing-profile",
+          "source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "muc-gaobing-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "跨文化心理学",
+          "source_id": "muc-gaobing-profile",
+          "source_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "muc-gaobing-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "professional_field_provenance": {
+        "name": "muc-rotation003-roster",
+        "school_id": "muc-rotation003-roster",
+        "department_id": "muc-rotation003-roster",
+        "organization_id": "muc-rotation003-roster",
+        "department": "muc-rotation003-roster",
+        "roster_category": "muc-rotation003-roster",
+        "official_url": "muc-gaobing-profile",
+        "listed_role": "muc-gaobing-profile",
+        "research_interests": [
+          "muc-gaobing-profile"
+        ]
+      },
+      "selection_order": 2,
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-muc-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "言语认知；跨文化心理学",
+      "research_interests_source_ids": [
+        "muc-gaobing-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "nku-baoqun",
+      "name": "包群",
+      "school_id": "nku",
+      "department_id": "nku-economics",
+      "organization_id": "nku-economics",
+      "campus_ids": [],
+      "campus": null,
+      "department": "经济学院",
+      "roster_entry_id": "roster-nku-baoqun",
+      "official_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+      "listed_role": "教授",
+      "listed_role_source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+      "listed_role_source_id": "nku-baoqun-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "全职教师",
+      "roster_category_source_id": "nku-rotation003-roster",
+      "sources": [
+        {
+          "id": "nku-rotation003-roster",
+          "url": "https://economics.nankai.edu.cn/qzjs/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/nku-roster-minimal.json",
+          "web_reference": "turn2207view1",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "nku-baoqun-profile",
+          "url": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/nku-baoqun-minimal.json",
+          "web_reference": "turn2208view1",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "unknowns": [
+        "校区、实时人事状态、完整成果与未列师承未知。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://economics.nankai.edu.cn/qzjs/list.htm",
+        "profile_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+        "native_link_target": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+        "source_ids": [
+          "nku-rotation003-roster",
+          "nku-baoqun-profile"
+        ],
+        "note": "类别同名原生直链至官方正文。"
+      },
+      "appointments": [
+        {
+          "institution": "南开大学 经济学院",
+          "title": "教授",
+          "start": "2010",
+          "end": null,
+          "source_id": "nku-baoqun-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "nku-baoqun-profile",
+            "title": "nku-baoqun-profile",
+            "start": "nku-baoqun-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "官方正文及当前类别列示，不等独立人事核验。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "湖南大学",
+          "start": null,
+          "end": "2004",
+          "field": "经济学",
+          "degree_awarded": true,
+          "degree_awarded_date": "2004",
+          "source_reported_degree_label": "经济学博士学位",
+          "source_id": "nku-baoqun-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "nku-baoqun-profile",
+            "institution": "nku-baoqun-profile",
+            "start": null,
+            "end": "nku-baoqun-profile",
+            "field": "nku-baoqun-profile",
+            "degree_awarded": "nku-baoqun-profile",
+            "degree_awarded_date": "nku-baoqun-profile",
+            "source_reported_degree_label": "nku-baoqun-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "not_disclosed",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "explicit_award_statement",
+            "degree_awarded_date": "source_reported",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "nku-baoqun-education-1",
+          "event_kind": "degree",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：经济学博士学位",
+          "education_event_id": "nku-baoqun-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "source_event_kind": "degree_study",
+          "event_kind_normalization_note": "已审源明确授位为true；仅将学习事件规范为学位事件，保留原事件类型、授位布尔值及所有日期。",
+          "include_in_degree_filters": true,
+          "degree_award_source_id": "nku-baoqun-profile",
+          "degree_award_source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+          "degree_award_link_basis": "direct_source_id_from_original_degree_awarded_field_provenance",
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "nku-baoqun-profile"
+          ]
+        },
+        {
+          "degree": null,
+          "institution": "芝加哥大学",
+          "start": "2010",
+          "end": null,
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": null,
+          "source_id": "nku-baoqun-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "nku-baoqun-profile",
+            "start": "nku-baoqun-profile",
+            "end": null,
+            "field": null,
+            "degree_awarded": "nku-baoqun-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed",
+            "field": "not_disclosed",
+            "degree_awarded": "non_degree_activity",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "not_disclosed"
+          },
+          "event_id": "nku-baoqun-education-2",
+          "event_kind": "visiting_scholar",
+          "include_in_education_filters": false,
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "只明访问年份；访问结束时间未知。",
+          "education_event_id": "nku-baoqun-education-2",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america",
+          "include_in_degree_filters": false
+        },
+        {
+          "degree": null,
+          "institution": "牛津大学",
+          "start": "2017",
+          "end": null,
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": null,
+          "source_id": "nku-baoqun-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "nku-baoqun-profile",
+            "start": "nku-baoqun-profile",
+            "end": null,
+            "field": null,
+            "degree_awarded": "nku-baoqun-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed",
+            "field": "not_disclosed",
+            "degree_awarded": "non_degree_activity",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "not_disclosed"
+          },
+          "event_id": "nku-baoqun-education-3",
+          "event_kind": "visiting_scholar",
+          "include_in_education_filters": false,
+          "country": "英国",
+          "region": "overseas",
+          "continent": "欧洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "只明访问年份；访问结束时间未知。",
+          "education_event_id": "nku-baoqun-education-3",
+          "institution_985": "no",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "英国",
+          "continent_code": "europe",
+          "include_in_degree_filters": false
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "国际贸易与国际投资",
+          "source_id": "nku-baoqun-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "nku-baoqun-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "国际贸易的微观计量分析",
+          "source_id": "nku-baoqun-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "nku-baoqun-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "professional_field_provenance": {
+        "name": "nku-rotation003-roster",
+        "school_id": "nku-rotation003-roster",
+        "department_id": "nku-rotation003-roster",
+        "organization_id": "nku-rotation003-roster",
+        "department": "nku-rotation003-roster",
+        "roster_category": "nku-rotation003-roster",
+        "official_url": "nku-baoqun-profile",
+        "listed_role": "nku-baoqun-profile",
+        "research_interests": [
+          "nku-baoqun-profile"
+        ]
+      },
+      "selection_order": 1,
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-nku-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "国际贸易与国际投资；国际贸易的微观计量分析",
+      "research_interests_source_ids": [
+        "nku-baoqun-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "nku-bowenguang",
+      "name": "薄文广",
+      "school_id": "nku",
+      "department_id": "nku-economics",
+      "organization_id": "nku-economics",
+      "campus_ids": [],
+      "campus": null,
+      "department": "经济学院",
+      "roster_entry_id": "roster-nku-bowenguang",
+      "official_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+      "listed_role": "副教授",
+      "listed_role_source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+      "listed_role_source_id": "nku-bowenguang-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "全职教师",
+      "roster_category_source_id": "nku-rotation003-roster",
+      "sources": [
+        {
+          "id": "nku-rotation003-roster",
+          "url": "https://economics.nankai.edu.cn/qzjs/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/nku-roster-minimal.json",
+          "web_reference": "turn2207view1",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "nku-bowenguang-profile",
+          "url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/nku-bowenguang-minimal.json",
+          "web_reference": "turn2208view2",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "unknowns": [
+        "校区、实时人事状态、完整成果与未列师承未知。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://economics.nankai.edu.cn/qzjs/list.htm",
+        "profile_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+        "native_link_target": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+        "source_ids": [
+          "nku-rotation003-roster",
+          "nku-bowenguang-profile"
+        ],
+        "note": "类别同名原生直链至官方正文。"
+      },
+      "appointments": [
+        {
+          "institution": "南开大学 经济学院",
+          "title": "副教授",
+          "start": null,
+          "end": null,
+          "source_id": "nku-bowenguang-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "nku-bowenguang-profile",
+            "title": "nku-bowenguang-profile",
+            "start": null,
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "not_disclosed",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "官方正文及当前类别列示，不等独立人事核验。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "博士",
+          "institution": "南开大学",
+          "start": "2003-09",
+          "end": "2006-06",
+          "field": "世界经济学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "博士",
+          "source_id": "nku-bowenguang-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "nku-bowenguang-profile",
+            "institution": "nku-bowenguang-profile",
+            "start": "nku-bowenguang-profile",
+            "end": "nku-bowenguang-profile",
+            "field": "nku-bowenguang-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "nku-bowenguang-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "nku-bowenguang-education-1",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。",
+          "education_event_id": "nku-bowenguang-education-1",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false
+        },
+        {
+          "degree": "硕士",
+          "institution": "南开大学",
+          "start": "2000-09",
+          "end": "2003-06",
+          "field": "环境工程",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "硕士",
+          "source_id": "nku-bowenguang-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "nku-bowenguang-profile",
+            "institution": "nku-bowenguang-profile",
+            "start": "nku-bowenguang-profile",
+            "end": "nku-bowenguang-profile",
+            "field": "nku-bowenguang-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "nku-bowenguang-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "nku-bowenguang-education-2",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。",
+          "education_event_id": "nku-bowenguang-education-2",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false
+        },
+        {
+          "degree": "学士",
+          "institution": "西安理工大学",
+          "start": "1996-09",
+          "end": "2000-06",
+          "field": null,
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "学士",
+          "source_id": "nku-bowenguang-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "nku-bowenguang-profile",
+            "institution": "nku-bowenguang-profile",
+            "start": "nku-bowenguang-profile",
+            "end": "nku-bowenguang-profile",
+            "field": null,
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "nku-bowenguang-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "nku-bowenguang-education-3",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。",
+          "education_event_id": "nku-bowenguang-education-3",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false
+        },
+        {
+          "degree": null,
+          "institution": "南开大学",
+          "start": "2006-07",
+          "end": "2008-07",
+          "field": "应用经济学",
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": null,
+          "source_id": "nku-bowenguang-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "nku-bowenguang-profile",
+            "start": "nku-bowenguang-profile",
+            "end": "nku-bowenguang-profile",
+            "field": "nku-bowenguang-profile",
+            "degree_awarded": "nku-bowenguang-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "non_degree_activity",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "not_disclosed"
+          },
+          "event_id": "nku-bowenguang-education-4",
+          "event_kind": "postdoctoral_research",
+          "include_in_education_filters": false,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。",
+          "education_event_id": "nku-bowenguang-education-4",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "include_in_degree_filters": false
+        },
+        {
+          "degree": null,
+          "institution": "辛辛那提大学",
+          "start": "2014-04",
+          "end": "2015-04",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": null,
+          "source_id": "nku-bowenguang-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "nku-bowenguang-profile",
+            "start": "nku-bowenguang-profile",
+            "end": "nku-bowenguang-profile",
+            "field": null,
+            "degree_awarded": "nku-bowenguang-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "non_degree_activity",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "not_disclosed"
+          },
+          "event_id": "nku-bowenguang-education-5",
+          "event_kind": "visiting_scholar",
+          "include_in_education_filters": false,
+          "country": "美国",
+          "region": "overseas",
+          "continent": "北美洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。",
+          "education_event_id": "nku-bowenguang-education-5",
+          "institution_985": "no",
+          "classification_basis": "outside_mainland_historical_985_scope",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "美国",
+          "continent_code": "north_america",
+          "include_in_degree_filters": false
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "区域经济理论与政策",
+          "source_id": "nku-bowenguang-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "nku-bowenguang-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "城市经济发展",
+          "source_id": "nku-bowenguang-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/0928/c16878a207513/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "nku-bowenguang-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "professional_field_provenance": {
+        "name": "nku-rotation003-roster",
+        "school_id": "nku-rotation003-roster",
+        "department_id": "nku-rotation003-roster",
+        "organization_id": "nku-rotation003-roster",
+        "department": "nku-rotation003-roster",
+        "roster_category": "nku-rotation003-roster",
+        "official_url": "nku-bowenguang-profile",
+        "listed_role": "nku-bowenguang-profile",
+        "research_interests": [
+          "nku-bowenguang-profile"
+        ]
+      },
+      "selection_order": 2,
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-nku-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "区域经济理论与政策；城市经济发展",
+      "research_interests_source_ids": [
+        "nku-bowenguang-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
+    },
+    {
+      "person_id": "nku-chengqian",
+      "name": "成前",
+      "school_id": "nku",
+      "department_id": "nku-economics",
+      "organization_id": "nku-economics",
+      "campus_ids": [],
+      "campus": null,
+      "department": "经济学院",
+      "roster_entry_id": "roster-nku-chengqian",
+      "official_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+      "listed_role": "副教授",
+      "listed_role_source_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+      "listed_role_source_id": "nku-chengqian-profile",
+      "listed_role_basis": "explicit_individual_profile_title",
+      "roster_category": "全职教师",
+      "roster_category_source_id": "nku-rotation003-roster",
+      "sources": [
+        {
+          "id": "nku-rotation003-roster",
+          "url": "https://economics.nankai.edu.cn/qzjs/list.htm",
+          "evidence_status": "official_roster_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/nku-roster-minimal.json",
+          "web_reference": "turn2207view1",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
+        },
+        {
+          "id": "nku-chengqian-profile",
+          "url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+          "evidence_status": "official_public_body_read",
+          "retrieved_at": "2026-10-24",
+          "source_type": "university_official",
+          "evidence_file": "research-rotation003-buaa-muc-nku/nku-chengqian-minimal.json",
+          "web_reference": "turn2210view3",
+          "published_at": null,
+          "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
+          "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
+        }
+      ],
+      "profile_status": "partial_professional_source_checked",
+      "unknowns": [
+        "校区、实时人事状态、完整成果与未列师承未知。"
+      ],
+      "identity_evidence": {
+        "status": "official_roster_explicit_profile_link",
+        "source_url": "https://economics.nankai.edu.cn/qzjs/list.htm",
+        "profile_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+        "native_link_target": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+        "source_ids": [
+          "nku-rotation003-roster",
+          "nku-chengqian-profile"
+        ],
+        "note": "类别同名原生直链至官方正文。"
+      },
+      "appointments": [
+        {
+          "institution": "南开大学 经济学院",
+          "title": "副教授",
+          "start": "2021-10",
+          "end": null,
+          "source_id": "nku-chengqian-profile",
+          "source_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "institution": "nku-chengqian-profile",
+            "title": "nku-chengqian-profile",
+            "start": "nku-chengqian-profile",
+            "end": null
+          },
+          "field_status": {
+            "institution": "source_reported",
+            "title": "source_reported",
+            "start": "source_reported",
+            "end": "not_disclosed"
+          },
+          "current": true,
+          "status": "official_page_currently_listed",
+          "as_of": "2026-10-24",
+          "employment_type": null,
+          "personnel_status_verified": false,
+          "note": "官方正文及当前类别列示，不等独立人事核验。"
+        }
+      ],
+      "education": [
+        {
+          "degree": "学士",
+          "institution": "山东大学",
+          "start": "2007-09",
+          "end": "2011-06",
+          "field": "经济学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "经济学学士",
+          "source_id": "nku-chengqian-profile",
+          "source_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "nku-chengqian-profile",
+            "institution": "nku-chengqian-profile",
+            "start": "nku-chengqian-profile",
+            "end": "nku-chengqian-profile",
+            "field": "nku-chengqian-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "nku-chengqian-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "nku-chengqian-education-1",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：经济学学士",
+          "education_event_id": "nku-chengqian-education-1",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "nku-chengqian-profile"
+          ]
+        },
+        {
+          "degree": "硕士",
+          "institution": "中国海洋大学",
+          "start": "2012-09",
+          "end": "2015-06",
+          "field": "经济学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "经济学硕士",
+          "source_id": "nku-chengqian-profile",
+          "source_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "nku-chengqian-profile",
+            "institution": "nku-chengqian-profile",
+            "start": "nku-chengqian-profile",
+            "end": "nku-chengqian-profile",
+            "field": "nku-chengqian-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "nku-chengqian-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "nku-chengqian-education-2",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：经济学硕士",
+          "education_event_id": "nku-chengqian-education-2",
+          "institution_985": "yes",
+          "classification_basis": "existing_source_backed_historical_985_mapping",
+          "classification_source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "nku-chengqian-profile"
+          ]
+        },
+        {
+          "degree": "博士",
+          "institution": "南开大学",
+          "start": "2015-09",
+          "end": "2018-06",
+          "field": "经济学",
+          "degree_awarded": null,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": "经济学博士",
+          "source_id": "nku-chengqian-profile",
+          "source_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": "nku-chengqian-profile",
+            "institution": "nku-chengqian-profile",
+            "start": "nku-chengqian-profile",
+            "end": "nku-chengqian-profile",
+            "field": "nku-chengqian-profile",
+            "degree_awarded": null,
+            "degree_awarded_date": null,
+            "source_reported_degree_label": "nku-chengqian-profile"
+          },
+          "field_status": {
+            "degree": "source_reported",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "source_reported",
+            "degree_awarded": "award_not_explicitly_confirmed",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "source_reported"
+          },
+          "event_id": "nku-chengqian-education-3",
+          "event_kind": "degree_study",
+          "include_in_education_filters": true,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。；来源标注：经济学博士",
+          "education_event_id": "nku-chengqian-education-3",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "event_kind_label": "学位阶段学习（授位未核实）",
+          "include_in_degree_filters": false,
+          "source_note": "学习区间终点不自动作授位日。",
+          "note_derivation": "original_note_plus_verbatim_source_reported_degree_label",
+          "note_derivation_source_ids": [
+            "nku-chengqian-profile"
+          ]
+        },
+        {
+          "degree": null,
+          "institution": "北京大学",
+          "start": "2022-09",
+          "end": "2023-06",
+          "field": null,
+          "degree_awarded": false,
+          "degree_awarded_date": null,
+          "source_reported_degree_label": null,
+          "source_id": "nku-chengqian-profile",
+          "source_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "degree": null,
+            "institution": "nku-chengqian-profile",
+            "start": "nku-chengqian-profile",
+            "end": "nku-chengqian-profile",
+            "field": null,
+            "degree_awarded": "nku-chengqian-profile",
+            "degree_awarded_date": null,
+            "source_reported_degree_label": null
+          },
+          "field_status": {
+            "degree": "not_disclosed",
+            "institution": "source_reported",
+            "start": "source_reported",
+            "end": "source_reported",
+            "field": "not_disclosed",
+            "degree_awarded": "non_degree_activity",
+            "degree_awarded_date": "not_disclosed",
+            "source_reported_degree_label": "not_disclosed"
+          },
+          "event_id": "nku-chengqian-education-4",
+          "event_kind": "visiting_scholar",
+          "include_in_education_filters": false,
+          "country": "中国",
+          "region": "mainland",
+          "continent": "亚洲",
+          "geography_basis": "明确机构所在国家标准化，不代表本人国籍。",
+          "geography_status": "normalized_from_explicit_institution_country",
+          "note": "学习区间终点不自动作授位日。",
+          "education_event_id": "nku-chengqian-education-4",
+          "institution_985": "unknown",
+          "classification_basis": "not_in_source_backed_historical_985_mapping",
+          "classification_note": "历史985归类不证明就读当年建设身份，也不确认个人授位；未知授位机构保持未知。",
+          "source_region": "中国内地",
+          "continent_code": "asia",
+          "include_in_degree_filters": false
+        }
+      ],
+      "mentors": [],
+      "committee_members": [],
+      "publications": [],
+      "research_fields": [
+        {
+          "name": "财税理论与政策",
+          "source_id": "nku-chengqian-profile",
+          "source_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "nku-chengqian-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "公共经济学",
+          "source_id": "nku-chengqian-profile",
+          "source_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "nku-chengqian-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "人口经济学",
+          "source_id": "nku-chengqian-profile",
+          "source_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "nku-chengqian-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        },
+        {
+          "name": "健康与老龄经济学",
+          "source_id": "nku-chengqian-profile",
+          "source_url": "https://economics.nankai.edu.cn/2024/0422/c16878a540753/page.htm",
+          "evidence_status": "official_public_body_read",
+          "field_provenance": {
+            "name": "nku-chengqian-profile"
+          },
+          "field_status": {
+            "name": "source_reported"
+          }
+        }
+      ],
+      "academic_service": [],
+      "teaching": [],
+      "honors": [],
+      "research_projects": [],
+      "pending_education_candidates": [],
+      "pending_mentor_candidates": [],
+      "pending_appointment_candidates": [],
+      "pending_professional_fact_candidates": [],
+      "professional_field_provenance": {
+        "name": "nku-rotation003-roster",
+        "school_id": "nku-rotation003-roster",
+        "department_id": "nku-rotation003-roster",
+        "organization_id": "nku-rotation003-roster",
+        "department": "nku-rotation003-roster",
+        "roster_category": "nku-rotation003-roster",
+        "official_url": "nku-chengqian-profile",
+        "listed_role": "nku-chengqian-profile",
+        "research_interests": [
+          "nku-chengqian-profile"
+        ]
+      },
+      "selection_order": 3,
+      "source_profile_status": "body_verified_professional_profile",
+      "data_batch_id": "faculty-batch-nku-rotation-003",
+      "fields_complete": false,
+      "detail_count_eligible": true,
+      "established_professional_count_eligible": true,
+      "complete_profile_count_eligible": false,
+      "include_in_current_faculty_count": false,
+      "profile_coverage_label": "部分公开职业事实，教育、师承和人事在岗仍有缺项；名录归属不是当前全职人事认定。",
+      "research_interests": "财税理论与政策；公共经济学；人口经济学；健康与老龄经济学",
+      "research_interests_source_ids": [
+        "nku-chengqian-profile"
+      ],
+      "research_interests_derivation": "verbatim_original_research_fields_names_in_source_order_for_existing_consumer"
     }
   ],
   "profile_batches": [
@@ -195870,6 +198544,110 @@
         "37/40名录矛盾和三处起点冲突必须保留；不能以升职/入职日期反推另一任期。",
         "宋磊publication候选不得升入已核出版物、点击导航或已核计数；本次未独立验证其引用元数据。",
         "7历史分阶段师承边不代表导师现在任职/招生，当前导航保持0。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-buaa-rotation-003",
+      "source_batch_id": "faculty-batch-buaa-rotation-003",
+      "school_id": "buaa",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-24",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "航空科学与工程学院官方飞机系 / 教授类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+      "selection_basis": "航空科学与工程学院官方飞机系 / 教授类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-buaa-rotation-003.json",
+          "sha256": "9bb7fc7e5c4c597e6404861a81f50fbaa611e685cf5c6e9477205379293750c0"
+        }
+      ],
+      "limitations": [
+        "校区不由办公地址推断；实时人事、聘用类型均未独立核验。",
+        "标签与日期不推定授位；访问、博士后与学位分开。",
+        "仅必要公开职业信息；无联系方式、出生、照片或网页全量缓存。",
+        "仅已读专业事实；未穷尽履历、成果或导师；空值非无此经历。",
+        "概况飞机系教授栏22名，不等全院人数；无个人原生直链，以同校官方同名专业身份闭合。董雷霆同页入职日期冲突未归一。",
+        "只批准精确哈希下的部分职业资料；不代表整院、整校完整覆盖。",
+        "已明确授位、学位/攻读标签和非学位经历须分层；学校地理标准化不代表国籍，校区均未知。",
+        "当前名录/官方页面列示不等独立人事核验；不补推聘用类型或任职起点。",
+        "导师事件边不等导师当前导航，当前导师导航0。",
+        "未采集书目、第二资格及其他职业事实不等不存在；无论文全文或原始页面全量缓存。",
+        "仅原始研究来源审查；消费者字段和schema验证须由独立整合流程执行。",
+        "董雷霆的两种起点保持冲突候选；BUAA不得标记为原生个人名录链接。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-muc-rotation-003",
+      "source_batch_id": "faculty-batch-muc-rotation-003",
+      "school_id": "muc",
+      "people_count": 1,
+      "established_professional_profiles": 1,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-24",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "教育学院官方教授类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+      "selection_basis": "教育学院官方教授类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+      "selected_roster_observations": 1,
+      "source_files": [
+        {
+          "file": "faculty-batch-muc-rotation-003.json",
+          "sha256": "6040f3d15b95eb53181598d7aaf6757df82d5a98b6c6ea5a1f7ea35d7601f904"
+        }
+      ],
+      "limitations": [
+        "校区不由办公地址推断；实时人事、聘用类型均未独立核验。",
+        "标签与日期不推定授位；访问、博士后与学位分开。",
+        "仅必要公开职业信息；无联系方式、出生、照片或网页全量缓存。",
+        "仅已读专业事实；未穷尽履历、成果或导师；空值非无此经历。",
+        "首3中苏德、吴明海正文超时，暂不形成专业档案；仅高兵1人，不后移补齐。",
+        "只批准精确哈希下的部分职业资料；不代表整院、整校完整覆盖。",
+        "已明确授位、学位/攻读标签和非学位经历须分层；学校地理标准化不代表国籍，校区均未知。",
+        "当前名录/官方页面列示不等独立人事核验；不补推聘用类型或任职起点。",
+        "导师事件边不等导师当前导航，当前导师导航0。",
+        "未采集书目、第二资格及其他职业事实不等不存在；无论文全文或原始页面全量缓存。",
+        "仅原始研究来源审查；消费者字段和schema验证须由独立整合流程执行。",
+        "苏德、吴明海必须仍为未核候选，不可作为职业档案或用后序人替换。"
+      ]
+    },
+    {
+      "batch_id": "faculty-batch-nku-rotation-003",
+      "source_batch_id": "faculty-batch-nku-rotation-003",
+      "school_id": "nku",
+      "people_count": 3,
+      "established_professional_profiles": 3,
+      "pending_profiles": 0,
+      "complete_profiles": 0,
+      "retrieved_at": "2026-10-24",
+      "coverage_complete": false,
+      "fields_complete": false,
+      "selection": "经济学院官方全职教师类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+      "selection_basis": "经济学院官方全职教师类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+      "selected_roster_observations": 3,
+      "source_files": [
+        {
+          "file": "faculty-batch-nku-rotation-003.json",
+          "sha256": "8c8b70fd671db58f8f55f7120c7aff626f4addbeddbb0d430c2d2320d507433c"
+        }
+      ],
+      "limitations": [
+        "校区不由办公地址推断；实时人事、聘用类型均未独立核验。",
+        "标签与日期不推定授位；访问、博士后与学位分开。",
+        "仅必要公开职业信息；无联系方式、出生、照片或网页全量缓存。",
+        "仅已读专业事实；未穷尽履历、成果或导师；空值非无此经历。",
+        "类别首页读到14名，页面自报163记录；未逐页核163人，非已核在岗人数。",
+        "只批准精确哈希下的部分职业资料；不代表整院、整校完整覆盖。",
+        "已明确授位、学位/攻读标签和非学位经历须分层；学校地理标准化不代表国籍，校区均未知。",
+        "当前名录/官方页面列示不等独立人事核验；不补推聘用类型或任职起点。",
+        "导师事件边不等导师当前导航，当前导师导航0。",
+        "未采集书目、第二资格及其他职业事实不等不存在；无论文全文或原始页面全量缓存。",
+        "仅原始研究来源审查；消费者字段和schema验证须由独立整合流程执行。"
       ]
     }
   ],
@@ -204909,6 +207687,29 @@
         }
       ],
       "note": "新增9部分职业，0pending；保留三态授位、全部日期和7条明确阶段师承，现任导师导航关闭。博士后和未知层次毕业仅来源保真显示映射；宋磊书目只保留候选。"
+    },
+    {
+      "kind": "reviewed_rotation003_wave4",
+      "source_batch_ids": [
+        "faculty-batch-buaa-rotation-003",
+        "faculty-batch-muc-rotation-003",
+        "faculty-batch-nku-rotation-003"
+      ],
+      "source_files": [
+        {
+          "file": "faculty-batch-buaa-rotation-003.json",
+          "sha256": "9bb7fc7e5c4c597e6404861a81f50fbaa611e685cf5c6e9477205379293750c0"
+        },
+        {
+          "file": "faculty-batch-muc-rotation-003.json",
+          "sha256": "6040f3d15b95eb53181598d7aaf6757df82d5a98b6c6ea5a1f7ea35d7601f904"
+        },
+        {
+          "file": "faculty-batch-nku-rotation-003.json",
+          "sha256": "8c8b70fd671db58f8f55f7120c7aff626f4addbeddbb0d430c2d2320d507433c"
+        }
+      ],
+      "note": "新增7部分职业，0pending；保留三态授位、全部日期和2条明确阶段师承，现任导师导航关闭。未知学习阶段仅作来源保真显示映射；苏德、吴明海保留受限候选，不替换或制造待补档案。"
     }
   ],
   "institutions": [

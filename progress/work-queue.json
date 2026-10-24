@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-10-23",
-  "base_commit": "ec303852c3331eb4ef33d725f85dcf531d3a6ef6",
+  "base_commit": "515d16f5e48cff7dae151464e0ea2ea704b8ace6",
   "scope": {
     "active_institution": "hit",
     "target_university_count": 39,
@@ -7020,6 +7020,90 @@
       "next_cursor": "rotation003_wave3_selected_sample_reviewed_fields_incomplete",
       "attempted_at": "2026-10-24",
       "last_verified_commit": "ec303852c3331eb4ef33d725f85dcf531d3a6ef6"
+    },
+    {
+      "task_id": "buaa:buaa-aeronautic-science-engineering:rotation003-wave4",
+      "institution_id": "buaa",
+      "organization_id": "buaa-aeronautic-science-engineering",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "航空科学与工程学院官方飞机系 / 教授类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://ase.buaa.edu.cn/gkkxygcxy/szdw/szgk.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/buaa-rotation003-wave4-coverage.json",
+        "progress/multischool-rotation003-wave4-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave4_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "515d16f5e48cff7dae151464e0ea2ea704b8ace6"
+    },
+    {
+      "task_id": "muc:muc-education:rotation003-wave4",
+      "institution_id": "muc",
+      "organization_id": "muc-education",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "教育学院官方教授类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://edu.muc.edu.cn/szdw/js.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/muc-rotation003-wave4-coverage.json",
+        "progress/multischool-rotation003-wave4-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave4_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "515d16f5e48cff7dae151464e0ea2ea704b8ace6"
+    },
+    {
+      "task_id": "nku:nku-economics:rotation003-wave4",
+      "institution_id": "nku",
+      "organization_id": "nku-economics",
+      "campus_ids": [],
+      "stage": "profile_research",
+      "status": "partial",
+      "scope": {
+        "description": "经济学院官方全职教师类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+        "claim": "listed_public_scope_only",
+        "university_complete": false
+      },
+      "depends_on": [],
+      "source_urls": [
+        "https://economics.nankai.edu.cn/qzjs/list.htm"
+      ],
+      "artifact_paths": [
+        "data/atlas.json",
+        "data/rosters.json",
+        "progress/nku-rotation003-wave4-coverage.json",
+        "progress/multischool-rotation003-wave4-coverage.json"
+      ],
+      "review_status": "approved",
+      "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+      "next_cursor": "rotation003_wave4_selected_sample_reviewed_fields_incomplete",
+      "attempted_at": "2026-10-24",
+      "last_verified_commit": "515d16f5e48cff7dae151464e0ea2ea704b8ace6"
     }
   ]
 }

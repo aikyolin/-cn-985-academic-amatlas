@@ -1,0 +1,257 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "515d16f5e48cff7dae151464e0ea2ea704b8ace6",
+  "school_id": "muc",
+  "school_name": "中央民族大学",
+  "batch_id": "faculty-batch-muc-rotation-003",
+  "status": "partial",
+  "held_candidates": [
+    {
+      "url": "https://edu.muc.edu.cn/info/1008/1705.htm",
+      "name": "苏德",
+      "order": 1,
+      "outcome": "Timeout; candidate held, no replacement"
+    },
+    {
+      "url": "https://edu.muc.edu.cn/info/1008/1701.htm",
+      "name": "吴明海",
+      "order": 3,
+      "outcome": "Timeout; candidate held, no replacement"
+    }
+  ],
+  "selected_candidate_names": [
+    "苏德",
+    "高兵",
+    "吴明海"
+  ],
+  "access_limitations": [
+    {
+      "url": "https://edu.muc.edu.cn/info/1008/1705.htm",
+      "name": "苏德",
+      "order": 1,
+      "outcome": "Timeout; candidate held, no replacement"
+    },
+    {
+      "url": "https://edu.muc.edu.cn/info/1008/1701.htm",
+      "name": "吴明海",
+      "order": 3,
+      "outcome": "Timeout; candidate held, no replacement"
+    }
+  ],
+  "coverage_complete": false,
+  "fields_complete": false,
+  "university_complete": false,
+  "selection": "教育学院官方教授类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+  "source_urls": [
+    "https://edu.muc.edu.cn/szdw/js.htm"
+  ],
+  "selected_roster_observations": 1,
+  "source_category_observed_count": 14,
+  "source_category_count_basis": "Observed roster/category only; not independently current headcount or employment. NKU only page 1 read; 163 is page-reported total.",
+  "selected_roster_original_order": [
+    {
+      "id": "roster-muc-gaobing",
+      "name": "高兵",
+      "official_profile_url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+      "native_link_target": "https://edu.muc.edu.cn/info/1008/1700.htm",
+      "roster_source_url": "https://edu.muc.edu.cn/szdw/js.htm",
+      "order": 2,
+      "listed_role": "教授",
+      "roster_category": "教授"
+    }
+  ],
+  "source_total_reported": 14,
+  "counts": {
+    "professional_profiles": 1,
+    "pending_profiles": 0,
+    "complete_profiles": 0,
+    "source_collections": {
+      "education": 3,
+      "appointments": 1,
+      "mentors": 2,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 2,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 2
+    },
+    "effective_professional_collections": {
+      "education": 3,
+      "appointments": 1,
+      "mentors": 2,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 2,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 2
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 3,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 0,
+      "confirmed_degree_events": 3
+    }
+  },
+  "source_references": [
+    {
+      "file": "faculty-batch-muc-rotation-003.json",
+      "sha256": "6040f3d15b95eb53181598d7aaf6757df82d5a98b6c6ea5a1f7ea35d7601f904",
+      "scope_file": "faculty-batch-muc-rotation-003-scope.json",
+      "scope_sha256": "1e86b19068ed019f3524ad1b2c18dec627db13803af73e9ca393a78a529ca95a",
+      "qa_file": "faculty-batch-muc-rotation-003-qa.json",
+      "qa_sha256": "5662a41a575ee33f2c4d60c095b24622579d5e72fc41963cbfc7c6006dfd7fba",
+      "independent_review_file": "faculty-batch-muc-rotation-003-independent-review.json",
+      "independent_review_sha256": "8d05f164152fd7293aa021e5d8b728f13bfda06eb91369a0fad757353d511410"
+    }
+  ],
+  "source_context": {
+    "schema_version": "1.2",
+    "batch_id": "faculty-batch-muc-rotation-003",
+    "institution": {
+      "id": "muc",
+      "official_name": "中央民族大学",
+      "official_url": "https://www.muc.edu.cn/",
+      "source_urls": [
+        "https://edu.muc.edu.cn/szdw/js.htm"
+      ],
+      "scope_note": "新增院系；单一官方类别原序首3，缺正文者保留未核，不后移补人。"
+    },
+    "org_units": [
+      {
+        "id": "muc-education",
+        "name": "教育学院",
+        "type": "school",
+        "school_id": "muc",
+        "parent_id": "muc",
+        "source_url": "https://edu.muc.edu.cn/szdw/js.htm",
+        "source_id": "muc-rotation003-roster",
+        "evidence_status": "official_roster_body_read"
+      }
+    ],
+    "campuses": [],
+    "scope": "教育学院官方教授类别原序首3候选；仅部分公开职业档案，不代表完整院系覆盖或实时在岗总数。",
+    "retrieved_at": "2026-10-24",
+    "coverage_complete": false,
+    "review_status": "pending_independent_review",
+    "sources": [
+      {
+        "id": "muc-rotation003-roster",
+        "url": "https://edu.muc.edu.cn/szdw/js.htm",
+        "evidence_status": "official_roster_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-buaa-muc-nku/muc-roster-minimal.json",
+        "web_reference": "turn2206view1",
+        "published_at": null,
+        "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification."
+      },
+      {
+        "id": "muc-gaobing-profile",
+        "url": "https://edu.muc.edu.cn/info/1008/1700.htm",
+        "evidence_status": "official_public_body_read",
+        "retrieved_at": "2026-10-24",
+        "source_type": "university_official",
+        "evidence_file": "research-rotation003-buaa-muc-nku/muc-gaobing-minimal.json",
+        "web_reference": "turn2207view3",
+        "published_at": null,
+        "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification."
+      }
+    ],
+    "limitations": [
+      "校区不由办公地址推断；实时人事、聘用类型均未独立核验。",
+      "标签与日期不推定授位；访问、博士后与学位分开。",
+      "仅必要公开职业信息；无联系方式、出生、照片或网页全量缓存。",
+      "仅已读专业事实；未穷尽履历、成果或导师；空值非无此经历。",
+      "首3中苏德、吴明海正文超时，暂不形成专业档案；仅高兵1人，不后移补齐。"
+    ],
+    "counts": {
+      "education": 3,
+      "appointments": 1,
+      "mentors": 2,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 2,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "people": 1,
+      "unique_sources": 2,
+      "degree_awarded_true": 3,
+      "degree_awarded_null": 0,
+      "degree_awarded_false": 0
+    }
+  },
+  "independent_source_review": {
+    "review_status": "passed_with_documented_limits",
+    "reviewed_at": "2026-10-24T00:42:45.798499+00:00",
+    "data_sha256": "6040f3d15b95eb53181598d7aaf6757df82d5a98b6c6ea5a1f7ea35d7601f904",
+    "counts": {
+      "education": 3,
+      "appointments": 1,
+      "mentors": 2,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 2,
+      "pending_mentor_candidates": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 0,
+      "pending_professional_fact_candidates": 0,
+      "people": 1,
+      "unique_sources": 2,
+      "degree_awarded_true": 3,
+      "degree_awarded_false": 0,
+      "degree_awarded_null": 0
+    },
+    "integration_limits": [
+      "只批准精确哈希下的部分职业资料；不代表整院、整校完整覆盖。",
+      "已明确授位、学位/攻读标签和非学位经历须分层；学校地理标准化不代表国籍，校区均未知。",
+      "当前名录/官方页面列示不等独立人事核验；不补推聘用类型或任职起点。",
+      "导师事件边不等导师当前导航，当前导师导航0。",
+      "未采集书目、第二资格及其他职业事实不等不存在；无论文全文或原始页面全量缓存。",
+      "仅原始研究来源审查；消费者字段和schema验证须由独立整合流程执行。",
+      "苏德、吴明海必须仍为未核候选，不可作为职业档案或用后序人替换。"
+    ],
+    "blockers": []
+  },
+  "limitations": [
+    "校区不由办公地址推断；实时人事、聘用类型均未独立核验。",
+    "标签与日期不推定授位；访问、博士后与学位分开。",
+    "仅必要公开职业信息；无联系方式、出生、照片或网页全量缓存。",
+    "仅已读专业事实；未穷尽履历、成果或导师；空值非无此经历。",
+    "首3中苏德、吴明海正文超时，暂不形成专业档案；仅高兵1人，不后移补齐。",
+    "只批准精确哈希下的部分职业资料；不代表整院、整校完整覆盖。",
+    "已明确授位、学位/攻读标签和非学位经历须分层；学校地理标准化不代表国籍，校区均未知。",
+    "当前名录/官方页面列示不等独立人事核验；不补推聘用类型或任职起点。",
+    "导师事件边不等导师当前导航，当前导师导航0。",
+    "未采集书目、第二资格及其他职业事实不等不存在；无论文全文或原始页面全量缓存。",
+    "仅原始研究来源审查；消费者字段和schema验证须由独立整合流程执行。",
+    "苏德、吴明海必须仍为未核候选，不可作为职业档案或用后序人替换。"
+  ],
+  "next_action": "保留原序范围与正文受限候选；补核须另获授权，不替换或绕过受限页面，不将本批当完整院系。",
+  "release_status": "local_not_published"
+}

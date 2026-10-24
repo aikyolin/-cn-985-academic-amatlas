@@ -1,0 +1,77 @@
+{
+  "status": "passed_local_checks_awaiting_controller_publication",
+  "baseline_commit": "515d16f5e48cff7dae151464e0ea2ea704b8ace6",
+  "baseline_tree": "f5df1b6db17d139ddabf2e7e767b44cee51c87d5",
+  "build_id": "4796424da9ef1e58",
+  "asset_version": "rotation003-20261024-w2",
+  "counts": {
+    "professional": 580,
+    "pending": 84,
+    "schools": 39,
+    "organizations": 240,
+    "roster_entries": 1746,
+    "raw_observations": 1784,
+    "tasks": 231,
+    "department_workbooks": 120
+  },
+  "additions": {
+    "professional": 7,
+    "pending": 0,
+    "education": 26,
+    "appointments": 7,
+    "stage_specific_mentors": 2,
+    "bibliographies": 0,
+    "degree_awarded_true": 6,
+    "degree_awarded_null": 12,
+    "degree_awarded_false": 8,
+    "held_candidates_not_person_records": 2
+  },
+  "regressions": {
+    "python": 463,
+    "node": 586,
+    "total": 1049,
+    "all_original_1044_retained": true,
+    "new_generic_boundary_tests": 5,
+    "no_network_or_installs": true
+  },
+  "preservation": {
+    "old_professional": 573,
+    "old_pending": 84,
+    "old_roster": 1739,
+    "old_observations": 1777,
+    "old_department_workbooks_byte_identical": 117,
+    "production_files_unchanged": true
+  },
+  "source_integrity": {
+    "approved_chain_files": 28,
+    "source_specification_sha256": "a482ec4f3be506ac016f4676ab87790477576910d480ba2b254cafd4125f14ce"
+  },
+  "independent_review_sha256": {
+    "rotation003-wave4-independent-consumer-report.json": "926863f9f2176a03e376522acebbcf5fe338245ac305cbeafce5f46bacac4757",
+    "rotation003-wave4-independent-consumer-actual-consumers.json": "e30fc20af7b9baabd40acf3a63e861a402ad93b29bc061a97df8248cc15b6e2e",
+    "rotation003-wave4-independent-consumer-test-maintenance-review.json": "660a2c0d329dd5f2bbfb29810ff5f384c41fbe2ce33e384042c01648c13d9f3a",
+    "rotation003-wave4-export-audit-report.json": "28a11a87d2f511804e9b5df1ddb59d5df5b9ccc4af4963ae1031066fddb789ba",
+    "rotation003-wave4-export-determinism-report.json": "e6d392268f9678415bece8f24083bc51a377caae3d524b8b1a66440f80315046"
+  },
+  "exports": {
+    "xlsx": 121,
+    "cells": 196858,
+    "sheets": 609,
+    "hyperlinks": 16282,
+    "zip_members": 2081,
+    "formula_cells": 0,
+    "deterministic_generated_files": 124,
+    "complete_builds": 2
+  },
+  "boundaries": [
+    "北航3人同校独立官方资料身份已核，但名录没有原生个人链接，不开启已核名录档案导航。",
+    "民大原序苏德、高兵、吴明海中仅高兵正文可读；2人保留受限候选，不替补、不制造pending，覆盖仍为partial而来源访问restricted。",
+    "南开首页14观察和页面自报163总数分开，非已核现任人数。",
+    "董雷霆2015-10工作与2016-02-01入职日期冲突保留，教授起点null；2位具名导师仅明确学习阶段，不建立当前导师导航。",
+    "未知学习阶段只可逆映射至既有保守显示标签；原始事件类型、授位三态、原始学位标签和来源说明保留。"
+  ],
+  "limitations": [
+    "No full department/university completion or current-personnel verification.",
+    "Local validation is not publication. Controller owns browser acceptance and sole remote publication."
+  ]
+}

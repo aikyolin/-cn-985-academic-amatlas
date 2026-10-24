@@ -1,6 +1,7 @@
 """Offline exact-boundary tests for the source-unavailable wrapping-only patch.
 No network, browser, build, or output writes. All prior source/Excel bytes are pinned.
 """
+from release27_history import release27_view
 from release26_history import release26_view
 import hashlib,json,os,pathlib,re,unittest
 ROOT=pathlib.Path(os.environ.get('ACADEMIC_ATLAS_TEST_ROOT',pathlib.Path(__file__).resolve().parents[1]))
@@ -300,22 +301,24 @@ RELEASE26_PIN_OVERLAY={'site/atlas.json': 'f0f46d4cba67eec805f944e2bef431120b380
 RELEASE26_ADDED_WORKBOOKS={'site/exports/lzu-civil-engineering-mechanics.xlsx': '6332c787a78aafee8b83c18768fb99fee29b6c8f121d182ebd1dca22bb86efa3', 'site/exports/nwsuaf-life-sciences.xlsx': 'ecbce0ff91b5f0e626ec1e2062e971aab36e51c7bc1724c67e515f8b763e443b', 'site/exports/xjtu-modern-physics-astronomy-preparatory.xlsx': 'f73df1a620894c105fd452b3e29742e66b0c8f25d8d277ec8cee3778f9286ddb'}
 # Exact release27 endpoint overlay; all earlier golden constants remain unchanged.
 RELEASE27_PIN_OVERLAY={'site/atlas.json': '1d2e8210a0ca6d60b874d793bd77e49de7da6f845493eb6912b0f4861e57afa2', 'site/rosters.json': '4971f6b3812c6f8d133fd0aba909e65f2209b72cfb0d37e668c62531ec0446cc', 'data/atlas.json': '602e459ef4bc62aa839e8eff7475819f5a6672e1492b1181ac9188372fe9d1c5', 'data/rosters.json': '217716511dc290970fd8708af5cacebaf5f1343b1ec671515b5048e5f81dabec', 'progress/README.md': '08617604707fff4e8121cdd13b08ef3a92e96aa1df2b38cc9cad9f91cc5b1cc6', 'progress/current-coverage.md': 'f92a7728e5c329e0c203fa1c04910d485b496c83f1756728bf9bbd5dc7b55d4a', 'progress/work-queue.json': '88037ab5e76bb2744eaa5b5dc9601d5e1e375b31e3c3f33116e8eeb3a1fd1f60', 'site/exports/待核对名录.xlsx': '9100c6cf6a1a5b6128737e49ef0f79efa49779739efd11bafbf12dfa05917972', 'site/exports/待核对名录.csv': '2e14625fd76a04d5fa29ee4621669dd8b496ca26fbabb41df20043169f1fa78c'}
+# Exact release28 endpoint overlay; all earlier golden constants remain unchanged.
+RELEASE28_PIN_OVERLAY={'site/atlas.json': '36fe06b748feef6919e105ce3fa81c58426b43d8374ccb03b2d828960462ed8b', 'site/rosters.json': '84edc29d2a70ef04d809effe8b3757cba2d614d469691bb16a8ce9f711b052cc', 'data/atlas.json': '184d94676b19b55d24d00b9c6056748a3a778754dd920a1a126be21685168d61', 'data/rosters.json': 'eefa9fe9add7c8dd9aaa49b81deeda73e51a8a1b214a9a6b3a26a2429110de29', 'progress/README.md': '7db1b1af415d5ea1086b76c6253dd91bce89abb330cfaa39ce63bae45f2f2045', 'progress/current-coverage.md': 'ddd946e215da974b867a2da0816b9fc4d36758b18d2a4f99085e1800978665cd', 'progress/work-queue.json': '157958452c461dee7d1fced71e8c8260d09ac2548fcc262ebd7d01c34b4f4d7e', 'site/exports/待核对名录.xlsx': '0482a9b49535e69a633ac7e4a25920232525e1fa34a5c770b53bd8757aa55c1b', 'site/exports/待核对名录.csv': '62ead57bd26f1d29fa26ade92aa5f021937354f31427867b1b433ba25d15bd32'}
 class SourceUnavailableLayoutFix(unittest.TestCase):
     def test_all_four_data_payloads_are_byte_identical(self):
         for name in ['data/atlas.json','data/rosters.json','site/atlas.json','site/rosters.json']:
-            with self.subTest(name=name): self.assertEqual(sha(read(name)),RELEASE27_PIN_OVERLAY.get(name,RELEASE26_PIN_OVERLAY.get(name,BASELINE_FILES[name])))
+            with self.subTest(name=name): self.assertEqual(sha(read(name)),RELEASE28_PIN_OVERLAY.get(name,RELEASE27_PIN_OVERLAY.get(name,RELEASE26_PIN_OVERLAY.get(name,BASELINE_FILES[name]))))
     def test_all_112_workbooks_are_byte_identical(self):
         expected={n:h for n,h in BASELINE_FILES.items() if n.startswith('site/exports/') and n.endswith('.xlsx')}
         self.assertEqual(len(expected),112)
         actual={str(p.relative_to(ROOT)):sha(p.read_bytes()) for p in (ROOT/'site/exports').glob('*.xlsx')}
-        expected={n:RELEASE27_PIN_OVERLAY.get(n,RELEASE26_PIN_OVERLAY.get(n,h))for n,h in expected.items()};expected.update(RELEASE26_ADDED_WORKBOOKS);expected.update({'site/exports/bnu-sociology.xlsx': '753ba9690453605f0860ae97ae13d9348f8ec72ad3f1ffae9480a620839e8914', 'site/exports/fdu-marxism.xlsx': 'db33026a377539a55c154f80adf1670f4c48588380e3f3297b5fc3fffdec0a2e', 'site/exports/ustc-chemistry.xlsx': '166064516591b881dbd8942e74c234185742a12b811acc93be50157bf7b2ad13'})
+        expected={n:RELEASE28_PIN_OVERLAY.get(n,RELEASE27_PIN_OVERLAY.get(n,RELEASE26_PIN_OVERLAY.get(n,h)))for n,h in expected.items()};expected.update(RELEASE26_ADDED_WORKBOOKS);expected.update({'site/exports/buaa-aeronautic-science-engineering.xlsx': 'a32e62eef8448d0799b42f464f613841f72a578a66c073c44f30fbe9e63eb34b', 'site/exports/muc-education.xlsx': '5fd10b35753001aac54db16064c7ff55cf9b8f759bc47b3729acd61976feb21f', 'site/exports/nku-economics.xlsx': '230487cc31b92196664a6b67d268064bfd4d03fd76a1ff6b57cbaea9e79a7969'});expected.update({'site/exports/bnu-sociology.xlsx': '753ba9690453605f0860ae97ae13d9348f8ec72ad3f1ffae9480a620839e8914', 'site/exports/fdu-marxism.xlsx': 'db33026a377539a55c154f80adf1670f4c48588380e3f3297b5fc3fffdec0a2e', 'site/exports/ustc-chemistry.xlsx': '166064516591b881dbd8942e74c234185742a12b811acc93be50157bf7b2ad13'})
         self.assertEqual(actual,expected)
     def test_all_other_non_test_baseline_files_are_byte_identical(self):
         allow=set(TOKEN_FILES)|{'site/styles.css'}
         checked=0
         for name,digest in BASELINE_FILES.items():
             if name in allow or name.startswith('tests/'): continue
-            with self.subTest(name=name): self.assertEqual(sha(read(name)),RELEASE27_PIN_OVERLAY.get(name,RELEASE26_PIN_OVERLAY.get(name,digest)))
+            with self.subTest(name=name): self.assertEqual(sha(read(name)),RELEASE28_PIN_OVERLAY.get(name,RELEASE27_PIN_OVERLAY.get(name,RELEASE26_PIN_OVERLAY.get(name,digest))))
             checked+=1
         self.assertGreater(checked,170)
     def test_stylesheet_adds_only_the_exact_scoped_wrapping_rule(self):

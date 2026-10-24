@@ -1,0 +1,124 @@
+{
+  "updated_at": "2026-10-24",
+  "baseline_commit": "515d16f5e48cff7dae151464e0ea2ea704b8ace6",
+  "coverage_complete": false,
+  "fields_complete": false,
+  "counts": {
+    "source_people": 7,
+    "new_professional_profiles": 7,
+    "new_pending_profiles": 0,
+    "new_organization_nodes": 3,
+    "source_collections": {
+      "education": 26,
+      "appointments": 7,
+      "mentors": 2,
+      "committee_members": 0,
+      "publications": 0,
+      "sources": 14,
+      "research_collaborators": 0,
+      "pending_mentor_candidates": 0,
+      "pending_mentors": 0,
+      "project_guidance": 0,
+      "professional_research_advisors": 0,
+      "pending_publications": 0,
+      "teaching": 0,
+      "pending_education_candidates": 0,
+      "pending_appointment_candidates": 1,
+      "pending_professional_fact_candidates": 0,
+      "academic_service": 0,
+      "honors": 0,
+      "research_projects": 0,
+      "research_fields": 19
+    },
+    "source_degree_counts": {
+      "degree_awarded_true": 6,
+      "degree_awarded_false": 8,
+      "degree_awarded_null": 12,
+      "confirmed_degree_events": 6
+    },
+    "quick_link_eligible_mentor_records": 0
+  },
+  "schools": [
+    {
+      "school_id": "buaa",
+      "batch_id": "faculty-batch-buaa-rotation-003",
+      "coverage_path": "progress/buaa-rotation003-wave4-coverage.json",
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "muc",
+      "batch_id": "faculty-batch-muc-rotation-003",
+      "coverage_path": "progress/muc-rotation003-wave4-coverage.json",
+      "professional_profiles": 1,
+      "pending_profiles": 0,
+      "status": "partial"
+    },
+    {
+      "school_id": "nku",
+      "batch_id": "faculty-batch-nku-rotation-003",
+      "coverage_path": "progress/nku-rotation003-wave4-coverage.json",
+      "professional_profiles": 3,
+      "pending_profiles": 0,
+      "status": "partial"
+    }
+  ],
+  "source_references": [
+    {
+      "file": "faculty-batch-buaa-rotation-003.json",
+      "sha256": "9bb7fc7e5c4c597e6404861a81f50fbaa611e685cf5c6e9477205379293750c0",
+      "scope_file": "faculty-batch-buaa-rotation-003-scope.json",
+      "scope_sha256": "edabfe90f6d7818b9f78757e56d40dfe2127401242519e4340f9dd9e3bf0cd51",
+      "qa_file": "faculty-batch-buaa-rotation-003-qa.json",
+      "qa_sha256": "2ebcd92bbe029d96755be2a2dfd11ef72534a2de10df8e508c135c6377e6b001",
+      "independent_review_file": "faculty-batch-buaa-rotation-003-independent-review.json",
+      "independent_review_sha256": "c56df216b80b38cde9708dcda9416e1e9e44a84440e11c73d3fe389fcb374853"
+    },
+    {
+      "file": "faculty-batch-muc-rotation-003.json",
+      "sha256": "6040f3d15b95eb53181598d7aaf6757df82d5a98b6c6ea5a1f7ea35d7601f904",
+      "scope_file": "faculty-batch-muc-rotation-003-scope.json",
+      "scope_sha256": "1e86b19068ed019f3524ad1b2c18dec627db13803af73e9ca393a78a529ca95a",
+      "qa_file": "faculty-batch-muc-rotation-003-qa.json",
+      "qa_sha256": "5662a41a575ee33f2c4d60c095b24622579d5e72fc41963cbfc7c6006dfd7fba",
+      "independent_review_file": "faculty-batch-muc-rotation-003-independent-review.json",
+      "independent_review_sha256": "8d05f164152fd7293aa021e5d8b728f13bfda06eb91369a0fad757353d511410"
+    },
+    {
+      "file": "faculty-batch-nku-rotation-003.json",
+      "sha256": "8c8b70fd671db58f8f55f7120c7aff626f4addbeddbb0d430c2d2320d507433c",
+      "scope_file": "faculty-batch-nku-rotation-003-scope.json",
+      "scope_sha256": "93a6eb81928a2c3f12846ccc93d53a9542e0f1bb9d53f4bc89479f600fde98d8",
+      "qa_file": "faculty-batch-nku-rotation-003-qa.json",
+      "qa_sha256": "1f496051f5752bc1dacfe914ac6b82aeb0aa02c38b516c4cf46da105609a6d96",
+      "independent_review_file": "faculty-batch-nku-rotation-003-independent-review.json",
+      "independent_review_sha256": "717c344509aa7afd444e7662c1a74cbe5e42cec1997f55ec16288036c37adf40"
+    }
+  ],
+  "consumer_boundaries": [
+    "只批准精确哈希下的部分职业资料；不代表整院、整校完整覆盖。",
+    "已明确授位、学位/攻读标签和非学位经历须分层；学校地理标准化不代表国籍，校区均未知。",
+    "当前名录/官方页面列示不等独立人事核验；不补推聘用类型或任职起点。",
+    "导师事件边不等导师当前导航，当前导师导航0。",
+    "未采集书目、第二资格及其他职业事实不等不存在；无论文全文或原始页面全量缓存。",
+    "仅原始研究来源审查；消费者字段和schema验证须由独立整合流程执行。",
+    "董雷霆的两种起点保持冲突候选；BUAA不得标记为原生个人名录链接。",
+    "只批准精确哈希下的部分职业资料；不代表整院、整校完整覆盖。",
+    "已明确授位、学位/攻读标签和非学位经历须分层；学校地理标准化不代表国籍，校区均未知。",
+    "当前名录/官方页面列示不等独立人事核验；不补推聘用类型或任职起点。",
+    "导师事件边不等导师当前导航，当前导师导航0。",
+    "未采集书目、第二资格及其他职业事实不等不存在；无论文全文或原始页面全量缓存。",
+    "仅原始研究来源审查；消费者字段和schema验证须由独立整合流程执行。",
+    "苏德、吴明海必须仍为未核候选，不可作为职业档案或用后序人替换。",
+    "只批准精确哈希下的部分职业资料；不代表整院、整校完整覆盖。",
+    "已明确授位、学位/攻读标签和非学位经历须分层；学校地理标准化不代表国籍，校区均未知。",
+    "当前名录/官方页面列示不等独立人事核验；不补推聘用类型或任职起点。",
+    "导师事件边不等导师当前导航，当前导师导航0。",
+    "未采集书目、第二资格及其他职业事实不等不存在；无论文全文或原始页面全量缓存。",
+    "仅原始研究来源审查；消费者字段和schema验证须由独立整合流程执行。"
+  ],
+  "source_review_scope": "来源已独审，本次只离线哈希、保真和消费者验证，无来源重访。",
+  "release_status": "local_not_published",
+  "local_patch_sha256": "1b23c873b37be21461cb6fe0f85a0040fe7ca37c5ee9437528192c9cf9021d00"
+}
