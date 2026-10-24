@@ -1,3 +1,4 @@
+from source_date_history import historical_bytes
 """Independent release24 SYSU/SCU offline source-boundary regression.
 
 The original sanitized package leaves/shapes and immutable release23 prefixes
@@ -1494,7 +1495,7 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
 
     def test_16_unchanged_application_registry_and_helpers(self):
         for path, digest in UNCHANGED_APPLICATION_SHA256.items():
-            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(), RELEASE26_DISPLAY_SHA256.get(path, LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest)))), path)
+            self.assertEqual(hashlib.sha256(historical_bytes(path,(ROOT/path).read_bytes())).hexdigest(), RELEASE26_DISPLAY_SHA256.get(path, LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest)))), path)
 
     def test_17_actual_statistics_are_partial_not_full_school_population(self):
         js = self.consumers()

@@ -1,3 +1,4 @@
+import {historicalBytes} from './source-date-history.js';
 import {endpointSha256} from './public-append-history.js';
 const RELEASE31_PUBLIC_METADATA_PIN_OVERLAY={"data/atlas.json": "2f843a600ef79f9b6d24ee98b702ed17dc335c776c4893f0316b5064ba3474fb", "data/rosters.json": "fa3fd547a59c10a5e6285523fbcd5e3215b6076f59f0a9246554fedbf2e3a83e", "site/atlas.json": "7d712a1f1e7d83d6093242dd0e9e12bb9d39d2183c33e4f7ffdecb2846caa327", "site/rosters.json": "35cad326388607f1abac4e9efbd05dbefa1eb4a1a7b7ffbc1ed194a1ee56dc27"};
 const RELEASE31_PIN_OVERLAY={"data/atlas.json": "28643e5c9a1d67007146dba8a2e6d410008deba5a5a1fcabdd10979f408fd679", "data/rosters.json": "3e47fc6836bde53790d63b6c2c6347fad614ecff63c8548051398ef8bd7eb3ca", "site/atlas.json": "47e92ca3f762d8921aa8bc6ab8f150c6d20d509d29bdee307cf5fecd6d263470", "site/rosters.json": "fd18bd4a98d291c4a441d4f1ac2ec7f7e4e684cf1e406965fa2c6a6cbd8fe4b1"};
@@ -116,8 +117,8 @@ test('all degree-stage memberships and 122 filter combinations are unchanged by 
 });
 
 test('application and exporter match original bytes or the exact reviewed layout-only overlay',()=>{
- for(const [file,digest]of Object.entries(UNCHANGED_FILES))assert.equal(sha(fs.readFileSync(path.join(root,file))),endpointSha256(file,RELEASE31_PUBLIC_METADATA_PIN_OVERLAY[file]||RELEASE31_PIN_OVERLAY[file]||RELEASE30_PIN_OVERLAY[file]||RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_PIN_OVERLAY[file]||LAYOUT_FIX_APPLICATION_SHA256[file]||digest),file);
- for(const [file,n]of [['site/app.js',3],['site/rosters.js',1],['site/index.html',2]])assert.equal(fs.readFileSync(path.join(root,file),'utf8').split('rotation003-20261024-w2').length-1,n);
+ for(const [file,digest]of Object.entries(UNCHANGED_FILES))assert.equal(sha(historicalBytes(file,root)),endpointSha256(file,RELEASE31_PUBLIC_METADATA_PIN_OVERLAY[file]||RELEASE31_PIN_OVERLAY[file]||RELEASE30_PIN_OVERLAY[file]||RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_PIN_OVERLAY[file]||LAYOUT_FIX_APPLICATION_SHA256[file]||digest),file);
+ for(const [file,n]of [['site/app.js',3],['site/rosters.js',1],['site/index.html',2]])assert.equal(historicalBytes(file,root).toString('utf8').split('rotation003-20261024-w2').length-1,n);
 });
 
 test('actual rendering is read-only and does not promote the pending Chen Renwei selection',async()=>{

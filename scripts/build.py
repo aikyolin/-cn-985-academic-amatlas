@@ -212,7 +212,7 @@ def publication_value(publication,key):
 
 def profile_availability_label(person):
  if person.get('official_profile_availability_label'):return person['official_profile_availability_label']
- status='个人主页当前不可用' if person.get('official_profile_availability')=='unavailable' or person.get('official_profile_navigation_eligible') is False else '公开个人页（时效以核对日为准）'
+ status='个人主页当前不可用' if person.get('official_profile_availability')=='unavailable' or person.get('official_profile_navigation_eligible') is False else '公开个人页（访问与内容时效见来源记录）'
  return '；'.join(v for v in [person.get('official_profile_link_label'),status] if v)
 
 def teaching_summary(person):
@@ -252,7 +252,26 @@ def professional_event_note(person,guidance):
  if not event:return ''
  return '对应非学位科研经历：'+str(event['event_id'])+'；'+str(event.get('institution') or '机构未披露')+'；'+str(event.get('start') or '起始时间未披露')+' 至 '+str(event.get('end') or '结束时间未披露')+'（经历区间，不等于指导起止；非博士后认定）'
 
+def source_retrieval_date_summary(person):
+ # Retrieval dates are source metadata, not a whole-person review or current-employment check.
+ sources=person.get('sources') if isinstance(person.get('sources'),list) else []
+ dates=set();missing=not sources;invalid=False
+ for source in sources:
+  value=source.get('retrieved_at') if isinstance(source,dict) else None
+  if value is None or isinstance(value,str) and not value.strip():missing=True;continue
+  if not isinstance(value,str) or not re.fullmatch(r'[0-9]{4}-[0-9]{2}-[0-9]{2}',value):invalid=True;continue
+  year,month,day=map(int,value.split('-'));leap=year%4==0 and (year%100!=0 or year%400==0)
+  days=[31,29 if leap else 28,31,30,31,30,31,31,30,31,30,31]
+  if year<1 or not 1<=month<=12 or not 1<=day<=days[month-1]:invalid=True;continue
+  dates.add(value)
+ ordered=sorted(dates);summary=(ordered[0]+' 至 '+ordered[-1]) if len(ordered)>1 else ordered[0] if ordered else '未知'
+ notes=[]
+ if missing:notes.append('部分来源日期未单独记录' if ordered else '来源日期未单独记录')
+ if invalid:notes.append('部分来源日期异常' if ordered else '来源日期异常')
+ return summary+('（'+'；'.join(notes)+'）' if notes else '')
+
 def department_tables(people,updated_at,institutions=None):
+ # Retain the existing call signature; the dataset update date is not a retrieval/review date.
  schools={p.get("school_id") for p in people}
  assert len(schools)<=1 and None not in schools, "Department export cannot mix schools or omit school IDs"
  departments={p.get("department_id") for p in people}
@@ -260,13 +279,14 @@ def department_tables(people,updated_at,institutions=None):
  school_id=next(iter(schools),"")
  names={s["id"]:s["official_name"] for s in (institutions or [])}
  school_name=names.get(school_id,school_id)
- tables=[('总览',[['姓名','校区','院系','官方主页','核对日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p.get('campus') or '校区未标注',p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],updated_at,'；'.join(p['unknowns']),'分批核实资料，不是完整名录',profile_availability_label(p),'；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]
+ tables=[('总览',[['姓名','校区','院系','官方主页','已记录来源检索日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p.get('campus') or '校区未标注',p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],source_retrieval_date_summary(p),'；'.join(p['unknowns']),'分批核实资料，不是完整名录',profile_availability_label(p),'；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]
  # Append inside the existing overview scope cell: keep all five sheets and every column.
  for p,row in zip(people,tables[0][1][1:]):
   summary=teaching_summary(p)
   current=p.get('current_employment') or {}
   affiliation='；'.join(str(v) for v in [p.get('sampling_affiliation_label'),'已核现任单位：'+str(current['institution']) if current.get('institution') else None,current.get('note'),current.get('source_url')] if v) if p.get('sampling_affiliation_label') else ''
   if summary or affiliation:row[6]='；'.join(v for v in [row[6],p.get('profile_coverage_label'),affiliation,summary] if v)
+  row[6]+='；人物整体核验日期未单独记录'
  # Explicit source labels, not URL hosts, opt this table into neutral headings. Positions stay fixed.
  if any(p.get('official_profile_link_label') or p.get('official_profile_availability_label') for p in people):
   tables[0][1][0][3]='个人主页／职业网站（来源类型见说明）'
@@ -303,7 +323,7 @@ def department_tables(people,updated_at,institutions=None):
     for e in p['education']:
      url=e.get('classification_source')
      if e.get('institution_985') in ('yes','no') and valid_url(url) and url not in seen:
-      rows.append([p['name'],'institution-classification-'+str(len(seen)),url,'历史985院校分类参考；非个人授位或就读当年建设身份的证明',updated_at]);seen.add(url)
+      rows.append([p['name'],'institution-classification-'+str(len(seen)),url,'历史985院校分类参考；非个人授位或就读当年建设身份的证明','未单独记录']);seen.add(url)
   tables.append((label,rows))
  for _,rows in tables:
   rows[0].extend(['所属学校ID','所属学校'])

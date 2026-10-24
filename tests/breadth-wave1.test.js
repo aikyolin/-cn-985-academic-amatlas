@@ -163,7 +163,7 @@ function tables(){
 test('department manifests keep three selected profiles per real unit and live export totals match current school/department scope',()=>{
   const out=tables();assert.equal(out.selected_manifest.length,4);
   for(const b of BATCHES){const selected=out.selected_manifest.find(e=>e.department_id===b.department),live=out.manifest.find(e=>e.department_id===b.department),snapshot=site.exports.find(e=>e.department_id===b.department);assert(selected);assert(live);assert(snapshot);assert.equal(selected.people_count,3);assert.equal(selected.school_id,b.sid);assert.equal(selected.path,`exports/${b.department}.xlsx`);assert.equal(live.people_count,db.people.filter(p=>p.department_id===b.department&&p.school_id===b.sid).length);assert.deepEqual(snapshot,live);
-    const t=out.tables[b.department];assert.deepEqual(Object.keys(t),['总览','经历','导师','论文','来源']);assert.equal(t['总览'].length,4);for(const row of t['总览'].slice(1)){assert.equal(row[1],'校区未标注');assert.equal(row[6],'分批核实资料，不是完整名录')}for(const rows of Object.values(t))for(const row of rows.slice(1))assert.deepEqual(row.slice(-2),[b.sid,db.institutions.find(s=>s.id===b.sid).official_name]);
+    const t=out.tables[b.department];assert.deepEqual(Object.keys(t),['总览','经历','导师','论文','来源']);assert.equal(t['总览'].length,4);for(const row of t['总览'].slice(1)){assert.equal(row[1],'校区未标注');assert.equal(row[6],'分批核实资料，不是完整名录；人物整体核验日期未单独记录')}for(const rows of Object.values(t))for(const row of rows.slice(1))assert.deepEqual(row.slice(-2),[b.sid,db.institutions.find(s=>s.id===b.sid).official_name]);
   }
 });
 

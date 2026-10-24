@@ -1,0 +1,1065 @@
+{
+  "version": "public_metadata_transition_v1",
+  "baseline_commit": "a84f750f65753d1c7b7e1d95366637060c203c10",
+  "references": {
+    "tests/fixtures/release33-public-file-manifest.json": "78e898a933bc2ec26f7a27b00ae5c25beaf9720279ce3bd11b136b9869fe246a",
+    "tests/fixtures/source-date-metadata-policy.json": "fc4ae0e601f3a5861a73fa490b60fc0e7cafe317cd51abcbb7bf37c01dcd368f",
+    "tests/fixtures/source-date-code-contract.json": "ef158f832eb2b86b59e6562eed0d13cfffec06c82330a6049835bf4c581f99cb",
+    "scripts/validate_metadata_transition.py": "b8ee8f46c382076abf97684dd4e1a659ba6ad2a3105512faec77aa9f8f84814a"
+  },
+  "changed": {
+    "scripts/build.py": {
+      "before_sha256": "92b6ec03d18666503a7e890e09faffe2e3ac7be61b017ec85b291c1498addacb",
+      "after_sha256": "5384b24c99229c1a520a246177614640a5e6cdf959ead5a78c11e73b2e0e85cc",
+      "byte_length": 31103
+    },
+    "site/app.js": {
+      "before_sha256": "19945c1392982e4b3a1df95d93c271e957bf16b2a238f8d63d24ed892c722dea",
+      "after_sha256": "7eabb8614b71159119075d6690650229590aba7c17c5fe3a8b8680abfa680f5c",
+      "byte_length": 40379
+    },
+    "site/atlas.json": {
+      "before_sha256": "9d805c710f54503940e27fc1d54e66567338fed3318f613f5717a5c5b2ebf8c3",
+      "after_sha256": "aba76e4dfad07e5b8bec8c090cd1773eda87480ed1f0a20c02253d46ebf547a8",
+      "byte_length": 10168224
+    },
+    "site/exports/bit-cs-image-perception.xlsx": {
+      "before_sha256": "8ecc8beff095f5f5d11220ad0b50ec47695fdae46b9869cd73e08d2f665b6732",
+      "after_sha256": "84177fc77e1b0959b86803b39e90c70529da62d606b63c6aa19f18a73a717e0c",
+      "byte_length": 17037
+    },
+    "site/exports/bit-frontier-interdisciplinary-institute.xlsx": {
+      "before_sha256": "3354cfe01171db2404b63e0ad8647ec7af93f75594b98ef895209f085c789f07",
+      "after_sha256": "841b419a06af78f900d7d79cdb76e7dea5236da9fe1acb5b4a079fde7ef9b13b",
+      "byte_length": 13810
+    },
+    "site/exports/bit-physics-optical.xlsx": {
+      "before_sha256": "d8f38ddc33d62b132a30cde81d43706bf36d495f62bf4b1e9bb143c7033ec163",
+      "after_sha256": "5887707edb2ac50d9277a2ae25d48102d6d289ac6a5bdc1536abe89271cb4d76",
+      "byte_length": 15749
+    },
+    "site/exports/bit-sie-communications.xlsx": {
+      "before_sha256": "92cd5ee427b093fb4b9760ef9ebab38b694a331139f9d2eccf54d61f81db4803",
+      "after_sha256": "e3e2bf57e7c3abf6ec0044fcc547bb27edd6c1ead4dda0968b229095afe4c9a9",
+      "byte_length": 14767
+    },
+    "site/exports/bnu-ai.xlsx": {
+      "before_sha256": "86f12f0f36ff3872324f1973ba9576a87a46166609f9702afce219e53ab2ab46",
+      "after_sha256": "8388f2636da997d3d583274f835e5dc741f6cbe8c8d56216d916d12eb210abee",
+      "byte_length": 16521
+    },
+    "site/exports/bnu-math.xlsx": {
+      "before_sha256": "c70465e0d1860159cc254795a94c5d24c32b95c7aacb77fbbfd4623a45a1f3f1",
+      "after_sha256": "d5405a3465e81db624a94c0405c5e16bc8e7224a959806e7be9089f1b39312e3",
+      "byte_length": 16632
+    },
+    "site/exports/bnu-sociology.xlsx": {
+      "before_sha256": "753ba9690453605f0860ae97ae13d9348f8ec72ad3f1ffae9480a620839e8914",
+      "after_sha256": "704de25a996d25fe5c269d8ace3525106ffb286d0dc0f383948e2b200e5a554b",
+      "byte_length": 15151
+    },
+    "site/exports/buaa-aeronautic-science-engineering.xlsx": {
+      "before_sha256": "a32e62eef8448d0799b42f464f613841f72a578a66c073c44f30fbe9e63eb34b",
+      "after_sha256": "d12023b63dab7efe403eccbadb6e4e2442a18a41b5ce41bda4e3e4dd2f37c9b2",
+      "byte_length": 13629
+    },
+    "site/exports/buaa-cs.xlsx": {
+      "before_sha256": "0f33d60bb4e9c874de291915fe7f2df0038bb3583383a3f4cfc74e4343842467",
+      "after_sha256": "8aae6b1fad5835700135be3a8f443b4d20af567901d1a9fde42b673acd58902b",
+      "byte_length": 15264
+    },
+    "site/exports/buaa-physics-applied.xlsx": {
+      "before_sha256": "147b53eea044df39df75298e78bb35da3e023773641d721059c61971c2f73315",
+      "after_sha256": "e6567fd8f1d46ef3cc06be61f13895aa72fe24717a3c08160a3d6d74b0feffcd",
+      "byte_length": 13469
+    },
+    "site/exports/buaa-physics-department.xlsx": {
+      "before_sha256": "73cc282a3510574a41813c3fafd354658d1d9bc7a52f368a2fb342160585a9db",
+      "after_sha256": "daabb950da4b4055f6e9a77b0e8182a4f25017cd4dc3af16728e1327826a8da6",
+      "byte_length": 13677
+    },
+    "site/exports/buaa-physics-nuclear.xlsx": {
+      "before_sha256": "fc5ca475c896cde5528aab0c59ef682398c955e804e390f81e7cd794b4e0eca6",
+      "after_sha256": "2551280fa9efa3230365b52631e1c0f5a586305504c0692c9063f901f21648d7",
+      "byte_length": 16640
+    },
+    "site/exports/cau-biology-plant-science.xlsx": {
+      "before_sha256": "619ad8d84b8686eb1d1c9d21a7b3e8c6f8f64476a64443c63adf3f6bd15d5b31",
+      "after_sha256": "c2c7c43b67f002b148c4b812f7cb330d2845076290136737580cfd0373b08978",
+      "byte_length": 16293
+    },
+    "site/exports/cau-ciee-computer.xlsx": {
+      "before_sha256": "54b8579a0593a744dedf82dcc32c9d8e112dd402689e4a44d049abc11e30f4cf",
+      "after_sha256": "b659fdb8bf4723070e676263299048cc7335b372f9d4f66bd0d783e1b978a4f1",
+      "byte_length": 15189
+    },
+    "site/exports/cau-science-math.xlsx": {
+      "before_sha256": "c03fc7faa75c7bb128f43effa033b3a55512b0fe5a4303d98d708677899834c4",
+      "after_sha256": "63500d79a92143c119b6184b999e7af1e1c5d17df42b8f7a9dc399524a1817cd",
+      "byte_length": 13827
+    },
+    "site/exports/cqu-architecture-urban-planning.xlsx": {
+      "before_sha256": "b8b861aae0f7e2a090a473c18eab98af431c571ce126a6d285cac42623a676a5",
+      "after_sha256": "1306d6593a04d743d985444d955c99184c1c7d4ef0b62b8894f563ab6e00ed7a",
+      "byte_length": 14382
+    },
+    "site/exports/cqu-cs.xlsx": {
+      "before_sha256": "e67dd852d2efb14019ee1fed04ba3c2250da2b5bb5f22b61e0e8e83a853c237c",
+      "after_sha256": "d6ae6c7e77168e0c2798e6eaa50b0e70ae95894bd3e066914d150a7e864b4243",
+      "byte_length": 13739
+    },
+    "site/exports/cqu-mathematics-statistics.xlsx": {
+      "before_sha256": "11e246f87cff7aef8d529706b854e39cb1a4a338570ccfe2d70dc02e519447e0",
+      "after_sha256": "9a0440f54538a230132718b96022630b47af29b28bc222b8dc27c51c9cb41955",
+      "byte_length": 15760
+    },
+    "site/exports/csu-cse.xlsx": {
+      "before_sha256": "3fc12ea5379b0c669a0b6855c513c8fb46cb0f432d8a882a220e4fe2ce20d44d",
+      "after_sha256": "46f2f812e1312f0cf445a045e334c028d961924c88937bf1a11dcd84856cbba3",
+      "byte_length": 14927
+    },
+    "site/exports/csu-math-applied.xlsx": {
+      "before_sha256": "7484e1fc254fa9987bc57bdb292e1efc5ecdf318e53b84e06d295792bd8f6847",
+      "after_sha256": "262415573048d50e43de3c6b284848a0dda33a55f45b38c644f0d9c6b615bbff",
+      "byte_length": 18749
+    },
+    "site/exports/csu-physics.xlsx": {
+      "before_sha256": "be311fb200dc3ec5fef174376905ec2fb20165e78ad6b01478fb4571e47c252e",
+      "after_sha256": "7669e0a833237de9719bc78bb09191146ac23df4efdcec8caa0c9d8503332d0b",
+      "byte_length": 18902
+    },
+    "site/exports/dlut-chemistry.xlsx": {
+      "before_sha256": "d83351e6072948a3bd4e025d426acaa30fef40a7ee9ddc67f0469d04d9f8932d",
+      "after_sha256": "3b8cc0acc47f25e245e9bc5b7d22a4318cffa813a3923a846574c28dbef835a2",
+      "byte_length": 13409
+    },
+    "site/exports/dlut-cs-software-theory.xlsx": {
+      "before_sha256": "5dbde15b50dab984d986ec3493d78ad5c7d27d8fcdf0c30658d7d342f9aad06d",
+      "after_sha256": "4e7fafe1249dcdef27f32553aca31016451ed5eb339cf1e643a77d21a0d3394a",
+      "byte_length": 15323
+    },
+    "site/exports/dlut-math-institute.xlsx": {
+      "before_sha256": "1625969239b59a8244f727a522eb83e957cacb64b3e4d465704a4816c496a5a3",
+      "after_sha256": "b2f00718add8da3f4733f56554646e4e697ac0b496dbe37ec50014233b92781d",
+      "byte_length": 16138
+    },
+    "site/exports/ecnu-geography.xlsx": {
+      "before_sha256": "bfc7480dde7dfa3ad263093384eb73c828e2359e4de331484aa0bdf2ebad4c0e",
+      "after_sha256": "182636103457006fa19289beb4387c2df339f95ab6c9a3ae0d60ea6bc617eae8",
+      "byte_length": 19292
+    },
+    "site/exports/ecnu-math-applied.xlsx": {
+      "before_sha256": "4d657056812b4a89a8ce7c4e4b3a228c3a94eb5f29e9ed9d7fe474ffba2994cb",
+      "after_sha256": "80481856cfe7065a181ab717b4bd6af7943d8191d7f5dadd995d9c3ebebc9df8",
+      "byte_length": 12527
+    },
+    "site/exports/ecnu-math-pure.xlsx": {
+      "before_sha256": "b35e580a30dd29f4a180843d078fc23dfdbb6229daebc40cdc97bf6e0f6d27a7",
+      "after_sha256": "ef03a83d1d163d18d236f78b5c1a8fbcaf5f5f368f97117a3ce8ea7fe0d21f50",
+      "byte_length": 13109
+    },
+    "site/exports/ecnu-sei.xlsx": {
+      "before_sha256": "73529cf6469491fb6fa8793ab5f0c54327cfa3617f671e3aaa5ba449e5212c1c",
+      "after_sha256": "5ee7844b088c97ee7b02a814b9af24f9b2ce33d5b1a95d14c52627c537a72e3c",
+      "byte_length": 16973
+    },
+    "site/exports/fdu-icmne.xlsx": {
+      "before_sha256": "b6849ef1b1be24cca002bc0a0f915b6a8d4434ff8c09556d7b4568910c4d820e",
+      "after_sha256": "2400bbb68de570fe3f2b03f2308a01329338993ca0a3db36a3cad4292e7f40cd",
+      "byte_length": 16812
+    },
+    "site/exports/fdu-marxism.xlsx": {
+      "before_sha256": "db33026a377539a55c154f80adf1670f4c48588380e3f3297b5fc3fffdec0a2e",
+      "after_sha256": "571a3ca5c34cd64f66af95f880dc8094945e73425386d9b2d3b8691631380bcf",
+      "byte_length": 13443
+    },
+    "site/exports/fdu-math-applied.xlsx": {
+      "before_sha256": "8bed2e4e437b8426ddc39309946adaf02c3829b73d6e29f05d1a7ef176a0a23d",
+      "after_sha256": "c39286e7e240cfdbbd4cdd1776c52cf87892d69adfd92b2f0d3b933f51d0e427",
+      "byte_length": 15311
+    },
+    "site/exports/fdu-math-probability-statistics-actuarial.xlsx": {
+      "before_sha256": "193ff4457d1f269d3b7e9dce9a35dbf2c0195b3477f86b04aef633ed9f9b8e22",
+      "after_sha256": "776ee99a5de88e6ad882d238e240764a18024425e797a5579f55fce07e2b5874",
+      "byte_length": 13766
+    },
+    "site/exports/hit-computing.xlsx": {
+      "before_sha256": "958fbc68d19dcf3690a1087ade9da24287a56383536f06e684caad3cdc9fd172",
+      "after_sha256": "e6e67b08d31ccf1c98c5586807ed53eaa59435c7146c683924ad7fe2f0696341",
+      "byte_length": 13453
+    },
+    "site/exports/hit-seie.xlsx": {
+      "before_sha256": "543c05288964285cc03152107b0682c4094c7ac14f5cdef2f80b8319ba0c0166",
+      "after_sha256": "27999d8d3b8b328bfef0519bec4d4a071e766db69a2f736df036513f7c875fbf",
+      "byte_length": 327199
+    },
+    "site/exports/hit-shenzhen-computer.xlsx": {
+      "before_sha256": "58b222b67d96818aa52f16d201a8449bef5bb36e2302cf2bd5a68e9ae1aa8d53",
+      "after_sha256": "477bcbd19c253fead43c7fa28cf8bb617582913e3bbd5f8db3af7b2f4394c377",
+      "byte_length": 13488
+    },
+    "site/exports/hit-shenzhen-ic.xlsx": {
+      "before_sha256": "3744f412bbd5e7e21969cdb953040409d6720e385153fd1b7f1a3e43432c3b8f",
+      "after_sha256": "1950666e1b715fde73420a7d837bb0d630ec5087eef83ac2d20ef62fff9e9cb5",
+      "byte_length": 78783
+    },
+    "site/exports/hit-shenzhen-robotics.xlsx": {
+      "before_sha256": "ab6d347fa8b292fb66cec686ad16dc974af9188acc435e6d2f8856009d70797b",
+      "after_sha256": "787058e7dfe3cd304ec61daa53bc3e74a01e486aa1e751ad438b0d17cc860ab4",
+      "byte_length": 14185
+    },
+    "site/exports/hit-weihai-information.xlsx": {
+      "before_sha256": "7cb591f80874dfb4fe3ccce0259f28cd0c9a0c6fde49c1ab30d63eb6c328433d",
+      "after_sha256": "cff1974859b12c90adb5f51994581caa79ac2bda20a78c8c9675656a7076af77",
+      "byte_length": 125243
+    },
+    "site/exports/hit-weihai-materials.xlsx": {
+      "before_sha256": "54d21c6da24008000fb4191e8bf2c4d5adc811eed95c33982669cc3696f5743a",
+      "after_sha256": "479c4dfebf12337e6d39cc5860d8ca716440c9f6017f5b0c060632b7b2faeab7",
+      "byte_length": 13587
+    },
+    "site/exports/hnu-chemistry-department.xlsx": {
+      "before_sha256": "d868060f83ebce45609cd1446ceafcce5c4892478dc9a926dfc0afb0aeb1e040",
+      "after_sha256": "9ff1f51542fed53b88519a313c6ce4e5440bb931386e8d68bb09fb8f9c7ac283",
+      "byte_length": 16911
+    },
+    "site/exports/hnu-cs-communication-engineering.xlsx": {
+      "before_sha256": "e01ae98178c1caf20c1e18740e02db76998554dea745fc646c9e70939827d6b7",
+      "after_sha256": "1813e95933e5ba08d107cf2ef6fae4c24060df7ecaa60c53dc63ad114f93fac8",
+      "byte_length": 12484
+    },
+    "site/exports/hnu-cs-computer-engineering.xlsx": {
+      "before_sha256": "7bb5394feca7c1986e877cfdddf7483b88a358d8c93ad35dd847199a03271c9f",
+      "after_sha256": "174ca91d83ec0a833e1f6c5eacbffe7bad0f3b94bef0096f15818d1f24477fc6",
+      "byte_length": 12770
+    },
+    "site/exports/hnu-cs-software-engineering.xlsx": {
+      "before_sha256": "4fdffd5a5f323dda2f212948be7a716d97581aa30820b467e45c49805e42a6c4",
+      "after_sha256": "f246220de720df7f89e16a0f47cfc13eda9847a30890971592a8f2eb771af820",
+      "byte_length": 12463
+    },
+    "site/exports/hnu-math-basic.xlsx": {
+      "before_sha256": "8d45b2063647a144c74c7f8e7d5ec33e848a5787e24a8dc8f26408501120a95c",
+      "after_sha256": "23adf9f988f0d5d0633faa244db449df47713a794c9f247cf6fd0e95d811457c",
+      "byte_length": 14409
+    },
+    "site/exports/hust-cs-storage.xlsx": {
+      "before_sha256": "be5028ada1801939f2f53daa010249bc031a9a6a43f2555aee0aa7c5aac7a39d",
+      "after_sha256": "d1a6f2243cadce93c061bb416cc274c0200f92033a103ff44f1b03bfb9a6bf66",
+      "byte_length": 18763
+    },
+    "site/exports/hust-math-center.xlsx": {
+      "before_sha256": "958cd31af3a503ea4187fe4f6bfd42131be4d57d453f7fcbe5a02bdeb27533b5",
+      "after_sha256": "b0684d40ff3fbb5dc1eecdbd731cce46d72824efc4c5f496e537d844d30200f4",
+      "byte_length": 14329
+    },
+    "site/exports/hust-math-interdisciplinary.xlsx": {
+      "before_sha256": "ec1f1fa56ac08e000b7808f0297d6814dbb9f744a4c42003da2b6c3fba39524f",
+      "after_sha256": "33cd6aa8e2b0252fa7c534814355e4753dd8b6c671edf22463d561e11e1fe08b",
+      "byte_length": 12682
+    },
+    "site/exports/jlu-cs.xlsx": {
+      "before_sha256": "4546f557b871c5e584dfdaac60affa8551bfa545cca0799018453e84e73a13a0",
+      "after_sha256": "adf419f5ddc11b7916bac96975ae75abb9809c40b77e30d1d83ee6d78cb92057",
+      "byte_length": 16301
+    },
+    "site/exports/jlu-math-applied.xlsx": {
+      "before_sha256": "14536830ff485834b0e45603626ba94a72d6ed471cbc0162491479fb64dafa89",
+      "after_sha256": "1b3618dc8b013885995ee46de9e9a2ea0966dd43f80f66eda48270c381d106ea",
+      "byte_length": 12999
+    },
+    "site/exports/jlu-math-computational.xlsx": {
+      "before_sha256": "81d7218696de8a5dbbe215ea7a4e37ad9e166db36a2ad41093ada4d9d0bfc46f",
+      "after_sha256": "09a06b2d8d64fe218e1caea1f390346584eabf2c253f8c6fbd13c66dd04944ac",
+      "byte_length": 12637
+    },
+    "site/exports/jlu-math-statistics.xlsx": {
+      "before_sha256": "610cb4d6748821fd9e0f8b31dbfda3e04adea16e10c7ea0961a768f7cd9261b4",
+      "after_sha256": "d4ca95b4d6929fa71b12fa909846f1d668d79586c569112028a9cadb1d762110",
+      "byte_length": 12994
+    },
+    "site/exports/jlu-physics.xlsx": {
+      "before_sha256": "72bd6f13e9d7576afbabc3926c93bffc2105a48cab88b915c0d698360e08abfb",
+      "after_sha256": "b123d0a3a46ae6fa999fe989995df45887ce2f6e31c44752a956d1322011dfca",
+      "byte_length": 13237
+    },
+    "site/exports/lzu-basic-mathematics.xlsx": {
+      "before_sha256": "6dc90c17aac81334fe036dceed021942ea587480215450eb04ed61cab8eba029",
+      "after_sha256": "ef3c4cc68d4133bec3e5a2c9ae704022ce7579c3e55ed49b04e670f581a97aa8",
+      "byte_length": 18673
+    },
+    "site/exports/lzu-civil-engineering-mechanics.xlsx": {
+      "before_sha256": "6332c787a78aafee8b83c18768fb99fee29b6c8f121d182ebd1dca22bb86efa3",
+      "after_sha256": "ecb1a250ada9de71171db55a74a2e446dc93d17e1992091320f55d1607261129",
+      "byte_length": 18811
+    },
+    "site/exports/lzu-law.xlsx": {
+      "before_sha256": "8d62ec02ae35b737b04feb281ed89e0cc6cdacfcc83ae9b6f3eca2f891db294f",
+      "after_sha256": "8d7377999b69bb27ae12f7404c6ed20852c8d5ed12ea5eea1d42f189d47f239e",
+      "byte_length": 14301
+    },
+    "site/exports/muc-education.xlsx": {
+      "before_sha256": "5fd10b35753001aac54db16064c7ff55cf9b8f759bc47b3729acd61976feb21f",
+      "after_sha256": "c3ff658bc9c73aadac858704cf8d0e6d88e5c983f6977796d9e143a7e8da7799",
+      "byte_length": 11941
+    },
+    "site/exports/muc-ise-cs.xlsx": {
+      "before_sha256": "b7642d209c8ada88bd470c37fe712191233031b8765402b6fd94400f039c305e",
+      "after_sha256": "0ff0641735153814195f427eac0b6a743480838c51a2ea18df3aab2f009f8061",
+      "byte_length": 15900
+    },
+    "site/exports/muc-science-math.xlsx": {
+      "before_sha256": "22ef1e1930c2c49eed629dceb1bbf0a12fd84e880494eb582ab3acf7fd628279",
+      "after_sha256": "7e733f11d61b9027b8f07c0a66e1a616e8fffd95605d025b974d793b9506da18",
+      "byte_length": 14976
+    },
+    "site/exports/neu-cse-communication-electronics.xlsx": {
+      "before_sha256": "bf487e818fd5e703b46b8f334baa28dea7b7790bd600b3a74a04f86c471164ae",
+      "after_sha256": "b25adc0f439e6b5bee274ea57e39defefac426c35f73e2ef9b32eb94f38c3893",
+      "byte_length": 13569
+    },
+    "site/exports/neu-cse-cs.xlsx": {
+      "before_sha256": "6a9dfc9331ac2fc757122aa3d3bcff44d1736c91dcd32906bcbef0dd1c056079",
+      "after_sha256": "985cdc7743c9f80dc6d1fd3ff039eab6c549683c62906c2d15d101f23c03ed68",
+      "byte_length": 15278
+    },
+    "site/exports/neu-mechanical-vehicle-engineering.xlsx": {
+      "before_sha256": "51f430c8c53d29bdde2ef6f552c9ce74781440650e90a4009f61c0b0e45d1b1f",
+      "after_sha256": "e7529178f522cbc794f925cec903422f9af979d11e1d1b390ff3ce9342818635",
+      "byte_length": 15278
+    },
+    "site/exports/neu-science-math.xlsx": {
+      "before_sha256": "12f9dbeaf2b25a09049b5aa3a3489e9bce73006f7bab618d2de0e7489542f796",
+      "after_sha256": "623d48e17cd3e1b1db85717e724c0ec378926bc3cff63a68043a36b810c75fb6",
+      "byte_length": 13979
+    },
+    "site/exports/nju-astronomy-space-science.xlsx": {
+      "before_sha256": "477a5f1ca3a470e9fbe0392903c40dffc5adac2d1e16154b8ed9ed124a5d873a",
+      "after_sha256": "62acb4f51d33738b8299f73eb7e437545f54f8b7a8c6fc7ca115a58cdcc0128f",
+      "byte_length": 22449
+    },
+    "site/exports/nju-cs.xlsx": {
+      "before_sha256": "e75ef1d05b07d7c34effe7abbacce42d088eff06a18fc6966366fc1c88d54785",
+      "after_sha256": "b528d8e9ad026c3ebc7047aee9aad018253d720f30d982f4c0a63e4b9b6dccaa",
+      "byte_length": 17681
+    },
+    "site/exports/nju-math.xlsx": {
+      "before_sha256": "221e7ff8f76efdde2fd3542aa979d75651dfd972655d8119a6a1ca6a8e071c58",
+      "after_sha256": "1212614eaeffd99019bf799df642099a12e69f3c40b43885573070c458a4a98b",
+      "byte_length": 14637
+    },
+    "site/exports/nju-sme.xlsx": {
+      "before_sha256": "1a4af1c71eb2aaf3a18081db8653aee42c0879605eb5f0ed04b746cd007edf94",
+      "after_sha256": "fff4029c7f158ab95f4510d79b0a6b874b0983077636b313896b26a0c9e4b926",
+      "byte_length": 13827
+    },
+    "site/exports/nku-cs.xlsx": {
+      "before_sha256": "129463d6106d689e4a416d343ed11d089dd9b98584178de4635c3a08a2382771",
+      "after_sha256": "b6c2e4aa4f99b319bb5573cf2a040217203cd688ce774ebbf0984a47364cb931",
+      "byte_length": 14107
+    },
+    "site/exports/nku-cyber.xlsx": {
+      "before_sha256": "920978e9a9d5e45a57915c2c8ccc739ca5e928aad3f97df899f494df62e53d75",
+      "after_sha256": "f4333f7f5fcb2537f444e474b43e0c1de7e0debc792147ae4052a7d31a092c5d",
+      "byte_length": 13330
+    },
+    "site/exports/nku-economics.xlsx": {
+      "before_sha256": "230487cc31b92196664a6b67d268064bfd4d03fd76a1ff6b57cbaea9e79a7969",
+      "after_sha256": "856a08c1a4e132365d37e50a609c40a93ba81af32914d92c0ac62ad563d20bac",
+      "byte_length": 13292
+    },
+    "site/exports/nku-stat.xlsx": {
+      "before_sha256": "227e4c232fc5efc3a5e6e087ed3282bdd56c9b20738ce3102dd715b95d75e4aa",
+      "after_sha256": "2fc593b63c03bc987500d1844c6be9ad66562a100a0409c3d483a66b9e3c8c36",
+      "byte_length": 16696
+    },
+    "site/exports/nudt-aerospace.xlsx": {
+      "before_sha256": "4d422f6152bc4ef75d334a719e60a6eaff8bbc5903dc582c363e095814a6f256",
+      "after_sha256": "6483fefa83ab48e499f3fef7e5efbff476f4b76cf8954a5cb44c720ad4eb9ca2",
+      "byte_length": 12023
+    },
+    "site/exports/nudt-computer.xlsx": {
+      "before_sha256": "1ca120679b644ebbd7e2d7527da413dce112bf9dede800c4feccf9c84ef85b6a",
+      "after_sha256": "afc2f511b96c71110c5953b215b92ffbcd11fec2182b91dcf47ebb94b0734012",
+      "byte_length": 13735
+    },
+    "site/exports/nudt-electronic-science.xlsx": {
+      "before_sha256": "3260867dd2d0b5239a05c60c3167240c92ee65ce56b6935d7aaf9e56e0fc9c84",
+      "after_sha256": "20697d0dc59eff96287cbb9ca60534beffc6bcfb33775b6a6ee28085d51ddeca",
+      "byte_length": 11495
+    },
+    "site/exports/nudt-electronics.xlsx": {
+      "before_sha256": "ad7a5b1686c3da6e73d2f680c41a9ed26fdc99b2d8847175b98012a37c70e92f",
+      "after_sha256": "3b45e76a7bc46b3697e495ba000c7ac61de50edd797e66c566ce4301d34247ac",
+      "byte_length": 12122
+    },
+    "site/exports/nudt-foreign-languages.xlsx": {
+      "before_sha256": "70f192adf64fe607676d7e3b78e9fff5a5674c1ffaea2032699957f13e4af4a5",
+      "after_sha256": "72c1f5480fd96490eae26daecf6a9698ec746690887fab1d6feb6aed4ec36b1f",
+      "byte_length": 11369
+    },
+    "site/exports/nudt-intelligence.xlsx": {
+      "before_sha256": "9225f49a9da23e9a168158a4d02aaa0a98e6fc06aab75f02258dde270725bd80",
+      "after_sha256": "6f4a73142451a1eae715794aeeeee9997e95a2b6bbb357e4df1b92428430613c",
+      "byte_length": 13332
+    },
+    "site/exports/nudt-systems.xlsx": {
+      "before_sha256": "417c343ecbc9917662df640ab2dffb3ec16b38a3f20c3618f009068c81c8bfb1",
+      "after_sha256": "d6d7606b9e6c257148cc6c3f41eb2771ddbc87592d30f597f22220794cd5a59f",
+      "byte_length": 11352
+    },
+    "site/exports/nwpu-cs-computer-science-software.xlsx": {
+      "before_sha256": "15f646eb84972804a67d0e7f2b763bc252822ce2f01a3bf7aaad89cf1511ac4d",
+      "after_sha256": "c2717b67b7d9f7956a4515391bb5eb2024a1adf3bc09a5d38da5e03ebdcbf4fe",
+      "byte_length": 18971
+    },
+    "site/exports/nwpu-mathematical-sciences.xlsx": {
+      "before_sha256": "c36069333720ebb5c0965eb0f27c37eb9b957c396010bc3dabf095ec7d4dba61",
+      "after_sha256": "e2571db0a133d78947e20eef631b03334732c7ad8052648f7434209f7c2f1c5a",
+      "byte_length": 18985
+    },
+    "site/exports/nwsuaf-agronomy-agronomy-department.xlsx": {
+      "before_sha256": "38ab9f806f741fc54bca7f42cd149662681de1573710e33385ccb31ab58a1aad",
+      "after_sha256": "77eb6dd433bde24b60b0d4ea557849966f9182c13e71fc0d6a73eae57aa28310",
+      "byte_length": 15814
+    },
+    "site/exports/nwsuaf-cie-cs.xlsx": {
+      "before_sha256": "5a0a8e7b0dbc3dc0563bc8a131d0d0f7908c94baae45167d69f044ecdaf7db1c",
+      "after_sha256": "4a6812ec6427198d47abc3a3682f93b8a0fb1dd48028adc4ec18398a1885ae41",
+      "byte_length": 13946
+    },
+    "site/exports/nwsuaf-cie-data.xlsx": {
+      "before_sha256": "c008f08177b0577eb59e985fe06ed84b756ebf969229af3d6d538e3a3e056bf8",
+      "after_sha256": "ff17968684d0d9e1f3a99b545aacc81256d0d1a44e278f38cfa13eceba22f0a6",
+      "byte_length": 11629
+    },
+    "site/exports/nwsuaf-life-sciences.xlsx": {
+      "before_sha256": "ecbce0ff91b5f0e626ec1e2062e971aab36e51c7bc1724c67e515f8b763e443b",
+      "after_sha256": "9c0834d2ba3901a5d6de4fed336263cfdd23883f192bc91883b4641404d6770f",
+      "byte_length": 17498
+    },
+    "site/exports/ouc-coas-oceanography.xlsx": {
+      "before_sha256": "1fc06f65cb057c17b9cae4e961664f4387b2ff992f7bff7d372bde5745109f58",
+      "after_sha256": "557cf073dc119f06a3e5c8afdf4c16df12991663105b1bba5dbd205b277be13b",
+      "byte_length": 16204
+    },
+    "site/exports/ouc-ise-cs.xlsx": {
+      "before_sha256": "bef4f4e5a5257b44251746e8e15162bd646857d088f6e294c8eeb4d1b203633a",
+      "after_sha256": "da913501a90f3b5f3ef997c47eaa372d7552b683b5a4930d5d5afd3a24ab2f60",
+      "byte_length": 19362
+    },
+    "site/exports/ouc-math-department.xlsx": {
+      "before_sha256": "a8b97ffaf5f340533da5a8d12b133a76a5b54c676dc8637a2459662dd7efe272",
+      "after_sha256": "3eb58929a95fdca4f2547ba9861d0cfe3fdf52d99c8b3a8d99545366397ce854",
+      "byte_length": 16058
+    },
+    "site/exports/pku-ic-microelectronics.xlsx": {
+      "before_sha256": "7291ebe2cc688be153704102e39d3864df91bac5ad97259d16bd73a656554f42",
+      "after_sha256": "a68cc3842a772422a10e68422367b742e72efef145ab48e5c4f69b2a6290509f",
+      "byte_length": 50255
+    },
+    "site/exports/ruc-gsai.xlsx": {
+      "before_sha256": "6b1429699da46c5f4fee3585c11721d2bd4023fd5d1fc063b533f690c5760b65",
+      "after_sha256": "9e38f43f4f4e857e576f80f58164a3a0830b1afa5cb6aeb33598c5095a0239e5",
+      "byte_length": 17041
+    },
+    "site/exports/ruc-info-eim.xlsx": {
+      "before_sha256": "2ac362a53b5fbb1ff7580f04bba9d2c6fcec00a31540cfcde5cbe41c1c0c0119",
+      "after_sha256": "d303802644561f851adbe01d7b1f95a93b435c6555787306d937ad27853c5630",
+      "byte_length": 17815
+    },
+    "site/exports/ruc-sociology.xlsx": {
+      "before_sha256": "42c021eb9d2f354762f5749a4f0b562b76784fa95b7abccc4135946126bf970c",
+      "after_sha256": "f6eef4931b4071b3ead7b4a51079e3ce927d2d75e00785070b38982a5dcb6dfd",
+      "byte_length": 15077
+    },
+    "site/exports/scu-chemical-engineering.xlsx": {
+      "before_sha256": "60f80f78f8ecfa134b4957c0d2d04a16c78f2348a2c9ffb612784adcfd625186",
+      "after_sha256": "7edb4927f05a45def4ed0a8cc1bbee9fbce6c1058d7342baa298501f9589abfc",
+      "byte_length": 16144
+    },
+    "site/exports/scu-cs.xlsx": {
+      "before_sha256": "3cc913079af73ad9b667b2a7e248c9b693bee07aa6ccc49b954f96a93cd50d5d",
+      "after_sha256": "b9feea462c1a3a59cbf40d600639de23e23bc97cf0721e8254193b325f36d018",
+      "byte_length": 16623
+    },
+    "site/exports/scu-materials-science-engineering.xlsx": {
+      "before_sha256": "77501002ebe4b12fe264a9a47249b1f60e3456571442b195d567eaacd3f001c8",
+      "after_sha256": "6469daad7f6a0548d753e120b8ce30671335f7adcd7d26ce3715f6cb89db2213",
+      "byte_length": 18828
+    },
+    "site/exports/scut-architecture-department.xlsx": {
+      "before_sha256": "27192205f8f5328110ef96c83895901b305f73b32d9e16e29d9a4c2788604cbe",
+      "after_sha256": "c55282e71c402f3fe9740b7d17406e5f3fa83eec179b2d70fe8d96dfaa98ad02",
+      "byte_length": 15457
+    },
+    "site/exports/scut-cs.xlsx": {
+      "before_sha256": "6fc48b36e796167f01e0326b06812c3d7507e10a9585b36b18fabdff9009bdf0",
+      "after_sha256": "c2ef63522c91db05d8a99fe239eaca6991bf151752432559ad7ab15cb004512e",
+      "byte_length": 16557
+    },
+    "site/exports/scut-math.xlsx": {
+      "before_sha256": "4c461609c2f0e78b8be8cc0f3a020387c67a8f52a787245ef678df126db5f5ee",
+      "after_sha256": "4584e01591deaeab0e50c6d2f7b026892ba1bcce66e02782cd991cd099104530",
+      "byte_length": 19783
+    },
+    "site/exports/sdu-cs.xlsx": {
+      "before_sha256": "15065fcc41a9a0f5413cb6bf36a83ddb7b6dd8ef3b42e54a488929feb3c2653e",
+      "after_sha256": "61190f0b322a0587bdec55cac5cc9cb33aab573d7ae8d326d0c7d17bc6a1c81a",
+      "byte_length": 15596
+    },
+    "site/exports/sdu-history-department.xlsx": {
+      "before_sha256": "c4d423128f1ae2ee6d99a6c0c577f7ed62f2b69bb4a982c66e7565758f150af1",
+      "after_sha256": "a901ad662230c2ad50926faeaef3b1250141466547c513189f7a6d3e2a5e7676",
+      "byte_length": 14150
+    },
+    "site/exports/sdu-math.xlsx": {
+      "before_sha256": "e9f056cb5a86693f16de85a93c3d50f3195140c34c87f75fa6e4580fd2232202",
+      "after_sha256": "f2deaa6eb95212f7bb7c42721f2bf4a9d590a945ea11312d459fd38bf8d0f03a",
+      "byte_length": 17905
+    },
+    "site/exports/sdu-physics.xlsx": {
+      "before_sha256": "47f46e8811b9a1b6fc1912f2e9a82cd1dd4a8d792ebc3576f9f15906c27ccf65",
+      "after_sha256": "05857980fc66ec61524b4d54365cfe420634ea2e437a27698a955a30944a5a41",
+      "byte_length": 12161
+    },
+    "site/exports/seu-computing-joint-roster.xlsx": {
+      "before_sha256": "48d5b9a81a28296fe5d265edcd4fc369d1c970fcaffd0c7df91b781f79d528fe",
+      "after_sha256": "495aadfc14644180ef681fd98f29318699800f8f004b75433e56a5d8c72d6e8e",
+      "byte_length": 12050
+    },
+    "site/exports/seu-cs.xlsx": {
+      "before_sha256": "abe27d1aa51acf1275aa560931da66d82ffe22fb451f62dd8c46168b07c2d465",
+      "after_sha256": "52774201e72fa3b846b1922a78152d98ac8b95711973db76d7ddd2ef2813c02a",
+      "byte_length": 16192
+    },
+    "site/exports/seu-math-computational.xlsx": {
+      "before_sha256": "52f2403373aba5dee463834813b9e7f8bd497c3760e6688e5de592964e869751",
+      "after_sha256": "47a88045f6c5e63a611fa7c2fcf6539b963f7628ef313a2307a84f5c32c394c2",
+      "byte_length": 12975
+    },
+    "site/exports/seu-math-systems.xlsx": {
+      "before_sha256": "f54dc7088b8341fce7a57f31a6dc9b4c75bb49cb3bae428ef5a207552024f42f",
+      "after_sha256": "0c023748ec42103ae2d53e1aebee9c86f44b60a886d203c5912dc4966a163e1e",
+      "byte_length": 15085
+    },
+    "site/exports/seu-physics-department.xlsx": {
+      "before_sha256": "41a983710b89306cf43bc73cf13feb907183fa47003a967ac83819a1edd120d6",
+      "after_sha256": "a2173742f828067a922ced7f9511a4c5b1fd9200bfc1e73e2486e11c159294bd",
+      "byte_length": 13052
+    },
+    "site/exports/sjtu-ic-chipdesign.xlsx": {
+      "before_sha256": "b3fa394373ae7fcb6c84142d81637c22e5f8dfaa0d4f1df97c93163cecc89a11",
+      "after_sha256": "0c9bb82e6be2d4377638434cf87af50f4116c85a7189ee5afeeb091ad65e831d",
+      "byte_length": 47758
+    },
+    "site/exports/sysu-history-zhuhai.xlsx": {
+      "before_sha256": "dffc21bfb97d1ac8d1817c172370f6523b4a90535aabdc16cbd246f0e28cd115",
+      "after_sha256": "b570c9ad139dad3e3c0334c5cc92eb38457847e75ff16e74236d525798bfc9f4",
+      "byte_length": 18267
+    },
+    "site/exports/sysu-math-department.xlsx": {
+      "before_sha256": "ecc826f6e90603d05c17f6e7ed167f97974db04fbe3b175ca3e6ffbcbdc33111",
+      "after_sha256": "9110695ee84048446aeaf5f23ef6906680add1f95945ac9b5d04fff7568d4183",
+      "byte_length": 13368
+    },
+    "site/exports/sysu-math.xlsx": {
+      "before_sha256": "3edf48eda175bb96169ef9cd3d0960c5195ba3537d04431843b22e7f27cd2144",
+      "after_sha256": "5cabcaf08a3f9121c3e18d4149d61c5298eb8e88458ccdd39ec8566b93547ced",
+      "byte_length": 21356
+    },
+    "site/exports/sysu-mathzh.xlsx": {
+      "before_sha256": "cdebb1c4bdb74a374c17d7c0e7f68eb5fc596833d450098b28a9ccb64ffb37d9",
+      "after_sha256": "e07ec8bd7977b67d819805c9fcbbf754159b6052a2f12c1fc86a6e707e5be7bf",
+      "byte_length": 12828
+    },
+    "site/exports/thu-ee-communications.xlsx": {
+      "before_sha256": "8701a586cde1d10eec194b8eb20fd648f12af8620f1d6c0c9828ab00a88d36e9",
+      "after_sha256": "84f1a323256f345ea7ef839fb01097128bb5f05c081a1ffc0220969dc92b86f8",
+      "byte_length": 43166
+    },
+    "site/exports/tju-math.xlsx": {
+      "before_sha256": "399936224a993c995cfad6cbb80a6dc74486f21621fe5e6ae473aee4d939a20e",
+      "after_sha256": "48a77bdc98dc0f16fff99a4786214c4a8e613fc544b2ab64bb8982a9abc93cbf",
+      "byte_length": 16212
+    },
+    "site/exports/tju-mechanical-engineering.xlsx": {
+      "before_sha256": "6c9f91649b0bac6ddbf258d5179c2c21ac251033474771425902e138e2ab0ab2",
+      "after_sha256": "2680d4b81e0e9e8f1509703d358ba2330cc5082c018f7a58c046bb3cc9d7046c",
+      "byte_length": 14334
+    },
+    "site/exports/tju-sme.xlsx": {
+      "before_sha256": "4f963ba2740c54d0406764f9384a03733e5ecc406294c633290fb333fa6144c0",
+      "after_sha256": "953d59991243849d0dd88b42f5d54edf5cee1a749823a47733b781ec36494383",
+      "byte_length": 17869
+    },
+    "site/exports/tongji-civil-building-engineering.xlsx": {
+      "before_sha256": "448632503151618b790da7adeb660b90b2fbd6bfaa8fa1e2d14d4f500e06b63c",
+      "after_sha256": "ef8df8b9dca253074b4d732dbc3917e8a87cd41d4ea8d7b2fb48c1999666a9db",
+      "byte_length": 18046
+    },
+    "site/exports/tongji-cs.xlsx": {
+      "before_sha256": "99bd75bb420f58781e1b8a389e7d8ff72f5ccb97c4a77f09ed0af96da50c26d5",
+      "after_sha256": "147cd8c03b565740cfe5834fe4185ef0c09346bb7cb415d8c250b8ec18ed4ae7",
+      "byte_length": 13589
+    },
+    "site/exports/tongji-math-teaching.xlsx": {
+      "before_sha256": "84e40719460679f31b96cdda3cff6da20c17a10448c3e9ac89f92d5c4e351a3b",
+      "after_sha256": "876a5d7ffff216478534f64786ab7cf28266fffb3a4322d80b0038670c5c2742",
+      "byte_length": 12871
+    },
+    "site/exports/tongji-physics.xlsx": {
+      "before_sha256": "bcf1f91633b3809a163ea8391eceeb35f035ebc3686936375387e9c5b726b750",
+      "after_sha256": "c1ef809c84703ec1ac5fb40001919eecd5cea026d01bf0eead86d0181d2621f5",
+      "byte_length": 19090
+    },
+    "site/exports/uestc-aihss.xlsx": {
+      "before_sha256": "3a4fabc60237a4ff3e854f764d4c4bbe92fe55c88977f7c7ce847b0d22838952",
+      "after_sha256": "f52058e467df96d179bfa11f1f8dd6e6c007fb96f08876a9d88e938d3ae2fdc3",
+      "byte_length": 16896
+    },
+    "site/exports/uestc-applied-math-center.xlsx": {
+      "before_sha256": "0d31c20c27bcf996526e01c573cf396f11f1fdfd3a888be34d8033d042148c31",
+      "after_sha256": "6665a4bf665963b1800bc11b85d3c7e397bd418b4a61fdff28942b4f4cce585b",
+      "byte_length": 20073
+    },
+    "site/exports/uestc-public-administration.xlsx": {
+      "before_sha256": "730cdea4fd471759930479e75d48f584967bad7e2f0f3f2eeef568e484c18b12",
+      "after_sha256": "2a78496ad271c005730ef27d904f58fc40358c58cc7e89f6ed2119be27aa7360",
+      "byte_length": 13473
+    },
+    "site/exports/ustc-chemistry.xlsx": {
+      "before_sha256": "166064516591b881dbd8942e74c234185742a12b811acc93be50157bf7b2ad13",
+      "after_sha256": "36d6e3e8d5f93d2fc8e9380c683637c6c57bbd52366eae8558c049b6eeade312",
+      "byte_length": 16483
+    },
+    "site/exports/ustc-ic.xlsx": {
+      "before_sha256": "bba52cc29f384a3ccc4e6b582ab4cdf1e7be215e4b6059926e1f6809cfa0be7e",
+      "after_sha256": "98f61d9947c9a7e29119ab91ffa6a084745c84a3b96e97973bbda98a899dc25c",
+      "byte_length": 16981
+    },
+    "site/exports/ustc-math.xlsx": {
+      "before_sha256": "60edd4e8f47842ca1ce0e5e64f874d9365bffb51e71a92c641f4b4969e811297",
+      "after_sha256": "0c1266dd3cc4ab0fd2a2ed27051fa231fc88a1e34ac0de8bb096fb90de73c17a",
+      "byte_length": 20381
+    },
+    "site/exports/whu-eis.xlsx": {
+      "before_sha256": "df7dfc47d4307136d341cbae96f731302c4414cd5e077b29dcb32968e63bf423",
+      "after_sha256": "46f7a7d69e4871afdbe5b1e041114784aa9cc1d4e23b1dbb72c96f7639b7821d",
+      "byte_length": 19158
+    },
+    "site/exports/whu-math-stat.xlsx": {
+      "before_sha256": "4d45cfd5fd92a1f18a6d89cbe9112bd9da8c9faac6696c025e1d81b297725818",
+      "after_sha256": "a398a01dba5e1e9ec934266b38f03177aa336871c75c53e201e7660bde12fdae",
+      "byte_length": 20196
+    },
+    "site/exports/xjtu-math-department.xlsx": {
+      "before_sha256": "2bef8af7e2ac74764b31b651542b4f2547962c61d0a2ac95ee6530c45a2fc7f1",
+      "after_sha256": "4ace098c61a114e3b03a2a02aa0dc95648aaa9a6c0892deb077c1d0a0d67fcca",
+      "byte_length": 18228
+    },
+    "site/exports/xjtu-modern-physics-astronomy-preparatory.xlsx": {
+      "before_sha256": "f73df1a620894c105fd452b3e29742e66b0c8f25d8d277ec8cee3778f9286ddb",
+      "after_sha256": "3892fd923cd82467f927fe4e26a96aabde2633261870f8b8c25c4341e9a67ee1",
+      "byte_length": 18975
+    },
+    "site/exports/xjtu-se.xlsx": {
+      "before_sha256": "74dda6adf6cb6a0ae0a376b13ca98bcd6fc7c06dbe72037172b16df698da94d2",
+      "after_sha256": "24a61c2dff6cb178908f21c2c77dc1fc5c4ac15b850b45494fabf251faa69599",
+      "byte_length": 14919
+    },
+    "site/exports/xmu-economics-department.xlsx": {
+      "before_sha256": "85c03296b5dce754f54306b70492a9e37ece071b966abe1dbfdfe659d93e9dcc",
+      "after_sha256": "bb132f45e05bfb7d628d434758f437c2591fdf885d9330ebaf5f45ae994197a5",
+      "byte_length": 16631
+    },
+    "site/exports/xmu-informatics-cs.xlsx": {
+      "before_sha256": "4975c6535af5ec76a4c5cf9ad40e78627739cabf40f422db69a443b09152b62a",
+      "after_sha256": "33d0d25be31c7237d7447765c09aea0302abbe5cc354722f58dd35d582654b63",
+      "byte_length": 14866
+    },
+    "site/exports/xmu-math-applied.xlsx": {
+      "before_sha256": "080164257599a45cc2be8eb901fda292c3d9a233c10facd3319a4bb894379b55",
+      "after_sha256": "5c781db60c3df2d97274dca54d801228a54202012be642b46cd38ea94b778841",
+      "byte_length": 14308
+    },
+    "site/exports/zju-ic-manufacturing.xlsx": {
+      "before_sha256": "e683c104495e43aec93846c5d8767bd1040e0a135592c1003526028ed03262f9",
+      "after_sha256": "95c93cab5daeb58282f7f1c3e57b9fa59968badc66cfa081e630d53ca624b295",
+      "byte_length": 33071
+    },
+    "site/index.html": {
+      "before_sha256": "a6e57e88a623157fd3103a6099b9e72b21a0435c9fa62530a41469814844242c",
+      "after_sha256": "27dfd97f6a5ddd89d9a0560ba585e266ace9e910f58c086ee1410b5f73ccf21a",
+      "byte_length": 1024
+    },
+    "site/model.js": {
+      "before_sha256": "9dbc155288c1ee0a93fd5d11cd8a7c63724dc0bde6b117a2f71d327e34be3fef",
+      "after_sha256": "7ab0158271185d9945b4e32a73ceaddd055feede30049023acd3a974e1b021ce",
+      "byte_length": 12103
+    },
+    "site/rosters.js": {
+      "before_sha256": "d060662fe29e2d5209ca7cabd89121f253c6df69878d776e652f2fe8f8eb45a9",
+      "after_sha256": "85856bc4c3c3f3fc2eabe8740b3896eb8f1cffa899ceb08c7bc66eb0dad8894b",
+      "byte_length": 11676
+    },
+    "site/rosters.json": {
+      "before_sha256": "fec54195daeebc3209dd5691bebf3482c40155242efabfd424acbf8c982d30e8",
+      "after_sha256": "23dd5beefe138e34df6ea2a97e4eaf9f7618df6904e682afb44c9a3513cbc0c7",
+      "byte_length": 3250431
+    },
+    "tests/breadth-wave1.test.js": {
+      "before_sha256": "3bd455f9516bc0caa44aa37b5b022584caec36858add501b5d76f55dc3cf1311",
+      "after_sha256": "ea622569280605eeb83cb73823c373f1dc264ce0d3ab462e634b88f0b05cd5c3",
+      "byte_length": 24691
+    },
+    "tests/rotation002-wave3-display-fix.test.js": {
+      "before_sha256": "2608167b8182d82fb1bc130f6f478c298a8a5b00cc280a746164af81fc16b936",
+      "after_sha256": "027eefc8db069fbe10df11be81dfa9ccfe228c0875a441fc343b5ab1d70fd450",
+      "byte_length": 15725
+    },
+    "tests/rotation003-wave1-display-fix.test.js": {
+      "before_sha256": "4d3a12266c77edd909154213de9d21fdcb9e006cf117e40e9f3b51e2ba32b9f5",
+      "after_sha256": "3e631457723e14ab99cf68cdbfbb21be322a2019fd12a2ee3a1a8e55a1fbd157",
+      "byte_length": 17573
+    },
+    "tests/rotation003-wave1-layout-fix.test.js": {
+      "before_sha256": "628ab8089da7d92fe1f5452770d0c76d8e14e5795c379f52fcc3d928fe900f64",
+      "after_sha256": "07e4a23eb6199b8b4e4a977f6f15b951ab4f1983800142fd020866fe5841039c",
+      "byte_length": 15571
+    },
+    "tests/rotation003-wave1.test.js": {
+      "before_sha256": "867e5c560b6e45807abb9b87bbad2057dfa62bda4fdde019cfabb2f4a1a84138",
+      "after_sha256": "66108d7fecba05b15bf00b1194d645eebc922e71a33963c3262390143454b432",
+      "byte_length": 30642
+    },
+    "tests/test_profile_source_labels.py": {
+      "before_sha256": "5f16f3ca6663f932a6e60a4c7313e017bd29c153fc6519125708c246f0a92dcc",
+      "after_sha256": "fd6ad506b137f0253e27f5ba25d26a6684074091a3d87211435b17ae3c0a9d2f",
+      "byte_length": 4095
+    },
+    "tests/test_public_append_history.py": {
+      "before_sha256": "059358b797efbd589d2c78399aa740f699ad358923c5f119871f17db8270ba03",
+      "after_sha256": "c843cdeea334418ae9fac39a3ebdf87d08959502796f977e5647da101342161c",
+      "byte_length": 24109
+    },
+    "tests/test_rotation002_wave2_release.py": {
+      "before_sha256": "cc26fe489f01fd55d1ff56340d898679f30531097fc72048749e3db2a6f5e1b0",
+      "after_sha256": "603c12f4e92ed34593d1102d24f870dbf04f70bbda2fbf09a4fbdd7ad656fca8",
+      "byte_length": 77527
+    },
+    "tests/test_rotation002_wave3_release.py": {
+      "before_sha256": "0bc0f8d32f16a651575c9f8345fc9e26bc90c531c64edd7ea7a905d75175bdc5",
+      "after_sha256": "1de30903bd1e1a485dcaeebb96e13bf79cd04f0e699decc9968632b3573c2726",
+      "byte_length": 90073
+    },
+    "tests/test_rotation003_wave1_display_fix.py": {
+      "before_sha256": "12d517def92b1b1bf061df2585a2053647f6635eb922f9b19ef11cfebe2cd50a",
+      "after_sha256": "0fedf18223f7ba55e7fa2218a2d5097124fa11b56e8f60d168115c674ffd362e",
+      "byte_length": 34067
+    },
+    "tests/test_rotation003_wave1_layout_fix.py": {
+      "before_sha256": "544c5521a3b0c33134d37ac7d13d259d9046f7308a82b68f0f809e1cc106d445",
+      "after_sha256": "3b5ade68f5769cf4d8b3bc526e4359949334eefa9390e21ddea689ea233a498e",
+      "byte_length": 45377
+    },
+    "tests/test_rotation003_wave1_release.py": {
+      "before_sha256": "fa617b17c0b6a5a21be778226bd6c902fe0bb91b28d9d5e61f4b8bc4086442da",
+      "after_sha256": "7219923b2c932a64f19749880347badf7bfaa554e143b6273c65870b36df013a",
+      "byte_length": 109655
+    }
+  },
+  "added": {
+    "scripts/validate_metadata_transition.py": {
+      "sha256": "b8ee8f46c382076abf97684dd4e1a659ba6ad2a3105512faec77aa9f8f84814a",
+      "byte_length": 14407
+    },
+    "tests/fixtures/release33-public-file-manifest.json": {
+      "sha256": "78e898a933bc2ec26f7a27b00ae5c25beaf9720279ce3bd11b136b9869fe246a",
+      "byte_length": 63672
+    },
+    "tests/fixtures/source-date-code-contract.json": {
+      "sha256": "ef158f832eb2b86b59e6562eed0d13cfffec06c82330a6049835bf4c581f99cb",
+      "byte_length": 25821
+    },
+    "tests/fixtures/source-date-metadata-policy.json": {
+      "sha256": "fc4ae0e601f3a5861a73fa490b60fc0e7cafe317cd51abcbb7bf37c01dcd368f",
+      "byte_length": 1642029
+    },
+    "tests/fixtures/source-date-transition.json": {
+      "hash_basis": "independent literal pin and final published Git inventory"
+    },
+    "tests/fixtures/source-retrieval-dates.json": {
+      "sha256": "97e15c9a63e70af22b8c29789e52e05d67a184fb75a3081c266b6e4da92c655b",
+      "byte_length": 3697
+    },
+    "tests/source-date-history.js": {
+      "sha256": "04f6922ec9d8cad5fbee021717547e9b4ec0f267b4d5f7a0460562cf79a86584",
+      "byte_length": 1775
+    },
+    "tests/source-date-history.test.js": {
+      "sha256": "3ae47df544cdba6dbf691b3c8a5c6bee99b806317749ac60e4c241369d676a1c",
+      "byte_length": 1967
+    },
+    "tests/source-retrieval-dates.test.js": {
+      "sha256": "f8e42026b869161761e9cd189ee2732eefbf52cc4103369ed5a6a93ea9f1ad9c",
+      "byte_length": 4341
+    },
+    "tests/source_date_history.py": {
+      "hash_basis": "independent literal pin and final published Git inventory"
+    },
+    "tests/test_source_date_history.py": {
+      "sha256": "2203281b1a799643f83acdb5f21a7cb76f81f6cd9d9f33326d6452ee68ad0c36",
+      "byte_length": 10498
+    },
+    "tests/test_source_retrieval_dates.py": {
+      "sha256": "08979b51127b35ed803c20b52e1fb22289788b393f93dfdca3bd3f32a563061a",
+      "byte_length": 5017
+    }
+  },
+  "implementation_patches": {
+    "tests/breadth-wave1.test.js": {
+      "before_sha256": "3bd455f9516bc0caa44aa37b5b022584caec36858add501b5d76f55dc3cf1311",
+      "after_sha256": "ea622569280605eeb83cb73823c373f1dc264ce0d3ab462e634b88f0b05cd5c3",
+      "byte_length": 24691,
+      "patches": [
+        {
+          "after_offset": 22709,
+          "before": "    const t=out.tables[b.department];assert.deepEqual(Object.keys(t),['总览','经历','导师','论文','来源']);assert.equal(t['总览'].length,4);for(const row of t['总览'].slice(1)){assert.equal(row[1],'校区未标注');assert.equal(row[6],'分批核实资料，不是完整名录')}for(const rows of Object.values(t))for(const row of rows.slice(1))assert.deepEqual(row.slice(-2),[b.sid,db.institutions.find(s=>s.id===b.sid).official_name]);\n",
+          "after": "    const t=out.tables[b.department];assert.deepEqual(Object.keys(t),['总览','经历','导师','论文','来源']);assert.equal(t['总览'].length,4);for(const row of t['总览'].slice(1)){assert.equal(row[1],'校区未标注');assert.equal(row[6],'分批核实资料，不是完整名录；人物整体核验日期未单独记录')}for(const rows of Object.values(t))for(const row of rows.slice(1))assert.deepEqual(row.slice(-2),[b.sid,db.institutions.find(s=>s.id===b.sid).official_name]);\n"
+        }
+      ]
+    },
+    "tests/rotation002-wave3-display-fix.test.js": {
+      "before_sha256": "2608167b8182d82fb1bc130f6f478c298a8a5b00cc280a746164af81fc16b936",
+      "after_sha256": "027eefc8db069fbe10df11be81dfa9ccfe228c0875a441fc343b5ab1d70fd450",
+      "byte_length": 15725,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "",
+          "after": "import {historicalBytes} from './source-date-history.js';\n"
+        },
+        {
+          "after_offset": 3483,
+          "before": "const read=name=>fs.readFileSync(path.join(root,name));\n",
+          "after": "const read=name=>historicalBytes(name,root);\n"
+        }
+      ]
+    },
+    "tests/rotation003-wave1-display-fix.test.js": {
+      "before_sha256": "4d3a12266c77edd909154213de9d21fdcb9e006cf117e40e9f3b51e2ba32b9f5",
+      "after_sha256": "3e631457723e14ab99cf68cdbfbb21be322a2019fd12a2ee3a1a8e55a1fbd157",
+      "byte_length": 17573,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "",
+          "after": "import {historicalBytes} from './source-date-history.js';\n"
+        },
+        {
+          "after_offset": 15908,
+          "before": " for(const [file,digest]of Object.entries(UNCHANGED_FILES))assert.equal(sha(fs.readFileSync(path.join(root,file))),endpointSha256(file,RELEASE31_PUBLIC_METADATA_PIN_OVERLAY[file]||RELEASE31_PIN_OVERLAY[file]||RELEASE30_PIN_OVERLAY[file]||RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_PIN_OVERLAY[file]||LAYOUT_FIX_APPLICATION_SHA256[file]||digest),file);\n for(const [file,n]of [['site/app.js',3],['site/rosters.js',1],['site/index.html',2]])assert.equal(fs.readFileSync(path.join(root,file),'utf8').split('rotation003-20261024-w2').length-1,n);\n",
+          "after": " for(const [file,digest]of Object.entries(UNCHANGED_FILES))assert.equal(sha(historicalBytes(file,root)),endpointSha256(file,RELEASE31_PUBLIC_METADATA_PIN_OVERLAY[file]||RELEASE31_PIN_OVERLAY[file]||RELEASE30_PIN_OVERLAY[file]||RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_PIN_OVERLAY[file]||LAYOUT_FIX_APPLICATION_SHA256[file]||digest),file);\n for(const [file,n]of [['site/app.js',3],['site/rosters.js',1],['site/index.html',2]])assert.equal(historicalBytes(file,root).toString('utf8').split('rotation003-20261024-w2').length-1,n);\n"
+        }
+      ]
+    },
+    "tests/rotation003-wave1-layout-fix.test.js": {
+      "before_sha256": "628ab8089da7d92fe1f5452770d0c76d8e14e5795c379f52fcc3d928fe900f64",
+      "after_sha256": "07e4a23eb6199b8b4e4a977f6f15b951ab4f1983800142fd020866fe5841039c",
+      "byte_length": 15571,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "",
+          "after": "import {historicalBytes,withHistoricalAppRoot} from './source-date-history.js';\n"
+        },
+        {
+          "after_offset": 13196,
+          "before": " const f=await current(),renders=db.people.flatMap(p=>['profile','lineage'].map(mode=>[p.person_id,mode,f.render(p.person_id,mode)]));\n assert.equal(renders.length,1110);assert.equal(sha(JSON.stringify(renders)),BASELINE_ROUTE_SHA256);\n",
+          "after": " await withHistoricalAppRoot(root,async historicalRoot=>{\n  const f=await fixture(db,historicalRoot),renders=db.people.flatMap(p=>['profile','lineage'].map(mode=>[p.person_id,mode,f.render(p.person_id,mode)]));\n  assert.equal(renders.length,1110);assert.equal(sha(JSON.stringify(renders)),BASELINE_ROUTE_SHA256);\n });\n"
+        },
+        {
+          "after_offset": 13697,
+          "before": "  const text=fs.readFileSync(path.join(root,file),'utf8');assert.equal(text.split('rotation003-20261024-w2').length-1,count);assert(!text.includes('rotation003-20261023-w1'));\n",
+          "after": "  const text=historicalBytes(file,root).toString('utf8');assert.equal(text.split('rotation003-20261024-w2').length-1,count);assert(!text.includes('rotation003-20261023-w1'));\n"
+        },
+        {
+          "after_offset": 13875,
+          "before": " const index=fs.readFileSync(path.join(root,'site/index.html'),'utf8');assert(index.includes('styles.css?v=rotation003-20261024-w2'));assert(index.includes('app.js?v=rotation003-20261024-w2'));\n",
+          "after": " const index=historicalBytes('site/index.html',root).toString('utf8');assert(index.includes('styles.css?v=rotation003-20261024-w2'));assert(index.includes('app.js?v=rotation003-20261024-w2'));\n"
+        }
+      ]
+    },
+    "tests/rotation003-wave1.test.js": {
+      "before_sha256": "867e5c560b6e45807abb9b87bbad2057dfa62bda4fdde019cfabb2f4a1a84138",
+      "after_sha256": "66108d7fecba05b15bf00b1194d645eebc922e71a33963c3262390143454b432",
+      "byte_length": 30642,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "",
+          "after": "import {historicalBytes} from './source-date-history.js';\n"
+        },
+        {
+          "after_offset": 24915,
+          "before": "    const source=fs.readFileSync(path.join(root,file),'utf8');assert.equal((source.match(/rotation003-20261024-w2/g)||[]).length,count,file);\n",
+          "after": "    const source=historicalBytes(file,root).toString('utf8');assert.equal((source.match(/rotation003-20261024-w2/g)||[]).length,count,file);\n"
+        }
+      ]
+    },
+    "tests/test_profile_source_labels.py": {
+      "before_sha256": "5f16f3ca6663f932a6e60a4c7313e017bd29c153fc6519125708c246f0a92dcc",
+      "after_sha256": "fd6ad506b137f0253e27f5ba25d26a6684074091a3d87211435b17ae3c0a9d2f",
+      "byte_length": 4095,
+      "patches": [
+        {
+          "after_offset": 1745,
+          "before": "  del self.p['official_profile_availability_label'];row=self.tables()['总览'][1];self.assertIn(self.p['official_profile_link_label'],row[7]);self.assertIn('时效以核对日为准',row[7])\n",
+          "after": "  del self.p['official_profile_availability_label'];row=self.tables()['总览'][1];self.assertIn(self.p['official_profile_link_label'],row[7]);self.assertIn('访问与内容时效见来源记录',row[7])\n"
+        },
+        {
+          "after_offset": 2146,
+          "before": "  header,row=self.tables()['总览'];self.assertEqual(header[3],'官方主页');self.assertEqual(header[8],'替代官方职业报道（非个人主页）');self.assertEqual(row[7],'公开个人页（时效以核对日为准）');self.assertEqual(row[3],'https://synthetic-scholar.github.io/')\n",
+          "after": "  header,row=self.tables()['总览'];self.assertEqual(header[3],'官方主页');self.assertEqual(header[8],'替代官方职业报道（非个人主页）');self.assertEqual(row[7],'公开个人页（访问与内容时效见来源记录）');self.assertEqual(row[3],'https://synthetic-scholar.github.io/')\n"
+        }
+      ]
+    },
+    "tests/test_public_append_history.py": {
+      "before_sha256": "059358b797efbd589d2c78399aa740f699ad358923c5f119871f17db8270ba03",
+      "after_sha256": "c843cdeea334418ae9fac39a3ebdf87d08959502796f977e5647da101342161c",
+      "byte_length": 24109,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "",
+          "after": "from source_date_history import historical_root\n"
+        },
+        {
+          "after_offset": 23267,
+          "before": "        history.validate_tree(ROOT, manifest, inventory)\n",
+          "after": "        with historical_root(ROOT) as released_root:\n            history.validate_tree(released_root, manifest, inventory)\n"
+        }
+      ]
+    },
+    "tests/test_rotation002_wave2_release.py": {
+      "before_sha256": "cc26fe489f01fd55d1ff56340d898679f30531097fc72048749e3db2a6f5e1b0",
+      "after_sha256": "603c12f4e92ed34593d1102d24f870dbf04f70bbda2fbf09a4fbdd7ad656fca8",
+      "byte_length": 77527,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "",
+          "after": "from source_date_history import historical_bytes\n"
+        },
+        {
+          "after_offset": 68171,
+          "before": "            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),RELEASE26_DISPLAY_SHA256.get(path, LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest)))),path)\n",
+          "after": "            self.assertEqual(hashlib.sha256(historical_bytes(path,(ROOT/path).read_bytes())).hexdigest(),RELEASE26_DISPLAY_SHA256.get(path, LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest)))),path)\n"
+        }
+      ]
+    },
+    "tests/test_rotation002_wave3_release.py": {
+      "before_sha256": "0bc0f8d32f16a651575c9f8345fc9e26bc90c531c64edd7ea7a905d75175bdc5",
+      "after_sha256": "1de30903bd1e1a485dcaeebb96e13bf79cd04f0e699decc9968632b3573c2726",
+      "byte_length": 90073,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "",
+          "after": "from source_date_history import historical_bytes\n"
+        },
+        {
+          "after_offset": 64209,
+          "before": "            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(), RELEASE26_DISPLAY_SHA256.get(path, LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest)))), path)\n",
+          "after": "            self.assertEqual(hashlib.sha256(historical_bytes(path,(ROOT/path).read_bytes())).hexdigest(), RELEASE26_DISPLAY_SHA256.get(path, LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest)))), path)\n"
+        }
+      ]
+    },
+    "tests/test_rotation003_wave1_display_fix.py": {
+      "before_sha256": "12d517def92b1b1bf061df2585a2053647f6635eb922f9b19ef11cfebe2cd50a",
+      "after_sha256": "0fedf18223f7ba55e7fa2218a2d5097124fa11b56e8f60d168115c674ffd362e",
+      "byte_length": 34067,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "",
+          "after": "from source_date_history import historical_bytes\n"
+        },
+        {
+          "after_offset": 26707,
+          "before": "            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),endpoint_sha256(file,dict(dict(dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY),**RELEASE31_PIN_OVERLAY),**RELEASE31_PUBLIC_METADATA_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest))))),file)\n",
+          "after": "            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),endpoint_sha256(file,dict(dict(dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY),**RELEASE31_PIN_OVERLAY),**RELEASE31_PUBLIC_METADATA_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest))))),file)\n"
+        },
+        {
+          "after_offset": 27210,
+          "before": "            self.assertEqual((ROOT/file).read_text().count('rotation003-20261024-w2'),count)\n",
+          "after": "            self.assertEqual(historical_bytes(file, root=ROOT).decode().count('rotation003-20261024-w2'),count)\n"
+        },
+        {
+          "after_offset": 32156,
+          "before": "            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest,file)\n",
+          "after": "            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),digest,file)\n"
+        }
+      ]
+    },
+    "tests/test_rotation003_wave1_layout_fix.py": {
+      "before_sha256": "544c5521a3b0c33134d37ac7d13d259d9046f7308a82b68f0f809e1cc106d445",
+      "after_sha256": "3b5ade68f5769cf4d8b3bc526e4359949334eefa9390e21ddea689ea233a498e",
+      "byte_length": 45377,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "",
+          "after": "from source_date_history import historical_bytes\n"
+        },
+        {
+          "after_offset": 851,
+          "before": "def read(name): return (ROOT/name).read_bytes()\n",
+          "after": "def read(name): return historical_bytes(name,(ROOT/name).read_bytes())\n"
+        },
+        {
+          "after_offset": 39500,
+          "before": "        actual={str(p.relative_to(ROOT)):sha(p.read_bytes()) for p in (ROOT/'site/exports').glob('*.xlsx')}\n",
+          "after": "        actual={str(p.relative_to(ROOT)):sha(historical_bytes(str(p.relative_to(ROOT)),p.read_bytes())) for p in (ROOT/'site/exports').glob('*.xlsx')}\n"
+        }
+      ]
+    },
+    "tests/test_rotation003_wave1_release.py": {
+      "before_sha256": "fa617b17c0b6a5a21be778226bd6c902fe0bb91b28d9d5e61f4b8bc4086442da",
+      "after_sha256": "7219923b2c932a64f19749880347badf7bfaa554e143b6273c65870b36df013a",
+      "byte_length": 109655,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "",
+          "after": "from source_date_history import historical_bytes\n"
+        },
+        {
+          "after_offset": 101459,
+          "before": "            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),LAYOUT_FIX_APPLICATION_SHA256.get(file,REVIEWED_COMPATIBILITY_SHA256.get(file,digest)),file)\n",
+          "after": "            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),LAYOUT_FIX_APPLICATION_SHA256.get(file,REVIEWED_COMPATIBILITY_SHA256.get(file,digest)),file)\n"
+        },
+        {
+          "after_offset": 101723,
+          "before": "            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),RELEASE26_DISPLAY_SHA256.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)),file)\n",
+          "after": "            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),RELEASE26_DISPLAY_SHA256.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)),file)\n"
+        },
+        {
+          "after_offset": 107562,
+          "before": "            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest,file)\n",
+          "after": "            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),digest,file)\n"
+        }
+      ]
+    }
+  },
+  "self_pinned_files": [
+    "tests/fixtures/source-date-transition.json",
+    "tests/source_date_history.py"
+  ],
+  "loader_integrity": {
+    "path": "tests/source_date_history.py",
+    "normalized_sha256": "8ea7ecc8faadfa0ae38596b30b3403faf181cab3d2dce6faa60fa9a89cc1833d",
+    "byte_length": 6272
+  }
+}

@@ -1,3 +1,4 @@
+from source_date_history import historical_bytes
 """Offline exact-boundary tests for the source-unavailable wrapping-only patch.
 No network, browser, build, or output writes. All prior source/Excel bytes are pinned.
 """
@@ -12,7 +13,7 @@ CURRENT_TOKEN='rotation003-20261024-w2'
 RULE='.source-unavailable{white-space:normal;overflow-wrap:anywhere;max-width:100%}'
 TOKEN_FILES={'site/app.js':3,'site/index.html':2,'site/rosters.js':1}
 def sha(data): return hashlib.sha256(data).hexdigest()
-def read(name): return (ROOT/name).read_bytes()
+def read(name): return historical_bytes(name,(ROOT/name).read_bytes())
 BASELINE_FILES={'.github/pull_request_template.md': '01cd056e32e38dbae95c832514c767794de5f3d622ccd87c562206fe6d2e4dc1',
  '.gitignore': '7a367ba9154c09a2e6024ae5bd47fd53f007a3b14fa921148f2a61bdcac0a980',
  '.nojekyll': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
@@ -321,7 +322,7 @@ class SourceUnavailableLayoutFix(unittest.TestCase):
     def test_all_112_workbooks_are_byte_identical(self):
         expected={n:h for n,h in BASELINE_FILES.items() if n.startswith('site/exports/') and n.endswith('.xlsx')}
         self.assertEqual(len(expected),112)
-        actual={str(p.relative_to(ROOT)):sha(p.read_bytes()) for p in (ROOT/'site/exports').glob('*.xlsx')}
+        actual={str(p.relative_to(ROOT)):sha(historical_bytes(str(p.relative_to(ROOT)),p.read_bytes())) for p in (ROOT/'site/exports').glob('*.xlsx')}
         expected={n:dict(dict(dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY),**RELEASE31_PIN_OVERLAY),**RELEASE31_PUBLIC_METADATA_PIN_OVERLAY).get(n,RELEASE27_PIN_OVERLAY.get(n,RELEASE26_PIN_OVERLAY.get(n,h)))for n,h in expected.items()};expected.update(RELEASE26_ADDED_WORKBOOKS);expected.update(RELEASE30_ADDED_WORKBOOKS);expected.update(RELEASE31_ADDED_WORKBOOKS);expected.update({'site/exports/jlu-physics.xlsx': '72bd6f13e9d7576afbabc3926c93bffc2105a48cab88b915c0d698360e08abfb', 'site/exports/seu-physics-department.xlsx': '41a983710b89306cf43bc73cf13feb907183fa47003a967ac83819a1edd120d6', 'site/exports/tju-mechanical-engineering.xlsx': '6c9f91649b0bac6ddbf258d5179c2c21ac251033474771425902e138e2ab0ab2', 'site/exports/ruc-sociology.xlsx': '42c021eb9d2f354762f5749a4f0b562b76784fa95b7abccc4135946126bf970c', 'site/exports/sdu-physics.xlsx': '47f46e8811b9a1b6fc1912f2e9a82cd1dd4a8d792ebc3576f9f15906c27ccf65', 'site/exports/dlut-chemistry.xlsx': 'd83351e6072948a3bd4e025d426acaa30fef40a7ee9ddc67f0469d04d9f8932d'});expected.update({'site/exports/buaa-aeronautic-science-engineering.xlsx': 'a32e62eef8448d0799b42f464f613841f72a578a66c073c44f30fbe9e63eb34b', 'site/exports/muc-education.xlsx': '5fd10b35753001aac54db16064c7ff55cf9b8f759bc47b3729acd61976feb21f', 'site/exports/nku-economics.xlsx': '230487cc31b92196664a6b67d268064bfd4d03fd76a1ff6b57cbaea9e79a7969'});expected.update({'site/exports/bnu-sociology.xlsx': '753ba9690453605f0860ae97ae13d9348f8ec72ad3f1ffae9480a620839e8914', 'site/exports/fdu-marxism.xlsx': 'db33026a377539a55c154f80adf1670f4c48588380e3f3297b5fc3fffdec0a2e', 'site/exports/ustc-chemistry.xlsx': '166064516591b881dbd8942e74c234185742a12b811acc93be50157bf7b2ad13'})
         expected=workbook_endpoints(expected)
         self.assertEqual(actual,expected)

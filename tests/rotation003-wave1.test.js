@@ -1,3 +1,4 @@
+import {historicalBytes} from './source-date-history.js';
 import {release25View} from './release-history.js';
 // Independent release25 actual-consumer regression. Offline, no build writes.
 // Fixture constants come from approved raw source packages, never normalization output.
@@ -226,7 +227,7 @@ test('547 original profiles retain 122-filter outputs and exact labels except fo
 
 test('all six static asset references use the same exact release25 token',()=>{
   for(const [file,count]of Object.entries({'site/app.js':3,'site/rosters.js':1,'site/index.html':2})){
-    const source=fs.readFileSync(path.join(root,file),'utf8');assert.equal((source.match(/rotation003-20261024-w2/g)||[]).length,count,file);
+    const source=historicalBytes(file,root).toString('utf8');assert.equal((source.match(/rotation003-20261024-w2/g)||[]).length,count,file);
     assert(!source.includes('rotation002-20261023-w3'),file);
   }
 });

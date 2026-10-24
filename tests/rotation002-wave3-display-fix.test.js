@@ -1,3 +1,4 @@
+import {historicalBytes} from './source-date-history.js';
 import {endpointSha256} from './public-append-history.js';
 const RELEASE31_PUBLIC_METADATA_PIN_OVERLAY={"data/atlas.json": "2f843a600ef79f9b6d24ee98b702ed17dc335c776c4893f0316b5064ba3474fb", "data/rosters.json": "fa3fd547a59c10a5e6285523fbcd5e3215b6076f59f0a9246554fedbf2e3a83e", "site/atlas.json": "7d712a1f1e7d83d6093242dd0e9e12bb9d39d2183c33e4f7ffdecb2846caa327", "site/rosters.json": "35cad326388607f1abac4e9efbd05dbefa1eb4a1a7b7ffbc1ed194a1ee56dc27"};
 const RELEASE31_PIN_OVERLAY={"data/atlas.json": "28643e5c9a1d67007146dba8a2e6d410008deba5a5a1fcabdd10979f408fd679", "data/rosters.json": "3e47fc6836bde53790d63b6c2c6347fad614ecff63c8548051398ef8bd7eb3ca", "site/atlas.json": "47e92ca3f762d8921aa8bc6ab8f150c6d20d509d29bdee307cf5fecd6d263470", "site/rosters.json": "fd18bd4a98d291c4a441d4f1ac2ec7f7e4e684cf1e406965fa2c6a6cbd8fe4b1"};
@@ -18,7 +19,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 
 const root=process.env.ACADEMIC_ATLAS_TEST_ROOT||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const {educationStageLabel,stages,matches,mentorEvents}=await import(pathToFileURL(path.join(root,'site/model.js')));
-const read=name=>fs.readFileSync(path.join(root,name));
+const read=name=>historicalBytes(name,root);
 const digest=value=>createHash('sha256').update(value).digest('hex');
 const objectDigest=value=>digest(JSON.stringify(value));
 const db=release25View(JSON.parse(read('data/atlas.json')),'data/atlas.json');

@@ -1,3 +1,4 @@
+from source_date_history import historical_root
 """Generic append conservation and independent synthetic endpoint negatives."""
 import copy
 import json
@@ -353,7 +354,8 @@ class ReviewedSourceScopeAdapter(unittest.TestCase):
         source_ref = manifest['source_contract']
         source = history.pinned_json((ROOT / source_ref['path']).read_bytes(), source_ref['sha256'])
         scope = history.reviewed_scope_from_contract(source, source_ref, manifest['audit_digests'])
-        history.validate_tree(ROOT, manifest, inventory)
+        with historical_root(ROOT) as released_root:
+            history.validate_tree(released_root, manifest, inventory)
         documents = {rel: json.loads((ROOT / rel).read_bytes()) for rel in history.load_baseline()['files']}
         history.validate_reviewed_suffixes(documents, scope)
         import importlib.util

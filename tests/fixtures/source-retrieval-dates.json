@@ -1,0 +1,20 @@
+[
+  {"name":"one recorded date", "person":{"sources":[{"retrieved_at":"2026-10-23"}]}, "expected":"2026-10-23"},
+  {"name":"deduplicate dates without mutating sources", "person":{"sources":[{"retrieved_at":"2026-10-24"},{"retrieved_at":"2026-10-24"}]}, "expected":"2026-10-24"},
+  {"name":"ordered distinct range, not latest review date", "person":{"sources":[{"retrieved_at":"2026-10-24"},{"retrieved_at":"2025-12-31"},{"retrieved_at":"2026-02-01"},{"retrieved_at":"2026-10-24"}]}, "expected":"2025-12-31 至 2026-10-24"},
+  {"name":"no sources", "person":{}, "expected":"未知（来源日期未单独记录）"},
+  {"name":"empty sources", "person":{"sources":[]}, "expected":"未知（来源日期未单独记录）"},
+  {"name":"missing and blank dates", "person":{"sources":[{}, {"retrieved_at":null}, {"retrieved_at":""}, {"retrieved_at":"  "}]}, "expected":"未知（来源日期未单独记录）"},
+  {"name":"missing date alongside valid date", "person":{"sources":[{}, {"retrieved_at":"2026-10-23"}]}, "expected":"2026-10-23（部分来源日期未单独记录）"},
+  {"name":"invalid alongside valid range", "person":{"sources":[{"retrieved_at":"2026-10-24"}, {"retrieved_at":"2026-13-01"}, {"retrieved_at":"2026-10-23"}]}, "expected":"2026-10-23 至 2026-10-24（部分来源日期异常）"},
+  {"name":"mixed valid missing invalid", "person":{"sources":[{"retrieved_at":"2026-10-23"}, {}, {"retrieved_at":"2026-02-30"}]}, "expected":"2026-10-23（部分来源日期未单独记录；部分来源日期异常）"},
+  {"name":"only missing and invalid", "person":{"sources":[{}, {"retrieved_at":20261023}]}, "expected":"未知（来源日期未单独记录；来源日期异常）"},
+  {"name":"reject impossible calendar dates", "person":{"sources":[{"retrieved_at":"2026-00-01"},{"retrieved_at":"2026-13-01"},{"retrieved_at":"2026-01-00"},{"retrieved_at":"2026-04-31"},{"retrieved_at":"2026-02-29"},{"retrieved_at":"0000-01-01"}]}, "expected":"未知（来源日期异常）"},
+  {"name":"accept true Gregorian leap dates", "person":{"sources":[{"retrieved_at":"2000-02-29"},{"retrieved_at":"2024-02-29"}]}, "expected":"2000-02-29 至 2024-02-29"},
+  {"name":"reject century non-leap dates", "person":{"sources":[{"retrieved_at":"1900-02-29"},{"retrieved_at":"2100-02-29"}]}, "expected":"未知（来源日期异常）"},
+  {"name":"strict format rejects timestamp whitespace and partial dates", "person":{"sources":[{"retrieved_at":"2026-1-01"},{"retrieved_at":"2026-10"},{"retrieved_at":"2026-10-23T00:00:00Z"},{"retrieved_at":" 2026-10-23"},{"retrieved_at":"2026-10-23\n"},{"retrieved_at":"２０２６-１０-２３"}]}, "expected":"未知（来源日期异常）"},
+  {"name":"do not parse hostile or non-string dates", "person":{"sources":[{"retrieved_at":"<script>bad()</script>"},{"retrieved_at":true},{"retrieved_at":{}},{"retrieved_at":[]}]}, "expected":"未知（来源日期异常）"},
+  {"name":"never substitute database publication check or event dates", "person":{"updated_at":"2099-12-31","checked_at":"2099-12-30","sources":[{"published_at":"2026-10-24","checked_on":"2026-10-23"}],"education":[{"classification_checked_at":"2026-10-23"}]}, "expected":"未知（来源日期未单独记录）"},
+  {"name":"a blocked access date is still a recorded retrieval date, not a successful read claim", "person":{"sources":[{"retrieved_at":"2026-10-23","evidence_status":"access_blocked"},{"retrieved_at":"2026-10-24","evidence_status":"official_page_read"}]}, "expected":"2026-10-23 至 2026-10-24"},
+  {"name":"valid lower and upper years", "person":{"sources":[{"retrieved_at":"0001-01-01"},{"retrieved_at":"9999-12-31"}]}, "expected":"0001-01-01 至 9999-12-31"}
+]

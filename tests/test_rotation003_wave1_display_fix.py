@@ -1,3 +1,4 @@
+from source_date_history import historical_bytes
 """Two evidence-bound Chen Ke teaching-role aliases, with no implementation change.
 Self-contained offline regression; no research/baseline dependency or output writes.
 """
@@ -274,9 +275,9 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
 
     def test_04_application_exporter_and_tokens_have_only_reviewed_layout_overlay(self):
         for file,digest in UNCHANGED_FILES.items():
-            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),endpoint_sha256(file,dict(dict(dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY),**RELEASE31_PIN_OVERLAY),**RELEASE31_PUBLIC_METADATA_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest))))),file)
+            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),endpoint_sha256(file,dict(dict(dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY),**RELEASE31_PIN_OVERLAY),**RELEASE31_PUBLIC_METADATA_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest))))),file)
         for file,count in [('site/app.js',3),('site/rosters.js',1),('site/index.html',2)]:
-            self.assertEqual((ROOT/file).read_text().count('rotation003-20261024-w2'),count)
+            self.assertEqual(historical_bytes(file, root=ROOT).decode().count('rotation003-20261024-w2'),count)
 
     def test_05_generated_snapshots_recover_exactly_after_aliases_and_derived_build_id_removed(self):
         site=release25_view(json.loads((ROOT/'site/atlas.json').read_text()), 'site/atlas.json');roster=release25_view(json.loads((ROOT/'site/rosters.json').read_text()), 'site/rosters.json')
@@ -334,7 +335,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
     def test_10_all_110_other_department_and_roster_workbooks_remain_byte_identical(self):
         self.assertEqual(len(UNCHANGED_DEPARTMENT_WORKBOOKS),110)
         for file,digest in UNCHANGED_DEPARTMENT_WORKBOOKS.items():
-            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),digest,file)
+            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),digest,file)
         self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),endpoint_sha256('site/exports/待核对名录.xlsx',RELEASE31_PUBLIC_METADATA_PIN_OVERLAY['site/exports/待核对名录.xlsx']))
 
     def test_11_alias_guard_rejects_every_added_leaf_mutation_and_cross_source_swap(self):

@@ -34,6 +34,25 @@ export function matches(p,f,orgUnits=[]){if(f.school&&p.school_id!==f.school)ret
 export function safeUrl(v){try{const u=new URL(v);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
 export function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 
+// Recorded retrieval dates describe source access, never a whole-person review or current employment.
+// Strict calendar validation avoids timezone parsing and rollover of invalid dates.
+export function sourceRetrievalDateSummary(person){
+ const sources=Array.isArray(person?.sources)?person.sources:[],dates=new Set();
+ let missing=!sources.length,invalid=false;
+ for(const source of sources){
+  const value=source?.retrieved_at;
+  if(value==null||(typeof value==='string'&&!value.trim())){missing=true;continue}
+  if(typeof value!=='string'||value.length!==10||!/[0-9]{4}-[0-9]{2}-[0-9]{2}/.test(value)){invalid=true;continue}
+  const [year,month,day]=value.split('-').map(Number),leap=year%4===0&&(year%100!==0||year%400===0);
+  const days=[31,leap?29:28,31,30,31,30,31,31,30,31,30,31];
+  if(year<1||month<1||month>12||day<1||day>days[month-1]){invalid=true;continue}
+  dates.add(value);
+ }
+ const ordered=[...dates].sort(),summary=ordered.length>1?ordered[0]+' 至 '+ordered.at(-1):ordered[0]||'未知';
+ const notes=[missing?(ordered.length?'部分来源日期未单独记录':'来源日期未单独记录'):'',invalid?(ordered.length?'部分来源日期异常':'来源日期异常'):''].filter(Boolean);
+ return summary+(notes.length?'（'+notes.join('；')+'）':'');
+}
+
 export function navigableProfileUrl(v){const safe=safeUrl(v);if(!safe)return "";const u=new URL(safe);return /\/_cms\/|articleEdit|https?:/i.test(u.pathname)||u.searchParams.get("act")==="edit"?"":safe}
 
 export function matchStageFilters(p,type,region,continent){if(!region&&!continent)return true;const rows=stages(p,type);if(region==='not_recorded'||continent==='not_recorded')return rows.length===0&&(!region||region==='not_recorded')&&(!continent||continent==='not_recorded');return rows.some(e=>(!region||(e.region||'unknown')===region)&&(!continent||(e.continent_code||'unknown')===continent))}

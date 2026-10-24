@@ -1,3 +1,4 @@
+from source_date_history import historical_bytes
 """Independent release23 NJU/HNU source-pinned, offline regression.
 
 Run from a repository tests directory or use ACADEMIC_ATLAS_TEST_ROOT. Runtime
@@ -883,7 +884,7 @@ class Rotation002Wave2ReleaseTests(unittest.TestCase):
 
     def test_22_no_application_changes_or_new_ui_columns(self):
         for path,digest in UNCHANGED_APPLICATION_SHA256.items():
-            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),RELEASE26_DISPLAY_SHA256.get(path, LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest)))),path)
+            self.assertEqual(hashlib.sha256(historical_bytes(path,(ROOT/path).read_bytes())).hexdigest(),RELEASE26_DISPLAY_SHA256.get(path, LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest)))),path)
 
     def test_23_consumer_statistics_are_partial_and_not_full_school_population(self):
         js=self.consumers()

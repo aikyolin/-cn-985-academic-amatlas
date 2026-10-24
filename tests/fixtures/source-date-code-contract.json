@@ -1,0 +1,132 @@
+{
+  "version": "source_date_code_contract_v1",
+  "baseline_commit": "a84f750f65753d1c7b7e1d95366637060c203c10",
+  "baseline_url": "https://github.com/aikyolin/-cn-985-academic-amatlas/tree/a84f750f65753d1c7b7e1d95366637060c203c10",
+  "hash_scope": "Exact independently reviewed repository code and derived build-id bytes; not academic source webpage bytes.",
+  "files": {
+    "site/app.js": {
+      "before_sha256": "19945c1392982e4b3a1df95d93c271e957bf16b2a238f8d63d24ed892c722dea",
+      "after_sha256": "7eabb8614b71159119075d6690650229590aba7c17c5fe3a8b8680abfa680f5c",
+      "byte_length": 40379,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "import {UNIVERSITIES,UNIVERSITY_SOURCE,UNIVERSITY_CROSSCHECK,findUniversities} from './universities.js?v=rotation003-20261024-w2';\nimport {renderRosters} from './rosters.js?v=rotation003-20261024-w2';\nimport {CAMPUS_LABELS as CL,REGION_LABELS as RL,CONTINENT_LABELS as CO,stages,educationStageLabel,provisionalDegree,mentorEvent,professionalGuidanceEvent,mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,officialProfileUrl,versionedPath,sameBuild,collaboratorEvent,institutions,schoolName as storedSchoolName,schoolCampuses,schoolUnits,campusLabel,schoolStats,normalizeSchoolFilters,routeSchool,matches,safeUrl,escapeHtml as esc} from './model.js?v=rotation003-20261024-w2';\n",
+          "after": "import {UNIVERSITIES,UNIVERSITY_SOURCE,UNIVERSITY_CROSSCHECK,findUniversities} from './universities.js?v=source-dates-20261024';\nimport {renderRosters} from './rosters.js?v=source-dates-20261024';\nimport {CAMPUS_LABELS as CL,REGION_LABELS as RL,CONTINENT_LABELS as CO,stages,educationStageLabel,provisionalDegree,mentorEvent,professionalGuidanceEvent,mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,officialProfileUrl,versionedPath,sameBuild,collaboratorEvent,institutions,schoolName as storedSchoolName,schoolCampuses,schoolUnits,campusLabel,schoolStats,normalizeSchoolFilters,routeSchool,matches,sourceRetrievalDateSummary,safeUrl,escapeHtml as esc} from './model.js?v=source-dates-20261024';\n"
+        },
+        {
+          "after_offset": 2234,
+          "before": "const statusLabel=s=>({active_officially_listed:'官方仍列在职（截至核对日）',active_institutional_report:'机构报道列职（非实时人事核验）',official_page_currently_listed:'官网现列职务；实际人事状态未独立核验',official_profile_indexed_current_role:'官方索引列现职，正文未直接核验',official_page_currently_listed_retirement_not_disclosed:'官网现列教授；退休及实际全职状态未披露',unknown:'未核实',unknown_conflicting:'来源冲突，待核实',emeritus_officially_listed:'官方列荣休教授',retired_officially_listed:'官方列已退休',retired_or_emeritus_officially_listed:'官方离退休／荣休名录（非在职）',retired:'已退休',deceased:'已故'}[s]||'未核实');\n",
+          "after": "const statusLabel=s=>({active_officially_listed:'官方来源列示在职（不代表实时状态）',active_institutional_report:'机构报道列职（非实时人事核验）',official_page_currently_listed:'官网现列职务；实际人事状态未独立核验',official_profile_indexed_current_role:'官方索引列现职，正文未直接核验',official_page_currently_listed_retirement_not_disclosed:'官网现列教授；退休及实际全职状态未披露',unknown:'未核实',unknown_conflicting:'来源冲突，待核实',emeritus_officially_listed:'官方列荣休教授',retired_officially_listed:'官方列已退休',retired_or_emeritus_officially_listed:'官方离退休／荣休名录（非在职）',retired:'已退休',deceased:'已故'}[s]||'未核实');\n"
+        },
+        {
+          "after_offset": 5796,
+          "before": "function note(){const pending=(db.pending_people||[]).filter(p=>!filter.school||p.school_id===filter.school);return `<p class=\"notice\"><strong>分批核实人物资料 · 非完整名录</strong>${pending.length?`　另有 ${pending.length} 条人物待完善记录，不计已建人物档案。`:''}　核对日期 ${esc(db.updated_at)}。资料缺失不等于没有相关经历。</p>`}\n",
+          "after": "function note(){const pending=(db.pending_people||[]).filter(p=>!filter.school||p.school_id===filter.school);return `<p class=\"notice\"><strong>分批核实人物资料 · 非完整名录</strong>${pending.length?`　另有 ${pending.length} 条人物待完善记录，不计已建人物档案。`:''}　来源检索日期以逐条来源记录为准，不代表人物整体核验或现职持续有效。资料缺失不等于没有相关经历。</p>`}\n"
+        },
+        {
+          "after_offset": 24009,
+          "before": "function profile(id,mode='profile'){const p=db.people.find(p=>p.person_id===id);const pending=db.pending_people?.find(p=>p.person_id===id);if(!p&&pending){shell('rosters');renderRosters(db,main,pending.roster_entry_id,pending.school_id);return}if(!p){main.innerHTML='<h1>未找到该人物</h1><p>该档案尚未收录或链接已变化。</p><a href=\"#/people\">返回教师检索</a>';return}filter.school=p.school_id;schoolContext=p.school_id;filter.campus=p.campus_ids.length===1?p.campus_ids[0]:'';shell('people');main.innerHTML=`<p class=\"crumb\"><a href=\"#/\">全国学校总览</a> / <a href=\"#/school/${encodeURIComponent(p.school_id)}\">${esc(schoolName(db,p.school_id))}</a> / <a href=\"#/org/${encodeURIComponent(p.department_id)}\">${esc(p.department)}</a> / ${esc(p.name)}</p><div class=\"profile-top\"><div><h1>${esc(p.name)}</h1><div class=\"meta\">${esc(schoolName(db,p.school_id))} · ${esc(campusName(p))} · ${esc(p.department)}</div></div><div class=\"actions\">${officialProfileUrl(p)?link(officialProfileUrl(p),p.official_profile_link_label||'学校官方主页','button'):`<span class=\"notice\">${esc(p.official_profile_availability_label||'学校个人主页当前不可用；不以报道页面替代个人主页。')}</span>`}${officialProfileUrl(p)&&p.official_profile_availability_label?`<small class=\"notice\">${esc(p.official_profile_availability_label)}</small>`:''}${(p.alternative_professional_sources||[]).map(s=>sourceLink(p,s.url,s.title||'官方职业报道','button')).join('')}</div></div>${p.profile_coverage_label?`<p class=\"notice\">${esc(p.profile_coverage_label)}</p>`:''}${samplingNotice(p)}<div class=\"tabs\"><a class=\"${mode==='profile'?'active':''}\" href=\"#/person/${encodeURIComponent(id)}\">个人主页</a><a class=\"${mode==='lineage'?'active':''}\" href=\"#/person/${encodeURIComponent(id)}/lineage\">师承关系</a></div><div id=\"profile-content\"></div>`;if(mode==='lineage'){lineage(p);return}$('#profile-content').innerHTML=`<div class=\"detail-grid\"><div><h2>求学与研究经历</h2><div class=\"timeline\">${p.education.map(e=>`<article><div class=\"time\">${esc(period(e))}</div><h3>${esc(e.institution||'机构未披露')}</h3><p>${esc([educationStageLabel(e),e.field].filter(Boolean).join(' · '))}</p><p>${esc(e.country||'国家／地区未核实')} · ${esc(CO[e.continent_code]||'洲未核实')}</p>${provisionalDegree(e)?'<p class=\"notice\">学位层次仅按简介及学习顺序暂对应，具体阶段尚待核实，不参与确证学历筛选。</p>':''}${e.event_kind!=='degree'||e.degree_awarded!==true?`<p class=\"tag unknown\">非确证授位事件，不参与学历筛选</p>`:''}${e.degree_awarded_date?`<p>授位日期：${esc(e.degree_awarded_date)} ${sourceLink(p,e.degree_award_source_url,'授位依据')}</p>`:''}${['yes','no'].includes(e.institution_985)?`<p>院校历史985归类：${e.institution_985==='yes'?'是':'否'} ${sourceLink(p,e.classification_source,'分类参考来源')}<small>（仅院校归类，不证明个人授位或就读时建设身份）</small></p>`:''}${e.geography_basis?`<p>地域口径：${esc(e.geography_basis)}</p>`:''}${e.note?`<p class=\"notice\">${esc(e.note)}</p>`:''}${sourceLink(p,e.source_url,'查看来源','source-link',e)}</article>`).join('')||'<p>公开求学经历待补录。</p>'}</div><h2>任职经历</h2><div class=\"timeline\">${p.appointments.map(a=>`<article><div class=\"time\">${esc(period(a))}</div><h3>${esc(a.title||'任职')}</h3><p>${esc(a.institution||p.department)}</p>${a.note?`<p class=\"notice\">${esc(a.note)}</p>`:''}${sourceLink(p,a.source_url,'查看来源','source-link',a)}</article>`).join('')||'<p>任职详情待核实。</p>'}</div>${teachingSection(p)}${collaboratorSection(p)}${professionalGuidanceSection(p)}${projectGuidanceSection(p)}<h2>论文与学术成果</h2><p class=\"footnote\">仅列本次核实的精选公开成果，论文、学位论文及著作等类型分别标明，不代表完整成果清单。</p><ol class=\"publications\">${p.publications.map(a=>`<li>${link(a.url||a.doi_url,a.title||'学术成果')}<p>成果类型：${esc(publicationTypeLabel(a))}</p><p>${esc([a.year,a.venue,a.doi].filter(Boolean).join(' · '))}</p>${publicationLinkLabel(a)?`<p class=\"notice\">${esc(publicationLinkLabel(a))}</p>`:''}${a.note?`<p>${esc(a.note)}</p>`:''}${sourceLink(p,a.source_url,'收录依据','source-link',a)}</li>`).join('')||'<li>论文条目尚未核实，暂不自动匹配同名作者。</li>'}</ol></div><aside class=\"profile-info\" style=\"background:white;border:0;padding:0\"><div class=\"info-panel\"><h3>研究方向</h3><p>${esc(p.research_interests||'待补录')}</p></div><div class=\"info-panel\"><h3>核验与缺项</h3><p>核对日期 ${esc(db.updated_at)}</p><ul>${p.unknowns.map(s=>`<li>${esc(s)}</li>`).join('')||'<li>仍需持续核对来源时效。</li>'}</ul></div><h3>公开来源</h3><ol class=\"sources\">${p.sources.map(s=>`<li>${sourceLink(p,s.url,s.title||s.id||'公开来源','')}<br><small>${esc(s.evidence_label||s.evidence_status_label||s.evidence_status||'公开来源')}</small></li>`).join('')}</ol></aside></div>`}\n",
+          "after": "function profile(id,mode='profile'){const p=db.people.find(p=>p.person_id===id);const pending=db.pending_people?.find(p=>p.person_id===id);if(!p&&pending){shell('rosters');renderRosters(db,main,pending.roster_entry_id,pending.school_id);return}if(!p){main.innerHTML='<h1>未找到该人物</h1><p>该档案尚未收录或链接已变化。</p><a href=\"#/people\">返回教师检索</a>';return}filter.school=p.school_id;schoolContext=p.school_id;filter.campus=p.campus_ids.length===1?p.campus_ids[0]:'';shell('people');main.innerHTML=`<p class=\"crumb\"><a href=\"#/\">全国学校总览</a> / <a href=\"#/school/${encodeURIComponent(p.school_id)}\">${esc(schoolName(db,p.school_id))}</a> / <a href=\"#/org/${encodeURIComponent(p.department_id)}\">${esc(p.department)}</a> / ${esc(p.name)}</p><div class=\"profile-top\"><div><h1>${esc(p.name)}</h1><div class=\"meta\">${esc(schoolName(db,p.school_id))} · ${esc(campusName(p))} · ${esc(p.department)}</div></div><div class=\"actions\">${officialProfileUrl(p)?link(officialProfileUrl(p),p.official_profile_link_label||'学校官方主页','button'):`<span class=\"notice\">${esc(p.official_profile_availability_label||'学校个人主页当前不可用；不以报道页面替代个人主页。')}</span>`}${officialProfileUrl(p)&&p.official_profile_availability_label?`<small class=\"notice\">${esc(p.official_profile_availability_label)}</small>`:''}${(p.alternative_professional_sources||[]).map(s=>sourceLink(p,s.url,s.title||'官方职业报道','button')).join('')}</div></div>${p.profile_coverage_label?`<p class=\"notice\">${esc(p.profile_coverage_label)}</p>`:''}${samplingNotice(p)}<div class=\"tabs\"><a class=\"${mode==='profile'?'active':''}\" href=\"#/person/${encodeURIComponent(id)}\">个人主页</a><a class=\"${mode==='lineage'?'active':''}\" href=\"#/person/${encodeURIComponent(id)}/lineage\">师承关系</a></div><div id=\"profile-content\"></div>`;if(mode==='lineage'){lineage(p);return}$('#profile-content').innerHTML=`<div class=\"detail-grid\"><div><h2>求学与研究经历</h2><div class=\"timeline\">${p.education.map(e=>`<article><div class=\"time\">${esc(period(e))}</div><h3>${esc(e.institution||'机构未披露')}</h3><p>${esc([educationStageLabel(e),e.field].filter(Boolean).join(' · '))}</p><p>${esc(e.country||'国家／地区未核实')} · ${esc(CO[e.continent_code]||'洲未核实')}</p>${provisionalDegree(e)?'<p class=\"notice\">学位层次仅按简介及学习顺序暂对应，具体阶段尚待核实，不参与确证学历筛选。</p>':''}${e.event_kind!=='degree'||e.degree_awarded!==true?`<p class=\"tag unknown\">非确证授位事件，不参与学历筛选</p>`:''}${e.degree_awarded_date?`<p>授位日期：${esc(e.degree_awarded_date)} ${sourceLink(p,e.degree_award_source_url,'授位依据')}</p>`:''}${['yes','no'].includes(e.institution_985)?`<p>院校历史985归类：${e.institution_985==='yes'?'是':'否'} ${sourceLink(p,e.classification_source,'分类参考来源')}<small>（仅院校归类，不证明个人授位或就读时建设身份）</small></p>`:''}${e.geography_basis?`<p>地域口径：${esc(e.geography_basis)}</p>`:''}${e.note?`<p class=\"notice\">${esc(e.note)}</p>`:''}${sourceLink(p,e.source_url,'查看来源','source-link',e)}</article>`).join('')||'<p>公开求学经历待补录。</p>'}</div><h2>任职经历</h2><div class=\"timeline\">${p.appointments.map(a=>`<article><div class=\"time\">${esc(period(a))}</div><h3>${esc(a.title||'任职')}</h3><p>${esc(a.institution||p.department)}</p>${a.note?`<p class=\"notice\">${esc(a.note)}</p>`:''}${sourceLink(p,a.source_url,'查看来源','source-link',a)}</article>`).join('')||'<p>任职详情待核实。</p>'}</div>${teachingSection(p)}${collaboratorSection(p)}${professionalGuidanceSection(p)}${projectGuidanceSection(p)}<h2>论文与学术成果</h2><p class=\"footnote\">仅列本次核实的精选公开成果，论文、学位论文及著作等类型分别标明，不代表完整成果清单。</p><ol class=\"publications\">${p.publications.map(a=>`<li>${link(a.url||a.doi_url,a.title||'学术成果')}<p>成果类型：${esc(publicationTypeLabel(a))}</p><p>${esc([a.year,a.venue,a.doi].filter(Boolean).join(' · '))}</p>${publicationLinkLabel(a)?`<p class=\"notice\">${esc(publicationLinkLabel(a))}</p>`:''}${a.note?`<p>${esc(a.note)}</p>`:''}${sourceLink(p,a.source_url,'收录依据','source-link',a)}</li>`).join('')||'<li>论文条目尚未核实，暂不自动匹配同名作者。</li>'}</ol></div><aside class=\"profile-info\" style=\"background:white;border:0;padding:0\"><div class=\"info-panel\"><h3>研究方向</h3><p>${esc(p.research_interests||'待补录')}</p></div><div class=\"info-panel\"><h3>核验与缺项</h3><p>已记录来源检索日期：${esc(sourceRetrievalDateSummary(p))}</p><p class=\"footnote\">人物整体核验日期未单独记录；来源检索日期不代表已读原文或现职持续有效。</p><ul>${p.unknowns.map(s=>`<li>${esc(s)}</li>`).join('')||'<li>仍需持续核对来源时效。</li>'}</ul></div><h3>公开来源</h3><ol class=\"sources\">${p.sources.map(s=>`<li>${sourceLink(p,s.url,s.title||s.id||'公开来源','')}<br><small>${esc(s.evidence_label||s.evidence_status_label||s.evidence_status||'公开来源')}</small></li>`).join('')}</ol></aside></div>`}\n"
+        }
+      ]
+    },
+    "site/model.js": {
+      "before_sha256": "9dbc155288c1ee0a93fd5d11cd8a7c63724dc0bde6b117a2f71d327e34be3fef",
+      "after_sha256": "7ab0158271185d9945b4e32a73ceaddd055feede30049023acd3a974e1b021ce",
+      "byte_length": 12103,
+      "patches": [
+        {
+          "after_offset": 5749,
+          "before": "export function escapeHtml(v){return String(v??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[c]))}\n\n",
+          "after": "export function escapeHtml(v){return String(v??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[c]))}\n\n// Recorded retrieval dates describe source access, never a whole-person review or current employment.\n// Strict calendar validation avoids timezone parsing and rollover of invalid dates.\nexport function sourceRetrievalDateSummary(person){\n const sources=Array.isArray(person?.sources)?person.sources:[],dates=new Set();\n let missing=!sources.length,invalid=false;\n for(const source of sources){\n  const value=source?.retrieved_at;\n  if(value==null||(typeof value==='string'&&!value.trim())){missing=true;continue}\n  if(typeof value!=='string'||value.length!==10||!/[0-9]{4}-[0-9]{2}-[0-9]{2}/.test(value)){invalid=true;continue}\n  const [year,month,day]=value.split('-').map(Number),leap=year%4===0&&(year%100!==0||year%400===0);\n  const days=[31,leap?29:28,31,30,31,30,31,31,30,31,30,31];\n  if(year<1||month<1||month>12||day<1||day>days[month-1]){invalid=true;continue}\n  dates.add(value);\n }\n const ordered=[...dates].sort(),summary=ordered.length>1?ordered[0]+' 至 '+ordered.at(-1):ordered[0]||'未知';\n const notes=[missing?(ordered.length?'部分来源日期未单独记录':'来源日期未单独记录'):'',invalid?(ordered.length?'部分来源日期异常':'来源日期异常'):''].filter(Boolean);\n return summary+(notes.length?'（'+notes.join('；')+'）':'');\n}\n\n"
+        }
+      ]
+    },
+    "site/rosters.js": {
+      "before_sha256": "d060662fe29e2d5209ca7cabd89121f253c6df69878d776e652f2fe8f8eb45a9",
+      "after_sha256": "85856bc4c3c3f3fc2eabe8740b3896eb8f1cffa899ceb08c7bc66eb0dad8894b",
+      "byte_length": 11676,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "import {escapeHtml as esc,safeUrl,navigableProfileUrl,officialProfileUrl,versionedPath,institutions,schoolName,campusId,campusLabel,rosterMatches} from './model.js?v=rotation003-20261024-w2';\n",
+          "after": "import {escapeHtml as esc,safeUrl,navigableProfileUrl,officialProfileUrl,versionedPath,institutions,schoolName,campusId,campusLabel,rosterMatches} from './model.js?v=source-dates-20261024';\n"
+        }
+      ]
+    },
+    "site/index.html": {
+      "before_sha256": "a6e57e88a623157fd3103a6099b9e72b21a0435c9fa62530a41469814844242c",
+      "after_sha256": "27dfd97f6a5ddd89d9a0560ba585e266ace9e910f58c086ee1410b5f73ccf21a",
+      "byte_length": 1024,
+      "patches": [
+        {
+          "after_offset": 0,
+          "before": "<!doctype html><html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta name=\"theme-color\" content=\"#123346\"><title>学术经纬 · 中国985高校</title><link rel=\"stylesheet\" href=\"styles.css?v=rotation003-20261024-w2\"></head><body><a class=\"skip\" href=\"#main\">跳至主要内容</a><header><a class=\"brand\" href=\"#/\">学术经纬<span>ACADEMIC ATLAS</span></a><nav aria-label=\"主导航\"><a href=\"#/\" data-nav=\"home\">全国学校</a><a href=\"#/people\" data-nav=\"people\">教师检索</a><a href=\"#/rosters\" data-nav=\"rosters\">待核对名录</a><a href=\"#/about\" data-nav=\"about\">数据说明</a></nav></header><div class=\"shell\"><aside id=\"sidebar\" aria-label=\"学校与院系导航\"></aside><main id=\"main\" tabindex=\"-1\"><p>正在加载公开资料…</p></main></div><footer>学术经历，循证呈现。仅收录公开学术资料，不对教师作能力排名。</footer><script type=\"module\" src=\"app.js?v=rotation003-20261024-w2\"></script></body></html>\n",
+          "after": "<!doctype html><html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta name=\"theme-color\" content=\"#123346\"><title>学术经纬 · 中国985高校</title><link rel=\"stylesheet\" href=\"styles.css?v=source-dates-20261024\"></head><body><a class=\"skip\" href=\"#main\">跳至主要内容</a><header><a class=\"brand\" href=\"#/\">学术经纬<span>ACADEMIC ATLAS</span></a><nav aria-label=\"主导航\"><a href=\"#/\" data-nav=\"home\">全国学校</a><a href=\"#/people\" data-nav=\"people\">教师检索</a><a href=\"#/rosters\" data-nav=\"rosters\">待核对名录</a><a href=\"#/about\" data-nav=\"about\">数据说明</a></nav></header><div class=\"shell\"><aside id=\"sidebar\" aria-label=\"学校与院系导航\"></aside><main id=\"main\" tabindex=\"-1\"><p>正在加载公开资料…</p></main></div><footer>学术经历，循证呈现。仅收录公开学术资料，不对教师作能力排名。</footer><script type=\"module\" src=\"app.js?v=source-dates-20261024\"></script></body></html>\n"
+        }
+      ]
+    },
+    "scripts/build.py": {
+      "before_sha256": "92b6ec03d18666503a7e890e09faffe2e3ac7be61b017ec85b291c1498addacb",
+      "after_sha256": "5384b24c99229c1a520a246177614640a5e6cdf959ead5a78c11e73b2e0e85cc",
+      "byte_length": 31103,
+      "patches": [
+        {
+          "after_offset": 16821,
+          "before": " status='个人主页当前不可用' if person.get('official_profile_availability')=='unavailable' or person.get('official_profile_navigation_eligible') is False else '公开个人页（时效以核对日为准）'\n",
+          "after": " status='个人主页当前不可用' if person.get('official_profile_availability')=='unavailable' or person.get('official_profile_navigation_eligible') is False else '公开个人页（访问与内容时效见来源记录）'\n"
+        },
+        {
+          "after_offset": 19622,
+          "before": "",
+          "after": "def source_retrieval_date_summary(person):\n # Retrieval dates are source metadata, not a whole-person review or current-employment check.\n sources=person.get('sources') if isinstance(person.get('sources'),list) else []\n dates=set();missing=not sources;invalid=False\n for source in sources:\n  value=source.get('retrieved_at') if isinstance(source,dict) else None\n  if value is None or isinstance(value,str) and not value.strip():missing=True;continue\n  if not isinstance(value,str) or not re.fullmatch(r'[0-9]{4}-[0-9]{2}-[0-9]{2}',value):invalid=True;continue\n  year,month,day=map(int,value.split('-'));leap=year%4==0 and (year%100!=0 or year%400==0)\n  days=[31,29 if leap else 28,31,30,31,30,31,31,30,31,30,31]\n  if year<1 or not 1<=month<=12 or not 1<=day<=days[month-1]:invalid=True;continue\n  dates.add(value)\n ordered=sorted(dates);summary=(ordered[0]+' 至 '+ordered[-1]) if len(ordered)>1 else ordered[0] if ordered else '未知'\n notes=[]\n if missing:notes.append('部分来源日期未单独记录' if ordered else '来源日期未单独记录')\n if invalid:notes.append('部分来源日期异常' if ordered else '来源日期异常')\n return summary+('（'+'；'.join(notes)+'）' if notes else '')\n\n"
+        },
+        {
+          "after_offset": 20893,
+          "before": "",
+          "after": " # Retain the existing call signature; the dataset update date is not a retrieval/review date.\n"
+        },
+        {
+          "after_offset": 21512,
+          "before": " tables=[('总览',[['姓名','校区','院系','官方主页','核对日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p.get('campus') or '校区未标注',p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],updated_at,'；'.join(p['unknowns']),'分批核实资料，不是完整名录',profile_availability_label(p),'；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]\n",
+          "after": " tables=[('总览',[['姓名','校区','院系','官方主页','已记录来源检索日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p.get('campus') or '校区未标注',p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],source_retrieval_date_summary(p),'；'.join(p['unknowns']),'分批核实资料，不是完整名录',profile_availability_label(p),'；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]\n"
+        },
+        {
+          "after_offset": 22794,
+          "before": "",
+          "after": "  row[6]+='；人物整体核验日期未单独记录'\n"
+        },
+        {
+          "after_offset": 28330,
+          "before": "      rows.append([p['name'],'institution-classification-'+str(len(seen)),url,'历史985院校分类参考；非个人授位或就读当年建设身份的证明',updated_at]);seen.add(url)\n",
+          "after": "      rows.append([p['name'],'institution-classification-'+str(len(seen)),url,'历史985院校分类参考；非个人授位或就读当年建设身份的证明','未单独记录']);seen.add(url)\n"
+        }
+      ]
+    },
+    "site/atlas.json": {
+      "before_sha256": "9d805c710f54503940e27fc1d54e66567338fed3318f613f5717a5c5b2ebf8c3",
+      "after_sha256": "aba76e4dfad07e5b8bec8c090cd1773eda87480ed1f0a20c02253d46ebf547a8",
+      "byte_length": 10168224,
+      "patches": [
+        {
+          "after_offset": 10141959,
+          "before": "  \"build_id\": \"9ee1e24d63baef0c\",\n",
+          "after": "  \"build_id\": \"54644725caeb1763\",\n"
+        }
+      ]
+    },
+    "site/rosters.json": {
+      "before_sha256": "fec54195daeebc3209dd5691bebf3482c40155242efabfd424acbf8c982d30e8",
+      "after_sha256": "23dd5beefe138e34df6ea2a97e4eaf9f7618df6904e682afb44c9a3513cbc0c7",
+      "byte_length": 3250431,
+      "patches": [
+        {
+          "after_offset": 3250396,
+          "before": "  \"build_id\": \"9ee1e24d63baef0c\"\n",
+          "after": "  \"build_id\": \"54644725caeb1763\"\n"
+        }
+      ]
+    }
+  }
+}
