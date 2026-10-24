@@ -30,10 +30,10 @@ test('first breadth wave preserves four source hashes and independent reviews, n
   assert.equal(progress.source_references.length,4);assert.equal(progress.coverage_complete,false);assert.equal(progress.fields_complete,false);
   assert(progress.scope.includes('各3份部分职业资料'));assert(progress.scope.includes('不代表全校全院或全部职级完整'));
   for(const b of BATCHES){
-    const file=b.batch+'.json',ref=progress.source_references.find(s=>s.file===file);assert(ref);
-    assert.equal(ref.sha256,b.sha);assert.equal(ref.independent_review_file,b.batch+'-independent-review.json');assert.equal(ref.independent_review_sha256,b.review);
+    const refs=progress.source_references.filter(s=>s.sha256===b.sha);assert.equal(refs.length,1,b.batch);const ref=refs[0];
+    assert.equal(ref.sha256,b.sha);assert.deepEqual(ref,{sha256:b.sha,independent_review_sha256:b.review});assert.equal(ref.independent_review_sha256,b.review);
     for(const batch of [db.profile_batches.find(x=>x.batch_id===b.batch),rosters.batches.find(x=>x.batch_id===b.roster)]){
-      assert(batch,b.batch);assert.equal(batch.school_id,b.sid);assert(batch.source_files.some(s=>s.file===file&&s.sha256===b.sha));assert.equal(batch.coverage_complete,false);
+      assert(batch,b.batch);assert.equal(batch.school_id,b.sid);assert.deepEqual(batch.source_files,[{sha256:b.sha}]);assert.equal(batch.coverage_complete,false);
     }
     const p=db.profile_batches.find(x=>x.batch_id===b.batch);assert.deepEqual([p.people_count,p.established_professional_profiles,p.pending_profiles,p.complete_profiles],[3,3,0,0]);assert.equal(p.fields_complete,false);
   }

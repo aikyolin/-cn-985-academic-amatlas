@@ -52,14 +52,14 @@
   "source_integrity": {
     "approved_chain_files": 34,
     "specifications_sha256": "43d4e4fe3b58bb6979e8fb2d2a730706ca2b1164e1dc202f86b7addd335645d6",
-    "source_and_review_sha256": {
-      "faculty-batch-fdu-rotation-003.json": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab",
-      "faculty-batch-fdu-rotation-003-independent-review.json": "23d85f1f2b9b52e90d5ac87f60617affee86e50c0268c7f2538406f408d7aaf8",
-      "faculty-batch-bnu-rotation-003.json": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f",
-      "faculty-batch-bnu-rotation-003-independent-review.json": "0e2a93122e67557a73bba57594f347d5b20c02d6f2d8b622b378545d243b85e5",
-      "faculty-batch-ustc-rotation-003.json": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032",
-      "faculty-batch-ustc-rotation-003-independent-review.json": "d0769d51e89e50efbfd4749cc8b984368d8f894696f2b2129e80309ef7f7ae01"
-    }
+    "source_and_review_sha256": [
+      "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab",
+      "23d85f1f2b9b52e90d5ac87f60617affee86e50c0268c7f2538406f408d7aaf8",
+      "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f",
+      "0e2a93122e67557a73bba57594f347d5b20c02d6f2d8b622b378545d243b85e5",
+      "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032",
+      "d0769d51e89e50efbfd4749cc8b984368d8f894696f2b2129e80309ef7f7ae01"
+    ]
   },
   "normalization_boundaries": [
     "Source event kinds postdoc and graduation_degree_unspecified map to existing nondegree/unknown display labels, preserving original kinds and degree/null/date semantics.",
@@ -71,15 +71,12 @@
   ],
   "independent_reviews": [
     {
-      "file": "rotation003-wave3-independent-consumer-report.json",
       "sha256": "b172290151e55c4327671a90eec08627cdba15135369e107f312b76934f322c8"
     },
     {
-      "file": "rotation003-wave3-independent-consumer-actual-consumers.json",
       "sha256": "6bec5f5d8e19bd3d53ac05719ceeed912e933cdc4a5eb698a44bf2e59a509b95"
     },
     {
-      "file": "rotation003-wave3-independent-consumer-test-maintenance-review.json",
       "sha256": "b2f6324c888a9e0ff8ff8d1d676520fb769722c38561013acb396cdb08b641c3"
     }
   ],

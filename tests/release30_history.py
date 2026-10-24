@@ -1,11 +1,12 @@
-"""Exact historical projection for release30 regressions, not the live release31 view.
-Every original list leaf is hash-checked before appends are removed. Metadata that
+"""Exact historical public-v1 projection for release30 regressions, not the live release31 view.
+Every retained historical list leaf is hash-checked before appends are removed. Metadata that
 is permitted to advance is restored only from the frozen baseline fixture.
 """
 import copy,hashlib,json,pathlib
+from public_history import public_contract
 FIXTURE=pathlib.Path(__file__).parent/'fixtures/release30-history.json'
 assert hashlib.sha256(FIXTURE.read_bytes()).hexdigest()=='de597e5f93243275b591495729bfe5de29181e2993574e9472489bdf1de65cea','Historical fixture bytes changed'
-CONTRACT=json.loads(FIXTURE.read_text())
+CONTRACT=public_contract(30,FIXTURE.read_bytes())
 def object_sha(v):return hashlib.sha256(json.dumps(v,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 def release30_view(value,rel):
     c=CONTRACT[rel];out=copy.deepcopy(value)

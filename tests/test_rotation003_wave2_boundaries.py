@@ -6,7 +6,7 @@ from release26_history import release26_view
 from release_history import CONTRACT,release25_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 read=lambda name:release26_view(json.loads((ROOT/name).read_text()),name)
-PINS={'data/atlas.json':'4a2caaf803967d671bf0bb6b3aeb7c661eecaa40e7bf74e31c214215a3fecc93','data/rosters.json':'0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f','site/atlas.json':'f0f46d4cba67eec805f944e2bef431120b38016465afcdd1227cf6e7fd4a6861','site/rosters.json':'509f98b11edd2fdfe3a80ef1b0de0d07d46d2f186ed29c363e3e8ebe293168b0','progress/work-queue.json':'829169fdf8815ddff328d1a3d324ad102bd52b0220a6025277e8d9fef8ebdaff'}
+PINS={'data/atlas.json':'07d31cc1627dc341802a99c1e57d6ef8d29c82fd115ee0c882ffa9e29830a68d','data/rosters.json':'bdc4f7a400bb2b983d341b434b636aaf2f1beeb5f3aa070486a0aa44920fe27a','site/atlas.json':'8ce7435afda1486a9850ac8ffed16018b542e23c2fc337b71598cc2417fc4e80','site/rosters.json':'f11f1e1a40fd1b28211654fb1a2db4da83e78f28b1fcd96d9cb7e277ff0ae306','progress/work-queue.json':'829169fdf8815ddff328d1a3d324ad102bd52b0220a6025277e8d9fef8ebdaff'}
 class Rotation003Wave2Boundaries(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
@@ -20,7 +20,7 @@ class Rotation003Wave2Boundaries(unittest.TestCase):
   for p in self.new:self.assertTrue(p['detail_count_eligible']);self.assertFalse(p['fields_complete']);self.assertFalse(p['complete_profile_count_eligible']);self.assertFalse(p['include_in_current_faculty_count'])
   tasks=read('progress/work-queue.json')['tasks'];self.assertEqual(len(tasks),225)
   for t in tasks[222:]:self.assertEqual(t['status'],'partial');self.assertFalse(t['scope']['university_complete'])
- def test_all_historical_json_bytes_reconstruct_from_current_prefixes(self):
+ def test_historical_public_v1_json_bytes_reconstruct_from_current_prefixes(self):
   for rel,contract in CONTRACT.items():
    historical=release25_view(read(rel),rel);raw=(json.dumps(historical,ensure_ascii=False,indent=2)+'\n').encode();self.assertEqual(hashlib.sha256(raw).hexdigest(),contract['byte_sha256'],rel)
  def test_projection_rejects_historical_leaf_and_unchanged_metadata_tampering(self):

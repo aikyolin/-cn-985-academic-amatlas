@@ -23,12 +23,18 @@ def original_projection(original,current):
   return [original_projection(left,right)for left,right in zip(original,current)]
  assert original==current
  return current
+def public_original_hash(record):
+ if 'public_original_object_sha256' in record:
+  assert record['original_view']=='public_metadata_v1'
+  return record['public_original_object_sha256']
+ assert 'original_view' not in record
+ return record['original_object_sha256']
 class ReviewedAppendBoundaries(unittest.TestCase):
- def test_exact_original_snapshots_and_source_fields_remain_recoverable(self):
+ def test_exact_public_original_snapshots_and_source_fields_remain_recoverable(self):
   for rel in CONTRACT:release29_view(read(rel),rel)
   contract=read('tests/fixtures/rotation003-wave6-source-contract.json');people={p['person_id']:p for p in read('data/atlas.json')['people']}
   for record in contract['people']:
-   original=record['original'];current=people[original['person_id']];projection=copy.deepcopy(current)
+   original=record['original'];self.assertEqual(digest(original),public_original_hash(record));current=people[original['person_id']];projection=copy.deepcopy(current)
    for rule in record['normalization_rules']:
     self.assertEqual(pointer(original,rule['path']),rule['before'])
     self.assertEqual(pointer(current,rule['path']),rule['after'])
@@ -36,7 +42,7 @@ class ReviewedAppendBoundaries(unittest.TestCase):
     self.assertEqual(rule['review_sha256'],record['review_sha256'])
     self.assertTrue(set(rule['source_ids'])<={s['id']for s in original['sources']})
     restore(projection,rule['path'],rule['before'])
-   self.assertEqual(digest(original_projection(original,projection)),record['original_object_sha256'])
+   self.assertEqual(digest(original_projection(original,projection)),public_original_hash(record))
  def test_original_selection_and_zero_profile_outcomes_do_not_promote_holds(self):
   atlas=read('data/atlas.json');rosters=read('data/rosters.json');aggregate=read('progress/multischool-rotation003-wave6-coverage.json')
   people=atlas['people'][CONTRACT['data/atlas.json']['lists']['people']['length']:]

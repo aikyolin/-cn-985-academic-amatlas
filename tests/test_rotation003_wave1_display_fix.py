@@ -13,13 +13,13 @@ def object_sha(value):
 def json_bytes_sha(value):
     return hashlib.sha256((json.dumps(value,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest()
 
-BASELINE_ATLAS_SHA256 = '0b0fd57d534c40d6ee022fba99ce1958e0acb475404096cda1609287dff85f9f'
+BASELINE_ATLAS_SHA256 = '96d98129c6d68768083733019ade3e9514361a773c420f8a5d3244cd09da5ab5'
 
-BASELINE_ATLAS_OBJECT_SHA256 = '3604eba0262605b5facc007f5ef9b6909a903e2ec7b9038c39bb910525652867'
+BASELINE_ATLAS_OBJECT_SHA256 = '37876eea56b0f11f92c95cc99f132991b9ebda2c8c4b526887f39aeaa70e821f'
 
-BASELINE_SITE_ATLAS_SHA256 = 'a45a2d32578ad53a76b91599ca63c2e82b94eb098879ee967f8ff21b2b78defe'
+BASELINE_SITE_ATLAS_SHA256 = 'e3bb17bc6493e5e54a7893606065e350e98ff7ae1de22b6ee2bdc4473048d760'
 
-BASELINE_SITE_ROSTERS_SHA256 = '9e2360b5741d98d0cd9db41efa128bad73c4510b9797c40ed2b1a749f0295c52'
+BASELINE_SITE_ROSTERS_SHA256 = '8cc0217da1f664c1425c5fe49f9acb91d063772e21e3e5a5dd103d4d244e746e'
 
 BASELINE_BUILD_ID = 'bd358f2fcbb8afe8'
 
@@ -61,19 +61,20 @@ BASELINE_TEACHING_SHA256 = '5281a6be9884dabc8cbff18298c2b3eaff8e8c277a6f6242badc
 
 BASELINE_OTHER_TEACHING_SHA256 = '306ff9682224028c50c512a9826190dc07c9034ef4e87439195a4b3ee28020d1'
 
-SOURCE_HASHES = {'faculty-batch-cqu-rotation-003.json': '74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc',
- 'faculty-batch-cqu-rotation-003-independent-review.json': '0317f6e539c923722bc72e5ac3ca6e9a1ac2b7b03a663da3a8b70a97623195eb',
- 'cqu-rotation-003-sources/cqu-chenke-teaching-2021-minimal.json': '1ad0ad1f34dc83b1473eaa6c925b1e3f68c2ae132fbf8c9d15bc09355b272bf2',
- 'cqu-rotation-003-sources/cqu-chenke-lecture-2025-minimal.json': '4ca72ccc9566b64097a79bebee40ed1d4861b854cd6d3d5d7780dc173a3166e2'}
+# Exact evidence subset of the release25 source-review gate audit, in reviewed order.
+SOURCE_AUDIT_SHA256 = ['74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc',
+ '0317f6e539c923722bc72e5ac3ca6e9a1ac2b7b03a663da3a8b70a97623195eb',
+ '1ad0ad1f34dc83b1473eaa6c925b1e3f68c2ae132fbf8c9d15bc09355b272bf2',
+ '4ca72ccc9566b64097a79bebee40ed1d4861b854cd6d3d5d7780dc173a3166e2']
 
-UNCHANGED_FILES = {'data/rosters.json': 'fc08f82cf0a161d7ca8882151afcad6a0a7d5be88a8b56b936a6d055e997045a',
+UNCHANGED_FILES = {'data/rosters.json': '593f845e1688780d2dab562883048383e80e0f5921689ef6446df444dac7a396',
  'site/app.js': '5d4efe8a3c85cbca0125b950a70d7494e3d34a2e67240e6043347903965c8d4b',
  'site/model.js': '9dbc155288c1ee0a93fd5d11cd8a7c63724dc0bde6b117a2f71d327e34be3fef',
  'site/rosters.js': 'e4bb3c53da7a4ff3c00c1109651d66cc479c20dc265e7705e41213e3019a3502',
  'site/styles.css': '6063be4c04726d2dcf01a0442d5dc4d763b99c835a4110bd943799582c14fc34',
  'site/universities.js': '9323dad42fc2c35808ad92888cdffb0ad41edaefaee88c3b57ebb798349c2d62',
  'site/index.html': '3b5f7afdd4ac96aaca402884976bccb33cb9a1d2a1ad27793cf7cdd82e5970bf',
- 'scripts/build.py': '1bcd28d7c0f3766a54c2cae980add674f1eb0603df8b9dd8958d1c59634b6bb7',
+ 'scripts/build.py': '92b6ec03d18666503a7e890e09faffe2e3ac7be61b017ec85b291c1498addacb',
  'scripts/build_rosters.py': '29c5dee611bfaef3fd6afd1df9480b254652c51b1c4ce1c9568d75cb799319fe',
  'scripts/deterministic_xlsx.py': '65158f54d001eebb2ac586fd820cd69deed8e5c96ed5b117668ced51c11dc300'}
 
@@ -223,7 +224,7 @@ def assert_alias_contract(person):
 
 
 # Exact live release26 overlays; original golden constants remain above.
-RELEASE26_PIN_OVERLAY={'data/rosters.json': '0bcddfc6661b2926ef1560b9ffa689fe37e818e1c821abf54dd0de962f1a834f', 'site/exports/待核对名录.xlsx': '6e01fe76a8b3620f51e3a0ec68b27d1fa5a81ff3427ddfb266efd2e03235176a', 'site/index.html': 'a6e57e88a623157fd3103a6099b9e72b21a0435c9fa62530a41469814844242c', 'site/app.js': '19945c1392982e4b3a1df95d93c271e957bf16b2a238f8d63d24ed892c722dea', 'site/rosters.js': 'd060662fe29e2d5209ca7cabd89121f253c6df69878d776e652f2fe8f8eb45a9'}
+RELEASE26_PIN_OVERLAY={'data/rosters.json': 'bdc4f7a400bb2b983d341b434b636aaf2f1beeb5f3aa070486a0aa44920fe27a', 'site/exports/待核对名录.xlsx': '6e01fe76a8b3620f51e3a0ec68b27d1fa5a81ff3427ddfb266efd2e03235176a', 'site/index.html': 'a6e57e88a623157fd3103a6099b9e72b21a0435c9fa62530a41469814844242c', 'site/app.js': '19945c1392982e4b3a1df95d93c271e957bf16b2a238f8d63d24ed892c722dea', 'site/rosters.js': 'd060662fe29e2d5209ca7cabd89121f253c6df69878d776e652f2fe8f8eb45a9'}
 # Exact release27 endpoint overlay; all earlier golden constants remain unchanged.
 RELEASE27_PIN_OVERLAY={'site/atlas.json': '1d2e8210a0ca6d60b874d793bd77e49de7da6f845493eb6912b0f4861e57afa2', 'site/rosters.json': '4971f6b3812c6f8d133fd0aba909e65f2209b72cfb0d37e668c62531ec0446cc', 'data/atlas.json': '602e459ef4bc62aa839e8eff7475819f5a6672e1492b1181ac9188372fe9d1c5', 'data/rosters.json': '217716511dc290970fd8708af5cacebaf5f1343b1ec671515b5048e5f81dabec', 'progress/README.md': '08617604707fff4e8121cdd13b08ef3a92e96aa1df2b38cc9cad9f91cc5b1cc6', 'progress/current-coverage.md': 'f92a7728e5c329e0c203fa1c04910d485b496c83f1756728bf9bbd5dc7b55d4a', 'progress/work-queue.json': '88037ab5e76bb2744eaa5b5dc9601d5e1e375b31e3c3f33116e8eeb3a1fd1f60', 'site/exports/待核对名录.xlsx': '9100c6cf6a1a5b6128737e49ef0f79efa49779739efd11bafbf12dfa05917972', 'site/exports/待核对名录.csv': '2e14625fd76a04d5fa29ee4621669dd8b496ca26fbabb41df20043169f1fa78c'}
 # Exact release28 endpoint overlay; all earlier golden constants remain unchanged.
@@ -233,7 +234,7 @@ RELEASE29_PIN_OVERLAY={'site/atlas.json': '4b976d4c2e4a5b0beb1c838263ade37ece4fd
 # Exact release30 current endpoint pins; all historical constants and assertions remain below.
 # Exact release31 current endpoint pins; previous release assertions remain intact.
 # Exact public-metadata endpoint overlay; previous hashes and all fact assertions are retained.
-RELEASE31_PUBLIC_METADATA_PIN_OVERLAY={'data/atlas.json': '7ae5245f6d6cd4b7b6e36cddbbbd64bf283a38a784e3d8f16f503996427879f8', 'data/rosters.json': 'ac8eedf3a8db18424e479d719f451f45bd3f803d6707471f8539217c22267dff', 'site/atlas.json': '7326248f02e2d088621dfb8247ff0912522a530fb9386a345e6436e67f8d8509', 'site/rosters.json': '4895b98cee06f9cdd8a62daf79a81e5fa501469b2feb4d947474783a85a40d4f', 'site/exports/待核对名录.csv': '176a344f1f72b15fcad2dc34c05f1af21b1b86bd42ef30f33c255a7ba35994b8', 'site/exports/待核对名录.xlsx': '31a14ca3d0629fe2a8583367b71235a0c61d54decfb2a3aa8389fcc256627fb7'}
+RELEASE31_PUBLIC_METADATA_PIN_OVERLAY={'data/atlas.json': '2f843a600ef79f9b6d24ee98b702ed17dc335c776c4893f0316b5064ba3474fb', 'data/rosters.json': 'fa3fd547a59c10a5e6285523fbcd5e3215b6076f59f0a9246554fedbf2e3a83e', 'site/atlas.json': '7d712a1f1e7d83d6093242dd0e9e12bb9d39d2183c33e4f7ffdecb2846caa327', 'site/rosters.json': '35cad326388607f1abac4e9efbd05dbefa1eb4a1a7b7ffbc1ed194a1ee56dc27', 'site/exports/待核对名录.csv': 'aa21299c3f87de06b9427dffad265e1f6de15a2a22d79be4199e41008592c350', 'site/exports/待核对名录.xlsx': 'a51eb8fa7b9f13d8e03849f6fab02121df894a2b81e560e435cc855c69d19047'}
 RELEASE31_PIN_OVERLAY={'data/atlas.json': '28643e5c9a1d67007146dba8a2e6d410008deba5a5a1fcabdd10979f408fd679', 'data/rosters.json': '3e47fc6836bde53790d63b6c2c6347fad614ecff63c8548051398ef8bd7eb3ca', 'progress/README.md': '08db02455222e2e99629cca4c56490300d3f1df64733291b33f3f6567cf25aaf', 'progress/current-coverage.md': '375f389c9d889c6c3cbf6e7f0e9b025b4eee97d7a930fad1b7ebac4e23c602c3', 'progress/work-queue.json': 'd22c628ade740a72f063d7f0fe3570374ebdd881ef2d787330c4b39e5b51ea37', 'site/atlas.json': '47e92ca3f762d8921aa8bc6ab8f150c6d20d509d29bdee307cf5fecd6d263470', 'site/exports/待核对名录.csv': '0fba9ecbafaa02974d5af4d8c165ed6a4b135812e19f74d1dd3000cffaaf5231', 'site/exports/待核对名录.xlsx': '93736f1b3a20451a5622e99a42abc50c710af5322ea6c00fd582afc69f46969d', 'site/rosters.json': 'fd18bd4a98d291c4a441d4f1ac2ec7f7e4e684cf1e406965fa2c6a6cbd8fe4b1'}
 RELEASE30_PIN_OVERLAY={'data/atlas.json': '7bcbb58ea605ea73fec2a51412850550533ba5617d3f200d3812d10551c534fe', 'data/rosters.json': '8be8881d52699b7417e5ae7e542629d64156744d524c581c856faf6172878313', 'progress/README.md': '83b8119bb351cc5fd50905314aed93d62d1d1e72b74b91a4c0d4afd9b6e916fc', 'progress/current-coverage.md': '5c7f1f00dadf7a6622c90ea9e677127e4dcf3b9416819ee09700087af870b0c7', 'progress/work-queue.json': 'be961acbf8eb14435379eb9a3fd61da45cab3cddce0f95593f00bf57837f861b', 'site/atlas.json': '8a2fe871c7262ffc0a2f3edddb5b970a27382b9f5b85797c44f29f3be7582e4b', 'site/exports/待核对名录.csv': '9b0ca81c0420ef1fbe844b63d99684ee8b2bfb1beafb873cfcb40185158a9dd0', 'site/exports/待核对名录.xlsx': '75ad1f8c73e2add290a15de5e4aafa82d857dada4352af0cd7089a6ba2e4a25d', 'site/rosters.json': 'c837c259317159de566137c0227866a1fd7224020afbe1e37ab515ffb8a4f0a2'}
 class Rotation003Wave1DisplayFixTests(unittest.TestCase):
@@ -245,6 +246,13 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
         cls.old_person=next(p for p in cls.original['people']if p['person_id']=='cqu-chenke')
 
     def test_01_only_two_exact_evidence_bound_role_aliases_added(self):
+        audit=json.loads((ROOT/'progress/rotation003-wave1-release-validation.json').read_text())
+        audit_digests=audit['source_review_gate']['approved_source_review_evidence_sha256']
+        self.assertIsInstance(audit_digests,list)
+        self.assertEqual(len(SOURCE_AUDIT_SHA256),4)
+        self.assertEqual(len(set(SOURCE_AUDIT_SHA256)),4)
+        for digest in SOURCE_AUDIT_SHA256:
+            self.assertEqual(audit_digests.count(digest),1)
         self.assertTrue(assert_alias_contract(self.person))
         self.assertEqual([r['source_id']for r in self.person['teaching']],SOURCE_IDS)
         self.assertEqual(object_sha(self.old_person['teaching']),BASELINE_TEACHING_SHA256)

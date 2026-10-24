@@ -34,18 +34,19 @@ SOURCE_PACKAGE_SHA256 = {'sysu': '005d3d3f0c33c71b7bc45f2cbf20718e19ff07b5c3abc0
 REVIEW_SHA256 = {'sysu': '8483cafd43e013489dfc28ef020e2d37796c82af7db5512058517935df2bf1b1',
  'scu': '1cd89b87e3520869b36438d4c0510939ca2a9c99e501c86b52500120f3554aec'}
 
-REVIEWED_COMPANION_SHA256 = {'faculty-batch-sysu-rotation-002-scope.json': '498c30a9729f9d9ea97915fdc2011721484666fc279a0993e0eaa29eeb511722',
- 'faculty-batch-sysu-rotation-002-qa.json': 'e91b74e65a85398a940708971295ce0fe464e985b2b6ae82a423ba266aa731e1',
- 'faculty-batch-scu-rotation-002-scope.json': '06b9571a366cdceff6c36c52b2b5922f0b62e6626ffb8fca4043a93c88aa4fd2',
- 'faculty-batch-scu-rotation-002-qa.json': 'cc50ac7fe73861e87507b2287b55405a7eb37dd1449e106692ca59db51876b6e'}
+# School and audit roles are fixed by the existing school coverage ledgers.
+REVIEWED_COMPANION_SHA256 = {'sysu': {'scope': '498c30a9729f9d9ea97915fdc2011721484666fc279a0993e0eaa29eeb511722',
+          'qa': 'e91b74e65a85398a940708971295ce0fe464e985b2b6ae82a423ba266aa731e1'},
+ 'scu': {'scope': '06b9571a366cdceff6c36c52b2b5922f0b62e6626ffb8fca4043a93c88aa4fd2',
+         'qa': 'cc50ac7fe73861e87507b2287b55405a7eb37dd1449e106692ca59db51876b6e'}}
 
 BASELINE_ATLAS_PREFIXES = {'limitations': [6, 'a49996988d143a02303ec539cb493667cdc9b28a287271ae141f6cfd7b95021a'],
  'campuses': [4, 'a29d9956fbbc284b9cdafc640ac9057dd4512c2181d89780a92a6a8bf01e6505'],
  'org_units': [221, '695553a4c955ddea2a315d32b81cacb4a58047f0506092e143590348c4f6071c'],
- 'people': [541, '2a9a21e6a1d4c17e3f19d6568bf2c6247720fa3c161be779a7faec1c0c46b226'],
- 'profile_batches': [132, 'e35f82f155f73477c0306b454c20f97b06ec129810f1dfb5ea49631620cb5768'],
+ 'people': [541, 'aba94007625193b49e971a0f70fdbc76f3f694df5a391b93db17c8a8838343c0'],
+ 'profile_batches': [132, 'fe55e4b455c5d23d6aeeee55f4ad4224edb802d5a72e98102ce84fd0bdf790c5'],
  'pending_people': [83, '7bf2a61c24b2737d8d175bc65545de28d54f65214313881144efaa43dcc89bb5'],
- 'normalization_evidence': [13, 'ef5b3287ae747cea89dad75d99f3d3cb74c580229820c05d026d2798fde6c3aa'],
+ 'normalization_evidence': [13, 'd401a9ff92a19228917845cbbef4cef255973b5c2c66b6b9233e517db7166021'],
  'institutions': [39, '8234ea78331d931b8a54c5f40d4427a7844e7fcd621d0832a69e5f2df1b41848']}
 
 BASELINE_ATLAS_UNCHANGED = {'schema_version': '5a4747fcdafec66d8d8812022e3b7d2666d886ec0e0ee7926ec8c50db40f29d5',
@@ -54,17 +55,17 @@ BASELINE_ATLAS_UNCHANGED = {'schema_version': '5a4747fcdafec66d8d8812022e3b7d266
 
 BASELINE_ROSTER_PREFIXES = {'summary': [139, 'af9ab1768c3e51d73a99baf30cf940db5a5bf94a2063e1f3ffaa9884e07a3c0d'],
  'coverage': [210, 'ae50b9787836606192edc56033c7b9c522d8f89f66d92f0ecf0902fb93b9a0ee'],
- 'entries': [1706, '50fd278d13824192112558b02b0b6f4a3b78d9d0964c9ff305a727327c4f764f'],
+ 'entries': [1706, 'aaf58e44074293c6d53dd8890d6aeaf59c374e5c0256d5fe79a6b2865d7dfce2'],
  'conflicts': [30, '0f809e3a2c4ef1857b03479230f35a342b703ccf5f8a99ef032271d150c44c09'],
  'limitations': [35, '4fe8dea8da59fb3789194955a1b22aac4453cbf0e6a4d1cc2e82d172ba77c116'],
  'dedup_candidates': [60, '0a1adbff0d7b0ae2fe42cceff9a89e5e9eb6d164044456f319cfab6c9d1b1653'],
  'exclusions': [3, '89dc768c034efe9de60bb4199c92be749ea7f1bb1405daceff0e3ca88fa5228d'],
  'pending_checks': [2, '143ba1254ce843007ed487ca7f7ef2c684912b54c0580c6bb3f7157b7bc61048'],
- 'source_snapshots': [36, '64efd7679845995f5418bdfba501a5908717932d9c26ef812ae8987cc1a1d778'],
- 'batches': [105, 'cb3facbb1f4703493a5163e311b3b6a3845c99da63ee1896c892212359b33ad4'],
+ 'source_snapshots': [36, 'bae26c4aa31edf9ee3212a7723508241f475441863f03f69a8058264ad3b81c2'],
+ 'batches': [105, '1dc35bef97e100e4c6c613a017e1ebc9dc50b86993bbe39d034301e767b8419a'],
  'source_observations': [1744, '87f36a7e7e173932dc3bb3847c3032df5dd331285e5672d2985d7268f948144e'],
  'consolidations': [2, '094423def9986b8e47457a6592e143f75d67eaa7647c2c346df93d54b983e4e0'],
- 'supporting_method_evidence': [4, '499f5f2aa6250f9300c5953df9a10da6aeeb384aa2543a7c45862cb8539a1efa'],
+ 'supporting_method_evidence': [4, 'db4e111a865957df036ada510d96050eb5c2b39ed6635c628d48a9a2717ec547'],
  'local_mapping_corrections': [4, '9a1ccc7df1e46b7e8240c3963456fcaf0177d07ad31c051db7d1d5334a1aca1d'],
  'withdrawn_local_conflicts': [1, '8b54b3a107c8f050e3c33cc2125a710a4084b1be287fdb20db8ca392c093ed05']}
 
@@ -96,9 +97,9 @@ DISPLAY_FIX_APPLICATION_SHA256 = {
 SOURCE_FINGERPRINTS = {'sysu-liuzhiwei': (24, '5020c41e904d76799f5ef91582a4a32bfb66b13dbf32428a662917392bfe6430'),
  'sysu-wutao': (32, 'b103a0a54ba86f5e2ed3bd42f264d8d64791f146d2f32e6a90cd3f79b80300ba'),
  'sysu-caotianzhong': (40, '3161baad852dadeb86a27a3a170d44b19daa285a7878e706b5d2be9865f20ee8'),
- 'scu-dutian': (61, '5d0e13b0ea00407baf190ed44ef470e1d7598858d0d26187b08045d6740b1b5c'),
- 'scu-chenpan': (71, '97bdbaa7ed376afedd7b85da41800734f21cf434eaf216febf5653012b26c8f7'),
- 'scu-yangjieren': (78, 'fe160b0d6c77e5da7095945a8acf1ecdb72b1b0bf88d8f297d981f0bde43ed69')}
+ 'scu-dutian': (61, 'c0adac66ca16e4b26a234f886ad1f77d50460bf95480898b34e73aef05b64f49'),
+ 'scu-chenpan': (71, 'c663461f3644894070c81e1fe314e2e91a4edb8a672e72947b473e72222d2ac1'),
+ 'scu-yangjieren': (78, '871e082d1504314b904975394dcda54e1294b86a6e5c92a86737e97b14e1e458')}
 
 ORG_FINGERPRINTS = {'sysu-history-zhuhai': (79, 'cb38cea42048c91846d543105d2ee3c4f680c273369856afb2f0efcf4546f06d'),
  'scu-materials-science-engineering': (79,
@@ -919,15 +920,13 @@ SOURCE_SHAPES = [['value'],
    ['url', 0],
    ['evidence_status', 0],
    ['retrieved_at', 0],
-   ['source_type', 0],
-   ['evidence_file', 0]]],
+   ['source_type', 0]]],
  ['object',
   [['id', 0],
    ['url', 0],
    ['evidence_status', 0],
    ['retrieved_at', 0],
    ['source_type', 0],
-   ['evidence_file', 0],
    ['page_date', 0]]],
  ['object',
   [['id', 0],
@@ -935,7 +934,6 @@ SOURCE_SHAPES = [['value'],
    ['evidence_status', 0],
    ['retrieved_at', 0],
    ['source_type', 0],
-   ['evidence_file', 0],
    ['page_date', 0],
    ['access_note', 0]]],
  ['object',
@@ -944,7 +942,6 @@ SOURCE_SHAPES = [['value'],
    ['evidence_status', 0],
    ['retrieved_at', 0],
    ['source_type', 0],
-   ['evidence_file', 0],
    ['access_note', 0],
    ['missing_proof', 0]]],
  ['array', [51, 52, 53, 54]],
@@ -1224,6 +1221,14 @@ NODE_CONSUMERS = ('\n'
  'process.stdout.write(JSON.stringify(out));\n')
 
 
+# Only these exact approved locator leaves left the public view; every retained scalar is still mutated.
+PUBLIC_METADATA_REMOVED_LOCATOR_LEAF_COUNTS = {'sysu-liuzhiwei': 0,
+ 'sysu-wutao': 0,
+ 'sysu-caotianzhong': 0,
+ 'scu-dutian': 4,
+ 'scu-chenpan': 3,
+ 'scu-yangjieren': 2}
+
 def project_source_shape(value, node_id):
     """Check every original leaf and array length; allow additive compatibility fields."""
     node = SOURCE_SHAPES[node_id]
@@ -1439,7 +1444,7 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
             batch = next(b for b in self.d['profile_batches'] if b['batch_id']==f'faculty-batch-{school}-rotation-002')
             self.assertEqual(batch['selection'], EXPECTED_SCOPES[school])
             self.assertEqual(batch['limitations'][:len(EXPECTED_LIMITATIONS[school])], EXPECTED_LIMITATIONS[school])
-            self.assertEqual(batch['source_files'], [{'file':f'faculty-batch-{school}-rotation-002.json','sha256':SOURCE_PACKAGE_SHA256[school]}])
+            self.assertEqual(batch['source_files'], [{'sha256':SOURCE_PACKAGE_SHA256[school]}])
             self.assertEqual(batch['people_count'], 3)
             self.assertFalse(batch['coverage_complete'])
             self.assertFalse(batch['fields_complete'])
@@ -1579,7 +1584,7 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
         for pid, (shape, digest) in SOURCE_FINGERPRINTS.items():
             original = project_source_shape(source_view(self.ps[pid]), shape)
             paths = list(leaves(original))
-            self.assertEqual(len(paths), SOURCE_LEAF_COUNTS[pid])
+            self.assertEqual(len(paths) + PUBLIC_METADATA_REMOVED_LOCATOR_LEAF_COUNTS[pid], SOURCE_LEAF_COUNTS[pid])
             for path in paths:
                 changed = copy.deepcopy(original)
                 target = changed
@@ -1827,12 +1832,9 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
         expected_refs = []
         for school in EXPECTED_IDS:
             ledger = json.loads((ROOT/f'progress/{school}-rotation002-wave3-coverage.json').read_text())
-            ref = {'file':f'faculty-batch-{school}-rotation-002.json','sha256':SOURCE_PACKAGE_SHA256[school],
-                   'scope_file':f'faculty-batch-{school}-rotation-002-scope.json',
-                   'scope_sha256':REVIEWED_COMPANION_SHA256[f'faculty-batch-{school}-rotation-002-scope.json'],
-                   'qa_file':f'faculty-batch-{school}-rotation-002-qa.json',
-                   'qa_sha256':REVIEWED_COMPANION_SHA256[f'faculty-batch-{school}-rotation-002-qa.json'],
-                   'independent_review_file':f'faculty-batch-{school}-rotation-002-independent-review.json',
+            ref = {'sha256':SOURCE_PACKAGE_SHA256[school],
+                   'scope_sha256':REVIEWED_COMPANION_SHA256[school]['scope'],
+                   'qa_sha256':REVIEWED_COMPANION_SHA256[school]['qa'],
                    'independent_review_sha256':REVIEW_SHA256[school]}
             expected_refs.append(ref)
             self.assertEqual(ledger['source_references'], [ref])
@@ -1880,7 +1882,7 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
 
 
 # Release25 exact compatibility overlay; original historical pins above remain unchanged.
-ROTATION003_APPLICATION_SHA256 = {'site/app.js': '5d4efe8a3c85cbca0125b950a70d7494e3d34a2e67240e6043347903965c8d4b', 'site/model.js': '9dbc155288c1ee0a93fd5d11cd8a7c63724dc0bde6b117a2f71d327e34be3fef', 'site/rosters.js': 'e4bb3c53da7a4ff3c00c1109651d66cc479c20dc265e7705e41213e3019a3502', 'site/index.html': '3b5f7afdd4ac96aaca402884976bccb33cb9a1d2a1ad27793cf7cdd82e5970bf', 'scripts/build.py': '1bcd28d7c0f3766a54c2cae980add674f1eb0603df8b9dd8958d1c59634b6bb7', 'scripts/build_rosters.py': '29c5dee611bfaef3fd6afd1df9480b254652c51b1c4ce1c9568d75cb799319fe'}
+ROTATION003_APPLICATION_SHA256 = {'site/app.js': '5d4efe8a3c85cbca0125b950a70d7494e3d34a2e67240e6043347903965c8d4b', 'site/model.js': '9dbc155288c1ee0a93fd5d11cd8a7c63724dc0bde6b117a2f71d327e34be3fef', 'site/rosters.js': 'e4bb3c53da7a4ff3c00c1109651d66cc479c20dc265e7705e41213e3019a3502', 'site/index.html': '3b5f7afdd4ac96aaca402884976bccb33cb9a1d2a1ad27793cf7cdd82e5970bf', 'scripts/build.py': '92b6ec03d18666503a7e890e09faffe2e3ac7be61b017ec85b291c1498addacb', 'scripts/build_rosters.py': '29c5dee611bfaef3fd6afd1df9480b254652c51b1c4ce1c9568d75cb799319fe'}
 
 
 # Exact layout-only overlay; all original source/data/application pins remain above.

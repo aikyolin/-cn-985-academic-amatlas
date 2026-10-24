@@ -29,14 +29,14 @@
   "source_integrity": {
     "source_specifications_sha256": "33a5fd76831f391a3368414689031d1819fc9e3544d7489bd3164bf3a913ec92",
     "approved_source_review_companion_evidence_files": 42,
-    "source_and_review_hashes": {
-      "faculty-batch-lzu-rotation-003.json": "81746e6b89ae433f321d1b595422b99031082b42147318e02bccd38b899c2e98",
-      "faculty-batch-lzu-rotation-003-independent-review.json": "051538941807141563b918c4aed62c65b980054ea1855db314d3b547275f1702",
-      "faculty-batch-nwsuaf-rotation-003.json": "4bfe874e79de0f0cffd0aaf9e744fa6a64ca4729a55071b4713d758cd7f9d974",
-      "faculty-batch-nwsuaf-rotation-003-independent-review.json": "526f22de111717ad11b41441291b643060a83116a3812ab4034df05201cf9cf8",
-      "faculty-batch-xjtu-rotation-003.json": "857ad9b33181de41c2ea6c967ab09eab8405c2e35dd91cdec4025bc58b6211e1",
-      "faculty-batch-xjtu-rotation-003-independent-review.json": "d2e2fbb073ebf6945d749d0721a84a9a0ed65b1f466f4b1a23ccae524abf80ad"
-    }
+    "source_and_review_hashes": [
+      "81746e6b89ae433f321d1b595422b99031082b42147318e02bccd38b899c2e98",
+      "051538941807141563b918c4aed62c65b980054ea1855db314d3b547275f1702",
+      "4bfe874e79de0f0cffd0aaf9e744fa6a64ca4729a55071b4713d758cd7f9d974",
+      "526f22de111717ad11b41441291b643060a83116a3812ab4034df05201cf9cf8",
+      "857ad9b33181de41c2ea6c967ab09eab8405c2e35dd91cdec4025bc58b6211e1",
+      "d2e2fbb073ebf6945d749d0721a84a9a0ed65b1f466f4b1a23ccae524abf80ad"
+    ]
   },
   "regressions": {
     "repository_total": 1036,
@@ -93,19 +93,15 @@
   },
   "independent_reviews": [
     {
-      "artifact": "rotation003-wave2-independent-consumer-report.json",
       "sha256": "2c6a446bd8a71dc7967d515f0c2c9a2e18575168f8fcfed4d92ea5595ed075c1"
     },
     {
-      "artifact": "rotation003-wave2-independent-consumer-test-maintenance-review.json",
       "sha256": "d668fa738c5c3ea16656d275d2fa3bae8b43bc8506eb0ebaa22a8cf8066d3d7b"
     },
     {
-      "artifact": "rotation003-wave2-independent-display-review.json",
       "sha256": "d1c74aa1ce3878ca0ff686038eb2953fd3428de1121ad922f71813e668289ee6"
     },
     {
-      "artifact": "rotation003-wave2-export-negative-controls-report.json",
       "sha256": "04f17969e39d50ed4dc5b63b00df5399c54a6cbfcd95eac2246f2024cd6fcb79"
     }
   ],

@@ -62,7 +62,7 @@
         "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
         "published_at": null,
         "source_locators": [
-          "L0: HTTP 412 Precondition Failed"
+          "HTTP 412 Precondition Failed"
         ],
         "evidence_format": "minimized_verbatim_web_tool_excerpt",
         "public_raw_cache": false
@@ -78,7 +78,6 @@
         "http_status": 412,
         "source_id": "cqu-rotation003-wave7-roster-attempt",
         "source_url": "https://phys.cqu.edu.cn/yww/Faculty.htm",
-        "source_locator": "L0",
         "observed_at": "2026-10-24T03:06:48Z",
         "retry_performed": false,
         "alternate_route_performed": false,
@@ -132,7 +131,6 @@
         "http_status": 412,
         "source_id": "cqu-rotation003-wave7-roster-attempt",
         "source_url": "https://phys.cqu.edu.cn/yww/Faculty.htm",
-        "source_locator": "L0",
         "observed_at": "2026-10-24T03:06:48Z",
         "retry_performed": false,
         "alternate_route_performed": false,

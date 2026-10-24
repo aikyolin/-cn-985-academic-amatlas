@@ -33,8 +33,8 @@ const source=(p,id)=>{const s=p.sources.find(s=>s.id===id);assert(s,`${p.person_
 
 test('eleven immutable source and independent-review hashes match the public ledger and profile/roster batches',()=>{
  assert.equal(progress.baseline_commit,'484fd39b303c182aab1fbf407992d4e3d62d3c9c');assert.equal(progress.source_references.length,11);assert.equal(progress.coverage_complete,false);assert.equal(progress.fields_complete,false);assert(progress.scope.includes('不代表全校全院或全部字段完整'));
- for(const b of BATCHES){const file=b.batch+'.json',ref=progress.source_references.find(s=>s.file===file);assert(ref);assert.equal(ref.sha256,b.sha);assert.equal(ref.independent_review_file,b.batch+'-independent-review.json');assert.equal(ref.independent_review_sha256,b.review);
-  for(const batch of [db.profile_batches.find(x=>x.batch_id===b.batch),rosters.batches.find(x=>x.batch_id===b.roster)]){assert(batch);assert.equal(batch.school_id,b.sid);assert(batch.source_files.some(s=>s.file===file&&s.sha256===b.sha));assert.equal(batch.coverage_complete,false)}
+ for(const b of BATCHES){const refs=progress.source_references.filter(s=>s.sha256===b.sha);assert.equal(refs.length,1,b.batch);const ref=refs[0];assert.equal(ref.sha256,b.sha);assert.deepEqual(ref,{sha256:b.sha,independent_review_sha256:b.review});assert.equal(ref.independent_review_sha256,b.review);
+  for(const batch of [db.profile_batches.find(x=>x.batch_id===b.batch),rosters.batches.find(x=>x.batch_id===b.roster)]){assert(batch);assert.equal(batch.school_id,b.sid);assert.deepEqual(batch.source_files,[{sha256:b.sha}]);assert.equal(batch.coverage_complete,false)}
   const batch=db.profile_batches.find(x=>x.batch_id===b.batch);assert.equal(batch.complete_profiles,0);assert.equal(batch.fields_complete,false);
  }
 });

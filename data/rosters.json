@@ -5528,7 +5528,7 @@
       "accessed_on": "2026-10-24",
       "batch_id": "csu-selected-roster-rotation-003",
       "source_category_observed_count": 42,
-      "source_category_count_basis": "Manual count of the professor category in source L199-L280; no independent current employment denominator.",
+      "source_category_count_basis": "Manual count of the professor category in source; no independent current employment denominator.",
       "source_category_evidence_level": "official_roster_body_read"
     },
     {
@@ -5612,7 +5612,7 @@
       "accessed_on": "2026-10-24",
       "batch_id": "tongji-selected-roster-rotation003-wave7",
       "source_category_observed_count": 9,
-      "source_category_count_basis": "Only page 1 body L55-L63: 9 entries; L64 shows 7 pages, not a personnel denominator; no subsequent pages enumerated.",
+      "source_category_count_basis": "Only page 1 body: 9 entries; 7 pages shown, not a personnel denominator; no subsequent pages enumerated.",
       "source_category_evidence_level": "official_roster_body_read"
     }
   ],
@@ -12234,7 +12234,7 @@
           "title": "李剑锋 - 哈尔滨工业大学教师个人主页",
           "name_matches_title": true
         },
-        "correction_report": "weihai-roster-corrections.json",
+        "correction_report": "progress/weihai-roster-corrections.json",
         "corrected_roster_url": "http://homepage.hit.edu.cn/lijianfeng?lang=zh",
         "note": "原始HTML与当前HTML链接一致，本地早期解析错位，不是校方错误或页面更新。",
         "original_roster_url_interpretation": "原字段仅保留早期本地解析观察值，不是原始官网姓名锚链接；原始与当前官网一致，见本地映射纠错记录。",
@@ -12290,7 +12290,7 @@
           "title": "康文静 - 哈尔滨工业大学教师个人主页",
           "name_matches_title": true
         },
-        "correction_report": "weihai-roster-corrections.json",
+        "correction_report": "progress/weihai-roster-corrections.json",
         "corrected_roster_url": "http://homepage.hit.edu.cn/kangwenjing?lang=zh",
         "note": "原始HTML与当前HTML链接一致，本地早期解析错位，不是校方错误或页面更新。",
         "original_roster_url_interpretation": "原字段仅保留早期本地解析观察值，不是原始官网姓名锚链接；原始与当前官网一致，见本地映射纠错记录。",
@@ -12346,7 +12346,7 @@
           "title": "梅英杰 - 哈尔滨工业大学教师个人主页",
           "name_matches_title": true
         },
-        "correction_report": "weihai-roster-corrections.json",
+        "correction_report": "progress/weihai-roster-corrections.json",
         "corrected_roster_url": "http://homepage.hit.edu.cn/meiyingjie?lang=zh",
         "note": "原始HTML与当前HTML链接一致，本地早期解析错位，不是校方错误或页面更新。",
         "original_roster_url_interpretation": "原字段仅保留早期本地解析观察值，不是原始官网姓名锚链接；原始与当前官网一致，见本地映射纠错记录。",
@@ -62709,217 +62709,181 @@
   ],
   "source_snapshots": [
     {
-      "file": "instrument-full.html",
       "sha256": "9ed9f0e9dad91ea7bd460470fa9f03a826760963d5e507123e232a039a057091",
       "batch_id": "harbin-002",
       "school_id": "hit"
     },
     {
-      "file": "energy.html",
       "sha256": "007ea1bc307c1a246248ca0d9bd13816e13e22a8ceb7e9975f0e6c7be2bfb6e0",
       "batch_id": "harbin-002",
       "school_id": "hit"
     },
     {
-      "file": "instrument-lab.html",
       "sha256": "6b106c8397dc27492e9d5a191556aca9436ee6c04b4bfd1ccdbb6c86d2ee8b76",
       "batch_id": "harbin-002",
       "school_id": "hit"
     },
     {
-      "file": "environment.html",
       "sha256": "c0215e2d8aaeb64317d1ccf13cb5d7f4f9f24193ef4e829aaf1afe3ef7f7c598",
       "batch_id": "harbin-002",
       "school_id": "hit"
     },
     {
-      "file": "marine-4.html",
       "sha256": "7101787d33dc2bc292880b62e93f0ad651112be4b0c3d8dbb63656286d856fc8",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "auto-2.html",
       "sha256": "9a4413b1477c3f3992d4532f7d00687e345a1dfdcd5d42a7740c0dd6c1d8a9fd",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "marine-7.html",
       "sha256": "076955a823e73d7ebbe13515ae1b69050d8aab9e116ff86ea131d53489f72740",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "computer-2.html",
       "sha256": "25d308927f362c85df98aab01acc894ffef3d9cf8b55f10d7479d8092d012325",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "auto-root.html",
       "sha256": "c136d8aeb05c6836ea20bab0b8a81a80fb42cda461057322d4d047d95c9d7a76",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "computer-4.html",
       "sha256": "1d3a29303248998e9c2f564396c0f7a3dd6bf7eb1a4c4522be9160b7548b4730",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "marine-3.html",
       "sha256": "d22ec733efa7a624ab2154684b7cd8cc97c863e182235df91fc41034b879e914",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "auto-1.html",
       "sha256": "5b6500d565ed8a23e566f85103884e9c30b1681d21e6396f1f876ea0412e4c37",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "marine-5.html",
       "sha256": "2c04d6da550fdcabee398ce90b4f0fe73907f510dad1b8b1f895e311cf7547a1",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "auto-3.html",
       "sha256": "6508e7ea111b228e31b06ea0d2afce83fbf96b80ec8f91b4f014cbc3443e4ce4",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "computer-root.html",
       "sha256": "5da7e07d507e634e0a2e52a23cb72c3d058aafef9df53748c79e6be58a6cfe55",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "auto-0.html",
       "sha256": "7db25441fbf14b89d9ba89fc7f1e3b494bc6985fb5466477ebc4ce8c3746183d",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "computer-0.html",
       "sha256": "f8cdb853fdc1af687849402ead34fa88837cdb507fa8f1fa1690f6d1d835588b",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "marine-0.html",
       "sha256": "86791fdc936536ae98c6ab353eec33e3e09abf50b4eb8f792e1612d9ccd5109c",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "marine-6.html",
       "sha256": "fbc7a20aee6016b445a0e36cf883c4e9a2aa4fa1f742c21e9f58c70f90ebc87e",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "marine-2.html",
       "sha256": "6dd85f066358dd600c436ac1fa25e48a93897d553b5f54a089c8c9137ea5917b",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "marine-root.html",
       "sha256": "3265941f3cab2001f7ded27656b5278034ae9657645ebc02d307e4018a19efb1",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "marine-1.html",
       "sha256": "a3efeb92839e938d4631ff5ba16a0867bf15564d0a182d9a0cb727069633c6ae",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "computer-3.html",
       "sha256": "8e70ab6fd59b6b085111818ecc70e735263015f2c1ac1ab3f9634146221b773b",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "computer-1.html",
       "sha256": "03dcc1cb138ae3653f19441021f069e983e41b82d8822b981d2a7aae93e50dfb",
       "batch_id": "weihai-003",
       "school_id": "hit"
     },
     {
-      "file": "batch004-sources/portal-order-validation.json",
       "sha256": "2d49b897bde233b2c1d142338006d60b954c160f5261f23740f42ea76262f155",
       "batch_id": "shenzhen-004",
       "school_id": "hit"
     },
     {
-      "file": "batch004-sources/schooldept004.js",
       "sha256": "82513f8c4f2f9adafa1264dc46c74677e735549c82a7e5c4bfb353781c6a4ed8",
       "batch_id": "shenzhen-004",
       "school_id": "hit"
     },
     {
-      "file": "batch004-sources/999903600001.json",
       "sha256": "fb47dbcbb30f940cfc6fb201eb2bcd9c6fc5236fa0a0b09ce77cb8605fa8ed65",
       "batch_id": "shenzhen-004",
       "school_id": "hit"
     },
     {
-      "file": "batch004-sources/base.js",
       "sha256": "7a9ec2d608dbd24e6ac5310012b477e8b814dbbd36617571ba03f2ead72b0fe8",
       "batch_id": "shenzhen-004",
       "school_id": "hit"
     },
     {
-      "file": "batch004-sources/headerpage004.html",
       "sha256": "65b0e256172e4581ee21eda89850fee445b21039ebcd45c81c3c504284f081e6",
       "batch_id": "shenzhen-004",
       "school_id": "hit"
     },
     {
-      "file": "batch004-sources/999903600000.json",
       "sha256": "48794324535a2b670119a516a7c85d2d2cf2653495e57240ee68bd8c91e859ab",
       "batch_id": "shenzhen-004",
       "school_id": "hit"
     },
     {
-      "file": "batch004-sources/portal-departments.json",
       "sha256": "9c7aaf56dbc0f8d3c2b6c7d4a40e6353397f3fe6afe7d7bc4d0cad2dc4620f89",
       "batch_id": "shenzhen-004",
       "school_id": "hit"
     },
     {
-      "file": "batch005-sources/999903600053.json",
       "sha256": "85290202e98e209f17e495ff08803e1cfd343e22054ff7de912998f0717837f8",
       "batch_id": "shenzhen-005",
       "school_id": "hit"
     },
     {
-      "file": "batch005-sources/999903600052.json",
       "sha256": "1a47a83dd7753eac27a5434bf70dea03dbbd723fe90391b8d5c1f5f40eb1289c",
       "batch_id": "shenzhen-005",
       "school_id": "hit"
     },
     {
-      "file": "batch005-sources/999903600002.json",
       "sha256": "3f2326226c10f5a4a46c73edffdae2fd89cf49807c51acc2ee9e11e3c02c9352",
       "batch_id": "shenzhen-005",
       "school_id": "hit"
     },
     {
-      "file": "batch005-sources/validation.json",
       "sha256": "5958b8740faade1f306e64204b5d22989c7039bd50a22473c56d3c0e5dd55a37",
       "batch_id": "shenzhen-005",
       "school_id": "hit"
     },
     {
-      "file": "batch005-sources/999903600004.json",
       "sha256": "b9f2fc1ae09b3a04a7efc64e3ec4f90d2ba020e007afe5b30882d0ba35910c67",
       "batch_id": "shenzhen-005",
       "school_id": "hit"
@@ -62933,7 +62897,6 @@
       "category_count": 16,
       "source_files": [
         {
-          "file": "pilot-faculty-rosters.json",
           "sha256": "793f8a44064c2d01d643e266a3624812c8dd5f3369e3ace9d155ad7b65e1e0f6"
         }
       ],
@@ -63550,11 +63513,9 @@
       "category_count": 34,
       "source_files": [
         {
-          "file": "faculty-roster-batch-harbin-002.json",
           "sha256": "c1288142f7394215c8eec620ae386a539ec75a53d111f8c0ef3a0aae931fab2d"
         },
         {
-          "file": "faculty-roster-batch-harbin-002-coverage.json",
           "sha256": "2dc95589d457804aa73fdac637e070cd042b1f8caedf6c71ee52baf4345746f5"
         }
       ],
@@ -64461,7 +64422,6 @@
       "category_count": 17,
       "source_files": [
         {
-          "file": "faculty-roster-batch-weihai-003.json",
           "sha256": "6856bfb1b7ac1d3fe8d66ed995ebb30a6f33edd4be5960efb556877e8942fc85"
         }
       ],
@@ -64993,11 +64953,9 @@
       "count_unit": "integrated_roster_records_with_separate_raw_observations",
       "source_files": [
         {
-          "file": "faculty-roster-batch-shenzhen-004.json",
           "sha256": "f1bce8999311c1c61cf54803eaa82786e4d07af1f5702fde748f748c319584c6"
         },
         {
-          "file": "faculty-roster-batch-shenzhen-004-coverage.json",
           "sha256": "03b5da810206b2ec6404600c69635057f5b74b159c19953719a869518d792cd7"
         }
       ],
@@ -65487,11 +65445,9 @@
       "count_unit": "integrated_roster_records_with_separate_raw_observations",
       "source_files": [
         {
-          "file": "faculty-roster-batch-shenzhen-005.json",
           "sha256": "d7bda942fba74beeffb7a979976b86844bb26bae3188263e07fb8d6caf89c525"
         },
         {
-          "file": "faculty-roster-batch-shenzhen-005-coverage.json",
           "sha256": "0820bd378614bedaafb502c30963e64eab4ee6a9217a26392848d5e0f1b1f7a1"
         }
       ],
@@ -66019,7 +65975,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "zju-ic-001-roster-integration-ready.json",
           "sha256": "9d25063ba4fa3053fe66ad5a2413015a38fd453d1889e01480d4fce93a720210"
         }
       ],
@@ -66054,7 +66009,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "tsinghua-ee-001-roster-integration-ready.json",
           "sha256": "cb2367b1396b786766dd2d91dd2d3b6222b280627c7a8b9a9557ff9e24ddb33b"
         }
       ],
@@ -66089,7 +66043,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "pku-ic-001-roster-integration-ready.json",
           "sha256": "ddb365065fa1d1a5c004b240c4e32dc0642d5852d403b7358fcb94428a91fed9"
         }
       ],
@@ -66124,7 +66077,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "sjtu-ic-001-roster-integration-ready.json",
           "sha256": "e34463ebc38b245d5a472029527727afff339549e481b3c68d0ff677bde417c8"
         }
       ],
@@ -66159,7 +66111,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-zju-ic-002.json",
           "sha256": "1301a2cad0a85d7eee64fb0494b433edb461f774cc94229e9a3c9e8d47ea3ba4"
         }
       ],
@@ -66194,7 +66145,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-zju-ic-003.json",
           "sha256": "23f7334f8960f1e9f44f8e7d44fa96f4558fb3ec1edcf3285cd50284e5b1edbc"
         }
       ],
@@ -66229,7 +66179,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-sjtu-ic-002.json",
           "sha256": "013edd8ad089169921bd7ccec195e8adc94f7f29420c74885d1ae4a652f848e0"
         }
       ],
@@ -66264,7 +66213,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-tsinghua-ee-002.json",
           "sha256": "1af9dec6300ba4490c6a20d527360c97998418bbb2837eb422a1a1405071fe1f"
         }
       ],
@@ -66299,7 +66247,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-pku-ic-002.json",
           "sha256": "c13d0057441893604ea10717651c356af6ac469950b3ebc9197a3d3e0d1b10ea"
         }
       ],
@@ -66337,7 +66284,6 @@
       "coverage_unit_count": 2,
       "source_files": [
         {
-          "file": "faculty-batch-tsinghua-ee-003.json",
           "sha256": "66f78d53e12ca574d907d25dc165d79b27a62da8f3dde4f609fb3d59a1d9d9ad"
         }
       ],
@@ -66372,7 +66318,6 @@
       "coverage_unit_count": 1,
       "source_files": [
         {
-          "file": "faculty-batch-sjtu-ic-003.json",
           "sha256": "6741c909ec141c5041959c2d229432b61bfe2ac4a71e22accfb92b475b8a49cc"
         }
       ],
@@ -66407,7 +66352,6 @@
       "coverage_unit_count": 1,
       "source_files": [
         {
-          "file": "faculty-batch-pku-ic-003.json",
           "sha256": "2455556896789759390c11ac7f70f3dcca8059428e8d761c21ee0ee1237df4ae"
         }
       ],
@@ -66442,7 +66386,6 @@
       "coverage_unit_count": 1,
       "source_files": [
         {
-          "file": "faculty-batch-pku-ic-004.json",
           "sha256": "b7b152b77387ef33321add9ea44e08f8c88d5b5480b92cd64fb23d3a7f38bb98"
         }
       ],
@@ -66477,7 +66420,6 @@
       "coverage_unit_count": 1,
       "source_files": [
         {
-          "file": "faculty-batch-zju-ic-004.json",
           "sha256": "e8483887653d17a99688e118d6f124f417aabcea731108cb41ddf9af63318d3d"
         }
       ],
@@ -66512,7 +66454,6 @@
       "coverage_unit_count": 1,
       "source_files": [
         {
-          "file": "faculty-batch-sjtu-ic-004.json",
           "sha256": "6ec048b191cefb1a60966735209962d5ffa888f4dab4bc4688b4f6cd283b1e08"
         }
       ],
@@ -66544,7 +66485,6 @@
       "selection_basis": "官方正高级分类只读接口响应首3，不等同浏览器最终重排顺序。",
       "source_files": [
         {
-          "file": "faculty-batch-fdu-first-001.json",
           "sha256": "92f100f58a2774fd622c6da5e12797d8f360ee6cbb12e5153b7d1fdb9215e7d8"
         }
       ],
@@ -66576,7 +66516,6 @@
       "selection_basis": "官方教授分类名录原顺序首3。",
       "source_files": [
         {
-          "file": "faculty-batch-nju-first-001.json",
           "sha256": "acde5b544752822bd99afdae359073cd8588f3e016c232026af65098012ceece"
         }
       ],
@@ -66608,7 +66547,6 @@
       "selection_basis": "官方教授/研究员下校内指导教师分类原顺序首3，校外指导和其他职级未纳入。",
       "source_files": [
         {
-          "file": "faculty-batch-ustc-first-001.json",
           "sha256": "838f69732426459c4962e6f820acbeaf619e79f7fba4b2f621721fc432cacb00"
         }
       ],
@@ -66640,7 +66578,6 @@
       "selection_basis": "官方全体教师名录原顺序首3，不把名录81与学院简介163相加或等同。",
       "source_files": [
         {
-          "file": "faculty-batch-buaa-first-001.json",
           "sha256": "dbcbaf051fc310be1bd70304e74c66a0d93e25ad9bbf2607e8e113cff5d9ba65"
         }
       ],
@@ -66672,7 +66609,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-bit-first-001.json",
           "sha256": "5b0e3fe0eb1626d79ba542008f66643c850d2f33c0385f632b3b4a19b9d33b76"
         }
       ],
@@ -66704,7 +66640,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-bnu-first-001.json",
           "sha256": "397e1a41d32d82f23f48ab1041a670b23324b96867ffcfdc4e0b30b3c31a92df"
         }
       ],
@@ -66736,7 +66671,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-cau-first-001.json",
           "sha256": "739b1dcdf0014c983d7dc51e811426b231c153c48268b03890115a3dbec4bf22"
         }
       ],
@@ -66768,7 +66702,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-muc-first-001.json",
           "sha256": "266e5aa1193112debae40393646e1f391e08686cc18a3fbc7504cac7ffc06993"
         }
       ],
@@ -66800,7 +66733,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nku-first-001.json",
           "sha256": "85f6d10035ac4fa431456b8a6cf8fc897030fd10c5bfcca1db944e6f18414fb0"
         }
       ],
@@ -66832,7 +66764,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-dlut-first-001.json",
           "sha256": "5a549e6d733736785d089156f0f8cfe4e0a345c35448897fa9790b934f223fed"
         }
       ],
@@ -66864,7 +66795,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-tju-first-001.json",
           "sha256": "d5930bba30e6f7b808ad9e64d9e4f50096a4ac1ee8afce0dc25461daa596c57f"
         }
       ],
@@ -66896,7 +66826,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-jlu-first-001.json",
           "sha256": "92a47a38133eef620192419023288b6581ad4cab5082557ccc0971b60a6edaa2"
         }
       ],
@@ -66928,7 +66857,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-tongji-first-001.json",
           "sha256": "63210a56397abcf247e177ee3a66db8b319add431320cb0c18c5f1d996dad89c"
         }
       ],
@@ -66960,7 +66888,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-ruc-first-001.json",
           "sha256": "62e8875af172a20a8d5dc6c0fea05194bee888c7bd9061042c55042ff9f3a8b0"
         }
       ],
@@ -66992,7 +66919,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-neu-first-001.json",
           "sha256": "54ab535e6e9248ffe40132719d2951fb578b9d293e138e99032dc74b6452b1aa"
         }
       ],
@@ -67024,7 +66950,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-ecnu-first-001.json",
           "sha256": "1e371de16021e43918f0d21b19ec0b87f30bf2ce51d07a467a570702b6e0ba79"
         }
       ],
@@ -67056,7 +66981,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-seu-first-001.json",
           "sha256": "1d24f53efcca470eca407932d0a29245f20bbe457e66eb23c0249cc3704de719"
         }
       ],
@@ -67088,7 +67012,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-xmu-first-001.json",
           "sha256": "9efaba65974a9d094a306f0e7d844426b70e072b8d3832b7a6cb3620b01af10e"
         }
       ],
@@ -67120,7 +67043,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-sdu-first-001.json",
           "sha256": "9db10c21a935d3497eca82739feb726e6677da8371ccc6488a7271ace3f752a2"
         }
       ],
@@ -67152,7 +67074,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-ouc-first-001.json",
           "sha256": "ed7635af302f15ec34a6718a67ab50bfede9c97b467afb016489afbda5ee1ebe"
         }
       ],
@@ -67184,7 +67105,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-whu-first-001.json",
           "sha256": "283666dad6a990ce40dd8da5fe26223e71e02edae877ce2afdaec1bd88e60799"
         }
       ],
@@ -67216,7 +67136,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-hust-first-001.json",
           "sha256": "192451816625455d514d27e8fabbc9d067a03afa41d8900131c37211034ae644"
         }
       ],
@@ -67248,7 +67167,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-hnu-first-001.json",
           "sha256": "55933bf14e5df98e23c5b6f61c2198f762c4deb42e9627c1e6e7b8cb334510e5"
         }
       ],
@@ -67280,7 +67198,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-csu-first-001.json",
           "sha256": "398773be003dab0237748266a8e9740f3d87d57e045048b5ec5340f8b17f2eef"
         }
       ],
@@ -67312,7 +67229,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nudt-first-001.json",
           "sha256": "a125b40d5c0a4565daf680567151a498a07bc66805a60d12ecc04c86d5270fca"
         }
       ],
@@ -67344,7 +67260,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-sysu-first-001.json",
           "sha256": "0cf7f3206ddfebab6d0c9dcf46e4b74ea2826a3ea6a1fe066ae8485da01da317"
         }
       ],
@@ -67376,7 +67291,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-scut-first-001.json",
           "sha256": "a6fbfca14d92cf6b64b2c9057479e8aad2d35ae5a35c545947dca98bd7575d7c"
         }
       ],
@@ -67408,7 +67322,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-scu-first-001.json",
           "sha256": "816f185deefd0f68dab4ead06c07426a22ec29d0e190e717998a102633bc2ab9"
         }
       ],
@@ -67440,7 +67353,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-uestc-first-001.json",
           "sha256": "8eefb705cf90cff707ae5511eb96670d2aea1cf7582b9cdaa763bc2df8470dd2"
         }
       ],
@@ -67472,7 +67384,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-cqu-first-001.json",
           "sha256": "305d599e5e0fa52b98a4b6a9e6b95f0aa0864b87ab0a1896f9bc0ebcbc25e6a8"
         }
       ],
@@ -67504,7 +67415,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-xjtu-first-001.json",
           "sha256": "ff3a875ef7d1268baa74e1af7579eec1832217f801ded813f273c3f04d63ecf4"
         }
       ],
@@ -67536,7 +67446,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nwpu-first-001.json",
           "sha256": "18ef2ec8eae53d617d9d70c9b74fb2af8c2f1a2315b2d030a6bd45079dd6ceba"
         }
       ],
@@ -67568,7 +67477,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nwsuaf-first-001.json",
           "sha256": "98149d7cebd1df54a14529680c08957b221c50a153d0764352e26c4b3472a280"
         }
       ],
@@ -67600,7 +67508,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-lzu-first-001.json",
           "sha256": "32f02f005790ba97821d760838ce9b10087f5881d8ee7f6c39152d5e42b17252"
         }
       ],
@@ -67628,7 +67535,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nudt-supplement-001.json",
           "sha256": "ab7c06380355cdc8c6e3deb575d1185748d7c7a03f1d1c93f968a20d174c7f1a"
         }
       ],
@@ -67656,7 +67562,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-scu-supplement-001.json",
           "sha256": "2dd6f2698f877235dc53db1f5e2641bb213b7984363a1202c39e7ddb1b291667"
         }
       ],
@@ -67684,7 +67589,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-sysu-supplement-001.json",
           "sha256": "c39c701e520875453ead68e4eb2afd43301063d489acfeff86c862f794ebf643"
         }
       ],
@@ -67718,7 +67622,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-scu-supplement-002.json",
           "sha256": "c72d61d3943af579e97265c4de0a97050d64c45cf1d4930f4b23f7f66ec2d5c2"
         }
       ],
@@ -67748,7 +67651,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nudt-supplement-002.json",
           "sha256": "ebd208c30de74d1aa4bb2e7aa15d2e0f8858acdf5fb50d37b6bb6cff798e1f8a"
         }
       ],
@@ -67780,7 +67682,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-seu-supplement-001.json",
           "sha256": "f554588a9fc67da1373b92d1744620478cab344216d480d24730c2d2bd444172"
         }
       ],
@@ -67812,7 +67713,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-sysu-supplement-002.json",
           "sha256": "d2f087c95a4f4f1b1cdd134f3ae1840d2213d02736fea7888cfb54f28b96020a"
         }
       ],
@@ -67844,7 +67744,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-hust-supplement-001.json",
           "sha256": "29ef7a280ce0b04b5b04905e8f867676b3f082034ce059eee386460aac396c29"
         }
       ],
@@ -67876,7 +67775,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-ouc-supplement-001.json",
           "sha256": "7ac3b53f31b1ab6ce1989c2fc30ed1778623362999f7e56eb70bb26229afc498"
         }
       ],
@@ -67908,7 +67806,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nwpu-supplement-001.json",
           "sha256": "aa164dd3c76429d2ec1e67396807ca71a6cd0013fefb574ffa4366aef966cac0"
         }
       ],
@@ -67940,7 +67837,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-ruc-rotation-001.json",
           "sha256": "70f733d4ce8e201fb8c76a1ff814c11fa6c1638d5b58c3cf9fe50dc43649fdfe"
         }
       ],
@@ -67972,7 +67868,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-whu-supplement-001.json",
           "sha256": "31970f1f7969510ca9b8d29065401b1cba11e282b42e9651eca6d87705ed2c4c"
         }
       ],
@@ -68004,7 +67899,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-bit-rotation-001.json",
           "sha256": "9c0339460520dac802cad445cc15631e641287baeb7d5fbc3c876beb412acb0a"
         }
       ],
@@ -68036,7 +67930,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-cau-rotation-001.json",
           "sha256": "0cd377820a4b67b874f4aaf29464c0ea7bae370df5c9a9bae9f41fb79391f7f4"
         }
       ],
@@ -68068,7 +67961,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-buaa-rotation-001.json",
           "sha256": "436bbcda132584780afe8cfbe0b231e9056f83377a4ec602dd3da6246457d025"
         }
       ],
@@ -68100,7 +67992,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-muc-rotation-001.json",
           "sha256": "01736382664998535a8f7c2c02e98fd7a79f9aaf11b14f47eb8ed96177db4c9c"
         }
       ],
@@ -68132,7 +68023,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-bnu-rotation-001.json",
           "sha256": "666deda7a911769abfbed98664bf23768946057f215f7b4e07a0dad3389bcbc6"
         }
       ],
@@ -68164,7 +68054,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nku-rotation-001.json",
           "sha256": "2177bbd15bf1abfe314d2dfabf9060ca1c31c66a5c282322053e3482537c6e55"
         }
       ],
@@ -68196,7 +68085,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-dlut-rotation-001.json",
           "sha256": "9ae01b208f09a4cdfd86159934f6569df597383f77b690e8c52c53b0fdaf348d"
         }
       ],
@@ -68228,7 +68116,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-neu-rotation-001.json",
           "sha256": "1cdcfd5ffd3a3b64c763ecf7b963629a3e9564a30e022bd921e25508074c059d"
         }
       ],
@@ -68260,7 +68147,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-tju-rotation-001.json",
           "sha256": "49e6aca7df09c8169521ab9dcf15ede659006997e34e0b389c8ed9999c102bec"
         }
       ],
@@ -68292,7 +68178,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-jlu-rotation-001.json",
           "sha256": "301801b782b5862ca4c2f69573c4a293d00a08470141cc79d42fb0e3d1e9989b"
         }
       ],
@@ -68324,7 +68209,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-tongji-rotation-001.json",
           "sha256": "0e0c2d3b4557f74ed53e0f5154c594d2c53bfa4084a21aab6a3556eb8bb73137"
         }
       ],
@@ -68356,7 +68240,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-ecnu-rotation-001.json",
           "sha256": "559acbdca3c51c489c192acb0c0ea3b60aba6d6a0c1f7a691ce71d5b8ff25c4a"
         }
       ],
@@ -68388,7 +68271,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nju-rotation-001.json",
           "sha256": "b9ed7f39637631b7e9dbdef9e5f716ad7f4e29ec67fda5f812ab5fc0fc76ff8e"
         }
       ],
@@ -68420,7 +68302,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-fdu-rotation-001.json",
           "sha256": "4909648728d27711a2c6231860f89bdc638f3a67b9cb916aa2e4d50521910d10"
         }
       ],
@@ -68452,7 +68333,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-seu-rotation-001.json",
           "sha256": "4f2b76e873aa3c401c7e934d9408b3c789bcad6f195e6ba87c0b5f5ae8971bec"
         }
       ],
@@ -68484,7 +68364,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-xmu-rotation-001.json",
           "sha256": "ceb1168673d9c65fb4175e1945cff4a9fd9068b50d366245011d060013d3dca8"
         }
       ],
@@ -68516,7 +68395,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-sdu-rotation-001.json",
           "sha256": "cc1c28142ad954d792818e580998c88a1ce8aa8178577202fc98df003828eb30"
         }
       ],
@@ -68548,7 +68426,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-ustc-rotation-001.json",
           "sha256": "fefbf1e9f368266cdcc3ad8a860b0ae12a37719eef5d6e7c0e27600b88fbddd5"
         }
       ],
@@ -68580,7 +68457,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-ouc-rotation-001.json",
           "sha256": "add56548386df237f8ba55d4ace6e598451207e6e1ff2490d7b47e372207f8d4"
         }
       ],
@@ -68612,7 +68488,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-hust-rotation-001.json",
           "sha256": "131b14de5928efad9d1e093c26446da894515d18be315ecfc0ca4ae2a4f95a16"
         }
       ],
@@ -68644,7 +68519,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-hnu-rotation-001.json",
           "sha256": "2adb3d0a619ca8658453e35c75cc2e42ad5484af9ea17a5dd9ac59bd867def2c"
         }
       ],
@@ -68676,7 +68550,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-whu-rotation-001.json",
           "sha256": "ca0f7aacde86f6ec7bdcb5045104a12ef40814e24705eba3a8745628e94c8b49"
         }
       ],
@@ -68708,7 +68581,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nudt-rotation-001.json",
           "sha256": "96b5890fae33788e9a3d1e3eefb19bf00efb7727ccd264c56f42eb2577c1547e"
         }
       ],
@@ -68740,7 +68612,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-csu-rotation-001.json",
           "sha256": "46c12bb69530cb652594841f6942f5666da7747cf96411f696b77cdcd684af76"
         }
       ],
@@ -68772,7 +68643,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-cqu-rotation-001.json",
           "sha256": "92c9e7041f00b7b99f9b69de44013b1a294f6e0fbbb6747b6887fdbb28ada32a"
         }
       ],
@@ -68804,7 +68674,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-lzu-rotation-001.json",
           "sha256": "c70ccd322594444d06eb061454bb6e77a2668c569ea7d40731ba22765649f24c"
         }
       ],
@@ -68836,7 +68705,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nwpu-rotation-001.json",
           "sha256": "0c614ace2925824e4ff945da13fc8621b5604451633b76af088d5989734255c1"
         }
       ],
@@ -68868,7 +68736,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nwsuaf-rotation-001.json",
           "sha256": "19cd6cee7c18847dba1aa8da94a975eb6da5ccf372296cbbde5529eeeb3fa5a0"
         }
       ],
@@ -68900,7 +68767,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-scu-rotation-001.json",
           "sha256": "f6e77f7cb079de3236051570b040c6bb140215e86270cdd17437c4e982c8a6dd"
         }
       ],
@@ -68932,7 +68798,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-scut-rotation-001.json",
           "sha256": "528b670df3f36326a51260de8fdd64d1c6a50cfd0f27bf6bb838b6994ea2d0f5"
         }
       ],
@@ -68964,7 +68829,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-sysu-rotation-001.json",
           "sha256": "106892a97730e1de99dbf6d7f007cb9c86ccafed2b1ad1edcb42b759e7eb96af"
         }
       ],
@@ -68996,7 +68860,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-uestc-rotation-001.json",
           "sha256": "4ab16856a48c81695c851c6cfe82dfdea86dce573015788ab7ed0df5379ea133"
         }
       ],
@@ -69028,7 +68891,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-xjtu-rotation-001.json",
           "sha256": "e079624c7347a31a22431d616e9d596501851404b83a8628c5e0d21a2849a737"
         }
       ],
@@ -69060,7 +68922,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-cau-rotation-002.json",
           "sha256": "c246a2efd4599d8a044fb790b20389b8e5a56eec36749546d48c8caedd323e01"
         }
       ],
@@ -69092,7 +68953,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-neu-rotation-002.json",
           "sha256": "226bf8cf058ed295a9211e13be19e044ba36e7b866f7c08a5026ad2292e210e1"
         }
       ],
@@ -69124,7 +68984,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-tongji-rotation-002.json",
           "sha256": "9f9ba91abf8715a43fe265cf0340b5657b7d58318bddfc6d43078de65bdef7e0"
         }
       ],
@@ -69156,7 +69015,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-ecnu-rotation-002.json",
           "sha256": "c14da5f35e262af10821f328114fcf497cb348c8c17dcd03254407e3b8fb02c0"
         }
       ],
@@ -69188,7 +69046,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nju-rotation-002.json",
           "sha256": "141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471"
         }
       ],
@@ -69220,7 +69077,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-hnu-rotation-002.json",
           "sha256": "7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54"
         }
       ],
@@ -69252,7 +69108,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-sysu-rotation-002.json",
           "sha256": "005d3d3f0c33c71b7bc45f2cbf20718e19ff07b5c3abc0ae2eff9bea941787cf"
         }
       ],
@@ -69284,7 +69139,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-scu-rotation-002.json",
           "sha256": "9847ea52ba380cc5d81bb8a7e5b6353dc33dfe2fd3c036de8dae17edea9a5088"
         }
       ],
@@ -69316,7 +69170,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-cqu-rotation-003.json",
           "sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc"
         }
       ],
@@ -69348,7 +69201,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-xmu-rotation-003.json",
           "sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8"
         }
       ],
@@ -69380,7 +69232,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-bit-rotation-003.json",
           "sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477"
         }
       ],
@@ -69412,7 +69263,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-lzu-rotation-003.json",
           "sha256": "81746e6b89ae433f321d1b595422b99031082b42147318e02bccd38b899c2e98"
         }
       ],
@@ -69444,7 +69294,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nwsuaf-rotation-003.json",
           "sha256": "4bfe874e79de0f0cffd0aaf9e744fa6a64ca4729a55071b4713d758cd7f9d974"
         }
       ],
@@ -69476,7 +69325,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-xjtu-rotation-003.json",
           "sha256": "857ad9b33181de41c2ea6c967ab09eab8405c2e35dd91cdec4025bc58b6211e1"
         }
       ],
@@ -69508,7 +69356,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-fdu-rotation-003.json",
           "sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab"
         }
       ],
@@ -69540,7 +69387,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-bnu-rotation-003.json",
           "sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f"
         }
       ],
@@ -69572,7 +69418,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-ustc-rotation-003.json",
           "sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032"
         }
       ],
@@ -69604,7 +69449,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-buaa-rotation-003.json",
           "sha256": "9bb7fc7e5c4c597e6404861a81f50fbaa611e685cf5c6e9477205379293750c0"
         }
       ],
@@ -69632,7 +69476,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-muc-rotation-003.json",
           "sha256": "6040f3d15b95eb53181598d7aaf6757df82d5a98b6c6ea5a1f7ea35d7601f904"
         }
       ],
@@ -69664,7 +69507,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-nku-rotation-003.json",
           "sha256": "8c8b70fd671db58f8f55f7120c7aff626f4addbeddbb0d430c2d2320d507433c"
         }
       ],
@@ -69694,7 +69536,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-dlut-rotation-003.json",
           "sha256": "d10af13e5368561eee8a09fc83730af788c93298c96585d1eb577600f622ea03"
         }
       ],
@@ -69726,7 +69567,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-tju-rotation-003.json",
           "sha256": "3cef3140bd55d3e18b089531717ef1277fcd3edb521f9ba14abfb70247821c8a"
         }
       ],
@@ -69756,7 +69596,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-jlu-rotation-003.json",
           "sha256": "b3bec9b8b511a9f3117a6cc4389503e2638207521ed74d3fd0a75fb02bb175c7"
         }
       ],
@@ -69788,7 +69627,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-ruc-rotation-003.json",
           "sha256": "b1a06aa29af5e6bb1ca28db3b4cbf0c9ef04c60cb5647347e0ccaac295aa3886"
         }
       ],
@@ -69818,7 +69656,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-seu-rotation-003.json",
           "sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade"
         }
       ],
@@ -69846,7 +69683,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-sdu-rotation-003.json",
           "sha256": "9319a041c8a044c62f6aff4cf7472975386b174d4f686d5bac200783349491c5"
         }
       ],
@@ -69878,7 +69714,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-csu-rotation-003.json",
           "sha256": "4ff995e135b6f7d00a53a21b4aa7718002c897d1a4e6aa0b1ffc1e3d1620bb05"
         }
       ],
@@ -69910,7 +69745,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-scut-rotation-003.json",
           "sha256": "b9d6f12723ee263cbbb5d906db58d196bdc59f474a198cc411d2a6d3ed123f70"
         }
       ],
@@ -69938,7 +69772,6 @@
       "count_scope": "selected_subset_only",
       "source_files": [
         {
-          "file": "faculty-batch-uestc-rotation-003.json",
           "sha256": "69e57db2d5bb6f88d88c4cce0ca90588e183fe44af5edb855153e8fc6af7562c"
         }
       ],
@@ -127151,22 +126984,18 @@
   "supporting_method_evidence": [
     {
       "batch_id": "shenzhen-005",
-      "file": "batch004-sources/schooldept004.js",
       "school_id": "hit"
     },
     {
       "batch_id": "shenzhen-005",
-      "file": "batch004-sources/base.js",
       "school_id": "hit"
     },
     {
       "batch_id": "shenzhen-005",
-      "file": "batch004-sources/portal-departments.json",
       "school_id": "hit"
     },
     {
       "batch_id": "shenzhen-005",
-      "file": "shenzhen005-organizations-check.json",
       "school_id": "hit"
     }
   ],

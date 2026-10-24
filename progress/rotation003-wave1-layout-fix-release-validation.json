@@ -19,7 +19,6 @@
     "coverage_rows": 215
   },
   "implementation": {
-    "report_file": "rotation003-wave1-layout-fix-implementation-report.json",
     "sha256": "af519b055a0c7886acbb13e2f26033d849f19621a6da1d21abfb6f3ca1f94f74",
     "css_rule": ".source-unavailable{white-space:normal;overflow-wrap:anywhere;max-width:100%}",
     "asset_reference_counts": {
@@ -31,7 +30,6 @@
     "data_and_exporter_logic_unchanged": true
   },
   "independent_review": {
-    "report_file": "rotation003-wave1-layout-fix-independent-report.json",
     "sha256": "0f8924c0c9c8f447054c83da411b320a1ad5ac87e86495681c69b53dab186c94",
     "all_profile_lineage_routes_unchanged": 1110,
     "complete_inert_URL_occurrences": 5,
@@ -74,11 +72,11 @@
     "new_optional_immutable_baseline_controls": 2,
     "research_boundary_tests_rerun": 169,
     "regression_input_manifest_sha256": "9220dae7301092a89d63b845afb356742f4f412e69429e09d3d484eff8e1726a",
-    "logs": {
-      "rotation003-wave1-layout-fix-full-python-tests.txt": "d64d4fd909c7431dc0d445d31a03bb8beb32a7758976a27785d78782c3d0d380",
-      "rotation003-wave1-layout-fix-full-node-tests.txt": "fbd645967f386b5231d32cf2b331121df301708096d98d229042178cc059f9a1",
-      "rotation003-wave1-layout-fix-research-tests.txt": "61e0928ed9157497c13a3839abc7456b71234e45c128de2789e3dc2cf2962794"
-    }
+    "logs": [
+      "d64d4fd909c7431dc0d445d31a03bb8beb32a7758976a27785d78782c3d0d380",
+      "fbd645967f386b5231d32cf2b331121df301708096d98d229042178cc059f9a1",
+      "61e0928ed9157497c13a3839abc7456b71234e45c128de2789e3dc2cf2962794"
+    ]
   },
   "export_audit": {
     "report_file": "research/rotation003-wave1-layout-fix-build-export-report.json",
@@ -109,7 +107,6 @@
     }
   },
   "actual_diff_audit": {
-    "file": "rotation003-wave1-layout-fix-changed-file-review.json",
     "expected_changes_since_display_fix": 15,
     "expected_changes_since_published_release24": 44,
     "note": "External final freeze pins this report and actual diff without self-referential hashes."

@@ -46,13 +46,13 @@
     "approved_chain_files": 28,
     "source_specification_sha256": "a482ec4f3be506ac016f4676ab87790477576910d480ba2b254cafd4125f14ce"
   },
-  "independent_review_sha256": {
-    "rotation003-wave4-independent-consumer-report.json": "926863f9f2176a03e376522acebbcf5fe338245ac305cbeafce5f46bacac4757",
-    "rotation003-wave4-independent-consumer-actual-consumers.json": "e30fc20af7b9baabd40acf3a63e861a402ad93b29bc061a97df8248cc15b6e2e",
-    "rotation003-wave4-independent-consumer-test-maintenance-review.json": "660a2c0d329dd5f2bbfb29810ff5f384c41fbe2ce33e384042c01648c13d9f3a",
-    "rotation003-wave4-export-audit-report.json": "28a11a87d2f511804e9b5df1ddb59d5df5b9ccc4af4963ae1031066fddb789ba",
-    "rotation003-wave4-export-determinism-report.json": "e6d392268f9678415bece8f24083bc51a377caae3d524b8b1a66440f80315046"
-  },
+  "independent_review_sha256": [
+    "926863f9f2176a03e376522acebbcf5fe338245ac305cbeafce5f46bacac4757",
+    "e30fc20af7b9baabd40acf3a63e861a402ad93b29bc061a97df8248cc15b6e2e",
+    "660a2c0d329dd5f2bbfb29810ff5f384c41fbe2ce33e384042c01648c13d9f3a",
+    "28a11a87d2f511804e9b5df1ddb59d5df5b9ccc4af4963ae1031066fddb789ba",
+    "e6d392268f9678415bece8f24083bc51a377caae3d524b8b1a66440f80315046"
+  ],
   "exports": {
     "xlsx": 121,
     "cells": 196858,

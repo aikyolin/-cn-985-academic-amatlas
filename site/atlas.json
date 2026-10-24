@@ -4751,7 +4751,6 @@
       },
       "record_action": "update_existing",
       "update_metadata": {
-        "existing_file": "faculty-sample.json",
         "existing_person_id": "hit-jintao",
         "new_unique_person": false,
         "preserved_prior_publications": true,
@@ -26287,7 +26286,7 @@
           "url": "https://news.hit.edu.cn/14thddh/12239/list.htm",
           "retrieved_at": "2026-10-23",
           "evidence_status": "official_university_page_text_read",
-          "evidence_note": "官方页面L18文章卡片正文，非第三方转载；独立原微信正文未用作已读证据。"
+          "evidence_note": "官方页面文章卡片正文，非第三方转载；独立原微信正文未用作已读证据。"
         }
       ],
       "unknowns": [
@@ -84099,7 +84098,7 @@
           "title": "李剑锋 - 哈尔滨工业大学教师个人主页",
           "name_matches_title": true
         },
-        "correction_report": "weihai-roster-corrections.json",
+        "correction_report": "progress/weihai-roster-corrections.json",
         "corrected_roster_url": "http://homepage.hit.edu.cn/lijianfeng?lang=zh",
         "note": "原始HTML与当前HTML链接一致，本地早期解析错位，不是校方错误或页面更新。",
         "original_roster_url_interpretation": "原字段仅保留早期本地解析观察值，不是原始官网姓名锚链接；原始与当前官网一致，见本地映射纠错记录。",
@@ -84403,7 +84402,7 @@
           "title": "康文静 - 哈尔滨工业大学教师个人主页",
           "name_matches_title": true
         },
-        "correction_report": "weihai-roster-corrections.json",
+        "correction_report": "progress/weihai-roster-corrections.json",
         "corrected_roster_url": "http://homepage.hit.edu.cn/kangwenjing?lang=zh",
         "note": "原始HTML与当前HTML链接一致，本地早期解析错位，不是校方错误或页面更新。",
         "original_roster_url_interpretation": "原字段仅保留早期本地解析观察值，不是原始官网姓名锚链接；原始与当前官网一致，见本地映射纠错记录。",
@@ -84673,7 +84672,7 @@
           "title": "梅英杰 - 哈尔滨工业大学教师个人主页",
           "name_matches_title": true
         },
-        "correction_report": "weihai-roster-corrections.json",
+        "correction_report": "progress/weihai-roster-corrections.json",
         "corrected_roster_url": "http://homepage.hit.edu.cn/meiyingjie?lang=zh",
         "note": "原始HTML与当前HTML链接一致，本地早期解析错位，不是校方错误或页面更新。",
         "original_roster_url_interpretation": "原字段仅保留早期本地解析观察值，不是原始官网姓名锚链接；原始与当前官网一致，见本地映射纠错记录。",
@@ -103493,8 +103492,7 @@
       "profile_status": "partial_professional_source_checked",
       "identity_evidence": {
         "status": "official_roster_explicit_profile_link",
-        "source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
-        "scope_source_file": "sjtu-ic-chipdesign-scope.json"
+        "source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html"
       },
       "field_provenance": {
         "name": "heweifeng-source-2",
@@ -103762,8 +103760,7 @@
       "profile_status": "partial_professional_source_checked",
       "identity_evidence": {
         "status": "official_roster_explicit_profile_link",
-        "source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
-        "scope_source_file": "sjtu-ic-chipdesign-scope.json"
+        "source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html"
       },
       "field_provenance": {
         "name": "heguanghui-source-2",
@@ -104169,8 +104166,7 @@
       "profile_status": "partial_professional_source_checked",
       "identity_evidence": {
         "status": "official_roster_explicit_profile_link",
-        "source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
-        "scope_source_file": "sjtu-ic-chipdesign-scope.json"
+        "source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html"
       },
       "field_provenance": {
         "name": "jizhigang-source-2",
@@ -104482,8 +104478,7 @@
       "profile_status": "partial_professional_source_checked",
       "identity_evidence": {
         "status": "official_roster_explicit_profile_link",
-        "source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
-        "scope_source_file": "sjtu-ic-chipdesign-scope.json"
+        "source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html"
       },
       "field_provenance": {
         "name": "jianghonglan-source-2",
@@ -104814,8 +104809,7 @@
       "profile_status": "partial_professional_source_checked",
       "identity_evidence": {
         "status": "official_roster_explicit_profile_link",
-        "source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html",
-        "scope_source_file": "sjtu-ic-chipdesign-scope.json"
+        "source_url": "https://icisee.sjtu.edu.cn/jiaoshiml.html"
       },
       "field_provenance": {
         "name": "jiangjianfei-source-2",
@@ -179000,7 +178994,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "scu-rotation-002-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -179009,7 +179002,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "scu-rotation-002-sources/scu-dutian-profile-minimal.json",
           "page_date": "2026-02-03",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
@@ -179019,7 +179011,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "scu-rotation-002-sources/supplementary-minimal.json",
           "page_date": "2017-05-05",
           "access_note": "Confirms MRes graduation and master's supervisors. Does not revise the source-reported 2014–2015 study interval or assert 2017 award date.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -179030,7 +179021,6 @@
           "evidence_status": "search_index_only",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "scu-rotation-002-sources/supplementary-minimal.json",
           "access_note": "Stopped affected route immediately. No direct fetch, browser, alternate encoding, or retries to bypass denial.",
           "missing_proof": "Body verification of doctoral award statement and award date; search index alone is not used as verified degree-award fact.",
           "evidence_status_label": "仅搜索索引候选，目标正文未核；不作确证职业事实。"
@@ -179529,7 +179519,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "scu-rotation-002-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -179538,7 +179527,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "scu-rotation-002-sources/scu-chenpan-profile-minimal.json",
           "page_date": "2025-01-19",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
@@ -179548,7 +179536,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "scu-rotation-002-sources/supplementary-minimal.json",
           "page_date": "2020-09-29",
           "access_note": "Page has 2020 displayed date but body contains 2023 updates. Do not assume displayed date is last update.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -180040,7 +180027,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "scu-rotation-002-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -180049,7 +180035,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "scu-rotation-002-sources/scu-yangjieren-profile-minimal.json",
           "page_date": "2025-01-19",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -181130,7 +181115,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xmu-rotation-003-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -181139,7 +181123,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xmu-rotation-003-sources/xmu-chenhuang-profile-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -181148,7 +181131,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xmu-rotation-003-sources/publications-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
       ],
@@ -181524,7 +181506,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xmu-rotation-003-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -181533,7 +181514,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xmu-rotation-003-sources/xmu-chenwanyi-profile-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -181542,7 +181522,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xmu-rotation-003-sources/publications-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -181551,7 +181530,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xmu-rotation-003-sources/supplementary-minimal.json",
           "page_date": "2021-12-15",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -181908,7 +181886,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xmu-rotation-003-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -181917,7 +181894,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xmu-rotation-003-sources/xmu-dingchangfa-profile-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -181926,7 +181902,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xmu-rotation-003-sources/publications-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
       ],
@@ -182304,7 +182279,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "bit-rotation-003-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -182313,7 +182287,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "bit-rotation-003-sources/bit-chentian-profile-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
       ],
@@ -182772,7 +182745,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "bit-rotation-003-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -182781,7 +182753,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "bit-rotation-003-sources/bit-chenyuhui-profile-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -182790,7 +182761,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "bit-rotation-003-sources/bit-chenyuhui-2018-seminar-minimal.json",
           "page_date": "2018-03-01",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -183197,7 +183167,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "bit-rotation-003-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -183206,7 +183175,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "bit-rotation-003-sources/bit-daiyunyun-physics-profile-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -183215,7 +183183,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "bit-rotation-003-sources/bit-daiyunyun-frontier-profile-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
       ],
@@ -183899,7 +183866,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "lzu-rotation-003-sources/roster-minimal.json",
           "access_note": "Web reader returned the entire 188-line faculty listing body. HTTP origin status is not exposed; no direct-origin status claimed. Separate category more link timed out once, so selection is bounded to the fully read parent category rather than an unverified standalone page.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -183909,8 +183875,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "lzu-rotation-003-sources/lzu-zhouyouhe-profile-minimal.json",
-          "web_reference": "turn2153view1",
           "body_sections_read": "149–245, 333–334",
           "access_note": "Web reader returned professional page body; origin HTTP status is not exposed. Present-tense page listing is not an independent personnel/employment verification.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -183921,8 +183885,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official_republished_article",
-          "evidence_file": "lzu-rotation-003-sources/supplementary-minimal.json",
-          "web_reference": "turn2171view0",
           "published_at": "2021-11-19",
           "access_note": "HUST School of Aerospace Engineering alumni article. Explicitly credits a Changjiang Daily report compiled from university and other sources. Complete body read; only bounded historical PhD award and doctoral supervision facts used, not 2026 employment.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -184547,7 +184509,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "lzu-rotation-003-sources/roster-minimal.json",
           "access_note": "Web reader returned the entire 188-line faculty listing body. HTTP origin status is not exposed; no direct-origin status claimed. Separate category more link timed out once, so selection is bounded to the fully read parent category rather than an unverified standalone page.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -184557,8 +184518,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "lzu-rotation-003-sources/lzu-huangning-profile-minimal.json",
-          "web_reference": "turn2158view0",
           "body_sections_read": "149–237",
           "access_note": "Web reader returned professional page body; origin HTTP status is not exposed. Present-tense page listing is not an independent personnel/employment verification.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -185064,7 +185023,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "lzu-rotation-003-sources/roster-minimal.json",
           "access_note": "Web reader returned the entire 188-line faculty listing body. HTTP origin status is not exposed; no direct-origin status claimed. Separate category more link timed out once, so selection is bounded to the fully read parent category rather than an unverified standalone page.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -185074,8 +185032,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "lzu-rotation-003-sources/lzu-wangjizeng-profile-minimal.json",
-          "web_reference": "turn2158view1",
           "body_sections_read": "147–214",
           "access_note": "Web reader returned professional page body; origin HTTP status is not exposed. Present-tense page listing is not an independent personnel/employment verification.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -185086,10 +185042,8 @@
           "evidence_status": "official_search_snippet_only_body_unavailable",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official_index_candidate",
-          "evidence_file": "lzu-rotation-003-sources/supplementary-minimal.json",
-          "web_reference": "turn2163search0",
           "published_at": "2022-03-30",
-          "access_note": "Search index excerpt only. A single open failed with web-reader 400 Timeout fetching (turn2168view0); no retry or bypass. Not usable for a verified mentorship edge or education filter.",
+          "access_note": "Search index excerpt only. A single open failed with web-reader 400 Timeout fetching; no retry or bypass. Not usable for a verified mentorship edge or education filter.",
           "navigation_available": false,
           "navigation_enabled": false,
           "evidence_status_label": "仅官方索引候选，目标正文不可用；不作为确证师承或当前导航。"
@@ -185522,7 +185476,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "nwsuaf-rotation-003-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -185532,7 +185485,6 @@
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
           "page_date": "2020-05-27",
-          "evidence_file": "nwsuaf-rotation-003-sources/nwsuaf-israelausin-profile-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -185542,7 +185494,6 @@
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
           "page_date": null,
-          "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -185552,7 +185503,6 @@
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
           "page_date": "2025-08-05",
-          "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
       ],
@@ -186022,7 +185972,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "nwsuaf-rotation-003-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -186032,7 +185981,6 @@
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
           "page_date": "2025-05-30",
-          "evidence_file": "nwsuaf-rotation-003-sources/nwsuaf-anlijun-profile-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -186042,7 +185990,6 @@
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
           "page_date": null,
-          "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -186052,7 +185999,6 @@
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
           "page_date": null,
-          "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -186062,7 +186008,6 @@
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
           "page_date": "2025-08-05",
-          "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
       ],
@@ -186456,7 +186401,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "nwsuaf-rotation-003-sources/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -186466,7 +186410,6 @@
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
           "page_date": "2025-07-17",
-          "evidence_file": "nwsuaf-rotation-003-sources/nwsuaf-caoshuai-profile-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -186476,7 +186419,6 @@
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
           "page_date": "2025-08-05",
-          "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -186486,7 +186428,6 @@
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
           "page_date": "2021-03-18",
-          "evidence_file": "nwsuaf-rotation-003-sources/supplementary-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
       ],
@@ -186790,7 +186731,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/roster-minimal.json",
           "page_date": "2025-07-11",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -186800,7 +186740,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/identity-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -186809,7 +186748,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/wang-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -186818,7 +186756,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/wang-minimal.json",
           "page_date": "2015-03-28",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -187362,7 +187299,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/roster-minimal.json",
           "page_date": "2025-07-11",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -187372,7 +187308,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/identity-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -187381,7 +187316,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/li-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -187390,7 +187324,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/li-minimal.json",
           "page_date": "2025-07-30",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -188243,7 +188176,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/roster-minimal.json",
           "page_date": "2025-07-11",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -188253,7 +188185,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/identity-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
         {
@@ -188262,7 +188193,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/xu-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
         {
@@ -188271,7 +188201,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/xu-minimal.json",
           "temporal_note": "Undated legacy team biography; use historical education only, not its administrative title as current.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
@@ -188281,7 +188210,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-23",
           "source_type": "university_official",
-          "evidence_file": "xjtu-rotation-003-sources/publications-minimal.json",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
       ],
@@ -188497,8 +188425,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/fdu-roster-minimal.json",
-          "web_reference": "turn2190view0",
           "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -188508,8 +188434,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/fdu-chenxueming-minimal.json",
-          "web_reference": "turn2192view1",
           "body_sections_read": "85–236",
           "published_at": "2021-09-06",
           "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
@@ -188745,8 +188669,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/fdu-roster-minimal.json",
-          "web_reference": "turn2190view0",
           "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -188756,8 +188678,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/fdu-chenzhonghe-minimal.json",
-          "web_reference": "turn2192view2",
           "body_sections_read": "85–90",
           "published_at": "2018-12-12",
           "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
@@ -188995,8 +188915,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/fdu-roster-minimal.json",
-          "web_reference": "turn2190view0",
           "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -189006,8 +188924,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/fdu-dongyahua-minimal.json",
-          "web_reference": "turn2194view0",
           "body_sections_read": "85–108",
           "published_at": "2018-12-10",
           "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
@@ -189399,8 +189315,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/bnu-roster-minimal.json",
-          "web_reference": "turn2192view0",
           "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -189410,8 +189324,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/bnu-dongleiming-minimal.json",
-          "web_reference": "turn2197view0",
           "body_sections_read": "67–143",
           "published_at": null,
           "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
@@ -189650,8 +189562,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/bnu-roster-minimal.json",
-          "web_reference": "turn2192view0",
           "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -189661,8 +189571,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/bnu-fuchangbo-minimal.json",
-          "web_reference": "turn2197view1",
           "body_sections_read": "67–80",
           "published_at": null,
           "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
@@ -190321,8 +190229,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/bnu-roster-minimal.json",
-          "web_reference": "turn2192view0",
           "access_note": "Readable official category body. Origin HTTP status not exposed. Category membership is not independent employment verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -190332,8 +190238,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-fdu-bnu/bnu-fuyuanyuan-minimal.json",
-          "web_reference": "turn2198view0",
           "body_sections_read": "67–268",
           "published_at": null,
           "access_note": "Official professional body read. Old publication timestamp does not independently establish present employment; current listing separately reported.",
@@ -191050,8 +190954,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-ustc/roster-minimal.json",
-          "web_reference": "turn2193view0",
           "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -191061,8 +190963,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-ustc/ustc-liujianzhong-minimal.json",
-          "web_reference": "turn2195view0",
           "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -191605,8 +191505,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-ustc/roster-minimal.json",
-          "web_reference": "turn2193view0",
           "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -191616,8 +191514,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-ustc/ustc-zhuoqingde-minimal.json",
-          "web_reference": "turn2195view1",
           "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -192008,8 +191904,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-ustc/roster-minimal.json",
-          "web_reference": "turn2193view0",
           "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -192019,8 +191913,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-ustc/ustc-songlei-minimal.json",
-          "web_reference": "turn2195view2",
           "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
@@ -192030,9 +191922,7 @@
           "evidence_status": "researcher_body_read_independent_review_unavailable",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-ustc/songlei-publication-minimal.json",
-          "web_reference": "turn2196view2",
-          "access_note": "Researcher originally read official body at turn2196view2; independent auditor could not access the target and did not retry. Retained bibliography is held as a candidate only; not independently verified.",
+          "access_note": "Researcher originally read official body; independent auditor could not access the target and did not retry. Retained bibliography is held as a candidate only; not independently verified.",
           "independent_review_status": "not_passed_source_unavailable",
           "navigation_available": false,
           "navigation_enabled": false,
@@ -192106,8 +191996,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-roster-minimal.json",
-          "web_reference": "turn2206view0",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
@@ -192118,8 +192006,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-caoyihua-minimal.json",
-          "web_reference": "turn2210view1",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -192446,8 +192332,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-roster-minimal.json",
-          "web_reference": "turn2206view0",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
@@ -192458,8 +192342,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-chengxiaoquan-minimal.json",
-          "web_reference": "turn2210view2",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -192810,8 +192692,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-roster-minimal.json",
-          "web_reference": "turn2206view0",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
@@ -192822,8 +192702,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/buaa-dongleiting-minimal.json",
-          "web_reference": "turn2211view0",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -193213,8 +193091,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/muc-roster-minimal.json",
-          "web_reference": "turn2206view1",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
@@ -193225,8 +193101,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/muc-gaobing-minimal.json",
-          "web_reference": "turn2207view3",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -193639,8 +193513,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/nku-roster-minimal.json",
-          "web_reference": "turn2207view1",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
@@ -193651,8 +193523,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/nku-baoqun-minimal.json",
-          "web_reference": "turn2208view1",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -193951,8 +193821,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/nku-roster-minimal.json",
-          "web_reference": "turn2207view1",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
@@ -193963,8 +193831,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/nku-bowenguang-minimal.json",
-          "web_reference": "turn2208view2",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -194353,8 +194219,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/nku-roster-minimal.json",
-          "web_reference": "turn2207view1",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
@@ -194365,8 +194229,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "evidence_file": "research-rotation003-buaa-muc-nku/nku-chengqian-minimal.json",
-          "web_reference": "turn2210view3",
           "published_at": null,
           "access_note": "Readable official body; HTTP origin status not exposed. Listing is not independent personnel verification.",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
@@ -194748,8 +194610,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2216view0",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/dlut-roster-final-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -194759,8 +194619,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2217view1",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/dlut-hutao-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -195241,8 +195099,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2216view0",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/dlut-roster-final-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -195252,8 +195108,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2217view2",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/dlut-liyanqin-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -195637,8 +195491,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2216view1",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/tju-roster-final-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -195648,8 +195500,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2217view4",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/tju-abbasali-abouei-mehrizi-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -196197,8 +196047,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2216view1",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/tju-roster-final-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -196208,8 +196056,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2218view0",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/tju-anqingsong-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -196695,8 +196541,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2216view1",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/tju-roster-final-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -196706,8 +196550,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2218view1",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/tju-anweijin-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -197028,8 +196870,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2220view0",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/jlu-roster-final-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -197039,8 +196879,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2221view0",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/jlu-songweimin-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -197396,8 +197234,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2220view0",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/jlu-roster-final-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -197407,8 +197243,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2221view2",
-          "evidence_file": "research-rotation003-dlut-tju-jlu/jlu-jiaoliguang-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -197831,8 +197665,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2229view1",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/ruc-roster-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -197842,8 +197674,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2230view2",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/ruc-chenjinsong-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -198257,8 +198087,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2229view1",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/ruc-roster-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -198268,8 +198096,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2231view0",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/ruc-chennabo-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -198681,8 +198507,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2229view1",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/ruc-roster-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -198692,8 +198516,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2231view1",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/ruc-fanglijie-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -199152,8 +198974,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2230view0",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/seu-roster-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -199163,8 +198983,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2232view0",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/seu-yangyonghong-minimal.json",
           "published_at": "2012-09-18",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -199507,8 +199325,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2230view0",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/seu-roster-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -199518,8 +199334,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2232view1",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/seu-jiangweizhou-minimal.json",
           "published_at": "2019-03-14",
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         }
@@ -199998,8 +199812,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2230view1",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/sdu-roster-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         },
@@ -200009,8 +199821,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2232view4",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/sdu-chenfeng-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方公开正文已读，仅覆盖已审字段。"
         },
@@ -200020,8 +199830,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "source_type": "university_official",
-          "web_reference": "turn2231view2",
-          "evidence_file": "research-rotation003-ruc-seu-sdu/sdu-native-links-minimal.json",
           "published_at": null,
           "evidence_status_label": "官方名录正文已读，仅本批选中观察。"
         }
@@ -200454,8 +200262,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": null,
-          "web_reference": "turn2243view0",
-          "evidence_file": "research-rotation003-csu-scut/csu/csu-roster-minimal.json",
           "public_raw_cache": false,
           "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
         },
@@ -200466,8 +200272,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": null,
-          "web_reference": "turn2245view0",
-          "evidence_file": "research-rotation003-csu-scut/csu/csu-fujunwei-minimal.json",
           "public_raw_cache": false,
           "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
         }
@@ -200738,7 +200542,7 @@
             "status": "listed_in_official_personal_bibliography",
             "matched_author": "Junwei Fu",
             "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
-            "source_locator": "L79"
+            "source_locator": "个人主页中题名《Theoretical Insights into the Selectivity of Single-Atom Fe–N–C Catalysts for Electrochemical NOx Reduction》的书目条目"
           },
           "link_status": "official_bibliography_only_no_individual_link_verified",
           "publication_status": "published_as_reported_by_official_profile",
@@ -200776,7 +200580,7 @@
             "status": "listed_in_official_personal_bibliography",
             "matched_author": "Junwei Fu",
             "source_url": "https://faculty.csu.edu.cn/~m2INBz/zh_CN/index.htm",
-            "source_locator": "L80"
+            "source_locator": "个人主页中题名《Sustainable conversion of alkaline nitrate to ammonia at activities greater than 2 A cm-2》的书目条目"
           },
           "link_status": "official_bibliography_only_no_individual_link_verified",
           "publication_status": "published_as_reported_by_official_profile",
@@ -200893,8 +200697,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": null,
-          "web_reference": "turn2243view0",
-          "evidence_file": "research-rotation003-csu-scut/csu/csu-roster-minimal.json",
           "public_raw_cache": false,
           "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
         },
@@ -200905,8 +200707,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": null,
-          "web_reference": "turn2245view1",
-          "evidence_file": "research-rotation003-csu-scut/csu/csu-guoaimin-minimal.json",
           "public_raw_cache": false,
           "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
         },
@@ -200917,8 +200717,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": "2017-05-02",
-          "web_reference": "turn2261view0",
-          "evidence_file": "research-rotation003-csu-scut/csu/csu-guoaimin-2017-talk-minimal.json",
           "public_raw_cache": false,
           "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
         }
@@ -201471,7 +201269,7 @@
             "status": "listed_in_official_personal_bibliography",
             "matched_author": "Ai-Min Guo",
             "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
-            "source_locator": "L60"
+            "source_locator": "个人主页中题名《Spin-to-charge conversion driven by inverse chiral-induced spin selectivity》的书目条目"
           },
           "link_status": "official_bibliography_only_no_individual_link_verified",
           "publication_status": "published_as_reported_by_official_profile",
@@ -201508,7 +201306,7 @@
             "status": "listed_in_official_personal_bibliography",
             "matched_author": "Ai-Min Guo",
             "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
-            "source_locator": "L61"
+            "source_locator": "个人主页中题名《Spin-driven Enantioselective Regulation of Cyclooxygenase-2 Activity for Rheumatoid Arthritis Therapy via Chiral Gold Nanohelices》的书目条目"
           },
           "link_status": "official_bibliography_only_no_individual_link_verified",
           "publication_status": "published_as_reported_by_official_profile",
@@ -201561,7 +201359,6 @@
             {
               "source_id": "csu-guoaimin-profile",
               "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
-              "source_locator": "L46",
               "reported_start": "2014",
               "reported_title": "教授、博士生导师",
               "context": "简介的入选及受聘表述"
@@ -201569,7 +201366,6 @@
             {
               "source_id": "csu-guoaimin-profile",
               "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
-              "source_locator": "L102-L104",
               "reported_start": "2015-01",
               "reported_end": "2018-01",
               "reported_title": "教授、博士生导师",
@@ -201578,7 +201374,6 @@
             {
               "source_id": "csu-guoaimin-2017-talk",
               "source_url": "https://wl.csu.edu.cn/info/1042/2029.htm",
-              "source_locator": "L83,L89",
               "reported_start": "2015",
               "reported_title": "研究员、博士生导师",
               "context": "2017年官方报告历史身份"
@@ -201597,7 +201392,6 @@
             {
               "source_id": "csu-guoaimin-profile",
               "source_url": "https://faculty.csu.edu.cn/guoaimin/zh_CN/index.htm",
-              "source_locator": "L110-L116",
               "reported_ranges": [
                 "2011-04/2011-10",
                 "2011-10/2015-01"
@@ -201606,7 +201400,6 @@
             {
               "source_id": "csu-guoaimin-2017-talk",
               "source_url": "https://wl.csu.edu.cn/info/1042/2029.htm",
-              "source_locator": "L89",
               "reported_range": "2011/2014"
             }
           ],
@@ -201689,8 +201482,6 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": null,
-          "web_reference": "turn2243view0",
-          "evidence_file": "research-rotation003-csu-scut/csu/csu-roster-minimal.json",
           "public_raw_cache": false,
           "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
         },
@@ -201701,8 +201492,6 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": null,
-          "web_reference": "turn2263view0",
-          "evidence_file": "research-rotation003-csu-scut/csu/csu-guoguanghua-minimal.json",
           "public_raw_cache": false,
           "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
         }
@@ -202066,7 +201855,7 @@
             "status": "listed_in_official_personal_bibliography",
             "matched_author": "Guang-hua Guo",
             "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
-            "source_locator": "L71"
+            "source_locator": "个人主页中题名《Manipulation of the polarized magnon transmission in trilayer magnonic spin-valve》的书目条目"
           },
           "link_status": "official_bibliography_only_no_individual_link_verified",
           "publication_status": "published_as_reported_by_official_profile",
@@ -202103,7 +201892,7 @@
             "status": "listed_in_official_personal_bibliography",
             "matched_author": "Guang-hua Guo",
             "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
-            "source_locator": "L73"
+            "source_locator": "个人主页中题名《Reconfigurable Spin-wave Coupler Based on Domain Wall Channels》的书目条目"
           },
           "link_status": "official_bibliography_only_no_individual_link_verified",
           "publication_status": "published_as_reported_by_official_profile",
@@ -202173,14 +201962,12 @@
             {
               "source_id": "csu-guoguanghua-profile",
               "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
-              "source_locator": "L44",
               "reported_year": "1988",
               "context": "简介合列吉林大学毕业和获学士、硕士"
             },
             {
               "source_id": "csu-guoguanghua-profile",
               "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
-              "source_locator": "L182-L188",
               "bachelor_study_range": "1981-09/1985-07",
               "master_study_range": "1985-09/1988-07"
             }
@@ -202197,13 +201984,11 @@
             {
               "source_id": "csu-guoguanghua-profile",
               "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
-              "source_locator": "L44",
               "reported_institution": "莫斯科大学"
             },
             {
               "source_id": "csu-guoguanghua-profile",
               "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
-              "source_locator": "L192",
               "reported_institution": "俄罗斯莫斯科州立大学"
             }
           ],
@@ -202219,7 +202004,6 @@
             {
               "source_id": "csu-guoguanghua-profile",
               "source_url": "https://faculty.csu.edu.cn/guoguanghua/zh_CN/index.htm",
-              "source_locator": "L44",
               "reported_start": "1999",
               "reported_institution": "中南大学物理与电子学院"
             }
@@ -202294,8 +202078,6 @@
           "published_at": null,
           "public_raw_cache": false,
           "source_type": "university_official",
-          "web_reference": "turn2254view0",
-          "evidence_file": "research-rotation003-csu-scut/scut/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
         },
         {
@@ -202306,8 +202088,6 @@
           "published_at": null,
           "public_raw_cache": false,
           "source_type": "university_official",
-          "web_reference": "turn2259view0",
-          "evidence_file": "research-rotation003-csu-scut/scut/hierarchy-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
         },
         {
@@ -202318,8 +202098,6 @@
           "published_at": "2026-03-18",
           "public_raw_cache": false,
           "source_type": "university_official",
-          "web_reference": "turn2255view0",
-          "evidence_file": "research-rotation003-csu-scut/scut/scut-bianyu-minimal.json",
           "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
         }
       ],
@@ -202751,8 +202529,6 @@
           "published_at": null,
           "public_raw_cache": false,
           "source_type": "university_official",
-          "web_reference": "turn2254view0",
-          "evidence_file": "research-rotation003-csu-scut/scut/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
         },
         {
@@ -202763,8 +202539,6 @@
           "published_at": null,
           "public_raw_cache": false,
           "source_type": "university_official",
-          "web_reference": "turn2259view0",
-          "evidence_file": "research-rotation003-csu-scut/scut/hierarchy-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
         },
         {
@@ -202775,8 +202549,6 @@
           "published_at": "2024-08-30",
           "public_raw_cache": false,
           "source_type": "university_official",
-          "web_reference": "turn2255view1",
-          "evidence_file": "research-rotation003-csu-scut/scut/scut-chenjianhua-minimal.json",
           "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
         }
       ],
@@ -203193,8 +202965,6 @@
           "published_at": null,
           "public_raw_cache": false,
           "source_type": "university_official",
-          "web_reference": "turn2254view0",
-          "evidence_file": "research-rotation003-csu-scut/scut/roster-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
         },
         {
@@ -203205,8 +202975,6 @@
           "published_at": null,
           "public_raw_cache": false,
           "source_type": "university_official",
-          "web_reference": "turn2259view0",
-          "evidence_file": "research-rotation003-csu-scut/scut/hierarchy-minimal.json",
           "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
         },
         {
@@ -203217,8 +202985,6 @@
           "published_at": "2023-06-12",
           "public_raw_cache": false,
           "source_type": "university_official",
-          "web_reference": "turn2255view2",
-          "evidence_file": "research-rotation003-csu-scut/scut/scut-chenchangyong-minimal.json",
           "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
         }
       ],
@@ -203455,7 +203221,7 @@
               "start": "2020",
               "end": "2023",
               "source_text": "2020-2023年",
-              "source_location": "工作经历 L45",
+              "source_location": "工作经历",
               "source_id": "scut-chenchangyong-profile",
               "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm"
             },
@@ -203463,7 +203229,7 @@
               "start": "2019",
               "end": "2020",
               "source_text": "2019-2020年",
-              "source_location": "学术成果/基本介绍 L55",
+              "source_location": "学术成果/基本介绍",
               "source_id": "scut-chenchangyong-profile",
               "source_url": "https://www2.scut.edu.cn/architecture/2023/0525/c35342a503635/page.htm"
             }
@@ -203736,8 +203502,6 @@
           "retrieved_at": "2026-10-24",
           "published_at": null,
           "source_type": "university_official",
-          "web_reference": "turn2244view1",
-          "evidence_file": "research-rotation003-uestc-hust/uestc-roster-minimal.json",
           "public_raw_cache": false,
           "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
         },
@@ -203748,8 +203512,6 @@
           "retrieved_at": "2026-10-24",
           "published_at": null,
           "source_type": "university_official",
-          "web_reference": "turn2246view5",
-          "evidence_file": "research-rotation003-uestc-hust/uestc-fanxin-profile-minimal.json",
           "public_raw_cache": false,
           "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
         },
@@ -203760,8 +203522,6 @@
           "retrieved_at": "2026-10-24",
           "published_at": null,
           "source_type": "university_official",
-          "web_reference": "turn2258view0",
-          "evidence_file": "research-rotation003-uestc-hust/uestc-admissions-link-minimal.json",
           "public_raw_cache": false,
           "evidence_status_label": "官方名录正文已读，仅本批原序选中范围。"
         },
@@ -203772,8 +203532,6 @@
           "retrieved_at": "2026-10-24",
           "published_at": null,
           "source_type": "university_official",
-          "web_reference": "turn2256view0",
-          "evidence_file": "research-rotation003-uestc-hust/uestc-fanxin-admissions-minimal.json",
           "public_raw_cache": false,
           "evidence_status_label": "官方公开职业正文已读，仅支持所列事实，不等于独立实时人事核验。"
         }
@@ -203965,17 +203723,17 @@
           "source_reported_degree_label_alternatives": [
             {
               "label": "管理学博士学位",
-              "location": "学术经历正文 L14",
+              "location": "学术经历正文",
               "source_id": "uestc-fanxin-admissions-profile"
             },
             {
               "label": "哲学博士学位",
-              "location": "研招页头 L8",
+              "location": "研招页头",
               "source_id": "uestc-fanxin-admissions-profile"
             },
             {
               "label": "哲学博士学位",
-              "location": "教师主页 L18,L35",
+              "location": "教师主页",
               "source_id": "uestc-fanxin-profile"
             }
           ],
@@ -204356,7 +204114,7 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": null,
-          "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; L671, L673–L682; next row L684–L685.",
+          "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; next row.",
           "public_raw_cache": false
         },
         {
@@ -204366,7 +204124,7 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": "2022-11-03",
-          "source_locator": "L143 publication date; L152 exact role substring.",
+          "source_locator": "publication date; exact role substring.",
           "public_raw_cache": false
         },
         {
@@ -204376,7 +204134,7 @@
           "evidence_status": "conference_official_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": "2018",
-          "source_locator": "L28 final sentence; name L21, affiliation L23.",
+          "source_locator": "final sentence; name, affiliation.",
           "public_raw_cache": false
         }
       ],
@@ -204604,7 +204362,7 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": null,
-          "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; L671, L673–L682; next row L684–L685.",
+          "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; next row.",
           "public_raw_cache": false
         },
         {
@@ -204614,7 +204372,7 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": "2020-09-19",
-          "source_locator": "L156 publication date; L171 exact role substring.",
+          "source_locator": "publication date; exact role substring.",
           "public_raw_cache": false
         },
         {
@@ -204624,7 +204382,7 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": "2020-12-08",
-          "source_locator": "L20; L36 first clause.",
+          "source_locator": "first clause.",
           "public_raw_cache": false
         }
       ],
@@ -204789,7 +204547,7 @@
           "evidence_status": "official_roster_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": null,
-          "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; L671, L673–L682; next row L684–L685.",
+          "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; next row.",
           "public_raw_cache": false
         },
         {
@@ -204799,7 +204557,7 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": "2026-09-03",
-          "source_locator": "L156 date; L175 exact role substring.",
+          "source_locator": "date; exact role substring.",
           "public_raw_cache": false
         },
         {
@@ -204809,7 +204567,7 @@
           "evidence_status": "official_public_body_read",
           "retrieved_at": "2026-10-24",
           "published_at": null,
-          "source_locator": "L256 education-only substring; source name at L252.",
+          "source_locator": "education-only substring; source name.",
           "public_raw_cache": false
         }
       ],
@@ -205086,10 +204844,10 @@
           "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
           "published_at": null,
           "source_locators": [
-            "L42-L54: category and separate retired category",
-            "L55-L57: selected first three",
-            "L55-L63: first-page sequence",
-            "L64: page 1 and seven-page navigation"
+            "category and separate retired category",
+            "selected first three",
+            "first-page sequence",
+            "page 1 and seven-page navigation"
           ],
           "evidence_format": "minimized_verbatim_web_tool_excerpt",
           "public_raw_cache": false
@@ -205104,10 +204862,10 @@
           "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
           "published_at": null,
           "source_locators": [
-            "L47: identity",
-            "L59-L66: education and work",
-            "L70: teaching",
-            "L84-L86: selected bibliography"
+            "identity",
+            "education and work",
+            "teaching",
+            "selected bibliography"
           ],
           "evidence_format": "minimized_verbatim_web_tool_excerpt",
           "public_raw_cache": false
@@ -205150,7 +204908,6 @@
             "tongji-baozhihao-profile"
           ],
           "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-          "source_locator": "L59",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -205204,7 +204961,6 @@
             "tongji-baozhihao-profile"
           ],
           "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-          "source_locator": "L61",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -205258,7 +205014,6 @@
             "tongji-baozhihao-profile"
           ],
           "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-          "source_locator": "L63",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -205312,7 +205067,6 @@
             "tongji-baozhihao-profile"
           ],
           "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-          "source_locator": "L65",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -205363,7 +205117,7 @@
           "personnel_status_verified": false,
           "source_id": "tongji-baozhihao-profile",
           "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-          "source_locator": "L66; roster L55",
+          "source_locator": "roster",
           "evidence_status": "official_public_body_read",
           "note": "现行教授（研究员）名录与个人正文教授、至今表述；不从合并工作区间推定教授晋升起点。",
           "field_provenance": {
@@ -205385,7 +205139,6 @@
           "personnel_status_verified": false,
           "source_id": "tongji-baozhihao-profile",
           "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-          "source_locator": "L66",
           "evidence_status": "official_public_body_read",
           "note": "原文工作区间2009.6至今；同一学校任职履历，不另计一份工作，不作为教授晋升日期。",
           "field_provenance": {
@@ -205407,7 +205160,6 @@
           "personnel_status_verified": false,
           "source_id": "tongji-baozhihao-profile",
           "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-          "source_locator": "L65",
           "evidence_status": "official_public_body_read",
           "note": "与非授位教育事件为同一经历。",
           "field_provenance": {
@@ -205432,7 +205184,6 @@
           "type": "journal_article",
           "source_id": "tongji-baozhihao-profile",
           "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-          "source_locator": "L84",
           "identity_evidence": "https://physics.tongji.edu.cn/info/1126/3141.htm",
           "link_status": "official_publication_list_only",
           "note": "446 (7132), 172–175；本人主页列入主要论著。 仅个人官方页书目，未读论文全文或独立核验出版商元数据；不补猜DOI。",
@@ -205448,7 +205199,6 @@
           "type": "journal_article",
           "source_id": "tongji-baozhihao-profile",
           "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-          "source_locator": "L86",
           "identity_evidence": "https://physics.tongji.edu.cn/info/1126/3141.htm",
           "link_status": "official_publication_list_only",
           "note": "4 (10), 3980–3984；本人主页列入主要论著。 仅个人官方页书目，未读论文全文或独立核验出版商元数据；不补猜DOI。",
@@ -205468,7 +205218,6 @@
           "education_level": "本科",
           "source_id": "tongji-baozhihao-profile",
           "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-          "source_locator": "L70",
           "year": null,
           "note": "公开授课事实，不是本人教育经历。"
         },
@@ -205477,7 +205226,6 @@
           "education_level": "本科",
           "source_id": "tongji-baozhihao-profile",
           "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-          "source_locator": "L70",
           "year": null,
           "note": "公开授课事实，不是本人教育经历。"
         }
@@ -205519,10 +205267,10 @@
           "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
           "published_at": null,
           "source_locators": [
-            "L42-L54: category and separate retired category",
-            "L55-L57: selected first three",
-            "L55-L63: first-page sequence",
-            "L64: page 1 and seven-page navigation"
+            "category and separate retired category",
+            "selected first three",
+            "first-page sequence",
+            "page 1 and seven-page navigation"
           ],
           "evidence_format": "minimized_verbatim_web_tool_excerpt",
           "public_raw_cache": false
@@ -205537,9 +205285,9 @@
           "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
           "published_at": null,
           "source_locators": [
-            "L24-L34: identity and role",
-            "L39: current role, explicit degree awards, postdoc and visiting role",
-            "L46-L58: dated education and work"
+            "identity and role",
+            "current role, explicit degree awards, postdoc and visiting role",
+            "dated education and work"
           ],
           "evidence_format": "minimized_verbatim_web_tool_excerpt",
           "public_raw_cache": false
@@ -205554,8 +205302,8 @@
           "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
           "published_at": null,
           "source_locators": [
-            "L25-L29: identity",
-            "L36-L41: empty publication category"
+            "identity",
+            "empty publication category"
           ],
           "evidence_format": "minimized_verbatim_web_tool_excerpt",
           "public_raw_cache": false
@@ -205598,7 +205346,6 @@
             "tongji-caitianji-profile"
           ],
           "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-          "source_locator": "L39; L46-L47",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -205652,7 +205399,6 @@
             "tongji-caitianji-profile"
           ],
           "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-          "source_locator": "L39; L48-L49",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -205706,7 +205452,6 @@
             "tongji-caitianji-profile"
           ],
           "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-          "source_locator": "L39; L50-L51",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -205760,7 +205505,6 @@
             "tongji-caitianji-profile"
           ],
           "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-          "source_locator": "L39; L57-L58",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -205814,7 +205558,6 @@
             "tongji-caitianji-profile"
           ],
           "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-          "source_locator": "L39",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -205865,7 +205608,6 @@
           "personnel_status_verified": false,
           "source_id": "tongji-caitianji-profile",
           "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-          "source_locator": "L39",
           "evidence_status": "official_public_body_read",
           "note": "个人简介明确现任；不将教授（研究员）名录类别改写成教授。",
           "field_provenance": {
@@ -205887,7 +205629,6 @@
           "personnel_status_verified": false,
           "source_id": "tongji-caitianji-profile",
           "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-          "source_locator": "L55-L56",
           "evidence_status": "official_public_body_read",
           "note": "工作表记载2025.9至今及两个单位；不为高等研究院创建另一人物或推定独立职称。",
           "field_provenance": {
@@ -205909,7 +205650,6 @@
           "personnel_status_verified": false,
           "source_id": "tongji-caitianji-profile",
           "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-          "source_locator": "L39; L57-L58",
           "evidence_status": "official_public_body_read",
           "note": "与非授位教育事件为同一经历。",
           "field_provenance": {
@@ -205932,7 +205672,6 @@
           "personnel_status_verified": false,
           "source_id": "tongji-caitianji-profile",
           "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-          "source_locator": "L39",
           "evidence_status": "official_public_body_read",
           "note": "简介明确曾任；起止未披露。",
           "field_provenance": {
@@ -205991,10 +205730,10 @@
           "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
           "published_at": null,
           "source_locators": [
-            "L42-L54: category and separate retired category",
-            "L55-L57: selected first three",
-            "L55-L63: first-page sequence",
-            "L64: page 1 and seven-page navigation"
+            "category and separate retired category",
+            "selected first three",
+            "first-page sequence",
+            "page 1 and seven-page navigation"
           ],
           "evidence_format": "minimized_verbatim_web_tool_excerpt",
           "public_raw_cache": false
@@ -206009,10 +205748,10 @@
           "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
           "published_at": null,
           "source_locators": [
-            "L61-L74: identity and qualification labels",
-            "L100 beginning: current role and explicit stage-specific mentors",
-            "L118 and L122: selected bibliography",
-            "L176-L197: dated education/work, including PhD date conflict"
+            "identity and qualification labels",
+            "beginning: current role and explicit stage-specific mentors",
+            "selected bibliography",
+            "dated education/work, including PhD date conflict"
           ],
           "evidence_format": "minimized_verbatim_web_tool_excerpt",
           "public_raw_cache": false
@@ -206055,7 +205794,6 @@
             "tongji-chenjie-physics-profile"
           ],
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L100; L176-L177",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -206127,7 +205865,6 @@
             "tongji-chenjie-physics-profile"
           ],
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L100; L179-L180",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -206181,7 +205918,6 @@
             "tongji-chenjie-physics-profile"
           ],
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L100; L182-L183",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -206235,7 +205971,6 @@
             "tongji-chenjie-physics-profile"
           ],
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L100; L193-L194",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -206289,7 +206024,6 @@
             "tongji-chenjie-physics-profile"
           ],
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L196-L197",
           "evidence_status": "official_public_body_read",
           "institution_985": "unknown",
           "region": "unknown",
@@ -206340,7 +206074,6 @@
           "personnel_status_verified": false,
           "source_id": "tongji-chenjie-physics-profile",
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L100",
           "evidence_status": "official_public_body_read",
           "note": "简介明确当前身份；教授头衔和2018.3工作表不是明确晋升或长聘起始日期。",
           "field_provenance": {
@@ -206362,7 +206095,6 @@
           "personnel_status_verified": false,
           "source_id": "tongji-chenjie-physics-profile",
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L187-L188",
           "evidence_status": "official_public_body_read",
           "note": "工作表仅列单位与日期，职称不在该行；不把此区间当教授或长聘晋升日期。",
           "field_provenance": {
@@ -206384,7 +206116,6 @@
           "personnel_status_verified": false,
           "source_id": "tongji-chenjie-physics-profile",
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L190-L191",
           "evidence_status": "official_public_body_read",
           "note": "来源保留高研院原称谓。",
           "field_provenance": {
@@ -206406,7 +206137,6 @@
           "personnel_status_verified": false,
           "source_id": "tongji-chenjie-physics-profile",
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L193-L194",
           "evidence_status": "official_public_body_read",
           "note": "与教育中的非授位事件相同。",
           "field_provenance": {
@@ -206429,7 +206159,6 @@
           "personnel_status_verified": false,
           "source_id": "tongji-chenjie-physics-profile",
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L196-L197",
           "evidence_status": "official_public_body_read",
           "note": "与教育中的非授位事件相同，不修补与2012博士毕业句的表观矛盾。",
           "field_provenance": {
@@ -206452,7 +206181,6 @@
           "relationship_status": "verified_direct_statement",
           "source_id": "tongji-chenjie-physics-profile",
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L100",
           "stage_source_id": "tongji-chenjie-physics-profile",
           "official_url": null,
           "profile_source_url": null,
@@ -206495,7 +206223,6 @@
           "relationship_status": "verified_direct_statement",
           "source_id": "tongji-chenjie-physics-profile",
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L100",
           "stage_source_id": "tongji-chenjie-physics-profile",
           "official_url": null,
           "profile_source_url": null,
@@ -206533,7 +206260,6 @@
           "relationship_status": "verified_direct_statement",
           "source_id": "tongji-chenjie-physics-profile",
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L100",
           "stage_source_id": "tongji-chenjie-physics-profile",
           "official_url": null,
           "profile_source_url": null,
@@ -206574,7 +206300,6 @@
           "type": "journal_article",
           "source_id": "tongji-chenjie-physics-profile",
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L118",
           "identity_evidence": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
           "link_status": "official_publication_list_only",
           "note": "94, 025002；本人列为代表性论文。 仅个人官方页书目，未读论文全文或独立核验出版商元数据；不补猜DOI。",
@@ -206590,7 +206315,6 @@
           "type": "journal_article",
           "source_id": "tongji-chenjie-physics-profile",
           "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-          "source_locator": "L122",
           "identity_evidence": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
           "link_status": "official_publication_list_only",
           "note": "128, 015901；本人列为代表性论文。 仅个人官方页书目，未读论文全文或独立核验出版商元数据；不补猜DOI。",
@@ -207195,7 +206919,6 @@
       "selected_roster_observations": 5,
       "source_files": [
         {
-          "file": "faculty-batch-zju-ic-002.json",
           "sha256": "1301a2cad0a85d7eee64fb0494b433edb461f774cc94229e9a3c9e8d47ea3ba4"
         }
       ]
@@ -207215,7 +206938,6 @@
       "selected_roster_observations": 5,
       "source_files": [
         {
-          "file": "faculty-batch-zju-ic-003.json",
           "sha256": "23f7334f8960f1e9f44f8e7d44fa96f4558fb3ec1edcf3285cd50284e5b1edbc"
         }
       ]
@@ -207235,7 +206957,6 @@
       "selected_roster_observations": 5,
       "source_files": [
         {
-          "file": "faculty-batch-sjtu-ic-002.json",
           "sha256": "013edd8ad089169921bd7ccec195e8adc94f7f29420c74885d1ae4a652f848e0"
         }
       ]
@@ -207255,7 +206976,6 @@
       "selected_roster_observations": 5,
       "source_files": [
         {
-          "file": "faculty-batch-tsinghua-ee-002.json",
           "sha256": "1af9dec6300ba4490c6a20d527360c97998418bbb2837eb422a1a1405071fe1f"
         }
       ]
@@ -207275,7 +206995,6 @@
       "selected_roster_observations": 5,
       "source_files": [
         {
-          "file": "faculty-batch-pku-ic-002.json",
           "sha256": "c13d0057441893604ea10717651c356af6ac469950b3ebc9197a3d3e0d1b10ea"
         }
       ]
@@ -207296,7 +207015,6 @@
       "fields_complete": false,
       "source_files": [
         {
-          "file": "faculty-update-zju-chengran-001.json",
           "sha256": "408cd959c8cde6b3ef88f89c56a5eb5c269bb71061b7efab15ae887e6ca0ec10"
         }
       ],
@@ -207317,7 +207035,6 @@
       "selected_roster_observations": 6,
       "source_files": [
         {
-          "file": "faculty-batch-tsinghua-ee-003.json",
           "sha256": "66f78d53e12ca574d907d25dc165d79b27a62da8f3dde4f609fb3d59a1d9d9ad"
         }
       ],
@@ -207347,7 +207064,6 @@
       "selected_roster_observations": 5,
       "source_files": [
         {
-          "file": "faculty-batch-sjtu-ic-003.json",
           "sha256": "6741c909ec141c5041959c2d229432b61bfe2ac4a71e22accfb92b475b8a49cc"
         }
       ],
@@ -207377,7 +207093,6 @@
       "selected_roster_observations": 5,
       "source_files": [
         {
-          "file": "faculty-batch-pku-ic-003.json",
           "sha256": "2455556896789759390c11ac7f70f3dcca8059428e8d761c21ee0ee1237df4ae"
         }
       ],
@@ -207406,7 +207121,6 @@
       "selected_roster_observations": 5,
       "source_files": [
         {
-          "file": "faculty-batch-pku-ic-004.json",
           "sha256": "b7b152b77387ef33321add9ea44e08f8c88d5b5480b92cd64fb23d3a7f38bb98"
         }
       ],
@@ -207436,7 +207150,6 @@
       "selected_roster_observations": 5,
       "source_files": [
         {
-          "file": "faculty-batch-zju-ic-004.json",
           "sha256": "e8483887653d17a99688e118d6f124f417aabcea731108cb41ddf9af63318d3d"
         }
       ],
@@ -207467,7 +207180,6 @@
       "selected_roster_observations": 5,
       "source_files": [
         {
-          "file": "faculty-batch-sjtu-ic-004.json",
           "sha256": "6ec048b191cefb1a60966735209962d5ffa888f4dab4bc4688b4f6cd283b1e08"
         }
       ],
@@ -207499,7 +207211,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-fdu-first-001.json",
           "sha256": "92f100f58a2774fd622c6da5e12797d8f360ee6cbb12e5153b7d1fdb9215e7d8"
         }
       ],
@@ -207529,7 +207240,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nju-first-001.json",
           "sha256": "acde5b544752822bd99afdae359073cd8588f3e016c232026af65098012ceece"
         }
       ],
@@ -207562,7 +207272,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ustc-first-001.json",
           "sha256": "838f69732426459c4962e6f820acbeaf619e79f7fba4b2f621721fc432cacb00"
         }
       ],
@@ -207592,7 +207301,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-buaa-first-001.json",
           "sha256": "dbcbaf051fc310be1bd70304e74c66a0d93e25ad9bbf2607e8e113cff5d9ba65"
         }
       ],
@@ -207622,7 +207330,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-bit-first-001.json",
           "sha256": "5b0e3fe0eb1626d79ba542008f66643c850d2f33c0385f632b3b4a19b9d33b76"
         }
       ],
@@ -207651,7 +207358,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-bnu-first-001.json",
           "sha256": "397e1a41d32d82f23f48ab1041a670b23324b96867ffcfdc4e0b30b3c31a92df"
         }
       ],
@@ -207680,7 +207386,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-cau-first-001.json",
           "sha256": "739b1dcdf0014c983d7dc51e811426b231c153c48268b03890115a3dbec4bf22"
         }
       ],
@@ -207713,7 +207418,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-muc-first-001.json",
           "sha256": "266e5aa1193112debae40393646e1f391e08686cc18a3fbc7504cac7ffc06993"
         }
       ],
@@ -207742,7 +207446,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nku-first-001.json",
           "sha256": "85f6d10035ac4fa431456b8a6cf8fc897030fd10c5bfcca1db944e6f18414fb0"
         }
       ],
@@ -207772,7 +207475,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-dlut-first-001.json",
           "sha256": "5a549e6d733736785d089156f0f8cfe4e0a345c35448897fa9790b934f223fed"
         }
       ],
@@ -207801,7 +207503,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-tju-first-001.json",
           "sha256": "d5930bba30e6f7b808ad9e64d9e4f50096a4ac1ee8afce0dc25461daa596c57f"
         }
       ],
@@ -207832,7 +207533,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-jlu-first-001.json",
           "sha256": "92a47a38133eef620192419023288b6581ad4cab5082557ccc0971b60a6edaa2"
         }
       ],
@@ -207862,7 +207562,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-tongji-first-001.json",
           "sha256": "63210a56397abcf247e177ee3a66db8b319add431320cb0c18c5f1d996dad89c"
         }
       ],
@@ -207892,7 +207591,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ruc-first-001.json",
           "sha256": "62e8875af172a20a8d5dc6c0fea05194bee888c7bd9061042c55042ff9f3a8b0"
         }
       ],
@@ -207924,7 +207622,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-neu-first-001.json",
           "sha256": "54ab535e6e9248ffe40132719d2951fb578b9d293e138e99032dc74b6452b1aa"
         }
       ],
@@ -207951,7 +207648,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ecnu-first-001.json",
           "sha256": "1e371de16021e43918f0d21b19ec0b87f30bf2ce51d07a467a570702b6e0ba79"
         }
       ],
@@ -207981,7 +207677,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-seu-first-001.json",
           "sha256": "1d24f53efcca470eca407932d0a29245f20bbe457e66eb23c0249cc3704de719"
         }
       ],
@@ -208014,7 +207709,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-xmu-first-001.json",
           "sha256": "9efaba65974a9d094a306f0e7d844426b70e072b8d3832b7a6cb3620b01af10e"
         }
       ],
@@ -208044,7 +207738,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-sdu-first-001.json",
           "sha256": "9db10c21a935d3497eca82739feb726e6677da8371ccc6488a7271ace3f752a2"
         }
       ],
@@ -208074,7 +207767,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ouc-first-001.json",
           "sha256": "ed7635af302f15ec34a6718a67ab50bfede9c97b467afb016489afbda5ee1ebe"
         }
       ],
@@ -208105,7 +207797,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-whu-first-001.json",
           "sha256": "283666dad6a990ce40dd8da5fe26223e71e02edae877ce2afdaec1bd88e60799"
         }
       ],
@@ -208137,7 +207828,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-hust-first-001.json",
           "sha256": "192451816625455d514d27e8fabbc9d067a03afa41d8900131c37211034ae644"
         }
       ],
@@ -208168,7 +207858,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-hnu-first-001.json",
           "sha256": "55933bf14e5df98e23c5b6f61c2198f762c4deb42e9627c1e6e7b8cb334510e5"
         }
       ],
@@ -208200,7 +207889,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-csu-first-001.json",
           "sha256": "398773be003dab0237748266a8e9740f3d87d57e045048b5ec5340f8b17f2eef"
         }
       ],
@@ -208231,7 +207919,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nudt-first-001.json",
           "sha256": "a125b40d5c0a4565daf680567151a498a07bc66805a60d12ecc04c86d5270fca"
         }
       ],
@@ -208265,7 +207952,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-sysu-first-001.json",
           "sha256": "0cf7f3206ddfebab6d0c9dcf46e4b74ea2826a3ea6a1fe066ae8485da01da317"
         }
       ],
@@ -208296,7 +207982,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-scut-first-001.json",
           "sha256": "a6fbfca14d92cf6b64b2c9057479e8aad2d35ae5a35c545947dca98bd7575d7c"
         }
       ],
@@ -208327,7 +208012,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-scu-first-001.json",
           "sha256": "816f185deefd0f68dab4ead06c07426a22ec29d0e190e717998a102633bc2ab9"
         }
       ],
@@ -208358,7 +208042,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-uestc-first-001.json",
           "sha256": "8eefb705cf90cff707ae5511eb96670d2aea1cf7582b9cdaa763bc2df8470dd2"
         }
       ],
@@ -208391,7 +208074,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-cqu-first-001.json",
           "sha256": "305d599e5e0fa52b98a4b6a9e6b95f0aa0864b87ab0a1896f9bc0ebcbc25e6a8"
         }
       ],
@@ -208422,7 +208104,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-xjtu-first-001.json",
           "sha256": "ff3a875ef7d1268baa74e1af7579eec1832217f801ded813f273c3f04d63ecf4"
         }
       ],
@@ -208452,7 +208133,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nwpu-first-001.json",
           "sha256": "18ef2ec8eae53d617d9d70c9b74fb2af8c2f1a2315b2d030a6bd45079dd6ceba"
         }
       ],
@@ -208484,7 +208164,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nwsuaf-first-001.json",
           "sha256": "98149d7cebd1df54a14529680c08957b221c50a153d0764352e26c4b3472a280"
         }
       ],
@@ -208515,7 +208194,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-lzu-first-001.json",
           "sha256": "32f02f005790ba97821d760838ce9b10087f5881d8ee7f6c39152d5e42b17252"
         }
       ],
@@ -208546,7 +208224,6 @@
       "selected_roster_observations": 1,
       "source_files": [
         {
-          "file": "faculty-batch-nudt-supplement-001.json",
           "sha256": "ab7c06380355cdc8c6e3deb575d1185748d7c7a03f1d1c93f968a20d174c7f1a"
         }
       ],
@@ -208576,7 +208253,6 @@
       "selected_roster_observations": 1,
       "source_files": [
         {
-          "file": "faculty-batch-scu-supplement-001.json",
           "sha256": "2dd6f2698f877235dc53db1f5e2641bb213b7984363a1202c39e7ddb1b291667"
         }
       ],
@@ -208606,7 +208282,6 @@
       "selected_roster_observations": 1,
       "source_files": [
         {
-          "file": "faculty-batch-sysu-supplement-001.json",
           "sha256": "c39c701e520875453ead68e4eb2afd43301063d489acfeff86c862f794ebf643"
         }
       ],
@@ -208638,7 +208313,6 @@
       "selected_roster_observations": 4,
       "source_files": [
         {
-          "file": "faculty-batch-scu-supplement-002.json",
           "sha256": "c72d61d3943af579e97265c4de0a97050d64c45cf1d4930f4b23f7f66ec2d5c2"
         }
       ],
@@ -208669,7 +208343,6 @@
       "selected_roster_observations": 2,
       "source_files": [
         {
-          "file": "faculty-batch-nudt-supplement-002.json",
           "sha256": "ebd208c30de74d1aa4bb2e7aa15d2e0f8858acdf5fb50d37b6bb6cff798e1f8a"
         }
       ],
@@ -208698,7 +208371,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-seu-supplement-001.json",
           "sha256": "f554588a9fc67da1373b92d1744620478cab344216d480d24730c2d2bd444172"
         }
       ],
@@ -208728,7 +208400,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-sysu-supplement-002.json",
           "sha256": "d2f087c95a4f4f1b1cdd134f3ae1840d2213d02736fea7888cfb54f28b96020a"
         }
       ],
@@ -208763,7 +208434,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-hust-supplement-001.json",
           "sha256": "29ef7a280ce0b04b5b04905e8f867676b3f082034ce059eee386460aac396c29"
         }
       ],
@@ -208795,7 +208465,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ouc-supplement-001.json",
           "sha256": "7ac3b53f31b1ab6ce1989c2fc30ed1778623362999f7e56eb70bb26229afc498"
         }
       ],
@@ -208826,7 +208495,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nwpu-supplement-001.json",
           "sha256": "aa164dd3c76429d2ec1e67396807ca71a6cd0013fefb574ffa4366aef966cac0"
         }
       ],
@@ -208858,7 +208526,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ruc-rotation-001.json",
           "sha256": "70f733d4ce8e201fb8c76a1ff814c11fa6c1638d5b58c3cf9fe50dc43649fdfe"
         }
       ],
@@ -208889,7 +208556,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-whu-supplement-001.json",
           "sha256": "31970f1f7969510ca9b8d29065401b1cba11e282b42e9651eca6d87705ed2c4c"
         }
       ],
@@ -208924,7 +208590,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-bit-rotation-001.json",
           "sha256": "9c0339460520dac802cad445cc15631e641287baeb7d5fbc3c876beb412acb0a"
         }
       ],
@@ -208956,7 +208621,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-cau-rotation-001.json",
           "sha256": "0cd377820a4b67b874f4aaf29464c0ea7bae370df5c9a9bae9f41fb79391f7f4"
         }
       ],
@@ -208988,7 +208652,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-buaa-rotation-001.json",
           "sha256": "436bbcda132584780afe8cfbe0b231e9056f83377a4ec602dd3da6246457d025"
         }
       ],
@@ -209022,7 +208685,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-muc-rotation-001.json",
           "sha256": "01736382664998535a8f7c2c02e98fd7a79f9aaf11b14f47eb8ed96177db4c9c"
         }
       ],
@@ -209054,7 +208716,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-bnu-rotation-001.json",
           "sha256": "666deda7a911769abfbed98664bf23768946057f215f7b4e07a0dad3389bcbc6"
         }
       ],
@@ -209088,7 +208749,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nku-rotation-001.json",
           "sha256": "2177bbd15bf1abfe314d2dfabf9060ca1c31c66a5c282322053e3482537c6e55"
         }
       ],
@@ -209120,7 +208780,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-dlut-rotation-001.json",
           "sha256": "9ae01b208f09a4cdfd86159934f6569df597383f77b690e8c52c53b0fdaf348d"
         }
       ],
@@ -209150,7 +208809,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-neu-rotation-001.json",
           "sha256": "1cdcfd5ffd3a3b64c763ecf7b963629a3e9564a30e022bd921e25508074c059d"
         }
       ],
@@ -209180,7 +208838,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-tju-rotation-001.json",
           "sha256": "49e6aca7df09c8169521ab9dcf15ede659006997e34e0b389c8ed9999c102bec"
         }
       ],
@@ -209212,7 +208869,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-jlu-rotation-001.json",
           "sha256": "301801b782b5862ca4c2f69573c4a293d00a08470141cc79d42fb0e3d1e9989b"
         }
       ],
@@ -209242,7 +208898,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-tongji-rotation-001.json",
           "sha256": "0e0c2d3b4557f74ed53e0f5154c594d2c53bfa4084a21aab6a3556eb8bb73137"
         }
       ],
@@ -209273,7 +208928,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ecnu-rotation-001.json",
           "sha256": "559acbdca3c51c489c192acb0c0ea3b60aba6d6a0c1f7a691ce71d5b8ff25c4a"
         }
       ],
@@ -209304,7 +208958,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nju-rotation-001.json",
           "sha256": "b9ed7f39637631b7e9dbdef9e5f716ad7f4e29ec67fda5f812ab5fc0fc76ff8e"
         }
       ],
@@ -209336,7 +208989,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-fdu-rotation-001.json",
           "sha256": "4909648728d27711a2c6231860f89bdc638f3a67b9cb916aa2e4d50521910d10"
         }
       ],
@@ -209367,7 +209019,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-seu-rotation-001.json",
           "sha256": "4f2b76e873aa3c401c7e934d9408b3c789bcad6f195e6ba87c0b5f5ae8971bec"
         }
       ],
@@ -209397,7 +209048,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-xmu-rotation-001.json",
           "sha256": "ceb1168673d9c65fb4175e1945cff4a9fd9068b50d366245011d060013d3dca8"
         }
       ],
@@ -209426,7 +209076,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-sdu-rotation-001.json",
           "sha256": "cc1c28142ad954d792818e580998c88a1ce8aa8178577202fc98df003828eb30"
         }
       ],
@@ -209456,7 +209105,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ustc-rotation-001.json",
           "sha256": "fefbf1e9f368266cdcc3ad8a860b0ae12a37719eef5d6e7c0e27600b88fbddd5"
         }
       ],
@@ -209487,7 +209135,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ouc-rotation-001.json",
           "sha256": "add56548386df237f8ba55d4ace6e598451207e6e1ff2490d7b47e372207f8d4"
         }
       ],
@@ -209516,7 +209163,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-hust-rotation-001.json",
           "sha256": "131b14de5928efad9d1e093c26446da894515d18be315ecfc0ca4ae2a4f95a16"
         }
       ],
@@ -209546,7 +209192,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-hnu-rotation-001.json",
           "sha256": "2adb3d0a619ca8658453e35c75cc2e42ad5484af9ea17a5dd9ac59bd867def2c"
         }
       ],
@@ -209577,7 +209222,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-whu-rotation-001.json",
           "sha256": "ca0f7aacde86f6ec7bdcb5045104a12ef40814e24705eba3a8745628e94c8b49"
         }
       ],
@@ -209610,7 +209254,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nudt-rotation-001.json",
           "sha256": "96b5890fae33788e9a3d1e3eefb19bf00efb7727ccd264c56f42eb2577c1547e"
         }
       ],
@@ -209642,7 +209285,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-csu-rotation-001.json",
           "sha256": "46c12bb69530cb652594841f6942f5666da7747cf96411f696b77cdcd684af76"
         }
       ],
@@ -209670,7 +209312,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-cqu-rotation-001.json",
           "sha256": "92c9e7041f00b7b99f9b69de44013b1a294f6e0fbbb6747b6887fdbb28ada32a"
         }
       ],
@@ -209703,7 +209344,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-lzu-rotation-001.json",
           "sha256": "c70ccd322594444d06eb061454bb6e77a2668c569ea7d40731ba22765649f24c"
         }
       ],
@@ -209737,7 +209377,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nwpu-rotation-001.json",
           "sha256": "0c614ace2925824e4ff945da13fc8621b5604451633b76af088d5989734255c1"
         }
       ],
@@ -209769,7 +209408,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nwsuaf-rotation-001.json",
           "sha256": "19cd6cee7c18847dba1aa8da94a975eb6da5ccf372296cbbde5529eeeb3fa5a0"
         }
       ],
@@ -209802,7 +209440,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-scu-rotation-001.json",
           "sha256": "f6e77f7cb079de3236051570b040c6bb140215e86270cdd17437c4e982c8a6dd"
         }
       ],
@@ -209834,7 +209471,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-scut-rotation-001.json",
           "sha256": "528b670df3f36326a51260de8fdd64d1c6a50cfd0f27bf6bb838b6994ea2d0f5"
         }
       ],
@@ -209868,7 +209504,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-sysu-rotation-001.json",
           "sha256": "106892a97730e1de99dbf6d7f007cb9c86ccafed2b1ad1edcb42b759e7eb96af"
         }
       ],
@@ -209900,7 +209535,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-uestc-rotation-001.json",
           "sha256": "4ab16856a48c81695c851c6cfe82dfdea86dce573015788ab7ed0df5379ea133"
         }
       ],
@@ -209933,7 +209567,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-xjtu-rotation-001.json",
           "sha256": "e079624c7347a31a22431d616e9d596501851404b83a8628c5e0d21a2849a737"
         }
       ],
@@ -209965,7 +209598,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-cau-rotation-002.json",
           "sha256": "c246a2efd4599d8a044fb790b20389b8e5a56eec36749546d48c8caedd323e01"
         }
       ],
@@ -210000,7 +209632,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-neu-rotation-002.json",
           "sha256": "226bf8cf058ed295a9211e13be19e044ba36e7b866f7c08a5026ad2292e210e1"
         }
       ],
@@ -210033,7 +209664,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-tongji-rotation-002.json",
           "sha256": "9f9ba91abf8715a43fe265cf0340b5657b7d58318bddfc6d43078de65bdef7e0"
         }
       ],
@@ -210067,7 +209697,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ecnu-rotation-002.json",
           "sha256": "c14da5f35e262af10821f328114fcf497cb348c8c17dcd03254407e3b8fb02c0"
         }
       ],
@@ -210106,7 +209735,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nju-rotation-002.json",
           "sha256": "141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471"
         }
       ],
@@ -210145,7 +209773,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-hnu-rotation-002.json",
           "sha256": "7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54"
         }
       ],
@@ -210182,7 +209809,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-sysu-rotation-002.json",
           "sha256": "005d3d3f0c33c71b7bc45f2cbf20718e19ff07b5c3abc0ae2eff9bea941787cf"
         }
       ],
@@ -210217,7 +209843,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-scu-rotation-002.json",
           "sha256": "9847ea52ba380cc5d81bb8a7e5b6353dc33dfe2fd3c036de8dae17edea9a5088"
         }
       ],
@@ -210254,7 +209879,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-cqu-rotation-003.json",
           "sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc"
         }
       ],
@@ -210291,7 +209915,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-xmu-rotation-003.json",
           "sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8"
         }
       ],
@@ -210328,7 +209951,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-bit-rotation-003.json",
           "sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477"
         }
       ],
@@ -210366,7 +209988,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-lzu-rotation-003.json",
           "sha256": "81746e6b89ae433f321d1b595422b99031082b42147318e02bccd38b899c2e98"
         }
       ],
@@ -210403,7 +210024,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nwsuaf-rotation-003.json",
           "sha256": "4bfe874e79de0f0cffd0aaf9e744fa6a64ca4729a55071b4713d758cd7f9d974"
         }
       ],
@@ -210441,7 +210061,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-xjtu-rotation-003.json",
           "sha256": "857ad9b33181de41c2ea6c967ab09eab8405c2e35dd91cdec4025bc58b6211e1"
         }
       ],
@@ -210481,7 +210100,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-fdu-rotation-003.json",
           "sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab"
         }
       ],
@@ -210514,7 +210132,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-bnu-rotation-003.json",
           "sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f"
         }
       ],
@@ -210547,7 +210164,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ustc-rotation-003.json",
           "sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032"
         }
       ],
@@ -210583,7 +210199,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-buaa-rotation-003.json",
           "sha256": "9bb7fc7e5c4c597e6404861a81f50fbaa611e685cf5c6e9477205379293750c0"
         }
       ],
@@ -210618,7 +210233,6 @@
       "selected_roster_observations": 1,
       "source_files": [
         {
-          "file": "faculty-batch-muc-rotation-003.json",
           "sha256": "6040f3d15b95eb53181598d7aaf6757df82d5a98b6c6ea5a1f7ea35d7601f904"
         }
       ],
@@ -210653,7 +210267,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-nku-rotation-003.json",
           "sha256": "8c8b70fd671db58f8f55f7120c7aff626f4addbeddbb0d430c2d2320d507433c"
         }
       ],
@@ -210687,7 +210300,6 @@
       "selected_roster_observations": 2,
       "source_files": [
         {
-          "file": "faculty-batch-dlut-rotation-003.json",
           "sha256": "d10af13e5368561eee8a09fc83730af788c93298c96585d1eb577600f622ea03"
         }
       ],
@@ -210721,7 +210333,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-tju-rotation-003.json",
           "sha256": "3cef3140bd55d3e18b089531717ef1277fcd3edb521f9ba14abfb70247821c8a"
         }
       ],
@@ -210755,7 +210366,6 @@
       "selected_roster_observations": 2,
       "source_files": [
         {
-          "file": "faculty-batch-jlu-rotation-003.json",
           "sha256": "b3bec9b8b511a9f3117a6cc4389503e2638207521ed74d3fd0a75fb02bb175c7"
         }
       ],
@@ -210789,7 +210399,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-ruc-rotation-003.json",
           "sha256": "b1a06aa29af5e6bb1ca28db3b4cbf0c9ef04c60cb5647347e0ccaac295aa3886"
         }
       ],
@@ -210821,7 +210430,6 @@
       "selected_roster_observations": 2,
       "source_files": [
         {
-          "file": "faculty-batch-seu-rotation-003.json",
           "sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade"
         }
       ],
@@ -210853,7 +210461,6 @@
       "selected_roster_observations": 1,
       "source_files": [
         {
-          "file": "faculty-batch-sdu-rotation-003.json",
           "sha256": "9319a041c8a044c62f6aff4cf7472975386b174d4f686d5bac200783349491c5"
         }
       ],
@@ -210885,7 +210492,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-csu-rotation-003.json",
           "sha256": "4ff995e135b6f7d00a53a21b4aa7718002c897d1a4e6aa0b1ffc1e3d1620bb05"
         }
       ],
@@ -210922,7 +210528,6 @@
       "selected_roster_observations": 3,
       "source_files": [
         {
-          "file": "faculty-batch-scut-rotation-003.json",
           "sha256": "b9d6f12723ee263cbbb5d906db58d196bdc59f474a198cc411d2a6d3ed123f70"
         }
       ],
@@ -210959,7 +210564,6 @@
       "selected_roster_observations": 1,
       "source_files": [
         {
-          "file": "faculty-batch-uestc-rotation-003.json",
           "sha256": "69e57db2d5bb6f88d88c4cce0ca90588e183fe44af5edb855153e8fc6af7562c"
         }
       ],
@@ -219516,19 +219120,15 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-fdu-first-001.json",
           "sha256": "92f100f58a2774fd622c6da5e12797d8f360ee6cbb12e5153b7d1fdb9215e7d8"
         },
         {
-          "file": "faculty-batch-nju-first-001.json",
           "sha256": "acde5b544752822bd99afdae359073cd8588f3e016c232026af65098012ceece"
         },
         {
-          "file": "faculty-batch-ustc-first-001.json",
           "sha256": "838f69732426459c4962e6f820acbeaf619e79f7fba4b2f621721fc432cacb00"
         },
         {
-          "file": "faculty-batch-buaa-first-001.json",
           "sha256": "dbcbaf051fc310be1bd70304e74c66a0d93e25ad9bbf2607e8e113cff5d9ba65"
         }
       ],
@@ -219551,47 +219151,36 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-bit-first-001.json",
           "sha256": "5b0e3fe0eb1626d79ba542008f66643c850d2f33c0385f632b3b4a19b9d33b76"
         },
         {
-          "file": "faculty-batch-bnu-first-001.json",
           "sha256": "397e1a41d32d82f23f48ab1041a670b23324b96867ffcfdc4e0b30b3c31a92df"
         },
         {
-          "file": "faculty-batch-cau-first-001.json",
           "sha256": "739b1dcdf0014c983d7dc51e811426b231c153c48268b03890115a3dbec4bf22"
         },
         {
-          "file": "faculty-batch-muc-first-001.json",
           "sha256": "266e5aa1193112debae40393646e1f391e08686cc18a3fbc7504cac7ffc06993"
         },
         {
-          "file": "faculty-batch-nku-first-001.json",
           "sha256": "85f6d10035ac4fa431456b8a6cf8fc897030fd10c5bfcca1db944e6f18414fb0"
         },
         {
-          "file": "faculty-batch-dlut-first-001.json",
           "sha256": "5a549e6d733736785d089156f0f8cfe4e0a345c35448897fa9790b934f223fed"
         },
         {
-          "file": "faculty-batch-tju-first-001.json",
           "sha256": "d5930bba30e6f7b808ad9e64d9e4f50096a4ac1ee8afce0dc25461daa596c57f"
         },
         {
-          "file": "faculty-batch-jlu-first-001.json",
           "sha256": "92a47a38133eef620192419023288b6581ad4cab5082557ccc0971b60a6edaa2"
         },
         {
-          "file": "faculty-batch-tongji-first-001.json",
           "sha256": "63210a56397abcf247e177ee3a66db8b319add431320cb0c18c5f1d996dad89c"
         },
         {
-          "file": "faculty-batch-ruc-first-001.json",
           "sha256": "62e8875af172a20a8d5dc6c0fea05194bee888c7bd9061042c55042ff9f3a8b0"
         },
         {
-          "file": "faculty-batch-neu-first-001.json",
           "sha256": "54ab535e6e9248ffe40132719d2951fb578b9d293e138e99032dc74b6452b1aa"
         }
       ],
@@ -219622,91 +219211,69 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-ecnu-first-001.json",
           "sha256": "1e371de16021e43918f0d21b19ec0b87f30bf2ce51d07a467a570702b6e0ba79"
         },
         {
-          "file": "faculty-batch-seu-first-001.json",
           "sha256": "1d24f53efcca470eca407932d0a29245f20bbe457e66eb23c0249cc3704de719"
         },
         {
-          "file": "faculty-batch-xmu-first-001.json",
           "sha256": "9efaba65974a9d094a306f0e7d844426b70e072b8d3832b7a6cb3620b01af10e"
         },
         {
-          "file": "faculty-batch-sdu-first-001.json",
           "sha256": "9db10c21a935d3497eca82739feb726e6677da8371ccc6488a7271ace3f752a2"
         },
         {
-          "file": "faculty-batch-ouc-first-001.json",
           "sha256": "ed7635af302f15ec34a6718a67ab50bfede9c97b467afb016489afbda5ee1ebe"
         },
         {
-          "file": "faculty-batch-whu-first-001.json",
           "sha256": "283666dad6a990ce40dd8da5fe26223e71e02edae877ce2afdaec1bd88e60799"
         },
         {
-          "file": "faculty-batch-hust-first-001.json",
           "sha256": "192451816625455d514d27e8fabbc9d067a03afa41d8900131c37211034ae644"
         },
         {
-          "file": "faculty-batch-hnu-first-001.json",
           "sha256": "55933bf14e5df98e23c5b6f61c2198f762c4deb42e9627c1e6e7b8cb334510e5"
         },
         {
-          "file": "faculty-batch-csu-first-001.json",
           "sha256": "398773be003dab0237748266a8e9740f3d87d57e045048b5ec5340f8b17f2eef"
         },
         {
-          "file": "faculty-batch-nudt-first-001.json",
           "sha256": "a125b40d5c0a4565daf680567151a498a07bc66805a60d12ecc04c86d5270fca"
         },
         {
-          "file": "faculty-batch-sysu-first-001.json",
           "sha256": "0cf7f3206ddfebab6d0c9dcf46e4b74ea2826a3ea6a1fe066ae8485da01da317"
         },
         {
-          "file": "faculty-batch-scut-first-001.json",
           "sha256": "a6fbfca14d92cf6b64b2c9057479e8aad2d35ae5a35c545947dca98bd7575d7c"
         },
         {
-          "file": "faculty-batch-scu-first-001.json",
           "sha256": "816f185deefd0f68dab4ead06c07426a22ec29d0e190e717998a102633bc2ab9"
         },
         {
-          "file": "faculty-batch-uestc-first-001.json",
           "sha256": "8eefb705cf90cff707ae5511eb96670d2aea1cf7582b9cdaa763bc2df8470dd2"
         },
         {
-          "file": "faculty-batch-cqu-first-001.json",
           "sha256": "305d599e5e0fa52b98a4b6a9e6b95f0aa0864b87ab0a1896f9bc0ebcbc25e6a8"
         },
         {
-          "file": "faculty-batch-xjtu-first-001.json",
           "sha256": "ff3a875ef7d1268baa74e1af7579eec1832217f801ded813f273c3f04d63ecf4"
         },
         {
-          "file": "faculty-batch-nwpu-first-001.json",
           "sha256": "18ef2ec8eae53d617d9d70c9b74fb2af8c2f1a2315b2d030a6bd45079dd6ceba"
         },
         {
-          "file": "faculty-batch-nwsuaf-first-001.json",
           "sha256": "98149d7cebd1df54a14529680c08957b221c50a153d0764352e26c4b3472a280"
         },
         {
-          "file": "faculty-batch-lzu-first-001.json",
           "sha256": "32f02f005790ba97821d760838ce9b10087f5881d8ee7f6c39152d5e42b17252"
         },
         {
-          "file": "faculty-batch-nudt-supplement-001.json",
           "sha256": "ab7c06380355cdc8c6e3deb575d1185748d7c7a03f1d1c93f968a20d174c7f1a"
         },
         {
-          "file": "faculty-batch-scu-supplement-001.json",
           "sha256": "2dd6f2698f877235dc53db1f5e2641bb213b7984363a1202c39e7ddb1b291667"
         },
         {
-          "file": "faculty-batch-sysu-supplement-001.json",
           "sha256": "c39c701e520875453ead68e4eb2afd43301063d489acfeff86c862f794ebf643"
         }
       ],
@@ -219727,39 +219294,30 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-scu-supplement-002.json",
           "sha256": "c72d61d3943af579e97265c4de0a97050d64c45cf1d4930f4b23f7f66ec2d5c2"
         },
         {
-          "file": "faculty-batch-nudt-supplement-002.json",
           "sha256": "ebd208c30de74d1aa4bb2e7aa15d2e0f8858acdf5fb50d37b6bb6cff798e1f8a"
         },
         {
-          "file": "faculty-batch-seu-supplement-001.json",
           "sha256": "f554588a9fc67da1373b92d1744620478cab344216d480d24730c2d2bd444172"
         },
         {
-          "file": "faculty-batch-sysu-supplement-002.json",
           "sha256": "d2f087c95a4f4f1b1cdd134f3ae1840d2213d02736fea7888cfb54f28b96020a"
         },
         {
-          "file": "faculty-batch-hust-supplement-001.json",
           "sha256": "29ef7a280ce0b04b5b04905e8f867676b3f082034ce059eee386460aac396c29"
         },
         {
-          "file": "faculty-batch-ouc-supplement-001.json",
           "sha256": "7ac3b53f31b1ab6ce1989c2fc30ed1778623362999f7e56eb70bb26229afc498"
         },
         {
-          "file": "faculty-batch-nwpu-supplement-001.json",
           "sha256": "aa164dd3c76429d2ec1e67396807ca71a6cd0013fefb574ffa4366aef966cac0"
         },
         {
-          "file": "faculty-batch-ruc-rotation-001.json",
           "sha256": "70f733d4ce8e201fb8c76a1ff814c11fa6c1638d5b58c3cf9fe50dc43649fdfe"
         },
         {
-          "file": "faculty-batch-whu-supplement-001.json",
           "sha256": "31970f1f7969510ca9b8d29065401b1cba11e282b42e9651eca6d87705ed2c4c"
         }
       ],
@@ -219784,55 +219342,42 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-bit-rotation-001.json",
           "sha256": "9c0339460520dac802cad445cc15631e641287baeb7d5fbc3c876beb412acb0a"
         },
         {
-          "file": "faculty-batch-cau-rotation-001.json",
           "sha256": "0cd377820a4b67b874f4aaf29464c0ea7bae370df5c9a9bae9f41fb79391f7f4"
         },
         {
-          "file": "faculty-batch-buaa-rotation-001.json",
           "sha256": "436bbcda132584780afe8cfbe0b231e9056f83377a4ec602dd3da6246457d025"
         },
         {
-          "file": "faculty-batch-muc-rotation-001.json",
           "sha256": "01736382664998535a8f7c2c02e98fd7a79f9aaf11b14f47eb8ed96177db4c9c"
         },
         {
-          "file": "faculty-batch-bnu-rotation-001.json",
           "sha256": "666deda7a911769abfbed98664bf23768946057f215f7b4e07a0dad3389bcbc6"
         },
         {
-          "file": "faculty-batch-nku-rotation-001.json",
           "sha256": "2177bbd15bf1abfe314d2dfabf9060ca1c31c66a5c282322053e3482537c6e55"
         },
         {
-          "file": "faculty-batch-dlut-rotation-001.json",
           "sha256": "9ae01b208f09a4cdfd86159934f6569df597383f77b690e8c52c53b0fdaf348d"
         },
         {
-          "file": "faculty-batch-neu-rotation-001.json",
           "sha256": "1cdcfd5ffd3a3b64c763ecf7b963629a3e9564a30e022bd921e25508074c059d"
         },
         {
-          "file": "faculty-batch-tju-rotation-001.json",
           "sha256": "49e6aca7df09c8169521ab9dcf15ede659006997e34e0b389c8ed9999c102bec"
         },
         {
-          "file": "faculty-batch-jlu-rotation-001.json",
           "sha256": "301801b782b5862ca4c2f69573c4a293d00a08470141cc79d42fb0e3d1e9989b"
         },
         {
-          "file": "faculty-batch-tongji-rotation-001.json",
           "sha256": "0e0c2d3b4557f74ed53e0f5154c594d2c53bfa4084a21aab6a3556eb8bb73137"
         },
         {
-          "file": "faculty-batch-ecnu-rotation-001.json",
           "sha256": "559acbdca3c51c489c192acb0c0ea3b60aba6d6a0c1f7a691ce71d5b8ff25c4a"
         },
         {
-          "file": "faculty-batch-nju-rotation-001.json",
           "sha256": "b9ed7f39637631b7e9dbdef9e5f716ad7f4e29ec67fda5f812ab5fc0fc76ff8e"
         }
       ],
@@ -219855,47 +219400,36 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-fdu-rotation-001.json",
           "sha256": "4909648728d27711a2c6231860f89bdc638f3a67b9cb916aa2e4d50521910d10"
         },
         {
-          "file": "faculty-batch-seu-rotation-001.json",
           "sha256": "4f2b76e873aa3c401c7e934d9408b3c789bcad6f195e6ba87c0b5f5ae8971bec"
         },
         {
-          "file": "faculty-batch-xmu-rotation-001.json",
           "sha256": "ceb1168673d9c65fb4175e1945cff4a9fd9068b50d366245011d060013d3dca8"
         },
         {
-          "file": "faculty-batch-sdu-rotation-001.json",
           "sha256": "cc1c28142ad954d792818e580998c88a1ce8aa8178577202fc98df003828eb30"
         },
         {
-          "file": "faculty-batch-ustc-rotation-001.json",
           "sha256": "fefbf1e9f368266cdcc3ad8a860b0ae12a37719eef5d6e7c0e27600b88fbddd5"
         },
         {
-          "file": "faculty-batch-ouc-rotation-001.json",
           "sha256": "add56548386df237f8ba55d4ace6e598451207e6e1ff2490d7b47e372207f8d4"
         },
         {
-          "file": "faculty-batch-hust-rotation-001.json",
           "sha256": "131b14de5928efad9d1e093c26446da894515d18be315ecfc0ca4ae2a4f95a16"
         },
         {
-          "file": "faculty-batch-hnu-rotation-001.json",
           "sha256": "2adb3d0a619ca8658453e35c75cc2e42ad5484af9ea17a5dd9ac59bd867def2c"
         },
         {
-          "file": "faculty-batch-whu-rotation-001.json",
           "sha256": "ca0f7aacde86f6ec7bdcb5045104a12ef40814e24705eba3a8745628e94c8b49"
         },
         {
-          "file": "faculty-batch-nudt-rotation-001.json",
           "sha256": "96b5890fae33788e9a3d1e3eefb19bf00efb7727ccd264c56f42eb2577c1547e"
         },
         {
-          "file": "faculty-batch-csu-rotation-001.json",
           "sha256": "46c12bb69530cb652594841f6942f5666da7747cf96411f696b77cdcd684af76"
         }
       ],
@@ -219916,39 +219450,30 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-cqu-rotation-001.json",
           "sha256": "92c9e7041f00b7b99f9b69de44013b1a294f6e0fbbb6747b6887fdbb28ada32a"
         },
         {
-          "file": "faculty-batch-lzu-rotation-001.json",
           "sha256": "c70ccd322594444d06eb061454bb6e77a2668c569ea7d40731ba22765649f24c"
         },
         {
-          "file": "faculty-batch-nwpu-rotation-001.json",
           "sha256": "0c614ace2925824e4ff945da13fc8621b5604451633b76af088d5989734255c1"
         },
         {
-          "file": "faculty-batch-nwsuaf-rotation-001.json",
           "sha256": "19cd6cee7c18847dba1aa8da94a975eb6da5ccf372296cbbde5529eeeb3fa5a0"
         },
         {
-          "file": "faculty-batch-scu-rotation-001.json",
           "sha256": "f6e77f7cb079de3236051570b040c6bb140215e86270cdd17437c4e982c8a6dd"
         },
         {
-          "file": "faculty-batch-scut-rotation-001.json",
           "sha256": "528b670df3f36326a51260de8fdd64d1c6a50cfd0f27bf6bb838b6994ea2d0f5"
         },
         {
-          "file": "faculty-batch-sysu-rotation-001.json",
           "sha256": "106892a97730e1de99dbf6d7f007cb9c86ccafed2b1ad1edcb42b759e7eb96af"
         },
         {
-          "file": "faculty-batch-uestc-rotation-001.json",
           "sha256": "4ab16856a48c81695c851c6cfe82dfdea86dce573015788ab7ed0df5379ea133"
         },
         {
-          "file": "faculty-batch-xjtu-rotation-001.json",
           "sha256": "e079624c7347a31a22431d616e9d596501851404b83a8628c5e0d21a2849a737"
         }
       ],
@@ -219964,19 +219489,15 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-cau-rotation-002.json",
           "sha256": "c246a2efd4599d8a044fb790b20389b8e5a56eec36749546d48c8caedd323e01"
         },
         {
-          "file": "faculty-batch-neu-rotation-002.json",
           "sha256": "226bf8cf058ed295a9211e13be19e044ba36e7b866f7c08a5026ad2292e210e1"
         },
         {
-          "file": "faculty-batch-tongji-rotation-002.json",
           "sha256": "9f9ba91abf8715a43fe265cf0340b5657b7d58318bddfc6d43078de65bdef7e0"
         },
         {
-          "file": "faculty-batch-ecnu-rotation-002.json",
           "sha256": "c14da5f35e262af10821f328114fcf497cb348c8c17dcd03254407e3b8fb02c0"
         }
       ],
@@ -219990,11 +219511,9 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-nju-rotation-002.json",
           "sha256": "141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471"
         },
         {
-          "file": "faculty-batch-hnu-rotation-002.json",
           "sha256": "7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54"
         }
       ],
@@ -220008,11 +219527,9 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-sysu-rotation-002.json",
           "sha256": "005d3d3f0c33c71b7bc45f2cbf20718e19ff07b5c3abc0ae2eff9bea941787cf"
         },
         {
-          "file": "faculty-batch-scu-rotation-002.json",
           "sha256": "9847ea52ba380cc5d81bb8a7e5b6353dc33dfe2fd3c036de8dae17edea9a5088"
         }
       ],
@@ -220027,15 +219544,12 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-cqu-rotation-003.json",
           "sha256": "74c7d1f2908c6fed3fca29f0e577de03465e66c0da54e639299fa5caa70ac7fc"
         },
         {
-          "file": "faculty-batch-xmu-rotation-003.json",
           "sha256": "2452bed0e40e522e27800abf450c530bd072f55a42d9264305b21d2ae5eb33f8"
         },
         {
-          "file": "faculty-batch-bit-rotation-003.json",
           "sha256": "8da78ce1206282aff85380ab2831dc73efd0ffc0c9a07a8eb1abf454c6e62477"
         }
       ],
@@ -220050,15 +219564,12 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-lzu-rotation-003.json",
           "sha256": "81746e6b89ae433f321d1b595422b99031082b42147318e02bccd38b899c2e98"
         },
         {
-          "file": "faculty-batch-nwsuaf-rotation-003.json",
           "sha256": "4bfe874e79de0f0cffd0aaf9e744fa6a64ca4729a55071b4713d758cd7f9d974"
         },
         {
-          "file": "faculty-batch-xjtu-rotation-003.json",
           "sha256": "857ad9b33181de41c2ea6c967ab09eab8405c2e35dd91cdec4025bc58b6211e1"
         }
       ],
@@ -220073,15 +219584,12 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-fdu-rotation-003.json",
           "sha256": "0d293a3b0b53ac959a34b2735e69af3e49df3cdc810c2c4757113ee8948d64ab"
         },
         {
-          "file": "faculty-batch-bnu-rotation-003.json",
           "sha256": "e198c4b5087ba045e976aa08c82c47568c56ce039defbd904a430686ba267d5f"
         },
         {
-          "file": "faculty-batch-ustc-rotation-003.json",
           "sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032"
         }
       ],
@@ -220096,15 +219604,12 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-buaa-rotation-003.json",
           "sha256": "9bb7fc7e5c4c597e6404861a81f50fbaa611e685cf5c6e9477205379293750c0"
         },
         {
-          "file": "faculty-batch-muc-rotation-003.json",
           "sha256": "6040f3d15b95eb53181598d7aaf6757df82d5a98b6c6ea5a1f7ea35d7601f904"
         },
         {
-          "file": "faculty-batch-nku-rotation-003.json",
           "sha256": "8c8b70fd671db58f8f55f7120c7aff626f4addbeddbb0d430c2d2320d507433c"
         }
       ],
@@ -220122,27 +219627,21 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-dlut-rotation-003.json",
           "sha256": "d10af13e5368561eee8a09fc83730af788c93298c96585d1eb577600f622ea03"
         },
         {
-          "file": "faculty-batch-tju-rotation-003.json",
           "sha256": "3cef3140bd55d3e18b089531717ef1277fcd3edb521f9ba14abfb70247821c8a"
         },
         {
-          "file": "faculty-batch-jlu-rotation-003.json",
           "sha256": "b3bec9b8b511a9f3117a6cc4389503e2638207521ed74d3fd0a75fb02bb175c7"
         },
         {
-          "file": "faculty-batch-ruc-rotation-003.json",
           "sha256": "b1a06aa29af5e6bb1ca28db3b4cbf0c9ef04c60cb5647347e0ccaac295aa3886"
         },
         {
-          "file": "faculty-batch-seu-rotation-003.json",
           "sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade"
         },
         {
-          "file": "faculty-batch-sdu-rotation-003.json",
           "sha256": "9319a041c8a044c62f6aff4cf7472975386b174d4f686d5bac200783349491c5"
         }
       ],
@@ -220158,19 +219657,15 @@
       ],
       "source_files": [
         {
-          "file": "faculty-batch-csu-rotation-003.json",
           "sha256": "4ff995e135b6f7d00a53a21b4aa7718002c897d1a4e6aa0b1ffc1e3d1620bb05"
         },
         {
-          "file": "faculty-batch-scut-rotation-003.json",
           "sha256": "b9d6f12723ee263cbbb5d906db58d196bdc59f474a198cc411d2a6d3ed123f70"
         },
         {
-          "file": "faculty-batch-uestc-rotation-003.json",
           "sha256": "69e57db2d5bb6f88d88c4cce0ca90588e183fe44af5edb855153e8fc6af7562c"
         },
         {
-          "file": "faculty-batch-hust-rotation-003.json",
           "sha256": "08eb2b66846c882d65290b887a6880edef42fafe27cd45433532016298b70696"
         }
       ],
@@ -220982,7 +220477,7 @@
       "normalization_scope_note": "本轮首3样本及另列已审补强按各自来源范围保留，不合并同名、不自动升级原pending。"
     }
   ],
-  "build_id": "165704a1a2ef35d2",
+  "build_id": "aea793ff60a91275",
   "exports": [
     {
       "department_id": "bit-cs-image-perception",

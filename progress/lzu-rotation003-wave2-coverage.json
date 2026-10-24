@@ -104,13 +104,9 @@
   },
   "source_references": [
     {
-      "file": "faculty-batch-lzu-rotation-003.json",
       "sha256": "81746e6b89ae433f321d1b595422b99031082b42147318e02bccd38b899c2e98",
-      "scope_file": "faculty-batch-lzu-rotation-003-scope.json",
       "scope_sha256": "d19075a3b716aa671c1893b3748e8cabd494498392a9a18ada832fe44d5599ce",
-      "qa_file": "faculty-batch-lzu-rotation-003-qa.json",
       "qa_sha256": "bfb8aef6758c56d490e23c84601e0e77ebd511cca5f42f6c019c0f0666abcf23",
-      "independent_review_file": "faculty-batch-lzu-rotation-003-independent-review.json",
       "independent_review_sha256": "051538941807141563b918c4aed62c65b980054ea1855db314d3b547275f1702"
     }
   ],
@@ -150,7 +146,6 @@
         "evidence_status": "official_roster_body_read",
         "retrieved_at": "2026-10-23",
         "source_type": "university_official",
-        "evidence_file": "lzu-rotation-003-sources/roster-minimal.json",
         "access_note": "Web reader returned the entire 188-line faculty listing body. HTTP origin status is not exposed; no direct-origin status claimed. Separate category more link timed out once, so selection is bounded to the fully read parent category rather than an unverified standalone page."
       },
       {
@@ -159,8 +154,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
         "source_type": "university_official",
-        "evidence_file": "lzu-rotation-003-sources/lzu-zhouyouhe-profile-minimal.json",
-        "web_reference": "turn2153view1",
         "body_sections_read": "149–245, 333–334",
         "access_note": "Web reader returned professional page body; origin HTTP status is not exposed. Present-tense page listing is not an independent personnel/employment verification."
       },
@@ -170,8 +163,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
         "source_type": "university_official",
-        "evidence_file": "lzu-rotation-003-sources/lzu-huangning-profile-minimal.json",
-        "web_reference": "turn2158view0",
         "body_sections_read": "149–237",
         "access_note": "Web reader returned professional page body; origin HTTP status is not exposed. Present-tense page listing is not an independent personnel/employment verification."
       },
@@ -181,8 +172,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
         "source_type": "university_official",
-        "evidence_file": "lzu-rotation-003-sources/lzu-wangjizeng-profile-minimal.json",
-        "web_reference": "turn2158view1",
         "body_sections_read": "147–214",
         "access_note": "Web reader returned professional page body; origin HTTP status is not exposed. Present-tense page listing is not an independent personnel/employment verification."
       },
@@ -192,8 +181,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
         "source_type": "university_official_republished_article",
-        "evidence_file": "lzu-rotation-003-sources/supplementary-minimal.json",
-        "web_reference": "turn2171view0",
         "published_at": "2021-11-19",
         "access_note": "HUST School of Aerospace Engineering alumni article. Explicitly credits a Changjiang Daily report compiled from university and other sources. Complete body read; only bounded historical PhD award and doctoral supervision facts used, not 2026 employment."
       },
@@ -203,10 +190,8 @@
         "evidence_status": "official_search_snippet_only_body_unavailable",
         "retrieved_at": "2026-10-23",
         "source_type": "university_official_index_candidate",
-        "evidence_file": "lzu-rotation-003-sources/supplementary-minimal.json",
-        "web_reference": "turn2163search0",
         "published_at": "2022-03-30",
-        "access_note": "Search index excerpt only. A single open failed with web-reader 400 Timeout fetching (turn2168view0); no retry or bypass. Not usable for a verified mentorship edge or education filter.",
+        "access_note": "Search index excerpt only. A single open failed with web-reader 400 Timeout fetching; no retry or bypass. Not usable for a verified mentorship edge or education filter.",
         "navigation_available": false,
         "navigation_enabled": false
       }

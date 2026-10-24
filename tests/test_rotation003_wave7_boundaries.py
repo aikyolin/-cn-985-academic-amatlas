@@ -22,7 +22,7 @@ def original_projection(original,current):
  assert original==current
  return current
 FIXTURE=ROOT/'tests/fixtures/rotation003-wave7-source-contract.json'
-assert hashlib.sha256(FIXTURE.read_bytes()).hexdigest()=='fcf3cf741770fe5933aebab13e21b9c25b57d42e1f27356c0b4d3ac80b7b0d40','Reviewed source contract bytes changed'
+assert hashlib.sha256(FIXTURE.read_bytes()).hexdigest()=='7121c78c32a981666579046d397eb3383c124b6e90d31642b310ef80eb60a80d','Reviewed source contract bytes changed'
 SOURCE=json.loads(FIXTURE.read_text())
 # Public metadata guard is applied only to this append, never to frozen prior records.
 PRIVATE_SOURCE_KEYS={'evidence_file','evidence_sha256','web_reference','selection_lock','source_file','source_sha256','review_sha256','reviewed_source_sha256','independent_review_sha256','data_file','data_sha256','scope_file','qa_file','review_file','manifest_file','manifest_sha256','source_references'}
@@ -37,8 +37,14 @@ def assert_public_metadata(value):
   assert not value.startswith(('/workspace/','/home/','/tmp/','/private/','/Users/')),'Local absolute path in this append'
   assert not re.search(r'\bturn\d+(?:view|search|fetch|file)\d*\b',value),'Private tool reference in this append'
   assert not re.search(r'(?:research-rotation003-wave7-[^/]+|review-rotation003-wave7)/',value),'Unpublished review artifact path in this append'
+def public_original_hash(record):
+ if 'public_original_object_sha256' in record:
+  assert record['original_view']=='public_metadata_v1'
+  return record['public_original_object_sha256']
+ assert 'original_view' not in record
+ return record['original_object_sha256']
 class ReviewedAppendBoundaries(unittest.TestCase):
- def test_exact_history_and_original_source_leaf_reversibility(self):
+ def test_exact_public_history_and_original_source_leaf_reversibility(self):
   for rel in CONTRACT:release30_view(read(rel),rel)
   assert_public_metadata(SOURCE)
   for rel,keys in [('data/atlas.json',['people','profile_batches','normalization_evidence']),('site/atlas.json',['people','profile_batches','normalization_evidence']),('data/rosters.json',['entries','batches','source_observations']),('site/rosters.json',['entries','batches'])]:
@@ -51,14 +57,14 @@ class ReviewedAppendBoundaries(unittest.TestCase):
   people={p['person_id']:p for p in read('data/atlas.json')['people']};rosters=read('data/rosters.json');entries={e['id']:e for e in rosters['entries']}
   for record in SOURCE['people']:
    original=record['original'];current=people[original['person_id']];projection=copy.deepcopy(current)
-   self.assertEqual(digest(original),record['original_object_sha256'])
+   self.assertEqual(digest(original),public_original_hash(record))
    entry=record['original_roster_entry'];observations=[o for o in rosters['source_observations']if o['record_id']==entry['id']];self.assertEqual(len(observations),1);self.assertEqual(observations[0]['source_payload'],entry)
    for key,value in entry.items():self.assertEqual(entries[entry['id']][key],value)
    for rule in record['normalization_rules']:
     self.assertEqual(pointer(original,rule['path']),rule['before']);self.assertEqual(pointer(current,rule['path']),rule['after'])
     self.assertEqual(pointer(current,rule['preserved_at']),rule['before']);self.assertEqual(rule['source_projection_sha256'],record['original_object_sha256'])
     self.assertTrue(set(rule['source_ids'])<={s['id']for s in original['sources']});restore(projection,rule['path'],rule['before'])
-   self.assertEqual(digest(original_projection(original,projection)),record['original_object_sha256'])
+   self.assertEqual(digest(original_projection(original,projection)),public_original_hash(record))
  def test_reviewed_batch_collections_and_held_scopes_remain_bounded(self):
   atlas=read('data/atlas.json');rosters=read('data/rosters.json');ids={row['original']['person_id']for row in SOURCE['people']}
   people=[p for p in atlas['people']if p['person_id']in ids];self.assertEqual(len(people),len(ids))

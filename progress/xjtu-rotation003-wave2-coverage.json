@@ -104,13 +104,9 @@
   },
   "source_references": [
     {
-      "file": "faculty-batch-xjtu-rotation-003.json",
       "sha256": "857ad9b33181de41c2ea6c967ab09eab8405c2e35dd91cdec4025bc58b6211e1",
-      "scope_file": "faculty-batch-xjtu-rotation-003-scope.json",
       "scope_sha256": "9612e8b9a1bf7e347b4e9e0bf60150c8cdb83830bee22413feabb64b6f5b83dd",
-      "qa_file": "faculty-batch-xjtu-rotation-003-qa.json",
       "qa_sha256": "d87d2b80cd61ad7240cf55bac5f8e4451200e841aaf89567d359bf3986071931",
-      "independent_review_file": "faculty-batch-xjtu-rotation-003-independent-review.json",
       "independent_review_sha256": "d2e2fbb073ebf6945d749d0721a84a9a0ed65b1f466f4b1a23ccae524abf80ad"
     }
   ],
@@ -175,7 +171,6 @@
         "evidence_status": "official_roster_body_read",
         "retrieved_at": "2026-10-23",
         "source_type": "university_official",
-        "evidence_file": "xjtu-rotation-003-sources/roster-minimal.json",
         "page_date": "2025-07-11"
       },
       {
@@ -184,7 +179,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
         "source_type": "university_official",
-        "evidence_file": "xjtu-rotation-003-sources/organization-minimal.json",
         "page_date": "2026-01-31"
       },
       {
@@ -192,16 +186,14 @@
         "url": "https://phy.xjtu.edu.cn/szdw/jsdw1.htm",
         "evidence_status": "official_roster_body_read",
         "retrieved_at": "2026-10-23",
-        "source_type": "university_official",
-        "evidence_file": "xjtu-rotation-003-sources/identity-minimal.json"
+        "source_type": "university_official"
       },
       {
         "id": "xjtu-rotation003-wang-profile",
         "url": "https://gr.xjtu.edu.cn/yswang/",
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
-        "source_type": "university_official",
-        "evidence_file": "xjtu-rotation-003-sources/wang-minimal.json"
+        "source_type": "university_official"
       },
       {
         "id": "xjtu-rotation003-wang-bio",
@@ -209,7 +201,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
         "source_type": "university_official",
-        "evidence_file": "xjtu-rotation-003-sources/wang-minimal.json",
         "page_date": "2015-03-28"
       },
       {
@@ -217,8 +208,7 @@
         "url": "https://gr.xjtu.edu.cn/leegl/",
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
-        "source_type": "university_official",
-        "evidence_file": "xjtu-rotation-003-sources/li-minimal.json"
+        "source_type": "university_official"
       },
       {
         "id": "xjtu-rotation003-li-bio",
@@ -226,7 +216,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
         "source_type": "university_official",
-        "evidence_file": "xjtu-rotation-003-sources/li-minimal.json",
         "page_date": "2025-07-30"
       },
       {
@@ -234,8 +223,7 @@
         "url": "https://gr.xjtu.edu.cn/zhfxu/",
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
-        "source_type": "university_official",
-        "evidence_file": "xjtu-rotation-003-sources/xu-minimal.json"
+        "source_type": "university_official"
       },
       {
         "id": "xjtu-rotation003-xu-team-bio",
@@ -243,7 +231,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
         "source_type": "university_official",
-        "evidence_file": "xjtu-rotation-003-sources/xu-minimal.json",
         "temporal_note": "Undated legacy team biography; use historical education only, not its administrative title as current."
       },
       {
@@ -251,8 +238,7 @@
         "url": "https://gr.xjtu.edu.cn/zhfxu/zh_CN/lwcg/250306/list/index.htm",
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-23",
-        "source_type": "university_official",
-        "evidence_file": "xjtu-rotation-003-sources/publications-minimal.json"
+        "source_type": "university_official"
       }
     ],
     "counts": {

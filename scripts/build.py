@@ -4,6 +4,7 @@ from urllib.parse import urlparse
 from openpyxl import Workbook
 from openpyxl.styles import Font,PatternFill,Alignment
 from deterministic_xlsx import save_deterministic_xlsx
+from public_metadata import check_public_tree
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def valid_url(v):return isinstance(v,str) and urlparse(v).scheme in ('http','https') and bool(urlparse(v).netloc)
 def mentor_official_url(mentor):
@@ -321,6 +322,7 @@ def department_exports(d):
  return result
 
 def build(generate_excel=True):
+ check_public_tree(ROOT,phase='preflight')
  d=json.loads((ROOT/'data/atlas.json').read_text());validate(d);exports=department_exports(d)
  d['build_id']=hashlib.sha256((ROOT/'data/atlas.json').read_bytes()+(ROOT/'data/rosters.json').read_bytes()+pathlib.Path(__file__).read_bytes()+(ROOT/'scripts/build_rosters.py').read_bytes()+(ROOT/'scripts/deterministic_xlsx.py').read_bytes()).hexdigest()[:16]
  out=ROOT/'site/exports';out.mkdir(exist_ok=True)
@@ -333,7 +335,10 @@ def build(generate_excel=True):
  from build_rosters import build_rosters
  build_rosters(d,generate_excel=generate_excel)
  roster_path=ROOT/'site/rosters.json';roster_snapshot=json.loads(roster_path.read_text());roster_snapshot['build_id']=d['build_id'];roster_path.write_text(json.dumps(roster_snapshot,ensure_ascii=False,indent=2)+'\n')
- d['exports']=exports;(ROOT/'site/atlas.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n');print(f'Validated {len(d["people"])} detailed profiles; prepared {len(exports)} department exports and website snapshot')
+ d['exports']=exports;(ROOT/'site/atlas.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+ check_public_tree(ROOT,phase='final',include_workbooks=generate_excel)
+ print(f'Validated {len(d["people"])} detailed profiles; prepared {len(exports)} department exports and website snapshot')
+ print('Public source metadata: final JSON/CSV/XLSX checked' if generate_excel else 'Public source metadata: JSON/CSV checked; XLSX not regenerated or checked (--data-only)')
 if __name__=='__main__':
  import argparse
  parser=argparse.ArgumentParser();parser.add_argument('--data-only',action='store_true');args=parser.parse_args();build(generate_excel=not args.data_only)

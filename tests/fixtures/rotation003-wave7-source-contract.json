@@ -31,7 +31,7 @@
             "evidence_status": "official_roster_body_read",
             "retrieved_at": "2026-10-24",
             "published_at": null,
-            "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; L671, L673–L682; next row L684–L685.",
+            "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; next row.",
             "public_raw_cache": false
           },
           {
@@ -41,7 +41,7 @@
             "evidence_status": "official_public_body_read",
             "retrieved_at": "2026-10-24",
             "published_at": "2022-11-03",
-            "source_locator": "L143 publication date; L152 exact role substring.",
+            "source_locator": "publication date; exact role substring.",
             "public_raw_cache": false
           },
           {
@@ -51,7 +51,7 @@
             "evidence_status": "conference_official_body_read",
             "retrieved_at": "2026-10-24",
             "published_at": "2018",
-            "source_locator": "L28 final sentence; name L21, affiliation L23.",
+            "source_locator": "final sentence; name, affiliation.",
             "public_raw_cache": false
           }
         ],
@@ -271,7 +271,9 @@
           ],
           "source_projection_sha256": "414a21e4aca33a5a6cb382642577c46965e8d7c59f70020be63cf46bd2d01ba8"
         }
-      ]
+      ],
+      "public_original_object_sha256": "68b9c92bcf27a46387bfde977315636ed598485fadf2f471675ca80a1ba1dc18",
+      "original_view": "public_metadata_v1"
     },
     {
       "original": {
@@ -304,7 +306,7 @@
             "evidence_status": "official_roster_body_read",
             "retrieved_at": "2026-10-24",
             "published_at": null,
-            "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; L671, L673–L682; next row L684–L685.",
+            "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; next row.",
             "public_raw_cache": false
           },
           {
@@ -314,7 +316,7 @@
             "evidence_status": "official_public_body_read",
             "retrieved_at": "2026-10-24",
             "published_at": "2020-09-19",
-            "source_locator": "L156 publication date; L171 exact role substring.",
+            "source_locator": "publication date; exact role substring.",
             "public_raw_cache": false
           },
           {
@@ -324,7 +326,7 @@
             "evidence_status": "official_public_body_read",
             "retrieved_at": "2026-10-24",
             "published_at": "2020-12-08",
-            "source_locator": "L20; L36 first clause.",
+            "source_locator": "first clause.",
             "public_raw_cache": false
           }
         ],
@@ -485,7 +487,9 @@
           ],
           "source_projection_sha256": "31bba1105a2a9ffd1b31869bad52b03e7a067d6de9cdccbfd036881eb4db64b0"
         }
-      ]
+      ],
+      "public_original_object_sha256": "83e386935c85ce6bd0c97beb783ef455aff3e9b1f49f916c531540c3d6181794",
+      "original_view": "public_metadata_v1"
     },
     {
       "original": {
@@ -518,7 +522,7 @@
             "evidence_status": "official_roster_body_read",
             "retrieved_at": "2026-10-24",
             "published_at": null,
-            "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; L671, L673–L682; next row L684–L685.",
+            "source_locator": "PDF zero-based page 21 (physical page 22), printed page 20; next row.",
             "public_raw_cache": false
           },
           {
@@ -528,7 +532,7 @@
             "evidence_status": "official_public_body_read",
             "retrieved_at": "2026-10-24",
             "published_at": "2026-09-03",
-            "source_locator": "L156 date; L175 exact role substring.",
+            "source_locator": "date; exact role substring.",
             "public_raw_cache": false
           },
           {
@@ -538,7 +542,7 @@
             "evidence_status": "official_public_body_read",
             "retrieved_at": "2026-10-24",
             "published_at": null,
-            "source_locator": "L256 education-only substring; source name at L252.",
+            "source_locator": "education-only substring; source name.",
             "public_raw_cache": false
           }
         ],
@@ -806,7 +810,9 @@
           ],
           "source_projection_sha256": "c84d3432ec8efb94b1776ddbd9c19ff684e1f5eb9bec826933e467d484d94847"
         }
-      ]
+      ],
+      "public_original_object_sha256": "cb3adf5de49bf10b6244e9b8ca80552f681e143fe945761374126e6a63939c03",
+      "original_view": "public_metadata_v1"
     },
     {
       "original": {
@@ -838,10 +844,10 @@
             "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
             "published_at": null,
             "source_locators": [
-              "L42-L54: category and separate retired category",
-              "L55-L57: selected first three",
-              "L55-L63: first-page sequence",
-              "L64: page 1 and seven-page navigation"
+              "category and separate retired category",
+              "selected first three",
+              "first-page sequence",
+              "page 1 and seven-page navigation"
             ],
             "evidence_format": "minimized_verbatim_web_tool_excerpt",
             "public_raw_cache": false
@@ -856,10 +862,10 @@
             "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
             "published_at": null,
             "source_locators": [
-              "L47: identity",
-              "L59-L66: education and work",
-              "L70: teaching",
-              "L84-L86: selected bibliography"
+              "identity",
+              "education and work",
+              "teaching",
+              "selected bibliography"
             ],
             "evidence_format": "minimized_verbatim_web_tool_excerpt",
             "public_raw_cache": false
@@ -902,7 +908,6 @@
               "tongji-baozhihao-profile"
             ],
             "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-            "source_locator": "L59",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -954,7 +959,6 @@
               "tongji-baozhihao-profile"
             ],
             "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-            "source_locator": "L61",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -1006,7 +1010,6 @@
               "tongji-baozhihao-profile"
             ],
             "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-            "source_locator": "L63",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -1058,7 +1061,6 @@
               "tongji-baozhihao-profile"
             ],
             "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-            "source_locator": "L65",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -1107,7 +1109,7 @@
             "personnel_status_verified": false,
             "source_id": "tongji-baozhihao-profile",
             "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-            "source_locator": "L66; roster L55",
+            "source_locator": "roster",
             "evidence_status": "official_public_body_read",
             "note": "现行教授（研究员）名录与个人正文教授、至今表述；不从合并工作区间推定教授晋升起点。",
             "field_provenance": {
@@ -1129,7 +1131,6 @@
             "personnel_status_verified": false,
             "source_id": "tongji-baozhihao-profile",
             "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-            "source_locator": "L66",
             "evidence_status": "official_public_body_read",
             "note": "原文工作区间2009.6至今；同一学校任职履历，不另计一份工作，不作为教授晋升日期。",
             "field_provenance": {
@@ -1151,7 +1152,6 @@
             "personnel_status_verified": false,
             "source_id": "tongji-baozhihao-profile",
             "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-            "source_locator": "L65",
             "evidence_status": "official_public_body_read",
             "note": "与非授位教育事件为同一经历。",
             "field_provenance": {
@@ -1176,7 +1176,6 @@
             "type": "journal_article",
             "source_id": "tongji-baozhihao-profile",
             "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-            "source_locator": "L84",
             "identity_evidence": "https://physics.tongji.edu.cn/info/1126/3141.htm",
             "link_status": "official_publication_list_only",
             "note": "446 (7132), 172–175；本人主页列入主要论著。 仅个人官方页书目，未读论文全文或独立核验出版商元数据；不补猜DOI。"
@@ -1190,7 +1189,6 @@
             "type": "journal_article",
             "source_id": "tongji-baozhihao-profile",
             "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-            "source_locator": "L86",
             "identity_evidence": "https://physics.tongji.edu.cn/info/1126/3141.htm",
             "link_status": "official_publication_list_only",
             "note": "4 (10), 3980–3984；本人主页列入主要论著。 仅个人官方页书目，未读论文全文或独立核验出版商元数据；不补猜DOI。"
@@ -1208,7 +1206,6 @@
             "education_level": "本科",
             "source_id": "tongji-baozhihao-profile",
             "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-            "source_locator": "L70",
             "year": null,
             "note": "公开授课事实，不是本人教育经历。"
           },
@@ -1217,7 +1214,6 @@
             "education_level": "本科",
             "source_id": "tongji-baozhihao-profile",
             "source_url": "https://physics.tongji.edu.cn/info/1126/3141.htm",
-            "source_locator": "L70",
             "year": null,
             "note": "公开授课事实，不是本人教育经历。"
           }
@@ -1255,7 +1251,9 @@
           ],
           "source_projection_sha256": "42f552d0aaac7dcc7b34d917951831992fbb05b84b652fee9c2bc65aa158d014"
         }
-      ]
+      ],
+      "public_original_object_sha256": "437990c74a10fdd34f545ea1816fbfa04b00d8214703cbf4275a9e3b44de992b",
+      "original_view": "public_metadata_v1"
     },
     {
       "original": {
@@ -1287,10 +1285,10 @@
             "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
             "published_at": null,
             "source_locators": [
-              "L42-L54: category and separate retired category",
-              "L55-L57: selected first three",
-              "L55-L63: first-page sequence",
-              "L64: page 1 and seven-page navigation"
+              "category and separate retired category",
+              "selected first three",
+              "first-page sequence",
+              "page 1 and seven-page navigation"
             ],
             "evidence_format": "minimized_verbatim_web_tool_excerpt",
             "public_raw_cache": false
@@ -1305,9 +1303,9 @@
             "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
             "published_at": null,
             "source_locators": [
-              "L24-L34: identity and role",
-              "L39: current role, explicit degree awards, postdoc and visiting role",
-              "L46-L58: dated education and work"
+              "identity and role",
+              "current role, explicit degree awards, postdoc and visiting role",
+              "dated education and work"
             ],
             "evidence_format": "minimized_verbatim_web_tool_excerpt",
             "public_raw_cache": false
@@ -1322,8 +1320,8 @@
             "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
             "published_at": null,
             "source_locators": [
-              "L25-L29: identity",
-              "L36-L41: empty publication category"
+              "identity",
+              "empty publication category"
             ],
             "evidence_format": "minimized_verbatim_web_tool_excerpt",
             "public_raw_cache": false
@@ -1366,7 +1364,6 @@
               "tongji-caitianji-profile"
             ],
             "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-            "source_locator": "L39; L46-L47",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -1418,7 +1415,6 @@
               "tongji-caitianji-profile"
             ],
             "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-            "source_locator": "L39; L48-L49",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -1470,7 +1466,6 @@
               "tongji-caitianji-profile"
             ],
             "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-            "source_locator": "L39; L50-L51",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -1522,7 +1517,6 @@
               "tongji-caitianji-profile"
             ],
             "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-            "source_locator": "L39; L57-L58",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -1574,7 +1568,6 @@
               "tongji-caitianji-profile"
             ],
             "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-            "source_locator": "L39",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -1623,7 +1616,6 @@
             "personnel_status_verified": false,
             "source_id": "tongji-caitianji-profile",
             "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-            "source_locator": "L39",
             "evidence_status": "official_public_body_read",
             "note": "个人简介明确现任；不将教授（研究员）名录类别改写成教授。",
             "field_provenance": {
@@ -1645,7 +1637,6 @@
             "personnel_status_verified": false,
             "source_id": "tongji-caitianji-profile",
             "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-            "source_locator": "L55-L56",
             "evidence_status": "official_public_body_read",
             "note": "工作表记载2025.9至今及两个单位；不为高等研究院创建另一人物或推定独立职称。",
             "field_provenance": {
@@ -1667,7 +1658,6 @@
             "personnel_status_verified": false,
             "source_id": "tongji-caitianji-profile",
             "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-            "source_locator": "L39; L57-L58",
             "evidence_status": "official_public_body_read",
             "note": "与非授位教育事件为同一经历。",
             "field_provenance": {
@@ -1690,7 +1680,6 @@
             "personnel_status_verified": false,
             "source_id": "tongji-caitianji-profile",
             "source_url": "https://faculty.tongji.edu.cn/tianjicai/zh_CN/index.htm",
-            "source_locator": "L39",
             "evidence_status": "official_public_body_read",
             "note": "简介明确曾任；起止未披露。",
             "field_provenance": {
@@ -1746,7 +1735,9 @@
           ],
           "source_projection_sha256": "22f82a5908a38ced4fe3e9d91595c22ac41989068380c5360bb02d58a56ddba2"
         }
-      ]
+      ],
+      "public_original_object_sha256": "e47b3eb78d29bd1a4eec7ea5c42701af171cc5bb881a7f2ef73c7cfa7b9564b5",
+      "original_view": "public_metadata_v1"
     },
     {
       "original": {
@@ -1778,10 +1769,10 @@
             "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
             "published_at": null,
             "source_locators": [
-              "L42-L54: category and separate retired category",
-              "L55-L57: selected first three",
-              "L55-L63: first-page sequence",
-              "L64: page 1 and seven-page navigation"
+              "category and separate retired category",
+              "selected first three",
+              "first-page sequence",
+              "page 1 and seven-page navigation"
             ],
             "evidence_format": "minimized_verbatim_web_tool_excerpt",
             "public_raw_cache": false
@@ -1796,10 +1787,10 @@
             "observed_at_basis": "session clock reminder immediately after tool return; not server publication or request timestamp",
             "published_at": null,
             "source_locators": [
-              "L61-L74: identity and qualification labels",
-              "L100 beginning: current role and explicit stage-specific mentors",
-              "L118 and L122: selected bibliography",
-              "L176-L197: dated education/work, including PhD date conflict"
+              "identity and qualification labels",
+              "beginning: current role and explicit stage-specific mentors",
+              "selected bibliography",
+              "dated education/work, including PhD date conflict"
             ],
             "evidence_format": "minimized_verbatim_web_tool_excerpt",
             "public_raw_cache": false
@@ -1842,7 +1833,6 @@
               "tongji-chenjie-physics-profile"
             ],
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L100; L176-L177",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -1912,7 +1902,6 @@
               "tongji-chenjie-physics-profile"
             ],
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L100; L179-L180",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -1964,7 +1953,6 @@
               "tongji-chenjie-physics-profile"
             ],
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L100; L182-L183",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -2016,7 +2004,6 @@
               "tongji-chenjie-physics-profile"
             ],
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L100; L193-L194",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -2068,7 +2055,6 @@
               "tongji-chenjie-physics-profile"
             ],
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L196-L197",
             "evidence_status": "official_public_body_read",
             "institution_985": "unknown",
             "region": "unknown",
@@ -2117,7 +2103,6 @@
             "personnel_status_verified": false,
             "source_id": "tongji-chenjie-physics-profile",
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L100",
             "evidence_status": "official_public_body_read",
             "note": "简介明确当前身份；教授头衔和2018.3工作表不是明确晋升或长聘起始日期。",
             "field_provenance": {
@@ -2139,7 +2124,6 @@
             "personnel_status_verified": false,
             "source_id": "tongji-chenjie-physics-profile",
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L187-L188",
             "evidence_status": "official_public_body_read",
             "note": "工作表仅列单位与日期，职称不在该行；不把此区间当教授或长聘晋升日期。",
             "field_provenance": {
@@ -2161,7 +2145,6 @@
             "personnel_status_verified": false,
             "source_id": "tongji-chenjie-physics-profile",
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L190-L191",
             "evidence_status": "official_public_body_read",
             "note": "来源保留高研院原称谓。",
             "field_provenance": {
@@ -2183,7 +2166,6 @@
             "personnel_status_verified": false,
             "source_id": "tongji-chenjie-physics-profile",
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L193-L194",
             "evidence_status": "official_public_body_read",
             "note": "与教育中的非授位事件相同。",
             "field_provenance": {
@@ -2206,7 +2188,6 @@
             "personnel_status_verified": false,
             "source_id": "tongji-chenjie-physics-profile",
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L196-L197",
             "evidence_status": "official_public_body_read",
             "note": "与教育中的非授位事件相同，不修补与2012博士毕业句的表观矛盾。",
             "field_provenance": {
@@ -2229,7 +2210,6 @@
             "relationship_status": "verified_direct_statement",
             "source_id": "tongji-chenjie-physics-profile",
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L100",
             "stage_source_id": "tongji-chenjie-physics-profile",
             "official_url": null,
             "profile_source_url": null,
@@ -2269,7 +2249,6 @@
             "relationship_status": "verified_direct_statement",
             "source_id": "tongji-chenjie-physics-profile",
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L100",
             "stage_source_id": "tongji-chenjie-physics-profile",
             "official_url": null,
             "profile_source_url": null,
@@ -2304,7 +2283,6 @@
             "relationship_status": "verified_direct_statement",
             "source_id": "tongji-chenjie-physics-profile",
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L100",
             "stage_source_id": "tongji-chenjie-physics-profile",
             "official_url": null,
             "profile_source_url": null,
@@ -2342,7 +2320,6 @@
             "type": "journal_article",
             "source_id": "tongji-chenjie-physics-profile",
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L118",
             "identity_evidence": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
             "link_status": "official_publication_list_only",
             "note": "94, 025002；本人列为代表性论文。 仅个人官方页书目，未读论文全文或独立核验出版商元数据；不补猜DOI。"
@@ -2356,7 +2333,6 @@
             "type": "journal_article",
             "source_id": "tongji-chenjie-physics-profile",
             "source_url": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
-            "source_locator": "L122",
             "identity_evidence": "https://faculty.tongji.edu.cn/chenjie123456789/zh_CN/index.htm",
             "link_status": "official_publication_list_only",
             "note": "128, 015901；本人列为代表性论文。 仅个人官方页书目，未读论文全文或独立核验出版商元数据；不补猜DOI。"
@@ -2401,7 +2377,9 @@
           ],
           "source_projection_sha256": "e83290b3e42305616bdd27a2a65eadc9ee5740d3a940dead08b6abbee9c3428d"
         }
-      ]
+      ],
+      "public_original_object_sha256": "ca89c010d935c0d4b7a6dafe948c062aec0b8067df6bc37e44010c4240dbf5a5",
+      "original_view": "public_metadata_v1"
     }
   ],
   "collection_counts": {

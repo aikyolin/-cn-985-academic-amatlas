@@ -7,7 +7,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),read=f=>JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
 const raw=fs.readFileSync(path.join(root,'tests/fixtures/rotation003-wave7-source-contract.json'));
-assert.equal(createHash('sha256').update(raw).digest('hex'),'fcf3cf741770fe5933aebab13e21b9c25b57d42e1f27356c0b4d3ac80b7b0d40');
+assert.equal(createHash('sha256').update(raw).digest('hex'),'7121c78c32a981666579046d397eb3383c124b6e90d31642b310ef80eb60a80d');
 const contract=JSON.parse(raw),db=read('site/atlas.json');db.rosters=read('site/rosters.json');
 const model=await import(pathToFileURL(path.join(root,'site/model.js'))),roster=await import(pathToFileURL(path.join(root,'site/rosters.js')));
 test('combined source relationships retain every event without splitting or inventing current navigation',()=>{

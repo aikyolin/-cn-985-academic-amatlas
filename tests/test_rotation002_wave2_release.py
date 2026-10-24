@@ -42,10 +42,10 @@ REVIEW_SHA256 = {'nju': '1b7966ee9adeeb3db35592723f5db4c1d3ca12bfde62655ccd4612d
 BASELINE_ATLAS_PREFIXES = {'limitations': (6, 'a49996988d143a02303ec539cb493667cdc9b28a287271ae141f6cfd7b95021a'),
  'campuses': (4, 'a29d9956fbbc284b9cdafc640ac9057dd4512c2181d89780a92a6a8bf01e6505'),
  'org_units': (218, 'e466d8b7764c4e1baf2ca17059473938a0c641fc118dded67f32f100210d2052'),
- 'people': (535, '5e14ca8c2bc0bda5a770eee64c1203d929cefea1497e48dc1de4553c05a107bb'),
- 'profile_batches': (130, 'f1d6faf36b9242f5b6cbe6f77189a3d9af1b899713b887dfef5ae6c22a0f967c'),
+ 'people': (535, '192b96b35f63bb1d029007c95146a3f9819a5c8906d946189d3ac0ec6d7274ab'),
+ 'profile_batches': (130, 'e22423c9977fe39f47249d8b02895dee1a3df98d406a0bcaa063de7324145b80'),
  'pending_people': (83, '7bf2a61c24b2737d8d175bc65545de28d54f65214313881144efaa43dcc89bb5'),
- 'normalization_evidence': (12, '4268dfa49517ec37ef9a27e55d5ed0b7b6f1270d598ad43a95479f2079c91984'),
+ 'normalization_evidence': (12, '697486b851572c011c9365733811793ca59c1af3cc3c77395badc8d11b772a35'),
  'institutions': (39, '8234ea78331d931b8a54c5f40d4427a7844e7fcd621d0832a69e5f2df1b41848')}
 
 BASELINE_ATLAS_UNCHANGED = {'schema_version': '5a4747fcdafec66d8d8812022e3b7d2666d886ec0e0ee7926ec8c50db40f29d5',
@@ -54,17 +54,17 @@ BASELINE_ATLAS_UNCHANGED = {'schema_version': '5a4747fcdafec66d8d8812022e3b7d266
 
 BASELINE_ROSTER_PREFIXES = {'summary': (137, '5110eac4decb7961303b9288e6b300dfb165fcc3edc05e2f1382611b801b1c18'),
  'coverage': (208, '32d8d226fb443bcf1472360e2728022cde072d66aad96f94594d2909cdc15834'),
- 'entries': (1700, 'd67366c1afe3e4df90b8d0f18ddce66ea4c41c9cde7ac76ee472c3e6221f2dbb'),
+ 'entries': (1700, 'f80e99fc35fc648ba1ce96f976d8569c804b5897fbae5bad518e6080fc5db0a7'),
  'conflicts': (30, '0f809e3a2c4ef1857b03479230f35a342b703ccf5f8a99ef032271d150c44c09'),
  'limitations': (35, '4fe8dea8da59fb3789194955a1b22aac4453cbf0e6a4d1cc2e82d172ba77c116'),
  'dedup_candidates': (60, '0a1adbff0d7b0ae2fe42cceff9a89e5e9eb6d164044456f319cfab6c9d1b1653'),
  'exclusions': (3, '89dc768c034efe9de60bb4199c92be749ea7f1bb1405daceff0e3ca88fa5228d'),
  'pending_checks': (2, '143ba1254ce843007ed487ca7f7ef2c684912b54c0580c6bb3f7157b7bc61048'),
- 'source_snapshots': (36, '64efd7679845995f5418bdfba501a5908717932d9c26ef812ae8987cc1a1d778'),
- 'batches': (103, 'e5bc1dd4fc8e2158b382741e81a9641db4efe37612193e8289cfe38cd544614b'),
+ 'source_snapshots': (36, 'bae26c4aa31edf9ee3212a7723508241f475441863f03f69a8058264ad3b81c2'),
+ 'batches': (103, 'b13c074d4c77f623abc6c11ced7dbd83aca2e2842830f7d8252d1a8fe1eede28'),
  'source_observations': (1738, '579a7202c8ff2a4372e8248e13b83bfc0b1f60fd5ab5c6f0f52f122c5af3c166'),
  'consolidations': (2, '094423def9986b8e47457a6592e143f75d67eaa7647c2c346df93d54b983e4e0'),
- 'supporting_method_evidence': (4, '499f5f2aa6250f9300c5953df9a10da6aeeb384aa2543a7c45862cb8539a1efa'),
+ 'supporting_method_evidence': (4, 'db4e111a865957df036ada510d96050eb5c2b39ed6635c628d48a9a2717ec547'),
  'local_mapping_corrections': (4, '9a1ccc7df1e46b7e8240c3963456fcaf0177d07ad31c051db7d1d5334a1aca1d'),
  'withdrawn_local_conflicts': (1, '8b54b3a107c8f050e3c33cc2125a710a4084b1be287fdb20db8ca392c093ed05')}
 
@@ -811,7 +811,7 @@ class Rotation002Wave2ReleaseTests(unittest.TestCase):
             batch = next(b for b in self.d['profile_batches'] if b['batch_id']==f'faculty-batch-{school}-rotation-002')
             self.assertEqual(batch['selection'],EXPECTED_SCOPES[school])
             self.assertEqual(batch['limitations'][:len(EXPECTED_LIMITATIONS[school])],EXPECTED_LIMITATIONS[school])
-            self.assertEqual(batch['source_files'],[{'file':f'faculty-batch-{school}-rotation-002.json','sha256':SOURCE_PACKAGE_SHA256[school]}])
+            self.assertEqual(batch['source_files'],[{'sha256':SOURCE_PACKAGE_SHA256[school]}])
             self.assertEqual(batch['people_count'],3)
             self.assertFalse(batch['coverage_complete']); self.assertFalse(batch['fields_complete'])
             entries = [e for e in self.r['entries'][1700:1706] if e['school_id']==school]
@@ -998,7 +998,7 @@ class Rotation002Wave2ReleaseTests(unittest.TestCase):
 
 
 # Release25 exact compatibility overlay; original historical pins above remain unchanged.
-ROTATION003_APPLICATION_SHA256 = {'site/app.js': '5d4efe8a3c85cbca0125b950a70d7494e3d34a2e67240e6043347903965c8d4b', 'site/model.js': '9dbc155288c1ee0a93fd5d11cd8a7c63724dc0bde6b117a2f71d327e34be3fef', 'site/rosters.js': 'e4bb3c53da7a4ff3c00c1109651d66cc479c20dc265e7705e41213e3019a3502', 'site/index.html': '3b5f7afdd4ac96aaca402884976bccb33cb9a1d2a1ad27793cf7cdd82e5970bf', 'scripts/build.py': '1bcd28d7c0f3766a54c2cae980add674f1eb0603df8b9dd8958d1c59634b6bb7', 'scripts/build_rosters.py': '29c5dee611bfaef3fd6afd1df9480b254652c51b1c4ce1c9568d75cb799319fe'}
+ROTATION003_APPLICATION_SHA256 = {'site/app.js': '5d4efe8a3c85cbca0125b950a70d7494e3d34a2e67240e6043347903965c8d4b', 'site/model.js': '9dbc155288c1ee0a93fd5d11cd8a7c63724dc0bde6b117a2f71d327e34be3fef', 'site/rosters.js': 'e4bb3c53da7a4ff3c00c1109651d66cc479c20dc265e7705e41213e3019a3502', 'site/index.html': '3b5f7afdd4ac96aaca402884976bccb33cb9a1d2a1ad27793cf7cdd82e5970bf', 'scripts/build.py': '92b6ec03d18666503a7e890e09faffe2e3ac7be61b017ec85b291c1498addacb', 'scripts/build_rosters.py': '29c5dee611bfaef3fd6afd1df9480b254652c51b1c4ce1c9568d75cb799319fe'}
 
 
 # Exact layout-only overlay; all original source/data/application pins remain above.

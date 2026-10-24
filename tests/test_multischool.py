@@ -74,7 +74,7 @@ class MultiSchoolTests(unittest.TestCase):
   expected={
    'campuses':'85c2067edcd0bd8727fbd4dd1ec93c9c27bd45c30e209691164c328c06fbb6cd',
    'org_units':'a08b297daa383fd9c5409bb828e8bb3b3cb95187d0933ac0677d56d5dcf428ca',
-   'people':'026216f1fcdf3efe2df48ccfd7b6135cab6ea16f2fc22e16c8a2ba0627967667',
+   'people':'808e68b9dbf13375d7faa1d7ac899fc9596822c30e7419c9cd9c26cbfc158954',
    'pending_people':'89a71e4a33abc590a5ba085c88dd3a92ab067185b8c07bb16024ff812eac6d5b'
   }
   for key,digest in expected.items():

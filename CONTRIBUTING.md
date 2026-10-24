@@ -6,6 +6,7 @@
 - [浏览网站](https://aikyolin.github.io/-cn-985-academic-amatlas/)
 - [可直接复制给 AI 的中文提示词](docs/ai-contributor-prompt.md)
 - [贡献者记录](CONTRIBUTORS.md)
+- [公开来源元数据规范](docs/public-source-metadata.md)
 
 ## 先选小范围，再开始
 
@@ -66,6 +67,7 @@
 ```sh
 python -m pip install -r requirements-dev.txt
 python scripts/build.py
+python scripts/public_metadata.py --phase final
 npm test
 python -m unittest discover -s tests -v
 python scripts/validate_queue.py progress/work-queue.json --check-artifacts

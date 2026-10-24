@@ -36,10 +36,10 @@ PENDING_IDS = ('scu-lianggemeng', 'sysu-gulinyan')
 BASELINE_PREFIXES = {'limitations': (6, 'a49996988d143a02303ec539cb493667cdc9b28a287271ae141f6cfd7b95021a'),
  'campuses': (4, 'a29d9956fbbc284b9cdafc640ac9057dd4512c2181d89780a92a6a8bf01e6505'),
  'org_units': (199, '1dd61057cd7639a1d9a41e124bdc2fe65f14a67d7cac2add29a9abe6728293da'),
- 'people': (499, '27b748e51208f54c16aabef7766a6acc52d692829d3fc9d8369dc972a74defff'),
- 'profile_batches': (117, 'b458413e46b41cd4976a84fb0de1c3f8e95ff72f7def90bf1d8eca64f6d02271'),
+ 'people': (499, '666d83e6cb01ebd028d9c58b32f6f0431009010e4f8fe225fad8c6a98ee5bd90'),
+ 'profile_batches': (117, '22b98f6ae34f6b77c3d7ab522e1728db72454f37fd63dd60105a9a9db35cb521'),
  'pending_people': (80, '3bb9f8a8eae95f1d35881fc383e02a84ce212bca04faee4267cdec31b87f0dfc'),
- 'normalization_evidence': (10, '67b692915a7a76751efc68cd1d5216d962cce2dcf97dd8f93c5a44afb641bb37'),
+ 'normalization_evidence': (10, '27f4a79ae5bcd7666015cfe5829c2dcd56b3a8e3c0452a678d7e1aa5f1b9421a'),
  'institutions': (39, '8234ea78331d931b8a54c5f40d4427a7844e7fcd621d0832a69e5f2df1b41848')}
 
 BASELINE_UNCHANGED = {'schema_version': '5a4747fcdafec66d8d8812022e3b7d2666d886ec0e0ee7926ec8c50db40f29d5',
@@ -48,17 +48,17 @@ BASELINE_UNCHANGED = {'schema_version': '5a4747fcdafec66d8d8812022e3b7d2666d886e
 
 BASELINE_ROSTER_PREFIXES = {'summary': (124, '0668ff0260e3f83565f42cea57e4eaca8b3d3eaafd9272cd7cf5a20e898b1519'),
  'coverage': (195, '4f91046bc35f91e70c45395d22199ae398e310e7d6cb9d12279d3d9abea1b40c'),
- 'entries': (1661, '3916d82ba4cd1e80d77c188b30f8e4cdcacf5820a75975ff0180225ea4a69d5e'),
+ 'entries': (1661, '56b58e5ece330bffb71d3e0669ae619a8285e790bbb17d3ece2f3630baddec4d'),
  'conflicts': (30, '0f809e3a2c4ef1857b03479230f35a342b703ccf5f8a99ef032271d150c44c09'),
  'limitations': (35, '4fe8dea8da59fb3789194955a1b22aac4453cbf0e6a4d1cc2e82d172ba77c116'),
  'dedup_candidates': (60, '0a1adbff0d7b0ae2fe42cceff9a89e5e9eb6d164044456f319cfab6c9d1b1653'),
  'exclusions': (3, '89dc768c034efe9de60bb4199c92be749ea7f1bb1405daceff0e3ca88fa5228d'),
  'pending_checks': (2, '143ba1254ce843007ed487ca7f7ef2c684912b54c0580c6bb3f7157b7bc61048'),
- 'source_snapshots': (36, '64efd7679845995f5418bdfba501a5908717932d9c26ef812ae8987cc1a1d778'),
- 'batches': (90, 'ed60b5a97fe088377a229ef187714be5b513861e5c43340f27fe9b33706fe70d'),
+ 'source_snapshots': (36, 'bae26c4aa31edf9ee3212a7723508241f475441863f03f69a8058264ad3b81c2'),
+ 'batches': (90, '2ab9f28eee7f0c6b03c36a84db9693f3c3fc7a66c58b65f1ce5b879675e0c45f'),
  'source_observations': (1699, '25b6b3b0ed54b3364812dd1126533e568a19ebd33f7ba7be5a1dd52a443934a1'),
  'consolidations': (2, '094423def9986b8e47457a6592e143f75d67eaa7647c2c346df93d54b983e4e0'),
- 'supporting_method_evidence': (4, '499f5f2aa6250f9300c5953df9a10da6aeeb384aa2543a7c45862cb8539a1efa'),
+ 'supporting_method_evidence': (4, 'db4e111a865957df036ada510d96050eb5c2b39ed6635c628d48a9a2717ec547'),
  'local_mapping_corrections': (4, '9a1ccc7df1e46b7e8240c3963456fcaf0177d07ad31c051db7d1d5334a1aca1d'),
  'withdrawn_local_conflicts': (1, '8b54b3a107c8f050e3c33cc2125a710a4084b1be287fdb20db8ca392c093ed05')}
 

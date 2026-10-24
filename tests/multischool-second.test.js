@@ -36,24 +36,24 @@ const counts=rows=>fields.map(k=>rows.reduce((n,p)=>n+(p[k]||[]).length,0));
 const canonical=v=>Array.isArray(v)?v.map(canonical):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,canonical(v[k])])):v;
 const digest=v=>createHash('sha256').update(JSON.stringify(canonical(v))).digest('hex');
 const SOURCES=[
-  ['faculty-batch-zju-ic-002','faculty-batch-zju-ic-002.json','1301a2cad0a85d7eee64fb0494b433edb461f774cc94229e9a3c9e8d47ea3ba4','cd04dd4c290230e1022ad0f162a4ad9b6902c103ff29a7fbb70ba2f49a9fd558'],
-  ['faculty-batch-zju-ic-003','faculty-batch-zju-ic-003.json','23f7334f8960f1e9f44f8e7d44fa96f4558fb3ec1edcf3285cd50284e5b1edbc','0da4da3715ccdabd9bffc324bcc5fcb782b053fb3497acb4babeba132c7357a2'],
-  ['faculty-batch-sjtu-ic-002','faculty-batch-sjtu-ic-002.json','013edd8ad089169921bd7ccec195e8adc94f7f29420c74885d1ae4a652f848e0','e3d9fe283c37be7a9cc87740013fe7e15d218b509c62857d22ab72255fd91ef9'],
-  ['faculty-batch-tsinghua-ee-002','faculty-batch-tsinghua-ee-002.json','1af9dec6300ba4490c6a20d527360c97998418bbb2837eb422a1a1405071fe1f','779dcf18971d701d515abfc01bb1741727bb8b346b682d8c0a579d434ac3d08c'],
-  ['pku-ic-002','faculty-batch-pku-ic-002.json','c13d0057441893604ea10717651c356af6ac469950b3ebc9197a3d3e0d1b10ea','e91917e533da5912e39f0a4205efb5764661a18fd62c2771ac8c601490cd453b'],
-  [UPDATE,'faculty-update-zju-chengran-001.json','408cd959c8cde6b3ef88f89c56a5eb5c269bb71061b7efab15ae887e6ca0ec10','baf2ac64880e711a139f25b58f76a5235bbab0118f1bf877fd661290f9a3c25c']
+  ['faculty-batch-zju-ic-002','1301a2cad0a85d7eee64fb0494b433edb461f774cc94229e9a3c9e8d47ea3ba4','cd04dd4c290230e1022ad0f162a4ad9b6902c103ff29a7fbb70ba2f49a9fd558'],
+  ['faculty-batch-zju-ic-003','23f7334f8960f1e9f44f8e7d44fa96f4558fb3ec1edcf3285cd50284e5b1edbc','0da4da3715ccdabd9bffc324bcc5fcb782b053fb3497acb4babeba132c7357a2'],
+  ['faculty-batch-sjtu-ic-002','013edd8ad089169921bd7ccec195e8adc94f7f29420c74885d1ae4a652f848e0','e3d9fe283c37be7a9cc87740013fe7e15d218b509c62857d22ab72255fd91ef9'],
+  ['faculty-batch-tsinghua-ee-002','1af9dec6300ba4490c6a20d527360c97998418bbb2837eb422a1a1405071fe1f','779dcf18971d701d515abfc01bb1741727bb8b346b682d8c0a579d434ac3d08c'],
+  ['pku-ic-002','c13d0057441893604ea10717651c356af6ac469950b3ebc9197a3d3e0d1b10ea','e91917e533da5912e39f0a4205efb5764661a18fd62c2771ac8c601490cd453b'],
+  [UPDATE,'408cd959c8cde6b3ef88f89c56a5eb5c269bb71061b7efab15ae887e6ca0ec10','baf2ac64880e711a139f25b58f76a5235bbab0118f1bf877fd661290f9a3c25c']
 ];
 
 test('second release retains all six exact audited source and independent-review hashes',()=>{
   assert.equal(progress.source_references.length,6);
   assert.equal(progress.baseline_commit,'b0f45a454a70f33bd92fc206e4cba3bb96b7896d');
   assert.equal(progress.coverage_complete,false);assert.equal(progress.fields_complete,false);
-  for(const [batch,file,sha,review] of SOURCES){
-    const ref=progress.source_references.find(r=>r.file===file);assert(ref,file);
+  for(const [batch,sha,review] of SOURCES){
+    const refs=progress.source_references.filter(r=>r.sha256===sha);assert.equal(refs.length,1,batch);const ref=refs[0];
     assert.equal(ref.sha256,sha);assert.equal(ref.independent_review_sha256,review);
-    assert.equal(ref.independent_review_file,file.replace('.json','-independent-review.json'));
+    assert.deepEqual(ref,{sha256:sha,independent_review_sha256:review});
     const record=db.profile_batches.find(b=>b.batch_id===batch);assert(record,batch);
-    assert(record.source_files.some(s=>s.file===file&&s.sha256===sha));
+    assert.deepEqual(record.source_files,[{sha256:sha}]);
     assert.equal(record.complete_profiles,0);assert.equal(record.coverage_complete,false);assert.equal(record.fields_complete,false);
   }
 });

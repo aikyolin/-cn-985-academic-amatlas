@@ -45,13 +45,13 @@ test('third release keeps six immutable source and independent-review hashes and
   assert.equal(progress.baseline_commit,'1fb625112ac7031b88f8f3e0c30ffacb3ead7342');
   assert.equal(progress.source_references.length,6);assert.equal(progress.coverage_complete,false);assert.equal(progress.fields_complete,false);
   for(const [batch,sha,review] of SOURCES){
-    const file=batch+'.json',ref=progress.source_references.find(s=>s.file===file);assert(ref,file);
-    assert.equal(ref.sha256,sha);assert.equal(ref.independent_review_sha256,review);assert.equal(ref.independent_review_file,batch+'-independent-review.json');
+    const refs=progress.source_references.filter(s=>s.sha256===sha);assert.equal(refs.length,1,batch);const ref=refs[0];
+    assert.equal(ref.sha256,sha);assert.equal(ref.independent_review_sha256,review);assert.deepEqual(ref,{sha256:sha,independent_review_sha256:review});
     const profileBatch=db.profile_batches.find(b=>b.batch_id===batch);assert(profileBatch,batch);
-    assert(profileBatch.source_files.some(s=>s.file===file&&s.sha256===sha));
+    assert.deepEqual(profileBatch.source_files,[{sha256:sha}]);
     assert.equal(profileBatch.complete_profiles,0);assert.equal(profileBatch.coverage_complete,false);assert.equal(profileBatch.fields_complete,false);
     const rosterBatch=rosters.batches.find(b=>b.batch_id===BATCHES.get(batch)[3]);assert(rosterBatch);
-    assert(rosterBatch.source_files.some(s=>s.file===file&&s.sha256===sha));assert.equal(rosterBatch.coverage_complete,false);
+    assert.deepEqual(rosterBatch.source_files,[{sha256:sha}]);assert.equal(rosterBatch.coverage_complete,false);
   }
 });
 

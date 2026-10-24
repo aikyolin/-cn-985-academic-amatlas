@@ -17,7 +17,6 @@
       "substantive_professional_history": 37,
       "sparse_professional_history": 2,
       "name_only_or_extended_identity_unresolved": 3,
-      "coverage_report": "harbin-communication-first-pass-coverage.json",
       "coverage_report_sha256": "81bbb4feff35ddeff51cf8292e371d1a8cef37b74ded2ee5cff92cf854a333cf",
       "review_status": "all_four_batches_independently_reviewed_passed",
       "fields_complete": false
@@ -30,7 +29,6 @@
       "substantive_professional_history": 26,
       "sparse_professional_history": 1,
       "name_only_or_extended_identity_unresolved": 0,
-      "coverage_report": "harbin-electronic-engineering-first-pass-coverage.json",
       "coverage_report_sha256": "240b4574989a90d5ec1ec1d8a7d8b93e7325228930db5dd0889397bf90ca85ea",
       "review_status": "all_three_batches_independently_reviewed_passed",
       "fields_complete": false
@@ -43,7 +41,6 @@
       "substantive_professional_history": 36,
       "sparse_professional_history": 4,
       "name_only_or_extended_identity_unresolved": 1,
-      "coverage_report": "harbin-measurement-engineering-first-pass-coverage.json",
       "coverage_report_sha256": "391d9403c6fbb47babd532fd0d31261794af6e009adde601eab0adb5697351e0",
       "review_status": "all_four_batches_passed_with_documented_limits",
       "fields_complete": false
@@ -56,7 +53,6 @@
       "substantive_professional_history": 27,
       "sparse_professional_history": 5,
       "name_only_or_extended_identity_unresolved": 1,
-      "coverage_report": "harbin-information-engineering-first-pass-coverage.json",
       "coverage_report_sha256": "8e3fee8f2e9017209dde8e98dcfad384012bf2178ca6628ad096c8c90f52893f",
       "review_status": "all_three_batches_passed",
       "fields_complete": false
@@ -69,7 +65,6 @@
       "substantive_professional_history": 17,
       "sparse_professional_history": 5,
       "name_only_or_extended_identity_unresolved": 0,
-      "coverage_report": "harbin-microwave-engineering-first-pass-coverage.json",
       "coverage_report_sha256": "670bfed6ebbd0a86a57b18726e10e1a6688c1f03b355d3af1f7017ef66161821",
       "review_status": "all_two_batches_passed",
       "fields_complete": false
@@ -115,115 +110,83 @@
   "review_status": "all_16_batches_passed",
   "batches": [
     {
-      "file": "faculty-batch-harbin-eie-001.json",
       "sha256": "0a543a9402c6ccecc433645d657b0950399265d626e4bb40ee2da2c681a0c64b",
       "review_status": "approved_for_integration_with_preserved_uncertainty",
-      "review_file": "faculty-batch-harbin-eie-001-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-002.json",
       "sha256": "bcd98a8906fe61006b5894de4dd88ca6cb97522b35f3562969169d1083c87915",
       "review_status": "approved_for_integration_with_preserved_uncertainty",
-      "review_file": "faculty-batch-harbin-eie-002-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-003.json",
       "sha256": "9b0bca9b16bd8f30fc54185aa15334a43b924cdc18b8bd281e3237d3ba9af622",
       "review_status": "approved_for_integration_with_preserved_uncertainty",
-      "review_file": "faculty-batch-harbin-eie-003-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-004.json",
       "sha256": "c0ee6f823ea5c76575074ab65066a560cb78655119547389db46db9673221079",
       "review_status": "approved_for_integration_with_preserved_uncertainty",
-      "review_file": "faculty-batch-harbin-eie-004-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-second-001.json",
       "sha256": "847deaefde2c85e743d8a10e46becbd05063b35e0b5a4e6b1b762b89727eea3d",
       "review_status": "approved_for_integration_with_preserved_uncertainty",
-      "review_file": "faculty-batch-harbin-eie-second-001-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-second-002.json",
       "sha256": "c3b1a2c4cf4666557d6885f5c1ec81c5346647f345b7cbdc08c3eb393661af7e",
       "review_status": "approved_for_integration_with_preserved_uncertainty",
-      "review_file": "faculty-batch-harbin-eie-second-002-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-second-003.json",
       "sha256": "72fc88a8d20eb736a64e304bcf19df69cf07edc0ad4e2fce3d2e82382efe6fce",
       "review_status": "approved_for_integration_with_preserved_uncertainty",
-      "review_file": "faculty-batch-harbin-eie-second-003-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-third-001.json",
       "sha256": "5515f27983c92a1ad121ad8bbb6bb7cbf3dc78937d097db2213397c1f2df4b1e",
       "review_status": "approved_for_integration_with_preserved_uncertainty",
-      "review_file": "faculty-batch-harbin-eie-third-001-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-third-002.json",
       "sha256": "380716607e9d57388f900c8938094eaff50f246771f4bbf0a6b8a92c553275cb",
       "review_status": "approved_for_integration_with_preserved_uncertainty",
-      "review_file": "faculty-batch-harbin-eie-third-002-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-third-003.json",
       "sha256": "eeb3f5ed79e495db30f1865ebfd2ed2ac82bd698c9b0a9583cdf85ca1d0a3bd2",
       "review_status": "passed_with_documented_limits",
-      "review_file": "faculty-batch-harbin-eie-third-003-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-third-004.json",
       "sha256": "ec6643a492408579daa5360cdff711901ef8237ab7702b4f064a3d01af7876b5",
       "review_status": "passed_with_documented_limits",
-      "review_file": "faculty-batch-harbin-eie-third-004-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-fourth-001.json",
       "sha256": "ae299d159dccc8d28e9f8ee674cd849010316c9af286b38b001a4c54df4690db",
       "review_status": "passed_with_documented_limits",
-      "review_file": "faculty-batch-harbin-eie-fourth-001-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-fourth-002.json",
       "sha256": "40341c5238fc0110c58dee0451c042ddefb5fffd39ffb865bc92be75c3c8d1b4",
       "review_status": "passed_with_documented_limits",
-      "review_file": "faculty-batch-harbin-eie-fourth-002-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-fourth-003.json",
       "sha256": "1da8945cd17162e94c35e1786ae5a4eef34a8ff5b02595d2d87826073ddf2368",
       "review_status": "passed_with_documented_limits",
-      "review_file": "faculty-batch-harbin-eie-fourth-003-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-fifth-001.json",
       "sha256": "30dc235bbd5652d7b92c241f941948c351a5b1f9bc69e48b40f35a7187085bd0",
       "review_status": "passed_with_documented_limits",
-      "review_file": "faculty-batch-harbin-eie-fifth-001-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     },
     {
-      "file": "faculty-batch-harbin-eie-fifth-002.json",
       "sha256": "3f6d2a733ab74e85d9ada5d13a1e89707f4da3bac0ad49fcb7e414bce4284c4e",
       "review_status": "passed_with_documented_limits",
-      "review_file": "faculty-batch-harbin-eie-fifth-002-independent-review.json",
       "normalized_review_status": "passed_with_documented_limits"
     }
   ],

@@ -16,7 +16,6 @@
       "roster_category": "2026年招收博士研究生人员名单",
       "listed_role": null,
       "reason": "native body 404",
-      "web_reference": "turn2232view2",
       "status": "held_not_integrated",
       "retry_attempted": false,
       "replacement_selected": false
@@ -31,7 +30,6 @@
       "roster_category": "2026年招收博士研究生人员名单",
       "listed_role": null,
       "reason": "native body timeout",
-      "web_reference": "turn2232view3",
       "status": "held_not_integrated",
       "retry_attempted": false,
       "replacement_selected": false
@@ -149,13 +147,9 @@
   },
   "source_references": [
     {
-      "file": "faculty-batch-sdu-rotation-003.json",
       "sha256": "9319a041c8a044c62f6aff4cf7472975386b174d4f686d5bac200783349491c5",
-      "scope_file": "faculty-batch-sdu-rotation-003-scope.json",
       "scope_sha256": "e882e4b5829ff2ab9b387f070359ce1fe3e501db0518b2d7b2a9899d7e02dad5",
-      "qa_file": "faculty-batch-sdu-rotation-003-qa.json",
       "qa_sha256": "c056f3aa71c927de6574722051c54e6ea5e863eee4f35841e6f2e6e8b2a06d23",
-      "independent_review_file": "faculty-batch-sdu-rotation-003-independent-review.json",
       "independent_review_sha256": "49f2c9c15810e9f6b11503f75e68ea314b0f0a36df672b4c61ceedaf93d7e6be"
     }
   ],
@@ -195,8 +189,6 @@
         "evidence_status": "official_roster_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "web_reference": "turn2230view1",
-        "evidence_file": "research-rotation003-ruc-seu-sdu/sdu-roster-minimal.json",
         "published_at": null
       },
       {
@@ -205,8 +197,6 @@
         "evidence_status": "official_roster_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "web_reference": "turn2231view2",
-        "evidence_file": "research-rotation003-ruc-seu-sdu/sdu-native-links-minimal.json",
         "published_at": null
       },
       {
@@ -215,8 +205,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "web_reference": "turn2232view4",
-        "evidence_file": "research-rotation003-ruc-seu-sdu/sdu-chenfeng-minimal.json",
         "published_at": null
       }
     ],

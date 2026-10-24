@@ -16,7 +16,6 @@
       "roster_category": "教授",
       "listed_role": null,
       "reason": "no native individual link in selected category; no identity substitution/search bypass",
-      "web_reference": null,
       "status": "held_not_integrated",
       "retry_attempted": false,
       "replacement_selected": false
@@ -134,13 +133,9 @@
   },
   "source_references": [
     {
-      "file": "faculty-batch-seu-rotation-003.json",
       "sha256": "9a18ff7144178a2307e8e2345cc312a65a7b437dd1d64e190f5ca4483c11eade",
-      "scope_file": "faculty-batch-seu-rotation-003-scope.json",
       "scope_sha256": "7d583efe19af071b176b8f3ea714c832fd8472169a52cea39160aa9bb175d540",
-      "qa_file": "faculty-batch-seu-rotation-003-qa.json",
       "qa_sha256": "4693ea944682ceba01425553e344683789a8e6108e647f497f35b6d5ca6a7ca5",
-      "independent_review_file": "faculty-batch-seu-rotation-003-independent-review.json",
       "independent_review_sha256": "0a3dcb54c3f86bbab8d65aaac4bd5060166a2f87214b587d5d4a4feddd7b8fee"
     }
   ],
@@ -180,8 +175,6 @@
         "evidence_status": "official_roster_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "web_reference": "turn2230view0",
-        "evidence_file": "research-rotation003-ruc-seu-sdu/seu-roster-minimal.json",
         "published_at": null
       },
       {
@@ -190,8 +183,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "web_reference": "turn2232view0",
-        "evidence_file": "research-rotation003-ruc-seu-sdu/seu-yangyonghong-minimal.json",
         "published_at": "2012-09-18"
       },
       {
@@ -200,8 +191,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "web_reference": "turn2232view1",
-        "evidence_file": "research-rotation003-ruc-seu-sdu/seu-jiangweizhou-minimal.json",
         "published_at": "2019-03-14"
       }
     ],

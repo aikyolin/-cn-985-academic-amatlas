@@ -17,7 +17,6 @@
     "coverage_rows": 215
   },
   "alias_contract": {
-    "file": "rotation003-wave1-display-fix-alias-report.json",
     "sha256": "2670c3750934a8df961f4731be57ec2acaf2b98f7cd857c1411c14635760bf27",
     "person_id": "cqu-chenke",
     "source_ids": [
@@ -31,7 +30,6 @@
     "no_other_canonical_changes": true
   },
   "independent_review": {
-    "file": "rotation003-wave1-display-fix-independent-report.json",
     "sha256": "5f7aa31ea34e204b7599ead7cb6f59aa7d61a12bd1e302f5488f84fb711be9f0",
     "all_profile_and_lineage_routes_compared": 1110,
     "only_html_delta": "Two exact teaching headings: 具体教学角色未披露 → 主讲.",
@@ -51,12 +49,12 @@
     "research_boundary_tests_rerun": 169,
     "independent_export_oracle_tests": 26,
     "regression_input_manifest_sha256": "e9ca9e38326fdf488bb333b03d9187e9bc158c8b58e9736957e8dbcdfcfe3778",
-    "logs": {
-      "rotation003-wave1-display-fix-full-python-tests.txt": "200e636f14d4380006b937a40e5d5a817bbba6e9db34a318a4b075561c2a5211",
-      "rotation003-wave1-display-fix-full-node-tests.txt": "f2e697f98853adb53a31caf3809ec04bbb41629860c4a24d8a4c6b8b87344298",
-      "rotation003-wave1-display-fix-research-tests.txt": "1fea1641bf89029b51478293d4869ec0771add261a617c04856450c30f5e52c9",
-      "rotation003-wave1-display-fix-export-oracle-selftest.log": "de0d314bf38201f1996b1a425e6e94cc96a11ed72cc68d7718661350bf4480c0"
-    }
+    "logs": [
+      "200e636f14d4380006b937a40e5d5a817bbba6e9db34a318a4b075561c2a5211",
+      "f2e697f98853adb53a31caf3809ec04bbb41629860c4a24d8a4c6b8b87344298",
+      "1fea1641bf89029b51478293d4869ec0771add261a617c04856450c30f5e52c9",
+      "de0d314bf38201f1996b1a425e6e94cc96a11ed72cc68d7718661350bf4480c0"
+    ]
   },
   "export_audit": {
     "file": "research/rotation003-wave1-display-fix-build-export-report.json",
@@ -94,7 +92,6 @@
     "no_new_hust_data": true
   },
   "final_actual_diff_audit": {
-    "file": "rotation003-wave1-display-fix-changed-file-review.json",
     "expected_changed_since_original_release25": 9,
     "expected_changed_since_published_release24": 39,
     "note": "Final external freeze pins this audit and candidate bytes without a self-referential hash."

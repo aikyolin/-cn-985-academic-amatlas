@@ -1,8 +1,9 @@
-// Exact hash-checked historical view; live release28 checks remain separate.
+// Exact hash-checked historical public-v1 view; live release28 checks remain separate.
 import fs from 'node:fs';
+import {publicContract} from './public-history.js';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-const CONTRACT=JSON.parse(fs.readFileSync(new URL('./fixtures/release27-history.json',import.meta.url)));
+const CONTRACT=publicContract(27,fs.readFileSync(new URL('./fixtures/release27-history.json',import.meta.url)));
 const sorted=x=>Array.isArray(x)?x.map(sorted):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,sorted(x[k])])):x;
 const hash=x=>createHash('sha256').update(JSON.stringify(sorted(x))).digest('hex');
 export function release27View(value,rel){

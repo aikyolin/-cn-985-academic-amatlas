@@ -104,13 +104,9 @@
   },
   "source_references": [
     {
-      "file": "faculty-batch-ustc-rotation-003.json",
       "sha256": "cc264ddfb2aa8ce59176accb5cee2fcdd27339dea2510656ae0341b13de49032",
-      "scope_file": "faculty-batch-ustc-rotation-003-scope.json",
       "scope_sha256": "9c4b9666bd5c7f0140e7e2730ab7a701e20b07b3c35d668670cbd147dd78e5ce",
-      "qa_file": "faculty-batch-ustc-rotation-003-qa.json",
       "qa_sha256": "4a2d785b334cea975f29651a3b8f9e344cc6bee8de422d53874b4c4bee6d6373",
-      "independent_review_file": "faculty-batch-ustc-rotation-003-independent-review.json",
       "independent_review_sha256": "d0769d51e89e50efbfd4749cc8b984368d8f894696f2b2129e80309ef7f7ae01"
     }
   ],
@@ -150,8 +146,6 @@
         "evidence_status": "official_roster_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "evidence_file": "research-rotation003-ustc/roster-minimal.json",
-        "web_reference": "turn2193view0",
         "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
       },
       {
@@ -160,8 +154,6 @@
         "evidence_status": "official_roster_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "evidence_file": "research-rotation003-ustc/roster-minimal.json",
-        "web_reference": "turn2196view0",
         "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
       },
       {
@@ -170,8 +162,6 @@
         "evidence_status": "official_roster_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "evidence_file": "research-rotation003-ustc/roster-minimal.json",
-        "web_reference": "turn2196view1",
         "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
       },
       {
@@ -180,8 +170,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "evidence_file": "research-rotation003-ustc/ustc-liujianzhong-minimal.json",
-        "web_reference": "turn2195view0",
         "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
       },
       {
@@ -190,8 +178,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "evidence_file": "research-rotation003-ustc/ustc-zhuoqingde-minimal.json",
-        "web_reference": "turn2195view1",
         "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
       },
       {
@@ -200,8 +186,6 @@
         "evidence_status": "official_public_body_read",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "evidence_file": "research-rotation003-ustc/ustc-songlei-minimal.json",
-        "web_reference": "turn2195view2",
         "access_note": "Readable official body returned by web reader; origin HTTP status not exposed. No full-text cache retained."
       },
       {
@@ -210,9 +194,7 @@
         "evidence_status": "researcher_body_read_independent_review_unavailable",
         "retrieved_at": "2026-10-24",
         "source_type": "university_official",
-        "evidence_file": "research-rotation003-ustc/songlei-publication-minimal.json",
-        "web_reference": "turn2196view2",
-        "access_note": "Researcher originally read official body at turn2196view2; independent auditor could not access the target and did not retry. Retained bibliography is held as a candidate only; not independently verified.",
+        "access_note": "Researcher originally read official body; independent auditor could not access the target and did not retry. Retained bibliography is held as a candidate only; not independently verified.",
         "independent_review_status": "not_passed_source_unavailable",
         "navigation_available": false,
         "navigation_enabled": false

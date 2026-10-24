@@ -37,13 +37,13 @@
     "previous_department_workbooks_byte_identical": 120,
     "production_schema_unchanged": true
   },
-  "independent_review_sha256": {
-    "rotation003-wave5-independent-consumer-report.json": "382acdc26501ecbf70736d724899c4005439b9d58bde4925a4d66e4666566b4b",
-    "rotation003-wave5-independent-consumer-actual-consumers.json": "2308cb3f5f1294862fc134bf392f88a591bee79233d8db55260db474503bf89a",
-    "rotation003-wave5-export-audit-report.json": "0635108a387028ef9019aef402c8db45879211f649b94433516bc70bb1ab8f81",
-    "rotation003-wave5-export-determinism-report.json": "bf16315f2ae8520360865d08f6aa6fcde8499a53155c239e7f3f3d9be0766768",
-    "recovery29-final-independent-review.json": "7b5e8cb853d136ca5aaaab04b69ca953c7fe353769ae4111bb60b989231793fb"
-  },
+  "independent_review_sha256": [
+    "382acdc26501ecbf70736d724899c4005439b9d58bde4925a4d66e4666566b4b",
+    "2308cb3f5f1294862fc134bf392f88a591bee79233d8db55260db474503bf89a",
+    "0635108a387028ef9019aef402c8db45879211f649b94433516bc70bb1ab8f81",
+    "bf16315f2ae8520360865d08f6aa6fcde8499a53155c239e7f3f3d9be0766768",
+    "7b5e8cb853d136ca5aaaab04b69ca953c7fe353769ae4111bb60b989231793fb"
+  ],
   "export_audit": {
     "cells": 200091,
     "hyperlinks": 16479,

@@ -50,10 +50,10 @@ REVIEW_SHA256 = {'cau': '513f84d2eaafbbf8a511e184df656ee160609776229952227c8a58b
 BASELINE_PREFIXES = {'limitations': (6, 'a49996988d143a02303ec539cb493667cdc9b28a287271ae141f6cfd7b95021a'),
  'campuses': (4, 'a29d9956fbbc284b9cdafc640ac9057dd4512c2181d89780a92a6a8bf01e6505'),
  'org_units': (211, 'a4129aa41b01ac29e1245c7ead39ef9b3e2a495b65febdd0a36e90f8d61a774f'),
- 'people': (524, '9bea849ee3d6819b23fdf0c8d72e8780408074f43c9b8516ad0bc2e98b54a3a9'),
- 'profile_batches': (126, 'ea067099e22ac926a99dfbb30499ecd7e389648078e16e0e95b9d47a45394bfb'),
+ 'people': (524, 'f92dfdfbb546593e86c3d98a505b4b37583c1225d8147715a037b84fb4221702'),
+ 'profile_batches': (126, '774113794dbddc96972d253066fe86705b13a5b5a94db7b53f4133ca404e06df'),
  'pending_people': (82, '1b82bd92bf6a5f404ad26a12d2b3beac4aaf903ee32ff0c243aa270d494c1d4f'),
- 'normalization_evidence': (11, 'ac5f41084864d18adfcfea4a151d88d92c1adfb9b2f33855eed4271745d82c00'),
+ 'normalization_evidence': (11, '3aa68d3ca8aab6db93a4d952f8f5a67c97f68a3cba396a8a711054c908dde104'),
  'institutions': (39, '8234ea78331d931b8a54c5f40d4427a7844e7fcd621d0832a69e5f2df1b41848')}
 
 BASELINE_UNCHANGED = {'schema_version': '5a4747fcdafec66d8d8812022e3b7d2666d886ec0e0ee7926ec8c50db40f29d5',
@@ -62,17 +62,17 @@ BASELINE_UNCHANGED = {'schema_version': '5a4747fcdafec66d8d8812022e3b7d2666d886e
 
 BASELINE_ROSTER_PREFIXES = {'summary': (133, '0078218f993ed768d0427cc1aaade579fe8efcb4a76fa1c0fb4ceac59f1650f5'),
  'coverage': (204, 'a8a23975c3bfc4bef79ea7740ca5407abb01983a70f9d5658e253af0f10b5196'),
- 'entries': (1688, '9320e105e2887190d695b7db30647eb5f84b647005ca07866494244f053486e8'),
+ 'entries': (1688, '39beae6f57ade582d6901a0f1341679fdf45dce8a5f5c6e67de7a2bab096f622'),
  'conflicts': (30, '0f809e3a2c4ef1857b03479230f35a342b703ccf5f8a99ef032271d150c44c09'),
  'limitations': (35, '4fe8dea8da59fb3789194955a1b22aac4453cbf0e6a4d1cc2e82d172ba77c116'),
  'dedup_candidates': (60, '0a1adbff0d7b0ae2fe42cceff9a89e5e9eb6d164044456f319cfab6c9d1b1653'),
  'exclusions': (3, '89dc768c034efe9de60bb4199c92be749ea7f1bb1405daceff0e3ca88fa5228d'),
  'pending_checks': (2, '143ba1254ce843007ed487ca7f7ef2c684912b54c0580c6bb3f7157b7bc61048'),
- 'source_snapshots': (36, '64efd7679845995f5418bdfba501a5908717932d9c26ef812ae8987cc1a1d778'),
- 'batches': (99, 'ea6d546b8490198c6af81cf349a50bdcbd4df6f4a5c6127cad2e76ff19bdae63'),
+ 'source_snapshots': (36, 'bae26c4aa31edf9ee3212a7723508241f475441863f03f69a8058264ad3b81c2'),
+ 'batches': (99, '60ecc0b18ddc97c543480446dd9c135c37d3ec1a7e864c5c217c72f6f46336c1'),
  'source_observations': (1726, '52cc5bb68252be6d38cfbd5f931f89bcd93cd1098d45bcc1b47609728c5f6721'),
  'consolidations': (2, '094423def9986b8e47457a6592e143f75d67eaa7647c2c346df93d54b983e4e0'),
- 'supporting_method_evidence': (4, '499f5f2aa6250f9300c5953df9a10da6aeeb384aa2543a7c45862cb8539a1efa'),
+ 'supporting_method_evidence': (4, 'db4e111a865957df036ada510d96050eb5c2b39ed6635c628d48a9a2717ec547'),
  'local_mapping_corrections': (4, '9a1ccc7df1e46b7e8240c3963456fcaf0177d07ad31c051db7d1d5334a1aca1d'),
  'withdrawn_local_conflicts': (1, '8b54b3a107c8f050e3c33cc2125a710a4084b1be287fdb20db8ca392c093ed05')}
 
@@ -820,8 +820,8 @@ class Rotation002ReleaseTests(unittest.TestCase):
         self.assertEqual([p['person_id'] for p in self.d['people'][535:541]],
                          ['nju-chengxin','nju-chenpengfei','nju-chenyang','hnu-chenzengping','hnu-chuxia','hnu-huanshuangyan'])
         self.assertEqual([(b['batch_id'], b['source_files']) for b in self.d['profile_batches'][130:132]], [
-            ('faculty-batch-nju-rotation-002', [{'file':'faculty-batch-nju-rotation-002.json','sha256':'141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471'}]),
-            ('faculty-batch-hnu-rotation-002', [{'file':'faculty-batch-hnu-rotation-002.json','sha256':'7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54'}]),
+            ('faculty-batch-nju-rotation-002', [{'sha256':'141e34961e4b39300cd05e1e32fe4de0af5676e20601153d0e1d6d8ff50fe471'}]),
+            ('faculty-batch-hnu-rotation-002', [{'sha256':'7ad107b353fa4da5a549cfbe89e14fbb3ec6500014d0c6d782abda41b5253a54'}]),
         ])
         self.assertEqual(len(self.d['pending_people']), 84)
         self.assertEqual(len(self.d['institutions']), 39)
