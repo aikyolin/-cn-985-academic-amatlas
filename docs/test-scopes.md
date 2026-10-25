@@ -50,3 +50,5 @@ JSON紧凑表示单独范围见[表示形式优化](../progress/compact-json-rep
 吉林大学十二人采用第十一份固定独立来源映射，旧十映射、历史pins/fixture/helper和compact live检查保持。已发布713前缀逐字段守恒；真实新profile/lineage、日期与职称冲突、异常DOI不链接、精确院系证据及全表/旧成员行序另有实际数据检查。规范输入继续用已审紧凑UTF8序列化，不回退pretty，也不改来源事实来满足展示。
 
 山东大学十二人采用第十二份独立固定来源映射；原十一份和全部历史pins/fixture/helper、compact live表示测试保持。725前缀及全root守恒，真实profile/lineage、原角色与历史职位范围、来源overlay、全表导出与旧成员行序继续检查；不重建隐私最小化v2已删元数据。
+
+中南大学十二人采用第十三份独立固定来源映射；原十二映射及全部旧pins/fixture/helper/compact live测试保持。737前缀及全root守恒，当前schema/metadata、安全、profile/lineage、全表导出和旧成员行序实时执行。原到期聘任、职称冲突、明确历史角色与未知现职分别保留；王淼化学与未纳入的王苗艺术不混身份。

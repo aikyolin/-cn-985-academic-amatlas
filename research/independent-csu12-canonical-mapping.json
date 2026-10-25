@@ -1,0 +1,2739 @@
+{
+  "schema_version": "independent-csu12-canonical-mapping-1",
+  "baseline_commit": "a96cf22e778d77f045604e7c5da515a2c59fde46",
+  "new_people": [
+    "csu-zhangligang",
+    "csu-daiyu",
+    "csu-yanlei",
+    "csu-wangmiao",
+    "csu-fenghui",
+    "csu-denglu",
+    "csu-yiqiao",
+    "csu-guocan",
+    "csu-wenyu",
+    "csu-yaohailin",
+    "csu-yanjiexiong",
+    "csu-fengjie"
+  ],
+  "new_org_ids": [
+    "csu-materials",
+    "csu-materials-materialscience",
+    "csu-mechanical-electrical",
+    "csu-mechanical-electronics",
+    "csu-civil",
+    "csu-chemistry",
+    "csu-chemistry-organic-polymer",
+    "csu-nursing",
+    "csu-xiangya-oral",
+    "csu-xiangya-basic-medical",
+    "csu-furong-laboratory",
+    "csu-business",
+    "csu-business-enterprise-management",
+    "csu-humanities",
+    "csu-literature-journalism"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 15,
+    "education": 41,
+    "appointments": 21,
+    "publications": 14,
+    "mentors": 9,
+    "teaching": 7,
+    "degree_true": 27,
+    "degree_false": 11,
+    "degree_unknown": 3
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "engineering-chemistry",
+      "canonical_payload_sha256": "a11a68cd0d5aba8210c113111316de928507107d55ec1125d16d14be0b275910",
+      "field_mapping_sha256": "2ea3e3b1c6a6f0682c7989c111a01bae2efced07d43df2f858afdd3c8afada02",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "nursing-medical",
+      "canonical_payload_sha256": "b39231025200a0ab18064c68452862daf5fc0e64aee2f05e8638eb8f439bf9bf",
+      "field_mapping_sha256": "4222f690246196cf9607a254af4047f63de0c09bcc5fece4ae981d6dd5a65317",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "laboratory-business-humanities",
+      "canonical_payload_sha256": "c6f4244479dd538629450a2ff327aa667ef08d55654484f58022ce1130d10e2a",
+      "field_mapping_sha256": "71ece3a985e0a1b0ac75e03f5e970519f8c1e50d4c105b0720dfe6c30aeebe9a",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "a11a68cd0d5aba8210c113111316de928507107d55ec1125d16d14be0b275910",
+      "baseline_people": 737,
+      "baseline_publication_status": "published",
+      "baseline_commit": "a96cf22e778d77f045604e7c5da515a2c59fde46",
+      "people": [
+        {
+          "person_id": "csu-zhangligang",
+          "source_candidate_sha256": "7bd79ac3239f3b1a6ebeec36ff3d97f3e583ae31d8f902b89fc383995391b38d",
+          "source_review_sha256": "e1f8886eea24682b87fc0a3aefd8baaba73e32d7232f6f6b2038726ccf21cc71",
+          "org_identity": {
+            "source_unit": "材料科学与工程学院/材料学系",
+            "canonical_org_id": "csu-materials-materialscience",
+            "source_url": "https://faculty.csu.edu.cn/zhangligang/zh_CN/index.htm"
+          },
+          "counts": {
+            "education": 3,
+            "appointments": 2,
+            "mentors": 0,
+            "publications": 2,
+            "teaching": 2
+          },
+          "visible_limits": [
+            "当前人事未知，不因官网职称/至今或名录确认实时在岗；保留明确历史经历。",
+            "阶段师从不等于已核正式论文导师；本人博导/硕导资格不构成本人导师。",
+            "授位日期与学习终点严格区分；只列已核职业样本，不代表完整履历或全部成果。",
+            "来源另列材料学系支部书记（职业职务），未补任职日期。",
+            "保留材料工程学院/材料学院/材料科学与工程学院各原标签及“料科学”原字，不推历史更名；博士专业未知。",
+            "两作品出版者未核：首篇原打开403、第二篇原详情读取错误已停止；来源发表日2026-01-01与记录发布日2026-07-23不同。"
+          ]
+        },
+        {
+          "person_id": "csu-daiyu",
+          "source_candidate_sha256": "e8cca119903ae786b27d72e6dc7bae692d6be52e55aef0f63d98321e2d6cf161",
+          "source_review_sha256": "ce4260871daf58a1ffccd99ff9d58b058734f7a3e4348d9045a59316c031319b",
+          "org_identity": {
+            "source_unit": "机电工程学院/机械电子工程系",
+            "canonical_org_id": "csu-mechanical-electronics",
+            "source_url": "https://faculty.csu.edu.cn/daiyu/zh_CN/index.htm"
+          },
+          "counts": {
+            "education": 4,
+            "appointments": 3,
+            "mentors": 0,
+            "publications": 0,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知，不因官网职称/至今或名录确认实时在岗；保留明确历史经历。",
+            "阶段师从不等于已核正式论文导师；本人博导/硕导资格不构成本人导师。",
+            "授位日期与学习终点严格区分；只列已核职业样本，不代表完整履历或全部成果。",
+            "3学位依据官网教育表具体学位及毕业标签记录为来源报告获授，未核学位证；3授位日期均未知。",
+            "目录列戴　瑜（中间为全角空格），但完整出链href未提取；论文列表共0条0/0仅此次所选书目为空，不是生涯零成果。"
+          ]
+        },
+        {
+          "person_id": "csu-yanlei",
+          "source_candidate_sha256": "9232da154e5a30e094b0653b6db7b3292071496e61455731fe0012933b5446c0",
+          "source_review_sha256": "597fd22f6602fb470da86a5cce6f92df8b87f1982f784cf0bd276a6242aae6fe",
+          "org_identity": {
+            "source_unit": "土木工程学院/桥梁工程系",
+            "canonical_org_id": "csu-civil",
+            "source_url": "https://faculty.csu.edu.cn/yanlei"
+          },
+          "counts": {
+            "education": 3,
+            "appointments": 5,
+            "mentors": 2,
+            "publications": 0,
+            "teaching": 3
+          },
+          "visible_limits": [
+            "当前人事未知，不因官网职称/至今或名录确认实时在岗；保留明确历史经历。",
+            "阶段师从不等于已核正式论文导师；本人博导/硕导资格不构成本人导师。",
+            "授位日期与学习终点严格区分；只列已核职业样本，不代表完整履历或全部成果。",
+            "同页主标题/履历列教授、团队本人卡片列副教授；二者并存，不选当前职称赢家。",
+            "桥梁工程系仅本人履历，独立名录只证土木工程学院；本科学位依据官网具体学位及毕业标签，未核学位证或授位日期。",
+            "原论文列表共0条0/0只说明此次所选书目为空，不是生涯零成果。"
+          ]
+        },
+        {
+          "person_id": "csu-wangmiao",
+          "source_candidate_sha256": "9232da154e5a30e094b0653b6db7b3292071496e61455731fe0012933b5446c0",
+          "source_review_sha256": "597fd22f6602fb470da86a5cce6f92df8b87f1982f784cf0bd276a6242aae6fe",
+          "org_identity": {
+            "source_unit": "化学化工学院/有机及高分子化学系",
+            "canonical_org_id": "csu-chemistry-organic-polymer",
+            "source_url": "https://faculty.csu.edu.cn/wangmiao12/zh_CN/index.htm"
+          },
+          "counts": {
+            "education": 2,
+            "appointments": 1,
+            "mentors": 1,
+            "publications": 0,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知，不因官网职称/至今或名录确认实时在岗；保留明确历史经历。",
+            "阶段师从不等于已核正式论文导师；本人博导/硕导资格不构成本人导师。",
+            "授位日期与学习终点严格区分；只列已核职业样本，不代表完整履历或全部成果。",
+            "本人物为化学化工学院王淼，不与艺术王苗混同。",
+            "学士2019、博士2024仅获授年份；2024-06为学习终点，不能变授位月。",
+            "2024-11仅入职；简介列特聘教授不另证该职称起任月。",
+            "主页暂无内容；专门论文列表原技术读取失败已停止，未重试/换路线；本批零选定书目不代表生涯零成果。"
+          ]
+        }
+      ],
+      "source_chains": {
+        "wave48": "accepted v2及原delta审核链均核SHA；v2只修他人作者串，戴瑜原对象等于v1。戴3学位原review接受具体学位+毕业标签为来源报告获授，非原证核验，授位日期均null。",
+        "wave74": "严教授/副教授冲突并列；王淼已停论文列表未访问。"
+      },
+      "public_field_check": "仅公开职业事实及来源语义定位/指纹；原工具定位只在私有追踪。课程层级/角色/学年逐条note可见；资格不计新增任职。",
+      "narrow_revision": {
+        "previous_payload_sha256": "af7cae4359be8d850ea0ee3a606baece99f4dd8a4cb3faca0667a6946197e0d7",
+        "field_address": "people[1].unknowns[4]",
+        "reason": "原字符串实际为U+3000而非反斜杠转义；仅在派生说明显式解释全角空格，原quote/hash不变。",
+        "reverse_exact_old_sha256": "af7cae4359be8d850ea0ee3a606baece99f4dd8a4cb3faca0667a6946197e0d7"
+      },
+      "source_review_locator_revision": {
+        "previous_payload_sha256": "9db57b4b489907be61ae3d805edc16148543fb20b32b337464e781e1a5129708",
+        "field_addresses": [
+          [
+            "people",
+            0,
+            "education",
+            2,
+            "source_locator"
+          ],
+          [
+            "people",
+            0,
+            "education",
+            2,
+            "evidence",
+            0,
+            "source_locator"
+          ],
+          [
+            "people",
+            0,
+            "education",
+            2,
+            "evidence",
+            1,
+            "source_locator"
+          ],
+          [
+            "people",
+            0,
+            "appointments",
+            1,
+            "source_locator"
+          ],
+          [
+            "people",
+            0,
+            "appointments",
+            1,
+            "evidence",
+            0,
+            "source_locator"
+          ],
+          [
+            "people",
+            0,
+            "appointments",
+            1,
+            "evidence",
+            1,
+            "source_locator"
+          ],
+          [
+            "people",
+            2,
+            "education",
+            1,
+            "source_locator"
+          ],
+          [
+            "people",
+            2,
+            "education",
+            1,
+            "evidence",
+            0,
+            "source_locator"
+          ],
+          [
+            "people",
+            2,
+            "education",
+            1,
+            "evidence",
+            1,
+            "source_locator"
+          ],
+          [
+            "people",
+            2,
+            "education",
+            1,
+            "evidence",
+            2,
+            "source_locator"
+          ],
+          [
+            "people",
+            3,
+            "education",
+            0,
+            "source_locator"
+          ],
+          [
+            "people",
+            3,
+            "education",
+            0,
+            "evidence",
+            0,
+            "source_locator"
+          ],
+          [
+            "people",
+            2,
+            "education",
+            0,
+            "note"
+          ]
+        ],
+        "reason": "语义locator不显示None占位；严本科学位维持原审核null，说明不机械用获字判定。原source_note/源hash不变。",
+        "reverse_exact_old_sha256": "9db57b4b489907be61ae3d805edc16148543fb20b32b337464e781e1a5129708"
+      },
+      "degree_evidence_reclassification": {
+        "previous_payload_sha256": "c36b0ae12ea58a4566a6b01acf4ca43c05d127af79a8edca52d8b7a6651014f5",
+        "person_id": "csu-yanlei",
+        "event_id": "csu-yanlei-bachelor",
+        "old_degree_awarded": null,
+        "new_degree_awarded": true,
+        "source_candidate_sha256": "9232da154e5a30e094b0653b6db7b3292071496e61455731fe0012933b5446c0",
+        "source_id": "csu74-yan-profile",
+        "excerpt_id": "yan-education",
+        "source_url": "https://faculty.csu.edu.cn/yanlei",
+        "evidence": "湖南大学 工学学士学位 | 大学本科毕业",
+        "basis": "具体学位与毕业组合支持来源报告获授；非学位证核验，授位年/日期均未知。",
+        "reverse_exact_old_sha256": "c36b0ae12ea58a4566a6b01acf4ca43c05d127af79a8edca52d8b7a6651014f5",
+        "changed_field_addresses": [
+          [
+            "people",
+            1,
+            "education",
+            0,
+            "note"
+          ],
+          [
+            "people",
+            1,
+            "education",
+            1,
+            "note"
+          ],
+          [
+            "people",
+            1,
+            "education",
+            2,
+            "note"
+          ],
+          [
+            "people",
+            1,
+            "unknowns",
+            3
+          ],
+          [
+            "people",
+            2,
+            "education",
+            0,
+            "degree_awarded"
+          ],
+          [
+            "people",
+            2,
+            "education",
+            0,
+            "event_kind"
+          ],
+          [
+            "people",
+            2,
+            "education",
+            0,
+            "include_in_degree_filters"
+          ],
+          [
+            "people",
+            2,
+            "education",
+            0,
+            "include_in_education_filters"
+          ],
+          [
+            "people",
+            2,
+            "education",
+            0,
+            "note"
+          ],
+          [
+            "people",
+            2,
+            "education",
+            0,
+            "source_degree_awarded"
+          ],
+          [
+            "people",
+            2,
+            "unknowns",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "schema_version": "csu12-nursing-medical-mapping-1",
+      "published_baseline_people": 737,
+      "published_baseline_commit": "a96cf22e778d77f045604e7c5da515a2c59fde46",
+      "people": [
+        "csu-fenghui",
+        "csu-denglu",
+        "csu-yiqiao",
+        "csu-guocan"
+      ],
+      "input_hashes": {
+        "csu-fenghui": {
+          "source_candidate_sha256": "4860b6735e9305d162849a19675e8190be158890bdbec37908e5f42a237e7b82",
+          "review_sha256": "79a91e889811a62d7bf39decad32781e7f746a852635cb2ce2b48ee8c044ce7e"
+        },
+        "csu-denglu": {
+          "source_candidate_sha256": "4860b6735e9305d162849a19675e8190be158890bdbec37908e5f42a237e7b82",
+          "review_sha256": "79a91e889811a62d7bf39decad32781e7f746a852635cb2ce2b48ee8c044ce7e"
+        },
+        "csu-yiqiao": {
+          "source_candidate_sha256": "30b9bc8c914a5995d8e30e97354e1cdda0bfcd97f4d20e0b4a7731eeb060727c",
+          "review_sha256": "7e8946bc7b3f2a8e25e64982a9181b3084d19d1237f7ed3ac67af35d3f70ada3"
+        },
+        "csu-guocan": {
+          "source_candidate_sha256": "30b9bc8c914a5995d8e30e97354e1cdda0bfcd97f4d20e0b4a7731eeb060727c",
+          "review_sha256": "7e8946bc7b3f2a8e25e64982a9181b3084d19d1237f7ed3ac67af35d3f70ada3"
+        }
+      },
+      "overlay_applied": [
+        {
+          "input_sha256": "30b9bc8c914a5995d8e30e97354e1cdda0bfcd97f4d20e0b4a7731eeb060727c",
+          "path": "/people/0/roster_category_observed",
+          "before": "医疗团队 > 专家介绍 > 口腔正畸科",
+          "after": "口腔正畸科",
+          "exact_hash_value_guards_pass": true
+        }
+      ],
+      "wave172_clarifications": [
+        {
+          "wave": 172,
+          "kind": "degree_label_not_award_boolean",
+          "target": "README.json limits[0] and candidate education",
+          "disposition": "TERMINOLOGY_CLARIFICATION_NO_FACT_PATCH",
+          "detail": "README“全部学位标签保持null”按本包语境指六个 degree_awarded 值为 null，不是 degree_label_as_source 文字字段为 null。保留博士/硕士/学士及毕业标签；四个访问学者事件的 degree_awarded=false，访问学者文字不作为获得学位。"
+        },
+        {
+          "wave": 172,
+          "kind": "source_role_variation_context_only",
+          "target": "冯辉 appointments[1].source_difference_note and unknowns institution_and_role_labels",
+          "disposition": "ACCEPT_PRIMARY_ROLE_WITH_SCOPE_LIMIT",
+          "detail": "被采纳的健康护理研究中心职务只有已摘录工作经历中的“主任；教授”。备注称简介另有“执行主任”，但未保留该句必要摘录；本次不独立确认或新增该另一职务，也不据此推断冲突、改职或现任。"
+        },
+        {
+          "wave": 172,
+          "kind": "privacy_regex_context",
+          "target": "local-check.json local_check_correction",
+          "disposition": "NO_PRIVACY_FINDING",
+          "detail": "“出生”“患者”等词位于不保留此类数据的说明，不是实际个人资料。研究方向、论文主题及公开作者姓名均为职业材料；检查实际候选字段和保留引文未见个人联系方式、出生、患者资料或其他敏感数据。"
+        }
+      ],
+      "source_only_review_context": "原来源独审仅当时留存事实一致性，不冒称当时工程、人事或出版外核验收；原状态与语义限定分别保留。",
+      "org_mapping": "3原源节点均无737重名，保留原ID和parentnull；源目录/站点标题确认学院归属，医院括注不推法律关系，下级部门原文保留不增行政树。",
+      "counts": {
+        "education": 17,
+        "appointments": 8,
+        "mentors": 2,
+        "publications": 5,
+        "teaching": 2
+      },
+      "semantic_limits": {
+        "csu-fenghui": [
+          "仅依据已留存必要职业摘录，保留原观察方法及时间依据；非完整履历或实时人事核验。",
+          "目的性样本非目录原序/代表性/全覆盖；现职unknown，导航及现职计数false。",
+          "博士、硕士为官网具体学位及毕业标签；学士由本人本科毕业条目与学院页同人同专业相容年段的学士标签共同支持。三项按来源报告已获学位，未核原始证书或授位日期；四次访问仅非学位活动。",
+          "本科原院校湖南省中医药大学不擅改法律名。四任职区间至今只为源陈述，不把2005教授条目重新推断晋升。",
+          "健康护理研究中心仅已摘录主任、教授可接受；原备注执行主任未留原句，不新增角色或据此判断冲突。",
+          "学术型博士生导师、学术型硕士生导师为本人资格，不是本人导师关系。学院目录归属不推医院法律父级或专任聘用。",
+          "两论文角色未明确，不凭排序推首作/通讯；原拼写、卷期格式和DOI字符串仅照录，不外核。"
+        ],
+        "csu-denglu": [
+          "仅依据已留存必要职业摘录，保留原观察方法及时间依据；非完整履历或实时人事核验。",
+          "目的性样本非目录原序/代表性/全覆盖；现职unknown，导航及现职计数false。",
+          "三段教育仅列阶段、专业和学习区间，未单列学位授予信息，授位状态未知；学习年段不作授位年。",
+          "教授、主任护师、学术型硕士生导师为原标签，历史临床教研室/手术室条目无职称不回填；学院收录不证专任聘用。",
+          "外科护理学本科课程已留，具体教学角色和本期开课未核；两篇论文通讯作者均由原文明确。",
+          "本人求学导师未披露，不从共同作者推师承；原生reader链接导航不等原HTML href或浏览器真实点击。"
+        ],
+        "csu-yiqiao": [
+          "2021年官方职业页及现可读目录不认证实时在职；目录名只消除内部空格，不声称已验证原始href。",
+          "三项获授明确，来源级授位校仅基于同句就读及获授；法律授位实体、精确授位日期未知。",
+          "2020年博士毕业单列；学习区间末年不自动当授位年或聘任起年。",
+          "卢燕勤与王松灵为硕士/博士阶段师从；正式论文导师、身份节点及导师现职未知。",
+          "仅有论文数量概述，无逐条书目，本次作品库存0不代表没有成果；未扩搜。",
+          "临床、教学、科研职责明确，未增造教授或专任教师身份；不采集临床病例或患者信息。",
+          "仅依据已留存必要职业摘录，保留原观察方法及时间依据；非完整履历或实时人事核验。",
+          "目的性样本非目录原序/代表性/全覆盖；现职unknown，导航及现职计数false。",
+          "目录仅接受已摘录口腔正畸科，原医疗团队/专家介绍上级面包屑无摘录不采用；医院与医学院括注不推法律关系。"
+        ],
+        "csu-guocan": [
+          "实时现职unknown，教授及在职只为来源自报；目录只支持学院/生物医学工程系归属。",
+          "三阶段均有具体学位及毕业标签，按官网来源报告已获学士、硕士、博士学位；未核原始证书或独立授位记录，授位日期与法律实体仍未核。",
+          "本次打开的官方正文未出现搜索索引摘要中的两位导师名，索引仅发现线索，不接受这两条师承、不换路追取。",
+          "博士生导师为本人指导资格，不是本人师承；正式论文导师仍未知。",
+          "2006.7至今工作表未列职称，不能倒推2006年起已为教授；访问为非学位分析分类。",
+          "仅采1项明确参编教材；完整作者及编者名单、外部元数据和全文未读，0不代表其他成果不存在。",
+          "页面更新时间仅占位符--，不能当近期更新时间；书目表2024年日期不是教师履历更新时间或学位时间。",
+          "仅依据已留存必要职业摘录，保留原观察方法及时间依据；非完整履历或实时人事核验。",
+          "目的性样本非目录原序/代表性/全覆盖；现职unknown，导航及现职计数false。",
+          "郭灿博士生导师是本人资格；正文未列本人导师的搜索线索不采不重访。Academic Visitor与国家留学基金委赞助为访问语境，不增导师。"
+        ]
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/csu-feng-profile/excerpts/0/quote",
+          "sha256": "b6699c8260c70e69886aca7007f1a228c9484274262811986c30607e1c5304d3"
+        },
+        {
+          "path": "/sources/csu-feng-profile/excerpts/1/quote",
+          "sha256": "4313dcb8e24a12fa93fd168aa0237cc12b28e6ad5b28c9c8f448cbfb9bc70f6f"
+        },
+        {
+          "path": "/sources/csu-feng-profile/excerpts/2/quote",
+          "sha256": "961689bb2554491fdde67c3fcc88c85a86038c721785b54a18e8236df1b735d9"
+        },
+        {
+          "path": "/sources/csu-feng-profile/excerpts/3/quote",
+          "sha256": "1995d5c6380b0e660d8892c8f74ded666b7b0b003743071374bde4a701f9908e"
+        },
+        {
+          "path": "/sources/csu-feng-profile/excerpts/4/quote",
+          "sha256": "51e0377abbb6e8b5ce1fda222acb2dfa66141dafadb3a8fe7a3ec618a97007e2"
+        },
+        {
+          "path": "/sources/csu-feng-profile/excerpts/5/quote",
+          "sha256": "e9eca74fc3f29a01509168ca3a342f925208ef5c27a20187e40787a9a70bb67d"
+        },
+        {
+          "path": "/sources/csu-feng-profile/excerpts/6/quote",
+          "sha256": "17b55765f0873b846f106a016f74773f46d5e5f633876f0cd4b47f6846062dec"
+        },
+        {
+          "path": "/sources/csu-feng-profile/excerpts/7/quote",
+          "sha256": "0df8d8e2a134018639439dc86733f33288f432a863d130d25526c2e4a6d78812"
+        },
+        {
+          "path": "/sources/csu-feng-profile/excerpts/8/quote",
+          "sha256": "f1d53afbe7613336d7673a421d03a4d3b202dbe50979041a371d56468a312e89"
+        },
+        {
+          "path": "/sources/csu-feng-profile/excerpts/9/quote",
+          "sha256": "da5c7c0112ab269911fe69fa854d6aeec204ca8b719979d4cbc818d246c3f297"
+        },
+        {
+          "path": "/sources/csu-feng-profile/excerpts/10/quote",
+          "sha256": "a33ccd98cd666ff650df4b33f88b498ae36839866ae0b77c1b7d74d8951eb3ad"
+        },
+        {
+          "path": "/sources/csu-feng-profile/excerpts/11/quote",
+          "sha256": "d808bae6b10c6fb7de82c968fd8589783703e87b96c9cf7b77611537c9e8ebdd"
+        },
+        {
+          "path": "/sources/csu-feng-college/excerpts/0/quote",
+          "sha256": "58322b64e06401880cef5e60ad55cecbe7d9906ec71010cd89f4012e7c2a6d9e"
+        },
+        {
+          "path": "/sources/csu-feng-college/excerpts/1/quote",
+          "sha256": "2df94025bae8471ab5482461972b3850678a962cb424556e5ae6107b9cfc2e65"
+        },
+        {
+          "path": "/sources/csu-feng-college/excerpts/2/quote",
+          "sha256": "2decbbe9ea02f2af117712017a2f52eea4e031b1bbf5903545c8ec1f425e42e1"
+        },
+        {
+          "path": "/sources/csu-feng-college/excerpts/3/quote",
+          "sha256": "3697357f86762ef8d853c1fc1b4d6b51f4ce0a38595dc826da2fe094800d8d92"
+        },
+        {
+          "path": "/sources/csu-feng-college/excerpts/4/quote",
+          "sha256": "4dd867ab914e93aa4ed51ee593dadcf24291c537eae317cc65386db1e885f2b1"
+        },
+        {
+          "path": "/sources/csu-deng-profile/excerpts/0/quote",
+          "sha256": "be1941faaf201fbca8826dce8974a96bc32113de5b27e2684571dd8c499d179a"
+        },
+        {
+          "path": "/sources/csu-deng-profile/excerpts/1/quote",
+          "sha256": "386e7a34dd20f1dd61ecce7d323b8871685ac06aa10a74572cd5305845a9e9a9"
+        },
+        {
+          "path": "/sources/csu-deng-profile/excerpts/2/quote",
+          "sha256": "e9011ddb4ebbe4f0c6b9e9723616bb7dd2e0309c5e989692a731c5fc6a848189"
+        },
+        {
+          "path": "/sources/csu-deng-profile/excerpts/3/quote",
+          "sha256": "605a2cfc9b448d42becd78edf74949242cdd5ab98bf9fa5d6182b4e072ba5cb9"
+        },
+        {
+          "path": "/sources/csu-deng-profile/excerpts/4/quote",
+          "sha256": "dd767154259ed4099288acd6848ba6068ccc55947c813a3d6e911923a5e5b90c"
+        },
+        {
+          "path": "/sources/csu-deng-profile/excerpts/5/quote",
+          "sha256": "c10d4ceefc83662fa85a05f3da4dfd0549323a5c08d2bb61e2b9a6245a3286c0"
+        },
+        {
+          "path": "/sources/csu-deng-profile/excerpts/6/quote",
+          "sha256": "12c98d6d71052adfb2bd81772c5026fcf901bea52ee5c4d91ce2a88487a81b06"
+        },
+        {
+          "path": "/sources/csu-deng-profile/excerpts/7/quote",
+          "sha256": "966eada368d3383fccacf758d8f9f290d3092bdf521effc930a48d7232340ad7"
+        },
+        {
+          "path": "/sources/csu-deng-profile/excerpts/8/quote",
+          "sha256": "6b79b5fa449b4bf365210df77b1bb95e19dba6cec46aa8fa53c21e4cf148af6f"
+        },
+        {
+          "path": "/sources/csu-deng-profile/excerpts/9/quote",
+          "sha256": "5fad6f7d533c4b453a10c827c2455a79eceee31adfb9dc59d9291b9bf3063b64"
+        },
+        {
+          "path": "/sources/csu-deng-profile/excerpts/10/quote",
+          "sha256": "8aa1fd852cbf4e706e3b4a552a3d8253b0d4b5ae01936a0a30fafc43103d8475"
+        },
+        {
+          "path": "/sources/csu-directory/excerpts/0/quote",
+          "sha256": "3b6427c8afd4230b1564aea186d8328a5c4cd7bf249cd569281c646d6cb45889"
+        },
+        {
+          "path": "/sources/csu-directory/excerpts/1/quote",
+          "sha256": "1ee13cde28d3c70d3703fd0f337849dac650f793e9b31861b5b45aa528025c8f"
+        },
+        {
+          "path": "/sources/csu-directory/excerpts/2/quote",
+          "sha256": "db47bc9126d6fbc5bad142b4ab98a71695a288e462c1b2f2796b02976a868ec4"
+        },
+        {
+          "path": "/sources/csu-yiqiao-profile/excerpts/0/quote",
+          "sha256": "cdd9134eec32d7c41837d9611598ff02fcb3a17587bfad66824b4013b52e215e"
+        },
+        {
+          "path": "/sources/csu-yiqiao-profile/excerpts/1/quote",
+          "sha256": "103e200df4a2a49430b63a240852657e7346c6ac2568a9a6f21b60e8f99bf538"
+        },
+        {
+          "path": "/sources/csu-yiqiao-profile/excerpts/2/quote",
+          "sha256": "fa14a339d6736c2399d56b7a31d6ded476a80e3cee7e43d613c762f0ac75fe1d"
+        },
+        {
+          "path": "/sources/csu-yiqiao-profile/excerpts/3/quote",
+          "sha256": "b22e415dad6391af29c226be7e388a6f7b79d580cd72baa5d5a7d2bcc0f17fff"
+        },
+        {
+          "path": "/sources/csu-yiqiao-profile/excerpts/4/quote",
+          "sha256": "fcfe0c767fd1bd8203c75f7245b978e0b1ad952e179ba3e3bfcded963bf9359c"
+        },
+        {
+          "path": "/sources/csu-yiqiao-profile/excerpts/5/quote",
+          "sha256": "66c0a8e0ec17fdc6de4d37aa2fc3f74d01e0a4c793d823aa3d9444b7b032da3a"
+        },
+        {
+          "path": "/sources/csu-yiqiao-profile/excerpts/6/quote",
+          "sha256": "c146fe564435862581d041f4f5befc8bfc4c18a8c3a26ce9f20745355da5d0de"
+        },
+        {
+          "path": "/sources/csu-yiqiao-profile/excerpts/7/quote",
+          "sha256": "4c3f3badd6c00d8d38b62e6e8dae2302ad2e696181aa1c5e3763fc2a11164581"
+        },
+        {
+          "path": "/sources/csu-oral-orthodontics-directory/excerpts/0/quote",
+          "sha256": "fcc67dc74ba6f6582523fd5a5d37ea2e3230630d596403877e7f3e0d39678e05"
+        },
+        {
+          "path": "/sources/csu-oral-orthodontics-directory/excerpts/1/quote",
+          "sha256": "751ba85148d7c8798bcc3e79360e68136616d29610ce217c5436c0be3dc6b77f"
+        },
+        {
+          "path": "/sources/csu-oral-orthodontics-directory/excerpts/2/quote",
+          "sha256": "0b58a441419fe643735bc7455d9631b91277e628135b68b06ec5bee399e942df"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/0/quote",
+          "sha256": "a77e56d2211350c55463b3d4e16d8d959cb6c4787bd60ff432fd25164a214411"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/1/quote",
+          "sha256": "5c6af95b55b5279418be402203774e02eddfc381bacefe56fbf4a5b16f0a4ba0"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/2/quote",
+          "sha256": "2956fc77d73612f2824743132e95d3bd9aface6b17b9762f05252e55e0fc508d"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/3/quote",
+          "sha256": "6b161c987ca20378ed320f04f0d73d5c253e4368dc4cf228f13156163f531665"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/4/quote",
+          "sha256": "1030daaa85f953615b60f207e76d5bf86675a50d91e5fc335c2b556d7597dee4"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/5/quote",
+          "sha256": "e4709b0c19c8a29f71632063e049d1892f673741e8c8b8d7335d0e418597dfe1"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/6/quote",
+          "sha256": "3cef4c3cfd3c1e6623a447d6fb61698e3723ce61fa69366f134ea9f3a636e5a9"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/7/quote",
+          "sha256": "3f0196fc919b0d02603227d02129eb9a66f4cf584c246838ee44fa3d3ff1d9ce"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/8/quote",
+          "sha256": "fb80d579b43eb2548a3d5bb92d8f71f623f49c05ec172dc3c221c10afd47d6f8"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/9/quote",
+          "sha256": "c49f5a5e665e89ab27ffb8acd2210f7d9c081cb8811bcc92b36359d4c91fb812"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/10/quote",
+          "sha256": "484e0b3b25a75c0e759f1f36549f73421813337c6a5729ca20369795af70fb27"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/11/quote",
+          "sha256": "a079dc136f30f8ac7811d05804740888d6cd291feb1eb03e2c07bbdb5c5fdbf9"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/12/quote",
+          "sha256": "16dea2e6227adbb0483e34fde617df6dd36211f85f00bd3199daaffaa4f7d63a"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/13/quote",
+          "sha256": "ba69942c3d3b2fd3159058f851275a568bdd5da586f47e758944f00003c7a669"
+        },
+        {
+          "path": "/sources/csu-guocan-profile/excerpts/14/quote",
+          "sha256": "b83adde069e146462ecef268d66068d683e47a7ff3025e38e1bf07410be67a78"
+        },
+        {
+          "path": "/sources/csu-basic-medicine-directory/excerpts/0/quote",
+          "sha256": "20ec316bc2aff489db9b559aecce7f8529e2f15d0738057f4f882e656ac15475"
+        },
+        {
+          "path": "/sources/csu-basic-medicine-directory/excerpts/1/quote",
+          "sha256": "f095a25d1277937b652421abd6ab652425ebe3ba020ce246dd72da36e02b88da"
+        },
+        {
+          "path": "/sources/csu-basic-medicine-directory/excerpts/2/quote",
+          "sha256": "8c453778eef4b4b5fb3690c35a78ef61a3fdac88284835d16ba413152f3b363c"
+        },
+        {
+          "path": "/sources/csu-basic-medicine-directory/excerpts/3/quote",
+          "sha256": "a77e56d2211350c55463b3d4e16d8d959cb6c4787bd60ff432fd25164a214411"
+        },
+        {
+          "path": "/sources/csu-basic-medicine-directory/excerpts/4/quote",
+          "sha256": "156a274742439981c75edc604e259056653de24c06f9d2d97a04e0644138b4bf"
+        },
+        {
+          "path": "/sources/csu-basic-medicine-textbooks/excerpts/0/quote",
+          "sha256": "5a51baf2856f23820136d87c309946d18fe2006e31f9484992b739de750a3b3b"
+        },
+        {
+          "path": "/sources/csu-basic-medicine-textbooks/excerpts/1/quote",
+          "sha256": "a2d5edffca421dcb50271da5cff21e319e7d04a61f31e87b604833615f52088d"
+        },
+        {
+          "path": "/sources/csu-basic-medicine-textbooks/excerpts/2/quote",
+          "sha256": "97afdcb1cdd52da7668c6344bfb86f86cf2b7ae95e21a0bb9e27c63beac8a542"
+        },
+        {
+          "path": "/sources/csu-basic-medicine-textbooks/excerpts/3/quote",
+          "sha256": "101673c9c4e3517c0dd2d8181234bd64122ea2b23b165773489e350d0bff1dcf"
+        },
+        {
+          "path": "/people/csu-fenghui/education/0/quote",
+          "sha256": "b6699c8260c70e69886aca7007f1a228c9484274262811986c30607e1c5304d3"
+        },
+        {
+          "path": "/people/csu-fenghui/education/1/quote",
+          "sha256": "4313dcb8e24a12fa93fd168aa0237cc12b28e6ad5b28c9c8f448cbfb9bc70f6f"
+        },
+        {
+          "path": "/people/csu-fenghui/education/2/quote",
+          "sha256": "961689bb2554491fdde67c3fcc88c85a86038c721785b54a18e8236df1b735d9"
+        },
+        {
+          "path": "/people/csu-fenghui/education/3/quote",
+          "sha256": "1995d5c6380b0e660d8892c8f74ded666b7b0b003743071374bde4a701f9908e"
+        },
+        {
+          "path": "/people/csu-fenghui/education/4/quote",
+          "sha256": "51e0377abbb6e8b5ce1fda222acb2dfa66141dafadb3a8fe7a3ec618a97007e2"
+        },
+        {
+          "path": "/people/csu-fenghui/education/5/quote",
+          "sha256": "e9eca74fc3f29a01509168ca3a342f925208ef5c27a20187e40787a9a70bb67d"
+        },
+        {
+          "path": "/people/csu-fenghui/education/6/quote",
+          "sha256": "17b55765f0873b846f106a016f74773f46d5e5f633876f0cd4b47f6846062dec"
+        },
+        {
+          "path": "/people/csu-fenghui/education/6/supplementary_label_provenance/quote",
+          "sha256": "58322b64e06401880cef5e60ad55cecbe7d9906ec71010cd89f4012e7c2a6d9e"
+        },
+        {
+          "path": "/people/csu-fenghui/appointments/0/quote",
+          "sha256": "0df8d8e2a134018639439dc86733f33288f432a863d130d25526c2e4a6d78812"
+        },
+        {
+          "path": "/people/csu-fenghui/appointments/1/quote",
+          "sha256": "f1d53afbe7613336d7673a421d03a4d3b202dbe50979041a371d56468a312e89"
+        },
+        {
+          "path": "/people/csu-fenghui/appointments/2/quote",
+          "sha256": "da5c7c0112ab269911fe69fa854d6aeec204ca8b719979d4cbc818d246c3f297"
+        },
+        {
+          "path": "/people/csu-fenghui/appointments/3/quote",
+          "sha256": "a33ccd98cd666ff650df4b33f88b498ae36839866ae0b77c1b7d74d8951eb3ad"
+        },
+        {
+          "path": "/people/csu-fenghui/publications/0/quote",
+          "sha256": "2df94025bae8471ab5482461972b3850678a962cb424556e5ae6107b9cfc2e65"
+        },
+        {
+          "path": "/people/csu-fenghui/publications/1/quote",
+          "sha256": "2decbbe9ea02f2af117712017a2f52eea4e031b1bbf5903545c8ec1f425e42e1"
+        },
+        {
+          "path": "/people/csu-fenghui/research_directions/0/quote",
+          "sha256": "d808bae6b10c6fb7de82c968fd8589783703e87b96c9cf7b77611537c9e8ebdd"
+        },
+        {
+          "path": "/people/csu-fenghui/field_provenance/identity/quote",
+          "sha256": "3697357f86762ef8d853c1fc1b4d6b51f4ce0a38595dc826da2fe094800d8d92"
+        },
+        {
+          "path": "/people/csu-fenghui/field_provenance/source_reported_roles/quote",
+          "sha256": "4dd867ab914e93aa4ed51ee593dadcf24291c537eae317cc65386db1e885f2b1"
+        },
+        {
+          "path": "/people/csu-fenghui/field_provenance/directory_person_listing/quote",
+          "sha256": "3b6427c8afd4230b1564aea186d8328a5c4cd7bf249cd569281c646d6cb45889"
+        },
+        {
+          "path": "/people/csu-fenghui/field_provenance/directory_category/quote",
+          "sha256": "1ee13cde28d3c70d3703fd0f337849dac650f793e9b31861b5b45aa528025c8f"
+        },
+        {
+          "path": "/people/csu-fenghui/education/csu-fenghui-education-1/quote",
+          "sha256": "b6699c8260c70e69886aca7007f1a228c9484274262811986c30607e1c5304d3"
+        },
+        {
+          "path": "/people/csu-fenghui/education/csu-fenghui-education-2/quote",
+          "sha256": "4313dcb8e24a12fa93fd168aa0237cc12b28e6ad5b28c9c8f448cbfb9bc70f6f"
+        },
+        {
+          "path": "/people/csu-fenghui/education/csu-fenghui-education-3/quote",
+          "sha256": "961689bb2554491fdde67c3fcc88c85a86038c721785b54a18e8236df1b735d9"
+        },
+        {
+          "path": "/people/csu-fenghui/education/csu-fenghui-education-4/quote",
+          "sha256": "1995d5c6380b0e660d8892c8f74ded666b7b0b003743071374bde4a701f9908e"
+        },
+        {
+          "path": "/people/csu-fenghui/education/csu-fenghui-education-5/quote",
+          "sha256": "51e0377abbb6e8b5ce1fda222acb2dfa66141dafadb3a8fe7a3ec618a97007e2"
+        },
+        {
+          "path": "/people/csu-fenghui/education/csu-fenghui-education-6/quote",
+          "sha256": "e9eca74fc3f29a01509168ca3a342f925208ef5c27a20187e40787a9a70bb67d"
+        },
+        {
+          "path": "/people/csu-fenghui/education/csu-fenghui-education-7/quote",
+          "sha256": "17b55765f0873b846f106a016f74773f46d5e5f633876f0cd4b47f6846062dec"
+        },
+        {
+          "path": "/people/csu-fenghui/education/csu-fenghui-education-7/supplementary_label_provenance/quote",
+          "sha256": "58322b64e06401880cef5e60ad55cecbe7d9906ec71010cd89f4012e7c2a6d9e"
+        },
+        {
+          "path": "/people/csu-fenghui/appointments/0/quote",
+          "sha256": "0df8d8e2a134018639439dc86733f33288f432a863d130d25526c2e4a6d78812"
+        },
+        {
+          "path": "/people/csu-fenghui/appointments/1/quote",
+          "sha256": "f1d53afbe7613336d7673a421d03a4d3b202dbe50979041a371d56468a312e89"
+        },
+        {
+          "path": "/people/csu-fenghui/appointments/2/quote",
+          "sha256": "da5c7c0112ab269911fe69fa854d6aeec204ca8b719979d4cbc818d246c3f297"
+        },
+        {
+          "path": "/people/csu-fenghui/appointments/3/quote",
+          "sha256": "a33ccd98cd666ff650df4b33f88b498ae36839866ae0b77c1b7d74d8951eb3ad"
+        },
+        {
+          "path": "/people/csu-fenghui/publications/csu-fenghui-work-1/quote",
+          "sha256": "2df94025bae8471ab5482461972b3850678a962cb424556e5ae6107b9cfc2e65"
+        },
+        {
+          "path": "/people/csu-fenghui/publications/csu-fenghui-work-2/quote",
+          "sha256": "2decbbe9ea02f2af117712017a2f52eea4e031b1bbf5903545c8ec1f425e42e1"
+        },
+        {
+          "path": "/people/csu-denglu/education/0/quote",
+          "sha256": "be1941faaf201fbca8826dce8974a96bc32113de5b27e2684571dd8c499d179a"
+        },
+        {
+          "path": "/people/csu-denglu/education/1/quote",
+          "sha256": "386e7a34dd20f1dd61ecce7d323b8871685ac06aa10a74572cd5305845a9e9a9"
+        },
+        {
+          "path": "/people/csu-denglu/education/2/quote",
+          "sha256": "e9011ddb4ebbe4f0c6b9e9723616bb7dd2e0309c5e989692a731c5fc6a848189"
+        },
+        {
+          "path": "/people/csu-denglu/appointments/0/quote",
+          "sha256": "605a2cfc9b448d42becd78edf74949242cdd5ab98bf9fa5d6182b4e072ba5cb9"
+        },
+        {
+          "path": "/people/csu-denglu/appointments/1/quote",
+          "sha256": "dd767154259ed4099288acd6848ba6068ccc55947c813a3d6e911923a5e5b90c"
+        },
+        {
+          "path": "/people/csu-denglu/publications/0/quote",
+          "sha256": "c10d4ceefc83662fa85a05f3da4dfd0549323a5c08d2bb61e2b9a6245a3286c0"
+        },
+        {
+          "path": "/people/csu-denglu/publications/1/quote",
+          "sha256": "12c98d6d71052adfb2bd81772c5026fcf901bea52ee5c4d91ce2a88487a81b06"
+        },
+        {
+          "path": "/people/csu-denglu/research_directions/0/quote",
+          "sha256": "966eada368d3383fccacf758d8f9f290d3092bdf521effc930a48d7232340ad7"
+        },
+        {
+          "path": "/people/csu-denglu/teaching/0/quote",
+          "sha256": "6b79b5fa449b4bf365210df77b1bb95e19dba6cec46aa8fa53c21e4cf148af6f"
+        },
+        {
+          "path": "/people/csu-denglu/field_provenance/identity/quote",
+          "sha256": "5fad6f7d533c4b453a10c827c2455a79eceee31adfb9dc59d9291b9bf3063b64"
+        },
+        {
+          "path": "/people/csu-denglu/field_provenance/source_reported_roles/quote",
+          "sha256": "8aa1fd852cbf4e706e3b4a552a3d8253b0d4b5ae01936a0a30fafc43103d8475"
+        },
+        {
+          "path": "/people/csu-denglu/field_provenance/directory_person_listing/quote",
+          "sha256": "db47bc9126d6fbc5bad142b4ab98a71695a288e462c1b2f2796b02976a868ec4"
+        },
+        {
+          "path": "/people/csu-denglu/field_provenance/directory_category/quote",
+          "sha256": "1ee13cde28d3c70d3703fd0f337849dac650f793e9b31861b5b45aa528025c8f"
+        },
+        {
+          "path": "/people/csu-denglu/education/csu-denglu-education-1/quote",
+          "sha256": "be1941faaf201fbca8826dce8974a96bc32113de5b27e2684571dd8c499d179a"
+        },
+        {
+          "path": "/people/csu-denglu/education/csu-denglu-education-2/quote",
+          "sha256": "386e7a34dd20f1dd61ecce7d323b8871685ac06aa10a74572cd5305845a9e9a9"
+        },
+        {
+          "path": "/people/csu-denglu/education/csu-denglu-education-3/quote",
+          "sha256": "e9011ddb4ebbe4f0c6b9e9723616bb7dd2e0309c5e989692a731c5fc6a848189"
+        },
+        {
+          "path": "/people/csu-denglu/appointments/0/quote",
+          "sha256": "605a2cfc9b448d42becd78edf74949242cdd5ab98bf9fa5d6182b4e072ba5cb9"
+        },
+        {
+          "path": "/people/csu-denglu/appointments/1/quote",
+          "sha256": "dd767154259ed4099288acd6848ba6068ccc55947c813a3d6e911923a5e5b90c"
+        },
+        {
+          "path": "/people/csu-denglu/publications/csu-denglu-work-1/quote",
+          "sha256": "c10d4ceefc83662fa85a05f3da4dfd0549323a5c08d2bb61e2b9a6245a3286c0"
+        },
+        {
+          "path": "/people/csu-denglu/publications/csu-denglu-work-2/quote",
+          "sha256": "12c98d6d71052adfb2bd81772c5026fcf901bea52ee5c4d91ce2a88487a81b06"
+        },
+        {
+          "path": "/people/csu-denglu/teaching/quote",
+          "sha256": "6b79b5fa449b4bf365210df77b1bb95e19dba6cec46aa8fa53c21e4cf148af6f"
+        },
+        {
+          "path": "/people/csu-yiqiao/education/0/quote",
+          "sha256": "b22e415dad6391af29c226be7e388a6f7b79d580cd72baa5d5a7d2bcc0f17fff"
+        },
+        {
+          "path": "/people/csu-yiqiao/education/1/quote",
+          "sha256": "fcfe0c767fd1bd8203c75f7245b978e0b1ad952e179ba3e3bfcded963bf9359c"
+        },
+        {
+          "path": "/people/csu-yiqiao/education/2/quote",
+          "sha256": "66c0a8e0ec17fdc6de4d37aa2fc3f74d01e0a4c793d823aa3d9444b7b032da3a"
+        },
+        {
+          "path": "/people/csu-yiqiao/education/2/graduation_date_evidence/quote",
+          "sha256": "c146fe564435862581d041f4f5befc8bfc4c18a8c3a26ce9f20745355da5d0de"
+        },
+        {
+          "path": "/people/csu-yiqiao/mentor_relations/0/quote",
+          "sha256": "fcfe0c767fd1bd8203c75f7245b978e0b1ad952e179ba3e3bfcded963bf9359c"
+        },
+        {
+          "path": "/people/csu-yiqiao/mentor_relations/1/quote",
+          "sha256": "66c0a8e0ec17fdc6de4d37aa2fc3f74d01e0a4c793d823aa3d9444b7b032da3a"
+        },
+        {
+          "path": "/people/csu-yiqiao/appointments/0/quote",
+          "sha256": "c146fe564435862581d041f4f5befc8bfc4c18a8c3a26ce9f20745355da5d0de"
+        },
+        {
+          "path": "/people/csu-yiqiao/research_areas/0/quote",
+          "sha256": "4c3f3badd6c00d8d38b62e6e8dae2302ad2e696181aa1c5e3763fc2a11164581"
+        },
+        {
+          "path": "/people/csu-yiqiao/teaching/0/quote",
+          "sha256": "c146fe564435862581d041f4f5befc8bfc4c18a8c3a26ce9f20745355da5d0de"
+        },
+        {
+          "path": "/people/csu-yiqiao/identity_evidence/0/quote",
+          "sha256": "fa14a339d6736c2399d56b7a31d6ded476a80e3cee7e43d613c762f0ac75fe1d"
+        },
+        {
+          "path": "/people/csu-yiqiao/identity_evidence/1/quote",
+          "sha256": "cdd9134eec32d7c41837d9611598ff02fcb3a17587bfad66824b4013b52e215e"
+        },
+        {
+          "path": "/people/csu-yiqiao/identity_evidence/2/quote",
+          "sha256": "0b58a441419fe643735bc7455d9631b91277e628135b68b06ec5bee399e942df"
+        },
+        {
+          "path": "/people/csu-yiqiao/field_evidence/listed_title/quote",
+          "sha256": "fa14a339d6736c2399d56b7a31d6ded476a80e3cee7e43d613c762f0ac75fe1d"
+        },
+        {
+          "path": "/people/csu-yiqiao/field_evidence/school_and_department/quote",
+          "sha256": "cdd9134eec32d7c41837d9611598ff02fcb3a17587bfad66824b4013b52e215e"
+        },
+        {
+          "path": "/people/csu-yiqiao/field_evidence/department_below_school/quote",
+          "sha256": "751ba85148d7c8798bcc3e79360e68136616d29610ce217c5436c0be3dc6b77f"
+        },
+        {
+          "path": "/people/csu-yiqiao/field_evidence/teaching_scope/quote",
+          "sha256": "c146fe564435862581d041f4f5befc8bfc4c18a8c3a26ce9f20745355da5d0de"
+        },
+        {
+          "path": "/people/csu-yiqiao/field_evidence/page_date_as_displayed/quote",
+          "sha256": "103e200df4a2a49430b63a240852657e7346c6ac2568a9a6f21b60e8f99bf538"
+        },
+        {
+          "path": "/people/csu-yiqiao/education/csu-yiqiao-education-1/quote",
+          "sha256": "b22e415dad6391af29c226be7e388a6f7b79d580cd72baa5d5a7d2bcc0f17fff"
+        },
+        {
+          "path": "/people/csu-yiqiao/education/csu-yiqiao-education-2/quote",
+          "sha256": "fcfe0c767fd1bd8203c75f7245b978e0b1ad952e179ba3e3bfcded963bf9359c"
+        },
+        {
+          "path": "/people/csu-yiqiao/education/csu-yiqiao-education-3/quote",
+          "sha256": "66c0a8e0ec17fdc6de4d37aa2fc3f74d01e0a4c793d823aa3d9444b7b032da3a"
+        },
+        {
+          "path": "/people/csu-yiqiao/education/csu-yiqiao-education-3/graduation_date_evidence/quote",
+          "sha256": "c146fe564435862581d041f4f5befc8bfc4c18a8c3a26ce9f20745355da5d0de"
+        },
+        {
+          "path": "/people/csu-yiqiao/mentors/quote",
+          "sha256": "fcfe0c767fd1bd8203c75f7245b978e0b1ad952e179ba3e3bfcded963bf9359c"
+        },
+        {
+          "path": "/people/csu-yiqiao/mentors/quote",
+          "sha256": "66c0a8e0ec17fdc6de4d37aa2fc3f74d01e0a4c793d823aa3d9444b7b032da3a"
+        },
+        {
+          "path": "/people/csu-yiqiao/appointments/0/quote",
+          "sha256": "c146fe564435862581d041f4f5befc8bfc4c18a8c3a26ce9f20745355da5d0de"
+        },
+        {
+          "path": "/people/csu-yiqiao/teaching/quote",
+          "sha256": "c146fe564435862581d041f4f5befc8bfc4c18a8c3a26ce9f20745355da5d0de"
+        },
+        {
+          "path": "/people/csu-guocan/education/0/date_evidence/quote",
+          "sha256": "3cef4c3cfd3c1e6623a447d6fb61698e3723ce61fa69366f134ea9f3a636e5a9"
+        },
+        {
+          "path": "/people/csu-guocan/education/0/quote",
+          "sha256": "3f0196fc919b0d02603227d02129eb9a66f4cf584c246838ee44fa3d3ff1d9ce"
+        },
+        {
+          "path": "/people/csu-guocan/education/1/date_evidence/quote",
+          "sha256": "1030daaa85f953615b60f207e76d5bf86675a50d91e5fc335c2b556d7597dee4"
+        },
+        {
+          "path": "/people/csu-guocan/education/1/quote",
+          "sha256": "e4709b0c19c8a29f71632063e049d1892f673741e8c8b8d7335d0e418597dfe1"
+        },
+        {
+          "path": "/people/csu-guocan/education/2/date_evidence/quote",
+          "sha256": "2956fc77d73612f2824743132e95d3bd9aface6b17b9762f05252e55e0fc508d"
+        },
+        {
+          "path": "/people/csu-guocan/education/2/quote",
+          "sha256": "6b161c987ca20378ed320f04f0d73d5c253e4368dc4cf228f13156163f531665"
+        },
+        {
+          "path": "/people/csu-guocan/nondegree_training/0/date_evidence/quote",
+          "sha256": "484e0b3b25a75c0e759f1f36549f73421813337c6a5729ca20369795af70fb27"
+        },
+        {
+          "path": "/people/csu-guocan/nondegree_training/0/activity_evidence/quote",
+          "sha256": "16dea2e6227adbb0483e34fde617df6dd36211f85f00bd3199daaffaa4f7d63a"
+        },
+        {
+          "path": "/people/csu-guocan/nondegree_training/0/quote",
+          "sha256": "a079dc136f30f8ac7811d05804740888d6cd291feb1eb03e2c07bbdb5c5fdbf9"
+        },
+        {
+          "path": "/people/csu-guocan/appointments/0/date_evidence/quote",
+          "sha256": "fb80d579b43eb2548a3d5bb92d8f71f623f49c05ec172dc3c221c10afd47d6f8"
+        },
+        {
+          "path": "/people/csu-guocan/appointments/0/quote",
+          "sha256": "c49f5a5e665e89ab27ffb8acd2210f7d9c081cb8811bcc92b36359d4c91fb812"
+        },
+        {
+          "path": "/people/csu-guocan/publications/0/table_header_evidence/quote",
+          "sha256": "97afdcb1cdd52da7668c6344bfb86f86cf2b7ae95e21a0bb9e27c63beac8a542"
+        },
+        {
+          "path": "/people/csu-guocan/publications/0/quote",
+          "sha256": "101673c9c4e3517c0dd2d8181234bd64122ea2b23b165773489e350d0bff1dcf"
+        },
+        {
+          "path": "/people/csu-guocan/identity_evidence/0/quote",
+          "sha256": "a77e56d2211350c55463b3d4e16d8d959cb6c4787bd60ff432fd25164a214411"
+        },
+        {
+          "path": "/people/csu-guocan/identity_evidence/1/quote",
+          "sha256": "5c6af95b55b5279418be402203774e02eddfc381bacefe56fbf4a5b16f0a4ba0"
+        },
+        {
+          "path": "/people/csu-guocan/identity_evidence/2/quote",
+          "sha256": "a77e56d2211350c55463b3d4e16d8d959cb6c4787bd60ff432fd25164a214411"
+        },
+        {
+          "path": "/people/csu-guocan/field_evidence/name/quote",
+          "sha256": "a77e56d2211350c55463b3d4e16d8d959cb6c4787bd60ff432fd25164a214411"
+        },
+        {
+          "path": "/people/csu-guocan/field_evidence/listed_title/quote",
+          "sha256": "5c6af95b55b5279418be402203774e02eddfc381bacefe56fbf4a5b16f0a4ba0"
+        },
+        {
+          "path": "/people/csu-guocan/field_evidence/school_and_department/quote",
+          "sha256": "5c6af95b55b5279418be402203774e02eddfc381bacefe56fbf4a5b16f0a4ba0"
+        },
+        {
+          "path": "/people/csu-guocan/field_evidence/department_below_school/quote",
+          "sha256": "8c453778eef4b4b5fb3690c35a78ef61a3fdac88284835d16ba413152f3b363c"
+        },
+        {
+          "path": "/people/csu-guocan/field_evidence/listed_supervision_qualifications_as_source/quote",
+          "sha256": "5c6af95b55b5279418be402203774e02eddfc381bacefe56fbf4a5b16f0a4ba0"
+        },
+        {
+          "path": "/people/csu-guocan/field_evidence/page_last_modified_unavailable/quote",
+          "sha256": "b83adde069e146462ecef268d66068d683e47a7ff3025e38e1bf07410be67a78"
+        },
+        {
+          "path": "/people/csu-guocan/source_reported_current_status/quote",
+          "sha256": "ba69942c3d3b2fd3159058f851275a568bdd5da586f47e758944f00003c7a669"
+        },
+        {
+          "path": "/people/csu-guocan/education/csu-guocan-education-1/date_evidence/quote",
+          "sha256": "3cef4c3cfd3c1e6623a447d6fb61698e3723ce61fa69366f134ea9f3a636e5a9"
+        },
+        {
+          "path": "/people/csu-guocan/education/csu-guocan-education-1/quote",
+          "sha256": "3f0196fc919b0d02603227d02129eb9a66f4cf584c246838ee44fa3d3ff1d9ce"
+        },
+        {
+          "path": "/people/csu-guocan/education/csu-guocan-education-2/date_evidence/quote",
+          "sha256": "1030daaa85f953615b60f207e76d5bf86675a50d91e5fc335c2b556d7597dee4"
+        },
+        {
+          "path": "/people/csu-guocan/education/csu-guocan-education-2/quote",
+          "sha256": "e4709b0c19c8a29f71632063e049d1892f673741e8c8b8d7335d0e418597dfe1"
+        },
+        {
+          "path": "/people/csu-guocan/education/csu-guocan-education-3/date_evidence/quote",
+          "sha256": "2956fc77d73612f2824743132e95d3bd9aface6b17b9762f05252e55e0fc508d"
+        },
+        {
+          "path": "/people/csu-guocan/education/csu-guocan-education-3/quote",
+          "sha256": "6b161c987ca20378ed320f04f0d73d5c253e4368dc4cf228f13156163f531665"
+        },
+        {
+          "path": "/people/csu-guocan/education/csu-guocan-visiting-1/date_evidence/quote",
+          "sha256": "484e0b3b25a75c0e759f1f36549f73421813337c6a5729ca20369795af70fb27"
+        },
+        {
+          "path": "/people/csu-guocan/education/csu-guocan-visiting-1/activity_evidence/quote",
+          "sha256": "16dea2e6227adbb0483e34fde617df6dd36211f85f00bd3199daaffaa4f7d63a"
+        },
+        {
+          "path": "/people/csu-guocan/education/csu-guocan-visiting-1/quote",
+          "sha256": "a079dc136f30f8ac7811d05804740888d6cd291feb1eb03e2c07bbdb5c5fdbf9"
+        },
+        {
+          "path": "/people/csu-guocan/appointments/0/date_evidence/quote",
+          "sha256": "fb80d579b43eb2548a3d5bb92d8f71f623f49c05ec172dc3c221c10afd47d6f8"
+        },
+        {
+          "path": "/people/csu-guocan/appointments/0/quote",
+          "sha256": "c49f5a5e665e89ab27ffb8acd2210f7d9c081cb8811bcc92b36359d4c91fb812"
+        },
+        {
+          "path": "/people/csu-guocan/publications/csu-guocan-work-1/table_header_evidence/quote",
+          "sha256": "97afdcb1cdd52da7668c6344bfb86f86cf2b7ae95e21a0bb9e27c63beac8a542"
+        },
+        {
+          "path": "/people/csu-guocan/publications/csu-guocan-work-1/quote",
+          "sha256": "101673c9c4e3517c0dd2d8181234bd64122ea2b23b165773489e350d0bff1dcf"
+        },
+        {
+          "path": "/org_units/csu-nursing/identity/quote",
+          "sha256": "4dd867ab914e93aa4ed51ee593dadcf24291c537eae317cc65386db1e885f2b1"
+        },
+        {
+          "path": "/org_units/csu-xiangya-oral/quote",
+          "sha256": "cdd9134eec32d7c41837d9611598ff02fcb3a17587bfad66824b4013b52e215e"
+        },
+        {
+          "path": "/org_units/csu-xiangya-basic-medical/quote",
+          "sha256": "5c6af95b55b5279418be402203774e02eddfc381bacefe56fbf4a5b16f0a4ba0"
+        }
+      ],
+      "teaching_count_basis": {
+        "teaching_records": 2,
+        "named_courses": 1,
+        "duty_records_without_named_course": 1,
+        "excluded_from_named_course_count": "csu-yiqiao"
+      },
+      "teaching_derivations": [
+        {
+          "person_id": "csu-denglu",
+          "json_pointer": "/people/1/teaching/0",
+          "name": "外科护理学",
+          "role": "未明确，省略role字段",
+          "visible_note_basis": "原本科课程标签，不补讲授/主讲"
+        },
+        {
+          "person_id": "csu-yiqiao",
+          "json_pointer": "/people/2/teaching/0",
+          "name": "口腔教学职责（具体课程未披露）",
+          "role": "从事教学工作",
+          "visible_note_basis": "原临床、教学、科研职责，非具名课程，2020毕业后不是精确开课起点"
+        }
+      ],
+      "mapping": "教育event_id原值与导师明确阶段挂接真实event_id；原分类source_event_kind保留。所有必要引用和日期精度保留；原source_difference_note另名留存且有效限定不采执行主任。专业标签不当个人健康事实。",
+      "award_note_scope_revision": {
+        "prior_payload_sha256": "2263f14f5e4a4be7b75629138e6a50ec756a90bfe00505ac20f2ca2a900722ba",
+        "reason": "只澄清沿用原源审保守分类，不把缺少特定获授措辞作为机械证据门槛；未升格三态、未改原源字段。",
+        "changes": [
+          {
+            "path": "/people/0/education/4/note",
+            "before": "教育条目为学位/毕业标签，无明确获授句，保留null；学习终点不是授位日期。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。学习终点不是授位日期。",
+            "original_alias": {
+              "path": "/people/0/education/4/source_note"
+            }
+          },
+          {
+            "path": "/people/0/education/5/note",
+            "before": "教育条目为学位/毕业标签，无明确获授句，保留null。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。",
+            "original_alias": {
+              "path": "/people/0/education/5/source_note"
+            }
+          },
+          {
+            "path": "/people/0/education/6/note",
+            "before": "保留来源所写院校名称，不擅自修正为法律实体；本科毕业和另一官网学士标签均非获授句。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。保留来源所写院校名称，不擅自修正为法律实体；本科毕业及另一官网学士标签均照录。",
+            "original_alias": {
+              "path": "/people/0/education/6/source_note"
+            }
+          },
+          {
+            "path": "/people/0/unknowns/2",
+            "before": "原博士、硕士、学士及毕业标签保留，三degree_awarded=null，不是标签文字缺失；四访问false仅活动非学位分类。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。三项degree_awarded仍为null，四次访问false仅为非学位活动分类，不是缺失学位标签或否认本人学位。",
+            "original_alias": {
+              "path": "/people/0/source_unknowns/2"
+            }
+          },
+          {
+            "path": "/people/1/education/0/note",
+            "before": "教育背景只有学位阶段标签，未明确获/授予/取得学位，degree_awarded=null。",
+            "after": "保留原源审的保守授位未知分类；具体博士、硕士或学士标签仍保留，未单独核授位。",
+            "original_alias": {
+              "path": "/people/1/education/0/source_note"
+            }
+          },
+          {
+            "path": "/people/1/education/1/note",
+            "before": "教育背景只有学位阶段标签，未明确获/授予/取得学位，degree_awarded=null。",
+            "after": "保留原源审的保守授位未知分类；具体博士、硕士或学士标签仍保留，未单独核授位。",
+            "original_alias": {
+              "path": "/people/1/education/1/source_note"
+            }
+          },
+          {
+            "path": "/people/1/education/2/note",
+            "before": "教育背景只有学位阶段标签，未明确获/授予/取得学位，degree_awarded=null。",
+            "after": "保留原源审的保守授位未知分类；具体博士、硕士或学士标签仍保留，未单独核授位。",
+            "original_alias": {
+              "path": "/people/1/education/2/source_note"
+            }
+          },
+          {
+            "path": "/people/1/unknowns/2",
+            "before": "博士/硕士/学士为阶段标签，授位三项unknown；学习年段不作授位年。",
+            "after": "保留原源审三项保守授位未知分类；博士、硕士、学士标签照录，未单独核授位；学习年段不作授位年。",
+            "original_alias": {
+              "path": "/people/1/source_unknowns/2"
+            }
+          },
+          {
+            "path": "/people/3/education/0/note",
+            "before": "学位及毕业标签不单独当明确获授，degree_awarded=null；区间末月不是明确毕业/授位月份。实验室名称仅按页面现列保留，不推其当年法定名称。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。区间末月不是明确毕业/授位月份。实验室名称仅按页面现列保留，不推其当年法定名称。",
+            "original_alias": {
+              "path": "/people/3/education/0/source_note"
+            }
+          },
+          {
+            "path": "/people/3/education/1/note",
+            "before": "学位及毕业标签不单独当明确获授，degree_awarded=null；区间末月不是明确毕业/授位月份。实验室名称仅按页面现列保留，不推其当年法定名称。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。区间末月不是明确毕业/授位月份。实验室名称仅按页面现列保留，不推其当年法定名称。",
+            "original_alias": {
+              "path": "/people/3/education/1/source_note"
+            }
+          },
+          {
+            "path": "/people/3/education/2/note",
+            "before": "学位及毕业标签不单独当明确获授，degree_awarded=null；区间末月不是明确毕业/授位月份。实验室名称仅按页面现列保留，不推其当年法定名称。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。区间末月不是明确毕业/授位月份。实验室名称仅按页面现列保留，不推其当年法定名称。",
+            "original_alias": {
+              "path": "/people/3/education/2/source_note"
+            }
+          },
+          {
+            "path": "/people/3/unknowns/1",
+            "before": "三阶段都有学位和毕业标签，但没有明确获授句，degree_awarded=null；授位学校、日期和法律实体未知。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。三项degree_awarded仍为null；授位学校、日期和法律实体未另核。",
+            "original_alias": {
+              "path": "/people/3/source_unknowns/1"
+            }
+          }
+        ]
+      },
+      "degree_semantic_revision": {
+        "prior_payload_sha256": "8d0ed845469506ad0ec1ef7ae03c260fac24509073d61a1ebcb234b6c7193bfd",
+        "source_originals_unchanged": true,
+        "six_event_ids": [
+          "csu-fenghui-education-5",
+          "csu-fenghui-education-6",
+          "csu-fenghui-education-7",
+          "csu-guocan-education-1",
+          "csu-guocan-education-2",
+          "csu-guocan-education-3"
+        ],
+        "changes": [
+          {
+            "path": "/people/0/education/4/source_degree_awarded",
+            "existed_before": false,
+            "before": null,
+            "after": null
+          },
+          {
+            "path": "/people/0/education/4/source_degree",
+            "existed_before": false,
+            "before": null,
+            "after": "博士"
+          },
+          {
+            "path": "/people/0/education/4/degree_awarded",
+            "existed_before": true,
+            "before": null,
+            "after": true
+          },
+          {
+            "path": "/people/0/education/4/event_kind",
+            "existed_before": true,
+            "before": "education_label",
+            "after": "degree"
+          },
+          {
+            "path": "/people/0/education/4/include_in_degree_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/0/education/4/include_in_education_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/0/education/4/degree_award_status_basis",
+            "existed_before": false,
+            "before": null,
+            "after": "official_specific_degree_and_completion_labels_source_reported_not_original_document_authenticated"
+          },
+          {
+            "path": "/people/0/education/4/note",
+            "existed_before": true,
+            "before": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。学习终点不是授位日期。",
+            "after": "官网列有具体博士学位及毕业信息，按来源报告已获学位；未核原始学位证书或独立授位记录，授位日期仍未知。"
+          },
+          {
+            "path": "/people/0/education/4/degree_award_evidence",
+            "existed_before": false,
+            "before": null,
+            "after": [
+              {
+                "source_id": "csu-feng-profile",
+                "source_url": "https://faculty.csu.edu.cn/fenghui/zh_CN/index.htm",
+                "source_locator": "教育经历／博士 · 中南大学 · 2006-08至2010-04",
+                "retained_professional_text": "2006.8-2010.4 中南大学 | 护理学 | 博士学位 | 博士研究生毕业",
+                "source_excerpt_sha256": "51e0377abbb6e8b5ce1fda222acb2dfa66141dafadb3a8fe7a3ec618a97007e2"
+              }
+            ]
+          },
+          {
+            "path": "/people/0/education/5/source_degree_awarded",
+            "existed_before": false,
+            "before": null,
+            "after": null
+          },
+          {
+            "path": "/people/0/education/5/source_degree",
+            "existed_before": false,
+            "before": null,
+            "after": "硕士"
+          },
+          {
+            "path": "/people/0/education/5/degree_awarded",
+            "existed_before": true,
+            "before": null,
+            "after": true
+          },
+          {
+            "path": "/people/0/education/5/event_kind",
+            "existed_before": true,
+            "before": "education_label",
+            "after": "degree"
+          },
+          {
+            "path": "/people/0/education/5/include_in_degree_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/0/education/5/include_in_education_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/0/education/5/degree_award_status_basis",
+            "existed_before": false,
+            "before": null,
+            "after": "official_specific_degree_and_completion_labels_source_reported_not_original_document_authenticated"
+          },
+          {
+            "path": "/people/0/education/5/note",
+            "existed_before": true,
+            "before": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。",
+            "after": "官网列有具体硕士学位及毕业信息，按来源报告已获学位；未核原始学位证书或独立授位记录，授位日期仍未知。"
+          },
+          {
+            "path": "/people/0/education/5/degree_award_evidence",
+            "existed_before": false,
+            "before": null,
+            "after": [
+              {
+                "source_id": "csu-feng-profile",
+                "source_url": "https://faculty.csu.edu.cn/fenghui/zh_CN/index.htm",
+                "source_locator": "教育经历／硕士 · 中南大学 · 2002-08至2005-04",
+                "retained_professional_text": "2002.8-2005.4 中南大学 | 护理学 | 硕士学位 | 硕士研究生毕业",
+                "source_excerpt_sha256": "e9eca74fc3f29a01509168ca3a342f925208ef5c27a20187e40787a9a70bb67d"
+              }
+            ]
+          },
+          {
+            "path": "/people/0/education/6/source_degree_awarded",
+            "existed_before": false,
+            "before": null,
+            "after": null
+          },
+          {
+            "path": "/people/0/education/6/source_degree",
+            "existed_before": false,
+            "before": null,
+            "after": "本科"
+          },
+          {
+            "path": "/people/0/education/6/degree",
+            "existed_before": true,
+            "before": "本科",
+            "after": "学士"
+          },
+          {
+            "path": "/people/0/education/6/degree_awarded",
+            "existed_before": true,
+            "before": null,
+            "after": true
+          },
+          {
+            "path": "/people/0/education/6/event_kind",
+            "existed_before": true,
+            "before": "education_label",
+            "after": "degree"
+          },
+          {
+            "path": "/people/0/education/6/include_in_degree_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/0/education/6/include_in_education_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/0/education/6/degree_award_status_basis",
+            "existed_before": false,
+            "before": null,
+            "after": "official_specific_degree_and_completion_labels_source_reported_not_original_document_authenticated"
+          },
+          {
+            "path": "/people/0/education/6/note",
+            "existed_before": true,
+            "before": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。保留来源所写院校名称，不擅自修正为法律实体；本科毕业及另一官网学士标签均照录。",
+            "after": "本人主页列本科毕业，学院人物页另列学士；同名、同护理学专业及相容的1995–1998学习区间支持同一学习经历，按来源报告学士学位。原校名湖南省中医药大学照录；未核原始证书、法律授位实体或授位日期。"
+          },
+          {
+            "path": "/people/0/education/6/degree_award_evidence",
+            "existed_before": false,
+            "before": null,
+            "after": [
+              {
+                "source_id": "csu-feng-profile",
+                "source_url": "https://faculty.csu.edu.cn/fenghui/zh_CN/index.htm",
+                "source_locator": "教育经历／本科 · 湖南省中医药大学 · 1995-08至1998-06",
+                "retained_professional_text": "1995.8-1998.6 湖南省中医药大学 | 护理学 大学本科毕业",
+                "source_excerpt_sha256": "17b55765f0873b846f106a016f74773f46d5e5f633876f0cd4b47f6846062dec"
+              },
+              {
+                "source_id": "csu-feng-college",
+                "source_url": "https://xynursing.csu.edu.cn/info/1242/4318.htm",
+                "retained_professional_text": "1995年-1998年：湖南省中医药大学护理学专业 学士",
+                "source_excerpt_sha256": "58322b64e06401880cef5e60ad55cecbe7d9906ec71010cd89f4012e7c2a6d9e",
+                "source_locator": "职业资料／1995年-1998年：湖南省中医药大学护理学专业 学士"
+              }
+            ]
+          },
+          {
+            "path": "/people/3/education/0/source_degree_awarded",
+            "existed_before": false,
+            "before": null,
+            "after": null
+          },
+          {
+            "path": "/people/3/education/0/source_degree",
+            "existed_before": false,
+            "before": null,
+            "after": "学士"
+          },
+          {
+            "path": "/people/3/education/0/degree_awarded",
+            "existed_before": true,
+            "before": null,
+            "after": true
+          },
+          {
+            "path": "/people/3/education/0/event_kind",
+            "existed_before": true,
+            "before": "education_stage_with_degree_label",
+            "after": "degree"
+          },
+          {
+            "path": "/people/3/education/0/include_in_degree_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/3/education/0/include_in_education_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/3/education/0/source_degree_award_status_basis",
+            "existed_before": false,
+            "before": null,
+            "after": "degree_and_graduation_labels_without_explicit_award_sentence"
+          },
+          {
+            "path": "/people/3/education/0/degree_award_status_basis",
+            "existed_before": true,
+            "before": "degree_and_graduation_labels_without_explicit_award_sentence",
+            "after": "official_specific_degree_and_completion_labels_source_reported_not_original_document_authenticated"
+          },
+          {
+            "path": "/people/3/education/0/note",
+            "existed_before": true,
+            "before": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。区间末月不是明确毕业/授位月份。实验室名称仅按页面现列保留，不推其当年法定名称。",
+            "after": "官网列有具体学士学位及毕业信息，按来源报告已获学位；未核原始学位证书或独立授位记录，授位日期仍未知。学习区间末月不作授位月；实验室名称按页面现列保留，不推其当年法定名称。"
+          },
+          {
+            "path": "/people/3/education/0/degree_award_evidence",
+            "existed_before": false,
+            "before": null,
+            "after": [
+              {
+                "source_id": "csu-guocan-profile",
+                "source_url": "https://faculty.csu.edu.cn/guocan/zh_CN/index.htm",
+                "source_locator": "教育经历／学士 · 湖南师范大学 · 1994-09至1998-06",
+                "retained_professional_text": "湖南师范大学 | 生物教育 | 大学本科毕业 | 学士学位| 生命科学学院",
+                "source_excerpt_sha256": "3f0196fc919b0d02603227d02129eb9a66f4cf584c246838ee44fa3d3ff1d9ce"
+              }
+            ]
+          },
+          {
+            "path": "/people/3/education/1/source_degree_awarded",
+            "existed_before": false,
+            "before": null,
+            "after": null
+          },
+          {
+            "path": "/people/3/education/1/source_degree",
+            "existed_before": false,
+            "before": null,
+            "after": "硕士"
+          },
+          {
+            "path": "/people/3/education/1/degree_awarded",
+            "existed_before": true,
+            "before": null,
+            "after": true
+          },
+          {
+            "path": "/people/3/education/1/event_kind",
+            "existed_before": true,
+            "before": "education_stage_with_degree_label",
+            "after": "degree"
+          },
+          {
+            "path": "/people/3/education/1/include_in_degree_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/3/education/1/include_in_education_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/3/education/1/source_degree_award_status_basis",
+            "existed_before": false,
+            "before": null,
+            "after": "degree_and_graduation_labels_without_explicit_award_sentence"
+          },
+          {
+            "path": "/people/3/education/1/degree_award_status_basis",
+            "existed_before": true,
+            "before": "degree_and_graduation_labels_without_explicit_award_sentence",
+            "after": "official_specific_degree_and_completion_labels_source_reported_not_original_document_authenticated"
+          },
+          {
+            "path": "/people/3/education/1/note",
+            "existed_before": true,
+            "before": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。区间末月不是明确毕业/授位月份。实验室名称仅按页面现列保留，不推其当年法定名称。",
+            "after": "官网列有具体硕士学位及毕业信息，按来源报告已获学位；未核原始学位证书或独立授位记录，授位日期仍未知。学习区间末月不作授位月；实验室名称按页面现列保留，不推其当年法定名称。"
+          },
+          {
+            "path": "/people/3/education/1/degree_award_evidence",
+            "existed_before": false,
+            "before": null,
+            "after": [
+              {
+                "source_id": "csu-guocan-profile",
+                "source_url": "https://faculty.csu.edu.cn/guocan/zh_CN/index.htm",
+                "source_locator": "教育经历／硕士 · 湖南师范大学 · 2000-09至2003-06",
+                "retained_professional_text": "湖南师范大学 | 生物化学 | 硕士研究生毕业 | 硕士学位| “动物多肽药物创制”国家地方联合工程实验室",
+                "source_excerpt_sha256": "e4709b0c19c8a29f71632063e049d1892f673741e8c8b8d7335d0e418597dfe1"
+              }
+            ]
+          },
+          {
+            "path": "/people/3/education/2/source_degree_awarded",
+            "existed_before": false,
+            "before": null,
+            "after": null
+          },
+          {
+            "path": "/people/3/education/2/source_degree",
+            "existed_before": false,
+            "before": null,
+            "after": "博士"
+          },
+          {
+            "path": "/people/3/education/2/degree_awarded",
+            "existed_before": true,
+            "before": null,
+            "after": true
+          },
+          {
+            "path": "/people/3/education/2/event_kind",
+            "existed_before": true,
+            "before": "education_stage_with_degree_label",
+            "after": "degree"
+          },
+          {
+            "path": "/people/3/education/2/include_in_degree_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/3/education/2/include_in_education_filters",
+            "existed_before": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "path": "/people/3/education/2/source_degree_award_status_basis",
+            "existed_before": false,
+            "before": null,
+            "after": "degree_and_graduation_labels_without_explicit_award_sentence"
+          },
+          {
+            "path": "/people/3/education/2/degree_award_status_basis",
+            "existed_before": true,
+            "before": "degree_and_graduation_labels_without_explicit_award_sentence",
+            "after": "official_specific_degree_and_completion_labels_source_reported_not_original_document_authenticated"
+          },
+          {
+            "path": "/people/3/education/2/note",
+            "existed_before": true,
+            "before": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。区间末月不是明确毕业/授位月份。实验室名称仅按页面现列保留，不推其当年法定名称。",
+            "after": "官网列有具体博士学位及毕业信息，按来源报告已获学位；未核原始学位证书或独立授位记录，授位日期仍未知。学习区间末月不作授位月；实验室名称按页面现列保留，不推其当年法定名称。"
+          },
+          {
+            "path": "/people/3/education/2/degree_award_evidence",
+            "existed_before": false,
+            "before": null,
+            "after": [
+              {
+                "source_id": "csu-guocan-profile",
+                "source_url": "https://faculty.csu.edu.cn/guocan/zh_CN/index.htm",
+                "source_locator": "教育经历／博士 · 中山大学 · 2003-09至2006-06",
+                "retained_professional_text": "中山大学 | 肿瘤学 | 博士研究生毕业 | 博士学位| 华南恶性肿瘤防治全国重点实验室",
+                "source_excerpt_sha256": "6b161c987ca20378ed320f04f0d73d5c253e4368dc4cf228f13156163f531665"
+              }
+            ]
+          },
+          {
+            "path": "/people/1/education/0/note",
+            "existed_before": true,
+            "before": "保留原源审的保守授位未知分类；具体博士、硕士或学士标签仍保留，未单独核授位。",
+            "after": "教育经历仅列阶段、专业及学习区间，未单列学位授予信息；授位状态未知，学习结束年份不作授位年份。"
+          },
+          {
+            "path": "/people/1/education/1/note",
+            "existed_before": true,
+            "before": "保留原源审的保守授位未知分类；具体博士、硕士或学士标签仍保留，未单独核授位。",
+            "after": "教育经历仅列阶段、专业及学习区间，未单列学位授予信息；授位状态未知，学习结束年份不作授位年份。"
+          },
+          {
+            "path": "/people/1/education/2/note",
+            "existed_before": true,
+            "before": "保留原源审的保守授位未知分类；具体博士、硕士或学士标签仍保留，未单独核授位。",
+            "after": "教育经历仅列阶段、专业及学习区间，未单列学位授予信息；授位状态未知，学习结束年份不作授位年份。"
+          },
+          {
+            "path": "/people/0/unknowns/0",
+            "existed_before": true,
+            "before": "原职业摘录及观察依据保留，源阶段source-only审核不是当时工程或当前人事验收；不新增访问，不是完整履历。",
+            "after": "仅依据已留存必要职业摘录，保留原观察方法及时间依据；非完整履历或实时人事核验。"
+          },
+          {
+            "path": "/people/1/unknowns/0",
+            "existed_before": true,
+            "before": "原职业摘录及观察依据保留，源阶段source-only审核不是当时工程或当前人事验收；不新增访问，不是完整履历。",
+            "after": "仅依据已留存必要职业摘录，保留原观察方法及时间依据；非完整履历或实时人事核验。"
+          },
+          {
+            "path": "/people/2/unknowns/6",
+            "existed_before": true,
+            "before": "原职业摘录及观察依据保留，源阶段source-only审核不是当时工程或当前人事验收；不新增访问，不是完整履历。",
+            "after": "仅依据已留存必要职业摘录，保留原观察方法及时间依据；非完整履历或实时人事核验。"
+          },
+          {
+            "path": "/people/3/unknowns/7",
+            "existed_before": true,
+            "before": "原职业摘录及观察依据保留，源阶段source-only审核不是当时工程或当前人事验收；不新增访问，不是完整履历。",
+            "after": "仅依据已留存必要职业摘录，保留原观察方法及时间依据；非完整履历或实时人事核验。"
+          },
+          {
+            "path": "/people/0/unknowns/2",
+            "existed_before": true,
+            "before": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。三项degree_awarded仍为null，四次访问false仅为非学位活动分类，不是缺失学位标签或否认本人学位。",
+            "after": "博士、硕士为官网具体学位及毕业标签；学士由本人本科毕业条目与学院页同人同专业相容年段的学士标签共同支持。三项按来源报告已获学位，未核原始证书或授位日期；四次访问仅非学位活动。"
+          },
+          {
+            "path": "/people/1/unknowns/2",
+            "existed_before": true,
+            "before": "保留原源审三项保守授位未知分类；博士、硕士、学士标签照录，未单独核授位；学习年段不作授位年。",
+            "after": "三段教育仅列阶段、专业和学习区间，未单列学位授予信息，授位状态未知；学习年段不作授位年。"
+          },
+          {
+            "path": "/people/3/unknowns/1",
+            "existed_before": true,
+            "before": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。三项degree_awarded仍为null；授位学校、日期和法律实体未另核。",
+            "after": "三阶段均有具体学位及毕业标签，按官网来源报告已获学士、硕士、博士学位；未核原始证书或独立授位记录，授位日期与法律实体仍未核。"
+          }
+        ],
+        "basis": "官网明确具体学位加毕业，冯本科另有同人同专业相容年段学院页学士。来源报告级别，不等证书认证；邓仅阶段/专业保持unknown。",
+        "award_dates_unchanged_null": true,
+        "original_filter_flags_preserved": "六条source_include_in_degree_filters/source_include_in_education_filters保存原false。"
+      },
+      "degree_true_false_null": [
+        9,
+        5,
+        3
+      ]
+    },
+    {
+      "baseline_people": 737,
+      "baseline_commit": "a96cf22e778d77f045604e7c5da515a2c59fde46",
+      "people": [
+        {
+          "person_id": "csu-wenyu",
+          "source_candidate_sha256": "85ab4580c4fa1292d5eb12b6ffc89da3422386ca9f3b477e4f1d2d742c1d3d8e",
+          "source_evidence_sha256": "a69540d41544207f0827f45b0e8b7badefe85ebcf6c3f83dd17d0aae67de8d92",
+          "source_review_sha256": "ebf03880f05bbca5e939e44d7fed6ca2d34f101b79937cf1bc445071dc704139",
+          "education": 2,
+          "degree_true_false_null": [
+            2,
+            0,
+            0
+          ],
+          "mentors": 2,
+          "appointments": 1,
+          "publications": 2
+        },
+        {
+          "person_id": "csu-yaohailin",
+          "source_candidate_sha256": "ae58de55bb6a0adb448c3d250674f821e19e9eb3b8da53e32720a928f7818cf8",
+          "source_evidence_sha256": "1c586af1ade0a651c2884a5a47a25b454cb17208ec457960d4885b9599792632",
+          "source_review_sha256": "4cd56a20baec7f3d44e7981b19b75e26d21f56773c4b93aa45fea70fae3e9df3",
+          "education": 4,
+          "degree_true_false_null": [
+            3,
+            1,
+            0
+          ],
+          "mentors": 1,
+          "appointments": 1,
+          "publications": 2
+        },
+        {
+          "person_id": "csu-yanjiexiong",
+          "source_candidate_sha256": "e418a1f9323904ea83c4b5c897b4fe04c57235e6e98210e449c179f007656086",
+          "source_evidence_sha256": "b22f81bcd861e390c0d5de7b77868eab8a8a4e74301fbbcf90fbe97c341e340a",
+          "source_review_sha256": "cd0e71e090e8576889fb902be939d8cb75cbfde88fa6d45e23c73f5bc972da76",
+          "education": 5,
+          "degree_true_false_null": [
+            2,
+            3,
+            0
+          ],
+          "mentors": 1,
+          "appointments": 0,
+          "publications": 1
+        },
+        {
+          "person_id": "csu-fengjie",
+          "source_candidate_sha256": "e418a1f9323904ea83c4b5c897b4fe04c57235e6e98210e449c179f007656086",
+          "source_evidence_sha256": "b22f81bcd861e390c0d5de7b77868eab8a8a4e74301fbbcf90fbe97c341e340a",
+          "source_review_sha256": "cd0e71e090e8576889fb902be939d8cb75cbfde88fa6d45e23c73f5bc972da76",
+          "education": 1,
+          "degree_true_false_null": [
+            1,
+            0,
+            0
+          ],
+          "mentors": 0,
+          "appointments": 0,
+          "publications": 2
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/excerpts/0/text",
+          "sha256": "edc0eca4ac82c98c68874522749ee3ee00d40da18e12f0441864f370c7cb0fa4"
+        },
+        {
+          "json_pointer": "/excerpts/1/text",
+          "sha256": "9025291f651db058be653e3cef5a9c5546f5d2184dedbec9236a9f5837ba09ee"
+        },
+        {
+          "json_pointer": "/excerpts/2/text",
+          "sha256": "e3d22882575f184e1cebd5079dd850fa86fd9b176fcec8bdd79f5742e248edb1"
+        },
+        {
+          "json_pointer": "/excerpts/3/text",
+          "sha256": "f16acb22d6854253a945cdaa7a6a1f032c2132397d5513b541d04e03987cf257"
+        },
+        {
+          "json_pointer": "/excerpts/4/text",
+          "sha256": "7a8406225a70ea93fde10350f0c1fd28a85196821f621d93233ff4b2a492d5e7"
+        },
+        {
+          "json_pointer": "/excerpts/5/text",
+          "sha256": "d49584d11d9b3f51146879fd369c0ba7e38830df838999f3eeddee88fc1b1819"
+        },
+        {
+          "json_pointer": "/excerpts/0/text",
+          "sha256": "8c22959f952389e9a44c1985dfaab77146262abcc4769cb83ed2e08c1df530ff"
+        },
+        {
+          "json_pointer": "/excerpts/1/text",
+          "sha256": "3d53781591e7b59d21885fba3f52e8b2655569f87cfec1c80ea099ea570a82fb"
+        },
+        {
+          "json_pointer": "/excerpts/2/text",
+          "sha256": "3d4764604ab026c267c4648a446cc53ca0a0ba4cc29d58ae45c317f555664fbe"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "50f799295b918e0e46a2ed6da624badec3d4ee9e5d78dd526747014cc62b08f6"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/identity_evidence/0/quote",
+          "sha256": "e5ce359aae05768e0b9a08f72d89e0fce2cd36e0f10de23da670de964e5b4878"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/identity_evidence/1/quote",
+          "sha256": "50f799295b918e0e46a2ed6da624badec3d4ee9e5d78dd526747014cc62b08f6"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/identity_evidence/2/quote",
+          "sha256": "114a63c15e293529657aaca72a6f58810b4bd9cceac8e00971c255ce793a05fb"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/identity_evidence/3/quote",
+          "sha256": "f30c0bbf0b6598d36b52ee86b6b6c144aa39639a9f73cc91ac1f77f114d36caf"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/identity_evidence/4/quote",
+          "sha256": "edcfce765fe6b748d6ae9b4f866a12bc4145c29000ea030d0240db383cac0ed4"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/identity_evidence/5/quote",
+          "sha256": "951168f23b2c025c05bab22884f4fd74d43abebf8f2662c2e93afacc419dc748"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/identity_evidence/6/quote",
+          "sha256": "820bf52a7dfd272e1bec47841d4aafee39dadb371409b2668c14ec13ae1a3dec"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/education/0/award_evidence/quote",
+          "sha256": "cb76764288ad9c4db0dcd399767a7939fb4e61a8e8fd9d7188189670da1f44c0"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/education/0/quote",
+          "sha256": "707209883b6e058e3785eaa1f9abc7cdf1de48101a14a7d758d5e5ac3f8bc2f4"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/education/1/award_evidence/quote",
+          "sha256": "cb76764288ad9c4db0dcd399767a7939fb4e61a8e8fd9d7188189670da1f44c0"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/education/1/quote",
+          "sha256": "015f5f522e0ce3452f07490198fb80f6964bc81110ff84f8c6951411cca7fb53"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/education/2/award_evidence/quote",
+          "sha256": "cb76764288ad9c4db0dcd399767a7939fb4e61a8e8fd9d7188189670da1f44c0"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/education/2/quote",
+          "sha256": "c522122baa6b4c82719f8f6c67d62be164b91ed9fa17d7e574f875cbd1edf104"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/professional_training/0/quote",
+          "sha256": "bd50b9bbd21ed5048625be80beffec9c280158d69d2b497f28ffa9c0fc8ed7be"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/mentor_relations/0/quote",
+          "sha256": "e5600a1b3d09cb1caab0c3c2652ca46c52f036a854f416f0427d43d1018940d4"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/appointments/0/quote",
+          "sha256": "f30c0bbf0b6598d36b52ee86b6b6c144aa39639a9f73cc91ac1f77f114d36caf"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/research_directions/0/quote",
+          "sha256": "abd3e625f5578df4c044a25692fffd8337f71d577f5a5033edde2bac5f107519"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/research_directions/1/quote",
+          "sha256": "6c6bccf6afd8e9e63876f7bb740270e27d7e24306a3bed6e6efa427b74ce28ae"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/research_directions/2/quote",
+          "sha256": "ff9a95dd62068d4c8d570898254d42d77fefa760c1e0c44e0da4a46d41655427"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/research_directions/3/quote",
+          "sha256": "a43cc930472d6a0f7483a9f4d58baab50f28b847af3cc118fa0e5924f8bbb91b"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/publications/0/quote",
+          "sha256": "470a8e65f0d6b2577c0700bcf1ff9d8a24f4127393b9173a2786dc8607bb21d2"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/publications/1/quote",
+          "sha256": "529842cb39f0863d357935c0287c64942f4440041e2091624984100a2ee21f37"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/field_provenance/name/0/quote",
+          "sha256": "e5ce359aae05768e0b9a08f72d89e0fce2cd36e0f10de23da670de964e5b4878"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/field_provenance/listed_title/0/quote",
+          "sha256": "50f799295b918e0e46a2ed6da624badec3d4ee9e5d78dd526747014cc62b08f6"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/field_provenance/school_department/0/quote",
+          "sha256": "f30c0bbf0b6598d36b52ee86b6b6c144aa39639a9f73cc91ac1f77f114d36caf"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/field_provenance/school_department/1/quote",
+          "sha256": "114a63c15e293529657aaca72a6f58810b4bd9cceac8e00971c255ce793a05fb"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/field_provenance/school_department/2/quote",
+          "sha256": "edcfce765fe6b748d6ae9b4f866a12bc4145c29000ea030d0240db383cac0ed4"
+        },
+        {
+          "json_pointer": "/people/csu-yaohailin/field_provenance/school_department/3/quote",
+          "sha256": "951168f23b2c025c05bab22884f4fd74d43abebf8f2662c2e93afacc419dc748"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "cb76764288ad9c4db0dcd399767a7939fb4e61a8e8fd9d7188189670da1f44c0"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "707209883b6e058e3785eaa1f9abc7cdf1de48101a14a7d758d5e5ac3f8bc2f4"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "cb76764288ad9c4db0dcd399767a7939fb4e61a8e8fd9d7188189670da1f44c0"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "707209883b6e058e3785eaa1f9abc7cdf1de48101a14a7d758d5e5ac3f8bc2f4"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "cb76764288ad9c4db0dcd399767a7939fb4e61a8e8fd9d7188189670da1f44c0"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "015f5f522e0ce3452f07490198fb80f6964bc81110ff84f8c6951411cca7fb53"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "cb76764288ad9c4db0dcd399767a7939fb4e61a8e8fd9d7188189670da1f44c0"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "015f5f522e0ce3452f07490198fb80f6964bc81110ff84f8c6951411cca7fb53"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "cb76764288ad9c4db0dcd399767a7939fb4e61a8e8fd9d7188189670da1f44c0"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c522122baa6b4c82719f8f6c67d62be164b91ed9fa17d7e574f875cbd1edf104"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "cb76764288ad9c4db0dcd399767a7939fb4e61a8e8fd9d7188189670da1f44c0"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c522122baa6b4c82719f8f6c67d62be164b91ed9fa17d7e574f875cbd1edf104"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bd50b9bbd21ed5048625be80beffec9c280158d69d2b497f28ffa9c0fc8ed7be"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bd50b9bbd21ed5048625be80beffec9c280158d69d2b497f28ffa9c0fc8ed7be"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e5600a1b3d09cb1caab0c3c2652ca46c52f036a854f416f0427d43d1018940d4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e5600a1b3d09cb1caab0c3c2652ca46c52f036a854f416f0427d43d1018940d4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f30c0bbf0b6598d36b52ee86b6b6c144aa39639a9f73cc91ac1f77f114d36caf"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f30c0bbf0b6598d36b52ee86b6b6c144aa39639a9f73cc91ac1f77f114d36caf"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "470a8e65f0d6b2577c0700bcf1ff9d8a24f4127393b9173a2786dc8607bb21d2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "470a8e65f0d6b2577c0700bcf1ff9d8a24f4127393b9173a2786dc8607bb21d2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "529842cb39f0863d357935c0287c64942f4440041e2091624984100a2ee21f37"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "529842cb39f0863d357935c0287c64942f4440041e2091624984100a2ee21f37"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "e5ce359aae05768e0b9a08f72d89e0fce2cd36e0f10de23da670de964e5b4878"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "50f799295b918e0e46a2ed6da624badec3d4ee9e5d78dd526747014cc62b08f6"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "114a63c15e293529657aaca72a6f58810b4bd9cceac8e00971c255ce793a05fb"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "f30c0bbf0b6598d36b52ee86b6b6c144aa39639a9f73cc91ac1f77f114d36caf"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "cb76764288ad9c4db0dcd399767a7939fb4e61a8e8fd9d7188189670da1f44c0"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "e5600a1b3d09cb1caab0c3c2652ca46c52f036a854f416f0427d43d1018940d4"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "bd50b9bbd21ed5048625be80beffec9c280158d69d2b497f28ffa9c0fc8ed7be"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "707209883b6e058e3785eaa1f9abc7cdf1de48101a14a7d758d5e5ac3f8bc2f4"
+        },
+        {
+          "json_pointer": "/professional_excerpts/8/quote",
+          "sha256": "015f5f522e0ce3452f07490198fb80f6964bc81110ff84f8c6951411cca7fb53"
+        },
+        {
+          "json_pointer": "/professional_excerpts/9/quote",
+          "sha256": "c522122baa6b4c82719f8f6c67d62be164b91ed9fa17d7e574f875cbd1edf104"
+        },
+        {
+          "json_pointer": "/professional_excerpts/10/quote",
+          "sha256": "abd3e625f5578df4c044a25692fffd8337f71d577f5a5033edde2bac5f107519"
+        },
+        {
+          "json_pointer": "/professional_excerpts/11/quote",
+          "sha256": "6c6bccf6afd8e9e63876f7bb740270e27d7e24306a3bed6e6efa427b74ce28ae"
+        },
+        {
+          "json_pointer": "/professional_excerpts/12/quote",
+          "sha256": "ff9a95dd62068d4c8d570898254d42d77fefa760c1e0c44e0da4a46d41655427"
+        },
+        {
+          "json_pointer": "/professional_excerpts/13/quote",
+          "sha256": "a43cc930472d6a0f7483a9f4d58baab50f28b847af3cc118fa0e5924f8bbb91b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/14/quote",
+          "sha256": "470a8e65f0d6b2577c0700bcf1ff9d8a24f4127393b9173a2786dc8607bb21d2"
+        },
+        {
+          "json_pointer": "/professional_excerpts/15/quote",
+          "sha256": "529842cb39f0863d357935c0287c64942f4440041e2091624984100a2ee21f37"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "edcfce765fe6b748d6ae9b4f866a12bc4145c29000ea030d0240db383cac0ed4"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "951168f23b2c025c05bab22884f4fd74d43abebf8f2662c2e93afacc419dc748"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "820bf52a7dfd272e1bec47841d4aafee39dadb371409b2668c14ec13ae1a3dec"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "820bf52a7dfd272e1bec47841d4aafee39dadb371409b2668c14ec13ae1a3dec"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f30c0bbf0b6598d36b52ee86b6b6c144aa39639a9f73cc91ac1f77f114d36caf"
+        },
+        {
+          "json_pointer": "/people/csu-yanjiexiong/identity_evidence/0/quote",
+          "sha256": "12672d007543446f343f2beb7f23382bf03058ac3c04afee2924075682fa8df8"
+        },
+        {
+          "json_pointer": "/people/csu-yanjiexiong/education/0/evidence/0/quote",
+          "sha256": "41fb63c1360d9a13c70531b9af1d1abae9b3a34547442b7d00469d23aace0a64"
+        },
+        {
+          "json_pointer": "/people/csu-yanjiexiong/education/1/evidence/0/quote",
+          "sha256": "aafa50e74ae101e78a70f5684b5b5e24e5c8f443874c7acf031cd7ee4ab7d0f3"
+        },
+        {
+          "json_pointer": "/people/csu-yanjiexiong/nondegree_training/0/evidence/0/quote",
+          "sha256": "2f69db9418f50f142c1b651600008802d0a32bcefee878dc50a61de0bc244123"
+        },
+        {
+          "json_pointer": "/people/csu-yanjiexiong/nondegree_training/1/evidence/0/quote",
+          "sha256": "7e5acc4c1dbb6024f5fc03ffe5e6c203466f031a4fc404aa1308cb52d1da7cd9"
+        },
+        {
+          "json_pointer": "/people/csu-yanjiexiong/nondegree_training/2/evidence/0/quote",
+          "sha256": "f269909ddc27beb8aed9694601986038199c1323ecfa8e80267389110050bfd2"
+        },
+        {
+          "json_pointer": "/people/csu-yanjiexiong/mentor_relations/0/evidence/0/quote",
+          "sha256": "7e5acc4c1dbb6024f5fc03ffe5e6c203466f031a4fc404aa1308cb52d1da7cd9"
+        },
+        {
+          "json_pointer": "/people/csu-yanjiexiong/publications/0/evidence/0/quote",
+          "sha256": "b1f8fc4a946dec2a700f9f7ba78eb3acc6d9238042d8ca20b72a77bbddd9e374"
+        },
+        {
+          "json_pointer": "/people/csu-yanjiexiong/source_conflicts_and_event_distinctions/0/evidence/0/quote",
+          "sha256": "12672d007543446f343f2beb7f23382bf03058ac3c04afee2924075682fa8df8"
+        },
+        {
+          "json_pointer": "/people/csu-yanjiexiong/source_conflicts_and_event_distinctions/0/evidence/1/quote",
+          "sha256": "a8f3358024050ab5c16235f84d97e3f180264886b3c3c8334ae6c04ba26bb9cb"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "41fb63c1360d9a13c70531b9af1d1abae9b3a34547442b7d00469d23aace0a64"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "41fb63c1360d9a13c70531b9af1d1abae9b3a34547442b7d00469d23aace0a64"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "aafa50e74ae101e78a70f5684b5b5e24e5c8f443874c7acf031cd7ee4ab7d0f3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "aafa50e74ae101e78a70f5684b5b5e24e5c8f443874c7acf031cd7ee4ab7d0f3"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "2f69db9418f50f142c1b651600008802d0a32bcefee878dc50a61de0bc244123"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2f69db9418f50f142c1b651600008802d0a32bcefee878dc50a61de0bc244123"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "7e5acc4c1dbb6024f5fc03ffe5e6c203466f031a4fc404aa1308cb52d1da7cd9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7e5acc4c1dbb6024f5fc03ffe5e6c203466f031a4fc404aa1308cb52d1da7cd9"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "f269909ddc27beb8aed9694601986038199c1323ecfa8e80267389110050bfd2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f269909ddc27beb8aed9694601986038199c1323ecfa8e80267389110050bfd2"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "7e5acc4c1dbb6024f5fc03ffe5e6c203466f031a4fc404aa1308cb52d1da7cd9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7e5acc4c1dbb6024f5fc03ffe5e6c203466f031a4fc404aa1308cb52d1da7cd9"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "b1f8fc4a946dec2a700f9f7ba78eb3acc6d9238042d8ca20b72a77bbddd9e374"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b1f8fc4a946dec2a700f9f7ba78eb3acc6d9238042d8ca20b72a77bbddd9e374"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "12672d007543446f343f2beb7f23382bf03058ac3c04afee2924075682fa8df8"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "41fb63c1360d9a13c70531b9af1d1abae9b3a34547442b7d00469d23aace0a64"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "aafa50e74ae101e78a70f5684b5b5e24e5c8f443874c7acf031cd7ee4ab7d0f3"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "2f69db9418f50f142c1b651600008802d0a32bcefee878dc50a61de0bc244123"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "7e5acc4c1dbb6024f5fc03ffe5e6c203466f031a4fc404aa1308cb52d1da7cd9"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "f269909ddc27beb8aed9694601986038199c1323ecfa8e80267389110050bfd2"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "b1f8fc4a946dec2a700f9f7ba78eb3acc6d9238042d8ca20b72a77bbddd9e374"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "a8f3358024050ab5c16235f84d97e3f180264886b3c3c8334ae6c04ba26bb9cb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "12672d007543446f343f2beb7f23382bf03058ac3c04afee2924075682fa8df8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a8f3358024050ab5c16235f84d97e3f180264886b3c3c8334ae6c04ba26bb9cb"
+        },
+        {
+          "json_pointer": "/people/csu-fengjie/identity_evidence/0/quote",
+          "sha256": "98d46742422721f8c8e49e0fc1e623d2c79d59d4c5de9151d428b09ee5d214b2"
+        },
+        {
+          "json_pointer": "/people/csu-fengjie/education/0/evidence/0/quote",
+          "sha256": "98d46742422721f8c8e49e0fc1e623d2c79d59d4c5de9151d428b09ee5d214b2"
+        },
+        {
+          "json_pointer": "/people/csu-fengjie/education/0/evidence/1/quote",
+          "sha256": "17905e275cf41ff1ece6ac0d4d1311aa91866458f679a7d18ddad2debb6e2af4"
+        },
+        {
+          "json_pointer": "/people/csu-fengjie/publications/0/evidence/0/quote",
+          "sha256": "65566a53b6fca1259abf59b3dd46eb9a1a3e9644fa178fea872d004f6d1d9dc7"
+        },
+        {
+          "json_pointer": "/people/csu-fengjie/publications/1/evidence/0/quote",
+          "sha256": "3ed8f06d3871fc3fe10a9ed22f477a5e225e4f95a3dfa1c0d12c6cc0cf62143f"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "98d46742422721f8c8e49e0fc1e623d2c79d59d4c5de9151d428b09ee5d214b2"
+        },
+        {
+          "json_pointer": "/evidence/1/quote",
+          "sha256": "17905e275cf41ff1ece6ac0d4d1311aa91866458f679a7d18ddad2debb6e2af4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "98d46742422721f8c8e49e0fc1e623d2c79d59d4c5de9151d428b09ee5d214b2"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "65566a53b6fca1259abf59b3dd46eb9a1a3e9644fa178fea872d004f6d1d9dc7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "65566a53b6fca1259abf59b3dd46eb9a1a3e9644fa178fea872d004f6d1d9dc7"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "3ed8f06d3871fc3fe10a9ed22f477a5e225e4f95a3dfa1c0d12c6cc0cf62143f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "3ed8f06d3871fc3fe10a9ed22f477a5e225e4f95a3dfa1c0d12c6cc0cf62143f"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "98d46742422721f8c8e49e0fc1e623d2c79d59d4c5de9151d428b09ee5d214b2"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "17905e275cf41ff1ece6ac0d4d1311aa91866458f679a7d18ddad2debb6e2af4"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "65566a53b6fca1259abf59b3dd46eb9a1a3e9644fa178fea872d004f6d1d9dc7"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "3ed8f06d3871fc3fe10a9ed22f477a5e225e4f95a3dfa1c0d12c6cc0cf62143f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "98d46742422721f8c8e49e0fc1e623d2c79d59d4c5de9151d428b09ee5d214b2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "98d46742422721f8c8e49e0fc1e623d2c79d59d4c5de9151d428b09ee5d214b2"
+        }
+      ],
+      "applied_overlays": [
+        {
+          "person_id": "csu-yaohailin",
+          "input_sha256": "ae58de55bb6a0adb448c3d250674f821e19e9eb3b8da53e32720a928f7818cf8",
+          "overlay_sha256": "bf2c5ccdf205308460c893e7f854a90cd9f685a057246971f950236b880ddb2c",
+          "json_pointer": "/people/0/field_provenance/listed_title",
+          "old_value": [
+            "国家企业中心认定与“卡脖子”技术创新"
+          ],
+          "new_value": [
+            {
+              "source_id": "csu-yaohailin-profile",
+              "source_url": "https://bs.csu.edu.cn/info/1893/24314.htm",
+              "source_excerpt_sha256": "50f799295b918e0e46a2ed6da624badec3d4ee9e5d78dd526747014cc62b08f6",
+              "source_locator": "来源对应条目／职 称 :副教授",
+              "observed_at_utc": "2026-10-25T03:53:42.068Z"
+            }
+          ],
+          "guard_passed": true
+        }
+      ],
+      "mapping_notes": [
+        "文玉本地实验室节点只表示目录职业归属，parentnull，不升级药学院直属或现任专任；原聘期到期及不同页面时点可见。",
+        "商学院/企业管理系为原orgID，目录/任职句支持系属。107/299原source无org数组，本地csu-furong-laboratory、csu-humanities、csu-literature-journalism仅canonical显示标识，分别据原目录/身份/任职句建模；不冒充源提供ID。人文与文学新闻两标签独立节点，未推更名/法律同一。",
+        "299原教育无event_id，按本人稳定序号分配，陈晓明唯一引用晏北京大学访问事件；姚王珺education_event_id=null不挂阶段。",
+        "空appointments照原，晏2020.9至今教授职业句及冯副教授/硕导actualunknowns/listed_role可见，不补造任职。",
+        "243唯一overlay逐exacthash及oldvalue守卫后实际重绑职称出处；原件不改。原source-only为制作阶段，本批来源独审/工程验收分开，未声明发布。"
+      ],
+      "degree_uncertainty_wording_correction": {
+        "scope": "仅新可见unknowns说明收窄，保留原授位三态及具体学位/毕业标签、原源字段。文玉/姚明确true不受未知分类说明影响。",
+        "changes": [
+          {
+            "json_pointer": "/people/0/unknowns/5",
+            "before": "学位标签和毕业不自动明确获授，学习区间不等授位日期；校区、法定行政父级、未具名导师身份导航均未知。",
+            "after": "原明确获授记录保留true；学习区间与授位日期分别记录。校区、法定行政父级、未具名导师身份导航均未知。"
+          },
+          {
+            "json_pointer": "/people/1/unknowns/7",
+            "before": "学位标签和毕业不自动明确获授，学习区间不等授位日期；校区、法定行政父级、未具名导师身份导航均未知。",
+            "after": "原明确获授记录保留true；学习区间与授位日期分别记录。校区、法定行政父级、未具名导师身份导航均未知。"
+          },
+          {
+            "json_pointer": "/people/2/unknowns/1",
+            "before": "学位标签和毕业不自动明确获授，学习区间不等授位日期；校区、法定行政父级、未具名导师身份导航均未知。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。校区、法定行政父级、未具名导师身份导航均未知。"
+          },
+          {
+            "json_pointer": "/people/2/unknowns/4",
+            "before": "原学位/毕业标签不是明确授位声明；作者名单、年份缺失不补填。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位；作者名单、年份缺失不补填。"
+          },
+          {
+            "json_pointer": "/people/3/unknowns/1",
+            "before": "学位标签和毕业不自动明确获授，学习区间不等授位日期；校区、法定行政父级、未具名导师身份导航均未知。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位。校区、法定行政父级、未具名导师身份导航均未知。"
+          },
+          {
+            "json_pointer": "/people/3/unknowns/4",
+            "before": "原学位/毕业标签不是明确授位声明；作者名单、年份缺失不补填。",
+            "after": "保留原源审的保守授位未知分类；具体学位/毕业标签仍保留，未单独核授位；作者名单、年份缺失不补填。"
+          }
+        ]
+      },
+      "public_source_note_cleanup": {
+        "description": "去除阅读器内部链接编号，保留具名条目、原日期/时间、解析URL及同URL结果，明确阅读器而非浏览器点击。",
+        "locations": [
+          {
+            "json_pointer": "/people/0/sources/0/notes/0"
+          },
+          {
+            "json_pointer": "/people/0/sources/1/notes/0"
+          }
+        ]
+      },
+      "official_degree_field_reclassification": {
+        "scope": "仅299三个明确学位字段事件，原源包与原source字段不改；无需学位证原件才承认官网明确学位信息。未补授位年份或日期，非证书独立认证。",
+        "changes": [
+          {
+            "person_id": "csu-yanjiexiong",
+            "event_id": "csu-yanjiexiong-education-1",
+            "json_pointer": "/people/2/education/0",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "source_candidate_sha256": "e418a1f9323904ea83c4b5c897b4fe04c57235e6e98210e449c179f007656086",
+            "evidence": [
+              {
+                "source_id": "yan-profile",
+                "source_url": "https://faculty.csu.edu.cn/yanjiexiong/zh_CN/index.htm",
+                "excerpt_id": "doctor",
+                "source_excerpt_sha256": "41fb63c1360d9a13c70531b9af1d1abae9b3a34547442b7d00469d23aace0a64",
+                "source_locator": "来源对应条目／2006.9-2009.7 兰州大学 | 中国现当代文学 | 博士学位 | 研究生(博士)毕业",
+                "observed_at_utc": "2026-10-25T05:27:30Z",
+                "quote_normalization": "Whitespace collapsed only; selected contiguous professional fragments, not full page."
+              }
+            ],
+            "changed_fields": {
+              "degree_awarded": {
+                "old": null,
+                "new": true
+              },
+              "event_kind": {
+                "old": "education_label_award_unknown",
+                "new": "degree"
+              },
+              "include_in_degree_filters": {
+                "old": false,
+                "new": true
+              },
+              "include_in_education_filters": {
+                "old": false,
+                "new": true
+              },
+              "note": {
+                "old": "学历标签、阶段与原时段保留；非独立原证书或授位日期认证。",
+                "new": "官网教育栏明确列博士学位及研究生（博士）毕业，据此记录已获学位；学习区间照录，授位具体年日与原学位证书未单独核实。"
+              },
+              "source_canonical_event_kind": {
+                "old": null,
+                "new": "education_label_award_unknown"
+              },
+              "source_include_in_degree_filters": {
+                "old": null,
+                "new": false
+              },
+              "source_include_in_education_filters": {
+                "old": null,
+                "new": false
+              }
+            },
+            "source_degree_awarded_preserved": true,
+            "award_dates_not_inferred": true
+          },
+          {
+            "person_id": "csu-yanjiexiong",
+            "event_id": "csu-yanjiexiong-education-2",
+            "json_pointer": "/people/2/education/1",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "source_candidate_sha256": "e418a1f9323904ea83c4b5c897b4fe04c57235e6e98210e449c179f007656086",
+            "evidence": [
+              {
+                "source_id": "yan-profile",
+                "source_url": "https://faculty.csu.edu.cn/yanjiexiong/zh_CN/index.htm",
+                "excerpt_id": "master",
+                "source_excerpt_sha256": "aafa50e74ae101e78a70f5684b5b5e24e5c8f443874c7acf031cd7ee4ab7d0f3",
+                "source_locator": "来源对应条目／2003.9-2006.7 湖南科技大学 | 文艺学 | 硕士学位 | 研究生(硕士)毕业",
+                "observed_at_utc": "2026-10-25T05:27:30Z",
+                "quote_normalization": "Whitespace collapsed only; selected contiguous professional fragments, not full page."
+              }
+            ],
+            "changed_fields": {
+              "degree_awarded": {
+                "old": null,
+                "new": true
+              },
+              "event_kind": {
+                "old": "education_label_award_unknown",
+                "new": "degree"
+              },
+              "include_in_degree_filters": {
+                "old": false,
+                "new": true
+              },
+              "include_in_education_filters": {
+                "old": false,
+                "new": true
+              },
+              "note": {
+                "old": "学历标签、阶段与原时段保留；非独立原证书或授位日期认证。",
+                "new": "官网教育栏明确列硕士学位及研究生（硕士）毕业，据此记录已获学位；学习区间照录，授位具体年日与原学位证书未单独核实。"
+              },
+              "source_canonical_event_kind": {
+                "old": null,
+                "new": "education_label_award_unknown"
+              },
+              "source_include_in_degree_filters": {
+                "old": null,
+                "new": false
+              },
+              "source_include_in_education_filters": {
+                "old": null,
+                "new": false
+              }
+            },
+            "source_degree_awarded_preserved": true,
+            "award_dates_not_inferred": true
+          },
+          {
+            "person_id": "csu-fengjie",
+            "event_id": "csu-fengjie-education-1",
+            "json_pointer": "/people/3/education/0",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "source_candidate_sha256": "e418a1f9323904ea83c4b5c897b4fe04c57235e6e98210e449c179f007656086",
+            "evidence": [
+              {
+                "source_id": "feng-profile",
+                "source_url": "https://faculty.csu.edu.cn/fengjie1/zh_CN/index.htm",
+                "excerpt_id": "identity",
+                "source_excerpt_sha256": "98d46742422721f8c8e49e0fc1e623d2c79d59d4c5de9151d428b09ee5d214b2",
+                "source_locator": "来源对应条目／冯杰，清华大学新闻与传播学院博士，中南大学人文学院副教授、硕士生导师",
+                "observed_at_utc": "2026-10-25T05:27:30Z",
+                "quote_normalization": "Whitespace collapsed only; selected contiguous professional fragments, not full page."
+              },
+              {
+                "source_id": "feng-profile",
+                "source_url": "https://faculty.csu.edu.cn/fengjie1/zh_CN/index.htm",
+                "excerpt_id": "degree_label",
+                "source_excerpt_sha256": "17905e275cf41ff1ece6ac0d4d1311aa91866458f679a7d18ddad2debb6e2af4",
+                "source_locator": "来源对应条目／学位：文学博士学位",
+                "observed_at_utc": "2026-10-25T05:27:30Z",
+                "quote_normalization": "Whitespace collapsed only; selected contiguous professional fragments, not full page."
+              }
+            ],
+            "changed_fields": {
+              "degree_awarded": {
+                "old": null,
+                "new": true
+              },
+              "degree": {
+                "old": "博士",
+                "new": "文学博士学位"
+              },
+              "event_kind": {
+                "old": "education_label_award_unknown",
+                "new": "degree"
+              },
+              "include_in_degree_filters": {
+                "old": false,
+                "new": true
+              },
+              "include_in_education_filters": {
+                "old": false,
+                "new": true
+              },
+              "excerpt_id": {
+                "old": "identity",
+                "new": "degree_label"
+              },
+              "source_excerpt_sha256": {
+                "old": "98d46742422721f8c8e49e0fc1e623d2c79d59d4c5de9151d428b09ee5d214b2",
+                "new": "17905e275cf41ff1ece6ac0d4d1311aa91866458f679a7d18ddad2debb6e2af4"
+              },
+              "source_locator": {
+                "old": "来源对应条目／冯杰，清华大学新闻与传播学院博士，中南大学人文学院副教授、硕士生导师",
+                "new": "来源对应条目／学位：文学博士学位"
+              },
+              "note": {
+                "old": "学历标签、阶段与原时段保留；非独立原证书或授位日期认证。",
+                "new": "官网独立“学位：文学博士学位”字段明确学位，个人简介另列清华大学新闻与传播学院博士，合为同一博士记录；学习起止、授位年日和原学位证书未单独核实。"
+              },
+              "source_canonical_event_kind": {
+                "old": null,
+                "new": "education_label_award_unknown"
+              },
+              "source_include_in_degree_filters": {
+                "old": null,
+                "new": false
+              },
+              "source_include_in_education_filters": {
+                "old": null,
+                "new": false
+              },
+              "source_degree": {
+                "old": null,
+                "new": "博士"
+              },
+              "degree_award_evidence": {
+                "old": null,
+                "new": {
+                  "source_id": "feng-profile",
+                  "source_url": "https://faculty.csu.edu.cn/fengjie1/zh_CN/index.htm",
+                  "excerpt_id": "degree_label",
+                  "source_excerpt_sha256": "17905e275cf41ff1ece6ac0d4d1311aa91866458f679a7d18ddad2debb6e2af4",
+                  "source_locator": "来源对应条目／学位：文学博士学位",
+                  "observed_at_utc": "2026-10-25T05:27:30Z",
+                  "quote_normalization": "Whitespace collapsed only; selected contiguous professional fragments, not full page."
+                }
+              }
+            },
+            "source_degree_awarded_preserved": true,
+            "award_dates_not_inferred": true
+          }
+        ]
+      }
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧737事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
