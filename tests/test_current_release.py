@@ -266,7 +266,7 @@ class CurrentRelease(unittest.TestCase):
                     self.assertEqual(''.join(b.itertext()), ''.join(a.itertext()).replace('612份独立人物档案', str(len(self.actual['people'])) + '份独立人物档案'))
                     self.assertEqual(after, before.replace(b'612&#20221;&#29420;&#31435;', str(len(self.actual['people'])).encode() + b'&#20221;&#29420;&#31435;'))
 
-    def test_live_runtime_has_only_reviewed_institution_fix_and_old_engines_unchanged(self):
+    def test_live_runtime_and_engines_have_only_reviewed_changes(self):
         for rel in ['site/app.js','site/model.js','site/rosters.js','site/styles.css','site/index.html',
                     'scripts/build.py','scripts/build_rosters.py','scripts/validate_source_contract.py',
                     'scripts/validate_metadata_transition.py','tests/source_date_history.py',
@@ -277,6 +277,13 @@ class CurrentRelease(unittest.TestCase):
             if rel == 'site/app.js':
                 before = b"${esc(a.institution||p.department)}"
                 after = "${esc(a.institution||'任职机构未核实')}".encode()
+                self.assertEqual(expected.count(before), 1)
+                expected = expected.replace(before, after)
+            # Approved representation-only optimization: the actual builder's
+            # site atlas writer is compact UTF-8. Every other engine byte stays pinned.
+            if rel == 'scripts/build.py':
+                before = b"json.dumps(d,ensure_ascii=False,indent=2)+'\\n')"
+                after = b"json.dumps(d,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\\n',encoding='utf-8')"
                 self.assertEqual(expected.count(before), 1)
                 expected = expected.replace(before, after)
             asset_token_counts = {'site/app.js': 3, 'site/rosters.js': 1, 'site/index.html': 2}

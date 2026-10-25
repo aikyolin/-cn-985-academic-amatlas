@@ -355,7 +355,7 @@ def build(generate_excel=True):
  from build_rosters import build_rosters
  build_rosters(d,generate_excel=generate_excel)
  roster_path=ROOT/'site/rosters.json';roster_snapshot=json.loads(roster_path.read_text());roster_snapshot['build_id']=d['build_id'];roster_path.write_text(json.dumps(roster_snapshot,ensure_ascii=False,indent=2)+'\n')
- d['exports']=exports;(ROOT/'site/atlas.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+ d['exports']=exports;(ROOT/'site/atlas.json').write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\n',encoding='utf-8')
  check_public_tree(ROOT,phase='final',include_workbooks=generate_excel)
  print(f'Validated {len(d["people"])} detailed profiles; prepared {len(exports)} department exports and website snapshot')
  print('Public source metadata: final JSON/CSV/XLSX checked' if generate_excel else 'Public source metadata: JSON/CSV checked; XLSX not regenerated or checked (--data-only)')
