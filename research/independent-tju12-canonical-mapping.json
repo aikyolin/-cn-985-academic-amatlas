@@ -1,0 +1,1716 @@
+{
+  "schema_version": "independent-tju12-canonical-mapping-1",
+  "baseline_commit": "811808dd7e77b5304c0763b102e68cc8b80e80d3",
+  "new_people": [
+    "tju-xuchunjian",
+    "tju-zhaobohang",
+    "tju-wenxiaotong",
+    "tju-mawenchao",
+    "tju-shizhiyuan",
+    "tju-tanhao",
+    "tju-zhaokuo",
+    "tju-chentong",
+    "tju-liuconghong",
+    "tju-zhaoyanjun-pharmaceutics",
+    "tju-daisong",
+    "tju-hanzhongjie"
+  ],
+  "new_org_ids": [
+    "tju-chemical-engineering",
+    "tju-molecular-plus",
+    "tju-law",
+    "tju-environment",
+    "tju-education",
+    "tju-public-administration",
+    "tju-architecture",
+    "tju-pharmaceutical-science-technology",
+    "tju-applied-math-center"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 9,
+    "education": 47,
+    "appointments": 19,
+    "publications": 24,
+    "mentors": 2,
+    "teaching": 6,
+    "degree_true": 18,
+    "degree_false": 14,
+    "degree_unknown": 15
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "chemistry-law-environment",
+      "canonical_payload_sha256": "7a53ca0d14657d128e386ef2b0fa784371fcecd39832d63975807f5fb749fbfc",
+      "field_mapping_sha256": "893ef1ba83cdc85fc2248d3f2675c38c4bd190353ff8779c3d626bb3cec68d2b",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "pharmacy-education-management",
+      "canonical_payload_sha256": "6cadce77c0c94b8ce7d8253bdf923394c8d401ba8992793cc4aaf2dc6bb85b1d",
+      "field_mapping_sha256": "17c30675562e96dd02a12cd874745c4c7b6d8cf0219de402f55a16441b66915b",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "architecture-pharmaceutics-math",
+      "canonical_payload_sha256": "e329361c0f8893589da564fbf211b1ca8a2f452116f42c4ea35570ad00477ec1",
+      "field_mapping_sha256": "e458f31adde37b6a4b82ca5b052c82a2350473c2b00aff7575158981e1725650",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "baseline_commit": "811808dd7e77b5304c0763b102e68cc8b80e80d3",
+      "baseline_people": 677,
+      "payload_sha256": "7a53ca0d14657d128e386ef2b0fa784371fcecd39832d63975807f5fb749fbfc",
+      "people": [
+        {
+          "person_id": "tju-xuchunjian",
+          "source_candidate_sha256": "50b3b3222eb784841b70b49fc6b1508e5341c7a695c58699cf52554ec60ffc74",
+          "source_review_sha256": "6b09ac076a064767df2910942eb08fbd78a2e7b894979b1e171bba505b5019aa",
+          "provenance_correction": null,
+          "visible_limits": [
+            "当前人事未知；来源列名、历史角色与资格标签保留，不等于确认现职或离职。",
+            "学位授予与学习时间分开，未知日期不补；非学位活动不新增授位事件。",
+            "仅所选官方职业书目，未读全文，不代表全部成果；导师关系不从合著或博导标签推定。",
+            "院校地理分类与法定行政父级本次未规范化，校区保持未知。",
+            "官方职称为研究员，不由正高级栏目改称教授。",
+            "1986、1989、1994是明确授位年，专业及学习起止未知；悉尼高级访问学者无具体年月。",
+            "页面标题化学工程研究所与履历化工研究所分别保留，不静默当同一机构。",
+            "两原出版者403停止，DOI仅发现线索；第二作省略作者未明示Xu，不补全或确认许春建署名。"
+          ],
+          "counts": {
+            "education": 4,
+            "mentors": 0,
+            "appointments": 1,
+            "publications": 2,
+            "teaching": 2
+          }
+        },
+        {
+          "person_id": "tju-zhaobohang",
+          "source_candidate_sha256": "9a8c8d6c2dc3452205edfae7cbbcb8985eca21d7272f77fa315aaf738cecb5e2",
+          "source_review_sha256": "fa122c3354f84907d4387ab8aecac62a859345db2ff3e9060b598ad48c82e3ee",
+          "provenance_correction": null,
+          "visible_limits": [
+            "当前人事未知；来源列名、历史角色与资格标签保留，不等于确认现职或离职。",
+            "学位授予与学习时间分开，未知日期不补；非学位活动不新增授位事件。",
+            "仅所选官方职业书目，未读全文，不代表全部成果；导师关系不从合著或博导标签推定。",
+            "院校地理分类与法定行政父级本次未规范化，校区保持未知。",
+            "2022年1月明确获博士，授位日与学习起止未知；博士后所在机构未明示，不由继续推断天津大学。",
+            "张兵分别为博士阶段导师、博士后合作导师，非正式论文导师认证。",
+            "首作认证跳转后停止；第二作仅公开出版者元数据与订阅预览，不代表全文阅读。",
+            "博士生导师是本人资格标签，不是本人新增师承。"
+          ],
+          "counts": {
+            "education": 2,
+            "mentors": 2,
+            "appointments": 1,
+            "publications": 2,
+            "teaching": 0
+          }
+        },
+        {
+          "person_id": "tju-wenxiaotong",
+          "source_candidate_sha256": "43556b531aad2fa4fbfc264589d973a6fcb2c4b26dd7bda2fa749622615845f7",
+          "source_review_sha256": "77531e1c6a39e56b1af4c392d16bb1c78668a5a559657a65504da5aaef703951",
+          "provenance_correction": {
+            "original_sha256": "3856dbd78fabc665eb919d06f643fb3c205c949726c2d816e8cec416b9fb95e8",
+            "corrected_sha256": "43556b531aad2fa4fbfc264589d973a6fcb2c4b26dd7bda2fa749622615845f7",
+            "correction_sha256": "e93993ab082dbf5d21b2e0297e957cda014f02686ad9cf3dc546d617062274a5",
+            "operations_verified": 8,
+            "no_other_changes": true
+          },
+          "visible_limits": [
+            "当前人事未知；来源列名、历史角色与资格标签保留，不等于确认现职或离职。",
+            "学位授予与学习时间分开，未知日期不补；非学位活动不新增授位事件。",
+            "仅所选官方职业书目，未读全文，不代表全部成果；导师关系不从合著或博导标签推定。",
+            "院校地理分类与法定行政父级本次未规范化，校区保持未知。",
+            "2005学士、2007硕士、2010博士明确授位年；硕博专业不可由研究科名推定。",
+            "2023-09-05是显示发布日，不是最后更新时间，正文含2024书目。",
+            "日文书目1592号仅起页127，终页未知；2024年1月为来源出版月。",
+            "引文有斐阁链接落到最新期一般页，并非选定作品；目标失配不是拒绝，未采纳最新期元数据。"
+          ],
+          "counts": {
+            "education": 4,
+            "mentors": 0,
+            "appointments": 1,
+            "publications": 2,
+            "teaching": 0
+          }
+        },
+        {
+          "person_id": "tju-mawenchao",
+          "source_candidate_sha256": "43556b531aad2fa4fbfc264589d973a6fcb2c4b26dd7bda2fa749622615845f7",
+          "source_review_sha256": "77531e1c6a39e56b1af4c392d16bb1c78668a5a559657a65504da5aaef703951",
+          "provenance_correction": {
+            "original_sha256": "3856dbd78fabc665eb919d06f643fb3c205c949726c2d816e8cec416b9fb95e8",
+            "corrected_sha256": "43556b531aad2fa4fbfc264589d973a6fcb2c4b26dd7bda2fa749622615845f7",
+            "correction_sha256": "e93993ab082dbf5d21b2e0297e957cda014f02686ad9cf3dc546d617062274a5",
+            "operations_verified": 8,
+            "no_other_changes": true
+          },
+          "visible_limits": [
+            "当前人事未知；来源列名、历史角色与资格标签保留，不等于确认现职或离职。",
+            "学位授予与学习时间分开，未知日期不补；非学位活动不新增授位事件。",
+            "仅所选官方职业书目，未读全文，不代表全部成果；导师关系不从合著或博导标签推定。",
+            "院校地理分类与法定行政父级本次未规范化，校区保持未知。",
+            "仅2004学士与2010博士明确授位，学习结束7月不是授位月；硕士标签授位未知。",
+            "柏林行虽标博士，正文明确联合培养，非第二博士；院系名不是学位专业。",
+            "2013-04为讲师/副教授合列任职起点，不推两职称转任日，也不回填教授或博导起点。",
+            "两语言模板同教师ID与经历对应，不声称HTTP跳转；2026-02-02是书目条目发布日期，不是论文出版年。",
+            "首作Nature URL来自发现且认证跳转停止；plasmagasification保留原拼写，不借搜索改题名。",
+            "博士生导师是本人资格标签，不是其本人导师关系；目录研究末项原样截断。"
+          ],
+          "counts": {
+            "education": 6,
+            "mentors": 0,
+            "appointments": 1,
+            "publications": 2,
+            "teaching": 0
+          }
+        }
+      ]
+    },
+    {
+      "schema_version": "tju12-pharmacy-education-management-mapping-1",
+      "published_baseline_commit": "811808dd7e77b5304c0763b102e68cc8b80e80d3",
+      "published_baseline_people": 677,
+      "people": [
+        "tju-shizhiyuan",
+        "tju-tanhao",
+        "tju-zhaokuo",
+        "tju-chentong"
+      ],
+      "input_hashes": {
+        "tju-shizhiyuan": {
+          "source_candidate_sha256": "7c64bb995b53b40168fb941b618984313bdf38da8e027bcb7f8b41f736538cf3",
+          "review_sha256": "2e49e160563d46a5c954d50bca47c9ae2d848fd9fa654aa36be8200ecb6ff885"
+        },
+        "tju-tanhao": {
+          "source_candidate_sha256": "7c64bb995b53b40168fb941b618984313bdf38da8e027bcb7f8b41f736538cf3",
+          "review_sha256": "2e49e160563d46a5c954d50bca47c9ae2d848fd9fa654aa36be8200ecb6ff885"
+        },
+        "tju-zhaokuo": {
+          "source_candidate_sha256": "9e0f4bf3fdf620af444081e08e3186a0a684107017b5fffdccca46830dba0916",
+          "review_sha256": "ea622259f9724343ae55df4594b47c85bf284bdc9f0c852665481a1246584f56"
+        },
+        "tju-chentong": {
+          "source_candidate_sha256": "9e0f4bf3fdf620af444081e08e3186a0a684107017b5fffdccca46830dba0916",
+          "review_sha256": "ea622259f9724343ae55df4594b47c85bf284bdc9f0c852665481a1246584f56"
+        }
+      },
+      "overlay": "104无事实overlay；105他人的作者更正不套用。131无overlay，退休历史与全职目录冲突并列。",
+      "org_units": [
+        {
+          "id": "tju-education",
+          "name": "教育学院",
+          "school_id": "tju",
+          "type": "school",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_url": "https://soe.tju.edu.cn/szdw/axs/jyxx.htm",
+          "note": "学院个人页与教育学系、讲师目录支持学院展示归属；谭教育学系保留，赵下属系未知，不推法定行政父级。"
+        },
+        {
+          "id": "tju-public-administration",
+          "name": "公共管理学院",
+          "school_id": "tju",
+          "type": "school",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_url": "https://come.tju.edu.cn/szqk/qzjs/axs1/ggglxy.htm",
+          "note": "官方公共管理学院目录与陈通个人页一致；复合学部/学院名保留，不推法定层级或当前在岗。"
+        }
+      ],
+      "shared_org": "史目录https://spst.tju.edu.cn/szdw/js_yjy/2.htm标题为天津大学药物科学与技术学院，赵目录https://spst.tju.edu.cn/kxyj/kyfx/yjx.htm同校同学院且同官方spst域。共享tju-pharmaceutical-science-technology由architecture组唯一定义；医学部复合标签不推父级，source_department:null保留。",
+      "semantic_limits": {
+        "tju-shizhiyuan": [
+          "当前人事未独立核实，导航及当前教师计数关闭；历史职业状态保留。",
+          "本人学习导师和正式论文导师未知，教授/博导资格不生成本人师承。",
+          "必要职业摘录非完整网页或HTTP；观察时间不是网页更新日期，书目未核外部出版信息或全文。",
+          "中文与英文官网URL分别保留；身份桥只核姓名、大学语境、教授及哥廷根学士背景，不声称短英文摘录核齐全部教育日期和任职。",
+          "博士/硕士简介明确获得与英文earned B.Sc.支持三获授；具体授位日期未知，专业与授位单位称谓差异不增学位。",
+          "医学部药物科学与技术学院原复合单位保留，不自动建立医学部父级；科隆双克隆抗体研发不推博士后。"
+        ],
+        "tju-tanhao": [
+          "当前人事未独立核实，导航及当前教师计数关闭；历史职业状态保留。",
+          "本人学习导师和正式论文导师未知，教授/博导资格不生成本人师承。",
+          "必要职业摘录非完整网页或HTTP；观察时间不是网页更新日期，书目未核外部出版信息或全文。",
+          "三明确获授、东京及大分两交换非学位；学习止年不当授位年。",
+          "教育学院／教育学系来自单位及目录分组，不证明法定行政父级；目录副教授与履历英才副教授分别保留。",
+          "原说明导师资格不用于推本人导师；译作原作者与两译者不混同。"
+        ],
+        "tju-zhaokuo": [
+          "当前人事未独立核实，导航及当前教师计数关闭；历史职业状态保留。",
+          "本人学习导师和正式论文导师未知，教授/博导资格不生成本人师承。",
+          "必要职业摘录非完整网页或HTTP；观察时间不是网页更新日期，书目未核外部出版信息或全文。",
+          "三学位标签授位null；宾夕法尼亚联合培养非学位，简介访问学者标签不另造第二访问事件。",
+          "两书目作者均未列，保留null；研究方向不推教育学院下属系。",
+          "2025-06-27仅主页显示日期，最后更新时间未知；未扩源读课程或核目录人物href。"
+        ],
+        "tju-chentong": [
+          "当前人事未独立核实，导航及当前教师计数关闭；历史职业状态保留。",
+          "本人学习导师和正式论文导师未知，教授/博导资格不生成本人师承。",
+          "必要职业摘录非完整网页或HTTP；观察时间不是网页更新日期，书目未核外部出版信息或全文。",
+          "2021官网荣休报道明确点名陈通，同时全职教师目录仍列名；两来源并存，不选赢家、不推返聘或当前在岗。",
+          "仪式日与2021-06-01报道日不等于退休生效日；1987～结合教授/博导不证明教授始任1987或连续至今。",
+          "1984、1987、2000只是教育履历单年，不推入学、毕业或授位年份；1994访问不补月日，HEC依原名不猜法律主体。",
+          "此处证据为2026-10-24新观察区间，不能冒称恢复丢失的早期正文或完整HTTP快照；课程、更新时间与目录href未知。"
+        ]
+      },
+      "counts": {
+        "education": 16,
+        "appointments": 8,
+        "mentors": 0,
+        "publications": 8,
+        "teaching": 0
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/people/tju-zhaokuo/education/0/quote",
+          "sha256": "f39a5522aeb6519e6f9621c40771e42b4dc1586acba55f898aeeb1a208a95f8e"
+        },
+        {
+          "path": "/people/tju-zhaokuo/education/1/quote",
+          "sha256": "ce3c362c88a2a29addf7c19a567b1ad659e21bf08d7e7ca9bab37e1df8bd9df5"
+        },
+        {
+          "path": "/people/tju-zhaokuo/education/2/quote",
+          "sha256": "5667abe60141475ebb1c31a68b212efcb63aa54565e2221117e26116c2220225"
+        },
+        {
+          "path": "/people/tju-zhaokuo/professional_training/0/quote",
+          "sha256": "b780b3ac35295eb5570954136e1e060860393e13962d4880c95e68c59697af5e"
+        },
+        {
+          "path": "/people/tju-zhaokuo/publications/0/quote",
+          "sha256": "2ce8fe87d2f8bdd66c89af54c78a1652287f22919104eff1dee4e3c173c364f3"
+        },
+        {
+          "path": "/people/tju-zhaokuo/publications/1/quote",
+          "sha256": "6df8631d7aa8d5f3ce73237e313d833931da6610a44ed4a9ccb706a2e907a9c2"
+        },
+        {
+          "path": "/people/tju-zhaokuo/field_provenance/identity_and_title/quote",
+          "sha256": "7452d711ee43d4204218cabf1e48a35d2b6ddcaa4cb4575f8a5c1ff166131719"
+        },
+        {
+          "path": "/people/tju-zhaokuo/field_provenance/department/quote",
+          "sha256": "7452d711ee43d4204218cabf1e48a35d2b6ddcaa4cb4575f8a5c1ff166131719"
+        },
+        {
+          "path": "/people/tju-zhaokuo/field_provenance/directory_affiliation/quote",
+          "sha256": "f5996bfa91c15d353e33203df9fcd5732b1b7e7dc7f5e2faa9a890cf5b021fb5"
+        },
+        {
+          "path": "/people/tju-zhaokuo/field_provenance/research_directions/quote",
+          "sha256": "a7160f12f867c78120174325718e219df29bf8e139906a885e0256ff86acb21b"
+        },
+        {
+          "path": "/people/tju-zhaokuo/field_provenance/page_date/quote",
+          "sha256": "00682d1c88abedeed6ed1f67bd910f35b70265b577277df39297eed361dd68f7"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f39a5522aeb6519e6f9621c40771e42b4dc1586acba55f898aeeb1a208a95f8e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ce3c362c88a2a29addf7c19a567b1ad659e21bf08d7e7ca9bab37e1df8bd9df5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "5667abe60141475ebb1c31a68b212efcb63aa54565e2221117e26116c2220225"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b780b3ac35295eb5570954136e1e060860393e13962d4880c95e68c59697af5e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "2ce8fe87d2f8bdd66c89af54c78a1652287f22919104eff1dee4e3c173c364f3"
+        },
+        {
+          "path": "/quote",
+          "sha256": "6df8631d7aa8d5f3ce73237e313d833931da6610a44ed4a9ccb706a2e907a9c2"
+        },
+        {
+          "path": "/people/tju-chentong/historical_status_events/0/quote",
+          "sha256": "1312117b0c281749178a367a1b4b5bb3b661120ed29777ea4a67f2beb487719e"
+        },
+        {
+          "path": "/people/tju-chentong/education/0/quote",
+          "sha256": "f772296c39281b75b2b1690ec3ebcf5a2192d0bda695d142250a48e818f30a7d"
+        },
+        {
+          "path": "/people/tju-chentong/education/1/quote",
+          "sha256": "e89f636c988a0697b45377f3657ef2574ab2b65ab401015db0a44708dddd3a65"
+        },
+        {
+          "path": "/people/tju-chentong/education/2/quote",
+          "sha256": "d9479ae33c28260262c84fc8b244eae10391f0fe8bb25ffa1823b2a5feb63dcb"
+        },
+        {
+          "path": "/people/tju-chentong/professional_training/0/quote",
+          "sha256": "dd3769df45f11616eb053381daba88de99d60c64e4d15db69bfc5e2f7ad80862"
+        },
+        {
+          "path": "/people/tju-chentong/appointments/0/quote",
+          "sha256": "8dc0bf0036648414485a0809c3d56df5ef89d7b1fe031e53f0fa9b8bcaa90d18"
+        },
+        {
+          "path": "/people/tju-chentong/publications/0/quote",
+          "sha256": "01a28e685663892e3db1f28ba01b852f51ada74df4f22daac5bc11c78abe9141"
+        },
+        {
+          "path": "/people/tju-chentong/publications/1/quote",
+          "sha256": "5afb26ba8e0060fb11fa95d11ed6a4245c41218ae8aab920b6a83cc05fe3e537"
+        },
+        {
+          "path": "/people/tju-chentong/field_provenance/identity_and_title/quote",
+          "sha256": "54b86516d31deb010de2fb343204ace547976e1647b39d62b1bb646175d3eb2f"
+        },
+        {
+          "path": "/people/tju-chentong/field_provenance/department/quote",
+          "sha256": "e0f4f92d479112261d24073b444c53290aa15adb4c8b99c723ab614ae6855926"
+        },
+        {
+          "path": "/people/tju-chentong/field_provenance/directory_affiliation/quote",
+          "sha256": "2fb42b96f87327535cb34eb95a0db7368fa35fd30515352e712b9f6b649e3fb7"
+        },
+        {
+          "path": "/people/tju-chentong/field_provenance/research_directions/quote",
+          "sha256": "d3def5e2bf65e8cd8f1022a7a5f086b277381851fef3e557bd84dbec5d3a61d6"
+        },
+        {
+          "path": "/people/tju-chentong/field_provenance/retirement_history/quote",
+          "sha256": "1312117b0c281749178a367a1b4b5bb3b661120ed29777ea4a67f2beb487719e"
+        },
+        {
+          "path": "/people/tju-chentong/field_provenance/retirement_report_date/quote",
+          "sha256": "8c052c8a3d16c40c474f6972610041a372d99974e6a788802d567d1ec34dc35d"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f772296c39281b75b2b1690ec3ebcf5a2192d0bda695d142250a48e818f30a7d"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e89f636c988a0697b45377f3657ef2574ab2b65ab401015db0a44708dddd3a65"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d9479ae33c28260262c84fc8b244eae10391f0fe8bb25ffa1823b2a5feb63dcb"
+        },
+        {
+          "path": "/quote",
+          "sha256": "dd3769df45f11616eb053381daba88de99d60c64e4d15db69bfc5e2f7ad80862"
+        },
+        {
+          "path": "/quote",
+          "sha256": "8dc0bf0036648414485a0809c3d56df5ef89d7b1fe031e53f0fa9b8bcaa90d18"
+        },
+        {
+          "path": "/quote",
+          "sha256": "01a28e685663892e3db1f28ba01b852f51ada74df4f22daac5bc11c78abe9141"
+        },
+        {
+          "path": "/quote",
+          "sha256": "5afb26ba8e0060fb11fa95d11ed6a4245c41218ae8aab920b6a83cc05fe3e537"
+        }
+      ],
+      "mapping": "原字段/必要原文保留；三态原值不变，true事件kind规范为degree且source_event_kind原值保留。私有工具引用/reader行号移入trace，公共使用语义定位。公开source dates、请求/观察区间原精度保留，源未明事项不补。"
+    },
+    {
+      "baseline_people": 677,
+      "baseline_commit": "811808dd7e77b5304c0763b102e68cc8b80e80d3",
+      "people": [
+        {
+          "person_id": "tju-liuconghong",
+          "source_candidate_sha256": "1fa668ebb3e656a61957ae0d3c8a5c7d5a29824dca2ce3928dc1007997ca7ef2",
+          "source_evidence_sha256": "19a33f913638a58926ab199939e6f202e84a9166c6e120035d786717f828261b",
+          "source_review_sha256": "514455589a0e7c464050365fc0d0fa742a96bc9b814327a7842fc16885dd9cf5",
+          "education": 3,
+          "degree_true_false_null": [
+            0,
+            0,
+            3
+          ],
+          "mentors": 0,
+          "appointments": 1,
+          "publications": 2,
+          "teaching_groups": 2,
+          "source_urls": [
+            "https://arch.tju.edu.cn/rcpy/szdw/jzxx.htm",
+            "https://arch.tju.edu.cn/info/1293/3029.htm"
+          ]
+        },
+        {
+          "person_id": "tju-zhaoyanjun-pharmaceutics",
+          "source_candidate_sha256": "b6b1b02a1c81e51b7d4c512b41bf2f4f8addef9da1118237da400fbb8c831ade",
+          "source_evidence_sha256": "6198dc91ec4f9badbdc8f7f45ceabe780a6a0698a2365d4e99c5cb8e1e23b320",
+          "source_review_sha256": "3c9b2320bee3134219bbb6ac476fcca28ab5025e771fb55edddc0788da23b068",
+          "education": 5,
+          "degree_true_false_null": [
+            3,
+            2,
+            0
+          ],
+          "mentors": 0,
+          "appointments": 4,
+          "publications": 2,
+          "teaching_groups": 2,
+          "source_urls": [
+            "https://faculty.tju.edu.cn/zhaoyj",
+            "https://faculty.tju.edu.cn/zhaoyj",
+            "https://spst.tju.edu.cn/kxyj/kyfx/yjx.htm"
+          ]
+        },
+        {
+          "person_id": "tju-daisong",
+          "source_candidate_sha256": "0b36eec5c1ea27a0dc0585af0dfa7eb457294f7618e144e58c475294700853cb",
+          "source_evidence_sha256": "a09185a730ae9740eaab8230cb24c7b7fd5d2f155da8c7b8c642a0bee66059dc",
+          "source_review_sha256": "b19db244de626d525fdf0a187c789bde43d0f9a79e6b2cfad99c62d1482e7f60",
+          "education": 2,
+          "degree_true_false_null": [
+            0,
+            0,
+            2
+          ],
+          "mentors": 0,
+          "appointments": 1,
+          "publications": 2,
+          "teaching_groups": 0,
+          "source_urls": [
+            "https://math.tju.edu.cn/info/1715/5503.htm"
+          ]
+        },
+        {
+          "person_id": "tju-hanzhongjie",
+          "source_candidate_sha256": "0b36eec5c1ea27a0dc0585af0dfa7eb457294f7618e144e58c475294700853cb",
+          "source_evidence_sha256": "a09185a730ae9740eaab8230cb24c7b7fd5d2f155da8c7b8c642a0bee66059dc",
+          "source_review_sha256": "b19db244de626d525fdf0a187c789bde43d0f9a79e6b2cfad99c62d1482e7f60",
+          "education": 5,
+          "degree_true_false_null": [
+            0,
+            2,
+            3
+          ],
+          "mentors": 0,
+          "appointments": 1,
+          "publications": 2,
+          "teaching_groups": 0,
+          "source_urls": [
+            "https://math.tju.edu.cn/info/1715/5554.htm"
+          ]
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/people/tju-liuconghong/education/0/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/people/tju-liuconghong/education/1/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/people/tju-liuconghong/education/2/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/people/tju-liuconghong/publications/0/quote",
+          "sha256": "f5b29a092a0bdb46936c46fb77bc1dbeac1f797b7432af45ecdbde0e328313cc"
+        },
+        {
+          "json_pointer": "/people/tju-liuconghong/publications/1/quote",
+          "sha256": "c7cb44d8b9b3e5b3545ebbd07e4e20c7c103651217092ebc30b1d12d2c2c41cc"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "41e332dbdbf5b1deda46562afca135d0c11a86162259eebd281a8fb623f39c24"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "9f0333e9fe09e936a86d82ba658778c5b24798354c433ed2bed51c20daf7414b"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "c9047729c039f93a676f22d760cbf6b42e2d1ed5cc05aa237d8a4e66cfcac9e2"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "6e8728cf06117e42a2a1919499d8abe981773d0d7fa4f987a9b4b01831d92f71"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "6a7d4f821c458dedeccf3ada06143c43b33fcc18a75b089642ed64894b8d848d"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "3a92d8e66c3fb8a2aff3c0b574ae78c2f21024d662ef35ffe37559e2ce55cc83"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "f5b29a092a0bdb46936c46fb77bc1dbeac1f797b7432af45ecdbde0e328313cc"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "c7cb44d8b9b3e5b3545ebbd07e4e20c7c103651217092ebc30b1d12d2c2c41cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "880d17a5b83da72eb62fe7cb8c1f5912ebc9c37b1327a2678cbd70cad3b4de30"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6e8728cf06117e42a2a1919499d8abe981773d0d7fa4f987a9b4b01831d92f71"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6e8728cf06117e42a2a1919499d8abe981773d0d7fa4f987a9b4b01831d92f71"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6a7d4f821c458dedeccf3ada06143c43b33fcc18a75b089642ed64894b8d848d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6a7d4f821c458dedeccf3ada06143c43b33fcc18a75b089642ed64894b8d848d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6a7d4f821c458dedeccf3ada06143c43b33fcc18a75b089642ed64894b8d848d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6a7d4f821c458dedeccf3ada06143c43b33fcc18a75b089642ed64894b8d848d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f5b29a092a0bdb46936c46fb77bc1dbeac1f797b7432af45ecdbde0e328313cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f5b29a092a0bdb46936c46fb77bc1dbeac1f797b7432af45ecdbde0e328313cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f5b29a092a0bdb46936c46fb77bc1dbeac1f797b7432af45ecdbde0e328313cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f5b29a092a0bdb46936c46fb77bc1dbeac1f797b7432af45ecdbde0e328313cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f5b29a092a0bdb46936c46fb77bc1dbeac1f797b7432af45ecdbde0e328313cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f5b29a092a0bdb46936c46fb77bc1dbeac1f797b7432af45ecdbde0e328313cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f5b29a092a0bdb46936c46fb77bc1dbeac1f797b7432af45ecdbde0e328313cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7cb44d8b9b3e5b3545ebbd07e4e20c7c103651217092ebc30b1d12d2c2c41cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7cb44d8b9b3e5b3545ebbd07e4e20c7c103651217092ebc30b1d12d2c2c41cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7cb44d8b9b3e5b3545ebbd07e4e20c7c103651217092ebc30b1d12d2c2c41cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7cb44d8b9b3e5b3545ebbd07e4e20c7c103651217092ebc30b1d12d2c2c41cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7cb44d8b9b3e5b3545ebbd07e4e20c7c103651217092ebc30b1d12d2c2c41cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7cb44d8b9b3e5b3545ebbd07e4e20c7c103651217092ebc30b1d12d2c2c41cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7cb44d8b9b3e5b3545ebbd07e4e20c7c103651217092ebc30b1d12d2c2c41cc"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/education/0/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/education/0/additional_evidence/0/quote",
+          "sha256": "8dc0429775530b61a2f8819747e57aed59800fc13f4b90197bd7dcc77ae9b645"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/education/0/additional_evidence/1/quote",
+          "sha256": "eeceb1af552f9838feb7c34e5f641f53fbdef56b42500b61da59171e9b910411"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/education/1/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/education/1/additional_evidence/0/quote",
+          "sha256": "d5f002d9712c2a5f6236072a9a5ea12701c2b0bf1c4f2a5796c305bcd47f0362"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/education/1/additional_evidence/1/quote",
+          "sha256": "238dd84c75ec91425e68d768f5d1a7514f830d6cdb1ab7dc9b1b3034d62131c7"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/education/2/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/education/2/additional_evidence/0/quote",
+          "sha256": "9c01434fc95f799c61d790f8ca4adab4d0321acc82fbc5ecd096de0445df62ca"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/education/2/additional_evidence/1/quote",
+          "sha256": "f951d5b15c050a197ddca1db84fa2c86561172c38a70c6d8d91ad0d19f8aaaa3"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/professional_training/0/quote",
+          "sha256": "1fb6b7762ea254ee77f3c77d812e39e0e38a19813203f51d9cf1f89196cf648a"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/professional_training/1/quote",
+          "sha256": "210f5874c9c1474e157fd4387025f85b4ee88536abd710e50114b68210a7e7b8"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/appointments/0/quote",
+          "sha256": "dccc8941d6e8cebc82ec51b82030dfc353102016216fa879049ca6ffb9121c21"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/appointments/0/date_evidence/quote",
+          "sha256": "043f62fdfb8f462d897acfeabcdfcccca56fd968954aa25d3647ca9c3506eded"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/appointments/1/quote",
+          "sha256": "7c6ec178768ea0ab6b0e705a0ff39ef7a8e73beeac69cea8a9e25742996a8be3"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/appointments/1/date_evidence/quote",
+          "sha256": "b1e568c041bb605916911ed6752461f6d181462f45be6489a679593e35c9de35"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/appointments/2/quote",
+          "sha256": "a6db6d42f3eebff0bf00ddc35db9de08fceb033fb0975a3d428c8ca3fbb2f539"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/appointments/2/date_evidence/quote",
+          "sha256": "f2fdc7a5196f9b940542cbb04e9e69c98073b8accc50885c306c6eb5b0d1e9f3"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/appointments/3/quote",
+          "sha256": "fd73e1a3afc6efff04150909ec02742fccd452e4774706cfab24ee2f3062db00"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/appointments/3/date_evidence/quote",
+          "sha256": "51c7e969d87ebb1b2b3f54759636815897c2fff1d6c7b63d46715cbe53c1be53"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/research_directions/0/quote",
+          "sha256": "de450d352cf5d93bbebf79805567063c1017fd51cd01e2290d5f5e017a354c21"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/research_directions/1/quote",
+          "sha256": "888e81c3c78449c34f42cee05af1bd32a001ec510dc8fab8e9a6a2ea06676e48"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/research_directions/2/quote",
+          "sha256": "497a65184848bfff5a080991b1566965a5377c9f4570537a0ecd8369531c91e2"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/publications/0/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/publications/1/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/teaching/0/quote",
+          "sha256": "4b931e47389c9ac28e145bcc770919fac3c550e0de419a0bdea4eab03af50902"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/teaching/1/quote",
+          "sha256": "9c47eeacc841e512144f898627e5621dc77e8f6de2748a7eb3b250df619817e5"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/identity_evidence/0/quote",
+          "sha256": "41f46d1957378fa307af15f78fda11aa5f6c46ab97c6fdf1da905426a32ef68d"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/identity_evidence/1/quote",
+          "sha256": "488c9fb12910ad02a3beac4874ef72d65e3f28043e5c3e6b272b0bdcf76d886a"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/identity_evidence/2/quote",
+          "sha256": "06b29d5e40820d6410b259693b4d8d312bc1e7a4542a4a1be33bb6f1604e7b01"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/identity_evidence/3/quote",
+          "sha256": "9c47eeacc841e512144f898627e5621dc77e8f6de2748a7eb3b250df619817e5"
+        },
+        {
+          "json_pointer": "/people/tju-zhaoyanjun-pharmaceutics/identity_evidence/4/quote",
+          "sha256": "c2694afbcd59a54444023b5e1eb814d0ee8fea7674cc9f2dd3014cc70a2e91cc"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "41f46d1957378fa307af15f78fda11aa5f6c46ab97c6fdf1da905426a32ef68d"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "488c9fb12910ad02a3beac4874ef72d65e3f28043e5c3e6b272b0bdcf76d886a"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "c2694afbcd59a54444023b5e1eb814d0ee8fea7674cc9f2dd3014cc70a2e91cc"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "1fb6b7762ea254ee77f3c77d812e39e0e38a19813203f51d9cf1f89196cf648a"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "210f5874c9c1474e157fd4387025f85b4ee88536abd710e50114b68210a7e7b8"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "8dc0429775530b61a2f8819747e57aed59800fc13f4b90197bd7dcc77ae9b645"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "eeceb1af552f9838feb7c34e5f641f53fbdef56b42500b61da59171e9b910411"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "d5f002d9712c2a5f6236072a9a5ea12701c2b0bf1c4f2a5796c305bcd47f0362"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "238dd84c75ec91425e68d768f5d1a7514f830d6cdb1ab7dc9b1b3034d62131c7"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "9c01434fc95f799c61d790f8ca4adab4d0321acc82fbc5ecd096de0445df62ca"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "f951d5b15c050a197ddca1db84fa2c86561172c38a70c6d8d91ad0d19f8aaaa3"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "dccc8941d6e8cebc82ec51b82030dfc353102016216fa879049ca6ffb9121c21"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "043f62fdfb8f462d897acfeabcdfcccca56fd968954aa25d3647ca9c3506eded"
+        },
+        {
+          "json_pointer": "/professional_excerpts/8/quote",
+          "sha256": "7c6ec178768ea0ab6b0e705a0ff39ef7a8e73beeac69cea8a9e25742996a8be3"
+        },
+        {
+          "json_pointer": "/professional_excerpts/9/quote",
+          "sha256": "b1e568c041bb605916911ed6752461f6d181462f45be6489a679593e35c9de35"
+        },
+        {
+          "json_pointer": "/professional_excerpts/10/quote",
+          "sha256": "a6db6d42f3eebff0bf00ddc35db9de08fceb033fb0975a3d428c8ca3fbb2f539"
+        },
+        {
+          "json_pointer": "/professional_excerpts/11/quote",
+          "sha256": "f2fdc7a5196f9b940542cbb04e9e69c98073b8accc50885c306c6eb5b0d1e9f3"
+        },
+        {
+          "json_pointer": "/professional_excerpts/12/quote",
+          "sha256": "fd73e1a3afc6efff04150909ec02742fccd452e4774706cfab24ee2f3062db00"
+        },
+        {
+          "json_pointer": "/professional_excerpts/13/quote",
+          "sha256": "51c7e969d87ebb1b2b3f54759636815897c2fff1d6c7b63d46715cbe53c1be53"
+        },
+        {
+          "json_pointer": "/professional_excerpts/14/quote",
+          "sha256": "de450d352cf5d93bbebf79805567063c1017fd51cd01e2290d5f5e017a354c21"
+        },
+        {
+          "json_pointer": "/professional_excerpts/15/quote",
+          "sha256": "888e81c3c78449c34f42cee05af1bd32a001ec510dc8fab8e9a6a2ea06676e48"
+        },
+        {
+          "json_pointer": "/professional_excerpts/16/quote",
+          "sha256": "497a65184848bfff5a080991b1566965a5377c9f4570537a0ecd8369531c91e2"
+        },
+        {
+          "json_pointer": "/professional_excerpts/17/quote",
+          "sha256": "4b931e47389c9ac28e145bcc770919fac3c550e0de419a0bdea4eab03af50902"
+        },
+        {
+          "json_pointer": "/professional_excerpts/18/quote",
+          "sha256": "9c47eeacc841e512144f898627e5621dc77e8f6de2748a7eb3b250df619817e5"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "06b29d5e40820d6410b259693b4d8d312bc1e7a4542a4a1be33bb6f1604e7b01"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "9c47eeacc841e512144f898627e5621dc77e8f6de2748a7eb3b250df619817e5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/additional_evidence/0/quote",
+          "sha256": "8dc0429775530b61a2f8819747e57aed59800fc13f4b90197bd7dcc77ae9b645"
+        },
+        {
+          "json_pointer": "/additional_evidence/1/quote",
+          "sha256": "eeceb1af552f9838feb7c34e5f641f53fbdef56b42500b61da59171e9b910411"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/additional_evidence/0/quote",
+          "sha256": "8dc0429775530b61a2f8819747e57aed59800fc13f4b90197bd7dcc77ae9b645"
+        },
+        {
+          "json_pointer": "/additional_evidence/1/quote",
+          "sha256": "eeceb1af552f9838feb7c34e5f641f53fbdef56b42500b61da59171e9b910411"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/additional_evidence/0/quote",
+          "sha256": "d5f002d9712c2a5f6236072a9a5ea12701c2b0bf1c4f2a5796c305bcd47f0362"
+        },
+        {
+          "json_pointer": "/additional_evidence/1/quote",
+          "sha256": "238dd84c75ec91425e68d768f5d1a7514f830d6cdb1ab7dc9b1b3034d62131c7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/additional_evidence/0/quote",
+          "sha256": "d5f002d9712c2a5f6236072a9a5ea12701c2b0bf1c4f2a5796c305bcd47f0362"
+        },
+        {
+          "json_pointer": "/additional_evidence/1/quote",
+          "sha256": "238dd84c75ec91425e68d768f5d1a7514f830d6cdb1ab7dc9b1b3034d62131c7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/additional_evidence/0/quote",
+          "sha256": "9c01434fc95f799c61d790f8ca4adab4d0321acc82fbc5ecd096de0445df62ca"
+        },
+        {
+          "json_pointer": "/additional_evidence/1/quote",
+          "sha256": "f951d5b15c050a197ddca1db84fa2c86561172c38a70c6d8d91ad0d19f8aaaa3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/additional_evidence/0/quote",
+          "sha256": "9c01434fc95f799c61d790f8ca4adab4d0321acc82fbc5ecd096de0445df62ca"
+        },
+        {
+          "json_pointer": "/additional_evidence/1/quote",
+          "sha256": "f951d5b15c050a197ddca1db84fa2c86561172c38a70c6d8d91ad0d19f8aaaa3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c436fe780f7a70420aaa9a32b77dadcd80342e71c59c74c9631e4045523653a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1fb6b7762ea254ee77f3c77d812e39e0e38a19813203f51d9cf1f89196cf648a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1fb6b7762ea254ee77f3c77d812e39e0e38a19813203f51d9cf1f89196cf648a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1fb6b7762ea254ee77f3c77d812e39e0e38a19813203f51d9cf1f89196cf648a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1fb6b7762ea254ee77f3c77d812e39e0e38a19813203f51d9cf1f89196cf648a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "210f5874c9c1474e157fd4387025f85b4ee88536abd710e50114b68210a7e7b8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "210f5874c9c1474e157fd4387025f85b4ee88536abd710e50114b68210a7e7b8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "210f5874c9c1474e157fd4387025f85b4ee88536abd710e50114b68210a7e7b8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "210f5874c9c1474e157fd4387025f85b4ee88536abd710e50114b68210a7e7b8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dccc8941d6e8cebc82ec51b82030dfc353102016216fa879049ca6ffb9121c21"
+        },
+        {
+          "json_pointer": "/date_evidence/quote",
+          "sha256": "043f62fdfb8f462d897acfeabcdfcccca56fd968954aa25d3647ca9c3506eded"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dccc8941d6e8cebc82ec51b82030dfc353102016216fa879049ca6ffb9121c21"
+        },
+        {
+          "json_pointer": "/date_evidence/quote",
+          "sha256": "043f62fdfb8f462d897acfeabcdfcccca56fd968954aa25d3647ca9c3506eded"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dccc8941d6e8cebc82ec51b82030dfc353102016216fa879049ca6ffb9121c21"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dccc8941d6e8cebc82ec51b82030dfc353102016216fa879049ca6ffb9121c21"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7c6ec178768ea0ab6b0e705a0ff39ef7a8e73beeac69cea8a9e25742996a8be3"
+        },
+        {
+          "json_pointer": "/date_evidence/quote",
+          "sha256": "b1e568c041bb605916911ed6752461f6d181462f45be6489a679593e35c9de35"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7c6ec178768ea0ab6b0e705a0ff39ef7a8e73beeac69cea8a9e25742996a8be3"
+        },
+        {
+          "json_pointer": "/date_evidence/quote",
+          "sha256": "b1e568c041bb605916911ed6752461f6d181462f45be6489a679593e35c9de35"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7c6ec178768ea0ab6b0e705a0ff39ef7a8e73beeac69cea8a9e25742996a8be3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7c6ec178768ea0ab6b0e705a0ff39ef7a8e73beeac69cea8a9e25742996a8be3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a6db6d42f3eebff0bf00ddc35db9de08fceb033fb0975a3d428c8ca3fbb2f539"
+        },
+        {
+          "json_pointer": "/date_evidence/quote",
+          "sha256": "f2fdc7a5196f9b940542cbb04e9e69c98073b8accc50885c306c6eb5b0d1e9f3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a6db6d42f3eebff0bf00ddc35db9de08fceb033fb0975a3d428c8ca3fbb2f539"
+        },
+        {
+          "json_pointer": "/date_evidence/quote",
+          "sha256": "f2fdc7a5196f9b940542cbb04e9e69c98073b8accc50885c306c6eb5b0d1e9f3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a6db6d42f3eebff0bf00ddc35db9de08fceb033fb0975a3d428c8ca3fbb2f539"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a6db6d42f3eebff0bf00ddc35db9de08fceb033fb0975a3d428c8ca3fbb2f539"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fd73e1a3afc6efff04150909ec02742fccd452e4774706cfab24ee2f3062db00"
+        },
+        {
+          "json_pointer": "/date_evidence/quote",
+          "sha256": "51c7e969d87ebb1b2b3f54759636815897c2fff1d6c7b63d46715cbe53c1be53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fd73e1a3afc6efff04150909ec02742fccd452e4774706cfab24ee2f3062db00"
+        },
+        {
+          "json_pointer": "/date_evidence/quote",
+          "sha256": "51c7e969d87ebb1b2b3f54759636815897c2fff1d6c7b63d46715cbe53c1be53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fd73e1a3afc6efff04150909ec02742fccd452e4774706cfab24ee2f3062db00"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fd73e1a3afc6efff04150909ec02742fccd452e4774706cfab24ee2f3062db00"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4b931e47389c9ac28e145bcc770919fac3c550e0de419a0bdea4eab03af50902"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4b931e47389c9ac28e145bcc770919fac3c550e0de419a0bdea4eab03af50902"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4b931e47389c9ac28e145bcc770919fac3c550e0de419a0bdea4eab03af50902"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4b931e47389c9ac28e145bcc770919fac3c550e0de419a0bdea4eab03af50902"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9c47eeacc841e512144f898627e5621dc77e8f6de2748a7eb3b250df619817e5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9c47eeacc841e512144f898627e5621dc77e8f6de2748a7eb3b250df619817e5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9c47eeacc841e512144f898627e5621dc77e8f6de2748a7eb3b250df619817e5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9c47eeacc841e512144f898627e5621dc77e8f6de2748a7eb3b250df619817e5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f1a76efcc19fd64b6997679aeccf24831241f3ce2a584ba0d361de893f20055b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "260353ec28ecda9d435fa0c93fc0d924b5f5b74f37088a4db61ff185cb1cedf7"
+        },
+        {
+          "json_pointer": "/people/tju-daisong/identity_evidence/0/quote",
+          "sha256": "05c98da2820be0e584fca810f2b9a488b09bde334c6422e39b23da0a31668167"
+        },
+        {
+          "json_pointer": "/people/tju-daisong/education/0/evidence/0/quote",
+          "sha256": "ab12321554417f32f1b49490cd9e2f7211c0b0fd57d1fe9e79b494e4fd4f1eb7"
+        },
+        {
+          "json_pointer": "/people/tju-daisong/education/1/evidence/0/quote",
+          "sha256": "cc84d4c1584645c749ba7eb8b41e7ecc98a3aeadbc875fb39d5dce43518b1301"
+        },
+        {
+          "json_pointer": "/people/tju-daisong/publications/0/evidence/0/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/people/tju-daisong/publications/1/evidence/0/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/people/tju-daisong/appointments/0/evidence/0/quote",
+          "sha256": "6acc9cc9ab12f8abb00b10e18bb5753438c7feaac78d8e83bc86587bfe14dd10"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "05c98da2820be0e584fca810f2b9a488b09bde334c6422e39b23da0a31668167"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "ab12321554417f32f1b49490cd9e2f7211c0b0fd57d1fe9e79b494e4fd4f1eb7"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "cc84d4c1584645c749ba7eb8b41e7ecc98a3aeadbc875fb39d5dce43518b1301"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "6acc9cc9ab12f8abb00b10e18bb5753438c7feaac78d8e83bc86587bfe14dd10"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "ab12321554417f32f1b49490cd9e2f7211c0b0fd57d1fe9e79b494e4fd4f1eb7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ab12321554417f32f1b49490cd9e2f7211c0b0fd57d1fe9e79b494e4fd4f1eb7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ab12321554417f32f1b49490cd9e2f7211c0b0fd57d1fe9e79b494e4fd4f1eb7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ab12321554417f32f1b49490cd9e2f7211c0b0fd57d1fe9e79b494e4fd4f1eb7"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "cc84d4c1584645c749ba7eb8b41e7ecc98a3aeadbc875fb39d5dce43518b1301"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "cc84d4c1584645c749ba7eb8b41e7ecc98a3aeadbc875fb39d5dce43518b1301"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "cc84d4c1584645c749ba7eb8b41e7ecc98a3aeadbc875fb39d5dce43518b1301"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "cc84d4c1584645c749ba7eb8b41e7ecc98a3aeadbc875fb39d5dce43518b1301"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "6acc9cc9ab12f8abb00b10e18bb5753438c7feaac78d8e83bc86587bfe14dd10"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6acc9cc9ab12f8abb00b10e18bb5753438c7feaac78d8e83bc86587bfe14dd10"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6acc9cc9ab12f8abb00b10e18bb5753438c7feaac78d8e83bc86587bfe14dd10"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6acc9cc9ab12f8abb00b10e18bb5753438c7feaac78d8e83bc86587bfe14dd10"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c7d684ac74b054b8d8235ec947b8909521daccc7d84d5de1d2c8ef4bc3fb2b47"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dec0907d1e7035a4c142144f5f5769258a1ad8ca81e7a605fed568b1ffd7df43"
+        },
+        {
+          "json_pointer": "/people/tju-hanzhongjie/identity_evidence/0/quote",
+          "sha256": "ed601686146e0d478c66f17f2604a003c62fb03ab04d706364baa7575e465364"
+        },
+        {
+          "json_pointer": "/people/tju-hanzhongjie/education/0/evidence/0/quote",
+          "sha256": "6a07c16452b32676df7560c5e300670c5d908aca9a5028ee1a62efe3d6a4153d"
+        },
+        {
+          "json_pointer": "/people/tju-hanzhongjie/education/1/evidence/0/quote",
+          "sha256": "88999e6eb46b93f820f1affcadff3e872f1d78085d60ba764b1643364d028646"
+        },
+        {
+          "json_pointer": "/people/tju-hanzhongjie/education/2/evidence/0/quote",
+          "sha256": "e1af8686395ca2d616a239258e0d7feb266ad7c6805961e073496fa9effb30c8"
+        },
+        {
+          "json_pointer": "/people/tju-hanzhongjie/professional_training/0/evidence/0/quote",
+          "sha256": "129dd412cc38c7c26cf1176eb8566a5476085faee07cab4da6c76f8e7d29675c"
+        },
+        {
+          "json_pointer": "/people/tju-hanzhongjie/professional_training/1/evidence/0/quote",
+          "sha256": "ed29d39ced353d6a8a787a7d745a4ca21c8ce71dc386766c9196b46adfe22497"
+        },
+        {
+          "json_pointer": "/people/tju-hanzhongjie/publications/0/evidence/0/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/people/tju-hanzhongjie/publications/1/evidence/0/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        },
+        {
+          "json_pointer": "/people/tju-hanzhongjie/appointments/0/evidence/0/quote",
+          "sha256": "f7246bc9796c131a4ec32876389c33a73a02199ee7ce15184cabb5f83f4d64f3"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "ed601686146e0d478c66f17f2604a003c62fb03ab04d706364baa7575e465364"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "6a07c16452b32676df7560c5e300670c5d908aca9a5028ee1a62efe3d6a4153d"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "88999e6eb46b93f820f1affcadff3e872f1d78085d60ba764b1643364d028646"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "e1af8686395ca2d616a239258e0d7feb266ad7c6805961e073496fa9effb30c8"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "129dd412cc38c7c26cf1176eb8566a5476085faee07cab4da6c76f8e7d29675c"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "ed29d39ced353d6a8a787a7d745a4ca21c8ce71dc386766c9196b46adfe22497"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "f7246bc9796c131a4ec32876389c33a73a02199ee7ce15184cabb5f83f4d64f3"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/professional_excerpts/8/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "6a07c16452b32676df7560c5e300670c5d908aca9a5028ee1a62efe3d6a4153d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6a07c16452b32676df7560c5e300670c5d908aca9a5028ee1a62efe3d6a4153d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6a07c16452b32676df7560c5e300670c5d908aca9a5028ee1a62efe3d6a4153d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6a07c16452b32676df7560c5e300670c5d908aca9a5028ee1a62efe3d6a4153d"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "88999e6eb46b93f820f1affcadff3e872f1d78085d60ba764b1643364d028646"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "88999e6eb46b93f820f1affcadff3e872f1d78085d60ba764b1643364d028646"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "88999e6eb46b93f820f1affcadff3e872f1d78085d60ba764b1643364d028646"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "88999e6eb46b93f820f1affcadff3e872f1d78085d60ba764b1643364d028646"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "e1af8686395ca2d616a239258e0d7feb266ad7c6805961e073496fa9effb30c8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e1af8686395ca2d616a239258e0d7feb266ad7c6805961e073496fa9effb30c8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e1af8686395ca2d616a239258e0d7feb266ad7c6805961e073496fa9effb30c8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e1af8686395ca2d616a239258e0d7feb266ad7c6805961e073496fa9effb30c8"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "129dd412cc38c7c26cf1176eb8566a5476085faee07cab4da6c76f8e7d29675c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "129dd412cc38c7c26cf1176eb8566a5476085faee07cab4da6c76f8e7d29675c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "129dd412cc38c7c26cf1176eb8566a5476085faee07cab4da6c76f8e7d29675c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "129dd412cc38c7c26cf1176eb8566a5476085faee07cab4da6c76f8e7d29675c"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "ed29d39ced353d6a8a787a7d745a4ca21c8ce71dc386766c9196b46adfe22497"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ed29d39ced353d6a8a787a7d745a4ca21c8ce71dc386766c9196b46adfe22497"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ed29d39ced353d6a8a787a7d745a4ca21c8ce71dc386766c9196b46adfe22497"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ed29d39ced353d6a8a787a7d745a4ca21c8ce71dc386766c9196b46adfe22497"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "f7246bc9796c131a4ec32876389c33a73a02199ee7ce15184cabb5f83f4d64f3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f7246bc9796c131a4ec32876389c33a73a02199ee7ce15184cabb5f83f4d64f3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f7246bc9796c131a4ec32876389c33a73a02199ee7ce15184cabb5f83f4d64f3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f7246bc9796c131a4ec32876389c33a73a02199ee7ce15184cabb5f83f4d64f3"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "dfc1a2640b707b5d90ea1e4d1cbfba46ab4086715bad15e9c1a6b0864e9a23a2"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f32c983e2a95cd84daa83570b28d7e4a95b0c83627befb327d8af0ec1630493"
+        }
+      ],
+      "org_mapping": [
+        {
+          "canonical_id": "tju-pharmaceutical-science-technology",
+          "name": "药物科学与技术学院",
+          "shared_with": "tju-shizhiyuan",
+          "identity_basis": "同校同中文学院，史志远与赵燕军各自原学院目录来自同一官方学院站且标题均明确药物科学与技术学院，不靠ID近似判同。",
+          "source_urls": [
+            "https://spst.tju.edu.cn/szdw/js_yjy/2.htm",
+            "https://spst.tju.edu.cn/kxyj/kyfx/yjx.htm"
+          ],
+          "parent_id": null,
+          "limit": "史医学部复合标签原样保留，不以共享展示节点推医学部父级；赵药学/药物不同历史用词不作更名判断。"
+        },
+        {
+          "canonical_id": "tju-math",
+          "identity_basis": "既有677节点与韩忠杰同校同中文数学学院，既有介绍及人物页同 math.tju.edu.cn 官方学院站。",
+          "source_urls": [
+            "https://math.tju.edu.cn/xyjs/xyjj.htm",
+            "https://math.tju.edu.cn/info/1715/5554.htm"
+          ],
+          "existing_parent_unchanged": "tju",
+          "limit": "旧节点属性不修改，韩原来源未核行政父级独立存。应用数学中心另建parentnull，不因学院网站托管推父子。"
+        }
+      ],
+      "mapping_notes": [
+        "刘三条授位均未知，张昕楠冲突/师承不误套；设计作品题名仍论文。",
+        "赵两条访问课题组负责人不转导师；星号作者角色未知、目录目标超时边界可见。",
+        "戴韩原partial和目录未核边界保留；韩2019页日期与2024作品分别保留，with合作者不推完整作者顺序。",
+        "所有department展示字段取原源；重要边界均放可见unknowns/note。"
+      ]
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧677事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
