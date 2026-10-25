@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import validate_metadata_transition as engine
 import source_date_history as history
+from published_fixture import published_root
 
 
 def archive(members):
@@ -105,8 +106,8 @@ class SyntheticMetadataNegatives(unittest.TestCase):
 
 
 class ReviewedMetadataTransition(unittest.TestCase):
-    def test_current_tree_and_every_changed_file_are_independently_strict(self):
-        actual = history.validate_current_tree()
+    def test_published_transition_tree_and_every_changed_file_are_independently_strict(self):
+        actual = history.validate_current_tree(published_root())
         baseline = history.load_transition()[1]
         self.assertEqual(len(baseline['files']), 398)
         self.assertEqual(set(actual), set(baseline['files']) | history.IMPLEMENTATION_ADDED_FILES)
@@ -114,7 +115,7 @@ class ReviewedMetadataTransition(unittest.TestCase):
     def test_all_398_historical_bytes_reconstruct_exactly(self):
         engine_, baseline, policy, source, manifest = history.load_transition()
         for rel, expected in baseline['files'].items():
-            raw = history.historical_bytes(rel)
+            raw = history.historical_bytes(rel, root=published_root())
             self.assertEqual(engine.sha256(raw), expected['sha256'], rel)
             self.assertEqual(len(raw), expected['bytes'], rel)
         self.assertEqual(policy['change_counts'], {'overview_header': 133, 'overall_review_notice': 612, 'availability_label': 568, 'classification_missing_date': 488, 'derived_column_width': 225, 'source_date_summary': 48})
@@ -144,7 +145,7 @@ class ReviewedMetadataTransition(unittest.TestCase):
         history.load_transition()  # Deliberately populate the parser cache first.
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            shutil.copytree(ROOT, root, dirs_exist_ok=True, ignore=shutil.ignore_patterns('__pycache__', '.git', '.pytest_cache', 'node_modules'))
+            shutil.copytree(published_root(), root, dirs_exist_ok=True, ignore=shutil.ignore_patterns('__pycache__', '.git', '.pytest_cache', 'node_modules'))
             history.validate_current_tree(root)
             loader = root / 'tests/source_date_history.py'; original_loader = loader.read_bytes()
             for changed in (original_loader + b'\n# unapproved comment\n', original_loader.replace(b'one explicit', b'one changed!')):
@@ -157,9 +158,9 @@ class ReviewedMetadataTransition(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Pinned bytes changed'):
                 history.validate_current_tree(root)
 
-    def test_original_canonical_people_and_source_contracts_remain_current_bytes(self):
+    def test_original_canonical_people_and_source_contracts_match_published_bytes(self):
         for rel in ['data/atlas.json', 'data/rosters.json', 'tests/fixtures/rotation003-wave8-source-contract.json', 'tests/fixtures/rotation003-wave8-clean-public-sources.json']:
-            self.assertEqual(history.historical_bytes(rel), (ROOT / rel).read_bytes(), rel)
+            self.assertEqual(history.historical_bytes(rel, root=published_root()), (published_root() / rel).read_bytes(), rel)
 
 
 if __name__ == '__main__': unittest.main()

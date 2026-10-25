@@ -10,6 +10,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from validate_source_contract import exact, replay, validate_contract
+from published_fixture import published_root
 
 CONTRACT = 'tests/fixtures/rotation003-wave8-source-contract.json'
 CONTRACT_SHA256 = '65c2a67e2cb10893fc3d0b42c8bcc94cc0d8eb85741b7427e44133d34d7c2a95'
@@ -27,8 +28,8 @@ class SourceContractTests(unittest.TestCase):
     def test_frozen_source_fixture(self):
         self.assertEqual(hashlib.sha256((ROOT / FIXTURE).read_bytes()).hexdigest(), FIXTURE_SHA256)
 
-    def test_frozen_candidate_contract(self):
-        result = validate_contract(ROOT, CONTRACT, expected_contract_sha256=CONTRACT_SHA256)
+    def test_frozen_published_candidate_contract(self):
+        result = validate_contract(published_root(), CONTRACT, expected_contract_sha256=CONTRACT_SHA256)
         self.assertEqual(result['status'], 'passed')
 
     def test_replay_is_exact(self):

@@ -1,4 +1,5 @@
 from source_date_history import historical_bytes
+from published_fixture import published_root
 """Two evidence-bound Chen Ke teaching-role aliases, with no implementation change.
 Self-contained offline regression; no research/baseline dependency or output writes.
 """
@@ -336,7 +337,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
         self.assertEqual(len(UNCHANGED_DEPARTMENT_WORKBOOKS),110)
         for file,digest in UNCHANGED_DEPARTMENT_WORKBOOKS.items():
             self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),digest,file)
-        self.assertEqual(hashlib.sha256((ROOT/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),endpoint_sha256('site/exports/待核对名录.xlsx',RELEASE31_PUBLIC_METADATA_PIN_OVERLAY['site/exports/待核对名录.xlsx']))
+        self.assertEqual(hashlib.sha256((published_root()/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),endpoint_sha256('site/exports/待核对名录.xlsx',RELEASE31_PUBLIC_METADATA_PIN_OVERLAY['site/exports/待核对名录.xlsx']))
 
     def test_11_alias_guard_rejects_every_added_leaf_mutation_and_cross_source_swap(self):
         paths=[(key,)for key in ROLE_KEYS]+[('field_provenance','role'),('field_status','role')]

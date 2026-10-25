@@ -1,3 +1,4 @@
+import {publishedRoot} from './published-fixture.js';
 import {historicalBytes} from './source-date-history.js';
 import {endpointSha256} from './public-append-history.js';
 const RELEASE31_PUBLIC_METADATA_PIN_OVERLAY={"data/atlas.json": "2f843a600ef79f9b6d24ee98b702ed17dc335c776c4893f0316b5064ba3474fb", "data/rosters.json": "fa3fd547a59c10a5e6285523fbcd5e3215b6076f59f0a9246554fedbf2e3a83e", "site/atlas.json": "7d712a1f1e7d83d6093242dd0e9e12bb9d39d2183c33e4f7ffdecb2846caa327", "site/rosters.json": "35cad326388607f1abac4e9efbd05dbefa1eb4a1a7b7ffbc1ed194a1ee56dc27"};
@@ -19,11 +20,12 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 
 const root=process.env.ACADEMIC_ATLAS_TEST_ROOT||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const {educationStageLabel,stages,matches,mentorEvents}=await import(pathToFileURL(path.join(root,'site/model.js')));
-const read=name=>historicalBytes(name,root);
+// Exact historical inputs; model/app imports above and below remain LIVE.
+const readPublished=name=>historicalBytes(name,publishedRoot());
 const digest=value=>createHash('sha256').update(value).digest('hex');
 const objectDigest=value=>digest(JSON.stringify(value));
-const db=release25View(JSON.parse(read('data/atlas.json')),'data/atlas.json');
-db.rosters=release25View(JSON.parse(read('data/rosters.json')),'data/rosters.json');
+const db=release25View(JSON.parse(readPublished('data/atlas.json')),'data/atlas.json');
+db.rosters=release25View(JSON.parse(readPublished('data/rosters.json')),'data/rosters.json');
 const person=id=>db.people.find(p=>p.person_id===id);
 const event=id=>db.people.flatMap(p=>p.education||[]).find(e=>e.event_id===id);
 const UNDERGRADUATE='本科阶段学习（学位及授位未核实）';
@@ -47,8 +49,8 @@ const RELEASE24_DATA_SHA256={
 let fixturePromise;
 async function fixture(){
   return fixturePromise??=(async()=>{
-    const view=JSON.parse(read('site/atlas.json')),nodes=new Map(),listeners={};
-    view.rosters=JSON.parse(read('site/rosters.json'));
+    const view=JSON.parse(readPublished('site/atlas.json')),nodes=new Map(),listeners={};
+    view.rosters=JSON.parse(readPublished('site/rosters.json'));
     const node=key=>{
       if(!nodes.has(key))nodes.set(key,{innerHTML:'',textContent:'',value:'',style:{},dataset:{height:'320'},clientWidth:960,
         addEventListener(){},click(){this.onclick?.()},scrollIntoView(){},querySelector(selector){return node(selector)}});
@@ -78,7 +80,7 @@ function educationRows(html){
 }
 
 test('reviewed release25 append endpoint pins all four canonical and generated data files exactly',()=>{
-  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),endpointSha256(file,RELEASE31_PUBLIC_METADATA_PIN_OVERLAY[file]||RELEASE31_PIN_OVERLAY[file]||RELEASE30_PIN_OVERLAY[file]||RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash),file);
+  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(readPublished(file)),endpointSha256(file,RELEASE31_PUBLIC_METADATA_PIN_OVERLAY[file]||RELEASE31_PIN_OVERLAY[file]||RELEASE30_PIN_OVERLAY[file]||RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash),file);
 });
 
 test('exactly four previously generic event fallbacks acquire uncertainty-preserving labels',()=>{
@@ -178,7 +180,7 @@ test('confirmed-degree membership and 122 education filters stay identical for a
 test('the six existing asset references move together to the exact reviewed rotation003 token',()=>{
   const counts={'site/app.js':3,'site/rosters.js':1,'site/index.html':2};
   for(const [file,count] of Object.entries(counts)){
-    const source=read(file).toString();
+    const source=readPublished(file).toString();
     assert.equal((source.match(/rotation003-20261024-w2/g)||[]).length,count,file);
     assert(!source.includes('rotation002-20261023-w1'),file);
   }
@@ -192,5 +194,5 @@ test('real consumers and model projections do not mutate the canonical source sc
     for(const type of ['bachelor','master','doctor'])stages(person(id),type);
   }
   assert.equal(JSON.stringify(db),before);
-  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(read(file)),endpointSha256(file,RELEASE31_PUBLIC_METADATA_PIN_OVERLAY[file]||RELEASE31_PIN_OVERLAY[file]||RELEASE30_PIN_OVERLAY[file]||RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash),file);
+  for(const [file,hash] of Object.entries(RELEASE24_DATA_SHA256))assert.equal(digest(readPublished(file)),endpointSha256(file,RELEASE31_PUBLIC_METADATA_PIN_OVERLAY[file]||RELEASE31_PIN_OVERLAY[file]||RELEASE30_PIN_OVERLAY[file]||RELEASE29_PIN_OVERLAY[file]||RELEASE28_PIN_OVERLAY[file]||RELEASE27_PIN_OVERLAY[file]||RELEASE26_DATA_SHA256[file]||RELEASE25_ROLE_DISPLAY_DATA_SHA256[file]||RELEASE25_DATA_SHA256[file]||hash),file);
 });

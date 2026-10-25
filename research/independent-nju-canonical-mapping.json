@@ -1,0 +1,264 @@
+{
+  "schema_version": "independent-nju-canonical-mapping-1",
+  "baseline_commit": "1458f4584a52a448461a5f72489efdc873305bd8",
+  "source_input_sha256": "fbdd49f0dda95ce81c94db7138a68ed8e9feb5d7d59815f3b08d408827da1107",
+  "source_evidence_sha256": "a47cd1ca87f99d2a11af0996f1c95fa37d8f4186ac7ca7d0fe4bb418a953c92b",
+  "source_review_sha256": "74a4eba4a416fc94a2f3a91f2d2a4fdb4023d262ce6dc249c45bee1b23dbd151",
+  "source_hash_scope": "retained_source_package_bytes_not_complete_webpage",
+  "source_retrieved_date": "2026-10-24",
+  "new_people": [
+    "nju-shiyini",
+    "nju-yangderui"
+  ],
+  "new_org_ids": [
+    "nju-social-sciences"
+  ],
+  "counts": {
+    "people": 2,
+    "education": 5,
+    "explicit_degree_awards": 4,
+    "nondegree_exchange": 1,
+    "mentors": 0,
+    "publications": 2,
+    "teaching": 8,
+    "dated_appointments": 2
+  },
+  "sources": [
+    {
+      "id": "nju-shiyini-profile",
+      "url": "https://sociology.nju.edu.cn/81/04/c58988a753924/page3.htm",
+      "title": "施旖旎",
+      "source_type": "university_official",
+      "evidence_status": "retained_professional_excerpts_checked",
+      "retrieved_at": "2026-10-24",
+      "observed_at": "2026-10-24T22:57:22Z",
+      "observation_interval_utc": {
+        "not_before": "2026-10-24T22:57:11Z",
+        "not_after": "2026-10-24T22:57:22Z"
+      },
+      "published_at": null,
+      "last_modified": null,
+      "source_locators": [
+        "师资队伍分类导航",
+        "姓名及职称头部",
+        "研究领域栏目",
+        "简介中的职业角色陈述",
+        "简介中的求学、授位及本科交换段落",
+        "简介末尾的研究方向说明",
+        "授课信息／本科课程",
+        "授课信息／硕士课程",
+        "代表成果第3项",
+        "代表成果第4项"
+      ],
+      "evidence_scope": "已核对先前留存的必要职业摘录；不是网页全量、当前在岗或本次重新访问证明。",
+      "public_raw_cache": false
+    },
+    {
+      "id": "nju-yangderui-profile",
+      "url": "https://sociology.nju.edu.cn/9c/bf/c58990a695487/page1.htm",
+      "title": "杨德睿",
+      "source_type": "university_official",
+      "evidence_status": "retained_professional_excerpts_checked",
+      "retrieved_at": "2026-10-24",
+      "observed_at": "2026-10-24T22:57:32Z",
+      "observation_interval_utc": {
+        "not_before": "2026-10-24T22:57:22Z",
+        "not_after": "2026-10-24T22:57:32Z"
+      },
+      "published_at": null,
+      "last_modified": null,
+      "source_locators": [
+        "师资队伍分类导航",
+        "姓名及职称头部",
+        "研究领域栏目",
+        "简介中的硕士与博士授位陈述",
+        "简介中的两段起任陈述",
+        "授课信息／本科课程",
+        "授课信息／研究生课程"
+      ],
+      "evidence_scope": "已核对先前留存的必要职业摘录；不是网页全量、当前在岗或本次重新访问证明。",
+      "public_raw_cache": false
+    },
+    {
+      "id": "nju-social-work-directory",
+      "url": "https://sociology.nju.edu.cn/shgzyshzcx/list.htm",
+      "title": "社会工作与社会政策系",
+      "source_type": "university_official",
+      "evidence_status": "retained_professional_excerpts_checked",
+      "retrieved_at": "2026-10-24",
+      "observed_at": "2026-10-24T22:57:58Z",
+      "observation_interval_utc": null,
+      "published_at": null,
+      "last_modified": null,
+      "source_locators": [
+        "师资队伍分类导航",
+        "全职教师／社会工作与社会政策系／施旖旎条目"
+      ],
+      "evidence_scope": "已核对先前留存的必要职业摘录；不是网页全量、当前在岗或本次重新访问证明。",
+      "public_raw_cache": false
+    },
+    {
+      "id": "nju-anthropology-directory",
+      "url": "https://sociology.nju.edu.cn/rlxyjs/list.htm",
+      "title": "人类学研究所",
+      "source_type": "university_official",
+      "evidence_status": "retained_professional_excerpts_checked",
+      "retrieved_at": "2026-10-24",
+      "observed_at": "2026-10-24T22:58:12Z",
+      "observation_interval_utc": null,
+      "published_at": null,
+      "last_modified": null,
+      "source_locators": [
+        "师资队伍分类导航",
+        "全职教师／人类学研究所／杨德睿条目"
+      ],
+      "evidence_scope": "已核对先前留存的必要职业摘录；不是网页全量、当前在岗或本次重新访问证明。",
+      "public_raw_cache": false
+    }
+  ],
+  "mapping": {
+    "education": "education plus professional_training -> education; degree_award -> degree, undergraduate_exchange -> exchange; original event_kind retained as source_event_kind and source event IDs unchanged",
+    "dates": "award year retained separately and in display note; no start/end or full award date invented",
+    "mentors": "empty source mentor_relations/formal_dissertation_advisors -> empty mentors/committee_members",
+    "teaching": "original course title retained and aliased to existing name field; specific role unknown is source_role:null with schema-required display role 未披露; excluded from learning/mentor counts",
+    "papers": "source title/authors/year/venue retained, venue alias and source-only link; exact retained bibliographic volume/issue/page/index fields added",
+    "status": "unknown current personnel and unverified native directory links stay unknown/false",
+    "organization": "one original society-school node with unknown administrative parent; observed lower units retained per person, no new hierarchy claim",
+    "text": "necessary fact fields retained; prose quote strings replaced with SHA256 evidence fingerprints; private retained excerpt file remains original",
+    "source_locators": "工具返回的行号仅保留于非公开原始材料；公开定位使用对应栏目、段落和条目语义。"
+  },
+  "source_excerpt_fingerprints": [
+    {
+      "source_id": "nju-shiyini-profile",
+      "source_url": "https://sociology.nju.edu.cn/81/04/c58988a753924/page3.htm",
+      "semantic_locator": "师资队伍分类导航",
+      "sha256": "1025a6fd9114fa49b2e224b22cb779d31108a29e3c46ee11e342a6b3dd2ceec8"
+    },
+    {
+      "source_id": "nju-shiyini-profile",
+      "source_url": "https://sociology.nju.edu.cn/81/04/c58988a753924/page3.htm",
+      "semantic_locator": "姓名及职称头部",
+      "sha256": "8d074794fa320a0b50808860edae31963d5e30e5f2574f4de52bb308171b9027"
+    },
+    {
+      "source_id": "nju-shiyini-profile",
+      "source_url": "https://sociology.nju.edu.cn/81/04/c58988a753924/page3.htm",
+      "semantic_locator": "研究领域栏目",
+      "sha256": "c52593490f46ab7ab21c93a55cf4d1747bbd4224541ca0321e1daf5b037201f5"
+    },
+    {
+      "source_id": "nju-shiyini-profile",
+      "source_url": "https://sociology.nju.edu.cn/81/04/c58988a753924/page3.htm",
+      "semantic_locator": "简介中的职业角色陈述",
+      "sha256": "e9ac9635115f79c44f151d14a56c762adaf09122cc25d2972a4aea17ce58cd08"
+    },
+    {
+      "source_id": "nju-shiyini-profile",
+      "source_url": "https://sociology.nju.edu.cn/81/04/c58988a753924/page3.htm",
+      "semantic_locator": "简介中的求学、授位及本科交换段落",
+      "sha256": "96bbafb7b573748035246fbd3a830f4c42ee445f5046aab6eed60ff3304da490"
+    },
+    {
+      "source_id": "nju-shiyini-profile",
+      "source_url": "https://sociology.nju.edu.cn/81/04/c58988a753924/page3.htm",
+      "semantic_locator": "简介末尾的研究方向说明",
+      "sha256": "068fcbb04cf24c1b4dad093d4cdc1a4731d670daf1caca5659af9b867d17180b"
+    },
+    {
+      "source_id": "nju-shiyini-profile",
+      "source_url": "https://sociology.nju.edu.cn/81/04/c58988a753924/page3.htm",
+      "semantic_locator": "授课信息／本科课程",
+      "sha256": "d6c5160bd059e74badbfff756dde0bea425f7f006cecb5c8d9224f51dba82fc5"
+    },
+    {
+      "source_id": "nju-shiyini-profile",
+      "source_url": "https://sociology.nju.edu.cn/81/04/c58988a753924/page3.htm",
+      "semantic_locator": "授课信息／硕士课程",
+      "sha256": "178367140b9c23419a656103056b7c4b13b6a807c5e0d9d378468617d0405250"
+    },
+    {
+      "source_id": "nju-shiyini-profile",
+      "source_url": "https://sociology.nju.edu.cn/81/04/c58988a753924/page3.htm",
+      "semantic_locator": "代表成果第3项",
+      "sha256": "a5c1aa3b9fcee33dee6b8404e67a9ae9bbabf92ebb2dfe86cad5075264f17be1"
+    },
+    {
+      "source_id": "nju-shiyini-profile",
+      "source_url": "https://sociology.nju.edu.cn/81/04/c58988a753924/page3.htm",
+      "semantic_locator": "代表成果第4项",
+      "sha256": "dc235afae17986f4388a4471affc3d693ef40839173c0fa612cd7c3f164a5cdb"
+    },
+    {
+      "source_id": "nju-yangderui-profile",
+      "source_url": "https://sociology.nju.edu.cn/9c/bf/c58990a695487/page1.htm",
+      "semantic_locator": "师资队伍分类导航",
+      "sha256": "96123da6596763586cb3cc4873a40f6e67afa54044270b317e204d251830901e"
+    },
+    {
+      "source_id": "nju-yangderui-profile",
+      "source_url": "https://sociology.nju.edu.cn/9c/bf/c58990a695487/page1.htm",
+      "semantic_locator": "姓名及职称头部",
+      "sha256": "667fc2d37a7fcc44b6c22b302e8ea09ff90e7228088bc01ea407dc38546bb261"
+    },
+    {
+      "source_id": "nju-yangderui-profile",
+      "source_url": "https://sociology.nju.edu.cn/9c/bf/c58990a695487/page1.htm",
+      "semantic_locator": "研究领域栏目",
+      "sha256": "c7265297ec7282024dbc91d8d96a5975bf584f84e6d5f1f51d0ca91f979751f3"
+    },
+    {
+      "source_id": "nju-yangderui-profile",
+      "source_url": "https://sociology.nju.edu.cn/9c/bf/c58990a695487/page1.htm",
+      "semantic_locator": "简介中的硕士与博士授位陈述",
+      "sha256": "636f579cfc423255a8b8c819858b2c7492f395ce8d8c7a7c3ab724be071d99c3"
+    },
+    {
+      "source_id": "nju-yangderui-profile",
+      "source_url": "https://sociology.nju.edu.cn/9c/bf/c58990a695487/page1.htm",
+      "semantic_locator": "简介中的两段起任陈述",
+      "sha256": "3f4bd021a7c02e3e16ea9aed6b0eb2cf23dc3abea9f47ee47ddc950eb77dd5b8"
+    },
+    {
+      "source_id": "nju-yangderui-profile",
+      "source_url": "https://sociology.nju.edu.cn/9c/bf/c58990a695487/page1.htm",
+      "semantic_locator": "授课信息／本科课程",
+      "sha256": "565f31b48ac0ee0b002a015321c55b9335af10c47a00c0cfe5e8f21bd8192106"
+    },
+    {
+      "source_id": "nju-yangderui-profile",
+      "source_url": "https://sociology.nju.edu.cn/9c/bf/c58990a695487/page1.htm",
+      "semantic_locator": "授课信息／研究生课程",
+      "sha256": "5bed7318ebe92cf90ba050f0f43bbe691052ee7cfd70c340e16948b00413608f"
+    },
+    {
+      "source_id": "nju-social-work-directory",
+      "source_url": "https://sociology.nju.edu.cn/shgzyshzcx/list.htm",
+      "semantic_locator": "师资队伍分类导航",
+      "sha256": "1025a6fd9114fa49b2e224b22cb779d31108a29e3c46ee11e342a6b3dd2ceec8"
+    },
+    {
+      "source_id": "nju-social-work-directory",
+      "source_url": "https://sociology.nju.edu.cn/shgzyshzcx/list.htm",
+      "semantic_locator": "全职教师／社会工作与社会政策系／施旖旎条目",
+      "sha256": "9714b06a58804edcb3ec9b2bd7e0819b243623b87abfa821193c21034579907c"
+    },
+    {
+      "source_id": "nju-anthropology-directory",
+      "source_url": "https://sociology.nju.edu.cn/rlxyjs/list.htm",
+      "semantic_locator": "师资队伍分类导航",
+      "sha256": "96123da6596763586cb3cc4873a40f6e67afa54044270b317e204d251830901e"
+    },
+    {
+      "source_id": "nju-anthropology-directory",
+      "source_url": "https://sociology.nju.edu.cn/rlxyjs/list.htm",
+      "semantic_locator": "全职教师／人类学研究所／杨德睿条目",
+      "sha256": "380926d90e162500796c361871d46a25f3c49474ddcc5fc3d1044b1fce801b0e"
+    }
+  ],
+  "retained_limits": [
+    "No new network observation; evidence is prior retained necessary occupational excerpts.",
+    "No original thesis or publisher metadata authentication.",
+    "No current-personnel certification, whole-school coverage or complete profile claim.",
+    "Original source sentence hashes permit traceability without republishing long narrative quotations."
+  ]
+}

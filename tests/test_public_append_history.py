@@ -1,4 +1,5 @@
 from source_date_history import historical_root
+from published_fixture import published_root
 """Generic append conservation and independent synthetic endpoint negatives."""
 import copy
 import json
@@ -338,7 +339,8 @@ class ReviewedSourceScopeAdapter(unittest.TestCase):
             contract, ref, audits = self.synthetic(); mutate(contract)
             with self.assertRaises(ValueError): history.reviewed_scope_from_contract(contract, ref, audits)
 
-    def test_pinned_candidate_has_complete_tree_suffix_and_source_closure(self):
+    def test_pinned_published_candidate_has_complete_tree_suffix_and_source_closure(self):
+        released = published_root()
         manifest = history.load_current_append_manifest()
         inventory = history.load_inventory()
         if manifest is None:
@@ -349,19 +351,19 @@ class ReviewedSourceScopeAdapter(unittest.TestCase):
                            'implementation_added_files': sorted(history.IMPLEMENTATION_ADDED_FILES - pending),
                            'implementation_modified_files': {rel: {'before_sha256': inventory['files'][rel]['sha256']}
                                                              for rel in history.IMPLEMENTATION_MODIFIED_FILES}}
-            history.validate_tree(ROOT, preparation, inventory)
+            history.validate_tree(released, preparation, inventory)
             return
         source_ref = manifest['source_contract']
-        source = history.pinned_json((ROOT / source_ref['path']).read_bytes(), source_ref['sha256'])
+        source = history.pinned_json((released / source_ref['path']).read_bytes(), source_ref['sha256'])
         scope = history.reviewed_scope_from_contract(source, source_ref, manifest['audit_digests'])
-        with historical_root(ROOT) as released_root:
+        with historical_root(released) as released_root:
             history.validate_tree(released_root, manifest, inventory)
-        documents = {rel: json.loads((ROOT / rel).read_bytes()) for rel in history.load_baseline()['files']}
+        documents = {rel: json.loads((released / rel).read_bytes()) for rel in history.load_baseline()['files']}
         history.validate_reviewed_suffixes(documents, scope)
         import importlib.util
-        spec = importlib.util.spec_from_file_location('reviewed_source_contract_validator', ROOT / 'scripts/validate_source_contract.py')
+        spec = importlib.util.spec_from_file_location('reviewed_source_contract_validator', released / 'scripts/validate_source_contract.py')
         validator = importlib.util.module_from_spec(spec); spec.loader.exec_module(validator)
-        result = validator.validate_contract(ROOT, source_ref['path'], check_generated=True,
+        result = validator.validate_contract(released, source_ref['path'], check_generated=True,
                                              expected_contract_sha256=source_ref['sha256'])
         self.assertEqual(result['status'], 'passed')
 
