@@ -1,0 +1,2022 @@
+{
+  "schema_version": "independent-nju10-canonical-mapping-1",
+  "baseline_commit": "aa54e789829b799b45506593c62df910942f8a8b",
+  "new_people": [
+    "nju-huxiaowu",
+    "nju-caipingqiang",
+    "nju-linzhaoyu",
+    "nju-huying",
+    "nju-zhangwei-linguistics",
+    "nju-lvlinhai-education",
+    "nju-liyougen-law",
+    "nju-chenbaojun",
+    "nju-jiangfei",
+    "nju-zhoujiaxin"
+  ],
+  "new_org_ids": [
+    "nju-philosophy",
+    "nju-medical",
+    "nju-sfs",
+    "nju-education",
+    "nju-law",
+    "nju-law-economic-law",
+    "nju-atmospheric-sciences",
+    "nju-essi"
+  ],
+  "counts": {
+    "people": 10,
+    "org_units": 8,
+    "education": 33,
+    "appointments": 17,
+    "publications": 18,
+    "mentors": 10,
+    "teaching": 11,
+    "degree_true": 17,
+    "degree_false": 11,
+    "degree_unknown": 5
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "wave25-339",
+      "canonical_payload_sha256": "1b26bce9a5228333b67b69a1e1d3f5be0e29a8e74969c1ed96b41e927be2e8dd",
+      "field_mapping_sha256": "7be35c9861491a884779f2c4047128e4c2c2b776e101526fe4b4e986223fe745",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "medical",
+      "canonical_payload_sha256": "5aec75c2996bd5c2633aabc99c61192a0b93f62724f2f57d4b5079f9c18440fd",
+      "field_mapping_sha256": "641385bd82003e5ff710c90a672fdebb59ca924283a5318e44e5f006227d9b56",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "wave162",
+      "canonical_payload_sha256": "20802c7e8dbb5232a8f27bcc03391d38887506d227138773156906a344a277aa",
+      "field_mapping_sha256": "b7478ad6d32690ae42cc50f812b7eeb448f64d47674ce273b439104551e221fb",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "education-law",
+      "canonical_payload_sha256": "d706147370e691c0d6d5d983ed05b7ae9c9034b22586a8c1cc19a17a51e848e1",
+      "field_mapping_sha256": "90118a555460a58f94215bcb85c92be8a4d2cff4b25a7acf786c9687b0b8bb84",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "earth",
+      "canonical_payload_sha256": "4deadb87d14b143986639784b4988206c0836e1a4c7e53779de04867f61c4e7c",
+      "field_mapping_sha256": "d4a1bc232a9e242809e4b918b3a0c5d9d2c916bc0433e089b9d6379fdedff730",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "schema_version": "nju10-wave25-339-field-mapping-1",
+      "new_people": [
+        "nju-huxiaowu",
+        "nju-zhoujiaxin"
+      ],
+      "source_inputs": [
+        {
+          "source_batch_id": "research-rotation003-wave25-dlut-nju-purposeful",
+          "candidate_sha256": "ba9a834fd5b802879ad093dfa0b98c4a80cd56b4dd08f6f8964753301585b30d",
+          "evidence_sha256": "ba771af59a39d01f33cb36a74c74790c9df36bd8936745b8aaad69adc976cd86",
+          "review_sha256": "112af27d92ee6c30e58e369e065a7ece20a02f04ce965af8c46eb9f4a928b41a"
+        },
+        {
+          "source_batch_id": "research-wave339-nju-purposeful",
+          "candidate_sha256": "c3c5608ff26854e1e27304729701928997d6d40685f552c65c18697419c8c659",
+          "evidence_sha256": "b2c2224ce2a71773add3b256d4e58dea9ba8d420e5e4161544ce0ba2d169624e",
+          "review_sha256": "b594782ecc9283cafbeb28a6201ae690f40808126e1a8e3ba71596419223f043"
+        }
+      ],
+      "hash_scope": "retained_package_file_bytes_not_complete_webpage",
+      "sources": [
+        {
+          "id": "nju-huxiaowu-cv",
+          "url": "https://sociology.nju.edu.cn/_upload/article/files/41/95/7809386148a4a4f31250cdd315c6/830e66b4-234e-41f3-b1e2-ebf2578e2911.pdf",
+          "title": "nju-huxiaowu-cv",
+          "source_type": "university_official",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T12:55:57Z",
+          "published_at": null,
+          "last_modified": null,
+          "evidence_status": "official_cv_pdf_text_extraction",
+          "source_locators": [
+            "简历首页教育任职和研究领域；个人专著前两项"
+          ],
+          "evidence_scope": "既有必要职业摘录；非完整网页或PDF存档。",
+          "public_raw_cache": false,
+          "observation_time_basis": "UTC system reminder immediately following this tool return; not origin-server response timestamp",
+          "source_displayed_document_year": 2024,
+          "original_pdf_retained": false,
+          "pdf_visual_verification": false
+        },
+        {
+          "id": "nju-huxiaowu-profile",
+          "url": "https://sociology.nju.edu.cn/9a/6a/c58987a694890/page3.htm",
+          "title": "nju-huxiaowu-profile",
+          "source_type": "university_official",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T12:56:24Z",
+          "published_at": null,
+          "last_modified": null,
+          "evidence_status": "official_profile_body",
+          "source_locators": [
+            "师资分类、职业简介、研究领域、授课信息及代表性成果"
+          ],
+          "evidence_scope": "既有必要职业摘录；非完整网页或PDF存档。",
+          "public_raw_cache": false,
+          "observation_time_basis": "UTC system reminder immediately following this tool return; not origin-server response timestamp"
+        },
+        {
+          "id": "nju-sociology-roster",
+          "url": "https://sociology.nju.edu.cn/qzjs/listm.htm",
+          "title": "nju-sociology-roster",
+          "source_type": "university_official",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T12:56:24Z",
+          "published_at": null,
+          "last_modified": null,
+          "evidence_status": "official_roster_body",
+          "source_locators": [
+            "全职教师／社会学系／胡小武名录项"
+          ],
+          "evidence_scope": "既有必要职业摘录；非完整网页或PDF存档。",
+          "public_raw_cache": false,
+          "observation_time_basis": "UTC system reminder immediately following this tool return; not origin-server response timestamp",
+          "displayed_entry_date": "2024-06-14",
+          "observed_entry_index": 11,
+          "entry_index_is_sampling_rank": false
+        },
+        {
+          "id": "nju-sociology-roster-browser",
+          "url": "https://sociology.nju.edu.cn/qzjs/listm.htm",
+          "title": "nju-sociology-roster-browser",
+          "source_type": "university_official",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T12:58:07Z",
+          "published_at": null,
+          "last_modified": null,
+          "evidence_status": "parent_actual_cloud_browser_directory_href",
+          "source_locators": [
+            "全职教师／社会学系／胡小武姓名链接"
+          ],
+          "evidence_scope": "既有必要职业摘录；非完整网页或PDF存档。",
+          "public_raw_cache": false,
+          "observation_time_basis": "Exact parent actual-browser observation timestamp retained in private evidence; not origin-server response timestamp."
+        },
+        {
+          "id": "nju-zhoujiaxin",
+          "url": "https://philo.nju.edu.cn/f3/98/c4712a127896/page.htm",
+          "title": "周嘉昕—南京大学哲学学院",
+          "source_type": "university_official",
+          "retrieved_at": "2026-10-25",
+          "observed_at": "2026-10-25T06:10:51Z",
+          "published_at": "2016-04-27",
+          "last_modified": null,
+          "evidence_status": "retained_professional_excerpts_checked",
+          "source_locators": [
+            "中文简介／学习及博士毕业留校",
+            "英文简介／博士获授及论文主题",
+            "中文简介／职业角色及专业",
+            "中文简介／荷兰国际社会史研究所访问",
+            "英文简介／兰开斯特访问研究",
+            "页面显示发布日期"
+          ],
+          "evidence_scope": "既有必要职业摘录；显示日期不认证最后修改或在岗状态。",
+          "public_raw_cache": false,
+          "observation_time_basis": "Reader-call observation window, not precise original HTTP timestamp."
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "source_id": "nju-huxiaowu-cv",
+          "source_url": "https://sociology.nju.edu.cn/_upload/article/files/41/95/7809386148a4a4f31250cdd315c6/830e66b4-234e-41f3-b1e2-ebf2578e2911.pdf",
+          "semantic_locator": "简历首页教育任职和研究领域；个人专著前两项",
+          "sha256": "1bf6c62bff6cb7aaca984d8e475741d22665a3211a0ca5f69779198b7b7359d5"
+        },
+        {
+          "source_id": "nju-huxiaowu-cv",
+          "source_url": "https://sociology.nju.edu.cn/_upload/article/files/41/95/7809386148a4a4f31250cdd315c6/830e66b4-234e-41f3-b1e2-ebf2578e2911.pdf",
+          "semantic_locator": "简历首页教育任职和研究领域；个人专著前两项",
+          "sha256": "e19e666562aeab93b9991046f1e3299f198b4fe2ce1af3efa76c03c3a34c739c"
+        },
+        {
+          "source_id": "nju-huxiaowu-cv",
+          "source_url": "https://sociology.nju.edu.cn/_upload/article/files/41/95/7809386148a4a4f31250cdd315c6/830e66b4-234e-41f3-b1e2-ebf2578e2911.pdf",
+          "semantic_locator": "简历首页教育任职和研究领域；个人专著前两项",
+          "sha256": "8503fb72aa458d754824812350dbd4f6dac65727717034f7b1bb33ddc2063c37"
+        },
+        {
+          "source_id": "nju-huxiaowu-cv",
+          "source_url": "https://sociology.nju.edu.cn/_upload/article/files/41/95/7809386148a4a4f31250cdd315c6/830e66b4-234e-41f3-b1e2-ebf2578e2911.pdf",
+          "semantic_locator": "简历首页教育任职和研究领域；个人专著前两项",
+          "sha256": "b19072b6dda4ae5a836ffaf10855dc91f9f1f091a5d40b9179d02059a977696f"
+        },
+        {
+          "source_id": "nju-huxiaowu-cv",
+          "source_url": "https://sociology.nju.edu.cn/_upload/article/files/41/95/7809386148a4a4f31250cdd315c6/830e66b4-234e-41f3-b1e2-ebf2578e2911.pdf",
+          "semantic_locator": "简历首页教育任职和研究领域；个人专著前两项",
+          "sha256": "aeee028c7a4f436d9a2d1af9c42a7443dd0d90043fd081051995651d179a844a"
+        },
+        {
+          "source_id": "nju-huxiaowu-cv",
+          "source_url": "https://sociology.nju.edu.cn/_upload/article/files/41/95/7809386148a4a4f31250cdd315c6/830e66b4-234e-41f3-b1e2-ebf2578e2911.pdf",
+          "semantic_locator": "简历首页教育任职和研究领域；个人专著前两项",
+          "sha256": "ce303e6e2d3b6dcee969044d576a845b801c91cc3602dcb60dc825efeebc051b"
+        },
+        {
+          "source_id": "nju-huxiaowu-cv",
+          "source_url": "https://sociology.nju.edu.cn/_upload/article/files/41/95/7809386148a4a4f31250cdd315c6/830e66b4-234e-41f3-b1e2-ebf2578e2911.pdf",
+          "semantic_locator": "简历首页教育任职和研究领域；个人专著前两项",
+          "sha256": "8563ed1e98c27da8b8b5e6070a286c38b4b172b9d0037c43ed67b1aeee754090"
+        },
+        {
+          "source_id": "nju-huxiaowu-cv",
+          "source_url": "https://sociology.nju.edu.cn/_upload/article/files/41/95/7809386148a4a4f31250cdd315c6/830e66b4-234e-41f3-b1e2-ebf2578e2911.pdf",
+          "semantic_locator": "简历首页教育任职和研究领域；个人专著前两项",
+          "sha256": "d47863348c5369d8b9c8449d6c1b088000b685a6124c060110e1081da103d885"
+        },
+        {
+          "source_id": "nju-huxiaowu-cv",
+          "source_url": "https://sociology.nju.edu.cn/_upload/article/files/41/95/7809386148a4a4f31250cdd315c6/830e66b4-234e-41f3-b1e2-ebf2578e2911.pdf",
+          "semantic_locator": "简历首页教育任职和研究领域；个人专著前两项",
+          "sha256": "9cbc9549c5d8d57b3b59075c43c2a139435f4751bbfc399ca5fa01d42d3b651a"
+        },
+        {
+          "source_id": "nju-huxiaowu-profile",
+          "source_url": "https://sociology.nju.edu.cn/9a/6a/c58987a694890/page3.htm",
+          "semantic_locator": "师资分类、职业简介、研究领域、授课信息及代表性成果",
+          "sha256": "745ae16d74cf320f60322cffc5cc71e7c20daf148e347ad6288677679db699d0"
+        },
+        {
+          "source_id": "nju-huxiaowu-profile",
+          "source_url": "https://sociology.nju.edu.cn/9a/6a/c58987a694890/page3.htm",
+          "semantic_locator": "师资分类、职业简介、研究领域、授课信息及代表性成果",
+          "sha256": "abe205c5e455f0dcbff79d185a4ff0b9e2c38e07371dbacb9eca17a362125bf6"
+        },
+        {
+          "source_id": "nju-huxiaowu-profile",
+          "source_url": "https://sociology.nju.edu.cn/9a/6a/c58987a694890/page3.htm",
+          "semantic_locator": "师资分类、职业简介、研究领域、授课信息及代表性成果",
+          "sha256": "5b5b28407f3db9920d3c25597d367206495ee7a8164f6a1643ef4f3a51d4112a"
+        },
+        {
+          "source_id": "nju-huxiaowu-profile",
+          "source_url": "https://sociology.nju.edu.cn/9a/6a/c58987a694890/page3.htm",
+          "semantic_locator": "师资分类、职业简介、研究领域、授课信息及代表性成果",
+          "sha256": "81640bcb3f4dc4b8b69b97d622814f471f297f2626d39d6dc350ee77da3ee2f5"
+        },
+        {
+          "source_id": "nju-huxiaowu-profile",
+          "source_url": "https://sociology.nju.edu.cn/9a/6a/c58987a694890/page3.htm",
+          "semantic_locator": "师资分类、职业简介、研究领域、授课信息及代表性成果",
+          "sha256": "396b734c0a15041b6d4e005fcbf066554c6cb9d45fb23dd1ecd2b083132b83fe"
+        },
+        {
+          "source_id": "nju-huxiaowu-profile",
+          "source_url": "https://sociology.nju.edu.cn/9a/6a/c58987a694890/page3.htm",
+          "semantic_locator": "师资分类、职业简介、研究领域、授课信息及代表性成果",
+          "sha256": "52f012c97bc3fc7a33234e5e5453f0c3beb4e1ea05bf3bbf3461ff422f7558a3"
+        },
+        {
+          "source_id": "nju-huxiaowu-profile",
+          "source_url": "https://sociology.nju.edu.cn/9a/6a/c58987a694890/page3.htm",
+          "semantic_locator": "师资分类、职业简介、研究领域、授课信息及代表性成果",
+          "sha256": "ad4723afb52c0dccc22481f91033679188e6cd2efbe3e0bb27fa89e3e47ab96b"
+        },
+        {
+          "source_id": "nju-huxiaowu-profile",
+          "source_url": "https://sociology.nju.edu.cn/9a/6a/c58987a694890/page3.htm",
+          "semantic_locator": "师资分类、职业简介、研究领域、授课信息及代表性成果",
+          "sha256": "2eb8c8d21c6043a82a97ec2ddadee87bc153453e5acd93d1667ebe0251d4f298"
+        },
+        {
+          "source_id": "nju-sociology-roster",
+          "source_url": "https://sociology.nju.edu.cn/qzjs/listm.htm",
+          "semantic_locator": "全职教师／社会学系／胡小武名录项",
+          "sha256": "9866f64f92ff6fced70b567a37eb88bdf101848c05a857e3bf139393289abfa1"
+        },
+        {
+          "source_id": "nju-sociology-roster",
+          "source_url": "https://sociology.nju.edu.cn/qzjs/listm.htm",
+          "semantic_locator": "全职教师／社会学系／胡小武名录项",
+          "sha256": "43e9aabe96c93f28b1ab7aeb79790b19d1b4cc420e0d7ceadcfd6ed8a5ba8ad8"
+        },
+        {
+          "source_id": "nju-sociology-roster",
+          "source_url": "https://sociology.nju.edu.cn/qzjs/listm.htm",
+          "semantic_locator": "全职教师／社会学系／胡小武名录项",
+          "sha256": "9bcc8336b3ce8596b695cf00c0320b6ed08f171a0a07deae6d64284bef70d9a2"
+        },
+        {
+          "source_id": "nju-sociology-roster",
+          "source_url": "https://sociology.nju.edu.cn/qzjs/listm.htm",
+          "semantic_locator": "全职教师／社会学系／胡小武名录项",
+          "sha256": "216fd29993daaf867a3cdd94d359daef6295fe0688f51c27ab6ccc89836148ed"
+        },
+        {
+          "source_id": "nju-zhoujiaxin",
+          "source_url": "https://philo.nju.edu.cn/f3/98/c4712a127896/page.htm",
+          "semantic_locator": "中文简介／学习及博士毕业留校",
+          "sha256": "a6e128d28459f340e98021c6e2185236bf0c83f0b599ac6d545d8fd60222cbd7"
+        },
+        {
+          "source_id": "nju-zhoujiaxin",
+          "source_url": "https://philo.nju.edu.cn/f3/98/c4712a127896/page.htm",
+          "semantic_locator": "英文简介／博士获授及论文主题",
+          "sha256": "37774d5b22150d7bea1a510b80677ed8cfd793c22dc0bd0a61da93a1629ab7dd"
+        },
+        {
+          "source_id": "nju-zhoujiaxin",
+          "source_url": "https://philo.nju.edu.cn/f3/98/c4712a127896/page.htm",
+          "semantic_locator": "中文简介／职业角色及专业",
+          "sha256": "794684202e87fcf228c97d61ec7d4796d05e2248ef744170d41fc490f931b6c7"
+        },
+        {
+          "source_id": "nju-zhoujiaxin",
+          "source_url": "https://philo.nju.edu.cn/f3/98/c4712a127896/page.htm",
+          "semantic_locator": "中文简介／荷兰国际社会史研究所访问",
+          "sha256": "cfaac103168b97a5f14da706438f073fd2f9cb035b2f702dea0d20b4a86b6ee5"
+        },
+        {
+          "source_id": "nju-zhoujiaxin",
+          "source_url": "https://philo.nju.edu.cn/f3/98/c4712a127896/page.htm",
+          "semantic_locator": "英文简介／兰开斯特访问研究",
+          "sha256": "6f31dd212b6c65950fc151b3d174468f61ebdb9ad7fc2d281de38b855482fc78"
+        },
+        {
+          "source_id": "nju-zhoujiaxin",
+          "source_url": "https://philo.nju.edu.cn/f3/98/c4712a127896/page.htm",
+          "semantic_locator": "页面显示发布日期",
+          "sha256": "3d1d4853c29e29c5d86b76a9e17a8f8d6dcd1875474623a6cef1ab38dff1dc99"
+        }
+      ],
+      "mapping": {
+        "education": "所有原有教育事实保留；周嘉昕education+nondegree_training合并并增canonical别名；毕业时间不作授位时间。",
+        "roles": "胡小武2007教学起任不作副教授晋升；周嘉昕原appointments为空，正文职业标签保留source_reported_roles，留校陈述附教育事件，不造任职日期。",
+        "org": "胡小武复用已发布社会学院节点，原学院/社会学系组织事实保留source_reported_org_units；周嘉昕新增哲学系展示节点，父级unknown。",
+        "facts": "胡小武CV研究领域、书目字数/城市、职业资格和目录日期位置均保留；周嘉昕博士论文主题保留。",
+        "evidence": "长引文只留SHA；所有语义定位按source_id或excerpt_id区分。"
+      },
+      "counts": {
+        "people": 2,
+        "education": 6,
+        "degree_true": 4,
+        "degree_false": 2,
+        "degree_unknown": 0,
+        "appointments": 2,
+        "publications": 2,
+        "teaching": 4,
+        "new_orgs": 1
+      }
+    },
+    {
+      "schema_version": "independent-nju10-medical-mapping-1",
+      "baseline_commit": "aa54e789829b799b45506593c62df910942f8a8b",
+      "people": [
+        "nju-caipingqiang",
+        "nju-linzhaoyu"
+      ],
+      "source_package_sha256": "edb95cbb5d38b7abb6203773290408afec61a8c4eba537ce187765b083c88527",
+      "source_excerpt_artifact_sha256": "128d9ebae53f5449da5134734c505c253d7f81202f40a2002e565f32f1ed4c91",
+      "source_review_sha256": "64c960e7f942217396f87d6b253389564aaa8d637c8427691d9349ecace3ee04",
+      "source_hash_scope": "retained_local_source_package_bytes_not_complete_webpage",
+      "mapping": [
+        {
+          "person_id": "nju-caipingqiang",
+          "source_urls": [
+            "https://med.nju.edu.cn/23/a9/c10880a533417/page.htm"
+          ],
+          "mapping": {
+            "education": "原始event_id保持，institution_source_name别名institution；degree_award→degree/degree_study保持攻读；访问/博后非授位；授位year另存不推学习起止",
+            "mentors": "relationships→mentors；保留明确博士阶段师承、非正式论文导师认证；无身份节点、未知在职、关闭外链导航",
+            "appointments": "原任职标题、单位及日期原样；来源报告的历史任职，不推现职",
+            "publications": "全部书目字段原样保留；title/authors/venue别名供当前应用使用，绝不修复原英文空格或扩展缩写",
+            "sources": "原URL/日期/semantic_locator/引文指纹保留，恢复原source_id；retrieved_at显示日，原完整值保留observed_at",
+            "identity": "保留原professional_facts、status、conflicts、unknowns、gaps与provenance；添加实际应用必要scope标签"
+          }
+        },
+        {
+          "person_id": "nju-linzhaoyu",
+          "source_urls": [
+            "https://med.nju.edu.cn/f7/85/c48687a587653/page.htm"
+          ],
+          "mapping": {
+            "education": "原始event_id保持，institution_source_name别名institution；degree_award→degree/degree_study保持攻读；访问/博后非授位；授位year另存不推学习起止",
+            "mentors": "relationships→mentors；保留明确博士阶段师承、非正式论文导师认证；无身份节点、未知在职、关闭外链导航",
+            "appointments": "原任职标题、单位及日期原样；来源报告的历史任职，不推现职",
+            "publications": "全部书目字段原样保留；title/authors/venue别名供当前应用使用，绝不修复原英文空格或扩展缩写",
+            "sources": "原URL/日期/semantic_locator/引文指纹保留，恢复原source_id；retrieved_at显示日，原完整值保留observed_at",
+            "identity": "保留原professional_facts、status、conflicts、unknowns、gaps与provenance；添加实际应用必要scope标签"
+          }
+        }
+      ],
+      "counts": {
+        "people": 2,
+        "education": 6,
+        "awarded_degrees": 2,
+        "unknown_degree_awards": 1,
+        "nondegree_events": 3,
+        "source_reported_doctoral_mentorships": 2,
+        "formal_dissertation_advisors_verified": 0,
+        "appointments": 4,
+        "publications": 4
+      },
+      "limits": [
+        "No fresh network observation",
+        "No current-personnel certification",
+        "No resolved mentor identity or formal dissertation-advisor certification",
+        "No bibliography publisher/fulltext verification"
+      ]
+    },
+    {
+      "schema_version": "nju10-wave162-field-mapping-1",
+      "source_input_sha256": "700cace95fdef6102ad2ee465307ff64a29fafe38b7be425c102af6f288912d0",
+      "source_evidence_sha256": "f202b53bc5afeab667d517735a4698b7f9a6bdbfa67db998fd78c2f1cf4f6582",
+      "source_review_sha256": "a61673d48bc484645c00733a0ebeaaec3b18d396b16a38000fbec891dbc8f0ae",
+      "hash_scope": "retained_package_file_bytes_not_complete_webpage",
+      "new_people": [
+        "nju-huying",
+        "nju-zhangwei-linguistics"
+      ],
+      "sources": [
+        {
+          "id": "nju-huying-profile",
+          "url": "https://sfs.nju.edu.cn/szdw/eyx/20230917/i250801.html",
+          "title": "nju-huying-profile",
+          "source_type": "university_official",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T23:58:06Z",
+          "published_at": null,
+          "last_modified": null,
+          "evidence_status": "retained_professional_excerpts_checked",
+          "source_locators": [
+            "个人简介：职业称谓、教育与研究方向",
+            "个人简介：职业称谓、教育与研究方向",
+            "个人简介：职业称谓、教育与研究方向",
+            "论文目录：启蒙的反思",
+            "论文目录：俄罗斯摇滚诗歌"
+          ],
+          "evidence_scope": "既有必要职业摘录；非完整网页存档或本次重新访问。",
+          "public_raw_cache": false
+        },
+        {
+          "id": "nju-russian-directory",
+          "url": "https://sfs.nju.edu.cn//szdw/eyx/index.html",
+          "title": "nju-russian-directory",
+          "source_type": "university_official",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T23:58:10Z",
+          "published_at": null,
+          "last_modified": null,
+          "evidence_status": "retained_professional_excerpts_checked",
+          "source_locators": [
+            "学院页首",
+            "师资队伍／俄语系",
+            "俄语系教师目录／胡颖"
+          ],
+          "evidence_scope": "既有必要职业摘录；非完整网页存档或本次重新访问。",
+          "public_raw_cache": false
+        },
+        {
+          "id": "nju-huying-directory-click",
+          "url": "https://sfs.nju.edu.cn//szdw/eyx/20230917/i250801.html",
+          "title": "nju-huying-directory-click",
+          "source_type": "university_official",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T23:58:12Z",
+          "published_at": null,
+          "last_modified": null,
+          "evidence_status": "retained_professional_excerpts_checked",
+          "source_locators": [
+            "个人页姓名标题",
+            "个人简介职业称谓"
+          ],
+          "evidence_scope": "既有必要职业摘录；非完整网页存档或本次重新访问。",
+          "public_raw_cache": false
+        },
+        {
+          "id": "nju-zhangwei-linguistics-profile",
+          "url": "https://sfs.nju.edu.cn/szdw/yyx/20250908/i336434.html",
+          "title": "nju-zhangwei-linguistics-profile",
+          "source_type": "university_official",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T23:58:22Z",
+          "published_at": null,
+          "last_modified": null,
+          "evidence_status": "retained_professional_excerpts_checked",
+          "source_locators": [
+            "个人简介：职业称谓及博士授位",
+            "研究方向／实验语音学",
+            "研究方向／心理语言学",
+            "教育背景／本科",
+            "教育背景／硕士",
+            "教育背景／博士",
+            "论文目录／Imitation of F0 tone contours",
+            "论文目录／Prosodic effects of focus and constituency"
+          ],
+          "evidence_scope": "既有必要职业摘录；非完整网页存档或本次重新访问。",
+          "public_raw_cache": false
+        },
+        {
+          "id": "nju-english-directory",
+          "url": "https://sfs.nju.edu.cn//szdw/yyx/index.html",
+          "title": "nju-english-directory",
+          "source_type": "university_official",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T23:58:29Z",
+          "published_at": null,
+          "last_modified": null,
+          "evidence_status": "retained_professional_excerpts_checked",
+          "source_locators": [
+            "学院页首",
+            "师资队伍／英语系",
+            "英语系教师目录／张微"
+          ],
+          "evidence_scope": "既有必要职业摘录；非完整网页存档或本次重新访问。",
+          "public_raw_cache": false
+        },
+        {
+          "id": "nju-zhangwei-directory-click",
+          "url": "https://sfs.nju.edu.cn//szdw/yyx/20250908/i336434.html",
+          "title": "nju-zhangwei-directory-click",
+          "source_type": "university_official",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T23:58:31Z",
+          "published_at": null,
+          "last_modified": null,
+          "evidence_status": "retained_professional_excerpts_checked",
+          "source_locators": [
+            "个人页姓名标题",
+            "个人简介职业称谓与博士授位"
+          ],
+          "evidence_scope": "既有必要职业摘录；非完整网页存档或本次重新访问。",
+          "public_raw_cache": false
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "source_id": "nju-huying-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/eyx/20230917/i250801.html",
+          "semantic_locator": "个人简介：职业称谓、教育与研究方向",
+          "sha256": "cf6fe535a9bc12151e3d9144616f6142cbe6cab886ba1196cfb188306d4db987"
+        },
+        {
+          "source_id": "nju-huying-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/eyx/20230917/i250801.html",
+          "semantic_locator": "个人简介：职业称谓、教育与研究方向",
+          "sha256": "6bd140e3e74d5182f433d2e654fd29787b9f7687a3a82c3fc9cc2c57c9cf61a6"
+        },
+        {
+          "source_id": "nju-huying-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/eyx/20230917/i250801.html",
+          "semantic_locator": "个人简介：职业称谓、教育与研究方向",
+          "sha256": "cb34c986eb725c618aed34d3f86cd43158afefe793572c89575697972c5831bc"
+        },
+        {
+          "source_id": "nju-huying-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/eyx/20230917/i250801.html",
+          "semantic_locator": "论文目录：启蒙的反思",
+          "sha256": "9f18a7bce2b9de15f400e0a81070df9bd2e746ac4c29bcbe88228f3d79ccb9fe"
+        },
+        {
+          "source_id": "nju-huying-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/eyx/20230917/i250801.html",
+          "semantic_locator": "论文目录：俄罗斯摇滚诗歌",
+          "sha256": "1b65479e85074af15d50f06cfd4b7c425100a9539520c27e1e45e3c7487d6c51"
+        },
+        {
+          "source_id": "nju-russian-directory",
+          "source_url": "https://sfs.nju.edu.cn//szdw/eyx/index.html",
+          "semantic_locator": "学院页首",
+          "sha256": "523b1eb119144cf612a1cc9256bb4ed109dcdccb3dbf1782c444f5f08f6bb9e2"
+        },
+        {
+          "source_id": "nju-russian-directory",
+          "source_url": "https://sfs.nju.edu.cn//szdw/eyx/index.html",
+          "semantic_locator": "师资队伍／俄语系",
+          "sha256": "73c5212a3760cb504703d5680d6cb7deb84873846f5a4e250caedd86c9962da4"
+        },
+        {
+          "source_id": "nju-russian-directory",
+          "source_url": "https://sfs.nju.edu.cn//szdw/eyx/index.html",
+          "semantic_locator": "俄语系教师目录／胡颖",
+          "sha256": "429cdc73691c59021473c70b1ec736edf8aed3fa7f362c9198097f3ed42b0c8b"
+        },
+        {
+          "source_id": "nju-huying-directory-click",
+          "source_url": "https://sfs.nju.edu.cn//szdw/eyx/20230917/i250801.html",
+          "semantic_locator": "个人页姓名标题",
+          "sha256": "429cdc73691c59021473c70b1ec736edf8aed3fa7f362c9198097f3ed42b0c8b"
+        },
+        {
+          "source_id": "nju-huying-directory-click",
+          "source_url": "https://sfs.nju.edu.cn//szdw/eyx/20230917/i250801.html",
+          "semantic_locator": "个人简介职业称谓",
+          "sha256": "cf6fe535a9bc12151e3d9144616f6142cbe6cab886ba1196cfb188306d4db987"
+        },
+        {
+          "source_id": "nju-zhangwei-linguistics-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/yyx/20250908/i336434.html",
+          "semantic_locator": "个人简介：职业称谓及博士授位",
+          "sha256": "acd0d8deacc8c3076eb536d4dc23a124826a9863a10dbec3090aedd2f13b2606"
+        },
+        {
+          "source_id": "nju-zhangwei-linguistics-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/yyx/20250908/i336434.html",
+          "semantic_locator": "研究方向／实验语音学",
+          "sha256": "6ccbf1762ef89e9452f65ed686646d98ddf91e7b6575aaa0c2af6c33ffba3c62"
+        },
+        {
+          "source_id": "nju-zhangwei-linguistics-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/yyx/20250908/i336434.html",
+          "semantic_locator": "研究方向／心理语言学",
+          "sha256": "92b9ea6a739629390221019fb8d8c0fced9828161d6d8fc6cac6f185676114cd"
+        },
+        {
+          "source_id": "nju-zhangwei-linguistics-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/yyx/20250908/i336434.html",
+          "semantic_locator": "教育背景／本科",
+          "sha256": "16b87c741582c353344527d0547da9c454a755897b7591668187fdc52c2fb026"
+        },
+        {
+          "source_id": "nju-zhangwei-linguistics-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/yyx/20250908/i336434.html",
+          "semantic_locator": "教育背景／硕士",
+          "sha256": "7939394bd4bebc41f6d8defbd65f7d4e55e860ca77ffb96e978c239606372c55"
+        },
+        {
+          "source_id": "nju-zhangwei-linguistics-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/yyx/20250908/i336434.html",
+          "semantic_locator": "教育背景／博士",
+          "sha256": "32e82d32473f149f9b716f10347ac5351cbd2bdc36b11d986a713a0b772ae351"
+        },
+        {
+          "source_id": "nju-zhangwei-linguistics-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/yyx/20250908/i336434.html",
+          "semantic_locator": "论文目录／Imitation of F0 tone contours",
+          "sha256": "840ffb528b8ccc5e70e7e009427bc4b2218f0e04b5789df372ace8b8242228d7"
+        },
+        {
+          "source_id": "nju-zhangwei-linguistics-profile",
+          "source_url": "https://sfs.nju.edu.cn/szdw/yyx/20250908/i336434.html",
+          "semantic_locator": "论文目录／Prosodic effects of focus and constituency",
+          "sha256": "d4ecb03d1dcd10e55da292fcf99d9738a15e4b41b7a67bb156bdbe702cfea1ae"
+        },
+        {
+          "source_id": "nju-english-directory",
+          "source_url": "https://sfs.nju.edu.cn//szdw/yyx/index.html",
+          "semantic_locator": "学院页首",
+          "sha256": "523b1eb119144cf612a1cc9256bb4ed109dcdccb3dbf1782c444f5f08f6bb9e2"
+        },
+        {
+          "source_id": "nju-english-directory",
+          "source_url": "https://sfs.nju.edu.cn//szdw/yyx/index.html",
+          "semantic_locator": "师资队伍／英语系",
+          "sha256": "9a1e786a4612acbfa0db185ddbdc4318552f362869a91a8100ec09c2243b9ec4"
+        },
+        {
+          "source_id": "nju-english-directory",
+          "source_url": "https://sfs.nju.edu.cn//szdw/yyx/index.html",
+          "semantic_locator": "英语系教师目录／张微",
+          "sha256": "8cbb5251235907794f8e763a1f1987b0f17a98db3b22b2d2424bf51781dc2437"
+        },
+        {
+          "source_id": "nju-zhangwei-directory-click",
+          "source_url": "https://sfs.nju.edu.cn//szdw/yyx/20250908/i336434.html",
+          "semantic_locator": "个人页姓名标题",
+          "sha256": "8cbb5251235907794f8e763a1f1987b0f17a98db3b22b2d2424bf51781dc2437"
+        },
+        {
+          "source_id": "nju-zhangwei-directory-click",
+          "source_url": "https://sfs.nju.edu.cn//szdw/yyx/20250908/i336434.html",
+          "semantic_locator": "个人简介职业称谓与博士授位",
+          "sha256": "acd0d8deacc8c3076eb536d4dc23a124826a9863a10dbec3090aedd2f13b2606"
+        }
+      ],
+      "mapping": {
+        "education": "保留原事件全部事实；education+professional_training映射到education；原event_kind保留source_event_kind，新增canonical别名。",
+        "org": "1学校级展示节点；原学院/系两个层级的全部来源字段保留每人source_reported_org_units，不额外制造行政父级关系。",
+        "status": "源current_employment_status:null原值保留；canonicalemployment_statusunknown；导航false。",
+        "publications": "原书目所有字段保留；title/year/venue别名用于既有UI，DOI仅source-reported，canonicaldoi不作核验声明。",
+        "evidence": "原quote替换为SHA；原tool定位存私有账，公开按source_id精确映射语义位置。",
+        "navigation": "保留实际点击事实及双斜杠URL；raw_hrefunknown。"
+      },
+      "counts": {
+        "people": 2,
+        "education": 7,
+        "degree_true": 4,
+        "degree_false": 1,
+        "degree_unknown": 2,
+        "appointments": 2,
+        "publications": 4,
+        "mentors": 0,
+        "new_orgs": 1
+      }
+    },
+    {
+      "schema_version": "nju10-education-law-field-mapping-1",
+      "ids": [
+        "nju-lvlinhai-education",
+        "nju-liyougen-law"
+      ],
+      "source_input_sha256": "0a0c7e8078c4765d4b662b1c966dbe0c70d6753059cdfa5a7541e13baafbe641",
+      "source_evidence_sha256": "b171e291550867389e86c07ee21991e502d41fb0d714351230062badb8767834",
+      "review_sha256": "989ec4852e77e725ea90064831f7436f499220205194810f6821839b33479751",
+      "overlay_sha256": "e2bbbbab4fbd7e82e22740ba9eecbdb3687b002d654c4a74a98ed822185ea67c",
+      "overlay_id": "wave210-lv-template-comparison-scope",
+      "overlay_operation": {
+        "op": "replace",
+        "path": "/people/0/source_variants/0/scope",
+        "value": "移动模板保留博士获授及师从句、两项译作；博士获授及师从句与目录尾页保留摘录一致。显示日期2026-01-14不作为最后更新认证。"
+      },
+      "counts": {
+        "people": 2,
+        "education": 7,
+        "degree_awarded_true": 2,
+        "degree_awarded_null": 2,
+        "nondegree": 3,
+        "stage_mentorship": 4,
+        "formal_thesis_advisors": 0,
+        "publications": 4,
+        "teaching_courses": 4,
+        "appointments": 3
+      },
+      "field_mapping": {
+        "education": "source education + professional_training; canonical kind degree only on explicit award, study on null, visiting_scholar for nondegree; source kind retained",
+        "mentor_relations": "mentors explicit stage binding and name, no formal-thesis upgrade; identity/current navigation unknown/false",
+        "publications": "typed translations/coauthored/contributed books, exact role kept and visible in note",
+        "teaching": "source grouped4course names expanded4rows; same evidence and all education/mentor count exclusions",
+        "source_variants": "required wave210 mobile comparison scope overlay applied before projection",
+        "source_dates": "original timestamp retained, retrieved_at day only when originally nonnull; bounded browser window never converted to exact timestamp",
+        "prose": "quotes replaced by SHA256, substantive facts retained; admin-role context separate from employment counts",
+        "organization": "source group identity and hierarchy type preserved, administrative parent not independently verified"
+      },
+      "source_fingerprints": [
+        {
+          "path": "/quote",
+          "sha256": "e93be3a90f368df3416b01ea74a0fed48dd4aadf7643d6e0aa4c88b3f2fb6ea8"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f77401f8e5f05d952f3cf3ca70d03066066cbdf0c7680b0d6a23bec01d028f4a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "1a1cf32b40bfc55bf6ef33cd14a2bb12969f4de6cba65c3d8875f4737cfb71c5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e93be3a90f368df3416b01ea74a0fed48dd4aadf7643d6e0aa4c88b3f2fb6ea8"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f77401f8e5f05d952f3cf3ca70d03066066cbdf0c7680b0d6a23bec01d028f4a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "1a1cf32b40bfc55bf6ef33cd14a2bb12969f4de6cba65c3d8875f4737cfb71c5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d1c87879670b3e17b20dc53e2721c9ee9f26e93bed99cb516cf26779c50a34ef"
+        },
+        {
+          "path": "/quote",
+          "sha256": "86b63611396c55fe7329832237831e5264714456c296f7036ed788da18a22ff5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d1c87879670b3e17b20dc53e2721c9ee9f26e93bed99cb516cf26779c50a34ef"
+        },
+        {
+          "path": "/quote",
+          "sha256": "86b63611396c55fe7329832237831e5264714456c296f7036ed788da18a22ff5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e93be3a90f368df3416b01ea74a0fed48dd4aadf7643d6e0aa4c88b3f2fb6ea8"
+        },
+        {
+          "path": "/quote",
+          "sha256": "39deda3c60c78951baeb750560fe8d7b1d5e72d115628cca99d63d41e8b3a82d"
+        },
+        {
+          "path": "/quote",
+          "sha256": "016d982e61f4ad4972da07953f580b46d745f10a4769447e3a00acbe905fa48e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "6e36325de183da5539d44c8b20440bc30522e7e2dd1426e6d094382405148bec"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d3810e1f32895c891e1e5d086677dc4e6a2732b41a81be8044a88c4cec4b814f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ed51dc76b2f8a48552d345bc8eeafd10fa55e4524b83569e7e1df86d6d0dea1e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e93be3a90f368df3416b01ea74a0fed48dd4aadf7643d6e0aa4c88b3f2fb6ea8"
+        },
+        {
+          "path": "/quote",
+          "sha256": "39deda3c60c78951baeb750560fe8d7b1d5e72d115628cca99d63d41e8b3a82d"
+        },
+        {
+          "path": "/quote",
+          "sha256": "016d982e61f4ad4972da07953f580b46d745f10a4769447e3a00acbe905fa48e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "6e36325de183da5539d44c8b20440bc30522e7e2dd1426e6d094382405148bec"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d3810e1f32895c891e1e5d086677dc4e6a2732b41a81be8044a88c4cec4b814f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ed51dc76b2f8a48552d345bc8eeafd10fa55e4524b83569e7e1df86d6d0dea1e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3072336d660e64e978cd34d2fb9567ca2f4c73e0e2b3e0e08eac8ae68e0e804d"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f77401f8e5f05d952f3cf3ca70d03066066cbdf0c7680b0d6a23bec01d028f4a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "fc7419a6cb2230bada1b3bac208288150c889c04d28db8fc4d4d33ddbd63ae79"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3072336d660e64e978cd34d2fb9567ca2f4c73e0e2b3e0e08eac8ae68e0e804d"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f77401f8e5f05d952f3cf3ca70d03066066cbdf0c7680b0d6a23bec01d028f4a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "fc7419a6cb2230bada1b3bac208288150c889c04d28db8fc4d4d33ddbd63ae79"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4633821eea14fb15bfd9da8de088048b5385afb7bb282e463a01cc324b6b88fd"
+        },
+        {
+          "path": "/quote",
+          "sha256": "251ce333bce03d541c5c4ef59e1d1afb018d467c5d1fe946e9f7e72d0b67c1bb"
+        },
+        {
+          "path": "/quote",
+          "sha256": "bdce5c33e5dd522d9a699a8a9eaa26cb201b029e91996f782f78b2f6362fcbc5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4c75e2c47aec5ccba43b0aec496241ecf23e10ae6f793f6a1b540aee9e551193"
+        },
+        {
+          "path": "/quote",
+          "sha256": "bc264ef05f6a362e728889271db7b64b8d7b05fc0dc32307a37b60197da1985a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e1c3c6c5c630844a99e23bf34d3c96b576de34694e33672243739672450787a1"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4de3d243a057cf3fe1e68aaac33b347c830502d44267184bd780ab25f22a20ef"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e68fd469ffc3ae5b9ee5b3649e90987c60d170d6a44b1004f658f751639b4463"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3f19bfe0acf0d3990c0e17d795346f6faf95de3a30938b0216cf877a50be42a2"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0157feafa736b9f46b9e2e1c5eb9b26ac462b413312a617c47287ed96f8db126"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3f11dc30afaafdf54cb939e975e84f7a8aa4e035ffc311f7f87cc85634855280"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0e4b686d2f06d162cac0923fb2d8b64e71187fcbdd71ab1f0c7e8bad610a9726"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4633821eea14fb15bfd9da8de088048b5385afb7bb282e463a01cc324b6b88fd"
+        },
+        {
+          "path": "/quote",
+          "sha256": "251ce333bce03d541c5c4ef59e1d1afb018d467c5d1fe946e9f7e72d0b67c1bb"
+        },
+        {
+          "path": "/quote",
+          "sha256": "bdce5c33e5dd522d9a699a8a9eaa26cb201b029e91996f782f78b2f6362fcbc5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4c75e2c47aec5ccba43b0aec496241ecf23e10ae6f793f6a1b540aee9e551193"
+        },
+        {
+          "path": "/quote",
+          "sha256": "bc264ef05f6a362e728889271db7b64b8d7b05fc0dc32307a37b60197da1985a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e1c3c6c5c630844a99e23bf34d3c96b576de34694e33672243739672450787a1"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4de3d243a057cf3fe1e68aaac33b347c830502d44267184bd780ab25f22a20ef"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e68fd469ffc3ae5b9ee5b3649e90987c60d170d6a44b1004f658f751639b4463"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3f19bfe0acf0d3990c0e17d795346f6faf95de3a30938b0216cf877a50be42a2"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0157feafa736b9f46b9e2e1c5eb9b26ac462b413312a617c47287ed96f8db126"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3f11dc30afaafdf54cb939e975e84f7a8aa4e035ffc311f7f87cc85634855280"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0e4b686d2f06d162cac0923fb2d8b64e71187fcbdd71ab1f0c7e8bad610a9726"
+        },
+        {
+          "path": "/quote",
+          "sha256": "16438b0e69c961cc18bf36f1206e29e30283043bbd1e0e2c6fce0d2dec67e24f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4633821eea14fb15bfd9da8de088048b5385afb7bb282e463a01cc324b6b88fd"
+        },
+        {
+          "path": "/quote",
+          "sha256": "16438b0e69c961cc18bf36f1206e29e30283043bbd1e0e2c6fce0d2dec67e24f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4633821eea14fb15bfd9da8de088048b5385afb7bb282e463a01cc324b6b88fd"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/education/0/quote",
+          "sha256": "f77401f8e5f05d952f3cf3ca70d03066066cbdf0c7680b0d6a23bec01d028f4a"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/professional_training/0/quote",
+          "sha256": "fc7419a6cb2230bada1b3bac208288150c889c04d28db8fc4d4d33ddbd63ae79"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/professional_training/1/quote",
+          "sha256": "fc7419a6cb2230bada1b3bac208288150c889c04d28db8fc4d4d33ddbd63ae79"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/professional_training/2/quote",
+          "sha256": "fc7419a6cb2230bada1b3bac208288150c889c04d28db8fc4d4d33ddbd63ae79"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/mentor_relations/0/quote",
+          "sha256": "f77401f8e5f05d952f3cf3ca70d03066066cbdf0c7680b0d6a23bec01d028f4a"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/appointments/0/quote",
+          "sha256": "3072336d660e64e978cd34d2fb9567ca2f4c73e0e2b3e0e08eac8ae68e0e804d"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/research_directions/0/quote",
+          "sha256": "39deda3c60c78951baeb750560fe8d7b1d5e72d115628cca99d63d41e8b3a82d"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/research_directions/1/quote",
+          "sha256": "016d982e61f4ad4972da07953f580b46d745f10a4769447e3a00acbe905fa48e"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/research_directions/2/quote",
+          "sha256": "6e36325de183da5539d44c8b20440bc30522e7e2dd1426e6d094382405148bec"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/research_directions/3/quote",
+          "sha256": "d3810e1f32895c891e1e5d086677dc4e6a2732b41a81be8044a88c4cec4b814f"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/research_directions/4/quote",
+          "sha256": "ed51dc76b2f8a48552d345bc8eeafd10fa55e4524b83569e7e1df86d6d0dea1e"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/publications/0/quote",
+          "sha256": "1a1cf32b40bfc55bf6ef33cd14a2bb12969f4de6cba65c3d8875f4737cfb71c5"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/publications/1/quote",
+          "sha256": "1a1cf32b40bfc55bf6ef33cd14a2bb12969f4de6cba65c3d8875f4737cfb71c5"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/identity_evidence/0/quote",
+          "sha256": "e93be3a90f368df3416b01ea74a0fed48dd4aadf7643d6e0aa4c88b3f2fb6ea8"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/identity_evidence/1/quote",
+          "sha256": "3072336d660e64e978cd34d2fb9567ca2f4c73e0e2b3e0e08eac8ae68e0e804d"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/identity_evidence/2/quote",
+          "sha256": "d1c87879670b3e17b20dc53e2721c9ee9f26e93bed99cb516cf26779c50a34ef"
+        },
+        {
+          "path": "/people/nju-lvlinhai-education/identity_evidence/3/quote",
+          "sha256": "86b63611396c55fe7329832237831e5264714456c296f7036ed788da18a22ff5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f77401f8e5f05d952f3cf3ca70d03066066cbdf0c7680b0d6a23bec01d028f4a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "fc7419a6cb2230bada1b3bac208288150c889c04d28db8fc4d4d33ddbd63ae79"
+        },
+        {
+          "path": "/quote",
+          "sha256": "fc7419a6cb2230bada1b3bac208288150c889c04d28db8fc4d4d33ddbd63ae79"
+        },
+        {
+          "path": "/quote",
+          "sha256": "fc7419a6cb2230bada1b3bac208288150c889c04d28db8fc4d4d33ddbd63ae79"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f77401f8e5f05d952f3cf3ca70d03066066cbdf0c7680b0d6a23bec01d028f4a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "1a1cf32b40bfc55bf6ef33cd14a2bb12969f4de6cba65c3d8875f4737cfb71c5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "1a1cf32b40bfc55bf6ef33cd14a2bb12969f4de6cba65c3d8875f4737cfb71c5"
+        },
+        {
+          "path": "/people/nju-liyougen-law/education/0/quote",
+          "sha256": "bdce5c33e5dd522d9a699a8a9eaa26cb201b029e91996f782f78b2f6362fcbc5"
+        },
+        {
+          "path": "/people/nju-liyougen-law/education/0/additional_evidence/0/quote",
+          "sha256": "4c75e2c47aec5ccba43b0aec496241ecf23e10ae6f793f6a1b540aee9e551193"
+        },
+        {
+          "path": "/people/nju-liyougen-law/education/1/quote",
+          "sha256": "4c75e2c47aec5ccba43b0aec496241ecf23e10ae6f793f6a1b540aee9e551193"
+        },
+        {
+          "path": "/people/nju-liyougen-law/education/1/additional_evidence/0/quote",
+          "sha256": "bc264ef05f6a362e728889271db7b64b8d7b05fc0dc32307a37b60197da1985a"
+        },
+        {
+          "path": "/people/nju-liyougen-law/education/2/quote",
+          "sha256": "e1c3c6c5c630844a99e23bf34d3c96b576de34694e33672243739672450787a1"
+        },
+        {
+          "path": "/people/nju-liyougen-law/education/2/additional_evidence/0/quote",
+          "sha256": "4de3d243a057cf3fe1e68aaac33b347c830502d44267184bd780ab25f22a20ef"
+        },
+        {
+          "path": "/people/nju-liyougen-law/mentor_relations/0/quote",
+          "sha256": "4c75e2c47aec5ccba43b0aec496241ecf23e10ae6f793f6a1b540aee9e551193"
+        },
+        {
+          "path": "/people/nju-liyougen-law/mentor_relations/1/quote",
+          "sha256": "4c75e2c47aec5ccba43b0aec496241ecf23e10ae6f793f6a1b540aee9e551193"
+        },
+        {
+          "path": "/people/nju-liyougen-law/mentor_relations/2/quote",
+          "sha256": "e1c3c6c5c630844a99e23bf34d3c96b576de34694e33672243739672450787a1"
+        },
+        {
+          "path": "/people/nju-liyougen-law/appointments/0/quote",
+          "sha256": "bc264ef05f6a362e728889271db7b64b8d7b05fc0dc32307a37b60197da1985a"
+        },
+        {
+          "path": "/people/nju-liyougen-law/appointments/1/quote",
+          "sha256": "e68fd469ffc3ae5b9ee5b3649e90987c60d170d6a44b1004f658f751639b4463"
+        },
+        {
+          "path": "/people/nju-liyougen-law/research_directions/0/quote",
+          "sha256": "3f19bfe0acf0d3990c0e17d795346f6faf95de3a30938b0216cf877a50be42a2"
+        },
+        {
+          "path": "/people/nju-liyougen-law/research_directions/1/quote",
+          "sha256": "3f19bfe0acf0d3990c0e17d795346f6faf95de3a30938b0216cf877a50be42a2"
+        },
+        {
+          "path": "/people/nju-liyougen-law/publications/0/quote",
+          "sha256": "3f11dc30afaafdf54cb939e975e84f7a8aa4e035ffc311f7f87cc85634855280"
+        },
+        {
+          "path": "/people/nju-liyougen-law/publications/1/quote",
+          "sha256": "0e4b686d2f06d162cac0923fb2d8b64e71187fcbdd71ab1f0c7e8bad610a9726"
+        },
+        {
+          "path": "/people/nju-liyougen-law/teaching/0/quote",
+          "sha256": "0157feafa736b9f46b9e2e1c5eb9b26ac462b413312a617c47287ed96f8db126"
+        },
+        {
+          "path": "/people/nju-liyougen-law/identity_evidence/0/quote",
+          "sha256": "4633821eea14fb15bfd9da8de088048b5385afb7bb282e463a01cc324b6b88fd"
+        },
+        {
+          "path": "/people/nju-liyougen-law/identity_evidence/1/quote",
+          "sha256": "e68fd469ffc3ae5b9ee5b3649e90987c60d170d6a44b1004f658f751639b4463"
+        },
+        {
+          "path": "/people/nju-liyougen-law/identity_evidence/2/quote",
+          "sha256": "16438b0e69c961cc18bf36f1206e29e30283043bbd1e0e2c6fce0d2dec67e24f"
+        },
+        {
+          "path": "/people/nju-liyougen-law/identity_evidence/3/quote",
+          "sha256": "4633821eea14fb15bfd9da8de088048b5385afb7bb282e463a01cc324b6b88fd"
+        },
+        {
+          "path": "/quote",
+          "sha256": "bdce5c33e5dd522d9a699a8a9eaa26cb201b029e91996f782f78b2f6362fcbc5"
+        },
+        {
+          "path": "/additional_evidence/0/quote",
+          "sha256": "4c75e2c47aec5ccba43b0aec496241ecf23e10ae6f793f6a1b540aee9e551193"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4c75e2c47aec5ccba43b0aec496241ecf23e10ae6f793f6a1b540aee9e551193"
+        },
+        {
+          "path": "/additional_evidence/0/quote",
+          "sha256": "bc264ef05f6a362e728889271db7b64b8d7b05fc0dc32307a37b60197da1985a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e1c3c6c5c630844a99e23bf34d3c96b576de34694e33672243739672450787a1"
+        },
+        {
+          "path": "/additional_evidence/0/quote",
+          "sha256": "4de3d243a057cf3fe1e68aaac33b347c830502d44267184bd780ab25f22a20ef"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4c75e2c47aec5ccba43b0aec496241ecf23e10ae6f793f6a1b540aee9e551193"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4c75e2c47aec5ccba43b0aec496241ecf23e10ae6f793f6a1b540aee9e551193"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e1c3c6c5c630844a99e23bf34d3c96b576de34694e33672243739672450787a1"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3f11dc30afaafdf54cb939e975e84f7a8aa4e035ffc311f7f87cc85634855280"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0e4b686d2f06d162cac0923fb2d8b64e71187fcbdd71ab1f0c7e8bad610a9726"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0157feafa736b9f46b9e2e1c5eb9b26ac462b413312a617c47287ed96f8db126"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0157feafa736b9f46b9e2e1c5eb9b26ac462b413312a617c47287ed96f8db126"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0157feafa736b9f46b9e2e1c5eb9b26ac462b413312a617c47287ed96f8db126"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0157feafa736b9f46b9e2e1c5eb9b26ac462b413312a617c47287ed96f8db126"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3072336d660e64e978cd34d2fb9567ca2f4c73e0e2b3e0e08eac8ae68e0e804d"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e68fd469ffc3ae5b9ee5b3649e90987c60d170d6a44b1004f658f751639b4463"
+        },
+        {
+          "path": "/quote",
+          "sha256": "16438b0e69c961cc18bf36f1206e29e30283043bbd1e0e2c6fce0d2dec67e24f"
+        }
+      ],
+      "limits": [
+        "No network collection",
+        "Unknown current employment; no personnel/mentor navigation",
+        "No thesis or publication-original authentication"
+      ]
+    },
+    {
+      "baseline_commit": "aa54e789829b799b45506593c62df910942f8a8b",
+      "source_input_sha256": "f2743dbdfc1288c0c2830576e1b5ad9ae0be4b4b703d28a33e322ee02d79295a",
+      "source_evidence_sha256": "db85fe7491cbae38def364ede252641b12982fc3b8d2dd6be11160e15589f628",
+      "source_review_sha256": "60ae829979cdb9bcd6d279b796db156f2b756b77d966e8183bc822521a6aa31e",
+      "source_hash_scope": "retained_package_bytes_not_full_webpage",
+      "people": [
+        "nju-chenbaojun",
+        "nju-jiangfei"
+      ],
+      "field_mapping": {
+        "name": "原始来源及权威514v3均为江飞，不是蒋飞。",
+        "education": "原education与professional_training合入education，source_event_kind保留；仅显式true授位转event_kind=degree。陈宝君本硕共享期不填独立起止/授位年，博士结束年不作授位年；江飞不造硕士学位，2005/2010授位年和学习月份分开。",
+        "mentors": "4条显式具名师承保持非论文类型；本硕两条关系各绑定同一2事件集合且未细分，不增为4关系；博士与访问合作分别绑定已有事件；无现职或站内人物身份推断。",
+        "publications": "4书目，教材不转论文；作者顺序与原形式、卷期页/文号保留；江飞通讯仅本页星号图例，DOI纯文本未打开。",
+        "organization": "两个独立单位nullparent；学科共建不变行政上级。",
+        "teaching": "3课程按原名和level；role未披露，非学习/任职/成果/师承。",
+        "sources": "保留原观察时间和窗口，日期截取仅供现有展示；去工具行号，语义定位与引用SHA保持。"
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/0/quote",
+          "sha256": "adb2b5c5528427860546df617914b2bf73ad64b02da2c35e1b235bafed2f8205"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/2/quote",
+          "sha256": "fb39560ce385911b318ad9374a298303dec8db1645aca91e7909d6dca18a75c9"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/3/quote",
+          "sha256": "01d7b13ccaf3336dae5ea5222e7f10b62b9ad5c7c0c60e729e7aecce0c6d7a1d"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/4/quote",
+          "sha256": "b315e5b5cc3f3a250d62d9018d3a255e5f953ac2ef4b10e407dad5090aa2755d"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/5/quote",
+          "sha256": "f702079332934763fc0d2628e42c8c0b002761d7e0c32cb0c393a87c8131b538"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/6/quote",
+          "sha256": "e2528ac7c21dea124dc79ba9708fe7a838feeb7efbb87095bb8e8399992ebca6"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/7/quote",
+          "sha256": "93d09061fbe5cbb78493231cdc4d73856a2c072ae94e1a0208737d8b1ee16b79"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/8/quote",
+          "sha256": "7d7fc4dbf7a9da41642de6951358495ca14b6bb0fd70ac5d3fad0ad2d6a191a7"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/9/quote",
+          "sha256": "9df65b6371d602a69bbe743203c3a06a658ad65ded190f83a5914e33e3cfdfcd"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/10/quote",
+          "sha256": "3a857964dd03a5948c036104a6cbbb85f5090de2003755edb8bcf9991e4191bb"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/11/quote",
+          "sha256": "e317f83022586b821a2d76c4c3465d94d84fb566cd4d257b6c8ccec1b4cc9b56"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/0/quote",
+          "sha256": "e3fac519f44e47443f1dcd0848af83c357fac3ade879a72f5b6fddb4f73484aa"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/1/quote",
+          "sha256": "cd977eef35e56173cf52a4a981fae2c86255fe4fe1948cfd21798704b31afcf9"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/2/quote",
+          "sha256": "44eeb3be313411320606ef307acb4378a0da802bd936e154398ce43c32a22cd7"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/3/quote",
+          "sha256": "d16ec3dbb14d99605df3527621f3ee3eb9b624d468f5fa7d27c54a8806c3ffe2"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/4/quote",
+          "sha256": "db8906659b781227ebe1abc74bcb1305245da231b2f88ddfea34c6ebf30ac1c9"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/5/quote",
+          "sha256": "2121132113bcb6b6a548749aa3ae7219ea5312b0bf9cbbba9e4aabdb5a04212f"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/6/quote",
+          "sha256": "d380f772b732bbc335d1c2cb40f68b47aacf932056a26e818baa476ecd64db06"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/7/quote",
+          "sha256": "edbd9e5b6e846522d2f4bc4903215e5c768e2520175162acdfa4c966f9fe87f1"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/8/quote",
+          "sha256": "0a2e2d8cfeb05ea689856f9c4b0ce1ae59dedc147554d18d68b944192f3b8744"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/9/quote",
+          "sha256": "1a1288b0e1b7c9c7af44db4c24965413e7ba7591fe6e1e551ce38030d4001c96"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/10/quote",
+          "sha256": "dd546e7baec07be27289850b0aa3d46243b28915e651e664432640d08cdae610"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/11/quote",
+          "sha256": "67680e11358ae84260b9370cd3ed5b02a3976b5f4b37256c6e7f0c735921191e"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/12/quote",
+          "sha256": "b6f9fa8a505e926f124f1e033e3bf67a2e862cbc39b4d437b7d770f1117dc93a"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/13/quote",
+          "sha256": "b2b2f104d32c638903e151a9b20d6e27b41d8c0c84cf8458738f83ca2f1dd744"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/14/quote",
+          "sha256": "76e9c302273150db2001d47052cf88cfceca2728aa67ff5aeadc863c3bc21760"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-directory/professional_excerpts/0/quote",
+          "sha256": "d1c87879670b3e17b20dc53e2721c9ee9f26e93bed99cb516cf26779c50a34ef"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-directory/professional_excerpts/1/quote",
+          "sha256": "cdb77e8a514c4c8f557d33dcb066a3777c3f800e73b91ddab45442fe786852cc"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-directory/professional_excerpts/2/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-directory/professional_excerpts/3/quote",
+          "sha256": "e3fac519f44e47443f1dcd0848af83c357fac3ade879a72f5b6fddb4f73484aa"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-directory/professional_excerpts/4/quote",
+          "sha256": "0db914b6b2b23d79f4a7a0a5a8a4a5c8eef6c2345ad0d6c64719e11a8842c970"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-lab-directory/professional_excerpts/0/quote",
+          "sha256": "d7f8ef4329f5582af3f9c7153725b0e77e203bbce62c5bc879a216e545752ffc"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-lab-directory/professional_excerpts/1/quote",
+          "sha256": "adb2b5c5528427860546df617914b2bf73ad64b02da2c35e1b235bafed2f8205"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/education/0/quote",
+          "sha256": "01d7b13ccaf3336dae5ea5222e7f10b62b9ad5c7c0c60e729e7aecce0c6d7a1d"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/education/1/quote",
+          "sha256": "01d7b13ccaf3336dae5ea5222e7f10b62b9ad5c7c0c60e729e7aecce0c6d7a1d"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/education/2/quote",
+          "sha256": "b315e5b5cc3f3a250d62d9018d3a255e5f953ac2ef4b10e407dad5090aa2755d"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/professional_training/0/quote",
+          "sha256": "e2528ac7c21dea124dc79ba9708fe7a838feeb7efbb87095bb8e8399992ebca6"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/mentor_relations/0/quote",
+          "sha256": "01d7b13ccaf3336dae5ea5222e7f10b62b9ad5c7c0c60e729e7aecce0c6d7a1d"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/mentor_relations/1/quote",
+          "sha256": "01d7b13ccaf3336dae5ea5222e7f10b62b9ad5c7c0c60e729e7aecce0c6d7a1d"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/mentor_relations/2/quote",
+          "sha256": "b315e5b5cc3f3a250d62d9018d3a255e5f953ac2ef4b10e407dad5090aa2755d"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/mentor_relations/3/quote",
+          "sha256": "e2528ac7c21dea124dc79ba9708fe7a838feeb7efbb87095bb8e8399992ebca6"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/appointments/0/quote",
+          "sha256": "f702079332934763fc0d2628e42c8c0b002761d7e0c32cb0c393a87c8131b538"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/appointments/1/quote",
+          "sha256": "fb39560ce385911b318ad9374a298303dec8db1645aca91e7909d6dca18a75c9"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/research_directions/0/quote",
+          "sha256": "93d09061fbe5cbb78493231cdc4d73856a2c072ae94e1a0208737d8b1ee16b79"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/research_directions/1/quote",
+          "sha256": "93d09061fbe5cbb78493231cdc4d73856a2c072ae94e1a0208737d8b1ee16b79"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/research_directions/2/quote",
+          "sha256": "93d09061fbe5cbb78493231cdc4d73856a2c072ae94e1a0208737d8b1ee16b79"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/research_directions/3/quote",
+          "sha256": "93d09061fbe5cbb78493231cdc4d73856a2c072ae94e1a0208737d8b1ee16b79"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/publications/0/quote",
+          "sha256": "3a857964dd03a5948c036104a6cbbb85f5090de2003755edb8bcf9991e4191bb"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/publications/1/quote",
+          "sha256": "e317f83022586b821a2d76c4c3465d94d84fb566cd4d257b6c8ccec1b4cc9b56"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/teaching/0/quote",
+          "sha256": "7d7fc4dbf7a9da41642de6951358495ca14b6bb0fd70ac5d3fad0ad2d6a191a7"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/teaching/1/quote",
+          "sha256": "7d7fc4dbf7a9da41642de6951358495ca14b6bb0fd70ac5d3fad0ad2d6a191a7"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/teaching/2/quote",
+          "sha256": "9df65b6371d602a69bbe743203c3a06a658ad65ded190f83a5914e33e3cfdfcd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "01d7b13ccaf3336dae5ea5222e7f10b62b9ad5c7c0c60e729e7aecce0c6d7a1d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "01d7b13ccaf3336dae5ea5222e7f10b62b9ad5c7c0c60e729e7aecce0c6d7a1d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b315e5b5cc3f3a250d62d9018d3a255e5f953ac2ef4b10e407dad5090aa2755d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e2528ac7c21dea124dc79ba9708fe7a838feeb7efbb87095bb8e8399992ebca6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "01d7b13ccaf3336dae5ea5222e7f10b62b9ad5c7c0c60e729e7aecce0c6d7a1d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "01d7b13ccaf3336dae5ea5222e7f10b62b9ad5c7c0c60e729e7aecce0c6d7a1d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b315e5b5cc3f3a250d62d9018d3a255e5f953ac2ef4b10e407dad5090aa2755d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e2528ac7c21dea124dc79ba9708fe7a838feeb7efbb87095bb8e8399992ebca6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "3a857964dd03a5948c036104a6cbbb85f5090de2003755edb8bcf9991e4191bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e317f83022586b821a2d76c4c3465d94d84fb566cd4d257b6c8ccec1b4cc9b56"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7d7fc4dbf7a9da41642de6951358495ca14b6bb0fd70ac5d3fad0ad2d6a191a7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7d7fc4dbf7a9da41642de6951358495ca14b6bb0fd70ac5d3fad0ad2d6a191a7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9df65b6371d602a69bbe743203c3a06a658ad65ded190f83a5914e33e3cfdfcd"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/education/0/supporting_evidence/0/quote",
+          "sha256": "2121132113bcb6b6a548749aa3ae7219ea5312b0bf9cbbba9e4aabdb5a04212f"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/education/0/quote",
+          "sha256": "44eeb3be313411320606ef307acb4378a0da802bd936e154398ce43c32a22cd7"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/education/1/supporting_evidence/0/quote",
+          "sha256": "db8906659b781227ebe1abc74bcb1305245da231b2f88ddfea34c6ebf30ac1c9"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/education/1/quote",
+          "sha256": "44eeb3be313411320606ef307acb4378a0da802bd936e154398ce43c32a22cd7"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/professional_training/0/quote",
+          "sha256": "edbd9e5b6e846522d2f4bc4903215e5c768e2520175162acdfa4c966f9fe87f1"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/appointments/0/quote",
+          "sha256": "d380f772b732bbc335d1c2cb40f68b47aacf932056a26e818baa476ecd64db06"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/appointments/1/quote",
+          "sha256": "0a2e2d8cfeb05ea689856f9c4b0ce1ae59dedc147554d18d68b944192f3b8744"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/appointments/2/quote",
+          "sha256": "1a1288b0e1b7c9c7af44db4c24965413e7ba7591fe6e1e551ce38030d4001c96"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/appointments/3/quote",
+          "sha256": "dd546e7baec07be27289850b0aa3d46243b28915e651e664432640d08cdae610"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/research_directions/0/quote",
+          "sha256": "d16ec3dbb14d99605df3527621f3ee3eb9b624d468f5fa7d27c54a8806c3ffe2"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/publications/0/supporting_evidence/0/quote",
+          "sha256": "67680e11358ae84260b9370cd3ed5b02a3976b5f4b37256c6e7f0c735921191e"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/publications/0/quote",
+          "sha256": "b6f9fa8a505e926f124f1e033e3bf67a2e862cbc39b4d437b7d770f1117dc93a"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/publications/1/supporting_evidence/0/quote",
+          "sha256": "67680e11358ae84260b9370cd3ed5b02a3976b5f4b37256c6e7f0c735921191e"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/publications/1/supporting_evidence/1/quote",
+          "sha256": "b2b2f104d32c638903e151a9b20d6e27b41d8c0c84cf8458738f83ca2f1dd744"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/publications/1/quote",
+          "sha256": "76e9c302273150db2001d47052cf88cfceca2728aa67ff5aeadc863c3bc21760"
+        },
+        {
+          "json_pointer": "/supporting_evidence/0/quote",
+          "sha256": "2121132113bcb6b6a548749aa3ae7219ea5312b0bf9cbbba9e4aabdb5a04212f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "44eeb3be313411320606ef307acb4378a0da802bd936e154398ce43c32a22cd7"
+        },
+        {
+          "json_pointer": "/supporting_evidence/0/quote",
+          "sha256": "db8906659b781227ebe1abc74bcb1305245da231b2f88ddfea34c6ebf30ac1c9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "44eeb3be313411320606ef307acb4378a0da802bd936e154398ce43c32a22cd7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "edbd9e5b6e846522d2f4bc4903215e5c768e2520175162acdfa4c966f9fe87f1"
+        },
+        {
+          "json_pointer": "/supporting_evidence/0/quote",
+          "sha256": "67680e11358ae84260b9370cd3ed5b02a3976b5f4b37256c6e7f0c735921191e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b6f9fa8a505e926f124f1e033e3bf67a2e862cbc39b4d437b7d770f1117dc93a"
+        },
+        {
+          "json_pointer": "/supporting_evidence/0/quote",
+          "sha256": "67680e11358ae84260b9370cd3ed5b02a3976b5f4b37256c6e7f0c735921191e"
+        },
+        {
+          "json_pointer": "/supporting_evidence/1/quote",
+          "sha256": "b2b2f104d32c638903e151a9b20d6e27b41d8c0c84cf8458738f83ca2f1dd744"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "76e9c302273150db2001d47052cf88cfceca2728aa67ff5aeadc863c3bc21760"
+        },
+        {
+          "json_pointer": "/org_units/0/quote",
+          "sha256": "fb39560ce385911b318ad9374a298303dec8db1645aca91e7909d6dca18a75c9"
+        },
+        {
+          "json_pointer": "/org_units/1/quote",
+          "sha256": "cdb77e8a514c4c8f557d33dcb066a3777c3f800e73b91ddab45442fe786852cc"
+        }
+      ],
+      "semantic_locators": [
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/0/semantic_locator",
+          "public_locator": "姓名"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/1/semantic_locator",
+          "public_locator": "职称"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/2/semantic_locator",
+          "public_locator": "所属职业片段"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/3/semantic_locator",
+          "public_locator": "本硕共享教育期与未细分导师"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/4/semantic_locator",
+          "public_locator": "博士教育及阶段导师"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/5/semantic_locator",
+          "public_locator": "任职起点"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/6/semantic_locator",
+          "public_locator": "学术访问及合作导师"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/7/semantic_locator",
+          "public_locator": "研究兴趣"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/8/semantic_locator",
+          "public_locator": "本科教学"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/9/semantic_locator",
+          "public_locator": "研究生教学"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/10/semantic_locator",
+          "public_locator": "教材书目"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-profile/professional_excerpts/11/semantic_locator",
+          "public_locator": "论文书目"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/0/semantic_locator",
+          "public_locator": "姓名"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/1/semantic_locator",
+          "public_locator": "职称与机构"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/2/semantic_locator",
+          "public_locator": "明确获授与任职节点"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/3/semantic_locator",
+          "public_locator": "研究概要"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/4/semantic_locator",
+          "public_locator": "硕博连读学习期"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/5/semantic_locator",
+          "public_locator": "本科学习期"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/6/semantic_locator",
+          "public_locator": "教授职业史"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/7/semantic_locator",
+          "public_locator": "学术访问"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/8/semantic_locator",
+          "public_locator": "副教授职业史"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/9/semantic_locator",
+          "public_locator": "讲师职业史"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/10/semantic_locator",
+          "public_locator": "研究助理职业史"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/11/semantic_locator",
+          "public_locator": "作者标记说明"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/12/semantic_locator",
+          "public_locator": "论文137书目"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/13/semantic_locator",
+          "public_locator": "论文134所属年份标题"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-profile/professional_excerpts/14/semantic_locator",
+          "public_locator": "论文134作者标题及卷页"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-directory/professional_excerpts/0/semantic_locator",
+          "public_locator": "目录标题"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-directory/professional_excerpts/1/semantic_locator",
+          "public_locator": "名录类别"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-directory/professional_excerpts/2/semantic_locator",
+          "public_locator": "职称分类"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-directory/professional_excerpts/3/semantic_locator",
+          "public_locator": "姓名列名"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-jiangfei-directory/professional_excerpts/4/semantic_locator",
+          "public_locator": "站点归属"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-lab-directory/professional_excerpts/0/semantic_locator",
+          "public_locator": "Parent browser observation: navigation category"
+        },
+        {
+          "json_pointer": "/evidence/sources/nju-chenbaojun-lab-directory/professional_excerpts/1/semantic_locator",
+          "public_locator": "Parent browser observation: directory personal label"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/education/0/source_locator",
+          "public_locator": "本硕共享教育期与未细分导师"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/education/1/source_locator",
+          "public_locator": "本硕共享教育期与未细分导师"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/education/2/source_locator",
+          "public_locator": "博士教育及阶段导师"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/professional_training/0/source_locator",
+          "public_locator": "学术访问及合作导师"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/mentor_relations/0/source_locator",
+          "public_locator": "本硕共享教育期与未细分导师"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/mentor_relations/1/source_locator",
+          "public_locator": "本硕共享教育期与未细分导师"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/mentor_relations/2/source_locator",
+          "public_locator": "博士教育及阶段导师"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/mentor_relations/3/source_locator",
+          "public_locator": "学术访问及合作导师"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/appointments/0/source_locator",
+          "public_locator": "任职起点"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/appointments/1/source_locator",
+          "public_locator": "所属职业片段"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/research_directions/0/source_locator",
+          "public_locator": "研究兴趣"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/research_directions/1/source_locator",
+          "public_locator": "研究兴趣"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/research_directions/2/source_locator",
+          "public_locator": "研究兴趣"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/research_directions/3/source_locator",
+          "public_locator": "研究兴趣"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/publications/0/source_locator",
+          "public_locator": "教材书目"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/publications/1/source_locator",
+          "public_locator": "论文书目"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/teaching/0/source_locator",
+          "public_locator": "本科教学"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/teaching/1/source_locator",
+          "public_locator": "本科教学"
+        },
+        {
+          "json_pointer": "/people/nju-chenbaojun/teaching/2/source_locator",
+          "public_locator": "研究生教学"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "本硕共享教育期与未细分导师"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "本硕共享教育期与未细分导师"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "博士教育及阶段导师"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "学术访问及合作导师"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "本硕共享教育期与未细分导师"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "本硕共享教育期与未细分导师"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "博士教育及阶段导师"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "学术访问及合作导师"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "教材书目"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "论文书目"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "本科教学"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "本科教学"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "研究生教学"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/education/0/supporting_evidence/0/source_locator",
+          "public_locator": "本科学习期"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/education/0/source_locator",
+          "public_locator": "明确获授与任职节点"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/education/1/supporting_evidence/0/source_locator",
+          "public_locator": "硕博连读学习期"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/education/1/source_locator",
+          "public_locator": "明确获授与任职节点"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/professional_training/0/source_locator",
+          "public_locator": "学术访问"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/appointments/0/source_locator",
+          "public_locator": "教授职业史"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/appointments/1/source_locator",
+          "public_locator": "副教授职业史"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/appointments/2/source_locator",
+          "public_locator": "讲师职业史"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/appointments/3/source_locator",
+          "public_locator": "研究助理职业史"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/research_directions/0/source_locator",
+          "public_locator": "研究概要"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/publications/0/supporting_evidence/0/source_locator",
+          "public_locator": "作者标记说明"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/publications/0/source_locator",
+          "public_locator": "论文137书目"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/publications/1/supporting_evidence/0/source_locator",
+          "public_locator": "作者标记说明"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/publications/1/supporting_evidence/1/source_locator",
+          "public_locator": "论文134所属年份标题"
+        },
+        {
+          "json_pointer": "/people/nju-jiangfei/publications/1/source_locator",
+          "public_locator": "论文134作者标题及卷页"
+        },
+        {
+          "json_pointer": "/supporting_evidence/0/source_locator",
+          "public_locator": "本科学习期"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "明确获授与任职节点"
+        },
+        {
+          "json_pointer": "/supporting_evidence/0/source_locator",
+          "public_locator": "硕博连读学习期"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "明确获授与任职节点"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "学术访问"
+        },
+        {
+          "json_pointer": "/supporting_evidence/0/source_locator",
+          "public_locator": "作者标记说明"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "论文137书目"
+        },
+        {
+          "json_pointer": "/supporting_evidence/0/source_locator",
+          "public_locator": "作者标记说明"
+        },
+        {
+          "json_pointer": "/supporting_evidence/1/source_locator",
+          "public_locator": "论文134所属年份标题"
+        },
+        {
+          "json_pointer": "/source_locator",
+          "public_locator": "论文134作者标题及卷页"
+        },
+        {
+          "json_pointer": "/org_units/0/source_locator",
+          "public_locator": "所属职业片段"
+        },
+        {
+          "json_pointer": "/org_units/1/source_locator",
+          "public_locator": "名录类别"
+        }
+      ],
+      "counts": {
+        "people": 2,
+        "education": 7,
+        "explicit_awards": 5,
+        "nondegree": 2,
+        "relationships": 4,
+        "formal_thesis_advisors": 0,
+        "appointments": 6,
+        "publications": 4,
+        "teaching": 3
+      },
+      "limitations": [
+        "当前人事unknown、导航false",
+        "非论文导师核验",
+        "无新抓取、无完整HTTP",
+        "纯文本作品URL不声称href或实际访问"
+      ]
+    }
+  ],
+  "mapping": "Only append ten reviewed source-backed profiles and sourced organization groups; old614facts unchanged. All currentemploymentunknown and navigationfalse; exactsourcefields preserved with canonical aliases. Fullsource/field mappings retained in cohort_mappings."
+}

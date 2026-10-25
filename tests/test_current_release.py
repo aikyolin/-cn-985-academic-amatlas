@@ -16,7 +16,9 @@ from build_rosters import validate_rosters
 from public_metadata import check_public_tree
 
 MAPPING_SHA256 = 'b08daade03c91c774ecda2bc9469f5d92497be873732c5bfb58c59ab9a244475'
-EXPECTED_IDS = ['nju-shiyini', 'nju-yangderui']
+FIRST_IDS = ['nju-shiyini', 'nju-yangderui']
+NEXT_MAPPING_SHA256 = '6b7347159e025485837de10750b40e7af329f229db559e273f4f9145095a6079'
+NEXT_IDS = ['nju-huxiaowu', 'nju-caipingqiang', 'nju-linzhaoyu', 'nju-huying', 'nju-zhangwei-linguistics', 'nju-lvlinhai-education', 'nju-liyougen-law', 'nju-chenbaojun', 'nju-jiangfei', 'nju-zhoujiaxin']
 
 def read(root, rel):
     return json.loads((root / rel).read_text())
@@ -26,6 +28,17 @@ def mapping():
     assert hashlib.sha256(raw).hexdigest() == MAPPING_SHA256, 'Reviewed new-source mapping changed'
     return json.loads(raw)
 
+def next_mapping():
+    raw = (ROOT / 'tests/fixtures/independent-nju10-source-mapping.json').read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == NEXT_MAPPING_SHA256, 'Reviewed new ten-person mapping changed'
+    return json.loads(raw)
+
+def reviewed_additions():
+    first, second = mapping(), next_mapping()
+    assert [p['person_id'] for p in first['people']] == FIRST_IDS
+    assert [p['person_id'] for p in second['people']] == NEXT_IDS
+    return {key: first[key] + second[key] for key in ('people', 'org_units', 'profile_batches')}
+
 def validate_append(current, previous, additions):
     assert set(current) == set(previous), 'Unlisted canonical root fields'
     for key, value in previous.items():
@@ -33,7 +46,7 @@ def validate_append(current, previous, additions):
             assert current[key] == value + additions[key], 'Historical or new source fact changed: ' + key
         else:
             assert current[key] == value, 'Unlisted change: ' + key
-    assert [x['person_id'] for x in current['people'][-2:]] == EXPECTED_IDS
+    assert [x['person_id'] for x in current['people'][len(previous['people']):]] == FIRST_IDS + NEXT_IDS
     assert len({p['person_id'] for p in current['people']}) == len(current['people'])
 
 class CurrentRelease(unittest.TestCase):
@@ -41,21 +54,35 @@ class CurrentRelease(unittest.TestCase):
     def setUpClass(cls):
         cls.previous = read(published_root(), 'data/atlas.json')
         cls.actual = read(ROOT, 'data/atlas.json')
-        cls.additions = mapping()
+        cls.additions = reviewed_additions()
 
     def test_current_canonical_exact_append_conservation(self):
         validate_append(self.actual, self.previous, self.additions)
-        self.assertEqual(len(self.actual['people']), 614)
+        self.assertEqual(len(self.actual['people']), len(self.previous['people']) + len(self.additions['people']))
         self.assertEqual(len(self.actual['pending_people']), 84)
 
+    def test_published_614_prefix_is_independent_fixed_612_plus_first_mapping(self):
+        first = mapping()
+        self.assertEqual(len(self.previous['people']) + len(first['people']), 614)
+        for key in ('people', 'org_units', 'profile_batches'):
+            expected = self.previous[key] + first[key]
+            self.assertEqual(self.actual[key][:len(expected)], expected, key)
+
     def test_old_fact_deletion_reordering_and_unknown_promotions_fail(self):
+        # Mutate each independently protected era, not just whichever person is last.
+        for index in (0, 612, 614):
+            for key, value in [('name', 'invented'), ('quick_link_eligible', True)]:
+                candidate = copy.deepcopy(self.actual)
+                if candidate['people'][index].get(key) == value:
+                    value = 'invented replacement'
+                candidate['people'][index][key] = value
+                with self.subTest(index=index, key=key), self.assertRaises(AssertionError):
+                    validate_append(candidate, self.previous, self.additions)
         mutations = [
-            lambda d: d['people'][0].update(name='invented'),
             lambda d: d['people'].pop(0),
             lambda d: d['people'].reverse(),
-            lambda d: d['people'][-1].update(quick_link_eligible=True),
-            lambda d: d['people'][-1]['education'][0].update(degree_awarded=False),
-            lambda d: d['people'][-1]['sources'][0].update(url='https://example.test/unapproved'),
+            lambda d: d['people'][612]['education'][0].update(degree_awarded=False),
+            lambda d: d['people'][614]['sources'][0].update(url='https://example.test/unapproved'),
             lambda d: d['people'].append(copy.deepcopy(d['people'][-1])),
             lambda d: d.update(unapproved=True),
             lambda d: d['pending_people'].clear(),
@@ -84,7 +111,8 @@ class CurrentRelease(unittest.TestCase):
         self.assertEqual(read(ROOT, 'site/rosters.json')['build_id'], expected)
         self.assertEqual(site['exports'], build.department_exports(self.actual))
         new = next(x for x in site['exports'] if x['department_id'] == 'nju-social-sciences')
-        self.assertEqual(new['people_count'], 2)
+        expected_members = [p for p in self.additions['people'] if p['department_id'] == 'nju-social-sciences']
+        self.assertEqual(new['people_count'], len(expected_members))
 
     def test_all_old_workbooks_and_roster_facts_are_unchanged(self):
         old = published_root()
@@ -112,8 +140,8 @@ class CurrentRelease(unittest.TestCase):
                     a = ET.fromstring(before).find('.//s:c[@r="A39"]', ns)
                     b = ET.fromstring(after).find('.//s:c[@r="A39"]', ns)
                     self.assertIsNotNone(a); self.assertIsNotNone(b)
-                    self.assertEqual(''.join(b.itertext()), ''.join(a.itertext()).replace('612份独立人物档案', '614份独立人物档案'))
-                    self.assertEqual(after, before.replace(b'612&#20221;&#29420;&#31435;', b'614&#20221;&#29420;&#31435;'))
+                    self.assertEqual(''.join(b.itertext()), ''.join(a.itertext()).replace('612份独立人物档案', str(len(self.actual['people'])) + '份独立人物档案'))
+                    self.assertEqual(after, before.replace(b'612&#20221;&#29420;&#31435;', str(len(self.actual['people'])).encode() + b'&#20221;&#29420;&#31435;'))
 
     def test_live_runtime_and_old_validation_engines_are_unchanged(self):
         for rel in ['site/app.js','site/model.js','site/rosters.js','site/styles.css','site/index.html',
@@ -122,7 +150,26 @@ class CurrentRelease(unittest.TestCase):
                     'tests/source-date-history.js']:
             self.assertEqual((ROOT / rel).read_bytes(), (published_root() / rel).read_bytes(), rel)
 
-    def test_new_workbook_is_two_source_bound_people(self):
+    def test_every_affected_workbook_exactly_matches_reviewed_members_and_fields(self):
+        from openpyxl import load_workbook
+        departments = {p['department_id'] for p in next_mapping()['people']}
+        expected_people = self.previous['people'] + self.additions['people']
+        for department in departments:
+            members = [p for p in expected_people if p['department_id'] == department]
+            self.assertEqual(len(members), len({p['person_id'] for p in members}))
+            wb = load_workbook(ROOT / 'site/exports' / (department + '.xlsx'), data_only=False)
+            try:
+                tables = build.department_tables(members, self.actual['updated_at'], self.actual['institutions'])
+                self.assertEqual(wb.sheetnames, [name for name, _ in tables])
+                for name, rows in tables:
+                    expected = [[build.clean(value) if build.clean(value) != '' else None for value in row] for row in rows]
+                    actual = [list(row) for row in wb[name].iter_rows(values_only=True)]
+                    self.assertEqual(actual, expected, (department, name))
+                self.assertEqual([row[0] for row in wb['总览'].iter_rows(min_row=2, values_only=True)], [p['name'] for p in members])
+            finally:
+                wb.close()
+
+    def test_live_social_workbook_preserves_first_two_source_bound_people(self):
         from openpyxl import load_workbook
         wb = load_workbook(ROOT / 'site/exports/nju-social-sciences.xlsx', data_only=False)
         try:
