@@ -20,6 +20,8 @@ FIRST_IDS = ['nju-shiyini', 'nju-yangderui']
 NEXT_MAPPING_SHA256 = '6b7347159e025485837de10750b40e7af329f229db559e273f4f9145095a6079'
 SEU_MAPPING_SHA256 = 'e628de5b926bc65288b908aa2c8fc85fd5ff55f156891e2ab573acacaaa86795'
 SCU_MAPPING_SHA256 = 'c865a6548faf84d525bf2d42c2f6df1584a1e27e6a4298f845180fe3c656addf'
+UESTC_MAPPING_SHA256 = '3237a4596f84af20c149ac69f9e30917fe7f7df31fce021c5005a11cab18d1c3'
+UESTC_IDS = ['uestc-shangjizheng', 'uestc-shenhua', 'uestc-fangjiaming', 'uestc-kangjian', 'uestc-qianhao', 'uestc-liangjian', 'uestc-nidebing', 'uestc-dengchenliang', 'uestc-zhouguanyu', 'uestc-zhupeiyong']
 SCU_IDS = ['scu-baishibing', 'scu-baojianjun', 'scu-caoya', 'scu-longbingwei', 'scu-fanzhenxin', 'scu-xuliang', 'scu-fengxianqiong', 'scu-penghua-classics', 'scu-lifei', 'scu-huangzongxian', 'scu-wuyongqiang']
 SEU_IDS = ['seu-dinghui', 'seu-sushu', 'seu-zhangkaifeng', 'seu-zhangjianqiong', 'seu-liupeidang', 'seu-shan-pingji-wave171', 'seu-he-shaojin-wave171', 'seu-zhangxueyi', 'seu-dongqun', 'seu-longdiyong']
 NEXT_IDS = ['nju-huxiaowu', 'nju-caipingqiang', 'nju-linzhaoyu', 'nju-huying', 'nju-zhangwei-linguistics', 'nju-lvlinhai-education', 'nju-liyougen-law', 'nju-chenbaojun', 'nju-jiangfei', 'nju-zhoujiaxin']
@@ -47,13 +49,19 @@ def scu_mapping():
     assert hashlib.sha256(raw).hexdigest() == SCU_MAPPING_SHA256, 'Reviewed SCU eleven-person mapping changed'
     return json.loads(raw)
 
+def uestc_mapping():
+    raw = (ROOT / 'tests/fixtures/independent-uestc10-source-mapping.json').read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == UESTC_MAPPING_SHA256, 'Reviewed UESTC ten-person mapping changed'
+    return json.loads(raw)
+
 def reviewed_additions():
-    first, second, third, fourth = mapping(), next_mapping(), seu_mapping(), scu_mapping()
+    first, second, third, fourth, fifth = mapping(), next_mapping(), seu_mapping(), scu_mapping(), uestc_mapping()
     assert [p['person_id'] for p in first['people']] == FIRST_IDS
     assert [p['person_id'] for p in second['people']] == NEXT_IDS
     assert [p['person_id'] for p in third['people']] == SEU_IDS
     assert [p['person_id'] for p in fourth['people']] == SCU_IDS
-    return {key: first[key] + second[key] + third[key] + fourth[key] for key in ('people', 'org_units', 'profile_batches')}
+    assert [p['person_id'] for p in fifth['people']] == UESTC_IDS
+    return {key: first[key] + second[key] + third[key] + fourth[key] + fifth[key] for key in ('people', 'org_units', 'profile_batches')}
 
 def validate_append(current, previous, additions):
     assert set(current) == set(previous), 'Unlisted canonical root fields'
@@ -62,7 +70,7 @@ def validate_append(current, previous, additions):
             assert current[key] == value + additions[key], 'Historical or new source fact changed: ' + key
         else:
             assert current[key] == value, 'Unlisted change: ' + key
-    assert [x['person_id'] for x in current['people'][len(previous['people']):]] == FIRST_IDS + NEXT_IDS + SEU_IDS + SCU_IDS
+    assert [x['person_id'] for x in current['people'][len(previous['people']):]] == FIRST_IDS + NEXT_IDS + SEU_IDS + SCU_IDS + UESTC_IDS
     assert len({p['person_id'] for p in current['people']}) == len(current['people'])
 
 class CurrentRelease(unittest.TestCase):
@@ -98,9 +106,16 @@ class CurrentRelease(unittest.TestCase):
             expected = self.previous[key] + first[key] + second[key] + third[key]
             self.assertEqual(self.actual[key][:len(expected)], expected, key)
 
+    def test_published_645_prefix_preserves_independent_previous_source_mappings(self):
+        previous_mappings = (mapping(), next_mapping(), seu_mapping(), scu_mapping())
+        self.assertEqual(len(self.previous['people']) + sum(len(m['people']) for m in previous_mappings), 645)
+        for key in ('people', 'org_units', 'profile_batches'):
+            expected = self.previous[key] + [item for m in previous_mappings for item in m[key]]
+            self.assertEqual(self.actual[key][:len(expected)], expected, key)
+
     def test_old_fact_deletion_reordering_and_unknown_promotions_fail(self):
         # Mutate each independently protected era, not just whichever person is last.
-        for index in (0, 612, 614, 624, 634):
+        for index in (0, 612, 614, 624, 634, 645):
             for key, value in [('name', 'invented'), ('quick_link_eligible', True)]:
                 candidate = copy.deepcopy(self.actual)
                 if candidate['people'][index].get(key) == value:
@@ -144,11 +159,14 @@ class CurrentRelease(unittest.TestCase):
         expected_members = [p for p in self.additions['people'] if p['department_id'] == 'nju-social-sciences']
         self.assertEqual(new['people_count'], len(expected_members))
 
-    def test_all_old_workbooks_and_roster_facts_are_unchanged(self):
+    def test_unaffected_old_workbooks_and_roster_facts_are_unchanged(self):
         old = published_root()
+        affected = {p['department_id'] for p in self.additions['people']}
         for file in (old / 'site/exports').glob('*'):
             if file.name == '待核对名录.xlsx':
                 continue  # Sole global count cell is tested separately below.
+            if file.stem in affected:
+                continue  # Changed membership: full old/new source-derived tables tested below.
             self.assertEqual((ROOT / 'site/exports' / file.name).read_bytes(), file.read_bytes(), file.name)
         self.assertEqual((ROOT / 'data/rosters.json').read_bytes(), (old / 'data/rosters.json').read_bytes())
         roster = read(ROOT, 'site/rosters.json'); previous = read(old, 'site/rosters.json')
@@ -195,7 +213,7 @@ class CurrentRelease(unittest.TestCase):
 
     def test_every_affected_workbook_exactly_matches_reviewed_members_and_fields(self):
         from openpyxl import load_workbook
-        departments = {p['department_id'] for p in next_mapping()['people'] + seu_mapping()['people'] + scu_mapping()['people']}
+        departments = {p['department_id'] for p in next_mapping()['people'] + seu_mapping()['people'] + scu_mapping()['people'] + uestc_mapping()['people']}
         expected_people = self.previous['people'] + self.additions['people']
         for department in departments:
             members = [p for p in expected_people if p['department_id'] == department]
@@ -209,6 +227,29 @@ class CurrentRelease(unittest.TestCase):
                     actual = [list(row) for row in wb[name].iter_rows(values_only=True)]
                     self.assertEqual(actual, expected, (department, name))
                 self.assertEqual([row[0] for row in wb['总览'].iter_rows(min_row=2, values_only=True)], [p['name'] for p in members])
+            finally:
+                wb.close()
+
+    def test_existing_department_old_rows_survive_member_append(self):
+        from openpyxl import load_workbook
+        existing = {p['department_id'] for p in self.previous['people']}
+        affected = existing & {p['department_id'] for p in uestc_mapping()['people']}
+        self.assertEqual(affected, {'uestc-public-administration', 'uestc-applied-math-center'})
+        for department in affected:
+            old_people = [p for p in self.previous['people'] if p['department_id'] == department]
+            for old_person in old_people:
+                self.assertEqual(next(p for p in self.actual['people'] if p['person_id'] == old_person['person_id']), old_person)
+            wb = load_workbook(ROOT / 'site/exports' / (department + '.xlsx'), data_only=False)
+            try:
+                for name, rows in build.department_tables(old_people, self.previous['updated_at'], self.previous['institutions']):
+                    actual = [list(row) for row in wb[name].iter_rows(min_row=2, values_only=True)]
+                    cursor = 0
+                    for row in rows[1:]:
+                        expected = [build.clean(value) if build.clean(value) != '' else None for value in row]
+                        while cursor < len(actual) and actual[cursor] != expected:
+                            cursor += 1
+                        self.assertLess(cursor, len(actual), (department, name, expected))
+                        cursor += 1
             finally:
                 wb.close()
 

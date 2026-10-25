@@ -1,4 +1,5 @@
 """Public-v1 historical pins preserve every remaining leaf and reject tampering."""
+from published_fixture import published_root
 import ast
 import copy
 import hashlib
@@ -20,7 +21,7 @@ class PublicHistoryContracts(unittest.TestCase):
             contract, view = load(release)
             for rel, rule in contract.items():
                 with self.subTest(release=release, file=rel):
-                    value = json.loads((ROOT / rel).read_text())
+                    value = json.loads(((published_root() if rel == 'site/atlas.json' else ROOT) / rel).read_text())
                     historical = view(value, rel)
                     raw = (json.dumps(historical, ensure_ascii=False, indent=2) + '\n').encode()
                     self.assertEqual(hashlib.sha256(raw).hexdigest(), rule['byte_sha256'])

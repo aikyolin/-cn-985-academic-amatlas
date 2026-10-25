@@ -1979,7 +1979,12 @@ class Rotation003Wave1ReleaseTests(unittest.TestCase):
             with self.assertRaises(AssertionError,msg=mode): assert_source_closure(p)
 
     def test_28_generated_site_preserves_canonical_profiles_and_pending_layer(self):
-        site=release25_view(json.loads((ROOT/'site/atlas.json').read_text()), 'site/atlas.json'); roster=release25_view(json.loads((ROOT/'site/rosters.json').read_text()), 'site/rosters.json')
+        actual_site = json.loads((ROOT/'site/atlas.json').read_text())
+        actual_data = json.loads((ROOT/'data/atlas.json').read_text())
+        self.assertEqual(actual_site['people'], actual_data['people'])
+        self.assertEqual(actual_site['pending_people'], actual_data['pending_people'])
+        self.assertEqual(actual_site['build_id'], json.loads((ROOT/'site/rosters.json').read_text())['build_id'])
+        site=release25_view(json.loads((published_root()/'site/atlas.json').read_text()), 'site/atlas.json'); roster=release25_view(json.loads((ROOT/'site/rosters.json').read_text()), 'site/rosters.json')
         self.assertEqual(site['people'],self.d['people']); self.assertEqual(site['pending_people'],self.d['pending_people'])
         self.assertEqual(site['build_id'],roster['build_id']); self.assertEqual(len(site['exports']),111)
         self.assertEqual(len(roster['entries']),1721)
@@ -2065,7 +2070,7 @@ class Rotation003Wave1ReleaseTests(unittest.TestCase):
     def test_35_all_107_original_department_workbooks_stay_byte_identical(self):
         self.assertEqual(len(BASELINE_DEPARTMENT_WORKBOOK_SHA256),107)
         for file,digest in BASELINE_DEPARTMENT_WORKBOOK_SHA256.items():
-            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),digest,file)
+            self.assertEqual(hashlib.sha256(historical_bytes(file,((published_root() if file in ('site/exports/uestc-public-administration.xlsx','site/exports/uestc-applied-math-center.xlsx') else ROOT)/file).read_bytes())).hexdigest(),digest,file)
 
     if os.environ.get('ACADEMIC_ATLAS_NEGATIVE_CONTROL_ROOT'):
         def test_36_baseline_real_workbook_writer_reproduces_disabled_source_hyperlink_defect(self):

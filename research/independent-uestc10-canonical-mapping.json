@@ -1,0 +1,1419 @@
+{
+  "schema_version": "independent-uestc10-canonical-mapping-1",
+  "baseline_commit": "9cab714173152995f1c8dc2ffda0d6b1751693b6",
+  "new_people": [
+    "uestc-shangjizheng",
+    "uestc-shenhua",
+    "uestc-fangjiaming",
+    "uestc-kangjian",
+    "uestc-qianhao",
+    "uestc-liangjian",
+    "uestc-nidebing",
+    "uestc-dengchenliang",
+    "uestc-zhouguanyu",
+    "uestc-zhupeiyong"
+  ],
+  "new_org_ids": [
+    "uestc-marxism",
+    "uestc-mathematical-sciences",
+    "uestc-economics-management",
+    "uestc-medicine",
+    "uestc-sports-department"
+  ],
+  "counts": {
+    "people": 10,
+    "org_units": 5,
+    "education": 31,
+    "appointments": 20,
+    "publications": 12,
+    "mentors": 0,
+    "teaching": 10,
+    "degree_true": 16,
+    "degree_false": 8,
+    "degree_unknown": 7
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "early-careers",
+      "canonical_payload_sha256": "70d15e2fb1201c50707d4ecc832e4194d9ae8d7f76321394674aeb15334cd071",
+      "field_mapping_sha256": "349a999a0fb9aecc902258f65e4ef5b90b9db9ec7340d6441d7e568cb567405e",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "public-management-medical",
+      "canonical_payload_sha256": "571359b4e2f8db3fcf09de7a6262052b128c40d5099323ea10c9cf7768e6ae3c",
+      "field_mapping_sha256": "95e47a9bf5c4f72c2c6fd8ee0b83f0fe654d3054678587c25b39bc24d0aae5b7",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "sports-mathematics",
+      "canonical_payload_sha256": "05385d4d64d1d11d44fa279f3f7ffee16d0c3213c7d96920487003cb581a8ad6",
+      "field_mapping_sha256": "2d1df6169205a77836846b7489fed40b8e10948b9fe37dfc7c80b3c81b528177",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "schema_version": "uestc10-early-careers-mapping-1",
+      "baseline_commit": "9cab714173152995f1c8dc2ffda0d6b1751693b6",
+      "people": [
+        "uestc-shangjizheng",
+        "uestc-shenhua",
+        "uestc-fangjiaming"
+      ],
+      "org_ids": [
+        "uestc-marxism",
+        "uestc-mathematical-sciences",
+        "uestc-economics-management"
+      ],
+      "source_hashes": [
+        {
+          "person_id": "uestc-shangjizheng",
+          "source_candidate_sha256": "709c33b1f85a918ed7b4a1c4fc0d00aadf46b5188b122674a4c8619d986252f2",
+          "review_sha256": "8957e11d39c0d2e3c397decfc36dab817bf7d59cc819cefec15354cb54eeef1e"
+        },
+        {
+          "person_id": "uestc-shenhua",
+          "source_candidate_sha256": "a9f75526c1d9037686e06c0602684ca41579f7f163af5c1eaba700a99609a077",
+          "review_sha256": "1fb35c479af1dcc1954fa0952cfa02494ee391373e4a6cfd8fa4f983ae33629d"
+        },
+        {
+          "person_id": "uestc-fangjiaming",
+          "source_candidate_sha256": "1b5e1f7032a9ee52887cbae80765373b3734b70dbb1cc8c6b07ab319209f45bb",
+          "review_sha256": "01bae62473b9a2617ac476069077d13440fedae1a7a7f8b47187b233d95b39f5"
+        }
+      ],
+      "counts": {
+        "people": 3,
+        "education": 8,
+        "awarded_degrees": 7,
+        "nondegree_events": 1,
+        "mentors": 0,
+        "publications": 4,
+        "teaching_records": 1,
+        "appointments": 8,
+        "professional_qualifications": 1
+      },
+      "mapping_rules": [
+        "原投影记录整体保留，unknowns原集合别存source_unknowns；note原值别存source_note。",
+        "有明确授位的degree_study/合并学段映射为degree以适配当前筛选，source_event_kind原样保留，授位时间不推。",
+        "申华两授位时间只保留原年份，博士后非学位；AMCS/ECRC是原单位串，不推行政层级。",
+        "商继政2职称晋升从career facts转可见任职，机构未知。",
+        "方佳明4职业记录来自已审原文补充：任教、导师资格、聘教授、系主任分别保留，不混日期。",
+        "原精确/近似观察时刻、原生链接复核时刻与补存原文时刻分开，原basis不省略。",
+        "新院系仅来源展示分组，不推独立顶级学院或行政父级。"
+      ],
+      "accepted_supplements": [
+        {
+          "evidence_id": "uestc-fangjiaming-work1-original",
+          "sha256": "d9ed7207220af41dd32b3defa2e164d806a6477bd6ad6deb87fa3e6862a2bc97"
+        },
+        {
+          "evidence_id": "uestc-fangjiaming-work2-original",
+          "sha256": "16b0ed8e21091dca0364668ab93bd8f38c56ba499d7195fcc8fc6efd39a438dc"
+        },
+        {
+          "evidence_id": "uestc-fangjiaming-biography-role-graduation-original",
+          "sha256": "1ac822162704158b01c076246eb9555408927917afb32b88dc18a24d76c91d4f"
+        },
+        {
+          "evidence_id": "uestc-fangjiaming-academic-career-dates-original",
+          "sha256": "67e490f80b3ee10582c8c5958e00228faa075e432d8cdf5d68efa1a0f6ad6a27"
+        }
+      ],
+      "network": "没有新采集，没有访问受限目标或重试既有受阻出版社。",
+      "qualification_classification_correction": "2018-06博士生导师资格单列professional_qualifications，不参与任职/导师计数；日期与原来源完整保留，教授任职note独立提示该资格以兼容现有页面展示。"
+    },
+    {
+      "schema_version": "uestc10-four-person-map-1",
+      "people": [
+        "uestc-kangjian",
+        "uestc-qianhao",
+        "uestc-liangjian",
+        "uestc-nidebing"
+      ],
+      "counts": {
+        "people": 4,
+        "education": 14,
+        "awarded_true": 6,
+        "awarded_null": 3,
+        "nondegree": 5,
+        "appointments": 7,
+        "publications": 6,
+        "teaching": 5,
+        "mentors": 0
+      },
+      "mapping": {
+        "current_status": "126/166原null与unknown标签保留，canonical employment_status unknown；导航false。",
+        "education": "显式获授true映射degree，原kind保留；日期不补推；188三标签null，访问/博后false。",
+        "appointments": "完整保留1+2+1+3历史任职；机构加入不推晋升；188原始年月保留规范日期null。",
+        "sources": "必要职业片段保持原文和指纹；剔除工具内部引用与行号，保留原始观察区间/时刻精度。",
+        "teaching": "康健两组职业课程摘录映射5具名课程，不补责任角色。",
+        "bibliography": "保留6条原书目；倪forthcoming,2012和Wang. Y.不修正，梁官网列表空不造作品。",
+        "visibility_revision": "梁健2023-07-14入职字段在原任职note可见但start仍null；倪2010.12博导资格在对应副教授任职note另句显示不增事件且不入导师图；康健精确主题公共服务与共同富裕加入研究方向显示。",
+        "organizations": "复用已发布公共管理学院不改旧节点；经管复用本批商申方组唯一节点；医学院新node不推父级。"
+      },
+      "evidence_hashes": [
+        {
+          "person_id": "uestc-kangjian",
+          "source_sha256": "8b8e7ed585e0ca8c611aa5d76f55263ff7baa105ee172fc667acedb8add25ba4",
+          "review_sha256": "44ac8d6671c0a6599f6df1a8789fd2994ae0f2cd89bc28b87d4b8a435f288d2e",
+          "overlay_sha256": null
+        },
+        {
+          "person_id": "uestc-qianhao",
+          "source_sha256": "c1d9c21d45bb321c7234e8f39ffd7a0d002c582c586bdef55294b8f80085d8cb",
+          "review_sha256": "83f0daede4f580817c847dc6328ab8ac97c12c65c055981be16bb324089c4383",
+          "overlay_sha256": "06fa58c913b16f448675cc59b32fcbe858f591e46c4daaad681ad4d65a4e8599"
+        },
+        {
+          "person_id": "uestc-liangjian",
+          "source_sha256": "afb25402788148cadc8d3569d712c9325fc9d5c41a75fc4ffe229a166691b1d4",
+          "review_sha256": "987c903acd7276be9dc69c96917bce329484bb5674a2248339e2b52332362f40",
+          "overlay_sha256": "f228ede210bc7f6f87c4b218c62d75ba295d06b1a55f2e6606934280e1117d1d"
+        },
+        {
+          "person_id": "uestc-nidebing",
+          "source_sha256": "afb25402788148cadc8d3569d712c9325fc9d5c41a75fc4ffe229a166691b1d4",
+          "review_sha256": "987c903acd7276be9dc69c96917bce329484bb5674a2248339e2b52332362f40",
+          "overlay_sha256": "f228ede210bc7f6f87c4b218c62d75ba295d06b1a55f2e6606934280e1117d1d"
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/0/text",
+          "sha256": "5c05e39ca884bb4e3d3dd9293fb490bc085e0da057c36c84f9f1c5457408a36b"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/1/text",
+          "sha256": "d744f571f51d869af38bcef9f58080fcf52272fdb269ca7223114118f2b9375f"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/2/text",
+          "sha256": "23a0066708859c8f99d0135e6411ad692aa4497a938c749617408586cdeac52e"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/3/text",
+          "sha256": "e079fb0c46270233e536eee3300ef2cd218c7c09351f04749eab0ae6f1c5925d"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/4/text",
+          "sha256": "d299fd25589dd398f459e7619b4a5d6487d55a1065e0bf52e50758ef9088e538"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/5/text",
+          "sha256": "c461fe177e70fc4cc2213c191bf3e66a9a9c2935b702232dc0124ea9d2b4b046"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/6/text",
+          "sha256": "c8ad1a34ba316c3669de66f4b849a47a1499b3c0495995e24ca67cb6c58c674a"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/7/text",
+          "sha256": "9f2a0a56f10a7a89119696047f082486040946fa32506ea24e9065e60418293e"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/8/text",
+          "sha256": "7d791b69c9d684a4cd282f2a477fe9996f567cb24fd905419be972b40a5a4809"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/9/text",
+          "sha256": "a39b9f71aa30bec8d3014efa07cd8874e4d5dad6c3c967f0e6979b320b5d932a"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/10/text",
+          "sha256": "f4a793077e5480809e9b19599df570d5f4fcb611123ace7b48b27c10820155d7"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/11/text",
+          "sha256": "be1f71a4762336ec75813eeec9646e40c7df2f3ab5399649e5e1e18f7eb25382"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/12/text",
+          "sha256": "d0aca1e4b364507f82bdc592c74ad7639939d91cc6f24d0dcf5e73cce74d7b9b"
+        },
+        {
+          "path": "/sources/uestc-kangjian-profile/lines/13/text",
+          "sha256": "d6330d4ac8ea9662b35234f1299af54bd6c33d03c814038c5bfb8206daaac6d7"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/0/text",
+          "sha256": "e0f4f92d479112261d24073b444c53290aa15adb4c8b99c723ab614ae6855926"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/1/text",
+          "sha256": "a08568e897a2cb1d9dffb1cb51e4b07998283e6de5aa1afbe94bdfb7899806f4"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/2/text",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/3/text",
+          "sha256": "64b8b2635de5fe825a7335d430ab52ad4780bfb364030a342d1d402617c12b28"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/4/text",
+          "sha256": "d16a7caf02b96047b55d5b850e8cea8fe46605d6ae5d70b7e7bca4b23c7b6d47"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/5/text",
+          "sha256": "ea67a7b53a128bb8ef866a1ded072cf23a3ed4fb55f0ffe35f2f87ae514d37c3"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/6/text",
+          "sha256": "49f97f7d1abdcbb10d1817954d46dfabf9a73688ee992deaa25bc685f5fd742d"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/7/text",
+          "sha256": "ab02bda013fb4ea29f7ba9cf53708bae43f0aa8eb8b538897a13ca79fca20c91"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/8/text",
+          "sha256": "6fe45bc5f4259a89f59d19db9cfd858c96ce955cda4daec0dc6dffd1b5b089d0"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/9/text",
+          "sha256": "81930866ba2eb17354ecd3bc2d0d6a548ba10998e512132d64ceb2c2c0082bf2"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/10/text",
+          "sha256": "a7ffcafb3fa02cd4bfac737b1cf10f15cc0aecf77e8d1b4d11f3032e74a2c3f1"
+        },
+        {
+          "path": "/sources/uestc-kangjian-graduate-profile/lines/11/text",
+          "sha256": "51b83db7dfcd64c7ffd6faca2ee0143394fe613122737efe3c7341d1b722a7e4"
+        },
+        {
+          "path": "/sources/uestc-kangjian-mpa-profile/lines/0/text",
+          "sha256": "3796ad8f91e7e4315d1dedccd9c9b1db486711cb410eb5155d43252637d83f43"
+        },
+        {
+          "path": "/sources/uestc-kangjian-mpa-profile/lines/1/text",
+          "sha256": "5c05e39ca884bb4e3d3dd9293fb490bc085e0da057c36c84f9f1c5457408a36b"
+        },
+        {
+          "path": "/sources/uestc-kangjian-mpa-profile/lines/2/text",
+          "sha256": "fa1405f94b5f267ef5ed5a5c34a1404aba388a6653953222573839013be75a66"
+        },
+        {
+          "path": "/sources/uestc-kangjian-mpa-profile/lines/3/text",
+          "sha256": "87193f244469d9d13104a30d8aa9140d452a6d7ccb4fac491110344367b19326"
+        },
+        {
+          "path": "/sources/uestc-kangjian-mpa-profile/lines/4/text",
+          "sha256": "95e069147b56f4e7dc156f4432a890dd5348bedd393bd51693b92efff524da0c"
+        },
+        {
+          "path": "/sources/uestc-kangjian-mpa-profile/lines/5/text",
+          "sha256": "126e9534a3ca92759029623ce82d2a63731c30dd3d01aa31c8db285013a8204e"
+        },
+        {
+          "path": "/sources/uestc-kangjian-mpa-profile/lines/6/text",
+          "sha256": "2ae3e9424582a9d6603a0f9505594a0a71449baa73ea12cedc4ac06aab498945"
+        },
+        {
+          "path": "/sources/uestc-kangjian-mpa-profile/lines/7/text",
+          "sha256": "007bc89a5cd347b5621be335ecf297468333edff4ceaf92dd08649e4a3284d62"
+        },
+        {
+          "path": "/sources/uestc-kangjian-mpa-profile/lines/8/text",
+          "sha256": "b1f159f4978537d29f1c412d768ed689c65291bb748c4f8ffe4ce4fb1b51f0af"
+        },
+        {
+          "path": "/sources/uestc-kangjian-mpa-profile/lines/9/text",
+          "sha256": "53d84217706057d89912349be5f4be933fa8812750ef820c1313fe0955e4ac70"
+        },
+        {
+          "path": "/sources/uestc-mpa-associate-directory/lines/0/text",
+          "sha256": "fafd95af1fa127a5d6273a8e80e0d988b1e675fd40e568ead5f0a557f268e7f3"
+        },
+        {
+          "path": "/sources/uestc-mpa-associate-directory/lines/1/text",
+          "sha256": "3435ccad8c03abaaf2a9e829154144602f6046efd8ded37430d831d0e1035e30"
+        },
+        {
+          "path": "/sources/uestc-mpa-associate-directory/lines/2/text",
+          "sha256": "d5f0fbe4ff4be379a5f60b1b689c68f8195fe201b1c4669a6e397cdc7fdae89d"
+        },
+        {
+          "path": "/sources/uestc-mpa-associate-directory/lines/3/text",
+          "sha256": "9df653d4464ec3f6a271183a5932fe1fdeaa775ecec1020bc0fcb04764e732f5"
+        },
+        {
+          "path": "/sources/qian-profile/fragments/0/quote",
+          "sha256": "224886f4ac0bd706ee0edabbd537c82cfd6103993762f625e17884802f5fb108"
+        },
+        {
+          "path": "/sources/qian-profile/fragments/1/quote",
+          "sha256": "9ec7486704b4237a4abc860fd15a5043530699cb492e793c16c73c325ff5961a"
+        },
+        {
+          "path": "/sources/qian-profile/fragments/2/quote",
+          "sha256": "2e267aec4f2e0f46b8fbeadff2c13e7bfe7c6303247e4526bcd10f2cb9694186"
+        },
+        {
+          "path": "/sources/qian-profile/fragments/3/quote",
+          "sha256": "57676300a74abb0b3c88c3ff4f854e599113d2171ed36226085b5b7e50182f87"
+        },
+        {
+          "path": "/sources/qian-profile/fragments/4/quote",
+          "sha256": "329e339602c795bb51d72fca087079bab83d3eb295f16253b731fc4aeded2271"
+        },
+        {
+          "path": "/sources/qian-profile/fragments/5/quote",
+          "sha256": "0192c764aa1e203da472a34b3201da745afd6178bc7d51601d4d37ef2f823cf5"
+        },
+        {
+          "path": "/sources/qian-profile/fragments/6/quote",
+          "sha256": "4892c6f38fbeb30dedd60b72ef9b7f86f2f6565e00cab8f935ed360089681af8"
+        },
+        {
+          "path": "/sources/qian-profile/fragments/7/quote",
+          "sha256": "a4b11a9642ad8b1cee94d98c0c3118be760da245ee74c4ffa0b05afea19e47b9"
+        },
+        {
+          "path": "/sources/qian-faculty/fragments/0/quote",
+          "sha256": "3d23a8e0844bd1abc48450b5ec35516a27c92142f549a0bba303601b02f562f3"
+        },
+        {
+          "path": "/sources/qian-faculty/fragments/1/quote",
+          "sha256": "2e2540795b3845f8151b47cefbb95fac9fb8c88c8383a4d479fbe882221886fb"
+        },
+        {
+          "path": "/sources/qian-faculty/fragments/2/quote",
+          "sha256": "1357b5e4681ee15bbb2bae759aeb4c4383788e23b4870e076a62f5103b99e8f5"
+        },
+        {
+          "path": "/sources/qian-faculty/fragments/3/quote",
+          "sha256": "35639c3f28136031caa2fbd97bbef773d9c2f55ae3fc9da40bdae98391daa273"
+        },
+        {
+          "path": "/sources/qian-directory/fragments/0/quote",
+          "sha256": "a8d9737e9b6df0ffc7506aca44665fe9cdbfab3d1597bff02d615eaee307d4de"
+        },
+        {
+          "path": "/sources/uestc-liangjian-profile/excerpts/0/quote",
+          "sha256": "b78ef2790cabcb4b7a8c7bcc3d1a8237db0681b11fbf7358e00e2789aa703ea2"
+        },
+        {
+          "path": "/sources/uestc-liangjian-profile/excerpts/1/quote",
+          "sha256": "c461fe177e70fc4cc2213c191bf3e66a9a9c2935b702232dc0124ea9d2b4b046"
+        },
+        {
+          "path": "/sources/uestc-liangjian-profile/excerpts/2/quote",
+          "sha256": "9aa84f4451799aaffee65f9eeee62c27b66a2e315a5bc22d94e554645c275c35"
+        },
+        {
+          "path": "/sources/uestc-liangjian-profile/excerpts/3/quote",
+          "sha256": "336b14a75178ec8bba12249d7a2445a8a96d61ce8626fe405288aa802c88b7fa"
+        },
+        {
+          "path": "/sources/uestc-liangjian-profile/excerpts/4/quote",
+          "sha256": "625f8f04a77618a0b815babb95eee0b261b0d8abe2da60089c4a8e31bcfe3697"
+        },
+        {
+          "path": "/sources/uestc-public-management-directory/excerpts/0/quote",
+          "sha256": "db9ad4e89290482c98beffb1cf529570fe5321ec9fca6d4c8a9af3817203fba8"
+        },
+        {
+          "path": "/sources/uestc-public-management-directory/excerpts/1/quote",
+          "sha256": "56a6c0faf2017705fe89bf3aff7442356ce6d4fb51f96f2942ad82e0c5937fb5"
+        },
+        {
+          "path": "/sources/uestc-liangjian-publications/excerpts/0/quote",
+          "sha256": "b52ca4c089fa4667273c50c6678517592df881270340cfb1e8262ce5223ac6ae"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/0/quote",
+          "sha256": "8202a709c3c24d3baeef57e0640ae5b8e78a324f94f1ba06df6b75f17ce84001"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/1/quote",
+          "sha256": "f28e9ae96bb3e6da7aa43597adbc876d448f4ae9fab3e0d8bb0eb8d17938dbed"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/2/quote",
+          "sha256": "1374bd22c8a33ad22ed08c5ff719403138eeacd1ea7924a006e60fad05cf1674"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/3/quote",
+          "sha256": "ddd5f8573557c72f9d3bc442d668cabee8308489c1592cbb95495d63f8b16b39"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/4/quote",
+          "sha256": "8ba46d17b9300f4c5d854d6af1e9261dc0045a39a2e192424db1900831e431d1"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/5/quote",
+          "sha256": "19d2bb1bf89f2b8d211547c2d7b079ca0ea947627dce5d5b14d7c29afcf73be7"
+        },
+        {
+          "path": "/sources/uestc-economics-management-directory-page3/excerpts/0/quote",
+          "sha256": "7b35a0f0ab01032ab10266c85c9079a8c626cf80661a2afe6fd022732e4a580b"
+        },
+        {
+          "path": "/sources/uestc-economics-management-directory-page3/excerpts/1/quote",
+          "sha256": "73cc7d2321e2175d290d777d708f52ab2d9a142730a29f92d3264c5e9a074130"
+        },
+        {
+          "path": "/sources/uestc-economics-management-directory-page3/excerpts/2/quote",
+          "sha256": "2bc8adb75f8f9477cd874683943ed65917a59902ca03539fe9a7cedc0caf7db4"
+        },
+        {
+          "path": "/sources/uestc-liangjian-profile/excerpts/0/quote",
+          "sha256": "b78ef2790cabcb4b7a8c7bcc3d1a8237db0681b11fbf7358e00e2789aa703ea2"
+        },
+        {
+          "path": "/sources/uestc-liangjian-profile/excerpts/1/quote",
+          "sha256": "c461fe177e70fc4cc2213c191bf3e66a9a9c2935b702232dc0124ea9d2b4b046"
+        },
+        {
+          "path": "/sources/uestc-liangjian-profile/excerpts/2/quote",
+          "sha256": "9aa84f4451799aaffee65f9eeee62c27b66a2e315a5bc22d94e554645c275c35"
+        },
+        {
+          "path": "/sources/uestc-liangjian-profile/excerpts/3/quote",
+          "sha256": "336b14a75178ec8bba12249d7a2445a8a96d61ce8626fe405288aa802c88b7fa"
+        },
+        {
+          "path": "/sources/uestc-liangjian-profile/excerpts/4/quote",
+          "sha256": "625f8f04a77618a0b815babb95eee0b261b0d8abe2da60089c4a8e31bcfe3697"
+        },
+        {
+          "path": "/sources/uestc-public-management-directory/excerpts/0/quote",
+          "sha256": "db9ad4e89290482c98beffb1cf529570fe5321ec9fca6d4c8a9af3817203fba8"
+        },
+        {
+          "path": "/sources/uestc-public-management-directory/excerpts/1/quote",
+          "sha256": "56a6c0faf2017705fe89bf3aff7442356ce6d4fb51f96f2942ad82e0c5937fb5"
+        },
+        {
+          "path": "/sources/uestc-liangjian-publications/excerpts/0/quote",
+          "sha256": "b52ca4c089fa4667273c50c6678517592df881270340cfb1e8262ce5223ac6ae"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/0/quote",
+          "sha256": "8202a709c3c24d3baeef57e0640ae5b8e78a324f94f1ba06df6b75f17ce84001"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/1/quote",
+          "sha256": "f28e9ae96bb3e6da7aa43597adbc876d448f4ae9fab3e0d8bb0eb8d17938dbed"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/2/quote",
+          "sha256": "1374bd22c8a33ad22ed08c5ff719403138eeacd1ea7924a006e60fad05cf1674"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/3/quote",
+          "sha256": "ddd5f8573557c72f9d3bc442d668cabee8308489c1592cbb95495d63f8b16b39"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/4/quote",
+          "sha256": "8ba46d17b9300f4c5d854d6af1e9261dc0045a39a2e192424db1900831e431d1"
+        },
+        {
+          "path": "/sources/uestc-nidebing-profile/excerpts/5/quote",
+          "sha256": "19d2bb1bf89f2b8d211547c2d7b079ca0ea947627dce5d5b14d7c29afcf73be7"
+        },
+        {
+          "path": "/sources/uestc-economics-management-directory-page3/excerpts/0/quote",
+          "sha256": "7b35a0f0ab01032ab10266c85c9079a8c626cf80661a2afe6fd022732e4a580b"
+        },
+        {
+          "path": "/sources/uestc-economics-management-directory-page3/excerpts/1/quote",
+          "sha256": "73cc7d2321e2175d290d777d708f52ab2d9a142730a29f92d3264c5e9a074130"
+        },
+        {
+          "path": "/sources/uestc-economics-management-directory-page3/excerpts/2/quote",
+          "sha256": "2bc8adb75f8f9477cd874683943ed65917a59902ca03539fe9a7cedc0caf7db4"
+        },
+        {
+          "path": "/people/uestc-kangjian/education/0/quote",
+          "sha256": "ab02bda013fb4ea29f7ba9cf53708bae43f0aa8eb8b538897a13ca79fca20c91"
+        },
+        {
+          "path": "/people/uestc-kangjian/education/0/award_evidence/quote",
+          "sha256": "9f2a0a56f10a7a89119696047f082486040946fa32506ea24e9065e60418293e"
+        },
+        {
+          "path": "/people/uestc-kangjian/education/1/quote",
+          "sha256": "49f97f7d1abdcbb10d1817954d46dfabf9a73688ee992deaa25bc685f5fd742d"
+        },
+        {
+          "path": "/people/uestc-kangjian/education/1/award_evidence/quote",
+          "sha256": "9f2a0a56f10a7a89119696047f082486040946fa32506ea24e9065e60418293e"
+        },
+        {
+          "path": "/people/uestc-kangjian/education/2/quote",
+          "sha256": "d16a7caf02b96047b55d5b850e8cea8fe46605d6ae5d70b7e7bca4b23c7b6d47"
+        },
+        {
+          "path": "/people/uestc-kangjian/education/2/award_evidence/quote",
+          "sha256": "9f2a0a56f10a7a89119696047f082486040946fa32506ea24e9065e60418293e"
+        },
+        {
+          "path": "/people/uestc-kangjian/professional_training/0/quote",
+          "sha256": "ea67a7b53a128bb8ef866a1ded072cf23a3ed4fb55f0ffe35f2f87ae514d37c3"
+        },
+        {
+          "path": "/people/uestc-kangjian/professional_training/0/additional_evidence/quote",
+          "sha256": "218c116117f4ec0ffeeb85c179538fc30c4c2a94ce087a58c6018f4d0d09aef5"
+        },
+        {
+          "path": "/people/uestc-kangjian/appointments/0/quote",
+          "sha256": "64b8b2635de5fe825a7335d430ab52ad4780bfb364030a342d1d402617c12b28"
+        },
+        {
+          "path": "/people/uestc-kangjian/appointments/0/additional_start_date_label/quote",
+          "sha256": "d299fd25589dd398f459e7619b4a5d6487d55a1065e0bf52e50758ef9088e538"
+        },
+        {
+          "path": "/people/uestc-kangjian/publications/0/quote",
+          "sha256": "a7ffcafb3fa02cd4bfac737b1cf10f15cc0aecf77e8d1b4d11f3032e74a2c3f1"
+        },
+        {
+          "path": "/people/uestc-kangjian/publications/1/quote",
+          "sha256": "51b83db7dfcd64c7ffd6faca2ee0143394fe613122737efe3c7341d1b722a7e4"
+        },
+        {
+          "path": "/people/uestc-kangjian/identity_provenance/0/quote",
+          "sha256": "43d470e11c5717378738d5029f5f53d471d0fe4a6c287429eb2b994d0440d9ed"
+        },
+        {
+          "path": "/people/uestc-kangjian/identity_provenance/1/quote",
+          "sha256": "d6c0c3b3135b6fe69746dc933ce55cdc812d682aef76ce2c6c962999a4e76d8e"
+        },
+        {
+          "path": "/people/uestc-kangjian/directory_affiliation_provenance/quote",
+          "sha256": "d49535108a3ac5034091af32496b9d8c5d238b59689ffe65e02b5e48d4157601"
+        },
+        {
+          "path": "/people/uestc-kangjian/research_provenance/0/quote",
+          "sha256": "d6330d4ac8ea9662b35234f1299af54bd6c33d03c814038c5bfb8206daaac6d7"
+        },
+        {
+          "path": "/people/uestc-kangjian/research_provenance/1/quote",
+          "sha256": "6fe45bc5f4259a89f59d19db9cfd858c96ce955cda4daec0dc6dffd1b5b089d0"
+        },
+        {
+          "path": "/people/uestc-kangjian/teaching/0/quote",
+          "sha256": "b1f159f4978537d29f1c412d768ed689c65291bb748c4f8ffe4ce4fb1b51f0af"
+        },
+        {
+          "path": "/people/uestc-kangjian/teaching/1/quote",
+          "sha256": "53d84217706057d89912349be5f4be933fa8812750ef820c1313fe0955e4ac70"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ab02bda013fb4ea29f7ba9cf53708bae43f0aa8eb8b538897a13ca79fca20c91"
+        },
+        {
+          "path": "/award_evidence/quote",
+          "sha256": "9f2a0a56f10a7a89119696047f082486040946fa32506ea24e9065e60418293e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "49f97f7d1abdcbb10d1817954d46dfabf9a73688ee992deaa25bc685f5fd742d"
+        },
+        {
+          "path": "/award_evidence/quote",
+          "sha256": "9f2a0a56f10a7a89119696047f082486040946fa32506ea24e9065e60418293e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d16a7caf02b96047b55d5b850e8cea8fe46605d6ae5d70b7e7bca4b23c7b6d47"
+        },
+        {
+          "path": "/award_evidence/quote",
+          "sha256": "9f2a0a56f10a7a89119696047f082486040946fa32506ea24e9065e60418293e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ea67a7b53a128bb8ef866a1ded072cf23a3ed4fb55f0ffe35f2f87ae514d37c3"
+        },
+        {
+          "path": "/additional_evidence/quote",
+          "sha256": "218c116117f4ec0ffeeb85c179538fc30c4c2a94ce087a58c6018f4d0d09aef5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "64b8b2635de5fe825a7335d430ab52ad4780bfb364030a342d1d402617c12b28"
+        },
+        {
+          "path": "/additional_start_date_label/quote",
+          "sha256": "d299fd25589dd398f459e7619b4a5d6487d55a1065e0bf52e50758ef9088e538"
+        },
+        {
+          "path": "/quote",
+          "sha256": "a7ffcafb3fa02cd4bfac737b1cf10f15cc0aecf77e8d1b4d11f3032e74a2c3f1"
+        },
+        {
+          "path": "/quote",
+          "sha256": "51b83db7dfcd64c7ffd6faca2ee0143394fe613122737efe3c7341d1b722a7e4"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b1f159f4978537d29f1c412d768ed689c65291bb748c4f8ffe4ce4fb1b51f0af"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b1f159f4978537d29f1c412d768ed689c65291bb748c4f8ffe4ce4fb1b51f0af"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b1f159f4978537d29f1c412d768ed689c65291bb748c4f8ffe4ce4fb1b51f0af"
+        },
+        {
+          "path": "/quote",
+          "sha256": "53d84217706057d89912349be5f4be933fa8812750ef820c1313fe0955e4ac70"
+        },
+        {
+          "path": "/quote",
+          "sha256": "53d84217706057d89912349be5f4be933fa8812750ef820c1313fe0955e4ac70"
+        },
+        {
+          "path": "/people/uestc-qianhao/identity_provenance/0/quote",
+          "sha256": "224886f4ac0bd706ee0edabbd537c82cfd6103993762f625e17884802f5fb108"
+        },
+        {
+          "path": "/people/uestc-qianhao/identity_provenance/1/quote",
+          "sha256": "3d23a8e0844bd1abc48450b5ec35516a27c92142f549a0bba303601b02f562f3"
+        },
+        {
+          "path": "/people/uestc-qianhao/discipline_provenance/0/quote",
+          "sha256": "0192c764aa1e203da472a34b3201da745afd6178bc7d51601d4d37ef2f823cf5"
+        },
+        {
+          "path": "/people/uestc-qianhao/directory_affiliation_provenance/quote",
+          "sha256": "a8d9737e9b6df0ffc7506aca44665fe9cdbfab3d1597bff02d615eaee307d4de"
+        },
+        {
+          "path": "/people/uestc-qianhao/education/0/provenance/0/quote",
+          "sha256": "9ec7486704b4237a4abc860fd15a5043530699cb492e793c16c73c325ff5961a"
+        },
+        {
+          "path": "/people/uestc-qianhao/education/1/provenance/0/quote",
+          "sha256": "2e267aec4f2e0f46b8fbeadff2c13e7bfe7c6303247e4526bcd10f2cb9694186"
+        },
+        {
+          "path": "/people/uestc-qianhao/education/1/provenance/1/quote",
+          "sha256": "224886f4ac0bd706ee0edabbd537c82cfd6103993762f625e17884802f5fb108"
+        },
+        {
+          "path": "/people/uestc-qianhao/professional_training/0/provenance/0/quote",
+          "sha256": "2e2540795b3845f8151b47cefbb95fac9fb8c88c8383a4d479fbe882221886fb"
+        },
+        {
+          "path": "/people/uestc-qianhao/appointments/0/provenance/0/quote",
+          "sha256": "1357b5e4681ee15bbb2bae759aeb4c4383788e23b4870e076a62f5103b99e8f5"
+        },
+        {
+          "path": "/people/uestc-qianhao/appointments/1/provenance/0/quote",
+          "sha256": "57676300a74abb0b3c88c3ff4f854e599113d2171ed36226085b5b7e50182f87"
+        },
+        {
+          "path": "/people/uestc-qianhao/appointments/1/provenance/1/quote",
+          "sha256": "3d23a8e0844bd1abc48450b5ec35516a27c92142f549a0bba303601b02f562f3"
+        },
+        {
+          "path": "/people/uestc-qianhao/research_provenance/0/quote",
+          "sha256": "329e339602c795bb51d72fca087079bab83d3eb295f16253b731fc4aeded2271"
+        },
+        {
+          "path": "/people/uestc-qianhao/team_provenance/0/quote",
+          "sha256": "35639c3f28136031caa2fbd97bbef773d9c2f55ae3fc9da40bdae98391daa273"
+        },
+        {
+          "path": "/people/uestc-qianhao/publications/0/provenance/0/quote",
+          "sha256": "4892c6f38fbeb30dedd60b72ef9b7f86f2f6565e00cab8f935ed360089681af8"
+        },
+        {
+          "path": "/people/uestc-qianhao/publications/1/provenance/0/quote",
+          "sha256": "a4b11a9642ad8b1cee94d98c0c3118be760da245ee74c4ffa0b05afea19e47b9"
+        },
+        {
+          "path": "/provenance/0/quote",
+          "sha256": "9ec7486704b4237a4abc860fd15a5043530699cb492e793c16c73c325ff5961a"
+        },
+        {
+          "path": "/provenance/0/quote",
+          "sha256": "2e267aec4f2e0f46b8fbeadff2c13e7bfe7c6303247e4526bcd10f2cb9694186"
+        },
+        {
+          "path": "/provenance/1/quote",
+          "sha256": "224886f4ac0bd706ee0edabbd537c82cfd6103993762f625e17884802f5fb108"
+        },
+        {
+          "path": "/provenance/0/quote",
+          "sha256": "2e2540795b3845f8151b47cefbb95fac9fb8c88c8383a4d479fbe882221886fb"
+        },
+        {
+          "path": "/provenance/0/quote",
+          "sha256": "1357b5e4681ee15bbb2bae759aeb4c4383788e23b4870e076a62f5103b99e8f5"
+        },
+        {
+          "path": "/provenance/0/quote",
+          "sha256": "57676300a74abb0b3c88c3ff4f854e599113d2171ed36226085b5b7e50182f87"
+        },
+        {
+          "path": "/provenance/1/quote",
+          "sha256": "3d23a8e0844bd1abc48450b5ec35516a27c92142f549a0bba303601b02f562f3"
+        },
+        {
+          "path": "/provenance/0/quote",
+          "sha256": "4892c6f38fbeb30dedd60b72ef9b7f86f2f6565e00cab8f935ed360089681af8"
+        },
+        {
+          "path": "/provenance/0/quote",
+          "sha256": "a4b11a9642ad8b1cee94d98c0c3118be760da245ee74c4ffa0b05afea19e47b9"
+        },
+        {
+          "path": "/people/uestc-liangjian/research_directions/0/text",
+          "sha256": "e56a0b269f6e1eb1919a3e5e3e7ccf16fdbab45b61fc34dacd80d7d32354c327"
+        },
+        {
+          "path": "/people/uestc-liangjian/research_directions/1/text",
+          "sha256": "288b17cf8bdfbe80aba1399e9bf0f31176505bb4305c6f4b53b07374b4159415"
+        },
+        {
+          "path": "/people/uestc-liangjian/research_directions/2/text",
+          "sha256": "e1c7a7989fce61fdcb4e7ace6959c37c185fa48ba6eca4114bb8ddaa6d74a52f"
+        }
+      ],
+      "organization_identity_mapping": {
+        "canonical_id": "uestc-public-administration",
+        "canonical_name": "公共管理学院",
+        "canonical_school": "uestc",
+        "baseline_source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
+        "accepted_new_directory_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&urltype=tsites.CollegeTeacherList&wbtreeid=1035",
+        "evidence_basis": "已发布节点与梁健已接受官方目录均为电子科技大学主页平台、院系参数id=2023、页面明确公共管理学院；康健个人页和学院官网另明确电子科技大学公共管理学院及行政管理系。依据单位名称、学校和官方目录实体共同映射，不以字符串ID单独证明身份，不断言不同URL字节或重定向等价。",
+        "baseline_node_modified": false,
+        "original_wave126_org_facts": [
+          {
+            "id": "uestc-public-administration",
+            "name": "公共管理学院",
+            "school_id": "uestc",
+            "type": "school",
+            "source_ids": [
+              "uestc-kangjian-profile",
+              "uestc-kangjian-graduate-profile"
+            ]
+          },
+          {
+            "id": "uestc-public-administration-administrative",
+            "name": "行政管理系",
+            "parent_id": "uestc-public-administration",
+            "school_id": "uestc",
+            "type": "department",
+            "source_ids": [
+              "uestc-kangjian-profile",
+              "uestc-kangjian-graduate-profile",
+              "uestc-kangjian-mpa-profile"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "baseline_commit": "9cab714173152995f1c8dc2ffda0d6b1751693b6",
+      "people": [
+        {
+          "person_id": "uestc-dengchenliang",
+          "education": 3,
+          "degree_true_false_null": [
+            2,
+            0,
+            1
+          ],
+          "mentors": 0,
+          "publications": 0,
+          "appointments": 2,
+          "teaching": 4
+        },
+        {
+          "person_id": "uestc-zhouguanyu",
+          "education": 2,
+          "degree_true_false_null": [
+            1,
+            1,
+            0
+          ],
+          "mentors": 0,
+          "publications": 2,
+          "appointments": 2,
+          "teaching": 0
+        },
+        {
+          "person_id": "uestc-zhupeiyong",
+          "education": 4,
+          "degree_true_false_null": [
+            0,
+            1,
+            3
+          ],
+          "mentors": 0,
+          "publications": 0,
+          "appointments": 1,
+          "teaching": 0
+        }
+      ],
+      "overlay_application": [
+        {
+          "wave": 237,
+          "document_kind": "来源候选",
+          "json_pointer": "/people/0/bibliography_status/source_locator",
+          "value": "cloud browser visible name, section, pagination"
+        },
+        {
+          "wave": 237,
+          "document_kind": "字段来源映射",
+          "json_pointer": "/entries/22/source_locator",
+          "value": "cloud browser visible name, section, pagination"
+        },
+        {
+          "wave": 237,
+          "document_kind": "留存摘录",
+          "json_pointer": "/sources/5/retrieved_at",
+          "value": null
+        },
+        {
+          "wave": 237,
+          "document_kind": "留存摘录",
+          "json_pointer": "/sources/5/professional_excerpts/0/observed_at",
+          "value": null
+        },
+        {
+          "wave": 237,
+          "document_kind": "留存摘录",
+          "json_pointer": "/sources/5/professional_excerpts/0/observed_interval_utc",
+          "value": [
+            "2026-10-25T03:36:20Z",
+            "2026-10-25T03:36:30Z"
+          ]
+        },
+        {
+          "wave": 303,
+          "document_kind": "来源候选",
+          "json_pointer": "/people/0/source_verification_gaps/5",
+          "value": "Source until-present language has no independently verified update date; page last modification remains unknown."
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/people/uestc-dengchenliang/education/0/quote",
+          "sha256": "2e95ca6e5a311d104ff11cb37a0d98d3535eb27e87d9a7680bc442e8e9a0b964"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/education/1/quote",
+          "sha256": "2e95ca6e5a311d104ff11cb37a0d98d3535eb27e87d9a7680bc442e8e9a0b964"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/education/2/quote",
+          "sha256": "b2f1ba0254f61de673cba4bee226b9a3bd29b5d7807ea4ddb74d72fb1e800775"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/appointments/0/quote",
+          "sha256": "f6ce67e482774045aba07a4c9b3b1006aadcd5a3b00e6fe98c6bf92340291fad"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/appointments/1/quote",
+          "sha256": "f6ce67e482774045aba07a4c9b3b1006aadcd5a3b00e6fe98c6bf92340291fad"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/research_directions/0/quote",
+          "sha256": "4d8178126296e5cefba1076526809bbfc916328ebc09f0e4c82ee6460380e10c"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/research_directions/1/quote",
+          "sha256": "4d8178126296e5cefba1076526809bbfc916328ebc09f0e4c82ee6460380e10c"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/research_directions/2/quote",
+          "sha256": "4d8178126296e5cefba1076526809bbfc916328ebc09f0e4c82ee6460380e10c"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/research_directions/3/quote",
+          "sha256": "4d8178126296e5cefba1076526809bbfc916328ebc09f0e4c82ee6460380e10c"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/research_directions/4/quote",
+          "sha256": "4d8178126296e5cefba1076526809bbfc916328ebc09f0e4c82ee6460380e10c"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/teaching/0/quote",
+          "sha256": "535986a3d4c043d47912944277038a21363e5b52fe9ce4431ad1e9529ada46ea"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/teaching/1/quote",
+          "sha256": "535986a3d4c043d47912944277038a21363e5b52fe9ce4431ad1e9529ada46ea"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/teaching/2/quote",
+          "sha256": "535986a3d4c043d47912944277038a21363e5b52fe9ce4431ad1e9529ada46ea"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/teaching/3/quote",
+          "sha256": "535986a3d4c043d47912944277038a21363e5b52fe9ce4431ad1e9529ada46ea"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/fields_provenance/name/quote",
+          "sha256": "d9ee936e7e82d7929e630d03fa71ca4bd0e87f14d833ebf9e8d77e5d5edff219"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/fields_provenance/school_and_department/quote",
+          "sha256": "f6ce67e482774045aba07a4c9b3b1006aadcd5a3b00e6fe98c6bf92340291fad"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/fields_provenance/directory_affiliation/quote",
+          "sha256": "7363414d901893f15bbe0fcb2f4f16d9d6cd0ee19644e0951277e2e791b2a8f7"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/fields_provenance/title/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/fields_provenance/primary_role/quote",
+          "sha256": "f043b6ae774e5c266e7b7282bb348a37c4d22270b69a63ede04b14ad1dbbcd6f"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/fields_provenance/discipline/quote",
+          "sha256": "b884185b42ba9d35c4864fb16b42098bd3625c86f9e32fe18f78ce6c54cce83d"
+        },
+        {
+          "json_pointer": "/people/uestc-dengchenliang/bibliography_status/quote",
+          "sha256": "7e6f8285d99548421c2f7b2f02f1b9d57513a0e0d09c18dfac79b2a42c23c43c"
+        },
+        {
+          "json_pointer": "/sources/uestc-dengchenliang-profile/professional_excerpts/0/quote",
+          "sha256": "d9ee936e7e82d7929e630d03fa71ca4bd0e87f14d833ebf9e8d77e5d5edff219"
+        },
+        {
+          "json_pointer": "/sources/uestc-dengchenliang-profile/professional_excerpts/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/sources/uestc-dengchenliang-profile/professional_excerpts/2/quote",
+          "sha256": "f043b6ae774e5c266e7b7282bb348a37c4d22270b69a63ede04b14ad1dbbcd6f"
+        },
+        {
+          "json_pointer": "/sources/uestc-dengchenliang-profile/professional_excerpts/3/quote",
+          "sha256": "b884185b42ba9d35c4864fb16b42098bd3625c86f9e32fe18f78ce6c54cce83d"
+        },
+        {
+          "json_pointer": "/sources/uestc-dengchenliang-profile/professional_excerpts/4/quote",
+          "sha256": "2e95ca6e5a311d104ff11cb37a0d98d3535eb27e87d9a7680bc442e8e9a0b964"
+        },
+        {
+          "json_pointer": "/sources/uestc-dengchenliang-profile/professional_excerpts/5/quote",
+          "sha256": "b2f1ba0254f61de673cba4bee226b9a3bd29b5d7807ea4ddb74d72fb1e800775"
+        },
+        {
+          "json_pointer": "/sources/uestc-dengchenliang-profile/professional_excerpts/6/quote",
+          "sha256": "f6ce67e482774045aba07a4c9b3b1006aadcd5a3b00e6fe98c6bf92340291fad"
+        },
+        {
+          "json_pointer": "/sources/uestc-dengchenliang-profile/professional_excerpts/7/quote",
+          "sha256": "535986a3d4c043d47912944277038a21363e5b52fe9ce4431ad1e9529ada46ea"
+        },
+        {
+          "json_pointer": "/sources/uestc-dengchenliang-profile/professional_excerpts/8/quote",
+          "sha256": "4d8178126296e5cefba1076526809bbfc916328ebc09f0e4c82ee6460380e10c"
+        },
+        {
+          "json_pointer": "/sources/uestc-sports-directory/professional_excerpts/0/quote",
+          "sha256": "7363414d901893f15bbe0fcb2f4f16d9d6cd0ee19644e0951277e2e791b2a8f7"
+        },
+        {
+          "json_pointer": "/sources/uestc-sports-directory/professional_excerpts/1/quote",
+          "sha256": "7bdbdc9bacb7af889c1d7b6f6f391cfd1399afd8dc5c599a99ecccb031b3676a"
+        },
+        {
+          "json_pointer": "/sources/uestc-dengchenliang-bibliography-browser/professional_excerpts/0/quote",
+          "sha256": "7e6f8285d99548421c2f7b2f02f1b9d57513a0e0d09c18dfac79b2a42c23c43c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2e95ca6e5a311d104ff11cb37a0d98d3535eb27e87d9a7680bc442e8e9a0b964"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2e95ca6e5a311d104ff11cb37a0d98d3535eb27e87d9a7680bc442e8e9a0b964"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2e95ca6e5a311d104ff11cb37a0d98d3535eb27e87d9a7680bc442e8e9a0b964"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2e95ca6e5a311d104ff11cb37a0d98d3535eb27e87d9a7680bc442e8e9a0b964"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b2f1ba0254f61de673cba4bee226b9a3bd29b5d7807ea4ddb74d72fb1e800775"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b2f1ba0254f61de673cba4bee226b9a3bd29b5d7807ea4ddb74d72fb1e800775"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6ce67e482774045aba07a4c9b3b1006aadcd5a3b00e6fe98c6bf92340291fad"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6ce67e482774045aba07a4c9b3b1006aadcd5a3b00e6fe98c6bf92340291fad"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6ce67e482774045aba07a4c9b3b1006aadcd5a3b00e6fe98c6bf92340291fad"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6ce67e482774045aba07a4c9b3b1006aadcd5a3b00e6fe98c6bf92340291fad"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "535986a3d4c043d47912944277038a21363e5b52fe9ce4431ad1e9529ada46ea"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "535986a3d4c043d47912944277038a21363e5b52fe9ce4431ad1e9529ada46ea"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "535986a3d4c043d47912944277038a21363e5b52fe9ce4431ad1e9529ada46ea"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "535986a3d4c043d47912944277038a21363e5b52fe9ce4431ad1e9529ada46ea"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7363414d901893f15bbe0fcb2f4f16d9d6cd0ee19644e0951277e2e791b2a8f7"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/education/0/quote",
+          "sha256": "f2692f73dee613962b914d678d11716b973e802e0e153181c605235389f630a2"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/professional_training/0/quote",
+          "sha256": "962e8858156158f16655f6badeddc3a4554eb00365a2ad6f43a69bd9da8034c5"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/appointments/0/quote",
+          "sha256": "743dfa26be6ac837c6bba6a54ae06ddc9e490dd82dc02eeff282d6a82a693f56"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/appointments/1/quote",
+          "sha256": "bbf13d274cd72123fe2ae7fd135b630dcf6f5479093b3152cc7c3bd3b4dcdc7e"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/research_directions/0/quote",
+          "sha256": "1d9b475d5693f0fcfe2c6610c1c12d7f56abe56ed78aba0339b6fa2a1cc3a5a5"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/research_directions/1/quote",
+          "sha256": "1d9b475d5693f0fcfe2c6610c1c12d7f56abe56ed78aba0339b6fa2a1cc3a5a5"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/research_directions/2/quote",
+          "sha256": "1d9b475d5693f0fcfe2c6610c1c12d7f56abe56ed78aba0339b6fa2a1cc3a5a5"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/research_directions/3/quote",
+          "sha256": "1d9b475d5693f0fcfe2c6610c1c12d7f56abe56ed78aba0339b6fa2a1cc3a5a5"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/research_directions/4/quote",
+          "sha256": "e4101d8038456236e21dadcc0a726d670504b3f54da199150195f6a3477d18de"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/research_directions/5/quote",
+          "sha256": "2eb8e7ed4e6489743ffcd997669f43a09132e88656100cfe3e451b9a87a825a5"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/research_directions/6/quote",
+          "sha256": "197e30c346160f5abe6fb7402c88ecb1311dea03c04053b0889f0eac57580bb2"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/publications/0/quote",
+          "sha256": "7395c13f32cfc10396ac369d87a16e894af7ce6bb7846badda11b53bc6de111b"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/publications/1/quote",
+          "sha256": "38dd8e164e0c101745b54317818ec84c6c2c361d94f794ffed043c3b3cf26cdd"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/fields_provenance/name/quote",
+          "sha256": "66b88117601526b4150039381ecd10ed0385630cbc5ebb539184e0fd926140f5"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/fields_provenance/school_and_department/quote",
+          "sha256": "061366eec69c5dee3721ddb350fd3f901a42ab05b370f9f47b22aed1e1b0a9da"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/fields_provenance/directory_name_and_title/quote",
+          "sha256": "c97a516a5525392e3f5411b665180c6a7089107b268e73b619d9db954e0ff3d3"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/fields_provenance/title_and_supervisor_qualification/quote",
+          "sha256": "8202a709c3c24d3baeef57e0640ae5b8e78a324f94f1ba06df6b75f17ce84001"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/fields_provenance/discipline/quote",
+          "sha256": "7a04656cf5ac03d3665b057a06dbcd5ffcc1b0ba48d7ff98ad3dfc3b9c56dbaf"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/source_affiliation_variants/0/quote",
+          "sha256": "5baceb40955cdebee802eec388529f716be557a00bb211bf21aebe8bc0de0025"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/source_affiliation_variants/1/quote",
+          "sha256": "bbf13d274cd72123fe2ae7fd135b630dcf6f5479093b3152cc7c3bd3b4dcdc7e"
+        },
+        {
+          "json_pointer": "/people/uestc-zhouguanyu/source_affiliation_variants/2/quote",
+          "sha256": "061366eec69c5dee3721ddb350fd3f901a42ab05b370f9f47b22aed1e1b0a9da"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-profile/professional_excerpts/0/quote",
+          "sha256": "66b88117601526b4150039381ecd10ed0385630cbc5ebb539184e0fd926140f5"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-profile/professional_excerpts/1/quote",
+          "sha256": "8202a709c3c24d3baeef57e0640ae5b8e78a324f94f1ba06df6b75f17ce84001"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-profile/professional_excerpts/2/quote",
+          "sha256": "7a04656cf5ac03d3665b057a06dbcd5ffcc1b0ba48d7ff98ad3dfc3b9c56dbaf"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-profile/professional_excerpts/3/quote",
+          "sha256": "f2692f73dee613962b914d678d11716b973e802e0e153181c605235389f630a2"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-profile/professional_excerpts/4/quote",
+          "sha256": "962e8858156158f16655f6badeddc3a4554eb00365a2ad6f43a69bd9da8034c5"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-profile/professional_excerpts/5/quote",
+          "sha256": "743dfa26be6ac837c6bba6a54ae06ddc9e490dd82dc02eeff282d6a82a693f56"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-profile/professional_excerpts/6/quote",
+          "sha256": "5baceb40955cdebee802eec388529f716be557a00bb211bf21aebe8bc0de0025"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-profile/professional_excerpts/7/quote",
+          "sha256": "bbf13d274cd72123fe2ae7fd135b630dcf6f5479093b3152cc7c3bd3b4dcdc7e"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-profile/professional_excerpts/8/quote",
+          "sha256": "1d9b475d5693f0fcfe2c6610c1c12d7f56abe56ed78aba0339b6fa2a1cc3a5a5"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-profile/professional_excerpts/9/quote",
+          "sha256": "e4101d8038456236e21dadcc0a726d670504b3f54da199150195f6a3477d18de"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-profile/professional_excerpts/10/quote",
+          "sha256": "2eb8e7ed4e6489743ffcd997669f43a09132e88656100cfe3e451b9a87a825a5"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-bibliography/professional_excerpts/0/quote",
+          "sha256": "015ca364b34e2915cc9680f79f8a6a5dc57feff2b4662cbb3d307011c8c2feff"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-bibliography/professional_excerpts/1/quote",
+          "sha256": "7395c13f32cfc10396ac369d87a16e894af7ce6bb7846badda11b53bc6de111b"
+        },
+        {
+          "json_pointer": "/sources/uestc-zhouguanyu-bibliography/professional_excerpts/2/quote",
+          "sha256": "38dd8e164e0c101745b54317818ec84c6c2c361d94f794ffed043c3b3cf26cdd"
+        },
+        {
+          "json_pointer": "/sources/uestc-applied-mathematics-directory/professional_excerpts/0/quote",
+          "sha256": "8797e9b3981f226303fc775cc78917ac30ca26f1268eb47fcdffd70ef059adfa"
+        },
+        {
+          "json_pointer": "/sources/uestc-applied-mathematics-directory/professional_excerpts/1/quote",
+          "sha256": "c97a516a5525392e3f5411b665180c6a7089107b268e73b619d9db954e0ff3d3"
+        },
+        {
+          "json_pointer": "/sources/uestc-applied-mathematics-directory/professional_excerpts/2/quote",
+          "sha256": "197e30c346160f5abe6fb7402c88ecb1311dea03c04053b0889f0eac57580bb2"
+        },
+        {
+          "json_pointer": "/sources/uestc-applied-mathematics-directory/professional_excerpts/3/quote",
+          "sha256": "061366eec69c5dee3721ddb350fd3f901a42ab05b370f9f47b22aed1e1b0a9da"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f2692f73dee613962b914d678d11716b973e802e0e153181c605235389f630a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f2692f73dee613962b914d678d11716b973e802e0e153181c605235389f630a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "962e8858156158f16655f6badeddc3a4554eb00365a2ad6f43a69bd9da8034c5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "962e8858156158f16655f6badeddc3a4554eb00365a2ad6f43a69bd9da8034c5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "743dfa26be6ac837c6bba6a54ae06ddc9e490dd82dc02eeff282d6a82a693f56"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "743dfa26be6ac837c6bba6a54ae06ddc9e490dd82dc02eeff282d6a82a693f56"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bbf13d274cd72123fe2ae7fd135b630dcf6f5479093b3152cc7c3bd3b4dcdc7e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bbf13d274cd72123fe2ae7fd135b630dcf6f5479093b3152cc7c3bd3b4dcdc7e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7395c13f32cfc10396ac369d87a16e894af7ce6bb7846badda11b53bc6de111b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "38dd8e164e0c101745b54317818ec84c6c2c361d94f794ffed043c3b3cf26cdd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "061366eec69c5dee3721ddb350fd3f901a42ab05b370f9f47b22aed1e1b0a9da"
+        },
+        {
+          "json_pointer": "/people/uestc-zhupeiyong/identity_evidence/0/quote",
+          "sha256": "9c1c3e9ad1957730a834c4bcb2f05473406ae760fec39efa6fc7a205366a5381"
+        },
+        {
+          "json_pointer": "/people/uestc-zhupeiyong/identity_evidence/1/quote",
+          "sha256": "ae6f6a8c54cade76f913c8a096f3ae2be951a2ae2565bc3991a5ccb0ae54bce1"
+        },
+        {
+          "json_pointer": "/people/uestc-zhupeiyong/education/0/evidence/0/quote",
+          "sha256": "835b9ecda4be43b3f8a2156a95a63462b082ca357fbf4302382f0efa41bdfe78"
+        },
+        {
+          "json_pointer": "/people/uestc-zhupeiyong/education/1/evidence/0/quote",
+          "sha256": "2c2cc1b26fee80c90ce6ca209f60408b7ddd8ad08d5fa50720606a0c1fa7b3b8"
+        },
+        {
+          "json_pointer": "/people/uestc-zhupeiyong/education/2/evidence/0/quote",
+          "sha256": "e54bb91d23eed1d0125cd1fdabe4405bcbd4b77dbd814df2a6911da5dcbf3697"
+        },
+        {
+          "json_pointer": "/people/uestc-zhupeiyong/professional_training/0/evidence/0/quote",
+          "sha256": "c5ae167e432f4659a7331a8b4fb0b0f0df6d9bfb1a96b4ba02d247f989624399"
+        },
+        {
+          "json_pointer": "/people/uestc-zhupeiyong/degree_label/evidence/0/quote",
+          "sha256": "c4c6680a167e57698836c36eb8c6f3d46b4c53d28454a160715274ea1b0e05e9"
+        },
+        {
+          "json_pointer": "/people/uestc-zhupeiyong/appointments/0/evidence/0/quote",
+          "sha256": "ae6f6a8c54cade76f913c8a096f3ae2be951a2ae2565bc3991a5ccb0ae54bce1"
+        },
+        {
+          "json_pointer": "/sources/zhu-profile/excerpts/0/quote",
+          "sha256": "9c1c3e9ad1957730a834c4bcb2f05473406ae760fec39efa6fc7a205366a5381"
+        },
+        {
+          "json_pointer": "/sources/zhu-profile/excerpts/1/quote",
+          "sha256": "c4c6680a167e57698836c36eb8c6f3d46b4c53d28454a160715274ea1b0e05e9"
+        },
+        {
+          "json_pointer": "/sources/zhu-profile/excerpts/2/quote",
+          "sha256": "835b9ecda4be43b3f8a2156a95a63462b082ca357fbf4302382f0efa41bdfe78"
+        },
+        {
+          "json_pointer": "/sources/zhu-profile/excerpts/3/quote",
+          "sha256": "2c2cc1b26fee80c90ce6ca209f60408b7ddd8ad08d5fa50720606a0c1fa7b3b8"
+        },
+        {
+          "json_pointer": "/sources/zhu-profile/excerpts/4/quote",
+          "sha256": "e54bb91d23eed1d0125cd1fdabe4405bcbd4b77dbd814df2a6911da5dcbf3697"
+        },
+        {
+          "json_pointer": "/sources/zhu-profile/excerpts/5/quote",
+          "sha256": "c5ae167e432f4659a7331a8b4fb0b0f0df6d9bfb1a96b4ba02d247f989624399"
+        },
+        {
+          "json_pointer": "/sources/zhu-profile/excerpts/6/quote",
+          "sha256": "ae6f6a8c54cade76f913c8a096f3ae2be951a2ae2565bc3991a5ccb0ae54bce1"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "835b9ecda4be43b3f8a2156a95a63462b082ca357fbf4302382f0efa41bdfe78"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "835b9ecda4be43b3f8a2156a95a63462b082ca357fbf4302382f0efa41bdfe78"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "2c2cc1b26fee80c90ce6ca209f60408b7ddd8ad08d5fa50720606a0c1fa7b3b8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2c2cc1b26fee80c90ce6ca209f60408b7ddd8ad08d5fa50720606a0c1fa7b3b8"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "e54bb91d23eed1d0125cd1fdabe4405bcbd4b77dbd814df2a6911da5dcbf3697"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e54bb91d23eed1d0125cd1fdabe4405bcbd4b77dbd814df2a6911da5dcbf3697"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "c5ae167e432f4659a7331a8b4fb0b0f0df6d9bfb1a96b4ba02d247f989624399"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c5ae167e432f4659a7331a8b4fb0b0f0df6d9bfb1a96b4ba02d247f989624399"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "ae6f6a8c54cade76f913c8a096f3ae2be951a2ae2565bc3991a5ccb0ae54bce1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ae6f6a8c54cade76f913c8a096f3ae2be951a2ae2565bc3991a5ccb0ae54bce1"
+        }
+      ],
+      "organization_identity_mapping": {
+        "source_id": "uestc-applied-mathematics-center",
+        "canonical_id": "uestc-applied-math-center",
+        "shared_name": "应用数学中心",
+        "shared_official_directory_url": "https://cam.uestc.edu.cn/szdw/jzry.htm",
+        "basis": "中文名称及官方目录URL均精确一致；不是仅按ID相似合并。",
+        "source_parent": null,
+        "source_parent_status": "not_independently_verified",
+        "existing_canonical_parent": "uestc",
+        "existing_node_unchanged": true,
+        "scope": "源parent未知边界另存，不以复用展示节点提升本批行政关系。"
+      },
+      "mapping_notes": [
+        "237覆盖五项以原值/缺键守卫应用，仅邓空论文列表定位和观察窗口；周精确source时间未改。",
+        "303只替换朱未留存placeholder说法；最后更新时间仍未知。",
+        "邓主教练、裁判资格、破格晋升及主讲四课程均保留，博士研究生不视为已获博士。",
+        "周保留历史助理教授岗位及本页至今任期原status，目录中心与正文组织标签分源，不纠正数学科学院措辞。",
+        "朱拓扑学、博士后神经网络与混沌、2007博导资格均单列可见note；独立理学博士标签不升级授位。",
+        "朱引用本批申华组唯一uestc-mathematical-sciences；仅新增体育部节点。"
+      ]
+    }
+  ],
+  "mapping": "仅追加十名已审来源人物及组织展示节点；旧645事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}

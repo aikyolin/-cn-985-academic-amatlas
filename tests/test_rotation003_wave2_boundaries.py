@@ -1,3 +1,4 @@
+from published_fixture import published_root
 """General append, provenance-alias and conservative-navigation boundaries.
 No per-person fixture duplication; historical goldens remain in earlier suites.
 """
@@ -5,15 +6,18 @@ import copy,hashlib,json,pathlib,unittest
 from release26_history import release26_view
 from release_history import CONTRACT,release25_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-read=lambda name:release26_view(json.loads((ROOT/name).read_text()),name)
+read=lambda name,root=ROOT:release26_view(json.loads((root/name).read_text()),name)
 PINS={'data/atlas.json':'07d31cc1627dc341802a99c1e57d6ef8d29c82fd115ee0c882ffa9e29830a68d','data/rosters.json':'bdc4f7a400bb2b983d341b434b636aaf2f1beeb5f3aa070486a0aa44920fe27a','site/atlas.json':'8ce7435afda1486a9850ac8ffed16018b542e23c2fc337b71598cc2417fc4e80','site/rosters.json':'f11f1e1a40fd1b28211654fb1a2db4da83e78f28b1fcd96d9cb7e277ff0ae306','progress/work-queue.json':'829169fdf8815ddff328d1a3d324ad102bd52b0220a6025277e8d9fef8ebdaff'}
 class Rotation003Wave2Boundaries(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
   cls.a=read('data/atlas.json');cls.r=read('data/rosters.json');cls.new=cls.a['people'][555:]
  def test_live_endpoint_and_generated_projection_are_exact(self):
-  for name,pin in PINS.items():self.assertEqual(hashlib.sha256((json.dumps(read(name),ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),pin,name)
-  site=read('site/atlas.json');self.assertEqual(site['people'],self.a['people']);self.assertEqual(site['pending_people'],self.a['pending_people']);self.assertEqual(site['build_id'],read('site/rosters.json')['build_id']);self.assertEqual(len(site['exports']),114)
+  actual_site=json.loads((ROOT/'site/atlas.json').read_text());actual_data=json.loads((ROOT/'data/atlas.json').read_text())
+  self.assertEqual(actual_site['people'],actual_data['people']);self.assertEqual(actual_site['pending_people'],actual_data['pending_people'])
+  self.assertEqual(actual_site['build_id'],json.loads((ROOT/'site/rosters.json').read_text())['build_id'])
+  for name,pin in PINS.items():self.assertEqual(hashlib.sha256((json.dumps(read(name,published_root() if name=='site/atlas.json' else ROOT),ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),pin,name)
+  site=read('site/atlas.json',published_root());self.assertEqual(site['people'],self.a['people']);self.assertEqual(site['pending_people'],self.a['pending_people']);self.assertEqual(site['build_id'],read('site/rosters.json')['build_id']);self.assertEqual(len(site['exports']),114)
  def test_append_scope_is_exact_and_never_complete(self):
   self.assertEqual((len(self.a['people']),len(self.a['pending_people']),len(self.a['org_units']),len(self.r['entries']),len(self.r['source_observations'])),(564,84,234,1730,1768))
   self.assertEqual([p['school_id']for p in self.new],['lzu']*3+['nwsuaf']*3+['xjtu']*3)
@@ -22,10 +26,10 @@ class Rotation003Wave2Boundaries(unittest.TestCase):
   for t in tasks[222:]:self.assertEqual(t['status'],'partial');self.assertFalse(t['scope']['university_complete'])
  def test_historical_public_v1_json_bytes_reconstruct_from_current_prefixes(self):
   for rel,contract in CONTRACT.items():
-   historical=release25_view(read(rel),rel);raw=(json.dumps(historical,ensure_ascii=False,indent=2)+'\n').encode();self.assertEqual(hashlib.sha256(raw).hexdigest(),contract['byte_sha256'],rel)
+   historical=release25_view(read(rel,published_root() if rel=='site/atlas.json' else ROOT),rel);raw=(json.dumps(historical,ensure_ascii=False,indent=2)+'\n').encode();self.assertEqual(hashlib.sha256(raw).hexdigest(),contract['byte_sha256'],rel)
  def test_projection_rejects_historical_leaf_and_unchanged_metadata_tampering(self):
   for rel in CONTRACT:
-   raw=read(rel);key='people'if 'people'in raw else 'entries'if 'entries'in raw else 'tasks';raw[key][0]['name']='unexpected alteration'
+   raw=read(rel,published_root() if rel=='site/atlas.json' else ROOT);key='people'if 'people'in raw else 'entries'if 'entries'in raw else 'tasks';raw[key][0]['name']='unexpected alteration'
    with self.assertRaises(AssertionError):release25_view(raw,rel)
   raw=copy.deepcopy(self.a);raw['updated_at']='2099-01-01'
   with self.assertRaises(AssertionError):release25_view(raw,'data/atlas.json')

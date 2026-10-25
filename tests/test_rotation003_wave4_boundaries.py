@@ -1,17 +1,21 @@
+from published_fixture import published_root
 """Live append boundaries: source order, non-native identity, and unknown stages."""
 import copy,json,pathlib,unittest
 from release28_history import release28_view
 from release27_history import CONTRACT,release27_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-read=lambda rel:release28_view(json.loads((ROOT/rel).read_text()),rel) if rel in CONTRACT else json.loads((ROOT/rel).read_text())
+read=lambda rel,root=ROOT:release28_view(json.loads((root/rel).read_text()),rel) if rel in CONTRACT else json.loads((root/rel).read_text())
 class Rotation003Wave4Boundaries(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
   cls.a=read('data/atlas.json');cls.r=read('data/rosters.json');cls.new=cls.a['people'][CONTRACT['data/atlas.json']['lists']['people']['length']:]
  def test_live_append_preserves_historical_prefix_and_generated_views(self):
-  for rel in CONTRACT:release27_view(read(rel),rel)
+  actual_site=json.loads((ROOT/'site/atlas.json').read_text());actual_data=json.loads((ROOT/'data/atlas.json').read_text())
+  self.assertEqual(actual_site['people'],actual_data['people']);self.assertEqual(actual_site['pending_people'],actual_data['pending_people'])
+  self.assertEqual(actual_site['build_id'],json.loads((ROOT/'site/rosters.json').read_text())['build_id'])
+  for rel in CONTRACT:release27_view(read(rel,published_root() if rel=='site/atlas.json' else ROOT),rel)
   self.assertEqual((len(self.a['people']),len(self.a['pending_people']),len(self.a['org_units']),len(self.r['entries']),len(self.r['source_observations'])),(580,84,240,1746,1784))
-  s=read('site/atlas.json');self.assertEqual(s['people'],self.a['people']);self.assertEqual(s['pending_people'],self.a['pending_people']);self.assertEqual(s['build_id'],read('site/rosters.json')['build_id']);self.assertEqual(len(s['exports']),120)
+  s=read('site/atlas.json',published_root());self.assertEqual(s['people'],self.a['people']);self.assertEqual(s['pending_people'],self.a['pending_people']);self.assertEqual(s['build_id'],read('site/rosters.json')['build_id']);self.assertEqual(len(s['exports']),120)
  def test_held_candidates_keep_original_selection_without_person_promotion(self):
   for sid in ['buaa','muc','nku']:
    c=read(f'progress/{sid}-rotation003-wave4-coverage.json');entries=c['selected_roster_original_order'];held=c['held_candidates']

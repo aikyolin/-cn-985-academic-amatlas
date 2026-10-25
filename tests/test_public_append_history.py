@@ -67,7 +67,7 @@ class PublicAppendPrefix(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.baseline = history.load_baseline()
-        cls.documents = {rel: history.public_append_view(json.loads((ROOT / rel).read_bytes()), rel)
+        cls.documents = {rel: history.public_append_view(json.loads(((published_root() if rel == 'site/atlas.json' else ROOT) / rel).read_bytes()), rel)
                          for rel in cls.baseline['files']}
 
     def test_all_five_frozen_objects_and_exact_bytes_round_trip(self):

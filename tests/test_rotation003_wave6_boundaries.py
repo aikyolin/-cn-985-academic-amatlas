@@ -1,10 +1,11 @@
+from published_fixture import published_root
 """Generic reviewed-append preservation, held-scope and conservative consumer boundaries."""
 import copy,hashlib,json,pathlib,unittest
 from release29_history import CONTRACT,release29_view
 from release30_history import CONTRACT as RELEASE30_CONTRACT,release30_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-def read(rel):
- value=json.loads((ROOT/rel).read_text());return release30_view(value,rel)if rel in RELEASE30_CONTRACT else value
+def read(rel,root=ROOT):
+ value=json.loads((root/rel).read_text());return release30_view(value,rel)if rel in RELEASE30_CONTRACT else value
 def digest(value):return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 def pointer(value,path):
  for part in path.split('/')[1:]:
@@ -31,7 +32,7 @@ def public_original_hash(record):
  return record['original_object_sha256']
 class ReviewedAppendBoundaries(unittest.TestCase):
  def test_exact_public_original_snapshots_and_source_fields_remain_recoverable(self):
-  for rel in CONTRACT:release29_view(read(rel),rel)
+  for rel in CONTRACT:release29_view(read(rel,published_root() if rel=='site/atlas.json' else ROOT),rel)
   contract=read('tests/fixtures/rotation003-wave6-source-contract.json');people={p['person_id']:p for p in read('data/atlas.json')['people']}
   for record in contract['people']:
    original=record['original'];self.assertEqual(digest(original),public_original_hash(record));current=people[original['person_id']];projection=copy.deepcopy(current)

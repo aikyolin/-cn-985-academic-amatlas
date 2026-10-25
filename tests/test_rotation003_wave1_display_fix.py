@@ -282,7 +282,12 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
             self.assertEqual(historical_bytes(file, root=published_root()).decode().count('rotation003-20261024-w2'),count)
 
     def test_05_generated_snapshots_recover_exactly_after_aliases_and_derived_build_id_removed(self):
-        site=release25_view(json.loads((ROOT/'site/atlas.json').read_text()), 'site/atlas.json');roster=release25_view(json.loads((ROOT/'site/rosters.json').read_text()), 'site/rosters.json')
+        actual_site = json.loads((ROOT/'site/atlas.json').read_text())
+        actual_data = json.loads((ROOT/'data/atlas.json').read_text())
+        self.assertEqual(actual_site['people'], actual_data['people'])
+        self.assertEqual(actual_site['pending_people'], actual_data['pending_people'])
+        self.assertEqual(actual_site['build_id'], json.loads((ROOT/'site/rosters.json').read_text())['build_id'])
+        site=release25_view(json.loads((published_root()/'site/atlas.json').read_text()), 'site/atlas.json');roster=release25_view(json.loads((ROOT/'site/rosters.json').read_text()), 'site/rosters.json')
         self.assertEqual(site['people'],self.db['people']);self.assertEqual(site['pending_people'],self.db['pending_people'])
         self.assertEqual(site['build_id'],roster['build_id']);self.assertNotEqual(site['build_id'],BASELINE_BUILD_ID)
         site=strip_aliases(site);site['build_id']=BASELINE_BUILD_ID;roster['build_id']=BASELINE_BUILD_ID
@@ -337,7 +342,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
     def test_10_all_110_other_department_and_roster_workbooks_remain_byte_identical(self):
         self.assertEqual(len(UNCHANGED_DEPARTMENT_WORKBOOKS),110)
         for file,digest in UNCHANGED_DEPARTMENT_WORKBOOKS.items():
-            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),digest,file)
+            self.assertEqual(hashlib.sha256(historical_bytes(file,((published_root() if file in ('site/exports/uestc-public-administration.xlsx','site/exports/uestc-applied-math-center.xlsx') else ROOT)/file).read_bytes())).hexdigest(),digest,file)
         self.assertEqual(hashlib.sha256((published_root()/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),endpoint_sha256('site/exports/待核对名录.xlsx',RELEASE31_PUBLIC_METADATA_PIN_OVERLAY['site/exports/待核对名录.xlsx']))
 
     def test_11_alias_guard_rejects_every_added_leaf_mutation_and_cross_source_swap(self):

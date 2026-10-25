@@ -1,19 +1,23 @@
+from published_fixture import published_root
 """Generic source-preserving event, mentor, and candidate isolation boundaries."""
 import copy,hashlib,json,pathlib,unittest
 from release27_history import release27_view
 from release26_history import CONTRACT,release26_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-read=lambda rel:release27_view(json.loads((ROOT/rel).read_text()),rel)
+read=lambda rel,root=ROOT:release27_view(json.loads((root/rel).read_text()),rel)
 class Rotation003Wave3Boundaries(unittest.TestCase):
  @classmethod
  def setUpClass(cls):cls.a=read('data/atlas.json');cls.r=read('data/rosters.json');cls.new=cls.a['people'][CONTRACT['data/atlas.json']['lists']['people']['length']:]
  def test_current_append_and_generated_view(self):
+  actual_site=json.loads((ROOT/'site/atlas.json').read_text());actual_data=json.loads((ROOT/'data/atlas.json').read_text())
+  self.assertEqual(actual_site['people'],actual_data['people']);self.assertEqual(actual_site['pending_people'],actual_data['pending_people'])
+  self.assertEqual(actual_site['build_id'],json.loads((ROOT/'site/rosters.json').read_text())['build_id'])
   self.assertEqual((len(self.a['people']),len(self.a['pending_people']),len(self.a['org_units']),len(self.r['entries']),len(self.r['source_observations'])),(573,84,237,1739,1777))
-  site=read('site/atlas.json');self.assertEqual(site['people'],self.a['people']);self.assertEqual(site['pending_people'],self.a['pending_people']);self.assertEqual(site['build_id'],read('site/rosters.json')['build_id']);self.assertEqual(len(site['exports']),117)
+  site=read('site/atlas.json',published_root());self.assertEqual(site['people'],self.a['people']);self.assertEqual(site['pending_people'],self.a['pending_people']);self.assertEqual(site['build_id'],read('site/rosters.json')['build_id']);self.assertEqual(len(site['exports']),117)
   for p in self.new:self.assertFalse(p['fields_complete']);self.assertFalse(p['include_in_current_faculty_count']);self.assertFalse(p['complete_profile_count_eligible'])
  def test_exact_previous_history_and_tamper_detection(self):
   for rel,c in CONTRACT.items():
-   raw=read(rel);hist=release26_view(raw,rel);self.assertEqual(hashlib.sha256((json.dumps(hist,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),c['byte_sha256'])
+   raw=read(rel,published_root() if rel=='site/atlas.json' else ROOT);hist=release26_view(raw,rel);self.assertEqual(hashlib.sha256((json.dumps(hist,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),c['byte_sha256'])
    key=next(k for k in ['people','entries','tasks']if k in raw);raw[key][0]['name']='tamper'
    with self.assertRaises(AssertionError):release26_view(raw,rel)
  def test_display_aliases_do_not_invent_degree_or_time(self):

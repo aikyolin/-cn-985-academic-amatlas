@@ -1872,7 +1872,12 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
                 assert_source_closure(p)
 
     def test_37_built_site_selected_people_rosters_and_original_person_leaves_match_canonical(self):
-        site = release25_view(json.loads((ROOT/'site/atlas.json').read_text()), 'site/atlas.json')
+        actual_site = json.loads((ROOT/'site/atlas.json').read_text())
+        actual_data = json.loads((ROOT/'data/atlas.json').read_text())
+        self.assertEqual(actual_site['people'], actual_data['people'])
+        self.assertEqual(actual_site['pending_people'], actual_data['pending_people'])
+        self.assertEqual(actual_site['build_id'], json.loads((ROOT/'site/rosters.json').read_text())['build_id'])
+        site = release25_view(json.loads((published_root()/'site/atlas.json').read_text()), 'site/atlas.json')
         roster = release25_view(json.loads((ROOT/'site/rosters.json').read_text()), 'site/rosters.json')
         self.assertEqual(len(site['people']), 555)
         self.assertEqual(len(site['pending_people']), 84)

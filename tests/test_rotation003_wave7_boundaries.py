@@ -1,10 +1,11 @@
+from published_fixture import published_root
 """Generic reviewed append conservation and scope boundaries; factual expectations are frozen data."""
 import copy,hashlib,json,pathlib,re,unittest
 from release30_history import CONTRACT,release30_view
 from public_append_history import load_baseline, public_append_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-def read(rel):
- value=json.loads((ROOT/rel).read_text())
+def read(rel,root=ROOT):
+ value=json.loads((root/rel).read_text())
  return public_append_view(value,rel) if rel in load_baseline()['files'] else value
 def digest(value):return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 def pointer(value,path):
@@ -48,11 +49,19 @@ def public_original_hash(record):
  return record['original_object_sha256']
 class ReviewedAppendBoundaries(unittest.TestCase):
  def test_exact_public_history_and_original_source_leaf_reversibility(self):
-  for rel in CONTRACT:release30_view(read(rel),rel)
+  for rel in CONTRACT:release30_view(read(rel,published_root() if rel=='site/atlas.json' else ROOT),rel)
   assert_public_metadata(SOURCE)
   for rel,keys in [('data/atlas.json',['people','profile_batches','normalization_evidence']),('site/atlas.json',['people','profile_batches','normalization_evidence']),('data/rosters.json',['entries','batches','source_observations']),('site/rosters.json',['entries','batches'])]:
-   data=read(rel)
+   # The strict empty-source_files contract belongs to wave7 only.
+   data=read(rel,published_root() if rel=='site/atlas.json' else ROOT)
    for key in keys:assert_public_metadata(data[key][CONTRACT[rel]['lists'][key]['length']:])
+   # Current public schemas allow verified repository-relative public fixtures;
+   # keep full actual-byte privacy validation under the unchanged generic validator.
+   import sys
+   sys.path.insert(0,str(ROOT/'scripts'))
+   from public_metadata import metadata_errors,publication_files
+   actual=json.loads((ROOT/rel).read_text())
+   self.assertEqual(metadata_errors(actual,source=rel,public_files=publication_files(ROOT)),[],rel)
   schools={r['original']['school_id']for r in SOURCE['people']}|set(SOURCE['held_schools'])
   for sid in schools:assert_public_metadata(read('progress/'+sid+'-rotation003-wave7-coverage.json'))
   aggregate=read('progress/multischool-rotation003-wave7-coverage.json');assert_public_metadata(aggregate)

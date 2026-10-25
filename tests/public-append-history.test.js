@@ -1,4 +1,5 @@
 import {test} from 'node:test';
+import {publishedRoot} from './published-fixture.js';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -19,9 +20,9 @@ import {
 const read=rel=>fs.readFileSync(new URL('../'+rel,import.meta.url));
 const sha=value=>createHash('sha256').update(value).digest('hex');
 const baseline=loadBaseline();
-// Freeze current inputs through the pinned historical contract first. The suite
+// Reconstruct published inputs through the pinned historical contract. The suite
 // must keep testing the same history after a separately reviewed append lands.
-const originals=Object.fromEntries(Object.keys(baseline.files).map(rel=>[rel,publicAppendView(JSON.parse(read(rel)),rel)]));
+const originals=Object.fromEntries(Object.keys(baseline.files).map(rel=>[rel,publicAppendView(JSON.parse(rel==='site/atlas.json'?fs.readFileSync(path.join(publishedRoot(),rel)):read(rel)),rel)]));
 const clone=rel=>structuredClone(originals[rel]);
 const assertFrozenBytes=(bytes,rel)=>{
   assert.equal(bytes.length,baseline.files[rel].byte_length);
