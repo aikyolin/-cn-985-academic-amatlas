@@ -1,0 +1,1581 @@
+{
+  "schema_version": "independent-whu9-canonical-mapping-1",
+  "baseline_commit": "71c210d0bc4ae86343c6d1298183792187ee8383",
+  "new_people": [
+    "whu-yufeng",
+    "whu-zhaolin",
+    "whu-wangliuquan",
+    "whu-wanghaowu",
+    "whu-weibin",
+    "whu-mazhaocheng",
+    "whu-miaoxiaoping",
+    "whu-yuanbifeng-publichealth",
+    "whu-yanhong-publichealth"
+  ],
+  "new_org_ids": [
+    "whu-philosophy",
+    "whu-philosophy-historical",
+    "whu-history-3to9",
+    "whu-public-health",
+    "whu-public-health-nutrition-food-hygiene"
+  ],
+  "counts": {
+    "people": 9,
+    "org_units": 5,
+    "education": 34,
+    "appointments": 12,
+    "publications": 7,
+    "mentors": 0,
+    "teaching": 0,
+    "institutional_associations": 3,
+    "degree_true": 18,
+    "degree_false": 12,
+    "degree_unknown": 4
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "philosophy-history",
+      "canonical_payload_sha256": "e0b7179eece648aef360ff98b4a2a68bbe24b95b647b1a1aaa6875fad2f4b432",
+      "field_mapping_sha256": "e0aa3693e8853d96cfd4fd10b709eb6e8da35b0b14f2d871274179680c35db20",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "mathematics",
+      "canonical_payload_sha256": "c448e94a400d4bad02b424eb0544aa196278d9ffa84581577ce0fd821c1f4ba8",
+      "field_mapping_sha256": "2d2f71fa9d2b9d014b378bb5239806ccd8f0fe631c1ae5f4aa2eba19db0a7b4c",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "public-health",
+      "canonical_payload_sha256": "b99501b18af6b71e926824b33d40404421a35eb641a36928f79b4bdb77c6906a",
+      "field_mapping_sha256": "a3b39cd4ef769b0aa8bef57601bb828dca496dad211140364911f3d94aa9b4a3",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "e0b7179eece648aef360ff98b4a2a68bbe24b95b647b1a1aaa6875fad2f4b432",
+      "baseline_people": 761,
+      "baseline_publication_status": "published",
+      "baseline_commit": "71c210d0bc4ae86343c6d1298183792187ee8383",
+      "people": [
+        {
+          "person_id": "whu-yufeng",
+          "source_candidate_sha256": "0ee1f5bce0448978d406186a84cdffd898b6108efda24195bb1cf0391424f8b6",
+          "source_review_sha256": "bb211edb386d97ff47edbbb4f1dc72f35f6da7880644df44a2cf534c22d86c83",
+          "overlay_sha256": null,
+          "org_identity": {
+            "canonical_org_id": "whu-philosophy",
+            "name": "哲学学院",
+            "source_url": "https://jszy.whu.edu.cn/psychpedia/en/index/1286486/list/index.htm"
+          },
+          "counts": {
+            "education": 7,
+            "appointments": 1,
+            "mentors": 0,
+            "publications": 0,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事及退休状态未核，原职业角色与历史时间照录，不进行现职导航。",
+            "仅依据已留存职业摘录，非完整履历、独立目录或实时人事核验。",
+            "未找到本人的求学导师证据；本人博导资格不作为本人的导师关系。",
+            "叙述社会心理学与表列社会学/法学博士口径不同，只计同一博士；伯克利联合培养不另授位。",
+            "本批无具名作品，不代表无成果或完整书目。"
+          ]
+        },
+        {
+          "person_id": "whu-zhaolin",
+          "source_candidate_sha256": "0ee1f5bce0448978d406186a84cdffd898b6108efda24195bb1cf0391424f8b6",
+          "source_review_sha256": "bb211edb386d97ff47edbbb4f1dc72f35f6da7880644df44a2cf534c22d86c83",
+          "overlay_sha256": null,
+          "org_identity": {
+            "canonical_org_id": "whu-philosophy-historical",
+            "name": "哲学系（来源历史标签）",
+            "source_url": "https://www.whu.edu.cn/info/7371/203204.htm"
+          },
+          "counts": {
+            "education": 3,
+            "appointments": 4,
+            "mentors": 0,
+            "publications": 0,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事及退休状态未核，原职业角色与历史时间照录，不进行现职导航。",
+            "仅依据已留存职业摘录，非完整履历、独立目录或实时人事核验。",
+            "未找到本人的求学导师证据；本人博导资格不作为本人的导师关系。",
+            "1978入学及苦读十年为整体教育叙述，不分配各学位起止或授位年份。",
+            "哲学系为来源历史任教标签，不推当前学院更名或退休状态。",
+            "本批无具名作品，不代表无成果或完整书目。"
+          ]
+        },
+        {
+          "person_id": "whu-weibin",
+          "source_candidate_sha256": "52886cee5e3a731d0be1ea5d94b9533f1316c4ccbb286fccdd5e80ddd46924df",
+          "source_review_sha256": "b7c127afb6beee462f59548923d91ba5893d9839c46c8379f30037e524df9510",
+          "overlay_sha256": "a49de6773e0581fa47a9f4c013cead13d47b8fe696e0419985d94ddfcbd73ecc",
+          "org_identity": {
+            "canonical_org_id": "whu-history-3to9",
+            "name": "中国三至九世纪研究所",
+            "source_url": "https://39history.whu.edu.cn/newsopen.asp?id=80"
+          },
+          "counts": {
+            "education": 7,
+            "appointments": 1,
+            "mentors": 0,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事及退休状态未核，原职业角色与历史时间照录，不进行现职导航。",
+            "仅依据已留存职业摘录，非完整履历、独立目录或实时人事核验。",
+            "未找到本人的求学导师证据；本人博导资格不作为本人的导师关系。",
+            "1994–2004整体就读图书馆学系、历史学系，不分配两个学位的院系、学习区间或授位日期。",
+            "2007–2009德岛大学综合科学部仅称留学，学位/非学位性质及获授均未知，不按访问强置false。",
+            "原页显示2014-11-29，同时含2023具名论文条目；均不认证最后修改时间。",
+            "仅官网两书目；第一书完整作者/本人贡献未知，第二书明确主编，不把编者当独著；出版者元数据与全文未核。"
+          ]
+        }
+      ],
+      "degree_matrix_status": "4具体学位字段/身份依据改来源报告获授；原null保留source_degree_awarded。日本留学性质未知仍null；授位年月未知。",
+      "public_field_check": "职业空数组中的明确原句转可见任职；博导资格独立不计任职；工具行号转精准语义，引用hash绑定原字符串。",
+      "degree_evidence_reclassification": {
+        "previous_payload_sha256": "9903d4e28b02b04e682c2618810351ece014cc7c5d5a9b6370e3e935f3f2acfa",
+        "events": [
+          {
+            "person_id": "whu-yufeng",
+            "event_id": "whu-yufeng-education-1",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "evidence": [
+              {
+                "source_id": "yu",
+                "source_url": "https://jszy.whu.edu.cn/psychpedia/en/index/1286486/list/index.htm",
+                "excerpt_id": "bachelor",
+                "source_locator": "教育经历：河南大学理学学士字段",
+                "quote_sha256": "fb664fd4c892020d25ade50870b3e50a646595045cdd8df77a02550e22cdcb9e",
+                "observed_at_utc": "2026-10-25T05:28:52Z"
+              }
+            ],
+            "basis": "官网教育经历字段明列理学学士学位 / Bachelor’s Degree in Science，记录为来源报告获授；未核原学位证，授位年份和日期未知，学习终点不当授位时间。"
+          },
+          {
+            "person_id": "whu-yufeng",
+            "event_id": "whu-yufeng-education-2",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "evidence": [
+              {
+                "source_id": "yu",
+                "source_url": "https://jszy.whu.edu.cn/psychpedia/en/index/1286486/list/index.htm",
+                "excerpt_id": "master",
+                "source_locator": "教育经历：华中师范大学理学硕士字段",
+                "quote_sha256": "dcd1abf13e42338b75da445f567a288ba1bf25ca9698d95e2a6e3263b2bdc110",
+                "observed_at_utc": "2026-10-25T05:28:52Z"
+              }
+            ],
+            "basis": "官网教育经历字段明列理学硕士学位 / Master’s Degree in Science，记录为来源报告获授；未核原学位证，授位年份和日期未知，学习终点不当授位时间。"
+          },
+          {
+            "person_id": "whu-weibin",
+            "event_id": "whu-weibin-education-1",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "evidence": [
+              {
+                "excerpt_id": "education",
+                "source_locator": "个人履历中的整体学习经历及具体学位身份句",
+                "quote_sha256": "4f2aadd20ea3429d8fe9c379320631787a17193ede11129da2de3366b4a3e2c2",
+                "source_id": "whu-weibin",
+                "source_url": "https://39history.whu.edu.cn/newsopen.asp?id=80",
+                "observed_at_utc": "2026-10-25T06:13:02Z"
+              }
+            ],
+            "basis": "官方履历在整体学习经历后明确列文学学士、历史学博士，分别记录为来源报告获授；未核原学位证，授位年份和日期未知。1994–2004是整体两系学习经历，不分配到本学位院系或起止。"
+          },
+          {
+            "person_id": "whu-weibin",
+            "event_id": "whu-weibin-education-2",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "evidence": [
+              {
+                "excerpt_id": "education",
+                "source_locator": "个人履历中的整体学习经历及具体学位身份句",
+                "quote_sha256": "4f2aadd20ea3429d8fe9c379320631787a17193ede11129da2de3366b4a3e2c2",
+                "source_id": "whu-weibin",
+                "source_url": "https://39history.whu.edu.cn/newsopen.asp?id=80",
+                "observed_at_utc": "2026-10-25T06:13:02Z"
+              }
+            ],
+            "basis": "官方履历在整体学习经历后明确列文学学士、历史学博士，分别记录为来源报告获授；未核原学位证，授位年份和日期未知。1994–2004是整体两系学习经历，不分配到本学位院系或起止。"
+          }
+        ],
+        "reverse_exact_old_sha256": "9903d4e28b02b04e682c2618810351ece014cc7c5d5a9b6370e3e935f3f2acfa",
+        "delta": [
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              0,
+              "degree_awarded"
+            ],
+            "old": null,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              0,
+              "event_kind"
+            ],
+            "old": "degree_study",
+            "new": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              0,
+              "include_in_degree_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              0,
+              "include_in_education_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              0,
+              "note"
+            ],
+            "old": "原学习/研究经历按源；授位日期不从结束时间推定，未核原学位证。",
+            "new": "官网教育经历字段明列理学学士学位 / Bachelor’s Degree in Science，记录为来源报告获授；未核原学位证，授位年份和日期未知，学习终点不当授位时间。"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "degree_awarded"
+            ],
+            "old": null,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "event_kind"
+            ],
+            "old": "degree_study",
+            "new": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "include_in_degree_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "include_in_education_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "note"
+            ],
+            "old": "原学习/研究经历按源；授位日期不从结束时间推定，未核原学位证。",
+            "new": "官网教育经历字段明列理学硕士学位 / Master’s Degree in Science，记录为来源报告获授；未核原学位证，授位年份和日期未知，学习终点不当授位时间。"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "degree_awarded"
+            ],
+            "old": null,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "event_kind"
+            ],
+            "old": "degree_study",
+            "new": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "include_in_degree_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "include_in_education_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "note"
+            ],
+            "old": "原学习/研究经历按源；授位日期不从结束时间推定，未核原学位证。 1994–2004为整体两系经历，不据先后分配本学位院系或时间。",
+            "new": "官方履历在整体学习经历后明确列文学学士、历史学博士，分别记录为来源报告获授；未核原学位证，授位年份和日期未知。1994–2004是整体两系学习经历，不分配到本学位院系或起止。"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "degree_awarded"
+            ],
+            "old": null,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "event_kind"
+            ],
+            "old": "degree_study",
+            "new": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "include_in_degree_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "include_in_education_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "note"
+            ],
+            "old": "原学习/研究经历按源；授位日期不从结束时间推定，未核原学位证。 1994–2004为整体两系经历，不据先后分配本学位院系或时间。",
+            "new": "官方履历在整体学习经历后明确列文学学士、历史学博士，分别记录为来源报告获授；未核原学位证，授位年份和日期未知。1994–2004是整体两系学习经历，不分配到本学位院系或起止。"
+          }
+        ],
+        "source_candidate_sha256": [
+          "0ee1f5bce0448978d406186a84cdffd898b6108efda24195bb1cf0391424f8b6",
+          "52886cee5e3a731d0be1ea5d94b9533f1316c4ccbb286fccdd5e80ddd46924df"
+        ]
+      }
+    },
+    {
+      "schema_version": "whu9-mathematics-mapping-1",
+      "published_baseline_people": 761,
+      "published_baseline_commit": "71c210d0bc4ae86343c6d1298183792187ee8383",
+      "input_checks": [
+        {
+          "person_id": "whu-wangliuquan",
+          "candidate_sha256": "d69f48e38384eae183a6b224f3f0f7669393164972e676aa82ad9362248eda79",
+          "review_sha256": "b56c007319e4d5103b3f016e947ddb8244de4431902fba95ac881c6641d59044",
+          "audit_hashes_verified": true
+        },
+        {
+          "person_id": "whu-wanghaowu",
+          "candidate_sha256": "d69f48e38384eae183a6b224f3f0f7669393164972e676aa82ad9362248eda79",
+          "review_sha256": "b56c007319e4d5103b3f016e947ddb8244de4431902fba95ac881c6641d59044",
+          "audit_hashes_verified": true
+        }
+      ],
+      "org_identity": {
+        "reuse": "whu-math-stat",
+        "unchanged_existing_org": {
+          "id": "whu-math-stat",
+          "name": "数学与统计学院",
+          "type": "school",
+          "school_id": "whu",
+          "parent_id": "whu",
+          "source_url": "https://jszy.whu.edu.cn/xyjslb.jsp?PAGENUM=1&id=2095&lang=zh_CN&st=0&totalpage=12&urltype=tsites.CollegeTeacherList&wbtreeid=1006",
+          "campus_ids": []
+        },
+        "basis": "两个人页明确同校同全中文单位数学与统计学院，与既有jszy官方学院目录身份吻合；复用不改变原node属性，不宣称已新读独立目录。",
+        "evidence": [
+          {
+            "excerpt_id": "affiliation",
+            "retained_professional_text": "现为武汉大学数学与统计学院教师",
+            "source_excerpt_sha256": "df46258dcca4859d8080fae82e10ba7dc9f4c39fa505709049a82270ded8a0ba",
+            "source_locator": "个人简介／武汉大学数学与统计学院教师",
+            "source_id": "whu-wangliuquan-profile",
+            "source_url": "https://jszy.whu.edu.cn/lqwang/",
+            "observed_at_utc": "2026-10-25T05:59:02Z"
+          },
+          {
+            "excerpt_id": "affiliation",
+            "retained_professional_text": "王好武，武汉大学数学与统计学院教授",
+            "source_excerpt_sha256": "2a06bf95c6f7823567428f990bf4df64399bcc99ef0b2a5ddacdb8c8fe038da6",
+            "source_locator": "个人简介／武汉大学数学与统计学院教授",
+            "source_id": "whu-wanghaowu-profile",
+            "source_url": "https://jszy.whu.edu.cn/wanghaowu/zh_CN/",
+            "observed_at_utc": "2026-10-25T05:59:02Z"
+          }
+        ]
+      },
+      "degree_evidence_matrix": [
+        {
+          "person_id": "whu-wangliuquan",
+          "education_event_id": "whu-wangliuquan-education-1",
+          "json_pointer": "/people/0/education/0/degree_awarded",
+          "original_value": null,
+          "original_heading_retained": null,
+          "heading_limit": "未保留独立栏目heading；语义locator由研究者拟定，不冒称官网栏目",
+          "quote": "2014.8-2017.8 新加坡国立大学 | 数学 | 博士 | 理学博士学位",
+          "quote_sha256": "61952f0d50d7054e0a908ef089244164d9a9767054df9c9bc61c059006611f57",
+          "source_id": "whu-wangliuquan-profile",
+          "source_url": "https://jszy.whu.edu.cn/lqwang/",
+          "candidate_sha256": "d69f48e38384eae183a6b224f3f0f7669393164972e676aa82ad9362248eda79",
+          "proposed_value": true,
+          "proposal_basis": "明确具体学位字段；王好武同时有毕业标签，非仅阶段名称。",
+          "decision": "approved_source_reported_true",
+          "canonical_value": true,
+          "degree_award_date": null,
+          "degree_award_year": null
+        },
+        {
+          "person_id": "whu-wangliuquan",
+          "education_event_id": "whu-wangliuquan-education-2",
+          "json_pointer": "/people/0/education/1/degree_awarded",
+          "original_value": null,
+          "original_heading_retained": null,
+          "heading_limit": "未保留独立栏目heading；语义locator由研究者拟定，不冒称官网栏目",
+          "quote": "2010.8-2014.6 浙江大学 | 数学与应用数学 | 学士学位 | 学士",
+          "quote_sha256": "50fbd0e3bce739bc342163787a661326e57e0b3f1c70bb1aaa992ea27bfe7b65",
+          "source_id": "whu-wangliuquan-profile",
+          "source_url": "https://jszy.whu.edu.cn/lqwang/",
+          "candidate_sha256": "d69f48e38384eae183a6b224f3f0f7669393164972e676aa82ad9362248eda79",
+          "proposed_value": true,
+          "proposal_basis": "明确具体学位字段；王好武同时有毕业标签，非仅阶段名称。",
+          "decision": "approved_source_reported_true",
+          "canonical_value": true,
+          "degree_award_date": null,
+          "degree_award_year": null
+        },
+        {
+          "person_id": "whu-wanghaowu",
+          "education_event_id": "whu-wanghaowu-education-1",
+          "json_pointer": "/people/1/education/0/degree_awarded",
+          "original_value": null,
+          "original_heading_retained": null,
+          "heading_limit": "未保留独立栏目heading；语义locator由研究者拟定，不冒称官网栏目",
+          "quote": "2015.9-2019.7 法国里尔大学 | 基础数学 | 理学博士学位 | 博士研究生毕业",
+          "quote_sha256": "8885baa26189a87761a4bf6dd336cde95b741028504fa297fdec74d8c4cc4784",
+          "source_id": "whu-wanghaowu-profile",
+          "source_url": "https://jszy.whu.edu.cn/wanghaowu/zh_CN/",
+          "candidate_sha256": "d69f48e38384eae183a6b224f3f0f7669393164972e676aa82ad9362248eda79",
+          "proposed_value": true,
+          "proposal_basis": "明确具体学位字段；王好武同时有毕业标签，非仅阶段名称。",
+          "decision": "approved_source_reported_true",
+          "canonical_value": true,
+          "degree_award_date": null,
+          "degree_award_year": null
+        },
+        {
+          "person_id": "whu-wanghaowu",
+          "education_event_id": "whu-wanghaowu-education-2",
+          "json_pointer": "/people/1/education/1/degree_awarded",
+          "original_value": null,
+          "original_heading_retained": null,
+          "heading_limit": "未保留独立栏目heading；语义locator由研究者拟定，不冒称官网栏目",
+          "quote": "2011.9-2015.6 武汉大学 | 基础数学 | 学士 | 大学本科毕业",
+          "quote_sha256": "f8b26aa485888dd99422126776482b8108792c54e5833cd2dc2f49112b39524b",
+          "source_id": "whu-wanghaowu-profile",
+          "source_url": "https://jszy.whu.edu.cn/wanghaowu/zh_CN/",
+          "candidate_sha256": "d69f48e38384eae183a6b224f3f0f7669393164972e676aa82ad9362248eda79",
+          "proposed_value": true,
+          "proposal_basis": "明确具体学位字段；王好武同时有毕业标签，非仅阶段名称。",
+          "decision": "approved_source_reported_true",
+          "canonical_value": true,
+          "degree_award_date": null,
+          "degree_award_year": null
+        }
+      ],
+      "event_id_derivation": "原教育无event_id，按人物稳定ID和原教育数组顺序派生education-1/2；博士后独立postdoc-1，非授位。",
+      "source_review_scope": "原审核仅留存摘录一致性；原null和date_scope历史判断保留，canonical按实际证据独审确定，非证书认证。",
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/whu-wangliuquan-profile/professional_excerpts/0/quote",
+          "sha256": "df46258dcca4859d8080fae82e10ba7dc9f4c39fa505709049a82270ded8a0ba"
+        },
+        {
+          "path": "/sources/whu-wangliuquan-profile/professional_excerpts/1/quote",
+          "sha256": "61952f0d50d7054e0a908ef089244164d9a9767054df9c9bc61c059006611f57"
+        },
+        {
+          "path": "/sources/whu-wangliuquan-profile/professional_excerpts/2/quote",
+          "sha256": "50fbd0e3bce739bc342163787a661326e57e0b3f1c70bb1aaa992ea27bfe7b65"
+        },
+        {
+          "path": "/sources/whu-wanghaowu-profile/professional_excerpts/0/quote",
+          "sha256": "2a06bf95c6f7823567428f990bf4df64399bcc99ef0b2a5ddacdb8c8fe038da6"
+        },
+        {
+          "path": "/sources/whu-wanghaowu-profile/professional_excerpts/1/quote",
+          "sha256": "8885baa26189a87761a4bf6dd336cde95b741028504fa297fdec74d8c4cc4784"
+        },
+        {
+          "path": "/sources/whu-wanghaowu-profile/professional_excerpts/2/quote",
+          "sha256": "f8b26aa485888dd99422126776482b8108792c54e5833cd2dc2f49112b39524b"
+        },
+        {
+          "path": "/sources/whu-wanghaowu-profile/professional_excerpts/3/quote",
+          "sha256": "85fa31919fa22831bc2da9b3264dcd1ca23c27c9556ab66d1a733490f796c2f7"
+        },
+        {
+          "path": "/sources/whu-wangliuquan-works/professional_excerpts/0/quote",
+          "sha256": "8e4fc072a42872a3ae8b34dd6711abe867fe5770fb7c2942c0fb2457b7c4024a"
+        },
+        {
+          "path": "/sources/whu-wangliuquan-works/professional_excerpts/1/quote",
+          "sha256": "3893c8a2230e51b3564ab45466415582079874c94a5ef96310bac4b6e7386412"
+        },
+        {
+          "path": "/sources/whu-wanghaowu-works/professional_excerpts/0/quote",
+          "sha256": "aa777622bff08e4c27271913e3885d862e3ea1666b060f3549882b7a63eb91d9"
+        },
+        {
+          "path": "/sources/whu-wanghaowu-works/professional_excerpts/1/quote",
+          "sha256": "c921cc6bd0540d8de8445ea9a521a743f7e7e7a82790b247fe7f7f63018ce699"
+        },
+        {
+          "path": "/people/whu-wangliuquan/identity_evidence/0/quote",
+          "sha256": "df46258dcca4859d8080fae82e10ba7dc9f4c39fa505709049a82270ded8a0ba"
+        },
+        {
+          "path": "/people/whu-wangliuquan/education/0/evidence/0/quote",
+          "sha256": "61952f0d50d7054e0a908ef089244164d9a9767054df9c9bc61c059006611f57"
+        },
+        {
+          "path": "/people/whu-wangliuquan/education/1/evidence/0/quote",
+          "sha256": "50fbd0e3bce739bc342163787a661326e57e0b3f1c70bb1aaa992ea27bfe7b65"
+        },
+        {
+          "path": "/people/whu-wangliuquan/publications/0/evidence/0/quote",
+          "sha256": "8e4fc072a42872a3ae8b34dd6711abe867fe5770fb7c2942c0fb2457b7c4024a"
+        },
+        {
+          "path": "/people/whu-wangliuquan/publications/1/evidence/0/quote",
+          "sha256": "3893c8a2230e51b3564ab45466415582079874c94a5ef96310bac4b6e7386412"
+        },
+        {
+          "path": "/people/whu-wangliuquan/education/0/evidence/0/quote",
+          "sha256": "61952f0d50d7054e0a908ef089244164d9a9767054df9c9bc61c059006611f57"
+        },
+        {
+          "path": "/people/whu-wangliuquan/education/1/evidence/0/quote",
+          "sha256": "50fbd0e3bce739bc342163787a661326e57e0b3f1c70bb1aaa992ea27bfe7b65"
+        },
+        {
+          "path": "/people/whu-wangliuquan/publications/0/evidence/0/quote",
+          "sha256": "8e4fc072a42872a3ae8b34dd6711abe867fe5770fb7c2942c0fb2457b7c4024a"
+        },
+        {
+          "path": "/people/whu-wangliuquan/publications/1/evidence/0/quote",
+          "sha256": "3893c8a2230e51b3564ab45466415582079874c94a5ef96310bac4b6e7386412"
+        },
+        {
+          "path": "/people/whu-wanghaowu/identity_evidence/0/quote",
+          "sha256": "2a06bf95c6f7823567428f990bf4df64399bcc99ef0b2a5ddacdb8c8fe038da6"
+        },
+        {
+          "path": "/people/whu-wanghaowu/education/0/evidence/0/quote",
+          "sha256": "8885baa26189a87761a4bf6dd336cde95b741028504fa297fdec74d8c4cc4784"
+        },
+        {
+          "path": "/people/whu-wanghaowu/education/1/evidence/0/quote",
+          "sha256": "f8b26aa485888dd99422126776482b8108792c54e5833cd2dc2f49112b39524b"
+        },
+        {
+          "path": "/people/whu-wanghaowu/nondegree_training/0/evidence/0/quote",
+          "sha256": "85fa31919fa22831bc2da9b3264dcd1ca23c27c9556ab66d1a733490f796c2f7"
+        },
+        {
+          "path": "/people/whu-wanghaowu/publications/0/evidence/0/quote",
+          "sha256": "aa777622bff08e4c27271913e3885d862e3ea1666b060f3549882b7a63eb91d9"
+        },
+        {
+          "path": "/people/whu-wanghaowu/publications/1/evidence/0/quote",
+          "sha256": "c921cc6bd0540d8de8445ea9a521a743f7e7e7a82790b247fe7f7f63018ce699"
+        },
+        {
+          "path": "/people/whu-wanghaowu/education/0/evidence/0/quote",
+          "sha256": "8885baa26189a87761a4bf6dd336cde95b741028504fa297fdec74d8c4cc4784"
+        },
+        {
+          "path": "/people/whu-wanghaowu/education/1/evidence/0/quote",
+          "sha256": "f8b26aa485888dd99422126776482b8108792c54e5833cd2dc2f49112b39524b"
+        },
+        {
+          "path": "/people/whu-wanghaowu/education/2/evidence/0/quote",
+          "sha256": "85fa31919fa22831bc2da9b3264dcd1ca23c27c9556ab66d1a733490f796c2f7"
+        },
+        {
+          "path": "/people/whu-wanghaowu/publications/0/evidence/0/quote",
+          "sha256": "aa777622bff08e4c27271913e3885d862e3ea1666b060f3549882b7a63eb91d9"
+        },
+        {
+          "path": "/people/whu-wanghaowu/publications/1/evidence/0/quote",
+          "sha256": "c921cc6bd0540d8de8445ea9a521a743f7e7e7a82790b247fe7f7f63018ce699"
+        },
+        {
+          "path": "/quote",
+          "sha256": "df46258dcca4859d8080fae82e10ba7dc9f4c39fa505709049a82270ded8a0ba"
+        },
+        {
+          "path": "/quote",
+          "sha256": "2a06bf95c6f7823567428f990bf4df64399bcc99ef0b2a5ddacdb8c8fe038da6"
+        }
+      ],
+      "counts": {
+        "people": 2,
+        "new_orgs": 0,
+        "education": 5,
+        "appointments": 0,
+        "mentors": 0,
+        "publications": 4,
+        "teaching": 0
+      },
+      "work_scope": "4期刊作品；原俄文和译文同一作品，with合作者不推完整作者序。",
+      "degree_classification_revision": {
+        "original_null_count": 4,
+        "canonical_source_reported_true_count": 4,
+        "postdoc_false_unchanged": 1,
+        "no_heading_fabrication": true,
+        "all_award_dates_years_unknown": true,
+        "deltas": [
+          {
+            "person_id": "whu-wangliuquan",
+            "education_event_id": "whu-wangliuquan-education-1",
+            "json_pointer": "/people/0/education/0",
+            "changes": [
+              {
+                "key": "degree_awarded",
+                "before_present": true,
+                "before": null,
+                "after": true
+              },
+              {
+                "key": "event_kind",
+                "before_present": true,
+                "before": "education_stage",
+                "after": "degree"
+              },
+              {
+                "key": "degree",
+                "before_present": true,
+                "before": "博士",
+                "after": "理学博士"
+              },
+              {
+                "key": "include_in_degree_filters",
+                "before_present": true,
+                "before": false,
+                "after": true
+              },
+              {
+                "key": "include_in_education_filters",
+                "before_present": true,
+                "before": false,
+                "after": true
+              },
+              {
+                "key": "note",
+                "before_present": true,
+                "before": "保留官网学位及教育条目，授位年月与原学位证未单独核实，学习区间不当授位日期。",
+                "after": "官网条目明确理学博士学位，据此记录来源报告的学位；未独立核原证书或法律授位实体，不声称取得未留存的栏目标题。原学习区间保留，授位年月仍未知，不从学习末期推定。"
+              },
+              {
+                "key": "source_degree_awarded",
+                "before_present": false,
+                "before": null,
+                "after": null
+              },
+              {
+                "key": "source_canonical_event_kind",
+                "before_present": false,
+                "before": null,
+                "after": "education_stage"
+              },
+              {
+                "key": "source_include_in_degree_filters",
+                "before_present": false,
+                "before": null,
+                "after": false
+              },
+              {
+                "key": "source_include_in_education_filters",
+                "before_present": false,
+                "before": null,
+                "after": false
+              },
+              {
+                "key": "source_canonical_degree",
+                "before_present": false,
+                "before": null,
+                "after": "博士"
+              },
+              {
+                "key": "source_note",
+                "before_present": false,
+                "before": null,
+                "after": "保留官网学位及教育条目，授位年月与原学位证未单独核实，学习区间不当授位日期。"
+              }
+            ],
+            "evidence": [
+              {
+                "excerpt_id": "doctorate",
+                "retained_professional_text": "2014.8-2017.8 新加坡国立大学 | 数学 | 博士 | 理学博士学位",
+                "source_excerpt_sha256": "61952f0d50d7054e0a908ef089244164d9a9767054df9c9bc61c059006611f57",
+                "source_locator": "教育条目／新加坡国立大学数学、博士及理学博士学位",
+                "source_id": "whu-wangliuquan-profile",
+                "source_url": "https://jszy.whu.edu.cn/lqwang/",
+                "observed_at_utc": "2026-10-25T05:59:02Z"
+              }
+            ],
+            "authority": "本批root按具体学位称谓与毕业证据逐项批准；非旧agent布尔重签。"
+          },
+          {
+            "person_id": "whu-wangliuquan",
+            "education_event_id": "whu-wangliuquan-education-2",
+            "json_pointer": "/people/0/education/1",
+            "changes": [
+              {
+                "key": "degree_awarded",
+                "before_present": true,
+                "before": null,
+                "after": true
+              },
+              {
+                "key": "event_kind",
+                "before_present": true,
+                "before": "education_stage",
+                "after": "degree"
+              },
+              {
+                "key": "include_in_degree_filters",
+                "before_present": true,
+                "before": false,
+                "after": true
+              },
+              {
+                "key": "include_in_education_filters",
+                "before_present": true,
+                "before": false,
+                "after": true
+              },
+              {
+                "key": "note",
+                "before_present": true,
+                "before": "保留官网学位及教育条目，授位年月与原学位证未单独核实，学习区间不当授位日期。",
+                "after": "官网条目明确学士学位，据此记录来源报告的学位；未独立核原证书或法律授位实体，不声称取得未留存的栏目标题。原学习区间保留，授位年月仍未知，不从学习末期推定。"
+              },
+              {
+                "key": "source_degree_awarded",
+                "before_present": false,
+                "before": null,
+                "after": null
+              },
+              {
+                "key": "source_canonical_event_kind",
+                "before_present": false,
+                "before": null,
+                "after": "education_stage"
+              },
+              {
+                "key": "source_include_in_degree_filters",
+                "before_present": false,
+                "before": null,
+                "after": false
+              },
+              {
+                "key": "source_include_in_education_filters",
+                "before_present": false,
+                "before": null,
+                "after": false
+              },
+              {
+                "key": "source_canonical_degree",
+                "before_present": false,
+                "before": null,
+                "after": "学士"
+              },
+              {
+                "key": "source_note",
+                "before_present": false,
+                "before": null,
+                "after": "保留官网学位及教育条目，授位年月与原学位证未单独核实，学习区间不当授位日期。"
+              }
+            ],
+            "evidence": [
+              {
+                "excerpt_id": "bachelor",
+                "retained_professional_text": "2010.8-2014.6 浙江大学 | 数学与应用数学 | 学士学位 | 学士",
+                "source_excerpt_sha256": "50fbd0e3bce739bc342163787a661326e57e0b3f1c70bb1aaa992ea27bfe7b65",
+                "source_locator": "教育条目／浙江大学数学与应用数学、学士学位",
+                "source_id": "whu-wangliuquan-profile",
+                "source_url": "https://jszy.whu.edu.cn/lqwang/",
+                "observed_at_utc": "2026-10-25T05:59:02Z"
+              }
+            ],
+            "authority": "本批root按具体学位称谓与毕业证据逐项批准；非旧agent布尔重签。"
+          },
+          {
+            "person_id": "whu-wanghaowu",
+            "education_event_id": "whu-wanghaowu-education-1",
+            "json_pointer": "/people/1/education/0",
+            "changes": [
+              {
+                "key": "degree_awarded",
+                "before_present": true,
+                "before": null,
+                "after": true
+              },
+              {
+                "key": "event_kind",
+                "before_present": true,
+                "before": "education_stage",
+                "after": "degree"
+              },
+              {
+                "key": "degree",
+                "before_present": true,
+                "before": "博士",
+                "after": "理学博士"
+              },
+              {
+                "key": "include_in_degree_filters",
+                "before_present": true,
+                "before": false,
+                "after": true
+              },
+              {
+                "key": "include_in_education_filters",
+                "before_present": true,
+                "before": false,
+                "after": true
+              },
+              {
+                "key": "note",
+                "before_present": true,
+                "before": "保留官网学位及教育条目，授位年月与原学位证未单独核实，学习区间不当授位日期。",
+                "after": "官网条目明确理学博士学位，据此记录来源报告的学位；未独立核原证书或法律授位实体，不声称取得未留存的栏目标题。原学习区间保留，授位年月仍未知，不从学习末期推定。"
+              },
+              {
+                "key": "source_degree_awarded",
+                "before_present": false,
+                "before": null,
+                "after": null
+              },
+              {
+                "key": "source_canonical_event_kind",
+                "before_present": false,
+                "before": null,
+                "after": "education_stage"
+              },
+              {
+                "key": "source_include_in_degree_filters",
+                "before_present": false,
+                "before": null,
+                "after": false
+              },
+              {
+                "key": "source_include_in_education_filters",
+                "before_present": false,
+                "before": null,
+                "after": false
+              },
+              {
+                "key": "source_canonical_degree",
+                "before_present": false,
+                "before": null,
+                "after": "博士"
+              },
+              {
+                "key": "source_note",
+                "before_present": false,
+                "before": null,
+                "after": "保留官网学位及教育条目，授位年月与原学位证未单独核实，学习区间不当授位日期。"
+              }
+            ],
+            "evidence": [
+              {
+                "excerpt_id": "doctorate",
+                "retained_professional_text": "2015.9-2019.7 法国里尔大学 | 基础数学 | 理学博士学位 | 博士研究生毕业",
+                "source_excerpt_sha256": "8885baa26189a87761a4bf6dd336cde95b741028504fa297fdec74d8c4cc4784",
+                "source_locator": "教育条目／法国里尔大学基础数学、理学博士学位及博士研究生毕业",
+                "source_id": "whu-wanghaowu-profile",
+                "source_url": "https://jszy.whu.edu.cn/wanghaowu/zh_CN/",
+                "observed_at_utc": "2026-10-25T05:59:02Z"
+              }
+            ],
+            "authority": "本批root按具体学位称谓与毕业证据逐项批准；非旧agent布尔重签。"
+          },
+          {
+            "person_id": "whu-wanghaowu",
+            "education_event_id": "whu-wanghaowu-education-2",
+            "json_pointer": "/people/1/education/1",
+            "changes": [
+              {
+                "key": "degree_awarded",
+                "before_present": true,
+                "before": null,
+                "after": true
+              },
+              {
+                "key": "event_kind",
+                "before_present": true,
+                "before": "education_stage",
+                "after": "degree"
+              },
+              {
+                "key": "include_in_degree_filters",
+                "before_present": true,
+                "before": false,
+                "after": true
+              },
+              {
+                "key": "include_in_education_filters",
+                "before_present": true,
+                "before": false,
+                "after": true
+              },
+              {
+                "key": "note",
+                "before_present": true,
+                "before": "保留官网学位及教育条目，授位年月与原学位证未单独核实，学习区间不当授位日期。",
+                "after": "官网条目明确学士及大学本科毕业，据此记录来源报告的学位；未独立核原证书或法律授位实体，不声称取得未留存的栏目标题。原学习区间保留，授位年月仍未知，不从学习末期推定。"
+              },
+              {
+                "key": "source_degree_awarded",
+                "before_present": false,
+                "before": null,
+                "after": null
+              },
+              {
+                "key": "source_canonical_event_kind",
+                "before_present": false,
+                "before": null,
+                "after": "education_stage"
+              },
+              {
+                "key": "source_include_in_degree_filters",
+                "before_present": false,
+                "before": null,
+                "after": false
+              },
+              {
+                "key": "source_include_in_education_filters",
+                "before_present": false,
+                "before": null,
+                "after": false
+              },
+              {
+                "key": "source_canonical_degree",
+                "before_present": false,
+                "before": null,
+                "after": "学士"
+              },
+              {
+                "key": "source_note",
+                "before_present": false,
+                "before": null,
+                "after": "保留官网学位及教育条目，授位年月与原学位证未单独核实，学习区间不当授位日期。"
+              }
+            ],
+            "evidence": [
+              {
+                "excerpt_id": "bachelor",
+                "retained_professional_text": "2011.9-2015.6 武汉大学 | 基础数学 | 学士 | 大学本科毕业",
+                "source_excerpt_sha256": "f8b26aa485888dd99422126776482b8108792c54e5833cd2dc2f49112b39524b",
+                "source_locator": "教育条目／武汉大学基础数学、学士及大学本科毕业",
+                "source_id": "whu-wanghaowu-profile",
+                "source_url": "https://jszy.whu.edu.cn/wanghaowu/zh_CN/",
+                "observed_at_utc": "2026-10-25T05:59:02Z"
+              }
+            ],
+            "authority": "本批root按具体学位称谓与毕业证据逐项批准；非旧agent布尔重签。"
+          }
+        ]
+      }
+    },
+    {
+      "baseline_people": 761,
+      "baseline_commit": "71c210d0bc4ae86343c6d1298183792187ee8383",
+      "people": [
+        {
+          "person_id": "whu-mazhaocheng",
+          "source_candidate_sha256": "8e07744a3f4bfa5936c7bf5f05726ddc3b143503cd7e13441902fbcaa61e810b",
+          "source_evidence_sha256": "30b04e78ecb7546e31728da5a98e4d83b02ab6bfb4516b6b2c0e7391de68897f",
+          "source_review_sha256": "2adc46e1c63778e5dea876d1890126bf42d6bc6aba2682df5e92e0d321eba0c4",
+          "education": 2,
+          "degree_true_false_null": [
+            1,
+            0,
+            1
+          ],
+          "appointments": 3,
+          "publications": 0,
+          "mentors": 0
+        },
+        {
+          "person_id": "whu-miaoxiaoping",
+          "source_candidate_sha256": "8e07744a3f4bfa5936c7bf5f05726ddc3b143503cd7e13441902fbcaa61e810b",
+          "source_evidence_sha256": "30b04e78ecb7546e31728da5a98e4d83b02ab6bfb4516b6b2c0e7391de68897f",
+          "source_review_sha256": "2adc46e1c63778e5dea876d1890126bf42d6bc6aba2682df5e92e0d321eba0c4",
+          "education": 2,
+          "degree_true_false_null": [
+            0,
+            0,
+            2
+          ],
+          "appointments": 1,
+          "publications": 1,
+          "mentors": 0,
+          "institutional_associations": 3
+        },
+        {
+          "person_id": "whu-yuanbifeng-publichealth",
+          "source_candidate_sha256": "a81a886178f73cfea111c81c6f890050eb76098a2b1c80422627b4efb37effb3",
+          "source_evidence_sha256": "771c4cdeb87f1fe7c106afc576e0a3cbe05adc4419dce7b2ff11e7475e547615",
+          "source_review_sha256": "e86251c18b535a09001fa4c25028824237f7e35b751efbd513bd2b1f03164f8c",
+          "education": 3,
+          "degree_true_false_null": [
+            2,
+            1,
+            0
+          ],
+          "appointments": 1,
+          "publications": 0,
+          "mentors": 0
+        },
+        {
+          "person_id": "whu-yanhong-publichealth",
+          "source_candidate_sha256": "a81a886178f73cfea111c81c6f890050eb76098a2b1c80422627b4efb37effb3",
+          "source_evidence_sha256": "771c4cdeb87f1fe7c106afc576e0a3cbe05adc4419dce7b2ff11e7475e547615",
+          "source_review_sha256": "e86251c18b535a09001fa4c25028824237f7e35b751efbd513bd2b1f03164f8c",
+          "education": 5,
+          "degree_true_false_null": [
+            3,
+            2,
+            0
+          ],
+          "appointments": 1,
+          "publications": 0,
+          "mentors": 0
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/people/whu-mazhaocheng/education/0/evidence/0/quote",
+          "sha256": "9f48a7b1249f37102cd764c995a43f27f5e7e08bab062bdc5910538a602e5adc"
+        },
+        {
+          "json_pointer": "/people/whu-mazhaocheng/education/1/evidence/0/quote",
+          "sha256": "38af17320c8ae7c64189c4caef32dfdc7afcbf19b9a521ba50edcda1989b2ea1"
+        },
+        {
+          "json_pointer": "/people/whu-mazhaocheng/appointments/0/evidence/0/quote",
+          "sha256": "fcbde1b94107843c6760f9f343d232f7b8e0a1bb53a9480feedf63e0166bb35e"
+        },
+        {
+          "json_pointer": "/people/whu-mazhaocheng/appointments/1/evidence/0/quote",
+          "sha256": "7e825bfadd4b7792057004edfded460a095cb2dde550fd4defea6ab495222abd"
+        },
+        {
+          "json_pointer": "/people/whu-mazhaocheng/appointments/2/evidence/0/quote",
+          "sha256": "041d779a31baed8733b773b6a2a30caf3128c069a3440a9a06301309f5c1dd68"
+        },
+        {
+          "json_pointer": "/people/whu-mazhaocheng/affiliation_evidence/0/quote",
+          "sha256": "c430467f4db05f58e2f66349dc6e295e038db7723ae5aa51608f318505cb85b7"
+        },
+        {
+          "json_pointer": "/people/whu-mazhaocheng/title_evidence/0/quote",
+          "sha256": "b5c883b66d636577830c8728a28f19951b2d080a087a57688a71998e8e281359"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "9f48a7b1249f37102cd764c995a43f27f5e7e08bab062bdc5910538a602e5adc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f48a7b1249f37102cd764c995a43f27f5e7e08bab062bdc5910538a602e5adc"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "38af17320c8ae7c64189c4caef32dfdc7afcbf19b9a521ba50edcda1989b2ea1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "38af17320c8ae7c64189c4caef32dfdc7afcbf19b9a521ba50edcda1989b2ea1"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "fcbde1b94107843c6760f9f343d232f7b8e0a1bb53a9480feedf63e0166bb35e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fcbde1b94107843c6760f9f343d232f7b8e0a1bb53a9480feedf63e0166bb35e"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "7e825bfadd4b7792057004edfded460a095cb2dde550fd4defea6ab495222abd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7e825bfadd4b7792057004edfded460a095cb2dde550fd4defea6ab495222abd"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "041d779a31baed8733b773b6a2a30caf3128c069a3440a9a06301309f5c1dd68"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "041d779a31baed8733b773b6a2a30caf3128c069a3440a9a06301309f5c1dd68"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "c430467f4db05f58e2f66349dc6e295e038db7723ae5aa51608f318505cb85b7"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "9f48a7b1249f37102cd764c995a43f27f5e7e08bab062bdc5910538a602e5adc"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "38af17320c8ae7c64189c4caef32dfdc7afcbf19b9a521ba50edcda1989b2ea1"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "fcbde1b94107843c6760f9f343d232f7b8e0a1bb53a9480feedf63e0166bb35e"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "7e825bfadd4b7792057004edfded460a095cb2dde550fd4defea6ab495222abd"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "041d779a31baed8733b773b6a2a30caf3128c069a3440a9a06301309f5c1dd68"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "b5c883b66d636577830c8728a28f19951b2d080a087a57688a71998e8e281359"
+        },
+        {
+          "json_pointer": "/people/whu-miaoxiaoping/education/0/evidence/0/quote",
+          "sha256": "f0501cf97860126812a2be2690afedb9bf4192ac274d63ec429cb61be5a7cce2"
+        },
+        {
+          "json_pointer": "/people/whu-miaoxiaoping/education/1/evidence/0/quote",
+          "sha256": "896ec316980baaea276eb86d4be049449f5970b60a97314294fa2646da3edb33"
+        },
+        {
+          "json_pointer": "/people/whu-miaoxiaoping/publications/0/evidence/0/quote",
+          "sha256": "076699417b0dd363c5bc094da555946d2a31cbd91383be3503203fe1b990d068"
+        },
+        {
+          "json_pointer": "/people/whu-miaoxiaoping/appointments/0/evidence/0/quote",
+          "sha256": "2b1ee05165adb1cbe52282d9ab7c3b427a45d4a6743ce3639d79f0d3765d678c"
+        },
+        {
+          "json_pointer": "/people/whu-miaoxiaoping/appointments/1/evidence/0/quote",
+          "sha256": "2cfce98bb07c2f131897ac49eec157e2c0b9fef751f87fde9824a9b263ea5208"
+        },
+        {
+          "json_pointer": "/people/whu-miaoxiaoping/appointments/2/evidence/0/quote",
+          "sha256": "c588a49b1c8d9cb8fc43b83d27fc7b52d077698df8ac03b00e355c5e3f608431"
+        },
+        {
+          "json_pointer": "/people/whu-miaoxiaoping/appointments/3/evidence/0/quote",
+          "sha256": "be35eb90794cfb0e4054f5e10f4b344270798d6f6bf6610c90be5d149050fa53"
+        },
+        {
+          "json_pointer": "/people/whu-miaoxiaoping/affiliation_evidence/0/quote",
+          "sha256": "0b514fe59d3be2596e823644885f10eb56a80f2c37baa702d942160e9a643121"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "f0501cf97860126812a2be2690afedb9bf4192ac274d63ec429cb61be5a7cce2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f0501cf97860126812a2be2690afedb9bf4192ac274d63ec429cb61be5a7cce2"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "896ec316980baaea276eb86d4be049449f5970b60a97314294fa2646da3edb33"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "896ec316980baaea276eb86d4be049449f5970b60a97314294fa2646da3edb33"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "2b1ee05165adb1cbe52282d9ab7c3b427a45d4a6743ce3639d79f0d3765d678c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2b1ee05165adb1cbe52282d9ab7c3b427a45d4a6743ce3639d79f0d3765d678c"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "2cfce98bb07c2f131897ac49eec157e2c0b9fef751f87fde9824a9b263ea5208"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2cfce98bb07c2f131897ac49eec157e2c0b9fef751f87fde9824a9b263ea5208"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "c588a49b1c8d9cb8fc43b83d27fc7b52d077698df8ac03b00e355c5e3f608431"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c588a49b1c8d9cb8fc43b83d27fc7b52d077698df8ac03b00e355c5e3f608431"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "be35eb90794cfb0e4054f5e10f4b344270798d6f6bf6610c90be5d149050fa53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "be35eb90794cfb0e4054f5e10f4b344270798d6f6bf6610c90be5d149050fa53"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "076699417b0dd363c5bc094da555946d2a31cbd91383be3503203fe1b990d068"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "076699417b0dd363c5bc094da555946d2a31cbd91383be3503203fe1b990d068"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "0b514fe59d3be2596e823644885f10eb56a80f2c37baa702d942160e9a643121"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "f0501cf97860126812a2be2690afedb9bf4192ac274d63ec429cb61be5a7cce2"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "896ec316980baaea276eb86d4be049449f5970b60a97314294fa2646da3edb33"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "2b1ee05165adb1cbe52282d9ab7c3b427a45d4a6743ce3639d79f0d3765d678c"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "2cfce98bb07c2f131897ac49eec157e2c0b9fef751f87fde9824a9b263ea5208"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "c588a49b1c8d9cb8fc43b83d27fc7b52d077698df8ac03b00e355c5e3f608431"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "be35eb90794cfb0e4054f5e10f4b344270798d6f6bf6610c90be5d149050fa53"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "076699417b0dd363c5bc094da555946d2a31cbd91383be3503203fe1b990d068"
+        }
+      ],
+      "applied_overlays": [
+        {
+          "person_id": "whu-miaoxiaoping",
+          "input_sha256": "8e07744a3f4bfa5936c7bf5f05726ddc3b143503cd7e13441902fbcaa61e810b",
+          "overlay_sha256": "e52686d20c242a76fd854250e9c6abd129df7487f05192ed7d8a485df5797b7a",
+          "json_pointer": "/people/1/source_verification_gaps/5",
+          "old_value": "Hong Kong entries are under source Work experience but roles are absent; not inferred to be postdoctoral training or visiting study. Doctor-study endpoint 2005-07 overlaps first work interval beginning 2005-06; kept as source intervals without reconciliation.",
+          "new_value": "Hong Kong entries retain source institutions and intervals but no roles; the Work experience section heading is not separately present in retained excerpts. Neither postdoctoral training nor visiting study is inferred. Doctor-study endpoint 2005-07 overlaps the first institutional interval beginning 2005-06; kept without reconciliation.",
+          "exact_value_guard_passed": true
+        }
+      ],
+      "mapping_notes": [
+        "原364/382均无org数组，两本地节点仅由明确单位职业原句生成；person primary均公共卫生学院，不改成系。",
+        "364缪香港角色未知/未留存标题收窄overlay实际应用，博士与香港区间重叠保留。postfreeze personID addendum独立于原manifest绑定，不宣称原冻结成员。",
+        "382只两主职业正文accepted；空补页没有单独留存preflight/lock为程序偏差，不能追认已预检、不能当事实源；不加入sources。",
+        "袁双机构博后1事件、河滨子段不重复；燕畸形起点原文保留，规范化未知。",
+        "所有source原片段/摘要强度分开，private原长行不进public；原职业摘要漏列的完整职业语句只补可见notes，不重造任职事件。"
+      ],
+      "postfreeze_id_addendum_sha256": "dcdc021e319b2795d6ac797fb97b95dd58949923a6bccfc3b24563c79d6c91c7",
+      "empty_supplement_deviation_sha256": "d95f00b2d736f7f5d67f79a6c5622d8556b7dd1eb02858a07b606c735a0d569a",
+      "retained_professional_fact_projection": {
+        "person_id": "whu-yuanbifeng-publichealth",
+        "facts": [
+          {
+            "kind": "historical_appointment",
+            "source_reported_fact": "2011.1—2021.8武汉大学化学与分子科学学院教授、博导",
+            "source_id": "whu-1-382",
+            "source_url": "https://jszy.whu.edu.cn/yuanbifeng/zh_CN/index.htm",
+            "observed_at_utc": "2026-10-25T07:43:43Z",
+            "retained_professional_line_sha256": "a80971e011f12bc5af51672f8768e5d5cca87c90e4421a243d3721e34105d697",
+            "original_line_number_private_only": true,
+            "current_personnel_verified": false
+          },
+          {
+            "kind": "editorial_role",
+            "source_reported_fact": "Chinese Chemical Letters副主编",
+            "source_id": "whu-1-382",
+            "source_url": "https://jszy.whu.edu.cn/yuanbifeng/zh_CN/index.htm",
+            "observed_at_utc": "2026-10-25T07:43:43Z",
+            "retained_professional_line_sha256": "5cccc1d5cce5343ba2431cb2c842996f0ff6efa570242dffa26029fd4a5bbb83",
+            "original_line_number_private_only": true,
+            "current_personnel_verified": false
+          },
+          {
+            "kind": "editorial_role",
+            "source_reported_fact": "Chemical Research in Toxicology顾问编委（Editorial Advisory Board Member）",
+            "source_id": "whu-1-382",
+            "source_url": "https://jszy.whu.edu.cn/yuanbifeng/zh_CN/index.htm",
+            "observed_at_utc": "2026-10-25T07:43:43Z",
+            "retained_professional_line_sha256": "5cccc1d5cce5343ba2431cb2c842996f0ff6efa570242dffa26029fd4a5bbb83",
+            "original_line_number_private_only": true,
+            "current_personnel_verified": false
+          },
+          {
+            "kind": "professional_award_label",
+            "source_reported_fact": "国家自然科学基金优秀青年基金获得者",
+            "source_id": "whu-1-382",
+            "source_url": "https://jszy.whu.edu.cn/yuanbifeng/zh_CN/index.htm",
+            "observed_at_utc": "2026-10-25T07:43:43Z",
+            "retained_professional_line_sha256": "5cccc1d5cce5343ba2431cb2c842996f0ff6efa570242dffa26029fd4a5bbb83",
+            "original_line_number_private_only": true,
+            "current_personnel_verified": false
+          }
+        ],
+        "scope": "留存原职业行中的完整角色和历史时段，以typed事实+可见unknowns表达；未补任期、不增加任职事件，截断部分未补写。"
+      },
+      "institutional_interval_scope": {
+        "person_id": "whu-miaoxiaoping",
+        "event_ids": [
+          "whu-miaoxiaoping-appointment-1",
+          "whu-miaoxiaoping-appointment-2",
+          "whu-miaoxiaoping-appointment-3"
+        ],
+        "scope": "三条仅机构区间、角色未知，完整移入institutional_associations并在unknowns逐条显示；不认定雇佣、博士后或访问。组统计6条appointments及3条机构区间，不称9条任职。"
+      },
+      "source_reported_degree_update": {
+        "person_id": "whu-mazhaocheng",
+        "event_id": "whu-mazhaocheng-education-2",
+        "source_candidate_sha256": "8e07744a3f4bfa5936c7bf5f05726ddc3b143503cd7e13441902fbcaa61e810b",
+        "old_degree_awarded": null,
+        "new_degree_awarded": true,
+        "evidence": {
+          "source_id": "whu-mazhaocheng",
+          "excerpt_id": "bachelor",
+          "source_url": "https://jszy.whu.edu.cn/mazhaocheng/en/index/1558358/list/index.htm",
+          "source_locator": "职业资料对应条目／1999.9 to 2003.6；武汉大学 | 应用化学 | 本科双学位 | Undergraduate (Bachelor’s degree)（原分列字段拼接，非连续原文）",
+          "source_excerpt_sha256": "38af17320c8ae7c64189c4caef32dfdc7afcbf19b9a521ba50edcda1989b2ea1",
+          "observed_at_utc": "2026-10-25T06:50:07Z"
+        },
+        "delta": [
+          {
+            "json_pointer": "/people/0/education/0/note",
+            "old_present": true,
+            "old": "原学校、专业、学习区间和学位/阶段称谓保留；不由区间终点补授位日期。",
+            "new": "官网已载“博士 | 研究生毕业”及武汉大学高分子物理与化学、2003.9—2008.12学习区间；未单独留存明确学位字段或授位说明，授位状态仍未知，不否定已载博士和毕业经历。"
+          },
+          {
+            "json_pointer": "/people/0/education/0/source_note",
+            "old_present": false,
+            "new": "原学校、专业、学习区间和学位/阶段称谓保留；不由区间终点补授位日期。"
+          },
+          {
+            "json_pointer": "/people/0/education/1/event_kind",
+            "old_present": true,
+            "old": "education_label_award_unknown",
+            "new": "degree"
+          },
+          {
+            "json_pointer": "/people/0/education/1/note",
+            "old_present": true,
+            "old": "原学校、专业、学习区间和学位/阶段称谓保留；不由区间终点补授位日期。",
+            "new": "官网留存字段明确“本科双学位”并列Undergraduate (Bachelor’s degree)，据此记录双学位称谓为1个教育事件；不补第二专业、资格细数或授位年月，原学位证书未核。"
+          },
+          {
+            "json_pointer": "/people/0/education/1/source_include_in_degree_filters",
+            "old_present": false,
+            "new": false
+          },
+          {
+            "json_pointer": "/people/0/education/1/source_degree_awarded",
+            "old_present": false,
+            "new": null
+          },
+          {
+            "json_pointer": "/people/0/education/1/degree_award_evidence",
+            "old_present": false,
+            "new": {
+              "source_id": "whu-mazhaocheng",
+              "excerpt_id": "bachelor",
+              "source_url": "https://jszy.whu.edu.cn/mazhaocheng/en/index/1558358/list/index.htm",
+              "source_locator": "职业资料对应条目／1999.9 to 2003.6；武汉大学 | 应用化学 | 本科双学位 | Undergraduate (Bachelor’s degree)（原分列字段拼接，非连续原文）",
+              "source_excerpt_sha256": "38af17320c8ae7c64189c4caef32dfdc7afcbf19b9a521ba50edcda1989b2ea1",
+              "observed_at_utc": "2026-10-25T06:50:07Z"
+            }
+          },
+          {
+            "json_pointer": "/people/0/education/1/source_note",
+            "old_present": false,
+            "new": "原学校、专业、学习区间和学位/阶段称谓保留；不由区间终点补授位日期。"
+          },
+          {
+            "json_pointer": "/people/0/education/1/include_in_degree_filters",
+            "old_present": true,
+            "old": false,
+            "new": true
+          },
+          {
+            "json_pointer": "/people/0/education/1/source_include_in_education_filters",
+            "old_present": false,
+            "new": false
+          },
+          {
+            "json_pointer": "/people/0/education/1/source_canonical_event_kind",
+            "old_present": false,
+            "new": "education_label_award_unknown"
+          },
+          {
+            "json_pointer": "/people/0/education/1/include_in_education_filters",
+            "old_present": true,
+            "old": false,
+            "new": true
+          },
+          {
+            "json_pointer": "/people/0/education/1/degree_awarded",
+            "old_present": true,
+            "old": null,
+            "new": true
+          }
+        ],
+        "inverse_restores_preclassification_payload": true,
+        "preclassification_payload_sha256": "93f1aaf24a19cc47c90c39aa12a50a0cded3eb9aba5fb5da58f5142a260bf99c",
+        "scope": "只双学位称谓一教育事件；无第二专业、资格细数或授位年月推断。马博士/缪两事件仍未知，原源不改。"
+      },
+      "institutional_interval_rendering_correction": {
+        "person_id": "whu-miaoxiaoping",
+        "previous_payload_sha256": "5bed4b4f81cc35c3e7f0b1dcc33101ae3e58febd994992fc5d6427dcf7503bba",
+        "moves": [
+          {
+            "from_json_pointer": "people[1].appointments[0]",
+            "to_json_pointer": "people[1].institutional_associations[0]",
+            "event_id": "whu-miaoxiaoping-appointment-1",
+            "object_unchanged": true
+          },
+          {
+            "from_json_pointer": "people[1].appointments[1]",
+            "to_json_pointer": "people[1].institutional_associations[1]",
+            "event_id": "whu-miaoxiaoping-appointment-2",
+            "object_unchanged": true
+          },
+          {
+            "from_json_pointer": "people[1].appointments[2]",
+            "to_json_pointer": "people[1].institutional_associations[2]",
+            "event_id": "whu-miaoxiaoping-appointment-3",
+            "object_unchanged": true
+          }
+        ],
+        "added_visible_unknowns": [
+          {
+            "json_pointer": "/people/1/unknowns/7",
+            "value": "机构区间记录：香港大学，2005-06—2005-11；角色未知。仅有机构和起止时间，未留存原栏目标题，不据此认定雇佣、博士后或访问性质。"
+          },
+          {
+            "json_pointer": "/people/1/unknowns/8",
+            "value": "机构区间记录：香港大学，2005-11—2009-04；角色未知。仅有机构和起止时间，未留存原栏目标题，不据此认定雇佣、博士后或访问性质。"
+          },
+          {
+            "json_pointer": "/people/1/unknowns/9",
+            "value": "机构区间记录：华中科技大学 公共卫生学院，2009-06—2021-08；角色未知。仅有机构和起止时间，未留存原栏目标题，不据此认定雇佣、博士后或访问性质。"
+          }
+        ],
+        "inverse_restores_previous_payload": true,
+        "scope": "三条机构区间完整对象按原顺序移出任职字段；未知说明逐条展示机构、起止时间和未知性质。原来源及所有其他事实不变。"
+      }
+    }
+  ],
+  "mapping": "仅追加九名已审来源人物及组织展示节点；旧761事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}

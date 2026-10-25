@@ -5,11 +5,12 @@ import {matches, stages, mentorOfficialUrl, mentorProfileRoute} from '../site/mo
 const sduMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-sdu12-source-mapping.json',import.meta.url)));
 const csuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-csu12-source-mapping.json',import.meta.url)));
 const hustMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-hust12-source-mapping.json',import.meta.url)));
+const whuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-whu9-source-mapping.json',import.meta.url)));
 const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-jlu12-source-mapping.json',import.meta.url)));
 test('actual JLU cohort exactly preserves independently reviewed fields, identities and scope',()=>{
- assert.equal(db.people.length,713+mapping.people.length+sduMapping.people.length+csuMapping.people.length+hustMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,713+mapping.people.length+sduMapping.people.length+csuMapping.people.length+hustMapping.people.length+whuMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const expected of mapping.people){
   const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);
   assert.equal(typeof actual.department,'string');assert(actual.department.length>0);
