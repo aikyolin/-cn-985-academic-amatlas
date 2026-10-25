@@ -1,0 +1,2540 @@
+{
+  "schema_version": "independent-dlut12-canonical-mapping-1",
+  "baseline_commit": "dfb5bda4ab2f5c16aef24e6547d97231a7ae90b8",
+  "new_people": [
+    "dlut-zhangjialiang",
+    "dlut-zhangrui",
+    "dlut-cuimiao",
+    "dlut-wanghuanming",
+    "dlut-zhangwei1",
+    "dlut-liulinlin-law",
+    "dlut-suyongjian-education",
+    "dlut-liumengyang",
+    "dlut-zhouwenjie-art",
+    "dlut-lichong-higher-education",
+    "dlut-lijunfeng",
+    "dlut-mahui"
+  ],
+  "new_org_ids": [
+    "dlut-physics",
+    "dlut-foreign-languages",
+    "dlut-sem",
+    "dlut-spap",
+    "dlut-intellectual-property",
+    "dlut-higher-education",
+    "dlut-humanities",
+    "dlut-architecture-art"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 8,
+    "education": 38,
+    "appointments": 38,
+    "publications": 18,
+    "mentors": 3,
+    "teaching": 6,
+    "degree_true": 11,
+    "degree_false": 8,
+    "degree_unknown": 19
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "physics-language-mathematics",
+      "canonical_payload_sha256": "c88d63e6e03df35e7eb9649b50399d0f07d64a2a22d447d3e113df5617ddaa71",
+      "field_mapping_sha256": "922b43d706e08ec28a3c9280acd5e7fee8b2866ee4dc592821ac171c65990634",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "management-law-education",
+      "canonical_payload_sha256": "bb0b92751a1c2b9bb03ad813806a0792d5c7f16bd5599681691650750519764d",
+      "field_mapping_sha256": "d5c7c17fcfe8f07ca3618bee7d0e38f8418d3589534a2ce196870a29c6cde655",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "humanities-art-higher-education",
+      "canonical_payload_sha256": "e5336dd4e0fb7068616d0f09b2b83ff707fdca50fc40bff316cfa1207d0d9f4d",
+      "field_mapping_sha256": "ac9bab3b35b8e539425930b3eceb54933a9e575fea72c45debdcf560c7a00dca",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "baseline_people": 701,
+      "baseline_publication_status": "published",
+      "payload_sha256": "c88d63e6e03df35e7eb9649b50399d0f07d64a2a22d447d3e113df5617ddaa71",
+      "people": [
+        {
+          "person_id": "dlut-zhangjialiang",
+          "source_candidate_sha256": "ebd00c9ec2d54777b218892c2ff69977ad5f30f74102c9229847f29527e6911a",
+          "source_review_sha256": "c1ca615636a1d4e7a8c613bc4d148a80a046982c6bae53e3c1401576735861df",
+          "counts": {
+            "education": 2,
+            "mentors": 0,
+            "appointments": 5,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品仅官网书目，未核出版者元数据或全文；原时间/卷期不自行修订。",
+            "目录栏目、主页身份标签及旧文“至今”均不独立证实现时人事状态；不启用在岗导师快捷导航。",
+            "仅核原序前三，不代表院系全员、全职或完整履历。",
+            "论文仅核官网书目，未核出版社记录、DOI及全文。",
+            "院系行政父级和校区未核实，不推校级直属。",
+            "未披露本人各阶段导师；“硕士生导师”和“指导博士毕业生”不是本人博士导师身份或师承依据。",
+            "已检索发现山东大学同名教授，但学校、研究领域和教育经历不同，明确排除，未合并。",
+            "来源身份栏列三束实验室常务副主任，日期未知；不增加有始末日期的任职或推行政层级。",
+            "原始完整响应哈希是采集者承诺，本批只核既有职业片段，未重新验证完整响应。"
+          ],
+          "org_identity": {
+            "source_unit": "物理学院",
+            "canonical_org_id": "dlut-physics",
+            "source_url": "https://faculty.dlut.edu.cn/zhangjialiang/zh_CN/index.htm",
+            "existing_node_reused": false,
+            "existing_parent_unchanged": true
+          }
+        },
+        {
+          "person_id": "dlut-zhangrui",
+          "source_candidate_sha256": "f7c2c1a058cbd0d946ea5d01515781c28d8556c7f4acea5fa912be6577fc0ac2",
+          "source_review_sha256": "f0c0049667bc3646f1a82cdfc34e8fd918e8261576cebac50b7629d016324a40",
+          "counts": {
+            "education": 4,
+            "mentors": 2,
+            "appointments": 3,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品仅官网书目，未核出版者元数据或全文；原时间/卷期不自行修订。",
+            "与浙江大学微电子同名学者区分，不合并。",
+            "Jef Verschueren为紧接博士叙述的师从，Mona Baker仅2010访问合作导师；两条均非论文导师认证。",
+            "目录首次技术超时后，原协调者一次同URL浏览器恢复记录核到具名条目和href；非本批重新浏览。",
+            "第一书详情Cache miss，第二书详情未打开；书目信息仅来自已读本人主页。"
+          ],
+          "org_identity": {
+            "source_unit": "外国语学院",
+            "canonical_org_id": "dlut-foreign-languages",
+            "source_url": "https://faculty.dlut.edu.cn/zhangrui/zh_CN/index.htm",
+            "existing_node_reused": false,
+            "existing_parent_unchanged": true
+          }
+        },
+        {
+          "person_id": "dlut-liumengyang",
+          "source_candidate_sha256": "770dbc2026d7bdd23696a93e3c369aed4407bf53c1d33b6794aaa8dab811f359",
+          "source_review_sha256": "2551d27d48aa5bd2841de0da37544579fd5ad70058bd00a3dc20b4c24aac9409",
+          "counts": {
+            "education": 3,
+            "mentors": 0,
+            "appointments": 1,
+            "publications": 2,
+            "teaching": 5
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品仅官网书目，未核出版者元数据或全文；原时间/卷期不自行修订。",
+            "目录浏览器恢复只见具名条目；未读raw href、未点击，不称精确身份链接核验。",
+            "工作经历2019-05教师与简介讲师/硕导标签分别保留，不推晋升时间。",
+            "教材本人为副主编，不补其他作者/编者，也不推独著或通讯作者。"
+          ],
+          "org_identity": {
+            "source_unit": "外国语学院",
+            "canonical_org_id": "dlut-foreign-languages",
+            "source_url": "https://faculty.dlut.edu.cn/liumengyang/zh_CN/index.htm",
+            "existing_node_reused": false,
+            "existing_parent_unchanged": true
+          }
+        },
+        {
+          "person_id": "dlut-lijunfeng",
+          "source_candidate_sha256": "a7b9072ad3faadcb23e26d088c7a7b8ca5803a50fd1325413239d4298189de50",
+          "source_review_sha256": "73d2cfa9d6c9013c068b386355aec65440647e8987a9597d7061bd22f44a929c",
+          "counts": {
+            "education": 5,
+            "mentors": 0,
+            "appointments": 1,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品仅官网书目，未核出版者元数据或全文；原时间/卷期不自行修订。",
+            "仅本人职业简介，独立目录与实时人事未核；学习末月不是授位月，博士仅2005授位年明确。",
+            "保留原书目2022/39卷、2025/547卷，不据外部年份规则修正；完整署名次序未核。",
+            "训练和任职只是选录，不是全部履历；不声称原摘录没有留存的未具名海外交流。",
+            "原字段有拼接/空格规范化，非完整原始HTTP或网页认证；原生作品URL在解析后核重。"
+          ],
+          "org_identity": {
+            "source_unit": "数学科学学院",
+            "canonical_org_id": "dlut-math",
+            "source_url": "https://faculty.dlut.edu.cn/lijunfeng/zh_CN/index.htm",
+            "existing_node_reused": true,
+            "existing_parent_unchanged": true
+          }
+        }
+      ],
+      "source_chains": {
+        "wave15": "v1全部旧值逐键一致，v2只增5个研究字段，6条研究方向；v1事实审查与v2增量审查分开核验。",
+        "wave318": "仅李俊峰people/1/gaps/6应用已审overlay；李风泉people/0规则不套用。"
+      },
+      "public_field_check": {
+        "locator_handling": "工具定位/本地文件只存private；原摘录指纹与职业结构字段分离，事实不能仅有hash。",
+        "teaching": "原课程level和主讲/承担角色映射到可见note。",
+        "degree_and_relationships": "三态守恒；张睿2条阶段关系非论文导师认证。"
+      },
+      "teaching_role_correction": {
+        "previous_payload_sha256": "5f1df7b370e7eb081c22db4e25f08bc219d435dc37c9fd6cb46ccc0339f3f762",
+        "reason": "原明确角色已在note，但主角色字段缺失导致界面错误回落为未披露；精准新增原明确角色，不改变其他字段。",
+        "changes": [
+          {
+            "path": "/people/2/teaching/0/role",
+            "operation": "add",
+            "value": "主讲",
+            "source_id": "dlut-liumengyang-profile",
+            "source_url": "https://faculty.dlut.edu.cn/liumengyang/zh_CN/index.htm",
+            "source_locator": "教学必要片段：主讲本科生课程；并承担研究生翻译学（日）课程的教学工作",
+            "quote_sha256": "1cbdbd00546d1cbbf9be611958adb60be69412bc53212ce23f4d437d61a6ce27"
+          },
+          {
+            "path": "/people/2/teaching/1/role",
+            "operation": "add",
+            "value": "主讲",
+            "source_id": "dlut-liumengyang-profile",
+            "source_url": "https://faculty.dlut.edu.cn/liumengyang/zh_CN/index.htm",
+            "source_locator": "教学必要片段：主讲本科生课程；并承担研究生翻译学（日）课程的教学工作",
+            "quote_sha256": "1cbdbd00546d1cbbf9be611958adb60be69412bc53212ce23f4d437d61a6ce27"
+          },
+          {
+            "path": "/people/2/teaching/2/role",
+            "operation": "add",
+            "value": "主讲",
+            "source_id": "dlut-liumengyang-profile",
+            "source_url": "https://faculty.dlut.edu.cn/liumengyang/zh_CN/index.htm",
+            "source_locator": "教学必要片段：主讲本科生课程；并承担研究生翻译学（日）课程的教学工作",
+            "quote_sha256": "1cbdbd00546d1cbbf9be611958adb60be69412bc53212ce23f4d437d61a6ce27"
+          },
+          {
+            "path": "/people/2/teaching/3/role",
+            "operation": "add",
+            "value": "主讲",
+            "source_id": "dlut-liumengyang-profile",
+            "source_url": "https://faculty.dlut.edu.cn/liumengyang/zh_CN/index.htm",
+            "source_locator": "教学必要片段：主讲本科生课程；并承担研究生翻译学（日）课程的教学工作",
+            "quote_sha256": "1cbdbd00546d1cbbf9be611958adb60be69412bc53212ce23f4d437d61a6ce27"
+          },
+          {
+            "path": "/people/2/teaching/4/role",
+            "operation": "add",
+            "value": "承担教学工作",
+            "source_id": "dlut-liumengyang-profile",
+            "source_url": "https://faculty.dlut.edu.cn/liumengyang/zh_CN/index.htm",
+            "source_locator": "教学必要片段：主讲本科生课程；并承担研究生翻译学（日）课程的教学工作",
+            "quote_sha256": "1cbdbd00546d1cbbf9be611958adb60be69412bc53212ce23f4d437d61a6ce27"
+          }
+        ],
+        "source_candidate_sha256": "770dbc2026d7bdd23696a93e3c369aed4407bf53c1d33b6794aaa8dab811f359",
+        "source_excerpt_sha256": "4144291c5555b81da3c2e38ee9c65d3a134d01c429edaa47b8f1e480f4690a17",
+        "inverse_five_additions_restores_exact_previous_bytes": true
+      }
+    },
+    {
+      "schema_version": "dlut12-management-law-education-mapping-1",
+      "published_baseline_people": 701,
+      "people": [
+        "dlut-cuimiao",
+        "dlut-wanghuanming",
+        "dlut-liulinlin-law",
+        "dlut-suyongjian-education"
+      ],
+      "input_hashes": {
+        "dlut-cuimiao": {
+          "source_candidate_sha256": "8719e525ae8c4dcab3bf583434c118d77df15a6d4782627df45e79a5cd4f192d",
+          "review_sha256": "fe54b0e6ad5ee5baf3746911a02ca983209142853923633e3bb11cccbdf78cca"
+        },
+        "dlut-wanghuanming": {
+          "source_candidate_sha256": "8719e525ae8c4dcab3bf583434c118d77df15a6d4782627df45e79a5cd4f192d",
+          "review_sha256": "fe54b0e6ad5ee5baf3746911a02ca983209142853923633e3bb11cccbdf78cca"
+        },
+        "dlut-liulinlin-law": {
+          "source_candidate_sha256": "209745f733b918e0b3c25ff859b34874f6ba2dbe32a7abc7a05976084bd4cb54",
+          "review_sha256": "f83dd57760e452a249ece0845230074ff8cc7a32be9336158b22280f30197ebc"
+        },
+        "dlut-suyongjian-education": {
+          "source_candidate_sha256": "209745f733b918e0b3c25ff859b34874f6ba2dbe32a7abc7a05976084bd4cb54",
+          "review_sha256": "f83dd57760e452a249ece0845230074ff8cc7a32be9336158b22280f30197ebc"
+        }
+      },
+      "overlay_applied": {
+        "source_sha256": "8719e525ae8c4dcab3bf583434c118d77df15a6d4782627df45e79a5cd4f192d",
+        "before": [
+          "dlut-sem-business-directory"
+        ],
+        "after": [
+          "dlut-sem-business-directory",
+          "dlut-cuimiao-profile"
+        ],
+        "path": "/org_units/0/source_ids",
+        "source_id": "dlut-cuimiao-profile",
+        "support_quote": "崔淼，大连理工大学经济管理学院教授，博士生导师",
+        "guard_pass": true
+      },
+      "other_overlay": "205同审206皮勇页面日期修订不适用本组，未套用。",
+      "org_mapping": "四节点与701既有org不重；同名高等教育研究院由本组唯一定义供李冲组复用。所有父级未核不推断，企业管理研究所和工商管理学不误作行政层级。",
+      "counts": {
+        "education": 10,
+        "appointments": 11,
+        "mentors": 1,
+        "publications": 6,
+        "teaching": 1
+      },
+      "semantic_limits": {
+        "dlut-cuimiao": [
+          "当前人事与退休状态未独立核实，保留历史和来源称谓；目录/至今不等于实时认证，当前导航和计数关闭。",
+          "必要职业摘录非完整网页或HTTP；原观察依据与区间保留，未外核出版元数据或全文。",
+          "学习阶段、明确授位与授位时间分开；本人博导硕导资格不等于本人的导师。",
+          "旧工作条目副教授至今与页首、目录教授标签并存，不选赢家、不补晋升时间或当前岗位。",
+          "三学习标签授位未知；博士学生记录姓名、专业及年月匹配，但2011-01-07为毕业日非授位日，Degree标签不升级明确获授。",
+          "Postdoctor仅非学位训练；苏教师学生栏目未具名导师，不建立本人师承或节点；论文题名仅学籍记录非新增作品。",
+          "企业管理研究所源自本人页，独立目录工商管理学为学科类别；学院名称经既有本人源补绑，不推额外行政层级。",
+          "厚德书院执行院长及博士生导师为原页面职业标签，任期未知；未扩展课程来源。"
+        ],
+        "dlut-wanghuanming": [
+          "当前人事与退休状态未独立核实，保留历史和来源称谓；目录/至今不等于实时认证，当前导航和计数关闭。",
+          "必要职业摘录非完整网页或HTTP；原观察依据与区间保留，未外核出版元数据或全文。",
+          "学习阶段、明确授位与授位时间分开；本人博导硕导资格不等于本人的导师。",
+          "已留“毕业院校：同济大学”“学位：博士”标签，但教育履历栏目为空，不从标签拼造教育事件、授位或学习日期。",
+          "三职业阶段来自旧英文个人页，历史人文与社会科学学部公共管理系与当前目录公共管理学院标签均保留，不推改制或转任日。",
+          "城市管理学本科负责人、2025认定年份和在线平台陈述保留；2025不是授课学期，未认证实时开课。",
+          "英文个人页另列博士生导师和硕士生导师资格；不是本人的求学导师，不新增任职或学位。"
+        ],
+        "dlut-liulinlin-law": [
+          "当前人事与退休状态未独立核实，保留历史和来源称谓；目录/至今不等于实时认证，当前导航和计数关闭。",
+          "必要职业摘录非完整网页或HTTP；原观察依据与区间保留，未外核出版元数据或全文。",
+          "学习阶段、明确授位与授位时间分开；本人博导硕导资格不等于本人的导师。",
+          "三教育明确获学位，true但授位日期未知；讲师与副教授多条至今并存，不补终点或推同时现任。",
+          "仅本位法学/知识产权学院身份，不与化工同名者混同；来源未有可接受作品，publications空不代表没有学术成果。",
+          "目录2021-03-03为条目日期，非现职日期；本人求学导师未知。",
+          "本人页副教授、硕士生导师及民商法学/企业管理学科标签保留；资格不另拆任职或本人导师关系。"
+        ],
+        "dlut-suyongjian-education": [
+          "当前人事与退休状态未独立核实，保留历史和来源称谓；目录/至今不等于实时认证，当前导航和计数关闭。",
+          "必要职业摘录非完整网页或HTTP；原观察依据与区间保留，未外核出版元数据或全文。",
+          "学习阶段、明确授位与授位时间分开；本人博导硕导资格不等于本人的导师。",
+          "三学历学位标签授位null；博士论文获奖语境、毕业措辞不替代明确获授。",
+          "张应强为来源明确师承，但阶段unknown，linked_event_id=null；不挂接博士阶段，不读取图片表格补事实。",
+          "两书目第一项单人署名不自动推独著；第二项书级作者张应强等与本人合著撰写第五章约3.5万字分别保留。",
+          "教工目录有姓名无人物链接；硕导目录无目标姓名链接，不用壳层计数补导航。2015-09-01显示日不是最后更新，未留的2023项不当已接受事实。"
+        ]
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/excerpts/0/quote",
+          "sha256": "eade40f9939c2f3a460fe87cc8fa067a87b1b909fe8f1f3bffd9412bdfd79e9c"
+        },
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/excerpts/1/quote",
+          "sha256": "04d953f9afc16c297c58431452f1e7e8501e035c8319a8fa08054aed0c24c926"
+        },
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/excerpts/2/quote",
+          "sha256": "903c7fe346f43e02d2b0b73f7cc4e3b2da86067731990b568648fdc202cc999b"
+        },
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/excerpts/3/quote",
+          "sha256": "2d9193f4a7e13f9cec020f6293b0bba1c607494fc2badd5552cfc59c8225befb"
+        },
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/excerpts/4/quote",
+          "sha256": "4e47ec927670bb96ab007a75ff1cf84822eaf4c5e996bc0f5925a5eed0d28b40"
+        },
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/excerpts/5/quote",
+          "sha256": "4e47ec927670bb96ab007a75ff1cf84822eaf4c5e996bc0f5925a5eed0d28b40"
+        },
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/retained_recovery_observation/excerpts/0/quote",
+          "sha256": "eade40f9939c2f3a460fe87cc8fa067a87b1b909fe8f1f3bffd9412bdfd79e9c"
+        },
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/retained_recovery_observation/excerpts/1/quote",
+          "sha256": "04d953f9afc16c297c58431452f1e7e8501e035c8319a8fa08054aed0c24c926"
+        },
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/retained_recovery_observation/excerpts/2/quote",
+          "sha256": "903c7fe346f43e02d2b0b73f7cc4e3b2da86067731990b568648fdc202cc999b"
+        },
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/retained_recovery_observation/excerpts/3/quote",
+          "sha256": "2d9193f4a7e13f9cec020f6293b0bba1c607494fc2badd5552cfc59c8225befb"
+        },
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/retained_recovery_observation/excerpts/4/quote",
+          "sha256": "4e47ec927670bb96ab007a75ff1cf84822eaf4c5e996bc0f5925a5eed0d28b40"
+        },
+        {
+          "path": "/sources/dlut-wanghuanming-en-profile/retained_recovery_observation/excerpts/5/quote",
+          "sha256": "4e47ec927670bb96ab007a75ff1cf84822eaf4c5e996bc0f5925a5eed0d28b40"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/excerpts/0/quote",
+          "sha256": "71a1d06e84a080e8d84647ac4401f682df7137aa359f6671ba095793cfabd59e"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/excerpts/1/quote",
+          "sha256": "288e4417f714722968e4e5a34be536a1ed9f2e8d825542362b4cc596803dd1bd"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/excerpts/2/quote",
+          "sha256": "71d81d06d07e0072e6cac8e2713fb847c6bb329c6aea787905c62a4da6acfe58"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/excerpts/3/quote",
+          "sha256": "60845f6cf91a5af0eddac9af7be17e786c2c4193554c9955e5db1e4c1422d797"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/excerpts/4/quote",
+          "sha256": "6cc36ddd346f5f4a8c1543200e5fd740ae82bcc5ab0c8adb6ae88caf68ad6647"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/excerpts/5/quote",
+          "sha256": "9eef7a8061d52bd674b59fb16ba84d8b9992d67fc02e6e5dbca134a5784a262d"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/excerpts/6/quote",
+          "sha256": "df29bd4ce6599dc0bf83614b581004f6bc7b6adbd0f0778bc3c963a4f714091c"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/excerpts/7/quote",
+          "sha256": "11d5d3b9b88c19e72916f9e8668606d6e8caee73c5568746b1371f26a12f9781"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/retained_recovery_observation/excerpts/0/quote",
+          "sha256": "71a1d06e84a080e8d84647ac4401f682df7137aa359f6671ba095793cfabd59e"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/retained_recovery_observation/excerpts/1/quote",
+          "sha256": "288e4417f714722968e4e5a34be536a1ed9f2e8d825542362b4cc596803dd1bd"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/retained_recovery_observation/excerpts/2/quote",
+          "sha256": "71d81d06d07e0072e6cac8e2713fb847c6bb329c6aea787905c62a4da6acfe58"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/retained_recovery_observation/excerpts/3/quote",
+          "sha256": "60845f6cf91a5af0eddac9af7be17e786c2c4193554c9955e5db1e4c1422d797"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/retained_recovery_observation/excerpts/4/quote",
+          "sha256": "6cc36ddd346f5f4a8c1543200e5fd740ae82bcc5ab0c8adb6ae88caf68ad6647"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/retained_recovery_observation/excerpts/5/quote",
+          "sha256": "9eef7a8061d52bd674b59fb16ba84d8b9992d67fc02e6e5dbca134a5784a262d"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/retained_recovery_observation/excerpts/6/quote",
+          "sha256": "df29bd4ce6599dc0bf83614b581004f6bc7b6adbd0f0778bc3c963a4f714091c"
+        },
+        {
+          "path": "/sources/dlut-cuimiao-student-record/retained_recovery_observation/excerpts/7/quote",
+          "sha256": "11d5d3b9b88c19e72916f9e8668606d6e8caee73c5568746b1371f26a12f9781"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/0/quote",
+          "sha256": "2bc506df2534d6d15c405aef3fb1734fda3af42ec03ab8be25d059d8ba8abca2"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/1/quote",
+          "sha256": "8a32305659732e0db8326a37e9ddf0124297becd790d0a5f8188ef5038ffd337"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/2/quote",
+          "sha256": "9c3542563da89868b01d966d16efcf296e3af75a6645da4ed256691af7b0a03e"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/3/quote",
+          "sha256": "d5e198ea963d5e24ec6e6620f0b35428991b9d0941f91e81d7f27e48f13ff14f"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/4/quote",
+          "sha256": "0c821c88b6c85d376c1a5e87f0037112c44f6f28e367894999873e60285b6a57"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/5/quote",
+          "sha256": "8bf6c92c45fe8cd9c10fe011d3ca16cbd71b65e3474b9e15ccaafdfffe42b238"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/6/quote",
+          "sha256": "ebe142092e200d099e0f956fd3ac724bdf71d1452ef9ac85cf64f5452e0e473c"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/7/quote",
+          "sha256": "ef8071a0cbfb93086e400978e8127b18acc06538d4d556395b647885912e6b4b"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/8/quote",
+          "sha256": "8a83b3bdbe6fd223cb2cf1a33c8280d93ee8220dda6d026350a7126bc9bd44cc"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/9/quote",
+          "sha256": "589e30b2bc252891acbef97316521922e9cc057082dcfcaf3381f674b8ee58d4"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/10/quote",
+          "sha256": "32e02cee2800369f4a1d57b8d864fb325eedf284df97bd05f6260ff3355a9308"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-profile/professional_excerpts/11/quote",
+          "sha256": "d23d0e299262e1ba4b58cf23736707ad415f931310032f5122a9c31820b0e230"
+        },
+        {
+          "path": "/sources/dlut-intellectual-property-directory/professional_excerpts/0/quote",
+          "sha256": "d1c87879670b3e17b20dc53e2721c9ee9f26e93bed99cb516cf26779c50a34ef"
+        },
+        {
+          "path": "/sources/dlut-intellectual-property-directory/professional_excerpts/1/quote",
+          "sha256": "0b444859fc0bfb74397be8cf79084a507ec572906ff27b780651f6a5841825ac"
+        },
+        {
+          "path": "/sources/dlut-intellectual-property-directory/professional_excerpts/2/quote",
+          "sha256": "62d5b5e595b44b3aa2f73d5b498b4cf7c7760c479701fbb3e5a31311752f1048"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-research/professional_excerpts/0/quote",
+          "sha256": "2bc506df2534d6d15c405aef3fb1734fda3af42ec03ab8be25d059d8ba8abca2"
+        },
+        {
+          "path": "/sources/dlut-liulinlin-law-research/professional_excerpts/1/quote",
+          "sha256": "f57264f41363cab72d3ed7f7ae258d4f599f680a638a167a9e004120d1b3a82f"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-profile/professional_excerpts/0/quote",
+          "sha256": "1c5c7c9efc4b63f933753210a837d92acfac1e0761550013c861aeaf47d9bf9e"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-profile/professional_excerpts/1/quote",
+          "sha256": "541ef121f6c0a54d4cece014b7e218f39bb49feffa72528a54833a5a2f5da10c"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-profile/professional_excerpts/2/quote",
+          "sha256": "02a398f77bcd9ca6421041b498e99801792407f85b37aad7b697558249b3129d"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-profile/professional_excerpts/3/quote",
+          "sha256": "6176d08c5a95b9f7f7201bb5246cbd9867238e9966a1804e222cf91cb8cb449a"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-profile/professional_excerpts/4/quote",
+          "sha256": "232eac9ad5cac3066955705844a7991fc0386088d831e964db6cc062c165928b"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-profile/professional_excerpts/5/quote",
+          "sha256": "c992190bfd717ae172164c08acffd82d4b038b4e0908872877e35dd6ba07ba6b"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-profile/professional_excerpts/6/quote",
+          "sha256": "7b0404e6e1206d979536de828cd28e6332beac47737c5bd597bb7dbdbe0ce9fc"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-profile/professional_excerpts/7/quote",
+          "sha256": "8052a9a9ed3b972f349a21e288d1db64362af0d93e7ed3441345931c6872c796"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-profile/professional_excerpts/8/quote",
+          "sha256": "1dde7dd0c984daf11e09380135ac426eaf43b127b3aa10efb2049452b293b622"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-profile/professional_excerpts/9/quote",
+          "sha256": "99c1cb63114dc8f064ebce68c2f586f45568cec11cfc07cdf440478177d470eb"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-profile/professional_excerpts/10/quote",
+          "sha256": "f24272d4a5381de42f211f0c3a7b384576ddd8b9b055fee888f7536ef1907efa"
+        },
+        {
+          "path": "/sources/dlut-higher-education-directory/professional_excerpts/0/quote",
+          "sha256": "745425a096fbabdd2ed6ab980026ff10c27381ab317c477b2363436d669cccec"
+        },
+        {
+          "path": "/sources/dlut-higher-education-directory/professional_excerpts/1/quote",
+          "sha256": "d0b0b6d7a60a3549c59199bf247587c909a0dc87706bceaf465c71b78973450b"
+        },
+        {
+          "path": "/sources/dlut-suyongjian-mentor-news/professional_excerpts/0/quote",
+          "sha256": "91eeea2d57aaea7539b39cde445a9cc0a69b9316a0b8b3cb64e0b404d75fb976"
+        },
+        {
+          "path": "/sources/dlut-higher-education-masters-directory/professional_excerpts/0/quote",
+          "sha256": "56ef00d071f15779fd56ebc3da3e4167b5e3f562149f14d6ae24d3d569ee56bd"
+        },
+        {
+          "path": "/sources/dlut-higher-education-masters-directory/professional_excerpts/1/quote",
+          "sha256": "2499c1274a24c499ac3af41856f8e4243683915203b72d1fa304ea7ae113bfb7"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/0/quote",
+          "sha256": "86bad7f539bc130d44f2fde4a48e1736fb1b3bdae32916e55e6ed6d9bbfedff0"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/0/supplemental_student_record/field_provenance/name/quote",
+          "sha256": "71a1d06e84a080e8d84647ac4401f682df7137aa359f6671ba095793cfabd59e"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/0/supplemental_student_record/field_provenance/field/quote",
+          "sha256": "288e4417f714722968e4e5a34be536a1ed9f2e8d825542362b4cc596803dd1bd"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/0/supplemental_student_record/field_provenance/education_level/quote",
+          "sha256": "71d81d06d07e0072e6cac8e2713fb847c6bb329c6aea787905c62a4da6acfe58"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/0/supplemental_student_record/field_provenance/degree/quote",
+          "sha256": "60845f6cf91a5af0eddac9af7be17e786c2c4193554c9955e5db1e4c1422d797"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/0/supplemental_student_record/field_provenance/status/quote",
+          "sha256": "6cc36ddd346f5f4a8c1543200e5fd740ae82bcc5ab0c8adb6ae88caf68ad6647"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/0/supplemental_student_record/field_provenance/thesis_title/quote",
+          "sha256": "9eef7a8061d52bd674b59fb16ba84d8b9992d67fc02e6e5dbca134a5784a262d"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/0/supplemental_student_record/field_provenance/registration/quote",
+          "sha256": "df29bd4ce6599dc0bf83614b581004f6bc7b6adbd0f0778bc3c963a4f714091c"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/0/supplemental_student_record/field_provenance/graduation/quote",
+          "sha256": "11d5d3b9b88c19e72916f9e8668606d6e8caee73c5568746b1371f26a12f9781"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/1/quote",
+          "sha256": "252352f245c33160ec457101f822d957674fad11180260e2a908144638c417cd"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/2/quote",
+          "sha256": "d5c9d0563f2dfa9d2b12ae9dce50c6ff12651505271b36ec71bd83db1137c113"
+        },
+        {
+          "path": "/people/dlut-cuimiao/professional_training/0/quote",
+          "sha256": "9765d9edad863acfd0cd6ea6b49d26eb302798726d87550fc3978db6b61888f7"
+        },
+        {
+          "path": "/people/dlut-cuimiao/appointments/0/quote",
+          "sha256": "fe24e346b992874213486ea4f9ab05e255f972b4647964153c79fc44f44eb957"
+        },
+        {
+          "path": "/people/dlut-cuimiao/appointments/1/quote",
+          "sha256": "7bb3c167308e725bf0c0ee79970248e5a330b56fa8a19c0afa245261d116370b"
+        },
+        {
+          "path": "/people/dlut-cuimiao/research_directions/0/quote",
+          "sha256": "abc013d06e3f68fae77322d163b968e2d4a0ab254025ddb36f4291b713719392"
+        },
+        {
+          "path": "/people/dlut-cuimiao/publications/0/quote",
+          "sha256": "74a9c02a4ef0cc843fc40edf59f43aaa7d6f22f7ecccf7370e49db55f8650a15"
+        },
+        {
+          "path": "/people/dlut-cuimiao/publications/1/quote",
+          "sha256": "9204f989d79288379e2ca7b9932db5f83f51f806f9d38047efee0828b9af78bc"
+        },
+        {
+          "path": "/people/dlut-cuimiao/field_provenance/identity_and_title/quote",
+          "sha256": "43c514e1669d7dfa4a1f0d9494a2918f19dd40293b4a9a4e883fa293c127b5ab"
+        },
+        {
+          "path": "/people/dlut-cuimiao/field_provenance/department/quote",
+          "sha256": "caa29e6395a57312ddf53876d9ba38a78446f62548d99220cb4943c48f0c08e8"
+        },
+        {
+          "path": "/people/dlut-cuimiao/field_provenance/directory_affiliation/quote",
+          "sha256": "78b4025cc2ce172311e01b619eda9b91ec353d61fe2a04e960ec2f3919af29e0"
+        },
+        {
+          "path": "/people/dlut-cuimiao/field_provenance/discipline/quote",
+          "sha256": "6d184b4e51259f04470fc185b52ee23bb9f7ba165f5b3d41b99a707ca1b40e9c"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-education-1/quote",
+          "sha256": "86bad7f539bc130d44f2fde4a48e1736fb1b3bdae32916e55e6ed6d9bbfedff0"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-education-1/supplemental_student_record/field_provenance/name/quote",
+          "sha256": "71a1d06e84a080e8d84647ac4401f682df7137aa359f6671ba095793cfabd59e"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-education-1/supplemental_student_record/field_provenance/field/quote",
+          "sha256": "288e4417f714722968e4e5a34be536a1ed9f2e8d825542362b4cc596803dd1bd"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-education-1/supplemental_student_record/field_provenance/education_level/quote",
+          "sha256": "71d81d06d07e0072e6cac8e2713fb847c6bb329c6aea787905c62a4da6acfe58"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-education-1/supplemental_student_record/field_provenance/degree/quote",
+          "sha256": "60845f6cf91a5af0eddac9af7be17e786c2c4193554c9955e5db1e4c1422d797"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-education-1/supplemental_student_record/field_provenance/status/quote",
+          "sha256": "6cc36ddd346f5f4a8c1543200e5fd740ae82bcc5ab0c8adb6ae88caf68ad6647"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-education-1/supplemental_student_record/field_provenance/thesis_title/quote",
+          "sha256": "9eef7a8061d52bd674b59fb16ba84d8b9992d67fc02e6e5dbca134a5784a262d"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-education-1/supplemental_student_record/field_provenance/registration/quote",
+          "sha256": "df29bd4ce6599dc0bf83614b581004f6bc7b6adbd0f0778bc3c963a4f714091c"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-education-1/supplemental_student_record/field_provenance/graduation/quote",
+          "sha256": "11d5d3b9b88c19e72916f9e8668606d6e8caee73c5568746b1371f26a12f9781"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-education-2/quote",
+          "sha256": "252352f245c33160ec457101f822d957674fad11180260e2a908144638c417cd"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-education-3/quote",
+          "sha256": "d5c9d0563f2dfa9d2b12ae9dce50c6ff12651505271b36ec71bd83db1137c113"
+        },
+        {
+          "path": "/people/dlut-cuimiao/education/dlut-cuimiao-postdoc/quote",
+          "sha256": "9765d9edad863acfd0cd6ea6b49d26eb302798726d87550fc3978db6b61888f7"
+        },
+        {
+          "path": "/people/dlut-cuimiao/appointments/0/quote",
+          "sha256": "fe24e346b992874213486ea4f9ab05e255f972b4647964153c79fc44f44eb957"
+        },
+        {
+          "path": "/people/dlut-cuimiao/appointments/1/quote",
+          "sha256": "7bb3c167308e725bf0c0ee79970248e5a330b56fa8a19c0afa245261d116370b"
+        },
+        {
+          "path": "/people/dlut-cuimiao/publications/dlut-cuimiao-work-1/quote",
+          "sha256": "74a9c02a4ef0cc843fc40edf59f43aaa7d6f22f7ecccf7370e49db55f8650a15"
+        },
+        {
+          "path": "/people/dlut-cuimiao/publications/dlut-cuimiao-work-2/quote",
+          "sha256": "9204f989d79288379e2ca7b9932db5f83f51f806f9d38047efee0828b9af78bc"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/appointments/0/quote",
+          "sha256": "2d9193f4a7e13f9cec020f6293b0bba1c607494fc2badd5552cfc59c8225befb"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/appointments/1/quote",
+          "sha256": "2d9193f4a7e13f9cec020f6293b0bba1c607494fc2badd5552cfc59c8225befb"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/appointments/2/quote",
+          "sha256": "2d9193f4a7e13f9cec020f6293b0bba1c607494fc2badd5552cfc59c8225befb"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/research_directions/0/quote",
+          "sha256": "c79b2855283c645644b03f8060028527d92e8454d1091c033d20338b10d9e0fb"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/research_directions/1/quote",
+          "sha256": "a36ea7cbe9907bd6222335c912aff0fc79f01e62066225955d41890aea24f1dd"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/research_directions/2/quote",
+          "sha256": "30b26765b31face499160d76e6b8f38458570490b487644da440769a4d897228"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/teaching/0/quote",
+          "sha256": "4934c5568f6907509717c2184a9f0f18b9dc92fe2278b8726b24e6bbbcdc1a81"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/publications/0/quote",
+          "sha256": "b53b55e5bdfced6b15a64add1d9504e617ca870b8855f3b5b35af9b2ccf72981"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/publications/1/quote",
+          "sha256": "32bdfad69213a4c231fe9129a0ed5d596574166e80f3f8a362694a4723e5ae9e"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/field_provenance/identity_and_title/quote",
+          "sha256": "a4d5d6c61cbfee6efe5f55aba84f7c5d8529eb2a310d0430d1cbd7425ec46983"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/field_provenance/department/quote",
+          "sha256": "dc14a597448842678dc613839e50e2f7b1a0a61436faee571287e7a515bc7acc"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/field_provenance/directory_affiliation/quote",
+          "sha256": "e578d4ac3aad0b251f34c4e5d21857f61c68549d6c0ab0f3cd91bf4dce24830e"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/field_provenance/discipline/quote",
+          "sha256": "c461fe177e70fc4cc2213c191bf3e66a9a9c2935b702232dc0124ea9d2b4b046"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/field_provenance/empty_education_and_work_sections/quote",
+          "sha256": "5e3a2d7cbb1964ceeb0526cc91f4238625c7a30f476d080565b3ac9879b330e8"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/field_provenance/english_education_section/quote",
+          "sha256": "4e47ec927670bb96ab007a75ff1cf84822eaf4c5e996bc0f5925a5eed0d28b40"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/qualification_labels/quote",
+          "sha256": "e137b522b2d1b581c1374ba8671a8df6cb16b27d76ba648643bd31711b6e6498"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/qualification_labels/supplemental_alma_mater_evidence/quote",
+          "sha256": "903c7fe346f43e02d2b0b73f7cc4e3b2da86067731990b568648fdc202cc999b"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/historical_affiliation_statement/quote",
+          "sha256": "2d9193f4a7e13f9cec020f6293b0bba1c607494fc2badd5552cfc59c8225befb"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/appointments/0/quote",
+          "sha256": "2d9193f4a7e13f9cec020f6293b0bba1c607494fc2badd5552cfc59c8225befb"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/appointments/1/quote",
+          "sha256": "2d9193f4a7e13f9cec020f6293b0bba1c607494fc2badd5552cfc59c8225befb"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/appointments/2/quote",
+          "sha256": "2d9193f4a7e13f9cec020f6293b0bba1c607494fc2badd5552cfc59c8225befb"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/publications/dlut-wanghuanming-work-1/quote",
+          "sha256": "b53b55e5bdfced6b15a64add1d9504e617ca870b8855f3b5b35af9b2ccf72981"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/publications/dlut-wanghuanming-work-2/quote",
+          "sha256": "32bdfad69213a4c231fe9129a0ed5d596574166e80f3f8a362694a4723e5ae9e"
+        },
+        {
+          "path": "/people/dlut-wanghuanming/teaching/quote",
+          "sha256": "4934c5568f6907509717c2184a9f0f18b9dc92fe2278b8726b24e6bbbcdc1a81"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/education/0/quote",
+          "sha256": "0c821c88b6c85d376c1a5e87f0037112c44f6f28e367894999873e60285b6a57"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/education/1/quote",
+          "sha256": "8bf6c92c45fe8cd9c10fe011d3ca16cbd71b65e3474b9e15ccaafdfffe42b238"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/education/2/quote",
+          "sha256": "ebe142092e200d099e0f956fd3ac724bdf71d1452ef9ac85cf64f5452e0e473c"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/appointments/0/quote",
+          "sha256": "ef8071a0cbfb93086e400978e8127b18acc06538d4d556395b647885912e6b4b"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/appointments/1/quote",
+          "sha256": "8a83b3bdbe6fd223cb2cf1a33c8280d93ee8220dda6d026350a7126bc9bd44cc"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/appointments/2/quote",
+          "sha256": "589e30b2bc252891acbef97316521922e9cc057082dcfcaf3381f674b8ee58d4"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/appointments/3/quote",
+          "sha256": "32e02cee2800369f4a1d57b8d864fb325eedf284df97bd05f6260ff3355a9308"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/research_directions/0/quote",
+          "sha256": "d23d0e299262e1ba4b58cf23736707ad415f931310032f5122a9c31820b0e230"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/identity_evidence/0/quote",
+          "sha256": "2bc506df2534d6d15c405aef3fb1734fda3af42ec03ab8be25d059d8ba8abca2"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/identity_evidence/1/quote",
+          "sha256": "9c3542563da89868b01d966d16efcf296e3af75a6645da4ed256691af7b0a03e"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/identity_evidence/2/quote",
+          "sha256": "0b444859fc0bfb74397be8cf79084a507ec572906ff27b780651f6a5841825ac"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/education/dlut-liulinlin-law-education-1/quote",
+          "sha256": "0c821c88b6c85d376c1a5e87f0037112c44f6f28e367894999873e60285b6a57"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/education/dlut-liulinlin-law-education-2/quote",
+          "sha256": "8bf6c92c45fe8cd9c10fe011d3ca16cbd71b65e3474b9e15ccaafdfffe42b238"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/education/dlut-liulinlin-law-education-3/quote",
+          "sha256": "ebe142092e200d099e0f956fd3ac724bdf71d1452ef9ac85cf64f5452e0e473c"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/appointments/0/quote",
+          "sha256": "ef8071a0cbfb93086e400978e8127b18acc06538d4d556395b647885912e6b4b"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/appointments/1/quote",
+          "sha256": "8a83b3bdbe6fd223cb2cf1a33c8280d93ee8220dda6d026350a7126bc9bd44cc"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/appointments/2/quote",
+          "sha256": "589e30b2bc252891acbef97316521922e9cc057082dcfcaf3381f674b8ee58d4"
+        },
+        {
+          "path": "/people/dlut-liulinlin-law/appointments/3/quote",
+          "sha256": "32e02cee2800369f4a1d57b8d864fb325eedf284df97bd05f6260ff3355a9308"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/education/0/quote",
+          "sha256": "8052a9a9ed3b972f349a21e288d1db64362af0d93e7ed3441345931c6872c796"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/education/1/quote",
+          "sha256": "7b0404e6e1206d979536de828cd28e6332beac47737c5bd597bb7dbdbe0ce9fc"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/education/2/quote",
+          "sha256": "c992190bfd717ae172164c08acffd82d4b038b4e0908872877e35dd6ba07ba6b"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/mentor_relations/0/quote",
+          "sha256": "91eeea2d57aaea7539b39cde445a9cc0a69b9316a0b8b3cb64e0b404d75fb976"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/appointments/0/quote",
+          "sha256": "232eac9ad5cac3066955705844a7991fc0386088d831e964db6cc062c165928b"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/appointments/1/quote",
+          "sha256": "6176d08c5a95b9f7f7201bb5246cbd9867238e9966a1804e222cf91cb8cb449a"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/research_directions/0/quote",
+          "sha256": "1dde7dd0c984daf11e09380135ac426eaf43b127b3aa10efb2049452b293b622"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/research_directions/1/quote",
+          "sha256": "1dde7dd0c984daf11e09380135ac426eaf43b127b3aa10efb2049452b293b622"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/research_directions/2/quote",
+          "sha256": "1dde7dd0c984daf11e09380135ac426eaf43b127b3aa10efb2049452b293b622"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/research_directions/3/quote",
+          "sha256": "1dde7dd0c984daf11e09380135ac426eaf43b127b3aa10efb2049452b293b622"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/publications/0/quote",
+          "sha256": "99c1cb63114dc8f064ebce68c2f586f45568cec11cfc07cdf440478177d470eb"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/publications/1/quote",
+          "sha256": "f24272d4a5381de42f211f0c3a7b384576ddd8b9b055fee888f7536ef1907efa"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/identity_evidence/0/quote",
+          "sha256": "1c5c7c9efc4b63f933753210a837d92acfac1e0761550013c861aeaf47d9bf9e"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/identity_evidence/1/quote",
+          "sha256": "02a398f77bcd9ca6421041b498e99801792407f85b37aad7b697558249b3129d"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/identity_evidence/2/quote",
+          "sha256": "d0b0b6d7a60a3549c59199bf247587c909a0dc87706bceaf465c71b78973450b"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/education/dlut-suyongjian-education-1/quote",
+          "sha256": "8052a9a9ed3b972f349a21e288d1db64362af0d93e7ed3441345931c6872c796"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/education/dlut-suyongjian-education-2/quote",
+          "sha256": "7b0404e6e1206d979536de828cd28e6332beac47737c5bd597bb7dbdbe0ce9fc"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/education/dlut-suyongjian-education-3/quote",
+          "sha256": "c992190bfd717ae172164c08acffd82d4b038b4e0908872877e35dd6ba07ba6b"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/mentors/quote",
+          "sha256": "91eeea2d57aaea7539b39cde445a9cc0a69b9316a0b8b3cb64e0b404d75fb976"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/appointments/0/quote",
+          "sha256": "232eac9ad5cac3066955705844a7991fc0386088d831e964db6cc062c165928b"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/appointments/1/quote",
+          "sha256": "6176d08c5a95b9f7f7201bb5246cbd9867238e9966a1804e222cf91cb8cb449a"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/publications/dlut-suyongjian-work-1/quote",
+          "sha256": "99c1cb63114dc8f064ebce68c2f586f45568cec11cfc07cdf440478177d470eb"
+        },
+        {
+          "path": "/people/dlut-suyongjian-education/publications/dlut-suyongjian-work-2/quote",
+          "sha256": "f24272d4a5381de42f211f0c3a7b384576ddd8b9b055fee888f7536ef1907efa"
+        },
+        {
+          "path": "/org_units/dlut-intellectual-property/quote",
+          "sha256": "9c3542563da89868b01d966d16efcf296e3af75a6645da4ed256691af7b0a03e"
+        },
+        {
+          "path": "/org_units/dlut-higher-education/quote",
+          "sha256": "02a398f77bcd9ca6421041b498e99801792407f85b37aad7b697558249b3129d"
+        }
+      ],
+      "mapping": "原事实与必要职业摘录保留；source_event_kind保存原分类，true规范degree；工具定位只private trace。王0教育不补；苏师承stage原null与event null保持；教学层级与负责人角色进入既有可见note。",
+      "semantic_locator_revision": {
+        "path": "/people/0/education/3/source_locator",
+        "before": "教育经历／2011.03 2013.03 大连理工大学 Postdoctor",
+        "after": "工作经历／2011.03 2013.03 大连理工大学 Postdoctor",
+        "reason": "原博士后片段位于工作经历栏目，仅更正语义定位前缀；原事实、日期和引文指纹不变。"
+      }
+    },
+    {
+      "baseline_people": 701,
+      "baseline_data_sha256": "99870062ab418afa236b492dd427d98fbe4f1e9e707c28f8889e9d93c311a03d",
+      "people": [
+        {
+          "person_id": "dlut-zhangwei1",
+          "source_candidate_sha256": "9f17bd140df519e782c9b1db33db3007a748a4457efe412255c7cdb5fc0bef9b",
+          "source_evidence_sha256": "f051bd9a257ac74e9c8eacbb23402f5b626cc881db1a256d34eb4697c5b94c9d",
+          "source_review_sha256": "56642c18ba4a87289759f77862daea585f489202662ac150f072e8cf6a808222",
+          "education": 4,
+          "degree_true_false_null": [
+            0,
+            1,
+            3
+          ],
+          "mentors": 0,
+          "appointments": 2,
+          "publications": 2,
+          "teaching_groups": 0,
+          "source_urls": [
+            "https://faculty.dlut.edu.cn/zhangwei1/zh_CN/index/1143981/list/index.htm",
+            "https://fhss.dlut.edu.cn/szdw/szdw.htm",
+            "https://faculty.dlut.edu.cn/zhangwei1/zh_CN/index.htm"
+          ]
+        },
+        {
+          "person_id": "dlut-zhouwenjie-art",
+          "source_candidate_sha256": "770dbc2026d7bdd23696a93e3c369aed4407bf53c1d33b6794aaa8dab811f359",
+          "source_evidence_sha256": "4144291c5555b81da3c2e38ee9c65d3a134d01c429edaa47b8f1e480f4690a17",
+          "source_review_sha256": "2551d27d48aa5bd2841de0da37544579fd5ad70058bd00a3dc20b4c24aac9409",
+          "education": 2,
+          "degree_true_false_null": [
+            0,
+            0,
+            2
+          ],
+          "mentors": 0,
+          "appointments": 5,
+          "publications": 0,
+          "teaching_groups": 0,
+          "source_urls": [
+            "https://faculty.dlut.edu.cn/1996011016/zh_CN/index.htm",
+            "https://fhss.dlut.edu.cn/szdw/rxjs.htm"
+          ]
+        },
+        {
+          "person_id": "dlut-lichong-higher-education",
+          "source_candidate_sha256": "da9fd6eaa05ce5da76933a4d444f4e022da97ad7a991041327a5ce3ab4d1198c",
+          "source_evidence_sha256": "caa54d318543f91aa6d39d2dde0abea305674acbe985b3ee34d3f32670ce7630",
+          "source_review_sha256": "574541dfe83c3639ce241ba2f2fb1c598bb5a807b3c50111a51ddea6d5466972",
+          "education": 5,
+          "degree_true_false_null": [
+            3,
+            2,
+            0
+          ],
+          "mentors": 0,
+          "appointments": 8,
+          "publications": 2,
+          "teaching_groups": 0,
+          "source_urls": [
+            "https://gdjyyjzx.dlut.edu.cn/info/1038/1378.htm",
+            "https://gdjyyjzx.dlut.edu.cn/szdw/jgml1.htm"
+          ]
+        },
+        {
+          "person_id": "dlut-mahui",
+          "source_candidate_sha256": "db0bfb60994a4fce0671ed25eaa727f4793a89e34a4a3e57b961dbbe4a822a17",
+          "source_evidence_sha256": "0916e593de6df40d9b10a90215dece86c767465735b1c9aa59a707d40de50c57",
+          "source_review_sha256": "a59c5c48280d97827fe7d7ef1b81f135562fdc67fca8f800bb404e3e14fbfae7",
+          "education": 3,
+          "degree_true_false_null": [
+            0,
+            0,
+            3
+          ],
+          "mentors": 0,
+          "appointments": 2,
+          "publications": 0,
+          "teaching_groups": 0,
+          "source_urls": [
+            "https://faculty.dlut.edu.cn/mahui/"
+          ]
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/0/quote",
+          "sha256": "84d9570a52a6590e670ecd8484b760fa206c773911d866627a8efb6b9f8249f9"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/1/quote",
+          "sha256": "141cc4c3fcec83ab7019bffce89fa2aa70b8af235a45356cc37aa2ab6fcea4fd"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/2/quote",
+          "sha256": "1b4e645ff33d4e045cf305d71cc7dc046b5e42b9f6946328db3464a2cac6e3ff"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/2/joint_training/quote",
+          "sha256": "e76e3b0b9e8d995c574bb045aeb0660aeb70327078d8d65dbcbd707e1fdf77e6"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/3/quote",
+          "sha256": "ab6e10df59763637471841f88a3dde59f2c9a05bb26457c182f77622ce78b5db"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/3/additional_source_statement/quote",
+          "sha256": "e76e3b0b9e8d995c574bb045aeb0660aeb70327078d8d65dbcbd707e1fdf77e6"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/appointments/0/quote",
+          "sha256": "997a7f46ba1a595dc9081e1c4dd509bb884181842516b95ea66624edbbbdf90c"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/appointments/1/quote",
+          "sha256": "a1de09e9b8c001db8f9d1406af589ada72a13bfa2c6b5bf64269f02d8309ae42"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/research_directions/0/quote",
+          "sha256": "e76e3b0b9e8d995c574bb045aeb0660aeb70327078d8d65dbcbd707e1fdf77e6"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/publications/0/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/publications/1/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/field_provenance/name_title/quote",
+          "sha256": "d8fe01213c7a63279a840887f857a637fdb054a0b35f3a7b93def8a1c2f9731a"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/field_provenance/profile_affiliation/quote",
+          "sha256": "468db44e0c25878a067dd2496b9557f73de4e8b97ad0c8192afbbb93777dad95"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/field_provenance/narrative_department/quote",
+          "sha256": "e76e3b0b9e8d995c574bb045aeb0660aeb70327078d8d65dbcbd707e1fdf77e6"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/field_provenance/directory_person/quote",
+          "sha256": "3abda68561d5fe48c1a84850f4988549a49c95476cdbc59e7b9d70f8d55da044"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "d8fe01213c7a63279a840887f857a637fdb054a0b35f3a7b93def8a1c2f9731a"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "468db44e0c25878a067dd2496b9557f73de4e8b97ad0c8192afbbb93777dad95"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "e76e3b0b9e8d995c574bb045aeb0660aeb70327078d8d65dbcbd707e1fdf77e6"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "84d9570a52a6590e670ecd8484b760fa206c773911d866627a8efb6b9f8249f9"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "141cc4c3fcec83ab7019bffce89fa2aa70b8af235a45356cc37aa2ab6fcea4fd"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "1b4e645ff33d4e045cf305d71cc7dc046b5e42b9f6946328db3464a2cac6e3ff"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "997a7f46ba1a595dc9081e1c4dd509bb884181842516b95ea66624edbbbdf90c"
+        },
+        {
+          "json_pointer": "/excerpts/8/quote",
+          "sha256": "ab6e10df59763637471841f88a3dde59f2c9a05bb26457c182f77622ce78b5db"
+        },
+        {
+          "json_pointer": "/excerpts/9/quote",
+          "sha256": "a1de09e9b8c001db8f9d1406af589ada72a13bfa2c6b5bf64269f02d8309ae42"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "3abda68561d5fe48c1a84850f4988549a49c95476cdbc59e7b9d70f8d55da044"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "3c13a58d59e25c7a1fe12a93f29e5a4ac1a5b6d0fa750f6c0382d27192ed10d8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "84d9570a52a6590e670ecd8484b760fa206c773911d866627a8efb6b9f8249f9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "84d9570a52a6590e670ecd8484b760fa206c773911d866627a8efb6b9f8249f9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "84d9570a52a6590e670ecd8484b760fa206c773911d866627a8efb6b9f8249f9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "84d9570a52a6590e670ecd8484b760fa206c773911d866627a8efb6b9f8249f9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "141cc4c3fcec83ab7019bffce89fa2aa70b8af235a45356cc37aa2ab6fcea4fd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "141cc4c3fcec83ab7019bffce89fa2aa70b8af235a45356cc37aa2ab6fcea4fd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "141cc4c3fcec83ab7019bffce89fa2aa70b8af235a45356cc37aa2ab6fcea4fd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "141cc4c3fcec83ab7019bffce89fa2aa70b8af235a45356cc37aa2ab6fcea4fd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1b4e645ff33d4e045cf305d71cc7dc046b5e42b9f6946328db3464a2cac6e3ff"
+        },
+        {
+          "json_pointer": "/joint_training/quote",
+          "sha256": "e76e3b0b9e8d995c574bb045aeb0660aeb70327078d8d65dbcbd707e1fdf77e6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1b4e645ff33d4e045cf305d71cc7dc046b5e42b9f6946328db3464a2cac6e3ff"
+        },
+        {
+          "json_pointer": "/joint_training/quote",
+          "sha256": "e76e3b0b9e8d995c574bb045aeb0660aeb70327078d8d65dbcbd707e1fdf77e6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1b4e645ff33d4e045cf305d71cc7dc046b5e42b9f6946328db3464a2cac6e3ff"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1b4e645ff33d4e045cf305d71cc7dc046b5e42b9f6946328db3464a2cac6e3ff"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ab6e10df59763637471841f88a3dde59f2c9a05bb26457c182f77622ce78b5db"
+        },
+        {
+          "json_pointer": "/additional_source_statement/quote",
+          "sha256": "e76e3b0b9e8d995c574bb045aeb0660aeb70327078d8d65dbcbd707e1fdf77e6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ab6e10df59763637471841f88a3dde59f2c9a05bb26457c182f77622ce78b5db"
+        },
+        {
+          "json_pointer": "/additional_source_statement/quote",
+          "sha256": "e76e3b0b9e8d995c574bb045aeb0660aeb70327078d8d65dbcbd707e1fdf77e6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ab6e10df59763637471841f88a3dde59f2c9a05bb26457c182f77622ce78b5db"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ab6e10df59763637471841f88a3dde59f2c9a05bb26457c182f77622ce78b5db"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "997a7f46ba1a595dc9081e1c4dd509bb884181842516b95ea66624edbbbdf90c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "997a7f46ba1a595dc9081e1c4dd509bb884181842516b95ea66624edbbbdf90c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "997a7f46ba1a595dc9081e1c4dd509bb884181842516b95ea66624edbbbdf90c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "997a7f46ba1a595dc9081e1c4dd509bb884181842516b95ea66624edbbbdf90c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a1de09e9b8c001db8f9d1406af589ada72a13bfa2c6b5bf64269f02d8309ae42"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a1de09e9b8c001db8f9d1406af589ada72a13bfa2c6b5bf64269f02d8309ae42"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a1de09e9b8c001db8f9d1406af589ada72a13bfa2c6b5bf64269f02d8309ae42"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a1de09e9b8c001db8f9d1406af589ada72a13bfa2c6b5bf64269f02d8309ae42"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8b7ebc6cd47084d352896d2ab9c03559d0add1f4f091bcb54170f77abe6f164f"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/education/0/quote",
+          "sha256": "89bad5e6a80c28c9209ea8531379e58998d95c581a60f46d57660bcd16be3f26"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/education/1/quote",
+          "sha256": "5289014f3af88409051f379079a7fc8054e31d85979045d96babe3c0bc943370"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/appointments/0/quote",
+          "sha256": "ab847a166b8c397075fe916470c1542695804427058d57efcc2b665dd41c93e8"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/appointments/1/quote",
+          "sha256": "65c97c9c3fd0726e6888d119b14dd07d488fe0cfbed0b101dd9cba74ea3ba627"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/appointments/2/quote",
+          "sha256": "630fdee7a012a1ee285bc737a1b5c8003e83a5816876590ba2aa0c0a89348bd3"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/appointments/3/quote",
+          "sha256": "0ec2b337bef65189118a01715ad0fbb17c99b5d0f215f12b8af1d2c17c3039fe"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/appointments/4/quote",
+          "sha256": "0f4e80818e960c2396e1ac25bfb3bdc0305a668dc6f86347162ce88b41486bf4"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/identity_evidence/0/quote",
+          "sha256": "77f8286d1d74897e45c7fc064221cb3588b4714b5fe2d96902b2d0b92a377a43"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/identity_evidence/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/identity_evidence/2/quote",
+          "sha256": "780055e1854074861c564e25726d107678caeef443634aa1b97dc578665acf1e"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/identity_evidence/3/quote",
+          "sha256": "78452ba5b03a9a6832b9fdbd2f1cc4ae9833d6a7b9341d3144b95c802a6f6cd3"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/advisor_qualification_not_own_mentor/quote",
+          "sha256": "957ca7bc2cda98999669cc93a0c7972e691ef7e5362c76dc22d7ecdfd1073f22"
+        },
+        {
+          "json_pointer": "/people/dlut-zhouwenjie-art/retirement_evidence/quote",
+          "sha256": "78452ba5b03a9a6832b9fdbd2f1cc4ae9833d6a7b9341d3144b95c802a6f6cd3"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "77f8286d1d74897e45c7fc064221cb3588b4714b5fe2d96902b2d0b92a377a43"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "957ca7bc2cda98999669cc93a0c7972e691ef7e5362c76dc22d7ecdfd1073f22"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "780055e1854074861c564e25726d107678caeef443634aa1b97dc578665acf1e"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "5289014f3af88409051f379079a7fc8054e31d85979045d96babe3c0bc943370"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "89bad5e6a80c28c9209ea8531379e58998d95c581a60f46d57660bcd16be3f26"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "ab847a166b8c397075fe916470c1542695804427058d57efcc2b665dd41c93e8"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "65c97c9c3fd0726e6888d119b14dd07d488fe0cfbed0b101dd9cba74ea3ba627"
+        },
+        {
+          "json_pointer": "/professional_excerpts/8/quote",
+          "sha256": "630fdee7a012a1ee285bc737a1b5c8003e83a5816876590ba2aa0c0a89348bd3"
+        },
+        {
+          "json_pointer": "/professional_excerpts/9/quote",
+          "sha256": "0ec2b337bef65189118a01715ad0fbb17c99b5d0f215f12b8af1d2c17c3039fe"
+        },
+        {
+          "json_pointer": "/professional_excerpts/10/quote",
+          "sha256": "0f4e80818e960c2396e1ac25bfb3bdc0305a668dc6f86347162ce88b41486bf4"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "78452ba5b03a9a6832b9fdbd2f1cc4ae9833d6a7b9341d3144b95c802a6f6cd3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "89bad5e6a80c28c9209ea8531379e58998d95c581a60f46d57660bcd16be3f26"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "89bad5e6a80c28c9209ea8531379e58998d95c581a60f46d57660bcd16be3f26"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "89bad5e6a80c28c9209ea8531379e58998d95c581a60f46d57660bcd16be3f26"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "89bad5e6a80c28c9209ea8531379e58998d95c581a60f46d57660bcd16be3f26"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5289014f3af88409051f379079a7fc8054e31d85979045d96babe3c0bc943370"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5289014f3af88409051f379079a7fc8054e31d85979045d96babe3c0bc943370"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5289014f3af88409051f379079a7fc8054e31d85979045d96babe3c0bc943370"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5289014f3af88409051f379079a7fc8054e31d85979045d96babe3c0bc943370"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ab847a166b8c397075fe916470c1542695804427058d57efcc2b665dd41c93e8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ab847a166b8c397075fe916470c1542695804427058d57efcc2b665dd41c93e8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ab847a166b8c397075fe916470c1542695804427058d57efcc2b665dd41c93e8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ab847a166b8c397075fe916470c1542695804427058d57efcc2b665dd41c93e8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "65c97c9c3fd0726e6888d119b14dd07d488fe0cfbed0b101dd9cba74ea3ba627"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "65c97c9c3fd0726e6888d119b14dd07d488fe0cfbed0b101dd9cba74ea3ba627"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "65c97c9c3fd0726e6888d119b14dd07d488fe0cfbed0b101dd9cba74ea3ba627"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "65c97c9c3fd0726e6888d119b14dd07d488fe0cfbed0b101dd9cba74ea3ba627"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "630fdee7a012a1ee285bc737a1b5c8003e83a5816876590ba2aa0c0a89348bd3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "630fdee7a012a1ee285bc737a1b5c8003e83a5816876590ba2aa0c0a89348bd3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "630fdee7a012a1ee285bc737a1b5c8003e83a5816876590ba2aa0c0a89348bd3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "630fdee7a012a1ee285bc737a1b5c8003e83a5816876590ba2aa0c0a89348bd3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0ec2b337bef65189118a01715ad0fbb17c99b5d0f215f12b8af1d2c17c3039fe"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0ec2b337bef65189118a01715ad0fbb17c99b5d0f215f12b8af1d2c17c3039fe"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0ec2b337bef65189118a01715ad0fbb17c99b5d0f215f12b8af1d2c17c3039fe"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0ec2b337bef65189118a01715ad0fbb17c99b5d0f215f12b8af1d2c17c3039fe"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f4e80818e960c2396e1ac25bfb3bdc0305a668dc6f86347162ce88b41486bf4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f4e80818e960c2396e1ac25bfb3bdc0305a668dc6f86347162ce88b41486bf4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f4e80818e960c2396e1ac25bfb3bdc0305a668dc6f86347162ce88b41486bf4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f4e80818e960c2396e1ac25bfb3bdc0305a668dc6f86347162ce88b41486bf4"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/identity_evidence/0/quote",
+          "sha256": "f90e49a9756d11bb8876e77ed957a6a1f2e573e9518044f10919cff23abb1191"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/identity_evidence/1/quote",
+          "sha256": "488c9fb12910ad02a3beac4874ef72d65e3f28043e5c3e6b272b0bdcf76d886a"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/identity_evidence/2/quote",
+          "sha256": "bb1e9a194cb9d2a27f33474600090aff46e198d7592e6370b866a3680edf9419"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/identity_evidence/3/quote",
+          "sha256": "f90e49a9756d11bb8876e77ed957a6a1f2e573e9518044f10919cff23abb1191"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/0/evidence/0/quote",
+          "sha256": "36f707399182b3120d372d25700941b5c9459677da51ef054b3b228b96176308"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/1/evidence/0/quote",
+          "sha256": "8f2ddb5048f31a86e14e6f79c60b97d70e8133844da3bbad53c4b65d6909ca68"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/2/evidence/0/quote",
+          "sha256": "18f820b8a7bc2a42e06c175b99b47530dd111cc741c30d0053d1d0b99ace3ae3"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/nondegree_training/0/evidence/0/quote",
+          "sha256": "b79dbd0d43ceda27531600f7f3192408bca062126bc4f979f32ce48b36d2ff2e"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/nondegree_training/1/evidence/0/quote",
+          "sha256": "db9831598a9cbf4e9850959280427912add77f8d7e05f32f2a0bae41cd02cef2"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/0/evidence/0/quote",
+          "sha256": "bb1e9a194cb9d2a27f33474600090aff46e198d7592e6370b866a3680edf9419"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/1/evidence/0/quote",
+          "sha256": "9c1f7dd6ac72ca73a85dc29a7dc29acf07b8ec62718e07c241cf663e7ea7f2a4"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/2/evidence/0/quote",
+          "sha256": "326201375ab09650766cc6181a40adac263ea0cc6754be569c53a5dfc452863b"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/3/evidence/0/quote",
+          "sha256": "a3c8515af3ad2b0ec171ddb0ca4b68a8e9a4887322a124f5dadb733859b26ce2"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/4/evidence/0/quote",
+          "sha256": "27f0fb273dcc3bd2f6dd861db858fd24d33c00a478b0550a9fe8eb80aba6c5c8"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/5/evidence/0/quote",
+          "sha256": "eb7c731db738358dda62d7464c419d8e987c43231186bdff4730ef5b187d3d92"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/6/evidence/0/quote",
+          "sha256": "0510938459685930756129b0511f6abdab7fcd088991af60081c31781596e6cc"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/7/evidence/0/quote",
+          "sha256": "73da4d7c653f5608385be54ffb7985ccd9c3eb55d231c57e4ec98f7dd5d72ad3"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/publications/0/evidence/0/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/publications/1/evidence/0/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/research_directions/0/quote",
+          "sha256": "a17ab32259eca215666514c7db91aab19fc9a96f0ccd1a9030291466b9fa83a5"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/research_directions/1/quote",
+          "sha256": "b5031bd31e8ae6da8eb8da3f314bc14d7ce5457b3a76323eedd6e30a527c0f02"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/research_directions/2/quote",
+          "sha256": "e47bd744f4775c1dd3826e120c4e824da31dd51febc9db9aaaf09b2e0ac01bfd"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "f90e49a9756d11bb8876e77ed957a6a1f2e573e9518044f10919cff23abb1191"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "488c9fb12910ad02a3beac4874ef72d65e3f28043e5c3e6b272b0bdcf76d886a"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "4029bc106bfe78b4581ee7ca575978b3c6aad1736f5e63543168eb7e39e2ac5a"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "bb1e9a194cb9d2a27f33474600090aff46e198d7592e6370b866a3680edf9419"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "9c1f7dd6ac72ca73a85dc29a7dc29acf07b8ec62718e07c241cf663e7ea7f2a4"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "326201375ab09650766cc6181a40adac263ea0cc6754be569c53a5dfc452863b"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "a3c8515af3ad2b0ec171ddb0ca4b68a8e9a4887322a124f5dadb733859b26ce2"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "27f0fb273dcc3bd2f6dd861db858fd24d33c00a478b0550a9fe8eb80aba6c5c8"
+        },
+        {
+          "json_pointer": "/excerpts/8/quote",
+          "sha256": "eb7c731db738358dda62d7464c419d8e987c43231186bdff4730ef5b187d3d92"
+        },
+        {
+          "json_pointer": "/excerpts/9/quote",
+          "sha256": "0510938459685930756129b0511f6abdab7fcd088991af60081c31781596e6cc"
+        },
+        {
+          "json_pointer": "/excerpts/10/quote",
+          "sha256": "73da4d7c653f5608385be54ffb7985ccd9c3eb55d231c57e4ec98f7dd5d72ad3"
+        },
+        {
+          "json_pointer": "/excerpts/11/quote",
+          "sha256": "b79dbd0d43ceda27531600f7f3192408bca062126bc4f979f32ce48b36d2ff2e"
+        },
+        {
+          "json_pointer": "/excerpts/12/quote",
+          "sha256": "db9831598a9cbf4e9850959280427912add77f8d7e05f32f2a0bae41cd02cef2"
+        },
+        {
+          "json_pointer": "/excerpts/13/quote",
+          "sha256": "18f820b8a7bc2a42e06c175b99b47530dd111cc741c30d0053d1d0b99ace3ae3"
+        },
+        {
+          "json_pointer": "/excerpts/14/quote",
+          "sha256": "8f2ddb5048f31a86e14e6f79c60b97d70e8133844da3bbad53c4b65d6909ca68"
+        },
+        {
+          "json_pointer": "/excerpts/15/quote",
+          "sha256": "36f707399182b3120d372d25700941b5c9459677da51ef054b3b228b96176308"
+        },
+        {
+          "json_pointer": "/excerpts/16/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/excerpts/17/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/excerpts/18/quote",
+          "sha256": "a17ab32259eca215666514c7db91aab19fc9a96f0ccd1a9030291466b9fa83a5"
+        },
+        {
+          "json_pointer": "/excerpts/19/quote",
+          "sha256": "b5031bd31e8ae6da8eb8da3f314bc14d7ce5457b3a76323eedd6e30a527c0f02"
+        },
+        {
+          "json_pointer": "/excerpts/20/quote",
+          "sha256": "e47bd744f4775c1dd3826e120c4e824da31dd51febc9db9aaaf09b2e0ac01bfd"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "f90e49a9756d11bb8876e77ed957a6a1f2e573e9518044f10919cff23abb1191"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "a5deb72ab25bad763b20a22e5c3b8faa08b71ffc30950a8ff82d1b929cdc1567"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "745425a096fbabdd2ed6ab980026ff10c27381ab317c477b2363436d669cccec"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "36f707399182b3120d372d25700941b5c9459677da51ef054b3b228b96176308"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "36f707399182b3120d372d25700941b5c9459677da51ef054b3b228b96176308"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "36f707399182b3120d372d25700941b5c9459677da51ef054b3b228b96176308"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "36f707399182b3120d372d25700941b5c9459677da51ef054b3b228b96176308"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "8f2ddb5048f31a86e14e6f79c60b97d70e8133844da3bbad53c4b65d6909ca68"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8f2ddb5048f31a86e14e6f79c60b97d70e8133844da3bbad53c4b65d6909ca68"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8f2ddb5048f31a86e14e6f79c60b97d70e8133844da3bbad53c4b65d6909ca68"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8f2ddb5048f31a86e14e6f79c60b97d70e8133844da3bbad53c4b65d6909ca68"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "18f820b8a7bc2a42e06c175b99b47530dd111cc741c30d0053d1d0b99ace3ae3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "18f820b8a7bc2a42e06c175b99b47530dd111cc741c30d0053d1d0b99ace3ae3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "18f820b8a7bc2a42e06c175b99b47530dd111cc741c30d0053d1d0b99ace3ae3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "18f820b8a7bc2a42e06c175b99b47530dd111cc741c30d0053d1d0b99ace3ae3"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "b79dbd0d43ceda27531600f7f3192408bca062126bc4f979f32ce48b36d2ff2e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b79dbd0d43ceda27531600f7f3192408bca062126bc4f979f32ce48b36d2ff2e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b79dbd0d43ceda27531600f7f3192408bca062126bc4f979f32ce48b36d2ff2e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b79dbd0d43ceda27531600f7f3192408bca062126bc4f979f32ce48b36d2ff2e"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "db9831598a9cbf4e9850959280427912add77f8d7e05f32f2a0bae41cd02cef2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "db9831598a9cbf4e9850959280427912add77f8d7e05f32f2a0bae41cd02cef2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "db9831598a9cbf4e9850959280427912add77f8d7e05f32f2a0bae41cd02cef2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "db9831598a9cbf4e9850959280427912add77f8d7e05f32f2a0bae41cd02cef2"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "bb1e9a194cb9d2a27f33474600090aff46e198d7592e6370b866a3680edf9419"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bb1e9a194cb9d2a27f33474600090aff46e198d7592e6370b866a3680edf9419"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bb1e9a194cb9d2a27f33474600090aff46e198d7592e6370b866a3680edf9419"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bb1e9a194cb9d2a27f33474600090aff46e198d7592e6370b866a3680edf9419"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "9c1f7dd6ac72ca73a85dc29a7dc29acf07b8ec62718e07c241cf663e7ea7f2a4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9c1f7dd6ac72ca73a85dc29a7dc29acf07b8ec62718e07c241cf663e7ea7f2a4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9c1f7dd6ac72ca73a85dc29a7dc29acf07b8ec62718e07c241cf663e7ea7f2a4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9c1f7dd6ac72ca73a85dc29a7dc29acf07b8ec62718e07c241cf663e7ea7f2a4"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "326201375ab09650766cc6181a40adac263ea0cc6754be569c53a5dfc452863b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "326201375ab09650766cc6181a40adac263ea0cc6754be569c53a5dfc452863b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "326201375ab09650766cc6181a40adac263ea0cc6754be569c53a5dfc452863b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "326201375ab09650766cc6181a40adac263ea0cc6754be569c53a5dfc452863b"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "a3c8515af3ad2b0ec171ddb0ca4b68a8e9a4887322a124f5dadb733859b26ce2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a3c8515af3ad2b0ec171ddb0ca4b68a8e9a4887322a124f5dadb733859b26ce2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a3c8515af3ad2b0ec171ddb0ca4b68a8e9a4887322a124f5dadb733859b26ce2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a3c8515af3ad2b0ec171ddb0ca4b68a8e9a4887322a124f5dadb733859b26ce2"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "27f0fb273dcc3bd2f6dd861db858fd24d33c00a478b0550a9fe8eb80aba6c5c8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "27f0fb273dcc3bd2f6dd861db858fd24d33c00a478b0550a9fe8eb80aba6c5c8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "27f0fb273dcc3bd2f6dd861db858fd24d33c00a478b0550a9fe8eb80aba6c5c8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "27f0fb273dcc3bd2f6dd861db858fd24d33c00a478b0550a9fe8eb80aba6c5c8"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "eb7c731db738358dda62d7464c419d8e987c43231186bdff4730ef5b187d3d92"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "eb7c731db738358dda62d7464c419d8e987c43231186bdff4730ef5b187d3d92"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "eb7c731db738358dda62d7464c419d8e987c43231186bdff4730ef5b187d3d92"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "eb7c731db738358dda62d7464c419d8e987c43231186bdff4730ef5b187d3d92"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "0510938459685930756129b0511f6abdab7fcd088991af60081c31781596e6cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0510938459685930756129b0511f6abdab7fcd088991af60081c31781596e6cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0510938459685930756129b0511f6abdab7fcd088991af60081c31781596e6cc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0510938459685930756129b0511f6abdab7fcd088991af60081c31781596e6cc"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "73da4d7c653f5608385be54ffb7985ccd9c3eb55d231c57e4ec98f7dd5d72ad3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "73da4d7c653f5608385be54ffb7985ccd9c3eb55d231c57e4ec98f7dd5d72ad3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "73da4d7c653f5608385be54ffb7985ccd9c3eb55d231c57e4ec98f7dd5d72ad3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "73da4d7c653f5608385be54ffb7985ccd9c3eb55d231c57e4ec98f7dd5d72ad3"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a26921ae9623bef68626c292ac45ed22f43681356a150659da4f3b6b78622467"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "76eabd25dc13b22407d17823d3f8a8c508233f011c967a12e5ff3cb3020ee24c"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/identity_evidence/0/quote",
+          "sha256": "247b4bcc5ce07ba265fb98d112d4180b2446a2d30ff296e9c3be3e928336a36b"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/education/0/evidence/0/quote",
+          "sha256": "9d9c11ff7df3696161a552a1e85c9bad37e55b7655a34ca02bc335d08469ee29"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/education/1/evidence/0/quote",
+          "sha256": "07ca9b6c617bec4888f14d6bfd186d5faa84c85341dc32c3bd7209ae8fc1f4f0"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/education/2/evidence/0/quote",
+          "sha256": "ba72e21e0f3648749431a6be439e1500b6b82b10003f5318d35c09b832b32732"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/appointments/0/evidence/0/quote",
+          "sha256": "a4a21767e32e1cddaa437f9ab241b9d86b521f1880b5e06b10ede2c1cfba4cf6"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/appointments/1/evidence/0/quote",
+          "sha256": "f665f26e05efd625a7f6d709516e2e52ac455b228e71249fb91a1885b23b3f25"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "247b4bcc5ce07ba265fb98d112d4180b2446a2d30ff296e9c3be3e928336a36b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "9d9c11ff7df3696161a552a1e85c9bad37e55b7655a34ca02bc335d08469ee29"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "07ca9b6c617bec4888f14d6bfd186d5faa84c85341dc32c3bd7209ae8fc1f4f0"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "ba72e21e0f3648749431a6be439e1500b6b82b10003f5318d35c09b832b32732"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "a4a21767e32e1cddaa437f9ab241b9d86b521f1880b5e06b10ede2c1cfba4cf6"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "f665f26e05efd625a7f6d709516e2e52ac455b228e71249fb91a1885b23b3f25"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "9d9c11ff7df3696161a552a1e85c9bad37e55b7655a34ca02bc335d08469ee29"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9d9c11ff7df3696161a552a1e85c9bad37e55b7655a34ca02bc335d08469ee29"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9d9c11ff7df3696161a552a1e85c9bad37e55b7655a34ca02bc335d08469ee29"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9d9c11ff7df3696161a552a1e85c9bad37e55b7655a34ca02bc335d08469ee29"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "07ca9b6c617bec4888f14d6bfd186d5faa84c85341dc32c3bd7209ae8fc1f4f0"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "07ca9b6c617bec4888f14d6bfd186d5faa84c85341dc32c3bd7209ae8fc1f4f0"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "07ca9b6c617bec4888f14d6bfd186d5faa84c85341dc32c3bd7209ae8fc1f4f0"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "07ca9b6c617bec4888f14d6bfd186d5faa84c85341dc32c3bd7209ae8fc1f4f0"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "ba72e21e0f3648749431a6be439e1500b6b82b10003f5318d35c09b832b32732"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ba72e21e0f3648749431a6be439e1500b6b82b10003f5318d35c09b832b32732"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ba72e21e0f3648749431a6be439e1500b6b82b10003f5318d35c09b832b32732"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ba72e21e0f3648749431a6be439e1500b6b82b10003f5318d35c09b832b32732"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "a4a21767e32e1cddaa437f9ab241b9d86b521f1880b5e06b10ede2c1cfba4cf6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a4a21767e32e1cddaa437f9ab241b9d86b521f1880b5e06b10ede2c1cfba4cf6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a4a21767e32e1cddaa437f9ab241b9d86b521f1880b5e06b10ede2c1cfba4cf6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a4a21767e32e1cddaa437f9ab241b9d86b521f1880b5e06b10ede2c1cfba4cf6"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "f665f26e05efd625a7f6d709516e2e52ac455b228e71249fb91a1885b23b3f25"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f665f26e05efd625a7f6d709516e2e52ac455b228e71249fb91a1885b23b3f25"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f665f26e05efd625a7f6d709516e2e52ac455b228e71249fb91a1885b23b3f25"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f665f26e05efd625a7f6d709516e2e52ac455b228e71249fb91a1885b23b3f25"
+        }
+      ],
+      "mapping_notes": [
+        "张联合培养同一博士事件；原as_source日期保留且在可见note显示，规范start/end不擅改。",
+        "周荣休与个人教授至今并存，退休/返聘日期未知；零书目不等无作品。",
+        "李三授位明确，旧校名原词、八历史职业条目及两一年访学保留；共享高等教育研究院节点由苏永建组定义。",
+        "马职业称谓包含副院长及学术分委员会委员，保留可见，不造未列任期；零作品仅已读范围缺口。",
+        "四人未留存课程条目，不新增教学；导师资格不造本人师承。",
+        "仅新增人文学院与建筑与艺术学院2节点parentnull；旧人文与社会科学学部工作用词不替换。",
+        "语义定位按原excerpt_id或引文指纹落实到具体学历、机构职务及任期、作品题名，并保持空白规范化/非连续片段说明；人文学院node的source_id与实际长路径原观察URL配对。"
+      ],
+      "semantic_locator_correction_paths": [
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/2/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/2/joint_training/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/3/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/education/3/additional_source_statement/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/appointments/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/appointments/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/research_directions/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/publications/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/publications/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/field_provenance/name_title/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/field_provenance/profile_affiliation/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/field_provenance/narrative_department/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/field_provenance/directory_person/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/0/excerpts/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/0/excerpts/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/0/excerpts/2/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/0/excerpts/3/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/0/excerpts/4/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/0/excerpts/5/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/0/excerpts/6/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/0/excerpts/7/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/0/excerpts/8/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/0/excerpts/9/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/1/excerpts/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-zhangwei1/sources/2/excerpts/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/identity_evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/identity_evidence/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/identity_evidence/2/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/identity_evidence/3/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/0/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/1/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/2/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/2/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/3/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/3/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/4/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/education/4/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/0/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/1/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/2/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/2/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/3/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/3/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/4/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/4/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/5/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/5/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/6/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/6/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/7/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/appointments/7/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/publications/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/publications/0/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/publications/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/publications/1/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/research_directions/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/research_directions/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/research_directions/2/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/2/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/3/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/4/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/5/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/6/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/7/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/8/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/9/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/10/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/11/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/12/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/13/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/14/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/15/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/16/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/17/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/18/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/19/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/0/excerpts/20/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/1/excerpts/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/1/excerpts/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-lichong-higher-education/sources/1/excerpts/2/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/identity_evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/education/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/education/0/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/education/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/education/1/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/education/2/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/education/2/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/appointments/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/appointments/0/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/appointments/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/appointments/1/evidence/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/sources/0/professional_excerpts/0/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/sources/0/professional_excerpts/1/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/sources/0/professional_excerpts/2/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/sources/0/professional_excerpts/3/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/sources/0/professional_excerpts/4/source_locator"
+        },
+        {
+          "json_pointer": "/people/dlut-mahui/sources/0/professional_excerpts/5/source_locator"
+        },
+        {
+          "json_pointer": "/org_units/dlut-humanities/source_url"
+        }
+      ]
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧701事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}

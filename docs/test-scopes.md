@@ -42,3 +42,5 @@ python scripts/validate_queue.py progress/work-queue.json --check-artifacts
 韩忠杰复用已有tju-math，数学工作簿由旧3人追加新成员。旧人物和五表旧行顺序保留，并对全表独立来源期望逐格检查；两个精确旧工作簿历史摘要调用仅增加tju-math这条历史输入路径，不修改旧hash/helper。其他未受影响旧工作簿继续逐字节相等。
 
 南开大学十二人采用第九份独立来源映射，旧八映射和全部pins保持，689前缀独立守恒；当前profile/lineage、来源限定、退休历史及关系类型检查仍用实时构建。关永强复用nku-economics，旧包群/薄文广/成前与新成员完整全表、旧行顺序均验证，不新造组织规避导出变化。
+
+大连理工大学十二人采用第十份独立固定来源映射，旧九映射、全部pins、历史fixture/helper不改；701前缀逐字段守恒。真实当前profile/lineage、教学与职业指导可见性、来源限定、全表导出和旧成员行序继续实时检查，不以未知在岗抹去明确荣休历史。
