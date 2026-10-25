@@ -1,0 +1,2342 @@
+{
+  "schema_version": "independent-jlu12-canonical-mapping-1",
+  "baseline_commit": "d2471c406a01c504b47fa984589ef02f3623768f",
+  "new_people": [
+    "jlu-anni",
+    "jlu-anshengji",
+    "jlu-wangting-economics",
+    "jlu-lvxuanru",
+    "jlu-liwenjun",
+    "jlu-guochunfang",
+    "jlu-zhouxin",
+    "jlu-wangjuan",
+    "jlu-jinlina",
+    "jlu-yuxianfeng",
+    "jlu-sunwanchun",
+    "jlu-wangdehui"
+  ],
+  "new_org_ids": [
+    "jlu-chemistry",
+    "jlu-economics",
+    "jlu-administration",
+    "jlu-administration-public-management",
+    "jlu-public-health",
+    "jlu-public-health-social-medicine",
+    "jlu-art-college",
+    "jlu-art-design",
+    "jlu-icfs",
+    "jlu-icfs-translational-immunology",
+    "jlu-animal-sciences",
+    "jlu-laboratory-animal-sciences",
+    "jlu-zoonosis-research-lab",
+    "jlu-zoonosis-research-institute",
+    "jlu-veterinary-medicine"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 15,
+    "education": 47,
+    "appointments": 32,
+    "publications": 23,
+    "mentors": 9,
+    "teaching": 26,
+    "degree_true": 14,
+    "degree_false": 14,
+    "degree_unknown": 19
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "chemistry-economics-mathematics",
+      "canonical_payload_sha256": "2a53bd7a4f5ea5dff2887aa7e93db06eb6fdfeae3d352656400717f4d84e15b0",
+      "field_mapping_sha256": "f6689fa2b78adce62d6f0fd2f3edfedef2daf66de5796bff0187b68cb3fcc315",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "policy-public-health",
+      "canonical_payload_sha256": "df92858e125e6c84b22b472abace24d498856d59a5df39065706cb4a9ab7ffd6",
+      "field_mapping_sha256": "ad9f5be1943e90d42c76b84b7a24a37d0b46ae5d8dd83aabe5f7733a71511603",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "arts-immunology-animal-sciences",
+      "canonical_payload_sha256": "0a12c3a5dbf880333080e5eb054eb0dddbda4c1a545ef5275d2ed8d5fd05cc71",
+      "field_mapping_sha256": "bb424bb72498a24692e26cf3bdb00069f365655d8769ac844caa524714bb04a5",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "baseline_people": 713,
+      "baseline_commit": "d2471c406a01c504b47fa984589ef02f3623768f",
+      "baseline_publication_status": "published",
+      "payload_sha256": "2a53bd7a4f5ea5dff2887aa7e93db06eb6fdfeae3d352656400717f4d84e15b0",
+      "people": [
+        {
+          "person_id": "jlu-anni",
+          "source_candidate_sha256": "ebd00c9ec2d54777b218892c2ff69977ad5f30f74102c9229847f29527e6911a",
+          "source_review_sha256": "2224c51ee99c722e85713c14dadd44c65c65d86d75e3403218eefcf14e5c4650",
+          "counts": {
+            "education": 3,
+            "mentors": 0,
+            "appointments": 1,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品仅官网书目，未核出版者元数据或全文；原时间/卷期不自行修订。",
+            "目录栏目、主页身份标签及旧文“至今”均不独立证实现时人事状态；不启用在岗导师快捷导航。",
+            "仅核原序前三，不代表院系全员、全职或完整履历。",
+            "论文仅核官网书目，未核出版社记录、DOI及全文。",
+            "院系行政父级和校区未核实，不推校级直属。",
+            "孙俊奇仅在本文书目为共同作者/通讯作者；无直接学位导师原文，mentors留空。",
+            "硕博连读只明确理学博士，不制造硕士学位；两已授位具体日期未独立确认。",
+            "原连续HTML职业片段可复核；完整响应哈希为采集记录，非本批独立复算或运行时视觉认证。"
+          ],
+          "org_identity": {
+            "source_unit": "化学学院",
+            "canonical_org_id": "jlu-chemistry",
+            "source_url": "https://chem.jlu.edu.cn/info/1048/16385.htm",
+            "existing_node_reused": false,
+            "existing_parent_unchanged": true
+          }
+        },
+        {
+          "person_id": "jlu-anshengji",
+          "source_candidate_sha256": "ebd00c9ec2d54777b218892c2ff69977ad5f30f74102c9229847f29527e6911a",
+          "source_review_sha256": "2224c51ee99c722e85713c14dadd44c65c65d86d75e3403218eefcf14e5c4650",
+          "counts": {
+            "education": 5,
+            "mentors": 0,
+            "appointments": 2,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品仅官网书目，未核出版者元数据或全文；原时间/卷期不自行修订。",
+            "目录栏目、主页身份标签及旧文“至今”均不独立证实现时人事状态；不启用在岗导师快捷导航。",
+            "仅核原序前三，不代表院系全员、全职或完整履历。",
+            "论文仅核官网书目，未核出版社记录、DOI及全文。",
+            "院系行政父级和校区未核实，不推校级直属。",
+            "本科、硕士、博士及博士后/访问指导人未在已读官网披露。",
+            "长春地质学院保持历史校名，不改为吉林大学；长春科技大学应用理学院组合助教/讲师及吉林大学副教授/教授不拆出未知晋升时间。",
+            "原连续HTML片段不等于完整响应重建或运行时视觉认证。"
+          ],
+          "org_identity": {
+            "source_unit": "化学学院",
+            "canonical_org_id": "jlu-chemistry",
+            "source_url": "https://chem.jlu.edu.cn/info/1048/9825.htm",
+            "existing_node_reused": false,
+            "existing_parent_unchanged": true
+          }
+        },
+        {
+          "person_id": "jlu-wangting-economics",
+          "source_candidate_sha256": "ae07e34eefe0627a364e0d60a85bc5900bcc1caff12bd0c734b1ec7c0be40e73",
+          "source_review_sha256": "5474e7fba294d59e65622dcdffa20424649dcadfa29bab093784a6e0ce40e3e8",
+          "counts": {
+            "education": 4,
+            "mentors": 0,
+            "appointments": 3,
+            "publications": 2,
+            "teaching": 5
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品仅官网书目，未核出版者元数据或全文；原时间/卷期不自行修订。",
+            "三项学位明确获授，但学习末年不当授位年；博士后工作站2014–2019与讲师任职可并存，不制造第二博士。",
+            "博导为本人指导资格，不是本人导师关系；目录只核名字/职称与经济学系，未独立解析其外链href。",
+            "第一篇外部原刊连续技术失败及协调者同URL浏览器502/空正文，未形成出版者元数据证据；第二篇MDPI429后停止，未改路。",
+            "五课程仅源“讲授课程”，受众层级和学期未披露。"
+          ],
+          "org_identity": {
+            "source_unit": "经济学院·经济学系",
+            "canonical_org_id": "jlu-economics",
+            "source_url": "https://jjxy.jlu.edu.cn/info/1234/16179.htm",
+            "existing_node_reused": false,
+            "existing_parent_unchanged": true
+          }
+        },
+        {
+          "person_id": "jlu-wangdehui",
+          "source_candidate_sha256": "bb776263052f2b50841036f91017fb11b4e63a42a666addaac61044ee771f726",
+          "source_review_sha256": "acd66ca724d25bf858dcc538dfdbe006a5330cbb46c0dc106a6f4612ca61e044",
+          "counts": {
+            "education": 3,
+            "mentors": 2,
+            "appointments": 0,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品仅官网书目，未核出版者元数据或全文；原时间/卷期不自行修订。",
+            "源页显示2006-09-03；1998年7月起任吉林大学数学学院教师、原称“现在”，仅旧页历史职业事实，现职未核。",
+            "院系仅保留数学学院，不依据未留存材料给出更细的概率统计与保险精算系。",
+            "本科仅入学和学习身份，不补学士；硕博只攻读，三项授位均未知。",
+            "宋立新为源明确硕士导师，史宁中为源明确博士导师；未核学位论文原件，不等于泛泛合作，也不认证其现时职位。",
+            "首篇页码47-491及第二篇标题Paramete按原保留，不静默校正。"
+          ],
+          "org_identity": {
+            "source_unit": "数学学院",
+            "canonical_org_id": "jlu-math",
+            "source_url": "https://math.jlu.edu.cn/info/1047/3106.htm",
+            "existing_node_reused": true,
+            "existing_parent_unchanged": true
+          }
+        }
+      ],
+      "source_chains": {
+        "wave15": "JLU v1审查与v2增量审查分列；安妮/安胜姬v1全部旧值逐键相等，v2仅5研究字段新增，不读取安泽胜PDF。",
+        "wave314": "仅王德辉people/1/department收窄为数学学院；原细系标签不重新公开。"
+      },
+      "public_field_check": {
+        "locator_handling": "工具定位/本地文件只存private；必要职业事实保留结构/可见notes，摘录hash非替代事实。",
+        "teaching": "王婷原讲授角色进入role，层级未知显式note。",
+        "degree_and_relationships": "学位三态守恒；王德辉2明确学位阶段导师不降泛泛关系，不升论文原件认证。"
+      },
+      "event_binding_correction": {
+        "previous_payload_sha256": "e6af3f8bee7047110a33b06357848e23c4bb57a2454a6c5ab38890c884d4bf07",
+        "changes": [
+          {
+            "path": "/people/3/education/0/event_id",
+            "value": "jlu-wangdehui-education-1",
+            "basis": "canonical原阶段稳定标识，与已保留education_event_id及导师绑定一致；不是来源原ID"
+          },
+          {
+            "path": "/people/3/education/0/source_event_id",
+            "value": null,
+            "basis": "原源未提供event_id，不伪称原ID"
+          },
+          {
+            "path": "/people/3/education/1/event_id",
+            "value": "jlu-wangdehui-education-2",
+            "basis": "canonical原阶段稳定标识，与已保留education_event_id及导师绑定一致；不是来源原ID"
+          },
+          {
+            "path": "/people/3/education/1/source_event_id",
+            "value": null,
+            "basis": "原源未提供event_id，不伪称原ID"
+          },
+          {
+            "path": "/people/3/education/2/event_id",
+            "value": "jlu-wangdehui-education-3",
+            "basis": "canonical原阶段稳定标识，与已保留education_event_id及导师绑定一致；不是来源原ID"
+          },
+          {
+            "path": "/people/3/education/2/source_event_id",
+            "value": null,
+            "basis": "原源未提供event_id，不伪称原ID"
+          }
+        ],
+        "inverse_restores_previous_exact_bytes": true,
+        "real_build_validate": "published713 + this4 = 717, PASS"
+      }
+    },
+    {
+      "schema_version": "jlu12-policy-public-health-mapping-1",
+      "published_baseline_people": 713,
+      "published_baseline_commit": "d2471c406a01c504b47fa984589ef02f3623768f",
+      "people": [
+        "jlu-lvxuanru",
+        "jlu-liwenjun",
+        "jlu-wangjuan",
+        "jlu-jinlina"
+      ],
+      "input_hashes": {
+        "jlu-lvxuanru": {
+          "source_candidate_sha256": "13cbce3862e8bcd8733020a236871efe2b0b88b9e08890f72f2bcc7b62e0d1f4",
+          "review_sha256": "b2752c02a6c8a72265dfacec3544da089cc70bb50bfd3ca330e6a5907b1d9083"
+        },
+        "jlu-liwenjun": {
+          "source_candidate_sha256": "13cbce3862e8bcd8733020a236871efe2b0b88b9e08890f72f2bcc7b62e0d1f4",
+          "review_sha256": "b2752c02a6c8a72265dfacec3544da089cc70bb50bfd3ca330e6a5907b1d9083"
+        },
+        "jlu-wangjuan": {
+          "source_candidate_sha256": "350b7f968f10f2fd6ca2ab6b29835e0d08d831f6e594c7971640188cd2490411",
+          "review_sha256": "be1b8a7f6aa0a15b3cd15dfb403a1f527aa446a1b4afb8f7b93f41576dfc3e52"
+        },
+        "jlu-jinlina": {
+          "source_candidate_sha256": "350b7f968f10f2fd6ca2ab6b29835e0d08d831f6e594c7971640188cd2490411",
+          "review_sha256": "be1b8a7f6aa0a15b3cd15dfb403a1f527aa446a1b4afb8f7b93f41576dfc3e52"
+        }
+      },
+      "overlay_applied": {
+        "input_sha256": "350b7f968f10f2fd6ca2ab6b29835e0d08d831f6e594c7971640188cd2490411",
+        "path": "/people/1/publications/0/note",
+        "before": "第一项DOI原文为0.1002/gepi.20521，保留疑似缺字，未擅补10.；未对DOI/PMID发请求。",
+        "after": "DOI 原值字段 doi_as_source 仅照录 0.1002/gepi.20521；格式异常，未核实可用，不得生成或展示为可点击的有效 DOI 链接。doi_normalized 与 source_reported_work_url 保持 null，不猜补 10.，未对 DOI/PMID 发请求。",
+        "exact_guards_pass": true,
+        "doi_hyperlink_generation_allowed": false
+      },
+      "other_overlay": "122同审123山东孙立新页面日期限定修订不适用本组。",
+      "org_mapping": "四节点无713既有重复；122和227公共卫生学院同中文单位、同官方sph.jlu.edu.cn站点与目录身份，统一jlu-public-health并保留两源组织事实。下级parent仅源展示归属，法律行政关系未独立认证；社会医学与卫生事业管理不擅定教研室。",
+      "org_identity_urls": [
+        "https://sph.jlu.edu.cn/info/1053/9147.htm",
+        "https://sph.jlu.edu.cn/szdw/js/1.htm",
+        "https://sph.jlu.edu.cn/szdw/js.htm"
+      ],
+      "teaching_visible_role_derivations": [
+        {
+          "path": "/people/0/teaching/0",
+          "source_id": "jlu-lvxuanru-profile",
+          "source_column": "教学课程",
+          "derived_role": null,
+          "note": "授课对象：本科生。来源教学课程列表，不据列表推具体教学角色；不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/0/teaching/1",
+          "source_id": "jlu-lvxuanru-profile",
+          "source_column": "教学课程",
+          "derived_role": null,
+          "note": "授课对象：MPA。来源教学课程列表，不据列表推具体教学角色；不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/1/teaching/0",
+          "source_id": "jlu-liwenjun-profile",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/1/teaching/1",
+          "source_id": "jlu-liwenjun-profile",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/1/teaching/2",
+          "source_id": "jlu-liwenjun-profile",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/2/teaching/0",
+          "source_id": "jlu-wangjuan-profile-browser",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/2/teaching/1",
+          "source_id": "jlu-wangjuan-profile-browser",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/2/teaching/2",
+          "source_id": "jlu-wangjuan-profile-browser",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/2/teaching/3",
+          "source_id": "jlu-wangjuan-profile-browser",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/3/teaching/0",
+          "source_id": "jlu-jinlina-profile",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/3/teaching/1",
+          "source_id": "jlu-jinlina-profile",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/3/teaching/2",
+          "source_id": "jlu-jinlina-profile",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/3/teaching/3",
+          "source_id": "jlu-jinlina-profile",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        },
+        {
+          "path": "/people/3/teaching/4",
+          "source_id": "jlu-jinlina-profile",
+          "source_column": "讲授课程",
+          "derived_role": "讲授",
+          "note": "来源未细分授课层级。来源讲授课程，不推本期开课、起始学期或合授角色。",
+          "basis": "吕原122教学课程列表及本科生/MPA；李122讲授课程栏目；王227既有规范化浏览器讲授课程摘录；金227讲授课程摘录，仅讲授不推主讲或合授。"
+        }
+      ],
+      "counts": {
+        "education": 17,
+        "appointments": 11,
+        "mentors": 0,
+        "publications": 8,
+        "teaching": 14
+      },
+      "semantic_limits": {
+        "jlu-lvxuanru": [
+          "三段教育均为学位标签，未见明确获授措辞；获授、授位日期和授位法人保持unknown。",
+          "未披露阶段导师或正式论文导师；不从合著者推师承。",
+          "页面显示2024-09-26，但正文含2025年作品，不能把显示日期当实际最后更新时间。",
+          "当前在岗未独立核验；两篇作品仅官网列出，未外部核验、未读全文。",
+          "必要职业摘录及原观察窗保留，非完整网页或实时人事认证；现职unknown、导航及现职计数false。",
+          "目的性小样本，不是目录原序、排名、随机代表性样本或完整院系覆盖。",
+          "博导等资格若被来源列示，不等于本人求学导师；未见阶段导师的资料不由合著补师承。"
+        ],
+        "jlu-liwenjun": [
+          "三段教育仅列博士/硕士/学士标签，获授、专业、就读院系、授位日期和授位法人未知。",
+          "现学科专业不是历史学习专业，未回填；博士生导师资格不是本人受指导关系。",
+          "访问学者明确非学位；阶段导师及正式论文导师均未披露。",
+          "教授经历止期空白，不补至今；现职unknown、导航false。",
+          "首篇DOI网页前缀与后缀分开，未拼接或访问；第二篇DOI仅作为官网字符串保存。",
+          "页面日期未展示，页脚2017不当作个人页日期；所有作品未外刊核验、未下载全文。",
+          "必要职业摘录及原观察窗保留，非完整网页或实时人事认证；现职unknown、导航及现职计数false。",
+          "目的性小样本，不是目录原序、排名、随机代表性样本或完整院系覆盖。",
+          "博导等资格若被来源列示，不等于本人求学导师；未见阶段导师的资料不由合著补师承。"
+        ],
+        "jlu-wangjuan": [
+          "必要职业摘录及原观察窗保留，非完整网页或实时人事认证；现职unknown、导航及现职计数false。",
+          "目的性小样本，不是目录原序、排名、随机代表性样本或完整院系覆盖。",
+          "博导等资格若被来源列示，不等于本人求学导师；未见阶段导师的资料不由合著补师承。",
+          "原页教授、博士生导师及流行病与卫生统计学教研室、最高学位博士标签保留，不升级学习事件为明确获授。",
+          "四学习事件均授位未知；联合培养博士研究生不是第二博士授位，也不自动变成访问学者。",
+          "博士后2015-11结束而讲师2015-09开始，重叠照录，不推兼任或纠正。",
+          "两数字教材第7版/第3版本人角色均副主编；作者名单、出版年未列，不补。",
+          "本人摘录来自既有浏览器观察窗，空白与分隔符经过规范化，非原始HTML或逐字reader原文；目录仅列名，未实际点本人链接，未验证raw href。"
+        ],
+        "jlu-jinlina": [
+          "必要职业摘录及原观察窗保留，非完整网页或实时人事认证；现职unknown、导航及现职计数false。",
+          "目的性小样本，不是目录原序、排名、随机代表性样本或完整院系覆盖。",
+          "博导等资格若被来源列示，不等于本人求学导师；未见阶段导师的资料不由合著补师承。",
+          "本科与硕博连读两事件授位未知，硕博连读不拆独立硕士/博士授位；博士后及两访问为非学位训练，不反推先前学位。",
+          "原博士后、访问与任职日期交叠保留，不推兼任或变更日期。",
+          "论文作者顺序与星号照录，不推首作或通讯角色；异常DOI原值0.1002/gepi.20521不补10.，不生成有效DOI链接，PMID亦未外核。",
+          "目录仅列名与教授，不声称已点本人链接、核raw href或现职；学科专业流行病与卫生统计学保留。"
+        ]
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/0/quote",
+          "sha256": "be67f59bce18bf2cb1dc32deb9c0344b0be03d23a4bdcf675ec0489f16b83561"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/1/quote",
+          "sha256": "7b79202c3c266dc94d2e92841657069e4fd616cc83c9e1bdefa48c8174c76dfc"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/2/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/3/quote",
+          "sha256": "552701cb9a2c92f25a4389cc039f46ec0e1eb6c0f5b383c6acb6cb285e481425"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/4/quote",
+          "sha256": "5acc2f9742093d7db8cae8e9ef5fbae92f03ff8c81a649a5dd12be3f351e0cfc"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/5/quote",
+          "sha256": "30a18c97b6bd15eae3eb07b8bd988775aa5ed2d777dbef29c4343429189debc0"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/6/quote",
+          "sha256": "9ba61ac7afcb31c96a622f3d85d86a9ed3934b172434dd530b9106424ca10870"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/7/quote",
+          "sha256": "83ce97c1dea576001701cd7b945efc034b49c69b66c5130d4f0d4e26ca234c6d"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/8/quote",
+          "sha256": "707320cbe4ef1b326cb7ee5e0e4141763da7bc65194a2508628b4c01550dc003"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/9/quote",
+          "sha256": "744df1ed216683daa4d01b3c3aa89708be730a24b41ac5f47a5c983626a8a9d4"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/10/quote",
+          "sha256": "64b15ee81b8183e50fbe42671b135a7490caeb3f77dcdcfefde5e56234e62cda"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/11/quote",
+          "sha256": "de08fd123ecfdb5fa33ff87ab5f711faaadb8479fd4ecaf847fa72da0b848f5e"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/12/quote",
+          "sha256": "9faf469b8e8634ec4af1debd7edc15ef2df7748fbe3889d0e4de2369542b2ebf"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/13/quote",
+          "sha256": "90d946affc231314f67a5e3f87bf43863986001ede93038b0ceedcfe4a4cbbd0"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/14/quote",
+          "sha256": "86ab03eca10a0412e4c2260a5d2deaad91d17db320e1ab0ca1a754e983610c8d"
+        },
+        {
+          "path": "/sources/jlu-jinlina-profile/professional_excerpts/15/quote",
+          "sha256": "901330d99359335ab512d562d766cd0bbf20d5f499350e8d06b762a9c55d37b9"
+        },
+        {
+          "path": "/sources/jlu-public-health-professor-directory-page1/professional_excerpts/0/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "path": "/sources/jlu-public-health-professor-directory-page1/professional_excerpts/1/quote",
+          "sha256": "1e6080ed39f2f6b9c0a69588e1e82e80de7f0cb89b26872ece9a1f2babcd2900"
+        },
+        {
+          "path": "/sources/jlu-public-health-professor-directory-page1/professional_excerpts/2/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "path": "/sources/jlu-public-health-professor-directory-page1/professional_excerpts/3/quote",
+          "sha256": "be67f59bce18bf2cb1dc32deb9c0344b0be03d23a4bdcf675ec0489f16b83561"
+        },
+        {
+          "path": "/sources/jlu-public-health-professor-directory-page1/professional_excerpts/4/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "path": "/sources/jlu-public-health-professor-directory-page1/professional_excerpts/5/quote",
+          "sha256": "1333bb84acd5ca18c03613c9b87bef8a088dd6e8a180c42c565df132c1da1e49"
+        },
+        {
+          "path": "/sources/jlu-public-health-professor-directory-page1/professional_excerpts/6/quote",
+          "sha256": "901330d99359335ab512d562d766cd0bbf20d5f499350e8d06b762a9c55d37b9"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/0/quote",
+          "sha256": "622ebe3ab3f02c75b9dd81c63076f1ea2385306fb37e5f890771f469a552d304"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/1/quote",
+          "sha256": "09966999f07f6b997d2e76c13e4ca82210fe773a5cb623f6efe2738a852367f3"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/2/quote",
+          "sha256": "f6fc97a775f8dc24a10fd3eca355e8aa4da8cbe5bf8d16b1475eebaa637d71d6"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/3/quote",
+          "sha256": "c6719d050d5f839832406ad33e1f418c05f4ac21771357fef2e44ce97c85871c"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/4/quote",
+          "sha256": "a282b35aa53f58815b373da9f849a2adcd8d4192c5e86e4cfc918f7efb01f2ff"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/5/quote",
+          "sha256": "bd5acef0ba3f7ef8f6461b3a397dc53a5944c5116116a8510bf431627a133761"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/6/quote",
+          "sha256": "bcf531dd776f04cec47a88904dc79ff30b1b03ce95f1fa80a3afbe5641515781"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/7/quote",
+          "sha256": "849e064899712184ea08a1840a50c5ad83c7c9957a603ff0dcc44236846e91ed"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/8/quote",
+          "sha256": "8b0218ad0340f14d42a686a53c541a2b5e269e1a718fa87db40f9e83ad9b1ef4"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/9/quote",
+          "sha256": "ca81585c62c4c9b8b0997db2709e4319aae6e85e55df720638c25fa731b22be1"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/10/quote",
+          "sha256": "2b6397af6f84c95b7c6bdbda40fd7a30216bf5d6070f6abd80d61f816ff95f5b"
+        },
+        {
+          "path": "/sources/jlu-wangjuan-profile-browser/professional_excerpts/11/quote",
+          "sha256": "2f14ba8e01b01f11ba44add0d469d1a3e4b5b3f4475d368d1a3ddb71900405f8"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/education/0/quote",
+          "sha256": "4fc6e078bf37d72a491e9a82bd2dc84cf7fa0b738494988f7f294e07c543fd43"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/education/1/quote",
+          "sha256": "0563bbb104f2392e7eff368ca7a4ceb85fcf0d9d96c6f260b19fa68bf7a0f03b"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/education/2/quote",
+          "sha256": "0f40249c25618a47808a8eceada6c91463ac987cee899c3a6b243d1a289fac8b"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/appointments/0/quote",
+          "sha256": "f11b6826093a41f49dafa29b891855b26499422b57fcb206d84a1bcf1efc8cbb"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/teaching/0/quote",
+          "sha256": "bc437b03c712f726ab28101b248c088c401e5f49dd31a67016c701bf2b88f02e"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/teaching/1/quote",
+          "sha256": "00833634c1f5f1144761e7f9d1e09ab7e46da9f30fdfe141eb53672df9c9c4ef"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/field_provenance/identity_and_title/quote",
+          "sha256": "75f70479dfedb88932fe7d24b3bd251ec20b34f63073bc6e36176e1dfb73ed0a"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/field_provenance/directory_affiliation/quote",
+          "sha256": "bf2467b20a3c51a76ba2015b406b23773e0817bdaaa0c6972d918e203666a213"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/field_provenance/research/quote",
+          "sha256": "e5478bf9d8d0b1a1023cad82a5f25350a81d5506db6553d85158395012fdabb5"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/field_provenance/page_date/quote",
+          "sha256": "2d4f5884d17bae81ea3b179c7e4fe826dbdd2289478acb6177be6980b3620cf4"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/publications/0/quote",
+          "sha256": "16c34abe76f97b87a4e6b6ca94a94dcbcc5e2aec15e709a06e6406f73e0c8731"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/publications/1/quote",
+          "sha256": "9280e5b5f5f7c1d2d953d2cc98dc2f1f0fccd1993c24805174dc0f1ee4df9300"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/education/jlu-lvxuanru-博士/quote",
+          "sha256": "4fc6e078bf37d72a491e9a82bd2dc84cf7fa0b738494988f7f294e07c543fd43"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/education/jlu-lvxuanru-硕士/quote",
+          "sha256": "0563bbb104f2392e7eff368ca7a4ceb85fcf0d9d96c6f260b19fa68bf7a0f03b"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/education/jlu-lvxuanru-本科/quote",
+          "sha256": "0f40249c25618a47808a8eceada6c91463ac987cee899c3a6b243d1a289fac8b"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/appointments/0/quote",
+          "sha256": "f11b6826093a41f49dafa29b891855b26499422b57fcb206d84a1bcf1efc8cbb"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/publications/jlu-lvxuanru-work1/quote",
+          "sha256": "16c34abe76f97b87a4e6b6ca94a94dcbcc5e2aec15e709a06e6406f73e0c8731"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/publications/jlu-lvxuanru-work2/quote",
+          "sha256": "9280e5b5f5f7c1d2d953d2cc98dc2f1f0fccd1993c24805174dc0f1ee4df9300"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/teaching/quote",
+          "sha256": "bc437b03c712f726ab28101b248c088c401e5f49dd31a67016c701bf2b88f02e"
+        },
+        {
+          "path": "/people/jlu-lvxuanru/teaching/quote",
+          "sha256": "00833634c1f5f1144761e7f9d1e09ab7e46da9f30fdfe141eb53672df9c9c4ef"
+        },
+        {
+          "path": "/people/jlu-liwenjun/education/0/quote",
+          "sha256": "5ad0da84953a995292bc38486c9b323c90add10658591a51100ff77993737e81"
+        },
+        {
+          "path": "/people/jlu-liwenjun/education/1/quote",
+          "sha256": "32ef50b71e2cb93a4e6dd9a833be4f8a061b8ffce89a510cd71a12f069323bba"
+        },
+        {
+          "path": "/people/jlu-liwenjun/education/2/quote",
+          "sha256": "5abc146b9d9fe35c031af9c2264cf2452edb8d5abc0b5886aee7b16519663e71"
+        },
+        {
+          "path": "/people/jlu-liwenjun/professional_training/0/quote",
+          "sha256": "35ea938f53fb8f1297f948f56f02ac2db83fb1fb62495d554e03fc88875c6a86"
+        },
+        {
+          "path": "/people/jlu-liwenjun/appointments/0/quote",
+          "sha256": "d60edd8528494b18216f0e4cffbf74427a50ca5b6f65273e33c2fe7fc5cac301"
+        },
+        {
+          "path": "/people/jlu-liwenjun/appointments/1/quote",
+          "sha256": "d7da3abe285efa1242446cc8229e158521344adf0a4ba5de690a77624399f600"
+        },
+        {
+          "path": "/people/jlu-liwenjun/appointments/2/quote",
+          "sha256": "000f8720706d96ff1c33f5bfdc32214eb493d6160440f3713987e6899c08299d"
+        },
+        {
+          "path": "/people/jlu-liwenjun/appointments/3/quote",
+          "sha256": "245652306fd3ca5ded46b8e2b73a39f5cd3164c9d0c3bc1ab72bc63b25350d3c"
+        },
+        {
+          "path": "/people/jlu-liwenjun/teaching/0/quote",
+          "sha256": "90817b2fd76163caf8b55e40edde00eba75f94c504fb0e2aef324ea6d0ad5347"
+        },
+        {
+          "path": "/people/jlu-liwenjun/teaching/1/quote",
+          "sha256": "c17dec649a5bf37730fba8aa4afbd3fa4c9dbefebb9158392d418f2b066296dd"
+        },
+        {
+          "path": "/people/jlu-liwenjun/teaching/2/quote",
+          "sha256": "a6b8394912377f0b1604fdfcb97e35d2edcc3e769c36858830ca2b49671801eb"
+        },
+        {
+          "path": "/people/jlu-liwenjun/field_provenance/identity_and_title/quote",
+          "sha256": "82aadebc682eba270a6084d46d6ae799e60755592e6c102124237a99ca02d70c"
+        },
+        {
+          "path": "/people/jlu-liwenjun/field_provenance/department_as_source/quote",
+          "sha256": "f6297ca2daedad431bfbbaa263b8ae972e36f822661cdf08710419adfa2a59c2"
+        },
+        {
+          "path": "/people/jlu-liwenjun/field_provenance/directory_affiliation/quote",
+          "sha256": "ab5e2dc3d7f6b5e1902873a129a12b68ba9f465258a6fb8808b763cc87ca1d21"
+        },
+        {
+          "path": "/people/jlu-liwenjun/field_provenance/discipline/quote",
+          "sha256": "9b4b564b8135b76820bd53f71fceda55dcb2d0cf43ce2ca0c80d2579f5fce45e"
+        },
+        {
+          "path": "/people/jlu-liwenjun/field_provenance/research/quote",
+          "sha256": "1662f2f9ed3a425c618bfb003779a67f14b57f0bd983320a9caf4e95b180e887"
+        },
+        {
+          "path": "/people/jlu-liwenjun/publications/0/quote",
+          "sha256": "47433e0ca7f7b9173a22203d180a2ea13906a2061217c616ce36170452086ca7"
+        },
+        {
+          "path": "/people/jlu-liwenjun/publications/1/quote",
+          "sha256": "afb0d362caf648a587a5011757380ca3abce41764cba65d085e9cc2a3d8fe425"
+        },
+        {
+          "path": "/people/jlu-liwenjun/education/jlu-liwenjun-博士/quote",
+          "sha256": "5ad0da84953a995292bc38486c9b323c90add10658591a51100ff77993737e81"
+        },
+        {
+          "path": "/people/jlu-liwenjun/education/jlu-liwenjun-硕士/quote",
+          "sha256": "32ef50b71e2cb93a4e6dd9a833be4f8a061b8ffce89a510cd71a12f069323bba"
+        },
+        {
+          "path": "/people/jlu-liwenjun/education/jlu-liwenjun-本科/quote",
+          "sha256": "5abc146b9d9fe35c031af9c2264cf2452edb8d5abc0b5886aee7b16519663e71"
+        },
+        {
+          "path": "/people/jlu-liwenjun/professional_training/jlu-liwenjun-visiting-saskatchewan/quote",
+          "sha256": "35ea938f53fb8f1297f948f56f02ac2db83fb1fb62495d554e03fc88875c6a86"
+        },
+        {
+          "path": "/people/jlu-liwenjun/appointments/0/quote",
+          "sha256": "d60edd8528494b18216f0e4cffbf74427a50ca5b6f65273e33c2fe7fc5cac301"
+        },
+        {
+          "path": "/people/jlu-liwenjun/appointments/1/quote",
+          "sha256": "d7da3abe285efa1242446cc8229e158521344adf0a4ba5de690a77624399f600"
+        },
+        {
+          "path": "/people/jlu-liwenjun/appointments/2/quote",
+          "sha256": "000f8720706d96ff1c33f5bfdc32214eb493d6160440f3713987e6899c08299d"
+        },
+        {
+          "path": "/people/jlu-liwenjun/appointments/3/quote",
+          "sha256": "245652306fd3ca5ded46b8e2b73a39f5cd3164c9d0c3bc1ab72bc63b25350d3c"
+        },
+        {
+          "path": "/people/jlu-liwenjun/publications/jlu-liwenjun-work1/quote",
+          "sha256": "47433e0ca7f7b9173a22203d180a2ea13906a2061217c616ce36170452086ca7"
+        },
+        {
+          "path": "/people/jlu-liwenjun/publications/jlu-liwenjun-work2/quote",
+          "sha256": "afb0d362caf648a587a5011757380ca3abce41764cba65d085e9cc2a3d8fe425"
+        },
+        {
+          "path": "/people/jlu-liwenjun/teaching/quote",
+          "sha256": "90817b2fd76163caf8b55e40edde00eba75f94c504fb0e2aef324ea6d0ad5347"
+        },
+        {
+          "path": "/people/jlu-liwenjun/teaching/quote",
+          "sha256": "c17dec649a5bf37730fba8aa4afbd3fa4c9dbefebb9158392d418f2b066296dd"
+        },
+        {
+          "path": "/people/jlu-liwenjun/teaching/quote",
+          "sha256": "a6b8394912377f0b1604fdfcb97e35d2edcc3e769c36858830ca2b49671801eb"
+        },
+        {
+          "path": "/people/jlu-wangjuan/education/0/quote",
+          "sha256": "bd5acef0ba3f7ef8f6461b3a397dc53a5944c5116116a8510bf431627a133761"
+        },
+        {
+          "path": "/people/jlu-wangjuan/education/1/quote",
+          "sha256": "a282b35aa53f58815b373da9f849a2adcd8d4192c5e86e4cfc918f7efb01f2ff"
+        },
+        {
+          "path": "/people/jlu-wangjuan/education/2/quote",
+          "sha256": "f6fc97a775f8dc24a10fd3eca355e8aa4da8cbe5bf8d16b1475eebaa637d71d6"
+        },
+        {
+          "path": "/people/jlu-wangjuan/education/3/quote",
+          "sha256": "c6719d050d5f839832406ad33e1f418c05f4ac21771357fef2e44ce97c85871c"
+        },
+        {
+          "path": "/people/jlu-wangjuan/professional_training/0/quote",
+          "sha256": "ca81585c62c4c9b8b0997db2709e4319aae6e85e55df720638c25fa731b22be1"
+        },
+        {
+          "path": "/people/jlu-wangjuan/appointments/0/quote",
+          "sha256": "8b0218ad0340f14d42a686a53c541a2b5e269e1a718fa87db40f9e83ad9b1ef4"
+        },
+        {
+          "path": "/people/jlu-wangjuan/appointments/1/quote",
+          "sha256": "849e064899712184ea08a1840a50c5ad83c7c9957a603ff0dcc44236846e91ed"
+        },
+        {
+          "path": "/people/jlu-wangjuan/appointments/2/quote",
+          "sha256": "bcf531dd776f04cec47a88904dc79ff30b1b03ce95f1fa80a3afbe5641515781"
+        },
+        {
+          "path": "/people/jlu-wangjuan/publications/0/quote",
+          "sha256": "2b6397af6f84c95b7c6bdbda40fd7a30216bf5d6070f6abd80d61f816ff95f5b"
+        },
+        {
+          "path": "/people/jlu-wangjuan/publications/1/quote",
+          "sha256": "2f14ba8e01b01f11ba44add0d469d1a3e4b5b3f4475d368d1a3ddb71900405f8"
+        },
+        {
+          "path": "/people/jlu-wangjuan/teaching/0/quote",
+          "sha256": "09966999f07f6b997d2e76c13e4ca82210fe773a5cb623f6efe2738a852367f3"
+        },
+        {
+          "path": "/people/jlu-wangjuan/teaching/1/quote",
+          "sha256": "09966999f07f6b997d2e76c13e4ca82210fe773a5cb623f6efe2738a852367f3"
+        },
+        {
+          "path": "/people/jlu-wangjuan/teaching/2/quote",
+          "sha256": "09966999f07f6b997d2e76c13e4ca82210fe773a5cb623f6efe2738a852367f3"
+        },
+        {
+          "path": "/people/jlu-wangjuan/teaching/3/quote",
+          "sha256": "09966999f07f6b997d2e76c13e4ca82210fe773a5cb623f6efe2738a852367f3"
+        },
+        {
+          "path": "/people/jlu-wangjuan/identity_evidence/0/quote",
+          "sha256": "622ebe3ab3f02c75b9dd81c63076f1ea2385306fb37e5f890771f469a552d304"
+        },
+        {
+          "path": "/people/jlu-wangjuan/identity_evidence/1/quote",
+          "sha256": "1e6080ed39f2f6b9c0a69588e1e82e80de7f0cb89b26872ece9a1f2babcd2900"
+        },
+        {
+          "path": "/people/jlu-wangjuan/identity_evidence/2/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "path": "/people/jlu-wangjuan/identity_evidence/3/quote",
+          "sha256": "901330d99359335ab512d562d766cd0bbf20d5f499350e8d06b762a9c55d37b9"
+        },
+        {
+          "path": "/people/jlu-wangjuan/department_below_school_evidence/quote",
+          "sha256": "622ebe3ab3f02c75b9dd81c63076f1ea2385306fb37e5f890771f469a552d304"
+        },
+        {
+          "path": "/people/jlu-wangjuan/source_date_overlap/source_evidence/0/quote",
+          "sha256": "ca81585c62c4c9b8b0997db2709e4319aae6e85e55df720638c25fa731b22be1"
+        },
+        {
+          "path": "/people/jlu-wangjuan/source_date_overlap/source_evidence/1/quote",
+          "sha256": "8b0218ad0340f14d42a686a53c541a2b5e269e1a718fa87db40f9e83ad9b1ef4"
+        },
+        {
+          "path": "/people/jlu-wangjuan/education/jlu-wangjuan-education-1/quote",
+          "sha256": "bd5acef0ba3f7ef8f6461b3a397dc53a5944c5116116a8510bf431627a133761"
+        },
+        {
+          "path": "/people/jlu-wangjuan/education/jlu-wangjuan-education-2/quote",
+          "sha256": "a282b35aa53f58815b373da9f849a2adcd8d4192c5e86e4cfc918f7efb01f2ff"
+        },
+        {
+          "path": "/people/jlu-wangjuan/education/jlu-wangjuan-education-3/quote",
+          "sha256": "f6fc97a775f8dc24a10fd3eca355e8aa4da8cbe5bf8d16b1475eebaa637d71d6"
+        },
+        {
+          "path": "/people/jlu-wangjuan/education/jlu-wangjuan-education-4/quote",
+          "sha256": "c6719d050d5f839832406ad33e1f418c05f4ac21771357fef2e44ce97c85871c"
+        },
+        {
+          "path": "/people/jlu-wangjuan/professional_training/jlu-wangjuan-training-1/quote",
+          "sha256": "ca81585c62c4c9b8b0997db2709e4319aae6e85e55df720638c25fa731b22be1"
+        },
+        {
+          "path": "/people/jlu-wangjuan/appointments/0/quote",
+          "sha256": "8b0218ad0340f14d42a686a53c541a2b5e269e1a718fa87db40f9e83ad9b1ef4"
+        },
+        {
+          "path": "/people/jlu-wangjuan/appointments/1/quote",
+          "sha256": "849e064899712184ea08a1840a50c5ad83c7c9957a603ff0dcc44236846e91ed"
+        },
+        {
+          "path": "/people/jlu-wangjuan/appointments/2/quote",
+          "sha256": "bcf531dd776f04cec47a88904dc79ff30b1b03ce95f1fa80a3afbe5641515781"
+        },
+        {
+          "path": "/people/jlu-wangjuan/publications/jlu-wangjuan-work-1/quote",
+          "sha256": "2b6397af6f84c95b7c6bdbda40fd7a30216bf5d6070f6abd80d61f816ff95f5b"
+        },
+        {
+          "path": "/people/jlu-wangjuan/publications/jlu-wangjuan-work-2/quote",
+          "sha256": "2f14ba8e01b01f11ba44add0d469d1a3e4b5b3f4475d368d1a3ddb71900405f8"
+        },
+        {
+          "path": "/people/jlu-wangjuan/teaching/quote",
+          "sha256": "09966999f07f6b997d2e76c13e4ca82210fe773a5cb623f6efe2738a852367f3"
+        },
+        {
+          "path": "/people/jlu-wangjuan/teaching/quote",
+          "sha256": "09966999f07f6b997d2e76c13e4ca82210fe773a5cb623f6efe2738a852367f3"
+        },
+        {
+          "path": "/people/jlu-wangjuan/teaching/quote",
+          "sha256": "09966999f07f6b997d2e76c13e4ca82210fe773a5cb623f6efe2738a852367f3"
+        },
+        {
+          "path": "/people/jlu-wangjuan/teaching/quote",
+          "sha256": "09966999f07f6b997d2e76c13e4ca82210fe773a5cb623f6efe2738a852367f3"
+        },
+        {
+          "path": "/people/jlu-jinlina/education/0/quote",
+          "sha256": "30a18c97b6bd15eae3eb07b8bd988775aa5ed2d777dbef29c4343429189debc0"
+        },
+        {
+          "path": "/people/jlu-jinlina/education/1/quote",
+          "sha256": "9ba61ac7afcb31c96a622f3d85d86a9ed3934b172434dd530b9106424ca10870"
+        },
+        {
+          "path": "/people/jlu-jinlina/professional_training/0/quote",
+          "sha256": "707320cbe4ef1b326cb7ee5e0e4141763da7bc65194a2508628b4c01550dc003"
+        },
+        {
+          "path": "/people/jlu-jinlina/professional_training/1/quote",
+          "sha256": "744df1ed216683daa4d01b3c3aa89708be730a24b41ac5f47a5c983626a8a9d4"
+        },
+        {
+          "path": "/people/jlu-jinlina/professional_training/2/quote",
+          "sha256": "de08fd123ecfdb5fa33ff87ab5f711faaadb8479fd4ecaf847fa72da0b848f5e"
+        },
+        {
+          "path": "/people/jlu-jinlina/appointments/0/quote",
+          "sha256": "83ce97c1dea576001701cd7b945efc034b49c69b66c5130d4f0d4e26ca234c6d"
+        },
+        {
+          "path": "/people/jlu-jinlina/appointments/1/quote",
+          "sha256": "64b15ee81b8183e50fbe42671b135a7490caeb3f77dcdcfefde5e56234e62cda"
+        },
+        {
+          "path": "/people/jlu-jinlina/appointments/2/quote",
+          "sha256": "9faf469b8e8634ec4af1debd7edc15ef2df7748fbe3889d0e4de2369542b2ebf"
+        },
+        {
+          "path": "/people/jlu-jinlina/research_directions/0/quote",
+          "sha256": "552701cb9a2c92f25a4389cc039f46ec0e1eb6c0f5b383c6acb6cb285e481425"
+        },
+        {
+          "path": "/people/jlu-jinlina/publications/0/quote",
+          "sha256": "90d946affc231314f67a5e3f87bf43863986001ede93038b0ceedcfe4a4cbbd0"
+        },
+        {
+          "path": "/people/jlu-jinlina/publications/1/quote",
+          "sha256": "86ab03eca10a0412e4c2260a5d2deaad91d17db320e1ab0ca1a754e983610c8d"
+        },
+        {
+          "path": "/people/jlu-jinlina/teaching/0/quote",
+          "sha256": "5acc2f9742093d7db8cae8e9ef5fbae92f03ff8c81a649a5dd12be3f351e0cfc"
+        },
+        {
+          "path": "/people/jlu-jinlina/teaching/1/quote",
+          "sha256": "5acc2f9742093d7db8cae8e9ef5fbae92f03ff8c81a649a5dd12be3f351e0cfc"
+        },
+        {
+          "path": "/people/jlu-jinlina/teaching/2/quote",
+          "sha256": "5acc2f9742093d7db8cae8e9ef5fbae92f03ff8c81a649a5dd12be3f351e0cfc"
+        },
+        {
+          "path": "/people/jlu-jinlina/teaching/3/quote",
+          "sha256": "5acc2f9742093d7db8cae8e9ef5fbae92f03ff8c81a649a5dd12be3f351e0cfc"
+        },
+        {
+          "path": "/people/jlu-jinlina/teaching/4/quote",
+          "sha256": "5acc2f9742093d7db8cae8e9ef5fbae92f03ff8c81a649a5dd12be3f351e0cfc"
+        },
+        {
+          "path": "/people/jlu-jinlina/identity_evidence/0/quote",
+          "sha256": "be67f59bce18bf2cb1dc32deb9c0344b0be03d23a4bdcf675ec0489f16b83561"
+        },
+        {
+          "path": "/people/jlu-jinlina/identity_evidence/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "path": "/people/jlu-jinlina/identity_evidence/2/quote",
+          "sha256": "901330d99359335ab512d562d766cd0bbf20d5f499350e8d06b762a9c55d37b9"
+        },
+        {
+          "path": "/people/jlu-jinlina/identity_evidence/3/quote",
+          "sha256": "be67f59bce18bf2cb1dc32deb9c0344b0be03d23a4bdcf675ec0489f16b83561"
+        },
+        {
+          "path": "/people/jlu-jinlina/identity_evidence/4/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "path": "/people/jlu-jinlina/identity_evidence/5/quote",
+          "sha256": "901330d99359335ab512d562d766cd0bbf20d5f499350e8d06b762a9c55d37b9"
+        },
+        {
+          "path": "/people/jlu-jinlina/discipline/quote",
+          "sha256": "7b79202c3c266dc94d2e92841657069e4fd616cc83c9e1bdefa48c8174c76dfc"
+        },
+        {
+          "path": "/people/jlu-jinlina/education/jlu-jinlina-education-1/quote",
+          "sha256": "30a18c97b6bd15eae3eb07b8bd988775aa5ed2d777dbef29c4343429189debc0"
+        },
+        {
+          "path": "/people/jlu-jinlina/education/jlu-jinlina-education-2/quote",
+          "sha256": "9ba61ac7afcb31c96a622f3d85d86a9ed3934b172434dd530b9106424ca10870"
+        },
+        {
+          "path": "/people/jlu-jinlina/professional_training/jlu-jinlina-training-1/quote",
+          "sha256": "707320cbe4ef1b326cb7ee5e0e4141763da7bc65194a2508628b4c01550dc003"
+        },
+        {
+          "path": "/people/jlu-jinlina/professional_training/jlu-jinlina-training-2/quote",
+          "sha256": "744df1ed216683daa4d01b3c3aa89708be730a24b41ac5f47a5c983626a8a9d4"
+        },
+        {
+          "path": "/people/jlu-jinlina/professional_training/jlu-jinlina-training-3/quote",
+          "sha256": "de08fd123ecfdb5fa33ff87ab5f711faaadb8479fd4ecaf847fa72da0b848f5e"
+        },
+        {
+          "path": "/people/jlu-jinlina/appointments/0/quote",
+          "sha256": "83ce97c1dea576001701cd7b945efc034b49c69b66c5130d4f0d4e26ca234c6d"
+        },
+        {
+          "path": "/people/jlu-jinlina/appointments/1/quote",
+          "sha256": "64b15ee81b8183e50fbe42671b135a7490caeb3f77dcdcfefde5e56234e62cda"
+        },
+        {
+          "path": "/people/jlu-jinlina/appointments/2/quote",
+          "sha256": "9faf469b8e8634ec4af1debd7edc15ef2df7748fbe3889d0e4de2369542b2ebf"
+        },
+        {
+          "path": "/people/jlu-jinlina/publications/jlu-jinlina-work-1/quote",
+          "sha256": "90d946affc231314f67a5e3f87bf43863986001ede93038b0ceedcfe4a4cbbd0"
+        },
+        {
+          "path": "/people/jlu-jinlina/publications/jlu-jinlina-work-2/quote",
+          "sha256": "86ab03eca10a0412e4c2260a5d2deaad91d17db320e1ab0ca1a754e983610c8d"
+        },
+        {
+          "path": "/people/jlu-jinlina/teaching/quote",
+          "sha256": "5acc2f9742093d7db8cae8e9ef5fbae92f03ff8c81a649a5dd12be3f351e0cfc"
+        },
+        {
+          "path": "/people/jlu-jinlina/teaching/quote",
+          "sha256": "5acc2f9742093d7db8cae8e9ef5fbae92f03ff8c81a649a5dd12be3f351e0cfc"
+        },
+        {
+          "path": "/people/jlu-jinlina/teaching/quote",
+          "sha256": "5acc2f9742093d7db8cae8e9ef5fbae92f03ff8c81a649a5dd12be3f351e0cfc"
+        },
+        {
+          "path": "/people/jlu-jinlina/teaching/quote",
+          "sha256": "5acc2f9742093d7db8cae8e9ef5fbae92f03ff8c81a649a5dd12be3f351e0cfc"
+        },
+        {
+          "path": "/people/jlu-jinlina/teaching/quote",
+          "sha256": "5acc2f9742093d7db8cae8e9ef5fbae92f03ff8c81a649a5dd12be3f351e0cfc"
+        },
+        {
+          "path": "/org_units/jlu-public-health/wave227/quote",
+          "sha256": "901330d99359335ab512d562d766cd0bbf20d5f499350e8d06b762a9c55d37b9"
+        }
+      ],
+      "mapping": "原事实/必要摘录/原时间basis保留；工具行号仅私有trace。教育与训练合并不改三态或拆分事件；吕授课对象写入可见note，王教材副主编/版次写入note；李现学科不回填历史；金异常DOI保留原值不生成链接。"
+    },
+    {
+      "baseline_people": 713,
+      "baseline_commit": "d2471c406a01c504b47fa984589ef02f3623768f",
+      "people": [
+        {
+          "person_id": "jlu-guochunfang",
+          "source_candidate_sha256": "722975d42d2082066cb9d08c5f8bd13b8a423984d696fc1f93295aee1c84fe91",
+          "source_evidence_sha256": "69bee246d18818f689b1ff46dd10136635ed4c60825290202aadb8eb20adf7b2",
+          "source_review_sha256": "330d8f12889a4cbfeb903c34449c8265cde34a3ca3fb11439d7cf6dac31da93f",
+          "education": 2,
+          "degree_true_false_null": [
+            2,
+            0,
+            0
+          ],
+          "mentors": 0,
+          "appointments": 8,
+          "supervision_qualifications": 0,
+          "publications": 1,
+          "creative_works": 1,
+          "teaching_groups": 5
+        },
+        {
+          "person_id": "jlu-zhouxin",
+          "source_candidate_sha256": "a1c08bb9dbaf7f9bfaca5901894a75395c9ec45ca222960a1239c1b4a979f4c5",
+          "source_evidence_sha256": "28b0af8283d2a32296adce235ad5641d3af84215b9971fb4f28c73c9c188e9a6",
+          "source_review_sha256": "ccad115c1b75cc58d034460e957e7ae5f69bd9f5a414c64da462a18f539d5401",
+          "education": 3,
+          "degree_true_false_null": [
+            2,
+            1,
+            0
+          ],
+          "mentors": 4,
+          "appointments": 3,
+          "supervision_qualifications": 1,
+          "publications": 2,
+          "creative_works": 0,
+          "teaching_groups": 0
+        },
+        {
+          "person_id": "jlu-yuxianfeng",
+          "source_candidate_sha256": "8e57a13b8d34369b8085bfb5f1246ec5137237f230e369394495861fe1df3066",
+          "source_evidence_sha256": "e68ef55377fbd595fb1ab439d65d1229ca9ce375c3099fa143090a918001f5fd",
+          "source_review_sha256": "71e5dd6a9ce1fb17ed1229c9a344fa12fdd4cfeb8357141f9d84fc4ee0ccd8eb",
+          "education": 6,
+          "degree_true_false_null": [
+            0,
+            3,
+            3
+          ],
+          "mentors": 2,
+          "appointments": 2,
+          "supervision_qualifications": 0,
+          "publications": 2,
+          "creative_works": 0,
+          "teaching_groups": 2
+        },
+        {
+          "person_id": "jlu-sunwanchun",
+          "source_candidate_sha256": "8e57a13b8d34369b8085bfb5f1246ec5137237f230e369394495861fe1df3066",
+          "source_evidence_sha256": "e68ef55377fbd595fb1ab439d65d1229ca9ce375c3099fa143090a918001f5fd",
+          "source_review_sha256": "71e5dd6a9ce1fb17ed1229c9a344fa12fdd4cfeb8357141f9d84fc4ee0ccd8eb",
+          "education": 4,
+          "degree_true_false_null": [
+            2,
+            1,
+            1
+          ],
+          "mentors": 1,
+          "appointments": 2,
+          "supervision_qualifications": 0,
+          "publications": 2,
+          "creative_works": 0,
+          "teaching_groups": 0
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/people/jlu-guochunfang/education/0/quote",
+          "sha256": "54d54c6c2e289a9eedb913c4d9ce87494ae52d6e78080dae14882f505341c64e"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/education/1/quote",
+          "sha256": "86e94b4f93b972838619c32cf872ce2ee111cfc7c5fb742db8bf3587ed2f20e7"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/appointments/0/quote",
+          "sha256": "3023dea112639e68801efd603fac22470d781a4a61e88d6fb8f834f0677399a8"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/appointments/1/quote",
+          "sha256": "d0a886d456b3cdd1c76736f2b16600bc702039777cf76288e8fc2bfca8af2818"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/appointments/2/quote",
+          "sha256": "29501f861c042eb36596279e1036f5716fd63805a0686c5ae84adac7f143b7f2"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/appointments/3/quote",
+          "sha256": "d75f78a5f3c2cd393c1fd32cb75425b30543e3d5c64524717d1f87b05e5cbcd6"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/appointments/4/quote",
+          "sha256": "8c49afbb32d2c03e76001362719c2693d1791b71cbb713ec9d770b3026b2ec97"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/appointments/5/quote",
+          "sha256": "61eadaf9b0fb57cdf1c55da8aa3f178dde7cbcc20b684f47871d624a4d4fc72c"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/appointments/6/quote",
+          "sha256": "40c0b9be1fef394a8571775c6841e0c29bd470acb18808fba2a38510a19196d4"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/appointments/7/quote",
+          "sha256": "323809f75c8b9a505725c66b35c024b7b780b8cc1ed643a09b0a631e1c133941"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/teaching/0/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/teaching/1/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/teaching/2/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/teaching/3/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/teaching/4/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/publications/0/quote",
+          "sha256": "54dd828455d2f3526eb24a4908f2c8818bbc77ab4d4fe2b575b8d853c1a02286"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/creative_works/0/quote",
+          "sha256": "5d204f5540e8f489f70fa1e97c86a2ceecfd063a0bfe5a19de6e3027f99fc88d"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/research_directions/0/quote",
+          "sha256": "57e7e067b5755ec6d3041a5318eaab0f74133a78ba37419d14cce40ed3a33451"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/field_provenance/profile_school_department/quote",
+          "sha256": "3e82eb2df7ea99f119fbbd7c063c0bb9990c8e00b2154b8300c5af093cf171ee"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/field_provenance/directory_affiliation/quote",
+          "sha256": "b6bbee304ec71a2b5eb6a10bfc9c5068833aa17155547e0a30cc9edc7616d14d"
+        },
+        {
+          "json_pointer": "/people/jlu-guochunfang/field_provenance/directory_person_listing/quote",
+          "sha256": "dffc4a916ba687d1646bfbd62c0834655ebfbd6b99b77092b222786cafb2a3f1"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "86ae1ef06e49f4285da332c71ef07cb5ccf7791b8c08685e8202f9d9fc017225"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "32df44f5dc405e2a098a29fa4f58177f6a2bd441deff89b7fbd9174d183c940b"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "fe259c3c1dc50492c226dcfea231d07a53b482bbf4a3839e647ba6d613d4b4ce"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "5f19d287025b3f29257f62646881b84966f12f3971783ad44c3ef125d6e406c9"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "323809f75c8b9a505725c66b35c024b7b780b8cc1ed643a09b0a631e1c133941"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "57e7e067b5755ec6d3041a5318eaab0f74133a78ba37419d14cce40ed3a33451"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "003ec24cf120b68160279461bfddbfa5932efbc5ca36f54da9b719cae81f99bf"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "ffcfca128700b6cbc2891be196b4af852fed529e16ef00255cba68e4d11a3943"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "5d204f5540e8f489f70fa1e97c86a2ceecfd063a0bfe5a19de6e3027f99fc88d"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "54dd828455d2f3526eb24a4908f2c8818bbc77ab4d4fe2b575b8d853c1a02286"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "3e82eb2df7ea99f119fbbd7c063c0bb9990c8e00b2154b8300c5af093cf171ee"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "b6bbee304ec71a2b5eb6a10bfc9c5068833aa17155547e0a30cc9edc7616d14d"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "ce057a37755d477ddccb99b3f7b641f949e6c20a4c0b30e5eb8c27c23eb44259"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "dffc4a916ba687d1646bfbd62c0834655ebfbd6b99b77092b222786cafb2a3f1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "54d54c6c2e289a9eedb913c4d9ce87494ae52d6e78080dae14882f505341c64e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "54d54c6c2e289a9eedb913c4d9ce87494ae52d6e78080dae14882f505341c64e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "86e94b4f93b972838619c32cf872ce2ee111cfc7c5fb742db8bf3587ed2f20e7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "86e94b4f93b972838619c32cf872ce2ee111cfc7c5fb742db8bf3587ed2f20e7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "3023dea112639e68801efd603fac22470d781a4a61e88d6fb8f834f0677399a8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "3023dea112639e68801efd603fac22470d781a4a61e88d6fb8f834f0677399a8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d0a886d456b3cdd1c76736f2b16600bc702039777cf76288e8fc2bfca8af2818"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d0a886d456b3cdd1c76736f2b16600bc702039777cf76288e8fc2bfca8af2818"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "29501f861c042eb36596279e1036f5716fd63805a0686c5ae84adac7f143b7f2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "29501f861c042eb36596279e1036f5716fd63805a0686c5ae84adac7f143b7f2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d75f78a5f3c2cd393c1fd32cb75425b30543e3d5c64524717d1f87b05e5cbcd6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d75f78a5f3c2cd393c1fd32cb75425b30543e3d5c64524717d1f87b05e5cbcd6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8c49afbb32d2c03e76001362719c2693d1791b71cbb713ec9d770b3026b2ec97"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8c49afbb32d2c03e76001362719c2693d1791b71cbb713ec9d770b3026b2ec97"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "61eadaf9b0fb57cdf1c55da8aa3f178dde7cbcc20b684f47871d624a4d4fc72c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "61eadaf9b0fb57cdf1c55da8aa3f178dde7cbcc20b684f47871d624a4d4fc72c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "40c0b9be1fef394a8571775c6841e0c29bd470acb18808fba2a38510a19196d4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "40c0b9be1fef394a8571775c6841e0c29bd470acb18808fba2a38510a19196d4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "323809f75c8b9a505725c66b35c024b7b780b8cc1ed643a09b0a631e1c133941"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "323809f75c8b9a505725c66b35c024b7b780b8cc1ed643a09b0a631e1c133941"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "384eee34bc26e76d5c2b2452a39fc5dea1b4b92c86b6255cf1a46ca064f4cb77"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "54dd828455d2f3526eb24a4908f2c8818bbc77ab4d4fe2b575b8d853c1a02286"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "54dd828455d2f3526eb24a4908f2c8818bbc77ab4d4fe2b575b8d853c1a02286"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "86ae1ef06e49f4285da332c71ef07cb5ccf7791b8c08685e8202f9d9fc017225"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "32df44f5dc405e2a098a29fa4f58177f6a2bd441deff89b7fbd9174d183c940b"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/education/0/quote",
+          "sha256": "0828df622537a2a704f038e61121dfa0775fcf124e9c6a07756ca850bbc5d830"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/education/0/award_evidence/quote",
+          "sha256": "e7a40dd8f5097d6af04b61e07c644baa4c7f8b81f36a151b70fde2fa5c95d600"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/education/1/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/education/1/award_evidence/quote",
+          "sha256": "e7a40dd8f5097d6af04b61e07c644baa4c7f8b81f36a151b70fde2fa5c95d600"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/education/2/quote",
+          "sha256": "8669a555cd1d11bc3cdc2be419bcdc11fd41dfa5cb423a93ba7def98f80c98bb"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/mentor_relations/0/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/mentor_relations/1/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/mentor_relations/2/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/mentor_relations/3/quote",
+          "sha256": "8669a555cd1d11bc3cdc2be419bcdc11fd41dfa5cb423a93ba7def98f80c98bb"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/appointments/0/quote",
+          "sha256": "a41e203f29bfcef82cbb06ab10d65f8b363eacfd1780a5c6709a5e034a792aab"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/appointments/1/quote",
+          "sha256": "3b49d368278963e4957b7199cf6e9402778c9e7638a3346578d465574dd40a4c"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/appointments/2/quote",
+          "sha256": "8e114f97b41b4ecb33021a48228ff53f239b254956fb0856605c9bb6981aeaea"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/appointments/3/quote",
+          "sha256": "4ee76f8794d308e4fcfa6be6467149c1b36db4f832549c4b4566a8f74981a265"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/research_directions/0/quote",
+          "sha256": "6e9ecb6174f0f5b1ed0e3ab9a8fbd8fbfdf5a545dcc6d18543f6fceeb925fc8f"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/publications/0/quote",
+          "sha256": "b8a2ce103ba319cbcd77e01b6833fe43f2ba384d39094c89fd8d220d3fd08f3c"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/publications/1/quote",
+          "sha256": "b7c8476304c2d2478e6854fa685b2762e67b9cff8084dc9a07b2f7a13483a560"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/field_provenance/identity_and_profile_affiliations/quote",
+          "sha256": "53b32e8db46e32756f94fd86de1747ca3654a9cbe0199a3b6f0cc17408752b86"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/field_provenance/directory_person/quote",
+          "sha256": "d73aada52898d2b905a72874f76d404e68af9ec65deab9c62a20c56ca416b149"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/field_provenance/directory_group/quote",
+          "sha256": "4afe9242df7fcb31a1f2a4b76dc31f037c767b83a0ac310aff19f10327043077"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/field_provenance/directory_title/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/conflicts/0/quote_timeline",
+          "sha256": "8669a555cd1d11bc3cdc2be419bcdc11fd41dfa5cb423a93ba7def98f80c98bb"
+        },
+        {
+          "json_pointer": "/people/jlu-zhouxin/conflicts/0/quote_narrative",
+          "sha256": "605095edb5e245a406a2eb7cccc771fac4477d59ffb7d3560f992e3f2ce7078d"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "e7a40dd8f5097d6af04b61e07c644baa4c7f8b81f36a151b70fde2fa5c95d600"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "53b32e8db46e32756f94fd86de1747ca3654a9cbe0199a3b6f0cc17408752b86"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "0828df622537a2a704f038e61121dfa0775fcf124e9c6a07756ca850bbc5d830"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "8669a555cd1d11bc3cdc2be419bcdc11fd41dfa5cb423a93ba7def98f80c98bb"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "605095edb5e245a406a2eb7cccc771fac4477d59ffb7d3560f992e3f2ce7078d"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "a41e203f29bfcef82cbb06ab10d65f8b363eacfd1780a5c6709a5e034a792aab"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "3b49d368278963e4957b7199cf6e9402778c9e7638a3346578d465574dd40a4c"
+        },
+        {
+          "json_pointer": "/excerpts/8/quote",
+          "sha256": "8e114f97b41b4ecb33021a48228ff53f239b254956fb0856605c9bb6981aeaea"
+        },
+        {
+          "json_pointer": "/excerpts/9/quote",
+          "sha256": "4ee76f8794d308e4fcfa6be6467149c1b36db4f832549c4b4566a8f74981a265"
+        },
+        {
+          "json_pointer": "/excerpts/10/quote",
+          "sha256": "6e9ecb6174f0f5b1ed0e3ab9a8fbd8fbfdf5a545dcc6d18543f6fceeb925fc8f"
+        },
+        {
+          "json_pointer": "/excerpts/11/quote",
+          "sha256": "b8a2ce103ba319cbcd77e01b6833fe43f2ba384d39094c89fd8d220d3fd08f3c"
+        },
+        {
+          "json_pointer": "/excerpts/12/quote",
+          "sha256": "b7c8476304c2d2478e6854fa685b2762e67b9cff8084dc9a07b2f7a13483a560"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "4afe9242df7fcb31a1f2a4b76dc31f037c767b83a0ac310aff19f10327043077"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "f2938f5c7528a4de5f6271d1ce57b0ada25db6d8342755e3ef89364be724b0f9"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "d73aada52898d2b905a72874f76d404e68af9ec65deab9c62a20c56ca416b149"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "19366fb4b0e5175fd503942ff946d0139890108746300e62ca609321b622d54a"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "53b32e8db46e32756f94fd86de1747ca3654a9cbe0199a3b6f0cc17408752b86"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0828df622537a2a704f038e61121dfa0775fcf124e9c6a07756ca850bbc5d830"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "e7a40dd8f5097d6af04b61e07c644baa4c7f8b81f36a151b70fde2fa5c95d600"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0828df622537a2a704f038e61121dfa0775fcf124e9c6a07756ca850bbc5d830"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "e7a40dd8f5097d6af04b61e07c644baa4c7f8b81f36a151b70fde2fa5c95d600"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "e7a40dd8f5097d6af04b61e07c644baa4c7f8b81f36a151b70fde2fa5c95d600"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "e7a40dd8f5097d6af04b61e07c644baa4c7f8b81f36a151b70fde2fa5c95d600"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8669a555cd1d11bc3cdc2be419bcdc11fd41dfa5cb423a93ba7def98f80c98bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8669a555cd1d11bc3cdc2be419bcdc11fd41dfa5cb423a93ba7def98f80c98bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9b6d15a0c8053258699df1598ca6a5458146722f9a975c19fe9ef398dca15a3e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8669a555cd1d11bc3cdc2be419bcdc11fd41dfa5cb423a93ba7def98f80c98bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8669a555cd1d11bc3cdc2be419bcdc11fd41dfa5cb423a93ba7def98f80c98bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a41e203f29bfcef82cbb06ab10d65f8b363eacfd1780a5c6709a5e034a792aab"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a41e203f29bfcef82cbb06ab10d65f8b363eacfd1780a5c6709a5e034a792aab"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "3b49d368278963e4957b7199cf6e9402778c9e7638a3346578d465574dd40a4c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "3b49d368278963e4957b7199cf6e9402778c9e7638a3346578d465574dd40a4c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8e114f97b41b4ecb33021a48228ff53f239b254956fb0856605c9bb6981aeaea"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8e114f97b41b4ecb33021a48228ff53f239b254956fb0856605c9bb6981aeaea"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4ee76f8794d308e4fcfa6be6467149c1b36db4f832549c4b4566a8f74981a265"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4ee76f8794d308e4fcfa6be6467149c1b36db4f832549c4b4566a8f74981a265"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b8a2ce103ba319cbcd77e01b6833fe43f2ba384d39094c89fd8d220d3fd08f3c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b8a2ce103ba319cbcd77e01b6833fe43f2ba384d39094c89fd8d220d3fd08f3c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b7c8476304c2d2478e6854fa685b2762e67b9cff8084dc9a07b2f7a13483a560"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b7c8476304c2d2478e6854fa685b2762e67b9cff8084dc9a07b2f7a13483a560"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/page_date_evidence/quote",
+          "sha256": "eb48e665e2b874ef2f84ce4cd94fd99ad04c1886c913fc3cc927f40e7fc03dab"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/identity_evidence/0/quote",
+          "sha256": "e8409ccdccd0641b8f6e67b262d1b89f669dc7c4805f7aaa5c92a1f54bda9848"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/identity_evidence/1/quote",
+          "sha256": "58ac2314ea5710337d3f3507cd5503ee549882e3541670503e39c6d3776777c9"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/identity_evidence/2/quote",
+          "sha256": "63d4e4afc8e95ff9791392a247543573e10683016ee2be882626c3135fc9d00a"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/identity_evidence/3/quote",
+          "sha256": "e8409ccdccd0641b8f6e67b262d1b89f669dc7c4805f7aaa5c92a1f54bda9848"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/identity_evidence/4/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/education/0/quote",
+          "sha256": "382c51bb352c3c7264b1ef8e158c1dc392abf224a506c8548d1ddef24dce04c3"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/education/1/quote",
+          "sha256": "f0b43ecc4e5e863a975b2be441732083e0524380941115ff8872062e518cde85"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/education/2/quote",
+          "sha256": "d8cd4d9dc20fa37254afdf229790ade37d2e4eee82a4ab1e886663d91d2d624b"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/nondegree_training/0/quote",
+          "sha256": "120ab72756e7db7b140ac81f0acea9ffbf51bd9837dfa189db61ae9e63866ff8"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/nondegree_training/1/quote",
+          "sha256": "174df333edd28a2f166bbaf298b4d86e43ab4b75e82d037cd3f2b41843c9eac5"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/nondegree_training/2/quote",
+          "sha256": "a19a5fa2fc20d85831873d661a8c33c526eb8bd06156f84cc4edb31a49fa3818"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/mentor_relations/0/quote",
+          "sha256": "174df333edd28a2f166bbaf298b4d86e43ab4b75e82d037cd3f2b41843c9eac5"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/mentor_relations/1/quote",
+          "sha256": "a19a5fa2fc20d85831873d661a8c33c526eb8bd06156f84cc4edb31a49fa3818"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/appointments/0/quote",
+          "sha256": "7c033621db1319e83d25353c964d86797e643d7109412eb284c1c42f8b803f74"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/appointments/1/quote",
+          "sha256": "8bbb756c7ad85c5c550e2f64d0bc2e659e6a2e8a0d8f467d4425aadcb1b6f5a3"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/research_areas/0/quote",
+          "sha256": "f1713ddff8e9a54e4a84c335af5ecc17fe6f2d006df78e7d72e819bf2f214bae"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/publications/0/quote",
+          "sha256": "d79ed16d80da80ef78b88f02da266cf3e6c5b597d854061451056163bac3a475"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/publications/1/quote",
+          "sha256": "030c66c5314be0b6db3b074061a8d7e29d9cd07e19a7bc519606b763b2174133"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/teaching/0/quote",
+          "sha256": "b6e420783f3958d4054a43ce38e89124d3f69c3cc90ede32a69afeccfd426203"
+        },
+        {
+          "json_pointer": "/people/jlu-yuxianfeng/teaching/1/quote",
+          "sha256": "f31d9a3b00199e76382b87011ec20799a537cf1acb9be9b8fb8e98f52fdf662c"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "e8409ccdccd0641b8f6e67b262d1b89f669dc7c4805f7aaa5c92a1f54bda9848"
+        },
+        {
+          "json_pointer": "/1/quote",
+          "sha256": "58ac2314ea5710337d3f3507cd5503ee549882e3541670503e39c6d3776777c9"
+        },
+        {
+          "json_pointer": "/2/quote",
+          "sha256": "63d4e4afc8e95ff9791392a247543573e10683016ee2be882626c3135fc9d00a"
+        },
+        {
+          "json_pointer": "/3/quote",
+          "sha256": "eb48e665e2b874ef2f84ce4cd94fd99ad04c1886c913fc3cc927f40e7fc03dab"
+        },
+        {
+          "json_pointer": "/4/quote",
+          "sha256": "382c51bb352c3c7264b1ef8e158c1dc392abf224a506c8548d1ddef24dce04c3"
+        },
+        {
+          "json_pointer": "/5/quote",
+          "sha256": "f0b43ecc4e5e863a975b2be441732083e0524380941115ff8872062e518cde85"
+        },
+        {
+          "json_pointer": "/6/quote",
+          "sha256": "d8cd4d9dc20fa37254afdf229790ade37d2e4eee82a4ab1e886663d91d2d624b"
+        },
+        {
+          "json_pointer": "/7/quote",
+          "sha256": "120ab72756e7db7b140ac81f0acea9ffbf51bd9837dfa189db61ae9e63866ff8"
+        },
+        {
+          "json_pointer": "/8/quote",
+          "sha256": "174df333edd28a2f166bbaf298b4d86e43ab4b75e82d037cd3f2b41843c9eac5"
+        },
+        {
+          "json_pointer": "/9/quote",
+          "sha256": "a19a5fa2fc20d85831873d661a8c33c526eb8bd06156f84cc4edb31a49fa3818"
+        },
+        {
+          "json_pointer": "/10/quote",
+          "sha256": "7c033621db1319e83d25353c964d86797e643d7109412eb284c1c42f8b803f74"
+        },
+        {
+          "json_pointer": "/11/quote",
+          "sha256": "8bbb756c7ad85c5c550e2f64d0bc2e659e6a2e8a0d8f467d4425aadcb1b6f5a3"
+        },
+        {
+          "json_pointer": "/12/quote",
+          "sha256": "f1713ddff8e9a54e4a84c335af5ecc17fe6f2d006df78e7d72e819bf2f214bae"
+        },
+        {
+          "json_pointer": "/13/quote",
+          "sha256": "b6e420783f3958d4054a43ce38e89124d3f69c3cc90ede32a69afeccfd426203"
+        },
+        {
+          "json_pointer": "/14/quote",
+          "sha256": "f31d9a3b00199e76382b87011ec20799a537cf1acb9be9b8fb8e98f52fdf662c"
+        },
+        {
+          "json_pointer": "/15/quote",
+          "sha256": "d79ed16d80da80ef78b88f02da266cf3e6c5b597d854061451056163bac3a475"
+        },
+        {
+          "json_pointer": "/16/quote",
+          "sha256": "030c66c5314be0b6db3b074061a8d7e29d9cd07e19a7bc519606b763b2174133"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "e8409ccdccd0641b8f6e67b262d1b89f669dc7c4805f7aaa5c92a1f54bda9848"
+        },
+        {
+          "json_pointer": "/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/2/quote",
+          "sha256": "196d79e03003f6f999c7cbd7ea991a2035f5d21cd4414c787a823fbacd5bfe9e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "382c51bb352c3c7264b1ef8e158c1dc392abf224a506c8548d1ddef24dce04c3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "382c51bb352c3c7264b1ef8e158c1dc392abf224a506c8548d1ddef24dce04c3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f0b43ecc4e5e863a975b2be441732083e0524380941115ff8872062e518cde85"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f0b43ecc4e5e863a975b2be441732083e0524380941115ff8872062e518cde85"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d8cd4d9dc20fa37254afdf229790ade37d2e4eee82a4ab1e886663d91d2d624b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d8cd4d9dc20fa37254afdf229790ade37d2e4eee82a4ab1e886663d91d2d624b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "120ab72756e7db7b140ac81f0acea9ffbf51bd9837dfa189db61ae9e63866ff8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "120ab72756e7db7b140ac81f0acea9ffbf51bd9837dfa189db61ae9e63866ff8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "174df333edd28a2f166bbaf298b4d86e43ab4b75e82d037cd3f2b41843c9eac5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "174df333edd28a2f166bbaf298b4d86e43ab4b75e82d037cd3f2b41843c9eac5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a19a5fa2fc20d85831873d661a8c33c526eb8bd06156f84cc4edb31a49fa3818"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a19a5fa2fc20d85831873d661a8c33c526eb8bd06156f84cc4edb31a49fa3818"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "174df333edd28a2f166bbaf298b4d86e43ab4b75e82d037cd3f2b41843c9eac5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "174df333edd28a2f166bbaf298b4d86e43ab4b75e82d037cd3f2b41843c9eac5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a19a5fa2fc20d85831873d661a8c33c526eb8bd06156f84cc4edb31a49fa3818"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a19a5fa2fc20d85831873d661a8c33c526eb8bd06156f84cc4edb31a49fa3818"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7c033621db1319e83d25353c964d86797e643d7109412eb284c1c42f8b803f74"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7c033621db1319e83d25353c964d86797e643d7109412eb284c1c42f8b803f74"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8bbb756c7ad85c5c550e2f64d0bc2e659e6a2e8a0d8f467d4425aadcb1b6f5a3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8bbb756c7ad85c5c550e2f64d0bc2e659e6a2e8a0d8f467d4425aadcb1b6f5a3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b6e420783f3958d4054a43ce38e89124d3f69c3cc90ede32a69afeccfd426203"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b6e420783f3958d4054a43ce38e89124d3f69c3cc90ede32a69afeccfd426203"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f31d9a3b00199e76382b87011ec20799a537cf1acb9be9b8fb8e98f52fdf662c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f31d9a3b00199e76382b87011ec20799a537cf1acb9be9b8fb8e98f52fdf662c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d79ed16d80da80ef78b88f02da266cf3e6c5b597d854061451056163bac3a475"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d79ed16d80da80ef78b88f02da266cf3e6c5b597d854061451056163bac3a475"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "030c66c5314be0b6db3b074061a8d7e29d9cd07e19a7bc519606b763b2174133"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "030c66c5314be0b6db3b074061a8d7e29d9cd07e19a7bc519606b763b2174133"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "196d79e03003f6f999c7cbd7ea991a2035f5d21cd4414c787a823fbacd5bfe9e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "63d4e4afc8e95ff9791392a247543573e10683016ee2be882626c3135fc9d00a"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/page_date_evidence/quote",
+          "sha256": "2354ab83c4d013278742c872827157bd82d9862e0fc8e944a911a8b9f07cc7e2"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/identity_evidence/0/quote",
+          "sha256": "8b5a30cda740b5de3eaba3a5501efcf34c71664e85337faf9d0e80250d7c532d"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/identity_evidence/1/quote",
+          "sha256": "1101b604fa6af710f7efdf87ccf1a43419b5f22581afc04ff924c0062f2c4a38"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/identity_evidence/2/quote",
+          "sha256": "683d90896f80faad2b8ee05cea9cb3adf4a1d50844272b3178a8682dd6bae248"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/identity_evidence/3/quote",
+          "sha256": "430635e9e8d519ab6f5c96b30e890e8f6d45ed685dca0e32c2affd6f37cb3dd7"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/identity_evidence/4/quote",
+          "sha256": "fe9803cef28b1d0d9a575b1190a4a3a05824ad4187808ea0dfd73e7c89fb2e4e"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/identity_evidence/5/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/education/0/quote",
+          "sha256": "097288744ca7b6ffd8ccecca3adbb2a9eb4122df4a89b97cc06643e9d210218e"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/education/0/graduation_evidence/quote",
+          "sha256": "b0919c03a2cc620de86ae40f5772314c95a6805dab0fc6431866735cda280dc1"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/education/1/quote",
+          "sha256": "99001efa6870ff670b0b3581fcd31fd679153b8f999bfb99ca01b6bf12588ec8"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/education/1/award_evidence/quote",
+          "sha256": "28f7ca372e772a5b1d369bf7270f64ab9c25184c568861c59788e7c52f40685e"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/education/2/quote",
+          "sha256": "e639f673b938c7cf180a872c3140c907061ddb2e7fcdaf118d51f49931b45283"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/education/2/award_evidence/quote",
+          "sha256": "25bdc3a5b1aff9ce038f866de657f1a4946600ec4911fd401a2c9daedc924997"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/nondegree_training/0/research_group_context/quote",
+          "sha256": "3501f15b55f13e1f3ee03d8e233d0e0fe5210c29b3dbd745ebc8e66e90da043c"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/nondegree_training/0/quote",
+          "sha256": "5ea2fa108846812ba7e026ea2e6d038d0a0f1d853a10d0516b98347fe9e1e547"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/mentor_relations/0/quote",
+          "sha256": "25bdc3a5b1aff9ce038f866de657f1a4946600ec4911fd401a2c9daedc924997"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/appointments/0/quote",
+          "sha256": "0cba58ee42ed8bcfc3a12995cee6cd2b3f6d824c8df0e98fe4e58f6f6eca1c7e"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/appointments/1/quote",
+          "sha256": "427a410de9d56d485ab0c8b9764e5e30c78357c0192c0e038501cb80437f2083"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/source_reported_role_contexts/0/quote",
+          "sha256": "430635e9e8d519ab6f5c96b30e890e8f6d45ed685dca0e32c2affd6f37cb3dd7"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/source_reported_role_contexts/1/quote",
+          "sha256": "683d90896f80faad2b8ee05cea9cb3adf4a1d50844272b3178a8682dd6bae248"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/research_areas/0/quote",
+          "sha256": "e4b264d5d7b34166055b6cfd59a01cfbbcf13a00c088fffeeee0447dff305fcc"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/research_areas/1/quote",
+          "sha256": "e0c68a0bb6e2b21cca447c62f8ff5c32e4f6b1089fe05345af928f54fdcaa140"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/publications/0/quote",
+          "sha256": "7e34739debd21fadbce1df78e9d8498d05fbbcc1d5a4e5fffb5f5627e6461c4f"
+        },
+        {
+          "json_pointer": "/people/jlu-sunwanchun/publications/1/quote",
+          "sha256": "723198b582666269cb1f3552226c65f0e77d05f430de3e51e94c10d43d61c8c2"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "8b5a30cda740b5de3eaba3a5501efcf34c71664e85337faf9d0e80250d7c532d"
+        },
+        {
+          "json_pointer": "/1/quote",
+          "sha256": "1101b604fa6af710f7efdf87ccf1a43419b5f22581afc04ff924c0062f2c4a38"
+        },
+        {
+          "json_pointer": "/2/quote",
+          "sha256": "683d90896f80faad2b8ee05cea9cb3adf4a1d50844272b3178a8682dd6bae248"
+        },
+        {
+          "json_pointer": "/3/quote",
+          "sha256": "2354ab83c4d013278742c872827157bd82d9862e0fc8e944a911a8b9f07cc7e2"
+        },
+        {
+          "json_pointer": "/4/quote",
+          "sha256": "b0919c03a2cc620de86ae40f5772314c95a6805dab0fc6431866735cda280dc1"
+        },
+        {
+          "json_pointer": "/5/quote",
+          "sha256": "28f7ca372e772a5b1d369bf7270f64ab9c25184c568861c59788e7c52f40685e"
+        },
+        {
+          "json_pointer": "/6/quote",
+          "sha256": "25bdc3a5b1aff9ce038f866de657f1a4946600ec4911fd401a2c9daedc924997"
+        },
+        {
+          "json_pointer": "/7/quote",
+          "sha256": "3501f15b55f13e1f3ee03d8e233d0e0fe5210c29b3dbd745ebc8e66e90da043c"
+        },
+        {
+          "json_pointer": "/8/quote",
+          "sha256": "e4b264d5d7b34166055b6cfd59a01cfbbcf13a00c088fffeeee0447dff305fcc"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "fe9803cef28b1d0d9a575b1190a4a3a05824ad4187808ea0dfd73e7c89fb2e4e"
+        },
+        {
+          "json_pointer": "/1/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "430635e9e8d519ab6f5c96b30e890e8f6d45ed685dca0e32c2affd6f37cb3dd7"
+        },
+        {
+          "json_pointer": "/1/quote",
+          "sha256": "097288744ca7b6ffd8ccecca3adbb2a9eb4122df4a89b97cc06643e9d210218e"
+        },
+        {
+          "json_pointer": "/2/quote",
+          "sha256": "99001efa6870ff670b0b3581fcd31fd679153b8f999bfb99ca01b6bf12588ec8"
+        },
+        {
+          "json_pointer": "/3/quote",
+          "sha256": "e639f673b938c7cf180a872c3140c907061ddb2e7fcdaf118d51f49931b45283"
+        },
+        {
+          "json_pointer": "/4/quote",
+          "sha256": "5ea2fa108846812ba7e026ea2e6d038d0a0f1d853a10d0516b98347fe9e1e547"
+        },
+        {
+          "json_pointer": "/5/quote",
+          "sha256": "0cba58ee42ed8bcfc3a12995cee6cd2b3f6d824c8df0e98fe4e58f6f6eca1c7e"
+        },
+        {
+          "json_pointer": "/6/quote",
+          "sha256": "427a410de9d56d485ab0c8b9764e5e30c78357c0192c0e038501cb80437f2083"
+        },
+        {
+          "json_pointer": "/7/quote",
+          "sha256": "e0c68a0bb6e2b21cca447c62f8ff5c32e4f6b1089fe05345af928f54fdcaa140"
+        },
+        {
+          "json_pointer": "/8/quote",
+          "sha256": "7e34739debd21fadbce1df78e9d8498d05fbbcc1d5a4e5fffb5f5627e6461c4f"
+        },
+        {
+          "json_pointer": "/9/quote",
+          "sha256": "723198b582666269cb1f3552226c65f0e77d05f430de3e51e94c10d43d61c8c2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "097288744ca7b6ffd8ccecca3adbb2a9eb4122df4a89b97cc06643e9d210218e"
+        },
+        {
+          "json_pointer": "/graduation_evidence/quote",
+          "sha256": "b0919c03a2cc620de86ae40f5772314c95a6805dab0fc6431866735cda280dc1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "097288744ca7b6ffd8ccecca3adbb2a9eb4122df4a89b97cc06643e9d210218e"
+        },
+        {
+          "json_pointer": "/graduation_evidence/quote",
+          "sha256": "b0919c03a2cc620de86ae40f5772314c95a6805dab0fc6431866735cda280dc1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "99001efa6870ff670b0b3581fcd31fd679153b8f999bfb99ca01b6bf12588ec8"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "28f7ca372e772a5b1d369bf7270f64ab9c25184c568861c59788e7c52f40685e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "99001efa6870ff670b0b3581fcd31fd679153b8f999bfb99ca01b6bf12588ec8"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "28f7ca372e772a5b1d369bf7270f64ab9c25184c568861c59788e7c52f40685e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e639f673b938c7cf180a872c3140c907061ddb2e7fcdaf118d51f49931b45283"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "25bdc3a5b1aff9ce038f866de657f1a4946600ec4911fd401a2c9daedc924997"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e639f673b938c7cf180a872c3140c907061ddb2e7fcdaf118d51f49931b45283"
+        },
+        {
+          "json_pointer": "/award_evidence/quote",
+          "sha256": "25bdc3a5b1aff9ce038f866de657f1a4946600ec4911fd401a2c9daedc924997"
+        },
+        {
+          "json_pointer": "/research_group_context/quote",
+          "sha256": "3501f15b55f13e1f3ee03d8e233d0e0fe5210c29b3dbd745ebc8e66e90da043c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5ea2fa108846812ba7e026ea2e6d038d0a0f1d853a10d0516b98347fe9e1e547"
+        },
+        {
+          "json_pointer": "/research_group_context/quote",
+          "sha256": "3501f15b55f13e1f3ee03d8e233d0e0fe5210c29b3dbd745ebc8e66e90da043c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5ea2fa108846812ba7e026ea2e6d038d0a0f1d853a10d0516b98347fe9e1e547"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "25bdc3a5b1aff9ce038f866de657f1a4946600ec4911fd401a2c9daedc924997"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "25bdc3a5b1aff9ce038f866de657f1a4946600ec4911fd401a2c9daedc924997"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0cba58ee42ed8bcfc3a12995cee6cd2b3f6d824c8df0e98fe4e58f6f6eca1c7e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0cba58ee42ed8bcfc3a12995cee6cd2b3f6d824c8df0e98fe4e58f6f6eca1c7e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "427a410de9d56d485ab0c8b9764e5e30c78357c0192c0e038501cb80437f2083"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "427a410de9d56d485ab0c8b9764e5e30c78357c0192c0e038501cb80437f2083"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7e34739debd21fadbce1df78e9d8498d05fbbcc1d5a4e5fffb5f5627e6461c4f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7e34739debd21fadbce1df78e9d8498d05fbbcc1d5a4e5fffb5f5627e6461c4f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "723198b582666269cb1f3552226c65f0e77d05f430de3e51e94c10d43d61c8c2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "723198b582666269cb1f3552226c65f0e77d05f430de3e51e94c10d43d61c8c2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "683d90896f80faad2b8ee05cea9cb3adf4a1d50844272b3178a8682dd6bae248"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "430635e9e8d519ab6f5c96b30e890e8f6d45ed685dca0e32c2affd6f37cb3dd7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "427a410de9d56d485ab0c8b9764e5e30c78357c0192c0e038501cb80437f2083"
+        }
+      ],
+      "mapping_notes": [
+        "9原组织节点保留，艺术学院下设设计系有学院概况明确依据；免疫团队parent仅目录栏目，不认证行政。孙三机构各parentnull，不认同一实体。",
+        "郭仅本人事实，未套蒋范冲突；创意设计与书目分开，2019总设计不改2022、教授无时点不沿用院长日期。",
+        "周博士后2019.06与2020完成并存；3博士阶段+1博士后合作指导非论文认证。原4职业行中博导移入supervision_qualifications（2020-05至今保留），其余3行任职，不重复计算资格为雇佣任职。",
+        "俞教授vs旧副教授现在并存；2访问关系不升论文导师，明确通讯作者与孙未释义(*)分别处理。",
+        "孙朱兴族博士师从与James N Moore研究组背景分开，不造博后师承。",
+        "郭5课程与俞2课程组层级/来源角色均进可见note；教学不计本人教育、任职、作品或师承。",
+        "必要观察basis与原时间、授位三态保留；未认证原HTTP、论文、出版社或当前人事。"
+      ],
+      "final_source_review_adjustments": {
+        "person_id": "jlu-sunwanchun",
+        "original_collection_status": "SOURCE_ONLY_PENDING_INDEPENDENT_REVIEW",
+        "original_stage_note_preserved_in": "source_collection_stage_note",
+        "explanation": "原句属于原资料制作阶段的待独审状态，不改动旧原件；本批来源独立审查与工程验收分别进行，此映射不预先声明已发布。未见退休标签不推出未退休。",
+        "art_semantic_locators_by_excerpt_sha256": {
+          "86ae1ef06e49f4285da332c71ef07cb5ccf7791b8c08685e8202f9d9fc017225": "学院概况／2001年成立吉林大学艺术学院",
+          "32df44f5dc405e2a098a29fa4f58177f6a2bd441deff89b7fbd9174d183c940b": "学院概况／下设3个系和1个中心：设计系、美术系、音乐系和公共艺术教育与研究中心",
+          "fe259c3c1dc50492c226dcfea231d07a53b482bbf4a3839e647ba6d613d4b4ce": "学院概况／数据截止2024年3月16日",
+          "5f19d287025b3f29257f62646881b84966f12f3971783ad44c3ef125d6e406c9": "学院概况／版权所有：吉林大学艺术学院"
+        },
+        "creative_design_visible_note": "郭春方创意设计原对象保持不变；可见unknowns完整呈现北京2022冬残奥会吉祥物“雪容融”全名、2019总设计及非论文/非唯一作者/仅人物页未外核边界，不将设计成果改作出版物。"
+      }
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧713事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}

@@ -46,3 +46,5 @@ python scripts/validate_queue.py progress/work-queue.json --check-artifacts
 大连理工大学十二人采用第十份独立固定来源映射，旧九映射、全部pins、历史fixture/helper不改；701前缀逐字段守恒。真实当前profile/lineage、教学与职业指导可见性、来源限定、全表导出和旧成员行序继续实时检查，不以未知在岗抹去明确荣休历史。
 
 JSON紧凑表示单独范围见[表示形式优化](../progress/compact-json-representation.md)。规范输入对象通过固定612与全部独立来源映射比较，额外严格区分类型、键/数组顺序和Unicode码点；实际site除原规则重算的build_id外不变。历史pretty字节重建/fixture/pins完全保留。live引擎整文件字节保护仅精确允许已审site atlas序列化表达式变化，仍读取真实ROOT；其他引擎字节继续逐项比较。新live格式测试读取实际builder的JSON参数，检查双atlas紧凑UTF8/单LF、重复键及非有限数边界；客户端原生JSON解析和独立build_id重算仍执行。
+
+吉林大学十二人采用第十一份固定独立来源映射，旧十映射、历史pins/fixture/helper和compact live检查保持。已发布713前缀逐字段守恒；真实新profile/lineage、日期与职称冲突、异常DOI不链接、精确院系证据及全表/旧成员行序另有实际数据检查。规范输入继续用已审紧凑UTF8序列化，不回退pretty，也不改来源事实来满足展示。
