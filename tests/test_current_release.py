@@ -19,6 +19,8 @@ MAPPING_SHA256 = 'b08daade03c91c774ecda2bc9469f5d92497be873732c5bfb58c59ab9a2444
 FIRST_IDS = ['nju-shiyini', 'nju-yangderui']
 NEXT_MAPPING_SHA256 = '6b7347159e025485837de10750b40e7af329f229db559e273f4f9145095a6079'
 SEU_MAPPING_SHA256 = 'e628de5b926bc65288b908aa2c8fc85fd5ff55f156891e2ab573acacaaa86795'
+SCU_MAPPING_SHA256 = 'c865a6548faf84d525bf2d42c2f6df1584a1e27e6a4298f845180fe3c656addf'
+SCU_IDS = ['scu-baishibing', 'scu-baojianjun', 'scu-caoya', 'scu-longbingwei', 'scu-fanzhenxin', 'scu-xuliang', 'scu-fengxianqiong', 'scu-penghua-classics', 'scu-lifei', 'scu-huangzongxian', 'scu-wuyongqiang']
 SEU_IDS = ['seu-dinghui', 'seu-sushu', 'seu-zhangkaifeng', 'seu-zhangjianqiong', 'seu-liupeidang', 'seu-shan-pingji-wave171', 'seu-he-shaojin-wave171', 'seu-zhangxueyi', 'seu-dongqun', 'seu-longdiyong']
 NEXT_IDS = ['nju-huxiaowu', 'nju-caipingqiang', 'nju-linzhaoyu', 'nju-huying', 'nju-zhangwei-linguistics', 'nju-lvlinhai-education', 'nju-liyougen-law', 'nju-chenbaojun', 'nju-jiangfei', 'nju-zhoujiaxin']
 
@@ -40,12 +42,18 @@ def seu_mapping():
     assert hashlib.sha256(raw).hexdigest() == SEU_MAPPING_SHA256, 'Reviewed SEU ten-person mapping changed'
     return json.loads(raw)
 
+def scu_mapping():
+    raw = (ROOT / 'tests/fixtures/independent-scu11-source-mapping.json').read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == SCU_MAPPING_SHA256, 'Reviewed SCU eleven-person mapping changed'
+    return json.loads(raw)
+
 def reviewed_additions():
-    first, second, third = mapping(), next_mapping(), seu_mapping()
+    first, second, third, fourth = mapping(), next_mapping(), seu_mapping(), scu_mapping()
     assert [p['person_id'] for p in first['people']] == FIRST_IDS
     assert [p['person_id'] for p in second['people']] == NEXT_IDS
     assert [p['person_id'] for p in third['people']] == SEU_IDS
-    return {key: first[key] + second[key] + third[key] for key in ('people', 'org_units', 'profile_batches')}
+    assert [p['person_id'] for p in fourth['people']] == SCU_IDS
+    return {key: first[key] + second[key] + third[key] + fourth[key] for key in ('people', 'org_units', 'profile_batches')}
 
 def validate_append(current, previous, additions):
     assert set(current) == set(previous), 'Unlisted canonical root fields'
@@ -54,7 +62,7 @@ def validate_append(current, previous, additions):
             assert current[key] == value + additions[key], 'Historical or new source fact changed: ' + key
         else:
             assert current[key] == value, 'Unlisted change: ' + key
-    assert [x['person_id'] for x in current['people'][len(previous['people']):]] == FIRST_IDS + NEXT_IDS + SEU_IDS
+    assert [x['person_id'] for x in current['people'][len(previous['people']):]] == FIRST_IDS + NEXT_IDS + SEU_IDS + SCU_IDS
     assert len({p['person_id'] for p in current['people']}) == len(current['people'])
 
 class CurrentRelease(unittest.TestCase):
@@ -83,9 +91,16 @@ class CurrentRelease(unittest.TestCase):
             expected = self.previous[key] + first[key] + second[key]
             self.assertEqual(self.actual[key][:len(expected)], expected, key)
 
+    def test_published_634_prefix_is_independent_fixed_612_plus_reviewed_previous_mappings(self):
+        first, second, third = mapping(), next_mapping(), seu_mapping()
+        self.assertEqual(len(self.previous['people']) + len(first['people']) + len(second['people']) + len(third['people']), 634)
+        for key in ('people', 'org_units', 'profile_batches'):
+            expected = self.previous[key] + first[key] + second[key] + third[key]
+            self.assertEqual(self.actual[key][:len(expected)], expected, key)
+
     def test_old_fact_deletion_reordering_and_unknown_promotions_fail(self):
         # Mutate each independently protected era, not just whichever person is last.
-        for index in (0, 612, 614, 624):
+        for index in (0, 612, 614, 624, 634):
             for key, value in [('name', 'invented'), ('quick_link_eligible', True)]:
                 candidate = copy.deepcopy(self.actual)
                 if candidate['people'][index].get(key) == value:
@@ -180,7 +195,7 @@ class CurrentRelease(unittest.TestCase):
 
     def test_every_affected_workbook_exactly_matches_reviewed_members_and_fields(self):
         from openpyxl import load_workbook
-        departments = {p['department_id'] for p in next_mapping()['people'] + seu_mapping()['people']}
+        departments = {p['department_id'] for p in next_mapping()['people'] + seu_mapping()['people'] + scu_mapping()['people']}
         expected_people = self.previous['people'] + self.additions['people']
         for department in departments:
             members = [p for p in expected_people if p['department_id'] == department]
