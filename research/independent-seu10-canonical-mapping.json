@@ -1,0 +1,1636 @@
+{
+  "schema_version": "independent-seu10-canonical-mapping-1",
+  "baseline_commit": "de7103597edb5670d0b0de47750343d89ab35d95",
+  "new_people": [
+    "seu-dinghui",
+    "seu-sushu",
+    "seu-zhangkaifeng",
+    "seu-zhangjianqiong",
+    "seu-liupeidang",
+    "seu-shan-pingji-wave171",
+    "seu-he-shaojin-wave171",
+    "seu-zhangxueyi",
+    "seu-dongqun",
+    "seu-longdiyong"
+  ],
+  "new_org_ids": [
+    "seu-materials",
+    "seu-materials-metal",
+    "seu-civil",
+    "seu-automation",
+    "seu-medical-school",
+    "seu-law",
+    "seu-humanities-philosophy-science",
+    "seu-humanities",
+    "seu-arts-theory"
+  ],
+  "counts": {
+    "people": 10,
+    "org_units": 9,
+    "education": 38,
+    "appointments": 16,
+    "publications": 17,
+    "mentors": 0,
+    "teaching": 8,
+    "degree_true": 24,
+    "degree_false": 10,
+    "degree_unknown": 4
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "engineering",
+      "canonical_payload_sha256": "afc3e37a0dd82d7ef3f53ff4e5eb7d6cbcd75d6cb0c30006cebf5a109de12e66",
+      "field_mapping_sha256": "c8a6a68b9b41b66c3f8ce63b4d42f30103ee86e08d4636986662df631d7df75c",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "medical",
+      "canonical_payload_sha256": "756d7c513b95d5e0258716bf4873af8e329bc71d9bbc0103a56c0366283df326",
+      "field_mapping_sha256": "0a8912de5cab7dd74d8e2079f6321807bdbd502ff5e1ad92c07015d28976bc04",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "law-philosophy",
+      "canonical_payload_sha256": "74a4f3fffcb2195e225dca4ce668a19512a8cc6c249c435736210755249078ec",
+      "field_mapping_sha256": "e369c77158143596806dbfcf9c5ad742d6c6d4ed62680971cecb0805a644c50b",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "humanities-arts",
+      "canonical_payload_sha256": "1eed450ee794fe05b15248847452ad9c9a5d75a5d8555456db87eebc8ab604f2",
+      "field_mapping_sha256": "ddd5a4092d7e787116d4dc1d7e1f49de19c6fa13ec1b8209fe65b4207f851e59",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "schema_version": "seu10-engineering-source-mapping-1",
+      "people": [
+        "seu-dinghui",
+        "seu-sushu",
+        "seu-zhangkaifeng"
+      ],
+      "source_inputs": [
+        {
+          "source_group_id": "research-rotation003-wave17-hust-seu",
+          "source_candidate_sha256": "72b57f27a6b300f2bb953c3c1b9db2011efb2b41700723b775f44e25d49be432",
+          "review_sha256": "67269465f8a8237c16acfab85d26130f1981c9bd66cf006be362d957ddb92dd3",
+          "field_evidence_sha256": "3e86d137437a9491a60a0d1c5bbd3ebf0f151e3ad214173a59eaa245187b0e8e"
+        },
+        {
+          "source_group_id": "research-rotation003-wave33-jlu-seu-purposeful",
+          "source_candidate_sha256": "80d95c1814053824d8dfe729e3ac92e7cdcd79fa7a39cfc3306b347fc8315ed0",
+          "review_sha256": "0c4e56ddf265ba1a366446ea38667254dd356f3483dd055e2033c3f3e480a83f"
+        },
+        {
+          "source_group_id": "research-rotation003-wave46-seu-nwsuaf-purposeful",
+          "source_candidate_sha256": "923511649e8e7f42f49d803afaed9dde78a556518875710e6c539eac32450d84",
+          "review_sha256": "56b61cd1c63af0494ef8086d28f9548e9943299770f7c207733055972104fcfe"
+        },
+        {
+          "source_group_id": "research-rotation003-wave33-seu-directory-addendum",
+          "delta_sha256": "d4381cebc35f03164ef95f4ec0e4aa83b24eb1875bd9f13edf92c54a8676d34d",
+          "observation_sha256": "b05f72c92d89c56deda9e5ed9dcf535650d0ab7b556963d68daafd9360268a10",
+          "review_sha256": "eeab1fc0b139548e89834f7461176bcdab9636c124b41626451ce96d026ff71e"
+        }
+      ],
+      "hash_scope": "已留存来源包及审阅文件字节；非原始网页HTTP字节",
+      "sources": [
+        {
+          "id": "seu-materials-roster",
+          "url": "https://smse.seu.edu.cn/szry/list.htm",
+          "retrieved_at": "2026-10-24",
+          "evidence_status": "official_directory_body_read",
+          "published_at": null,
+          "source_locator": "教师简介 / 金属材料系 / 首行",
+          "discovery_basis": "search01 official result; original page opened; parent cloud browser confirms visible order",
+          "retained_sha256": "74ee11f8a1149b48c37845a07401c6c063013c77d407d307e3202af25528c84f",
+          "retention_scope": "Exact web-tool response text or explicitly selected verbatim blocks; not original HTTP entity bytes",
+          "raw_http_retained": false,
+          "http_status": null,
+          "http_status_note": "Successful web tool return does not expose origin HTTP status. No inferred HTTP200.",
+          "observed_at": "2026-10-24T11:20:53Z",
+          "observation_time_basis": "原留存工具响应记录的观察时间；不是源站HTTP响应时间。",
+          "evidence_scope": "既有来源工具响应或选定原文片段，不是原始HTTP实体。",
+          "public_raw_cache": false
+        },
+        {
+          "id": "seu-materials-structure",
+          "url": "https://smse.seu.edu.cn/xsjg/list.htm",
+          "retrieved_at": "2026-10-24",
+          "evidence_status": "official_structure_body_read",
+          "published_at": null,
+          "source_locator": "学院概况 > 机构设置 > 系所架构",
+          "discovery_basis": "Native directory link 系所架构; body enumerates 金属材料系 under school structure",
+          "retained_sha256": "bd74a0d6888d0e97b89d388b94e9265c9de2073c41d5f1fa5288c05b687c9cf9",
+          "retention_scope": "Exact web-tool response text or explicitly selected verbatim blocks; not original HTTP entity bytes",
+          "raw_http_retained": false,
+          "http_status": null,
+          "http_status_note": "Successful web tool return does not expose origin HTTP status. No inferred HTTP200.",
+          "observed_at": "2026-10-24T11:23:20Z",
+          "observation_time_basis": "原留存工具响应记录的观察时间；不是源站HTTP响应时间。",
+          "evidence_scope": "既有来源工具响应或选定原文片段，不是原始HTTP实体。",
+          "public_raw_cache": false
+        },
+        {
+          "id": "seu-dinghui-profile",
+          "url": "https://smse.seu.edu.cn/2016/0304/c2590a147387/page.htm",
+          "retrieved_at": "2026-10-24",
+          "evidence_status": "official_individual_profile_body_read",
+          "published_at": "2016-03-04",
+          "source_locator": "个人简介",
+          "discovery_basis": "Native first selected directory link 丁辉",
+          "retained_sha256": "6c80093084966df33e905b9087da535b25db0212648c1cb0f1a64503e9109348",
+          "retention_scope": "Exact web-tool response text or explicitly selected verbatim blocks; not original HTTP entity bytes",
+          "raw_http_retained": false,
+          "http_status": null,
+          "http_status_note": "Successful web tool return does not expose origin HTTP status. No inferred HTTP200.",
+          "date_note": "Displayed publication date is 2016-03-04 but body mentions 2019-11. No reliable last-content-update date; neither supports current personnel status.",
+          "observed_at": "2026-10-24T11:21:10Z",
+          "observation_time_basis": "原留存工具响应记录的观察时间；不是源站HTTP响应时间。",
+          "evidence_scope": "既有来源工具响应或选定原文片段，不是原始HTTP实体。",
+          "public_raw_cache": false
+        },
+        {
+          "id": "seu-dinghui-book-discovery",
+          "url": "https://www.ecsponline.com/goods.php?id=44823",
+          "retrieved_at": "2026-10-24",
+          "evidence_status": "search_discovery_only_then_cache_miss",
+          "published_at": null,
+          "source_locator": "出版社发现线索／题名作者及书目号（未接纳为事实）",
+          "discovery_basis": "Official profile names 计算超声学 (科学出版社,2010.6); title search discovered publisher product page. Native open failed Cache miss.",
+          "retained_sha256": "3d1cd68fb9187f87c859d1fd62a3b3cf1a830243616865aa5118c4391c8239a0",
+          "retention_scope": "Exact web-tool response text or explicitly selected verbatim blocks; not original HTTP entity bytes",
+          "raw_http_retained": false,
+          "http_status": null,
+          "http_status_note": "Successful web tool return does not expose origin HTTP status. No inferred HTTP200.",
+          "full_text_read": false,
+          "factual_use": false,
+          "observed_at": "2026-10-24T11:22:05Z",
+          "observation_time_basis": "原留存工具响应记录的观察时间；不是源站HTTP响应时间。",
+          "evidence_scope": "既有来源工具响应或选定原文片段，不是原始HTTP实体。",
+          "public_raw_cache": false
+        },
+        {
+          "id": "seu-sushu-profile",
+          "url": "https://civil.seu.edu.cn/ss/list.htm",
+          "evidence_status": "official_professional_profile_body_read",
+          "retrieved_on": "2026-10-24",
+          "retrieved_at": "2026-10-24",
+          "observation_interval_utc": [
+            "2026-10-24T13:47:09Z",
+            "2026-10-24T13:47:19Z"
+          ],
+          "observation_time_basis": "原读取调用的观察窗口；精确起始时刻未知，非源站响应时间。",
+          "published_at": null,
+          "last_modified": null,
+          "source_locators": [
+            "个人职业简介、教育经历、工作经历、课程及选定书目"
+          ],
+          "public_raw_cache": false,
+          "retained_evidence_limits": [
+            "Education rows contain degree-stage labels, not explicit award statements. No award date or degree issuing legal entity established.",
+            "Current job titles are only profile claims, not independent current personnel verification. Historical department is explicit only in the 2018.11–2021.04 appointment; do not backfill it into present appointments.",
+            "The page also carries later-looking material not selected in this package; no publication/last-update date inferred.",
+            "Only selected representative works retained; star marker remains a source marker, not independently assigned corresponding-author role."
+          ]
+        },
+        {
+          "id": "seu-sushu-paper-publisher",
+          "url": "https://www.sciopen.com/article/10.1007/s12273-025-1233-y",
+          "evidence_status": "original_publisher_metadata_body_read",
+          "retrieved_on": "2026-10-24",
+          "retrieved_at": "2026-10-24",
+          "observation_interval_utc": [
+            "2026-10-24T13:47:52Z",
+            "2026-10-24T13:48:23Z"
+          ],
+          "observation_time_basis": "原读取调用的观察窗口；精确起始时刻未知，非源站响应时间。",
+          "published_at": null,
+          "last_modified": null,
+          "source_locators": [
+            "论文题名作者、期卷页码及出版日期"
+          ],
+          "public_raw_cache": false,
+          "retained_evidence_limits": [
+            "Normal login navigation links were present, but the metadata itself was public and readable; no login wall, challenge or permission prompt was encountered.",
+            "Only title/authors/venue/volume/issue/pages/DOI/publication date/publisher metadata used; abstract and full text not retained or relied on.",
+            "This is bibliographic identity verification, not research-quality or factual-content validation."
+          ]
+        },
+        {
+          "id": "seu-sushu-directory-parent-addendum",
+          "url": "https://civil.seu.edu.cn/38466/list.htm",
+          "title": "建设与房地产系",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T13:57:54Z",
+          "observation_time_basis": "父任务实际云浏览器AX及视觉观察时间，非源站HTTP时间。",
+          "evidence_status": "official_directory_name_and_native_href_observed",
+          "source_locators": [
+            "师资队伍／教职工名录／建设与房地产系／苏舒"
+          ],
+          "native_href": "https://civil.seu.edu.cn/ss/list.htm",
+          "evidence_scope": "仅必要目录观察；不认证当前在岗。",
+          "public_raw_cache": false
+        },
+        {
+          "id": "seu-zhangkaifeng-profile",
+          "url": "https://automation.seu.edu.cn/zkf/main.psp",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T14:58:17Z",
+          "observation_time_basis": "原来源读取或父任务浏览器观察记录时间；不是源站HTTP时间。",
+          "published_at": null,
+          "evidence_status": "official_profile_body_read",
+          "evidence_scope": "Necessary professional excerpts only. No contact fields, birth information, student records, whole-page body or unselected bibliography retained. Source present-tense and 至今 are not current-personnel certification.",
+          "source_locators": [
+            "个人简介、教育工作经历、授课信息、研究领域及选定论文"
+          ],
+          "public_raw_cache": false
+        },
+        {
+          "id": "seu-automation-directory-web",
+          "url": "https://automation.seu.edu.cn/32668/list.htm",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T14:58:22Z",
+          "observation_time_basis": "原来源读取或父任务浏览器观察记录时间；不是源站HTTP时间。",
+          "published_at": null,
+          "evidence_status": "readable_directory_shell_only",
+          "evidence_scope": "This shell alone does not verify the person. Parent browser observation is separate evidence.",
+          "source_locators": [
+            "全体教师目录页框架"
+          ],
+          "public_raw_cache": false
+        },
+        {
+          "id": "seu-automation-directory-browser",
+          "url": "https://automation.seu.edu.cn/32668/list.htm",
+          "retrieved_at": "2026-10-24",
+          "observed_at": "2026-10-24T14:59:06Z",
+          "observation_time_basis": "原来源读取或父任务浏览器观察记录时间；不是源站HTTP时间。",
+          "published_at": null,
+          "evidence_status": "official_directory_browser_observation",
+          "evidence_scope": "Institutional listing verified. The http list.htm directory link differs from the read https main.psp profile. Same alias only; redirect equivalence not verified. No independent current-personnel claim.",
+          "source_locators": [
+            "全体教师目录／张凯锋"
+          ],
+          "public_raw_cache": false,
+          "native_href": "http://automation.seu.edu.cn/zkf/list.htm"
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "source_id": "seu-dinghui-profile",
+          "source_url": "https://smse.seu.edu.cn/2016/0304/c2590a147387/page.htm",
+          "semantic_locator": "个人简介／学历、任职与书目",
+          "sha256": "d6707420fd589fd0db4b9f356baa1685b09dbf95211f71a742937365f2d309bb"
+        },
+        {
+          "source_id": "seu-dinghui-profile",
+          "source_url": "https://smse.seu.edu.cn/2016/0304/c2590a147387/page.htm",
+          "semantic_locator": "个人简介／学历、任职与书目",
+          "sha256": "f5697ebcdfd106f37345b24c40cb2ed7a491f7ce0f648cbac9ebc282bc2a4cde"
+        },
+        {
+          "source_id": "seu-dinghui-profile",
+          "source_url": "https://smse.seu.edu.cn/2016/0304/c2590a147387/page.htm",
+          "semantic_locator": "个人简介／学历、任职与书目",
+          "sha256": "51ffdf2adeaa7772ddde606e1297186f86cc84c7a590d8de7226a2c035276d53"
+        },
+        {
+          "source_id": "seu-dinghui-profile",
+          "source_url": "https://smse.seu.edu.cn/2016/0304/c2590a147387/page.htm",
+          "semantic_locator": "个人简介／学历、任职与书目",
+          "sha256": "36bf701bd26dfe0688359d8f48bf90b8a0a1a1d928dd9ccdd8897fcf06a060cd"
+        },
+        {
+          "source_id": "seu-dinghui-profile",
+          "source_url": "https://smse.seu.edu.cn/2016/0304/c2590a147387/page.htm",
+          "semantic_locator": "个人简介／学历、任职与书目",
+          "sha256": "ee21284b4cc1bd4a50e36d3acc4185c1e605d0487fe2cb17a33e956f4cf42ae5"
+        },
+        {
+          "source_id": "seu-dinghui-profile",
+          "source_url": "https://smse.seu.edu.cn/2016/0304/c2590a147387/page.htm",
+          "semantic_locator": "个人简介／学历、任职与书目",
+          "sha256": "df0922e1dafd5eddf9139f3b285e21d1fe48bd7f3b34ac90a32c701f3b0a1c9b"
+        },
+        {
+          "source_id": "seu-sushu-profile",
+          "source_url": "https://civil.seu.edu.cn/ss/list.htm",
+          "semantic_locator": "职业称谓及研究方向",
+          "sha256": "3f714f25a543c86ea1488ab27c7f83e49a697856ee281b9c77135a28aaa9c490"
+        },
+        {
+          "source_id": "seu-sushu-profile",
+          "source_url": "https://civil.seu.edu.cn/ss/list.htm",
+          "semantic_locator": "教育经历",
+          "sha256": "7e15e59905bdd53f48dc5b9914168573d51bc083d446a0a6974110967e080bd2"
+        },
+        {
+          "source_id": "seu-sushu-profile",
+          "source_url": "https://civil.seu.edu.cn/ss/list.htm",
+          "semantic_locator": "工作经历",
+          "sha256": "6fb36f5e9e84baca24fa46342b545fa23dbf9b89babbfd806d20ec1738935de3"
+        },
+        {
+          "source_id": "seu-sushu-profile",
+          "source_url": "https://civil.seu.edu.cn/ss/list.htm",
+          "semantic_locator": "教学课程",
+          "sha256": "5de2e187ddd329966034c5d373857d2d5ec8effb0a9b0d8d5e255d64044c9099"
+        },
+        {
+          "source_id": "seu-sushu-profile",
+          "source_url": "https://civil.seu.edu.cn/ss/list.htm",
+          "semantic_locator": "选定论文",
+          "sha256": "87bc39801ea71b75756eced1d0ea6df951bb5705eb7832a8ec957617352f7730"
+        },
+        {
+          "source_id": "seu-sushu-profile",
+          "source_url": "https://civil.seu.edu.cn/ss/list.htm",
+          "semantic_locator": "选定专著",
+          "sha256": "969b2acfb76186c3881a2acbd7d3b6ca04865409739ab05fea8b5b5e2d7e9bbc"
+        },
+        {
+          "source_id": "seu-sushu-paper-publisher",
+          "source_url": "https://www.sciopen.com/article/10.1007/s12273-025-1233-y",
+          "semantic_locator": "论文题名及作者",
+          "sha256": "820422882ea4aecf77a209b279fe40e58577b377afa63b9ce2575aadb01a573b"
+        },
+        {
+          "source_id": "seu-sushu-paper-publisher",
+          "source_url": "https://www.sciopen.com/article/10.1007/s12273-025-1233-y",
+          "semantic_locator": "期刊卷期页码及DOI",
+          "sha256": "08cd2fc4280f167d7330b95ebd2ce830705bac5264064b62c27d2e8614aa3b11"
+        },
+        {
+          "source_id": "seu-sushu-paper-publisher",
+          "source_url": "https://www.sciopen.com/article/10.1007/s12273-025-1233-y",
+          "semantic_locator": "出版日期及出版者",
+          "sha256": "39794d8aad4fada874019949fff4f1354d1a6042abb70667fd47659edc1ea3f9"
+        },
+        {
+          "source_id": "seu-zhangkaifeng-profile",
+          "source_url": "https://automation.seu.edu.cn/zkf/main.psp",
+          "semantic_locator": "个人简介、教育工作经历、授课信息、研究领域及选定论文",
+          "sha256": "bc4ee23154782dc2e02a1df13184d80fae8c1dda193e95dff519c09b77994f67"
+        },
+        {
+          "source_id": "seu-zhangkaifeng-profile",
+          "source_url": "https://automation.seu.edu.cn/zkf/main.psp",
+          "semantic_locator": "个人简介、教育工作经历、授课信息、研究领域及选定论文",
+          "sha256": "a223dc311c227a64ceff2be05cc4925a4f4c05f6e91708fe0f9e85b734e8c401"
+        },
+        {
+          "source_id": "seu-automation-directory-web",
+          "source_url": "https://automation.seu.edu.cn/32668/list.htm",
+          "semantic_locator": "全体教师目录页框架",
+          "sha256": "551c38fa319df91a7b9e8bc261486458146fb6d3b4fa6d67eda984b551306a52"
+        },
+        {
+          "source_id": "seu-automation-directory-web",
+          "source_url": "https://automation.seu.edu.cn/32668/list.htm",
+          "semantic_locator": "全体教师目录页框架",
+          "sha256": "e3785d12d3ee8ebd4a421bb2d31ef830206324fb69aa051232722a12f290a501"
+        },
+        {
+          "source_id": "seu-automation-directory-browser",
+          "source_url": "https://automation.seu.edu.cn/32668/list.htm",
+          "semantic_locator": "全体教师目录／张凯锋",
+          "sha256": "ffe024ea4c86ae46d53966f202fa8f21d1915701ab27c2c40342d9ebefc1f2f2"
+        },
+        {
+          "source_id": "seu-automation-directory-browser",
+          "source_url": "https://automation.seu.edu.cn/32668/list.htm",
+          "semantic_locator": "全体教师目录／张凯锋",
+          "sha256": "c1e550232289cac2abacddc4c57cfeb5c6b8d30bdb3b4cf9f6133f570f2ee35b"
+        },
+        {
+          "source_id": "seu-automation-directory-browser",
+          "source_url": "https://automation.seu.edu.cn/32668/list.htm",
+          "semantic_locator": "全体教师目录／张凯锋",
+          "sha256": "8aca47f2b6581d0d83a699576d8e28d15eeea4accd3045397ab01d75a85a6b0b"
+        }
+      ],
+      "mapping": {
+        "facts": "保留原职业字段；新增canonical别名；摘录额外课程对象、书目字数、月标记、角色上下文和总述数量结构化保留。",
+        "degree": "授位true/false/null不变；张凯锋两个博士专业口径同一事件，不造双博士。",
+        "directory": "苏舒补证按独立增补准确更新；原旧目录元数据保留为superseded，不影响授位和现职。",
+        "status": "当前人事未知；所有现职导航关闭；官网历史角色不是当前人事确认。",
+        "evidence": "源文件内部路径只进私有账；公开保留sourceID/URL/语义位置及摘要。"
+      },
+      "counts": {
+        "people": 3,
+        "education": 13,
+        "degree_true": 6,
+        "degree_false": 4,
+        "degree_unknown": 3,
+        "appointments": 7,
+        "publications": 5,
+        "teaching_records": 3,
+        "teaching_course_titles": 8,
+        "mentors": 0,
+        "new_orgs": 4
+      }
+    },
+    {
+      "schema_version": "independent-seu10-medical-mapping-1",
+      "baseline_commit": "de7103597edb5670d0b0de47750343d89ab35d95",
+      "source_package_sha256": "02a0bf44a63545d221f2369e08e49cb3cf29bd9c64b0c043ca2cf2ed04982382",
+      "source_evidence_artifact_sha256": "76010b37cee7ab58bd082c75c0604726850f66372d9d17a6b3e63d56c0a154dd",
+      "source_review_sha256": "a6458f7ca251e9a10deb52a1dc2d2cce9fbeea69d8bc3aa24d91da0eb5da557e",
+      "source_hash_scope": "本地已审来源包文件字节，不是完整网页或HTTP实体",
+      "people": [
+        "seu-zhangjianqiong",
+        "seu-liupeidang"
+      ],
+      "counts": {
+        "people": 2,
+        "education": 7,
+        "awarded_degrees": 4,
+        "unknown_degree_awards": 1,
+        "nondegree_events": 2,
+        "mentors": 0,
+        "appointments": 7,
+        "publications": 2,
+        "teaching": 5
+      },
+      "mapping_rules": {
+        "preservation": "514v3原记录、字段证据、引文指纹、目录native_href观察与访问限制保留；新增别名供网站与工作簿展示。",
+        "awards": "degree_award→degree，其余保留源分类于source_event_kind；刘本科院校null，博士毕业授位null，博士后不得补证博士授位。",
+        "source_dates": "原检索完整时刻保留observed_at；显示日放retrieved_at；原观察窗口与访问状态保留，历史页面日期不变成核验日期。",
+        "career": "7项均历史任职或旧网页称谓，缺单位保持null，不把教授晋升所在单位或行政现职补出。",
+        "bibliography": "2条书目作者星号、卷期页保留；737-784原样不校正；刘0条不意味着现实没有作品。",
+        "teaching": "5门课程由原文“承担教学”支持角色，课程层级仅共同描述，不逐课推断。",
+        "mentors": "本人导师未披露，导师职业称谓不成为本人的师承关系。",
+        "section_locator": "原相对记录JSON路径/sources/0加#明确为JSON片段指针；原定位指纹不变，不冒充网页章节锚点。"
+      },
+      "quote_only_facts_mapped": [
+        {
+          "work_id": "seu-zhangjianqiong-work1",
+          "volume": "75",
+          "issue": "6",
+          "pages": "737-784",
+          "quote_sha256": "b5ea7ff252f088908e99759bf1e09b54d46d75ddfdab8dd9325a8052cb5e4f4e"
+        },
+        {
+          "work_id": "seu-zhangjianqiong-work2",
+          "volume": "40",
+          "pages": "256-263",
+          "quote_sha256": "07d37746809d19e2261b62195f2b7dd96364c941b174b3d71f27441f2c821523"
+        },
+        {
+          "person_id": "seu-zhangjianqiong",
+          "fact": "2003年获准建设“发育与疾病相关基因”教育部重点实验室",
+          "source_excerpt_sha256": "eadcdf50f8232ee1975f848036e640f1791bcd8741b144164063bb6fe687460d"
+        }
+      ],
+      "overlay_boundary": "wave139审查needed_overlay=null；同目录wave138 overlay不作用本批。",
+      "independent_review_correction": {
+        "source_event_identifiers": [
+          {
+            "person_id": "seu-zhangjianqiong",
+            "event_id": "seu-zhangjianqiong-education-3",
+            "source_event_id": "seu-zhangjianqiong-visit"
+          },
+          {
+            "person_id": "seu-liupeidang",
+            "event_id": "seu-liupeidang-education-4",
+            "source_event_id": "seu-liupeidang-postdoc"
+          }
+        ],
+        "appointments": "canonical unknown保持；7任职另保留原source_current_employment_status:null，不提升事实。"
+      }
+    },
+    {
+      "schema_version": "seu10-law-philosophy-map-1",
+      "ids": [
+        "seu-shan-pingji-wave171",
+        "seu-he-shaojin-wave171"
+      ],
+      "source_sha256": "bb5761033bd905d5933b30c889dd1db798ee4747532762f82215ca62f2d0685d",
+      "source_evidence_sha256": "2858cf572a5408e7b496296f4e1a58afd0215f593ac4fd95790db12ebe831b2d",
+      "review_sha256": "98fedd6ab8f070dca03d493a55fbb04de8898e703a3f2d592950fe6c3f7a9735",
+      "counts": {
+        "people": 2,
+        "degree_awarded_true": 6,
+        "nondegree_visits": 2,
+        "mentors": 0,
+        "appointments": 0,
+        "publications": 4,
+        "teaching": 0
+      },
+      "field_mapping": {
+        "stable_ids": "原person_id含wave171，完全保留，不重命名。",
+        "education": "education与nondegree_training映射至education；原id/stage/event_type与授位信息均保留，增加兼容字段；何绍锦2017/2019/2023授位年份保留，单平基各年未知。",
+        "relationships": "原本人导师集合为空，博导及博后合作导师仅列示本人职业称谓。",
+        "affiliation": "目录关联、reader导航、原始href未知和真实浏览器点击false原值保留；不升格当前人事。",
+        "publications": "作品原文和角色保留，中文题名不翻译；字数仅来源报告标签；期刊质量标签不采纳为客观评价。",
+        "org": "何绍锦与张学义使用共享哲学与科学系展示分组；本payload提供唯一node。原unit与行政父级未知保留。",
+        "evidence": "摘录不重印正文，保留evidence_id和SHA256；保留原始观察时间及页面显示日期的限定。"
+      },
+      "sources": [
+        {
+          "url": "https://law.seu.edu.cn/2023/1020/c21114a469194/page.htm",
+          "title": "单平基教授",
+          "source_type": "university_official",
+          "retrieved_at_utc": "2026-10-25T00:23:33Z",
+          "observation_time_basis": "UTC result observation time from current session, not source-server timestamp",
+          "displayed_publication_date": "2025-02-17",
+          "last_modified_verified": null,
+          "http_status": null,
+          "access_outcome": "official_public_body_read",
+          "transport_status_note": "Readable text/html returned by web tool; raw HTTP status not supplied.",
+          "original_full_html_retained": false,
+          "rendered_or_tool_text_excerpts_only": true,
+          "unrelated_page_content_retained": false,
+          "personal_contact_data_retained": false,
+          "independent_corroboration_claimed": false,
+          "bibliography_excerpt_observed_at_utc": "2026-10-25T00:23:38Z",
+          "page_date_caution": "Displayed publication date is not verified last modification; the live profile includes later materials. Do not use URL path date as publication date.",
+          "id": "shan-profile",
+          "source_type_as_recorded": "official_faculty_profile",
+          "retrieved_at": "2026-10-25",
+          "published_at": null,
+          "page_date_as_displayed": "2025-02-17",
+          "evidence_status": "retained_professional_excerpts_checked",
+          "evidence_label": "已复核既有必要职业摘录；非本次重新抓取或现职认证",
+          "observation_time_note": "保留原始工具结果观察时刻，不是源服务器时间或本次映射时间。",
+          "source_excerpt_fingerprints": [
+            {
+              "evidence_id": "shan-name",
+              "semantic_locator": "identity and source title",
+              "source_excerpt_sha256": "16945ded0e30e2d2db334ff18dffebd0b0c572c6dbe0129143f0370a0451567e"
+            },
+            {
+              "evidence_id": "shan-title",
+              "semantic_locator": "source-listed appointment and outward supervisory roles, not current employment verification",
+              "source_excerpt_sha256": "285e88a233e87673db6d76ad154ffc9de23b23b404caf425b051cf6b46874b8a"
+            },
+            {
+              "evidence_id": "shan-degrees",
+              "semantic_locator": "three explicit degree awards; dates not stated",
+              "source_excerpt_sha256": "3780e4013bc5ab6e4626ec8c7c59b4e818a524c7c430b86993493acb0525eb66"
+            },
+            {
+              "evidence_id": "shan-visits",
+              "semantic_locator": "two nondegree visits, dates and mentor unknown",
+              "source_excerpt_sha256": "dcdaa9139e6c879024d999231b369ca58c390430810b13e2367252e6c3f46105"
+            },
+            {
+              "evidence_id": "shan-research",
+              "semantic_locator": "research directions",
+              "source_excerpt_sha256": "3a428b905793490b63bd52ad958dc074b7844ea997fa464062d01e8d367d7e29"
+            },
+            {
+              "evidence_id": "shan-work-1",
+              "semantic_locator": "official-profile bibliography, author/year/title only; ranking labels not adopted",
+              "source_excerpt_sha256": "ab9ce6c2588b14653bcdf4663b3d7716d5ef9bbaab5137300b748d25b5157a2b"
+            },
+            {
+              "evidence_id": "shan-work-2",
+              "semantic_locator": "official-profile bibliography; source Chinese title retained for English-version journal",
+              "source_excerpt_sha256": "00aff44540d6b2cfeb4042a073f153a59cea4eec1bd60b2860a744ce45fa2115"
+            }
+          ]
+        },
+        {
+          "url": "https://rwxy.seu.edu.cn/2023/0904/c8790a463452/page.htm",
+          "title": "何绍锦",
+          "source_type": "university_official",
+          "retrieved_at_utc": "2026-10-25T00:23:33Z",
+          "observation_time_basis": "UTC result observation time from current session, not source-server timestamp",
+          "displayed_publication_date": "2023-09-04",
+          "last_modified_verified": null,
+          "http_status": null,
+          "access_outcome": "official_public_body_read",
+          "transport_status_note": "Readable text/html returned by web tool; raw HTTP status not supplied.",
+          "original_full_html_retained": false,
+          "rendered_or_tool_text_excerpts_only": true,
+          "unrelated_page_content_retained": false,
+          "personal_contact_data_retained": false,
+          "independent_corroboration_claimed": false,
+          "id": "he-profile",
+          "source_type_as_recorded": "official_faculty_profile",
+          "retrieved_at": "2026-10-25",
+          "published_at": null,
+          "page_date_as_displayed": "2023-09-04",
+          "evidence_status": "retained_professional_excerpts_checked",
+          "evidence_label": "已复核既有必要职业摘录；非本次重新抓取或现职认证",
+          "observation_time_note": "保留原始工具结果观察时刻，不是源服务器时间或本次映射时间。",
+          "source_excerpt_fingerprints": [
+            {
+              "evidence_id": "he-name",
+              "semantic_locator": "identity",
+              "source_excerpt_sha256": "903ed702eace86428bbb88aed9d0f5bdd2e802d32dc60d494215b870a9a0c8f1"
+            },
+            {
+              "evidence_id": "he-title",
+              "semantic_locator": "source-listed unit and teacher role",
+              "source_excerpt_sha256": "422831e58929ff091ceaf355cec825d62e4592cc848761a01ebd06937bc2e2ef"
+            },
+            {
+              "evidence_id": "he-bachelor",
+              "semantic_locator": "explicit bachelor award and year; start unknown",
+              "source_excerpt_sha256": "5d6488bd3d15c0c4a401be9316415f5c973f5e55aaf3d3f2217fe2fad5c2d753"
+            },
+            {
+              "evidence_id": "he-master",
+              "semantic_locator": "explicit master award and year; start unknown",
+              "source_excerpt_sha256": "f6cf23d596bf9eccf8c79ae66d5d37471f43aa267804bba29284afcc8559cfb8"
+            },
+            {
+              "evidence_id": "he-doctor",
+              "semantic_locator": "explicit doctoral award and year; start unknown",
+              "source_excerpt_sha256": "62fb39e7f8e167d866406ee0ca44f279d1364693a15e2f9156db435987bb2987"
+            },
+            {
+              "evidence_id": "he-research",
+              "semantic_locator": "research directions",
+              "source_excerpt_sha256": "a688412940acb19bddf9d8aa9aaa78a54a331f864e902839c70b612396f38114"
+            },
+            {
+              "evidence_id": "he-work-1",
+              "semantic_locator": "official bibliography author/title/year",
+              "source_excerpt_sha256": "f1bc2f26ecd702fd1b7e7adfde325946fbadeda3d6f3d7332c1f7c9d63888215"
+            },
+            {
+              "evidence_id": "he-work-2",
+              "semantic_locator": "official bibliography author/title/year",
+              "source_excerpt_sha256": "fc1e5f849b569228246876f24bb7354af61c630b39ff1d6672f8b7d176b212a3"
+            }
+          ]
+        },
+        {
+          "url": "https://law.seu.edu.cn/9121/list.htm",
+          "title": "师资队伍",
+          "source_type": "university_official",
+          "retrieved_at_utc": "2026-10-25T00:23:33Z",
+          "observation_time_basis": "UTC result observation time from current session, not source-server timestamp",
+          "displayed_publication_date": null,
+          "last_modified_verified": null,
+          "http_status": null,
+          "access_outcome": "official_public_body_read",
+          "transport_status_note": "Readable text/html returned by web tool; raw HTTP status not supplied.",
+          "original_full_html_retained": false,
+          "rendered_or_tool_text_excerpts_only": true,
+          "unrelated_page_content_retained": false,
+          "personal_contact_data_retained": false,
+          "independent_corroboration_claimed": false,
+          "id": "shan-overview-directory",
+          "source_type_as_recorded": "official_faculty_directory",
+          "retrieved_at": "2026-10-25",
+          "published_at": null,
+          "page_date_as_displayed": null,
+          "evidence_status": "retained_professional_excerpts_checked",
+          "evidence_label": "已复核既有必要职业摘录；非本次重新抓取或现职认证",
+          "observation_time_note": "保留原始工具结果观察时刻，不是源服务器时间或本次映射时间。",
+          "source_excerpt_fingerprints": [
+            {
+              "evidence_id": "shan-overview-label",
+              "semantic_locator": "directory grouping only",
+              "source_excerpt_sha256": "cd28d04d5c0f003787ea7fc5a376223b51da284b9943b4aa8c220431a427076a"
+            },
+            {
+              "evidence_id": "shan-overview-rank",
+              "semantic_locator": "source category label; total not used as verified census",
+              "source_excerpt_sha256": "368dc209b0fa5ab1c266678c5fb12f1484fc47b83e17a72b6a51d81e436202af"
+            },
+            {
+              "evidence_id": "shan-overview-name",
+              "semantic_locator": "name substring in source directory; unrelated names omitted, no native profile link in this entry",
+              "source_excerpt_sha256": "dff2b4f26d7ee7ef7df28771115e07a98aa3033113717129686c0c0b61739850"
+            }
+          ]
+        },
+        {
+          "url": "https://law.seu.edu.cn/9125/list.htm",
+          "title": "教授风采（以姓氏拼音为序）",
+          "source_type": "university_official",
+          "retrieved_at_utc": "2026-10-25T00:23:47Z",
+          "observation_time_basis": "UTC result observation time from current session, not source-server timestamp",
+          "displayed_publication_date": null,
+          "last_modified_verified": null,
+          "http_status": null,
+          "access_outcome": "official_public_body_read",
+          "transport_status_note": "Readable text/html returned by web tool; raw HTTP status not supplied.",
+          "original_full_html_retained": false,
+          "rendered_or_tool_text_excerpts_only": true,
+          "unrelated_page_content_retained": false,
+          "personal_contact_data_retained": false,
+          "independent_corroboration_claimed": false,
+          "text_find_caution": "One web.find returned no match; subsequent normal same-readable-source open showed the label. Not an access failure or a negative directory finding.",
+          "initial_directory_opened_at_utc": "2026-10-25T00:23:38Z",
+          "id": "shan-directory",
+          "source_type_as_recorded": "official_faculty_directory",
+          "retrieved_at": "2026-10-25",
+          "published_at": null,
+          "page_date_as_displayed": null,
+          "evidence_status": "retained_professional_excerpts_checked",
+          "evidence_label": "已复核既有必要职业摘录；非本次重新抓取或现职认证",
+          "observation_time_note": "保留原始工具结果观察时刻，不是源服务器时间或本次映射时间。",
+          "source_excerpt_fingerprints": [
+            {
+              "evidence_id": "shan-directory-category",
+              "semantic_locator": "directory hierarchy only; tool link markers removed and whitespace normalized",
+              "source_excerpt_sha256": "58fa115df4ed52a0029fc0a67e079131304bb2e6ffb453ab16bf7f80212f3cef"
+            },
+            {
+              "evidence_id": "shan-directory-name",
+              "semantic_locator": "native link label; tool link marker removed",
+              "source_excerpt_sha256": "16945ded0e30e2d2db334ff18dffebd0b0c572c6dbe0129143f0370a0451567e"
+            }
+          ]
+        },
+        {
+          "url": "https://rwxy.seu.edu.cn/8790/list.htm",
+          "title": "哲科系",
+          "source_type": "university_official",
+          "retrieved_at_utc": "2026-10-25T00:23:42Z",
+          "observation_time_basis": "UTC result observation time from current session, not source-server timestamp",
+          "displayed_publication_date": null,
+          "last_modified_verified": null,
+          "http_status": null,
+          "access_outcome": "official_public_body_read",
+          "transport_status_note": "Readable text/html returned by web tool; raw HTTP status not supplied.",
+          "original_full_html_retained": false,
+          "rendered_or_tool_text_excerpts_only": true,
+          "unrelated_page_content_retained": false,
+          "personal_contact_data_retained": false,
+          "independent_corroboration_claimed": false,
+          "initial_directory_opened_at_utc": "2026-10-25T00:23:38Z",
+          "id": "he-directory",
+          "source_type_as_recorded": "official_faculty_directory",
+          "retrieved_at": "2026-10-25",
+          "published_at": null,
+          "page_date_as_displayed": null,
+          "evidence_status": "retained_professional_excerpts_checked",
+          "evidence_label": "已复核既有必要职业摘录；非本次重新抓取或现职认证",
+          "observation_time_note": "保留原始工具结果观察时刻，不是源服务器时间或本次映射时间。",
+          "source_excerpt_fingerprints": [
+            {
+              "evidence_id": "he-directory-category",
+              "semantic_locator": "directory hierarchy; tool link markers removed and whitespace normalized",
+              "source_excerpt_sha256": "8cb94cc260cf97a31e2aea31077525bb66863ce0cda66bba83818e199cab1a1e"
+            },
+            {
+              "evidence_id": "he-directory-name",
+              "semantic_locator": "native link label and directory date; tool link marker removed",
+              "source_excerpt_sha256": "aae26964b0644f73e42e93bd1f2486034d8516110452bd4b293e82dc6dd138e5"
+            }
+          ]
+        },
+        {
+          "url": "https://law.seu.edu.cn/2023/1020/c9125a469195/page.htm",
+          "title": "单平基教授",
+          "source_type": "university_official",
+          "retrieved_at_utc": "2026-10-25T00:23:52Z",
+          "observation_time_basis": "UTC result observation time from current session, not source-server timestamp",
+          "displayed_publication_date": "2024-02-08",
+          "last_modified_verified": null,
+          "http_status": null,
+          "access_outcome": "official_public_body_read",
+          "transport_status_note": "Readable text/html returned by web tool; raw HTTP status not supplied.",
+          "original_full_html_retained": false,
+          "rendered_or_tool_text_excerpts_only": true,
+          "unrelated_page_content_retained": false,
+          "personal_contact_data_retained": false,
+          "independent_corroboration_claimed": false,
+          "id": "shan-native-profile",
+          "source_type_as_recorded": "official_native_directory_link_destination",
+          "retrieved_at": "2026-10-25",
+          "published_at": null,
+          "page_date_as_displayed": "2024-02-08",
+          "evidence_status": "retained_professional_excerpts_checked",
+          "evidence_label": "已复核既有必要职业摘录；非本次重新抓取或现职认证",
+          "observation_time_note": "保留原始工具结果观察时刻，不是源服务器时间或本次映射时间。",
+          "source_excerpt_fingerprints": [
+            {
+              "evidence_id": "shan-native-name",
+              "semantic_locator": "directory link destination identity",
+              "source_excerpt_sha256": "16945ded0e30e2d2db334ff18dffebd0b0c572c6dbe0129143f0370a0451567e"
+            },
+            {
+              "evidence_id": "shan-native-title",
+              "semantic_locator": "same person and source-role corroboration within same official site; not independent employment check",
+              "source_excerpt_sha256": "285e88a233e87673db6d76ad154ffc9de23b23b404caf425b051cf6b46874b8a"
+            }
+          ]
+        }
+      ],
+      "evidence_index": [
+        {
+          "evidence_id": "shan-name",
+          "semantic_locator": "identity and source title",
+          "source_excerpt_sha256": "16945ded0e30e2d2db334ff18dffebd0b0c572c6dbe0129143f0370a0451567e",
+          "source_id": "shan-profile",
+          "source_url": "https://law.seu.edu.cn/2023/1020/c21114a469194/page.htm"
+        },
+        {
+          "evidence_id": "shan-title",
+          "semantic_locator": "source-listed appointment and outward supervisory roles, not current employment verification",
+          "source_excerpt_sha256": "285e88a233e87673db6d76ad154ffc9de23b23b404caf425b051cf6b46874b8a",
+          "source_id": "shan-profile",
+          "source_url": "https://law.seu.edu.cn/2023/1020/c21114a469194/page.htm"
+        },
+        {
+          "evidence_id": "shan-degrees",
+          "semantic_locator": "three explicit degree awards; dates not stated",
+          "source_excerpt_sha256": "3780e4013bc5ab6e4626ec8c7c59b4e818a524c7c430b86993493acb0525eb66",
+          "source_id": "shan-profile",
+          "source_url": "https://law.seu.edu.cn/2023/1020/c21114a469194/page.htm"
+        },
+        {
+          "evidence_id": "shan-visits",
+          "semantic_locator": "two nondegree visits, dates and mentor unknown",
+          "source_excerpt_sha256": "dcdaa9139e6c879024d999231b369ca58c390430810b13e2367252e6c3f46105",
+          "source_id": "shan-profile",
+          "source_url": "https://law.seu.edu.cn/2023/1020/c21114a469194/page.htm"
+        },
+        {
+          "evidence_id": "shan-research",
+          "semantic_locator": "research directions",
+          "source_excerpt_sha256": "3a428b905793490b63bd52ad958dc074b7844ea997fa464062d01e8d367d7e29",
+          "source_id": "shan-profile",
+          "source_url": "https://law.seu.edu.cn/2023/1020/c21114a469194/page.htm"
+        },
+        {
+          "evidence_id": "shan-work-1",
+          "semantic_locator": "official-profile bibliography, author/year/title only; ranking labels not adopted",
+          "source_excerpt_sha256": "ab9ce6c2588b14653bcdf4663b3d7716d5ef9bbaab5137300b748d25b5157a2b",
+          "source_id": "shan-profile",
+          "source_url": "https://law.seu.edu.cn/2023/1020/c21114a469194/page.htm"
+        },
+        {
+          "evidence_id": "shan-work-2",
+          "semantic_locator": "official-profile bibliography; source Chinese title retained for English-version journal",
+          "source_excerpt_sha256": "00aff44540d6b2cfeb4042a073f153a59cea4eec1bd60b2860a744ce45fa2115",
+          "source_id": "shan-profile",
+          "source_url": "https://law.seu.edu.cn/2023/1020/c21114a469194/page.htm"
+        },
+        {
+          "evidence_id": "he-name",
+          "semantic_locator": "identity",
+          "source_excerpt_sha256": "903ed702eace86428bbb88aed9d0f5bdd2e802d32dc60d494215b870a9a0c8f1",
+          "source_id": "he-profile",
+          "source_url": "https://rwxy.seu.edu.cn/2023/0904/c8790a463452/page.htm"
+        },
+        {
+          "evidence_id": "he-title",
+          "semantic_locator": "source-listed unit and teacher role",
+          "source_excerpt_sha256": "422831e58929ff091ceaf355cec825d62e4592cc848761a01ebd06937bc2e2ef",
+          "source_id": "he-profile",
+          "source_url": "https://rwxy.seu.edu.cn/2023/0904/c8790a463452/page.htm"
+        },
+        {
+          "evidence_id": "he-bachelor",
+          "semantic_locator": "explicit bachelor award and year; start unknown",
+          "source_excerpt_sha256": "5d6488bd3d15c0c4a401be9316415f5c973f5e55aaf3d3f2217fe2fad5c2d753",
+          "source_id": "he-profile",
+          "source_url": "https://rwxy.seu.edu.cn/2023/0904/c8790a463452/page.htm"
+        },
+        {
+          "evidence_id": "he-master",
+          "semantic_locator": "explicit master award and year; start unknown",
+          "source_excerpt_sha256": "f6cf23d596bf9eccf8c79ae66d5d37471f43aa267804bba29284afcc8559cfb8",
+          "source_id": "he-profile",
+          "source_url": "https://rwxy.seu.edu.cn/2023/0904/c8790a463452/page.htm"
+        },
+        {
+          "evidence_id": "he-doctor",
+          "semantic_locator": "explicit doctoral award and year; start unknown",
+          "source_excerpt_sha256": "62fb39e7f8e167d866406ee0ca44f279d1364693a15e2f9156db435987bb2987",
+          "source_id": "he-profile",
+          "source_url": "https://rwxy.seu.edu.cn/2023/0904/c8790a463452/page.htm"
+        },
+        {
+          "evidence_id": "he-research",
+          "semantic_locator": "research directions",
+          "source_excerpt_sha256": "a688412940acb19bddf9d8aa9aaa78a54a331f864e902839c70b612396f38114",
+          "source_id": "he-profile",
+          "source_url": "https://rwxy.seu.edu.cn/2023/0904/c8790a463452/page.htm"
+        },
+        {
+          "evidence_id": "he-work-1",
+          "semantic_locator": "official bibliography author/title/year",
+          "source_excerpt_sha256": "f1bc2f26ecd702fd1b7e7adfde325946fbadeda3d6f3d7332c1f7c9d63888215",
+          "source_id": "he-profile",
+          "source_url": "https://rwxy.seu.edu.cn/2023/0904/c8790a463452/page.htm"
+        },
+        {
+          "evidence_id": "he-work-2",
+          "semantic_locator": "official bibliography author/title/year",
+          "source_excerpt_sha256": "fc1e5f849b569228246876f24bb7354af61c630b39ff1d6672f8b7d176b212a3",
+          "source_id": "he-profile",
+          "source_url": "https://rwxy.seu.edu.cn/2023/0904/c8790a463452/page.htm"
+        },
+        {
+          "evidence_id": "shan-overview-label",
+          "semantic_locator": "directory grouping only",
+          "source_excerpt_sha256": "cd28d04d5c0f003787ea7fc5a376223b51da284b9943b4aa8c220431a427076a",
+          "source_id": "shan-overview-directory",
+          "source_url": "https://law.seu.edu.cn/9121/list.htm"
+        },
+        {
+          "evidence_id": "shan-overview-rank",
+          "semantic_locator": "source category label; total not used as verified census",
+          "source_excerpt_sha256": "368dc209b0fa5ab1c266678c5fb12f1484fc47b83e17a72b6a51d81e436202af",
+          "source_id": "shan-overview-directory",
+          "source_url": "https://law.seu.edu.cn/9121/list.htm"
+        },
+        {
+          "evidence_id": "shan-overview-name",
+          "semantic_locator": "name substring in source directory; unrelated names omitted, no native profile link in this entry",
+          "source_excerpt_sha256": "dff2b4f26d7ee7ef7df28771115e07a98aa3033113717129686c0c0b61739850",
+          "source_id": "shan-overview-directory",
+          "source_url": "https://law.seu.edu.cn/9121/list.htm"
+        },
+        {
+          "evidence_id": "shan-directory-category",
+          "semantic_locator": "directory hierarchy only; tool link markers removed and whitespace normalized",
+          "source_excerpt_sha256": "58fa115df4ed52a0029fc0a67e079131304bb2e6ffb453ab16bf7f80212f3cef",
+          "source_id": "shan-directory",
+          "source_url": "https://law.seu.edu.cn/9125/list.htm"
+        },
+        {
+          "evidence_id": "shan-directory-name",
+          "semantic_locator": "native link label; tool link marker removed",
+          "source_excerpt_sha256": "16945ded0e30e2d2db334ff18dffebd0b0c572c6dbe0129143f0370a0451567e",
+          "source_id": "shan-directory",
+          "source_url": "https://law.seu.edu.cn/9125/list.htm"
+        },
+        {
+          "evidence_id": "he-directory-category",
+          "semantic_locator": "directory hierarchy; tool link markers removed and whitespace normalized",
+          "source_excerpt_sha256": "8cb94cc260cf97a31e2aea31077525bb66863ce0cda66bba83818e199cab1a1e",
+          "source_id": "he-directory",
+          "source_url": "https://rwxy.seu.edu.cn/8790/list.htm"
+        },
+        {
+          "evidence_id": "he-directory-name",
+          "semantic_locator": "native link label and directory date; tool link marker removed",
+          "source_excerpt_sha256": "aae26964b0644f73e42e93bd1f2486034d8516110452bd4b293e82dc6dd138e5",
+          "source_id": "he-directory",
+          "source_url": "https://rwxy.seu.edu.cn/8790/list.htm"
+        },
+        {
+          "evidence_id": "shan-native-name",
+          "semantic_locator": "directory link destination identity",
+          "source_excerpt_sha256": "16945ded0e30e2d2db334ff18dffebd0b0c572c6dbe0129143f0370a0451567e",
+          "source_id": "shan-native-profile",
+          "source_url": "https://law.seu.edu.cn/2023/1020/c9125a469195/page.htm"
+        },
+        {
+          "evidence_id": "shan-native-title",
+          "semantic_locator": "same person and source-role corroboration within same official site; not independent employment check",
+          "source_excerpt_sha256": "285e88a233e87673db6d76ad154ffc9de23b23b404caf425b051cf6b46874b8a",
+          "source_id": "shan-native-profile",
+          "source_url": "https://law.seu.edu.cn/2023/1020/c9125a469195/page.htm"
+        }
+      ],
+      "limits": [
+        "无新来源采集",
+        "未知现职，导航关闭",
+        "未核论文全文或正式学位论文导师",
+        "非完整院系普查"
+      ]
+    },
+    {
+      "baseline_commit": "de7103597edb5670d0b0de47750343d89ab35d95",
+      "people": [
+        {
+          "person_id": "seu-zhangxueyi",
+          "source_candidate_sha256": "6f7edc9d24844b46ee03e51e235688d82beec49def55545fdc2516d4ebd01783",
+          "source_evidence_sha256": "0789639582c9a8167791baa95feab345f3e74a1bb950ed8777ca05bb935c8ba6",
+          "source_review_sha256": "a3672ade28220bec59b665adb49fdb94bc526d830fa6770c1684dbaee0863d99",
+          "source_observed_at": "2026-10-25T05:25:57Z",
+          "observation_time_basis": "tool completion observation time, not exact HTTP timestamp",
+          "source_url": "https://rwxy.seu.edu.cn/zxy/main.htm",
+          "education_count": 4,
+          "awards_true": 3,
+          "nondegree_count": 1,
+          "mentor_count": 0,
+          "source_fact_projection": {
+            "professional_title": "副教授",
+            "department": "人文学院哲学与科学系",
+            "degree_names_as_source": [
+              "法学学士",
+              "哲学硕士",
+              "哲学博士"
+            ],
+            "publication_titles": [
+              "神经现象学视域下运动想象脑机接口的范式重构",
+              "实验哲学：方法、价值与应用"
+            ],
+            "additional_quote_only_facts": []
+          }
+        },
+        {
+          "person_id": "seu-dongqun",
+          "source_candidate_sha256": "9add9ba2f47f696cbe43f0e7d9eef073f596fff8283c22e5cdc0e1516b4e7151",
+          "source_evidence_sha256": "68b94897d1a3d59553547df1500af2dbeed85e4ca4906415bdbed5605d746a2b",
+          "source_review_sha256": "551140ff83dc88e36b25654bf0653baa0d02eb23411ab549b11ece8d885ee6ef",
+          "source_observed_at": "2026-10-25T06:19:46Z",
+          "observation_time_basis": "Reader observation window 06:19:46–06:19:47 UTC; not exact HTTP timestamps.",
+          "source_url": "https://skc.seu.edu.cn/2019/0903/c24979a284664/page.htm",
+          "education_count": 3,
+          "awards_true": 3,
+          "nondegree_count": 0,
+          "mentor_count": 0,
+          "source_fact_projection": {
+            "professional_title": "教授",
+            "department": "人文学院",
+            "degree_names_as_source": [
+              "哲学学士",
+              "哲学硕士",
+              "哲学博士"
+            ],
+            "publication_titles": [
+              "祖师禅",
+              "禅宗伦理"
+            ],
+            "additional_quote_only_facts": []
+          }
+        },
+        {
+          "person_id": "seu-longdiyong",
+          "source_candidate_sha256": "a9ac5930066bf71db25fe6046b5807d1af37f3a99764fb54b81608352de25281",
+          "source_evidence_sha256": "a0ab833611957d1cd27982e76db2ee86d9676de2c7624e1520d1aa32be6a25e6",
+          "source_review_sha256": "81cb50e5b7c09791145c82cb989a3dfaa6e21a317e856644285b3339537e7182",
+          "source_observed_at": "2026-10-25T06:46:02Z",
+          "observation_time_basis": "Tool completion endpoint; not independently authenticated exact request time.",
+          "source_url": "https://skc.seu.edu.cn/2019/0903/c24979a284629/pagem.htm",
+          "education_count": 3,
+          "awards_true": 2,
+          "nondegree_count": 1,
+          "mentor_count": 0,
+          "source_fact_projection": {
+            "professional_title": "教授、博士生导师",
+            "department": "艺术学院/艺术理论系",
+            "degree_names_as_source": [
+              "文学学士",
+              "文学博士"
+            ],
+            "publication_titles": [
+              "空间叙事研究",
+              "空间叙事学"
+            ],
+            "additional_quote_only_facts": [
+              {
+                "work_id": "seu-longdiyong-work-1",
+                "source_reported_collection": "国家哲学社会科学成果文库"
+              }
+            ]
+          }
+        }
+      ],
+      "mapping_notes": [
+        "3原始来源与审查摘要逐一核对；董群不套用仅针对卞绍斌的wave346 overlay。",
+        "原始quote改为指纹，但事实保留为原字段、学位名称、职业称谓、书目类型/卷期/月版次及龙迪勇成果文库标签；私有trace存必要原文供复核。",
+        "何绍锦与张学义共用seu-humanities-philosophy-science节点，由同批另一payload提供；此处保留张的原始人文学院哲学与科学系归属文本。",
+        "董群访问教授仅职业岗位，不转学习/学位；龙迪勇博士后非学位且不补硕士。",
+        "历史页面日期与观察时间保留原口径，无现职升格、无新网络观察。"
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/people/seu-zhangxueyi/identity_evidence/0/quote",
+          "sha256": "d2fb700aea2f988b5f869f65a8b68fd4a344c7f1b211bd2772f8b6ecbd00f6ca"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/identity_evidence/1/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/identity_evidence/2/quote",
+          "sha256": "6932835af8a8f75487acc35676bdca519cada1c90c69c13d022b394d1d2b2371"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/0/evidence/0/quote",
+          "sha256": "ca773acf1c332ae79ef2411a8a211c250e8973f74cd0f025a898c523b5bd169e"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/1/evidence/0/quote",
+          "sha256": "1ddf00135f44e30c62faeace6e04287a5975b2532ca51b4daf8d8f17fdecddeb"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/2/evidence/0/quote",
+          "sha256": "a416bd988a4525de3435d74caccc5fac9360c6cb7192716c5a28bd908ec47c40"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/nondegree_training/0/evidence/0/quote",
+          "sha256": "64e5432a4c670923ab419719cd2d0addacc69e6135c6003f100d64b19e8bd787"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/appointments/0/evidence/0/quote",
+          "sha256": "6932835af8a8f75487acc35676bdca519cada1c90c69c13d022b394d1d2b2371"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/publications/0/evidence/0/quote",
+          "sha256": "fd0be3ec0155e74a183f726437fc68806fa1c54b1f73aca0582bac922132da0a"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/publications/1/evidence/0/quote",
+          "sha256": "c388e09eae1edb300041ddcdf13f67bc4eed01ebca97d5cabba98d91ccc22a9e"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/0/quote",
+          "sha256": "d2fb700aea2f988b5f869f65a8b68fd4a344c7f1b211bd2772f8b6ecbd00f6ca"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/1/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/2/quote",
+          "sha256": "6932835af8a8f75487acc35676bdca519cada1c90c69c13d022b394d1d2b2371"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/3/quote",
+          "sha256": "a416bd988a4525de3435d74caccc5fac9360c6cb7192716c5a28bd908ec47c40"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/4/quote",
+          "sha256": "64e5432a4c670923ab419719cd2d0addacc69e6135c6003f100d64b19e8bd787"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/5/quote",
+          "sha256": "1ddf00135f44e30c62faeace6e04287a5975b2532ca51b4daf8d8f17fdecddeb"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/6/quote",
+          "sha256": "ca773acf1c332ae79ef2411a8a211c250e8973f74cd0f025a898c523b5bd169e"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/7/quote",
+          "sha256": "fd0be3ec0155e74a183f726437fc68806fa1c54b1f73aca0582bac922132da0a"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/8/quote",
+          "sha256": "c388e09eae1edb300041ddcdf13f67bc4eed01ebca97d5cabba98d91ccc22a9e"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/0/evidence/0/quote",
+          "sha256": "ca773acf1c332ae79ef2411a8a211c250e8973f74cd0f025a898c523b5bd169e"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/1/evidence/0/quote",
+          "sha256": "1ddf00135f44e30c62faeace6e04287a5975b2532ca51b4daf8d8f17fdecddeb"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/2/evidence/0/quote",
+          "sha256": "a416bd988a4525de3435d74caccc5fac9360c6cb7192716c5a28bd908ec47c40"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/3/evidence/0/quote",
+          "sha256": "64e5432a4c670923ab419719cd2d0addacc69e6135c6003f100d64b19e8bd787"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "6932835af8a8f75487acc35676bdca519cada1c90c69c13d022b394d1d2b2371"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "fd0be3ec0155e74a183f726437fc68806fa1c54b1f73aca0582bac922132da0a"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "c388e09eae1edb300041ddcdf13f67bc4eed01ebca97d5cabba98d91ccc22a9e"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/identity_evidence/0/quote",
+          "sha256": "839dd4fb8ef14e5d0efa0e571456ff1b7a89298678bd6d2a80baeb63e1f9a6f5"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/0/evidence/0/quote",
+          "sha256": "dd370a6edbfe9b089e6d1e16d6b9e6e4c6bc8d25653bc4ca0014570ea1ef864e"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/1/evidence/0/quote",
+          "sha256": "74ee4c34a3094e2f6ce838a7facfd38151ddabe729c25794b127bb73ac0fbb08"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/2/evidence/0/quote",
+          "sha256": "2e00ded479f940dcb6dd2947bcca5fa04f88681da2b6be280a251aa28a1ca5e0"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/appointments/0/evidence/0/quote",
+          "sha256": "d036188b93149918d1949dbedac6a24168f8a46a7f4609f4ca8b6bcb048a8ef4"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/publications/0/evidence/0/quote",
+          "sha256": "6cdd3f866773fe4efb03d530666fc025787ddd96e8ead3809ae74f8fdc289ff3"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/publications/1/evidence/0/quote",
+          "sha256": "b674c7d0878841c10498476d422a8b667c8a76a8315f94a59f2a3e1a199f73e0"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/0/quote",
+          "sha256": "839dd4fb8ef14e5d0efa0e571456ff1b7a89298678bd6d2a80baeb63e1f9a6f5"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/1/quote",
+          "sha256": "dd370a6edbfe9b089e6d1e16d6b9e6e4c6bc8d25653bc4ca0014570ea1ef864e"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/2/quote",
+          "sha256": "74ee4c34a3094e2f6ce838a7facfd38151ddabe729c25794b127bb73ac0fbb08"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/3/quote",
+          "sha256": "2e00ded479f940dcb6dd2947bcca5fa04f88681da2b6be280a251aa28a1ca5e0"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/4/quote",
+          "sha256": "d036188b93149918d1949dbedac6a24168f8a46a7f4609f4ca8b6bcb048a8ef4"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/5/quote",
+          "sha256": "6cdd3f866773fe4efb03d530666fc025787ddd96e8ead3809ae74f8fdc289ff3"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/6/quote",
+          "sha256": "b674c7d0878841c10498476d422a8b667c8a76a8315f94a59f2a3e1a199f73e0"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/0/evidence/0/quote",
+          "sha256": "dd370a6edbfe9b089e6d1e16d6b9e6e4c6bc8d25653bc4ca0014570ea1ef864e"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/1/evidence/0/quote",
+          "sha256": "74ee4c34a3094e2f6ce838a7facfd38151ddabe729c25794b127bb73ac0fbb08"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/2/evidence/0/quote",
+          "sha256": "2e00ded479f940dcb6dd2947bcca5fa04f88681da2b6be280a251aa28a1ca5e0"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "d036188b93149918d1949dbedac6a24168f8a46a7f4609f4ca8b6bcb048a8ef4"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "6cdd3f866773fe4efb03d530666fc025787ddd96e8ead3809ae74f8fdc289ff3"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "b674c7d0878841c10498476d422a8b667c8a76a8315f94a59f2a3e1a199f73e0"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "839dd4fb8ef14e5d0efa0e571456ff1b7a89298678bd6d2a80baeb63e1f9a6f5"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/identity_evidence/0/quote",
+          "sha256": "f260ed138881e83dc94d8207238109fda5e5fa7d9b921f37060781adf0fc1ade"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/education/0/evidence/0/quote",
+          "sha256": "3a8673e2259f24b6bd195e71c0e12246dee3324709021f5ca509376c9e5f8d89"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/education/1/evidence/0/quote",
+          "sha256": "38c7ff9bb379b6f24de372b4819fa4e9b45de5b2f6457709da49a350696c0d4e"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/nondegree_training/0/evidence/0/quote",
+          "sha256": "30660dee76c2672f80f28b9e1cc3db0507ada9aa413b3c6e1bb519714cfb3618"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/publications/0/evidence/0/quote",
+          "sha256": "e470430e71087794fa48667e3d503f98f49f3eed18eae781bae61c8c09a453d7"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/publications/1/evidence/0/quote",
+          "sha256": "1d99e24814327b8957c467c274521ce176f83cdbd125d11625c0667458e55df3"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/source_displayed_date_evidence/0/quote",
+          "sha256": "345d984e2744dc79357ae2e8e9644c586a5076b7701cc0e97f667be552c21f30"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/0/quote",
+          "sha256": "f260ed138881e83dc94d8207238109fda5e5fa7d9b921f37060781adf0fc1ade"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/1/quote",
+          "sha256": "3a8673e2259f24b6bd195e71c0e12246dee3324709021f5ca509376c9e5f8d89"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/2/quote",
+          "sha256": "38c7ff9bb379b6f24de372b4819fa4e9b45de5b2f6457709da49a350696c0d4e"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/3/quote",
+          "sha256": "30660dee76c2672f80f28b9e1cc3db0507ada9aa413b3c6e1bb519714cfb3618"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/4/quote",
+          "sha256": "e470430e71087794fa48667e3d503f98f49f3eed18eae781bae61c8c09a453d7"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/5/quote",
+          "sha256": "1d99e24814327b8957c467c274521ce176f83cdbd125d11625c0667458e55df3"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/6/quote",
+          "sha256": "345d984e2744dc79357ae2e8e9644c586a5076b7701cc0e97f667be552c21f30"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/education/0/evidence/0/quote",
+          "sha256": "3a8673e2259f24b6bd195e71c0e12246dee3324709021f5ca509376c9e5f8d89"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/education/1/evidence/0/quote",
+          "sha256": "38c7ff9bb379b6f24de372b4819fa4e9b45de5b2f6457709da49a350696c0d4e"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/education/2/evidence/0/quote",
+          "sha256": "30660dee76c2672f80f28b9e1cc3db0507ada9aa413b3c6e1bb519714cfb3618"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "e470430e71087794fa48667e3d503f98f49f3eed18eae781bae61c8c09a453d7"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "1d99e24814327b8957c467c274521ce176f83cdbd125d11625c0667458e55df3"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "f260ed138881e83dc94d8207238109fda5e5fa7d9b921f37060781adf0fc1ade"
+        }
+      ],
+      "semantic_locator_mapping": [
+        {
+          "json_pointer": "/people/seu-zhangxueyi/identity_evidence/0/source_locator",
+          "public_locator": "姓名与职业归属"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/identity_evidence/1/source_locator",
+          "public_locator": "职业称谓"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/identity_evidence/2/source_locator",
+          "public_locator": "任职经历与院系归属"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/0/evidence/0/source_locator",
+          "public_locator": "本科学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/1/evidence/0/source_locator",
+          "public_locator": "硕士学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/2/evidence/0/source_locator",
+          "public_locator": "博士学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/nondegree_training/0/evidence/0/source_locator",
+          "public_locator": "访问学者经历"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/appointments/0/evidence/0/source_locator",
+          "public_locator": "任职经历与院系归属"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/publications/0/evidence/0/source_locator",
+          "public_locator": "成果条目一"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/publications/1/evidence/0/source_locator",
+          "public_locator": "成果条目二"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/0/source_locator",
+          "public_locator": "姓名与职业归属"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/1/source_locator",
+          "public_locator": "职业称谓"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/2/source_locator",
+          "public_locator": "任职经历与院系归属"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/3/source_locator",
+          "public_locator": "博士学习与明确授位"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/4/source_locator",
+          "public_locator": "访问学者经历"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/5/source_locator",
+          "public_locator": "硕士学习与明确授位"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/6/source_locator",
+          "public_locator": "本科学习与明确授位"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/7/source_locator",
+          "public_locator": "成果条目一"
+        },
+        {
+          "json_pointer": "/sources/seu-zhangxueyi/excerpts/8/source_locator",
+          "public_locator": "成果条目二"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/0/evidence/0/source_locator",
+          "public_locator": "本科学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/1/evidence/0/source_locator",
+          "public_locator": "硕士学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/2/evidence/0/source_locator",
+          "public_locator": "博士学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-zhangxueyi/education/3/evidence/0/source_locator",
+          "public_locator": "访问学者经历"
+        },
+        {
+          "json_pointer": "/evidence/0/source_locator",
+          "public_locator": "任职经历与院系归属"
+        },
+        {
+          "json_pointer": "/evidence/0/source_locator",
+          "public_locator": "成果条目一"
+        },
+        {
+          "json_pointer": "/evidence/0/source_locator",
+          "public_locator": "成果条目二"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/identity_evidence/0/source_locator",
+          "public_locator": "姓名与职业归属"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/0/evidence/0/source_locator",
+          "public_locator": "本科学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/1/evidence/0/source_locator",
+          "public_locator": "硕士学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/2/evidence/0/source_locator",
+          "public_locator": "博士学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/appointments/0/evidence/0/source_locator",
+          "public_locator": "访问教授职业岗位"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/publications/0/evidence/0/source_locator",
+          "public_locator": "成果条目一"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/publications/1/evidence/0/source_locator",
+          "public_locator": "成果条目二"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/0/source_locator",
+          "public_locator": "姓名与职业归属"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/1/source_locator",
+          "public_locator": "本科学习与明确授位"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/2/source_locator",
+          "public_locator": "硕士学习与明确授位"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/3/source_locator",
+          "public_locator": "博士学习与明确授位"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/4/source_locator",
+          "public_locator": "访问教授职业岗位"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/5/source_locator",
+          "public_locator": "成果条目一"
+        },
+        {
+          "json_pointer": "/sources/seu-dongqun/excerpts/6/source_locator",
+          "public_locator": "成果条目二"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/0/evidence/0/source_locator",
+          "public_locator": "本科学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/1/evidence/0/source_locator",
+          "public_locator": "硕士学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-dongqun/education/2/evidence/0/source_locator",
+          "public_locator": "博士学习与明确授位"
+        },
+        {
+          "json_pointer": "/evidence/0/source_locator",
+          "public_locator": "访问教授职业岗位"
+        },
+        {
+          "json_pointer": "/evidence/0/source_locator",
+          "public_locator": "成果条目一"
+        },
+        {
+          "json_pointer": "/evidence/0/source_locator",
+          "public_locator": "成果条目二"
+        },
+        {
+          "json_pointer": "/0/source_locator",
+          "public_locator": "姓名与职业归属"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/identity_evidence/0/source_locator",
+          "public_locator": "姓名与职业归属"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/education/0/evidence/0/source_locator",
+          "public_locator": "本科学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/education/1/evidence/0/source_locator",
+          "public_locator": "博士学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/nondegree_training/0/evidence/0/source_locator",
+          "public_locator": "博士后非学位经历"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/publications/0/evidence/0/source_locator",
+          "public_locator": "专著条目一"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/publications/1/evidence/0/source_locator",
+          "public_locator": "专著条目二"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/source_displayed_date_evidence/0/source_locator",
+          "public_locator": "页面显示日期"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/0/source_locator",
+          "public_locator": "姓名与职业归属"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/1/source_locator",
+          "public_locator": "本科学习与明确授位"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/2/source_locator",
+          "public_locator": "博士学习与明确授位"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/3/source_locator",
+          "public_locator": "博士后非学位经历"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/4/source_locator",
+          "public_locator": "专著条目一"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/5/source_locator",
+          "public_locator": "专著条目二"
+        },
+        {
+          "json_pointer": "/sources/seu-longdiyong/professional_excerpts/6/source_locator",
+          "public_locator": "页面显示日期"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/education/0/evidence/0/source_locator",
+          "public_locator": "本科学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/education/1/evidence/0/source_locator",
+          "public_locator": "博士学习与明确授位"
+        },
+        {
+          "json_pointer": "/people/seu-longdiyong/education/2/evidence/0/source_locator",
+          "public_locator": "博士后非学位经历"
+        },
+        {
+          "json_pointer": "/evidence/0/source_locator",
+          "public_locator": "专著条目一"
+        },
+        {
+          "json_pointer": "/evidence/0/source_locator",
+          "public_locator": "专著条目二"
+        },
+        {
+          "json_pointer": "/0/source_locator",
+          "public_locator": "姓名与职业归属"
+        }
+      ]
+    }
+  ],
+  "mapping": "仅追加十名已审来源人物及组织展示节点；旧624事实保持。当前在岗均未知、导航关闭；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}

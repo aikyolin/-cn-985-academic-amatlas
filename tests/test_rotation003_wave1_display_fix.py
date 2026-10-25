@@ -275,10 +275,11 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
         self.assertNotIn('来源教学时期',self.person['teaching'][1]['role_source_note'])
 
     def test_04_application_exporter_and_tokens_have_only_reviewed_layout_overlay(self):
+        # Exact old release SHA/token assertions; current runtime is checked separately.
         for file,digest in UNCHANGED_FILES.items():
-            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),endpoint_sha256(file,dict(dict(dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY),**RELEASE31_PIN_OVERLAY),**RELEASE31_PUBLIC_METADATA_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest))))),file)
+            self.assertEqual(hashlib.sha256(historical_bytes(file, root=published_root())).hexdigest(),endpoint_sha256(file,dict(dict(dict(dict(RELEASE28_PIN_OVERLAY,**RELEASE29_PIN_OVERLAY),**RELEASE30_PIN_OVERLAY),**RELEASE31_PIN_OVERLAY),**RELEASE31_PUBLIC_METADATA_PIN_OVERLAY).get(file,RELEASE27_PIN_OVERLAY.get(file,RELEASE26_PIN_OVERLAY.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest))))),file)
         for file,count in [('site/app.js',3),('site/rosters.js',1),('site/index.html',2)]:
-            self.assertEqual(historical_bytes(file, root=ROOT).decode().count('rotation003-20261024-w2'),count)
+            self.assertEqual(historical_bytes(file, root=published_root()).decode().count('rotation003-20261024-w2'),count)
 
     def test_05_generated_snapshots_recover_exactly_after_aliases_and_derived_build_id_removed(self):
         site=release25_view(json.loads((ROOT/'site/atlas.json').read_text()), 'site/atlas.json');roster=release25_view(json.loads((ROOT/'site/rosters.json').read_text()), 'site/rosters.json')

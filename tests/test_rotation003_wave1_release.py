@@ -1,3 +1,4 @@
+from published_fixture import published_root
 from source_date_history import historical_bytes
 """Independent release25 CQU/XMU/BIT source and export regressions.
 Pins derive only from hash-approved original packages and immutable release24.
@@ -1984,10 +1985,11 @@ class Rotation003Wave1ReleaseTests(unittest.TestCase):
         self.assertEqual(len(roster['entries']),1721)
 
     def test_29_unaffected_build_helpers_and_assets_remain_byte_identical(self):
+        # Exact old release SHA/token assertions; current runtime is checked separately.
         for file,digest in UNCHANGED_APPLICATION_SHA256.items():
-            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),LAYOUT_FIX_APPLICATION_SHA256.get(file,REVIEWED_COMPATIBILITY_SHA256.get(file,digest)),file)
+            self.assertEqual(hashlib.sha256(historical_bytes(file, root=published_root())).hexdigest(),LAYOUT_FIX_APPLICATION_SHA256.get(file,REVIEWED_COMPATIBILITY_SHA256.get(file,digest)),file)
         for file,digest in REVIEWED_COMPATIBILITY_SHA256.items():
-            self.assertEqual(hashlib.sha256(historical_bytes(file,(ROOT/file).read_bytes())).hexdigest(),RELEASE26_DISPLAY_SHA256.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)),file)
+            self.assertEqual(hashlib.sha256(historical_bytes(file, root=published_root())).hexdigest(),RELEASE26_DISPLAY_SHA256.get(file,LAYOUT_FIX_APPLICATION_SHA256.get(file,digest)),file)
 
     def test_30_actual_validators_consumers_and_exports_are_nonmutating(self):
         before=object_sha([self.d,self.r])

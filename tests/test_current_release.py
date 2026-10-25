@@ -18,6 +18,8 @@ from public_metadata import check_public_tree
 MAPPING_SHA256 = 'b08daade03c91c774ecda2bc9469f5d92497be873732c5bfb58c59ab9a244475'
 FIRST_IDS = ['nju-shiyini', 'nju-yangderui']
 NEXT_MAPPING_SHA256 = '6b7347159e025485837de10750b40e7af329f229db559e273f4f9145095a6079'
+SEU_MAPPING_SHA256 = 'e628de5b926bc65288b908aa2c8fc85fd5ff55f156891e2ab573acacaaa86795'
+SEU_IDS = ['seu-dinghui', 'seu-sushu', 'seu-zhangkaifeng', 'seu-zhangjianqiong', 'seu-liupeidang', 'seu-shan-pingji-wave171', 'seu-he-shaojin-wave171', 'seu-zhangxueyi', 'seu-dongqun', 'seu-longdiyong']
 NEXT_IDS = ['nju-huxiaowu', 'nju-caipingqiang', 'nju-linzhaoyu', 'nju-huying', 'nju-zhangwei-linguistics', 'nju-lvlinhai-education', 'nju-liyougen-law', 'nju-chenbaojun', 'nju-jiangfei', 'nju-zhoujiaxin']
 
 def read(root, rel):
@@ -33,11 +35,17 @@ def next_mapping():
     assert hashlib.sha256(raw).hexdigest() == NEXT_MAPPING_SHA256, 'Reviewed new ten-person mapping changed'
     return json.loads(raw)
 
+def seu_mapping():
+    raw = (ROOT / 'tests/fixtures/independent-seu10-source-mapping.json').read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == SEU_MAPPING_SHA256, 'Reviewed SEU ten-person mapping changed'
+    return json.loads(raw)
+
 def reviewed_additions():
-    first, second = mapping(), next_mapping()
+    first, second, third = mapping(), next_mapping(), seu_mapping()
     assert [p['person_id'] for p in first['people']] == FIRST_IDS
     assert [p['person_id'] for p in second['people']] == NEXT_IDS
-    return {key: first[key] + second[key] for key in ('people', 'org_units', 'profile_batches')}
+    assert [p['person_id'] for p in third['people']] == SEU_IDS
+    return {key: first[key] + second[key] + third[key] for key in ('people', 'org_units', 'profile_batches')}
 
 def validate_append(current, previous, additions):
     assert set(current) == set(previous), 'Unlisted canonical root fields'
@@ -46,7 +54,7 @@ def validate_append(current, previous, additions):
             assert current[key] == value + additions[key], 'Historical or new source fact changed: ' + key
         else:
             assert current[key] == value, 'Unlisted change: ' + key
-    assert [x['person_id'] for x in current['people'][len(previous['people']):]] == FIRST_IDS + NEXT_IDS
+    assert [x['person_id'] for x in current['people'][len(previous['people']):]] == FIRST_IDS + NEXT_IDS + SEU_IDS
     assert len({p['person_id'] for p in current['people']}) == len(current['people'])
 
 class CurrentRelease(unittest.TestCase):
@@ -68,9 +76,16 @@ class CurrentRelease(unittest.TestCase):
             expected = self.previous[key] + first[key]
             self.assertEqual(self.actual[key][:len(expected)], expected, key)
 
+    def test_published_624_prefix_is_independent_fixed_612_plus_reviewed_nju_mappings(self):
+        first, second = mapping(), next_mapping()
+        self.assertEqual(len(self.previous['people']) + len(first['people']) + len(second['people']), 624)
+        for key in ('people', 'org_units', 'profile_batches'):
+            expected = self.previous[key] + first[key] + second[key]
+            self.assertEqual(self.actual[key][:len(expected)], expected, key)
+
     def test_old_fact_deletion_reordering_and_unknown_promotions_fail(self):
         # Mutate each independently protected era, not just whichever person is last.
-        for index in (0, 612, 614):
+        for index in (0, 612, 614, 624):
             for key, value in [('name', 'invented'), ('quick_link_eligible', True)]:
                 candidate = copy.deepcopy(self.actual)
                 if candidate['people'][index].get(key) == value:
@@ -143,16 +158,29 @@ class CurrentRelease(unittest.TestCase):
                     self.assertEqual(''.join(b.itertext()), ''.join(a.itertext()).replace('612份独立人物档案', str(len(self.actual['people'])) + '份独立人物档案'))
                     self.assertEqual(after, before.replace(b'612&#20221;&#29420;&#31435;', str(len(self.actual['people'])).encode() + b'&#20221;&#29420;&#31435;'))
 
-    def test_live_runtime_and_old_validation_engines_are_unchanged(self):
+    def test_live_runtime_has_only_reviewed_institution_fix_and_old_engines_unchanged(self):
         for rel in ['site/app.js','site/model.js','site/rosters.js','site/styles.css','site/index.html',
                     'scripts/build.py','scripts/build_rosters.py','scripts/validate_source_contract.py',
                     'scripts/validate_metadata_transition.py','tests/source_date_history.py',
                     'tests/source-date-history.js']:
-            self.assertEqual((ROOT / rel).read_bytes(), (published_root() / rel).read_bytes(), rel)
+            expected = (published_root() / rel).read_bytes()
+            # Sole approved runtime correction: unknown appointment institutions
+            # must not inherit the person's directory affiliation; cache token follows.
+            if rel == 'site/app.js':
+                before = b"${esc(a.institution||p.department)}"
+                after = "${esc(a.institution||'任职机构未核实')}".encode()
+                self.assertEqual(expected.count(before), 1)
+                expected = expected.replace(before, after)
+            asset_token_counts = {'site/app.js': 3, 'site/rosters.js': 1, 'site/index.html': 2}
+            if rel in asset_token_counts:
+                before, after = b'source-dates-20261024', b'appointment-institution-20261025'
+                self.assertEqual(expected.count(before), asset_token_counts[rel])
+                expected = expected.replace(before, after)
+            self.assertEqual((ROOT / rel).read_bytes(), expected, rel)
 
     def test_every_affected_workbook_exactly_matches_reviewed_members_and_fields(self):
         from openpyxl import load_workbook
-        departments = {p['department_id'] for p in next_mapping()['people']}
+        departments = {p['department_id'] for p in next_mapping()['people'] + seu_mapping()['people']}
         expected_people = self.previous['people'] + self.additions['people']
         for department in departments:
             members = [p for p in expected_people if p['department_id'] == department]

@@ -1,3 +1,4 @@
+from published_fixture import published_root
 from source_date_history import historical_bytes
 """Independent release23 NJU/HNU source-pinned, offline regression.
 
@@ -883,8 +884,9 @@ class Rotation002Wave2ReleaseTests(unittest.TestCase):
                 self.assertEqual(p['link_status'],'official_publication_list_only')
 
     def test_22_no_application_changes_or_new_ui_columns(self):
+        # Exact old release SHA/token assertions; current runtime is checked separately.
         for path,digest in UNCHANGED_APPLICATION_SHA256.items():
-            self.assertEqual(hashlib.sha256(historical_bytes(path,(ROOT/path).read_bytes())).hexdigest(),RELEASE26_DISPLAY_SHA256.get(path, LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest)))),path)
+            self.assertEqual(hashlib.sha256(historical_bytes(path, root=published_root())).hexdigest(),RELEASE26_DISPLAY_SHA256.get(path, LAYOUT_FIX_APPLICATION_SHA256.get(path, ROTATION003_APPLICATION_SHA256.get(path, DISPLAY_FIX_APPLICATION_SHA256.get(path,digest)))),path)
 
     def test_23_consumer_statistics_are_partial_and_not_full_school_population(self):
         js=self.consumers()

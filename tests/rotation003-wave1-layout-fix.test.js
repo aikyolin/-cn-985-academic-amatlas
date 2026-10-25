@@ -1,3 +1,4 @@
+import {publishedRoot} from './published-fixture.js';
 import {historicalBytes,withHistoricalAppRoot} from './source-date-history.js';
 import {release25View} from './release-history.js';
 // Offline actual-app HTML and scoped CSS-cascade regression, not a browser geometry test.
@@ -150,8 +151,8 @@ test('teaching role labels and historical caveats remain exact',async()=>{
  for(const row of person.teaching)assert(section.includes(esc(row.note)));
 });
 
-test('all 1110 actual profile and lineage renders are byte-identical to frozen display-fix output',async()=>{
- await withHistoricalAppRoot(root,async historicalRoot=>{
+test('all 1110 historical profile and lineage renders match the frozen display-fix output',async()=>{
+ await withHistoricalAppRoot(publishedRoot(),async historicalRoot=>{
   const f=await fixture(db,historicalRoot),renders=db.people.flatMap(p=>['profile','lineage'].map(mode=>[p.person_id,mode,f.render(p.person_id,mode)]));
   assert.equal(renders.length,1110);assert.equal(sha(JSON.stringify(renders)),BASELINE_ROUTE_SHA256);
  });
@@ -159,9 +160,9 @@ test('all 1110 actual profile and lineage renders are byte-identical to frozen d
 
 test('six asset references are synchronized to the new wrapping CSS generation',()=>{
  for(const [file,count]of [['site/app.js',3],['site/rosters.js',1],['site/index.html',2]]){
-  const text=historicalBytes(file,root).toString('utf8');assert.equal(text.split('rotation003-20261024-w2').length-1,count);assert(!text.includes('rotation003-20261023-w1'));
+  const text=historicalBytes(file,publishedRoot()).toString('utf8');assert.equal(text.split('rotation003-20261024-w2').length-1,count);assert(!text.includes('rotation003-20261023-w1'));
  }
- const index=historicalBytes('site/index.html',root).toString('utf8');assert(index.includes('styles.css?v=rotation003-20261024-w2'));assert(index.includes('app.js?v=rotation003-20261024-w2'));
+ const index=historicalBytes('site/index.html',publishedRoot()).toString('utf8');assert(index.includes('styles.css?v=rotation003-20261024-w2'));assert(index.includes('app.js?v=rotation003-20261024-w2'));
 });
 
 test('rendering stays read-only and does not turn pending or unknown degrees into profiles',async()=>{
