@@ -1,0 +1,1197 @@
+{
+  "schema_version": "independent-hnu10-canonical-mapping-1",
+  "baseline_status": "published_655",
+  "published_main_commit": "453c824273f2242f5415353a23d967ef772f46ef",
+  "new_people": [
+    "hnu-huyueqiang",
+    "hnu-liujie",
+    "hnu-libing-education-history",
+    "hnu-hubicheng",
+    "hnu-yuanxiang-design",
+    "hnu-yuanzhaohui-architecture",
+    "hnu-yanjianfei",
+    "hnu-sunqingjuan",
+    "hnu-tanhaibo",
+    "hnu-huying"
+  ],
+  "new_org_ids": [
+    "hnu-mechanical-vehicle",
+    "hnu-literature",
+    "hnu-design",
+    "hnu-architecture",
+    "hnu-education-science",
+    "hnu-yuelu",
+    "hnu-public-administration"
+  ],
+  "counts": {
+    "people": 10,
+    "org_units": 7,
+    "education": 30,
+    "appointments": 20,
+    "publications": 18,
+    "mentors": 9,
+    "teaching": 17,
+    "degree_true": 12,
+    "degree_false": 12,
+    "degree_unknown": 6
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "engineering-humanities",
+      "canonical_payload_sha256": "0b1a5d7bf392df8d2e21d51de52f84580d01f8bd1bf35bed33a54a6d31df7de7",
+      "field_mapping_sha256": "641c8421fec1232c060b88ef6cac16bc7c2a5769da6dfcbc9d9ab222ae87b2f1",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "education",
+      "canonical_payload_sha256": "63a39f585316088f611a796c932307caba049abc3fdc2d27fe77e06c1102afc9",
+      "field_mapping_sha256": "f94a62c0c11e02141962966a3c8332622c6a046a8fdb3029fdb88ab44eb3fc99",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "yuelu-public-design",
+      "canonical_payload_sha256": "c99fb204309e315f26d9e42c626ad24c5846f75bc40d278155d4107564153383",
+      "field_mapping_sha256": "50188d542e84060c256c54b178cbaf354f86a852f5d346a2bacbca5a98eec6bb",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "baseline_publication_status": "pending_not_main",
+      "published_main_people": 645,
+      "schema_reference_people": 655,
+      "mapping_scope": "四人仅消费留存已接受来源，不建candidate，不新采集。",
+      "people": [
+        {
+          "person_id": "hnu-huyueqiang",
+          "source_candidate_sha256": "1243c598b7cde93a51d52934b9cb6fae831c2146ee62547f11ab2c778d5ec131",
+          "source_review_sha256": "fb7874b3bda6ff9b9aefd867f99f6d764c20e9fa18a59d353082a8bd77ffe8e6",
+          "source_urls": [
+            "https://grzy.hnu.edu.cn/site/index/huyueqiang",
+            "https://mve.hnu.edu.cn/hdjxyyzgcxy/szdw/jslb.htm"
+          ],
+          "notes": [
+            "来源个人页称教授、博士生导师，保留为本人职业资格标签；不是本人的导师关系，不补资格日期或任职。",
+            "伯克利联合培养起始2016-07，Research Assistant起始2016-09，不合并时间。",
+            "中英文专业及Max Planck机构措辞均保留，不推同一法律实体。"
+          ],
+          "counts": {
+            "education": 4,
+            "mentors": 2,
+            "appointments": 4,
+            "professional_qualifications": 0,
+            "publications": 2,
+            "teaching": 0
+          }
+        },
+        {
+          "person_id": "hnu-liujie",
+          "source_candidate_sha256": "365e8bb5c1174eb9e2ad5d7cb20e82a2050f5d81a05e58107fc61cb8ce1c3f19",
+          "source_review_sha256": "64c960e7f942217396f87d6b253389564aaa8d637c8427691d9349ecace3ee04",
+          "source_urls": [
+            "https://wxy.hnu.edu.cn/info/1014/1027.htm",
+            "https://wxy.hnu.edu.cn/szdw/jslb2.htm"
+          ],
+          "notes": [
+            "本科未披露；硕转博不另造硕士授位。",
+            "2010年7月硕士研究生导师是本人指导他人的资格，已独立列出，不作本人导师关系。"
+          ],
+          "counts": {
+            "education": 2,
+            "mentors": 2,
+            "appointments": 2,
+            "professional_qualifications": 1,
+            "publications": 2,
+            "teaching": 0
+          }
+        },
+        {
+          "person_id": "hnu-yuanxiang-design",
+          "source_candidate_sha256": "5fbdef1c3d55f493d88fffef8fb0f1af768640f31da56ec7e04517be04bc2f23",
+          "source_review_sha256": "871ebe190ca0df9382182ab27e7a9359a033e083092b5b03d7f5d321250ef574",
+          "source_urls": [
+            "https://design.hnu.edu.cn/info/1023/8396.htm",
+            "https://design.hnu.edu.cn/ls.htm"
+          ],
+          "notes": [
+            "2007页面标签与2025书目并存，不推内容最后更新时间。",
+            "首篇作者等字截断原样保留，不补作者。"
+          ],
+          "counts": {
+            "education": 4,
+            "mentors": 0,
+            "appointments": 1,
+            "professional_qualifications": 0,
+            "publications": 2,
+            "teaching": 3
+          }
+        },
+        {
+          "person_id": "hnu-yuanzhaohui-architecture",
+          "source_candidate_sha256": "5fbdef1c3d55f493d88fffef8fb0f1af768640f31da56ec7e04517be04bc2f23",
+          "source_review_sha256": "871ebe190ca0df9382182ab27e7a9359a033e083092b5b03d7f5d321250ef574",
+          "source_urls": [
+            "https://arch.hnu.edu.cn/info/1267/3575.htm",
+            "https://arch.hnu.edu.cn/__local/A/D5/64/A02533514FA1FDEC9B27CF8ACA8_650BF04C_401ED.pdf",
+            "https://arch.hnu.edu.cn/index/xygk/szdw.htm"
+          ],
+          "notes": [
+            "只使用原留存连续PDF文字；无原PDF字节留存或视觉认证，不新访问。",
+            "HTML的2021年11月04日不能当PDF发布日期；PDF日期未知。",
+            "2014.05－至今是组合履历区间；教授标注2020，不推2014年教授任命或副院长确切任命日。",
+            "1992.05开始工作与1992.07本科结束并存，不静默修正。",
+            "中国建筑工业出版按源保留，不补正式出版社名称。"
+          ],
+          "counts": {
+            "education": 3,
+            "mentors": 2,
+            "appointments": 5,
+            "professional_qualifications": 0,
+            "publications": 2,
+            "teaching": 3
+          },
+          "visible_evidence_boundary": {
+            "target": "unknowns",
+            "source": "existing verification_notes first two statements",
+            "note": "将原PDF留存与日期限定原样追加到可见unknowns；verification_notes原值及所有源事实/日期不改。"
+          }
+        }
+      ],
+      "payload_sha256": "0b1a5d7bf392df8d2e21d51de52f84580d01f8bd1bf35bed33a54a6d31df7de7"
+    },
+    {
+      "schema_version": "hnu10-education-mapping-1",
+      "context": "仅source→payload；published main645，UESTC655为pending参考，不把其发布状态当作已上线。",
+      "people": [
+        "hnu-libing-education-history",
+        "hnu-hubicheng"
+      ],
+      "source_input_sha256": "9057ab802eaaa363c86829b1663a12f2371f50d008b259004acef8b5b62374e0",
+      "source_evidence_sha256": "bf5d684bd3045925d8019017bcb9735c4360fea7ba5fb14d7975bb89a97bc077",
+      "review_sha256": "0fae5f4695c61697c4ea0746ec36a790e0b7624a624acf3d17ed9aa7a0b23ab1",
+      "overlay_sha256": "6714ffc335f917124f161e0d7b58818a72b17abce30f4d5421805f8b5858f385",
+      "overlay_id": "hnu-libing-identity-bridge-wording",
+      "overlay_guard": {
+        "original_file_sha256_matches": true,
+        "target_person_id": "hnu-libing-education-history",
+        "path": "/people/0/identity_resolution/basis",
+        "old_value_sha256": "4744a4a6a87b8185ef4add7916224d8245b9f984e91b28e1e987c6f46641c3fd",
+        "new_value_sha256": "7066b18267744e88921c0bad3d230f0d0257594210cdba54b238e23d052d6163",
+        "only_downstream_copy_modified": true,
+        "hu_unchanged_by_overlay": true
+      },
+      "counts": {
+        "people": 2,
+        "education": 3,
+        "awarded_true": 0,
+        "awarded_null": 2,
+        "nondegree": 1,
+        "mentors": 1,
+        "formal_dissertation_advisor_source_claims": 1,
+        "original_dissertations_read": 0,
+        "appointments": 5,
+        "publications": 4,
+        "teaching": 9
+      },
+      "mapping": {
+        "identity": "仅李兵identity_resolution.basis按原hash守卫替换，2020作者简介不声称课程；跨来源身份桥明示为推论。",
+        "advisor": "官网特定博士论文报道的正式导师声明保留；未读原论文，不扩大到其他阶段或靠合著推断。",
+        "education": "李博士阶段授位null，胡博士标签院校/授位null，柏克莱访学false；不新造学位日期。",
+        "career": "5历史任职全部保留，两年代院系不推转任；胡兼任/兼聘及两个委员会职务可见，黄岗原文不改。",
+        "teaching": "李2本科课程主讲来源2022个人页；胡7课保留合并本硕层级，不逐门猜。",
+        "books": "4官网书目、版本时间保留；胡作者unknown不补。",
+        "source_text": "必要职业摘录原文与hash并存，剔除工具定位，语义locator保留。"
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/hnu-education-directory/excerpts/0/quote",
+          "sha256": "eb8b4921a2e424ca3bf1be5369b86edc751a450c63a9b34f88e3b4363fc113cc"
+        },
+        {
+          "path": "/sources/hnu-education-directory/excerpts/1/quote",
+          "sha256": "1f7a3048a101317d3c086062a4e1a8cf0dd759bcc1efcaced15d524462ad7c99"
+        },
+        {
+          "path": "/sources/hnu-libing-profile/excerpts/0/quote",
+          "sha256": "673a5fdbccdd225191270deeff3395b3fdcfb3417a4d42519ff6bae8f050958d"
+        },
+        {
+          "path": "/sources/hnu-libing-profile/excerpts/1/quote",
+          "sha256": "079d064581075b3414bce6cbcd6825fa165a8e099ad6ad340b538db06f887e23"
+        },
+        {
+          "path": "/sources/hnu-libing-profile/excerpts/2/quote",
+          "sha256": "9df087b192e56dd7bb6e8d994c7bc17cd8461e027512b204c43b10f8c49debf8"
+        },
+        {
+          "path": "/sources/xmu-libing-doctoral-thesis-news/excerpts/0/quote",
+          "sha256": "cd765575dabe2ac1208a7d80ba1fbe2620f1e634febd7d07610aca873a6080ae"
+        },
+        {
+          "path": "/sources/xmu-libing-doctoral-thesis-news/excerpts/1/quote",
+          "sha256": "874c02c5b85d27739ce4472538b78ed1c18f0814a6e723b54b5bee93598706f9"
+        },
+        {
+          "path": "/sources/xmu-libing-doctoral-thesis-news/excerpts/2/quote",
+          "sha256": "594126eb438d927a166f4c8163965221171edf20962aa2994270c97ea169233a"
+        },
+        {
+          "path": "/sources/hnu-libing-book-identity/excerpts/0/quote",
+          "sha256": "a0bad08ee0b798acc599af5f399877c6d736dcc81a224fafac99ad7a1f62f425"
+        },
+        {
+          "path": "/sources/hnu-libing-book-identity/excerpts/1/quote",
+          "sha256": "bfc3c1db92a6b4255032a1a42e86c17057c0409647da04783938e4abbaa6db23"
+        },
+        {
+          "path": "/sources/hnu-libing-book-identity/excerpts/2/quote",
+          "sha256": "a89fd154012988957210bd5a93168fde7d1c16fec9ce4a18dfcadab4125a78e5"
+        },
+        {
+          "path": "/sources/xmu-libing-chinakeju-book/excerpts/0/quote",
+          "sha256": "ca087816d7470fbf79ab499cb6070b1bdc9703e5551b5a90969ecddce7958b3a"
+        },
+        {
+          "path": "/sources/xmu-libing-graduate-identity/excerpts/0/quote",
+          "sha256": "6827475eb567b813213e486898ff457d26695f4bacda4b3ec2940609ff8a1660"
+        },
+        {
+          "path": "/sources/hnu-hubicheng-profile/excerpts/0/quote",
+          "sha256": "b06d39c5965e21c51567d69bbb05392b532a4a650ccf3213b6f122b52577d17b"
+        },
+        {
+          "path": "/sources/hnu-hubicheng-profile/excerpts/1/quote",
+          "sha256": "ab0c211a981e19734f1ce600e8cc4aa2792ee7c4ce7a0ca888786495436e2761"
+        },
+        {
+          "path": "/sources/hnu-hubicheng-profile/excerpts/2/quote",
+          "sha256": "61467640ba5a352ad0dd3e4d0ed6e212c6a90783a55322d0ebaa9448c8cb4dd3"
+        },
+        {
+          "path": "/sources/hnu-hubicheng-profile/excerpts/3/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/sources/hnu-hubicheng-profile/excerpts/4/quote",
+          "sha256": "d539564b268c406d1f0946ffc04c79dba4d0ece780c8697f2c031b5d9f6f11b3"
+        },
+        {
+          "path": "/sources/hnu-hubicheng-profile/excerpts/5/quote",
+          "sha256": "26322c70d2c2f8ad8be2d8b878f79238e79efe5984656dedd00675c579148afe"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/education/0/quote",
+          "sha256": "6827475eb567b813213e486898ff457d26695f4bacda4b3ec2940609ff8a1660"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/appointments/0/quote",
+          "sha256": "673a5fdbccdd225191270deeff3395b3fdcfb3417a4d42519ff6bae8f050958d"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/appointments/1/quote",
+          "sha256": "a0bad08ee0b798acc599af5f399877c6d736dcc81a224fafac99ad7a1f62f425"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/teaching/0/quote",
+          "sha256": "079d064581075b3414bce6cbcd6825fa165a8e099ad6ad340b538db06f887e23"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/teaching/1/quote",
+          "sha256": "079d064581075b3414bce6cbcd6825fa165a8e099ad6ad340b538db06f887e23"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/research_directions/0/quote",
+          "sha256": "9df087b192e56dd7bb6e8d994c7bc17cd8461e027512b204c43b10f8c49debf8"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/research_directions/1/quote",
+          "sha256": "9df087b192e56dd7bb6e8d994c7bc17cd8461e027512b204c43b10f8c49debf8"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/research_directions/2/quote",
+          "sha256": "9df087b192e56dd7bb6e8d994c7bc17cd8461e027512b204c43b10f8c49debf8"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/publications/0/quote",
+          "sha256": "a89fd154012988957210bd5a93168fde7d1c16fec9ce4a18dfcadab4125a78e5"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/publications/1/quote",
+          "sha256": "ca087816d7470fbf79ab499cb6070b1bdc9703e5551b5a90969ecddce7958b3a"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/mentor_relations/0/quote",
+          "sha256": "594126eb438d927a166f4c8163965221171edf20962aa2994270c97ea169233a"
+        },
+        {
+          "path": "/people/hnu-libing-education-history/formal_dissertation_advisors/0/quote",
+          "sha256": "594126eb438d927a166f4c8163965221171edf20962aa2994270c97ea169233a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "6827475eb567b813213e486898ff457d26695f4bacda4b3ec2940609ff8a1660"
+        },
+        {
+          "path": "/quote",
+          "sha256": "594126eb438d927a166f4c8163965221171edf20962aa2994270c97ea169233a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "673a5fdbccdd225191270deeff3395b3fdcfb3417a4d42519ff6bae8f050958d"
+        },
+        {
+          "path": "/quote",
+          "sha256": "a0bad08ee0b798acc599af5f399877c6d736dcc81a224fafac99ad7a1f62f425"
+        },
+        {
+          "path": "/quote",
+          "sha256": "079d064581075b3414bce6cbcd6825fa165a8e099ad6ad340b538db06f887e23"
+        },
+        {
+          "path": "/quote",
+          "sha256": "079d064581075b3414bce6cbcd6825fa165a8e099ad6ad340b538db06f887e23"
+        },
+        {
+          "path": "/quote",
+          "sha256": "a89fd154012988957210bd5a93168fde7d1c16fec9ce4a18dfcadab4125a78e5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ca087816d7470fbf79ab499cb6070b1bdc9703e5551b5a90969ecddce7958b3a"
+        },
+        {
+          "path": "/people/hnu-hubicheng/education/0/quote",
+          "sha256": "ab0c211a981e19734f1ce600e8cc4aa2792ee7c4ce7a0ca888786495436e2761"
+        },
+        {
+          "path": "/people/hnu-hubicheng/professional_training/0/quote",
+          "sha256": "61467640ba5a352ad0dd3e4d0ed6e212c6a90783a55322d0ebaa9448c8cb4dd3"
+        },
+        {
+          "path": "/people/hnu-hubicheng/appointments/0/quote",
+          "sha256": "ab0c211a981e19734f1ce600e8cc4aa2792ee7c4ce7a0ca888786495436e2761"
+        },
+        {
+          "path": "/people/hnu-hubicheng/appointments/1/quote",
+          "sha256": "ab0c211a981e19734f1ce600e8cc4aa2792ee7c4ce7a0ca888786495436e2761"
+        },
+        {
+          "path": "/people/hnu-hubicheng/appointments/2/quote",
+          "sha256": "ab0c211a981e19734f1ce600e8cc4aa2792ee7c4ce7a0ca888786495436e2761"
+        },
+        {
+          "path": "/people/hnu-hubicheng/teaching/0/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/people/hnu-hubicheng/teaching/1/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/people/hnu-hubicheng/teaching/2/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/people/hnu-hubicheng/teaching/3/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/people/hnu-hubicheng/teaching/4/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/people/hnu-hubicheng/teaching/5/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/people/hnu-hubicheng/teaching/6/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/people/hnu-hubicheng/research_directions/0/quote",
+          "sha256": "1f7a3048a101317d3c086062a4e1a8cf0dd759bcc1efcaced15d524462ad7c99"
+        },
+        {
+          "path": "/people/hnu-hubicheng/publications/0/quote",
+          "sha256": "d539564b268c406d1f0946ffc04c79dba4d0ece780c8697f2c031b5d9f6f11b3"
+        },
+        {
+          "path": "/people/hnu-hubicheng/publications/1/quote",
+          "sha256": "d539564b268c406d1f0946ffc04c79dba4d0ece780c8697f2c031b5d9f6f11b3"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ab0c211a981e19734f1ce600e8cc4aa2792ee7c4ce7a0ca888786495436e2761"
+        },
+        {
+          "path": "/quote",
+          "sha256": "61467640ba5a352ad0dd3e4d0ed6e212c6a90783a55322d0ebaa9448c8cb4dd3"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ab0c211a981e19734f1ce600e8cc4aa2792ee7c4ce7a0ca888786495436e2761"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ab0c211a981e19734f1ce600e8cc4aa2792ee7c4ce7a0ca888786495436e2761"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ab0c211a981e19734f1ce600e8cc4aa2792ee7c4ce7a0ca888786495436e2761"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4bd8b672cea42861f4fbc158c14289d15e1d2eaa42c4cfb61e10a0e6d9272cf0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d539564b268c406d1f0946ffc04c79dba4d0ece780c8697f2c031b5d9f6f11b3"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d539564b268c406d1f0946ffc04c79dba4d0ece780c8697f2c031b5d9f6f11b3"
+        }
+      ]
+    },
+    {
+      "baseline_status": "仅以冻结待发布655做schema和组织去重参考；不是已发布版本，公开主线仍645。",
+      "people": [
+        {
+          "person_id": "hnu-yanjianfei",
+          "education": 4,
+          "degree_true_false_null": [
+            2,
+            2,
+            0
+          ],
+          "mentors": 1,
+          "publications": 2,
+          "appointments": 3,
+          "teaching_groups": 2
+        },
+        {
+          "person_id": "hnu-sunqingjuan",
+          "education": 4,
+          "degree_true_false_null": [
+            3,
+            1,
+            0
+          ],
+          "mentors": 1,
+          "publications": 0,
+          "appointments": 0,
+          "teaching_groups": 0
+        },
+        {
+          "person_id": "hnu-tanhaibo",
+          "education": 2,
+          "degree_true_false_null": [
+            0,
+            1,
+            1
+          ],
+          "mentors": 0,
+          "publications": 2,
+          "appointments": 0,
+          "teaching_groups": 0
+        },
+        {
+          "person_id": "hnu-huying",
+          "education": 4,
+          "degree_true_false_null": [
+            1,
+            3,
+            0
+          ],
+          "mentors": 0,
+          "publications": 2,
+          "appointments": 0,
+          "teaching_groups": 0
+        }
+      ],
+      "mapping_notes": [
+        "闫硕博连读仅博士授位，不另造硕士；邓小南只一条阶段关系，非正式论文导师。",
+        "孙李晨阳为博士阶段师从；沈清松仅访问邀请人；博士论文中英文题名放教育note，不计发表作品。",
+        "闫历史助理/副/正教授三段状态与时间照录，不由当前unknown抹去；其余空appointments不虚构岗位日期，已见职业称谓在listed_role保留。",
+        "闫古籍点校与李元弼等原撰角色分开；作品系列及A标记保留但不解释评级。",
+        "谭博士授位未知；原文第一作者与独著分别保留。胡博士明确授位但2014-06仅毕业日期，两访问仅2025年份；主编与专著作者、ISBN年月均保留。",
+        "教学两组共7门，保留本科/研究生层次，未假定当期任教或主讲。",
+        "证据定位仅使用语义：博士生导师目录闫建飞条目、硕士生导师目录孙庆娟条目及相应栏目标题；去除读取工具行号与链接编号，链接核验边界不变。"
+      ],
+      "design_org_mapping": {
+        "canonical_id": "hnu-design",
+        "name": "设计艺术学院",
+        "school_id": "hnu",
+        "source_org_id": null,
+        "person_source_url": "https://design.hnu.edu.cn/info/1023/7984.htm",
+        "source_affiliation_basis": "官网学院标题与个人类别；与同批袁翔的同校同单位分组一致，不以ID相似判同。",
+        "node_owner": "同批袁翔映射组",
+        "new_node_in_this_payload": false,
+        "parent_inferred": false
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/people/hnu-yanjianfei/identity_evidence/0/quote",
+          "sha256": "821063e5f796023f244884a63a2e7a574f1eec2a41bd486b4af70142c4f73e27"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/identity_evidence/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/identity_evidence/2/quote",
+          "sha256": "22df75978bc976c0cfc49152c70ec3ac299090cb480779b45910e74e2ba4ea75"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/identity_evidence/3/quote",
+          "sha256": "29340db218ce0b7f64aaccf0c64f8d6e6bce138716349ce528f5cea723c85e6d"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/identity_evidence/4/quote",
+          "sha256": "71ee6e48283f02abbf90f9e960d8037ff2a6c1d1f502c8e3b36021adbf8eaaf4"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/education/0/quote",
+          "sha256": "b16408cf1f97e02b28fd78ce5fdc6cb2a7397a3860f5934ec07385146c7714ca"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/education/1/quote",
+          "sha256": "e526920ca18d7409495ef7c7f7d1f61229c1df7316676be7c59b1176b62daf11"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/professional_training/0/quote",
+          "sha256": "1988a5147b754c3c601d0b4f49456490eecde9c7e87f79a904bea50c32a2a4e8"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/professional_training/1/quote",
+          "sha256": "1988a5147b754c3c601d0b4f49456490eecde9c7e87f79a904bea50c32a2a4e8"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/mentor_relations/0/quote",
+          "sha256": "e526920ca18d7409495ef7c7f7d1f61229c1df7316676be7c59b1176b62daf11"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/appointments/0/quote",
+          "sha256": "3f5b92bb5a263fced0fc225f6bbb958d21b8fe1fedbd150e4c9dc76c527f8a89"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/appointments/1/quote",
+          "sha256": "696723ccf75079b36d2be860f51a2b46cde224f408915b4ed04911e5ab8c868d"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/appointments/2/quote",
+          "sha256": "b683a73087557077a7727cc26e2b8b84f026a87fbe3b145c1fb35c51a83ef47c"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/research_directions/0/quote",
+          "sha256": "9e2b5ca38a494c3a2c5ee02225dd28b6ad87b6ffd1cbf10cfb3d6ff6d0508ea0"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/research_directions/1/quote",
+          "sha256": "231fc1653bf6fd92fc9772c0f513eb896f8b1ef458a4ac2506f100ab41c2c5d2"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/publications/0/attribution_evidence/quote",
+          "sha256": "d1439f60e937fc71a7a45fce83691184cc38a9041f97550f9f3102fcde02756f"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/publications/0/quote",
+          "sha256": "f703a22722467eaa087ceaf472a0a370c2f398b1884025bca250293596dd84dd"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/publications/1/quote",
+          "sha256": "5c067e27fc1dee9b6c448ade7c778d1c7b0749edaa6fc8f6f65b976f7a500bf2"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/teaching/0/quote",
+          "sha256": "f861cbad27e1cfff4a5e65798ce31150913fefc1cf570f6367ca18e7b810a09a"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/teaching/1/quote",
+          "sha256": "c0567d184ec92bca6a772efb66b738350f8014e5ed383bfdb2b82e1da9dbe971"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/field_provenance/name/quote",
+          "sha256": "821063e5f796023f244884a63a2e7a574f1eec2a41bd486b4af70142c4f73e27"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/field_provenance/listed_title/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/field_provenance/department_and_school/quote",
+          "sha256": "71ee6e48283f02abbf90f9e960d8037ff2a6c1d1f502c8e3b36021adbf8eaaf4"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/field_provenance/directory_affiliation/quote",
+          "sha256": "29340db218ce0b7f64aaccf0c64f8d6e6bce138716349ce528f5cea723c85e6d"
+        },
+        {
+          "json_pointer": "/people/hnu-yanjianfei/field_provenance/roster_category/quote",
+          "sha256": "e3d5d3f8d37c592c9a86a0e4e48f6e2d19dbdcb40d9a2ef77a61a134de1f0a72"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/0/quote",
+          "sha256": "821063e5f796023f244884a63a2e7a574f1eec2a41bd486b4af70142c4f73e27"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/2/quote",
+          "sha256": "22df75978bc976c0cfc49152c70ec3ac299090cb480779b45910e74e2ba4ea75"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/3/quote",
+          "sha256": "9e2b5ca38a494c3a2c5ee02225dd28b6ad87b6ffd1cbf10cfb3d6ff6d0508ea0"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/4/quote",
+          "sha256": "231fc1653bf6fd92fc9772c0f513eb896f8b1ef458a4ac2506f100ab41c2c5d2"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/5/quote",
+          "sha256": "1988a5147b754c3c601d0b4f49456490eecde9c7e87f79a904bea50c32a2a4e8"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/6/quote",
+          "sha256": "b683a73087557077a7727cc26e2b8b84f026a87fbe3b145c1fb35c51a83ef47c"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/7/quote",
+          "sha256": "696723ccf75079b36d2be860f51a2b46cde224f408915b4ed04911e5ab8c868d"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/8/quote",
+          "sha256": "3f5b92bb5a263fced0fc225f6bbb958d21b8fe1fedbd150e4c9dc76c527f8a89"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/9/quote",
+          "sha256": "e526920ca18d7409495ef7c7f7d1f61229c1df7316676be7c59b1176b62daf11"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/10/quote",
+          "sha256": "b16408cf1f97e02b28fd78ce5fdc6cb2a7397a3860f5934ec07385146c7714ca"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/11/quote",
+          "sha256": "f861cbad27e1cfff4a5e65798ce31150913fefc1cf570f6367ca18e7b810a09a"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/12/quote",
+          "sha256": "c0567d184ec92bca6a772efb66b738350f8014e5ed383bfdb2b82e1da9dbe971"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/13/quote",
+          "sha256": "d1439f60e937fc71a7a45fce83691184cc38a9041f97550f9f3102fcde02756f"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/14/quote",
+          "sha256": "f703a22722467eaa087ceaf472a0a370c2f398b1884025bca250293596dd84dd"
+        },
+        {
+          "json_pointer": "/sources/hnu-yanjianfei-profile/excerpts/15/quote",
+          "sha256": "5c067e27fc1dee9b6c448ade7c778d1c7b0749edaa6fc8f6f65b976f7a500bf2"
+        },
+        {
+          "json_pointer": "/sources/hnu-yuelu-advisor-directory/excerpts/0/quote",
+          "sha256": "e3d5d3f8d37c592c9a86a0e4e48f6e2d19dbdcb40d9a2ef77a61a134de1f0a72"
+        },
+        {
+          "json_pointer": "/sources/hnu-yuelu-advisor-directory/excerpts/1/quote",
+          "sha256": "29340db218ce0b7f64aaccf0c64f8d6e6bce138716349ce528f5cea723c85e6d"
+        },
+        {
+          "json_pointer": "/sources/hnu-yuelu-advisor-directory/excerpts/2/quote",
+          "sha256": "43878a3e0c3274d51c2f07170b8ff83ee5eca604554272f08e0018be522cf8ee"
+        },
+        {
+          "json_pointer": "/sources/hnu-yuelu-advisor-directory/excerpts/3/quote",
+          "sha256": "1d215112b5d037fd89820c5898d29eff1e281f537274f8fff2089f9d605a6619"
+        },
+        {
+          "json_pointer": "/sources/hnu-yuelu-advisor-directory/excerpts/4/quote",
+          "sha256": "71ee6e48283f02abbf90f9e960d8037ff2a6c1d1f502c8e3b36021adbf8eaaf4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b16408cf1f97e02b28fd78ce5fdc6cb2a7397a3860f5934ec07385146c7714ca"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b16408cf1f97e02b28fd78ce5fdc6cb2a7397a3860f5934ec07385146c7714ca"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e526920ca18d7409495ef7c7f7d1f61229c1df7316676be7c59b1176b62daf11"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e526920ca18d7409495ef7c7f7d1f61229c1df7316676be7c59b1176b62daf11"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1988a5147b754c3c601d0b4f49456490eecde9c7e87f79a904bea50c32a2a4e8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1988a5147b754c3c601d0b4f49456490eecde9c7e87f79a904bea50c32a2a4e8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1988a5147b754c3c601d0b4f49456490eecde9c7e87f79a904bea50c32a2a4e8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1988a5147b754c3c601d0b4f49456490eecde9c7e87f79a904bea50c32a2a4e8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e526920ca18d7409495ef7c7f7d1f61229c1df7316676be7c59b1176b62daf11"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "3f5b92bb5a263fced0fc225f6bbb958d21b8fe1fedbd150e4c9dc76c527f8a89"
+        },
+        {
+          "json_pointer": "/1/quote",
+          "sha256": "696723ccf75079b36d2be860f51a2b46cde224f408915b4ed04911e5ab8c868d"
+        },
+        {
+          "json_pointer": "/2/quote",
+          "sha256": "b683a73087557077a7727cc26e2b8b84f026a87fbe3b145c1fb35c51a83ef47c"
+        },
+        {
+          "json_pointer": "/attribution_evidence/quote",
+          "sha256": "d1439f60e937fc71a7a45fce83691184cc38a9041f97550f9f3102fcde02756f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f703a22722467eaa087ceaf472a0a370c2f398b1884025bca250293596dd84dd"
+        },
+        {
+          "json_pointer": "/attribution_evidence/quote",
+          "sha256": "d1439f60e937fc71a7a45fce83691184cc38a9041f97550f9f3102fcde02756f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f703a22722467eaa087ceaf472a0a370c2f398b1884025bca250293596dd84dd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c067e27fc1dee9b6c448ade7c778d1c7b0749edaa6fc8f6f65b976f7a500bf2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5c067e27fc1dee9b6c448ade7c778d1c7b0749edaa6fc8f6f65b976f7a500bf2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f861cbad27e1cfff4a5e65798ce31150913fefc1cf570f6367ca18e7b810a09a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c0567d184ec92bca6a772efb66b738350f8014e5ed383bfdb2b82e1da9dbe971"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "71ee6e48283f02abbf90f9e960d8037ff2a6c1d1f502c8e3b36021adbf8eaaf4"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/identity_evidence/0/quote",
+          "sha256": "b0bbfe803071908d11c7c63f0e25f92e0aca76413a71cceb4b1d5b1a599e4f94"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/identity_evidence/1/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/identity_evidence/2/quote",
+          "sha256": "1d215112b5d037fd89820c5898d29eff1e281f537274f8fff2089f9d605a6619"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/identity_evidence/3/quote",
+          "sha256": "71ee6e48283f02abbf90f9e960d8037ff2a6c1d1f502c8e3b36021adbf8eaaf4"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/identity_evidence/4/quote",
+          "sha256": "71ee6e48283f02abbf90f9e960d8037ff2a6c1d1f502c8e3b36021adbf8eaaf4"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/education/0/quote",
+          "sha256": "74ea8e69ba0ae4a31c1bfd2f3e8154819458527c99b1b4a11c08de8b80c5d3bc"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/education/1/quote",
+          "sha256": "172ad3a5df07c58069ebcf86d53651bbbd41f04da409320008922b999f706be9"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/education/2/quote",
+          "sha256": "7c25a750cc757a5f2f47ea9ebc51b3172693064a96681478bd0a73d1e6f19442"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/education/2/context_evidence/quote",
+          "sha256": "172ad3a5df07c58069ebcf86d53651bbbd41f04da409320008922b999f706be9"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/professional_training/0/quote",
+          "sha256": "2bc66e5c83c80e0b37b96ff10023c3f8cb862ced317b60850a86d7c5a7b9ba78"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/mentor_relations/0/quote",
+          "sha256": "7c25a750cc757a5f2f47ea9ebc51b3172693064a96681478bd0a73d1e6f19442"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/research_directions/0/quote",
+          "sha256": "f95aae3bafaccc5aa045d2cc670362951dd5f52010a24ba686035342210eab93"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/thesis_titles_as_education_context/0/quote",
+          "sha256": "338960176d97f4c7f210bd08ce0ad47e71cf28bc9186c53e0c72ba46136df402"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/field_provenance/name/quote",
+          "sha256": "b0bbfe803071908d11c7c63f0e25f92e0aca76413a71cceb4b1d5b1a599e4f94"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/field_provenance/listed_title/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/field_provenance/department_and_school/quote",
+          "sha256": "71ee6e48283f02abbf90f9e960d8037ff2a6c1d1f502c8e3b36021adbf8eaaf4"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/field_provenance/directory_affiliation/quote",
+          "sha256": "1d215112b5d037fd89820c5898d29eff1e281f537274f8fff2089f9d605a6619"
+        },
+        {
+          "json_pointer": "/people/hnu-sunqingjuan/field_provenance/roster_category/quote",
+          "sha256": "43878a3e0c3274d51c2f07170b8ff83ee5eca604554272f08e0018be522cf8ee"
+        },
+        {
+          "json_pointer": "/sources/hnu-sunqingjuan-profile/excerpts/0/quote",
+          "sha256": "b0bbfe803071908d11c7c63f0e25f92e0aca76413a71cceb4b1d5b1a599e4f94"
+        },
+        {
+          "json_pointer": "/sources/hnu-sunqingjuan-profile/excerpts/1/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "json_pointer": "/sources/hnu-sunqingjuan-profile/excerpts/2/quote",
+          "sha256": "f95aae3bafaccc5aa045d2cc670362951dd5f52010a24ba686035342210eab93"
+        },
+        {
+          "json_pointer": "/sources/hnu-sunqingjuan-profile/excerpts/3/quote",
+          "sha256": "74ea8e69ba0ae4a31c1bfd2f3e8154819458527c99b1b4a11c08de8b80c5d3bc"
+        },
+        {
+          "json_pointer": "/sources/hnu-sunqingjuan-profile/excerpts/4/quote",
+          "sha256": "172ad3a5df07c58069ebcf86d53651bbbd41f04da409320008922b999f706be9"
+        },
+        {
+          "json_pointer": "/sources/hnu-sunqingjuan-profile/excerpts/5/quote",
+          "sha256": "7c25a750cc757a5f2f47ea9ebc51b3172693064a96681478bd0a73d1e6f19442"
+        },
+        {
+          "json_pointer": "/sources/hnu-sunqingjuan-profile/excerpts/6/quote",
+          "sha256": "2bc66e5c83c80e0b37b96ff10023c3f8cb862ced317b60850a86d7c5a7b9ba78"
+        },
+        {
+          "json_pointer": "/sources/hnu-sunqingjuan-profile/excerpts/7/quote",
+          "sha256": "338960176d97f4c7f210bd08ce0ad47e71cf28bc9186c53e0c72ba46136df402"
+        },
+        {
+          "json_pointer": "/sources/hnu-sunqingjuan-profile/excerpts/8/quote",
+          "sha256": "71ee6e48283f02abbf90f9e960d8037ff2a6c1d1f502c8e3b36021adbf8eaaf4"
+        },
+        {
+          "json_pointer": "/sources/hnu-yuelu-advisor-directory/excerpts/0/quote",
+          "sha256": "e3d5d3f8d37c592c9a86a0e4e48f6e2d19dbdcb40d9a2ef77a61a134de1f0a72"
+        },
+        {
+          "json_pointer": "/sources/hnu-yuelu-advisor-directory/excerpts/1/quote",
+          "sha256": "29340db218ce0b7f64aaccf0c64f8d6e6bce138716349ce528f5cea723c85e6d"
+        },
+        {
+          "json_pointer": "/sources/hnu-yuelu-advisor-directory/excerpts/2/quote",
+          "sha256": "43878a3e0c3274d51c2f07170b8ff83ee5eca604554272f08e0018be522cf8ee"
+        },
+        {
+          "json_pointer": "/sources/hnu-yuelu-advisor-directory/excerpts/3/quote",
+          "sha256": "1d215112b5d037fd89820c5898d29eff1e281f537274f8fff2089f9d605a6619"
+        },
+        {
+          "json_pointer": "/sources/hnu-yuelu-advisor-directory/excerpts/4/quote",
+          "sha256": "71ee6e48283f02abbf90f9e960d8037ff2a6c1d1f502c8e3b36021adbf8eaaf4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "74ea8e69ba0ae4a31c1bfd2f3e8154819458527c99b1b4a11c08de8b80c5d3bc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "74ea8e69ba0ae4a31c1bfd2f3e8154819458527c99b1b4a11c08de8b80c5d3bc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "172ad3a5df07c58069ebcf86d53651bbbd41f04da409320008922b999f706be9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "172ad3a5df07c58069ebcf86d53651bbbd41f04da409320008922b999f706be9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7c25a750cc757a5f2f47ea9ebc51b3172693064a96681478bd0a73d1e6f19442"
+        },
+        {
+          "json_pointer": "/context_evidence/quote",
+          "sha256": "172ad3a5df07c58069ebcf86d53651bbbd41f04da409320008922b999f706be9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7c25a750cc757a5f2f47ea9ebc51b3172693064a96681478bd0a73d1e6f19442"
+        },
+        {
+          "json_pointer": "/context_evidence/quote",
+          "sha256": "172ad3a5df07c58069ebcf86d53651bbbd41f04da409320008922b999f706be9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2bc66e5c83c80e0b37b96ff10023c3f8cb862ced317b60850a86d7c5a7b9ba78"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2bc66e5c83c80e0b37b96ff10023c3f8cb862ced317b60850a86d7c5a7b9ba78"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7c25a750cc757a5f2f47ea9ebc51b3172693064a96681478bd0a73d1e6f19442"
+        },
+        {
+          "json_pointer": "/people/hnu-tanhaibo/identity_evidence/0/quote",
+          "sha256": "c1ef8e5d33e2c5871267cefc7deae248c8d8a9ffd2f143a81546590b3ae31fd8"
+        },
+        {
+          "json_pointer": "/people/hnu-tanhaibo/identity_evidence/1/quote",
+          "sha256": "ce7bdeae9f045e585f783b35e6e5635e9a279852ca15f185c5ca4e5b0a829f67"
+        },
+        {
+          "json_pointer": "/people/hnu-tanhaibo/education/0/evidence/0/quote",
+          "sha256": "21e3ecf5ed2739e90d7a81609784089b1cff8c42710a869297f2a76f1112a681"
+        },
+        {
+          "json_pointer": "/people/hnu-tanhaibo/nondegree_training/0/evidence/0/quote",
+          "sha256": "1565494ed53cbadfbb03f63aecfb062723645b00fc0dd7ee5f4eaaac9bd7b318"
+        },
+        {
+          "json_pointer": "/people/hnu-tanhaibo/publications/0/evidence/0/quote",
+          "sha256": "0193944ea20e26271434c360ee5b07ba6f0a1eaa03325f679d3b29b454063866"
+        },
+        {
+          "json_pointer": "/people/hnu-tanhaibo/publications/1/evidence/0/quote",
+          "sha256": "f70352670379b8d9dec5a2a3de005fabbc8e2ebb697d409924e13257d847d08f"
+        },
+        {
+          "json_pointer": "/sources/tan-profile/excerpts/0/quote",
+          "sha256": "c1ef8e5d33e2c5871267cefc7deae248c8d8a9ffd2f143a81546590b3ae31fd8"
+        },
+        {
+          "json_pointer": "/sources/tan-profile/excerpts/1/quote",
+          "sha256": "ce7bdeae9f045e585f783b35e6e5635e9a279852ca15f185c5ca4e5b0a829f67"
+        },
+        {
+          "json_pointer": "/sources/tan-profile/excerpts/2/quote",
+          "sha256": "21e3ecf5ed2739e90d7a81609784089b1cff8c42710a869297f2a76f1112a681"
+        },
+        {
+          "json_pointer": "/sources/tan-profile/excerpts/3/quote",
+          "sha256": "1565494ed53cbadfbb03f63aecfb062723645b00fc0dd7ee5f4eaaac9bd7b318"
+        },
+        {
+          "json_pointer": "/sources/tan-profile/excerpts/4/quote",
+          "sha256": "0193944ea20e26271434c360ee5b07ba6f0a1eaa03325f679d3b29b454063866"
+        },
+        {
+          "json_pointer": "/sources/tan-profile/excerpts/5/quote",
+          "sha256": "f70352670379b8d9dec5a2a3de005fabbc8e2ebb697d409924e13257d847d08f"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "21e3ecf5ed2739e90d7a81609784089b1cff8c42710a869297f2a76f1112a681"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "21e3ecf5ed2739e90d7a81609784089b1cff8c42710a869297f2a76f1112a681"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "1565494ed53cbadfbb03f63aecfb062723645b00fc0dd7ee5f4eaaac9bd7b318"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1565494ed53cbadfbb03f63aecfb062723645b00fc0dd7ee5f4eaaac9bd7b318"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "0193944ea20e26271434c360ee5b07ba6f0a1eaa03325f679d3b29b454063866"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0193944ea20e26271434c360ee5b07ba6f0a1eaa03325f679d3b29b454063866"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "f70352670379b8d9dec5a2a3de005fabbc8e2ebb697d409924e13257d847d08f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f70352670379b8d9dec5a2a3de005fabbc8e2ebb697d409924e13257d847d08f"
+        },
+        {
+          "json_pointer": "/people/hnu-huying/identity_evidence/0/quote",
+          "sha256": "03dc1e57a2b08e1ac2a5dd28120b8eacf63a02a75c54755a2e387721915aba11"
+        },
+        {
+          "json_pointer": "/people/hnu-huying/identity_evidence/1/quote",
+          "sha256": "5bf79363fa0ae5b54c42e1cf7b0721129e1a973b097022d1b097b39828ca3244"
+        },
+        {
+          "json_pointer": "/people/hnu-huying/identity_evidence/2/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/people/hnu-huying/education/0/evidence/0/quote",
+          "sha256": "1435c9088452398e2cfdfb92b974ff715c20d4226cd45644c912c333435c2a11"
+        },
+        {
+          "json_pointer": "/people/hnu-huying/nondegree_training/0/evidence/0/quote",
+          "sha256": "0ac862d3f3773028476631159f1d51fd201d97942eabebdf81c1c17e2c581ee6"
+        },
+        {
+          "json_pointer": "/people/hnu-huying/nondegree_training/1/evidence/0/quote",
+          "sha256": "c09a584260f38b59353c4e2d5aa2f7f57e29e6ee0dd9f4b1cd60843beca544ff"
+        },
+        {
+          "json_pointer": "/people/hnu-huying/nondegree_training/2/evidence/0/quote",
+          "sha256": "c09a584260f38b59353c4e2d5aa2f7f57e29e6ee0dd9f4b1cd60843beca544ff"
+        },
+        {
+          "json_pointer": "/people/hnu-huying/publications/0/evidence/0/quote",
+          "sha256": "06a13f961151dce8d3e29f317713fc44657db7e1c3ae4657eb174d717b11dbe6"
+        },
+        {
+          "json_pointer": "/people/hnu-huying/publications/1/evidence/0/quote",
+          "sha256": "2273db9a44907a91ae7777826014f5b15857c07d9f2aa062d3142d752575886f"
+        },
+        {
+          "json_pointer": "/sources/hu-profile/excerpts/0/quote",
+          "sha256": "5bf79363fa0ae5b54c42e1cf7b0721129e1a973b097022d1b097b39828ca3244"
+        },
+        {
+          "json_pointer": "/sources/hu-profile/excerpts/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/sources/hu-profile/excerpts/2/quote",
+          "sha256": "03dc1e57a2b08e1ac2a5dd28120b8eacf63a02a75c54755a2e387721915aba11"
+        },
+        {
+          "json_pointer": "/sources/hu-profile/excerpts/3/quote",
+          "sha256": "1435c9088452398e2cfdfb92b974ff715c20d4226cd45644c912c333435c2a11"
+        },
+        {
+          "json_pointer": "/sources/hu-profile/excerpts/4/quote",
+          "sha256": "0ac862d3f3773028476631159f1d51fd201d97942eabebdf81c1c17e2c581ee6"
+        },
+        {
+          "json_pointer": "/sources/hu-profile/excerpts/5/quote",
+          "sha256": "c09a584260f38b59353c4e2d5aa2f7f57e29e6ee0dd9f4b1cd60843beca544ff"
+        },
+        {
+          "json_pointer": "/sources/hu-profile/excerpts/6/quote",
+          "sha256": "06a13f961151dce8d3e29f317713fc44657db7e1c3ae4657eb174d717b11dbe6"
+        },
+        {
+          "json_pointer": "/sources/hu-profile/excerpts/7/quote",
+          "sha256": "2273db9a44907a91ae7777826014f5b15857c07d9f2aa062d3142d752575886f"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "1435c9088452398e2cfdfb92b974ff715c20d4226cd45644c912c333435c2a11"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1435c9088452398e2cfdfb92b974ff715c20d4226cd45644c912c333435c2a11"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "0ac862d3f3773028476631159f1d51fd201d97942eabebdf81c1c17e2c581ee6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0ac862d3f3773028476631159f1d51fd201d97942eabebdf81c1c17e2c581ee6"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "c09a584260f38b59353c4e2d5aa2f7f57e29e6ee0dd9f4b1cd60843beca544ff"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c09a584260f38b59353c4e2d5aa2f7f57e29e6ee0dd9f4b1cd60843beca544ff"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "c09a584260f38b59353c4e2d5aa2f7f57e29e6ee0dd9f4b1cd60843beca544ff"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c09a584260f38b59353c4e2d5aa2f7f57e29e6ee0dd9f4b1cd60843beca544ff"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "06a13f961151dce8d3e29f317713fc44657db7e1c3ae4657eb174d717b11dbe6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "06a13f961151dce8d3e29f317713fc44657db7e1c3ae4657eb174d717b11dbe6"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "2273db9a44907a91ae7777826014f5b15857c07d9f2aa062d3142d752575886f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2273db9a44907a91ae7777826014f5b15857c07d9f2aa062d3142d752575886f"
+        }
+      ]
+    }
+  ],
+  "mapping": "仅追加十名已审来源人物及组织展示节点；待发布基线655事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}

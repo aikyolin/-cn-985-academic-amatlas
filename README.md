@@ -62,6 +62,6 @@ python -m unittest discover -s tests -v
 
 ## 可恢复进度
 
-最新独立增量范围见[电子科技大学十人增量](progress/independent-uestc10-update.md)，前批记录见[四川大学十一人](progress/independent-scu11-update.md)、[东南大学十人](progress/independent-seu10-update.md)、[南京大学后续十人](progress/independent-nju10-update.md)及[社会学院两人](progress/independent-nju-update.md)，测试职责见[历史与当前测试分离](docs/test-scopes.md)。旧批次文档保留原验收时点，不表示最新人数。
+最新独立增量范围见[湖南大学十人增量](progress/independent-hnu10-update.md)，前批记录见[电子科技大学十人](progress/independent-uestc10-update.md)、[四川大学十一人](progress/independent-scu11-update.md)、[东南大学十人](progress/independent-seu10-update.md)、[南京大学后续十人](progress/independent-nju10-update.md)及[社会学院两人](progress/independent-nju-update.md)，测试职责见[历史与当前测试分离](docs/test-scopes.md)。旧批次文档保留原验收时点，不表示最新人数。
 
 见[当前覆盖与核验进度](progress/current-coverage.md)、[任务队列](progress/work-queue.json)及[接续规则](docs/continuation.md)。
