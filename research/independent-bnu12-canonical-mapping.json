@@ -1,0 +1,2380 @@
+{
+  "schema_version": "independent-bnu12-canonical-mapping-1",
+  "baseline_commit": "f4d565fd08f1797c497e031b30ca8629bc3b37a4",
+  "new_people": [
+    "bnu-hanxue",
+    "bnu-hufengqin",
+    "bnu-liushaomin",
+    "bnu-sudianna",
+    "bnu-wangchen-music",
+    "bnu-guo-jia-wave169",
+    "bnu-wang-cixiao-wave190",
+    "bnu-zeng-xianglong-wave190",
+    "bnu-lichong",
+    "bnu-luoxinhui",
+    "bnu-nitengda",
+    "bnu-zhanglu"
+  ],
+  "new_org_ids": [
+    "bnu-chemistry",
+    "bnu-geography",
+    "bnu-arts-media",
+    "bnu-government-institute",
+    "bnu-education-technology",
+    "bnu-psychology",
+    "bnu-economics-business-administration",
+    "bnu-history"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 8,
+    "education": 41,
+    "appointments": 15,
+    "publications": 23,
+    "mentors": 1,
+    "teaching": 25,
+    "degree_true": 10,
+    "degree_false": 9,
+    "degree_unknown": 22
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "science",
+      "canonical_payload_sha256": "4ed25b483050057b13a1c4d223527c000f9cc0c69655ce2b3cf45bd24a75417d",
+      "field_mapping_sha256": "07d5de464bd84e57834ea733b892ce7f35cad0277c7cffbf1e9c670a5040c6a7",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "arts-government",
+      "canonical_payload_sha256": "806e22f4f28b66b48e8dbf303b2d045d92c944389b3bdad1cbef90f44dd2b819",
+      "field_mapping_sha256": "f0d60425c8cfde0112e1c26d9cf22509254ac562d85372c8d1cc5b337b4909b3",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "education-history",
+      "canonical_payload_sha256": "3e488d804e8da41e46b992443504698b09b59573cc478ba0ee661172ec976423",
+      "field_mapping_sha256": "ef9766902631593c839c23f66a8a9c6eb1fc1646c965d730509d0ac030824693",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "baseline_commit": "f4d565fd08f1797c497e031b30ca8629bc3b37a4",
+      "baseline_people": 665,
+      "people": [
+        {
+          "person_id": "bnu-hanxue",
+          "source_candidate_sha256": "841fff81a02c1460558713132b3f91db3240a2f2464e058b21093bdb9ee49e94",
+          "source_review_sha256": "87bdf97a046ee5432fa7955aae648f8ee4fe03648c2885fb7015c200fb363dfe",
+          "counts": {
+            "education": 4,
+            "mentors": 0,
+            "appointments": 3,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知；官网列名及历史职称仍保留，未知不等于离职。",
+            "学习时间与授位日期分别保存；未知不补，博士后非额外学位。",
+            "校区和法定行政父级未知；本人导师不由共同作者或博导资格推定。",
+            "仅所选职业书目，不代表全部成果；出版者元数据不等于全文阅读。",
+            "2015–2016职业间隔未披露，不补齐。",
+            "学士/博士只有标签，授位保持未知；201 1-201 5仅去排版空格。",
+            "首篇ACS原页403，Perspective及额外日期仅此前搜索发现，非出版者正文核验；第二篇仅留Internal Error标题，不虚构403。"
+          ],
+          "source_urls": [
+            "https://chem2.bnu.edu.cn/szll/jsdw/wjhxyjs/js/20e010a9e394459ebc6b33ce85714394.html",
+            "https://pubs.acs.org/doi/10.1021/jacs.2c06216",
+            "https://pubs.acs.org/doi/10.1021/jacs.2c06216",
+            "https://doi.org/10.1038/s41563-018-0104-7",
+            "https://chem2.bnu.edu.cn/szll/jsdw/wjhxyjs/"
+          ]
+        },
+        {
+          "person_id": "bnu-hufengqin",
+          "source_candidate_sha256": "841fff81a02c1460558713132b3f91db3240a2f2464e058b21093bdb9ee49e94",
+          "source_review_sha256": "87bdf97a046ee5432fa7955aae648f8ee4fe03648c2885fb7015c200fb363dfe",
+          "counts": {
+            "education": 2,
+            "mentors": 0,
+            "appointments": 1,
+            "publications": 2,
+            "teaching": 4
+          },
+          "visible_limits": [
+            "当前人事未知；官网列名及历史职称仍保留，未知不等于离职。",
+            "学习时间与授位日期分别保存；未知不补，博士后非额外学位。",
+            "校区和法定行政父级未知；本人导师不由共同作者或博导资格推定。",
+            "仅所选职业书目，不代表全部成果；出版者元数据不等于全文阅读。",
+            "本人博士生导师为资格标签，非本人的导师关系。",
+            "高明远仅2007年8月15日历史同名博士生奖学金新闻线索，跨时身份未连通，不建师承边、不计导师。URL中2023不是原新闻日期。",
+            "理学博士为标签，无明确授位动词，授位未知；博士和博士后起止均未知。",
+            "第一篇只核Wiley元数据；第二篇RSC搜索先于403，候选DOI不提升为已核DOI。"
+          ],
+          "source_urls": [
+            "https://ic.cas.cn/news/zhxw/202307/t20230727_6838676.html",
+            "https://chem2.bnu.edu.cn/szll/jsdw/wjhxyjs/js/247033.html",
+            "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202203201",
+            "https://pubs.rsc.org/en/content/articlelanding/2022/cc/d2cc02758e",
+            "https://pubs.rsc.org/en/content/articlelanding/2022/cc/d2cc02758e",
+            "https://chem2.bnu.edu.cn/szll/jsdw/wjhxyjs/"
+          ]
+        },
+        {
+          "person_id": "bnu-liushaomin",
+          "source_candidate_sha256": "d6356581e217b07e86bcd627a2625fb7d3b5035ae27c0aaa4ea8e60760626aef",
+          "source_review_sha256": "364b074f4c61999f4973b1e2141030e813bb1a25fdcaa8c01ef2b29473269233",
+          "counts": {
+            "education": 4,
+            "mentors": 0,
+            "appointments": 1,
+            "publications": 1,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知；官网列名及历史职称仍保留，未知不等于离职。",
+            "学习时间与授位日期分别保存；未知不补，博士后非额外学位。",
+            "校区和法定行政父级未知；本人导师不由共同作者或博导资格推定。",
+            "仅所选职业书目，不代表全部成果；出版者元数据不等于全文阅读。",
+            "目录链接原geot成功观察为14:13:53Z，后来独立重读工具内部错误，无HTTP状态，不声称重读成功或403。",
+            "2003-06仅工作起点，2007教授晋升另列；不绑定二级教授或京师领军教授起点。",
+            "旧发现页教授、博导与链接页教授（二级）、京师领军教授分别保留；博导标签不是本人导师。",
+            "HESS仅落地页元数据，未点PDF或采用摘要科研结论；正式授位日期未知。"
+          ],
+          "source_urls": [
+            "https://geo.bnu.edu.cn/szdw/jxkyxl/zjs/gdxx/liushaomin.html",
+            "https://geo.bnu.edu.cn/szdw/jxkyxl/zjs/index.html",
+            "https://geot.bnu.edu.cn/Public/htm/news/5/249.html",
+            "https://hess.copernicus.org/articles/15/1291/2011/"
+          ]
+        }
+      ],
+      "payload_sha256": "4ed25b483050057b13a1c4d223527c000f9cc0c69655ce2b3cf45bd24a75417d",
+      "scope": "仅留存已接受来源事实映射；无新访问或候选库修改。"
+    },
+    {
+      "schema_version": "bnu12-arts-government-mapping-1",
+      "published_baseline_commit": "f4d565fd08f1797c497e031b30ca8629bc3b37a4",
+      "published_baseline_people": 665,
+      "people": [
+        "bnu-sudianna",
+        "bnu-wangchen-music",
+        "bnu-guo-jia-wave169",
+        "bnu-zhanglu"
+      ],
+      "input_hashes": {
+        "bnu-sudianna": {
+          "source_candidate_sha256": "ac038f47bfade0c0604ff06def15df90ca6137ab544b3bb79d9cdb6f93453d1a",
+          "review_sha256": "44ac8d6671c0a6599f6df1a8789fd2994ae0f2cd89bc28b87d4b8a435f288d2e"
+        },
+        "bnu-wangchen-music": {
+          "source_candidate_sha256": "ac038f47bfade0c0604ff06def15df90ca6137ab544b3bb79d9cdb6f93453d1a",
+          "review_sha256": "44ac8d6671c0a6599f6df1a8789fd2994ae0f2cd89bc28b87d4b8a435f288d2e"
+        },
+        "bnu-guo-jia-wave169": {
+          "source_candidate_sha256": "c5b28dba22dd20756da04b7aa494e53cc86b289d492c8c498237559f6f23dd5b",
+          "review_sha256": "3dc23907b7856913484f732d9ade7e3d7fd189a89820ab83c75be6d102ad6887"
+        },
+        "bnu-zhanglu": {
+          "source_candidate_sha256": "3d07aacf797a8caadd7bdadb4e6781c5432c18aabd1667aa873ebb50b6fe1ba6",
+          "review_sha256": "5064b42f164223f70bee4dff6c5eb3e1d38fe35ec0230d0e45f2d493b3df7800"
+        }
+      },
+      "overlay": "三组审计均无必需事实overlay；169行数与区间及目录边界完整保留。",
+      "org_mapping": [
+        {
+          "id": "bnu-arts-media",
+          "name": "艺术与传媒学院",
+          "school_id": "bnu",
+          "type": "school",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_ids": [
+            "bnu-arts-directory",
+            "bnu-sudianna-profile",
+            "bnu-wangchen-profile",
+            "bnu-zhanglu"
+          ],
+          "source_url": "https://faculty.bnu.edu.cn/unit_tchList.jsp?id=1682&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1001",
+          "note": "官方目录和三个人页单位一致；不新增未经核实当前系属或行政父级。"
+        },
+        {
+          "id": "bnu-government-institute",
+          "name": "政府管理研究院",
+          "school_id": "bnu",
+          "type": "research_institute",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_url": "https://ag.bnu.edu.cn/yjtd/qzry/index.htm",
+          "note": "独立研究人员目录仅支持研究院归属；个人页研究院/学院双标签保留，不推学院成员或法定隶属。"
+        }
+      ],
+      "counts": {
+        "education": 14,
+        "appointments": 2,
+        "mentors": 0,
+        "publications": 8,
+        "teaching": 10
+      },
+      "semantic_limits": {
+        "bnu-sudianna": [
+          "当前人事状态未知；保留来源职业称谓，当前教师导航与计数关闭。",
+          "学习/学位标签不等于明确获授；授位日期、法律授位主体及本人的导师未证实。",
+          "仅既有必要职业摘录，不是完整原始网页或原始HTTP认证；书目未核出版元数据或全文。",
+          "大学毕业不补学士；师资博士后为非学位历史训练，美术与设计系仅此历史时段明确，不推当前系属。",
+          "独立名录姓名单位已核，目录原始链接未留存；未扩展读取课程或研究方向页。"
+        ],
+        "bnu-wangchen-music": [
+          "当前人事状态未知；保留来源职业称谓，当前教师导航与计数关闭。",
+          "学习/学位标签不等于明确获授；授位日期、法律授位主体及本人的导师未证实。",
+          "仅既有必要职业摘录，不是完整原始网页或原始HTTP认证；书目未核出版元数据或全文。",
+          "2018-07至2020-07工作条目没有岗位，不补讲师或博士后；入职2018-07-23不认证现时在岗。",
+          "授课第一页10行去重保留7项；页面“共64条 1/7”不是64门不同课程，也未逐页读取。",
+          "页面研究方向显示暂无内容；硕士生导师是指导资格，不是本人的导师。"
+        ],
+        "bnu-guo-jia-wave169": [
+          "当前人事状态未知；保留来源职业称谓，当前教师导航与计数关闭。",
+          "学习/学位标签不等于明确获授；授位日期、法律授位主体及本人的导师未证实。",
+          "仅既有必要职业摘录，不是完整原始网页或原始HTTP认证；书目未核出版元数据或全文。",
+          "四条教育来源行仅三个时间区间；两本科行同区间，不推四个已授学位、先后学习或独立授位。",
+          "本人页未可见姓名，以政府管理研究院独立研究人员目录姓名及原生链接解析作身份桥；未核原始href或实际浏览器点击。",
+          "只核研究院目录；个人页“政府管理研究院/政府管理学院”不证明学院独立目录成员、法定隶属或当前在岗。",
+          "职业原文：2014年9月至今政府管理学院行政管理系副教授；2013年4月至2014年8月同系讲师；2010年至2013年4月管理学院公共管理系讲师；2011年5月至今政府管理研究院（未列岗位）。至今为无日期来源措辞，不认证当前。",
+          "期刊括号评价只为原文，不作期刊排名或独立质量认证。"
+        ],
+        "bnu-zhanglu": [
+          "当前人事状态未知；保留来源职业称谓，当前教师导航与计数关闭。",
+          "学习/学位标签不等于明确获授；授位日期、法律授位主体及本人的导师未证实。",
+          "仅既有必要职业摘录，不是完整原始网页或原始HTTP认证；书目未核出版元数据或全文。",
+          "原文副院长、教授、博士生导师称谓保留；不是实时人事确认，也不建立本人的导师关系。",
+          "只保留部分简介；独立目录未知，学习日期、学科和明确授位未知。",
+          "工作机构与区间来自拼合字段，具体岗位未披露，原栏目标题未独立认证。",
+          "来源称学术著作5部，本批仅2项书名，作者列表及著编角色未知，不补完整书目。",
+          "观察时间为工具完成端点，不是精确网络时刻；原字段拼合、空白规范化标记保留。"
+        ]
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/0/quote",
+          "sha256": "37b2ebf37f08f2ebf87883ca4806ae2137dd81a15810925febdee8dd5624c656"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/1/quote",
+          "sha256": "8393d3b5d1373000612a078ccdb2d82e5ed27bf34fd8039080305b3f15fea950"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/2/quote",
+          "sha256": "26f3b790162e8d45c2364e8b35bb0fe82a19d25186d8ac19b9214c073554d476"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/3/quote",
+          "sha256": "570ac3eeee645bb92004b5a9f62392a3b9c80afd95b596c4d048eda8fd958170"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/4/quote",
+          "sha256": "a77d056bac3ad75a591f6b00289c9f6e726c176d8900eacb6712259a3abd33fb"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/5/quote",
+          "sha256": "d894529df88c65632c2a42e4a40109aed76c47494d36825794faf37de9a163e8"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/6/quote",
+          "sha256": "1bbdddf03a95ad55a7479c7c1adf2574f2fa41736f58f6fadd7ca75e6456be84"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/7/quote",
+          "sha256": "f4f68c3826c8b2e43de6b4318163aa999b4e8ba9bfdc321c35224f1eba01fc23"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/8/quote",
+          "sha256": "059f1609cf907070b84543fc0f5ec423f83e887c5fc135ce7666fccfdf33f806"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/0/quote",
+          "sha256": "37b2ebf37f08f2ebf87883ca4806ae2137dd81a15810925febdee8dd5624c656"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/1/quote",
+          "sha256": "8393d3b5d1373000612a078ccdb2d82e5ed27bf34fd8039080305b3f15fea950"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/2/quote",
+          "sha256": "26f3b790162e8d45c2364e8b35bb0fe82a19d25186d8ac19b9214c073554d476"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/3/quote",
+          "sha256": "570ac3eeee645bb92004b5a9f62392a3b9c80afd95b596c4d048eda8fd958170"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/4/quote",
+          "sha256": "a77d056bac3ad75a591f6b00289c9f6e726c176d8900eacb6712259a3abd33fb"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/5/quote",
+          "sha256": "d894529df88c65632c2a42e4a40109aed76c47494d36825794faf37de9a163e8"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/6/quote",
+          "sha256": "1bbdddf03a95ad55a7479c7c1adf2574f2fa41736f58f6fadd7ca75e6456be84"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/7/quote",
+          "sha256": "f4f68c3826c8b2e43de6b4318163aa999b4e8ba9bfdc321c35224f1eba01fc23"
+        },
+        {
+          "path": "/sources/bnu-sudianna-profile/excerpts/8/quote",
+          "sha256": "059f1609cf907070b84543fc0f5ec423f83e887c5fc135ce7666fccfdf33f806"
+        },
+        {
+          "path": "/sources/guo-profile/fragments/0/quote",
+          "sha256": "1f0444dcedd3d0b9de4e0af73442a0e8cdf7b64f8f904757a2b2881dd8adb9b6"
+        },
+        {
+          "path": "/sources/guo-profile/fragments/1/quote",
+          "sha256": "a901276147805c3e5044a6ddb16663a9edbdc740cfc113d6c18850c87f833227"
+        },
+        {
+          "path": "/sources/guo-profile/fragments/2/quote",
+          "sha256": "85fbf09ab88cf08a3425b2a80e26d829401982f52bc0a83f5e6d9384f3db2117"
+        },
+        {
+          "path": "/sources/guo-profile/fragments/3/quote",
+          "sha256": "e5f4939fa577e6b9b2fa4eb1f638725389276c7bbe13f57988c5012ebfcdc6ad"
+        },
+        {
+          "path": "/sources/guo-profile/fragments/4/quote",
+          "sha256": "7ce4a0fc8bcb4438aebe923754682c8b7cfd0d3dd033c3ce3fff8f22feb408f9"
+        },
+        {
+          "path": "/sources/guo-profile/fragments/5/quote",
+          "sha256": "f69eaf4a33286aa066893cf74901b685e9d0fb19bc626e7efe5da19403712e4c"
+        },
+        {
+          "path": "/sources/guo-profile/fragments/6/quote",
+          "sha256": "ac218f9d56e7ac1d45fb8fc1a4cefff0983812ac9dd416a50f84d2212f72e3cd"
+        },
+        {
+          "path": "/sources/guo-profile/fragments/7/quote",
+          "sha256": "5aeaf8d4c5d5419cfdee89a286672082a2d1a2969aaa7f2335270ebd93c90bba"
+        },
+        {
+          "path": "/sources/guo-profile/fragments/8/quote",
+          "sha256": "beb2deff41ded1df17a737f0151673f07757a661ee8ee0076a6501278c1084f6"
+        },
+        {
+          "path": "/sources/guo-profile/fragments/9/quote",
+          "sha256": "648ed3c6319d4dc96d6f5a3a8d6b1fe2570bf0865768bcfa191247b660de4cc5"
+        },
+        {
+          "path": "/sources/guo-profile/fragments/10/quote",
+          "sha256": "2590ac9cd166ed13bff03d92c5d89711218e326e5440a6695cc9746de28cf4a7"
+        },
+        {
+          "path": "/sources/guo-directory/fragments/0/quote",
+          "sha256": "19ed2e26b3ab2caeab7c241f5016c8d72c69f69e4718a7a782c59a93e2585e0e"
+        },
+        {
+          "path": "/sources/guo-directory/fragments/1/quote",
+          "sha256": "cd9626f6cea4ff8701258e1593ac0d42c8e5689e64ab62176a80828f05155484"
+        },
+        {
+          "path": "/sources/guo-native-link-navigation/fragments/0/quote",
+          "sha256": "051b03a5a6294d835bcc48fd3cfa2b40be0a8caaa935ce0d13e8343984b3e111"
+        },
+        {
+          "path": "/sources/bnu-zhanglu/professional_excerpts/0/quote",
+          "sha256": "54bb58febfec27a4e0bb2f84ec06d5569c6b5766d94da428448d81061c510611"
+        },
+        {
+          "path": "/sources/bnu-zhanglu/professional_excerpts/1/quote",
+          "sha256": "25d341819ee3dba4bcd1f9db994df86dac070a140498e26bad4bb22bd8970726"
+        },
+        {
+          "path": "/sources/bnu-zhanglu/professional_excerpts/2/quote",
+          "sha256": "9d8b22a9d0bb6178348d9cd3c741fdb359e50a95204d71cd667f750d83fe7251"
+        },
+        {
+          "path": "/sources/bnu-zhanglu/professional_excerpts/3/quote",
+          "sha256": "4736a773d6b54bb0267689a3fe8d5dd078591a7525fdae9641b9463d4ebda5d9"
+        },
+        {
+          "path": "/sources/bnu-zhanglu/professional_excerpts/4/quote",
+          "sha256": "08405646a81124db29f3d215cc06dd3b2af4c3fde3acdcfce5a0b6111d06293a"
+        },
+        {
+          "path": "/sources/bnu-zhanglu/professional_excerpts/5/quote",
+          "sha256": "ca7bfa3d61170cfaf33280ffd6e7eb6c1d78297a266f483dd688a98922609294"
+        },
+        {
+          "path": "/sources/bnu-zhanglu/professional_excerpts/6/quote",
+          "sha256": "318ec87448b037eec64b2f59ba14221323bea2654fcfe1d0e243bd70f2016156"
+        },
+        {
+          "path": "/people/bnu-sudianna/education/0/quote",
+          "sha256": "570ac3eeee645bb92004b5a9f62392a3b9c80afd95b596c4d048eda8fd958170"
+        },
+        {
+          "path": "/people/bnu-sudianna/education/1/quote",
+          "sha256": "a77d056bac3ad75a591f6b00289c9f6e726c176d8900eacb6712259a3abd33fb"
+        },
+        {
+          "path": "/people/bnu-sudianna/education/2/quote",
+          "sha256": "d894529df88c65632c2a42e4a40109aed76c47494d36825794faf37de9a163e8"
+        },
+        {
+          "path": "/people/bnu-sudianna/professional_training/0/quote",
+          "sha256": "1bbdddf03a95ad55a7479c7c1adf2574f2fa41736f58f6fadd7ca75e6456be84"
+        },
+        {
+          "path": "/people/bnu-sudianna/publications/0/quote",
+          "sha256": "f4f68c3826c8b2e43de6b4318163aa999b4e8ba9bfdc321c35224f1eba01fc23"
+        },
+        {
+          "path": "/people/bnu-sudianna/publications/1/quote",
+          "sha256": "059f1609cf907070b84543fc0f5ec423f83e887c5fc135ce7666fccfdf33f806"
+        },
+        {
+          "path": "/people/bnu-sudianna/field_provenance/identity_and_title/quote",
+          "sha256": "8393d3b5d1373000612a078ccdb2d82e5ed27bf34fd8039080305b3f15fea950"
+        },
+        {
+          "path": "/people/bnu-sudianna/field_provenance/directory_affiliation/quote",
+          "sha256": "4751a1316e5841fe976e1112916f5c68fe0caca57caef9d019eef2c49e733f8a"
+        },
+        {
+          "path": "/people/bnu-sudianna/field_provenance/department/quote",
+          "sha256": "26f3b790162e8d45c2364e8b35bb0fe82a19d25186d8ac19b9214c073554d476"
+        },
+        {
+          "path": "/quote",
+          "sha256": "570ac3eeee645bb92004b5a9f62392a3b9c80afd95b596c4d048eda8fd958170"
+        },
+        {
+          "path": "/quote",
+          "sha256": "a77d056bac3ad75a591f6b00289c9f6e726c176d8900eacb6712259a3abd33fb"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d894529df88c65632c2a42e4a40109aed76c47494d36825794faf37de9a163e8"
+        },
+        {
+          "path": "/quote",
+          "sha256": "1bbdddf03a95ad55a7479c7c1adf2574f2fa41736f58f6fadd7ca75e6456be84"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f4f68c3826c8b2e43de6b4318163aa999b4e8ba9bfdc321c35224f1eba01fc23"
+        },
+        {
+          "path": "/quote",
+          "sha256": "059f1609cf907070b84543fc0f5ec423f83e887c5fc135ce7666fccfdf33f806"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/education/0/quote",
+          "sha256": "b74c42f540e28a0cf5d21fc83bb9d7f81a1c6a27a907439911827e6cf0b9aec8"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/education/1/quote",
+          "sha256": "80b9978d01bc12ded649f6af9a943e94264ff0ed44bfa4d6e8d5b06d22be6281"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/education/2/quote",
+          "sha256": "cae3d479f36d6c5312bbab94a6ee0b736fc2ae1bed1bbd54004de99ff79948c1"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/appointments/0/quote",
+          "sha256": "512572b9285dc1b75d8c1fd332f99485f8ae45dceea777ec0127e0827fd57644"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/teaching/0/quote",
+          "sha256": "7270d043dd936d5b3c758cc4cb656fe9a8ec29ae49e58eda00598422f9da6118"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/teaching/1/quote",
+          "sha256": "541ee9bf9727cbb2a80c8b60a3926e484264e4462f62f8cca80db6043a2d61c1"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/teaching/2/quote",
+          "sha256": "60c47252262f71ac97946ffa8db2db48bdc5bd9acb4fdd735e0f67b3e051374a"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/teaching/3/quote",
+          "sha256": "674f2d8f1497cb1a73829b222d2104e48037ea3875105c776480c0e772b028cb"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/teaching/4/quote",
+          "sha256": "1cb52c09a4be6cafebf8b292f70cc1f511f36fd7c82623d58379780752c5eac6"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/teaching/5/quote",
+          "sha256": "0e9eb224944d8d37e546ed4f3eb1cf8ba865394356eddd6eae7a56263f012712"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/teaching/6/quote",
+          "sha256": "ab9005f42dc7f8d79d0a575483a026aa416318266388934cf331a37ce8fd98ba"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/publications/0/quote",
+          "sha256": "7a3935965c4602fe463e67b29e300a292e725d67182fc23a9d628213ab0bce33"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/publications/1/quote",
+          "sha256": "0eb1bd5c38c4bf2a38370a93b739e435b8c9bf519526da8318bb64d950a4a080"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/employment_start_statement/quote",
+          "sha256": "c1ead54cbc4f6a17f8dacd16102aa9f9dfb6859c8573fb1bb96af6528b4c6648"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/source_reported_employment_label/quote",
+          "sha256": "ba69942c3d3b2fd3159058f851275a568bdd5da586f47e758944f00003c7a669"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/teaching_scope/provenance/quote",
+          "sha256": "38ae146ae6e8ce85d988859673f63d88c1c6c81888b6a29dd150b7786c81a0fe"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/field_provenance/identity_and_title/quote",
+          "sha256": "0b78faa9c3ecf2f7b4c00fa950ebf5868d02b240ed2b4a74eb45c36d386e7c61"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/field_provenance/directory_affiliation/quote",
+          "sha256": "45f035685fce7e34d6f94d7eff70d1d7818efe50ea10a99a4d92b7ecce81288d"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/field_provenance/department/quote",
+          "sha256": "539f5567e6844a1353cb1b70861cb679b878c2c4ef2be51190433110cc8925ad"
+        },
+        {
+          "path": "/people/bnu-wangchen-music/field_provenance/research/quote",
+          "sha256": "cc7090262adf906b30040c1124a744871457f0778c1ed95b00be36c1f9fde113"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b74c42f540e28a0cf5d21fc83bb9d7f81a1c6a27a907439911827e6cf0b9aec8"
+        },
+        {
+          "path": "/quote",
+          "sha256": "80b9978d01bc12ded649f6af9a943e94264ff0ed44bfa4d6e8d5b06d22be6281"
+        },
+        {
+          "path": "/quote",
+          "sha256": "cae3d479f36d6c5312bbab94a6ee0b736fc2ae1bed1bbd54004de99ff79948c1"
+        },
+        {
+          "path": "/quote",
+          "sha256": "512572b9285dc1b75d8c1fd332f99485f8ae45dceea777ec0127e0827fd57644"
+        },
+        {
+          "path": "/quote",
+          "sha256": "7270d043dd936d5b3c758cc4cb656fe9a8ec29ae49e58eda00598422f9da6118"
+        },
+        {
+          "path": "/quote",
+          "sha256": "541ee9bf9727cbb2a80c8b60a3926e484264e4462f62f8cca80db6043a2d61c1"
+        },
+        {
+          "path": "/quote",
+          "sha256": "60c47252262f71ac97946ffa8db2db48bdc5bd9acb4fdd735e0f67b3e051374a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "674f2d8f1497cb1a73829b222d2104e48037ea3875105c776480c0e772b028cb"
+        },
+        {
+          "path": "/quote",
+          "sha256": "1cb52c09a4be6cafebf8b292f70cc1f511f36fd7c82623d58379780752c5eac6"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0e9eb224944d8d37e546ed4f3eb1cf8ba865394356eddd6eae7a56263f012712"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ab9005f42dc7f8d79d0a575483a026aa416318266388934cf331a37ce8fd98ba"
+        },
+        {
+          "path": "/quote",
+          "sha256": "7a3935965c4602fe463e67b29e300a292e725d67182fc23a9d628213ab0bce33"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0eb1bd5c38c4bf2a38370a93b739e435b8c9bf519526da8318bb64d950a4a080"
+        },
+        {
+          "path": "/people/bnu-guo-jia-wave169/employment_history_as_source/0/quote",
+          "sha256": "ac218f9d56e7ac1d45fb8fc1a4cefff0983812ac9dd416a50f84d2212f72e3cd"
+        },
+        {
+          "path": "/people/bnu-zhanglu/identity_evidence/0/quote",
+          "sha256": "54bb58febfec27a4e0bb2f84ec06d5569c6b5766d94da428448d81061c510611"
+        },
+        {
+          "path": "/people/bnu-zhanglu/identity_evidence/1/quote",
+          "sha256": "25d341819ee3dba4bcd1f9db994df86dac070a140498e26bad4bb22bd8970726"
+        },
+        {
+          "path": "/people/bnu-zhanglu/education/0/evidence/0/quote",
+          "sha256": "9d8b22a9d0bb6178348d9cd3c741fdb359e50a95204d71cd667f750d83fe7251"
+        },
+        {
+          "path": "/people/bnu-zhanglu/education/1/evidence/0/quote",
+          "sha256": "4736a773d6b54bb0267689a3fe8d5dd078591a7525fdae9641b9463d4ebda5d9"
+        },
+        {
+          "path": "/people/bnu-zhanglu/education/2/evidence/0/quote",
+          "sha256": "08405646a81124db29f3d215cc06dd3b2af4c3fde3acdcfce5a0b6111d06293a"
+        },
+        {
+          "path": "/people/bnu-zhanglu/appointments/0/evidence/0/quote",
+          "sha256": "ca7bfa3d61170cfaf33280ffd6e7eb6c1d78297a266f483dd688a98922609294"
+        },
+        {
+          "path": "/people/bnu-zhanglu/publications/0/evidence/0/quote",
+          "sha256": "318ec87448b037eec64b2f59ba14221323bea2654fcfe1d0e243bd70f2016156"
+        },
+        {
+          "path": "/people/bnu-zhanglu/publications/1/evidence/0/quote",
+          "sha256": "318ec87448b037eec64b2f59ba14221323bea2654fcfe1d0e243bd70f2016156"
+        },
+        {
+          "path": "/evidence/0/quote",
+          "sha256": "9d8b22a9d0bb6178348d9cd3c741fdb359e50a95204d71cd667f750d83fe7251"
+        },
+        {
+          "path": "/evidence/0/quote",
+          "sha256": "4736a773d6b54bb0267689a3fe8d5dd078591a7525fdae9641b9463d4ebda5d9"
+        },
+        {
+          "path": "/evidence/0/quote",
+          "sha256": "08405646a81124db29f3d215cc06dd3b2af4c3fde3acdcfce5a0b6111d06293a"
+        },
+        {
+          "path": "/evidence/0/quote",
+          "sha256": "ca7bfa3d61170cfaf33280ffd6e7eb6c1d78297a266f483dd688a98922609294"
+        },
+        {
+          "path": "/evidence/0/quote",
+          "sha256": "318ec87448b037eec64b2f59ba14221323bea2654fcfe1d0e243bd70f2016156"
+        },
+        {
+          "path": "/evidence/0/quote",
+          "sha256": "318ec87448b037eec64b2f59ba14221323bea2654fcfe1d0e243bd70f2016156"
+        }
+      ],
+      "mapping": "必要职业原摘录与SHA共存；全部原字段保留或同义规范映射；工具行号与内部路径只私有trace。教育null/非学位false原值不改；资格不增任职或导师；果career原文以原结构及可见unknowns保留，不新造日期或任职事件。"
+    },
+    {
+      "baseline_commit": "f4d565fd08f1797c497e031b30ca8629bc3b37a4",
+      "baseline_people": 665,
+      "people": [
+        {
+          "person_id": "bnu-wang-cixiao-wave190",
+          "source_candidate_sha256": "ae0c4cb1bf3f58efa5e2897e34c33c64c902481cb3432fdd2de8409f2ebfc596",
+          "source_evidence_sha256": "dff68ecab7e68aca2f527ba1f9b62272c20be287aec44b0dea25c81b6652a605",
+          "source_review_sha256": "ff5208a2624a7843bba6c20e2ba0e28c5c21821a8e702d26a0a0ac068ea58436",
+          "overlay_operations_applied": 3,
+          "education": 4,
+          "degree_true_false_null": [
+            2,
+            2,
+            0
+          ],
+          "mentors": 0,
+          "publications": 2,
+          "appointments": 1,
+          "teaching": 5,
+          "source_urls": [
+            "https://fe.bnu.edu.cn/szdw/jxkyxl/fjs/dc9280cb45ef4fc8aa11e9a3cbf826cb.htm",
+            "https://fe.bnu.edu.cn/szdw/jxkyxl/index.htm"
+          ]
+        },
+        {
+          "person_id": "bnu-zeng-xianglong-wave190",
+          "source_candidate_sha256": "ae0c4cb1bf3f58efa5e2897e34c33c64c902481cb3432fdd2de8409f2ebfc596",
+          "source_evidence_sha256": "dff68ecab7e68aca2f527ba1f9b62272c20be287aec44b0dea25c81b6652a605",
+          "source_review_sha256": "ff5208a2624a7843bba6c20e2ba0e28c5c21821a8e702d26a0a0ac068ea58436",
+          "overlay_operations_applied": 0,
+          "education": 3,
+          "degree_true_false_null": [
+            0,
+            0,
+            3
+          ],
+          "mentors": 0,
+          "publications": 2,
+          "appointments": 2,
+          "teaching": 4,
+          "source_urls": [
+            "https://psych.bnu.edu.cn/szdw/zrjs/fjs/cxl/index.htm",
+            "https://psych.bnu.edu.cn/szdw/zrjs/index.htm"
+          ]
+        },
+        {
+          "person_id": "bnu-lichong",
+          "source_candidate_sha256": "323fb34dfc117e0e1f3cfd13cce2b1f49b9947b581399c278afec638c277eb82",
+          "source_evidence_sha256": "b68be6ea7b8445d96975b7f01da14cdf6fcfe74d26f0f201abc8e647147b865a",
+          "source_review_sha256": "bbb0f6302a94dfbcf9194b764c00bd8bf45e8e64ca4574bff1435fbfa020bd4a",
+          "overlay_operations_applied": 13,
+          "education": 3,
+          "degree_true_false_null": [
+            0,
+            0,
+            3
+          ],
+          "mentors": 1,
+          "publications": 2,
+          "appointments": 1,
+          "teaching": 2,
+          "source_urls": [
+            "https://bs.bnu.edu.cn/ssfc/jgrw_20200903103607846601/240048.html",
+            "https://bs.bnu.edu.cn/szdw1/ltxjs/index.html",
+            "https://bs.bnu.edu.cn/docs/2019-01/20190102112621421399.pdf"
+          ]
+        },
+        {
+          "person_id": "bnu-luoxinhui",
+          "source_candidate_sha256": "d64b3806e21deeabc47aa728376e30aca0ab044af8e9a866ea0dbad9aabddb7f",
+          "source_evidence_sha256": "41e0b2dff19149c72e9133a40d81b0419bfd573dd5d1be0add7db57eb34277b4",
+          "source_review_sha256": "6468425708cd5d39b32d8847bd08b8e4d7a2bf34a4eb06cbbeeb98da6a370b5f",
+          "overlay_operations_applied": 0,
+          "education": 3,
+          "degree_true_false_null": [
+            2,
+            1,
+            0
+          ],
+          "mentors": 0,
+          "publications": 2,
+          "appointments": 3,
+          "teaching": 0,
+          "source_urls": [
+            "https://history.bnu.edu.cn/szdw/ae0bf2861d77467aa086b7e6a5cc12b9.htm",
+            "https://history.bnu.edu.cn/szdw/index.htm"
+          ]
+        },
+        {
+          "person_id": "bnu-nitengda",
+          "source_candidate_sha256": "d64b3806e21deeabc47aa728376e30aca0ab044af8e9a866ea0dbad9aabddb7f",
+          "source_evidence_sha256": "41e0b2dff19149c72e9133a40d81b0419bfd573dd5d1be0add7db57eb34277b4",
+          "source_review_sha256": "6468425708cd5d39b32d8847bd08b8e4d7a2bf34a4eb06cbbeeb98da6a370b5f",
+          "overlay_operations_applied": 0,
+          "education": 4,
+          "degree_true_false_null": [
+            3,
+            1,
+            0
+          ],
+          "mentors": 0,
+          "publications": 2,
+          "appointments": 1,
+          "teaching": 0,
+          "source_urls": [
+            "https://history.bnu.edu.cn/szdw/index.htm",
+            "https://history.bnu.edu.cn/szdw/48f3396049924f2a811b4dea873b5273.htm"
+          ]
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "2ec22c67ffa8f955eea1bc4316f9d90c29036d98da8cab9396c3d231dfa0d861"
+        },
+        {
+          "json_pointer": "/1/quote",
+          "sha256": "3e1fc008cfe015bef410461ce860aefb452761239e60928f6997331614b0ad54"
+        },
+        {
+          "json_pointer": "/2/quote",
+          "sha256": "92ddf64b22b0e842ea46f680969bd11680c7422c141992810e0a6c2fddcd4581"
+        },
+        {
+          "json_pointer": "/3/quote",
+          "sha256": "461c15d41b4507466cb83ed82f89a132c2feafe9ec6decfdc985e6825a7d37ce"
+        },
+        {
+          "json_pointer": "/4/quote",
+          "sha256": "6b2b11ba60fbe7ce52a9bc3c197cb9690f3f4dcd6df0d9c4c56085832b76aecc"
+        },
+        {
+          "json_pointer": "/5/quote",
+          "sha256": "418b723e8242f78722b492428a805135b2f29589a8cf53f62c45f0de9e7117c2"
+        },
+        {
+          "json_pointer": "/6/quote",
+          "sha256": "777c147412f5deeb0179b1c26ea447420073bd1c89b802ca02eb5fb29c1efb68"
+        },
+        {
+          "json_pointer": "/7/quote",
+          "sha256": "f333bf3cdac294aa2beb741289e32e848507163a54228405d866d093cd4203f6"
+        },
+        {
+          "json_pointer": "/8/quote",
+          "sha256": "c5e5ea53b7dabbffe4d6c70d5cc18c4dd344777470f59f480e203944be3011d5"
+        },
+        {
+          "json_pointer": "/9/quote",
+          "sha256": "4ae0ec6d9cfa52b4d0d3c928b7bb6f38d157c60ea533e8750f3904b5d4869a75"
+        },
+        {
+          "json_pointer": "/10/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/11/quote",
+          "sha256": "726f44d822b7a734ceb8acd9c705bf715b643540f747c5cebf5427e20c3ccc3f"
+        },
+        {
+          "json_pointer": "/12/quote",
+          "sha256": "5e0997facf25c1acf1429e7abba89d2f5c86c6fab8537c30a445f7dfe1f58bd1"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "60a76ca93918d12f272bde88e089d6b2bd3d080908c654fd599f7ec1905b8b05"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f333bf3cdac294aa2beb741289e32e848507163a54228405d866d093cd4203f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f333bf3cdac294aa2beb741289e32e848507163a54228405d866d093cd4203f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f333bf3cdac294aa2beb741289e32e848507163a54228405d866d093cd4203f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "418b723e8242f78722b492428a805135b2f29589a8cf53f62c45f0de9e7117c2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "418b723e8242f78722b492428a805135b2f29589a8cf53f62c45f0de9e7117c2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "418b723e8242f78722b492428a805135b2f29589a8cf53f62c45f0de9e7117c2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "777c147412f5deeb0179b1c26ea447420073bd1c89b802ca02eb5fb29c1efb68"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "777c147412f5deeb0179b1c26ea447420073bd1c89b802ca02eb5fb29c1efb68"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "777c147412f5deeb0179b1c26ea447420073bd1c89b802ca02eb5fb29c1efb68"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c5e5ea53b7dabbffe4d6c70d5cc18c4dd344777470f59f480e203944be3011d5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c5e5ea53b7dabbffe4d6c70d5cc18c4dd344777470f59f480e203944be3011d5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c5e5ea53b7dabbffe4d6c70d5cc18c4dd344777470f59f480e203944be3011d5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6b2b11ba60fbe7ce52a9bc3c197cb9690f3f4dcd6df0d9c4c56085832b76aecc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6b2b11ba60fbe7ce52a9bc3c197cb9690f3f4dcd6df0d9c4c56085832b76aecc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6b2b11ba60fbe7ce52a9bc3c197cb9690f3f4dcd6df0d9c4c56085832b76aecc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c12153b5105170ea9223212a563a6b5907330809ba8572c911b3a99357327377"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "726f44d822b7a734ceb8acd9c705bf715b643540f747c5cebf5427e20c3ccc3f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "726f44d822b7a734ceb8acd9c705bf715b643540f747c5cebf5427e20c3ccc3f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "726f44d822b7a734ceb8acd9c705bf715b643540f747c5cebf5427e20c3ccc3f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "726f44d822b7a734ceb8acd9c705bf715b643540f747c5cebf5427e20c3ccc3f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "726f44d822b7a734ceb8acd9c705bf715b643540f747c5cebf5427e20c3ccc3f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "726f44d822b7a734ceb8acd9c705bf715b643540f747c5cebf5427e20c3ccc3f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "726f44d822b7a734ceb8acd9c705bf715b643540f747c5cebf5427e20c3ccc3f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "726f44d822b7a734ceb8acd9c705bf715b643540f747c5cebf5427e20c3ccc3f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "726f44d822b7a734ceb8acd9c705bf715b643540f747c5cebf5427e20c3ccc3f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5e0997facf25c1acf1429e7abba89d2f5c86c6fab8537c30a445f7dfe1f58bd1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5e0997facf25c1acf1429e7abba89d2f5c86c6fab8537c30a445f7dfe1f58bd1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5e0997facf25c1acf1429e7abba89d2f5c86c6fab8537c30a445f7dfe1f58bd1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5e0997facf25c1acf1429e7abba89d2f5c86c6fab8537c30a445f7dfe1f58bd1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5e0997facf25c1acf1429e7abba89d2f5c86c6fab8537c30a445f7dfe1f58bd1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5e0997facf25c1acf1429e7abba89d2f5c86c6fab8537c30a445f7dfe1f58bd1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5e0997facf25c1acf1429e7abba89d2f5c86c6fab8537c30a445f7dfe1f58bd1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5e0997facf25c1acf1429e7abba89d2f5c86c6fab8537c30a445f7dfe1f58bd1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5e0997facf25c1acf1429e7abba89d2f5c86c6fab8537c30a445f7dfe1f58bd1"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "82b9cbc76f714f621264e09d72d237b384f15d35da66b8bb52d84204ccf85709"
+        },
+        {
+          "json_pointer": "/1/quote",
+          "sha256": "37e55f014106f8e72b2652a5ef2f665775b64f7a83f3e628f225c713ffb3fd8b"
+        },
+        {
+          "json_pointer": "/2/quote",
+          "sha256": "7973fd39328c70fdd395ba2351a11baf4ff75e981e1fda67231dd3c843647c04"
+        },
+        {
+          "json_pointer": "/3/quote",
+          "sha256": "4d89559d7cb28e14e7665c93dca04e1489d0456fb4b66c133af5ab2c2fd761b7"
+        },
+        {
+          "json_pointer": "/4/quote",
+          "sha256": "6987f562281b7733f8edf4e98949f00afad81e2d8b070ee23acdf74e094c89f8"
+        },
+        {
+          "json_pointer": "/5/quote",
+          "sha256": "bd6a822402782395e3a131a3894ffb334f8bf70b2fbaaaa357899d5ab22d4e02"
+        },
+        {
+          "json_pointer": "/6/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/7/quote",
+          "sha256": "0f0a295afe522d21beb731d326f086a41e96deecf31a61a1ecc3ea8e8f0b00f6"
+        },
+        {
+          "json_pointer": "/8/quote",
+          "sha256": "fb16d737cb73772cadc50a3826f0d72d3cd857dc8a26592483c5266fb096d35c"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "fc1f95ebad71fe02c7772216d5aa4f2d229bf5ace32fd757291f3e6ecba88f31"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bd6a822402782395e3a131a3894ffb334f8bf70b2fbaaaa357899d5ab22d4e02"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bd6a822402782395e3a131a3894ffb334f8bf70b2fbaaaa357899d5ab22d4e02"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bd6a822402782395e3a131a3894ffb334f8bf70b2fbaaaa357899d5ab22d4e02"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6987f562281b7733f8edf4e98949f00afad81e2d8b070ee23acdf74e094c89f8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6987f562281b7733f8edf4e98949f00afad81e2d8b070ee23acdf74e094c89f8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6987f562281b7733f8edf4e98949f00afad81e2d8b070ee23acdf74e094c89f8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4d89559d7cb28e14e7665c93dca04e1489d0456fb4b66c133af5ab2c2fd761b7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4d89559d7cb28e14e7665c93dca04e1489d0456fb4b66c133af5ab2c2fd761b7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4d89559d7cb28e14e7665c93dca04e1489d0456fb4b66c133af5ab2c2fd761b7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7973fd39328c70fdd395ba2351a11baf4ff75e981e1fda67231dd3c843647c04"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7973fd39328c70fdd395ba2351a11baf4ff75e981e1fda67231dd3c843647c04"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7973fd39328c70fdd395ba2351a11baf4ff75e981e1fda67231dd3c843647c04"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7973fd39328c70fdd395ba2351a11baf4ff75e981e1fda67231dd3c843647c04"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7973fd39328c70fdd395ba2351a11baf4ff75e981e1fda67231dd3c843647c04"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7973fd39328c70fdd395ba2351a11baf4ff75e981e1fda67231dd3c843647c04"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "679c8da1dcc9ca78c327f04a98a2948b5c2a15738bef3d33fa165308a0b7a95a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f0a295afe522d21beb731d326f086a41e96deecf31a61a1ecc3ea8e8f0b00f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f0a295afe522d21beb731d326f086a41e96deecf31a61a1ecc3ea8e8f0b00f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f0a295afe522d21beb731d326f086a41e96deecf31a61a1ecc3ea8e8f0b00f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f0a295afe522d21beb731d326f086a41e96deecf31a61a1ecc3ea8e8f0b00f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f0a295afe522d21beb731d326f086a41e96deecf31a61a1ecc3ea8e8f0b00f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f0a295afe522d21beb731d326f086a41e96deecf31a61a1ecc3ea8e8f0b00f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f0a295afe522d21beb731d326f086a41e96deecf31a61a1ecc3ea8e8f0b00f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f0a295afe522d21beb731d326f086a41e96deecf31a61a1ecc3ea8e8f0b00f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0f0a295afe522d21beb731d326f086a41e96deecf31a61a1ecc3ea8e8f0b00f6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fb16d737cb73772cadc50a3826f0d72d3cd857dc8a26592483c5266fb096d35c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fb16d737cb73772cadc50a3826f0d72d3cd857dc8a26592483c5266fb096d35c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fb16d737cb73772cadc50a3826f0d72d3cd857dc8a26592483c5266fb096d35c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fb16d737cb73772cadc50a3826f0d72d3cd857dc8a26592483c5266fb096d35c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fb16d737cb73772cadc50a3826f0d72d3cd857dc8a26592483c5266fb096d35c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fb16d737cb73772cadc50a3826f0d72d3cd857dc8a26592483c5266fb096d35c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fb16d737cb73772cadc50a3826f0d72d3cd857dc8a26592483c5266fb096d35c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fb16d737cb73772cadc50a3826f0d72d3cd857dc8a26592483c5266fb096d35c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fb16d737cb73772cadc50a3826f0d72d3cd857dc8a26592483c5266fb096d35c"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/0/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/0/field_provenance/institution/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/0/field_provenance/institution_as_source/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/0/field_provenance/education_stage/quote",
+          "sha256": "8438342a1107f50f86fd496a695c88fbacf0500a1b4fe9b12b2e5c7768f9d3e6"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/0/field_provenance/field/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/0/field_provenance/start/quote",
+          "sha256": "4c811545ac11a04a492b55e0d69fc951890e979dc899d412a21e377109855b16"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/0/field_provenance/end/quote",
+          "sha256": "70bf73396fbeb20af6b514fd75723a1f3bf607a54ed7d6883111a1835ae9c2c3"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/0/supporting_evidence/0/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/0/supporting_evidence/1/quote",
+          "sha256": "8438342a1107f50f86fd496a695c88fbacf0500a1b4fe9b12b2e5c7768f9d3e6"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/1/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/1/field_provenance/institution/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/1/field_provenance/institution_as_source/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/1/field_provenance/education_stage/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/1/field_provenance/field/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/1/field_provenance/start/quote",
+          "sha256": "70bf73396fbeb20af6b514fd75723a1f3bf607a54ed7d6883111a1835ae9c2c3"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/2/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/2/field_provenance/institution/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/2/field_provenance/institution_as_source/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/2/field_provenance/education_stage/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/2/field_provenance/degree_label_as_source/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/2/field_provenance/field/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/education/2/field_provenance/start/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/mentor_relations/0/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/mentor_relations/0/field_provenance/mentor_name_as_source/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/mentor_relations/0/field_provenance/stage/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/appointments/0/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/appointments/0/field_provenance/institution/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/appointments/0/field_provenance/department_as_source/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/appointments/0/field_provenance/title/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/research_directions/0/quote",
+          "sha256": "af00069bee4c79e6437106ccb6f13d0c2da2e3027800d30ffcd9d2c1ec9646f6"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/research_directions/0/field_provenance/name/quote",
+          "sha256": "af00069bee4c79e6437106ccb6f13d0c2da2e3027800d30ffcd9d2c1ec9646f6"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/research_directions/1/quote",
+          "sha256": "af00069bee4c79e6437106ccb6f13d0c2da2e3027800d30ffcd9d2c1ec9646f6"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/research_directions/1/field_provenance/name/quote",
+          "sha256": "af00069bee4c79e6437106ccb6f13d0c2da2e3027800d30ffcd9d2c1ec9646f6"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/publications/0/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/publications/0/field_provenance/title/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/publications/0/field_provenance/year/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/publications/1/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/publications/1/field_provenance/title/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/publications/1/field_provenance/year/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/teaching/0/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/teaching/0/field_provenance/course_name/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/teaching/1/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/teaching/1/field_provenance/course_name/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/identity_evidence/0/quote",
+          "sha256": "1053aea87c7465d75cc4808f14d283c3f393a4b76210482406fbb2a7dbba7a5b"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/identity_evidence/1/quote",
+          "sha256": "10331c352b467f88fb72d1a6d7c9d981415af2b5dbcbda2507d0d495c75f608f"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/identity_evidence/2/quote",
+          "sha256": "284d781a23313f7476758fa65f3d2c584fbc3159765634d671a856c5808a7538"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/identity_evidence/3/quote",
+          "sha256": "84525a652ae74c9b25c5a58709ca3d5d46795b4b9b38c264f929d638f749409c"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/field_provenance/name/quote",
+          "sha256": "84525a652ae74c9b25c5a58709ca3d5d46795b4b9b38c264f929d638f749409c"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/field_provenance/department/quote",
+          "sha256": "10331c352b467f88fb72d1a6d7c9d981415af2b5dbcbda2507d0d495c75f608f"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/field_provenance/school/quote",
+          "sha256": "10331c352b467f88fb72d1a6d7c9d981415af2b5dbcbda2507d0d495c75f608f"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/field_provenance/listed_title/quote",
+          "sha256": "1053aea87c7465d75cc4808f14d283c3f393a4b76210482406fbb2a7dbba7a5b"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/field_provenance/roster_category_observed/quote",
+          "sha256": "284d781a23313f7476758fa65f3d2c584fbc3159765634d671a856c5808a7538"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/field_provenance/retired_label_observed/quote",
+          "sha256": "284d781a23313f7476758fa65f3d2c584fbc3159765634d671a856c5808a7538"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/field_provenance/retirement_status/quote",
+          "sha256": "284d781a23313f7476758fa65f3d2c584fbc3159765634d671a856c5808a7538"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/retirement_status_evidence/0/quote",
+          "sha256": "284d781a23313f7476758fa65f3d2c584fbc3159765634d671a856c5808a7538"
+        },
+        {
+          "json_pointer": "/people/bnu-lichong/retirement_status_evidence/1/quote",
+          "sha256": "84525a652ae74c9b25c5a58709ca3d5d46795b4b9b38c264f929d638f749409c"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "1053aea87c7465d75cc4808f14d283c3f393a4b76210482406fbb2a7dbba7a5b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "4c811545ac11a04a492b55e0d69fc951890e979dc899d412a21e377109855b16"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "70bf73396fbeb20af6b514fd75723a1f3bf607a54ed7d6883111a1835ae9c2c3"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/professional_excerpts/8/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/professional_excerpts/9/quote",
+          "sha256": "10331c352b467f88fb72d1a6d7c9d981415af2b5dbcbda2507d0d495c75f608f"
+        },
+        {
+          "json_pointer": "/professional_excerpts/10/quote",
+          "sha256": "8438342a1107f50f86fd496a695c88fbacf0500a1b4fe9b12b2e5c7768f9d3e6"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "284d781a23313f7476758fa65f3d2c584fbc3159765634d671a856c5808a7538"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "84525a652ae74c9b25c5a58709ca3d5d46795b4b9b38c264f929d638f749409c"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "10331c352b467f88fb72d1a6d7c9d981415af2b5dbcbda2507d0d495c75f608f"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "1995ce96306abe23f8702f70c6804dea489cb916fcef0fe78cad7b99e002eaf8"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "af00069bee4c79e6437106ccb6f13d0c2da2e3027800d30ffcd9d2c1ec9646f6"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/field_provenance/institution/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/field_provenance/institution_as_source/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/field_provenance/education_stage/quote",
+          "sha256": "8438342a1107f50f86fd496a695c88fbacf0500a1b4fe9b12b2e5c7768f9d3e6"
+        },
+        {
+          "json_pointer": "/field_provenance/field/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/field_provenance/start/quote",
+          "sha256": "4c811545ac11a04a492b55e0d69fc951890e979dc899d412a21e377109855b16"
+        },
+        {
+          "json_pointer": "/field_provenance/end/quote",
+          "sha256": "70bf73396fbeb20af6b514fd75723a1f3bf607a54ed7d6883111a1835ae9c2c3"
+        },
+        {
+          "json_pointer": "/supporting_evidence/0/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/supporting_evidence/1/quote",
+          "sha256": "8438342a1107f50f86fd496a695c88fbacf0500a1b4fe9b12b2e5c7768f9d3e6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1ed7905364337ab0e8aa1da4ee518b49c7baff4aaa08161a7f71b65e090ec786"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/field_provenance/institution/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/field_provenance/institution_as_source/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/field_provenance/education_stage/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/field_provenance/field/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/field_provenance/start/quote",
+          "sha256": "70bf73396fbeb20af6b514fd75723a1f3bf607a54ed7d6883111a1835ae9c2c3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1f28ac07e48efd282b75294ae8db2cea51dda4d04851262f50297e4a199bc01e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/field_provenance/institution/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/field_provenance/institution_as_source/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/field_provenance/education_stage/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/field_provenance/degree_label_as_source/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/field_provenance/field/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/field_provenance/start/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/field_provenance/mentor_name_as_source/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/field_provenance/stage/quote",
+          "sha256": "63af3dfa936c5459e9d5b938e9adabb07395d3e69994b7f3164dff9c0347d4d4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/field_provenance/institution/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/field_provenance/department_as_source/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/field_provenance/title/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8845ba10f0695fa9a0bbd84452b0cb91515de5c8fdf22c02178a611d566e8726"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/field_provenance/course_name/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/field_provenance/course_name/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83bda5eaa71721078261c3089e25a1596abe11183384e2b5c8011fd19cc742bb"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/field_provenance/title/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/field_provenance/year/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "49fb0b18d85b3fa26624df45d97e58f98c1a21c701574c986e2f0f0f6486e438"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/field_provenance/title/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/field_provenance/year/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c1634cb919424d1af644bfceacebda05576632449ca5e67dad96c526a52ded53"
+        },
+        {
+          "json_pointer": "/people/bnu-luoxinhui/identity_evidence/0/quote",
+          "sha256": "e1c9c64c0ddb0858093ddd25932b02c44e3426f820c2fbdf562f5194f4f76682"
+        },
+        {
+          "json_pointer": "/people/bnu-luoxinhui/identity_evidence/1/quote",
+          "sha256": "7c138e6db9d0fbc44fae13362041acd839cb6b54a2244c3414e9fc8d9886a70a"
+        },
+        {
+          "json_pointer": "/people/bnu-luoxinhui/identity_evidence/2/quote",
+          "sha256": "a4602ec332167aed4a583ff652b8c6bfd6bb9292d2d1072e9e22621d2379f107"
+        },
+        {
+          "json_pointer": "/people/bnu-luoxinhui/education/0/evidence/0/quote",
+          "sha256": "1f18f0d589023f53e51c391e78a96b4421f932e28144c090818af99a2eb8a0d2"
+        },
+        {
+          "json_pointer": "/people/bnu-luoxinhui/education/1/evidence/0/quote",
+          "sha256": "64f94bece52755da4b12b3b6e1c545cfc7cdf0ac4455eedc34f629eff4a4c218"
+        },
+        {
+          "json_pointer": "/people/bnu-luoxinhui/nondegree_training/0/evidence/0/quote",
+          "sha256": "a08664ff31069b8d4ba2c944348bec5453d6945bb1212e16a5a3f8540df0f8f8"
+        },
+        {
+          "json_pointer": "/people/bnu-luoxinhui/appointments/0/evidence/0/quote",
+          "sha256": "e1c9c64c0ddb0858093ddd25932b02c44e3426f820c2fbdf562f5194f4f76682"
+        },
+        {
+          "json_pointer": "/people/bnu-luoxinhui/appointments/1/evidence/0/quote",
+          "sha256": "9f34807b607653a9af3d78f06fdee0568447e957c0fd18c699c70d464ea1fab1"
+        },
+        {
+          "json_pointer": "/people/bnu-luoxinhui/appointments/2/evidence/0/quote",
+          "sha256": "7d6608908cca5fc1d9c7494575f527d69cd072fb55dc855289c35117db39fc71"
+        },
+        {
+          "json_pointer": "/people/bnu-luoxinhui/publications/0/evidence/0/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/people/bnu-luoxinhui/publications/1/evidence/0/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "e1c9c64c0ddb0858093ddd25932b02c44e3426f820c2fbdf562f5194f4f76682"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "1f18f0d589023f53e51c391e78a96b4421f932e28144c090818af99a2eb8a0d2"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "64f94bece52755da4b12b3b6e1c545cfc7cdf0ac4455eedc34f629eff4a4c218"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "a08664ff31069b8d4ba2c944348bec5453d6945bb1212e16a5a3f8540df0f8f8"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "9f34807b607653a9af3d78f06fdee0568447e957c0fd18c699c70d464ea1fab1"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "7d6608908cca5fc1d9c7494575f527d69cd072fb55dc855289c35117db39fc71"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "7c138e6db9d0fbc44fae13362041acd839cb6b54a2244c3414e9fc8d9886a70a"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "a4602ec332167aed4a583ff652b8c6bfd6bb9292d2d1072e9e22621d2379f107"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "33394f3373e420fdc6675dd3f629fe7fc46ceb2ea1a31e4047fbb30801f0b16b"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "186eb8f658c2cf8027d10484e4960daa29522b326e69205e7e94f6411679985b"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "1f18f0d589023f53e51c391e78a96b4421f932e28144c090818af99a2eb8a0d2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1f18f0d589023f53e51c391e78a96b4421f932e28144c090818af99a2eb8a0d2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1f18f0d589023f53e51c391e78a96b4421f932e28144c090818af99a2eb8a0d2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1f18f0d589023f53e51c391e78a96b4421f932e28144c090818af99a2eb8a0d2"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "64f94bece52755da4b12b3b6e1c545cfc7cdf0ac4455eedc34f629eff4a4c218"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "64f94bece52755da4b12b3b6e1c545cfc7cdf0ac4455eedc34f629eff4a4c218"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "64f94bece52755da4b12b3b6e1c545cfc7cdf0ac4455eedc34f629eff4a4c218"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "64f94bece52755da4b12b3b6e1c545cfc7cdf0ac4455eedc34f629eff4a4c218"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "a08664ff31069b8d4ba2c944348bec5453d6945bb1212e16a5a3f8540df0f8f8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a08664ff31069b8d4ba2c944348bec5453d6945bb1212e16a5a3f8540df0f8f8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a08664ff31069b8d4ba2c944348bec5453d6945bb1212e16a5a3f8540df0f8f8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a08664ff31069b8d4ba2c944348bec5453d6945bb1212e16a5a3f8540df0f8f8"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "e1c9c64c0ddb0858093ddd25932b02c44e3426f820c2fbdf562f5194f4f76682"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e1c9c64c0ddb0858093ddd25932b02c44e3426f820c2fbdf562f5194f4f76682"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e1c9c64c0ddb0858093ddd25932b02c44e3426f820c2fbdf562f5194f4f76682"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e1c9c64c0ddb0858093ddd25932b02c44e3426f820c2fbdf562f5194f4f76682"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "9f34807b607653a9af3d78f06fdee0568447e957c0fd18c699c70d464ea1fab1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f34807b607653a9af3d78f06fdee0568447e957c0fd18c699c70d464ea1fab1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f34807b607653a9af3d78f06fdee0568447e957c0fd18c699c70d464ea1fab1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f34807b607653a9af3d78f06fdee0568447e957c0fd18c699c70d464ea1fab1"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "7d6608908cca5fc1d9c7494575f527d69cd072fb55dc855289c35117db39fc71"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7d6608908cca5fc1d9c7494575f527d69cd072fb55dc855289c35117db39fc71"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7d6608908cca5fc1d9c7494575f527d69cd072fb55dc855289c35117db39fc71"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7d6608908cca5fc1d9c7494575f527d69cd072fb55dc855289c35117db39fc71"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9ac2ad9513fda2741a23f8539d8533146bb33c73d7bd7f0d0eb4b6a19e676631"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d9713dc96da40e4b4749785b4ced3875507868999c727c78856d1fe4fadd5753"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/identity_evidence/0/quote",
+          "sha256": "33394f3373e420fdc6675dd3f629fe7fc46ceb2ea1a31e4047fbb30801f0b16b"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/identity_evidence/1/quote",
+          "sha256": "9cfd71362efd83d50a20c2f39bd377ec2271aa019c723f98d4ead0a973399e49"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/identity_evidence/2/quote",
+          "sha256": "9267fb7731fd8cbd0645371b37a722e74840ead203cf4329925f60b28bc83137"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/identity_evidence/3/quote",
+          "sha256": "33394f3373e420fdc6675dd3f629fe7fc46ceb2ea1a31e4047fbb30801f0b16b"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/identity_evidence/4/quote",
+          "sha256": "186eb8f658c2cf8027d10484e4960daa29522b326e69205e7e94f6411679985b"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/education/0/evidence/0/quote",
+          "sha256": "e9d7696f212259b3b2d6d9b1e2718730904bac34b2eb07e627532003280a859f"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/education/1/evidence/0/quote",
+          "sha256": "71c1b10a82c1816d5dc68de318196aa02cf9c422a9ec7a146a5ede839d0340f3"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/education/2/evidence/0/quote",
+          "sha256": "1e8b4653f7c51fca6b288e805a725c48d8138e9b11e3bd01cb31a6d1d9a895ae"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/nondegree_training/0/evidence/0/quote",
+          "sha256": "07630bc8823ef2d10e544fbb2a32d752e4315301835697b19bdc4ffd674aaebd"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/appointments/0/evidence/0/quote",
+          "sha256": "9267fb7731fd8cbd0645371b37a722e74840ead203cf4329925f60b28bc83137"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/publications/0/evidence/0/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/people/bnu-nitengda/publications/1/evidence/0/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "7c138e6db9d0fbc44fae13362041acd839cb6b54a2244c3414e9fc8d9886a70a"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "a4602ec332167aed4a583ff652b8c6bfd6bb9292d2d1072e9e22621d2379f107"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "33394f3373e420fdc6675dd3f629fe7fc46ceb2ea1a31e4047fbb30801f0b16b"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "186eb8f658c2cf8027d10484e4960daa29522b326e69205e7e94f6411679985b"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "33394f3373e420fdc6675dd3f629fe7fc46ceb2ea1a31e4047fbb30801f0b16b"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "9cfd71362efd83d50a20c2f39bd377ec2271aa019c723f98d4ead0a973399e49"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "e9d7696f212259b3b2d6d9b1e2718730904bac34b2eb07e627532003280a859f"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "71c1b10a82c1816d5dc68de318196aa02cf9c422a9ec7a146a5ede839d0340f3"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "1e8b4653f7c51fca6b288e805a725c48d8138e9b11e3bd01cb31a6d1d9a895ae"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "07630bc8823ef2d10e544fbb2a32d752e4315301835697b19bdc4ffd674aaebd"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "9267fb7731fd8cbd0645371b37a722e74840ead203cf4329925f60b28bc83137"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/excerpts/8/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "e9d7696f212259b3b2d6d9b1e2718730904bac34b2eb07e627532003280a859f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e9d7696f212259b3b2d6d9b1e2718730904bac34b2eb07e627532003280a859f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e9d7696f212259b3b2d6d9b1e2718730904bac34b2eb07e627532003280a859f"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e9d7696f212259b3b2d6d9b1e2718730904bac34b2eb07e627532003280a859f"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "71c1b10a82c1816d5dc68de318196aa02cf9c422a9ec7a146a5ede839d0340f3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "71c1b10a82c1816d5dc68de318196aa02cf9c422a9ec7a146a5ede839d0340f3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "71c1b10a82c1816d5dc68de318196aa02cf9c422a9ec7a146a5ede839d0340f3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "71c1b10a82c1816d5dc68de318196aa02cf9c422a9ec7a146a5ede839d0340f3"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "1e8b4653f7c51fca6b288e805a725c48d8138e9b11e3bd01cb31a6d1d9a895ae"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1e8b4653f7c51fca6b288e805a725c48d8138e9b11e3bd01cb31a6d1d9a895ae"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1e8b4653f7c51fca6b288e805a725c48d8138e9b11e3bd01cb31a6d1d9a895ae"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1e8b4653f7c51fca6b288e805a725c48d8138e9b11e3bd01cb31a6d1d9a895ae"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "07630bc8823ef2d10e544fbb2a32d752e4315301835697b19bdc4ffd674aaebd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "07630bc8823ef2d10e544fbb2a32d752e4315301835697b19bdc4ffd674aaebd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "07630bc8823ef2d10e544fbb2a32d752e4315301835697b19bdc4ffd674aaebd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "07630bc8823ef2d10e544fbb2a32d752e4315301835697b19bdc4ffd674aaebd"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "9267fb7731fd8cbd0645371b37a722e74840ead203cf4329925f60b28bc83137"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9267fb7731fd8cbd0645371b37a722e74840ead203cf4329925f60b28bc83137"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9267fb7731fd8cbd0645371b37a722e74840ead203cf4329925f60b28bc83137"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9267fb7731fd8cbd0645371b37a722e74840ead203cf4329925f60b28bc83137"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "83486c932af3f6fa86a653a9f370e224270a5e9c4e5d73a511c28c55f7888706"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f6a532a2c031cbce58c15c2891b94ab40707400ddcc11dc6e2b3ccd74c0928e4"
+        }
+      ],
+      "mapping_notes": [
+        "王第二书目已实际迁移authors_as_source到editors_as_source并迁移field evidence；作者字段null，不仅改说明。",
+        "李仅应用本人观察时间与作品type修订；赵向阳人物操作未套用。PDF来源整体观察区间保留，李本人摘录定位首段；原PDF字节和页面视觉未核，无新下载。",
+        "倪2006年一授位事件含两学位项；译著不变原著作者。罗SUNY 纽约大学出版社原表述不纠。",
+        "所有原职业事实保存；重要证据边界在人物unknowns、education/publication/appointment note可见。",
+        "院系分组4节点parent均null，王教育学部/教育技术学院原单位并存而不推行政层级；两历史中心目录类别保留人物。",
+        "王辞晓展示department逐字取原unit“教育学部/教育技术学院”；曾祥龙逐字取原unit“心理学部”，原unit同时保留。此为来源归属展示，不据此新增任职机构或推行政父级。"
+      ]
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧665事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
