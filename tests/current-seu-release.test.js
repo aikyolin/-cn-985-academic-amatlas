@@ -11,12 +11,13 @@ const dlutMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-dlu
 const jluMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-jlu12-source-mapping.json',import.meta.url)));
 const sduMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-sdu12-source-mapping.json',import.meta.url)));
 const csuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-csu12-source-mapping.json',import.meta.url)));
+const hustMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-hust12-source-mapping.json',import.meta.url)));
 const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const laterMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-scu11-source-mapping.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-seu10-source-mapping.json',import.meta.url)));
 test('live SEU profiles preserve the complete independently reviewed source-bound objects',()=>{
- assert.equal(db.people.length,624+mapping.people.length+laterMapping.people.length+uestcMapping.people.length+hnuMapping.people.length+bnuMapping.people.length+tjuMapping.people.length+nkuMapping.people.length+dlutMapping.people.length+jluMapping.people.length+sduMapping.people.length+csuMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,624+mapping.people.length+laterMapping.people.length+uestcMapping.people.length+hnuMapping.people.length+bnuMapping.people.length+tjuMapping.people.length+nkuMapping.people.length+dlutMapping.people.length+jluMapping.people.length+sduMapping.people.length+csuMapping.people.length+hustMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const expected of mapping.people){
   const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);
   assert(matches(actual,{q:actual.name},db.org_units));assert(matches(actual,{school:'seu',org:actual.department_id},db.org_units));

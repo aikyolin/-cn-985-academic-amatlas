@@ -55,3 +55,6 @@ JSON紧凑表示单独范围见[表示形式优化](../progress/compact-json-rep
 
 ## 数据版本提示（独立UI变更）
 主页和数据说明显示当前全库数量与实际数据build_id；来源检索日期仍以逐条记录为准，不提供推断发布时间。tests/current-version-clarity.test.js验证实际app HTML、缺失版本和转义。live runtime守卫仅允许精确提示函数、两处调用及6资产token变化；数据、233XLSX与CSV全字节不变，全部既有live测试保留。
+
+## 华中科技大学十二人
+第十四份独立固定来源映射；749前缀及全root守恒，旧十三映射/pins/fixture/helper不变。current-hust-release.test.js实际HTML覆盖学位证据两项规范化、阶段未知、正式本科/硕士论文导师与博士委员会区分、访问/译者/主编/教学角色层级及冲突日期。当前版本提示测试与精确live runtime guard保持，新人物不改变UI代码。

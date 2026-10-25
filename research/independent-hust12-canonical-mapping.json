@@ -1,0 +1,1949 @@
+{
+  "schema_version": "independent-hust12-canonical-mapping-1",
+  "baseline_commit": "d403ff536c9e143ca1c115c9c7b0efa5343e2d02",
+  "new_people": [
+    "hust-baoyukun",
+    "hust-baiyun",
+    "hust-changyaping",
+    "hust-hongmin",
+    "hust-chenxianhong",
+    "hust-liuchengbin",
+    "hust-kelan",
+    "hust-xieruixiang",
+    "hust-liwei-education",
+    "hust-longlirong",
+    "hust-dengshiming",
+    "hust-zhangyanglei"
+  ],
+  "new_org_ids": [
+    "hust-management",
+    "hust-education-research",
+    "hust-journalism",
+    "hust-law",
+    "hust-cpa",
+    "hust-cpa-city-management"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 6,
+    "education": 54,
+    "appointments": 28,
+    "publications": 24,
+    "mentors": 5,
+    "teaching": 23,
+    "degree_true": 23,
+    "degree_false": 19,
+    "degree_unknown": 12
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "management-source-metadata",
+      "canonical_payload_sha256": "774651f31916eec6f3fd802cf8ce237ebb9c050733e577d053395dee331ad04e",
+      "field_mapping_sha256": "daf02f62d5808d32116a58863a8c96ce09be25003ab4c1814dc08208ac07f7e6",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "communication-law-public-administration",
+      "canonical_payload_sha256": "c84a8d73ff57e06367189eba172df94c2080c78d70eeb9350d5edd4f82d448f4",
+      "field_mapping_sha256": "5b4347a3c62454f4c0aa387f33791f8716af936ed9822434fb00c42b9ff31b81",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "education-management",
+      "canonical_payload_sha256": "9c21aae0149c2fff7e36810f13e1df1eb680bb5696c1c66ac6194eb083effc70",
+      "field_mapping_sha256": "8fe42725e4d297b620c848703075f4f7d399887513bfcbc981d514131787f723",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "774651f31916eec6f3fd802cf8ce237ebb9c050733e577d053395dee331ad04e",
+      "baseline_people": 749,
+      "baseline_commit": "d403ff536c9e143ca1c115c9c7b0efa5343e2d02",
+      "baseline_publication_status": "published",
+      "people": [
+        {
+          "person_id": "hust-baoyukun",
+          "source_candidate_sha256": "9dbe5fe1955ad28de9777bf7dff4eb773a4d9bf35dd02c6d7e9a637dd5a2518f",
+          "source_review_sha256": "ef0031dc6ca44c29a77bd28ad079cbf8731b58f2bd12d99e85df573c9c648a58",
+          "counts": {
+            "education": 4,
+            "appointments": 3,
+            "mentors": 0,
+            "teaching": 4,
+            "publications": 2
+          },
+          "org_identity": {
+            "canonical_org_id": "hust-management",
+            "source_unit": "管理学院 / 信息管理与数据科学系",
+            "source_url": "https://cm.hust.edu.cn/info/1753/24486.htm"
+          },
+          "visible_limits": [
+            "当前人事未知；保留官网角色与历史区间，不作实时任职导航。",
+            "仅依据已留存职业摘录，非完整履历；授位时间不从学习终点推定。",
+            "出版者核验逐作品区分，仅元数据非全文；原失败对象未重访。",
+            "三个学位仅教育阶段与专业标签，未另载明确毕业/获授信息；英文补查未取得可采纳正文，不用搜索摘录补授位。",
+            "原列本人博导资格，未披露本人求学导师。"
+          ]
+        },
+        {
+          "person_id": "hust-baiyun",
+          "source_candidate_sha256": "9dbe5fe1955ad28de9777bf7dff4eb773a4d9bf35dd02c6d7e9a637dd5a2518f",
+          "source_review_sha256": "ef0031dc6ca44c29a77bd28ad079cbf8731b58f2bd12d99e85df573c9c648a58",
+          "counts": {
+            "education": 3,
+            "appointments": 3,
+            "mentors": 1,
+            "teaching": 3,
+            "publications": 2
+          },
+          "org_identity": {
+            "canonical_org_id": "hust-management",
+            "source_unit": "管理学院 / 人力资源与组织科学系",
+            "source_url": "https://cm.hust.edu.cn/info/1753/30306.htm"
+          },
+          "visible_limits": [
+            "当前人事未知；保留官网角色与历史区间，不作实时任职导航。",
+            "仅依据已留存职业摘录，非完整履历；授位时间不从学习终点推定。",
+            "出版者核验逐作品区分，仅元数据非全文；原失败对象未重访。",
+            "武汉学士仅教育标签，西交硕博士合并阶段不拆为两学位；公示不是授位。",
+            "南洋联合培养非额外博士；第三篇仅身份桥接，不增代表作。",
+            "本人的博士生导师资格不等于本人求学导师关系；李福荔仅博士公示明确字段。"
+          ]
+        },
+        {
+          "person_id": "hust-changyaping",
+          "source_candidate_sha256": "9dbe5fe1955ad28de9777bf7dff4eb773a4d9bf35dd02c6d7e9a637dd5a2518f",
+          "source_review_sha256": "ef0031dc6ca44c29a77bd28ad079cbf8731b58f2bd12d99e85df573c9c648a58",
+          "counts": {
+            "education": 3,
+            "appointments": 2,
+            "mentors": 0,
+            "teaching": 4,
+            "publications": 2
+          },
+          "org_identity": {
+            "canonical_org_id": "hust-management",
+            "source_unit": "管理学院 / 市场营销系",
+            "source_url": "https://cm.hust.edu.cn/info/1754/30438.htm"
+          },
+          "visible_limits": [
+            "当前人事未知；保留官网角色与历史区间，不作实时任职导航。",
+            "仅依据已留存职业摘录，非完整履历；授位时间不从学习终点推定。",
+            "出版者核验逐作品区分，仅元数据非全文；原失败对象未重访。",
+            "3学位明确分别获得，年份及授位法人历史名称未披露。",
+            "JECR原刊HTML页码/DOI未披露，不用PDF或第三方索引补齐。"
+          ]
+        },
+        {
+          "person_id": "hust-hongmin",
+          "source_candidate_sha256": "06f6e8e991b4372ecf9c488099cdebe16d1379d78810c628807ba1277fb620ba",
+          "source_review_sha256": "af5ae5bee252221d6dec649bb4b1a16ce63aeedf3be213a454069727ae445650",
+          "counts": {
+            "education": 6,
+            "appointments": 2,
+            "mentors": 0,
+            "teaching": 3,
+            "publications": 2
+          },
+          "org_identity": {
+            "canonical_org_id": "hust-education-research",
+            "source_unit": "教育科学研究院",
+            "source_url": "https://jky.hust.edu.cn/info/1113/1057.htm"
+          },
+          "visible_limits": [
+            "当前人事未知；保留官网角色与历史区间，不作实时任职导航。",
+            "仅依据已留存职业摘录，非完整履历；授位时间不从学习终点推定。",
+            "出版者核验逐作品区分，仅元数据非全文；原失败对象未重访。",
+            "经济学双学位原措辞保留，仅一个额外教育事件，非两个额外已获学位。",
+            "两个作品官网/出版者页码分列；首篇在线2025与卷年2026不同，不覆盖原书目。",
+            "出版者证据为原浏览器必要元数据转录，非完整原始页面或全文。"
+          ]
+        }
+      ],
+      "source_classification": "原5未知仅阶段/合并教育标签；公示不授位。7明确获授，4非学位；无更改原授位布尔。",
+      "public_field_check": "各事实原精准语义locator/URL/摘录指纹；原工具定位和本机路径仅private。显式角色及限定实际note可见。",
+      "publisher_scope": "5作品有已留存原刊元数据，3作品官网书目且原刊失败后停止；全部无全文。",
+      "locator_revision": {
+        "old_payload_sha256": "1f7ce6916605029586daf3edbdff94dd5bcb57fcb20a3e5a72a3f9751af168cf",
+        "field_addresses": [
+          [
+            "people",
+            1,
+            "mentor_relations",
+            0,
+            "identity_bridge",
+            "locators",
+            0
+          ],
+          [
+            "people",
+            1,
+            "mentor_relations",
+            0,
+            "identity_bridge",
+            "locators",
+            1
+          ],
+          [
+            "people",
+            1,
+            "mentors",
+            0,
+            "identity_bridge",
+            "locators",
+            0
+          ],
+          [
+            "people",
+            1,
+            "mentors",
+            0,
+            "identity_bridge",
+            "locators",
+            1
+          ]
+        ],
+        "reason": "博士身份桥接定位改语义描述；原quote/hash和事实不变。",
+        "reverse_exact_old_sha256": "1f7ce6916605029586daf3edbdff94dd5bcb57fcb20a3e5a72a3f9751af168cf"
+      }
+    },
+    {
+      "schema_version": "hust12-group2-mapping-1",
+      "published_baseline_people": 749,
+      "published_baseline_commit": "d403ff536c9e143ca1c115c9c7b0efa5343e2d02",
+      "input_checks": [
+        {
+          "person_id": "hust-chenxianhong",
+          "candidate_sha256": "6357a41d11422909bc779c5c22300465091dbeba819ab429b4589a205748da4d",
+          "review_sha256": "8eb198931475b102911b5bc49bd9b84af83113c79c5df9a36d746a578730158a",
+          "audit_hashes_verified": true
+        },
+        {
+          "person_id": "hust-liuchengbin",
+          "candidate_sha256": "cfa840e7c3c65f9a6d1c482807d0f32d31374783a9e0ff1c7729f051e951f713",
+          "review_sha256": "02681de0834fd8a189076650e474ac6c3f92bb4642dfcb9bec6ed16c92b86d02",
+          "audit_hashes_verified": true
+        },
+        {
+          "person_id": "hust-kelan",
+          "candidate_sha256": "cfa840e7c3c65f9a6d1c482807d0f32d31374783a9e0ff1c7729f051e951f713",
+          "review_sha256": "02681de0834fd8a189076650e474ac6c3f92bb4642dfcb9bec6ed16c92b86d02",
+          "audit_hashes_verified": true
+        },
+        {
+          "person_id": "hust-xieruixiang",
+          "candidate_sha256": "3794558031fd24003d85a2dbe246091a20cf5c92fc176e0ba68ee9c0a408310c",
+          "review_sha256": "dafd5f92b3fa2c56914fe80d84111add883ce8d5349abf43167be8403db8c778",
+          "audit_hashes_verified": true
+        }
+      ],
+      "source_review_scope": "历史源事实独审不等工程、人事或出版者核验。原source状态保留别名，未改原件。",
+      "wave51_dual_hash_chain": {
+        "original_sha256": "789ac10d892811cf23c1e3859b2b8238911fe92fd9b35f01a43fa5fbbb77a12c",
+        "final_sha256": "6357a41d11422909bc779c5c22300465091dbeba819ab429b4589a205748da4d",
+        "acceptance_sha256": "b16a74652820a3b2fa7d5da8d3790980fd4946f3d67c2f7e4f39add9a4610554",
+        "only_accepted_two_source_files_read": true
+      },
+      "formal_thesis_mapping": "谢两关系保留原formal_thesis_advisor_verified=true与formal_doctoral_dissertation_advisor_verified=false，明确本科/硕士官网具名论文；去掉本轮新增但无消费的generic formal_dissertation_advisor_verified，原论文独立核验false，不扩定义。",
+      "visible_derivations": [
+        "陈两作品note补官网CSSCI标签；第二作B类权威及新华文摘网络版2017年06期全文转载为来源报告，非本批全文阅读或评价认证。",
+        "谢委员会label逐成员对应原Co-Chair或原未标角色；不增导师。",
+        "谢原department公共管理学院保留source_department，新显示学院／城市管理系依据原目录标签与原organization_id，行政未核。"
+      ],
+      "wave191_overlay": "精确hash已核，仅延期陈绪刚目标，对谢瑞翔不应用。",
+      "org_identity": "刘85与谢191均cpa.hust.edu.cn官方人物页明确公共管理学院，同中文单位/同校官方站合并hust-cpa；原下级系标签保留。柯法学院用本人85官方法学院职业句绑定，不借延期人物证据；城市管理系仅目录包含关系，行政未核。",
+      "event_id_mapping": "陈三学位复用原id，三访问因原无ID按原序派生稳定-visiting-1至3；其余event_id原值。原source_event_kind/notes别名保留。",
+      "degree_policy": "9明示授位true，5访问/交换false，谢三仅阶段null，未改原源授位三态。",
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/0/quote",
+          "sha256": "120e70c759ecbfa6d59ffcf73dab11631bd7c2937be133bee703d0503b02706e"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/1/quote",
+          "sha256": "36e126d27b530436229561e11e564cf85db315d3481f3bb95d7d307f44c7ea4d"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/2/quote",
+          "sha256": "10e1482ca84a426eb9b97b45d31be24ba4453a0eade94a79b44067b6db10340e"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/3/quote",
+          "sha256": "589b111930de5dab598ea636778ab22b1407e451d71a97a51f65d1c59b3ab975"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/4/quote",
+          "sha256": "cdcb3263b631b810b90d4c4ddbd5d1750fd96fca774f21b3daab86568de34ade"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/5/quote",
+          "sha256": "0c9693bd596fe3eb8fa2fdfc31419e727cc9472c1bb646187be2ed124741d7d1"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/6/quote",
+          "sha256": "429b05a0b53d902b413495f5d03538c5881a5369b7fb7a539ad40e826a6f49b0"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/7/quote",
+          "sha256": "3cef66f0acdb724591dba478005b6f98c78b07748e911a158192c8991f3a67de"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/8/quote",
+          "sha256": "12fcd0ccc7d22b6f5b314d2d5963c3998c01b4782092a15d1810dc1885c9f178"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/9/quote",
+          "sha256": "a79189c66622df41be7f65b64b7182bc16ea1556605e4e6d29c257b9005b1331"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/10/quote",
+          "sha256": "8db786a46a7ecfb3e4812f3c3a312737e8eb5c0c54b80a2f6662b1427f9ee841"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/11/quote",
+          "sha256": "fa1dc70931ee68795a9bdc7597af55758bd62942bee0a411303b10c64936e407"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/12/quote",
+          "sha256": "5601fc4da10536b8173daa46e6d2e1777b35b86ff9acd92228021646eae7e71e"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/13/quote",
+          "sha256": "8f04b452daf4fb866850fad019de6ef72b1c2808862bead7ce4495bcf5c6d50e"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/14/quote",
+          "sha256": "5a7c7ca719b518e4964fca97b1d25400a1060802117bbbe1288b0bf464b8d843"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/15/quote",
+          "sha256": "af293b24eb156be1ef50fb5cc999c2de571f31dc90df1f94b9022a0a01c8b9fb"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/16/quote",
+          "sha256": "80764efe5218791a8fa135e3e376ccb63bd4d1253170dd0524a0e043e84cc2f0"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/17/quote",
+          "sha256": "f783d9cdc8006f6fb8701cb7ff632b042a31ba2598cbe5925f837cbad813777a"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/18/quote",
+          "sha256": "42920f3c980ddfb614cc9b418c0d29146955d65b156c9e30e6e641e321c18951"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/19/quote",
+          "sha256": "76e373fdf300fd7f9fcd99c00e2034b8215abe301be2c0b5ecfe69c79200f793"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/20/quote",
+          "sha256": "4f30ab0127e106b76f284a9f768d8cae4820c7db9688881f07cc8f69e5952cbd"
+        },
+        {
+          "path": "/sources/hust-xieruixiang-profile/excerpts/21/quote",
+          "sha256": "5f0b39eb6666edb4ce387af9b2ce0004361333762833795a2f41892ff51cff2f"
+        },
+        {
+          "path": "/sources/hust-city-management-directory/excerpts/0/quote",
+          "sha256": "3db64c2050f2e785f808492e35180033c2b6cd3989e70cc6a502919627c54e34"
+        },
+        {
+          "path": "/sources/hust-city-management-directory/excerpts/1/quote",
+          "sha256": "8393d3b5d1373000612a078ccdb2d82e5ed27bf34fd8039080305b3f15fea950"
+        },
+        {
+          "path": "/sources/hust-city-management-directory/excerpts/2/quote",
+          "sha256": "9dd7983ec0598e6ec26b824cb853a2cd66fd44b643c03ea1944dfed92b90f794"
+        },
+        {
+          "path": "/people/hust-chenxianhong/education/0/evidence_quote",
+          "sha256": "007f54a5c608c5370b27e64aa7774390c961615b51d40c0178613b085317609c"
+        },
+        {
+          "path": "/people/hust-chenxianhong/education/1/evidence_quote",
+          "sha256": "2b09732452e8046e776d8a757d31927cd25e901f5970cb53cfeb2daa15029bd7"
+        },
+        {
+          "path": "/people/hust-chenxianhong/education/2/evidence_quote",
+          "sha256": "0ff7fcaac27f6edac9ae774219b37568bc5563123bf123ef89f8d97da159c36a"
+        },
+        {
+          "path": "/people/hust-chenxianhong/education/0/evidence_quote",
+          "sha256": "007f54a5c608c5370b27e64aa7774390c961615b51d40c0178613b085317609c"
+        },
+        {
+          "path": "/people/hust-chenxianhong/education/1/evidence_quote",
+          "sha256": "2b09732452e8046e776d8a757d31927cd25e901f5970cb53cfeb2daa15029bd7"
+        },
+        {
+          "path": "/people/hust-chenxianhong/education/2/evidence_quote",
+          "sha256": "0ff7fcaac27f6edac9ae774219b37568bc5563123bf123ef89f8d97da159c36a"
+        },
+        {
+          "path": "/people/hust-xieruixiang/education/0/quote",
+          "sha256": "120e70c759ecbfa6d59ffcf73dab11631bd7c2937be133bee703d0503b02706e"
+        },
+        {
+          "path": "/people/hust-xieruixiang/education/1/quote",
+          "sha256": "36e126d27b530436229561e11e564cf85db315d3481f3bb95d7d307f44c7ea4d"
+        },
+        {
+          "path": "/people/hust-xieruixiang/education/2/quote",
+          "sha256": "10e1482ca84a426eb9b97b45d31be24ba4453a0eade94a79b44067b6db10340e"
+        },
+        {
+          "path": "/people/hust-xieruixiang/professional_training/0/quote",
+          "sha256": "589b111930de5dab598ea636778ab22b1407e451d71a97a51f65d1c59b3ab975"
+        },
+        {
+          "path": "/people/hust-xieruixiang/additional_education_programs/0/quote",
+          "sha256": "cdcb3263b631b810b90d4c4ddbd5d1750fd96fca774f21b3daab86568de34ade"
+        },
+        {
+          "path": "/people/hust-xieruixiang/additional_education_programs/1/quote",
+          "sha256": "0c9693bd596fe3eb8fa2fdfc31419e727cc9472c1bb646187be2ed124741d7d1"
+        },
+        {
+          "path": "/people/hust-xieruixiang/additional_education_programs/2/quote",
+          "sha256": "429b05a0b53d902b413495f5d03538c5881a5369b7fb7a539ad40e826a6f49b0"
+        },
+        {
+          "path": "/people/hust-xieruixiang/mentor_relations/0/quote",
+          "sha256": "3cef66f0acdb724591dba478005b6f98c78b07748e911a158192c8991f3a67de"
+        },
+        {
+          "path": "/people/hust-xieruixiang/mentor_relations/1/quote",
+          "sha256": "12fcd0ccc7d22b6f5b314d2d5963c3998c01b4782092a15d1810dc1885c9f178"
+        },
+        {
+          "path": "/people/hust-xieruixiang/committee_members/0/quote",
+          "sha256": "a79189c66622df41be7f65b64b7182bc16ea1556605e4e6d29c257b9005b1331"
+        },
+        {
+          "path": "/people/hust-xieruixiang/committee_members/1/quote",
+          "sha256": "a79189c66622df41be7f65b64b7182bc16ea1556605e4e6d29c257b9005b1331"
+        },
+        {
+          "path": "/people/hust-xieruixiang/committee_members/2/quote",
+          "sha256": "a79189c66622df41be7f65b64b7182bc16ea1556605e4e6d29c257b9005b1331"
+        },
+        {
+          "path": "/people/hust-xieruixiang/committee_members/3/quote",
+          "sha256": "a79189c66622df41be7f65b64b7182bc16ea1556605e4e6d29c257b9005b1331"
+        },
+        {
+          "path": "/people/hust-xieruixiang/doctoral_thesis/quote",
+          "sha256": "8db786a46a7ecfb3e4812f3c3a312737e8eb5c0c54b80a2f6662b1427f9ee841"
+        },
+        {
+          "path": "/people/hust-xieruixiang/appointments/0/quote",
+          "sha256": "fa1dc70931ee68795a9bdc7597af55758bd62942bee0a411303b10c64936e407"
+        },
+        {
+          "path": "/people/hust-xieruixiang/appointments/1/quote",
+          "sha256": "5601fc4da10536b8173daa46e6d2e1777b35b86ff9acd92228021646eae7e71e"
+        },
+        {
+          "path": "/people/hust-xieruixiang/appointments/2/quote",
+          "sha256": "8f04b452daf4fb866850fad019de6ef72b1c2808862bead7ce4495bcf5c6d50e"
+        },
+        {
+          "path": "/people/hust-xieruixiang/appointments/3/quote",
+          "sha256": "5a7c7ca719b518e4964fca97b1d25400a1060802117bbbe1288b0bf464b8d843"
+        },
+        {
+          "path": "/people/hust-xieruixiang/research_directions/0/quote",
+          "sha256": "af293b24eb156be1ef50fb5cc999c2de571f31dc90df1f94b9022a0a01c8b9fb"
+        },
+        {
+          "path": "/people/hust-xieruixiang/research_directions/1/quote",
+          "sha256": "af293b24eb156be1ef50fb5cc999c2de571f31dc90df1f94b9022a0a01c8b9fb"
+        },
+        {
+          "path": "/people/hust-xieruixiang/research_directions/2/quote",
+          "sha256": "af293b24eb156be1ef50fb5cc999c2de571f31dc90df1f94b9022a0a01c8b9fb"
+        },
+        {
+          "path": "/people/hust-xieruixiang/research_directions/3/quote",
+          "sha256": "af293b24eb156be1ef50fb5cc999c2de571f31dc90df1f94b9022a0a01c8b9fb"
+        },
+        {
+          "path": "/people/hust-xieruixiang/research_directions/4/quote",
+          "sha256": "af293b24eb156be1ef50fb5cc999c2de571f31dc90df1f94b9022a0a01c8b9fb"
+        },
+        {
+          "path": "/people/hust-xieruixiang/research_directions/5/quote",
+          "sha256": "af293b24eb156be1ef50fb5cc999c2de571f31dc90df1f94b9022a0a01c8b9fb"
+        },
+        {
+          "path": "/people/hust-xieruixiang/publications/0/quote",
+          "sha256": "80764efe5218791a8fa135e3e376ccb63bd4d1253170dd0524a0e043e84cc2f0"
+        },
+        {
+          "path": "/people/hust-xieruixiang/publications/0/additional_evidence/quote",
+          "sha256": "42920f3c980ddfb614cc9b418c0d29146955d65b156c9e30e6e641e321c18951"
+        },
+        {
+          "path": "/people/hust-xieruixiang/publications/1/quote",
+          "sha256": "f783d9cdc8006f6fb8701cb7ff632b042a31ba2598cbe5925f837cbad813777a"
+        },
+        {
+          "path": "/people/hust-xieruixiang/teaching/0/quote",
+          "sha256": "76e373fdf300fd7f9fcd99c00e2034b8215abe301be2c0b5ecfe69c79200f793"
+        },
+        {
+          "path": "/people/hust-xieruixiang/teaching/1/quote",
+          "sha256": "4f30ab0127e106b76f284a9f768d8cae4820c7db9688881f07cc8f69e5952cbd"
+        },
+        {
+          "path": "/people/hust-xieruixiang/teaching/2/quote",
+          "sha256": "5f0b39eb6666edb4ce387af9b2ce0004361333762833795a2f41892ff51cff2f"
+        },
+        {
+          "path": "/people/hust-xieruixiang/identity_evidence/0/quote",
+          "sha256": "3db64c2050f2e785f808492e35180033c2b6cd3989e70cc6a502919627c54e34"
+        },
+        {
+          "path": "/people/hust-xieruixiang/identity_evidence/1/quote",
+          "sha256": "8393d3b5d1373000612a078ccdb2d82e5ed27bf34fd8039080305b3f15fea950"
+        },
+        {
+          "path": "/people/hust-xieruixiang/identity_evidence/2/quote",
+          "sha256": "9dd7983ec0598e6ec26b824cb853a2cd66fd44b643c03ea1944dfed92b90f794"
+        },
+        {
+          "path": "/people/hust-xieruixiang/education/0/quote",
+          "sha256": "120e70c759ecbfa6d59ffcf73dab11631bd7c2937be133bee703d0503b02706e"
+        },
+        {
+          "path": "/people/hust-xieruixiang/education/1/quote",
+          "sha256": "36e126d27b530436229561e11e564cf85db315d3481f3bb95d7d307f44c7ea4d"
+        },
+        {
+          "path": "/people/hust-xieruixiang/education/2/quote",
+          "sha256": "10e1482ca84a426eb9b97b45d31be24ba4453a0eade94a79b44067b6db10340e"
+        },
+        {
+          "path": "/people/hust-xieruixiang/education/3/quote",
+          "sha256": "589b111930de5dab598ea636778ab22b1407e451d71a97a51f65d1c59b3ab975"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3cef66f0acdb724591dba478005b6f98c78b07748e911a158192c8991f3a67de"
+        },
+        {
+          "path": "/quote",
+          "sha256": "12fcd0ccc7d22b6f5b314d2d5963c3998c01b4782092a15d1810dc1885c9f178"
+        },
+        {
+          "path": "/0/quote",
+          "sha256": "a79189c66622df41be7f65b64b7182bc16ea1556605e4e6d29c257b9005b1331"
+        },
+        {
+          "path": "/1/quote",
+          "sha256": "a79189c66622df41be7f65b64b7182bc16ea1556605e4e6d29c257b9005b1331"
+        },
+        {
+          "path": "/2/quote",
+          "sha256": "a79189c66622df41be7f65b64b7182bc16ea1556605e4e6d29c257b9005b1331"
+        },
+        {
+          "path": "/3/quote",
+          "sha256": "a79189c66622df41be7f65b64b7182bc16ea1556605e4e6d29c257b9005b1331"
+        },
+        {
+          "path": "/quote",
+          "sha256": "fa1dc70931ee68795a9bdc7597af55758bd62942bee0a411303b10c64936e407"
+        },
+        {
+          "path": "/quote",
+          "sha256": "5601fc4da10536b8173daa46e6d2e1777b35b86ff9acd92228021646eae7e71e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "8f04b452daf4fb866850fad019de6ef72b1c2808862bead7ce4495bcf5c6d50e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "5a7c7ca719b518e4964fca97b1d25400a1060802117bbbe1288b0bf464b8d843"
+        },
+        {
+          "path": "/quote",
+          "sha256": "80764efe5218791a8fa135e3e376ccb63bd4d1253170dd0524a0e043e84cc2f0"
+        },
+        {
+          "path": "/additional_evidence/quote",
+          "sha256": "42920f3c980ddfb614cc9b418c0d29146955d65b156c9e30e6e641e321c18951"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f783d9cdc8006f6fb8701cb7ff632b042a31ba2598cbe5925f837cbad813777a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "76e373fdf300fd7f9fcd99c00e2034b8215abe301be2c0b5ecfe69c79200f793"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4f30ab0127e106b76f284a9f768d8cae4820c7db9688881f07cc8f69e5952cbd"
+        },
+        {
+          "path": "/quote",
+          "sha256": "5f0b39eb6666edb4ce387af9b2ce0004361333762833795a2f41892ff51cff2f"
+        }
+      ],
+      "counts": {
+        "education": 17,
+        "mentors": 2,
+        "committee_members": 4,
+        "appointments": 11,
+        "publications": 8,
+        "teaching": 3
+      },
+      "teaching_count_basis": "谢3教学组9个组内课程名称，社会研究方法分本科/博士构成10个课程层级实例；不是9次独立开课认证。"
+    },
+    {
+      "baseline_people": 749,
+      "baseline_commit": "d403ff536c9e143ca1c115c9c7b0efa5343e2d02",
+      "people": [
+        {
+          "person_id": "hust-liwei-education",
+          "source_candidate_sha256": "332326fac90d9d236b7dd797a53693c7135962c9b7aa0be3bc60c8a65aae1b6d",
+          "source_evidence_sha256": "b4d7bd0586748b3452906f540bf3e7e35fd14a476dce572428471b9b7d18782a",
+          "source_review_sha256": "ac785cd527921c027514000e5ea6b2780a498c596ec62e76c6a8551233d02224",
+          "source_organization_id": "hust-education-science",
+          "canonical_department_id": "hust-education-research",
+          "education": 4,
+          "degree_true_false_null": [
+            1,
+            1,
+            2
+          ],
+          "mentors": 2,
+          "appointments": 1,
+          "publications": 2,
+          "teaching_groups": 2
+        },
+        {
+          "person_id": "hust-longlirong",
+          "source_candidate_sha256": "39fd234b6b7fbb4637526b3b09587e42b61e1464e85d0808d6b5a51cc77fab21",
+          "source_evidence_sha256": "4e2bd35c67b21ef44a8b72de7527df7498a33d176eedba23681b1466ae6568dc",
+          "source_review_sha256": "ff0c5e7f5eb24d032d8f1f8da1783aa3f7ce43e62f90a1d321059e5eaab60e0c",
+          "source_organization_id": "hust-management",
+          "canonical_department_id": "hust-management",
+          "education": 8,
+          "degree_true_false_null": [
+            3,
+            4,
+            1
+          ],
+          "mentors": 0,
+          "appointments": 2,
+          "publications": 2,
+          "teaching_groups": 0
+        },
+        {
+          "person_id": "hust-dengshiming",
+          "source_candidate_sha256": "39fd234b6b7fbb4637526b3b09587e42b61e1464e85d0808d6b5a51cc77fab21",
+          "source_evidence_sha256": "4e2bd35c67b21ef44a8b72de7527df7498a33d176eedba23681b1466ae6568dc",
+          "source_review_sha256": "ff0c5e7f5eb24d032d8f1f8da1783aa3f7ce43e62f90a1d321059e5eaab60e0c",
+          "source_organization_id": "hust-management",
+          "canonical_department_id": "hust-management",
+          "education": 6,
+          "degree_true_false_null": [
+            1,
+            4,
+            1
+          ],
+          "mentors": 0,
+          "appointments": 3,
+          "publications": 2,
+          "teaching_groups": 3
+        },
+        {
+          "person_id": "hust-zhangyanglei",
+          "source_candidate_sha256": "e37ee18b5e2aedb94bf52f6ca062de08771ad8a8f9daedbe7fbba1c0ee9690a6",
+          "source_evidence_sha256": "065c34e33ef2d455b355cfa720e5bdc3cf0960e9665bd0f674d9f96ea23988bd",
+          "source_review_sha256": "9bc3c128a8cbd237838325392202090c2e2fc90d984eddf400bdfed2277413fa",
+          "source_organization_id": "hust-education-research",
+          "canonical_department_id": "hust-education-research",
+          "education": 3,
+          "degree_true_false_null": [
+            2,
+            1,
+            0
+          ],
+          "mentors": 0,
+          "appointments": 1,
+          "publications": 2,
+          "teaching_groups": 1
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/people/hust-liwei-education/education/0/quote",
+          "sha256": "19101de6f315ecca62c5dd9b1d92a99723726690eaff9118ce56f637f4e204de"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/education/1/quote",
+          "sha256": "eb67e96bfc5c256e43679b6d562bd5dce379816e328c4eed566b6028e42fec55"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/education/2/quote",
+          "sha256": "26e8ac626fd17a5539f9879f9c578918515499b17b3738b8fff5a1e5f2c7e68b"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/professional_training/0/quote",
+          "sha256": "b477e458361bbdba7e4980e73eecf58d6d5324146147526f76a138c38f953831"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/mentor_relations/0/quote",
+          "sha256": "eb67e96bfc5c256e43679b6d562bd5dce379816e328c4eed566b6028e42fec55"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/mentor_relations/0/additional_evidence/quote",
+          "sha256": "25b508cfb6a1b1403ee298f4ac3b25ea580bbeba3c7026236efb4655b5d0129e"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/mentor_relations/1/quote",
+          "sha256": "26e8ac626fd17a5539f9879f9c578918515499b17b3738b8fff5a1e5f2c7e68b"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/mentor_relations/1/additional_evidence/quote",
+          "sha256": "25b508cfb6a1b1403ee298f4ac3b25ea580bbeba3c7026236efb4655b5d0129e"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/appointments/0/quote",
+          "sha256": "541ee9e6bb5a4a4477e785b2bb6bb709cdba77db1932673fa0b5d0813f0bb0d0"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/research_directions/0/quote",
+          "sha256": "83f8ec3fac63b47f92a04240925622f3607693f888fcb66d4f57ab570bb42bdf"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/research_directions/1/quote",
+          "sha256": "83f8ec3fac63b47f92a04240925622f3607693f888fcb66d4f57ab570bb42bdf"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/research_directions/2/quote",
+          "sha256": "83f8ec3fac63b47f92a04240925622f3607693f888fcb66d4f57ab570bb42bdf"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/publications/0/quote",
+          "sha256": "d2200bd0e6c29cf96ce19695132bc07ecc503ffe18eacd539ab0ca7d86b030fe"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/publications/1/quote",
+          "sha256": "67b09e5979ee1373eb6535e268235201fc40f71be818c81c7ff2ee7f1ed16334"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/teaching/0/quote",
+          "sha256": "a7056a4bc08523638db6d4bd339f7fb399cef178091abdef703004787837490e"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/teaching/1/quote",
+          "sha256": "2fe71cf074c6a38d984d8d0978ecf55380b64e93f087f3e612d548b0dfa338d3"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/identity_evidence/0/quote",
+          "sha256": "82d5253e7481e6058f6ef894d4754538ab1fa3320683a6c209bd0b111df715bd"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/identity_evidence/1/quote",
+          "sha256": "3871307ff80e53511360075b656f9dc35230b0d143d3182e0d04648ecbe44263"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/identity_evidence/2/quote",
+          "sha256": "541ee9e6bb5a4a4477e785b2bb6bb709cdba77db1932673fa0b5d0813f0bb0d0"
+        },
+        {
+          "json_pointer": "/people/hust-liwei-education/identity_evidence/3/quote",
+          "sha256": "82d5253e7481e6058f6ef894d4754538ab1fa3320683a6c209bd0b111df715bd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "19101de6f315ecca62c5dd9b1d92a99723726690eaff9118ce56f637f4e204de"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "eb67e96bfc5c256e43679b6d562bd5dce379816e328c4eed566b6028e42fec55"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "26e8ac626fd17a5539f9879f9c578918515499b17b3738b8fff5a1e5f2c7e68b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b477e458361bbdba7e4980e73eecf58d6d5324146147526f76a138c38f953831"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "eb67e96bfc5c256e43679b6d562bd5dce379816e328c4eed566b6028e42fec55"
+        },
+        {
+          "json_pointer": "/additional_evidence/quote",
+          "sha256": "25b508cfb6a1b1403ee298f4ac3b25ea580bbeba3c7026236efb4655b5d0129e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "26e8ac626fd17a5539f9879f9c578918515499b17b3738b8fff5a1e5f2c7e68b"
+        },
+        {
+          "json_pointer": "/additional_evidence/quote",
+          "sha256": "25b508cfb6a1b1403ee298f4ac3b25ea580bbeba3c7026236efb4655b5d0129e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "541ee9e6bb5a4a4477e785b2bb6bb709cdba77db1932673fa0b5d0813f0bb0d0"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a7056a4bc08523638db6d4bd339f7fb399cef178091abdef703004787837490e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2fe71cf074c6a38d984d8d0978ecf55380b64e93f087f3e612d548b0dfa338d3"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d2200bd0e6c29cf96ce19695132bc07ecc503ffe18eacd539ab0ca7d86b030fe"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "67b09e5979ee1373eb6535e268235201fc40f71be818c81c7ff2ee7f1ed16334"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "82d5253e7481e6058f6ef894d4754538ab1fa3320683a6c209bd0b111df715bd"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "3871307ff80e53511360075b656f9dc35230b0d143d3182e0d04648ecbe44263"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "541ee9e6bb5a4a4477e785b2bb6bb709cdba77db1932673fa0b5d0813f0bb0d0"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "25b508cfb6a1b1403ee298f4ac3b25ea580bbeba3c7026236efb4655b5d0129e"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "83f8ec3fac63b47f92a04240925622f3607693f888fcb66d4f57ab570bb42bdf"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "26e8ac626fd17a5539f9879f9c578918515499b17b3738b8fff5a1e5f2c7e68b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "eb67e96bfc5c256e43679b6d562bd5dce379816e328c4eed566b6028e42fec55"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "19101de6f315ecca62c5dd9b1d92a99723726690eaff9118ce56f637f4e204de"
+        },
+        {
+          "json_pointer": "/professional_excerpts/8/quote",
+          "sha256": "b477e458361bbdba7e4980e73eecf58d6d5324146147526f76a138c38f953831"
+        },
+        {
+          "json_pointer": "/professional_excerpts/9/quote",
+          "sha256": "d2200bd0e6c29cf96ce19695132bc07ecc503ffe18eacd539ab0ca7d86b030fe"
+        },
+        {
+          "json_pointer": "/professional_excerpts/10/quote",
+          "sha256": "67b09e5979ee1373eb6535e268235201fc40f71be818c81c7ff2ee7f1ed16334"
+        },
+        {
+          "json_pointer": "/professional_excerpts/11/quote",
+          "sha256": "a7056a4bc08523638db6d4bd339f7fb399cef178091abdef703004787837490e"
+        },
+        {
+          "json_pointer": "/professional_excerpts/12/quote",
+          "sha256": "2fe71cf074c6a38d984d8d0978ecf55380b64e93f087f3e612d548b0dfa338d3"
+        },
+        {
+          "json_pointer": "/professional_excerpts/13/quote",
+          "sha256": "080fc8db2bc576c8114d3eb014e66446244773854520a69fbd2ad76656dc4524"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "82d5253e7481e6058f6ef894d4754538ab1fa3320683a6c209bd0b111df715bd"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "43ae56c0fb100cd403d02a0ec5b9d43bc706d3211c53652b81532583b426e6c2"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "43ae56c0fb100cd403d02a0ec5b9d43bc706d3211c53652b81532583b426e6c2"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/education/0/quote",
+          "sha256": "72187219681735a53a8a53a2fa3eaa6eff0c1d30a9b19597cd0519846cec4580"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/education/1/quote",
+          "sha256": "690abc09eb66083556b60c81844f06a7ea2de52680293ac825c38fba361b9093"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/education/2/quote",
+          "sha256": "6d96b332de4d8b7bc2bbecbf5b002dfceb5ed58b59aab4ab063c3041f9e9c81c"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/education/3/quote",
+          "sha256": "7502aba2727bf03507cdf21d34d8e2a8714d805276ff5ed44993072134ab0221"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/professional_training/0/quote",
+          "sha256": "152a00eb091063faaf29879a46523ce2d9afee383bc27f756bcad00438357020"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/professional_training/1/quote",
+          "sha256": "42074985ad9ed334de60cac169527514161863c75e6456cf0e47fb5a8bc2e3b5"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/professional_training/2/quote",
+          "sha256": "09b6b34a81afae20c4c348c048cb86e4494dd6d9405ff3b41977e8ce8917a8c7"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/professional_training/3/quote",
+          "sha256": "2f27cb2c897bbd0bd1d28ab8d9147bc27f4d8a5e2ce7c3028a540c2dda1c642b"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/appointments/0/quote",
+          "sha256": "092b520ac28898fec44c60430c31c8778baf59d61885b2684a2da0c86fb15809"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/appointments/1/quote",
+          "sha256": "2835c90fe45d85ebc213170ba9ec35bcab94a341381d46f436a2cdb1561307d1"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/research_directions/0/quote",
+          "sha256": "e314f7b37a4e6c8ff5788bf06fe499bc4b8eafac43f64357f1c07f77cbf82892"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/research_directions/1/quote",
+          "sha256": "e314f7b37a4e6c8ff5788bf06fe499bc4b8eafac43f64357f1c07f77cbf82892"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/research_directions/2/quote",
+          "sha256": "e314f7b37a4e6c8ff5788bf06fe499bc4b8eafac43f64357f1c07f77cbf82892"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/research_directions/3/quote",
+          "sha256": "e314f7b37a4e6c8ff5788bf06fe499bc4b8eafac43f64357f1c07f77cbf82892"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/research_directions/4/quote",
+          "sha256": "e314f7b37a4e6c8ff5788bf06fe499bc4b8eafac43f64357f1c07f77cbf82892"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/research_directions/5/quote",
+          "sha256": "e314f7b37a4e6c8ff5788bf06fe499bc4b8eafac43f64357f1c07f77cbf82892"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/publications/0/quote",
+          "sha256": "43dbc395d0bccb71318c0f0dc92b7f74200a85a245be5026e8eb51dcb0b47982"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/publications/1/quote",
+          "sha256": "c87b16be98d0fb9bdde9d4f611b2334dec5db2710b484e63ea169d6ac79995db"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/identity_evidence/0/quote",
+          "sha256": "88a547123003f214a2a2bdf471f991fb785f5c03170354e77b1a80da09171758"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/identity_evidence/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/identity_evidence/2/quote",
+          "sha256": "ef39a5bff12afa1f414d9c10bb757027c566246045d763a12a62bfb810373382"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/identity_evidence/3/quote",
+          "sha256": "eee811646e16a9d0aab54eb7e74969400072f8defcde58a979c350982f3ebcfe"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/identity_evidence/4/quote",
+          "sha256": "d8a2fc40763705afc8e648b4b50f9b5af68af1bd3563d8944955350715f46ece"
+        },
+        {
+          "json_pointer": "/people/hust-longlirong/identity_evidence/5/quote",
+          "sha256": "33bb6821ed5cb0c8efe250ce729843d76c736910f41d6d426a4b8b82d877b06b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "72187219681735a53a8a53a2fa3eaa6eff0c1d30a9b19597cd0519846cec4580"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "690abc09eb66083556b60c81844f06a7ea2de52680293ac825c38fba361b9093"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6d96b332de4d8b7bc2bbecbf5b002dfceb5ed58b59aab4ab063c3041f9e9c81c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7502aba2727bf03507cdf21d34d8e2a8714d805276ff5ed44993072134ab0221"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "152a00eb091063faaf29879a46523ce2d9afee383bc27f756bcad00438357020"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "42074985ad9ed334de60cac169527514161863c75e6456cf0e47fb5a8bc2e3b5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "09b6b34a81afae20c4c348c048cb86e4494dd6d9405ff3b41977e8ce8917a8c7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2f27cb2c897bbd0bd1d28ab8d9147bc27f4d8a5e2ce7c3028a540c2dda1c642b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "092b520ac28898fec44c60430c31c8778baf59d61885b2684a2da0c86fb15809"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2835c90fe45d85ebc213170ba9ec35bcab94a341381d46f436a2cdb1561307d1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "43dbc395d0bccb71318c0f0dc92b7f74200a85a245be5026e8eb51dcb0b47982"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c87b16be98d0fb9bdde9d4f611b2334dec5db2710b484e63ea169d6ac79995db"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "d8a2fc40763705afc8e648b4b50f9b5af68af1bd3563d8944955350715f46ece"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "33bb6821ed5cb0c8efe250ce729843d76c736910f41d6d426a4b8b82d877b06b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "4fd90248aadf59898c6bac92ae96150fe8982b9d68489629a92ef52889c3bbf1"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "88a547123003f214a2a2bdf471f991fb785f5c03170354e77b1a80da09171758"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "ef39a5bff12afa1f414d9c10bb757027c566246045d763a12a62bfb810373382"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "eee811646e16a9d0aab54eb7e74969400072f8defcde58a979c350982f3ebcfe"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "72187219681735a53a8a53a2fa3eaa6eff0c1d30a9b19597cd0519846cec4580"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "690abc09eb66083556b60c81844f06a7ea2de52680293ac825c38fba361b9093"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "6d96b332de4d8b7bc2bbecbf5b002dfceb5ed58b59aab4ab063c3041f9e9c81c"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "7502aba2727bf03507cdf21d34d8e2a8714d805276ff5ed44993072134ab0221"
+        },
+        {
+          "json_pointer": "/professional_excerpts/8/quote",
+          "sha256": "152a00eb091063faaf29879a46523ce2d9afee383bc27f756bcad00438357020"
+        },
+        {
+          "json_pointer": "/professional_excerpts/9/quote",
+          "sha256": "42074985ad9ed334de60cac169527514161863c75e6456cf0e47fb5a8bc2e3b5"
+        },
+        {
+          "json_pointer": "/professional_excerpts/10/quote",
+          "sha256": "09b6b34a81afae20c4c348c048cb86e4494dd6d9405ff3b41977e8ce8917a8c7"
+        },
+        {
+          "json_pointer": "/professional_excerpts/11/quote",
+          "sha256": "2f27cb2c897bbd0bd1d28ab8d9147bc27f4d8a5e2ce7c3028a540c2dda1c642b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/12/quote",
+          "sha256": "092b520ac28898fec44c60430c31c8778baf59d61885b2684a2da0c86fb15809"
+        },
+        {
+          "json_pointer": "/professional_excerpts/13/quote",
+          "sha256": "2835c90fe45d85ebc213170ba9ec35bcab94a341381d46f436a2cdb1561307d1"
+        },
+        {
+          "json_pointer": "/professional_excerpts/14/quote",
+          "sha256": "e314f7b37a4e6c8ff5788bf06fe499bc4b8eafac43f64357f1c07f77cbf82892"
+        },
+        {
+          "json_pointer": "/professional_excerpts/15/quote",
+          "sha256": "43dbc395d0bccb71318c0f0dc92b7f74200a85a245be5026e8eb51dcb0b47982"
+        },
+        {
+          "json_pointer": "/professional_excerpts/16/quote",
+          "sha256": "c87b16be98d0fb9bdde9d4f611b2334dec5db2710b484e63ea169d6ac79995db"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "33bb6821ed5cb0c8efe250ce729843d76c736910f41d6d426a4b8b82d877b06b"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/education/0/quote",
+          "sha256": "583d634e1fbc341928a62326c92d9eb094c3884fe4cc4b54dd45995eea28d5c8"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/education/1/quote",
+          "sha256": "22d3de1a9066e18e764193a46d749e5871aa3cd359368fed4388d65fd53d1fe5"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/professional_training/0/quote",
+          "sha256": "d6dbe4bfc1799eff158dd625fc33041ae6916396e91134dd08f6dc5422ed9f31"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/professional_training/1/quote",
+          "sha256": "5a1cd7896d6109c240d59454961c37eafff26a2b9cab6d1414a23b8979abf82b"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/professional_training/2/quote",
+          "sha256": "ada55c9ee281a2880a166501191b7421ceacfaab5dbe2e99062bbd24c6b6294e"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/professional_training/3/quote",
+          "sha256": "c74c7269380667e91d33c84521e449ad10e3fae8d9063b87293a9fd2ed0340af"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/appointments/0/quote",
+          "sha256": "0c6b89df2241c712adac0753f6993e1273916002327a99a3564b350dcb2966d9"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/appointments/1/quote",
+          "sha256": "40cc6d01924c44f6f116c60a9b6f6c4618820316d426038f141027f323b9ac97"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/appointments/2/quote",
+          "sha256": "46fbef893bfa3b5b81c483210ffda87bbb2d13e89924a269e0cf42a580219679"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/research_directions/0/quote",
+          "sha256": "cc581bc6d1b404d68b93ddd805405d6e2e41f2035607ff345b088906e9b3c48b"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/research_directions/1/quote",
+          "sha256": "cc581bc6d1b404d68b93ddd805405d6e2e41f2035607ff345b088906e9b3c48b"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/research_directions/2/quote",
+          "sha256": "cc581bc6d1b404d68b93ddd805405d6e2e41f2035607ff345b088906e9b3c48b"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/research_directions/3/quote",
+          "sha256": "cc581bc6d1b404d68b93ddd805405d6e2e41f2035607ff345b088906e9b3c48b"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/research_directions/4/quote",
+          "sha256": "cc581bc6d1b404d68b93ddd805405d6e2e41f2035607ff345b088906e9b3c48b"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/research_directions/5/quote",
+          "sha256": "cc581bc6d1b404d68b93ddd805405d6e2e41f2035607ff345b088906e9b3c48b"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/publications/0/quote",
+          "sha256": "a81204c5b0023dbee5ed1f33848f94cf3f4c3dc9d4a7dcd161533bfd96a85a7b"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/publications/1/quote",
+          "sha256": "2b8e44faac7b7119c6b1836652ddb8c49765cbd8781a30250ee4084217a64904"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/teaching/0/quote",
+          "sha256": "bbd86d5bfdb95bc416455efb3c0ed3840e0613b626ede959c6f28c2cd70a71ed"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/teaching/1/quote",
+          "sha256": "bbd86d5bfdb95bc416455efb3c0ed3840e0613b626ede959c6f28c2cd70a71ed"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/teaching/2/quote",
+          "sha256": "bbd86d5bfdb95bc416455efb3c0ed3840e0613b626ede959c6f28c2cd70a71ed"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/identity_evidence/0/quote",
+          "sha256": "839f42efb17f516c1090cd61e46fc62de36e4d9dae5baa4a2705949a22366f04"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/identity_evidence/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/identity_evidence/2/quote",
+          "sha256": "ef39a5bff12afa1f414d9c10bb757027c566246045d763a12a62bfb810373382"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/identity_evidence/3/quote",
+          "sha256": "f0985597f1d8dbd1a30a4141ee8ea8452973dd87e959a89639fa6cedc2ac2409"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/identity_evidence/4/quote",
+          "sha256": "4fd90248aadf59898c6bac92ae96150fe8982b9d68489629a92ef52889c3bbf1"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/identity_evidence/5/quote",
+          "sha256": "33bb6821ed5cb0c8efe250ce729843d76c736910f41d6d426a4b8b82d877b06b"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/professional_collaborations/0/quote",
+          "sha256": "13761990cfbd8f5ef4c09c834ceda31336053dddc8e0d65f5752fc659f2b96e3"
+        },
+        {
+          "json_pointer": "/people/hust-dengshiming/professional_collaborations/1/quote",
+          "sha256": "08d7cc821ac6f5cbcd4e05a9a5bf9123806a9a229148184863643c7f45a484f7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "583d634e1fbc341928a62326c92d9eb094c3884fe4cc4b54dd45995eea28d5c8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "22d3de1a9066e18e764193a46d749e5871aa3cd359368fed4388d65fd53d1fe5"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d6dbe4bfc1799eff158dd625fc33041ae6916396e91134dd08f6dc5422ed9f31"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5a1cd7896d6109c240d59454961c37eafff26a2b9cab6d1414a23b8979abf82b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "ada55c9ee281a2880a166501191b7421ceacfaab5dbe2e99062bbd24c6b6294e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c74c7269380667e91d33c84521e449ad10e3fae8d9063b87293a9fd2ed0340af"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0c6b89df2241c712adac0753f6993e1273916002327a99a3564b350dcb2966d9"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "40cc6d01924c44f6f116c60a9b6f6c4618820316d426038f141027f323b9ac97"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "46fbef893bfa3b5b81c483210ffda87bbb2d13e89924a269e0cf42a580219679"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bbd86d5bfdb95bc416455efb3c0ed3840e0613b626ede959c6f28c2cd70a71ed"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bbd86d5bfdb95bc416455efb3c0ed3840e0613b626ede959c6f28c2cd70a71ed"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bbd86d5bfdb95bc416455efb3c0ed3840e0613b626ede959c6f28c2cd70a71ed"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a81204c5b0023dbee5ed1f33848f94cf3f4c3dc9d4a7dcd161533bfd96a85a7b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "2b8e44faac7b7119c6b1836652ddb8c49765cbd8781a30250ee4084217a64904"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "d8a2fc40763705afc8e648b4b50f9b5af68af1bd3563d8944955350715f46ece"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "33bb6821ed5cb0c8efe250ce729843d76c736910f41d6d426a4b8b82d877b06b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "4fd90248aadf59898c6bac92ae96150fe8982b9d68489629a92ef52889c3bbf1"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "839f42efb17f516c1090cd61e46fc62de36e4d9dae5baa4a2705949a22366f04"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "ef39a5bff12afa1f414d9c10bb757027c566246045d763a12a62bfb810373382"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "f0985597f1d8dbd1a30a4141ee8ea8452973dd87e959a89639fa6cedc2ac2409"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "583d634e1fbc341928a62326c92d9eb094c3884fe4cc4b54dd45995eea28d5c8"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "22d3de1a9066e18e764193a46d749e5871aa3cd359368fed4388d65fd53d1fe5"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "d6dbe4bfc1799eff158dd625fc33041ae6916396e91134dd08f6dc5422ed9f31"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "5a1cd7896d6109c240d59454961c37eafff26a2b9cab6d1414a23b8979abf82b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/8/quote",
+          "sha256": "ada55c9ee281a2880a166501191b7421ceacfaab5dbe2e99062bbd24c6b6294e"
+        },
+        {
+          "json_pointer": "/professional_excerpts/9/quote",
+          "sha256": "c74c7269380667e91d33c84521e449ad10e3fae8d9063b87293a9fd2ed0340af"
+        },
+        {
+          "json_pointer": "/professional_excerpts/10/quote",
+          "sha256": "13761990cfbd8f5ef4c09c834ceda31336053dddc8e0d65f5752fc659f2b96e3"
+        },
+        {
+          "json_pointer": "/professional_excerpts/11/quote",
+          "sha256": "08d7cc821ac6f5cbcd4e05a9a5bf9123806a9a229148184863643c7f45a484f7"
+        },
+        {
+          "json_pointer": "/professional_excerpts/12/quote",
+          "sha256": "0c6b89df2241c712adac0753f6993e1273916002327a99a3564b350dcb2966d9"
+        },
+        {
+          "json_pointer": "/professional_excerpts/13/quote",
+          "sha256": "40cc6d01924c44f6f116c60a9b6f6c4618820316d426038f141027f323b9ac97"
+        },
+        {
+          "json_pointer": "/professional_excerpts/14/quote",
+          "sha256": "46fbef893bfa3b5b81c483210ffda87bbb2d13e89924a269e0cf42a580219679"
+        },
+        {
+          "json_pointer": "/professional_excerpts/15/quote",
+          "sha256": "cc581bc6d1b404d68b93ddd805405d6e2e41f2035607ff345b088906e9b3c48b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/16/quote",
+          "sha256": "bbd86d5bfdb95bc416455efb3c0ed3840e0613b626ede959c6f28c2cd70a71ed"
+        },
+        {
+          "json_pointer": "/professional_excerpts/17/quote",
+          "sha256": "a81204c5b0023dbee5ed1f33848f94cf3f4c3dc9d4a7dcd161533bfd96a85a7b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/18/quote",
+          "sha256": "2b8e44faac7b7119c6b1836652ddb8c49765cbd8781a30250ee4084217a64904"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "33bb6821ed5cb0c8efe250ce729843d76c736910f41d6d426a4b8b82d877b06b"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/page_date_evidence/quote",
+          "sha256": "02b0dbdc9cf46cef3644e7336472f6de95e945cf986990399ac536ce19bf8225"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/listed_title_evidence/quote",
+          "sha256": "f930e9f403e9d8560042e31c951619c4ffd61b2127a96d77bdbcc5d453c55ce3"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/identity_evidence/0/quote",
+          "sha256": "71f79032c7b97133a799e41e013f3f74d506c71912887d7b0a321b122b92a2cd"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/identity_evidence/1/quote",
+          "sha256": "d34309db5f22bc76402c900d66aa0cf0a7234ffe20bcb53b9c5fb575538cecff"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/identity_evidence/2/quote",
+          "sha256": "43ae56c0fb100cd403d02a0ec5b9d43bc706d3211c53652b81532583b426e6c2"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/identity_evidence/3/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/education/0/quote",
+          "sha256": "859a5e589bf70533eeb6b16978d2eb48bb6ddda8322b794525ae02a2c42461a6"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/education/1/quote",
+          "sha256": "d0f7c8c236abdaa5fc115313af7eeb122f0e867d8e3db35c9a4766b31148f16a"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/professional_training/0/quote",
+          "sha256": "c88a95600620f2716298ce7861b6e9286a65212b7afa34be344528dbec060cc8"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/supervision_qualifications/0/quote",
+          "sha256": "0bec017d340271a2ba66e3a07429fa0d453bc963ddfd268694fcc0f42c49b61d"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/appointments/0/quote",
+          "sha256": "a0546669a553907b51431125ce6350fb335299ccf844bff1ae6ed2f73355f0b8"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/research_directions/0/quote",
+          "sha256": "ca9ce09e65aec45a46127c23eafe9a51ad36445c096349bf3965d9a89149af94"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/teaching/0/level_evidence/quote",
+          "sha256": "cf894e4237b60a8b81865e93c6a31dfe0554cd3401d2a9bba3bed145047056a2"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/teaching/0/quote",
+          "sha256": "f1b079860ec5aee6b96a7e0b2d5d66c4df30db7476342ef6d50b3c6904574ad8"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/publications/0/quote",
+          "sha256": "3bfa727c5db6744c050099ca6bf9f293b03b6ee8a75023819216522781e96e32"
+        },
+        {
+          "json_pointer": "/people/hust-zhangyanglei/publications/1/quote",
+          "sha256": "32630db3b276abf5d1c6b876f304849ee40a7413853c1b096b5956dc859b69c1"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "859a5e589bf70533eeb6b16978d2eb48bb6ddda8322b794525ae02a2c42461a6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d0f7c8c236abdaa5fc115313af7eeb122f0e867d8e3db35c9a4766b31148f16a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c88a95600620f2716298ce7861b6e9286a65212b7afa34be344528dbec060cc8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a0546669a553907b51431125ce6350fb335299ccf844bff1ae6ed2f73355f0b8"
+        },
+        {
+          "json_pointer": "/level_evidence/quote",
+          "sha256": "cf894e4237b60a8b81865e93c6a31dfe0554cd3401d2a9bba3bed145047056a2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f1b079860ec5aee6b96a7e0b2d5d66c4df30db7476342ef6d50b3c6904574ad8"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "3bfa727c5db6744c050099ca6bf9f293b03b6ee8a75023819216522781e96e32"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "32630db3b276abf5d1c6b876f304849ee40a7413853c1b096b5956dc859b69c1"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "71f79032c7b97133a799e41e013f3f74d506c71912887d7b0a321b122b92a2cd"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "f930e9f403e9d8560042e31c951619c4ffd61b2127a96d77bdbcc5d453c55ce3"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "02b0dbdc9cf46cef3644e7336472f6de95e945cf986990399ac536ce19bf8225"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "0bec017d340271a2ba66e3a07429fa0d453bc963ddfd268694fcc0f42c49b61d"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "859a5e589bf70533eeb6b16978d2eb48bb6ddda8322b794525ae02a2c42461a6"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "d0f7c8c236abdaa5fc115313af7eeb122f0e867d8e3db35c9a4766b31148f16a"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "c88a95600620f2716298ce7861b6e9286a65212b7afa34be344528dbec060cc8"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "a0546669a553907b51431125ce6350fb335299ccf844bff1ae6ed2f73355f0b8"
+        },
+        {
+          "json_pointer": "/excerpts/8/quote",
+          "sha256": "ca9ce09e65aec45a46127c23eafe9a51ad36445c096349bf3965d9a89149af94"
+        },
+        {
+          "json_pointer": "/excerpts/9/quote",
+          "sha256": "cf894e4237b60a8b81865e93c6a31dfe0554cd3401d2a9bba3bed145047056a2"
+        },
+        {
+          "json_pointer": "/excerpts/10/quote",
+          "sha256": "f1b079860ec5aee6b96a7e0b2d5d66c4df30db7476342ef6d50b3c6904574ad8"
+        },
+        {
+          "json_pointer": "/excerpts/11/quote",
+          "sha256": "3bfa727c5db6744c050099ca6bf9f293b03b6ee8a75023819216522781e96e32"
+        },
+        {
+          "json_pointer": "/excerpts/12/quote",
+          "sha256": "32630db3b276abf5d1c6b876f304849ee40a7413853c1b096b5956dc859b69c1"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "d34309db5f22bc76402c900d66aa0cf0a7234ffe20bcb53b9c5fb575538cecff"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "43ae56c0fb100cd403d02a0ec5b9d43bc706d3211c53652b81532583b426e6c2"
+        },
+        {
+          "json_pointer": "/0/quote",
+          "sha256": "43ae56c0fb100cd403d02a0ec5b9d43bc706d3211c53652b81532583b426e6c2"
+        }
+      ],
+      "source_organization_records": [
+        {
+          "id": "hust-education-science",
+          "name": "教育科学研究院",
+          "type": "institute",
+          "school_id": "hust",
+          "parent_id": null,
+          "administrative_parent_status": "not_independently_verified",
+          "source_id": "hust-education-professors-directory",
+          "source_url": "https://jky.hust.edu.cn/szdw/js.htm",
+          "source_excerpt_sha256": "43ae56c0fb100cd403d02a0ec5b9d43bc706d3211c53652b81532583b426e6c2",
+          "source_locator": "对应职业条目／华中科技大学教育科学研究院"
+        },
+        {
+          "id": "hust-management",
+          "name": "管理学院",
+          "type": "college",
+          "school_id": "hust",
+          "parent_id": null,
+          "administrative_parent_status": "not_independently_verified",
+          "source_id": "hust-management-directory",
+          "source_url": "https://cm.hust.edu.cn/jsyyj/szll.htm",
+          "source_excerpt_sha256": "33bb6821ed5cb0c8efe250ce729843d76c736910f41d6d426a4b8b82d877b06b",
+          "source_locator": "对应职业条目／华中科技大学管理学院 版权所有",
+          "observed_at": "2026-10-25T03:21:37Z"
+        },
+        {
+          "id": "hust-education-research",
+          "name": "教育科学研究院",
+          "type": "institute",
+          "school_id": "hust",
+          "parent_id": null,
+          "administrative_parent_status": "not_independently_verified",
+          "source_id": "hust-education-associate-directory",
+          "source_url": "https://jky.hust.edu.cn/szdw/fjs.htm",
+          "source_excerpt_sha256": "43ae56c0fb100cd403d02a0ec5b9d43bc706d3211c53652b81532583b426e6c2",
+          "source_locator": "对应职业条目／华中科技大学教育科学研究院",
+          "observed_at_utc": "2026-10-25T04:11:36.165Z",
+          "excerpt_id": "hust-education-associate-directory-unit"
+        }
+      ],
+      "mapping_notes": [
+        "组织节点由组1唯一定义，本组org_units为空。211原hust-education-science与251原hust-education-research同华中科技大学教育科学研究院、同jky.hust.edu.cn教授/副教授官方目录署名，统一展示引用hust-education-research；原ID/原parentnull/证据保留，不推行政法律认证。",
+        "管理学院引用组1hust-management；历史及当前页首系名在本人字段保留，不猜更名或父子行政树。",
+        "所有非学位事件与职业角色按原证据；导师只李伟硕/博两阶段，邓访问合作方不进师承。",
+        "原source-only为采集阶段状态，不等持续内容禁止；只处理本批accepted4，原hold他人不读正文/不重试。原件不改，本批来源独审与工程验收另行执行，不声明已发布。"
+      ],
+      "semantic_locator_repairs": [
+        {
+          "json_pointer": "/people/1/field_provenance/name/source_locator",
+          "new": "个人页姓名字段／龙立荣"
+        },
+        {
+          "json_pointer": "/people/1/field_provenance/listed_title/source_locator",
+          "new": "个人页职称字段／教授"
+        },
+        {
+          "json_pointer": "/people/1/field_provenance/department_below_school/source_locator",
+          "new": "个人页所属单位字段／人力资源与组织科学系"
+        },
+        {
+          "json_pointer": "/people/2/field_provenance/name/source_locator",
+          "new": "个人页姓名字段／邓世名"
+        },
+        {
+          "json_pointer": "/people/2/field_provenance/listed_title/source_locator",
+          "new": "个人页职称字段／教授"
+        },
+        {
+          "json_pointer": "/people/2/field_provenance/department_below_school/source_locator",
+          "new": "个人页所属单位字段／供应链管理与系统工程系"
+        }
+      ],
+      "degree_classification_evidence_update": {
+        "changes": [
+          {
+            "person_id": "hust-liwei-education",
+            "event_id": "hust-liwei-education-education-3",
+            "json_pointer": "/people/0/education/2",
+            "source_candidate_sha256": "332326fac90d9d236b7dd797a53693c7135962c9b7aa0be3bc60c8a65aae1b6d",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "evidence": {
+              "source_id": "hust-liwei-education-profile",
+              "source_url": "https://jky.hust.edu.cn/info/1112/4162.htm",
+              "source_excerpt_sha256": "541ee9e6bb5a4a4477e785b2bb6bb709cdba77db1932673fa0b5d0813f0bb0d0",
+              "source_locator": "对应职业条目／教育学博士，教授，华中科技大学教科院博士生导师"
+            },
+            "changed_fields": {
+              "event_kind": {
+                "old": "degree_study_label_award_unconfirmed",
+                "new": "degree"
+              },
+              "degree_awarded": {
+                "old": null,
+                "new": true
+              },
+              "note": {
+                "old": "学习阶段或学位标签未明确获授；学习结束年月不是授位日期，导师标签不等于正式学位论文指导教师。",
+                "new": "个人简介明确“教育学博士”，与唯一华东师范大学教育学原理博士经历对应，记录博士学位；学习时段2005.09—2008.06照录，未单独核验授位年月或原学位证书。"
+              },
+              "degree": {
+                "old": "博士",
+                "new": "教育学博士"
+              },
+              "include_in_degree_filters": {
+                "old": false,
+                "new": true
+              },
+              "include_in_education_filters": {
+                "old": false,
+                "new": true
+              },
+              "source_degree": {
+                "old": null,
+                "new": "博士"
+              },
+              "source_canonical_event_kind": {
+                "old": null,
+                "new": "degree_study_label_award_unconfirmed"
+              },
+              "source_include_in_degree_filters": {
+                "old": null,
+                "new": false
+              },
+              "source_include_in_education_filters": {
+                "old": null,
+                "new": false
+              },
+              "source_note": {
+                "old": null,
+                "new": "学习阶段或学位标签未明确获授；学习结束年月不是授位日期，导师标签不等于正式学位论文指导教师。"
+              },
+              "degree_award_evidence": {
+                "old": null,
+                "new": {
+                  "source_id": "hust-liwei-education-profile",
+                  "source_url": "https://jky.hust.edu.cn/info/1112/4162.htm",
+                  "source_excerpt_sha256": "541ee9e6bb5a4a4477e785b2bb6bb709cdba77db1932673fa0b5d0813f0bb0d0",
+                  "source_locator": "对应职业条目／教育学博士，教授，华中科技大学教科院博士生导师"
+                }
+              }
+            },
+            "no_award_dates_inferred": true
+          },
+          {
+            "person_id": "hust-dengshiming",
+            "event_id": "hust-dengshiming-education-1",
+            "json_pointer": "/people/2/education/0",
+            "source_candidate_sha256": "39fd234b6b7fbb4637526b3b09587e42b61e1464e85d0808d6b5a51cc77fab21",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "evidence": {
+              "source_id": "hust-dengshiming-profile",
+              "source_url": "https://cm.hust.edu.cn/info/1755/24525.htm",
+              "source_excerpt_sha256": "583d634e1fbc341928a62326c92d9eb094c3884fe4cc4b54dd45995eea28d5c8",
+              "source_locator": "对应职业条目／学士：北京大学物理系和计算机系双学士(1995)",
+              "observed_at": "2026-10-25T03:22:31Z"
+            },
+            "changed_fields": {
+              "event_kind": {
+                "old": "study_or_degree_label",
+                "new": "degree"
+              },
+              "degree_awarded": {
+                "old": null,
+                "new": true
+              },
+              "note": {
+                "old": "双学士为原文标签，保留一个学习阶段及两个系；未明确获得或授予，授位null，不计两个已获学位；年份未注明是学习结束还是授位年。",
+                "new": "原文明确“北京大学物理系和计算机系双学士(1995)”具体双学士称谓，记录为一个含双学士信息的教育事件，不拆成两个事件；1995仅来源所列年份，不填为独立授位日期，原学位证书未核。"
+              },
+              "include_in_degree_filters": {
+                "old": false,
+                "new": true
+              },
+              "include_in_education_filters": {
+                "old": false,
+                "new": true
+              },
+              "source_degree": {
+                "old": null,
+                "new": "双学士"
+              },
+              "source_canonical_event_kind": {
+                "old": null,
+                "new": "study_or_degree_label"
+              },
+              "source_include_in_degree_filters": {
+                "old": null,
+                "new": false
+              },
+              "source_include_in_education_filters": {
+                "old": null,
+                "new": false
+              },
+              "source_note": {
+                "old": null,
+                "new": "双学士为原文标签，保留一个学习阶段及两个系；未明确获得或授予，授位null，不计两个已获学位；年份未注明是学习结束还是授位年。"
+              },
+              "degree_award_evidence": {
+                "old": null,
+                "new": {
+                  "source_id": "hust-dengshiming-profile",
+                  "source_url": "https://cm.hust.edu.cn/info/1755/24525.htm",
+                  "source_excerpt_sha256": "583d634e1fbc341928a62326c92d9eb094c3884fe4cc4b54dd45995eea28d5c8",
+                  "source_locator": "对应职业条目／学士：北京大学物理系和计算机系双学士(1995)",
+                  "observed_at": "2026-10-25T03:22:31Z"
+                }
+              }
+            },
+            "no_award_dates_inferred": true
+          }
+        ],
+        "delta": [
+          {
+            "json_pointer": "/people/0/education/2/include_in_degree_filters",
+            "old_present": true,
+            "new_present": true,
+            "old": false,
+            "new": true
+          },
+          {
+            "json_pointer": "/people/0/education/2/include_in_education_filters",
+            "old_present": true,
+            "new_present": true,
+            "old": false,
+            "new": true
+          },
+          {
+            "json_pointer": "/people/0/education/2/source_include_in_degree_filters",
+            "old_present": false,
+            "new_present": true,
+            "new": false
+          },
+          {
+            "json_pointer": "/people/0/education/2/degree_award_evidence",
+            "old_present": false,
+            "new_present": true,
+            "new": {
+              "source_id": "hust-liwei-education-profile",
+              "source_url": "https://jky.hust.edu.cn/info/1112/4162.htm",
+              "source_excerpt_sha256": "541ee9e6bb5a4a4477e785b2bb6bb709cdba77db1932673fa0b5d0813f0bb0d0",
+              "source_locator": "对应职业条目／教育学博士，教授，华中科技大学教科院博士生导师"
+            }
+          },
+          {
+            "json_pointer": "/people/0/education/2/degree_awarded",
+            "old_present": true,
+            "new_present": true,
+            "old": null,
+            "new": true
+          },
+          {
+            "json_pointer": "/people/0/education/2/note",
+            "old_present": true,
+            "new_present": true,
+            "old": "学习阶段或学位标签未明确获授；学习结束年月不是授位日期，导师标签不等于正式学位论文指导教师。",
+            "new": "个人简介明确“教育学博士”，与唯一华东师范大学教育学原理博士经历对应，记录博士学位；学习时段2005.09—2008.06照录，未单独核验授位年月或原学位证书。"
+          },
+          {
+            "json_pointer": "/people/0/education/2/event_kind",
+            "old_present": true,
+            "new_present": true,
+            "old": "degree_study_label_award_unconfirmed",
+            "new": "degree"
+          },
+          {
+            "json_pointer": "/people/0/education/2/source_note",
+            "old_present": false,
+            "new_present": true,
+            "new": "学习阶段或学位标签未明确获授；学习结束年月不是授位日期，导师标签不等于正式学位论文指导教师。"
+          },
+          {
+            "json_pointer": "/people/0/education/2/source_canonical_event_kind",
+            "old_present": false,
+            "new_present": true,
+            "new": "degree_study_label_award_unconfirmed"
+          },
+          {
+            "json_pointer": "/people/0/education/2/degree",
+            "old_present": true,
+            "new_present": true,
+            "old": "博士",
+            "new": "教育学博士"
+          },
+          {
+            "json_pointer": "/people/0/education/2/source_include_in_education_filters",
+            "old_present": false,
+            "new_present": true,
+            "new": false
+          },
+          {
+            "json_pointer": "/people/0/education/2/source_degree",
+            "old_present": false,
+            "new_present": true,
+            "new": "博士"
+          },
+          {
+            "json_pointer": "/people/0/education/2/source_degree_awarded",
+            "old_present": false,
+            "new_present": true,
+            "new": null
+          },
+          {
+            "json_pointer": "/people/2/education/0/include_in_degree_filters",
+            "old_present": true,
+            "new_present": true,
+            "old": false,
+            "new": true
+          },
+          {
+            "json_pointer": "/people/2/education/0/include_in_education_filters",
+            "old_present": true,
+            "new_present": true,
+            "old": false,
+            "new": true
+          },
+          {
+            "json_pointer": "/people/2/education/0/degree_awarded",
+            "old_present": true,
+            "new_present": true,
+            "old": null,
+            "new": true
+          },
+          {
+            "json_pointer": "/people/2/education/0/note",
+            "old_present": true,
+            "new_present": true,
+            "old": "双学士为原文标签，保留一个学习阶段及两个系；未明确获得或授予，授位null，不计两个已获学位；年份未注明是学习结束还是授位年。",
+            "new": "原文明确“北京大学物理系和计算机系双学士(1995)”具体双学士称谓，记录为一个含双学士信息的教育事件，不拆成两个事件；1995仅来源所列年份，不填为独立授位日期，原学位证书未核。"
+          },
+          {
+            "json_pointer": "/people/2/education/0/source_canonical_event_kind",
+            "old_present": false,
+            "new_present": true,
+            "new": "study_or_degree_label"
+          },
+          {
+            "json_pointer": "/people/2/education/0/source_degree_awarded",
+            "old_present": false,
+            "new_present": true,
+            "new": null
+          },
+          {
+            "json_pointer": "/people/2/education/0/source_include_in_degree_filters",
+            "old_present": false,
+            "new_present": true,
+            "new": false
+          },
+          {
+            "json_pointer": "/people/2/education/0/degree_award_evidence",
+            "old_present": false,
+            "new_present": true,
+            "new": {
+              "source_id": "hust-dengshiming-profile",
+              "source_url": "https://cm.hust.edu.cn/info/1755/24525.htm",
+              "source_excerpt_sha256": "583d634e1fbc341928a62326c92d9eb094c3884fe4cc4b54dd45995eea28d5c8",
+              "source_locator": "对应职业条目／学士：北京大学物理系和计算机系双学士(1995)",
+              "observed_at": "2026-10-25T03:22:31Z"
+            }
+          },
+          {
+            "json_pointer": "/people/2/education/0/event_kind",
+            "old_present": true,
+            "new_present": true,
+            "old": "study_or_degree_label",
+            "new": "degree"
+          },
+          {
+            "json_pointer": "/people/2/education/0/source_note",
+            "old_present": false,
+            "new_present": true,
+            "new": "双学士为原文标签，保留一个学习阶段及两个系；未明确获得或授予，授位null，不计两个已获学位；年份未注明是学习结束还是授位年。"
+          },
+          {
+            "json_pointer": "/people/2/education/0/source_include_in_education_filters",
+            "old_present": false,
+            "new_present": true,
+            "new": false
+          },
+          {
+            "json_pointer": "/people/2/education/0/source_degree",
+            "old_present": false,
+            "new_present": true,
+            "new": "双学士"
+          },
+          {
+            "json_pointer": "/people/2/education/1/note",
+            "old_present": true,
+            "new_present": true,
+            "old": "只有博士标签与年份，未明确获得或授予；授位null，不把2003自动赋给授位或学习结束。",
+            "new": "已留存文字为“博士：加州大学伯克利分校工业工程和运筹学专业(2003)”，未保留足以区分博士学习阶段与已获学位的额外语境，授位状态未知；2003仅来源年份，不补授位或学习结束日期。"
+          },
+          {
+            "json_pointer": "/people/2/education/1/source_note",
+            "old_present": false,
+            "new_present": true,
+            "new": "只有博士标签与年份，未明确获得或授予；授位null，不把2003自动赋给授位或学习结束。"
+          }
+        ],
+        "inverse_restores_preclassification_payload": true,
+        "preclassification_payload_sha256": "e981e323ae92e7f19220d2df082055bcf8d1c9b25432342013d498af64a7abf6",
+        "scope": "仅两项来源明确学位信息升级；邓博士仍未知，未宣称存在原网页专门学位栏；不改原包/quotehash、授位年日、关系或人数。"
+      }
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧749事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
