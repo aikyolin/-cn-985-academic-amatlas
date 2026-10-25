@@ -324,6 +324,20 @@ class CurrentRelease(unittest.TestCase):
                 after = "${esc(a.institution||'任职机构未核实')}".encode()
                 self.assertEqual(expected.count(before), 1)
                 expected = expected.replace(before, after)
+            # Approved UI-only notice: exact helper and two insertion sites; data unchanged.
+            if rel == 'site/app.js':
+                before = 'function nationalHome(){'.encode()
+                after = 'function dataVersionNotice(){return `<p class="notice data-version">当前已收录 ${(db.people||[]).length} 份人物资料 · ${(db.pending_people||[]).length} 条待完善记录。数据版本：${esc(db.build_id||\'版本未标注\')}。具体来源检索时间见各记录；版本编号不是检索日期或发布时间。</p>`}\nfunction nationalHome(){'.encode()
+                self.assertEqual(expected.count(before), 1)
+                expected = expected.replace(before, after)
+                before = '从学校与院系，走进学者的求学经历与师承关系。</p>'.encode()
+                after = '从学校与院系，走进学者的求学经历与师承关系。</p>${dataVersionNotice()}'.encode()
+                self.assertEqual(expected.count(before), 1)
+                expected = expected.replace(before, after)
+                before = '可追溯，比填满每一个空格更重要。</p>'.encode()
+                after = '可追溯，比填满每一个空格更重要。</p>${dataVersionNotice()}'.encode()
+                self.assertEqual(expected.count(before), 1)
+                expected = expected.replace(before, after)
             # Approved representation-only optimization: the actual builder's
             # site atlas writer is compact UTF-8. Every other engine byte stays pinned.
             if rel == 'scripts/build.py':
@@ -333,7 +347,7 @@ class CurrentRelease(unittest.TestCase):
                 expected = expected.replace(before, after)
             asset_token_counts = {'site/app.js': 3, 'site/rosters.js': 1, 'site/index.html': 2}
             if rel in asset_token_counts:
-                before, after = b'source-dates-20261024', b'appointment-institution-20261025'
+                before, after = b'source-dates-20261024', b'data-version-clarity-20261025'
                 self.assertEqual(expected.count(before), asset_token_counts[rel])
                 expected = expected.replace(before, after)
             self.assertEqual((ROOT / rel).read_bytes(), expected, rel)

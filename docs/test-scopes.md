@@ -52,3 +52,6 @@ JSON紧凑表示单独范围见[表示形式优化](../progress/compact-json-rep
 山东大学十二人采用第十二份独立固定来源映射；原十一份和全部历史pins/fixture/helper、compact live表示测试保持。725前缀及全root守恒，真实profile/lineage、原角色与历史职位范围、来源overlay、全表导出与旧成员行序继续检查；不重建隐私最小化v2已删元数据。
 
 中南大学十二人采用第十三份独立固定来源映射；原十二映射及全部旧pins/fixture/helper/compact live测试保持。737前缀及全root守恒，当前schema/metadata、安全、profile/lineage、全表导出和旧成员行序实时执行。原到期聘任、职称冲突、明确历史角色与未知现职分别保留；王淼化学与未纳入的王苗艺术不混身份。
+
+## 数据版本提示（独立UI变更）
+主页和数据说明显示当前全库数量与实际数据build_id；来源检索日期仍以逐条记录为准，不提供推断发布时间。tests/current-version-clarity.test.js验证实际app HTML、缺失版本和转义。live runtime守卫仅允许精确提示函数、两处调用及6资产token变化；数据、233XLSX与CSV全字节不变，全部既有live测试保留。
