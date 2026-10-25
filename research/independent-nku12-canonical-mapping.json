@@ -1,0 +1,1959 @@
+{
+  "schema_version": "independent-nku12-canonical-mapping-1",
+  "baseline_commit": "1d976e347aef9027ce0c8079c5e479268317da4a",
+  "new_people": [
+    "nku-lingfeng",
+    "nku-zhangjiayu-philosophy",
+    "nku-luzhaoyong",
+    "nku-xuexue",
+    "nku-yangzhenhong",
+    "nku-zhangzhihong",
+    "nku-caishengxia",
+    "nku-maodaqing-medical",
+    "nku-guanyongqiang-economic-history",
+    "nankai-haolan",
+    "nankai-luozhenya",
+    "nankai-liulili"
+  ],
+  "new_org_ids": [
+    "nku-physics",
+    "nku-philosophy",
+    "nku-pharmacy",
+    "nku-history",
+    "nku-zfxy",
+    "nku-medical",
+    "nku-literature",
+    "nku-chinese-historical"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 8,
+    "education": 45,
+    "appointments": 23,
+    "publications": 24,
+    "mentors": 12,
+    "teaching": 11,
+    "degree_true": 17,
+    "degree_false": 16,
+    "degree_unknown": 12
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "physics-philosophy-pharmacy",
+      "canonical_payload_sha256": "87170eb09ae4b91d18f182cec13ddb1c803b2aebe9541e0b95cae617c6abe26f",
+      "field_mapping_sha256": "80a907ce301eb8b2e38fde594d2c6c8b8d089e359f2025a107a1abf207d7f6a2",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "history-government-medical-economics",
+      "canonical_payload_sha256": "4c2bb56833ecc2cfb0b40e1090054963019320bea07c3c7d7509fd0aea274e75",
+      "field_mapping_sha256": "a79c4d947ced24ae3a98c6e6be273da5380b590568cb55f27fcbdb244ac51345",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "literature",
+      "canonical_payload_sha256": "819c5e17e2c6ba5c865ad043cfe967ff0520eeac8a245e46aa5354b58aaa3177",
+      "field_mapping_sha256": "ef77eead41eb6762939717bd32820780c01fb824abaf00de576dd707de9ae0ee",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "baseline_commit": "1d976e347aef9027ce0c8079c5e479268317da4a",
+      "baseline_people": 689,
+      "payload_sha256": "87170eb09ae4b91d18f182cec13ddb1c803b2aebe9541e0b95cae617c6abe26f",
+      "people": [
+        {
+          "person_id": "nku-lingfeng",
+          "source_candidate_sha256": "9a8c8d6c2dc3452205edfae7cbbcb8985eca21d7272f77fa315aaf738cecb5e2",
+          "source_review_sha256": "fa122c3354f84907d4387ab8aecac62a859345db2ff3e9060b598ad48c82e3ee",
+          "counts": {
+            "education": 4,
+            "mentors": 2,
+            "professional_research_advisors": 1,
+            "appointments": 2,
+            "publications": 2,
+            "teaching": 4
+          },
+          "visible_limits": [
+            "当前人事未知，历史职业角色保留，不代表离职。",
+            "学习与授位时间分别保留，未知不补；博士后/研究深造非额外学位。",
+            "书目仅选录官网条目；出版者元数据和全文未核。",
+            "两个同区间B.S.标签仅两专业学习记录，不是两项已获学位。",
+            "2022博士授位年明确，2022-05只学习终月；机械工程与流体力学为两处原标签，不增学位。",
+            "Eva Kanso博士阶段、Janna Nawroth博士后合作、Srinivas Bettadpur科研助理指导分列，最后一项只属职业指导。",
+            "物理学院与物理科学学院分源别名，招生专业不是所属系；原生http与已读https未核协议跳转。",
+            "首作认证跳转停止，第二作技术不可用且恢复后仍未核；原生链接DOI未升已核DOI。"
+          ]
+        },
+        {
+          "person_id": "nku-zhangjiayu-philosophy",
+          "source_candidate_sha256": "e45cc4e1b4e1e21dfaa5bffa88c828a07715aa0ac8f0f282bb85bf6885bf82ca",
+          "source_review_sha256": "5a7fc9f035c28b0522cd7d8e62ed029fd3d69b56073f256bd985ee16f807b737",
+          "counts": {
+            "education": 4,
+            "mentors": 0,
+            "professional_research_advisors": 0,
+            "appointments": 2,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知，历史职业角色保留，不代表离职。",
+            "学习与授位时间分别保留，未知不补；博士后/研究深造非额外学位。",
+            "书目仅选录官网条目；出版者元数据和全文未核。",
+            "哲学院归属来自个人工作履历；目录阅读器与浏览器均仅外壳，姓名/href未核，非缺席证据。",
+            "外国哲学为专业标签，不造行政系；心理学院不推心理学专业。",
+            "2014/2017/2021为明确授位年，具体日期与学习区间未知。",
+            "2021-12至2024-12助理研究员（博士后）与教育行同一经历，教育不重复新增。",
+            "两篇未给作者名单，不推独著或完整署名。"
+          ]
+        },
+        {
+          "person_id": "nku-luzhaoyong",
+          "source_candidate_sha256": "f8b0ea609d4632a5a26c873f1650f9f0d54c4c1ae75faa5c6e24ae66729cb698",
+          "source_review_sha256": "1114384a8ae00c98ba805b3888d0a31f5da42e43841300bdff93cb45892b94c3",
+          "counts": {
+            "education": 2,
+            "mentors": 2,
+            "professional_research_advisors": 0,
+            "appointments": 1,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知，历史职业角色保留，不代表离职。",
+            "学习与授位时间分别保留，未知不补；博士后/研究深造非额外学位。",
+            "书目仅选录官网条目；出版者元数据和全文未核。",
+            "本科、硕士经历未披露，不能从博士倒推。",
+            "博士毕业月明确，但授位日期、开始时间和当年专业未明示。",
+            "两位求学师从者具体阶段、时段和正式学位论文导师身份未证实。",
+            "博士后课题组负责人不提升为明确个人指导关系。",
+            "学院以下系所归属未单核；实验室与学院为来源并列，不推行政父子。",
+            "现职、网页发布日期和实际更新时间未知；书目未经出版者核验。"
+          ]
+        },
+        {
+          "person_id": "nku-xuexue",
+          "source_candidate_sha256": "f8b0ea609d4632a5a26c873f1650f9f0d54c4c1ae75faa5c6e24ae66729cb698",
+          "source_review_sha256": "1114384a8ae00c98ba805b3888d0a31f5da42e43841300bdff93cb45892b94c3",
+          "counts": {
+            "education": 2,
+            "mentors": 1,
+            "professional_research_advisors": 1,
+            "appointments": 2,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知，历史职业角色保留，不代表离职。",
+            "学习与授位时间分别保留，未知不补；博士后/研究深造非额外学位。",
+            "书目仅选录官网条目；出版者元数据和全文未核。",
+            "本科、硕士经历及博士求学时间未披露；不倒推学位或年限。",
+            "公派深造的正式访问身份、年月和是否学位联合培养未明示。",
+            "2014助理研究员不改写为博士后；合作导师不改写为正式论文导师。",
+            "来源称美国纽约大学Nathan Kline Institute情志病研究中心，复合名称不拆解为经核实的法律机构关系。",
+            "学院以下系所归属未单核；实验室与学院为来源并列，不推行政父子。",
+            "现职、页面发布日期与更新时间未知；官网书目未核出版者或全文。"
+          ]
+        }
+      ],
+      "relationship_conservation": {
+        "original_source_relationships": 7,
+        "typed_mentors": 5,
+        "professional_research_advisors": 2,
+        "separate_context": "K.C. Nicolaou仅原博士后课题组负责人背景，不是新增个人指导关系。"
+      },
+      "public_field_check": {
+        "locator_handling": "原定位仅私有追踪；公开使用来源URL和语义字段",
+        "source_windows": "窗口保留，不生成精确秒",
+        "relationship_bindings": "职业指导只绑定职业任职；未知阶段不绑定学位"
+      }
+    },
+    {
+      "schema_version": "nku12-history-government-medical-economics-mapping-1",
+      "published_baseline_commit": "1d976e347aef9027ce0c8079c5e479268317da4a",
+      "published_baseline_people": 689,
+      "people": [
+        "nku-yangzhenhong",
+        "nku-zhangzhihong",
+        "nku-caishengxia",
+        "nku-maodaqing-medical",
+        "nku-guanyongqiang-economic-history"
+      ],
+      "input_hashes": {
+        "nku-yangzhenhong": {
+          "source_candidate_sha256": "b8a34d7a177697ade4d5eddaf919a16725aa34771b6123dc2338346339344717",
+          "review_sha256": "330d8f12889a4cbfeb903c34449c8265cde34a3ca3fb11439d7cf6dac31da93f"
+        },
+        "nku-zhangzhihong": {
+          "source_candidate_sha256": "908aaececb57216e06ef1d3032285568d5f4770abd28095c6801d5a8bb0bb733",
+          "review_sha256": "fd0a0382be8f877d12aa1db42a5d10c0c3abd7e86120edce12ce85914bc95ae1"
+        },
+        "nku-caishengxia": {
+          "source_candidate_sha256": "908aaececb57216e06ef1d3032285568d5f4770abd28095c6801d5a8bb0bb733",
+          "review_sha256": "fd0a0382be8f877d12aa1db42a5d10c0c3abd7e86120edce12ce85914bc95ae1"
+        },
+        "nku-maodaqing-medical": {
+          "source_candidate_sha256": "4c9dc6f5f8f7f1132464980e6e4c4d5cd0a0d138416cc908dc224b8fa3ecf4ac",
+          "review_sha256": "069b6a095a901eb09b55fde72bc9731a337816bbb762e7c8596894b19b3a34b6"
+        },
+        "nku-guanyongqiang-economic-history": {
+          "source_candidate_sha256": "4c9dc6f5f8f7f1132464980e6e4c4d5cd0a0d138416cc908dc224b8fa3ecf4ac",
+          "review_sha256": "069b6a095a901eb09b55fde72bc9731a337816bbb762e7c8596894b19b3a34b6"
+        }
+      },
+      "overlay_applicability": "148无overlay；189同审190王辞晓作者→主编及219同审220山东组织分类修订，均不适用本组人物。精确文件hash已核、未套操作。",
+      "org_mapping": {
+        "new_nodes": [
+          "nku-history",
+          "nku-zfxy",
+          "nku-medical"
+        ],
+        "aliases": [
+          {
+            "source_id": "nku-zfxy-public-administration",
+            "canonical_id": "nku-zfxy",
+            "basis": "人员归入原文周恩来政府管理学院展示节点；行政管理系标签另保留，不新增法律父级断言。"
+          },
+          {
+            "source_id": "nku-economic-research-institute",
+            "canonical_id": "nku-economics",
+            "basis": "既有节点与新来源均南开大学经济学院，官方economics.nankai.edu.cn机构一致；新源个人简介明示“南开大学经济学院经济研究所教授”。原全职目录qzjs与新按系所目录axs为同学院不同栏目，不声称URL字节相同或新院覆盖。旧节点所有属性包括parent=nku原样不改，新来源法定parent未核状态独立保留。"
+          }
+        ]
+      },
+      "counts": {
+        "education": 21,
+        "appointments": 15,
+        "mentors": 4,
+        "publications": 10,
+        "teaching": 7
+      },
+      "semantic_limits": {
+        "nku-yangzhenhong": [
+          "当前人事与退休状态未独立核实；目录/至今/现任不作实时认证，导航和当前教师计数关闭。",
+          "必要职业摘录非完整网页、HTTP或论文原件；观察依据和精度按原记录，未外核书目出版元数据或全文。",
+          "学历获授、学习区间和授位日期分别保留；本人博导/硕导资格不用于生成本人的导师。",
+          "北京大学本科硕士共用1981-09至1988-07区间；分别明确获授，但各阶段起止和授位日未知，不把1988当本科毕业年。",
+          "主个人URL为学院页、详细事实来源为社会史中心页，各自独立保留；目录原生href读取不等于在恢复步骤实际打开目标。",
+          "2010年杭州大学出版社按原书目保留未校正；课程及明确研究方向正文未知，不由作品名推方向。",
+          "本批王利华的学位日期、农科院、访问及王乾书目冲突不属于杨振红，未套用。"
+        ],
+        "nku-zhangzhihong": [
+          "当前人事与退休状态未独立核实；目录/至今/现任不作实时认证，导航和当前教师计数关闭。",
+          "必要职业摘录非完整网页、HTTP或论文原件；观察依据和精度按原记录，未外核书目出版元数据或全文。",
+          "学历获授、学习区间和授位日期分别保留；本人博导/硕导资格不用于生成本人的导师。",
+          "三授位true由“教育经历及获得学位”表头限定三条，不只靠博士/硕士标签；具体授位时点未知。",
+          "美国乔治华盛达大学按源字保留不更正；毛里和子只早稻田访问阶段指导，正式论文导师未知。",
+          "MPA教育中心和公共管理教育中心两个原标签不自动归并或推更名；2003至2006岗位未知，不回填副教授。",
+          "副主编与另项独著角色各按源；作者/编者姓名串未知；两组课程含合上，不当独立主讲。"
+        ],
+        "nku-caishengxia": [
+          "当前人事与退休状态未独立核实；目录/至今/现任不作实时认证，导航和当前教师计数关闭。",
+          "必要职业摘录非完整网页、HTTP或论文原件；观察依据和精度按原记录，未外核书目出版元数据或全文。",
+          "学历获授、学习区间和授位日期分别保留；本人博导/硕导资格不用于生成本人的导师。",
+          "三项明确获学位但授位日期未知；2005起工作不回填副教授起任，系主任无日期。",
+          "专著不推独著，参编不推全书作者；完整作者和编者姓名串未知。",
+          "课程原列表未区分层级，保留一组，不逐门猜本硕。"
+        ],
+        "nku-maodaqing-medical": [
+          "当前人事与退休状态未独立核实；目录/至今/现任不作实时认证，导航和当前教师计数关闭。",
+          "必要职业摘录非完整网页、HTTP或论文原件；观察依据和精度按原记录，未外核书目出版元数据或全文。",
+          "学历获授、学习区间和授位日期分别保留；本人博导/硕导资格不用于生成本人的导师。",
+          "四学习/学位标签都未明确获授；比利时鲁汶大学不强行映射英文法定实体，学习终月不当授位月。",
+          "两篇2024论文DQ Mao均原名单第7位，仅沿用官网书目语境，不核英文作者实体、通讯或共同第一作者。"
+        ],
+        "nku-guanyongqiang-economic-history": [
+          "当前人事与退休状态未独立核实；目录/至今/现任不作实时认证，导航和当前教师计数关闭。",
+          "必要职业摘录非完整网页、HTTP或论文原件；观察依据和精度按原记录，未外核书目出版元数据或全文。",
+          "学历获授、学习区间和授位日期分别保留；本人博导/硕导资格不用于生成本人的导师。",
+          "本科及硕博研究生仅学习标签，授位unknown；硕博2003-09至2009-06共一事件，不拆造两段日期或两获授。",
+          "张东刚仅共享硕博阶段导师；Kenneth Pomeranz及Johanna Bockman分别对应两访学合作导师，不升级学位论文关系。",
+          "2007联合培养/2019富布赖特VRS两访学为非学位事件，不声称访问院校授位；项目名按源保留。",
+          "经济学院为既有机构，复用原节点；经济研究所仅原归属标签保留，不推其法定行政父级或另造同义学院。"
+        ]
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/nku-yangzhenhong-ccsh-profile/excerpts/0/quote",
+          "sha256": "052eaa174fd1d5762c9a6b6295068076a2552cdd179d235988a4a570ee6f3aab"
+        },
+        {
+          "path": "/sources/nku-yangzhenhong-ccsh-profile/excerpts/1/quote",
+          "sha256": "634140df8063bcec5cb7ad3528d539348e19805d894a945a2b2684d7e4a4fb20"
+        },
+        {
+          "path": "/sources/nku-yangzhenhong-ccsh-profile/excerpts/2/quote",
+          "sha256": "e9e94b07f32bf21b9c43cd2f525f1cb6d1aa17f9e2a6972a9e31bf1e94b209f4"
+        },
+        {
+          "path": "/sources/nku-yangzhenhong-ccsh-profile/excerpts/3/quote",
+          "sha256": "0bf1a26ea6946a190417f938feebe4cec020f9bd138d3a4bae377e94b8348a02"
+        },
+        {
+          "path": "/sources/nku-yangzhenhong-ccsh-profile/excerpts/4/quote",
+          "sha256": "0516bb32303b17bf112aa92954240a8ede9d7f8fa998c96ea465307dc533a54d"
+        },
+        {
+          "path": "/sources/nku-yangzhenhong-history-profile/excerpts/0/quote",
+          "sha256": "73d0f8e4f4d45ff1d564d27b74413afbb51a60e9dcd115c993cb62b7c84138da"
+        },
+        {
+          "path": "/sources/nku-yangzhenhong-history-profile/excerpts/1/quote",
+          "sha256": "8b221d4ca99663342c83a08db3803df65030876fdafed6e85c40d65d4b02415a"
+        },
+        {
+          "path": "/sources/nku-yangzhenhong-history-profile/excerpts/2/quote",
+          "sha256": "8202a709c3c24d3baeef57e0640ae5b8e78a324f94f1ba06df6b75f17ce84001"
+        },
+        {
+          "path": "/sources/nku-yangzhenhong-history-profile/excerpts/3/quote",
+          "sha256": "ef72282306417850735d3891bb20c71dd5a4300d2d701dd82e50037644a30ffb"
+        },
+        {
+          "path": "/sources/nku-history-directory/excerpts/0/quote",
+          "sha256": "d265ed90099cf5c2bcb17872239052505705f085ba2d3b009817e66e0840aab9"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/0/quote",
+          "sha256": "6bb0f99082fe5c9911211827c58c139047f09df6c0bfb2d009817a5931ec5d72"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/1/quote",
+          "sha256": "89ef930408de7e39ed8d12df1b0abff55ea5fc12fa23d3bebc21784e1e56353a"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/2/quote",
+          "sha256": "08ce5167f1479ea46048f9cd1a32cb41138ee92700df0ab20748700daee2b789"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/3/quote",
+          "sha256": "0b651f3c2fa0bb38c0ea6c49957b54f06c7f91e0fb40326321a76aad6d847e1a"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/4/quote",
+          "sha256": "eaabe12ceaa42cf7085409d5bf369e34070df953729552a5d43cf6279c0d8890"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/5/quote",
+          "sha256": "31b21213bfef2959b90d9bcf1bf670d80359894af7aaeab10c37d1e9fcf9becd"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/6/quote",
+          "sha256": "b8a4bff99821854a261c5ee410af252ec7368ff73e4ca7094f64b4184a558ad8"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/7/quote",
+          "sha256": "b0a7d6d9beac5d40b20562b1c70ae82ba595e60de70292e4556a5b223b8caf54"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/8/quote",
+          "sha256": "86fdb115d96d6e41ad17a5196e291a298f20ff0fbd78b2ed51430e1f67b36e78"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/9/quote",
+          "sha256": "8546646ae88f4fbd8ec991df41c0c2f62f22d93ed9606e4e1614a9f36599abd9"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/10/quote",
+          "sha256": "653d4d4c480ff9927c4266621e3d3baf9df8ec76ac076a1c60effe64213f18f5"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/11/quote",
+          "sha256": "a2603814811f7ea1699cb5aef446547134ee666e9ee20cae78a970af4991fa50"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/12/quote",
+          "sha256": "8fd97bc17f340d400a9b9cb8ba283b59ca8e6ff470ead8979fe0e1b58fb803fb"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/13/quote",
+          "sha256": "2d05c70ed93c0b1c3091cf4fc97899ccffda218b91ee1d55299e3194577b7859"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/14/quote",
+          "sha256": "26abbc1fd208593d5991d90e324799baf808d87a8dad9a43cfdd3a867526e631"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/15/quote",
+          "sha256": "4e03cc944757cbfbfd0f398212737ed401928091d142d022a620e585d01f0aee"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/16/quote",
+          "sha256": "bd9e339e9461c31fa61046f9822cb415a4c35cd4cd99dc2b71c8a573125dc80f"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/17/quote",
+          "sha256": "e8fde703fee7715f8ffbb70133795bf90acfadac7d1e38e77a06664c24390edd"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/18/quote",
+          "sha256": "c11da97e2e6ce1a8d52c50ca459eb8ee06ff605b6c186ab4d6190bf9b1b3aeeb"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/19/quote",
+          "sha256": "c113cc30d35fbfb618bac9de1ae0df3f0d3fe468df2820593b3aeda0b505c20b"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/0/quote",
+          "sha256": "603c9681ded5aeecbdeff9a822e9af9579e7b2792f8680fb3d8d29c6d0ff22a3"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/1/quote",
+          "sha256": "87b1eb332560183c74916e8a35c5ea24f6b481496066ca5e00bcf2576f698cb0"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/2/quote",
+          "sha256": "428e1f6e72a95d73d69ed1b8c53e28e191bb2aff722c71c60989dbdc305bc512"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/3/quote",
+          "sha256": "de717216513cc0f62f39c18346e9a71bb874356d1a404a1f1c7bcfc9f01dd037"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/4/quote",
+          "sha256": "a4b78d387fe9ff69090210ac0c391922425ec5587c066a96e3f2e5db08da7c75"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/5/quote",
+          "sha256": "41202dce336301870b752112c29958c2aea503ccd1bf3a205c21c13aa27670e3"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/0/quote",
+          "sha256": "3f65a2775bed8e1664becb29abc55da9ead68a724e22899a2558325a8e520496"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/1/quote",
+          "sha256": "89ef930408de7e39ed8d12df1b0abff55ea5fc12fa23d3bebc21784e1e56353a"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/2/quote",
+          "sha256": "b5a02a8d271ea90c1f7d92ff0361c9876cbdb407d5a2c73298f6210660627319"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/3/quote",
+          "sha256": "0b651f3c2fa0bb38c0ea6c49957b54f06c7f91e0fb40326321a76aad6d847e1a"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/4/quote",
+          "sha256": "846575ba1fc722fdb8bb49d33fce0a1ab2fc82a1168d0c3d9c8b0e88af0ba16f"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/5/quote",
+          "sha256": "efbeeedb0ef41b32fb294845f52998cb2669c86b108dd5b94da419983f160428"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/6/quote",
+          "sha256": "5d62e1b43c90ed66e6342b64453d420ecaf14697430a347cbfa63eced76302b2"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/7/quote",
+          "sha256": "fbdcb83089442486659c9f8b9c2b45981d5bc637abf9e8b4a79eb07cacae2468"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/8/quote",
+          "sha256": "d7753ae982b7614ff3b797f6d21a40f4b74cf557497b67692e87470d622dd8d4"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/9/quote",
+          "sha256": "7ebb9b4f0f1bf83573e234b8ebbe27c555fced037983506cf83827f7013635c8"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/10/quote",
+          "sha256": "4330ce1a8031e01a56cfdb0defe16d8bb42282f36a70510e506abfcb3d7c9178"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/11/quote",
+          "sha256": "5a61da957e2bebbc21fb0f52662954f5efab888c75f07ac2131fbbb2f7e16891"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/12/quote",
+          "sha256": "95200e4ba07cfa23f16df54a6db39156ec2bc28117b64917d2a0cff6b5157880"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/13/quote",
+          "sha256": "15ac056073148dd8e50cbd1286ccf1dab5e178af199654276fb720cf526a06eb"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/0/quote",
+          "sha256": "6bb0f99082fe5c9911211827c58c139047f09df6c0bfb2d009817a5931ec5d72"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/1/quote",
+          "sha256": "89ef930408de7e39ed8d12df1b0abff55ea5fc12fa23d3bebc21784e1e56353a"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/2/quote",
+          "sha256": "08ce5167f1479ea46048f9cd1a32cb41138ee92700df0ab20748700daee2b789"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/3/quote",
+          "sha256": "0b651f3c2fa0bb38c0ea6c49957b54f06c7f91e0fb40326321a76aad6d847e1a"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/4/quote",
+          "sha256": "eaabe12ceaa42cf7085409d5bf369e34070df953729552a5d43cf6279c0d8890"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/5/quote",
+          "sha256": "31b21213bfef2959b90d9bcf1bf670d80359894af7aaeab10c37d1e9fcf9becd"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/6/quote",
+          "sha256": "b8a4bff99821854a261c5ee410af252ec7368ff73e4ca7094f64b4184a558ad8"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/7/quote",
+          "sha256": "b0a7d6d9beac5d40b20562b1c70ae82ba595e60de70292e4556a5b223b8caf54"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/8/quote",
+          "sha256": "86fdb115d96d6e41ad17a5196e291a298f20ff0fbd78b2ed51430e1f67b36e78"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/9/quote",
+          "sha256": "8546646ae88f4fbd8ec991df41c0c2f62f22d93ed9606e4e1614a9f36599abd9"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/10/quote",
+          "sha256": "653d4d4c480ff9927c4266621e3d3baf9df8ec76ac076a1c60effe64213f18f5"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/11/quote",
+          "sha256": "a2603814811f7ea1699cb5aef446547134ee666e9ee20cae78a970af4991fa50"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/12/quote",
+          "sha256": "8fd97bc17f340d400a9b9cb8ba283b59ca8e6ff470ead8979fe0e1b58fb803fb"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/13/quote",
+          "sha256": "2d05c70ed93c0b1c3091cf4fc97899ccffda218b91ee1d55299e3194577b7859"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/14/quote",
+          "sha256": "26abbc1fd208593d5991d90e324799baf808d87a8dad9a43cfdd3a867526e631"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/15/quote",
+          "sha256": "4e03cc944757cbfbfd0f398212737ed401928091d142d022a620e585d01f0aee"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/16/quote",
+          "sha256": "bd9e339e9461c31fa61046f9822cb415a4c35cd4cd99dc2b71c8a573125dc80f"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/17/quote",
+          "sha256": "e8fde703fee7715f8ffbb70133795bf90acfadac7d1e38e77a06664c24390edd"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/18/quote",
+          "sha256": "c11da97e2e6ce1a8d52c50ca459eb8ee06ff605b6c186ab4d6190bf9b1b3aeeb"
+        },
+        {
+          "path": "/sources/nku-zhangzhihong-profile/excerpts/19/quote",
+          "sha256": "c113cc30d35fbfb618bac9de1ae0df3f0d3fe468df2820593b3aeda0b505c20b"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/0/quote",
+          "sha256": "603c9681ded5aeecbdeff9a822e9af9579e7b2792f8680fb3d8d29c6d0ff22a3"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/1/quote",
+          "sha256": "87b1eb332560183c74916e8a35c5ea24f6b481496066ca5e00bcf2576f698cb0"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/2/quote",
+          "sha256": "428e1f6e72a95d73d69ed1b8c53e28e191bb2aff722c71c60989dbdc305bc512"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/3/quote",
+          "sha256": "de717216513cc0f62f39c18346e9a71bb874356d1a404a1f1c7bcfc9f01dd037"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/4/quote",
+          "sha256": "a4b78d387fe9ff69090210ac0c391922425ec5587c066a96e3f2e5db08da7c75"
+        },
+        {
+          "path": "/sources/nku-public-administration-directory/excerpts/5/quote",
+          "sha256": "41202dce336301870b752112c29958c2aea503ccd1bf3a205c21c13aa27670e3"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/0/quote",
+          "sha256": "3f65a2775bed8e1664becb29abc55da9ead68a724e22899a2558325a8e520496"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/1/quote",
+          "sha256": "89ef930408de7e39ed8d12df1b0abff55ea5fc12fa23d3bebc21784e1e56353a"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/2/quote",
+          "sha256": "b5a02a8d271ea90c1f7d92ff0361c9876cbdb407d5a2c73298f6210660627319"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/3/quote",
+          "sha256": "0b651f3c2fa0bb38c0ea6c49957b54f06c7f91e0fb40326321a76aad6d847e1a"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/4/quote",
+          "sha256": "846575ba1fc722fdb8bb49d33fce0a1ab2fc82a1168d0c3d9c8b0e88af0ba16f"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/5/quote",
+          "sha256": "efbeeedb0ef41b32fb294845f52998cb2669c86b108dd5b94da419983f160428"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/6/quote",
+          "sha256": "5d62e1b43c90ed66e6342b64453d420ecaf14697430a347cbfa63eced76302b2"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/7/quote",
+          "sha256": "fbdcb83089442486659c9f8b9c2b45981d5bc637abf9e8b4a79eb07cacae2468"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/8/quote",
+          "sha256": "d7753ae982b7614ff3b797f6d21a40f4b74cf557497b67692e87470d622dd8d4"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/9/quote",
+          "sha256": "7ebb9b4f0f1bf83573e234b8ebbe27c555fced037983506cf83827f7013635c8"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/10/quote",
+          "sha256": "4330ce1a8031e01a56cfdb0defe16d8bb42282f36a70510e506abfcb3d7c9178"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/11/quote",
+          "sha256": "5a61da957e2bebbc21fb0f52662954f5efab888c75f07ac2131fbbb2f7e16891"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/12/quote",
+          "sha256": "95200e4ba07cfa23f16df54a6db39156ec2bc28117b64917d2a0cff6b5157880"
+        },
+        {
+          "path": "/sources/nku-caishengxia-profile/excerpts/13/quote",
+          "sha256": "15ac056073148dd8e50cbd1286ccf1dab5e178af199654276fb720cf526a06eb"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/0/quote",
+          "sha256": "0030e2e2d618b19830fcb31d151b3e8b0e3e8251d5a99e09aa15c84df95c0c77"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/1/quote",
+          "sha256": "dffac20326c700a2c26e644809bb4e8d78e7f3421a4a741f2ed4acae12f7bca4"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/2/quote",
+          "sha256": "dff0dd2962de616e8dc803e13e6dc90658093b7b8fc57fbd24235530abc73d07"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/3/quote",
+          "sha256": "59faab120b31e5634e3821ea3978ef12a0d9c3d7f64f28ff07bec1ed3eb99886"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/4/quote",
+          "sha256": "1cf99f0533b25796c99416b6829d0fae7295c2163fd67d0a319960e109972220"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/5/quote",
+          "sha256": "97d5bf218b9256963dcd6049d8f96007441b4dc13961f1255f8e9d9fa357b8e9"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/6/quote",
+          "sha256": "4ab626753d967fc014c4f9032252c0b95fbf5128f332aa45629a191d66ddc713"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/7/quote",
+          "sha256": "78eaf1e3344db4c4f36a90282d086ed1e6c507cb28c2ff0a5ed63adf57ff2b4c"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/8/quote",
+          "sha256": "5c8bc4715003d649792015917debf324eb69276d07bc7de4ce6fd0caed4ed1ea"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/9/quote",
+          "sha256": "cab010b6c40c45e23d63c86eb11c6c8ab4d9a8c73897335fe003f64c551a013e"
+        },
+        {
+          "path": "/sources/nku219-mao-directory/excerpts/0/quote",
+          "sha256": "6a463f9c4abe3e5b0de2b065a34ace25f3fca956ab480f50d7cce8f8502cec90"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/0/quote",
+          "sha256": "b17e6dd1805ebf14f6b4ff13c2fe46f37ae33ca654e8433cd4ed47dbf61b4b83"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/1/quote",
+          "sha256": "0e3fd31869e0df4b37388497cb3e1640122bdd1014077f2e629bd23657ab997b"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/2/quote",
+          "sha256": "18dc89e108e5eee668835b4c97d7a4547a6a660ec9848e5b66ebd8d44ebc9a4f"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/3/quote",
+          "sha256": "16c2c1e4a8857491fc0bd204cdfa9a3fdb8db277f7331b355e013fef558a08ed"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/4/quote",
+          "sha256": "f036e1c062bd97f8fb1bd7640bef0aab74b18dc24308a3355674d4d6ca72b687"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/5/quote",
+          "sha256": "2fa747c93bbcd0cb5c656d9303f02c52f444f67550855aeb4343f29513cc966b"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/6/quote",
+          "sha256": "8a57f62a5a8f83eb93be8da5a03e0dd5c13a33855c00e128a5949266773e9cbd"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/7/quote",
+          "sha256": "0d34a7480f65de35d6cc87d038153df039fa29baa80b066b1102f5bddaa4daf7"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/8/quote",
+          "sha256": "8943a1d02b0182bc94a2f20beec3e073fbc108cf32b6e9b17742ccd313beb3a8"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/9/quote",
+          "sha256": "ba674189083e5f2efefaeb27c33bea2b12662e91d7e5de7ceec7cae264f65ce1"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/10/quote",
+          "sha256": "b6d2cf3fd7f7bdf9e21e9394b80300f930b691b05d6a2e7108143c7112993d3f"
+        },
+        {
+          "path": "/sources/nku219-guan-directory/excerpts/0/quote",
+          "sha256": "44dd33174d8115380d0c99060938aba2a70122bfac067abf301973224b8566db"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/0/quote",
+          "sha256": "0030e2e2d618b19830fcb31d151b3e8b0e3e8251d5a99e09aa15c84df95c0c77"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/1/quote",
+          "sha256": "dffac20326c700a2c26e644809bb4e8d78e7f3421a4a741f2ed4acae12f7bca4"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/2/quote",
+          "sha256": "dff0dd2962de616e8dc803e13e6dc90658093b7b8fc57fbd24235530abc73d07"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/3/quote",
+          "sha256": "59faab120b31e5634e3821ea3978ef12a0d9c3d7f64f28ff07bec1ed3eb99886"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/4/quote",
+          "sha256": "1cf99f0533b25796c99416b6829d0fae7295c2163fd67d0a319960e109972220"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/5/quote",
+          "sha256": "97d5bf218b9256963dcd6049d8f96007441b4dc13961f1255f8e9d9fa357b8e9"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/6/quote",
+          "sha256": "4ab626753d967fc014c4f9032252c0b95fbf5128f332aa45629a191d66ddc713"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/7/quote",
+          "sha256": "78eaf1e3344db4c4f36a90282d086ed1e6c507cb28c2ff0a5ed63adf57ff2b4c"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/8/quote",
+          "sha256": "5c8bc4715003d649792015917debf324eb69276d07bc7de4ce6fd0caed4ed1ea"
+        },
+        {
+          "path": "/sources/nku219-mao-profile/excerpts/9/quote",
+          "sha256": "cab010b6c40c45e23d63c86eb11c6c8ab4d9a8c73897335fe003f64c551a013e"
+        },
+        {
+          "path": "/sources/nku219-mao-directory/excerpts/0/quote",
+          "sha256": "6a463f9c4abe3e5b0de2b065a34ace25f3fca956ab480f50d7cce8f8502cec90"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/0/quote",
+          "sha256": "b17e6dd1805ebf14f6b4ff13c2fe46f37ae33ca654e8433cd4ed47dbf61b4b83"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/1/quote",
+          "sha256": "0e3fd31869e0df4b37388497cb3e1640122bdd1014077f2e629bd23657ab997b"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/2/quote",
+          "sha256": "18dc89e108e5eee668835b4c97d7a4547a6a660ec9848e5b66ebd8d44ebc9a4f"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/3/quote",
+          "sha256": "16c2c1e4a8857491fc0bd204cdfa9a3fdb8db277f7331b355e013fef558a08ed"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/4/quote",
+          "sha256": "f036e1c062bd97f8fb1bd7640bef0aab74b18dc24308a3355674d4d6ca72b687"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/5/quote",
+          "sha256": "2fa747c93bbcd0cb5c656d9303f02c52f444f67550855aeb4343f29513cc966b"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/6/quote",
+          "sha256": "8a57f62a5a8f83eb93be8da5a03e0dd5c13a33855c00e128a5949266773e9cbd"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/7/quote",
+          "sha256": "0d34a7480f65de35d6cc87d038153df039fa29baa80b066b1102f5bddaa4daf7"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/8/quote",
+          "sha256": "8943a1d02b0182bc94a2f20beec3e073fbc108cf32b6e9b17742ccd313beb3a8"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/9/quote",
+          "sha256": "ba674189083e5f2efefaeb27c33bea2b12662e91d7e5de7ceec7cae264f65ce1"
+        },
+        {
+          "path": "/sources/nku219-guan-profile/excerpts/10/quote",
+          "sha256": "b6d2cf3fd7f7bdf9e21e9394b80300f930b691b05d6a2e7108143c7112993d3f"
+        },
+        {
+          "path": "/sources/nku219-guan-directory/excerpts/0/quote",
+          "sha256": "44dd33174d8115380d0c99060938aba2a70122bfac067abf301973224b8566db"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/education/0/quote",
+          "sha256": "09990e8c65d3d1f8c7f1845e404dafe19f058a2f8de14b249c4aeb5aae3e370b"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/education/1/quote",
+          "sha256": "09990e8c65d3d1f8c7f1845e404dafe19f058a2f8de14b249c4aeb5aae3e370b"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/education/2/quote",
+          "sha256": "6b1a83f11c10be035054f6f1abc673e3d639f862bcf875a7d14c50b7a3316266"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/appointments/0/quote",
+          "sha256": "33d167d4a83329da5cd23fe429a7106a46eb7f4fc7482ef34c2a61ecbdc36369"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/appointments/1/quote",
+          "sha256": "77d8fd2f17a8ddfc3d824e1d92b1b121a81f6cdc4aa847111e160258657c6ed1"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/appointments/2/quote",
+          "sha256": "6035ab354aee22eaa8654f49273aecf105114f7c804216b8e1e57c257dab6132"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/appointments/3/quote",
+          "sha256": "eaa2507beb1413d09b2fae979077af33bddf0de7430b65f25cbe22cce0d7d219"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/appointments/4/quote",
+          "sha256": "9616fa811f4ac731829cd43c1df48f868ede27c949155489baaabde811541f85"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/publications/0/quote",
+          "sha256": "0bf1a26ea6946a190417f938feebe4cec020f9bd138d3a4bae377e94b8348a02"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/publications/1/quote",
+          "sha256": "0516bb32303b17bf112aa92954240a8ede9d7f8fa998c96ea465307dc533a54d"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/field_provenance/directory_affiliation/quote",
+          "sha256": "73d0f8e4f4d45ff1d564d27b74413afbb51a60e9dcd115c993cb62b7c84138da"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/field_provenance/directory_person_listing_and_title/quote",
+          "sha256": "d265ed90099cf5c2bcb17872239052505705f085ba2d3b009817e66e0840aab9"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/education/nku-yangzhenhong-education-1/quote",
+          "sha256": "09990e8c65d3d1f8c7f1845e404dafe19f058a2f8de14b249c4aeb5aae3e370b"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/education/nku-yangzhenhong-education-2/quote",
+          "sha256": "09990e8c65d3d1f8c7f1845e404dafe19f058a2f8de14b249c4aeb5aae3e370b"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/education/nku-yangzhenhong-education-3/quote",
+          "sha256": "6b1a83f11c10be035054f6f1abc673e3d639f862bcf875a7d14c50b7a3316266"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/appointments/0/quote",
+          "sha256": "33d167d4a83329da5cd23fe429a7106a46eb7f4fc7482ef34c2a61ecbdc36369"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/appointments/1/quote",
+          "sha256": "77d8fd2f17a8ddfc3d824e1d92b1b121a81f6cdc4aa847111e160258657c6ed1"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/appointments/2/quote",
+          "sha256": "6035ab354aee22eaa8654f49273aecf105114f7c804216b8e1e57c257dab6132"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/appointments/3/quote",
+          "sha256": "eaa2507beb1413d09b2fae979077af33bddf0de7430b65f25cbe22cce0d7d219"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/appointments/4/quote",
+          "sha256": "9616fa811f4ac731829cd43c1df48f868ede27c949155489baaabde811541f85"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/publications/nku-yangzhenhong-work-1/quote",
+          "sha256": "0bf1a26ea6946a190417f938feebe4cec020f9bd138d3a4bae377e94b8348a02"
+        },
+        {
+          "path": "/people/nku-yangzhenhong/publications/nku-yangzhenhong-work-2/quote",
+          "sha256": "0516bb32303b17bf112aa92954240a8ede9d7f8fa998c96ea465307dc533a54d"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/0/quote",
+          "sha256": "b8a4bff99821854a261c5ee410af252ec7368ff73e4ca7094f64b4184a558ad8"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/0/award_evidence_context/quote",
+          "sha256": "31b21213bfef2959b90d9bcf1bf670d80359894af7aaeab10c37d1e9fcf9becd"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/1/quote",
+          "sha256": "b0a7d6d9beac5d40b20562b1c70ae82ba595e60de70292e4556a5b223b8caf54"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/1/award_evidence_context/quote",
+          "sha256": "31b21213bfef2959b90d9bcf1bf670d80359894af7aaeab10c37d1e9fcf9becd"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/2/quote",
+          "sha256": "86fdb115d96d6e41ad17a5196e291a298f20ff0fbd78b2ed51430e1f67b36e78"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/2/award_evidence_context/quote",
+          "sha256": "31b21213bfef2959b90d9bcf1bf670d80359894af7aaeab10c37d1e9fcf9becd"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/professional_training/0/quote",
+          "sha256": "8546646ae88f4fbd8ec991df41c0c2f62f22d93ed9606e4e1614a9f36599abd9"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/professional_training/1/quote",
+          "sha256": "653d4d4c480ff9927c4266621e3d3baf9df8ec76ac076a1c60effe64213f18f5"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/professional_training/2/quote",
+          "sha256": "a2603814811f7ea1699cb5aef446547134ee666e9ee20cae78a970af4991fa50"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/appointments/0/quote",
+          "sha256": "8fd97bc17f340d400a9b9cb8ba283b59ca8e6ff470ead8979fe0e1b58fb803fb"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/appointments/1/quote",
+          "sha256": "2d05c70ed93c0b1c3091cf4fc97899ccffda218b91ee1d55299e3194577b7859"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/appointments/2/quote",
+          "sha256": "eaabe12ceaa42cf7085409d5bf369e34070df953729552a5d43cf6279c0d8890"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/appointments/3/quote",
+          "sha256": "26abbc1fd208593d5991d90e324799baf808d87a8dad9a43cfdd3a867526e631"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/appointments/4/quote",
+          "sha256": "4e03cc944757cbfbfd0f398212737ed401928091d142d022a620e585d01f0aee"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/mentor_relations/0/quote",
+          "sha256": "a2603814811f7ea1699cb5aef446547134ee666e9ee20cae78a970af4991fa50"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/research_directions/0/quote",
+          "sha256": "08ce5167f1479ea46048f9cd1a32cb41138ee92700df0ab20748700daee2b789"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/research_directions/1/quote",
+          "sha256": "08ce5167f1479ea46048f9cd1a32cb41138ee92700df0ab20748700daee2b789"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/research_directions/2/quote",
+          "sha256": "08ce5167f1479ea46048f9cd1a32cb41138ee92700df0ab20748700daee2b789"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/publications/0/quote",
+          "sha256": "bd9e339e9461c31fa61046f9822cb415a4c35cd4cd99dc2b71c8a573125dc80f"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/publications/1/quote",
+          "sha256": "e8fde703fee7715f8ffbb70133795bf90acfadac7d1e38e77a06664c24390edd"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/teaching/0/quote",
+          "sha256": "c11da97e2e6ce1a8d52c50ca459eb8ee06ff605b6c186ab4d6190bf9b1b3aeeb"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/teaching/1/quote",
+          "sha256": "c113cc30d35fbfb618bac9de1ae0df3f0d3fe468df2820593b3aeda0b505c20b"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/field_provenance/identity/quote",
+          "sha256": "6bb0f99082fe5c9911211827c58c139047f09df6c0bfb2d009817a5931ec5d72"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/field_provenance/title/quote",
+          "sha256": "89ef930408de7e39ed8d12df1b0abff55ea5fc12fa23d3bebc21784e1e56353a"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/field_provenance/department/quote",
+          "sha256": "0b651f3c2fa0bb38c0ea6c49957b54f06c7f91e0fb40326321a76aad6d847e1a"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/field_provenance/directory_category/quote",
+          "sha256": "603c9681ded5aeecbdeff9a822e9af9579e7b2792f8680fb3d8d29c6d0ff22a3"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/field_provenance/directory_name/quote",
+          "sha256": "de717216513cc0f62f39c18346e9a71bb874356d1a404a1f1c7bcfc9f01dd037"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/nku-zhangzhihong-education-1/quote",
+          "sha256": "b8a4bff99821854a261c5ee410af252ec7368ff73e4ca7094f64b4184a558ad8"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/nku-zhangzhihong-education-1/award_evidence_context/quote",
+          "sha256": "31b21213bfef2959b90d9bcf1bf670d80359894af7aaeab10c37d1e9fcf9becd"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/nku-zhangzhihong-education-2/quote",
+          "sha256": "b0a7d6d9beac5d40b20562b1c70ae82ba595e60de70292e4556a5b223b8caf54"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/nku-zhangzhihong-education-2/award_evidence_context/quote",
+          "sha256": "31b21213bfef2959b90d9bcf1bf670d80359894af7aaeab10c37d1e9fcf9becd"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/nku-zhangzhihong-education-3/quote",
+          "sha256": "86fdb115d96d6e41ad17a5196e291a298f20ff0fbd78b2ed51430e1f67b36e78"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/nku-zhangzhihong-education-3/award_evidence_context/quote",
+          "sha256": "31b21213bfef2959b90d9bcf1bf670d80359894af7aaeab10c37d1e9fcf9becd"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/nku-zhangzhihong-nondegree-1/quote",
+          "sha256": "8546646ae88f4fbd8ec991df41c0c2f62f22d93ed9606e4e1614a9f36599abd9"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/nku-zhangzhihong-nondegree-2/quote",
+          "sha256": "653d4d4c480ff9927c4266621e3d3baf9df8ec76ac076a1c60effe64213f18f5"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/education/nku-zhangzhihong-nondegree-3/quote",
+          "sha256": "a2603814811f7ea1699cb5aef446547134ee666e9ee20cae78a970af4991fa50"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/mentors/quote",
+          "sha256": "a2603814811f7ea1699cb5aef446547134ee666e9ee20cae78a970af4991fa50"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/appointments/0/quote",
+          "sha256": "8fd97bc17f340d400a9b9cb8ba283b59ca8e6ff470ead8979fe0e1b58fb803fb"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/appointments/1/quote",
+          "sha256": "2d05c70ed93c0b1c3091cf4fc97899ccffda218b91ee1d55299e3194577b7859"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/appointments/2/quote",
+          "sha256": "eaabe12ceaa42cf7085409d5bf369e34070df953729552a5d43cf6279c0d8890"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/appointments/3/quote",
+          "sha256": "26abbc1fd208593d5991d90e324799baf808d87a8dad9a43cfdd3a867526e631"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/appointments/4/quote",
+          "sha256": "4e03cc944757cbfbfd0f398212737ed401928091d142d022a620e585d01f0aee"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/publications/nku-zhangzhihong-work-1/quote",
+          "sha256": "bd9e339e9461c31fa61046f9822cb415a4c35cd4cd99dc2b71c8a573125dc80f"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/publications/nku-zhangzhihong-work-2/quote",
+          "sha256": "e8fde703fee7715f8ffbb70133795bf90acfadac7d1e38e77a06664c24390edd"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/teaching/quote",
+          "sha256": "c11da97e2e6ce1a8d52c50ca459eb8ee06ff605b6c186ab4d6190bf9b1b3aeeb"
+        },
+        {
+          "path": "/people/nku-zhangzhihong/teaching/quote",
+          "sha256": "c113cc30d35fbfb618bac9de1ae0df3f0d3fe468df2820593b3aeda0b505c20b"
+        },
+        {
+          "path": "/people/nku-caishengxia/education/0/quote",
+          "sha256": "efbeeedb0ef41b32fb294845f52998cb2669c86b108dd5b94da419983f160428"
+        },
+        {
+          "path": "/people/nku-caishengxia/education/1/quote",
+          "sha256": "5d62e1b43c90ed66e6342b64453d420ecaf14697430a347cbfa63eced76302b2"
+        },
+        {
+          "path": "/people/nku-caishengxia/education/2/quote",
+          "sha256": "fbdcb83089442486659c9f8b9c2b45981d5bc637abf9e8b4a79eb07cacae2468"
+        },
+        {
+          "path": "/people/nku-caishengxia/professional_training/0/quote",
+          "sha256": "7ebb9b4f0f1bf83573e234b8ebbe27c555fced037983506cf83827f7013635c8"
+        },
+        {
+          "path": "/people/nku-caishengxia/appointments/0/quote",
+          "sha256": "d7753ae982b7614ff3b797f6d21a40f4b74cf557497b67692e87470d622dd8d4"
+        },
+        {
+          "path": "/people/nku-caishengxia/appointments/1/quote",
+          "sha256": "4330ce1a8031e01a56cfdb0defe16d8bb42282f36a70510e506abfcb3d7c9178"
+        },
+        {
+          "path": "/people/nku-caishengxia/appointments/2/quote",
+          "sha256": "846575ba1fc722fdb8bb49d33fce0a1ab2fc82a1168d0c3d9c8b0e88af0ba16f"
+        },
+        {
+          "path": "/people/nku-caishengxia/research_directions/0/quote",
+          "sha256": "b5a02a8d271ea90c1f7d92ff0361c9876cbdb407d5a2c73298f6210660627319"
+        },
+        {
+          "path": "/people/nku-caishengxia/research_directions/1/quote",
+          "sha256": "b5a02a8d271ea90c1f7d92ff0361c9876cbdb407d5a2c73298f6210660627319"
+        },
+        {
+          "path": "/people/nku-caishengxia/research_directions/2/quote",
+          "sha256": "b5a02a8d271ea90c1f7d92ff0361c9876cbdb407d5a2c73298f6210660627319"
+        },
+        {
+          "path": "/people/nku-caishengxia/publications/0/quote",
+          "sha256": "5a61da957e2bebbc21fb0f52662954f5efab888c75f07ac2131fbbb2f7e16891"
+        },
+        {
+          "path": "/people/nku-caishengxia/publications/1/quote",
+          "sha256": "95200e4ba07cfa23f16df54a6db39156ec2bc28117b64917d2a0cff6b5157880"
+        },
+        {
+          "path": "/people/nku-caishengxia/teaching/0/quote",
+          "sha256": "15ac056073148dd8e50cbd1286ccf1dab5e178af199654276fb720cf526a06eb"
+        },
+        {
+          "path": "/people/nku-caishengxia/field_provenance/identity/quote",
+          "sha256": "3f65a2775bed8e1664becb29abc55da9ead68a724e22899a2558325a8e520496"
+        },
+        {
+          "path": "/people/nku-caishengxia/field_provenance/title/quote",
+          "sha256": "89ef930408de7e39ed8d12df1b0abff55ea5fc12fa23d3bebc21784e1e56353a"
+        },
+        {
+          "path": "/people/nku-caishengxia/field_provenance/department/quote",
+          "sha256": "0b651f3c2fa0bb38c0ea6c49957b54f06c7f91e0fb40326321a76aad6d847e1a"
+        },
+        {
+          "path": "/people/nku-caishengxia/field_provenance/directory_category/quote",
+          "sha256": "603c9681ded5aeecbdeff9a822e9af9579e7b2792f8680fb3d8d29c6d0ff22a3"
+        },
+        {
+          "path": "/people/nku-caishengxia/field_provenance/directory_name/quote",
+          "sha256": "87b1eb332560183c74916e8a35c5ea24f6b481496066ca5e00bcf2576f698cb0"
+        },
+        {
+          "path": "/people/nku-caishengxia/education/nku-caishengxia-education-1/quote",
+          "sha256": "efbeeedb0ef41b32fb294845f52998cb2669c86b108dd5b94da419983f160428"
+        },
+        {
+          "path": "/people/nku-caishengxia/education/nku-caishengxia-education-2/quote",
+          "sha256": "5d62e1b43c90ed66e6342b64453d420ecaf14697430a347cbfa63eced76302b2"
+        },
+        {
+          "path": "/people/nku-caishengxia/education/nku-caishengxia-education-3/quote",
+          "sha256": "fbdcb83089442486659c9f8b9c2b45981d5bc637abf9e8b4a79eb07cacae2468"
+        },
+        {
+          "path": "/people/nku-caishengxia/education/nku-caishengxia-nondegree-1/quote",
+          "sha256": "7ebb9b4f0f1bf83573e234b8ebbe27c555fced037983506cf83827f7013635c8"
+        },
+        {
+          "path": "/people/nku-caishengxia/appointments/0/quote",
+          "sha256": "d7753ae982b7614ff3b797f6d21a40f4b74cf557497b67692e87470d622dd8d4"
+        },
+        {
+          "path": "/people/nku-caishengxia/appointments/1/quote",
+          "sha256": "4330ce1a8031e01a56cfdb0defe16d8bb42282f36a70510e506abfcb3d7c9178"
+        },
+        {
+          "path": "/people/nku-caishengxia/appointments/2/quote",
+          "sha256": "846575ba1fc722fdb8bb49d33fce0a1ab2fc82a1168d0c3d9c8b0e88af0ba16f"
+        },
+        {
+          "path": "/people/nku-caishengxia/publications/nku-caishengxia-work-1/quote",
+          "sha256": "5a61da957e2bebbc21fb0f52662954f5efab888c75f07ac2131fbbb2f7e16891"
+        },
+        {
+          "path": "/people/nku-caishengxia/publications/nku-caishengxia-work-2/quote",
+          "sha256": "95200e4ba07cfa23f16df54a6db39156ec2bc28117b64917d2a0cff6b5157880"
+        },
+        {
+          "path": "/people/nku-caishengxia/teaching/quote",
+          "sha256": "15ac056073148dd8e50cbd1286ccf1dab5e178af199654276fb720cf526a06eb"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/education/0/quote",
+          "sha256": "dff0dd2962de616e8dc803e13e6dc90658093b7b8fc57fbd24235530abc73d07"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/education/1/quote",
+          "sha256": "59faab120b31e5634e3821ea3978ef12a0d9c3d7f64f28ff07bec1ed3eb99886"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/education/2/quote",
+          "sha256": "1cf99f0533b25796c99416b6829d0fae7295c2163fd67d0a319960e109972220"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/education/3/quote",
+          "sha256": "97d5bf218b9256963dcd6049d8f96007441b4dc13961f1255f8e9d9fa357b8e9"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/appointments/0/quote",
+          "sha256": "dffac20326c700a2c26e644809bb4e8d78e7f3421a4a741f2ed4acae12f7bca4"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/research_directions/0/quote",
+          "sha256": "4ab626753d967fc014c4f9032252c0b95fbf5128f332aa45629a191d66ddc713"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/research_directions/1/quote",
+          "sha256": "4ab626753d967fc014c4f9032252c0b95fbf5128f332aa45629a191d66ddc713"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/publications/0/quote",
+          "sha256": "78eaf1e3344db4c4f36a90282d086ed1e6c507cb28c2ff0a5ed63adf57ff2b4c"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/publications/1/quote",
+          "sha256": "5c8bc4715003d649792015917debf324eb69276d07bc7de4ce6fd0caed4ed1ea"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/teaching/0/quote",
+          "sha256": "cab010b6c40c45e23d63c86eb11c6c8ab4d9a8c73897335fe003f64c551a013e"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/teaching/1/quote",
+          "sha256": "cab010b6c40c45e23d63c86eb11c6c8ab4d9a8c73897335fe003f64c551a013e"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/teaching/2/quote",
+          "sha256": "cab010b6c40c45e23d63c86eb11c6c8ab4d9a8c73897335fe003f64c551a013e"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/identity_evidence/0/quote",
+          "sha256": "0030e2e2d618b19830fcb31d151b3e8b0e3e8251d5a99e09aa15c84df95c0c77"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/identity_evidence/1/quote",
+          "sha256": "6a463f9c4abe3e5b0de2b065a34ace25f3fca956ab480f50d7cce8f8502cec90"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/education/nku-maodaqing-medical-education-1/quote",
+          "sha256": "dff0dd2962de616e8dc803e13e6dc90658093b7b8fc57fbd24235530abc73d07"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/education/nku-maodaqing-medical-education-2/quote",
+          "sha256": "59faab120b31e5634e3821ea3978ef12a0d9c3d7f64f28ff07bec1ed3eb99886"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/education/nku-maodaqing-medical-education-3/quote",
+          "sha256": "1cf99f0533b25796c99416b6829d0fae7295c2163fd67d0a319960e109972220"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/education/nku-maodaqing-medical-education-4/quote",
+          "sha256": "97d5bf218b9256963dcd6049d8f96007441b4dc13961f1255f8e9d9fa357b8e9"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/appointments/0/quote",
+          "sha256": "dffac20326c700a2c26e644809bb4e8d78e7f3421a4a741f2ed4acae12f7bca4"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/publications/nku-maodaqing-medical-mao-work-1/quote",
+          "sha256": "78eaf1e3344db4c4f36a90282d086ed1e6c507cb28c2ff0a5ed63adf57ff2b4c"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/publications/nku-maodaqing-medical-mao-work-2/quote",
+          "sha256": "5c8bc4715003d649792015917debf324eb69276d07bc7de4ce6fd0caed4ed1ea"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/teaching/quote",
+          "sha256": "cab010b6c40c45e23d63c86eb11c6c8ab4d9a8c73897335fe003f64c551a013e"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/teaching/quote",
+          "sha256": "cab010b6c40c45e23d63c86eb11c6c8ab4d9a8c73897335fe003f64c551a013e"
+        },
+        {
+          "path": "/people/nku-maodaqing-medical/teaching/quote",
+          "sha256": "cab010b6c40c45e23d63c86eb11c6c8ab4d9a8c73897335fe003f64c551a013e"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/education/0/quote",
+          "sha256": "18dc89e108e5eee668835b4c97d7a4547a6a660ec9848e5b66ebd8d44ebc9a4f"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/education/1/quote",
+          "sha256": "16c2c1e4a8857491fc0bd204cdfa9a3fdb8db277f7331b355e013fef558a08ed"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/professional_training/0/quote",
+          "sha256": "f036e1c062bd97f8fb1bd7640bef0aab74b18dc24308a3355674d4d6ca72b687"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/professional_training/1/quote",
+          "sha256": "2fa747c93bbcd0cb5c656d9303f02c52f444f67550855aeb4343f29513cc966b"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/mentor_relations/0/quote",
+          "sha256": "16c2c1e4a8857491fc0bd204cdfa9a3fdb8db277f7331b355e013fef558a08ed"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/mentor_relations/1/quote",
+          "sha256": "f036e1c062bd97f8fb1bd7640bef0aab74b18dc24308a3355674d4d6ca72b687"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/mentor_relations/2/quote",
+          "sha256": "2fa747c93bbcd0cb5c656d9303f02c52f444f67550855aeb4343f29513cc966b"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/appointments/0/quote",
+          "sha256": "8a57f62a5a8f83eb93be8da5a03e0dd5c13a33855c00e128a5949266773e9cbd"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/research_directions/0/quote",
+          "sha256": "0d34a7480f65de35d6cc87d038153df039fa29baa80b066b1102f5bddaa4daf7"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/publications/0/quote",
+          "sha256": "8943a1d02b0182bc94a2f20beec3e073fbc108cf32b6e9b17742ccd313beb3a8"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/publications/1/quote",
+          "sha256": "ba674189083e5f2efefaeb27c33bea2b12662e91d7e5de7ceec7cae264f65ce1"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/teaching/0/quote",
+          "sha256": "b6d2cf3fd7f7bdf9e21e9394b80300f930b691b05d6a2e7108143c7112993d3f"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/identity_evidence/0/quote",
+          "sha256": "b17e6dd1805ebf14f6b4ff13c2fe46f37ae33ca654e8433cd4ed47dbf61b4b83"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/identity_evidence/1/quote",
+          "sha256": "44dd33174d8115380d0c99060938aba2a70122bfac067abf301973224b8566db"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/education/nku-guanyongqiang-economic-history-education-1/quote",
+          "sha256": "18dc89e108e5eee668835b4c97d7a4547a6a660ec9848e5b66ebd8d44ebc9a4f"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/education/nku-guanyongqiang-economic-history-education-2/quote",
+          "sha256": "16c2c1e4a8857491fc0bd204cdfa9a3fdb8db277f7331b355e013fef558a08ed"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/education/nku-guanyongqiang-economic-history-training-1/quote",
+          "sha256": "f036e1c062bd97f8fb1bd7640bef0aab74b18dc24308a3355674d4d6ca72b687"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/education/nku-guanyongqiang-economic-history-training-2/quote",
+          "sha256": "2fa747c93bbcd0cb5c656d9303f02c52f444f67550855aeb4343f29513cc966b"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/mentors/quote",
+          "sha256": "16c2c1e4a8857491fc0bd204cdfa9a3fdb8db277f7331b355e013fef558a08ed"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/mentors/quote",
+          "sha256": "f036e1c062bd97f8fb1bd7640bef0aab74b18dc24308a3355674d4d6ca72b687"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/mentors/quote",
+          "sha256": "2fa747c93bbcd0cb5c656d9303f02c52f444f67550855aeb4343f29513cc966b"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/appointments/0/quote",
+          "sha256": "8a57f62a5a8f83eb93be8da5a03e0dd5c13a33855c00e128a5949266773e9cbd"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/publications/nku-guanyongqiang-economic-history-guan-work-1/quote",
+          "sha256": "8943a1d02b0182bc94a2f20beec3e073fbc108cf32b6e9b17742ccd313beb3a8"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/publications/nku-guanyongqiang-economic-history-guan-work-2/quote",
+          "sha256": "ba674189083e5f2efefaeb27c33bea2b12662e91d7e5de7ceec7cae264f65ce1"
+        },
+        {
+          "path": "/people/nku-guanyongqiang-economic-history/teaching/quote",
+          "sha256": "b6d2cf3fd7f7bdf9e21e9394b80300f930b691b05d6a2e7108143c7112993d3f"
+        },
+        {
+          "path": "/org_units/nku-history/quote",
+          "sha256": "ef72282306417850735d3891bb20c71dd5a4300d2d701dd82e50037644a30ffb"
+        },
+        {
+          "path": "/org_units/nku-zfxy/quote",
+          "sha256": "41202dce336301870b752112c29958c2aea503ccd1bf3a205c21c13aa27670e3"
+        },
+        {
+          "path": "/org_units/nku-medical/quote",
+          "sha256": "dffac20326c700a2c26e644809bb4e8d78e7f3421a4a741f2ed4acae12f7bca4"
+        },
+        {
+          "path": "/source_org_facts/0/quote",
+          "sha256": "ef72282306417850735d3891bb20c71dd5a4300d2d701dd82e50037644a30ffb"
+        },
+        {
+          "path": "/source_org_facts/1/quote",
+          "sha256": "41202dce336301870b752112c29958c2aea503ccd1bf3a205c21c13aa27670e3"
+        },
+        {
+          "path": "/source_org_facts/2/quote",
+          "sha256": "41202dce336301870b752112c29958c2aea503ccd1bf3a205c21c13aa27670e3"
+        },
+        {
+          "path": "/source_org_facts/3/quote",
+          "sha256": "dffac20326c700a2c26e644809bb4e8d78e7f3421a4a741f2ed4acae12f7bca4"
+        },
+        {
+          "path": "/source_org_facts/4/quote",
+          "sha256": "0e3fd31869e0df4b37388497cb3e1640122bdd1014077f2e629bd23657ab997b"
+        }
+      ],
+      "mapping": "完整原事实/必要摘录保留，授位true事件kind规范为degree同时source_event_kind保留原值；原工具行号及内部引用私有trace，公开语义locator。所有旧机构不改。",
+      "teaching_visibility_derivatives": [
+        {
+          "person_id": "nku-zhangzhihong",
+          "path": "/people/1/teaching/0/note",
+          "source_field": "level_as_source",
+          "source_value": "本科生课程"
+        },
+        {
+          "person_id": "nku-zhangzhihong",
+          "path": "/people/1/teaching/1/note",
+          "source_field": "level_as_source",
+          "source_value": "硕士生课程"
+        },
+        {
+          "person_id": "nku-guanyongqiang-economic-history",
+          "path": "/people/4/teaching/0/note",
+          "source_field": "student_level",
+          "source_value": "本科"
+        }
+      ],
+      "original_org_facts": [
+        {
+          "id": "nku-history",
+          "name": "历史学院",
+          "type": "school",
+          "school_id": "nku",
+          "parent_id": null,
+          "administrative_parent_status": "university_affiliation_observed_legal_hierarchy_not_independently_audited",
+          "source_id": "nku-yangzhenhong-history-profile",
+          "source_url": "https://history.nankai.edu.cn/2019/0910/c16087a201694/page.htm",
+          "retained_professional_text": "Copyright © 2002-2017 南开大学历史学院 All Rights Reserved.",
+          "source_excerpt_sha256": "ef72282306417850735d3891bb20c71dd5a4300d2d701dd82e50037644a30ffb",
+          "subunit_labels_observed": [
+            "中国史学系",
+            "中国古代前期史教研室"
+          ],
+          "subunit_source_id": "nku-history-directory",
+          "note": "目录归属与个人href分开核实；不从网站路径扩张组织法律关系。"
+        },
+        {
+          "id": "nku-zfxy",
+          "name": "周恩来政府管理学院",
+          "type": "college",
+          "school_id": "nku",
+          "parent_id": null,
+          "administrative_parent_status": "not_independently_verified",
+          "source_id": "nku-public-administration-directory",
+          "source_url": "https://zfxy.nankai.edu.cn/faculty/public_administration.htm",
+          "retained_professional_text": "行政管理系-南开大学周恩来政府管理学院",
+          "source_excerpt_sha256": "41202dce336301870b752112c29958c2aea503ccd1bf3a205c21c13aa27670e3",
+          "source_locator": "page title"
+        },
+        {
+          "id": "nku-zfxy-public-administration",
+          "name": "行政管理系",
+          "type": "department",
+          "school_id": "nku",
+          "parent_id": "nku-zfxy",
+          "source_id": "nku-public-administration-directory",
+          "source_url": "https://zfxy.nankai.edu.cn/faculty/public_administration.htm",
+          "retained_professional_text": "行政管理系-南开大学周恩来政府管理学院",
+          "source_excerpt_sha256": "41202dce336301870b752112c29958c2aea503ccd1bf3a205c21c13aa27670e3",
+          "source_locator": "page title"
+        },
+        {
+          "id": "nku-medical",
+          "name": "医学院",
+          "type": "college",
+          "school_id": "nku",
+          "parent_id": null,
+          "administrative_parent_status": "not_independently_verified",
+          "evidence_id": "mao-affiliation",
+          "source_id": "nku219-mao-profile",
+          "source_url": "https://medical.nankai.edu.cn/2017/1019/c6613a75547/page.htm",
+          "retained_professional_text": "2017/08-至今 南开大学医学院 教授；",
+          "source_excerpt_sha256": "dffac20326c700a2c26e644809bb4e8d78e7f3421a4a741f2ed4acae12f7bca4",
+          "source_locator": "工作经历",
+          "observed_window_utc": {
+            "start": "2026-10-25T02:51:57.458Z",
+            "end": "2026-10-25T02:51:58.469Z"
+          }
+        },
+        {
+          "id": "nku-economic-research-institute",
+          "name": "经济研究所",
+          "type": "research_institute",
+          "school_id": "nku",
+          "parent_id": null,
+          "listed_parent_name": "经济学院",
+          "administrative_parent_status": "profile_and_directory_affiliation_not_legal_structure_audit",
+          "evidence_id": "guan-affiliation",
+          "source_id": "nku219-guan-profile",
+          "source_url": "https://economics.nankai.edu.cn/2019/1006/c16878a208250/page.htm",
+          "retained_professional_text": "南开大学经济学院经济研究所教授",
+          "source_excerpt_sha256": "0e3fd31869e0df4b37388497cb3e1640122bdd1014077f2e629bd23657ab997b",
+          "source_locator": "个人简介必要职业片段；不保存出生等无关信息",
+          "observed_window_utc": {
+            "start": "2026-10-25T02:52:20.105Z",
+            "end": "2026-10-25T02:52:20.969Z"
+          }
+        }
+      ]
+    },
+    {
+      "baseline_people": 689,
+      "baseline_commit": "1d976e347aef9027ce0c8079c5e479268317da4a",
+      "people": [
+        {
+          "person_id": "nankai-haolan",
+          "canonical_school_id": "nku",
+          "person_id_unchanged": true,
+          "source_candidate_sha256": "21c206856ca99f6531339e62aee733ba40e1e714501860ca70745debdf5324f4",
+          "source_evidence_sha256": "94246ff979ac97969b13d0c7d16e91e6dba1e02fdc54f48ab83a0a835f80f74f",
+          "source_review_sha256": "bf556b2dde3539630e6bbce5ecf54ad3cb61b3be6085de833e1dc514d36b179b",
+          "overlay_operations_in_source_copy": 0,
+          "education": 6,
+          "degree_true_false_null": [
+            0,
+            5,
+            1
+          ],
+          "mentors": 0,
+          "appointments": 0,
+          "publications": 2
+        },
+        {
+          "person_id": "nankai-luozhenya",
+          "canonical_school_id": "nku",
+          "person_id_unchanged": true,
+          "source_candidate_sha256": "7342d2d25922edf7aae5574c9ecf48fda431965362dac34fa638d4a955956838",
+          "source_evidence_sha256": "cc3d91574a68ca9d988923e42eee8f814feaed74c4bdb0f89c445c635b1b6b42",
+          "source_review_sha256": "3cf0f074785f26c89c7d9af486e030d49eff3a8d4e2e202390472e0374f866d4",
+          "overlay_operations_in_source_copy": 5,
+          "education": 4,
+          "degree_true_false_null": [
+            0,
+            1,
+            3
+          ],
+          "mentors": 3,
+          "appointments": 0,
+          "publications": 2
+        },
+        {
+          "person_id": "nankai-liulili",
+          "canonical_school_id": "nku",
+          "person_id_unchanged": true,
+          "source_candidate_sha256": "7342d2d25922edf7aae5574c9ecf48fda431965362dac34fa638d4a955956838",
+          "source_evidence_sha256": "cc3d91574a68ca9d988923e42eee8f814feaed74c4bdb0f89c445c635b1b6b42",
+          "source_review_sha256": "3cf0f074785f26c89c7d9af486e030d49eff3a8d4e2e202390472e0374f866d4",
+          "overlay_operations_in_source_copy": 5,
+          "education": 2,
+          "degree_true_false_null": [
+            2,
+            0,
+            0
+          ],
+          "mentors": 0,
+          "appointments": 1,
+          "publications": 2
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/people/nankai-haolan/identity_evidence/0/quote",
+          "sha256": "14fb6f6b0ee51d73b1eb463ede5cf56fba18d87474e0114fa4886e6cf3caa721"
+        },
+        {
+          "json_pointer": "/people/nankai-haolan/education/0/evidence/0/quote",
+          "sha256": "f4a0a0fea3622191693f59766a63c1a29d00c93b68bfb55809d58a540d536655"
+        },
+        {
+          "json_pointer": "/people/nankai-haolan/nondegree_training/0/evidence/0/quote",
+          "sha256": "810a306e910c0ba6992cb9e961496864de88c3dd73b8fcd4960d2741e06b5df4"
+        },
+        {
+          "json_pointer": "/people/nankai-haolan/nondegree_training/1/evidence/0/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/people/nankai-haolan/nondegree_training/2/evidence/0/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/people/nankai-haolan/nondegree_training/3/evidence/0/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/people/nankai-haolan/nondegree_training/4/evidence/0/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/people/nankai-haolan/publications/0/evidence/0/quote",
+          "sha256": "153a604620572cd9e99b3d87a7e1299420a4a87b0869ba38d7f08ec92d082458"
+        },
+        {
+          "json_pointer": "/people/nankai-haolan/publications/1/evidence/0/quote",
+          "sha256": "1b5be9ccc8a388a9c79bc18d44f7e296962314ed64e3cb6f5a8c0b5d71ef2ba7"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "14fb6f6b0ee51d73b1eb463ede5cf56fba18d87474e0114fa4886e6cf3caa721"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "f4a0a0fea3622191693f59766a63c1a29d00c93b68bfb55809d58a540d536655"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "810a306e910c0ba6992cb9e961496864de88c3dd73b8fcd4960d2741e06b5df4"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "153a604620572cd9e99b3d87a7e1299420a4a87b0869ba38d7f08ec92d082458"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "1b5be9ccc8a388a9c79bc18d44f7e296962314ed64e3cb6f5a8c0b5d71ef2ba7"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "f4a0a0fea3622191693f59766a63c1a29d00c93b68bfb55809d58a540d536655"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f4a0a0fea3622191693f59766a63c1a29d00c93b68bfb55809d58a540d536655"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "810a306e910c0ba6992cb9e961496864de88c3dd73b8fcd4960d2741e06b5df4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "810a306e910c0ba6992cb9e961496864de88c3dd73b8fcd4960d2741e06b5df4"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "23f6985b945197ee8288ff77db6481cd3781385e8a973203148a8e25ae603f5d"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "153a604620572cd9e99b3d87a7e1299420a4a87b0869ba38d7f08ec92d082458"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "153a604620572cd9e99b3d87a7e1299420a4a87b0869ba38d7f08ec92d082458"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "1b5be9ccc8a388a9c79bc18d44f7e296962314ed64e3cb6f5a8c0b5d71ef2ba7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1b5be9ccc8a388a9c79bc18d44f7e296962314ed64e3cb6f5a8c0b5d71ef2ba7"
+        },
+        {
+          "json_pointer": "/people/nankai-luozhenya/education/0/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/people/nankai-luozhenya/education/1/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/people/nankai-luozhenya/education/2/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/people/nankai-luozhenya/nondegree_training/0/evidence/0/quote",
+          "sha256": "db48cf7a2b678b37e37582351828670bc5d5de8e569677853e1366ef6964a169"
+        },
+        {
+          "json_pointer": "/people/nankai-luozhenya/mentor_relations/0/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/people/nankai-luozhenya/mentor_relations/1/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/people/nankai-luozhenya/mentor_relations/2/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/people/nankai-luozhenya/publications/0/evidence/0/quote",
+          "sha256": "9f69aa7838acb660d86c1930e0d924a8ea07fb8b72bc36ef12dc5932ec3231ca"
+        },
+        {
+          "json_pointer": "/people/nankai-luozhenya/publications/1/evidence/0/quote",
+          "sha256": "eac2d375b64f6a644a452862222abc2192b1854e72322362f45aafe722bb8c56"
+        },
+        {
+          "json_pointer": "/people/nankai-luozhenya/identity_evidence/0/quote",
+          "sha256": "a635ab1b411146dc0624162a058ab8a2b50c20435ddbf90e9e04644f7094f7d7"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "a635ab1b411146dc0624162a058ab8a2b50c20435ddbf90e9e04644f7094f7d7"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "db48cf7a2b678b37e37582351828670bc5d5de8e569677853e1366ef6964a169"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "9f69aa7838acb660d86c1930e0d924a8ea07fb8b72bc36ef12dc5932ec3231ca"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "eac2d375b64f6a644a452862222abc2192b1854e72322362f45aafe722bb8c56"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "db48cf7a2b678b37e37582351828670bc5d5de8e569677853e1366ef6964a169"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "db48cf7a2b678b37e37582351828670bc5d5de8e569677853e1366ef6964a169"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "df564bf5dabdb5ac76638a68fd28dcf92f7c772155c73338ad71c31d0933079b"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "9f69aa7838acb660d86c1930e0d924a8ea07fb8b72bc36ef12dc5932ec3231ca"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "9f69aa7838acb660d86c1930e0d924a8ea07fb8b72bc36ef12dc5932ec3231ca"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "eac2d375b64f6a644a452862222abc2192b1854e72322362f45aafe722bb8c56"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "eac2d375b64f6a644a452862222abc2192b1854e72322362f45aafe722bb8c56"
+        },
+        {
+          "json_pointer": "/people/nankai-liulili/education/0/evidence/0/quote",
+          "sha256": "e6fe6437aead415a285b4f071fbba6a7da1fc2dda9d48af2fa6019c90540fb23"
+        },
+        {
+          "json_pointer": "/people/nankai-liulili/education/1/evidence/0/quote",
+          "sha256": "e6fe6437aead415a285b4f071fbba6a7da1fc2dda9d48af2fa6019c90540fb23"
+        },
+        {
+          "json_pointer": "/people/nankai-liulili/appointments/0/evidence/0/quote",
+          "sha256": "f2acb403d4fc362a6062d97a32e6f94a056e892ec5d64bf83ef7037b00d0b6a6"
+        },
+        {
+          "json_pointer": "/people/nankai-liulili/publications/0/evidence/0/quote",
+          "sha256": "4fba79fc99c3a4b1bc742d1812ffbcb37f7e14241d947dcc7197b1810d294382"
+        },
+        {
+          "json_pointer": "/people/nankai-liulili/publications/1/evidence/0/quote",
+          "sha256": "bbe18a1bab50464558ba01649d73649c0b8cae414f693e827b616d14a548c584"
+        },
+        {
+          "json_pointer": "/people/nankai-liulili/identity_evidence/0/quote",
+          "sha256": "f2acb403d4fc362a6062d97a32e6f94a056e892ec5d64bf83ef7037b00d0b6a6"
+        },
+        {
+          "json_pointer": "/people/nankai-liulili/identity_evidence/1/quote",
+          "sha256": "f3138a65d93779d2f7362715ed888547f7aa4f07d299be1c1fb2fcc82fc7b407"
+        },
+        {
+          "json_pointer": "/people/nankai-liulili/source_reported_retirement/evidence/0/quote",
+          "sha256": "f3138a65d93779d2f7362715ed888547f7aa4f07d299be1c1fb2fcc82fc7b407"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "f2acb403d4fc362a6062d97a32e6f94a056e892ec5d64bf83ef7037b00d0b6a6"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "f3138a65d93779d2f7362715ed888547f7aa4f07d299be1c1fb2fcc82fc7b407"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "e6fe6437aead415a285b4f071fbba6a7da1fc2dda9d48af2fa6019c90540fb23"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "4fba79fc99c3a4b1bc742d1812ffbcb37f7e14241d947dcc7197b1810d294382"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "bbe18a1bab50464558ba01649d73649c0b8cae414f693e827b616d14a548c584"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "e6fe6437aead415a285b4f071fbba6a7da1fc2dda9d48af2fa6019c90540fb23"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e6fe6437aead415a285b4f071fbba6a7da1fc2dda9d48af2fa6019c90540fb23"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "e6fe6437aead415a285b4f071fbba6a7da1fc2dda9d48af2fa6019c90540fb23"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e6fe6437aead415a285b4f071fbba6a7da1fc2dda9d48af2fa6019c90540fb23"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "f2acb403d4fc362a6062d97a32e6f94a056e892ec5d64bf83ef7037b00d0b6a6"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f2acb403d4fc362a6062d97a32e6f94a056e892ec5d64bf83ef7037b00d0b6a6"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "4fba79fc99c3a4b1bc742d1812ffbcb37f7e14241d947dcc7197b1810d294382"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4fba79fc99c3a4b1bc742d1812ffbcb37f7e14241d947dcc7197b1810d294382"
+        },
+        {
+          "json_pointer": "/evidence/0/quote",
+          "sha256": "bbe18a1bab50464558ba01649d73649c0b8cae414f693e827b616d14a548c584"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "bbe18a1bab50464558ba01649d73649c0b8cae414f693e827b616d14a548c584"
+        }
+      ],
+      "mapping_notes": [
+        "原nankai人物ID不变；school_id统一nku，不改人物身份。",
+        "wave350同一不可变源的5项overlay以源hash与逐项expected守卫在消费者副本执行；罗仅文学院，刘仅中文系历史单位，刘两书目角色与限制删除未留存获奖栏目断言。",
+        "文学院共同官网明确归属独立node；中文系历史展示node不认证当前单位，也不推与文学院父子关系。",
+        "刘2018退休显式保留；两次明确授位不伪造日期、博士或当前任职。",
+        "罗3导师为明确硕/博士学段，不升级具体学位论文认证。郝5条非学位不升授位；作者/主编分字段。",
+        "重要证据边界投影到unknowns及教育/任职/作品note，观察时间basis与同页补读时间分别保留。"
+      ]
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧689事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
