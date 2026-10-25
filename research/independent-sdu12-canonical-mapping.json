@@ -1,0 +1,2927 @@
+{
+  "schema_version": "independent-sdu12-canonical-mapping-1",
+  "baseline_commit": "bbb592344b02c6fb81319296aec97b98f98821ac",
+  "new_people": [
+    "sdu-zhangna",
+    "sdu-wangliping",
+    "sdu-zhanghaiyan",
+    "sdu-sunlixin",
+    "sdu-yidonglan",
+    "sdu-wangkefang",
+    "sdu-liyuli",
+    "sdu-fanghui",
+    "sdu-lijing-nursing",
+    "sdu-lichaofan-policy",
+    "sdu-luhaobin",
+    "sdu-liusenlin"
+  ],
+  "new_org_ids": [
+    "sdu-pharm",
+    "sdu-pharm-pharmaceutics",
+    "sdu-law",
+    "sdu-confucian",
+    "sdu-world-history",
+    "sdu-archaeology",
+    "sdu-literature",
+    "sdu-philosophy-social-development",
+    "sdu-nursing-rehabilitation",
+    "sdu-basic-nursing",
+    "sdu-health-management-policy"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 11,
+    "education": 48,
+    "appointments": 43,
+    "publications": 23,
+    "mentors": 10,
+    "teaching": 16,
+    "degree_true": 24,
+    "degree_false": 13,
+    "degree_unknown": 11
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "pharmacy-law-confucian-studies",
+      "canonical_payload_sha256": "efde10872bb465ac596d578d81b815b53b67f877f0ef7e7ba9ca9ae60b7354c3",
+      "field_mapping_sha256": "1a7a71f3bdc5603a16407fa2e03ac812ab5cd4c9dbfb33b0332fa7e47b6c9eb8",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "history-archaeology-literature-philosophy",
+      "canonical_payload_sha256": "c29eb6b85bf77380e88ad93b1f5563fd2d3916189ec45dd76c67bf0d2b1859fb",
+      "field_mapping_sha256": "a9e886b4a604529f46b828a2ebbb2ff3f3a0555bbac17eccd21ced8dc486a0da",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "nursing-health-policy",
+      "canonical_payload_sha256": "926c2fbff7952b45b4a80d341760af93dcfc3c0fa043038f6bc3b36e86629620",
+      "field_mapping_sha256": "4230cd1986d5f13c5a33c1ab0b2dbbbac3ccbea2250549c6153479b490a89802",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "baseline_people": 725,
+      "baseline_commit": "bbb592344b02c6fb81319296aec97b98f98821ac",
+      "baseline_publication_status": "published",
+      "payload_sha256": "efde10872bb465ac596d578d81b815b53b67f877f0ef7e7ba9ca9ae60b7354c3",
+      "people": [
+        {
+          "person_id": "sdu-zhangna",
+          "source_candidate_sha256": "2fae000d7799b6ad23148c761ad1ebb4dbd76ac2b9a93c99f8f361c83c8c4ede",
+          "source_review_sha256": "4434b5c537ce8ec0184a4a3787555f7794b2d51918e11f95b7128537d032c6b1",
+          "counts": {
+            "education": 4,
+            "mentors": 0,
+            "appointments": 4,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品依单条所注来源等级区分官网书目与原刊元数据；均未读全文，原时间/卷期不自行修订。",
+            "三学位仅原表标签，授位未知；本人博导不是本人求学导师。",
+            "机构级原表另列1995.07–2000.07山东医科大学、2000.07–Now山东大学药学院；与细职级1997起山东大学原名并列，不强行校史更名或重排日期。",
+            "首篇仅官方书目，Yongjun Liu*、Na Zhang*星号未据此解释具体角色；第二篇原刊明文通讯作者Na Zhang。",
+            "第二篇2020-10-27为在线发表，2021为卷期年份；只原刊元数据非全文。"
+          ],
+          "org_identity": {
+            "source_unit": "药学院/药剂学研究所",
+            "canonical_org_id": "sdu-pharm-pharmaceutics",
+            "source_url": "https://www.pharm.sdu.edu.cn/info/1340/20450.htm",
+            "existing_node_reused": false,
+            "existing_parent_unchanged": true
+          }
+        },
+        {
+          "person_id": "sdu-wangliping",
+          "source_candidate_sha256": "d1fe6809fc7049278569d16beba6f46edfc6d10136ee975306dd7f4b1f311a13",
+          "source_review_sha256": "6ad9c65cdac831a6e4ee9a5acc82eeb0d772c31d664fe48e1b4478b82f2f0350",
+          "counts": {
+            "education": 7,
+            "mentors": 2,
+            "appointments": 3,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品依单条所注来源等级区分官网书目与原刊元数据；均未读全文，原时间/卷期不自行修订。",
+            "实时人事状态未独立核实；在职栏目和旧简历仅作来源标签。",
+            "正式学位论文导师、学位论文题名及答辩委员会未核实。",
+            "学习结束日期不自动转为授位日期；授位具体年月未独立披露。",
+            "无个人校区证据；不以学院页脚地址推定校区。",
+            "学位教育中的历史机构名按原文保留，不改写为推测历史校名。",
+            "硕士阶段学习单位山东大学、授位大学厦门大学分别记录；不得统一改成一个单位。",
+            "目录姓名/研究所归属可核，但每人完整href映射未留存，不称精确链接核验；原source_candidates_not_integrated_or_published只是原采集阶段状态，不替代本次来源审核。"
+          ],
+          "org_identity": {
+            "source_unit": "法学院",
+            "canonical_org_id": "sdu-law",
+            "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+            "existing_node_reused": false,
+            "existing_parent_unchanged": true
+          }
+        },
+        {
+          "person_id": "sdu-zhanghaiyan",
+          "source_candidate_sha256": "d1fe6809fc7049278569d16beba6f46edfc6d10136ee975306dd7f4b1f311a13",
+          "source_review_sha256": "6ad9c65cdac831a6e4ee9a5acc82eeb0d772c31d664fe48e1b4478b82f2f0350",
+          "counts": {
+            "education": 3,
+            "mentors": 0,
+            "appointments": 3,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品依单条所注来源等级区分官网书目与原刊元数据；均未读全文，原时间/卷期不自行修订。",
+            "实时人事状态未独立核实；在职栏目和旧简历仅作来源标签。",
+            "正式学位论文导师、学位论文题名及答辩委员会未核实。",
+            "学习结束日期不自动转为授位日期；授位具体年月未独立披露。",
+            "无个人校区证据；不以学院页脚地址推定校区。",
+            "学位教育中的历史机构名按原文保留，不改写为推测历史校名。",
+            "本科仅“法律系”与“学士”明确，专业与法学学位类别未据院系猜填。",
+            "目录姓名/研究所归属可核，但每人完整href映射未留存，不称精确链接核验；原source_candidates_not_integrated_or_published只是原采集阶段状态，不替代本次来源审核。"
+          ],
+          "org_identity": {
+            "source_unit": "法学院",
+            "canonical_org_id": "sdu-law",
+            "source_url": "https://www.law.sdu.edu.cn/info/1060/6280.htm",
+            "existing_node_reused": false,
+            "existing_parent_unchanged": true
+          }
+        },
+        {
+          "person_id": "sdu-yidonglan",
+          "source_candidate_sha256": "b8bd2b67a6593a853226bb28c9bd60a45b596d64f811ed2509c15e083c01a68d",
+          "source_review_sha256": "b2752c02a6c8a72265dfacec3544da089cc70bb50bfd3ca330e6a5907b1d9083",
+          "counts": {
+            "education": 3,
+            "mentors": 1,
+            "appointments": 5,
+            "publications": 2,
+            "teaching": 2
+          },
+          "visible_limits": [
+            "当前人事未知；原职称、资格与历史岗位保留，不据至今推实时在职。",
+            "只列已核职业样本，不代表院系全员、排名或完整履历。",
+            "学习结束不当授位日期；未知保持未知，非学位经历不新增授位。",
+            "作品依单条所注来源等级区分官网书目与原刊元数据；均未读全文，原时间/卷期不自行修订。",
+            "三个学位标签没有明确获授句，degree_awarded均null，不把学习结束年写成授位年。",
+            "杨国荣是博士阶段师承，未证明正式论文导师或当前人事。",
+            "中国哲学为名录学科栏目，不自动设为中国哲学研究所的人事隶属。",
+            "两条作品没有作者姓名列表；合编与独立作者只保存角色，不从页主补名单。",
+            "现职unknown、导航false，2025年起陈述不作为独立人事认证。",
+            "页面没有可见发布日期，页脚2006-2008是版权年份，不作为发布日期。"
+          ],
+          "org_identity": {
+            "source_unit": "儒学高等研究院",
+            "canonical_org_id": "sdu-confucian",
+            "source_url": "https://www.rxgdyjy.sdu.edu.cn/info/1095/6934.htm",
+            "existing_node_reused": false,
+            "existing_parent_unchanged": true
+          }
+        }
+      ],
+      "source_chains": {
+        "wave49": "仅active隐私最小化v2及SDU目标条目；不恢复已删元数据，不复制OUC内容。",
+        "wave72": "保留原来源采集阶段未集成文字作为历史阶段，现mapping是独立派生。",
+        "wave123": "孙的日期overlay不适用易。"
+      },
+      "public_field_check": {
+        "locator_handling": "原工具行号与文件只在private；公开语义位置/URL，不以hash替代职业事实。",
+        "teaching": "易2课程组原讲授栏目，role与本科/研究生note分别可见。",
+        "relationships": "3阶段师从非正式论文导师认证，事件引用需实际validate闭合。"
+      },
+      "semantic_locator_correction": {
+        "previous_payload_sha256": "62b20a5955340fb709665671fd4ad20f0b22bd5b7879c4b2edbc6bf8d1942d6b",
+        "changes": [
+          {
+            "path": "/people/0/education/0/source_locator",
+            "existed": true,
+            "before": "Education",
+            "after": "教育表：山东医科大学 Bachelor's Degree in Science 1988-09至1992-07"
+          },
+          {
+            "path": "/people/0/education/1/source_locator",
+            "existed": true,
+            "before": "Education",
+            "after": "教育表：山东医科大学 Master's Degree in Medicine 1992-09至1995-06"
+          },
+          {
+            "path": "/people/0/education/2/source_locator",
+            "existed": true,
+            "before": "Education",
+            "after": "教育表：中国药科大学 Doctoral Degree in Science 2001-09至2004-07"
+          },
+          {
+            "path": "/people/1/education/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "教育/研究访问经历：山东大学 法学学士 1982-09至1986-07"
+          },
+          {
+            "path": "/people/1/education/0/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "教育/研究访问经历：山东大学 法学学士 1982-09至1986-07",
+              "necessary_excerpt_sha256": "7b42f85b3bc139533299e02f6ee81977f193fcbd7b4b48eac95125c4915cdb13",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/education/1/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "教育/研究访问经历：山东大学 法学硕士 1986-09至1989-07"
+          },
+          {
+            "path": "/people/1/education/1/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "教育/研究访问经历：山东大学 法学硕士 1986-09至1989-07",
+              "necessary_excerpt_sha256": "516d87c3983251373ad80cdaedf955600515b0618a3d5f25b0deade2cb73883d",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/education/2/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "教育/研究访问经历：山东大学 法学博士 2002-09至2004-07"
+          },
+          {
+            "path": "/people/1/education/2/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "教育/研究访问经历：山东大学 法学博士 2002-09至2004-07",
+              "necessary_excerpt_sha256": "bc8a144517ce63e81d228351ba35e3fd2405c3b69e8796f2e725d0cc7293794c",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/education/3/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "教育/研究访问经历：美国哈佛大学 研究学者 2006-08至2007-08"
+          },
+          {
+            "path": "/people/1/education/3/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "教育/研究访问经历：美国哈佛大学 研究学者 2006-08至2007-08",
+              "necessary_excerpt_sha256": "3879764ff10e7a8b651bc9a7651cc1553a575b3145c560c4f7468f0d854d3ce3",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/education/4/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "教育/研究访问经历：日本早稻田大学 高级访问学者 2018-03至2018-04"
+          },
+          {
+            "path": "/people/1/education/4/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "教育/研究访问经历：日本早稻田大学 高级访问学者 2018-03至2018-04",
+              "necessary_excerpt_sha256": "9c647efde6588559104fc28c2834c64d963c6eecba145f41de0d118c3499ad17",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/education/5/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "教育/研究访问经历：美国加州大学伯克利分校 高级访问学者 2019-10至2019-12"
+          },
+          {
+            "path": "/people/1/education/5/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "教育/研究访问经历：美国加州大学伯克利分校 高级访问学者 2019-10至2019-12",
+              "necessary_excerpt_sha256": "e94b4f1e3824b1fbde3887181a1e78e7c6b9ef0ccbfdb1031b89e8e3d5df5af3",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/education/6/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "教育/研究访问经历：英国剑桥大学 访问学者 2020-02至2020-08"
+          },
+          {
+            "path": "/people/1/education/6/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "教育/研究访问经历：英国剑桥大学 访问学者 2020-02至2020-08",
+              "necessary_excerpt_sha256": "d162cb4dcbe996304555869b9ee188b7ae94736de78fa32fb0f76a77066eab7a",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/mentors/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "硕士阶段师从林国民句"
+          },
+          {
+            "path": "/people/1/mentors/0/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "硕士阶段师从林国民句",
+              "necessary_excerpt_sha256": "516d87c3983251373ad80cdaedf955600515b0618a3d5f25b0deade2cb73883d",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/mentors/1/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "博士阶段师从梁慧星句"
+          },
+          {
+            "path": "/people/1/mentors/1/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "博士阶段师从梁慧星句",
+              "necessary_excerpt_sha256": "bc8a144517ce63e81d228351ba35e3fd2405c3b69e8796f2e725d0cc7293794c",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/appointments/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "职业经历：山东大学 法律系/法学院 工作 1989-07"
+          },
+          {
+            "path": "/people/1/appointments/0/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "职业经历：山东大学 法律系/法学院 工作 1989-07",
+              "necessary_excerpt_sha256": "e9d55721f9cf46bbc8d1698e7115e520706df76f6d2054877c783c197de37e76",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/appointments/1/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "职业经历：山东大学 法律系/法学院 副教授 1997-09"
+          },
+          {
+            "path": "/people/1/appointments/1/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "职业经历：山东大学 法律系/法学院 副教授 1997-09",
+              "necessary_excerpt_sha256": "e9d55721f9cf46bbc8d1698e7115e520706df76f6d2054877c783c197de37e76",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/appointments/2/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "职业经历：山东大学 法律系/法学院 教授 2002-09"
+          },
+          {
+            "path": "/people/1/appointments/2/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "职业经历：山东大学 法律系/法学院 教授 2002-09",
+              "necessary_excerpt_sha256": "e9d55721f9cf46bbc8d1698e7115e520706df76f6d2054877c783c197de37e76",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/publications/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "专著栏目：亲子法研究"
+          },
+          {
+            "path": "/people/1/publications/0/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "专著栏目：亲子法研究",
+              "necessary_excerpt_sha256": "caf3d39ed1c8a1e9fabe50cb2278c801da2f8009c688e1bcddff17b5e3f1b0b2",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/1/publications/1/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "专著栏目：婚姻家庭法律制度研究"
+          },
+          {
+            "path": "/people/1/publications/1/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-wangliping-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1058/6254.htm",
+              "semantic_locator": "专著栏目：婚姻家庭法律制度研究",
+              "necessary_excerpt_sha256": "57ddf1b2d958015df62625e386f9f5dc882bcadb34b2b05c84dc85515c699f6d",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/2/education/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "教育/研究访问经历：华东政法大学 学士 1996-09至2000-06"
+          },
+          {
+            "path": "/people/2/education/0/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-zhanghaiyan-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1060/6280.htm",
+              "semantic_locator": "教育/研究访问经历：华东政法大学 学士 1996-09至2000-06",
+              "necessary_excerpt_sha256": "b06a7f30752efb917dcfa87d5da508ec2ed35baccccb49c3f717a07bc4bb2d30",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/2/education/1/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "教育/研究访问经历：山东大学 民商法学硕士 2000-09至2003-06"
+          },
+          {
+            "path": "/people/2/education/1/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-zhanghaiyan-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1060/6280.htm",
+              "semantic_locator": "教育/研究访问经历：山东大学 民商法学硕士 2000-09至2003-06",
+              "necessary_excerpt_sha256": "7471aca33f5163dbe40097234747e27ffc8f95e0d62d4c76db0d6aa6a49da9fa",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/2/education/2/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "教育/研究访问经历：中国人民大学 诉讼法学博士 2006-09至2009-06"
+          },
+          {
+            "path": "/people/2/education/2/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-zhanghaiyan-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1060/6280.htm",
+              "semantic_locator": "教育/研究访问经历：中国人民大学 诉讼法学博士 2006-09至2009-06",
+              "necessary_excerpt_sha256": "508057643711570803dd8ac2c42e21a5f48d887a1de991c849f18de6b4939435",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/2/appointments/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "职业经历：山东大学 法学院 教授"
+          },
+          {
+            "path": "/people/2/appointments/0/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-zhanghaiyan-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1060/6280.htm",
+              "semantic_locator": "职业经历：山东大学 法学院 教授",
+              "necessary_excerpt_sha256": "5bd0db85aa541262415fb688724b1dc1dee65f1c7bfff0e09920be558d4c3acb",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/2/appointments/1/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "职业经历：山东大学 交叉法学研究院 常务副院长"
+          },
+          {
+            "path": "/people/2/appointments/1/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-zhanghaiyan-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1060/6280.htm",
+              "semantic_locator": "职业经历：山东大学 交叉法学研究院 常务副院长",
+              "necessary_excerpt_sha256": "5bd0db85aa541262415fb688724b1dc1dee65f1c7bfff0e09920be558d4c3acb",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/2/appointments/2/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "职业经历：山东大学 法学院 副院长（曾任）"
+          },
+          {
+            "path": "/people/2/appointments/2/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-zhanghaiyan-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1060/6280.htm",
+              "semantic_locator": "职业经历：山东大学 法学院 副院长（曾任）",
+              "necessary_excerpt_sha256": "5bd0db85aa541262415fb688724b1dc1dee65f1c7bfff0e09920be558d4c3acb",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/2/publications/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "期刊论文栏目：论补充性责任人顺序利益的实现"
+          },
+          {
+            "path": "/people/2/publications/0/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-zhanghaiyan-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1060/6280.htm",
+              "semantic_locator": "期刊论文栏目：论补充性责任人顺序利益的实现",
+              "necessary_excerpt_sha256": "417ba687f494882bea294fb279bd4250faf3c3f46e6427e8c401570ff59e2a1c",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/2/publications/1/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "期刊论文栏目：执行和解担保制度之适用困境及其纾解"
+          },
+          {
+            "path": "/people/2/publications/1/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-zhanghaiyan-profile",
+              "source_url": "https://www.law.sdu.edu.cn/info/1060/6280.htm",
+              "semantic_locator": "期刊论文栏目：执行和解担保制度之适用困境及其纾解",
+              "necessary_excerpt_sha256": "7dd83c358c979e33e87ea57cd25a880c9284375372833bb13ae2354867c431cd",
+              "observed_at": "2026-10-24T19:48:44.418Z",
+              "retention_basis": "既有必要职业行摘录组合，仅字段证据；非本次访问或原HTTP认证"
+            }
+          },
+          {
+            "path": "/people/3/education/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "学习经历：雅典大学 学士"
+          },
+          {
+            "path": "/people/3/education/1/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "学习经历：南京大学 硕士"
+          },
+          {
+            "path": "/people/3/education/2/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "学习经历：华东师范大学 博士"
+          },
+          {
+            "path": "/people/3/mentors/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "阶段师承：杨国荣 博士"
+          },
+          {
+            "path": "/people/3/appointments/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "工作经历：华东师范大学 中国哲学兼职讲师"
+          },
+          {
+            "path": "/people/3/appointments/1/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "工作经历：IES Abroad上海分校 中国哲学兼职讲师"
+          },
+          {
+            "path": "/people/3/appointments/2/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "工作经历：上海师范大学 中国哲学讲师"
+          },
+          {
+            "path": "/people/3/appointments/3/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "工作经历：澳门大学 哲学高级讲师"
+          },
+          {
+            "path": "/people/3/appointments/4/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "工作经历：山东大学 副教授"
+          },
+          {
+            "path": "/people/3/publications/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "具名作品：Four Exemplars of Ru儒(Confucianism): Beyond Comparative Philosophy"
+          },
+          {
+            "path": "/people/3/publications/1/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "具名作品：The Irony of Confucius"
+          },
+          {
+            "path": "/people/3/teaching/0/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "讲授课程栏目：本科生 中希比较哲学、幽默与反讽哲学、早期儒家思想导论"
+          },
+          {
+            "path": "/people/3/teaching/1/source_locator",
+            "existed": false,
+            "before": null,
+            "after": "讲授课程栏目：研究生 《论语》细读、当代汉学与西方哲学、儒道思想专题"
+          },
+          {
+            "path": "/people/0/education/0/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-zhangna-education",
+              "source_url": "https://faculty.sdu.edu.cn/zhangna/en/index/448366/list/index.htm",
+              "semantic_locator": "教育表：山东医科大学 Bachelor's Degree in Science 1988-09至1992-07",
+              "necessary_excerpt_sha256": "9b7b701ba203f43422965e36795ec50b83312fb644afe0b1d2a16cb80ccdcda2",
+              "observed_at": "2026-10-24T15:16:17.692Z",
+              "retention_basis": "active v2既有教育表两行组合；未恢复任何已删元数据"
+            }
+          },
+          {
+            "path": "/people/0/education/1/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-zhangna-education",
+              "source_url": "https://faculty.sdu.edu.cn/zhangna/en/index/448366/list/index.htm",
+              "semantic_locator": "教育表：山东医科大学 Master's Degree in Medicine 1992-09至1995-06",
+              "necessary_excerpt_sha256": "1fd3bb4b242e130aa84f74e1595d202a80bf040587413d9410b74e518fd1f3b1",
+              "observed_at": "2026-10-24T15:16:17.692Z",
+              "retention_basis": "active v2既有教育表两行组合；未恢复任何已删元数据"
+            }
+          },
+          {
+            "path": "/people/0/education/2/source_excerpt_binding",
+            "existed": false,
+            "before": null,
+            "after": {
+              "source_id": "sdu-zhangna-education",
+              "source_url": "https://faculty.sdu.edu.cn/zhangna/en/index/448366/list/index.htm",
+              "semantic_locator": "教育表：中国药科大学 Doctoral Degree in Science 2001-09至2004-07",
+              "necessary_excerpt_sha256": "247c9038326ac927c6ab1cb88364310162981c2b9ec2dc5fa71089168ebf5848",
+              "observed_at": "2026-10-24T15:16:17.692Z",
+              "retention_basis": "active v2既有教育表两行组合；未恢复任何已删元数据"
+            }
+          }
+        ],
+        "inverse_exact_bytes": true,
+        "facts_dates_existing_source_hashes_unchanged": true
+      }
+    },
+    {
+      "schema_version": "sdu12-humanities-mapping-1",
+      "published_baseline_people": 725,
+      "published_baseline_commit": "bbb592344b02c6fb81319296aec97b98f98821ac",
+      "people": [
+        "sdu-sunlixin",
+        "sdu-fanghui",
+        "sdu-luhaobin",
+        "sdu-liusenlin"
+      ],
+      "input_hashes": {
+        "sdu-sunlixin": {
+          "source_candidate_sha256": "b8bd2b67a6593a853226bb28c9bd60a45b596d64f811ed2509c15e083c01a68d",
+          "review_sha256": "b2752c02a6c8a72265dfacec3544da089cc70bb50bfd3ca330e6a5907b1d9083"
+        },
+        "sdu-fanghui": {
+          "source_candidate_sha256": "8fd955250d021a51964a8ef769f4d48db187fba94c0fd34ba98495b1fa8dc0e8",
+          "review_sha256": "934068727b3f8de6ab6e71dfd7a6b7182a5b23faeaff4a1dccab6c5c4078d3bd"
+        },
+        "sdu-luhaobin": {
+          "source_candidate_sha256": "5b488d52e2dbb8fa397536a595f430df632a0cc002c27f7b19cbb9b9c8bb92ee",
+          "review_sha256": "d39c0b2550c837f670d6816c190bbce523b88a5b0f93d83bf6cf5cf9a639f981"
+        },
+        "sdu-liusenlin": {
+          "source_candidate_sha256": "5b488d52e2dbb8fa397536a595f430df632a0cc002c27f7b19cbb9b9c8bb92ee",
+          "review_sha256": "d39c0b2550c837f670d6816c190bbce523b88a5b0f93d83bf6cf5cf9a639f981"
+        }
+      },
+      "overlay_applied": [
+        {
+          "input_sha256": "b8bd2b67a6593a853226bb28c9bd60a45b596d64f811ed2509c15e083c01a68d",
+          "path": "/people/0/unknowns/4",
+          "before": "页面2021-03-10为展示发布日期；含更晚书目不反推更新时间；现职unknown。",
+          "after": "页面2021-03-10为展示发布日期；现职unknown。",
+          "exact_guard_pass": true
+        },
+        {
+          "input_sha256": "b750473876ab5c2642ca4d0060902c4d50f0ddff7132ed2630ea8233c9c8dc99",
+          "path": "/people/孙立新/4",
+          "before": "页面2021-03-10为展示发布日期；含更晚书目不反推更新时间；现职unknown。",
+          "after": "页面2021-03-10为展示发布日期；现职unknown。",
+          "exact_guard_pass": true
+        }
+      ],
+      "source_only_review_context": {
+        "sdu-sunlixin": {
+          "status": "PASS_SOURCE_FACTS_WITH_NARROW_METADATA_OVERLAY",
+          "meaning": "原阶段只核留存来源事实，不代表当时工程/实时人事/出版外核通过；本映射不删除或重写原审核语境。"
+        },
+        "sdu-fanghui": {
+          "status": "PASS_SOURCE_FACTS_ONLY_WITH_STATED_LIMITS",
+          "meaning": "原阶段只核留存来源事实，不代表当时工程/实时人事/出版外核通过；本映射不删除或重写原审核语境。"
+        },
+        "sdu-luhaobin": {
+          "status": "PASS_RETAINED_EXCERPT_SOURCE_CONSISTENCY",
+          "meaning": "原阶段只核留存来源事实，不代表当时工程/实时人事/出版外核通过；本映射不删除或重写原审核语境。"
+        },
+        "sdu-liusenlin": {
+          "status": "PASS_RETAINED_EXCERPT_SOURCE_CONSISTENCY",
+          "meaning": "原阶段只核留存来源事实，不代表当时工程/实时人事/出版外核通过；本映射不删除或重写原审核语境。"
+        }
+      },
+      "org_mapping": "复用725历史学院sdu-history且旧属性不改；同官方history.sdu.edu.cn目录标题/版权中文学院与原学院简介证据确认同单位。4新节点：世界史学系原目录展示parent；考古/文学院/哲学与社会发展学院parent未知。复合部门原文保留，不推行政树。",
+      "reused_org_evidence": {
+        "id": "sdu-history",
+        "baseline_url": "https://history.sdu.edu.cn/xygk/xyjj.htm",
+        "source_url": "https://history.sdu.edu.cn/szdw/xxsz.htm",
+        "quote": "版权所有 @山东大学历史学院",
+        "quote_sha256": "4c9c54cab49e358c2ccd54da638b945a8e54e9437e00aea9c8a5d5ec15541857"
+      },
+      "counts": {
+        "education": 15,
+        "appointments": 12,
+        "mentors": 7,
+        "publications": 7,
+        "teaching": 0
+      },
+      "semantic_limits": {
+        "sdu-sunlixin": [
+          "学习时段与授位日期分开；三项获授明确，授位年月与法人未独立核。",
+          "美因兹欧洲历史研究所只明确为奖学金来源，不补访问接收机构。",
+          "两段师承不是论文导师认证，导师身份节点与现职未另核。",
+          "两条专著书目没有作者姓名，不用个人页主人公补作者数组。",
+          "页面2021-03-10为展示发布日期；现职unknown。",
+          "原生目录目标已由父任务一次同URL恢复并核身份；不宣称www与无www字节等价。",
+          "来源只有部分必要职业摘录，原观察方法/时间窗及source-only审核语境保留；不是全页原始HTTP、新采或完整履历。",
+          "目的性样本非目录原序或全覆盖，现职/退休未独立核实，导航和现职计数关闭。",
+          "本人博导资格若有列示不等本人的求学导师；阶段导师不升级已证正式论文导师。",
+          "原目录世界史学系与旧本人页历史文化学院的称谓分别保留，不推改制或转任日期。美因兹仅奖学金提供者，访问接收机构未知。",
+          "来源称从事世界近现代史、德国史、中德关系史教学研究工作，未具名课程，不构造课程。"
+        ],
+        "sdu-fanghui": [
+          "三项学位有明确获授句，但授位日期和授位法人均未明确，不能以学习机构代填。",
+          "考古学院目录归属已核，但观察日现职、退休与行政任命仍未知。",
+          "无已证正式学位论文导师。",
+          "仅收录1条完整明列作者与年的官网作品，不补满2篇。",
+          "来源只有部分必要职业摘录，原观察方法/时间窗及source-only审核语境保留；不是全页原始HTTP、新采或完整履历。",
+          "目的性样本非目录原序或全覆盖，现职/退休未独立核实，导航和现职计数关闭。",
+          "本人博导资格若有列示不等本人的求学导师；阶段导师不升级已证正式论文导师。",
+          "旧页两院长/馆长无日期，不认为当前仍任；本人页中国青铜时代考古与目录夏商周考古各原文保留，不推具体教研室。",
+          "原目录浏览器呈现方辉且可见目标5416，已留职业正文2379，两页不声称相同/已点转。只一篇PNAS作品，Linda Nichals原拼写不纠正；教授和博士生导师标签保留，不加本人师承。"
+        ],
+        "sdu-luhaobin": [
+          "三项获授日期未知；联培不推额外学位。",
+          "三条阶段导师不是明确论文导师认证。",
+          "译者、原著作者和共著作者分开；书目未外核。",
+          "实时在职未知；目录归属与来源职业简介不等于人事认证。",
+          "页面显示日期不作最后更新时间。",
+          "来源只有部分必要职业摘录，原观察方法/时间窗及source-only审核语境保留；不是全页原始HTTP、新采或完整履历。",
+          "目的性样本非目录原序或全覆盖，现职/退休未独立核实，导航和现职计数关闭。",
+          "本人博导资格若有列示不等本人的求学导师；阶段导师不升级已证正式论文导师。",
+          "三明确获文学学位日期未知；联合培养博士是单独学习记录但不另增博士授位，导师仅对应该阶段。",
+          "译著原作者哈罗德·戈达德与四译者分别保存；《小说不小》两共著作者不改独著。",
+          "目录比较文学与世界文学/青年教师与本人研究所称谓保留，不推行政parent；页显示2022-09-19 09:49不作最后更新，原书目有2024/2025。"
+        ],
+        "sdu-liusenlin": [
+          "本科和硕士只明确毕业，授位保持未知。",
+          "博士明确获授；2001年6月仅作毕业日期，不倒填授位日期。",
+          "本人求学导师未披露。",
+          "历史院长任期和目录教授标签不证明实时任职。",
+          "书目作者串未知；两组出版标签不强行合并为同一版本。",
+          "页面发布日期不当最后更新时间；历史院校原名及来源括注分别保留。",
+          "来源只有部分必要职业摘录，原观察方法/时间窗及source-only审核语境保留；不是全页原始HTTP、新采或完整履历。",
+          "目的性样本非目录原序或全覆盖，现职/退休未独立核实，导航和现职计数关闭。",
+          "本人博导资格若有列示不等本人的求学导师；阶段导师不升级已证正式论文导师。",
+          "博士2001-06为在职毕业日期，不作授位日期；本科/硕士毕业不等获学位。",
+          "2018-04至2023-12院长为历史任期，非当前院长；烟台师范学院历史名及现鲁东大学来源括注分开。",
+          "《物与无》人民出版社2022和江苏人民出版社2013保留为两组标签，版本关系未知，不增加第二作品。"
+        ]
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/recovery/excerpts/0/quote",
+          "sha256": "3aa1100e421d1cf04f5ba29d2653d068e8a021aae8e6a7739b85541ebf431a3d"
+        },
+        {
+          "path": "/recovery/excerpts/1/quote",
+          "sha256": "d7025d18ae395ab1e1fb3bc3b1ddca8ea2b738e1f0cbea63a3100810cdf483e7"
+        },
+        {
+          "path": "/recovery/excerpts/2/quote",
+          "sha256": "3cb793c848faba6f4c99848e2a73bced7782c89904cbb4f668b4e7c41a30f5c6"
+        },
+        {
+          "path": "/sources/sdu-fang-profile/excerpts/0/quote",
+          "sha256": "0b53924f5d8453a92d050378da30fefac28abc6105d81af18710fe9014f4900f"
+        },
+        {
+          "path": "/sources/sdu-fang-profile/excerpts/1/quote",
+          "sha256": "cc51c1497f81e6797713275aaf2666cf4b10c8751b8abdc122d41037d11407ba"
+        },
+        {
+          "path": "/sources/sdu-fang-profile/excerpts/2/quote",
+          "sha256": "1e7a77819717ac2cfe8dee372b42ebc4144b3f7f6bf234b5f75b7bc8b9121f1f"
+        },
+        {
+          "path": "/sources/sdu-fang-profile/excerpts/3/quote",
+          "sha256": "39091684bbfd25b40c2d275226b6105f87bd11c0a7b45c6d6e222d41812ae084"
+        },
+        {
+          "path": "/sources/sdu-fang-mentorship/excerpts/0/quote",
+          "sha256": "46d14d6c9ab912f0735712e3d1187911ae3e5ee29913d6c425c6ec4a5bd63462"
+        },
+        {
+          "path": "/sources/sdu-fang-directory-browser/excerpts/0/quote",
+          "sha256": "927419438c956f82cb2c56d97b2e92614b0a0bec2099c1bcfae33f2a333601d6"
+        },
+        {
+          "path": "/sources/sdu-luhaobin-profile/excerpts/0/quote",
+          "sha256": "cdafdb5a759852ea73d2e0f2c5cb4b62d3d6fb6f28b6781dfe635823fc480052"
+        },
+        {
+          "path": "/sources/sdu-luhaobin-profile/excerpts/1/quote",
+          "sha256": "455edd81bbbb41581b43515bce6723f35bb449834cbaf8556082b778f109ef2c"
+        },
+        {
+          "path": "/sources/sdu-luhaobin-profile/excerpts/2/quote",
+          "sha256": "8fc7ee433f02f0a1d010a0f3a3e917adda0e04b2c9e55f85f68b0246e4f8dcc5"
+        },
+        {
+          "path": "/sources/sdu-luhaobin-profile/excerpts/3/quote",
+          "sha256": "bc51639bd1a0f0fb9565d19835a41ef5c2f4168818496791418979ec6ea68d77"
+        },
+        {
+          "path": "/sources/sdu-luhaobin-profile/excerpts/4/quote",
+          "sha256": "997ce8a995f6100a84e57ce9fc2add99a934f5d65de64638120700f60380d93c"
+        },
+        {
+          "path": "/sources/sdu-luhaobin-profile/excerpts/5/quote",
+          "sha256": "beaebc927cdb5625264683bb234d6e9a652d197b880f765e24b6c6e2d6a1d592"
+        },
+        {
+          "path": "/sources/sdu-luhaobin-profile/excerpts/6/quote",
+          "sha256": "8a209c9e4338a6e166a07e7d6b174807dee21fb732698652f0c645151ca3f8ca"
+        },
+        {
+          "path": "/sources/sdu-luhaobin-profile/excerpts/7/quote",
+          "sha256": "cdcab79a17c5407ed941540fa70c9adf711eb5c964637f7396996c0effec3d1b"
+        },
+        {
+          "path": "/sources/sdu-luhaobin-directory/excerpts/0/quote",
+          "sha256": "a0cc903721d9ec93d3bc2434cb522b638502dd4b2ee7c746dee4b8baf4608804"
+        },
+        {
+          "path": "/sources/sdu-luhaobin-directory/excerpts/1/quote",
+          "sha256": "b32408f3e7c8f92de6de3c697b5d1180046128dad22cac0d6ce4d7c09631a4fc"
+        },
+        {
+          "path": "/sources/sdu-luhaobin-directory/excerpts/2/quote",
+          "sha256": "d0fd57fcf8a919718f4cad6b6070ccfc8d06b0763150f56524ffe722fe6b110e"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-profile/excerpts/0/quote",
+          "sha256": "4dee392f7a4b359070d32b33bd3ec62397b89af96c288976928d2c130c772d07"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-profile/excerpts/1/quote",
+          "sha256": "fabfae4ce0c03c6144a0146242eb57888185b987a3e8f67759744e065027c8a3"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-profile/excerpts/2/quote",
+          "sha256": "0dcf156923336e100cca54aac4487d893039281c82241a121fac8f2bb9e8f295"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-profile/excerpts/3/quote",
+          "sha256": "a272a013c81c1308e3a4306b9f4b60069c941fcf55f561cd3e292823ed685ea9"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-profile/excerpts/4/quote",
+          "sha256": "1c24724bf0be1130bf9f78e54477940f2f82c74628f353b89ddeb07332989122"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-profile/excerpts/5/quote",
+          "sha256": "5c3ee3ed98ffd5313a08c8ef5e1c5cc22f8035b387ecf226cc6c00f5a9e3ec3e"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-profile/excerpts/6/quote",
+          "sha256": "e3478b675a1d4512e9e4f4a7a1b715bf8db9f587aac362864094835498916341"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-profile/excerpts/7/quote",
+          "sha256": "45d2024b956eaf4fc2662e1f0cf1aeaf6fa0c1c41fb0563a7c6552c5360d5d1f"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-profile/excerpts/8/quote",
+          "sha256": "68d9d0914fafa92392958738a17c19ee7eba7273efa3649725a75e53ac202fcf"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-profile/excerpts/9/quote",
+          "sha256": "f9b3a69bf80cf64d7e37718baf6f2c3f08ec15f8890ec5b81ea8c131501b9e2f"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-profile/excerpts/10/quote",
+          "sha256": "c0ac9c554470d081146c98823ef2ad9baeef2e17bfa006afb8110e6b97ffaeb9"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-directory/excerpts/0/quote",
+          "sha256": "4dee392f7a4b359070d32b33bd3ec62397b89af96c288976928d2c130c772d07"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-directory/excerpts/1/quote",
+          "sha256": "dc0c73aad377243dce522a46cdf37f6329dd2abee798e3b224c80e164f020447"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-directory/excerpts/2/quote",
+          "sha256": "2000ea236bc10b55d7f5d1afe77dcec05fae0101aa0cad499ad1ee46aee52584"
+        },
+        {
+          "path": "/sources/sdu-liusenlin-directory/excerpts/3/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "path": "/people/sdu-sunlixin/education/0/quote",
+          "sha256": "59be8f262c41cea1e676b0456a5eac7f0e5cbe8763fdb04fb6c51d1d0295246e"
+        },
+        {
+          "path": "/people/sdu-sunlixin/education/1/quote",
+          "sha256": "98cd79301b097feaa29c12b399b3ab1521f36d64bb49bde4c1b9f249972b7557"
+        },
+        {
+          "path": "/people/sdu-sunlixin/education/2/quote",
+          "sha256": "50e15375dc83d5c7eecc4adca2ca6f65b1d079ea037d9f59490de123ca58dbe2"
+        },
+        {
+          "path": "/people/sdu-sunlixin/professional_training/0/quote",
+          "sha256": "a171de32a3270222c77a5a0cd03b969962853703cbc209327c22df68815ca2b1"
+        },
+        {
+          "path": "/people/sdu-sunlixin/mentor_relations/0/quote",
+          "sha256": "98cd79301b097feaa29c12b399b3ab1521f36d64bb49bde4c1b9f249972b7557"
+        },
+        {
+          "path": "/people/sdu-sunlixin/mentor_relations/1/quote",
+          "sha256": "50e15375dc83d5c7eecc4adca2ca6f65b1d079ea037d9f59490de123ca58dbe2"
+        },
+        {
+          "path": "/people/sdu-sunlixin/appointments/0/quote",
+          "sha256": "56ca7f83b48c9fcf6ef751d099884cfa056e52ab71955aed8b5d21f4b46956b3"
+        },
+        {
+          "path": "/people/sdu-sunlixin/appointments/1/quote",
+          "sha256": "56ca7f83b48c9fcf6ef751d099884cfa056e52ab71955aed8b5d21f4b46956b3"
+        },
+        {
+          "path": "/people/sdu-sunlixin/appointments/2/quote",
+          "sha256": "56ca7f83b48c9fcf6ef751d099884cfa056e52ab71955aed8b5d21f4b46956b3"
+        },
+        {
+          "path": "/people/sdu-sunlixin/appointments/3/quote",
+          "sha256": "27ffb2e2f320bbc991b9faee652eab6e99d233aa349d06d969450be01a7516ea"
+        },
+        {
+          "path": "/people/sdu-sunlixin/appointments/4/quote",
+          "sha256": "27ffb2e2f320bbc991b9faee652eab6e99d233aa349d06d969450be01a7516ea"
+        },
+        {
+          "path": "/people/sdu-sunlixin/publications/0/quote",
+          "sha256": "8079d830775f8ae565dc6ec74f52eb1a95145a1e5a9ac8f0519f0ade55020859"
+        },
+        {
+          "path": "/people/sdu-sunlixin/publications/1/quote",
+          "sha256": "01d8378c3f4840cf9ef5b200034df6abfb58a1a849b5ee01e4e0434993ef6924"
+        },
+        {
+          "path": "/people/sdu-sunlixin/field_provenance/identity_and_title/quote",
+          "sha256": "183ce5e3b6fd7ea58771cd85b6a4c19215e9c57300f43c05d3717c0ea7eac0ff"
+        },
+        {
+          "path": "/people/sdu-sunlixin/field_provenance/directory_affiliation/quote",
+          "sha256": "a5cc9f2dd9a628a2a1709e03f402dded13f5a5608bf3e4a37d3984a9030fd594"
+        },
+        {
+          "path": "/people/sdu-sunlixin/field_provenance/research/quote",
+          "sha256": "6505ab17f15ddb732d61e3817db139d6ab49a52e6f81a4396fbc6489149936a3"
+        },
+        {
+          "path": "/people/sdu-sunlixin/education/sdu-sunlixin-本科/quote",
+          "sha256": "59be8f262c41cea1e676b0456a5eac7f0e5cbe8763fdb04fb6c51d1d0295246e"
+        },
+        {
+          "path": "/people/sdu-sunlixin/education/sdu-sunlixin-硕士/quote",
+          "sha256": "98cd79301b097feaa29c12b399b3ab1521f36d64bb49bde4c1b9f249972b7557"
+        },
+        {
+          "path": "/people/sdu-sunlixin/education/sdu-sunlixin-博士/quote",
+          "sha256": "50e15375dc83d5c7eecc4adca2ca6f65b1d079ea037d9f59490de123ca58dbe2"
+        },
+        {
+          "path": "/people/sdu-sunlixin/education/sdu-sunlixin-germany-visit/quote",
+          "sha256": "a171de32a3270222c77a5a0cd03b969962853703cbc209327c22df68815ca2b1"
+        },
+        {
+          "path": "/people/sdu-sunlixin/mentors/quote",
+          "sha256": "98cd79301b097feaa29c12b399b3ab1521f36d64bb49bde4c1b9f249972b7557"
+        },
+        {
+          "path": "/people/sdu-sunlixin/mentors/quote",
+          "sha256": "50e15375dc83d5c7eecc4adca2ca6f65b1d079ea037d9f59490de123ca58dbe2"
+        },
+        {
+          "path": "/people/sdu-sunlixin/appointments/quote",
+          "sha256": "56ca7f83b48c9fcf6ef751d099884cfa056e52ab71955aed8b5d21f4b46956b3"
+        },
+        {
+          "path": "/people/sdu-sunlixin/appointments/quote",
+          "sha256": "56ca7f83b48c9fcf6ef751d099884cfa056e52ab71955aed8b5d21f4b46956b3"
+        },
+        {
+          "path": "/people/sdu-sunlixin/appointments/quote",
+          "sha256": "56ca7f83b48c9fcf6ef751d099884cfa056e52ab71955aed8b5d21f4b46956b3"
+        },
+        {
+          "path": "/people/sdu-sunlixin/appointments/quote",
+          "sha256": "27ffb2e2f320bbc991b9faee652eab6e99d233aa349d06d969450be01a7516ea"
+        },
+        {
+          "path": "/people/sdu-sunlixin/appointments/quote",
+          "sha256": "27ffb2e2f320bbc991b9faee652eab6e99d233aa349d06d969450be01a7516ea"
+        },
+        {
+          "path": "/people/sdu-sunlixin/publications/sdu-sunlixin-work1/quote",
+          "sha256": "8079d830775f8ae565dc6ec74f52eb1a95145a1e5a9ac8f0519f0ade55020859"
+        },
+        {
+          "path": "/people/sdu-sunlixin/publications/sdu-sunlixin-work2/quote",
+          "sha256": "01d8378c3f4840cf9ef5b200034df6abfb58a1a849b5ee01e4e0434993ef6924"
+        },
+        {
+          "path": "/people/sdu-fanghui/appointments/0/quote",
+          "sha256": "cc51c1497f81e6797713275aaf2666cf4b10c8751b8abdc122d41037d11407ba"
+        },
+        {
+          "path": "/people/sdu-fanghui/appointments/1/quote",
+          "sha256": "cc51c1497f81e6797713275aaf2666cf4b10c8751b8abdc122d41037d11407ba"
+        },
+        {
+          "path": "/people/sdu-fanghui/appointments/2/quote",
+          "sha256": "cc51c1497f81e6797713275aaf2666cf4b10c8751b8abdc122d41037d11407ba"
+        },
+        {
+          "path": "/people/sdu-fanghui/publications/0/quote",
+          "sha256": "39091684bbfd25b40c2d275226b6105f87bd11c0a7b45c6d6e222d41812ae084"
+        },
+        {
+          "path": "/people/sdu-fanghui/education/0/quote",
+          "sha256": "0b53924f5d8453a92d050378da30fefac28abc6105d81af18710fe9014f4900f"
+        },
+        {
+          "path": "/people/sdu-fanghui/education/1/quote",
+          "sha256": "0b53924f5d8453a92d050378da30fefac28abc6105d81af18710fe9014f4900f"
+        },
+        {
+          "path": "/people/sdu-fanghui/education/2/quote",
+          "sha256": "0b53924f5d8453a92d050378da30fefac28abc6105d81af18710fe9014f4900f"
+        },
+        {
+          "path": "/people/sdu-fanghui/mentor_relations/0/quote",
+          "sha256": "46d14d6c9ab912f0735712e3d1187911ae3e5ee29913d6c425c6ec4a5bd63462"
+        },
+        {
+          "path": "/people/sdu-fanghui/mentor_relations/1/quote",
+          "sha256": "46d14d6c9ab912f0735712e3d1187911ae3e5ee29913d6c425c6ec4a5bd63462"
+        },
+        {
+          "path": "/people/sdu-fanghui/research_directions/0/quote",
+          "sha256": "1e7a77819717ac2cfe8dee372b42ebc4144b3f7f6bf234b5f75b7bc8b9121f1f"
+        },
+        {
+          "path": "/people/sdu-fanghui/field_provenance/directory_affiliation/quote",
+          "sha256": "927419438c956f82cb2c56d97b2e92614b0a0bec2099c1bcfae33f2a333601d6"
+        },
+        {
+          "path": "/people/sdu-fanghui/education/sdu-fanghui-education-1/quote",
+          "sha256": "0b53924f5d8453a92d050378da30fefac28abc6105d81af18710fe9014f4900f"
+        },
+        {
+          "path": "/people/sdu-fanghui/education/sdu-fanghui-education-2/quote",
+          "sha256": "0b53924f5d8453a92d050378da30fefac28abc6105d81af18710fe9014f4900f"
+        },
+        {
+          "path": "/people/sdu-fanghui/education/sdu-fanghui-education-3/quote",
+          "sha256": "0b53924f5d8453a92d050378da30fefac28abc6105d81af18710fe9014f4900f"
+        },
+        {
+          "path": "/people/sdu-fanghui/mentors/quote",
+          "sha256": "46d14d6c9ab912f0735712e3d1187911ae3e5ee29913d6c425c6ec4a5bd63462"
+        },
+        {
+          "path": "/people/sdu-fanghui/mentors/quote",
+          "sha256": "46d14d6c9ab912f0735712e3d1187911ae3e5ee29913d6c425c6ec4a5bd63462"
+        },
+        {
+          "path": "/people/sdu-fanghui/appointments/quote",
+          "sha256": "cc51c1497f81e6797713275aaf2666cf4b10c8751b8abdc122d41037d11407ba"
+        },
+        {
+          "path": "/people/sdu-fanghui/appointments/quote",
+          "sha256": "cc51c1497f81e6797713275aaf2666cf4b10c8751b8abdc122d41037d11407ba"
+        },
+        {
+          "path": "/people/sdu-fanghui/appointments/quote",
+          "sha256": "cc51c1497f81e6797713275aaf2666cf4b10c8751b8abdc122d41037d11407ba"
+        },
+        {
+          "path": "/people/sdu-fanghui/publications/sdu-fanghui-work-1/quote",
+          "sha256": "39091684bbfd25b40c2d275226b6105f87bd11c0a7b45c6d6e222d41812ae084"
+        },
+        {
+          "path": "/people/sdu-luhaobin/identity_evidence/0/quote",
+          "sha256": "cdafdb5a759852ea73d2e0f2c5cb4b62d3d6fb6f28b6781dfe635823fc480052"
+        },
+        {
+          "path": "/people/sdu-luhaobin/identity_evidence/1/quote",
+          "sha256": "455edd81bbbb41581b43515bce6723f35bb449834cbaf8556082b778f109ef2c"
+        },
+        {
+          "path": "/people/sdu-luhaobin/identity_evidence/2/quote",
+          "sha256": "a0cc903721d9ec93d3bc2434cb522b638502dd4b2ee7c746dee4b8baf4608804"
+        },
+        {
+          "path": "/people/sdu-luhaobin/identity_evidence/3/quote",
+          "sha256": "b32408f3e7c8f92de6de3c697b5d1180046128dad22cac0d6ce4d7c09631a4fc"
+        },
+        {
+          "path": "/people/sdu-luhaobin/identity_evidence/4/quote",
+          "sha256": "d0fd57fcf8a919718f4cad6b6070ccfc8d06b0763150f56524ffe722fe6b110e"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/0/evidence/0/quote",
+          "sha256": "8fc7ee433f02f0a1d010a0f3a3e917adda0e04b2c9e55f85f68b0246e4f8dcc5"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/1/evidence/0/quote",
+          "sha256": "bc51639bd1a0f0fb9565d19835a41ef5c2f4168818496791418979ec6ea68d77"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/2/evidence/0/quote",
+          "sha256": "997ce8a995f6100a84e57ce9fc2add99a934f5d65de64638120700f60380d93c"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/3/evidence/0/quote",
+          "sha256": "beaebc927cdb5625264683bb234d6e9a652d197b880f765e24b6c6e2d6a1d592"
+        },
+        {
+          "path": "/people/sdu-luhaobin/mentor_relations/0/evidence/0/quote",
+          "sha256": "bc51639bd1a0f0fb9565d19835a41ef5c2f4168818496791418979ec6ea68d77"
+        },
+        {
+          "path": "/people/sdu-luhaobin/mentor_relations/1/evidence/0/quote",
+          "sha256": "997ce8a995f6100a84e57ce9fc2add99a934f5d65de64638120700f60380d93c"
+        },
+        {
+          "path": "/people/sdu-luhaobin/mentor_relations/2/evidence/0/quote",
+          "sha256": "beaebc927cdb5625264683bb234d6e9a652d197b880f765e24b6c6e2d6a1d592"
+        },
+        {
+          "path": "/people/sdu-luhaobin/appointments/0/evidence/0/quote",
+          "sha256": "455edd81bbbb41581b43515bce6723f35bb449834cbaf8556082b778f109ef2c"
+        },
+        {
+          "path": "/people/sdu-luhaobin/publications/0/evidence/0/quote",
+          "sha256": "8a209c9e4338a6e166a07e7d6b174807dee21fb732698652f0c645151ca3f8ca"
+        },
+        {
+          "path": "/people/sdu-luhaobin/publications/1/evidence/0/quote",
+          "sha256": "cdcab79a17c5407ed941540fa70c9adf711eb5c964637f7396996c0effec3d1b"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/sdu-luhaobin-ba/evidence/0/quote",
+          "sha256": "8fc7ee433f02f0a1d010a0f3a3e917adda0e04b2c9e55f85f68b0246e4f8dcc5"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/sdu-luhaobin-ba/evidence/0/quote",
+          "sha256": "8fc7ee433f02f0a1d010a0f3a3e917adda0e04b2c9e55f85f68b0246e4f8dcc5"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/sdu-luhaobin-ma/evidence/0/quote",
+          "sha256": "bc51639bd1a0f0fb9565d19835a41ef5c2f4168818496791418979ec6ea68d77"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/sdu-luhaobin-ma/evidence/0/quote",
+          "sha256": "bc51639bd1a0f0fb9565d19835a41ef5c2f4168818496791418979ec6ea68d77"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/sdu-luhaobin-phd/evidence/0/quote",
+          "sha256": "997ce8a995f6100a84e57ce9fc2add99a934f5d65de64638120700f60380d93c"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/sdu-luhaobin-phd/evidence/0/quote",
+          "sha256": "997ce8a995f6100a84e57ce9fc2add99a934f5d65de64638120700f60380d93c"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/sdu-luhaobin-joint/evidence/0/quote",
+          "sha256": "beaebc927cdb5625264683bb234d6e9a652d197b880f765e24b6c6e2d6a1d592"
+        },
+        {
+          "path": "/people/sdu-luhaobin/education/sdu-luhaobin-joint/evidence/0/quote",
+          "sha256": "beaebc927cdb5625264683bb234d6e9a652d197b880f765e24b6c6e2d6a1d592"
+        },
+        {
+          "path": "/people/sdu-luhaobin/mentors/evidence/0/quote",
+          "sha256": "bc51639bd1a0f0fb9565d19835a41ef5c2f4168818496791418979ec6ea68d77"
+        },
+        {
+          "path": "/people/sdu-luhaobin/mentors/evidence/0/quote",
+          "sha256": "bc51639bd1a0f0fb9565d19835a41ef5c2f4168818496791418979ec6ea68d77"
+        },
+        {
+          "path": "/people/sdu-luhaobin/mentors/evidence/0/quote",
+          "sha256": "997ce8a995f6100a84e57ce9fc2add99a934f5d65de64638120700f60380d93c"
+        },
+        {
+          "path": "/people/sdu-luhaobin/mentors/evidence/0/quote",
+          "sha256": "997ce8a995f6100a84e57ce9fc2add99a934f5d65de64638120700f60380d93c"
+        },
+        {
+          "path": "/people/sdu-luhaobin/mentors/evidence/0/quote",
+          "sha256": "beaebc927cdb5625264683bb234d6e9a652d197b880f765e24b6c6e2d6a1d592"
+        },
+        {
+          "path": "/people/sdu-luhaobin/mentors/evidence/0/quote",
+          "sha256": "beaebc927cdb5625264683bb234d6e9a652d197b880f765e24b6c6e2d6a1d592"
+        },
+        {
+          "path": "/people/sdu-luhaobin/appointments/evidence/0/quote",
+          "sha256": "455edd81bbbb41581b43515bce6723f35bb449834cbaf8556082b778f109ef2c"
+        },
+        {
+          "path": "/people/sdu-luhaobin/appointments/evidence/0/quote",
+          "sha256": "455edd81bbbb41581b43515bce6723f35bb449834cbaf8556082b778f109ef2c"
+        },
+        {
+          "path": "/people/sdu-luhaobin/publications/sdu-luhaobin-work1/evidence/0/quote",
+          "sha256": "8a209c9e4338a6e166a07e7d6b174807dee21fb732698652f0c645151ca3f8ca"
+        },
+        {
+          "path": "/people/sdu-luhaobin/publications/sdu-luhaobin-work1/evidence/0/quote",
+          "sha256": "8a209c9e4338a6e166a07e7d6b174807dee21fb732698652f0c645151ca3f8ca"
+        },
+        {
+          "path": "/people/sdu-luhaobin/publications/sdu-luhaobin-work2/evidence/0/quote",
+          "sha256": "cdcab79a17c5407ed941540fa70c9adf711eb5c964637f7396996c0effec3d1b"
+        },
+        {
+          "path": "/people/sdu-luhaobin/publications/sdu-luhaobin-work2/evidence/0/quote",
+          "sha256": "cdcab79a17c5407ed941540fa70c9adf711eb5c964637f7396996c0effec3d1b"
+        },
+        {
+          "path": "/people/sdu-liusenlin/identity_evidence/0/quote",
+          "sha256": "4dee392f7a4b359070d32b33bd3ec62397b89af96c288976928d2c130c772d07"
+        },
+        {
+          "path": "/people/sdu-liusenlin/identity_evidence/1/quote",
+          "sha256": "fabfae4ce0c03c6144a0146242eb57888185b987a3e8f67759744e065027c8a3"
+        },
+        {
+          "path": "/people/sdu-liusenlin/identity_evidence/2/quote",
+          "sha256": "68d9d0914fafa92392958738a17c19ee7eba7273efa3649725a75e53ac202fcf"
+        },
+        {
+          "path": "/people/sdu-liusenlin/identity_evidence/3/quote",
+          "sha256": "4dee392f7a4b359070d32b33bd3ec62397b89af96c288976928d2c130c772d07"
+        },
+        {
+          "path": "/people/sdu-liusenlin/identity_evidence/4/quote",
+          "sha256": "dc0c73aad377243dce522a46cdf37f6329dd2abee798e3b224c80e164f020447"
+        },
+        {
+          "path": "/people/sdu-liusenlin/identity_evidence/5/quote",
+          "sha256": "2000ea236bc10b55d7f5d1afe77dcec05fae0101aa0cad499ad1ee46aee52584"
+        },
+        {
+          "path": "/people/sdu-liusenlin/identity_evidence/6/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "path": "/people/sdu-liusenlin/education/0/evidence/0/quote",
+          "sha256": "0dcf156923336e100cca54aac4487d893039281c82241a121fac8f2bb9e8f295"
+        },
+        {
+          "path": "/people/sdu-liusenlin/education/1/evidence/0/quote",
+          "sha256": "a272a013c81c1308e3a4306b9f4b60069c941fcf55f561cd3e292823ed685ea9"
+        },
+        {
+          "path": "/people/sdu-liusenlin/education/2/evidence/0/quote",
+          "sha256": "1c24724bf0be1130bf9f78e54477940f2f82c74628f353b89ddeb07332989122"
+        },
+        {
+          "path": "/people/sdu-liusenlin/nondegree_training/0/evidence/0/quote",
+          "sha256": "45d2024b956eaf4fc2662e1f0cf1aeaf6fa0c1c41fb0563a7c6552c5360d5d1f"
+        },
+        {
+          "path": "/people/sdu-liusenlin/appointments/0/evidence/0/quote",
+          "sha256": "5c3ee3ed98ffd5313a08c8ef5e1c5cc22f8035b387ecf226cc6c00f5a9e3ec3e"
+        },
+        {
+          "path": "/people/sdu-liusenlin/appointments/1/evidence/0/quote",
+          "sha256": "e3478b675a1d4512e9e4f4a7a1b715bf8db9f587aac362864094835498916341"
+        },
+        {
+          "path": "/people/sdu-liusenlin/appointments/2/evidence/0/quote",
+          "sha256": "68d9d0914fafa92392958738a17c19ee7eba7273efa3649725a75e53ac202fcf"
+        },
+        {
+          "path": "/people/sdu-liusenlin/publications/0/evidence/0/quote",
+          "sha256": "f9b3a69bf80cf64d7e37718baf6f2c3f08ec15f8890ec5b81ea8c131501b9e2f"
+        },
+        {
+          "path": "/people/sdu-liusenlin/publications/1/evidence/0/quote",
+          "sha256": "c0ac9c554470d081146c98823ef2ad9baeef2e17bfa006afb8110e6b97ffaeb9"
+        },
+        {
+          "path": "/people/sdu-liusenlin/education/sdu-liusenlin-ba/evidence/0/quote",
+          "sha256": "0dcf156923336e100cca54aac4487d893039281c82241a121fac8f2bb9e8f295"
+        },
+        {
+          "path": "/people/sdu-liusenlin/education/sdu-liusenlin-ba/evidence/0/quote",
+          "sha256": "0dcf156923336e100cca54aac4487d893039281c82241a121fac8f2bb9e8f295"
+        },
+        {
+          "path": "/people/sdu-liusenlin/education/sdu-liusenlin-ma/evidence/0/quote",
+          "sha256": "a272a013c81c1308e3a4306b9f4b60069c941fcf55f561cd3e292823ed685ea9"
+        },
+        {
+          "path": "/people/sdu-liusenlin/education/sdu-liusenlin-ma/evidence/0/quote",
+          "sha256": "a272a013c81c1308e3a4306b9f4b60069c941fcf55f561cd3e292823ed685ea9"
+        },
+        {
+          "path": "/people/sdu-liusenlin/education/sdu-liusenlin-phd/evidence/0/quote",
+          "sha256": "1c24724bf0be1130bf9f78e54477940f2f82c74628f353b89ddeb07332989122"
+        },
+        {
+          "path": "/people/sdu-liusenlin/education/sdu-liusenlin-phd/evidence/0/quote",
+          "sha256": "1c24724bf0be1130bf9f78e54477940f2f82c74628f353b89ddeb07332989122"
+        },
+        {
+          "path": "/people/sdu-liusenlin/education/sdu-liusenlin-cooperation/evidence/0/quote",
+          "sha256": "45d2024b956eaf4fc2662e1f0cf1aeaf6fa0c1c41fb0563a7c6552c5360d5d1f"
+        },
+        {
+          "path": "/people/sdu-liusenlin/education/sdu-liusenlin-cooperation/evidence/0/quote",
+          "sha256": "45d2024b956eaf4fc2662e1f0cf1aeaf6fa0c1c41fb0563a7c6552c5360d5d1f"
+        },
+        {
+          "path": "/people/sdu-liusenlin/appointments/evidence/0/quote",
+          "sha256": "5c3ee3ed98ffd5313a08c8ef5e1c5cc22f8035b387ecf226cc6c00f5a9e3ec3e"
+        },
+        {
+          "path": "/people/sdu-liusenlin/appointments/evidence/0/quote",
+          "sha256": "5c3ee3ed98ffd5313a08c8ef5e1c5cc22f8035b387ecf226cc6c00f5a9e3ec3e"
+        },
+        {
+          "path": "/people/sdu-liusenlin/appointments/evidence/0/quote",
+          "sha256": "e3478b675a1d4512e9e4f4a7a1b715bf8db9f587aac362864094835498916341"
+        },
+        {
+          "path": "/people/sdu-liusenlin/appointments/evidence/0/quote",
+          "sha256": "e3478b675a1d4512e9e4f4a7a1b715bf8db9f587aac362864094835498916341"
+        },
+        {
+          "path": "/people/sdu-liusenlin/appointments/evidence/0/quote",
+          "sha256": "68d9d0914fafa92392958738a17c19ee7eba7273efa3649725a75e53ac202fcf"
+        },
+        {
+          "path": "/people/sdu-liusenlin/appointments/evidence/0/quote",
+          "sha256": "68d9d0914fafa92392958738a17c19ee7eba7273efa3649725a75e53ac202fcf"
+        },
+        {
+          "path": "/people/sdu-liusenlin/publications/sdu-liusenlin-work1/evidence/0/quote",
+          "sha256": "f9b3a69bf80cf64d7e37718baf6f2c3f08ec15f8890ec5b81ea8c131501b9e2f"
+        },
+        {
+          "path": "/people/sdu-liusenlin/publications/sdu-liusenlin-work1/evidence/0/quote",
+          "sha256": "f9b3a69bf80cf64d7e37718baf6f2c3f08ec15f8890ec5b81ea8c131501b9e2f"
+        },
+        {
+          "path": "/people/sdu-liusenlin/publications/sdu-liusenlin-work2/evidence/0/quote",
+          "sha256": "c0ac9c554470d081146c98823ef2ad9baeef2e17bfa006afb8110e6b97ffaeb9"
+        },
+        {
+          "path": "/people/sdu-liusenlin/publications/sdu-liusenlin-work2/evidence/0/quote",
+          "sha256": "c0ac9c554470d081146c98823ef2ad9baeef2e17bfa006afb8110e6b97ffaeb9"
+        },
+        {
+          "path": "/org_units/sdu-archaeology/quote",
+          "sha256": "9860ef449fb6ec19137f65dfb264a86fc8f8087d465ec6d77c802df394822a37"
+        },
+        {
+          "path": "/org_units/sdu-literature/quote",
+          "sha256": "455edd81bbbb41581b43515bce6723f35bb449834cbaf8556082b778f109ef2c"
+        },
+        {
+          "path": "/org_units/sdu-philosophy-social-development/quote",
+          "sha256": "68d9d0914fafa92392958738a17c19ee7eba7273efa3649725a75e53ac202fcf"
+        }
+      ],
+      "mapping": "全部教育event_id原样保留；mentor按原明确阶段挂接真实event_id。来源education true规范degree且source_event_kind存原；unknown接收institution原null另存source_institution。孙两镜像overlay守卫；方不补第二作品；陆译者/原作者分离；刘毕业非授位、历史院长、两版标签不混。",
+      "semantic_locator_revision": {
+        "prior_payload_sha256": "b3e8ee17d7307c2d82af6dffb20a02e67348a9c27299157cc1524ce3497ff8c3",
+        "changes": [
+          {
+            "path": "/people/0/education/2/source_locator",
+            "before": "学习经历／1996—2000年获德国奖学金，师从约瑟夫·贝克尔（Josef Becker）教授在奥格斯堡大学哲学II系读博，获近现代史专业德",
+            "after": "学习经历／1996–2000奥格斯堡大学博士学习及获授句"
+          },
+          {
+            "path": "/people/0/mentors/1/source_locator",
+            "before": "师承／1996—2000年获德国奖学金，师从约瑟夫·贝克尔（Josef Becker）教授在奥格斯堡大学哲学II系读博，获近现代史专业德",
+            "after": "学习经历／奥格斯堡博士阶段师从约瑟夫·贝克尔"
+          },
+          {
+            "path": "/people/0/publications/1/source_locator",
+            "before": "学术书目／2. Das Chinabild der deutschen protestantischen Missionare des 19",
+            "after": "主要论著／专著第2项：德国新教传教士中国观，Marburg：Tectum Verlag，2002"
+          },
+          {
+            "path": "/people/1/education/0/source_locator",
+            "before": "education clauses only",
+            "after": "教育经历／1980–1984山东大学历史系考古专业学士获授句"
+          },
+          {
+            "path": "/people/1/education/1/source_locator",
+            "before": "education clauses only",
+            "after": "教育经历／1984–1987山东大学历史系考古专业硕士获授句"
+          },
+          {
+            "path": "/people/1/education/2/source_locator",
+            "before": "education clauses only",
+            "after": "教育经历／1989–1994山东大学历史系中国古代史博士获授句"
+          },
+          {
+            "path": "/people/1/mentors/0/source_locator",
+            "before": "mentorship clause only",
+            "after": "官网访谈／硕士阶段师从刘敦愿教授"
+          },
+          {
+            "path": "/people/1/mentors/1/source_locator",
+            "before": "mentorship clause only",
+            "after": "官网访谈／博士阶段师从田昌五教授"
+          },
+          {
+            "path": "/people/1/appointments/0/source_locator",
+            "before": "occupational clauses only",
+            "after": "职业简介／现任职务中历史文化学院院长条目"
+          },
+          {
+            "path": "/people/1/appointments/1/source_locator",
+            "before": "occupational clauses only",
+            "after": "职业简介／现任职务中文化遗产研究院院长条目"
+          },
+          {
+            "path": "/people/1/appointments/2/source_locator",
+            "before": "occupational clauses only",
+            "after": "职业简介／现任职务中博物馆馆长条目"
+          },
+          {
+            "path": "/people/1/publications/0/source_locator",
+            "before": "work #30 only",
+            "after": "学术书目第30项／The Imprint of China’s first emperor on the distant realm of eastern Shandong，PNAS，2010"
+          }
+        ],
+        "facts_dates_quotes_unchanged": true
+      }
+    },
+    {
+      "baseline_people": 725,
+      "baseline_commit": "bbb592344b02c6fb81319296aec97b98f98821ac",
+      "people": [
+        {
+          "person_id": "sdu-wangkefang",
+          "source_candidate_sha256": "5ec62eb496d7ad18528d624c00e019c0e70f20c8d12774efddddb775a7281672",
+          "source_evidence_sha256": "7e6738b436c5bf532cf4eb9a909758f50b48bd007190dca8a82771f6a7af08ad",
+          "source_review_sha256": "7640a7269240795f06e5776d4a32f41a81a5e1745d2a95ca887f779bd34f4ccc",
+          "education": 5,
+          "degree_true_false_null": [
+            2,
+            2,
+            1
+          ],
+          "appointments": 3,
+          "mentors": 0,
+          "publications": 2,
+          "teaching": 3
+        },
+        {
+          "person_id": "sdu-liyuli",
+          "source_candidate_sha256": "5ec62eb496d7ad18528d624c00e019c0e70f20c8d12774efddddb775a7281672",
+          "source_evidence_sha256": "7e6738b436c5bf532cf4eb9a909758f50b48bd007190dca8a82771f6a7af08ad",
+          "source_review_sha256": "7640a7269240795f06e5776d4a32f41a81a5e1745d2a95ca887f779bd34f4ccc",
+          "education": 4,
+          "degree_true_false_null": [
+            1,
+            2,
+            1
+          ],
+          "appointments": 5,
+          "mentors": 0,
+          "publications": 2,
+          "teaching": 3
+        },
+        {
+          "person_id": "sdu-lijing-nursing",
+          "source_candidate_sha256": "3f780536eca13adfb588686153ca622ab5c332a62c45f13afca8c8f9a07e64ad",
+          "source_evidence_sha256": "9258498d385d6f727dd5c1f6e7e28e970d005626c12c00658d8dc34a54052e59",
+          "source_review_sha256": "069b6a095a901eb09b55fde72bc9731a337816bbb762e7c8596894b19b3a34b6",
+          "education": 4,
+          "degree_true_false_null": [
+            3,
+            1,
+            0
+          ],
+          "appointments": 7,
+          "mentors": 0,
+          "publications": 2,
+          "teaching": 5
+        },
+        {
+          "person_id": "sdu-lichaofan-policy",
+          "source_candidate_sha256": "3f780536eca13adfb588686153ca622ab5c332a62c45f13afca8c8f9a07e64ad",
+          "source_evidence_sha256": "9258498d385d6f727dd5c1f6e7e28e970d005626c12c00658d8dc34a54052e59",
+          "source_review_sha256": "069b6a095a901eb09b55fde72bc9731a337816bbb762e7c8596894b19b3a34b6",
+          "education": 3,
+          "degree_true_false_null": [
+            2,
+            1,
+            0
+          ],
+          "appointments": 1,
+          "mentors": 0,
+          "publications": 2,
+          "teaching": 3
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "json_pointer": "/people/sdu-wangkefang/education/0/graduation_context/quote",
+          "sha256": "0960be5846e4eb38b40b37fa4ac15b00eae3da55f436560bff9b9cd50409f457"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/education/0/quote",
+          "sha256": "6473922a54eb5214576810d9d5417fbc8bde00755a8b4c78df3126d53e6be013"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/education/1/quote",
+          "sha256": "0960be5846e4eb38b40b37fa4ac15b00eae3da55f436560bff9b9cd50409f457"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/education/2/quote",
+          "sha256": "0960be5846e4eb38b40b37fa4ac15b00eae3da55f436560bff9b9cd50409f457"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/professional_training/0/quote",
+          "sha256": "6473922a54eb5214576810d9d5417fbc8bde00755a8b4c78df3126d53e6be013"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/professional_training/1/institution_alias_context/quote",
+          "sha256": "6473922a54eb5214576810d9d5417fbc8bde00755a8b4c78df3126d53e6be013"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/professional_training/1/quote",
+          "sha256": "6ef0bc55734a2ed7f7bc3205baa6f46c9f6f01c5903cc658be0883a18197d2ce"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/appointments/0/quote",
+          "sha256": "a4d4562a0d15d5ab053b48664756301659ad46cff356d7f1fa45c6a5af5f1ace"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/appointments/1/quote",
+          "sha256": "3568669bbf5c4a41c64c3a1996129783b7f14cd1448ca4c3e87901ef4db17528"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/appointments/2/historical_context/quote",
+          "sha256": "3568669bbf5c4a41c64c3a1996129783b7f14cd1448ca4c3e87901ef4db17528"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/appointments/2/quote",
+          "sha256": "a4d4562a0d15d5ab053b48664756301659ad46cff356d7f1fa45c6a5af5f1ace"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/teaching/0/quote",
+          "sha256": "4cbe720cae8bcc7266bc6c6c7bc4baa6c8e41524a2d23494760e1f532da06a95"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/teaching/1/quote",
+          "sha256": "4cbe720cae8bcc7266bc6c6c7bc4baa6c8e41524a2d23494760e1f532da06a95"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/teaching/2/quote",
+          "sha256": "4cbe720cae8bcc7266bc6c6c7bc4baa6c8e41524a2d23494760e1f532da06a95"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/publications/0/quote",
+          "sha256": "4dc70884da0101ee313cb8cf491805d98ddf1120552effaae40b08fb71b8e723"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/publications/1/quote",
+          "sha256": "4e902cf016d1b3949310ad01badc555aec5b5d12c86c5f1d232c259f21d7647a"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/research_directions/0/quote",
+          "sha256": "7c6342ffa2fa2ffc7b21cb60275c46341469f1858aa31d9c34ff84625ffb590f"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/field_provenance/directory_affiliation/quote",
+          "sha256": "a95eda344b79a0518a50e0cda15496575dd9ed766051fa1b7d6603698da3825c"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/field_provenance/directory_person_listing/quote",
+          "sha256": "dd1244677dbc2b3522ca73758c2343529f00b85f7850bec996208db4808499ea"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/conflicts/0/evidence/0/quote",
+          "sha256": "6473922a54eb5214576810d9d5417fbc8bde00755a8b4c78df3126d53e6be013"
+        },
+        {
+          "json_pointer": "/people/sdu-wangkefang/conflicts/0/evidence/1/quote",
+          "sha256": "0960be5846e4eb38b40b37fa4ac15b00eae3da55f436560bff9b9cd50409f457"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "dd1244677dbc2b3522ca73758c2343529f00b85f7850bec996208db4808499ea"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "4cbe720cae8bcc7266bc6c6c7bc4baa6c8e41524a2d23494760e1f532da06a95"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "7c6342ffa2fa2ffc7b21cb60275c46341469f1858aa31d9c34ff84625ffb590f"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "a4d4562a0d15d5ab053b48664756301659ad46cff356d7f1fa45c6a5af5f1ace"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "6473922a54eb5214576810d9d5417fbc8bde00755a8b4c78df3126d53e6be013"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "4dc70884da0101ee313cb8cf491805d98ddf1120552effaae40b08fb71b8e723"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "4e902cf016d1b3949310ad01badc555aec5b5d12c86c5f1d232c259f21d7647a"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "a95eda344b79a0518a50e0cda15496575dd9ed766051fa1b7d6603698da3825c"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "2b6d027dcd55bb40a2072f016192bb9565b9a296a23ab1b1dc55fc5c9a4f7c03"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "82ffd7c2995cd6ec9e7a216e53d69b371dabaac0cae5bcbd0631b0c60647ccb5"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "0960be5846e4eb38b40b37fa4ac15b00eae3da55f436560bff9b9cd50409f457"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "6ef0bc55734a2ed7f7bc3205baa6f46c9f6f01c5903cc658be0883a18197d2ce"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "3568669bbf5c4a41c64c3a1996129783b7f14cd1448ca4c3e87901ef4db17528"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "bccd3cd26427d07505b5a7ace9954bb6dc987600d90a5a01c0f2bd57fa56cf29"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "16592526a2231db3ea60760b4ed10b8650d2c9f32a8bb06b196cddf89d44b927"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "ef39a5bff12afa1f414d9c10bb757027c566246045d763a12a62bfb810373382"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "dd1244677dbc2b3522ca73758c2343529f00b85f7850bec996208db4808499ea"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "43878a3e0c3274d51c2f07170b8ff83ee5eca604554272f08e0018be522cf8ee"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "dd1244677dbc2b3522ca73758c2343529f00b85f7850bec996208db4808499ea"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "018d927d5b7ee8e0d583c9b473633dcd8a933b8886e735e383aa1d11ec05237f"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "a95eda344b79a0518a50e0cda15496575dd9ed766051fa1b7d6603698da3825c"
+        },
+        {
+          "json_pointer": "/graduation_context/quote",
+          "sha256": "0960be5846e4eb38b40b37fa4ac15b00eae3da55f436560bff9b9cd50409f457"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6473922a54eb5214576810d9d5417fbc8bde00755a8b4c78df3126d53e6be013"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0960be5846e4eb38b40b37fa4ac15b00eae3da55f436560bff9b9cd50409f457"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0960be5846e4eb38b40b37fa4ac15b00eae3da55f436560bff9b9cd50409f457"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6473922a54eb5214576810d9d5417fbc8bde00755a8b4c78df3126d53e6be013"
+        },
+        {
+          "json_pointer": "/institution_alias_context/quote",
+          "sha256": "6473922a54eb5214576810d9d5417fbc8bde00755a8b4c78df3126d53e6be013"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6ef0bc55734a2ed7f7bc3205baa6f46c9f6f01c5903cc658be0883a18197d2ce"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4cbe720cae8bcc7266bc6c6c7bc4baa6c8e41524a2d23494760e1f532da06a95"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4cbe720cae8bcc7266bc6c6c7bc4baa6c8e41524a2d23494760e1f532da06a95"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4cbe720cae8bcc7266bc6c6c7bc4baa6c8e41524a2d23494760e1f532da06a95"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4dc70884da0101ee313cb8cf491805d98ddf1120552effaae40b08fb71b8e723"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4e902cf016d1b3949310ad01badc555aec5b5d12c86c5f1d232c259f21d7647a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a95eda344b79a0518a50e0cda15496575dd9ed766051fa1b7d6603698da3825c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b2680619a78c48329984c506a7f06bd66476bcefb05a83b9711b7173b796589c"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/education/0/quote",
+          "sha256": "1def4a79299cbf6caa21943204cfcd3959746d2f55284e0951ef358f7095b869"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/education/1/study_dates_context/quote",
+          "sha256": "4a5019fc3cdf0575366d74fd601a2e3f61c48cf7a6f6557c56ad31ac907db66f"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/education/1/degree_label_context/quote",
+          "sha256": "bd49142b13b2f244e3b07776712e0b594c9dbdca469bee2be618754a41f614da"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/education/1/quote",
+          "sha256": "5781062164c0ca77d027412259753a6516ed3cdd9ac5a2694a27c80b4c28d3dc"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/professional_training/0/underlying_degree_evidence/quote",
+          "sha256": "5781062164c0ca77d027412259753a6516ed3cdd9ac5a2694a27c80b4c28d3dc"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/professional_training/0/quote",
+          "sha256": "e4895a2e4b77a22b54649bec053987083a92e628ff5378677f72c15b6f728e81"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/professional_training/1/quote",
+          "sha256": "f025f8ac6ba9aab4e82a97d32283e6630ba5cd29944595b3a86700e8e9b61824"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/appointments/0/end_context/quote",
+          "sha256": "9225ee12a74e2ffa9e2b00d1c375892093ef55b375503341fb13fbf515fa7ffd"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/appointments/0/quote",
+          "sha256": "415fc2d7b317ee3586a5cc70f64da29393e2114ae153aea24a0cbe9c568d9170"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/appointments/1/quote",
+          "sha256": "a79b5f5014d9dfd82eabfa36cf7f3106be367c4962b847556e9b2b227bdc7a5e"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/appointments/2/end_context/quote",
+          "sha256": "d35014a16cf02feb87d2b66b1e5fc07a9c1a16e6dd6bb9a59c5dd15f4e0652c1"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/appointments/2/quote",
+          "sha256": "740a97bbcfdc577376beeb130634ba6788ab544250c7af5fbd1f805c26196281"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/appointments/3/quote",
+          "sha256": "032b883181bd4e4326bab97d2122b20afba6351b959c6b6198b043b5c1d920a9"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/appointments/4/quote",
+          "sha256": "b2680619a78c48329984c506a7f06bd66476bcefb05a83b9711b7173b796589c"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/teaching/0/quote",
+          "sha256": "f878e531b798689ff7ab1bce8aac8de20806afdddfb08625b191997d73c9d951"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/teaching/1/quote",
+          "sha256": "f878e531b798689ff7ab1bce8aac8de20806afdddfb08625b191997d73c9d951"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/teaching/2/quote",
+          "sha256": "f878e531b798689ff7ab1bce8aac8de20806afdddfb08625b191997d73c9d951"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/publications/0/quote",
+          "sha256": "1a731812a898df6b0932481bb0df35792b0f7a791c28921643a2e39e602156a4"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/publications/1/quote",
+          "sha256": "7e3fc895e79a0311737d149dae20402e3bfb054eb912fab367104e1db6c04ac2"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/research_directions/0/quote",
+          "sha256": "e6717d05cd9968f012d329d2099bc1c5ae51ed3bdfb8f6804b067a6a8240c65a"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/field_provenance/directory_affiliation/quote",
+          "sha256": "a95eda344b79a0518a50e0cda15496575dd9ed766051fa1b7d6603698da3825c"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/field_provenance/directory_person_listing/quote",
+          "sha256": "018d927d5b7ee8e0d583c9b473633dcd8a933b8886e735e383aa1d11ec05237f"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/field_provenance/department_below_school/quote",
+          "sha256": "b2680619a78c48329984c506a7f06bd66476bcefb05a83b9711b7173b796589c"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/english_name_identity_bridge/evidence/0/quote",
+          "sha256": "4eb63ae2b9fe391096afe6aa9ee6abdbb063195fc9037de5bd704b83e11acc36"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/english_name_identity_bridge/evidence/1/quote",
+          "sha256": "11326814264419a16e0efad7165e11399d79a7a4f71fd8d7e3b462da40db7d1d"
+        },
+        {
+          "json_pointer": "/people/sdu-liyuli/english_name_identity_bridge/evidence/2/quote",
+          "sha256": "ba7f98b24daad56494c2f2d9813d606289a53de752b067f87d6e1abdec69cbf5"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "bccd3cd26427d07505b5a7ace9954bb6dc987600d90a5a01c0f2bd57fa56cf29"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "16592526a2231db3ea60760b4ed10b8650d2c9f32a8bb06b196cddf89d44b927"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "ef39a5bff12afa1f414d9c10bb757027c566246045d763a12a62bfb810373382"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "dd1244677dbc2b3522ca73758c2343529f00b85f7850bec996208db4808499ea"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "43878a3e0c3274d51c2f07170b8ff83ee5eca604554272f08e0018be522cf8ee"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "dd1244677dbc2b3522ca73758c2343529f00b85f7850bec996208db4808499ea"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "018d927d5b7ee8e0d583c9b473633dcd8a933b8886e735e383aa1d11ec05237f"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "a95eda344b79a0518a50e0cda15496575dd9ed766051fa1b7d6603698da3825c"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "018d927d5b7ee8e0d583c9b473633dcd8a933b8886e735e383aa1d11ec05237f"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "f878e531b798689ff7ab1bce8aac8de20806afdddfb08625b191997d73c9d951"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "e6717d05cd9968f012d329d2099bc1c5ae51ed3bdfb8f6804b067a6a8240c65a"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "4eb63ae2b9fe391096afe6aa9ee6abdbb063195fc9037de5bd704b83e11acc36"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "5781062164c0ca77d027412259753a6516ed3cdd9ac5a2694a27c80b4c28d3dc"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "e4895a2e4b77a22b54649bec053987083a92e628ff5378677f72c15b6f728e81"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "415fc2d7b317ee3586a5cc70f64da29393e2114ae153aea24a0cbe9c568d9170"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "f025f8ac6ba9aab4e82a97d32283e6630ba5cd29944595b3a86700e8e9b61824"
+        },
+        {
+          "json_pointer": "/excerpts/8/quote",
+          "sha256": "a79b5f5014d9dfd82eabfa36cf7f3106be367c4962b847556e9b2b227bdc7a5e"
+        },
+        {
+          "json_pointer": "/excerpts/9/quote",
+          "sha256": "740a97bbcfdc577376beeb130634ba6788ab544250c7af5fbd1f805c26196281"
+        },
+        {
+          "json_pointer": "/excerpts/10/quote",
+          "sha256": "032b883181bd4e4326bab97d2122b20afba6351b959c6b6198b043b5c1d920a9"
+        },
+        {
+          "json_pointer": "/excerpts/11/quote",
+          "sha256": "b2680619a78c48329984c506a7f06bd66476bcefb05a83b9711b7173b796589c"
+        },
+        {
+          "json_pointer": "/excerpts/12/quote",
+          "sha256": "1a731812a898df6b0932481bb0df35792b0f7a791c28921643a2e39e602156a4"
+        },
+        {
+          "json_pointer": "/excerpts/13/quote",
+          "sha256": "7e3fc895e79a0311737d149dae20402e3bfb054eb912fab367104e1db6c04ac2"
+        },
+        {
+          "json_pointer": "/excerpts/0/quote",
+          "sha256": "11326814264419a16e0efad7165e11399d79a7a4f71fd8d7e3b462da40db7d1d"
+        },
+        {
+          "json_pointer": "/excerpts/1/quote",
+          "sha256": "668260b169e7d4a6822e4ef1089ea0abe8964b6b3c7345ebc651fd9b82f9ed44"
+        },
+        {
+          "json_pointer": "/excerpts/2/quote",
+          "sha256": "90fd94ca012f148ae8f985aabb5fd29a9d74b5482f17592db10f8186e1d0085d"
+        },
+        {
+          "json_pointer": "/excerpts/3/quote",
+          "sha256": "bd49142b13b2f244e3b07776712e0b594c9dbdca469bee2be618754a41f614da"
+        },
+        {
+          "json_pointer": "/excerpts/4/quote",
+          "sha256": "ba7f98b24daad56494c2f2d9813d606289a53de752b067f87d6e1abdec69cbf5"
+        },
+        {
+          "json_pointer": "/excerpts/5/quote",
+          "sha256": "4a5019fc3cdf0575366d74fd601a2e3f61c48cf7a6f6557c56ad31ac907db66f"
+        },
+        {
+          "json_pointer": "/excerpts/6/quote",
+          "sha256": "1def4a79299cbf6caa21943204cfcd3959746d2f55284e0951ef358f7095b869"
+        },
+        {
+          "json_pointer": "/excerpts/7/quote",
+          "sha256": "a21424469cfda39c2874f1267d3b209aea21b3dc7ac93fac1c17249316ddc296"
+        },
+        {
+          "json_pointer": "/excerpts/8/quote",
+          "sha256": "d35014a16cf02feb87d2b66b1e5fc07a9c1a16e6dd6bb9a59c5dd15f4e0652c1"
+        },
+        {
+          "json_pointer": "/excerpts/9/quote",
+          "sha256": "9225ee12a74e2ffa9e2b00d1c375892093ef55b375503341fb13fbf515fa7ffd"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1def4a79299cbf6caa21943204cfcd3959746d2f55284e0951ef358f7095b869"
+        },
+        {
+          "json_pointer": "/study_dates_context/quote",
+          "sha256": "4a5019fc3cdf0575366d74fd601a2e3f61c48cf7a6f6557c56ad31ac907db66f"
+        },
+        {
+          "json_pointer": "/degree_label_context/quote",
+          "sha256": "bd49142b13b2f244e3b07776712e0b594c9dbdca469bee2be618754a41f614da"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "5781062164c0ca77d027412259753a6516ed3cdd9ac5a2694a27c80b4c28d3dc"
+        },
+        {
+          "json_pointer": "/underlying_degree_evidence/quote",
+          "sha256": "5781062164c0ca77d027412259753a6516ed3cdd9ac5a2694a27c80b4c28d3dc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "e4895a2e4b77a22b54649bec053987083a92e628ff5378677f72c15b6f728e81"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f025f8ac6ba9aab4e82a97d32283e6630ba5cd29944595b3a86700e8e9b61824"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f878e531b798689ff7ab1bce8aac8de20806afdddfb08625b191997d73c9d951"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f878e531b798689ff7ab1bce8aac8de20806afdddfb08625b191997d73c9d951"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "f878e531b798689ff7ab1bce8aac8de20806afdddfb08625b191997d73c9d951"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "1a731812a898df6b0932481bb0df35792b0f7a791c28921643a2e39e602156a4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7e3fc895e79a0311737d149dae20402e3bfb054eb912fab367104e1db6c04ac2"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a95eda344b79a0518a50e0cda15496575dd9ed766051fa1b7d6603698da3825c"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "b2680619a78c48329984c506a7f06bd66476bcefb05a83b9711b7173b796589c"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/education/0/quote",
+          "sha256": "0081cfc9e265243fca1d15ab9fd0f58b14634f47755b6a3492cb5eaacb22b681"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/education/1/quote",
+          "sha256": "66002560cf520b67616e5ba232669dfc47aab5440deb9577e420aa3d46a409e4"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/education/2/quote",
+          "sha256": "8f1b7761741f61283d1b6979d0e0394308fa8b77e7c096463e35e0bc2f4df374"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/professional_training/0/quote",
+          "sha256": "8e5c5ccb8cdf8eb4caea6b57258e7276a1c2bcde1fa284b33c49338c0ab94f17"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/appointments/0/quote",
+          "sha256": "2a3d6765668886c092cfc7227da41bf2748fb3b931c2a829121de32948997210"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/appointments/1/quote",
+          "sha256": "3c8cf6831006d8370ec44a9a5572fd59ec0b409018018c4f281a274bdcf36bd0"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/appointments/2/quote",
+          "sha256": "ffa36b6e7b3adfcb4441e2cb628f7e2e1989cea3f9fc5c37c3132ed7f0d36f04"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/appointments/3/quote",
+          "sha256": "cb872ffb2921803f3f0ab3fb6b7428a7781790ff64bff393529c7ff12916d536"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/appointments/4/quote",
+          "sha256": "b902412463b83cfa77925163d0bacc7a77f176f7c1b6637fde11c585e74a0043"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/appointments/5/quote",
+          "sha256": "5edb98296001d3098ec7f9aa78e233f561e68f41a2710300865afaacf000fdf4"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/appointments/6/quote",
+          "sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/research_directions/0/quote",
+          "sha256": "3c46a074d8d4ec914a4f8eacab248435fcb6bba462bf0b868523607bc1db0b9b"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/research_directions/1/quote",
+          "sha256": "3c46a074d8d4ec914a4f8eacab248435fcb6bba462bf0b868523607bc1db0b9b"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/publications/0/quote",
+          "sha256": "c5ae7394832cbde425c2e40630f865d25e6301a426ccc25fa6110797410b3718"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/publications/1/quote",
+          "sha256": "66968734bf60eca987f2c6d98c89667a7877d20f0584fa5c3bcea6fa8b568530"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/teaching/0/quote",
+          "sha256": "4f805922049667a21e533cc52fb708b35d9fe2b9dc11e997d573c594e073379a"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/teaching/1/quote",
+          "sha256": "4f805922049667a21e533cc52fb708b35d9fe2b9dc11e997d573c594e073379a"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/teaching/2/quote",
+          "sha256": "4f805922049667a21e533cc52fb708b35d9fe2b9dc11e997d573c594e073379a"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/teaching/3/quote",
+          "sha256": "4f805922049667a21e533cc52fb708b35d9fe2b9dc11e997d573c594e073379a"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/teaching/4/quote",
+          "sha256": "4f805922049667a21e533cc52fb708b35d9fe2b9dc11e997d573c594e073379a"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/identity_evidence/0/quote",
+          "sha256": "5efe12ba8c2224507afee85a8deea3e0384f67f18d2608cf26f7644543703058"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/identity_evidence/1/quote",
+          "sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7"
+        },
+        {
+          "json_pointer": "/people/sdu-lijing-nursing/identity_evidence/2/quote",
+          "sha256": "28b6b38ee93e5c16fc0bb8718277a0f2846e13ceb647355aabb94e06f2f2e60e"
+        },
+        {
+          "json_pointer": "/0/evidence/quote",
+          "sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7"
+        },
+        {
+          "json_pointer": "/1/evidence/quote",
+          "sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7"
+        },
+        {
+          "json_pointer": "/2/evidence/quote",
+          "sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7"
+        },
+        {
+          "json_pointer": "/3/evidence/quote",
+          "sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b"
+        },
+        {
+          "json_pointer": "/4/evidence/quote",
+          "sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b"
+        },
+        {
+          "json_pointer": "/5/evidence/quote",
+          "sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "6045dad998278ab7771df096e2c733c7d57d8bd1edc521c1c4144e976b941f6b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "4f805922049667a21e533cc52fb708b35d9fe2b9dc11e997d573c594e073379a"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "3c46a074d8d4ec914a4f8eacab248435fcb6bba462bf0b868523607bc1db0b9b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "8e5c5ccb8cdf8eb4caea6b57258e7276a1c2bcde1fa284b33c49338c0ab94f17"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "8f1b7761741f61283d1b6979d0e0394308fa8b77e7c096463e35e0bc2f4df374"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "66002560cf520b67616e5ba232669dfc47aab5440deb9577e420aa3d46a409e4"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "0081cfc9e265243fca1d15ab9fd0f58b14634f47755b6a3492cb5eaacb22b681"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7"
+        },
+        {
+          "json_pointer": "/professional_excerpts/8/quote",
+          "sha256": "5edb98296001d3098ec7f9aa78e233f561e68f41a2710300865afaacf000fdf4"
+        },
+        {
+          "json_pointer": "/professional_excerpts/9/quote",
+          "sha256": "b902412463b83cfa77925163d0bacc7a77f176f7c1b6637fde11c585e74a0043"
+        },
+        {
+          "json_pointer": "/professional_excerpts/10/quote",
+          "sha256": "cb872ffb2921803f3f0ab3fb6b7428a7781790ff64bff393529c7ff12916d536"
+        },
+        {
+          "json_pointer": "/professional_excerpts/11/quote",
+          "sha256": "ffa36b6e7b3adfcb4441e2cb628f7e2e1989cea3f9fc5c37c3132ed7f0d36f04"
+        },
+        {
+          "json_pointer": "/professional_excerpts/12/quote",
+          "sha256": "3c8cf6831006d8370ec44a9a5572fd59ec0b409018018c4f281a274bdcf36bd0"
+        },
+        {
+          "json_pointer": "/professional_excerpts/13/quote",
+          "sha256": "2a3d6765668886c092cfc7227da41bf2748fb3b931c2a829121de32948997210"
+        },
+        {
+          "json_pointer": "/professional_excerpts/14/quote",
+          "sha256": "c5ae7394832cbde425c2e40630f865d25e6301a426ccc25fa6110797410b3718"
+        },
+        {
+          "json_pointer": "/professional_excerpts/15/quote",
+          "sha256": "66968734bf60eca987f2c6d98c89667a7877d20f0584fa5c3bcea6fa8b568530"
+        },
+        {
+          "json_pointer": "/professional_excerpts/16/quote",
+          "sha256": "90d57f18f1f621fdd8ed7de46782a5b273ce9b785d81a7e59766d7a2f0beff35"
+        },
+        {
+          "json_pointer": "/professional_excerpts/17/quote",
+          "sha256": "5efe12ba8c2224507afee85a8deea3e0384f67f18d2608cf26f7644543703058"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "28b6b38ee93e5c16fc0bb8718277a0f2846e13ceb647355aabb94e06f2f2e60e"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "0081cfc9e265243fca1d15ab9fd0f58b14634f47755b6a3492cb5eaacb22b681"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "66002560cf520b67616e5ba232669dfc47aab5440deb9577e420aa3d46a409e4"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8f1b7761741f61283d1b6979d0e0394308fa8b77e7c096463e35e0bc2f4df374"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "8e5c5ccb8cdf8eb4caea6b57258e7276a1c2bcde1fa284b33c49338c0ab94f17"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4f805922049667a21e533cc52fb708b35d9fe2b9dc11e997d573c594e073379a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4f805922049667a21e533cc52fb708b35d9fe2b9dc11e997d573c594e073379a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4f805922049667a21e533cc52fb708b35d9fe2b9dc11e997d573c594e073379a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4f805922049667a21e533cc52fb708b35d9fe2b9dc11e997d573c594e073379a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "4f805922049667a21e533cc52fb708b35d9fe2b9dc11e997d573c594e073379a"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "c5ae7394832cbde425c2e40630f865d25e6301a426ccc25fa6110797410b3718"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "66968734bf60eca987f2c6d98c89667a7877d20f0584fa5c3bcea6fa8b568530"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/education/0/quote",
+          "sha256": "d2384e9c1c2fe13b53a210cba52864a3cc1c99d903cbd9b722114725964bd276"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/education/1/quote",
+          "sha256": "7b94aec3422523515de2c33f8934e82305e3a04d9eb1e7266904399260f585bc"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/professional_training/0/quote",
+          "sha256": "871436deaf502be8575f6028ec3a24ba2d49a0ece2353e601849972308d38035"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/appointments/0/quote",
+          "sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/research_directions/0/quote",
+          "sha256": "df2e701688212441ab7129983dd004dcc9fd7f5d46b997d9f85278980e9ced25"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/research_directions/1/quote",
+          "sha256": "df2e701688212441ab7129983dd004dcc9fd7f5d46b997d9f85278980e9ced25"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/research_directions/2/quote",
+          "sha256": "df2e701688212441ab7129983dd004dcc9fd7f5d46b997d9f85278980e9ced25"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/research_directions/3/quote",
+          "sha256": "03f27035ea871f412d662975e996535de2f20511bd83899899806397da2cc391"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/research_directions/4/quote",
+          "sha256": "03f27035ea871f412d662975e996535de2f20511bd83899899806397da2cc391"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/research_directions/5/quote",
+          "sha256": "03f27035ea871f412d662975e996535de2f20511bd83899899806397da2cc391"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/research_directions/6/quote",
+          "sha256": "03f27035ea871f412d662975e996535de2f20511bd83899899806397da2cc391"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/publications/0/quote",
+          "sha256": "6bf27e3591e8fd773ead48fef1ca56fa3714fef79e5923241be118fd3db5ae65"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/publications/1/quote",
+          "sha256": "04a35653c2924fb16fb1bfa191108826a7be80d2a33ba2f7002ed6aafd024f47"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/teaching/0/quote",
+          "sha256": "a06037ac4918b0281668d5062b982b31c60eeab092fc6cca73639cd3f2e44d28"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/teaching/1/quote",
+          "sha256": "a06037ac4918b0281668d5062b982b31c60eeab092fc6cca73639cd3f2e44d28"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/teaching/2/quote",
+          "sha256": "a06037ac4918b0281668d5062b982b31c60eeab092fc6cca73639cd3f2e44d28"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/identity_evidence/0/quote",
+          "sha256": "40ddf4f06e58fbe7445d537c6bd096a5f8b70f43caf1e3ae2305efdd27b975e1"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/identity_evidence/1/quote",
+          "sha256": "cfdf30bec7070ec21a8cf2039ff22ef2af4f2c45c148777211f3d2dc54e92c2f"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/identity_evidence/2/quote",
+          "sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/identity_evidence/3/quote",
+          "sha256": "f329973066bed610210761ed8dd07b11c961cb0f0b38f3c5873221565fedbeb2"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/identity_evidence/4/quote",
+          "sha256": "18a67466c9e67c964211d6ab82c9f986edd1ddb52b19eae18156b11eb994731a"
+        },
+        {
+          "json_pointer": "/people/sdu-lichaofan-policy/own_supervisor_qualification_evidence/quote",
+          "sha256": "cfdf30bec7070ec21a8cf2039ff22ef2af4f2c45c148777211f3d2dc54e92c2f"
+        },
+        {
+          "json_pointer": "/0/evidence/quote",
+          "sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7"
+        },
+        {
+          "json_pointer": "/1/evidence/quote",
+          "sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7"
+        },
+        {
+          "json_pointer": "/2/evidence/quote",
+          "sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7"
+        },
+        {
+          "json_pointer": "/3/evidence/quote",
+          "sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b"
+        },
+        {
+          "json_pointer": "/4/evidence/quote",
+          "sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b"
+        },
+        {
+          "json_pointer": "/5/evidence/quote",
+          "sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "40ddf4f06e58fbe7445d537c6bd096a5f8b70f43caf1e3ae2305efdd27b975e1"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "cfdf30bec7070ec21a8cf2039ff22ef2af4f2c45c148777211f3d2dc54e92c2f"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "df2e701688212441ab7129983dd004dcc9fd7f5d46b997d9f85278980e9ced25"
+        },
+        {
+          "json_pointer": "/professional_excerpts/3/quote",
+          "sha256": "7b94aec3422523515de2c33f8934e82305e3a04d9eb1e7266904399260f585bc"
+        },
+        {
+          "json_pointer": "/professional_excerpts/4/quote",
+          "sha256": "d2384e9c1c2fe13b53a210cba52864a3cc1c99d903cbd9b722114725964bd276"
+        },
+        {
+          "json_pointer": "/professional_excerpts/5/quote",
+          "sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b"
+        },
+        {
+          "json_pointer": "/professional_excerpts/6/quote",
+          "sha256": "871436deaf502be8575f6028ec3a24ba2d49a0ece2353e601849972308d38035"
+        },
+        {
+          "json_pointer": "/professional_excerpts/7/quote",
+          "sha256": "03f27035ea871f412d662975e996535de2f20511bd83899899806397da2cc391"
+        },
+        {
+          "json_pointer": "/professional_excerpts/8/quote",
+          "sha256": "a06037ac4918b0281668d5062b982b31c60eeab092fc6cca73639cd3f2e44d28"
+        },
+        {
+          "json_pointer": "/professional_excerpts/9/quote",
+          "sha256": "6bf27e3591e8fd773ead48fef1ca56fa3714fef79e5923241be118fd3db5ae65"
+        },
+        {
+          "json_pointer": "/professional_excerpts/10/quote",
+          "sha256": "04a35653c2924fb16fb1bfa191108826a7be80d2a33ba2f7002ed6aafd024f47"
+        },
+        {
+          "json_pointer": "/professional_excerpts/11/quote",
+          "sha256": "41b8dd8b15f9d9a36c1482817779f6b10eb16565f22f733c1c9d7249840e11da"
+        },
+        {
+          "json_pointer": "/professional_excerpts/0/quote",
+          "sha256": "f329973066bed610210761ed8dd07b11c961cb0f0b38f3c5873221565fedbeb2"
+        },
+        {
+          "json_pointer": "/professional_excerpts/1/quote",
+          "sha256": "18a67466c9e67c964211d6ab82c9f986edd1ddb52b19eae18156b11eb994731a"
+        },
+        {
+          "json_pointer": "/professional_excerpts/2/quote",
+          "sha256": "41b8dd8b15f9d9a36c1482817779f6b10eb16565f22f733c1c9d7249840e11da"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "d2384e9c1c2fe13b53a210cba52864a3cc1c99d903cbd9b722114725964bd276"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "7b94aec3422523515de2c33f8934e82305e3a04d9eb1e7266904399260f585bc"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "871436deaf502be8575f6028ec3a24ba2d49a0ece2353e601849972308d38035"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a06037ac4918b0281668d5062b982b31c60eeab092fc6cca73639cd3f2e44d28"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a06037ac4918b0281668d5062b982b31c60eeab092fc6cca73639cd3f2e44d28"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "a06037ac4918b0281668d5062b982b31c60eeab092fc6cca73639cd3f2e44d28"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "6bf27e3591e8fd773ead48fef1ca56fa3714fef79e5923241be118fd3db5ae65"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "04a35653c2924fb16fb1bfa191108826a7be80d2a33ba2f7002ed6aafd024f47"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7"
+        },
+        {
+          "json_pointer": "/quote",
+          "sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b"
+        }
+      ],
+      "wave220_provenance_overlay": {
+        "source_sha256": "dd3bcb96f3f97f0497db5b9b01c5b84d6f1832a587c6f05a7fa7bee14121be6e",
+        "candidate_sha256": "3f780536eca13adfb588686153ca622ab5c332a62c45f13afca8c8f9a07e64ad",
+        "operations": [
+          {
+            "op": "replace",
+            "path": "/records/0/kind",
+            "expected_old_value": "source_fact",
+            "json_pointer": "/org_units/0/id",
+            "value": "local_model_identifier"
+          },
+          {
+            "op": "replace",
+            "path": "/records/3/kind",
+            "expected_old_value": "source_fact",
+            "json_pointer": "/org_units/0/school_id",
+            "value": "local_model_identifier"
+          },
+          {
+            "op": "replace",
+            "path": "/records/5/kind",
+            "expected_old_value": "source_fact",
+            "json_pointer": "/org_units/0/administrative_parent_status",
+            "value": "our_verification_state_or_unknown"
+          },
+          {
+            "op": "replace",
+            "path": "/records/6/kind",
+            "expected_old_value": "source_fact",
+            "json_pointer": "/org_units/1/id",
+            "value": "local_model_identifier"
+          },
+          {
+            "op": "replace",
+            "path": "/records/9/kind",
+            "expected_old_value": "source_fact",
+            "json_pointer": "/org_units/1/school_id",
+            "value": "local_model_identifier"
+          },
+          {
+            "op": "replace",
+            "path": "/records/11/kind",
+            "expected_old_value": "source_fact",
+            "json_pointer": "/org_units/1/administrative_parent_status",
+            "value": "our_verification_state_or_unknown"
+          }
+        ],
+        "derived_field_provenance_records": [
+          {
+            "json_pointer": "/org_units/0/id",
+            "value": "sdu-nursing-rehabilitation",
+            "kind": "local_model_identifier",
+            "evidence": {
+              "source_id": "sdu-lijing-nursing-profile",
+              "source_url": "https://www.nursing.sdu.edu.cn/info/1201/5222.htm",
+              "source_excerpt_sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7",
+              "source_locator": "职业经历／山东大学／副教授／2024-01—终点未列",
+              "observed_at": "2026-10-25T02:52:35.308Z"
+            },
+            "normalization_note": null
+          },
+          {
+            "json_pointer": "/org_units/0/school_id",
+            "value": "sdu",
+            "kind": "local_model_identifier",
+            "evidence": {
+              "source_id": "sdu-lijing-nursing-profile",
+              "source_url": "https://www.nursing.sdu.edu.cn/info/1201/5222.htm",
+              "source_excerpt_sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7",
+              "source_locator": "职业经历／山东大学／副教授／2024-01—终点未列",
+              "observed_at": "2026-10-25T02:52:35.308Z"
+            },
+            "normalization_note": null
+          },
+          {
+            "json_pointer": "/org_units/0/administrative_parent_status",
+            "value": "not_independently_verified",
+            "kind": "our_verification_state_or_unknown",
+            "evidence": {
+              "source_id": "sdu-lijing-nursing-profile",
+              "source_url": "https://www.nursing.sdu.edu.cn/info/1201/5222.htm",
+              "source_excerpt_sha256": "95a360184152c027f8ff33a74aba0d2913d7f32b84fafd98fdb9bf9d60780ec7",
+              "source_locator": "职业经历／山东大学／副教授／2024-01—终点未列",
+              "observed_at": "2026-10-25T02:52:35.308Z"
+            },
+            "normalization_note": null
+          },
+          {
+            "json_pointer": "/org_units/1/id",
+            "value": "sdu-health-management-policy",
+            "kind": "local_model_identifier",
+            "evidence": {
+              "source_id": "sdu-lichaofan-policy-profile",
+              "source_url": "https://www.sph.sdu.edu.cn/chmp/szdw/zzjs/lcf.htm",
+              "source_excerpt_sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b",
+              "source_locator": "职业经历／山东大学／副研究员／2021-01—终点未列",
+              "observed_at": "2026-10-25T02:53:00.674Z"
+            },
+            "normalization_note": null
+          },
+          {
+            "json_pointer": "/org_units/1/school_id",
+            "value": "sdu",
+            "kind": "local_model_identifier",
+            "evidence": {
+              "source_id": "sdu-lichaofan-policy-profile",
+              "source_url": "https://www.sph.sdu.edu.cn/chmp/szdw/zzjs/lcf.htm",
+              "source_excerpt_sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b",
+              "source_locator": "职业经历／山东大学／副研究员／2021-01—终点未列",
+              "observed_at": "2026-10-25T02:53:00.674Z"
+            },
+            "normalization_note": null
+          },
+          {
+            "json_pointer": "/org_units/1/administrative_parent_status",
+            "value": "not_independently_verified",
+            "kind": "our_verification_state_or_unknown",
+            "evidence": {
+              "source_id": "sdu-lichaofan-policy-profile",
+              "source_url": "https://www.sph.sdu.edu.cn/chmp/szdw/zzjs/lcf.htm",
+              "source_excerpt_sha256": "fcefdfb481d343c86c0c059f487b21d62ca3bb717a466eff5c176ecb6df3712b",
+              "source_locator": "职业经历／山东大学／副研究员／2021-01—终点未列",
+              "observed_at": "2026-10-25T02:53:00.674Z"
+            },
+            "normalization_note": null
+          }
+        ],
+        "scope": "仅衍生provenance的6个kind重分类；人物、组织原字段、引文、计数和冻结源不改。"
+      },
+      "mapping_notes": [
+        "原制作阶段SOURCE_ONLY_PENDING_INDEPENDENT_REVIEW及source-only status在私有追溯保留；原151/220 hold均无人物/对象拒绝，后续来源独审已确认来源就绪。本批来源独审与工程验收分别执行，此映射不声明已发布，旧源不改。",
+        "三个新组织原ID保留；护理与康复学院151及220同校同名、同nursing.sdu.edu.cn官方学院身份匹配，合并节点并保留全部原组织来源记录与type差异；primary学院不猜改系。基础护理系父关系仅原2022任职句支持，不认证现任或更高行政树。",
+        "16学历/非学位事件稳定event_id，8true/6false/2null；无本人导师。教学14门课程原level与已知角色进入实际note。",
+        "期刊7项、数字教材1项；李玉丽独立通讯原说明保留，李静主编明确可见，不转作者名单；星号未释义不升级通讯。"
+      ],
+      "semantic_locator_narrow_fix": {
+        "description": "三个组织/职业共引文误归研究方向的locator改为职业经历，并同步源摘要/组织镜像；王各事件顶层定位到本事件，源共引文摘要仍复合定位。真正研究方向、事实、时间及作者字段不改。",
+        "changes": [
+          {
+            "json_pointer": "/payload/people/1/appointments/4/source_locator",
+            "before": "研究方向／2022年9月担任山东大学护理与康复学院副教授、基础护理学系副主任。；职业经历／山东大学护理与康复学院／副教授、基础护理学系副主任／2022-09—终点未列",
+            "after": "职业经历／山东大学护理与康复学院／副教授、基础护理学系副主任／2022-09—终点未列"
+          },
+          {
+            "json_pointer": "/payload/people/1/field_provenance/department_below_school/source_locator",
+            "before": "研究方向／2022年9月担任山东大学护理与康复学院副教授、基础护理学系副主任。；职业经历／山东大学护理与康复学院／副教授、基础护理学系副主任／2022-09—终点未列",
+            "after": "职业经历／山东大学护理与康复学院／副教授、基础护理学系副主任／2022-09—终点未列"
+          },
+          {
+            "json_pointer": "/payload/people/1/sources/1/excerpts/11/locator",
+            "before": "研究方向／2022年9月担任山东大学护理与康复学院副教授、基础护理学系副主任。；职业经历／山东大学护理与康复学院／副教授、基础护理学系副主任／2022-09—终点未列",
+            "after": "职业经历／山东大学护理与康复学院／副教授、基础护理学系副主任／2022-09—终点未列"
+          },
+          {
+            "json_pointer": "/payload/people/2/appointments/6/source_locator",
+            "before": "研究方向／2024.1-今山东大学护理与康复学院副教授；职业经历／山东大学／副教授／2024-01—终点未列",
+            "after": "职业经历／山东大学／副教授／2024-01—终点未列"
+          },
+          {
+            "json_pointer": "/payload/people/2/identity_evidence/1/source_locator",
+            "before": "研究方向／2024.1-今山东大学护理与康复学院副教授；职业经历／山东大学／副教授／2024-01—终点未列",
+            "after": "职业经历／山东大学／副教授／2024-01—终点未列"
+          },
+          {
+            "json_pointer": "/payload/people/2/sources/0/professional_excerpts/7/semantic_locator",
+            "before": "研究方向／2024.1-今山东大学护理与康复学院副教授；职业经历／山东大学／副教授／2024-01—终点未列",
+            "after": "职业经历／山东大学／副教授／2024-01—终点未列"
+          },
+          {
+            "json_pointer": "/payload/people/3/appointments/0/source_locator",
+            "before": "研究方向／2021.01--，山东大学卫生管理与政策研究中心，副研究员；职业经历／山东大学／副研究员／2021-01—终点未列",
+            "after": "职业经历／山东大学／副研究员／2021-01—终点未列"
+          },
+          {
+            "json_pointer": "/payload/people/3/identity_evidence/2/source_locator",
+            "before": "研究方向／2021.01--，山东大学卫生管理与政策研究中心，副研究员；职业经历／山东大学／副研究员／2021-01—终点未列",
+            "after": "职业经历／山东大学／副研究员／2021-01—终点未列"
+          },
+          {
+            "json_pointer": "/payload/people/3/sources/0/professional_excerpts/5/semantic_locator",
+            "before": "研究方向／2021.01--，山东大学卫生管理与政策研究中心，副研究员；职业经历／山东大学／副研究员／2021-01—终点未列",
+            "after": "职业经历／山东大学／副研究员／2021-01—终点未列"
+          },
+          {
+            "json_pointer": "/payload/org_units/0/additional_source_organization_records/0/source_locator",
+            "before": "研究方向／2024.1-今山东大学护理与康复学院副教授；职业经历／山东大学／副教授／2024-01—终点未列",
+            "after": "职业经历／山东大学／副教授／2024-01—终点未列"
+          },
+          {
+            "json_pointer": "/payload/org_units/1/source_locator",
+            "before": "研究方向／2022年9月担任山东大学护理与康复学院副教授、基础护理学系副主任。；职业经历／山东大学护理与康复学院／副教授、基础护理学系副主任／2022-09—终点未列",
+            "after": "职业经历／山东大学护理与康复学院／副教授、基础护理学系副主任／2022-09—终点未列"
+          },
+          {
+            "json_pointer": "/payload/org_units/2/source_locator",
+            "before": "研究方向／2021.01--，山东大学卫生管理与政策研究中心，副研究员；职业经历／山东大学／副研究员／2021-01—终点未列",
+            "after": "职业经历／山东大学／副研究员／2021-01—终点未列"
+          },
+          {
+            "json_pointer": "/publicmap/wave220_provenance_overlay/derived_field_provenance_records/0/evidence/source_locator",
+            "before": "研究方向／2024.1-今山东大学护理与康复学院副教授；职业经历／山东大学／副教授／2024-01—终点未列",
+            "after": "职业经历／山东大学／副教授／2024-01—终点未列"
+          },
+          {
+            "json_pointer": "/publicmap/wave220_provenance_overlay/derived_field_provenance_records/1/evidence/source_locator",
+            "before": "研究方向／2024.1-今山东大学护理与康复学院副教授；职业经历／山东大学／副教授／2024-01—终点未列",
+            "after": "职业经历／山东大学／副教授／2024-01—终点未列"
+          },
+          {
+            "json_pointer": "/publicmap/wave220_provenance_overlay/derived_field_provenance_records/2/evidence/source_locator",
+            "before": "研究方向／2024.1-今山东大学护理与康复学院副教授；职业经历／山东大学／副教授／2024-01—终点未列",
+            "after": "职业经历／山东大学／副教授／2024-01—终点未列"
+          },
+          {
+            "json_pointer": "/publicmap/wave220_provenance_overlay/derived_field_provenance_records/3/evidence/source_locator",
+            "before": "研究方向／2021.01--，山东大学卫生管理与政策研究中心，副研究员；职业经历／山东大学／副研究员／2021-01—终点未列",
+            "after": "职业经历／山东大学／副研究员／2021-01—终点未列"
+          },
+          {
+            "json_pointer": "/publicmap/wave220_provenance_overlay/derived_field_provenance_records/4/evidence/source_locator",
+            "before": "研究方向／2021.01--，山东大学卫生管理与政策研究中心，副研究员；职业经历／山东大学／副研究员／2021-01—终点未列",
+            "after": "职业经历／山东大学／副研究员／2021-01—终点未列"
+          },
+          {
+            "json_pointer": "/publicmap/wave220_provenance_overlay/derived_field_provenance_records/5/evidence/source_locator",
+            "before": "研究方向／2021.01--，山东大学卫生管理与政策研究中心，副研究员；职业经历／山东大学／副研究员／2021-01—终点未列",
+            "after": "职业经历／山东大学／副研究员／2021-01—终点未列"
+          },
+          {
+            "json_pointer": "/payload/people/0/education/0/source_locator",
+            "before": "教育经历／北京医科大学／本科；非学位经历／瑞典卡罗林斯卡医学院／访问学者",
+            "after": "教育经历／北京医科大学／本科/原文对应段"
+          },
+          {
+            "json_pointer": "/payload/people/0/education/1/source_locator",
+            "before": "教育经历／山东大学／硕士；教育经历／山东大学／博士",
+            "after": "教育经历／山东大学／硕士/原文对应段"
+          },
+          {
+            "json_pointer": "/payload/people/0/education/2/source_locator",
+            "before": "教育经历／山东大学／硕士；教育经历／山东大学／博士",
+            "after": "教育经历／山东大学／博士/原文对应段"
+          },
+          {
+            "json_pointer": "/payload/people/0/education/3/source_locator",
+            "before": "教育经历／北京医科大学／本科；非学位经历／瑞典卡罗林斯卡医学院／访问学者",
+            "after": "教育经历／瑞典卡罗林斯卡医学院／访问学者/原文对应段"
+          },
+          {
+            "json_pointer": "/payload/people/0/education/4/source_locator",
+            "before": "非学位经历／美国北卡罗莱纳大学教堂山分校／访问学者",
+            "after": "教育经历／美国北卡罗莱纳大学教堂山分校／访问学者/原文对应段"
+          },
+          {
+            "json_pointer": "/payload/people/0/appointments/0/source_locator",
+            "before": "职业经历／山东大学护理与康复学院／教授／起始未列—终点未列；职业经历／山东大学护理与康复学院／院长／2016—2026",
+            "after": "职业经历／山东大学护理与康复学院／教授／起始未列—终点未列"
+          },
+          {
+            "json_pointer": "/payload/people/0/appointments/2/source_locator",
+            "before": "职业经历／山东大学护理与康复学院／教授／起始未列—终点未列；职业经历／山东大学护理与康复学院／院长／2016—2026",
+            "after": "职业经历／山东大学护理与康复学院／院长／2016—2026"
+          },
+          {
+            "json_pointer": "/payload/people/0/field_provenance/directory_affiliation/source_locator",
+            "before": "研究方向／山东大学护理与康复学院 版权所有",
+            "after": "学院署名／页脚版权机构：山东大学护理与康复学院"
+          },
+          {
+            "json_pointer": "/payload/people/0/sources/0/excerpts/7/locator",
+            "before": "研究方向／山东大学护理与康复学院 版权所有",
+            "after": "学院署名／页脚版权机构：山东大学护理与康复学院"
+          },
+          {
+            "json_pointer": "/payload/people/0/sources/2/excerpts/7/locator",
+            "before": "研究方向／山东大学护理与康复学院 版权所有",
+            "after": "学院署名／页脚版权机构：山东大学护理与康复学院"
+          },
+          {
+            "json_pointer": "/payload/people/1/field_provenance/directory_affiliation/source_locator",
+            "before": "研究方向／山东大学护理与康复学院 版权所有",
+            "after": "学院署名／页脚版权机构：山东大学护理与康复学院"
+          },
+          {
+            "json_pointer": "/payload/people/1/sources/0/excerpts/7/locator",
+            "before": "研究方向／山东大学护理与康复学院 版权所有",
+            "after": "学院署名／页脚版权机构：山东大学护理与康复学院"
+          },
+          {
+            "json_pointer": "/payload/org_units/0/source_locator",
+            "before": "研究方向／山东大学护理与康复学院 版权所有",
+            "after": "学院署名／页脚版权机构：山东大学护理与康复学院"
+          }
+        ]
+      }
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧725事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
