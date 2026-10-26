@@ -1,0 +1,3049 @@
+{
+  "schema_version": "independent-xjtu12-canonical-mapping-1",
+  "baseline_commit": "83bf9d4343cbfb60de7cf272a95d20b165522aa5",
+  "new_people": [
+    "xjtu-fenggenfu",
+    "xjtu-cui-chenhui",
+    "xjtu-shan-wenhua",
+    "xjtu-xu-yubin",
+    "xjtu-luojiu",
+    "xjtu-yao-xiuying-wave168",
+    "xjtu-xuhaoran-chinese",
+    "xjtu-shangyufan-organization",
+    "xjtu-yuyan",
+    "xjtu-peileilei",
+    "xjtu-zhoumi-organization",
+    "xjtu-zhuzhengwei"
+  ],
+  "new_org_ids": [
+    "xjtu-sef",
+    "xjtu-sef-industry-trade",
+    "xjtu-chemistry",
+    "xjtu-applied-chemistry",
+    "xjtu-law",
+    "xjtu-humanities",
+    "xjtu-art-design",
+    "xjtu-management",
+    "xjtu-public-policy-management",
+    "xjtu-public-health"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 10,
+    "education": 47,
+    "appointments": 29,
+    "publications": 16,
+    "mentors": 13,
+    "teaching": 7,
+    "institutional_associations": 0,
+    "degree_true": 26,
+    "degree_false": 12,
+    "degree_unknown": 9
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "economics-chemistry-law-design",
+      "canonical_payload_sha256": "0e966d9250a5698257d7d356ad8a89792a9e475a7a725b5a9aa7be3865f9b223",
+      "field_mapping_sha256": "1d1e3c6e5e1da6d451b13a68e819912d4eae9117dd41d853fd890be7899941cf",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "humanities-policy-management",
+      "canonical_payload_sha256": "616cecb67cedb1b8eccc75e38fa734f9cb82b35e813c1ab866cace775126ba55",
+      "field_mapping_sha256": "4819958167bd40988f4d45a1245785cba4e0a2e7464c7dbdb880073b5b5c4f54",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "public-health-management-policy",
+      "canonical_payload_sha256": "b1521c8cb34c498b32767b8d4b55f61dd62a84433e2eb693cbe8c388dbf0c093",
+      "field_mapping_sha256": "2639860c83302cdf4a92ec2319c18afbb3923eea1a42aaeab4ead42fd8db09cd",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "0e966d9250a5698257d7d356ad8a89792a9e475a7a725b5a9aa7be3865f9b223",
+      "baseline_people": 770,
+      "baseline_publication_status": "published",
+      "people": [
+        {
+          "person_id": "xjtu-fenggenfu",
+          "source_person_id": "xjtu-fenggenfu",
+          "source_candidate_sha256": "431e03c56280b746fd8bd24dac521b8c7c7977504737c1a561ed80d5313d0cc5",
+          "source_review_sha256": "92952d59656f293e314de651ccb4e64ee29583f7e54204353082d589287957ff",
+          "counts": {
+            "education": 7,
+            "appointments": 5,
+            "professional_qualifications": 1,
+            "mentors": 0,
+            "publications": 2,
+            "teaching": 3
+          },
+          "org_identity": {
+            "canonical_org_id": "xjtu-sef-industry-trade",
+            "unit": "经济与金融学院/产业与贸易经济系",
+            "source_url": "https://sef.xjtu.edu.cn/info/1360/22481.htm"
+          },
+          "visible_limits": [
+            "当前人事未核，官网职位、名录分类及至今不构成实时在岗认证。",
+            "仅留存必要公开职业摘录，不代表完整履历、全院覆盖或原网页全量存档。",
+            "授位时点与学习终点分开，未知保持未知；本人指导资格不等于本人的求学导师。",
+            "原陕西财经学院等历史机构名保持，不追溯归并为现校名。",
+            "副主任/主任、常务副主编/主编为合并区间，未分配晋升时间；1996博导资格不计任职。",
+            "两篇均仅官网书目，未获原刊元数据，不据搜索结果补卷页DOI。"
+          ]
+        },
+        {
+          "person_id": "xjtu-cui-chenhui",
+          "source_person_id": "xjtu-cui-chenhui-wave56",
+          "source_candidate_sha256": "5aa1c6c054c273fcb73eb19add36eb88cfcf623560193d01f91f6e16e7e5243a",
+          "source_review_sha256": "2be788c701a34d3e8380f53ddca4f34093f2ae7ec643735964bab58f9cd3e4c0",
+          "counts": {
+            "education": 2,
+            "appointments": 1,
+            "professional_qualifications": 0,
+            "mentors": 1,
+            "publications": 2,
+            "teaching": 0
+          },
+          "org_identity": {
+            "canonical_org_id": "xjtu-applied-chemistry",
+            "unit": "化学学院/应用化学系",
+            "source_url": "https://gr.xjtu.edu.cn/cuichenhui/zh_CN/index/300876/list/index.htm"
+          },
+          "visible_limits": [
+            "当前人事未核，官网职位、名录分类及至今不构成实时在岗认证。",
+            "仅留存必要公开职业摘录，不代表完整履历、全院覆盖或原网页全量存档。",
+            "授位时点与学习终点分开，未知保持未知；本人指导资格不等于本人的求学导师。",
+            "2017学士、2022博士为明确获授年份；具体月日/学习区间未知，不造硕士。",
+            "博士后基金不证明博士后工作，未新增博士后。",
+            "目录姓名/单位有证，原生个人href未留存；张彦峰仅博士阶段导师。",
+            "两书目官网原链接为脚本占位，非可导航作品URL；作者星号保留不另解释，原刊首次失败后已停止。"
+          ]
+        },
+        {
+          "person_id": "xjtu-shan-wenhua",
+          "source_person_id": "xjtu-shan-wenhua-wave77",
+          "source_candidate_sha256": "1c02923a65166117b4e0f8c137c9bca69089f64e45d9cdd653dac5ab8f871bdf",
+          "source_review_sha256": "ac20df02afb7890b63b1a05d324e89ef6a6b94ece6529888142701d9d67ca822",
+          "counts": {
+            "education": 4,
+            "appointments": 5,
+            "professional_qualifications": 0,
+            "mentors": 2,
+            "publications": 2,
+            "teaching": 0
+          },
+          "org_identity": {
+            "canonical_org_id": "xjtu-law",
+            "unit": "法学院",
+            "source_url": "https://fxy.xjtu.edu.cn/info/1111/4797.htm"
+          },
+          "visible_limits": [
+            "当前人事未核，官网职位、名录分类及至今不构成实时在岗认证。",
+            "仅留存必要公开职业摘录，不代表完整履历、全院覆盖或原网页全量存档。",
+            "授位时点与学习终点分开，未知保持未知；本人指导资格不等于本人的求学导师。",
+            "2026新闻列校长助理与个人页2016–2018历史区间并存，不认定复任/当前任期。",
+            "2004剑桥博士毕业典礼只为毕业典礼时间，不推具体授位日期。",
+            "1996报道留校任教及嘉庚奖章原文另存，未知职级不编造。",
+            "两部作品均为共同编者；Springer各版本ISBN/出版日期不同，Cambridge原刊未核。"
+          ]
+        },
+        {
+          "person_id": "xjtu-xu-yubin",
+          "source_person_id": "xjtu-xu-yubin-wave77",
+          "source_candidate_sha256": "1c02923a65166117b4e0f8c137c9bca69089f64e45d9cdd653dac5ab8f871bdf",
+          "source_review_sha256": "ac20df02afb7890b63b1a05d324e89ef6a6b94ece6529888142701d9d67ca822",
+          "counts": {
+            "education": 3,
+            "appointments": 1,
+            "professional_qualifications": 0,
+            "mentors": 1,
+            "publications": 2,
+            "teaching": 3
+          },
+          "org_identity": {
+            "canonical_org_id": "xjtu-art-design",
+            "unit": "人文社会科学学院/艺术设计系",
+            "source_url": "https://rwxy.xjtu.edu.cn/info/1091/9811.htm"
+          },
+          "visible_limits": [
+            "当前人事未核，官网职位、名录分类及至今不构成实时在岗认证。",
+            "仅留存必要公开职业摘录，不代表完整履历、全院覆盖或原网页全量存档。",
+            "授位时点与学习终点分开，未知保持未知；本人指导资格不等于本人的求学导师。",
+            "同济M.Arch与Ph.D.明示获授，无本科记录；授位年份及日期未知。",
+            "NUS中文访问/英文联培同一性和次数未知；只一个非授位背景，非两学位或两次培养。",
+            "目录讲师与个人页助理教授未解决，不选当前职称。",
+            "常青仅博士阶段导师；第一篇仅官网书目，第二篇原刊只题名/作者/年。"
+          ]
+        }
+      ],
+      "degree_matrix_status": "单法学学士具体称谓按来源报告true，旧null别名保留；暨南硕士仅学习/攻读语境，授位未知。均不补授位日期。",
+      "org_shared_identity": "xjtu-humanities为本批唯一人文社会科学学院，徐原目录/个人单位与本批罗、许各自已留存来源指向同名官方学院；各自来源证据保留，非重新认证行政层级。",
+      "publication_scope": "6仅官网，1Springer完整公开书目metadata，1原刊仅题名/作者/年份；都不是全文。",
+      "public_field_check": "保持原source标识与person别名；语义locator/quotehash、可见note/unknowns保留所有关键限定。",
+      "degree_reclassification": {
+        "previous_payload_sha256": "1d6e02dddc4d864c19e30867a2c193d084d297f23d7d201fa2116cc7d0a3c2f6",
+        "person_id": "xjtu-shan-wenhua",
+        "event_id": "shan-sysu-bachelor",
+        "old": null,
+        "new": true,
+        "source_candidate_sha256": "1c02923a65166117b4e0f8c137c9bca69089f64e45d9cdd653dac5ab8f871bdf",
+        "source_id": "shan-profile",
+        "evidence_id": "shan-sysu-study",
+        "original_text": "1987-1991 中山大学 法学学士",
+        "original_text_sha256": "91f911cac8ce97318f4289804f5b6b2909ba7cc2f696440520747ebab33b7ef5",
+        "basis": "官网履历明列1987–1991中山大学法学学士，记录为来源报告获授；未核学位证，授位年份和日期未知，学习结束年份不当授位时间。",
+        "reverse_exact_old_sha256": "1d6e02dddc4d864c19e30867a2c193d084d297f23d7d201fa2116cc7d0a3c2f6",
+        "delta": [
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              2,
+              "note"
+            ],
+            "old": "原具体学位/研究经历按源，学习区间与授位日期分列，未核学位证或法定授位主体。",
+            "new": "官网载1991–1993暨南大学经济学硕士经历，官方报道亦载攻读硕士及硕士导师；授位未单独核实，授位年份与日期未知，不从学习结束推定。"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              3,
+              "degree_awarded"
+            ],
+            "old": null,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              3,
+              "note"
+            ],
+            "old": "原具体学位/研究经历按源，学习区间与授位日期分列，未核学位证或法定授位主体。",
+            "new": "官网履历明列1987–1991中山大学法学学士，记录为来源报告获授；未核学位证，授位年份和日期未知，学习结束年份不当授位时间。"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              3,
+              "event_kind"
+            ],
+            "old": "degree_study",
+            "new": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              3,
+              "include_in_degree_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              3,
+              "include_in_education_filters"
+            ],
+            "old": false,
+            "new": true
+          }
+        ]
+      },
+      "hash_scope_revision": {
+        "previous_payload_sha256": "dbdc38ce390f64d0930452158db725bda490f140e1941720c6eaae681e232baf",
+        "reason": "显式区分整source证据对象摘要与选中原evidence对象数组摘要，均非单quote字符串。原hash不变。",
+        "reverse_exact_old_sha256": "dbdc38ce390f64d0930452158db725bda490f140e1941720c6eaae681e232baf",
+        "delta": [
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              2,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              3,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              4,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              5,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              6,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "appointments",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "appointments",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "appointments",
+              2,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "appointments",
+              3,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "appointments",
+              4,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "publications",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "publications",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "sources",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "sources",
+              1,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "professional_qualifications",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "teaching",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "teaching",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "teaching",
+              2,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "appointments",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "mentors",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "sources",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "sources",
+              1,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "sources",
+              2,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "publications",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "publications",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object wrapped in one-item JSON array; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "evidence",
+              1,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "evidence",
+              1,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              2,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              3,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "appointments",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "appointments",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "appointments",
+              2,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "appointments",
+              3,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "appointments",
+              4,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "mentors",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "mentors",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "sources",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "sources",
+              1,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "sources",
+              2,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "sources",
+              3,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "sources",
+              4,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "publications",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "publications",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              1,
+              "evidence",
+              1,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              2,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              2,
+              "evidence",
+              1,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "appointments",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "teaching",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "teaching",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "teaching",
+              2,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "mentors",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "sources",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "sources",
+              1,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "sources",
+              2,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "entire original retained source evidence object serialized as JSON; not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "publications",
+              0,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "publications",
+              1,
+              "evidence",
+              0,
+              "hash_scope"
+            ],
+            "old_missing": true,
+            "new": "selected original retained evidence objects as JSON array; includes fields, not single quote text"
+          }
+        ]
+      },
+      "visible_role_revision": {
+        "previous_payload_sha256": "8c829dec8e48167bcf4e5acc56bac35ef6246ebfd2d21d7cbf82c167ab9cd470",
+        "field_address": [
+          "people",
+          2,
+          "appointments",
+          3,
+          "note"
+        ],
+        "old": "Source-listed role only; no independently current appointment. 原角色与时间保留；开放终点不认证实时在岗。",
+        "new": "Source-listed role only; no independently current appointment. 原角色与时间保留；开放终点不认证实时在岗。 原角色字段另列领军学者、首批文科资深教授、博士生导师；均为来源标签，本人指导资格不作本人的求学导师关系。",
+        "source_id": "shan-profile",
+        "evidence_id": "shan-role",
+        "source_quote": "西安交通大学领军学者、文科资深教授 （首批）、博士生导师，法学院院长",
+        "reverse_exact_old_sha256": "8c829dec8e48167bcf4e5acc56bac35ef6246ebfd2d21d7cbf82c167ab9cd470"
+      }
+    },
+    {
+      "schema_version": "xjtu12-group2-mapping-1",
+      "published_baseline_people": 770,
+      "input_checks": [
+        {
+          "person_id": "xjtu-luojiu",
+          "source_candidate_sha256": "0571356059634ecd9d94a43e6d41a459b2938a8c9bd2ed4cff33b96c38150c94",
+          "review_sha256": "2eb734a1fbd571223622893400935fb10b7e6750bc3ef0ab211905a1d682f7c9",
+          "audit_hashes_pass": true
+        },
+        {
+          "person_id": "xjtu-yao-xiuying-wave168",
+          "source_candidate_sha256": "417896ee34f80b23e99cf48dc9a5ac6559d470f89f07b990ef23f34c5e390756",
+          "review_sha256": "acbbcd0cf9f51be91c3e030d1adb8f9101bacac494f6de3af215784f89947981",
+          "audit_hashes_pass": true
+        },
+        {
+          "person_id": "xjtu-xuhaoran-chinese",
+          "source_candidate_sha256": "a1660218e680c6354bcb0a5cf19b4a938af8e94ee112d69f1ed849d2fc6ecd8a",
+          "review_sha256": "f681755db7de59535d114ac7b1825166029be036b6299af8aab948d33fb53c77",
+          "audit_hashes_pass": true
+        },
+        {
+          "person_id": "xjtu-shangyufan-organization",
+          "source_candidate_sha256": "a1660218e680c6354bcb0a5cf19b4a938af8e94ee112d69f1ed849d2fc6ecd8a",
+          "review_sha256": "f681755db7de59535d114ac7b1825166029be036b6299af8aab948d33fb53c77",
+          "audit_hashes_pass": true
+        }
+      ],
+      "degree_evidence_matrix": [
+        {
+          "person_id": "xjtu-xuhaoran-chinese",
+          "education_event_id": "xjtu-xuhaoran-chinese-education-1",
+          "original_value": null,
+          "quote": "2003.9—2007.6江南大学文学院（学士）",
+          "quote_sha256": "e8cb9e5b51a9de94f0d50ee9ce859267ad3702b1d725d7e5bb7373e998f93ebc",
+          "source_id": "xjtu-xuhaoran-profile",
+          "source_url": "https://rwxy.xjtu.edu.cn/info/1091/5543.htm",
+          "candidate_sha256": "a1660218e680c6354bcb0a5cf19b4a938af8e94ee112d69f1ed849d2fc6ecd8a",
+          "retained_source_heading": null,
+          "context": "仅保留条目；semantic_locator不代表已留官网heading，许博士另有同阶段英文Doctor及School of Liberal Arts",
+          "proposal": "retain_unknown",
+          "decision": "root_confirmed_retain_unknown",
+          "canonical_value": null,
+          "scope": "保留具体学历阶段称谓、专业、院系及日期；授位未单独核实，不否定其学历。"
+        },
+        {
+          "person_id": "xjtu-xuhaoran-chinese",
+          "education_event_id": "xjtu-xuhaoran-chinese-education-2",
+          "original_value": null,
+          "quote": "2007.9—2010.6南京师范大学文学院（硕士）",
+          "quote_sha256": "d5f7297836074b2fa10fa3f311b2bea933a81ee5d88b2c017a3c01feda2e0bb4",
+          "source_id": "xjtu-xuhaoran-profile",
+          "source_url": "https://rwxy.xjtu.edu.cn/info/1091/5543.htm",
+          "candidate_sha256": "a1660218e680c6354bcb0a5cf19b4a938af8e94ee112d69f1ed849d2fc6ecd8a",
+          "retained_source_heading": null,
+          "context": "仅保留条目；semantic_locator不代表已留官网heading，许博士另有同阶段英文Doctor及School of Liberal Arts",
+          "proposal": "retain_unknown",
+          "decision": "root_confirmed_retain_unknown",
+          "canonical_value": null,
+          "scope": "保留具体学历阶段称谓、专业、院系及日期；授位未单独核实，不否定其学历。"
+        },
+        {
+          "person_id": "xjtu-xuhaoran-chinese",
+          "education_event_id": "xjtu-xuhaoran-chinese-education-3",
+          "original_value": null,
+          "quote": "2010.9—2013.6南京大学（博士）",
+          "quote_sha256": "278601d3acbc5fab476f06506c59f0871487e0c9bbc78e157bc6cb9a86494fd4",
+          "source_id": "xjtu-xuhaoran-profile",
+          "source_url": "https://rwxy.xjtu.edu.cn/info/1091/5543.htm",
+          "candidate_sha256": "a1660218e680c6354bcb0a5cf19b4a938af8e94ee112d69f1ed849d2fc6ecd8a",
+          "retained_source_heading": null,
+          "context": "仅保留条目；semantic_locator不代表已留官网heading，许博士另有同阶段英文Doctor及School of Liberal Arts",
+          "proposal": "retain_unknown",
+          "decision": "root_confirmed_retain_unknown",
+          "canonical_value": null,
+          "scope": "保留具体学历阶段称谓、专业、院系及日期；授位未单独核实，不否定其学历。"
+        },
+        {
+          "person_id": "xjtu-shangyufan-organization",
+          "education_event_id": "xjtu-shangyufan-organization-education-1",
+          "original_value": null,
+          "quote": "陕西师范大学心理系（心理学专业）学士（1993年）",
+          "quote_sha256": "38242fb0ba7116c20fe148cc58e9c4c77d22c67c85a3d99111911b65e14f49a6",
+          "source_id": "xjtu-shangyufan-profile",
+          "source_url": "https://som.xjtu.edu.cn/info/1721/11933.htm",
+          "candidate_sha256": "a1660218e680c6354bcb0a5cf19b4a938af8e94ee112d69f1ed849d2fc6ecd8a",
+          "retained_source_heading": null,
+          "context": "仅保留条目；semantic_locator不代表已留官网heading，许博士另有同阶段英文Doctor及School of Liberal Arts",
+          "proposal": "retain_unknown",
+          "decision": "root_confirmed_retain_unknown",
+          "canonical_value": null,
+          "scope": "保留具体学历阶段称谓、专业、院系及日期；授位未单独核实，不否定其学历。"
+        },
+        {
+          "person_id": "xjtu-shangyufan-organization",
+          "education_event_id": "xjtu-shangyufan-organization-education-2",
+          "original_value": null,
+          "quote": "陕西师范大学心理系（心理学专业）硕士（1996年）",
+          "quote_sha256": "4943ab268c6350e14e0ebe164ac8db5dcf4aa2941d84519a028f2d2f0c1f8e78",
+          "source_id": "xjtu-shangyufan-profile",
+          "source_url": "https://som.xjtu.edu.cn/info/1721/11933.htm",
+          "candidate_sha256": "a1660218e680c6354bcb0a5cf19b4a938af8e94ee112d69f1ed849d2fc6ecd8a",
+          "retained_source_heading": null,
+          "context": "仅保留条目；semantic_locator不代表已留官网heading，许博士另有同阶段英文Doctor及School of Liberal Arts",
+          "proposal": "retain_unknown",
+          "decision": "root_confirmed_retain_unknown",
+          "canonical_value": null,
+          "scope": "保留具体学历阶段称谓、专业、院系及日期；授位未单独核实，不否定其学历。"
+        },
+        {
+          "person_id": "xjtu-shangyufan-organization",
+          "education_event_id": "xjtu-shangyufan-organization-education-3",
+          "original_value": null,
+          "quote": "西安交通大学管理学院组织管理系（管理科学与工程专业）博士（2003年）",
+          "quote_sha256": "cb326c419bff1e1e81f0e0c3e1d1267dd1316448559d1d9487219ff45eea4023",
+          "source_id": "xjtu-shangyufan-profile",
+          "source_url": "https://som.xjtu.edu.cn/info/1721/11933.htm",
+          "candidate_sha256": "a1660218e680c6354bcb0a5cf19b4a938af8e94ee112d69f1ed849d2fc6ecd8a",
+          "retained_source_heading": null,
+          "context": "仅保留条目；semantic_locator不代表已留官网heading，许博士另有同阶段英文Doctor及School of Liberal Arts",
+          "proposal": "retain_unknown",
+          "decision": "root_confirmed_retain_unknown",
+          "canonical_value": null,
+          "scope": "保留具体学历阶段称谓、专业、院系及日期；授位未单独核实，不否定其学历。"
+        }
+      ],
+      "overlay_scope": "168其他人张盛浩clarification不套姚；196合审唯一overlay指195 held库存，未读取目标文件且不应用许/尚。",
+      "org_identity": "罗/许原xjtu-humanities同校同全中文学院和rwxy官方目录，复用组1唯一定义，不另造节点；本组唯一定义管理与公共政策两学院，全部新node parentnull，未核法律行政。",
+      "original_humanities_org_facts": [
+        {
+          "id": "xjtu-humanities",
+          "name": "人文社会科学学院",
+          "type": "school",
+          "school_id": "xjtu",
+          "parent_id": null,
+          "administrative_parent_status": "not_independently_verified",
+          "source_id": "xjtu-philosophy-directory",
+          "source_url": "https://rwxy.xjtu.edu.cn/info/1017/3798.htm",
+          "evidence_type": "parent_browser_structured_observation_not_verbatim_body",
+          "observation": "浏览器页面标题：哲学系-西安交通大学人文社会科学学院",
+          "note": "官方目录与学院页面标题只支持校内单位归属，不认定法定行政直属层级。"
+        },
+        {
+          "id": "xjtu-humanities",
+          "name": "人文社会科学学院",
+          "type": "college",
+          "school_id": "xjtu",
+          "parent_id": null,
+          "administrative_parent_status": "not_independently_verified",
+          "source_id": "xjtu-xuhaoran-profile",
+          "source_url": "https://rwxy.xjtu.edu.cn/info/1091/5543.htm",
+          "retained_professional_text": "2018.6至今 西安交通大学人文社会科学学院中文系副教授",
+          "source_excerpt_sha256": "d319068a490e32f408770c6ef6817718f33d9b96187ade97a612b4fafc4bb0b1",
+          "source_locator": "工作简历／副教授"
+        }
+      ],
+      "event_semantics": "姚原id复用为event_id；其他原event_id直接复用。罗三论文关系各按本硕博，只一博士；索引镜像不额外计数、原论文未读。",
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/xjtu-luojiu-profile/excerpts/0/quote",
+          "sha256": "70825c379d4c06c9be54c37ca6798b095684afe7cac7f5e5e46f9372f89badd3"
+        },
+        {
+          "path": "/sources/xjtu-luojiu-profile/excerpts/1/quote",
+          "sha256": "c3db198b1acfd1f522566e7a70a2e32974ac46e61ecd6b0291c8b23ab5f67e10"
+        },
+        {
+          "path": "/sources/xjtu-luojiu-profile/excerpts/2/quote",
+          "sha256": "0dffce09565e853f4e1cafd78512f2ddb213d77b36beaadf9e3e384e2fdabd03"
+        },
+        {
+          "path": "/sources/xjtu-luojiu-profile/excerpts/3/quote",
+          "sha256": "1f0d00168ef2582f4ad0459f6f377da0c70df187ee5e28adfcfe7e301a2c839a"
+        },
+        {
+          "path": "/sources/xjtu-luojiu-profile/excerpts/4/quote",
+          "sha256": "1b17d45ce8cbf93469c5354358aa4805d0c74b6f8da18bc38c39d50f7684cb07"
+        },
+        {
+          "path": "/sources/xjtu-luojiu-profile/excerpts/5/quote",
+          "sha256": "24bc89096b3180db6422aa7723be385d3e9995a2b27794fd18cbe8656794328e"
+        },
+        {
+          "path": "/sources/xjtu-luojiu-profile/excerpts/6/quote",
+          "sha256": "801df11a3bd50b882a660071e9c13d5201054e1ea8371b85964289c73a5cd694"
+        },
+        {
+          "path": "/sources/xjtu-luojiu-profile/excerpts/7/quote",
+          "sha256": "81e2307d7feaa304dc0a82bef6c703695ef6b0be37903f5be40cbfc3755464c8"
+        },
+        {
+          "path": "/sources/xjtu-luojiu-profile/excerpts/8/quote",
+          "sha256": "27a765433715a17993dd343605f96c84d85ac0d71e50796566036f3e5b5a8538"
+        },
+        {
+          "path": "/sources/xjtu-luojiu-profile/excerpts/9/quote",
+          "sha256": "1bae509c3110bd97f07ed34b5fe498e406b6a17e861d5045b0fce5779fd61ee0"
+        },
+        {
+          "path": "/sources/xjtu-luojiu-profile/excerpts/10/quote",
+          "sha256": "02af7bbedadcf98ff99f66f5fc67afb8f89aa91665f6b606f41702c0031efa08"
+        },
+        {
+          "path": "/sources/xjtu-xuhaoran-profile/professional_excerpts/0/quote",
+          "sha256": "a89ab5f4a1fe2c90d12883e7bf7cf33c38bbb242fc0482963c48f7ee6dc691aa"
+        },
+        {
+          "path": "/sources/xjtu-xuhaoran-profile/professional_excerpts/1/quote",
+          "sha256": "6bee4916cfd0ec0fc9b2c01202f17b0ea2a04fe75427055717250f879513611c"
+        },
+        {
+          "path": "/sources/xjtu-xuhaoran-profile/professional_excerpts/2/quote",
+          "sha256": "e8cb9e5b51a9de94f0d50ee9ce859267ad3702b1d725d7e5bb7373e998f93ebc"
+        },
+        {
+          "path": "/sources/xjtu-xuhaoran-profile/professional_excerpts/3/quote",
+          "sha256": "d5f7297836074b2fa10fa3f311b2bea933a81ee5d88b2c017a3c01feda2e0bb4"
+        },
+        {
+          "path": "/sources/xjtu-xuhaoran-profile/professional_excerpts/4/quote",
+          "sha256": "278601d3acbc5fab476f06506c59f0871487e0c9bbc78e157bc6cb9a86494fd4"
+        },
+        {
+          "path": "/sources/xjtu-xuhaoran-profile/professional_excerpts/5/quote",
+          "sha256": "1e8ecd3e9d1a37ece256e036f413c04230b2ab56b6bca10c7282c9c653e07c38"
+        },
+        {
+          "path": "/sources/xjtu-xuhaoran-profile/professional_excerpts/6/quote",
+          "sha256": "e874e8993e108412b8e50c699921168e518e66e676738ef6639f3b12551d19e2"
+        },
+        {
+          "path": "/sources/xjtu-xuhaoran-profile/professional_excerpts/7/quote",
+          "sha256": "82fb50bdb1b54c8a80d7880e79e783b54ecb1072707c56b0adf99df35a25ddb6"
+        },
+        {
+          "path": "/sources/xjtu-xuhaoran-profile/professional_excerpts/8/quote",
+          "sha256": "d319068a490e32f408770c6ef6817718f33d9b96187ade97a612b4fafc4bb0b1"
+        },
+        {
+          "path": "/sources/xjtu-xuhaoran-profile/professional_excerpts/9/quote",
+          "sha256": "e2e5532d03f07193160f2482c1005e69fcbd81dde6c83c1af6e2437170919990"
+        },
+        {
+          "path": "/sources/xjtu-xuhaoran-profile/professional_excerpts/10/quote",
+          "sha256": "4182031a6b92875b80c51024d970f410bcd04c0b19f88d41dbf72b601a52a9bc"
+        },
+        {
+          "path": "/sources/xjtu-chinese-directory/professional_excerpts/0/quote",
+          "sha256": "a477ba084badec4c12878012daa4a31910de5bb70c979a96e9824afa85816548"
+        },
+        {
+          "path": "/sources/xjtu-chinese-directory/professional_excerpts/1/quote",
+          "sha256": "11d25e0e8f510b9875263feecf81c2ec300bc279d88625ce0d91f1320cff11ef"
+        },
+        {
+          "path": "/sources/xjtu-chinese-directory/professional_excerpts/2/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "path": "/sources/xjtu-chinese-directory/professional_excerpts/3/quote",
+          "sha256": "a89ab5f4a1fe2c90d12883e7bf7cf33c38bbb242fc0482963c48f7ee6dc691aa"
+        },
+        {
+          "path": "/sources/xjtu-shangyufan-profile/professional_excerpts/0/quote",
+          "sha256": "04d205eb84d6505467f346b0e4b07e9cb2a485c5e74f4e275bde4d813b222297"
+        },
+        {
+          "path": "/sources/xjtu-shangyufan-profile/professional_excerpts/1/quote",
+          "sha256": "3b7cd4f96cbde84a2be5e099089997b36aacac9b795523b033604711877d71ff"
+        },
+        {
+          "path": "/sources/xjtu-shangyufan-profile/professional_excerpts/2/quote",
+          "sha256": "cb41f0c3e22e7d6bf3c7353720d3d833171147b12d16df14412c174409443b4f"
+        },
+        {
+          "path": "/sources/xjtu-shangyufan-profile/professional_excerpts/3/quote",
+          "sha256": "03808dafb7c61fc4db6def59bac9d522188484a2ea2bf1187c6bfe2ec31d6629"
+        },
+        {
+          "path": "/sources/xjtu-shangyufan-profile/professional_excerpts/4/quote",
+          "sha256": "38242fb0ba7116c20fe148cc58e9c4c77d22c67c85a3d99111911b65e14f49a6"
+        },
+        {
+          "path": "/sources/xjtu-shangyufan-profile/professional_excerpts/5/quote",
+          "sha256": "4943ab268c6350e14e0ebe164ac8db5dcf4aa2941d84519a028f2d2f0c1f8e78"
+        },
+        {
+          "path": "/sources/xjtu-shangyufan-profile/professional_excerpts/6/quote",
+          "sha256": "cb326c419bff1e1e81f0e0c3e1d1267dd1316448559d1d9487219ff45eea4023"
+        },
+        {
+          "path": "/sources/xjtu-shangyufan-profile/professional_excerpts/7/quote",
+          "sha256": "fefefad30f365a814c4f55dc063fb70f73d3e96f0f0b2c3237b376ce9535e4cc"
+        },
+        {
+          "path": "/sources/xjtu-shangyufan-profile/professional_excerpts/8/quote",
+          "sha256": "ea0c09cd9b2b9a55508ee89f4c4f7ea416d116fe191eedc9a5f31d994c2b0e2c"
+        },
+        {
+          "path": "/sources/xjtu-shangyufan-profile/professional_excerpts/9/quote",
+          "sha256": "f8f03d607d3ae3d7df5a18c84502b5f10ba4ae55fd5d181bb3988fc6259617ca"
+        },
+        {
+          "path": "/sources/xjtu-shangyufan-profile/professional_excerpts/10/quote",
+          "sha256": "6b222bed6732cf68f2bcae6243352100fa504373adbe413066b25a4dd723ff3c"
+        },
+        {
+          "path": "/sources/xjtu-organization-management-directory/professional_excerpts/0/quote",
+          "sha256": "d1c87879670b3e17b20dc53e2721c9ee9f26e93bed99cb516cf26779c50a34ef"
+        },
+        {
+          "path": "/sources/xjtu-organization-management-directory/professional_excerpts/1/quote",
+          "sha256": "61ed3a103b6ab32b5e9aae7ca730e7316e6d94fb0c34235cbc8ca0bf6855f2f0"
+        },
+        {
+          "path": "/sources/xjtu-organization-management-directory/professional_excerpts/2/quote",
+          "sha256": "ca95db90b6752495e68c253d44d81532dea268d2a7b36b0610a993cd409302b4"
+        },
+        {
+          "path": "/sources/yao-profile/professional_excerpts/0/quote",
+          "sha256": "99a13f55a1033b1105f93b760e7e4d1bf5d9421937e44bcfe3b6ca02754f0287"
+        },
+        {
+          "path": "/sources/yao-profile/professional_excerpts/1/quote",
+          "sha256": "e3e0709707a16c62c4d2a11323f50db34f1a8870566f55ff19df666f560a7b6c"
+        },
+        {
+          "path": "/sources/yao-profile/professional_excerpts/2/quote",
+          "sha256": "a1808a88e3049f2e0175f7add188046b249dfe293c88d80b760a6187bcfd01a7"
+        },
+        {
+          "path": "/sources/yao-profile/professional_excerpts/3/quote",
+          "sha256": "e443ec195616d875a5c4d3f34ba9e562188b080a64391e7ff29c6c1d54df9c63"
+        },
+        {
+          "path": "/sources/yao-profile/professional_excerpts/4/quote",
+          "sha256": "b41f454e37b7eaf865675fdae9ddd2ebf5f7408162916ff734fcd47ea9bef4e5"
+        },
+        {
+          "path": "/sources/yao-profile/professional_excerpts/5/quote",
+          "sha256": "382f5c68449c40c07121399cec68ef577f80b6626df073e729290ab0d7552942"
+        },
+        {
+          "path": "/sources/yao-profile/professional_excerpts/6/quote",
+          "sha256": "ce3fd05c21dd55a294f9916180c3f2278ac58256e4e6f52cf970510ec3411cf1"
+        },
+        {
+          "path": "/sources/yao-profile/professional_excerpts/7/quote",
+          "sha256": "0e49ce2d792307f6e9cd01a7f915b29f7eb5991ffe03ed2c5a1ef0f74c333968"
+        },
+        {
+          "path": "/sources/yao-profile/professional_excerpts/8/quote",
+          "sha256": "00b486ca374d05b858bbff273d937e36353aa01df785bede2c48e51a54b32f54"
+        },
+        {
+          "path": "/people/xjtu-luojiu/mentor_relations/0/quote",
+          "sha256": "70825c379d4c06c9be54c37ca6798b095684afe7cac7f5e5e46f9372f89badd3"
+        },
+        {
+          "path": "/people/xjtu-luojiu/mentor_relations/1/quote",
+          "sha256": "c3db198b1acfd1f522566e7a70a2e32974ac46e61ecd6b0291c8b23ab5f67e10"
+        },
+        {
+          "path": "/people/xjtu-luojiu/mentor_relations/2/quote",
+          "sha256": "0dffce09565e853f4e1cafd78512f2ddb213d77b36beaadf9e3e384e2fdabd03"
+        },
+        {
+          "path": "/people/xjtu-luojiu/formal_dissertation_advisors/0/quote",
+          "sha256": "70825c379d4c06c9be54c37ca6798b095684afe7cac7f5e5e46f9372f89badd3"
+        },
+        {
+          "path": "/people/xjtu-luojiu/formal_thesis_advisors/0/quote",
+          "sha256": "70825c379d4c06c9be54c37ca6798b095684afe7cac7f5e5e46f9372f89badd3"
+        },
+        {
+          "path": "/people/xjtu-luojiu/formal_thesis_advisors/1/quote",
+          "sha256": "c3db198b1acfd1f522566e7a70a2e32974ac46e61ecd6b0291c8b23ab5f67e10"
+        },
+        {
+          "path": "/people/xjtu-luojiu/formal_thesis_advisors/2/quote",
+          "sha256": "0dffce09565e853f4e1cafd78512f2ddb213d77b36beaadf9e3e384e2fdabd03"
+        },
+        {
+          "path": "/people/xjtu-luojiu/education/0/quote",
+          "sha256": "70825c379d4c06c9be54c37ca6798b095684afe7cac7f5e5e46f9372f89badd3"
+        },
+        {
+          "path": "/people/xjtu-luojiu/education/1/quote",
+          "sha256": "c3db198b1acfd1f522566e7a70a2e32974ac46e61ecd6b0291c8b23ab5f67e10"
+        },
+        {
+          "path": "/people/xjtu-luojiu/education/2/quote",
+          "sha256": "0dffce09565e853f4e1cafd78512f2ddb213d77b36beaadf9e3e384e2fdabd03"
+        },
+        {
+          "path": "/people/xjtu-luojiu/appointments/0/quote",
+          "sha256": "1f0d00168ef2582f4ad0459f6f377da0c70df187ee5e28adfcfe7e301a2c839a"
+        },
+        {
+          "path": "/people/xjtu-luojiu/appointments/1/quote",
+          "sha256": "1b17d45ce8cbf93469c5354358aa4805d0c74b6f8da18bc38c39d50f7684cb07"
+        },
+        {
+          "path": "/people/xjtu-luojiu/appointments/2/quote",
+          "sha256": "24bc89096b3180db6422aa7723be385d3e9995a2b27794fd18cbe8656794328e"
+        },
+        {
+          "path": "/people/xjtu-luojiu/appointments/3/quote",
+          "sha256": "24bc89096b3180db6422aa7723be385d3e9995a2b27794fd18cbe8656794328e"
+        },
+        {
+          "path": "/people/xjtu-luojiu/appointments/4/quote",
+          "sha256": "801df11a3bd50b882a660071e9c13d5201054e1ea8371b85964289c73a5cd694"
+        },
+        {
+          "path": "/people/xjtu-luojiu/publications/0/quote",
+          "sha256": "27a765433715a17993dd343605f96c84d85ac0d71e50796566036f3e5b5a8538"
+        },
+        {
+          "path": "/people/xjtu-luojiu/publications/1/quote",
+          "sha256": "1bae509c3110bd97f07ed34b5fe498e406b6a17e861d5045b0fce5779fd61ee0"
+        },
+        {
+          "path": "/people/xjtu-luojiu/research_directions/0/quote",
+          "sha256": "81e2307d7feaa304dc0a82bef6c703695ef6b0be37903f5be40cbfc3755464c8"
+        },
+        {
+          "path": "/people/xjtu-luojiu/field_provenance/department/quote",
+          "sha256": "1f0d00168ef2582f4ad0459f6f377da0c70df187ee5e28adfcfe7e301a2c839a"
+        },
+        {
+          "path": "/people/xjtu-luojiu/field_provenance/page_date/quote",
+          "sha256": "02af7bbedadcf98ff99f66f5fc67afb8f89aa91665f6b606f41702c0031efa08"
+        },
+        {
+          "path": "/quote",
+          "sha256": "70825c379d4c06c9be54c37ca6798b095684afe7cac7f5e5e46f9372f89badd3"
+        },
+        {
+          "path": "/quote",
+          "sha256": "c3db198b1acfd1f522566e7a70a2e32974ac46e61ecd6b0291c8b23ab5f67e10"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0dffce09565e853f4e1cafd78512f2ddb213d77b36beaadf9e3e384e2fdabd03"
+        },
+        {
+          "path": "/quote",
+          "sha256": "70825c379d4c06c9be54c37ca6798b095684afe7cac7f5e5e46f9372f89badd3"
+        },
+        {
+          "path": "/quote",
+          "sha256": "c3db198b1acfd1f522566e7a70a2e32974ac46e61ecd6b0291c8b23ab5f67e10"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0dffce09565e853f4e1cafd78512f2ddb213d77b36beaadf9e3e384e2fdabd03"
+        },
+        {
+          "path": "/quote",
+          "sha256": "1f0d00168ef2582f4ad0459f6f377da0c70df187ee5e28adfcfe7e301a2c839a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "1b17d45ce8cbf93469c5354358aa4805d0c74b6f8da18bc38c39d50f7684cb07"
+        },
+        {
+          "path": "/quote",
+          "sha256": "24bc89096b3180db6422aa7723be385d3e9995a2b27794fd18cbe8656794328e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "24bc89096b3180db6422aa7723be385d3e9995a2b27794fd18cbe8656794328e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "801df11a3bd50b882a660071e9c13d5201054e1ea8371b85964289c73a5cd694"
+        },
+        {
+          "path": "/quote",
+          "sha256": "27a765433715a17993dd343605f96c84d85ac0d71e50796566036f3e5b5a8538"
+        },
+        {
+          "path": "/quote",
+          "sha256": "1bae509c3110bd97f07ed34b5fe498e406b6a17e861d5045b0fce5779fd61ee0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b41f454e37b7eaf865675fdae9ddd2ebf5f7408162916ff734fcd47ea9bef4e5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e443ec195616d875a5c4d3f34ba9e562188b080a64391e7ff29c6c1d54df9c63"
+        },
+        {
+          "path": "/quote",
+          "sha256": "382f5c68449c40c07121399cec68ef577f80b6626df073e729290ab0d7552942"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ce3fd05c21dd55a294f9916180c3f2278ac58256e4e6f52cf970510ec3411cf1"
+        },
+        {
+          "path": "/quote",
+          "sha256": "a1808a88e3049f2e0175f7add188046b249dfe293c88d80b760a6187bcfd01a7"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0e49ce2d792307f6e9cd01a7f915b29f7eb5991ffe03ed2c5a1ef0f74c333968"
+        },
+        {
+          "path": "/quote",
+          "sha256": "00b486ca374d05b858bbff273d937e36353aa01df785bede2c48e51a54b32f54"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/education/0/quote",
+          "sha256": "e8cb9e5b51a9de94f0d50ee9ce859267ad3702b1d725d7e5bb7373e998f93ebc"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/education/1/quote",
+          "sha256": "d5f7297836074b2fa10fa3f311b2bea933a81ee5d88b2c017a3c01feda2e0bb4"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/education/2/quote",
+          "sha256": "278601d3acbc5fab476f06506c59f0871487e0c9bbc78e157bc6cb9a86494fd4"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/education/2/department_english_evidence/quote",
+          "sha256": "1e8ecd3e9d1a37ece256e036f413c04230b2ab56b6bca10c7282c9c653e07c38"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/professional_training/0/quote",
+          "sha256": "e874e8993e108412b8e50c699921168e518e66e676738ef6639f3b12551d19e2"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/appointments/0/quote",
+          "sha256": "82fb50bdb1b54c8a80d7880e79e783b54ecb1072707c56b0adf99df35a25ddb6"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/appointments/1/quote",
+          "sha256": "d319068a490e32f408770c6ef6817718f33d9b96187ade97a612b4fafc4bb0b1"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/research_directions/0/quote",
+          "sha256": "6bee4916cfd0ec0fc9b2c01202f17b0ea2a04fe75427055717250f879513611c"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/publications/0/quote",
+          "sha256": "4182031a6b92875b80c51024d970f410bcd04c0b19f88d41dbf72b601a52a9bc"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/publications/1/quote",
+          "sha256": "e2e5532d03f07193160f2482c1005e69fcbd81dde6c83c1af6e2437170919990"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/identity_evidence/0/quote",
+          "sha256": "a89ab5f4a1fe2c90d12883e7bf7cf33c38bbb242fc0482963c48f7ee6dc691aa"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/identity_evidence/1/quote",
+          "sha256": "11d25e0e8f510b9875263feecf81c2ec300bc279d88625ce0d91f1320cff11ef"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/identity_evidence/2/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "path": "/people/xjtu-xuhaoran-chinese/identity_evidence/3/quote",
+          "sha256": "a89ab5f4a1fe2c90d12883e7bf7cf33c38bbb242fc0482963c48f7ee6dc691aa"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e8cb9e5b51a9de94f0d50ee9ce859267ad3702b1d725d7e5bb7373e998f93ebc"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d5f7297836074b2fa10fa3f311b2bea933a81ee5d88b2c017a3c01feda2e0bb4"
+        },
+        {
+          "path": "/quote",
+          "sha256": "278601d3acbc5fab476f06506c59f0871487e0c9bbc78e157bc6cb9a86494fd4"
+        },
+        {
+          "path": "/department_english_evidence/quote",
+          "sha256": "1e8ecd3e9d1a37ece256e036f413c04230b2ab56b6bca10c7282c9c653e07c38"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e874e8993e108412b8e50c699921168e518e66e676738ef6639f3b12551d19e2"
+        },
+        {
+          "path": "/quote",
+          "sha256": "82fb50bdb1b54c8a80d7880e79e783b54ecb1072707c56b0adf99df35a25ddb6"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d319068a490e32f408770c6ef6817718f33d9b96187ade97a612b4fafc4bb0b1"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4182031a6b92875b80c51024d970f410bcd04c0b19f88d41dbf72b601a52a9bc"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e2e5532d03f07193160f2482c1005e69fcbd81dde6c83c1af6e2437170919990"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/education/0/quote",
+          "sha256": "38242fb0ba7116c20fe148cc58e9c4c77d22c67c85a3d99111911b65e14f49a6"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/education/1/quote",
+          "sha256": "4943ab268c6350e14e0ebe164ac8db5dcf4aa2941d84519a028f2d2f0c1f8e78"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/education/2/quote",
+          "sha256": "cb326c419bff1e1e81f0e0c3e1d1267dd1316448559d1d9487219ff45eea4023"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/professional_training/0/quote",
+          "sha256": "fefefad30f365a814c4f55dc063fb70f73d3e96f0f0b2c3237b376ce9535e4cc"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/professional_training/1/quote",
+          "sha256": "ea0c09cd9b2b9a55508ee89f4c4f7ea416d116fe191eedc9a5f31d994c2b0e2c"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/professional_training/2/quote",
+          "sha256": "f8f03d607d3ae3d7df5a18c84502b5f10ba4ae55fd5d181bb3988fc6259617ca"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/appointments/0/quote",
+          "sha256": "cb41f0c3e22e7d6bf3c7353720d3d833171147b12d16df14412c174409443b4f"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/research_directions/0/quote",
+          "sha256": "6b222bed6732cf68f2bcae6243352100fa504373adbe413066b25a4dd723ff3c"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/teaching/0/quote",
+          "sha256": "03808dafb7c61fc4db6def59bac9d522188484a2ea2bf1187c6bfe2ec31d6629"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/identity_evidence/0/quote",
+          "sha256": "04d205eb84d6505467f346b0e4b07e9cb2a485c5e74f4e275bde4d813b222297"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/identity_evidence/1/quote",
+          "sha256": "3b7cd4f96cbde84a2be5e099089997b36aacac9b795523b033604711877d71ff"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/identity_evidence/2/quote",
+          "sha256": "61ed3a103b6ab32b5e9aae7ca730e7316e6d94fb0c34235cbc8ca0bf6855f2f0"
+        },
+        {
+          "path": "/people/xjtu-shangyufan-organization/identity_evidence/3/quote",
+          "sha256": "ca95db90b6752495e68c253d44d81532dea268d2a7b36b0610a993cd409302b4"
+        },
+        {
+          "path": "/quote",
+          "sha256": "38242fb0ba7116c20fe148cc58e9c4c77d22c67c85a3d99111911b65e14f49a6"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4943ab268c6350e14e0ebe164ac8db5dcf4aa2941d84519a028f2d2f0c1f8e78"
+        },
+        {
+          "path": "/quote",
+          "sha256": "cb326c419bff1e1e81f0e0c3e1d1267dd1316448559d1d9487219ff45eea4023"
+        },
+        {
+          "path": "/quote",
+          "sha256": "fefefad30f365a814c4f55dc063fb70f73d3e96f0f0b2c3237b376ce9535e4cc"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ea0c09cd9b2b9a55508ee89f4c4f7ea416d116fe191eedc9a5f31d994c2b0e2c"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f8f03d607d3ae3d7df5a18c84502b5f10ba4ae55fd5d181bb3988fc6259617ca"
+        },
+        {
+          "path": "/quote",
+          "sha256": "cb41f0c3e22e7d6bf3c7353720d3d833171147b12d16df14412c174409443b4f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "03808dafb7c61fc4db6def59bac9d522188484a2ea2bf1187c6bfe2ec31d6629"
+        },
+        {
+          "path": "/quote",
+          "sha256": "cb41f0c3e22e7d6bf3c7353720d3d833171147b12d16df14412c174409443b4f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "a1808a88e3049f2e0175f7add188046b249dfe293c88d80b760a6187bcfd01a7"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d319068a490e32f408770c6ef6817718f33d9b96187ade97a612b4fafc4bb0b1"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d319068a490e32f408770c6ef6817718f33d9b96187ade97a612b4fafc4bb0b1"
+        }
+      ],
+      "counts": {
+        "education": 16,
+        "appointments": 9,
+        "mentors": 3,
+        "publications": 6,
+        "teaching": 1
+      },
+      "teaching_scope": "尚1组3课程，原整体本科/研究生受众，不逐门推层级；角色讲授明确。",
+      "source_review_scope": "原pending或source-only状态仅历史源审语境，非当前工程、人事或出版验证。原notes等保留，用户可见限定只讲实际证据。",
+      "degree_final_counts": {
+        "true": 6,
+        "false": 4,
+        "null": 6,
+        "original_award_classifications_unchanged": true,
+        "yao_doctoral_award_date": "2006-06",
+        "yao_date_basis": "原独立职业简介明确获授月份，非从学习结束推定。"
+      },
+      "visible_year_and_compound_locator_revision": [
+        {
+          "json_pointer": "/people/3/education/0/note",
+          "before": "官网保留学士教育阶段称谓、院校及单年语境；单年不认定学习起止或授位年。",
+          "after": "官网保留学士教育阶段称谓、院校及单年语境；单年不认定学习起止或授位年。 原条目标注年份：1993年；该年不是已核授位年或学习起止。",
+          "basis_original_field": "stage_year_as_source",
+          "source_value": 1993
+        },
+        {
+          "json_pointer": "/people/3/education/1/note",
+          "before": "官网保留硕士教育阶段称谓、院校及单年语境；单年不认定学习起止或授位年。",
+          "after": "官网保留硕士教育阶段称谓、院校及单年语境；单年不认定学习起止或授位年。 原条目标注年份：1996年；该年不是已核授位年或学习起止。",
+          "basis_original_field": "stage_year_as_source",
+          "source_value": 1996
+        },
+        {
+          "json_pointer": "/people/3/education/2/note",
+          "before": "官网保留博士教育阶段称谓、院校及单年语境；单年不认定学习起止或授位年。",
+          "after": "官网保留博士教育阶段称谓、院校及单年语境；单年不认定学习起止或授位年。 原条目标注年份：2003年；该年不是已核授位年或学习起止。",
+          "basis_original_field": "stage_year_as_source",
+          "source_value": 2003
+        },
+        {
+          "json_pointer": "/people/0/appointments/2/source_locator",
+          "before": "工作简历／主持工作副主任",
+          "after": "工作简历／2016年12月至2021年7月南昌大学副教授、硕士生导师及其中2019年10月至2021年3月主持工作副主任",
+          "source_excerpt_sha256": "24bc89096b3180db6422aa7723be385d3e9995a2b27794fd18cbe8656794328e"
+        },
+        {
+          "json_pointer": "/people/0/sources/0/excerpts/5/locator",
+          "before": "工作简历／主持工作副主任",
+          "after": "工作简历／2016年12月至2021年7月南昌大学副教授、硕士生导师及其中2019年10月至2021年3月主持工作副主任",
+          "source_excerpt_sha256": "24bc89096b3180db6422aa7723be385d3e9995a2b27794fd18cbe8656794328e"
+        }
+      ],
+      "yao_employment_date_separation": {
+        "json_pointer": "/people/1/appointments/0",
+        "deltas": [
+          {
+            "key": "start",
+            "before_present": true,
+            "before": "2006-07",
+            "after": null
+          },
+          {
+            "key": "note",
+            "before_present": true,
+            "before": "2006年7为原入校起点，原现在称讲师不证明讲师自该月起任；终点未知，未核实时人事。",
+            "after": "官网原文2006年7开始在西安交通大学就职，现任公共政策与管理学院任讲师；2006年7月仅为入校起点，不是讲师职称起任。讲师起止未知，现任是来源表述，不认证当前人事。"
+          },
+          {
+            "key": "source_start",
+            "before_present": false,
+            "before": null,
+            "after": "2006-07"
+          },
+          {
+            "key": "university_employment_start",
+            "before_present": false,
+            "before": null,
+            "after": "2006-07"
+          },
+          {
+            "key": "source_note",
+            "before_present": false,
+            "before": null,
+            "after": "2006年7为原入校起点，原现在称讲师不证明讲师自该月起任；终点未知，未核实时人事。"
+          }
+        ],
+        "source_evidence_id": "yao-role",
+        "source_quote": "2006年7开始在西安交通大学就职，现任公共政策与管理学院任讲师。",
+        "scope": "入校日期非讲师任始，canonical职称区间起点保持未知，不另增岗位。",
+        "old_payload_sha256": "ccbf12d836b86ae3dc4bb9fbdfb7983743920483f8abffc0d0a6b09f93de73f0",
+        "reverse_sha256": "ccbf12d836b86ae3dc4bb9fbdfb7983743920483f8abffc0d0a6b09f93de73f0",
+        "reverse_pass": true
+      }
+    },
+    {
+      "baseline_people": 770,
+      "people": [
+        {
+          "person_id": "xjtu-yuyan",
+          "source_candidate_sha256": "8bda962d710250c05b240c8f5b95f780f5a76ecc37dbfe33ee64db58b5514220",
+          "source_evidence_sha256": "7518fd9cdaa934eb0455b885039b197015d64f11323bc971bcab2f840012ef35",
+          "source_review_sha256": "4633321dcd1e0867abead1661e19ffc2ca1d8d8e7ed76ffd0e4296a9284c3ba5",
+          "source_org_id": "xjtu-public-health",
+          "canonical_org_id": "xjtu-public-health",
+          "organization_identity_basis": "同校官方本人介绍及目录明确中文单位；仅展示归属，不补未核行政父级。",
+          "education": 5,
+          "degree_true_false_null": [
+            3,
+            2,
+            0
+          ],
+          "appointments": 5,
+          "mentors": 4,
+          "publications": 0
+        },
+        {
+          "person_id": "xjtu-peileilei",
+          "source_candidate_sha256": "8bda962d710250c05b240c8f5b95f780f5a76ecc37dbfe33ee64db58b5514220",
+          "source_evidence_sha256": "7518fd9cdaa934eb0455b885039b197015d64f11323bc971bcab2f840012ef35",
+          "source_review_sha256": "4633321dcd1e0867abead1661e19ffc2ca1d8d8e7ed76ffd0e4296a9284c3ba5",
+          "source_org_id": "xjtu-public-health",
+          "canonical_org_id": "xjtu-public-health",
+          "organization_identity_basis": "同校官方本人介绍及目录明确中文单位；仅展示归属，不补未核行政父级。",
+          "education": 3,
+          "degree_true_false_null": [
+            1,
+            0,
+            2
+          ],
+          "appointments": 1,
+          "mentors": 2,
+          "publications": 2
+        },
+        {
+          "person_id": "xjtu-zhoumi-organization",
+          "source_candidate_sha256": "dd7b8a0c5f6e9913241453b0b29dd0f04b775b81aaadf44bc9eb81c553a5b944",
+          "source_evidence_sha256": "8ae25f66a17acbca49b9566fc17f943215fb19e2338dcbc803615fa78c81d0ee",
+          "source_review_sha256": "7b28825e01ab1880d57de21b1eb49b61251b037821266699883b372e2d7ca695",
+          "source_org_id": null,
+          "canonical_org_id": "xjtu-management",
+          "organization_identity_basis": "同校官方本人介绍及目录明确中文单位；仅展示归属，不补未核行政父级。",
+          "education": 4,
+          "degree_true_false_null": [
+            3,
+            1,
+            0
+          ],
+          "appointments": 1,
+          "mentors": 0,
+          "publications": 0
+        },
+        {
+          "person_id": "xjtu-zhuzhengwei",
+          "source_candidate_sha256": "bd3ad818cfe1589ecc84f7a8f27091677a9d508db562272d0156072e4214d142",
+          "source_evidence_sha256": "7588966f869df0837e389134514dc5fde889ea7af97e9a537286beb8c438f87a",
+          "source_review_sha256": "1ca9b0dc670330eb7f7386bc29468491d6970bc0001a6157831bd7c93ac44b6c",
+          "source_org_id": null,
+          "canonical_org_id": "xjtu-public-policy-management",
+          "organization_identity_basis": "同校官方本人介绍及目录明确中文单位；仅展示归属，不补未核行政父级。",
+          "education": 3,
+          "degree_true_false_null": [
+            3,
+            0,
+            0
+          ],
+          "appointments": 1,
+          "mentors": 0,
+          "publications": 0
+        }
+      ],
+      "applied_overlays": [
+        {
+          "person_id": "xjtu-zhuzhengwei",
+          "source_candidate_sha256": "bd3ad818cfe1589ecc84f7a8f27091677a9d508db562272d0156072e4214d142",
+          "overlay_sha256": "cc5fb1031227613bed47ebcb5b622ff3191adcf71cb17615b7e9955970bb1de4",
+          "json_pointer": "/people/0/source_verification_gaps/5",
+          "old_value": "页面仅提著作/论文总述，无可结构化的单项作品，未补猜书目。",
+          "new_value": "本批留存摘录没有可结构化的具名单项作品，未补猜书目；不据此断言完整页面或其全部著作情况。",
+          "exact_value_guard_passed": true
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "sha256": "1607aa9533cd86e5dac6decfda7b0ee997582370dadbf864b048a625398e7d9c",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "66e1b5a4962562e71b12815cbd610c545fcedba5d9c82231de242e75a900eb88",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "7821921a33a86fa9bb865c46869ea8ff685b6a26d4702af095d60b1c939d4b60",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "2add411d49864a6c5b4ba442c0d90c377ed961ea6e8833c7f41c5cdb342ac424",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "8bf6dec678228d3da08d1be19d1b7eed63f976cd66a644e635f7ebe968e3fdb8",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "66e1b5a4962562e71b12815cbd610c545fcedba5d9c82231de242e75a900eb88",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "7821921a33a86fa9bb865c46869ea8ff685b6a26d4702af095d60b1c939d4b60",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "2add411d49864a6c5b4ba442c0d90c377ed961ea6e8833c7f41c5cdb342ac424",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "8bf6dec678228d3da08d1be19d1b7eed63f976cd66a644e635f7ebe968e3fdb8",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "821955dc67888b686f6e6a11457790d26d705e2b15c815dbacd999f3a96bd972",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "b85fad09b8ed5b510232757a615a3d9f2227102be985242b41e6326aed2934d1",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "821955dc67888b686f6e6a11457790d26d705e2b15c815dbacd999f3a96bd972",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "de88c841a26716b36f1ccfc416b268ee7f69fca73e8355582ced604edb582f41",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "821955dc67888b686f6e6a11457790d26d705e2b15c815dbacd999f3a96bd972",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "eb1a61bec0907e6086a9929a22745b28482631881f8c885e3534e2ae8a5dd38e",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "821955dc67888b686f6e6a11457790d26d705e2b15c815dbacd999f3a96bd972",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "c9a21f668c0800913783dc6b51fd2b71fbecdf34b2f3aeb86dbdffde844e3ee0",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "821955dc67888b686f6e6a11457790d26d705e2b15c815dbacd999f3a96bd972",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "d800d7eb3114e32d109645ad6e0f340b6b8d63c1d59b2363ce6d71902790341f",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "d800d7eb3114e32d109645ad6e0f340b6b8d63c1d59b2363ce6d71902790341f",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "d800d7eb3114e32d109645ad6e0f340b6b8d63c1d59b2363ce6d71902790341f",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "d800d7eb3114e32d109645ad6e0f340b6b8d63c1d59b2363ce6d71902790341f",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "d800d7eb3114e32d109645ad6e0f340b6b8d63c1d59b2363ce6d71902790341f",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "65484a4c632605a1800991202dddf965e73b08636f66e21e586d17ac131c4901",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "7ddd432be78017ad8182a6522fe36b693c8c887c24532bc665343793037dc39c",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "65484a4c632605a1800991202dddf965e73b08636f66e21e586d17ac131c4901",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "1cf44e29cadfe06d23b44cb1f63428b3885cbe3f712a059eb29a6d89be9813e6",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "19ccd17c2f91cd3d497c7b190e016ae8b30e67ef8f927bdbbf7556442120f4a5",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "65484a4c632605a1800991202dddf965e73b08636f66e21e586d17ac131c4901",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "7ddd432be78017ad8182a6522fe36b693c8c887c24532bc665343793037dc39c",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "19ccd17c2f91cd3d497c7b190e016ae8b30e67ef8f927bdbbf7556442120f4a5",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "1cf44e29cadfe06d23b44cb1f63428b3885cbe3f712a059eb29a6d89be9813e6",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "65484a4c632605a1800991202dddf965e73b08636f66e21e586d17ac131c4901",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "7553e61abeddfe21f24db342bba799fc261848d1dc85d133bb6a8c76a3ea31a8",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "1607aa9533cd86e5dac6decfda7b0ee997582370dadbf864b048a625398e7d9c",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "66e1b5a4962562e71b12815cbd610c545fcedba5d9c82231de242e75a900eb88",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "7821921a33a86fa9bb865c46869ea8ff685b6a26d4702af095d60b1c939d4b60",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "2add411d49864a6c5b4ba442c0d90c377ed961ea6e8833c7f41c5cdb342ac424",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "8bf6dec678228d3da08d1be19d1b7eed63f976cd66a644e635f7ebe968e3fdb8",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "66e1b5a4962562e71b12815cbd610c545fcedba5d9c82231de242e75a900eb88",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "7821921a33a86fa9bb865c46869ea8ff685b6a26d4702af095d60b1c939d4b60",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "2add411d49864a6c5b4ba442c0d90c377ed961ea6e8833c7f41c5cdb342ac424",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "8bf6dec678228d3da08d1be19d1b7eed63f976cd66a644e635f7ebe968e3fdb8",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "821955dc67888b686f6e6a11457790d26d705e2b15c815dbacd999f3a96bd972",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "b85fad09b8ed5b510232757a615a3d9f2227102be985242b41e6326aed2934d1",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "821955dc67888b686f6e6a11457790d26d705e2b15c815dbacd999f3a96bd972",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "de88c841a26716b36f1ccfc416b268ee7f69fca73e8355582ced604edb582f41",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "821955dc67888b686f6e6a11457790d26d705e2b15c815dbacd999f3a96bd972",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "eb1a61bec0907e6086a9929a22745b28482631881f8c885e3534e2ae8a5dd38e",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "821955dc67888b686f6e6a11457790d26d705e2b15c815dbacd999f3a96bd972",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "c9a21f668c0800913783dc6b51fd2b71fbecdf34b2f3aeb86dbdffde844e3ee0",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "821955dc67888b686f6e6a11457790d26d705e2b15c815dbacd999f3a96bd972",
+          "source_id": "xjtu-yuyan-profile"
+        },
+        {
+          "sha256": "65484a4c632605a1800991202dddf965e73b08636f66e21e586d17ac131c4901",
+          "source_id": null
+        },
+        {
+          "sha256": "7553e61abeddfe21f24db342bba799fc261848d1dc85d133bb6a8c76a3ea31a8",
+          "source_id": null
+        },
+        {
+          "sha256": "7ddd432be78017ad8182a6522fe36b693c8c887c24532bc665343793037dc39c",
+          "source_id": null
+        },
+        {
+          "sha256": "d800d7eb3114e32d109645ad6e0f340b6b8d63c1d59b2363ce6d71902790341f",
+          "source_id": null
+        },
+        {
+          "sha256": "1607aa9533cd86e5dac6decfda7b0ee997582370dadbf864b048a625398e7d9c",
+          "source_id": null
+        },
+        {
+          "sha256": "66e1b5a4962562e71b12815cbd610c545fcedba5d9c82231de242e75a900eb88",
+          "source_id": null
+        },
+        {
+          "sha256": "7821921a33a86fa9bb865c46869ea8ff685b6a26d4702af095d60b1c939d4b60",
+          "source_id": null
+        },
+        {
+          "sha256": "2add411d49864a6c5b4ba442c0d90c377ed961ea6e8833c7f41c5cdb342ac424",
+          "source_id": null
+        },
+        {
+          "sha256": "8bf6dec678228d3da08d1be19d1b7eed63f976cd66a644e635f7ebe968e3fdb8",
+          "source_id": null
+        },
+        {
+          "sha256": "821955dc67888b686f6e6a11457790d26d705e2b15c815dbacd999f3a96bd972",
+          "source_id": null
+        },
+        {
+          "sha256": "b85fad09b8ed5b510232757a615a3d9f2227102be985242b41e6326aed2934d1",
+          "source_id": null
+        },
+        {
+          "sha256": "de88c841a26716b36f1ccfc416b268ee7f69fca73e8355582ced604edb582f41",
+          "source_id": null
+        },
+        {
+          "sha256": "eb1a61bec0907e6086a9929a22745b28482631881f8c885e3534e2ae8a5dd38e",
+          "source_id": null
+        },
+        {
+          "sha256": "c9a21f668c0800913783dc6b51fd2b71fbecdf34b2f3aeb86dbdffde844e3ee0",
+          "source_id": null
+        },
+        {
+          "sha256": "19ccd17c2f91cd3d497c7b190e016ae8b30e67ef8f927bdbbf7556442120f4a5",
+          "source_id": null
+        },
+        {
+          "sha256": "9ebc83cb350f18ba70e3810a31675684fa76875b38603861491debd01f48e70e",
+          "source_id": null
+        },
+        {
+          "sha256": "70c66e18257e599420c42f17bf48e2c43089017c476df5fe1707afc4d4cace12",
+          "source_id": null
+        },
+        {
+          "sha256": "4eb03e206566f2a0e3d9a8b5672a260fd35a0af175476d4c050f0ce4c106b5fa",
+          "source_id": null
+        },
+        {
+          "sha256": "1cf44e29cadfe06d23b44cb1f63428b3885cbe3f712a059eb29a6d89be9813e6",
+          "source_id": null
+        },
+        {
+          "sha256": "65484a4c632605a1800991202dddf965e73b08636f66e21e586d17ac131c4901",
+          "source_id": null
+        },
+        {
+          "sha256": "19ccd17c2f91cd3d497c7b190e016ae8b30e67ef8f927bdbbf7556442120f4a5",
+          "source_id": null
+        },
+        {
+          "sha256": "19ccd17c2f91cd3d497c7b190e016ae8b30e67ef8f927bdbbf7556442120f4a5",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "9f4015e1370c15a8b0db3f98cb9c0bf0c780e7656d55f27a5311023e00c6155b",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "4cebbbb1a458230d25c3bb9039dfc5057f73145195753969fb004e48acdf8c6c",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "a5d86818efef3b2b1dd05bb6956a57c398479efdc2790aad7fe5af7338a4c03a",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "4cebbbb1a458230d25c3bb9039dfc5057f73145195753969fb004e48acdf8c6c",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "a5d86818efef3b2b1dd05bb6956a57c398479efdc2790aad7fe5af7338a4c03a",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "bd95d59259c7a041da26d445b34f2be654fa06c6304fbe46222ca59e81f1f703",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "29cb7c35d620f698d8688d6440d3fa0d8b42038c0c40bda8db3e47f6ce0ad89f",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "29cb7c35d620f698d8688d6440d3fa0d8b42038c0c40bda8db3e47f6ce0ad89f",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "b133b6d19c6d52b9bf0876f1ae747466c992998f60c5e2a7b3dee7a0960e8e26",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "87bcda0a772be148d3c6442e0bb533aff62bae0acc17f649e52a75d90c3b6670",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "4eb03e206566f2a0e3d9a8b5672a260fd35a0af175476d4c050f0ce4c106b5fa",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "fa0570cef33ce0dd97f74f476c4403bb10611291df78be1533b14a23698b50f0",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "4eb03e206566f2a0e3d9a8b5672a260fd35a0af175476d4c050f0ce4c106b5fa",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "70c66e18257e599420c42f17bf48e2c43089017c476df5fe1707afc4d4cace12",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "19ccd17c2f91cd3d497c7b190e016ae8b30e67ef8f927bdbbf7556442120f4a5",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "4eb03e206566f2a0e3d9a8b5672a260fd35a0af175476d4c050f0ce4c106b5fa",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "fa0570cef33ce0dd97f74f476c4403bb10611291df78be1533b14a23698b50f0",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "19ccd17c2f91cd3d497c7b190e016ae8b30e67ef8f927bdbbf7556442120f4a5",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "70c66e18257e599420c42f17bf48e2c43089017c476df5fe1707afc4d4cace12",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "4eb03e206566f2a0e3d9a8b5672a260fd35a0af175476d4c050f0ce4c106b5fa",
+          "source_id": "xjtu-sph-directory"
+        },
+        {
+          "sha256": "86cc0478f40238427e1e6d7c48ca07975f88f4ab9cfae59f56680e24fb93e1dc",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "9f4015e1370c15a8b0db3f98cb9c0bf0c780e7656d55f27a5311023e00c6155b",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "4cebbbb1a458230d25c3bb9039dfc5057f73145195753969fb004e48acdf8c6c",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "a5d86818efef3b2b1dd05bb6956a57c398479efdc2790aad7fe5af7338a4c03a",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "4cebbbb1a458230d25c3bb9039dfc5057f73145195753969fb004e48acdf8c6c",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "a5d86818efef3b2b1dd05bb6956a57c398479efdc2790aad7fe5af7338a4c03a",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "bd95d59259c7a041da26d445b34f2be654fa06c6304fbe46222ca59e81f1f703",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "b133b6d19c6d52b9bf0876f1ae747466c992998f60c5e2a7b3dee7a0960e8e26",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "87bcda0a772be148d3c6442e0bb533aff62bae0acc17f649e52a75d90c3b6670",
+          "source_id": "xjtu-peileilei-profile"
+        },
+        {
+          "sha256": "9ebc83cb350f18ba70e3810a31675684fa76875b38603861491debd01f48e70e",
+          "source_id": null
+        },
+        {
+          "sha256": "70c66e18257e599420c42f17bf48e2c43089017c476df5fe1707afc4d4cace12",
+          "source_id": null
+        },
+        {
+          "sha256": "4eb03e206566f2a0e3d9a8b5672a260fd35a0af175476d4c050f0ce4c106b5fa",
+          "source_id": null
+        },
+        {
+          "sha256": "1cf44e29cadfe06d23b44cb1f63428b3885cbe3f712a059eb29a6d89be9813e6",
+          "source_id": null
+        },
+        {
+          "sha256": "65484a4c632605a1800991202dddf965e73b08636f66e21e586d17ac131c4901",
+          "source_id": null
+        },
+        {
+          "sha256": "19ccd17c2f91cd3d497c7b190e016ae8b30e67ef8f927bdbbf7556442120f4a5",
+          "source_id": null
+        },
+        {
+          "sha256": "4eb03e206566f2a0e3d9a8b5672a260fd35a0af175476d4c050f0ce4c106b5fa",
+          "source_id": null
+        },
+        {
+          "sha256": "86cc0478f40238427e1e6d7c48ca07975f88f4ab9cfae59f56680e24fb93e1dc",
+          "source_id": null
+        },
+        {
+          "sha256": "fa0570cef33ce0dd97f74f476c4403bb10611291df78be1533b14a23698b50f0",
+          "source_id": null
+        },
+        {
+          "sha256": "a5d86818efef3b2b1dd05bb6956a57c398479efdc2790aad7fe5af7338a4c03a",
+          "source_id": null
+        },
+        {
+          "sha256": "4cebbbb1a458230d25c3bb9039dfc5057f73145195753969fb004e48acdf8c6c",
+          "source_id": null
+        },
+        {
+          "sha256": "9f4015e1370c15a8b0db3f98cb9c0bf0c780e7656d55f27a5311023e00c6155b",
+          "source_id": null
+        },
+        {
+          "sha256": "bd95d59259c7a041da26d445b34f2be654fa06c6304fbe46222ca59e81f1f703",
+          "source_id": null
+        },
+        {
+          "sha256": "29cb7c35d620f698d8688d6440d3fa0d8b42038c0c40bda8db3e47f6ce0ad89f",
+          "source_id": null
+        },
+        {
+          "sha256": "b133b6d19c6d52b9bf0876f1ae747466c992998f60c5e2a7b3dee7a0960e8e26",
+          "source_id": null
+        },
+        {
+          "sha256": "87bcda0a772be148d3c6442e0bb533aff62bae0acc17f649e52a75d90c3b6670",
+          "source_id": null
+        },
+        {
+          "sha256": "19ccd17c2f91cd3d497c7b190e016ae8b30e67ef8f927bdbbf7556442120f4a5",
+          "source_id": null
+        },
+        {
+          "sha256": "8305dc33611f0ae3e9d2126127055b0b53d5df0ee549149e83ab2b8466fedd51",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "0036088d6023a1553e483813fef0659dc34bddcd69cb9aa900382fb773506aa9",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "275d3e0b5a96c26999eedf06ee77571ee9187b5dd985b7f90d23be0976aca5b5",
+          "source_id": "xjtu-organization-directory"
+        },
+        {
+          "sha256": "3c855ec50a0963e9adeb07ee638480f8de1a2b2e02f90a8acddbc972974b6018",
+          "source_id": "xjtu-organization-directory"
+        },
+        {
+          "sha256": "fe321bb4015a529c2280d4985fea080d61f0d55e51228581329214215b5bdb28",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "1430b30b0117b690209d80bfa53ae02ed3f924c61c2d8bae3c55ef45e6801e25",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "855f077959a2df106fb468d8a4a5aa10ecbdcac32969da3ac9eb5b114845f7b4",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "ccaecda983fe388ec3313184d20b0a0d31ef12ce126fbbc0c2e31397a91ed53f",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "0036088d6023a1553e483813fef0659dc34bddcd69cb9aa900382fb773506aa9",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "0796a2d91b89f14c0ab9edb2e7f85c7a8768cdd62ce78c0237450281d5a59a9b",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "fe321bb4015a529c2280d4985fea080d61f0d55e51228581329214215b5bdb28",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "1430b30b0117b690209d80bfa53ae02ed3f924c61c2d8bae3c55ef45e6801e25",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "855f077959a2df106fb468d8a4a5aa10ecbdcac32969da3ac9eb5b114845f7b4",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "ccaecda983fe388ec3313184d20b0a0d31ef12ce126fbbc0c2e31397a91ed53f",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "0036088d6023a1553e483813fef0659dc34bddcd69cb9aa900382fb773506aa9",
+          "source_id": "xjtu-zhoumi-profile"
+        },
+        {
+          "sha256": "8305dc33611f0ae3e9d2126127055b0b53d5df0ee549149e83ab2b8466fedd51",
+          "source_id": null
+        },
+        {
+          "sha256": "0036088d6023a1553e483813fef0659dc34bddcd69cb9aa900382fb773506aa9",
+          "source_id": null
+        },
+        {
+          "sha256": "fe321bb4015a529c2280d4985fea080d61f0d55e51228581329214215b5bdb28",
+          "source_id": null
+        },
+        {
+          "sha256": "1430b30b0117b690209d80bfa53ae02ed3f924c61c2d8bae3c55ef45e6801e25",
+          "source_id": null
+        },
+        {
+          "sha256": "855f077959a2df106fb468d8a4a5aa10ecbdcac32969da3ac9eb5b114845f7b4",
+          "source_id": null
+        },
+        {
+          "sha256": "ccaecda983fe388ec3313184d20b0a0d31ef12ce126fbbc0c2e31397a91ed53f",
+          "source_id": null
+        },
+        {
+          "sha256": "0796a2d91b89f14c0ab9edb2e7f85c7a8768cdd62ce78c0237450281d5a59a9b",
+          "source_id": null
+        },
+        {
+          "sha256": "275d3e0b5a96c26999eedf06ee77571ee9187b5dd985b7f90d23be0976aca5b5",
+          "source_id": null
+        },
+        {
+          "sha256": "3c855ec50a0963e9adeb07ee638480f8de1a2b2e02f90a8acddbc972974b6018",
+          "source_id": null
+        },
+        {
+          "sha256": "b453ce6452b0d4eedb8aef9e23d68e9660fc569c9ce0d1c1eed7199d492cdc44",
+          "source_id": "xjtu-zhuzhengwei-profile"
+        },
+        {
+          "sha256": "35daa9a3ac4fd1f0784918e4688fc20ea30174b267f1e0dbb66596aadbb67347",
+          "source_id": "xjtu-zhuzhengwei-profile"
+        },
+        {
+          "sha256": "1fb2d88f64debf1e25f732c227d7cd000f9eae2f4a7954efa07d37e232e12a54",
+          "source_id": "xjtu-zhuzhengwei-profile"
+        },
+        {
+          "sha256": "c0068bab02a2a6eea43f1847780102640d927e46bd22c744f5737eb08bec0bbe",
+          "source_id": "xjtu-zhuzhengwei-profile"
+        },
+        {
+          "sha256": "7a918fb5352f40013b78b092ad1e7145df0ef56e132812181d535dee856bac9d",
+          "source_id": "xjtu-zhuzhengwei-profile"
+        },
+        {
+          "sha256": "2acf778787448d3017b6b124629c9ad125a99cacec57f414038cab07273f145a",
+          "source_id": "xjtu-zhuzhengwei-profile"
+        },
+        {
+          "sha256": "7039c7215235bd5ade2519dbd775f96e816b227f27ab66e56e507be6d369f1cd",
+          "source_id": "xjtu-zhuzhengwei-profile"
+        },
+        {
+          "sha256": "b453ce6452b0d4eedb8aef9e23d68e9660fc569c9ce0d1c1eed7199d492cdc44",
+          "source_id": "xjtu-zhuzhengwei-profile"
+        },
+        {
+          "sha256": "35daa9a3ac4fd1f0784918e4688fc20ea30174b267f1e0dbb66596aadbb67347",
+          "source_id": "xjtu-zhuzhengwei-profile"
+        },
+        {
+          "sha256": "1fb2d88f64debf1e25f732c227d7cd000f9eae2f4a7954efa07d37e232e12a54",
+          "source_id": "xjtu-zhuzhengwei-profile"
+        },
+        {
+          "sha256": "c0068bab02a2a6eea43f1847780102640d927e46bd22c744f5737eb08bec0bbe",
+          "source_id": "xjtu-zhuzhengwei-profile"
+        },
+        {
+          "sha256": "7039c7215235bd5ade2519dbd775f96e816b227f27ab66e56e507be6d369f1cd",
+          "source_id": null
+        },
+        {
+          "sha256": "b453ce6452b0d4eedb8aef9e23d68e9660fc569c9ce0d1c1eed7199d492cdc44",
+          "source_id": null
+        },
+        {
+          "sha256": "35daa9a3ac4fd1f0784918e4688fc20ea30174b267f1e0dbb66596aadbb67347",
+          "source_id": null
+        },
+        {
+          "sha256": "1fb2d88f64debf1e25f732c227d7cd000f9eae2f4a7954efa07d37e232e12a54",
+          "source_id": null
+        },
+        {
+          "sha256": "c0068bab02a2a6eea43f1847780102640d927e46bd22c744f5737eb08bec0bbe",
+          "source_id": null
+        },
+        {
+          "sha256": "7a918fb5352f40013b78b092ad1e7145df0ef56e132812181d535dee856bac9d",
+          "source_id": null
+        },
+        {
+          "sha256": "2acf778787448d3017b6b124629c9ad125a99cacec57f414038cab07273f145a",
+          "source_id": null
+        }
+      ],
+      "organization_mapping": "本组仅新增原xjtu-public-health；周/朱复用本批组2管理学院/公共政策与管理学院节点，不覆盖其属性；原人物组织字段保留。",
+      "education_projection_scope": "周原education数组3项，原nondegree_training访问1项合并到canonical教育展示共4项；于原education3+professional_training2共5，其余原数组不增项。",
+      "degree_classification_update": {
+        "prechange_payload_sha256": "fdd83760feafa779f74e05428018d1e431011be2b439baf7e9045542ca5b413f",
+        "delta": [
+          {
+            "person_id": "xjtu-peileilei",
+            "event_id": "xjtu-peileilei-education-3",
+            "json_pointer": "/people/1/education/2",
+            "old_value": {
+              "event_id": "xjtu-peileilei-education-3",
+              "event_kind": "education_label_award_unknown",
+              "institution": "西安交通大学",
+              "institution_as_source": "西安交通大学",
+              "department": null,
+              "education_stage": "博士",
+              "degree_label_as_source": "博士",
+              "field": "流行病与卫生统计学",
+              "date_as_source": "2009/9 - 2013/9",
+              "start": "2009-09",
+              "end": "2013-09",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "保留官网教育与学位称谓；授位状态未单独核实，不以学习区间或关联年补授位日期。",
+              "source_id": "xjtu-peileilei-profile",
+              "source_url": "https://sph.xjtu.edu.cn/info/1093/1595.htm",
+              "source_excerpt_sha256": "a5d86818efef3b2b1dd05bb6956a57c398479efdc2790aad7fe5af7338a4c03a",
+              "source_locator": "职业条目／2009/9 - 2013/9，西安交通大学，流行病与卫生统计学，博士，导师：颜虹",
+              "observed_at_utc": "2026-10-25T03:31:02.287Z",
+              "education_event_id": "xjtu-peileilei-education-3",
+              "degree": "博士",
+              "source_event_kind": "degree_label_in_education_section",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "只有教育阶段/学位标签；简介“博士学位”仍非明确获授事件句，degree_awarded=null，学习终年不是授位年。"
+            },
+            "new_value": {
+              "event_id": "xjtu-peileilei-education-3",
+              "event_kind": "degree",
+              "institution": "西安交通大学",
+              "institution_as_source": "西安交通大学",
+              "department": null,
+              "education_stage": "博士",
+              "degree_label_as_source": "博士",
+              "field": "流行病与卫生统计学",
+              "date_as_source": "2009/9 - 2013/9",
+              "start": "2009-09",
+              "end": "2013-09",
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "官网独立职业身份明确“博士学位”，教育表唯一博士阶段为西安交通大学流行病与卫生统计学，据此记录来源报告博士学位；2009/9—2013/9仍仅学习区间，不补授位年月，原证书未核。",
+              "source_id": "xjtu-peileilei-profile",
+              "source_url": "https://sph.xjtu.edu.cn/info/1093/1595.htm",
+              "source_excerpt_sha256": "a5d86818efef3b2b1dd05bb6956a57c398479efdc2790aad7fe5af7338a4c03a",
+              "source_locator": "职业条目／2009/9 - 2013/9，西安交通大学，流行病与卫生统计学，博士，导师：颜虹",
+              "observed_at_utc": "2026-10-25T03:31:02.287Z",
+              "education_event_id": "xjtu-peileilei-education-3",
+              "degree": "博士",
+              "source_event_kind": "degree_label_in_education_section",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_note": "只有教育阶段/学位标签；简介“博士学位”仍非明确获授事件句，degree_awarded=null，学习终年不是授位年。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "degree_award_evidence": {
+                "source_id": "xjtu-peileilei-profile",
+                "source_url": "https://sph.xjtu.edu.cn/info/1093/1595.htm",
+                "source_excerpt_sha256": "fa0570cef33ce0dd97f74f476c4403bb10611291df78be1533b14a23698b50f0",
+                "source_locator": "职业条目／博士学位，讲师，硕士生导师",
+                "observed_at_utc": "2026-10-25T03:31:02.287Z"
+              }
+            },
+            "source_candidate_sha256": "8bda962d710250c05b240c8f5b95f780f5a76ecc37dbfe33ee64db58b5514220",
+            "evidence": {
+              "source_id": "xjtu-peileilei-profile",
+              "source_url": "https://sph.xjtu.edu.cn/info/1093/1595.htm",
+              "source_excerpt_sha256": "fa0570cef33ce0dd97f74f476c4403bb10611291df78be1533b14a23698b50f0",
+              "source_locator": "职业条目／博士学位，讲师，硕士生导师",
+              "observed_at_utc": "2026-10-25T03:31:02.287Z"
+            }
+          },
+          {
+            "person_id": "xjtu-zhoumi-organization",
+            "event_id": "xjtu-zhoumi-education-1",
+            "json_pointer": "/people/2/education/0",
+            "old_value": {
+              "event_id": "xjtu-zhoumi-education-1",
+              "event_kind": "education_label_award_unknown",
+              "education_stage": "学士",
+              "institution": "华东工学院（现名南京理工大学）",
+              "institution_as_source": "华东工学院（现名南京理工大学）",
+              "department": "机械工程系",
+              "degree_label_as_source": "学士学位",
+              "date_as_source": "1992",
+              "date_kind": "year_associated_with_degree_label_not_explicit_award",
+              "start": null,
+              "end": null,
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "保留官网教育与学位称谓；授位状态未单独核实，不以学习区间或关联年补授位日期。 原文所列学士学位（1992），该年按来源报告年份保留，不另认证授位年份。",
+              "source_id": "xjtu-zhoumi-profile",
+              "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+              "observed_at_utc": "2026-10-25T04:44:29Z",
+              "excerpt_id": "zhou-degree-1",
+              "source_excerpt_sha256": "fe321bb4015a529c2280d4985fea080d61f0d55e51228581329214215b5bdb28",
+              "source_locator": "职业条目／1．华东工学院（现名南京理工大学）机械工程系，学士学位（1992）",
+              "education_event_id": "xjtu-zhoumi-education-1",
+              "degree": "学士学位",
+              "field": null,
+              "source_event_kind": "degree_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "官网教育背景的学位标签与年份，不扩写为明确获授、毕业日期或法定授位实体。华东工学院历史名称及现名原文保留。"
+            },
+            "new_value": {
+              "event_id": "xjtu-zhoumi-education-1",
+              "event_kind": "degree",
+              "education_stage": "学士",
+              "institution": "华东工学院（现名南京理工大学）",
+              "institution_as_source": "华东工学院（现名南京理工大学）",
+              "department": "机械工程系",
+              "degree_label_as_source": "学士学位",
+              "date_as_source": "1992",
+              "date_kind": "year_associated_with_degree_label_not_explicit_award",
+              "start": null,
+              "end": null,
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "官网明确列学士学位（1992），据具体学位称谓记录来源报告学位；括号年为原报告年份，不另补授位生效年月日或毕业日期，原证书与授位法律主体未核。",
+              "source_id": "xjtu-zhoumi-profile",
+              "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+              "observed_at_utc": "2026-10-25T04:44:29Z",
+              "excerpt_id": "zhou-degree-1",
+              "source_excerpt_sha256": "fe321bb4015a529c2280d4985fea080d61f0d55e51228581329214215b5bdb28",
+              "source_locator": "职业条目／1．华东工学院（现名南京理工大学）机械工程系，学士学位（1992）",
+              "education_event_id": "xjtu-zhoumi-education-1",
+              "degree": "学士学位",
+              "field": null,
+              "source_event_kind": "degree_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_note": "官网教育背景的学位标签与年份，不扩写为明确获授、毕业日期或法定授位实体。华东工学院历史名称及现名原文保留。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "degree_award_evidence": {
+                "source_id": "xjtu-zhoumi-profile",
+                "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+                "source_locator": "职业条目／1．华东工学院（现名南京理工大学）机械工程系，学士学位（1992）",
+                "source_excerpt_sha256": "fe321bb4015a529c2280d4985fea080d61f0d55e51228581329214215b5bdb28",
+                "excerpt_id": "zhou-degree-1",
+                "observed_at_utc": "2026-10-25T04:44:29Z"
+              }
+            },
+            "source_candidate_sha256": "dd7b8a0c5f6e9913241453b0b29dd0f04b775b81aaadf44bc9eb81c553a5b944",
+            "evidence": {
+              "source_id": "xjtu-zhoumi-profile",
+              "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+              "source_locator": "职业条目／1．华东工学院（现名南京理工大学）机械工程系，学士学位（1992）",
+              "source_excerpt_sha256": "fe321bb4015a529c2280d4985fea080d61f0d55e51228581329214215b5bdb28",
+              "excerpt_id": "zhou-degree-1",
+              "observed_at_utc": "2026-10-25T04:44:29Z"
+            }
+          },
+          {
+            "person_id": "xjtu-zhoumi-organization",
+            "event_id": "xjtu-zhoumi-education-2",
+            "json_pointer": "/people/2/education/1",
+            "old_value": {
+              "event_id": "xjtu-zhoumi-education-2",
+              "event_kind": "education_label_award_unknown",
+              "education_stage": "硕士",
+              "institution": "西安交通大学",
+              "institution_as_source": "西安交通大学",
+              "department": "管理学院",
+              "degree_label_as_source": "硕士学位",
+              "date_as_source": "1998",
+              "date_kind": "year_associated_with_degree_label_not_explicit_award",
+              "start": null,
+              "end": null,
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "保留官网教育与学位称谓；授位状态未单独核实，不以学习区间或关联年补授位日期。 原文所列硕士学位（1998），该年按来源报告年份保留，不另认证授位年份。",
+              "source_id": "xjtu-zhoumi-profile",
+              "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+              "observed_at_utc": "2026-10-25T04:44:29Z",
+              "excerpt_id": "zhou-degree-2",
+              "source_excerpt_sha256": "1430b30b0117b690209d80bfa53ae02ed3f924c61c2d8bae3c55ef45e6801e25",
+              "source_locator": "职业条目／2．西安交通大学管理学院，硕士学位（1998）",
+              "education_event_id": "xjtu-zhoumi-education-2",
+              "degree": "硕士学位",
+              "field": null,
+              "source_event_kind": "degree_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "官网教育背景的学位标签与年份，不扩写为明确获授、毕业日期或法定授位实体。华东工学院历史名称及现名原文保留。"
+            },
+            "new_value": {
+              "event_id": "xjtu-zhoumi-education-2",
+              "event_kind": "degree",
+              "education_stage": "硕士",
+              "institution": "西安交通大学",
+              "institution_as_source": "西安交通大学",
+              "department": "管理学院",
+              "degree_label_as_source": "硕士学位",
+              "date_as_source": "1998",
+              "date_kind": "year_associated_with_degree_label_not_explicit_award",
+              "start": null,
+              "end": null,
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "官网明确列硕士学位（1998），据具体学位称谓记录来源报告学位；括号年为原报告年份，不另补授位生效年月日或毕业日期，原证书与授位法律主体未核。",
+              "source_id": "xjtu-zhoumi-profile",
+              "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+              "observed_at_utc": "2026-10-25T04:44:29Z",
+              "excerpt_id": "zhou-degree-2",
+              "source_excerpt_sha256": "1430b30b0117b690209d80bfa53ae02ed3f924c61c2d8bae3c55ef45e6801e25",
+              "source_locator": "职业条目／2．西安交通大学管理学院，硕士学位（1998）",
+              "education_event_id": "xjtu-zhoumi-education-2",
+              "degree": "硕士学位",
+              "field": null,
+              "source_event_kind": "degree_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_note": "官网教育背景的学位标签与年份，不扩写为明确获授、毕业日期或法定授位实体。华东工学院历史名称及现名原文保留。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "degree_award_evidence": {
+                "source_id": "xjtu-zhoumi-profile",
+                "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+                "source_locator": "职业条目／2．西安交通大学管理学院，硕士学位（1998）",
+                "source_excerpt_sha256": "1430b30b0117b690209d80bfa53ae02ed3f924c61c2d8bae3c55ef45e6801e25",
+                "excerpt_id": "zhou-degree-2",
+                "observed_at_utc": "2026-10-25T04:44:29Z"
+              }
+            },
+            "source_candidate_sha256": "dd7b8a0c5f6e9913241453b0b29dd0f04b775b81aaadf44bc9eb81c553a5b944",
+            "evidence": {
+              "source_id": "xjtu-zhoumi-profile",
+              "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+              "source_locator": "职业条目／2．西安交通大学管理学院，硕士学位（1998）",
+              "source_excerpt_sha256": "1430b30b0117b690209d80bfa53ae02ed3f924c61c2d8bae3c55ef45e6801e25",
+              "excerpt_id": "zhou-degree-2",
+              "observed_at_utc": "2026-10-25T04:44:29Z"
+            }
+          },
+          {
+            "person_id": "xjtu-zhoumi-organization",
+            "event_id": "xjtu-zhoumi-education-3",
+            "json_pointer": "/people/2/education/2",
+            "old_value": {
+              "event_id": "xjtu-zhoumi-education-3",
+              "event_kind": "education_label_award_unknown",
+              "education_stage": "博士",
+              "institution": "西安交通大学",
+              "institution_as_source": "西安交通大学",
+              "department": "管理学院",
+              "degree_label_as_source": "博士学位",
+              "date_as_source": "2007",
+              "date_kind": "year_associated_with_degree_label_not_explicit_award",
+              "start": null,
+              "end": null,
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "保留官网教育与学位称谓；授位状态未单独核实，不以学习区间或关联年补授位日期。 原文所列博士学位（2007），该年按来源报告年份保留，不另认证授位年份。",
+              "source_id": "xjtu-zhoumi-profile",
+              "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+              "observed_at_utc": "2026-10-25T04:44:29Z",
+              "excerpt_id": "zhou-degree-3",
+              "source_excerpt_sha256": "855f077959a2df106fb468d8a4a5aa10ecbdcac32969da3ac9eb5b114845f7b4",
+              "source_locator": "职业条目／3．西安交通大学管理学院，博士学位（2007）",
+              "education_event_id": "xjtu-zhoumi-education-3",
+              "degree": "博士学位",
+              "field": null,
+              "source_event_kind": "degree_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "官网教育背景的学位标签与年份，不扩写为明确获授、毕业日期或法定授位实体。华东工学院历史名称及现名原文保留。"
+            },
+            "new_value": {
+              "event_id": "xjtu-zhoumi-education-3",
+              "event_kind": "degree",
+              "education_stage": "博士",
+              "institution": "西安交通大学",
+              "institution_as_source": "西安交通大学",
+              "department": "管理学院",
+              "degree_label_as_source": "博士学位",
+              "date_as_source": "2007",
+              "date_kind": "year_associated_with_degree_label_not_explicit_award",
+              "start": null,
+              "end": null,
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "官网明确列博士学位（2007），据具体学位称谓记录来源报告学位；括号年为原报告年份，不另补授位生效年月日或毕业日期，原证书与授位法律主体未核。",
+              "source_id": "xjtu-zhoumi-profile",
+              "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+              "observed_at_utc": "2026-10-25T04:44:29Z",
+              "excerpt_id": "zhou-degree-3",
+              "source_excerpt_sha256": "855f077959a2df106fb468d8a4a5aa10ecbdcac32969da3ac9eb5b114845f7b4",
+              "source_locator": "职业条目／3．西安交通大学管理学院，博士学位（2007）",
+              "education_event_id": "xjtu-zhoumi-education-3",
+              "degree": "博士学位",
+              "field": null,
+              "source_event_kind": "degree_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_note": "官网教育背景的学位标签与年份，不扩写为明确获授、毕业日期或法定授位实体。华东工学院历史名称及现名原文保留。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "degree_award_evidence": {
+                "source_id": "xjtu-zhoumi-profile",
+                "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+                "source_locator": "职业条目／3．西安交通大学管理学院，博士学位（2007）",
+                "source_excerpt_sha256": "855f077959a2df106fb468d8a4a5aa10ecbdcac32969da3ac9eb5b114845f7b4",
+                "excerpt_id": "zhou-degree-3",
+                "observed_at_utc": "2026-10-25T04:44:29Z"
+              }
+            },
+            "source_candidate_sha256": "dd7b8a0c5f6e9913241453b0b29dd0f04b775b81aaadf44bc9eb81c553a5b944",
+            "evidence": {
+              "source_id": "xjtu-zhoumi-profile",
+              "source_url": "https://som.xjtu.edu.cn/info/1721/11916.htm",
+              "source_locator": "职业条目／3．西安交通大学管理学院，博士学位（2007）",
+              "source_excerpt_sha256": "855f077959a2df106fb468d8a4a5aa10ecbdcac32969da3ac9eb5b114845f7b4",
+              "excerpt_id": "zhou-degree-3",
+              "observed_at_utc": "2026-10-25T04:44:29Z"
+            }
+          }
+        ],
+        "inverse_restores_prechange_payload": true,
+        "scope": "仅裴博士及周3具体学位称谓；其余2未知/原6true/3非学位不变，不新增日期。"
+      },
+      "visible_identity_projection": {
+        "previous_payload_sha256": "379639c7924fb3afc67dc8ca1cc13f4433dd81ed9124d90874e4af900219af49",
+        "delta": [
+          {
+            "json_pointer": "/people/0/unknowns/8",
+            "old_present": false,
+            "new_value": "官网职业介绍列“教授、博士生导师、营养与食品安全系主任”；这些为留存来源身份标签，不证明观察日仍任这些职务，亦不把教授2018年起点套到系主任或博导资格。"
+          },
+          {
+            "json_pointer": "/people/3/unknowns/7",
+            "old_present": false,
+            "new_value": "官网本人履历列公共政策与管理学院教授、博士生导师；仅为留存来源身份标签，未独立核实观察日现任，不以1982年任教起点推教授或博导资格起始时间。"
+          }
+        ],
+        "inverse_restores_previous_payload": true,
+        "scope": "只将原已存在职业标签及时间边界补到实际可见unknowns；裴的博士/讲师/硕导和周博士/教授/博导已有unknowns覆盖；不新增任职、资格事件、日期或组织。"
+      }
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧770事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
