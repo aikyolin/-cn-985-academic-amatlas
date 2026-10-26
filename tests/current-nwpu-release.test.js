@@ -4,11 +4,12 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {matches, stages, mentorOfficialUrl, mentorProfileRoute} from '../site/model.js';
 const scutMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-scut11-source-mapping.json',import.meta.url)));
+const ustcMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ustc12-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nwpu12-source-mapping.json',import.meta.url)));
 test('actual NWPU cohort exactly preserves independently reviewed fields, identities and scope',()=>{
- assert.equal(db.people.length,838+mapping.people.length+scutMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,838+mapping.people.length+scutMapping.people.length+ustcMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const expected of mapping.people){
   const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);
   assert.equal(typeof actual.department,'string');assert(actual.department.length>0);
