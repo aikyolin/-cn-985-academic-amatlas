@@ -8,13 +8,14 @@ const oucMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ouc1
 const lzuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-lzu11-source-mapping.json',import.meta.url)));
 const sjtuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-sjtu11-source-mapping.json',import.meta.url)));
 const thuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-thu11-source-mapping.json',import.meta.url)));
+const pkuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-pku11-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nwsuaf12-source-mapping.json',import.meta.url)));
 test('actual NWSUAF cohort exactly preserves independently reviewed fields, identities and scope',()=>{
  assert.deepEqual(mapping.people.map(p=>p.person_id),["nwsuaf-chengzhihui","nwsuaf-dinglong","nwsuaf-wufuyong","nwsuaf-xuchenyang","nwsuaf-chenhuatao","nwsuaf-gaolexi","nwsuaf-xugong","nwsuaf-yangzhaofu","nwsuaf-yaoliuyang","nwsuaf-liuweiguo","nwsuaf-lironghua","nwsuaf-hailijuan"]);
  assert(mapping.people.every(p=>p.data_batch_id==='faculty-batch-nwsuaf12-independent-20261026'));
- assert.equal(db.people.length,909+mapping.people.length+oucMapping.people.length+lzuMapping.people.length+sjtuMapping.people.length+thuMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,909+mapping.people.length+oucMapping.people.length+lzuMapping.people.length+sjtuMapping.people.length+thuMapping.people.length+pkuMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const expected of mapping.people){
   const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);
   assert.equal(typeof actual.department,'string');assert(actual.department.length>0);

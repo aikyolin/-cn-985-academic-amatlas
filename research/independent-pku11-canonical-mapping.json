@@ -1,0 +1,1457 @@
+{
+  "schema_version": "independent-pku11-canonical-mapping-1",
+  "baseline_commit": "7aa327fa14ba0c034900583227c5fefdaa4c36bb",
+  "new_people": [
+    "pku-chaiweizhong",
+    "pku-fanxing",
+    "pku-zhangdong-math",
+    "pku-wangjie",
+    "pku-chendayue",
+    "pku-chensongxi",
+    "pku-zhangwu",
+    "pku-huyonghua",
+    "pku-liliming",
+    "pku-chuming-basicmedicine",
+    "pku-biwenjian-medicalgenetics"
+  ],
+  "new_org_ids": [
+    "pku-sph",
+    "pku-sph-nutrition",
+    "pku-sph-epidemiology",
+    "pku-basic-medicine",
+    "pku-basic-medicine-immunology",
+    "pku-math",
+    "pku-math-pure",
+    "pku-math-analysis",
+    "pku-math-probability",
+    "pku-icqm",
+    "pku-sfl",
+    "pku-philosophy-religious-studies",
+    "pku-basic-medicine-medical-genetics"
+  ],
+  "counts": {
+    "people": 11,
+    "org_units": 13,
+    "education": 30,
+    "appointments": 19,
+    "publications": 17,
+    "mentors": 5,
+    "teaching": 8,
+    "institutional_associations": 0,
+    "professional_research_advisors": 0,
+    "career_end_events": 0,
+    "unbound_person_degree_credentials": 0,
+    "creative_works": 0,
+    "degree_true": 19,
+    "degree_false": 10,
+    "degree_unknown": 1
+  },
+  "counting_scope": "教育事件授位三态与未绑定具体阶段的本人全局学位凭证分开统计；后者不增加教育事件、不指定学校或日期。教学记录可含课程建设项目，作品区分论文书目与创作，关系按原阶段不统称论文指导。",
+  "mapping_inputs": [
+    {
+      "source_group_id": "pku-publichealth-basicmedicine",
+      "canonical_payload_sha256": "e4cdf58ace3e2c1efe2f2f5bcc445a7d8a2cf145735082183cfae4b08feffb73",
+      "field_mapping_sha256": "2517fcb90066b6f3d2149bb8e0eaa88bf3b522794962eadd0c4819ea62853e42",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "pku-mathematics-physics",
+      "canonical_payload_sha256": "fea14862e6a9bcb1b98f1e82943c22e3a012993c8f97d77513384f9092f52668",
+      "field_mapping_sha256": "20d4e545079f295c4f18ed68fbe2638eb345ab561b50a7a67ae905b21edecda1",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "pku-humanities-genetics",
+      "canonical_payload_sha256": "934dfe06cc195e1b81a12e7b19763b51c805ef8314a8d279ecc7d9bd461118b6",
+      "field_mapping_sha256": "7eb96a14f1e4febbcf9746c0712092006176a33d363501b3c2ad67fdfc042183",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "e4cdf58ace3e2c1efe2f2f5bcc445a7d8a2cf145735082183cfae4b08feffb73",
+      "people": [
+        {
+          "person_id": "pku-chaiweizhong",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1491/4030.htm",
+              "source_locator": "教育/研修／甘肃农业大学／学士",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "education",
+                1
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1491/4030.htm",
+              "source_locator": "教育/研修／中国农业科学院研究生院／硕士",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "education",
+                2
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1491/4030.htm",
+              "source_locator": "教育/研修／中国农业大学／博士",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "education",
+                3
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1491/4030.htm",
+              "source_locator": "教育/研修／瑞典农业大学／博士后",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "education",
+                4
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1491/4030.htm",
+              "source_locator": "教育/研修／美国加州大学-戴维斯分校／博士后",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "education",
+                5
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1491/4030.htm",
+              "source_locator": "教育/研修／荷兰瓦格宁根大学／博士后",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "appointments",
+                0
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1491/4030.htm",
+              "source_locator": "职业经历／中国农业科学院／营养分析与代谢研究工作",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "appointments",
+                1
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1491/4030.htm",
+              "source_locator": "职业经历／北京大学／人类营养与食品安全科教工作",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "appointments",
+                2
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1491/4030.htm",
+              "source_locator": "职业经历／北京大学／副教授",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1491/4030.htm",
+              "source_locator": "具名作品／Examination of selected national policies towards mandatory folic acid fortiﬁcation.",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "publications",
+                1
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1491/4030.htm",
+              "source_locator": "具名作品／An alternative oven method combined with different detergent strengths in the analysis of neutral detergent fiber.",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            }
+          ],
+          "limitations": [
+            "现职未独立核验，来源的现任、现为或至今不等观察日在岗证明。",
+            "本人导师未披露，不从本人指导资格或合著者推师承。",
+            "营养与食品卫生学系目录明确旧版，仅历史归属；不能据此认证当前在职或离职。",
+            "3学位原明确获授年份1983、1986、1995照录，法律授位实体未独立核验；3博士后共同1995－2001范围不拆分个别起止。",
+            "两篇仅官网作者、年份、题名和刊物卷页，未补DOI或推作者角色。"
+          ]
+        },
+        {
+          "person_id": "pku-huyonghua",
+          "field_mappings": [
+            {
+              "field_address": [
+                "appointments",
+                0
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1164/3578.htm",
+              "source_locator": "职业经历／北京大学／院长",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "appointments",
+                1
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1164/3578.htm",
+              "source_locator": "职业经历／北京大学／主任",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1164/3578.htm",
+              "source_locator": "具名作品／Prevalence and Ethnic Pattern of Diabetes and Prediabetes in China in 2013",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "publications",
+                1
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1164/3578.htm",
+              "source_locator": "具名作品／Chronic obstructive pulmonary disease in China: a nationwide prevalence study",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            }
+          ],
+          "limitations": [
+            "现职未独立核验，来源的现任、现为或至今不等观察日在岗证明。",
+            "本人导师未披露，不从本人指导资格或合著者推师承。",
+            "本人教育与求学导师在本批必要摘录中未披露，空记录表示未知，不是没有教育经历；本人教授、博导称谓不是其本人学位或师承。",
+            "原页面路径列流行病与卫生统计学系，非独立目录人事核验。",
+            "原职称/资格：教授、博士生导师；职称起任时间未披露，博士生导师仅本人指导资格，不另造任职或本人导师。"
+          ]
+        },
+        {
+          "person_id": "pku-liliming",
+          "field_mappings": [
+            {
+              "field_address": [
+                "appointments",
+                0
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1093/3520.htm",
+              "source_locator": "职业经历／北京大学／主任",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "appointments",
+                1
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1093/3520.htm",
+              "source_locator": "职业经历／北京大学／校长助理",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "appointments",
+                2
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1093/3520.htm",
+              "source_locator": "职业经历／北京大学／副主任",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1093/3520.htm",
+              "source_locator": "具名作品／Tobacco smoking and risks of more than 470 diseases in China: a prospective cohort study",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "publications",
+                1
+              ],
+              "source_url": "https://sph.pku.edu.cn/info/1093/3520.htm",
+              "source_locator": "具名作品／Healthy lifestyle and life expectancy at age 30 years in the Chinese population: an observational study",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            }
+          ],
+          "limitations": [
+            "现职未独立核验，来源的现任、现为或至今不等观察日在岗证明。",
+            "本人导师未披露，不从本人指导资格或合著者推师承。",
+            "本人教育与求学导师在本批必要摘录中未披露，空记录表示未知，不是没有教育经历；本人教授、博导称谓不是其本人学位或师承。",
+            "原页面路径列流行病与卫生统计学系，非独立目录人事核验。",
+            "原职称/资格：博雅特聘教授、博士生导师；职称起任时间未披露，博士生导师仅本人指导资格，不另造任职或本人导师。",
+            "补充校新闻网未取得可接受正文，未用搜索片段补教育事实。"
+          ]
+        },
+        {
+          "person_id": "pku-chuming-basicmedicine",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "教育/研修／北京大学／医学学士",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "education",
+                1
+              ],
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "教育/研修／北京大学／医学博士",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "appointments",
+                0
+              ],
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "职业经历／北京大学免疫学系／教授",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "appointments",
+                1
+              ],
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "职业经历／北京大学免疫学系／讲师",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "appointments",
+                2
+              ],
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "职业经历／北京大学免疫学系／副教授",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "具名作品／Identification of novel biomarkers for arthrofibrosis after total knee arthroplasty in animal models and clinical patients",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            },
+            {
+              "field_address": [
+                "publications",
+                1
+              ],
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "具名作品／Th2A cells: The pathogenic players in allergic diseases.",
+              "scope": "本事件来源，原值别名与限定见note/evidence"
+            }
+          ],
+          "limitations": [
+            "现职未独立核验，来源的现任、现为或至今不等观察日在岗证明。",
+            "本人导师未披露，不从本人指导资格或合著者推师承。",
+            "官网本人教育行列医学学士、医学博士两具体资格；授位年月未披露，原学习区间不是授位日期，未核学位证；未留本人导师。"
+          ]
+        }
+      ],
+      "org_identity": [
+        {
+          "id": "pku-sph",
+          "name": "公共卫生学院",
+          "parent_id": null,
+          "school_id": "pku",
+          "type": "school",
+          "campus_ids": [],
+          "source_url": "https://sph.pku.edu.cn/szdw.htm",
+          "note": "按原官方学院/系名和具名页面路径整理展示，非法律行政隶属认证。"
+        },
+        {
+          "id": "pku-sph-nutrition",
+          "name": "营养与食品卫生学系",
+          "parent_id": "pku-sph",
+          "school_id": "pku",
+          "type": "department",
+          "campus_ids": [],
+          "source_url": "https://sph.pku.edu.cn/szdw/yyyspwsxxjb.htm",
+          "note": "按原官方学院/系名和具名页面路径整理展示，非法律行政隶属认证。旧版目录仅历史归属。"
+        },
+        {
+          "id": "pku-sph-epidemiology",
+          "name": "流行病与卫生统计学系",
+          "parent_id": "pku-sph",
+          "school_id": "pku",
+          "type": "department",
+          "campus_ids": [],
+          "source_url": "https://sph.pku.edu.cn/info/1164/3578.htm",
+          "note": "按原官方学院/系名和具名页面路径整理展示，非法律行政隶属认证。"
+        },
+        {
+          "id": "pku-basic-medicine",
+          "name": "基础医学院",
+          "parent_id": null,
+          "school_id": "pku",
+          "type": "school",
+          "campus_ids": [],
+          "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+          "note": "按原官方学院/系名和具名页面路径整理展示，非法律行政隶属认证。"
+        },
+        {
+          "id": "pku-basic-medicine-immunology",
+          "name": "免疫学系",
+          "parent_id": "pku-basic-medicine",
+          "school_id": "pku",
+          "type": "department",
+          "campus_ids": [],
+          "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+          "note": "按原官方学院/系名和具名页面路径整理展示，非法律行政隶属认证。"
+        }
+      ],
+      "canonical_delta_audit": [
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "官网教育行列医学学士及原学习区间；授位年月未单独披露，不从学习终点推断。",
+          "new": "官网本人教育行列北京大学医学学士，按该具体资格记录；学习区间原样保留，授位年月未知，不从学习结束月推断，未核学位证。",
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_medical_degree_designation_in_personal_education_row",
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "evidence",
+            0,
+            "source_extracted_summary"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "北京大学；基础医学；2003.9至2008.7；医学学士标签，授予未明确。",
+          "reason": "保留原提取中的旧授位判断"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "evidence",
+            0,
+            "extracted_summary"
+          ],
+          "old_exists": true,
+          "old": "北京大学；基础医学；2003.9至2008.7；医学学士标签，授予未明确。",
+          "new": "北京大学；医学学士；原学习区间照录，具体资格source-reported，授位年月未知。",
+          "reason": "当前说明与具体资格分类一致，原说明另保留"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "官网教育行列医学博士及原学习区间；授位年月未单独披露，不从学习终点推断。",
+          "new": "官网本人教育行列北京大学医学博士，按该具体资格记录；学习区间原样保留，授位年月未知，不从学习结束月推断，未核学位证。",
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_medical_degree_designation_in_personal_education_row",
+          "reason": "平行本人具体医学学位资格原称谓，source-reported，未核学位证；未留表头或获授动词，不宣称存在。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "evidence",
+            0,
+            "source_extracted_summary"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "北京大学；免疫学；2008.8至2011.7；医学博士标签，授予未明确。",
+          "reason": "保留原提取中的旧授位判断"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "evidence",
+            0,
+            "extracted_summary"
+          ],
+          "old_exists": true,
+          "old": "北京大学；免疫学；2008.8至2011.7；医学博士标签，授予未明确。",
+          "new": "北京大学；医学博士；原学习区间照录，具体资格source-reported，授位年月未知。",
+          "reason": "当前说明与具体资格分类一致，原说明另保留"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "unknowns",
+            2
+          ],
+          "old_exists": true,
+          "old": "教育行具体医学学士、医学博士及学习区间均保留，授位年月未单独披露。原未留本人导师，不从教授称谓推师承。",
+          "new": "官网本人教育行列医学学士、医学博士两具体资格；授位年月未披露，原学习区间不是授位日期，未核学位证；未留本人导师。",
+          "reason": "两资格一致分类和可见限定"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "appointments"
+          ],
+          "old_exists": true,
+          "old": [
+            {
+              "institution_as_source": "北京大学免疫学系",
+              "role_as_source": "教授",
+              "period_as_source": "2025.8至今",
+              "current_status": null,
+              "evidence": [
+                {
+                  "source_id": "pku-1-379",
+                  "excerpt_id": "identity",
+                  "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+                  "source_locator": "职业经历／北京大学免疫学系／教授",
+                  "evidence_type": "newly_fetched_tool_body_with_retained_verbatim_professional_lines",
+                  "extracted_summary": "初明；北京大学基础医学院免疫学系；教授工作段自2025.8至原文至今。",
+                  "observed_at_utc": "2026-10-25T07:37:12Z"
+                }
+              ],
+              "event_id": "pku-chuming-basicmedicine-appointment-1",
+              "institution": "北京大学免疫学系",
+              "department": null,
+              "title": "教授",
+              "start": "2025-08",
+              "end": null,
+              "source_note": null,
+              "note": "原2025.8至今北京大学免疫学系教授；至今只保留原陈述，不独立确认观察日在岗。",
+              "source_id": "pku-1-379",
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "职业经历／北京大学免疫学系／教授"
+            }
+          ],
+          "new": [
+            {
+              "institution_as_source": "北京大学免疫学系",
+              "role_as_source": "教授",
+              "period_as_source": "2025.8至今",
+              "current_status": null,
+              "evidence": [
+                {
+                  "source_id": "pku-1-379",
+                  "excerpt_id": "identity",
+                  "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+                  "source_locator": "职业经历／北京大学免疫学系／教授",
+                  "evidence_type": "newly_fetched_tool_body_with_retained_verbatim_professional_lines",
+                  "extracted_summary": "初明；北京大学基础医学院免疫学系；教授工作段自2025.8至原文至今。",
+                  "observed_at_utc": "2026-10-25T07:37:12Z"
+                }
+              ],
+              "event_id": "pku-chuming-basicmedicine-appointment-1",
+              "institution": "北京大学免疫学系",
+              "department": null,
+              "title": "教授",
+              "start": "2025-08",
+              "end": null,
+              "source_note": null,
+              "note": "原2025.8至今北京大学免疫学系教授；至今只保留原陈述，不独立确认观察日在岗。",
+              "source_id": "pku-1-379",
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "职业经历／北京大学免疫学系／教授"
+            },
+            {
+              "event_id": "pku-chuming-basicmedicine-appointment-2",
+              "institution": "北京大学",
+              "department": "免疫学系",
+              "title": "讲师",
+              "start": "2011-08",
+              "end": "2019-07",
+              "source_id": "pku-1-379",
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "职业经历／北京大学免疫学系／讲师",
+              "evidence": [
+                {
+                  "source_id": "pku-1-379",
+                  "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+                  "source_locator": "职业经历／北京大学免疫学系／讲师",
+                  "quote": "2011.8——2019.7：北京大学，免疫学系，讲师",
+                  "quote_sha256": "159abe3150ac4d5c8b2effedc920f8319f59fd21daa27262a265b2bf8eecd632",
+                  "hash_scope": "exact retained professional quote text, without original tool line prefix",
+                  "observed_at_utc": "2026-10-25T07:37:12Z",
+                  "retained_raw_source_sha256": "b5599c59ce031a9981271226e7b1b6fce7543a06d4a6f3e82defc9f0af68af3f"
+                }
+              ],
+              "note": "原2011-08至2019-07北京大学免疫学系讲师；闭合历史任期，不作为当前任职认证。"
+            },
+            {
+              "event_id": "pku-chuming-basicmedicine-appointment-3",
+              "institution": "北京大学",
+              "department": "免疫学系",
+              "title": "副教授",
+              "start": "2019-08",
+              "end": "2025-07",
+              "source_id": "pku-1-379",
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "职业经历／北京大学免疫学系／副教授",
+              "evidence": [
+                {
+                  "source_id": "pku-1-379",
+                  "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+                  "source_locator": "职业经历／北京大学免疫学系／副教授",
+                  "quote": "2019.8——2025.7：北京大学，免疫学系，副教授",
+                  "quote_sha256": "dbf8d6acc7d21ae2f2425e4b50cf50aaf91656e45d62ecf2fe6c0fe559eb012e",
+                  "hash_scope": "exact retained professional quote text, without original tool line prefix",
+                  "observed_at_utc": "2026-10-25T07:37:12Z",
+                  "retained_raw_source_sha256": "b5599c59ce031a9981271226e7b1b6fce7543a06d4a6f3e82defc9f0af68af3f"
+                }
+              ],
+              "note": "原2019-08至2025-07北京大学免疫学系副教授；闭合历史任期，不作为当前任职认证。"
+            }
+          ],
+          "reason": "新独立接受5项中的2明确历史任职；旧候选原对象不动"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "appointments",
+            0,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "原2025.8至今北京大学免疫学系教授；至今只保留原陈述，不独立确认观察日在岗。",
+          "new": "原2025.8至今北京大学免疫学系教授；至今只保留原陈述，不独立确认观察日在岗。 原页另列免疫学系副主任、基础医学院教师教学发展中心副主任，两职务分别保留，起任日期均未披露，不挪用2025-08教授起任日。",
+          "reason": "新接受2无日期本人职责原标签，实际note可见，不增加带日期job"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "additional_role_labels"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": [
+            {
+              "role": "免疫学系副主任",
+              "start": null,
+              "end": null,
+              "evidence": [
+                {
+                  "source_id": "pku-1-379",
+                  "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+                  "source_locator": "本人无日期职责／免疫学系副主任",
+                  "quote": "免疫学系副主任",
+                  "quote_sha256": "33d9c8935d6ceaa81b2e3708212ee4243827bcb59dfe5c913033a1f94bc5a2ca",
+                  "hash_scope": "exact retained professional quote text, without original tool line prefix",
+                  "observed_at_utc": "2026-10-25T07:37:12Z",
+                  "retained_raw_source_sha256": "b5599c59ce031a9981271226e7b1b6fce7543a06d4a6f3e82defc9f0af68af3f"
+                }
+              ]
+            },
+            {
+              "role": "基础医学院教师教学发展中心副主任",
+              "start": null,
+              "end": null,
+              "evidence": [
+                {
+                  "source_id": "pku-1-379",
+                  "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+                  "source_locator": "本人无日期职责／基础医学院教师教学发展中心副主任",
+                  "quote": "基础医学院教师教学发展中心副主任",
+                  "quote_sha256": "b9bb2986ecff5b281a7a1bd602c0bdaea6acb90407224ddd60c475e57947e22c",
+                  "hash_scope": "exact retained professional quote text, without original tool line prefix",
+                  "observed_at_utc": "2026-10-25T07:37:12Z",
+                  "retained_raw_source_sha256": "b5599c59ce031a9981271226e7b1b6fce7543a06d4a6f3e82defc9f0af68af3f"
+                }
+              ]
+            }
+          ],
+          "reason": "两职责独立原事实与来源证据结构"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "publications"
+          ],
+          "old_exists": true,
+          "old": [
+            {
+              "title": "Identification of novel biomarkers for arthrofibrosis after total knee arthroplasty in animal models and clinical patients",
+              "work_type": "journal_article",
+              "authors_as_source": "Chen X, Wang Z, Huang Y, Deng W, Zhou Y*, Chu M*",
+              "journal_as_source": "EBioMedicine",
+              "year_as_source": 2021,
+              "volume_as_source": "70",
+              "article_number_as_source": "103486",
+              "person_contribution_role_as_source": "listed author; asterisk not defined in retained source segment, no corresponding-author inference",
+              "full_authors_verified": false,
+              "publisher_metadata_verified": false,
+              "full_text_read": false,
+              "evidence": [
+                {
+                  "source_id": "pku-1-379",
+                  "excerpt_id": "paper",
+                  "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+                  "source_locator": "具名作品／Identification of novel biomarkers for arthrofibrosis after total knee arthroplasty in animal models and clinical patients",
+                  "evidence_type": "newly_fetched_tool_body_with_retained_verbatim_professional_lines",
+                  "extracted_summary": "Identification of novel biomarkers for arthrofibrosis after total knee arthroplasty in animal models and clinical patients；EBioMedicine；2021；作者标记Chu M*。",
+                  "observed_at_utc": "2026-10-25T07:37:12Z"
+                }
+              ],
+              "type": "journal_article",
+              "source_type_as_source": "journal_article",
+              "authors": "Chen X, Wang Z, Huang Y, Deng W, Zhou Y*, Chu M*",
+              "venue": "EBioMedicine",
+              "year": 2021,
+              "source_note": null,
+              "note": "原署名：Chen X, Wang Z, Huang Y, Deng W, Zhou Y*, Chu M*；EBioMedicine；2021。仅官网选录书目，出版者元数据与全文未核。 原卷70、文章号103486；星号原义未定义，不推通讯作者或共同贡献。",
+              "source_id": "pku-1-379",
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "具名作品／Identification of novel biomarkers for arthrofibrosis after total knee arthroplasty in animal models and clinical patients"
+            }
+          ],
+          "new": [
+            {
+              "title": "Identification of novel biomarkers for arthrofibrosis after total knee arthroplasty in animal models and clinical patients",
+              "work_type": "journal_article",
+              "authors_as_source": "Chen X, Wang Z, Huang Y, Deng W, Zhou Y*, Chu M*",
+              "journal_as_source": "EBioMedicine",
+              "year_as_source": 2021,
+              "volume_as_source": "70",
+              "article_number_as_source": "103486",
+              "person_contribution_role_as_source": "listed author; asterisk not defined in retained source segment, no corresponding-author inference",
+              "full_authors_verified": false,
+              "publisher_metadata_verified": false,
+              "full_text_read": false,
+              "evidence": [
+                {
+                  "source_id": "pku-1-379",
+                  "excerpt_id": "paper",
+                  "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+                  "source_locator": "具名作品／Identification of novel biomarkers for arthrofibrosis after total knee arthroplasty in animal models and clinical patients",
+                  "evidence_type": "newly_fetched_tool_body_with_retained_verbatim_professional_lines",
+                  "extracted_summary": "Identification of novel biomarkers for arthrofibrosis after total knee arthroplasty in animal models and clinical patients；EBioMedicine；2021；作者标记Chu M*。",
+                  "observed_at_utc": "2026-10-25T07:37:12Z"
+                }
+              ],
+              "type": "journal_article",
+              "source_type_as_source": "journal_article",
+              "authors": "Chen X, Wang Z, Huang Y, Deng W, Zhou Y*, Chu M*",
+              "venue": "EBioMedicine",
+              "year": 2021,
+              "source_note": null,
+              "note": "原署名：Chen X, Wang Z, Huang Y, Deng W, Zhou Y*, Chu M*；EBioMedicine；2021。仅官网选录书目，出版者元数据与全文未核。 原卷70、文章号103486；星号原义未定义，不推通讯作者或共同贡献。",
+              "source_id": "pku-1-379",
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "具名作品／Identification of novel biomarkers for arthrofibrosis after total knee arthroplasty in animal models and clinical patients"
+            },
+            {
+              "title": "Th2A cells: The pathogenic players in allergic diseases.",
+              "type": "journal_article",
+              "authors": "Huang Z, Chu M*, Chen X, Wang Z, Jiang L, Ma Y, Wang Y*",
+              "authors_as_source": "Huang Z, Chu M^{*}, Chen X, Wang Z, Jiang L, Ma Y, Wang Y^{*}",
+              "venue": "Front Immunol",
+              "year": 2022,
+              "volume": "13",
+              "article_number": "916778",
+              "publisher_metadata_verified": false,
+              "full_text_read": false,
+              "source_id": "pku-1-379",
+              "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+              "source_locator": "具名作品／Th2A cells: The pathogenic players in allergic diseases.",
+              "evidence": [
+                {
+                  "source_id": "pku-1-379",
+                  "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+                  "source_locator": "具名作品／Th2A cells: The pathogenic players in allergic diseases.",
+                  "quote": "2) Huang Z, Chu M^{*}, Chen X, Wang Z, Jiang L, Ma Y, Wang Y^{*}. Th2A cells: The pathogenic players in allergic diseases.  Front Immunol . 2022;13:916778.",
+                  "quote_sha256": "79664e822c3ed0e7cce4f89ba6d74514301b3c8eb2bec01741cdc7343d76f418",
+                  "hash_scope": "exact retained professional quote text, without original tool line prefix",
+                  "observed_at_utc": "2026-10-25T07:37:12Z",
+                  "retained_raw_source_sha256": "b5599c59ce031a9981271226e7b1b6fce7543a06d4a6f3e82defc9f0af68af3f"
+                }
+              ],
+              "note": "原列作者Huang Z, Chu M*, Chen X, Wang Z, Jiang L, Ma Y, Wang Y*；Front Immunol，2022，卷13，文章号916778。仅官网书目，未核出版者或全文；星号原义未定义，不推通讯作者或共同第一作者。"
+            }
+          ],
+          "reason": "新接受第2篇原书目，原完整署名与年卷文章号准确保持"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "sources",
+            0,
+            "published_at"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "2025-09-15",
+          "reason": "新接受报告identity_context明确页面显示发布日期；非作品日期或任职起点"
+        }
+      ],
+      "new_local_source_acceptance": {
+        "person_id": "pku-chuming-basicmedicine",
+        "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Ming_Chu.html",
+        "original_raw_source_sha256": "b5599c59ce031a9981271226e7b1b6fce7543a06d4a6f3e82defc9f0af68af3f",
+        "acceptance_sha256": "655827b37b15a47b41c5c5130fdc3be748997e83d12fd22c1d51d60a7e308e0a",
+        "scope": "精确两历史任职、两无日期职责及第二篇书目；原review未逐项接受，现单独核对留存公开职业原文。"
+      },
+      "inverse_proof": {
+        "final_sha256": "e4cdf58ace3e2c1efe2f2f5bcc445a7d8a2cf145735082183cfae4b08feffb73",
+        "before_five_facts_sha256": "c696fcada28bd4ac494b6ab19c7f95ee6b8c855bbd54f52baade88174b3ff91d",
+        "initial_sha256": "40a6f80573d02c8cef77a87fef4337567da5cc5281ffc9f99a2cd738fc65fef7",
+        "inverse_byte_exact": true
+      }
+    },
+    {
+      "people": [
+        {
+          "person_id": "pku-zhangdong-math",
+          "source_candidate_sha256": "5b15099e63cc869788f8d9e2d7c9a00ceab967728226ae0c9f4448e7ab97dbc9",
+          "canonical_department_id": "pku-math-analysis",
+          "original_department": "数学科学学院/数学系/分析教研室",
+          "education": [
+            {
+              "event_id": "pku-zhangdong-math-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "pku-zhangdong-interview",
+                  "source_url": "https://gh.pku.edu.cn/info/1043/14328.htm",
+                  "excerpt_id": "ba",
+                  "quote_sha256": "ef899d7a0a01fb6d6ce8d8bb69b8496f1fa390adc88bd33beed5ebbbfeb0bd0f",
+                  "source_locator": "明确学士获授与学校、年",
+                  "observed_at_utc": "2026-10-25T04:45:47.252Z"
+                }
+              ]
+            },
+            {
+              "event_id": "pku-zhangdong-math-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "pku-zhangdong-interview",
+                  "source_url": "https://gh.pku.edu.cn/info/1043/14328.htm",
+                  "excerpt_id": "phd",
+                  "quote_sha256": "2ae65d48650c6b0df465983ffa5bda094706017f9476d0755618061c96d16806",
+                  "source_locator": "明确博士获授与学校、年",
+                  "observed_at_utc": "2026-10-25T04:45:47.252Z"
+                }
+              ]
+            },
+            {
+              "event_id": "pku-zhangdong-math-education-3",
+              "field_evidence": [
+                {
+                  "source_id": "pku-zhangdong-interview",
+                  "source_url": "https://gh.pku.edu.cn/info/1043/14328.htm",
+                  "excerpt_id": "postdoc-pku",
+                  "quote_sha256": "f0757caef3220623df85eea7d746f8af859d0b09c7f87bd73384056440ba84f5",
+                  "source_locator": "博士后，不推起止",
+                  "observed_at_utc": "2026-10-25T04:45:47.252Z"
+                }
+              ]
+            },
+            {
+              "event_id": "pku-zhangdong-math-education-4",
+              "field_evidence": [
+                {
+                  "source_id": "pku-zhangdong-interview",
+                  "source_url": "https://gh.pku.edu.cn/info/1043/14328.htm",
+                  "excerpt_id": "postdoc-germany",
+                  "quote_sha256": "54787ccec908fe363fbb4a8f85c8091729f89e6a2ef48bdae4cf4790dd62eb0e",
+                  "source_locator": "德国博士后区间",
+                  "observed_at_utc": "2026-10-25T04:45:47.252Z"
+                }
+              ]
+            }
+          ],
+          "visible_scope": [
+            "仅保留必要公开职业摘录，非完整原始页面或完整履历；未核学位证书、原学位论文、出版者元数据或全文。",
+            "学历/任职/导师来自官方工会采访，数学系目录另核具名与研究方向；不称独立学籍或原论文验证。",
+            "北京大学博士后无明确起止，德国博士后2019.09—2022.08及德国马普数学科学研究所原名保留；不另推城市或法人。",
+            "原2022年10月入职数学科学学院数学系分析教研室任助理教授，2023年11月23日为采访显示日期，不当更新日或实时在职。",
+            "补充个人页首次读取超时未接受任何搜索摘录，本批0作品不等于无论文；研究方向：（非线性）谱图理论及应用、非线性分析、临界点理论。"
+          ]
+        },
+        {
+          "person_id": "pku-wangjie",
+          "source_candidate_sha256": "ee742ad641ad9737af1f8c6ef9e4b1b776dd26194ae58515ff6c8d77b9fcd837",
+          "canonical_department_id": "pku-icqm",
+          "original_department": "International Center for Quantum Materials",
+          "education": [
+            {
+              "event_id": "pku-wangjie-ba",
+              "field_evidence": [
+                {
+                  "source_id": "pku-wangjie-profile",
+                  "source_url": "https://icqm.pku.edu.cn/rydw/jzyg/50154icqm236921.htm",
+                  "excerpt_id": "ba",
+                  "quote_sha256": "53c4b0676ace8453a80fa20c071fbf8cdf96d0b5b49d4c2dae71efe1d8240b13",
+                  "source_locator": "教育表学士行／物理、中国科大、2009至2013",
+                  "observed_at_utc": "2026-10-25T05:14:35Z"
+                }
+              ]
+            },
+            {
+              "event_id": "pku-wangjie-phd",
+              "field_evidence": [
+                {
+                  "source_id": "pku-wangjie-profile",
+                  "source_url": "https://icqm.pku.edu.cn/rydw/jzyg/50154icqm236921.htm",
+                  "excerpt_id": "phd",
+                  "quote_sha256": "a852770466b82fceb55ad20b0aa87c050eef999f8a1ed2380ac5ff9a55d478e9",
+                  "source_locator": "教育表博士行／物理、普林斯顿、2013至2019",
+                  "observed_at_utc": "2026-10-25T05:14:35Z"
+                }
+              ]
+            },
+            {
+              "event_id": "pku-wangjie-postdoc1",
+              "field_evidence": [
+                {
+                  "source_id": "pku-wangjie-profile",
+                  "source_url": "https://icqm.pku.edu.cn/rydw/jzyg/50154icqm236921.htm",
+                  "excerpt_id": "postdoc1",
+                  "quote_sha256": "71acca0757b60381563d57c66cd517e29ee1a9d3c463e4a50dd69f06a414d1a9",
+                  "source_locator": "职业表博士后／Flatiron研究所",
+                  "observed_at_utc": "2026-10-25T05:14:35Z"
+                }
+              ]
+            },
+            {
+              "event_id": "pku-wangjie-postdoc2",
+              "field_evidence": [
+                {
+                  "source_id": "pku-wangjie-profile",
+                  "source_url": "https://icqm.pku.edu.cn/rydw/jzyg/50154icqm236921.htm",
+                  "excerpt_id": "postdoc2",
+                  "quote_sha256": "a79d32f008bda3ab5b084a446308600eea11bdb6ed97c284e74e13197523b3ce",
+                  "source_locator": "职业表博士后／哈佛大学",
+                  "observed_at_utc": "2026-10-25T05:14:35Z"
+                }
+              ]
+            }
+          ],
+          "visible_scope": [
+            "仅保留必要公开职业摘录，非完整原始页面或完整履历；未核学位证书、原学位论文、出版者元数据或全文。",
+            "官网列助理教授、博士生导师；招生指导资格不是本人求学导师，未披露本人导师。",
+            "英文单位International Center for Quantum Materials来自官网页脚，不额外推中文机构名或独立人事归属；未查独立目录。",
+            "两博士后为非学位，Flatiron研究所原名不扩写；原北京大学任期2025.11—现在不认证当前在岗。",
+            "论文星号原样保留不推含义；两作者列表只按官网，不另核身份或外部元数据。"
+          ]
+        },
+        {
+          "person_id": "pku-chendayue",
+          "source_candidate_sha256": "27b6a62a783cf20721e3f1fe52d4fe1c1972a531e47c6e6c00ed0bd5a28ae909",
+          "canonical_department_id": "pku-math",
+          "original_department": "数学科学学院",
+          "education": [
+            {
+              "event_id": "pku-chendayue-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "pku-chendayue-profile",
+                  "source_url": "https://math.pku.edu.cn/jsdw/js_20180628175159671361/c_20180628175159671361/69893.htm",
+                  "excerpt_id": "doctorate",
+                  "quote_sha256": "ec0b80a939ed864695bc62b0b92cc117197ec7c1333d9cc85f6ab55fe5e30a43",
+                  "source_locator": "本人教育／1989 UCLA博士标签",
+                  "observed_at_utc": "2026-10-25T06:02:26Z"
+                }
+              ]
+            },
+            {
+              "event_id": "pku-chendayue-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "pku-chendayue-profile",
+                  "source_url": "https://math.pku.edu.cn/jsdw/js_20180628175159671361/c_20180628175159671361/69893.htm",
+                  "excerpt_id": "bachelor",
+                  "quote_sha256": "74cf2fccc1a0cc1dd446df1d0c2b6aa7961aeb9aff78a7f58c8380da9a5d7b40",
+                  "source_locator": "本人教育／1983复旦数学系学士标签",
+                  "observed_at_utc": "2026-10-25T06:02:26Z"
+                }
+              ]
+            },
+            {
+              "event_id": "pku-chendayue-education-3",
+              "field_evidence": [
+                {
+                  "source_id": "pku-chendayue-profile",
+                  "source_url": "https://math.pku.edu.cn/jsdw/js_20180628175159671361/c_20180628175159671361/69893.htm",
+                  "excerpt_id": "postdoc",
+                  "quote_sha256": "4e716c3aebeebfad7db189e7a930c55c374088a14e1550c4611c377c1a5cefab",
+                  "source_locator": "博士后／1991至1993北京大学数学系",
+                  "observed_at_utc": "2026-10-25T06:02:26Z"
+                }
+              ]
+            }
+          ],
+          "visible_scope": [
+            "仅保留必要公开职业摘录，非完整原始页面或完整履历；未核学位证书、原学位论文、出版者元数据或全文。",
+            "原所在部门为概率论教研室，同页列1997—至今北京大学数学科学学院教授；保留明确职业陈述，不认证实时在岗或另推行政层级。",
+            "博士原1989 UCLA、学士原1983复旦数学系标签照录，原报告年不补授位日期。",
+            "1989—1991美国西北大学数学系visiting assistant professor是岗位，1991—1993北大数学系博士后另作非学位，不混类别。",
+            "两论文with合作者不是完整作者名单，不自行插入陈大岳、排序或推通讯作者；本人导师未披露。"
+          ]
+        },
+        {
+          "person_id": "pku-chensongxi",
+          "source_candidate_sha256": "27b6a62a783cf20721e3f1fe52d4fe1c1972a531e47c6e6c00ed0bd5a28ae909",
+          "canonical_department_id": "pku-math",
+          "original_department": "数学科学学院",
+          "education": [
+            {
+              "event_id": "pku-chensongxi-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "pku-chensongxi-profile",
+                  "source_url": "https://www.pku.edu.cn/detail/2694.html",
+                  "excerpt_id": "bachelor",
+                  "quote_sha256": "f67184186eb1cef12e704856d50a73e421d53694ee6b8ba662167b526c5b5db1",
+                  "source_locator": "本人教育／1983获北京师范大学学士",
+                  "observed_at_utc": "2026-10-25T06:02:26Z"
+                }
+              ]
+            },
+            {
+              "event_id": "pku-chensongxi-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "pku-chensongxi-profile",
+                  "source_url": "https://www.pku.edu.cn/detail/2694.html",
+                  "excerpt_id": "doctorate",
+                  "quote_sha256": "3fe156b803e47c2e1dc6c05df8d81ba501a6752af87aaab64ba9c735b6b3564e",
+                  "source_locator": "本人教育／1993获澳大利亚国立大学博士",
+                  "observed_at_utc": "2026-10-25T06:02:26Z"
+                }
+              ]
+            }
+          ],
+          "visible_scope": [
+            "仅保留必要公开职业摘录，非完整原始页面或完整履历；未核学位证书、原学位论文、出版者元数据或全文。",
+            "官网列陈松蹊现为数学科学学院讲席教授，原2008年任北京大学教授；不把2008当讲席教授起任或当前人事证明。",
+            "1983北京师范大学学士与1993澳大利亚国立大学博士明确获授年保留，不补月日；本人导师未披露。",
+            "本批无具名作品，不声称本人没有论文；页面更新时间2025年3月仅来源标签，不认证实际最后修改。"
+          ]
+        }
+      ],
+      "org_units": [
+        {
+          "id": "pku-math",
+          "name": "数学科学学院",
+          "type": "school",
+          "school_id": "pku",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "pku-chendayue-profile",
+          "source_url": "https://math.pku.edu.cn/jsdw/js_20180628175159671361/c_20180628175159671361/69893.htm",
+          "field_evidence": [
+            {
+              "source_id": "pku-chendayue-profile",
+              "source_url": "https://math.pku.edu.cn/jsdw/js_20180628175159671361/c_20180628175159671361/69893.htm",
+              "excerpt_id": "affiliation",
+              "quote_sha256": "8b0310c766d5f7306536ca7a8b2ba314bc0c42793375424b204d32925b701526",
+              "source_locator": "本人职业简介／1997至来源至今数学科学学院教授",
+              "observed_at_utc": "2026-10-25T06:02:26Z"
+            },
+            {
+              "source_id": "pku-chendayue-profile",
+              "source_url": "https://math.pku.edu.cn/jsdw/js_20180628175159671361/c_20180628175159671361/69893.htm",
+              "excerpt_id": "unit",
+              "quote_sha256": "ac51b59d80f8ead1182304e09069a1d3a79f7be1df31c4ea4c56dc7ddc4e1010",
+              "source_locator": "所在部门／概率论教研室",
+              "observed_at_utc": "2026-10-25T06:02:26Z"
+            }
+          ],
+          "scope_note": "仅原官网具名职业单位、所在部门或原页脚支持显示归组，不认证行政法律层级或实时人事；英文单位不猜中文法定名称。"
+        },
+        {
+          "id": "pku-math-pure",
+          "name": "数学系",
+          "type": "department",
+          "school_id": "pku",
+          "parent_id": "pku-math",
+          "campus_ids": [],
+          "source_id": "pku-zhangdong-interview",
+          "source_url": "https://gh.pku.edu.cn/info/1043/14328.htm",
+          "field_evidence": [
+            {
+              "source_id": "pku-zhangdong-interview",
+              "source_url": "https://gh.pku.edu.cn/info/1043/14328.htm",
+              "excerpt_id": "appointment",
+              "quote_sha256": "77a0d0245f587154fed10c2eadb7fa223bd27af074939251a07b9c27036ceed2",
+              "source_locator": "明示入职日期、单位、职称",
+              "observed_at_utc": "2026-10-25T04:45:47.252Z"
+            }
+          ],
+          "scope_note": "仅原官网具名职业单位、所在部门或原页脚支持显示归组，不认证行政法律层级或实时人事；英文单位不猜中文法定名称。"
+        },
+        {
+          "id": "pku-math-analysis",
+          "name": "分析教研室",
+          "type": "department",
+          "school_id": "pku",
+          "parent_id": "pku-math-pure",
+          "campus_ids": [],
+          "source_id": "pku-zhangdong-interview",
+          "source_url": "https://gh.pku.edu.cn/info/1043/14328.htm",
+          "field_evidence": [
+            {
+              "source_id": "pku-zhangdong-interview",
+              "source_url": "https://gh.pku.edu.cn/info/1043/14328.htm",
+              "excerpt_id": "appointment",
+              "quote_sha256": "77a0d0245f587154fed10c2eadb7fa223bd27af074939251a07b9c27036ceed2",
+              "source_locator": "明示入职日期、单位、职称",
+              "observed_at_utc": "2026-10-25T04:45:47.252Z"
+            }
+          ],
+          "scope_note": "仅原官网具名职业单位、所在部门或原页脚支持显示归组，不认证行政法律层级或实时人事；英文单位不猜中文法定名称。"
+        },
+        {
+          "id": "pku-math-probability",
+          "name": "概率论教研室",
+          "type": "department",
+          "school_id": "pku",
+          "parent_id": "pku-math",
+          "campus_ids": [],
+          "source_id": "pku-chendayue-profile",
+          "source_url": "https://math.pku.edu.cn/jsdw/js_20180628175159671361/c_20180628175159671361/69893.htm",
+          "field_evidence": [
+            {
+              "source_id": "pku-chendayue-profile",
+              "source_url": "https://math.pku.edu.cn/jsdw/js_20180628175159671361/c_20180628175159671361/69893.htm",
+              "excerpt_id": "affiliation",
+              "quote_sha256": "8b0310c766d5f7306536ca7a8b2ba314bc0c42793375424b204d32925b701526",
+              "source_locator": "本人职业简介／1997至来源至今数学科学学院教授",
+              "observed_at_utc": "2026-10-25T06:02:26Z"
+            },
+            {
+              "source_id": "pku-chendayue-profile",
+              "source_url": "https://math.pku.edu.cn/jsdw/js_20180628175159671361/c_20180628175159671361/69893.htm",
+              "excerpt_id": "unit",
+              "quote_sha256": "ac51b59d80f8ead1182304e09069a1d3a79f7be1df31c4ea4c56dc7ddc4e1010",
+              "source_locator": "所在部门／概率论教研室",
+              "observed_at_utc": "2026-10-25T06:02:26Z"
+            }
+          ],
+          "scope_note": "仅原官网具名职业单位、所在部门或原页脚支持显示归组，不认证行政法律层级或实时人事；英文单位不猜中文法定名称。"
+        },
+        {
+          "id": "pku-icqm",
+          "name": "International Center for Quantum Materials",
+          "type": "research_center",
+          "school_id": "pku",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "pku-wangjie-profile",
+          "source_url": "https://icqm.pku.edu.cn/rydw/jzyg/50154icqm236921.htm",
+          "field_evidence": [
+            {
+              "source_id": "pku-wangjie-profile",
+              "source_url": "https://icqm.pku.edu.cn/rydw/jzyg/50154icqm236921.htm",
+              "excerpt_id": "identity",
+              "quote_sha256": "8cf6ec81e4fc39117f51526395e1b9fd862958e08d62f682a09410a3cb272e46",
+              "source_locator": "个人页姓名／Jie Wang王捷",
+              "observed_at_utc": "2026-10-25T05:14:35Z"
+            },
+            {
+              "source_id": "pku-wangjie-profile",
+              "source_url": "https://icqm.pku.edu.cn/rydw/jzyg/50154icqm236921.htm",
+              "excerpt_id": "title",
+              "quote_sha256": "9cbf6593c731d97da48fc0eda1c975ca890427c57898eb9f10b352662869fa7f",
+              "source_locator": "个人页职称与招生资格",
+              "observed_at_utc": "2026-10-25T05:14:35Z"
+            },
+            {
+              "source_id": "pku-wangjie-profile",
+              "source_url": "https://icqm.pku.edu.cn/rydw/jzyg/50154icqm236921.htm",
+              "excerpt_id": "unit",
+              "quote_sha256": "880241d217e9fcc49d079434bf4909b30114e09679013bde1b20ae5c26ad70d6",
+              "source_locator": "官网页脚机构署名",
+              "observed_at_utc": "2026-10-25T05:14:35Z"
+            },
+            {
+              "source_id": "pku-wangjie-profile",
+              "source_url": "https://icqm.pku.edu.cn/rydw/jzyg/50154icqm236921.htm",
+              "excerpt_id": "pku",
+              "quote_sha256": "f8b5b20f4c343f52e9bef7906cd562657fde2951b137a8dada168eb1a2a067ea",
+              "source_locator": "职业表助理教授／北京大学2025.11至来源现在",
+              "observed_at_utc": "2026-10-25T05:14:35Z"
+            }
+          ],
+          "scope_note": "仅原官网具名职业单位、所在部门或原页脚支持显示归组，不认证行政法律层级或实时人事；英文单位不猜中文法定名称。"
+        }
+      ],
+      "mandatory_overlay_required": false,
+      "classification_corrections": [
+        {
+          "person_id": "pku-wangjie",
+          "event_id": "pku-wangjie-ba",
+          "old_degree_awarded": null,
+          "degree_awarded": true,
+          "field_evidence": [
+            {
+              "source_id": "pku-wangjie-profile",
+              "source_url": "https://icqm.pku.edu.cn/rydw/jzyg/50154icqm236921.htm",
+              "excerpt_id": "ba",
+              "quote_sha256": "53c4b0676ace8453a80fa20c071fbf8cdf96d0b5b49d4c2dae71efe1d8240b13",
+              "source_locator": "教育表学士行／物理、中国科大、2009至2013",
+              "observed_at_utc": "2026-10-25T05:14:35Z"
+            }
+          ],
+          "scope": "官网具名本人履历教育表行列学士、物理及中国科学技术大学，属于本人资格列项，按来源报告学位；原2009—2013为学习区间，不转授位年月日。保留摘录未含独立表头，不声称专门学位栏；未核证书。"
+        },
+        {
+          "person_id": "pku-wangjie",
+          "event_id": "pku-wangjie-phd",
+          "old_degree_awarded": null,
+          "degree_awarded": true,
+          "field_evidence": [
+            {
+              "source_id": "pku-wangjie-profile",
+              "source_url": "https://icqm.pku.edu.cn/rydw/jzyg/50154icqm236921.htm",
+              "excerpt_id": "phd",
+              "quote_sha256": "a852770466b82fceb55ad20b0aa87c050eef999f8a1ed2380ac5ff9a55d478e9",
+              "source_locator": "教育表博士行／物理、普林斯顿、2013至2019",
+              "observed_at_utc": "2026-10-25T05:14:35Z"
+            }
+          ],
+          "scope": "官网具名本人履历教育表行列博士、物理及普林斯顿大学，属于本人资格列项，按来源报告学位；原2013—2019为学习区间，不转授位年月日。保留摘录未含独立表头，不声称专门学位栏；未核证书。"
+        },
+        {
+          "person_id": "pku-chendayue",
+          "event_id": "pku-chendayue-education-1",
+          "old_degree_awarded": null,
+          "degree_awarded": true,
+          "field_evidence": [
+            {
+              "source_id": "pku-chendayue-profile",
+              "source_url": "https://math.pku.edu.cn/jsdw/js_20180628175159671361/c_20180628175159671361/69893.htm",
+              "excerpt_id": "doctorate",
+              "quote_sha256": "ec0b80a939ed864695bc62b0b92cc117197ec7c1333d9cc85f6ab55fe5e30a43",
+              "source_locator": "本人教育／1989 UCLA博士标签",
+              "observed_at_utc": "2026-10-25T06:02:26Z"
+            }
+          ],
+          "scope": "官网具名本人履历明确美国加州大学洛杉矶分校(UCLA)、博士资格简目，按来源报告学位；原1989仅按year_as_source保留，未明确授位日期语义，不填授位年、月日或学习区间。未留原栏目标题，不虚构学位栏，未核证书。"
+        },
+        {
+          "person_id": "pku-chendayue",
+          "event_id": "pku-chendayue-education-2",
+          "old_degree_awarded": null,
+          "degree_awarded": true,
+          "field_evidence": [
+            {
+              "source_id": "pku-chendayue-profile",
+              "source_url": "https://math.pku.edu.cn/jsdw/js_20180628175159671361/c_20180628175159671361/69893.htm",
+              "excerpt_id": "bachelor",
+              "quote_sha256": "74cf2fccc1a0cc1dd446df1d0c2b6aa7961aeb9aff78a7f58c8380da9a5d7b40",
+              "source_locator": "本人教育／1983复旦数学系学士标签",
+              "observed_at_utc": "2026-10-25T06:02:26Z"
+            }
+          ],
+          "scope": "官网具名本人履历明确复旦大学数学系、学士资格简目，按来源报告学位；原1983仅按year_as_source保留，未明确授位日期语义，不填授位年、月日或学习区间。未留原栏目标题，不虚构学位栏，未核证书。"
+        }
+      ]
+    },
+    {
+      "baseline_profiles": 966,
+      "ids": [
+        "pku-fanxing",
+        "pku-zhangwu",
+        "pku-biwenjian-medicalgenetics"
+      ],
+      "counts": {
+        "education": 9,
+        "appointments": 3,
+        "mentors": 4,
+        "publications": 5,
+        "teaching": 8
+      },
+      "org_reuse": "基础医学院pku-basic-medicine由初明组唯一输出；两页同sbms.bjmu.edu.cn官方学院明文支持同一学院；毕具体医学遗传学系单独保留。",
+      "degree_original_null_count": 4,
+      "degree_changes": [
+        {
+          "event_id": "pku-fanxing-education-1",
+          "old": null,
+          "new": true,
+          "source_candidate_sha256": "efe70c75f4f610ea23c6bdb422880635a41e643def35ca016666fcb7e219f338",
+          "exact_quote": "2007年9月-2011年7月，北京大学西葡语系学士",
+          "source_url": "https://sfl.pku.edu.cn/szdw1/zzjs/oyx/ptyyzy_20220407164148737291/fx1/index.htm"
+        },
+        {
+          "event_id": "pku-fanxing-education-2",
+          "old": null,
+          "new": true,
+          "source_candidate_sha256": "efe70c75f4f610ea23c6bdb422880635a41e643def35ca016666fcb7e219f338",
+          "exact_quote": "2012年2月-2014年2月，巴西坎皮纳斯州立大学文学理论与批评系硕士",
+          "source_url": "https://sfl.pku.edu.cn/szdw1/zzjs/oyx/ptyyzy_20220407164148737291/fx1/index.htm"
+        },
+        {
+          "event_id": "pku-biwenjian-medicalgenetics-education-2",
+          "old": null,
+          "new": true,
+          "source_candidate_sha256": "9f024db7065dbbfaaf865b4e8de80b2288369febbd05f3be6975511b57be8801",
+          "exact_quote": "博士：中国科学院 数学与系统科学研究院 (Chinese Academy of Sciences, Academy of Mathematics and Systems Science)，2010 - 2015",
+          "raw_evidence_sha256": "8dd6cad1b87cb8d125c1ad0790c02b3a944205fce8c90e16a8e97c93ca954de5",
+          "source_url": "https://sbms.bjmu.edu.cn/jsdw/bssds/Wenjian_Bi.html"
+        }
+      ],
+      "boundaries": "未新取源或出版资料，原学习区间不倒填授位日期；source summaries不冒连续引文。",
+      "degree_remaining_null": 1
+    }
+  ],
+  "mapping": "仅追加十一名已审来源人物及组织展示节点；旧966事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
