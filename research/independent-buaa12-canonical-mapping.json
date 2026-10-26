@@ -1,0 +1,2854 @@
+{
+  "schema_version": "independent-buaa12-canonical-mapping-1",
+  "baseline_commit": "57336fd110c57c1443076517d7fa9a2f2790c214",
+  "new_people": [
+    "buaa-quanquan",
+    "buaa-daiwei",
+    "buaa-dingchuan",
+    "buaa-zhou-xuefeng",
+    "buaa-tang-bin",
+    "buaa-jinhao",
+    "buaa-niuchaohui",
+    "buaa-wangtianhua",
+    "buaa-wuruilin",
+    "buaa-chenyan-sportstraining",
+    "buaa-zhouronggang-engineeringpsychology",
+    "buaa-yuehanwei"
+  ],
+  "new_org_ids": [
+    "buaa-automation-electrical",
+    "buaa-math",
+    "buaa-math-basic",
+    "buaa-transportation",
+    "buaa-transportation-transport",
+    "buaa-law",
+    "buaa-sem",
+    "buaa-sem-finance",
+    "buaa-hss-public-administration",
+    "buaa-foreign-languages",
+    "buaa-sports-department"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 11,
+    "education": 45,
+    "appointments": 32,
+    "publications": 19,
+    "mentors": 5,
+    "teaching": 38,
+    "institutional_associations": 2,
+    "career_end_events": 1,
+    "creative_works": 0,
+    "degree_true": 19,
+    "degree_false": 11,
+    "degree_unknown": 15
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "engineering-mathematics-law",
+      "canonical_payload_sha256": "47f37d41686319c8ec9ee991cf96a5414ec6815f6d49af368a78cefee8bded54",
+      "field_mapping_sha256": "73340f367bfcc63c09680d7bca996384c839a8355ec6548243f779cbfe8ea25e",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "languages-economics-law",
+      "canonical_payload_sha256": "1da5a06140436ec35115b7044834a9aa9b1315ac16f0e842c4ae7f56df8fa47f",
+      "field_mapping_sha256": "7463b15a8f382626e0974cc77d28e251221d6e6ec36f4518cacbb8ac56d98066",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "humanities-sport-psychology-retirement",
+      "canonical_payload_sha256": "093c338b617e76c394d8e6a024fe0ba5db9cdf484dd5eeef5efc5b4e42903ccf",
+      "field_mapping_sha256": "7db81b3356b1764a625e3fb2ae6b1e2cf987d4a2d0ad2fa371cef6f479611bf1",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "47f37d41686319c8ec9ee991cf96a5414ec6815f6d49af368a78cefee8bded54",
+      "baseline_people": 802,
+      "baseline_publication_status": "published",
+      "people": [
+        {
+          "person_id": "buaa-quanquan",
+          "source_candidate_sha256": "de0b42b0e8296156abb06b4d27c7ead77d2bc680e5d25d0dc724e309f679a4cd",
+          "source_review_sha256": "1958b811130b12ed43a8d8f681cc46734fedf8d8b2761fd0700a9c873a553aad",
+          "acceptance_chain_binding": {
+            "exact_source_sha_in_review_or_supplement": true,
+            "original_to_accepted_delta": []
+          },
+          "education_original_states": [
+            {
+              "event_id": "buaa-quanquan-bachelor",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "buaa-quanquan-masters-transfer",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "buaa-quanquan-doctorate",
+              "degree_awarded": true
+            }
+          ],
+          "counts": {
+            "education": 3,
+            "appointments": 5,
+            "mentors": 0,
+            "publications": 2,
+            "teaching": 0,
+            "institutional_associations": 0
+          },
+          "visible_limits": [
+            "实时人事/退休状态未独立核实；来源标签与开放任期仅为原网页陈述。",
+            "仅必要留存职业摘录，非完整履历或原页面字节；没有新访问。",
+            "本人导师关系仅按明确阶段保留；本人博导/硕导资格不生成其自身师承。",
+            "Visiting Professor与Research Fellow仅原职业称谓，不改博士后，不据时间重叠推兼职或连续任职。",
+            "历史北航任职原行未写院系，不用现单位补历史系别。",
+            "目录同名教授但原生目标href未核；原读者请求秒级时刻未保存，仅有响应前时钟上界，不能当精确抓取时刻。"
+          ]
+        },
+        {
+          "person_id": "buaa-daiwei",
+          "source_candidate_sha256": "9896adb84d562417d72e26f115137be9e5f63fbec9dfff432566070e2bf60936",
+          "source_review_sha256": "4d2efad035bd412bee90088e802c75a36f30bf3fc7364289952c29517a4f43a9",
+          "acceptance_chain_binding": {
+            "exact_source_sha_in_review_or_supplement": true,
+            "original_to_accepted_delta": [
+              {
+                "field_address": "people/0/publications/0/article_number",
+                "old_value": "1190",
+                "new_value": null
+              },
+              {
+                "field_address": "people/0/publications/0/locator_as_source",
+                "old_value": null,
+                "new_value": "1190"
+              }
+            ],
+            "original_person_object_unchanged": true
+          },
+          "education_original_states": [
+            {
+              "event_id": "buaa-daiwei-bachelor",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "buaa-daiwei-doctorate",
+              "degree_awarded": null
+            }
+          ],
+          "counts": {
+            "education": 5,
+            "appointments": 3,
+            "mentors": 3,
+            "publications": 1,
+            "teaching": 0,
+            "institutional_associations": 0
+          },
+          "visible_limits": [
+            "实时人事/退休状态未独立核实；来源标签与开放任期仅为原网页陈述。",
+            "仅必要留存职业摘录，非完整履历或原页面字节；没有新访问。",
+            "本人导师关系仅按明确阶段保留；本人博导/硕导资格不生成其自身师承。",
+            "硕士阶段未披露，不推不存在或硕博连读。",
+            "曹道民仅博士阶段导师；Daniel Tataru仅公派留学访问国外导师；Thomas Duyckaerts仅访问合作教授，不当学位导师。",
+            "伯克利访问不推联合学位；Paris Nord/LAGA/Institut Galilée原机构名称照录，不作历史法人归一。"
+          ]
+        },
+        {
+          "person_id": "buaa-dingchuan",
+          "source_candidate_sha256": "7d89c5a02c5cf0c41c3124dfe20337cea22700db978c8c43092034d06e6587b5",
+          "source_review_sha256": "16f9ae0928b43ce963f6ebeb94847dc700d687961a1d584c78839a521753d869",
+          "acceptance_chain_binding": {
+            "exact_source_sha_in_review_or_supplement": false,
+            "original_to_accepted_delta": [
+              {
+                "field_address": "baseline_pending_people",
+                "old_value": 86,
+                "new_value": 84
+              }
+            ],
+            "original_person_object_unchanged": true,
+            "review_binds_original_and_exact_v2_metadata_delta": true,
+            "verified_exact_metadata_only_delta": true
+          },
+          "education_original_states": [
+            {
+              "event_id": "buaa-dingchuan-bachelor",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "buaa-dingchuan-master",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "buaa-dingchuan-doctorate",
+              "degree_awarded": null
+            }
+          ],
+          "counts": {
+            "education": 5,
+            "appointments": 3,
+            "mentors": 0,
+            "publications": 2,
+            "teaching": 3,
+            "institutional_associations": 0
+          },
+          "visible_limits": [
+            "实时人事/退休状态未独立核实；来源标签与开放任期仅为原网页陈述。",
+            "仅必要留存职业摘录，非完整履历或原页面字节；没有新访问。",
+            "本人导师关系仅按明确阶段保留；本人博导/硕导资格不生成其自身师承。",
+            "未留本人具名导师，不推不存在；目录筛选与原生链接支持交通运输系归属，非实时人事核验。",
+            "原双学士具体资格保留一个事件，不拆授位；硕士/博士阶段尚未独立核实授位，联合培养、博士后不增加学位。"
+          ]
+        },
+        {
+          "person_id": "buaa-zhou-xuefeng",
+          "source_candidate_sha256": "ea24f78e483c8a169bfe05f95a2387b7d63936c6647ed33778372a235c87e935",
+          "source_review_sha256": "d494a6a505fc97cea23943de0eaf634531f7e74619cb3c55c2e52280e789ba32",
+          "acceptance_chain_binding": {
+            "exact_source_sha_in_review_or_supplement": true,
+            "original_to_accepted_delta": []
+          },
+          "education_original_states": [
+            {
+              "event_id": "buaa-zhou-bachelor",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "buaa-zhou-master",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "buaa-zhou-doctorate",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "buaa-zhou-visit",
+              "degree_awarded": false
+            }
+          ],
+          "counts": {
+            "education": 4,
+            "appointments": 2,
+            "mentors": 0,
+            "publications": 2,
+            "teaching": 7,
+            "institutional_associations": 2
+          },
+          "visible_limits": [
+            "实时人事/退休状态未独立核实；来源标签与开放任期仅为原网页陈述。",
+            "仅必要留存职业摘录，非完整履历或原页面字节；没有新访问。",
+            "本人导师关系仅按明确阶段保留；本人博导/硕导资格不生成其自身师承。",
+            "原机构区间2004-06至今北京航空航天大学法学院、1998-07至2001-04山东省高级人民法院，具体职务未披露，独立保留不计任职；不能据此推教授或副院长起任。",
+            "未留本人具名导师；本人博导资格不生成自身师承。",
+            "目录教授（含博导）为职称类别非系别；具名原生href未解析，现职/副院长任期未知。"
+          ]
+        }
+      ],
+      "org_identity": [
+        {
+          "id": "buaa-automation-electrical",
+          "name": "自动化科学与电气工程学院",
+          "type": "school",
+          "school_id": "buaa",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "buaa-automation-roster-page12",
+          "source_url": "https://shi.buaa.edu.cn/xyjslb.jsp?PAGENUM=12&id=1012&lang=zh_CN&st=0&totalpage=19&urltype=tsites.CollegeTeacherList&wbtreeid=1001",
+          "source_observation_sha256": "ce829b0c12076bb1db9e38d428a9e6dbd49c96e516d376529065199e0c8ddc74",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原官网单位/目录筛选展示；学院法定行政父级未知，下级只是所见目录归组。"
+        },
+        {
+          "id": "buaa-math",
+          "name": "数学科学学院",
+          "type": "school",
+          "school_id": "buaa",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "buaa-math-directory-browser",
+          "source_url": "https://math.buaa.edu.cn/szdw/qtjs.htm",
+          "source_observation_sha256": "ac8723547df572a085689f90ccb48b5ff170c2188035b5c5e8a11aa79cfc344f",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原官网单位/目录筛选展示；学院法定行政父级未知，下级只是所见目录归组。"
+        },
+        {
+          "id": "buaa-math-basic",
+          "name": "基础数学系",
+          "type": "department",
+          "school_id": "buaa",
+          "parent_id": "buaa-math",
+          "campus_ids": [],
+          "source_id": "buaa-math-directory-browser",
+          "source_url": "https://math.buaa.edu.cn/szdw/qtjs.htm",
+          "source_observation_sha256": "ac8723547df572a085689f90ccb48b5ff170c2188035b5c5e8a11aa79cfc344f",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原官网单位/目录筛选展示；学院法定行政父级未知，下级只是所见目录归组。"
+        },
+        {
+          "id": "buaa-transportation",
+          "name": "交通科学与工程学院",
+          "type": "school",
+          "school_id": "buaa",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "buaa-dingchuan-directory-rendered",
+          "source_url": "https://transportation.buaa.edu.cn/szdw/qtjs.htm",
+          "source_observation_sha256": "6c2fb35973fb48a74b516e1e6c6c1cbbff0b30fc1a439cf7049323c22c1d29ba",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原官网单位/目录筛选展示；学院法定行政父级未知，下级只是所见目录归组。"
+        },
+        {
+          "id": "buaa-transportation-transport",
+          "name": "交通运输系",
+          "type": "department",
+          "school_id": "buaa",
+          "parent_id": "buaa-transportation",
+          "campus_ids": [],
+          "source_id": "buaa-dingchuan-directory-rendered",
+          "source_url": "https://transportation.buaa.edu.cn/szdw/qtjs.htm",
+          "source_observation_sha256": "6c2fb35973fb48a74b516e1e6c6c1cbbff0b30fc1a439cf7049323c22c1d29ba",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原官网单位/目录筛选展示；学院法定行政父级未知，下级只是所见目录归组。"
+        },
+        {
+          "id": "buaa-law",
+          "name": "法学院",
+          "type": "school",
+          "school_id": "buaa",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "buaa-zhou-directory",
+          "source_url": "https://fxy.buaa.edu.cn/szdw/zzjs/jshbd.htm",
+          "source_observation_sha256": "35f760d71e05ac997a777f8edb8cce4b8f1cadbdbdd9c7038c9c3bd41cd175e1",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原官网单位/目录筛选展示；学院法定行政父级未知，下级只是所见目录归组。"
+        }
+      ],
+      "degree_matrix_status": "最终4原null按明确学士资格/独立博士身份纠正；本组6true6false5null，丁双学士仍1event，所有授位年月不补。",
+      "public_field_check": "明确角色/课程层级/原在职声明/访问合作/书目元数据等级保留；私有路径工具定位不公开。",
+      "degree_classification_revision": {
+        "old_payload_sha256": "09431a780fe09913e24c089b0c283f8bd253f1afd569fd742b864ed59c26884b",
+        "new_payload_sha256": "b387b1492fe47b623e6b0ae2c27db40864b538b646e710849b6f4065edb2b8e9",
+        "changes": [
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              0,
+              "degree_awarded"
+            ],
+            "old_value": null,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              0,
+              "event_kind"
+            ],
+            "old_value": "degree_study",
+            "new_value": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              0,
+              "include_in_degree_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              0,
+              "include_in_education_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              0,
+              "note"
+            ],
+            "old_value": "原文列该教育经历；独立授位尚未核实，学习区间不当授位日期。",
+            "new_value": "官网教育经历明确具体“(理学) 学士”资格，与山东大学2003–2007学习背景对应，据来源报告记录学位；未核原学位证，授位年月日未知。"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "degree_awarded"
+            ],
+            "old_value": null,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "event_kind"
+            ],
+            "old_value": "degree_study",
+            "new_value": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "include_in_degree_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "include_in_education_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              0,
+              "note"
+            ],
+            "old_value": "原文列该教育经历；独立授位尚未核实，学习区间不当授位日期。 原双学士保留一个学习阶段及交通工程/道路工程字符串，不拆为两项已获授。",
+            "new_value": "官网明确“双学士”资格及重庆交通大学2005–2009交通工程/道路工程背景，据来源报告记录为一个双学士事件；不拆造两次授位或额外专业，未核原证书，授位年月日未知。"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              0,
+              "degree_awarded"
+            ],
+            "old_value": null,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              0,
+              "event_kind"
+            ],
+            "old_value": "degree_study",
+            "new_value": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              0,
+              "include_in_degree_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              0,
+              "include_in_education_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              0,
+              "note"
+            ],
+            "old_value": "原文列该教育经历；独立授位尚未核实，学习区间不当授位日期。",
+            "new_value": "官网明确中国政法大学“法学学士”资格及1991-09至1995-07教育背景，据来源报告记录学位；未核原学位证，授位年月日未知，不复制学习终点。"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              2,
+              "degree_awarded"
+            ],
+            "old_value": null,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              2,
+              "event_kind"
+            ],
+            "old_value": "degree_study",
+            "new_value": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              2,
+              "include_in_degree_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              2,
+              "include_in_education_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              3,
+              "education",
+              2,
+              "note"
+            ],
+            "old_value": "原文列该教育经历；独立授位尚未核实，学习区间不当授位日期。",
+            "new_value": "独立人物身份句明确“法学博士、教授、博士生导师法学院副院长”，与唯一中国政法大学2001-09至2004-06博士经历对应，据来源报告记录博士学位；未核原证书，授位年月日未知，不从学习终点补日期。"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "unknowns",
+              4
+            ],
+            "old_value": "原3阶段仅学位称谓，双学士不拆；联合培养、博士后不增加授位。",
+            "new_value": "原双学士具体资格保留一个事件，不拆授位；硕士/博士阶段尚未独立核实授位，联合培养、博士后不增加学位。"
+          }
+        ],
+        "event_evidence": [
+          {
+            "event_id": "buaa-daiwei-bachelor",
+            "source_original_degree_awarded": null,
+            "original_source_candidate_sha256": "9896adb84d562417d72e26f115137be9e5f63fbec9dfff432566070e2bf60936",
+            "source_url": "https://math.buaa.edu.cn/info/1044/4862.htm",
+            "source_quote": "2003-2007，山东大学，数学学院，(理学) 学士",
+            "quote_sha256": "eaf56374d430b13eb13fb988e9e498f0f348393b6d5af142690d284331c69a1e",
+            "retained_source_object_sha256": "2e0d445788b9eb6c00d03643ddc1e398e44160a56c7c6474e09229aa564bbd52",
+            "hash_scope": "whole original retained evidence object serialized JSON; quote_sha256 separately hashes exact quoted string",
+            "basis": "明确学士资格称谓",
+            "award_dates_unchanged_null": true
+          },
+          {
+            "event_id": "buaa-dingchuan-bachelor",
+            "source_original_degree_awarded": null,
+            "original_source_candidate_sha256": "7d89c5a02c5cf0c41c3124dfe20337cea22700db978c8c43092034d06e6587b5",
+            "source_url": "https://transportation.buaa.edu.cn/info/1044/4981.htm",
+            "source_quote": "2005-2009，重庆交通大学，交通工程/道路工程，双学士",
+            "quote_sha256": "95addbbf47c2dbfc8507ca7dca5b3a51714b27ed4676c0bd1947dc0951871e5f",
+            "retained_source_object_sha256": "e4c57cae8fd530fb459afe1aaa7d5ba1f5af1c334cf8b70bdd8f058a0310240a",
+            "hash_scope": "whole original retained evidence object serialized JSON; quote_sha256 separately hashes exact quoted string",
+            "basis": "明确学士资格称谓",
+            "award_dates_unchanged_null": true
+          },
+          {
+            "event_id": "buaa-zhou-bachelor",
+            "source_original_degree_awarded": null,
+            "original_source_candidate_sha256": "ea24f78e483c8a169bfe05f95a2387b7d63936c6647ed33778372a235c87e935",
+            "source_url": "https://fxy.buaa.edu.cn/info/1006/8802.htm",
+            "source_quote": "1991.09-1995.07  中国政法大学法学学士",
+            "quote_sha256": "5beca14cec6b2511f34dce74722c2496a2902dda4578c28ee5efa754f65ba15d",
+            "retained_source_object_sha256": "e28f9260ca9cfa6e2c6b7ff375e71e2adbf52bf6ec46e7d736b33dd1f6836a8e",
+            "hash_scope": "whole original retained evidence object serialized JSON; quote_sha256 separately hashes exact quoted string",
+            "basis": "明确学士资格称谓",
+            "award_dates_unchanged_null": true
+          },
+          {
+            "event_id": "buaa-zhou-doctorate",
+            "source_original_degree_awarded": null,
+            "original_source_candidate_sha256": "ea24f78e483c8a169bfe05f95a2387b7d63936c6647ed33778372a235c87e935",
+            "source_url": "https://fxy.buaa.edu.cn/info/1006/8802.htm",
+            "source_quote": "法学博士、教授、博士生导师法学院副院长",
+            "quote_sha256": "68f6112a77964a2de3daf0241e00ff31c3f416d276fe33e4b4f226ab7ab4494c",
+            "retained_source_object_sha256": "e28f9260ca9cfa6e2c6b7ff375e71e2adbf52bf6ec46e7d736b33dd1f6836a8e",
+            "hash_scope": "whole original retained evidence object serialized JSON; quote_sha256 separately hashes exact quoted string",
+            "basis": "独立本人法学博士身份称谓对应唯一博士教育事件",
+            "award_dates_unchanged_null": true
+          }
+        ],
+        "source_pack_unchanged": true,
+        "inverse_verified_sha256": "09431a780fe09913e24c089b0c283f8bd253f1afd569fd742b864ed59c26884b"
+      },
+      "qualification_visible_note_revision": {
+        "field_address": [
+          "people",
+          3,
+          "appointments",
+          0,
+          "note"
+        ],
+        "old_value": "原职业角色及区间按源；开放终点不认证实时在岗，未将当前职称追溯至机构起点。 本人法学博士、教授、博士生导师原身份标签，未披露角色起任日。",
+        "new_value": "原职业角色及区间按源；开放终点不认证实时在岗，未将当前职称追溯至机构起点。 本人法学博士、教授、博士生导师原身份标签，未披露角色起任日。 教授为职称，博士生导师仅本人指导资格，不是另一任职或本人求学导师。",
+        "old_payload_sha256": "b387b1492fe47b623e6b0ae2c27db40864b538b646e710849b6f4065edb2b8e9",
+        "new_payload_sha256": "47f37d41686319c8ec9ee991cf96a5414ec6815f6d49af368a78cefee8bded54",
+        "inverse_verified_sha256": "b387b1492fe47b623e6b0ae2c27db40864b538b646e710849b6f4065edb2b8e9",
+        "reason": "现有教授职称与本人博导资格区分展示，未新增任职或本人师承；原title/日期/全部其他字段不变。"
+      }
+    },
+    {
+      "schema_version": "buaa12-group2-mapping-1",
+      "published_baseline_people": 802,
+      "input_checks": [
+        {
+          "person_id": "buaa-tang-bin",
+          "candidate_sha256": "ea24f78e483c8a169bfe05f95a2387b7d63936c6647ed33778372a235c87e935",
+          "review_sha256": "d494a6a505fc97cea23943de0eaf634531f7e74619cb3c55c2e52280e789ba32",
+          "additional_audit_hashes": [
+            "06c0b70c1967619bf52bc52b50a813ccad9b86181f606bd0959c1d8448067783",
+            "72726df7defa74b415243b4f659038b9479cce20f39375e310a958170015c3a6",
+            "d88a708c9d4ba80180a6b2f350b47b146f1846e0d894ac4c09154697694f218d",
+            "b93861f3e403818e2f6a1d5888d2a4cb5239365a16747ba43cbe31e98266b20f"
+          ],
+          "hash_guards_pass": true
+        },
+        {
+          "person_id": "buaa-jinhao",
+          "candidate_sha256": "90e42248ffb8493ddf3e8684e0f38211d2200fb7b3a3ab98dbaa8b0aacbb51cf",
+          "review_sha256": "57032b68959a30b0a6f1aae500190bd2729d137066e283e28d0ff3c415ee2557",
+          "additional_audit_hashes": [
+            "4b0d4c4dd8a59aa91ab17681eaa2ac1d669eed82d65f1617675b25365ad54a0f",
+            "999f6ba9051a57b169b064187c79eabffd5fbc5a96bded239d3a4c32f9b8d17a"
+          ],
+          "hash_guards_pass": true
+        },
+        {
+          "person_id": "buaa-niuchaohui",
+          "candidate_sha256": "297d3cdcda117055e64e342f0bb4c223b27a7b2f1a35beb224146be92c199a50",
+          "review_sha256": "9beafc7949d4f0e81c66a7e343b161cb96e6c83ff4c7a950d63bb3d2d3fe3d3a",
+          "additional_audit_hashes": [
+            "b4b3833aeb85bcf2911a4fceb59805e45d1e163f08ad7c58720cb08e9bd694a7",
+            "9c76a3c57d1ba14ff72faca153af45f01bbda9f946fad2621e83c8fac9e5b682",
+            "c19fbc5b40533a0cbc8e0568e28cbbdce83c9571b9b1511921b4cdf6dd3ac819",
+            "3c778b9008d921ff4275ec7ca2c5aa8e1bf3b973451af7eed040c20b51517f72"
+          ],
+          "hash_guards_pass": true
+        },
+        {
+          "person_id": "buaa-wangtianhua",
+          "candidate_sha256": "7700abfcb3c4a35037afaee9513072281d51894a91f1744ad25723b2a326112f",
+          "review_sha256": "2eb734a1fbd571223622893400935fb10b7e6750bc3ef0ab211905a1d682f7c9",
+          "additional_audit_hashes": [
+            "c3a8e2b5c4f52179dc0a6724ea4060792c50f7487e4246f33f4c3e6d314f61df",
+            "4804afa89eaec6820a194abd0d6c1b904de94ab35b21df9168d31cbc9ff6e7b0",
+            "5e49264f773092fd0d6ffdd1e203196efc4850dba094a3bf592e66e9e24740eb"
+          ],
+          "hash_guards_pass": true
+        }
+      ],
+      "overlay_exact_operations": [
+        {
+          "json_pointer": "/people/0/education/0/note",
+          "old_value": "仅阶段/学位标签，无明确获授语句；学习止期不推作授位日期。官网空格原貌保留，不外推法律授位实体。",
+          "new_value": "仅阶段/学位标签，无明确获授语句；学习止期不推作授位日期。必要职业摘录已按证据记录做空白规范化，不外推法律授位实体。",
+          "source_sha256": "297d3cdcda117055e64e342f0bb4c223b27a7b2f1a35beb224146be92c199a50",
+          "overlay_sha256": "f088a27098b622cb702da40cb4d1a743bb8a9cc8611bdbac50fcb1c6a126f8b9"
+        },
+        {
+          "json_pointer": "/people/0/education/1/note",
+          "old_value": "仅阶段/学位标签，无明确获授语句；学习止期不推作授位日期。官网空格原貌保留，不外推法律授位实体。",
+          "new_value": "仅阶段/学位标签，无明确获授语句；学习止期不推作授位日期。必要职业摘录已按证据记录做空白规范化，不外推法律授位实体。",
+          "source_sha256": "297d3cdcda117055e64e342f0bb4c223b27a7b2f1a35beb224146be92c199a50",
+          "overlay_sha256": "f088a27098b622cb702da40cb4d1a743bb8a9cc8611bdbac50fcb1c6a126f8b9"
+        }
+      ],
+      "degree_evidence_matrix": [
+        {
+          "person_id": "buaa-jinhao",
+          "education_event_id": "buaa-jinhao-education-71",
+          "old_value": null,
+          "quote": "2010--2016：美国印第安纳大学，博士，导师：Eric Leeper and Juan Carlos Hatchondo",
+          "quote_sha256": "cd17f381a47e3a9aa02589fb2251f8fc50f8b926b4e9552fdaea4f86717ffe28",
+          "source_id": "buaa-jinhao-profile",
+          "source_url": "https://sem.buaa.edu.cn/info/1368/16241.htm",
+          "candidate_sha256": "90e42248ffb8493ddf3e8684e0f38211d2200fb7b3a3ab98dbaa8b0aacbb51cf",
+          "retained_heading": "教育经历",
+          "heading_scope": "仅金原留存独立栏目标题；牛/王未留原heading，不由定位补造",
+          "independent_degree_identity": null,
+          "decision": "root_final_retain_unknown"
+        },
+        {
+          "person_id": "buaa-jinhao",
+          "education_event_id": "buaa-jinhao-education-73",
+          "old_value": null,
+          "quote": "2008--2010：美国康奈尔大学，硕士",
+          "quote_sha256": "eb6602cab517d3ec1c6c15d52794fa73029c1cee7e0445c16dcf724319a78968",
+          "source_id": "buaa-jinhao-profile",
+          "source_url": "https://sem.buaa.edu.cn/info/1368/16241.htm",
+          "candidate_sha256": "90e42248ffb8493ddf3e8684e0f38211d2200fb7b3a3ab98dbaa8b0aacbb51cf",
+          "retained_heading": "教育经历",
+          "heading_scope": "仅金原留存独立栏目标题；牛/王未留原heading，不由定位补造",
+          "independent_degree_identity": null,
+          "decision": "root_final_retain_unknown"
+        },
+        {
+          "person_id": "buaa-jinhao",
+          "education_event_id": "buaa-jinhao-education-75",
+          "old_value": null,
+          "quote": "2007--2008：美国加州大学圣芭芭拉分校，硕士",
+          "quote_sha256": "b66faed7d0917e9de62a499078b581b0db3589c0004795404a41a96a38864e21",
+          "source_id": "buaa-jinhao-profile",
+          "source_url": "https://sem.buaa.edu.cn/info/1368/16241.htm",
+          "candidate_sha256": "90e42248ffb8493ddf3e8684e0f38211d2200fb7b3a3ab98dbaa8b0aacbb51cf",
+          "retained_heading": "教育经历",
+          "heading_scope": "仅金原留存独立栏目标题；牛/王未留原heading，不由定位补造",
+          "independent_degree_identity": null,
+          "decision": "root_final_retain_unknown"
+        },
+        {
+          "person_id": "buaa-jinhao",
+          "education_event_id": "buaa-jinhao-education-77",
+          "old_value": null,
+          "quote": "2003--2007：厦门大学，本科",
+          "quote_sha256": "ef459c3be3f1ad5ef0ec2c6e162f8455f2c30359e01dbbeee6bfc44b52dd7aaf",
+          "source_id": "buaa-jinhao-profile",
+          "source_url": "https://sem.buaa.edu.cn/info/1368/16241.htm",
+          "candidate_sha256": "90e42248ffb8493ddf3e8684e0f38211d2200fb7b3a3ab98dbaa8b0aacbb51cf",
+          "retained_heading": "教育经历",
+          "heading_scope": "仅金原留存独立栏目标题；牛/王未留原heading，不由定位补造",
+          "independent_degree_identity": null,
+          "decision": "root_final_retain_unknown"
+        },
+        {
+          "person_id": "buaa-niuchaohui",
+          "education_event_id": "buaa-niuchaohui-education-1",
+          "old_value": null,
+          "quote": "2007.9——2011.7 中国人民大学  经济学院  国际经济与贸易专业  学士",
+          "quote_sha256": "fbad2f298791b9bba27b265172949db5faab94eb5395f4d49233592f59c981d2",
+          "source_id": "buaa-niuchaohui-profile",
+          "source_url": "https://hss.buaa.edu.cn/info/1227/6374.htm",
+          "candidate_sha256": "297d3cdcda117055e64e342f0bb4c223b27a7b2f1a35beb224146be92c199a50",
+          "retained_heading": null,
+          "heading_scope": "仅金原留存独立栏目标题；牛/王未留原heading，不由定位补造",
+          "independent_degree_identity": null,
+          "decision": "root_approved_source_reported_true"
+        },
+        {
+          "person_id": "buaa-niuchaohui",
+          "education_event_id": "buaa-niuchaohui-education-2",
+          "old_value": null,
+          "quote": "2011.9——2016.7 诺丁汉大学经济 学院  国际经济学专业  博士",
+          "quote_sha256": "8343ed71866e30ba78cfb7017fe76552a2166071165c0fc26365e57e6bd8b2a3",
+          "source_id": "buaa-niuchaohui-profile",
+          "source_url": "https://hss.buaa.edu.cn/info/1227/6374.htm",
+          "candidate_sha256": "297d3cdcda117055e64e342f0bb4c223b27a7b2f1a35beb224146be92c199a50",
+          "retained_heading": null,
+          "heading_scope": "仅金原留存独立栏目标题；牛/王未留原heading，不由定位补造",
+          "independent_degree_identity": null,
+          "decision": "root_final_retain_unknown"
+        },
+        {
+          "person_id": "buaa-wangtianhua",
+          "education_event_id": "buaa-wangtianhua-education-1",
+          "old_value": null,
+          "quote": "1987.09-1991.06 北京大学文学学士",
+          "quote_sha256": "6f9f3121880477b999601d59fcde88868a06e323711fe6a248e66903330acf9b",
+          "source_id": "buaa-wangtianhua-profile",
+          "source_url": "https://fxy.buaa.edu.cn/info/1006/8801.htm",
+          "candidate_sha256": "7700abfcb3c4a35037afaee9513072281d51894a91f1744ad25723b2a326112f",
+          "retained_heading": null,
+          "heading_scope": "仅金原留存独立栏目标题；牛/王未留原heading，不由定位补造",
+          "independent_degree_identity": null,
+          "decision": "root_approved_source_reported_true"
+        },
+        {
+          "person_id": "buaa-wangtianhua",
+          "education_event_id": "buaa-wangtianhua-education-2",
+          "old_value": null,
+          "quote": "1993.09-1996.06 北京大学法学硕士",
+          "quote_sha256": "c3606ee13e2448b6c67fd182267478161978d615b147a2e4a5b82ef4f1daa4aa",
+          "source_id": "buaa-wangtianhua-profile",
+          "source_url": "https://fxy.buaa.edu.cn/info/1006/8801.htm",
+          "candidate_sha256": "7700abfcb3c4a35037afaee9513072281d51894a91f1744ad25723b2a326112f",
+          "retained_heading": null,
+          "heading_scope": "仅金原留存独立栏目标题；牛/王未留原heading，不由定位补造",
+          "independent_degree_identity": null,
+          "decision": "root_final_retain_unknown"
+        },
+        {
+          "person_id": "buaa-wangtianhua",
+          "education_event_id": "buaa-wangtianhua-education-3",
+          "old_value": null,
+          "quote": "1997.04-1999.03 信州大学经济学硕士",
+          "quote_sha256": "ff8faf37a9224f4b01da671485ce648da7dd09844bc0640d56a1140451910f82",
+          "source_id": "buaa-wangtianhua-profile",
+          "source_url": "https://fxy.buaa.edu.cn/info/1006/8801.htm",
+          "candidate_sha256": "7700abfcb3c4a35037afaee9513072281d51894a91f1744ad25723b2a326112f",
+          "retained_heading": null,
+          "heading_scope": "仅金原留存独立栏目标题；牛/王未留原heading，不由定位补造",
+          "independent_degree_identity": null,
+          "decision": "root_final_retain_unknown"
+        },
+        {
+          "person_id": "buaa-wangtianhua",
+          "education_event_id": "buaa-wangtianhua-education-4",
+          "old_value": null,
+          "quote": "1999.04-2004.03 东京大学法学博士",
+          "quote_sha256": "aaec23213f0c3ca04e0165599d836d40fdca57e1072d82c44f3a3ad8f52e6441",
+          "source_id": "buaa-wangtianhua-profile",
+          "source_url": "https://fxy.buaa.edu.cn/info/1006/8801.htm",
+          "candidate_sha256": "7700abfcb3c4a35037afaee9513072281d51894a91f1744ad25723b2a326112f",
+          "retained_heading": null,
+          "heading_scope": "仅金原留存独立栏目标题；牛/王未留原heading，不由定位补造",
+          "independent_degree_identity": "法学博士、教授、博士生导师",
+          "decision": "root_approved_source_reported_true"
+        }
+      ],
+      "org_identity": "本组唯一4节点：经济管理学院及金融系、人文社会科学学院（公共管理学院）、外国语学院。法学院复用组1buaa-law，同校同中文学院及fxy官方目录和个人页；原展示关系不认证法律行政。组3共享人文及经管，原source组织事实各自保存。",
+      "original_org_facts": {
+        "buaa-jinhao": [
+          {
+            "id": "buaa-sem",
+            "name": "经济管理学院",
+            "school_id": "buaa",
+            "type": "school",
+            "source_ids": [
+              "buaa-jinhao-profile",
+              "buaa-sem-finance-directory"
+            ]
+          },
+          {
+            "id": "buaa-sem-finance",
+            "name": "金融系",
+            "school_id": "buaa",
+            "parent_id": "buaa-sem",
+            "type": "department",
+            "source_ids": [
+              "buaa-jinhao-profile",
+              "buaa-sem-finance-directory"
+            ],
+            "note": "官网个人页面包屑和目录栏目，未另核法律隶属或沿革。"
+          }
+        ],
+        "buaa-niuchaohui": [
+          {
+            "id": "buaa-hss-public-administration",
+            "name": "人文社会科学学院（公共管理学院）",
+            "school_id": "buaa",
+            "type": "school",
+            "source_ids": [
+              "buaa-niuchaohui-profile",
+              "buaa-hss-fulltime-directory"
+            ],
+            "note": "公开专业隶属；不新增未核行政父级或校区。"
+          }
+        ],
+        "buaa-wangtianhua": [
+          {
+            "id": "buaa-law",
+            "name": "法学院",
+            "type": "school",
+            "school_id": "buaa",
+            "parent_id": null,
+            "administrative_parent_status": "not_independently_verified_in_retained_sources",
+            "source_id": "buaa-law-directory",
+            "source_url": "https://fxy.buaa.edu.cn/szdw/zzjs/jshbd.htm",
+            "retained_professional_text": "CopyRight© 2015 北航法学院 All rights reserved",
+            "source_excerpt_sha256": "12a9d26ecd9abfc9f793b65b6070bb175c8a9e0185570421d32f3f36bb732b56",
+            "source_locator": "官网职业资料／CopyRight© 2015 北航法学院 All rights reserved",
+            "note": "官方域名、页面标题与目录支持北航法学院网站展示归属；不独立认证法定行政层级或直属大学。"
+          }
+        ]
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/buaa-tang-profile/professional_excerpts/0/quote",
+          "sha256": "e0360ad06c0f7e8cacd9fda1fe3722ef8b3c9575702e0d0b3936aa522ffd140d"
+        },
+        {
+          "path": "/sources/buaa-tang-profile/professional_excerpts/1/quote",
+          "sha256": "5c39daf1eaa59d318768956b72f940e0d4b9a7c2fcf9a7e0e6d2182a25cdbbab"
+        },
+        {
+          "path": "/sources/buaa-tang-profile/professional_excerpts/2/quote",
+          "sha256": "2eddc25e4d6d6a2425d779a8898f05ba10f1be44c050da1562efa1ff9af0c2ac"
+        },
+        {
+          "path": "/sources/buaa-tang-profile/professional_excerpts/3/quote",
+          "sha256": "bbb37df5d1b0edd1fb14098dc1ce245cad60f3866b3415dc932245b5eebaa337"
+        },
+        {
+          "path": "/sources/buaa-tang-profile/professional_excerpts/4/quote",
+          "sha256": "f76b781bb317cd761de0a6b12671b49991ba41d6935f6a8bf1b3638aaf5ebf9f"
+        },
+        {
+          "path": "/sources/buaa-tang-profile/professional_excerpts/5/quote",
+          "sha256": "7ba66c3854cfd2c384305b41c71c1d745bdfd4aa6f7e4ee06643d4cda0552331"
+        },
+        {
+          "path": "/sources/buaa-tang-profile/professional_excerpts/6/quote",
+          "sha256": "63658097c5b5552dfc9b2187b5277d442848ea6010f9b1a6a06bf94e22037b0c"
+        },
+        {
+          "path": "/sources/buaa-tang-profile/professional_excerpts/7/quote",
+          "sha256": "9b26873ff67284194c1a1ccac386776f07eb43c8d0195cc86501b5d1581ee48c"
+        },
+        {
+          "path": "/sources/buaa-tang-profile/professional_excerpts/8/quote",
+          "sha256": "a83da68d3ebe62596622df02f9656bfa72ca1584138c1887a2d7e0504be05c98"
+        },
+        {
+          "path": "/sources/buaa-tang-profile/professional_excerpts/9/quote",
+          "sha256": "030fe17e657a232eae79037eb528474a920ed776ba399aa595daaeca73659107"
+        },
+        {
+          "path": "/sources/buaa-tang-directory-rendered/professional_excerpts/0/quote",
+          "sha256": "d1c87879670b3e17b20dc53e2721c9ee9f26e93bed99cb516cf26779c50a34ef"
+        },
+        {
+          "path": "/sources/buaa-tang-directory-rendered/professional_excerpts/1/quote",
+          "sha256": "8393d3b5d1373000612a078ccdb2d82e5ed27bf34fd8039080305b3f15fea950"
+        },
+        {
+          "path": "/sources/buaa-tang-directory-rendered/professional_excerpts/2/quote",
+          "sha256": "cdb89fab5d52540fd3723ab9231fb870c62cd60176162ac7456d813a1c248fc5"
+        },
+        {
+          "path": "/sources/buaa-tang-directory-rendered/professional_excerpts/3/quote",
+          "sha256": "47b4687f6e42b4ad0fd9178f319df8aeb443bbd9d72aa5189a2abc68c61867f0"
+        },
+        {
+          "path": "/sources/buaa-niuchaohui-profile/excerpts/0/quote",
+          "sha256": "21c4ed3aec7e66a58b77a3e8c7effd8ac99047adcff4b356193dc48005df91f3"
+        },
+        {
+          "path": "/sources/buaa-niuchaohui-profile/excerpts/1/quote",
+          "sha256": "52ee5e260b4e2b5d22d320272afd3f1df0dbb1a11692c3eaf6a4ad6aedc95c70"
+        },
+        {
+          "path": "/sources/buaa-niuchaohui-profile/excerpts/2/quote",
+          "sha256": "fbad2f298791b9bba27b265172949db5faab94eb5395f4d49233592f59c981d2"
+        },
+        {
+          "path": "/sources/buaa-niuchaohui-profile/excerpts/3/quote",
+          "sha256": "8343ed71866e30ba78cfb7017fe76552a2166071165c0fc26365e57e6bd8b2a3"
+        },
+        {
+          "path": "/sources/buaa-niuchaohui-profile/excerpts/4/quote",
+          "sha256": "a0aefe4896134476d726110131ddbb51afcec6a93d12089676ab87a0183ab362"
+        },
+        {
+          "path": "/sources/buaa-niuchaohui-profile/excerpts/5/quote",
+          "sha256": "14252f900975827c19fc1d4365adfd43146a29ee9d7714e3e931bbd5aa0a2f59"
+        },
+        {
+          "path": "/sources/buaa-niuchaohui-profile/excerpts/6/quote",
+          "sha256": "73e41dfba4af7f1b4bcab55a03d2538cebb535f0f6dcbfcb651b7c5930dee62e"
+        },
+        {
+          "path": "/sources/buaa-niuchaohui-profile/excerpts/7/quote",
+          "sha256": "9d7f6e85ae80ebf4d8fa95b109b4be3a5673d409f1e5b0a4b9c4e499696f8278"
+        },
+        {
+          "path": "/sources/buaa-niuchaohui-profile/excerpts/8/quote",
+          "sha256": "ecc88b2677202cb06967d2f392c3fe5f1878646869b33ca5ade680783c559fbd"
+        },
+        {
+          "path": "/sources/buaa-niuchaohui-profile/excerpts/9/quote",
+          "sha256": "310e5b95b6c465f969c1f2b356f14ff650ea0bf72b3f98f5d423f4872c4e636b"
+        },
+        {
+          "path": "/sources/buaa-hss-fulltime-directory/excerpts/0/quote",
+          "sha256": "5abe87fae0aa62d5b1cfad4bf3c2202441e784cd988e5b94e695285a102a351c"
+        },
+        {
+          "path": "/sources/buaa-hss-fulltime-directory/excerpts/1/quote",
+          "sha256": "9a9e4b13846d17d5e86e37ba95088b950488b7eb51ed5b4f70aeed5861877042"
+        },
+        {
+          "path": "/sources/buaa-hss-fulltime-directory/excerpts/2/quote",
+          "sha256": "21c4ed3aec7e66a58b77a3e8c7effd8ac99047adcff4b356193dc48005df91f3"
+        },
+        {
+          "path": "/sources/buaa-hss-fulltime-directory/excerpts/3/quote",
+          "sha256": "5644169ca9b4dbfd987170044491882c9e0fba1fd5c6387f8c541fd4d207afb9"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/0/quote",
+          "sha256": "4993e37f9e32ae9d02d63d319ed8654fc06b9a002112737a7414ec3ddab12dc0"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/1/quote",
+          "sha256": "9020b9b815983c7587f267956aa7ff1c7230d0f9bd7f0003b2cb7690287c2c67"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/2/quote",
+          "sha256": "04c049359e46be198b17005805e599e9e1ecdb40de1a05f19717dd6d5c8df47c"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/3/quote",
+          "sha256": "6f9f3121880477b999601d59fcde88868a06e323711fe6a248e66903330acf9b"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/4/quote",
+          "sha256": "c3606ee13e2448b6c67fd182267478161978d615b147a2e4a5b82ef4f1daa4aa"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/5/quote",
+          "sha256": "ff8faf37a9224f4b01da671485ce648da7dd09844bc0640d56a1140451910f82"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/6/quote",
+          "sha256": "aaec23213f0c3ca04e0165599d836d40fdca57e1072d82c44f3a3ad8f52e6441"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/7/quote",
+          "sha256": "9b01e4ba9bc8b020a2a0abe79fc489f37d84969ca15c91272fa2f979b655ee56"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/8/quote",
+          "sha256": "00dddc6172d5207fbb45ee2e82b81e4684bb5a65f1c7c55cd028e71e6e376fea"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/9/quote",
+          "sha256": "ed3f0466ea90e7f2e6b754c648192d20b933f88a318feccb3918f9b586819dfc"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/10/quote",
+          "sha256": "2193c077857f4031a1d7dbb35814326a8d7285c6acf8bfa589ff9cb7066c9bb3"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/11/quote",
+          "sha256": "8699ff008de1d3bec4cc1433daf7cb126125164fc6df29155a444fbd1d886dec"
+        },
+        {
+          "path": "/sources/buaa-wangtianhua-profile/excerpts/12/quote",
+          "sha256": "f71a1966e7e0a86c9c8b5907c067e617077e3894f621997f682a0da105556faf"
+        },
+        {
+          "path": "/sources/buaa-law-directory/excerpts/0/quote",
+          "sha256": "f329973066bed610210761ed8dd07b11c961cb0f0b38f3c5873221565fedbeb2"
+        },
+        {
+          "path": "/sources/buaa-law-directory/excerpts/1/quote",
+          "sha256": "265b65cf80b0f2c04670b3c8772e091fdfe3387f44556eba7a7550a137708032"
+        },
+        {
+          "path": "/sources/buaa-law-directory/excerpts/2/quote",
+          "sha256": "4993e37f9e32ae9d02d63d319ed8654fc06b9a002112737a7414ec3ddab12dc0"
+        },
+        {
+          "path": "/sources/buaa-law-directory/excerpts/3/quote",
+          "sha256": "12a9d26ecd9abfc9f793b65b6070bb175c8a9e0185570421d32f3f36bb732b56"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/0/professional_excerpts/0/quote",
+          "sha256": "e0360ad06c0f7e8cacd9fda1fe3722ef8b3c9575702e0d0b3936aa522ffd140d"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/0/professional_excerpts/1/quote",
+          "sha256": "5c39daf1eaa59d318768956b72f940e0d4b9a7c2fcf9a7e0e6d2182a25cdbbab"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/0/professional_excerpts/2/quote",
+          "sha256": "2eddc25e4d6d6a2425d779a8898f05ba10f1be44c050da1562efa1ff9af0c2ac"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/0/professional_excerpts/3/quote",
+          "sha256": "bbb37df5d1b0edd1fb14098dc1ce245cad60f3866b3415dc932245b5eebaa337"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/0/professional_excerpts/4/quote",
+          "sha256": "f76b781bb317cd761de0a6b12671b49991ba41d6935f6a8bf1b3638aaf5ebf9f"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/0/professional_excerpts/5/quote",
+          "sha256": "7ba66c3854cfd2c384305b41c71c1d745bdfd4aa6f7e4ee06643d4cda0552331"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/0/professional_excerpts/6/quote",
+          "sha256": "63658097c5b5552dfc9b2187b5277d442848ea6010f9b1a6a06bf94e22037b0c"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/0/professional_excerpts/7/quote",
+          "sha256": "9b26873ff67284194c1a1ccac386776f07eb43c8d0195cc86501b5d1581ee48c"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/0/professional_excerpts/8/quote",
+          "sha256": "a83da68d3ebe62596622df02f9656bfa72ca1584138c1887a2d7e0504be05c98"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/0/professional_excerpts/9/quote",
+          "sha256": "030fe17e657a232eae79037eb528474a920ed776ba399aa595daaeca73659107"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/1/professional_excerpts/0/quote",
+          "sha256": "8393d3b5d1373000612a078ccdb2d82e5ed27bf34fd8039080305b3f15fea950"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/1/professional_excerpts/1/quote",
+          "sha256": "2ed41cefba008a9ff6fe43d2643189575fad0c4318054366e912bfb1bf9c8381"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/1/professional_excerpts/2/quote",
+          "sha256": "b82cc1d418354054c1bb6bc6e5e742ce173b68545e84dab38b440c72c4625e77"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/1/professional_excerpts/3/quote",
+          "sha256": "d9c9e211f20f299e96ebd973b484bf5ab4999f91eb4bdf89981810d0099eb942"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/2/professional_excerpts/0/quote",
+          "sha256": "d1c87879670b3e17b20dc53e2721c9ee9f26e93bed99cb516cf26779c50a34ef"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/2/professional_excerpts/1/quote",
+          "sha256": "8393d3b5d1373000612a078ccdb2d82e5ed27bf34fd8039080305b3f15fea950"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/2/professional_excerpts/2/quote",
+          "sha256": "cdb89fab5d52540fd3723ab9231fb870c62cd60176162ac7456d813a1c248fc5"
+        },
+        {
+          "path": "/people/buaa-tang-bin/sources/2/professional_excerpts/3/quote",
+          "sha256": "47b4687f6e42b4ad0fd9178f319df8aeb443bbd9d72aa5189a2abc68c61867f0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f76b781bb317cd761de0a6b12671b49991ba41d6935f6a8bf1b3638aaf5ebf9f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "7ba66c3854cfd2c384305b41c71c1d745bdfd4aa6f7e4ee06643d4cda0552331"
+        },
+        {
+          "path": "/quote",
+          "sha256": "63658097c5b5552dfc9b2187b5277d442848ea6010f9b1a6a06bf94e22037b0c"
+        },
+        {
+          "path": "/quote",
+          "sha256": "9b26873ff67284194c1a1ccac386776f07eb43c8d0195cc86501b5d1581ee48c"
+        },
+        {
+          "path": "/people/buaa-jinhao/mentor_relations/0/quote",
+          "sha256": "cd17f381a47e3a9aa02589fb2251f8fc50f8b926b4e9552fdaea4f86717ffe28"
+        },
+        {
+          "path": "/people/buaa-jinhao/mentor_relations/1/quote",
+          "sha256": "cd17f381a47e3a9aa02589fb2251f8fc50f8b926b4e9552fdaea4f86717ffe28"
+        },
+        {
+          "path": "/people/buaa-jinhao/education/0/quote",
+          "sha256": "cd17f381a47e3a9aa02589fb2251f8fc50f8b926b4e9552fdaea4f86717ffe28"
+        },
+        {
+          "path": "/people/buaa-jinhao/education/1/quote",
+          "sha256": "eb6602cab517d3ec1c6c15d52794fa73029c1cee7e0445c16dcf724319a78968"
+        },
+        {
+          "path": "/people/buaa-jinhao/education/2/quote",
+          "sha256": "b66faed7d0917e9de62a499078b581b0db3589c0004795404a41a96a38864e21"
+        },
+        {
+          "path": "/people/buaa-jinhao/education/3/quote",
+          "sha256": "ef459c3be3f1ad5ef0ec2c6e162f8455f2c30359e01dbbeee6bfc44b52dd7aaf"
+        },
+        {
+          "path": "/people/buaa-jinhao/appointments/0/quote",
+          "sha256": "c31e7ddd9c2620ba01a47c7a6c88b195471ee9fb391529c478680746c51b9ff0"
+        },
+        {
+          "path": "/people/buaa-jinhao/appointments/1/quote",
+          "sha256": "780d2e615996a52898a82a33cb8135106ad9ed87d15c908d853b94bc3a554b33"
+        },
+        {
+          "path": "/people/buaa-jinhao/publications/0/quote",
+          "sha256": "be24835963f7c5d8c01cc8c5b6d369c3055abb56badc551f2c776a61cac8d0eb"
+        },
+        {
+          "path": "/people/buaa-jinhao/publications/1/quote",
+          "sha256": "4f16ccf052045f816be8cbb448f07ca3a6dcd451b0671fb30807528ad8e1f4e9"
+        },
+        {
+          "path": "/people/buaa-jinhao/teaching/0/quote",
+          "sha256": "c2377028cf81c0b03cd83b3b15583e9d7e226d26f47b4ebcf654d86c05096cc0"
+        },
+        {
+          "path": "/people/buaa-jinhao/teaching/1/quote",
+          "sha256": "52ac2401fcf597f0f5bc2fbfbfa07b1f655873c3ee12153795d17d17d083b6fd"
+        },
+        {
+          "path": "/people/buaa-jinhao/teaching/2/quote",
+          "sha256": "e077989ca2ddc0912281786c3030da78bded8fa4ec866e0c6da5e3d4bf622569"
+        },
+        {
+          "path": "/people/buaa-jinhao/research/0/quote",
+          "sha256": "852b800f44af02683e4825ae7168dd21c6819f5bb1692cd0eb884a2a36f1e852"
+        },
+        {
+          "path": "/people/buaa-jinhao/field_provenance/identity/quote",
+          "sha256": "c8bc4e48893e45269c65e7356c121b11a8a6d7356dc606db9481b0bf8dcda14d"
+        },
+        {
+          "path": "/people/buaa-jinhao/field_provenance/title/quote",
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a"
+        },
+        {
+          "path": "/people/buaa-jinhao/field_provenance/profile_department_breadcrumb/quote",
+          "sha256": "cd605d62099687d5b765006ba4e2471ec133decfdcb81035b8d840bda6141680"
+        },
+        {
+          "path": "/people/buaa-jinhao/field_provenance/directory_category/quote",
+          "sha256": "7e239e882ebdd8754b3a6619744edf388e52e89fe0301e96c2fb6e3b1b1fca54"
+        },
+        {
+          "path": "/quote",
+          "sha256": "cd17f381a47e3a9aa02589fb2251f8fc50f8b926b4e9552fdaea4f86717ffe28"
+        },
+        {
+          "path": "/quote",
+          "sha256": "eb6602cab517d3ec1c6c15d52794fa73029c1cee7e0445c16dcf724319a78968"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b66faed7d0917e9de62a499078b581b0db3589c0004795404a41a96a38864e21"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ef459c3be3f1ad5ef0ec2c6e162f8455f2c30359e01dbbeee6bfc44b52dd7aaf"
+        },
+        {
+          "path": "/quote",
+          "sha256": "cd17f381a47e3a9aa02589fb2251f8fc50f8b926b4e9552fdaea4f86717ffe28"
+        },
+        {
+          "path": "/quote",
+          "sha256": "cd17f381a47e3a9aa02589fb2251f8fc50f8b926b4e9552fdaea4f86717ffe28"
+        },
+        {
+          "path": "/quote",
+          "sha256": "c31e7ddd9c2620ba01a47c7a6c88b195471ee9fb391529c478680746c51b9ff0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "780d2e615996a52898a82a33cb8135106ad9ed87d15c908d853b94bc3a554b33"
+        },
+        {
+          "path": "/quote",
+          "sha256": "c2377028cf81c0b03cd83b3b15583e9d7e226d26f47b4ebcf654d86c05096cc0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "52ac2401fcf597f0f5bc2fbfbfa07b1f655873c3ee12153795d17d17d083b6fd"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e077989ca2ddc0912281786c3030da78bded8fa4ec866e0c6da5e3d4bf622569"
+        },
+        {
+          "path": "/quote",
+          "sha256": "be24835963f7c5d8c01cc8c5b6d369c3055abb56badc551f2c776a61cac8d0eb"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4f16ccf052045f816be8cbb448f07ca3a6dcd451b0671fb30807528ad8e1f4e9"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/education/0/quote",
+          "sha256": "fbad2f298791b9bba27b265172949db5faab94eb5395f4d49233592f59c981d2"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/education/1/quote",
+          "sha256": "8343ed71866e30ba78cfb7017fe76552a2166071165c0fc26365e57e6bd8b2a3"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/professional_training/0/quote",
+          "sha256": "73e41dfba4af7f1b4bcab55a03d2538cebb535f0f6dcbfcb651b7c5930dee62e"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/appointments/0/quote",
+          "sha256": "a0aefe4896134476d726110131ddbb51afcec6a93d12089676ab87a0183ab362"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/appointments/1/quote",
+          "sha256": "14252f900975827c19fc1d4365adfd43146a29ee9d7714e3e931bbd5aa0a2f59"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/appointments/2/quote",
+          "sha256": "73e41dfba4af7f1b4bcab55a03d2538cebb535f0f6dcbfcb651b7c5930dee62e"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/appointments/3/quote",
+          "sha256": "9d7f6e85ae80ebf4d8fa95b109b4be3a5673d409f1e5b0a4b9c4e499696f8278"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/teaching/0/quote",
+          "sha256": "ecc88b2677202cb06967d2f392c3fe5f1878646869b33ca5ade680783c559fbd"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/teaching/1/quote",
+          "sha256": "ecc88b2677202cb06967d2f392c3fe5f1878646869b33ca5ade680783c559fbd"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/teaching/2/quote",
+          "sha256": "ecc88b2677202cb06967d2f392c3fe5f1878646869b33ca5ade680783c559fbd"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/teaching/3/quote",
+          "sha256": "ecc88b2677202cb06967d2f392c3fe5f1878646869b33ca5ade680783c559fbd"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/teaching/4/quote",
+          "sha256": "ecc88b2677202cb06967d2f392c3fe5f1878646869b33ca5ade680783c559fbd"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/field_provenance/identity/quote",
+          "sha256": "21c4ed3aec7e66a58b77a3e8c7effd8ac99047adcff4b356193dc48005df91f3"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/field_provenance/profile_publication_date/quote",
+          "sha256": "52ee5e260b4e2b5d22d320272afd3f1df0dbb1a11692c3eaf6a4ad6aedc95c70"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/field_provenance/directory_affiliation/quote",
+          "sha256": "5abe87fae0aa62d5b1cfad4bf3c2202441e784cd988e5b94e695285a102a351c"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/field_provenance/directory_person_listing/quote",
+          "sha256": "21c4ed3aec7e66a58b77a3e8c7effd8ac99047adcff4b356193dc48005df91f3"
+        },
+        {
+          "path": "/people/buaa-niuchaohui/research_directions/0/quote",
+          "sha256": "310e5b95b6c465f969c1f2b356f14ff650ea0bf72b3f98f5d423f4872c4e636b"
+        },
+        {
+          "path": "/quote",
+          "sha256": "fbad2f298791b9bba27b265172949db5faab94eb5395f4d49233592f59c981d2"
+        },
+        {
+          "path": "/quote",
+          "sha256": "8343ed71866e30ba78cfb7017fe76552a2166071165c0fc26365e57e6bd8b2a3"
+        },
+        {
+          "path": "/quote",
+          "sha256": "73e41dfba4af7f1b4bcab55a03d2538cebb535f0f6dcbfcb651b7c5930dee62e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "a0aefe4896134476d726110131ddbb51afcec6a93d12089676ab87a0183ab362"
+        },
+        {
+          "path": "/quote",
+          "sha256": "14252f900975827c19fc1d4365adfd43146a29ee9d7714e3e931bbd5aa0a2f59"
+        },
+        {
+          "path": "/quote",
+          "sha256": "73e41dfba4af7f1b4bcab55a03d2538cebb535f0f6dcbfcb651b7c5930dee62e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "9d7f6e85ae80ebf4d8fa95b109b4be3a5673d409f1e5b0a4b9c4e499696f8278"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ecc88b2677202cb06967d2f392c3fe5f1878646869b33ca5ade680783c559fbd"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ecc88b2677202cb06967d2f392c3fe5f1878646869b33ca5ade680783c559fbd"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ecc88b2677202cb06967d2f392c3fe5f1878646869b33ca5ade680783c559fbd"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ecc88b2677202cb06967d2f392c3fe5f1878646869b33ca5ade680783c559fbd"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ecc88b2677202cb06967d2f392c3fe5f1878646869b33ca5ade680783c559fbd"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/education/0/quote",
+          "sha256": "6f9f3121880477b999601d59fcde88868a06e323711fe6a248e66903330acf9b"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/education/1/quote",
+          "sha256": "c3606ee13e2448b6c67fd182267478161978d615b147a2e4a5b82ef4f1daa4aa"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/education/2/quote",
+          "sha256": "ff8faf37a9224f4b01da671485ce648da7dd09844bc0640d56a1140451910f82"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/education/3/quote",
+          "sha256": "aaec23213f0c3ca04e0165599d836d40fdca57e1072d82c44f3a3ad8f52e6441"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/appointments/0/quote",
+          "sha256": "9b01e4ba9bc8b020a2a0abe79fc489f37d84969ca15c91272fa2f979b655ee56"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/appointments/1/quote",
+          "sha256": "00dddc6172d5207fbb45ee2e82b81e4684bb5a65f1c7c55cd028e71e6e376fea"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/teaching/0/quote",
+          "sha256": "ed3f0466ea90e7f2e6b754c648192d20b933f88a318feccb3918f9b586819dfc"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/teaching/1/quote",
+          "sha256": "2193c077857f4031a1d7dbb35814326a8d7285c6acf8bfa589ff9cb7066c9bb3"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/publications/0/quote",
+          "sha256": "8699ff008de1d3bec4cc1433daf7cb126125164fc6df29155a444fbd1d886dec"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/publications/1/quote",
+          "sha256": "f71a1966e7e0a86c9c8b5907c067e617077e3894f621997f682a0da105556faf"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/research_directions/0/quote",
+          "sha256": "04c049359e46be198b17005805e599e9e1ecdb40de1a05f19717dd6d5c8df47c"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/field_provenance/profile_name/quote",
+          "sha256": "4993e37f9e32ae9d02d63d319ed8654fc06b9a002112737a7414ec3ddab12dc0"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/field_provenance/listed_title/quote",
+          "sha256": "9020b9b815983c7587f267956aa7ff1c7230d0f9bd7f0003b2cb7690287c2c67"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/field_provenance/directory_affiliation/quote",
+          "sha256": "12a9d26ecd9abfc9f793b65b6070bb175c8a9e0185570421d32f3f36bb732b56"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/field_provenance/directory_person_listing/quote",
+          "sha256": "4993e37f9e32ae9d02d63d319ed8654fc06b9a002112737a7414ec3ddab12dc0"
+        },
+        {
+          "path": "/people/buaa-wangtianhua/field_provenance/directory_category/quote",
+          "sha256": "265b65cf80b0f2c04670b3c8772e091fdfe3387f44556eba7a7550a137708032"
+        },
+        {
+          "path": "/quote",
+          "sha256": "6f9f3121880477b999601d59fcde88868a06e323711fe6a248e66903330acf9b"
+        },
+        {
+          "path": "/quote",
+          "sha256": "c3606ee13e2448b6c67fd182267478161978d615b147a2e4a5b82ef4f1daa4aa"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ff8faf37a9224f4b01da671485ce648da7dd09844bc0640d56a1140451910f82"
+        },
+        {
+          "path": "/quote",
+          "sha256": "aaec23213f0c3ca04e0165599d836d40fdca57e1072d82c44f3a3ad8f52e6441"
+        },
+        {
+          "path": "/quote",
+          "sha256": "9b01e4ba9bc8b020a2a0abe79fc489f37d84969ca15c91272fa2f979b655ee56"
+        },
+        {
+          "path": "/quote",
+          "sha256": "00dddc6172d5207fbb45ee2e82b81e4684bb5a65f1c7c55cd028e71e6e376fea"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ed3f0466ea90e7f2e6b754c648192d20b933f88a318feccb3918f9b586819dfc"
+        },
+        {
+          "path": "/quote",
+          "sha256": "2193c077857f4031a1d7dbb35814326a8d7285c6acf8bfa589ff9cb7066c9bb3"
+        },
+        {
+          "path": "/quote",
+          "sha256": "8699ff008de1d3bec4cc1433daf7cb126125164fc6df29155a444fbd1d886dec"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f71a1966e7e0a86c9c8b5907c067e617077e3894f621997f682a0da105556faf"
+        },
+        {
+          "path": "/quote",
+          "sha256": "bbb37df5d1b0edd1fb14098dc1ce245cad60f3866b3415dc932245b5eebaa337"
+        },
+        {
+          "path": "/0/quote",
+          "sha256": "12a9d26ecd9abfc9f793b65b6070bb175c8a9e0185570421d32f3f36bb732b56"
+        },
+        {
+          "path": "/quote",
+          "sha256": "12a9d26ecd9abfc9f793b65b6070bb175c8a9e0185570421d32f3f36bb732b56"
+        }
+      ],
+      "counts": {
+        "education": 15,
+        "appointments": 10,
+        "mentors": 2,
+        "publications": 4,
+        "teaching": 13
+      },
+      "historical_source_review_scope": "原pending/source-only是历史资料阶段标签，不等当时工程接入；本映射依据对应原审通过的来源事实及上述证据限制。",
+      "bounded_hold_separation": "仅批准四ID的accepted source及列明audit；未读取held产物或停止旁支，全held URL清单未提供，不声明全集排除。",
+      "degree_classification_revision": {
+        "old_payload_sha256": "4125d6e403bc93aaca71d569e15513d92f5c07ca4d1e9b002f15f254a2aa95e2",
+        "reverse_restores_old_sha256": true,
+        "changes": [
+          {
+            "json_pointer": "/people/2/education/0",
+            "education_event_id": "buaa-niuchaohui-education-1",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "quote": "2007.9——2011.7 中国人民大学  经济学院  国际经济与贸易专业  学士",
+            "quote_sha256": "fbad2f298791b9bba27b265172949db5faab94eb5395f4d49233592f59c981d2",
+            "source_candidate_sha256": "297d3cdcda117055e64e342f0bb4c223b27a7b2f1a35beb224146be92c199a50",
+            "independent_identity": null,
+            "old_object": {
+              "event_id": "buaa-niuchaohui-education-1",
+              "event_kind": "degree_study",
+              "institution": "中国人民大学",
+              "department": "经济学院",
+              "education_stage": "学士",
+              "degree_label_as_source": "学士",
+              "field": "国际经济与贸易",
+              "start": "2007-09",
+              "end": "2011-07",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "buaa-niuchaohui-profile",
+              "source_url": "https://hss.buaa.edu.cn/info/1227/6374.htm",
+              "retained_professional_text": "2007.9——2011.7 中国人民大学  经济学院  国际经济与贸易专业  学士",
+              "source_excerpt_sha256": "fbad2f298791b9bba27b265172949db5faab94eb5395f4d49233592f59c981d2",
+              "source_locator": "教育条目／2007.9——2011.7 中国人民大学  经济学院  国际经济与贸易专业  学士",
+              "note": "原教育阶段及具体称谓、学习区间按源保留，授位尚未单独核实；不由学习结束推授位年月，也不否定所列教育经历。 必要职业摘录已作空白规范化，不是原网页空白原貌。",
+              "education_event_id": "buaa-niuchaohui-education-1",
+              "source_event_kind": "degree_study",
+              "degree": "学士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "仅阶段/学位标签，无明确获授语句；学习止期不推作授位日期。必要职业摘录已按证据记录做空白规范化，不外推法律授位实体。"
+            },
+            "new_object": {
+              "event_id": "buaa-niuchaohui-education-1",
+              "event_kind": "degree",
+              "institution": "中国人民大学",
+              "department": "经济学院",
+              "education_stage": "学士",
+              "degree_label_as_source": "学士",
+              "field": "国际经济与贸易",
+              "start": "2007-09",
+              "end": "2011-07",
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "buaa-niuchaohui-profile",
+              "source_url": "https://hss.buaa.edu.cn/info/1227/6374.htm",
+              "retained_professional_text": "2007.9——2011.7 中国人民大学  经济学院  国际经济与贸易专业  学士",
+              "source_excerpt_sha256": "fbad2f298791b9bba27b265172949db5faab94eb5395f4d49233592f59c981d2",
+              "source_locator": "教育条目／2007.9——2011.7 中国人民大学  经济学院  国际经济与贸易专业  学士",
+              "note": "官网教育条目明确具体“学士”称谓，支持来源报告学士学位；未独立核证书。学习区间不作授位年月，授位年月未知。 必要职业摘录已做空白规范化，不是原网页空白原貌。",
+              "education_event_id": "buaa-niuchaohui-education-1",
+              "source_event_kind": "degree_study",
+              "degree": "学士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_note": "仅阶段/学位标签，无明确获授语句；学习止期不推作授位日期。必要职业摘录已按证据记录做空白规范化，不外推法律授位实体。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "degree_study",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "previous_canonical_note": "原教育阶段及具体称谓、学习区间按源保留，授位尚未单独核实；不由学习结束推授位年月，也不否定所列教育经历。 必要职业摘录已作空白规范化，不是原网页空白原貌。"
+            }
+          },
+          {
+            "json_pointer": "/people/3/education/0",
+            "education_event_id": "buaa-wangtianhua-education-1",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "quote": "1987.09-1991.06 北京大学文学学士",
+            "quote_sha256": "6f9f3121880477b999601d59fcde88868a06e323711fe6a248e66903330acf9b",
+            "source_candidate_sha256": "7700abfcb3c4a35037afaee9513072281d51894a91f1744ad25723b2a326112f",
+            "independent_identity": null,
+            "old_object": {
+              "event_id": "buaa-wangtianhua-education-1",
+              "event_kind": "education_label_award_unknown",
+              "department": null,
+              "education_stage": "本科",
+              "degree_label_as_source": "文学学士",
+              "field": null,
+              "start": "1987-09",
+              "end": "1991-06",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "institution": "北京大学",
+              "note": "原教育阶段及具体称谓、学习区间按源保留，授位尚未单独核实；不由学习结束推授位年月，也不否定所列教育经历。",
+              "source_id": "buaa-wangtianhua-profile",
+              "source_url": "https://fxy.buaa.edu.cn/info/1006/8801.htm",
+              "retained_professional_text": "1987.09-1991.06 北京大学文学学士",
+              "source_excerpt_sha256": "6f9f3121880477b999601d59fcde88868a06e323711fe6a248e66903330acf9b",
+              "source_locator": "教育条目／1987.09-1991.06 北京大学文学学士",
+              "degree_discipline_label_as_source": "文学",
+              "education_event_id": "buaa-wangtianhua-education-1",
+              "source_event_kind": "education_label_award_unknown",
+              "degree": "文学学士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "教育经历为学位标签与学习区间，未明示获得/授予，不推定授位事实或以学习结束作授位时间。 文学/法学/经济学只作学位类别，不据此补具体所学专业。"
+            },
+            "new_object": {
+              "event_id": "buaa-wangtianhua-education-1",
+              "event_kind": "degree",
+              "department": null,
+              "education_stage": "本科",
+              "degree_label_as_source": "文学学士",
+              "field": null,
+              "start": "1987-09",
+              "end": "1991-06",
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "institution": "北京大学",
+              "note": "官网教育条目明确具体“文学学士”称谓，支持来源报告学士学位；未独立核证书。学习区间不作授位年月，授位年月未知。",
+              "source_id": "buaa-wangtianhua-profile",
+              "source_url": "https://fxy.buaa.edu.cn/info/1006/8801.htm",
+              "retained_professional_text": "1987.09-1991.06 北京大学文学学士",
+              "source_excerpt_sha256": "6f9f3121880477b999601d59fcde88868a06e323711fe6a248e66903330acf9b",
+              "source_locator": "教育条目／1987.09-1991.06 北京大学文学学士",
+              "degree_discipline_label_as_source": "文学",
+              "education_event_id": "buaa-wangtianhua-education-1",
+              "source_event_kind": "education_label_award_unknown",
+              "degree": "文学学士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_note": "教育经历为学位标签与学习区间，未明示获得/授予，不推定授位事实或以学习结束作授位时间。 文学/法学/经济学只作学位类别，不据此补具体所学专业。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "previous_canonical_note": "原教育阶段及具体称谓、学习区间按源保留，授位尚未单独核实；不由学习结束推授位年月，也不否定所列教育经历。"
+            }
+          },
+          {
+            "json_pointer": "/people/3/education/3",
+            "education_event_id": "buaa-wangtianhua-education-4",
+            "old_degree_awarded": null,
+            "new_degree_awarded": true,
+            "quote": "1999.04-2004.03 东京大学法学博士",
+            "quote_sha256": "aaec23213f0c3ca04e0165599d836d40fdca57e1072d82c44f3a3ad8f52e6441",
+            "source_candidate_sha256": "7700abfcb3c4a35037afaee9513072281d51894a91f1744ad25723b2a326112f",
+            "independent_identity": "法学博士、教授、博士生导师",
+            "old_object": {
+              "event_id": "buaa-wangtianhua-education-4",
+              "event_kind": "education_label_award_unknown",
+              "department": null,
+              "education_stage": "博士",
+              "degree_label_as_source": "法学博士",
+              "field": null,
+              "start": "1999-04",
+              "end": "2004-03",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "institution": "东京大学",
+              "note": "原教育阶段及具体称谓、学习区间按源保留，授位尚未单独核实；不由学习结束推授位年月，也不否定所列教育经历。",
+              "source_id": "buaa-wangtianhua-profile",
+              "source_url": "https://fxy.buaa.edu.cn/info/1006/8801.htm",
+              "retained_professional_text": "1999.04-2004.03 东京大学法学博士",
+              "source_excerpt_sha256": "aaec23213f0c3ca04e0165599d836d40fdca57e1072d82c44f3a3ad8f52e6441",
+              "source_locator": "教育条目／1999.04-2004.03 东京大学法学博士",
+              "degree_discipline_label_as_source": "法学",
+              "education_event_id": "buaa-wangtianhua-education-4",
+              "source_event_kind": "education_label_award_unknown",
+              "degree": "法学博士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "教育经历为学位标签与学习区间，未明示获得/授予，不推定授位事实或以学习结束作授位时间。 文学/法学/经济学只作学位类别，不据此补具体所学专业。"
+            },
+            "new_object": {
+              "event_id": "buaa-wangtianhua-education-4",
+              "event_kind": "degree",
+              "department": null,
+              "education_stage": "博士",
+              "degree_label_as_source": "法学博士",
+              "field": null,
+              "start": "1999-04",
+              "end": "2004-03",
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "institution": "东京大学",
+              "note": "本人官方页独立身份明确“法学博士、教授、博士生导师”，与东京大学唯一博士教育条目相合，支持来源报告博士学位；未独立核证书。学习区间不作授位年月，授位年月未知。",
+              "source_id": "buaa-wangtianhua-profile",
+              "source_url": "https://fxy.buaa.edu.cn/info/1006/8801.htm",
+              "retained_professional_text": "1999.04-2004.03 东京大学法学博士",
+              "source_excerpt_sha256": "aaec23213f0c3ca04e0165599d836d40fdca57e1072d82c44f3a3ad8f52e6441",
+              "source_locator": "教育条目／1999.04-2004.03 东京大学法学博士",
+              "degree_discipline_label_as_source": "法学",
+              "education_event_id": "buaa-wangtianhua-education-4",
+              "source_event_kind": "education_label_award_unknown",
+              "degree": "法学博士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_note": "教育经历为学位标签与学习区间，未明示获得/授予，不推定授位事实或以学习结束作授位时间。 文学/法学/经济学只作学位类别，不据此补具体所学专业。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "previous_canonical_note": "原教育阶段及具体称谓、学习区间按源保留，授位尚未单独核实；不由学习结束推授位年月，也不否定所列教育经历。",
+              "independent_degree_identity_evidence": {
+                "source_id": "buaa-wangtianhua-profile",
+                "source_url": "https://fxy.buaa.edu.cn/info/1006/8801.htm",
+                "retained_professional_text": "法学博士、教授、博士生导师",
+                "source_excerpt_sha256": "9020b9b815983c7587f267956aa7ff1c7230d0f9bd7f0003b2cb7690287c2c67",
+                "source_locator": "官网职业资料／法学博士、教授、博士生导师"
+              }
+            }
+          }
+        ],
+        "scope": "仅牛学士、王文学学士及有独立博士身份对应博士3项；其余7 null不变。授位年月全未知，非证书核验。"
+      },
+      "visible_bibliography_revision": {
+        "old_payload_sha256": "a0ecdcd454bcc424b44d4c6b17f9498a3151e5d3e20918426c4222bb8c7208f0",
+        "reverse_restores_old_sha256": true,
+        "changes": [
+          {
+            "json_pointer": "/people/1/publications/0/note",
+            "old_value": "书目只列with合作者短语，不用页面人名补全作者表、拼写或顺序；年份和题名逐字取自此条官网原文。 with仅合作者片段，不是完整作者表或作者排序。 原刊、出版元数据和全文未核。",
+            "new_value": "书目只列with合作者短语，不用页面人名补全作者表、拼写或顺序；年份和题名逐字取自此条官网原文。 with仅合作者片段，不是完整作者表或作者排序。 原刊、出版元数据和全文未核。 原书目合作信息：with Chen Xiong；Volume 111，March 2021，102302（原条目编号，未另核页码/文章号类型）。",
+            "alias_added": "previous_canonical_note"
+          },
+          {
+            "json_pointer": "/people/1/publications/1/note",
+            "old_value": "书目只列with合作者短语，不用页面人名补全作者表、拼写或顺序；年份和题名逐字取自此条官网原文。 with仅合作者片段，不是完整作者表或作者排序。 原刊、出版元数据和全文未核。",
+            "new_value": "书目只列with合作者短语，不用页面人名补全作者表、拼写或顺序；年份和题名逐字取自此条官网原文。 with仅合作者片段，不是完整作者表或作者排序。 原刊、出版元数据和全文未核。 原书目合作信息：with Hewei Shen；Volume 35，January 2020，Pages 54-73。",
+            "alias_added": "previous_canonical_note"
+          }
+        ]
+      }
+    },
+    {
+      "baseline_people": 802,
+      "people": [
+        {
+          "person_id": "buaa-wuruilin",
+          "source_candidate_sha256": "0cab645a8121613415002cfc19f990f15874db77805e680110061606e5583d67",
+          "source_evidence_sha256": "a8bc05361ce868faf09f8dfd25e222c76a6f4e5521512eee5fc7e5aa7d7f8814",
+          "source_review_sha256": "4bb26519ab769d5f226359ca19e66f0b669fb68b147a999abdb793758a7dc7c5",
+          "source_organization_id": "buaa-hss",
+          "canonical_organization_id": "buaa-hss-public-administration",
+          "organization_identity_basis": "吴原人文社会科学学院与组2同校同hss官网学院身份对应，公共管理学院括号标签不回填原person；周同中文经济管理学院及teacher/mba官方归属，岳同法学院fxy官网本人句，复用节点不改原组织事实。",
+          "education": 4,
+          "degree_true_false_null": [
+            3,
+            1,
+            0
+          ],
+          "appointments": 1,
+          "publications": 2,
+          "teaching": 2
+        },
+        {
+          "person_id": "buaa-chenyan-sportstraining",
+          "source_candidate_sha256": "28385215b22ab12770915333aa68e57e3a8a1c1ac8d5cfce3e37b20aec7d64bb",
+          "source_evidence_sha256": "fa2e23ba911e7a78d93b5e6dcd13908389adcb578ab05ad26ea57db287fac209",
+          "source_review_sha256": "2551d27d48aa5bd2841de0da37544579fd5ad70058bd00a3dc20b4c24aac9409",
+          "source_organization_id": "buaa-sports-department",
+          "canonical_organization_id": "buaa-sports-department",
+          "organization_identity_basis": "吴原人文社会科学学院与组2同校同hss官网学院身份对应，公共管理学院括号标签不回填原person；周同中文经济管理学院及teacher/mba官方归属，岳同法学院fxy官网本人句，复用节点不改原组织事实。",
+          "education": 3,
+          "degree_true_false_null": [
+            0,
+            0,
+            3
+          ],
+          "appointments": 2,
+          "publications": 2,
+          "teaching": 8
+        },
+        {
+          "person_id": "buaa-zhouronggang-engineeringpsychology",
+          "source_candidate_sha256": "28385215b22ab12770915333aa68e57e3a8a1c1ac8d5cfce3e37b20aec7d64bb",
+          "source_evidence_sha256": "fa2e23ba911e7a78d93b5e6dcd13908389adcb578ab05ad26ea57db287fac209",
+          "source_review_sha256": "2551d27d48aa5bd2841de0da37544579fd5ad70058bd00a3dc20b4c24aac9409",
+          "source_organization_id": "buaa-economics-management",
+          "canonical_organization_id": "buaa-sem",
+          "organization_identity_basis": "吴原人文社会科学学院与组2同校同hss官网学院身份对应，公共管理学院括号标签不回填原person；周同中文经济管理学院及teacher/mba官方归属，岳同法学院fxy官网本人句，复用节点不改原组织事实。",
+          "education": 3,
+          "degree_true_false_null": [
+            2,
+            1,
+            0
+          ],
+          "appointments": 4,
+          "publications": 2,
+          "teaching": 5
+        },
+        {
+          "person_id": "buaa-yuehanwei",
+          "source_candidate_sha256": "8abcdede4f1e53344c75b3b328c7590ede004e37eb0d245aadef2b58fd2d9eb3",
+          "source_evidence_sha256": "d2ebf28663fe31f3e5576922bf318b04f35b0e25c71ba425d44a4af052b1c8fd",
+          "source_review_sha256": "d877b9e66dcc371903068689df653b8cf40e9d3f11cf001df65ce3cc69213234",
+          "source_organization_id": "buaa-law",
+          "canonical_organization_id": "buaa-law",
+          "organization_identity_basis": "吴原人文社会科学学院与组2同校同hss官网学院身份对应，公共管理学院括号标签不回填原person；周同中文经济管理学院及teacher/mba官方归属，岳同法学院fxy官网本人句，复用节点不改原组织事实。",
+          "education": 3,
+          "degree_true_false_null": [
+            2,
+            1,
+            0
+          ],
+          "appointments": 2,
+          "publications": 2,
+          "teaching": 0
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "sha256": "e823e8ccea63b8dbe4e8cc55defb60e4dada19ad779b9ecd13bff071acf2795a",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "a98575711db2c347308e7114c2e0e0956e1a6389791d8ee3ba2443d40b781cc1",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "f6f6176c71554f0e1caccc7d2bded897d8b9b62d38b66138eb2f249947daee7e",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "143191f063e68808fdd69fbd73f152bebc5d3012e2a3dc72309d58d4bdcf53f9",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "8fb266d3b0849f3ed1dd563c7b8413a26a2bef4d6063ca8e2d6e1e5f42108252",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "7c17f693175c69e788bd243da57532fc2a7f7b127d04761801f010c5e3cbcf4b",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "7c17f693175c69e788bd243da57532fc2a7f7b127d04761801f010c5e3cbcf4b",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "7c17f693175c69e788bd243da57532fc2a7f7b127d04761801f010c5e3cbcf4b",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "7c17f693175c69e788bd243da57532fc2a7f7b127d04761801f010c5e3cbcf4b",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "58fd2a8f3703d7f0e34c91b261bacd897e2ee7fa89a2cc9584611249e20d43f8",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "2477f91a0df3d8adc108eb69758dd75aed7eab91ee0be8a6d66e97318b0e897d",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "8472ccf989044ca3810b0b8b2a976effd2f52e27047b0ff6caff37f86a2e9a02",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "d747d63000d5e327c5103243bf22f9f46d74178df35d96a3bb640c70e7d65c30",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "de7fb65e171255ac59b264a109615d5aa920453548447201309f94b9e412e711",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "8fb266d3b0849f3ed1dd563c7b8413a26a2bef4d6063ca8e2d6e1e5f42108252",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "de7fb65e171255ac59b264a109615d5aa920453548447201309f94b9e412e711",
+          "source_id": "buaa-wuruilin-directory-profile"
+        },
+        {
+          "sha256": "de7fb65e171255ac59b264a109615d5aa920453548447201309f94b9e412e711",
+          "source_id": "buaa-hss-directory"
+        },
+        {
+          "sha256": "e823e8ccea63b8dbe4e8cc55defb60e4dada19ad779b9ecd13bff071acf2795a",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "a98575711db2c347308e7114c2e0e0956e1a6389791d8ee3ba2443d40b781cc1",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "f6f6176c71554f0e1caccc7d2bded897d8b9b62d38b66138eb2f249947daee7e",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "143191f063e68808fdd69fbd73f152bebc5d3012e2a3dc72309d58d4bdcf53f9",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "8fb266d3b0849f3ed1dd563c7b8413a26a2bef4d6063ca8e2d6e1e5f42108252",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "58fd2a8f3703d7f0e34c91b261bacd897e2ee7fa89a2cc9584611249e20d43f8",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "2477f91a0df3d8adc108eb69758dd75aed7eab91ee0be8a6d66e97318b0e897d",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "8472ccf989044ca3810b0b8b2a976effd2f52e27047b0ff6caff37f86a2e9a02",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "d747d63000d5e327c5103243bf22f9f46d74178df35d96a3bb640c70e7d65c30",
+          "source_id": "buaa-wuruilin-profile"
+        },
+        {
+          "sha256": "de7fb65e171255ac59b264a109615d5aa920453548447201309f94b9e412e711",
+          "source_id": null
+        },
+        {
+          "sha256": "d11a13648c409450b0e9029fa74baaa1fccebff536bb85b41bfab8fbe8d7b9bf",
+          "source_id": null
+        },
+        {
+          "sha256": "8fb266d3b0849f3ed1dd563c7b8413a26a2bef4d6063ca8e2d6e1e5f42108252",
+          "source_id": null
+        },
+        {
+          "sha256": "7c17f693175c69e788bd243da57532fc2a7f7b127d04761801f010c5e3cbcf4b",
+          "source_id": null
+        },
+        {
+          "sha256": "f6f6176c71554f0e1caccc7d2bded897d8b9b62d38b66138eb2f249947daee7e",
+          "source_id": null
+        },
+        {
+          "sha256": "a98575711db2c347308e7114c2e0e0956e1a6389791d8ee3ba2443d40b781cc1",
+          "source_id": null
+        },
+        {
+          "sha256": "e823e8ccea63b8dbe4e8cc55defb60e4dada19ad779b9ecd13bff071acf2795a",
+          "source_id": null
+        },
+        {
+          "sha256": "143191f063e68808fdd69fbd73f152bebc5d3012e2a3dc72309d58d4bdcf53f9",
+          "source_id": null
+        },
+        {
+          "sha256": "8472ccf989044ca3810b0b8b2a976effd2f52e27047b0ff6caff37f86a2e9a02",
+          "source_id": null
+        },
+        {
+          "sha256": "d747d63000d5e327c5103243bf22f9f46d74178df35d96a3bb640c70e7d65c30",
+          "source_id": null
+        },
+        {
+          "sha256": "58fd2a8f3703d7f0e34c91b261bacd897e2ee7fa89a2cc9584611249e20d43f8",
+          "source_id": null
+        },
+        {
+          "sha256": "2477f91a0df3d8adc108eb69758dd75aed7eab91ee0be8a6d66e97318b0e897d",
+          "source_id": null
+        },
+        {
+          "sha256": "e67eeab2bc6d7216af85da602bf7806dd0c96384d5b333d4d5a3630bdb53f2ed",
+          "source_id": null
+        },
+        {
+          "sha256": "de7fb65e171255ac59b264a109615d5aa920453548447201309f94b9e412e711",
+          "source_id": null
+        },
+        {
+          "sha256": "de7fb65e171255ac59b264a109615d5aa920453548447201309f94b9e412e711",
+          "source_id": null
+        },
+        {
+          "sha256": "d11a13648c409450b0e9029fa74baaa1fccebff536bb85b41bfab8fbe8d7b9bf",
+          "source_id": null
+        },
+        {
+          "sha256": "8fb266d3b0849f3ed1dd563c7b8413a26a2bef4d6063ca8e2d6e1e5f42108252",
+          "source_id": null
+        },
+        {
+          "sha256": "6db69dd2392817b61bed28c25d0fda12afdbdd4e36276873490543969c56b54d",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "dd9cef1699e7ba80508e71c9e0c72524309424c21ce627e7584c96fd2814c3b1",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "ceb5720d63a23d097ef93306969f8eaebb3fcfdb7bb20a734df8957848802fcb",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "b57ea9cae8f02659391dc76e764c87bf0137951e62ae2324c8c7e169a4171d4c",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "80b267b1952dd1f6043894d8d8b5beb1cdb712de659dcca9b6d4b052fec6687b",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d18213ac841d1cc5c49f3caf094a216a9a0ed0b1fec587c05c2cfb58980b4157",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "7de857ccadec859081b2f34002ccd48ecfe08ced82a585baf3a967cdbbcc441c",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "f81fefc2e261bbe871086a54698ca1c7421196bb43b87d76427491860122c40c",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "f81fefc2e261bbe871086a54698ca1c7421196bb43b87d76427491860122c40c",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "0d870d8c6b9a7912034a9683037ec67f929489dacacc23510161d5cd66758a5b",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "826a078915483ab0c3b186d0a9dfeb0ca300e51032138a86e15bd78513cea1e5",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "80b267b1952dd1f6043894d8d8b5beb1cdb712de659dcca9b6d4b052fec6687b",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "1e9fff0fa2c1f949ed3a69ede0f560fb5b7e170f8e6209eb24a35068f1fb2f3b",
+          "source_id": "buaa-sports-home-directory"
+        },
+        {
+          "sha256": "29dda41cfa5198651e99919618789b014512e6925ab58f42af486434d78f419e",
+          "source_id": "buaa-sports-home-directory"
+        },
+        {
+          "sha256": "6db69dd2392817b61bed28c25d0fda12afdbdd4e36276873490543969c56b54d",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "dd9cef1699e7ba80508e71c9e0c72524309424c21ce627e7584c96fd2814c3b1",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "ceb5720d63a23d097ef93306969f8eaebb3fcfdb7bb20a734df8957848802fcb",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "b57ea9cae8f02659391dc76e764c87bf0137951e62ae2324c8c7e169a4171d4c",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "80b267b1952dd1f6043894d8d8b5beb1cdb712de659dcca9b6d4b052fec6687b",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d18213ac841d1cc5c49f3caf094a216a9a0ed0b1fec587c05c2cfb58980b4157",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "7de857ccadec859081b2f34002ccd48ecfe08ced82a585baf3a967cdbbcc441c",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "f81fefc2e261bbe871086a54698ca1c7421196bb43b87d76427491860122c40c",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "f81fefc2e261bbe871086a54698ca1c7421196bb43b87d76427491860122c40c",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": "buaa-chenyan-sports-profile"
+        },
+        {
+          "sha256": "0d870d8c6b9a7912034a9683037ec67f929489dacacc23510161d5cd66758a5b",
+          "source_id": null
+        },
+        {
+          "sha256": "826a078915483ab0c3b186d0a9dfeb0ca300e51032138a86e15bd78513cea1e5",
+          "source_id": null
+        },
+        {
+          "sha256": "80b267b1952dd1f6043894d8d8b5beb1cdb712de659dcca9b6d4b052fec6687b",
+          "source_id": null
+        },
+        {
+          "sha256": "6db69dd2392817b61bed28c25d0fda12afdbdd4e36276873490543969c56b54d",
+          "source_id": null
+        },
+        {
+          "sha256": "dd9cef1699e7ba80508e71c9e0c72524309424c21ce627e7584c96fd2814c3b1",
+          "source_id": null
+        },
+        {
+          "sha256": "ceb5720d63a23d097ef93306969f8eaebb3fcfdb7bb20a734df8957848802fcb",
+          "source_id": null
+        },
+        {
+          "sha256": "b57ea9cae8f02659391dc76e764c87bf0137951e62ae2324c8c7e169a4171d4c",
+          "source_id": null
+        },
+        {
+          "sha256": "80b267b1952dd1f6043894d8d8b5beb1cdb712de659dcca9b6d4b052fec6687b",
+          "source_id": null
+        },
+        {
+          "sha256": "f81fefc2e261bbe871086a54698ca1c7421196bb43b87d76427491860122c40c",
+          "source_id": null
+        },
+        {
+          "sha256": "d5f96b2c2d6272276230ecb3f564e832265d9d696299ee30d22429b0e70e6464",
+          "source_id": null
+        },
+        {
+          "sha256": "d18213ac841d1cc5c49f3caf094a216a9a0ed0b1fec587c05c2cfb58980b4157",
+          "source_id": null
+        },
+        {
+          "sha256": "7de857ccadec859081b2f34002ccd48ecfe08ced82a585baf3a967cdbbcc441c",
+          "source_id": null
+        },
+        {
+          "sha256": "1e9fff0fa2c1f949ed3a69ede0f560fb5b7e170f8e6209eb24a35068f1fb2f3b",
+          "source_id": null
+        },
+        {
+          "sha256": "29dda41cfa5198651e99919618789b014512e6925ab58f42af486434d78f419e",
+          "source_id": null
+        },
+        {
+          "sha256": "29dda41cfa5198651e99919618789b014512e6925ab58f42af486434d78f419e",
+          "source_id": "buaa-sports-home-directory"
+        },
+        {
+          "sha256": "b6d4dfd2e3e1293f6ef6d224b8a7ddf19c12fd7de5fc31f0a830c61265420953",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "d1e398df634851d16b0b042ed6275cda708598584a6e3f243000f665b32c2ba2",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "2cb4032a1d238acc8f685abcac9decc4e78e7179c45003c5085c0c4a5c98a156",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "dca6418942576ca208ee39cad49395f540313e12864a254c61bad3360701a6bc",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "8c74359abfc40fdf946e7f0a2f1294530c73b28137a73650d6d4133e15a7f942",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "56d5cf94d2437e11c4bb18aeaa9d8f0e8018946cc669cfa517a0f373a2c66c63",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "4e7d1fecdb0f44e2fa26bfd746c60f0fee6390fe885f39b0afa12bf3532a30db",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "74adbe1672ba3be5cf6a52dbfbcd1bcb496c9061e121aa3f1dd40cc70ab56b50",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "74adbe1672ba3be5cf6a52dbfbcd1bcb496c9061e121aa3f1dd40cc70ab56b50",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "74adbe1672ba3be5cf6a52dbfbcd1bcb496c9061e121aa3f1dd40cc70ab56b50",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "74adbe1672ba3be5cf6a52dbfbcd1bcb496c9061e121aa3f1dd40cc70ab56b50",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "db48e07454c10d81cc8e4321d2ce41efeb2a592a92e8129e965d81acc222b2aa",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "02c48eb267c2660b900124712d81f7a08487eb9d9dbd572aac4a178231e2776c",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "2e6751aabf808e0b12d077713ddd02672fd6b4d92dc79823e6ed98495407a07a",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "2e6751aabf808e0b12d077713ddd02672fd6b4d92dc79823e6ed98495407a07a",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "2e6751aabf808e0b12d077713ddd02672fd6b4d92dc79823e6ed98495407a07a",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "408bc704ea48a958b5dfb11ad41cb1a555a9bfc79cdcb4650d80ddd8b4e8e7d0",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "408bc704ea48a958b5dfb11ad41cb1a555a9bfc79cdcb4650d80ddd8b4e8e7d0",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "2d1772fbbd2b67decb9eb0094e71ca977cca3fba596a761412e021c56dd87c37",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "c1045f85ba66abd65fa09a9a5533655d34901744b2d45d81b0a04b76a384c121",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "f97ce0d8e66a28c20d3519b07d6e140a47cb817f7484c1f5e62647450a401c20",
+          "source_id": "buaa-mba-operations-directory"
+        },
+        {
+          "sha256": "2afd8fbdd96deeabcad9ab49843174c4d41b84bc7884a97c39f003fa95678d15",
+          "source_id": "buaa-mba-operations-directory"
+        },
+        {
+          "sha256": "b6d4dfd2e3e1293f6ef6d224b8a7ddf19c12fd7de5fc31f0a830c61265420953",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "d1e398df634851d16b0b042ed6275cda708598584a6e3f243000f665b32c2ba2",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "2cb4032a1d238acc8f685abcac9decc4e78e7179c45003c5085c0c4a5c98a156",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "dca6418942576ca208ee39cad49395f540313e12864a254c61bad3360701a6bc",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "8c74359abfc40fdf946e7f0a2f1294530c73b28137a73650d6d4133e15a7f942",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "56d5cf94d2437e11c4bb18aeaa9d8f0e8018946cc669cfa517a0f373a2c66c63",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "4e7d1fecdb0f44e2fa26bfd746c60f0fee6390fe885f39b0afa12bf3532a30db",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "db48e07454c10d81cc8e4321d2ce41efeb2a592a92e8129e965d81acc222b2aa",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "02c48eb267c2660b900124712d81f7a08487eb9d9dbd572aac4a178231e2776c",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "2e6751aabf808e0b12d077713ddd02672fd6b4d92dc79823e6ed98495407a07a",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "2e6751aabf808e0b12d077713ddd02672fd6b4d92dc79823e6ed98495407a07a",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "2e6751aabf808e0b12d077713ddd02672fd6b4d92dc79823e6ed98495407a07a",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "408bc704ea48a958b5dfb11ad41cb1a555a9bfc79cdcb4650d80ddd8b4e8e7d0",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "408bc704ea48a958b5dfb11ad41cb1a555a9bfc79cdcb4650d80ddd8b4e8e7d0",
+          "source_id": "buaa-zhouronggang-profile"
+        },
+        {
+          "sha256": "2d1772fbbd2b67decb9eb0094e71ca977cca3fba596a761412e021c56dd87c37",
+          "source_id": null
+        },
+        {
+          "sha256": "c1045f85ba66abd65fa09a9a5533655d34901744b2d45d81b0a04b76a384c121",
+          "source_id": null
+        },
+        {
+          "sha256": "b6d4dfd2e3e1293f6ef6d224b8a7ddf19c12fd7de5fc31f0a830c61265420953",
+          "source_id": null
+        },
+        {
+          "sha256": "d1e398df634851d16b0b042ed6275cda708598584a6e3f243000f665b32c2ba2",
+          "source_id": null
+        },
+        {
+          "sha256": "2cb4032a1d238acc8f685abcac9decc4e78e7179c45003c5085c0c4a5c98a156",
+          "source_id": null
+        },
+        {
+          "sha256": "dca6418942576ca208ee39cad49395f540313e12864a254c61bad3360701a6bc",
+          "source_id": null
+        },
+        {
+          "sha256": "8c74359abfc40fdf946e7f0a2f1294530c73b28137a73650d6d4133e15a7f942",
+          "source_id": null
+        },
+        {
+          "sha256": "56d5cf94d2437e11c4bb18aeaa9d8f0e8018946cc669cfa517a0f373a2c66c63",
+          "source_id": null
+        },
+        {
+          "sha256": "4e7d1fecdb0f44e2fa26bfd746c60f0fee6390fe885f39b0afa12bf3532a30db",
+          "source_id": null
+        },
+        {
+          "sha256": "74adbe1672ba3be5cf6a52dbfbcd1bcb496c9061e121aa3f1dd40cc70ab56b50",
+          "source_id": null
+        },
+        {
+          "sha256": "2e6751aabf808e0b12d077713ddd02672fd6b4d92dc79823e6ed98495407a07a",
+          "source_id": null
+        },
+        {
+          "sha256": "408bc704ea48a958b5dfb11ad41cb1a555a9bfc79cdcb4650d80ddd8b4e8e7d0",
+          "source_id": null
+        },
+        {
+          "sha256": "db48e07454c10d81cc8e4321d2ce41efeb2a592a92e8129e965d81acc222b2aa",
+          "source_id": null
+        },
+        {
+          "sha256": "02c48eb267c2660b900124712d81f7a08487eb9d9dbd572aac4a178231e2776c",
+          "source_id": null
+        },
+        {
+          "sha256": "f97ce0d8e66a28c20d3519b07d6e140a47cb817f7484c1f5e62647450a401c20",
+          "source_id": null
+        },
+        {
+          "sha256": "2afd8fbdd96deeabcad9ab49843174c4d41b84bc7884a97c39f003fa95678d15",
+          "source_id": null
+        },
+        {
+          "sha256": "154f259eb0eedb541ffddf1d444f50bdb2dea58bf656db96f7f30dddecffe253",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "f971f072480dc53b96662e886ae57b4563118139852f50a8d084e50a0cc1827a",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "20e0161b0f6a6563930048dbef508295f26a7f96b347ca82988e1450a4e8753d",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "3cbffd671e9c5b7c86f0a0d3cb7c29b25c20f091b4327e1a6573d2a7ffed9fac",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "3cbffd671e9c5b7c86f0a0d3cb7c29b25c20f091b4327e1a6573d2a7ffed9fac",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "b061a35d32c6cdddda5b8b9b55fdcc5fc4bb0434c68389c00f9bf0596470fd7e",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "0f64d86c6dcc3d231ae750600c12f100d2dfebbb27c41d8c1d27072412764118",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "c5797d29a2b3f5ad430369670bfa6f7b62f731c3691f0c42f1c1aea8aacfde3c",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "8a6f53af64e65ce925122f050ccadfb363e0a3c0898fecb47aeab7f370baf0ec",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "113f81b7dcdbbe8d8e14e5164d0bc214c6c9f3f32a61f9bb93f6980672576a51",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "43878a3e0c3274d51c2f07170b8ff83ee5eca604554272f08e0018be522cf8ee",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "8a6f53af64e65ce925122f050ccadfb363e0a3c0898fecb47aeab7f370baf0ec",
+          "source_id": "buaa-law-retired-directory"
+        },
+        {
+          "sha256": "811335bc6755731fae8f9b8a4cc79861226f7c958892e3ce74ea63586fd11f7c",
+          "source_id": "buaa-law-retired-directory"
+        },
+        {
+          "sha256": "8a6f53af64e65ce925122f050ccadfb363e0a3c0898fecb47aeab7f370baf0ec",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "113f81b7dcdbbe8d8e14e5164d0bc214c6c9f3f32a61f9bb93f6980672576a51",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "8a6f53af64e65ce925122f050ccadfb363e0a3c0898fecb47aeab7f370baf0ec",
+          "source_id": "buaa-law-retired-directory"
+        },
+        {
+          "sha256": "811335bc6755731fae8f9b8a4cc79861226f7c958892e3ce74ea63586fd11f7c",
+          "source_id": "buaa-law-retired-directory"
+        },
+        {
+          "sha256": "3cbffd671e9c5b7c86f0a0d3cb7c29b25c20f091b4327e1a6573d2a7ffed9fac",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "43878a3e0c3274d51c2f07170b8ff83ee5eca604554272f08e0018be522cf8ee",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "3cbffd671e9c5b7c86f0a0d3cb7c29b25c20f091b4327e1a6573d2a7ffed9fac",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "3cbffd671e9c5b7c86f0a0d3cb7c29b25c20f091b4327e1a6573d2a7ffed9fac",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "154f259eb0eedb541ffddf1d444f50bdb2dea58bf656db96f7f30dddecffe253",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "f971f072480dc53b96662e886ae57b4563118139852f50a8d084e50a0cc1827a",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "20e0161b0f6a6563930048dbef508295f26a7f96b347ca82988e1450a4e8753d",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "3cbffd671e9c5b7c86f0a0d3cb7c29b25c20f091b4327e1a6573d2a7ffed9fac",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "3cbffd671e9c5b7c86f0a0d3cb7c29b25c20f091b4327e1a6573d2a7ffed9fac",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "0f64d86c6dcc3d231ae750600c12f100d2dfebbb27c41d8c1d27072412764118",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "c5797d29a2b3f5ad430369670bfa6f7b62f731c3691f0c42f1c1aea8aacfde3c",
+          "source_id": "buaa-yuehanwei-profile"
+        },
+        {
+          "sha256": "8a6f53af64e65ce925122f050ccadfb363e0a3c0898fecb47aeab7f370baf0ec",
+          "source_id": null
+        },
+        {
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a",
+          "source_id": null
+        },
+        {
+          "sha256": "113f81b7dcdbbe8d8e14e5164d0bc214c6c9f3f32a61f9bb93f6980672576a51",
+          "source_id": null
+        },
+        {
+          "sha256": "43878a3e0c3274d51c2f07170b8ff83ee5eca604554272f08e0018be522cf8ee",
+          "source_id": null
+        },
+        {
+          "sha256": "f971f072480dc53b96662e886ae57b4563118139852f50a8d084e50a0cc1827a",
+          "source_id": null
+        },
+        {
+          "sha256": "154f259eb0eedb541ffddf1d444f50bdb2dea58bf656db96f7f30dddecffe253",
+          "source_id": null
+        },
+        {
+          "sha256": "20e0161b0f6a6563930048dbef508295f26a7f96b347ca82988e1450a4e8753d",
+          "source_id": null
+        },
+        {
+          "sha256": "3cbffd671e9c5b7c86f0a0d3cb7c29b25c20f091b4327e1a6573d2a7ffed9fac",
+          "source_id": null
+        },
+        {
+          "sha256": "b061a35d32c6cdddda5b8b9b55fdcc5fc4bb0434c68389c00f9bf0596470fd7e",
+          "source_id": null
+        },
+        {
+          "sha256": "0f64d86c6dcc3d231ae750600c12f100d2dfebbb27c41d8c1d27072412764118",
+          "source_id": null
+        },
+        {
+          "sha256": "c5797d29a2b3f5ad430369670bfa6f7b62f731c3691f0c42f1c1aea8aacfde3c",
+          "source_id": null
+        },
+        {
+          "sha256": "811335bc6755731fae8f9b8a4cc79861226f7c958892e3ce74ea63586fd11f7c",
+          "source_id": null
+        },
+        {
+          "sha256": "8a6f53af64e65ce925122f050ccadfb363e0a3c0898fecb47aeab7f370baf0ec",
+          "source_id": null
+        },
+        {
+          "sha256": "f04ebef64a9e1e6ef2c716dd169074a172a01c506273a87a7e9a7504927ccc71",
+          "source_id": null
+        }
+      ],
+      "mapping_notes": [
+        "只新增原体育部，吴/周/岳复用另组唯一学院，不改原组织证据。",
+        "234原浏览器摘录与原provenance审计分别保留，空白规范化不当完整HTTP；陈主讲课程原层级可见。",
+        "岳2024退休原对象/年份/证据与可见unknowns并存，现就业unknown不否定明确退休，也不假定返聘。"
+      ],
+      "provenance_projection": {
+        "wave234_original_browser_sha256": "0e1dbba95130ec36c2f2db86567e3632996d5114c5768718e110b5a22d422725",
+        "wave234_field_provenance_sha256": "0700258130024c91d85e27b411f17f5b543c81a3526a8790d2fc10c9c4676339",
+        "scope": "陈岩原7段浏览器必要摘录及分拆职业字段的空白规范化语义保留；主讲栏目区分2研究生、6本科课程，观察区间不升级精确请求时刻。来源本地文件名移私审计，公开保留摘要指纹及原事实证据。"
+      },
+      "source_reported_degree_update": {
+        "prechange_payload_sha256": "44584e59ad39bdc2bc3afc2078d75feb9db0bf441e8e330b3a540d248bbfaf90",
+        "delta": [
+          {
+            "json_pointer": "/people/2/education/0",
+            "old_value": {
+              "event_id": "buaa-zhouronggang-engineeringpsychology-education-1",
+              "event_kind": "education_label_award_unknown",
+              "institution": "首都师范大学",
+              "institution_as_source": "首都师范大学",
+              "department": "教育系",
+              "education_stage": "本科",
+              "degree_label_as_source": "教育学学士",
+              "field": "学校教育",
+              "date_as_source": "1996.09 - 2000.07",
+              "start": "1996-09",
+              "end": "2000-07",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "仅学习区间与阶段/学位标签，未明确获授；学习终年/月不当授位年月。",
+              "source_id": "buaa-zhouronggang-profile",
+              "source_url": "https://teacher.buaa.edu.cn/zhouronggang/zh_CN/index.htm",
+              "source_excerpt_sha256": "b6d4dfd2e3e1293f6ef6d224b8a7ddf19c12fd7de5fc31f0a830c61265420953",
+              "source_locator": "职业条目／1996.09 - 2000.07 | 首都师范大学教育系, 学校教育专业, 教育学学士（原空白规范化）",
+              "observed_interval_utc": [
+                "2026-10-25T03:25:03Z",
+                "2026-10-25T03:25:08Z"
+              ],
+              "education_event_id": "buaa-zhouronggang-engineeringpsychology-education-1",
+              "degree": "教育学学士",
+              "source_event_kind": "degree_study",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false
+            },
+            "new_value": {
+              "event_id": "buaa-zhouronggang-engineeringpsychology-education-1",
+              "event_kind": "degree",
+              "institution": "首都师范大学",
+              "institution_as_source": "首都师范大学",
+              "department": "教育系",
+              "education_stage": "本科",
+              "degree_label_as_source": "教育学学士",
+              "field": "学校教育",
+              "date_as_source": "1996.09 - 2000.07",
+              "start": "1996-09",
+              "end": "2000-07",
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "官网教育背景具体列首都师范大学学校教育专业“教育学学士”，据明确学位称谓记录来源报告学位；1996.09—2000.07为学习区间，不补授位年月或声称证书已核。",
+              "source_id": "buaa-zhouronggang-profile",
+              "source_url": "https://teacher.buaa.edu.cn/zhouronggang/zh_CN/index.htm",
+              "source_excerpt_sha256": "b6d4dfd2e3e1293f6ef6d224b8a7ddf19c12fd7de5fc31f0a830c61265420953",
+              "source_locator": "职业条目／1996.09 - 2000.07 | 首都师范大学教育系, 学校教育专业, 教育学学士（原空白规范化）",
+              "observed_interval_utc": [
+                "2026-10-25T03:25:03Z",
+                "2026-10-25T03:25:08Z"
+              ],
+              "education_event_id": "buaa-zhouronggang-engineeringpsychology-education-1",
+              "degree": "教育学学士",
+              "source_event_kind": "degree_study",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "source_note": "仅学习区间与阶段/学位标签，未明确获授；学习终年/月不当授位年月。",
+              "degree_award_evidence": {
+                "source_id": "buaa-zhouronggang-profile",
+                "source_url": "https://teacher.buaa.edu.cn/zhouronggang/zh_CN/index.htm",
+                "source_excerpt_sha256": "b6d4dfd2e3e1293f6ef6d224b8a7ddf19c12fd7de5fc31f0a830c61265420953",
+                "source_locator": "职业条目／1996.09 - 2000.07 | 首都师范大学教育系, 学校教育专业, 教育学学士（原空白规范化）",
+                "observed_interval_utc": [
+                  "2026-10-25T03:25:03Z",
+                  "2026-10-25T03:25:08Z"
+                ]
+              }
+            },
+            "source_candidate_sha256": "28385215b22ab12770915333aa68e57e3a8a1c1ac8d5cfce3e37b20aec7d64bb",
+            "evidence": {
+              "source_id": "buaa-zhouronggang-profile",
+              "source_url": "https://teacher.buaa.edu.cn/zhouronggang/zh_CN/index.htm",
+              "source_excerpt_sha256": "b6d4dfd2e3e1293f6ef6d224b8a7ddf19c12fd7de5fc31f0a830c61265420953",
+              "source_locator": "职业条目／1996.09 - 2000.07 | 首都师范大学教育系, 学校教育专业, 教育学学士（原空白规范化）",
+              "observed_interval_utc": [
+                "2026-10-25T03:25:03Z",
+                "2026-10-25T03:25:08Z"
+              ]
+            }
+          },
+          {
+            "json_pointer": "/people/2/education/1",
+            "old_value": {
+              "event_id": "buaa-zhouronggang-engineeringpsychology-education-2",
+              "event_kind": "education_label_award_unknown",
+              "institution": "中国科学院研究生院(中国科学院大学)/中国科学院心理研究所",
+              "institution_as_source": "中国科学院研究生院(中国科学院大学)/中国科学院心理研究所",
+              "department": null,
+              "education_stage": "博士",
+              "degree_label_as_source": "理学博士",
+              "field": "应用心理学",
+              "date_as_source": "2000.09 - 2005.05",
+              "start": "2000-09",
+              "end": "2005-05",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "仅学习区间与阶段/学位标签，未明确获授；学习终年/月不当授位年月。 保留原文联合书写机构，不擅分培养机构/授位法人，也不把括号视为已核更名。",
+              "source_id": "buaa-zhouronggang-profile",
+              "source_url": "https://teacher.buaa.edu.cn/zhouronggang/zh_CN/index.htm",
+              "source_excerpt_sha256": "d1e398df634851d16b0b042ed6275cda708598584a6e3f243000f665b32c2ba2",
+              "source_locator": "职业条目／2000.09 - 2005.05 | 中国科学院研究生院(中国科学院大学)/中国科学院心理研究所, 应用心理学专业, 理学博士（原空白规范化）",
+              "observed_interval_utc": [
+                "2026-10-25T03:25:03Z",
+                "2026-10-25T03:25:08Z"
+              ],
+              "education_event_id": "buaa-zhouronggang-engineeringpsychology-education-2",
+              "degree": "理学博士",
+              "source_event_kind": "degree_study",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false
+            },
+            "new_value": {
+              "event_id": "buaa-zhouronggang-engineeringpsychology-education-2",
+              "event_kind": "degree",
+              "institution": "中国科学院研究生院(中国科学院大学)/中国科学院心理研究所",
+              "institution_as_source": "中国科学院研究生院(中国科学院大学)/中国科学院心理研究所",
+              "department": null,
+              "education_stage": "博士",
+              "degree_label_as_source": "理学博士",
+              "field": "应用心理学",
+              "date_as_source": "2000.09 - 2005.05",
+              "start": "2000-09",
+              "end": "2005-05",
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "note": "官网独立个人简介明确本人“理学博士”，与唯一应用心理学博士阶段对应，记录来源报告学位；2000.09—2005.05为学习区间，不补授位年月。原联合机构及括号名照录，不认证更名、独立法律授位主体或原证书。",
+              "source_id": "buaa-zhouronggang-profile",
+              "source_url": "https://teacher.buaa.edu.cn/zhouronggang/zh_CN/index.htm",
+              "source_excerpt_sha256": "d1e398df634851d16b0b042ed6275cda708598584a6e3f243000f665b32c2ba2",
+              "source_locator": "职业条目／2000.09 - 2005.05 | 中国科学院研究生院(中国科学院大学)/中国科学院心理研究所, 应用心理学专业, 理学博士（原空白规范化）",
+              "observed_interval_utc": [
+                "2026-10-25T03:25:03Z",
+                "2026-10-25T03:25:08Z"
+              ],
+              "education_event_id": "buaa-zhouronggang-engineeringpsychology-education-2",
+              "degree": "理学博士",
+              "source_event_kind": "degree_study",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "source_note": "仅学习区间与阶段/学位标签，未明确获授；学习终年/月不当授位年月。 保留原文联合书写机构，不擅分培养机构/授位法人，也不把括号视为已核更名。",
+              "degree_award_evidence": {
+                "source_id": "buaa-zhouronggang-profile",
+                "source_url": "https://teacher.buaa.edu.cn/zhouronggang/zh_CN/index.htm",
+                "source_excerpt_sha256": "2d1772fbbd2b67decb9eb0094e71ca977cca3fba596a761412e021c56dd87c37",
+                "source_locator": "职业条目／周荣刚, 理学博士, 北京航空航天大学经济管理学院教授, 博士生导师。（原空白规范化）",
+                "observed_interval_utc": [
+                  "2026-10-25T03:25:03Z",
+                  "2026-10-25T03:25:08Z"
+                ]
+              }
+            },
+            "source_candidate_sha256": "28385215b22ab12770915333aa68e57e3a8a1c1ac8d5cfce3e37b20aec7d64bb",
+            "evidence": {
+              "source_id": "buaa-zhouronggang-profile",
+              "source_url": "https://teacher.buaa.edu.cn/zhouronggang/zh_CN/index.htm",
+              "source_excerpt_sha256": "2d1772fbbd2b67decb9eb0094e71ca977cca3fba596a761412e021c56dd87c37",
+              "source_locator": "职业条目／周荣刚, 理学博士, 北京航空航天大学经济管理学院教授, 博士生导师。（原空白规范化）",
+              "observed_interval_utc": [
+                "2026-10-25T03:25:03Z",
+                "2026-10-25T03:25:08Z"
+              ]
+            }
+          }
+        ],
+        "inverse_restores_prechange_payload": true,
+        "scope": "仅周荣刚两个具体学位事件；陈3未知、吴岳5true及3非学位均不变；无授位日期补全。"
+      }
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧802事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
