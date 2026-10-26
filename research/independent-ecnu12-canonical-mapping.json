@@ -1,0 +1,2107 @@
+{
+  "schema_version": "independent-ecnu12-canonical-mapping-1",
+  "baseline_commit": "a1e0671e354842d6e4532ed3e64e8dd79b101b98",
+  "new_people": [
+    "ecnu-yinyaling",
+    "ecnu-guanshuguang",
+    "ecnu-jiangxuefeng",
+    "ecnu-wangxuena",
+    "ecnu-liangchaoqun",
+    "ecnu-huangchenxi",
+    "ecnu-yinzhihua",
+    "ecnu-xijuzhe",
+    "ecnu-xusheng",
+    "ecnu-yinguoming",
+    "ecnu-zhuhu-art",
+    "ecnu-gejun"
+  ],
+  "new_org_ids": [
+    "ecnu-physics",
+    "ecnu-physics-department",
+    "ecnu-chemistry",
+    "ecnu-psychology",
+    "ecnu-foreign-languages",
+    "ecnu-socialdevelopment",
+    "ecnu-socialdevelopment-socialwork",
+    "ecnu-sports",
+    "ecnu-sports-education",
+    "ecnu-psychology-clinical",
+    "ecnu-education",
+    "ecnu-education-rehabilitation",
+    "ecnu-chinese",
+    "ecnu-art",
+    "ecnu-history",
+    "ecnu-socialist-history-literature"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 16,
+    "education": 43,
+    "appointments": 33,
+    "publications": 24,
+    "mentors": 9,
+    "teaching": 13,
+    "institutional_associations": 0,
+    "creative_works": 0,
+    "degree_true": 18,
+    "degree_false": 12,
+    "degree_unknown": 13
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "physics-chemistry-psychology",
+      "canonical_payload_sha256": "036b9bb571d59d47f61784328499d6060fffc59f750f4a97165603c90e587dc8",
+      "field_mapping_sha256": "4a5328ac992dc4e4f037b8f29219ce5e8d1b3db6ec576a150308a93eee110b7f",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "language-social-sports-psychology",
+      "canonical_payload_sha256": "91a82a3ccf495a4045979a2bfb6dd41f9a88b7eb6fdeb0cf3be38ff8a3e8b074",
+      "field_mapping_sha256": "730f79e6ea420b6ff49e7501288f1e3dcdd88174cf34002f2796a28ce5a14031",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "education-literature-art-history",
+      "canonical_payload_sha256": "87673451a1ea340642fe1e3523c2245b1a0b361d335b72e2192824df6e767769",
+      "field_mapping_sha256": "3880eb9d0cad5d511e1c819315d0f64a519f524b5c5974444655ef3e77831dc2",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "036b9bb571d59d47f61784328499d6060fffc59f750f4a97165603c90e587dc8",
+      "baseline_people": 790,
+      "baseline_publication_status": "published",
+      "people": [
+        {
+          "person_id": "ecnu-yinyaling",
+          "source_candidate_sha256": "39b10825602ec10502e823643d676a576f56f914de3f3ad0eeac67f6b909a58b",
+          "source_review_sha256": "627aac150eea2e8a2f8e1c2bf95b652b96957553ca7951aada8edaf48dc4c89b",
+          "education_original_states": [
+            {
+              "event_id": "ecnu-yinyaling-bachelor",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "ecnu-yinyaling-doctorate",
+              "degree_awarded": true
+            }
+          ],
+          "counts": {
+            "education": 3,
+            "appointments": 1,
+            "mentors": 2,
+            "publications": 2,
+            "teaching": 6
+          },
+          "visible_limits": [
+            "未独立核硕士阶段，未知不等于不存在。",
+            "博士专业未明列，不能把实验室名当专业。",
+            "导师个体履历、现职及正式论文导师资格均未独立核验。",
+            "当前在岗未知，目录与旧至今不构成证明。",
+            "当前人事/退休状态未核，来源角色和目录类别不等于实时在岗。",
+            "仅必要留存职业摘录，非完整履历或原页面字节；没有新访问。",
+            "阶段导师具名但非论文导师认证，本人指导资格不生成自身师承。",
+            "原观察仅精确到UTC分钟，未补造秒级请求时刻。",
+            "目录姓名与独立个人页对应；原生目录href未核，非实时在岗名单。",
+            "4篇物理作品中本人的两篇均只核官网书目；发现DOI候选不作为核验DOI，出版者路径不可用后停止，无全文。"
+          ]
+        },
+        {
+          "person_id": "ecnu-guanshuguang",
+          "source_candidate_sha256": "39b10825602ec10502e823643d676a576f56f914de3f3ad0eeac67f6b909a58b",
+          "source_review_sha256": "627aac150eea2e8a2f8e1c2bf95b652b96957553ca7951aada8edaf48dc4c89b",
+          "education_original_states": [
+            {
+              "event_id": "ecnu-guanshuguang-bachelor",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "ecnu-guanshuguang-master",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "ecnu-guanshuguang-doctorate",
+              "degree_awarded": true
+            }
+          ],
+          "counts": {
+            "education": 3,
+            "appointments": 6,
+            "mentors": 0,
+            "publications": 2,
+            "teaching": 2
+          },
+          "visible_limits": [
+            "未发现个人导师，不能据共同作者或本人博导称谓推师承。",
+            "本科/硕士教育表只列1991/1994，其授位由简介明确支持；精确授位年月日未知。",
+            "院系标签差异保留，未推法定改名。",
+            "当前在岗未知；09/2009-P resent仅是未标明更新日期的个人页陈述。",
+            "Research Fellow/Research Scientist是工作职称，不自动认作博士后。",
+            "当前人事/退休状态未核，来源角色和目录类别不等于实时在岗。",
+            "仅必要留存职业摘录，非完整履历或原页面字节；没有新访问。",
+            "未留本人具名导师；本人指导资格不生成自身师承。",
+            "原观察仅精确到UTC分钟，未补造秒级请求时刻。",
+            "目录姓名与独立个人页对应；原生目录href未核，非实时在岗名单。",
+            "4篇物理作品中本人的两篇均只核官网书目；发现DOI候选不作为核验DOI，出版者路径不可用后停止，无全文。"
+          ]
+        },
+        {
+          "person_id": "ecnu-jiangxuefeng",
+          "source_candidate_sha256": "4806df08d78f33e9617aa04dec4daa3761dc4d8e4597b5c1a54f6526881c6cf6",
+          "source_review_sha256": "d6bbfd57493f6f99c95d66ad2e19ab7ecd2f37666eafd55d37d55592b8ff79d1",
+          "education_original_states": [
+            {
+              "event_id": "ecnu-jiang-bachelor",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "ecnu-jiang-doctoral",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "ecnu-jiang-postdoc",
+              "degree_awarded": false
+            }
+          ],
+          "counts": {
+            "education": 3,
+            "appointments": 1,
+            "mentors": 2,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事/退休状态未核，来源角色和目录类别不等于实时在岗。",
+            "仅必要留存职业摘录，非完整履历或原页面字节；没有新访问。",
+            "阶段导师具名但非论文导师认证，本人指导资格不生成自身师承。",
+            "目录有机化学是学科分组，不自动当系名；原目录具名href未独立核实。",
+            "个人页同一初始导航曾超时，之后原页面完成；只读取已完成状态，无重复导航。",
+            "未留存独立研究方向段，不从论文标题发明研究方向。",
+            "原学士/博士经历与个人页毕业院校、博士学位字段并列保留，授位日期均未知。"
+          ]
+        },
+        {
+          "person_id": "ecnu-wangxuena",
+          "source_candidate_sha256": "66c325533cdc87716ea92d5dee595ed15bf67bd06603cd301bd1a3effedccd96",
+          "source_review_sha256": "02681de0834fd8a189076650e474ac6c3f92bb4642dfcb9bec6ed16c92b86d02",
+          "education_original_states": [
+            {
+              "event_id": "ecnu-wang-bachelor",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "ecnu-wang-doctoral",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "ecnu-wang-postdoc",
+              "degree_awarded": false
+            }
+          ],
+          "counts": {
+            "education": 3,
+            "appointments": 1,
+            "mentors": 2,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事/退休状态未核，来源角色和目录类别不等于实时在岗。",
+            "仅必要留存职业摘录，非完整履历或原页面字节；没有新访问。",
+            "阶段导师具名但非论文导师认证，本人指导资格不生成自身师承。",
+            "目录人工智能与人因工程系（筹）保留筹建状态；不作已正式设立或行政认证。",
+            "目录独立同名但href未解析；原助理教授/明园晨晖学者类别与顶部教授栏目并列，不能改为教授。",
+            "2025-04-10官方学术报告简介明确北京大学学士及博士获授，但未披露授位日，不复制学习终点。"
+          ]
+        }
+      ],
+      "org_identity": [
+        {
+          "id": "ecnu-physics",
+          "name": "物理学院",
+          "school_id": "ecnu",
+          "type": "school",
+          "parent_id": null,
+          "administrative_parent_status": "unknown",
+          "source_id": "ecnu-physics-roster",
+          "source_url": "https://phy.ecnu.edu.cn/axs/list.htm",
+          "campus_ids": []
+        },
+        {
+          "id": "ecnu-physics-department",
+          "name": "物理学系",
+          "school_id": "ecnu",
+          "type": "department",
+          "parent_id": "ecnu-physics",
+          "source_id": "ecnu-physics-roster",
+          "source_url": "https://phy.ecnu.edu.cn/axs/list.htm",
+          "note": "Directory section label and school footer establish this directory grouping, not a legal reorganization.",
+          "campus_ids": []
+        },
+        {
+          "id": "ecnu-chemistry",
+          "name": "化学与分子工程学院",
+          "type": "college",
+          "school_id": "ecnu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "ecnu-chemistry-directory",
+          "source_url": "https://chem.ecnu.edu.cn/14454/list.htm",
+          "source_observation_sha256": "50868dd5b5a44333caefc475007201e0c4946561067292221cca4ff30505146e",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原官网单位与目录身份对应，只作来源展示，行政法定父级未知。"
+        },
+        {
+          "id": "ecnu-psychology",
+          "name": "心理与认知科学学院",
+          "type": "college",
+          "school_id": "ecnu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "ecnu-wang-directory",
+          "source_url": "https://psy.ecnu.edu.cn/rgznyrygcxwcw/list.htm",
+          "source_observation_sha256": "8d774367661921fd70e1dec52174bead899091edbe28fa0734657845e1a61f2c",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原官网单位与目录身份对应，只作来源展示，行政法定父级未知。"
+        }
+      ],
+      "degree_matrix_status": "最终姜博士独立学位身份支持true；姜学士仅经历表仍null。全组8true3false1null，授位日期不由学习终点推断。",
+      "public_field_check": "角色、筹建标签、观察分钟精度、书目冲突与研究方法已保留；工具定位仅private，hash_scope明确整源对象而非单句。",
+      "degree_classification_revision": {
+        "event_id": "ecnu-jiang-doctoral",
+        "old_payload_sha256": "55664c012373858e0f3b6719a0b7d1869243851c8a4b5b5e0de252289a3d6f9c",
+        "new_payload_sha256": "84ebd0ed164002763d6c963ff271892d34fd02b4a23d41ff6229c7e697d924c3",
+        "changes": [
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "degree_awarded"
+            ],
+            "old_value": null,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "event_kind"
+            ],
+            "old_value": "degree_study",
+            "new_value": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "include_in_degree_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "include_in_education_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "include_in_awarded_degree_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "education",
+              1,
+              "note"
+            ],
+            "old_value": "官网记载该学历经历；是否授位未单独核实，学习终点不当授位日期。",
+            "new_value": "官网独立个人信息列“学位：博士”，并列“毕业院校：中科院上海有机所”，与唯一中国科学院上海有机化学研究所博士阶段对应，据此记录来源报告的博士学位；未核原学位证，授位年/月/日未知，不以2008学习终点填授位日期。"
+          }
+        ],
+        "source_quote": "姜雪峰 化学与分子工程学院；专业技术职务：教授/博导；毕业院校：中科院上海有机所；学位：博士",
+        "quote_sha256": "0001ecbaf069927395609a2cf2965eaa9c5a32fd72c5858fd174b0406c3eee37",
+        "retained_observation_sha256": "947c59c6753fccb2f68074114e93b4046e3b1b83c3f1fa0ae94aaa0c43ff829e",
+        "source_locator": "个人身份字段：毕业院校与博士学位（原留存identity_excerpt，不声称原网站章节标题）",
+        "source_original_degree_awarded": null,
+        "source_pack_unchanged": true,
+        "inverse_old_payload_sha256_verified": "55664c012373858e0f3b6719a0b7d1869243851c8a4b5b5e0de252289a3d6f9c",
+        "reason": "独立具体学位字段与毕业院校身份支持来源报告授位，非仅学习阶段名称；非原证书核验，不补授位日期。"
+      },
+      "mentor_empty_note_revision": {
+        "field_address": [
+          "people",
+          1,
+          "unknowns",
+          7
+        ],
+        "old_value": "阶段导师具名但非论文导师认证，本人指导资格不生成自身师承。",
+        "new_value": "未留本人具名导师；本人指导资格不生成自身师承。",
+        "old_payload_sha256": "84ebd0ed164002763d6c963ff271892d34fd02b4a23d41ff6229c7e697d924c3",
+        "new_payload_sha256": "036b9bb571d59d47f61784328499d6060fffc59f750f4a97165603c90e587dc8",
+        "inverse_verified_sha256": "84ebd0ed164002763d6c963ff271892d34fd02b4a23d41ff6229c7e697d924c3",
+        "reason": "无本人具名导师，不使用暗示已列关系的通用说明。"
+      }
+    },
+    {
+      "schema_version": "ecnu12-group2-mapping-1",
+      "published_baseline_people": 790,
+      "input_checks": [
+        {
+          "person_id": "ecnu-liangchaoqun",
+          "candidate_sha256": "66c325533cdc87716ea92d5dee595ed15bf67bd06603cd301bd1a3effedccd96",
+          "review_sha256": "02681de0834fd8a189076650e474ac6c3f92bb4642dfcb9bec6ed16c92b86d02",
+          "audit_hashes_verified": true
+        },
+        {
+          "person_id": "ecnu-huangchenxi",
+          "candidate_sha256": "861f484769be650b6a329e29d33ec69067686dc4355a0b722fdf266625726c6c",
+          "review_sha256": "57032b68959a30b0a6f1aae500190bd2729d137066e283e28d0ff3c415ee2557",
+          "audit_hashes_verified": true
+        },
+        {
+          "person_id": "ecnu-yinzhihua",
+          "candidate_sha256": "565c8524180b56b96aa24e187a735ac63c804b9d38688f566f9520fdb6060d32",
+          "review_sha256": "83676b3ceb3aba66f0e465b23b0127453c928321e376ed649c40bf1dfc6b2e32",
+          "audit_hashes_verified": true
+        },
+        {
+          "person_id": "ecnu-xijuzhe",
+          "candidate_sha256": "aebb64e813fcc2a9ae4c2cf9abbf27c6d5a2e2c18883edb82bd56ceda1b75a23",
+          "review_sha256": "4bb26519ab769d5f226359ca19e66f0b669fb68b147a999abdb793758a7dc7c5",
+          "audit_hashes_verified": true
+        }
+      ],
+      "degree_evidence_matrix": [
+        {
+          "person_id": "ecnu-huangchenxi",
+          "education_event_id": "ecnu-huangchenxi-学士",
+          "old_value": null,
+          "quote": "1989年9月－1993年9月浙江师范大学地理系攻读地理教育学士学位",
+          "quote_sha256": "3402b4072a2b0530844e0f42f76e74c1db28320b7bb6bd86dadfd2021aca072d",
+          "source_id": "ecnu-huangchenxi-profile",
+          "source_url": "https://faculty.ecnu.edu.cn/_s6/hcx/main.psp",
+          "candidate_sha256": "861f484769be650b6a329e29d33ec69067686dc4355a0b722fdf266625726c6c",
+          "retained_heading": "### 教育经历",
+          "context": "116原独立heading及相连攻读段",
+          "proposal": "retain_unknown",
+          "decision": "root_confirmed_retain_unknown",
+          "canonical_value": null
+        },
+        {
+          "person_id": "ecnu-huangchenxi",
+          "education_event_id": "ecnu-huangchenxi-硕士",
+          "old_value": null,
+          "quote": "1993年9月－1996年7月华东师范大学人口研究所攻读人文地理硕士学位",
+          "quote_sha256": "f3e9bd47c0eaa1ae5d74381e1e62ecc29ec6f89aff22efe1e3aef6a6ca6ad5db",
+          "source_id": "ecnu-huangchenxi-profile",
+          "source_url": "https://faculty.ecnu.edu.cn/_s6/hcx/main.psp",
+          "candidate_sha256": "861f484769be650b6a329e29d33ec69067686dc4355a0b722fdf266625726c6c",
+          "retained_heading": "### 教育经历",
+          "context": "116原独立heading及相连攻读段",
+          "proposal": "retain_unknown",
+          "decision": "root_confirmed_retain_unknown",
+          "canonical_value": null
+        },
+        {
+          "person_id": "ecnu-yinzhihua",
+          "education_event_id": "ecnu-yinzhihua-education-1",
+          "old_value": null,
+          "quote": "2004.09-2008.06，湖南怀化学院化学与材料工程学院，科学教育，本科/理学学士",
+          "quote_sha256": "a4728b856e9fa1fafdeb186f060c0e229b7cb2d159607a6b42fcd00b63d50964",
+          "source_id": "ecnu-yinzhihua-profile",
+          "source_url": "https://faculty.ecnu.edu.cn/_s10/yzh2/main.psp",
+          "candidate_sha256": "565c8524180b56b96aa24e187a735ac63c804b9d38688f566f9520fdb6060d32",
+          "retained_heading": null,
+          "context": "155只留分段条目，不能从locator补heading",
+          "proposal": "source_reported_true",
+          "decision": "root_approved_source_reported_true",
+          "canonical_value": true
+        },
+        {
+          "person_id": "ecnu-yinzhihua",
+          "education_event_id": "ecnu-yinzhihua-education-2",
+          "old_value": null,
+          "quote": "2008.09-2011.06，华东师范大学体育与健康学院，体育人文社会学(硕博连读硕士阶段)",
+          "quote_sha256": "7e90b6baf19bd0beece308d59350871fe30e8f5355e63605948ac9876263a4af",
+          "source_id": "ecnu-yinzhihua-profile",
+          "source_url": "https://faculty.ecnu.edu.cn/_s10/yzh2/main.psp",
+          "candidate_sha256": "565c8524180b56b96aa24e187a735ac63c804b9d38688f566f9520fdb6060d32",
+          "retained_heading": null,
+          "context": "155只留分段条目，不能从locator补heading",
+          "proposal": "retain_unknown",
+          "decision": "root_confirmed_retain_unknown",
+          "canonical_value": null
+        },
+        {
+          "person_id": "ecnu-yinzhihua",
+          "education_event_id": "ecnu-yinzhihua-education-3",
+          "old_value": null,
+          "quote": "2011.09-2014.06，华东师范大学体育与健康学院，体育人文社会学(硕博连读博士阶段)/教育学博士",
+          "quote_sha256": "758e947c6171290650f1b06cef809947bcafe05e490d933e6ec385e4f37657fa",
+          "source_id": "ecnu-yinzhihua-profile",
+          "source_url": "https://faculty.ecnu.edu.cn/_s10/yzh2/main.psp",
+          "candidate_sha256": "565c8524180b56b96aa24e187a735ac63c804b9d38688f566f9520fdb6060d32",
+          "retained_heading": null,
+          "context": "155只留分段条目，不能从locator补heading",
+          "proposal": "source_reported_true",
+          "decision": "root_confirmed_retain_unknown",
+          "canonical_value": null
+        }
+      ],
+      "org_identity": "本组6新node；心理与认知科学学院复用组1ecnu-psychology，同校同全中文学院及psy官网目录/本人职业句。旧790无这些学院；下级仅目录展示关联，不认证法律行政。梁英语系正文未核不建node。",
+      "psychology_original_org_fact": {
+        "id": "ecnu-psychology",
+        "name": "心理与认知科学学院",
+        "type": "school",
+        "school_id": "ecnu",
+        "parent_id": null,
+        "administrative_parent_status": "not_independently_verified",
+        "source_id": "ecnu-xijuzhe-profile",
+        "source_url": "https://faculty.ecnu.edu.cn/_s9/xjz/main.psp",
+        "retained_professional_text": "心理与认知科学学院 教授, 博士生导师",
+        "source_excerpt_sha256": "12db7403c5cda52a2c8234a75dba613cecd22814ac3297471953c09c697d6eb3",
+        "source_locator": "身份称谓／心理与认知科学学院 教授, 博士生导师"
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/0/quote",
+          "sha256": "a4728b856e9fa1fafdeb186f060c0e229b7cb2d159607a6b42fcd00b63d50964"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/1/quote",
+          "sha256": "7e90b6baf19bd0beece308d59350871fe30e8f5355e63605948ac9876263a4af"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/2/quote",
+          "sha256": "758e947c6171290650f1b06cef809947bcafe05e490d933e6ec385e4f37657fa"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/3/quote",
+          "sha256": "efe78a395a2a652389245625a1c6f6296f2914421f1969f9e128fd246c66b5c3"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/4/quote",
+          "sha256": "5170a911e37aa986bc3cb91b2dc76641f1df67ed42862f03ee97be8381ed4906"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/5/quote",
+          "sha256": "985240b4af1b150589d4ea41af6f428fb9e42cc4eddb7ef091f2681af390bd3a"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/6/quote",
+          "sha256": "caf979a77036e4df7ee1202e5e403606a417d14eeb74a9bfd9bbf1f52588c551"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/7/quote",
+          "sha256": "789402ea546b67ecb63b3b52286db2f3af9b1fc9ff77b7e2c42aef2414cf0d14"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/8/quote",
+          "sha256": "8d4438724b486914379a42b2123db33ad9d9ff04fce8e6c0f3d5d39e721a467a"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/9/quote",
+          "sha256": "5d35beac4117285e5ce0c31c19a9b76606217d02d6dab976d471975dd4528159"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/10/quote",
+          "sha256": "e39445a36b0f764dc13470ae7dc87f0c0e898f12613def05eae0b9bd6b1f3e59"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/11/quote",
+          "sha256": "67cb0bc0124b365d17dae8a26ed3d96d142df3743184e0e7cede5dd135acacde"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/12/quote",
+          "sha256": "823448bf63e39d5f639ca5251e2fb01cfd6ef37b1543b59a4bb3d8c6e794bc2e"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/13/quote",
+          "sha256": "1854b4497fe8a37d0ca2f6dda77c9d663eb86b1c7670a0a223045f78968e35ff"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/14/quote",
+          "sha256": "0c69581bd0e198126c6c4b45c566cf2a11837fc950bad0b70212f9c9bd7c31bc"
+        },
+        {
+          "path": "/sources/ecnu-yinzhihua-profile/excerpts/15/quote",
+          "sha256": "0c69581bd0e198126c6c4b45c566cf2a11837fc950bad0b70212f9c9bd7c31bc"
+        },
+        {
+          "path": "/sources/ecnu-sports-directory/excerpts/0/quote",
+          "sha256": "e39445a36b0f764dc13470ae7dc87f0c0e898f12613def05eae0b9bd6b1f3e59"
+        },
+        {
+          "path": "/sources/ecnu-sports-directory/excerpts/1/quote",
+          "sha256": "bc4522ca62b5321b46358146c085d31dd02282db0fff3d7a161c7cd288426c0b"
+        },
+        {
+          "path": "/sources/ecnu-sports-directory/excerpts/2/quote",
+          "sha256": "dcfcf1a194a4ddeaaf99c435ba980b75d4128dfbb97f303c1bbd1e7985be5b3c"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/0/quote",
+          "sha256": "8ea8e48d0ef61a47e93e851d6d2b80611064ececc7ebf4082be76d2fa847faef"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/1/quote",
+          "sha256": "12db7403c5cda52a2c8234a75dba613cecd22814ac3297471953c09c697d6eb3"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/2/quote",
+          "sha256": "c6c54179bf758caae3413e1b219b49c90ee858ae0e1dee0968f4d86cf3b99f14"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/3/quote",
+          "sha256": "7ccf7abb5c5ebd846957d102a1dd8ca7d8a2d07aee1ab90116d016c3b290c318"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/4/quote",
+          "sha256": "32f4dd17f5767a26286c51168bfc0fbb0e6064f9607dbae9f66ba778d1f7e2a8"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/5/quote",
+          "sha256": "899e847159816622f081cd246a858462ade93e45eb08dcee60989c3030019903"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/6/quote",
+          "sha256": "8f08a771491feac4bb5bbea09afd5e87b0ceca6d8ee234a16efab243fd668517"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/7/quote",
+          "sha256": "52d7956994b249e3b1dfc50b1048251c6a886bdddb04445722072d231231dfad"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/8/quote",
+          "sha256": "24a41296bdd1e475a98a6fab2c3b61ed2f5292b6f8b7e872809c1c4caa8fe690"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/9/quote",
+          "sha256": "8adfa1d523a6010ee88aa8e2139056e9cd73e2556c64b5a63135db26c97ef962"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/10/quote",
+          "sha256": "d804851b655a7067e2d674f5bfc7c9b835c0bd1e61b50aab6f5ca5a64b9b63b4"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/11/quote",
+          "sha256": "55f8bfc530edb6ccad2bc0899afdd8498fc69f2daab3ece2beea8899303c0aca"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/12/quote",
+          "sha256": "a8797fb06c2d984f03f38d71e43c731444e31ba2e900654fead3016764015c65"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/13/quote",
+          "sha256": "fb8ac0506e2a1cbe07fa5ec71b3de5bcd38722872972953f08bdddc7e1e175d2"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-profile/professional_excerpts/14/quote",
+          "sha256": "a2b7e21a9c4497dcc5d6168d95a15e70158df9a510d515d59d6a52403132d3dc"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-directory/professional_excerpts/0/quote",
+          "sha256": "34341ad16cb8f158d19e71c8810a25bbac5ca57d996eb12953f225c4c2b86ccc"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-directory/professional_excerpts/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "path": "/sources/ecnu-xijuzhe-directory/professional_excerpts/2/quote",
+          "sha256": "b03478b76fca4e0e203f87ffec4df68d6b9116540ea26319ad5c7e05ce54c58c"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/education/0/quote",
+          "sha256": "3402b4072a2b0530844e0f42f76e74c1db28320b7bb6bd86dadfd2021aca072d"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/education/1/quote",
+          "sha256": "f3e9bd47c0eaa1ae5d74381e1e62ecc29ec6f89aff22efe1e3aef6a6ca6ad5db"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/education/2/quote",
+          "sha256": "3c66f9e01f0f136538fce4285fc67ee43436a4c24490ea3329f247c165d720d9"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/education/2/award_evidence/quote",
+          "sha256": "8826c2b969c93cabdaecbc23eb4a13d0226833d1e4bb7a094450cf5bbf0dbe26"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/professional_training/0/quote",
+          "sha256": "b94fe8a6970bc29abc7fd8cca90cf88ff6f394423cb7c0ada6a5ccd199a80834"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/appointments/0/quote",
+          "sha256": "d601426f1588fcd6f2236b72fc18c62469b2d4e09ef326fad1bc1f037160045c"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/appointments/1/quote",
+          "sha256": "433363504927eca7207579680584f260f73927a7a3306c660db95ec0667ee433"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/teaching/0/quote",
+          "sha256": "61d3d0b04de2e949f6f1618463bad17c5b64c638be8d4929bbd367b8bb5dd794"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/teaching/1/quote",
+          "sha256": "df064991a1e9a67808a01b50370b9df1eacaf4d9e645b862e0fa5287f763afa0"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/publications/0/quote",
+          "sha256": "f1fca8582ceecbdcd9b64b78cf5a3c6dd627d6bc58d97921dcab3344df8fffba"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/publications/1/quote",
+          "sha256": "79f65f317a2ea9cfe26eeed284dab6b893c5f47b3fa093939c09088ddcdfd867"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/field_provenance/identity_and_title/quote",
+          "sha256": "3b9a3badd93613cae004c45a7c0663c92a54a0f4752fa1f86d73710bec752df6"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/field_provenance/directory_affiliation/quote",
+          "sha256": "f0438615a01f07811196236687477ff848f1cf55c4ad622dc11edf8550a2b772"
+        },
+        {
+          "path": "/people/ecnu-huangchenxi/field_provenance/research/quote",
+          "sha256": "2c1bfc5aecb228078616d3b6cff9223fe21f49d5896356f0eb720e625e94c4c0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3402b4072a2b0530844e0f42f76e74c1db28320b7bb6bd86dadfd2021aca072d"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f3e9bd47c0eaa1ae5d74381e1e62ecc29ec6f89aff22efe1e3aef6a6ca6ad5db"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3c66f9e01f0f136538fce4285fc67ee43436a4c24490ea3329f247c165d720d9"
+        },
+        {
+          "path": "/award_evidence/quote",
+          "sha256": "8826c2b969c93cabdaecbc23eb4a13d0226833d1e4bb7a094450cf5bbf0dbe26"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b94fe8a6970bc29abc7fd8cca90cf88ff6f394423cb7c0ada6a5ccd199a80834"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d601426f1588fcd6f2236b72fc18c62469b2d4e09ef326fad1bc1f037160045c"
+        },
+        {
+          "path": "/quote",
+          "sha256": "433363504927eca7207579680584f260f73927a7a3306c660db95ec0667ee433"
+        },
+        {
+          "path": "/quote",
+          "sha256": "61d3d0b04de2e949f6f1618463bad17c5b64c638be8d4929bbd367b8bb5dd794"
+        },
+        {
+          "path": "/quote",
+          "sha256": "df064991a1e9a67808a01b50370b9df1eacaf4d9e645b862e0fa5287f763afa0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f1fca8582ceecbdcd9b64b78cf5a3c6dd627d6bc58d97921dcab3344df8fffba"
+        },
+        {
+          "path": "/quote",
+          "sha256": "79f65f317a2ea9cfe26eeed284dab6b893c5f47b3fa093939c09088ddcdfd867"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/education/0/quote",
+          "sha256": "a4728b856e9fa1fafdeb186f060c0e229b7cb2d159607a6b42fcd00b63d50964"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/education/1/quote",
+          "sha256": "7e90b6baf19bd0beece308d59350871fe30e8f5355e63605948ac9876263a4af"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/education/2/quote",
+          "sha256": "758e947c6171290650f1b06cef809947bcafe05e490d933e6ec385e4f37657fa"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/professional_training/0/quote",
+          "sha256": "efe78a395a2a652389245625a1c6f6296f2914421f1969f9e128fd246c66b5c3"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/professional_training/1/quote",
+          "sha256": "5170a911e37aa986bc3cb91b2dc76641f1df67ed42862f03ee97be8381ed4906"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/professional_training/2/quote",
+          "sha256": "985240b4af1b150589d4ea41af6f428fb9e42cc4eddb7ef091f2681af390bd3a"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/appointments/0/quote",
+          "sha256": "caf979a77036e4df7ee1202e5e403606a417d14eeb74a9bfd9bbf1f52588c551"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/appointments/1/quote",
+          "sha256": "789402ea546b67ecb63b3b52286db2f3af9b1fc9ff77b7e2c42aef2414cf0d14"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/appointments/2/quote",
+          "sha256": "8d4438724b486914379a42b2123db33ad9d9ff04fce8e6c0f3d5d39e721a467a"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/publications/0/quote",
+          "sha256": "823448bf63e39d5f639ca5251e2fb01cfd6ef37b1543b59a4bb3d8c6e794bc2e"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/publications/0/author_role_evidence/quote",
+          "sha256": "0c69581bd0e198126c6c4b45c566cf2a11837fc950bad0b70212f9c9bd7c31bc"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/publications/1/quote",
+          "sha256": "1854b4497fe8a37d0ca2f6dda77c9d663eb86b1c7670a0a223045f78968e35ff"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/publications/1/author_role_evidence/quote",
+          "sha256": "0c69581bd0e198126c6c4b45c566cf2a11837fc950bad0b70212f9c9bd7c31bc"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/research_directions/0/quote",
+          "sha256": "5d35beac4117285e5ce0c31c19a9b76606217d02d6dab976d471975dd4528159"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/field_provenance/profile_name/quote",
+          "sha256": "e39445a36b0f764dc13470ae7dc87f0c0e898f12613def05eae0b9bd6b1f3e59"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/field_provenance/listed_title/quote",
+          "sha256": "67cb0bc0124b365d17dae8a26ed3d96d142df3743184e0e7cede5dd135acacde"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/field_provenance/directory_person_listing/quote",
+          "sha256": "e39445a36b0f764dc13470ae7dc87f0c0e898f12613def05eae0b9bd6b1f3e59"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/field_provenance/directory_category/quote",
+          "sha256": "bc4522ca62b5321b46358146c085d31dd02282db0fff3d7a161c7cd288426c0b"
+        },
+        {
+          "path": "/people/ecnu-yinzhihua/field_provenance/directory_affiliation/quote",
+          "sha256": "dcfcf1a194a4ddeaaf99c435ba980b75d4128dfbb97f303c1bbd1e7985be5b3c"
+        },
+        {
+          "path": "/quote",
+          "sha256": "a4728b856e9fa1fafdeb186f060c0e229b7cb2d159607a6b42fcd00b63d50964"
+        },
+        {
+          "path": "/quote",
+          "sha256": "7e90b6baf19bd0beece308d59350871fe30e8f5355e63605948ac9876263a4af"
+        },
+        {
+          "path": "/quote",
+          "sha256": "758e947c6171290650f1b06cef809947bcafe05e490d933e6ec385e4f37657fa"
+        },
+        {
+          "path": "/quote",
+          "sha256": "efe78a395a2a652389245625a1c6f6296f2914421f1969f9e128fd246c66b5c3"
+        },
+        {
+          "path": "/quote",
+          "sha256": "5170a911e37aa986bc3cb91b2dc76641f1df67ed42862f03ee97be8381ed4906"
+        },
+        {
+          "path": "/quote",
+          "sha256": "985240b4af1b150589d4ea41af6f428fb9e42cc4eddb7ef091f2681af390bd3a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "caf979a77036e4df7ee1202e5e403606a417d14eeb74a9bfd9bbf1f52588c551"
+        },
+        {
+          "path": "/quote",
+          "sha256": "789402ea546b67ecb63b3b52286db2f3af9b1fc9ff77b7e2c42aef2414cf0d14"
+        },
+        {
+          "path": "/quote",
+          "sha256": "8d4438724b486914379a42b2123db33ad9d9ff04fce8e6c0f3d5d39e721a467a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "823448bf63e39d5f639ca5251e2fb01cfd6ef37b1543b59a4bb3d8c6e794bc2e"
+        },
+        {
+          "path": "/author_role_evidence/quote",
+          "sha256": "0c69581bd0e198126c6c4b45c566cf2a11837fc950bad0b70212f9c9bd7c31bc"
+        },
+        {
+          "path": "/quote",
+          "sha256": "1854b4497fe8a37d0ca2f6dda77c9d663eb86b1c7670a0a223045f78968e35ff"
+        },
+        {
+          "path": "/author_role_evidence/quote",
+          "sha256": "0c69581bd0e198126c6c4b45c566cf2a11837fc950bad0b70212f9c9bd7c31bc"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/education/0/quote",
+          "sha256": "c6c54179bf758caae3413e1b219b49c90ee858ae0e1dee0968f4d86cf3b99f14"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/education/1/quote",
+          "sha256": "7ccf7abb5c5ebd846957d102a1dd8ca7d8a2d07aee1ab90116d016c3b290c318"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/education/2/quote",
+          "sha256": "32f4dd17f5767a26286c51168bfc0fbb0e6064f9607dbae9f66ba778d1f7e2a8"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/professional_training/0/quote",
+          "sha256": "899e847159816622f081cd246a858462ade93e45eb08dcee60989c3030019903"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/appointments/0/quote",
+          "sha256": "8f08a771491feac4bb5bbea09afd5e87b0ceca6d8ee234a16efab243fd668517"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/appointments/1/quote",
+          "sha256": "52d7956994b249e3b1dfc50b1048251c6a886bdddb04445722072d231231dfad"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/appointments/2/quote",
+          "sha256": "24a41296bdd1e475a98a6fab2c3b61ed2f5292b6f8b7e872809c1c4caa8fe690"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/appointments/3/quote",
+          "sha256": "8adfa1d523a6010ee88aa8e2139056e9cd73e2556c64b5a63135db26c97ef962"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/appointments/4/quote",
+          "sha256": "d804851b655a7067e2d674f5bfc7c9b835c0bd1e61b50aab6f5ca5a64b9b63b4"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/publications/0/quote",
+          "sha256": "55f8bfc530edb6ccad2bc0899afdd8498fc69f2daab3ece2beea8899303c0aca"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/publications/1/quote",
+          "sha256": "a8797fb06c2d984f03f38d71e43c731444e31ba2e900654fead3016764015c65"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/identity_evidence/0/quote",
+          "sha256": "8ea8e48d0ef61a47e93e851d6d2b80611064ececc7ebf4082be76d2fa847faef"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/identity_evidence/1/quote",
+          "sha256": "12db7403c5cda52a2c8234a75dba613cecd22814ac3297471953c09c697d6eb3"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/directory_evidence/0/quote",
+          "sha256": "34341ad16cb8f158d19e71c8810a25bbac5ca57d996eb12953f225c4c2b86ccc"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/directory_evidence/1/quote",
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e"
+        },
+        {
+          "path": "/people/ecnu-xijuzhe/directory_evidence/2/quote",
+          "sha256": "b03478b76fca4e0e203f87ffec4df68d6b9116540ea26319ad5c7e05ce54c58c"
+        },
+        {
+          "path": "/quote",
+          "sha256": "c6c54179bf758caae3413e1b219b49c90ee858ae0e1dee0968f4d86cf3b99f14"
+        },
+        {
+          "path": "/quote",
+          "sha256": "7ccf7abb5c5ebd846957d102a1dd8ca7d8a2d07aee1ab90116d016c3b290c318"
+        },
+        {
+          "path": "/quote",
+          "sha256": "32f4dd17f5767a26286c51168bfc0fbb0e6064f9607dbae9f66ba778d1f7e2a8"
+        },
+        {
+          "path": "/quote",
+          "sha256": "899e847159816622f081cd246a858462ade93e45eb08dcee60989c3030019903"
+        },
+        {
+          "path": "/quote",
+          "sha256": "8f08a771491feac4bb5bbea09afd5e87b0ceca6d8ee234a16efab243fd668517"
+        },
+        {
+          "path": "/quote",
+          "sha256": "52d7956994b249e3b1dfc50b1048251c6a886bdddb04445722072d231231dfad"
+        },
+        {
+          "path": "/quote",
+          "sha256": "24a41296bdd1e475a98a6fab2c3b61ed2f5292b6f8b7e872809c1c4caa8fe690"
+        },
+        {
+          "path": "/quote",
+          "sha256": "8adfa1d523a6010ee88aa8e2139056e9cd73e2556c64b5a63135db26c97ef962"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d804851b655a7067e2d674f5bfc7c9b835c0bd1e61b50aab6f5ca5a64b9b63b4"
+        },
+        {
+          "path": "/quote",
+          "sha256": "55f8bfc530edb6ccad2bc0899afdd8498fc69f2daab3ece2beea8899303c0aca"
+        },
+        {
+          "path": "/quote",
+          "sha256": "a8797fb06c2d984f03f38d71e43c731444e31ba2e900654fead3016764015c65"
+        },
+        {
+          "path": "/quote",
+          "sha256": "dcfcf1a194a4ddeaaf99c435ba980b75d4128dfbb97f303c1bbd1e7985be5b3c"
+        },
+        {
+          "path": "/quote",
+          "sha256": "bc4522ca62b5321b46358146c085d31dd02282db0fff3d7a161c7cd288426c0b"
+        },
+        {
+          "path": "/quote",
+          "sha256": "34341ad16cb8f158d19e71c8810a25bbac5ca57d996eb12953f225c4c2b86ccc"
+        },
+        {
+          "path": "/quote",
+          "sha256": "12db7403c5cda52a2c8234a75dba613cecd22814ac3297471953c09c697d6eb3"
+        }
+      ],
+      "overlay_scope": "155本人无事实overlay，不套156外校课程；四原包只消费本组accepted人物。",
+      "counts": {
+        "education": 17,
+        "appointments": 11,
+        "mentors": 2,
+        "publications": 8,
+        "teaching": 2
+      },
+      "source_review_scope": "原source-only/pending只是历史来源阶段，不是当时工程验收；实际证据限制保留。",
+      "bounded_hold_separation": "仅此次批准四ID与明确原source/audit；未读取复制重做held615/618或XMU兼容历史审查产物，未获得完整held URL清单，不声称全部URL排除。遇具体重合停相应entry报告。",
+      "degree_final_revision": {
+        "json_pointer": "/people/2/education/0",
+        "changes": [
+          {
+            "key": "event_kind",
+            "before_present": true,
+            "before": "education_label_award_unknown",
+            "after": "degree"
+          },
+          {
+            "key": "degree_awarded",
+            "before_present": true,
+            "before": null,
+            "after": true
+          },
+          {
+            "key": "note",
+            "before_present": true,
+            "before": "原教育阶段及具体称谓按源保留，学习终点不作授位年月；硕博连读硕士阶段不另推独立硕士学位。",
+            "after": "官网本科条目具体列理学学士，据此记录来源报告的学士学位；保留湖南怀化学院原名称、科学教育专业和学习区间，授位年月仍未知，未独立核原证书或法律授位实体。硕博连读阶段另外记录，不以本项推定其他学位。"
+          },
+          {
+            "key": "include_in_degree_filters",
+            "before_present": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "key": "include_in_education_filters",
+            "before_present": true,
+            "before": false,
+            "after": true
+          },
+          {
+            "key": "source_degree_awarded",
+            "before_present": false,
+            "before": null,
+            "after": null
+          },
+          {
+            "key": "source_canonical_event_kind",
+            "before_present": false,
+            "before": null,
+            "after": "education_label_award_unknown"
+          },
+          {
+            "key": "source_include_in_degree_filters",
+            "before_present": false,
+            "before": null,
+            "after": false
+          },
+          {
+            "key": "source_include_in_education_filters",
+            "before_present": false,
+            "before": null,
+            "after": false
+          },
+          {
+            "key": "previous_canonical_note",
+            "before_present": false,
+            "before": null,
+            "after": "原教育阶段及具体称谓按源保留，学习终点不作授位年月；硕博连读硕士阶段不另推独立硕士学位。"
+          }
+        ],
+        "evidence_quote": "2004.09-2008.06，湖南怀化学院化学与材料工程学院，科学教育，本科/理学学士",
+        "quote_sha256": "a4728b856e9fa1fafdeb186f060c0e229b7cb2d159607a6b42fcd00b63d50964",
+        "candidate_sha256": "565c8524180b56b96aa24e187a735ac63c804b9d38688f566f9520fdb6060d32",
+        "old_payload_sha256": "9e710efc21a8b326d62c2d582c9ba56369de25bfcdafd15407d95d1cdede25a8",
+        "reverse_sha256": "9e710efc21a8b326d62c2d582c9ba56369de25bfcdafd15407d95d1cdede25a8",
+        "unchanged_outside_exact_one_education_event": true,
+        "award_dates_years_unchanged": true
+      },
+      "second_paper_note_correction": {
+        "json_pointer": "/people/2/publications/1/note",
+        "before": " 仅官网书目，未独立核出版元数据或全文。 原另有明确“通信作者”片段支持本人角色，不只由*号推断；题名原in:保留不擅修。",
+        "after": " 仅官网书目，未独立核出版元数据或全文。 原另有明确“通信作者”片段支持本人角色，不只由*号推断；本篇题名按原文保留。",
+        "old_payload_sha256": "9f6ceba0cce785d3c8b5e7e43a56b45ef548cdb5b990c694cf8344ad0dd4b326",
+        "reverse_pass": true
+      }
+    },
+    {
+      "baseline_people": 790,
+      "people": [
+        {
+          "person_id": "ecnu-xusheng",
+          "source_candidate_sha256": "aebb64e813fcc2a9ae4c2cf9abbf27c6d5a2e2c18883edb82bd56ceda1b75a23",
+          "source_evidence_sha256": "6cafa7cdec7e41b036119368bd180af93a409788f1c477e125ec5ad6aed7f6c5",
+          "source_review_sha256": "4bb26519ab769d5f226359ca19e66f0b669fb68b147a999abdb793758a7dc7c5",
+          "education": 6,
+          "degree_true_false_null": [
+            0,
+            2,
+            4
+          ],
+          "appointments": 5,
+          "mentors": 0,
+          "publications": 2,
+          "teaching": 2,
+          "canonical_org_id": "ecnu-education"
+        },
+        {
+          "person_id": "ecnu-yinguoming",
+          "source_candidate_sha256": "7f1e5baba2637d336565a1672fadff7c470808ab9fa4e248f0072e8592ef7ee3",
+          "source_evidence_sha256": "988c256145b46e04de79e60e7149b5122f7be57bf5557a2ef715eab0d3844162",
+          "source_review_sha256": "66b01e735f3f789a18e979b43d2a577a9c3217acd07c9976337d3181fd34df1f",
+          "education": 2,
+          "degree_true_false_null": [
+            0,
+            0,
+            2
+          ],
+          "appointments": 4,
+          "mentors": 1,
+          "publications": 2,
+          "teaching": 1,
+          "canonical_org_id": "ecnu-chinese"
+        },
+        {
+          "person_id": "ecnu-zhuhu-art",
+          "source_candidate_sha256": "d7d60e41e0297bfe7cbcaaf1d9be64e216ecc64abc4e3f5459fbf767f2f029ca",
+          "source_evidence_sha256": "4baddfdd7e28764e9d28c4de760cd86663cba1df4f0bdc5fede60b582fe74c77",
+          "source_review_sha256": "7b28825e01ab1880d57de21b1eb49b61251b037821266699883b372e2d7ca695",
+          "education": 4,
+          "degree_true_false_null": [
+            1,
+            1,
+            2
+          ],
+          "appointments": 2,
+          "mentors": 0,
+          "publications": 2,
+          "teaching": 0,
+          "canonical_org_id": "ecnu-art"
+        },
+        {
+          "person_id": "ecnu-gejun",
+          "source_candidate_sha256": "d22124dc98bc55c14e210b94d26e73bfc80b1e57b2f62a0208f6dac5ef52cc77",
+          "source_evidence_sha256": "ac91e0afc156724b09cda4d4dabcb42d8c6f95d533cab1951a04e068ebf73965",
+          "source_review_sha256": "205aa9581d3e0769d00d1ec3b051801eda786282b669b184ce226a3490c035b4",
+          "education": 2,
+          "degree_true_false_null": [
+            1,
+            1,
+            0
+          ],
+          "appointments": 2,
+          "mentors": 0,
+          "publications": 2,
+          "teaching": 0,
+          "canonical_org_id": "ecnu-history"
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "sha256": "16f661ee52375866d1c64034f92a460a49d4ccda6b665fc34551c2754a8e6f9b",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "4b901f23b230a7884a62e17fcd7b48414a1171da93a5cfde5410b7661f779a44",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "99889138e2df2bfd93b5bb5ce5012c08b73173fc6505ffaa358ba5b7d8d5eb54",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "5646ed1713d313d4bbda1406f245a3c231adb43b8bc2688bb3321b39343f2ada",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "ffc43072c7608f8e8d4465fa6d125989e089ec3397fb44110d008860b1807863",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "a06d669df5064c3415cb296a7e87a3b35886b9b2e03a5e6d50a67e09883b9b22",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "bd834b62e9fe5fda4456d06339e7e5e3775b755420990470d0a99ce0c4c04e28",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "346b8b833a59cd3c8cc9c077162bc446ad4d2443f401ced2d3d1079bc184fe64",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "1b653c07475a03e065ae7b67a16f0236c831054c3b591f8e48e99f7fa7912837",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "30ba48ad69ecef9da4b78dc8324af86d74e414eeba1702346c0641aef01a5e2a",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "6c00253943723798c6dd00690cb448eb41b11e404de73ea8a94f955781fcf752",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "03c4570ac44a3071a528fc82527b33e38445c3aa6658af1caa92c32967ad530a",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "03c4570ac44a3071a528fc82527b33e38445c3aa6658af1caa92c32967ad530a",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "03c4570ac44a3071a528fc82527b33e38445c3aa6658af1caa92c32967ad530a",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "03c4570ac44a3071a528fc82527b33e38445c3aa6658af1caa92c32967ad530a",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "49f2a1002a026c8276264d123991dd9a67bd7af5c854d541a6955fd89fa469ef",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "8237abd5e159889de5b7870eb9755a52de61589e93ed5916874ee4314e4d2ff2",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "377425fbc71a9af87e66fc670f3f85aa80533fcfdd7a9f4cfdd2845342b07f0b",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "51a14ff43e445afa3df9d060f09601455f5d76bb09fceb6ea8a13bd26617654e",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "93ec05f410f0e287b02fce090b0c94a904e02c140eff8adde24b5c9cbe81edbb",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "7094023993cebf6c13b3202b1948ae22e375f3b30d34b739420a566b72c30263",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "3921a6268970b3c9fe24e1bceaea2b376b36b281311bde19ee8ed47c1af5962a",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "d276a24de8b678f28bb3fcff7303aa9d1f54031b0ddb8b7a3ff95f0738b41906",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "bf29afb04d853273c308f3899191a825a095de0d75caa47523e491437f7eb72f",
+          "source_id": "ecnu-education-organization"
+        },
+        {
+          "sha256": "a9105d8dc6721f2a3b53f1166176884061bf8d1bf0ce784cbe789419d1ea2fd0",
+          "source_id": "ecnu-education-organization"
+        },
+        {
+          "sha256": "1a6e70accb5760562a81bc5f6eceb74367531cf70cc8a2f24b38ee83aabe5513",
+          "source_id": "ecnu-education-directory"
+        },
+        {
+          "sha256": "93ec05f410f0e287b02fce090b0c94a904e02c140eff8adde24b5c9cbe81edbb",
+          "source_id": "ecnu-education-directory"
+        },
+        {
+          "sha256": "229247b606fd19679ab00db2fb309969c202016fc511dba6cbba2a9867093026",
+          "source_id": "ecnu-education-directory"
+        },
+        {
+          "sha256": "16f661ee52375866d1c64034f92a460a49d4ccda6b665fc34551c2754a8e6f9b",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "16f661ee52375866d1c64034f92a460a49d4ccda6b665fc34551c2754a8e6f9b",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "4b901f23b230a7884a62e17fcd7b48414a1171da93a5cfde5410b7661f779a44",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "4b901f23b230a7884a62e17fcd7b48414a1171da93a5cfde5410b7661f779a44",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "99889138e2df2bfd93b5bb5ce5012c08b73173fc6505ffaa358ba5b7d8d5eb54",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "99889138e2df2bfd93b5bb5ce5012c08b73173fc6505ffaa358ba5b7d8d5eb54",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "5646ed1713d313d4bbda1406f245a3c231adb43b8bc2688bb3321b39343f2ada",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "5646ed1713d313d4bbda1406f245a3c231adb43b8bc2688bb3321b39343f2ada",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "ffc43072c7608f8e8d4465fa6d125989e089ec3397fb44110d008860b1807863",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "ffc43072c7608f8e8d4465fa6d125989e089ec3397fb44110d008860b1807863",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "a06d669df5064c3415cb296a7e87a3b35886b9b2e03a5e6d50a67e09883b9b22",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "a06d669df5064c3415cb296a7e87a3b35886b9b2e03a5e6d50a67e09883b9b22",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "bd834b62e9fe5fda4456d06339e7e5e3775b755420990470d0a99ce0c4c04e28",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "bd834b62e9fe5fda4456d06339e7e5e3775b755420990470d0a99ce0c4c04e28",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "346b8b833a59cd3c8cc9c077162bc446ad4d2443f401ced2d3d1079bc184fe64",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "346b8b833a59cd3c8cc9c077162bc446ad4d2443f401ced2d3d1079bc184fe64",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "1b653c07475a03e065ae7b67a16f0236c831054c3b591f8e48e99f7fa7912837",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "1b653c07475a03e065ae7b67a16f0236c831054c3b591f8e48e99f7fa7912837",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "30ba48ad69ecef9da4b78dc8324af86d74e414eeba1702346c0641aef01a5e2a",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "30ba48ad69ecef9da4b78dc8324af86d74e414eeba1702346c0641aef01a5e2a",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "6c00253943723798c6dd00690cb448eb41b11e404de73ea8a94f955781fcf752",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "6c00253943723798c6dd00690cb448eb41b11e404de73ea8a94f955781fcf752",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "49f2a1002a026c8276264d123991dd9a67bd7af5c854d541a6955fd89fa469ef",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "49f2a1002a026c8276264d123991dd9a67bd7af5c854d541a6955fd89fa469ef",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "49f2a1002a026c8276264d123991dd9a67bd7af5c854d541a6955fd89fa469ef",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "49f2a1002a026c8276264d123991dd9a67bd7af5c854d541a6955fd89fa469ef",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "8237abd5e159889de5b7870eb9755a52de61589e93ed5916874ee4314e4d2ff2",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "8237abd5e159889de5b7870eb9755a52de61589e93ed5916874ee4314e4d2ff2",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "8237abd5e159889de5b7870eb9755a52de61589e93ed5916874ee4314e4d2ff2",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "8237abd5e159889de5b7870eb9755a52de61589e93ed5916874ee4314e4d2ff2",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "377425fbc71a9af87e66fc670f3f85aa80533fcfdd7a9f4cfdd2845342b07f0b",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "51a14ff43e445afa3df9d060f09601455f5d76bb09fceb6ea8a13bd26617654e",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "93ec05f410f0e287b02fce090b0c94a904e02c140eff8adde24b5c9cbe81edbb",
+          "source_id": null
+        },
+        {
+          "sha256": "7094023993cebf6c13b3202b1948ae22e375f3b30d34b739420a566b72c30263",
+          "source_id": null
+        },
+        {
+          "sha256": "3921a6268970b3c9fe24e1bceaea2b376b36b281311bde19ee8ed47c1af5962a",
+          "source_id": null
+        },
+        {
+          "sha256": "d276a24de8b678f28bb3fcff7303aa9d1f54031b0ddb8b7a3ff95f0738b41906",
+          "source_id": null
+        },
+        {
+          "sha256": "16f661ee52375866d1c64034f92a460a49d4ccda6b665fc34551c2754a8e6f9b",
+          "source_id": null
+        },
+        {
+          "sha256": "4b901f23b230a7884a62e17fcd7b48414a1171da93a5cfde5410b7661f779a44",
+          "source_id": null
+        },
+        {
+          "sha256": "99889138e2df2bfd93b5bb5ce5012c08b73173fc6505ffaa358ba5b7d8d5eb54",
+          "source_id": null
+        },
+        {
+          "sha256": "5646ed1713d313d4bbda1406f245a3c231adb43b8bc2688bb3321b39343f2ada",
+          "source_id": null
+        },
+        {
+          "sha256": "ffc43072c7608f8e8d4465fa6d125989e089ec3397fb44110d008860b1807863",
+          "source_id": null
+        },
+        {
+          "sha256": "a06d669df5064c3415cb296a7e87a3b35886b9b2e03a5e6d50a67e09883b9b22",
+          "source_id": null
+        },
+        {
+          "sha256": "bd834b62e9fe5fda4456d06339e7e5e3775b755420990470d0a99ce0c4c04e28",
+          "source_id": null
+        },
+        {
+          "sha256": "346b8b833a59cd3c8cc9c077162bc446ad4d2443f401ced2d3d1079bc184fe64",
+          "source_id": null
+        },
+        {
+          "sha256": "1b653c07475a03e065ae7b67a16f0236c831054c3b591f8e48e99f7fa7912837",
+          "source_id": null
+        },
+        {
+          "sha256": "30ba48ad69ecef9da4b78dc8324af86d74e414eeba1702346c0641aef01a5e2a",
+          "source_id": null
+        },
+        {
+          "sha256": "6c00253943723798c6dd00690cb448eb41b11e404de73ea8a94f955781fcf752",
+          "source_id": null
+        },
+        {
+          "sha256": "03c4570ac44a3071a528fc82527b33e38445c3aa6658af1caa92c32967ad530a",
+          "source_id": null
+        },
+        {
+          "sha256": "377425fbc71a9af87e66fc670f3f85aa80533fcfdd7a9f4cfdd2845342b07f0b",
+          "source_id": null
+        },
+        {
+          "sha256": "51a14ff43e445afa3df9d060f09601455f5d76bb09fceb6ea8a13bd26617654e",
+          "source_id": null
+        },
+        {
+          "sha256": "49f2a1002a026c8276264d123991dd9a67bd7af5c854d541a6955fd89fa469ef",
+          "source_id": null
+        },
+        {
+          "sha256": "8237abd5e159889de5b7870eb9755a52de61589e93ed5916874ee4314e4d2ff2",
+          "source_id": null
+        },
+        {
+          "sha256": "bf29afb04d853273c308f3899191a825a095de0d75caa47523e491437f7eb72f",
+          "source_id": null
+        },
+        {
+          "sha256": "a9105d8dc6721f2a3b53f1166176884061bf8d1bf0ce784cbe789419d1ea2fd0",
+          "source_id": null
+        },
+        {
+          "sha256": "30fe835f62af9a61e4f0163996c88acc4ac3cd4872585b8fbf3cd6a22ddba5fb",
+          "source_id": null
+        },
+        {
+          "sha256": "1a6e70accb5760562a81bc5f6eceb74367531cf70cc8a2f24b38ee83aabe5513",
+          "source_id": null
+        },
+        {
+          "sha256": "93ec05f410f0e287b02fce090b0c94a904e02c140eff8adde24b5c9cbe81edbb",
+          "source_id": null
+        },
+        {
+          "sha256": "229247b606fd19679ab00db2fb309969c202016fc511dba6cbba2a9867093026",
+          "source_id": null
+        },
+        {
+          "sha256": "7094023993cebf6c13b3202b1948ae22e375f3b30d34b739420a566b72c30263",
+          "source_id": "ecnu-xusheng-profile"
+        },
+        {
+          "sha256": "30fe835f62af9a61e4f0163996c88acc4ac3cd4872585b8fbf3cd6a22ddba5fb",
+          "source_id": "ecnu-education-organization"
+        },
+        {
+          "sha256": "f174529568856bc296d4b98b6b8d4edf486ffc41f627bfba477f45052c1f545b",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "11d25e0e8f510b9875263feecf81c2ec300bc279d88625ce0d91f1320cff11ef",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "1359312b667589f868ad39ba22bbc12728f5ca76833b168fb99e8f4b9a4af86c",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "aa5def4750c44a9537c1ee600faca3026b9351f5ced96abd99e1dee29c475ca3",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "f174529568856bc296d4b98b6b8d4edf486ffc41f627bfba477f45052c1f545b",
+          "source_id": "ecnu-chinese-modern-literature-directory"
+        },
+        {
+          "sha256": "7afd449aa4fe07686ac157e263f44d4e9dc33f386f3455e07d068b63ceac5196",
+          "source_id": "ecnu-chinese-modern-literature-directory"
+        },
+        {
+          "sha256": "d8b7b22c550778400f7669d45beca3f7a21c4be6a99c6381fd252ce3ac782489",
+          "source_id": "ecnu-chinese-modern-literature-directory"
+        },
+        {
+          "sha256": "75d611a881f7958e90f448ee0da1133ebecf1703ed4ce587e3182980ccfba04d",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "305ba9b4917351470bfc45ce0c0953158db045f17784032e665a64ec8236ec61",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "305ba9b4917351470bfc45ce0c0953158db045f17784032e665a64ec8236ec61",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "eec1246c4e7cc701d13456fc07365b8d8db7b2fdeb566172d6694b54df8709d8",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "eec1246c4e7cc701d13456fc07365b8d8db7b2fdeb566172d6694b54df8709d8",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "eec1246c4e7cc701d13456fc07365b8d8db7b2fdeb566172d6694b54df8709d8",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "49732bd8ddfb93a1cf9dc997bd08ca4e7ca26259e5c61702e77554ce4a6b2d99",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "ff6e75de09a44bebcf807e63c02d4e9123f2aae031561c22c0b4626586f569d2",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "af74cb2d8cbe53685cc237ac1f58ca25df6aa9692f0feae8822482fcacb163fa",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "9ebb8b912b5cafcfa60ad7899372df678994411f2dc638e392fc6e25877bd5e2",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "83849a5433d9077039cd3acd64f6b2c48b9d7922441e5734006f8bd60494c435",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "75d611a881f7958e90f448ee0da1133ebecf1703ed4ce587e3182980ccfba04d",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "75d611a881f7958e90f448ee0da1133ebecf1703ed4ce587e3182980ccfba04d",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "305ba9b4917351470bfc45ce0c0953158db045f17784032e665a64ec8236ec61",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "305ba9b4917351470bfc45ce0c0953158db045f17784032e665a64ec8236ec61",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "305ba9b4917351470bfc45ce0c0953158db045f17784032e665a64ec8236ec61",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "eec1246c4e7cc701d13456fc07365b8d8db7b2fdeb566172d6694b54df8709d8",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "eec1246c4e7cc701d13456fc07365b8d8db7b2fdeb566172d6694b54df8709d8",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "eec1246c4e7cc701d13456fc07365b8d8db7b2fdeb566172d6694b54df8709d8",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "eec1246c4e7cc701d13456fc07365b8d8db7b2fdeb566172d6694b54df8709d8",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "eec1246c4e7cc701d13456fc07365b8d8db7b2fdeb566172d6694b54df8709d8",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "eec1246c4e7cc701d13456fc07365b8d8db7b2fdeb566172d6694b54df8709d8",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "49732bd8ddfb93a1cf9dc997bd08ca4e7ca26259e5c61702e77554ce4a6b2d99",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "49732bd8ddfb93a1cf9dc997bd08ca4e7ca26259e5c61702e77554ce4a6b2d99",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "9ebb8b912b5cafcfa60ad7899372df678994411f2dc638e392fc6e25877bd5e2",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "9ebb8b912b5cafcfa60ad7899372df678994411f2dc638e392fc6e25877bd5e2",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "9ebb8b912b5cafcfa60ad7899372df678994411f2dc638e392fc6e25877bd5e2",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "9ebb8b912b5cafcfa60ad7899372df678994411f2dc638e392fc6e25877bd5e2",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "83849a5433d9077039cd3acd64f6b2c48b9d7922441e5734006f8bd60494c435",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "83849a5433d9077039cd3acd64f6b2c48b9d7922441e5734006f8bd60494c435",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "83849a5433d9077039cd3acd64f6b2c48b9d7922441e5734006f8bd60494c435",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "83849a5433d9077039cd3acd64f6b2c48b9d7922441e5734006f8bd60494c435",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "af74cb2d8cbe53685cc237ac1f58ca25df6aa9692f0feae8822482fcacb163fa",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "f174529568856bc296d4b98b6b8d4edf486ffc41f627bfba477f45052c1f545b",
+          "source_id": null
+        },
+        {
+          "sha256": "11d25e0e8f510b9875263feecf81c2ec300bc279d88625ce0d91f1320cff11ef",
+          "source_id": null
+        },
+        {
+          "sha256": "1359312b667589f868ad39ba22bbc12728f5ca76833b168fb99e8f4b9a4af86c",
+          "source_id": null
+        },
+        {
+          "sha256": "75d611a881f7958e90f448ee0da1133ebecf1703ed4ce587e3182980ccfba04d",
+          "source_id": null
+        },
+        {
+          "sha256": "305ba9b4917351470bfc45ce0c0953158db045f17784032e665a64ec8236ec61",
+          "source_id": null
+        },
+        {
+          "sha256": "eec1246c4e7cc701d13456fc07365b8d8db7b2fdeb566172d6694b54df8709d8",
+          "source_id": null
+        },
+        {
+          "sha256": "49732bd8ddfb93a1cf9dc997bd08ca4e7ca26259e5c61702e77554ce4a6b2d99",
+          "source_id": null
+        },
+        {
+          "sha256": "aa5def4750c44a9537c1ee600faca3026b9351f5ced96abd99e1dee29c475ca3",
+          "source_id": null
+        },
+        {
+          "sha256": "ff6e75de09a44bebcf807e63c02d4e9123f2aae031561c22c0b4626586f569d2",
+          "source_id": null
+        },
+        {
+          "sha256": "af74cb2d8cbe53685cc237ac1f58ca25df6aa9692f0feae8822482fcacb163fa",
+          "source_id": null
+        },
+        {
+          "sha256": "9ebb8b912b5cafcfa60ad7899372df678994411f2dc638e392fc6e25877bd5e2",
+          "source_id": null
+        },
+        {
+          "sha256": "83849a5433d9077039cd3acd64f6b2c48b9d7922441e5734006f8bd60494c435",
+          "source_id": null
+        },
+        {
+          "sha256": "7afd449aa4fe07686ac157e263f44d4e9dc33f386f3455e07d068b63ceac5196",
+          "source_id": null
+        },
+        {
+          "sha256": "f174529568856bc296d4b98b6b8d4edf486ffc41f627bfba477f45052c1f545b",
+          "source_id": null
+        },
+        {
+          "sha256": "d8b7b22c550778400f7669d45beca3f7a21c4be6a99c6381fd252ce3ac782489",
+          "source_id": null
+        },
+        {
+          "sha256": "11d25e0e8f510b9875263feecf81c2ec300bc279d88625ce0d91f1320cff11ef",
+          "source_id": "ecnu-yinguoming-profile"
+        },
+        {
+          "sha256": "14b85a9ceb0a43ad032cfd901712af609704016aad9704a09045728f8ce6d6c1",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "43a518351bb7bfdc53f8cac2043ddf04bb6a9cca1933646489ff7d13d349fe43",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "cd4e7f099cff5fe0f93f3d6b5713253f430bad4894d597e4515c9d16a895245f",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "b20dad01ec4fd4622f52eeb03fc607e4e6c672743b8f6f93dbebf3e51adf6f54",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "13f8dfb0cd0c0143127b832bd41b4544d9cecacbd8c342a492506e1d3ed8f1a8",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "f61f886a99d8b8331c8d053033f8f9b7adf63695943c003d2c71fd9683fed7b4",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "e7b909b6784443203c3ab0ffef77d6419608fb063e927bd43552a0fbf7c5cf42",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "f69d727adea5d9a4df04193c589732aa7b85e435c5c92036cc00eea71a578f05",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "f61ec77c11c56453b07932585f35761f3df320afffe7f5b4b15dd5228a7ece04",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "5194ac0c01ebc7faab61d5df4184fc9f4281ef3ac1975941a90255273fb3b2f2",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "94a703b10a9b61d9e937d75c349347ff7d96916f930beb71e4adf55f912d88a4",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "f4401d06728382a58fe76dd58482b2cd4ab91735c4e6db02b4db30ee7f4d87a5",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "e5b839af34cf176bc019d03976f33e1bff43f740fbbd46aabbecc0ac2a1bb91f",
+          "source_id": "ecnu-art-professors-directory"
+        },
+        {
+          "sha256": "9e79d2b080e92176bbdef30fe5d4ab0ad7c2547d0325e6ce07d415224486604b",
+          "source_id": "ecnu-art-professors-directory"
+        },
+        {
+          "sha256": "302208558ccc00f27370b8997310879a5fb0790cbe989cd97fd0f784918fee4f",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "14b85a9ceb0a43ad032cfd901712af609704016aad9704a09045728f8ce6d6c1",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "14b85a9ceb0a43ad032cfd901712af609704016aad9704a09045728f8ce6d6c1",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "43a518351bb7bfdc53f8cac2043ddf04bb6a9cca1933646489ff7d13d349fe43",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "43a518351bb7bfdc53f8cac2043ddf04bb6a9cca1933646489ff7d13d349fe43",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "cd4e7f099cff5fe0f93f3d6b5713253f430bad4894d597e4515c9d16a895245f",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "b20dad01ec4fd4622f52eeb03fc607e4e6c672743b8f6f93dbebf3e51adf6f54",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "cd4e7f099cff5fe0f93f3d6b5713253f430bad4894d597e4515c9d16a895245f",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "13f8dfb0cd0c0143127b832bd41b4544d9cecacbd8c342a492506e1d3ed8f1a8",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "f61f886a99d8b8331c8d053033f8f9b7adf63695943c003d2c71fd9683fed7b4",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "13f8dfb0cd0c0143127b832bd41b4544d9cecacbd8c342a492506e1d3ed8f1a8",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "e7b909b6784443203c3ab0ffef77d6419608fb063e927bd43552a0fbf7c5cf42",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "e7b909b6784443203c3ab0ffef77d6419608fb063e927bd43552a0fbf7c5cf42",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "f69d727adea5d9a4df04193c589732aa7b85e435c5c92036cc00eea71a578f05",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "f69d727adea5d9a4df04193c589732aa7b85e435c5c92036cc00eea71a578f05",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "f61ec77c11c56453b07932585f35761f3df320afffe7f5b4b15dd5228a7ece04",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "f61ec77c11c56453b07932585f35761f3df320afffe7f5b4b15dd5228a7ece04",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "f61ec77c11c56453b07932585f35761f3df320afffe7f5b4b15dd5228a7ece04",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "f61ec77c11c56453b07932585f35761f3df320afffe7f5b4b15dd5228a7ece04",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "5194ac0c01ebc7faab61d5df4184fc9f4281ef3ac1975941a90255273fb3b2f2",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "5194ac0c01ebc7faab61d5df4184fc9f4281ef3ac1975941a90255273fb3b2f2",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "5194ac0c01ebc7faab61d5df4184fc9f4281ef3ac1975941a90255273fb3b2f2",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "5194ac0c01ebc7faab61d5df4184fc9f4281ef3ac1975941a90255273fb3b2f2",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "94a703b10a9b61d9e937d75c349347ff7d96916f930beb71e4adf55f912d88a4",
+          "source_id": null
+        },
+        {
+          "sha256": "f4401d06728382a58fe76dd58482b2cd4ab91735c4e6db02b4db30ee7f4d87a5",
+          "source_id": null
+        },
+        {
+          "sha256": "14b85a9ceb0a43ad032cfd901712af609704016aad9704a09045728f8ce6d6c1",
+          "source_id": null
+        },
+        {
+          "sha256": "43a518351bb7bfdc53f8cac2043ddf04bb6a9cca1933646489ff7d13d349fe43",
+          "source_id": null
+        },
+        {
+          "sha256": "cd4e7f099cff5fe0f93f3d6b5713253f430bad4894d597e4515c9d16a895245f",
+          "source_id": null
+        },
+        {
+          "sha256": "b20dad01ec4fd4622f52eeb03fc607e4e6c672743b8f6f93dbebf3e51adf6f54",
+          "source_id": null
+        },
+        {
+          "sha256": "13f8dfb0cd0c0143127b832bd41b4544d9cecacbd8c342a492506e1d3ed8f1a8",
+          "source_id": null
+        },
+        {
+          "sha256": "f61f886a99d8b8331c8d053033f8f9b7adf63695943c003d2c71fd9683fed7b4",
+          "source_id": null
+        },
+        {
+          "sha256": "e7b909b6784443203c3ab0ffef77d6419608fb063e927bd43552a0fbf7c5cf42",
+          "source_id": null
+        },
+        {
+          "sha256": "f69d727adea5d9a4df04193c589732aa7b85e435c5c92036cc00eea71a578f05",
+          "source_id": null
+        },
+        {
+          "sha256": "302208558ccc00f27370b8997310879a5fb0790cbe989cd97fd0f784918fee4f",
+          "source_id": null
+        },
+        {
+          "sha256": "f61ec77c11c56453b07932585f35761f3df320afffe7f5b4b15dd5228a7ece04",
+          "source_id": null
+        },
+        {
+          "sha256": "5194ac0c01ebc7faab61d5df4184fc9f4281ef3ac1975941a90255273fb3b2f2",
+          "source_id": null
+        },
+        {
+          "sha256": "e5b839af34cf176bc019d03976f33e1bff43f740fbbd46aabbecc0ac2a1bb91f",
+          "source_id": null
+        },
+        {
+          "sha256": "9e79d2b080e92176bbdef30fe5d4ab0ad7c2547d0325e6ce07d415224486604b",
+          "source_id": null
+        },
+        {
+          "sha256": "f4401d06728382a58fe76dd58482b2cd4ab91735c4e6db02b4db30ee7f4d87a5",
+          "source_id": "ecnu-zhuhu-profile"
+        },
+        {
+          "sha256": "520bd6313c573261e344346903f52644d067e743fa2c6ea5ba40c2edab680581",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "694c3325ea9414a166d2429e20462256eebef5cfc49d6f80cb57c194b2592b54",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "aac260577a8a1cb8347d588ef3abe66fcf9ebfc97bfda9e8a859cdb735c58f68",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "b4958fed9a0206054945eccd7e1afe95ae01af21070382bf49fdac5ea610b9ef",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "2805192d50f2f3fb39e02b1d2f5549454ef21b9e124ec8e8977a7452e4748ec9",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "694c3325ea9414a166d2429e20462256eebef5cfc49d6f80cb57c194b2592b54",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "68b69af18f377c03c9f792745a47cdb44c55d1c150a4db19c22a8fb252db9133",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "694c3325ea9414a166d2429e20462256eebef5cfc49d6f80cb57c194b2592b54",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "aac260577a8a1cb8347d588ef3abe66fcf9ebfc97bfda9e8a859cdb735c58f68",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "a6cd67430b920a95f2c815f5d5a8922fc608289afc27decf906f2b99c8c31c2d",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "da4f46cecd4a50f8519b2f099f4bbcf0da7ab234e712f4166910a197c0913743",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "b4958fed9a0206054945eccd7e1afe95ae01af21070382bf49fdac5ea610b9ef",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "b4958fed9a0206054945eccd7e1afe95ae01af21070382bf49fdac5ea610b9ef",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "2805192d50f2f3fb39e02b1d2f5549454ef21b9e124ec8e8977a7452e4748ec9",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "2805192d50f2f3fb39e02b1d2f5549454ef21b9e124ec8e8977a7452e4748ec9",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "694c3325ea9414a166d2429e20462256eebef5cfc49d6f80cb57c194b2592b54",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "68b69af18f377c03c9f792745a47cdb44c55d1c150a4db19c22a8fb252db9133",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "68b69af18f377c03c9f792745a47cdb44c55d1c150a4db19c22a8fb252db9133",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "694c3325ea9414a166d2429e20462256eebef5cfc49d6f80cb57c194b2592b54",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "aac260577a8a1cb8347d588ef3abe66fcf9ebfc97bfda9e8a859cdb735c58f68",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "aac260577a8a1cb8347d588ef3abe66fcf9ebfc97bfda9e8a859cdb735c58f68",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "a6cd67430b920a95f2c815f5d5a8922fc608289afc27decf906f2b99c8c31c2d",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "a6cd67430b920a95f2c815f5d5a8922fc608289afc27decf906f2b99c8c31c2d",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "a6cd67430b920a95f2c815f5d5a8922fc608289afc27decf906f2b99c8c31c2d",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "a6cd67430b920a95f2c815f5d5a8922fc608289afc27decf906f2b99c8c31c2d",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "da4f46cecd4a50f8519b2f099f4bbcf0da7ab234e712f4166910a197c0913743",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "da4f46cecd4a50f8519b2f099f4bbcf0da7ab234e712f4166910a197c0913743",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "da4f46cecd4a50f8519b2f099f4bbcf0da7ab234e712f4166910a197c0913743",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "da4f46cecd4a50f8519b2f099f4bbcf0da7ab234e712f4166910a197c0913743",
+          "source_id": "ge-profile"
+        },
+        {
+          "sha256": "520bd6313c573261e344346903f52644d067e743fa2c6ea5ba40c2edab680581",
+          "source_id": null
+        },
+        {
+          "sha256": "694c3325ea9414a166d2429e20462256eebef5cfc49d6f80cb57c194b2592b54",
+          "source_id": null
+        },
+        {
+          "sha256": "b4958fed9a0206054945eccd7e1afe95ae01af21070382bf49fdac5ea610b9ef",
+          "source_id": null
+        },
+        {
+          "sha256": "2805192d50f2f3fb39e02b1d2f5549454ef21b9e124ec8e8977a7452e4748ec9",
+          "source_id": null
+        },
+        {
+          "sha256": "68b69af18f377c03c9f792745a47cdb44c55d1c150a4db19c22a8fb252db9133",
+          "source_id": null
+        },
+        {
+          "sha256": "aac260577a8a1cb8347d588ef3abe66fcf9ebfc97bfda9e8a859cdb735c58f68",
+          "source_id": null
+        },
+        {
+          "sha256": "a6cd67430b920a95f2c815f5d5a8922fc608289afc27decf906f2b99c8c31c2d",
+          "source_id": null
+        },
+        {
+          "sha256": "da4f46cecd4a50f8519b2f099f4bbcf0da7ab234e712f4166910a197c0913743",
+          "source_id": null
+        },
+        {
+          "sha256": "aac260577a8a1cb8347d588ef3abe66fcf9ebfc97bfda9e8a859cdb735c58f68",
+          "source_id": "ge-profile"
+        }
+      ],
+      "mapping_notes": [
+        "仅计划批准的四人及accepted源路径；未读取或重做held615/618审查与兼容历史。完整heldURL清单未提供，不声称全URL排除。",
+        "原教育三态不变；非学位训练合并教育展示，殷1985任教不当学习毕业。葛合并学习原区间保留专字段/可见note，canonical博士start/end未知。",
+        "6组织原证据归属：原教育学部/康复科学系父子保留；中国语言文学系不猜人文社科学院parent；美术学院与历史系/研究院新显示ID均parentnull。"
+      ],
+      "semantic_locator_correction": {
+        "previous_payload_sha256": "1e07e89e87c02f9a822fec4ac8ae12f5c6cdf16d6887b2a7fd9ce7d9d87b2163",
+        "json_pointer": "/people/1/education/1/institution_normalization_basis",
+        "new_value": "同页人物简介明确华东师范大学及中文系归属，华东师大为来源简称；不是独立授位校声明。",
+        "inverse_restores_previous_payload": true
+      }
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧790事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}

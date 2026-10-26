@@ -4,11 +4,12 @@ import fs from 'node:fs';
 import {matches, stages, mentorOfficialUrl, mentorProfileRoute} from '../site/model.js';
 const xjtuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-xjtu12-source-mapping.json',import.meta.url)));
 const rucMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ruc8-source-mapping.json',import.meta.url)));
+const ecnuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ecnu12-source-mapping.json',import.meta.url)));
 const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-whu9-source-mapping.json',import.meta.url)));
 test('actual WHU cohort exactly preserves independently reviewed fields, identities and scope',()=>{
- assert.equal(db.people.length,761+mapping.people.length+xjtuMapping.people.length+rucMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,761+mapping.people.length+xjtuMapping.people.length+rucMapping.people.length+ecnuMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const expected of mapping.people){
   const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);
   assert.equal(typeof actual.department,'string');assert(actual.department.length>0);
