@@ -4,11 +4,12 @@ import fs from 'node:fs';
 import {matches, stages, mentorOfficialUrl, mentorProfileRoute} from '../site/model.js';
 const ecnuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ecnu12-source-mapping.json',import.meta.url)));
 const buaaMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-buaa12-source-mapping.json',import.meta.url)));
+const tongjiMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-tongji12-source-mapping.json',import.meta.url)));
 const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ruc8-source-mapping.json',import.meta.url)));
 test('actual RUC cohort exactly preserves independently reviewed fields, identities and scope',()=>{
- assert.equal(db.people.length,782+mapping.people.length+ecnuMapping.people.length+buaaMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,782+mapping.people.length+ecnuMapping.people.length+buaaMapping.people.length+tongjiMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const expected of mapping.people){
   const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);
   assert.equal(typeof actual.department,'string');assert(actual.department.length>0);
