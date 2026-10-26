@@ -1,0 +1,928 @@
+{
+  "schema_version": "independent-zju7-canonical-mapping-1",
+  "baseline_commit": "2dc85e157f904f70ea5a68caaff1d01e45237865",
+  "new_people": [
+    "zju-baozehua",
+    "zju-jinweifeng",
+    "zju-zhoujia",
+    "zju-zuhui",
+    "zju-liudonghong",
+    "zju-louhansong-literature",
+    "zju-wuxifeng"
+  ],
+  "new_org_ids": [
+    "zju-chemical-biological-engineering",
+    "zju-hic-biomolecular-manufacturing",
+    "zju-yrd-future-food-lab",
+    "zju-legislation-research-institute",
+    "zju-history",
+    "zju-history-ancient",
+    "zju-literature",
+    "zju-public-health"
+  ],
+  "counts": {
+    "people": 7,
+    "org_units": 8,
+    "education": 16,
+    "appointments": 9,
+    "publications": 7,
+    "mentors": 3,
+    "teaching": 3,
+    "institutional_associations": 1,
+    "professional_research_advisors": 0,
+    "career_end_events": 0,
+    "unbound_person_degree_credentials": 0,
+    "creative_works": 0,
+    "degree_true": 15,
+    "degree_false": 1,
+    "degree_unknown": 0
+  },
+  "counting_scope": "教育事件授位三态与未绑定具体阶段的本人全局学位凭证分开统计；后者不增加教育事件、不指定学校或日期。教学记录可含课程建设项目，作品区分论文书目与创作，关系按原阶段不统称论文指导。",
+  "mapping_inputs": [
+    {
+      "source_group_id": "zju-engineering-food",
+      "canonical_payload_sha256": "ef5bb3c468ac76dcccfd8f9b734635dc5f5042385a4991bbfd17a7a5214b0494",
+      "field_mapping_sha256": "75c66e86110e8e9d38fdb29d5fe75f9837eb0c6789fb903714acc5068aca7e07",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "zju-law-history",
+      "canonical_payload_sha256": "0ca600a9f709cb1bb6611f38a6bda4dad0c9c988f98ff5a6d477fb4d23ce4740",
+      "field_mapping_sha256": "10b07105499a0040dcc019b0150f5023ecb31ed432b84c1bf7e4cf21a2016065",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "zju-literature-publichealth",
+      "canonical_payload_sha256": "3133551411577df4f8c7800199354a7121b116e103c49becf1b2c8cd56895123",
+      "field_mapping_sha256": "de5b1c3ca57c13eaac35e108f1d8edadaa0554631bc82d612e49954ea12f36b3",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "ef5bb3c468ac76dcccfd8f9b734635dc5f5042385a4991bbfd17a7a5214b0494",
+      "people": [
+        {
+          "person_id": "zju-baozehua",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "教育/研修／清华大学／学士"
+            },
+            {
+              "field_address": [
+                "education",
+                1
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "教育/研修／伊利诺伊大学香槟分校／博士"
+            },
+            {
+              "field_address": [
+                "education",
+                2
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "教育/研修／波士顿大学／博士后"
+            },
+            {
+              "field_address": [
+                "appointments",
+                0
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "职业经历／浙江大学杭州国际科创中心／“青年人才卓越计划”研究员"
+            },
+            {
+              "field_address": [
+                "appointments",
+                1
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "职业经历／浙江大学／“百人计划”研究员"
+            },
+            {
+              "field_address": [
+                "appointments",
+                2
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "职业经历／波士顿大学／博士后"
+            },
+            {
+              "field_address": [
+                "mentors",
+                0
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "具名阶段指导／本科／饶子和"
+            },
+            {
+              "field_address": [
+                "mentors",
+                1
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "具名阶段指导／博士／Huimin Zhao"
+            },
+            {
+              "field_address": [
+                "mentors",
+                2
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "具名阶段指导／博士后／Ahmad S. Khalil"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "具名作品／Multiplex genome engineering: Methodologies and applications"
+            },
+            {
+              "field_address": [
+                "publications",
+                1
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "具名作品／Massively parallel CRISPR-assisted homologous recombination enables saturation editing of full-length endogenous genes in yeast"
+            },
+            {
+              "field_address": [
+                "teaching",
+                0
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "原教学与课程段／细胞工程"
+            },
+            {
+              "field_address": [
+                "teaching",
+                1
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "原教学与课程段／认识实习"
+            },
+            {
+              "field_address": [
+                "teaching",
+                2
+              ],
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "原教学与课程段／蛋白质工程"
+            }
+          ],
+          "limitations": [
+            "独立目录只核杭州国际科创中心生物与分子智造研究院归属，化学工程与生物工程学院来自个人页与2021机构简介，不冒称核过该学院当前独立师资名录。",
+            "2020、2021任职起始和至今照录；当前人事未核，无在职或退休推定。原个人页更新标签2026-10-19不是任职或作品日期。",
+            "2010学士、2017博士明确获授；学习起始未知，授位月日未知。",
+            "博士后波士顿大学任职与简介哈佛指导者的机构修饰分别保留，不推哈佛任职；学士/博士/博后指导各保原阶段，不认证正式论文导师。",
+            "两篇只保官网书目，外部出版者及数据库未取得可接受元数据，未以搜索结果或替代路径补全。"
+          ]
+        },
+        {
+          "person_id": "zju-liudonghong",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://yrd.zju.edu.cn/2026/0326/c90459a3144695/page.htm",
+              "source_locator": "教育/研修／上海交通大学／学士"
+            },
+            {
+              "field_address": [
+                "education",
+                1
+              ],
+              "source_url": "https://yrd.zju.edu.cn/2026/0326/c90459a3144695/page.htm",
+              "source_locator": "教育/研修／浙江大学／硕士"
+            },
+            {
+              "field_address": [
+                "education",
+                2
+              ],
+              "source_url": "https://yrd.zju.edu.cn/2026/0326/c90459a3144695/page.htm",
+              "source_locator": "教育/研修／浙江大学／工学博士"
+            }
+          ],
+          "limitations": [
+            "仅已读个人页1/7及2/7，重复教育只记一次；其余分页未读。已读范围仅成果总量、无具体作品，书目0不表示本人无作品或已读完整成果。",
+            "原本人教授、未来食品实验室主任标签分别保留，任职日期与实时在岗未独立核验，未造带时间任职。长三角智慧绿洲创新中心为站点上下文，非独立法定行政父级核验。",
+            "三条教育列表分别明确学士、硕士、工学博士具体资格，按来源报告记录；授位年月未知。2006仅保留博士条目关联年，不补授位或毕业日期。",
+            "目录显示person.zju.edu.cn/liu文字地址未打开；目录个人项href、实际UI点击未核，个人页到目录reader导航与个人项导航区分。",
+            "本人导师未披露，未从本人职称或研究方向推师承；网页URL中的2026/0326不是已核页面发布日期。"
+          ]
+        }
+      ],
+      "org_identity": [
+        {
+          "id": "zju-chemical-biological-engineering",
+          "name": "化学工程与生物工程学院",
+          "type": "school",
+          "school_id": "zju",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_url": "https://person.zju.edu.cn/0020085",
+          "note": "原个人页与机构简介院名，未核学院现行独立师资目录；不作法定行政层级认证。"
+        },
+        {
+          "id": "zju-hic-biomolecular-manufacturing",
+          "name": "杭州国际科创中心生物与分子智造研究院",
+          "type": "research_institute",
+          "school_id": "zju",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_url": "https://hic.zju.edu.cn/swyfzzzpt/list.htm",
+          "note": "独立HIC目录支持其自身归属，不替代化工学院人事名录。"
+        },
+        {
+          "id": "zju-yrd-future-food-lab",
+          "name": "未来食品实验室",
+          "type": "laboratory",
+          "school_id": "zju",
+          "parent_id": null,
+          "administrative_parent_status": "not_independently_verified",
+          "source_context_as_displayed": "浙江大学长三角智慧绿洲创新中心 / 才聚绿洲 / 实验室团队 / 未来食品实验室",
+          "source_id": "zju-yrd-future-food-directory",
+          "source_url": "https://yrd.zju.edu.cn/wlspsys_90459/list.htm",
+          "evidence_id": "zju-yrd-future-food-directory-e3",
+          "quote": "未来食品实验室",
+          "observed_at": "2026-10-25T02:55:19.318Z",
+          "campus_ids": [],
+          "source_locator": "未来食品实验室目录／具名栏目",
+          "note": "中心站点上下文照录，行政父级未独立核验，parent null。"
+        }
+      ],
+      "canonical_degree_changes": [
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_degree_qualification_in_personal_education_list",
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "原文只列教育阶段及学位标签，没有明确获授句。关联年份不等于授位或毕业日期。",
+          "new": "本人教育列表明确学校、专业与学士具体资格，按来源报告学位记录；没有虚构获授动词或学位证核验，授位年月未知。原未披露学习区间或学位年份。",
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            1,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            1,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            1,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            1,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            1,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_degree_qualification_in_personal_education_list",
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            1,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "原文只列教育阶段及学位标签，没有明确获授句。关联年份不等于授位或毕业日期。",
+          "new": "本人教育列表明确学校、专业与硕士具体资格，按来源报告学位记录；没有虚构获授动词或学位证核验，授位年月未知。原未披露学习区间或学位年份。",
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            2,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            2,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            2,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            2,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            2,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_degree_qualification_in_personal_education_list",
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            2,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "原文只列教育阶段及学位标签，没有明确获授句。关联年份不等于授位或毕业日期。",
+          "new": "本人教育列表明确学校、专业与工学博士具体资格，按来源报告学位记录；没有虚构获授动词或学位证核验，授位年月未知。原2006为博士条目关联年，不直接转为授位或毕业日期。",
+          "reason": "父统一资格标准：真实个人教育列表行尾具体资格，不因行首阶段标签抹除；原null别名与原note保留"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "unknowns",
+            2
+          ],
+          "old_exists": true,
+          "old": "三条具体教育学位称谓保留；2006仅是博士条目关联年，不作为已核授位或毕业日期。",
+          "new": "三条教育列表分别明确学士、硕士、工学博士具体资格，按来源报告记录；授位年月未知。2006仅保留博士条目关联年，不补授位或毕业日期。",
+          "reason": "当前解释与三具体资格统一，保原未知日期"
+        }
+      ],
+      "inverse_proof": {
+        "initial_sha256": "29c2cf8899b429dc51a635be71f789ed7249c557e9f06b832378bf3ac6a61a72",
+        "current_sha256": "8ca24876cd3af4f0f736f048284ec965fd2fbcc25b2aa3ef911166c4a46447cc",
+        "inverse_byte_exact": true
+      },
+      "seven_facts_plus_scope_correction_deltas": [
+        {
+          "field_address": [
+            "people",
+            0,
+            "unknowns",
+            2
+          ],
+          "old_exists": true,
+          "old": "2010学士、2017博士明确获授；学习起始未知，授位月日未知。本人博士生导师是指导资格，不是本人求学导师。",
+          "new": "2010学士、2017博士明确获授；学习起始未知，授位月日未知。",
+          "reason": "移除误投第8 raw-only个人指导资格标签，仅此次明确7项可新接受；原私有raw不动"
+        },
+        {
+          "field_address": [
+            "people",
+            0,
+            "research_interests"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": "合成生物学；基因编辑；人工转录因子；定向进化",
+          "reason": "新本轮有界接受4研究方向，仅UIstring"
+        },
+        {
+          "field_address": [
+            "people",
+            0,
+            "source_research_interests"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": {
+            "labels": [
+              "合成生物学",
+              "基因编辑",
+              "人工转录因子",
+              "定向进化"
+            ],
+            "evidence": [
+              {
+                "source_id": "bao-profile",
+                "source_url": "https://person.zju.edu.cn/0020085",
+                "source_locator": "原单位与研究方向段／研究方向四项",
+                "quote": "合成生物学、基因编辑、人工转录因子、定向进化",
+                "quote_sha256": "25f343b1d6e728be0e335bc4505159a545d1a830856c5e067e5c95cde5101ab5",
+                "hash_scope": "exact necessary retained substring text",
+                "retained_raw_source_file_sha256": "ca08be2f1b1821e9a4b7723d20ba8adb0fc16b548a63f820ae31643df7626d46",
+                "observed_at_utc": "2026-10-24T19:28:11Z"
+              }
+            ]
+          },
+          "reason": "保4方向原结构与精确必要引用；不复制其余未接受header标签"
+        },
+        {
+          "field_address": [
+            "people",
+            0,
+            "teaching"
+          ],
+          "old_exists": true,
+          "old": [],
+          "new": [
+            {
+              "name": "细胞工程",
+              "course": "细胞工程",
+              "level_as_source": "本科生课程",
+              "source_id": "bao-profile",
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "原教学与课程段／细胞工程",
+              "evidence": [
+                {
+                  "source_id": "bao-profile",
+                  "source_url": "https://person.zju.edu.cn/0020085",
+                  "source_locator": "原教学与课程段／细胞工程",
+                  "quote": "《细胞工程》本科生课程",
+                  "quote_sha256": "7ffbfe3b03e31e5f64784421cff5ea2ef85cb3ca61d8337e0d844a49377a3466",
+                  "hash_scope": "exact necessary retained substring text",
+                  "retained_raw_source_file_sha256": "ca08be2f1b1821e9a4b7723d20ba8adb0fc16b548a63f820ae31643df7626d46",
+                  "observed_at_utc": "2026-10-24T19:28:11Z"
+                }
+              ],
+              "note": "原教学与课程列《细胞工程》本科生课程；具体教学角色、学期及当前开课状态未披露，不推主讲。"
+            },
+            {
+              "name": "认识实习",
+              "course": "认识实习",
+              "level_as_source": "本科生课程",
+              "source_id": "bao-profile",
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "原教学与课程段／认识实习",
+              "evidence": [
+                {
+                  "source_id": "bao-profile",
+                  "source_url": "https://person.zju.edu.cn/0020085",
+                  "source_locator": "原教学与课程段／认识实习",
+                  "quote": "《认识实习》本科生课程",
+                  "quote_sha256": "72be36ad085d2ba350b6a9def6a8561885c2845ccde2e2270d66cb99799fb11b",
+                  "hash_scope": "exact necessary retained substring text",
+                  "retained_raw_source_file_sha256": "ca08be2f1b1821e9a4b7723d20ba8adb0fc16b548a63f820ae31643df7626d46",
+                  "observed_at_utc": "2026-10-24T19:28:11Z"
+                }
+              ],
+              "note": "原教学与课程列《认识实习》本科生课程；具体教学角色、学期及当前开课状态未披露，不推主讲。"
+            },
+            {
+              "name": "蛋白质工程",
+              "course": "蛋白质工程",
+              "level_as_source": "研究生课程",
+              "source_id": "bao-profile",
+              "source_url": "https://person.zju.edu.cn/0020085",
+              "source_locator": "原教学与课程段／蛋白质工程",
+              "evidence": [
+                {
+                  "source_id": "bao-profile",
+                  "source_url": "https://person.zju.edu.cn/0020085",
+                  "source_locator": "原教学与课程段／蛋白质工程",
+                  "quote": "《蛋白质工程》研究生课程",
+                  "quote_sha256": "2d510c37db4e8bfc6d934afe3342bfbef8bcf70bbab5e4722cda29eba28128c3",
+                  "hash_scope": "exact necessary retained substring text",
+                  "retained_raw_source_file_sha256": "ca08be2f1b1821e9a4b7723d20ba8adb0fc16b548a63f820ae31643df7626d46",
+                  "observed_at_utc": "2026-10-24T19:28:11Z"
+                }
+              ],
+              "note": "原教学与课程列《蛋白质工程》研究生课程；具体教学角色、学期及当前开课状态未披露，不推主讲。"
+            }
+          ],
+          "reason": "新本轮有界接受3课程及层级；角色未知不赋主讲"
+        }
+      ],
+      "seven_facts_inverse_proof": {
+        "initial_sha256": "8ca24876cd3af4f0f736f048284ec965fd2fbcc25b2aa3ef911166c4a46447cc",
+        "current_sha256": "ef5bb3c468ac76dcccfd8f9b734635dc5f5042385a4991bbfd17a7a5214b0494",
+        "inverse_byte_exact": true
+      },
+      "new_local_acceptance": {
+        "report_sha256": "925af0ecf9e5bfc883aff50768dc9e12b6039a94c8eba654d61b73a93ff252ca",
+        "scope": "仅4研究方向及3课程/层级；不含本人博导第8标签，旧review不当全raw接受"
+      }
+    },
+    {
+      "people": [
+        {
+          "person_id": "zju-jinweifeng",
+          "source_candidate_sha256": "4ed687e5160ae79490930e467752e7b70ec3dbfc394dc0b8dd1eef7594352607",
+          "canonical_department_id": "zju-legislation-research-institute",
+          "education": [
+            {
+              "event_id": "zju-jinweifeng-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "zju-jin-profile",
+                  "source_url": "https://lifa.zju.edu.cn/2021/1014/c85504a3002032/page.htm",
+                  "excerpt_id": "zju-jin-profile-excerpt-3",
+                  "quote_sha256": "a0e8ee1dd1d1e94bf3732fafba9a8319e8bfed45751e8d99f57f49e3327de932",
+                  "source_locator": "教育并句／两所学校与三种获授学位，未逐阶段对应",
+                  "observed_at_utc": "2026-10-24T23:54:08.842Z",
+                  "field_quote_sha256": "a0e8ee1dd1d1e94bf3732fafba9a8319e8bfed45751e8d99f57f49e3327de932"
+                }
+              ]
+            },
+            {
+              "event_id": "zju-jinweifeng-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "zju-jin-profile",
+                  "source_url": "https://lifa.zju.edu.cn/2021/1014/c85504a3002032/page.htm",
+                  "excerpt_id": "zju-jin-profile-excerpt-3",
+                  "quote_sha256": "a0e8ee1dd1d1e94bf3732fafba9a8319e8bfed45751e8d99f57f49e3327de932",
+                  "source_locator": "教育并句／两所学校与三种获授学位，未逐阶段对应",
+                  "observed_at_utc": "2026-10-24T23:54:08.842Z",
+                  "field_quote_sha256": "a0e8ee1dd1d1e94bf3732fafba9a8319e8bfed45751e8d99f57f49e3327de932"
+                }
+              ]
+            },
+            {
+              "event_id": "zju-jinweifeng-education-3",
+              "field_evidence": [
+                {
+                  "source_id": "zju-jin-profile",
+                  "source_url": "https://lifa.zju.edu.cn/2021/1014/c85504a3002032/page.htm",
+                  "excerpt_id": "zju-jin-profile-excerpt-3",
+                  "quote_sha256": "a0e8ee1dd1d1e94bf3732fafba9a8319e8bfed45751e8d99f57f49e3327de932",
+                  "source_locator": "教育并句／两所学校与三种获授学位，未逐阶段对应",
+                  "observed_at_utc": "2026-10-24T23:54:08.842Z",
+                  "field_quote_sha256": "a0e8ee1dd1d1e94bf3732fafba9a8319e8bfed45751e8d99f57f49e3327de932"
+                }
+              ]
+            }
+          ],
+          "visible_scope": [
+            "仅保留必要官网职业摘录；未核原始学位证书、学位论文或出版者全文。",
+            "独立立法研究院兼职研究员目录具名及原生href、实际点击分别留有观察；不能改全职、不能把光华法学院教授拼成研究院教授。",
+            "2021-10-14正文称现为光华法学院教授、博士研究生导师，是历史角色陈述而非当前任免或起任日期；本人导师未披露。",
+            "厦门大学、浙江大学与三学位仅共同列举，三条授位学校/时间未知，不按顺序猜配。",
+            "研究领域：行政法学、行政诉讼法学和国家赔偿法学；本批未选具体书目，0不等于没有作品。"
+          ]
+        },
+        {
+          "person_id": "zju-zhoujia",
+          "source_candidate_sha256": "9648e4c20f5623d62fcbf804886a6fc9cce41b269912be736e57832af529ca9f",
+          "canonical_department_id": "zju-history",
+          "education": [
+            {
+              "event_id": "zju-zhoujia-bachelor",
+              "field_evidence": [
+                {
+                  "source_id": "zju-zhoujia-profile-browser",
+                  "source_url": "https://person.zju.edu.cn/zhoujia/679091.html#0",
+                  "excerpt_id": "zju-zhoujia-profile-browser-excerpt-4",
+                  "quote_sha256": "7a3df2c43556134fe2b2fe625df2f866febbbd3cd1dff1a9b577ef16bc95b8a7",
+                  "source_locator": "浏览器可见个人简介／完整教育与职业连续段",
+                  "observed_at_utc": "2026-10-25T00:31:48Z",
+                  "field_quote_sha256": "e2838bd91b538a53443e989b634f116688ff832d77700f7bc9543881ba09e48e"
+                }
+              ]
+            },
+            {
+              "event_id": "zju-zhoujia-master",
+              "field_evidence": [
+                {
+                  "source_id": "zju-zhoujia-profile-browser",
+                  "source_url": "https://person.zju.edu.cn/zhoujia/679091.html#0",
+                  "excerpt_id": "zju-zhoujia-profile-browser-excerpt-4",
+                  "quote_sha256": "7a3df2c43556134fe2b2fe625df2f866febbbd3cd1dff1a9b577ef16bc95b8a7",
+                  "source_locator": "浏览器可见个人简介／完整教育与职业连续段",
+                  "observed_at_utc": "2026-10-25T00:31:48Z",
+                  "field_quote_sha256": "bef4c6bd389ed88ada36231fc671dd357ebcb53562ef8ba1e504411e928aaacb"
+                }
+              ]
+            },
+            {
+              "event_id": "zju-zhoujia-doctorate",
+              "field_evidence": [
+                {
+                  "source_id": "zju-zhoujia-profile-browser",
+                  "source_url": "https://person.zju.edu.cn/zhoujia/679091.html#0",
+                  "excerpt_id": "zju-zhoujia-profile-browser-excerpt-4",
+                  "quote_sha256": "7a3df2c43556134fe2b2fe625df2f866febbbd3cd1dff1a9b577ef16bc95b8a7",
+                  "source_locator": "浏览器可见个人简介／完整教育与职业连续段",
+                  "observed_at_utc": "2026-10-25T00:31:48Z",
+                  "field_quote_sha256": "e54cef9b57db12d5ec74df412447d787badfc638909fa040899da58210d2a537"
+                }
+              ]
+            }
+          ],
+          "visible_scope": [
+            "仅保留必要官网职业摘录；未核原始学位证书、学位论文或出版者全文。",
+            "个人页原副教授、博士生导师、单位历史学院、职务教师；古代史研究所仅目录显示归组，不当独立行政认证；博导不是本人导师。",
+            "2003浙江大学汉语言文学学士、2006浙江大学古典文献硕士、2010北京大学历史学博士均明确获授，不补学习起讫。",
+            "个人页研究方向：宋代制度史、清代科举研究；目录另列宋史、中国科举、制度文献整理与研究，两来源标签不强行替换。",
+            "目录解析/zhoujia未打开，读取的/zhoujia/679091.html与普通简介标签#0分列；阅读器导航不是浏览器目录点击，未独立提取raw href。",
+            "原个人页更新标签2026.05.20不认证最后修改；教学与更广成果未展开，不补课程。"
+          ]
+        },
+        {
+          "person_id": "zju-zuhui",
+          "source_candidate_sha256": "9648e4c20f5623d62fcbf804886a6fc9cce41b269912be736e57832af529ca9f",
+          "canonical_department_id": "zju-history",
+          "education": [
+            {
+              "event_id": "zju-zuhui-bachelor",
+              "field_evidence": [
+                {
+                  "source_id": "zju-zuhui-profile-browser",
+                  "source_url": "https://person.zju.edu.cn/0095404",
+                  "excerpt_id": "zju-zuhui-profile-browser-excerpt-3",
+                  "quote_sha256": "9d435f9cf4dcbd9d4c6cb3e45b3c0c167d9b7a13f8c06a9794edd3739878d9d7",
+                  "source_locator": "浏览器可见个人简介／完整教育与职业连续段",
+                  "observed_at_utc": "2026-10-25T00:32:10Z",
+                  "field_quote_sha256": "207b12cd4c4efc75cd0e5afce586412f64ac3f7bf1d33116fd5af422e2b7046f"
+                }
+              ]
+            },
+            {
+              "event_id": "zju-zuhui-master",
+              "field_evidence": [
+                {
+                  "source_id": "zju-zuhui-profile-browser",
+                  "source_url": "https://person.zju.edu.cn/0095404",
+                  "excerpt_id": "zju-zuhui-profile-browser-excerpt-3",
+                  "quote_sha256": "9d435f9cf4dcbd9d4c6cb3e45b3c0c167d9b7a13f8c06a9794edd3739878d9d7",
+                  "source_locator": "浏览器可见个人简介／完整教育与职业连续段",
+                  "observed_at_utc": "2026-10-25T00:32:10Z",
+                  "field_quote_sha256": "b4bf6afe3c85f3dcfa58c0adf73915fbcdb997affb598ed1ace1c613193e38cf"
+                }
+              ]
+            },
+            {
+              "event_id": "zju-zuhui-doctorate",
+              "field_evidence": [
+                {
+                  "source_id": "zju-zuhui-profile-browser",
+                  "source_url": "https://person.zju.edu.cn/0095404",
+                  "excerpt_id": "zju-zuhui-profile-browser-excerpt-3",
+                  "quote_sha256": "9d435f9cf4dcbd9d4c6cb3e45b3c0c167d9b7a13f8c06a9794edd3739878d9d7",
+                  "source_locator": "浏览器可见个人简介／完整教育与职业连续段",
+                  "observed_at_utc": "2026-10-25T00:32:10Z",
+                  "field_quote_sha256": "b4bf6afe3c85f3dcfa58c0adf73915fbcdb997affb598ed1ace1c613193e38cf"
+                }
+              ]
+            }
+          ],
+          "visible_scope": [
+            "仅保留必要官网职业摘录；未核原始学位证书、学位论文或出版者全文。",
+            "个人页原教授、博士生导师、历史学院；原宋史、中国古代职官科举文献研究方向保留；博导不是本人求学导师。",
+            "1987是浙江大学（原杭州大学）历史系文博专业毕业年，获学士明确但不自动填授位年；1989是合并研究生入学语境，硕博分别获授而各阶段日期未知。",
+            "旧个人页更新标签2018.08.20、1995古籍研究所任教至今与2005评为教授分开；不组合为现在历史学院教授起任或当前在岗。",
+            "目录解析个人主页链接未点击、raw href未核，阅读器目录导航不是浏览器目录点击；课程栏目未独立展开，不补授课事实。"
+          ]
+        }
+      ],
+      "org_units": [
+        {
+          "id": "zju-legislation-research-institute",
+          "name": "浙江大学立法研究院",
+          "school_id": "zju",
+          "type": "institute",
+          "parent_id": null,
+          "administrative_parent_status": "not_independently_verified",
+          "note": "仅目录站点与页脚称谓，不独立确认法人行政关系。",
+          "source_id": "zju-jin-profile",
+          "source_url": "https://lifa.zju.edu.cn/2021/1014/c85504a3002032/page.htm",
+          "source_locator": "站点署名／浙江大学立法研究院",
+          "quote_sha256": "29f776f7e0c3c8294432dd86e385d0258430c2cacb363f820f037b6e058fae6f",
+          "campus_ids": [],
+          "scope_note": "原官网目录/单位名称支持显示归组，非法律行政层级或当前人事认证。"
+        },
+        {
+          "id": "zju-history",
+          "name": "历史学院",
+          "school_id": "zju",
+          "basis": "官网学院标题、目录面包屑和个人页单位标签",
+          "source_ids": [
+            "zju-history-home-reader",
+            "zju-history-directory-page1-reader",
+            "zju-history-directory-page2-reader"
+          ],
+          "type": "school",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "zju-history-home-reader",
+          "source_url": "https://ls.zju.edu.cn/_web/main.psp",
+          "scope_note": "原官网目录/单位名称支持显示归组，非法律行政层级或当前人事认证。"
+        },
+        {
+          "id": "zju-history-ancient",
+          "name": "中国古代史研究所",
+          "parent_unit_id": "zju-history",
+          "type": "faculty_directory_subunit",
+          "basis": "学院概况→师资队伍→中国古代史研究所的官方目录栏目；不额外认定法律机构层级或现任雇佣单位",
+          "source_ids": [
+            "zju-history-directory-page1-reader",
+            "zju-history-directory-page2-reader"
+          ],
+          "school_id": "zju",
+          "parent_id": "zju-history",
+          "campus_ids": [],
+          "source_id": "zju-history-directory-page1-reader",
+          "source_url": "https://ls.zju.edu.cn/_s983/zggdsyjs/list.psp",
+          "scope_note": "原官网目录/单位名称支持显示归组，非法律行政层级或当前人事认证。"
+        }
+      ],
+      "mandatory_overlay_required": false,
+      "degree_classification_changes": []
+    },
+    {
+      "baseline_profiles": 977,
+      "source_ids_by_person": {
+        "zju-louhansong-literature": [
+          "lou-profile",
+          "teaching-roster",
+          "lou-award-bio"
+        ],
+        "zju-wuxifeng": [
+          "zju-wuxifeng-profile",
+          "zju-wuxifeng-progress"
+        ]
+      },
+      "counts": {
+        "education": 1,
+        "appointments": 2,
+        "mentors": 0,
+        "publications": 3,
+        "teaching": 0
+      },
+      "degree_original_null": 1,
+      "degree_changes": [
+        {
+          "event_id": "zju-louhansong-doctoral-label",
+          "old": null,
+          "new": true,
+          "evidence": "楼含松 博士 | 教授 | 博士生导师",
+          "source_url": "https://person.zju.edu.cn/lou",
+          "scope": "具名本人博士身份，授位院校、专业、学习与授位日期未知；未核证书。"
+        }
+      ],
+      "org_basis": "人物原学院标签按独立展示节点保留，均parentunknown；不同年份研究院名称不合并。",
+      "overlays": "268一处删除未留存特定奖年说明；368两处去无证日期并明确拼接引文限定。",
+      "arrival_projection": {
+        "person_id": "zju-louhansong-literature",
+        "source_event_id": "zju-louhansong-arrival",
+        "date_as_source": "1983年9月",
+        "classification": "来校关联记录，非职位起任；机构法律主体未知",
+        "visible_field": "unknowns",
+        "not_a_new_job": true
+      }
+    }
+  ],
+  "mapping": "仅追加七名已审来源人物及组织展示节点；旧977事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
