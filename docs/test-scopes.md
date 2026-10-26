@@ -85,3 +85,6 @@ JSON紧凑表示单独范围见[表示形式优化](../progress/compact-json-rep
 
 ### 独立按校分块存储迁移（人物数不变）
 原850所有事实与键/列表/Unicode/数字类型重组精确守恒；只允许site/rosters独立派生build_id变化。原304XLSX与CSV全部字节不变。当前功能读取通过严格load_atlas或真实manifest/chunk fetch，历史投影仍先取LIVE再执行原投影；明确published_fixture原bytes/历史renderer输入不变。原pins/helpers不重签，旧业务断言保留。新增真实临时IO/fetch校验缺块、路径/symlink、hash/长度、重复ID/顺序、错学校和混部署；失败不显示半库。compact检查覆盖清单及全部物理块，build版本长度分帧包括真实块与双loader。资产依赖图由原6处引用扩展至含loader的7处，不以旧引用数量冒充新完整性。
+
+### 华南理工大学十一人追加（首个分片后数据批次）
+第23独立来源mapping与旧850完整prefix/root守恒，原22 pins/612fixture/helpers保持不变。实际live分片读取、完整schema/安全/五表逐格及旧数学学院三人行序继续验证。新增公开850小型学校chunk摘要基线，不保存递归全对象快照；只允许从固定reviewed post850 mapping派生的学校变化，当前仅SCUT，其余38校两侧76文件精确不变，未声明学校篡改/额外或缺失路径的负例必须拒绝。实际HTML验证10授位依据及7未知、角色未明教授关联非导师、书目贡献边界、单位入职与职称起点分开、联培非第二授位和观测组织展示层级。运行代码、双loader、分帧build算法与7引用token不改。

@@ -343,7 +343,7 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
     def test_10_all_110_other_department_and_roster_workbooks_remain_byte_identical(self):
         self.assertEqual(len(UNCHANGED_DEPARTMENT_WORKBOOKS),110)
         for file,digest in UNCHANGED_DEPARTMENT_WORKBOOKS.items():
-            self.assertEqual(hashlib.sha256(historical_bytes(file,((published_root() if file in ('site/exports/uestc-public-administration.xlsx','site/exports/uestc-applied-math-center.xlsx','site/exports/tju-math.xlsx','site/exports/whu-math-stat.xlsx') else ROOT)/file).read_bytes())).hexdigest(),digest,file)
+            self.assertEqual(hashlib.sha256(historical_bytes(file,((published_root() if file in ('site/exports/uestc-public-administration.xlsx','site/exports/uestc-applied-math-center.xlsx','site/exports/tju-math.xlsx','site/exports/whu-math-stat.xlsx','site/exports/scut-math.xlsx') else ROOT)/file).read_bytes())).hexdigest(),digest,file)
         self.assertEqual(hashlib.sha256((published_root()/'site/exports/待核对名录.xlsx').read_bytes()).hexdigest(),endpoint_sha256('site/exports/待核对名录.xlsx',RELEASE31_PUBLIC_METADATA_PIN_OVERLAY['site/exports/待核对名录.xlsx']))
 
     def test_11_alias_guard_rejects_every_added_leaf_mutation_and_cross_source_swap(self):

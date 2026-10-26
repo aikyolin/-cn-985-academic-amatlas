@@ -2071,7 +2071,7 @@ class Rotation003Wave1ReleaseTests(unittest.TestCase):
     def test_35_all_107_original_department_workbooks_stay_byte_identical(self):
         self.assertEqual(len(BASELINE_DEPARTMENT_WORKBOOK_SHA256),107)
         for file,digest in BASELINE_DEPARTMENT_WORKBOOK_SHA256.items():
-            self.assertEqual(hashlib.sha256(historical_bytes(file,((published_root() if file in ('site/exports/uestc-public-administration.xlsx','site/exports/uestc-applied-math-center.xlsx','site/exports/tju-math.xlsx','site/exports/whu-math-stat.xlsx') else ROOT)/file).read_bytes())).hexdigest(),digest,file)
+            self.assertEqual(hashlib.sha256(historical_bytes(file,((published_root() if file in ('site/exports/uestc-public-administration.xlsx','site/exports/uestc-applied-math-center.xlsx','site/exports/tju-math.xlsx','site/exports/whu-math-stat.xlsx','site/exports/scut-math.xlsx') else ROOT)/file).read_bytes())).hexdigest(),digest,file)
 
     if os.environ.get('ACADEMIC_ATLAS_NEGATIVE_CONTROL_ROOT'):
         def test_36_baseline_real_workbook_writer_reproduces_disabled_source_hyperlink_defect(self):
