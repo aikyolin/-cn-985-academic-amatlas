@@ -1,0 +1,2628 @@
+{
+  "schema_version": "independent-nwpu12-canonical-mapping-1",
+  "baseline_commit": "290064bcc00182a040af61c94bc9f1ebc4ae4f2c",
+  "new_people": [
+    "nwpu-chenkaijie",
+    "nwpu-heyibai",
+    "nwpu-dai-yuchao",
+    "nwpu-zhao-ruiqin",
+    "nwpu-songdingbonan",
+    "nwpu-zhaoxueai",
+    "nwpu-zhangyi",
+    "nwpu-fupengyu",
+    "nwpu-zhengye",
+    "nwpu-sunhao-applied-statistics",
+    "nwpu-yangkunde",
+    "nwpu-sunxiaodi"
+  ],
+  "new_org_ids": [
+    "nwpu-chemistry",
+    "nwpu-materials",
+    "nwpu-mals",
+    "nwpu-electronics-information",
+    "nwpu-information-engineering",
+    "nwpu-marine",
+    "nwpu-sppa",
+    "nwpu-foreignstudies",
+    "nwpu-sports-department",
+    "nwpu-math-applied-statistics",
+    "nwpu-marine-research-institute",
+    "nwpu-art-education-center"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 12,
+    "education": 35,
+    "appointments": 23,
+    "publications": 13,
+    "mentors": 7,
+    "teaching": 19,
+    "institutional_associations": 0,
+    "professional_research_advisors": 0,
+    "career_end_events": 0,
+    "unbound_person_degree_credentials": 2,
+    "creative_works": 1,
+    "degree_true": 18,
+    "degree_false": 9,
+    "degree_unknown": 8
+  },
+  "counting_scope": "教育事件授位三态与未绑定具体阶段的本人全局学位凭证分开统计；后者不增加教育事件、不指定学校或日期。教学记录可含课程建设项目，作品区分论文书目与创作，关系按原阶段不统称论文指导。",
+  "mapping_inputs": [
+    {
+      "source_group_id": "chemistry-materials-information-marine",
+      "canonical_payload_sha256": "ba8d168b3c143a543fdc6218fcc6842e3198721df78f4a9aeb64180c79775573",
+      "field_mapping_sha256": "dd32f17407a575633b16883a4183c0cbab3e4d8a5ea4fe29c5de69f8bd4c45c3",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "policy-languages-sports",
+      "canonical_payload_sha256": "be4da3378490054b910f47df834b439caf134b0e29cda468aac7541458dd87c3",
+      "field_mapping_sha256": "e52852f4cfc09682c5ab4746f53076a064f6437a1705ec2243831741e1ce0a0c",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "policy-statistics-marine-art",
+      "canonical_payload_sha256": "a2d495c466f585405ff6b5347e244ffd22b82b09757cb86b697af66dcb2c65a9",
+      "field_mapping_sha256": "c8c0dc7582ed82ed29b7a6c69efb5698cd7f8396ff087fa16c0744da7e3b727c",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "ba8d168b3c143a543fdc6218fcc6842e3198721df78f4a9aeb64180c79775573",
+      "baseline_people": 838,
+      "baseline_publication_status": "published",
+      "people": [
+        {
+          "person_id": "nwpu-chenkaijie",
+          "source_candidate_sha256": "b1c4e90de870ac3b9b88fa9629796c9293473618adabc6bcb8fa612256b56b40",
+          "source_review_sha256": "46b6d065cde16d26c0d0682409ffdc5a65031eadfba06a9877da1d518c58db74",
+          "acceptance_chain_binding": {
+            "source_sha_literal_in_original_review": true
+          },
+          "education_original_states": [
+            {
+              "event_id": "nwpu-chenkaijie-bachelor",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "nwpu-chenkaijie-doctorate",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "nwpu-chenkaijie-postdoc",
+              "degree_awarded": false
+            }
+          ],
+          "counts": {
+            "education": 3,
+            "appointments": 2,
+            "mentors": 0,
+            "publications": 1,
+            "teaching": 1
+          },
+          "visible_limits": [
+            "当前人事状态未独立核验；历史简介、来源职称、目录类别及至今不等实时在岗证明。",
+            "仅已留存必要职业事实和选录作品，不是完整履历、全部书目或论文全文。",
+            "目录姓名与单位关联不等原生个人门户href已核；未知目标不导航。",
+            "2020-09-07大学专门职业简介，不是本人维护主页；目录国家级青年人才只是分类。",
+            "本科专业和学习区间未知；未披露硕士，不补研究生序列；博士后结束/本人导师未知；合作者不变导师。"
+          ]
+        },
+        {
+          "person_id": "nwpu-heyibai",
+          "source_candidate_sha256": "1f0c63792cc41ebb80314ed19a513d7855e27d27ea421324457e0543dff3d619",
+          "source_review_sha256": "9ea287031f1dc5e4357ba69024e9fd7c5b1150bc1255f9774146e593be02db88",
+          "acceptance_chain_binding": {
+            "source_sha_literal_in_original_review": false,
+            "original_review_attests_manifest_six_entries_passed": true,
+            "current_source_sha_matches_named_manifest_entry": true,
+            "limit": "review正文未重复candidate SHA或manifest摘要，按其明确六项manifest验证陈述+原manifest当前source条目绑定，不冒称review直接签该hash。",
+            "source_manifest_entry_verified": true,
+            "review_binding": "原review明确验证六项manifest，原manifest所列source摘要与当前accepted源相等；review正文未直接签sourceSHA。"
+          },
+          "education_original_states": [
+            {
+              "event_id": "nwpu-heyibai-bachelor",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "nwpu-heyibai-master",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "nwpu-heyibai-doctorate",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "nwpu-heyibai-aist-visit",
+              "degree_awarded": false
+            }
+          ],
+          "counts": {
+            "education": 4,
+            "appointments": 1,
+            "mentors": 0,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "当前人事状态未独立核验；历史简介、来源职称、目录类别及至今不等实时在岗证明。",
+            "仅已留存必要职业事实和选录作品，不是完整履历、全部书目或论文全文。",
+            "目录姓名与单位关联不等原生个人门户href已核；未知目标不导航。",
+            "2020历史个人简介另称“博士”；三个教育阶段与授位证据分别记录，不由学习末期补授位日。",
+            "未留本人具名导师；论文合作者不推师承。",
+            "第二篇出版者访问原受限，未核元数据，不从替代路径补资料。"
+          ]
+        },
+        {
+          "person_id": "nwpu-dai-yuchao",
+          "source_candidate_sha256": "5c3fba6b8e5d22cef1cf910e9a90d4593ccec4336b00413b4c25e90319cdc5dd",
+          "source_review_sha256": "1ae540f490afb0f8a5f582a846e8d980da41495227b3dbb2c2abf0289ba5286b",
+          "acceptance_chain_binding": {
+            "source_sha_literal_in_original_review": true
+          },
+          "education_original_states": [
+            {
+              "event_id": "nwpu-dai-study-2001",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "nwpu-dai-master-study",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "nwpu-dai-doctorate",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "nwpu-dai-joint-training",
+              "degree_awarded": false
+            },
+            {
+              "event_id": "nwpu-dai-postdoc",
+              "degree_awarded": false
+            }
+          ],
+          "counts": {
+            "education": 5,
+            "appointments": 3,
+            "mentors": 2,
+            "publications": 0,
+            "teaching": 2
+          },
+          "visible_limits": [
+            "当前人事状态未独立核验；历史简介、来源职称、目录类别及至今不等实时在岗证明。",
+            "仅已留存必要职业事实和选录作品，不是完整履历、全部书目或论文全文。",
+            "目录姓名与单位关联不等原生个人门户href已核；未知目标不导航。",
+            "2020-11-23大学职业报道，未留具名选录作品；0作品只是本批保留范围，不代表没有发表。",
+            "何明一仅硕士阶段、Richard Hartley仅博士联合培养阶段，不延伸博士后或正式学位论文导师。"
+          ]
+        },
+        {
+          "person_id": "nwpu-zhao-ruiqin",
+          "source_candidate_sha256": "5c3fba6b8e5d22cef1cf910e9a90d4593ccec4336b00413b4c25e90319cdc5dd",
+          "source_review_sha256": "1ae540f490afb0f8a5f582a846e8d980da41495227b3dbb2c2abf0289ba5286b",
+          "acceptance_chain_binding": {
+            "source_sha_literal_in_original_review": true
+          },
+          "education_original_states": [
+            {
+              "event_id": "nwpu-zhao-bachelor",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "nwpu-zhao-master",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "nwpu-zhao-doctorate",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "nwpu-zhao-canada-collaboration",
+              "degree_awarded": false
+            }
+          ],
+          "counts": {
+            "education": 4,
+            "appointments": 1,
+            "mentors": 0,
+            "publications": 2,
+            "teaching": 4
+          },
+          "visible_limits": [
+            "当前人事状态未独立核验；历史简介、来源职称、目录类别及至今不等实时在岗证明。",
+            "仅已留存必要职业事实和选录作品，不是完整履历、全部书目或论文全文。",
+            "目录姓名与单位关联不等原生个人门户href已核；未知目标不导航。",
+            "2020-11-23历史报道；信息与通信系统方向仅目录研究/学科分类，不当行政系。",
+            "三个学位的院校与法律授位主体均未知；加拿大合作研究机构未知。",
+            "未留本人具名导师，不由教学/合作或本人职称推师承。"
+          ]
+        }
+      ],
+      "org_identity": [
+        {
+          "id": "nwpu-chemistry",
+          "name": "化学与化工学院",
+          "type": "school",
+          "school_id": "nwpu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "nwpu-chemistry-directory",
+          "source_url": "https://huaxue.nwpu.edu.cn/szdw/gccrc/gjj.htm",
+          "source_observation_sha256": "44b64292250f8bc6d4d16651af077d7c7ffd22526b23e35dedc58276c6271c97",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原人物与目录单位展示；行政法定父级未核。研究中心不推隶材料学院，航海方向不作行政系。"
+        },
+        {
+          "id": "nwpu-materials",
+          "name": "材料学院",
+          "type": "school",
+          "school_id": "nwpu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "nwpu-heyibai-profile",
+          "source_url": "https://mals.nwpu.edu.cn/info/1226/1243.htm",
+          "source_observation_sha256": "3bc8a04497abab9125c6aed0d5c60213fd706c76ac39764aa0c23078d4e4b7bd",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原人物与目录单位展示；行政法定父级未核。研究中心不推隶材料学院，航海方向不作行政系。"
+        },
+        {
+          "id": "nwpu-mals",
+          "name": "先进润滑与密封材料研究中心",
+          "type": "research_center",
+          "school_id": "nwpu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "nwpu-mals-directory",
+          "source_url": "https://mals.nwpu.edu.cn/szdw/fjs.htm",
+          "source_observation_sha256": "9ef7414aedc26c374293646a2b8b8a7fc76f749e7892156b2881b4672da9281e",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原人物与目录单位展示；行政法定父级未核。研究中心不推隶材料学院，航海方向不作行政系。"
+        },
+        {
+          "id": "nwpu-electronics-information",
+          "name": "电子信息学院",
+          "type": "school",
+          "school_id": "nwpu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "nwpu-dai-directory",
+          "source_url": "https://dianzi.nwpu.edu.cn/x2020/szdw1/szll/xxgcx.htm",
+          "source_observation_sha256": "febb5762d32a9db8f8f137e5cb5f3f0ee489c211bbe3995a1d295b2b61178359",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原人物与目录单位展示；行政法定父级未核。研究中心不推隶材料学院，航海方向不作行政系。"
+        },
+        {
+          "id": "nwpu-information-engineering",
+          "name": "信息工程系",
+          "type": "department",
+          "school_id": "nwpu",
+          "parent_id": "nwpu-electronics-information",
+          "campus_ids": [],
+          "source_id": "nwpu-dai-directory",
+          "source_url": "https://dianzi.nwpu.edu.cn/x2020/szdw1/szll/xxgcx.htm",
+          "source_observation_sha256": "febb5762d32a9db8f8f137e5cb5f3f0ee489c211bbe3995a1d295b2b61178359",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原人物与目录单位展示；行政法定父级未核。研究中心不推隶材料学院，航海方向不作行政系。"
+        },
+        {
+          "id": "nwpu-marine",
+          "name": "航海学院",
+          "type": "school",
+          "school_id": "nwpu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "nwpu-zhao-directory",
+          "source_url": "https://hanghai.nwpu.edu.cn/szdw/jsdw/akcqhf/xxytxxtfx.htm",
+          "source_observation_sha256": "1158e60758f22bb2127e07e6f793e2fddafdec470b493c7acb516b883326965d",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原人物与目录单位展示；行政法定父级未核。研究中心不推隶材料学院，航海方向不作行政系。"
+        }
+      ],
+      "degree_matrix_status": "root批准贺学士/博士两项source-reported true，贺硕士及戴2项null保持。",
+      "public_field_check": "原师承阶段、本人资格与职称、教学角色层级、作品作者贡献/月份/卷页及元数据等级、历史日期/目录限制均实际note/unknowns可见。",
+      "final_degree_revision": {
+        "withdrawn_payload_sha256": "2fac1d3528cad5989caea50e05a6863964bf565d868f1ab363989bf1d159145f",
+        "new_payload_sha256": "ba8d168b3c143a543fdc6218fcc6842e3198721df78f4a9aeb64180c79775573",
+        "authority": "本批已批准仅贺学士与博士按明确学士称谓/独立本人博士身份记source-reported true；硕士与戴2项仍未知。",
+        "deltas": [
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              0,
+              "degree_awarded"
+            ],
+            "old": null,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              0,
+              "event_kind"
+            ],
+            "old": "degree_study",
+            "new": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              0,
+              "include_in_degree_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              0,
+              "include_in_education_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              0,
+              "note"
+            ],
+            "old": "原教育/入学阶段照录，授位尚未单独确认；不由学习终点补授位年月。",
+            "new": "官网教育经历明确列西安工业大学高分子材料与工程学士，按来源记载学位；未核原学位证，授位年日未知，不以学习终点填补。"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              2,
+              "degree_awarded"
+            ],
+            "old": null,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              2,
+              "event_kind"
+            ],
+            "old": "degree_study",
+            "new": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              2,
+              "include_in_degree_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              2,
+              "include_in_education_filters"
+            ],
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "education",
+              2,
+              "note"
+            ],
+            "old": "原教育/入学阶段照录，授位尚未单独确认；不由学习终点补授位年月。",
+            "new": "官网独立简介称本人博士，与唯一日本筑波大学构造能源工程博士阶段对应，按来源记载学位；未核原学位证，授位年日未知，不以学习终点填补。"
+          }
+        ],
+        "source_evidence_sha256": "6f1380f20e32c628a33dbc20abe5847249fc074a276124aeaef21dcef8a9c525",
+        "original_source_candidate_sha256": "1f0c63792cc41ebb80314ed19a513d7855e27d27ea421324457e0543dff3d619",
+        "evidence": [
+          {
+            "event_id": "nwpu-heyibai-bachelor",
+            "quote": "2009/09—2013/07  西安工业大学 高分子材料与工程 学士",
+            "quote_scope": "原教育经历行语义引用，空格规范化；原整摘录hash另列",
+            "original_retained_excerpt_sha256": "47669cdc6fd0470d47bf5303797a02f27dc25e4c127bb2bc4c4bb96825bbd7e8"
+          },
+          {
+            "event_id": "nwpu-heyibai-doctorate",
+            "quote": "博士，西北工业大学材料学院副教授。",
+            "quote_sha256": "8f22ad057f1447aca6880d54e02b93c66d3942b06a1326befa945c38d98c586e",
+            "stage_match": "原教育经历唯一日本筑波大学构造能源工程博士；AIST访问博士非第二学位",
+            "original_stage_excerpt_sha256": "47669cdc6fd0470d47bf5303797a02f27dc25e4c127bb2bc4c4bb96825bbd7e8"
+          }
+        ],
+        "inverse_exact_previous_sha256": "2fac1d3528cad5989caea50e05a6863964bf565d868f1ab363989bf1d159145f",
+        "source_degree_awarded_aliases_preserved": true,
+        "award_dates_unchanged": true
+      }
+    },
+    {
+      "schema_version": "nwpu12-group2-mapping-1",
+      "published_baseline_people": 838,
+      "input_checks": [
+        {
+          "person_id": "nwpu-songdingbonan",
+          "candidate_sha256": "a8d7fb3c5416f721784b19debcaa257f4ef997aa0ee565fc6bfed4d67c50d463",
+          "review_sha256": "8f8af7c6209944f689870163b4de333380b8160d1750907d6f1ffcc43da9bac4",
+          "additional_audit_hashes": [
+            "2afc92dc02dca8055808b819e22a93662b9b4002e296b62f4e50e74bcf82b9c7",
+            "fef72f851e381c81fada8c576b7a71875c8136695344dd9aef8bda14257bbd3a"
+          ],
+          "hash_guards_pass": true
+        },
+        {
+          "person_id": "nwpu-zhaoxueai",
+          "candidate_sha256": "2fce3bfea9cd87143489e96641edcda5b9a511d9ffcf9e4ca6a40a0c07c1b379",
+          "review_sha256": "0d11c69c6534ca86b0205255b2e42ce96a180cfcfd359f1ffbbcb5b792f4761e",
+          "additional_audit_hashes": [
+            "0a2422030e02a3b0161ea563cfed54bdb68285fa98cb239766fa0ec8dcf6fbc0",
+            "6762f9de0f3efa4ca150b6b6e8cdadfea97a592b0e1ff78edf7b3ef83b994774",
+            "9ab4e044b8e80a1775abc73cf6de314675ba9866d64efaa40e54e7bc830724f2"
+          ],
+          "hash_guards_pass": true
+        },
+        {
+          "person_id": "nwpu-zhangyi",
+          "candidate_sha256": "2fce3bfea9cd87143489e96641edcda5b9a511d9ffcf9e4ca6a40a0c07c1b379",
+          "review_sha256": "0d11c69c6534ca86b0205255b2e42ce96a180cfcfd359f1ffbbcb5b792f4761e",
+          "additional_audit_hashes": [
+            "0a2422030e02a3b0161ea563cfed54bdb68285fa98cb239766fa0ec8dcf6fbc0",
+            "6762f9de0f3efa4ca150b6b6e8cdadfea97a592b0e1ff78edf7b3ef83b994774",
+            "9ab4e044b8e80a1775abc73cf6de314675ba9866d64efaa40e54e7bc830724f2"
+          ],
+          "hash_guards_pass": true
+        },
+        {
+          "person_id": "nwpu-fupengyu",
+          "candidate_sha256": "7cbcb8d12a63d475b54795e6584c0e743cbf9ed76891d6feefb3c373468c2c4d",
+          "review_sha256": "acbbcd0cf9f51be91c3e030d1adb8f9101bacac494f6de3af215784f89947981",
+          "additional_audit_hashes": [
+            "f4f0e6d7dfe4d0ff1230544ed6cfaa08aa0a0723927c6b80c2e41edfde05f6c9",
+            "5e4dc947ca5e055a6454c1c6892df07cc816b9b10d24539de4c75488218250eb",
+            "cce5d190c4fd688bba355f7812ede86bcee38d518386a28ca0376f608609c8a3"
+          ],
+          "hash_guards_pass": true
+        }
+      ],
+      "degree_evidence_matrix": [
+        {
+          "person_id": "nwpu-songdingbonan",
+          "education_event_id": "nwpu-songdingbonan-本科",
+          "field_scope": "education_event",
+          "json_pointer": "/people/0/education/0/degree_awarded",
+          "old_value": null,
+          "quote": "武汉大学法学学士、法学硕士、法学博士",
+          "quote_sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7",
+          "source_id": "nwpu-songdingbonan-hr-profile",
+          "source_url": "https://renshi.nwpu.edu.cn/info/1437/7230.htm",
+          "candidate_sha256": "a8d7fb3c5416f721784b19debcaa257f4ef997aa0ee565fc6bfed4d67c50d463",
+          "retained_heading": null,
+          "context": "独立传记本人具体学位身份而非阶段栏目",
+          "decision": "root_approved_source_reported_true"
+        },
+        {
+          "person_id": "nwpu-songdingbonan",
+          "education_event_id": "nwpu-songdingbonan-硕士",
+          "field_scope": "education_event",
+          "json_pointer": "/people/0/education/1/degree_awarded",
+          "old_value": null,
+          "quote": "武汉大学法学学士、法学硕士、法学博士",
+          "quote_sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7",
+          "source_id": "nwpu-songdingbonan-hr-profile",
+          "source_url": "https://renshi.nwpu.edu.cn/info/1437/7230.htm",
+          "candidate_sha256": "a8d7fb3c5416f721784b19debcaa257f4ef997aa0ee565fc6bfed4d67c50d463",
+          "retained_heading": null,
+          "context": "独立传记本人具体学位身份而非阶段栏目",
+          "decision": "root_approved_source_reported_true"
+        },
+        {
+          "person_id": "nwpu-songdingbonan",
+          "education_event_id": "nwpu-songdingbonan-博士",
+          "field_scope": "education_event",
+          "json_pointer": "/people/0/education/2/degree_awarded",
+          "old_value": null,
+          "quote": "武汉大学法学学士、法学硕士、法学博士",
+          "quote_sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7",
+          "source_id": "nwpu-songdingbonan-hr-profile",
+          "source_url": "https://renshi.nwpu.edu.cn/info/1437/7230.htm",
+          "candidate_sha256": "a8d7fb3c5416f721784b19debcaa257f4ef997aa0ee565fc6bfed4d67c50d463",
+          "retained_heading": null,
+          "context": "独立传记本人具体学位身份而非阶段栏目",
+          "decision": "root_approved_source_reported_true"
+        },
+        {
+          "person_id": "nwpu-zhaoxueai",
+          "education_event_id": "nwpu-zhaoxueai-本科",
+          "field_scope": "education_event",
+          "json_pointer": "/people/1/education/0/degree_awarded",
+          "old_value": null,
+          "quote": "1981－1985 兰州大学英国语言文学专业本科学习",
+          "quote_sha256": "c4bed0c63747c92d2ba57238751c054013c99524ca46d01946c3361a3b8879ea",
+          "source_id": "nwpu-zhaoxueai-profile",
+          "source_url": "https://jfzx.nwpu.edu.cn/info/1258/1418.htm",
+          "candidate_sha256": "2fce3bfea9cd87143489e96641edcda5b9a511d9ffcf9e4ca6a40a0c07c1b379",
+          "retained_heading": "教育经历Education Experience",
+          "context": "只所留教育/毕业事件，不把相邻或全局学位身份绑入",
+          "decision": "root_final_retain_unknown"
+        },
+        {
+          "person_id": "nwpu-zhaoxueai",
+          "education_event_id": "nwpu-zhaoxueai-研究生",
+          "field_scope": "education_event",
+          "json_pointer": "/people/1/education/1/degree_awarded",
+          "old_value": null,
+          "quote": "1988－1990 西安交通大学语言学与应用语言学专业研究生学习",
+          "quote_sha256": "0cbb082202f1bb8bbce9a2b1ebf8c99427b71077ae704b743c006c91d9ec9868",
+          "source_id": "nwpu-zhaoxueai-profile",
+          "source_url": "https://jfzx.nwpu.edu.cn/info/1258/1418.htm",
+          "candidate_sha256": "2fce3bfea9cd87143489e96641edcda5b9a511d9ffcf9e4ca6a40a0c07c1b379",
+          "retained_heading": "教育经历Education Experience",
+          "context": "只所留教育/毕业事件，不把相邻或全局学位身份绑入",
+          "decision": "root_final_retain_unknown"
+        },
+        {
+          "person_id": "nwpu-zhaoxueai",
+          "education_event_id": null,
+          "field_scope": "global_credential_label",
+          "json_pointer": "/people/1/credential_labels_as_source/degree_awarded",
+          "old_value": null,
+          "quote": "学历:研究生班毕业\n学位:文学学士",
+          "quote_sha256": "331ec46c1333306af1c15167c0260acee7b90b1e349de23f490abddec4841f5e",
+          "source_id": "nwpu-zhaoxueai-profile",
+          "source_url": "https://jfzx.nwpu.edu.cn/info/1258/1418.htm",
+          "candidate_sha256": "2fce3bfea9cd87143489e96641edcda5b9a511d9ffcf9e4ca6a40a0c07c1b379",
+          "retained_heading": "基本信息The basic information；学位:文学学士",
+          "context": "全局本人学位身份，不绑定学校/年份或另造event",
+          "decision": "root_approved_source_reported_true"
+        },
+        {
+          "person_id": "nwpu-fupengyu",
+          "education_event_id": "nwpu-fupengyu-beijing-graduation",
+          "field_scope": "education_event",
+          "json_pointer": "/people/3/education/0/degree_awarded",
+          "old_value": null,
+          "quote": "付鹏宇，体育部教师，副教授，硕士生导师，毕业于北京体育大学，运动人体科学专业博士，生物医学工程博士后",
+          "quote_sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2",
+          "source_id": "nwpu-fupengyu-biography",
+          "source_url": "https://tiyu.nwpu.edu.cn/info/1311/10403.htm",
+          "candidate_sha256": "7cbcb8d12a63d475b54795e6584c0e743cbf9ed76891d6feefb3c373468c2c4d",
+          "retained_heading": null,
+          "context": "只所留教育/毕业事件，不把相邻或全局学位身份绑入",
+          "decision": "root_final_retain_unknown"
+        },
+        {
+          "person_id": "nwpu-fupengyu",
+          "education_event_id": null,
+          "field_scope": "global_credential_label",
+          "json_pointer": "/people/3/credential_labels_as_source/degree_awarded",
+          "old_value": null,
+          "quote": "付鹏宇，体育部教师，副教授，硕士生导师，毕业于北京体育大学，运动人体科学专业博士，生物医学工程博士后",
+          "quote_sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2",
+          "source_id": "nwpu-fupengyu-biography",
+          "source_url": "https://tiyu.nwpu.edu.cn/info/1311/10403.htm",
+          "candidate_sha256": "7cbcb8d12a63d475b54795e6584c0e743cbf9ed76891d6feefb3c373468c2c4d",
+          "retained_heading": null,
+          "context": "全局本人学位身份，不绑定学校/年份或另造event",
+          "decision": "root_approved_source_reported_true"
+        }
+      ],
+      "org_identity": "838只既有计算机、数学，本组原公共政策与管理学院、外国语学院、体育部3独立单位无同义旧node。宋法学系文字保留不造行政node；体育只用本组副教授目录+传记，未访问另一人物讲师源。",
+      "original_org_facts": {
+        "nwpu-songdingbonan": [
+          {
+            "id": "nwpu-sppa",
+            "name": "公共政策与管理学院",
+            "school_id": "nwpu",
+            "type": "school",
+            "source_ids": [
+              "nwpu-songdingbonan-hr-profile",
+              "nwpu-law-department-browser-recovery"
+            ],
+            "note": "2021官方职业传记及2022法学系页面交叉核对，非当前人事状态认证。"
+          }
+        ],
+        "nwpu-zhaoxueai": [
+          {
+            "id": "nwpu-foreignstudies",
+            "name": "外国语学院",
+            "school_id": "nwpu",
+            "type": "school",
+            "source_ids": [
+              "nwpu-foreignstudies-professors-directory",
+              "nwpu-zhaoxueai-profile",
+              "nwpu-zhangyi-profile"
+            ],
+            "legal_administrative_parent": null,
+            "note": "官方学院目录与校方详历支持学校和学院关联，不推下属部门或法律隶属。"
+          }
+        ],
+        "nwpu-fupengyu": [
+          {
+            "id": "nwpu-sports-department",
+            "name": "体育部",
+            "school_id": "nwpu",
+            "type": "teaching_department",
+            "legal_administrative_parent": null,
+            "source_ids": [
+              "nwpu-sports-lecturer-directory",
+              "nwpu-sports-associate-directory"
+            ],
+            "note": "学院/部门自有名录及职业传记直接关联学校与体育部；未核法律行政层级。"
+          }
+        ]
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/sources/nwpu-law-department-browser-recovery/excerpts/0/quote",
+          "sha256": "4acf36ed59dcf2a42a1b67b82e3d91a6dc5046af6ab416f884eb022dbd88d6ff"
+        },
+        {
+          "path": "/sources/nwpu-law-department-browser-recovery/excerpts/1/quote",
+          "sha256": "3a9000dab7affec25a696ec79a02806ac5d5804efd17ef6199ae1615bdefbd16"
+        },
+        {
+          "path": "/sources/nwpu-fupengyu-biography/excerpts/0/quote",
+          "sha256": "c39addf4257345071e602818e5fe11cd63521643931003f58219d9a83a4e7e08"
+        },
+        {
+          "path": "/sources/nwpu-fupengyu-biography/excerpts/1/quote",
+          "sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2"
+        },
+        {
+          "path": "/sources/nwpu-fupengyu-biography/excerpts/2/quote",
+          "sha256": "6014be0b934ccdd844207688df86c5d59f33528316150ee0f54435220bc5f951"
+        },
+        {
+          "path": "/sources/nwpu-fupengyu-biography/excerpts/3/quote",
+          "sha256": "bf55380d70a933e56da75986fb1f78de54ae3785ced9d9c2c729ca26112f32d1"
+        },
+        {
+          "path": "/sources/nwpu-fupengyu-biography/excerpts/4/quote",
+          "sha256": "7edf1b342a9e4f8bb8be6129ab0482473de515de63028428b4a7bc5b9afbbd45"
+        },
+        {
+          "path": "/sources/nwpu-fupengyu-biography/excerpts/5/quote",
+          "sha256": "2a2b6817bfe458d384dbd2a4fde2df9e5551ef0863d6c52fd787801ac17e8a0f"
+        },
+        {
+          "path": "/sources/nwpu-sports-associate-directory/excerpts/0/quote",
+          "sha256": "2e29f11245c217ed4c16e0d9f0610b9a6253d7552294f3e5095242218a1d2b6d"
+        },
+        {
+          "path": "/people/nwpu-songdingbonan/field_provenance/identity_title_and_profile_affiliation/quote",
+          "sha256": "aad749b072c4c182173138e94feb2c580dfda07a9d437370137bfc7c55450272"
+        },
+        {
+          "path": "/people/nwpu-songdingbonan/education/0/quote",
+          "sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7"
+        },
+        {
+          "path": "/people/nwpu-songdingbonan/education/1/quote",
+          "sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7"
+        },
+        {
+          "path": "/people/nwpu-songdingbonan/education/2/quote",
+          "sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7"
+        },
+        {
+          "path": "/people/nwpu-songdingbonan/appointments/0/quote",
+          "sha256": "ff50e227fcf2cef604ea728a1128d429d02f818a7baec22298d3ee5b9810efa3"
+        },
+        {
+          "path": "/people/nwpu-songdingbonan/appointments/1/quote",
+          "sha256": "b3be94ba2cab372e90ddfd6e7464a7268172bbadc5541155d92a23680d5974fa"
+        },
+        {
+          "path": "/people/nwpu-songdingbonan/teaching/0/quote",
+          "sha256": "ce71660fba46fbcebe9af446445dd034ff40e03fb4ac6e702cc98e6874ab950f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ff50e227fcf2cef604ea728a1128d429d02f818a7baec22298d3ee5b9810efa3"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b3be94ba2cab372e90ddfd6e7464a7268172bbadc5541155d92a23680d5974fa"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ce71660fba46fbcebe9af446445dd034ff40e03fb4ac6e702cc98e6874ab950f"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/teaching/0/quote",
+          "sha256": "3985d57ecbbcf2dd6ce8ae1bdfa1b3f9babb40b9ff73cbd3c3675cbc630fb73a"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/teaching/1/quote",
+          "sha256": "b4f28ab9b56a4c39296a678fa3dd14faf27f60a63a452b6fa8cc8e8b542e48d0"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/education/0/quote",
+          "sha256": "c4bed0c63747c92d2ba57238751c054013c99524ca46d01946c3361a3b8879ea"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/education/1/quote",
+          "sha256": "0cbb082202f1bb8bbce9a2b1ebf8c99427b71077ae704b743c006c91d9ec9868"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/professional_training/0/quote",
+          "sha256": "ce6d3c3aab727d3853ffb2fdfb82d50633791eb7b660a6c8bd7fc457b8357dc0"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/appointments/0/quote",
+          "sha256": "a854c81e3193732675b3d5ba8055325826bf14daf82b848c52d5a0aee0629797"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/appointments/1/quote",
+          "sha256": "e49928f1817da40f6b34bfc6712ca0afb655c431cb79ad4a5d479ebde7a9e554"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/appointments/2/quote",
+          "sha256": "b30e9486cdd55487b71e9a930dc269000eb4c2068eb5c37ca048e8324d173edb"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/publications/0/quote",
+          "sha256": "0c7b2fef87cbf5965020b05ebba000738f5a086796636a207be915565114336b"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/publications/1/quote",
+          "sha256": "96e43899c16733a9233a8416da72f77fbde7e9ab24257c4055a4a7965768439c"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/field_provenance/identity_and_title/quote",
+          "sha256": "6ed49e5088e7128635f1b2f7ca49defb5157243e636132a6125c67361a747bdd"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/field_provenance/directory_affiliation/quote",
+          "sha256": "adde3d44f3827915d08bb7ab039c611c30a930ff456f1ba4297998ccb146a74d"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/field_provenance/discipline_labels/quote",
+          "sha256": "32761c70a3ca2f0a2609e84389d1a5cbea5413aa1e5d9384243f49d0f473f8a6"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/credential_labels_as_source/quote",
+          "sha256": "331ec46c1333306af1c15167c0260acee7b90b1e349de23f490abddec4841f5e"
+        },
+        {
+          "path": "/people/nwpu-zhaoxueai/historical_affiliation/quote",
+          "sha256": "7a01c2ea5cceb1814863c2603043651392b4b1735e8c5370a4dbc5034bbb9d3e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "c4bed0c63747c92d2ba57238751c054013c99524ca46d01946c3361a3b8879ea"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0cbb082202f1bb8bbce9a2b1ebf8c99427b71077ae704b743c006c91d9ec9868"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ce6d3c3aab727d3853ffb2fdfb82d50633791eb7b660a6c8bd7fc457b8357dc0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "a854c81e3193732675b3d5ba8055325826bf14daf82b848c52d5a0aee0629797"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e49928f1817da40f6b34bfc6712ca0afb655c431cb79ad4a5d479ebde7a9e554"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b30e9486cdd55487b71e9a930dc269000eb4c2068eb5c37ca048e8324d173edb"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3985d57ecbbcf2dd6ce8ae1bdfa1b3f9babb40b9ff73cbd3c3675cbc630fb73a"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b4f28ab9b56a4c39296a678fa3dd14faf27f60a63a452b6fa8cc8e8b542e48d0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "0c7b2fef87cbf5965020b05ebba000738f5a086796636a207be915565114336b"
+        },
+        {
+          "path": "/quote",
+          "sha256": "96e43899c16733a9233a8416da72f77fbde7e9ab24257c4055a4a7965768439c"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/education/0/quote",
+          "sha256": "e644fe0636e5fb41f3283da93e0508ccf23b5497d357e727210ba22e42f1f841"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/education/1/quote",
+          "sha256": "cd8c99011bc907debf663aab592b3df58e707f433094df614c1a170fda560eda"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/professional_training/0/quote",
+          "sha256": "5e66edce0d2f751f11fa63dc42579b06e41f7a521879e1ee6232c76ae50534f0"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/appointments/0/quote",
+          "sha256": "f9476fc293e00c6ae5d7a6284700da46f24e347c06d3bcbbfd550e62fbc91a95"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/appointments/1/quote",
+          "sha256": "7ff8dd4a5d0f8fc7cffcde8d49113595e481ce343ea793aa0e65fdc59347d6f5"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/appointments/2/quote",
+          "sha256": "558303ca2e5093b390049de15ee1e9d48413e37b0c5932743628b789fd6273f5"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/publications/0/quote",
+          "sha256": "2062dc1134f2ca83d78caca492a0dd32e3ebd2419b0f67bd1134860dca642f7e"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/publications/1/quote",
+          "sha256": "b54bbef1a0af37843c4cc22828f79af9bec96ef02df74f1ec35914cdac732c1f"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/field_provenance/identity_and_title/quote",
+          "sha256": "600139693a132db05bf97de0e8a28f526bbdcfe9bf2aec9df205d3c285a6998d"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/field_provenance/directory_affiliation/quote",
+          "sha256": "345cf974204c14f61a1fc0eae568c0cd4fbc3f7a6132af6d80885771c205bed4"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/field_provenance/discipline_labels/quote",
+          "sha256": "32761c70a3ca2f0a2609e84389d1a5cbea5413aa1e5d9384243f49d0f473f8a6"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/field_provenance/research/quote",
+          "sha256": "6b21ed03f1381b1daf8ee333a6f934afb3e6479d0abfa4e894f25d71fd06fd53"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/field_provenance/college_directory_affiliation/quote",
+          "sha256": "118b1996792f791f07305ae94c79d14070d8ef34a81563711a282431b50fb12d"
+        },
+        {
+          "path": "/people/nwpu-zhangyi/credential_labels_as_source/quote",
+          "sha256": "63d6e663fb3483ca2ce3dce72db2fff405788ea1b0d53e1ed7472acbadd56852"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e644fe0636e5fb41f3283da93e0508ccf23b5497d357e727210ba22e42f1f841"
+        },
+        {
+          "path": "/quote",
+          "sha256": "cd8c99011bc907debf663aab592b3df58e707f433094df614c1a170fda560eda"
+        },
+        {
+          "path": "/quote",
+          "sha256": "5e66edce0d2f751f11fa63dc42579b06e41f7a521879e1ee6232c76ae50534f0"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f9476fc293e00c6ae5d7a6284700da46f24e347c06d3bcbbfd550e62fbc91a95"
+        },
+        {
+          "path": "/quote",
+          "sha256": "7ff8dd4a5d0f8fc7cffcde8d49113595e481ce343ea793aa0e65fdc59347d6f5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "558303ca2e5093b390049de15ee1e9d48413e37b0c5932743628b789fd6273f5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "2062dc1134f2ca83d78caca492a0dd32e3ebd2419b0f67bd1134860dca642f7e"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b54bbef1a0af37843c4cc22828f79af9bec96ef02df74f1ec35914cdac732c1f"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/publications/0/quote",
+          "sha256": "bf55380d70a933e56da75986fb1f78de54ae3785ced9d9c2c729ca26112f32d1"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/publications/1/quote",
+          "sha256": "bf55380d70a933e56da75986fb1f78de54ae3785ced9d9c2c729ca26112f32d1"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/field_provenance/identity_education/quote",
+          "sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/field_provenance/directory/quote",
+          "sha256": "2e29f11245c217ed4c16e0d9f0610b9a6253d7552294f3e5095242218a1d2b6d"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/field_provenance/page_date/quote",
+          "sha256": "c39addf4257345071e602818e5fe11cd63521643931003f58219d9a83a4e7e08"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/field_provenance/research/quote",
+          "sha256": "7edf1b342a9e4f8bb8be6129ab0482473de515de63028428b4a7bc5b9afbbd45"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/education/0/quote",
+          "sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/credential_labels_as_source/quote",
+          "sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/professional_training/0/quote",
+          "sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/appointments/0/quote",
+          "sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/appointments/1/quote",
+          "sha256": "2a2b6817bfe458d384dbd2a4fde2df9e5551ef0863d6c52fd787801ac17e8a0f"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/supervision_qualification_as_source/quote",
+          "sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2"
+        },
+        {
+          "path": "/people/nwpu-fupengyu/teaching/0/quote",
+          "sha256": "6014be0b934ccdd844207688df86c5d59f33528316150ee0f54435220bc5f951"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2"
+        },
+        {
+          "path": "/quote",
+          "sha256": "2a2b6817bfe458d384dbd2a4fde2df9e5551ef0863d6c52fd787801ac17e8a0f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "6014be0b934ccdd844207688df86c5d59f33528316150ee0f54435220bc5f951"
+        },
+        {
+          "path": "/quote",
+          "sha256": "bf55380d70a933e56da75986fb1f78de54ae3785ced9d9c2c729ca26112f32d1"
+        },
+        {
+          "path": "/quote",
+          "sha256": "bf55380d70a933e56da75986fb1f78de54ae3785ced9d9c2c729ca26112f32d1"
+        }
+      ],
+      "counts": {
+        "education": 11,
+        "appointments": 10,
+        "mentors": 0,
+        "publications": 6,
+        "teaching": 4
+      },
+      "historical_source_scope": "原source-only/local/pending是历史来源阶段，后经对应原独审，不等当时工程验收。",
+      "overlay_scope": "167无本人事实overlay；保留原传记URL不等未观测门户href限制，未套另一校事实。",
+      "bounded_hold_separation": "只4批准accepted路径；无目录枚举/54/70混合源/held本体或新访；完整held集合未提供，不声明全集排除。",
+      "degree_classification_revision": {
+        "old_payload_sha256": "f8afb90104a4af2d82c7d009ec6554d892ac5ec86148e8506b19a6913fb16a37",
+        "reverse_restores_old_sha256": true,
+        "changes": [
+          {
+            "json_pointer": "/people/0/education/0",
+            "before": {
+              "event_id": "nwpu-songdingbonan-本科",
+              "event_kind": "degree_label_in_biography",
+              "institution": "武汉大学",
+              "department": null,
+              "education_stage": "本科",
+              "degree_label_as_source": "法学学士",
+              "field": null,
+              "start": null,
+              "end": null,
+              "degree_awarded": null,
+              "degree_awarded_date": null,
+              "degree_awarded_year": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "nwpu-songdingbonan-hr-profile",
+              "source_url": "https://renshi.nwpu.edu.cn/info/1437/7230.htm",
+              "retained_professional_text": "武汉大学法学学士、法学硕士、法学博士",
+              "source_excerpt_sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7",
+              "note": "原传记具体学位身份与学校称谓保留，授位未单独核实；学习起止、授位年月均未披露。",
+              "education_event_id": "nwpu-songdingbonan-本科",
+              "source_event_kind": "degree_label_in_biography",
+              "degree": "法学学士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_locator": "教育训练条目／武汉大学法学学士、法学硕士、法学博士",
+              "source_note": "院校及学位标签按传记保存；没有获授表述，不推学习区间、当年专业或授位。"
+            },
+            "after": {
+              "event_id": "nwpu-songdingbonan-本科",
+              "event_kind": "degree",
+              "institution": "武汉大学",
+              "department": null,
+              "education_stage": "本科",
+              "degree_label_as_source": "法学学士",
+              "field": null,
+              "start": null,
+              "end": null,
+              "degree_awarded": true,
+              "degree_awarded_date": null,
+              "degree_awarded_year": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "nwpu-songdingbonan-hr-profile",
+              "source_url": "https://renshi.nwpu.edu.cn/info/1437/7230.htm",
+              "retained_professional_text": "武汉大学法学学士、法学硕士、法学博士",
+              "source_excerpt_sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7",
+              "note": "官网2021年职业传记直接以武汉大学法学学士、法学硕士、法学博士介绍本人，本条支持来源报告法学学士学位；不是仅教育阶段标签。未独立核证书，学习时间与授位年月未知。",
+              "education_event_id": "nwpu-songdingbonan-本科",
+              "source_event_kind": "degree_label_in_biography",
+              "degree": "法学学士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_locator": "教育训练条目／武汉大学法学学士、法学硕士、法学博士",
+              "source_note": "院校及学位标签按传记保存；没有获授表述，不推学习区间、当年专业或授位。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "degree_label_in_biography",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "previous_canonical_note": "原传记具体学位身份与学校称谓保留，授位未单独核实；学习起止、授位年月均未披露。"
+            }
+          },
+          {
+            "json_pointer": "/people/0/education/1",
+            "before": {
+              "event_id": "nwpu-songdingbonan-硕士",
+              "event_kind": "degree_label_in_biography",
+              "institution": "武汉大学",
+              "department": null,
+              "education_stage": "硕士",
+              "degree_label_as_source": "法学硕士",
+              "field": null,
+              "start": null,
+              "end": null,
+              "degree_awarded": null,
+              "degree_awarded_date": null,
+              "degree_awarded_year": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "nwpu-songdingbonan-hr-profile",
+              "source_url": "https://renshi.nwpu.edu.cn/info/1437/7230.htm",
+              "retained_professional_text": "武汉大学法学学士、法学硕士、法学博士",
+              "source_excerpt_sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7",
+              "note": "原传记具体学位身份与学校称谓保留，授位未单独核实；学习起止、授位年月均未披露。",
+              "education_event_id": "nwpu-songdingbonan-硕士",
+              "source_event_kind": "degree_label_in_biography",
+              "degree": "法学硕士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_locator": "教育训练条目／武汉大学法学学士、法学硕士、法学博士",
+              "source_note": "院校及学位标签按传记保存；没有获授表述，不推学习区间、当年专业或授位。"
+            },
+            "after": {
+              "event_id": "nwpu-songdingbonan-硕士",
+              "event_kind": "degree",
+              "institution": "武汉大学",
+              "department": null,
+              "education_stage": "硕士",
+              "degree_label_as_source": "法学硕士",
+              "field": null,
+              "start": null,
+              "end": null,
+              "degree_awarded": true,
+              "degree_awarded_date": null,
+              "degree_awarded_year": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "nwpu-songdingbonan-hr-profile",
+              "source_url": "https://renshi.nwpu.edu.cn/info/1437/7230.htm",
+              "retained_professional_text": "武汉大学法学学士、法学硕士、法学博士",
+              "source_excerpt_sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7",
+              "note": "官网2021年职业传记直接以武汉大学法学学士、法学硕士、法学博士介绍本人，本条支持来源报告法学硕士学位；不是仅教育阶段标签。未独立核证书，学习时间与授位年月未知。",
+              "education_event_id": "nwpu-songdingbonan-硕士",
+              "source_event_kind": "degree_label_in_biography",
+              "degree": "法学硕士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_locator": "教育训练条目／武汉大学法学学士、法学硕士、法学博士",
+              "source_note": "院校及学位标签按传记保存；没有获授表述，不推学习区间、当年专业或授位。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "degree_label_in_biography",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "previous_canonical_note": "原传记具体学位身份与学校称谓保留，授位未单独核实；学习起止、授位年月均未披露。"
+            }
+          },
+          {
+            "json_pointer": "/people/0/education/2",
+            "before": {
+              "event_id": "nwpu-songdingbonan-博士",
+              "event_kind": "degree_label_in_biography",
+              "institution": "武汉大学",
+              "department": null,
+              "education_stage": "博士",
+              "degree_label_as_source": "法学博士",
+              "field": null,
+              "start": null,
+              "end": null,
+              "degree_awarded": null,
+              "degree_awarded_date": null,
+              "degree_awarded_year": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "nwpu-songdingbonan-hr-profile",
+              "source_url": "https://renshi.nwpu.edu.cn/info/1437/7230.htm",
+              "retained_professional_text": "武汉大学法学学士、法学硕士、法学博士",
+              "source_excerpt_sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7",
+              "note": "原传记具体学位身份与学校称谓保留，授位未单独核实；学习起止、授位年月均未披露。",
+              "education_event_id": "nwpu-songdingbonan-博士",
+              "source_event_kind": "degree_label_in_biography",
+              "degree": "法学博士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_locator": "教育训练条目／武汉大学法学学士、法学硕士、法学博士",
+              "source_note": "院校及学位标签按传记保存；没有获授表述，不推学习区间、当年专业或授位。"
+            },
+            "after": {
+              "event_id": "nwpu-songdingbonan-博士",
+              "event_kind": "degree",
+              "institution": "武汉大学",
+              "department": null,
+              "education_stage": "博士",
+              "degree_label_as_source": "法学博士",
+              "field": null,
+              "start": null,
+              "end": null,
+              "degree_awarded": true,
+              "degree_awarded_date": null,
+              "degree_awarded_year": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "nwpu-songdingbonan-hr-profile",
+              "source_url": "https://renshi.nwpu.edu.cn/info/1437/7230.htm",
+              "retained_professional_text": "武汉大学法学学士、法学硕士、法学博士",
+              "source_excerpt_sha256": "b8fe17b241abacfb1c30d9c6772874d3edb18db59cee771786cc0f5ad200c5e7",
+              "note": "官网2021年职业传记直接以武汉大学法学学士、法学硕士、法学博士介绍本人，本条支持来源报告法学博士学位；不是仅教育阶段标签。未独立核证书，学习时间与授位年月未知。",
+              "education_event_id": "nwpu-songdingbonan-博士",
+              "source_event_kind": "degree_label_in_biography",
+              "degree": "法学博士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_locator": "教育训练条目／武汉大学法学学士、法学硕士、法学博士",
+              "source_note": "院校及学位标签按传记保存；没有获授表述，不推学习区间、当年专业或授位。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "degree_label_in_biography",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "previous_canonical_note": "原传记具体学位身份与学校称谓保留，授位未单独核实；学习起止、授位年月均未披露。"
+            }
+          },
+          {
+            "json_pointer": "/people/0/field_provenance",
+            "before": {
+              "identity_title_and_profile_affiliation": {
+                "source_id": "nwpu-songdingbonan-hr-profile",
+                "source_url": "https://renshi.nwpu.edu.cn/info/1437/7230.htm",
+                "retained_professional_text": "宋丁博男，武汉大学法学学士、法学硕士、法学博士，现任西北工业大学公共政策与管理学院法学系副主任、助理教授，陕西省法治人才库中青年法治人才。",
+                "source_excerpt_sha256": "aad749b072c4c182173138e94feb2c580dfda07a9d437370137bfc7c55450272"
+              },
+              "directory_affiliation": {
+                "source_id": "nwpu-law-department-browser-recovery",
+                "source_url": "https://sppa.nwpu.edu.cn/info/1140/8619.htm",
+                "source_locators": [
+                  "页面标题",
+                  "正文副系主任行"
+                ],
+                "separate_quotes": [
+                  "法学系-公共政策与管理学院",
+                  "副系主任：宋丁博男助理教授"
+                ],
+                "page_date_as_displayed": "2022-06-13",
+                "note": "Two separate exact excerpts, not a concatenated continuous quote;2022 historical affiliation only."
+              },
+              "education": "Each event retains the same exact source biography degree-label substring; no explicit award wording.",
+              "current_employment_status": "unknown by research boundary, not a source assertion"
+            },
+            "after": {
+              "identity_title_and_profile_affiliation": {
+                "source_id": "nwpu-songdingbonan-hr-profile",
+                "source_url": "https://renshi.nwpu.edu.cn/info/1437/7230.htm",
+                "retained_professional_text": "宋丁博男，武汉大学法学学士、法学硕士、法学博士，现任西北工业大学公共政策与管理学院法学系副主任、助理教授，陕西省法治人才库中青年法治人才。",
+                "source_excerpt_sha256": "aad749b072c4c182173138e94feb2c580dfda07a9d437370137bfc7c55450272"
+              },
+              "directory_affiliation": {
+                "source_id": "nwpu-law-department-browser-recovery",
+                "source_url": "https://sppa.nwpu.edu.cn/info/1140/8619.htm",
+                "source_locators": [
+                  "页面标题",
+                  "正文副系主任行"
+                ],
+                "separate_quotes": [
+                  "法学系-公共政策与管理学院",
+                  "副系主任：宋丁博男助理教授"
+                ],
+                "page_date_as_displayed": "2022-06-13",
+                "note": "Two separate exact excerpts, not a concatenated continuous quote;2022 historical affiliation only."
+              },
+              "education": "原官网职业传记独立明确本人武汉大学法学学士、法学硕士、法学博士身份；支持三项来源报告学位，学习及授位时间未知，非学位证书核验。",
+              "current_employment_status": "unknown by research boundary, not a source assertion",
+              "source_education": "Each event retains the same exact source biography degree-label substring; no explicit award wording."
+            }
+          },
+          {
+            "json_pointer": "/people/1/credential_labels_as_source",
+            "before": {
+              "education_label": "研究生班毕业",
+              "degree_label": "文学学士",
+              "degree_awarded": null,
+              "institution": null,
+              "date": null,
+              "source_id": "nwpu-zhaoxueai-profile",
+              "source_url": "https://jfzx.nwpu.edu.cn/info/1258/1418.htm",
+              "retained_professional_text": "学历:研究生班毕业\n学位:文学学士",
+              "source_excerpt_sha256": "331ec46c1333306af1c15167c0260acee7b90b1e349de23f490abddec4841f5e",
+              "note": "全局本人具体学位身份按原文保留；不绑定所列毕业/学习学校或时间，也不创建额外教育事件。授位身份待具体证据核实。",
+              "source_note": "全局学历、学位标签仅照录；不反填到兰大或交大具体学习事件，不推获授或授位院校。"
+            },
+            "after": {
+              "education_label": "研究生班毕业",
+              "degree_label": "文学学士",
+              "degree_awarded": true,
+              "institution": null,
+              "date": null,
+              "source_id": "nwpu-zhaoxueai-profile",
+              "source_url": "https://jfzx.nwpu.edu.cn/info/1258/1418.htm",
+              "retained_professional_text": "学历:研究生班毕业\n学位:文学学士",
+              "source_excerpt_sha256": "331ec46c1333306af1c15167c0260acee7b90b1e349de23f490abddec4841f5e",
+              "note": "本人官网基本信息明确“学位:文学学士”，支持来源报告本人已持有文学学士；同时“学历:研究生班毕业”原样保留。学校、时期与具体学习事件未绑定，未核证书，不新增教育事件。",
+              "source_note": "全局学历、学位标签仅照录；不反填到兰大或交大具体学习事件，不推获授或授位院校。",
+              "source_degree_awarded": null,
+              "previous_canonical_note": "全局本人具体学位身份按原文保留；不绑定所列毕业/学习学校或时间，也不创建额外教育事件。授位身份待具体证据核实。",
+              "fact_scope": "person_level_degree_identity_without_event_institution_or_date_binding"
+            }
+          },
+          {
+            "json_pointer": "/people/1/unknowns",
+            "before": [
+              "仅依据已留职业摘录，非完整履历或实时人事认证；个人与导师导航关闭。",
+              "原学位证、授位法律实体及论文未核；学习、毕业、授位时间不相互推定。",
+              "本人教授称谓及2021-06-04新闻外国语学院教授历史归属保留；名师风采/省级名师不当实时人事名册。教授目录本页未列本人不推退休或离职。",
+              "全局原学历“研究生班毕业”、学位“文学学士”独立保留，不反填兰州1981—1985本科或西交1988—1990研究生事件。研究生不硬改硕士。",
+              "JCCC原缩写不扩展机构；研究方向未明确列出，不从项目题名推个人方向；两书目未列作者或角色不补本人。"
+            ],
+            "after": [
+              "仅依据已留职业摘录，非完整履历或实时人事认证；个人与导师导航关闭。",
+              "原学位证、授位法律实体及论文未核；学习、毕业、授位时间不相互推定。",
+              "本人教授称谓及2021-06-04新闻外国语学院教授历史归属保留；名师风采/省级名师不当实时人事名册。教授目录本页未列本人不推退休或离职。",
+              "本人官网明确“学位:文学学士”，来源报告本人持有文学学士；“学历:研究生班毕业”仍保留。未绑定兰州本科或西交研究生事件、学校或日期，不将研究生硬作硕士。",
+              "JCCC原缩写不扩展机构；研究方向未明确列出，不从项目题名推个人方向；两书目未列作者或角色不补本人。"
+            ]
+          },
+          {
+            "json_pointer": "/people/1/source_previous_canonical_unknowns",
+            "before_present": false,
+            "after": [
+              "仅依据已留职业摘录，非完整履历或实时人事认证；个人与导师导航关闭。",
+              "原学位证、授位法律实体及论文未核；学习、毕业、授位时间不相互推定。",
+              "本人教授称谓及2021-06-04新闻外国语学院教授历史归属保留；名师风采/省级名师不当实时人事名册。教授目录本页未列本人不推退休或离职。",
+              "全局原学历“研究生班毕业”、学位“文学学士”独立保留，不反填兰州1981—1985本科或西交1988—1990研究生事件。研究生不硬改硕士。",
+              "JCCC原缩写不扩展机构；研究方向未明确列出，不从项目题名推个人方向；两书目未列作者或角色不补本人。"
+            ]
+          },
+          {
+            "json_pointer": "/people/3/credential_labels_as_source",
+            "before": {
+              "degree_label": "博士",
+              "field": "运动人体科学",
+              "degree_awarded": null,
+              "institution": null,
+              "date": null,
+              "evidence_id": "fu-identity-education",
+              "source_id": "nwpu-fupengyu-biography",
+              "source_url": "https://tiyu.nwpu.edu.cn/info/1311/10403.htm",
+              "retained_professional_text": "付鹏宇，体育部教师，副教授，硕士生导师，毕业于北京体育大学，运动人体科学专业博士，生物医学工程博士后",
+              "source_excerpt_sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2",
+              "note": "全局本人具体学位身份按原文保留；不绑定所列毕业/学习学校或时间，也不创建额外教育事件。授位身份待具体证据核实。",
+              "source_note": "“运动人体科学专业博士”为概括标签，没有明确“获学位”表述。与毕业院校同句但未独立说明博士授位院校，保守不绑定。不是额外学位事件。"
+            },
+            "after": {
+              "degree_label": "博士",
+              "field": "运动人体科学",
+              "degree_awarded": true,
+              "institution": null,
+              "date": null,
+              "evidence_id": "fu-identity-education",
+              "source_id": "nwpu-fupengyu-biography",
+              "source_url": "https://tiyu.nwpu.edu.cn/info/1311/10403.htm",
+              "retained_professional_text": "付鹏宇，体育部教师，副教授，硕士生导师，毕业于北京体育大学，运动人体科学专业博士，生物医学工程博士后",
+              "source_excerpt_sha256": "d316ac7946818d531a05a66a32b7600b9c12e1e3bad7b98b3790e5bf093b05f2",
+              "note": "本人官网职业传记明确运动人体科学专业博士身份，支持来源报告本人博士学位；不把同句北京体育大学毕业反绑为博士授位学校，日期与具体教育事件未知，未核证书，不新增教育事件。",
+              "source_note": "“运动人体科学专业博士”为概括标签，没有明确“获学位”表述。与毕业院校同句但未独立说明博士授位院校，保守不绑定。不是额外学位事件。",
+              "source_degree_awarded": null,
+              "previous_canonical_note": "全局本人具体学位身份按原文保留；不绑定所列毕业/学习学校或时间，也不创建额外教育事件。授位身份待具体证据核实。",
+              "fact_scope": "person_level_degree_identity_without_event_institution_or_date_binding"
+            }
+          },
+          {
+            "json_pointer": "/people/3/unknowns",
+            "before": [
+              "仅依据已留职业摘录，非完整履历或实时人事认证；个人与导师导航关闭。",
+              "原学位证、授位法律实体及论文未核；学习、毕业、授位时间不相互推定。",
+              "本人副教授、硕士生导师为官网称谓，后者是指导资格而非本人导师；任期起点未知。",
+              "原毕业于北京体育大学、运动人体科学专业博士两信息独立，不强行归为该校博士或补学习日期；生物医学工程博士后机构/日期未知。",
+              "官网传记URL独立于目录未点击的teacher门户，个人href未知，不从同名推href验证。",
+              "两教材仅参编，年份/出版社/姓名表未留，不升独著；体育与健康（理论版）原全校本科生必修教材。"
+            ],
+            "after": [
+              "仅依据已留职业摘录，非完整履历或实时人事认证；个人与导师导航关闭。",
+              "原学位证、授位法律实体及论文未核；学习、毕业、授位时间不相互推定。",
+              "本人副教授、硕士生导师为官网称谓，后者是指导资格而非本人导师；任期起点未知。",
+              "本人官网明确运动人体科学专业博士身份，来源报告本人博士学位；北京体育大学毕业事件阶段未知，不将其绑定博士授位学校或日期；生物医学工程博士后为非学位，机构/日期未知。",
+              "官网传记URL独立于目录未点击的teacher门户，个人href未知，不从同名推href验证。",
+              "两教材仅参编，年份/出版社/姓名表未留，不升独著；体育与健康（理论版）原全校本科生必修教材。"
+            ]
+          },
+          {
+            "json_pointer": "/people/3/source_previous_canonical_unknowns",
+            "before_present": false,
+            "after": [
+              "仅依据已留职业摘录，非完整履历或实时人事认证；个人与导师导航关闭。",
+              "原学位证、授位法律实体及论文未核；学习、毕业、授位时间不相互推定。",
+              "本人副教授、硕士生导师为官网称谓，后者是指导资格而非本人导师；任期起点未知。",
+              "原毕业于北京体育大学、运动人体科学专业博士两信息独立，不强行归为该校博士或补学习日期；生物医学工程博士后机构/日期未知。",
+              "官网传记URL独立于目录未点击的teacher门户，个人href未知，不从同名推href验证。",
+              "两教材仅参编，年份/出版社/姓名表未留，不升独著；体育与健康（理论版）原全校本科生必修教材。"
+            ]
+          }
+        ],
+        "scope": "精确宋3education与赵/付2PERSONcredential。全局2项不增education、不绑定学校/日期、不给event filters；保留原quoteSHA/inputSHA，赵研究生班毕业不丢。"
+      }
+    },
+    {
+      "baseline_people": 838,
+      "people": [
+        {
+          "person_id": "nwpu-zhengye",
+          "source_candidate_sha256": "593b76f8ccbdb8e308d5ef3445adc109850f679633183e5faee11cc5eb9ba221",
+          "source_evidence_sha256": "1078f813906352b9af0fcac59c0066019d75050d1d2119485a77a8665860f1b8",
+          "source_review_sha256": "316c45f9447f18b13f9e69f888f87840c8559bde946142b9354870fed2c8d1e8",
+          "source_organization_id": "nwpu-sppa",
+          "canonical_organization_id": "nwpu-sppa",
+          "organization_identity_basis": "郑原nwpu-sppa同校同中文公共政策与管理学院及sppa官方目录，与组2唯一节点复用；孙浩数学与统计学院身份对应既有nwpu-math-stat，新增只原应用概率统计系展示，不造第二学院/不猜parent；海洋研究院与航海学院不同。",
+          "education": 1,
+          "degree_true_false_null": [
+            1,
+            0,
+            0
+          ],
+          "appointments": 2,
+          "mentors": 1,
+          "professional_guidance": 0,
+          "publications": 2,
+          "teaching": 1
+        },
+        {
+          "person_id": "nwpu-sunhao-applied-statistics",
+          "source_candidate_sha256": "c12745d746232ab74a22028323953a5036494beaf359b901a80279b0bb782a6d",
+          "source_evidence_sha256": "4d8197a74f874aae292c3396d3f3da30d9e95e0e8eff4cb39496171a050bfd71",
+          "source_review_sha256": "bbb0f6302a94dfbcf9194b764c00bd8bf45e8e64ca4574bff1435fbfa020bd4a",
+          "source_organization_id": "nwpu-math-applied-statistics",
+          "canonical_organization_id": "nwpu-math-applied-statistics",
+          "organization_identity_basis": "郑原nwpu-sppa同校同中文公共政策与管理学院及sppa官方目录，与组2唯一节点复用；孙浩数学与统计学院身份对应既有nwpu-math-stat，新增只原应用概率统计系展示，不造第二学院/不猜parent；海洋研究院与航海学院不同。",
+          "education": 3,
+          "degree_true_false_null": [
+            1,
+            1,
+            1
+          ],
+          "appointments": 3,
+          "mentors": 1,
+          "professional_guidance": 0,
+          "publications": 0,
+          "teaching": 5
+        },
+        {
+          "person_id": "nwpu-yangkunde",
+          "source_candidate_sha256": "32024950734eb2fb06bfdd98341c382eb72ea4fcaae34fcc0159d81055aee80d",
+          "source_evidence_sha256": "b45e9eb46b16e999ec464f9da57aab47a3319c2b4586506ff5a1073917b890b6",
+          "source_review_sha256": "7e8946bc7b3f2a8e25e64982a9181b3084d19d1237f7ed3ac67af35d3f70ada3",
+          "source_organization_id": "nwpu-marine-research-institute",
+          "canonical_organization_id": "nwpu-marine-research-institute",
+          "organization_identity_basis": "郑原nwpu-sppa同校同中文公共政策与管理学院及sppa官方目录，与组2唯一节点复用；孙浩数学与统计学院身份对应既有nwpu-math-stat，新增只原应用概率统计系展示，不造第二学院/不猜parent；海洋研究院与航海学院不同。",
+          "education": 3,
+          "degree_true_false_null": [
+            2,
+            0,
+            1
+          ],
+          "appointments": 1,
+          "mentors": 2,
+          "professional_guidance": 0,
+          "publications": 0,
+          "teaching": 1
+        },
+        {
+          "person_id": "nwpu-sunxiaodi",
+          "source_candidate_sha256": "32024950734eb2fb06bfdd98341c382eb72ea4fcaae34fcc0159d81055aee80d",
+          "source_evidence_sha256": "b45e9eb46b16e999ec464f9da57aab47a3319c2b4586506ff5a1073917b890b6",
+          "source_review_sha256": "7e8946bc7b3f2a8e25e64982a9181b3084d19d1237f7ed3ac67af35d3f70ada3",
+          "source_organization_id": "nwpu-art-education-center",
+          "canonical_organization_id": "nwpu-art-education-center",
+          "organization_identity_basis": "郑原nwpu-sppa同校同中文公共政策与管理学院及sppa官方目录，与组2唯一节点复用；孙浩数学与统计学院身份对应既有nwpu-math-stat，新增只原应用概率统计系展示，不造第二学院/不猜parent；海洋研究院与航海学院不同。",
+          "education": 1,
+          "degree_true_false_null": [
+            1,
+            0,
+            0
+          ],
+          "appointments": 0,
+          "mentors": 1,
+          "professional_guidance": 0,
+          "publications": 0,
+          "teaching": 1
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "sha256": "a9a8203d83ea7a0e6f69ca55ce560e4b1747a28ff3f46e70f54b6b23f06cfae0",
+          "source_id": "nwpu-zhengye-thesis-news"
+        },
+        {
+          "sha256": "b6e402d4c4eeca3a6aa97b2a939a5f824c93d74d26e36910fd07f2d539ccbafd",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "a9a8203d83ea7a0e6f69ca55ce560e4b1747a28ff3f46e70f54b6b23f06cfae0",
+          "source_id": "nwpu-zhengye-thesis-news"
+        },
+        {
+          "sha256": "a9a8203d83ea7a0e6f69ca55ce560e4b1747a28ff3f46e70f54b6b23f06cfae0",
+          "source_id": "nwpu-zhengye-thesis-news"
+        },
+        {
+          "sha256": "437f25fc2b7064e60a3eb294323b4065578bfb3a3a10972139460e8575869a9a",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "a20f7f6d47750035a3a95747588c09e5388a19cc0e5bd2b36956f61142799774",
+          "source_id": "nwpu-zhengye-thesis-news"
+        },
+        {
+          "sha256": "437f25fc2b7064e60a3eb294323b4065578bfb3a3a10972139460e8575869a9a",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "437f25fc2b7064e60a3eb294323b4065578bfb3a3a10972139460e8575869a9a",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "f69506fc7fc82f0216b5766fbb9c5def836e7d205f77fd7cefcca31ea4a2e358",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "f69506fc7fc82f0216b5766fbb9c5def836e7d205f77fd7cefcca31ea4a2e358",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "f69506fc7fc82f0216b5766fbb9c5def836e7d205f77fd7cefcca31ea4a2e358",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "28c7b71f24fa66253882386957face28022c3544e20e91ad31a1318e9fe31c7a",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "3525fc5d6d35f99af97fe3f02d7be610528c33e2b2c044037d1cdee49f1caf47",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "c8d9d4a6a92798bf8d381846361249900e20d839dc9a595a692fb368ea511322",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "d6c1a6725ed9f03636eda1cb495ff6503144da15cd3af2318bc90f0754c283ca",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "73f539ee86435051e3087f32966ab225d0d6fbc8f8c6976e269edd2d6dbb1c39",
+          "source_id": "nwpu-sppa-associate-directory-page2"
+        },
+        {
+          "sha256": "a9a8203d83ea7a0e6f69ca55ce560e4b1747a28ff3f46e70f54b6b23f06cfae0",
+          "source_id": "nwpu-zhengye-thesis-news"
+        },
+        {
+          "sha256": "a9a8203d83ea7a0e6f69ca55ce560e4b1747a28ff3f46e70f54b6b23f06cfae0",
+          "source_id": "nwpu-zhengye-thesis-news"
+        },
+        {
+          "sha256": "b6e402d4c4eeca3a6aa97b2a939a5f824c93d74d26e36910fd07f2d539ccbafd",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "a9a8203d83ea7a0e6f69ca55ce560e4b1747a28ff3f46e70f54b6b23f06cfae0",
+          "source_id": "nwpu-zhengye-thesis-news"
+        },
+        {
+          "sha256": "437f25fc2b7064e60a3eb294323b4065578bfb3a3a10972139460e8575869a9a",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "a20f7f6d47750035a3a95747588c09e5388a19cc0e5bd2b36956f61142799774",
+          "source_id": "nwpu-zhengye-thesis-news"
+        },
+        {
+          "sha256": "28c7b71f24fa66253882386957face28022c3544e20e91ad31a1318e9fe31c7a",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "3525fc5d6d35f99af97fe3f02d7be610528c33e2b2c044037d1cdee49f1caf47",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "c8d9d4a6a92798bf8d381846361249900e20d839dc9a595a692fb368ea511322",
+          "source_id": "nwpu-zhengye-center-profile"
+        },
+        {
+          "sha256": "b6e402d4c4eeca3a6aa97b2a939a5f824c93d74d26e36910fd07f2d539ccbafd",
+          "source_id": null
+        },
+        {
+          "sha256": "d6c1a6725ed9f03636eda1cb495ff6503144da15cd3af2318bc90f0754c283ca",
+          "source_id": null
+        },
+        {
+          "sha256": "437f25fc2b7064e60a3eb294323b4065578bfb3a3a10972139460e8575869a9a",
+          "source_id": null
+        },
+        {
+          "sha256": "f69506fc7fc82f0216b5766fbb9c5def836e7d205f77fd7cefcca31ea4a2e358",
+          "source_id": null
+        },
+        {
+          "sha256": "c8d9d4a6a92798bf8d381846361249900e20d839dc9a595a692fb368ea511322",
+          "source_id": null
+        },
+        {
+          "sha256": "28c7b71f24fa66253882386957face28022c3544e20e91ad31a1318e9fe31c7a",
+          "source_id": null
+        },
+        {
+          "sha256": "3525fc5d6d35f99af97fe3f02d7be610528c33e2b2c044037d1cdee49f1caf47",
+          "source_id": null
+        },
+        {
+          "sha256": "889890dc66c79788009953b1353ed30d6976bd051ac8abd5ce3bd48aa3420d5a",
+          "source_id": null
+        },
+        {
+          "sha256": "df24dd882bac340bfb290e0141318dd9e7ec8c027b8971c80dadebfcb258778a",
+          "source_id": null
+        },
+        {
+          "sha256": "73f539ee86435051e3087f32966ab225d0d6fbc8f8c6976e269edd2d6dbb1c39",
+          "source_id": null
+        },
+        {
+          "sha256": "a9a8203d83ea7a0e6f69ca55ce560e4b1747a28ff3f46e70f54b6b23f06cfae0",
+          "source_id": null
+        },
+        {
+          "sha256": "04104b4923bad5675aaae49bd0794918bdcb7bbe88dfda5e4e777c8e55c65345",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "7f7b73d127df8f56608e3610ce72b03885edef207d53a24882cbc03733bb88b3",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "771a1b853404e2edf1dd07f96d80e664666707a43aae648d2cf3c599348c7944",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "1202074ee935cca9ee5f958550263465a3130af11cba84ddea4545f0237a2c93",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "946ca14d22baa24a108f8d8e9868ff3e23cf2afb8f3e8637fdeefc188cf0cfe2",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "d950357358f2a839a64ab949c9eceea8afb5e6502189c2d5a57df54fbe894dae",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "771a1b853404e2edf1dd07f96d80e664666707a43aae648d2cf3c599348c7944",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "92115ec0200c82d5d61a280aa8b50278675c9ee8802efe6543fedaf7a2513787",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "4f090adce39e21c2292e9f4443db9deafeb842427e8364e379ca1b21c994e11a",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "8bdd4eb515836f5b8d04d7e5534f9d1c2f1a0b614867f8ebefb88c9b1416929d",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "b51510f6c26b48645767aa8c0bd5928eb8dbddc86e5823feba972e00934cdd27",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a9e0abb63445b14a8edde04d2b07424100af7d4c7d0beabe4d06121be59f0eb6",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a9e0abb63445b14a8edde04d2b07424100af7d4c7d0beabe4d06121be59f0eb6",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a9e0abb63445b14a8edde04d2b07424100af7d4c7d0beabe4d06121be59f0eb6",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a9e0abb63445b14a8edde04d2b07424100af7d4c7d0beabe4d06121be59f0eb6",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a9e0abb63445b14a8edde04d2b07424100af7d4c7d0beabe4d06121be59f0eb6",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a0e0aea6c4456fdffed93709aa7625988d1b1768ac0ff2e2df7457f096e2a139",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a0e0aea6c4456fdffed93709aa7625988d1b1768ac0ff2e2df7457f096e2a139",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a0e0aea6c4456fdffed93709aa7625988d1b1768ac0ff2e2df7457f096e2a139",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a0e0aea6c4456fdffed93709aa7625988d1b1768ac0ff2e2df7457f096e2a139",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a0e0aea6c4456fdffed93709aa7625988d1b1768ac0ff2e2df7457f096e2a139",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "69ee71625d06eb60fffa6759f98fe47f6f1398100a90431f76b9bf12a6bddf86",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "b51510f6c26b48645767aa8c0bd5928eb8dbddc86e5823feba972e00934cdd27",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "8bdd4eb515836f5b8d04d7e5534f9d1c2f1a0b614867f8ebefb88c9b1416929d",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "3676b4410171ace835af0ae5d40be1686061ae15ebb16bf9b0cbef914d9fa43c",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "183be86493dfda4b131b8ec7860d7c56ae7448ea96afb63748ae9ef305a75356",
+          "source_id": "nwpu-applied-statistics-directory"
+        },
+        {
+          "sha256": "08bc5cc25fe575f10d083ea359656794bc1d310b1b4c21879eaf39194240c085",
+          "source_id": "nwpu-applied-statistics-directory"
+        },
+        {
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e",
+          "source_id": "nwpu-applied-statistics-directory"
+        },
+        {
+          "sha256": "42ca1ff8e7ee46fbd35e53bf920336a56e2db52216ab8f06a032eb6d85d156d8",
+          "source_id": "nwpu-applied-statistics-directory"
+        },
+        {
+          "sha256": "a9d505203d37e30090e82203d9709a4fbddc3bb0482b4269e5f52cda48c65785",
+          "source_id": "nwpu-applied-statistics-directory"
+        },
+        {
+          "sha256": "c6cea8928245a74cb0206bfb7567908c7a8de0706142c79b067b9efc0762f1c2",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "14a5653e30cfebb0a9920f376682d11d284a4731989fcc805efb12644cc219bf",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "04104b4923bad5675aaae49bd0794918bdcb7bbe88dfda5e4e777c8e55c65345",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "7f7b73d127df8f56608e3610ce72b03885edef207d53a24882cbc03733bb88b3",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "771a1b853404e2edf1dd07f96d80e664666707a43aae648d2cf3c599348c7944",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "1202074ee935cca9ee5f958550263465a3130af11cba84ddea4545f0237a2c93",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "946ca14d22baa24a108f8d8e9868ff3e23cf2afb8f3e8637fdeefc188cf0cfe2",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "d950357358f2a839a64ab949c9eceea8afb5e6502189c2d5a57df54fbe894dae",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "771a1b853404e2edf1dd07f96d80e664666707a43aae648d2cf3c599348c7944",
+          "source_id": "nwpu-sunhao-education-history"
+        },
+        {
+          "sha256": "92115ec0200c82d5d61a280aa8b50278675c9ee8802efe6543fedaf7a2513787",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "4f090adce39e21c2292e9f4443db9deafeb842427e8364e379ca1b21c994e11a",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "8bdd4eb515836f5b8d04d7e5534f9d1c2f1a0b614867f8ebefb88c9b1416929d",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "b51510f6c26b48645767aa8c0bd5928eb8dbddc86e5823feba972e00934cdd27",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a0e0aea6c4456fdffed93709aa7625988d1b1768ac0ff2e2df7457f096e2a139",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a0e0aea6c4456fdffed93709aa7625988d1b1768ac0ff2e2df7457f096e2a139",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a0e0aea6c4456fdffed93709aa7625988d1b1768ac0ff2e2df7457f096e2a139",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a0e0aea6c4456fdffed93709aa7625988d1b1768ac0ff2e2df7457f096e2a139",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "a0e0aea6c4456fdffed93709aa7625988d1b1768ac0ff2e2df7457f096e2a139",
+          "source_id": "nwpu-sunhao-jfzx-profile"
+        },
+        {
+          "sha256": "69ee71625d06eb60fffa6759f98fe47f6f1398100a90431f76b9bf12a6bddf86",
+          "source_id": null
+        },
+        {
+          "sha256": "b51510f6c26b48645767aa8c0bd5928eb8dbddc86e5823feba972e00934cdd27",
+          "source_id": null
+        },
+        {
+          "sha256": "8bdd4eb515836f5b8d04d7e5534f9d1c2f1a0b614867f8ebefb88c9b1416929d",
+          "source_id": null
+        },
+        {
+          "sha256": "3676b4410171ace835af0ae5d40be1686061ae15ebb16bf9b0cbef914d9fa43c",
+          "source_id": null
+        },
+        {
+          "sha256": "92115ec0200c82d5d61a280aa8b50278675c9ee8802efe6543fedaf7a2513787",
+          "source_id": null
+        },
+        {
+          "sha256": "4f090adce39e21c2292e9f4443db9deafeb842427e8364e379ca1b21c994e11a",
+          "source_id": null
+        },
+        {
+          "sha256": "946ca14d22baa24a108f8d8e9868ff3e23cf2afb8f3e8637fdeefc188cf0cfe2",
+          "source_id": null
+        },
+        {
+          "sha256": "a9e0abb63445b14a8edde04d2b07424100af7d4c7d0beabe4d06121be59f0eb6",
+          "source_id": null
+        },
+        {
+          "sha256": "a0e0aea6c4456fdffed93709aa7625988d1b1768ac0ff2e2df7457f096e2a139",
+          "source_id": null
+        },
+        {
+          "sha256": "183be86493dfda4b131b8ec7860d7c56ae7448ea96afb63748ae9ef305a75356",
+          "source_id": null
+        },
+        {
+          "sha256": "08bc5cc25fe575f10d083ea359656794bc1d310b1b4c21879eaf39194240c085",
+          "source_id": null
+        },
+        {
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e",
+          "source_id": null
+        },
+        {
+          "sha256": "42ca1ff8e7ee46fbd35e53bf920336a56e2db52216ab8f06a032eb6d85d156d8",
+          "source_id": null
+        },
+        {
+          "sha256": "a9d505203d37e30090e82203d9709a4fbddc3bb0482b4269e5f52cda48c65785",
+          "source_id": null
+        },
+        {
+          "sha256": "c6cea8928245a74cb0206bfb7567908c7a8de0706142c79b067b9efc0762f1c2",
+          "source_id": null
+        },
+        {
+          "sha256": "04104b4923bad5675aaae49bd0794918bdcb7bbe88dfda5e4e777c8e55c65345",
+          "source_id": null
+        },
+        {
+          "sha256": "7f7b73d127df8f56608e3610ce72b03885edef207d53a24882cbc03733bb88b3",
+          "source_id": null
+        },
+        {
+          "sha256": "771a1b853404e2edf1dd07f96d80e664666707a43aae648d2cf3c599348c7944",
+          "source_id": null
+        },
+        {
+          "sha256": "1202074ee935cca9ee5f958550263465a3130af11cba84ddea4545f0237a2c93",
+          "source_id": null
+        },
+        {
+          "sha256": "14a5653e30cfebb0a9920f376682d11d284a4731989fcc805efb12644cc219bf",
+          "source_id": null
+        },
+        {
+          "sha256": "d950357358f2a839a64ab949c9eceea8afb5e6502189c2d5a57df54fbe894dae",
+          "source_id": null
+        },
+        {
+          "sha256": "08bc5cc25fe575f10d083ea359656794bc1d310b1b4c21879eaf39194240c085",
+          "source_id": "nwpu-applied-statistics-directory"
+        },
+        {
+          "sha256": "a9d505203d37e30090e82203d9709a4fbddc3bb0482b4269e5f52cda48c65785",
+          "source_id": "nwpu-applied-statistics-directory"
+        },
+        {
+          "sha256": "db31b9bfe0cd8ded7daec179c9c83e28bcb17faf3684b3ed18ba355dc9ab2a19",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "3a894fcf2dd5edc4bcce7dd0fe21afdf29e77a65a55cf1e013fea731d89c9300",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "e7c50f25f6055f93b174e10d5554be2d41a93b53ef7321760384abe566166a05",
+          "source_id": "nwpu-marine-professor-directory"
+        },
+        {
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e",
+          "source_id": "nwpu-marine-professor-directory"
+        },
+        {
+          "sha256": "443c5cb00d31a45170270d5c86549625bb494382aeeed72605ccf23868f1c09a",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "530dd52e0fb2790e25402244c2add328a39718f1cf694d77d315f82f982f5216",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "7078e65101b45397790e4374a3022e293333de9c04a59472aef477a7e921efa2",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "530dd52e0fb2790e25402244c2add328a39718f1cf694d77d315f82f982f5216",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "7078e65101b45397790e4374a3022e293333de9c04a59472aef477a7e921efa2",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "22540c162b37df6f8f765a88c20e6b66797bf4234b40a241c42f10d8878b4010",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "443c5cb00d31a45170270d5c86549625bb494382aeeed72605ccf23868f1c09a",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "3a894fcf2dd5edc4bcce7dd0fe21afdf29e77a65a55cf1e013fea731d89c9300",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "c28c99d5ee9f5a28889267c675a7d03dd719762b9eeb217add4992a960f46baf",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "81bc3ae7ef220d88cbf61e21dadb53954115fb8a5565e1ded85daf5cd8bfc539",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "d0f7c4df0dd15d7806f44716d52a1842f225810e97986de9321336b5042fad2f",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "443c5cb00d31a45170270d5c86549625bb494382aeeed72605ccf23868f1c09a",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "530dd52e0fb2790e25402244c2add328a39718f1cf694d77d315f82f982f5216",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "7078e65101b45397790e4374a3022e293333de9c04a59472aef477a7e921efa2",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "530dd52e0fb2790e25402244c2add328a39718f1cf694d77d315f82f982f5216",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "7078e65101b45397790e4374a3022e293333de9c04a59472aef477a7e921efa2",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "22540c162b37df6f8f765a88c20e6b66797bf4234b40a241c42f10d8878b4010",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "443c5cb00d31a45170270d5c86549625bb494382aeeed72605ccf23868f1c09a",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "d0f7c4df0dd15d7806f44716d52a1842f225810e97986de9321336b5042fad2f",
+          "source_id": "nwpu-yangkunde-biography"
+        },
+        {
+          "sha256": "7ff0a9897a240f215f77ce8dfbcb7344cc23ae87c941a7771d38d0c8cdd13bcb",
+          "source_id": null
+        },
+        {
+          "sha256": "db31b9bfe0cd8ded7daec179c9c83e28bcb17faf3684b3ed18ba355dc9ab2a19",
+          "source_id": null
+        },
+        {
+          "sha256": "3a894fcf2dd5edc4bcce7dd0fe21afdf29e77a65a55cf1e013fea731d89c9300",
+          "source_id": null
+        },
+        {
+          "sha256": "443c5cb00d31a45170270d5c86549625bb494382aeeed72605ccf23868f1c09a",
+          "source_id": null
+        },
+        {
+          "sha256": "22540c162b37df6f8f765a88c20e6b66797bf4234b40a241c42f10d8878b4010",
+          "source_id": null
+        },
+        {
+          "sha256": "530dd52e0fb2790e25402244c2add328a39718f1cf694d77d315f82f982f5216",
+          "source_id": null
+        },
+        {
+          "sha256": "7078e65101b45397790e4374a3022e293333de9c04a59472aef477a7e921efa2",
+          "source_id": null
+        },
+        {
+          "sha256": "d0f7c4df0dd15d7806f44716d52a1842f225810e97986de9321336b5042fad2f",
+          "source_id": null
+        },
+        {
+          "sha256": "c28c99d5ee9f5a28889267c675a7d03dd719762b9eeb217add4992a960f46baf",
+          "source_id": null
+        },
+        {
+          "sha256": "81bc3ae7ef220d88cbf61e21dadb53954115fb8a5565e1ded85daf5cd8bfc539",
+          "source_id": null
+        },
+        {
+          "sha256": "456e01f9206141b93706e19df0e064f793e66046e737446dcb6aab1c73fe149e",
+          "source_id": null
+        },
+        {
+          "sha256": "e7c50f25f6055f93b174e10d5554be2d41a93b53ef7321760384abe566166a05",
+          "source_id": null
+        },
+        {
+          "sha256": "692f638e98ad9a2c9a42165eb349aa7b74d929b0b1e7477c9d51a3b036912277",
+          "source_id": null
+        },
+        {
+          "sha256": "692f638e98ad9a2c9a42165eb349aa7b74d929b0b1e7477c9d51a3b036912277",
+          "source_id": "nwpu-marine-professor-directory"
+        },
+        {
+          "sha256": "86f675dcf487780b6c4ed788947dff6cd520161c3b8886e5c3d04867795669d8",
+          "source_id": "nwpu-art-directory"
+        },
+        {
+          "sha256": "183be86493dfda4b131b8ec7860d7c56ae7448ea96afb63748ae9ef305a75356",
+          "source_id": "nwpu-art-directory"
+        },
+        {
+          "sha256": "31195968cdc97edf3cb06670533c445467182a0b9645f811661616000de4139e",
+          "source_id": "nwpu-art-directory"
+        },
+        {
+          "sha256": "eb74a583e97fe1f1f11b7e83ea42005c64aa71db52826882f5e6f6b1984359f7",
+          "source_id": "nwpu-art-directory"
+        },
+        {
+          "sha256": "cf28a62480402b8471b67e0848cb623a2ba45b11d725c26a70d064ebf6f33ca9",
+          "source_id": "sunxiaodi-baoji-biography"
+        },
+        {
+          "sha256": "c536b0cdb894eb2fa53c17ad9a83b11e12f68a9b0dc0787a456ee63a42d574cc",
+          "source_id": "sunxiaodi-xian-mentorship"
+        },
+        {
+          "sha256": "cf28a62480402b8471b67e0848cb623a2ba45b11d725c26a70d064ebf6f33ca9",
+          "source_id": "sunxiaodi-baoji-biography"
+        },
+        {
+          "sha256": "c536b0cdb894eb2fa53c17ad9a83b11e12f68a9b0dc0787a456ee63a42d574cc",
+          "source_id": "sunxiaodi-xian-mentorship"
+        },
+        {
+          "sha256": "2b694b4db16976a45e08d8945a1cbd7387e478b8a74c6da9c8aa7a6440242668",
+          "source_id": "sunxiaodi-xian-mentorship"
+        },
+        {
+          "sha256": "cf28a62480402b8471b67e0848cb623a2ba45b11d725c26a70d064ebf6f33ca9",
+          "source_id": "sunxiaodi-baoji-biography"
+        },
+        {
+          "sha256": "c536b0cdb894eb2fa53c17ad9a83b11e12f68a9b0dc0787a456ee63a42d574cc",
+          "source_id": "sunxiaodi-xian-mentorship"
+        },
+        {
+          "sha256": "04d244c1e47b9bd79c9eccb062a1d5487f0208d9a3d6c9b63131df0679560b26",
+          "source_id": "sunxiaodi-baoji-biography"
+        },
+        {
+          "sha256": "23eecd8f4eb1a7dd8fa2233b5e5003a584510dc69ef821fa4e05b79cd8de751d",
+          "source_id": "sunxiaodi-baoji-biography"
+        },
+        {
+          "sha256": "bc0b344df6011351afd51b88dc56c0aed91855e5858683f09dcd1d342c1919ab",
+          "source_id": "sunxiaodi-baoji-biography"
+        },
+        {
+          "sha256": "cf28a62480402b8471b67e0848cb623a2ba45b11d725c26a70d064ebf6f33ca9",
+          "source_id": "sunxiaodi-baoji-biography"
+        },
+        {
+          "sha256": "c536b0cdb894eb2fa53c17ad9a83b11e12f68a9b0dc0787a456ee63a42d574cc",
+          "source_id": "sunxiaodi-xian-mentorship"
+        },
+        {
+          "sha256": "2b694b4db16976a45e08d8945a1cbd7387e478b8a74c6da9c8aa7a6440242668",
+          "source_id": "sunxiaodi-xian-mentorship"
+        },
+        {
+          "sha256": "23eecd8f4eb1a7dd8fa2233b5e5003a584510dc69ef821fa4e05b79cd8de751d",
+          "source_id": "sunxiaodi-baoji-biography"
+        },
+        {
+          "sha256": "bc0b344df6011351afd51b88dc56c0aed91855e5858683f09dcd1d342c1919ab",
+          "source_id": "sunxiaodi-baoji-biography"
+        },
+        {
+          "sha256": "183be86493dfda4b131b8ec7860d7c56ae7448ea96afb63748ae9ef305a75356",
+          "source_id": null
+        },
+        {
+          "sha256": "31195968cdc97edf3cb06670533c445467182a0b9645f811661616000de4139e",
+          "source_id": null
+        },
+        {
+          "sha256": "eb74a583e97fe1f1f11b7e83ea42005c64aa71db52826882f5e6f6b1984359f7",
+          "source_id": null
+        },
+        {
+          "sha256": "86f675dcf487780b6c4ed788947dff6cd520161c3b8886e5c3d04867795669d8",
+          "source_id": null
+        },
+        {
+          "sha256": "dbff50d36fde42e48fb6de05f635bfcade0a17610aa8be23dda63e6e20caaf56",
+          "source_id": null
+        },
+        {
+          "sha256": "cf28a62480402b8471b67e0848cb623a2ba45b11d725c26a70d064ebf6f33ca9",
+          "source_id": null
+        },
+        {
+          "sha256": "04d244c1e47b9bd79c9eccb062a1d5487f0208d9a3d6c9b63131df0679560b26",
+          "source_id": null
+        },
+        {
+          "sha256": "bc0b344df6011351afd51b88dc56c0aed91855e5858683f09dcd1d342c1919ab",
+          "source_id": null
+        },
+        {
+          "sha256": "23eecd8f4eb1a7dd8fa2233b5e5003a584510dc69ef821fa4e05b79cd8de751d",
+          "source_id": null
+        },
+        {
+          "sha256": "1484cb74cf54f7aaacbed65c75f58b42ee71d1a5c8080d8a936ca28a652b7c77",
+          "source_id": null
+        },
+        {
+          "sha256": "c536b0cdb894eb2fa53c17ad9a83b11e12f68a9b0dc0787a456ee63a42d574cc",
+          "source_id": null
+        },
+        {
+          "sha256": "2b694b4db16976a45e08d8945a1cbd7387e478b8a74c6da9c8aa7a6440242668",
+          "source_id": null
+        }
+      ],
+      "mandatory_overlays": [
+        {
+          "person_id": "nwpu-sunxiaodi",
+          "field": "roster_category_observed",
+          "old_value": "副教授/准聘副教授",
+          "new_value": "教师队伍",
+          "source_candidate_sha256": "32024950734eb2fb06bfdd98341c382eb72ea4fcaae34fcc0159d81055aee80d",
+          "source_evidence_sha256": "b45e9eb46b16e999ec464f9da57aab47a3319c2b4586506ff5a1073917b890b6",
+          "manifest_sha256": "2369873a68f73b2dad35ad70e754bccaad8db4e4b83b548fc49a777b05871a57",
+          "overlay_sha256": "8cd746fd948e71964b85a2f770bd54b36f392af357edff703f60bf460126e691",
+          "evidence": [
+            {
+              "source_id": "nwpu-art-directory",
+              "source_url": "https://ysjyzx.nwpu.edu.cn/szdw/jsdw1.htm",
+              "source_excerpt_sha256": "183be86493dfda4b131b8ec7860d7c56ae7448ea96afb63748ae9ef305a75356",
+              "source_locator": "目录性质",
+              "observed_at_utc": "2026-10-25T04:27:11.039Z",
+              "excerpt_id": "sun-directory-category"
+            }
+          ]
+        }
+      ],
+      "mapping_notes": [
+        "257孙小迪目录类别精确overlay实际执行；239其它学校overlay不套。",
+        "郑具体论文指导保持原formal=true且官网说明范围，原论文未读；孙小迪师从阶段未知不绑定博士。",
+        "孙小迪原音乐作品投影到creative_works及实际unknowns，不当论文；孙浩明确2003-06授位月可见。"
+      ],
+      "null_degree_matrix": [
+        {
+          "person_id": "nwpu-zhengye",
+          "event_id": "nwpu-zhengye-education-1",
+          "degree_label_as_source": "管理学博士",
+          "education_stage": "博士",
+          "source_id": "nwpu-zhengye-center-profile",
+          "source_url": "https://snrcdge.nwpu.edu.cn/info/4396/68725.htm",
+          "source_excerpt_sha256": "b6e402d4c4eeca3a6aa97b2a939a5f824c93d74d26e36910fd07f2d539ccbafd",
+          "source_locator": "学历/学位混合栏",
+          "source_candidate_sha256": "593b76f8ccbdb8e308d5ef3445adc109850f679633183e5faee11cc5eb9ba221",
+          "classification_pending": false,
+          "canonical_degree_awarded": true
+        },
+        {
+          "person_id": "nwpu-sunhao-applied-statistics",
+          "event_id": "nwpu-sunhao-applied-statistics-education-2",
+          "degree_label_as_source": "硕士",
+          "education_stage": "硕士",
+          "source_id": "nwpu-sunhao-education-history",
+          "source_url": "https://math.nwpu.edu.cn/info/1311/17037.htm",
+          "source_excerpt_sha256": "771a1b853404e2edf1dd07f96d80e664666707a43aae648d2cf3c599348c7944",
+          "source_locator": "硕士毕业最小片段",
+          "source_candidate_sha256": "c12745d746232ab74a22028323953a5036494beaf359b901a80279b0bb782a6d",
+          "classification_pending": false,
+          "canonical_degree_awarded": null
+        },
+        {
+          "person_id": "nwpu-yangkunde",
+          "event_id": "nwpu-yangkunde-education-1",
+          "degree_label_as_source": null,
+          "education_stage": "本科",
+          "source_id": "nwpu-yangkunde-biography",
+          "source_url": "https://jidian.nwpu.edu.cn/info/1016/13969.htm",
+          "source_excerpt_sha256": "443c5cb00d31a45170270d5c86549625bb494382aeeed72605ccf23868f1c09a",
+          "source_locator": "本科毕业，不是明确学士授位",
+          "source_candidate_sha256": "32024950734eb2fb06bfdd98341c382eb72ea4fcaae34fcc0159d81055aee80d",
+          "classification_pending": false,
+          "canonical_degree_awarded": null
+        },
+        {
+          "person_id": "nwpu-sunxiaodi",
+          "event_id": "nwpu-sunxiaodi-education-1",
+          "degree_label_as_source": "博士",
+          "education_stage": "博士",
+          "source_id": "sunxiaodi-baoji-biography",
+          "source_url": "https://www.bjwlxy.edu.cn/info/1033/38908.htm",
+          "source_excerpt_sha256": "cf28a62480402b8471b67e0848cb623a2ba45b11d725c26a70d064ebf6f33ca9",
+          "source_locator": "身份和学位标签，未用获授措辞",
+          "source_candidate_sha256": "32024950734eb2fb06bfdd98341c382eb72ea4fcaae34fcc0159d81055aee80d",
+          "classification_pending": false,
+          "canonical_degree_awarded": true
+        }
+      ],
+      "teaching_scope_counts": {
+        "records": 8,
+        "course_construction_project_records_not_taught_courses": 1,
+        "teaching_records": 7,
+        "named_course_mentions": 10,
+        "named_taught_course_mentions": 9,
+        "note": "郑烨公共政策学仅主持课程建设项目，role和note明确非授课；孙浩5课程主讲、杨2课程主要讲授、孙小迪2通识课程开设。所有教学层级未明确。"
+      },
+      "final_classification_and_display_parent_update": {
+        "prechange_payload_sha256": "d92cdaaa0dee23a3bcbe524e5b40e9deb18537b71571f11692c31ea25e475651",
+        "delta": [
+          {
+            "json_pointer": "/people/0/education/0",
+            "old_value": {
+              "event_id": "nwpu-zhengye-education-1",
+              "event_kind": "education_label_award_unknown",
+              "institution": null,
+              "institution_as_source": null,
+              "department": null,
+              "education_stage": "博士",
+              "degree_label_as_source": "管理学博士",
+              "field": "管理学",
+              "date_as_source": null,
+              "start": null,
+              "end": null,
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": "吴建南",
+              "note": "学历/学位混合栏仅博士标签，不是明确获授句。申博论文及评奖资格不提升授位事实；就读机构、学习及授位时间均unknown。个人论文导师另有校方具体论文报道直接证据。",
+              "formal_dissertation_advisor_evidence": {
+                "source_id": "nwpu-zhengye-thesis-news",
+                "source_url": "https://news.nwpu.edu.cn/info/1002/72856.htm",
+                "source_excerpt_sha256": "a9a8203d83ea7a0e6f69ca55ce560e4b1747a28ff3f46e70f54b6b23f06cfae0",
+                "source_locator": "明确博士论文及导师片段"
+              },
+              "source_id": "nwpu-zhengye-center-profile",
+              "source_url": "https://snrcdge.nwpu.edu.cn/info/4396/68725.htm",
+              "source_excerpt_sha256": "b6e402d4c4eeca3a6aa97b2a939a5f824c93d74d26e36910fd07f2d539ccbafd",
+              "source_locator": "学历/学位混合栏",
+              "education_event_id": "nwpu-zhengye-education-1",
+              "degree": "管理学博士",
+              "source_event_kind": "degree_label_only",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false
+            },
+            "new_value": {
+              "event_id": "nwpu-zhengye-education-1",
+              "event_kind": "degree",
+              "institution": null,
+              "institution_as_source": null,
+              "department": null,
+              "education_stage": "博士",
+              "degree_label_as_source": "管理学博士",
+              "field": "管理学",
+              "date_as_source": null,
+              "start": null,
+              "end": null,
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": "吴建南",
+              "note": "官网本人“学历/学位：管理学博士”明确具体博士身份，记录来源报告学位；就读及授位院校、专业细分和年月未给，不从任职校或具体论文报道补全。论文导师另据官网具体论文说明，原论文未读取。",
+              "formal_dissertation_advisor_evidence": {
+                "source_id": "nwpu-zhengye-thesis-news",
+                "source_url": "https://news.nwpu.edu.cn/info/1002/72856.htm",
+                "source_excerpt_sha256": "a9a8203d83ea7a0e6f69ca55ce560e4b1747a28ff3f46e70f54b6b23f06cfae0",
+                "source_locator": "明确博士论文及导师片段"
+              },
+              "source_id": "nwpu-zhengye-center-profile",
+              "source_url": "https://snrcdge.nwpu.edu.cn/info/4396/68725.htm",
+              "source_excerpt_sha256": "b6e402d4c4eeca3a6aa97b2a939a5f824c93d74d26e36910fd07f2d539ccbafd",
+              "source_locator": "学历/学位混合栏",
+              "education_event_id": "nwpu-zhengye-education-1",
+              "degree": "管理学博士",
+              "source_event_kind": "degree_label_only",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "source_note": "学历/学位混合栏仅博士标签，不是明确获授句。申博论文及评奖资格不提升授位事实；就读机构、学习及授位时间均unknown。个人论文导师另有校方具体论文报道直接证据。",
+              "degree_award_status_basis": "explicit_personal_doctorate_identity_in_official_profile_or_matched_official_guest_biographies",
+              "degree_award_evidence": [
+                {
+                  "source_id": "nwpu-zhengye-center-profile",
+                  "source_url": "https://snrcdge.nwpu.edu.cn/info/4396/68725.htm",
+                  "source_excerpt_sha256": "b6e402d4c4eeca3a6aa97b2a939a5f824c93d74d26e36910fd07f2d539ccbafd",
+                  "source_locator": "学历/学位混合栏"
+                }
+              ]
+            },
+            "source_candidate_sha256": "593b76f8ccbdb8e308d5ef3445adc109850f679633183e5faee11cc5eb9ba221"
+          },
+          {
+            "json_pointer": "/people/3/education/0",
+            "old_value": {
+              "event_id": "nwpu-sunxiaodi-education-1",
+              "event_kind": "education_label_award_unknown",
+              "education_stage": "博士",
+              "institution": "中国音乐学院",
+              "institution_as_source": "中国音乐学院",
+              "department": null,
+              "field": null,
+              "degree_label_as_source": "博士",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "date_as_source": null,
+              "start": null,
+              "end": null,
+              "date_precision": null,
+              "formal_dissertation_advisor": null,
+              "degree_award_status_basis": "label_or_graduation_without_explicit_award",
+              "note": "官方来访学术报告简介与2021官方综述均用博士标签，不是获授语句；不从博士论坛/文章年份推毕业或授位日期。",
+              "source_id": "sunxiaodi-baoji-biography",
+              "source_url": "https://www.bjwlxy.edu.cn/info/1033/38908.htm",
+              "source_excerpt_sha256": "cf28a62480402b8471b67e0848cb623a2ba45b11d725c26a70d064ebf6f33ca9",
+              "source_locator": "身份和学位标签，未用获授措辞",
+              "observed_at_utc": "2026-10-25T04:28:11.368Z",
+              "excerpt_id": "sun-identity-doctorate",
+              "corroborating_evidence": [
+                {
+                  "source_id": "sunxiaodi-xian-mentorship",
+                  "source_url": "https://rw.xacom.edu.cn/2021/1107/c431a20712/page.htm",
+                  "source_excerpt_sha256": "c536b0cdb894eb2fa53c17ad9a83b11e12f68a9b0dc0787a456ee63a42d574cc",
+                  "source_locator": "同名同单位与博士标签身份桥",
+                  "observed_at_utc": "2026-10-25T04:28:15.829Z",
+                  "excerpt_id": "sun-xian-identity"
+                }
+              ],
+              "education_event_id": "nwpu-sunxiaodi-education-1",
+              "degree": "博士",
+              "source_event_kind": "education_stage_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false
+            },
+            "new_value": {
+              "event_id": "nwpu-sunxiaodi-education-1",
+              "event_kind": "degree",
+              "education_stage": "博士",
+              "institution": "中国音乐学院",
+              "institution_as_source": "中国音乐学院",
+              "department": null,
+              "field": null,
+              "degree_label_as_source": "博士",
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "date_as_source": null,
+              "start": null,
+              "end": null,
+              "date_precision": null,
+              "formal_dissertation_advisor": null,
+              "degree_award_status_basis": "explicit_personal_doctorate_identity_in_official_profile_or_matched_official_guest_biographies",
+              "note": "宝鸡文理学院官方来访简介明确“中国音乐学院博士”，西安音乐学院官方综述同名同单位身份相互对应，记录来源报告博士；不是原证书认证。就读标签学校保留，法定授位主体、专业及授位年月未核，不用活动日期补毕业或授位日。",
+              "source_id": "sunxiaodi-baoji-biography",
+              "source_url": "https://www.bjwlxy.edu.cn/info/1033/38908.htm",
+              "source_excerpt_sha256": "cf28a62480402b8471b67e0848cb623a2ba45b11d725c26a70d064ebf6f33ca9",
+              "source_locator": "身份和学位标签，未用获授措辞",
+              "observed_at_utc": "2026-10-25T04:28:11.368Z",
+              "excerpt_id": "sun-identity-doctorate",
+              "corroborating_evidence": [
+                {
+                  "source_id": "sunxiaodi-xian-mentorship",
+                  "source_url": "https://rw.xacom.edu.cn/2021/1107/c431a20712/page.htm",
+                  "source_excerpt_sha256": "c536b0cdb894eb2fa53c17ad9a83b11e12f68a9b0dc0787a456ee63a42d574cc",
+                  "source_locator": "同名同单位与博士标签身份桥",
+                  "observed_at_utc": "2026-10-25T04:28:15.829Z",
+                  "excerpt_id": "sun-xian-identity"
+                }
+              ],
+              "education_event_id": "nwpu-sunxiaodi-education-1",
+              "degree": "博士",
+              "source_event_kind": "education_stage_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "source_note": "官方来访学术报告简介与2021官方综述均用博士标签，不是获授语句；不从博士论坛/文章年份推毕业或授位日期。",
+              "source_degree_award_status_basis": "label_or_graduation_without_explicit_award",
+              "degree_award_evidence": [
+                {
+                  "source_id": "sunxiaodi-baoji-biography",
+                  "source_url": "https://www.bjwlxy.edu.cn/info/1033/38908.htm",
+                  "source_excerpt_sha256": "cf28a62480402b8471b67e0848cb623a2ba45b11d725c26a70d064ebf6f33ca9",
+                  "source_locator": "身份和学位标签，未用获授措辞"
+                },
+                {
+                  "source_id": "sunxiaodi-xian-mentorship",
+                  "source_url": "https://rw.xacom.edu.cn/2021/1107/c431a20712/page.htm",
+                  "source_excerpt_sha256": "c536b0cdb894eb2fa53c17ad9a83b11e12f68a9b0dc0787a456ee63a42d574cc",
+                  "source_locator": "同名同单位与博士标签身份桥",
+                  "observed_at_utc": "2026-10-25T04:28:15.829Z",
+                  "excerpt_id": "sun-xian-identity"
+                }
+              ]
+            },
+            "source_candidate_sha256": "32024950734eb2fb06bfdd98341c382eb72ea4fcaae34fcc0159d81055aee80d"
+          },
+          {
+            "json_pointer": "/people/3/source_verification_gaps",
+            "old_value": [
+              "中国音乐学院博士为标签，获授状态、毕业/授位日期、专业及更早教育未知。",
+              "师从罗艺峰阶段未定，不链接博士事件，不推正式论文导师。",
+              "两个外校官网提供受邀者职业简介和师承综述；不是本人维护履历。身份由同名同单位和本校目录交叉核对。",
+              "音乐作品作者署名、具体角色和年份未知，未外查metadata或阅读全文。",
+              "当前任职未知；目录只证明官方收录归属。"
+            ],
+            "new_value": [
+              "两个匹配官方简介明确本人中国音乐学院博士身份，作为来源报告学位；毕业及授位日期、法定授位主体、专业与更早教育未知。",
+              "师从罗艺峰阶段未定，不链接博士事件，不推正式论文导师。",
+              "两个外校官网提供受邀者职业简介和师承综述；不是本人维护履历。身份由同名同单位和本校目录交叉核对。",
+              "音乐作品作者署名、具体角色和年份未知，未外查metadata或阅读全文。",
+              "当前任职未知；目录只证明官方收录归属。"
+            ]
+          },
+          {
+            "json_pointer": "/people/3/source_source_verification_gaps",
+            "old_present": false,
+            "new_value": [
+              "中国音乐学院博士为标签，获授状态、毕业/授位日期、专业及更早教育未知。",
+              "师从罗艺峰阶段未定，不链接博士事件，不推正式论文导师。",
+              "两个外校官网提供受邀者职业简介和师承综述；不是本人维护履历。身份由同名同单位和本校目录交叉核对。",
+              "音乐作品作者署名、具体角色和年份未知，未外查metadata或阅读全文。",
+              "当前任职未知；目录只证明官方收录归属。"
+            ]
+          },
+          {
+            "json_pointer": "/org_units/0",
+            "old_value": {
+              "id": "nwpu-math-applied-statistics",
+              "name": "数学与统计学院/应用概率统计系",
+              "type": "department_directory_context",
+              "school_id": "nwpu",
+              "parent_id": null,
+              "administrative_parent_status": "not_independently_verified",
+              "note": "官网目录系名与站点学院名对应，不额外主张法定行政隶属。",
+              "source_id": "nwpu-applied-statistics-directory",
+              "source_url": "https://math.nwpu.edu.cn/szdw/jsdw2/axhf/yygltjx.htm",
+              "source_excerpt_sha256": "08bc5cc25fe575f10d083ea359656794bc1d310b1b4c21879eaf39194240c085",
+              "source_locator": "目录系名",
+              "additional_evidence": {
+                "source_id": "nwpu-applied-statistics-directory",
+                "source_url": "https://math.nwpu.edu.cn/szdw/jsdw2/axhf/yygltjx.htm",
+                "source_excerpt_sha256": "a9d505203d37e30090e82203d9709a4fbddc3bb0482b4269e5f52cda48c65785",
+                "source_locator": "站点署名必要片段"
+              },
+              "campus_ids": []
+            },
+            "new_value": {
+              "id": "nwpu-math-applied-statistics",
+              "name": "应用概率统计系",
+              "type": "department_directory_context",
+              "school_id": "nwpu",
+              "parent_id": "nwpu-math-stat",
+              "administrative_parent_status": "not_independently_verified",
+              "note": "官网目录系名与站点学院名对应，不额外主张法定行政隶属。",
+              "source_id": "nwpu-applied-statistics-directory",
+              "source_url": "https://math.nwpu.edu.cn/szdw/jsdw2/axhf/yygltjx.htm",
+              "source_excerpt_sha256": "08bc5cc25fe575f10d083ea359656794bc1d310b1b4c21879eaf39194240c085",
+              "source_locator": "目录系名",
+              "additional_evidence": {
+                "source_id": "nwpu-applied-statistics-directory",
+                "source_url": "https://math.nwpu.edu.cn/szdw/jsdw2/axhf/yygltjx.htm",
+                "source_excerpt_sha256": "a9d505203d37e30090e82203d9709a4fbddc3bb0482b4269e5f52cda48c65785",
+                "source_locator": "站点署名必要片段"
+              },
+              "campus_ids": [],
+              "source_name": "数学与统计学院/应用概率统计系",
+              "source_parent_id": null,
+              "parent_scope": "official_directory_display_grouping_only_not_legal_administrative_verification",
+              "display_parent_evidence": {
+                "source_id": "nwpu-applied-statistics-directory",
+                "source_url": "https://math.nwpu.edu.cn/szdw/jsdw2/axhf/yygltjx.htm",
+                "source_title": "应用概率统计系-数学与统计学院",
+                "basis": "同一已读目录title、系名与西北工业大学数学与统计学院署名互证，仅展示归组；旧学院对象不改。"
+              }
+            }
+          }
+        ],
+        "inverse_restores_prechange_payload": true,
+        "scope": "仅郑/孙小迪两个明确博士身份学位分类及孙当前gap同步、新应用概率统计系展示parent/name；原parentnull/组合名和旧分类留source_，孙浩2003-06不变、未知学段师从不绑定。"
+      },
+      "conditional_qualification_note_correction": {
+        "path": "/people/3/unknowns/2",
+        "person_id": "nwpu-sunxiaodi",
+        "old_value": "作品限官网书目，未核出版者元数据或全文；本人招生导师资格不生成本人求学导师关系。",
+        "new_value": "作品限官网书目，未核出版者元数据或全文；如来源列有本人招生导师资格，该资格也不构成本人求学导师关系。",
+        "reason": "条件式规则不暗示来源已证明本人招生导师资格；所有人物事实和关系不变。",
+        "previous_payload_sha256": "9c854915be3bf9c9b9741150d042b4ccaf30c80277c91c4c8ac8084bd53e8c38",
+        "payload_sha256": "a2d495c466f585405ff6b5347e244ffd22b82b09757cb86b697af66dcb2c65a9",
+        "inverse_byte_sha256": "9c854915be3bf9c9b9741150d042b4ccaf30c80277c91c4c8ac8084bd53e8c38",
+        "inverse_exact_bytes": true
+      }
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧838事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
