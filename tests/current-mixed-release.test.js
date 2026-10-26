@@ -4,6 +4,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {matches,escapeHtml} from '../site/model.js';
+const njuSecondMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nju11-second-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-neu4-cqu3-sysu2-source-mapping.json',import.meta.url)));
@@ -11,7 +12,7 @@ const schools={neu:'东北大学',cqu:'重庆大学',sysu:'中山大学'};
 const batches={neu:'faculty-batch-neu4-independent-20261026',cqu:'faculty-batch-cqu3-independent-20261026',sysu:'faculty-batch-sysu2-independent-20261026'};
 const ids=["neu-angang", "neu-yanjiaqi", "neu-chengfu", "neu-maomuran", "cqu-liyamei-art", "cqu-yanfugang", "cqu-kongguangyao-medicine", "sysu-xiali", "sysu-gaoru-accounting"];
 test('actual MIXED cohort preserves all independently reviewed identities and complete fields',()=>{
- assert.equal(db.people.length,984+mapping.people.length);assert.equal(db.build_id,roster.build_id);assert.deepEqual(mapping.people.map(p=>p.person_id),ids);assert.equal(mapping.profile_batches.length,3);assert.deepEqual(mapping.profile_batches.map(b=>b.school_id),['neu','cqu','sysu']);for(const b of mapping.profile_batches){assert.equal(b.batch_id,batches[b.school_id]);assert.equal(b.people_count,mapping.people.filter(p=>p.school_id===b.school_id).length);}
+ assert.equal(db.people.length,984+mapping.people.length+njuSecondMapping.people.length);assert.equal(db.build_id,roster.build_id);assert.deepEqual(mapping.people.map(p=>p.person_id),ids);assert.equal(mapping.profile_batches.length,3);assert.deepEqual(mapping.profile_batches.map(b=>b.school_id),['neu','cqu','sysu']);for(const b of mapping.profile_batches){assert.equal(b.batch_id,batches[b.school_id]);assert.equal(b.people_count,mapping.people.filter(p=>p.school_id===b.school_id).length);}
  for(const expected of mapping.people){const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);assert.equal(actual.data_batch_id,batches[actual.school_id]);assert(Object.hasOwn(schools,actual.school_id));assert(matches(actual,{q:actual.name},db.org_units));assert(matches(actual,{school:actual.school_id,org:actual.department_id},db.org_units));assert(!matches(actual,{school:'lzu'},db.org_units));}
 });
 const {render}=createImmutableCohortRenderer({db,roster,fixtureId:import.meta.url});

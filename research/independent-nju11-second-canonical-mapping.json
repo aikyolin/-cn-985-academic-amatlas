@@ -1,0 +1,1351 @@
+{
+  "schema_version": "independent-nju11-second-canonical-mapping-1",
+  "baseline_commit": "3231e7ff9cda795294da6685941d4915615c93bb",
+  "new_people": [
+    "nju-cuizhiqing",
+    "nju-caijiahe",
+    "nju-chendezhi",
+    "nju-zhuchengjian",
+    "nju-chenxuezhang",
+    "nju-sunleqiang",
+    "nju-huxingliang",
+    "nju-zhouanhua",
+    "nju-caodachen-history",
+    "nju-shiquansheng-history",
+    "nju-baolei-philosophy"
+  ],
+  "new_org_ids": [
+    "nju-history",
+    "nju-history-chinese",
+    "nju-history-world",
+    "nju-chemistry",
+    "nju-literature"
+  ],
+  "counts": {
+    "people": 11,
+    "org_units": 5,
+    "education": 35,
+    "appointments": 16,
+    "publications": 20,
+    "mentors": 4,
+    "teaching": 0,
+    "institutional_associations": 0,
+    "professional_research_advisors": 0,
+    "career_end_events": 0,
+    "unbound_person_degree_credentials": 0,
+    "creative_works": 0,
+    "degree_true": 17,
+    "degree_false": 10,
+    "degree_unknown": 8
+  },
+  "counting_scope": "教育事件授位三态与未绑定具体阶段的本人全局学位凭证分开统计；后者不增加教育事件、不指定学校或日期。教学记录可含课程建设项目，作品区分论文书目与创作，关系按原阶段不统称论文指导。",
+  "mapping_inputs": [
+    {
+      "source_group_id": "nju-history-retired",
+      "canonical_payload_sha256": "58344fff088eed311a43213e78f7f3e6fe5cda11e26fa36cf5bf79805235d4fc",
+      "field_mapping_sha256": "3f100f467fabe27ee06789c9cb014bae62c02a237ce17a7bb601cdb260023ef0",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "nju-science-philosophy",
+      "canonical_payload_sha256": "6dedddb6be8e4604129717a38300f2e3952ef7afbc986a7f453edf5e534fc880",
+      "field_mapping_sha256": "cb19bd60548b7cc35f407a21e5ce02d9905155b3b2c42b6aa449640a2430db90",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "nju-literature-history",
+      "canonical_payload_sha256": "b3bdee343375f2fde19b7fa49844616ac01e6e4bb99955d1d3a2eedf784e558b",
+      "field_mapping_sha256": "d69e43ee3b58c3e054ee15576fb198d19d86a5c8e6833b89f8fd6d4ff1c526fd",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "58344fff088eed311a43213e78f7f3e6fe5cda11e26fa36cf5bf79805235d4fc",
+      "org_identity": [
+        {
+          "id": "nju-history",
+          "school_id": "nju",
+          "name": "历史学院",
+          "type": "school",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "nju-about",
+          "source_url": "https://history.nju.edu.cn/28607/list.htm",
+          "note": "学校归属明确，行政父级未知，不推直属校级。",
+          "scope_note": "来源明确学院下设学系与人物学系标签，作为组织展示关系；不认证法律行政隶属。"
+        },
+        {
+          "id": "nju-history-chinese",
+          "school_id": "nju",
+          "name": "中国历史系",
+          "type": "department",
+          "parent_id": "nju-history",
+          "campus_ids": [],
+          "source_id": "nju-about",
+          "source_url": "https://history.nju.edu.cn/28607/list.htm",
+          "note": "学院简介明确下设；本批个人页中文学系字段独立支持人员归属。",
+          "scope_note": "来源明确学院下设学系与人物学系标签，作为组织展示关系；不认证法律行政隶属。"
+        },
+        {
+          "id": "nju-history-world",
+          "school_id": "nju",
+          "name": "世界历史系",
+          "type": "department",
+          "parent_id": "nju-history",
+          "campus_ids": [],
+          "source_id": "nju-about",
+          "source_url": "https://history.nju.edu.cn/28607/list.htm",
+          "note": "学院简介明确下设；本批个人页中文学系字段独立支持人员归属。",
+          "scope_note": "来源明确学院下设学系与人物学系标签，作为组织展示关系；不认证法律行政隶属。"
+        }
+      ],
+      "people": [
+        {
+          "person_id": "nju-cuizhiqing",
+          "field_mappings": [
+            {
+              "field": "education",
+              "source_url": "https://history.nju.edu.cn/czq/main.htm",
+              "source_locator": "个人简介／南京大学／本科",
+              "index": 0
+            },
+            {
+              "field": "education",
+              "source_url": "https://history.nju.edu.cn/czq/main.htm",
+              "source_locator": "个人简介／南京大学／研究生",
+              "index": 1
+            },
+            {
+              "field": "appointments",
+              "source_url": "https://history.nju.edu.cn/czq/main.htm",
+              "source_locator": "个人简介／历史系／主任",
+              "index": 0
+            },
+            {
+              "field": "appointments",
+              "source_url": "https://history.nju.edu.cn/czq/main.htm",
+              "source_locator": "个人简介／台湾研究所／所长",
+              "index": 1
+            },
+            {
+              "field": "appointments",
+              "source_url": "https://history.nju.edu.cn/czq/main.htm",
+              "source_locator": "个人简介／中华民国史研究中心／副主任",
+              "index": 2
+            },
+            {
+              "field": "appointments",
+              "source_url": "https://history.nju.edu.cn/czq/main.htm",
+              "source_locator": "个人简介／南京大学／教授、博士生导师",
+              "index": 3
+            },
+            {
+              "field": "publications",
+              "source_url": "https://history.nju.edu.cn/czq/main.htm",
+              "source_locator": "个人简介／具名书目《太平天国通史》",
+              "index": 0
+            },
+            {
+              "field": "publications",
+              "source_url": "https://history.nju.edu.cn/czq/main.htm",
+              "source_locator": "个人简介／具名书目《太平天国战争全史》",
+              "index": 1
+            }
+          ],
+          "scope": "精确事件各自来源；人物源集合不表示每URL支持每字段。"
+        },
+        {
+          "person_id": "nju-caijiahe",
+          "field_mappings": [
+            {
+              "field": "education",
+              "source_url": "https://hnc.nju.edu.cn/info/1293/2699.htm",
+              "source_locator": "个人简介／南京大学／博士",
+              "index": 0
+            },
+            {
+              "field": "education",
+              "source_url": "https://hnc.nju.edu.cn/info/1293/2699.htm",
+              "source_locator": "个人简介／约翰斯·霍普金斯大学／访问进修",
+              "index": 1
+            },
+            {
+              "field": "education",
+              "source_url": "https://hnc.nju.edu.cn/info/1293/2699.htm",
+              "source_locator": "个人简介／俄亥俄大学／富布赖特高级访问学者",
+              "index": 2
+            },
+            {
+              "field": "appointments",
+              "source_url": "https://hnc.nju.edu.cn/info/1293/2699.htm",
+              "source_locator": "个人简介／中美文化研究中心／教授",
+              "index": 0
+            },
+            {
+              "field": "publications",
+              "source_url": "https://hnc.nju.edu.cn/info/1293/2699.htm",
+              "source_locator": "个人简介／具名书目《双重的遏制：艾森豪威尔政府的东亚政策》",
+              "index": 0
+            },
+            {
+              "field": "publications",
+              "source_url": "https://hnc.nju.edu.cn/info/1293/2699.htm",
+              "source_locator": "个人简介／具名书目《当代伊斯兰原教旨主义运动》",
+              "index": 1
+            }
+          ],
+          "scope": "精确事件各自来源；人物源集合不表示每URL支持每字段。"
+        },
+        {
+          "person_id": "nju-chendezhi",
+          "field_mappings": [
+            {
+              "field": "education",
+              "source_url": "https://history.nju.edu.cn/cdz/main.htm",
+              "source_locator": "个人简介／南京大学／本科",
+              "index": 0
+            },
+            {
+              "field": "education",
+              "source_url": "https://history.nju.edu.cn/cdz/main.htm",
+              "source_locator": "个人简介／南京大学／研究生",
+              "index": 1
+            },
+            {
+              "field": "appointments",
+              "source_url": "https://history.nju.edu.cn/cdz/main.htm",
+              "source_locator": "个人简介／历史系／教授",
+              "index": 0
+            },
+            {
+              "field": "appointments",
+              "source_url": "https://history.nju.edu.cn/cdz/main.htm",
+              "source_locator": "个人简介／元史研究室／主任",
+              "index": 1
+            },
+            {
+              "field": "publications",
+              "source_url": "https://history.nju.edu.cn/cdz/main.htm",
+              "source_locator": "个人简介／具名书目《元朝史》",
+              "index": 0
+            },
+            {
+              "field": "publications",
+              "source_url": "https://history.nju.edu.cn/cdz/main.htm",
+              "source_locator": "个人简介／具名书目《辽代的西北路招讨司》",
+              "index": 1
+            },
+            {
+              "field": "pending_mentor_candidates",
+              "source_url": "https://history.nju.edu.cn/cdz/main.htm",
+              "source_locator": "个人简介",
+              "index": 0
+            }
+          ],
+          "scope": "精确事件各自来源；人物源集合不表示每URL支持每字段。"
+        }
+      ],
+      "degree_classification": {
+        "old_payload_sha256": "56276472a29b5801466aa9de6a6f7b577feee20f38cf48528e771126041a8959",
+        "new_payload_sha256": "6632ea207aaf5a9fa8c649f53a0cdad2386cfafa17f2bd8c1857ab734fd18465",
+        "deltas": [
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "degree"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": "研究生",
+            "new": "历史学硕士"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "event_kind"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": "study",
+            "new": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "degree_awarded"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": null,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "note"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": "研究生及区间，未明确该阶段授位；不将独立历史学硕士标签自动绑定成授位。",
+            "new": "个人简介独立列“历史学硕士”，与唯一1979–1981南京大学中国近现代史研究生经历对应，按本人来源所报学位记录；授位机构与年/月/日未单独明确，不将学习结束年当授位年，未核学位证。"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "degree_award_source_url"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": null,
+            "new": "https://history.nju.edu.cn/czq/main.htm"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "include_in_degree_filters"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "include_in_education_filters"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "source_degree_awarded"
+            ],
+            "old_exists": false,
+            "new_exists": true,
+            "old": null,
+            "new": null
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "source_event_kind"
+            ],
+            "old_exists": false,
+            "new_exists": true,
+            "old": null,
+            "new": "study"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "source_degree"
+            ],
+            "old_exists": false,
+            "new_exists": true,
+            "old": null,
+            "new": "研究生"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "source_note"
+            ],
+            "old_exists": false,
+            "new_exists": true,
+            "old": null,
+            "new": "研究生及区间，未明确该阶段授位；不将独立历史学硕士标签自动绑定成授位。"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "qualifications",
+              0,
+              "degree_awarded"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": null,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "qualifications",
+              0,
+              "note"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": "仅资格标签；与研究生经历分别保留。",
+            "new": "个人简介独立本人具体资格“历史学硕士”；与上述唯一研究生阶段为同一资格，不新增教育事件，授位机构及日期未知。"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "qualifications",
+              0,
+              "source_degree_awarded"
+            ],
+            "old_exists": false,
+            "new_exists": true,
+            "old": null,
+            "new": null
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "qualifications",
+              0,
+              "source_note"
+            ],
+            "old_exists": false,
+            "new_exists": true,
+            "old": null,
+            "new": "仅资格标签；与研究生经历分别保留。"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "field_availability",
+              "education"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": "two_study_periods_award_unknown",
+            "new": "undergraduate_study_award_unknown_and_source_reported_masters_identity"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "unknowns",
+              3
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": "本科及研究生学习区间照录；未披露本人导师。",
+            "new": "本科仅学习层次，学士授位未明；本人独立历史学硕士资格与唯一研究生阶段对应，授位机构及日期未知；未披露本人导师。"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "source_field_availability"
+            ],
+            "old_exists": false,
+            "new_exists": true,
+            "old": null,
+            "new": {
+              "education": "two_study_periods_award_unknown",
+              "appointments": "one_dated_historical_role_and_undated_role_labels",
+              "mentors": null,
+              "publications": "two_official_profile_book_records"
+            }
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "source_unknowns"
+            ],
+            "old_exists": false,
+            "new_exists": true,
+            "old": null,
+            "new": [
+              "官方目录与个人页均列荣退教授；退休年月未知，旧简介职务不证明当前在岗或返聘。",
+              "仅选录两条官网书目；作者完整名单、出版年份及出版社未披露，未读出版物全文。",
+              "个人简介独立列“历史学硕士”；授位机构与授位日期未明确，不从研究生学习终年推授位。",
+              "本科及研究生学习区间照录；未披露本人导师。"
+            ]
+          }
+        ],
+        "inverse_exact": true,
+        "basis": "原个人简介独立历史学硕士对应唯一研究生阶段；父与独审已确认，不补授位机构/年月",
+        "source_quote": "历史学硕士。1962—1967年南京大学历史系本科，1979—1981年南京大学中国近现代史专业研究生。",
+        "source_body_sha256": "8f66bb60697412495f35671a181fa8ef670016255a30edcd535662dcb8661d8d"
+      },
+      "general_guidance_display_delta": {
+        "field_address": [
+          "people",
+          2,
+          "mentors"
+        ],
+        "old": [],
+        "new": [
+          {
+            "name": "韩儒林",
+            "source_reported_relationship": "師从韩儒林研究蒙古史、元史",
+            "relationship_evidence": "explicit_studied_under_statement",
+            "stage": null,
+            "education_event_id": null,
+            "degree_level": null,
+            "status": "relationship_explicit_stage_unresolved",
+            "include_in_mentorship_graph": true,
+            "include_in_verified_mentor_count": false,
+            "active_officially_listed": false,
+            "current_employment_navigation_enabled": false,
+            "profile_source_url": null,
+            "note": "师承明文存在，但未指明属于哪一教育/研究阶段；不绑定1956或1960事件，不推硕士导师。",
+            "source_id": "nju-chendezhi",
+            "source_url": "https://history.nju.edu.cn/cdz/main.htm",
+            "evidence_status": "official_original_body_read",
+            "locator": "个人简介",
+            "evidence_excerpt": "陈得芝師从韩儒林研究蒙古史、元史",
+            "field_provenance": {
+              "name": "nju-chendezhi",
+              "source_reported_relationship": "nju-chendezhi",
+              "relationship_evidence": "nju-chendezhi",
+              "stage": null,
+              "education_event_id": null,
+              "degree_level": null,
+              "status": "nju-chendezhi",
+              "include_in_mentorship_graph": "nju-chendezhi",
+              "include_in_verified_mentor_count": "nju-chendezhi",
+              "active_officially_listed": "nju-chendezhi",
+              "current_employment_navigation_enabled": "nju-chendezhi",
+              "profile_source_url": null
+            },
+            "relation_id": "nju-chendezhi-hanrulin-stage-unknown",
+            "type": "academic_guidance_stage_unknown",
+            "type_label": "师从（阶段未知，非学位导师认证）",
+            "education_stage": "阶段未知",
+            "stage_scope": "unknown_stage",
+            "description": "原文：陈得芝師从韩儒林研究蒙古史、元史。阶段、机构与起止时间未明确，不认定为学位或论文导师。",
+            "employment_status": "unknown",
+            "employment_status_note": "导师当前任职未核实，不启用人物或外站快捷导航。",
+            "quick_link_eligible": false,
+            "navigation_verified": false,
+            "official_url": null,
+            "source_include_in_mentorship_graph": false
+          }
+        ],
+        "old_payload_sha256": "6632ea207aaf5a9fa8c649f53a0cdad2386cfafa17f2bd8c1857ab734fd18465",
+        "new_payload_sha256": "58344fff088eed311a43213e78f7f3e6fe5cda11e26fa36cf5bf79805235d4fc",
+        "inverse_exact": true,
+        "basis": "原已接受师从明文，阶段未定；本轮仅重分类为一般师承展示，不认证学位/论文导师，原pending及旧排图标记保留。",
+        "actual_renderer_probe": {
+          "sha256": "45716b4e84b07752722b4ddc7de4f9feda4c55fb9c67f717b842d12a22deb7a1",
+          "evidence_type": "真实未修改app/loader的私有内存DOM和模型校验",
+          "result": "PASS：1一般师承，阶段未知、非学位导师认证；无关联学历事件及快捷导航"
+        },
+        "first_probe_failure": "最初误用data atlas无build_id与rosters配对导致sameBuild拒绝混版、实际app failclosed；改为已公开site atlas与site rosters同版本，未更改app/loader/校验逻辑后PASS。"
+      },
+      "relation_counts": {
+        "general_guidance": 1,
+        "verified_degree_advisors": 0,
+        "pending_original_same_relation": 1,
+        "distinct_relation_total": 1
+      }
+    },
+    {
+      "people": [
+        {
+          "person_id": "nju-zhuchengjian",
+          "canonical_department_id": "nju-chemistry",
+          "source_candidate_sha256": "4806df08d78f33e9617aa04dec4daa3761dc4d8e4597b5c1a54f6526881c6cf6",
+          "education": [
+            {
+              "event_id": "nju-zhu-master",
+              "field_evidence": [
+                {
+                  "source_id": "nju-zhu-profile",
+                  "source_url": "https://orgchem.nju.edu.cn/ce/26/c41477a511526/page.htm",
+                  "excerpt_id": "nju-zhu-profile-excerpt-2",
+                  "source_locator": "职业简历／硕博攻读、三段博士后及两段南京大学职称",
+                  "observed_at_utc": "2026-10-24T16:12:20.028Z",
+                  "quote_sha256": "98aeec492017ee9993f756fd6f0717d2ac9196ab8b9bdb13c00db6d64831bd8d"
+                }
+              ]
+            },
+            {
+              "event_id": "nju-zhu-doctoral",
+              "field_evidence": [
+                {
+                  "source_id": "nju-zhu-profile",
+                  "source_url": "https://orgchem.nju.edu.cn/ce/26/c41477a511526/page.htm",
+                  "excerpt_id": "nju-zhu-profile-excerpt-2",
+                  "source_locator": "职业简历／硕博攻读、三段博士后及两段南京大学职称",
+                  "observed_at_utc": "2026-10-24T16:12:20.028Z",
+                  "quote_sha256": "98aeec492017ee9993f756fd6f0717d2ac9196ab8b9bdb13c00db6d64831bd8d"
+                },
+                {
+                  "source_id": "nju-zhu-historical-award-mentor",
+                  "source_url": "https://sbc.nju.edu.cn/jb/sysyl/hxhgxy/20140606/i1991.html",
+                  "excerpt_id": "nju-zhu-historical-award-mentor-excerpt-2",
+                  "source_locator": "历史简介／1996博士获授、钱长涛导师及三段博后小组背景",
+                  "observed_at_utc": "2026-10-24T16:12:22.900Z",
+                  "quote_sha256": "71857233da4b5ac8427f0f9510ce535e281e196bb31d23bf294ef2ae7f0465c7"
+                }
+              ]
+            },
+            {
+              "event_id": "nju-zhu-postdoc-bourgogne",
+              "field_evidence": [
+                {
+                  "source_id": "nju-zhu-profile",
+                  "source_url": "https://orgchem.nju.edu.cn/ce/26/c41477a511526/page.htm",
+                  "excerpt_id": "nju-zhu-profile-excerpt-2",
+                  "source_locator": "职业简历／硕博攻读、三段博士后及两段南京大学职称",
+                  "observed_at_utc": "2026-10-24T16:12:20.028Z",
+                  "quote_sha256": "98aeec492017ee9993f756fd6f0717d2ac9196ab8b9bdb13c00db6d64831bd8d"
+                }
+              ]
+            },
+            {
+              "event_id": "nju-zhu-postdoc-oklahoma",
+              "field_evidence": [
+                {
+                  "source_id": "nju-zhu-profile",
+                  "source_url": "https://orgchem.nju.edu.cn/ce/26/c41477a511526/page.htm",
+                  "excerpt_id": "nju-zhu-profile-excerpt-2",
+                  "source_locator": "职业简历／硕博攻读、三段博士后及两段南京大学职称",
+                  "observed_at_utc": "2026-10-24T16:12:20.028Z",
+                  "quote_sha256": "98aeec492017ee9993f756fd6f0717d2ac9196ab8b9bdb13c00db6d64831bd8d"
+                }
+              ]
+            },
+            {
+              "event_id": "nju-zhu-postdoc-houston",
+              "field_evidence": [
+                {
+                  "source_id": "nju-zhu-profile",
+                  "source_url": "https://orgchem.nju.edu.cn/ce/26/c41477a511526/page.htm",
+                  "excerpt_id": "nju-zhu-profile-excerpt-2",
+                  "source_locator": "职业简历／硕博攻读、三段博士后及两段南京大学职称",
+                  "observed_at_utc": "2026-10-24T16:12:20.028Z",
+                  "quote_sha256": "98aeec492017ee9993f756fd6f0717d2ac9196ab8b9bdb13c00db6d64831bd8d"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "目录化学学院与2021任职化学化工学院标签分别保留，不推更名或当前人事；原目录重定向未恢复，不声称个人页等价。",
+            "明确1996博士授位年与1993–1996学习段分别保留；硕士仅攻读，本科未建立，不能补经历。",
+            "博士阶段导师钱长涛为官方历史简介陈述，非原论文认证；Baudry、Halterman、Kochi只是三个博士后小组/实验室背景，不计为三位明确个人导师。",
+            "研究方向：后过渡金属催化的 sp3 C-H 键及其他惰性化学键活化；有机催化串联反应与对映纯生物相关化合物合成。两作品是选取书目非代表性或完整清单；保留书目可读部分范围，未读整页。"
+          ]
+        },
+        {
+          "person_id": "nju-chenxuezhang",
+          "canonical_department_id": "nju-math",
+          "source_candidate_sha256": "fa02cb421883322f4a27e6d7ad93ec72a4e02869722faf660115bc76b52f5cd4",
+          "education": [
+            {
+              "event_id": "nju-chenxuezhang-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "nju-chenxuezhang-profile",
+                  "source_url": "https://math.nju.edu.cn/szdw/apypl1/20190911/i21709.html",
+                  "excerpt_id": "phd",
+                  "source_locator": "本人教育履历／Doctoral degree、南京大学数学系与IMS；原空格规范化，尾部国家/地点省略（如原片段所示）",
+                  "observed_at_utc": "2026-10-25T05:41:27Z",
+                  "quote_sha256": "0ebf84e222b07562251cb5d139366dad3858606ce4791b9b33ec7a1ec533a67c"
+                }
+              ]
+            },
+            {
+              "event_id": "nju-chenxuezhang-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "nju-chenxuezhang-profile",
+                  "source_url": "https://math.nju.edu.cn/szdw/apypl1/20190911/i21709.html",
+                  "excerpt_id": "master",
+                  "source_locator": "本人教育履历／Master degree、吉林大学数学研究所；原空格规范化，尾部国家/地点省略（如原片段所示）",
+                  "observed_at_utc": "2026-10-25T05:41:27Z",
+                  "quote_sha256": "67edb6226a3442751a5caeee0f6cd14b2312867bcf4141f8322b450411b36c8f"
+                }
+              ]
+            },
+            {
+              "event_id": "nju-chenxuezhang-education-3",
+              "field_evidence": [
+                {
+                  "source_id": "nju-chenxuezhang-profile",
+                  "source_url": "https://math.nju.edu.cn/szdw/apypl1/20190911/i21709.html",
+                  "excerpt_id": "undergraduate",
+                  "source_locator": "本人教育履历／Undergraduate degree、吉林大学数学科学学院；原空格规范化，尾部国家/地点省略（如原片段所示）",
+                  "observed_at_utc": "2026-10-25T05:41:27Z",
+                  "quote_sha256": "c627a1e3819a8cf456875f2a31ab1d755660e4e42884f716bfd2a77637964993"
+                }
+              ]
+            },
+            {
+              "event_id": "nju-chenxuezhang-education-4",
+              "field_evidence": [
+                {
+                  "source_id": "nju-chenxuezhang-profile",
+                  "source_url": "https://math.nju.edu.cn/szdw/apypl1/20190911/i21709.html",
+                  "excerpt_id": "postdoc",
+                  "source_locator": "博士后研究阶段及机构；原空格规范化，尾部国家/地点省略（如原片段所示）",
+                  "observed_at_utc": "2026-10-25T05:41:27Z",
+                  "quote_sha256": "8058aae334c1444e713e87fdc9fbac2159c44e0c05a4af97bcac74bcd27436a5"
+                }
+              ]
+            },
+            {
+              "event_id": "nju-chenxuezhang-education-5",
+              "field_evidence": [
+                {
+                  "source_id": "nju-chenxuezhang-profile",
+                  "source_url": "https://math.nju.edu.cn/szdw/apypl1/20190911/i21709.html",
+                  "excerpt_id": "visit",
+                  "source_locator": "明确访问学习或博士生访问阶段；原空格规范化，尾部国家/地点省略（如原片段所示）",
+                  "observed_at_utc": "2026-10-25T05:41:27Z",
+                  "quote_sha256": "6cdc00cfa3394370cc5c722a5ea5d84ee17dbdcaf59f6a8acd03688d3e0b39c4"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "个人页原教授、博导及Department of Mathematics, Nanjing University／数学系明确职业身份；导航按同校数学学科复用数学学院节点，不认证数学系与学院法律同一、行政关系或更名，原数学系标签不被覆盖；博导是指导他人资格，不是本人导师。独立目录、现职未核实。",
+            "博士学习终2011-06与北京大学博士后始2011-04重叠，保留原区间，不推提前毕业或授位月份。",
+            "原空任职数组只表示未结构化其他职业经历，不表示没有工作；原简介职业身份与两段非学位经历均保留。",
+            "选定两篇论文及附勘误，不是完整书目；本人导师未披露，不能从合著者推断。必要摘录空格规范化和尾部国家/地点省略按原记录保留。"
+          ]
+        },
+        {
+          "person_id": "nju-sunleqiang",
+          "canonical_department_id": "nju-philosophy",
+          "source_candidate_sha256": "c3c5608ff26854e1e27304729701928997d6d40685f552c65c18697419c8c659",
+          "education": [
+            {
+              "event_id": "nju-sunleqiang-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "nju-sunleqiang-ias",
+                  "source_url": "https://ias.nju.edu.cn/84/f5/c13141a296181/page.htm",
+                  "excerpt_id": "bachelor",
+                  "source_locator": "本人教育简介／教育学学士明确获授及毕业年",
+                  "observed_at_utc": "2026-10-25T06:11:21Z",
+                  "quote_sha256": "766f60130084b807b253cf4669ad17e413e80be914c7d5dd8dac96c303e941f8"
+                }
+              ]
+            },
+            {
+              "event_id": "nju-sunleqiang-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "nju-sunleqiang-ias",
+                  "source_url": "https://ias.nju.edu.cn/84/f5/c13141a296181/page.htm",
+                  "excerpt_id": "master",
+                  "source_locator": "本人教育简介／哲学硕士明确获授及毕业年",
+                  "observed_at_utc": "2026-10-25T06:11:21Z",
+                  "quote_sha256": "29ab11307f3cda6fe5d09fa652a7b900633d417d729cb889966d33fe7f1cd40a"
+                }
+              ]
+            },
+            {
+              "event_id": "nju-sunleqiang-education-3",
+              "field_evidence": [
+                {
+                  "source_id": "nju-sunleqiang-ias",
+                  "source_url": "https://ias.nju.edu.cn/84/f5/c13141a296181/page.htm",
+                  "excerpt_id": "doctor",
+                  "source_locator": "本人教育简介／法学博士明确获授及毕业年",
+                  "observed_at_utc": "2026-10-25T06:11:21Z",
+                  "quote_sha256": "4934a0cd8ef8fe644ede6c6775e574896fbd917b7d1eebf28314c43e47f42480"
+                }
+              ]
+            },
+            {
+              "event_id": "nju-sunleqiang-education-4",
+              "field_evidence": [
+                {
+                  "source_id": "nju-sunleqiang-ias",
+                  "source_url": "https://ias.nju.edu.cn/84/f5/c13141a296181/page.htm",
+                  "excerpt_id": "visit",
+                  "source_locator": "明确访问学习或博士生访问阶段",
+                  "observed_at_utc": "2026-10-25T06:11:21Z",
+                  "quote_sha256": "37b3fe0eb160a8beb70ccf27fdc767df62b57b24cb3ab132d6d31d6e85e89df6"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "哲学学院个人页列教授、博导，历史IAS页列哲学系、马克思主义学院副教授；各来源单位和职称不同，不猜晋升或更名、当前身份。",
+            "个人页显示2016-04-27，IAS页显示2018-09-17，是来源显示日期，不认证最后修改或职业标签时序。",
+            "IAS来源标题第十三期驻院学者（2017年9月–2018年8月）保留，不凭栏目标题新增独立任职。",
+            "2004教育学学士、2007哲学硕士、2010法学博士均原明确获授，只有年精度；2008–2009访问师从特瑞尔·卡弗不作学位论文导师。",
+            "本批未选具名作品，0不等于本人没有论文或著作；原任职数组空不否认官网职业身份。"
+          ]
+        },
+        {
+          "person_id": "nju-baolei-philosophy",
+          "canonical_department_id": "nju-philosophy",
+          "source_candidate_sha256": "0965c558c7e58424cf7e14e7fb0e96cfb46f77d081e0fdfe0cd7105574e670a2",
+          "education": [
+            {
+              "event_id": "nju-baolei-philosophy-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "profile-2-392",
+                  "source_url": "https://philo.nju.edu.cn/c2/10/c4712a508432/page.htm",
+                  "excerpt_id": "education0",
+                  "source_locator": "本科阶段条目／哲学学士、法学学士双学位与共同区间",
+                  "observed_at_utc": "2026-10-25T08:05:17Z",
+                  "summary_sha256": "b9b02b955132d1253042ce0fa0a8ecc0d541e018e9802d6f85788e6cff96381c",
+                  "original_raw_sha256": "d03916cebd9ff48c31a218c9b4ceea639925dc8952b4fb6fa02f96eed5862e0b",
+                  "original_line_sha256": [
+                    "fca04e7bf8af501de1904496ce06073be9aabea6c6d3cc28e9f443a441be43f8",
+                    "bfacba222c682cd7d05bcabcd0292671d9013773063b6a40e9e3c9bfe71c5163"
+                  ]
+                }
+              ]
+            },
+            {
+              "event_id": "nju-baolei-philosophy-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "profile-2-392",
+                  "source_url": "https://philo.nju.edu.cn/c2/10/c4712a508432/page.htm",
+                  "excerpt_id": "education1",
+                  "source_locator": "硕士研究生阶段条目／中国哲学专业与哲学硕士称谓",
+                  "observed_at_utc": "2026-10-25T08:05:17Z",
+                  "summary_sha256": "1130a8032935f32a7754a44f44e0571b9c92ada4e0bacbb3cc55850996f43201",
+                  "original_raw_sha256": "d03916cebd9ff48c31a218c9b4ceea639925dc8952b4fb6fa02f96eed5862e0b",
+                  "original_line_sha256": [
+                    "e44a5c7124e99956ad83506c929901ffd8af7cc71351f9d88513985adfd2bd19",
+                    "6ffcdcf3394f0f6324d958526ec30b5f6d805e51c1f0fbebef3f4e3dcb48765a"
+                  ]
+                }
+              ]
+            },
+            {
+              "event_id": "nju-baolei-philosophy-education-3",
+              "field_evidence": [
+                {
+                  "source_id": "profile-2-392",
+                  "source_url": "https://philo.nju.edu.cn/c2/10/c4712a508432/page.htm",
+                  "excerpt_id": "education2",
+                  "source_locator": "博士研究生阶段条目／台湾大学哲学系与哲学博士称谓",
+                  "observed_at_utc": "2026-10-25T08:05:17Z",
+                  "summary_sha256": "419434de95b1015d0e9b27b352b41015db4d8c3958e9b1238db8e82a4c8ded35",
+                  "original_raw_sha256": "d03916cebd9ff48c31a218c9b4ceea639925dc8952b4fb6fa02f96eed5862e0b",
+                  "original_line_sha256": [
+                    "6e2d2df51bf5e706e7d069c8937b9e4b592e904e267defe469754f330dee96ec",
+                    "fac0c4dd09da8cc3873e74db39eb0d23c41e8da0577cf6ed28ac6fcebc578f90"
+                  ]
+                }
+              ]
+            },
+            {
+              "event_id": "nju-baolei-philosophy-education-4",
+              "field_evidence": [
+                {
+                  "source_id": "profile-2-392",
+                  "source_url": "https://philo.nju.edu.cn/c2/10/c4712a508432/page.htm",
+                  "excerpt_id": "postdoc",
+                  "source_locator": "博士后研究阶段及机构",
+                  "observed_at_utc": "2026-10-25T08:05:17Z",
+                  "summary_sha256": "67d8f2c462e6900faf8c4c83b5df8eec38250c72709d748c902d9f7156ee1141",
+                  "original_raw_sha256": "d03916cebd9ff48c31a218c9b4ceea639925dc8952b4fb6fa02f96eed5862e0b",
+                  "original_line_sha256": [
+                    "351ce46dc7f3263f5bff900a487a3d4237652ad65ba13fc99f1fa2b45b5c7a40",
+                    "cae94e6c5c6ee3c995aeeabf6b705c9638b1f2ed4d1e5fa1c837e0e9bae4eb91"
+                  ]
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "原2020年12月至今南京大学哲学系（宗教学系）宗教学学科关联未列具体岗位，不推讲师、副教授或当前聘任；保留独立未分类机构区间，不造任职记录。",
+            "本科双学位是一个共同区间及两个原资格称谓；硕士、博士原各阶段与具体资格同时保留，不将区间结束直接当授位日。",
+            "博士论文原题《<解深密经>的真理观》（The Theory of Truth in the Saṃdhinirmocana-sūtra），未读论文、不认证答辩或导师；杨维中仅博士后合作导师。",
+            "两篇作品的期刊与年月按原个人清单保留，作者完整串与独著未知，未外核出版者或全文。"
+          ]
+        }
+      ],
+      "orgs": [
+        {
+          "id": "nju-chemistry",
+          "name": "化学学院",
+          "type": "school",
+          "school_id": "nju",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "nju-chemistry-directory",
+          "source_url": "https://chem.nju.edu.cn/szdw/list4.htm",
+          "field_evidence": [
+            {
+              "source_id": "nju-chemistry-directory",
+              "source_url": "https://chem.nju.edu.cn/szdw/list4.htm",
+              "excerpt_id": "nju-chemistry-directory-excerpt-1",
+              "source_locator": "化学学院目录／朱成建具名条目与显示日期",
+              "observed_at_utc": "2026-10-24T16:12:29.681Z",
+              "quote_sha256": "6f4979085e3e21a250197e55cbef3e2f6b71cd685aa3585685ffae070e62f896"
+            },
+            {
+              "source_id": "nju-chemistry-directory",
+              "source_url": "https://chem.nju.edu.cn/szdw/list4.htm",
+              "excerpt_id": "nju-chemistry-directory-excerpt-2",
+              "source_locator": "官网页脚学院署名",
+              "observed_at_utc": "2026-10-24T16:12:29.681Z",
+              "quote_sha256": "e8506ed6604e6cda83203e597e0219c5ff63c9002191b1bc4efdc992ffb00d5b"
+            }
+          ],
+          "scope_note": "具名学院目录支持显示归组；历史化学化工学院称谓保留于原任职，不推更名或法律行政层级。"
+        }
+      ],
+      "classification_corrections": [
+        {
+          "person_id": "nju-chenxuezhang",
+          "event_id": "nju-chenxuezhang-education-1",
+          "old_value": null,
+          "new_value": true,
+          "field_evidence": [
+            {
+              "source_id": "nju-chenxuezhang-profile",
+              "source_url": "https://math.nju.edu.cn/szdw/apypl1/20190911/i21709.html",
+              "excerpt_id": "phd",
+              "source_locator": "本人教育履历／Doctoral degree、南京大学数学系与IMS；原空格规范化，尾部国家/地点省略（如原片段所示）",
+              "observed_at_utc": "2026-10-25T05:41:27Z",
+              "quote_sha256": "0ebf84e222b07562251cb5d139366dad3858606ce4791b9b33ec7a1ec533a67c"
+            }
+          ],
+          "exact_event_delta": [
+            {
+              "path": "/degree_award_basis",
+              "old_present": false,
+              "new_value": "具名本人履历明确正式学位资格称谓，按来源报告；未核证书，不将学习年月当授位时间。"
+            },
+            {
+              "path": "/degree_awarded",
+              "old_present": true,
+              "old_value": null,
+              "new_value": true
+            },
+            {
+              "path": "/event_kind",
+              "old_present": true,
+              "old_value": "degree_study",
+              "new_value": "degree"
+            },
+            {
+              "path": "/include_in_degree_filters",
+              "old_present": true,
+              "old_value": false,
+              "new_value": true
+            },
+            {
+              "path": "/preclassification_event_kind",
+              "old_present": false,
+              "new_value": "degree_study"
+            },
+            {
+              "path": "/preclassification_include_in_degree_filters",
+              "old_present": false,
+              "new_value": false
+            },
+            {
+              "path": "/source_degree_awarded",
+              "old_present": false,
+              "new_value": null
+            }
+          ]
+        },
+        {
+          "person_id": "nju-chenxuezhang",
+          "event_id": "nju-chenxuezhang-education-2",
+          "old_value": null,
+          "new_value": true,
+          "field_evidence": [
+            {
+              "source_id": "nju-chenxuezhang-profile",
+              "source_url": "https://math.nju.edu.cn/szdw/apypl1/20190911/i21709.html",
+              "excerpt_id": "master",
+              "source_locator": "本人教育履历／Master degree、吉林大学数学研究所；原空格规范化，尾部国家/地点省略（如原片段所示）",
+              "observed_at_utc": "2026-10-25T05:41:27Z",
+              "quote_sha256": "67edb6226a3442751a5caeee0f6cd14b2312867bcf4141f8322b450411b36c8f"
+            }
+          ],
+          "exact_event_delta": [
+            {
+              "path": "/degree_award_basis",
+              "old_present": false,
+              "new_value": "具名本人履历明确正式学位资格称谓，按来源报告；未核证书，不将学习年月当授位时间。"
+            },
+            {
+              "path": "/degree_awarded",
+              "old_present": true,
+              "old_value": null,
+              "new_value": true
+            },
+            {
+              "path": "/event_kind",
+              "old_present": true,
+              "old_value": "degree_study",
+              "new_value": "degree"
+            },
+            {
+              "path": "/include_in_degree_filters",
+              "old_present": true,
+              "old_value": false,
+              "new_value": true
+            },
+            {
+              "path": "/preclassification_event_kind",
+              "old_present": false,
+              "new_value": "degree_study"
+            },
+            {
+              "path": "/preclassification_include_in_degree_filters",
+              "old_present": false,
+              "new_value": false
+            },
+            {
+              "path": "/source_degree_awarded",
+              "old_present": false,
+              "new_value": null
+            }
+          ]
+        },
+        {
+          "person_id": "nju-chenxuezhang",
+          "event_id": "nju-chenxuezhang-education-3",
+          "old_value": null,
+          "new_value": true,
+          "field_evidence": [
+            {
+              "source_id": "nju-chenxuezhang-profile",
+              "source_url": "https://math.nju.edu.cn/szdw/apypl1/20190911/i21709.html",
+              "excerpt_id": "undergraduate",
+              "source_locator": "本人教育履历／Undergraduate degree、吉林大学数学科学学院；原空格规范化，尾部国家/地点省略（如原片段所示）",
+              "observed_at_utc": "2026-10-25T05:41:27Z",
+              "quote_sha256": "c627a1e3819a8cf456875f2a31ab1d755660e4e42884f716bfd2a77637964993"
+            }
+          ],
+          "exact_event_delta": [
+            {
+              "path": "/degree_award_basis",
+              "old_present": false,
+              "new_value": "具名本人履历明确正式学位资格称谓，按来源报告；未核证书，不将学习年月当授位时间。"
+            },
+            {
+              "path": "/degree_awarded",
+              "old_present": true,
+              "old_value": null,
+              "new_value": true
+            },
+            {
+              "path": "/event_kind",
+              "old_present": true,
+              "old_value": "degree_study",
+              "new_value": "degree"
+            },
+            {
+              "path": "/include_in_degree_filters",
+              "old_present": true,
+              "old_value": false,
+              "new_value": true
+            },
+            {
+              "path": "/preclassification_event_kind",
+              "old_present": false,
+              "new_value": "degree_study"
+            },
+            {
+              "path": "/preclassification_include_in_degree_filters",
+              "old_present": false,
+              "new_value": false
+            },
+            {
+              "path": "/source_degree_awarded",
+              "old_present": false,
+              "new_value": null
+            }
+          ]
+        },
+        {
+          "person_id": "nju-baolei-philosophy",
+          "event_id": "nju-baolei-philosophy-education-1",
+          "old_value": null,
+          "new_value": true,
+          "field_evidence": [
+            {
+              "source_id": "profile-2-392",
+              "source_url": "https://philo.nju.edu.cn/c2/10/c4712a508432/page.htm",
+              "excerpt_id": "education0",
+              "source_locator": "本科阶段条目／哲学学士、法学学士双学位与共同区间",
+              "observed_at_utc": "2026-10-25T08:05:17Z",
+              "summary_sha256": "b9b02b955132d1253042ce0fa0a8ecc0d541e018e9802d6f85788e6cff96381c",
+              "original_raw_sha256": "d03916cebd9ff48c31a218c9b4ceea639925dc8952b4fb6fa02f96eed5862e0b",
+              "original_line_sha256": [
+                "fca04e7bf8af501de1904496ce06073be9aabea6c6d3cc28e9f443a441be43f8",
+                "bfacba222c682cd7d05bcabcd0292671d9013773063b6a40e9e3c9bfe71c5163"
+              ]
+            }
+          ],
+          "exact_event_delta": [
+            {
+              "path": "/degree_award_basis",
+              "old_present": false,
+              "new_value": "具名本人履历明确正式学位资格称谓，按来源报告；未核证书，不将学习年月当授位时间。"
+            },
+            {
+              "path": "/degree_awarded",
+              "old_present": true,
+              "old_value": null,
+              "new_value": true
+            },
+            {
+              "path": "/event_kind",
+              "old_present": true,
+              "old_value": "degree_study",
+              "new_value": "degree"
+            },
+            {
+              "path": "/include_in_degree_filters",
+              "old_present": true,
+              "old_value": false,
+              "new_value": true
+            },
+            {
+              "path": "/preclassification_event_kind",
+              "old_present": false,
+              "new_value": "degree_study"
+            },
+            {
+              "path": "/preclassification_include_in_degree_filters",
+              "old_present": false,
+              "new_value": false
+            },
+            {
+              "path": "/source_degree_awarded",
+              "old_present": false,
+              "new_value": null
+            }
+          ]
+        },
+        {
+          "person_id": "nju-baolei-philosophy",
+          "event_id": "nju-baolei-philosophy-education-2",
+          "old_value": null,
+          "new_value": true,
+          "field_evidence": [
+            {
+              "source_id": "profile-2-392",
+              "source_url": "https://philo.nju.edu.cn/c2/10/c4712a508432/page.htm",
+              "excerpt_id": "education1",
+              "source_locator": "硕士研究生阶段条目／中国哲学专业与哲学硕士称谓",
+              "observed_at_utc": "2026-10-25T08:05:17Z",
+              "summary_sha256": "1130a8032935f32a7754a44f44e0571b9c92ada4e0bacbb3cc55850996f43201",
+              "original_raw_sha256": "d03916cebd9ff48c31a218c9b4ceea639925dc8952b4fb6fa02f96eed5862e0b",
+              "original_line_sha256": [
+                "e44a5c7124e99956ad83506c929901ffd8af7cc71351f9d88513985adfd2bd19",
+                "6ffcdcf3394f0f6324d958526ec30b5f6d805e51c1f0fbebef3f4e3dcb48765a"
+              ]
+            }
+          ],
+          "exact_event_delta": [
+            {
+              "path": "/degree_award_basis",
+              "old_present": false,
+              "new_value": "具名本人履历明确正式学位资格称谓，按来源报告；未核证书，不将学习年月当授位时间。"
+            },
+            {
+              "path": "/degree_awarded",
+              "old_present": true,
+              "old_value": null,
+              "new_value": true
+            },
+            {
+              "path": "/event_kind",
+              "old_present": true,
+              "old_value": "degree_study",
+              "new_value": "degree"
+            },
+            {
+              "path": "/include_in_degree_filters",
+              "old_present": true,
+              "old_value": false,
+              "new_value": true
+            },
+            {
+              "path": "/preclassification_event_kind",
+              "old_present": false,
+              "new_value": "degree_study"
+            },
+            {
+              "path": "/preclassification_include_in_degree_filters",
+              "old_present": false,
+              "new_value": false
+            },
+            {
+              "path": "/source_degree_awarded",
+              "old_present": false,
+              "new_value": null
+            }
+          ]
+        },
+        {
+          "person_id": "nju-baolei-philosophy",
+          "event_id": "nju-baolei-philosophy-education-3",
+          "old_value": null,
+          "new_value": true,
+          "field_evidence": [
+            {
+              "source_id": "profile-2-392",
+              "source_url": "https://philo.nju.edu.cn/c2/10/c4712a508432/page.htm",
+              "excerpt_id": "education2",
+              "source_locator": "博士研究生阶段条目／台湾大学哲学系与哲学博士称谓",
+              "observed_at_utc": "2026-10-25T08:05:17Z",
+              "summary_sha256": "419434de95b1015d0e9b27b352b41015db4d8c3958e9b1238db8e82a4c8ded35",
+              "original_raw_sha256": "d03916cebd9ff48c31a218c9b4ceea639925dc8952b4fb6fa02f96eed5862e0b",
+              "original_line_sha256": [
+                "6e2d2df51bf5e706e7d069c8937b9e4b592e904e267defe469754f330dee96ec",
+                "fac0c4dd09da8cc3873e74db39eb0d23c41e8da0577cf6ed28ac6fcebc578f90"
+              ]
+            }
+          ],
+          "exact_event_delta": [
+            {
+              "path": "/degree_award_basis",
+              "old_present": false,
+              "new_value": "具名本人履历明确正式学位资格称谓，按来源报告；未核证书，不将学习年月当授位时间。"
+            },
+            {
+              "path": "/degree_awarded",
+              "old_present": true,
+              "old_value": null,
+              "new_value": true
+            },
+            {
+              "path": "/event_kind",
+              "old_present": true,
+              "old_value": "degree_study",
+              "new_value": "degree"
+            },
+            {
+              "path": "/include_in_degree_filters",
+              "old_present": true,
+              "old_value": false,
+              "new_value": true
+            },
+            {
+              "path": "/preclassification_event_kind",
+              "old_present": false,
+              "new_value": "degree_study"
+            },
+            {
+              "path": "/preclassification_include_in_degree_filters",
+              "old_present": false,
+              "new_value": false
+            },
+            {
+              "path": "/source_degree_awarded",
+              "old_present": false,
+              "new_value": null
+            }
+          ]
+        }
+      ],
+      "organization_reuse": [
+        {
+          "person_ids": [
+            "nju-sunleqiang",
+            "nju-baolei-philosophy"
+          ],
+          "node_id": "nju-philosophy",
+          "basis": "孙IAS及包本人原单位均明确哲学系，复用旧展示节点；哲学学院及马克思主义学院原标签另保，不改旧节点或法律隶属。"
+        },
+        {
+          "person_id": "nju-chenxuezhang",
+          "node_id": "nju-math",
+          "basis": "同校官方数学网站及数学学科导航归组，原数学系/Department of Mathematics全部保留；不认证数学系与数学学院法律同一或更名。"
+        }
+      ],
+      "relationships_count_scope": {
+        "education_stage_mentors": 3,
+        "postdoctoral_host_group_contexts": 3,
+        "formal_original_thesis_verifications": 0
+      }
+    },
+    {
+      "baseline_profiles": 993,
+      "counts": {
+        "education": 10,
+        "appointments": 7,
+        "mentors": 0,
+        "publications": 8,
+        "teaching": 0
+      },
+      "degree_original_null": 7,
+      "degree_changes": [
+        {
+          "event_id": "nju-zhouanhua-education-1",
+          "old": null,
+          "new": true,
+          "exact_context": "1982年毕业于新疆大学中文系，文学学士",
+          "source_candidate_sha256": "28527253eff1a21650bd09233135b0a6ff3a73b75492546df1759976c1d578fc",
+          "source_url": "https://chin.nju.edu.cn/szdw/txjs/20190926/i34564.html",
+          "scope": "明确文学资格，毕业年不作授位年，未核证书。"
+        },
+        {
+          "event_id": "nju-zhouanhua-education-2",
+          "old": null,
+          "new": true,
+          "exact_context": "1987年毕业于南京大学中文系，文学硕士",
+          "source_candidate_sha256": "28527253eff1a21650bd09233135b0a6ff3a73b75492546df1759976c1d578fc",
+          "source_url": "https://chin.nju.edu.cn/szdw/txjs/20190926/i34564.html",
+          "scope": "明确文学资格，毕业年不作授位年，未核证书。"
+        },
+        {
+          "event_id": "nju-zhouanhua-education-3",
+          "old": null,
+          "new": true,
+          "exact_context": "1989年毕业于南京大学中文系，文学博士",
+          "source_candidate_sha256": "28527253eff1a21650bd09233135b0a6ff3a73b75492546df1759976c1d578fc",
+          "source_url": "https://chin.nju.edu.cn/szdw/txjs/20190926/i34564.html",
+          "scope": "明确文学资格，毕业年不作授位年，未核证书。"
+        }
+      ],
+      "org_scope": "文学院新node；历史学院与中国历史系复用组1唯一node，390原页标题与中国历史系字段对应；展示关系不当法律认证。",
+      "retirement_scope": "胡、周退休分类和史荣退/退休正文均可见，不被现职未知遮盖；退休日期不猜。",
+      "raw_evidence_scope": "390原职业行仅私审保留；公开summary不冒连续引文。"
+    }
+  ],
+  "mapping": "仅追加十一名已审来源人物及组织展示节点；旧993事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
