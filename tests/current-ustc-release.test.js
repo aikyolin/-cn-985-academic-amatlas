@@ -1,3 +1,4 @@
+import {createImmutableCohortRenderer} from './immutable-cohort-renderer.js';
 import {readAtlasFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
@@ -8,13 +9,14 @@ const fduMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-fdu1
 const mucMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-muc12-source-mapping.json',import.meta.url)));
 const nwsuafMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nwsuaf12-source-mapping.json',import.meta.url)));
 const oucMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ouc12-source-mapping.json',import.meta.url)));
+const lzuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-lzu11-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ustc12-source-mapping.json',import.meta.url)));
 test('actual USTC cohort exactly preserves independently reviewed fields, identities and scope',()=>{
  assert.deepEqual(mapping.people.map(p=>p.person_id),["ustc-liubin-earth","ustc-jixiang","ustc-qianhongwu","ustc-liujing-life","ustc-jijiaojiao","ustc-zhangying-public-policy","ustc-zhuxiuli","ustc-shiyunli","ustc-niuweixing","ustc-zhumengxiao","ustc-wangchengwei","ustc-jinzhengyao"]);
  assert(mapping.people.every(p=>p.data_batch_id==='faculty-batch-ustc12-independent-20261026'));
- assert.equal(db.people.length,861+mapping.people.length+cauMapping.people.length+fduMapping.people.length+mucMapping.people.length+nwsuafMapping.people.length+oucMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,861+mapping.people.length+cauMapping.people.length+fduMapping.people.length+mucMapping.people.length+nwsuafMapping.people.length+oucMapping.people.length+lzuMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const expected of mapping.people){
   const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);
   assert.equal(typeof actual.department,'string');assert(actual.department.length>0);
@@ -23,15 +25,7 @@ test('actual USTC cohort exactly preserves independently reviewed fields, identi
   for(const stage of ['bachelor','master','doctor']) for(const event of stages(actual,stage)){assert.equal(event.event_kind,'degree');assert.equal(event.degree_awarded,true);}
  }
 });
-let serial=0;
-async function render(hash){
- const nodes=new Map(),node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};
- globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
- globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(){}};
- globalThis.fetch=createAtlasFetch(db,roster);
- await import('../site/app.js?current-ustc-release='+serial++);
- assert(!node('#main').innerHTML.includes('资料暂未加载'));return node;
-}
+const {render}=createImmutableCohortRenderer({db,roster,fixtureId:import.meta.url});
 for(const expected of mapping.people)test('actual USTC profile and lineage preserve '+expected.name,async()=>{
  const nodes=await render('#/person/'+expected.person_id);const html=['#main','#profile-content'].map(k=>nodes(k).innerHTML).join('\n');
  assert(html.includes(expected.name));assert(html.includes('中国科学技术大学'));

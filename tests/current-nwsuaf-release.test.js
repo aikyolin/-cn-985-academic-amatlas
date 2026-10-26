@@ -1,16 +1,18 @@
+import {createImmutableCohortRenderer} from './immutable-cohort-renderer.js';
 import {readAtlasFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {matches, stages, mentorEvent, mentorEvents, mentorOfficialUrl, mentorProfileRoute, escapeHtml} from '../site/model.js';
 const oucMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ouc12-source-mapping.json',import.meta.url)));
+const lzuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-lzu11-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nwsuaf12-source-mapping.json',import.meta.url)));
 test('actual NWSUAF cohort exactly preserves independently reviewed fields, identities and scope',()=>{
  assert.deepEqual(mapping.people.map(p=>p.person_id),["nwsuaf-chengzhihui","nwsuaf-dinglong","nwsuaf-wufuyong","nwsuaf-xuchenyang","nwsuaf-chenhuatao","nwsuaf-gaolexi","nwsuaf-xugong","nwsuaf-yangzhaofu","nwsuaf-yaoliuyang","nwsuaf-liuweiguo","nwsuaf-lironghua","nwsuaf-hailijuan"]);
  assert(mapping.people.every(p=>p.data_batch_id==='faculty-batch-nwsuaf12-independent-20261026'));
- assert.equal(db.people.length,909+mapping.people.length+oucMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,909+mapping.people.length+oucMapping.people.length+lzuMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const expected of mapping.people){
   const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);
   assert.equal(typeof actual.department,'string');assert(actual.department.length>0);
@@ -19,20 +21,7 @@ test('actual NWSUAF cohort exactly preserves independently reviewed fields, iden
   for(const stage of ['bachelor','master','doctor']) for(const event of stages(actual,stage)){assert.equal(event.event_kind,'degree');assert.equal(event.degree_awarded,true);}
  }
 });
-let serial=0;
-// Pure assertions reuse immutable HTML from the first real app/chunk render of each route.
-const renderedRoutes=new Map();
-async function render(hash){
- const cacheKey=db.build_id+':'+hash;if(renderedRoutes.has(cacheKey))return renderedRoutes.get(cacheKey);
- const nodes=new Map(),node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};
- globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
- globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(){}};
- globalThis.fetch=createAtlasFetch(db,roster);
- await import('../site/app.js?current-nwsuaf-release='+serial++);
- assert(!node('#main').innerHTML.includes('资料暂未加载'));
- const snapshot=new Map([...nodes].map(([key,value])=>[key,Object.freeze({innerHTML:value.innerHTML,textContent:value.textContent})]));
- const rendered=key=>snapshot.get(key)||Object.freeze({innerHTML:'',textContent:''});renderedRoutes.set(cacheKey,rendered);return rendered;
-}
+const {render}=createImmutableCohortRenderer({db,roster,fixtureId:import.meta.url});
 for(const expected of mapping.people)test('actual NWSUAF profile and lineage preserve '+expected.name,async()=>{
  const nodes=await render('#/person/'+expected.person_id);const html=['#main','#profile-content'].map(k=>nodes(k).innerHTML).join('\n');
  assert(html.includes(expected.name));assert(html.includes('西北农林科技大学'));

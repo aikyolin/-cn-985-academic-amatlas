@@ -1,3 +1,4 @@
+import {createImmutableCohortRenderer} from './immutable-cohort-renderer.js';
 import {readAtlasFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
@@ -28,6 +29,7 @@ const fduMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-fdu1
 const mucMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-muc12-source-mapping.json',import.meta.url)));
 const nwsuafMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nwsuaf12-source-mapping.json',import.meta.url)));
 const oucMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ouc12-source-mapping.json',import.meta.url)));
+const lzuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-lzu11-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const firstMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nju-source-mapping.json',import.meta.url)));
@@ -37,21 +39,13 @@ const scuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-scu1
 const people=['nju-shiyini','nju-yangderui'].map(id=>db.people.find(p=>p.person_id===id));
 
 test('current generated candidate exposes both new NJU identities and their own department',()=>{
- assert.equal(db.people.length,612+firstMapping.people.length+nextMapping.people.length+seuMapping.people.length+scuMapping.people.length+uestcMapping.people.length+hnuMapping.people.length+bnuMapping.people.length+tjuMapping.people.length+nkuMapping.people.length+dlutMapping.people.length+jluMapping.people.length+sduMapping.people.length+csuMapping.people.length+hustMapping.people.length+whuMapping.people.length+xjtuMapping.people.length+rucMapping.people.length+ecnuMapping.people.length+buaaMapping.people.length+tongjiMapping.people.length+bitMapping.people.length+nwpuMapping.people.length+scutMapping.people.length+ustcMapping.people.length+cauMapping.people.length+fduMapping.people.length+mucMapping.people.length+nwsuafMapping.people.length+oucMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,612+firstMapping.people.length+nextMapping.people.length+seuMapping.people.length+scuMapping.people.length+uestcMapping.people.length+hnuMapping.people.length+bnuMapping.people.length+tjuMapping.people.length+nkuMapping.people.length+dlutMapping.people.length+jluMapping.people.length+sduMapping.people.length+csuMapping.people.length+hustMapping.people.length+whuMapping.people.length+xjtuMapping.people.length+rucMapping.people.length+ecnuMapping.people.length+buaaMapping.people.length+tongjiMapping.people.length+bitMapping.people.length+nwpuMapping.people.length+scutMapping.people.length+ustcMapping.people.length+cauMapping.people.length+fduMapping.people.length+mucMapping.people.length+nwsuafMapping.people.length+oucMapping.people.length+lzuMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const p of people){assert(p);assert(matches(p,{school:'nju',org:'nju-social-sciences'},db.org_units));assert(matches(p,{q:p.name},db.org_units));assert(!matches(p,{school:'hit'},db.org_units));assert.equal(p.quick_link_eligible,false);assert.equal(p.include_in_current_faculty_count,false);assert(officialProfileUrl(p).startsWith('https://sociology.nju.edu.cn/'));}
  const events=people.flatMap(p=>p.education);assert.equal(events.filter(e=>e.degree_awarded===true).length,4);assert.equal(events.filter(e=>e.degree_awarded===false).length,1);
  assert.equal(people.reduce((n,p)=>n+stages(p,'doctor').length,0),2);
  assert.equal(people.flatMap(p=>p.mentors).length,0);
 });
-let serial=0;
-async function render(hash){
- const nodes=new Map(),node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};
- globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
- globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(){}};
- globalThis.fetch=createAtlasFetch(db,roster);
- await import('../site/app.js?current-nju-release='+serial++);
- assert(!node('#main').innerHTML.includes('资料暂未加载'));return node;
-}
+const {render}=createImmutableCohortRenderer({db,roster,fixtureId:import.meta.url});
 for(const p of people)test('current app renders source-bound NJU profile '+p.name,async()=>{
  const nodes=await render('#/person/'+p.person_id);const html=[...['#main','#profile-content'].map(k=>nodes(k).innerHTML)].join('\n');
  assert(html.includes(p.name));assert(html.includes('南京大学'));assert(html.includes('未披露')||html.includes('未核实'));
