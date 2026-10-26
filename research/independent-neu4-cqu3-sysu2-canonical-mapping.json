@@ -1,0 +1,1592 @@
+{
+  "schema_version": "independent-neu4-cqu3-sysu2-canonical-mapping-1",
+  "baseline_commit": "8277bb458dd8ca453d9d7990455b98adbd5cf5b3",
+  "new_people": [
+    "neu-angang",
+    "neu-yanjiaqi",
+    "neu-chengfu",
+    "neu-maomuran",
+    "cqu-liyamei-art",
+    "cqu-yanfugang",
+    "cqu-kongguangyao-medicine",
+    "sysu-xiali",
+    "sysu-gaoru-accounting"
+  ],
+  "new_org_ids": [
+    "neu-sba",
+    "neu-marxism-philosophy",
+    "cqu-art",
+    "cqu-medicine",
+    "cqu-fuling-hospital",
+    "sysu-management",
+    "sysu-shenzhen-management-entrepreneurship-source-label"
+  ],
+  "counts": {
+    "people": 9,
+    "org_units": 7,
+    "education": 33,
+    "appointments": 13,
+    "publications": 17,
+    "mentors": 9,
+    "teaching": 12,
+    "institutional_associations": 0,
+    "professional_research_advisors": 0,
+    "career_end_events": 0,
+    "unbound_person_degree_credentials": 0,
+    "creative_works": 0,
+    "degree_true": 22,
+    "degree_false": 10,
+    "degree_unknown": 1
+  },
+  "counting_scope": "教育事件授位三态与未绑定具体阶段的本人全局学位凭证分开统计；后者不增加教育事件、不指定学校或日期。教学记录可含课程建设项目，作品区分论文书目与创作，关系按原阶段不统称论文指导。",
+  "mapping_inputs": [
+    {
+      "source_group_id": "neu4",
+      "canonical_payload_sha256": "eb70d06bcb71c53d3497e70d2d0a2c34fa459491cbc305005c457d554b66ea23",
+      "field_mapping_sha256": "b7eb02cd6069a929f0735fe21d5a7c32d17727f0bdd0ed8d4dbb87fdcf9c3ed8",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "cqu3",
+      "canonical_payload_sha256": "77d0950ceee09310ccc4cb9e10b310017a1022126774fad0e694afa8ef12d8a1",
+      "field_mapping_sha256": "6b7c60d6b3d80d0a20e6150fa6578cfb8a644da0bfd80170493ee30673303fa8",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "sysu2",
+      "canonical_payload_sha256": "33b059d53291d48c365be1a6bede2548c91f26086ff1d64a2e24616c3b0e308a",
+      "field_mapping_sha256": "25e98807defedee48e9dec91bf3f7d1e478f815f544ffe250e3432a5bd6e6e57",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "eb70d06bcb71c53d3497e70d2d0a2c34fa459491cbc305005c457d554b66ea23",
+      "people": [
+        {
+          "person_id": "neu-angang",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/gan/zh_CN/index.htm",
+              "source_locator": "教育/研修／东北大学／学士"
+            },
+            {
+              "field_address": [
+                "education",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/gan/zh_CN/index.htm",
+              "source_locator": "教育/研修／东北财经大学／硕士"
+            },
+            {
+              "field_address": [
+                "education",
+                2
+              ],
+              "source_url": "https://faculty.neu.edu.cn/gan/zh_CN/index.htm",
+              "source_locator": "教育/研修／东北财经大学／博士"
+            },
+            {
+              "field_address": [
+                "education",
+                3
+              ],
+              "source_url": "https://faculty.neu.edu.cn/gan/zh_CN/index.htm",
+              "source_locator": "教育/研修／东北大学／博士后"
+            },
+            {
+              "field_address": [
+                "education",
+                4
+              ],
+              "source_url": "https://faculty.neu.edu.cn/gan/zh_CN/index.htm",
+              "source_locator": "教育/研修／美国加州大学伯克利分校／访问学者"
+            },
+            {
+              "field_address": [
+                "mentors",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/gan/zh_CN/index.htm",
+              "source_locator": "具名指导／博士／金凤德"
+            },
+            {
+              "field_address": [
+                "mentors",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/gan/zh_CN/index.htm",
+              "source_locator": "具名指导／博士后／李凯"
+            },
+            {
+              "field_address": [
+                "mentors",
+                2
+              ],
+              "source_url": "https://faculty.neu.edu.cn/gan/zh_CN/index.htm",
+              "source_locator": "具名指导／访问／Steven Tadelis"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/gan/zh_CN/lwcg/16707/list/index.htm",
+              "source_locator": "具名作品／Can the expansion of market size increase firm markup? Evidence from China"
+            },
+            {
+              "field_address": [
+                "publications",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/gan/zh_CN/lwcg/16707/list/index.htm",
+              "source_locator": "具名作品／本土市场规模与制造业出口复杂度——基于国内国际市场协同的视角"
+            }
+          ],
+          "limitations": [
+            "原个人页副教授、博士生导师、硕士生导师；经济系主任、应用经济学硕士项目主任是本人角色，具体职责起任日期未披露，不推本人导师。",
+            "原入职时间2007-06-26；1996任央企沈阳冶炼厂厂长秘书；2016获评副教授；2023获博士生指导教师资格。入职、职称评定、指导资格分别保留，不把2007作为副教授或博导起始。",
+            "原在职/至今仅来源陈述，现职未独立确认；最后更新时间“..”不是有效日期。"
+          ]
+        },
+        {
+          "person_id": "neu-yanjiaqi",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "教育/研修／吉林财经大学／经济学学士"
+            },
+            {
+              "field_address": [
+                "education",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "教育/研修／东北大学／管理学硕士"
+            },
+            {
+              "field_address": [
+                "education",
+                2
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "教育/研修／同济大学／管理学博士"
+            },
+            {
+              "field_address": [
+                "education",
+                3
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "教育/研修／悉尼大学／联合培养博士"
+            },
+            {
+              "field_address": [
+                "appointments",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "职业经历／东北大学／讲师"
+            },
+            {
+              "field_address": [
+                "appointments",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "职业经历／东北大学／副教授"
+            },
+            {
+              "field_address": [
+                "mentors",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "具名指导／硕士／贾建锋"
+            },
+            {
+              "field_address": [
+                "mentors",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "具名指导／博士／罗瑾琏"
+            },
+            {
+              "field_address": [
+                "mentors",
+                2
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "具名指导／博士联合培养／Stephen X. Zhang"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "具名作品／科研团队双元领导与创新绩效"
+            },
+            {
+              "field_address": [
+                "publications",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "具名作品／高承诺型人力资源管理实践对突破式创新的影响"
+            },
+            {
+              "field_address": [
+                "teaching",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "课程列目／本科生"
+            },
+            {
+              "field_address": [
+                "teaching",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "课程列目／学术型硕士研究生/工程硕士（MEM）"
+            },
+            {
+              "field_address": [
+                "teaching",
+                2
+              ],
+              "source_url": "https://faculty.neu.edu.cn/yanjiaqi/zh_CN/index.htm",
+              "source_locator": "课程列目／MBA"
+            }
+          ],
+          "limitations": [
+            "本人原副教授、博士生导师，后者为指导资格，不是另一任职或本人导师；具体组织管理系原称保留。",
+            "2017硕士与2020博士有明确获授年，学习末月不是授位月。悉尼国家公派联合培养是同济博士期间一个非另授位事件。",
+            "个人页当前人事和导师身份未独立核验；目录关联及“..”更新占位符不等实时在岗。"
+          ]
+        },
+        {
+          "person_id": "neu-chengfu",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/chengfu/zh_CN/index.htm",
+              "source_locator": "教育/研修／内蒙古工业大学／管理学学士学位"
+            },
+            {
+              "field_address": [
+                "education",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/chengfu/zh_CN/index.htm",
+              "source_locator": "教育/研修／哈尔滨工业大学／管理学硕士学位"
+            },
+            {
+              "field_address": [
+                "education",
+                2
+              ],
+              "source_url": "https://faculty.neu.edu.cn/chengfu/zh_CN/index.htm",
+              "source_locator": "教育/研修／哈尔滨工业大学／管理学博士学位"
+            },
+            {
+              "field_address": [
+                "appointments",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/chengfu/zh_CN/index.htm",
+              "source_locator": "职业经历／东北大学／讲师"
+            },
+            {
+              "field_address": [
+                "appointments",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/chengfu/zh_CN/index.htm",
+              "source_locator": "职业经历／东北大学／副教授"
+            },
+            {
+              "field_address": [
+                "mentors",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/chengfu/zh_CN/index.htm",
+              "source_locator": "具名指导／博士／王福胜"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/chengfu/zh_CN/lwcg/89155/list/index.htm",
+              "source_locator": "具名作品／员工持股计划的行业同群效应检验"
+            },
+            {
+              "field_address": [
+                "publications",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/chengfu/zh_CN/lwcg/89155/list/index.htm",
+              "source_locator": "具名作品／CFO与董秘兼任对信息披露质量的影响研究"
+            }
+          ],
+          "limitations": [
+            "原本人副教授标签；会计学是学科，不推会计学系行政机构。",
+            "博士毕业于哈尔滨工业大学经济与管理学院、师从王福胜，保博士阶段指导，不认证原论文导师。",
+            "当前人事未独立核验；2022-01副教授开放任期不证观察日在岗。书目仅选原两篇已列刊卷期页作品，不代表完整成果。"
+          ]
+        },
+        {
+          "person_id": "neu-maomuran",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/maomuran/zh_CN/index.htm",
+              "source_locator": "教育/研修／辽宁大学哲学系／学士"
+            },
+            {
+              "field_address": [
+                "education",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/maomuran/zh_CN/index.htm",
+              "source_locator": "教育/研修／辽宁大学哲学系／硕士"
+            },
+            {
+              "field_address": [
+                "education",
+                2
+              ],
+              "source_url": "https://faculty.neu.edu.cn/maomuran/zh_CN/index.htm",
+              "source_locator": "教育/研修／东北大学文法学院科技哲学研究中心／博士"
+            },
+            {
+              "field_address": [
+                "education",
+                3
+              ],
+              "source_url": "https://faculty.neu.edu.cn/maomuran/zh_CN/index.htm",
+              "source_locator": "教育/研修／美国马歇尔法学院／访问学者"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://faculty.neu.edu.cn/maomuran/zh_CN/index.htm",
+              "source_locator": "具名作品／网络文化安全的社会工程哲学研究"
+            },
+            {
+              "field_address": [
+                "publications",
+                1
+              ],
+              "source_url": "https://faculty.neu.edu.cn/maomuran/zh_CN/index.htm",
+              "source_locator": "具名作品／网络社会工程研究——以应对中国发展不协调问题为视阈"
+            }
+          ],
+          "limitations": [
+            "原本人东北大学马克思主义学院哲学系（科技与社会研究中心）教授，未披露职称起任日；机构来自官网本人简介，未单独核系目录或实时在岗。",
+            "同一次美国马歇尔法学院访学简介2009.7–2010.7、列表2009.08–2010.08两说并存，起止未调和，未拆两事件。",
+            "本人教育列表各学位与原院系名称保留，不将学习末月当授位日期；本人导师未知。两书目第一作者与唯一作者角色不同，未补完整作者表。"
+          ]
+        }
+      ],
+      "org_identity": [
+        {
+          "id": "neu-sba",
+          "name": "工商管理学院",
+          "type": "college",
+          "school_id": "neu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_url": "https://sba.neu.edu.cn/11810/list.htm",
+          "note": "原官方学院目录与本人学院标签一致；经济系/组织管理系另保person原称，不推法定父级。"
+        },
+        {
+          "id": "neu-marxism-philosophy",
+          "name": "马克思主义学院哲学系（科技与社会研究中心）",
+          "type": "department",
+          "school_id": "neu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_url": "https://faculty.neu.edu.cn/maomuran/zh_CN/index.htm",
+          "note": "原本人机构复合标签展示，不拆未核法定行政上下级。"
+        }
+      ],
+      "canonical_degree_changes": [
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_degree_qualification_in_personal_education_list",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            1,
+            "education",
+            0,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "毕业/学位为来源标签，无明确获授动作，保持null而非false；学习终止时间不作授位日期。",
+          "new": "官网本人教育列表明确经济学学士资格、机构与专业；按来源报告记录，原学习区间照录，授位年月未知，不从学习终点推断，未核学位证。",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            0,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            0,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            0,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            0,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            0,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_degree_qualification_in_personal_education_list",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            0,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "毕业/学位为来源标签，无明确获授动作，保持null而非false；学习终止时间不作授位日期。",
+          "new": "官网本人教育列表明确管理学学士学位资格、机构与专业；按来源报告记录，原学习区间照录，授位年月未知，不从学习终点推断，未核学位证。",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            1,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            1,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            1,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            1,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            1,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_degree_qualification_in_personal_education_list",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            1,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "毕业/学位为来源标签，无明确获授动作，保持null而非false；学习终止时间不作授位日期。",
+          "new": "官网本人教育列表明确管理学硕士学位资格、机构与专业；按来源报告记录，原学习区间照录，授位年月未知，不从学习终点推断，未核学位证。",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            2,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            2,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            2,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            2,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            2,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_degree_qualification_in_personal_education_list",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "education",
+            2,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "毕业/学位为来源标签，无明确获授动作，保持null而非false；学习终止时间不作授位日期。",
+          "new": "官网本人教育列表明确管理学博士学位资格、机构与专业；按来源报告记录，原学习区间照录，授位年月未知，不从学习终点推断，未核学位证。博士毕业和师从王福胜的原句另留，不把阶段指导升级论文认证。",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_degree_qualification_in_personal_education_list",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "原本人教育列表列学士资格、机构、专业和学习区间；列表字段用竖线拼接，不是连续原句；授位年月未知。",
+          "new": "官网本人教育列表明确学士资格、机构与专业；按来源报告记录，原学习区间照录，授位年月未知，不从学习终点推断，未核学位证。原列表字段以竖线拼接，非连续原句。",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "source_date_scope"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "Study interval and degree label only; no explicit award-event inference.",
+          "reason": "完整保留原日期/旧资格判断"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            0,
+            "date_scope"
+          ],
+          "old_exists": true,
+          "old": "Study interval and degree label only; no explicit award-event inference.",
+          "new": "学习起止已列；授位日期未知，不从学习终点推断。",
+          "reason": "当前日期语义与具体资格true相容，原解释另存"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_degree_qualification_in_personal_education_list",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "原本人教育列表列硕士资格、机构、专业和学习区间；列表字段用竖线拼接，不是连续原句；授位年月未知。",
+          "new": "官网本人教育列表明确硕士资格、机构与专业；按来源报告记录，原学习区间照录，授位年月未知，不从学习终点推断，未核学位证。原列表字段以竖线拼接，非连续原句。",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "source_date_scope"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "Study interval and degree label only; no explicit award-event inference.",
+          "reason": "完整保留原日期/旧资格判断"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            1,
+            "date_scope"
+          ],
+          "old_exists": true,
+          "old": "Study interval and degree label only; no explicit award-event inference.",
+          "new": "学习起止已列；授位日期未知，不从学习终点推断。",
+          "reason": "当前日期语义与具体资格true相容，原解释另存"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            2,
+            "degree_awarded"
+          ],
+          "old_exists": true,
+          "old": null,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            2,
+            "event_kind"
+          ],
+          "old_exists": true,
+          "old": "degree_study",
+          "new": "degree",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            2,
+            "include_in_degree_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            2,
+            "include_in_education_filters"
+          ],
+          "old_exists": true,
+          "old": false,
+          "new": true,
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            2,
+            "award_basis"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "source_reported_specific_degree_qualification_in_personal_education_list",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            2,
+            "note"
+          ],
+          "old_exists": true,
+          "old": "原本人教育列表列博士资格、机构、专业和学习区间；列表字段用竖线拼接，不是连续原句；授位年月未知。",
+          "new": "官网本人教育列表明确博士资格、机构与专业；按来源报告记录，原学习区间照录，授位年月未知，不从学习终点推断，未核学位证。原列表字段以竖线拼接，非连续原句。",
+          "reason": "本人教育列表具体资格，经统一来源语义确认；原学习区间不转授位年月，不宣称学位证核验。"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            2,
+            "source_date_scope"
+          ],
+          "old_exists": false,
+          "old": null,
+          "new": "Study interval and degree label only; no explicit award-event inference.",
+          "reason": "完整保留原日期/旧资格判断"
+        },
+        {
+          "field_address": [
+            "people",
+            3,
+            "education",
+            2,
+            "date_scope"
+          ],
+          "old_exists": true,
+          "old": "Study interval and degree label only; no explicit award-event inference.",
+          "new": "学习起止已列；授位日期未知，不从学习终点推断。",
+          "reason": "当前日期语义与具体资格true相容，原解释另存"
+        }
+      ],
+      "degree_inverse_proof": {
+        "initial_sha256": "b45f4942de40ee7e791fadc8240a76f6cf295fe16e460095a5a1d7853b039dca",
+        "current_sha256": "64ec547b2db5e624dea24d7a0589398c952537d441417c4f5a339d97576c20f1",
+        "inverse_byte_exact": true
+      },
+      "final_note_changes": [
+        {
+          "field_address": [
+            "people",
+            0,
+            "publications",
+            0,
+            "note"
+          ],
+          "old": "原2026年；Applied Economics Letters。 原作者：Gang An，Jia Wang。 原卷33。 原期1。 原页48-53。 DOI按官网书目保留，出版者元数据和全文未核。",
+          "new": "原2026年；Applied Economics Letters。 原作者：Gang An，Jia Wang。 原卷33。 原期1。 原页48-53。 DOI按官网书目保留，出版者元数据和全文未核。 原书目列JCR三区，分区年份、版本及现行分区未另核。"
+        },
+        {
+          "field_address": [
+            "people",
+            2,
+            "unknowns",
+            2
+          ],
+          "old": "当前人事未独立核验；2022-01副教授开放任期不证观察日在岗。书目只选原两已列刊卷期页作品，不加其他待发表条目。",
+          "new": "当前人事未独立核验；2022-01副教授开放任期不证观察日在岗。书目仅选原两篇已列刊卷期页作品，不代表完整成果。"
+        }
+      ],
+      "final_note_inverse": {
+        "initial_sha256": "64ec547b2db5e624dea24d7a0589398c952537d441417c4f5a339d97576c20f1",
+        "final_sha256": "eb70d06bcb71c53d3497e70d2d0a2c34fa459491cbc305005c457d554b66ea23",
+        "inverse_byte_exact": true
+      },
+      "new_annotation_acceptance": {
+        "report_sha256": "710157be24672b79b5c3a8521af20bdd5635933caf56fd0a7f0649a634c9fff7",
+        "source_url": "https://faculty.neu.edu.cn/gan/zh_CN/lwcg/16707/list/index.htm",
+        "scope": "仅同篇原JCR三区来源附注，分区版本及现行状态未知"
+      }
+    },
+    {
+      "people": [
+        {
+          "person_id": "cqu-liyamei-art",
+          "canonical_department_id": "cqu-art",
+          "source_candidate_sha256": "baf187c63b5533d8aed10066f90955e44681e3780e8821948bc14881edc35aab",
+          "education": [
+            {
+              "event_id": "cqu-liyamei-degree-label",
+              "field_evidence": [
+                {
+                  "source_id": "cqu-liyamei-profile",
+                  "source_url": "https://faculty.cqu.edu.cn/YameiLi/zh_CN/index.htm",
+                  "excerpt_id": "li-degree",
+                  "source_locator": "个人页学位字段／工学博士学位",
+                  "observed_at_utc": "2026-10-25T04:41:31.613Z",
+                  "quote_sha256": "4e3b07fb696f0935ad09203a88edcda8d4b698d549c8c3fded45d9aee3b16a2b"
+                },
+                {
+                  "source_id": "cqu-liyamei-profile",
+                  "source_url": "https://faculty.cqu.edu.cn/YameiLi/zh_CN/index.htm",
+                  "excerpt_id": "li-history-empty",
+                  "source_locator": "教育经历栏目／暂无内容",
+                  "observed_at_utc": "2026-10-25T04:41:31.613Z",
+                  "quote_sha256": "7d77a938e62bb28bac1880e0a33bb3d61c702b3b00f3f40b5f1ef0abed52ccb8"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "个人页学位：工学博士学位，简介本人博士；学校、专业及授位时间未披露，教育经历栏目空不等于未受教育。",
+            "个人简介艺术学院教授、硕士生导师及目录教授标签均保留；硕导是指导他人的资格，不是本人师承，未独立核实当前聘任。",
+            "艺术学院目录具名条目已见，原始href、目录到个人页目标点击和浏览器UI未验证。",
+            "仅保留两项专著官网书目，未列完整作者串，不推本人独著或作者顺序；未核出版者或全文。"
+          ]
+        },
+        {
+          "person_id": "cqu-yanfugang",
+          "canonical_department_id": "cqu-mathematics-statistics",
+          "source_candidate_sha256": "9feaaf6c160b2f3de0a316be2c5cfdb410c64be1f1c1a65bcba77b9c57f4244f",
+          "education": [
+            {
+              "event_id": "cqu-yanfugang-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "cqu-yan-profile",
+                  "source_url": "https://faculty.cqu.edu.cn/yanfugang/zh_CN/index.htm",
+                  "excerpt_id": "doctor",
+                  "source_locator": "个人简介／2020年6月博士毕业及获博士学位",
+                  "observed_at_utc": "2026-10-25T05:57:38Z",
+                  "quote_sha256": "1355ea456c14ea3737a9d9e2ca3937f638b7fad3b51d01e842d393944dd115a9"
+                },
+                {
+                  "source_id": "cqu-yan-profile",
+                  "source_url": "https://faculty.cqu.edu.cn/yanfugang/zh_CN/index.htm",
+                  "excerpt_id": "doctoralstudy",
+                  "source_locator": "教育经历博士条目／分离时间、学校、数学、理学博士学位字段拼接",
+                  "observed_at_utc": "2026-10-25T05:57:38Z",
+                  "quote_sha256": "edd79461f7b33c6a12f0ab9219e925f219662c419f63bc3c958a66b8baed9bfd"
+                }
+              ]
+            },
+            {
+              "event_id": "cqu-yanfugang-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "cqu-yan-profile",
+                  "source_url": "https://faculty.cqu.edu.cn/yanfugang/zh_CN/index.htm",
+                  "excerpt_id": "bachelor",
+                  "source_locator": "教育经历本科条目／分离时间、学校、专业、理学学士学位字段拼接",
+                  "observed_at_utc": "2026-10-25T05:57:38Z",
+                  "quote_sha256": "5bf04bbd1766933fd96c7aac844b87af9668a82bacb15c02fe03ed0b7177b529"
+                }
+              ]
+            },
+            {
+              "event_id": "cqu-yanfugang-education-3",
+              "field_evidence": [
+                {
+                  "source_id": "cqu-yan-profile",
+                  "source_url": "https://faculty.cqu.edu.cn/yanfugang/zh_CN/index.htm",
+                  "excerpt_id": "joint",
+                  "source_locator": "个人简介／纽约州立大学Albany分校联合培养",
+                  "observed_at_utc": "2026-10-25T05:57:38Z",
+                  "quote_sha256": "d888f17dd658c483db9846945ebf5ec2b763bc5df05d4a8a9fb29ca32ec72d59"
+                }
+              ]
+            },
+            {
+              "event_id": "cqu-yanfugang-education-4",
+              "field_evidence": [
+                {
+                  "source_id": "cqu-yan-profile",
+                  "source_url": "https://faculty.cqu.edu.cn/yanfugang/zh_CN/index.htm",
+                  "excerpt_id": "postdoc",
+                  "source_locator": "个人简介／复旦大学博士后研究",
+                  "observed_at_utc": "2026-10-25T05:57:38Z",
+                  "quote_sha256": "e20461ce3f463fa812f1c24a7aee4c275124ed95eb15983692aa59c25b12fbde"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "个人页分离姓名、讲师及所在单位数学与统计学院字段拼接，非连续引文；所属单位是本人页声明，独立目录匹配与当前在岗未核实。",
+            "博士毕业月2020-06与实际授位日期分开；本科具体理学学士学位称谓保留，不将学习终点认作授位日。",
+            "纽约州立大学Albany分校联合培养及复旦大学博士后均为非学位经历，不造额外授位或导师。",
+            "两篇选定作品非完整书目；2024及to appear保持原状态，未外核或更新为当前出版状态。",
+            "仅必要留存职业摘录，非完整HTTP或整页存档；分离字段的连接已标明。作品原生URL经阅读器链接解析后查重，不声称此前已独立验证目录或浏览器点击。"
+          ]
+        },
+        {
+          "person_id": "cqu-kongguangyao-medicine",
+          "canonical_department_id": "cqu-medicine",
+          "source_candidate_sha256": "c81a50a7076c581368353b85a6893e0f9cb02a614a62070e3fb5ac43c4772666",
+          "education": [
+            {
+              "event_id": "cqu-kongguangyao-medicine-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "cqu-kong-381",
+                  "source_url": "https://med.cqu.edu.cn/info/1145/2950.htm",
+                  "excerpt_id": "combined_bachelor_master_study",
+                  "source_locator": "学习经历／陕西师范大学2000至2007本硕合并条目",
+                  "observed_at_utc": "2026-10-25T07:41:40Z",
+                  "summary_sha256": "541ba51202e94f6069e4901de25ad184a107867b9d22fed42c89d90cda1137d1",
+                  "retained_original_file_sha256": "1c518234deac95e0ac5222263450f3e135bbea489333da727f6a7749327a3161",
+                  "retained_line_sha256": [
+                    "05aae6914ac66c5c168d0c70b49b52350f9982feb5557ac30583d26458fde927",
+                    "c9be4ad6090fdf732d6390c97c3abce2eb5b112385d0c858bb99f4f26a1fea80"
+                  ]
+                }
+              ]
+            },
+            {
+              "event_id": "cqu-kongguangyao-medicine-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "cqu-kong-381",
+                  "source_url": "https://med.cqu.edu.cn/info/1145/2950.htm",
+                  "excerpt_id": "degree_study",
+                  "source_locator": "学习经历／南开大学2008至2011博士条目",
+                  "observed_at_utc": "2026-10-25T07:41:40Z",
+                  "summary_sha256": "7abdae58a7fdacc6f914e5872ea3230e970e5a62067a624394b9712b00833d15",
+                  "retained_original_file_sha256": "1c518234deac95e0ac5222263450f3e135bbea489333da727f6a7749327a3161",
+                  "retained_line_sha256": [
+                    "05aae6914ac66c5c168d0c70b49b52350f9982feb5557ac30583d26458fde927",
+                    "43c7783601d2b3fb90e650533a257017f832ecdaee970c66f6b49ecb284c39ef"
+                  ]
+                }
+              ]
+            },
+            {
+              "event_id": "cqu-kongguangyao-medicine-education-3",
+              "field_evidence": [
+                {
+                  "source_id": "cqu-kong-381",
+                  "source_url": "https://med.cqu.edu.cn/info/1145/2950.htm",
+                  "excerpt_id": "postdoctoral_research",
+                  "source_locator": "学习经历／威斯康星大学麦迪逊分校2011至2016博士后条目",
+                  "observed_at_utc": "2026-10-25T07:41:40Z",
+                  "summary_sha256": "f9e89cc9e04928637d90090c01072b876c18bf892cdad9e8edcc4d74c334c36c",
+                  "retained_original_file_sha256": "1c518234deac95e0ac5222263450f3e135bbea489333da727f6a7749327a3161",
+                  "retained_line_sha256": [
+                    "05aae6914ac66c5c168d0c70b49b52350f9982feb5557ac30583d26458fde927",
+                    "533c87556275cfa7e75ea3a29625c05dbbede6a34194ea6b3436ad721eb153c9"
+                  ]
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "重庆大学医学院临床医学师资具名简介与附属涪陵医院教授原句分别支持展示归属，医学院/附属涪陵医院原单位称谓完整保留；不推二者法律行政隶属或当前聘任。",
+            "2000–2007陕西师范大学本硕仍单事件，未明本科与硕士分界或授位；南开大学博士为本人履历具体资格，2008–2011仅学习区间，不推授位年月或证书认证。",
+            "2011–2016美国威斯康星大学麦迪逊分校博士后为明确非学位经历；本人导师未披露。",
+            "两段2017.1–至今西安交通大学第二附属医院教授与2024.7–至今重庆大学附属涪陵医院教授重叠，不推双聘、离任或独立确认现职。",
+            "仅1篇官网选定书目，不等于全部作品；Kong G#标记含义未知，非通讯作者认证，未外核全文和出版者元数据。"
+          ]
+        }
+      ],
+      "orgs": [
+        {
+          "id": "cqu-art",
+          "name": "艺术学院",
+          "type": "school",
+          "school_id": "cqu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "cqu-art-directory",
+          "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?id=1090&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1002",
+          "field_evidence": [
+            {
+              "source_id": "cqu-art-directory",
+              "source_url": "https://faculty.cqu.edu.cn/xyjslb.jsp?id=1090&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1002",
+              "excerpt_id": "li-directory-unit",
+              "source_locator": "艺术学院目录／李雅梅所在学院",
+              "observed_at_utc": "2026-10-25T04:41:35.711Z",
+              "quote_sha256": "77b8497eaba4a268475c7d172e33b152e5c3a82e221a7643819942f163525541"
+            }
+          ],
+          "scope_note": "原官网具名职业资料支持单位展示归组，不独立认证法律行政隶属或当前人事。"
+        },
+        {
+          "id": "cqu-medicine",
+          "name": "医学院",
+          "type": "school",
+          "school_id": "cqu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "cqu-kong-381",
+          "source_url": "https://med.cqu.edu.cn/info/1145/2950.htm",
+          "field_evidence": [
+            {
+              "source_id": "cqu-kong-381",
+              "source_url": "https://med.cqu.edu.cn/info/1145/2950.htm",
+              "excerpt_id": "identity",
+              "source_locator": "临床医学师资具名简介／两段教授工作经历",
+              "observed_at_utc": "2026-10-25T07:41:40Z",
+              "summary_sha256": "4ca2fe5d6e83c04683d54b6dd9b4578278eb849333297f31bad881f6e93bf564",
+              "retained_original_file_sha256": "1c518234deac95e0ac5222263450f3e135bbea489333da727f6a7749327a3161",
+              "retained_line_sha256": [
+                "26fb517177a5dfbaafaeec1feba43085c948f1c5e60698602c4cc1c0d696e162",
+                "835af3d70cdc430845167c67eebd25e0d59c60d49c268cc3e8b24489b03b51a3",
+                "0dc23e220d22f079be24f1962c9ca2a4fbd0bad56dd35d931440898189164584",
+                "7c3d4d240a597d106a1c4875142b32523dd2cd26f786962600e7e416bb9ff8ae",
+                "d5e78a98b176b1d77389102e221e89cc50d7508f60f2d4888f7724ec54249aec",
+                "7cc4f459f73dc9a1313ff7f49c8882b316307f566a3ae26e3755337df1af0f5a"
+              ]
+            }
+          ],
+          "scope_note": "原官网具名职业资料支持单位展示归组，不独立认证法律行政隶属或当前人事。"
+        },
+        {
+          "id": "cqu-fuling-hospital",
+          "name": "重庆大学附属涪陵医院",
+          "type": "school",
+          "school_id": "cqu",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "cqu-kong-381",
+          "source_url": "https://med.cqu.edu.cn/info/1145/2950.htm",
+          "field_evidence": [
+            {
+              "source_id": "cqu-kong-381",
+              "source_url": "https://med.cqu.edu.cn/info/1145/2950.htm",
+              "excerpt_id": "identity",
+              "source_locator": "临床医学师资具名简介／两段教授工作经历",
+              "observed_at_utc": "2026-10-25T07:41:40Z",
+              "summary_sha256": "4ca2fe5d6e83c04683d54b6dd9b4578278eb849333297f31bad881f6e93bf564",
+              "retained_original_file_sha256": "1c518234deac95e0ac5222263450f3e135bbea489333da727f6a7749327a3161",
+              "retained_line_sha256": [
+                "26fb517177a5dfbaafaeec1feba43085c948f1c5e60698602c4cc1c0d696e162",
+                "835af3d70cdc430845167c67eebd25e0d59c60d49c268cc3e8b24489b03b51a3",
+                "0dc23e220d22f079be24f1962c9ca2a4fbd0bad56dd35d931440898189164584",
+                "7c3d4d240a597d106a1c4875142b32523dd2cd26f786962600e7e416bb9ff8ae",
+                "d5e78a98b176b1d77389102e221e89cc50d7508f60f2d4888f7724ec54249aec",
+                "7cc4f459f73dc9a1313ff7f49c8882b316307f566a3ae26e3755337df1af0f5a"
+              ]
+            }
+          ],
+          "scope_note": "原官网具名职业资料支持单位展示归组，不独立认证法律行政隶属或当前人事。"
+        }
+      ],
+      "organization_identity_reuse": {
+        "person_id": "cqu-yanfugang",
+        "node_id": "cqu-mathematics-statistics",
+        "identity_basis": "同校官方个人页所在单位明确数学与统计学院，与旧目录节点中文单位相同；旧节点及parent保持不变，不追加独立行政认证。"
+      },
+      "classification_corrections": [
+        {
+          "person_id": "cqu-liyamei-art",
+          "education_event_id": "cqu-liyamei-degree-label",
+          "old_value": null,
+          "new_value": true,
+          "field_evidence": [
+            {
+              "source_id": "cqu-liyamei-profile",
+              "source_url": "https://faculty.cqu.edu.cn/YameiLi/zh_CN/index.htm",
+              "excerpt_id": "li-degree",
+              "source_locator": "个人页学位字段／工学博士学位",
+              "observed_at_utc": "2026-10-25T04:41:31.613Z",
+              "quote_sha256": "4e3b07fb696f0935ad09203a88edcda8d4b698d549c8c3fded45d9aee3b16a2b"
+            },
+            {
+              "source_id": "cqu-liyamei-profile",
+              "source_url": "https://faculty.cqu.edu.cn/YameiLi/zh_CN/index.htm",
+              "excerpt_id": "li-history-empty",
+              "source_locator": "教育经历栏目／暂无内容",
+              "observed_at_utc": "2026-10-25T04:41:31.613Z",
+              "quote_sha256": "7d77a938e62bb28bac1880e0a33bb3d61c702b3b00f3f40b5f1ef0abed52ccb8"
+            }
+          ],
+          "exact_event_delta": [
+            {
+              "path": "/degree_awarded",
+              "old_present": true,
+              "old_value": null,
+              "new_value": true
+            },
+            {
+              "path": "/event_kind",
+              "old_present": true,
+              "old_value": "degree_study",
+              "new_value": "degree"
+            },
+            {
+              "path": "/include_in_degree_filters",
+              "old_present": true,
+              "old_value": false,
+              "new_value": true
+            },
+            {
+              "path": "/preclassification_event_kind",
+              "old_present": false,
+              "new_value": "degree_study"
+            },
+            {
+              "path": "/preclassification_include_in_degree_filters",
+              "old_present": false,
+              "new_value": false
+            },
+            {
+              "path": "/source_degree_awarded",
+              "old_present": false,
+              "new_value": null
+            }
+          ],
+          "reason": "具名本人具体学位资格，无攻读或在读限制；原学习日期不当授位日期。"
+        },
+        {
+          "person_id": "cqu-yanfugang",
+          "education_event_id": "cqu-yanfugang-education-2",
+          "old_value": null,
+          "new_value": true,
+          "field_evidence": [
+            {
+              "source_id": "cqu-yan-profile",
+              "source_url": "https://faculty.cqu.edu.cn/yanfugang/zh_CN/index.htm",
+              "excerpt_id": "bachelor",
+              "source_locator": "教育经历本科条目／分离时间、学校、专业、理学学士学位字段拼接",
+              "observed_at_utc": "2026-10-25T05:57:38Z",
+              "quote_sha256": "5bf04bbd1766933fd96c7aac844b87af9668a82bacb15c02fe03ed0b7177b529"
+            }
+          ],
+          "exact_event_delta": [
+            {
+              "path": "/degree_awarded",
+              "old_present": true,
+              "old_value": null,
+              "new_value": true
+            },
+            {
+              "path": "/event_kind",
+              "old_present": true,
+              "old_value": "degree_study",
+              "new_value": "degree"
+            },
+            {
+              "path": "/include_in_degree_filters",
+              "old_present": true,
+              "old_value": false,
+              "new_value": true
+            },
+            {
+              "path": "/preclassification_event_kind",
+              "old_present": false,
+              "new_value": "degree_study"
+            },
+            {
+              "path": "/preclassification_include_in_degree_filters",
+              "old_present": false,
+              "new_value": false
+            },
+            {
+              "path": "/source_degree_awarded",
+              "old_present": false,
+              "new_value": null
+            }
+          ],
+          "reason": "具名本人具体学位资格，无攻读或在读限制；原学习日期不当授位日期。"
+        },
+        {
+          "person_id": "cqu-kongguangyao-medicine",
+          "education_event_id": "cqu-kongguangyao-medicine-education-2",
+          "old_value": null,
+          "new_value": true,
+          "field_evidence": [
+            {
+              "source_id": "cqu-kong-381",
+              "source_url": "https://med.cqu.edu.cn/info/1145/2950.htm",
+              "excerpt_id": "degree_study",
+              "source_locator": "学习经历／南开大学2008至2011博士条目",
+              "observed_at_utc": "2026-10-25T07:41:40Z",
+              "summary_sha256": "7abdae58a7fdacc6f914e5872ea3230e970e5a62067a624394b9712b00833d15",
+              "retained_original_file_sha256": "1c518234deac95e0ac5222263450f3e135bbea489333da727f6a7749327a3161",
+              "retained_line_sha256": [
+                "05aae6914ac66c5c168d0c70b49b52350f9982feb5557ac30583d26458fde927",
+                "43c7783601d2b3fb90e650533a257017f832ecdaee970c66f6b49ecb284c39ef"
+              ]
+            }
+          ],
+          "exact_event_delta": [
+            {
+              "path": "/degree_awarded",
+              "old_present": true,
+              "old_value": null,
+              "new_value": true
+            },
+            {
+              "path": "/event_kind",
+              "old_present": true,
+              "old_value": "degree_study",
+              "new_value": "degree"
+            },
+            {
+              "path": "/include_in_degree_filters",
+              "old_present": true,
+              "old_value": false,
+              "new_value": true
+            },
+            {
+              "path": "/note",
+              "old_present": true,
+              "old_value": "原学习经历列2008–2011南开大学博士，保留博士阶段和完整学习区间；未另见本人持有学位的独立陈述，授位未知。",
+              "new_value": "本人学习经历列南开大学博士资格，原2008–2011为该条学习区间；按来源报告博士资格，不虚构独立学位字段，不把学习终点填为授位年月，未核学位证书。"
+            },
+            {
+              "path": "/preclassification_event_kind",
+              "old_present": false,
+              "new_value": "degree_study"
+            },
+            {
+              "path": "/preclassification_include_in_degree_filters",
+              "old_present": false,
+              "new_value": false
+            },
+            {
+              "path": "/preclassification_note",
+              "old_present": false,
+              "new_value": "原学习经历列2008–2011南开大学博士，保留博士阶段和完整学习区间；未另见本人持有学位的独立陈述，授位未知。"
+            },
+            {
+              "path": "/source_degree_awarded",
+              "old_present": false,
+              "new_value": null
+            }
+          ],
+          "reason": "具名本人具体学位资格，无攻读或在读限制；原学习日期不当授位日期。"
+        }
+      ]
+    },
+    {
+      "baseline_profiles": 984,
+      "counts": {
+        "education": 9,
+        "appointments": 5,
+        "mentors": 2,
+        "publications": 4,
+        "teaching": 9
+      },
+      "original_null_count": 3,
+      "degree_changes": [
+        {
+          "event_id": "sysu-gaoru-accounting-education-2",
+          "old": null,
+          "new": true,
+          "exact_retained_text": "2005.09–2007.06  | 国际贸易硕士（双学位）  | 华中科技大学",
+          "source_url": "https://bus.sysu.edu.cn/en/teacher/GaoRu",
+          "source_sha256": "f731c135d968dbd401909615d3d6e6a31b38cd7931a3dd4e10a14f84d780cd8c",
+          "scope": "本人正式资格列举；未核原证书及法律等价，授位年月未知，双学位不拆事件。"
+        },
+        {
+          "event_id": "sysu-gaoru-accounting-education-3",
+          "old": null,
+          "new": true,
+          "exact_retained_text": "2004.09–2006.12  | 会计学硕士  | 华中科技大学",
+          "source_url": "https://bus.sysu.edu.cn/en/teacher/GaoRu",
+          "source_sha256": "f731c135d968dbd401909615d3d6e6a31b38cd7931a3dd4e10a14f84d780cd8c",
+          "scope": "本人正式资格列举；未核原证书及法律等价，授位年月未知，双学位不拆事件。"
+        },
+        {
+          "event_id": "sysu-gaoru-accounting-education-4",
+          "old": null,
+          "new": true,
+          "exact_retained_text": "2000.09–2004.07  | 会计学学士，英语双学士  | 华中科技大学",
+          "source_url": "https://bus.sysu.edu.cn/en/teacher/GaoRu",
+          "source_sha256": "f731c135d968dbd401909615d3d6e6a31b38cd7931a3dd4e10a14f84d780cd8c",
+          "scope": "本人正式资格列举；未核原证书及法律等价，授位年月未知，双学位不拆事件。"
+        }
+      ],
+      "org_scope": "夏中文管理学院与高深圳管理学院（创业学院）按各自官方个人单位分开；高英文框架组织关系unknown不合并。",
+      "source_scope": "夏原accepted final已含2同审书目纠正；高联合overlay仅另一波201不套202；保留已接受必要职业材料，不新访源。"
+    }
+  ],
+  "mapping": "仅追加三校九名已审来源人物及组织展示节点；旧984事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}

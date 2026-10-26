@@ -51,6 +51,8 @@ SJTU_MAPPING_SHA256 = 'df52bd6b97ef4cb103c6a3a49a8641fa496b420ae891837703c9b2af2
 THU_MAPPING_SHA256 = 'cdbfd02b748c4e2cca4dca2776e5c62e547d601efccd57653d5acdb24db41fe0'
 PKU_MAPPING_SHA256 = 'b30f0bd80a640d8e3e89277827b34210a8f0ce31c3a02c9486b2d964d0302938'
 ZJU_MAPPING_SHA256 = '3955bc5ec1a7b7610affb01c32b2d29effe8b810f97e7f5a3b2977cca1df6eab'
+MIXED_MAPPING_SHA256 = '9d273a746415ca5df06d099f775f323abf89b1c6e662eba72a9449b0c0858816'
+MIXED_IDS = ['neu-angang', 'neu-yanjiaqi', 'neu-chengfu', 'neu-maomuran', 'cqu-liyamei-art', 'cqu-yanfugang', 'cqu-kongguangyao-medicine', 'sysu-xiali', 'sysu-gaoru-accounting']
 ZJU_IDS = ['zju-baozehua', 'zju-jinweifeng', 'zju-zhoujia', 'zju-zuhui', 'zju-liudonghong', 'zju-louhansong-literature', 'zju-wuxifeng']
 PKU_IDS = ['pku-chaiweizhong', 'pku-fanxing', 'pku-zhangdong-math', 'pku-wangjie', 'pku-chendayue', 'pku-chensongxi', 'pku-zhangwu', 'pku-huyonghua', 'pku-liliming', 'pku-chuming-basicmedicine', 'pku-biwenjian-medicalgenetics']
 THU_IDS = ['thu-lishoukui', 'thu-dingsixin', 'thu-qiaoweifeng', 'thu-zhouyuan', 'thu-chenguoqing', 'thu-xuguoyi', 'thu-liangzongxia', 'thu-luxiaobo', 'thu-zhanggan', 'thu-liangwannian-publichealth', 'thu-jisihan-publichealth']
@@ -258,8 +260,13 @@ def zju_mapping():
     assert hashlib.sha256(raw).hexdigest() == ZJU_MAPPING_SHA256, 'Reviewed independent ZJU seven-person mapping changed'
     return json.loads(raw)
 
+def mixed_mapping():
+    raw = (ROOT / 'tests/fixtures/independent-neu4-cqu3-sysu2-source-mapping.json').read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == MIXED_MAPPING_SHA256, 'Reviewed independent MIXED nine-person three-school mapping changed'
+    return json.loads(raw)
+
 def reviewed_additions():
-    first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, thirteenth, fourteenth, fifteenth, sixteenth, seventeenth, eighteenth, nineteenth, twentieth, twenty_first, twenty_second, twenty_third, twenty_fourth, twenty_fifth, twenty_sixth, twenty_seventh, twenty_eighth, twenty_ninth, thirtieth, thirty_first, thirty_second, thirty_third, thirty_fourth = mapping(), next_mapping(), seu_mapping(), scu_mapping(), uestc_mapping(), hnu_mapping(), bnu_mapping(), tju_mapping(), nku_mapping(), dlut_mapping(), jlu_mapping(), sdu_mapping(), csu_mapping(), hust_mapping(), whu_mapping(), xjtu_mapping(), ruc_mapping(), ecnu_mapping(), buaa_mapping(), tongji_mapping(), bit_mapping(), nwpu_mapping(), scut_mapping(), ustc_mapping(), cau_mapping(), fdu_mapping(), muc_mapping(), nwsuaf_mapping(), ouc_mapping(), lzu_mapping(), sjtu_mapping(), thu_mapping(), pku_mapping(), zju_mapping()
+    first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, thirteenth, fourteenth, fifteenth, sixteenth, seventeenth, eighteenth, nineteenth, twentieth, twenty_first, twenty_second, twenty_third, twenty_fourth, twenty_fifth, twenty_sixth, twenty_seventh, twenty_eighth, twenty_ninth, thirtieth, thirty_first, thirty_second, thirty_third, thirty_fourth, thirty_fifth = mapping(), next_mapping(), seu_mapping(), scu_mapping(), uestc_mapping(), hnu_mapping(), bnu_mapping(), tju_mapping(), nku_mapping(), dlut_mapping(), jlu_mapping(), sdu_mapping(), csu_mapping(), hust_mapping(), whu_mapping(), xjtu_mapping(), ruc_mapping(), ecnu_mapping(), buaa_mapping(), tongji_mapping(), bit_mapping(), nwpu_mapping(), scut_mapping(), ustc_mapping(), cau_mapping(), fdu_mapping(), muc_mapping(), nwsuaf_mapping(), ouc_mapping(), lzu_mapping(), sjtu_mapping(), thu_mapping(), pku_mapping(), zju_mapping(), mixed_mapping()
     assert [p['person_id'] for p in first['people']] == FIRST_IDS
     assert [p['person_id'] for p in second['people']] == NEXT_IDS
     assert [p['person_id'] for p in third['people']] == SEU_IDS
@@ -294,7 +301,8 @@ def reviewed_additions():
     assert [p['person_id'] for p in thirty_second['people']] == THU_IDS
     assert [p['person_id'] for p in thirty_third['people']] == PKU_IDS
     assert [p['person_id'] for p in thirty_fourth['people']] == ZJU_IDS
-    return {key: first[key] + second[key] + third[key] + fourth[key] + fifth[key] + sixth[key] + seventh[key] + eighth[key] + ninth[key] + tenth[key] + eleventh[key] + twelfth[key] + thirteenth[key] + fourteenth[key] + fifteenth[key] + sixteenth[key] + seventeenth[key] + eighteenth[key] + nineteenth[key] + twentieth[key] + twenty_first[key] + twenty_second[key] + twenty_third[key] + twenty_fourth[key] + twenty_fifth[key] + twenty_sixth[key] + twenty_seventh[key] + twenty_eighth[key] + twenty_ninth[key] + thirtieth[key] + thirty_first[key] + thirty_second[key] + thirty_third[key] + thirty_fourth[key] for key in ('people', 'org_units', 'profile_batches')}
+    assert [p['person_id'] for p in thirty_fifth['people']] == MIXED_IDS
+    return {key: first[key] + second[key] + third[key] + fourth[key] + fifth[key] + sixth[key] + seventh[key] + eighth[key] + ninth[key] + tenth[key] + eleventh[key] + twelfth[key] + thirteenth[key] + fourteenth[key] + fifteenth[key] + sixteenth[key] + seventeenth[key] + eighteenth[key] + nineteenth[key] + twentieth[key] + twenty_first[key] + twenty_second[key] + twenty_third[key] + twenty_fourth[key] + twenty_fifth[key] + twenty_sixth[key] + twenty_seventh[key] + twenty_eighth[key] + twenty_ninth[key] + thirtieth[key] + thirty_first[key] + thirty_second[key] + thirty_third[key] + thirty_fourth[key] + thirty_fifth[key] for key in ('people', 'org_units', 'profile_batches')}
 
 def validate_append(current, previous, additions):
     assert set(current) == set(previous), 'Unlisted canonical root fields'
@@ -303,7 +311,7 @@ def validate_append(current, previous, additions):
             assert current[key] == value + additions[key], 'Historical or new source fact changed: ' + key
         else:
             assert current[key] == value, 'Unlisted change: ' + key
-    assert [x['person_id'] for x in current['people'][len(previous['people']):]] == FIRST_IDS + NEXT_IDS + SEU_IDS + SCU_IDS + UESTC_IDS + HNU_IDS + BNU_IDS + TJU_IDS + NKU_IDS + DLUT_IDS + JLU_IDS + SDU_IDS + CSU_IDS + HUST_IDS + WHU_IDS + XJTU_IDS + RUC_IDS + ECNU_IDS + BUAA_IDS + TONGJI_IDS + BIT_IDS + NWPU_IDS + SCUT_IDS + USTC_IDS + CAU_IDS + FDU_IDS + MUC_IDS + NWSUAF_IDS + OUC_IDS + LZU_IDS + SJTU_IDS + THU_IDS + PKU_IDS + ZJU_IDS
+    assert [x['person_id'] for x in current['people'][len(previous['people']):]] == FIRST_IDS + NEXT_IDS + SEU_IDS + SCU_IDS + UESTC_IDS + HNU_IDS + BNU_IDS + TJU_IDS + NKU_IDS + DLUT_IDS + JLU_IDS + SDU_IDS + CSU_IDS + HUST_IDS + WHU_IDS + XJTU_IDS + RUC_IDS + ECNU_IDS + BUAA_IDS + TONGJI_IDS + BIT_IDS + NWPU_IDS + SCUT_IDS + USTC_IDS + CAU_IDS + FDU_IDS + MUC_IDS + NWSUAF_IDS + OUC_IDS + LZU_IDS + SJTU_IDS + THU_IDS + PKU_IDS + ZJU_IDS + MIXED_IDS
     assert len({p['person_id'] for p in current['people']}) == len(current['people'])
 
 class CurrentRelease(unittest.TestCase):
@@ -549,9 +557,16 @@ class CurrentRelease(unittest.TestCase):
             expected = self.previous[key] + [item for m in previous_mappings for item in m[key]]
             self.assertEqual(self.actual[key][:len(expected)], expected, key)
 
+    def test_published_984_prefix_preserves_all_previous_source_mappings(self):
+        previous_mappings = (mapping(), next_mapping(), seu_mapping(), scu_mapping(), uestc_mapping(), hnu_mapping(), bnu_mapping(), tju_mapping(), nku_mapping(), dlut_mapping(), jlu_mapping(), sdu_mapping(), csu_mapping(), hust_mapping(), whu_mapping(), xjtu_mapping(), ruc_mapping(), ecnu_mapping(), buaa_mapping(), tongji_mapping(), bit_mapping(), nwpu_mapping(), scut_mapping(), ustc_mapping(), cau_mapping(), fdu_mapping(), muc_mapping(), nwsuaf_mapping(), ouc_mapping(), lzu_mapping(), sjtu_mapping(), thu_mapping(), pku_mapping(), zju_mapping())
+        self.assertEqual(len(self.previous['people']) + sum(len(m['people']) for m in previous_mappings), 984)
+        for key in ('people', 'org_units', 'profile_batches'):
+            expected = self.previous[key] + [item for m in previous_mappings for item in m[key]]
+            self.assertEqual(self.actual[key][:len(expected)], expected, key)
+
     def test_old_fact_deletion_reordering_and_unknown_promotions_fail(self):
         # Mutate each independently protected era, not just whichever person is last.
-        for index in (0, 612, 614, 624, 634, 645, 655, 665, 677, 689, 701, 713, 725, 737, 749, 761, 770, 782, 790, 802, 814, 826, 838, 850, 861, 873, 885, 897, 909, 921, 933, 944, 955, 966, 977):
+        for index in (0, 612, 614, 624, 634, 645, 655, 665, 677, 689, 701, 713, 725, 737, 749, 761, 770, 782, 790, 802, 814, 826, 838, 850, 861, 873, 885, 897, 909, 921, 933, 944, 955, 966, 977, 984):
             for key, value in [('name', 'invented'), ('quick_link_eligible', True)]:
                 candidate = copy.deepcopy(self.actual)
                 if candidate['people'][index].get(key) == value:
@@ -816,6 +831,96 @@ class CurrentRelease(unittest.TestCase):
                 text = '\n'.join(str(value) for row in rows for value in row if value is not None)
                 for term in terms:
                     self.assertIn(term, text, (person_id, term))
+            finally:
+                wb.close()
+
+    def test_mixed_overview_preserves_independent_semantic_limits(self):
+        from openpyxl import load_workbook
+        cases = {
+            'neu-angang': ['2007-06-26', '2016获评副教授', '2023获博士生指导教师资格', '不把2007作为副教授或博导起始'],
+            'neu-yanjiaqi': ['学习末月不是授位月', '联合培养是同济博士期间一个非另授位事件', 'MBA', '具体讲授角色'],
+            'neu-chengfu': ['会计学是学科', '保博士阶段指导，不认证原论文导师'],
+            'neu-maomuran': ['简介2009.7–2010.7', '列表2009.08–2010.08', '未拆两事件', '第一作者与唯一作者角色不同'],
+            'cqu-liyamei-art': ['教育经历栏目空不等于未受教育', '不推本人独著或作者顺序'],
+            'cqu-yanfugang': ['博士毕业月2020-06与实际授位日期分开', '2024及to appear保持原状态'],
+            'cqu-kongguangyao-medicine': ['本硕仍单事件', '不推双聘、离任', 'Kong G#标记含义未知'],
+            'sysu-xiali': ['香港科技大学博士生联合培养非第二博士', '曹希仁仅博士联合培养阶段导师', 'Peter Glynn为访问阶段合作导师', '本人博导资格自2018年'],
+            'sysu-gaoru-accounting': ['两者组织关系、是否等同或改名未知', '会计学学士、英语双学士保留同一本科条目', '页面博士后招生是招收角色', 'Gao, R.均原列第2作者'],
+        }
+        people = {p['person_id']: p for p in mixed_mapping()['people']}
+        for person_id, terms in cases.items():
+            p = people[person_id]
+            wb = load_workbook(ROOT / 'site/exports' / (p['department_id'] + '.xlsx'), data_only=False)
+            try:
+                rows = [row for row in wb['总览'].iter_rows(min_row=2, values_only=True) if row[0] == p['name']]
+                self.assertEqual(len(rows), 1, person_id)
+                text = '\n'.join(str(v) for v in rows[0] if v is not None)
+                for term in terms:
+                    self.assertIn(term, text, (person_id, term))
+            finally:
+                wb.close()
+
+    def test_mixed_actual_education_guidance_association_and_all_five_export_tables(self):
+        from openpyxl import load_workbook
+        expected_schools = {'neu-angang': 'neu', 'neu-yanjiaqi': 'neu', 'neu-chengfu': 'neu', 'neu-maomuran': 'neu', 'cqu-liyamei-art': 'cqu', 'cqu-yanfugang': 'cqu', 'cqu-kongguangyao-medicine': 'cqu', 'sysu-xiali': 'sysu', 'sysu-gaoru-accounting': 'sysu'}
+        selected = mixed_mapping()['people']
+        self.assertEqual({p['person_id']: p['school_id'] for p in selected}, expected_schools)
+        self.assertEqual([sum(p['school_id'] == school for p in selected) for school in ['neu', 'cqu', 'sysu']], [4, 3, 2])
+        expected_awards = {'neu-angang': [True, True, True, False, False], 'neu-yanjiaqi': [True, True, True, False], 'neu-chengfu': [True]*3, 'neu-maomuran': [True, True, True, False], 'cqu-liyamei-art': [True], 'cqu-yanfugang': [True, True, False, False], 'cqu-kongguangyao-medicine': [None, True, False], 'sysu-xiali': [True, True, False, False, False], 'sysu-gaoru-accounting': [True]*4}
+        for p in selected:
+            wb = load_workbook(ROOT / 'site/exports' / (p['department_id'] + '.xlsx'), data_only=False)
+            try:
+                rows = [row for row in wb['经历'].iter_rows(min_row=2, values_only=True) if row[0] == p['name']]
+                kinds = {e['event_kind'] for e in p['education']}
+                self.assertNotIn('employment', kinds)
+                education = [row for row in rows if row[1] in kinds]
+                employment = [row for row in rows if row[1] == 'employment']
+                self.assertEqual(len(education), len(p['education']))
+                self.assertEqual(len(employment), len(p['appointments']))
+                self.assertEqual(len(rows), len(education) + len(employment))
+                self.assertEqual([row[11] for row in education], expected_awards[p['person_id']])
+                mentors = [row for row in wb['导师'].iter_rows(min_row=2, values_only=True) if row[0] == p['name']]
+                self.assertEqual(len(mentors), {'neu-angang': 3, 'neu-yanjiaqi': 3, 'neu-chengfu': 1, 'sysu-xiali': 2}.get(p['person_id'], 0))
+                text = str(education + employment + mentors)
+                if p['person_id'] == 'neu-angang':
+                    self.assertEqual([row[12] for row in education[:3]], ['1994', '2003', '2007'])
+                    for term in ['金凤德', '李凯', 'Steven Tadelis']:
+                        self.assertIn(term, text)
+                if p['person_id'] == 'neu-maomuran':
+                    self.assertEqual(education[3][4:6], (None, None))
+                    self.assertIn('两日期并存，未调和', text)
+                if p['person_id'] == 'cqu-yanfugang':
+                    self.assertIsNone(education[0][12])
+                    self.assertIsNone(employment[0][4])
+                    self.assertIn('不把博士后结束月当入职或讲师起任', text)
+                if p['person_id'] == 'cqu-kongguangyao-medicine':
+                    self.assertEqual(education[0][2], '本硕')
+                    self.assertIn('不推双聘、离任', text)
+                if p['person_id'] == 'sysu-gaoru-accounting':
+                    self.assertEqual(len(education), 4)
+                    self.assertIsNone(education[0][12])
+                    self.assertIn('2014.06仅学习终点', text)
+            finally:
+                wb.close()
+        reviewed = self.previous['people'] + self.additions['people']
+        departments = {p['department_id'] for p in selected}
+        old_math = [p for p in self.previous['people'] if p['department_id'] == 'cqu-mathematics-statistics']
+        self.assertEqual(len(old_math), 3)
+        current_math = [p for p in self.actual['people'] if p['department_id'] == 'cqu-mathematics-statistics']
+        self.assertEqual(len(current_math), 4)
+        self.assertEqual(current_math[:3], old_math)
+        self.assertEqual(current_math[3]['person_id'], 'cqu-yanfugang')
+        for department in departments:
+            members = [p for p in reviewed if p['department_id'] == department]
+            wb = load_workbook(ROOT / 'site/exports' / (department + '.xlsx'), data_only=False)
+            try:
+                tables = build.department_tables(members, self.actual['updated_at'], self.actual['institutions'])
+                self.assertEqual(wb.sheetnames, [name for name, _ in tables])
+                for name, rows in tables:
+                    expected = [[build.clean(v) if build.clean(v) != '' else None for v in row] for row in rows]
+                    self.assertEqual([list(row) for row in wb[name].iter_rows(values_only=True)], expected, (department, name))
+                if department == 'cqu-mathematics-statistics':
+                    self.assertEqual([row[0] for row in wb['总览'].iter_rows(min_row=2, values_only=True)], [p['name'] for p in old_math] + ['晏福刚'])
             finally:
                 wb.close()
 
@@ -1179,7 +1284,7 @@ class CurrentRelease(unittest.TestCase):
 
     def test_every_affected_workbook_exactly_matches_reviewed_members_and_fields(self):
         from openpyxl import load_workbook
-        departments = {p['department_id'] for p in next_mapping()['people'] + seu_mapping()['people'] + scu_mapping()['people'] + uestc_mapping()['people'] + hnu_mapping()['people'] + bnu_mapping()['people'] + tju_mapping()['people'] + nku_mapping()['people'] + dlut_mapping()['people'] + jlu_mapping()['people'] + sdu_mapping()['people'] + csu_mapping()['people'] + hust_mapping()['people'] + whu_mapping()['people'] + xjtu_mapping()['people'] + ruc_mapping()['people'] + ecnu_mapping()['people'] + buaa_mapping()['people'] + tongji_mapping()['people'] + bit_mapping()['people'] + nwpu_mapping()['people'] + scut_mapping()['people'] + ustc_mapping()['people'] + cau_mapping()['people'] + fdu_mapping()['people'] + muc_mapping()['people'] + nwsuaf_mapping()['people'] + ouc_mapping()['people'] + lzu_mapping()['people'] + sjtu_mapping()['people'] + thu_mapping()['people'] + pku_mapping()['people'] + zju_mapping()['people']}
+        departments = {p['department_id'] for p in next_mapping()['people'] + seu_mapping()['people'] + scu_mapping()['people'] + uestc_mapping()['people'] + hnu_mapping()['people'] + bnu_mapping()['people'] + tju_mapping()['people'] + nku_mapping()['people'] + dlut_mapping()['people'] + jlu_mapping()['people'] + sdu_mapping()['people'] + csu_mapping()['people'] + hust_mapping()['people'] + whu_mapping()['people'] + xjtu_mapping()['people'] + ruc_mapping()['people'] + ecnu_mapping()['people'] + buaa_mapping()['people'] + tongji_mapping()['people'] + bit_mapping()['people'] + nwpu_mapping()['people'] + scut_mapping()['people'] + ustc_mapping()['people'] + cau_mapping()['people'] + fdu_mapping()['people'] + muc_mapping()['people'] + nwsuaf_mapping()['people'] + ouc_mapping()['people'] + lzu_mapping()['people'] + sjtu_mapping()['people'] + thu_mapping()['people'] + pku_mapping()['people'] + zju_mapping()['people'] + mixed_mapping()['people']}
         expected_people = self.previous['people'] + self.additions['people']
         for department in departments:
             members = [p for p in expected_people if p['department_id'] == department]
@@ -1199,8 +1304,8 @@ class CurrentRelease(unittest.TestCase):
     def test_existing_department_old_rows_survive_member_append(self):
         from openpyxl import load_workbook
         existing = {p['department_id'] for p in self.previous['people']}
-        affected = existing & {p['department_id'] for p in uestc_mapping()['people'] + tju_mapping()['people'] + nku_mapping()['people'] + whu_mapping()['people'] + xjtu_mapping()['people'] + ruc_mapping()['people'] + ecnu_mapping()['people'] + buaa_mapping()['people'] + tongji_mapping()['people'] + bit_mapping()['people'] + nwpu_mapping()['people'] + scut_mapping()['people'] + ustc_mapping()['people'] + cau_mapping()['people'] + fdu_mapping()['people'] + muc_mapping()['people'] + nwsuaf_mapping()['people'] + ouc_mapping()['people'] + lzu_mapping()['people'] + sjtu_mapping()['people'] + thu_mapping()['people'] + pku_mapping()['people'] + zju_mapping()['people']}
-        self.assertEqual(affected, {'uestc-public-administration', 'uestc-applied-math-center', 'tju-math', 'nku-economics', 'whu-math-stat', 'ruc-sociology', 'scut-math'})
+        affected = existing & {p['department_id'] for p in uestc_mapping()['people'] + tju_mapping()['people'] + nku_mapping()['people'] + whu_mapping()['people'] + xjtu_mapping()['people'] + ruc_mapping()['people'] + ecnu_mapping()['people'] + buaa_mapping()['people'] + tongji_mapping()['people'] + bit_mapping()['people'] + nwpu_mapping()['people'] + scut_mapping()['people'] + ustc_mapping()['people'] + cau_mapping()['people'] + fdu_mapping()['people'] + muc_mapping()['people'] + nwsuaf_mapping()['people'] + ouc_mapping()['people'] + lzu_mapping()['people'] + sjtu_mapping()['people'] + thu_mapping()['people'] + pku_mapping()['people'] + zju_mapping()['people'] + mixed_mapping()['people']}
+        self.assertEqual(affected, {'uestc-public-administration', 'uestc-applied-math-center', 'tju-math', 'nku-economics', 'whu-math-stat', 'ruc-sociology', 'scut-math', 'cqu-mathematics-statistics'})
         for department in affected:
             old_people = [p for p in self.previous['people'] if p['department_id'] == department]
             for old_person in old_people:

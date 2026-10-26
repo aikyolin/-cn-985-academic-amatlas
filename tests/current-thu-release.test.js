@@ -6,12 +6,13 @@ import fs from 'node:fs';
 import {matches,escapeHtml} from '../site/model.js';
 const pkuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-pku11-source-mapping.json',import.meta.url)));
 const zjuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-zju7-source-mapping.json',import.meta.url)));
+const mixedMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-neu4-cqu3-sysu2-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-thu11-source-mapping.json',import.meta.url)));
 const ids=["thu-lishoukui", "thu-dingsixin", "thu-qiaoweifeng", "thu-zhouyuan", "thu-chenguoqing", "thu-xuguoyi", "thu-liangzongxia", "thu-luxiaobo", "thu-zhanggan", "thu-liangwannian-publichealth", "thu-jisihan-publichealth"];
 test('actual THU cohort preserves all independently reviewed identities and complete fields',()=>{
- assert.equal(db.people.length,955+mapping.people.length+pkuMapping.people.length+zjuMapping.people.length);assert.equal(db.build_id,roster.build_id);assert.deepEqual(mapping.people.map(p=>p.person_id),ids);
+ assert.equal(db.people.length,955+mapping.people.length+pkuMapping.people.length+zjuMapping.people.length+mixedMapping.people.length);assert.equal(db.build_id,roster.build_id);assert.deepEqual(mapping.people.map(p=>p.person_id),ids);
  for(const expected of mapping.people){const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);assert.equal(actual.data_batch_id,'faculty-batch-thu11-independent-20261026');assert(matches(actual,{q:actual.name},db.org_units));assert(matches(actual,{school:'thu',org:actual.department_id},db.org_units));assert(!matches(actual,{school:'lzu'},db.org_units));}
 });
 const {render}=createImmutableCohortRenderer({db,roster,fixtureId:import.meta.url});
