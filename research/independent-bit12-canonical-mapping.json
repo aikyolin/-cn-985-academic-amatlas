@@ -1,0 +1,3046 @@
+{
+  "schema_version": "independent-bit12-canonical-mapping-1",
+  "baseline_commit": "ab9467b25565107395c4c27ae12cab9a0a671585",
+  "new_people": [
+    "bit-songtian",
+    "bit-shifugui",
+    "bit-guanlei",
+    "bit-xiaenjun",
+    "bit-shanjiefei",
+    "bit-tongxuguang",
+    "bit-sunmiao",
+    "bit-lumingfei",
+    "bit-yangkuan",
+    "bit-liuning",
+    "bit-wanglang",
+    "bit-xuejin"
+  ],
+  "new_org_ids": [
+    "bit-education",
+    "bit-education-smart-digital-learning",
+    "bit-math-statistics",
+    "bit-management",
+    "bit-management-science-logistics",
+    "bit-management-tech-economics-strategy",
+    "bit-education-higher-engineering",
+    "bit-design-art",
+    "bit-design-traditional-crafts",
+    "bit-law",
+    "bit-law-international",
+    "bit-law-civil-commercial",
+    "bit-foreign-languages",
+    "bit-college-english",
+    "bit-english"
+  ],
+  "counts": {
+    "people": 12,
+    "org_units": 15,
+    "education": 41,
+    "appointments": 39,
+    "publications": 22,
+    "mentors": 0,
+    "teaching": 14,
+    "institutional_associations": 0,
+    "professional_research_advisors": 0,
+    "career_end_events": 0,
+    "creative_works": 0,
+    "degree_true": 19,
+    "degree_false": 13,
+    "degree_unknown": 9
+  },
+  "mapping_inputs": [
+    {
+      "source_group_id": "education-mathematics-management",
+      "canonical_payload_sha256": "9cebb7fc8e55092d3cc682ff67f81255a00bdc13f5979604af1d70eb711ca750",
+      "field_mapping_sha256": "9d223d8289d45dbb6ae83547ad31796b2c7b65dae37bf3bd41c072d7be3a908a",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "education-design-art",
+      "canonical_payload_sha256": "216d5febf1da3bf06b1dc22fdf29a285a68bb6b3e091c45c73ea8f10e5316dbd",
+      "field_mapping_sha256": "e1da7f8ff82761c6723518da97c26b844eb50f4370f8251ee91c75c03fdf7e7f",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "law-foreign-languages",
+      "canonical_payload_sha256": "eb2be6ee467dbdc272587a98d43c2bdc938b64c012954ec4932f85a901f9e426",
+      "field_mapping_sha256": "ad20e4e4ae6588b7ddd8531b31dfb7de46c84d9d44a8bd2b76ca612df4e06f62",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "9cebb7fc8e55092d3cc682ff67f81255a00bdc13f5979604af1d70eb711ca750",
+      "baseline_people": 826,
+      "baseline_publication_status": "published",
+      "people": [
+        {
+          "person_id": "bit-songtian",
+          "source_candidate_sha256": "de0b42b0e8296156abb06b4d27c7ead77d2bc680e5d25d0dc724e309f679a4cd",
+          "source_review_sha256": "1958b811130b12ed43a8d8f681cc46734fedf8d8b2761fd0700a9c873a553aad",
+          "acceptance_chain_binding": {
+            "source_sha_explicit_in_original_audit": true,
+            "review_original_and_accepted_sha": {
+              "original": "fb565528eaa63f8a931e9ec763c50c2b759541d2234c6bc36912a7d06cd61818",
+              "accepted": "de0b42b0e8296156abb06b4d27c7ead77d2bc680e5d25d0dc724e309f679a4cd"
+            }
+          },
+          "education_original_states": [
+            {
+              "event_id": "bit-songtian-bachelor",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "bit-songtian-doctorate",
+              "degree_awarded": null
+            }
+          ],
+          "counts": {
+            "education": 3,
+            "appointments": 7,
+            "mentors": 0,
+            "publications": 1,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "实际当前人事/退休状态未独立核验；来源角色和至今不是实时在岗证明。",
+            "仅必要公开职业摘录，非完整履历、完整原页面或全部书目，没有新访问。",
+            "未留本人具名导师；本人博导/硕导是指导他人的资格，不是另一任职或其求学导师。",
+            "原2025-04起教育学院教授/院长与2021-01起网安学院教授均写至今，保留重叠声明，不认定法律双聘或补结束日。",
+            "姓名原嵩 天中间空格保留source别名；博士起点按原正文2002-08，另官网仅搜索线索2002-07未读正文，不改原起点。",
+            "目录硕士生导师是分类而非全体现职普查，原生href未提取。",
+            "硕士阶段与本人导师未披露，不据缺漏推不存在。"
+          ]
+        },
+        {
+          "person_id": "bit-shifugui",
+          "source_candidate_sha256": "9896adb84d562417d72e26f115137be9e5f63fbec9dfff432566070e2bf60936",
+          "source_review_sha256": "4d2efad035bd412bee90088e802c75a36f30bf3fc7364289952c29517a4f43a9",
+          "acceptance_chain_binding": {
+            "source_sha_explicit_in_original_audit": true,
+            "review_explicit_v2_amendment": true,
+            "exact_two_field_v2_delta_replayed": true
+          },
+          "education_original_states": [
+            {
+              "event_id": "bit-shifugui-undergraduate",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "bit-shifugui-master",
+              "degree_awarded": null
+            },
+            {
+              "event_id": "bit-shifugui-doctorate",
+              "degree_awarded": null
+            }
+          ],
+          "counts": {
+            "education": 3,
+            "appointments": 4,
+            "mentors": 0,
+            "publications": 1,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "实际当前人事/退休状态未独立核验；来源角色和至今不是实时在岗证明。",
+            "仅必要公开职业摘录，非完整履历、完整原页面或全部书目，没有新访问。",
+            "未留本人具名导师，不由教授称谓推导师资格或本人师承。",
+            "原应用数学系目录未列本人，退休职工目录第一页列名；与旧页2001至今并列保留，不确认退休年或当前人事状态。",
+            "原个人页应用数学系属历史/个人归属标签，当前primary按数学与统计学院，不从退休目录推现任系别。",
+            "本科仅阶段不改学士，专业未知不从数学系推；硕博仅经历，未核独立授位。",
+            "目录具名原生href未提取。"
+          ]
+        },
+        {
+          "person_id": "bit-guanlei",
+          "source_candidate_sha256": "28bc4e492cf0fe4e977ee29a9043dadc1a359eae0e8f854eccbdaee61e6605e0",
+          "source_review_sha256": "77531e1c6a39e56b1af4c392d16bb1c78668a5a559657a65504da5aaef703951",
+          "acceptance_chain_binding": {
+            "source_sha_explicit_in_original_audit": true
+          },
+          "education_original_states": [
+            {
+              "event_id": "bit-guanlei-bachelor",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "bit-guanlei-doctorate",
+              "degree_awarded": true
+            }
+          ],
+          "counts": {
+            "education": 2,
+            "appointments": 5,
+            "mentors": 0,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "实际当前人事/退休状态未独立核验；来源角色和至今不是实时在岗证明。",
+            "仅必要公开职业摘录，非完整履历、完整原页面或全部书目，没有新访问。",
+            "未留本人具名导师；本人博导/硕导是指导他人的资格，不是另一任职或其求学导师。",
+            "三段香港中文大学研究助理是原工作，不转联培、访问学位、博士后或导师关系。",
+            "硕士阶段未披露，不推直博或不存在。",
+            "原管理与经济学院/管理学院名称并存，不假定法律更名日期；目录已有具名原生链接对应。",
+            "页面显示2026-01-21，不认证最后更新时间。"
+          ]
+        },
+        {
+          "person_id": "bit-xiaenjun",
+          "source_candidate_sha256": "28bc4e492cf0fe4e977ee29a9043dadc1a359eae0e8f854eccbdaee61e6605e0",
+          "source_review_sha256": "77531e1c6a39e56b1af4c392d16bb1c78668a5a559657a65504da5aaef703951",
+          "acceptance_chain_binding": {
+            "source_sha_explicit_in_original_audit": true
+          },
+          "education_original_states": [
+            {
+              "event_id": "bit-xiaenjun-bachelor",
+              "degree_awarded": true
+            },
+            {
+              "event_id": "bit-xiaenjun-doctorate",
+              "degree_awarded": true
+            }
+          ],
+          "counts": {
+            "education": 4,
+            "appointments": 6,
+            "mentors": 0,
+            "publications": 2,
+            "teaching": 0
+          },
+          "visible_limits": [
+            "实际当前人事/退休状态未独立核验；来源角色和至今不是实时在岗证明。",
+            "仅必要公开职业摘录，非完整履历、完整原页面或全部书目，没有新访问。",
+            "未留本人具名导师；本人博导/硕导是指导他人的资格，不是另一任职或其求学导师。",
+            "原本人技术经济及战略管理系与目录技术经济与战略管理系两写法并存；管理与经济学院/管理学院不推法定更名。",
+            "原2018-07-23显示日早于2024内容，真正最后更新日未知。",
+            "硕士阶段/本人导师/博士专业未披露，不从经贸学院或管理学学位反推专业。",
+            "仅原已选职业行，非完整履历；海外研修/客座/顾问身份不增学位。"
+          ]
+        }
+      ],
+      "org_identity": [
+        {
+          "id": "bit-education",
+          "name": "教育学院",
+          "type": "school",
+          "school_id": "bit",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "bit-education-masters-roster",
+          "source_url": "https://se.bit.edu.cn/szdw/jsml/jyzlyjsjyyjs1/index.htm",
+          "source_observation_sha256": "40e5c6857999c35c4b5ed5b397a0f7f8af67769e5587514028bec9e5bb415ad6",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "来源单位与下级归组展示，不认证完整行政树或现职名单。"
+        },
+        {
+          "id": "bit-education-smart-digital-learning",
+          "name": "智慧教育与数字学习研究所",
+          "type": "institute",
+          "school_id": "bit",
+          "parent_id": "bit-education",
+          "campus_ids": [],
+          "source_id": "bit-songtian-profile",
+          "source_url": "https://se.bit.edu.cn/szdw/jsml/jyzlyjsjyyjs1/bd3dc0c873c245e581a38144d298fb54.htm",
+          "source_observation_sha256": "6d09b285c0a66c3236b07651f2ceba6b2963a8e9a4028293f56eedcce4d8865e",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "来源单位与下级归组展示，不认证完整行政树或现职名单。"
+        },
+        {
+          "id": "bit-math-statistics",
+          "name": "数学与统计学院",
+          "type": "school",
+          "school_id": "bit",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "bit-math-retired-directory",
+          "source_url": "https://math.bit.edu.cn/szdw/txzg/index.htm",
+          "source_observation_sha256": "7b1400db8f44b29f39f88c1ccb2b1f5f6d68cabcc8c9b9b62d49d979809dfa7f",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "来源单位与下级归组展示，不认证完整行政树或现职名单。"
+        },
+        {
+          "id": "bit-management",
+          "name": "管理学院",
+          "type": "school",
+          "school_id": "bit",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_id": "bit-management-by-department-directory",
+          "source_url": "https://som.bit.edu.cn/gbszdw/gbjxzy/index.htm",
+          "source_observation_sha256": "a1bf2d28cdeba5fea088c2255d8de54df7b3d3c0b601982463e52bf0288ac608",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原官网人物/目录展示，行政法定父级未独立核验；管理学院与旧管理与经济学院并列来源名不推更名。"
+        },
+        {
+          "id": "bit-management-science-logistics",
+          "name": "管理科学与物流系",
+          "type": "department",
+          "school_id": "bit",
+          "parent_id": "bit-management",
+          "campus_ids": [],
+          "source_id": "bit-management-by-department-directory",
+          "source_url": "https://som.bit.edu.cn/gbszdw/gbjxzy/index.htm",
+          "source_observation_sha256": "a1bf2d28cdeba5fea088c2255d8de54df7b3d3c0b601982463e52bf0288ac608",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原官网人物/目录展示，行政法定父级未独立核验；管理学院与旧管理与经济学院并列来源名不推更名。"
+        },
+        {
+          "id": "bit-management-tech-economics-strategy",
+          "name": "技术经济与战略管理系",
+          "type": "department",
+          "school_id": "bit",
+          "parent_id": "bit-management",
+          "campus_ids": [],
+          "source_id": "bit-management-by-department-directory",
+          "source_url": "https://som.bit.edu.cn/gbszdw/gbjxzy/index.htm",
+          "source_observation_sha256": "a1bf2d28cdeba5fea088c2255d8de54df7b3d3c0b601982463e52bf0288ac608",
+          "hash_scope": "whole original retained source object JSON",
+          "scope_note": "原官网人物/目录展示，行政法定父级未独立核验；管理学院与旧管理与经济学院并列来源名不推更名。"
+        }
+      ],
+      "degree_matrix_status": "最终仅嵩学士由明确具体资格支持true；其他4null保持，本组5true3false4null，授位年月日不补。",
+      "public_field_check": "真实角色/资格区别与任期、错误职称原字、退休目录冲突、原署名卷月页与未核DOI均实际note/unknowns可见。",
+      "final_narrow_revision": {
+        "old_payload_sha256": "e730645d0910e9c60a9f35dbb8fb77f61c51858c675ac564c52fb0055243d0ad",
+        "new_payload_sha256": "9cebb7fc8e55092d3cc682ff67f81255a00bdc13f5979604af1d70eb711ca750",
+        "changes": [
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              0,
+              "degree_awarded"
+            ],
+            "old_value": null,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              0,
+              "event_kind"
+            ],
+            "old_value": "degree_study",
+            "new_value": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              0,
+              "include_in_degree_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              0,
+              "include_in_education_filters"
+            ],
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              0,
+              "note"
+            ],
+            "old_value": "原教育经历按源，独立授位尚未核实，不补授位年月或从院系推专业。",
+            "new_value": "官网学习经历明确“学士”具体资格称谓，配1998-09至2002-07东北大学计算机科学与技术背景，据来源报告记录授位；未核原学位证，授位年月日未知，不由学习终点推定。"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "publications",
+              0,
+              "note"
+            ],
+            "old_value": "仅官网选录书目，原刊元数据和全文未核。原作者串：Tian Song；Hang Zhang；Yijia Xiao；星号未据图例独立解释，不推贡献身份。原2024年，卷号未知。 原页面记2024.12；搜索线索另称11月15日在线、页2242–2255，其他线索2296–2309，均未核出版者，不填页码或在线日。原IEEE机器人验证路径停止，DOI只检索候选。",
+            "new_value": "仅官网选录书目，原刊元数据和全文未核。原作者串：Tian Song；Hang Zhang；Yijia Xiao；星号未据图例独立解释，不推贡献身份。原2024年，卷号未知。 原页面记2024.12；搜索线索另称11月15日在线、页2242–2255，其他线索2296–2309，均未核出版者，不填页码或在线日。原IEEE机器人验证路径停止，DOI只检索候选。 原条另附SCI Q1；仅保留当时官网自述评价标签，未独立核验，不作本系统评级。"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "publications",
+              0,
+              "note"
+            ],
+            "old_value": "仅官网选录书目，原刊元数据和全文未核。原作者串：Guan L；Nip K*；Wang R；Zhang L；星号未据图例独立解释，不推贡献身份。原2025年，卷号未知。 原Published online in Articles in Advance，未载卷期页；DOI 10.1287/msom.2023.0381仅官网报告，未核原刊。",
+            "new_value": "仅官网选录书目，原刊元数据和全文未核。原作者串：Guan L；Nip K*；Wang R；Zhang L；星号未据图例独立解释，不推贡献身份。原2025年，卷号未知。 原Published online in Articles in Advance，未载卷期页；DOI 10.1287/msom.2023.0381仅官网报告，未核原刊。 原条另附SCI/SSCI、UTD24、中科院3区、AGJ三星；仅来源当时评价附注，未独立核验，不作本系统评级。"
+          },
+          {
+            "field_address": [
+              "people",
+              2,
+              "publications",
+              1,
+              "note"
+            ],
+            "old_value": "仅官网选录书目，原刊元数据和全文未核。原作者串：Guan L；Gu W；Niu W*；Zhang L；星号未据图例独立解释，不推贡献身份。原2024年，卷31，页码1994-2022。",
+            "new_value": "仅官网选录书目，原刊元数据和全文未核。原作者串：Guan L；Gu W；Niu W*；Zhang L；星号未据图例独立解释，不推贡献身份。原2024年，卷31，页码1994-2022。 原条另附SCI/SSCI、中科院3区；仅来源当时评价附注，未独立核验，不作本系统评级。"
+          },
+          {
+            "field_address": [
+              "people",
+              1,
+              "unknowns",
+              2
+            ],
+            "old_value": "未留本人具名导师；本人博导/硕导是指导他人的资格，不是另一任职或其求学导师。",
+            "new_value": "未留本人具名导师，不由教授称谓推导师资格或本人师承。"
+          }
+        ],
+        "inverse_verified_sha256": "e730645d0910e9c60a9f35dbb8fb77f61c51858c675ac564c52fb0055243d0ad",
+        "degree_evidence": {
+          "event_id": "bit-songtian-bachelor",
+          "source_quote": "1998/09-2002/07，东北大学，计算机科学与技术专业，学士",
+          "quote_sha256": "6c575f991047c4f5b0f3d3ff30e379f9797a37fe45291e87cba13aa959c4014e",
+          "source_url": "https://se.bit.edu.cn/szdw/jsml/jyzlyjsjyyjs1/bd3dc0c873c245e581a38144d298fb54.htm",
+          "retained_source_object_sha256": "6d09b285c0a66c3236b07651f2ceba6b2963a8e9a4028293f56eedcce4d8865e",
+          "hash_scope": "whole original retained source evidence object JSON; quoted text separately hashed",
+          "source_candidate_sha256": "de0b42b0e8296156abb06b4d27c7ead77d2bc680e5d25d0dc724e309f679a4cd",
+          "old_degree_awarded": null,
+          "source_pack_unchanged": true
+        },
+        "source_rating_scope": "原已留存专业书目尾注，不是本系统或当期刊物评级认证"
+      }
+    },
+    {
+      "schema_version": "bit12-group2-mapping-1",
+      "published_baseline_people": 826,
+      "input_checks": [
+        {
+          "person_id": "bit-shanjiefei",
+          "candidate_sha256": "39e39c5e981ef6665a2061121ff525cdae92eb2227b915dead27f8d88eb2f706",
+          "review_sha256": "ed7292d6318f58f729cdbcd4a884cc7fd88d479cb849aec0498b865befd9f9e9",
+          "additional_audit_hashes": [
+            "401c471f5ee8cb102389fc4fa9770cc9816d41ebc7eea182198e5b6330e5a784",
+            "fa0fbdef7679a46d5302cdbc63828718973e8577911551f3f15f1cf7068149e6"
+          ],
+          "hash_guards_pass": true
+        },
+        {
+          "person_id": "bit-tongxuguang",
+          "candidate_sha256": "39e39c5e981ef6665a2061121ff525cdae92eb2227b915dead27f8d88eb2f706",
+          "review_sha256": "ed7292d6318f58f729cdbcd4a884cc7fd88d479cb849aec0498b865befd9f9e9",
+          "additional_audit_hashes": [
+            "401c471f5ee8cb102389fc4fa9770cc9816d41ebc7eea182198e5b6330e5a784",
+            "fa0fbdef7679a46d5302cdbc63828718973e8577911551f3f15f1cf7068149e6"
+          ],
+          "hash_guards_pass": true
+        },
+        {
+          "person_id": "bit-sunmiao",
+          "candidate_sha256": "fb5368c389b55380d3d58b070ce8b4b978e668faca06254d75cf0b833d420a9f",
+          "review_sha256": "0d11c69c6534ca86b0205255b2e42ce96a180cfcfd359f1ffbbcb5b792f4761e",
+          "additional_audit_hashes": [
+            "c55367eca80b2bd5c60d8018997dcabbc0d19034cf6eae4fdc1783e8b3c9a1cb",
+            "b91dccd711d60345d003d3e0834e236ce518e14d2e082e6f065d2273d4fbfb08",
+            "8cd20ad3296a1f2205706239047d3707317694115ef36d41927ecdd505fa2587"
+          ],
+          "hash_guards_pass": true
+        },
+        {
+          "person_id": "bit-lumingfei",
+          "candidate_sha256": "fb5368c389b55380d3d58b070ce8b4b978e668faca06254d75cf0b833d420a9f",
+          "review_sha256": "0d11c69c6534ca86b0205255b2e42ce96a180cfcfd359f1ffbbcb5b792f4761e",
+          "additional_audit_hashes": [
+            "c55367eca80b2bd5c60d8018997dcabbc0d19034cf6eae4fdc1783e8b3c9a1cb",
+            "b91dccd711d60345d003d3e0834e236ce518e14d2e082e6f065d2273d4fbfb08",
+            "8cd20ad3296a1f2205706239047d3707317694115ef36d41927ecdd505fa2587"
+          ],
+          "hash_guards_pass": true
+        }
+      ],
+      "degree_evidence_matrix": [
+        {
+          "person_id": "bit-shanjiefei",
+          "education_event_id": "bit-shanjiefei-本科",
+          "old_value": null,
+          "quote": "2006-2010，山东大学，管理学学士；",
+          "quote_sha256": "71c0a962206b8ef83891ee5a913e6ff065f5523c1b59a020841b435815592f06",
+          "source_id": "bit-shanjiefei-profile",
+          "source_url": "https://se.bit.edu.cn/szdw/jsml/jyzlyjsjyyjs1/0a0d0db4468e457abf4ae9ebab885103.htm",
+          "candidate_sha256": "39e39c5e981ef6665a2061121ff525cdae92eb2227b915dead27f8d88eb2f706",
+          "retained_heading": "学习经历",
+          "independent_degree_identity": null,
+          "proposal": "source_reported_true",
+          "decision": "root_approved_source_reported_true"
+        },
+        {
+          "person_id": "bit-shanjiefei",
+          "education_event_id": "bit-shanjiefei-硕士",
+          "old_value": null,
+          "quote": "2010-2013，北京理工大学，管理学硕士；",
+          "quote_sha256": "4440594e4e53ec77b1b35f38823fed7ef259e089712bfd8f4f7bed9310409fa1",
+          "source_id": "bit-shanjiefei-profile",
+          "source_url": "https://se.bit.edu.cn/szdw/jsml/jyzlyjsjyyjs1/0a0d0db4468e457abf4ae9ebab885103.htm",
+          "candidate_sha256": "39e39c5e981ef6665a2061121ff525cdae92eb2227b915dead27f8d88eb2f706",
+          "retained_heading": "学习经历",
+          "independent_degree_identity": null,
+          "proposal": "retain_unknown",
+          "decision": "root_final_retain_unknown"
+        },
+        {
+          "person_id": "bit-lumingfei",
+          "education_event_id": "bit-lumingfei-education-1",
+          "old_value": null,
+          "quote": "1986年，毕业于东北师范大学美术系美术教育专业(大学专科)",
+          "quote_sha256": "bdd2ad2415bb927e4f9accd05cb6cd93e8e4c8d23afeed18ea58a6a672af7311",
+          "source_id": "bit-lumingfei-profile",
+          "source_url": "https://design.bit.edu.cn/sz2/szdw/b171267.htm",
+          "candidate_sha256": "fb5368c389b55380d3d58b070ce8b4b978e668faca06254d75cf0b833d420a9f",
+          "retained_heading": null,
+          "independent_degree_identity": null,
+          "proposal": "retain_unknown",
+          "decision": "root_final_retain_unknown"
+        }
+      ],
+      "org_identity": "bit-education复用组1唯一节点，同校同中文教育学院及se.bit.edu.cn个人页/硕士生导师官方目录身份桥接；本组仅新增研究所、设计与艺术学院、传统工艺美术系3node。单所在部门空，不随童分系；孙无子系不随鲁分系。下级parent仅原展示关系，不核法律行政。",
+      "original_org_facts": {
+        "bit-shanjiefei": [
+          {
+            "id": "bit-education",
+            "name": "教育学院",
+            "school_id": "bit",
+            "type": "school",
+            "source_ids": [
+              "bit-education-masters-directory",
+              "bit-shanjiefei-profile",
+              "bit-tongxuguang-profile"
+            ]
+          },
+          {
+            "id": "bit-education-higher-engineering",
+            "name": "高等教育与工程教育研究所",
+            "school_id": "bit",
+            "parent_id": "bit-education",
+            "type": "research_institute",
+            "source_id": "bit-tongxuguang-profile",
+            "note": "来自个人页所在部门栏，未推定法律隶属或历史重组。"
+          }
+        ],
+        "bit-sunmiao": [
+          {
+            "id": "bit-design-art",
+            "name": "设计与艺术学院",
+            "school_id": "bit",
+            "type": "school",
+            "source_ids": [
+              "bit-sunmiao-profile",
+              "bit-lumingfei-profile",
+              "bit-design-faculty-directory"
+            ]
+          },
+          {
+            "id": "bit-design-traditional-crafts",
+            "name": "传统工艺美术系",
+            "school_id": "bit",
+            "parent_id": "bit-design-art",
+            "type": "department",
+            "source_id": "bit-lumingfei-profile",
+            "source_url": "https://design.bit.edu.cn/sz2/szdw/b171267.htm",
+            "retained_professional_text": "传统工艺美术系讲师",
+            "source_excerpt_sha256": "b63c198ba2bd86210d15cedf9ac5b89dd37cdd2fdeab8a5dd3ee43c5627c9457",
+            "note": "仅鲁明非个人页的职业栏，不据目录顺序推断其他人的系部。"
+          }
+        ]
+      },
+      "source_excerpt_fingerprints": [
+        {
+          "path": "/people/bit-shanjiefei/field_provenance/identity_and_title/quote",
+          "sha256": "baa701c9e4279a507582880ef9e35641c3562e6ab93f745f2e0dd2203b328824"
+        },
+        {
+          "path": "/people/bit-shanjiefei/field_provenance/directory_affiliation/quote",
+          "sha256": "8c7300c889ad6e180e7c5b31060c7872c9585a74b4614d699de3e52bb0e04ccf"
+        },
+        {
+          "path": "/people/bit-shanjiefei/field_provenance/discipline_labels/quote",
+          "sha256": "c6705c3419254f00cd14fd5bc1d91fcdbcc7f94ad78ef657d62bec13435476e0"
+        },
+        {
+          "path": "/people/bit-shanjiefei/field_provenance/research/quote",
+          "sha256": "4f887776c6dd42230a2680ad23a78a025ec37b4846bb37670b98aedd8c784511"
+        },
+        {
+          "path": "/people/bit-shanjiefei/education/0/quote",
+          "sha256": "71c0a962206b8ef83891ee5a913e6ff065f5523c1b59a020841b435815592f06"
+        },
+        {
+          "path": "/people/bit-shanjiefei/education/1/quote",
+          "sha256": "4440594e4e53ec77b1b35f38823fed7ef259e089712bfd8f4f7bed9310409fa1"
+        },
+        {
+          "path": "/people/bit-shanjiefei/education/2/quote",
+          "sha256": "593f29e8a614adef9bb025c107268844f422933796cd66ad798cc45b6d6f1f3b"
+        },
+        {
+          "path": "/people/bit-shanjiefei/education/2/additional_study_label/quote",
+          "sha256": "11a1bb59de2db52b4a08e298fa58c896b918fcb5707403daa87e01f4eb1b6f02"
+        },
+        {
+          "path": "/people/bit-shanjiefei/appointments/0/quote",
+          "sha256": "3c90a7d108fb944731dd3cc80ee9bfa1e0df0095b10626f35138642fbb338462"
+        },
+        {
+          "path": "/people/bit-shanjiefei/appointments/1/quote",
+          "sha256": "d015e0ba11a2b162b2240e626a154958f41e7fd88ee3139728f8e2f281c8fd53"
+        },
+        {
+          "path": "/people/bit-shanjiefei/appointments/2/quote",
+          "sha256": "c843df80fc432e659249085d2d11fca80e7e9d752fd1ee362a5b1d6ed2c58548"
+        },
+        {
+          "path": "/people/bit-shanjiefei/appointments/3/quote",
+          "sha256": "dec33d2dc020632cc58b01d60c41b02df68846a45ae2c7e6891a382eec262925"
+        },
+        {
+          "path": "/people/bit-shanjiefei/publications/0/quote",
+          "sha256": "7e6dff1e317881dab2eee48466d625cee2169eeb85e1bf7d685f8ba4b0757234"
+        },
+        {
+          "path": "/people/bit-shanjiefei/publications/1/quote",
+          "sha256": "f63a26f2d9b05d9d97a391951cacb0a9da0ec9c694d37cddabfaac2e2aa94fe5"
+        },
+        {
+          "path": "/quote",
+          "sha256": "71c0a962206b8ef83891ee5a913e6ff065f5523c1b59a020841b435815592f06"
+        },
+        {
+          "path": "/quote",
+          "sha256": "4440594e4e53ec77b1b35f38823fed7ef259e089712bfd8f4f7bed9310409fa1"
+        },
+        {
+          "path": "/quote",
+          "sha256": "593f29e8a614adef9bb025c107268844f422933796cd66ad798cc45b6d6f1f3b"
+        },
+        {
+          "path": "/additional_study_label/quote",
+          "sha256": "11a1bb59de2db52b4a08e298fa58c896b918fcb5707403daa87e01f4eb1b6f02"
+        },
+        {
+          "path": "/quote",
+          "sha256": "3c90a7d108fb944731dd3cc80ee9bfa1e0df0095b10626f35138642fbb338462"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d015e0ba11a2b162b2240e626a154958f41e7fd88ee3139728f8e2f281c8fd53"
+        },
+        {
+          "path": "/quote",
+          "sha256": "c843df80fc432e659249085d2d11fca80e7e9d752fd1ee362a5b1d6ed2c58548"
+        },
+        {
+          "path": "/quote",
+          "sha256": "dec33d2dc020632cc58b01d60c41b02df68846a45ae2c7e6891a382eec262925"
+        },
+        {
+          "path": "/quote",
+          "sha256": "7e6dff1e317881dab2eee48466d625cee2169eeb85e1bf7d685f8ba4b0757234"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f63a26f2d9b05d9d97a391951cacb0a9da0ec9c694d37cddabfaac2e2aa94fe5"
+        },
+        {
+          "path": "/people/bit-tongxuguang/field_provenance/identity_and_title/quote",
+          "sha256": "374ec7ec26cb77c16c744a05ca4f8de69e191f10479aa05c0802f4defa286415"
+        },
+        {
+          "path": "/people/bit-tongxuguang/field_provenance/directory_affiliation/quote",
+          "sha256": "b2e1be34755bdc0fdd77e3be6e1d808ac8476678c922598c923cc52267950861"
+        },
+        {
+          "path": "/people/bit-tongxuguang/field_provenance/department/quote",
+          "sha256": "87738a8ba9c0d7262d4552959ae838f603155b04e05662e404aebb11c6d9d7ef"
+        },
+        {
+          "path": "/people/bit-tongxuguang/field_provenance/discipline_labels/quote",
+          "sha256": "defd2cc751bb2c513e25492ebd6a2bcfe939696115c7ff5a2ae798d88d9e7182"
+        },
+        {
+          "path": "/people/bit-tongxuguang/field_provenance/research/quote",
+          "sha256": "c9e143e88df92885696bca03c6747baf78d804c8bedd91e7c0b9a9219227df6e"
+        },
+        {
+          "path": "/people/bit-tongxuguang/education/0/quote",
+          "sha256": "df06749558d21e4e886d4e39770f806dcce1a0ba9f08558464613b538875f10b"
+        },
+        {
+          "path": "/people/bit-tongxuguang/education/1/quote",
+          "sha256": "d537fa9e6fc52ae354b545119a8e188cf5c1613c98253c7f4f2b716b07ec165c"
+        },
+        {
+          "path": "/people/bit-tongxuguang/professional_training/0/quote",
+          "sha256": "b8f936d753f8c23c9fa10d1138255fdcc93b49b72fb202b1dfa31f1d010bd721"
+        },
+        {
+          "path": "/people/bit-tongxuguang/professional_training/1/quote",
+          "sha256": "bc8365361fdcf16268e57593db8f6faf6dd29b3482006830139ac94354d3c907"
+        },
+        {
+          "path": "/people/bit-tongxuguang/appointments/0/quote",
+          "sha256": "ec16b7fd79a482cbdab5adf970429b2874b5c1d3e231f5488404088bff9457a3"
+        },
+        {
+          "path": "/people/bit-tongxuguang/appointments/1/quote",
+          "sha256": "f943a15cde8a714b5b0e228b6fb33d8cf8d92a433c19c999d3451314a051b92f"
+        },
+        {
+          "path": "/people/bit-tongxuguang/publications/0/quote",
+          "sha256": "368d6cda07fd258112fd23d6a162036705332405cf6a2fbca558feac6f2c6eab"
+        },
+        {
+          "path": "/people/bit-tongxuguang/publications/1/quote",
+          "sha256": "81ac727f9a76cfcd73c27875444958684a88e9bb4f2ec6ffdd2fa4c0f58d091f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "df06749558d21e4e886d4e39770f806dcce1a0ba9f08558464613b538875f10b"
+        },
+        {
+          "path": "/quote",
+          "sha256": "d537fa9e6fc52ae354b545119a8e188cf5c1613c98253c7f4f2b716b07ec165c"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b8f936d753f8c23c9fa10d1138255fdcc93b49b72fb202b1dfa31f1d010bd721"
+        },
+        {
+          "path": "/quote",
+          "sha256": "bc8365361fdcf16268e57593db8f6faf6dd29b3482006830139ac94354d3c907"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ec16b7fd79a482cbdab5adf970429b2874b5c1d3e231f5488404088bff9457a3"
+        },
+        {
+          "path": "/quote",
+          "sha256": "f943a15cde8a714b5b0e228b6fb33d8cf8d92a433c19c999d3451314a051b92f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "368d6cda07fd258112fd23d6a162036705332405cf6a2fbca558feac6f2c6eab"
+        },
+        {
+          "path": "/quote",
+          "sha256": "81ac727f9a76cfcd73c27875444958684a88e9bb4f2ec6ffdd2fa4c0f58d091f"
+        },
+        {
+          "path": "/people/bit-sunmiao/education/0/quote",
+          "sha256": "485b0aedd5dbdbee5988e628e095a3865ab23bfaddb45accd2a6819c497f327c"
+        },
+        {
+          "path": "/people/bit-sunmiao/education/1/quote",
+          "sha256": "063bff69a7e98ddd3d9fb953ca7a0216e3ffaed47f03ec9df3e63240077fd276"
+        },
+        {
+          "path": "/people/bit-sunmiao/professional_training/0/quote",
+          "sha256": "afcda436a3097ea0d00cd61612e9cf2faab2a681fed8928c3438c36f7b466ecd"
+        },
+        {
+          "path": "/people/bit-sunmiao/professional_training/1/quote",
+          "sha256": "259d67efcb059f80aa385545d1fbcffff81a039a640bb802ccf297720da1a504"
+        },
+        {
+          "path": "/people/bit-sunmiao/publications/0/quote",
+          "sha256": "c3aacf99717a7ae2d514b2939856ff30c731aecc4f2b291422890a4d5068cc79"
+        },
+        {
+          "path": "/people/bit-sunmiao/publications/1/quote",
+          "sha256": "391ad01deb6695af75a241a6a884f334ef0514ba8906743c94043d1cf22f2ce2"
+        },
+        {
+          "path": "/people/bit-sunmiao/field_provenance/identity/quote",
+          "sha256": "d6c6446f5d83c8c01dcfceb81a04d0867ab1ab7e59caa020078495715d5533c7"
+        },
+        {
+          "path": "/people/bit-sunmiao/field_provenance/listed_title/quote",
+          "sha256": "fed475bedfd759145b8e30da0ae14a0d1a19f6a8706ba00cdc2147bd937a4281"
+        },
+        {
+          "path": "/people/bit-sunmiao/field_provenance/directory_affiliation/quote",
+          "sha256": "23cc7d4fccae4f3853076c32949ee29ef7b9fc1bab05195f3c3e5a5f958ae48c"
+        },
+        {
+          "path": "/people/bit-sunmiao/field_provenance/research/quote",
+          "sha256": "5d03cf49120230b2ba4d64d616379822219ef0eb99f0c0d262119b983c2a1b7f"
+        },
+        {
+          "path": "/people/bit-sunmiao/field_provenance/teaching/quote",
+          "sha256": "99546eee8ec102868db2d335b06e723cf3acd38d3af731025fcca27ee2676d86"
+        },
+        {
+          "path": "/people/bit-sunmiao/field_provenance/profile_affiliation/quote",
+          "sha256": "3366300f060bdf31a9f438ffa8dc9d9adcdc69081736a0e2015823afbfdb4a96"
+        },
+        {
+          "path": "/quote",
+          "sha256": "485b0aedd5dbdbee5988e628e095a3865ab23bfaddb45accd2a6819c497f327c"
+        },
+        {
+          "path": "/quote",
+          "sha256": "063bff69a7e98ddd3d9fb953ca7a0216e3ffaed47f03ec9df3e63240077fd276"
+        },
+        {
+          "path": "/quote",
+          "sha256": "afcda436a3097ea0d00cd61612e9cf2faab2a681fed8928c3438c36f7b466ecd"
+        },
+        {
+          "path": "/quote",
+          "sha256": "259d67efcb059f80aa385545d1fbcffff81a039a640bb802ccf297720da1a504"
+        },
+        {
+          "path": "/quote",
+          "sha256": "99546eee8ec102868db2d335b06e723cf3acd38d3af731025fcca27ee2676d86"
+        },
+        {
+          "path": "/quote",
+          "sha256": "c3aacf99717a7ae2d514b2939856ff30c731aecc4f2b291422890a4d5068cc79"
+        },
+        {
+          "path": "/quote",
+          "sha256": "391ad01deb6695af75a241a6a884f334ef0514ba8906743c94043d1cf22f2ce2"
+        },
+        {
+          "path": "/people/bit-lumingfei/education/0/quote",
+          "sha256": "bdd2ad2415bb927e4f9accd05cb6cd93e8e4c8d23afeed18ea58a6a672af7311"
+        },
+        {
+          "path": "/people/bit-lumingfei/education/1/quote",
+          "sha256": "ad104bbe045608db3e653cdbfe86110a426a800ed073ed9297998082d94e5ded"
+        },
+        {
+          "path": "/people/bit-lumingfei/education/2/quote",
+          "sha256": "cd1bb7bdf16861e90c5ce830a985d9d3c9633c07891f5969f41d87f233d78599"
+        },
+        {
+          "path": "/people/bit-lumingfei/professional_training/0/quote",
+          "sha256": "55de7cd3d4cfa8277c22384da426b2fc377fd8749725c7dc150bd1f1ab81849f"
+        },
+        {
+          "path": "/people/bit-lumingfei/appointments/0/quote",
+          "sha256": "e8eb44fa798a52e6ad39811b6b97b4d68432304a9a8e58c5665bd482dcc44f58"
+        },
+        {
+          "path": "/people/bit-lumingfei/appointments/1/quote",
+          "sha256": "681988f873281cb650bc688421a8ad38d5561d62ba74a2f067feeb75897b71ba"
+        },
+        {
+          "path": "/people/bit-lumingfei/publications/0/quote",
+          "sha256": "e8b0c9f0733bbff7187c73dcc40a5cb571f04b1d83fc19394d0da12860971d47"
+        },
+        {
+          "path": "/people/bit-lumingfei/publications/1/quote",
+          "sha256": "8356c835fb0d72fe2e56267053254fa1225157d146dd5861cdde31acf3ead76b"
+        },
+        {
+          "path": "/people/bit-lumingfei/field_provenance/identity/quote",
+          "sha256": "169682359e0aa84dd99b420e8b9050b27f4cf0b844399f209c5319322fe07160"
+        },
+        {
+          "path": "/people/bit-lumingfei/field_provenance/listed_title/quote",
+          "sha256": "b63c198ba2bd86210d15cedf9ac5b89dd37cdd2fdeab8a5dd3ee43c5627c9457"
+        },
+        {
+          "path": "/people/bit-lumingfei/field_provenance/directory_affiliation/quote",
+          "sha256": "56640acd12eefba6874a2ac523d5e270d7b544414b1776d6ddf3d4ec1b8c4fa0"
+        },
+        {
+          "path": "/people/bit-lumingfei/field_provenance/research/quote",
+          "sha256": "2c57964518fb4f1529d61557febc15369d09d7c133576f8e8383ad55047dd344"
+        },
+        {
+          "path": "/people/bit-lumingfei/field_provenance/teaching/quote",
+          "sha256": "463690d1a0bc3d637dd7161d9ea8bd58e40af7e60fc64f2a9748c32c28be86e6"
+        },
+        {
+          "path": "/people/bit-lumingfei/field_provenance/department_below_school/quote",
+          "sha256": "b63c198ba2bd86210d15cedf9ac5b89dd37cdd2fdeab8a5dd3ee43c5627c9457"
+        },
+        {
+          "path": "/quote",
+          "sha256": "bdd2ad2415bb927e4f9accd05cb6cd93e8e4c8d23afeed18ea58a6a672af7311"
+        },
+        {
+          "path": "/quote",
+          "sha256": "ad104bbe045608db3e653cdbfe86110a426a800ed073ed9297998082d94e5ded"
+        },
+        {
+          "path": "/quote",
+          "sha256": "cd1bb7bdf16861e90c5ce830a985d9d3c9633c07891f5969f41d87f233d78599"
+        },
+        {
+          "path": "/quote",
+          "sha256": "55de7cd3d4cfa8277c22384da426b2fc377fd8749725c7dc150bd1f1ab81849f"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e8eb44fa798a52e6ad39811b6b97b4d68432304a9a8e58c5665bd482dcc44f58"
+        },
+        {
+          "path": "/quote",
+          "sha256": "681988f873281cb650bc688421a8ad38d5561d62ba74a2f067feeb75897b71ba"
+        },
+        {
+          "path": "/quote",
+          "sha256": "463690d1a0bc3d637dd7161d9ea8bd58e40af7e60fc64f2a9748c32c28be86e6"
+        },
+        {
+          "path": "/quote",
+          "sha256": "463690d1a0bc3d637dd7161d9ea8bd58e40af7e60fc64f2a9748c32c28be86e6"
+        },
+        {
+          "path": "/quote",
+          "sha256": "463690d1a0bc3d637dd7161d9ea8bd58e40af7e60fc64f2a9748c32c28be86e6"
+        },
+        {
+          "path": "/quote",
+          "sha256": "463690d1a0bc3d637dd7161d9ea8bd58e40af7e60fc64f2a9748c32c28be86e6"
+        },
+        {
+          "path": "/quote",
+          "sha256": "463690d1a0bc3d637dd7161d9ea8bd58e40af7e60fc64f2a9748c32c28be86e6"
+        },
+        {
+          "path": "/quote",
+          "sha256": "e8b0c9f0733bbff7187c73dcc40a5cb571f04b1d83fc19394d0da12860971d47"
+        },
+        {
+          "path": "/quote",
+          "sha256": "8356c835fb0d72fe2e56267053254fa1225157d146dd5861cdde31acf3ead76b"
+        },
+        {
+          "path": "/quote",
+          "sha256": "b63c198ba2bd86210d15cedf9ac5b89dd37cdd2fdeab8a5dd3ee43c5627c9457"
+        },
+        {
+          "path": "/1/quote",
+          "sha256": "b63c198ba2bd86210d15cedf9ac5b89dd37cdd2fdeab8a5dd3ee43c5627c9457"
+        }
+      ],
+      "counts": {
+        "education": 15,
+        "appointments": 8,
+        "mentors": 0,
+        "publications": 8,
+        "teaching": 6
+      },
+      "historical_source_scope": "原pending/source-only为历史来源阶段，不等当时工程验收；111合审他校hold只审状态不读其源。",
+      "bounded_hold_separation": "仅本次批准4ID列明accepted来源/audit，无新访/停止旁支或held产物操作；完整held URL集合未提供，不声明全集排除。",
+      "degree_classification_revision": {
+        "old_payload_sha256": "faee70cda2bd819415500aa8bbf28ec83cbbbf9d373036f1612bae6d6c364562",
+        "reverse_restores_old_sha256": true,
+        "changes": [
+          {
+            "json_pointer": "/people/0/education/0",
+            "education_event_id": "bit-shanjiefei-本科",
+            "old_object": {
+              "event_id": "bit-shanjiefei-本科",
+              "event_kind": "degree_study",
+              "institution": "山东大学",
+              "department": null,
+              "education_stage": "本科",
+              "degree_label_as_source": "管理学学士",
+              "field": null,
+              "start": "2006",
+              "end": "2010",
+              "degree_awarded": null,
+              "degree_awarded_date": null,
+              "degree_awarded_year": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "bit-shanjiefei-profile",
+              "source_url": "https://se.bit.edu.cn/szdw/jsml/jyzlyjsjyyjs1/0a0d0db4468e457abf4ae9ebab885103.htm",
+              "retained_professional_text": "2006-2010，山东大学，管理学学士；",
+              "source_excerpt_sha256": "71c0a962206b8ef83891ee5a913e6ff065f5523c1b59a020841b435815592f06",
+              "note": "原具体学位称谓与学习区间保留，授位未单独核实；学习终点不转授位年月，不否定原教育经历。",
+              "education_event_id": "bit-shanjiefei-本科",
+              "source_event_kind": "degree_study",
+              "degree": "管理学学士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_locator": "教育训练条目／2006-2010，山东大学，管理学学士；",
+              "source_note": "来源学习经历只列学位标签，不等于明确获授；授位及授位时间保持unknown。"
+            },
+            "new_object": {
+              "event_id": "bit-shanjiefei-本科",
+              "event_kind": "degree",
+              "institution": "山东大学",
+              "department": null,
+              "education_stage": "本科",
+              "degree_label_as_source": "管理学学士",
+              "field": null,
+              "start": "2006",
+              "end": "2010",
+              "degree_awarded": true,
+              "degree_awarded_date": null,
+              "degree_awarded_year": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "bit-shanjiefei-profile",
+              "source_url": "https://se.bit.edu.cn/szdw/jsml/jyzlyjsjyyjs1/0a0d0db4468e457abf4ae9ebab885103.htm",
+              "retained_professional_text": "2006-2010，山东大学，管理学学士；",
+              "source_excerpt_sha256": "71c0a962206b8ef83891ee5a913e6ff065f5523c1b59a020841b435815592f06",
+              "note": "官网“学习经历”明确列管理学学士具体称谓，支持来源报告学士学位；未独立核学位证书。2006—2010是原学习区间，授位年月未知，不由学习终点补授位时间。",
+              "education_event_id": "bit-shanjiefei-本科",
+              "source_event_kind": "degree_study",
+              "degree": "管理学学士",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_locator": "教育训练条目／2006-2010，山东大学，管理学学士；",
+              "source_note": "来源学习经历只列学位标签，不等于明确获授；授位及授位时间保持unknown。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "degree_study",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "previous_canonical_note": "原具体学位称谓与学习区间保留，授位未单独核实；学习终点不转授位年月，不否定原教育经历。"
+            },
+            "old_value": null,
+            "new_value": true,
+            "quote": "2006-2010，山东大学，管理学学士；",
+            "quote_sha256": "71c0a962206b8ef83891ee5a913e6ff065f5523c1b59a020841b435815592f06",
+            "retained_heading": "学习经历",
+            "source_candidate_sha256": "39e39c5e981ef6665a2061121ff525cdae92eb2227b915dead27f8d88eb2f706"
+          }
+        ],
+        "consistency_check": "本event无award_basis/status否定派生；原note仅source_note保留，原unknowns仅source_unknowns保留；canonical unknowns不否定本科获授。只此1项更正，孙明确年不变。"
+      }
+    },
+    {
+      "baseline_people": 826,
+      "people": [
+        {
+          "person_id": "bit-yangkuan",
+          "source_candidate_sha256": "0fb314c00e1207d0cbf9a67b818f3f5b4c350f4e3a4b3c93ea03def2c27a7672",
+          "source_evidence_sha256": "a407332eb4d5aef2c8bb72ae5d0de76aa1ca2d8c6c9d9834132fe6be4bbf9a4e",
+          "source_review_sha256": "be1b8a7f6aa0a15b3cd15dfb403a1f527aa446a1b4afb8f7b93f41576dfc3e52",
+          "source_organization_id": "bit-law",
+          "canonical_organization_id": "bit-law",
+          "organization_identity_basis": "按原同校学院中文名称及本人/目录官方URL对应；原6节点ID/展示parent与限定保留，不将目录类别升级法律行政关系。",
+          "education": 2,
+          "degree_true_false_null": [
+            1,
+            1,
+            0
+          ],
+          "appointments": 2,
+          "mentors": 0,
+          "professional_guidance": 0,
+          "publications": 2,
+          "teaching": 6
+        },
+        {
+          "person_id": "bit-liuning",
+          "source_candidate_sha256": "0fb314c00e1207d0cbf9a67b818f3f5b4c350f4e3a4b3c93ea03def2c27a7672",
+          "source_evidence_sha256": "a407332eb4d5aef2c8bb72ae5d0de76aa1ca2d8c6c9d9834132fe6be4bbf9a4e",
+          "source_review_sha256": "be1b8a7f6aa0a15b3cd15dfb403a1f527aa446a1b4afb8f7b93f41576dfc3e52",
+          "source_organization_id": "bit-law",
+          "canonical_organization_id": "bit-law",
+          "organization_identity_basis": "按原同校学院中文名称及本人/目录官方URL对应；原6节点ID/展示parent与限定保留，不将目录类别升级法律行政关系。",
+          "education": 3,
+          "degree_true_false_null": [
+            1,
+            1,
+            1
+          ],
+          "appointments": 1,
+          "mentors": 0,
+          "professional_guidance": 0,
+          "publications": 2,
+          "teaching": 1
+        },
+        {
+          "person_id": "bit-wanglang",
+          "source_candidate_sha256": "3611ce5a53bb1c9f6ef1afcfdf90e16f58953e792f952c036000b5d718d5dbfd",
+          "source_evidence_sha256": "a67aeaa2b8163d7c3f4be202888988e9c37146e4130c7f69c123d46780abc17d",
+          "source_review_sha256": "71e5dd6a9ce1fb17ed1229c9a344fa12fdd4cfeb8357141f9d84fc4ee0ccd8eb",
+          "source_organization_id": "bit-foreign-languages",
+          "canonical_organization_id": "bit-foreign-languages",
+          "organization_identity_basis": "按原同校学院中文名称及本人/目录官方URL对应；原6节点ID/展示parent与限定保留，不将目录类别升级法律行政关系。",
+          "education": 5,
+          "degree_true_false_null": [
+            3,
+            2,
+            0
+          ],
+          "appointments": 2,
+          "mentors": 0,
+          "professional_guidance": 0,
+          "publications": 2,
+          "teaching": 1
+        },
+        {
+          "person_id": "bit-xuejin",
+          "source_candidate_sha256": "3611ce5a53bb1c9f6ef1afcfdf90e16f58953e792f952c036000b5d718d5dbfd",
+          "source_evidence_sha256": "a67aeaa2b8163d7c3f4be202888988e9c37146e4130c7f69c123d46780abc17d",
+          "source_review_sha256": "71e5dd6a9ce1fb17ed1229c9a344fa12fdd4cfeb8357141f9d84fc4ee0ccd8eb",
+          "source_organization_id": "bit-foreign-languages",
+          "canonical_organization_id": "bit-foreign-languages",
+          "organization_identity_basis": "按原同校学院中文名称及本人/目录官方URL对应；原6节点ID/展示parent与限定保留，不将目录类别升级法律行政关系。",
+          "education": 4,
+          "degree_true_false_null": [
+            1,
+            1,
+            2
+          ],
+          "appointments": 4,
+          "mentors": 0,
+          "professional_guidance": 0,
+          "publications": 2,
+          "teaching": 0
+        }
+      ],
+      "source_excerpt_fingerprints": [
+        {
+          "sha256": "c397dde00082c1296dadad73de8545c3b899dd97490984784b6f190c50088a13",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "25e578193e075f53ad269a42b23e1a5f68fd43b22c054299105aae24a165ddff",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "f85e8fa17eca899c7950d1d1a9978c642d2be4fee94c0743d91d5ea7c57164d2",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "8c666bc27f2a1b8344e21e0e8ce48a210503dd48ff6fc3b398215f19313d6493",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "b8a4d6c9c93336af828f1f50cee575680ca9d8832653e4f591b746aa301b773e",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "b8a4d6c9c93336af828f1f50cee575680ca9d8832653e4f591b746aa301b773e",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "b8a4d6c9c93336af828f1f50cee575680ca9d8832653e4f591b746aa301b773e",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "b8a4d6c9c93336af828f1f50cee575680ca9d8832653e4f591b746aa301b773e",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "92e58f9a9ea4dc7bb8a275dfe44aa4ce840528fee5b21ef061eec337cc4956ff",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "826e3f1133d4757a4dee36b8d274f3d7aea8ac9ae768111976f1a344820d8141",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "17e296f893612e9a5730326586bb98c57c4b8cc4fcf03a89a1fc8d36bb03061e",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "e45ec93d20f7d2c23ab55a064d24d902b699ddc1a18bb5f006630fe1d2017a0c",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "2aa5957a6c2a7b208a4a30e6a7fd0e3abdff7461596436ad0ddbe2b2e60e865a",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "f85e8fa17eca899c7950d1d1a9978c642d2be4fee94c0743d91d5ea7c57164d2",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "a96d5bf2a393239105fbfc9ead8bfd24a3faf919a89e6a355da360ffa114156e",
+          "source_id": "bit-international-law-directory"
+        },
+        {
+          "sha256": "619763486826a865915ffd7369407c28f5723fdefd34cc402e4a0b53c3f015f3",
+          "source_id": "bit-international-law-directory"
+        },
+        {
+          "sha256": "f3aa7337ab7bc46c04c03f0169c83fed95d473a3e0b6789b677965769cf853ff",
+          "source_id": "bit-international-law-directory"
+        },
+        {
+          "sha256": "2aa5957a6c2a7b208a4a30e6a7fd0e3abdff7461596436ad0ddbe2b2e60e865a",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "f85e8fa17eca899c7950d1d1a9978c642d2be4fee94c0743d91d5ea7c57164d2",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "c397dde00082c1296dadad73de8545c3b899dd97490984784b6f190c50088a13",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "25e578193e075f53ad269a42b23e1a5f68fd43b22c054299105aae24a165ddff",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "f85e8fa17eca899c7950d1d1a9978c642d2be4fee94c0743d91d5ea7c57164d2",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "8c666bc27f2a1b8344e21e0e8ce48a210503dd48ff6fc3b398215f19313d6493",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "92e58f9a9ea4dc7bb8a275dfe44aa4ce840528fee5b21ef061eec337cc4956ff",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "826e3f1133d4757a4dee36b8d274f3d7aea8ac9ae768111976f1a344820d8141",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": "bit-yangkuan-profile"
+        },
+        {
+          "sha256": "17e296f893612e9a5730326586bb98c57c4b8cc4fcf03a89a1fc8d36bb03061e",
+          "source_id": null
+        },
+        {
+          "sha256": "e45ec93d20f7d2c23ab55a064d24d902b699ddc1a18bb5f006630fe1d2017a0c",
+          "source_id": null
+        },
+        {
+          "sha256": "2aa5957a6c2a7b208a4a30e6a7fd0e3abdff7461596436ad0ddbe2b2e60e865a",
+          "source_id": null
+        },
+        {
+          "sha256": "f85e8fa17eca899c7950d1d1a9978c642d2be4fee94c0743d91d5ea7c57164d2",
+          "source_id": null
+        },
+        {
+          "sha256": "c397dde00082c1296dadad73de8545c3b899dd97490984784b6f190c50088a13",
+          "source_id": null
+        },
+        {
+          "sha256": "25e578193e075f53ad269a42b23e1a5f68fd43b22c054299105aae24a165ddff",
+          "source_id": null
+        },
+        {
+          "sha256": "8c666bc27f2a1b8344e21e0e8ce48a210503dd48ff6fc3b398215f19313d6493",
+          "source_id": null
+        },
+        {
+          "sha256": "4d9889cb404cb5881bb55fdbbdf0bdf31dcb4df4c6e0a3260f3c6b030eed38bd",
+          "source_id": null
+        },
+        {
+          "sha256": "b8a4d6c9c93336af828f1f50cee575680ca9d8832653e4f591b746aa301b773e",
+          "source_id": null
+        },
+        {
+          "sha256": "92e58f9a9ea4dc7bb8a275dfe44aa4ce840528fee5b21ef061eec337cc4956ff",
+          "source_id": null
+        },
+        {
+          "sha256": "826e3f1133d4757a4dee36b8d274f3d7aea8ac9ae768111976f1a344820d8141",
+          "source_id": null
+        },
+        {
+          "sha256": "a96d5bf2a393239105fbfc9ead8bfd24a3faf919a89e6a355da360ffa114156e",
+          "source_id": null
+        },
+        {
+          "sha256": "619763486826a865915ffd7369407c28f5723fdefd34cc402e4a0b53c3f015f3",
+          "source_id": null
+        },
+        {
+          "sha256": "f3aa7337ab7bc46c04c03f0169c83fed95d473a3e0b6789b677965769cf853ff",
+          "source_id": null
+        },
+        {
+          "sha256": "f3aa7337ab7bc46c04c03f0169c83fed95d473a3e0b6789b677965769cf853ff",
+          "source_id": "bit-international-law-directory"
+        },
+        {
+          "sha256": "a96d5bf2a393239105fbfc9ead8bfd24a3faf919a89e6a355da360ffa114156e",
+          "source_id": "bit-international-law-directory"
+        },
+        {
+          "sha256": "abeaf2fd3298d25946d3e89109259106a05c1fb5fbe9dfc821401b56bc37a7fc",
+          "source_id": "bit-civil-commercial-law-directory"
+        },
+        {
+          "sha256": "01ea7f841154ac2c873053e6bb77bfb7c3e2d6e2bd9c5fccdd70de88eaef1fbf",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "cfdb964e2f1b538ae2fca4e618466281a0a4955a2c833a227dc11986755412bd",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "39fcd75a0b3e8b947fb5273f774ac3887e8fe986658374f1d29d70977fabda85",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "ee2d931a7f7712b7da67915ecc037f29c91ba83cb7d23d947d5a74ec0a1685d7",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "5309f84bfac1b7bebb6c9064b3b8574fc50ab1cc37514984ac23675794786f5c",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "5309f84bfac1b7bebb6c9064b3b8574fc50ab1cc37514984ac23675794786f5c",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "5309f84bfac1b7bebb6c9064b3b8574fc50ab1cc37514984ac23675794786f5c",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "e624cc3301fe16e5291a8d854d939eee07a90f358dcf02d30ca46e5b772e7a67",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "6d0c44be0787725b4559eb432531cd778950b28d7c6370c9be3b08023ff9ce1e",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "1441abac862d90c12ca7a8d155c918562accca621128954a978b46727561d0b1",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "abeaf2fd3298d25946d3e89109259106a05c1fb5fbe9dfc821401b56bc37a7fc",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "a9c94554fdbd33d4a5bbbc237bb349dd74a34aa01018426f208b90ff6ae58d96",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "e45ec93d20f7d2c23ab55a064d24d902b699ddc1a18bb5f006630fe1d2017a0c",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "2aa5957a6c2a7b208a4a30e6a7fd0e3abdff7461596436ad0ddbe2b2e60e865a",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "abeaf2fd3298d25946d3e89109259106a05c1fb5fbe9dfc821401b56bc37a7fc",
+          "source_id": "bit-civil-commercial-law-directory"
+        },
+        {
+          "sha256": "0c01040a1d6ea5733cae4e4462f0ff7cab6430cdf666ede07f76928a7bf39ddc",
+          "source_id": "bit-civil-commercial-law-directory"
+        },
+        {
+          "sha256": "f3aa7337ab7bc46c04c03f0169c83fed95d473a3e0b6789b677965769cf853ff",
+          "source_id": "bit-civil-commercial-law-directory"
+        },
+        {
+          "sha256": "2aa5957a6c2a7b208a4a30e6a7fd0e3abdff7461596436ad0ddbe2b2e60e865a",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "01ea7f841154ac2c873053e6bb77bfb7c3e2d6e2bd9c5fccdd70de88eaef1fbf",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "cfdb964e2f1b538ae2fca4e618466281a0a4955a2c833a227dc11986755412bd",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "39fcd75a0b3e8b947fb5273f774ac3887e8fe986658374f1d29d70977fabda85",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "ee2d931a7f7712b7da67915ecc037f29c91ba83cb7d23d947d5a74ec0a1685d7",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "e624cc3301fe16e5291a8d854d939eee07a90f358dcf02d30ca46e5b772e7a67",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "6d0c44be0787725b4559eb432531cd778950b28d7c6370c9be3b08023ff9ce1e",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "1441abac862d90c12ca7a8d155c918562accca621128954a978b46727561d0b1",
+          "source_id": "bit-liuning-profile"
+        },
+        {
+          "sha256": "abeaf2fd3298d25946d3e89109259106a05c1fb5fbe9dfc821401b56bc37a7fc",
+          "source_id": null
+        },
+        {
+          "sha256": "a9c94554fdbd33d4a5bbbc237bb349dd74a34aa01018426f208b90ff6ae58d96",
+          "source_id": null
+        },
+        {
+          "sha256": "e45ec93d20f7d2c23ab55a064d24d902b699ddc1a18bb5f006630fe1d2017a0c",
+          "source_id": null
+        },
+        {
+          "sha256": "2aa5957a6c2a7b208a4a30e6a7fd0e3abdff7461596436ad0ddbe2b2e60e865a",
+          "source_id": null
+        },
+        {
+          "sha256": "01ea7f841154ac2c873053e6bb77bfb7c3e2d6e2bd9c5fccdd70de88eaef1fbf",
+          "source_id": null
+        },
+        {
+          "sha256": "cfdb964e2f1b538ae2fca4e618466281a0a4955a2c833a227dc11986755412bd",
+          "source_id": null
+        },
+        {
+          "sha256": "39fcd75a0b3e8b947fb5273f774ac3887e8fe986658374f1d29d70977fabda85",
+          "source_id": null
+        },
+        {
+          "sha256": "ee2d931a7f7712b7da67915ecc037f29c91ba83cb7d23d947d5a74ec0a1685d7",
+          "source_id": null
+        },
+        {
+          "sha256": "1441abac862d90c12ca7a8d155c918562accca621128954a978b46727561d0b1",
+          "source_id": null
+        },
+        {
+          "sha256": "5309f84bfac1b7bebb6c9064b3b8574fc50ab1cc37514984ac23675794786f5c",
+          "source_id": null
+        },
+        {
+          "sha256": "e624cc3301fe16e5291a8d854d939eee07a90f358dcf02d30ca46e5b772e7a67",
+          "source_id": null
+        },
+        {
+          "sha256": "6d0c44be0787725b4559eb432531cd778950b28d7c6370c9be3b08023ff9ce1e",
+          "source_id": null
+        },
+        {
+          "sha256": "abeaf2fd3298d25946d3e89109259106a05c1fb5fbe9dfc821401b56bc37a7fc",
+          "source_id": null
+        },
+        {
+          "sha256": "0c01040a1d6ea5733cae4e4462f0ff7cab6430cdf666ede07f76928a7bf39ddc",
+          "source_id": null
+        },
+        {
+          "sha256": "f3aa7337ab7bc46c04c03f0169c83fed95d473a3e0b6789b677965769cf853ff",
+          "source_id": null
+        },
+        {
+          "sha256": "7e7fdd39a961dd4bfbac163cedb9ad0081186c6cca107fc8d8848b6c1e3eb7ad",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "8dae0b1f04c1b2960b831a6326ee7581b1841825e3250388914791f3f369f4ec",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "98432dc2b06717e27e61ece4ac57a909aa718ab83eb129df78d015b0d5b7b637",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "6aa095caf358b6f8c9d86c95e518918d3316684959ad44d15b93c71f2f11e140",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "46d1f81627d5e64b414a1ee77f19c407c4ad274a87fd48c1cd3ef5698425be2f",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "83337b28d13f058e6e7a468627f7ded41afa88a9790daa042ed7dec55afa6b12",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "f3ac3b40179e7d4d95711a86578e55562671c50606dadbe8be4b69d43cfad405",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "02b793be52292c64e9ceb8b3fb2929fc622631b0c28d43f4b1f47fe3e78952fe",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "5540c34755bd6a919b9b0b706372cd4fcbeabcc33d0952577a9abd57afa5686b",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "f4537903a2f02a7d624633984c2b704ebf8a413a32c04d9b14bdfe21e2c4d0ba",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "5775c71f2b2261eb19319376576618a670e0667d915fda1bd0a2bc53248135fa",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "39aff9b869ccc6c718317120c2a9d6d3baa5b33cec4f47ae9cd1554b8995fb36",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "5775c71f2b2261eb19319376576618a670e0667d915fda1bd0a2bc53248135fa",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "d242a642fe6a841ad7dfe8ca853f55a0f76e07913d5f416e291867f80501703c",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "413931fe3b3c00378412c62750e0f59f3988c23bdbce913b2d397a1523f17d47",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "e9efb97603eda9f6f7a04e0beab7bd0aa639b0ca1d137a1f999ed1cb9313243e",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "f3ac3b40179e7d4d95711a86578e55562671c50606dadbe8be4b69d43cfad405",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "a15c733013fc74c64155360bff8bd43954bc1310936d5649dd7f307b5228dc1f",
+          "source_id": "bit-college-english-directory"
+        },
+        {
+          "sha256": "0610b925acfd004b64c08f4a1e83fac144e43335350d9cf1cd0117c87075c007",
+          "source_id": "bit-college-english-directory"
+        },
+        {
+          "sha256": "5540c34755bd6a919b9b0b706372cd4fcbeabcc33d0952577a9abd57afa5686b",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "e9efb97603eda9f6f7a04e0beab7bd0aa639b0ca1d137a1f999ed1cb9313243e",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "f3ac3b40179e7d4d95711a86578e55562671c50606dadbe8be4b69d43cfad405",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "f3ac3b40179e7d4d95711a86578e55562671c50606dadbe8be4b69d43cfad405",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "a15c733013fc74c64155360bff8bd43954bc1310936d5649dd7f307b5228dc1f",
+          "source_id": "bit-college-english-directory"
+        },
+        {
+          "sha256": "0610b925acfd004b64c08f4a1e83fac144e43335350d9cf1cd0117c87075c007",
+          "source_id": "bit-college-english-directory"
+        },
+        {
+          "sha256": "cef1aa9e4280654365519fd7016a34f7893dfe27ef2fbdf0039906e98d4e5513",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "f3ac3b40179e7d4d95711a86578e55562671c50606dadbe8be4b69d43cfad405",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "7e7fdd39a961dd4bfbac163cedb9ad0081186c6cca107fc8d8848b6c1e3eb7ad",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "8dae0b1f04c1b2960b831a6326ee7581b1841825e3250388914791f3f369f4ec",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "98432dc2b06717e27e61ece4ac57a909aa718ab83eb129df78d015b0d5b7b637",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "6aa095caf358b6f8c9d86c95e518918d3316684959ad44d15b93c71f2f11e140",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "46d1f81627d5e64b414a1ee77f19c407c4ad274a87fd48c1cd3ef5698425be2f",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "83337b28d13f058e6e7a468627f7ded41afa88a9790daa042ed7dec55afa6b12",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "f3ac3b40179e7d4d95711a86578e55562671c50606dadbe8be4b69d43cfad405",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "02b793be52292c64e9ceb8b3fb2929fc622631b0c28d43f4b1f47fe3e78952fe",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "5540c34755bd6a919b9b0b706372cd4fcbeabcc33d0952577a9abd57afa5686b",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "5775c71f2b2261eb19319376576618a670e0667d915fda1bd0a2bc53248135fa",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "39aff9b869ccc6c718317120c2a9d6d3baa5b33cec4f47ae9cd1554b8995fb36",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "5775c71f2b2261eb19319376576618a670e0667d915fda1bd0a2bc53248135fa",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "d242a642fe6a841ad7dfe8ca853f55a0f76e07913d5f416e291867f80501703c",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "413931fe3b3c00378412c62750e0f59f3988c23bdbce913b2d397a1523f17d47",
+          "source_id": "bit-wanglang-legacy-profile"
+        },
+        {
+          "sha256": "e9efb97603eda9f6f7a04e0beab7bd0aa639b0ca1d137a1f999ed1cb9313243e",
+          "source_id": null
+        },
+        {
+          "sha256": "cef1aa9e4280654365519fd7016a34f7893dfe27ef2fbdf0039906e98d4e5513",
+          "source_id": null
+        },
+        {
+          "sha256": "f3ac3b40179e7d4d95711a86578e55562671c50606dadbe8be4b69d43cfad405",
+          "source_id": null
+        },
+        {
+          "sha256": "6aa095caf358b6f8c9d86c95e518918d3316684959ad44d15b93c71f2f11e140",
+          "source_id": null
+        },
+        {
+          "sha256": "46d1f81627d5e64b414a1ee77f19c407c4ad274a87fd48c1cd3ef5698425be2f",
+          "source_id": null
+        },
+        {
+          "sha256": "83337b28d13f058e6e7a468627f7ded41afa88a9790daa042ed7dec55afa6b12",
+          "source_id": null
+        },
+        {
+          "sha256": "f4537903a2f02a7d624633984c2b704ebf8a413a32c04d9b14bdfe21e2c4d0ba",
+          "source_id": null
+        },
+        {
+          "sha256": "5775c71f2b2261eb19319376576618a670e0667d915fda1bd0a2bc53248135fa",
+          "source_id": null
+        },
+        {
+          "sha256": "39aff9b869ccc6c718317120c2a9d6d3baa5b33cec4f47ae9cd1554b8995fb36",
+          "source_id": null
+        },
+        {
+          "sha256": "d242a642fe6a841ad7dfe8ca853f55a0f76e07913d5f416e291867f80501703c",
+          "source_id": null
+        },
+        {
+          "sha256": "5540c34755bd6a919b9b0b706372cd4fcbeabcc33d0952577a9abd57afa5686b",
+          "source_id": null
+        },
+        {
+          "sha256": "02b793be52292c64e9ceb8b3fb2929fc622631b0c28d43f4b1f47fe3e78952fe",
+          "source_id": null
+        },
+        {
+          "sha256": "884a26c5692ae54dca0e72b703ff3638cdfe75d3fb9c25241322c5af5cd4b03c",
+          "source_id": null
+        },
+        {
+          "sha256": "7e7fdd39a961dd4bfbac163cedb9ad0081186c6cca107fc8d8848b6c1e3eb7ad",
+          "source_id": null
+        },
+        {
+          "sha256": "8dae0b1f04c1b2960b831a6326ee7581b1841825e3250388914791f3f369f4ec",
+          "source_id": null
+        },
+        {
+          "sha256": "98432dc2b06717e27e61ece4ac57a909aa718ab83eb129df78d015b0d5b7b637",
+          "source_id": null
+        },
+        {
+          "sha256": "413931fe3b3c00378412c62750e0f59f3988c23bdbce913b2d397a1523f17d47",
+          "source_id": null
+        },
+        {
+          "sha256": "0610b925acfd004b64c08f4a1e83fac144e43335350d9cf1cd0117c87075c007",
+          "source_id": null
+        },
+        {
+          "sha256": "a15c733013fc74c64155360bff8bd43954bc1310936d5649dd7f307b5228dc1f",
+          "source_id": null
+        },
+        {
+          "sha256": "f3ac3b40179e7d4d95711a86578e55562671c50606dadbe8be4b69d43cfad405",
+          "source_id": "bit-wanglang-profile"
+        },
+        {
+          "sha256": "0610b925acfd004b64c08f4a1e83fac144e43335350d9cf1cd0117c87075c007",
+          "source_id": "bit-college-english-directory"
+        },
+        {
+          "sha256": "366fb427059754ac914f70757b76ee55e5ed3dabbad0c75d0a132e8820fa9c00",
+          "source_id": "bit-english-directory"
+        },
+        {
+          "sha256": "3645ca6983e4b471a830363eed680b3ad124abc120ed3f0e9d755568d39218c6",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "e20d18548ed139270b9c56922e57dc257379a8917edcc33ad4d5958403cff05a",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "6d8b7e6fdea12c21e2445644a60e419bba3ed016c43af45c6189f2302210e990",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "b3ba01c9b5c5b9273bbef478e2c39eca3b7d434d03331b65e2b7e7e9d88dc45d",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "ab3c3f6b1c785e8e3e6866e9deb75e2e5d2bce06d59f6f17f4ca949ab3c61ada",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "466040c68acae93e267fac3e73b7d5c4bf7b573780e6cebf085935d24fc77a79",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "34b3053d8caf05a4975185b9be73d30b0d960fe307a49d801a01408d843b1c25",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "e231bc99797bfe42541c3855ee84c4f324dc5642f2b47c95c7b7455c69b03bb3",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "f01df30f8b868264e7addd34ac6217069c06bbac478d23cbb4a6d5430a4c585b",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "042cefa28c39fa5a225247cf1c25aa0f4789e0d7dde59022bcd7baf2ceba882b",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "7df3c7c107e95f74c94d9b7ac227910892e513d602fea90d57b6b24f2e353b4f",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "042cefa28c39fa5a225247cf1c25aa0f4789e0d7dde59022bcd7baf2ceba882b",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "4143f7cbfcb771e8b04382900ccd726177c434b5170c4b43047fc59d0ff951f9",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "5663a51da5e00ec53cf5e5ac23982a094e5c6a78c0c72baf9b63aacb29fbb6d6",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "b5a68771c67e2b28e0fa19f6fb9396e40aff5c07417093808960b7e75f6b7043",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "9ffc2c854ab524613474e358ce0b4d845cbe840ed7333ac33bd20b89992274c2",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "e231bc99797bfe42541c3855ee84c4f324dc5642f2b47c95c7b7455c69b03bb3",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "547d5887790c9548b1aa8ff34397646dd3f3a2a199b5f12bbb7827d8e64f6f93",
+          "source_id": "bit-english-directory"
+        },
+        {
+          "sha256": "366fb427059754ac914f70757b76ee55e5ed3dabbad0c75d0a132e8820fa9c00",
+          "source_id": "bit-english-directory"
+        },
+        {
+          "sha256": "5663a51da5e00ec53cf5e5ac23982a094e5c6a78c0c72baf9b63aacb29fbb6d6",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "b5a68771c67e2b28e0fa19f6fb9396e40aff5c07417093808960b7e75f6b7043",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "e231bc99797bfe42541c3855ee84c4f324dc5642f2b47c95c7b7455c69b03bb3",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "547d5887790c9548b1aa8ff34397646dd3f3a2a199b5f12bbb7827d8e64f6f93",
+          "source_id": "bit-english-directory"
+        },
+        {
+          "sha256": "366fb427059754ac914f70757b76ee55e5ed3dabbad0c75d0a132e8820fa9c00",
+          "source_id": "bit-english-directory"
+        },
+        {
+          "sha256": "9d11960dcb34a7c55ca3355b69c972d78461b73039eda16250a957368a295379",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "9ffc2c854ab524613474e358ce0b4d845cbe840ed7333ac33bd20b89992274c2",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "3645ca6983e4b471a830363eed680b3ad124abc120ed3f0e9d755568d39218c6",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "e20d18548ed139270b9c56922e57dc257379a8917edcc33ad4d5958403cff05a",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "6d8b7e6fdea12c21e2445644a60e419bba3ed016c43af45c6189f2302210e990",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "b3ba01c9b5c5b9273bbef478e2c39eca3b7d434d03331b65e2b7e7e9d88dc45d",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "ab3c3f6b1c785e8e3e6866e9deb75e2e5d2bce06d59f6f17f4ca949ab3c61ada",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "466040c68acae93e267fac3e73b7d5c4bf7b573780e6cebf085935d24fc77a79",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "34b3053d8caf05a4975185b9be73d30b0d960fe307a49d801a01408d843b1c25",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "e231bc99797bfe42541c3855ee84c4f324dc5642f2b47c95c7b7455c69b03bb3",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "042cefa28c39fa5a225247cf1c25aa0f4789e0d7dde59022bcd7baf2ceba882b",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "7df3c7c107e95f74c94d9b7ac227910892e513d602fea90d57b6b24f2e353b4f",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "042cefa28c39fa5a225247cf1c25aa0f4789e0d7dde59022bcd7baf2ceba882b",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "4143f7cbfcb771e8b04382900ccd726177c434b5170c4b43047fc59d0ff951f9",
+          "source_id": "bit-xuejin-profile"
+        },
+        {
+          "sha256": "5663a51da5e00ec53cf5e5ac23982a094e5c6a78c0c72baf9b63aacb29fbb6d6",
+          "source_id": null
+        },
+        {
+          "sha256": "b5a68771c67e2b28e0fa19f6fb9396e40aff5c07417093808960b7e75f6b7043",
+          "source_id": null
+        },
+        {
+          "sha256": "9ffc2c854ab524613474e358ce0b4d845cbe840ed7333ac33bd20b89992274c2",
+          "source_id": null
+        },
+        {
+          "sha256": "9d11960dcb34a7c55ca3355b69c972d78461b73039eda16250a957368a295379",
+          "source_id": null
+        },
+        {
+          "sha256": "f01df30f8b868264e7addd34ac6217069c06bbac478d23cbb4a6d5430a4c585b",
+          "source_id": null
+        },
+        {
+          "sha256": "3645ca6983e4b471a830363eed680b3ad124abc120ed3f0e9d755568d39218c6",
+          "source_id": null
+        },
+        {
+          "sha256": "e20d18548ed139270b9c56922e57dc257379a8917edcc33ad4d5958403cff05a",
+          "source_id": null
+        },
+        {
+          "sha256": "6d8b7e6fdea12c21e2445644a60e419bba3ed016c43af45c6189f2302210e990",
+          "source_id": null
+        },
+        {
+          "sha256": "ab3c3f6b1c785e8e3e6866e9deb75e2e5d2bce06d59f6f17f4ca949ab3c61ada",
+          "source_id": null
+        },
+        {
+          "sha256": "466040c68acae93e267fac3e73b7d5c4bf7b573780e6cebf085935d24fc77a79",
+          "source_id": null
+        },
+        {
+          "sha256": "34b3053d8caf05a4975185b9be73d30b0d960fe307a49d801a01408d843b1c25",
+          "source_id": null
+        },
+        {
+          "sha256": "b3ba01c9b5c5b9273bbef478e2c39eca3b7d434d03331b65e2b7e7e9d88dc45d",
+          "source_id": null
+        },
+        {
+          "sha256": "e231bc99797bfe42541c3855ee84c4f324dc5642f2b47c95c7b7455c69b03bb3",
+          "source_id": null
+        },
+        {
+          "sha256": "042cefa28c39fa5a225247cf1c25aa0f4789e0d7dde59022bcd7baf2ceba882b",
+          "source_id": null
+        },
+        {
+          "sha256": "7df3c7c107e95f74c94d9b7ac227910892e513d602fea90d57b6b24f2e353b4f",
+          "source_id": null
+        },
+        {
+          "sha256": "4143f7cbfcb771e8b04382900ccd726177c434b5170c4b43047fc59d0ff951f9",
+          "source_id": null
+        },
+        {
+          "sha256": "366fb427059754ac914f70757b76ee55e5ed3dabbad0c75d0a132e8820fa9c00",
+          "source_id": null
+        },
+        {
+          "sha256": "547d5887790c9548b1aa8ff34397646dd3f3a2a199b5f12bbb7827d8e64f6f93",
+          "source_id": null
+        }
+      ],
+      "mandatory_overlays": [],
+      "mapping_notes": [
+        "原228 overlay仅另一学校，不套本组；259原source+独审+v21partB链核SHA，原包只读。",
+        "王教授法语只教学动词，刘民法相关课程只概括范围；资格不计本人师承/额外岗位。",
+        "所有课程原层级/授课语义与作品月份/卷期页/贡献在note实际可见。"
+      ],
+      "null_degree_matrix": [
+        {
+          "person_id": "bit-liuning",
+          "event_id": "bit-liuning-education-1",
+          "source_candidate_sha256": "0fb314c00e1207d0cbf9a67b818f3f5b4c350f4e3a4b3c93ea03def2c27a7672",
+          "source_id": "bit-liuning-profile",
+          "source_url": "https://law.bit.edu.cn/szll/jsml/msfyjs/520be9f3aa0d456ea325330f1f19cfc6.htm",
+          "source_excerpt_sha256": "01ea7f841154ac2c873053e6bb77bfb7c3e2d6e2bd9c5fccdd70de88eaef1fbf",
+          "degree_label_as_source": "法学学士",
+          "education_stage": "学士",
+          "start": "2014-09",
+          "end": "2018-06",
+          "context": "留存教育履历及具体学位/阶段称谓；研究者locator不当官网专门学位栏目；独立identity为职称/招生导师资格，未另确认本人degree身份。",
+          "classification_pending": false,
+          "canonical_degree_awarded": true
+        },
+        {
+          "person_id": "bit-liuning",
+          "event_id": "bit-liuning-education-2",
+          "source_candidate_sha256": "0fb314c00e1207d0cbf9a67b818f3f5b4c350f4e3a4b3c93ea03def2c27a7672",
+          "source_id": "bit-liuning-profile",
+          "source_url": "https://law.bit.edu.cn/szll/jsml/msfyjs/520be9f3aa0d456ea325330f1f19cfc6.htm",
+          "source_excerpt_sha256": "cfdb964e2f1b538ae2fca4e618466281a0a4955a2c833a227dc11986755412bd",
+          "degree_label_as_source": "民商法学博士",
+          "education_stage": "博士（硕博连读）",
+          "start": "2018-09",
+          "end": "2023-06",
+          "context": "留存教育履历及具体学位/阶段称谓；研究者locator不当官网专门学位栏目；独立identity为职称/招生导师资格，未另确认本人degree身份。",
+          "classification_pending": false,
+          "canonical_degree_awarded": null
+        },
+        {
+          "person_id": "bit-xuejin",
+          "event_id": "bit-xuejin-education-1",
+          "source_candidate_sha256": "3611ce5a53bb1c9f6ef1afcfdf90e16f58953e792f952c036000b5d718d5dbfd",
+          "source_id": "bit-xuejin-profile",
+          "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+          "source_excerpt_sha256": "3645ca6983e4b471a830363eed680b3ad124abc120ed3f0e9d755568d39218c6",
+          "degree_label_as_source": "学士",
+          "education_stage": "学士",
+          "start": "1995",
+          "end": "1999",
+          "context": "留存教育履历及具体学位/阶段称谓；研究者locator不当官网专门学位栏目；独立identity为职称/招生导师资格，未另确认本人degree身份。",
+          "classification_pending": false,
+          "canonical_degree_awarded": true
+        },
+        {
+          "person_id": "bit-xuejin",
+          "event_id": "bit-xuejin-education-2",
+          "source_candidate_sha256": "3611ce5a53bb1c9f6ef1afcfdf90e16f58953e792f952c036000b5d718d5dbfd",
+          "source_id": "bit-xuejin-profile",
+          "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+          "source_excerpt_sha256": "e20d18548ed139270b9c56922e57dc257379a8917edcc33ad4d5958403cff05a",
+          "degree_label_as_source": "硕士",
+          "education_stage": "硕士",
+          "start": "2002",
+          "end": "2005",
+          "context": "留存教育履历及具体学位/阶段称谓；研究者locator不当官网专门学位栏目；独立identity为职称/招生导师资格，未另确认本人degree身份。",
+          "classification_pending": false,
+          "canonical_degree_awarded": null
+        },
+        {
+          "person_id": "bit-xuejin",
+          "event_id": "bit-xuejin-education-3",
+          "source_candidate_sha256": "3611ce5a53bb1c9f6ef1afcfdf90e16f58953e792f952c036000b5d718d5dbfd",
+          "source_id": "bit-xuejin-profile",
+          "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+          "source_excerpt_sha256": "6d8b7e6fdea12c21e2445644a60e419bba3ed016c43af45c6189f2302210e990",
+          "degree_label_as_source": "博士",
+          "education_stage": "博士",
+          "start": "2005",
+          "end": "2008",
+          "context": "留存教育履历及具体学位/阶段称谓；研究者locator不当官网专门学位栏目；独立identity为职称/招生导师资格，未另确认本人degree身份。",
+          "classification_pending": false,
+          "canonical_degree_awarded": null
+        }
+      ],
+      "visible_evidence_scope_update": {
+        "prechange_payload_sha256": "ff916c872dfa30d4799f69651e1b55326b061f81f57aaf34fee0f9ea0d8dbfcd",
+        "delta": [
+          {
+            "json_pointer": "/people/2/publications/0",
+            "old_value": {
+              "work_id": "bit-wanglang-work-1",
+              "type": "journal_article",
+              "title": "A Comparative Feminist Reading of Margaret Atwood’s Surfacing and Han Kang’s The Vegetarian",
+              "year": 2025,
+              "venue_as_source": "Primerjalna književnost",
+              "volume_as_source": "48",
+              "issue_as_source": "1",
+              "pages_as_source": "143-161",
+              "publisher_as_source": null,
+              "authors_as_source": null,
+              "editors_as_source": null,
+              "person_name_as_listed": null,
+              "person_contribution_role_as_source": null,
+              "author_list_status": "complete_author_string_not_disclosed_owner_context_only",
+              "author_attribution_basis": "本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。",
+              "author_attribution_evidence": {
+                "source_id": "bit-wanglang-profile",
+                "source_url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+                "source_excerpt_sha256": "5775c71f2b2261eb19319376576618a670e0667d915fda1bd0a2bc53248135fa",
+                "source_locator": "本人同行评议论文清单语境",
+                "observed_at_utc": "2026-10-25T04:31:57.903Z",
+                "excerpt_id": "wang-works-heading"
+              },
+              "publisher_metadata_verified": false,
+              "metadata_status": "official_bibliography_only_not_externally_verified",
+              "full_text_read": false,
+              "full_text_downloaded": false,
+              "source_reported_work_url": null,
+              "work_url_opened": false,
+              "source_id": "bit-wanglang-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "source_excerpt_sha256": "39aff9b869ccc6c718317120c2a9d6d3baa5b33cec4f47ae9cd1554b8995fb36",
+              "source_locator": "同行评议论文第2项，未列作者串",
+              "observed_at_utc": "2026-10-25T04:31:57.903Z",
+              "excerpt_id": "wang-work-1",
+              "source_type": "journal_article_as_official_list",
+              "type_label": "期刊论文",
+              "authors": [],
+              "venue": "Primerjalna književnost",
+              "url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "identity_evidence": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "link_status": "official_publication_list_only",
+              "link_status_label": "仅官网书目，未核出版元数据或全文。",
+              "note": " 本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。；出版日期：2025；贡献角色：未明确。卷：48。期：1。页码：143-161。"
+            },
+            "new_value": {
+              "work_id": "bit-wanglang-work-1",
+              "type": "journal_article",
+              "title": "A Comparative Feminist Reading of Margaret Atwood’s Surfacing and Han Kang’s The Vegetarian",
+              "year": 2025,
+              "venue_as_source": "Primerjalna književnost",
+              "volume_as_source": "48",
+              "issue_as_source": "1",
+              "pages_as_source": "143-161",
+              "publisher_as_source": null,
+              "authors_as_source": null,
+              "editors_as_source": null,
+              "person_name_as_listed": null,
+              "person_contribution_role_as_source": null,
+              "author_list_status": "complete_author_string_not_disclosed_owner_context_only",
+              "author_attribution_basis": "本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。",
+              "author_attribution_evidence": {
+                "source_id": "bit-wanglang-profile",
+                "source_url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+                "source_excerpt_sha256": "5775c71f2b2261eb19319376576618a670e0667d915fda1bd0a2bc53248135fa",
+                "source_locator": "本人同行评议论文清单语境",
+                "observed_at_utc": "2026-10-25T04:31:57.903Z",
+                "excerpt_id": "wang-works-heading"
+              },
+              "publisher_metadata_verified": false,
+              "metadata_status": "official_bibliography_only_not_externally_verified",
+              "full_text_read": false,
+              "full_text_downloaded": false,
+              "source_reported_work_url": null,
+              "work_url_opened": false,
+              "source_id": "bit-wanglang-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "source_excerpt_sha256": "39aff9b869ccc6c718317120c2a9d6d3baa5b33cec4f47ae9cd1554b8995fb36",
+              "source_locator": "同行评议论文第2项，未列作者串",
+              "observed_at_utc": "2026-10-25T04:31:57.903Z",
+              "excerpt_id": "wang-work-1",
+              "source_type": "journal_article_as_official_list",
+              "type_label": "期刊论文",
+              "authors": [],
+              "venue": "Primerjalna književnost",
+              "url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "identity_evidence": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "link_status": "official_publication_list_only",
+              "link_status_label": "仅官网书目，未核出版元数据或全文。",
+              "note": " 本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。；出版日期：2025；贡献角色：未明确。卷：48。期：1。页码：143-161。 官网原条目标注A&HCI；仅保留来源评价，未独立核收录状态。"
+            }
+          },
+          {
+            "json_pointer": "/people/2/publications/1",
+            "old_value": {
+              "work_id": "bit-wanglang-work-2",
+              "type": "journal_article",
+              "title": "Disillusionments of the ‘New Woman’: Chinese Female Bildungsroman in the 1920s and 1930s",
+              "year": 2024,
+              "venue_as_source": "Papers on Language and Literature",
+              "volume_as_source": "58",
+              "issue_as_source": "4",
+              "pages_as_source": "387-432",
+              "publisher_as_source": null,
+              "authors_as_source": null,
+              "editors_as_source": null,
+              "person_name_as_listed": null,
+              "person_contribution_role_as_source": null,
+              "author_list_status": "complete_author_string_not_disclosed_owner_context_only",
+              "author_attribution_basis": "本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。",
+              "author_attribution_evidence": {
+                "source_id": "bit-wanglang-profile",
+                "source_url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+                "source_excerpt_sha256": "5775c71f2b2261eb19319376576618a670e0667d915fda1bd0a2bc53248135fa",
+                "source_locator": "本人同行评议论文清单语境",
+                "observed_at_utc": "2026-10-25T04:31:57.903Z",
+                "excerpt_id": "wang-works-heading"
+              },
+              "publisher_metadata_verified": false,
+              "metadata_status": "official_bibliography_only_not_externally_verified",
+              "full_text_read": false,
+              "full_text_downloaded": false,
+              "source_reported_work_url": null,
+              "work_url_opened": false,
+              "source_id": "bit-wanglang-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "source_excerpt_sha256": "d242a642fe6a841ad7dfe8ca853f55a0f76e07913d5f416e291867f80501703c",
+              "source_locator": "同行评议论文第3项，未列作者串",
+              "observed_at_utc": "2026-10-25T04:31:57.903Z",
+              "excerpt_id": "wang-work-2",
+              "source_type": "journal_article_as_official_list",
+              "type_label": "期刊论文",
+              "authors": [],
+              "venue": "Papers on Language and Literature",
+              "url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "identity_evidence": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "link_status": "official_publication_list_only",
+              "link_status_label": "仅官网书目，未核出版元数据或全文。",
+              "note": " 本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。；出版日期：2024；贡献角色：未明确。卷：58。期：4。页码：387-432。"
+            },
+            "new_value": {
+              "work_id": "bit-wanglang-work-2",
+              "type": "journal_article",
+              "title": "Disillusionments of the ‘New Woman’: Chinese Female Bildungsroman in the 1920s and 1930s",
+              "year": 2024,
+              "venue_as_source": "Papers on Language and Literature",
+              "volume_as_source": "58",
+              "issue_as_source": "4",
+              "pages_as_source": "387-432",
+              "publisher_as_source": null,
+              "authors_as_source": null,
+              "editors_as_source": null,
+              "person_name_as_listed": null,
+              "person_contribution_role_as_source": null,
+              "author_list_status": "complete_author_string_not_disclosed_owner_context_only",
+              "author_attribution_basis": "本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。",
+              "author_attribution_evidence": {
+                "source_id": "bit-wanglang-profile",
+                "source_url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+                "source_excerpt_sha256": "5775c71f2b2261eb19319376576618a670e0667d915fda1bd0a2bc53248135fa",
+                "source_locator": "本人同行评议论文清单语境",
+                "observed_at_utc": "2026-10-25T04:31:57.903Z",
+                "excerpt_id": "wang-works-heading"
+              },
+              "publisher_metadata_verified": false,
+              "metadata_status": "official_bibliography_only_not_externally_verified",
+              "full_text_read": false,
+              "full_text_downloaded": false,
+              "source_reported_work_url": null,
+              "work_url_opened": false,
+              "source_id": "bit-wanglang-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "source_excerpt_sha256": "d242a642fe6a841ad7dfe8ca853f55a0f76e07913d5f416e291867f80501703c",
+              "source_locator": "同行评议论文第3项，未列作者串",
+              "observed_at_utc": "2026-10-25T04:31:57.903Z",
+              "excerpt_id": "wang-work-2",
+              "source_type": "journal_article_as_official_list",
+              "type_label": "期刊论文",
+              "authors": [],
+              "venue": "Papers on Language and Literature",
+              "url": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "identity_evidence": "https://sfl.bit.edu.cn/szdw/dxyyjys/4c4816ee36f14d4ebf71c95ede77043c.htm",
+              "link_status": "official_publication_list_only",
+              "link_status_label": "仅官网书目，未核出版元数据或全文。",
+              "note": " 本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。；出版日期：2024；贡献角色：未明确。卷：58。期：4。页码：387-432。 官网原条目标注A&HCI；仅保留来源评价，未独立核收录状态。"
+            }
+          },
+          {
+            "json_pointer": "/people/1/education/0",
+            "old_value": {
+              "event_id": "bit-liuning-education-1",
+              "event_kind": "education_label_award_unknown",
+              "institution": "中国人民大学",
+              "institution_as_source": "中国人民大学",
+              "department": "法学院",
+              "education_stage": "学士",
+              "degree_label_as_source": "法学学士",
+              "field": "法学",
+              "start": "2014-09",
+              "end": "2018-06",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "bit-liuning-profile",
+              "source_url": "https://law.bit.edu.cn/szll/jsml/msfyjs/520be9f3aa0d456ea325330f1f19cfc6.htm",
+              "source_excerpt_sha256": "01ea7f841154ac2c873053e6bb77bfb7c3e2d6e2bd9c5fccdd70de88eaef1fbf",
+              "source_locator": "学士标签",
+              "observed_at": "2026-10-25T03:15:54.708Z",
+              "note": "教育经历仅列学位标签，未明确写获授，degree_awarded=null；学习止期不等于授位日期。",
+              "education_event_id": "bit-liuning-education-1",
+              "degree": "法学学士",
+              "source_event_kind": "degree_label_in_education_section",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false
+            },
+            "new_value": {
+              "event_id": "bit-liuning-education-1",
+              "event_kind": "education_label_award_unknown",
+              "institution": "中国人民大学",
+              "institution_as_source": "中国人民大学",
+              "department": "法学院",
+              "education_stage": "学士",
+              "degree_label_as_source": "法学学士",
+              "field": "法学",
+              "start": "2014-09",
+              "end": "2018-06",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "bit-liuning-profile",
+              "source_url": "https://law.bit.edu.cn/szll/jsml/msfyjs/520be9f3aa0d456ea325330f1f19cfc6.htm",
+              "source_excerpt_sha256": "01ea7f841154ac2c873053e6bb77bfb7c3e2d6e2bd9c5fccdd70de88eaef1fbf",
+              "source_locator": "学士标签",
+              "observed_at": "2026-10-25T03:15:54.708Z",
+              "note": "官网教育履历列法学学士及学习区间；留存独立个人身份说明仅职称/招生资格，未另确认本人学位取得或证书。学习止期不填授位日期。",
+              "education_event_id": "bit-liuning-education-1",
+              "degree": "法学学士",
+              "source_event_kind": "degree_label_in_education_section",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "教育经历仅列学位标签，未明确写获授，degree_awarded=null；学习止期不等于授位日期。"
+            }
+          },
+          {
+            "json_pointer": "/people/1/education/1",
+            "old_value": {
+              "event_id": "bit-liuning-education-2",
+              "event_kind": "education_label_award_unknown",
+              "institution": "北京大学",
+              "institution_as_source": "北京大学",
+              "department": "法学院",
+              "education_stage": "博士（硕博连读）",
+              "degree_label_as_source": "民商法学博士",
+              "field": "民商法学",
+              "start": "2018-09",
+              "end": "2023-06",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "bit-liuning-profile",
+              "source_url": "https://law.bit.edu.cn/szll/jsml/msfyjs/520be9f3aa0d456ea325330f1f19cfc6.htm",
+              "source_excerpt_sha256": "cfdb964e2f1b538ae2fca4e618466281a0a4955a2c833a227dc11986755412bd",
+              "source_locator": "博士标签",
+              "observed_at": "2026-10-25T03:15:54.708Z",
+              "note": "教育经历仅列学位标签，未明确写获授，degree_awarded=null；学习止期不等于授位日期。 硕博连读不拆出独立硕士学位或推断硕士授位。",
+              "education_event_id": "bit-liuning-education-2",
+              "degree": "民商法学博士",
+              "source_event_kind": "degree_label_in_education_section",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false
+            },
+            "new_value": {
+              "event_id": "bit-liuning-education-2",
+              "event_kind": "education_label_award_unknown",
+              "institution": "北京大学",
+              "institution_as_source": "北京大学",
+              "department": "法学院",
+              "education_stage": "博士（硕博连读）",
+              "degree_label_as_source": "民商法学博士",
+              "field": "民商法学",
+              "start": "2018-09",
+              "end": "2023-06",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "bit-liuning-profile",
+              "source_url": "https://law.bit.edu.cn/szll/jsml/msfyjs/520be9f3aa0d456ea325330f1f19cfc6.htm",
+              "source_excerpt_sha256": "cfdb964e2f1b538ae2fca4e618466281a0a4955a2c833a227dc11986755412bd",
+              "source_locator": "博士标签",
+              "observed_at": "2026-10-25T03:15:54.708Z",
+              "note": "官网教育履历列民商法学博士及学习区间；留存独立个人身份说明仅职称/招生资格，未另确认本人学位取得或证书。学习止期不填授位日期。原硕博连读为一个博士学习事件，不拆出独立硕士学位。",
+              "education_event_id": "bit-liuning-education-2",
+              "degree": "民商法学博士",
+              "source_event_kind": "degree_label_in_education_section",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "教育经历仅列学位标签，未明确写获授，degree_awarded=null；学习止期不等于授位日期。 硕博连读不拆出独立硕士学位或推断硕士授位。"
+            }
+          },
+          {
+            "json_pointer": "/people/3/education/0",
+            "old_value": {
+              "event_id": "bit-xuejin-education-1",
+              "event_kind": "education_label_award_unknown",
+              "education_stage": "学士",
+              "institution": "福建师范大学",
+              "institution_as_source": "福建师范大学",
+              "department": "外国语学院",
+              "field": "英语教育",
+              "degree_label_as_source": "学士",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "date_as_source": "1995 年 - 1999 年",
+              "start": "1995",
+              "end": "1999",
+              "date_precision": "year",
+              "end_date_kind": "education_interval_end_not_award",
+              "formal_dissertation_advisor": null,
+              "degree_award_status_basis": "degree_label_without_explicit_award_wording",
+              "note": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。",
+              "source_id": "bit-xuejin-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+              "source_excerpt_sha256": "3645ca6983e4b471a830363eed680b3ad124abc120ed3f0e9d755568d39218c6",
+              "source_locator": "学士标签与教育区间",
+              "observed_at_utc": "2026-10-25T04:32:39.648Z",
+              "excerpt_id": "xue-ba",
+              "education_event_id": "bit-xuejin-education-1",
+              "degree": "学士",
+              "source_event_kind": "degree_study_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false
+            },
+            "new_value": {
+              "event_id": "bit-xuejin-education-1",
+              "event_kind": "education_label_award_unknown",
+              "education_stage": "学士",
+              "institution": "福建师范大学",
+              "institution_as_source": "福建师范大学",
+              "department": "外国语学院",
+              "field": "英语教育",
+              "degree_label_as_source": "学士",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "date_as_source": "1995 年 - 1999 年",
+              "start": "1995",
+              "end": "1999",
+              "date_precision": "year",
+              "end_date_kind": "education_interval_end_not_award",
+              "formal_dissertation_advisor": null,
+              "degree_award_status_basis": "degree_label_without_explicit_award_wording",
+              "note": "官网教育履历列学士及学习区间；留存独立个人身份说明仅职称/招生资格，未另确认本人学位取得或证书。学习止期不填授位日期。",
+              "source_id": "bit-xuejin-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+              "source_excerpt_sha256": "3645ca6983e4b471a830363eed680b3ad124abc120ed3f0e9d755568d39218c6",
+              "source_locator": "学士标签与教育区间",
+              "observed_at_utc": "2026-10-25T04:32:39.648Z",
+              "excerpt_id": "xue-ba",
+              "education_event_id": "bit-xuejin-education-1",
+              "degree": "学士",
+              "source_event_kind": "degree_study_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。"
+            }
+          },
+          {
+            "json_pointer": "/people/3/education/1",
+            "old_value": {
+              "event_id": "bit-xuejin-education-2",
+              "event_kind": "education_label_award_unknown",
+              "education_stage": "硕士",
+              "institution": "北京第二外国语学院",
+              "institution_as_source": "北京第二外国语学院",
+              "department": "英语学院",
+              "field": "英语语言文学",
+              "degree_label_as_source": "硕士",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "date_as_source": "2002 年 - 2005 年",
+              "start": "2002",
+              "end": "2005",
+              "date_precision": "year",
+              "end_date_kind": "education_interval_end_not_award",
+              "formal_dissertation_advisor": null,
+              "degree_award_status_basis": "degree_label_without_explicit_award_wording",
+              "note": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。",
+              "source_id": "bit-xuejin-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+              "source_excerpt_sha256": "e20d18548ed139270b9c56922e57dc257379a8917edcc33ad4d5958403cff05a",
+              "source_locator": "硕士标签与教育区间",
+              "observed_at_utc": "2026-10-25T04:32:39.648Z",
+              "excerpt_id": "xue-ma",
+              "education_event_id": "bit-xuejin-education-2",
+              "degree": "硕士",
+              "source_event_kind": "degree_study_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false
+            },
+            "new_value": {
+              "event_id": "bit-xuejin-education-2",
+              "event_kind": "education_label_award_unknown",
+              "education_stage": "硕士",
+              "institution": "北京第二外国语学院",
+              "institution_as_source": "北京第二外国语学院",
+              "department": "英语学院",
+              "field": "英语语言文学",
+              "degree_label_as_source": "硕士",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "date_as_source": "2002 年 - 2005 年",
+              "start": "2002",
+              "end": "2005",
+              "date_precision": "year",
+              "end_date_kind": "education_interval_end_not_award",
+              "formal_dissertation_advisor": null,
+              "degree_award_status_basis": "degree_label_without_explicit_award_wording",
+              "note": "官网教育履历列硕士及学习区间；留存独立个人身份说明仅职称/招生资格，未另确认本人学位取得或证书。学习止期不填授位日期。",
+              "source_id": "bit-xuejin-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+              "source_excerpt_sha256": "e20d18548ed139270b9c56922e57dc257379a8917edcc33ad4d5958403cff05a",
+              "source_locator": "硕士标签与教育区间",
+              "observed_at_utc": "2026-10-25T04:32:39.648Z",
+              "excerpt_id": "xue-ma",
+              "education_event_id": "bit-xuejin-education-2",
+              "degree": "硕士",
+              "source_event_kind": "degree_study_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。"
+            }
+          },
+          {
+            "json_pointer": "/people/3/education/2",
+            "old_value": {
+              "event_id": "bit-xuejin-education-3",
+              "event_kind": "education_label_award_unknown",
+              "education_stage": "博士",
+              "institution": "北京师范大学",
+              "institution_as_source": "北京师范大学",
+              "department": "认知神经科学与学习国家重点实验室",
+              "field": "基础心理学",
+              "degree_label_as_source": "博士",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "date_as_source": "2005 年 - 2008 年",
+              "start": "2005",
+              "end": "2008",
+              "date_precision": "year",
+              "end_date_kind": "education_interval_end_not_award",
+              "formal_dissertation_advisor": null,
+              "degree_award_status_basis": "degree_label_without_explicit_award_wording",
+              "note": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。",
+              "source_id": "bit-xuejin-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+              "source_excerpt_sha256": "6d8b7e6fdea12c21e2445644a60e419bba3ed016c43af45c6189f2302210e990",
+              "source_locator": "博士标签与教育区间",
+              "observed_at_utc": "2026-10-25T04:32:39.648Z",
+              "excerpt_id": "xue-phd",
+              "education_event_id": "bit-xuejin-education-3",
+              "degree": "博士",
+              "source_event_kind": "degree_study_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false
+            },
+            "new_value": {
+              "event_id": "bit-xuejin-education-3",
+              "event_kind": "education_label_award_unknown",
+              "education_stage": "博士",
+              "institution": "北京师范大学",
+              "institution_as_source": "北京师范大学",
+              "department": "认知神经科学与学习国家重点实验室",
+              "field": "基础心理学",
+              "degree_label_as_source": "博士",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "date_as_source": "2005 年 - 2008 年",
+              "start": "2005",
+              "end": "2008",
+              "date_precision": "year",
+              "end_date_kind": "education_interval_end_not_award",
+              "formal_dissertation_advisor": null,
+              "degree_award_status_basis": "degree_label_without_explicit_award_wording",
+              "note": "官网教育履历列博士及学习区间；留存独立个人身份说明仅职称/招生资格，未另确认本人学位取得或证书。学习止期不填授位日期。",
+              "source_id": "bit-xuejin-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+              "source_excerpt_sha256": "6d8b7e6fdea12c21e2445644a60e419bba3ed016c43af45c6189f2302210e990",
+              "source_locator": "博士标签与教育区间",
+              "observed_at_utc": "2026-10-25T04:32:39.648Z",
+              "excerpt_id": "xue-phd",
+              "education_event_id": "bit-xuejin-education-3",
+              "degree": "博士",
+              "source_event_kind": "degree_study_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。"
+            }
+          }
+        ],
+        "inverse_restores_prechange_payload": true,
+        "classification_unchanged": true
+      },
+      "final_source_reported_degree_and_visible_scope_update": {
+        "prechange_payload_sha256": "ff916c872dfa30d4799f69651e1b55326b061f81f57aaf34fee0f9ea0d8dbfcd",
+        "delta": [
+          {
+            "json_pointer": "/people/1/education/0/include_in_degree_filters",
+            "old_present": true,
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "json_pointer": "/people/1/education/0/source_include_in_degree_filters",
+            "old_present": false,
+            "new_value": false
+          },
+          {
+            "json_pointer": "/people/1/education/0/degree_awarded",
+            "old_present": true,
+            "old_value": null,
+            "new_value": true
+          },
+          {
+            "json_pointer": "/people/1/education/0/source_degree_awarded",
+            "old_present": false,
+            "new_value": null
+          },
+          {
+            "json_pointer": "/people/1/education/0/note",
+            "old_present": true,
+            "old_value": "教育经历仅列学位标签，未明确写获授，degree_awarded=null；学习止期不等于授位日期。",
+            "new_value": "官网本人教育履历具体列中国人民大学、法学与“法学学士”，据明确学士称谓记录来源报告学位；2014-09—2018-06为学习区间，不补授位年月，未核原证书或法定授位主体。"
+          },
+          {
+            "json_pointer": "/people/1/education/0/source_canonical_event_kind",
+            "old_present": false,
+            "new_value": "education_label_award_unknown"
+          },
+          {
+            "json_pointer": "/people/1/education/0/source_note",
+            "old_present": false,
+            "new_value": "教育经历仅列学位标签，未明确写获授，degree_awarded=null；学习止期不等于授位日期。"
+          },
+          {
+            "json_pointer": "/people/1/education/0/degree_award_evidence",
+            "old_present": false,
+            "new_value": {
+              "source_id": "bit-liuning-profile",
+              "source_url": "https://law.bit.edu.cn/szll/jsml/msfyjs/520be9f3aa0d456ea325330f1f19cfc6.htm",
+              "source_excerpt_sha256": "01ea7f841154ac2c873053e6bb77bfb7c3e2d6e2bd9c5fccdd70de88eaef1fbf",
+              "source_locator": "学士标签"
+            }
+          },
+          {
+            "json_pointer": "/people/1/education/0/degree_award_status_basis",
+            "old_present": false,
+            "new_value": "source_reported_bachelors_degree_in_named_institution_and_major_entry_not_certificate_verified"
+          },
+          {
+            "json_pointer": "/people/1/education/0/source_include_in_education_filters",
+            "old_present": false,
+            "new_value": false
+          },
+          {
+            "json_pointer": "/people/1/education/0/include_in_education_filters",
+            "old_present": true,
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "json_pointer": "/people/1/education/0/event_kind",
+            "old_present": true,
+            "old_value": "education_label_award_unknown",
+            "new_value": "degree"
+          },
+          {
+            "json_pointer": "/people/1/education/1/note",
+            "old_present": true,
+            "old_value": "教育经历仅列学位标签，未明确写获授，degree_awarded=null；学习止期不等于授位日期。 硕博连读不拆出独立硕士学位或推断硕士授位。",
+            "new_value": "官网教育履历列民商法学博士及学习区间；留存独立个人身份说明仅职称/招生资格，未另确认本人学位取得或证书。学习止期不填授位日期。原硕博连读为一个博士学习事件，不拆出独立硕士学位。"
+          },
+          {
+            "json_pointer": "/people/1/education/1/source_note",
+            "old_present": false,
+            "new_value": "教育经历仅列学位标签，未明确写获授，degree_awarded=null；学习止期不等于授位日期。 硕博连读不拆出独立硕士学位或推断硕士授位。"
+          },
+          {
+            "json_pointer": "/people/2/publications/0/note",
+            "old_present": true,
+            "old_value": " 本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。；出版日期：2025；贡献角色：未明确。卷：48。期：1。页码：143-161。",
+            "new_value": " 本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。；出版日期：2025；贡献角色：未明确。卷：48。期：1。页码：143-161。 官网原条目标注A&HCI；仅保留来源评价，未独立核收录状态。"
+          },
+          {
+            "json_pointer": "/people/2/publications/1/note",
+            "old_present": true,
+            "old_value": " 本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。；出版日期：2024；贡献角色：未明确。卷：58。期：4。页码：387-432。",
+            "new_value": " 本人同行评议论文清单上下文；未列作者，不由总述8篇独作推广到每个已列条目。；出版日期：2024；贡献角色：未明确。卷：58。期：4。页码：387-432。 官网原条目标注A&HCI；仅保留来源评价，未独立核收录状态。"
+          },
+          {
+            "json_pointer": "/people/3/education/0/source_include_in_degree_filters",
+            "old_present": false,
+            "new_value": false
+          },
+          {
+            "json_pointer": "/people/3/education/0/source_degree_awarded",
+            "old_present": false,
+            "new_value": null
+          },
+          {
+            "json_pointer": "/people/3/education/0/note",
+            "old_present": true,
+            "old_value": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。",
+            "new_value": "官网本人教育履历具体列福建师范大学、英语教育与“学士”，据明确学士称谓记录来源报告学位；1995—1999为学习区间，不补授位年月，未核原证书或法定授位主体。"
+          },
+          {
+            "json_pointer": "/people/3/education/0/source_note",
+            "old_present": false,
+            "new_value": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。"
+          },
+          {
+            "json_pointer": "/people/3/education/0/degree_award_status_basis",
+            "old_present": true,
+            "old_value": "degree_label_without_explicit_award_wording",
+            "new_value": "source_reported_bachelors_degree_in_named_institution_and_major_entry_not_certificate_verified"
+          },
+          {
+            "json_pointer": "/people/3/education/0/include_in_degree_filters",
+            "old_present": true,
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "json_pointer": "/people/3/education/0/degree_awarded",
+            "old_present": true,
+            "old_value": null,
+            "new_value": true
+          },
+          {
+            "json_pointer": "/people/3/education/0/source_degree_award_status_basis",
+            "old_present": false,
+            "new_value": "degree_label_without_explicit_award_wording"
+          },
+          {
+            "json_pointer": "/people/3/education/0/source_canonical_event_kind",
+            "old_present": false,
+            "new_value": "education_label_award_unknown"
+          },
+          {
+            "json_pointer": "/people/3/education/0/degree_award_evidence",
+            "old_present": false,
+            "new_value": {
+              "source_id": "bit-xuejin-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+              "source_excerpt_sha256": "3645ca6983e4b471a830363eed680b3ad124abc120ed3f0e9d755568d39218c6",
+              "source_locator": "学士标签与教育区间"
+            }
+          },
+          {
+            "json_pointer": "/people/3/education/0/source_include_in_education_filters",
+            "old_present": false,
+            "new_value": false
+          },
+          {
+            "json_pointer": "/people/3/education/0/include_in_education_filters",
+            "old_present": true,
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "json_pointer": "/people/3/education/0/event_kind",
+            "old_present": true,
+            "old_value": "education_label_award_unknown",
+            "new_value": "degree"
+          },
+          {
+            "json_pointer": "/people/3/education/1/note",
+            "old_present": true,
+            "old_value": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。",
+            "new_value": "官网教育履历列硕士及学习区间；留存独立个人身份说明仅职称/招生资格，未另确认本人学位取得或证书。学习止期不填授位日期。"
+          },
+          {
+            "json_pointer": "/people/3/education/1/source_note",
+            "old_present": false,
+            "new_value": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。"
+          },
+          {
+            "json_pointer": "/people/3/education/2/note",
+            "old_present": true,
+            "old_value": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。",
+            "new_value": "官网教育履历列博士及学习区间；留存独立个人身份说明仅职称/招生资格，未另确认本人学位取得或证书。学习止期不填授位日期。"
+          },
+          {
+            "json_pointer": "/people/3/education/2/source_note",
+            "old_present": false,
+            "new_value": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。"
+          },
+          {
+            "json_pointer": "/people/3/source_source_verification_gaps",
+            "old_present": false,
+            "new_value": [
+              "三个教育阶段均为标签，获授、授位院校法人、授位日期与导师未知；学习止年不当作毕业或授位年。",
+              "耶鲁大学医学院访问为非学位分类false，不是来源否认学位；访问导师未披露。",
+              "历史任职原文北京第二外国院学院疑似笔误保留，未自行更正。",
+              "2024年10月起是来源任职起点，不构成今日在岗认证；目录只支持英语系归属。",
+              "博士生导师资格和指导他人论文的成果不是本人导师证据，关系表为空。",
+              "两项专著作者署名、年月和出版社仅官网书目来源，未外核。"
+            ]
+          },
+          {
+            "json_pointer": "/people/3/source_verification_gaps/0",
+            "old_present": true,
+            "old_value": "三个教育阶段均为标签，获授、授位院校法人、授位日期与导师未知；学习止年不当作毕业或授位年。",
+            "new_value": "教育履历学士具体称谓作为来源报告学位；硕士、博士学习阶段原词保留，取得学位未另确认。全部授位日期、法定主体及本人导师未核，学习止年不作授位年。"
+          }
+        ],
+        "inverse_restores_prechange_payload": true,
+        "degree_corrections": [
+          "bit-liuning-education-1",
+          "bit-xuejin-education-1"
+        ],
+        "other_changes": "王2A&HCI来源评价可见；剩余3null证据范围note，原说明source_保留；薛current gap同步；无授位日期改动。"
+      },
+      "final_classification_delta_from_visible_draft": {
+        "prechange_payload_sha256": "aeb17fdfd863ee4d6c0575a10f157449e161625f476bedcf186440d4cd545f24",
+        "delta": [
+          {
+            "json_pointer": "/people/1/education/0",
+            "old_value": {
+              "event_id": "bit-liuning-education-1",
+              "event_kind": "education_label_award_unknown",
+              "institution": "中国人民大学",
+              "institution_as_source": "中国人民大学",
+              "department": "法学院",
+              "education_stage": "学士",
+              "degree_label_as_source": "法学学士",
+              "field": "法学",
+              "start": "2014-09",
+              "end": "2018-06",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "bit-liuning-profile",
+              "source_url": "https://law.bit.edu.cn/szll/jsml/msfyjs/520be9f3aa0d456ea325330f1f19cfc6.htm",
+              "source_excerpt_sha256": "01ea7f841154ac2c873053e6bb77bfb7c3e2d6e2bd9c5fccdd70de88eaef1fbf",
+              "source_locator": "学士标签",
+              "observed_at": "2026-10-25T03:15:54.708Z",
+              "note": "官网教育履历列法学学士及学习区间；留存独立个人身份说明仅职称/招生资格，未另确认本人学位取得或证书。学习止期不填授位日期。",
+              "education_event_id": "bit-liuning-education-1",
+              "degree": "法学学士",
+              "source_event_kind": "degree_label_in_education_section",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "教育经历仅列学位标签，未明确写获授，degree_awarded=null；学习止期不等于授位日期。"
+            },
+            "new_value": {
+              "event_id": "bit-liuning-education-1",
+              "event_kind": "degree",
+              "institution": "中国人民大学",
+              "institution_as_source": "中国人民大学",
+              "department": "法学院",
+              "education_stage": "学士",
+              "degree_label_as_source": "法学学士",
+              "field": "法学",
+              "start": "2014-09",
+              "end": "2018-06",
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "awarding_legal_entity": null,
+              "formal_dissertation_advisor": null,
+              "source_id": "bit-liuning-profile",
+              "source_url": "https://law.bit.edu.cn/szll/jsml/msfyjs/520be9f3aa0d456ea325330f1f19cfc6.htm",
+              "source_excerpt_sha256": "01ea7f841154ac2c873053e6bb77bfb7c3e2d6e2bd9c5fccdd70de88eaef1fbf",
+              "source_locator": "学士标签",
+              "observed_at": "2026-10-25T03:15:54.708Z",
+              "note": "官网本人教育履历具体列中国人民大学、法学与“法学学士”，据明确学士称谓记录来源报告学位；2014-09—2018-06为学习区间，不补授位年月，未核原证书或法定授位主体。",
+              "education_event_id": "bit-liuning-education-1",
+              "degree": "法学学士",
+              "source_event_kind": "degree_label_in_education_section",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_note": "教育经历仅列学位标签，未明确写获授，degree_awarded=null；学习止期不等于授位日期。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "degree_award_status_basis": "source_reported_bachelors_degree_in_named_institution_and_major_entry_not_certificate_verified",
+              "degree_award_evidence": {
+                "source_id": "bit-liuning-profile",
+                "source_url": "https://law.bit.edu.cn/szll/jsml/msfyjs/520be9f3aa0d456ea325330f1f19cfc6.htm",
+                "source_excerpt_sha256": "01ea7f841154ac2c873053e6bb77bfb7c3e2d6e2bd9c5fccdd70de88eaef1fbf",
+                "source_locator": "学士标签"
+              }
+            }
+          },
+          {
+            "json_pointer": "/people/3/education/0",
+            "old_value": {
+              "event_id": "bit-xuejin-education-1",
+              "event_kind": "education_label_award_unknown",
+              "education_stage": "学士",
+              "institution": "福建师范大学",
+              "institution_as_source": "福建师范大学",
+              "department": "外国语学院",
+              "field": "英语教育",
+              "degree_label_as_source": "学士",
+              "degree_awarded": null,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "date_as_source": "1995 年 - 1999 年",
+              "start": "1995",
+              "end": "1999",
+              "date_precision": "year",
+              "end_date_kind": "education_interval_end_not_award",
+              "formal_dissertation_advisor": null,
+              "degree_award_status_basis": "degree_label_without_explicit_award_wording",
+              "note": "官网教育履历列学士及学习区间；留存独立个人身份说明仅职称/招生资格，未另确认本人学位取得或证书。学习止期不填授位日期。",
+              "source_id": "bit-xuejin-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+              "source_excerpt_sha256": "3645ca6983e4b471a830363eed680b3ad124abc120ed3f0e9d755568d39218c6",
+              "source_locator": "学士标签与教育区间",
+              "observed_at_utc": "2026-10-25T04:32:39.648Z",
+              "excerpt_id": "xue-ba",
+              "education_event_id": "bit-xuejin-education-1",
+              "degree": "学士",
+              "source_event_kind": "degree_study_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": false,
+              "include_in_education_filters": false,
+              "source_note": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。"
+            },
+            "new_value": {
+              "event_id": "bit-xuejin-education-1",
+              "event_kind": "degree",
+              "education_stage": "学士",
+              "institution": "福建师范大学",
+              "institution_as_source": "福建师范大学",
+              "department": "外国语学院",
+              "field": "英语教育",
+              "degree_label_as_source": "学士",
+              "degree_awarded": true,
+              "degree_awarded_year": null,
+              "degree_awarded_date": null,
+              "degree_awarding_institution_as_source": null,
+              "awarding_legal_entity": null,
+              "date_as_source": "1995 年 - 1999 年",
+              "start": "1995",
+              "end": "1999",
+              "date_precision": "year",
+              "end_date_kind": "education_interval_end_not_award",
+              "formal_dissertation_advisor": null,
+              "degree_award_status_basis": "source_reported_bachelors_degree_in_named_institution_and_major_entry_not_certificate_verified",
+              "note": "官网本人教育履历具体列福建师范大学、英语教育与“学士”，据明确学士称谓记录来源报告学位；1995—1999为学习区间，不补授位年月，未核原证书或法定授位主体。",
+              "source_id": "bit-xuejin-profile",
+              "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+              "source_excerpt_sha256": "3645ca6983e4b471a830363eed680b3ad124abc120ed3f0e9d755568d39218c6",
+              "source_locator": "学士标签与教育区间",
+              "observed_at_utc": "2026-10-25T04:32:39.648Z",
+              "excerpt_id": "xue-ba",
+              "education_event_id": "bit-xuejin-education-1",
+              "degree": "学士",
+              "source_event_kind": "degree_study_label_award_unknown",
+              "institution_985": "unknown",
+              "region": "unknown",
+              "continent_code": "unknown",
+              "include_in_degree_filters": true,
+              "include_in_education_filters": true,
+              "source_note": "明确教育标签及区间，但未见获授句，保持获授null，不推毕业或授位日期。",
+              "source_degree_awarded": null,
+              "source_canonical_event_kind": "education_label_award_unknown",
+              "source_include_in_degree_filters": false,
+              "source_include_in_education_filters": false,
+              "source_degree_award_status_basis": "degree_label_without_explicit_award_wording",
+              "degree_award_evidence": {
+                "source_id": "bit-xuejin-profile",
+                "source_url": "https://sfl.bit.edu.cn/szdw/yyx/4edbd811ef5d4a23a92c755589b2ee07.htm",
+                "source_excerpt_sha256": "3645ca6983e4b471a830363eed680b3ad124abc120ed3f0e9d755568d39218c6",
+                "source_locator": "学士标签与教育区间"
+              }
+            }
+          },
+          {
+            "json_pointer": "/people/3/source_verification_gaps",
+            "old_value": [
+              "三个教育阶段均为标签，获授、授位院校法人、授位日期与导师未知；学习止年不当作毕业或授位年。",
+              "耶鲁大学医学院访问为非学位分类false，不是来源否认学位；访问导师未披露。",
+              "历史任职原文北京第二外国院学院疑似笔误保留，未自行更正。",
+              "2024年10月起是来源任职起点，不构成今日在岗认证；目录只支持英语系归属。",
+              "博士生导师资格和指导他人论文的成果不是本人导师证据，关系表为空。",
+              "两项专著作者署名、年月和出版社仅官网书目来源，未外核。"
+            ],
+            "new_value": [
+              "教育履历学士具体称谓作为来源报告学位；硕士、博士学习阶段原词保留，取得学位未另确认。全部授位日期、法定主体及本人导师未核，学习止年不作授位年。",
+              "耶鲁大学医学院访问为非学位分类false，不是来源否认学位；访问导师未披露。",
+              "历史任职原文北京第二外国院学院疑似笔误保留，未自行更正。",
+              "2024年10月起是来源任职起点，不构成今日在岗认证；目录只支持英语系归属。",
+              "博士生导师资格和指导他人论文的成果不是本人导师证据，关系表为空。",
+              "两项专著作者署名、年月和出版社仅官网书目来源，未外核。"
+            ]
+          },
+          {
+            "json_pointer": "/people/3/source_source_verification_gaps",
+            "old_present": false,
+            "new_value": [
+              "三个教育阶段均为标签，获授、授位院校法人、授位日期与导师未知；学习止年不当作毕业或授位年。",
+              "耶鲁大学医学院访问为非学位分类false，不是来源否认学位；访问导师未披露。",
+              "历史任职原文北京第二外国院学院疑似笔误保留，未自行更正。",
+              "2024年10月起是来源任职起点，不构成今日在岗认证；目录只支持英语系归属。",
+              "博士生导师资格和指导他人论文的成果不是本人导师证据，关系表为空。",
+              "两项专著作者署名、年月和出版社仅官网书目来源，未外核。"
+            ]
+          }
+        ],
+        "inverse_restores_prechange_payload": true,
+        "classification_scope": "exact two bachelors only, current Xue gap aligned; prior aeb visible-note delta separately reverses to ff916"
+      }
+    }
+  ],
+  "mapping": "仅追加十二名已审来源人物及组织展示节点；旧826事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}
