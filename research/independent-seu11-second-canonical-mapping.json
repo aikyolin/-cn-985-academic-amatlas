@@ -1,0 +1,1164 @@
+{
+  "schema_version": "independent-seu11-second-canonical-mapping-1",
+  "baseline_commit": "ac901eb59799deb68428022581a2fb8c5e582051",
+  "new_people": [
+    "seu-sunzhengming",
+    "seu-jintanhua",
+    "seu-libeilei",
+    "seu-sunguiju",
+    "seu-shenyang-wave208",
+    "seu-zhengdedong-wave208",
+    "seu-yemaoxin",
+    "seu-huhanhui",
+    "seu-bianshaobin",
+    "seu-liyinan",
+    "seu-zhangjingjing-sociology"
+  ],
+  "new_org_ids": [
+    "seu-architecture",
+    "seu-architecture-urban-planning",
+    "seu-arts",
+    "seu-sph",
+    "seu-sph-nutrition",
+    "seu-architecture-history-theory",
+    "seu-arts-design",
+    "seu-economics-management"
+  ],
+  "counts": {
+    "people": 11,
+    "org_units": 8,
+    "education": 42,
+    "appointments": 18,
+    "publications": 18,
+    "mentors": 7,
+    "teaching": 3,
+    "institutional_associations": 0,
+    "professional_research_advisors": 0,
+    "career_end_events": 0,
+    "unbound_person_degree_credentials": 0,
+    "creative_works": 0,
+    "degree_true": 20,
+    "degree_false": 14,
+    "degree_unknown": 8
+  },
+  "counting_scope": "教育事件授位三态与未绑定具体阶段的本人全局学位凭证分开统计；后者不增加教育事件、不指定学校或日期。教学记录可含课程建设项目，作品区分论文书目与创作，关系按原阶段不统称论文指导。",
+  "mapping_inputs": [
+    {
+      "source_group_id": "seu-materials-publichealth",
+      "canonical_payload_sha256": "76b5247124397bf8b60980d2d6c603d983d1caf791ca4c660b0783ddb9ca51e8",
+      "field_mapping_sha256": "68a054f7832922d250f04bfe3693b3755dd7bbebafc6751952fb3a3e44fcd7ed",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "seu-architecture-humanities",
+      "canonical_payload_sha256": "fefc2e95e0eeb540887d4cb4cf1daa03cf46f18115e4b17ff1768ca3f68a3abf",
+      "field_mapping_sha256": "ef17244fb955d98ccac8f48e37e6b17fee2fbc0ba2cc8b832c045c322faed925",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "seu-arts-social",
+      "canonical_payload_sha256": "03879fd4fb437c641b5922d86fb5b97159c0d2fc42766d3d70406a2f7953e6e9",
+      "field_mapping_sha256": "15a1805038f3f4b5564973c648cc35951d57fb70d6050e5b113c0eac4d40ce3d",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "76b5247124397bf8b60980d2d6c603d983d1caf791ca4c660b0783ddb9ca51e8",
+      "org_identity": [
+        {
+          "id": "seu-architecture",
+          "school_id": "seu",
+          "name": "建筑学院",
+          "type": "school",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_url": "https://arch.seu.edu.cn/jth/main.psp",
+          "source_locator": "金探花具名页面及建筑学院页首",
+          "scope_note": "来源职业单位展示，未核法律行政父级。"
+        },
+        {
+          "id": "seu-architecture-urban-planning",
+          "school_id": "seu",
+          "name": "城市规划系",
+          "type": "department",
+          "parent_id": "seu-architecture",
+          "campus_ids": [],
+          "source_url": "https://arch.seu.edu.cn/16782/list.htm",
+          "source_locator": "建筑学院师资力量／城市规划系／金探花研究员具名条目",
+          "scope_note": "按原学院目录下学系分类展示，非法律行政认证。"
+        },
+        {
+          "id": "seu-arts",
+          "school_id": "seu",
+          "name": "艺术学院",
+          "type": "school",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+          "source_locator": "李倍雷（本名李蓓蕾）职业经历／2010年至今东南大学艺术学院",
+          "scope_note": "原仅学院归属；不由历任系主任推现属某系。"
+        },
+        {
+          "id": "seu-sph",
+          "school_id": "seu",
+          "name": "公共卫生学院",
+          "type": "school",
+          "parent_id": null,
+          "campus_ids": [],
+          "source_url": "https://sph.seu.edu.cn/15660/list.htm",
+          "source_locator": "公共卫生学院专任教师目录／孙桂菊具名链接"
+        },
+        {
+          "id": "seu-sph-nutrition",
+          "school_id": "seu",
+          "name": "营养与食品卫生学系",
+          "type": "department",
+          "parent_id": "seu-sph",
+          "campus_ids": [],
+          "source_url": "https://sph.seu.edu.cn/2016/0704/c15720a162932/page.htm",
+          "source_locator": "孙桂菊具名简介／公共卫生学院营养与食品卫生学系",
+          "scope_note": "来源单位组合支持展示归属，非法律行政认证。"
+        }
+      ],
+      "existing_org_identity_reuse": {
+        "ids": [
+          "seu-materials",
+          "seu-materials-metal"
+        ],
+        "basis": "同一材料学院原目录及系所架构官方来源，完整复用已公开节点，不修改旧对象。"
+      },
+      "people": [
+        {
+          "person_id": "seu-sunzhengming",
+          "fields": [
+            {
+              "field": "education",
+              "index": 0,
+              "source_url": "https://smse.seu.edu.cn/2018/1007/c2590a242137/page.htm",
+              "source_locator": "本人教育/研修／东南大学／本科"
+            },
+            {
+              "field": "education",
+              "index": 1,
+              "source_url": "https://smse.seu.edu.cn/2018/1007/c2590a242137/page.htm",
+              "source_locator": "本人教育/研修／中国科学院金属研究所／硕士"
+            },
+            {
+              "field": "education",
+              "index": 2,
+              "source_url": "https://smse.seu.edu.cn/2018/1007/c2590a242137/page.htm",
+              "source_locator": "本人教育/研修／联合培养主体未定／博士"
+            },
+            {
+              "field": "education",
+              "index": 3,
+              "source_url": "https://smse.seu.edu.cn/2018/1007/c2590a242137/page.htm",
+              "source_locator": "本人教育/研修／维也纳大学／博士后"
+            },
+            {
+              "field": "appointments",
+              "index": 0,
+              "source_url": "https://smse.seu.edu.cn/2018/1007/c2590a242137/page.htm",
+              "source_locator": "职业／日本产业技术综合研究所（AIST）／主任研究员兼国际部长助理"
+            },
+            {
+              "field": "appointments",
+              "index": 1,
+              "source_url": "https://smse.seu.edu.cn/2018/1007/c2590a242137/page.htm",
+              "source_locator": "职业／东南大学材料学院／学术委员会主任"
+            },
+            {
+              "field": "appointments",
+              "index": 2,
+              "source_url": "https://smse.seu.edu.cn/2018/1007/c2590a242137/page.htm",
+              "source_locator": "职业／东南大学材料学院／院长"
+            },
+            {
+              "field": "appointments",
+              "index": 3,
+              "source_url": "https://smse.seu.edu.cn/2018/1007/c2590a242137/page.htm",
+              "source_locator": "职业／东南大学材料学院／党委书记"
+            },
+            {
+              "field": "publications",
+              "index": 0,
+              "source_url": "https://smse.seu.edu.cn/2018/1007/c2590a242137/page.htm",
+              "source_locator": "具名作品／Atomically Tailored Fe-Dy Dual-Atom Sites With 3d-4f Orbital Coupling for Enhanced Bifunctional Oxygen Electrocatalysis"
+            },
+            {
+              "field": "publications",
+              "index": 1,
+              "source_url": "https://smse.seu.edu.cn/2018/1007/c2590a242137/page.htm",
+              "source_locator": "具名作品／Microphase-Separated Hydrogel Electrolytes with Selective Ion Transportation Pathways for Flexible Zinc-Ion Batteries"
+            }
+          ]
+        },
+        {
+          "person_id": "seu-jintanhua",
+          "fields": [
+            {
+              "field": "education",
+              "index": 0,
+              "source_url": "https://arch.seu.edu.cn/jth/main.psp",
+              "source_locator": "本人教育/研修／东南大学／学士"
+            },
+            {
+              "field": "education",
+              "index": 1,
+              "source_url": "https://arch.seu.edu.cn/jth/main.psp",
+              "source_locator": "本人教育/研修／东南大学／硕士"
+            },
+            {
+              "field": "education",
+              "index": 2,
+              "source_url": "https://arch.seu.edu.cn/jth/main.psp",
+              "source_locator": "本人教育/研修／根特大学／博士"
+            },
+            {
+              "field": "education",
+              "index": 3,
+              "source_url": "https://arch.seu.edu.cn/jth/main.psp",
+              "source_locator": "本人教育/研修／苏黎世联邦理工学院／访问交流"
+            },
+            {
+              "field": "education",
+              "index": 4,
+              "source_url": "https://arch.seu.edu.cn/jth/main.psp",
+              "source_locator": "本人教育/研修／伦敦大学学院／访问交流"
+            },
+            {
+              "field": "education",
+              "index": 5,
+              "source_url": "https://arch.seu.edu.cn/jth/main.psp",
+              "source_locator": "本人教育/研修／阿姆斯特丹自由大学／博士后"
+            },
+            {
+              "field": "education",
+              "index": 6,
+              "source_url": "https://arch.seu.edu.cn/jth/main.psp",
+              "source_locator": "本人教育/研修／根特大学／博士后"
+            },
+            {
+              "field": "appointments",
+              "index": 0,
+              "source_url": "https://arch.seu.edu.cn/jth/main.psp",
+              "source_locator": "职业／东南大学／研究员"
+            },
+            {
+              "field": "mentors",
+              "index": 0,
+              "source_url": "https://arch.seu.edu.cn/jth/main.psp",
+              "source_locator": "本人指导关系／Frank Witlox／博士"
+            }
+          ]
+        },
+        {
+          "person_id": "seu-libeilei",
+          "fields": [
+            {
+              "field": "education",
+              "index": 0,
+              "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+              "source_locator": "本人教育/研修／西南师范大学／学士"
+            },
+            {
+              "field": "education",
+              "index": 1,
+              "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+              "source_locator": "本人教育/研修／西安美术学院／硕士"
+            },
+            {
+              "field": "education",
+              "index": 2,
+              "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+              "source_locator": "本人教育/研修／东南大学／博士"
+            },
+            {
+              "field": "appointments",
+              "index": 0,
+              "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+              "source_locator": "职业／长沙铁道学院／任教"
+            },
+            {
+              "field": "appointments",
+              "index": 1,
+              "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+              "source_locator": "职业／西安美术学院／任教"
+            },
+            {
+              "field": "appointments",
+              "index": 2,
+              "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+              "source_locator": "职业／大连大学／教授、院长"
+            },
+            {
+              "field": "appointments",
+              "index": 3,
+              "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+              "source_locator": "职业／东南大学／教授；先后任美术系主任、艺术理论系主任"
+            },
+            {
+              "field": "mentors",
+              "index": 0,
+              "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+              "source_locator": "本人指导关系／谌北新／硕士"
+            },
+            {
+              "field": "mentors",
+              "index": 1,
+              "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+              "source_locator": "本人指导关系／张道一／博士"
+            },
+            {
+              "field": "publications",
+              "index": 0,
+              "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+              "source_locator": "具名作品／中国山水画与欧洲风景画比较研究"
+            },
+            {
+              "field": "publications",
+              "index": 1,
+              "source_url": "https://arts.seu.edu.cn/lbl/list.htm",
+              "source_locator": "具名作品／现代与后现代艺术的反思"
+            }
+          ]
+        },
+        {
+          "person_id": "seu-sunguiju",
+          "fields": [
+            {
+              "field": "education",
+              "index": 0,
+              "source_url": "https://news.seu.edu.cn/2021/0113/c5513a359414/page.htm",
+              "source_locator": "本人教育/研修／南京铁道医学院／本科"
+            },
+            {
+              "field": "education",
+              "index": 1,
+              "source_url": "https://news.seu.edu.cn/2021/0113/c5513a359414/page.htm",
+              "source_locator": "本人教育/研修／上海医科大学／硕士"
+            },
+            {
+              "field": "education",
+              "index": 2,
+              "source_url": "https://sph.seu.edu.cn/2016/0704/c15720a162932/page.htm",
+              "source_locator": "本人教育/研修／复旦大学／医学博士"
+            },
+            {
+              "field": "education",
+              "index": 3,
+              "source_url": "https://sph.seu.edu.cn/2016/0704/c15720a162932/page.htm",
+              "source_locator": "本人教育/研修／美国德克萨斯理工大学／访问学者"
+            },
+            {
+              "field": "education",
+              "index": 4,
+              "source_url": "https://sph.seu.edu.cn/2016/0704/c15720a162932/page.htm",
+              "source_locator": "本人教育/研修／德国联邦食物中心营养与生化研究所／访问学者"
+            },
+            {
+              "field": "education",
+              "index": 5,
+              "source_url": "https://sph.seu.edu.cn/2016/0704/c15720a162932/page.htm",
+              "source_locator": "本人教育/研修／德国乌尔姆大学／访问学者"
+            },
+            {
+              "field": "education",
+              "index": 6,
+              "source_url": "https://sph.seu.edu.cn/2016/0704/c15720a162932/page.htm",
+              "source_locator": "本人教育/研修／美国约翰霍普金斯大学公共卫生学院／访问学者"
+            },
+            {
+              "field": "appointments",
+              "index": 0,
+              "source_url": "https://news.seu.edu.cn/2021/0113/c5513a359414/page.htm",
+              "source_locator": "职业／南京铁道医学院／留校任教（具体职称未披露）"
+            },
+            {
+              "field": "appointments",
+              "index": 1,
+              "source_url": "https://sph.seu.edu.cn/2016/0704/c15720a162932/page.htm",
+              "source_locator": "职业／东南大学／教授、博士生导师"
+            },
+            {
+              "field": "mentors",
+              "index": 0,
+              "source_url": "https://news.seu.edu.cn/2021/0113/c5513a359414/page.htm",
+              "source_locator": "本人指导关系／陈学存／研究生阶段（具体硕博未知）"
+            },
+            {
+              "field": "publications",
+              "index": 0,
+              "source_url": "https://sph.seu.edu.cn/2018/1019/c15695a243381/page.htm",
+              "source_locator": "具名作品／营养与食品卫生学"
+            },
+            {
+              "field": "publications",
+              "index": 1,
+              "source_url": "https://sph.seu.edu.cn/2018/1019/c15695a243381/page.htm",
+              "source_locator": "具名作品／高级营养学"
+            }
+          ]
+        }
+      ],
+      "classification_delta": {
+        "old_payload_sha256": "be0e91636d35393b7ca6ed00dea23b41dbdb18f40e50a48d856f567115909391",
+        "new_payload_sha256": "c6f2ba1f0c509611b75bd02b6b5dd5747cfde302a4feeff8f02e5695a3a1245a",
+        "deltas": [
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "event_kind"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": "degree_study",
+            "new": "degree"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "degree_awarded"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": null,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "note"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": "仅硕士标签，无获/取得授位句；机构是所述培养机构，不等于法律授位单位。",
+            "new": "具名个人简介列“中科院金属所硕士”，按本人具体资格记来源报告已获硕士；原培养机构名保留，法律授位主体及授位年/月/日未知，未核学位证。"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "include_in_degree_filters"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "include_in_education_filters"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": false,
+            "new": true
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "degree_award_source_url"
+            ],
+            "old_exists": true,
+            "new_exists": true,
+            "old": null,
+            "new": "https://smse.seu.edu.cn/2018/1007/c2590a242137/page.htm"
+          },
+          {
+            "field_address": [
+              "people",
+              0,
+              "education",
+              1,
+              "source_degree_awarded"
+            ],
+            "old_exists": false,
+            "new_exists": true,
+            "old": null,
+            "new": null
+          }
+        ],
+        "inverse_exact": true,
+        "quote": "东南大学本科，中科院金属所硕士，中科院金属所-维也纳大学联合培养博士。",
+        "heading": "个人简介",
+        "source_file_sha256": "6c80093084966df33e905b9087da535b25db0212648c1cb0f1a64503e9109348",
+        "basis": "父及独审统一本人具体资格语义；仅硕士null转true，无日期/授位法人补推。"
+      },
+      "public_locator_correction": {
+        "fields": [
+          [
+            "people",
+            1,
+            "sources",
+            1,
+            "observation"
+          ],
+          [
+            "people",
+            1,
+            "identity_evidence",
+            "note"
+          ]
+        ],
+        "meaning": "移除内部工具链接编号，保持原具名目录链接观察语义及访问边界。"
+      }
+    },
+    {
+      "people": [
+        {
+          "person_id": "seu-shenyang-wave208",
+          "canonical_department_id": "seu-architecture-history-theory",
+          "source_candidate_sha256": "94929e023d866cde951a941ea40e7ac7ee6ca4801dbe69e65af55137992bf81f",
+          "education": [
+            {
+              "event_id": "seu-shenyang-wave208-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "seu-shenyang-book-profile",
+                  "source_url": "https://arch.seu.edu.cn/2016/0510/c9122a173283/page.htm",
+                  "excerpt_id": "seu-shenyang-book-profile-excerpt-2",
+                  "source_locator": "求学句",
+                  "quote_sha256": "1e615bfc6db08302829f9a9cd954120ba4efb8d21a463d3e85ae914083af5a24",
+                  "observed_at_utc": "2026-10-25T02:14:53.344Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:14:52.800Z",
+                    "2026-10-25T02:14:53.344Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            },
+            {
+              "event_id": "seu-shenyang-wave208-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "seu-shenyang-book-profile",
+                  "source_url": "https://arch.seu.edu.cn/2016/0510/c9122a173283/page.htm",
+                  "excerpt_id": "seu-shenyang-book-profile-excerpt-2",
+                  "source_locator": "求学句",
+                  "quote_sha256": "1e615bfc6db08302829f9a9cd954120ba4efb8d21a463d3e85ae914083af5a24",
+                  "observed_at_utc": "2026-10-25T02:14:53.344Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:14:52.800Z",
+                    "2026-10-25T02:14:53.344Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            },
+            {
+              "event_id": "seu-shenyang-wave208-education-3",
+              "field_evidence": [
+                {
+                  "source_id": "seu-shenyang-book-profile",
+                  "source_url": "https://arch.seu.edu.cn/2016/0510/c9122a173283/page.htm",
+                  "excerpt_id": "seu-shenyang-book-profile-excerpt-2",
+                  "source_locator": "求学句",
+                  "quote_sha256": "1e615bfc6db08302829f9a9cd954120ba4efb8d21a463d3e85ae914083af5a24",
+                  "observed_at_utc": "2026-10-25T02:14:53.344Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:14:52.800Z",
+                    "2026-10-25T02:14:53.344Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                },
+                {
+                  "source_id": "seu-shenyang-book-profile",
+                  "source_url": "https://arch.seu.edu.cn/2016/0510/c9122a173283/page.htm",
+                  "excerpt_id": "seu-shenyang-book-profile-excerpt-1",
+                  "source_locator": "作者标签",
+                  "quote_sha256": "aa1590022bfccfc78f24627a5ee7043dc0a59076aa50cee7f1f027aa9ed961c3",
+                  "observed_at_utc": "2026-10-25T02:14:53.344Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:14:52.800Z",
+                    "2026-10-25T02:14:53.344Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "1995强化班、一年后转建筑系、2001本科毕业后硕博求学、2009毕业留校为整体叙述；不拆造各阶段起止或授位日期。独立作者简介本人博士身份保留。",
+            "个人页教授、博士生导师、建筑历史与理论研究所所长与历史作者简介博士、副教授分源保留，不由观察顺序推晋升时间；2009任教不是教授/所长起年。",
+            "师从陈薇支持硕、博两阶段关系，不是两份已核原论文导师证明；导师导航未知。",
+            "原目录具名链接经阅读器解析main.htm并报告跳转main.psp，未核原始href或真实浏览器点击；当前人事未核实。",
+            "研究方向：中国建筑史与传统聚落研究；城市与建筑遗产保护理论及技术创新；城市更新与遗产保护融合实践；历史文化资源数字化保护。历史作者简介另强调跨学科、跨领域中国建筑史研究及文化遗产保护，个人页另称中国建筑史、遗产保护理论方法。"
+          ]
+        },
+        {
+          "person_id": "seu-zhengdedong-wave208",
+          "canonical_department_id": "seu-arts-design",
+          "source_candidate_sha256": "94929e023d866cde951a941ea40e7ac7ee6ca4801dbe69e65af55137992bf81f",
+          "education": [
+            {
+              "event_id": "seu-zhengdedong-wave208-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "seu-zhengdedong-profile",
+                  "source_url": "https://arts.seu.edu.cn/2011/0607/c17157a179267/page.htm",
+                  "excerpt_id": "seu-zhengdedong-profile-excerpt-4",
+                  "source_locator": "学士",
+                  "quote_sha256": "c45d99125e38cd294b92556fce26904969098150f6874c3556c15d5432fb723a",
+                  "observed_at_utc": "2026-10-25T02:15:08.687Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:15:07.965Z",
+                    "2026-10-25T02:15:08.687Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            },
+            {
+              "event_id": "seu-zhengdedong-wave208-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "seu-zhengdedong-profile",
+                  "source_url": "https://arts.seu.edu.cn/2011/0607/c17157a179267/page.htm",
+                  "excerpt_id": "seu-zhengdedong-profile-excerpt-5",
+                  "source_locator": "硕士",
+                  "quote_sha256": "f489716b52904f316d5381533c269edd79f77e0913056b5efcb129b95a25c05e",
+                  "observed_at_utc": "2026-10-25T02:15:08.687Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:15:07.965Z",
+                    "2026-10-25T02:15:08.687Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            },
+            {
+              "event_id": "seu-zhengdedong-wave208-education-3",
+              "field_evidence": [
+                {
+                  "source_id": "seu-zhengdedong-profile",
+                  "source_url": "https://arts.seu.edu.cn/2011/0607/c17157a179267/page.htm",
+                  "excerpt_id": "seu-zhengdedong-profile-excerpt-6",
+                  "source_locator": "联合培养及博士授位",
+                  "quote_sha256": "074e687dbd867891c8e0a8078c84875546f93d69ae36588687bfc2014a97278c",
+                  "observed_at_utc": "2026-10-25T02:15:08.687Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:15:07.965Z",
+                    "2026-10-25T02:15:08.687Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                },
+                {
+                  "source_id": "seu-zhengdedong-profile",
+                  "source_url": "https://arts.seu.edu.cn/2011/0607/c17157a179267/page.htm",
+                  "excerpt_id": "seu-zhengdedong-profile-excerpt-2",
+                  "source_locator": "博士标签及博士后片段",
+                  "quote_sha256": "90080ca4f46a1a83fae4a2b4558b92e4a4d2d1c9570cd25888e1217d4f49f696",
+                  "observed_at_utc": "2026-10-25T02:15:08.687Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:15:07.965Z",
+                    "2026-10-25T02:15:08.687Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            },
+            {
+              "event_id": "seu-zhengdedong-wave208-postdoc-1",
+              "field_evidence": [
+                {
+                  "source_id": "seu-zhengdedong-profile",
+                  "source_url": "https://arts.seu.edu.cn/2011/0607/c17157a179267/page.htm",
+                  "excerpt_id": "seu-zhengdedong-profile-excerpt-2",
+                  "source_locator": "博士标签及博士后片段",
+                  "quote_sha256": "90080ca4f46a1a83fae4a2b4558b92e4a4d2d1c9570cd25888e1217d4f49f696",
+                  "observed_at_utc": "2026-10-25T02:15:08.687Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:15:07.965Z",
+                    "2026-10-25T02:15:08.687Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "2004学士、2007硕士、2010博士为明确来源获授年；联合培养博士只计一个事件，两校博士称谓不代表两个法律学位，具体授位学校未知。",
+            "个人页设计系副教授、设计系副主任、旅游与景观研究所所长分项保留；齐康仅合作博士后阶段导师，非博士论文导师。",
+            "页面显示发布时间2021-12-12，不取URL中的2011/0607作为发布日期或最后修改。目录同URL浏览器Z筛选具名副教授，仅原时间窗02:16:27Z–02:16:54Z，未补精确秒。",
+            "目录显示目标arts.seu.edu.cn/zdd/list.htm未点击、raw href未核，不声称与历史职业页URL相同或内容等价；reader动态壳与浏览器具名观察区分。",
+            "本批未选具体书目和课程，不表示没有成果或教学。研究方向：景观环境设计；中西方设计艺术比较；雕塑研究。"
+          ]
+        },
+        {
+          "person_id": "seu-yemaoxin",
+          "canonical_department_id": "seu-humanities",
+          "source_candidate_sha256": "a00393fdb4ed2b9855faeacdae9f5b0b4dbe54dbcb2f912e473d3d1035372a9d",
+          "education": [
+            {
+              "event_id": "seu-yemaoxin-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "seu-yemaoxin-profile",
+                  "source_url": "https://rwxy.seu.edu.cn/ymx/main.htm",
+                  "excerpt_id": "seu-yemaoxin-profile-excerpt-5",
+                  "source_locator": "博士教育及获授",
+                  "quote_sha256": "d0f043d0f55abce9c2b0a4eb44e95e97b803c33db2475d7ee6cb371ab6e2831a",
+                  "observed_at_utc": "2026-10-25T03:59:06.835Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T03:59:06.341Z",
+                    "2026-10-25T03:59:06.835Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            },
+            {
+              "event_id": "seu-yemaoxin-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "seu-yemaoxin-profile",
+                  "source_url": "https://rwxy.seu.edu.cn/ymx/main.htm",
+                  "excerpt_id": "seu-yemaoxin-profile-excerpt-7",
+                  "source_locator": "项目博士标签",
+                  "quote_sha256": "02b18da9f269fe2ab109b2ed5ff0247a51a135c8a054e5f0c8c757663a72f302",
+                  "observed_at_utc": "2026-10-25T03:59:06.835Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T03:59:06.341Z",
+                    "2026-10-25T03:59:06.835Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            },
+            {
+              "event_id": "seu-yemaoxin-education-3",
+              "field_evidence": [
+                {
+                  "source_id": "seu-yemaoxin-profile",
+                  "source_url": "https://rwxy.seu.edu.cn/ymx/main.htm",
+                  "excerpt_id": "seu-yemaoxin-profile-excerpt-8",
+                  "source_locator": "硕士教育及获授",
+                  "quote_sha256": "fef5df103dcd3ea1907b19d79f4052d363bd4e743bf9f7d5f7ce839da4d53550",
+                  "observed_at_utc": "2026-10-25T03:59:06.835Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T03:59:06.341Z",
+                    "2026-10-25T03:59:06.835Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            },
+            {
+              "event_id": "seu-yemaoxin-training-1",
+              "field_evidence": [
+                {
+                  "source_id": "seu-yemaoxin-profile",
+                  "source_url": "https://rwxy.seu.edu.cn/ymx/main.htm",
+                  "excerpt_id": "seu-yemaoxin-profile-excerpt-6",
+                  "source_locator": "访问学者",
+                  "quote_sha256": "7c4e9c4042e9f037bec94e5fef4bacf877efb30c3880530fbfb92211ef067e16",
+                  "observed_at_utc": "2026-10-25T03:59:06.835Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T03:59:06.341Z",
+                    "2026-10-25T03:59:06.835Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "原本人硕士生导师资格是指导他人，不是本人求学导师；副教授及2020-10至2024-03讲师职业行分别保留，当前人事未独立核验。",
+            "日本东北大学博士（文学）、硕士（文学）明确来源获授；同期国际安全学项目不能累加第二博士，原学习期末不作为授位年月。",
+            "2018美国Northeastern University政治学系访问学者与日本东北大学不是同一机构。",
+            "社会学系具名目录及原人文学院社会学系职业单位完整保留；复用人文学院展示节点不独立认证行政层级。目录具名链接未点击，raw href与目标未核。",
+            "研究方向：环境社会学、组织社会学、灾害社会学、数字社会学。两作品保原章节/译者类型，个人页“图书章节”分类不作为整书或完整译者名单认证。"
+          ]
+        },
+        {
+          "person_id": "seu-huhanhui",
+          "canonical_department_id": "seu-economics-management",
+          "source_candidate_sha256": "a00393fdb4ed2b9855faeacdae9f5b0b4dbe54dbcb2f912e473d3d1035372a9d",
+          "education": [
+            {
+              "event_id": "seu-huhanhui-education-1",
+              "field_evidence": [
+                {
+                  "source_id": "seu-huhanhui-profile",
+                  "source_url": "https://em.seu.edu.cn/hhh/list.htm",
+                  "excerpt_id": "seu-huhanhui-profile-excerpt-2",
+                  "source_locator": "本科教育片段",
+                  "quote_sha256": "11ebad2dc8e446e91e56a2a474e5c4413f2cf9b65dc88cd62adfd7d720e3a6f6",
+                  "observed_at_utc": "2026-10-25T04:00:56.546Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T04:00:55.974Z",
+                    "2026-10-25T04:00:56.546Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            },
+            {
+              "event_id": "seu-huhanhui-education-2",
+              "field_evidence": [
+                {
+                  "source_id": "seu-huhanhui-profile",
+                  "source_url": "https://em.seu.edu.cn/hhh/list.htm",
+                  "excerpt_id": "seu-huhanhui-profile-excerpt-3",
+                  "source_locator": "硕士教育片段",
+                  "quote_sha256": "75a7cbbb4ea9f7f41b0dea156c19a9338c97264c2b4b93da79f1bb8c5c3dffdf",
+                  "observed_at_utc": "2026-10-25T04:00:56.546Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T04:00:55.974Z",
+                    "2026-10-25T04:00:56.546Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "原教授与经济管理学院官网归属可见，但目录只返回栏目壳未匹配本人姓名；不能据未见推退休、不在职或不存在名录。",
+            "南京工学院基础科学系数学师资班本科、管理科学与工程系管理工程硕士阶段均原样保留；具体学位名称/授位日期未知，不否认学习，不自动将历史校名归并东南大学。",
+            "无原博士教育或本人导师材料，不补博士/师承；空任职数组不否认原教授职业身份。",
+            "研究领域保留管理科学与工程：创新管理与创新区动态规划、定量化管理与评价方法（网络计划技术、数据包络分析）；产业经济学：网络型产业竞争与规制、集团化企业治理与产业集群转型；学科方向不是行政系归属。",
+            "专著/译著是本人官网栏目归属，未列完整作者或译者；普费弗为原著作者，不能代填本人原著作者或唯一译者。"
+          ]
+        }
+      ],
+      "orgs": [
+        {
+          "id": "seu-architecture-history-theory",
+          "name": "建筑历史与理论研究所",
+          "type": "department",
+          "school_id": "seu",
+          "parent_id": "seu-architecture",
+          "campus_ids": [],
+          "field_evidence": [
+            {
+              "source_id": "seu-shenyang-profile",
+              "source_url": "https://arch.seu.edu.cn/sy_43102/main.psp",
+              "excerpt_id": "seu-shenyang-profile-excerpt-1",
+              "source_locator": "职务职称片段",
+              "quote_sha256": "4e9f9cbe567fdd35368ee46b7f442094d82ca8f21be4185f09c5cfaacf44595a",
+              "observed_at_utc": "2026-10-25T02:15:02.176Z",
+              "observed_interval_utc": [
+                "2026-10-25T02:15:01.620Z",
+                "2026-10-25T02:15:02.176Z"
+              ],
+              "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+            },
+            {
+              "source_id": "seu-architecture-history-directory",
+              "source_url": "https://arch.seu.edu.cn/16784/list.htm",
+              "excerpt_id": "seu-architecture-history-directory-excerpt-1",
+              "source_locator": "栏目",
+              "quote_sha256": "59998171c57b826254851d53088690eb2bc0a6b326c71c42807b27d78054b87b",
+              "observed_at_utc": "2026-10-25T02:14:58.905Z",
+              "observed_interval_utc": [
+                "2026-10-25T02:14:58.449Z",
+                "2026-10-25T02:14:58.905Z"
+              ],
+              "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+            },
+            {
+              "source_id": "seu-architecture-history-directory",
+              "source_url": "https://arch.seu.edu.cn/16784/list.htm",
+              "excerpt_id": "seu-architecture-history-directory-excerpt-2",
+              "source_locator": "阅读器名录条目",
+              "quote_sha256": "0605c35441c357ac1dfbb2a2123285a399b3e36f487a44a890d3297e862a1d02",
+              "observed_at_utc": "2026-10-25T02:14:58.905Z",
+              "observed_interval_utc": [
+                "2026-10-25T02:14:58.449Z",
+                "2026-10-25T02:14:58.905Z"
+              ],
+              "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+            }
+          ],
+          "source_parent_id": null,
+          "parent_scope": "按原个人页完整单位及目录栏目作展示归组，非法律行政隶属核验。",
+          "source_id": "seu-shenyang-profile",
+          "source_url": "https://arch.seu.edu.cn/sy_43102/main.psp",
+          "source_locator": "职务职称片段"
+        },
+        {
+          "id": "seu-arts-design",
+          "name": "设计系",
+          "type": "department",
+          "school_id": "seu",
+          "parent_id": "seu-arts",
+          "campus_ids": [],
+          "field_evidence": [
+            {
+              "source_id": "seu-zhengdedong-profile",
+              "source_url": "https://arts.seu.edu.cn/2011/0607/c17157a179267/page.htm",
+              "excerpt_id": "seu-zhengdedong-profile-excerpt-1",
+              "source_locator": "姓名系所职称",
+              "quote_sha256": "34696811f4d2ffa76040e391d668d62c57d3f66c238ab021716919ac4ea19e3c",
+              "observed_at_utc": "2026-10-25T02:15:08.687Z",
+              "observed_interval_utc": [
+                "2026-10-25T02:15:07.965Z",
+                "2026-10-25T02:15:08.687Z"
+              ],
+              "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+            },
+            {
+              "source_id": "seu-zhengdedong-profile",
+              "source_url": "https://arts.seu.edu.cn/2011/0607/c17157a179267/page.htm",
+              "excerpt_id": "seu-zhengdedong-profile-excerpt-3",
+              "source_locator": "职业归属片段",
+              "quote_sha256": "ad791307725e8a0b068810c8be5749074f400a479647bfb541c5b641ce4817cc",
+              "observed_at_utc": "2026-10-25T02:15:08.687Z",
+              "observed_interval_utc": [
+                "2026-10-25T02:15:07.965Z",
+                "2026-10-25T02:15:08.687Z"
+              ],
+              "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+            }
+          ],
+          "source_parent_id": null,
+          "parent_scope": "按原个人页完整单位及目录栏目作展示归组，非法律行政隶属核验。",
+          "source_id": "seu-zhengdedong-profile",
+          "source_url": "https://arts.seu.edu.cn/2011/0607/c17157a179267/page.htm",
+          "source_locator": "姓名系所职称"
+        },
+        {
+          "id": "seu-economics-management",
+          "name": "经济管理学院",
+          "type": "college",
+          "school_id": "seu",
+          "parent_id": null,
+          "campus_ids": [],
+          "field_evidence": [
+            {
+              "source_id": "seu-huhanhui-profile",
+              "source_url": "https://em.seu.edu.cn/hhh/list.htm",
+              "excerpt_id": "seu-huhanhui-profile-excerpt-8",
+              "source_locator": "官方站点归属",
+              "quote_sha256": "4ef063166f87ce5d753ff3831265347cfdb1c34668531414e93017de2281ba44",
+              "observed_at_utc": "2026-10-25T04:00:56.546Z",
+              "observed_interval_utc": [
+                "2026-10-25T04:00:55.974Z",
+                "2026-10-25T04:00:56.546Z"
+              ],
+              "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+            }
+          ],
+          "source_parent_id": null,
+          "parent_scope": "按原个人页完整单位及目录栏目作展示归组，非法律行政隶属核验。",
+          "source_id": "seu-huhanhui-profile",
+          "source_url": "https://em.seu.edu.cn/hhh/list.htm",
+          "source_locator": "官方站点归属"
+        }
+      ],
+      "classification_corrections": [
+        {
+          "person_id": "seu-shenyang-wave208",
+          "event_id": "seu-shenyang-wave208-education-3",
+          "old_value": null,
+          "new_value": true,
+          "identity_quote_sha256": "aa1590022bfccfc78f24627a5ee7043dc0a59076aa50cee7f1f027aa9ed961c3",
+          "field_evidence": [
+            {
+              "source_id": "seu-shenyang-book-profile",
+              "source_url": "https://arch.seu.edu.cn/2016/0510/c9122a173283/page.htm",
+              "excerpt_id": "seu-shenyang-book-profile-excerpt-2",
+              "source_locator": "求学句",
+              "quote_sha256": "1e615bfc6db08302829f9a9cd954120ba4efb8d21a463d3e85ae914083af5a24",
+              "observed_at_utc": "2026-10-25T02:14:53.344Z",
+              "observed_interval_utc": [
+                "2026-10-25T02:14:52.800Z",
+                "2026-10-25T02:14:53.344Z"
+              ],
+              "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+            },
+            {
+              "source_id": "seu-shenyang-book-profile",
+              "source_url": "https://arch.seu.edu.cn/2016/0510/c9122a173283/page.htm",
+              "excerpt_id": "seu-shenyang-book-profile-excerpt-1",
+              "source_locator": "作者标签",
+              "quote_sha256": "aa1590022bfccfc78f24627a5ee7043dc0a59076aa50cee7f1f027aa9ed961c3",
+              "observed_at_utc": "2026-10-25T02:14:53.344Z",
+              "observed_interval_utc": [
+                "2026-10-25T02:14:52.800Z",
+                "2026-10-25T02:14:53.344Z"
+              ],
+              "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+            }
+          ],
+          "exact_event_delta": [
+            {
+              "path": "/degree_award_basis",
+              "old_present": false,
+              "new_value": "同一具名作者简介明确本人博士身份，唯一博士阶段对应；未核证书或授位年月。"
+            },
+            {
+              "path": "/degree_awarded",
+              "old_present": true,
+              "old_value": null,
+              "new_value": true
+            },
+            {
+              "path": "/event_kind",
+              "old_present": true,
+              "old_value": "degree_study",
+              "new_value": "degree"
+            },
+            {
+              "path": "/field_evidence",
+              "old_present": true,
+              "old_value": [
+                {
+                  "source_id": "seu-shenyang-book-profile",
+                  "source_url": "https://arch.seu.edu.cn/2016/0510/c9122a173283/page.htm",
+                  "excerpt_id": "seu-shenyang-book-profile-excerpt-2",
+                  "source_locator": "求学句",
+                  "quote_sha256": "1e615bfc6db08302829f9a9cd954120ba4efb8d21a463d3e85ae914083af5a24",
+                  "observed_at_utc": "2026-10-25T02:14:53.344Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:14:52.800Z",
+                    "2026-10-25T02:14:53.344Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ],
+              "new_value": [
+                {
+                  "source_id": "seu-shenyang-book-profile",
+                  "source_url": "https://arch.seu.edu.cn/2016/0510/c9122a173283/page.htm",
+                  "excerpt_id": "seu-shenyang-book-profile-excerpt-2",
+                  "source_locator": "求学句",
+                  "quote_sha256": "1e615bfc6db08302829f9a9cd954120ba4efb8d21a463d3e85ae914083af5a24",
+                  "observed_at_utc": "2026-10-25T02:14:53.344Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:14:52.800Z",
+                    "2026-10-25T02:14:53.344Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                },
+                {
+                  "source_id": "seu-shenyang-book-profile",
+                  "source_url": "https://arch.seu.edu.cn/2016/0510/c9122a173283/page.htm",
+                  "excerpt_id": "seu-shenyang-book-profile-excerpt-1",
+                  "source_locator": "作者标签",
+                  "quote_sha256": "aa1590022bfccfc78f24627a5ee7043dc0a59076aa50cee7f1f027aa9ed961c3",
+                  "observed_at_utc": "2026-10-25T02:14:53.344Z",
+                  "observed_interval_utc": [
+                    "2026-10-25T02:14:52.800Z",
+                    "2026-10-25T02:14:53.344Z"
+                  ],
+                  "observation_time_basis": "原观察区间及记录端点；仅窗口者端点保持null，不补精确网络时间。"
+                }
+              ]
+            },
+            {
+              "path": "/include_in_degree_filters",
+              "old_present": true,
+              "old_value": false,
+              "new_value": true
+            },
+            {
+              "path": "/preclassification_event_kind",
+              "old_present": false,
+              "new_value": "degree_study"
+            },
+            {
+              "path": "/preclassification_include_in_degree_filters",
+              "old_present": false,
+              "new_value": false
+            },
+            {
+              "path": "/source_degree_awarded",
+              "old_present": false,
+              "new_value": null
+            }
+          ]
+        }
+      ],
+      "organization_identity_scope": "学院与下级目录/职业名称支持显示归组，不独立核实法律行政层级；共享学院由另一组唯一定义，叶复用既有人文学院而原社会学系完整保留。",
+      "teaching_scope": "沈原主讲5课程及本科年级/博士层级；叶原本科/研究生栏目2课程，不凭采集locator新增主讲。",
+      "publication_scope": "沈作者/主编/汾河流域局部贡献分别保留；叶章节作者/主编与原著作者/译者分离；胡译著栏目不生成完整译者名单。"
+    },
+    {
+      "baseline_profiles": 1004,
+      "org_mapping": [
+        {
+          "person_id": "seu-bianshaobin",
+          "source_department": "人文学院哲学与科学系",
+          "canonical_department_id": "seu-humanities-philosophy-science"
+        },
+        {
+          "person_id": "seu-liyinan",
+          "source_department": "艺术学院",
+          "canonical_department_id": "seu-arts"
+        },
+        {
+          "person_id": "seu-zhangjingjing-sociology",
+          "source_department": "人文学院（官方域及副院长页面上下文）",
+          "canonical_department_id": "seu-humanities"
+        }
+      ],
+      "org_scope": "卞同校同名哲学与科学系复用旧节点，原完整人文学院系名保留；张仅人文学院上下文归组，不认证副院长所在单位；李学院新节点与旧学院/艺术理论系复合身份不混。",
+      "degree_changes": [
+        {
+          "person_id": "seu-zhangjingjing-sociology",
+          "education_event_id": "seu-zhangjingjing-sociology-education-1",
+          "old": null,
+          "new": true,
+          "exact_qualification": "2003年至2007年，东南大学人文学院社会学系，法学学士",
+          "scope": "具体本人资格列举，保留学习区间，不推授位日期或证书核验。",
+          "evidence_sha256": "aca2ce15baa7b6eef7d35da023c2480b5faa6d8fbeff673109a3b85127805f9a"
+        },
+        {
+          "person_id": "seu-zhangjingjing-sociology",
+          "education_event_id": "seu-zhangjingjing-sociology-education-2",
+          "old": null,
+          "new": true,
+          "exact_qualification": "2007年至2010年，东南大学人文学院哲学与科学系，哲学硕士",
+          "scope": "具体本人资格列举，保留学习区间，不推授位日期或证书核验。",
+          "evidence_sha256": "a9f7a822389896d2cfb82df96ff9f554e6a89faa525108a29afda00580f05338"
+        },
+        {
+          "person_id": "seu-zhangjingjing-sociology",
+          "education_event_id": "seu-zhangjingjing-sociology-education-3",
+          "old": null,
+          "new": true,
+          "exact_qualification": "2010年至2014年，新西兰奥克兰大学社会学系，社会学博士（教育部公派）",
+          "scope": "具体本人资格列举，保留学习区间，不推授位日期或证书核验。",
+          "evidence_sha256": "8c8105894be3f7873465b44f0b79a531566c60a016de326f51b91c2d2c88bdec"
+        }
+      ],
+      "source_scope": "卞仅首个个人页必要片段；李本硕共同区间不拆；张公开摘要不冒原文，原必要职业行单独核验。",
+      "supplements_scope": "张博士生/硕士生导师资格、2018计划、老年社会学研究方向及两个已选作品原标签按同页必要原文保留；不纳另篇英文论文，CSSCI不认证现行收录，出版计划不当获奖。",
+      "counts": {
+        "education": 8,
+        "appointments": 1,
+        "mentors": 0,
+        "publications": 6,
+        "teaching": 0,
+        "degree_true_false_null": [
+          6,
+          2,
+          0
+        ]
+      }
+    }
+  ],
+  "mapping": "仅追加十一名已审来源人物及组织展示节点；旧1004事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}

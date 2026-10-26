@@ -15,13 +15,14 @@ const pkuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-pku1
 const zjuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-zju7-source-mapping.json',import.meta.url)));
 const mixedMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-neu4-cqu3-sysu2-source-mapping.json',import.meta.url)));
 const njuSecondMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nju11-second-source-mapping.json',import.meta.url)));
+const seuSecondMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-seu11-second-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-cau12-source-mapping.json',import.meta.url)));
 test('actual CAU cohort exactly preserves independently reviewed fields, identities and scope',()=>{
  assert.deepEqual(mapping.people.map(p=>p.person_id),["cau-chenjingyu","cau-rendongyang","cau-ma-chao","cau-xu-guangyuan","cau-li-guangyao","cau-pengchen-wave98","cau-malingjun","cau-guojie","cau-yinyiyong","cau-gaoyu","cau-sunqingzhong","cau-yangdong-foodbiochemistry"]);
  assert(mapping.people.every(p=>p.data_batch_id==='faculty-batch-cau12-independent-20261026'));
- assert.equal(db.people.length,873+mapping.people.length+fduMapping.people.length+mucMapping.people.length+nwsuafMapping.people.length+oucMapping.people.length+lzuMapping.people.length+sjtuMapping.people.length+thuMapping.people.length+pkuMapping.people.length+zjuMapping.people.length+mixedMapping.people.length+njuSecondMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,873+mapping.people.length+fduMapping.people.length+mucMapping.people.length+nwsuafMapping.people.length+oucMapping.people.length+lzuMapping.people.length+sjtuMapping.people.length+thuMapping.people.length+pkuMapping.people.length+zjuMapping.people.length+mixedMapping.people.length+njuSecondMapping.people.length+seuSecondMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const expected of mapping.people){
   const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);
   assert.equal(typeof actual.department,'string');assert(actual.department.length>0);
