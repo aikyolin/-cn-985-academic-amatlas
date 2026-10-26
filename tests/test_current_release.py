@@ -44,6 +44,8 @@ USTC_MAPPING_SHA256 = '6b931ee702f8d3335fc341900e55256f271c3be033c4a0b0b8837e36c
 CAU_MAPPING_SHA256 = 'd8c1919b7ec8584ba83541b06e3a079ded19713228cd9f4e7d06124b83d0b7c5'
 FDU_MAPPING_SHA256 = 'd372c76a76377a489c611fd545d4159a7c2b6303fa51e8e5fea2ae37124cc22c'
 MUC_MAPPING_SHA256 = 'c17381fd33baf667f456db11bb6609db73420c0aefa4f0fd656a639e659be562'
+NWSUAF_MAPPING_SHA256 = '67645fcbc20b2fe6041f45e87fa1756acf6bfc077506561669e293670dc8f3e3'
+NWSUAF_IDS = ['nwsuaf-chengzhihui', 'nwsuaf-dinglong', 'nwsuaf-wufuyong', 'nwsuaf-xuchenyang', 'nwsuaf-chenhuatao', 'nwsuaf-gaolexi', 'nwsuaf-xugong', 'nwsuaf-yangzhaofu', 'nwsuaf-yaoliuyang', 'nwsuaf-liuweiguo', 'nwsuaf-lironghua', 'nwsuaf-hailijuan']
 MUC_IDS = ['muc-zhangbufeng', 'muc-fanxiaoqing', 'muc-wutianyu', 'muc-linweili', 'muc-lichengming', 'muc-yangchunqiang', 'muc-mujing', 'muc-zhangliang', 'muc-chailing', 'muc-zhangmin-anthropology', 'muc-wuda', 'muc-qinlili']
 FDU_IDS = ['fdu-huanning', 'fdu-fengping', 'fdu-zhaodongyuan', 'fdu-penghuisheng', 'fdu-huyan', 'fdu-suntao', 'fdu-anjiesheng', 'fdu-zhangmingjun', 'fdu-jiangyixuan', 'fdu-jiangping', 'fdu-zhangnaigen', 'fdu-zhuxiuping']
 CAU_IDS = ['cau-chenjingyu', 'cau-rendongyang', 'cau-ma-chao', 'cau-xu-guangyuan', 'cau-li-guangyao', 'cau-pengchen-wave98', 'cau-malingjun', 'cau-guojie', 'cau-yinyiyong', 'cau-gaoyu', 'cau-sunqingzhong', 'cau-yangdong-foodbiochemistry']
@@ -209,8 +211,13 @@ def muc_mapping():
     assert hashlib.sha256(raw).hexdigest() == MUC_MAPPING_SHA256, 'Reviewed independent MUC twelve-person mapping changed'
     return json.loads(raw)
 
+def nwsuaf_mapping():
+    raw = (ROOT / 'tests/fixtures/independent-nwsuaf12-source-mapping.json').read_bytes()
+    assert hashlib.sha256(raw).hexdigest() == NWSUAF_MAPPING_SHA256, 'Reviewed independent NWSUAF twelve-person mapping changed'
+    return json.loads(raw)
+
 def reviewed_additions():
-    first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, thirteenth, fourteenth, fifteenth, sixteenth, seventeenth, eighteenth, nineteenth, twentieth, twenty_first, twenty_second, twenty_third, twenty_fourth, twenty_fifth, twenty_sixth, twenty_seventh = mapping(), next_mapping(), seu_mapping(), scu_mapping(), uestc_mapping(), hnu_mapping(), bnu_mapping(), tju_mapping(), nku_mapping(), dlut_mapping(), jlu_mapping(), sdu_mapping(), csu_mapping(), hust_mapping(), whu_mapping(), xjtu_mapping(), ruc_mapping(), ecnu_mapping(), buaa_mapping(), tongji_mapping(), bit_mapping(), nwpu_mapping(), scut_mapping(), ustc_mapping(), cau_mapping(), fdu_mapping(), muc_mapping()
+    first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, thirteenth, fourteenth, fifteenth, sixteenth, seventeenth, eighteenth, nineteenth, twentieth, twenty_first, twenty_second, twenty_third, twenty_fourth, twenty_fifth, twenty_sixth, twenty_seventh, twenty_eighth = mapping(), next_mapping(), seu_mapping(), scu_mapping(), uestc_mapping(), hnu_mapping(), bnu_mapping(), tju_mapping(), nku_mapping(), dlut_mapping(), jlu_mapping(), sdu_mapping(), csu_mapping(), hust_mapping(), whu_mapping(), xjtu_mapping(), ruc_mapping(), ecnu_mapping(), buaa_mapping(), tongji_mapping(), bit_mapping(), nwpu_mapping(), scut_mapping(), ustc_mapping(), cau_mapping(), fdu_mapping(), muc_mapping(), nwsuaf_mapping()
     assert [p['person_id'] for p in first['people']] == FIRST_IDS
     assert [p['person_id'] for p in second['people']] == NEXT_IDS
     assert [p['person_id'] for p in third['people']] == SEU_IDS
@@ -238,7 +245,8 @@ def reviewed_additions():
     assert [p['person_id'] for p in twenty_fifth['people']] == CAU_IDS
     assert [p['person_id'] for p in twenty_sixth['people']] == FDU_IDS
     assert [p['person_id'] for p in twenty_seventh['people']] == MUC_IDS
-    return {key: first[key] + second[key] + third[key] + fourth[key] + fifth[key] + sixth[key] + seventh[key] + eighth[key] + ninth[key] + tenth[key] + eleventh[key] + twelfth[key] + thirteenth[key] + fourteenth[key] + fifteenth[key] + sixteenth[key] + seventeenth[key] + eighteenth[key] + nineteenth[key] + twentieth[key] + twenty_first[key] + twenty_second[key] + twenty_third[key] + twenty_fourth[key] + twenty_fifth[key] + twenty_sixth[key] + twenty_seventh[key] for key in ('people', 'org_units', 'profile_batches')}
+    assert [p['person_id'] for p in twenty_eighth['people']] == NWSUAF_IDS
+    return {key: first[key] + second[key] + third[key] + fourth[key] + fifth[key] + sixth[key] + seventh[key] + eighth[key] + ninth[key] + tenth[key] + eleventh[key] + twelfth[key] + thirteenth[key] + fourteenth[key] + fifteenth[key] + sixteenth[key] + seventeenth[key] + eighteenth[key] + nineteenth[key] + twentieth[key] + twenty_first[key] + twenty_second[key] + twenty_third[key] + twenty_fourth[key] + twenty_fifth[key] + twenty_sixth[key] + twenty_seventh[key] + twenty_eighth[key] for key in ('people', 'org_units', 'profile_batches')}
 
 def validate_append(current, previous, additions):
     assert set(current) == set(previous), 'Unlisted canonical root fields'
@@ -247,7 +255,7 @@ def validate_append(current, previous, additions):
             assert current[key] == value + additions[key], 'Historical or new source fact changed: ' + key
         else:
             assert current[key] == value, 'Unlisted change: ' + key
-    assert [x['person_id'] for x in current['people'][len(previous['people']):]] == FIRST_IDS + NEXT_IDS + SEU_IDS + SCU_IDS + UESTC_IDS + HNU_IDS + BNU_IDS + TJU_IDS + NKU_IDS + DLUT_IDS + JLU_IDS + SDU_IDS + CSU_IDS + HUST_IDS + WHU_IDS + XJTU_IDS + RUC_IDS + ECNU_IDS + BUAA_IDS + TONGJI_IDS + BIT_IDS + NWPU_IDS + SCUT_IDS + USTC_IDS + CAU_IDS + FDU_IDS + MUC_IDS
+    assert [x['person_id'] for x in current['people'][len(previous['people']):]] == FIRST_IDS + NEXT_IDS + SEU_IDS + SCU_IDS + UESTC_IDS + HNU_IDS + BNU_IDS + TJU_IDS + NKU_IDS + DLUT_IDS + JLU_IDS + SDU_IDS + CSU_IDS + HUST_IDS + WHU_IDS + XJTU_IDS + RUC_IDS + ECNU_IDS + BUAA_IDS + TONGJI_IDS + BIT_IDS + NWPU_IDS + SCUT_IDS + USTC_IDS + CAU_IDS + FDU_IDS + MUC_IDS + NWSUAF_IDS
     assert len({p['person_id'] for p in current['people']}) == len(current['people'])
 
 class CurrentRelease(unittest.TestCase):
@@ -444,9 +452,16 @@ class CurrentRelease(unittest.TestCase):
             expected = self.previous[key] + [item for m in previous_mappings for item in m[key]]
             self.assertEqual(self.actual[key][:len(expected)], expected, key)
 
+    def test_published_909_prefix_preserves_all_previous_source_mappings(self):
+        previous_mappings = (mapping(), next_mapping(), seu_mapping(), scu_mapping(), uestc_mapping(), hnu_mapping(), bnu_mapping(), tju_mapping(), nku_mapping(), dlut_mapping(), jlu_mapping(), sdu_mapping(), csu_mapping(), hust_mapping(), whu_mapping(), xjtu_mapping(), ruc_mapping(), ecnu_mapping(), buaa_mapping(), tongji_mapping(), bit_mapping(), nwpu_mapping(), scut_mapping(), ustc_mapping(), cau_mapping(), fdu_mapping(), muc_mapping())
+        self.assertEqual(len(self.previous['people']) + sum(len(m['people']) for m in previous_mappings), 909)
+        for key in ('people', 'org_units', 'profile_batches'):
+            expected = self.previous[key] + [item for m in previous_mappings for item in m[key]]
+            self.assertEqual(self.actual[key][:len(expected)], expected, key)
+
     def test_old_fact_deletion_reordering_and_unknown_promotions_fail(self):
         # Mutate each independently protected era, not just whichever person is last.
-        for index in (0, 612, 614, 624, 634, 645, 655, 665, 677, 689, 701, 713, 725, 737, 749, 761, 770, 782, 790, 802, 814, 826, 838, 850, 861, 873, 885, 897):
+        for index in (0, 612, 614, 624, 634, 645, 655, 665, 677, 689, 701, 713, 725, 737, 749, 761, 770, 782, 790, 802, 814, 826, 838, 850, 861, 873, 885, 897, 909):
             for key, value in [('name', 'invented'), ('quick_link_eligible', True)]:
                 candidate = copy.deepcopy(self.actual)
                 if candidate['people'][index].get(key) == value:
@@ -644,9 +659,42 @@ class CurrentRelease(unittest.TestCase):
             finally:
                 wb.close()
 
+    def test_nwsuaf_overview_preserves_independent_semantic_limits(self):
+        from openpyxl import load_workbook
+        cases = {'nwsuaf-chengzhihui': ['离退时间2025年6月', '不推退休原因、返聘', '历史叙述'], 'nwsuaf-xuchenyang': ['2010-06农学学士与文学学士', '不推法律双学位制度'], 'nwsuaf-chenhuatao': ['3阶段导师', '2合作导师', '非原论文认证'], 'nwsuaf-gaolexi': ['首都医科大学仅硕士研究生学习，授位未知', '张涌仅博士后阶段导师'], 'nwsuaf-xugong': ['结构化只采用上段4门，不合并为同时5门', '药物合成'], 'nwsuaf-yangzhaofu': ['加拿大圭儿夫大学', '参编不是独著或主编'], 'nwsuaf-yaoliuyang': ['仅明示学士与博士两学位，不另造硕士', '资助方，不是接收单位'], 'nwsuaf-liuweiguo': ['森林资源管理（原森林经理）教研室', '智慧林业与森林生态系'], 'nwsuaf-lironghua': ['两篇书目没有作者表', '不凭本人页面归属补本人为作者'], 'nwsuaf-hailijuan': ['个人页讲师、目录副教授两来源并列', '不推更新先后或晋升日期']}
+        people = {p['person_id']: p for p in nwsuaf_mapping()['people']}
+        for person_id, terms in cases.items():
+            person = people[person_id]
+            wb = load_workbook(ROOT / 'site/exports' / (person['department_id'] + '.xlsx'), data_only=False)
+            try:
+                rows = [row for row in wb['总览'].iter_rows(min_row=2, values_only=True) if row[0] == person['name']]
+                self.assertEqual(len(rows), 1, person_id)
+                text = '\n'.join(str(value) for value in rows[0] if value is not None)
+                for term in terms:
+                    self.assertIn(term, text, (person_id, term))
+            finally:
+                wb.close()
+
+    def test_nwsuaf_non_degree_roles_survive_actual_experience_worksheets(self):
+        from openpyxl import load_workbook
+        people = {p['person_id']: p for p in nwsuaf_mapping()['people']}
+        cases = [('nwsuaf-xugong', '原明确角色：博士后。', 1),
+                 ('nwsuaf-yangzhaofu', '原明确角色：访问学者。', 2)]
+        for person_id, phrase, count in cases:
+            person = people[person_id]
+            wb = load_workbook(ROOT / 'site/exports' / (person['department_id'] + '.xlsx'), data_only=False)
+            try:
+                rows = [row for row in wb['经历'].iter_rows(min_row=2, values_only=True) if row[0] == person['name']]
+                matched = [row for row in rows if phrase in str(row[14])]
+                self.assertEqual(len(matched), count, person_id)
+                for row in matched:
+                    self.assertIs(row[11], False, person_id)
+            finally:
+                wb.close()
+
     def test_every_affected_workbook_exactly_matches_reviewed_members_and_fields(self):
         from openpyxl import load_workbook
-        departments = {p['department_id'] for p in next_mapping()['people'] + seu_mapping()['people'] + scu_mapping()['people'] + uestc_mapping()['people'] + hnu_mapping()['people'] + bnu_mapping()['people'] + tju_mapping()['people'] + nku_mapping()['people'] + dlut_mapping()['people'] + jlu_mapping()['people'] + sdu_mapping()['people'] + csu_mapping()['people'] + hust_mapping()['people'] + whu_mapping()['people'] + xjtu_mapping()['people'] + ruc_mapping()['people'] + ecnu_mapping()['people'] + buaa_mapping()['people'] + tongji_mapping()['people'] + bit_mapping()['people'] + nwpu_mapping()['people'] + scut_mapping()['people'] + ustc_mapping()['people'] + cau_mapping()['people'] + fdu_mapping()['people'] + muc_mapping()['people']}
+        departments = {p['department_id'] for p in next_mapping()['people'] + seu_mapping()['people'] + scu_mapping()['people'] + uestc_mapping()['people'] + hnu_mapping()['people'] + bnu_mapping()['people'] + tju_mapping()['people'] + nku_mapping()['people'] + dlut_mapping()['people'] + jlu_mapping()['people'] + sdu_mapping()['people'] + csu_mapping()['people'] + hust_mapping()['people'] + whu_mapping()['people'] + xjtu_mapping()['people'] + ruc_mapping()['people'] + ecnu_mapping()['people'] + buaa_mapping()['people'] + tongji_mapping()['people'] + bit_mapping()['people'] + nwpu_mapping()['people'] + scut_mapping()['people'] + ustc_mapping()['people'] + cau_mapping()['people'] + fdu_mapping()['people'] + muc_mapping()['people'] + nwsuaf_mapping()['people']}
         expected_people = self.previous['people'] + self.additions['people']
         for department in departments:
             members = [p for p in expected_people if p['department_id'] == department]
@@ -666,7 +714,7 @@ class CurrentRelease(unittest.TestCase):
     def test_existing_department_old_rows_survive_member_append(self):
         from openpyxl import load_workbook
         existing = {p['department_id'] for p in self.previous['people']}
-        affected = existing & {p['department_id'] for p in uestc_mapping()['people'] + tju_mapping()['people'] + nku_mapping()['people'] + whu_mapping()['people'] + xjtu_mapping()['people'] + ruc_mapping()['people'] + ecnu_mapping()['people'] + buaa_mapping()['people'] + tongji_mapping()['people'] + bit_mapping()['people'] + nwpu_mapping()['people'] + scut_mapping()['people'] + ustc_mapping()['people'] + cau_mapping()['people'] + fdu_mapping()['people'] + muc_mapping()['people']}
+        affected = existing & {p['department_id'] for p in uestc_mapping()['people'] + tju_mapping()['people'] + nku_mapping()['people'] + whu_mapping()['people'] + xjtu_mapping()['people'] + ruc_mapping()['people'] + ecnu_mapping()['people'] + buaa_mapping()['people'] + tongji_mapping()['people'] + bit_mapping()['people'] + nwpu_mapping()['people'] + scut_mapping()['people'] + ustc_mapping()['people'] + cau_mapping()['people'] + fdu_mapping()['people'] + muc_mapping()['people'] + nwsuaf_mapping()['people']}
         self.assertEqual(affected, {'uestc-public-administration', 'uestc-applied-math-center', 'tju-math', 'nku-economics', 'whu-math-stat', 'ruc-sociology', 'scut-math'})
         for department in affected:
             old_people = [p for p in self.previous['people'] if p['department_id'] == department]
