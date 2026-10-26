@@ -1,3 +1,4 @@
+from atlas_test_io import load_atlas
 from school_scope import hit_atlas, hit_rosters
 """Regression boundaries for the reviewed microwave checkpoint; never writes exports."""
 import copy,hashlib,json,pathlib,sys,unittest
@@ -9,9 +10,9 @@ from validate_queue import validate_queue
 class MicrowaveTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.data=hit_atlas(json.loads((ROOT/'data/atlas.json').read_text()));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.people={p['name']:p for p in cls.data['people']};cls.batch=[p for p in cls.data['people']if p.get('data_batch_id','').startswith('faculty-batch-harbin-eie-fifth-')]
+  cls.data=hit_atlas(load_atlas(ROOT/'data/atlas.json'));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.people={p['name']:p for p in cls.data['people']};cls.batch=[p for p in cls.data['people']if p.get('data_batch_id','').startswith('faculty-batch-harbin-eie-fifth-')]
  def test_global_counts_and_unchanged_pending_layer(self):
-  d=self.data;self.assertTrue(validate(d));self.assertEqual([len(d['people']),len(d['pending_people']),sum('harbin'in p['campus_ids']for p in d['people'])],[257,42,159]);self.assertEqual([sum(len(p.get(k,[]))for p in d['people'])for k in ['education','appointments','mentors','committee_members','research_collaborators','publications']],[789,953,109,9,4,545]);self.assertEqual(self.data['people'],hit_atlas(json.loads((ROOT/'site/atlas.json').read_text()))['people'])
+  d=self.data;self.assertTrue(validate(d));self.assertEqual([len(d['people']),len(d['pending_people']),sum('harbin'in p['campus_ids']for p in d['people'])],[257,42,159]);self.assertEqual([sum(len(p.get(k,[]))for p in d['people'])for k in ['education','appointments','mentors','committee_members','research_collaborators','publications']],[789,953,109,9,4,545]);self.assertEqual(self.data['people'],hit_atlas(load_atlas(ROOT/'site/atlas.json'))['people'])
  def test_exact_reviewed_microwave_coverage_hash_and_strata(self):
   f=ROOT/'progress/harbin-microwave-coverage.json';self.assertEqual(hashlib.sha256(f.read_bytes()).hexdigest(),'fc365c8b49d6817631fc9c2672aec3cec73a46b02cb42f82da8680b77426377b');c=json.loads(f.read_text());self.assertEqual([c[k]for k in ['official_roster_count','first_pass_attempted','substantive_professional_body','sparse_academic_history','name_only_no_academic_body','own_profile_academic_body_read']],[22,22,17,5,0,21]);self.assertTrue(all(not e['fields_complete']for e in c['entries']));self.assertEqual(c['review_status'],'all_two_batches_passed')
  def test_exact_college_coverage_does_not_claim_unique_verified_identities_or_complete_fields(self):

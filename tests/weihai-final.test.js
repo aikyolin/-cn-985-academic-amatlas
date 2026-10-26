@@ -1,9 +1,10 @@
+import {readJSONFile} from './atlas-test-io.js';
 import {hitAtlas,hitRosters} from './school-scope.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {stages,matches,mentorEvent,mentorProfileRoute,educationStageLabel,escapeHtml,sameBuild} from '../site/model.js';
-const read=n=>JSON.parse(fs.readFileSync(new URL(n,import.meta.url)));
+const read=n=>readJSONFile(new URL(n,import.meta.url));
 const db=hitAtlas(read('../site/atlas.json')),r=hitRosters(read('../site/rosters.json')),pg=read('../progress/weihai-information-progress.json');
 const p=n=>db.people.find(p=>p.name===n&&p.department_id==='hit-weihai-information');
 const pend=n=>db.pending_people.find(p=>p.name===n&&p.department_id==='hit-weihai-information');

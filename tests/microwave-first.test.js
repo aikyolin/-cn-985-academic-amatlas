@@ -1,7 +1,8 @@
+import {readAtlasFile} from './atlas-test-io.js';
 import {hitAtlas,hitRosters} from './school-scope.js';
 import fs from 'node:fs';import assert from 'node:assert/strict';import {test} from 'node:test';
 import {stages,matches,mentorEvent,educationStageLabel,mentorProfileRoute} from '../site/model.js';
-const db=hitAtlas(JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url))));const pkg={people:db.people.filter(p=>p.data_batch_id==='faculty-batch-harbin-eie-fifth-001'),pending_people:[]};
+const db=hitAtlas(readAtlasFile(new URL('../site/atlas.json',import.meta.url)));const pkg={people:db.people.filter(p=>p.data_batch_id==='faculty-batch-harbin-eie-fifth-001'),pending_people:[]};
 const people=pkg.people,p=n=>people.find(x=>x.name===n);
 test('microwave first11 have33 education54 appointments9 mentors21 works51 source entries',()=>{assert.equal(people.length,11);assert.equal(pkg.pending_people.length,0);assert.deepEqual(['education','appointments','mentors','publications','sources'].map(k=>people.reduce((n,p)=>n+p[k].length,0)),[33,54,9,21,51]);assert.equal(people.filter(p=>p.evidence_coverage_level==='sparse_academic_history').length,4)});
 test('Li Hongmei confirmed doctorate has unknown institution and geography, not assumed HIT',()=>{const x=p('李红梅'),e=x.education[0];assert.equal(e.degree_awarded,true);assert.equal(e.institution,null);assert.equal(e.country,null);assert.equal(e.region,'unknown');assert.equal(e.continent_code,'unknown');assert.equal(matches(x,{doctor:'mainland'}),false);assert.equal(matches(x,{doctor:'unknown'}),true)});

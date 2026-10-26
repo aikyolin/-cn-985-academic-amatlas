@@ -1,3 +1,4 @@
+import {createAtlasFetch} from './atlas-test-io.js';
 import {publishedRoot} from './published-fixture.js';
 import {historicalBytes} from './source-date-history.js';
 import {endpointSha256} from './public-append-history.js';
@@ -57,11 +58,8 @@ async function fixture(){
       return nodes.get(key);
     };
     const document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
-    const location={hash:'#/'},window={scrollTo(){},addEventListener(name,fn){listeners[name]=fn}};
-    const fetch=async request=>{
-      assert.match(String(request),/^(atlas|rosters)\.json(?:\?|$)/,'Network requests are prohibited');
-      return {ok:true,json:async()=>structuredClone(String(request).startsWith('atlas.json')?view:view.rosters)};
-    };
+    const location={href:"https://atlas.test/site/index.html",hash:'#/'},window={scrollTo(){},addEventListener(name,fn){listeners[name]=fn}};
+    const fetch=createAtlasFetch(view,view.rosters);
     const activate=()=>Object.assign(globalThis,{document,location,window,fetch});activate();
     await import(pathToFileURL(path.join(root,'site/app.js')).href+'?rotation002-wave3-display-fix');
     assert.equal(typeof listeners.hashchange,'function','The actual app must initialize');

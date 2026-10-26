@@ -1,3 +1,4 @@
+from atlas_test_io import read_live_json
 from source_date_history import historical_root
 from published_fixture import published_root
 """Generic append conservation and independent synthetic endpoint negatives."""
@@ -67,7 +68,7 @@ class PublicAppendPrefix(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.baseline = history.load_baseline()
-        cls.documents = {rel: history.public_append_view(json.loads(((published_root() if rel == 'site/atlas.json' else ROOT) / rel).read_bytes()), rel)
+        cls.documents = {rel: history.public_append_view((json.loads((published_root() / rel).read_bytes()) if rel == 'site/atlas.json' else read_live_json(ROOT / rel)), rel)
                          for rel in cls.baseline['files']}
 
     def test_all_five_frozen_objects_and_exact_bytes_round_trip(self):

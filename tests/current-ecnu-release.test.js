@@ -1,3 +1,4 @@
+import {readAtlasFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -6,7 +7,7 @@ const buaaMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-bua
 const tongjiMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-tongji12-source-mapping.json',import.meta.url)));
 const bitMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-bit12-source-mapping.json',import.meta.url)));
 const nwpuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nwpu12-source-mapping.json',import.meta.url)));
-const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));
+const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ecnu12-source-mapping.json',import.meta.url)));
 test('actual ECNU cohort exactly preserves independently reviewed fields, identities and scope',()=>{
@@ -23,8 +24,8 @@ let serial=0;
 async function render(hash){
  const nodes=new Map(),node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};
  globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
- globalThis.location={hash};globalThis.window={scrollTo(){},addEventListener(){}};
- globalThis.fetch=async p=>({ok:true,json:async()=>structuredClone(String(p).startsWith('atlas.json')?db:roster)});
+ globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(){}};
+ globalThis.fetch=createAtlasFetch(db,roster);
  await import('../site/app.js?current-ecnu-release='+serial++);
  assert(!node('#main').innerHTML.includes('资料暂未加载'));return node;
 }

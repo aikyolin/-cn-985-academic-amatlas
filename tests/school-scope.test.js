@@ -1,8 +1,9 @@
+import {readJSONFile} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {hitAtlas,hitRosters} from './school-scope.js';
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 test('historical HIT views keep exact counts and ignore foreign same-name records without mutating data',()=>{
  const atlas=read('../site/atlas.json'),rosters=read('../site/rosters.json'),aBefore=JSON.stringify(atlas),rBefore=JSON.stringify(rosters);
  const hit=hitAtlas(atlas),ro=hitRosters(rosters),mixed=structuredClone(atlas),mixedRoster=structuredClone(rosters);

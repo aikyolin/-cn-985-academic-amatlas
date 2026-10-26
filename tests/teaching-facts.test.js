@@ -1,10 +1,11 @@
+import {readJSONFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {stages,schoolStats} from '../site/model.js';
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 let serial=0;
-async function app(d,id=d.people[1].person_id){const nodes=new Map(),node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={hash:'#/person/'+id};globalThis.window={scrollTo(){},addEventListener(){}};globalThis.fetch=async p=>({ok:true,json:async()=>structuredClone(String(p).startsWith('atlas.json')?d:d.rosters)});await import('../site/app.js?teaching-facts='+serial++);assert(!node('#main').innerHTML.includes('资料暂未加载'));return node}
+async function app(d,id=d.people[1].person_id){const nodes=new Map(),node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={href:"https://atlas.test/site/index.html",hash:'#/person/'+id};globalThis.window={scrollTo(){},addEventListener(){}};globalThis.fetch=createAtlasFetch(d,d.rosters);await import('../site/app.js?teaching-facts='+serial++);assert(!node('#main').innerHTML.includes('资料暂未加载'));return node}
 
 
 function fixture(){const d=read('./fixtures/multischool.json'),p=d.people[1];p.education=[];p.mentors=[];p.publications=[];p.teaching=[{name:'课程 <unsafe>',role:'主讲课程',start:'2002',source_id:'teach',source_url:'https://b.example.test/teaching',note:'课程开设不是任职起点'}];return {d,p}}

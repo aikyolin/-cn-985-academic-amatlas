@@ -1,3 +1,5 @@
+import {createAtlasFetch} from './atlas-test-io.js';
+import {readAtlasFile,readJSONFile} from './atlas-test-io.js';
 import {publishedRoot} from './published-fixture.js';
 import {historicalBytes,withHistoricalAppRoot} from './source-date-history.js';
 import {release25View} from './release-history.js';
@@ -9,7 +11,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 const root=process.env.ACADEMIC_ATLAS_TEST_ROOT||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=name=>JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
+const read=name=>readJSONFile(path.join(root,name));
 const db=release25View(read('data/atlas.json'),'data/atlas.json');db.rosters=release25View(read('data/rosters.json'),'data/rosters.json');
 const css=fs.readFileSync(path.join(root,'site/styles.css'),'utf8');
 const RULE='.source-unavailable{white-space:normal;overflow-wrap:anywhere;max-width:100%}';
@@ -20,12 +22,12 @@ const BASELINE_CSS_SHA256="6063be4c04726d2dcf01a0442d5dc4d763b99c835a4110bd94379
 const BASELINE_ROUTE_SHA256="64e62185c96b4c795d0f8087bc95ac994310f81fb441c28df817f2c22862ca8a";
 const BASELINE_SPANS=["<span class=\"source-link source-unavailable\">查看来源（来源导航不可用）<br><small>官方旧文完整缓存正文已读；原地址直连404，仅支持历史事实，关闭失效来源导航。 原始地址：https://news.cqu.edu.cn/archives/news2/content/2025/09/19/6bab3d43eb9c2f730772541ee4d983ff5aced5f3.html</small></span>", "<span class=\"source-link source-unavailable\">教学事实来源（来源导航不可用）<br><small>官方旧文完整缓存正文已读；原地址直连404，仅支持历史事实，关闭失效来源导航。 原始地址：https://news.cqu.edu.cn/archives/news2/content/2021/04/01/eeab4ef47653f3eca46265fa0c4a0a4d4a1eb0e4.html</small></span>", "<span class=\"source-link source-unavailable\">教学事实来源（来源导航不可用）<br><small>官方旧文完整缓存正文已读；原地址直连404，仅支持历史事实，关闭失效来源导航。 原始地址：https://news.cqu.edu.cn/archives/news2/content/2025/09/19/6bab3d43eb9c2f730772541ee4d983ff5aced5f3.html</small></span>", "<span class=\" source-unavailable\">cqu-chenke-teaching-2021（来源导航不可用）<br><small>官方旧文完整缓存正文已读；原地址直连404，仅支持历史事实，关闭失效来源导航。 原始地址：https://news.cqu.edu.cn/archives/news2/content/2021/04/01/eeab4ef47653f3eca46265fa0c4a0a4d4a1eb0e4.html</small></span>", "<span class=\" source-unavailable\">cqu-chenke-lecture-2025（来源导航不可用）<br><small>官方旧文完整缓存正文已读；原地址直连404，仅支持历史事实，关闭失效来源导航。 原始地址：https://news.cqu.edu.cn/archives/news2/content/2025/09/19/6bab3d43eb9c2f730772541ee4d983ff5aced5f3.html</small></span>"];
 let serial=0;
-async function fixture(input,root){
+async function fixture(input,root,historicalTransport=false){
  const view=structuredClone(input),nodes=new Map(),listeners={};
  view.build_id=view.rosters.build_id='display-fix-independent-fixture';view.exports||=[];
  const node=key=>{if(!nodes.has(key))nodes.set(key,{innerHTML:'',textContent:'',value:'',style:{},dataset:{height:'320'},clientWidth:960,addEventListener(){},click(){this.onclick?.()},scrollIntoView(){},querySelector(selector){return node(selector)}});return nodes.get(key)};
- const document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)},location={hash:'#/'},window={scrollTo(){},addEventListener(name,fn){listeners[name]=fn}};
- const fetch=async request=>{assert.match(String(request),/^(atlas|rosters)\.json(?:\?|$)/,'External fetch prohibited');return {ok:true,json:async()=>structuredClone(String(request).startsWith('atlas.json')?view:view.rosters)}};
+ const document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)},location={href:"https://atlas.test/site/index.html",hash:'#/'},window={scrollTo(){},addEventListener(name,fn){listeners[name]=fn}};
+ const fetch=historicalTransport ? async request=>{assert.match(String(request),/^(atlas|rosters)\.json(?:\?|$)/,'External fetch prohibited');return {ok:true,json:async()=>structuredClone(String(request).startsWith('atlas.json')?view:view.rosters)}} : createAtlasFetch(view,view.rosters);
  const activate=()=>Object.assign(globalThis,{document,location,window,fetch});activate();
  await import(pathToFileURL(path.join(root,'site/app.js')).href+'?layoutfix-independent='+serial++);
  assert.equal(typeof listeners.hashchange,'function');
@@ -153,7 +155,7 @@ test('teaching role labels and historical caveats remain exact',async()=>{
 
 test('all 1110 historical profile and lineage renders match the frozen display-fix output',async()=>{
  await withHistoricalAppRoot(publishedRoot(),async historicalRoot=>{
-  const f=await fixture(db,historicalRoot),renders=db.people.flatMap(p=>['profile','lineage'].map(mode=>[p.person_id,mode,f.render(p.person_id,mode)]));
+  const f=await fixture(db,historicalRoot,true),renders=db.people.flatMap(p=>['profile','lineage'].map(mode=>[p.person_id,mode,f.render(p.person_id,mode)]));
   assert.equal(renders.length,1110);assert.equal(sha(JSON.stringify(renders)),BASELINE_ROUTE_SHA256);
  });
 });
@@ -175,7 +177,7 @@ if(process.env.ACADEMIC_ATLAS_NEGATIVE_CONTROL_ROOT){
  test('immutable baseline actual app and CSS independently reproduce the two teaching nowrap cases',async()=>{
   const base=process.env.ACADEMIC_ATLAS_NEGATIVE_CONTROL_ROOT,input=JSON.parse(fs.readFileSync(path.join(base,'data/atlas.json')));input.rosters=JSON.parse(fs.readFileSync(path.join(base,'data/rosters.json')));
   const oldCss=fs.readFileSync(path.join(base,'site/styles.css'),'utf8');assert.equal(sha(oldCss),BASELINE_CSS_SHA256);
-  const f=await fixture(input,base),html=f.render('cqu-chenke'),nodes=tree(html.content),computed=styles(nodes,oldCss),blocked=unavailable(nodes);
+  const f=await fixture(input,base,true),html=f.render('cqu-chenke'),nodes=tree(html.content),computed=styles(nodes,oldCss),blocked=unavailable(nodes);
   assert.equal(blocked.length,5);assert.equal(blocked.filter(n=>ancestor(n,'info-panel')&&computed.get(n)['white-space']==='nowrap').length,2);
   assert.deepEqual([...html.content.matchAll(/<span class="[^"]*source-unavailable">[\s\S]*?<\/span>/g)].map(m=>m[0]),BASELINE_SPANS);
  });

@@ -1,9 +1,10 @@
+import {readAtlasFile} from './atlas-test-io.js';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {test} from 'node:test';
 import {mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,escapeHtml,safeUrl} from '../site/model.js';
 
-const db=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));
+const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const app=fs.readFileSync(new URL('../site/app.js',import.meta.url),'utf8');
 const person=name=>db.people.find(p=>p.school_id==='hit'&&p.name===name);
 const relation=(name,mentor)=>person(name).mentors.find(m=>m.name===mentor);

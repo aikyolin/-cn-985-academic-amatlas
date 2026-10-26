@@ -1,3 +1,4 @@
+from atlas_test_io import load_atlas
 from published_fixture import published_root
 from source_date_history import historical_bytes
 """Independent release24 SYSU/SCU offline source-boundary regression.
@@ -1151,76 +1152,7 @@ SOURCE_SHAPES = [['value'],
    ['source_id', 0],
    ['evidence_status', 0]]]]
 
-NODE_CONSUMERS = ('\n'
- "import fs from 'node:fs';\n"
- "import {pathToFileURL} from 'node:url';\n"
- "const input=JSON.parse(fs.readFileSync(0,'utf8')), root=input.root;\n"
- "const model=await import(pathToFileURL(root+'/site/model.js'));\n"
- "const roster=await import(pathToFileURL(root+'/site/rosters.js'));\n"
- 'const db=input.atlas, r=input.rosters, before=JSON.stringify([db,r]);\n'
- 'const people=new Map([...db.people,...db.pending_people].map(p=>[p.person_id,p]));\n'
- 'const scoped={...db,rosters:r}, out={people:{},rosters:{},schoolStats:{},schoolPages:{}};\n'
- 'for(const id of input.ids){\n'
- " const p=people.get(id),e=r.entries.find(e=>e.id===p.roster_entry_id),main={innerHTML:''};\n"
- " if(!p||!e)throw Error('Missing release record '+id);\n"
- ' roster.renderRosters(scoped,main,e.id,p.school_id);\n'
- ' '
- 'out.rosters[id]={matched:roster.rosterIdentityMatched(scoped,e),status:roster.rosterStatusLabel(scoped,e),html:main.innerHTML};\n'
- ' out.people[id]={\n'
- '  '
- "stages:Object.fromEntries(['bachelor','master','doctor'].map(s=>[s,model.stages(p,s).map(e=>e.event_id)])),\n"
- '  '
- "ug:Object.fromEntries(['yes','no','unknown','not_recorded'].map(v=>[v,model.matches(p,{ug:v},db.org_units)])),\n"
- '  '
- "doctorate:Object.fromEntries(['mainland','hmt','overseas','unknown','not_recorded'].map(v=>[v,model.matches(p,{doctor:v},db.org_units)])),\n"
- '  officialUrl:model.officialProfileUrl(p),\n'
- '  '
- 'mentors:p.mentors.map(m=>({name:m.name,url:model.mentorOfficialUrl(m),route:model.mentorProfileRoute(m,db.people),events:model.mentorEvents(p,m).map(e=>e.event_id)})),\n'
- '  '
- 'candidates:(p.pending_mentor_candidates||[]).map(m=>({name:m.name,url:model.mentorOfficialUrl(m),route:model.mentorProfileRoute(m,db.people)})),\n'
- '  labels:p.education.map(model.educationStageLabel)\n'
- ' };\n'
- '}\n'
- 'for(const school of input.schools)out.schoolStats[school]=model.schoolStats(scoped,school);\n'
- 'const appAtlas=structuredClone(db),appRosters=structuredClone(r);\n'
- "appAtlas.build_id=appRosters.build_id='rotation002-wave3-in-memory-test';\n"
- 'appAtlas.exports=input.exports;\n'
- 'out.directories={};\n'
- 'const nodes=new Map(),listeners={};\n'
- 'const node=key=>{\n'
- ' '
- "if(!nodes.has(key))nodes.set(key,{innerHTML:'',textContent:'',value:'',style:{},dataset:{height:'320'},clientWidth:960,addEventListener(){},click(){this.onclick?.()},querySelector(selector){return "
- 'node(selector)},scrollIntoView(){}});\n'
- ' return nodes.get(key);\n'
- '};\n'
- "globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};\n"
- "globalThis.location={hash:'#/'};\n"
- 'globalThis.window={scrollTo(){},addEventListener(name,handler){listeners[name]=handler}};\n'
- 'globalThis.fetch=async path=>{\n'
- " if(!/^(atlas|rosters)\\.json(?:\\?|$)/.test(String(path)))throw Error('External fetch prohibited: "
- "'+path);\n"
- ' return '
- "{ok:true,json:async()=>structuredClone(String(path).startsWith('atlas.json')?appAtlas:appRosters)};\n"
- '};\n'
- "await import(pathToFileURL(root+'/site/app.js'));\n"
- "if(!listeners.hashchange)throw Error('Actual app failed to initialize: '+node('#main').innerHTML);\n"
- 'const navigate=hash=>{for(const n of '
- "nodes.values())n.innerHTML='';location.hash=hash;listeners.hashchange()};\n"
- 'for(const id of input.ids){\n'
- ' const p=people.get(id),row=out.people[id];\n'
- " navigate('#/person/'+encodeURIComponent(id));\n"
- " row.profileMain=node('#main').innerHTML;row.profileContent=node('#profile-content').innerHTML;\n"
- ' if(p.detail_count_eligible){\n'
- "  navigate('#/person/'+encodeURIComponent(id)+'/lineage');\n"
- "  row.lineage=node('#profile-content').innerHTML;row.graph=node('#mind-stage').innerHTML;\n"
- ' }\n'
- '}\n'
- 'for(const school of input.schools){\n'
- " navigate('#/school/'+school);out.schoolPages[school]=node('#main').innerHTML;\n"
- " navigate('#/people?school='+school);out.directories[school]=node('#results').innerHTML;\n"
- '}\n'
- 'out.unchanged=JSON.stringify([db,r])===before;\n'
- 'process.stdout.write(JSON.stringify(out));\n')
+NODE_CONSUMERS = "\nimport fs from 'node:fs';\nimport {pathToFileURL} from 'node:url';\nconst input=JSON.parse(fs.readFileSync(0,'utf8')), root=input.root;\nconst model=await import(pathToFileURL(root+'/site/model.js'));\nconst roster=await import(pathToFileURL(root+'/site/rosters.js'));\nconst db=input.atlas, r=input.rosters, before=JSON.stringify([db,r]);\nconst people=new Map([...db.people,...db.pending_people].map(p=>[p.person_id,p]));\nconst scoped={...db,rosters:r}, out={people:{},rosters:{},schoolStats:{},schoolPages:{}};\nfor(const id of input.ids){\n const p=people.get(id),e=r.entries.find(e=>e.id===p.roster_entry_id),main={innerHTML:''};\n if(!p||!e)throw Error('Missing release record '+id);\n roster.renderRosters(scoped,main,e.id,p.school_id);\n out.rosters[id]={matched:roster.rosterIdentityMatched(scoped,e),status:roster.rosterStatusLabel(scoped,e),html:main.innerHTML};\n out.people[id]={\n  stages:Object.fromEntries(['bachelor','master','doctor'].map(s=>[s,model.stages(p,s).map(e=>e.event_id)])),\n  ug:Object.fromEntries(['yes','no','unknown','not_recorded'].map(v=>[v,model.matches(p,{ug:v},db.org_units)])),\n  doctorate:Object.fromEntries(['mainland','hmt','overseas','unknown','not_recorded'].map(v=>[v,model.matches(p,{doctor:v},db.org_units)])),\n  officialUrl:model.officialProfileUrl(p),\n  mentors:p.mentors.map(m=>({name:m.name,url:model.mentorOfficialUrl(m),route:model.mentorProfileRoute(m,db.people),events:model.mentorEvents(p,m).map(e=>e.event_id)})),\n  candidates:(p.pending_mentor_candidates||[]).map(m=>({name:m.name,url:model.mentorOfficialUrl(m),route:model.mentorProfileRoute(m,db.people)})),\n  labels:p.education.map(model.educationStageLabel)\n };\n}\nfor(const school of input.schools)out.schoolStats[school]=model.schoolStats(scoped,school);\nconst appAtlas=structuredClone(db),appRosters=structuredClone(r);\nappAtlas.build_id=appRosters.build_id='rotation002-wave3-in-memory-test';\nappAtlas.exports=input.exports;\nout.directories={};\nconst nodes=new Map(),listeners={};\nconst node=key=>{\n if(!nodes.has(key))nodes.set(key,{innerHTML:'',textContent:'',value:'',style:{},dataset:{height:'320'},clientWidth:960,addEventListener(){},click(){this.onclick?.()},querySelector(selector){return node(selector)},scrollIntoView(){}});\n return nodes.get(key);\n};\nglobalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};\nglobalThis.location={hash:'#/',href:'https://atlas.test/site/index.html'};\nglobalThis.window={scrollTo(){},addEventListener(name,handler){listeners[name]=handler}};\nconst {createAtlasFetch}=await import(pathToFileURL(root+'/tests/atlas-test-io.js'));\nglobalThis.fetch=createAtlasFetch(appAtlas,appRosters);\nawait import(pathToFileURL(root+'/site/app.js'));\nif(!listeners.hashchange)throw Error('Actual app failed to initialize: '+node('#main').innerHTML);\nconst navigate=hash=>{for(const n of nodes.values())n.innerHTML='';location.hash=hash;listeners.hashchange()};\nfor(const id of input.ids){\n const p=people.get(id),row=out.people[id];\n navigate('#/person/'+encodeURIComponent(id));\n row.profileMain=node('#main').innerHTML;row.profileContent=node('#profile-content').innerHTML;\n if(p.detail_count_eligible){\n  navigate('#/person/'+encodeURIComponent(id)+'/lineage');\n  row.lineage=node('#profile-content').innerHTML;row.graph=node('#mind-stage').innerHTML;\n }\n}\nfor(const school of input.schools){\n navigate('#/school/'+school);out.schoolPages[school]=node('#main').innerHTML;\n navigate('#/people?school='+school);out.directories[school]=node('#results').innerHTML;\n}\nout.unchanged=JSON.stringify([db,r])===before;\nprocess.stdout.write(JSON.stringify(out));\n"
 
 
 # Only these exact approved locator leaves left the public view; every retained scalar is still mutated.
@@ -1296,7 +1228,7 @@ def assert_source_closure(person):
 class Rotation002Wave3ReleaseTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.d = release25_view(json.loads((ROOT / 'data/atlas.json').read_text()), 'data/atlas.json')
+        cls.d = release25_view(load_atlas(ROOT / 'data/atlas.json'), 'data/atlas.json')
         cls.r = release25_view(json.loads((ROOT / 'data/rosters.json').read_text()), 'data/rosters.json')
         cls.q = release25_view(json.loads((ROOT / 'progress/work-queue.json').read_text()), 'progress/work-queue.json')
         cls.ps = {p['person_id']: p for p in cls.d['people'] + cls.d['pending_people']}
@@ -1872,8 +1804,8 @@ class Rotation002Wave3ReleaseTests(unittest.TestCase):
                 assert_source_closure(p)
 
     def test_37_built_site_selected_people_rosters_and_original_person_leaves_match_canonical(self):
-        actual_site = json.loads((ROOT/'site/atlas.json').read_text())
-        actual_data = json.loads((ROOT/'data/atlas.json').read_text())
+        actual_site = load_atlas(ROOT/'site/atlas.json')
+        actual_data = load_atlas(ROOT/'data/atlas.json')
         self.assertEqual(actual_site['people'], actual_data['people'])
         self.assertEqual(actual_site['pending_people'], actual_data['pending_people'])
         self.assertEqual(actual_site['build_id'], json.loads((ROOT/'site/rosters.json').read_text())['build_id'])

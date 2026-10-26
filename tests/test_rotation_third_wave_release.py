@@ -8,6 +8,7 @@ No build or workbook writes occur. Fingerprints were derived from the nine
 independently reviewed 2026-10-23 source packages, not normalized output.
 Private local_evidence_cache references are deliberately excluded, not published.
 """
+from atlas_test_io import load_atlas
 import copy
 import hashlib
 import json
@@ -988,75 +989,13 @@ def source_view(person):
 
 
 # Real consumers, a minimal DOM, and local objects only. fetch never goes online.
-NODE_CONSUMERS = r'''
-import fs from 'node:fs';
-import {pathToFileURL} from 'node:url';
-const input = JSON.parse(fs.readFileSync(0, 'utf8'));
-const root = input.root;
-const model = await import(pathToFileURL(root + '/site/model.js'));
-const roster = await import(pathToFileURL(root + '/site/rosters.js'));
-const db = input.atlas, r = input.rosters;
-const original = JSON.stringify([db, r]);
-const people = new Map([...db.people, ...db.pending_people].map(p => [p.person_id, p]));
-const out = {people:{}, pending:{}, schoolStats:{}, schoolPages:{}};
-for (const id of input.ids) {
-  const p = people.get(id);
-  if (!p) throw Error('Missing release record: ' + id);
-  out.people[id] = {
-    stages: Object.fromEntries(['bachelor','master','doctor'].map(s => [s, model.stages(p,s).map(e => e.event_id)])),
-    ug: Object.fromEntries(['yes','no','unknown','not_recorded'].map(v => [v,model.matches(p,{ug:v},db.org_units)])),
-    doctorate: Object.fromEntries(['mainland','hmt','overseas','unknown','not_recorded'].map(v => [v,model.matches(p,{doctor:v},db.org_units)])),
-    labels: p.education.map(model.educationStageLabel),
-    officialUrl: model.officialProfileUrl(p),
-    mentors: p.mentors.map(m => ({name:m.name, url:model.mentorOfficialUrl(m), route:model.mentorProfileRoute(m,db.people), events:model.mentorEvents(p,m).map(e=>e.event_id)}))
-  };
-}
-const scoped = {...db, rosters:r};
-for (const id of input.pendingIds) {
-  const p=people.get(id), e=r.entries.find(e=>e.id===p.roster_entry_id), main={innerHTML:''};
-  roster.renderRosters(scoped,main,e.id,p.school_id);
-  out.pending[id]={matched:roster.rosterIdentityMatched(scoped,e),status:roster.rosterStatusLabel(scoped,e),html:main.innerHTML};
-}
-for (const school of input.schools) out.schoolStats[school]=model.schoolStats(scoped,school);
-const center=db.org_units.find(o=>o.id==='uestc-applied-math-center');
-out.center={parent:center?.parent_id, schoolContains:model.orgContains(db.org_units,'uestc',center?.id), falseCollegeParents:db.org_units.filter(o=>o.school_id==='uestc'&&o.id!==center?.id&&model.orgContains(db.org_units,o.id,center?.id)).map(o=>o.id)};
-// The actual app is loaded against cloned local inputs and a shared test build ID.
-const appAtlas=structuredClone(db), appRosters=structuredClone(r);
-appAtlas.build_id=appRosters.build_id='third-wave-in-memory-consumer-test';
-const nodes=new Map(), listeners={};
-const node=key=>{
-  if (!nodes.has(key)) nodes.set(key,{innerHTML:'',textContent:'',value:'',style:{},dataset:{height:'320'},clientWidth:960,addEventListener(){},click(){this.onclick?.()},querySelector(selector){return node(selector)},scrollIntoView(){}});
-  return nodes.get(key);
-};
-globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
-globalThis.location={hash:'#/'};
-globalThis.window={scrollTo(){},addEventListener(name,handler){listeners[name]=handler}};
-globalThis.fetch=async path=>{
-  if (!/^(atlas|rosters)\.json(?:\?|$)/.test(String(path))) throw Error('Unexpected fetch: '+path);
-  return {ok:true,json:async()=>structuredClone(String(path).startsWith('atlas.json')?appAtlas:appRosters)};
-};
-await import(pathToFileURL(root+'/site/app.js'));
-if(!listeners.hashchange) throw Error('Actual app did not initialize: '+node('#main').innerHTML);
-const navigate=hash=>{for(const n of nodes.values())n.innerHTML='';location.hash=hash;listeners.hashchange()};
-for(const id of input.ids){
-  const p=people.get(id), row=out.people[id];
-  navigate('#/person/'+encodeURIComponent(id));
-  row.profileMain=node('#main').innerHTML;row.profileContent=node('#profile-content').innerHTML;
-  if(p.detail_count_eligible){
-    navigate('#/person/'+encodeURIComponent(id)+'/lineage');
-    row.lineage=node('#profile-content').innerHTML;row.graph=node('#mind-stage').innerHTML;
-  }
-}
-for(const school of input.schools){navigate('#/school/'+school);out.schoolPages[school]=node('#main').innerHTML}
-out.unchanged=JSON.stringify([db,r])===original;
-process.stdout.write(JSON.stringify(out));
-'''
+NODE_CONSUMERS = "\nimport fs from 'node:fs';\nimport {pathToFileURL} from 'node:url';\nconst input = JSON.parse(fs.readFileSync(0, 'utf8'));\nconst root = input.root;\nconst model = await import(pathToFileURL(root + '/site/model.js'));\nconst roster = await import(pathToFileURL(root + '/site/rosters.js'));\nconst db = input.atlas, r = input.rosters;\nconst original = JSON.stringify([db, r]);\nconst people = new Map([...db.people, ...db.pending_people].map(p => [p.person_id, p]));\nconst out = {people:{}, pending:{}, schoolStats:{}, schoolPages:{}};\nfor (const id of input.ids) {\n  const p = people.get(id);\n  if (!p) throw Error('Missing release record: ' + id);\n  out.people[id] = {\n    stages: Object.fromEntries(['bachelor','master','doctor'].map(s => [s, model.stages(p,s).map(e => e.event_id)])),\n    ug: Object.fromEntries(['yes','no','unknown','not_recorded'].map(v => [v,model.matches(p,{ug:v},db.org_units)])),\n    doctorate: Object.fromEntries(['mainland','hmt','overseas','unknown','not_recorded'].map(v => [v,model.matches(p,{doctor:v},db.org_units)])),\n    labels: p.education.map(model.educationStageLabel),\n    officialUrl: model.officialProfileUrl(p),\n    mentors: p.mentors.map(m => ({name:m.name, url:model.mentorOfficialUrl(m), route:model.mentorProfileRoute(m,db.people), events:model.mentorEvents(p,m).map(e=>e.event_id)}))\n  };\n}\nconst scoped = {...db, rosters:r};\nfor (const id of input.pendingIds) {\n  const p=people.get(id), e=r.entries.find(e=>e.id===p.roster_entry_id), main={innerHTML:''};\n  roster.renderRosters(scoped,main,e.id,p.school_id);\n  out.pending[id]={matched:roster.rosterIdentityMatched(scoped,e),status:roster.rosterStatusLabel(scoped,e),html:main.innerHTML};\n}\nfor (const school of input.schools) out.schoolStats[school]=model.schoolStats(scoped,school);\nconst center=db.org_units.find(o=>o.id==='uestc-applied-math-center');\nout.center={parent:center?.parent_id, schoolContains:model.orgContains(db.org_units,'uestc',center?.id), falseCollegeParents:db.org_units.filter(o=>o.school_id==='uestc'&&o.id!==center?.id&&model.orgContains(db.org_units,o.id,center?.id)).map(o=>o.id)};\n// The actual app is loaded against cloned local inputs and a shared test build ID.\nconst appAtlas=structuredClone(db), appRosters=structuredClone(r);\nappAtlas.build_id=appRosters.build_id='third-wave-in-memory-consumer-test';\nconst nodes=new Map(), listeners={};\nconst node=key=>{\n  if (!nodes.has(key)) nodes.set(key,{innerHTML:'',textContent:'',value:'',style:{},dataset:{height:'320'},clientWidth:960,addEventListener(){},click(){this.onclick?.()},querySelector(selector){return node(selector)},scrollIntoView(){}});\n  return nodes.get(key);\n};\nglobalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};\nglobalThis.location={hash:'#/',href:'https://atlas.test/site/index.html'};\nglobalThis.window={scrollTo(){},addEventListener(name,handler){listeners[name]=handler}};\nconst {createAtlasFetch}=await import(pathToFileURL(root+'/tests/atlas-test-io.js'));\nglobalThis.fetch=createAtlasFetch(appAtlas,appRosters);\nawait import(pathToFileURL(root+'/site/app.js'));\nif(!listeners.hashchange) throw Error('Actual app did not initialize: '+node('#main').innerHTML);\nconst navigate=hash=>{for(const n of nodes.values())n.innerHTML='';location.hash=hash;listeners.hashchange()};\nfor(const id of input.ids){\n  const p=people.get(id), row=out.people[id];\n  navigate('#/person/'+encodeURIComponent(id));\n  row.profileMain=node('#main').innerHTML;row.profileContent=node('#profile-content').innerHTML;\n  if(p.detail_count_eligible){\n    navigate('#/person/'+encodeURIComponent(id)+'/lineage');\n    row.lineage=node('#profile-content').innerHTML;row.graph=node('#mind-stage').innerHTML;\n  }\n}\nfor(const school of input.schools){navigate('#/school/'+school);out.schoolPages[school]=node('#main').innerHTML}\nout.unchanged=JSON.stringify([db,r])===original;\nprocess.stdout.write(JSON.stringify(out));\n"
 
 
 class RotationThirdWaveReleaseTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.d = json.loads((ROOT / 'data/atlas.json').read_text())
+        cls.d = load_atlas(ROOT / 'data/atlas.json')
         cls.r = json.loads((ROOT / 'data/rosters.json').read_text())
         cls.ps = {p['person_id']: p for p in cls.d['people'] + cls.d['pending_people']}
         cls.new = [cls.ps[pid] for pid in SOURCE_FINGERPRINTS]

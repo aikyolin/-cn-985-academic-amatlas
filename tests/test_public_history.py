@@ -1,3 +1,4 @@
+from atlas_test_io import read_live_json
 """Public-v1 historical pins preserve every remaining leaf and reject tampering."""
 from published_fixture import published_root
 import ast
@@ -21,14 +22,14 @@ class PublicHistoryContracts(unittest.TestCase):
             contract, view = load(release)
             for rel, rule in contract.items():
                 with self.subTest(release=release, file=rel):
-                    value = json.loads(((published_root() if rel == 'site/atlas.json' else ROOT) / rel).read_text())
+                    value = (json.loads((published_root() / rel).read_bytes()) if rel == 'site/atlas.json' else read_live_json(ROOT / rel))
                     historical = view(value, rel)
                     raw = (json.dumps(historical, ensure_ascii=False, indent=2) + '\n').encode()
                     self.assertEqual(hashlib.sha256(raw).hexdigest(), rule['byte_sha256'])
 
     def test_historical_public_view_rejects_fact_source_and_shape_mutations(self):
         rel = 'data/atlas.json'
-        raw = json.loads((ROOT / rel).read_text())
+        raw = read_live_json(ROOT / rel)
         _, view = load(25)
         def person(value): return value['people'][0]
         def source(value): return person(value)['sources'][0]

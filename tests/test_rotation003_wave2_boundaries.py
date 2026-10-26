@@ -1,3 +1,5 @@
+from atlas_test_io import read_live_json
+from atlas_test_io import load_atlas
 from published_fixture import published_root
 """General append, provenance-alias and conservative-navigation boundaries.
 No per-person fixture duplication; historical goldens remain in earlier suites.
@@ -6,14 +8,14 @@ import copy,hashlib,json,pathlib,unittest
 from release26_history import release26_view
 from release_history import CONTRACT,release25_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-read=lambda name,root=ROOT:release26_view(json.loads((root/name).read_text()),name)
+read=lambda name,root=ROOT:release26_view((json.loads((root/name).read_text()) if root == published_root() else read_live_json(root/name)),name)
 PINS={'data/atlas.json':'07d31cc1627dc341802a99c1e57d6ef8d29c82fd115ee0c882ffa9e29830a68d','data/rosters.json':'bdc4f7a400bb2b983d341b434b636aaf2f1beeb5f3aa070486a0aa44920fe27a','site/atlas.json':'8ce7435afda1486a9850ac8ffed16018b542e23c2fc337b71598cc2417fc4e80','site/rosters.json':'f11f1e1a40fd1b28211654fb1a2db4da83e78f28b1fcd96d9cb7e277ff0ae306','progress/work-queue.json':'829169fdf8815ddff328d1a3d324ad102bd52b0220a6025277e8d9fef8ebdaff'}
 class Rotation003Wave2Boundaries(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
   cls.a=read('data/atlas.json');cls.r=read('data/rosters.json');cls.new=cls.a['people'][555:]
  def test_live_endpoint_and_generated_projection_are_exact(self):
-  actual_site=json.loads((ROOT/'site/atlas.json').read_text());actual_data=json.loads((ROOT/'data/atlas.json').read_text())
+  actual_site=load_atlas(ROOT/'site/atlas.json');actual_data=load_atlas(ROOT/'data/atlas.json')
   self.assertEqual(actual_site['people'],actual_data['people']);self.assertEqual(actual_site['pending_people'],actual_data['pending_people'])
   self.assertEqual(actual_site['build_id'],json.loads((ROOT/'site/rosters.json').read_text())['build_id'])
   for name,pin in PINS.items():self.assertEqual(hashlib.sha256((json.dumps(read(name,published_root() if name=='site/atlas.json' else ROOT),ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),pin,name)

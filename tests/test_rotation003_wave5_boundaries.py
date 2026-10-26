@@ -1,3 +1,5 @@
+from atlas_test_io import read_live_json
+from atlas_test_io import load_atlas
 from published_fixture import published_root
 """Generic live-release boundaries for native roster aliases and source-access holds."""
 import json,pathlib,unittest
@@ -5,10 +7,10 @@ from release28_history import CONTRACT,release28_view
 from release30_history import CONTRACT as RELEASE30_CONTRACT,release30_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def read(rel,root=ROOT):
- value=json.loads((root/rel).read_text());return release30_view(value,rel)if rel in RELEASE30_CONTRACT else value
+ value=(json.loads((root/rel).read_text()) if root == published_root() else read_live_json(root/rel));return release30_view(value,rel)if rel in RELEASE30_CONTRACT else value
 class ReviewedAppendBoundaries(unittest.TestCase):
  def test_original_prefixes_and_actual_generated_views_are_preserved(self):
-  actual_site=json.loads((ROOT/'site/atlas.json').read_text());actual_data=json.loads((ROOT/'data/atlas.json').read_text())
+  actual_site=load_atlas(ROOT/'site/atlas.json');actual_data=load_atlas(ROOT/'data/atlas.json')
   self.assertEqual(actual_site['people'],actual_data['people']);self.assertEqual(actual_site['pending_people'],actual_data['pending_people'])
   self.assertEqual(actual_site['build_id'],json.loads((ROOT/'site/rosters.json').read_text())['build_id'])
   for rel in CONTRACT:release28_view(read(rel,published_root() if rel=='site/atlas.json' else ROOT),rel)

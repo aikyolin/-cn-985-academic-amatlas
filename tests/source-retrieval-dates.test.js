@@ -1,9 +1,10 @@
+import {readJSONFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {sourceRetrievalDateSummary,matches,mentorOfficialUrl,mentorProfileRoute,stages} from '../site/model.js';
 
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 for(const c of read('./fixtures/source-retrieval-dates.json'))test('source retrieval summary: '+c.name,()=>{
  const before=structuredClone(c.person);
  assert.equal(sourceRetrievalDateSummary(c.person),c.expected);
@@ -13,8 +14,8 @@ let serial=0;
 async function render(d,hash){
  const nodes=new Map(),node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};
  globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
- globalThis.location={hash};globalThis.window={scrollTo(){},addEventListener(){}};
- globalThis.fetch=async p=>({ok:true,json:async()=>structuredClone(String(p).startsWith('atlas.json')?d:d.rosters)});
+ globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(){}};
+ globalThis.fetch=createAtlasFetch(d,d.rosters);
  await import('../site/app.js?source-retrieval-dates-test='+serial++);
  assert(!node('#main').innerHTML.includes('资料暂未加载'));return node;
 }

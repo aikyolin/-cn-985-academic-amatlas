@@ -1,3 +1,4 @@
+import {readAtlasFile,createAtlasFetch} from './atlas-test-io.js';
 import {hitAtlas,hitRosters} from './school-scope.js';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
@@ -38,8 +39,8 @@ async function app(d=fixture(),hash='#/'){
  const nodes=new Map(),listeners={};
  const node=selector=>{if(!nodes.has(selector))nodes.set(selector,{innerHTML:'',textContent:'',value:'',events:{},style:{},dataset:{height:'320'},clientWidth:960,addEventListener(type,fn){this.events[type]=fn},querySelector:node,click(){this.onclick?.()}});return nodes.get(selector)};
  globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
- globalThis.location={hash};globalThis.window={scrollTo(){},addEventListener(type,fn){listeners[type]=fn}};
- globalThis.fetch=async path=>({ok:true,json:async()=>structuredClone(String(path).startsWith('atlas.json')?d:d.rosters)});
+ globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(type,fn){listeners[type]=fn}};
+ globalThis.fetch=createAtlasFetch(d,d.rosters);
  await import('../site/app.js?synthetic-test='+serial++);
  return {node,navigate(hash){location.hash=hash;listeners.hashchange()},change(selector,name,value){node(selector).events.input({target:{name,value}})}};
 }
@@ -78,7 +79,7 @@ test('actual roster pages scope counts, rows and profile school breadcrumbs',asy
 test('actual national home derives school card states and counts only from real data',async()=>{
  const ui=await app();assert(ui.node('#main').innerHTML.includes('目前2所学校有部分人物资料'));assert(ui.node('#main').innerHTML.includes('其余37所待收录'));
  const d=fixture();d.people=d.people.filter(p=>p.school_id==='hit');const directory=await app(d);assert(directory.node('#main').innerHTML.includes('1所仅有目录或待核资料'));assert(directory.node('#school-grid').innerHTML.includes('仅目录／资料待核'));
- const canonical=hitAtlas(JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url))));canonical.rosters=hitRosters(JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url))));const real=await app(canonical);assert(real.node('#main').innerHTML.includes('目前1所学校有部分人物资料'));assert(real.node('#main').innerHTML.includes('其余38所待收录'));assert.equal((real.node('#school-grid').innerHTML.match(/部分收录/g)||[]).length,1);
+ const canonical=hitAtlas(readAtlasFile(new URL('../site/atlas.json',import.meta.url)));canonical.rosters=hitRosters(JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url))));const real=await app(canonical);assert(real.node('#main').innerHTML.includes('目前1所学校有部分人物资料'));assert(real.node('#main').innerHTML.includes('其余38所待收录'));assert.equal((real.node('#school-grid').innerHTML.match(/部分收录/g)||[]).length,1);
 });
 test('dynamic school campus and department labels are escaped in actual rendering',async()=>{
  const d=fixture(),payload='<script>unsafe()</script>';d.institutions[0].official_name=payload;d.campuses[0].name=payload;d.org_units[1].name=payload;d.org_units[1].source_url='javascript:unsafe()';

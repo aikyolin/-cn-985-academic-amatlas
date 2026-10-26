@@ -1,3 +1,4 @@
+import {readJSONFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -6,7 +7,7 @@ import {fileURLToPath} from 'node:url';
 import {UNIVERSITIES} from '../site/universities.js';
 import {stages,matches,mentorEvent,mentorProfileRoute,mentorOfficialUrl,schoolStats,schoolCampuses,normalizeSchoolFilters,routeSchool,escapeHtml} from '../site/model.js';
 
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 const db=read('../data/atlas.json'),rosters=read('../data/rosters.json'),progress=read('../progress/breadth-wave1-coverage.json'),site=read('../site/atlas.json');
 db.rosters=rosters;db.exports=site.exports;
 const original=JSON.stringify(db);
@@ -78,8 +79,8 @@ let serial=0;
 async function app(hash='#/'){
   const d=structuredClone(db);d.build_id='breadth-wave1-read-only';d.rosters.build_id=d.build_id;
   const nodes=new Map(),listeners={},node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,querySelector:node,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};
-  globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={hash};globalThis.window={scrollTo(){},addEventListener(t,f){listeners[t]=f}};
-  globalThis.fetch=async p=>({ok:true,json:async()=>structuredClone(String(p).startsWith('atlas.json')?d:d.rosters)});
+  globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(t,f){listeners[t]=f}};
+  globalThis.fetch=createAtlasFetch(d,d.rosters);
   await import('../site/app.js?breadth-wave1-real='+serial++);assert(!node('#main').innerHTML.includes('资料暂未加载'));
   return {node,navigate(hash){location.hash=hash;listeners.hashchange()}};
 }
@@ -156,7 +157,7 @@ let exported;
 function tables(){
   if(exported)return exported;
   // Pure in-memory table/manifest functions only; prohibit workbooks and build entrypoints.
-  const code=`import json,sys,copy\nfrom unittest import mock\nsys.path.insert(0,'scripts')\nimport build\nd=json.load(open('data/atlas.json')); original=copy.deepcopy(d)\nbatches=set(${JSON.stringify(BATCHES.map(b=>b.batch))})\nfresh=[p for p in d['people'] if p.get('data_batch_id') in batches]\nwith mock.patch.object(build,'Workbook',side_effect=AssertionError('No XLSX allowed')), mock.patch.object(build,'build',side_effect=AssertionError('No build allowed')):\n build.validate(d)\n manifest=build.department_exports(d)\n subset=copy.deepcopy(d); subset['people']=fresh\n selected_manifest=build.department_exports(subset)\n out={dept:dict(build.department_tables([p for p in fresh if p['department_id']==dept],d['updated_at'],d['institutions'])) for dept in sorted({p['department_id'] for p in fresh})}\nassert d==original\nprint(json.dumps({'tables':out,'manifest':manifest,'selected_manifest':selected_manifest},ensure_ascii=False))`;
+  const code=`import json,sys,copy\nfrom unittest import mock\nsys.path.insert(0,'scripts')\nimport build\nfrom atlas_storage import load_atlas\nd=load_atlas('data/atlas.json'); original=copy.deepcopy(d)\nbatches=set(${JSON.stringify(BATCHES.map(b=>b.batch))})\nfresh=[p for p in d['people'] if p.get('data_batch_id') in batches]\nwith mock.patch.object(build,'Workbook',side_effect=AssertionError('No XLSX allowed')), mock.patch.object(build,'build',side_effect=AssertionError('No build allowed')):\n build.validate(d)\n manifest=build.department_exports(d)\n subset=copy.deepcopy(d); subset['people']=fresh\n selected_manifest=build.department_exports(subset)\n out={dept:dict(build.department_tables([p for p in fresh if p['department_id']==dept],d['updated_at'],d['institutions'])) for dept in sorted({p['department_id'] for p in fresh})}\nassert d==original\nprint(json.dumps({'tables':out,'manifest':manifest,'selected_manifest':selected_manifest},ensure_ascii=False))`;
   exported=JSON.parse(execFileSync('python',['-B','-c',code],{cwd:fileURLToPath(new URL('..',import.meta.url)),encoding:'utf8'}));return exported;
 }
 

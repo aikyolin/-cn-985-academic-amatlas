@@ -1,3 +1,4 @@
+from atlas_test_io import load_atlas
 from school_scope import hit_atlas, hit_rosters
 """Roster batch integrity and export tests; no workbook is generated."""
 import copy
@@ -30,7 +31,7 @@ class RosterBatchTwoTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.rosters = hit_rosters(json.loads((ROOT / 'data/rosters.json').read_text()))
-        cls.atlas = hit_atlas(json.loads((ROOT / 'data/atlas.json').read_text()))
+        cls.atlas = hit_atlas(load_atlas(ROOT / 'data/atlas.json'))
         cls.new_entries = [entry for entry in cls.rosters['entries'] if entry.get('batch_id') == 'harbin-002']
         cls.weihai_entries = [entry for entry in cls.rosters['entries'] if entry.get('batch_id') == 'weihai-003']
 

@@ -1,4 +1,5 @@
 """School-scoped history must coexist with independent full-canonical validation."""
+from atlas_test_io import load_atlas
 import copy,json,pathlib,sys,unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
@@ -8,14 +9,14 @@ from school_scope import hit_atlas,hit_rosters,hit_export_rows
 
 class HistoricalSchoolScopeTests(unittest.TestCase):
  def setUp(self):
-  self.atlas=json.loads((ROOT/'data/atlas.json').read_text())
+  self.atlas=load_atlas(ROOT/'data/atlas.json')
   self.rosters=json.loads((ROOT/'data/rosters.json').read_text())
  def test_full_canonical_is_still_validated_without_school_filter(self):
   self.assertTrue(validate(self.atlas));self.assertTrue(validate_rosters(self.rosters,self.atlas))
   import jsonschema
   validator=jsonschema.Draft202012Validator(json.loads((ROOT/'schema/atlas.schema.json').read_text()),format_checker=jsonschema.FormatChecker())
   validator.validate(self.atlas)
-  site=json.loads((ROOT/'site/atlas.json').read_text());rosters=json.loads((ROOT/'site/rosters.json').read_text())
+  site=load_atlas(ROOT/'site/atlas.json');rosters=json.loads((ROOT/'site/rosters.json').read_text())
   self.assertTrue(validate(site));self.assertTrue(validate_rosters(rosters,site));validator.validate(site)
   for key in ['institutions','campuses','org_units','people','pending_people']:
    self.assertEqual(self.atlas[key],site[key],key)

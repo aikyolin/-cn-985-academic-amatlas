@@ -1,10 +1,11 @@
+import {readJSONFile} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {stages,matches,mentorEvent,mentorProfileRoute,mentorOfficialUrl,mentorNavigationNotice,schoolStats,escapeHtml,safeUrl} from '../site/model.js';
 
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 const db=read('../data/atlas.json'),rosters=read('../data/rosters.json'),progress=read('../progress/multischool-second-coverage.json');
 db.rosters=rosters;
 // This release's five reviewed new-person packages, not a suffix/prefix match for later 003 packages.

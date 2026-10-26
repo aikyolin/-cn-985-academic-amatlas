@@ -1,3 +1,4 @@
+from atlas_test_io import load_atlas
 from school_scope import hit_atlas, hit_rosters
 """Reviewed Weihai boundaries and explicit news-backed roster identity; no exports written."""
 import copy,json,pathlib,sys,unittest
@@ -8,7 +9,7 @@ from validate_queue import validate_queue
 class WeihaiFirstTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.data=hit_atlas(json.loads((ROOT/'data/atlas.json').read_text()));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.people={p['name']:p for p in cls.data['people']};cls.batch=[p for p in cls.data['people']if p.get('data_batch_id')=='faculty-batch-weihai-info-001'];cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text())
+  cls.data=hit_atlas(load_atlas(ROOT/'data/atlas.json'));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.people={p['name']:p for p in cls.data['people']};cls.batch=[p for p in cls.data['people']if p.get('data_batch_id')=='faculty-batch-weihai-info-001'];cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text())
  def entry(self,name):return next(e for e in self.rosters['entries']if e['name']==name)
  def test_global_counts(self):
   d=self.data;self.assertTrue(validate(d));self.assertEqual([len(d['people']),len(d['pending_people'])],[257,42]);self.assertEqual([sum(c in p['campus_ids']for p in d['people'])for c in ['harbin','weihai','shenzhen']],[159,62,36]);self.assertEqual([sum(len(p.get(k,[]))for p in d['people'])for k in ['education','appointments','mentors','committee_members','publications','sources']],[789,953,109,9,545,951]);self.assertEqual(sum(e['profile_identity_verified']for e in self.rosters['entries']),252)

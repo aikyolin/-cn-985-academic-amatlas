@@ -1,9 +1,10 @@
+import {readAtlasFile} from './atlas-test-io.js';
 import {hitAtlas,hitRosters} from './school-scope.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {stages,matches,educationStageLabel,mentorEvent,escapeHtml} from '../site/model.js';
-const db=hitAtlas(JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url))));
+const db=hitAtlas(readAtlasFile(new URL('../site/atlas.json',import.meta.url)));
 const ro=hitRosters(JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url))));
 const batch=db.people.filter(p=>p.data_batch_id==='faculty-batch-harbin-eie-fourth-001');
 const person=name=>batch.find(p=>p.name===name);

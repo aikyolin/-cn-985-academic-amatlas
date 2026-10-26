@@ -1,15 +1,17 @@
+from atlas_test_io import read_live_json
+from atlas_test_io import load_atlas
 from published_fixture import published_root
 """Generic source-preserving event, mentor, and candidate isolation boundaries."""
 import copy,hashlib,json,pathlib,unittest
 from release27_history import release27_view
 from release26_history import CONTRACT,release26_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-read=lambda rel,root=ROOT:release27_view(json.loads((root/rel).read_text()),rel)
+read=lambda rel,root=ROOT:release27_view((json.loads((root/rel).read_text()) if root == published_root() else read_live_json(root/rel)),rel)
 class Rotation003Wave3Boundaries(unittest.TestCase):
  @classmethod
  def setUpClass(cls):cls.a=read('data/atlas.json');cls.r=read('data/rosters.json');cls.new=cls.a['people'][CONTRACT['data/atlas.json']['lists']['people']['length']:]
  def test_current_append_and_generated_view(self):
-  actual_site=json.loads((ROOT/'site/atlas.json').read_text());actual_data=json.loads((ROOT/'data/atlas.json').read_text())
+  actual_site=load_atlas(ROOT/'site/atlas.json');actual_data=load_atlas(ROOT/'data/atlas.json')
   self.assertEqual(actual_site['people'],actual_data['people']);self.assertEqual(actual_site['pending_people'],actual_data['pending_people'])
   self.assertEqual(actual_site['build_id'],json.loads((ROOT/'site/rosters.json').read_text())['build_id'])
   self.assertEqual((len(self.a['people']),len(self.a['pending_people']),len(self.a['org_units']),len(self.r['entries']),len(self.r['source_observations'])),(573,84,237,1739,1777))

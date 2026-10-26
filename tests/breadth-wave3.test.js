@@ -1,3 +1,4 @@
+import {readJSONFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -8,7 +9,7 @@ import {UNIVERSITIES} from '../site/universities.js';
 import {stages,degreeType,matches,mentorEvent,mentorOfficialUrl,mentorProfileRoute,officialProfileUrl,schoolStats,schoolCampuses,normalizeSchoolFilters,escapeHtml,routeSchool} from '../site/model.js';
 import {rosterProfileLinks} from '../site/rosters.js';
 
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 const db=read('../data/atlas.json'),rosters=read('../data/rosters.json'),progress=read('../progress/breadth-wave3-coverage.json'),site=read('../site/atlas.json'),siteRosters=read('../site/rosters.json');
 db.rosters=rosters;db.exports=site.exports;const original=JSON.stringify(db);
 const FIELDS=['education','appointments','mentors','committee_members','publications','sources','research_collaborators','pending_mentor_candidates','pending_mentors','project_guidance','professional_research_advisors','pending_publications'];
@@ -96,7 +97,7 @@ test('60 roster observations and26 coverage rows are selected samples, never a w
 let serial=0;
 async function app(hash='#/'){
  const d=structuredClone(db);d.build_id='breadth-wave3-read-only';d.rosters.build_id=d.build_id;const nodes=new Map(),listeners={},node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,querySelector:node,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};
- globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={hash};globalThis.window={scrollTo(){},addEventListener(t,f){listeners[t]=f}};globalThis.fetch=async p=>({ok:true,json:async()=>structuredClone(String(p).startsWith('atlas.json')?d:d.rosters)});await import('../site/app.js?breadth-wave3-real='+serial++);assert(!node('#main').innerHTML.includes('资料暂未加载'));return {node,navigate(hash){location.hash=hash;listeners.hashchange()}};
+ globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(t,f){listeners[t]=f}};globalThis.fetch=createAtlasFetch(d,d.rosters);await import('../site/app.js?breadth-wave3-real='+serial++);assert(!node('#main').innerHTML.includes('资料暂未加载'));return {node,navigate(hash){location.hash=hash;listeners.hashchange()}};
 }
 
 test('national cards and nineteen school views use actual school scope without defaulting empty campuses to HIT',async()=>{
@@ -181,7 +182,7 @@ test('seven direct mentor edges retain exact educational bindings and conservati
 });
 
 let exported;
-function tables(){if(exported)return exported;const code=`import json,sys,copy\nfrom unittest import mock\nsys.path.insert(0,'scripts')\nimport build,build_rosters\nd=json.load(open('data/atlas.json'));r=json.load(open('data/rosters.json'));before=copy.deepcopy(d);rb=copy.deepcopy(r)\nbatches=set(${JSON.stringify(BATCHES.map(b=>b.batch))})\nfresh=[p for p in d['people'] if p.get('data_batch_id') in batches]\nwith mock.patch.object(build,'Workbook',side_effect=AssertionError('No XLSX')),mock.patch.object(build,'build',side_effect=AssertionError('No build')),mock.patch.object(build_rosters,'build_rosters',side_effect=AssertionError('No roster build')):\n build.validate(d);build_rosters.validate_rosters(r,d)\n subset=copy.deepcopy(d);subset['people']=fresh\n out={'selected_manifest':build.department_exports(subset),'manifest':build.department_exports(d),'tables':{dept:dict(build.department_tables([p for p in fresh if p['department_id']==dept],d['updated_at'],d['institutions'])) for dept in sorted({p['department_id'] for p in fresh})}}\nassert d==before and r==rb\nprint(json.dumps(out,ensure_ascii=False))`;exported=JSON.parse(execFileSync('python',['-B','-c',code],{cwd:fileURLToPath(new URL('..',import.meta.url)),encoding:'utf8',maxBuffer:8*1024*1024}));return exported}
+function tables(){if(exported)return exported;const code=`import json,sys,copy\nfrom unittest import mock\nsys.path.insert(0,'scripts')\nimport build,build_rosters\nfrom atlas_storage import load_atlas\nd=load_atlas('data/atlas.json');r=json.load(open('data/rosters.json'));before=copy.deepcopy(d);rb=copy.deepcopy(r)\nbatches=set(${JSON.stringify(BATCHES.map(b=>b.batch))})\nfresh=[p for p in d['people'] if p.get('data_batch_id') in batches]\nwith mock.patch.object(build,'Workbook',side_effect=AssertionError('No XLSX')),mock.patch.object(build,'build',side_effect=AssertionError('No build')),mock.patch.object(build_rosters,'build_rosters',side_effect=AssertionError('No roster build')):\n build.validate(d);build_rosters.validate_rosters(r,d)\n subset=copy.deepcopy(d);subset['people']=fresh\n out={'selected_manifest':build.department_exports(subset),'manifest':build.department_exports(d),'tables':{dept:dict(build.department_tables([p for p in fresh if p['department_id']==dept],d['updated_at'],d['institutions'])) for dept in sorted({p['department_id'] for p in fresh})}}\nassert d==before and r==rb\nprint(json.dumps(out,ensure_ascii=False))`;exported=JSON.parse(execFileSync('python',['-B','-c',code],{cwd:fileURLToPath(new URL('..',import.meta.url)),encoding:'utf8',maxBuffer:8*1024*1024}));return exported}
 
 test('in-memory exports follow actual leaf departments, exclude all18 pending and preserve school columns',()=>{
  const out=tables(),expectedDepts=new Set(fresh.map(p=>p.department_id));assert.equal(out.selected_manifest.length,expectedDepts.size);assert.equal(out.selected_manifest.reduce((n,e)=>n+e.people_count,0),42);

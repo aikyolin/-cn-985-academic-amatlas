@@ -1,4 +1,5 @@
 """Synthetic fixtures only; these are not real progress claims."""
+from atlas_test_io import load_atlas
 import unittest,sys,pathlib,copy
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/'scripts'))
 from validate_queue import validate_queue
@@ -41,7 +42,7 @@ class QueueTests(unittest.TestCase):
   self.assertEqual(digest,'1f16ada0ae6f60a29f5fd721897454390728bde9b05e5e87ecf4b1f071f05ca6')
  def test_campus_evidence_scope(self):
   import json,collections
-  root=pathlib.Path(__file__).resolve().parents[1];d=json.loads((root/'data/atlas.json').read_text());d['org_units']=[o for o in d['org_units'] if o.get('school_id')=='hit']
+  root=pathlib.Path(__file__).resolve().parents[1];d=load_atlas(root/'data/atlas.json');d['org_units']=[o for o in d['org_units'] if o.get('school_id')=='hit']
   self.assertEqual(collections.Counter(o['campus_id'] for o in d['org_units']),{'hit-harbin':28,'hit-shenzhen':27,'hit-weihai':13,None:10})
   self.assertTrue(all(o['is_complete'] is False for o in d['org_units']))
 if __name__=='__main__':unittest.main()

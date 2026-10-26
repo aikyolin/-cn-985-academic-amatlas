@@ -1,3 +1,4 @@
+import {readJSONFile} from './atlas-test-io.js';
 // Generic current-consumer boundaries driven by a reviewed source contract, not names.
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
@@ -5,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
-const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),read=f=>JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),read=f=>readJSONFile(path.join(root,f));
 const raw=fs.readFileSync(path.join(root,'tests/fixtures/rotation003-wave7-source-contract.json'));
 assert.equal(createHash('sha256').update(raw).digest('hex'),'7121c78c32a981666579046d397eb3383c124b6e90d31642b310ef80eb60a80d');
 const contract=JSON.parse(raw),db=read('site/atlas.json');db.rosters=read('site/rosters.json');

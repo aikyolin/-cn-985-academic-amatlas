@@ -1,3 +1,4 @@
+from atlas_test_io import load_atlas
 from school_scope import hit_atlas, hit_rosters
 """Associate first10: conservative fields, pending-layer boundaries and exact identity mapping."""
 import json,pathlib,sys,unittest
@@ -8,7 +9,7 @@ from validate_queue import validate_queue
 class WeihaiAssociateTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.d=hit_atlas(json.loads((ROOT/'data/atlas.json').read_text()));cls.r=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text());cls.people={p['name']:p for p in cls.d['people']};cls.ps=[p for p in cls.d['people']if p.get('data_batch_id')=='faculty-batch-weihai-info-associate-001'];cls.pending=[p for p in cls.d['pending_people']if p.get('data_batch_id')=='faculty-batch-weihai-info-associate-001']
+  cls.d=hit_atlas(load_atlas(ROOT/'data/atlas.json'));cls.r=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text());cls.people={p['name']:p for p in cls.d['people']};cls.ps=[p for p in cls.d['people']if p.get('data_batch_id')=='faculty-batch-weihai-info-associate-001'];cls.pending=[p for p in cls.d['pending_people']if p.get('data_batch_id')=='faculty-batch-weihai-info-associate-001']
  def test_checkpoint_exact_counts_exclude_pending_career_facts(self):
   self.assertTrue(validate(self.d));self.assertEqual([len(self.d['people']),len(self.d['pending_people'])],[257,42]);self.assertEqual([sum(len(p.get(k,[]))for p in self.d['people'])for k in ['education','appointments','mentors','committee_members','publications','sources']],[789,953,109,9,545,951]);self.assertEqual(sum(e['profile_identity_verified']for e in self.r['entries']),252);self.assertEqual([len(self.ps),len(self.pending)],[8,2]);self.assertEqual(sum(len(p['appointments'])for p in self.pending),2)
  def test_exact_reviewed_source_and_normalized_hash(self):

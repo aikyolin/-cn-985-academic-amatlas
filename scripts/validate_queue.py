@@ -1,5 +1,6 @@
 """Validate public task checkpoints, dependencies and reviewed completion evidence."""
 import argparse,json,pathlib,datetime,re
+from atlas_storage import load_atlas
 from jsonschema import Draft202012Validator,FormatChecker
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 FORMATS=FormatChecker()
@@ -16,7 +17,7 @@ def validate_queue(data,root=ROOT,check_artifacts=False):
  root=pathlib.Path(root)
  schema=json.loads((ROOT/'schema/work-queue.schema.json').read_text())
  Draft202012Validator(schema,format_checker=FORMATS).validate(data)
- atlas=json.loads((root/'data/atlas.json').read_text())
+ atlas=load_atlas(root/'data/atlas.json')
  schools={s['id'] for s in atlas['institutions']}
  organizations={o['id']:o for o in atlas['org_units']}
  campuses={c['id']:c for c in atlas['campuses']}

@@ -1,7 +1,8 @@
+import {readAtlasFile} from './atlas-test-io.js';
 import {hitAtlas,hitRosters} from './school-scope.js';
 import fs from 'node:fs';import assert from 'node:assert/strict';import {test as check} from 'node:test';
 import {stages,matches,mentorEvent,collaboratorEvent,escapeHtml,educationStageLabel} from '../site/model.js';
-const db=hitAtlas(JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)))),baseline=db;
+const db=hitAtlas(readAtlasFile(new URL('../site/atlas.json',import.meta.url))),baseline=db;
 const pkg={people:db.people.filter(p=>p.data_batch_id==='faculty-batch-harbin-eie-fourth-003'),pending_people:db.pending_people.filter(p=>p.data_batch_id==='faculty-batch-harbin-eie-fourth-003')};
 const all=[...pkg.people,...pkg.pending_people],person=n=>all.find(p=>p.name===n);
 check('Final information batch is twelve detailed and one identity-pending with exact reviewed counts',()=>{assert.equal(pkg.people.length,12);assert.equal(pkg.pending_people.length,1);assert.deepEqual(['education','appointments','mentors','committee_members','publications','sources'].map(k=>all.reduce((n,p)=>n+p[k].length,0)),[31,27,5,0,26,52]);assert.deepEqual([true,false,null].map(v=>all.flatMap(p=>p.education).filter(e=>e.degree_awarded===v).length),[16,6,9]);assert.equal(new Set(all.flatMap(p=>p.education).map(e=>e.event_id)).size,31);assert(all.flatMap(p=>p.education).every(e=>e.event_id&&e.event_id===e.education_event_id))});

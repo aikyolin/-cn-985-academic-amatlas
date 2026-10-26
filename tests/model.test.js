@@ -1,9 +1,10 @@
+import {readAtlasFile} from './atlas-test-io.js';
 import {hitAtlas,hitRosters} from './school-scope.js';
 import {educationStageLabel} from '../site/model.js';
 import {collaboratorEvent} from '../site/model.js';
 import {rosterIdentityMatched,rosterStatusLabel} from '../site/rosters.js';
 import {test} from 'node:test';import assert from 'node:assert/strict';import {matches,degreeType,stages,mentorEvent,navigableProfileUrl,safeUrl,escapeHtml} from '../site/model.js';
-import fs from 'node:fs';const db=hitAtlas(JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url))));const list=f=>db.people.filter(p=>matches(p,f));
+import fs from 'node:fs';const db=hitAtlas(readAtlasFile(new URL('../site/atlas.json',import.meta.url)));const list=f=>db.people.filter(p=>matches(p,f));
 test('two hundred fifty seven detailed profiles keep pending identity separate',()=>{assert.equal(db.people.length,257);assert.equal(list({campus:'harbin'}).length,159);assert.equal(list({campus:'weihai'}).length,62);assert.equal(list({campus:'shenzhen'}).length,36)});
 test('bachelor 985 and geography combine',()=>{assert(list({ug:'no',doctor:'hmt'}).some(p=>p.name==='堵宏伟'));assert(list({ug:'yes',doctor:'overseas',continent:'north_america'}).some(p=>p.name==='高庆彬'))});
 test('joint cultivation not PhD granting institution',()=>{assert.equal(degreeType('联合培养（非单独学位）'),'other');assert(!list({doctor:'overseas'}).some(p=>p.name==='李焕'))});

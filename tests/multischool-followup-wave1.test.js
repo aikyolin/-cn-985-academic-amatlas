@@ -1,3 +1,4 @@
+import {readJSONFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -7,7 +8,7 @@ import {fileURLToPath} from 'node:url';
 import {stages,degreeType,matches,mentorEvent,mentorEvents,professionalGuidanceEvent,mentorOfficialUrl,mentorProfileRoute,officialProfileUrl,schoolStats} from '../site/model.js';
 import {rosterProfileLinks} from '../site/rosters.js';
 
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 const db=read('../data/atlas.json'),rosters=read('../data/rosters.json'),progress=read('../progress/multischool-followup-wave1-coverage.json');
 const before=JSON.stringify([db,rosters]);
 const FIELDS=['education','appointments','mentors','committee_members','publications','sources','research_collaborators','pending_mentor_candidates','pending_mentors','project_guidance','professional_research_advisors','pending_publications'];
@@ -301,7 +302,7 @@ let serial=0;
 async function app(hash){
  const d=structuredClone(db);d.build_id='followup-wave1-read-only';d.rosters=structuredClone(rosters);d.rosters.build_id=d.build_id;d.exports=[];
  const nodes=new Map(),listeners={},node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,querySelector:node,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};
- globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={hash};globalThis.window={scrollTo(){},addEventListener(t,f){listeners[t]=f}};globalThis.fetch=async p=>({ok:true,json:async()=>structuredClone(String(p).startsWith('atlas.json')?d:d.rosters)});
+ globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(t,f){listeners[t]=f}};globalThis.fetch=createAtlasFetch(d,d.rosters);
  await import('../site/app.js?followup-wave1-real='+serial++);assert(!node('#main').innerHTML.includes('资料暂未加载'));return {node,navigate(hash){location.hash=hash;listeners.hashchange()}};
 }
 test('Cao Jingchao retains one Sam Kwong relation covering exactly two unknown-award stages without duplicate unknown mentors',async()=>{
@@ -340,7 +341,7 @@ test('all direct relationships and educational filters preserve exact events rat
  const chen=person('ouc-chenxin');assert.equal(chen.education[0].institution,null);assert.equal(chen.education[0].country,null);assert.equal(chen.education[0].degree_awarded,null);
 });
 let exported;
-function tables(){if(exported)return exported;const code=`import json,sys,copy\nfrom unittest import mock\nsys.path.insert(0,'scripts')\nimport build,build_rosters\nd=json.load(open('data/atlas.json'));r=json.load(open('data/rosters.json'));before=copy.deepcopy(d);rb=copy.deepcopy(r)\nbatches=set(${JSON.stringify(BATCHES.map(b=>b.batch))})\nfresh=[p for p in d['people'] if p.get('data_batch_id') in batches]\nwith mock.patch.object(build,'Workbook',side_effect=AssertionError('No XLSX')),mock.patch.object(build,'build',side_effect=AssertionError('No build')),mock.patch.object(build_rosters,'build_rosters',side_effect=AssertionError('No roster build')):\n build.validate(d);build_rosters.validate_rosters(r,d)\n out={dept:dict(build.department_tables([p for p in fresh if p['department_id']==dept],d['updated_at'],d['institutions'])) for dept in sorted({p['department_id'] for p in fresh})}\nassert d==before and r==rb\nprint(json.dumps(out,ensure_ascii=False))`;exported=JSON.parse(execFileSync('python',['-B','-c',code],{cwd:fileURLToPath(new URL('..',import.meta.url)),encoding:'utf8',maxBuffer:8*1024*1024}));return exported}
+function tables(){if(exported)return exported;const code=`import json,sys,copy\nfrom unittest import mock\nsys.path.insert(0,'scripts')\nimport build,build_rosters\nfrom atlas_storage import load_atlas\nd=load_atlas('data/atlas.json');r=json.load(open('data/rosters.json'));before=copy.deepcopy(d);rb=copy.deepcopy(r)\nbatches=set(${JSON.stringify(BATCHES.map(b=>b.batch))})\nfresh=[p for p in d['people'] if p.get('data_batch_id') in batches]\nwith mock.patch.object(build,'Workbook',side_effect=AssertionError('No XLSX')),mock.patch.object(build,'build',side_effect=AssertionError('No build')),mock.patch.object(build_rosters,'build_rosters',side_effect=AssertionError('No roster build')):\n build.validate(d);build_rosters.validate_rosters(r,d)\n out={dept:dict(build.department_tables([p for p in fresh if p['department_id']==dept],d['updated_at'],d['institutions'])) for dept in sorted({p['department_id'] for p in fresh})}\nassert d==before and r==rb\nprint(json.dumps(out,ensure_ascii=False))`;exported=JSON.parse(execFileSync('python',['-B','-c',code],{cwd:fileURLToPath(new URL('..',import.meta.url)),encoding:'utf8',maxBuffer:8*1024*1024}));return exported}
 test('real in-memory exports retain one Sam row, independent Tian context, unknown dates and blocked source navigation',()=>{
  const t=tables(),sam=person('ouc-caojingchao'),m=sam.mentors[0],rows=t[sam.department_id]['导师'].filter(r=>r[0]===sam.name);assert.equal(rows.length,1);for(const text of [m.stage_scope,...m.education_event_ids,'起始时间未披露','结束时间未披露'])assert(rows[0][6].includes(text));
  const chen=person('scu-chenliangyin'),tr=t[chen.department_id]['导师'].find(r=>r[0]===chen.name&&r[1]==='Tian He');assert.equal(tr[2],'职业科研指导（非学位）');for(const text of ['scu-chenliangyin-education-2','指导起止：起始时间未披露 至 结束时间未披露','2009-08 至 2010-09','经历区间，不等于指导起止；非博士后认定'])assert(tr[6].includes(text));assert.equal(tr[7],'');

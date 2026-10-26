@@ -1,9 +1,10 @@
+import {readJSONFile,createAtlasFetch} from './atlas-test-io.js';
 // Synthetic relationships only. Never copy these fixtures to public snapshots.
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {mentorEvent,mentorEvents,mentorProfileRoute,professionalGuidanceEvent,stages} from '../site/model.js';
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 function fixture(){
  const d=read('./fixtures/multischool.json'),p=d.people[1];
  p.education=['学士','硕士','博士'].map((degree,i)=>({event_id:'synthetic-stage-'+i,degree,event_kind:'degree',degree_awarded:null,institution:'独立学习机构'+i,start:'200'+i,end:'201'+i,region:'unknown',continent_code:'unknown',institution_985:'unknown',source_url:'https://b.example.test/stage'}));
@@ -15,8 +16,8 @@ async function app(d,hash='#/person/pku-synthetic-person/lineage'){
  const nodes=new Map(),listeners={};
  const node=key=>{if(!nodes.has(key))nodes.set(key,{innerHTML:'',textContent:'',value:'',events:{},style:{},dataset:{height:'320'},clientWidth:960,addEventListener(type,fn){this.events[type]=fn},click(){this.onclick?.()}});return nodes.get(key)};
  globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
- globalThis.location={hash};globalThis.window={scrollTo(){},addEventListener(type,fn){listeners[type]=fn}};
- globalThis.fetch=async path=>({ok:true,json:async()=>structuredClone(String(path).startsWith('atlas.json')?d:d.rosters)});
+ globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(type,fn){listeners[type]=fn}};
+ globalThis.fetch=createAtlasFetch(d,d.rosters);
  await import('../site/app.js?combined-fixture='+serial++);
  return {node,navigate(hash){location.hash=hash;listeners.hashchange()}};
 }
@@ -43,7 +44,16 @@ test('combined dates and institution come only from explicitly supplied relation
 test('malformed plural references fail closed without fallback stage matching or partial coverage',async()=>{
  for(const refs of [null,undefined,[],{},'synthetic-stage-1',[''],[' '],[null],['synthetic-stage-1','missing'],['synthetic-stage-1','synthetic-stage-1']]){
   const d=fixture(),p=d.people[1],m=p.mentors[0];m.education_event_ids=refs;m.education_stage='硕士';assert.deepEqual(mentorEvents(p,m),[]);assert.deepEqual(mentorEvent(p,m),{});
-  const g=(await app(d)).node('#mind-stage').innerHTML;assert.equal((g.match(/>导师未核实</g)||[]).length,3);
+  if(refs===undefined){
+   // structuredClone preserves own undefined; real JSON cannot represent it.
+   // The direct model checks above retain that malformed-present negative case.
+   assert(Object.hasOwn(m,'education_event_ids'));
+   const wire=JSON.parse(JSON.stringify(d)),wp=wire.people[1],wm=wp.mentors[0];
+   assert(!Object.hasOwn(wm,'education_event_ids'));assert.deepEqual(mentorEvents(wp,wm),[wp.education[1]]);
+   const g=(await app(wire)).node('#mind-stage').innerHTML;assert.equal((g.match(/>导师未核实</g)||[]).length,2);
+  }else{
+   const g=(await app(d)).node('#mind-stage').innerHTML;assert.equal((g.match(/>导师未核实</g)||[]).length,3);
+  }
  }
  const p=fixture().people[1],m=p.mentors[0];m.education_event_id=m.education_event_ids[0];assert.deepEqual(mentorEvents(p,m),[]);delete m.education_event_id;p.education.push({...p.education[1]});assert.deepEqual(mentorEvents(p,m),[]);
 });

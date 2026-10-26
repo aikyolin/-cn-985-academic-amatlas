@@ -1,3 +1,4 @@
+from atlas_test_io import load_atlas
 from school_scope import hit_atlas, hit_rosters
 import copy,json,pathlib,sys,unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1]
@@ -7,9 +8,9 @@ from build_rosters import validate_rosters
 class InformationSecondTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.data=hit_atlas(json.loads((ROOT/'data/atlas.json').read_text()));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.batch=[p for p in cls.data['people'] if p.get('data_batch_id')=='faculty-batch-harbin-eie-fourth-002']
+  cls.data=hit_atlas(load_atlas(ROOT/'data/atlas.json'));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.batch=[p for p in cls.data['people'] if p.get('data_batch_id')=='faculty-batch-harbin-eie-fourth-002']
  def test_combined_counts_and_static_snapshot(self):
-  self.assertEqual([len(self.data['people']),len(self.data['pending_people']),sum('harbin' in p['campus_ids'] for p in self.data['people'])],[257,42,159]);self.assertEqual([sum(len(p.get(k,[])) for p in self.data['people']) for k in ['education','mentors','committee_members','publications']],[789,109,9,545]);self.assertEqual(self.data['people'],hit_atlas(json.loads((ROOT/'site/atlas.json').read_text()))['people'])
+  self.assertEqual([len(self.data['people']),len(self.data['pending_people']),sum('harbin' in p['campus_ids'] for p in self.data['people'])],[257,42,159]);self.assertEqual([sum(len(p.get(k,[])) for p in self.data['people']) for k in ['education','mentors','committee_members','publications']],[789,109,9,545]);self.assertEqual(self.data['people'],hit_atlas(load_atlas(ROOT/'site/atlas.json'))['people'])
  def test_batch_counts_and_in_memory_tables_without_xlsx_writes(self):
   self.assertEqual([sum(len(p[k]) for p in self.batch) for k in ['education','appointments','mentors','committee_members','publications','sources']],[33,39,4,4,22,52]);t=dict(department_tables(self.batch,self.data['updated_at']));self.assertEqual([len(t[k]) for k in ['总览','经历','导师','论文']],[11,73,9,23]);self.assertEqual(sum('委员会' in (r[2] or '') for r in t['导师'][1:]),4);self.assertTrue(all(not r[7] for r in t['导师'][1:]));m=next(r for r in t['导师'][1:] if r[1]=='Mathews Jacob');self.assertIn('University of Iowa',m[6]);self.assertIn('University of Rochester',m[6]);self.assertIn('University of Virginia',m[6])
  def test_precise_mentor_event_ids_reject_missing_reference(self):

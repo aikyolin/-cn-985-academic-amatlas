@@ -1,4 +1,5 @@
 """Independent professional guidance contract; synthetic fixtures and in-memory tables only."""
+from atlas_test_io import load_atlas
 import copy
 import json
 import pathlib
@@ -100,7 +101,7 @@ class ProfessionalGuidanceTests(unittest.TestCase):
    with self.subTest(key=key),self.assertRaises(AssertionError):build.validate(d)
 
  def test_legacy_zhengwei_non_award_event_bound_guidance_stays_unchanged(self):
-  d=json.loads((ROOT/'data/atlas.json').read_text());p=next(p for p in d['people'] if p['person_id']=='hit-WeiZheng');before=copy.deepcopy(p)
+  d=load_atlas(ROOT/'data/atlas.json');p=next(p for p in d['people'] if p['person_id']=='hit-WeiZheng');before=copy.deepcopy(p)
   occupational=[m for m in p['mentors'] if m.get('relationship_kind')=='professional_research_advisor'];self.assertEqual(len(occupational),2)
   for m in occupational:
    self.assertEqual(m['relationship_kind'],'professional_research_advisor');e=next(e for e in p['education'] if e.get('event_id')==m['education_event_id']);self.assertIs(e['degree_awarded'],False);self.assertEqual(e['event_kind'],'professional_research')

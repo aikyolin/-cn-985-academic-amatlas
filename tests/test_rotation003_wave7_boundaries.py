@@ -1,3 +1,4 @@
+from atlas_test_io import read_live_json
 from published_fixture import published_root
 """Generic reviewed append conservation and scope boundaries; factual expectations are frozen data."""
 import copy,hashlib,json,pathlib,re,unittest
@@ -5,7 +6,7 @@ from release30_history import CONTRACT,release30_view
 from public_append_history import load_baseline, public_append_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def read(rel,root=ROOT):
- value=json.loads((root/rel).read_text())
+ value=(json.loads((root/rel).read_text()) if root == published_root() else read_live_json(root/rel))
  return public_append_view(value,rel) if rel in load_baseline()['files'] else value
 def digest(value):return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 def pointer(value,path):
@@ -60,7 +61,7 @@ class ReviewedAppendBoundaries(unittest.TestCase):
    import sys
    sys.path.insert(0,str(ROOT/'scripts'))
    from public_metadata import metadata_errors,publication_files
-   actual=json.loads((ROOT/rel).read_text())
+   actual=read_live_json(ROOT/rel)
    self.assertEqual(metadata_errors(actual,source=rel,public_files=publication_files(ROOT)),[],rel)
   schools={r['original']['school_id']for r in SOURCE['people']}|set(SOURCE['held_schools'])
   for sid in schools:assert_public_metadata(read('progress/'+sid+'-rotation003-wave7-coverage.json'))

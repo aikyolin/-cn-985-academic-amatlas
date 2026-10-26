@@ -1,14 +1,15 @@
+import {readAtlasFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {educationStageLabel,stages,mentorOfficialUrl,mentorEvents,officialProfileUrl} from '../site/model.js';
 import {rosterProfileLinks,rosterIdentityMatched,rosterStatusLabel,renderRosters} from '../site/rosters.js';
-const db=JSON.parse(fs.readFileSync(new URL('../data/atlas.json',import.meta.url)));db.rosters=JSON.parse(fs.readFileSync(new URL('../data/rosters.json',import.meta.url)));
+const db=readAtlasFile(new URL('../data/atlas.json',import.meta.url));db.rosters=JSON.parse(fs.readFileSync(new URL('../data/rosters.json',import.meta.url)));
 const p=id=>[...db.people,...db.pending_people].find(p=>p.person_id===id),r=id=>db.rosters.entries.find(e=>e.source_person_id===id);
 const schoolIds=['cqu','lzu','nwpu','nwsuaf','scu','scut','sysu','uestc','xjtu'];
 const added=[...db.people,...db.pending_people].filter(p=>schoolIds.some(s=>p.data_batch_id===`faculty-batch-${s}-rotation-001`));
 let serial=0;
-async function app(id,mode='profile'){const view=structuredClone(db);view.build_id=view.rosters.build_id='rotation-wave3-render-fixture';const nodes=new Map(),node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={hash:'#/person/'+id+(mode==='lineage'?'/lineage':'')};globalThis.window={scrollTo(){},addEventListener(){}};globalThis.fetch=async path=>({ok:true,json:async()=>structuredClone(String(path).startsWith('atlas.json')?view:view.rosters)});await import('../site/app.js?rotation-third-wave='+serial++);assert(!node('#main').innerHTML.includes('资料暂未加载'),node('#main').innerHTML);return node}
+async function app(id,mode='profile'){const view=structuredClone(db);view.build_id=view.rosters.build_id='rotation-wave3-render-fixture';const nodes=new Map(),node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={href:"https://atlas.test/site/index.html",hash:'#/person/'+id+(mode==='lineage'?'/lineage':'')};globalThis.window={scrollTo(){},addEventListener(){}};globalThis.fetch=createAtlasFetch(view,view.rosters);await import('../site/app.js?rotation-third-wave='+serial++);assert(!node('#main').innerHTML.includes('资料暂未加载'),node('#main').innerHTML);return node}
 
 test('nine new selected batches have25 partial profiles and2 pending, not full-school coverage',()=>{
  assert.equal(added.length,27);assert.equal(added.filter(p=>p.detail_count_eligible).length,25);assert.equal(db.institutions.length,39);

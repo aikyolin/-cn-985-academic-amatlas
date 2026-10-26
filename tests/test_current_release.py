@@ -1,3 +1,4 @@
+from atlas_test_io import read_live_json
 """Current candidate checks, deliberately NOT run against historical fixtures.
 
 The fixed published release is only the independent conservation reference.
@@ -61,7 +62,7 @@ SEU_IDS = ['seu-dinghui', 'seu-sushu', 'seu-zhangkaifeng', 'seu-zhangjianqiong',
 NEXT_IDS = ['nju-huxiaowu', 'nju-caipingqiang', 'nju-linzhaoyu', 'nju-huying', 'nju-zhangwei-linguistics', 'nju-lvlinhai-education', 'nju-liyougen-law', 'nju-chenbaojun', 'nju-jiangfei', 'nju-zhoujiaxin']
 
 def read(root, rel):
-    return json.loads((root / rel).read_text())
+    return (json.loads((root / rel).read_text()) if root == published_root() else read_live_json(root / rel))
 
 def mapping():
     raw = (ROOT / 'tests/fixtures/independent-nju-source-mapping.json').read_bytes()
@@ -404,9 +405,19 @@ class CurrentRelease(unittest.TestCase):
         site = read(ROOT, 'site/atlas.json')
         for key, value in self.actual.items():
             self.assertEqual(site[key], value, key)
-        expected = hashlib.sha256(b''.join((ROOT / rel).read_bytes() for rel in [
-            'data/atlas.json', 'data/rosters.json', 'scripts/build.py',
-            'scripts/build_rosters.py', 'scripts/deterministic_xlsx.py'])).hexdigest()[:16]
+        from atlas_storage import storage_inputs, compute_build_id
+        # Independent implementation of the reviewed versioned length-framed contract.
+        inputs = [('data/' + label, raw) for label, raw in storage_inputs(ROOT / 'data/atlas.json')]
+        inputs += [(rel, (ROOT / rel).read_bytes()) for rel in (
+            'data/rosters.json', 'scripts/build.py', 'scripts/build_rosters.py',
+            'scripts/deterministic_xlsx.py', 'scripts/atlas_storage.py', 'site/atlas-loader.js')]
+        digest = hashlib.sha256(b'academic-atlas-build-school-parts-v1\0')
+        for label, raw in inputs:
+            name = label.encode('utf-8')
+            digest.update(len(name).to_bytes(8, 'big')); digest.update(name)
+            digest.update(len(raw).to_bytes(8, 'big')); digest.update(raw)
+        expected = digest.hexdigest()[:16]
+        self.assertEqual(compute_build_id(ROOT), expected)
         self.assertEqual(site['build_id'], expected)
         self.assertEqual(read(ROOT, 'site/rosters.json')['build_id'], expected)
         self.assertEqual(site['exports'], build.department_exports(self.actual))
@@ -485,7 +496,32 @@ class CurrentRelease(unittest.TestCase):
                 before, after = b'source-dates-20261024', b'data-version-clarity-20261025'
                 self.assertEqual(expected.count(before), asset_token_counts[rel])
                 expected = expected.replace(before, after)
-            self.assertEqual((ROOT / rel).read_bytes(), expected, rel)
+            actual = (ROOT / rel).read_bytes()
+            # Inverse the storage-only delta: every original business byte stays pinned.
+            if rel == 'site/app.js':
+                added = b"import {loadAtlas} from './atlas-loader.js?v=school-chunks-20261026';\n"
+                self.assertEqual(actual.count(added), 1)
+                self.assertTrue(actual.startswith(added))
+                actual = actual[len(added):]
+                after = b"try{db=await loadAtlas();"
+                before = "try{const r=await fetch('atlas.json',{cache:'no-store'});if(!r.ok)throw Error('数据文件无法加载');db=await r.json();".encode()
+                self.assertEqual(actual.count(after), 1)
+                actual = actual.replace(after, before)
+            if rel in asset_token_counts:
+                self.assertEqual(actual.count(b'school-chunks-20261026'), asset_token_counts[rel])
+                actual = actual.replace(b'school-chunks-20261026', b'data-version-clarity-20261025')
+            if rel == 'scripts/build.py':
+                added = b'from atlas_storage import load_atlas, write_atlas, compute_build_id\n'
+                self.assertEqual(actual.count(added), 1)
+                actual = actual.replace(added, b'')
+                inverse = [
+                    (b"d=load_atlas(ROOT/'data/atlas.json')", b"d=json.loads((ROOT/'data/atlas.json').read_text())"),
+                    (b"d['build_id']=compute_build_id(ROOT)", b"d['build_id']=hashlib.sha256((ROOT/'data/atlas.json').read_bytes()+(ROOT/'data/rosters.json').read_bytes()+pathlib.Path(__file__).read_bytes()+(ROOT/'scripts/build_rosters.py').read_bytes()+(ROOT/'scripts/deterministic_xlsx.py').read_bytes()).hexdigest()[:16]"),
+                    (b"write_atlas(ROOT/'site/atlas.json',d)", b"(ROOT/'site/atlas.json').write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\\n',encoding='utf-8')")]
+                for after, before in inverse:
+                    self.assertEqual(actual.count(after), 1)
+                    actual = actual.replace(after, before)
+            self.assertEqual(actual, expected, rel)
 
     def test_every_affected_workbook_exactly_matches_reviewed_members_and_fields(self):
         from openpyxl import load_workbook

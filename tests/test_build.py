@@ -1,10 +1,11 @@
+from atlas_test_io import load_atlas
 from school_scope import hit_atlas, hit_rosters, hit_export_rows
 import unittest,sys,json,copy,pathlib
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/'scripts'))
 from build import validate,clean,ROOT
 from openpyxl import load_workbook
 class DataTests(unittest.TestCase):
- def setUp(self):self.full=json.loads((ROOT/'data/atlas.json').read_text());self.d=hit_atlas(self.full)
+ def setUp(self):self.full=load_atlas(ROOT/'data/atlas.json');self.d=hit_atlas(self.full)
  def test_validate(self):self.assertTrue(validate(self.full));self.assertTrue(validate(self.d))
  def test_evidence_required(self):
   del self.d['people'][0]['education'][0]['source_url']
@@ -14,11 +15,11 @@ class DataTests(unittest.TestCase):
   with self.assertRaises(AssertionError):validate(self.d)
  def test_formula_injection(self):self.assertEqual(clean('=HYPERLINK("bad")'),'\'=HYPERLINK("bad")')
  def test_workbooks(self):
-  snapshot=json.loads((ROOT/'site/atlas.json').read_text());files=[ROOT/'site'/e['path'] for e in snapshot['exports'] if e['school_id']=='hit'];self.assertEqual(len(files),7)
+  snapshot=load_atlas(ROOT/'site/atlas.json');files=[ROOT/'site'/e['path'] for e in snapshot['exports'] if e['school_id']=='hit'];self.assertEqual(len(files),7)
   for f in files:
    wb=load_workbook(f);self.assertEqual(wb.sheetnames,['总览','经历','导师','论文','来源']);self.assertEqual(wb['总览'].freeze_panes,'A2')
  def test_committee_export_and_conflicted_homepage(self):
-  snapshot=json.loads((ROOT/'site/atlas.json').read_text());files=[ROOT/'site'/e['path'] for e in snapshot['exports'] if e['school_id']=='hit'];f=next((f for f in files if 'robot' in f.name),None)
+  snapshot=load_atlas(ROOT/'site/atlas.json');files=[ROOT/'site'/e['path'] for e in snapshot['exports'] if e['school_id']=='hit'];f=next((f for f in files if 'robot' in f.name),None)
   if f is None:
    f=next(f for f in files if any(r[0]=='高庆彬' for r in load_workbook(f)['总览'].iter_rows(min_row=2,values_only=True)))
   rows=list(load_workbook(f)['导师'].iter_rows(min_row=2,values_only=True))

@@ -1,3 +1,4 @@
+import {readJSONFile} from './atlas-test-io.js';
 import {test} from 'node:test';
 import {publishedRoot} from './published-fixture.js';
 import assert from 'node:assert/strict';
@@ -22,7 +23,7 @@ const sha=value=>createHash('sha256').update(value).digest('hex');
 const baseline=loadBaseline();
 // Reconstruct published inputs through the pinned historical contract. The suite
 // must keep testing the same history after a separately reviewed append lands.
-const originals=Object.fromEntries(Object.keys(baseline.files).map(rel=>[rel,publicAppendView(JSON.parse(rel==='site/atlas.json'?fs.readFileSync(path.join(publishedRoot(),rel)):read(rel)),rel)]));
+const originals=Object.fromEntries(Object.keys(baseline.files).map(rel=>[rel,publicAppendView((rel==='site/atlas.json'?JSON.parse(fs.readFileSync(path.join(publishedRoot(),rel))):readJSONFile(new URL('../'+rel,import.meta.url))),rel)]));
 const clone=rel=>structuredClone(originals[rel]);
 const assertFrozenBytes=(bytes,rel)=>{
   assert.equal(bytes.length,baseline.files[rel].byte_length);

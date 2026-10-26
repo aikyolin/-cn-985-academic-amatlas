@@ -36,7 +36,7 @@ python -m unittest discover -s tests -v
 
 ## 模块
 
-- `data/atlas.json`：人物资料的数据源，公开学术事实及来源、冲突、缺项。
+- `data/atlas.json`：版本化数据清单；`data/people/*.json` 按学校保存原人物资料。使用 `scripts/atlas_storage.py` 重组公开学术事实及来源、冲突、缺项，不能将清单中的空占位当零人物。详见 [存储格式](docs/data-storage.md)。
 - `data/rosters.json`：独立待核对名录数据源，含分类覆盖和冲突；不与人物档案自动合并。
 - `scripts/build_rosters.py`：生成独立名录快照与Excel/CSV，标识消歧候选而非合并人物。
 - `site/`：静态 UI；个人主页和师承关系为独立路由；手机布局；可组合筛选；CSV、SVG 和 Excel 下载。

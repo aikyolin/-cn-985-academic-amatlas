@@ -1,4 +1,6 @@
+from atlas_test_io import read_live_json
 """Synthetic multi-school coverage; fixtures must never enter public snapshots."""
+from atlas_test_io import load_atlas
 import copy, hashlib, json, pathlib, sys, unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
@@ -70,7 +72,7 @@ class MultiSchoolTests(unittest.TestCase):
   self.assertEqual(rows[0][-2:],['所属学校ID','所属学校'])
   self.assertEqual(rows[1][-2:],['hit','测试甲校（虚构）']);self.assertEqual(rows[2][-2:],['pku','测试乙校（虚构）'])
  def test_hit_migration_preserves_every_existing_fact_and_evidence(self):
-  data=json.loads((ROOT/'data/atlas.json').read_text())
+  data=load_atlas(ROOT/'data/atlas.json')
   expected={
    'campuses':'85c2067edcd0bd8727fbd4dd1ec93c9c27bd45c30e209691164c328c06fbb6cd',
    'org_units':'a08b297daa383fd9c5409bb828e8bb3b3cb95187d0933ac0677d56d5dcf428ca',
@@ -83,6 +85,6 @@ class MultiSchoolTests(unittest.TestCase):
    self.assertEqual(actual,digest,key)
  def test_test_people_never_enter_public_data(self):
   for file in ['data/atlas.json','site/atlas.json','data/rosters.json','site/rosters.json']:
-   content=(ROOT/file).read_text();self.assertNotIn('synthetic-person',content);self.assertNotIn('测试甲校（虚构）',content)
+   content=json.dumps(read_live_json(ROOT/file),ensure_ascii=False);self.assertNotIn('synthetic-person',content);self.assertNotIn('测试甲校（虚构）',content)
 
 if __name__=='__main__':unittest.main()

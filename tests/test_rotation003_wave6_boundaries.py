@@ -1,3 +1,4 @@
+from atlas_test_io import read_live_json
 from published_fixture import published_root
 """Generic reviewed-append preservation, held-scope and conservative consumer boundaries."""
 import copy,hashlib,json,pathlib,unittest
@@ -5,7 +6,7 @@ from release29_history import CONTRACT,release29_view
 from release30_history import CONTRACT as RELEASE30_CONTRACT,release30_view
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def read(rel,root=ROOT):
- value=json.loads((root/rel).read_text());return release30_view(value,rel)if rel in RELEASE30_CONTRACT else value
+ value=(json.loads((root/rel).read_text()) if root == published_root() else read_live_json(root/rel));return release30_view(value,rel)if rel in RELEASE30_CONTRACT else value
 def digest(value):return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 def pointer(value,path):
  for part in path.split('/')[1:]:

@@ -1,16 +1,17 @@
+import {readAtlasFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {escapeHtml} from '../site/model.js';
-const atlas=JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url)));
+const atlas=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const rosters=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const app=fs.readFileSync(new URL('../site/app.js',import.meta.url),'utf8');
 let serial=0;
 async function render(hash,db=structuredClone(atlas),r=structuredClone(rosters)){
  const nodes=new Map(),node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,addEventListener(t,f){this.events[t]=f}});return nodes.get(k)};
  globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
- globalThis.location={hash};globalThis.window={scrollTo(){},addEventListener(){}};
- globalThis.fetch=async p=>({ok:true,json:async()=>structuredClone(String(p).startsWith('atlas.json')?db:r)});
+ globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(){}};
+ globalThis.fetch=createAtlasFetch(db,r);
  await import('../site/app.js?version-clarity='+serial++);
  return node('#main').innerHTML;
 }
@@ -33,7 +34,7 @@ test('missing build still triggers existing mixed-snapshot protection before ren
 test('version notice does not replace source-date metadata or profile evidence',async()=>{
  const h=await render('#/person/csu-yanlei');assert(h.includes('严磊'));assert(!h.includes('notice data-version'));assert(app.includes('sourceRetrievalDateSummary'));assert(app.includes('来源检索日期以逐条来源记录为准'));
 });
-test('all six existing asset cache references consistently name the reviewed UI version',()=>{
- for(const [name,n] of [['app.js',3],['index.html',2],['rosters.js',1]]){const s=fs.readFileSync(new URL('../site/'+name,import.meta.url),'utf8');assert.equal(s.split('data-version-clarity-20261025').length-1,n);assert(!s.includes('appointment-institution-20261025'));}
+test('all seven asset cache references consistently name the school-chunk runtime version',()=>{
+ for(const [name,n] of [['app.js',4],['index.html',2],['rosters.js',1]]){const s=fs.readFileSync(new URL('../site/'+name,import.meta.url),'utf8');assert.equal(s.split('school-chunks-20261026').length-1,n);assert(!s.includes('appointment-institution-20261025'));}
  assert.match(atlas.build_id,/^[a-f0-9]{16}$/);assert.equal(rosters.build_id,atlas.build_id);
 });

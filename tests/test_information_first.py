@@ -1,3 +1,4 @@
+from atlas_test_io import load_atlas
 from school_scope import hit_atlas, hit_rosters
 import copy,json,pathlib,sys,unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1]
@@ -7,9 +8,9 @@ from build_rosters import validate_rosters
 class InformationFirstTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.data=hit_atlas(json.loads((ROOT/'data/atlas.json').read_text()));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.batch=[p for p in cls.data['people'] if p.get('data_batch_id')=='faculty-batch-harbin-eie-fourth-001']
+  cls.data=hit_atlas(load_atlas(ROOT/'data/atlas.json'));cls.rosters=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.batch=[p for p in cls.data['people'] if p.get('data_batch_id')=='faculty-batch-harbin-eie-fourth-001']
  def test_source_and_static_profiles_match(self):
-  public=hit_atlas(json.loads((ROOT/'site/atlas.json').read_text()));self.assertEqual(self.data['people'],public['people']);self.assertEqual(self.data['pending_people'],public['pending_people'])
+  public=hit_atlas(load_atlas(ROOT/'site/atlas.json'));self.assertEqual(self.data['people'],public['people']);self.assertEqual(self.data['pending_people'],public['pending_people'])
  def test_exact_collection_counts(self):
   self.assertEqual(len(self.batch),10);self.assertEqual([sum(len(p[k]) for p in self.batch) for k in ['education','appointments','mentors','publications','sources']],[38,43,0,25,51])
  def test_roster_identity_evidence_and_counts(self):

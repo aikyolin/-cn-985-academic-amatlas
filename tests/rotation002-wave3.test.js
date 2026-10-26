@@ -1,3 +1,5 @@
+import {createAtlasFetch} from './atlas-test-io.js';
+import {readJSONFile} from './atlas-test-io.js';
 import {release25View} from './release-history.js';
 // Independent release24 SYSU/SCU consumer regressions. No source fetch, browser,
 // build writes, normalizer dependency, or research-folder dependency at runtime.
@@ -9,7 +11,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 const root = process.env.ACADEMIC_ATLAS_TEST_ROOT || path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const {stages,matches,educationStageLabel,mentorOfficialUrl,mentorProfileRoute,mentorEvents,mentorEvent,officialProfileUrl,schoolStats} = await import(pathToFileURL(path.join(root,'site/model.js')));
 const {rosterIdentityMatched,rosterStatusLabel,renderRosters} = await import(pathToFileURL(path.join(root,'site/rosters.js')));
-const read = name => JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
+const read = name => readJSONFile(path.join(root,name));
 const db = release25View(read('data/atlas.json'),'data/atlas.json');
 db.rosters = release25View(read('data/rosters.json'),'data/rosters.json');
 const EXPECTED_IDS = {"sysu":["sysu-liuzhiwei","sysu-wutao","sysu-caotianzhong"],"scu":["scu-dutian","scu-chenpan","scu-yangjieren"]};
@@ -38,11 +40,8 @@ async function fixture(input) {
         addEventListener(){},click(){this.onclick?.()},scrollIntoView(){},querySelector(selector){return node(selector)}});
       return nodes.get(key);
     };
-    const document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)},location={hash:'#/'},window={scrollTo(){},addEventListener(name,fn){listeners[name]=fn}};
-    const fetch=async request=>{
-      assert.match(String(request),/^(atlas|rosters)\.json(?:\?|$)/,'External fetch prohibited');
-      return {ok:true,json:async()=>structuredClone(String(request).startsWith('atlas.json')?view:view.rosters)};
-    };
+    const document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)},location={href:"https://atlas.test/site/index.html",hash:'#/'},window={scrollTo(){},addEventListener(name,fn){listeners[name]=fn}};
+    const fetch=createAtlasFetch(view,view.rosters);
     const activate=()=>Object.assign(globalThis,{document,location,window,fetch});activate();
     await import(pathToFileURL(path.join(root,'site/app.js')).href+'?rotation002-wave3='+serial++);
     assert(listeners.hashchange,'Actual app must initialize');

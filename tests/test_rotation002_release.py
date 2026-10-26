@@ -12,6 +12,7 @@ Approved scope covers CAU, NEU, Tongji, and the explicitly reviewed final ECNU
 revision. Any further batch must be independently pinned before totals expand. This is not a
 live-source re-review, personnel audit, complete school roster, or publisher check.
 """
+from atlas_test_io import load_atlas
 from release_history import release25_view
 import copy
 import hashlib
@@ -701,67 +702,13 @@ def assert_source_closure(person):
 
 
 # Actual app/model/roster/graph modules, with all fetches confined to cloned input.
-NODE_CONSUMERS = r'''
-import fs from 'node:fs';
-import {pathToFileURL} from 'node:url';
-const input=JSON.parse(fs.readFileSync(0,'utf8')), root=input.root;
-const model=await import(pathToFileURL(root+'/site/model.js'));
-const roster=await import(pathToFileURL(root+'/site/rosters.js'));
-const db=input.atlas, r=input.rosters, before=JSON.stringify([db,r]);
-const people=new Map([...db.people,...db.pending_people].map(p=>[p.person_id,p]));
-const scoped={...db,rosters:r}, out={people:{},rosters:{},schoolStats:{},schoolPages:{}};
-for(const id of input.ids){
- const p=people.get(id),e=r.entries.find(e=>e.id===p.roster_entry_id),main={innerHTML:''};
- if(!p||!e)throw Error('Missing release record '+id);
- roster.renderRosters(scoped,main,e.id,p.school_id);
- out.rosters[id]={matched:roster.rosterIdentityMatched(scoped,e),status:roster.rosterStatusLabel(scoped,e),html:main.innerHTML};
- out.people[id]={
-  stages:Object.fromEntries(['bachelor','master','doctor'].map(s=>[s,model.stages(p,s).map(e=>e.event_id)])),
-  ug:Object.fromEntries(['yes','no','unknown','not_recorded'].map(v=>[v,model.matches(p,{ug:v},db.org_units)])),
-  doctorate:Object.fromEntries(['mainland','hmt','overseas','unknown','not_recorded'].map(v=>[v,model.matches(p,{doctor:v},db.org_units)])),
-  officialUrl:model.officialProfileUrl(p),
-  mentors:p.mentors.map(m=>({name:m.name,url:model.mentorOfficialUrl(m),route:model.mentorProfileRoute(m,db.people),events:model.mentorEvents(p,m).map(e=>e.event_id)})),
-  candidates:(p.pending_mentor_candidates||[]).map(m=>({name:m.name,url:model.mentorOfficialUrl(m),route:model.mentorProfileRoute(m,db.people)})),
-  labels:p.education.map(model.educationStageLabel)
- };
-}
-for(const school of input.schools)out.schoolStats[school]=model.schoolStats(scoped,school);
-const appAtlas=structuredClone(db),appRosters=structuredClone(r);
-appAtlas.build_id=appRosters.build_id='rotation002-in-memory-test';
-const nodes=new Map(),listeners={};
-const node=key=>{
- if(!nodes.has(key))nodes.set(key,{innerHTML:'',textContent:'',value:'',style:{},dataset:{height:'320'},clientWidth:960,addEventListener(){},click(){this.onclick?.()},querySelector(selector){return node(selector)},scrollIntoView(){}});
- return nodes.get(key);
-};
-globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
-globalThis.location={hash:'#/'};
-globalThis.window={scrollTo(){},addEventListener(name,handler){listeners[name]=handler}};
-globalThis.fetch=async path=>{
- if(!/^(atlas|rosters)\.json(?:\?|$)/.test(String(path)))throw Error('External fetch prohibited: '+path);
- return {ok:true,json:async()=>structuredClone(String(path).startsWith('atlas.json')?appAtlas:appRosters)};
-};
-await import(pathToFileURL(root+'/site/app.js'));
-if(!listeners.hashchange)throw Error('Actual app failed to initialize: '+node('#main').innerHTML);
-const navigate=hash=>{for(const n of nodes.values())n.innerHTML='';location.hash=hash;listeners.hashchange()};
-for(const id of input.ids){
- const p=people.get(id),row=out.people[id];
- navigate('#/person/'+encodeURIComponent(id));
- row.profileMain=node('#main').innerHTML;row.profileContent=node('#profile-content').innerHTML;
- if(p.detail_count_eligible){
-  navigate('#/person/'+encodeURIComponent(id)+'/lineage');
-  row.lineage=node('#profile-content').innerHTML;row.graph=node('#mind-stage').innerHTML;
- }
-}
-for(const school of input.schools){navigate('#/school/'+school);out.schoolPages[school]=node('#main').innerHTML}
-out.unchanged=JSON.stringify([db,r])===before;
-process.stdout.write(JSON.stringify(out));
-'''
+NODE_CONSUMERS = "\nimport fs from 'node:fs';\nimport {pathToFileURL} from 'node:url';\nconst input=JSON.parse(fs.readFileSync(0,'utf8')), root=input.root;\nconst model=await import(pathToFileURL(root+'/site/model.js'));\nconst roster=await import(pathToFileURL(root+'/site/rosters.js'));\nconst db=input.atlas, r=input.rosters, before=JSON.stringify([db,r]);\nconst people=new Map([...db.people,...db.pending_people].map(p=>[p.person_id,p]));\nconst scoped={...db,rosters:r}, out={people:{},rosters:{},schoolStats:{},schoolPages:{}};\nfor(const id of input.ids){\n const p=people.get(id),e=r.entries.find(e=>e.id===p.roster_entry_id),main={innerHTML:''};\n if(!p||!e)throw Error('Missing release record '+id);\n roster.renderRosters(scoped,main,e.id,p.school_id);\n out.rosters[id]={matched:roster.rosterIdentityMatched(scoped,e),status:roster.rosterStatusLabel(scoped,e),html:main.innerHTML};\n out.people[id]={\n  stages:Object.fromEntries(['bachelor','master','doctor'].map(s=>[s,model.stages(p,s).map(e=>e.event_id)])),\n  ug:Object.fromEntries(['yes','no','unknown','not_recorded'].map(v=>[v,model.matches(p,{ug:v},db.org_units)])),\n  doctorate:Object.fromEntries(['mainland','hmt','overseas','unknown','not_recorded'].map(v=>[v,model.matches(p,{doctor:v},db.org_units)])),\n  officialUrl:model.officialProfileUrl(p),\n  mentors:p.mentors.map(m=>({name:m.name,url:model.mentorOfficialUrl(m),route:model.mentorProfileRoute(m,db.people),events:model.mentorEvents(p,m).map(e=>e.event_id)})),\n  candidates:(p.pending_mentor_candidates||[]).map(m=>({name:m.name,url:model.mentorOfficialUrl(m),route:model.mentorProfileRoute(m,db.people)})),\n  labels:p.education.map(model.educationStageLabel)\n };\n}\nfor(const school of input.schools)out.schoolStats[school]=model.schoolStats(scoped,school);\nconst appAtlas=structuredClone(db),appRosters=structuredClone(r);\nappAtlas.build_id=appRosters.build_id='rotation002-in-memory-test';\nconst nodes=new Map(),listeners={};\nconst node=key=>{\n if(!nodes.has(key))nodes.set(key,{innerHTML:'',textContent:'',value:'',style:{},dataset:{height:'320'},clientWidth:960,addEventListener(){},click(){this.onclick?.()},querySelector(selector){return node(selector)},scrollIntoView(){}});\n return nodes.get(key);\n};\nglobalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};\nglobalThis.location={hash:'#/',href:'https://atlas.test/site/index.html'};\nglobalThis.window={scrollTo(){},addEventListener(name,handler){listeners[name]=handler}};\nconst {createAtlasFetch}=await import(pathToFileURL(root+'/tests/atlas-test-io.js'));\nglobalThis.fetch=createAtlasFetch(appAtlas,appRosters);\nawait import(pathToFileURL(root+'/site/app.js'));\nif(!listeners.hashchange)throw Error('Actual app failed to initialize: '+node('#main').innerHTML);\nconst navigate=hash=>{for(const n of nodes.values())n.innerHTML='';location.hash=hash;listeners.hashchange()};\nfor(const id of input.ids){\n const p=people.get(id),row=out.people[id];\n navigate('#/person/'+encodeURIComponent(id));\n row.profileMain=node('#main').innerHTML;row.profileContent=node('#profile-content').innerHTML;\n if(p.detail_count_eligible){\n  navigate('#/person/'+encodeURIComponent(id)+'/lineage');\n  row.lineage=node('#profile-content').innerHTML;row.graph=node('#mind-stage').innerHTML;\n }\n}\nfor(const school of input.schools){navigate('#/school/'+school);out.schoolPages[school]=node('#main').innerHTML}\nout.unchanged=JSON.stringify([db,r])===before;\nprocess.stdout.write(JSON.stringify(out));\n"
 
 
 class Rotation002ReleaseTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.d = release25_view(json.loads((ROOT / 'data/atlas.json').read_text()), 'data/atlas.json')
+        cls.d = release25_view(load_atlas(ROOT / 'data/atlas.json'), 'data/atlas.json')
         cls.r = release25_view(json.loads((ROOT / 'data/rosters.json').read_text()), 'data/rosters.json')
         cls.ps = {p['person_id']: p for p in cls.d['people'] + cls.d['pending_people']}
         cls.new = [cls.ps[pid] for pid in SOURCE_FINGERPRINTS]

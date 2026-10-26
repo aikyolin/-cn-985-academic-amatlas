@@ -1,8 +1,9 @@
+import {readJSONFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {escapeHtml} from '../site/model.js';
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 const guidance=()=>read('./fixtures/project-guidance.json');
 function fixture(){
   const d=read('./fixtures/multischool.json'),g=guidance(),p=d.people[1];
@@ -16,8 +17,8 @@ async function app(d,hash='#/person/pku-synthetic-person'){
   const nodes=new Map(),listeners={};
   const node=key=>{if(!nodes.has(key))nodes.set(key,{innerHTML:'',textContent:'',value:'',events:{},style:{},dataset:{height:'320'},clientWidth:960,addEventListener(type,fn){this.events[type]=fn},click(){this.onclick?.()}});return nodes.get(key)};
   globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
-  globalThis.location={hash};globalThis.window={scrollTo(){},addEventListener(type,fn){listeners[type]=fn}};
-  globalThis.fetch=async path=>({ok:true,json:async()=>structuredClone(String(path).startsWith('atlas.json')?d:d.rosters)});
+  globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(type,fn){listeners[type]=fn}};
+  globalThis.fetch=createAtlasFetch(d,d.rosters);
   await import('../site/app.js?project-fixture='+serial++);
   return {node,navigate(hash){location.hash=hash;listeners.hashchange()}};
 }

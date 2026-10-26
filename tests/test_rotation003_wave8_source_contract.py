@@ -1,4 +1,5 @@
 """Generic exact replay and immutable public source-contract boundaries."""
+from atlas_test_io import load_atlas
 import copy
 import hashlib
 import json
@@ -38,7 +39,7 @@ class SourceContractTests(unittest.TestCase):
     def test_reported_qualification_labels_visible_without_date_inference(self):
         contract=json.loads((ROOT/CONTRACT).read_text())
         fixture=json.loads((ROOT/FIXTURE).read_text())
-        atlas=json.loads((ROOT/'data/atlas.json').read_text())
+        atlas=load_atlas(ROOT/'data/atlas.json')
         from validate_source_contract import pointer
         for binding in contract['objects']:
             if binding['target']['file'] != 'data/atlas.json' or not binding['target']['pointer'].startswith('/people/'):

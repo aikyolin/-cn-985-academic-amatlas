@@ -6,7 +6,7 @@ import {spawnSync} from 'node:child_process';
 const site=new URL('../site/',import.meta.url);
 const origin=new URL('https://academic-atlas.invalid/');
 const previousRelease='rotation-20261023-w3';
-const moduleNames=['app.js','model.js','rosters.js','universities.js'];
+const moduleNames=['app.js','model.js','rosters.js','universities.js','atlas-loader.js'];
 const read=name=>fs.readFileSync(new URL(name,site),'utf8');
 
 function attributes(tag){
@@ -87,7 +87,7 @@ test('HTML and module asset references never reuse the stale pre-retirement rele
 
 test('the versioned import graph retains the application and roster dependency edges',()=>{
  const edges=new Set(localImports().map(({from,url})=>`${from}->${url.pathname.slice(1)}`));
- for(const edge of ['app.js->universities.js','app.js->rosters.js','app.js->model.js','rosters.js->model.js']){
+ for(const edge of ['app.js->atlas-loader.js','app.js->universities.js','app.js->rosters.js','app.js->model.js','rosters.js->model.js']){
   assert(edges.has(edge),`Missing required import edge: ${edge}`);
  }
 });

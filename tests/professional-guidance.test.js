@@ -1,16 +1,17 @@
+import {readJSONFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {spawnSync} from 'node:child_process';
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 function fixture(){const d=read('./fixtures/multischool.json'),p=d.people[1];p.education=[];p.appointments=[{title:'NO_NULL_JOIN',event_id:null,start:'1900-01'}];p.mentors=[];p.professional_research_advisors=[{name:'职业指导者',type:'职业科研合作导师',relationship_kind:'professional_research_advisor',relationship_status:'verified_direct_statement',include_in_mentorship_graph:false,include_in_verified_mentor_count:false,include_in_degree_mentorship_graph:false,include_in_verified_professional_guidance_count:true,education_event_id:null,source_url:'https://example.edu/relation',profile_source_url:'https://example.edu/employment',description:'有直接证据的职业指导',employment_status:'unknown',official_url:'https://example.edu/profile'}];return d;}
 let serial=0;
 async function app(d,hash='#/person/pku-synthetic-person'){
   const nodes=new Map(),listeners={};
   const node=key=>{if(!nodes.has(key))nodes.set(key,{innerHTML:'',textContent:'',value:'',events:{},style:{},dataset:{height:'320'},clientWidth:960,addEventListener(type,fn){this.events[type]=fn},click(){this.onclick?.()}});return nodes.get(key)};
   globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
-  globalThis.location={hash};globalThis.window={scrollTo(){},addEventListener(type,fn){listeners[type]=fn}};
-  globalThis.fetch=async path=>({ok:true,json:async()=>structuredClone(String(path).startsWith('atlas.json')?d:d.rosters)});
+  globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(type,fn){listeners[type]=fn}};
+  globalThis.fetch=createAtlasFetch(d,d.rosters);
   await import('../site/app.js?professional-fixture='+serial++);
   return {node,navigate(hash){location.hash=hash;listeners.hashchange()}};
 }

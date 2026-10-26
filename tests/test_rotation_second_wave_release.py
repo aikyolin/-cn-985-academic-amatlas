@@ -1,6 +1,7 @@
 """Self-contained batch-20 regression. Copy this file into the project's tests/.
 No research directory, source cache, network, or normalization helper dependency.
 """
+from atlas_test_io import load_atlas
 import copy, hashlib, json, pathlib, sys, unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
@@ -17,7 +18,7 @@ class RotationSecondWaveReleaseTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
   global D,R
-  if D is None:D=json.loads((ROOT/'data/atlas.json').read_text())
+  if D is None:D=load_atlas(ROOT/'data/atlas.json')
   if R is None:R=json.loads((ROOT/'data/rosters.json').read_text())
   cls.d,cls.r=D,R;cls.ps={p['person_id']:p for p in D['people']+D['pending_people']};cls.new=[cls.ps[pid]for pid in EXPECTED_NEW_PEOPLE];cls.pro=[p for p in cls.new if p['detail_count_eligible']]
  def tables(self,pid):return dict(build.department_tables([self.ps[pid]],self.d['updated_at'],self.d['institutions']))

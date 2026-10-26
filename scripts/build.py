@@ -5,6 +5,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Font,PatternFill,Alignment
 from deterministic_xlsx import save_deterministic_xlsx
 from public_metadata import check_public_tree
+from atlas_storage import load_atlas, write_atlas, compute_build_id
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def valid_url(v):return isinstance(v,str) and urlparse(v).scheme in ('http','https') and bool(urlparse(v).netloc)
 def mentor_official_url(mentor):
@@ -343,8 +344,8 @@ def department_exports(d):
 
 def build(generate_excel=True):
  check_public_tree(ROOT,phase='preflight')
- d=json.loads((ROOT/'data/atlas.json').read_text());validate(d);exports=department_exports(d)
- d['build_id']=hashlib.sha256((ROOT/'data/atlas.json').read_bytes()+(ROOT/'data/rosters.json').read_bytes()+pathlib.Path(__file__).read_bytes()+(ROOT/'scripts/build_rosters.py').read_bytes()+(ROOT/'scripts/deterministic_xlsx.py').read_bytes()).hexdigest()[:16]
+ d=load_atlas(ROOT/'data/atlas.json');validate(d);exports=department_exports(d)
+ d['build_id']=compute_build_id(ROOT)
  out=ROOT/'site/exports';out.mkdir(exist_ok=True)
  for export in exports:
   dept=export['department_id'];people=[p for p in d['people'] if p['department_id']==dept and p['school_id']==export['school_id']];path=out/(dept+'.xlsx')
@@ -355,7 +356,7 @@ def build(generate_excel=True):
  from build_rosters import build_rosters
  build_rosters(d,generate_excel=generate_excel)
  roster_path=ROOT/'site/rosters.json';roster_snapshot=json.loads(roster_path.read_text());roster_snapshot['build_id']=d['build_id'];roster_path.write_text(json.dumps(roster_snapshot,ensure_ascii=False,indent=2)+'\n')
- d['exports']=exports;(ROOT/'site/atlas.json').write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\n',encoding='utf-8')
+ d['exports']=exports;write_atlas(ROOT/'site/atlas.json',d)
  check_public_tree(ROOT,phase='final',include_workbooks=generate_excel)
  print(f'Validated {len(d["people"])} detailed profiles; prepared {len(exports)} department exports and website snapshot')
  print('Public source metadata: final JSON/CSV/XLSX checked' if generate_excel else 'Public source metadata: JSON/CSV checked; XLSX not regenerated or checked (--data-only)')

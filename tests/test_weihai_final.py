@@ -1,3 +1,4 @@
+from atlas_test_io import load_atlas
 from school_scope import hit_atlas, hit_rosters
 """Whole visible Weihai roster boundary, exact evidence, and defensive match tests."""
 import copy,hashlib,json,pathlib,sys,unittest
@@ -9,7 +10,7 @@ from validate_queue import validate_queue
 class WeihaiFinalTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.d=hit_atlas(json.loads((ROOT/'data/atlas.json').read_text()));cls.r=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text());cls.people={p['name']:p for p in cls.d['people']if p['department_id']=='hit-weihai-information'};cls.pending={p['name']:p for p in cls.d['pending_people']if p.get('department_id')=='hit-weihai-information'}
+  cls.d=hit_atlas(load_atlas(ROOT/'data/atlas.json'));cls.r=hit_rosters(json.loads((ROOT/'data/rosters.json').read_text()));cls.pg=json.loads((ROOT/'progress/weihai-information-progress.json').read_text());cls.people={p['name']:p for p in cls.d['people']if p['department_id']=='hit-weihai-information'};cls.pending={p['name']:p for p in cls.d['pending_people']if p.get('department_id')=='hit-weihai-information'}
  def entry(self,n):return next(e for e in self.r['entries']if e['name']==n and e['organization_id']=='hit-weihai-information')
  def test_exact_hit_counts_and_schema(self):
   self.assertTrue(validate(self.d));self.assertTrue(validate_rosters(self.r,self.d));self.assertEqual([len(self.d['people']),len(self.d['pending_people'])],[257,42]);self.assertEqual([sum(len(p.get(k,[]))for p in self.d['people'])for k in ['education','appointments','mentors','committee_members','publications','sources']],[789,953,109,9,545,951]);self.assertEqual(sum(e['profile_identity_verified']for e in self.r['entries']),252)

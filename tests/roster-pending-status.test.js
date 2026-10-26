@@ -1,9 +1,10 @@
+import {readJSONFile} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {renderRosters,rosterIdentityMatched,rosterStatusLabel} from '../site/rosters.js';
 
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 const db=read('../data/atlas.json');db.rosters=read('../data/rosters.json');
 const render=(d,id)=>{const main={innerHTML:''};renderRosters(d,main,id);return main.innerHTML};
 

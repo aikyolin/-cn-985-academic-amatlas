@@ -82,3 +82,6 @@ JSON紧凑表示单独范围见[表示形式优化](../progress/compact-json-rep
 
 ### 西北工业大学十二人追加（850候选）
 第22独立来源mapping与838完整前缀/root守恒，原21 pins/612fixture/helpers不变。7教育事件授位修正、8未知事件及2不绑定学校/时段的本人学位身份分层测试，后者不增加教育事件或凭空改筛选。实际HTML/Excel验证明确授位月、未发生博后、联合培养/论文具体导师证据/未知阶段师从、教材参编与音乐作品限制。孙浩应用概率统计系按源目录复用旧学院作展示父级，保留原组合名和源parent null；无同义重复学院、无运行代码/格式变更，全部live五表逐格和旧成员行序继续检查。
+
+### 独立按校分块存储迁移（人物数不变）
+原850所有事实与键/列表/Unicode/数字类型重组精确守恒；只允许site/rosters独立派生build_id变化。原304XLSX与CSV全部字节不变。当前功能读取通过严格load_atlas或真实manifest/chunk fetch，历史投影仍先取LIVE再执行原投影；明确published_fixture原bytes/历史renderer输入不变。原pins/helpers不重签，旧业务断言保留。新增真实临时IO/fetch校验缺块、路径/symlink、hash/长度、重复ID/顺序、错学校和混部署；失败不显示半库。compact检查覆盖清单及全部物理块，build版本长度分帧包括真实块与双loader。资产依赖图由原6处引用扩展至含loader的7处，不以旧引用数量冒充新完整性。

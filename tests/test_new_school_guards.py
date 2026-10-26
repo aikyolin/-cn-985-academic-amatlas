@@ -28,11 +28,15 @@ class NewSchoolGuards(unittest.TestCase):
   r['totals'].update(record_count=len(r['entries']),raw_observation_count=len(r['entries']),entries_without_profile_link=len(r['entries']),entries_with_profile_link=0)
   task=dict(task_id='nku:synthetic:cs',institution_id='nku',organization_id='nku-synthetic-cs',campus_ids=[],stage='profile_research',status='pending',scope=dict(description='Synthetic test only',claim='listed_public_scope_only',university_complete=False),depends_on=[],source_urls=['https://nku.example.test/cs'],artifact_paths=[],review_status='pending_review',next_action='Review synthetic fixture')
   self.q=dict(schema_version='1.0',updated_at='2026-10-23T09:00:00Z',base_commit='a'*40,scope=dict(active_institution='hit',active_institutions=['nku'],target_university_count=39,registry_complete=False),tasks=[task])
- def check(self,q=None,root=ROOT):
-  q=self.q if q is None else q;original=pathlib.Path.read_text;before=copy.deepcopy((q,self.atlas))
-  def read(path,*args,**kwargs):
-   return json.dumps(self.atlas) if path==root/'data/atlas.json' else original(path,*args,**kwargs)
-  with mock.patch.object(pathlib.Path,'read_text',autospec=True,side_effect=read):result=queue.validate_queue(q,root)
+ def check(self,q=None,root=None):
+  # Serialize the synthetic atlas into its own complete transport; never borrow live chunks.
+  import tempfile
+  from atlas_test_io import write_atlas
+  q=self.q if q is None else q;before=copy.deepcopy((q,self.atlas))
+  with tempfile.TemporaryDirectory() as temp:
+   actual_root=pathlib.Path(temp) if root is None else root
+   write_atlas(actual_root/'data/atlas.json',self.atlas)
+   result=queue.validate_queue(q,actual_root)
   self.assertEqual((q,self.atlas),before);return result
  def test_active_scope_optional_and_legacy_hit_field_is_not_a_school_default(self):
   self.assertEqual(self.check(),[])
@@ -74,7 +78,9 @@ class NewSchoolGuards(unittest.TestCase):
   for cid in ['harbin','weihai','shenzhen','hit-harbin','hit-weihai','hit-shenzhen']:
    t['campus_ids']=[cid];self.assertEqual(self.check(),[]);self.assertEqual(t['campus_ids'],[cid])
  def test_registry_is_loaded_from_the_passed_root_not_another_snapshot(self):
-  self.assertEqual(self.check(root=pathlib.Path('/virtual-new-school-fixture')),[])
+  import tempfile
+  with tempfile.TemporaryDirectory() as temp:
+   self.assertEqual(self.check(root=pathlib.Path(temp)),[])
  def test_peer_departments_in_one_school_keep_distinct_task_targets(self):
   second=copy.deepcopy(self.q['tasks'][0]);second.update(task_id='nku:synthetic:cyber',organization_id='nku-synthetic-cyber');self.q['tasks'].append(second)
   self.assertEqual(self.check(),[]);self.assertEqual([t['organization_id'] for t in self.q['tasks']],['nku-synthetic-cs','nku-synthetic-cyber'])

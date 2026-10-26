@@ -1,3 +1,5 @@
+import {createAtlasFetch} from './atlas-test-io.js';
+import {readJSONFile} from './atlas-test-io.js';
 import {release25View} from './release-history.js';
 // Offline release23 consumer regressions. Only reviewed NJU/HNU additions;
 // no source fetch, browser, build writes, or dependency on the research folder.
@@ -7,7 +9,7 @@ import fs from 'node:fs';
 import {stages,matches,educationStageLabel,mentorOfficialUrl,mentorEvents,officialProfileUrl,schoolStats} from '../site/model.js';
 import {rosterIdentityMatched,rosterStatusLabel,renderRosters} from '../site/rosters.js';
 
-const read = path => JSON.parse(fs.readFileSync(new URL(path, import.meta.url)));
+const read = path => readJSONFile(new URL(path, import.meta.url));
 const db = release25View(read('../data/atlas.json'),'data/atlas.json');
 db.rosters = release25View(read('../data/rosters.json'),'data/rosters.json');
 const ids = ['nju-chengxin','nju-chenpengfei','nju-chenyang','hnu-chenzengping','hnu-chuxia','hnu-huanshuangyan'];
@@ -30,12 +32,9 @@ async function render(id, mode='profile', input=db) {
     return nodes.get(key);
   };
   globalThis.document = {querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
-  globalThis.location = {hash:mode === 'directory' ? `#/people?school=${id}` : `#/person/${id}${mode === 'lineage' ? '/lineage' : ''}`};
+  globalThis.location = {href:"https://atlas.test/site/index.html",hash:mode === 'directory' ? `#/people?school=${id}` : `#/person/${id}${mode === 'lineage' ? '/lineage' : ''}`};
   globalThis.window = {scrollTo(){},addEventListener(){}};
-  globalThis.fetch = async path => {
-    assert.match(String(path), /^(atlas|rosters)\.json(?:\?|$)/, 'External fetch prohibited');
-    return {ok:true,json:async()=>structuredClone(String(path).startsWith('atlas.json') ? view : view.rosters)};
-  };
+  globalThis.fetch=createAtlasFetch(view,view.rosters);
   await import('../site/app.js?rotation002-wave2='+serial++);
   assert(!node('#main').innerHTML.includes('资料暂未加载'),node('#main').innerHTML);
   return {main:node('#main').innerHTML,content:node('#profile-content').innerHTML,graph:node('#mind-stage').innerHTML,results:node('#results').innerHTML};

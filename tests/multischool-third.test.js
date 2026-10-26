@@ -1,3 +1,4 @@
+import {readJSONFile,createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -5,7 +6,7 @@ import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {stages,matches,mentorEvent,mentorProfileRoute,mentorOfficialUrl,schoolStats,escapeHtml} from '../site/model.js';
 
-const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
+const read=path=>readJSONFile(new URL(path,import.meta.url));
 const db=read('../data/atlas.json'),rosters=read('../data/rosters.json'),progress=read('../progress/multischool-third-coverage.json');
 db.rosters=rosters;
 const original=JSON.stringify(db);
@@ -131,8 +132,8 @@ async function app(id,mode='profile'){
   const nodes=new Map(),listeners={};
   const node=key=>{if(!nodes.has(key))nodes.set(key,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,addEventListener(type,fn){this.events[type]=fn},click(){this.onclick?.()}});return nodes.get(key)};
   globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
-  globalThis.location={hash:`#/person/${id}${mode==='lineage'?'/lineage':''}`};globalThis.window={scrollTo(){},addEventListener(type,fn){listeners[type]=fn}};
-  globalThis.fetch=async path=>({ok:true,json:async()=>structuredClone(String(path).startsWith('atlas.json')?d:d.rosters)});
+  globalThis.location={href:"https://atlas.test/site/index.html",hash:`#/person/${id}${mode==='lineage'?'/lineage':''}`};globalThis.window={scrollTo(){},addEventListener(type,fn){listeners[type]=fn}};
+  globalThis.fetch=createAtlasFetch(d,d.rosters);
   await import('../site/app.js?third-real-regression='+serial++);
   assert(!node('#main').innerHTML.includes('资料暂未加载'));
   return {node,navigate(hash){location.hash=hash;listeners.hashchange()}};
@@ -182,7 +183,7 @@ test('Jane Gu competition guidance retains its own facts but never enters degree
 
 test('real Jane project export has blank institution and dates, false award and no mentor row; Sun Qi keeps source level in memory',()=>{
   // -B prevents bytecode writes; Workbook is forbidden, so no XLSX is generated.
-  const code=`import json,sys,copy\nfrom unittest import mock\nsys.path.insert(0,'scripts')\nimport build\nd=json.load(open('data/atlas.json')); out={}\nfor pid in ['sjtu-lijinbo','zju-sunqi']:\n p=next(p for p in d['people'] if p['person_id']==pid); before=copy.deepcopy(p)\n with mock.patch.object(build,'Workbook',side_effect=AssertionError('XLSX writing forbidden')):\n  out[pid]=dict(build.department_tables([p],d['updated_at'],d['institutions']))\n assert p==before\nprint(json.dumps(out,ensure_ascii=False))`;
+  const code=`import json,sys,copy\nfrom unittest import mock\nsys.path.insert(0,'scripts')\nimport build\nfrom atlas_storage import load_atlas\nd=load_atlas('data/atlas.json'); out={}\nfor pid in ['sjtu-lijinbo','zju-sunqi']:\n p=next(p for p in d['people'] if p['person_id']==pid); before=copy.deepcopy(p)\n with mock.patch.object(build,'Workbook',side_effect=AssertionError('XLSX writing forbidden')):\n  out[pid]=dict(build.department_tables([p],d['updated_at'],d['institutions']))\n assert p==before\nprint(json.dumps(out,ensure_ascii=False))`;
   const tables=JSON.parse(execFileSync('python',['-B','-c',code],{cwd:fileURLToPath(new URL('..',import.meta.url)),encoding:'utf8'}));
   const t=tables['sjtu-lijinbo'];assert.deepEqual(Object.keys(t),['总览','经历','导师','论文','来源']);assert.equal(t['导师'].length,1);
   const projects=t['经历'].slice(1).filter(r=>r[1]==='project_guidance');assert.equal(projects.length,1);const row=projects[0],c=person('sjtu-lijinbo').project_guidance[0];

@@ -1,7 +1,8 @@
+import {readAtlasFile} from './atlas-test-io.js';
 import {hitAtlas,hitRosters} from './school-scope.js';
 import fs from 'node:fs';import assert from 'node:assert/strict';import {test as check} from 'node:test';
 import {stages,matches,mentorEvent,collaboratorEvent,escapeHtml,educationStageLabel} from '../site/model.js';
-const db=hitAtlas(JSON.parse(fs.readFileSync(new URL('../site/atlas.json',import.meta.url))));
+const db=hitAtlas(readAtlasFile(new URL('../site/atlas.json',import.meta.url)));
 const pkg={people:db.people.filter(p=>p.data_batch_id==='faculty-batch-harbin-eie-fourth-002')};
 const person=n=>pkg.people.find(p=>p.name===n);
 check('Second information batch has exact count and confirmed versus unknown award totals',()=>{assert.equal(pkg.people.length,10);assert.deepEqual(['education','appointments','mentors','committee_members','publications','sources'].map(k=>pkg.people.reduce((n,p)=>n+p[k].length,0)),[33,39,4,4,22,52]);const es=pkg.people.flatMap(p=>p.education);assert.deepEqual([true,false,null].map(v=>es.filter(e=>e.degree_awarded===v).length),[17,8,8]);assert.equal(new Set(es.map(e=>e.event_id)).size,33);assert(es.every(e=>e.event_id&&e.event_id===e.education_event_id))});

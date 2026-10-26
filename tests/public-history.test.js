@@ -1,3 +1,4 @@
+import {readAtlasFile} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -13,7 +14,7 @@ test('Python and JavaScript load exactly the same six pinned public-history cont
  assert.deepEqual(js,py);
 });
 test('public history rejects changed facts, source leaves, array boundaries and unknown siblings',()=>{
- const original=JSON.parse(read('data/atlas.json'));
+ const original=readAtlasFile(new URL('../data/atlas.json',import.meta.url));
  const mutations={
   name:v=>v.people[0].name='synthetic changed name',
   sourceUrl:v=>v.people[0].sources[0].url='https://example.invalid/changed',

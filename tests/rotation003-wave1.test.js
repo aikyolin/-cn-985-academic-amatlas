@@ -1,3 +1,5 @@
+import {createAtlasFetch} from './atlas-test-io.js';
+import {readJSONFile} from './atlas-test-io.js';
 import {publishedRoot} from './published-fixture.js';
 import {historicalBytes} from './source-date-history.js';
 import {release25View} from './release-history.js';
@@ -10,7 +12,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 const root=process.env.ACADEMIC_ATLAS_TEST_ROOT||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=name=>JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
+const read=name=>readJSONFile(path.join(root,name));
 const db=release25View(read('data/atlas.json'),'data/atlas.json'); db.rosters=release25View(read('data/rosters.json'),'data/rosters.json');
 const {stages,matches,educationStageLabel,mentorEvents,mentorOfficialUrl,mentorProfileRoute,officialProfileUrl,schoolStats}=await import(pathToFileURL(path.join(root,'site/model.js')));
 const {rosterIdentityMatched,rosterStatusLabel,renderRosters,rosterSamplingIdentityMatched}=await import(pathToFileURL(path.join(root,'site/rosters.js')));
@@ -43,11 +45,8 @@ async function fixture(input=db,appRoot=root){
       return nodes.get(key);
     };
     const document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};
-    const location={hash:'#/'},window={scrollTo(){},addEventListener(name,fn){listeners[name]=fn}};
-    const fetch=async request=>{
-      assert.match(String(request),/^(atlas|rosters)\.json(?:\?|$)/,'External network requests prohibited');
-      return {ok:true,json:async()=>structuredClone(String(request).startsWith('atlas.json')?view:view.rosters)};
-    };
+    const location={href:"https://atlas.test/site/index.html",hash:'#/'},window={scrollTo(){},addEventListener(name,fn){listeners[name]=fn}};
+    const fetch=process.env.ACADEMIC_ATLAS_NEGATIVE_CONTROL_ROOT && appRoot===process.env.ACADEMIC_ATLAS_NEGATIVE_CONTROL_ROOT ? async request=>{assert.match(String(request),/^(atlas|rosters)\.json(?:\?|$)/,'External fetch prohibited');return {ok:true,json:async()=>structuredClone(String(request).startsWith('atlas.json')?view:view.rosters)}} : createAtlasFetch(view,view.rosters);
     const activate=()=>Object.assign(globalThis,{document,location,window,fetch});activate();
     await import(pathToFileURL(path.join(appRoot,'site/app.js')).href+'?rotation003-wave1-independent='+serial++);
     assert.equal(typeof listeners.hashchange,'function','Actual app must initialize');

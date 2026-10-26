@@ -1,3 +1,5 @@
+from atlas_test_io import load_atlas
+from atlas_storage import storage_inputs, compact_bytes
 """Live representation contract; historical pins and source fixtures stay immutable."""
 import ast
 import json
@@ -51,22 +53,23 @@ def assert_typed_ordered(actual, expected, path='$'):
         assert actual == expected, path + ': scalar/code points changed'
 
 def atlas_writer_options():
-    tree = ast.parse((ROOT / 'scripts/build.py').read_text(encoding='utf-8'))
+    module = ast.parse((ROOT / 'scripts/atlas_storage.py').read_text(encoding='utf-8'))
+    tree = next(n for n in module.body if isinstance(n, ast.FunctionDef) and n.name == 'compact_bytes')
     calls = [node for node in ast.walk(tree) if isinstance(node, ast.Call)
              and isinstance(node.func, ast.Attribute) and node.func.attr == 'dumps'
              and isinstance(node.func.value, ast.Name) and node.func.value.id == 'json'
-             and node.args and isinstance(node.args[0], ast.Name) and node.args[0].id == 'd']
+             and node.args and isinstance(node.args[0], ast.Name) and node.args[0].id == 'value']
     assert len(calls) == 1, 'Actual atlas serialization call must be unique'
     return {item.arg: ast.literal_eval(item.value) for item in calls[0].keywords}
 
 def actual_writer_bytes(value):
-    return (json.dumps(value, **atlas_writer_options()) + '\n').encode('utf-8')
+    return compact_bytes(value)
 
 class CompactJson(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.canonical = strict_loads((ROOT / 'data/atlas.json').read_text(encoding='utf-8'))
-        cls.site = strict_loads((ROOT / 'site/atlas.json').read_text(encoding='utf-8'))
+        cls.canonical = load_atlas(ROOT / 'data/atlas.json')
+        cls.site = load_atlas(ROOT / 'site/atlas.json')
 
     def test_live_canonical_matches_independent_history_and_sources_including_types_and_order(self):
         expected = strict_loads((published_root() / 'data/atlas.json').read_text(encoding='utf-8'))
@@ -77,8 +80,9 @@ class CompactJson(unittest.TestCase):
 
     def test_both_live_atlases_use_exact_compact_utf8_with_one_terminal_lf(self):
         self.assertEqual(atlas_writer_options(), {'ensure_ascii': False, 'separators': (',', ':'), 'allow_nan': False})
-        for path, value in [('data/atlas.json', self.canonical), ('site/atlas.json', self.site)]:
-            raw = (ROOT / path).read_bytes()
+        for path, raw in [(folder + '/' + label, raw) for folder in ('data', 'site')
+                          for label, raw in storage_inputs(ROOT / folder / 'atlas.json')]:
+            value = strict_loads(raw.decode('utf-8'))
             self.assertEqual(raw, actual_writer_bytes(value), path)
             self.assertEqual(raw.count(b'\n'), 1, path)
             self.assertTrue(raw.endswith(b'\n'), path)

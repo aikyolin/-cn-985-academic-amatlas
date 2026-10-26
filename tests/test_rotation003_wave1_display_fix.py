@@ -1,3 +1,4 @@
+from atlas_test_io import load_atlas
 from source_date_history import historical_bytes
 from published_fixture import published_root
 """Two evidence-bound Chen Ke teaching-role aliases, with no implementation change.
@@ -243,7 +244,7 @@ RELEASE30_PIN_OVERLAY={'data/atlas.json': '7bcbb58ea605ea73fec2a51412850550533ba
 class Rotation003Wave1DisplayFixTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.db=release25_view(json.loads((ROOT/'data/atlas.json').read_text()), 'data/atlas.json')
+        cls.db=release25_view(load_atlas(ROOT/'data/atlas.json'), 'data/atlas.json')
         cls.person=next(p for p in cls.db['people']if p['person_id']=='cqu-chenke')
         cls.original=strip_aliases(cls.db)
         cls.old_person=next(p for p in cls.original['people']if p['person_id']=='cqu-chenke')
@@ -282,8 +283,8 @@ class Rotation003Wave1DisplayFixTests(unittest.TestCase):
             self.assertEqual(historical_bytes(file, root=published_root()).decode().count('rotation003-20261024-w2'),count)
 
     def test_05_generated_snapshots_recover_exactly_after_aliases_and_derived_build_id_removed(self):
-        actual_site = json.loads((ROOT/'site/atlas.json').read_text())
-        actual_data = json.loads((ROOT/'data/atlas.json').read_text())
+        actual_site = load_atlas(ROOT/'site/atlas.json')
+        actual_data = load_atlas(ROOT/'data/atlas.json')
         self.assertEqual(actual_site['people'], actual_data['people'])
         self.assertEqual(actual_site['pending_people'], actual_data['pending_people'])
         self.assertEqual(actual_site['build_id'], json.loads((ROOT/'site/rosters.json').read_text())['build_id'])

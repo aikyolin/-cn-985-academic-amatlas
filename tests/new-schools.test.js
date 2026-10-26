@@ -1,3 +1,4 @@
+import {createAtlasFetch} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -19,8 +20,8 @@ function fixture(){
 let serial=0;
 async function app(d=fixture(),hash='#/'){
  const nodes=new Map(),listeners={};const node=k=>{if(!nodes.has(k))nodes.set(k,{innerHTML:'',textContent:'',value:'',style:{},events:{},dataset:{height:'320'},clientWidth:960,querySelector:node,addEventListener(t,f){this.events[t]=f},click(){this.onclick?.()}});return nodes.get(k)};
- globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={hash};globalThis.window={scrollTo(){},addEventListener(t,f){listeners[t]=f}};
- globalThis.fetch=async p=>({ok:true,json:async()=>structuredClone(String(p).startsWith('atlas.json')?d:d.rosters)});
+ globalThis.document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)};globalThis.location={href:"https://atlas.test/site/index.html",hash};globalThis.window={scrollTo(){},addEventListener(t,f){listeners[t]=f}};
+ globalThis.fetch=createAtlasFetch(d,d.rosters);
  await import('../site/app.js?new-school-fixture='+serial++);
  assert(!node('#main').innerHTML.includes('资料暂未加载'));
  return {node,navigate(hash){location.hash=hash;listeners.hashchange()}};

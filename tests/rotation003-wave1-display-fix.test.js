@@ -1,3 +1,5 @@
+import {createAtlasFetch} from './atlas-test-io.js';
+import {readAtlasFile,readJSONFile} from './atlas-test-io.js';
 import {publishedRoot} from './published-fixture.js';
 import {historicalBytes} from './source-date-history.js';
 import {endpointSha256} from './public-append-history.js';
@@ -19,7 +21,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 const LAYOUT_FIX_APPLICATION_SHA256={"site/styles.css": "3b01ec6a5674982d048237e5426aa107bd622662d2758913c81bc6f5c4c0ceca", "site/app.js": "5ce1dbc7161a048ab263cdff313bc904544b362c13d39cc5963886b409f037e2", "site/rosters.js": "7536ef08c4032e05e1ad3c09532858dd42fd68c20968c82e2146481cf6d9c85f", "site/index.html": "7e6331d4846c13d64f0a5b5b65a9d52539df537b2ce20ef26563669739f8f2a3"};
 const root=process.env.ACADEMIC_ATLAS_TEST_ROOT||path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=name=>JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
+const read=name=>readJSONFile(path.join(root,name));
 const db=release25View(read('data/atlas.json'),'data/atlas.json');db.rosters=release25View(read('data/rosters.json'),'data/rosters.json');
 const {stages,matches,educationStageLabel}=await import(pathToFileURL(path.join(root,'site/model.js')));
 const sha=x=>createHash('sha256').update(x).digest('hex');
@@ -36,8 +38,8 @@ async function fixture(input,root){
  const view=structuredClone(input),nodes=new Map(),listeners={};
  view.build_id=view.rosters.build_id='display-fix-independent-fixture';view.exports||=[];
  const node=key=>{if(!nodes.has(key))nodes.set(key,{innerHTML:'',textContent:'',value:'',style:{},dataset:{height:'320'},clientWidth:960,addEventListener(){},click(){this.onclick?.()},scrollIntoView(){},querySelector(selector){return node(selector)}});return nodes.get(key)};
- const document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)},location={hash:'#/'},window={scrollTo(){},addEventListener(name,fn){listeners[name]=fn}};
- const fetch=async request=>{assert.match(String(request),/^(atlas|rosters)\.json(?:\?|$)/,'External fetch prohibited');return {ok:true,json:async()=>structuredClone(String(request).startsWith('atlas.json')?view:view.rosters)}};
+ const document={querySelector:node,querySelectorAll:()=>[],getElementById:id=>node('#'+id)},location={href:"https://atlas.test/site/index.html",hash:'#/'},window={scrollTo(){},addEventListener(name,fn){listeners[name]=fn}};
+ const fetch=process.env.ACADEMIC_ATLAS_NEGATIVE_CONTROL_ROOT && root===process.env.ACADEMIC_ATLAS_NEGATIVE_CONTROL_ROOT ? async request=>{assert.match(String(request),/^(atlas|rosters)\.json(?:\?|$)/,'External fetch prohibited');return {ok:true,json:async()=>structuredClone(String(request).startsWith('atlas.json')?view:view.rosters)}} : createAtlasFetch(view,view.rosters);
  const activate=()=>Object.assign(globalThis,{document,location,window,fetch});activate();
  await import(pathToFileURL(path.join(root,'site/app.js')).href+'?displayfix-independent='+serial++);
  assert.equal(typeof listeners.hashchange,'function');

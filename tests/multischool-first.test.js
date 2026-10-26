@@ -1,9 +1,10 @@
+import {readAtlasFile} from './atlas-test-io.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {stages,matches,mentorEvent,schoolStats,schoolCampuses} from '../site/model.js';
-const db=JSON.parse(fs.readFileSync(new URL('../data/atlas.json',import.meta.url)));db.rosters=JSON.parse(fs.readFileSync(new URL('../data/rosters.json',import.meta.url)));
+const db=readAtlasFile(new URL('../data/atlas.json',import.meta.url));db.rosters=JSON.parse(fs.readFileSync(new URL('../data/rosters.json',import.meta.url)));
 const FIRST_PROFILE_BATCHES=new Set(['pku-ic-001','tsinghua-ee-001','faculty-batch-zju-ic-001','faculty-batch-sjtu-ic-001']);
 const FIRST_ROSTER_BATCHES={thu:'thu-selected-roster-tsinghua-ee-001',pku:'pku-selected-roster-pku-ic-001',zju:'zju-selected-roster-ic-001',sjtu:'sjtu-selected-roster-ic-001'};
 const history=JSON.parse(fs.readFileSync(new URL('../progress/multischool-first-coverage.json',import.meta.url)));
