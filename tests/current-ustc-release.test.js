@@ -3,13 +3,14 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {matches, stages, mentorOfficialUrl, mentorProfileRoute, escapeHtml} from '../site/model.js';
+const cauMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-cau12-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ustc12-source-mapping.json',import.meta.url)));
 test('actual USTC cohort exactly preserves independently reviewed fields, identities and scope',()=>{
  assert.deepEqual(mapping.people.map(p=>p.person_id),["ustc-liubin-earth","ustc-jixiang","ustc-qianhongwu","ustc-liujing-life","ustc-jijiaojiao","ustc-zhangying-public-policy","ustc-zhuxiuli","ustc-shiyunli","ustc-niuweixing","ustc-zhumengxiao","ustc-wangchengwei","ustc-jinzhengyao"]);
  assert(mapping.people.every(p=>p.data_batch_id==='faculty-batch-ustc12-independent-20261026'));
- assert.equal(db.people.length,861+mapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,861+mapping.people.length+cauMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const expected of mapping.people){
   const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);
   assert.equal(typeof actual.department,'string');assert(actual.department.length>0);

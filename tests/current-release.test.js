@@ -23,6 +23,7 @@ const bitMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-bit1
 const nwpuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nwpu12-source-mapping.json',import.meta.url)));
 const scutMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-scut11-source-mapping.json',import.meta.url)));
 const ustcMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-ustc12-source-mapping.json',import.meta.url)));
+const cauMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-cau12-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const firstMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nju-source-mapping.json',import.meta.url)));
@@ -32,7 +33,7 @@ const scuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-scu1
 const people=['nju-shiyini','nju-yangderui'].map(id=>db.people.find(p=>p.person_id===id));
 
 test('current generated candidate exposes both new NJU identities and their own department',()=>{
- assert.equal(db.people.length,612+firstMapping.people.length+nextMapping.people.length+seuMapping.people.length+scuMapping.people.length+uestcMapping.people.length+hnuMapping.people.length+bnuMapping.people.length+tjuMapping.people.length+nkuMapping.people.length+dlutMapping.people.length+jluMapping.people.length+sduMapping.people.length+csuMapping.people.length+hustMapping.people.length+whuMapping.people.length+xjtuMapping.people.length+rucMapping.people.length+ecnuMapping.people.length+buaaMapping.people.length+tongjiMapping.people.length+bitMapping.people.length+nwpuMapping.people.length+scutMapping.people.length+ustcMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,612+firstMapping.people.length+nextMapping.people.length+seuMapping.people.length+scuMapping.people.length+uestcMapping.people.length+hnuMapping.people.length+bnuMapping.people.length+tjuMapping.people.length+nkuMapping.people.length+dlutMapping.people.length+jluMapping.people.length+sduMapping.people.length+csuMapping.people.length+hustMapping.people.length+whuMapping.people.length+xjtuMapping.people.length+rucMapping.people.length+ecnuMapping.people.length+buaaMapping.people.length+tongjiMapping.people.length+bitMapping.people.length+nwpuMapping.people.length+scutMapping.people.length+ustcMapping.people.length+cauMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const p of people){assert(p);assert(matches(p,{school:'nju',org:'nju-social-sciences'},db.org_units));assert(matches(p,{q:p.name},db.org_units));assert(!matches(p,{school:'hit'},db.org_units));assert.equal(p.quick_link_eligible,false);assert.equal(p.include_in_current_faculty_count,false);assert(officialProfileUrl(p).startsWith('https://sociology.nju.edu.cn/'));}
  const events=people.flatMap(p=>p.education);assert.equal(events.filter(e=>e.degree_awarded===true).length,4);assert.equal(events.filter(e=>e.degree_awarded===false).length,1);
  assert.equal(people.reduce((n,p)=>n+stages(p,'doctor').length,0),2);
