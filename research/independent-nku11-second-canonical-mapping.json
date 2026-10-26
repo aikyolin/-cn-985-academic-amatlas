@@ -1,0 +1,801 @@
+{
+  "schema_version": "independent-nku11-second-canonical-mapping-1",
+  "baseline_commit": "c199d8840c1a0962640b3b33c313ad44530b54e2",
+  "new_people": [
+    "nku-miaozhiwei",
+    "nku-longjiafu",
+    "nku-chenpeng-communication",
+    "nku-wanglihua",
+    "nku-zhangwenhong-sociology",
+    "nankai-xingxiaolong-publichealth",
+    "nankai-zhangminying-publichealth",
+    "nankai-guofenghua-publichealth",
+    "nankai-wanglifeng-basicmedicine",
+    "nku-jiangpei-history",
+    "nku-fanguangxin-philosophy"
+  ],
+  "new_org_ids": [
+    "nku-chemistry",
+    "nku-chemistry-elemento",
+    "nku-life-sciences",
+    "nku-biochemistry-molecular-biology",
+    "nku-journalism-communication",
+    "nku-sociology",
+    "nku-sociology-department"
+  ],
+  "counts": {
+    "people": 11,
+    "org_units": 7,
+    "education": 43,
+    "appointments": 29,
+    "publications": 18,
+    "mentors": 10,
+    "teaching": 6,
+    "institutional_associations": 0,
+    "professional_research_advisors": 0,
+    "career_end_events": 0,
+    "unbound_person_degree_credentials": 0,
+    "creative_works": 0,
+    "degree_true": 28,
+    "degree_false": 13,
+    "degree_unknown": 2
+  },
+  "counting_scope": "教育事件授位三态与未绑定具体阶段的本人全局学位凭证分开统计；后者不增加教育事件、不指定学校或日期。教学记录可含课程建设项目，作品区分论文书目与创作，关系按原阶段不统称论文指导。",
+  "mapping_inputs": [
+    {
+      "source_group_id": "nku-medical",
+      "canonical_payload_sha256": "0c9ddc06db8d8721e313c6b7dfd2f3b06525f0f1b3148538fc95ac9f89c186b7",
+      "field_mapping_sha256": "a8e590ec2a62aeee4ea6c0f1d62fec1358293b88f670169ba53fd9bd14b9bea1",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "nku-science-communication",
+      "canonical_payload_sha256": "423689dc0d013c3dc1fdd4ac3ef83dd2580c46fc837ea2a64e8990b8284ab699",
+      "field_mapping_sha256": "311191400786ff160abcb4bcfece238a257b5488c7f2b390a078440bb2cb0dd9",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    },
+    {
+      "source_group_id": "nku-history-philosophy",
+      "canonical_payload_sha256": "2de37db2ae5788f5c2a772e482714ad30de82aa0a0d24ff9bdc8410ec4efccd3",
+      "field_mapping_sha256": "e84938dd94027915d86e2576d16c6e86b26c227e0b3ae8a3850a61a21173c6ac",
+      "hash_scope": "canonical_mapping_artifact_bytes_not_original_webpage"
+    }
+  ],
+  "cohort_mappings": [
+    {
+      "payload_sha256": "0c9ddc06db8d8721e313c6b7dfd2f3b06525f0f1b3148538fc95ac9f89c186b7",
+      "people": [
+        {
+          "person_id": "nankai-xingxiaolong-publichealth",
+          "source_id": "nankai-1-375",
+          "source_url": "https://medical.nankai.edu.cn/2024/0416/c6615a540332/page.htm",
+          "source_evidence_scope": "retained_researcher_factual_extractions_not_literal_full_body",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2024/0416/c6615a540332/page.htm",
+              "source_locator": "教育记录／中山大学公共卫生学院／医学学士"
+            },
+            {
+              "field_address": [
+                "education",
+                1
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2024/0416/c6615a540332/page.htm",
+              "source_locator": "教育记录／北京协和医学院阜外医院/国家心血管病中心／医学博士"
+            },
+            {
+              "field_address": [
+                "appointments",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2024/0416/c6615a540332/page.htm",
+              "source_locator": "工作经历／讲师"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2024/0416/c6615a540332/page.htm",
+              "source_locator": "本人书目／BMC Public Health 2024（题名未知）"
+            }
+          ],
+          "limitations": [
+            "现职、独立院系目录归属与本人求学导师未核；目前不提供现职导航。",
+            "仅保留本人页的研究者事实提取及最短引文，未保留完整原文；所选作品题名未知。",
+            "原单位合列医学院/公共卫生与健康研究院；这里只复用医学院展示节点，不由复合标签推行政父子关系。"
+          ]
+        },
+        {
+          "person_id": "nankai-zhangminying-publichealth",
+          "source_id": "nankai-2-375",
+          "source_url": "https://medical.nankai.edu.cn/2017/0622/c6614a69053/page.htm",
+          "source_evidence_scope": "retained_researcher_factual_extractions_not_literal_full_body",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6614a69053/page.htm",
+              "source_locator": "教育记录／河北医科大学／本科"
+            },
+            {
+              "field_address": [
+                "education",
+                1
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6614a69053/page.htm",
+              "source_locator": "教育记录／中国预防医学科学院／硕士"
+            },
+            {
+              "field_address": [
+                "education",
+                2
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6614a69053/page.htm",
+              "source_locator": "教育记录／天津医科大学／博士"
+            },
+            {
+              "field_address": [
+                "appointments",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6614a69053/page.htm",
+              "source_locator": "工作经历／副教授"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6614a69053/page.htm",
+              "source_locator": "本人书目／BMC cardiovascular disorders 2021（题名未知）"
+            }
+          ],
+          "limitations": [
+            "现职、独立院系目录归属与本人求学导师未核；目前不提供现职导航。",
+            "仅保留本人页的研究者事实提取及最短引文，未保留完整原文；所选作品题名未知。",
+            "职称栏教授与工作段副教授并存，未判定哪一项代表当前职级，也未推晋升日期。"
+          ]
+        },
+        {
+          "person_id": "nankai-guofenghua-publichealth",
+          "source_id": "nankai-1-376",
+          "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69084/page.htm",
+          "source_evidence_scope": "retained_necessary_professional_lines_not_full_page",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69084/page.htm",
+              "source_locator": "教育记录／山西医科大学公共卫生学院／本科"
+            },
+            {
+              "field_address": [
+                "education",
+                1
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69084/page.htm",
+              "source_locator": "教育记录／山西医科大学公共卫生学院／硕士"
+            },
+            {
+              "field_address": [
+                "education",
+                2
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69084/page.htm",
+              "source_locator": "教育记录／中国疾病预防控制中心传染病预防控制所／博士"
+            },
+            {
+              "field_address": [
+                "appointments",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69084/page.htm",
+              "source_locator": "工作经历／讲师"
+            },
+            {
+              "field_address": [
+                "appointments",
+                1
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69084/page.htm",
+              "source_locator": "工作经历／山西医科大学公共卫生学院／助教、讲师"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69084/page.htm",
+              "source_locator": "本人书目／hTERT rs2736098 genetic variants and susceptibility of hepatocellular carcinoma in the Chinese population: a case-control study"
+            },
+            {
+              "field_address": [
+                "publications",
+                1
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69084/page.htm",
+              "source_locator": "本人所列书目／纳米碳化钨对斑马鱼胚胎发育的影响"
+            }
+          ],
+          "limitations": [
+            "现职、独立院系目录归属与本人求学导师未核；目前不提供现职导航。",
+            "仅留存必要职业原文行，非完整页面；所选书目未核出版者元数据或全文。"
+          ]
+        },
+        {
+          "person_id": "nankai-wanglifeng-basicmedicine",
+          "source_id": "nankai-2-376",
+          "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69075/page.htm",
+          "source_evidence_scope": "retained_necessary_professional_lines_not_full_page",
+          "field_mappings": [
+            {
+              "field_address": [
+                "education",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69075/page.htm",
+              "source_locator": "教育记录／山东大学生命科学学院／博士"
+            },
+            {
+              "field_address": [
+                "appointments",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69075/page.htm",
+              "source_locator": "工作经历／讲师"
+            },
+            {
+              "field_address": [
+                "publications",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69075/page.htm",
+              "source_locator": "本人书目／Toxicity of polymer-modified CuS nanoclusters on zebrafish embryo development"
+            },
+            {
+              "field_address": [
+                "publications",
+                1
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69075/page.htm",
+              "source_locator": "本人所列书目／纳米碳化钨对斑马鱼胚胎发育的影响"
+            },
+            {
+              "field_address": [
+                "professional_qualifications",
+                0
+              ],
+              "source_url": "https://medical.nankai.edu.cn/2017/0622/c6615a69075/page.htm",
+              "source_locator": "工作经历／应用心理学专业硕士导师资格"
+            }
+          ],
+          "limitations": [
+            "现职、独立院系目录归属与本人求学导师未核；目前不提供现职导航。",
+            "仅留存必要职业原文行，非完整页面；所选书目未核出版者元数据或全文。"
+          ]
+        }
+      ],
+      "org_identity": {
+        "reused_org_id": "nku-medical",
+        "source_unit": "医学院",
+        "official_site": "https://medical.nankai.edu.cn/",
+        "note": "本批本人页与既有节点同校同学院；精确复用原对象，不更改其行政父级。"
+      },
+      "classification_decisions": [
+        {
+          "person_id": "nankai-xingxiaolong-publichealth",
+          "education_index": 0,
+          "old": null,
+          "new": true,
+          "evidence_scope": "retained_researcher_factual_extractions_not_literal_full_body"
+        },
+        {
+          "person_id": "nankai-xingxiaolong-publichealth",
+          "education_index": 1,
+          "old": null,
+          "new": true,
+          "evidence_scope": "retained_researcher_factual_extractions_not_literal_full_body"
+        },
+        {
+          "person_id": "nankai-zhangminying-publichealth",
+          "education_index": 1,
+          "old": null,
+          "new": true,
+          "evidence_scope": "retained_researcher_factual_extractions_not_literal_full_body"
+        },
+        {
+          "person_id": "nankai-zhangminying-publichealth",
+          "education_index": 2,
+          "old": null,
+          "new": true,
+          "evidence_scope": "retained_researcher_factual_extractions_not_literal_full_body"
+        },
+        {
+          "person_id": "nankai-guofenghua-publichealth",
+          "education_index": 1,
+          "old": null,
+          "new": true,
+          "evidence_scope": "retained_necessary_professional_lines_not_full_page"
+        },
+        {
+          "person_id": "nankai-guofenghua-publichealth",
+          "education_index": 2,
+          "old": null,
+          "new": true,
+          "evidence_scope": "retained_necessary_professional_lines_not_full_page"
+        },
+        {
+          "person_id": "nankai-wanglifeng-basicmedicine",
+          "education_index": 0,
+          "old": null,
+          "new": true,
+          "evidence_scope": "retained_necessary_professional_lines_not_full_page"
+        }
+      ],
+      "new_source_acceptance": {
+        "scope": "郭1合并职业段与1书目；王1本人指导资格与1书目，仅此4项",
+        "acceptance_sha256": "93a13796b120cd01817c1cb46661b9e0579105a0dfb28b825259e07a058b59a4",
+        "not_original_review_whole_raw_acceptance": true
+      }
+    },
+    {
+      "people": [
+        {
+          "person_id": "nku-miaozhiwei",
+          "department_id": "nku-chemistry-elemento",
+          "education": [
+            {
+              "event_id": "nku-miaozhiwei-bachelor",
+              "degree_awarded": true,
+              "field_evidence": [
+                {
+                  "source_id": "nku-miaozhiwei-ace-profile",
+                  "source_url": "https://ace.nankai.edu.cn/szdw/bd/mzw.htm",
+                  "excerpt_id": "nku-miaozhiwei-ace-profile-excerpt-4",
+                  "source_locator": "学历授位、博士及博后导师、任职历史",
+                  "quote_sha256": "4630e7a8a4f9a38f9de39152ce16fe5c05f66ed7b6a1d4b40a25a0167fbdd7f9"
+                },
+                {
+                  "source_id": "nku-miaozhiwei-chem-profile",
+                  "source_url": "https://chem.nankai.edu.cn/2019/0906/c24386a377729/page.htm",
+                  "excerpt_id": "nku-miaozhiwei-chem-profile-excerpt-6",
+                  "source_locator": "天津师范大学学士学习行",
+                  "quote_sha256": "1dbdcadd52ef9549239804efdab182374b2b427d8220d5a1d0fdc7df11f8d867"
+                }
+              ]
+            },
+            {
+              "event_id": "nku-miaozhiwei-master",
+              "degree_awarded": true,
+              "field_evidence": [
+                {
+                  "source_id": "nku-miaozhiwei-ace-profile",
+                  "source_url": "https://ace.nankai.edu.cn/szdw/bd/mzw.htm",
+                  "excerpt_id": "nku-miaozhiwei-ace-profile-excerpt-4",
+                  "source_locator": "学历授位、博士及博后导师、任职历史",
+                  "quote_sha256": "4630e7a8a4f9a38f9de39152ce16fe5c05f66ed7b6a1d4b40a25a0167fbdd7f9"
+                },
+                {
+                  "source_id": "nku-miaozhiwei-chem-profile",
+                  "source_url": "https://chem.nankai.edu.cn/2019/0906/c24386a377729/page.htm",
+                  "excerpt_id": "nku-miaozhiwei-chem-profile-excerpt-7",
+                  "source_locator": "天津师范大学硕士学习行",
+                  "quote_sha256": "ca4e6609fc2ad8245b5883366f07c6dd0d80de421406a35a4dd13ce5380864b2"
+                }
+              ]
+            },
+            {
+              "event_id": "nku-miaozhiwei-doctorate",
+              "degree_awarded": true,
+              "field_evidence": [
+                {
+                  "source_id": "nku-miaozhiwei-ace-profile",
+                  "source_url": "https://ace.nankai.edu.cn/szdw/bd/mzw.htm",
+                  "excerpt_id": "nku-miaozhiwei-ace-profile-excerpt-4",
+                  "source_locator": "学历授位、博士及博后导师、任职历史",
+                  "quote_sha256": "4630e7a8a4f9a38f9de39152ce16fe5c05f66ed7b6a1d4b40a25a0167fbdd7f9"
+                },
+                {
+                  "source_id": "nku-miaozhiwei-chem-profile",
+                  "source_url": "https://chem.nankai.edu.cn/2019/0906/c24386a377729/page.htm",
+                  "excerpt_id": "nku-miaozhiwei-chem-profile-excerpt-8",
+                  "source_locator": "清华大学博士学习行",
+                  "quote_sha256": "f753e334be1f34be8491cdbba9ac1017096c815675772b0998cab581e3a22c4d"
+                }
+              ]
+            },
+            {
+              "event_id": "nku-miaozhiwei-postdoc",
+              "degree_awarded": false,
+              "field_evidence": [
+                {
+                  "source_id": "nku-miaozhiwei-ace-profile",
+                  "source_url": "https://ace.nankai.edu.cn/szdw/bd/mzw.htm",
+                  "excerpt_id": "nku-miaozhiwei-ace-profile-excerpt-4",
+                  "source_locator": "学历授位、博士及博后导师、任职历史",
+                  "quote_sha256": "4630e7a8a4f9a38f9de39152ce16fe5c05f66ed7b6a1d4b40a25a0167fbdd7f9"
+                },
+                {
+                  "source_id": "nku-miaozhiwei-chem-profile",
+                  "source_url": "https://chem.nankai.edu.cn/2019/0906/c24386a377729/page.htm",
+                  "excerpt_id": "nku-miaozhiwei-chem-profile-excerpt-9",
+                  "source_locator": "ETH博士后行",
+                  "quote_sha256": "4b864f3188e1d1996bb6ebf94a2ae2ebfb12685b03ec3f283480787af2f70edf"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "原教授、博士生导师；博导为本人指导他人资格，不是本人求学师承。来源未独立核实当前人事。",
+            "本人单位为化学学院元素有机化学研究所；ACE站点“应用化学与工程研究所”是托管站名，不替换本人单位。",
+            "副教授起任2004与2002-10冲突未解；原两区间和博士后研究重叠均保留，不按较新页面调和。",
+            "赵玉芬博士阶段、Andrea Vasella博士后阶段各一关系，不是两位博士论文导师；导师身份节点与现职未知。",
+            "第二作品只按官网书目作者顺序，未独立认证出版者署名；本批未选具体课程不表示无教学。"
+          ]
+        },
+        {
+          "person_id": "nku-longjiafu",
+          "department_id": "nku-biochemistry-molecular-biology",
+          "education": [
+            {
+              "event_id": "nku-longjiafu-bachelor",
+              "degree_awarded": true,
+              "field_evidence": [
+                {
+                  "source_id": "nku-longjiafu-profile",
+                  "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+                  "excerpt_id": "nku-longjiafu-profile-excerpt-3",
+                  "source_locator": "本人简介、学士博士授位及博后指导",
+                  "quote_sha256": "034a6469d1031c9d7209ab97317ed9251ac5d219c51164d8fd248801e79ccbe9"
+                },
+                {
+                  "source_id": "nku-longjiafu-profile",
+                  "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+                  "excerpt_id": "nku-longjiafu-profile-excerpt-4",
+                  "source_locator": "教育工作经历及研究方向栏目",
+                  "quote_sha256": "2f4b186df271a1a0f9553fe71be5cc2cb35733f485dba15baa556059c909b4f2"
+                }
+              ]
+            },
+            {
+              "event_id": "nku-longjiafu-doctor",
+              "degree_awarded": true,
+              "field_evidence": [
+                {
+                  "source_id": "nku-longjiafu-profile",
+                  "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+                  "excerpt_id": "nku-longjiafu-profile-excerpt-3",
+                  "source_locator": "本人简介、学士博士授位及博后指导",
+                  "quote_sha256": "034a6469d1031c9d7209ab97317ed9251ac5d219c51164d8fd248801e79ccbe9"
+                },
+                {
+                  "source_id": "nku-longjiafu-profile",
+                  "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+                  "excerpt_id": "nku-longjiafu-profile-excerpt-4",
+                  "source_locator": "教育工作经历及研究方向栏目",
+                  "quote_sha256": "2f4b186df271a1a0f9553fe71be5cc2cb35733f485dba15baa556059c909b4f2"
+                }
+              ]
+            },
+            {
+              "event_id": "nku-longjiafu-postdoc",
+              "degree_awarded": false,
+              "field_evidence": [
+                {
+                  "source_id": "nku-longjiafu-profile",
+                  "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+                  "excerpt_id": "nku-longjiafu-profile-excerpt-3",
+                  "source_locator": "本人简介、学士博士授位及博后指导",
+                  "quote_sha256": "034a6469d1031c9d7209ab97317ed9251ac5d219c51164d8fd248801e79ccbe9"
+                },
+                {
+                  "source_id": "nku-longjiafu-profile",
+                  "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+                  "excerpt_id": "nku-longjiafu-profile-excerpt-4",
+                  "source_locator": "教育工作经历及研究方向栏目",
+                  "quote_sha256": "2f4b186df271a1a0f9553fe71be5cc2cb35733f485dba15baa556059c909b4f2"
+                }
+              ]
+            },
+            {
+              "event_id": "nku-longjiafu-cornell-visit",
+              "degree_awarded": false,
+              "field_evidence": [
+                {
+                  "source_id": "nku-longjiafu-profile",
+                  "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+                  "excerpt_id": "nku-longjiafu-profile-excerpt-3",
+                  "source_locator": "本人简介、学士博士授位及博后指导",
+                  "quote_sha256": "034a6469d1031c9d7209ab97317ed9251ac5d219c51164d8fd248801e79ccbe9"
+                },
+                {
+                  "source_id": "nku-longjiafu-profile",
+                  "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+                  "excerpt_id": "nku-longjiafu-profile-excerpt-4",
+                  "source_locator": "教育工作经历及研究方向栏目",
+                  "quote_sha256": "2f4b186df271a1a0f9553fe71be5cc2cb35733f485dba15baa556059c909b4f2"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "原教授、博士生导师、生物化学与分子生物学系主任完整保留；招生指导资格不是本人求学师承，当前人事未独立核实。",
+            "学士1999-06、博士2004-08为原文明确授位月，不是由学习期末推断；研究生标签不生成额外硕士。",
+            "博士后起月2004-09（简介）/2004-08（工作经历）冲突保留，结束2006-12；康奈尔访问教授为2020-02至2021-01非学位岗位。",
+            "张明杰分别为博士与博士后阶段指导，不认证原学位论文导师；目录具名栏目已见，但原http链接与读取https网址跳转等价未核。",
+            "第二作品保留官网题名/作者串，外部元数据未核；研究方向：基因表达调控与疾病。"
+          ]
+        },
+        {
+          "person_id": "nku-chenpeng-communication",
+          "department_id": "nku-journalism-communication",
+          "education": [
+            {
+              "event_id": "nku91-chen-bachelor",
+              "degree_awarded": true,
+              "field_evidence": [
+                {
+                  "source_id": "nku91-chen-profile",
+                  "source_url": "https://ic.nankai.edu.cn/cp/listm.htm",
+                  "excerpt_id": "chen-education",
+                  "source_locator": "教育背景三项明确授位",
+                  "quote_sha256": "b90bf925ee937c68759093fe2a2f00dbefaa5ee14273866e8de82a36aa61ef2f"
+                }
+              ]
+            },
+            {
+              "event_id": "nku91-chen-master",
+              "degree_awarded": true,
+              "field_evidence": [
+                {
+                  "source_id": "nku91-chen-profile",
+                  "source_url": "https://ic.nankai.edu.cn/cp/listm.htm",
+                  "excerpt_id": "chen-education",
+                  "source_locator": "教育背景三项明确授位",
+                  "quote_sha256": "b90bf925ee937c68759093fe2a2f00dbefaa5ee14273866e8de82a36aa61ef2f"
+                }
+              ]
+            },
+            {
+              "event_id": "nku91-chen-doctor",
+              "degree_awarded": true,
+              "field_evidence": [
+                {
+                  "source_id": "nku91-chen-profile",
+                  "source_url": "https://ic.nankai.edu.cn/cp/listm.htm",
+                  "excerpt_id": "chen-education",
+                  "source_locator": "教育背景三项明确授位",
+                  "quote_sha256": "b90bf925ee937c68759093fe2a2f00dbefaa5ee14273866e8de82a36aa61ef2f"
+                }
+              ]
+            },
+            {
+              "event_id": "nku91-chen-postdoc",
+              "degree_awarded": false,
+              "field_evidence": [
+                {
+                  "source_id": "nku91-chen-profile",
+                  "source_url": "https://ic.nankai.edu.cn/cp/listm.htm",
+                  "excerpt_id": "chen-work",
+                  "source_locator": "工作经历及联合博士后",
+                  "quote_sha256": "f9e791929a080fd62f58601975125bd21b188437a56ac29eb7f27d785aee5780"
+                }
+              ]
+            }
+          ],
+          "visible_limits": [
+            "本人新闻与传播学院职业单位，与页脚“信息与传播学院”分源标签同时保留，未核更名或行政同一关系。",
+            "原教授、副院长及全部历史任期保留；目录两种观察只见外壳未匹配具名链接，不据此推不存在或离职。",
+            "北京广播学院原校名及三项明确授位保留；学习起止不作授位日期或授位年份，法律授位主体未单独核实。",
+            "清华大学与山东广电联合博士后为一个非学位事件，起止与具体合作法律主体未知；本人求学导师材料未列，不补关系。",
+            "两图书分别主编、执行主编，2021年11月和9月原出版月保留，不推完整作者名单；本批未选具体课程不表示无教学。"
+          ]
+        }
+      ],
+      "organization_identity_scope": "原复合单位和目录/署名支持展示父子归组，不认证法律行政层级；陈两院名分源不猜更名。",
+      "classification_changes": [],
+      "org_units": [
+        {
+          "id": "nku-chemistry",
+          "name": "化学学院",
+          "type": "college",
+          "school_id": "nku",
+          "parent_id": null,
+          "campus_ids": [],
+          "display_scope": "原本人完整单位及官网目录/署名支持展示归组，不独立认证法律行政层级或当前人事。",
+          "field_evidence": [
+            {
+              "source_id": "nku-miaozhiwei-chem-profile",
+              "source_url": "https://chem.nankai.edu.cn/2019/0906/c24386a377729/page.htm",
+              "excerpt_id": "nku-miaozhiwei-chem-profile-excerpt-14",
+              "source_locator": "化学学院页脚署名",
+              "quote_sha256": "4cb5b80767a08fc570f7b19de61cd88dbd829336b252b03e2c49a702ce6aeb90"
+            }
+          ],
+          "source_id": "nku-miaozhiwei-chem-profile",
+          "source_url": "https://chem.nankai.edu.cn/2019/0906/c24386a377729/page.htm",
+          "source_locator": "化学学院页脚署名"
+        },
+        {
+          "id": "nku-chemistry-elemento",
+          "name": "元素有机化学研究所",
+          "school_id": "nku",
+          "type": "department",
+          "parent_id": "nku-chemistry",
+          "source_ids": [
+            "nku-elemento-directory",
+            "nku-miaozhiwei-chem-profile"
+          ],
+          "note": "Directory label 元素所 mapped to full institute name explicitly in linked profile; no legal-entity or rename inference.",
+          "campus_ids": [],
+          "display_scope": "原本人完整单位及官网目录/署名支持展示归组，不独立认证法律行政层级或当前人事。",
+          "field_evidence": [
+            {
+              "source_id": "nku-miaozhiwei-chem-profile",
+              "source_url": "https://chem.nankai.edu.cn/2019/0906/c24386a377729/page.htm",
+              "excerpt_id": "nku-miaozhiwei-chem-profile-excerpt-4",
+              "source_locator": "本人元素有机化学研究所身份",
+              "quote_sha256": "2af1a330cfb3b21e94617ffb593ab916c0e9dcaf2465808b0be164ea61d204c0"
+            },
+            {
+              "source_id": "nku-elemento-directory",
+              "source_url": "https://chem.nankai.edu.cn/yss/main.htm",
+              "excerpt_id": "nku-elemento-directory-excerpt-1",
+              "source_locator": "师资目录元素所栏目",
+              "quote_sha256": "8308a4bb6e2e729c740dcdbc55e09ec1af9f179df9a0a65bd91337814cdbffe8"
+            }
+          ],
+          "source_id": "nku-miaozhiwei-chem-profile",
+          "source_url": "https://chem.nankai.edu.cn/2019/0906/c24386a377729/page.htm",
+          "source_locator": "本人元素有机化学研究所身份"
+        },
+        {
+          "id": "nku-life-sciences",
+          "name": "生命科学学院",
+          "type": "college",
+          "school_id": "nku",
+          "parent_id": null,
+          "campus_ids": [],
+          "display_scope": "原本人完整单位及官网目录/署名支持展示归组，不独立认证法律行政层级或当前人事。",
+          "field_evidence": [
+            {
+              "source_id": "nku-longjiafu-profile",
+              "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+              "excerpt_id": "nku-longjiafu-profile-excerpt-4",
+              "source_locator": "教育工作经历及研究方向栏目",
+              "quote_sha256": "2f4b186df271a1a0f9553fe71be5cc2cb35733f485dba15baa556059c909b4f2"
+            }
+          ],
+          "source_id": "nku-longjiafu-profile",
+          "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+          "source_locator": "教育工作经历及研究方向栏目"
+        },
+        {
+          "id": "nku-biochemistry-molecular-biology",
+          "name": "生物化学与分子生物学系",
+          "school_id": "nku",
+          "parent_id": "nku-life-sciences",
+          "source_ids": [
+            "nku-longjiafu-profile"
+          ],
+          "directory_status": "parent_cloud_browser_visible_category_and_person_checked",
+          "directory_source_id": "nku-fullstaff-browser",
+          "type": "department",
+          "campus_ids": [],
+          "display_scope": "原本人完整单位及官网目录/署名支持展示归组，不独立认证法律行政层级或当前人事。",
+          "field_evidence": [
+            {
+              "source_id": "nku-longjiafu-profile",
+              "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+              "excerpt_id": "nku-longjiafu-profile-excerpt-2",
+              "source_locator": "部门与教授职称",
+              "quote_sha256": "d10f8a57494b9d84736605245f9e4df5ab0fb27beb2f8c53243560f946c3faed"
+            },
+            {
+              "source_id": "nku-fullstaff-browser",
+              "source_url": "https://sky.nankai.edu.cn/7798/list.htm",
+              "excerpt_id": "nku-fullstaff-browser-excerpt-2",
+              "source_locator": "生物化学与分子生物学系栏目",
+              "quote_sha256": "bde836c3e7430338f17cfc44354f06fb4d38f90ba3d7142bf93396c9a68f2f6c"
+            }
+          ],
+          "source_id": "nku-longjiafu-profile",
+          "source_url": "https://sky.nankai.edu.cn/ljf/list.htm",
+          "source_locator": "部门与教授职称"
+        },
+        {
+          "id": "nku-journalism-communication",
+          "name": "新闻与传播学院",
+          "type": "college",
+          "school_id": "nku",
+          "parent_id": null,
+          "campus_ids": [],
+          "display_scope": "原本人完整单位及官网目录/署名支持展示归组，不独立认证法律行政层级或当前人事。",
+          "field_evidence": [
+            {
+              "source_id": "nku91-chen-profile",
+              "source_url": "https://ic.nankai.edu.cn/cp/listm.htm",
+              "excerpt_id": "chen-work",
+              "source_locator": "工作经历及联合博士后",
+              "quote_sha256": "f9e791929a080fd62f58601975125bd21b188437a56ac29eb7f27d785aee5780"
+            }
+          ],
+          "source_id": "nku91-chen-profile",
+          "source_url": "https://ic.nankai.edu.cn/cp/listm.htm",
+          "source_locator": "工作经历及联合博士后"
+        }
+      ],
+      "teaching_audience_scope": "化学伯苓班只在原生物化学课程名中出现，不套结构生物学导论或蛋白质功能与研究技术；三课原均仅教学栏目列目，不补主讲或层级。"
+    },
+    {
+      "baseline_profiles": 1015,
+      "org_scope": "王/江复用已发布历史学院，范复用已发布哲学院，不修改旧节点；张社会学院及社会学系按目录与个人页明确名称新建，展示包含不当法律认证。",
+      "degree_changes": [
+        {
+          "person_id": "nku-fanguangxin-philosophy",
+          "education_event_id": "nku-fanguangxin-philosophy-education-1",
+          "old": null,
+          "new": true,
+          "exact_quote": "1994年9月至1998年7月 南京大学学士",
+          "raw_sha256": "3a3671ab147b1a88cb336c56e09319e3d86cd755cb8d527919e20176db687e5f",
+          "qualified_context": "官网具名本人教育资格列举，无攻读或研究生未完成限制；未另留存栏目标题，不虚构heading。",
+          "award_date": "unknown；学习区间原样保留"
+        },
+        {
+          "person_id": "nku-fanguangxin-philosophy",
+          "education_event_id": "nku-fanguangxin-philosophy-education-2",
+          "old": null,
+          "new": true,
+          "exact_quote": "1998年9月至2000年8月 香港科技大学硕士",
+          "raw_sha256": "3a3671ab147b1a88cb336c56e09319e3d86cd755cb8d527919e20176db687e5f",
+          "qualified_context": "官网具名本人教育资格列举，无攻读或研究生未完成限制；未另留存栏目标题，不虚构heading。",
+          "award_date": "unknown；学习区间原样保留"
+        },
+        {
+          "person_id": "nku-fanguangxin-philosophy",
+          "education_event_id": "nku-fanguangxin-philosophy-education-3",
+          "old": null,
+          "new": true,
+          "exact_quote": "2000年9月至2005年1月 香港科技大学博士",
+          "raw_sha256": "3a3671ab147b1a88cb336c56e09319e3d86cd755cb8d527919e20176db687e5f",
+          "qualified_context": "官网具名本人教育资格列举，无攻读或研究生未完成限制；未另留存栏目标题，不虚构heading。",
+          "award_date": "unknown；学习区间原样保留"
+        },
+        {
+          "person_id": "nku-fanguangxin-philosophy",
+          "education_event_id": "nku-fanguangxin-philosophy-education-4",
+          "old": null,
+          "new": true,
+          "exact_quote": "2008年9月至2014年6月 威斯康星大学麦迪逊校区博士",
+          "raw_sha256": "3a3671ab147b1a88cb336c56e09319e3d86cd755cb8d527919e20176db687e5f",
+          "qualified_context": "官网具名本人教育资格列举，无攻读或研究生未完成限制；未另留存栏目标题，不虚构heading。",
+          "award_date": "unknown；学习区间原样保留"
+        }
+      ],
+      "source_scope": "王只独审隔离原人物，不导入共包投影unknowns；张个人履历与校方转载口述史分开；江范摘要与原文证据层次分开。",
+      "counts": {
+        "education": 22,
+        "appointments": 12,
+        "mentors": 6,
+        "publications": 6,
+        "teaching": 3,
+        "degree_true_false_null": [
+          13,
+          9,
+          0
+        ]
+      },
+      "thesis_relationship_scope": "张两关系来自校方转载口述史，范三关系来自本人官网具名论文条目；来源报告论文指导不等原论文文档认证。范3机构仅本人论文阶段机构，不认证导师单位。边燕杰仅博士后指导，导师组/答辩委员不升级。"
+    }
+  ],
+  "mapping": "仅追加十一名已审来源人物及组织展示节点；旧1015事实保持。当前状态逐源保留，未知不提升在岗；未核实导航关闭；明确历史状态不遮蔽；所有源事实保留，附canonical别名。分组字段映射详见cohort_mappings。"
+}

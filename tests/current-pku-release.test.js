@@ -8,12 +8,13 @@ const zjuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-zju7
 const mixedMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-neu4-cqu3-sysu2-source-mapping.json',import.meta.url)));
 const njuSecondMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nju11-second-source-mapping.json',import.meta.url)));
 const seuSecondMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-seu11-second-source-mapping.json',import.meta.url)));
+const nkuSecondMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-nku11-second-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-pku11-source-mapping.json',import.meta.url)));
 const ids=["pku-chaiweizhong", "pku-fanxing", "pku-zhangdong-math", "pku-wangjie", "pku-chendayue", "pku-chensongxi", "pku-zhangwu", "pku-huyonghua", "pku-liliming", "pku-chuming-basicmedicine", "pku-biwenjian-medicalgenetics"];
 test('actual PKU cohort preserves all independently reviewed identities and complete fields',()=>{
- assert.equal(db.people.length,966+mapping.people.length+zjuMapping.people.length+mixedMapping.people.length+njuSecondMapping.people.length+seuSecondMapping.people.length);assert.equal(db.build_id,roster.build_id);assert.deepEqual(mapping.people.map(p=>p.person_id),ids);
+ assert.equal(db.people.length,966+mapping.people.length+zjuMapping.people.length+mixedMapping.people.length+njuSecondMapping.people.length+seuSecondMapping.people.length+nkuSecondMapping.people.length);assert.equal(db.build_id,roster.build_id);assert.deepEqual(mapping.people.map(p=>p.person_id),ids);
  for(const expected of mapping.people){const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);assert.equal(actual.data_batch_id,'faculty-batch-pku11-independent-20261026');assert(matches(actual,{q:actual.name},db.org_units));assert(matches(actual,{school:'pku',org:actual.department_id},db.org_units));assert(!matches(actual,{school:'lzu'},db.org_units));}
 });
 const {render}=createImmutableCohortRenderer({db,roster,fixtureId:import.meta.url});
