@@ -5,13 +5,14 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {matches, stages, mentorEvent, mentorEvents, mentorOfficialUrl, mentorProfileRoute, escapeHtml} from '../site/model.js';
 const sjtuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-sjtu11-source-mapping.json',import.meta.url)));
+const thuMapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-thu11-source-mapping.json',import.meta.url)));
 const db=readAtlasFile(new URL('../site/atlas.json',import.meta.url));
 const roster=JSON.parse(fs.readFileSync(new URL('../site/rosters.json',import.meta.url)));
 const mapping=JSON.parse(fs.readFileSync(new URL('./fixtures/independent-lzu11-source-mapping.json',import.meta.url)));
 test('actual LZU cohort exactly preserves independently reviewed fields, identities and scope',()=>{
  assert.deepEqual(mapping.people.map(p=>p.person_id),["lzu-anjunhong", "lzu-caojiangwei", "lzu-chaiguozhi", "lzu-huangjianping", "lzu-gelong", "lzu-shilei", "lzu-wangdaqiao", "lzu-zhangjin", "lzu-zhengbing", "lzu-liwantong", "lzu-zhangtongsheng"]);
  assert(mapping.people.every(p=>p.data_batch_id==='faculty-batch-lzu11-independent-20261026'));
- assert.equal(db.people.length,933+mapping.people.length+sjtuMapping.people.length);assert.equal(db.build_id,roster.build_id);
+ assert.equal(db.people.length,933+mapping.people.length+sjtuMapping.people.length+thuMapping.people.length);assert.equal(db.build_id,roster.build_id);
  for(const expected of mapping.people){
   const actual=db.people.find(p=>p.person_id===expected.person_id);assert.deepEqual(actual,expected);
   assert.equal(typeof actual.department,'string');assert(actual.department.length>0);
