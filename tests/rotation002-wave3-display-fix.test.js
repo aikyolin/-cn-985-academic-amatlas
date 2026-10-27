@@ -101,7 +101,7 @@ for(const [id,eventIds] of Object.entries({
     const i=p.education.findIndex(e=>e.event_id===eventId),row=rows[i];
     assert(row.includes(EXPECTED_CHANGED_LABELS[eventId]),eventId);
     assert(!row.includes('<p>研究经历'),'Generic fallback must not replace a known study stage');
-    assert(row.includes('非确证授位事件，不参与学历筛选'));
+    assert(row.includes('本事件未明确记载获授学位，不参与学历筛选'));
     assert(!row.includes('授位日期：'));
   }
 });
@@ -125,7 +125,7 @@ test('explicit Yang combined degree remains unchanged and is never inferred to b
   assert.equal(educationStageLabel(e),'硕士、博士');
   const rows=educationRows(await render(p.person_id));
   assert.equal(rows.length,3);assert(rows[1].includes('<p>硕士、博士 · 材料加工工程</p>'));
-  assert(!rows[1].includes(GRADUATE));assert(rows[1].includes('非确证授位事件，不参与学历筛选'));
+  assert(!rows[1].includes(GRADUATE));assert(rows[1].includes('本事件未明确记载获授学位，不参与学历筛选'));
   for(const type of ['bachelor','master','doctor'])assert.deepEqual(stages(p,type),[]);
   const graph=(await render(p.person_id,'lineage')).graph;
   assert.equal(graph.split('硕士、博士合并阶段（未细分）').length-1,2);

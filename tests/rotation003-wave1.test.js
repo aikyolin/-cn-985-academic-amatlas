@@ -89,7 +89,7 @@ for(const id of PROFESSIONAL_IDS)test(`actual profile preserves every event and 
   for(const [i,e]of p.education.entries()){
     assert(rows[i].includes(esc(EXPECTED_LABELS[id][i])),`${id}/${i}`);
     assert(rows[i].includes(esc(e.institution)));
-    assert.equal(rows[i].includes('非确证授位事件，不参与学历筛选'),e.degree_awarded!==true);
+    assert.equal(rows[i].includes('本事件未明确记载获授学位，不参与学历筛选'),e.degree_awarded!==true);
     assert.equal(rows[i].includes('授位日期：'),e.degree_awarded_date!==null);
   }
 });

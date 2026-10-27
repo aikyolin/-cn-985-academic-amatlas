@@ -280,7 +280,7 @@ def department_tables(people,updated_at,institutions=None):
  school_id=next(iter(schools),"")
  names={s["id"]:s["official_name"] for s in (institutions or [])}
  school_name=names.get(school_id,school_id)
- tables=[('总览',[['姓名','校区','院系','官方主页','已记录来源检索日期','缺项与冲突','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p.get('campus') or '校区未标注',p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],source_retrieval_date_summary(p),'；'.join(p['unknowns']),'分批核实资料，不是完整名录',profile_availability_label(p),'；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]
+ tables=[('总览',[['姓名','校区','院系','官方主页','已记录来源检索日期','来源说明与待核事项','范围','主页可用性','替代官方职业报道（非个人主页）'],*[[p['name'],p.get('campus') or '校区未标注',p['department'],'' if p.get('official_profile_availability')=='unavailable' or p.get('official_profile_navigation_eligible') is False else p['official_url'],source_retrieval_date_summary(p),'；'.join(p['unknowns']),'分批核实资料，不是完整名录',profile_availability_label(p),'；'.join(str(s.get('title','官方职业报道'))+'：'+str(s.get('url','')) for s in p.get('alternative_professional_sources',[]))] for p in people]])]
  # Append inside the existing overview scope cell: keep all five sheets and every column.
  for p,row in zip(people,tables[0][1][1:]):
   summary=teaching_summary(p)
@@ -293,7 +293,7 @@ def department_tables(people,updated_at,institutions=None):
   tables[0][1][0][3]='个人主页／职业网站（来源类型见说明）'
   tables[0][1][0][8]='替代职业资料来源（非已核个人主页）'
  fields=['event_kind','degree','institution','start','end','field','country','source_region','continent','institution_985','degree_awarded','degree_awarded_date','degree_award_source_url','note','geography_basis','source_url']
- rows=[['姓名','事件类型','阶段/职位','机构','开始','结束','专业','国家','地区','洲','历史985分类','确证授位','授位日期','授位来源','备注及冲突','地域口径','来源']]
+ rows=[['姓名','事件类型','阶段/职位','机构','开始','结束','专业','国家','地区','洲','历史985分类','来源记载学位','授位日期','授位来源','备注及冲突','地域口径','来源']]
  for p in people:
   events=p['education']+[dict(a,event_kind='employment',degree=a.get('title')) for a in p['appointments']]
   rows.extend([[p['name'],*[str(e.get(k) or '')+'（层次暂对应，未核实）' if k=='degree' and str(e.get('field_status',{}).get('degree','')).startswith('provisional_') else e.get(k) for k in fields]] for e in events])
