@@ -17,7 +17,7 @@ import build
 from openpyxl import load_workbook
 
 FIXTURE_PINS = {
-    'new-recovery123-source-attributed-mapping.json': '0d7362f37e2c883cc1e442f3fd6e2278bddba9e6090aeda3544135e6947b1418',
+    'new-recovery123-source-attributed-mapping.json': '5fb669036912a9b00c601865b322d8359c6a5c2a62957249c1fafbe6829f10e5',
     'new-recovery123-public-conservation-pins.json': '991d893162b8a4c7b61be1411082eb14b989507c6a1b0b5b35ac465434f24be5',
 }
 

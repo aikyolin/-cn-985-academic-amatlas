@@ -7,7 +7,7 @@ import {readJSONFile} from './atlas-test-io.js';
 import {createImmutableCohortRenderer} from './immutable-cohort-renderer.js';
 import {stages,mentorEvents,mentorProfileRoute,mentorOfficialUrl} from '../site/model.js';
 function fixed(name,sha){const raw=readFileSync(new URL('./fixtures/'+name,import.meta.url));assert.equal(createHash('sha256').update(raw).digest('hex'),sha);return JSON.parse(raw);}
-const fixture=fixed('new-recovery123-source-attributed-mapping.json','0d7362f37e2c883cc1e442f3fd6e2278bddba9e6090aeda3544135e6947b1418');
+const fixture=fixed('new-recovery123-source-attributed-mapping.json','5fb669036912a9b00c601865b322d8359c6a5c2a62957249c1fafbe6829f10e5');
 const pins=fixed('new-recovery123-public-conservation-pins.json','991d893162b8a4c7b61be1411082eb14b989507c6a1b0b5b35ac465434f24be5');
 const db=readJSONFile(new URL('../site/atlas.json',import.meta.url)),roster=readJSONFile(new URL('../site/rosters.json',import.meta.url));
 const renderer=createImmutableCohortRenderer({db,roster,fixtureId:'NEW_RECOVERY_123_FIXED_SOURCE_ATTRIBUTED_V8'});
