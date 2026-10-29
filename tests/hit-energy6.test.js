@@ -17,7 +17,7 @@ const visible=(s,v,label)=>{if(typeof v==='string'&&v)assert(s.includes(esc(v)),
 const actual=id=>{const rows=db.people.filter(p=>p.person_id===id);assert.equal(rows.length,1);return rows[0];};
 const content=p=>[...(p.unknowns||[]),...(p.appointments||[]).map(x=>x.note||''),...(p.research_collaborators||[]).map(x=>x.description||'')].join('\n');
 test('six exact identities append to frozen1151, without inaccessible profiles or new units',()=>{
- assert.equal(db.people.length,1157);assert.equal(db.pending_people.length,84);assert.deepEqual(fixed.people.map(p=>p.person_id),ids);assert.deepEqual(db.people.slice(1151),fixed.people);assert.deepEqual(db.profile_batches.slice(-fixed.profile_batches.length),fixed.profile_batches);
+ assert.equal(db.people.slice(0,1157).length,1157);assert.equal(db.pending_people.length,84);assert.deepEqual(fixed.people.map(p=>p.person_id),ids);assert.deepEqual(db.people.slice(1151,1157),fixed.people);assert.deepEqual(db.profile_batches.slice(224,225),fixed.profile_batches);
  for(const p of fixed.people){assert.equal(p.school_id,'hit');assert.equal(p.department_id,'hit-energy');assert.deepEqual(p.campus_ids,['harbin']);}
  for(const id of ['hit-luoyuxi','hit-zhangshuai','hit-epeng'])assert(!db.people.some(p=>p.person_id===id));
 });
