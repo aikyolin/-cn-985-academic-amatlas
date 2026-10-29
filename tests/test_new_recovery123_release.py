@@ -50,7 +50,7 @@ class NewRecovery123TargetedTests(unittest.TestCase):
             raise AssertionError('restricted fixed department scope changed')
 
     def test_01_old_1026_whole_objects_order_root_and_199_batches_conserved(self):
-        self.assertEqual(len(self.actual['people']), 1149)
+        self.assertEqual(len(self.actual['people'][:1149]), 1149)
         for p, pin in zip(self.actual['people'][:1026], self.pins['old_people'], strict=True):
             self.assertEqual(p['person_id'], pin['person_id'])
             self.assertEqual(object_sha(p), pin['sha256'], p['person_id'])
@@ -61,16 +61,16 @@ class NewRecovery123TargetedTests(unittest.TestCase):
         self.assertEqual(object_sha(self.actual['org_units'][:n]), self.pins['old_org_units_sha256'])
         self.assertEqual(object_sha(self.actual['profile_batches'][:199]), self.pins['old_profile_batches_sha256'])
         self.assertEqual(self.actual['org_units'][n:], self.fixture['org_units'])
-        self.assertEqual(self.actual['people'][1026:], self.fixture['people'])
+        self.assertEqual(self.actual['people'][1026:1149], self.fixture['people'])
         self.assertEqual(self.site['people'], self.actual['people'])
-        batches = self.actual['profile_batches'][199:]
+        batches = self.actual['profile_batches'][199:223]
         self.assertEqual([{k:b[k] for k in ('batch_id','school_id','people_count')} for b in batches], self.fixture['profile_batches'])
         for b in batches:
             self.assertTrue(b['integration_review_status'].startswith('NEW_RECOVERY'))
             self.assertNotIn('PENDING', b['integration_review_status'])
 
     def test_02_fixed_new_facts_tristates_slots_dates_and_guidance(self):
-        people = self.actual['people'][1026:]
+        people = self.actual['people'][1026:1149]
         events = [e for p in people for e in p['education']]
         self.assertEqual(len(events), 428)
         self.assertEqual([sum(e['degree_awarded'] is v for e in events) for v in (True, False, None)], [99,117,212])

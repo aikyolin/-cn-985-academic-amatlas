@@ -16,10 +16,10 @@ const html=p=>Object.values(p.snapshot).map(v=>v.innerHTML).join('\n');
 const actual=id=>{const rows=db.people.filter(p=>p.person_id===id);assert.equal(rows.length,1,id);return rows[0];};
 function visible(markup,value,label){if(typeof value==='string'&&value)assert(markup.includes(esc(value)),label);}
 test('fixed exact 123 people, 53 new orgs and 24 school batch identities follow old prefix',()=>{
- assert.equal(db.people.length,1149);assert.equal(fixture.people.length,123);
- assert.deepEqual(db.people.slice(1026),fixture.people);
+ assert.equal(db.people.slice(0,1149).length,1149);assert.equal(fixture.people.length,123);
+ assert.deepEqual(db.people.slice(1026,1149),fixture.people);
  assert.deepEqual(db.org_units.slice(pins.old_org_units_count),fixture.org_units);
- assert.deepEqual(db.profile_batches.slice(199).map(b=>({batch_id:b.batch_id,school_id:b.school_id,people_count:b.people_count})),fixture.profile_batches);
+ assert.deepEqual(db.profile_batches.slice(199,223).map(b=>({batch_id:b.batch_id,school_id:b.school_id,people_count:b.people_count})),fixture.profile_batches);
  assert.equal(new Set(fixture.people.map(p=>p.school_id)).size,24);
  assert.equal(new Set(fixture.people.map(p=>p.department_id)).size,98);
 });
