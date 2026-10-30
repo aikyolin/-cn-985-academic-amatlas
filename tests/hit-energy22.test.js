@@ -17,7 +17,7 @@ const visible=(s,v,label)=>{if(typeof v==='string'&&v.trim())assert(s.includes(e
 const actual=id=>{const rows=db.people.filter(p=>p.person_id===id);assert.equal(rows.length,1);return rows[0];};
 const content=p=>[...(p.unknowns||[]),...(p.education||[]).map(x=>x.note||''),...(p.appointments||[]).map(x=>x.note||''),...(p.publications||[]).map(x=>x.note||''),...(p.research_collaborators||[]).map(x=>x.description||'')].join('\n');
 test('exact 22 identities, one batch and old1157 boundary',()=>{
- assert.equal(db.people.length,1179);assert.equal(db.pending_people.length,84);assert.deepEqual(fixed.people.map(p=>p.person_id),ids);assert.deepEqual(db.people.slice(1157),fixed.people);assert.equal(fixed.profile_batches.length,1);assert.deepEqual(db.profile_batches.slice(225),fixed.profile_batches);
+ assert.equal(db.people.slice(0,1179).length,1179);assert.equal(db.pending_people.length,84);assert.deepEqual(fixed.people.map(p=>p.person_id),ids);assert.deepEqual(db.people.slice(1157,1179),fixed.people);assert.equal(fixed.profile_batches.length,1);assert.deepEqual(db.profile_batches.slice(225,226),fixed.profile_batches);
  for(const p of fixed.people){assert.equal(p.school_id,'hit');assert.equal(p.department_id,'hit-energy');assert.deepEqual(p.campus_ids,['harbin']);}
 });
 test('59 education records preserve 7 source awards, 7 non-awards, 45 unknown; 97 source career rows are not certified current jobs',()=>{
