@@ -60,7 +60,7 @@ class NewRecovery123TargetedTests(unittest.TestCase):
         n = self.pins['old_org_units_count']
         self.assertEqual(object_sha(self.actual['org_units'][:n]), self.pins['old_org_units_sha256'])
         self.assertEqual(object_sha(self.actual['profile_batches'][:199]), self.pins['old_profile_batches_sha256'])
-        self.assertEqual(self.actual['org_units'][n:], self.fixture['org_units'])
+        self.assertEqual(self.actual['org_units'][n:n+len(self.fixture['org_units'])], self.fixture['org_units'])
         self.assertEqual(self.actual['people'][1026:1149], self.fixture['people'])
         self.assertEqual(self.site['people'], self.actual['people'])
         batches = self.actual['profile_batches'][199:223]

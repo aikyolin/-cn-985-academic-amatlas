@@ -163,6 +163,17 @@ class RestrictedScopeTests(unittest.TestCase):
         pins = ORIGINAL_PINS
         for rel, expected in pins.items():
             raw = (ROOT / rel).read_bytes()
+            if rel in RESEARCH_DISPLAY_LITERAL_INVERSE:
+                spec = RESEARCH_DISPLAY_LITERAL_INVERSE[rel]
+                self.assertEqual(hashlib.sha256(raw).hexdigest(), spec['after_sha256'])
+                for change in reversed(spec['changes']):
+                    self.assertEqual(raw.count(change['after'].encode()), 1)
+                    raw = raw.replace(change['after'].encode(), change['before'].encode())
+                self.assertEqual(hashlib.sha256(raw).hexdigest(), spec['before_sha256'])
+            if rel == 'site/app.js':
+                self.assertEqual(hashlib.sha256(raw).hexdigest(), '9853c17a8497e13bdfecb9a179fcef8ee9b47fd18f96e2858c2b8b5a95c30f09')
+                self.assertEqual(raw.count('教师档案 · ${rows.length} 份'.encode()), 1)
+                raw = raw.replace('教师档案 · ${rows.length} 份'.encode(), '教师名录 · ${rows.length} 位'.encode())
             if rel in REVIEWED_LITERAL_INVERSE:
                 spec = REVIEWED_LITERAL_INVERSE[rel]
                 self.assertEqual(hashlib.sha256(raw).hexdigest(), spec['proposed_sha256'], rel)
@@ -179,5 +190,8 @@ REVIEWED_LITERAL_INVERSE = {'site/app.js': {'changes': [{'before': '未记录确
 
 ORIGINAL_PINS = {'schema/atlas.schema.json': '8f637202624cbda06bccd31111edc9ed5a5a4528', 'scripts/atlas_storage.py': '2a0e20b685a89d8cf4a731019a29bce59b5ff033', 'scripts/build.py': '0800ded234fa78ea4b1b18183eb70ac1d6076d52', 'scripts/build_rosters.py': '04b404215c38f80acf176dcfefca553254429c72', 'scripts/public_metadata.py': 'aed5ceef9f24cb12d828a64a7ee9530d5190172d', 'site/app.js': '5c36d65328a28e7583212b13be0bab00936a3ba3', 'site/atlas-loader.js': '387852ff0c764fb493f1bde097a95ad2645c9e18', 'site/model.js': '04bf8724f3aa091934e24c1a10f5d9d1980f29e1', 'site/rosters.js': '42f74f8955bec1ea5f0ee38aeba6a248f8690e99', 'site/universities.js': 'e54181e4f985466410e7c77db171b3e96fe80bbb', 'tests/published_fixture.py': 'cfeba24688943fc402cee40c397e44af9a0ba7bc'}
 
+RESEARCH_DISPLAY_LITERAL_INVERSE = {'site/app.js': {'before_sha256': '9853c17a8497e13bdfecb9a179fcef8ee9b47fd18f96e2858c2b8b5a95c30f09', 'after_sha256': 'b20c79fcb549ae2ee957fcd03ed2a51d0ac2be1d4411a4bc72a2fab962420f5b', 'changes': [{'before': 'matches,sourceRetrievalDateSummary', 'after': 'matches,researchInterestsText,sourceRetrievalDateSummary'}, {'before': "esc(p.research_interests||'研究方向待补录')", 'after': "esc(researchInterestsText(p.research_interests)||'研究方向待补录')"}, {'before': "esc(p.research_interests||'待补录')", 'after': "esc(researchInterestsText(p.research_interests)||'待补录')"}]}, 'site/model.js': {'before_sha256': '6b49ce4b71025ee16e1b22c8f7b28ef44e85274eaa06b6cf24ea79d3461d4fce', 'after_sha256': '51aef5f277ef892c6e0a83bec8d2342326b95d01f917041c60c880582edf1677', 'changes': [{'before': 'export function matches(', 'after': "// Display/search text only: provenance stays on the original source records.\nexport function researchInterestsText(value){\n if(typeof value==='string')return value;\n if(!Array.isArray(value))return '';\n return value.map(item=>typeof item==='string'?item:(item&&typeof item==='object'&&!Array.isArray(item)&&Object.hasOwn(item,'text')&&typeof item.text==='string'?item.text:'')).filter(text=>text.trim()).join('、');\n}\nexport function matches("}, {'before': '[p.name,p.department,p.research_interests,', 'after': '[p.name,p.department,researchInterestsText(p.research_interests),'}]}}
+
 if __name__ == '__main__':
     unittest.main()
+

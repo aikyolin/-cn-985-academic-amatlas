@@ -30,7 +30,13 @@ export function professionalGuidanceEvent(p,c){
 }
 export function matchEducation(p,type,key,value){if(!value)return true;const rows=stages(p,type);if(value==='not_recorded')return rows.length===0;return rows.some(e=>(e[key]||'unknown')===value)}
 export function orgContains(units,ancestor,leaf){const seen=new Set();let id=leaf;while(id&&!seen.has(id)){if(id===ancestor)return true;seen.add(id);const current=units.find(u=>u.id===id),parent=units.find(u=>u.id===current?.parent_id);if(current?.school_id&&parent?.school_id&&current.school_id!==parent.school_id)return false;id=current?.parent_id}return false}
-export function matches(p,f,orgUnits=[]){if(f.school&&p.school_id!==f.school)return false;if(f.campus&&!(p.campus_ids||[]).includes(f.campus))return false;if(f.org){const org=orgUnits.find(o=>o.id===f.org);if(!org||(org.school_id&&org.school_id!==p.school_id)||!orgContains(orgUnits,f.org,p.department_id))return false;}if(f.q){const hay=[p.name,p.department,p.research_interests,...(p.education||[]).map(e=>e.institution)].join(' ').toLowerCase();if(!hay.includes(f.q.toLowerCase().trim()))return false}return matchEducation(p,'bachelor','institution_985',f.ug)&&matchStageFilters(p,'master',f.master,f.master_continent)&&matchStageFilters(p,'doctor',f.doctor,f.continent)}
+// Display/search text only: provenance stays on the original source records.
+export function researchInterestsText(value){
+ if(typeof value==='string')return value;
+ if(!Array.isArray(value))return '';
+ return value.map(item=>typeof item==='string'?item:(item&&typeof item==='object'&&!Array.isArray(item)&&Object.hasOwn(item,'text')&&typeof item.text==='string'?item.text:'')).filter(text=>text.trim()).join('、');
+}
+export function matches(p,f,orgUnits=[]){if(f.school&&p.school_id!==f.school)return false;if(f.campus&&!(p.campus_ids||[]).includes(f.campus))return false;if(f.org){const org=orgUnits.find(o=>o.id===f.org);if(!org||(org.school_id&&org.school_id!==p.school_id)||!orgContains(orgUnits,f.org,p.department_id))return false;}if(f.q){const hay=[p.name,p.department,researchInterestsText(p.research_interests),...(p.education||[]).map(e=>e.institution)].join(' ').toLowerCase();if(!hay.includes(f.q.toLowerCase().trim()))return false}return matchEducation(p,'bachelor','institution_985',f.ug)&&matchStageFilters(p,'master',f.master,f.master_continent)&&matchStageFilters(p,'doctor',f.doctor,f.continent)}
 export function safeUrl(v){try{const u=new URL(v);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
 export function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 

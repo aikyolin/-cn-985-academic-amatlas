@@ -1,0 +1,23 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {readJSONFile} from './atlas-test-io.js';
+import {assertExactMetadataProjection} from './public-metadata-projection.js';
+const raw=readFileSync(new URL('./fixtures/hit-energy22-source-mapping.json',import.meta.url));
+assert.equal(createHash('sha256').update(raw).digest('hex'),'e0f0332c428b1eb7038cf3f0a1de2029676bb343e0031dca1f9ac161923657bc');
+const expected=JSON.parse(raw).profile_batches;
+const db=readJSONFile(new URL('../site/atlas.json',import.meta.url));
+const current=db.profile_batches.slice(225,226);
+const rules=JSON.parse(readFileSync(new URL('./fixtures/public-metadata-projection-hashes.json',import.meta.url))).leaves;
+const rule=rules.find(r=>r.path[0]==='profile_batches'&&r.path[1]===225);assert(rule);
+function set(v,path,value){let x=v;for(const k of path.slice(0,-1))x=x[k];x[path.at(-1)]=value;}
+const local=[0,...rule.path.slice(2)];
+test('only exact path and both original/current hashes allow metadata compatibility',()=>assertExactMetadataProjection(current,expected,['profile_batches'],225));
+test('changed projected text is rejected',()=>{const x=structuredClone(current);set(x,local,'unexpected text');assert.throws(()=>assertExactMetadataProjection(x,expected,['profile_batches'],225));});
+test('altered historical expected text is rejected',()=>{const x=structuredClone(expected);set(x,local,'unexpected historical text');assert.throws(()=>assertExactMetadataProjection(current,x,['profile_batches'],225));});
+test('same text difference at another path is rejected',()=>assert.throws(()=>assertExactMetadataProjection(current,expected,['profile_batches'],224)));
+test('extra metadata key is rejected',()=>{const x=structuredClone(current);x[0].extra='unexpected';assert.throws(()=>assertExactMetadataProjection(x,expected,['profile_batches'],225));});
+test('missing metadata key is rejected',()=>{const x=structuredClone(current);delete x[0].batch_id;assert.throws(()=>assertExactMetadataProjection(x,expected,['profile_batches'],225));});
+test('academic identity change is rejected',()=>{const x=structuredClone(current);x[0].school_id='other';assert.throws(()=>assertExactMetadataProjection(x,expected,['profile_batches'],225));});
+test('identical values pass without rewriting inputs',()=>{const a=structuredClone(expected),b=structuredClone(expected);assertExactMetadataProjection(a,b,['profile_batches'],225);assert.deepEqual(a,expected);assert.deepEqual(b,expected);});

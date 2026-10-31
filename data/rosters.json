@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "accessed_on": "2026-10-23",
-  "scope": "39校公开名录样本，1778条整合记录、1816条原始观察。本批两校各新增3条经审原序观察；个人主页核验与当前在岗分开。WHU/UESTC整范围hold不进入本批组织、人物或名录计数。",
+  "scope": "39校公开名录样本，1778条整合记录、1816条原始观察。本批两校各新增3条经审原序观察；个人主页核验与当前在岗分开。WHU/UESTC未纳入本批新增组织、人物或名录计数，不表示排除既有资料。 来源附注为公开措辞投影；原始来源观察中的学术事实、身份状态和来源不确定性保持不变，附注不表示原文件逐字复制。",
   "summary": [
     {
       "organization_id": "hit-seie",
@@ -3264,7 +3264,7 @@
       "all_visible_entries_captured": false,
       "coverage_complete": false,
       "selection": "信息与电气工程学院计算机工程系名录，既有网页正文去重观察为24人，保持原序首3郭若皓、张盼、李珊。各职称筛选区重复列同一批姓名，不能据区块强贴教授。仅首批3人，不称全系、全院或全校完成。",
-      "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。",
+      "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。",
       "source_evidence_status": "previous_web_body_observation_followed_by_urllib_http_403_not_retried",
       "pagination": "not_established_for_this_selected_subset",
       "accessed_on": "2026-10-23",
@@ -3857,8 +3857,8 @@
       "full_source_visible_name_count": null,
       "all_visible_entries_captured": false,
       "coverage_complete": false,
-      "selection": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。",
-      "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。",
+      "selection": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。",
+      "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。",
       "source_evidence_status": "official_roster_read",
       "pagination": "not_established_for_this_selected_subset",
       "accessed_on": "2026-10-23",
@@ -5536,7 +5536,7 @@
       "all_visible_entries_captured": false,
       "coverage_complete": false,
       "selection": "物理学院 / 教授（含正高职称，按姓名拼音）",
-      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution.",
       "source_evidence_status": "official_roster_body_read",
       "pagination": "not_established_for_this_selected_subset",
       "accessed_on": "2026-10-24",
@@ -5557,7 +5557,7 @@
       "all_visible_entries_captured": false,
       "coverage_complete": false,
       "selection": "建筑学院 / 专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
-      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no candidate substitution",
       "source_evidence_status": "official_roster_body_read",
       "pagination": "not_established_for_this_selected_subset",
       "accessed_on": "2026-10-24",
@@ -5578,7 +5578,7 @@
       "all_visible_entries_captured": false,
       "coverage_complete": false,
       "selection": "公共管理学院 / 公共管理学院教师列表 / 首页",
-      "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement.",
+      "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no candidate replacement.",
       "source_evidence_status": "official_roster_body_read",
       "pagination": "not_established_for_this_selected_subset",
       "accessed_on": "2026-10-24",
@@ -5599,7 +5599,7 @@
       "all_visible_entries_captured": false,
       "coverage_complete": false,
       "selection": "2027年博士研究生招生简章 / 计算机学院目录 / 计算机科学与技术（081200） / 指导教师",
-      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。",
+      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，仅收录该顺序选定对象。",
       "source_evidence_status": "official_roster_body_read",
       "pagination": "only_reviewed_original_selected_scope",
       "accessed_on": "2026-10-24",
@@ -5620,7 +5620,7 @@
       "all_visible_entries_captured": false,
       "coverage_complete": false,
       "selection": "物理科学与工程学院 / 教职员工 / 教授（研究员） / 首页",
-      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no candidate substitution.",
       "source_evidence_status": "official_roster_body_read",
       "pagination": "only_reviewed_original_selected_scope",
       "accessed_on": "2026-10-24",
@@ -47445,7 +47445,7 @@
       "source_evidence_status": "previous_web_body_observation_followed_by_urllib_http_403_not_retried",
       "source_evidence_status_label": "先前官方网页正文观察，后续访问403已停止；不把重复筛选区块当个人职称。",
       "selection_status": "selected_subset",
-      "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。",
+      "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。",
       "source_identity_evidence": {
         "status": "official_name_profile_and_roster_match",
         "source_ids": [
@@ -47457,7 +47457,7 @@
       },
       "notes": [
         "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-        "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。"
+        "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。"
       ],
       "profile_candidate_url": "https://faculty.cau.edu.cn/grh/",
       "professional_evidence_url": "https://faculty.cau.edu.cn/grh/",
@@ -47492,7 +47492,7 @@
       "source_evidence_status": "previous_web_body_observation_followed_by_urllib_http_403_not_retried",
       "source_evidence_status_label": "先前官方网页正文观察，后续访问403已停止；不把重复筛选区块当个人职称。",
       "selection_status": "selected_subset",
-      "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。",
+      "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。",
       "source_identity_evidence": {
         "status": "official_roster_name_and_same_college_news_match",
         "source_ids": [
@@ -47504,7 +47504,7 @@
       },
       "notes": [
         "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-        "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。"
+        "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。"
       ],
       "profile_candidate_url": null,
       "professional_evidence_url": "https://ciee.cau.edu.cn/art/2024/12/11/art_50389_1048492.html",
@@ -47548,7 +47548,7 @@
       "source_evidence_status": "previous_web_body_observation_followed_by_urllib_http_403_not_retried",
       "source_evidence_status_label": "先前官方网页正文观察，后续访问403已停止；不把重复筛选区块当个人职称。",
       "selection_status": "selected_subset",
-      "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。",
+      "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。",
       "source_identity_evidence": {
         "status": "official_roster_name_and_same_department_news_and_profile_subpage_match",
         "source_ids": [
@@ -47562,7 +47562,7 @@
       },
       "notes": [
         "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-        "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。"
+        "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。"
       ],
       "profile_candidate_url": "https://faculty.cau.edu.cn/ls2/",
       "professional_evidence_url": "https://ciee.cau.edu.cn/art/2024/12/11/art_50389_1048492.html",
@@ -48720,7 +48720,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "academic_department_id": null,
       "academic_department": null,
       "academic_department_assignment_status": "unknown",
@@ -48769,7 +48769,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "alternative_professional_sources": [
         {
           "source_id": "beilun-wang-source-4",
@@ -48818,7 +48818,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "academic_department_id": null,
       "academic_department": null,
       "academic_department_assignment_status": "unknown",
@@ -49356,7 +49356,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "source_observation_ids": [
         "hust-selected-roster-first-001:roster-hust-storage-wubing:1"
       ]
@@ -49398,7 +49398,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "source_observation_ids": [
         "hust-selected-roster-first-001:roster-hust-storage-wangchengning:1"
       ]
@@ -49442,7 +49442,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "alternative_professional_sources": [
         {
           "source_id": "zhangmeng-source-3",
@@ -49873,7 +49873,7 @@
       "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "source_observation_ids": [
         "sysu-selected-roster-first-001:roster-sysu-cse-caisuihua:1"
       ]
@@ -49919,7 +49919,7 @@
       "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "source_observation_ids": [
         "sysu-selected-roster-first-001:roster-sysu-cse-chenchuan:1"
       ]
@@ -49965,7 +49965,7 @@
       "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "source_observation_ids": [
         "sysu-selected-roster-first-001:roster-sysu-cse-chengang:1"
       ]
@@ -50598,7 +50598,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "alternative_professional_sources": [
         {
           "source_id": "chenqun-source-3",
@@ -50648,7 +50648,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "alternative_professional_sources": [
         {
           "source_id": "huangyuan-source-2",
@@ -50698,7 +50698,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "alternative_professional_sources": [
         {
           "source_id": "lizhanhuai-source-2",
@@ -50854,14 +50854,14 @@
       "source_evidence_status": "official_roster_read",
       "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
       "selection_status": "selected_subset",
-      "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。",
+      "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。",
       "source_identity_evidence": {
         "status": "official_roster_explicit_profile_link",
         "source_url": "https://laws.lzu.edu.cn/shiziduiwu/index.html"
       },
       "notes": [
         "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-        "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。"
+        "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。"
       ],
       "source_observation_ids": [
         "lzu-selected-roster-first-001:roster-lzu-law-wangzhenjiang:1"
@@ -50893,14 +50893,14 @@
       "source_evidence_status": "official_roster_read",
       "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
       "selection_status": "selected_subset",
-      "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。",
+      "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。",
       "source_identity_evidence": {
         "status": "official_roster_explicit_profile_link",
         "source_url": "https://laws.lzu.edu.cn/shiziduiwu/index.html"
       },
       "notes": [
         "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-        "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。"
+        "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。"
       ],
       "source_observation_ids": [
         "lzu-selected-roster-first-001:roster-lzu-law-liuguanghua:1"
@@ -50932,14 +50932,14 @@
       "source_evidence_status": "official_roster_read",
       "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
       "selection_status": "selected_subset",
-      "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。",
+      "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。",
       "source_identity_evidence": {
         "status": "official_roster_explicit_profile_link",
         "source_url": "https://laws.lzu.edu.cn/shiziduiwu/index.html"
       },
       "notes": [
         "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-        "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。"
+        "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。"
       ],
       "source_observation_ids": [
         "lzu-selected-roster-first-001:roster-lzu-law-bairongjing:1"
@@ -51090,7 +51090,7 @@
       "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+      "official_profile_availability_label": "个人主页当前不可用或正文未核。",
       "alternative_professional_sources": [
         {
           "source_id": "bianchidavide-source-3",
@@ -51524,7 +51524,7 @@
       "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
       "alternative_professional_sources": [
         {
           "source_id": "chailihui-news",
@@ -51587,7 +51587,7 @@
       "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
       "alternative_professional_sources": [
         {
           "source_id": "chenpeng-news",
@@ -51650,7 +51650,7 @@
       "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
       "alternative_professional_sources": [
         {
           "source_id": "chenbinglong-news",
@@ -51706,7 +51706,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
       "alternative_professional_sources": [
         {
           "source_id": "chenjiazhong-source-3",
@@ -51963,7 +51963,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
       "alternative_professional_sources": [
         {
           "source_id": "liuzhaowen-source-4",
@@ -52017,7 +52017,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
       "alternative_professional_sources": [
         {
           "source_id": "pengjiajie-source-3",
@@ -52066,7 +52066,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
       "alternative_professional_sources": [
         {
           "source_id": "shangxuequn-source-3",
@@ -52237,7 +52237,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
       "employment_status": "retired",
       "employment_status_note": "本人官网明确在职信息为离退休，具体退休日期及退休后是否返聘未披露。",
       "role_category": "faculty_retired",
@@ -52282,7 +52282,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
       "employment_status": "employed",
       "employment_status_note": "本人官方个人信息明确在职；仅当前页面陈述，未独立人事核验。",
       "role_category": "faculty",
@@ -52327,7 +52327,7 @@
       ],
       "official_profile_navigation_eligible": false,
       "official_profile_availability": "unavailable",
-      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+      "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
       "employment_status": "retired",
       "employment_status_note": "本人官网明确在职信息为离退休，具体退休日期及退休后是否返聘未披露。",
       "role_category": "faculty_retired",
@@ -60697,7 +60697,7 @@
       "source_evidence_status": "official_roster_body_read",
       "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
       "selection_status": "selected_subset",
-      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution.",
       "source_identity_evidence": {
         "status": "official_roster_native_link",
         "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
@@ -60723,7 +60723,7 @@
       },
       "notes": [
         "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-        "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution."
+        "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution."
       ],
       "source_observation_ids": [
         "csu-selected-roster-rotation-003:roster-csu-physics-fujunwei:1"
@@ -60755,7 +60755,7 @@
       "source_evidence_status": "official_roster_body_read",
       "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
       "selection_status": "selected_subset",
-      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution.",
       "source_identity_evidence": {
         "status": "official_roster_native_link",
         "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
@@ -60781,7 +60781,7 @@
       },
       "notes": [
         "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-        "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution."
+        "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution."
       ],
       "source_observation_ids": [
         "csu-selected-roster-rotation-003:roster-csu-physics-guoaimin:1"
@@ -60813,7 +60813,7 @@
       "source_evidence_status": "official_roster_body_read",
       "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
       "selection_status": "selected_subset",
-      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution.",
       "source_identity_evidence": {
         "status": "official_roster_native_link",
         "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
@@ -60839,7 +60839,7 @@
       },
       "notes": [
         "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-        "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution."
+        "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution."
       ],
       "source_observation_ids": [
         "csu-selected-roster-rotation-003:roster-csu-physics-guoguanghua:1"
@@ -60871,7 +60871,7 @@
       "source_evidence_status": "official_roster_body_read",
       "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
       "selection_status": "selected_subset",
-      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no candidate substitution",
       "source_identity_evidence": {
         "status": "official_roster_native_link",
         "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
@@ -60897,7 +60897,7 @@
       },
       "notes": [
         "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-        "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates"
+        "official roster original first three nonduplicates; no biography richness selection; no candidate substitution"
       ],
       "source_observation_ids": [
         "scut-selected-roster-rotation-003:roster-scut-bianyu:1"
@@ -60929,7 +60929,7 @@
       "source_evidence_status": "official_roster_body_read",
       "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
       "selection_status": "selected_subset",
-      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no candidate substitution",
       "source_identity_evidence": {
         "status": "official_roster_native_link",
         "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
@@ -60955,7 +60955,7 @@
       },
       "notes": [
         "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-        "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates"
+        "official roster original first three nonduplicates; no biography richness selection; no candidate substitution"
       ],
       "source_observation_ids": [
         "scut-selected-roster-rotation-003:roster-scut-chenjianhua:1"
@@ -60987,7 +60987,7 @@
       "source_evidence_status": "official_roster_body_read",
       "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
       "selection_status": "selected_subset",
-      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no candidate substitution",
       "source_identity_evidence": {
         "status": "official_roster_native_link",
         "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
@@ -61013,7 +61013,7 @@
       },
       "notes": [
         "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-        "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates"
+        "official roster original first three nonduplicates; no biography richness selection; no candidate substitution"
       ],
       "source_observation_ids": [
         "scut-selected-roster-rotation-003:roster-scut-chenchangyong:1"
@@ -61045,7 +61045,7 @@
       "source_evidence_status": "official_roster_body_read",
       "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
       "selection_status": "selected_subset",
-      "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement.",
+      "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no candidate replacement.",
       "source_identity_evidence": {
         "status": "official_roster_native_link_and_independent_same_school_biography",
         "source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
@@ -61078,7 +61078,7 @@
       },
       "notes": [
         "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-        "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement."
+        "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no candidate replacement."
       ],
       "source_observation_ids": [
         "uestc-selected-roster-rotation-003:roster-uestc-fanxin:1"
@@ -61107,7 +61107,7 @@
       "batch_id": "nudt-selected-roster-rotation003-wave7",
       "source_batch_id": "faculty-batch-nudt-rotation-002-wave7",
       "selection_status": "selected_subset",
-      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。",
+      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，仅收录该顺序选定对象。",
       "source_identity_evidence": {
         "status": "same_name_same_institution_academic_role_context",
         "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
@@ -61126,7 +61126,7 @@
       "verification_status": "reviewed_professional_identity_without_personal_profile_link",
       "notes": [
         "本批原序样本，不代表全院全校或实时人事名册。",
-        "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。"
+        "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，仅收录该顺序选定对象。"
       ],
       "verified_person_id": null,
       "official_profile_navigation_eligible": false,
@@ -61180,7 +61180,7 @@
       "batch_id": "nudt-selected-roster-rotation003-wave7",
       "source_batch_id": "faculty-batch-nudt-rotation-002-wave7",
       "selection_status": "selected_subset",
-      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。",
+      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，仅收录该顺序选定对象。",
       "source_identity_evidence": {
         "status": "same_name_same_institution_academic_role_context",
         "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
@@ -61199,7 +61199,7 @@
       "verification_status": "reviewed_professional_identity_without_personal_profile_link",
       "notes": [
         "本批原序样本，不代表全院全校或实时人事名册。",
-        "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。"
+        "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，仅收录该顺序选定对象。"
       ],
       "verified_person_id": null,
       "official_profile_navigation_eligible": false,
@@ -61253,7 +61253,7 @@
       "batch_id": "nudt-selected-roster-rotation003-wave7",
       "source_batch_id": "faculty-batch-nudt-rotation-002-wave7",
       "selection_status": "selected_subset",
-      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。",
+      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，仅收录该顺序选定对象。",
       "source_identity_evidence": {
         "status": "same_name_same_institution_academic_role_context",
         "source_url": "https://yjszs.nudt.edu.cn/attached/file/20261013/20261013222853_652.pdf",
@@ -61272,7 +61272,7 @@
       "verification_status": "reviewed_professional_identity_without_personal_profile_link",
       "notes": [
         "本批原序样本，不代表全院全校或实时人事名册。",
-        "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。"
+        "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，仅收录该顺序选定对象。"
       ],
       "verified_person_id": null,
       "official_profile_navigation_eligible": false,
@@ -61327,7 +61327,7 @@
       "batch_id": "tongji-selected-roster-rotation003-wave7",
       "source_batch_id": "faculty-batch-tongji-rotation003-wave7",
       "selection_status": "selected_subset",
-      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no candidate substitution.",
       "source_identity_evidence": {
         "status": "official_roster_native_link",
         "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
@@ -61345,7 +61345,7 @@
       "verification_status": "reviewed_official_roster_native_profile_link",
       "notes": [
         "本批原序样本，不代表全院全校或实时人事名册。",
-        "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution."
+        "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no candidate substitution."
       ],
       "verified_person_id": "tongji-baozhihao",
       "profile_identity_evidence": {
@@ -61388,7 +61388,7 @@
       "batch_id": "tongji-selected-roster-rotation003-wave7",
       "source_batch_id": "faculty-batch-tongji-rotation003-wave7",
       "selection_status": "selected_subset",
-      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no candidate substitution.",
       "source_identity_evidence": {
         "status": "official_roster_native_link",
         "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
@@ -61406,7 +61406,7 @@
       "verification_status": "reviewed_official_roster_native_profile_link",
       "notes": [
         "本批原序样本，不代表全院全校或实时人事名册。",
-        "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution."
+        "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no candidate substitution."
       ],
       "verified_person_id": "tongji-caitianji",
       "profile_identity_evidence": {
@@ -61449,7 +61449,7 @@
       "batch_id": "tongji-selected-roster-rotation003-wave7",
       "source_batch_id": "faculty-batch-tongji-rotation003-wave7",
       "selection_status": "selected_subset",
-      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no candidate substitution.",
       "source_identity_evidence": {
         "status": "official_roster_native_link",
         "source_url": "https://physics.tongji.edu.cn/szdw/jzyg/js_yjy_.htm",
@@ -61467,7 +61467,7 @@
       "verification_status": "reviewed_official_roster_native_profile_link",
       "notes": [
         "本批原序样本，不代表全院全校或实时人事名册。",
-        "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution."
+        "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no candidate substitution."
       ],
       "verified_person_id": "tongji-chenjie-physics",
       "profile_identity_evidence": {
@@ -67101,7 +67101,7 @@
         "cau-selected-roster-first-001:roster-cau-ciee-computer-lishan:1"
       ],
       "selection": "信息与电气工程学院计算机工程系名录，既有网页正文去重观察为24人，保持原序首3郭若皓、张盼、李珊。各职称筛选区重复列同一批姓名，不能据区块强贴教授。仅首批3人，不称全系、全院或全校完成。",
-      "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。",
+      "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。",
       "coverage_complete": false,
       "count_scope": "selected_subset_only",
       "source_files": [
@@ -67937,8 +67937,8 @@
         "lzu-selected-roster-first-001:roster-lzu-law-liuguanghua:1",
         "lzu-selected-roster-first-001:roster-lzu-law-bairongjing:1"
       ],
-      "selection": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。",
-      "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。",
+      "selection": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。",
+      "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。",
       "coverage_complete": false,
       "count_scope": "selected_subset_only",
       "source_files": [
@@ -70144,7 +70144,7 @@
         "csu-selected-roster-rotation-003:roster-csu-physics-guoguanghua:1"
       ],
       "selection": "物理学院 / 教授（含正高职称，按姓名拼音）",
-      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+      "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution.",
       "coverage_complete": false,
       "count_scope": "selected_subset_only",
       "source_files": [
@@ -70175,7 +70175,7 @@
         "scut-selected-roster-rotation-003:roster-scut-chenchangyong:1"
       ],
       "selection": "建筑学院 / 专任教师 / 建筑系 / 教授/研究员/教授级高级工程师",
-      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+      "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no candidate substitution",
       "coverage_complete": false,
       "count_scope": "selected_subset_only",
       "source_files": [
@@ -70202,7 +70202,7 @@
         "uestc-selected-roster-rotation-003:roster-uestc-fanxin:1"
       ],
       "selection": "公共管理学院 / 公共管理学院教师列表 / 首页",
-      "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement.",
+      "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no candidate replacement.",
       "coverage_complete": false,
       "count_scope": "selected_subset_only",
       "source_files": [
@@ -70233,7 +70233,7 @@
         "nudt-selected-roster-rotation003-wave7:roster-nudt-wanghuaimin-2027-computer:1"
       ],
       "selection": "2027年博士研究生招生简章 / 计算机学院目录 / 计算机科学与技术（081200） / 指导教师",
-      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，不替补hold。",
+      "selection_basis": "官方年度招生目录原序从上向下取前三个非重复姓名；不按履历丰富度选，仅收录该顺序选定对象。",
       "coverage_complete": false,
       "count_scope": "selected_subset_only",
       "source_files": [],
@@ -70263,7 +70263,7 @@
         "tongji-selected-roster-rotation003-wave7:roster-tongji-physics-chenjie-physics:1"
       ],
       "selection": "物理科学与工程学院 / 教职员工 / 教授（研究员） / 首页",
-      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no held substitution.",
+      "selection_basis": "Official roster category home-page body order; first three nonduplicate entries; no biography-richness selection; no candidate substitution.",
       "coverage_complete": false,
       "count_scope": "selected_subset_only",
       "source_files": [],
@@ -111922,7 +111922,7 @@
         "source_evidence_status": "previous_web_body_observation_followed_by_urllib_http_403_not_retried",
         "source_evidence_status_label": "先前官方网页正文观察，后续访问403已停止；不把重复筛选区块当个人职称。",
         "selection_status": "selected_subset",
-        "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。",
+        "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。",
         "source_identity_evidence": {
           "status": "official_name_profile_and_roster_match",
           "source_ids": [
@@ -111934,7 +111934,7 @@
         },
         "notes": [
           "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-          "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。"
+          "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。"
         ],
         "profile_candidate_url": "https://faculty.cau.edu.cn/grh/",
         "professional_evidence_url": "https://faculty.cau.edu.cn/grh/",
@@ -111975,7 +111975,7 @@
         "source_evidence_status": "previous_web_body_observation_followed_by_urllib_http_403_not_retried",
         "source_evidence_status_label": "先前官方网页正文观察，后续访问403已停止；不把重复筛选区块当个人职称。",
         "selection_status": "selected_subset",
-        "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。",
+        "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。",
         "source_identity_evidence": {
           "status": "official_roster_name_and_same_college_news_match",
           "source_ids": [
@@ -111987,7 +111987,7 @@
         },
         "notes": [
           "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-          "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。"
+          "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。"
         ],
         "profile_candidate_url": null,
         "professional_evidence_url": "https://ciee.cau.edu.cn/art/2024/12/11/art_50389_1048492.html",
@@ -112037,7 +112037,7 @@
         "source_evidence_status": "previous_web_body_observation_followed_by_urllib_http_403_not_retried",
         "source_evidence_status_label": "先前官方网页正文观察，后续访问403已停止；不把重复筛选区块当个人职称。",
         "selection_status": "selected_subset",
-        "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。",
+        "selection_basis": "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。",
         "source_identity_evidence": {
           "status": "official_roster_name_and_same_department_news_and_profile_subpage_match",
           "source_ids": [
@@ -112051,7 +112051,7 @@
         },
         "notes": [
           "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-          "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续403未重试。"
+          "已读官方网页24个独特姓名原序首3；重复职称区块不赋予个人教授身份，后续访问返回403。"
         ],
         "profile_candidate_url": "https://faculty.cau.edu.cn/ls2/",
         "professional_evidence_url": "https://ciee.cau.edu.cn/art/2024/12/11/art_50389_1048492.html",
@@ -113377,7 +113377,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。",
         "academic_department_id": null,
         "academic_department": null,
         "academic_department_assignment_status": "unknown",
@@ -113432,7 +113432,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。",
         "alternative_professional_sources": [
           {
             "source_id": "beilun-wang-source-4",
@@ -113487,7 +113487,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。",
         "academic_department_id": null,
         "academic_department": null,
         "academic_department_assignment_status": "unknown",
@@ -114103,7 +114103,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源"
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。"
       }
     },
     {
@@ -114151,7 +114151,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源"
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。"
       }
     },
     {
@@ -114201,7 +114201,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。",
         "alternative_professional_sources": [
           {
             "source_id": "zhangmeng-source-3",
@@ -114692,7 +114692,7 @@
         "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源"
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。"
       }
     },
     {
@@ -114744,7 +114744,7 @@
         "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源"
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。"
       }
     },
     {
@@ -114796,7 +114796,7 @@
         "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源"
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。"
       }
     },
     {
@@ -115525,7 +115525,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。",
         "alternative_professional_sources": [
           {
             "source_id": "chenqun-source-3",
@@ -115581,7 +115581,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。",
         "alternative_professional_sources": [
           {
             "source_id": "huangyuan-source-2",
@@ -115637,7 +115637,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。",
         "alternative_professional_sources": [
           {
             "source_id": "lizhanhuai-source-2",
@@ -115817,14 +115817,14 @@
         "source_evidence_status": "official_roster_read",
         "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
         "selection_status": "selected_subset",
-        "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。",
+        "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。",
         "source_identity_evidence": {
           "status": "official_roster_explicit_profile_link",
           "source_url": "https://laws.lzu.edu.cn/shiziduiwu/index.html"
         },
         "notes": [
           "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-          "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。"
+          "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。"
         ]
       }
     },
@@ -115862,14 +115862,14 @@
         "source_evidence_status": "official_roster_read",
         "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
         "selection_status": "selected_subset",
-        "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。",
+        "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。",
         "source_identity_evidence": {
           "status": "official_roster_explicit_profile_link",
           "source_url": "https://laws.lzu.edu.cn/shiziduiwu/index.html"
         },
         "notes": [
           "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-          "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。"
+          "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。"
         ]
       }
     },
@@ -115907,14 +115907,14 @@
         "source_evidence_status": "official_roster_read",
         "source_evidence_status_label": "官方名录内容已读，仅保存本批选中观察。",
         "selection_status": "selected_subset",
-        "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。",
+        "selection_basis": "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。",
         "source_identity_evidence": {
           "status": "official_roster_explicit_profile_link",
           "source_url": "https://laws.lzu.edu.cn/shiziduiwu/index.html"
         },
         "notes": [
           "仅本批选中观察，不代表全系/学院/全校人数，也不代表实时在职核验。",
-          "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412已停止，独立法学院公开目录可读，不访问被限内容。"
+          "法学院教授名录原序汪振江、刘光华、拜荣静，3份部分职业资料。信息学院和UAIS候选名录返回412，独立法学院公开目录可读；前两项不可访问内容未用于核验。"
         ]
       }
     },
@@ -116083,7 +116083,7 @@
         "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人主页当前不可用或正文未核；不重试受限来源",
+        "official_profile_availability_label": "个人主页当前不可用或正文未核。",
         "alternative_professional_sources": [
           {
             "source_id": "bianchidavide-source-3",
@@ -116577,7 +116577,7 @@
         "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
         "alternative_professional_sources": [
           {
             "source_id": "chailihui-news",
@@ -116646,7 +116646,7 @@
         "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
         "alternative_professional_sources": [
           {
             "source_id": "chenpeng-news",
@@ -116715,7 +116715,7 @@
         "profile_link_basis": "independent_candidate_evidence_not_a_verified_roster_link",
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
         "alternative_professional_sources": [
           {
             "source_id": "chenbinglong-news",
@@ -116777,7 +116777,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
         "alternative_professional_sources": [
           {
             "source_id": "chenjiazhong-source-3",
@@ -117070,7 +117070,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
         "alternative_professional_sources": [
           {
             "source_id": "liuzhaowen-source-4",
@@ -117130,7 +117130,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
         "alternative_professional_sources": [
           {
             "source_id": "pengjiajie-source-3",
@@ -117185,7 +117185,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
         "alternative_professional_sources": [
           {
             "source_id": "shangxuequn-source-3",
@@ -117380,7 +117380,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
         "employment_status": "retired",
         "employment_status_note": "本人官网明确在职信息为离退休，具体退休日期及退休后是否返聘未披露。",
         "role_category": "faculty_retired"
@@ -117431,7 +117431,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
         "employment_status": "employed",
         "employment_status_note": "本人官方个人信息明确在职；仅当前页面陈述，未独立人事核验。",
         "role_category": "faculty"
@@ -117482,7 +117482,7 @@
         ],
         "official_profile_navigation_eligible": false,
         "official_profile_availability": "unavailable",
-        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据，不重试受限来源",
+        "official_profile_availability_label": "个人页当前不可达或正文未核；保留既有分级职业证据。",
         "employment_status": "retired",
         "employment_status_note": "本人官网明确在职信息为离退休，具体退休日期及退休后是否返聘未披露。",
         "role_category": "faculty_retired"
@@ -126878,7 +126878,7 @@
         "source_evidence_status": "official_roster_body_read",
         "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
         "selection_status": "selected_subset",
-        "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+        "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution.",
         "source_identity_evidence": {
           "status": "official_roster_native_link",
           "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
@@ -126904,7 +126904,7 @@
         },
         "notes": [
           "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-          "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution."
+          "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution."
         ]
       }
     },
@@ -126942,7 +126942,7 @@
         "source_evidence_status": "official_roster_body_read",
         "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
         "selection_status": "selected_subset",
-        "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+        "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution.",
         "source_identity_evidence": {
           "status": "official_roster_native_link",
           "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
@@ -126968,7 +126968,7 @@
         },
         "notes": [
           "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-          "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution."
+          "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution."
         ]
       }
     },
@@ -127006,7 +127006,7 @@
         "source_evidence_status": "official_roster_body_read",
         "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
         "selection_status": "selected_subset",
-        "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution.",
+        "selection_basis": "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution.",
         "source_identity_evidence": {
           "status": "official_roster_native_link",
           "source_url": "https://wl.csu.edu.cn/xygk/szdw1.htm",
@@ -127032,7 +127032,7 @@
         },
         "notes": [
           "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-          "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no held substitution."
+          "One new school category; first three nonduplicate candidates in official original order, not selected by biography richness; no candidate substitution."
         ]
       }
     },
@@ -127070,7 +127070,7 @@
         "source_evidence_status": "official_roster_body_read",
         "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
         "selection_status": "selected_subset",
-        "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+        "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no candidate substitution",
         "source_identity_evidence": {
           "status": "official_roster_native_link",
           "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
@@ -127096,7 +127096,7 @@
         },
         "notes": [
           "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-          "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates"
+          "official roster original first three nonduplicates; no biography richness selection; no candidate substitution"
         ]
       }
     },
@@ -127134,7 +127134,7 @@
         "source_evidence_status": "official_roster_body_read",
         "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
         "selection_status": "selected_subset",
-        "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+        "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no candidate substitution",
         "source_identity_evidence": {
           "status": "official_roster_native_link",
           "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
@@ -127160,7 +127160,7 @@
         },
         "notes": [
           "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-          "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates"
+          "official roster original first three nonduplicates; no biography richness selection; no candidate substitution"
         ]
       }
     },
@@ -127198,7 +127198,7 @@
         "source_evidence_status": "official_roster_body_read",
         "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
         "selection_status": "selected_subset",
-        "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates",
+        "selection_basis": "official roster original first three nonduplicates; no biography richness selection; no candidate substitution",
         "source_identity_evidence": {
           "status": "official_roster_native_link",
           "source_url": "https://www2.scut.edu.cn/architecture/zrjs/list.htm",
@@ -127224,7 +127224,7 @@
         },
         "notes": [
           "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-          "official roster original first three nonduplicates; no biography richness selection; no substitution for held candidates"
+          "official roster original first three nonduplicates; no biography richness selection; no candidate substitution"
         ]
       }
     },
@@ -127262,7 +127262,7 @@
         "source_evidence_status": "official_roster_body_read",
         "source_evidence_status_label": "官方名录正文已读，仅本批原序选中范围。",
         "selection_status": "selected_subset",
-        "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement.",
+        "selection_basis": "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no candidate replacement.",
         "source_identity_evidence": {
           "status": "official_roster_native_link_and_independent_same_school_biography",
           "source_url": "https://faculty.uestc.edu.cn/xylb.jsp?id=2023&lang=zh_CN&st=0&urltype=tsites.CollegeTeacherList&wbtreeid=1033",
@@ -127295,7 +127295,7 @@
         },
         "notes": [
           "仅本批原序选中观察，不表示全院全校或当前在岗人数。",
-          "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no held replacement."
+          "One new official organization per institution; preserve first three nonduplicate entries in native body order; no biography-richness selection, no candidate replacement."
         ]
       }
     },

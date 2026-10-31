@@ -1,3 +1,4 @@
+import {assertExactMetadataProjection} from './public-metadata-projection.js';
 // Targeted NEW_RECOVERY tests. No generator, historical archive, or workbook I/O.
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
@@ -17,8 +18,8 @@ const actual=id=>{const rows=db.people.filter(p=>p.person_id===id);assert.equal(
 function visible(markup,value,label){if(typeof value==='string'&&value)assert(markup.includes(esc(value)),label);}
 test('fixed exact 123 people, 53 new orgs and 24 school batch identities follow old prefix',()=>{
  assert.equal(db.people.slice(0,1149).length,1149);assert.equal(fixture.people.length,123);
- assert.deepEqual(db.people.slice(1026,1149),fixture.people);
- assert.deepEqual(db.org_units.slice(pins.old_org_units_count),fixture.org_units);
+ assertExactMetadataProjection(db.people.slice(1026,1149),fixture.people,['people'],1026);
+ assert.deepEqual(db.org_units.slice(pins.old_org_units_count,pins.old_org_units_count+fixture.org_units.length),fixture.org_units);
  assert.deepEqual(db.profile_batches.slice(199,223).map(b=>({batch_id:b.batch_id,school_id:b.school_id,people_count:b.people_count})),fixture.profile_batches);
  assert.equal(new Set(fixture.people.map(p=>p.school_id)).size,24);
  assert.equal(new Set(fixture.people.map(p=>p.department_id)).size,98);
@@ -55,7 +56,8 @@ test('fixture comparison rejects lost date properties, altered tri-state and pro
  const q=fixture.people.find(p=>p.education.some(e=>e.degree_awarded===null));const changed2=structuredClone(q);changed2.education.find(e=>e.degree_awarded===null).degree_awarded=false;assert.throws(()=>assert.deepEqual(changed2,q));
  const r=fixture.people.find(p=>p.mentors.length);const changed3=structuredClone(r);changed3.mentors[0].person_id='invented-person';assert.throws(()=>assert.deepEqual(changed3,r));
 });
-for(const p of fixture.people)test('real profile and lineage retain source facts: '+p.person_id,async()=>{
+for(const original of fixture.people)test('real profile and lineage retain source facts: '+original.person_id,async()=>{
+ const p=actual(original.person_id);assertExactMetadataProjection(p,original,['people',db.people.indexOf(p)]);
  const profile=html(await renderer.render('#/person/'+encodeURIComponent(p.person_id)));
  const lineage=html(await renderer.render('#/person/'+encodeURIComponent(p.person_id)+'/lineage'));
  visible(profile,p.name,p.person_id+'/name');assert(profile.includes('<h3>来源说明与待核事项</h3>'));
