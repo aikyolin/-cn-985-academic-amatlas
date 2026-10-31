@@ -21701,8 +21701,10 @@
       "batch_id": "harbin-002",
       "automatic_merge": false,
       "school_id": "hit",
-      "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_person_ids": [
+        "hit-chenghaijun-environment"
+      ],
+      "candidate_match_status": "pending_identity_review"
     },
     {
       "id": "roster-a50a337ecf253e0f",
@@ -21764,8 +21766,10 @@
       "batch_id": "harbin-002",
       "automatic_merge": false,
       "school_id": "hit",
-      "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_person_ids": [
+        "hit-wangwei-environment"
+      ],
+      "candidate_match_status": "pending_identity_review"
     },
     {
       "id": "roster-4fd99e04c9341f2a",
@@ -22394,8 +22398,10 @@
       "batch_id": "harbin-002",
       "automatic_merge": false,
       "school_id": "hit",
-      "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_person_ids": [
+        "hit-huangzhuangsong-environment"
+      ],
+      "candidate_match_status": "pending_identity_review"
     },
     {
       "id": "roster-7c4b3cd0b81792b7",
@@ -22499,8 +22505,10 @@
       "batch_id": "harbin-002",
       "automatic_merge": false,
       "school_id": "hit",
-      "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_person_ids": [
+        "hit-wangxianshi-environment"
+      ],
+      "candidate_match_status": "pending_identity_review"
     },
     {
       "id": "roster-48a9fd82c86d5eb8",
@@ -22667,8 +22675,10 @@
       "batch_id": "harbin-002",
       "automatic_merge": false,
       "school_id": "hit",
-      "candidate_person_ids": [],
-      "candidate_match_status": "not_linked"
+      "candidate_person_ids": [
+        "hit-zhenyufei-environment"
+      ],
+      "candidate_match_status": "pending_identity_review"
     },
     {
       "id": "roster-9613d70f6a7ab5ec",
@@ -75291,5 +75301,5 @@
     }
   ],
   "raw_data_location": "完整原始来源观察保存在仓库 data/rosters.json，以及导出 Excel 的“原始来源观察”工作表；网站快照不重复加载这些原始内容。",
-  "build_id": "29f29505e9f346c5"
+  "build_id": "ae1e7dc8a45b7272"
 }
