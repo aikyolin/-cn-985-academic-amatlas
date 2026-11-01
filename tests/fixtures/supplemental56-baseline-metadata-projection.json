@@ -1,0 +1,414 @@
+{
+  "version": 1,
+  "scope": "Exact nonacademic source acquisition and precision wording; academic values and URLs unchanged.",
+  "leaves": [
+    {
+      "person_id": "hnu-huangyong2",
+      "path": [
+        "sources",
+        1,
+        "access_note"
+      ],
+      "before_sha256": "24302483e791b1765aaf3a82eb92af1de0e937a7a07d72c8ad36b4b2e2743210",
+      "value": "官网公开Vue index/:no notNeedLogin，前端appFetch GET userInfo {no}，映射/api/user/info；返回code200且is_publish1，非管理接口。公开资料不包含原缓存。",
+      "after_sha256": "5229a1de0d794425da644cacbba3974cdf1c81395af0f91d8f359fef6647ec7b",
+      "rule_id": "F56META-01"
+    },
+    {
+      "person_id": "hnu-liqingguo",
+      "path": [
+        "sources",
+        1,
+        "access_note"
+      ],
+      "before_sha256": "24302483e791b1765aaf3a82eb92af1de0e937a7a07d72c8ad36b4b2e2743210",
+      "value": "官网公开Vue index/:no notNeedLogin，前端appFetch GET userInfo {no}，映射/api/user/info；返回code200且is_publish1，非管理接口。公开资料不包含原缓存。",
+      "after_sha256": "5229a1de0d794425da644cacbba3974cdf1c81395af0f91d8f359fef6647ec7b",
+      "rule_id": "F56META-01"
+    },
+    {
+      "person_id": "hnu-hubicheng",
+      "path": [
+        "profile_link_basis"
+      ],
+      "before_sha256": "edccae3db541720dd9ac5f8abb7c48a8cdf52c709b299d57102a1e5a62e625cc",
+      "value": "Reader directory native link17 resolved the same official URL but timed out; one subsequent browser access to the same URL confirmed the named profile. Raw href was not observed; no browser directory UI click is claimed.",
+      "after_sha256": "7d698e8708e6e88c4ea3520b1d70741f2fcb397f6432b4c07d2b22d9ead74585",
+      "rule_id": "F56META-02"
+    },
+    {
+      "person_id": "hnu-hubicheng",
+      "path": [
+        "sources",
+        1,
+        "source_limitations",
+        0
+      ],
+      "before_sha256": "959f199bbeb1b4cfab49d3595c2a0b4b680d9cee486349a916ddc6d72d7d2c13",
+      "value": "Reader native-link click timed out; one subsequent ordinary browser access used the same URL. No raw href capture or browser directory UI click is claimed.",
+      "after_sha256": "2b23d9898a3e08ffa48f41944bff067f6581e0d73283a2d0b9db338c1ed6dbd0",
+      "rule_id": "F56META-03"
+    },
+    {
+      "person_id": "uestc-nidebing",
+      "path": [
+        "identity_resolution",
+        "note"
+      ],
+      "before_sha256": "0ac99a969132de2d4f035f3c5e1ce79241fabe7cd39c0697d9c3083c9c0a3c0e",
+      "value": "Visible official directory name and read-only raw href establish source affiliation. Raw href differs in protocol and path from the readable profile; no profile UI click, redirect or URL-equivalence assertion. The same system person identifier and name support identity. Current employment unknown.",
+      "after_sha256": "ed86428297d566918dcc5bbbaddfe6caecc1c6593be2670e356ad8895be5df0f",
+      "rule_id": "F56META-04"
+    },
+    {
+      "person_id": "uestc-nidebing",
+      "path": [
+        "original_unknowns",
+        5
+      ],
+      "before_sha256": "39adf8b2b9baa9a0e200408a0de1fee87012ba4a0c0916ecd6bd471ee0319245",
+      "value": "Independent official directory name and raw href were observed through native browser pagination. The individual link was not UI-clicked, and the source profile URL is not asserted redirect-equivalent to that href.",
+      "after_sha256": "eaca00876927c70eed5188348397964f0c1ff1e7601c92929ab6f98aea56f5a6",
+      "rule_id": "F56META-05"
+    },
+    {
+      "person_id": "uestc-dengchenliang",
+      "path": [
+        "sources",
+        2,
+        "observer"
+      ],
+      "before_sha256": "97f7f5ff085af1c8a9e10fac8f7f1b0e4eeb490d784aa340ea7d06a6c24c80e2",
+      "value": "a single browser observation at the same URL after an ordinary reader cache miss",
+      "after_sha256": "74000e4808a666c894a46e1d2820e57e778e8f9bac9e848b2115bbdb25b56c25",
+      "rule_id": "F56META-06"
+    },
+    {
+      "person_id": "buaa-quanquan",
+      "path": [
+        "publications",
+        0,
+        "source_note"
+      ],
+      "before_sha256": "596c5cd6c1fd459ac5a43654bcd957bba319f2042e55ba24b965253eb55a6be1",
+      "value": "Native href verified in the browser excerpt; detail body was not opened. The IEEE publisher page was not accessed following earlier robot verification on that publisher domain.",
+      "after_sha256": "d017c7c7da1c3a35e0bc02ab25087455ca507ff66b4543482d917885dfa85759",
+      "rule_id": "F56META-07"
+    },
+    {
+      "person_id": "buaa-tang-bin",
+      "path": [
+        "affiliation",
+        "note"
+      ],
+      "before_sha256": "109e8b16dd900be40b517ce1921edbf3b8b510581ebb2ce50374ecde840ff902",
+      "value": "Directory name and exact native href verified; college/category corroborated. No department or current employment inference.",
+      "after_sha256": "1e0326e83d5b2acd6183e96a92527f506d8e5dfdf48b10c3bcfccafdb4af6ba6",
+      "rule_id": "F56META-08"
+    },
+    {
+      "person_id": "buaa-tang-bin",
+      "path": [
+        "sources",
+        1,
+        "retrieval_date_basis"
+      ],
+      "before_sha256": "8c34b47767b14d2bd25b4d2ab4b3700ea57d0a56bef103c8b10e0dff1467f4d8",
+      "value": "browser_response_observation_utc",
+      "after_sha256": "2cab35b0c97e354bb9bc182a534d8d3f6d06ffcb7ac58a79668777c3867953a0",
+      "rule_id": "F56META-09"
+    },
+    {
+      "person_id": "buaa-tang-bin",
+      "path": [
+        "sources",
+        1,
+        "acquisition_attribution"
+      ],
+      "before_sha256": "f703f395dcf505221df6f98b5ab129d05cb788e59dca87dcba51998cf31150fe",
+      "value": "Browser-observed excerpt from subsequent access to the same URL; the source record does not represent a separate direct browser observation.",
+      "after_sha256": "4f0e281e1c199682839bf343baa9f8b6ff2355f84fb657c2a59835bff8c02db3",
+      "rule_id": "F56META-10"
+    },
+    {
+      "person_id": "buaa-chenyan-sportstraining",
+      "path": [
+        "sources",
+        0,
+        "observation_time_precision"
+      ],
+      "before_sha256": "b7bdc17a2f3b47d8f9d69b4c1f52e27f194a70069a9602865bc6f555c0b5660a",
+      "value": "Recorded original browser-observation interval, not an independently certified exact network request timestamp.",
+      "after_sha256": "bdb412d267dd38715c908fef4a5ddb9323fb322670d24ada011c706db143c414",
+      "rule_id": "F56META-11"
+    },
+    {
+      "person_id": "buaa-chenyan-sportstraining",
+      "path": [
+        "sources",
+        0,
+        "retrieval_method"
+      ],
+      "before_sha256": "69d71925b65b247d12f26a7deb7bba43da7964ab4102983be82ec92579b808cb",
+      "value": "same_url_browser_observation",
+      "after_sha256": "3056ae7dc52d8b907272fd10e72c4bff6f36ed9e9d17136d99b85d398e6a9c28",
+      "rule_id": "F56META-12"
+    },
+    {
+      "person_id": "uestc-kongefang",
+      "path": [
+        "sources",
+        2,
+        "evidence_status_label"
+      ],
+      "before_sha256": "cb57504251f081791d785fe273e31d25861a6e19ef50900d4f81aafcbf879c9b",
+      "value": "大学托管本人历史职业CV PDF文字层已读；公开资料不包含原PDF或私有字段。",
+      "after_sha256": "79ed6604c77413b8c10cdef98a2537c7e577c5b488239b2fcc6bffe6679482c2",
+      "rule_id": "F56META-13"
+    },
+    {
+      "person_id": "hnu-huangyong2",
+      "path": [
+        "sources",
+        1,
+        "evidence_status_label"
+      ],
+      "before_sha256": "55f5fba9afe4edc8d12b7187457516abd518f8701f115043c3b4412b8889a155",
+      "value": "官方公开个人门户前端只读职业字段已读；公开资料不包含原始接口响应或私人字段。",
+      "after_sha256": "98139deda5318c4699ec66cb177024eda6034ba2ecc79537e68e8913a376ade8",
+      "rule_id": "F56META-14"
+    },
+    {
+      "person_id": "hnu-liqingguo",
+      "path": [
+        "sources",
+        1,
+        "evidence_status_label"
+      ],
+      "before_sha256": "55f5fba9afe4edc8d12b7187457516abd518f8701f115043c3b4412b8889a155",
+      "value": "官方公开个人门户前端只读职业字段已读；公开资料不包含原始接口响应或私人字段。",
+      "after_sha256": "98139deda5318c4699ec66cb177024eda6034ba2ecc79537e68e8913a376ade8",
+      "rule_id": "F56META-14"
+    },
+    {
+      "person_id": "uestc-shangjizheng",
+      "path": [
+        "sources",
+        0,
+        "limits",
+        0
+      ],
+      "before_sha256": "69169dd826ce217fc20afc5f42a93e305bedb9a28cadb0ed28e78c43db8a85dd",
+      "value": "Approximate response-observation times; not exact fetch-start or HTTP server timestamps.",
+      "after_sha256": "1f848418be061eed177c8d7bf25e7c23492c065aaaaf9909f00fba12e346cc38",
+      "rule_id": "F56META-15"
+    },
+    {
+      "person_id": "uestc-shangjizheng",
+      "path": [
+        "sources",
+        0,
+        "observation_records",
+        0,
+        "time_precision"
+      ],
+      "before_sha256": "69169dd826ce217fc20afc5f42a93e305bedb9a28cadb0ed28e78c43db8a85dd",
+      "value": "Approximate response-observation times; not exact fetch-start or HTTP server timestamps.",
+      "after_sha256": "1f848418be061eed177c8d7bf25e7c23492c065aaaaf9909f00fba12e346cc38",
+      "rule_id": "F56META-15"
+    },
+    {
+      "person_id": "uestc-shangjizheng",
+      "path": [
+        "sources",
+        0,
+        "observation_records",
+        1,
+        "time_precision"
+      ],
+      "before_sha256": "69169dd826ce217fc20afc5f42a93e305bedb9a28cadb0ed28e78c43db8a85dd",
+      "value": "Approximate response-observation times; not exact fetch-start or HTTP server timestamps.",
+      "after_sha256": "1f848418be061eed177c8d7bf25e7c23492c065aaaaf9909f00fba12e346cc38",
+      "rule_id": "F56META-15"
+    },
+    {
+      "person_id": "uestc-shangjizheng",
+      "path": [
+        "sources",
+        0,
+        "observation_basis"
+      ],
+      "before_sha256": "69169dd826ce217fc20afc5f42a93e305bedb9a28cadb0ed28e78c43db8a85dd",
+      "value": "Approximate response-observation times; not exact fetch-start or HTTP server timestamps.",
+      "after_sha256": "1f848418be061eed177c8d7bf25e7c23492c065aaaaf9909f00fba12e346cc38",
+      "rule_id": "F56META-15"
+    },
+    {
+      "person_id": "uestc-shangjizheng",
+      "path": [
+        "sources",
+        1,
+        "limits",
+        0
+      ],
+      "before_sha256": "69169dd826ce217fc20afc5f42a93e305bedb9a28cadb0ed28e78c43db8a85dd",
+      "value": "Approximate response-observation times; not exact fetch-start or HTTP server timestamps.",
+      "after_sha256": "1f848418be061eed177c8d7bf25e7c23492c065aaaaf9909f00fba12e346cc38",
+      "rule_id": "F56META-15"
+    },
+    {
+      "person_id": "uestc-shangjizheng",
+      "path": [
+        "sources",
+        1,
+        "observation_records",
+        0,
+        "time_precision"
+      ],
+      "before_sha256": "69169dd826ce217fc20afc5f42a93e305bedb9a28cadb0ed28e78c43db8a85dd",
+      "value": "Approximate response-observation times; not exact fetch-start or HTTP server timestamps.",
+      "after_sha256": "1f848418be061eed177c8d7bf25e7c23492c065aaaaf9909f00fba12e346cc38",
+      "rule_id": "F56META-15"
+    },
+    {
+      "person_id": "uestc-shangjizheng",
+      "path": [
+        "sources",
+        1,
+        "observation_basis"
+      ],
+      "before_sha256": "69169dd826ce217fc20afc5f42a93e305bedb9a28cadb0ed28e78c43db8a85dd",
+      "value": "Approximate response-observation times; not exact fetch-start or HTTP server timestamps.",
+      "after_sha256": "1f848418be061eed177c8d7bf25e7c23492c065aaaaf9909f00fba12e346cc38",
+      "rule_id": "F56META-15"
+    },
+    {
+      "person_id": "uestc-shenhua",
+      "path": [
+        "sources",
+        0,
+        "observation_records",
+        0,
+        "timestamp_basis"
+      ],
+      "before_sha256": "cdd06a229d449c90659db7fbee9809b736fd76feb9bd7313392eb45cb49cabf2",
+      "value": "Recorded contemporaneous response-observation time, not an independently certified exact request timestamp or webpage publication time.",
+      "after_sha256": "f9814e85b7ee8651406e1cf8b083f361323112f6dfa7797e7fba4d904402df67",
+      "rule_id": "F56META-16"
+    },
+    {
+      "person_id": "uestc-shenhua",
+      "path": [
+        "sources",
+        0,
+        "observation_basis"
+      ],
+      "before_sha256": "cdd06a229d449c90659db7fbee9809b736fd76feb9bd7313392eb45cb49cabf2",
+      "value": "Recorded contemporaneous response-observation time, not an independently certified exact request timestamp or webpage publication time.",
+      "after_sha256": "f9814e85b7ee8651406e1cf8b083f361323112f6dfa7797e7fba4d904402df67",
+      "rule_id": "F56META-16"
+    },
+    {
+      "person_id": "uestc-fangjiaming",
+      "path": [
+        "sources",
+        0,
+        "limits",
+        "time_basis"
+      ],
+      "before_sha256": "ea98279a5fd32f77cf3b7222977cf1b98292011ce6d5fd4df9dd228950968135",
+      "value": "Recorded UTC response-observation time; approximate to seconds, not an independently certified exact request timestamp, HTTP server timestamp or publication timestamp.",
+      "after_sha256": "71f2e524fcba7b5c3b05d4b1064f8258ca99873ec4ebcd39eba8749cebfaf5ff",
+      "rule_id": "F56META-17"
+    },
+    {
+      "person_id": "uestc-fangjiaming",
+      "path": [
+        "sources",
+        0,
+        "observation_records",
+        0,
+        "time_basis"
+      ],
+      "before_sha256": "ea98279a5fd32f77cf3b7222977cf1b98292011ce6d5fd4df9dd228950968135",
+      "value": "Recorded UTC response-observation time; approximate to seconds, not an independently certified exact request timestamp, HTTP server timestamp or publication timestamp.",
+      "after_sha256": "71f2e524fcba7b5c3b05d4b1064f8258ca99873ec4ebcd39eba8749cebfaf5ff",
+      "rule_id": "F56META-17"
+    },
+    {
+      "person_id": "uestc-fangjiaming",
+      "path": [
+        "sources",
+        0,
+        "observation_basis"
+      ],
+      "before_sha256": "ea98279a5fd32f77cf3b7222977cf1b98292011ce6d5fd4df9dd228950968135",
+      "value": "Recorded UTC response-observation time; approximate to seconds, not an independently certified exact request timestamp, HTTP server timestamp or publication timestamp.",
+      "after_sha256": "71f2e524fcba7b5c3b05d4b1064f8258ca99873ec4ebcd39eba8749cebfaf5ff",
+      "rule_id": "F56META-17"
+    },
+    {
+      "person_id": "uestc-fangjiaming",
+      "path": [
+        "sources",
+        1,
+        "limits",
+        "time_basis"
+      ],
+      "before_sha256": "ea98279a5fd32f77cf3b7222977cf1b98292011ce6d5fd4df9dd228950968135",
+      "value": "Recorded UTC response-observation time; approximate to seconds, not an independently certified exact request timestamp, HTTP server timestamp or publication timestamp.",
+      "after_sha256": "71f2e524fcba7b5c3b05d4b1064f8258ca99873ec4ebcd39eba8749cebfaf5ff",
+      "rule_id": "F56META-17"
+    },
+    {
+      "person_id": "uestc-fangjiaming",
+      "path": [
+        "sources",
+        1,
+        "observation_records",
+        0,
+        "time_basis"
+      ],
+      "before_sha256": "ea98279a5fd32f77cf3b7222977cf1b98292011ce6d5fd4df9dd228950968135",
+      "value": "Recorded UTC response-observation time; approximate to seconds, not an independently certified exact request timestamp, HTTP server timestamp or publication timestamp.",
+      "after_sha256": "71f2e524fcba7b5c3b05d4b1064f8258ca99873ec4ebcd39eba8749cebfaf5ff",
+      "rule_id": "F56META-17"
+    },
+    {
+      "person_id": "uestc-fangjiaming",
+      "path": [
+        "sources",
+        1,
+        "observation_basis"
+      ],
+      "before_sha256": "ea98279a5fd32f77cf3b7222977cf1b98292011ce6d5fd4df9dd228950968135",
+      "value": "Recorded UTC response-observation time; approximate to seconds, not an independently certified exact request timestamp, HTTP server timestamp or publication timestamp.",
+      "after_sha256": "71f2e524fcba7b5c3b05d4b1064f8258ca99873ec4ebcd39eba8749cebfaf5ff",
+      "rule_id": "F56META-17"
+    }
+  ],
+  "root_leaves": [
+    {
+      "path": [
+        "org_units",
+        348,
+        "source_locator"
+      ],
+      "before_sha256": "f4795435b4dacb337e281752af40cd51e22588b652ebce4bed9e0e8bc923a820",
+      "after_sha256": "740f5e06e64c77488c51175ff34ca43faba859321c712134a313edef6e0442eb",
+      "value": "browser directory title and breadcrumb"
+    },
+    {
+      "path": [
+        "pending_people",
+        79,
+        "sources",
+        1,
+        "access_note"
+      ],
+      "before_sha256": "24302483e791b1765aaf3a82eb92af1de0e937a7a07d72c8ad36b4b2e2743210",
+      "after_sha256": "5229a1de0d794425da644cacbba3974cdf1c81395af0f91d8f359fef6647ec7b",
+      "value": "官网公开Vue index/:no notNeedLogin，前端appFetch GET userInfo {no}，映射/api/user/info；返回code200且is_publish1，非管理接口。公开资料不包含原缓存。"
+    }
+  ]
+}

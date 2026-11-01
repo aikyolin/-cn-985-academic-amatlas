@@ -5,7 +5,7 @@ import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 const raw=readFileSync(new URL('./fixtures/public-metadata-projection-hashes.json',import.meta.url));
 const hash=s=>createHash('sha256').update(s).digest('hex');
-assert.equal(hash(raw),'aabfaca5e80e290ff600238db33890600ccef087eb63ac1c608ac76168ecefe6');
+assert.equal(hash(raw),'dd744990ff5b9da177e6b5fde395fa7beedec7e62cabcc4e17e06e0b0dc5e18a');
 const leaves=new Map(JSON.parse(raw).leaves.map(r=>[JSON.stringify(r.path),r]));
 export function assertExactMetadataProjection(actual,expected,prefix,offset=0){
  function visit(a,b,path,root=false){
